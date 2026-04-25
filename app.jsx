@@ -7,9 +7,10 @@ const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
 const TODAY = new Date('2026-04-25T00:00:00');
 const KOR_DAY = ['일','월','화','수','목','금','토'];
 
-function parseDate(iso) {
-  const [y, m, d] = iso.split('-').map(Number);
-  return new Date(y, m - 1, d);
+function parseDate(s) {
+  if (!s) return new Date(0);
+  const [y, m, d] = s.split(/[-./]/).map(Number);
+  return new Date(y, (m || 1) - 1, d || 1);
 }
 function daysAgo(iso) {
   const d = parseDate(iso);
@@ -88,11 +89,8 @@ function ArticleCard({ article, onOpen, onToggleSave, isSaved, query, variant })
         <h3 className="card-headline">{highlight(article.headline, query)}</h3>
         <p className="card-summary">{highlight(article.summary, query)}</p>
         <div className="card-foot">
-          <span className="source">
-            <span className="source-dot">{article.mark}</span>
-            {article.source}
-          </span>
-          <span>{relativeKor(article.publishedAt) || article.date}</span>
+          <span className="source">{article.source}</span>
+          <span>{article.publishedAt}</span>
         </div>
       </div>
     </button>
@@ -321,21 +319,25 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
         </div>
 
         <div className="modal-body" ref={bodyRef} onScroll={onScroll}>
-          <div className="modal-cat">{article.cat}</div>
           <h1 className="modal-headline">{article.headline}</h1>
           <div className="modal-meta">
-            <span style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
-              <span className="source-dot">{article.mark}</span>
-              {article.source}
-            </span>
+            <span>{article.source}</span>
             <span style={{ color: 'var(--muted-2)' }}>·</span>
-            <span>{article.date}</span>
+            <span>{article.publishedAt}</span>
             <a href={article.url} target="_blank" rel="noopener noreferrer">
               원문 보기
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M7 17 17 7" /><path d="M8 7h9v9" />
               </svg>
             </a>
+            {Array.isArray(article.urls) && article.urls.filter(u => u && u.href).map((u, i) => (
+              <a key={i} href={u.href} target="_blank" rel="noopener noreferrer">
+                {u.label || '관련 링크'}
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M7 17 17 7" /><path d="M8 7h9v9" />
+                </svg>
+              </a>
+            ))}
           </div>
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
@@ -358,14 +360,11 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
                     }}
                   >
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: 11, fontFamily: 'JetBrains Mono, monospace', color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>
-                        {r.cat}
-                      </div>
                       <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.4 }}>
                         {r.headline}
                       </div>
                       <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 4 }}>
-                        {r.source} · {r.date}
+                        {r.source} · {r.publishedAt}
                       </div>
                     </div>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="2">
@@ -390,7 +389,7 @@ function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query }) {
   const groups = useMemo(() => {
     const map = new Map();
     articles.forEach(a => {
-      const k = a.publishedAt || '0000-00-00';
+      const k = a.publishedAt || '0000.00.00';
       if (!map.has(k)) map.set(k, []);
       map.get(k).push(a);
     });
@@ -548,8 +547,7 @@ function App() {
     visible = visible.filter(a =>
       a.headline.toLowerCase().includes(q) ||
       a.summary.toLowerCase().includes(q) ||
-      a.source.toLowerCase().includes(q) ||
-      a.cat.toLowerCase().includes(q)
+      a.source.toLowerCase().includes(q)
     );
   } else {
     visible = visible.filter(a => a.tab === activeTab);
