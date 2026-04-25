@@ -339,7 +339,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
           </div>
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
-            <div dangerouslySetInnerHTML={{ __html: ARTICLE_BODY }} />
+            <div dangerouslySetInnerHTML={{ __html: article.body || ARTICLE_BODY || '' }} />
           </div>
 
           {related.length > 0 && (
