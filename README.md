@@ -36,7 +36,6 @@ Edit `articles.js` and push to update. GitHub Pages auto-rebuilds in ~60 seconds
   publishedAt: '2026-04-25', // ISO date — used for sorting
   mark: 'NEWS',              // small badge label
   date: '2026.04.25',        // displayed date
-  isNew: true,               // optional — shows the "NEW" pip
   hue: 30,                   // 0–360, color of the gradient thumbnail
   image: 'assets/news/x.jpg',// optional — overrides the gradient
   url: 'https://...'         // link out

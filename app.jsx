@@ -4,7 +4,7 @@ const { useState, useEffect, useMemo, useRef } = React;
 const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
 
 /* ---------- date helpers ---------- */
-const TODAY = new Date('2026-04-25T00:00:00');
+const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
 const KOR_DAY = ['일','월','화','수','목','금','토'];
 
 function parseDate(s) {
@@ -49,17 +49,28 @@ function tabCounts(articles) {
   articles.forEach(a => { counts[a.tab] = (counts[a.tab] || 0) + 1; });
   return counts;
 }
+function isArticleNew(a) {
+  return daysAgo(a.publishedAt) <= 2;      // auto: today, yesterday, 2 days ago
+}
 function tabHasNew(tabId, articles) {
-  return articles.some(a => a.tab === tabId && a.isNew);
+  return articles.some(a => a.tab === tabId && isArticleNew(a));
 }
 
 /* ---------- thumb ---------- */
 function Thumb({ hue, image, alt, children }) {
+  const [failed, setFailed] = useState(false);
   const bg = `linear-gradient(135deg, oklch(0.88 0.06 ${hue}) 0%, oklch(0.78 0.09 ${(hue + 40) % 360}) 100%)`;
+  const showImg = image && !failed;
   return (
     <div className="thumb">
-      {image ? (
-        <img className="thumb-img" src={image} alt={alt || ''} loading="lazy" />
+      {showImg ? (
+        <img
+          className="thumb-img"
+          src={image}
+          alt={alt || ''}
+          loading="lazy"
+          onError={() => setFailed(true)}
+        />
       ) : (
         <div className="thumb-bg" style={{ background: bg }} />
       )}
@@ -237,7 +248,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved 
 
 /* ---------- feed meta ---------- */
 function FeedMeta({ activeTab, count, viewSaved, query }) {
-  const today = '2026년 4월 25일 (토)';
+  const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
   if (query) {
     title = `\u201c${query}\u201d 검색 결과`;
@@ -290,6 +301,8 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
     .slice(0, 3);
 
   const heroBg = `linear-gradient(135deg, oklch(0.85 0.08 ${article.hue}) 0%, oklch(0.7 0.12 ${(article.hue + 40) % 360}) 100%)`;
+  const [heroFailed, setHeroFailed] = useState(false);
+  useEffect(() => { setHeroFailed(false); }, [article && article.id]);
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -311,8 +324,13 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
         </button>
 
         <div className="modal-hero">
-          {article.image ? (
-            <img className="thumb-img" src={article.image} alt={article.headline} />
+          {article.image && !heroFailed ? (
+            <img
+              className="thumb-img"
+              src={article.image}
+              alt={article.headline}
+              onError={() => setHeroFailed(true)}
+            />
           ) : (
             <div className="thumb-bg" style={{ background: heroBg }} />
           )}
