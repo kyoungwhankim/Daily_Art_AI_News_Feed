@@ -56,6 +56,22 @@ window.AIAD = {
  
     /* ---- industry ---- */
         {
+            id:          'industry-2fc08271-2026-04',
+            tab:         'industry',
+            headline:    '전문가들, 거의 모든 대형 게임 스튜디오가 AI 비공개 활용 중',
+            summary:     '구글 클라우드 임원 잭 버서와 블룸버그 저널리스트 제이슨 슈라이어가 거의 모든 대형 게임 스튜디오가 생성 AI를 비공개로 사용하고 있다고 밝혔다.',
+            body:        '<p>게임 업계 내부 사정에 밝은 전문가들이 입을 모았다. 거의 모든 대형 게임 스튜디오가 이미 생성 AI를 활발하게 쓰고 있다는 것이다. 다만 대부분의 스튜디오가 소비자와 팬들의 반발이 두려워 이를 공개하지 않고 있다는 점도 함께 지적됐다.</p><p>구글 클라우드 게임 담당 이사 잭 버서는 최근 인터뷰에서 게임즈컴 현장 설문 결과를 공개했다. 개발자 10명 중 9명이 AI를 쓰고 있다고 답했지만, 실제로 이를 공개하는 스튜디오는 극히 드물다. 버서는 캡콤을 사례로 들며 수천 개의 소소한 세계 디테일 브레인스토밍에 구글 AI 툴을 활용하고 있다고 구체적으로 언급했다.</p><p>블룸버그의 베테랑 게임 저널리스트 제이슨 슈라이어도 이를 확인했다. 현재 거의 모든 대형 스튜디오가 생성 AI 툴, 특히 Anthropic의 Claude를 사용하고 있으며, 공개 입장과 실제 개발 현장 사이의 간극이 점점 커지고 있다는 것이다.</p><p>버서는 게이머들이 \'지금 즐기고 있는 게임들이 이미 AI로 만들어진 것임을 알지 못한다\'고 말했다. 이미 출시된 고평가 게임들 중 상당수가 AI를 개발에 적극 활용했음에도 이를 공개한 스튜디오는 거의 없다. 버서는 불투명성이 오히려 AI에 대한 부정적 인식을 고착시킨다고 주장하며 보다 솔직한 공개가 필요하다고 강조했다.</p><p>한편 슈라이어는 스트림에서 \'모두가 하고 있다\'는 표현을 사용했다. 인사이더 게이밍의 톰 헨더슨도 캡콤, 유비소프트 등 대형 스튜디오들이 비공개로 AI를 활용하고 있음을 확인했다. AI를 쓴 게임이 이미 높은 평가를 받으며 출시된 상황에서, 업계의 투명성을 둘러싼 논의는 앞으로 더욱 뜨거워질 전망이다.</p><p>원문: <a href="https://www.newsweek.com/entertainment/video-games/experts-say-everyones-doing-it-when-it-comes-to-generative-ai-in-games-11878394">Newsweek</a></p>',
+            source:      'Newsweek',
+            publishedAt: '2026.04.26',
+            isNew:       true,
+            hue:         218,
+            url:         'https://www.newsweek.com/entertainment/video-games/experts-say-everyones-doing-it-when-it-comes-to-generative-ai-in-games-11878394',
+            urls: [
+                { label: '관련 보도', href: 'https://www.pcgamer.com/software/ai/players-dont-realise-that-their-favourite-games-right-now-were-already-built-with-ai-says-google-exec-making-ai-tools/' },
+                { label: '관련 보도', href: 'https://futurism.com/artificial-intelligence/google-exec-video-games-secretly-ai' },
+            ],
+        },
+        {
             id:          'industry-15ed0ad1-2026-04',
             tab:         'industry',
             headline:    '구글 임원, 게임사 10곳 중 9곳이 AI 이미 사용 중',
@@ -81,6 +97,21 @@ window.AIAD = {
         },
  
     /* ---- art ---- */
+        {
+            id:          'art-c5b2bc0b-2026-04',
+            tab:         'art',
+            headline:    'OpenAI 소라, 오늘부로 앱·웹 서비스 공식 종료 — 고비용 저수익',
+            summary:     'OpenAI의 AI 영상 생성 서비스 소라(Sora)가 4월 26일부로 앱과 웹 서비스를 완전히 종료했다. 하루 운영비 약 13억 원에 비해 전체 누적 수익이 극히 저조했던 것이 주된 원인이다.',
+            body:        '<p>오늘(4월 26일), OpenAI의 AI 영상 생성 서비스 소라(Sora)의 앱과 웹 서비스가 공식 종료됐다. 2024년 12월 일반 공개된 지 불과 다섯 달 만의 일이다. API 서비스는 2026년 9월 24일까지는 계속 운영될 예정이다.</p><p>소라의 하루 운영 비용은 약 100만 달러(약 13억 원)에 달했지만, 서비스 전체 누적 수익은 약 210만 달러에 불과했다. 최대 100만 명을 기록했던 이용자 수도 50만 명 아래로 줄어들었다. 디즈니는 소라 파트너십에 약 10억 달러를 약속했으나, 서비스 종료 소식을 발표 불과 1시간 전에 통보받은 것으로 알려졌다.</p><p>OpenAI는 소라에 투입되던 컴퓨팅 자원을 코딩 및 엔터프라이즈 제품 쪽으로 전환하기로 했다. 창작 도구 분야에서 한발 물러서며 수익성과 실용성을 우선시하는 전략이 확인된 셈이다.</p><p>소라는 2024년 2월 첫 공개 당시 텍스트 프롬프트로 놀랍도록 현실감 있는 영상을 만들어내며 큰 주목을 받았다. 그러나 높은 인프라 비용, 저작권 소송 리스크, 지속적인 이용자 감소가 발목을 잡았다. 출시 초기 iOS 앱 스토어 1위를 기록하며 첫 주에만 100만 이상 다운로드됐지만, 지속 이용률은 끝내 회복되지 않았다.</p><p>소라가 남긴 자리는 Kling 3.0(콰이쇼우), Google Veo 3.1, Runway Gen-4 Turbo 등 경쟁 서비스들이 빠르게 채워나가고 있다. 기존 소라 이용자들은 sora.chatgpt.com/exports/me에서 콘텐츠를 내려받을 수 있으며, 기한이 지나면 데이터는 영구 삭제된다. OpenAI는 소라의 기반이 된 월드모델 연구는 계속 유지한다는 방침이다.</p><p>원문: <a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation">OpenAI</a></p>',
+            source:      'OpenAI',
+            publishedAt: '2026.04.26',
+            isNew:       true,
+            hue:         272,
+            url:         'https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation',
+            urls: [
+                { label: '관련 보도', href: 'https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/' },
+            ],
+        },
         {
             id:          'art-ddbc372e-2026-04',
             tab:         'art',
