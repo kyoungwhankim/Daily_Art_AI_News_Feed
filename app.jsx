@@ -640,8 +640,8 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <div className="meta-line">AI Art Daily · 매일 오전 8시 업데이트</div>
-        <div>큐레이션 · 한국어 번역 · 출처 검증을 거친 뒤 게재됩니다.</div>
+        <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
+        <div>큐레이션 · 한국어 번역</div>
       </footer>
 
       {open && (
