@@ -38,6 +38,7 @@ window.AIAD = {
             source:      'Woke Waves',
             publishedAt: '2026.04.26',
             hue:         130,
+            image:       'https://cdn.prod.website-files.com/65c66d9aede3cf8a571e64b2/69ec212efd964447a2cd8c97_Woke%20Waves%20photo%20template%20(1420%20x%20680%20px)%20(1420%20x%20680%20px)%20(42)%20(1).jpg',
             url:         'https://www.wokewaves.com/posts/ai-free-games-2026-trend',
         },
         
@@ -63,6 +64,7 @@ window.AIAD = {
             source:      'Progressive Robot',
             publishedAt: '2026.04.26',
             hue:         215,
+            image:       'https://www.progressiverobot.com/wp-content/smush-webp/2026/04/uni-1-by-luma-featured-16x9-1.jpg.webp',
             url:         'https://www.progressiverobot.com/2026/04/25/uni-1-by-luma/',
         },
         {
@@ -74,6 +76,7 @@ window.AIAD = {
             source:      'Eyerys',
             publishedAt: '2026.04.26',
             hue:         335,
+            image:       'https://www.eyerys.com/sites/default/files/grok-592.avif',
             url:         'https://www.eyerys.com/articles/news/grok-imagine-upgrade-brings-sharper-audio-and-flawless-lip-sync-image-video',
         },
         {
