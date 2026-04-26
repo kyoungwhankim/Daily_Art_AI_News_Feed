@@ -5,7 +5,7 @@ window.AIAD = {
     { id: 'industry', label: 'AI 도입 뉴스' },
     { id: 'art',      label: '아트 전반 AI 뉴스' },
   ],
-
+ 
   /*
    * Each article shape:
    * {
@@ -16,7 +16,6 @@ window.AIAD = {
    *   body:        '<p>본문 첫 문단</p><p>두 번째 문단…</p>',  // 카드 클릭 시 모달 본문 (HTML 허용)
    *   source:      '출처',
    *   publishedAt: '2026.04.25',           // 'YYYY.MM.DD' 형식, 사이트 업로드 날짜 (정렬·날짜 헤더에 사용; 화면에는 그대로 표시됨)
-   *   isNew:       true,                   // optional — 최근 3일 이내면 'NEW' 표시
    *   hue:         30,                     // 0–360, 그라디언트 썸네일 색상
    *   image:       'assets/news/x.jpg',    // optional — 있으면 그라디언트 대신 이미지 사용
    *   url:         'https://...',          // 원문 링크
@@ -36,7 +35,6 @@ window.AIAD = {
             body:        '<p>3D 캐릭터·애니메이션 툴 전문 기업 Reallusion이 2026년 기술 로드맵을 공개하며 AI와 전통 3D 워크플로를 결합한 \'하이브리드 미디어 창작\' 비전을 내세웠다.</p><p>핵심은 AI 이미지-투-3D 헤드 재구성 플러그인 Headshot 3, 웹캠·영상 기반 정밀 페이셜 모캡 AccuFace 2, NVIDIA와 협업한 RTX 패스 트레이스 렌더링, 그리고 AI 생성 3D 모델을 Character Creator 표준 토폴로지로 변환하는 CC Wrap이다.</p><p>AI 생성 캐릭터를 애니메이션 파이프라인에 손쉽게 통합할 수 있는 길이 열렸다는 점에서 게임·영상 제작자들의 기대를 모으고 있다.</p><p>Reallusion의 2026 로드맵은 AI 혁명이 크리에이티브 환경을 재편하는 시점에서 자사 도구를 하이브리드 미디어 창작의 최전선에 두겠다는 전략을 담고 있다. 생성 단계에 강력한 AI를 접목하는 동시에 전통 3D 워크플로의 한계를 계속 밀어붙이겠다는 것이다.</p><p>Headshot 3는 2D 사진 한 장으로 정확한 3D 두상을 재구성하는 독자 AI 모델을 탑재한다. 방대한 얼굴 스캔 데이터셋으로 훈련한 이 모델은 얼굴 랜드마크·깊이 단서·해부학적 특징을 더 정밀하게 해석해 토폴로지가 개선된 메시와 높은 정체성 보존력을 제공한다. 텍스트 프롬프트에서 4K AI 이미지 생성, 스플라인 기반 두상 정제, 내장 렌즈 교정 기능도 함께 제공된다.</p><p>AccuFace 2는 Character Creator 5의 HD 페이셜 프로파일에 맞춰 새로 훈련한 트래킹 시스템을 채택해, 섬세한 고주파 립싱크 디테일과 자연스러운 표정을 실시간으로 캡처한다. 라이브 웹캠 입력과 영상 기반 트래킹을 모두 지원한다.</p><p>RTX 렌더링은 NVIDIA와의 긴밀한 협업으로 개발됐으며, Character Creator와 iClone에 무료 업데이트로 제공된다. NVIDIA RTX GPU와 DLSS 기술을 활용해 시네마틱급 패스 트레이스 렌더링을 거의 실시간 속도로 구현한다. 디지털 휴먼 셰이더에 최적화되어 머리카락·피부·서브서페이스 스캐터링을 정밀하게 제어할 수 있다.</p><p>CC Wrap은 AI 생성 3D 모델이나 일반 3D 모델·의상 메시를 Character Creator 표준 토폴로지로 감싸는 도구다. AI가 생성한 정적 에셋을 전문 애니메이션 파이프라인에 통합하려는 업계의 요구를 직접 겨냥한 것으로, Reallusion 생태계 전반에서 재사용할 수 있는 게임 레디 캐릭터를 빠르게 제작할 수 있게 한다.</p><p>원문: <a href="https://www.cgchannel.com/2026/04/see-reallusions-2026-roadmap-redefining-3d-with-hybrid-ai/">CG Channel</a></p>',
             source:      'CG Channel',
             publishedAt: '2026.04.26',
-            isNew:       true,
             hue:         32,
             url:         'https://www.cgchannel.com/2026/04/see-reallusions-2026-roadmap-redefining-3d-with-hybrid-ai/',
             urls: [
@@ -52,11 +50,10 @@ window.AIAD = {
             body:        '<p>Autodesk가 AI 기반 모션 캡처 기업 RADiCAL의 핵심 기술과 IP를 완전 인수했다고 CG Channel이 4월 25일 보도했다.</p><p>Radical은 단안 카메라 영상에서 배우의 움직임을 추출해 FBX로 내보내는 Radical Core와, Blender·Maya·Unity·Unreal Engine 5로 애니메이션을 스트리밍하는 Radical Live를 서비스해왔다. Autodesk는 2022년 초기 지분 투자 이후 이번에 완전 인수를 완료했다.</p><p>인수한 기술이 Autodesk의 클라우드 기반 VFX·애니메이션 플랫폼 Flow Studio(구 Wonder Studio)와 결합될 예정이라는 점에서, 게임·영상 제작 파이프라인의 AI 모캡 접근성이 크게 높아질 것으로 보인다.</p><p>Radical은 2017년 설립 이후 단일 카메라 영상에서 AI로 모션 데이터를 추출하는 기술을 선보여 모캡 전문 스튜디오 없이도 애니메이션을 제작할 수 있는 길을 열었다. Autodesk는 2022년 투자 당시 \'클라우드 기반 엔드투엔드 제작 민주화의 최신 움직임\'이라고 평가하며 Maya 통합을 목표로 제시했다.</p><p>Radical LinkedIn 발표에 따르면 이번 인수는 실시간 모션 캡처, AI 보조 애니메이션, AI 보조 포즈 추정, 그리고 브라우저 기반 협업 3D 워크스페이스 역량 강화에 초점을 맞추고 있으며, Autodesk Flow Studio 로드맵과 전략적으로 연계될 예정이다.</p><p>다만 Autodesk는 해당 기술을 자사 제품에 어떻게 통합할지 구체적인 계획은 공개하지 않았다. 기존 Radical 사용자들은 7월 6일 서비스 포털 종료 전까지 처리된 FBX 파일과 원본 영상을 내려받아야 하며, 사용자 데이터는 Autodesk로 이전되지 않는다.</p><p>이번 인수로 Autodesk의 Flow Studio는 이미 AI 모캡 기능을 보유한 Wonder Studio 기반에 Radical의 기술이 더해지며, 게임·영상 업계에서 AI 기반 애니메이션 파이프라인을 한층 강화할 전망이다.</p><p>원문: <a href="https://www.cgchannel.com/2026/04/autodesk-acquires-core-tech-of-ai-motion-capture-firm-radical/">CG Channel</a></p>',
             source:      'CG Channel',
             publishedAt: '2026.04.26',
-            isNew:       true,
             hue:         28,
             url:         'https://www.cgchannel.com/2026/04/autodesk-acquires-core-tech-of-ai-motion-capture-firm-radical/',
         },
-
+ 
     /* ---- industry ---- */
         {
             id:          'industry-15ed0ad1-2026-04',
@@ -82,7 +79,7 @@ window.AIAD = {
             image:       'https://www.pymnts.com/wp-content/uploads/2026/04/Morgan-Stanley-gaming-AI.png',
             url:         'https://www.pymnts.com/artificial-intelligence-2/2026/morgan-stanley-says-gaming-could-score-22-billion-with-ai/',
         },
-
+ 
     /* ---- art ---- */
         {
             id:          'art-ddbc372e-2026-04',
@@ -92,7 +89,6 @@ window.AIAD = {
             body:        '<p>Adobe가 After Effects 26.2를 공개하며 가장 주목할 신기능으로 AI 기반 \'오브젝트 매트 툴(Object Matte Tool)\'을 선보였다.</p><p>기존 Roto Brush처럼 피사체를 직접 칠할 필요 없이, 단 한 프레임에서 클릭하거나 드래그로 선택하면 AI가 자동으로 전체 영상에 걸쳐 마스크를 생성하고 추적한다. DaVinci Resolve의 Magic Mask나 Flame의 AI 마스크 도구와 어깨를 나란히 하는 기능이다.</p><p>VFX·모션 그래픽 업계에서 가장 많이 쓰이는 합성 도구인 After Effects에 AI 자동 마스킹이 추가됨으로써, 로토스코핑에 드는 시간이 크게 줄어들 것으로 기대된다.</p><p>After Effects 26.2의 주요 업데이트 내용을 살펴보면, 오브젝트 매트 툴 외에도 파라메트릭 3D 메시에 대한 디스플레이스먼트 지원이 추가됐다. 이는 After Effects 26.0에서 도입된 3D 프리미티브 생성 및 Substance 머티리얼 네이티브 지원 기능을 한층 확장한 것이다.</p><p>SVG 지원도 강화됐다. After Effects 26.0에서 처음 도입된 SVG 파일 가져오기 기능이 이번 버전에서 확장되어, SVG를 컴포지션으로 불러와 각 요소를 별도의 편집 가능한 쉐이프 레이어로 변환하거나, 단일 레이어 그래픽의 경우 풋티지로 가져올 수 있다.</p><p>타임라인에서 비례 스크러빙(Proportional Scrubbing)도 새롭게 지원된다. 여러 레이어에서 선택한 속성을 선택 순서에 따라 비례적으로 조정할 수 있어, 단 한 번의 드래그로 캐스케이드나 그라디언트 스타일의 애니메이션을 만들 수 있다.</p><p>Quick Apply 기능도 추가됐다. 단일 검색창에서 이펙트, 프리셋, 메뉴 커맨드를 빠르게 검색하고 검색 결과에서 바로 적용할 수 있다. After Effects 26.2는 Windows 11 및 macOS 14.0 이상에서 이용 가능하며, 월 34.49달러 또는 연 263.88달러의 구독 형태로 제공된다.</p><p>원문: <a href="https://www.cgchannel.com/2026/04/adobe-releases-after-effects-26-2/">CG Channel</a></p>',
             source:      'CG Channel',
             publishedAt: '2026.04.26',
-            isNew:       true,
             hue:         270,
             url:         'https://www.cgchannel.com/2026/04/adobe-releases-after-effects-26-2/',
             urls: [
@@ -108,7 +104,6 @@ window.AIAD = {
             body:        '<p>구글 딥마인드가 이미지 생성용으로 훈련한 모델이 세그멘테이션과 깊이 추정 같은 시각 인식 작업에서도 최고 수준의 성능을 보인다는 연구 결과를 발표했다.</p><p>연구진은 Nano Banana Pro 기반의 이미지 생성 모델을 경량 인스트럭션 튜닝만으로 변환해 만든 \'Vision Banana\'가 Meta의 SAM 3와 Depth Anything V3를 각각 세그멘테이션과 깊이 추정 벤치마크에서 제로샷으로 앞섰다고 밝혔다.</p><p>생성 AI 훈련이 시각 인식 능력도 함께 길러낸다는 이번 발견은, LLM 프리트레이닝이 언어 이해 능력을 발생시키는 것과 유사한 패러다임 전환을 시사해 비전 AI 연구 커뮤니티에 큰 반향을 일으키고 있다.</p><p>논문 제목 \'Image Generators are Generalist Vision Learners\'에서 알 수 있듯이, 핵심 아이디어는 이미지 생성 훈련이 LLM 프리트레이닝과 마찬가지로 강력한 범용 시각 표현을 자연스럽게 학습시킨다는 것이다. 연구진은 시각 태스크의 출력 공간을 RGB 이미지로 매개변수화함으로써 시각 인식을 이미지 생성으로 재프레이밍했다.</p><p>구체적인 벤치마크 결과를 보면, Vision Banana는 세 개의 세그멘테이션 벤치마크에서 SAM 3를 능가하고, 깊이 추정에서는 Depth Anything V3를 (δ1: 0.929 vs 0.918), 표면 법선 추정에서는 Lotus-2를 (평균 각도 오차: 18.928° vs 19.642°) 각각 제로샷 전이 조건에서 앞섰다. 단일 가중치 세트와 프롬프트만으로 여러 시각 태스크를 전환할 수 있다는 것도 주목할 만한 특징이다.</p><p>연구진은 이번 결과가 생성적 연구와 판별적 연구라는 두 흐름 사이의 오랜 구분을 재고하게 만든다고 지적했다. 다만 논문은 보다 다양한 데이터셋과 실제 환경에서의 강건성은 추가 연구가 필요하다고 인정하고 있으며, 이번 벤치마크가 좁은 범위의 시각 문제를 다루고 있다는 비판도 있다.</p><p>이번 연구에는 He Kaiming과 Xie Saining 등 컴퓨터 비전 분야 저명 연구자들이 참여했으며, 논문은 arXiv에 공개되어 있다.</p><p>원문: <a href="https://www.marktechpost.com/2026/04/25/google-deepmind-introduces-vision-banana-an-instruction-tuned-image-generator-that-beats-sam-3-on-segmentation-and-depth-anything-v3-on-metric-depth-estimation/">MarkTechPost</a></p>',
             source:      'MarkTechPost',
             publishedAt: '2026.04.26',
-            isNew:       true,
             hue:         265,
             image:       'https://cms.aidailypost.com/uploads/google_deepminds_vision_banana_outperforms_sam_3_depth_anything_v3_3de1493e75.webp',
             url:         'https://www.marktechpost.com/2026/04/25/google-deepmind-introduces-vision-banana-an-instruction-tuned-image-generator-that-beats-sam-3-on-segmentation-and-depth-anything-v3-on-metric-depth-estimation/',
@@ -147,6 +142,6 @@ window.AIAD = {
                 { label: '관련 보도', href: 'https://venturebeat.com/technology/openais-chatgpt-images-2-0-is-here-and-it-does-multilingual-text-full-infographics-slides-maps-even-manga-seemingly-flawlessly' },
             ],
         },
-
+ 
   ],
 };
