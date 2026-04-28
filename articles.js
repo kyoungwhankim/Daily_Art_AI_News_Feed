@@ -28,6 +28,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-201001d2-2026-04',
+            tab:         'games',
+            headline:    'Adobe Firefly AI 어시스턴트 공개 베타 출시 — Photoshop·Premiere 등 60개 이상 툴 AI로 자동 연결',
+            summary:     'Adobe가 Firefly AI 어시스턴트 공개 베타를 출시해 60개 이상의 크리에이티브 앱을 하나의 채팅 인터페이스에서 자동 연결해요.',
+            body:        '<p>Adobe가 2026년 4월 27일부터 Firefly AI 어시스턴트를 전 세계 공개 베타로 출시했어요. Adobe의 창작 에이전트를 기반으로 한 이 도구는 사용자가 만들고 싶은 결과물을 자연어로 설명하면 포토샵, 프리미어, 일러스트레이터, 라이트룸 등 크리에이티브 앱 60개 이상에 걸쳐 다단계 워크플로를 자동으로 조율하고 실행해 줘요. 소셜 미디어 에셋 제작, 무드보드 생성, 인물 사진 리터칭, 제품 목업, 동영상 편집까지 복잡한 작업을 단 하나의 채팅 창에서 처리할 수 있어요. 어시스턴트가 진행 상황을 단계별로 보여 주며 중간에 방향을 바꾸거나 직접 개입할 수 있고, 완성된 결과물은 클라우드 스토리지에 바로 저장돼 어떤 Adobe 앱에서도 이어서 작업할 수 있어요.</p><p>게임 아트 파이프라인에서도 활용 가능성이 넓어졌어요. 텍스처 배치 보정, 컨셉 아트 리터칭, 예고편 영상 편집처럼 반복적이고 시간이 걸리는 작업을 AI가 자동으로 처리해 주면, 아티스트는 창의적 판단이 필요한 핵심 업무에 더 집중할 수 있어요. Adobe는 현재 외부 AI 모델과의 연동도 추진하고 있으며, Firefly 앱에는 이미 다양한 외부 생성 AI 모델이 통합되어 크리에이터의 선택 폭이 넓어지고 있어요.</p><p>이번 공개 베타는 Adobe가 내세우는 \'에이전틱 크리에이티비티\' 비전의 첫 번째 구체적인 결실이에요. 단순한 도구 모음을 넘어 창작 흐름 전체를 AI가 이해하고 지원하는 방식으로 전환되는 것을 보여 주며, 자동 색조 보정, 생성형 채우기, 배경 제거 등 전문가급 도구 60종 이상이 대화 맥락에 따라 자동 선택돼요. 앞으로 더 많은 기능이 순차적으로 추가될 예정이에요.</p><p>원문: <a href="https://blog.adobe.com/en/publish/2026/04/27/firefly-ai-assistant-public-beta">Adobe Blog</a></p>',
+            source:      'Adobe Blog',
+            publishedAt: '2026.04.28',
+            hue:         210,
+            image:       'https://blog.adobe.com/en/publish/2026/04/27/media_120f55e65ce82173a0e54777188bd1ce9cf51b27e.png?width=1200&format=pjpg&optimize=medium',
+            url:         'https://blog.adobe.com/en/publish/2026/04/27/firefly-ai-assistant-public-beta',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.adobe.com/products/firefly.html' },
+            ],
+        },
+        {
             id: 'bytedance-seed3d-2-0427',
             tab: 'games',
             headline: "ByteDance, 게임 제작용 차세대 3D 생성 AI 'Seed3D 2.0' 공개",
@@ -155,6 +170,21 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-db7e4ace-2026-04',
+            tab:         'industry',
+            headline:    '매직: 더 개더링 아레나 개발자 100여 명, AI 도입 압박 맞서 CWA 노조 결성',
+            summary:     'WotC의 MTG: 아레나 개발팀이 해고·AI 강요·원격 근무 폐지에 맞서 CWA와 함께 공식 노조를 결성했어요.',
+            body:        '<p>위저즈 오브 더 코스트(WotC)의 MTG: 아레나 개발팀 직원 100여 명이 2026년 4월 27일 미국 통신노동자연합(CWA)과 함께 공식 노조 결성을 선언했어요. 이미 과반수를 크게 넘는 직원들이 참여 의사를 밝혔으며, 5월 1일(국제 노동절) 이전에 모회사 해즈브로가 자발적으로 노조를 인정하지 않으면 전국노동관계위원회(NLRB)에 선거 청원을 제출할 예정이에요. 직원들은 소프트웨어 엔지니어, 아티스트, 디자이너 등 다양한 직군에 걸쳐 있어요.</p><p>노조 결성의 핵심 계기는 해즈브로가 단행한 두 차례의 대규모 해고였어요. 전체 직원의 약 3분의 1에 해당하는 2,000여 명이 영향을 받았고, 이후 원격 근무 폐지와 사무실 복귀 의무화 방침이 발표되면서 조직화가 가속화됐어요. 생성형 AI 관련 불만도 크게 작용했는데, 경영진이 LLM 등 AI 툴 사용을 강요하면서도 명확한 가이드라인이 없고, 개발자가 \'AI가 적합하지 않다\'고 판단해도 거부할 권리를 보장받지 못한다는 점이 핵심 쟁점으로 꼽혀요.</p><p>노조가 내세운 요구 사항은 해고 보호, 원격 근무 보장, 생성 AI 가이드라인 명확화, 과중 업무 방지, 경력 성장 체계, 개인 창작물 소유권, 지속 가능한 게임 개발 우선 등 7가지예요. MTG: 아레나는 수백만 명의 플레이어를 보유한 대형 온라인 카드 게임인 만큼, 이번 노조 결성이 게임 업계 전반의 AI 정책과 노동 관계에 미칠 파급력이 주목받고 있어요.</p><p>원문: <a href="https://kotaku.com/magic-the-gathering-arena-developers-unionize-layoff-remote-work-genai-protections-2000690932">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.04.28',
+            hue:         10,
+            image:       'https://kotaku.com/app/uploads/2019/09/kgh5pkhlr9tlb6bhzmcd-1200x675.jpg',
+            url:         'https://kotaku.com/magic-the-gathering-arena-developers-unionize-layoff-remote-work-genai-protections-2000690932',
+            urls: [
+                { label: '관련 보도', href: 'https://www.gamedeveloper.com/business/magic-the-gathering-arena-devs-seek-to-unionise-to-deliver-genai-and-layoff-protections' },
+            ],
+        },
+        {
             id:          'industry-1d4d0b27-2026-04',
             tab:         'industry',
             headline:    '스퀘어 에닉스 현지화 담당, 팬 페스트서 AI 아트 써 뭇매',
@@ -272,6 +302,44 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-1cf236bd-2026-04',
+            tab:         'art',
+            headline:    '테일러 스위프트, AI 딥페이크 막으려 목소리·이미지 상표 출원',
+            summary:     '테일러 스위프트가 USPTO에 목소리 및 이미지 상표 3건을 출원해 AI 딥페이크 대응의 새로운 법적 전략을 제시했어요.',
+            body:        '<p>테일러 스위프트의 권리 관리 회사 TAS Rights Management가 2026년 4월 24일부터 27일 사이에 미국 특허상표청(USPTO)에 상표 3건을 출원했어요. 음성 상표 2건은 각각 \'"Hey, it\'s Taylor Swift"\'와 \'"Hey, it\'s Taylor"\'라는 음성 문구이며, 시각 상표 1건은 핑크 기타를 들고 무지갯빛 바디수트를 입은 공연 중 사진이에요. 이번 출원은 배우 매튜 매코너헤이가 2025년 자신의 유명 대사 음성 상표 8건을 확보한 법적 전략을 따른 것으로, 지식재산권 전문 변호사 조시 거벤이 공개해 주목받았어요.</p><p>상표권이 AI 딥페이크 대응 수단으로 주목받는 이유는 기존 퍼블리시티권을 보완하는 추가적인 법적 구제 수단이 될 수 있기 때문이에요. 저작권처럼 AI 플랫폼에 테이크다운 요청이 가능해지며, 2025년 12월 디즈니가 자사 캐릭터 무단 생성과 관련해 구글에 상표권 근거 경고장을 보낸 것이 가장 최근의 선례로 꼽혀요. 스위프트는 딥페이크 포르노그래피, AI 챗봇 무단 사용, 2024년 트럼프 지지 이미지 유포 등 다양한 AI 악용 피해를 직접 겪어 왔어요.</p><p>상표권의 AI 딥페이크 대응 효력은 아직 법원에서 검증되지 않았지만, 유명인 목소리와 이미지를 AI가 무단 복제하는 사례가 급증하는 상황에서 상표권이 퍼블리시티권을 보완하는 새로운 법적 방패로 떠오르고 있어요. 법조계는 이 전략이 엔터테인먼트 업계 전반으로 확산될지 주목하고 있어요.</p><p>원문: <a href="https://variety.com/2026/music/news/taylor-swift-trademark-voice-likeness-ai-misuse-1236731401/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.04.28',
+            hue:         320,
+            image:       'https://variety.com/wp-content/uploads/2025/09/GettyImages-2166934862.jpg?crop=0px%2C103px%2C5000px%2C2812px&resize=1000%2C563',
+            url:         'https://variety.com/2026/music/news/taylor-swift-trademark-voice-likeness-ai-misuse-1236731401/',
+        },
+        {
+            id:          'art-91b9db7b-2026-04',
+            tab:         'art',
+            headline:    'DNE·Gracia, AI 기반 4D 가우시안 스플래팅으로 4분짜리 음악 공연 실시간 스트리밍 성공',
+            summary:     'LA의 DNE와 Gracia가 4DGS 기술로 4분짜리 음악 공연을 앱 없이 웹 브라우저에서 실시간 재생하는 데 성공했어요.',
+            body:        '<p>LA 기반의 볼류메트릭 캡처 스튜디오 DNE(Digital Nation Entertainment)와 인프라 기업 Gracia가 4D 가우시안 스플래팅(4DGS) 기술로 촬영한 4분짜리 음악 공연을 앱 다운로드 없이 웹 브라우저에서 실시간으로 재생하는 데 성공했어요. 이번 공연은 영국 싱어송라이터 에이미 메이의 곡 \'Open\'으로, 에미상 후보에 오른 감독 에드 프레이만이 연출했어요. WebGPU 기술로 초당 17~75Mbps 대역폭에서 스트리밍되며 재생 길이 제한이 없고, 데스크톱·모바일·Meta Quest 3 헤드셋에서 모두 재생 가능해요. 공개 첫 주말에만 여러 플랫폼을 합산해 150만 뷰를 기록했어요.</p><p>기존 볼류메트릭 캡처는 폴리곤 메시 방식으로 기하학적 정확도는 높지만 피부 질감이나 미세 디테일에서 어색함이 있었어요. DNE의 독자 카메라 그리드 스테이지와 Gracia의 4DGS 처리 파이프라인을 결합하면 재구성 방식이 메시에서 레디언스 필드로 전환돼, 부드러운 경계면·피하 산란·미세 디테일을 훨씬 사실적으로 표현할 수 있어요. 폴리곤보다 피부와 머리카락 같은 유기적 소재를 더 자연스럽게 구현하는 것이 핵심 강점이에요.</p><p>4DGS가 게임 시네마틱과 버추얼 프로덕션 파이프라인으로 빠르게 이동할 가능성이 높아, 아티스트와 게임 개발자 모두 주목할 기술로 떠오르고 있어요. 앱 설치 없이 웹에서 바로 재생되는 스트리밍 방식은 관객 접근성을 크게 높이며 인터랙티브 라이브 콘텐츠의 새로운 가능성을 열어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/04/dne-and-gracia-release-4-minute-streamable-4dgs-performance/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.04.28',
+            hue:         270,
+            url:         'https://www.cgchannel.com/2026/04/dne-and-gracia-release-4-minute-streamable-4dgs-performance/',
+            urls: [
+                { label: '영상', href: 'https://gracia.com' },
+            ],
+        },
+        {
+            id:          'art-dff8143d-2026-04',
+            tab:         'art',
+            headline:    '웹툰 엔터테인먼트, Genies와 파트너십으로 웹툰 캐릭터를 AI 3D 아바타로 확장',
+            summary:     '웹툰 엔터테인먼트가 AI 아바타 기업 Genies와 손잡고 웹툰 캐릭터를 인터랙티브 3D 포맷으로 확장하는 팬 경험 서비스를 발표했어요.',
+            body:        '<p>웹툰 엔터테인먼트가 AI 아바타 기업 Genies와 파트너십을 체결하고, 웹툰 캐릭터를 인터랙티브 3D 포맷으로 확장하는 새로운 팬 경험 서비스를 2026년 4월 27일 발표했어요. 첫 참여 작품은 \'가장 위대한 부동산 개발자\', \'기사는 오늘도 살아남는다\' 등 6개 작품으로, 팬들은 올여름부터 좋아하는 캐릭터와 채팅하고, 작가가 개발한 숨겨진 설정을 잠금 해제하며, 수집형 디지털 아이템을 획득할 수 있어요. Genies는 앞서 산리오와 파트너십을 맺은 AI 아바타 기업으로, 이번에도 크리에이터가 직접 아바타 제작에 참여해 자신의 아트 스타일이 반영되도록 하는 방식을 채택했어요.</p><p>이번 협업에서 가장 눈에 띄는 점은 \'크리에이터 퍼스트\' 정책이에요. 크리에이터의 동의 없이는 어떤 에셋도 제작하지 않고, AI가 작가의 고유한 아트 스타일을 반영하도록 작가가 직접 과정에 참여해요. 웹툰 엔터테인먼트 대표 김용수는 \'크리에이터가 우리 웹툰의 모든 것의 토대\'라며, 이 파트너십이 작품 세계를 페이지 너머로 확장하는 새로운 방법이 될 것이라고 밝혔어요. Genies CEO 아카시 니감은 팬들이 사랑하는 캐릭터를 인터랙티브 디지털 경험으로 전환하는 크리에이터 지원 툴 개발에 기대감을 표했어요.</p><p>기존 AI 캐릭터화 논란과 달리 크리에이터 동의와 스타일 반영을 전제로 한 구조여서, AI 도입에 비판적인 웹툰 창작 커뮤니티에서도 차별화된 접근으로 주목받고 있어요. 수집형 디지털 아이템 연동까지 더해져 팬덤 경제와 IP 확장의 새로운 모델이 될지 주목돼요.</p><p>원문: <a href="https://variety.com/2026/gaming/news/webtoon-entertainment-genies-ai-1236729996/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.04.28',
+            hue:         280,
+            image:       'https://variety.com/wp-content/uploads/2026/04/Webtoon_Header-1.png?crop=0px%2C0px%2C4800px%2C2700px&resize=1000%2C563',
+            url:         'https://variety.com/2026/gaming/news/webtoon-entertainment-genies-ai-1236729996/',
+        },
         {
             id:          'art-39dfc68f-2026-04',
             tab:         'art',
