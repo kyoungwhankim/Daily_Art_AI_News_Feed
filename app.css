@@ -1,38 +1,15 @@
 /* Hi-fi prototype styles for AI Art Daily */
 
-/* NEXON Lv2 Gothic — primary face from the design system */
-@font-face {
-  font-family: "NEXON Lv2 Gothic";
-  src: url("./fonts/NEXONLv2Gothic-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NEXON Lv2 Gothic";
-  src: url("./fonts/NEXONLv2Gothic-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NEXON Lv2 Gothic";
-  src: url("./fonts/NEXONLv2Gothic-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NEXON Lv2 Gothic";
-  src: url("./fonts/NEXONLv2Gothic-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-}
+/* Pretendard — primary face */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
 
 :root {
   /* paper & ink — Daily Art AI Feed design tokens */
 
   /* Meta / mono-style face — uses the design-system font with tabular numerals
      and extra tracking so it reads as "code-y" without introducing a 2nd family. */
-  --font-sans: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
-  --font-mono: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  --font-sans: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  --font-mono: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
 
   --paper: #ffffff;          /* white canvas */
   --paper-2: #fbf5e7;         /* cream-100, sunken */
@@ -87,7 +64,7 @@
 html, body { margin: 0; padding: 0; }
 html { background: var(--paper); }
 body {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   background: var(--paper);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -148,7 +125,7 @@ html::before {
   transform: rotate(-8deg) scale(1.06);
 }
 .brand-name {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -302,7 +279,7 @@ html::before {
   width: 100%;
 }
 .feed-title {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -497,7 +474,7 @@ html::before {
   border-radius: 50%;
   background: var(--kraft-soft);
   border: 1.5px solid var(--stroke);
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 11px; font-weight: 700;
   display: grid; place-items: center;
   color: var(--ink);
@@ -525,12 +502,12 @@ mark {
   border: 1.5px dashed var(--hairline-strong);
   border-radius: 50%;
   display: grid; place-items: center;
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 30px;
   color: var(--muted-2);
 }
 .empty h3 {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 22px; font-weight: 500;
   color: var(--ink);
   margin: 0 0 8px;
@@ -639,7 +616,7 @@ mark {
   font-weight: 700;
 }
 .modal-headline {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
@@ -675,7 +652,7 @@ mark {
 }
 .modal-article p { margin: 0 0 20px; }
 .modal-article h3 {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 21px;
   font-weight: 600;
   color: var(--ink);
@@ -686,7 +663,7 @@ mark {
   margin: 28px 0;
   padding: 6px 0 6px 24px;
   border-left: 4px solid var(--accent);
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 19px;
   line-height: 1.55;
   font-style: italic;
@@ -747,7 +724,7 @@ mark {
   border-bottom: 1.5px dashed var(--hairline);
 }
 .date-label {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.015em;
@@ -799,7 +776,7 @@ mark {
 }
 .grid.today-grid .card.feature .thumb { aspect-ratio: 4 / 3; }
 .grid.today-grid .card.feature .card-headline {
-  font-family: "NEXON Lv2 Gothic", "Apple SD Gothic Neo", "Pretendard", -apple-system, system-ui, sans-serif;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
@@ -872,3 +849,216 @@ mark {
 
 /* utility */
 .no-scroll { overflow: hidden; }
+
+/* tabs — separator + utility tab (Whitelist) */
+.tab-spacer {
+  flex: 1 1 auto;
+  min-width: 16px;
+}
+.tab-sep {
+  width: 1.5px;
+  align-self: stretch;
+  background: var(--hairline);
+  margin: 6px 4px;
+}
+.tab.tab-utility {
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  background: var(--kraft-soft);
+  border: 1.5px solid var(--hairline-strong);
+  border-radius: 999px;
+  padding: 9px 18px 9px 16px;
+  margin: 2px 0 4px;
+  border-bottom: 1.5px solid var(--hairline-strong);
+  align-self: center;
+}
+.tab.tab-utility,
+.tab.tab-utility.active {
+  border-bottom-color: var(--hairline-strong);
+}
+.tab.tab-utility:hover {
+  color: var(--ink);
+  background: var(--kraft);
+  box-shadow: var(--shadow-pop-sm);
+  transform: translateY(-1px);
+}
+.tab.tab-utility.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--stroke);
+  border-bottom-color: var(--stroke);
+  box-shadow: var(--shadow-pop-sm);
+}
+.tab.tab-utility.active svg { color: var(--paper); }
+
+/* whitelist view — matches site card aesthetic (cocoa ink, kraft soft, pop shadow) */
+.whitelist {
+  padding-top: 4px;
+  padding-bottom: 48px;
+}
+.wl-group { margin-bottom: 56px; }
+.wl-group:last-child { margin-bottom: 0; }
+
+/* sub-categories within a group */
+.wl-sub { margin-bottom: 28px; }
+.wl-sub:last-child { margin-bottom: 0; }
+.wl-sub-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.wl-sub-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+}
+.wl-sub-count {
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  background: var(--paper-2);
+  border: 1.5px solid var(--hairline);
+  border-radius: 999px;
+}
+.wl-sub-rule {
+  flex: 1;
+  height: 0;
+  border-top: 1.5px dashed var(--hairline);
+}
+
+.wl-group-head {
+  margin-bottom: 22px;
+}
+.wl-group-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.wl-group-kind {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border: 1.5px solid var(--stroke);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.wl-group-rule {
+  flex: 1;
+  height: 0;
+  border-top: 1.5px dashed var(--hairline-strong);
+}
+.wl-group-count {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  background: var(--kraft-soft);
+  border: 1.5px solid var(--stroke);
+  border-radius: 999px;
+}
+.wl-group-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+.wl-group-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.wl-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.wl-card {
+  position: relative;
+}
+.wl-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background: #fdfaf1;
+  border: 1.5px solid var(--stroke);
+  border-radius: 10px;
+  box-shadow: var(--shadow-pop-sm);
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.wl-card-link.wl-card-repo { background: #fafcf8; }
+.wl-card-link.wl-card-site { background: #fdfaf1; }
+:root[data-theme="dark"] .wl-card-link.wl-card-repo { background: #2f3a2c; }
+:root[data-theme="dark"] .wl-card-link.wl-card-site { background: #3a2c22; }
+.wl-card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-pop);
+}
+.wl-card-link:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.wl-card-link.wl-card-repo .wl-card-name::before {
+  content: "</>";
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent-strong);
+  margin-right: 6px;
+  letter-spacing: 0;
+  vertical-align: 1px;
+}
+.wl-card-link.wl-card-site .wl-card-name::before {
+  content: "↗";
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted-2);
+  margin-right: 6px;
+  vertical-align: 1px;
+}
+.wl-card-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
+.wl-card-note {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+@media (max-width: 520px) {
+  .wl-grid { grid-template-columns: 1fr; }
+}

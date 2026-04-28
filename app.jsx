@@ -2,6 +2,7 @@
 
 const { useState, useEffect, useMemo, useRef } = React;
 const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
+const WHITELIST = window.AIAD_WHITELIST || { articleSources: [], githubRepos: [] };
 
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
@@ -209,7 +210,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme 
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved }) {
+function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewWhitelist, onShowWhitelist }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
@@ -231,7 +232,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved 
             {TABS.map(t => (
               <button
                 key={t.id}
-                className={`tab ${t.id === active ? 'active' : ''}`}
+                className={`tab ${t.id === active && !viewWhitelist ? 'active' : ''}`}
                 onClick={() => onChange(t.id)}
               >
                 {t.label}
@@ -239,6 +240,18 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved 
                 {tabHasNew(t.id, articles) && t.id !== active && <span className="new-dot" />}
               </button>
             ))}
+            <span className="tab-spacer" aria-hidden="true" />
+            <button
+              className={`tab tab-utility ${viewWhitelist ? 'active' : ''}`}
+              onClick={onShowWhitelist}
+              title="스크래이핑 / Github 추적 대상 목록"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{marginRight:6}}>
+                <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              유용한 소스
+            </button>
           </div>
         )}
       </div>
@@ -477,21 +490,86 @@ function SkeletonCard() {
   );
 }
 
-/* ---------- App ---------- */
-const TWEAKS = /*EDITMODE-BEGIN*/{
-  "accent": "#c2410c",
-  "theme": "light"
-}/*EDITMODE-END*/;
+/* ---------- whitelist view ---------- */
+function WlSubgroup({ kind, title, count, items }) {
+  return (
+    <div className="wl-sub">
+      <div className="wl-sub-head">
+        <h3 className="wl-sub-title">{title}</h3>
+        <span className="wl-sub-count">{String(count).padStart(2, '0')}</span>
+        <span className="wl-sub-rule" aria-hidden="true" />
+      </div>
+      <ul className="wl-grid">
+        {items.map(it => (
+          <li key={it.url} className="wl-card">
+            <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
+              <div className="wl-card-name">{it.name}</div>
+              {it.note ? <div className="wl-card-note">{it.note}</div> : null}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
+function groupBy(items) {
+  const map = new Map();
+  const order = [];
+  for (const it of items) {
+    const k = it.group || '기타';
+    if (!map.has(k)) { map.set(k, []); order.push(k); }
+    map.get(k).push(it);
+  }
+  return order.map(k => [k, map.get(k)]);
+}
+
+function WhitelistView() {
+  const sections = [
+    {
+      key: 'repos',
+      title: 'Github 레포지토리',
+      sub: '변경점을 이벤트로 추적하는 레포',
+      kind: 'repo',
+      items: WHITELIST.githubRepos,
+    },
+    {
+      key: 'sources',
+      title: '뉴스 소스',
+      sub: '기사 스크래이핑에 사용하는 원본 출처 도메인',
+      kind: 'site',
+      items: WHITELIST.articleSources,
+    },
+  ];
+  return (
+    <div className="whitelist">
+      {sections.map(g => (
+        <section key={g.key} className="wl-group">
+          <header className="wl-group-head">
+            <div className="wl-group-eyebrow">
+              <span className="wl-group-kind">{g.kind === 'repo' ? 'GITHUB' : 'SOURCES'}</span>
+              <span className="wl-group-rule" aria-hidden="true" />
+              <span className="wl-group-count">{String(g.items.length).padStart(2, '0')}</span>
+            </div>
+            <h2 className="wl-group-title">{g.title}</h2>
+            <div className="wl-group-sub">{g.sub}</div>
+          </header>
+          {groupBy(g.items).map(([sub, items]) => (
+            <WlSubgroup key={sub} kind={g.kind} title={sub} count={items.length} items={items} />
+          ))}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+/* ---------- App ---------- */
 function App() {
-  const [tweaks, setTweak] = (typeof useTweaks === 'function')
-    ? useTweaks(TWEAKS)
-    : (() => {
-        const [v, sv] = useState(TWEAKS);
-        return [v, (k, val) => sv(p => ({ ...p, [k]: val }))];
-      })();
+  const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
+  const accent = '#c2410c';
 
   const [activeTab, setActiveTab] = useState('games');
+  const [viewWhitelist, setViewWhitelist] = useState(false);
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(() => {
     try {
@@ -531,11 +609,10 @@ function App() {
 
   // theme
   useEffect(() => {
-    document.documentElement.dataset.theme = tweaks.theme || 'light';
-  }, [tweaks.theme]);
-  useEffect(() => {
-    document.documentElement.style.setProperty('--accent', tweaks.accent);
-  }, [tweaks.accent]);
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.setProperty('--accent', accent);
+    localStorage.setItem('aiad:theme', theme);
+  }, [theme]);
 
   // persist saved
   useEffect(() => {
@@ -553,7 +630,7 @@ function App() {
     setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
   };
   const toggleTheme = () => {
-    setTweak('theme', (tweaks.theme === 'dark') ? 'light' : 'dark');
+    setTheme(t => t === 'dark' ? 'light' : 'dark');
   };
 
   // filter pipeline
@@ -585,25 +662,31 @@ function App() {
         onQuery={(v) => { setQuery(v); if (v) setViewSaved(false); }}
         savedCount={saved.length}
         onShowSaved={() => { setViewSaved(true); setQuery(''); }}
-        theme={tweaks.theme}
+        theme={theme}
         onToggleTheme={toggleTheme}
       />
       <Tabs
         active={activeTab}
-        onChange={(id) => { setActiveTab(id); setViewSaved(false); setQuery(''); }}
+        onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewWhitelist(false); setQuery(''); }}
         articles={ARTICLES}
         savedCount={saved.length}
         viewSaved={viewSaved}
         onClearSaved={() => setViewSaved(false)}
+        viewWhitelist={viewWhitelist}
+        onShowWhitelist={() => { setViewWhitelist(true); setViewSaved(false); setQuery(''); }}
       />
-      <FeedMeta
-        activeTab={activeTab}
-        count={visible.length}
-        viewSaved={viewSaved}
-        query={query.trim()}
-      />
+      {!viewWhitelist && (
+        <FeedMeta
+          activeTab={activeTab}
+          count={visible.length}
+          viewSaved={viewSaved}
+          query={query.trim()}
+        />
+      )}
       <main className="feed">
-        {loading ? (
+        {viewWhitelist ? (
+          <WhitelistView />
+        ) : loading ? (
           <div className="grid">
             {[0,1,2,3,4,5].map(i => <SkeletonCard key={i} />)}
           </div>
@@ -653,23 +736,6 @@ function App() {
           onOpen={setOpen}
           allArticles={ARTICLES}
         />
-      )}
-
-      {typeof TweaksPanel !== 'undefined' && (
-        <TweaksPanel>
-          <TweakSection label="Theme" />
-          <TweakRadio
-            label="Mode"
-            value={tweaks.theme}
-            onChange={v => setTweak('theme', v)}
-            options={['light', 'dark']}
-          />
-          <TweakColor
-            label="Accent"
-            value={tweaks.accent}
-            onChange={v => setTweak('accent', v)}
-          />
-        </TweaksPanel>
       )}
     </div>
   );
