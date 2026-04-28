@@ -13,6 +13,7 @@ update_articles_js.py — /tmp/feed/articles.json의 새 기사들을
         /* ---- games ---- */
         /* ---- industry ---- */
         /* ---- art ---- */
+        /* ---- repos ---- */
 
 동작:
     1. articles.js를 읽고 기존 id, url을 수집.
@@ -43,6 +44,7 @@ SECTION_MARKERS = {
     'games':    '/* ---- games ---- */',
     'industry': '/* ---- industry ---- */',
     'art':      '/* ---- art ---- */',
+    'repos':    '/* ---- games ---- */',
 }
 
 
@@ -147,6 +149,7 @@ def main():
     print(f"  games:    +{len(by_tab['games'])}")
     print(f"  industry: +{len(by_tab['industry'])}")
     print(f"  art:      +{len(by_tab['art'])}")
+    print(f"  repos:    +(len(by_tab['repos'])}")
 
 
 if __name__ == '__main__':
