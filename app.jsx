@@ -150,7 +150,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
 }
 
 /* ---------- header ---------- */
-function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme }) {
+function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome }) {
   const inputRef = useRef(null);
   useEffect(() => {
     const onKey = (e) => {
@@ -166,7 +166,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme 
   return (
     <header className="site-header">
       <div className="header-inner">
-        <div className="brand" onClick={() => { onQuery(''); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+        <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <span className="brand-name">AI Art Daily</span>
           <small>한국어 큐레이션</small>
         </div>
@@ -209,7 +209,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme 
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewWhitelist, onShowWhitelist }) {
+function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewWhitelist, onShowWhitelist, viewHome }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
@@ -231,7 +231,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
             {TABS.map(t => (
               <button
                 key={t.id}
-                className={`tab ${t.id === active && !viewWhitelist ? 'active' : ''}`}
+                className={`tab ${t.id === active && !viewWhitelist && !viewHome ? 'active' : ''}`}
                 onClick={() => onChange(t.id)}
               >
                 {t.label}
@@ -662,6 +662,93 @@ function WhitelistView() {
   );
 }
 
+/* ---------- home view ---------- */
+function HomeView({ onSelectTab, onShowWhitelist, onOpenArticle, articles }) {
+  const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
+  const latest = useMemo(() => {
+    return [...articles]
+      .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
+      .slice(0, 10);
+  }, [articles]);
+  const tickerItems = useMemo(() => [...latest, ...latest], [latest]);
+  const tabLabelOf = (id) => (TABS.find(t => t.id === id) || {}).label || '';
+  return (
+    <div className="home">
+      <aside className="home-hero">
+        <div className="home-eyebrow">
+          <span className="home-eyebrow-line" aria-hidden="true" />
+          <span className="home-eyebrow-text">AI ART DAILY</span>
+          <span className="home-eyebrow-date">{today}</span>
+        </div>
+        <h1 className="home-title">아트 제작자를 위한<br/>AI 뉴스 큐레이션</h1>
+        <p className="home-lede">
+          매일 쏟아지는 AI 뉴스 중 게임·아트 제작 현장에 실제로 영향을 주는 소식만 골라
+          한국어로 정리합니다.
+        </p>
+      </aside>
+
+      <section className="home-main">
+        <div className="home-section-head">
+          <span className="home-section-eyebrow">
+            <span className="home-section-kind">CHANNELS</span>
+            <span className="home-section-rule" aria-hidden="true" />
+            <span className="home-section-count">{String(TABS.length).padStart(2, '0')}</span>
+          </span>
+          <h2 className="home-section-title">카테고리 채널</h2>
+          <div className="home-section-sub">관심 분야를 골라 오늘의 큐레이션을 확인하세요</div>
+        </div>
+        <ul className="home-grid">
+          {TABS.map((t, i) => (
+            <li key={t.id} className="home-card-wrap">
+              <button className="home-card" onClick={() => onSelectTab(t.id)}>
+                <div className="home-card-num">{String(i + 1).padStart(2, '0')}</div>
+                <div className="home-card-body">
+                  <div className="home-card-title">{t.label}</div>
+                  <p className="home-card-desc">{t.desc}</p>
+                </div>
+              </button>
+            </li>
+          ))}
+        </ul>
+        <div className="home-grid-note">
+          <span className="home-grid-note-dot" aria-hidden="true" />
+          <div className="home-grid-note-body">
+            <strong>카테고리 확장 예정</strong>
+            <span>새로운 아이디어는 언제든 환영입니다.</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-ticker" aria-label="최신 뉴스">
+        <div className="home-ticker-head">
+          <span className="home-ticker-eyebrow">
+            <span className="home-ticker-pulse" aria-hidden="true" />
+            LATEST
+          </span>
+          <span className="home-ticker-title">가장 최근 큐레이션된 10개 기사</span>
+        </div>
+        <div className="home-ticker-track-wrap">
+          <ul className="home-ticker-track">
+            {tickerItems.map((a, i) => (
+              <li key={`${a.id}-${i}`} className="home-ticker-card">
+                <button className="home-ticker-btn" onClick={() => onOpenArticle(a)}>
+                  <span className="home-ticker-cat">{tabLabelOf(a.tab)}</span>
+                  <span className="home-ticker-headline">{a.headline}</span>
+                  <span className="home-ticker-meta">
+                    <span className="home-ticker-source">{a.source}</span>
+                    <span className="home-ticker-dot" aria-hidden="true" />
+                    <span className="home-ticker-date">{a.publishedAt}</span>
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </div>
+  );
+}
+
 /* ---------- App ---------- */
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -669,6 +756,7 @@ function App() {
 
   const [activeTab, setActiveTab] = useState('games');
   const [viewWhitelist, setViewWhitelist] = useState(false);
+  const [viewHome, setViewHome] = useState(true);
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(() => {
     try {
@@ -758,23 +846,28 @@ function App() {
     <div className="page">
       <Header
         query={query}
-        onQuery={(v) => { setQuery(v); if (v) setViewSaved(false); }}
+        onQuery={(v) => { setQuery(v); if (v) { setViewSaved(false); setViewHome(false); setViewWhitelist(false); } }}
         savedCount={saved.length}
-        onShowSaved={() => { setViewSaved(true); setQuery(''); }}
+        onShowSaved={() => { setViewSaved(true); setViewHome(false); setViewWhitelist(false); setQuery(''); }}
         theme={theme}
         onToggleTheme={toggleTheme}
+        onShowHome={() => { setViewHome(true); setViewSaved(false); setViewWhitelist(false); setQuery(''); }}
       />
-      <Tabs
-        active={activeTab}
-        onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewWhitelist(false); setQuery(''); }}
-        articles={ARTICLES}
-        savedCount={saved.length}
-        viewSaved={viewSaved}
-        onClearSaved={() => setViewSaved(false)}
-        viewWhitelist={viewWhitelist}
-        onShowWhitelist={() => { setViewWhitelist(true); setViewSaved(false); setQuery(''); }}
-      />
-      {!viewWhitelist && (
+      {!viewHome && (
+        <Tabs
+          active={activeTab}
+          onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewWhitelist(false); setViewHome(false); setQuery(''); }}
+          articles={ARTICLES}
+          savedCount={saved.length}
+          viewSaved={viewSaved}
+          onClearSaved={() => setViewSaved(false)}
+          viewWhitelist={viewWhitelist}
+          onShowWhitelist={() => { setViewWhitelist(true); setViewSaved(false); setViewHome(false); setQuery(''); }}
+          viewHome={viewHome}
+        />
+      )}
+      
+      {!viewWhitelist && !viewHome && (
         <FeedMeta
           activeTab={activeTab}
           count={visible.length}
@@ -783,7 +876,14 @@ function App() {
         />
       )}
       <main className="feed">
-        {viewWhitelist ? (
+        {viewHome ? (
+          <HomeView
+            onSelectTab={(id) => { setActiveTab(id); setViewHome(false); setViewSaved(false); setViewWhitelist(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+            onShowWhitelist={() => { setViewWhitelist(true); setViewHome(false); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+            onOpenArticle={setOpen}
+            articles={ARTICLES}
+          />
+        ) : viewWhitelist ? (
           <WhitelistView />
         ) : loading ? (
           <div className="grid">
