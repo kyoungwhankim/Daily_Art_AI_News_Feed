@@ -167,7 +167,6 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme 
     <header className="site-header">
       <div className="header-inner">
         <div className="brand" onClick={() => { onQuery(''); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-          <img className="brand-mark" src="assets/logo.png" alt="DX" />
           <span className="brand-name">AI Art Daily</span>
           <small>한국어 큐레이션</small>
         </div>
