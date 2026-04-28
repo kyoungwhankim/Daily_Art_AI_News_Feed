@@ -4,7 +4,7 @@ window.AIAD = {
     { id: 'games',    label: '게임 제작 속 AI' },
     { id: 'industry', label: 'AI 도입 뉴스' },
     { id: 'art',      label: '아트 전반 AI 뉴스' },
-    { id: 'repos',    label: 'AI Github' },
+    { id: 'repos',    label: '오픈소스 업데이' },
   // add new tab here: { id: 'unique-id', label: '한국어 라벨' },
   ],
  
