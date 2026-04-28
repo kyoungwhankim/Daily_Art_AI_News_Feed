@@ -904,7 +904,7 @@ mark {
 .wl-group:last-child { margin-bottom: 0; }
 
 /* sub-categories within a group */
-.wl-sub { margin-bottom: 28px; }
+.wl-sub { margin-bottom: 56px; }
 .wl-sub:last-child { margin-bottom: 0; }
 .wl-sub-head {
   display: flex;
@@ -913,11 +913,11 @@ mark {
   margin-bottom: 14px;
 }
 .wl-sub-title {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--ink);
   margin: 0;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.015em;
   white-space: nowrap;
 }
 .wl-sub-count {
@@ -935,7 +935,43 @@ mark {
 .wl-sub-rule {
   flex: 1;
   height: 0;
-  border-top: 1.5px dashed var(--hairline);
+  border-top: 2px dashed #6b7280;
+  opacity: 0.75;
+}
+
+/* tier rows (⭐⭐⭐ / ⭐⭐ / ⭐) within a category */
+.wl-tier { margin-bottom: 16px; }
+.wl-tier:last-child { margin-bottom: 0; }
+.wl-tier-head {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 14px;
+  padding: 2px 0 4px;
+  border-bottom: 1px solid var(--hairline);
+}
+.wl-tier-rule {
+  flex: 1;
+}
+.wl-tier-stars {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 4px 4px 4px 6px;
+  color: #c2410c;
+}
+.wl-tier-label {
+  margin-left: 4px;
+  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #c2410c;
+  padding: 2px 6px;
+  background: transparent;
+  border: 1.5px solid #c2410c;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .wl-group-head {
@@ -976,7 +1012,7 @@ mark {
   border-radius: 999px;
 }
 .wl-group-title {
-  font-size: 22px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--ink);
   margin: 0;

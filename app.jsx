@@ -494,13 +494,22 @@ function SkeletonCard() {
 }
 
 /* ---------- whitelist view ---------- */
-function WlSubgroup({ kind, title, count, items }) {
+const TIER_LABELS = {
+  '⭐⭐⭐⭐': '50K+',
+  '⭐⭐⭐':  '10K+',
+  '⭐⭐':    '1K+',
+  '⭐':      '100+',
+};
+
+function WlTierRow({ kind, tier, items }) {
   return (
-    <div className="wl-sub">
-      <div className="wl-sub-head">
-        <h3 className="wl-sub-title">{title}</h3>
-        <span className="wl-sub-count">{String(count).padStart(2, '0')}</span>
-        <span className="wl-sub-rule" aria-hidden="true" />
+    <div className="wl-tier">
+      <div className="wl-tier-head">
+        <span className="wl-tier-stars" aria-label={`tier ${tier}`}>{tier}</span>
+        {TIER_LABELS[tier] ? (
+          <span className="wl-tier-label">{TIER_LABELS[tier]}</span>
+        ) : null}
+        <span className="wl-tier-rule" aria-hidden="true" />
       </div>
       <ul className="wl-grid">
         {items.map(it => (
@@ -512,6 +521,51 @@ function WlSubgroup({ kind, title, count, items }) {
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+function WlSubgroup({ kind, title, count, items }) {
+  // group by tier within this category (if any item carries a tier)
+  const hasTiers = items.some(it => it.tier);
+  let tierRows = null;
+  if (hasTiers) {
+    const order = ['⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐', '⭐'];
+    const map = new Map();
+    for (const it of items) {
+      const t = it.tier || '⭐';
+      if (!map.has(t)) map.set(t, []);
+      map.get(t).push(it);
+    }
+    tierRows = order.filter(t => map.has(t)).map(t => [t, map.get(t)]);
+    // include any unexpected tiers at the end
+    for (const [t, arr] of map) {
+      if (!order.includes(t)) tierRows.push([t, arr]);
+    }
+  }
+  return (
+    <div className="wl-sub">
+      <div className="wl-sub-head">
+        <h3 className="wl-sub-title">{title}</h3>
+        <span className="wl-sub-count">{String(count).padStart(2, '0')}</span>
+        <span className="wl-sub-rule" aria-hidden="true" />
+      </div>
+      {hasTiers ? (
+        tierRows.map(([t, arr]) => (
+          <WlTierRow key={t} kind={kind} tier={t} items={arr} />
+        ))
+      ) : (
+        <ul className="wl-grid">
+          {items.map(it => (
+            <li key={it.url} className="wl-card">
+              <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
+                <div className="wl-card-name">{it.name}</div>
+                {it.note ? <div className="wl-card-note">{it.note}</div> : null}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
@@ -534,6 +588,7 @@ function WhitelistView() {
     (it.name && it.name.toLowerCase().includes(q)) ||
     (it.note && it.note.toLowerCase().includes(q)) ||
     (it.group && it.group.toLowerCase().includes(q)) ||
+    (it.tier && it.tier.includes(q)) ||
     (it.url && it.url.toLowerCase().includes(q));
 
   const filteredRepos = (WHITELIST.githubRepos || []).filter(matches);
@@ -545,7 +600,7 @@ function WhitelistView() {
     {
       key: 'repos',
       title: 'Github 레포지토리',
-      sub: '변경점을 이벤트로 추적하는 레포',
+      sub: '주요 아트 관련 오픈소스 Github 레포지토리 모음',
       kind: 'repo',
       items: filteredRepos,
     },
@@ -586,7 +641,7 @@ function WhitelistView() {
       ) : (
         sections.map(g => (
           g.items.length === 0 ? null : (
-            <section key={g.key} className="wl-group">
+            <section key={g.key} className={`wl-group wl-group-${g.kind}`}>
               <header className="wl-group-head">
                 <div className="wl-group-eyebrow">
                   <span className="wl-group-kind">{g.kind === 'repo' ? 'GITHUB' : 'SOURCES'}</span>
