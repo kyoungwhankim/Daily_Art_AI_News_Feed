@@ -149,7 +149,7 @@ def main():
     print(f"  games:    +{len(by_tab['games'])}")
     print(f"  industry: +{len(by_tab['industry'])}")
     print(f"  art:      +{len(by_tab['art'])}")
-    print(f"  repos:    +(len(by_tab['repos'])}")
+    print(f"  repos:    +{len(by_tab['repos'])}")
 
 
 if __name__ == '__main__':
