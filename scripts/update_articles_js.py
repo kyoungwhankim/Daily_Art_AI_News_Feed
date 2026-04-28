@@ -44,7 +44,7 @@ SECTION_MARKERS = {
     'games':    '/* ---- games ---- */',
     'industry': '/* ---- industry ---- */',
     'art':      '/* ---- art ---- */',
-    'repos':    '/* ---- games ---- */',
+    'repos':    '/* ---- repos ---- */',
 }
 
 
@@ -113,7 +113,7 @@ def main():
     existing_urls = set(re.findall(r"url:\s*'([^']+)'", original))
 
     # tab별로 그룹화하면서 이미 게시된 url은 스킵 (URL dedup).
-    by_tab = {'games': [], 'industry': [], 'art': []}
+    by_tab = {'games': [], 'industry': [], 'art': [], 'repos': []}
     skipped_dup = 0
     for i, art in enumerate(new_articles):
         if art.get('url') in existing_urls:
