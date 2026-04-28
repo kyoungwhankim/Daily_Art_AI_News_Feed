@@ -548,7 +548,7 @@ window.AIAD = {
               { label: '공식 소개', href: 'https://lightcraft.pro/coverage/lightcraft-spark-ai-assisted-filmmaking-platform/' },
             ],
         }
-    /* ---- games ---- */
+    /* ---- repos ---- */
     
   ],
 };
