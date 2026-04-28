@@ -1,11 +1,10 @@
 /* AI Art Daily — article dataset */
 window.AIAD = {
   tabs: [
-    { id: 'games',    label: '게임 제작 속 AI' },
-    { id: 'industry', label: 'AI 도입 뉴스' },
-    { id: 'art',      label: '아트 전반 AI 뉴스' },
-    { id: 'repos',    label: '오픈소스 업데이트' },
-  // add new tab here: { id: 'unique-id', label: '한국어 라벨' },
+    { id: 'games',    label: '게임 제작 속 AI',    desc: '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.' },
+    { id: 'industry', label: 'AI 도입 뉴스',       desc: '게임 스튜디오들의 AI 도입과 관련된 뉴스들을 매일 업데이트합니다.' },
+    { id: 'art',      label: '아트 전반 AI 뉴스',  desc: '게임 제작과 무관하게 모든 아트 관련 AI 뉴스들을 매일 업데이트합니다.' },
+    { id: 'repos',    label: '오픈소스 업데이트',  desc: 'Github 오픈소스 프로젝트들의 업데이트 뉴스들을 매일 업데이트합니다. 오픈소스 프로젝트 목록은 \'유용한 소스\' 탭에서 확인해주세요.' },
   ],
  
   /*
@@ -548,7 +547,5 @@ window.AIAD = {
               { label: '공식 소개', href: 'https://lightcraft.pro/coverage/lightcraft-spark-ai-assisted-filmmaking-platform/' },
             ],
         }
-    /* ---- repos ---- */
-    
   ],
 };

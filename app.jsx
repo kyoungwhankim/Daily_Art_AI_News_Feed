@@ -274,11 +274,15 @@ function FeedMeta({ activeTab, count, viewSaved, query }) {
     title = t.label;
     sub = `${today} · ${count}개 기사`;
   }
+  const activeDesc = (!query && !viewSaved)
+    ? (TABS.find(t => t.id === activeTab) || {}).desc
+    : null;
   return (
     <div className="feed-meta">
       <div>
         <h1 className="feed-title">{title}</h1>
         <div className="feed-sub">{sub}</div>
+        {activeDesc && <p className="feed-desc">{activeDesc}</p>}
       </div>
       {!viewSaved && !query && (
         <div className="feed-toolbar"></div>
@@ -525,40 +529,81 @@ function groupBy(items) {
 }
 
 function WhitelistView() {
+  const [wlQuery, setWlQuery] = useState('');
+  const q = wlQuery.trim().toLowerCase();
+  const matches = (it) => !q ||
+    (it.name && it.name.toLowerCase().includes(q)) ||
+    (it.note && it.note.toLowerCase().includes(q)) ||
+    (it.group && it.group.toLowerCase().includes(q)) ||
+    (it.url && it.url.toLowerCase().includes(q));
+
+  const filteredRepos = (WHITELIST.githubRepos || []).filter(matches);
+  const filteredSources = (WHITELIST.articleSources || []).filter(matches);
+  const totalAll = (WHITELIST.githubRepos || []).length + (WHITELIST.articleSources || []).length;
+  const totalShown = filteredRepos.length + filteredSources.length;
+
   const sections = [
     {
       key: 'repos',
       title: 'Github 레포지토리',
       sub: '변경점을 이벤트로 추적하는 레포',
       kind: 'repo',
-      items: WHITELIST.githubRepos,
+      items: filteredRepos,
     },
     {
       key: 'sources',
       title: '뉴스 소스',
       sub: '기사 스크래이핑에 사용하는 원본 출처 도메인',
       kind: 'site',
-      items: WHITELIST.articleSources,
+      items: filteredSources,
     },
   ];
+
   return (
     <div className="whitelist">
-      {sections.map(g => (
-        <section key={g.key} className="wl-group">
-          <header className="wl-group-head">
-            <div className="wl-group-eyebrow">
-              <span className="wl-group-kind">{g.kind === 'repo' ? 'GITHUB' : 'SOURCES'}</span>
-              <span className="wl-group-rule" aria-hidden="true" />
-              <span className="wl-group-count">{String(g.items.length).padStart(2, '0')}</span>
-            </div>
-            <h2 className="wl-group-title">{g.title}</h2>
-            <div className="wl-group-sub">{g.sub}</div>
-          </header>
-          {groupBy(g.items).map(([sub, items]) => (
-            <WlSubgroup key={sub} kind={g.kind} title={sub} count={items.length} items={items} />
-          ))}
-        </section>
-      ))}
+      <div className="wl-search-bar">
+        <div className="wl-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          <input
+            type="search"
+            value={wlQuery}
+            onChange={(e) => setWlQuery(e.target.value)}
+            placeholder="레포·소스·카테고리 검색…"
+            aria-label="유용한 소스 검색"
+          />
+          {wlQuery && (
+            <button type="button" className="wl-search-clear" onClick={() => setWlQuery('')} aria-label="검색어 지우기">×</button>
+          )}
+        </div>
+        <div className="wl-search-meta">
+          {q ? `${totalShown}개 일치 · 전체 ${totalAll}개` : `전체 ${totalAll}개`}
+        </div>
+      </div>
+      {q && totalShown === 0 ? (
+        <div className="wl-empty">검색 결과가 없어요. 다른 키워드로 시도해보세요.</div>
+      ) : (
+        sections.map(g => (
+          g.items.length === 0 ? null : (
+            <section key={g.key} className="wl-group">
+              <header className="wl-group-head">
+                <div className="wl-group-eyebrow">
+                  <span className="wl-group-kind">{g.kind === 'repo' ? 'GITHUB' : 'SOURCES'}</span>
+                  <span className="wl-group-rule" aria-hidden="true" />
+                  <span className="wl-group-count">{String(g.items.length).padStart(2, '0')}</span>
+                </div>
+                <h2 className="wl-group-title">{g.title}</h2>
+                <div className="wl-group-sub">{g.sub}</div>
+              </header>
+              {groupBy(g.items).map(([sub, items]) => (
+                <WlSubgroup key={sub} kind={g.kind} title={sub} count={items.length} items={items} />
+              ))}
+            </section>
+          )
+        ))
+      )}
     </div>
   );
 }
