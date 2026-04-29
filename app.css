@@ -790,25 +790,21 @@ mark {
 }
 .grid.today-grid .card.feature .card-body { padding: 22px 26px 24px; gap: 12px; }
 .grid.today-grid .card.compact-row {
-  flex-direction: row;
+  flex-direction: column;
 }
 .grid.today-grid .card.compact-row .thumb {
-  width: 38%;
-  aspect-ratio: auto;
-  flex: 0 0 38%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  flex: none;
 }
 .grid.today-grid .card.compact-row .card-body { padding: 14px 16px; gap: 6px; }
 .grid.today-grid .card.compact-row .card-headline { font-size: 15px; -webkit-line-clamp: 2; }
-.grid.today-grid .card.compact-row .card-summary { display: none; }
+.grid.today-grid .card.compact-row .card-summary { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 @media (max-width: 960px) {
   .grid.today-grid { grid-template-columns: 1fr; }
   .grid.today-grid .card.feature { grid-row: auto; }
-  .grid.today-grid .card.compact-row { flex-direction: column; }
-  .grid.today-grid .card.compact-row .thumb { width: 100%; aspect-ratio: 16/9; flex: none; }
-  .grid.today-grid .card.compact-row .card-summary { display: -webkit-box; }
 }
-
 /* show older button */
 .show-older {
   display: flex;
