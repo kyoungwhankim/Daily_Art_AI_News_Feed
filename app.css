@@ -1191,6 +1191,7 @@ mark {
   gap: 48px;
   align-items: start;
   padding: 32px 0 24px;
+  padding-bottom: 200px;
 }
 
 /* hero (left column) */
@@ -1487,16 +1488,16 @@ mark {
 
 /* ===== latest news ticker ===== */
 .home-ticker {
-  grid-column: 1 / -1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
   margin-top: 28px;
-  /* break out of .feed container padding so it runs edge-to-edge */
-  margin-left: calc(50% - 50vw + 8px);
-  margin-right: calc(50% - 50vw + 8px);
   padding: 18px 0 22px;
   border-top: 2px solid var(--stroke);
   border-bottom: 2px solid var(--stroke);
   background: var(--paper-2);
-  position: relative;
   overflow: hidden;
 }
 .home-ticker::before,
