@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-6263b2f9-2026-04',
+            tab:         'games',
+            headline:    'Anthropic, Blender 공식 후원사 합류 — Claude-Blender MCP 서버도 공개',
+            summary:     'Anthropic이 연 24만 유로 규모로 Blender Development Fund의 Corporate Patron에 합류했어요.',
+            body:        '<p>AI 기업 Anthropic이 Blender Development Fund의 Corporate Patron으로 합류해 연간 24만 유로(약 3억 6천만 원)를 지원하기로 했어요. 이 소식은 커뮤니티 일부에서 생성형 AI 기업의 개입을 우려하는 반응을 불러일으켰어요. 이에 대해 Blender CEO 프란체스코 시디는 이 지원은 Blender 소프트웨어 발전을 위한 것이며 AI 점령이 아니라고 못 박았어요. Blender 재단 정책상 후원 참여는 후원자의 미션이나 전략에 대한 지지를 의미하지 않으며, \'no strings attached\' 원칙이 적용돼요.</p><p>Anthropic 후원 발표와 함께 Blender Lab은 Claude AI 모델을 Blender에 연결하는 MCP 서버도 공개했어요. 이를 통해 아티스트들은 자연어로 Claude에게 3D 씬 디버깅, 오브젝트 일괄 변경 같은 작업을 맡길 수 있게 됐어요. 지난 1년간 Arrowhead Game Studios, Netflix, Epic MegaGrant 등 주요 스폰서를 유치해 온 Blender가 이번에 생성형 AI 기업과도 손을 잡으면서, 3D 아트 파이프라인에서 AI 어시스턴트 활용 가능성이 한층 확장됐어요.</p><p>원문: <a href="https://80.lv/articles/blender-ceo-on-anthropic-funding-this-is-not-ai-takeover">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.04.30',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/48035/images/69f1d7bc75b57/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/blender-ceo-on-anthropic-funding-this-is-not-ai-takeover',
+            urls: [
+                { label: '관련 보도', href: 'https://www.cgchannel.com/2026/04/ai-developer-anthropic-becomes-blenders-latest-corporate-patron/' },
+            ],
+        },
+        {
             id:          'games-724981f7-2026-04',
             tab:         'games',
             headline:    'Autodesk Flow Studio, AI 리깅과 뉴럴 레이어로 애니메이션 제작 혁신',
@@ -247,6 +262,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-f2f68fe1-2026-04',
+            tab:         'industry',
+            headline:    '매직: 더 개더링 아레나 개발팀, AI 도입 보호 조항 요구하며 노조 결성',
+            summary:     'MtG Arena 개발팀이 CWA와 연대해 노조를 결성하고 AI 도입 안전장치 마련을 요구했어요.',
+            body:        '<p>Magic: The Gathering Arena 개발팀이 미국통신노조(CWA)와 연대하여 \'United Wizards of the Coast\'라는 노조를 결성했어요. 조합원 과반수 이상이 가입 카드에 서명했으며, 팀원들은 Wizards of the Coast와 모회사 Hasbro 경영진에게 노조의 자발적 승인을 공식 요청했어요. 노조는 해고 보호, 원격근무 보장, 생성형 AI 무분별한 도입에 대한 명확한 안전장치 마련을 핵심 요구사항으로 내걸었어요.</p><p>노조 측은 최근 경영진의 결정이 고용 안정에 대한 불확실성을 키웠으며, 명확한 안전장치 없이 AI 도입 압박이 커지고 있다고 주장했어요. 크런치와 인력 충원 없는 업무 가중도 문제로 제기됐어요. 자발적 승인이 이루어지지 않을 경우 전국노동관계위원회(NLRB)를 통한 공식 선거 절차를 진행할 계획이에요. AI 도구 채택 압박에 맞선 게임 개발자들의 집단 행동이 이어지면서, 스튜디오 내 AI 도입 방식과 노동자 보호에 대한 논의가 업계 전반으로 확산되고 있어요.</p><p>원문: <a href="https://www.pocketgamer.biz/magic-the-gathering-arena-team-unionises-under-cwa/">PocketGamer.biz</a></p>',
+            source:      'PocketGamer.biz',
+            publishedAt: '2026.04.30',
+            hue:         10,
+            image:       'https://media.pocketgamer.biz/images/139040/88850/magicthegatheringarenalogo-1_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/magic-the-gathering-arena-team-unionises-under-cwa/',
+        },
+        {
             id:          'industry-f27837d1-2026-04',
             tab:         'industry',
             headline:    '매직 더 개더링 아레나 개발자들, 생성형 AI 강요에 맞서 노조 결성 신청',
@@ -418,6 +445,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-6fc6e2a6-2026-04',
+            tab:         'art',
+            headline:    'Runway CEO "AI 영상 생성은 서막일 뿐 — 월드 모델이 다음 목적지"',
+            summary:     'Runway CEO가 AI 영상 생성은 게임·로보틱스까지 아우르는 월드 모델 개발의 출발점일 뿐이라고 밝혔어요.',
+            body:        '<p>Runway의 공동창업자이자 CEO인 크리스토발 발렌수엘라가 TechCrunch Equity 팟캐스트에 출연해 AI 영상 생성의 미래와 회사의 비전을 밝혔어요. 그는 AI 영상 생성이 단순한 콘텐츠 제작 도구를 넘어, 게임·로보틱스·AGI까지 아우르는 \'월드 모델\' 개발의 출발점에 불과하다고 말했어요. Runway는 약 8억 6천만 달러의 투자를 유치해 53억 달러 밸류에이션을 기록 중이며, 구글·오픈AI와 직접 경쟁하고 있어요.</p><p>발렌수엘라가 추구하는 월드 모델은 물리 법칙을 이해하는 범용 세계 시뮬레이터로, 경쟁사들과는 차별화된 방향성이에요. 실시간 영상 생성 기술이 현실화되면 콘텐츠 제작을 훨씬 넘어서는 \'비선형 미디어\'와 인터랙티브 엔터테인먼트가 가능해져, 창작물 제작의 패러다임 자체가 근본적으로 바뀔 것으로 전망했어요. 기술이 영화 제작에서 실제 제약 요소라는 관점에서, 그 제약이 사라질 때 어떤 변화가 생길지를 탐구하는 것이 Runway의 핵심 과제라고 강조했어요.</p><p>원문: <a href="https://techcrunch.com/podcast/equity-podcast-runway-ceo-cristobal-valenzuela-ai-video-world-models/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.04.30',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2250760741.jpg',
+            url:         'https://techcrunch.com/podcast/equity-podcast-runway-ceo-cristobal-valenzuela-ai-video-world-models/',
+        },
         {
             id:          'art-ffacf63e-2026-04',
             tab:         'art',
