@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-3868e758-2026-05',
+            tab:         'games',
+            headline:    '개발자가 가우시안 스플래팅으로 브라우저에서 돌아가는 FPS 게임 제작',
+            summary:     '개발자 이아코프 숨이긴이 실제 폐건물 스캔 데이터로 브라우저 FPS 게임을 만들었어요.',
+            body:        '<p>개발자 이아코프 숨이긴이 가우시안 스플래팅 기술을 활용해 실제 폐건물 스캔 데이터를 기반으로 브라우저에서 바로 즐길 수 있는 FPS 게임을 완성했어요. PlayCanvas 엔진 위에서 구동되는 이 게임은 별도 설치 없이 웹 브라우저만 있으면 포토리얼리스틱한 폐허 공간을 배경으로 실시간 게임플레이를 경험할 수 있어요. 가우시안 스플래팅 기술을 실제 게임플레이에 적용한 사례가 극히 드물었던 만큼, 개발자 커뮤니티에서 큰 화제가 되고 있어요.</p><p>가우시안 스플래팅은 2D 이미지나 영상을 머신러닝으로 분석해 포토리얼리스틱한 3D 환경으로 변환하는 기술이에요. 기존 게임 제작에서는 폴리곤 모델링과 텍스처 페인팅 같은 복잡한 과정이 필수였지만, 이 방식은 현실 공간을 촬영한 데이터만으로도 즉각 게임 레벨로 만들 수 있어요. 전통적인 3D 모델링 파이프라인 없이도 실제 공간을 그대로 게임에 옮길 수 있다는 점에서, 인디 개발자나 소규모 스튜디오에서 활용 가능성이 특히 높아 보여요. 게임 아트 제작 비용과 시간을 대폭 줄이면서도 현실감 넘치는 레벨을 구현할 수 있어, 향후 게임 아트 파이프라인에 새로운 방향을 제시한 사례로 주목받고 있어요.</p><p>원문: <a href="https://80.lv/articles/developer-builds-browser-based-fps-game-using-gaussian-splats">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.05.01',
+            hue:         25,
+            image:       'https://cdn.80.lv/api/upload/meta/48059/images/69f331f64d1fd/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/developer-builds-browser-based-fps-game-using-gaussian-splats',
+            urls: [
+                { label: '플레이', href: 'https://playcanvas.com' },
+            ],
+        },
+        {
+            id:          'games-3a307ec5-2026-05',
+            tab:         'games',
+            headline:    'Anthropic, 블렌더에 Claude 커넥터 출시 및 공식 후원사 참여',
+            summary:     'Anthropic이 Blender 개발 재단의 공식 후원사로 합류하며 Claude AI 커넥터를 함께 출시했어요.',
+            body:        '<p>Anthropic이 Blender 개발 재단의 공식 Corporate Patron으로 합류하면서, Blender에서 Claude AI를 자연어로 제어할 수 있는 MCP 기반 커넥터를 함께 공개했어요. 이번 후원금은 Blender Python API를 비롯한 핵심 기능의 유지·개선에 집중적으로 쓰일 예정이며, Blender의 오픈소스 원칙과 재단의 기획·검토 권한은 변함없이 유지돼요. 오픈소스 생태계에 대형 AI 기업이 공식 후원자로 참여하는 사례가 늘고 있는 가운데, Anthropic의 합류는 크리에이티브 소프트웨어 분야에서 AI 도입이 본격화되고 있음을 보여줘요.</p><p>공개된 Claude 커넥터는 자연어로 Blender Python API와 대화할 수 있는 인터페이스를 제공해요. 씬 분석·디버깅, 스크립트 자동 생성, 오브젝트 일괄 수정, Blender 인터페이스에 새 도구 추가 등의 작업을 AI에게 맡길 수 있어요. 커넥터는 Model Context Protocol(MCP) 오픈 표준을 기반으로 구축돼 Claude 외의 대형 언어 모델과도 연동 가능하도록 설계됐고, Blender 5.1 버전부터 공식 지원돼요. Anthropic은 이와 함께 Adobe Creative Cloud, Ableton, Autodesk Fusion, SketchUp, Resolume 등 다양한 크리에이티브 도구와의 커넥터도 함께 발표하며, 창작 산업 전반으로 AI 통합을 적극 확장하고 있어요.</p><p>원문: <a href="https://digitalproduction.com/2026/04/30/anthropic-funds-blender-ships-claude-connector/">Digital Production</a></p>',
+            source:      'Digital Production',
+            publishedAt: '2026.05.01',
+            hue:         220,
+            image:       'https://digitalproduction.com/wp-content/uploads/2026/04/lzmwszbzu5w-00-00-13-18-claude-now-connects-to-blender.png',
+            url:         'https://digitalproduction.com/2026/04/30/anthropic-funds-blender-ships-claude-connector/',
+            urls: [
+                { label: '커넥터 정보', href: 'https://github.com/anthropics/claude-code' },
+            ],
+        },
+        {
             id:          'games-6263b2f9-2026-04',
             tab:         'games',
             headline:    'Anthropic, Blender 공식 후원사 합류 — Claude-Blender MCP 서버도 공개',
@@ -262,6 +292,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-78c3e17b-2026-05',
+            tab:         'industry',
+            headline:    'GameMaker에 Claude Code 통합 — 자연어 명령으로 게임 제작 시대 열려',
+            summary:     'GameMaker가 GM-CLI에 Claude Code를 내장해 자연어로 게임을 개발할 수 있는 환경을 열었어요.',
+            body:        '<p>GameMaker가 새로운 런타임(GMRT)과 커맨드라인 툴체인 GM-CLI를 출시하면서 Anthropic의 Claude Code AI를 함께 내장했어요. 개발자가 터미널에서 자연어로 \'이걸 만들어줘\', \'버그 찾아줘\', \'이 빌드 설정 적용해줘\' 같은 명령을 치면 Claude Code가 알아서 처리해주는 방식으로, 전통적인 문법 기반 코딩 대신 대화형으로 게임을 개발하는 이른바 \'바이브 코딩\'이 2D 게임 엔진에서 본격적으로 가능해졌어요. GM-CLI는 기존 GameMaker 런타임과도 호환되며, GameMaker IDE를 실행하지 않고도 프로젝트 구조 조회, 버그 식별, 빌드 설정 관리 등의 작업을 AI와 함께 처리할 수 있어요.</p><p>AI 기능은 선택 사항으로 설계돼, 사용자가 원하는 수준에서만 활용할 수 있어요. GameMaker 총괄 러셀 케이는 "처음 게임을 만드는 초보자부터 프로 스튜디오까지 모두를 지원하고 싶었다"며, AI 통합이 특정 개발자층에 국한되지 않음을 강조했어요. 인디 개발자와 소규모 팀이 특히 많이 쓰는 GameMaker에 AI 코딩 보조가 탑재된 것은 의미가 커요. 대형 스튜디오에서나 가능했던 수준의 AI 지원을 1인 개발자도 터미널 한 줄로 누릴 수 있게 됐고, 이는 소규모 게임 개발의 속도와 접근성을 크게 바꿀 수 있는 전환점으로 평가돼요.</p><p>원문: <a href="https://www.gamedeveloper.com/production/gamemaker-incorporates-claude-code-to-enable-ai-assisted-workflows">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.05.01',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6d7ae8c0053864b4/69f36810966e516c534470da/GameMaker_Header.png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/production/gamemaker-incorporates-claude-code-to-enable-ai-assisted-workflows',
+        },
+        {
             id:          'industry-f2f68fe1-2026-04',
             tab:         'industry',
             headline:    '매직: 더 개더링 아레나 개발팀, AI 도입 보호 조항 요구하며 노조 결성',
@@ -445,6 +487,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-b15b362a-2026-05',
+            tab:         'art',
+            headline:    'Spotify, 인간 아티스트 인증 배지 출시 — AI 음악과 구별한다',
+            summary:     '스포티파이가 실제 인간 아티스트를 증명하는 \'Verified by Spotify\' 배지를 출시했어요.',
+            body:        '<p>스포티파이가 실제 사람이 만든 음악임을 증명하는 \'Verified by Spotify\' 초록색 배지 시스템을 출시했어요. 배지를 받으려면 공연 일정, 굿즈 판매, 연결된 소셜 계정 등 플랫폼 밖에서의 활동 흔적이 있어야 하고, 일시적인 인기가 아닌 꾸준한 청취자 참여도 증명해야 해요. AI 음악이나 AI 페르소나를 주로 사용하는 아티스트 프로필은 인증 자격이 아예 없으며, 배지는 아티스트 프로필과 검색 결과에 표시돼요. 출시 시점에 이미 검색 활동이 있는 아티스트의 99% 이상이 인증을 받게 될 예정으로, 그 대부분은 다양한 장르와 지역의 인디 아티스트들이에요.</p><p>이번 조치는 스트리밍 플랫폼을 가득 채우고 있는 저품질 AI 생성 음악 문제에 대응하기 위한 것이에요. Deezer에 따르면 현재 매일 업로드되는 트랙의 44%가 AI 생성 음악이며, Sony Music도 이전에 AI가 아티스트를 흉내 낸 트랙 135,000개 이상의 삭제를 요청한 바 있어요. 스포티파이는 배지와 함께 아티스트 프로필에 경력 이정표, 발매 이력, 투어 정보를 강조하는 새 섹션도 추가해, 청취자가 진짜 아티스트를 더 쉽게 찾고 연결할 수 있도록 지원해요. AI 생성 콘텐츠가 넘쳐나는 시대에 \'진짜 인간 창작자\'를 구별해 주는 이 시도는 음악 업계 전반에 새로운 기준을 제시할 것으로 보여요.</p><p>원문: <a href="https://techcrunch.com/2026/04/30/spotify-introduces-verified-artist-badges-to-help-distinguish-humans-from-ai/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.01',
+            hue:         130,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/04/S4A_Verified_Header_Ravyn.jpg?resize=1200,683',
+            url:         'https://techcrunch.com/2026/04/30/spotify-introduces-verified-artist-badges-to-help-distinguish-humans-from-ai/',
+            urls: [
+                { label: '공식 발표', href: 'https://newsroom.spotify.com/2026-04-30/verified-by-spotify-badge-artist-details/' },
+            ],
+        },
+        {
+            id:          'art-598ee92f-2026-05',
+            tab:         'art',
+            headline:    'COMFYUI-PBRFusion4',
+            summary:     'ComfyUI에서 PBR 텍스처용 깊이 맵·노멀 맵을 생성하는 노드의 의존성 목록이 명확하게 정리됐어요.',
+            body:        '<p>COMFYUI-PBRFusion4는 입력 이미지로부터 깊이 맵(depth map)과 노멀 맵(normal map)을 자동으로 생성해주는 ComfyUI 커스텀 노드예요. PBR(물리 기반 렌더링) 텍스처 제작 워크플로에 바로 연결할 수 있어, 텍스처 아티스트가 재질 표면의 입체감과 반사 특성을 훨씬 빠르게 구현하는 데 유용해요. 이번 버전 1.0.3 업데이트에서는 README에 의존성 패키지 목록이 명확하게 추가돼, 새로 설치하는 사용자의 진입 장벽이 한결 낮아졌어요.</p><p>이번 커밋에서는 README의 Requirements 섹션에 huggingface-hub, numpy, opencv-python-headless, safetensors, torch, transformers 등 여섯 가지 핵심 의존성이 명시적으로 정리됐어요. 특히 ComfyUI처럼 GUI 없이 동작하는 서버 환경에서는 opencv-python 대신 opencv-python-headless로 충분하다는 안내도 함께 달렸어요. pyproject.toml과 requirements.txt도 함께 업데이트되며 패키지 구성이 전체적으로 일관되게 정돈됐어요. 의존성 정보가 명확해지면 처음 설치하는 사용자의 오류가 줄어들고, 헤드리스 ComfyUI 환경에서도 노드를 안정적으로 활용할 수 있게 돼 실무에서의 활용도가 높아질 거예요.</p><p>원문: <a href="https://github.com/Night1099/COMFYUI-PBRFusion4/commit/17687f480f9412e2e302290cb80eb7951cce1485">Night1099/COMFYUI-PBRFusion4</a></p>',
+            source:      'Night1099/COMFYUI-PBRFusion4',
+            publishedAt: '2026.05.01',
+            hue:         60,
+            image:       'https://opengraph.githubusercontent.com/1/Night1099/COMFYUI-PBRFusion4',
+            url:         'https://github.com/Night1099/COMFYUI-PBRFusion4/commit/17687f480f9412e2e302290cb80eb7951cce1485',
+        },
         {
             id:          'art-6fc6e2a6-2026-04',
             tab:         'art',
