@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-5a4161a3-2026-05',
+            tab:         'games',
+            headline:    'LightWave 2026 출시: MotoRig으로 차량 리깅이 반자동화됐다',
+            summary:     'LightWave Digital이 차량 리깅 반자동화 툴 MotoRig을 포함한 LightWave 2026을 출시했어요.',
+            body:        '<p>LightWave Digital이 3D 애니메이션·렌더링 소프트웨어 LightWave 2026을 공식 공개했어요. 2023년 소프트웨어를 인수한 팀이 내놓는 네 번째 연간 업데이트로, 이번 버전의 핵심 신기능은 MotoRig이에요. MotoRig은 차량 모델에 자동으로 애니메이션 리그를 생성해 주는 반자동 차량 리깅 시스템으로, 4륜 일반 차량부터 군용 6·8륜 차량까지 폭넓게 지원해요. 차량 질량, 무게 분배, 뱅킹 컨트롤 같은 파라미터를 세세하게 조정할 수 있고, 쇼크 앱소버 프리셋도 6종이 기본 내장돼 있어서 지형 추적부터 정교한 서스펜션 다이나믹스까지 손쉽게 구현할 수 있어요.</p><p>이번 업데이트에는 MotoRig 외에도 다양한 VFX·레이아웃 기능이 추가됐어요. 물리 기반 오브젝트 산포 시스템 Advanced Placement로 씬 배치를 실시간으로 처리하고, Fracture 툴로 파괴 시뮬레이션을 위한 지오메트리 프랙처를 손쉽게 적용할 수 있어요. 번개 아크를 3D 지오메트리로 생성하는 THOR 플러그인과 눈·비 효과를 최적화된 메시 변형으로 구현하는 Snow Falling 3D도 새로 도입됐어요. Quixel Megascans와 연동되는 내장 에셋 브라우저도 탑재됐고, 뷰포트 프리뷰 시스템 RIPR 2도 함께 업그레이드됐어요. 오픈 베타는 이미 시작됐으며 최종 릴리스는 3~4주 안으로 예정되어 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/05/lightwave-digital-unveils-lightwave-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.05.05',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/05/260504_LightWave2026_f.jpg',
+            url:         'https://www.cgchannel.com/2026/05/lightwave-digital-unveils-lightwave-2026/',
+        },
+        {
+            id:          'games-23284fee-2026-05',
+            tab:         'games',
+            headline:    'Blender 5.2 LTS, 대용량 텍스처 씬 렌더링 메모리 대폭 절감',
+            summary:     'Blender 5.2 LTS 알파에 이미지 텍스처 메모리 사용을 줄여 주는 Cycles 텍스처 캐시 시스템이 추가됐어요.',
+            body:        '<p>Blender 5.2 LTS가 현재 알파 단계로 개발 중인 가운데, Cycles 렌더 엔진에 새로운 텍스처 캐시 시스템이 추가됐어요. 기존에는 이미지를 렌더링할 때 전체 파일을 메모리에 불러왔지만, 이제는 실제 렌더링에 필요한 이미지 타일과 해상도만 선택적으로 로드하는 방식으로 바뀌었어요. 렌더링 시 각 이미지 옆 blender_tx/ 폴더에 최적화된 .tx 파일이 자동으로 생성되며, 원본 이미지가 변경되면 .tx 파일도 자동 재생성돼서 별도 관리가 전혀 필요 없어요. 셰이더 노드에서 텍스처가 실제로 사용되는 방식에 따라 컬러 스페이스와 필터링 설정도 자동 추론되기 때문에, 사용자는 설정을 신경 쓰지 않아도 돼요.</p><p>이 기능은 CPU와 모든 GPU 백엔드에서 동작하며 이미 데일리 빌드에 포함돼 있어요. 이미지 텍스처가 많이 사용되는 게임·VFX 씬을 기준으로 한 벤치마크에서 메모리 사용량이 눈에 띄게 줄어드는 것이 확인됐어요. 렌더 팜과 프로덕션 파이프라인에서의 활용도를 높이기 위한 추가 개선도 진행 중이라고 하고, 현재 테스트 참여와 버그 리포트를 적극 받고 있어요. 지난 3월 Blender 5.1이 출시된 지 두 달 만에 5.2 LTS 알파가 공개된 것으로, Blender 팀의 빠른 개발 속도도 인상적이에요. 정식 릴리스는 올해 7월로 예정되어 있어요.</p><p>원문: <a href="https://80.lv/articles/blender-5-2-lts-introduces-new-cycles-texture-cache-system">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.05.05',
+            hue:         210,
+            image:       'https://cdn.80.lv/api/upload/meta/48105/images/69f8966e8a359/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/blender-5-2-lts-introduces-new-cycles-texture-cache-system',
+        },
+        {
             id:          'games-8da58ef4-2026-05',
             tab:         'games',
             headline:    'ArcBrush: 게임 아티스트를 위한 무료 노드 기반 이미지·텍스처 편집기 출시',
@@ -348,6 +372,21 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-c9a8688a-2026-05',
+            tab:         'industry',
+            headline:    'Anthropic의 Blender 개발 기금 후원이 일회성 기부로 축소됐다',
+            summary:     'Anthropic의 Blender Corporate Patron 지위가 일회성 기부로 격하됐고, 재단은 AI 기업 후원 절차를 강화하기로 했어요.',
+            body:        '<p>AI 기업 Anthropic이 Blender 개발 기금의 Corporate Patron(기업 후원사) 지위에서 일회성 기부자로 격하됐어요. Blender 재단의 공식 발표에 따르면 Anthropic 측도 이 결정을 인지하고 지지하고 있으며, Anthropic의 로고는 이미 Blender 개발 기금 웹사이트에서 삭제됐어요. 애초에 Anthropic이 연간 24만 유로를 기여하는 Corporate Patron으로 합류한다는 소식이 알려지자, 생성 AI에 대한 거부감을 가진 일부 사용자들을 중심으로 커뮤니티에서 엇갈린 반응이 나왔어요.</p><p>Blender CEO Francesco Siddi는 Mastodon 게시글에서 "Anthropic이 다른 대형 기업 후원사와 본질적으로 다르지 않다고 생각하지만, 많은 사람들이 그렇게 느끼지 않는다는 점을 이해하고 존중한다"고 설명했어요. 기업 후원 지위에는 로고 노출과 공식 연락 창구 제공이 포함돼 사실상 공식 관계를 수반하지만, 기부금은 아무런 계약이나 공식 관계 없이 Blender 개발 미션에 무조건적으로 쓰인다는 점을 강조했어요. 기부금 자체는 그대로 Blender 개발에 활용될 예정이에요.</p><p>Blender 재단은 이번 사건을 계기로 후원금 수락 절차를 강화하고, 소프트웨어 개발과 문서화에서 생성 AI 기술에 대한 공식 입장도 명확히 정의할 예정이에요. 재단은 Blender를 "인간이 만들고 인간을 위한 도구"로 규정하며, 현재 Blender에 생성 AI 기능은 없으며 통합 계획도 없다고 밝혔어요. 오픈소스 3D 툴과 AI 기업 간의 후원 관계 설정이 게임 개발 생태계에 던지는 메시지가 주목돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/05/anthropics-patronage-of-blender-downgraded-to-one-off-donation/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.05.05',
+            hue:         15,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/04/260428_Anthropic_BlenderCorporatePatron_f.jpg',
+            url:         'https://www.cgchannel.com/2026/05/anthropics-patronage-of-blender-downgraded-to-one-off-donation/',
+            urls: [
+                { label: '공식 발표', href: 'https://fund.blender.org/' },
+            ],
+        },
+        {
             id:          'industry-8d06d476-2026-05',
             tab:         'industry',
             headline:    '블렌더 재단, AI 정책 명확히 밝히고 Anthropic 후원 일회성으로 전환',
@@ -567,6 +606,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-c618d992-2026-05',
+            tab:         'art',
+            headline:    '아카데미, AI 배우·AI 작본 오스카 수상 불가 규정 신설',
+            summary:     '미국 아카데미가 AI 생성 퍼포먼스와 AI 작성 각본은 오스카 후보 자격이 없다는 규정을 공식 도입했어요.',
+            body:        '<p>미국 영화 예술 과학 아카데미(AMPAS)가 제99회 오스카상을 위한 주요 규정 변경을 발표했어요. 가장 핵심적인 변경은 \'인간 퍼포먼스 원칙\'으로, 연기 부문 후보에 오르려면 해당 퍼포먼스가 인간이 직접 수행한 것임을 입증해야 해요. AI가 생성한 캐릭터는 연기상 후보 자격이 없고, 시각 효과나 디에이징 기술을 활용한 보정은 계속 허용돼요. 각본 부문도 마찬가지로 인간이 직접 쓴 대본만 후보 자격을 받으며, 이는 WGA(미국 작가 조합) 기준과도 일치해요.</p><p>이번 개정에는 다른 변경 사항도 포함됐어요. 같은 해에 동일 부문에서 배우가 여러 후보에 오를 수 있게 됐고, 국제 장편 영화 부문에서는 한 국가당 한 편 제출 제한이 없어졌어요. 칸·베니스·선댄스 등 주요 영화제 최고상 수상작은 정부 승인 없이도 자동으로 자격을 얻으며, 오스카 트로피는 국가 대신 감독에게 직접 수여돼요. 기술 부문에서는 시각 효과 후보작의 \'비포·애프터 시연\' 의무화, 촬영상 쇼트리스트 20편 제한, 캐스팅상 트로피 3개 확대 등도 함께 발표됐어요.</p><p>AI가 영화 제작 전반에 빠르게 침투하는 시대에 아카데미가 \'창작의 기준선\'을 명시한 이번 결정은 영상·엔터테인먼트 산업 전체에 의미 있는 신호로 받아들여지고 있어요. 인간의 예술적 기여를 보호하는 동시에 국제적 다양성을 넓히는 방향으로 규정을 개선한 이번 변화는, AI 도구와 전통적 창작 방식 사이의 경계를 어떻게 그을지에 대한 업계 논의를 더욱 촉진할 것으로 보여요.</p><p>원문: <a href="https://nofilmschool.com/the-academy-vs-ai">No Film School</a></p>',
+            source:      'No Film School',
+            publishedAt: '2026.05.05',
+            hue:         350,
+            image:       'https://nofilmschool.com/media-library/image.jpg?id=66678673&width=1200&height=600&coordinates=0%2C120%2C0%2C120',
+            url:         'https://nofilmschool.com/the-academy-vs-ai',
+        },
+        {
+            id:          'art-9a8cd2c5-2026-05',
+            tab:         'art',
+            headline:    '이미지 AI 모델, 챗봇보다 6.5배 더 많은 앱 다운로드를 이끈다',
+            summary:     '이미지 생성 AI 모델 출시가 대화형 AI 업데이트보다 6.5배 더 많은 앱 다운로드를 이끌고 있다는 보고서가 나왔어요.',
+            body:        '<p>앱 인텔리전스 기업 Appfigures의 최신 보고서에 따르면, 이미지 생성 AI 모델 출시가 기존 대화형 AI 업데이트보다 6.5배 더 많은 앱 다운로드를 이끌고 있어요. 구글 Gemini는 2025년 8월 Nano Banana 이미지 모델 출시 후 28일 만에 2,200만 건 이상의 다운로드를 기록했고, ChatGPT는 GPT-4o 이미지 생성 기능 도입 이후 약 1,200만 건의 추가 설치를 달성했어요. AI 모바일 앱 시장에서 사용자 참여를 이끄는 핵심 동인이 챗봇에서 이미지 생성으로 이동하고 있음을 보여주는 데이터예요.</p><p>그러나 보고서는 다운로드 급증이 반드시 수익으로 이어지지는 않는다는 점도 강조했어요. Nano Banana는 방대한 다운로드를 기록했음에도 소비자 지출은 약 18만 1천 달러에 그쳤고, Meta의 Vibes 비디오 피드는 260만 건의 다운로드를 올렸지만 의미 있는 수익이 발생하지 않았어요. 반면 ChatGPT는 이미지 모델 출시 후 같은 28일 동안 약 7,000만 달러의 소비자 지출을 이끌어 내며 예외적인 전환율을 보여줬어요. 사용자를 유치하는 것과 유료 고객으로 전환하는 것은 여전히 별개의 과제임을 확인한 셈이에요.</p><p>이 데이터는 이미지 생성 AI가 창작 앱 시장의 주요 성장 동력으로 자리 잡고 있음을 시사해요. AI 비주얼 툴의 진입 장벽이 낮아지고 소비자 수요가 확인된 만큼, 이미지 생성 기능을 전면에 내세운 앱들의 경쟁이 더욱 치열해질 것으로 보여요. 디지털 아티스트와 게임 개발자에게도 주목할 만한 시장 동향이에요.</p><p>원문: <a href="https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.05',
+            hue:         260,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/03/ai-apps-GettyImages-2214375253.jpg?resize=1200,800',
+            url:         'https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/',
+        },
         {
             id:          'art-55d5b0f3-2026-05',
             tab:         'art',
