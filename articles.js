@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-71a7765a-2026-05',
+            tab:         'games',
+            headline:    'Unity, 인에디터 AI 툴 스위트 오픈 베타 출시',
+            summary:     'Unity 6 이상 버전을 대상으로 AI 기반 인에디터 어시스턴트 \'Unity AI\' 오픈 베타가 공개됐어요.',
+            body:        '<p>Unity가 게임 엔진 내부에서 AI를 직접 활용할 수 있는 \'Unity AI\'를 Unity 6 이상 버전 사용자를 대상으로 오픈 베타로 공개했어요. 이번 발표로 개발자들은 에디터를 벗어나지 않고도 질문 답변, 코드 자동 생성, 에셋 제작, 씬 구성 및 실행까지 AI의 도움을 받을 수 있게 됐어요. 어시스턴트는 Ask(질문 및 분석), Agent(자율 작업 실행), Plan(단계별 계획 수립) 세 가지 모드로 작동하고, AI 게이트웨이와 MCP 서버를 통해 외부 AI 서비스 연동도 지원해서 개발사가 선호하는 AI 모델을 직접 연결해 활용할 수 있어요.</p><p>라이선스에 따라 접근 방식이 달라요. Pro, Enterprise, Industry 라이선스 보유자는 별도 절차 없이 자동으로 Unity AI를 이용할 수 있고, Personal 에디션 사용자는 월 10달러 구독으로 접근 가능해요. Unity는 기본 설정에서 사용자 데이터를 AI 모델 학습에 사용하지 않는다고 밝혀, 지적재산권을 중시하는 스튜디오들의 우려를 어느 정도 해소했어요. 이번 Unity AI는 이전에 공개됐다가 종료된 Unity Muse의 후속 성격으로, 반복적이고 시간 소모가 큰 제작 작업을 AI에 맡기고 창의적 의사결정에 더 집중할 수 있는 환경을 열어준다는 점에서 인디 개발자부터 대형 스튜디오까지 게임 업계 전반의 주목을 받고 있어요.</p><p>원문: <a href="https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.05.06',
+            hue:         220,
+            image:       'https://media.pocketgamer.biz/images/139138/88879/unity-ai_l1200.jpg',
+            url:         'https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta',
+            urls: [
+                { label: '공식 사이트', href: 'https://unity.com/features/ai' },
+            ],
+        },
+        {
             id:          'games-5a4161a3-2026-05',
             tab:         'games',
             headline:    'LightWave 2026 출시: MotoRig으로 차량 리깅이 반자동화됐다',
@@ -372,6 +387,33 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-1cde3dcd-2026-05',
+            tab:         'industry',
+            headline:    '터키 모바일 스튜디오 Mindtail, AI 네이티브 퍼즐 게임 개발로 200만 달러 투자 유치',
+            summary:     '터키 모바일 스튜디오 Mindtail이 AI 네이티브 파이프라인을 내세워 200만 달러 프리시드 투자를 유치했어요.',
+            body:        '<p>터키 기반 모바일 게임 스튜디오 Mindtail이 AI 네이티브 프로덕션 모델을 기반으로 하이브리드 캐주얼 퍼즐 게임을 개발한다는 비전을 내세워 200만 달러 규모의 프리시드 투자를 유치했어요. 이번 라운드는 APY Ventures가 리드했고, Inveo Ventures와 Ak Portföy GSYF가 함께 참여했어요. 창업팀은 Dream Games, King, Tactile Games 등에서 Royal Match, Candy Crush Soda Saga, Lily\'s Garden 등 수억 명 규모 플레이어를 보유한 글로벌 히트 모바일 게임을 개발해 온 업계 베테랑들로 구성돼 있어요.</p><p>Mindtail이 가장 강조하는 차별점은 \'AI 네이티브 파이프라인\'이에요. 이 방식을 활용하면 통상 수개월이 걸리던 게임 개발 사이클을 수 주 단위로 단축할 수 있다고 해요. CEO R. Tamer Özgen은 "글로벌 히트작들에서 얻은 경험과 AI 네이티브 프로덕션 모델을 결합해, 하이브리드 캐주얼 퍼즐 장르에서 새로운 기준을 세우는 것이 목표"라고 밝혔어요. 스튜디오는 이번 투자금으로 팀 규모를 단기간에 세 배 이상 확대할 계획이며, 첫 번째 타이틀 발표도 곧 이뤄질 예정이에요. AI를 전면에 내세운 신생 스튜디오가 시드 단계부터 대형 투자를 유치하는 사례가 늘어나는 건, AI 기반 게임 개발이 투자 시장에서 핵심 경쟁력으로 인정받기 시작했다는 신호예요.</p><p>원문: <a href="https://www.pocketgamer.biz/turkish-mobile-studio-mindtail-raises-2m-for-ai-driven-puzzle-games/">Pocket Gamer Biz</a></p>',
+            source:      'Pocket Gamer Biz',
+            publishedAt: '2026.05.06',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/139136/88877/mindtrail_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/turkish-mobile-studio-mindtail-raises-2m-for-ai-driven-puzzle-games/',
+        },
+        {
+            id:          'industry-e058e33c-2026-05',
+            tab:         'industry',
+            headline:    'Unity, 게임 개발자를 위한 Unity AI 오픈 베타 공개 — 반복 작업 자동화 지원',
+            summary:     'Unity 6 이상에서 사용 가능한 Unity AI 오픈 베타가 출시돼 에셋 생성·코드 자동화 등 개발 워크플로를 지원해요.',
+            body:        '<p>Unity가 게임 개발자를 위한 AI 통합 개발 환경 \'Unity AI\' 오픈 베타를 Unity 6 이상 버전에서 공식 출시했어요. 인에디터 AI 어시스턴트는 프로젝트 구조와 크리에이티브 워크플로를 이해하도록 설계됐으며, 반복적인 제작 작업을 자동화하면서도 개발자가 창의적 주도권을 유지할 수 있도록 지원해요. AI 게이트웨이를 통한 서드파티 AI 도구 연동과 MCP 서버를 활용한 에디터 작업 자동화도 지원해요. 구독 등급과 AI 크레딧 잔량에 따라 접근 권한이 결정돼요.</p><p>주요 기능으로는 단계별 작업 계획을 수립하는 Plan 모드, AI 변경 사항을 되돌릴 수 있는 롤백 기능, Unity 개발에 특화된 워크플로 스킬 등이 있어요. 플레이스홀더 머티리얼, 사운드, 큐브맵, 2D·3D 에셋을 프로젝트 내에서 직접 생성할 수 있는 제너레이터도 제공돼요. Unity는 "AI가 여러분의 게임 개발을 더 빠르고 더 좋게 만들어 주는 것이 목표"라며, 개발자가 창의적 방향을 주도하는 동안 AI가 시간 소모적인 반복 작업과 실험을 처리한다고 강조했어요. AI를 창의성의 대체재가 아닌 생산성 향상 도구로 자리매김하려는 Unity의 전략이 이번 출시에서 잘 드러나요.</p><p>원문: <a href="https://www.pocketgamer.biz/unity-launches-open-beta-for-unity-ai-game-development-tools/">Pocket Gamer Biz</a></p>',
+            source:      'Pocket Gamer Biz',
+            publishedAt: '2026.05.06',
+            hue:         200,
+            image:       'https://media.pocketgamer.biz/images/139138/88879/unity-ai_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/unity-launches-open-beta-for-unity-ai-game-development-tools/',
+            urls: [
+                { label: '공식 사이트', href: 'https://unity.com/features/ai' },
+            ],
+        },
+        {
             id:          'industry-c9a8688a-2026-05',
             tab:         'industry',
             headline:    'Anthropic의 Blender 개발 기금 후원이 일회성 기부로 축소됐다',
@@ -606,6 +648,42 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-c9040995-2026-05',
+            tab:         'art',
+            headline:    '아카데미 AI 금지, 실질적인 효과가 있을까? — 연기·각본만 제한, 시각효과는 허용',
+            summary:     '99회 오스카부터 AI 생성 연기·각본을 수상 자격에서 제외했지만 시각효과 등 기술 부문은 여전히 허용돼요.',
+            body:        '<p>미국 아카데미 영화예술과학원이 99회 오스카 시상식부터 생성형 AI만으로 제작된 연기와 각본을 수상 자격에서 제외하는 규정을 신설했어요. 연기 부문은 \'영화 크레딧에 명시되고 인간이 동의 하에 직접 연기한 역할만 자격 있음\'으로, 각본 부문은 \'인간이 직접 작성한 각본이어야 함\'으로 규정이 바뀌었어요. 그러나 이 금지는 순수 AI 생성 콘텐츠에만 적용되며, 시각효과(VFX), 베스트 송, 베스트 애니메이티드 피처 등 기술·창작 부문에서는 AI 활용이 여전히 허용돼요. 아카데미 측은 영화 제작에 사용된 디지털 도구는 수상 자격에 영향을 미치지 않으며, 창작 주도권이 인간에게 있었는지를 중점적으로 판단하겠다고 밝혔어요.</p><p>이번 규정을 두고 업계 반응은 엇갈려요. 일부 아티스트들은 의미 있는 제스처라며 환영하는 반면, 많은 이들은 \'AI가 어차피 수상하기 힘들었던 부문만 제한한 반쪽짜리 조치\'라고 비판해요. AI 각본 사용 여부를 실질적으로 감지하고 집행하기 어렵다는 점도 실효성 논란을 키우고 있어요. 영화 현장에서 AI는 이미 배우 디에이징, 아웃페인팅, 업스케일링, 배경 생성 등에 광범위하게 쓰이고 있어서 완전한 금지는 현실적으로 불가능하다는 지적도 나와요. 아카데미가 창작 AI 시대에 맞는 크레딧 표기 기준과 집행 방식을 어떻게 정립할지가 앞으로 더 큰 과제로 남을 것 같아요.</p><p>원문: <a href="https://www.creativebloq.com/entertainment/movies-tv-shows/does-the-oscars-ai-ban-really-mean-anything">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.05.06',
+            hue:         350,
+            image:       'https://cdn.mos.cms.futurecdn.net/8Z4JtTHVUMF5C9W9f5VNUi.jpg',
+            url:         'https://www.creativebloq.com/entertainment/movies-tv-shows/does-the-oscars-ai-ban-really-mean-anything',
+        },
+        {
+            id:          'art-0ec03ade-2026-05',
+            tab:         'art',
+            headline:    '《악마는 프라다를 입는다 2》 아티스트가 AI 조악함을 의도치 않게 완벽 구현한 사연',
+            summary:     '《악마는 프라다를 입는다 2》에서 AI 작품으로 오해받은 밈 이미지가 실제로 인간 아티스트가 직접 그린 작품이었어요.',
+            body:        '<p>《악마는 프라다를 입는다 2》에 등장한 밈 이미지가 AI 생성 작품처럼 보인다며 팬들 사이에서 논란이 됐어요. 흐릿하게 왜곡된 글자, AI 특유의 누런 필터, 몽롱하게 뭉개진 요소 등 생성형 AI 아트의 전형적인 특징을 고스란히 담고 있어 비판이 쏟아졌죠. 그러나 실제로는 디지털 아티스트 Alexis Franklin이 Procreate와 Photoshop을 사용해 직접 제작한 작품이었어요. 제작사로부터 \'즉각적으로 가짜처럼 보이는 저렴한 밈을 만들어 달라\'는 지시를 받았을 뿐이었는데, 그 결과물이 AI 아트의 특징을 너무나 정교하게 재현해 버린 거예요.</p><p>Alexis는 X(구 트위터)에 "\'AI 조악함을 완벽히 구현했다\'는 칭찬은 정말 무서운 칭찬이에요"라고 써 화제를 모았어요. 이미지가 스크린에 잠깐 등장하는 밈이었기 때문에 예술적 붓터치보다 즉각적인 가독성을 우선시했을 뿐인데, 마치 AI가 만든 것처럼 보인다는 반응이 쏟아졌다고 설명했어요. 팬들은 실제 인간 아티스트의 작품임을 알고 오히려 더 큰 호응을 보냈어요. 영화 속에서 AI가 인간의 취향과 일자리를 위협하는 존재로 그려지는 맥락과 맞물려, 이 에피소드는 생성형 AI가 창작 시장에 남긴 영향과 함께 진짜와 가짜의 경계가 점점 모호해지는 시대를 상징하는 장면으로 주목받고 있어요.</p><p>원문: <a href="https://www.creativebloq.com/entertainment/movies-tv-shows/how-a-devils-wears-prada-2-artist-nailed-ai-slop">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.05.06',
+            hue:         70,
+            image:       'https://cdn.mos.cms.futurecdn.net/q5FNX6M5dVYaw8xwRwV2Dh.jpg',
+            url:         'https://www.creativebloq.com/entertainment/movies-tv-shows/how-a-devils-wears-prada-2-artist-nailed-ai-slop',
+        },
+        {
+            id:          'art-a29def2d-2026-05',
+            tab:         'art',
+            headline:    '음성 AI 스타트업 ElevenLabs, 블랙록·제이미 폭스 등 참여한 Series D로 기업가치 110억 달러 달성',
+            summary:     'ElevenLabs가 블랙록·제이미 폭스 등이 참여한 시리즈 D를 마무리하며 기업 가치 110억 달러를 달성했어요.',
+            body:        '<p>음성 AI 플랫폼 ElevenLabs가 지난 2월 발표한 5억 달러 규모의 시리즈 D 투자에 참여한 새로운 투자자 명단을 공개했어요. 블랙록, 웰링턴, D.E. 쇼, 슈로더스 등 대형 금융 기관과 NVIDIA, 살스포스 벤처스, 도이치 텔레콤이 참여했고, 배우 제이미 폭스·에바 롱고리아, 드라마 《오징어 게임》 제작자 황동혁 감독도 투자자 명단에 이름을 올렸어요. ElevenLabs의 기업 가치는 지난해 9월 66억 달러에서 올해 2월 110억 달러로 크게 올랐어요. 이와 함께 6개월 사이 두 번째 1억 달러 규모의 텐더 오퍼링도 완료해, 로빈후드 벤처스를 통한 개인 투자 기회도 마련 중이에요.</p><p>성장세도 가파라요. 연간 반복 매출(ARR)이 5억 달러를 돌파해 전년 대비 약 1.5억 달러가 증가했고, 2026년 1분기에만 1억 달러의 순신규 ARR이 발생했어요. 도이치 텔레콤, 레볼루트, 클라나 등 대형 기업 고객을 새로 확보했으며, 폴란드 음성 AI 스타트업 Papla 팀을 인수해 연구 역량도 강화했어요. 도이치 텔레콤 벤처 담당자는 "음성은 고객과의 최고 접점"이라며 ElevenLabs가 기업-고객 상호작용을 재편할 역량을 갖췄다고 밝혔어요. 영화·게임·크리에이터 이코노미 전반에서 고품질 AI 음성 수요가 폭증하는 지금, ElevenLabs의 급성장은 음성 생성 AI가 창작 산업의 핵심 인프라로 자리잡고 있음을 잘 보여줘요.</p><p>원문: <a href="https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.06',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/07/Mati-Staniszewski_SXSW.jpg',
+            url:         'https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/',
+        },
         {
             id:          'art-c618d992-2026-05',
             tab:         'art',
