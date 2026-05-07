@@ -29,6 +29,35 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-72dad65d-2026-05',
+            tab:         'games',
+            headline:    '블렌더에서 메타휴먼 리그를 자동 생성하는 \'Character Control Rig\' 출시',
+            summary:     '폴리 해머가 블렌더에서 언리얼 엔진 메타휴먼 캐릭터의 컨트롤 리그를 자동 생성하는 유료 애드온을 새로 출시했어요.',
+            body:        '<p>폴리 해머(Poly Hammer)가 블렌더에서 언리얼 엔진 메타휴먼 캐릭터의 컨트롤 리그를 자동 생성하는 애드온 \'Character Control Rig\'을 출시했어요. 이 툴은 블렌더의 Rigify 프레임워크를 활용해 가져온 메타휴먼 캐릭터 비율에 맞는 리그를 자동 생성하고, 언리얼 엔진에서 불러온 메타휴먼 애니메이션을 자동으로 리타겟팅해줘요. 얼굴 애니메이션과 전신 애니메이션 모두 언리얼 엔진으로 직접 내보낼 수 있어요.</p><p>이 애드온은 기존 \'Character DNA\' 애드온 위에 구축된 별도 유료 도구로, 블렌더 4.5 이상에서 사용할 수 있어요. 개인 퍼페추얼 라이선스는 29.99달러, 팀 라이선스는 99.99달러부터 시작하며, 멀티캐릭터 씬 관리를 위한 내장 브라우저도 포함돼 있어요. 믹사모 등 온라인 라이브러리 애니메이션을 메타휴먼에 직접 리타겟팅하는 기능도 곧 추가될 예정이에요.</p><p>Character DNA 0.7 업데이트도 함께 공개됐으며, 언리얼 엔진 5.6·5.7에서 만든 메타휴먼 DNA 파일과 블렌더 5.1 호환성을 지원해요. 블렌더와 언리얼 엔진을 넘나드는 메타휴먼 워크플로를 지원하는 툴이 꾸준히 늘어나면서, 게임 캐릭터 아트 팀의 파이프라인이 한층 유연해지고 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/05/character-control-rig-generates-rigs-for-metahumans-in-blender/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.05.07',
+            hue:         200,
+            url:         'https://www.cgchannel.com/2026/05/character-control-rig-generates-rigs-for-metahumans-in-blender/',
+            urls: [
+                { label: '다운로드', href: 'https://github.com/poly-hammer/character-dna-addon/releases/tag/0.7.0' },
+            ],
+        },
+        {
+            id:          'games-d9ebaef5-2026-05',
+            tab:         'games',
+            headline:    'InstaMAT·InstaLOD 리눅스 네이티브 버전 출시 — VFX·게임 스튜디오 파이프라인 지원 확대',
+            summary:     'Abstract가 3D 텍스처링 툴 InstaMAT와 최적화 툴 InstaLOD의 네이티브 리눅스 버전을 정식 출시했어요.',
+            body:        '<p>Abstract가 3D 텍스처링 및 소재 제작 툴 InstaMAT와 메시 최적화 툴 InstaLOD의 네이티브 리눅스 버전을 정식 출시했어요. RHEL 8·9, Rocky Linux, AlmaLinux, Oracle Linux, CentOS Stream 등 VFX·게임 업계에서 주로 쓰이는 주요 배포판을 지원하며, 윈도우·macOS 버전과 \'광범위한 기능 동등성\'을 제공한다고 밝혔어요.</p><p>InstaMAT는 Substance 3D의 대안으로 주목받아온 레이어 기반 페인팅과 노드 기반 워크플로를 갖춘 도구예요. 이번 리눅스 출시는 Pioneer 라이선스 사용자도 이용할 수 있는데, 이 라이선스는 연 매출 10만 달러 미만 인디 아티스트와 스튜디오에게 무료로 제공돼요. Abstract 측은 주요 업계가 리눅스 지원을 축소하는 추세에 역행해 VFX·게임 커뮤니티에 대한 약속을 더욱 강화했다고 강조했어요.</p><p>렌더 팜, 스튜디오 파이프라인, 클라우드 플랫폼 대부분이 리눅스 기반으로 운영되는 현실에서, 이번 출시는 팀 전체 파이프라인을 하나의 툴셋으로 통합하려는 스튜디오에게 실질적인 선택지를 제공해요. 또한 InstaMAT는 최근 2026 버전으로 업데이트되어 주요 DCC 툴 및 게임 엔진과의 직접 연동도 강화됐어요.</p><p>원문: <a href="https://80.lv/articles/instamat-instalod-get-native-linux-support">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.05.07',
+            hue:         320,
+            image:       'https://cdn.80.lv/api/upload/meta/48157/images/69fb543341adc/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/instamat-instalod-get-native-linux-support',
+            urls: [
+                { label: '자세히 보기', href: 'https://abstract3d.com/2026/05/01/abstract-rolls-out-native-linux-support-built-for-the-pipelines-that-power-production/' },
+            ],
+        },
+        {
             id:          'games-71a7765a-2026-05',
             tab:         'games',
             headline:    'Unity, 인에디터 AI 툴 스위트 오픈 베타 출시',
@@ -387,6 +416,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-f4c5f903-2026-05',
+            tab:         'industry',
+            headline:    'Xbox, Copilot AI 개발 중단 선언 — 내부 개발팀 AI 사용 의무 없음 공식화',
+            summary:     'Xbox 신임 CEO 아샤 샤르마가 콘솔·모바일 앱의 Copilot AI 개발을 전면 중단한다고 발표했어요.',
+            body:        '<p>Xbox의 새 CEO 아샤 샤르마(Asha Sharma)가 콘솔 및 모바일 앱에서의 Copilot AI 개발을 전면 중단한다고 발표했어요. 마이크로소프트는 Copilot을 게이밍 특화 AI 어시스턴트로 키우려 했지만, 결국 Xbox의 전략 방향과 맞지 않는다고 판단했어요. 이 기능은 Xbox 플랫폼 전반에서 플레이어 활동을 파악하고 맞춤형 게임 추천을 제공하도록 설계됐었어요.</p><p>아샤 샤르마는 여러 리더십 인사도 함께 발표했어요. GitHub 출신 재러드 팔머(Jared Palmer)가 기술 팀에 합류하고, 팀 앨런이 Xbox 디자인을 총괄하며, 전 메타 출신 조나단 맥케이가 성장 부문을 이끌게 돼요. 이번 조직 재편은 Xbox가 \'빠르게 움직이고, 커뮤니티와의 연결을 강화하며, 플레이어·개발자의 마찰을 줄이겠다\'는 목표 아래 이뤄진 것이에요.</p><p>내부 개발팀에 생성 AI 사용 의무가 없다는 공식 입장도 함께 내놓아 주목받고 있어요. 아샤 샤르마는 빌 스펜서 전임 CEO 이후 게임 패스 가격 인하, 마케팅 캠페인 종료 등 굵직한 변화를 빠르게 추진하고 있으며, 개발자 커뮤니티의 AI 강압 우려를 의식한 행보라는 평가가 나오고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/xbox-appoints-new-leaders-and-ditches-copilot-ai">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.05.07',
+            hue:         10,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt3ea8e709a674110c/69fb12b1d7761550af8a45d1/Xbox_Copilot.png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/business/xbox-appoints-new-leaders-and-ditches-copilot-ai',
+        },
+        {
+            id:          'industry-804abb28-2026-05',
+            tab:         'industry',
+            headline:    'EVE 온라인 개발사, Fenris Creations로 독립 재출범 — 구글 딥마인드와 AI 연구 파트너십 체결',
+            summary:     'EVE 온라인 개발사 CCP 게임즈가 Pearl Abyss로부터 독립해 Fenris Creations로 새출발하고 구글 딥마인드와 연구 파트너십을 맺었어요.',
+            body:        '<p>EVE 온라인 개발사 CCP 게임즈가 Pearl Abyss로부터 경영진 자사 매입(MBO) 방식으로 1억 2천만 달러에 독립해 \'Fenris Creations\'로 새출발했어요. Pearl Abyss는 2018년 약 4억 2천 5백만 달러에 CCP를 인수했지만, 이번 매각으로 Fenris는 독자적인 이사회를 구성하고 전략·운영·창작 방향을 직접 결정하는 독립 스튜디오로 재편됐어요. CEO 힐마르 페투르손은 조직 구조 변경이나 감원 계획이 없으며, 아이슬란드 본사와 레이캬비크·런던·상하이 스튜디오도 그대로 유지된다고 밝혔어요.</p><p>구글 딥마인드가 소수 지분을 취득하며 연구 파트너십을 맺은 것도 주목할 만해요. 양측은 \'복잡한 동적 시스템에서의 지능 이해\'에 초점을 맞춰, EVE 온라인 오프라인 서버를 장기 계획·메모리·지속 학습 연구의 테스트베드로 활용할 예정이에요. Fenris는 2025년 11월 역대 최고 월 수익을 기록하는 등 EVE 온라인이 최근 수년 중 최고 실적을 보이며 연간 7천만 달러 이상의 매출을 올렸어요.</p><p>복잡한 대규모 멀티플레이어 환경이 AI 훈련 무대로 주목받는 사례가 늘면서, 게임 스튜디오와 AI 연구기관 간의 협업 모델이 빠르게 확산되고 있어요. Fenris는 EVE 프랜차이즈를 수십 년의 관점에서 지속 지원하겠다는 방침이에요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/eve-online-studio-ccp-games-turns-independent-and-rebrands-as-fenris-creations">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.05.07',
+            hue:         200,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt17b98eb1cb9d8f22/69fb48a5574eeb48fc37ef15/EVE_Online.png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/business/eve-online-studio-ccp-games-turns-independent-and-rebrands-as-fenris-creations',
+        },
+        {
             id:          'industry-1cde3dcd-2026-05',
             tab:         'industry',
             headline:    '터키 모바일 스튜디오 Mindtail, AI 네이티브 퍼즐 게임 개발로 200만 달러 투자 유치',
@@ -648,6 +701,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-736b1184-2026-05',
+            tab:         'art',
+            headline:    'OpenAI, 챗GPT 기본 모델을 GPT-5.5 Instant로 교체 — 환각 감소·맞춤형 메모리 강화',
+            summary:     'OpenAI가 챗GPT의 기본 모델을 새 GPT-5.5 Instant로 교체하며 환각 감소와 개인화 메모리 기능을 강화했어요.',
+            body:        '<p>OpenAI가 챗GPT의 기본 모델을 새 GPT-5.5 Instant로 교체했어요. 기존 GPT-5.3 Instant를 대체하는 이 모델은 법률·의학·금융 분야 환각(hallucination)을 줄이면서도 낮은 응답 지연을 유지해요. AIME 2025 수학 테스트에서 기존 모델(65.4점) 대비 81.2점을 기록하고, MMMU-Pro 멀티모달 추론 벤치마크에서도 69.2점에서 76점으로 성능이 올랐어요.</p><p>GPT-5.5 Instant의 핵심 신기능은 맥락 관리 강화예요. 과거 대화·파일·Gmail을 참조해 보다 개인화된 답변을 제공하며, Plus·Pro 사용자에게 먼저 웹에서 제공된 뒤 모바일로도 확대될 예정이에요. 챗GPT는 이제 모든 모델에서 메모리 출처를 보여주어 사용자가 답변 근거를 확인하고 오래된 정보를 직접 삭제하거나 수정할 수 있어요. 공유 채팅에서는 메모리 출처가 다른 사람에게 노출되지 않아요.</p><p>개발자용으로는 API에서 \'chat-latest\'로 GPT-5.5 모델을 사용할 수 있으며, GPT-5.3은 유료 사용자에게 3개월간 선택 옵션으로 남아요. 이전에 GPT-4o 퇴장 때 사용자들이 강하게 반발했던 만큼, OpenAI는 모델 전환 방식을 좀 더 신중하게 관리하는 모양새예요.</p><p>원문: <a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.07',
+            hue:         260,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/05/Memory-update.jpeg?resize=1200,845',
+            url:         'https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/',
+        },
+        {
+            id:          'art-08239f3e-2026-05',
+            tab:         'art',
+            headline:    '구글, 웹 브라우징 AI 에이전트 Project Mariner 공식 종료 — 기능은 Gemini Agent로 통합',
+            summary:     '구글이 웹을 직접 탐색하고 양식 작성·예약까지 처리해주던 AI 에이전트 Project Mariner를 공식 종료했어요.',
+            body:        '<p>구글이 웹을 직접 탐색하고 양식 작성·여행 예약까지 처리해주던 실험적 AI 브라우저 에이전트 \'Project Mariner\'를 공식 종료했어요. 2025년 구글 I/O에서 공개된 마리너는 크롬 브라우저의 스크린샷을 찍어 버튼과 텍스트를 인식한 뒤 직접 클릭하거나 입력하는 방식으로 작동했어요. 올해 3월부터 팀원들이 프로젝트에서 이탈하는 징후가 포착됐고, 결국 서비스 랜딩 페이지에 종료 메시지가 게시됐어요.</p><p>마리너 종료의 주요 배경으로는 두 가지가 꼽혀요. 첫째, 이 방식은 실시간 시각 데이터 처리에 막대한 컴퓨팅 자원이 필요해 속도가 느리고 오작동이 잦았어요. 둘째, 파일 수정·코드 작성까지 처리하는 Claude Code나 OpenClaw 같은 강력한 에이전트들이 인기를 끌면서 브라우저 클릭 기반 방식의 경쟁력이 약해졌어요. 마리너의 핵심 기능은 Gemini API와 새 Gemini Agent에 흡수되어 계속 살아남아요.</p><p>단순 웹 클릭을 넘어 파일 수정·코드 작성까지 수행하는 에이전트가 대세가 되면서, AI 에이전트 경쟁 구도가 빠르게 재편되고 있다는 신호로 읽혀요. 구글은 이 기술을 버린 것이 아니라 보다 범용적인 에이전트 인프라로 발전시키는 방향을 선택한 셈이에요.</p><p>원문: <a href="https://www.androidauthority.com/google-project-mariner-shutdown-3664323/">Android Authority</a></p>',
+            source:      'Android Authority',
+            publishedAt: '2026.05.07',
+            hue:         220,
+            image:       'https://www.androidauthority.com/wp-content/uploads/2024/05/Google-or-Google-Search-logo-on-Chromebook-laptop-stock-photo-1.jpg',
+            url:         'https://www.androidauthority.com/google-project-mariner-shutdown-3664323/',
+        },
         {
             id:          'art-c9040995-2026-05',
             tab:         'art',
