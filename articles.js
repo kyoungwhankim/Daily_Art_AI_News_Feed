@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-969829fd-2026-05',
+            tab:         'games',
+            headline:    '소니, "AI가 스튜디오의 창의력을 해방시킬 것" — 플레이스테이션 AI 전략 공개',
+            summary:     '소니가 AI 페이셜 애니메이션 도구 모킹버드 등을 활용해 플레이스테이션 스튜디오의 AI 전략을 공개했어요.',
+            body:        '<p>소니 인터랙티브 엔터테인먼트가 재무 실적 발표에서 플레이스테이션 스튜디오들의 AI 도입 현황을 공개했어요. 반복 작업 자동화, QA 가속화, 소프트웨어 엔지니어링 생산성 향상과 함께 3D 모델링·애니메이션 분야에서도 AI 도구를 이미 활용하고 있어요. 가장 주목받은 사례는 AI 페이셜 애니메이션 도구 모킹버드(Mockingbird)로, 퍼포먼스 캡처 데이터를 바탕으로 3D 얼굴 모델을 자동으로 애니메이션하는 도구예요. 너티독과 산타 모니카 스튜디오가 이미 실제 프로젝트에 도입했으며, 호라이즌 제로 던 리마스터드에도 적용됐어요. 기존에 몇 시간씩 걸리던 작업이 몇 분의 1초로 단축된다고 해요.</p><p>소니는 AI가 창작자를 대체하는 것이 아니라 인간 창작자의 역량을 높이기 위한 도구라고 거듭 강조했어요. CEO 히데아키 니시노는 게임의 비전, 디자인, 감동은 계속 스튜디오 인재들로부터 나올 것이라고 밝혔어요. 반다이남코와의 AI 공동 연구도 공개됐는데, 생산성 향상 효과를 확인했지만 신뢰성 문제도 여전히 존재한다고 인정했어요. AAA 대형 스튜디오가 AI를 공개적으로 수용한 것은 업계 전반에 중요한 신호로, AI 기반 게임 제작 워크플로우가 빠르게 확산될 것으로 보여요.</p><p>원문: <a href="https://80.lv/articles/sony-says-ai-will-unleash-the-creativity-of-our-studios-while-humans-remain-at-the-center">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.05.09',
+            hue:         220,
+            image:       'https://cdn.80.lv/api/upload/meta/48214/images/69fe426580475/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/sony-says-ai-will-unleash-the-creativity-of-our-studios-while-humans-remain-at-the-center',
+        },
+        {
+            id:          'games-35669fa1-2026-05',
+            tab:         'games',
+            headline:    '너티독, 소니 AI로 페이셜 애니메이션 제작 — \'모킹버드\' 스튜디오 현장 도입 확인',
+            summary:     '너티독 등 소니 퍼스트파티 스튜디오들이 AI 페이셜 애니메이션 도구 모킹버드를 실제 제작에 도입했어요.',
+            body:        '<p>소니 그룹 실적 발표에서 플레이스테이션 퍼스트파티 스튜디오들이 AI 도구를 게임 제작에 본격 활용하고 있음이 공식 확인됐어요. 소니 그룹 CEO 히로키 토토키는 "AI는 예술가나 창작자를 대체하는 게 아니라 인간 상상력을 증폭시키는 도구"라고 강조했어요. 소니 인터랙티브 엔터테인먼트 CEO 히데아키 니시노는 반복 작업 속도 향상과 QA 개선에 AI를 주로 활용하고 있다고 밝혔으며, 너티독과 샌디에이고 스튜디오 등이 대표적인 도입 사례라고 소개했어요.</p><p>가장 구체적인 사례는 퍼포먼스 캡처 데이터로 페이셜 애니메이션을 자동 생성하는 도구 \'모킹버드(Mockingbird)\'예요. 너티독과 샌디에이고 스튜디오가 이미 자체 프로젝트에 맞게 도입해 활용 중이에요. 동영상 속 머리카락을 상세한 3D 모델로 변환하는 도구도 쓰이고 있다고 해요. PS5 프로에서 제공되는 머신러닝 기반 업스케일링 기술 PSSR도 언급됐어요. 니시노는 "게임의 비전, 디자인, 감동은 항상 스튜디오 인재들로부터 나올 것"이라며 AI가 인간을 대체하는 게 아닌 역량 강화 도구임을 재차 강조했어요. 실제 게임 제작 현장에서 AI 도구가 구체적으로 어떤 파이프라인에 쓰이는지 공개된 드문 사례라 주목됩니다.</p><p>원문: <a href="https://www.thegamer.com/naughty-dog-ai-facial-animations-sony-president/">TheGamer</a></p>',
+            source:      'TheGamer',
+            publishedAt: '2026.05.09',
+            hue:         30,
+            image:       'https://static0.thegamerimages.com/wordpress/wp-content/uploads/2025/05/mixcollage-22-may-2025-12-14-pm-468.jpg?w=1600&h=900&fit=crop',
+            url:         'https://www.thegamer.com/naughty-dog-ai-facial-animations-sony-president/',
+        },
+        {
             id:          'games-72dad65d-2026-05',
             tab:         'games',
             headline:    '블렌더에서 메타휴먼 리그를 자동 생성하는 \'Character Control Rig\' 출시',
@@ -416,6 +440,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-1dd43c66-2026-05',
+            tab:         'industry',
+            headline:    '소니, AI 제작 도입 최대 게임사로 — 반다이남코와 AI 공동 연구도 시작',
+            summary:     '소니가 AI를 전면 수용한 최대 게임사로 부상하며 반다이남코와 AI 동영상 제작 공동 연구를 시작했어요.',
+            body:        '<p>소니가 라리안 스튜디오의 AI 반발 이후 업계에서 가장 대담하게 AI를 전면 수용한 대형 게임사로 떠올랐어요. 소니는 산하 플레이스테이션 스튜디오들이 QA 자동화, 3D 모델링, 페이셜 애니메이션 등 제작 전반에 걸쳐 AI를 이미 도입했다고 밝혔어요. 특히 퍼포먼스 캡처 데이터를 기반으로 3D 얼굴 애니메이션을 자동 생성하는 \'모킹버드\' 도구가 대표 사례로, 너티독과 산타 모니카 스튜디오 등이 실제 프로젝트에 활용 중이에요. 또한 반다이남코와 함께 AI 동영상 제작 공동 연구를 새로 시작했다는 사실도 함께 공개됐어요. 공동 연구에서 생산성 향상 효과를 확인했지만, 동시에 신뢰성 문제도 여전히 존재한다고 인정했어요.</p><p>라리안 스튜디오가 AI 활용 가능성을 내비쳤다가 커뮤니티의 강한 반발에 부딪힌 것과 달리, 소니는 공식 투자자 발표에서 AI 전략을 명확히 밝히는 적극적인 행보를 보였어요. 대형 퍼블리셔가 이처럼 공개적으로 AI 전략을 제시한 것은 업계에서 이례적인 일이에요. 소니의 AI 수용 전략이 창작자 역량 강화를 명분으로 내세우고 있지만, AAA 게임 제작 파이프라인에서 AI 역할이 점점 확대되면서 다른 스튜디오들도 AI 도입 선언에 속도를 낼 가능성이 높아 보여요.</p><p>원문: <a href="https://wccftech.com/sony-ai-game-development-strategy-larian-backlash/">Wccftech</a></p>',
+            source:      'Wccftech',
+            publishedAt: '2026.05.09',
+            hue:         30,
+            image:       'https://cdn.wccftech.com/wp-content/uploads/2026/05/playstation-wws-HD-1920x1081',
+            url:         'https://wccftech.com/sony-ai-game-development-strategy-larian-backlash/',
+        },
+        {
+            id:          'industry-4e5d1604-2026-05',
+            tab:         'industry',
+            headline:    '플레이스테이션 CEO "AI가 우리 스튜디오의 창의력을 해방할 것" — 구체적 전략 공개',
+            summary:     '소니 SIE CEO가 플레이스테이션 AI 전략을 발표하며 창작 장벽 축소와 플랫폼 수익화 비전을 공개했어요.',
+            body:        '<p>소니 인터랙티브 엔터테인먼트 CEO 히데아키 니시노가 재무 실적 발표에서 플레이스테이션의 AI 전략을 구체적으로 공개했어요. AI가 창작의 장벽을 낮추고 개발 사이클을 단축해 더 많은 창작자가 시장에 진입할 수 있게 될 것이라고 밝혔어요. 이미 스튜디오들은 반복 작업 자동화, 소프트웨어 생산성 향상, QA 가속화, 3D 모델링과 애니메이션 분야에 AI 도구를 쓰고 있어요. 또한 AI 기반 결제 라우팅 시스템이 플레이스테이션 스토어에서 이미 7억 달러 이상의 추가 수익을 올리고 있다고 밝혀 눈길을 끌었어요. PS5 프로의 PSSR 업스케일링 기술도 머신러닝을 활용한 사례로 언급됐어요.</p><p>니시노는 AI가 게임 경험 자체도 근본적으로 바꿀 것이라는 비전도 제시했어요. 그란 투리스모의 AI 레이싱 에이전트 소피(Sophy)가 실제 플레이어에게 새로운 경쟁 경험을 제공하는 사례로 꼽혔고, 독자적인 성격을 가진 NPC들이 생동감 있는 세계를 만드는 AI 프로토타입이 이미 개발됐다고 해요. 플랫폼 측면에서는 머신러닝으로 플레이어에게 맞춤형 게임·콘텐츠·상품을 추천하는 방향으로 발전시킬 계획이에요. 인간 창작자의 역할을 중심에 두면서도 AI를 비즈니스와 경험 전반에 통합하려는 소니의 의지가 명확히 드러난 발표예요.</p><p>원문: <a href="https://www.videogameschronicle.com/news/sony-lays-out-its-ai-plan-for-playstation-we-believe-ai-will-unleash-the-creativity-of-our-studios/">VGC</a></p>',
+            source:      'VGC',
+            publishedAt: '2026.05.09',
+            hue:         200,
+            image:       'https://www.videogameschronicle.com/files/2026/05/sony-ai-1.jpg',
+            url:         'https://www.videogameschronicle.com/news/sony-lays-out-its-ai-plan-for-playstation-we-believe-ai-will-unleash-the-creativity-of-our-studios/',
+        },
+        {
             id:          'industry-f4c5f903-2026-05',
             tab:         'industry',
             headline:    'Xbox, Copilot AI 개발 중단 선언 — 내부 개발팀 AI 사용 의무 없음 공식화',
@@ -701,6 +749,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-4c3a53cb-2026-05',
+            tab:         'art',
+            headline:    '소더버그 감독, 존 레논 다큐에 AI 영상 10% 삽입 — 칸 영화제서 세계 최초 공개',
+            summary:     '소더버그 감독이 존 레논 다큐에 메타 AI 영상 기술을 10% 활용해 칸 영화제에서 세계 최초 공개해요.',
+            body:        '<p>거장 스티브 소더버그 감독이 1980년 12월 8일 존 레논의 마지막 심층 라디오 인터뷰를 담은 다큐멘터리 《존 레논: 더 라스트 인터뷰》에 메타 AI 영상 도구로 제작한 장면을 약 10% 삽입했어요. 인터뷰 내용 중 추상적이고 철학적인 개념을 시각화하기 어려운 구간이 있었는데, 메타가 자사 AI 영상 도구를 \'스트레스 테스트\'할 영화감독을 찾던 중 소더버그와 협업이 성사됐어요. 메타는 기술을 무상으로 제공했고, 소더버그는 이를 통해 영화의 빈 구간을 채울 수 있었다고 해요. 레논의 실제 모습을 AI로 재현하지는 않았으며, 상징적 이미지나 동굴인, 1960년대 복장의 아기 등 추상적 이미지를 활용했어요.</p><p>소더버그는 "AI로 누군가를 속이거나 실제처럼 보이게 만들려는 게 아니라, VFX나 CGI처럼 비사진적 기술로 쓰는 것"이라고 설명했어요. 레논의 아들 숀 오노 레논도 아버지가 AI를 흥미롭게 받아들였을 것이라며 지지 의사를 밝혔어요. 반면 제작비 부족이 AI 선택의 한 이유였다는 점, 그리고 아카데미가 AI를 연기·각본 부문에서 불인정한다고 방금 규정을 업데이트한 타이밍이 맞물려 논란도 예상돼요. 칸 영화제(5월 12~23일)에서 세계 최초 공개될 이 다큐는 역사적 인물 다큐에 AI가 쓰인 첫 대형 사례로 업계의 뜨거운 관심을 받고 있어요.</p><p>원문: <a href="https://www.creativebloq.com/ai/ai-art/john-lennon-documentary-will-be-a-controversial-test-for-ai-video">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.05.09',
+            hue:         290,
+            image:       'https://cdn.mos.cms.futurecdn.net/6SBkuqA8iY5zed3qKPXz3m-2560-80.jpg',
+            url:         'https://www.creativebloq.com/ai/ai-art/john-lennon-documentary-will-be-a-controversial-test-for-ai-video',
+        },
+        {
+            id:          'art-8fae26d0-2026-05',
+            tab:         'art',
+            headline:    '소니 픽처스, 영화 AI에 570억 원 투자 — 소니 뮤직도 AI 콘텐츠 라벨링 표준 추진',
+            summary:     '소니 픽처스가 영화 AI에 570억 원을 투자했으며 소니 뮤직은 AI 콘텐츠 라벨링 업계 표준 추진에 나섰어요.',
+            body:        '<p>소니 그룹이 재무 실적 발표에서 소니 픽처스가 영화 제작 AI 도입에 5,000만 달러(약 570억 원) 이상을 투자했다고 공개했어요. 프로덕션 플래닝, 콘텐츠 보호, 기업 생산성, 데이터 분석, 혁신, 3D 변환 등 총 6개 분야에 AI가 이미 적용되고 있어요. 소니 뮤직은 AI 생성 콘텐츠에 업계 공통 라벨을 붙이는 표준 수립을 추진하며 소비자 투명성을 높이려 하고 있어요. 또한 반다이남코와의 AI 동영상 제작 파일럿 협업에서 자체 데이터를 활용한 파인튜닝 모델을 개발해 생산성 향상 효과를 확인했지만, 신뢰성 관련 과제도 여전히 남아 있다고 인정했어요.</p><p>플레이스테이션 부문에서도 AI 기반 결제 라우팅 도구가 최근 몇 년간 7억 달러 이상의 추가 수익을 창출했다는 사실이 공개됐어요. 소니 그룹 CEO 히로키 토토키와 소니 인터랙티브 엔터테인먼트 CEO 히데아키 니시노 모두 "인간 창의성이 중심에 남아야 한다"는 입장을 강조했어요. AI 인프라 수요로 인한 메모리 공급 부족과 관세 리스크 같은 외부 압박이 이어지는 상황에서도, 영화·음악·게임 전반에 걸쳐 AI를 적극 수용하는 소니의 행보는 엔터테인먼트 업계 전체의 AI 도입 속도를 더욱 높일 것으로 보여요. 소니의 이번 발표는 창작 산업에서 AI가 단순한 실험을 넘어 핵심 전략으로 자리 잡고 있음을 보여줘요.</p><p>원문: <a href="https://variety.com/2026/biz/asia/sony-playstation-ai-strategy-tariffs-memory-1236741351/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.05.09',
+            hue:         260,
+            image:       'https://variety.com/wp-content/uploads/2025/01/FotoJet-22.jpg?w=1000&h=563&crop=1',
+            url:         'https://variety.com/2026/biz/asia/sony-playstation-ai-strategy-tariffs-memory-1236741351/',
+        },
         {
             id:          'art-736b1184-2026-05',
             tab:         'art',
