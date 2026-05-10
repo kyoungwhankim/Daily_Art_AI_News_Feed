@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-22d46bd7-2026-05',
+            tab:         'games',
+            headline:    'PlayStation \'Mockingbird\' AI 애니메이션 도구, 호라이즌 제로 던 리마스터드에 통합',
+            summary:     '플레이스테이션의 AI 애니메이션 도구 \'Mockingbird\'가 호라이즌 제로 던 리마스터드에 통합됐습니다.',
+            body:        '<p>플레이스테이션이 자체 개발한 AI 애니메이션 도구 \'Mockingbird\'가 호라이즌 제로 던 리마스터드에 통합되며 주목을 받고 있어요. 이 도구는 퍼포먼스 캡처 데이터를 기반으로 3D 얼굴 모델을 자동으로 애니메이션화하는 머신러닝 기반 시스템이에요. 기존에 수작업으로 처리하던 복잡한 모션 블렌딩과 전환 애니메이션을 자동화해, 애니메이터가 더 창의적인 작업에 집중할 수 있도록 설계됐습니다. 인간 퍼포머를 대체하는 것이 아니라, 반복적이고 기술적인 작업을 지원하는 방향으로 만들어졌다는 점이 특징이에요.</p><p>이 기술의 성공적인 도입을 계기로 너티독과 산디에고 스튜디오도 자체 개발 파이프라인에 Mockingbird를 적용하기 시작했어요. Sony는 헤어 모델 AI 생성, NPC 프로토타입 제작, QA 자동화 등 다양한 영역에서 아트 파이프라인 효율화를 추진 중이에요. 플레이스테이션 산하 퍼스트파티 스튜디오 간 기술 공유가 본격화되면서, AI 기반 개발 도구가 소니의 표준 제작 방식으로 자리 잡아가고 있습니다.</p><p>원문: <a href="https://www.ingamenews.com/2026/05/horizon-zero-dawn-remastered-ai.html">InGame News</a></p>',
+            source:      'InGame News',
+            publishedAt: '2026.05.10',
+            hue:         220,
+            image:       'https://cdn.mos.cms.futurecdn.net/WYtzEcoZq5AsuPP8CJXkGW-1280-80.jpg',
+            url:         'https://www.ingamenews.com/2026/05/horizon-zero-dawn-remastered-ai.html',
+            urls: [
+                { label: '관련 보도', href: 'https://www.gamedeveloper.com/business/playstation-sees-ai-as-a-powerful-tool-teams-including-naughty-dog-san-diego-studio-already-using-it' },
+            ],
+        },
+        {
             id:          'games-969829fd-2026-05',
             tab:         'games',
             headline:    '소니, "AI가 스튜디오의 창의력을 해방시킬 것" — 플레이스테이션 AI 전략 공개',
@@ -439,6 +454,42 @@ window.AIAD = {
     
         
     /* ---- industry ---- */
+        {
+            id:          'industry-008cceda-2026-05',
+            tab:         'industry',
+            headline:    '플레이스테이션, AI를 \'강력한 도구\'로 정의 — 너티독·산디에고 스튜디오서 이미 활용',
+            summary:     '소니 CEO가 AI를 핵심 개발 도구로 천명하며, 자체 도구 \'Mockingbird\'의 실제 적용 사례를 공개했습니다.',
+            body:        '<p>소니 인터랙티브 엔터테인먼트 CEO 니시노 히데아키는 최근 공개된 기업 전략 발표에서 AI를 플레이스테이션의 핵심 도구로 정의하며, 개발 주기 가속화와 창작 진입 장벽 낮추기를 주요 목표로 제시했어요. 자체 개발 도구 \'Mockingbird\'가 퍼포먼스 캡처 데이터를 기반으로 3D 얼굴 모델을 자동 애니메이션화한다고 소개하며, 너티독과 산디에고 스튜디오가 이미 출시 타이틀에 이 도구를 적용했다고 밝혔어요. 이 밖에도 QA 자동화, 3D 모델링, 헤어 모델 생성 등 다양한 영역에서 AI 도입을 확대하고 있습니다.</p><p>그러나 GDC 산업 설문조사 결과는 경영진의 낙관론과 상반된 현장 분위기를 보여줘요. 개발자의 52%가 AI가 이미 업계에 부정적인 영향을 미치고 있다고 응답했는데, 이는 전년도 30%에서 크게 오른 수치예요. 비주얼·기술 아트(64%), 게임 디자인·내러티브(63%), 게임 프로그래밍(59%) 직군에서 부정적 시각이 특히 두드러지며, 경영진의 AI 낙관론과 현장 개발자 사이의 뚜렷한 온도 차를 확인할 수 있습니다.</p><p>원문: <a href="https://www.gamedeveloper.com/business/playstation-sees-ai-as-a-powerful-tool-teams-including-naughty-dog-san-diego-studio-already-using-it">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.05.10',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltac6160b2df662a11/69fe0bf585f70282e851e6d2/horizon-zero-dawn-remastered-screenshot-01-en-30sep24.webp',
+            url:         'https://www.gamedeveloper.com/business/playstation-sees-ai-as-a-powerful-tool-teams-including-naughty-dog-san-diego-studio-already-using-it',
+        },
+        {
+            id:          'industry-ad7b1dee-2026-05',
+            tab:         'industry',
+            headline:    'EVE 온라인 스튜디오, \'펜리스 크리에이션즈\'로 리브랜딩 — 구글 딥마인드와 AI 연구 파트너십',
+            summary:     'CCP 게임즈가 Pearl Abyss로부터 독립해 \'펜리스 크리에이션즈\'로 리브랜딩하고, 구글 딥마인드와 AI 연구 파트너십을 맺었습니다.',
+            body:        '<p>EVE 온라인의 개발사 CCP 게임즈가 모회사 Pearl Abyss로부터 약 1억 2천만 달러에 분리 독립하며 \'펜리스 크리에이션즈(Fenris Creations)\'로 공식 리브랜딩했어요. 새 사명은 노르드 신화에서 영감을 받았으며, 스튜디오의 리스크·손실·플레이어 주도 세계관이라는 오랜 설계 철학을 담고 있어요. 약 8년간의 Pearl Abyss 산하 운영을 마치고 경영진 주도의 독립 법인으로 돌아온 이번 행보는 커뮤니티로부터 대체로 긍정적인 반응을 얻고 있습니다.</p><p>리브랜딩과 함께 구글 딥마인드와의 AI 연구 파트너십도 발표됐어요. EVE 온라인의 오프라인 버전을 AI 테스트 환경으로 활용해 장기 계획 수립, 의사결정, 창발적 시스템 행동 연구에 집중할 예정이에요. 구글 딥마인드는 펜리스 크리에이션즈의 소수 지분도 취득했으며, EVE Online, EVE Frontier, EVE Vanguard 등 기존 프로젝트와 팀 구성은 변경 없이 그대로 유지됩니다.</p><p>원문: <a href="https://80.lv/articles/eve-online-studio-goes-indie-in-new-era-rebrand-with-google-deepmind-ai-partnership">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.05.10',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/48215/images/69fe4da0387d8/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/eve-online-studio-goes-indie-in-new-era-rebrand-with-google-deepmind-ai-partnership',
+        },
+        {
+            id:          'industry-eac79f51-2026-05',
+            tab:         'industry',
+            headline:    '에픽게임즈, 포트나이트 AI 개발 전략 해명 — \'AI는 직원 지원 도구\'',
+            summary:     '에픽게임즈가 포트나이트 개발에 AI를 직원 대체가 아닌 업무 효율화 도구로 활용하겠다고 밝혔습니다.',
+            body:        '<p>에픽게임즈 시니어 외부 개발 매니저 스테파니 아넷은 게임즈컴 라탐 패널에서 회사의 AI 도입 방향을 공식 해명했어요. AI를 직원 대체 수단이 아닌 생산성 지원 도구로 활용하겠다는 방침이며, 반복적이고 시간 소모적인 작업을 자동화해 개발자들이 더 고차원적인 창작 업무에 집중할 수 있도록 한다는 계획이에요. 특정 작업에 10시간이 걸린다면 AI를 통해 이 시간을 줄이는 것이 핵심 목표라고 밝혔습니다.</p><p>아트 부문에서의 AI 도입도 탐색 중이지만, 구체적인 도구 정보는 내부 기밀로 공개하지 않았어요. 에픽게임즈는 AI 도입에 있어 철저한 내부 통제 방침을 고수하며, 외부 파트너사의 AI 툴이 개발 생태계에 유입되는 것을 허용하지 않는다고 밝혔어요. 거대한 규모의 포트나이트 생산 파이프라인에서 품질과 일관성을 유지하기 위한 조치로, AI 활용이 확대되는 시대에도 기존 창작 인력 구조를 유지하겠다는 방향성을 재확인시켜 줬습니다.</p><p>원문: <a href="https://www.ingamenews.com/2026/05/epic-games-clarifies-ai-development.html">InGame News</a></p>',
+            source:      'InGame News',
+            publishedAt: '2026.05.10',
+            hue:         50,
+            image:       'https://cdn.mos.cms.futurecdn.net/yK84RLTutLwtN4DZqdEemR-1920-80.jpg',
+            url:         'https://www.ingamenews.com/2026/05/epic-games-clarifies-ai-development.html',
+        },
         {
             id:          'industry-1dd43c66-2026-05',
             tab:         'industry',
