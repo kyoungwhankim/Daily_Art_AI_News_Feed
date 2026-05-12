@@ -1189,17 +1189,16 @@ mark {
   display: grid;
   grid-template-columns: minmax(280px, 360px) 1fr;
   gap: 48px;
-  align-items: start;
-  padding: 32px 0 24px;
+  align-items: center;
+  min-height: calc(100vh - 300px); /* fill viewport minus header & fixed ticker so hero centers in page */
+  padding: 32px 0 220px; /* bottom space reserves room for fixed ticker */
 }
 
-/* hero (left column) */
+/* hero (left column) — vertically centered in row */
 .home-hero {
-  position: sticky;
-  top: 140px;
-  padding-right: 8px;
-  border-right: 2px solid var(--stroke);
+  align-self: center;
   padding-right: 32px;
+  border-right: 2px solid var(--stroke);
 }
 .home-eyebrow {
   display: flex;
@@ -1485,19 +1484,18 @@ mark {
   color: var(--muted);
 }
 
-/* ===== latest news ticker ===== */
+/* ===== latest news ticker — fixed to viewport bottom on home view ===== */
 .home-ticker {
-  grid-column: 1 / -1;
-  margin-top: 28px;
-  /* break out of .feed container padding so it runs edge-to-edge */
-  margin-left: calc(50% - 50vw + 8px);
-  margin-right: calc(50% - 50vw + 8px);
-  padding: 18px 0 22px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  padding: 14px 0 18px;
   border-top: 2px solid var(--stroke);
-  border-bottom: 2px solid var(--stroke);
   background: var(--paper-2);
-  position: relative;
   overflow: hidden;
+  box-shadow: 0 -6px 24px rgba(85,51,51,.10);
 }
 .home-ticker::before,
 .home-ticker::after {

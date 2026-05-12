@@ -126,7 +126,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
         <div className="grid today-grid">
           <ArticleCard variant="feature" article={items[0]} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(items[0].id)} query={query} />
           {items.slice(1, 3).map(a => (
-            <ArticleCard key={a.id} variant="compact-row" article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+            <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
           ))}
           {items.length > 3 && (
             <div style={{ gridColumn: '1 / -1' }}>
