@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-533bad94-2026-05',
+            tab:         'games',
+            headline:    'Runway, 대화형 AI 영상 제작 파트너 \'Runway Agent\' 출시',
+            summary:     'Runway가 AI와 대화하며 영상을 기획·생성하는 창작 파트너 \'Runway Agent\'를 공식 출시했어요.',
+            body:        '<p>Runway가 AI 창작 파트너 \'Runway Agent\'를 공식 출시했어요. 이제 사용자는 텍스트로 원하는 영상의 아이디어를 설명하면, AI가 방향을 함께 다듬어 가며 하나의 대화 흐름 안에서 완성된 영상을 바로 생성해 줘요. 기존 영상 생성 도구들은 사용자가 직접 정교한 프롬프트를 작성하고 결과물을 일일이 확인하면서 반복 수정해야 했지만, Runway Agent는 마치 경험 많은 동료 에디터와 이야기하듯 방향을 자연스럽게 잡아 나갈 수 있어요. 기획 단계에서 AI와 나누는 대화 자체가 창작 작업의 일부가 된다는 점에서, 기존의 단방향 생성 도구와는 본질적으로 다른 창작 경험을 제공한다고 볼 수 있어요. 출시 소식과 함께 운영 중인 \'RUNWAY50\' 프로모션 코드를 이용하면 Pro 플랜을 50% 할인된 가격에 이용해 볼 수 있어요.</p><p>이번 업데이트는 5월 13일자로 무료 플랜을 포함한 모든 플랜 사용자에게 동시에 공개됐어요. 앱 내 Agent 탭에서 바로 이용할 수 있으며, 별도의 추가 요금 없이 기존 구독 범위 안에서 사용 가능해요. Runway는 Gen-4.5, Aleph, Characters, 워크플로우 등 꾸준한 업데이트를 통해 AI 영상 제작 플랫폼을 지속적으로 확장해 온 회사예요. 이번 Agent 출시는 단순한 기능 추가를 넘어, AI를 진정한 창작 협업자로 자리매김하려는 Runway의 장기적인 방향성을 잘 보여주는 중요한 전환점으로 평가받고 있어요.</p><p>게임 예고편이나 컷씬, 인트로 영상처럼 방향 설정이 결과물의 퀄리티를 직접 좌우하는 작업에 AI를 적극 활용하고 싶은 개발자에게 특히 유용한 도구가 될 거예요. 소규모 팀이나 1인 개발자도 기획 초기 단계부터 AI의 도움을 받아 아이디어를 빠르게 영상으로 구현할 수 있어, 전체 프로덕션 사이클을 크게 단축할 수 있는 잠재력을 가진 업데이트예요. 텍스트 한 줄로 시작한 아이디어가 AI와의 대화를 통해 완성된 영상이 되는 워크플로우는 앞으로 게임 업계의 창작 방식을 바꿀 가능성도 있어요.</p><p>원문: <a href="https://runwayml.com/changelog">Runway AI</a></p>',
+            source:      'Runway AI',
+            publishedAt: '2026.05.14',
+            hue:         340,
+            image:       'https://runwayml.com/opengraph-image.png?opengraph-image.0bt75ga2._tb4.png',
+            url:         'https://runwayml.com/changelog',
+            urls: [
+                { label: '공식 사이트', href: 'https://runwayml.com/' },
+            ],
+        },
+        {
             id:          'games-68f059f2-2026-05',
             tab:         'games',
             headline:    '디즈니 리서치, 강화학습으로 인간 모션을 다양한 로봇 체형에 이식하는 \'ReActor\' 공개',
@@ -522,6 +537,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-44615dce-2026-05',
+            tab:         'industry',
+            headline:    'Origin Lab, 게임사-AI 월드 모델 빌더 연결 플랫폼으로 80억 원 시드 투자 유치',
+            summary:     '게임 데이터 라이선싱 스타트업 Origin Lab이 Lightspeed Ventures 주도로 800만 달러 시드 투자를 유치했어요.',
+            body:        '<p>게임 데이터 라이선싱 스타트업 Origin Lab이 Lightspeed Ventures 주도로 800만 달러(약 80억 원) 규모의 시드 투자를 유치했어요. SV Angel, Eniac, Seven Stars, FPV가 추가로 참여했으며, Twitch 공동 창업자 Kevin Lin과 Cruise 창업자 Kyle Vogt도 엔젤 투자자로 이름을 올렸어요. Origin Lab은 게임사들이 보유한 방대한 플레이 영상, 물리 데이터, 카메라 경로 같은 디지털 자산을 AI 월드 모델 개발사에 라이선스 형태로 연결해 주는 마켓플레이스 플랫폼이에요. 공동 창업자 Anne-Margot Rodde는 AI 시스템이 물리 세계의 작동 방식을 이해하는 데 필요한 데이터가 본질적으로 비디오 게임 안에 있다고 설명했어요. 게임 에셋을 학습용 데이터셋으로 변환하는 기술 작업도 플랫폼이 직접 담당해, 게임사의 진입 장벽을 낮춰 줘요.</p><p>Yann LeCun의 AMI Labs, Fei-Fei Li의 World Labs처럼 AI 월드 모델을 개발하는 기업들은 물리적 환경을 시뮬레이션하기 위해 고품질의 라이선스 데이터가 절실히 필요해요. 그동안 AI 연구소와 게임 스튜디오 간의 직접 협업은 저작권 문제와 데이터 품질 우려로 성사되기 어려웠어요. OpenAI의 Sora가 2024년 12월 게임 영상을 무단 학습했다는 의혹을 받은 것이 대표적인 사례예요. Amazon 역시 Twitch 영상을 AI 학습에 활용하려는 관심을 내비친 바 있어 데이터 라이선싱 이슈가 업계 전반의 화두가 됐어요. Origin Lab은 이 간극을 메우며 합법적이고 투명한 데이터 공급 경로를 새롭게 열고 있어요.</p><p>Lightspeed 파트너 Faraz Fatemi는 이들 기업은 자본은 풍부하지만 데이터가 병목이라며 Scale AI의 성공에 빗대어 Origin Lab의 시장성을 높이 평가했어요. 게임 스튜디오가 단순히 AI 도구를 활용하는 것을 넘어, AI 생태계의 핵심 데이터 공급자로 직접 수익을 창출하는 새로운 비즈니스 모델이라는 점에서 이번 투자는 게임 산업과 AI 산업의 교차점을 새롭게 조명하는 계기가 되고 있어요. 500만 시간 이상의 플레이 데이터를 보유한 게임사에게 어떤 새로운 수익원이 열릴지 귀추가 주목돼요.</p><p>원문: <a href="https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.14',
+            hue:         30,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/05/Origin-Lab-Co-Founders.jpg?resize=1156,1200',
+            url:         'https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/',
+        },
+        {
+            id:          'industry-8eb3bbe4-2026-05',
+            tab:         'industry',
+            headline:    '\'Party Animals\', AI 영상 공모전 발표 후 스팀 리뷰 테러 당해',
+            summary:     '\'Party Animals\'가 AI 활용 영상 공모전을 발표했다가 스팀 유저들의 집단 부정 리뷰 공세를 받았어요.',
+            body:        '<p>게임 \'Party Animals\'가 AI를 핵심 창작 도구로 활용한 영상을 모집하는 \'Golden Paw Awards\' 공모전을 5월 12일 공식 발표했다가, 스팀에서 유저들의 집단 부정 리뷰 공세를 받았어요. 이 공모전은 AI 생성 이미지, 영상, 음악, 보이스오버, 3D 에셋을 핵심 창작 도구로 반드시 사용해야 한다는 조건을 달고 있어요. 5분 이하의 영상을 소셜 미디어에 업로드하는 방식으로 참가할 수 있으며, 접수 기간은 5월 14일부터 8월 31일까지예요. 총 상금은 7만 5,000달러(약 1억 원)이며, 대상에는 1만 5,000달러와 Golden Paw 트로피가 주어져요. 참가 부문은 Best Story, Best Creativity, Best Sound &amp; Visuals, Players\' Choice 등 다섯 개 카테고리로 나뉘어요.</p><p>공모전 발표 직후 스팀 리뷰 섹션에는 부정적인 글이 폭발적으로 쏟아졌어요. 한 유저는 AI 쓰레기를 내 삶에 강요하면 후회하게 될 것이라고 남겼고, 다른 유저는 AI 슬롭을 홍보하는 것이 굉장히 적대적으로 느껴진다고 썼어요. 불만을 가진 플레이어들은 게임을 대규모로 삭제하기 시작했고, 개발팀이 커뮤니티와 동떨어진 결정을 내렸다는 비판도 잇따랐어요. 스튜디오 측은 이번 반발에 대해 아직까지 공식 입장을 발표하지 않고 있어요. Party Animals는 이전부터 귀여운 동물 캐릭터를 앞세워 캐주얼 파티 게임 팬들의 인기를 얻어 왔던 타이틀인 만큼, 이번 논란은 더 큰 실망감으로 이어졌어요.</p><p>이번 사태는 Arc Raiders가 AI 생성 캐릭터 보이스 라인을 사용해 거센 반발을 받은 사례와 함께, 게임 커뮤니티 내 AI 거부감이 얼마나 깊은지를 다시 한번 보여주는 일이에요. 스튜디오가 공모전이나 마케팅 활동에서 AI 활용을 유저에게 직접 권장할 때 어떤 역풍이 불 수 있는지를 분명히 보여주는 사례예요. 앞으로 개발사들이 AI 도구 사용 계획을 커뮤니티에 공개할 때 소통 방식이 브랜드 신뢰에 직결될 수 있다는 점에서, 업계 전반에 중요한 교훈을 남기는 사건이에요.</p><p>원문: <a href="https://www.dexerto.com/gaming/party-animals-review-bombed-after-announcing-ai-video-contest-with-15k-grand-prize-3364713/">Dexerto</a></p>',
+            source:      'Dexerto',
+            publishedAt: '2026.05.14',
+            hue:         0,
+            image:       'https://www.dexerto.com/cdn-image/wp-content/uploads/2026/05/13/party-animals-review-bombed-ai-video-contest.jpg',
+            url:         'https://www.dexerto.com/gaming/party-animals-review-bombed-after-announcing-ai-video-contest-with-15k-grand-prize-3364713/',
+        },
+        {
             id:          'industry-f96a5cb9-2026-05',
             tab:         'industry',
             headline:    '〈라이즈 오브 P〉 개발사 Round8 스튜디오, 제너레이티브 AI 크리에이터 채용 — AI 아트 파이프라인 본격 도입 예고',
@@ -918,6 +957,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9098b752-2026-05',
+            tab:         'art',
+            headline:    'Sora 앱 종료 후 Kling AI, 앱스토어 그래픽&디자인 1위 등극',
+            summary:     'OpenAI Sora 앱 종료 후 Kling AI가 앱스토어 Graphics & Design 1위에 오르며 AI 영상 앱 시장을 빠르게 장악하고 있어요.',
+            body:        '<p>OpenAI가 높은 운영 비용을 이유로 Sora 영상 생성 앱을 올해 3월 종료한 이후, Kling AI가 빠르게 빈자리를 채우며 앱스토어 Graphics &amp; Design 카테고리 1위에 올랐어요. 9to5Mac에 따르면 Kling AI는 출시 3개월 만에 전체 무료 앱 다운로드 순위에서 5위를 기록했어요. 네이티브 4K 해상도 영상 출력을 지원하는 전문 AI 영상 생성 도구로 주목받고 있으며, 소셜 미디어에서는 다양한 크리에이터들이 4K 업데이트를 활용한 고품질 결과물을 공유하며 화제가 됐어요. 런웨이의 빅 광고 공모전 대상 수상자이자 2026 AARON Awards 베스트 AI 아티스트인 László Gaál이 크리에이티브 파트너로 활동하며 작품을 선보이고 있어요. 처음부터 전문적인 AI 영상 제작에 집중한 덕분에 제한된 AI 기능만 제공하는 범용 앱들 사이에서 빠르게 두각을 나타낼 수 있었어요.</p><p>같은 시기에 HUBX의 AI Video 앱도 앱스토어 Photo &amp; Video 카테고리 1위를 차지하며 전체 무료 앱 6위에 올랐어요. 이 앱은 바이럴 소셜 미디어 영상 제작에 특화된 도구로, HUBX는 앱스토어에 15개 이상의 AI 특화 앱을 보유한 개발사예요. Gemini나 Grok처럼 영상 생성을 부가 기능으로 제공하는 범용 AI 챗봇 앱과 달리, 두 앱 모두 영상 생성만을 전문으로 하는 독립 앱이라는 점이 두드러져요. 현재 이 두 앱 앞에는 OpenAI, Anthropic, Google, Meta 같은 대형 테크 기업의 앱만이 자리하고 있어요.</p><p>Sora는 출시 직후 앱스토어 최상위권을 달렸지만 몇 달 만에 내리막을 걷다 수익성 문제로 종료됐어요. Kling AI의 이번 부상은 Sora 이후 독립형 AI 영상 앱에 대한 시장 수요가 충분히 살아있다는 것을 보여줘요. 크리에이터들이 범용 AI 플랫폼보다 목적에 특화된 전용 도구를 선호하는 트렌드가 뚜렷해지고 있어, AI 영상 생성 전용 앱 시장의 경쟁은 더욱 치열해질 전망이에요. AI 영상 도구가 스마트폰 사용자들의 일상 창작 도구로 자리 잡기 시작했다는 신호로도 해석할 수 있고, 앞으로도 이런 흐름은 계속될 것으로 보여요.</p><p>원문: <a href="https://9to5mac.com/2026/05/13/new-ai-video-generation-apps-are-rising-from-the-ashes-of-openais-sora/">9to5Mac</a></p>',
+            source:      '9to5Mac',
+            publishedAt: '2026.05.14',
+            hue:         290,
+            image:       'https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/09/sora-app-icon.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1',
+            url:         'https://9to5mac.com/2026/05/13/new-ai-video-generation-apps-are-rising-from-the-ashes-of-openais-sora/',
+        },
+        {
+            id:          'art-f440d4f9-2026-05',
+            tab:         'art',
+            headline:    'DeepBrain AI, AI STUDIOS에 Seedance 2.0 통합 — 멀티모달 영상 생성 기능 대폭 강화',
+            summary:     'DeepBrain AI가 AI STUDIOS에 Seedance 2.0을 통합해 텍스트·이미지·영상·오디오를 동시에 입력하는 멀티모달 영상 제작이 가능해졌어요.',
+            body:        '<p>DeepBrain AI가 자사 AI 영상 제작 플랫폼 AI STUDIOS에 ByteDance의 최신 멀티모달 영상 생성 모델 Seedance 2.0을 통합했어요. 텍스트, 이미지, 영상, 오디오를 동시에 입력해 대화 립싱크, 배경음악, 주변 효과음이 자동 포함된 멀티샷 영상 시퀀스를 단 한 번에 생성할 수 있어요. AI STUDIOS 안의 Seedance 2.0은 일반 버전과 달리 모델 수준에서 추가 개선이 이뤄졌어요. 영상을 연장해도 초기 프레임부터 마지막 프레임까지 해상도가 일관되게 유지되고, 멀티 언어 환경에서도 자연스러운 발음 정확도를 보장해요. 기본 모델의 짧은 클립 길이 제한을 넘어 1분 이상의 연속 영상 생성도 가능하며, 이는 라이브 커머스나 교육 영상 같은 장편 콘텐츠 제작에 실질적인 도움이 돼요.</p><p>기존 Seedance 2.0을 도입한 다른 플랫폼들과 달리, AI STUDIOS는 1,000개 이상의 AI 보이스와 150개 언어 더빙·번역 기능을 하나의 워크플로우 안에 통합해 제공해요. 별도 도구를 오갈 필요 없이 단일 텍스트 프롬프트 하나로 방송 수준의 다국어 영상을 완성할 수 있어요. 두 명의 AI 아바타가 동시에 화면에 등장하는 투 프레젠터 포맷도 지원해, 라이브 커머스나 뉴스 앵커 형식의 콘텐츠를 카메라 없이 제작할 수 있어요. DeepBrain AI는 이 통합이 단순한 모델 추가가 아니라 엔터프라이즈 콘텐츠 제작 스택 전체와의 결합이라는 점을 강조하고 있어요.</p><p>DeepBrain AI는 미국 팔로알토 기반의 글로벌 AI 아바타 전문 기업으로, AI STUDIOS는 기업 고객을 위한 B2B SaaS 플랫폼이에요. 이번 업데이트는 광고, 라이브 커머스, 방송 뉴스, 교육 영상 등 다양한 상업 콘텐츠 제작에 AI를 적극 도입하려는 기업과 스튜디오에게 특히 주목할 만한 소식이에요. AI 영상 제작의 진입 장벽을 낮추면서도 방송 수준의 품질을 제공한다는 방향성이, 앞으로 콘텐츠 제작 업계 전반에 어떤 변화를 가져올지 관심이 집중되고 있어요. 현재 AI STUDIOS는 aistudios.com에서 바로 사용해 볼 수 있어요.</p><p>원문: <a href="https://www.globenewswire.com/news-release/2026/05/13/3294227/0/en/DeepBrain-AI-Adds-Seedance-2-0-to-AI-STUDIOS-Same-Model-Fundamentally-Different-Result.html">GlobeNewswire</a></p>',
+            source:      'GlobeNewswire',
+            publishedAt: '2026.05.14',
+            hue:         260,
+            image:       'https://ml-eu.globenewswire.com/Resource/Download/d7e13d57-6972-4ed7-96a6-4ac779b8703a',
+            url:         'https://www.globenewswire.com/news-release/2026/05/13/3294227/0/en/DeepBrain-AI-Adds-Seedance-2-0-to-AI-STUDIOS-Same-Model-Fundamentally-Different-Result.html',
+        },
         {
             id:          'art-49d2ee2f-2026-05',
             tab:         'art',
