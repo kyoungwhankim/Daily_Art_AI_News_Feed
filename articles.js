@@ -958,6 +958,22 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-288a8ee6-2026-05',
+            tab:         'art',
+            headline:    'NVIDIA, 소비자 GPU 1대로 60초 720p 영상 생성하는 오픈소스 월드 모델 \'SANA-WM\' 공개',
+            summary:     'NVIDIA가 RTX 5090 GPU 단 한 대로 60초짜리 720p 영상을 34초 만에 생성하는 오픈소스 월드 모델 SANA-WM을 공개했어요.',
+            body:        '<p>NVIDIA가 소비자용 RTX 5090 GPU 한 대만으로 60초짜리 720p 영상을 불과 34초 만에 생성할 수 있는 오픈소스 영상 월드 모델 \'SANA-WM\'을 공개했어요. 기존 고품질 AI 영상 생성에 필요하던 고비용 클라우드 인프라 없이도 개인 워크스테이션 수준에서 분량급 영상을 뽑아낼 수 있게 됐다는 점에서 큰 주목을 받고 있어요. SANA-WM의 \'WM\'은 World Model(월드 모델)의 약자로, 단순한 픽셀 예측을 넘어 3D 공간의 물리적 구조와 연속성을 이해하고 재현하는 방식을 채택해 더욱 일관성 있는 영상을 만들어내요.</p><p>기술적으로는 2.6B 파라미터 규모의 Diffusion Transformer 아키텍처를 기반으로 하며, 초기 이미지 한 장과 카메라 궤적 데이터를 입력받아 6-DoF(6축 자유도) 카메라 제어와 함께 분 단위 길이의 영상을 자동으로 합성해줘요. 모델 학습에는 64대의 H100 GPU가 동원됐지만, 실제 영상을 뽑아내는 추론 단계에서는 소비자용 GPU 단 한 대면 충분해요. NVIDIA에 따르면 기존 오픈소스 영상 생성 모델 대비 36배 빠른 처리 속도로 산업 수준의 품질을 달성했으며, 모델 가중치와 전체 코드가 GitHub 및 arXiv 논문을 통해 완전 공개돼 있어요.</p><p>이번 공개는 고품질 AI 영상 파이프라인의 문턱을 크게 낮춰, 대형 스튜디오가 아닌 독립 창작자나 소규모 제작팀도 직접 운용할 수 있는 환경을 만들어줬다는 점에서 의미가 있어요. 씬 전환 영상, 배경 루프, 게임 트레일러 소재 등 다양한 콘텐츠 제작에 바로 응용할 수 있으며, 정밀한 카메라 제어가 가능하다는 점은 영상 연출이 중요한 작업에서 특히 큰 강점이에요.</p><p>원문: <a href="https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm-a-2-6b-parameter-open-source-world-model-that-generates-minute-scale-720p-video-on-a-single-gpu/">MarkTechPost</a></p>',
+            source:      'MarkTechPost',
+            publishedAt: '2026.05.17',
+            hue:         270,
+            image:       'https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-22-1024x731.png',
+            url:         'https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm-a-2-6b-parameter-open-source-world-model-that-generates-minute-scale-720p-video-on-a-single-gpu/',
+            urls: [
+                { label: '논문', href: 'https://arxiv.org/abs/2605.15178' },
+                { label: '깃허브', href: 'https://github.com/NVlabs/Sana' },
+            ],
+        },
+        {
             id:          'art-9098b752-2026-05',
             tab:         'art',
             headline:    'Sora 앱 종료 후 Kling AI, 앱스토어 그래픽&디자인 1위 등극',
