@@ -537,6 +537,22 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-de86d768-2026-05',
+            tab:         'industry',
+            headline:    '파티 애니멀즈, AI 공모전 논란에 공식 사과',
+            summary:     '파티 애니멀즈 개발사가 75,000달러 규모 AI 영상 공모전을 발표했다가 팬들의 강한 반발에 공식 사과문을 냈어요.',
+            body:        '<p>파티 애니멀즈 개발사 Recreate Games가 2026년 5월 13일 총 상금 75,000달러 규모의 AI 영상 공모전을 발표했어요. 플레이어들이 생성형 AI 소프트웨어로 최대 5분짜리 영상을 만들어 제출하는 방식이었는데, \'AI 덕분에 머릿속에만 있던 아이디어가 드디어 현실이 될 수 있다\'는 홍보 문구가 팬들의 반발을 샀어요. 인간 창작자의 노력과 예술적 가치를 평가 절하한다는 비판이 쏟아지자, 개발사는 빠르게 공식 사과문을 발표했어요.</p><p>Recreate Games는 사과문에서 \'AI 도구는 영상 편집·모델링·애니메이션 기술이 없는 사람도 창작에 참여할 수 있도록 진입 장벽을 낮추기 위한 접근성 수단\'이라고 설명하며, 인간 창작물을 무시하려는 의도가 전혀 없었다고 해명했어요. 이어 팬들에게 공모전 방향을 묻는 트위터 투표를 진행했어요. 선택지는 전면 취소, 비AI 경쟁 전환, AI 부문 유지 및 인간 아트 부문 추가 세 가지였는데, 약 16,000표 중 58%가 전면 취소를 선택했어요.</p><p>이번 사태는 게임 업계에서 생성형 AI 도입에 따른 커뮤니티 반발이 반복되는 흐름의 일부예요. NTE: Neverness to Everness는 AI 생성 배경 이미지 사용으로 교체를 약속했고, 콜 오브 듀티도 AI 사용 사실이 드러나 논란이 됐어요. 스튜디오들이 AI 활용을 공론화하지 않다가 비판 이후에야 입장을 밝히는 패턴이 반복되면서 업계의 신뢰 문제가 커지고 있어요.</p><p>원문: <a href="https://gamerant.com/party-animals-apology-ai-contest/">Game Rant</a></p>',
+            source:      'Game Rant',
+            publishedAt: '2026.05.18',
+            hue:         20,
+            image:       'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/05/party-animals-corgi-falling-over-wall-1.jpg',
+            url:         'https://gamerant.com/party-animals-apology-ai-contest/',
+            urls: [
+                { label: '에픽게임즈', href: 'https://gamerant.com/epic-games-ai-tools-uses/' },
+                { label: 'NTE 논란', href: 'https://gamerant.com/nte-ai-controversy-usage/' },
+            ],
+        },
+        {
             id:          'industry-44615dce-2026-05',
             tab:         'industry',
             headline:    'Origin Lab, 게임사-AI 월드 모델 빌더 연결 플랫폼으로 80억 원 시드 투자 유치',
@@ -957,6 +973,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-91c5b66e-2026-05',
+            tab:         'art',
+            headline:    'FMX 2026 현장 리뷰: VFX 업계, AI를 품기 시작하다',
+            summary:     'FMX 2026에서 VFX 업계가 AI를 실무 도구로 받아들이기 시작하는 뚜렷한 시각 전환이 나타났어요.',
+            body:        '<p>FMX 2026 컨퍼런스에서 가장 주목할 만한 변화는 VFX 업계가 AI와 ML 워크플로우를 바라보는 시각이 달라졌다는 점이에요. 한때 VFX의 \'적\'으로 여겨지던 AI가 이제는 실무 도구로 진지하게 받아들여지고 있어요. befores & afters의 Ian Failes에 따르면, 실제 제작에 AI를 적용한 사례를 소개하는 세션이 AI의 현황을 일반적으로 논하는 패널 토론보다 훨씬 더 큰 호응을 얻었어요. 생성형 AI에 대한 회의적 시각은 여전히 남아 있지만, 도입 추세는 뚜렷해지고 있어요.</p><p>기술 세션 면에서도 풍성한 발표가 이어졌어요. Framestore의 Stuart Penn 시각 효과 감독이 소개한 Project Hail Mary 작업은 컨퍼런스 최고의 강연 중 하나로 손꼽혔어요. 롤랜드 에머리히 감독과의 무대 대담, Softimage의 역사 세션, 정지 애니메이션 기법 강연 등 \'Then & Now\' 시리즈도 다채롭게 펼쳐졌어요. Foundry 세션에서는 Project Hail Mary 내 누크(Nuke) 활용법이 공개돼 Xenonite 처리의 정교한 디테일이 참가자들을 놀라게 했어요.</p><p>Ian Failes는 컨퍼런스의 가장 큰 강점으로 커뮤니티의 열기를 꼽았어요. 급변하는 VFX 업계의 갈림길에서, 같은 분야 종사자들이 한자리에 모여 열정을 나누는 장이 얼마나 소중한지 다시금 실감했다고 해요. 온라인 패스를 통해 녹화된 세션을 다시 볼 수 있으며, 2027년 FMX 재참석을 강력히 권유한다고 전했어요.</p><p>원문: <a href="https://beforesandafters.com/2026/05/17/reflections-on-fmx-2026/">befores &amp; afters</a></p>',
+            source:      'befores & afters',
+            publishedAt: '2026.05.18',
+            hue:         260,
+            image:       'https://i0.wp.com/beforesandafters.com/wp-content/uploads/2026/05/FMX-2026-_day2_Roland-Emmerich_Ian-Failes_01-2.jpg?fit=1280%2C853&ssl=1',
+            url:         'https://beforesandafters.com/2026/05/17/reflections-on-fmx-2026/',
+            urls: [
+                { label: '온라인 패스', href: 'https://fmx.de/en/tickets' },
+            ],
+        },
+        {
+            id:          'art-f8738c64-2026-05',
+            tab:         'art',
+            headline:    '중국 AI 영상 생성 기술, 미국 경쟁사 앞질렀다',
+            summary:     '바이트댄스 Seedance 2.0 등 중국 AI 영상 생성 도구들이 벤치마크와 상업화 면에서 미국 경쟁사를 앞질렀어요.',
+            body:        '<p>바이트댄스의 Seedance 2.0이 텍스트·이미지·오디오·영상 네 가지 입력을 동시에 지원하는 최초의 1080p 시네마틱 영상 생성 모델로 등장했어요. 품질 벤치마크에서 미국 경쟁사들을 앞지른 이 모델은 TikTok·더우인 등 수십억 명이 쓰는 플랫폼 안에서 운영돼 막강한 사용자 기반을 갖추고 있어요. Shengshu Tech의 Vidu Agent는 이미지를 고품질 영상으로 변환하며 제작 기간을 크게 단축하는 것을 목표로 하고, Zhipu AI의 GLM-5는 7,440억 파라미터를 보유하며 미국의 반도체 수출 규제 속에서도 GPU 독립성에 근접하고 있어요.</p><p>이미 상업화 단계에 진입한 중국 AI 기업들과 달리, 미국 AI 영상 스타트업 다수는 수익화 전략을 확정하지 못한 채 파일럿 단계에 머물러 있어요. 중국의 AI 산업 가치는 5,000억 위안(약 720억 달러)을 돌파했으며, 5억 1,500만 명이 생성형 AI 도구를 이미 사용 중이에요. 이처럼 방대한 사용자 데이터가 모델 개선을 위한 피드백 루프를 만들어 내기 때문에, 미국 스타트업이 벤처 투자만으로 단기간에 따라잡기는 어렵다는 분석이에요.</p><p>바이트댄스·콰이쇼우 같은 중국 기업들은 고립된 모델이 아닌 통합 생태계를 운영한다는 점도 강점이에요. 반면 ByteDance는 비상장, Shengshu Tech와 Zhipu AI도 벤처 투자 단계여서 서구 시장에서 직접 투자하기 어려운 구조예요. 미·중 기술 갈등이 반도체 접근과 규제 환경을 계속 흔드는 가운데, 중국 기업들의 실질적 혁신은 영상 생성 AI 경쟁의 판도를 바꾸고 있어요.</p><p>원문: <a href="https://cryptobriefing.com/chinese-ai-video-generation-leads-us/">Crypto Briefing</a></p>',
+            source:      'Crypto Briefing',
+            publishedAt: '2026.05.18',
+            hue:         200,
+            image:       'https://static.cryptobriefing.com/wp-content/uploads/2026/05/17160834/ai-is-winning-the-u-s-china-ai-race-1-800x420.jpeg',
+            url:         'https://cryptobriefing.com/chinese-ai-video-generation-leads-us/',
+        },
         {
             id:          'art-288a8ee6-2026-05',
             tab:         'art',
