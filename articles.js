@@ -638,6 +638,21 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-7369a5a2-2026-05',
+            tab:         'industry',
+            headline:    '뉴섬 캘리포니아 주지사, AI로 인한 노동자 보호 행정명령 서명',
+            summary:     '뉴섬 주지사가 AI 자동화로부터 노동자를 보호하는 행정명령에 서명하며 6개월 내 고용 영향 보고서 제출을 지시했어요.',
+            body:        '<p>개빈 뉴섬 캘리포니아 주지사가 AI 자동화로 인해 영향을 받는 노동자를 보호하기 위한 행정명령에 서명했어요. 이번 명령에 따라 노동·인력부는 6개월 안에 AI가 고용에 미치는 영향 분석 보고서, 고용보험 확대 방안, 그리고 노동자 재교육 프로그램 권고안을 제출해야 해요. 뉴섬 주지사는 AI 혁신을 막는 것이 아니라 변화 속에서 노동자가 보호받을 수 있도록 정부가 선제적으로 대응하는 것이 목적이라고 밝혔어요.</p><p>게임·엔터테인먼트 산업이 밀집한 LA와 샌프란시스코에도 직접적인 영향이 예상돼요. 많은 게임 스튜디오들이 AI 도입을 공개적으로 꺼리는 분위기 속에서 나온 정부 차원의 움직임이라, 산업 전반의 AI 도입 속도와 관련 공개 논의 방식에 영향을 줄 수 있어요. 특히 콘텐츠 제작, 2D 아트, 애니메이션 등 창작 분야에서 AI 대체 우려가 큰 만큼, 정부가 이를 제도적으로 다루기 시작했다는 사실 자체가 업계에 상징적인 신호로 읽혀요.</p><p>캘리포니아는 미국 내 AI 및 테크 기업이 가장 많이 밀집한 주로, 이번 행정명령은 기업들의 AI 도입 방식과 인력 정책에도 간접적인 압력이 될 수 있어요. 아직 법적 구속력은 없지만, 6개월 후 나올 권고안이 실질적인 정책으로 이어질 가능성이 있어 주목할 만해요.</p><p>원문: <a href="https://www.npr.org/2026/05/22/g-s1-123671/ca-gov-gavin-newsom-signed-an-executive-order-to-protect-workers-from-ai">NPR</a></p>',
+            source:      'NPR',
+            publishedAt: '2026.05.23',
+            hue:         15,
+            image:       'https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg',
+            url:         'https://www.npr.org/2026/05/22/g-s1-123671/ca-gov-gavin-newsom-signed-an-executive-order-to-protect-workers-from-ai',
+            urls: [
+                { label: '행정명령 원문', href: 'https://www.gov.ca.gov/2026/05/21/governor-newsom-signs-first-of-its-kind-executive-order-to-prepare-workers-and-businesses-for-potential-ai-disruption/' },
+            ],
+        },
+        {
             id:          'industry-dcc902c6-2026-05',
             tab:         'industry',
             headline:    'FirstLook, 게임 스튜디오용 AI 에이전트 출시 — Team17·Remedy 등 이미 도입',
@@ -1101,6 +1116,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-cdc63d4c-2026-05',
+            tab:         'art',
+            headline:    'AI 팟캐스트 생성 앱 Huxe, 스포티파이에 밀려 결국 문 닫아',
+            summary:     '전직 NotebookLM 개발자들이 만든 AI 팟캐스트 앱 Huxe가 스포티파이의 유사 기능 출시 다음 날 서비스 종료를 발표했어요.',
+            body:        '<p>전직 NotebookLM 개발자들이 창업한 AI 오디오 생성 스타트업 Huxe가 서비스 종료를 공식 발표했어요. Huxe는 프롬프트 하나만 입력하면 팟캐스트와 팟캐스트 시리즈를 자동으로 생성해 주는 앱이었어요. 회사는 앱 스토어와 플레이 스토어에서 앱을 내리고, 기존 설치 사용자에게는 7일의 유예 기간을 준 뒤 모든 계정 데이터를 삭제할 예정이에요. 회사 측은 \'팀이 새로운 방향으로 나아가게 돼 제품 개발을 계속하지 않기로 했다\'고만 밝히며 구체적인 종료 이유는 공개하지 않았어요.</p><p>타이밍이 결정적이었어요. Huxe의 서비스 종료 발표는 스포티파이가 개인 팟캐스트 생성 기능을 공개한 바로 다음 날에 나왔어요. NotebookLM이 팟캐스트 생성 기능으로 AI 오디오 시장을 열었고, 이후 어도비, 아마존, 일레븐랩스, 메타, 스포티파이까지 대형 플랫폼들이 거의 동일한 기능을 번들로 내놓으면서 독립 스타트업이 설 자리가 급격히 좁아졌어요. Huxe는 2024년 말 구글 출신 개발자 세 명이 창업했고, Conviction, Genius Ventures, 피그마 CEO 딜런 필드, 구글 리서치 제프 딘 등으로부터 460만 달러를 유치한 바 있어요.</p><p>Huxe의 사례는 AI 창작 도구 스타트업이 처한 현실을 잘 보여줘요. 혁신적인 아이디어라도 대형 플랫폼이 같은 기능을 번들 서비스로 탑재하는 순간 경쟁력을 잃기 쉽고, 특히 구독 기반 플랫폼은 기존 사용자를 붙잡아 두는 힘이 강해 스타트업이 독자적인 유료 사용자를 확보하기 어려워요. 음악, 팟캐스트, 오디오북에 이어 AI 오디오 생성까지 플랫폼화가 빠르게 진행되는 만큼, 독립형 AI 오디오 앱 시장이 점점 더 좁아질 것이라는 우려가 커지고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/05/22/audio-generation-app-huxe-founded-by-former-notebooklm-developers-shuts-down/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.23',
+            hue:         340,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/09/Huxe_Sept25_LaunchAsset_2.jpeg',
+            url:         'https://techcrunch.com/2026/05/22/audio-generation-app-huxe-founded-by-former-notebooklm-developers-shuts-down/',
+        },
+        {
+            id:          'art-b81a13f8-2026-05',
+            tab:         'art',
+            headline:    '스포티파이의 AI 베팅: 콘텐츠는 더 많이, 원하는 건 더 줄어드나',
+            summary:     '스포티파이가 AI 콘텐츠 기능을 잇따라 추가하며 창작 플랫폼으로 탈바꿈하는 과정에서 콘텐츠 과잉 우려도 커지고 있어요.',
+            body:        '<p>스포티파이가 팟캐스트·오디오북·음악까지 AI 생성 콘텐츠 기능을 잇따라 추가하며 앱의 성격이 빠르게 바뀌고 있어요. 이번 투자자의 날 행사에서 발표한 내용만 해도 유니버설 뮤직과의 AI 커버곡 라이선스 계약, 일레븐랩스 기반 AI 오디오북 제작 도구, 개인 팟캐스트 생성 기능, AI 기반 자연어 검색까지 여러 가지예요. 단순 스트리밍 플랫폼에서 AI 콘텐츠 생성 플랫폼으로의 전환이 가시화되고 있어요.</p><p>하지만 이런 방향 전환에 우려의 목소리도 나와요. 이미 AI 생성 음악이 너무 많이 올라와 라벨링 논란이 있었고, AI 팟캐스트와 오디오북까지 늘어나면 사용자가 원하는 인간이 만든 콘텐츠를 찾기가 더 어려워질 수 있어요. 분석가들은 스포티파이가 콘텐츠의 양을 늘리는 동시에 발견성(discoverability) 문제를 해결하지 못하면 사용자 경험이 나빠질 수 있다고 지적해요. 한편 Huxe처럼 비슷한 기능을 독자적으로 서비스하던 스타트업이 스포티파이의 번들 기능에 밀려 문을 닫는 현상도 나타나고 있어요.</p><p>스포티파이의 AI 대규모 통합은 창작 플랫폼 전반이 AI를 어떻게 수용하고 어떤 트레이드오프를 감수할지를 잘 보여주는 사례예요. 게임·미디어·교육 등 다른 창작 산업에서도 비슷한 흐름이 가속되고 있어서, \'플랫폼이 주도하는 AI 창작 생태계\'가 크리에이터에게 기회인지 위협인지에 대한 논의가 더 활발해질 것으로 보여요.</p><p>원문: <a href="https://techcrunch.com/2026/05/22/spotifys-ai-bet-more-of-everything-less-of-what-you-want/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.23',
+            hue:         330,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/02/spotify-logo-phone-GettyImages-2163455819.jpg',
+            url:         'https://techcrunch.com/2026/05/22/spotifys-ai-bet-more-of-everything-less-of-what-you-want/',
+        },
         {
             id:          'art-21846ea2-2026-05',
             tab:         'art',
