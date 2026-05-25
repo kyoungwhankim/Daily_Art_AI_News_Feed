@@ -1117,6 +1117,18 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-b867ee0c-2026-05',
+            tab:         'art',
+            headline:    'Canva·Adobe·CapCut, Google Gemini 채팅창 안으로 — AI 크리에이티브 스튜디오 시대 열린다',
+            summary:     '구글 Gemini 채팅창에 Canva, Adobe, CapCut이 통합돼 하나의 창에서 디자인·영상 작업이 가능해졌어요.',
+            body:        '<p>구글 I/O 2026 발표 이후 나흘 만에 Canva, Adobe, CapCut이 잇따라 구글 Gemini 앱에 통합된다고 공식 발표했어요. Canva는 이미 한정 출시를 시작했으며, Gemini 채팅창에서 @Canva 명령어를 입력하면 AI와 대화하듯이 디자인을 바로 생성하거나 편집할 수 있어요. Adobe는 Photoshop, Illustrator, Premiere Pro 등 50개 이상의 크리에이티브 툴을 수 주 안에 Gemini와 연결할 계획이고, 틱톡 모기업 바이트댄스의 CapCut도 합류해 Gemini 안에서 영상 편집 기능을 지원할 예정이에요.</p><p>이번 통합의 핵심은 \'하나의 채팅창에서 모든 크리에이티브 작업을 처리한다\'는 개념이에요. 지금까지는 디자인, 이미지 편집, 영상 제작 툴을 각각 따로 열고 파일을 내보내고 다시 불러오는 번거로운 과정이 필요했어요. 이제는 Gemini 채팅창 하나에서 AI에게 지시를 내리면 해당 툴이 자동으로 실행되고 결과를 바로 확인할 수 있게 돼요. 특히 소규모 크리에이티브 팀이나 콘텐츠 크리에이터에게는 작업 시간을 크게 줄여 줄 변화예요.</p><p>이번 발표는 AI 플랫폼이 크리에이티브 생태계의 허브로 자리잡는 중요한 신호예요. 구글이 Gemini를 단순 챗봇이 아닌 \'크리에이티브 스튜디오\'로 진화시키겠다는 전략이 명확해졌고, 마이크로소프트 Copilot 등 경쟁 플랫폼과의 차별화 경쟁도 더욱 치열해질 전망이에요. 어떤 AI 플랫폼을 중심에 두느냐에 따라 크리에이터의 작업 환경이 달라지는 시대가 빠르게 열리고 있어요.</p><p>원문: <a href="https://asanify.com/blog/news/ai-creative-studio-may-24-2026/">Asanify AI News Digest</a></p>',
+            source:      'Asanify AI News Digest',
+            publishedAt: '2026.05.25',
+            hue:         280,
+            image:       'https://media.asanify.com/wp-content/uploads/2026/05/24121313/blog_2026-05-24_ai-creative-studio.webp',
+            url:         'https://asanify.com/blog/news/ai-creative-studio-may-24-2026/',
+        },
+        {
             id:          'art-782462fb-2026-05',
             tab:         'art',
             headline:    '런웨이 알렙 2.0: AI 비디오 생성 넘어 프레임 단위 정밀 편집으로',
