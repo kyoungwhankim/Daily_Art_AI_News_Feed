@@ -29,6 +29,22 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-26454bde-2026-05',
+            tab:         'games',
+            headline:    '리얼루전, ByteDance Seedance 2.0과 손잡고 3D-to-AI 영상 제작 플랫폼 \'AI Studio\' 공개',
+            summary:     '리얼루전이 ByteDance Seedance 2.0과 협력해 3D 씬을 AI 영상으로 변환하는 AI Studio 얼리 액세스를 출시했어요.',
+            body:        '<p>리얼루전(Reallusion)이 ByteDance의 최신 영상 생성 모델 Seedance 2.0과 공식 협력 관계를 맺고, 3D 씬을 AI 영상으로 변환하는 통합 창작 플랫폼 \'AI Studio\'의 얼리 액세스를 공개했어요. 기존 3D 애니메이션 소프트웨어인 iClone과 Character Creator에 Kling AI, Veo 3, Flux, Nano Banana, Wan, LTX, Scail 등 다양한 최신 생성형 AI 엔진을 직접 내장해, 아티스트가 하나의 창작 흐름 안에서 여러 AI 모델을 전환하며 사용할 수 있도록 했어요. 여기에 5,000개 이상의 3D 프리비즈 에셋이 함께 제공돼 텍스트 프롬프트 없이도 씬을 구성하고 AI 영상으로 완성하는 작업이 가능해졌어요. 얼리 액세스는 현재 iClone 또는 Character Creator의 등록 사용자에게 우선적으로 제공되고 있어요.</p><p>플랫폼의 핵심 차별점은 \'정밀 제어 레이어(Precision Control Layer)\' 방식이에요. 3D 씬이 공간 구조, 카메라 경로, 캐릭터 스켈레톤 데이터를 담당하고 AI가 시각적 풍부함을 더하는 구조 덕분에, 기존 생성 AI 영상에서 흔히 나타나던 캐릭터 왜곡이나 프레임 간 일관성 문제를 크게 줄일 수 있어요. Seedance 2.0은 iClone의 씬 레이아웃과 카메라 패스를 직접 해석해 복잡한 카메라 움직임 중에도 공간 정확도를 유지해요. 또한 AI Actor Creator 기능으로 3D 캐릭터나 2D 참조 이미지를 기반으로 일관된 AI 배우를 최대 14개 각도와 표정이 담긴 캐릭터 시트 형태로 생성할 수 있어, 캐릭터 지식재산 보호에도 실질적인 도움이 돼요.</p><p>대사 연출, 다중 캐릭터 대화, 텍스트-투-보이스 생성과 음성 클로닝, 방송 품질 수준의 AI 업스케일링 엔진까지 지원해 단일 플랫폼에서 영상 제작의 주요 단계를 처리할 수 있다는 것도 강점이에요. 생성된 에셋은 언리얼 엔진, Maya, Blender 등 기존 3D 도구로 재활용할 수 있어 게임 아트 파이프라인에 바로 통합하기도 수월해요. 리얼루전은 3D 제어의 정밀함과 AI 표현력을 결합함으로써 게임 아티스트가 생성 AI 시대에도 경쟁력 있는 창작 흐름을 꾸준히 이어갈 수 있도록 지원하는 것이 목표라고 밝혔어요.</p><p>원문: <a href="https://www.prnewswire.com/news-releases/3d-precision-control-meets-cinematic-ai-reallusion-unveils-ai-studio-in-creative-alliance-with-bytedances-seedance-2-0--302781097.html">PR Newswire</a></p>',
+            source:      'PR Newswire',
+            publishedAt: '2026.05.26',
+            hue:         30,
+            image:       'https://mma.prnewswire.com/media/2987083/image1.jpg',
+            url:         'https://www.prnewswire.com/news-releases/3d-precision-control-meets-cinematic-ai-reallusion-unveils-ai-studio-in-creative-alliance-with-bytedances-seedance-2-0--302781097.html',
+            urls: [
+                { label: '소개 영상', href: 'https://youtu.be/MYQ7RuNpDPs?si=EYHZXTA1qtn1PKL3' },
+                { label: '공식 사이트', href: 'https://reallusion.software/5f1c1b' },
+            ],
+        },
+        {
             id:          'games-bcd4d99d-2026-05',
             tab:         'games',
             headline:    'Autodesk Maya 2027.1 출시 — MotionMaker 워크플로 개선 및 USD·LookdevX 업데이트',
