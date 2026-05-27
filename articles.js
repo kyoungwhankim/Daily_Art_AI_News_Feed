@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-27cc6922-2026-05',
+            tab:         'games',
+            headline:    'Reallusion, 3D 정밀 제어와 ByteDance Seedance 2.0 결합한 AI Studio 출시',
+            summary:     'Reallusion이 iClone 3D와 Seedance 2.0을 결합한 하이브리드 AI 비디오 플랫폼을 출시했어요.',
+            body:        '<p>Reallusion이 자사의 3D 애니메이션 툴 iClone과 ByteDance의 AI 비디오 모델 Seedance 2.0을 결합한 하이브리드 프로덕션 플랫폼 \'AI Studio\'를 공식 출시했어요. 이 플랫폼의 핵심은 텍스트 프롬프트만으로는 정밀 제어가 어려웠던 카메라 경로, 캐릭터 포즈, 골격 움직임, 조명 같은 요소들을 아티스트가 iClone에서 직접 구성한 뒤, 이 3D 씬 데이터를 AI의 정밀 제어 레이어로 활용하는 방식에 있어요. AI는 시각적 렌더링과 텍스처 품질만 담당하고 공간 구조와 연출 의도는 아티스트가 그대로 유지할 수 있어서, 기존 AI 비디오 생성 도구에서 흔히 발생하는 피사체 왜곡이나 공간 연속성 붕괴 문제를 크게 줄여줘요. 1993년에 설립된 Reallusion은 게임 개발·영화 프리비즈·가상 프로덕션에 활용되는 3D 캐릭터 애니메이션 툴을 개발해 왔으며, AI Studio는 기존 3D 생태계를 생성 AI 영역으로 자연스럽게 확장하는 시도예요.</p><p>Seedance 2.0은 현재 Artificial Analysis 리더보드 1위를 기록 중인 AI 비디오 모델로, 씬 레이아웃과 카메라 경로, 골격 데이터를 정교하게 해석해 최대 15초 분량의 클립을 생성할 수 있어요. AI Studio는 이 모델 외에도 Kling AI, Veo 3, Wan, LTX, Flux 등 다양한 모델을 샷별로 선택할 수 있는 멀티모델 플랫폼으로, 같은 프로젝트 안에서도 포토리얼 씬과 스타일화 애니메이션 씬에 각각 최적의 모델을 고를 수 있어요. OpenAI가 하루 100만 달러에 달하는 운영 비용을 이유로 Sora를 갑작스럽게 종료하면서 이에 의존하던 크리에이터들이 피해를 입었고, 심지어 한 AI 애니메이션 영화는 칸 영화제 마켓 데뷔를 놓치기까지 했어요. 이 사례를 반면교사 삼아, AI Studio는 3D 에셋과 씬 데이터를 로컬에 보관하는 방식으로 서비스 중단이나 가격 인상에도 창작 자산이 안전하게 유지되도록 설계됐어요. 게임·영상 분야 아티스트들에게 AI 의존 리스크를 줄이면서도 최첨단 렌더링 품질을 활용할 수 있는 실용적인 파이프라인으로 주목받고 있어요.</p><p>원문: <a href="https://thenextweb.com/news/reallusion-ai-studio-bytedance-seedance-3d-video">The Next Web</a></p>',
+            source:      'The Next Web',
+            publishedAt: '2026.05.27',
+            hue:         220,
+            image:       'https://media.thenextweb.com/2026/05/reallusion-ai-studio-bytedance-seedance-3d-video.avif',
+            url:         'https://thenextweb.com/news/reallusion-ai-studio-bytedance-seedance-3d-video',
+            urls: [
+                { label: '공식 사이트', href: 'https://ai.reallusion.com/ai-studio/default.html' },
+            ],
+        },
+        {
             id:          'games-26454bde-2026-05',
             tab:         'games',
             headline:    '리얼루전, ByteDance Seedance 2.0과 손잡고 3D-to-AI 영상 제작 플랫폼 \'AI Studio\' 공개',
@@ -1132,6 +1147,48 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-baf40d08-2026-05',
+            tab:         'art',
+            headline:    'UMG·TikTok, AI 무단 음악 차단 강화 계약 갱신',
+            summary:     '유니버설 뮤직 그룹과 TikTok이 AI 무단 생성 음악 차단과 아티스트 권리 강화를 담은 새 계약을 체결했어요.',
+            body:        '<p>유니버설 뮤직 그룹과 동영상 플랫폼 틱톡이 무단 생성 음악 제거와 아티스트·작곡가 크레디트 강화를 명문화한 새 라이선스 계약을 체결했어요. 이번 합의는 2024년 유니버설 뮤직 그룹이 인공지능 권리 보호 미흡을 이유로 틱톡에서 전체 음악 카탈로그를 전격 철수한 대형 분쟁 이후 이루어진 화해예요. 당시 사건은 거대 플랫폼이 인공지능 저작권 문제에 얼마나 취약한지를 전 세계에 알린 계기가 됐고, 틱톡은 음원 공급자들과의 신뢰 회복이 사업 지속에 직결된다는 사실을 절실히 확인했어요. 합의의 핵심은 인공지능 보호 약속을 더욱 구체화해 인간 아티스트의 창작성을 지키고, 플랫폼 수익이 아티스트와 작곡가에게 실질적으로 돌아가도록 보장하는 것이에요. 틱톡은 계약 갱신과 함께 아티스트가 음악 성과 데이터를 직접 확인하고 홍보 활동을 강화할 수 있는 아티스트 지원 플랫폼도 함께 공식화했어요.</p><p>이번 계약에서 가장 주목받는 부분은 특정 아티스트의 목소리를 모방하거나 기존 곡을 무단으로 재구성한 인공지능 생성 트랙을 신속하게 제거하는 체계를 강화한 점이에요. 실제로 유명 아티스트의 목소리를 모사한 딥페이크 곡들이 삭제되기 전까지 수백만 스트리밍을 기록한 사례처럼, 인공지능 기반 위조 음악은 이미 음악 산업 전반의 심각한 문제가 됐어요. 유럽 연합 규제 강화 및 미국 내 인공지능 생성 콘텐츠 관련 입법 논의가 활발해지는 시점에서 이루어진 이번 합의는 기술 플랫폼과 콘텐츠 산업 사이의 인공지능 저작권 대응 기준점이 될 가능성이 높아요. 음악 창작자 권리를 넘어 디지털 아트와 시각 창작 분야 전반의 창작자 보호 논의에도 영향을 미칠 선례로 업계의 주목을 받고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.27',
+            hue:         10,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/03/tiktok-header.jpg?resize=1200,800',
+            url:         'https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/',
+        },
+        {
+            id:          'art-e407f11d-2026-05',
+            tab:         'art',
+            headline:    'AI 음악 생성 스타트업 Suno, Bond Capital 주도 투자로 기업가치 $50억 돌파',
+            summary:     'Suno가 Bond Capital 주도 시리즈 D 투자로 기업가치 50억 달러를 돌파하며 6개월 만에 두 배 성장했어요.',
+            body:        '<p>인공지능 음악 생성 플랫폼 스노(Suno)가 본드 캐피털 주도의 시리즈 D 투자 유치를 통해 기업가치 50억 달러(약 7조 원)를 돌파했어요. 지난해 11월 기업가치 24억 5천만 달러로 시리즈 C를 마감한 지 불과 6개월 만에 두 배 가까이 성장한 수치예요. 스노는 현재 전 세계 사용자 1억 명과 연간 반복 매출 3억 달러를 기록하며 인공지능 음악 시장에서 독보적인 위치를 차지하고 있어요. 텍스트 프롬프트 몇 줄만 입력하면 수초 만에 완성도 높은 음악을 만들 수 있어, 전문 음악 교육을 받지 않은 일반인에게도 창작의 문을 열어주며 사용자 수를 폭발적으로 늘렸어요. 이번 투자는 인공지능 소비자 기술에 벤처 자금이 다시 활발하게 유입되고 있다는 신호로, 인공지능이 소비자 기술 투자 열기를 되살리고 있다는 분석이 나오고 있어요.</p><p>스노의 성장 배경에는 저작권 분쟁 해소라는 결정적인 전환점이 있었어요. 초기 스노는 기존 음악 데이터를 무단으로 학습 자료로 사용했다는 혐의로 여러 메이저 음반사로부터 소송을 당했고, 사업 존속 자체가 불투명한 상황이었어요. 하지만 워너 뮤직·유니버설 뮤직 그룹 등 주요 레이블과 잇따라 라이선스 계약을 체결하며 저작권 갈등을 해소했고, 합법적인 인공지능 음악 창작 플랫폼으로 이미지를 재정립하는 데 성공했어요. 이 협력 전략이 투자자 신뢰를 크게 높였고, 세계에서 가장 빠르게 성장하는 인공지능 음악 서비스로 자리매김했어요. 저작권 문제를 먼저 해결한 뒤 대규모 투자를 유치한 이 사례는, 창작 산업에서 저작권자와 협력하는 인공지능 플랫폼만이 장기적으로 살아남을 수 있다는 업계의 새로운 기준을 제시해요. 스노의 성공은 게임·영상·시각 아트 분야의 인공지능 창작 도구들에게도 저작권자와의 협력이 얼마나 중요한지를 보여주는 선례가 될 전망이에요.</p><p>원문: <a href="https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise">Axios</a></p>',
+            source:      'Axios',
+            publishedAt: '2026.05.27',
+            hue:         280,
+            image:       'https://www.datocms-assets.com/117789/1774532259-suno_v5-5_bloginnerbanner.png?auto=format&fit=max&w=1200',
+            url:         'https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise',
+            urls: [
+                { label: '공식 사이트', href: 'https://suno.com' },
+            ],
+        },
+        {
+            id:          'art-ec7850d3-2026-05',
+            tab:         'art',
+            headline:    '교황 레오 14세, AI \'권력 집중\' 경고하는 회칙 『마그니피카 후마니타스』 발표',
+            summary:     '교황 레오 14세가 AI 시대 권력 집중의 위험성을 경고하는 첫 회칙 『마그니피카 후마니타스』를 발표했어요.',
+            body:        '<p>교황 레오 14세가 인공지능 시대의 인간 존엄성을 다룬 첫 회칙 『마그니피카 후마니타스』를 공개했어요. 200페이지 분량의 이 문서는 인공지능 연구기업 앤트로픽의 공동창업자와 함께 발표됐으며, 인공지능 기술 자체보다 그 뒤에 숨은 \'권력 집중\'을 더 근본적인 위협으로 지목해요. 소수 엘리트가 기술을 통제할 때 권력이 불투명해지고 공적 감시를 벗어나며 새로운 종속·배제·조작·불평등을 낳는다는 경고예요. 경제 자원과 데이터·전문성을 보유한 자들이 정보 소비 패턴을 형성하고 민주적 과정과 경제 흐름을 좌우하게 된다는 우려도 담겨 있어요. 회칙 제목 \'마그니피카 후마니타스(위대한 인간성)\'는 인공지능 시대에도 인간의 존엄과 공동체적 연대를 중심에 두어야 한다는 선언이에요.</p><p>회칙이 요구하는 핵심 내용은 세 가지예요. 첫째, 갈수록 강력한 모델을 개발하려는 인공지능 군비 경쟁의 종식이에요. 교황은 \'기술적 힘이 자동으로 통치 권한을 부여한다는 전제를 무효화해야 한다\'고 강조했어요. 둘째, 자율무기에 대한 인간 통제를 의무화하는 것이에요. 셋째, 영향을 받는 공동체가 참여하는 명확한 기준과 실효적 감독 체계를 갖춘 인공지능 거버넌스 구축이에요. 테크크런치는 이 문서가 인공지능 기술 자체보다 민주주의 잠식, 창작자·노동자 불평등, 정보 왜곡이라는 더 근본적인 문제를 겨냥하고 있다고 분석했어요. 1891년 산업혁명 시대의 권력 집중을 다룬 선대 교황의 회칙과 맥을 같이하는 이번 문서는 기술 변화가 반복적으로 만들어내는 불평등 구조에 대한 종교계의 경고로, 인공지능이 창작 분야에 급속히 침투하는 시대에 소수 기업의 데이터 독점 문제를 재검토해야 한다는 논의에도 중요한 시각을 더하고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.27',
+            hue:         5,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2213411719.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/',
+            urls: [
+                { label: '회칙 전문', href: 'https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html' },
+            ],
+        },
         {
             id:          'art-b867ee0c-2026-05',
             tab:         'art',
