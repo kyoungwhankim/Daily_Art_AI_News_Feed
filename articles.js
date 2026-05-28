@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-d5aca316-2026-05',
+            tab:         'games',
+            headline:    'Runway, MCP를 통해 어떤 AI 에이전트에서도 이미지·영상 생성 지원 시작',
+            summary:     'Runway가 MCP 서버를 공개해 Claude, ChatGPT, Cursor 등 어느 에이전트에서나 이미지·영상을 바로 생성할 수 있게 됐어요.',
+            body:        '<p>Runway가 MCP(Model Context Protocol) 서버를 공식 출시하며, Claude, ChatGPT, Cursor 등 MCP를 지원하는 모든 AI 에이전트에서 이미지와 영상을 별도 창 전환 없이 바로 생성할 수 있게 됐어요. 기존에는 비주얼 에셋을 만들려면 생성 도구를 따로 열어야 했지만, 이제는 에이전트 대화 창에서 제품 URL, 참조 이미지, 텍스트 프롬프트 중 하나를 전달하면 Runway가 즉시 처리하고 결과물을 같은 대화 흐름 안에 바로 돌려줘요. 이 서버를 통해 Gen-4.5, Seedance 2.0, GPT Image 2, Kling 3.0, Nano Banana Pro 등 Runway의 최신 모델 전부를 하나의 에이전트 환경 안에서 자유롭게 선택해 쓸 수 있으며, 별도 API 키 없이 기존 Runway 플랜 계정으로 로그인하면 설정이 수 초 안에 완료돼요. 제품 마케팅 영상, 히어로 에셋, 웹사이트 비주얼, 앱 내 이미지 등 다양한 창작·제작 작업을 에이전트 대화 흐름 안에서 끊김 없이 처리할 수 있어요.</p><p>실무 활용 시나리오를 보면, 에이전트에 제품 페이지 링크를 전달하면 론칭 준비가 된 마케팅 영상을, 제품 이미지 하나에서 웹사이트 코드와 비주얼 에셋을 함께, 또는 대사와 씬 설명 한 줄로 캐릭터 중심 광고를 바로 만들 수 있어요. 게임 개발자 입장에서는 Cursor 같은 코딩 에이전트 안에서 캐릭터 이미지나 배경 에셋을 직접 생성하고 즉시 코드에 연결하는 파이프라인을 구성할 수 있어, 아트 팀과의 협업 왕복 시간이 크게 줄어들 것으로 기대돼요. 별도의 API 연동 작업 없이 기존 에이전트 환경에 Runway를 바로 추가할 수 있어 소규모 인디 스튜디오나 1인 개발자에게도 접근성이 높은 편이에요. 에이전트가 코드뿐 아니라 비주얼 에셋 생성까지 담당하는 통합 파이프라인 시대를 앞당기는 업데이트로, 에이전트 기반 개발 환경에서 창작 워크플로우가 한층 더 유연해질 것으로 보여요. 이번 Runway MCP는 어떤 에이전트 플랫폼을 쓰든 동일하게 Runway 생성 기능을 이용할 수 있어, 특정 플랫폼 의존 없이 워크플로우를 구성할 수 있다는 점도 주목할 만해요.</p><p>원문: <a href="https://runwayml.com/news/mcp">Runway</a></p>',
+            source:      'Runway',
+            publishedAt: '2026.05.28',
+            hue:         220,
+            image:       'https://d3phaj0sisr2ct.cloudfront.net/site/images/mcp/intro-mcp-thumbnial.webp',
+            url:         'https://runwayml.com/news/mcp',
+            urls: [
+                { label: '연결하기', href: 'https://runwayml.com/mcp' },
+            ],
+        },
+        {
             id:          'games-27cc6922-2026-05',
             tab:         'games',
             headline:    'Reallusion, 3D 정밀 제어와 ByteDance Seedance 2.0 결합한 AI Studio 출시',
@@ -1147,6 +1162,48 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-6369a9b9-2026-05',
+            tab:         'art',
+            headline:    'Runway \'프로젝트 룩소\': AI 영상이 마침내 불쾌한 골짜기를 넘었다',
+            summary:     'Runway가 완전 AI 생성 단편 영화 3편을 공개하며 AI 영상이 이야기로 평가받는 전환점에 접어들었다고 선언했어요.',
+            body:        '<p>Runway가 완전 AI 생성 단편 영화 3편과 스펙 광고 1편을 공개하며, AI 영상이 기술적 결함보다 \'이야기\'로 주목받는 전환점에 접어들었다고 선언했어요. 할리우드 제작자, 배우, 조합원, 스튜디오 관계자, 언론 등 미디어·엔터테인먼트 업계의 폭넓은 전문가들에게 먼저 선공개했고, 이들의 반응은 AI 아티팩트에 대한 지적 대신 이야기 자체에 대한 평가로 이어졌어요. 공개된 작품들은 거친 바다 위에서 극한 상황과 맞서는 두 소년의 이야기, 한 관계의 마지막 밤을 기억의 파편으로 담아낸 작품, 비둘기 세 마리가 새로운 세계로 뛰어드는 단편으로 구성됐으며, 각 작품은 스태프 1명에 제작비 약 4,000달러라는 초소형 규모로 완성됐어요.</p><p>Runway는 이 전환점을 픽사가 1986년 SIGGRAPH에서 공개한 단편 「룩소 주니어」에 빗대어 \'프로젝트 룩소(Project Luxo)\'라고 이름 붙였어요. 당시 컴퓨터 그래픽의 돌파구였던 그 작품이 기술 시연을 넘어 감정과 성격을 가진 캐릭터로 관객에게 다가갔듯, AI 영상도 이제 같은 전환점을 지나고 있다는 거예요. 지금까지 AI 영상의 주된 한계였던 눈의 이질감, 떠다니는 얼굴, 불안정한 캐릭터, 어긋난 입 모양 같은 아티팩트가 점점 드물어지면서, 관객이 기술 결함을 찾는 대신 이야기 안으로 빠져들 수 있는 조건이 처음으로 갖춰지기 시작했다고 Runway는 분석했어요. 단 1인이 수천 달러 예산으로 감정적 몰입을 이끌어내는 작품을 완성할 수 있다는 사실은, 고비용 제작 구조에 익숙했던 영상 업계의 진입 장벽을 근본적으로 흔드는 신호예요. 게임 트레일러·시네마틱 영상처럼 스토리텔링이 중요한 콘텐츠 제작에서도 이 변화가 빠르게 반영될 것으로 보여요.</p><p>원문: <a href="https://runwayml.com/news/project-luxo">Runway</a></p>',
+            source:      'Runway',
+            publishedAt: '2026.05.28',
+            hue:         270,
+            image:       'https://d3phaj0sisr2ct.cloudfront.net/site/assets/group-19.webp',
+            url:         'https://runwayml.com/news/project-luxo',
+            urls: [
+                { label: '영상 보기', href: 'https://www.youtube.com/watch?v=FI0T0Oj7WFE' },
+            ],
+        },
+        {
+            id:          'art-36de2575-2026-05',
+            tab:         'art',
+            headline:    'ElevenLabs, 곡 중간에 장르를 바꿀 수 있는 AI 음악 생성 모델 \'Music v2\' 공개',
+            summary:     'ElevenLabs가 오페라에서 헤비메탈로 장르를 자유롭게 전환할 수 있는 Music v2 음악 생성 모델을 출시했어요.',
+            body:        '<p>ElevenLabs가 곡 중간에 장르를 자유롭게 전환할 수 있는 AI 음악 생성 모델 Music v2를 출시했어요. 기존 AI 음악 생성 모델이 곡 전체를 단일 스타일로만 만들어내던 것과 달리, Music v2는 벌스·코러스 단위로 구간을 지정해 프롬프트로 재생성하는 기능을 지원해요. 오페라에서 헤비메탈로, 잔잔한 도입부에서 격렬한 기타 리프로 전환하는 등 한 곡 안에서 다이나믹한 장르 변화가 가능해졌어요. 비음악적 음향 효과를 트랙 안에 자연스럽게 삽입하는 기능도 새롭게 추가됐고, 다국어 지원과 다양한 보컬 스타일 선택도 함께 개선됐어요. 빠른 랩 구간도 가사 일관성을 잃지 않고 생성할 수 있으며, 현재 \'ElevenCreative\'와 \'ElevenMusic\' 플랫폼에서 사용 가능하고 개발자용 ElevenAPI도 곧 제공될 예정이에요.</p><p>Music v2의 가장 큰 강점 중 하나는 라이선스가 정리된 데이터로 학습해 상업적 활용이 가능하다는 점이에요. Suno, Udio 등 경쟁사들이 학습 데이터 저작권 문제로 소송에 시달리는 가운데, ElevenLabs는 처음부터 클리어된 데이터만을 사용해 콘텐츠 크리에이터와 기업 모두 법적 부담 없이 쓸 수 있는 음악 생성 도구를 지향하고 있어요. 게임 음악과 영상 BGM 제작 면에서도 주목할 만한데, 구간별로 분위기와 장르를 다르게 설정할 수 있어 보스 배틀에서 일반 탐험 BGM으로, 또는 평온한 장면에서 클라이맥스로 자연스럽게 전환되는 음악을 설계할 수 있어요. 구간 재생성 기능을 통해 곡의 특정 부분만 프롬프트로 교체할 수 있어, 반복 작업 없이 원하는 사운드를 빠르게 찾을 수 있는 것도 실무에서 유용한 부분이에요. Google, Stability AI 등 빅테크와 AI 스타트업들이 잇달아 음악 생성 모델을 내놓는 경쟁 속에서, Music v2는 상업적 안정성과 창작 자유도를 동시에 갖춘 실용적인 도구로 주목받고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.28',
+            hue:         60,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/',
+            urls: [
+                { label: '바로가기', href: 'https://elevenlabs.io/music' },
+            ],
+        },
+        {
+            id:          'art-017a464d-2026-05',
+            tab:         'art',
+            headline:    'YouTube, AI 생성 영상 자동 라벨링 시스템 도입… 크리에이터 미신고시에도 표시',
+            summary:     'YouTube가 크리에이터가 신고하지 않아도 AI 생성 영상에 자동으로 라벨을 붙이는 정책을 시작했어요.',
+            body:        '<p>YouTube가 크리에이터가 AI 콘텐츠임을 직접 신고하지 않아도 시스템이 자동으로 \'AI 생성\' 라벨을 붙이는 정책을 시작했어요. 기존에는 크리에이터의 자진 신고에 의존했지만, 이제는 YouTube 내부 신호를 활용해 \'상당 수준의 포토리얼리스틱 AI\'가 포함된 영상을 직접 감지하고 라벨을 표시해요. 라벨 위치도 달라졌는데, 이전에는 더보기 설명란에만 나타났지만 앞으로는 일반 영상의 경우 플레이어 바로 아래에, YouTube Shorts는 영상 위에 오버레이 형태로 표시돼 훨씬 눈에 띄게 됐어요. C2PA 메타데이터가 포함된 영상은 라벨이 영구적으로 유지되고, YouTube 자사 도구인 Veo나 Dream Screen으로 만든 영상도 라벨 제거가 불가능해요. 크리에이터가 오인 라벨에 이의를 제기할 수 있으며, 라벨이 수익화나 추천 알고리즘에는 영향을 주지 않는다고 YouTube는 밝혔어요.</p><p>이번 조치는 Google이 고품질 AI 영상 생성이 가능한 Gemini Omni를 출시하는 시점에 맞춰 발표돼 눈길을 끌어요. AI 영상 품질이 빠르게 높아질수록 관객이 AI 생성 여부를 스스로 판별하기 어려워지는 만큼, 플랫폼 차원의 자동 라벨링이 필요하다는 논리예요. AI 딥페이크 탐지 기술 확장과 맞물려, 주요 플랫폼들이 AI 콘텐츠를 명확히 구분하려는 움직임이 본격화되고 있는 흐름이에요. AI로 트레일러·홍보 영상·시네마틱 씬을 제작하는 게임 스튜디오 입장에서는, 자체 AI 도구를 사용하든 외부 모델을 활용하든 공개 채널에 업로드한 영상에 AI 라벨이 자동으로 붙을 수 있어 영상 공개 전략과 제작 투명성 기준을 새롭게 정해야 할 것 같아요. 영상 제작에 AI를 적극 활용하는 스튜디오일수록 이 변화에 빠르게 대응하는 것이 중요해질 전망이에요.</p><p>원문: <a href="https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.05.28',
+            hue:         10,
+            image:       'https://techcrunch.com/wp-content/uploads/2020/06/GettyImages-1149449083.jpg?resize=1200,800',
+            url:         'https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/',
+        },
         {
             id:          'art-baf40d08-2026-05',
             tab:         'art',
