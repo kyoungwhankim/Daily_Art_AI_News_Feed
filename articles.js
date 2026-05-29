@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-14f9a024-2026-05',
+            tab:         'games',
+            headline:    '언리얼 엔진 5 AI 코파일럿 \'Nwiro AI Pro\' 출시',
+            summary:     '자연어 프롬프트 하나로 블루프린트·VFX·레벨 레이아웃까지 자동 생성하는 UE5 AI 코파일럿 플러그인이 나왔어요.',
+            body:        '<p>리어테스 스튜디오(Leartes Studios)가 언리얼 엔진 5 전용 AI 코파일럿 플러그인 \'Nwiro AI Pro\'를 공식 출시했어요. 개발자가 자연어 프롬프트를 입력하기만 하면 블루프린트, C++ 클래스, PCG 그래프, 나이아가라 VFX 시스템, 머티리얼, UI 위젯, 시퀀서 세팅, 조명 설정, 바이옴 환경, 레벨 디자인 레이아웃, 애니메이션 블루프린트까지 에디터 안에서 직접 자동 생성해줘요. Fab에서 무료 체험판을 내려받을 수 있어요.</p><p>기존 UE5 개발에서는 블루프린트 구성, PCG 시스템 설정, 조명 세팅, 환경 반복 수정 등 수많은 기술 작업을 개발자가 직접 손으로 처리해야 했어요. Nwiro AI Pro는 UE5 에디터 내에서 직접 동작하기 때문에 외부 도구로 데이터를 내보낼 필요 없이 프롬프트 기반의 대화형 방식으로 씬을 실시간 수정하고 반복할 수 있어요. 소규모 팀이나 혼자 작업하는 개발자에게 특히 유용하며, 반복 기술 작업에서 벗어나 창의적인 결정에 더 집중할 수 있게 해줘요.</p><p>이 플러그인이 주목받는 이유는 블루프린트부터 VFX·레벨 레이아웃까지 UE5 개발 워크플로 전반을 폭넓게 지원한다는 점이에요. AI 어시스턴트가 소프트웨어 개발 방식을 빠르게 바꾸고 있는 지금, Nwiro AI Pro는 게임 엔진 작업 환경에서도 프롬프트 기반 협업 도구가 자리잡을 수 있음을 보여주는 사례로 평가돼요.</p><p>원문: <a href="https://80.lv/articles/introducing-nwiro-ai-pro-the-ultimate-unreal-engine-copilot">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.05.29',
+            hue:         25,
+            image:       'https://cdn.80.lv/api/upload/meta/48503/images/6a15daba8220b/contain_1200x630.png',
+            url:         'https://80.lv/articles/introducing-nwiro-ai-pro-the-ultimate-unreal-engine-copilot',
+            urls: [
+                { label: '공식 사이트', href: 'https://nwiro.ai' },
+            ],
+        },
+        {
+            id:          'games-78f75b17-2026-05',
+            tab:         'games',
+            headline:    '카오스 렌더러 3종(Enscape·V-Ray·Corona) AI 비주얼라이제이션 도구 Veras 통합 완료',
+            summary:     '카오스가 Enscape·V-Ray·Corona 전 버전에 AI 시각화 도구 Veras를 통합하고, 크레딧 기반 하이브리드 라이선스도 도입했어요.',
+            body:        '<p>카오스(Chaos)가 자사의 AI 시각화 도구 Veras를 렌더링 소프트웨어 3종인 Enscape, V-Ray, Corona 전 버전에 공식 통합했어요. 이번 업데이트로 AEC(건축·엔지니어링·건설) 시각화 전문가들이 기존에 사용하던 렌더러 안에서 바로 Veras를 이용할 수 있게 됐어요. Veras를 활용하면 손 스케치, 2D 이미지, 3D 모델 스크린샷을 입력해 다양한 컨셉 룩을 빠르게 생성·반복하거나 발표용 애니메이션으로 변환할 수 있어요.</p><p>이번 통합과 함께 카오스는 클라우드 렌더링과 AI 서비스에 유연하게 접근할 수 있는 크레딧 기반 하이브리드 라이선스 시스템을 새롭게 도입했어요. Enscape에는 2,500개 이상의 Cosmos 신규 에셋, 원클릭 Envision 라이브 링크, Chaos Cloud 영상 협업 기능이 추가됐고, V-Ray와 Corona에는 Vantage 실시간 렌더링 뷰포트 통합과 1,000개 이상의 신규 에셋이 제공돼요. Corona 15도 함께 출시되어 차량 도색이나 모래·눈의 빛 반짝임을 구현하는 Glints 레이어와 가우시안 스플랫 GI 블렌딩 개선 등이 포함됐어요.</p><p>이번 업데이트는 렌더러마다 별도 소프트웨어를 열고 파일을 이동하던 번거로운 워크플로를 크게 단순화해줘요. SketchUp, Rhino, Revit, Archicad 등 다양한 3D·BIM 도구 사용자가 Chaos 렌더러와 함께 Veras AI 기능을 바로 활용할 수 있게 되어, AEC 시각화 전반의 작업 속도와 품질이 높아질 것으로 기대돼요.</p><p>원문: <a href="https://architosh.com/2026/05/enscape-v-ray-and-corona-get-veras-ai-integration/">Architosh</a></p>',
+            source:      'Architosh',
+            publishedAt: '2026.05.29',
+            hue:         215,
+            image:       'https://architosh.com/wp-content/uploads/2026/05/V-Ray_Veras_Hero_after_03.jpg',
+            url:         'https://architosh.com/2026/05/enscape-v-ray-and-corona-get-veras-ai-integration/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.chaos.com/veras' },
+            ],
+        },
+        {
             id:          'games-d5aca316-2026-05',
             tab:         'games',
             headline:    'Runway, MCP를 통해 어떤 AI 에이전트에서도 이미지·영상 생성 지원 시작',
@@ -1162,6 +1192,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-ef6e6fa2-2026-05',
+            tab:         'art',
+            headline:    '일레븐랩스, 감정·톤까지 살아나는 AI 더빙 모델 \'Dubbing v2\' 출시',
+            summary:     '원본 화자의 감정과 퍼포먼스를 90개 이상의 언어로 그대로 전달하는 AI 더빙 모델 \'Dubbing v2\'가 출시됐어요.',
+            body:        '<p>일레븐랩스(ElevenLabs)가 원본 화자의 감정과 퍼포먼스를 90개 이상의 언어로 그대로 살려주는 차세대 AI 더빙 모델 \'Dubbing v2\'를 출시했어요. 기존 AI 더빙 시스템은 텍스트 스크립트를 기반으로 번역·합성해 톤이나 감정이 사라지는 경우가 많았는데, Dubbing v2는 원본 오디오 퍼포먼스를 직접 분석해 억양, 감정, 타이밍, 강조, 에너지를 각 언어에 맞게 자동으로 이전해줘요.</p><p>핵심 기술인 싱크 인식 번역 시스템은 각 언어의 문장 구조와 리듬에 맞게 번역을 조정하면서 원본 콘텐츠와의 싱크를 자동으로 맞춰줘요. 기존에는 전문 더빙 한 분당 수백 달러의 비용과 번역가, 성우, 편집자, 오디오 엔지니어 등 복잡한 파이프라인이 필요했지만, Dubbing v2는 이 과정을 자동화해 개인 창작자부터 기업까지 누구나 고품질 다국어 콘텐츠를 제작할 수 있게 해줘요.</p><p>크리에이터는 ElevenCreative에서 원클릭으로 유튜브 영상을 다국어로 로컬라이즈할 수 있고, 마케팅 팀은 글로벌 캠페인을 처음부터 다시 만들지 않아도 현지화가 가능해요. 방송·스튜디오용으로는 전문 번역가·성우·오디오 믹싱과 Dubbing v2를 결합한 ElevenProductions도 함께 제공돼요. 현재 무료 플랜에서도 1분 무료 체험이 가능해요.</p><p>원문: <a href="https://elevenlabs.io/blog/introducing-dubbing-v2">ElevenLabs</a></p>',
+            source:      'ElevenLabs',
+            publishedAt: '2026.05.29',
+            hue:         270,
+            image:       'https://eleven-public-cdn.elevenlabs.io/payloadcms/8kl37ad170a-16_9%20(1).webp',
+            url:         'https://elevenlabs.io/blog/introducing-dubbing-v2',
+            urls: [
+                { label: '체험하기', href: 'https://elevenlabs.io/creative' },
+            ],
+        },
+        {
+            id:          'art-63c7eee8-2026-05',
+            tab:         'art',
+            headline:    '스티븐 스필버그 "AI는 도구일 뿐, 창의적 최종 결정권자가 되어선 안 된다"',
+            summary:     '스필버그가 AI는 도구로 쓰되 대사·캐릭터·구도 같은 창작 결정에는 개입하면 안 된다고 명확히 선을 그었어요.',
+            body:        '<p>스티븐 스필버그 감독이 미셸 오바마의 팟캐스트에 출연해 AI의 영화 창작 활용에 관한 자신의 입장을 밝혔어요. 그는 "AI는 도구로 활용하되, 창의적인 어떤 결정에서도 최종 결정권자가 되어선 안 된다"고 강조하며, AI가 맡을 수 있는 역할과 인간이 지켜야 할 창작 영역을 명확하게 구분했어요. 발언은 신작 영화 <디스클로저 데이(Disclosure Day)> 홍보 시기에 나왔으며, Hollywood에서 AI 논쟁이 가장 뜨거울 때 등장한 거장의 목소리여서 더욱 주목받았어요.</p><p>스필버그에 따르면 촬영지 물색이나 스케줄 관리 같은 실무 지원에는 AI를 적극 활용할 수 있어요. 하지만 대사 집필, 캐릭터 개발, 카메라 구도, 이야기의 방향성 같은 창의적인 결정에는 AI가 개입해선 안 된다고 선을 그었어요. 알고리즘은 인간의 창의성과 감정적 연결을 재현할 수 없으며, 영화란 스토리텔러와 관객 사이의 인간적 소통이 본질이라고 설명했어요.</p><p>쥬라기 공원으로 CGI 기술을 직접 개척한 스필버그는 기술 자체의 가능성을 부정하지 않아요. AI 수용론과 반발론이 교차하는 영화 산업의 분기점에서, 50년 커리어를 가진 거장의 명확한 입장 표명은 신진 창작자들에게도 AI와 어떻게 공존할지 방향을 제시하는 메시지로 받아들여지고 있어요.</p><p>원문: <a href="https://nofilmschool.com/steven-spielberg-takes-on-ai">No Film School</a></p>',
+            source:      'No Film School',
+            publishedAt: '2026.05.29',
+            hue:         350,
+            image:       'https://nofilmschool.com/media-library/steven-spielberg-draws-a-hard-line-on-ai-there-is-no-substitute-for-the-soul.webp?id=66831992&width=1245&height=700&quality=50&coordinates=0%2C0%2C0%2C1',
+            url:         'https://nofilmschool.com/steven-spielberg-takes-on-ai',
+        },
         {
             id:          'art-6369a9b9-2026-05',
             tab:         'art',
