@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-01a3c07e-2026-05',
+            tab:         'games',
+            headline:    'PFTrack 26.05, 단일 카메라 영상에서 3D 포인트 클라우드 및 가우시안 스플래팅 지원 추가',
+            summary:     'The Pixel Farm이 LiDAR 없이 단일 카메라 영상에서 밀도 높은 3D 포인트 클라우드를 생성하는 Hero Cloud 기능을 PFTrack 26.05에 추가했어요.',
+            body:        '<p>The Pixel Farm이 3D 카메라 트래킹 소프트웨어 PFTrack의 26.05.19 업데이트를 출시했어요. 20년 이상의 역사를 가진 PFTrack은 영상 VFX와 시각화 작업을 위한 고신뢰 카메라 트래킹 툴로, 노드 기반 아키텍처와 사진측량 도구셋을 갖추고 있어요. 이번 업데이트의 핵심은 LiDAR나 별도 캡처 장비 없이도 단일 카메라 영상에서 밀도 높은 3D 포인트 클라우드를 생성할 수 있게 됐다는 점이에요.</p><p>새로운 Hero Cloud 노드는 카메라가 장면을 이동하며 생기는 시차(패럴렉스)를 분석해 깊이를 재구성하는 방식이에요. The Pixel Farm에 따르면 대부분의 실제 촬영 영상에서 충분한 패럴렉스를 확보할 수 있다고 해요. 생성된 포인트 클라우드는 USD 형식(포인트별 법선·색상 데이터 포함)이나 FBX 형식으로 내보내 Maya·Houdini 같은 DCC 툴에서 3D 환경을 재구성할 수 있어요. 특히 COLMAP 형식 내보내기가 추가돼 Postshot 같은 3D 가우시안 스플래팅 생성 툴과 바로 연결되는 파이프라인이 가능해졌어요. Studio·Enterprise 구독 사용자는 Photo Mesh 노드로 포인트 클라우드를 삼각형 메쉬로 변환할 수도 있어요.</p><p>게임 제작 관점에서 이 기능은 촬영한 배경 세트나 실제 환경을 3D 에셋으로 빠르게 변환하거나, 인게임 가우시안 스플래팅 표현을 위한 학습 데이터를 확보하는 데 유용하게 쓸 수 있어요. 고가의 LiDAR 장비 없이도 실사 기반 3D 환경을 구축할 수 있어 중소 규모 스튜디오에도 실질적인 혜택이 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/05/the-pixel-farm-adds-new-point-cloud-toolset-to-pftrack-26-05/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.05.31',
+            hue:         195,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/05/260530_PFTrack260519_f-610x305.jpg',
+            url:         'https://www.cgchannel.com/2026/05/the-pixel-farm-adds-new-point-cloud-toolset-to-pftrack-26-05/',
+        },
+        {
             id:          'games-2f08edab-2026-05',
             tab:         'games',
             headline:    'MoZoo: 영상 디퓨전으로 동물 캐릭터의 털·근육 시뮬레이션을 자동화',
@@ -1292,6 +1304,45 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-a5cb572a-2026-05',
+            tab:         'art',
+            headline:    '《Book of Life》 감독 호르헤 구티에레스, Amazon의 GenAI 애니 프로젝트에서 전격 탈퇴',
+            summary:     '《Book of Life》 감독 호르헤 구티에레스가 Amazon의 GenAI 크리에이터 펀드에서 Punky Duck 시리즈 제작을 철회했어요.',
+            body:        '<p>애니메이션 감독 호르헤 R. 구티에레스(《The Book of Life》, 《Maya and the Three》)가 Amazon Prime Video의 GenAI Creators\' Fund에서 지원받아 제작 예정이던 Punky Duck 시리즈에서 전격 탈퇴했어요. Amazon과 AWS는 5월 27일 \'AI on the Lot\' 컨퍼런스에서 이 펀드를 발표하며 Project Nara라는 AI 제작 플랫폼을 활용한 애니메이션 3편을 공개했는데, 구티에레스가 참여에 \'조심스럽게 낙관적\'이라고 밝히자 애니메이션 커뮤니티에서 강력한 비판이 쏟아졌어요.</p><p>구티에레스는 소셜 미디어를 통해 탈퇴를 선언하며 \'Punky Duck 시리즈를 만들지 않겠다. 행동이 말보다 강하다\'고 밝혔어요. 그는 당초 신기술과 기성 아티스트 모두를 조명하는 방식으로 참여하려 했다고 설명하며 \'불편함을 드린 분들께 진심으로 사과한다\'고 했어요. 성우 빌리 웨스트는 \'AI 생성이 아티스트들의 집단 창작물을 착취할 수 있다\'며 그를 응원했고, Amazon MGM 스튜디오는 탈퇴에 대한 공식 입장을 내지 않았어요.</p><p>이번 사태는 대형 스트리밍 플랫폼이 AI 콘텐츠 생산을 공식화하는 순간 크리에이터들의 저항이 얼마나 강렬해질 수 있는지를 상징적으로 보여줘요. AI를 활용한 창작에 우호적인 감독조차 커뮤니티 압박에 결국 발을 뺀 이 사건은, 창작 AI 도입에서 아티스트 동의와 신뢰 구축이 얼마나 중요한지를 다시 한번 일깨워주는 사례로 남을 것 같아요.</p><p>원문: <a href="https://deadline.com/2026/05/punky-duck-creator-jorge-r-gutierrez-scraps-ai-amazon-project-1236930216/">Deadline</a></p>',
+            source:      'Deadline',
+            publishedAt: '2026.05.31',
+            hue:         10,
+            image:       'https://deadline.com/wp-content/uploads/2026/05/Punky-Duck-press-image-v1b.jpg?w=681&h=383&crop=1',
+            url:         'https://deadline.com/2026/05/punky-duck-creator-jorge-r-gutierrez-scraps-ai-amazon-project-1236930216/',
+            urls: [
+                { label: 'Variety 전문', href: 'https://variety.com/2026/tv/news/jorge-gutierrez-drops-out-amazon-mgm-ai-generated-series-backlash-1236762285/' },
+            ],
+        },
+        {
+            id:          'art-4993d69c-2026-05',
+            tab:         'art',
+            headline:    'Amazon, AI 애니메이션 펀드로 업계 반발 자초... 아티스트 권리 논란 확산',
+            summary:     'Amazon의 AI 애니메이션 이니셔티브가 아티스트 동의 침해 폭로와 감독 탈퇴로 업계 전반의 강력한 반발을 부르고 있어요.',
+            body:        '<p>Amazon의 AI 애니메이션 이니셔티브가 업계 전반의 격렬한 반발을 불러일으키고 있어요. 《Cupcake &amp; Friends》의 캐릭터 원작자 로린 브란츠는 BuzzFeed 스튜디오가 자신의 Good Advice Cupcake 캐릭터를 동의 없이 Amazon의 AI 플랫폼에 넘겼다고 폭로했어요. 그녀는 BuzzFeed가 \'선의로 거듭 약속했음에도 독립적으로 캐릭터를 사용했다\'며 \'아티스트 전체에 대한 폭력\'이라고 강하게 규탄했어요. 전 BuzzFeed CEO 조나 페레티가 NDA 서명을 압박했다는 주장도 나왔어요.</p><p>이번 사태는 감독 호르헤 구티에레스의 탈퇴로 더욱 증폭됐어요. 구티에레스는 Amazon의 GenAI 펀드 참여에 \'조심스럽게 낙관적\'이라고 밝혔다가 커뮤니티의 강력한 비판과 가족을 향한 협박까지 받은 끝에 결국 프로젝트에서 물러났어요. 한편 Netflix도 같은 달 INKubator라는 AI 애니메이션 스튜디오를 추진 중인 것으로 알려지면서, 주요 스트리밍 플랫폼들이 AI를 통한 콘텐츠 생산을 공식화하는 흐름이 본격화되고 있음을 보여줘요. 업계 전문가들은 AI가 제작 시간 단축과 접근성 향상에 기여할 수 있다고 보면서도, 아티스트 직업 이전 위험과 창의적 통제권 상실에 대한 우려도 깊어지고 있다고 말해요.</p><p>이 사태는 AI 생산성 도구를 창작 업계에 접목할 때 저작권 보호, 아티스트 동의, 그리고 투명한 계약 구조가 얼마나 중요한지를 다시 한번 확인시켜줘요. 플랫폼이 AI 콘텐츠 생산 방식을 설계할 때 아티스트 커뮤니티와의 신뢰를 먼저 쌓지 않으면 반발이 불가피하다는 교훈을 남기고 있어요.</p><p>원문: <a href="https://gizmodo.com/amazon-pisses-off-animation-industy-with-ai-animation-fund-2000765057">Gizmodo</a></p>',
+            source:      'Gizmodo',
+            publishedAt: '2026.05.31',
+            hue:         345,
+            image:       'https://gizmodo.com/app/uploads/2026/05/punky-duck-amazon-hed.jpg',
+            url:         'https://gizmodo.com/amazon-pisses-off-animation-industy-with-ai-animation-fund-2000765057',
+        },
+        {
+            id:          'art-c9c493c0-2026-05',
+            tab:         'art',
+            headline:    'Freebeat, \'음악을 먼저 듣는\' AI 뮤직비디오 생성기로 1억 초 이상의 영상 생성',
+            summary:     'Freebeat가 BPM·에너지 분석을 기반으로 음악 구조에 맞춰 영상을 자동 편집하는 AI 뮤직비디오 생성기를 개발해 100만 크리에이터에게 보급했어요.',
+            body:        '<p>Freebeat의 공동창업자이자 CEO 브루스 첸이 기존 AI 영상 도구들이 음악을 무시하는 근본적인 문제를 해결하기 위해 \'뮤직 퍼스트(music-first)\' 방식의 AI 뮤직비디오 생성기를 개발한 배경을 공개했어요. 전문 뮤직비디오 제작에는 5,000달러~5만 달러와 수 주의 시간이 필요한데, 기존 AI 도구들은 음악 없이 짧은 클립을 따로 생성해 수동으로 이어 붙여야 해서 뮤지션의 실제 작업 흐름에 맞지 않았어요. Freebeat는 음악 분석을 영상 생성의 출발점으로 삼아 이 문제를 해결했어요.</p><p>핵심 기술은 BPM 감지, 온셋 맵핑, 에너지 곡선 분석, 섹션 경계 인식을 통해 음악 구조에 맞게 스토리보드를 생성하고 영상을 편집하는 방식이에요. 특히 5단계 비트 양자화 시스템으로 볼륨 피크가 아닌 음악적 프레이징에 맞춰 장면을 전환하기 때문에, 강렬한 코러스와 단순히 소리가 큰 구간을 구분해 처리해요. 80컷 이상 연속 장면에서도 캐릭터 일관성을 유지하고, 100개 이상 언어에서 약 90% 립싱크 정확도를 달성해요. 완성된 6분 1080p 영상 생성에 약 5분밖에 걸리지 않아요.</p><p>2024년 설립된 Freebeat는 출시 이후 200개 이상 국가에서 100만 크리에이터가 총 10억 초(1억 초 이상) 이상의 뮤직비디오를 생성했어요. Suno·Udio 같은 AI 음악 플랫폼과 연계해 사용할 수 있어, 인디 뮤지션부터 게임 트레일러 영상 제작자까지 저비용으로 고품질 뮤직비디오를 제작할 수 있는 새로운 가능성을 열어줘요.</p><p>원문: <a href="https://musically.com/2026/05/29/why-we-built-an-ai-music-video-generator-that-listens-to-songs/">Music Ally</a></p>',
+            source:      'Music Ally',
+            publishedAt: '2026.05.31',
+            hue:         265,
+            image:       'https://i0.wp.com/musically.com/wp-content/uploads/2026/05/header-image.jpeg?fit=780%2C487&ssl=1',
+            url:         'https://musically.com/2026/05/29/why-we-built-an-ai-music-video-generator-that-listens-to-songs/',
+        },
         {
             id:          'art-66dcb18c-2026-05',
             tab:         'art',
