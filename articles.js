@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-ec6ef0cb-2026-06',
+            tab:         'games',
+            headline:    'DLSS 4.5 레이 재구성, Blender 5.3에 공식 통합 예정',
+            summary:     'NVIDIA가 Blender 5.3에 DLSS 4.5 레이 재구성을 통합해 실시간으로 거의 최종 렌더 품질을 확인할 수 있게 돼요.',
+            body:        '<p>NVIDIA가 컴퓨텍스 2026 기조연설에서 DLSS 4.5 레이 재구성(Ray Reconstruction) 기술을 3D 소프트웨어 Blender 5.3에 공식 통합한다고 발표했어요. 앤드류 프라이스가 SIGGRAPH 2025에서 공개한 데모 영상이 큰 화제를 모은 이후 출시 시점이 불분명했는데, 이번 발표로 올가을 Blender 5.3에 Cycles 렌더러의 새 디노이저 옵션으로 포함된다는 일정이 확정됐어요. 차세대 트랜스포머 모델을 기반으로 하며, 기존 OptiX 디노이저와 함께 선택적으로 사용할 수 있어요.</p><p>DLSS 4.5 레이 재구성은 레이트레이싱·패스트레이싱 환경에서 이미지 품질을 크게 높여줘요. 고스팅 현상이 줄어들고 조명 정확도와 시간적 안정성이 향상되어, 뷰포트에서 거의 최종 렌더 수준의 결과물을 실시간으로 확인할 수 있어요. 이전까지 Blender에서 DLSS를 사용하려면 복잡한 외부 플러그인 설정이 필요했지만, 5.3부터는 기본 기능으로 누구나 손쉽게 활성화할 수 있게 됐어요.</p><p>이 기능이 가장 큰 효과를 발휘하는 곳은 조명(Lighting)과 룩-디브(Look-Dev) 워크플로예요. 전체 렌더가 완료되기를 기다리지 않고도 인터랙티브하게 씬을 조정하면서 즉각적인 피드백을 받을 수 있어, 게임 아트나 영화 CG처럼 사실적인 조명이 핵심인 프로젝트에서 반복 작업 시간이 크게 줄어들어요. 단순 성능 업그레이드를 넘어 3D 아티스트의 작업 방식 자체를 바꿔줄 변화로 기대돼요.</p><p>원문: <a href="https://80.lv/articles/dlss-is-officially-coming-to-blender-5-3">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.06.03',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/48610/images/6a1eb784512cf/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/dlss-is-officially-coming-to-blender-5-3',
+        },
+        {
+            id:          'games-dac2bb0e-2026-06',
+            tab:         'games',
+            headline:    'DLSS 4.5, UE5 플러그인으로 출시 — NVIDIA ACE, 다국어 AI NPC 지원 추가',
+            summary:     'NVIDIA가 UE5용 DLSS 4.5 플러그인과 201개 언어를 지원하는 다국어 AI NPC 기능을 컴퓨텍스 2026에서 공개했어요.',
+            body:        '<p>NVIDIA가 컴퓨텍스 2026에서 언리얼 엔진 5(UE5)용 DLSS 4.5 레이 재구성 플러그인을 공개하고, AI NPC 플랫폼 NVIDIA ACE에 대규모 다국어 음성 지원 기능을 추가했어요. UE5 플러그인은 기존 멀티 프레임 생성 외에 다이나믹 멀티 프레임 생성(Dynamic MFG)과 최대 6배 멀티 프레임 생성 모드를 새롭게 지원해요. DLSS 4.5의 2세대 트랜스포머 모델은 이전 세대보다 35% 높은 컴퓨팅 성능과 20% 더 많은 파라미터로 조명 정확도·움직임 선명도·시간적 안정성을 개선해요.</p><p>ACE 쪽에서 특히 주목할 부분은 다국어 AI 대화 기능이에요. NVIGI SDK 1.6을 통해 201개 언어를 지원하는 Qwen 3.5 언어 모델, 25개 언어 음성 인식이 가능한 Riva Parakeet, 24개 언어 합성을 지원하는 Chatterbox TTS 모델이 탑재됐어요. 이를 통해 게임 내 NPC가 플레이어의 언어에 맞춰 자연스럽게 대화를 나눌 수 있게 돼요.</p><p>이번 업데이트로 게임 개발에서 두 가지 큰 변화가 기대돼요. 렌더링 측면에서는 UE5 프로젝트에 DLSS 4.5 최신 기능을 바로 적용해 높은 품질과 성능 두 가지를 동시에 챙길 수 있어요. AI NPC 측면에서는 방대한 수작업 현지화 없이도 전 세계 플레이어에게 모국어로 대화하는 생동감 있는 캐릭터를 제공할 수 있어, 글로벌 게임 개발의 문턱이 한층 낮아질 것으로 보여요.</p><p>원문: <a href="https://pokde.net/system/pc/gpu/computex-2026-dlss-4-5-ray-recon">Pokde.Net</a></p>',
+            source:      'Pokde.Net',
+            publishedAt: '2026.06.03',
+            hue:         30,
+            image:       'https://cdn.pokde.net/wp-content/uploads/2026/06/02223844/dlss45rrcover-860x452.jpg',
+            url:         'https://pokde.net/system/pc/gpu/computex-2026-dlss-4-5-ray-recon',
+        },
+        {
             id:          'games-01a3c07e-2026-05',
             tab:         'games',
             headline:    'PFTrack 26.05, 단일 카메라 영상에서 3D 포인트 클라우드 및 가우시안 스플래팅 지원 추가',
@@ -1304,6 +1328,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-361e3865-2026-06',
+            tab:         'art',
+            headline:    '마이크로소프트 빌드 2026: 자체 AI 이미지 생성 모델 MAI-Image-2.5 공개',
+            summary:     '마이크로소프트가 빌드 2026에서 자체 이미지 생성 모델 MAI-Image-2.5를 포함한 AI 모델 7종을 공개했어요.',
+            body:        '<p>마이크로소프트가 빌드 2026에서 자체 개발한 AI 모델 7종을 Azure AI 파운드리 플랫폼에 공개했어요. 창작 도구 분야에서 가장 주목받는 것은 텍스트→이미지와 이미지→이미지를 모두 지원하는 이미지 생성 모델 MAI-Image-2.5예요. 이 모델은 아레나 AI 리더보드에서 텍스트→이미지 부문 3위, 이미지→이미지 부문 2위에 오르며 경쟁력을 인정받았고, 이미 파워포인트에 탑재되어 있으며 원드라이브에도 곧 확대 적용될 예정이에요.</p><p>이번에 공개된 모델 라인업은 이미지 생성 외에도 다양한 분야를 아우르고 있어요. 추론 모델 MAI-Thinking-1은 350억 활성 파라미터와 25만 6천 토큰 컨텍스트 창을 갖추고 있고, MAI-Code-1-Flash는 코딩 전용(50억 파라미터), MAI-Voice-2는 15개 이상 언어 음성 복제, MAI-Transcribe-1.5는 43개 언어 전사를 지원해요. 마이크로소프트 AI CEO 무스타파 술레이만은 개발자가 모델 가중치를 직접 튜닝할 수 있다고 강조하며 깊은 커스터마이제이션 가능성을 내세웠어요.</p><p>이번 발표는 마이크로소프트가 OpenAI 의존에서 벗어나 자체 AI 스택을 본격 구축하고 있다는 신호로 읽혀요. MAI-Image-2.5가 파워포인트에 이어 원드라이브에도 확대될 예정이고, 파운드리를 통해 기업·개발자 파트너가 직접 접근·튜닝할 수 있게 되면서, 이미지 생성 도구 시장에서 마이크로소프트의 영향력이 더욱 커질 것으로 보여요.</p><p>원문: <a href="https://winbuzzer.com/2026/06/02/microsoft-adds-seven-mai-models-to-foundry-for-developers-xcxwbn/">Winbuzzer</a></p>',
+            source:      'Winbuzzer',
+            publishedAt: '2026.06.03',
+            hue:         220,
+            image:       'https://cdn-chilj.nitrocdn.com/gYFaTcLxknXlucWgXPjHDdhAuyobJjHx/assets/images/optimized/rev-c91401d/winbuzzer.com/wp-content/uploads/2026/06/Microsoft-MAI-Plazground-1067x.jpg',
+            url:         'https://winbuzzer.com/2026/06/02/microsoft-adds-seven-mai-models-to-foundry-for-developers-xcxwbn/',
+            urls: [
+                { label: '공식 발표', href: 'https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/' },
+            ],
+        },
+        {
+            id:          'art-cc68307d-2026-06',
+            tab:         'art',
+            headline:    '어도비-NVIDIA 파트너십: 포토샵·프리미어, RTX Spark로 AI 성능 2배 향상',
+            summary:     '어도비와 NVIDIA가 RTX Spark 슈퍼칩으로 포토샵·프리미어 AI·편집·색 보정 속도를 최대 2배 높인다고 발표했어요.',
+            body:        '<p>어도비와 NVIDIA가 컴퓨텍스 2026에서 창작 도구 파트너십을 공식 발표하며, 새로운 RTX Spark 슈퍼칩으로 포토샵과 프리미어를 최적화한다고 밝혔어요. RTX Spark의 통합 메모리, 블랙웰 GPU, TensorRT를 활용해 AI·편집·색 보정·이펙트 처리 속도를 최대 2배 끌어올리는 것이 핵심이에요. 두 회사의 전략적 파트너십은 올 초 처음 발표됐고, 이번 컴퓨텍스에서 구체적인 기능 업데이트 내용이 공개됐어요.</p><p>앱별로 살펴보면, 프리미어는 RTX Spark 기반의 완전히 새로운 비디오 파이프라인을 탑재해 복잡한 타임라인 렌더링 속도와 색 보정 실시간 성능이 크게 향상돼요. 포토샵은 GPU 가속 컴포지팅을 중심으로 아키텍처를 재설계해 라이브 필터, HDR, 오일·수채화 브러시 등 AI 네이티브 기능이 더 자연스럽고 즉각적으로 반응해요. 섭스턴스 3D 페인터와 스테이저도 RTX Spark 네이티브 지원을 받아 텍스처링과 씬 제작 워크플로가 한층 빨라질 예정이에요.</p><p>이 파트너십은 게임 아트·영상 편집·3D 텍스처링 등 다양한 창작 분야에서 실질적인 속도 향상을 가져다줄 것으로 기대돼요. 프리미어와 포토샵에서는 에이전트와 함께 제작·편집·디자인을 진행하는 기능도 확장되어, AI가 협업 도구로 자리잡는 흐름이 더욱 뚜렷해질 것 같아요. 업데이트는 연내 순차적으로 적용될 예정이에요.</p><p>원문: <a href="https://www.thetechoutlook.com/news/apps/adobe-partners-with-nvidia-to-optimize-photoshop-and-premiere-with-rtx-spark-superchip/">The Tech Outlook</a></p>',
+            source:      'The Tech Outlook',
+            publishedAt: '2026.06.03',
+            hue:         290,
+            image:       'https://www.thetechoutlook.com/wp-content/uploads/2026/06/Adobe-and-nVidea.jpg',
+            url:         'https://www.thetechoutlook.com/news/apps/adobe-partners-with-nvidia-to-optimize-photoshop-and-premiere-with-rtx-spark-superchip/',
+        },
         {
             id:          'art-a5cb572a-2026-05',
             tab:         'art',
