@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-47dbe0d3-2026-06',
+            tab:         'games',
+            headline:    'Hyper3D Rodin Gen-2.5, 게임·VFX 파이프라인에 프로덕션급 AI 3D 생성 제어 기능 선보여',
+            summary:     'Hyper3D의 AI 3D 생성 플랫폼 Rodin Gen-2.5가 적응형 제어 기능과 게임 엔진 연동을 갖춘 프로덕션급 도구로 발전했어요.',
+            body:        '<p>Hyper3D가 AI 3D 생성 플랫폼 Rodin Gen-2.5를 공개하며 게임·VFX 현장에서 바로 쓸 수 있는 \'제어 가능성\'을 대폭 강화했어요. 새롭게 도입된 \'적응형 사고 노력(Adaptive Thinking Effort)\' 시스템은 아티스트가 생성 속도와 기하학적 디테일을 워크플로 상황에 맞게 조절할 수 있게 해 줘요. 또한 스마트 로우폴리 토폴로지 생성과 3D 네이티브 텍스처링이 추가돼, AI가 만든 에셋이 실제 파이프라인에서 요구하는 형태를 처음부터 갖출 수 있게 됐어요.</p><p>Rodin Gen-2.5는 Blender·Maya·Unreal Engine·Unity와의 직접 연동을 지원하고, 이미지·텍스트 기반 3D 생성 외에도 부품 단위 편집과 기존 메시 가져오기를 결합한 Gen-2 Edit 기능도 포함돼 있어요. 80 Level과의 인터뷰에서 Hyper3D CTO QX Zhang은 "AI 3D 도구가 슬롯머신처럼 운에 맡기던 시대는 끝나야 한다"며 아티스트와 협업하는 도구로서의 방향성을 강조했어요. 2023년 플랫폼 출시 이후 SIGGRAPH 2025 최우수 논문을 포함해 다수의 연구 성과를 배경으로, 이번 업데이트는 AI 3D 생성이 실제 프로덕션 현장에 한 걸음 더 가까워졌음을 보여주는 사례예요.</p><p>원문: <a href="https://80.lv/articles/how-hyper3d-rodin-gen-2-5-is-bringing-production-level-control-to-ai-3d-generation">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.06.04',
+            hue:         220,
+            image:       'https://cdn.80.lv/api/upload/meta/48504/images/6a204c7421bf0/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/how-hyper3d-rodin-gen-2-5-is-bringing-production-level-control-to-ai-3d-generation',
+            urls: [
+                { label: '공식 사이트', href: 'https://hyper3d.ai/' },
+            ],
+        },
+        {
+            id:          'games-07ee6c05-2026-06',
+            tab:         'games',
+            headline:    'Voicemod, NPU 기반 온디바이스 AI 음성 변환으로 게임 플레이어 정체성의 미래를 제시',
+            summary:     'Voicemod가 클라우드 없이 기기에서 직접 동작하는 NPU 기반 AI 음성 변환 기술을 공개하며, 목소리를 게임 정체성의 새 영역으로 제안했어요.',
+            body:        '<p>음성 변환 플랫폼 Voicemod가 80 Level과의 인터뷰에서 NPU 기반 온디바이스 AI 음성 변환 기술을 상세히 소개했어요. CEO 하이메 보쉬는 기존 DSP 방식이 목소리 위에 효과를 덧씌우는 수준이었다면, AI는 음성의 음색 자체인 \'음성 DNA\'를 변환한다고 설명했어요. Qualcomm과의 파트너십을 통해 NPU 추론 워크로드를 분리 처리해 CPU·GPU 부담 없이 실시간 저지연 변환이 가능하며, 클라우드 전송 없이 기기 안에서 완결되기 때문에 개인정보 보호와 응답 속도 두 가지를 모두 잡는다고 해요.</p><p>Voicemod는 Elgato Wave Link에 네이티브 VST 이펙트로 통합되면서 별도 앱 없이 기존 오디오 파이프라인 안에서 바로 쓸 수 있게 됐고, 게임 개발사가 직접 통합할 수 있는 SDK도 공개했어요. 하이메 보쉬는 "플레이어가 아바타와 스킨을 고르듯 목소리도 선택하는 시대가 오고 있다"고 강조했는데, 멀티플레이 환경에서 음성이 새로운 정체성 표현 수단이 될 가능성을 보여주는 시도예요. 게임사 입장에서는 SDK 통합을 통해 플레이어 커스터마이징 요소를 목소리 영역으로 확장할 수 있는 실질적인 선택지가 생긴 셈이에요.</p><p>원문: <a href="https://80.lv/articles/real-time-voice-transformation-and-the-future-of-online-player-identity">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.06.04',
+            hue:         30,
+            image:       'https://cdn.80.lv/api/upload/meta/48636/images/6a2085a08dbac/contain_1200x630.png',
+            url:         'https://80.lv/articles/real-time-voice-transformation-and-the-future-of-online-player-identity',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.voicemod.net/' },
+            ],
+        },
+        {
             id:          'games-ec6ef0cb-2026-06',
             tab:         'games',
             headline:    'DLSS 4.5 레이 재구성, Blender 5.3에 공식 통합 예정',
@@ -823,6 +853,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-7dbb1d82-2026-06',
+            tab:         'industry',
+            headline:    '툼 레이더: 레거시 오브 아틀란티스, 개발 초기 단계에서 생성형 AI 도구 사용 인정',
+            summary:     'Crystal Dynamics·Flying Wild Hog가 개발 중인 툼 레이더 신작이 스팀 페이지에 생성형 AI 도구 사용 사실을 공개해 커뮤니티 반응이 엇갈리고 있어요.',
+            body:        '<p>Crystal Dynamics와 Flying Wild Hog가 공동 개발 중인 \'툼 레이더: 레거시 오브 아틀란티스\'의 스팀 페이지에 AI 사용 고지문이 등장해 업계의 이목이 집중됐어요. 공개된 내용에 따르면 "AI 보조 도구는 초기 탐색과 임시 개발 콘텐츠를 지원하는 데 사용됐으며, AI가 생성한 에셋은 모두 인간 팀이 교체하거나 다듬었다"고 명시돼 있어요. Push Square는 AI 사용량 자체는 최소 수준이겠지만, 이 같은 투명한 공개 자체가 주목할 만한 흐름이라고 평가했어요.</p><p>커뮤니티 반응은 크게 갈렸어요. 일부는 투명성에 박수를 보내면서도 불편함을 드러냈고, 다른 이들은 초기 개발 단계의 AI 보조 활용이 이미 업계 전반의 관행이라고 지적했어요. 아마존이 산하 스튜디오에 AI 활용을 사실상 강제했다는 주장도 나오며 논란이 확산됐어요. 서머 게임 페스트를 앞두고 업계 전반에서 비슷한 AI 공개가 이어질 것이라는 전망 속에, 게임 개발에서 AI 사용을 어느 선에서 어떻게 알릴지에 대한 기준 논의가 본격화하고 있어요.</p><p>원문: <a href="https://www.pushsquare.com/news/2026/06/sound-the-alarm-tomb-raider-legacy-of-atlantis-partially-developed-using-ai">Push Square</a></p>',
+            source:      'Push Square',
+            publishedAt: '2026.06.04',
+            hue:         10,
+            image:       'https://images.pushsquare.com/1854d33e6a479/sound-the-alarm-tomb-raider-legacy-of-atlantis-1.900x.jpg',
+            url:         'https://www.pushsquare.com/news/2026/06/sound-the-alarm-tomb-raider-legacy-of-atlantis-partially-developed-using-ai',
+        },
+        {
+            id:          'industry-3f439b8f-2026-06',
+            tab:         'industry',
+            headline:    '서머 게임 페스트 주간, AI 공개 물결 예고…"저 트레일러, AI 썼네" 반응 이어질 듯',
+            summary:     '서머 게임 페스트 주간을 맞아 다수 게임의 AI 사용 공개가 잇따를 것으로 예상되며, PC Gamer가 커뮤니티의 피로감과 새로운 현실을 분석했어요.',
+            body:        '<p>서머 게임 페스트 주간이 시작된 시점에 PC Gamer가 앞으로 발표될 게임들의 AI 공개 물결을 예고하는 분석 기사를 냈어요. 툼 레이더: 레거시 오브 아틀란티스의 스팀 AI 고지문을 계기로, 이번 주 공개될 여러 타이틀에서 비슷한 공개가 이어질 것이라고 전망했어요. Crystal Dynamics는 "AI 도구는 아이디어 반복을 빠르게 돕는 데 썼으며, 최종 제품에 들어가는 모든 콘텐츠는 인간이 제작한다"는 후속 성명을 발표했지만, PC Gamer는 그렇다면 처음부터 AI 없이 작업하는 것과 무엇이 다른지 의문을 제기했어요.</p><p>커뮤니티의 반응은 실망, 체념, 수용이 뒤섞인 복잡한 양상을 보였어요. PC Gamer는 "분노와 항의가 이어졌지만 개발사들은 계속 AI를 활용했고, 어느 순간 플레이어들은 지쳐 버렸다"며 이 현상을 \'부정→분노→협상\' 단계에 빗대었어요. 앞으로 게임 발표를 볼 때마다 기대감 뒤에 \'AI를 썼을까?\'라는 의심이 따라붙는 사이클이 일상이 될 수 있다는 점에서, AI 사용 공개 기준을 어떻게 정할지에 대한 업계 차원의 논의가 필요한 시점이에요.</p><p>원문: <a href="https://www.pcgamer.com/software/ai/summer-game-fest-is-here-so-get-ready-for-a-lot-of-ugh-that-game-with-the-cool-trailer-used-ai/">PC Gamer</a></p>',
+            source:      'PC Gamer',
+            publishedAt: '2026.06.04',
+            hue:         350,
+            image:       'https://cdn.mos.cms.futurecdn.net/Lbizrv9fd5HBKk8EnRW29C-2560-80.jpg',
+            url:         'https://www.pcgamer.com/software/ai/summer-game-fest-is-here-so-get-ready-for-a-lot-of-ugh-that-game-with-the-cool-trailer-used-ai/',
+        },
+        {
             id:          'industry-d2ca4a21-2026-05',
             tab:         'industry',
             headline:    'Amazon MGM Studios, AI 제작 플랫폼 \'Project Nara\'로 애니메이션 3편 제작 착수',
@@ -1328,6 +1382,21 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-43a9df5b-2026-06',
+            tab:         'art',
+            headline:    '거장 마틴 스코세이지, AI 이미지 스타트업 블랙 포레스트 랩스 어드바이저 합류…새 영화 스토리보드에 FLUX 활용',
+            summary:     '영화 거장 마틴 스코세이지가 AI 이미지 생성 스타트업 블랙 포레스트 랩스의 어드바이저로 합류하며 FLUX를 스토리보드에 활용하고 있다고 밝혔어요.',
+            body:        '<p>83세의 영화 거장 마틴 스코세이지가 독일 AI 이미지 생성 스타트업 블랙 포레스트 랩스(Black Forest Labs)의 어드바이저로 합류했어요. 블랙 포레스트 랩스는 FLUX AI 이미지 생성 모델을 만든 회사로, Stability AI 출신 창업자들이 세운 스타트업이에요. 스코세이지는 스타트업 투자사 BroadLight Capital을 통해 파트너십을 맺었으며, 공개된 영상에서 동유럽의 겨울 마을 장면을 프롬프트로 생성하는 과정을 직접 시연했어요.</p><p>스코세이지는 "70년간 직접 스토리보드를 그려 왔는데, 머릿속의 장면을 스태프에게 전달하는 것이 늘 과제였다"며 "이 도구로 프리프로덕션 단계에서 시간과 비용을 절약하면서도 품질을 타협하지 않고 빠르게 이야기를 나눌 수 있었다"고 말했어요. 그는 또 "영화라는 125년 된 매체도 젊고, 기술과 스토리텔링의 교차점에서 더 풍부한 관객 경험을 만들 수 있다"고 강조했어요. 제임스 카메론, 스티븐 소더버그에 이어 스코세이지까지 AI를 수용하면서, 할리우드 거장들의 AI 도입이 가속화하고 있다는 신호로 읽혀요.</p><p>원문: <a href="https://petapixel.com/2026/06/03/director-martin-scorsese-joins-ai-image-startup-black-forest-labs/">PetaPixel</a></p>',
+            source:      'PetaPixel',
+            publishedAt: '2026.06.04',
+            hue:         280,
+            image:       'https://petapixel.com/assets/uploads/2026/06/Martin-Scorsese.jpg',
+            url:         'https://petapixel.com/2026/06/03/director-martin-scorsese-joins-ai-image-startup-black-forest-labs/',
+            urls: [
+                { label: '공식 발표', href: 'https://bfl.ai/martin-scorsese-bfl-advisor' },
+            ],
+        },
         {
             id:          'art-361e3865-2026-06',
             tab:         'art',
