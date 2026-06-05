@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-ade37cb8-2026-06',
+            tab:         'games',
+            headline:    'Meshy, 세계 최초 AI 3D 에이전트 \'Meshy 3D Agent\' 베타 출시',
+            summary:     'Meshy가 대화 한 번으로 아이디어를 3D 모델까지 이어주는 세계 최초 AI 3D 에이전트를 출시했어요.',
+            body:        '<p>Meshy가 2026년 6월 4일, 세계 최초의 AI 3D 창작 에이전트 \'Meshy 3D Agent Beta\'를 공식 출시했어요. 기존 텍스트-to-3D 도구들이 프롬프트 한 번에 결과물 하나를 생성하는 단발성 방식이었다면, Meshy 3D Agent Beta는 채팅 대화 안에서 아이디어를 탐색하고 여러 시각적 콘셉트를 배치로 생성해 원하는 방향으로 골라가며 최종 3D 파일까지 완성하는 \'대화형 3D 창작 워크플로우\'를 구현했어요. 사진, 스케치, 텍스트 설명, 이야기 등 다양한 입력을 받아들이며 에이전트가 창작 방향을 제안하고, 콘셉트 이미지를 생성한 뒤 선택한 이미지를 바로 3D 모델로 변환해줘요.</p><p>3D 프린팅 메이커라면 아이 그림이나 반려동물 사진에서 출발해 맞춤 출력물을 기획할 수 있고, 인디 게임 개발자는 같은 아트 방향성을 공유하는 프롭·캐릭터·환경 에셋 세트를 대화 한 번으로 일괄 생성할 수 있어요. 3D 창작·프린팅 관련 질문도 채팅 안에서 바로 물어볼 수 있어 전문 소프트웨어 없이도 아이디어에서 실물 3D 파일까지 이어지는 경험이 가능해졌어요. 텍스트-to-3D가 단발 생성에 머물렀던 시대를 넘어 \'에이전틱 3D 생성\' 시대를 열었다는 점에서 업계 주목을 받고 있으며, 향후 캐릭터 리깅·애니메이션, DCC 및 슬라이서 도구 연동 등 기능 확장도 예정되어 있어요.</p><p>원문: <a href="https://www.manilatimes.net/2026/06/04/tmt-newswire/pr-newswire/meshy-launches-3d-agent-beta-the-worlds-first-ai-agent-for-3d-creation/2359047">PR Newswire / Manila Times</a></p>',
+            source:      'PR Newswire / Manila Times',
+            publishedAt: '2026.06.05',
+            hue:         30,
+            image:       'https://www.manilatimes.net/manilatimes/uploads/images/2026/06/04/1086198.jpg',
+            url:         'https://www.manilatimes.net/2026/06/04/tmt-newswire/pr-newswire/meshy-launches-3d-agent-beta-the-worlds-first-ai-agent-for-3d-creation/2359047',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.meshy.ai/' },
+            ],
+        },
+        {
+            id:          'games-92a9d6b5-2026-06',
+            tab:         'games',
+            headline:    '언리얼 엔진 안에서 Claude·Meshy·Tripo AI를 바로 쓴다 — Nwiro Integration Kit 출시',
+            summary:     'Nwiro가 Claude Code·Meshy AI 등 서드파티 AI 서비스를 언리얼 엔진에 직접 연결하는 Integration Kit을 출시했어요.',
+            body:        '<p>Nwiro가 2026년 6월 4일, Claude Code, Codex CLI, Meshy AI, Tripo AI 등 다양한 AI 서비스를 언리얼 엔진 내부에 직접 연결해주는 \'Nwiro Integration Kit\'을 공개했어요. 기존에는 AI 도구를 쓰려면 브라우저 탭과 엔진을 수십 번씩 오가며 콘텐츠를 복사-붙여넣기 해야 했는데, 이 키트를 설치하면 언리얼 엔진 안에서 그 과정 없이 AI 기능을 바로 쓸 수 있어요. 프로그래머는 Claude Code나 Codex CLI로 스크립팅·디버깅을 가속하고, 아티스트는 Meshy AI나 Tripo AI로 에셋을 생성할 수 있어요.</p><p>가장 눈에 띄는 특징은 \'내 AI 서비스 직접 연결(bring-your-own-AI)\' 방식이에요. 특정 AI 모델이나 구독 생태계에 종속되지 않고, 이미 구독하고 있는 서비스를 그대로 가져와 연결할 수 있어요. 이미 여러 AI 구독을 쓰는 팀이라면 비용 중복 없이 작업 효율을 높일 수 있는 셈이에요. 또한 추가 월정액 없이 일회성 구매로 제공되어, 도구가 늘어날수록 복잡해지는 구독 관리 부담도 줄여줘요. Nwiro Integration Kit은 현재 Fab에서 구매 가능하며 향후 더 많은 AI 서비스 연동이 예정되어 있어요.</p><p>원문: <a href="https://80.lv/articles/connect-your-favorite-ai-models-directly-into-unreal-engine-with-nwiro-integration-kit">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.06.05',
+            hue:         220,
+            image:       'https://cdn.80.lv/api/upload/meta/48566/images/6a19c8c66874a/contain_1200x630.png',
+            url:         'https://80.lv/articles/connect-your-favorite-ai-models-directly-into-unreal-engine-with-nwiro-integration-kit',
+        },
+        {
             id:          'games-47dbe0d3-2026-06',
             tab:         'games',
             headline:    'Hyper3D Rodin Gen-2.5, 게임·VFX 파이프라인에 프로덕션급 AI 3D 생성 제어 기능 선보여',
@@ -853,6 +880,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-7e7d1d27-2026-06',
+            tab:         'industry',
+            headline:    '섬머 게임 페스트 개막, AI 공시가 줄줄이… 툼 레이더 신작이 첫 타자',
+            summary:     'SGF 개막과 동시에 Crystal Dynamics의 툼 레이더 신작 스팀 페이지에 AI 사용 공시가 등장해 팬들 사이에서 논란이 일었어요.',
+            body:        '<p>2026년 섬머 게임 페스트 개막과 동시에 Crystal Dynamics의 《툼 레이더: 레거시 오브 아틀란티스》 스팀 페이지에 AI 콘텐츠 공시가 등장했어요. 소니 스테이트 오브 플레이에서 트레일러가 공개되고 24시간도 안 되어 나타난 이 공시에는 \'개발 초기 탐구와 임시 콘텐츠 제작에 AI 도구를 활용했으며, AI가 생성한 에셋은 인간 아티스트가 수정하거나 교체했다\'고 적혀 있어요. Crystal Dynamics는 추가 성명에서 최종 제품의 모든 콘텐츠는 \'인간이 직접 제작한 것\'임을 강조했어요.</p><p>팬들의 반응은 엇갈렸어요. 초기 프로토타이핑에 AI를 쓰고 최종 단계에서 인간이 다듬은 것과, AI 생성 에셋이 최종 제품에 그대로 들어가는 것은 다르다는 시각도 있고, 어떤 팬들은 투명하게 공시했다는 점 자체는 긍정적으로 봐요. 비슷한 패턴은 최근 《크림슨 데저트》에서도 반복된 바 있어요. 스튜디오가 AI 사용을 인정하고, 초기·임시 단계였음을 강조하고, 인간 작업물임을 확인하는 공시 형식이 업계의 정형화된 대응법이 되어가고 있어요. 게임이 공개될 때마다 \'트레일러 감상 → 스팀 AI 공시 확인\'이 하나의 루틴이 된 지금, 논의의 중심은 \'AI를 써야 하는가\'에서 \'어느 정도 사용이 허용 가능한가\'로 이동하고 있어요. 한편 툼 레이더 신작은 2027년 2월 12일로 출시가 연기됐어요.</p><p>원문: <a href="https://games.gg/news/summer-game-fest-ai-disclosures-hype/">GAMES.GG</a></p>',
+            source:      'GAMES.GG',
+            publishedAt: '2026.06.05',
+            hue:         10,
+            image:       'https://assets.games.gg/summer_game_fest_ai_disclosures_hype_og_24b95572c1.webp',
+            url:         'https://games.gg/news/summer-game-fest-ai-disclosures-hype/',
+        },
+        {
             id:          'industry-7dbb1d82-2026-06',
             tab:         'industry',
             headline:    '툼 레이더: 레거시 오브 아틀란티스, 개발 초기 단계에서 생성형 AI 도구 사용 인정',
@@ -1382,6 +1421,48 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-6c2ad580-2026-06',
+            tab:         'art',
+            headline:    'Ideogram 4.0·Reve 2.0 동시 출시 — AI 이미지 생성, \'프롬프트\'에서 \'레이아웃\'으로 진화',
+            summary:     'Ideogram 4.0과 Reve 2.0이 동시 출시되며 AI 이미지 생성의 패러다임이 \'프롬프트 재시도\'에서 \'레이아웃 직접 편집\'으로 전환되고 있어요.',
+            body:        '<p>2026년 6월 4일, Ideogram이 오픈소스 이미지 모델 Ideogram 4.0을 공개하고 Reve도 4K 이미지 생성 모델 Reve 2.0을 선보이며 AI 이미지 생성 시장에 큰 변화를 가져왔어요. 두 모델 모두 원하는 결과가 나올 때까지 프롬프트를 반복하는 \'슬롯머신 방식\'을 넘어, 레이아웃·타이포그래피·특정 영역을 직접 제어해 이미지를 편집하는 구조를 도입했어요. Reve 2.0은 이미지를 \'코드처럼\' 레이아웃 재작성 방식으로 편집하고, Ideogram 4.0은 JSON을 통해 영역별 세밀한 제어를 지원해요.</p><p>성능 면에서도 주목할 만한 결과가 나왔어요. Ideogram 4.0은 DesignArena 오픈소스 부문에서 1위를 차지하며 OpenAI와 Google의 클로즈드 모델 바로 아래에 위치했고, 텍스트 렌더링·타이포그래피·그래픽 디자인 분야에서 전문 디자이너들의 선호를 받았어요. Reve 2.0은 텍스트-투-이미지 리더보드 전체 2위를 차지했어요. 이제 원하는 부분만 골라 수정할 수 있는 세밀한 편집이 가능해져, 게임 컨셉 아트·UI 목업·영상 스토리보드까지 전문 크리에이터 워크플로우에 빠르게 파고들 것으로 보여요. Ideogram 4.0은 오픈 가중치로 공개되어 오픈소스도 최전선 모델과 경쟁할 수 있음을 입증했어요.</p><p>원문: <a href="https://www.therundown.ai/p/ideogram-and-reve-rethink-how-ai-images-get-made">The Rundown AI</a></p>',
+            source:      'The Rundown AI',
+            publishedAt: '2026.06.05',
+            hue:         270,
+            image:       'https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2828fd11-d79e-4b97-98b8-4e06655d2020/ideogram-reve.jpg?t=1780534279',
+            url:         'https://www.therundown.ai/p/ideogram-and-reve-rethink-how-ai-images-get-made',
+            urls: [
+                { label: '공개 가중치', href: 'https://github.com/ideogram-oss/ideogram4' },
+            ],
+        },
+        {
+            id:          'art-a509a788-2026-06',
+            tab:         'art',
+            headline:    '다빈치 리졸브 21.0 정식 출시 — AI 피부 보정·얼굴 에이징 등 새 AI 기능 탑재',
+            summary:     '블랙매직 디자인이 다빈치 리졸브 21.0을 출시했어요. AI 얼굴 에이징·디에이징, 잡티 제거 등 강력한 AI 뷰티 툴이 새롭게 탑재됐어요.',
+            body:        '<p>블랙매직 디자인이 2026년 6월 4일, 다빈치 리졸브 21.0 정식 버전을 출시했어요. 이번 업데이트의 가장 큰 변화는 무료 버전에도 추가된 포토 페이지로, 영상 뿐 아니라 정지 이미지까지 리졸브의 색 보정 도구와 이펙트로 편집할 수 있게 됐어요. Canon·Fujifilm·Nikon·Sony의 RAW 포맷을 지원하고 Lightroom 카탈로그도 가져올 수 있어, 영상과 사진을 하나의 툴에서 처리하려는 크리에이터들에게 실용적인 선택지가 생겼어요.</p><p>스튜디오 에디션에는 AI 기반 뷰티 툴 세트가 대거 추가됐어요. AI Blemish Removal은 얼굴의 잡티와 모공을 자동 제거하고, AI Face Age Transformer는 영상 속 얼굴을 추적해 슬라이더 하나로 나이를 올리거나 줄여줘요. 기존에는 3D와 컴포지팅 소프트웨어를 복잡하게 조합해야 가능했던 디에이징 작업을 간단한 2D 솔루션으로 처리할 수 있게 됐어요. 이 외에도 AI CineFocus(클릭으로 초점 설정), AI Motion Deblur(모션 블러 제거), AI UltraSharpen(선명화), AI IntelliSearch(미디어 풀 객체 검색) 등 AI 도구들이 영상·이미지 제작 전 과정을 빠르게 채우고 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/blackmagic-design-releases-davinci-resolve-21-0/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.05',
+            hue:         260,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/davinci-resolve-21-social.jpg',
+            url:         'https://www.cgchannel.com/2026/06/blackmagic-design-releases-davinci-resolve-21-0/',
+            urls: [
+                { label: '무료 다운로드', href: 'https://www.blackmagicdesign.com/products/davinciresolve' },
+            ],
+        },
+        {
+            id:          'art-b170b1a4-2026-06',
+            tab:         'art',
+            headline:    '소니 이노베이션 펀드, AI 저작권 보호 기업 Midnight Labs에 7자리 투자',
+            summary:     '소니 이노베이션 펀드가 AI 딥페이크·저작권 침해 자동 탐지 기업 Midnight Labs에 수백만 달러 규모 투자를 단행했어요.',
+            body:        '<p>소니의 투자 부문인 소니 이노베이션 펀드가 2026년 6월 4일, AI 기반 지식재산권(IP) 보호 전문 기업 Midnight Labs에 7자리 달러(수백만 달러) 규모 투자를 단행했어요. 아일랜드·도쿄·샌프란시스코에 거점을 둔 Midnight Labs는 딥페이크, 불법 유출 영화·음악, 만화 불법 공유, 연예인·임원 사칭 딥페이크 등 AI 생성 침해 콘텐츠를 자동 탐지해 삭제하는 플랫폼을 운영해요. 지금까지 28억 건 이상의 침해 콘텐츠를 제거했으며, 다크웹을 포함한 7,500만 개 이상의 소스를 실시간으로 스캔하고 법적 증빙 문서도 자동 생성해요.</p><p>소니는 이번 투자와 함께 자문 역할도 맡아 일본 및 아시아태평양 지역으로의 사업 확장을 지원할 예정이에요. 개인 창작자를 위한 서비스 Ceartas도 운영 중이며, 이름·목소리·외형 등의 권리 보호를 돕고 있어요. CEO 댄 퍼셀은 \'생성형 AI가 저작권 침해를 산업화했다\'고 강조하며, 단 하나의 딥페이크만으로도 \'즉각적이고 치명적인 피해\'가 발생할 수 있다고 밝혔어요. AI 창작 도구가 빠르게 확산되는 지금, IP 보호 기술에 대한 수요도 함께 폭발적으로 높아지는 추세예요. 엔터테인먼트 대기업이 콘텐츠 보호 스타트업에 직접 투자하는 흐름은 앞으로 더욱 가속화될 것으로 보여요.</p><p>원문: <a href="https://variety.com/2026/biz/news/ip-ai-firm-midnight-labs-sony-million-dollar-investment-1236766931/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.06.05',
+            hue:         350,
+            image:       'https://variety.com/wp-content/uploads/2023/10/Sony-Logo.jpg?w=1000&h=563&crop=1',
+            url:         'https://variety.com/2026/biz/news/ip-ai-firm-midnight-labs-sony-million-dollar-investment-1236766931/',
+        },
         {
             id:          'art-43a9df5b-2026-06',
             tab:         'art',
