@@ -880,6 +880,33 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-779eb331-2026-06',
+            tab:         'industry',
+            headline:    '세가, \'크레이지 택시: 월드 투어\' 개발에 생성형 AI 사용 공식 확인',
+            summary:     '세가가 \'크레이지 택시: 월드 투어\' Steam 페이지에 AI 생성 콘텐츠 고지를 추가하며 생성형 AI 활용을 공식 인정했어요.',
+            body:        '<p>세가가 2027년 출시 예정인 \'크레이지 택시: 월드 투어\'의 Steam 페이지에 AI 생성 콘텐츠 사용 고지를 추가하며 생성형 AI 활용 사실을 공식적으로 인정했어요. 이 게임은 2026년 Xbox 게임 쇼케이스에서 처음 공개됐으며, 원작 시리즈의 창시자인 칸노 켄지가 디렉터로 복귀한다는 소식과 함께 팬들의 큰 기대를 모았어요. 전 세계를 배경으로 한 글로벌 캠페인, 다양한 차량 커스터마이징, 멀티플레이어 모드 등 새로운 콘텐츠를 갖추고 전작의 화끈한 에너지를 현대적으로 재해석하겠다는 포부예요. AI 생성 콘텐츠 고지 문구는 Steam 페이지 공개 이후 발견됐으며, 세가는 이후 별도 공식 성명을 통해 더 구체적인 설명을 내놓았어요.</p><p>세가의 공식 입장에 따르면 생성형 AI는 개발자를 지원하는 보조 도구로만 사용됐으며, 주로 배경 오브젝트 같은 에셋 제작 과정에 활용됐어요. AI가 만들어 낸 에셋은 모두 개발팀의 직접 검수 및 승인 절차를 거쳤다는 점도 강조했어요. 처음 공개된 고지 문구에는 이 검수 과정에 대한 언급이 빠져 있었는데, Game Informer에 보낸 업데이트된 성명에서야 해당 내용이 추가됐어요. 성우·배우 등 퍼포머와 관련된 창작 작업에는 AI를 일절 사용하지 않았다고도 명확히 밝혔어요.</p><p>이번 발표는 AAA 스튜디오가 에셋 제작에 생성형 AI를 사용했음을 공식 문서로 인정한 초기 사례 중 하나로 주목받고 있어요. 업계에서는 AI 활용을 공식 인정하는 관행이 점차 확산되고 있는데, 고지 문구가 실제 활용 범위를 충분히 설명하지 않는다는 지적도 이어지고 있어요. 배경 에셋 일부에만 쓰인 건지, 아니면 게임 전반에 걸쳐 폭넓게 사용된 건지 파악하기 어렵다는 점에서 투명성 부족 문제가 제기되고 있어요. AI 콘텐츠 고지가 업계 표준으로 자리 잡아가는 흐름 속에서 세가의 이번 사례가 어떤 선례를 남길지 귀추가 주목돼요.</p><p>원문: <a href="https://www.shacknews.com/article/149519/crazy-taxi-world-tour-generative-ai-content-disclosure">Shacknews</a></p>',
+            source:      'Shacknews',
+            publishedAt: '2026.06.08',
+            hue:         30,
+            image:       'https://d1lss44hh2trtw.cloudfront.net/assets/article/2026/06/07/crazy-taxi-world-tour-generative-ai-content-disclosure_feature.jpg',
+            url:         'https://www.shacknews.com/article/149519/crazy-taxi-world-tour-generative-ai-content-disclosure',
+            urls: [
+                { label: '공식 사이트', href: 'https://store.steampowered.com/app/2924540/Crazy_Taxi_World_Tour/' },
+            ],
+        },
+        {
+            id:          'industry-52200e33-2026-06',
+            tab:         'industry',
+            headline:    '"크레이지 택시를 만드는 데 왜 AI가 필요해?" — 팬들의 쓴소리',
+            summary:     '세가의 AI 활용 발표 후 코타쿠가 \'왜 AI가 필요하냐\'는 비판 칼럼을 게재하며 업계의 불신을 대변했어요.',
+            body:        '<p>세가의 \'크레이지 택시: 월드 투어\' AI 활용 발표 직후, 코타쿠는 \'이 게임을 만드는 데 왜 생성형 AI가 필요하냐\'는 제목의 비판적 칼럼을 게재했어요. 기자 Rebekah Valentine은 오랫동안 기다려온 시리즈 부활 소식에 기대가 매우 컸지만, Steam 페이지에서 AI 생성 콘텐츠 고지 문구를 발견하는 순간 그 설렘이 한순간에 사라졌다고 솔직하게 털어놨어요. 세가는 AI를 \'개발자 지원 도구\'로 활용해 배경 에셋을 제작했고, 생성된 에셋은 개발팀의 검수를 거쳤다고 설명했지만, 칼럼은 이 설명이 결코 납득되지 않는다는 입장을 분명히 했어요.</p><p>Valentine은 원작 크레이지 택시가 1990년대 후반, 생성형 AI가 존재조차 하지 않았던 시절에 성공적으로 만들어졌다는 점을 가장 큰 반박 근거로 제시했어요. 단순한 아케이드 컨셉의 게임에 굳이 AI가 필요한 이유를 납득할 수 없으며, 기존 방식의 채용으로도 충분히 처리할 수 있는 작업이라는 지적이에요. 또한 공개된 고지 문구가 지나치게 모호해, AI를 특정 배경 에셋 몇 개에만 쓴 건지 아니면 게임 전반에 걸쳐 광범위하게 활용한 건지조차 파악하기 어렵다는 점도 꼬집었어요. 이런 불투명한 소통이 팬들의 불안과 불신을 더욱 키우고 있다고도 덧붙였어요.</p><p>이 칼럼은 기자 개인의 감정이 섞인 시각이지만, AAA 스튜디오들이 AI 사용을 \'지원 도구\'로 포장하는 방식에 대한 업계 전반의 피로감과 불신을 예리하게 짚어내고 있어요. 일반적으로 스튜디오들은 AI 콘텐츠가 완성작에서 발견될 경우 사과부터 하는 편인데, 세가는 이례적으로 사과 없이 공식 인정이라는 방식을 택했어요. AI가 게임 개발의 일상이 되어가는 흐름 속에서, 팬과 업계 종사자 모두가 더 명확한 기준과 높은 수준의 투명성을 요구하고 있음을 이번 사례가 다시금 상기시켜주고 있어요.</p><p>원문: <a href="https://kotaku.com/why-do-you-need-generative-ai-to-make-crazy-taxi-2000703713">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.06.08',
+            hue:         10,
+            image:       'https://kotaku.com/app/uploads/2026/06/crazy-taxi-soda-cans-1200x675.jpg',
+            url:         'https://kotaku.com/why-do-you-need-generative-ai-to-make-crazy-taxi-2000703713',
+        },
+        {
             id:          'industry-7e7d1d27-2026-06',
             tab:         'industry',
             headline:    '섬머 게임 페스트 개막, AI 공시가 줄줄이… 툼 레이더 신작이 첫 타자',
@@ -1421,6 +1448,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-f99cb182-2026-06',
+            tab:         'art',
+            headline:    'AI, 영화의 성지를 뒤흔들다 — 트라이베카 AI 영화부터 스코세이지까지',
+            summary:     '트라이베카 영화제에 완전 AI 제작 장편이 최초로 초청됐고, 마틴 스코세이지도 Flux AI를 신작 스토리보딩에 활용한다고 밝혔어요.',
+            body:        '<p>2026년 6월, AI가 영화라는 성역에 본격 진입했음을 알리는 두 가지 사건이 동시에 화제가 됐어요. 이란계 형제 감독 Ash와 Pooya Koosha가 제작한 75분짜리 다큐드라마 ‘드림스 오브 바이올렛’이 트라이베카 영화제 공식 프로그램에 최초 완전 AI 생성 장편 영화로 초청된 거예요. 이 작품은 2026년 1월 이란에서 통신이 두절된 상황 속에서 벌어진 학살 사건을 다루며, 현지 취재가 불가능한 조건에서 Kling AI, Claude, Gemini 등의 도구를 활용해 약 2,000달러와 두 달 만에 완성됐어요. 저널리즘 보도와 목격자 증언을 바탕으로 AI 영상 모델을 학습시켜 장면을 구성한 것으로 알려졌어요.</p><p>거장 마틴 스코세이지도 이 흐름에 합류했어요. 그는 Flux AI를 개발한 Black Forest Labs의 어드바이저로 합류해, 레오나르도 디카프리오와 제니퍼 로렌스 주연의 신작 ‘What Happens at Night’ 스토리보딩에 Flux 모델을 직접 활용하고 있다고 밝혔어요. “영화는 이제 약 125년밖에 안 된 젊은 매체예요. 그 진화 방식에 열린 마음을 가져야 해요”라는 그의 발언은 많은 이들의 공감을 자아냈어요. 다렌 아로노프스키는 Google DeepMind와 손잡고 AI 스튜디오 ‘프리모디얼 수프’를 출범시켰고, 스티븐 소더버그도 칸 영화제 출품 다큐멘터리에 Meta AI 도구를 활용한 것으로 알려졌어요.</p><p>이 흐름이 의미하는 가장 큰 변화는 영화 제작의 민주화예요. 개발도상국의 영화인들도 이제 기존의 복잡한 자금 조달 구조나 스튜디오 인맥 없이 자신만의 영화를 만들 수 있는 시대가 열리고 있어요. 스토리보딩, 시각 효과, 음성 합성, 편집이 모두 AI 보조 작업으로 전환되면서 전문 기술과 막대한 비용이라는 진입 장벽이 점점 낮아지고 있어요. AI 생성 콘텐츠의 감정적 공허함과 내러티브의 평범함에 대한 우려도 여전하지만, 창작의 진정한 관문이 기술과 자본이 아닌 상상력 자체로 이동하고 있다는 점만큼은 분명해 보여요.</p><p>원문: <a href="https://www.dailymaverick.co.za/article/2026-06-07-crossed-wires-ai-is-disrupting-the-hallowed-ground-of-filmmaking/">Daily Maverick</a></p>',
+            source:      'Daily Maverick',
+            publishedAt: '2026.06.08',
+            hue:         270,
+            image:       'https://cdn.dailymaverick.co.za/i/cgrRitL3Lh5A83Cx9TBBopL1WOI=/800x0/smart/filters:strip_exif()/file/attachments/orphans/avel-chuklanov_606981.jpg',
+            url:         'https://www.dailymaverick.co.za/article/2026-06-07-crossed-wires-ai-is-disrupting-the-hallowed-ground-of-filmmaking/',
+        },
         {
             id:          'art-6c2ad580-2026-06',
             tab:         'art',
