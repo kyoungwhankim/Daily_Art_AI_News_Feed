@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-686d046e-2026-06',
+            tab:         'games',
+            headline:    'Luma AI, 영상 생성 모델 Ray3.2 공개 — 게임·광고·엔터테인먼트 위한 프레임 단위 완전 제어',
+            summary:     'Luma AI가 프레임 단위 완전 제어가 가능한 영상 생성 AI Ray3.2를 공식 출시했어요.',
+            body:        '<p>Luma AI가 게임·엔터테인먼트·광고 업계 크리에이터들과 긴밀히 협업해 개발한 영상 생성 AI 모델 Ray3.2를 공식 출시했어요. 이 모델의 핵심은 \'프레임 단위 완전 제어\'로, 클립 하나에 최대 16개의 키프레임을 자유롭게 배치해 장면의 페이싱과 카메라 경로, 움직임 흐름을 세밀하게 설계할 수 있어요. 퍼포먼스 보존 기능도 대폭 강화돼 최대 8인의 얼굴 표정과 골격 자세를 프레임별로 동시 추적하므로, 복잡한 앙상블 장면에서도 배우 각자의 섬세한 연기를 정확하게 살릴 수 있어요. 네이티브 HDR 생성과 16비트 EXR 내보내기를 지원해 전문 후반 작업 파이프라인에 곧바로 통합 가능하며, 최대 20초 길이의 1080p 영상을 만들 수 있어 짧은 프리뷰가 아닌 완결된 장면 단위로 실제 프로덕션에 활용할 수 있어요.</p><p>이번 업데이트의 또 다른 핵심은 Ray3.2 API가 처음으로 공개됐다는 점이에요. 미들웨어 없이 기존 기술 스택에 바로 연결되도록 설계된 이 API 덕분에, 게임 스튜디오와 광고 에이전시, 기업 마케팅 팀이 자사 제작 도구에 Ray3.2를 직접 통합할 수 있게 됐어요. 렌더팜, 인하우스 제작 툴, 외부 크리에이티브 앱 등 다양한 워크플로에 유연하게 적용할 수 있으며, 강화된 Reframe 기능으로 촬영 후에도 화면 비율 조정, 프레임 확장, 배경 교체 같은 수술적 편집이 가능해져 재촬영 없이 클라이언트 피드백을 빠르게 반영할 수 있어요.</p><p>Luma는 Ray3.2로 만든 영상이 단순한 \'AI 샷\'이 아닌 VFX·색보정 워크플로에 곧바로 쓰일 수 있는 진짜 프로덕션 에셋이 되도록 설계했다고 강조했어요. 크리에이터가 비전을 직접 지시하고 기술이 그것을 따르는 방식으로 영상 제작의 패러다임을 바꿔 나가겠다는 포부로, 할리우드 스튜디오부터 인디 게임 개발사까지 영상 제작 현장 전반에 의미 있는 변화를 가져올 것으로 기대돼요.</p><p>원문: <a href="https://lumalabs.ai/news/introducing-ray-3-2">Luma AI</a></p>',
+            source:      'Luma AI',
+            publishedAt: '2026.06.10',
+            hue:         30,
+            image:       'https://cdn.sanity.io/images/2ylxvaa2/production/2f5339a88bd93c37ce53ab8512bfc61145bc9029-1920x1080.png',
+            url:         'https://lumalabs.ai/news/introducing-ray-3-2',
+            urls: [
+                { label: '앱 서비스', href: 'https://app.lumalabs.ai' },
+            ],
+        },
+        {
             id:          'games-ad26ec8b-2026-06',
             tab:         'games',
             headline:    '후디니 22 스닉피크 공개 — 가우시안 스플랫 리깅·애니메이션 첫 지원',
@@ -1499,6 +1514,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-eb816219-2026-06',
+            tab:         'art',
+            headline:    'WWDC 2026 총정리: Siri AI·iOS 27·Apple Intelligence — 애플의 AI 대규모 따라잡기',
+            summary:     '애플 WWDC 2026에서 Siri가 AI로 재탄생하고 Apple Intelligence 기능이 대폭 확대됐어요.',
+            body:        '<p>애플이 WWDC 2026에서 \'Siri AI\'로 새롭게 리브랜딩한 AI 어시스턴트와 함께 iOS 27, Apple Intelligence의 대규모 업그레이드를 발표했어요. 구글 Gemini 모델을 기반으로 완전히 새롭게 만들어진 이 AI 어시스턴트는 독립 앱으로도 제공되며, 화면 인식·앱 컨텍스트 공유·시스템 전반의 앱 제어 기능을 갖추게 됐어요. 여러 앱을 넘나들며 대화 맥락을 기억하고 복합 작업을 처리할 수 있는 수준으로 크게 향상됐어요. iOS 27은 아이폰 11 이상 기기를 지원하며, 사진 로딩 속도 70% 단축·에어드롭 전송 속도 80% 향상 같은 성능 개선도 이뤄졌어요. 메시지 앱의 AI 답장 제안, 전화·메일 앱 컨텍스트 연동, 향상된 받아쓰기 기능 등 실용적인 기능들도 대거 추가됐어요.</p><p>사진 앱에는 프레임을 넓히는 확장 기능, 촬영 후 원근감을 재구성하는 \'Spatial Reframing\', 복잡한 배경에서도 자연스럽게 피사체를 지울 수 있는 개선된 지우기 툴이 탑재됐어요. 이미지 생성 앱에는 처음으로 포토리얼리스틱 이미지 생성 기능이 도입됐고, 단축어 앱에서 자연어 대화로 워크플로를 구성할 수 있게 됐어요. 팀 쿡의 마지막 WWDC이기도 한 이번 행사에서 애플은 오는 9월 1일부터 존 테르누스가 최고경영자직을 이어받는다고 공식 발표했어요. 논란이 됐던 유리 질감의 시각 디자인에는 강도 조절과 비활성화 옵션이 추가돼 유연성을 높였어요.</p><p>애플은 경쟁사 대비 AI 전환이 늦었다는 비판을 의식하면서도, 수억 명의 아이폰·맥 사용자에게 무료로 제공될 AI 크리에이티브 기능들의 파급력은 업계 전반에 상당한 영향을 미칠 것으로 보여요. 앱 마켓 구독 번들링, 건강 앱의 폐경 전후 추적 기능 추가, 검색 기능 전면 재구축 등 일상 밀착형 업데이트가 함께 발표되며, 이번 iOS 27 업그레이드는 단순한 AI 쇼케이스를 넘어 실생활 편의를 높이는 종합 개선이라는 평가를 받고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.06.10',
+            hue:         200,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/06/apple-siri-ai-use-cases.png',
+            url:         'https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/',
+            urls: [
+                { label: '영상', href: 'https://youtu.be/hF8swzNR1-o' },
+            ],
+        },
+        {
+            id:          'art-25b1acea-2026-06',
+            tab:         'art',
+            headline:    'Apple Intelligence, iOS 27 사진 앱에 AI 이미지 확장·원근 재구성·향상된 지우기 툴 탑재',
+            summary:     'iOS 27 사진 앱에 AI 확장·원근 재구성·지우기 기능 3종이 새로 탑재됐어요.',
+            body:        '<p>애플이 WWDC 2026에서 iOS 27 사진 앱에 Apple Intelligence 기반 AI 편집 툴 세 가지를 새롭게 선보였어요. \'Extend\'는 원본 프레임 바깥 영역을 AI가 생성해 구도를 자연스럽게 넓히는 기능으로, 여행 사진에서 더 넓은 배경을 만들거나 세로로 찍힌 사진을 가로 화면에 맞게 확장하는 등 다양하게 활용할 수 있어요. 단순히 잘라 내는 방식이 아니라 주변 영역을 새로 생성해 \'더 많이 담는\' 방식이라는 게 특징이에요. \'Spatial Reframing\'은 촬영 후 카메라 앵글을 바꾼 것처럼 원근감을 재구성하는 기능으로, 원래 피사체는 그대로 보존하면서 주변 배경만 새로 생성해 다른 시점에서 찍은 것 같은 구도를 만들어 낼 수 있어요.</p><p>기존에도 있던 지우기 기능은 이번 업데이트로 복잡한 배경에서도 훨씬 자연스럽고 깔끔한 결과물을 낼 수 있게 개선됐어요. 빠른 편집을 위한 \'빠른 모드\', 정밀한 작업을 위한 \'고품질 모드\', 시스템이 최적 모델을 자동 선택하는 \'자동 모드\' 세 가지를 선택할 수 있어요. 이미지 생성 앱도 업데이트돼 기존 사진 속 피사체를 직접 수정하거나 자연어 명령으로 변환할 수 있게 됐고, 처음으로 포토리얼리스틱 이미지 생성도 지원해 경쟁 AI 도구들에 한 걸음 더 가까워졌어요.</p><p>삼성·구글·어도비가 이미 비슷한 AI 편집 기능을 제공하고 있지만, 애플이 기본 사진 앱에 이 기능들을 통합함으로써 별도 앱 없이 수억 명이 AI 크리에이티브 편집을 일상적으로 경험하게 된다는 점이 핵심이에요. 오래된 가족사진 구도를 바로잡거나 여행 사진의 불필요한 인물을 지우는 식의 실용적인 편집이 가능해져, 전문 편집 소프트웨어 없이도 누구나 손쉽게 사진을 원하는 모습으로 다듬을 수 있는 환경이 마련되고 있어요. iOS 27 개발자 베타는 이미 배포됐으며, 퍼블릭 베타는 올여름 중에 제공될 예정이에요.</p><p>원문: <a href="https://appleinsider.com/articles/26/06/09/apple-intelligence-gives-photos-in-ios-27-its-biggest-editing-upgrade-in-years">AppleInsider</a></p>',
+            source:      'AppleInsider',
+            publishedAt: '2026.06.10',
+            hue:         260,
+            image:       'https://photos5.appleinsider.com/gallery/67900-143129-29321CD5-D2BB-4D9D-A393-85526AE9460B-xl.jpg',
+            url:         'https://appleinsider.com/articles/26/06/09/apple-intelligence-gives-photos-in-ios-27-its-biggest-editing-upgrade-in-years',
+        },
         {
             id:          'art-9d334684-2026-06',
             tab:         'art',
