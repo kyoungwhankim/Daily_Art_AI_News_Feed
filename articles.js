@@ -29,6 +29,29 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-cbedfe12-2026-06',
+            tab:         'games',
+            headline:    '블렌더에서 가우시안 스플랫을 애니메이션화하는 3DGS Render 5.0 출시',
+            summary:     '키리 이노베이션스가 블렌더용 가우시안 스플랫 편집 플러그인 3DGS Render 5.0을 출시했어요.',
+            body:        '<p>키리 이노베이션스(Kiri Innovations)가 블렌더용 가우시안 스플랫 편집·렌더링 플러그인 3DGS Render의 5.0 버전을 출시했어요. 이번 업데이트의 핵심은 프록시 메시에서 모션을 베이킹해 가우시안 스플랫 오브젝트에 직접 적용하는 애니메이션 기능이에요. 블렌더 내에서 스플랫을 움직일 수 있게 된 것으로, 빠른 테스트를 위한 데모 씬도 함께 제공돼요.</p><p>가우시안 스플래팅의 고질적인 한계였던 조명 재처리 문제도 이번 버전에서 다뤄졌어요. 기존에는 조명 정보가 스캔 데이터에 베이킹되어 있어 후보정이 사실상 불가능했지만, 이제 프록시 메시의 조명 정보를 3DGS 오브젝트로 전송할 수 있게 됐어요. 이 밖에도 애니메이션된 PLY 시퀀스를 내보낼 수 있는 4DGS 모드와 블렌더 5.1 이상 버전 지원이 추가됐어요. 다만 신규 기능들은 아직 실험적 단계라 성능이 완전하지 않다는 점은 참고해야 해요.</p><p>게임·영상 파이프라인에서 가우시안 스플래팅에 대한 업계 관심이 빠르게 높아지는 가운데 — SideFX도 차기 후디니 22에서 대규모 지원을 예고한 상황 — 이번 업데이트는 블렌더를 이미 사용하는 아티스트와 TD에게 워크플로우 진입 장벽을 한층 낮춰줄 것으로 기대돼요.</p><p>원문: <a href="https://80.lv/articles/animate-gaussian-splats-in-blender-using-3dgs-render-5-0">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.06.12',
+            hue:         210,
+            image:       'https://cdn.80.lv/api/upload/meta/48753/images/6a2acb54c7260/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/animate-gaussian-splats-in-blender-using-3dgs-render-5-0',
+        },
+        {
+            id:          'games-1a296ee6-2026-06',
+            tab:         'games',
+            headline:    'Midjourney V8.1, 기본 모델로 승격 — 더 빠르고 선명한 AI 이미지 생성',
+            summary:     '미드저니가 V8.1을 기본 모델로 전환했어요. SD 모드 4초, HD 모드 4배 해상도 지원이 핵심이에요.',
+            body:        '<p>미드저니(Midjourney)가 6월 11일부로 V8.1을 공식 기본(default) 모델로 전환했어요. 이번 변경은 사용자 테스트와 피드백을 바탕으로 한 결정으로, 기존 기본 모델이었던 V7이 그 자리를 내주게 됐어요. V8.1은 더 스마트하고 일관성 있는 결과물을 내며, 세밀하고 복잡한 프롬프트에도 더욱 충실히 반응해요. 텍스트 렌더링 품질 역시 역대 최고 수준으로 개선됐다고 미드저니 측은 설명했어요.</p><p>해상도와 생성 속도 면에서도 주목할 만한 변화가 있어요. HD 모드를 활성화하면 V7보다 두 배 큰 크기에 4배 해상도로 이미지를 생성할 수 있고, 속도는 SD 모드 기준 약 4초, HD 모드에서도 12초로 크게 단축됐어요. 스타일 레퍼런스·개인화 기능·미학적 일관성은 V7과 V8.1 사이에서 그대로 유지되며, V7의 옴니 레퍼런스 기능은 V8 전용 개선 버전 학습이 완료될 때까지 계속 사용할 수 있어요.</p><p>기존 V8.0 알파 모델은 이번 전환을 기점으로 2주 내 지원이 종료될 예정이에요. 게임 컨셉 아트나 무드보드 레퍼런스 제작에 미드저니를 적극 활용하는 아티스트라면, V8.1의 빠른 속도와 개선된 프롬프트 반응력 덕분에 아이디어에서 이미지까지의 작업 사이클이 훨씬 가벼워질 거예요.</p><p>원문: <a href="https://updates.midjourney.com/v8-1-is-now-the-default-model/">Midjourney</a></p>',
+            source:      'Midjourney',
+            publishedAt: '2026.06.12',
+            hue:         220,
+            url:         'https://updates.midjourney.com/v8-1-is-now-the-default-model/',
+        },
+        {
             id:          'games-b65e9f09-2026-06',
             tab:         'games',
             headline:    '킹덤하츠 컬렉션 커버 아트, AI 생성 의혹 논란',
@@ -946,6 +969,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-1eb29251-2026-06',
+            tab:         'industry',
+            headline:    '\'1666: Amsterdam\' 개발사, AI 생성 아트 사용 사실 시인하고 공개 사과',
+            summary:     '파나쉬 디지털 게임즈가 \'1666: Amsterdam\' 프롤로그에서 AI 생성 에셋이 발견된 사실을 인정하고 공식 사과했어요.',
+            body:        '<p>써머 게임 페스트(Summer Game Fest) 기간에 스팀으로 공개된 \'1666: Amsterdam\' 프롤로그에서 AI로 생성한 초상화와 마케팅 소재가 발견되며 논란이 일었어요. 개발사 파나쉬 디지털 게임즈(Panache Digital Games)는 공식 성명을 통해 이 사실을 시인하고 사과했어요. "이번 실수를 인정하며, 이로 인한 불편에 대해 진심으로 사과한다. 얼리 액세스와 정식 출시 버전에는 AI 생성 에셋을 포함하지 않을 것"이라고 밝혔어요.</p><p>파나쉬 디지털 게임즈는 12명 이상의 전문 아티스트를 보유하고 있음에도 AI 에셋이 사용된 상황에 대해 "의도치 않은 실수"라고 설명했어요. 조만간 공개될 업데이트를 통해 문제가 된 초상화와 마케팅 소재를 모두 사람이 직접 만든 버전으로 교체할 예정이라고 밝혔어요. 이번 사건은 스튜디오 내부 파이프라인에서 AI 에셋 사용 여부를 제대로 검수하지 못했음을 보여주는 사례로 주목받고 있어요.</p><p>게임 출시 시즌마다 반복되는 AI 아트 무단 사용 사건이 이번에도 업계 화두로 떠올랐어요. 전문 아티스트를 보유한 스튜디오에서도 이런 일이 발생했다는 점에서, 에셋 제작 과정의 투명성과 내부 검수 체계 마련이 더욱 중요한 과제로 부각되고 있어요. AI 활용 범위와 제작자 책임에 대한 업계 논의는 당분간 계속될 것으로 보여요.</p><p>원문: <a href="https://kotaku.com/1666-amsterdam-apology-ai-assets-panache-genai-2000705525">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.06.12',
+            hue:         10,
+            image:       'https://kotaku.com/app/uploads/2026/06/1666-ai-1200x675.jpg',
+            url:         'https://kotaku.com/1666-amsterdam-apology-ai-assets-panache-genai-2000705525',
+        },
+        {
             id:          'industry-a274e65f-2026-06',
             tab:         'industry',
             headline:    '섬머 게임 페스트 한 주 만에 AI 공개 도미노… 업계 공통 문구 \'조기 탐색 단계\' 논란',
@@ -1577,6 +1612,32 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-c2da111d-2026-06',
+            tab:         'art',
+            headline:    '라이온스게이트, Runway AI에 지분 투자 — AI 숏폼 시리즈 공동 제작 나선다',
+            summary:     '라이온스게이트가 런웨이에 지분 투자를 단행하고, 존 윅 등 기존 IP 기반 AI 숏폼 시리즈 제작에 나선다고 발표했어요.',
+            body:        '<p>라이온스게이트(Lionsgate)가 AI 영상 생성 스타트업 런웨이(Runway)에 지분 투자를 단행하고, 기존 IP를 활용한 AI 숏폼 시리즈 개발에 나선다고 발표했어요. 런웨이는 2026년 펀딩 라운드 기준 기업 가치 53억 달러로 평가받는 회사로, 이번 지분 투자는 현금 없이 비현금 지분 형태로 이뤄졌어요. 두 회사의 파트너십은 2024년 9월 처음 시작됐으며, 이번에 그 범위를 대폭 확대했어요.</p><p>라이온스게이트는 존 윅(John Wick), 헝거게임(The Hunger Games), 트와일라잇(Twilight), 쏘우(Saw) 등 보유 프랜차이즈 IP를 AI로 재창작한 숏폼 시리즈를 제작할 계획이에요. 완전히 새로운 IP 공동 개발도 추진하며, 런웨이 AI 페스티벌의 프레젠팅 파트너로도 참여해요. 프리비즈, 스토리보드, 후반 작업, 다양한 등급과 장르에 걸친 콘텐츠 재가공 등 폭넓은 제작 분야에 런웨이 기술을 활용할 예정이에요.</p><p>라이온스게이트는 2026년 2월 첫 최고 AI 책임자(Chief AI Officer)를 채용했으며, AI 도입으로 연간 수천만 달러를 절감할 수 있을 것으로 전망하고 있어요. 런웨이 공동 CEO 크리스토발 발렌수엘라는 "AI를 진지하게 받아들이는 스튜디오는 비용 절감이 아닌 창작 자원으로 바라본다"고 강조했어요. 대형 스튜디오가 AI 영상 회사에 직접 지분 투자를 한 이례적인 이번 사례는 엔터테인먼트 업계의 AI 파이프라인 통합이 본격화되고 있다는 신호로 읽혀요.</p><p>원문: <a href="https://variety.com/2026/film/news/lionsgate-equity-stake-runway-ai-franchises-for-ai-show-1236775590/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.06.12',
+            hue:         270,
+            image:       'https://variety.com/wp-content/uploads/2024/08/Lionsgate.png?w=1000&h=563&crop=1',
+            url:         'https://variety.com/2026/film/news/lionsgate-equity-stake-runway-ai-franchises-for-ai-show-1236775590/',
+            urls: [
+                { label: 'AI 페스티벌', href: 'https://aif.runwayml.com/' },
+            ],
+        },
+        {
+            id:          'art-bf6dd29d-2026-06',
+            tab:         'art',
+            headline:    '인도 영화 업계, AI 영상 생성 기술 적극 수용 — 수백만 달러짜리 작업을 수백 달러로',
+            summary:     '인도 영화 업계가 생성형 AI로 제작비와 시간을 획기적으로 줄이고 있어요. 수백만 달러짜리 AI 캐릭터 작업이 수백 달러로 가능해졌어요.',
+            body:        '<p>인도 영화 업계가 생성형 AI를 빠르게 도입하며 제작비와 시간을 획기적으로 줄이고 있어요. 컨설팅 업체 FirstAI Consultancy는 배우 퍼포먼스 기반 AI 애니메이션 캐릭터를 기존에는 수백만 달러와 6개월이 소요되던 작업을 단 수백 달러와 수 주 만에 완성해냈다고 밝혔어요. 이 극적인 비용·시간 절감 효과가 업계에 빠르게 알려지면서 인도 내 AI 제작 도입 사례가 늘어나고 있어요.</p><p>넷플릭스, Amazon 프라임 등 글로벌 OTT 플랫폼의 인도 콘텐츠 수요 급증이 AI 도입을 더욱 가속시키고 있어요. 방대한 콘텐츠를 빠른 속도로 공급해야 하는 상황에서 AI는 현실적인 생산성 해법으로 자리 잡고 있어요. 비주얼 이펙트, 캐릭터 애니메이션, 배경 생성 등 다양한 제작 영역에 생성형 AI 툴이 적용되는 중이며, 기술 도입 속도는 갈수록 빨라지는 추세예요.</p><p>인도 미디어·엔터테인먼트 시장은 높은 성장세를 꾸준히 이어가고 있어요. 이 거대 시장에서 AI가 생산성 혁신을 주도하면서 전 세계 콘텐츠 제작 지형이 변화하고 있어요. 인도 업계의 발 빠른 AI 수용은 단순한 지역 트렌드를 넘어, AI 기술이 고비용 크리에이티브 작업의 접근성을 어떻게 바꾸고 있는지를 보여주는 글로벌 콘텐츠 제작 패러다임 변화의 상징적인 사례로 주목받고 있어요.</p><p>원문: <a href="https://www.cnbc.com/2026/06/11/how-indian-filmmakers-are-using-generative-ai.html">CNBC</a></p>',
+            source:      'CNBC',
+            publishedAt: '2026.06.12',
+            hue:         50,
+            url:         'https://www.cnbc.com/2026/06/11/how-indian-filmmakers-are-using-generative-ai.html',
+        },
         {
             id:          'art-a34f8258-2026-06',
             tab:         'art',
