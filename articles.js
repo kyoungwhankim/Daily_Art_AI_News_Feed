@@ -1613,6 +1613,22 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-a50f7667-2026-06',
+            tab:         'art',
+            headline:    '"Count Anything" — 텍스트 프롬프트로 이미지 속 객체를 세는 범용 AI 모델',
+            summary:     '칭화대 연구팀이 텍스트만으로 군중·세포·위성사진 속 객체를 세는 범용 AI 모델 \'Count Anything\'을 공개했어요.',
+            body:        '<p>칭화대학교와 여러 기관의 공동 연구팀이 텍스트 입력만으로 이미지 속 객체를 셀 수 있는 범용 AI 모델 \'Count Anything\'을 공개했어요. 군중 속 사람, 위성사진의 차량, 의료 스캔의 세포, 농업 이미지의 이삭, 실험실의 박테리아 군락 등 매우 다양한 유형의 이미지를 하나의 모델로 처리할 수 있다는 점이 핵심이에요. 이미지에서 객체를 세는 일은 진단 정확도, 작황 예측, 교통 흐름 분석 등 현실에서 중요하게 쓰이지만, 지금까지는 분야마다 전용 시스템이 따로 필요해 통합적인 접근이 어려웠어요.</p><p>모델은 두 가지 카운터를 결합하는 방식으로 동작해요. 하나는 크고 명확한 객체 주변에 바운딩 박스를 그리고, 다른 하나는 작고 촘촘히 밀집된 객체에 점을 찍어 개수를 파악해요. 두 예측을 합칠 때는 신뢰도가 높은 쪽을 남겨 같은 객체가 이중으로 계산되는 것을 방지해요. Meta의 SAM3를 기반으로 경량 어댑터를 얹어 전체 모델을 처음부터 재학습하지 않고도 다양한 도메인에 적응할 수 있도록 설계했어요. 연구팀은 텍스트 기반 카운팅 분야 최대 규모 데이터셋 CLOC도 함께 공개했는데, 일상 사진부터 위성·드론 영상, 의료 조직 샘플, 현미경 세포 이미지, 농업 이미지, 박테리아 배양 사진까지 6개 시각 도메인에 걸쳐 22만여 장의 이미지와 619개 카테고리, 약 1,500만 개의 레이블 객체를 포함해요.</p><p>자체 비교 실험에서 Count Anything은 카테고리당 평균 약 9개의 오차를 기록해 CountGD, CLIP-Count, Grounding DINO 등 경쟁 모델보다 오차가 절반 이하로 낮았어요. 군중 전용 카운팅에서는 특화 모델에 약간 미치지 못하지만, 텍스트 기반 범용 카운터라는 목표 안에서는 현재 최고 수준의 성능이에요. 연구팀은 모델이 여전히 모호한 용어나 극단적으로 밀집된 장면에서 한계가 있음을 인정하며, 코드와 CLOC 데이터셋을 GitHub에 모두 공개해 후속 연구를 독려하고 있어요.</p><p>원문: <a href="https://the-decoder.com/new-ai-model-called-count-anything-does-exactly-what-it-says-and-thats-harder-than-it-sounds/">The Decoder</a></p>',
+            source:      'The Decoder',
+            publishedAt: '2026.06.14',
+            hue:         220,
+            image:       'https://the-decoder.com/wp-content/uploads/2026/06/count-anything-generated-image-nano-banana-pro.jpg',
+            url:         'https://the-decoder.com/new-ai-model-called-count-anything-does-exactly-what-it-says-and-thats-harder-than-it-sounds/',
+            urls: [
+                { label: '논문', href: 'https://arxiv.org/abs/2605.30846' },
+                { label: '깃허브', href: 'https://github.com/Mengqi-Lei/count-anything' },
+            ],
+        },
+        {
             id:          'art-c2da111d-2026-06',
             tab:         'art',
             headline:    '라이온스게이트, Runway AI에 지분 투자 — AI 숏폼 시리즈 공동 제작 나선다',
