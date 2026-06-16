@@ -29,6 +29,23 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-11265c21-2026-06',
+            tab:         'games',
+            headline:    'LightWave 2026 출시: AI 디노이징과 자동 차량 리깅으로 3D 아트 파이프라인 강화',
+            summary:     'LightWave Digital이 AI 디노이징과 반자동 차량 리깅 MotoRig를 탑재한 LightWave 2026을 출시했어요.',
+            body:        '<p>LightWave Digital이 3D 애니메이션·VFX 소프트웨어 LightWave 2026을 공식 출시했어요. 2023년 Vizrt로부터 인수한 후 네 번째 주요 업데이트로, 물리 기반 씬 레이아웃 시스템, 차량 리깅 툴셋 MotoRig, 새로운 2D·3D 트래킹 시스템 등 광범위한 기능 개선이 이루어졌어요. 소프트웨어는 VFX·모션 그래픽·건축 시각화 등 다양한 분야에 활용되며, 최근 《Percy Jackson and the Olympians》 등 주요 작품에도 쓰이고 있어요.</p><p>핵심 신기능인 MotoRig는 차량 모델에 자동으로 애니메이션 리그를 생성하고 질량·무게 배분·뱅킹 등 세부 파라미터를 조정할 수 있는 반자동 차량 리깅 시스템이에요. 사륜부터 팔륜 군용 차량까지 지원하며, 고급 서스펜션 다이나믹스 프리셋도 6가지나 제공해요. 뷰포트 렌더러 RiPR 2에는 NVIDIA OptiX 기반 AI 시간적 노이즈 제거(Temporal Denoising)가 추가돼 실시간 미리보기 품질이 크게 향상됐어요. 이 밖에 COLMAP 기반 3D 카메라 트래커, 파괴 시뮬레이션용 Fracture 툴, 절차적 번개 생성 플러그인 THOR, 눈·비 효과를 빠르게 렌더링하는 Snow Falling 3D 등 다양한 VFX 도구도 새로 탑재됐어요.</p><p>자동 리깅과 AI 기반 실시간 디노이징이 한 패키지에 통합되면서 게임 시네마틱·VFX 팀의 워크플로우 속도가 크게 향상될 것으로 기대돼요. 2020년 개발이 중단됐다 2023년 새 팀이 인수한 이후 꾸준한 업데이트를 이어가며 LightWave가 업계 내 존재감을 다시 회복하고 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/lightwave-digital-releases-lightwave-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.16',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/05/260504_LightWave2026_f.jpg',
+            url:         'https://www.cgchannel.com/2026/06/lightwave-digital-releases-lightwave-2026/',
+            urls: [
+                { label: '영상', href: 'https://www.youtube.com/watch?v=jfWTVXEN22w' },
+                { label: '추가 영상', href: 'https://www.youtube.com/watch?v=7qQpFHxwvvQ' },
+                { label: '깃허브', href: 'https://github.com/colmap/colmap' },
+            ],
+        },
+        {
             id:          'games-cbedfe12-2026-06',
             tab:         'games',
             headline:    '블렌더에서 가우시안 스플랫을 애니메이션화하는 3DGS Render 5.0 출시',
@@ -1612,6 +1629,42 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-f91d6bb7-2026-06',
+            tab:         'art',
+            headline:    'Adobe Creative Cloud, AI 영상 생성·로토스코핑·스케치→벡터 변환 등 대규모 업데이트 발표',
+            summary:     'Adobe가 Creative Cloud 전반에 AI 기능을 대거 추가해 편집 워크플로우를 크게 개선했어요.',
+            body:        '<p>Adobe가 Creative Cloud 전반에 걸쳐 AI 기능을 대거 추가하는 대규모 업데이트를 발표했어요. 이번 업데이트는 Lightroom, After Effects, Premiere Pro, Illustrator, Photoshop 등 주요 앱을 아우르며, AI로 편집 과정의 마찰을 줄이고 창작 시간을 늘리는 데 초점을 맞추고 있어요.</p><p>가장 주목할 기능은 Lightroom의 \'Photo to Video\'예요. 정지 이미지를 B롤·소셜 릴로 변환하는 이 기능은 Adobe Firefly와 Google Veo 기반 AI 모션을 활용하며, Topaz Labs의 Noise-Aware Sharpen 모델을 통합한 AI 샤픈 기능도 함께 추가됐어요. After Effects에는 AI 기반 Object Selection·Quick Selection 등 4가지 정밀 도구를 활용한 새 Object Matte 로토스코핑 툴이 도입돼 기존 브러시 위주 작업 방식을 크게 개선했어요. Illustrator에는 러프 스케치를 즉시 깨끗한 벡터 아트워크로 변환하는 \'Concept to Vector\' 기능이 생겼고, Photoshop의 Remove Tool은 반사 제거와 이미지 정리 기능이 강화됐으며 온디바이스 생성형 AI 모델 지원도 추가됐어요.</p><p>사진·영상·그래픽 편집 전반에 AI가 깊숙이 녹아들면서, 기존에 외부 앱을 오가던 번거로운 작업들이 Adobe 생태계 안에서 원스톱으로 처리 가능해지고 있어요. 크리에이터들의 실질적인 편집 시간이 크게 단축될 것으로 기대돼요.</p><p>원문: <a href="https://www.creativebloq.com/photography/photo-editing-software/new-adobe-creative-cloud-updates-will-genuinely-save-you-time">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.16',
+            hue:         280,
+            image:       'https://cdn.mos.cms.futurecdn.net/4AjEYV5cRosEZk8FZMLMJZ-2560-80.jpg',
+            url:         'https://www.creativebloq.com/photography/photo-editing-software/new-adobe-creative-cloud-updates-will-genuinely-save-you-time',
+        },
+        {
+            id:          'art-f060f479-2026-06',
+            tab:         'art',
+            headline:    '솔로 크리에이터, AI 도구로 트랜스미디어 SF 유니버스 \'NUVAGAIA\' 구축',
+            summary:     '아티스트 Gerard Bisbal이 AI 도구만으로 팟캐스트·소설·영상을 아우르는 SF 세계관 NUVAGAIA를 혼자 만들고 있어요.',
+            body:        '<p>아티스트 Gerard Bisbal이 AI 도구만을 활용해 팟캐스트·소설·아트워크·영상·인터랙티브 픽션을 아우르는 SF 세계관 \'NUVAGAIA\'를 혼자서 제작하고 있어요. 솔라펑크와 우주 공포를 결합한 이 프로젝트는 대규모 트랜스미디어 IP를 과거에는 수억 원과 글로벌 팀이 필요했던 반면, 지금은 솔로 크리에이터 한 명이 구축할 수 있다는 것을 직접 보여주고 있어요.</p><p>Bisbal은 AI를 세계관 설정 탐색, 비주얼 프로토타입 제작, 보이스 생성, 방대한 캐논(canon) 관리 등 제작 전 과정에 활용하고 있어요. 이미지 생성 시에는 구조화된 프롬프트에서 시작해 수많은 결과물을 반복·검토하며 세계관에 맞는 것만 선별하고, 팟캐스트 스크립트 작업 후에는 TTS로 보이스를 생성한 뒤 편집·음악·효과를 직접 조합해요. AI가 아이디어를 탐색하고 콘텐츠를 생성하더라도 \'무엇이 NUVAGAIA 세계에 속하는지\'를 결정하는 것은 항상 아티스트 본인이라고 그는 강조해요. 일관성은 AI가 아니라 창작자의 비전에서 나온다는 거예요.</p><p>이 사례는 AI 시대에 솔로 크리에이터가 이전보다 훨씬 큰 스케일로 생각하고 행동할 수 있게 됐음을 잘 보여줘요. 대규모 팀과 자금이 있어야만 가능했던 트랜스미디어 세계관 구축이 이제는 창의적 방향성과 편집 감각을 가진 한 명의 크리에이터에게도 열려 있어요.</p><p>원문: <a href="https://www.creativebloq.com/ai/how-one-creator-is-using-ai-to-build-an-entire-transmedia-sci-fi-universe">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.16',
+            hue:         260,
+            image:       'https://cdn.mos.cms.futurecdn.net/u9eLVp4crWYmzUG6aWh369-1600-80.jpg',
+            url:         'https://www.creativebloq.com/ai/how-one-creator-is-using-ai-to-build-an-entire-transmedia-sci-fi-universe',
+        },
+        {
+            id:          'art-53fd96bd-2026-06',
+            tab:         'art',
+            headline:    '나이키의 AI 보조 월드컵 유니폼, 어깨 디자인 오류로 전 세계 디자이너들의 비판 받아',
+            summary:     '나이키의 AI 보조 설계 월드컵 유니폼이 어깨 돌출 오류로 팬들의 거센 비판을 받고 있어요.',
+            body:        '<p>나이키가 2026 FIFA 월드컵을 위해 AI 보조 설계 방식으로 제작한 국가대표 유니폼이 어깨 솔기 부분의 돌출 문제로 팬들과 디자이너들의 거센 비판을 받고 있어요. 나이키는 출시 당시 \'최고 수준의 냉각 혁신과 전통의 융합\'을 내세웠지만, 실제 착용 시 어깨 부분이 불필요하게 돌출돼 TV 애니메이션 악당처럼 보인다는 혹평이 소셜미디어에서 쏟아졌어요. 소셜미디어에서는 "축구 유니폼 역사상 최대 실수"라는 평까지 나왔어요.</p><p>이 문제는 나이키가 유니폼 개발에 퍼포먼스 데이터와 AI를 활용한 컴퓨테이셔널 디자인 방식을 도입했기 때문에 더욱 주목받고 있어요. 나이키 측은 The Guardian과의 인터뷰에서 \'전반적인 미적 완성도가 기준에 미치지 못한다\'고 인정하면서도 설계를 처음부터 다시 하는 대신, 선수들과 연맹에 세탁·다림질로 어깨 돌출을 줄이는 방법을 안내하는 것에 그쳤어요. AI가 쿨링 기술의 퍼포먼스 데이터 처리에는 기여했지만, 최종 디자인에서 이 같은 근본적인 오류가 발생한 것은 AI 기반 패션 디자인 프로세스의 한계를 드러내요.</p><p>AI 보조 설계가 비용 효율성과 기술적 혁신을 가져올 수 있어도, 실제 착용감과 미적 감각처럼 사람의 눈과 경험이 필요한 영역에서는 아직 명확한 한계가 있음을 이번 사례가 보여줘요. 대규모 글로벌 스포츠 행사에서 이런 오류가 발생한 것은 AI 기반 의류 디자인 프로세스에 대한 재검토 필요성을 시사해요.</p><p>원문: <a href="https://www.creativebloq.com/design/of-course-nikes-ai-assisted-world-cup-kit-design-looks-stupid">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.16',
+            hue:         10,
+            image:       'https://cdn.mos.cms.futurecdn.net/C8h2mQuGeWC8EUzNyRGzwN-1920-80.jpg',
+            url:         'https://www.creativebloq.com/design/of-course-nikes-ai-assisted-world-cup-kit-design-looks-stupid',
+        },
         {
             id:          'art-a50f7667-2026-06',
             tab:         'art',
