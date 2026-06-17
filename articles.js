@@ -986,6 +986,41 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-6961217f-2026-06',
+            tab:         'industry',
+            headline:    '마이크로소프트, AI 이유로 Xbox 직원 2,000명 해고…게임 업계 첫 공식 사례',
+            summary:     '마이크로소프트가 AI 도구 도입을 이유로 Xbox 게임 스튜디오 직원 약 2,000명을 해고했어요.',
+            body:        '<p>마이크로소프트가 2026년 6월 Xbox 게임 스튜디오, 액티비전 퍼블리싱, 블리자드 엔터테인먼트에서 약 2,000명을 정리해고했어요. 필 스펜서 마이크로소프트 게이밍 대표는 \'AI 개발 도구가 게임 제작 방식을 근본적으로 바꾸고 있다\'고 밝히며, AI 자동화가 회귀 테스트의 60~80%를 대체할 수 있다고 주장했어요. 이는 대형 게임사가 AI 도입을 정리해고의 주요 원인으로 공식 발표한 업계 최초의 사례예요.</p><p>이번 감축의 주요 대상은 품질 보증(QA), 퍼블리싱 운영, 소비자 마케팅 부문이에요. 2024년에도 약 1,900명을 해고한 마이크로소프트는 이번에 자발적 퇴직 패키지를 먼저 제시했지만 기대했던 60~70%에 미치지 못하자 강제 해고로 전환했어요. 노동 조합이 결성된 스튜디오의 직원도 포함돼 있어, AI를 이유로 한 기술적 대체 시 적용되는 단체협약 조항과의 충돌 가능성도 제기되고 있어요.</p><p>원문: <a href="https://www.vaasblock.com/news/microsoft-xbox-layoffs-ai-game-development-2026/">VaaSBlock</a></p>',
+            source:      'VaaSBlock',
+            publishedAt: '2026.06.17',
+            hue:         10,
+            url:         'https://www.vaasblock.com/news/microsoft-xbox-layoffs-ai-game-development-2026/',
+        },
+        {
+            id:          'industry-987bd869-2026-06',
+            tab:         'industry',
+            headline:    'Xbox, 닌자 씨어리 공식 폐쇄…더블 파인·컴펄션 게임즈도 매각 협상 중',
+            summary:     'Xbox가 닌자 씨어리를 공식 폐쇄했으며, 더블 파인과 컴펄션 게임즈도 독립을 위한 스핀오프 협상 중이에요.',
+            body:        '<p>마이크로소프트 Xbox가 헬블레이드 시리즈로 유명한 영국 개발사 닌자 씨어리(Ninja Theory)를 공식 폐쇄했어요. 직원들은 월요일 통화에서 폐쇄 사실을 통보받았으며, 인수자가 나타나지 않으면 스튜디오는 완전히 문을 닫게 돼요. 특히 Xbox 게임 쇼케이스에서 차기작 《세누아(Senua)》가 공개된 지 불과 일주일 만에 나온 발표라 업계에 충격을 안겼어요.</p><p>더블 파인(Double Fine)과 컴펄션 게임즈(Compulsion Games)도 폐쇄를 피하기 위해 마이크로소프트와 적극 협상 중이에요. 블룸버그는 두 스튜디오 모두 스핀오프를 통해 독립을 모색하고 있다고 전했어요. Xbox 게임 스튜디오 총괄 크레이그 던컨과 루이스 오코너 수석 보좌관도 마이크로소프트를 떠났거나 떠날 준비 중인 것으로 알려졌어요. 이번 사태는 구독 성장 둔화, 콘솔 판매 부진, 비용 절감 압박이 한꺼번에 작용한 결과로 분석돼요.</p><p>원문: <a href="https://www.techspot.com/news/112778-xbox-closing-ninja-theory-double-fine-compulsion-may.html">TechSpot</a></p>',
+            source:      'TechSpot',
+            publishedAt: '2026.06.17',
+            hue:         340,
+            image:       'https://www.techspot.com/images2/news/bigimage/2026/06/2026-06-16-image.jpg',
+            url:         'https://www.techspot.com/news/112778-xbox-closing-ninja-theory-double-fine-compulsion-may.html',
+        },
+        {
+            id:          'industry-92ae2156-2026-06',
+            tab:         'industry',
+            headline:    '소니·EA·바이오웨어도 7월 대규모 감원 예고…업계 \'대학살\' 경고 현실화',
+            summary:     '프랑스 저널리스트가 소니, 바이오웨어 등 7월 대규모 감원을 예고하며 게임 업계 전반에 경고를 울렸어요.',
+            body:        '<p>프랑스 게임 저널리스트 실뱅 트리넬이 SNS를 통해 7월 1일을 전후로 소니, EA, 바이오웨어 등 서구 대형 스튜디오에서 추가 정리해고가 예고돼 있다고 경고했어요. 트리넬은 Xbox의 닌자 씨어리 폐쇄 소식이 알려진 직후 \'이것은 대형 출판사 산하 스튜디오들에 닥칠 거대한 대학살의 시작에 불과하다\'고 직설적으로 밝혔어요. 아이디 소프트웨어, 베데스다, 바이오웨어에서도 \'전혀 긍정적이지 않은 징후\'를 포착했다고 언급했으며, 소니 플레이스테이션 진영에 대해서는 \'7월에 무슨 일이 일어나는지 주목하라\'며 추가 조치를 암시했어요.</p><p>게임 업계는 이미 몇 년째 이어진 구조조정의 파도 위에 놓여 있어요. AAA 타이틀 제작비가 수백억 원에서 수천억 원대로 급등하는 동안 게임패스와 PlayStation Plus 같은 구독 서비스로의 수익 모델 전환이 개별 타이틀 판매 수익을 크게 약화시켰어요. 프랑스 개발사 돈트 노드는 진행 중인 프로젝트 자금이 바닥나기 전에 외부 투자를 유치해야 하는 상황이고, 퀀틱 드림도 여러 프로젝트에서 제작 차질이 겹쳐 있어요. 전문가들은 AI 자동화 전환, 과도한 AAA 제작비, 시장 포화라는 세 가지 구조적 압박이 동시에 작용하면서 서구 게임 업계 전반에 대규모 구조조정이 본격화됐다고 분석해요.</p><p>이번 경고가 현실화된다면, 닌자 씨어리 폐쇄로 시작된 2026년 하반기 게임 업계 구조조정은 역대 최대 규모로 확대될 수 있어요. 아직 공식 발표가 없는 PlayStation 진영 스튜디오들의 행방에 특히 관심이 쏠리고 있어요.</p><p>원문: <a href="https://www.pushsquare.com/news/2026/06/rumour-gaming-industry-bloodbath-imminent-as-sony-microsoft-and-more-brace-for-mass-layoffs">Push Square</a></p>',
+            source:      'Push Square',
+            publishedAt: '2026.06.17',
+            hue:         0,
+            image:       'https://images.pushsquare.com/2c3e7435a1a4d/games-industry-layoffs.900x.jpg',
+            url:         'https://www.pushsquare.com/news/2026/06/rumour-gaming-industry-bloodbath-imminent-as-sony-microsoft-and-more-brace-for-mass-layoffs',
+        },
+        {
             id:          'industry-1eb29251-2026-06',
             tab:         'industry',
             headline:    '\'1666: Amsterdam\' 개발사, AI 생성 아트 사용 사실 시인하고 공개 사과',
@@ -1629,6 +1664,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-f3b9cd87-2026-06',
+            tab:         'art',
+            headline:    '어도비 크리에이티브 클라우드 6월 업데이트: 포토샵·애프터 이펙트에 AI 대거 탑재',
+            summary:     '어도비가 5개 주요 앱에 AI 기능을 대폭 강화한 크리에이티브 클라우드 6월 업데이트를 발표했어요.',
+            body:        '<p>어도비가 크리에이티브 클라우드 2026년 6월 업데이트를 발표하며 프리미어 프로, 애프터 이펙트, 포토샵, 라이트룸, 일러스트레이터 등 5개 주요 앱에 AI 기능을 대폭 강화했어요. 애프터 이펙트에는 기존 로토 브러시를 대체하는 \'Object Matte\' 도구가 탑재됐는데, 오브젝트 선택·빠른 선택·선택 브러시·엣지 정제라는 4가지 AI 기반 선택 도구를 제공해 영상 합성 작업이 한층 수월해졌어요. 포토샵의 \'Remove Tool\'은 이제 온디바이스 생성 AI 모델로 구동돼 인터넷 연결 없이도 작동하며, 유리 표면의 반사를 감지·제거하는 \'Reflection Removal\' 기능도 추가됐어요.</p><p>라이트룸에는 얼굴을 분석해 눈의 선명도와 표정을 평가하는 \'Assisted Culling\'이 정식 출시됐고, 정지 이미지를 AI 모션으로 변환하는 \'Photo to Video\'도 새롭게 선보였어요. 일러스트레이터에는 스케치나 저해상도 이미지를 편집 가능한 벡터 초안으로 변환하는 \'Concept to Vector\'가 추가됐어요. 어도비가 함께 발표한 2026 크리에이터 보고서에 따르면, 전 세계 크리에이터의 75%가 AI를 워크플로에 통합·필수 도구로 활용하고 있지만, 57%는 결과물을 공유 전 상당한 수작업 편집이 필요하다고 응답했어요. 이번 업데이트는 AI의 온디바이스 실행과 크리에이티브 워크플로 전반으로의 통합이 어도비의 핵심 전략임을 재확인해 줘요.</p><p>원문: <a href="https://www.redsharknews.com/adobe-creative-cloud-june-2026-update">RedShark News</a></p>',
+            source:      'RedShark News',
+            publishedAt: '2026.06.17',
+            hue:         290,
+            image:       'https://www.redsharknews.com/hubfs/Object%20Matte%20in%20After%20Effects%201080px.jpg',
+            url:         'https://www.redsharknews.com/adobe-creative-cloud-june-2026-update',
+        },
         {
             id:          'art-f91d6bb7-2026-06',
             tab:         'art',
