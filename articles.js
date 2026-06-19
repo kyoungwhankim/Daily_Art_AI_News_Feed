@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-8be37975-2026-06',
+            tab:         'games',
+            headline:    '에픽 게임즈, 스마트폰 한 대로 메타휴먼 전신 모션 캡처 가능한 무료 플러그인 출시',
+            summary:     'UE5.8과 함께 공개된 무료 모캡 플러그인으로 스마트폰 한 대만으로 전신 애니메이션 데이터를 추출할 수 있어요.',
+            body:        '<p>에픽 게임즈가 언리얼 엔진 5.8 출시와 함께 \'MetaHuman Animator Markerless Motion Capture\' 플러그인을 무료로 공개했어요. 웹캠이나 스마트폰 단 한 대만으로 배우의 전신 애니메이션 데이터를 추출해 메타휴먼 캐릭터에 바로 적용할 수 있어요. 손가락 움직임까지 포함된 전신 솔브와 얼굴 솔브를 동일한 영상에서 동시에 뽑아낼 수 있으며, 모든 연산은 사용자 로컬 PC에서 처리돼 클라우드 업로드가 전혀 필요 없어요. 1080p 영상 1초를 1분 이내에 처리할 수 있다는 초기 사용자 보고도 나왔어요.</p><p>이 플러그인은 에픽이 올해 초 인수한 AI 모캡 전문 기업 Meshcapade의 기술을 기반으로 해요. 기존 MetaHuman Animator(얼굴 캡처)가 UE5 에디터에 자동 내장된 것처럼, 새 플러그인도 상업 프로젝트를 포함해 완전 무료로 제공되며 현재 Windows에서만 작동해요. 단일 카메라로 얼굴과 전신을 동시에 솔브하거나, 별도 HMC 장비를 활용하는 듀얼 카메라 모드도 지원해요. 초기 테스트에서 \'정지 카메라 환경에서 손가락 퀄리티가 예상보다 훨씬 좋다\'는 긍정적 반응이 이어지고 있어요.</p><p>수백만 원짜리 전문 모캡 장비 없이도 스마트폰 하나로 고품질 전신 모션을 뽑을 수 있게 된 것은, 인디 개발자와 소규모 스튜디오에게 게임 제작 비용과 진입 장벽을 크게 낮춰주는 중요한 변화예요. 앞으로 AI 모캡을 파이프라인에 도입하는 사례가 빠르게 늘어날 것으로 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/get-the-free-metahuman-animator-markerless-mocap-plugin/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.19',
+            hue:         200,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260618_MetaHumanAnimatorMarkerlessMocap_FreeUE5Plugin_f.jpg',
+            url:         'https://www.cgchannel.com/2026/06/get-the-free-metahuman-animator-markerless-mocap-plugin/',
+            urls: [
+                { label: '공식 포럼', href: 'https://forums.unrealengine.com/t/epic-games-metahuman-animator-markerless-motion-capture-plugin/2729293' },
+            ],
+        },
+        {
+            id:          'games-c608ed92-2026-06',
+            tab:         'games',
+            headline:    '포토샵 27.8 업데이트, 내 이미지로 훈련한 커스텀 AI 모델로 게임 아트 생성 가능해져',
+            summary:     '포토샵 27.8에서 10~30장의 이미지로 파인튜닝한 커스텀 AI 모델로 게임 아트를 생성할 수 있게 됐어요.',
+            body:        '<p>어도비가 포토샵 27.8을 출시하면서 \'Generate Image\' 기능에 자신의 이미지 10~30장으로 파인튜닝한 커스텀 AI 모델을 사용하는 베타 기능을 추가했어요. 어도비의 자체 Firefly 모델 외에도 Google Gemini 3.1(Nano Banana 2)과 Black Forest Labs의 FLUX.2 Pro 같은 서드파티 모델도 이제 Generate Image에서 사용할 수 있어요. 커스텀 모델 학습에는 500 크레딧, 이미지 생성 시 20 크레딧이 소모되며, 기본 포토샵 구독에는 월 25 크레딧이 무료 제공돼요.</p><p>VFX·방송 파이프라인을 위한 색상 관리 표준도 강화됐어요. 포토샵 27.8은 OCIO 2.5를 새로 지원해 CY2026 VFX Reference Platform 스펙에 맞춰졌고, ACES 2.0 컬러 인코딩 프레임워크 컨피그도 포함됐어요. 포토샵이 2024년 26.0 버전에서 OCIO를 처음 지원한 이후, 이번 업데이트로 전문 VFX 파이프라인과의 통합이 한층 긴밀해졌어요.</p><p>게임 개발 스튜디오 입장에서는 자사의 고유 아트 스타일로 커스텀 AI 모델을 학습시켜 컨셉 아트와 텍스처 생성의 일관성을 대폭 높일 수 있게 됐어요. 반복 작업을 자동화하는 새로운 창작 워크플로가 게임·VFX 업계 전반에 자리 잡을 것으로 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/adobe-releases-photoshop-27-8/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.19',
+            hue:         30,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260618_Photoshop278.jpg',
+            url:         'https://www.cgchannel.com/2026/06/adobe-releases-photoshop-27-8/',
+            urls: [
+                { label: '커스텀 모델', href: 'https://www.adobe.com/products/firefly/features/custom-models.html' },
+            ],
+        },
+        {
             id:          'games-9db942ab-2026-06',
             tab:         'games',
             headline:    '에픽게임즈, 언리얼 엔진에 생성형 AI 전면 도입 — UE5.8에 MCP 플러그인 출시',
@@ -1028,6 +1058,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-336a574d-2026-06',
+            tab:         'industry',
+            headline:    '팔월드 개발사 포켓페어, \'게이머들이 원하지 않는다면 그게 전부\'—AI 생성 콘텐츠에 선을 긋다',
+            summary:     '포켓페어 커뮤니케이션 디렉터가 게이머들의 반대를 이유로 생성형 AI 콘텐츠 사용에 강경한 반대 입장을 밝혔어요.',
+            body:        '<p>팔월드 개발사 포켓페어의 커뮤니케이션 디렉터 John Buckley가 \'게이머들이 원하지 않는다면 그게 전부\'라며 게임 내 생성형 AI 콘텐츠 사용에 대한 강경한 반대 입장을 밝혔어요. 그는 AI 도입 열기가 \'얼마나 오래 지속될지 모르겠다\'며 거품 가능성을 언급했고, 인간이 만든 게임임을 표기해야 하는 상황이 \'다소 디스토피아적\'이라고 평했어요. 포켓페어는 생성형 AI를 사용한 게임은 퍼블리싱하지 않겠다는 기존 입장을 재확인했어요.</p><p>이 발언은 에픽 게임즈가 포트나이트의 캐릭터 및 환경 컨셉 아트 제작에 생성형 AI를 활용한다고 발표한 직후 나온 것으로, 업계 AI 도입 논쟁의 맥락에서 큰 주목을 받고 있어요. GDC의 2026년 보고서에 따르면 게임 개발자의 52%가 생성형 AI가 업계에 부정적 영향을 미친다고 답했으며, 이는 2025년 30%, 2024년 18%에서 지속적으로 증가한 수치예요.</p><p>팔월드로 크게 성공한 인디 개발사가 유저 정서를 최우선에 두는 행보를 보임으로써, 생성형 AI 도입 여부를 결정하는 데 있어 커뮤니티 반응이 얼마나 중요한지를 다시 한번 보여주는 사례가 됐어요. 특히 포켓페어는 AI 게임임을 밝히는 것이 표준이 되는 상황 자체를 우려하고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/pocketpair-on-generative-ai-in-games-gamers-don-t-want-it-and-if-the-gamers-don-t-want-it-i-guess-that-s-it-right">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.06.19',
+            hue:         0,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltbe73fb33ae04c613/6a34164a8682b9855121d3a3/ss_4c403dcd22f20a11524269c71f9feec96085a762.1920x1080.jpg',
+            url:         'https://www.gamedeveloper.com/business/pocketpair-on-generative-ai-in-games-gamers-don-t-want-it-and-if-the-gamers-don-t-want-it-i-guess-that-s-it-right',
+        },
+        {
+            id:          'industry-ebeb795b-2026-06',
+            tab:         'industry',
+            headline:    '뱀파이어 서바이버즈 개발사, 에픽의 AI 발표에 포트나이트 콜라보 재검토 선언',
+            summary:     'Poncle이 에픽의 생성형 AI 활용 발표 이후 계획했던 포트나이트 크로스오버를 재검토 중이라고 공개적으로 밝혔어요.',
+            body:        '<p>뱀파이어 서바이버즈 개발사 Poncle이 Reddit을 통해 에픽 게임즈의 생성형 AI 활용 발표를 접한 뒤, 계획했던 포트나이트 크로스오버를 현재 재검토 중이라고 공개적으로 밝혔어요. 에픽이 포트나이트 캐릭터 및 환경 컨셉 아트 제작에 생성형 AI를 사용한다고 공표하자, AI에 비판적인 인디 개발사들 사이에서 협업 철회 움직임이 가시화된 거예요. Poncle은 \'AI 사용 방식이 어떻게 진행되는지 알게 되면 알려드리겠다\'고 말해 추후 입장 변화 가능성도 열어뒀어요.</p><p>이번 발언은 에픽의 Unreal Fest 키노트에서 언리얼 엔진 5.8의 MCP 플러그인과 함께 뱀파이어 서바이버즈, Control Resonant, Phantom Blade Zero, Sonic Racing: CrossWorlds 등 4종의 포트나이트 콜라보가 예정돼 있다고 공개한 직후에 나왔어요. 에픽은 생성형 AI를 \'창의성과 생산성의 배수\'로 활용한다는 입장이지만, 파트너 스튜디오들은 이에 동의하지 않는 경우도 늘고 있어요.</p><p>대형 플랫폼의 AI 도입 결정이 파트너십 비즈니스에도 실질적인 영향을 주기 시작했다는 점에서, 에픽의 생성형 AI 활용 정책이 게임 생태계 전반에 얼마나 광범위한 파장을 낳을지 주목돼요. 인디 개발사들의 잇따른 재검토 선언은 AI 정책의 투명성이 협업의 새 기준이 되고 있음을 보여줘요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/vampire-survivors-developer-reviewing-fortnite-collab-after-epic-announced-generative-ai-use">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.06.19',
+            hue:         20,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt90eaa9a405d7953b/6a3404f07f3f2790b6c96006/New_Project(4).png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/business/vampire-survivors-developer-reviewing-fortnite-collab-after-epic-announced-generative-ai-use',
+        },
+        {
             id:          'industry-cf51d186-2026-06',
             tab:         'industry',
             headline:    '인디 게임 팀을 위한 AI 마케팅 에이전트 \'Glitch\' 출시 — SNS·광고·크리에이터 아웃리치 자동화',
@@ -1742,6 +1796,38 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-dea5215f-2026-06',
+            tab:         'art',
+            headline:    '어도비, 파이어플라이 AI 어시스턴트를 프리미어·포토샵·일러스트레이터에 통합—크리에이티브 에이전트 대폭 확장',
+            summary:     '어도비가 파이어플라이 AI 어시스턴트를 주요 앱에 내장해 영상 편집, 레이아웃, 브랜드 작업 전반을 에이전트가 수행하는 워크플로를 선보였어요.',
+            body:        '<p>어도비가 파이어플라이 AI 어시스턴트를 프리미어 프로, 포토샵, 일러스트레이터, 인디자인, Frame.io에 사이드바 형태로 내장하는 대규모 업데이트를 발표했어요. 이제 사용자는 AI에게 배경 교체, 플랫폼별 리사이즈, 레이어 정리, 배치 작업 등 복잡한 다단계 작업을 지시하면 AI가 자동으로 이를 수행해요. ChatGPT, Claude, Copilot, Gemini 등 외부 AI 플랫폼과의 직접 연동도 지원돼요.</p><p>파이어플라이 AI 스튜디오(현재 프라이빗 베타)에는 텍스트 프롬프트만으로 완전한 브랜드 아이덴티티를 생성하거나, 제품 사진에서 시네마틱 영상을 자동으로 제작하고, 스토리보드에서 곧바로 영상을 만드는 새로운 기능이 추가됐어요. 어도비 창의·생산성 부문 사장 David Wadhwani는 \'모든 크리에이터에게 모든 앱과 플랫폼에 걸쳐 실행을 도와주는 에이전트가 생겼다\'고 말했어요.</p><p>단순 이미지 생성 보조를 넘어 영상 편집·레이아웃·브랜드 아이덴티티까지 AI가 창작 전 과정에 개입하는 \'에이전트형 워크플로\'로의 진화는, 게임 아트·VFX·마케팅 파이프라인 전반에서 반복 작업을 대폭 줄여줄 것으로 기대돼요.</p><p>원문: <a href="https://nofilmschool.com/adobe-agentic-ai-update">No Film School</a></p>',
+            source:      'No Film School',
+            publishedAt: '2026.06.19',
+            hue:         290,
+            image:       'https://nofilmschool.com/media-library/adobe-agentic-ai-update.jpg?id=66957300&width=1245&height=700&quality=50&coordinates=0%2C0%2C0%2C0',
+            url:         'https://nofilmschool.com/adobe-agentic-ai-update',
+            urls: [
+                { label: '관련 보도', href: 'https://www.engadget.com/ai/adobe-brings-its-firefly-ai-assistant-inside-of-premiere-photoshop-and-illustrator-130055496.html' },
+                { label: '공식 발표', href: 'https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion' },
+            ],
+        },
+        {
+            id:          'art-da8c2d9f-2026-06',
+            tab:         'art',
+            headline:    '세계 최초 AI 아트 전문 미술관 \'Dataland\', LA에서 6월 20일 개관—레픽 아나돌의 대자연 AI 작품',
+            summary:     '레픽 아나돌 스튜디오가 만든 세계 최초 AI 예술 전문 미술관 Dataland가 LA에서 6월 20일 개관해요.',
+            body:        '<p>레픽 아나돌 스튜디오가 개발한 세계 최초 AI 예술 전문 미술관 \'Dataland\'가 6월 20일 LA 다운타운의 프랭크 게리 설계 건물 The Grand에 문을 열어요. 총 25,000 평방피트 규모로, 첫 전시 \'Machine Dreams: Rainforest\'는 스미소니언·게티 보존연구소 등에서 수집한 자연 데이터를 전용 AI 모델 \'Large Nature Model\'로 처리해 5개의 몰입형 갤러리를 구성해요. 방문자 움직임에 반응해 자연을 재현하는 12억 픽셀의 인터랙티브 디지털 랜드스케이프가 핵심 볼거리예요.</p><p>구글 클라우드는 Gemini Enterprise Agent Platform, Compute Engine(87% 탄소 중립 에너지) 등 핵심 인프라를 지원해요. 구글은 2016년 Artists and Machine Intelligence 프로그램을 통해 아나돌과 인연을 맺은 이후 LA 필하모닉 아카이브 프로젝션(2018), 양자 AI 데이터 시각화(2020) 등 10년간 협업을 이어왔어요. 개관 기념으로 6개월 AI 아티스트 레지던시 프로그램도 운영해, 선발된 4명의 아티스트에게 각 2만 5천 달러 지원금과 구글 클라우드 도구 접근권을 제공해요.</p><p>AI가 단순한 상업 도구를 넘어 예술·문화 기관의 중심으로 자리 잡는 이정표가 될 Dataland는, 크리에이터와 게임 개발자 모두에게 AI를 바라보는 새로운 시각과 영감을 제공할 것으로 기대돼요. 데이터를 물감 삼아 대자연을 그려내는 AI 예술의 가능성을 직접 체험할 수 있어요.</p><p>원문: <a href="https://blog.google/company-news/outreach-and-initiatives/arts-culture/dataland-ai-art-museum/">Google Blog</a></p>',
+            source:      'Google Blog',
+            publishedAt: '2026.06.19',
+            hue:         120,
+            image:       'https://media.timeout.com/images/106414500/750/422/image.jpg',
+            url:         'https://blog.google/company-news/outreach-and-initiatives/arts-culture/dataland-ai-art-museum/',
+            urls: [
+                { label: '공식 사이트', href: 'https://dataland.art' },
+                { label: '관련 보도', href: 'https://www.timeout.com/los-angeles/news/refik-anadol-knows-you-hate-ai-his-dataland-may-change-that-061726' },
+            ],
+        },
         {
             id:          'art-8407a86a-2026-06',
             tab:         'art',
