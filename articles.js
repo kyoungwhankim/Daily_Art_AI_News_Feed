@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-7c8f6b14-2026-06',
+            tab:         'games',
+            headline:    'State of Unreal UE6 Reactions: Hype, Skepticism, and What It Means for Game Devs',
+            summary:     '에픽게임즈의 UE6 로드맵 발표 이후 개발자들 사이에서 기대와 우려가 엇갈리고 있어요.',
+            body:        '<p>에픽게임즈가 \'State of Unreal 2026\'에서 언리얼 엔진 6(UE6)의 공식 로드맵을 공개하며 게임 개발 커뮤니티에 큰 반향을 일으켰어요. UE6는 UE5와 포트나이트 전용 에디터인 UEFN을 하나의 통합 엔진으로 합치는 방향을 제시했고, Claude·Gemini 같은 AI 어시스턴트와 직접 연동되는 MCP(Model Context Protocol) 통합이 핵심 기능으로 포함됐어요. 또한 Verse 프로그래밍 언어가 장기적으로 기존 블루프린트 시스템을 대체할 예정이라고 발표돼, 비주얼 스크립팅에 익숙한 개발자들 사이에서 불안감이 높아지고 있어요.</p><p>AI 기능에 긍정적인 개발자들은 Mesh Terrain 개선, Switch 2를 위한 루멘 라이트 최적화, 오픈소스 버전 관리 시스템 Lore 등 UE 5.8의 실질적인 신기능에 주목하고 있어요. Verse와 LLM의 조합이 코딩 비전문가에게도 높은 접근성을 제공할 것이라는 기대도 있어요. 반면 인디 개발자와 교육 생태계에서는 블루프린트 폐기가 진입 장벽을 높이고 기존 프로젝트 유지보수 비용을 늘릴 것이라는 우려를 제기하고 있어요. 에픽은 UE6 초기 릴리스에서는 블루프린트를 계속 지원하지만 향후 점진적으로 지원이 종료될 예정이라고 공식 발표했어요.</p><p>원문: <a href="https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.06.20',
+            hue:         30,
+            image:       'https://cdn.80.lv/api/upload/meta/48879/images/6a345260cfc30/contain_1200x630.png',
+            url:         'https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs',
+        },
+        {
+            id:          'games-48bff986-2026-06',
+            tab:         'games',
+            headline:    'Unreal Engine\'s AI push sparks backlash as developers fear the end of Blueprints',
+            summary:     '에픽게임즈의 AI 중심 전략 발표 이후 블루프린트 폐기 우려가 개발자 커뮤니티에 퍼지고 있어요.',
+            body:        '<p>에픽게임즈가 언리얼 엔진 6의 AI 통합 계획을 발표한 이후, 블루프린트 시스템이 장기적으로 사라질 수 있다는 우려가 개발자들 사이에서 빠르게 확산되고 있어요. UE6에서는 Nvidia ACE를 활용한 AI 기반 NPC 행동 제어, AI 애니메이션 어시스턴트, 에셋 자동 생성 지원 등 다양한 AI 도구가 도입될 예정이에요. 에픽은 이러한 기능들을 아티스트나 개발자를 대체하는 것이 아닌 \'생산성 향상 도구\'로 규정하며 우려를 달래려 하고 있어요.</p><p>하지만 커뮤니티의 반응은 여전히 엇갈려요. BAFTA 수상작 Clair Obscur: Expedition 33처럼 블루프린트에 크게 의존한 성공 사례가 있는 만큼, 특히 인디 개발자와 비프로그래머 개발자들은 Verse로의 전환이 게임 개발 교육 생태계 전반을 위협할 수 있다고 경고해요. 일부에서는 LLM이 노드 방식의 비주얼 스크립팅보다 실제 스크립팅 언어와 더 잘 맞기 때문에 에픽이 AI 친화적인 방향으로 방향을 틀고 있다는 실용적인 해석도 나와요. 단기적으로는 비용 절감과 빠른 반복 개발을 원하는 스튜디오에 유리하겠지만, 숙련 아티스트의 역할이 줄어들 수 있다는 점은 앞으로도 논쟁이 이어질 전망이에요.</p><p>원문: <a href="https://www.creativebloq.com/3d/video-game-design/unreal-engines-ai-push-sparks-backlash-as-developers-fear-the-end-of-blueprints">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.20',
+            hue:         340,
+            image:       'https://cdn.mos.cms.futurecdn.net/64vFnkqAR7gDvn2c4gkCzS-1600-80.jpg',
+            url:         'https://www.creativebloq.com/3d/video-game-design/unreal-engines-ai-push-sparks-backlash-as-developers-fear-the-end-of-blueprints',
+        },
+        {
             id:          'games-8be37975-2026-06',
             tab:         'games',
             headline:    '에픽 게임즈, 스마트폰 한 대로 메타휴먼 전신 모션 캡처 가능한 무료 플러그인 출시',
@@ -1058,6 +1082,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-1a596bf9-2026-06',
+            tab:         'industry',
+            headline:    'Sony drops \'PC\', adds \'AI\' to official PlayStation business strategy',
+            summary:     '소니가 SEC 연간 보고서에서 \'PC\' 문구를 삭제하고 AI 활용 방침을 공식 전략으로 명시했어요.',
+            body:        '<p>소니가 미국 증권거래위원회(SEC)에 제출한 최신 연간 보고서에서 플레이스테이션 사업 전략 문서에 중요한 변화를 줬어요. 기존에 포함돼 있던 \'PC\' 관련 문구가 삭제되고, 그 자리에 AI 활용 방침이 새롭게 추가됐어요. 보고서에는 \'소니는 AI를 활용해 스튜디오의 창의성을 높이고 PlayStation 경험을 더욱 강화한다\'는 문장이 명시됐어요. 이는 AI가 단순한 실험 단계를 넘어 소니의 공식 사업 전략 핵심 축으로 자리잡았음을 보여줘요.</p><p>업계에서는 이번 변화를 두 가지 측면에서 주목하고 있어요. 첫째, 퍼스트파티 타이틀의 PC 동시 출시 계획에서 한발 물러서는 신호로 해석돼요. 둘째, AI 기반 개발 지원과 게임 경험 강화를 전략적 우선순위로 공식화한 것이에요. 소니 산하 스튜디오들이 AI를 활용한 게임 제작 파이프라인을 적극적으로 도입하고, 플레이스테이션 경험 자체에도 AI가 더 깊이 결합될 것으로 예상돼요. 마이크로소프트와 닌텐도도 AI 통합에 속도를 내고 있는 가운데, 소니의 이번 공식화는 콘솔 업계 전반의 AI 도입 흐름을 가속화할 것으로 보여요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/rockstar-s-legal-setback-final-fantasy-tax-incentives-and-playstation-swaps-pc-for-ai-patch-notes-57">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.06.20',
+            hue:         10,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt32972960811f0322/6a3516fcf3c7147f42450aa4/Patch_Notes_Header.png',
+            url:         'https://www.gamedeveloper.com/business/rockstar-s-legal-setback-final-fantasy-tax-incentives-and-playstation-swaps-pc-for-ai-patch-notes-57',
+        },
+        {
             id:          'industry-336a574d-2026-06',
             tab:         'industry',
             headline:    '팔월드 개발사 포켓페어, \'게이머들이 원하지 않는다면 그게 전부\'—AI 생성 콘텐츠에 선을 긋다',
@@ -1796,6 +1832,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-57a11a96-2026-06',
+            tab:         'art',
+            headline:    'Adobe expands Firefly AI across Premiere, Illustrator, InDesign and Frame.io',
+            summary:     '어도비가 Firefly AI를 주요 크리에이티브 앱 전반으로 확대하며 워크플로우를 통합했어요.',
+            body:        '<p>어도비가 Firefly AI 어시스턴트를 Premiere Pro, Illustrator, InDesign, Frame.io 전반으로 대폭 확대 적용했어요. 이번 업데이트의 핵심은 브랜드 키트를 기반으로 스타일을 자동 적용하는 기능과 AI 기반 스토리보드 생성 기능이에요. 새롭게 추가된 \'Elements\' 기능은 반복되는 디자인 요소를 AI가 자동으로 생성하고 배치해 주기 때문에 패턴 작업이나 템플릿 제작 시간을 크게 줄일 수 있어요. \'Projects\' 기능은 팀 협업 워크플로우를 하나의 공간에서 통합 관리해 대형 프로젝트에서도 일관성을 유지하기 쉽게 해줘요.</p><p>주목할 점은 어도비 생태계 안에서 ChatGPT, Claude, Microsoft Copilot 같은 외부 AI와의 연동이 공식 지원된다는 거예요. 이를 통해 사용자는 하나의 작업 공간 안에서 다양한 LLM을 활용한 콘텐츠 생성과 편집을 함께 진행할 수 있게 됐어요. 크리에이터들에게는 반복적인 수작업을 줄이고 창의적인 의사결정에 집중할 수 있는 환경이 만들어지는 것이에요. 어도비는 이번 업데이트로 Firefly를 단순한 이미지 생성 도구가 아닌, 크리에이티브 프로세스 전반을 아우르는 통합 AI 플랫폼으로 자리매김하려는 전략을 분명히 했어요.</p><p>원문: <a href="https://dataconomy.com/2026/06/19/adobe-firefly-ai-updates-premiere-illustrator-indesign/">Dataconomy</a></p>',
+            source:      'Dataconomy',
+            publishedAt: '2026.06.20',
+            hue:         260,
+            image:       'https://dataconomy.com/wp-content/uploads/2026/06/adobe-firefly-ai-updates-premiere-illustrator-indesign.jpg',
+            url:         'https://dataconomy.com/2026/06/19/adobe-firefly-ai-updates-premiere-illustrator-indesign/',
+        },
         {
             id:          'art-dea5215f-2026-06',
             tab:         'art',
