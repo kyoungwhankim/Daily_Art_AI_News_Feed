@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-90750c4c-2026-06',
+            tab:         'games',
+            headline:    'CG 아티스트가 알아야 할 언리얼 엔진 6의 10가지 핵심',
+            summary:     '에픽게임즈가 언리얼 엔진 6을 공개하며 UEFN 통합, Verse 언어 채택, 블루프린트 폐기 등 대규모 변화를 예고했어요.',
+            body:        '<p>에픽게임즈가 시카고에서 열린 언리얼 페스트 2026에서 차세대 게임 엔진 \'언리얼 엔진 6(UE6)\'의 주요 계획을 공개했어요. 기존 언리얼 에디터와 포트나이트 전용 에디터(UEFN)를 하나로 통합하고, Verse 프로그래밍 언어를 엔진 핵심 기반으로 채택하는 것이 핵심 변화예요. 에픽 CEO 팀 스위니는 \'UE5가 세계 제작 방식을 재창조했다면, UE6는 배포 및 운영 방식을 진화시킨다\'고 설명했어요. 단일 코드베이스로 콘솔, PC, 모바일, 포트나이트 생태계 전체에 동시 배포 가능한 게임을 만들 수 있는 점이 핵심 장점이에요.</p><p>UE6의 가장 큰 변화 중 하나는 블루프린트 비주얼 스크립팅의 폐기예요. 블루프린트는 비프로그래머도 코딩 없이 게임 로직을 구현할 수 있게 해주던 도구였기에, 이 결정은 커뮤니티에서 큰 논란이 되고 있어요. 대신 새로운 Verse Scene Graph가 환경 제작 프레임워크로 도입되며, Verse 언어 기반으로 멀티플레이어 코드를 여러 서버에 자동 분산하는 기능도 지원해요. 변환 도구가 제공될 예정이지만, 기존 블루프린트 기반 프로젝트의 전환 부담은 적지 않을 것으로 예상돼요.</p><p>UE6는 단순한 버전 업그레이드가 아니라 엔진 아키텍처 전체를 재설계하는 수준의 변화예요. 게임뿐 아니라 VFX, 버추얼 프로덕션, 건축 시각화 등 다양한 분야에서 수백만 명의 사용자에게 직접적인 영향을 미칠 전망이에요. CG 아티스트와 개발자 모두 UE6로의 전환 계획을 미리 준비해두는 것이 중요할 것 같아요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/10-things-cg-artists-need-to-know-about-unreal-engine-6/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.22',
+            hue:         30,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260621_UnrealEngine6.jpg',
+            url:         'https://www.cgchannel.com/2026/06/10-things-cg-artists-need-to-know-about-unreal-engine-6/',
+        },
+        {
             id:          'games-7c8f6b14-2026-06',
             tab:         'games',
             headline:    'State of Unreal UE6 Reactions: Hype, Skepticism, and What It Means for Game Devs',
@@ -1082,6 +1094,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-cb3a177b-2026-06',
+            tab:         'industry',
+            headline:    'DeepMind, AI 에이전트 안전 제어 체계 공개',
+            summary:     '구글 딥마인드가 AI 에이전트를 시스템 수준에서 안전하게 제어하기 위한 로드맵을 발표했어요.',
+            body:        '<p>구글 딥마인드가 강력한 AI 에이전트를 안전하게 제어하기 위한 \'AI 컨트롤 로드맵\'을 발표했어요. 핵심 전제는 실용적이에요. 모델이 유용하게 학습되었더라도, 시스템이 잘못 작동하는 상황에 대비해 별도의 안전 장치가 필요하다는 거예요. 딥마인드는 고급 에이전트를 민감한 시스템에 접근 권한을 가진 내부자 위협에 비유하며, 학습 기반 정렬(alignment)만으로는 충분하지 않다고 강조했어요. 기술적 학습과 시스템 수준의 제어를 함께 갖춰야 진정한 안전이 가능하다는 시각이에요.</p><p>로드맵은 신뢰할 수 있는 AI 감독자가 에이전트의 추론, 행동, 계획을 모니터링하도록 하고, 위험 수준에 따라 저위험 행동은 사후 검토, 위험한 행동은 실시간 차단 방식을 적용하는 체계를 제안해요. 에이전트가 단순 질답을 넘어 파일 읽기, 코드 작성, 외부 API 호출, 다단계 작업 수행까지 담당하게 되면서, 워크플로 안전성이 더욱 중요해졌어요. 잘못된 답변은 불편함에 그치지만, 잘못된 행동은 데이터 삭제나 파일 유출로 이어질 수 있기 때문이에요.</p><p>딥마인드는 안전 성능의 구체적 지표로 커버리지(모니터링 트래픽 비율), 재현율(악성 행동 탐지율), 대응 시간을 제시해 실질적으로 측정 가능한 안전 운영 체계를 강조했어요. 게임 개발에 AI 에이전트를 도입하는 팀이라면 이 로드맵에서 접근 권한 관리, 감사 로그, 샌드박싱 방법론에 대한 중요한 참고 사항을 얻을 수 있어요.</p><p>원문: <a href="https://www.theneurondaily.com/p/deepmind-mapped-ai-agent-controls">The Neuron Daily</a></p>',
+            source:      'The Neuron Daily',
+            publishedAt: '2026.06.22',
+            hue:         200,
+            image:       'https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ed375032-633c-4d6e-b34a-b2795bf9fc92/Gemini_Generated_Image_k9l4fik9l4fik9l4.png',
+            url:         'https://www.theneurondaily.com/p/deepmind-mapped-ai-agent-controls',
+        },
+        {
+            id:          'industry-b672d0aa-2026-06',
+            tab:         'industry',
+            headline:    'AI 에이전트 툴 콜링이란? LLM이 행동을 결정하는 방법',
+            summary:     '툴 콜링이 LLM을 단순 텍스트 생성기에서 행동하는 에이전트로 변환하는 방법을 단계별로 풀어낸 기술 해설이에요.',
+            body:        '<p>Towards Data Science가 AI 에이전트의 핵심 메커니즘인 \'툴 콜링(도구 호출)\'을 상세히 설명했어요. 툴 콜링은 LLM이 단순한 텍스트 생성기에서 벗어나 실제 행동을 취할 수 있게 해주는 기술이에요. 핵심은 모델이 도구를 직접 실행하지 않는다는 점이에요. 모델은 어떤 도구를 어떤 인자로 호출할지 결정할 뿐이고, 실제 실행은 코드에서 이루어져요. 코드가 도구를 실행한 결과를 다시 모델에 전달하면, 모델이 그 결과를 바탕으로 최종 응답을 생성하는 방식이에요.</p><p>툴 콜링 루프의 단계는 다음과 같아요. 사용자가 메시지를 입력하면 AI 모델이 어떤 도구를 어떤 인자로 호출할지 결정하고, 코드가 해당 도구를 실행해 결과를 얻어요. 그 결과가 모델로 전달되면 모델이 사용자를 위한 최종 답변을 생성해요. 날씨 API 조회, 데이터베이스 쿼리, 외부 API 호출 등 거의 모든 외부 동작이 이 패턴으로 처리돼요. 게임 개발에서 AI를 도입할 때도 게임 상태 조회, 캐릭터 행동 제어, 외부 서비스 연동 등에 직접 적용 가능한 개념이에요.</p><p>이 글은 단순한 설명에 그치지 않고, 단일 도구 호출부터 병렬 도구 호출, 중첩 호출까지 코드 예제를 통해 단계별로 풀어내요. AI 에이전트 시스템을 직접 구현하거나 게임 로직에 AI를 통합하려는 개발자에게 실용적인 입문 자료예요.</p><p>원문: <a href="https://towardsdatascience.com/tool-calling-explained-how-ai-agents-decide-what-to-do-next/">Towards Data Science</a></p>',
+            source:      'Towards Data Science',
+            publishedAt: '2026.06.22',
+            hue:         220,
+            image:       'https://towardsdatascience.com/wp-content/uploads/2026/06/Capture.jpg',
+            url:         'https://towardsdatascience.com/tool-calling-explained-how-ai-agents-decide-what-to-do-next/',
+        },
+        {
             id:          'industry-ae43b61d-2026-06',
             tab:         'industry',
             headline:    '전 Dragon Age 작가, AI가 게임 개발을 \'지옥처럼 답답하게\' 만들 것이라 경고',
@@ -1868,6 +1904,42 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9d3c5a11-2026-06',
+            tab:         'art',
+            headline:    'AI로 혼자서 트랜스미디어 SF 유니버스를 만드는 크리에이터',
+            summary:     '크리에이터 제라르 비스발이 AI를 활용해 혼자서 솔라펑크 SF 트랜스미디어 유니버스 NUVAGAIA를 구축하고 있어요.',
+            body:        '<p>크리에이터 제라르 비스발이 AI를 활용해 혼자서 NUVAGAIA라는 솔라펑크 SF 트랜스미디어 유니버스를 구축하고 있어요. 팟캐스트, 단편 소설, 이미지, 영상, 웹사이트, 공개 세계관까지 다양한 매체에 걸쳐 있는 방대한 프로젝트예요. 그는 \'AI가 없었다면 NUVAGAIA는 여전히 메모 폴더 속에만 존재했을 것\'이라고 말해요. 이미지는 정교한 프롬프트로 반복 생성·선별하고, 팟캐스트 목소리는 TTS로 만든 뒤 편집과 음악 선택은 직접 해요. 세계관 일관성 유지와 캐논 정리에도 AI를 적극 활용해요.</p><p>흥미로운 점은 기술 자체보다 그것을 어떻게 이끌고 편집하느냐에요. 비스발은 \'일관성은 AI에서 나오지 않는다. 명확한 기준과 나의 판단에서 나온다\'고 강조해요. NUVAGAIA는 내부 규칙, 문명 체계, 미학, 연대기를 갖추고 있으며, 어떤 이미지나 텍스트가 세계관에 맞는지 결정하는 것은 항상 인간 크리에이터예요. AI는 작업 속도를 올려줄 뿐, 창작의 방향과 철학은 온전히 그가 이끌어가요.</p><p>이 사례는 AI 시대 솔로 크리에이터의 가능성을 잘 보여줘요. 과거라면 수십 명의 팀과 수백만 달러가 필요했을 규모의 창작이 이제는 혼자서도 가능해진 거예요. 게임 개발자나 디지털 아티스트가 소규모로 세계관 기반 IP를 만들고 싶다면 참고할 만한 현실적인 사례예요.</p><p>원문: <a href="https://www.creativebloq.com/ai/how-one-person-is-using-ai-to-create-a-transmedia-universe">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.22',
+            hue:         270,
+            image:       'https://cdn.mos.cms.futurecdn.net/bDb9jYqKsUHs4kfci4WJm8-1600-80.jpg',
+            url:         'https://www.creativebloq.com/ai/how-one-person-is-using-ai-to-create-a-transmedia-universe',
+        },
+        {
+            id:          'art-858f92e9-2026-06',
+            tab:         'art',
+            headline:    'AI에 굴하지 않고 대형 캔버스 전통 회화를 이어가는 판타지 아티스트',
+            summary:     'AI 프롬프트에 가장 많이 도용된 아티스트 중 하나인 그레그 루트코프스키가 대형 캔버스 전통 유화 작업을 이어가고 있어요.',
+            body:        '<p>폴란드 출신의 판타지 아티스트 그레그 루트코프스키(Grzegorz Rutkowski)는 Wizards of the Coast, 블리자드, 디즈니, 유비소프트 등 대형 엔터테인먼트사와 협업해온 유명 아티스트예요. 그런데 그의 이름은 Midjourney, Stable Diffusion 등 AI 이미지 생성 프롬프트에 가장 많이 사용된 아티스트 중 하나가 되어버렸어요. 동의 없이 수백만 번 AI 학습 데이터에 화풍이 활용된 것이에요. 이 현실이 불편하지만, 그는 전통 유화와 아크릴화 작업을 멈추지 않고 있어요.</p><p>그의 대형 캔버스 작품들은 종종 200×130cm에 달하는 거대한 사이즈로, 완성까지 수개월이 걸려요. 최근에는 전투 장면 유화 제작 전 과정을 기록해 강의로 공개하기도 했어요. 그는 전통 회화야말로 AI가 쉽게 복제할 수 없는 물질성과 시간성을 담고 있다고 말해요. 디지털 도구도 병행하지만, 전통 방식에 대한 헌신이 그의 정체성 핵심이에요.</p><p>게임 컨셉 아티스트들에게도 시사점이 있어요. AI가 특정 아티스트의 화풍을 모방할 수 있게 된 지금, 자신만의 고유한 표현 방식과 제작 과정이 더욱 중요한 자산이 되고 있어요. 루트코프스키의 선택은 AI 시대에 인간 아티스트가 어떻게 자신의 위치를 지킬 수 있는지 보여주는 하나의 답이에요.</p><p>원문: <a href="https://www.creativebloq.com/art/traditional-art/this-acclaimed-fantasy-artist-isnt-letting-ai-put-him-off-traditional-painting-on-vast-canvases">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.06.22',
+            hue:         40,
+            image:       'https://cdn.mos.cms.futurecdn.net/ziyFwcq9vY7Xtxn8RXc46a-2400-80.jpg',
+            url:         'https://www.creativebloq.com/art/traditional-art/this-acclaimed-fantasy-artist-isnt-letting-ai-put-him-off-traditional-painting-on-vast-canvases',
+        },
+        {
+            id:          'art-2586b660-2026-06',
+            tab:         'art',
+            headline:    'Siri를 넘어: iOS 27의 실용적인 Apple Intelligence 기능들',
+            summary:     'WWDC 2026에서 공개된 iOS 27은 Siri 개편 외에도 더치페이, 자동 비밀번호 업그레이드, 통화 컨텍스트 등 실용적인 AI 기능을 탑재했어요.',
+            body:        '<p>테크크런치가 WWDC 2026에서 발표된 iOS 27의 Apple Intelligence 기능들을 정리했어요. Siri 개편이 헤드라인을 장식했지만, 실제 일상을 바꿀 AI 기능들은 다른 곳에 있어요. 영수증 사진을 찍으면 항목·수량·팁을 자동 추출해 Apple Cash로 더치페이를 처리하는 기능, 비밀번호 유출이 감지되면 자동으로 보안 업그레이드를 수행하는 기능, 메시지 맥락을 분석해 일정 추가나 사진 공유를 한 번에 제안하는 기능이 포함돼요.</p><p>고객센터 통화 중 이메일에서 확인 코드 등 관련 정보를 화면에 실시간 표시하는 통화 컨텍스트 기능, 양식 입력 없이 자연어로 일정을 추가하는 캘린더, 코딩 없이 자동화를 음성으로 만드는 단축어 기능도 주목할 만해요. 스마트홈 알림은 여러 관련 동작을 하나로 묶어 표시하고, 사파리는 열린 탭을 주제별로 자동 분류해줘요. Apple은 \'AI 전략이 소프트웨어 전반에 내장된 작은 기능들의 집합으로 구체화되고 있다\'고 밝혔어요.</p><p>Apple 기기를 크리에이티브 워크플로에 활용하는 디지털 아티스트와 게임 개발자에게 이번 업데이트는 실질적인 생산성 향상을 가져올 수 있어요. 단순한 AI 시연이 아닌, 일상 작업에 조용히 스며드는 방식의 AI 도입이라는 점에서 업계의 주목을 받고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.06.22',
+            hue:         10,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/01/tim-cook-iphone-GettyImages-2234563479.jpg',
+            url:         'https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/',
+        },
         {
             id:          'art-4a26c725-2026-06',
             tab:         'art',
