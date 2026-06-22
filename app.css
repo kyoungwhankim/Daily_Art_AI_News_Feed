@@ -637,13 +637,36 @@ mark {
   flex-wrap: wrap;
 }
 .modal-meta a {
-  margin-left: auto;
   color: var(--link);
   text-decoration: none;
   font-weight: 600;
   display: inline-flex; align-items: center; gap: 6px;
 }
+.modal-meta a:first-of-type { margin-left: auto; }
 .modal-meta a:hover { text-decoration: underline; }
+/* when copy button present, it owns the far-right slot via order+auto-margin */
+.modal-meta:has(.modal-copy) a:first-of-type { margin-left: 0; }
+.modal-meta:has(.modal-copy) a { margin-left: 0; }
+.modal-copy {
+  margin-left: auto;
+  order: 99;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--card);
+  border: 1.5px solid var(--stroke);
+  border-radius: 999px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.modal-copy:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
+.modal-copy:active { transform: translateY(1px); box-shadow: none; }
+.modal-copy.copied { background: var(--accent); color: #fff; border-color: var(--accent); }
 .modal-article {
   font-size: 16px;
   line-height: 1.85;

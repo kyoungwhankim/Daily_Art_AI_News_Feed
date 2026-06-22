@@ -294,6 +294,33 @@ function FeedMeta({ activeTab, count, viewSaved, query }) {
 function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArticles }) {
   const bodyRef = useRef(null);
   const [progress, setProgress] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+  const copyLink = () => {
+    const url = new URL(window.location.href);
+    url.searchParams.set('article', article.id);
+    const link = url.toString();
+    const done = () => { setCopied(true); setTimeout(() => setCopied(false), 1600); };
+    const fallback = () => {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = link;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
+      } catch (e) { /* no-op */ }
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(done, fallback);
+    } else {
+      fallback();
+    }
+  };
 
   useEffect(() => {
     const onKey = e => { if (e.key === 'Escape') onClose(); };
@@ -364,6 +391,23 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
                 <path d="M7 17 17 7" /><path d="M8 7h9v9" />
               </svg>
             </a>
+            <button type="button" className={`modal-copy ${copied ? 'copied' : ''}`} onClick={copyLink}>
+              {copied ? (
+                <>
+                  복사됨
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </>
+              ) : (
+                <>
+                  링크 복사
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                  </svg>
+                </>
+              )}
+            </button>
             {Array.isArray(article.urls) && article.urls.filter(u => u && u.href).map((u, i) => (
               <a key={i} href={u.href} target="_blank" rel="noopener noreferrer">
                 {u.label || '관련 링크'}
