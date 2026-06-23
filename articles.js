@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-6a770e18-2026-06',
+            tab:         'games',
+            headline:    'Unity 6.5 출시 — 셰이더 그래프·VFX 그래프 개선 및 AI 신경망 디노이저 전환',
+            summary:     'Unity 6.5가 출시되며 OIDN 디노이저 도입, 셰이더 그래프 HLSL 지원 등 게임 아티스트 핵심 기능이 대폭 강화됐어요.',
+            body:        '<p>Unity 6.5가 공개됐어요. 이번 업데이트에서 가장 주목할 변화는 HDRP의 NVIDIA OptiX 디노이저를 인텔의 오픈소스 OIDN(Open Image Denoise)으로 교체한 것이에요. OptiX는 NVIDIA GPU에서만 동작했지만, OIDN은 하드웨어에 구애받지 않는 크로스플랫폼 솔루션으로, Unity에 따르면 성능 면에서도 OptiX를 능가해요. 기존 OptiX 기반 프로젝트는 대부분 자동으로 전환되지만, HDRP 패스 트레이서에서 시간적 일관성 모드를 사용하던 경우에는 올해 말 OIDN 3가 출시될 때까지 일부 호환성 이슈가 발생할 수 있어요. NVIDIA GPU가 없는 개발자나 멀티플랫폼 빌드 환경에서도 동일한 품질의 AI 기반 노이즈 제거를 활용할 수 있게 됐다는 점이 핵심이에요. 이와 함께 오래된 빌트인 렌더 파이프라인(BIRP)도 공식 지원 중단이 선언됐으며, 향후에는 URP와 HDRP 중심으로 개발이 집중될 예정이에요.</p><p>셰이더 그래프에도 테크니컬 아티스트를 위한 신기능이 추가됐어요. HLSL로 커스텀 노드를 직접 작성할 수 있는 함수 리플렉션 API가 도입됐고, 여러 수식 노드를 하나로 처리하는 Expression 노드와 조건에 따라 그래프를 분기하는 Switch 노드도 생겼어요. URP에서는 온타일 포스트 프로세싱이 전 플랫폼에서 지원되며, Vulkan·Metal 기기에서도 HDR 렌더링과 컬러 그레이딩을 실용적으로 쓸 수 있게 됐어요. 2D 툴셋에는 커스텀 조명·그림자 API와 케이지 기반 스프라이트 변형을 위한 블렌드셰이프 API가 새로 추가됐고, VFX 그래프의 검색·필터링·정렬 기능도 강화됐어요. 조명 작업에는 대규모 씬에서 개별 라이트를 손쉽게 찾을 수 있는 라이팅 검색 창도 새로 도입됐어요. 언리얼 엔진 6의 대형 발표에 가려졌지만, 아티스트 워크플로우 전반에 걸친 실용적인 개선이 담긴 알찬 업데이트예요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/unity-releases-unity-6-5-discover-5-key-features-for-cg-artists/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.23',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260622_Unity65_5KeyFeaturesForCGArtists_f.jpg',
+            url:         'https://www.cgchannel.com/2026/06/unity-releases-unity-6-5-discover-5-key-features-for-cg-artists/',
+        },
+        {
             id:          'games-90750c4c-2026-06',
             tab:         'games',
             headline:    'CG 아티스트가 알아야 할 언리얼 엔진 6의 10가지 핵심',
@@ -1094,6 +1106,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-a5068806-2026-06',
+            tab:         'industry',
+            headline:    'Godot 엔진, AI 보조 코드는 일부 허용 — 그러나 \'바이브 코딩\' PRs는 단호히 거부',
+            summary:     'Godot 핵심 개발자가 AI 정책을 공식 재확인하며, 번역·코드 완성 등 제한적 AI 보조는 허용하되 AI 생성 코드 기여는 엄격히 금지한다고 밝혔어요.',
+            body:        '<p>오픈소스 게임 엔진 Godot의 핵심 개발자 Rémi Verschelde가 엔진의 AI 기여 정책을 공식 재확인했어요. Godot는 번역, 단일 행 코드 완성, 디버깅 보조 등 제한적인 AI 사용은 허용하지만, ChatGPT·Claude·Grok 등을 통해 전면 생성된 AI 코드 기여는 엄격히 금지해요. Verschelde는 \'슬롭(slop) PR은 자동으로 거부된다\'고 단언하며, AI 사용을 명시한 기여는 일반 PR보다 더욱 엄밀하게 심사한다고 밝혔어요. 최근 두 릴리즈 주기 동안 제출된 3,700건의 PR 중 AI 활용을 명시한 경우는 47건에 불과했고, 이는 전체의 1.27%에 그쳐요. 그는 \'Godot는 바이브 코딩으로 만들어진 엔진이 아니다\'라고 강조하며 유지보수자들이 AI 사용 전반에 꽤 비판적인 시각을 유지하고 있다고 덧붙였어요.</p><p>Godot 재단은 조만간 더 구체적이고 제한적인 AI 공식 가이드라인을 발표할 예정이에요. 완전 금지는 아니지만, 기여자들은 AI 도구 사용 여부를 반드시 공개해야 하며 코드 품질과 저작권에 대한 책임도 직접 져야 해요. 공개하지 않은 상당한 AI 생성 코드가 포함된 경우에는 기여 자체가 무효화돼요. 이번 명확화는 최근 오픈소스 생태계 전반에서 AI 생성 코드 기여로 인한 품질 저하와 저작권 분쟁이 늘어나는 흐름 속에 나왔어요. Godot는 사람이 책임지는 기여 문화를 지키겠다는 입장을 분명히 한 셈이며, AI 도구 확산 속에서 오픈소스 프로젝트들이 어떤 원칙을 세울지에 대한 하나의 기준이 되고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/godot-confirms-it-tolerates-some-ai-assistance-but-rejects-vibe-coded-accusations">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.06.23',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf4f1a7b9900f3d9c/6a395977e5ec924ec8f0c02c/Godot_Header.png',
+            url:         'https://www.gamedeveloper.com/business/godot-confirms-it-tolerates-some-ai-assistance-but-rejects-vibe-coded-accusations',
+        },
+        {
             id:          'industry-cb3a177b-2026-06',
             tab:         'industry',
             headline:    'DeepMind, AI 에이전트 안전 제어 체계 공개',
@@ -1904,6 +1928,37 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-d0031300-2026-06',
+            tab:         'art',
+            headline:    '구글 딥마인드, 독립 영화사 A24에 1,050억 원 투자 — AI 영화 제작 도구 공동 개발',
+            summary:     '구글 딥마인드가 A24에 7,500만 달러를 투자하며 창작자 중심의 AI 영화 제작 도구를 공동 개발하는 연구 파트너십을 체결했어요.',
+            body:        '<p>구글 딥마인드가 \'에브리씽 에브리웨어 올 앳 원스\', \'백룸스\' 등으로 유명한 독립 영화사 A24에 7,500만 달러(약 1,050억 원)를 투자하며 AI 영화 제작 도구 공동 연구 파트너십을 체결했어요. 딥마인드 CEO 데미스 하사비스는 \'영화 제작자와 A24 같은 업계 리더들과 처음부터 협업해 예술가들을 지원하는 AI 기능을 만들 수 있다\'고 밝혔어요. 이번 협약은 단순한 제작 위탁이 아닌 연구 협력으로, A24의 콘텐츠 라이브러리나 데이터는 구글에 제공되지 않아요. 딥마인드 연구진이 스튜디오 크리에이터들과 직접 협력해 AI 스토리보드 생성 등 실제 영화 현장에서 쓸 수 있는 새로운 워크플로우를 함께 개발하는 방식이에요.</p><p>A24 측은 \'단순 프롬프트 기반 생성 AI와는 전혀 다른 방식\'임을 강조했어요. 기술이 창작자를 대체하는 것이 아니라, 창작자가 도구를 통제하는 방향을 지향한다는 거예요. 이번 투자는 넷플릭스의 InterPositive(벤 에플렉의 회사) 인수, Amazon MGM의 AI 제작 유닛 출범에 이어 헐리우드 전반에서 AI 파이프라인 통합이 가속화되는 흐름의 연장선이에요. 그러나 대형 스트리밍 플랫폼 주도의 AI 통합과 달리 이번 파트너십은 예술적 독립성으로 명성 높은 독립 스튜디오가 연구 협력 형태로 참여한다는 점에서 주목돼요. 빅테크와 인디 영화 생태계의 결합이 AI 영화 제작 도구의 창작적 활용 방향에 어떤 영향을 줄지 업계의 관심이 쏠리고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.06.23',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2252299302.jpg',
+            url:         'https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/',
+            urls: [
+                { label: '공식 발표', href: 'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/' },
+                { label: '관련 보도', href: 'https://variety.com/2026/film/news/google-a24-ai-filmmaking-tools-1236787297/' },
+            ],
+        },
+        {
+            id:          'art-09411c91-2026-06',
+            tab:         'art',
+            headline:    '사이언스 사루의 \'공각기동대\', 아네시에서 \'생성 AI 무사용\' 선언 — 관객 기립 박수',
+            summary:     '사이언스 사루가 신작 공각기동대를 아네시 애니메이션 페스티벌에서 공개하며 생성 AI를 일절 사용하지 않았다고 선언해 뜨거운 호응을 받았어요.',
+            body:        '<p>일본 애니메이션 스튜디오 사이언스 사루(Science SARU)가 새 \'공각기동대\' 시리즈 첫 두 편을 2026 아네시 국제 애니메이션 페스티벌에서 공개했어요. \'단단단\'과 \'스콧 필그림 테이크 오프\'로 알려진 감독 모코쨩(토우마 키무라)은 관객과의 패널 토크에서 이 작품이 수제 드로잉 애니메이션과 3D CG를 결합했으며 생성 AI는 일절 사용하지 않았다고 선언해 뜨거운 기립 박수를 받았어요. 작품의 독특한 거리 간판과 건물 문자가 판독 불가능하게 표현된 것도 AI 생성이 아닌 의도적인 예술적 선택임을 밝혔어요. 주인공이 회차마다 다른 48가지 의상을 입는 것도 애니메이션의 제작 부담을 줄이지 않겠다는 스튜디오의 의지를 보여주는 선택이에요.</p><p>이 선언은 지난해 아네시에서 역대 최대 규모의 AI 반대 시위가 열렸던 것과 대조를 이루며, 애니메이션 업계 내 생성 AI 찬반 논쟁이 고조되는 시점에 나와 더욱 주목받았어요. 작품은 에피소드마다 다른 색상 팔레트, 인간과 기계의 경계를 흐리는 독특한 음영 처리가 특징이며, 전형적인 오리진 스토리 형식을 피하고 기존 세계관에 바로 뛰어드는 빠른 전개도 인상적이에요. 제작사에는 코단샤, 사이언스 사루, 반다이남코 필름웍스가 참여했어요. 전작들과 달리 이번 공각기동대는 7월 7일 아마존 프라임 비디오를 통해 전 세계에 공개될 예정이에요.</p><p>원문: <a href="https://nexuspointnews.com/ghost-in-the-shell-had-its-two-episode-premiere-at-annecy-animation-festival/">Nexus Point News</a></p>',
+            source:      'Nexus Point News',
+            publishedAt: '2026.06.23',
+            hue:         260,
+            image:       'https://i0.wp.com/nexuspointnews.com/wp-content/uploads/2026/06/Ghost-on-the-Shell_20260622_132359_0000-scaled.jpg?resize=1200%2C630&ssl=1',
+            url:         'https://nexuspointnews.com/ghost-in-the-shell-had-its-two-episode-premiere-at-annecy-animation-festival/',
+            urls: [
+                { label: '원본 트윗', href: 'https://x.com/cartoonbrew/status/2069010277312401634' },
+            ],
+        },
         {
             id:          'art-9d3c5a11-2026-06',
             tab:         'art',
