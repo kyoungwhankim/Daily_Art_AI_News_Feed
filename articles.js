@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-564a43fd-2026-06',
+            tab:         'games',
+            headline:    'Adobe Substance 3D Painter 12.1 출시 — 연속 리베이킹·UV 언랩 등 신기능 추가',
+            summary:     'Adobe의 Substance 3D Painter 12.1이 연속 리베이킹과 UV 언랩 신기능을 선보였어요.',
+            body:        '<p>Adobe가 3D 텍스처 페인팅 소프트웨어 Substance 3D Painter 12.1을 출시했어요. 이번 업데이트에서 가장 눈에 띄는 변화는 베이킹 툴셋 개편으로, 연속 리베이킹(Continuous Rebaking) 기능이 새로 도입됐답니다. 기존에는 베이킹 파라미터를 바꿀 때마다 수동으로 다시 베이크해야 했지만, 이제는 설정을 조정하는 즉시 노멀 맵·커버처 맵 같은 2D 텍스처가 자동으로 갱신돼요. 스큐 보정(Skew Correction) 페인팅 기능도 추가됐는데, 로우폴리 메시에 직접 페인팅해서 베이킹 아티팩트를 수정하는 방식이에요. 수정된 영역은 메시 자체의 노멀을 사용하고 나머지는 기존 케이지를 유지해 세밀한 제어가 가능하답니다.</p><p>UV 언랩 시스템도 대폭 업그레이드됐어요. 기존에는 캐릭터 같은 오가닉 형태에 최적화되어 있었지만, 이번 12.1 버전에서는 하드서피스 전용 모드가 추가됐답니다. 기계·차량·제품처럼 직선이 많은 에셋에 적합하도록 UV 왜곡을 최소화하고 직교 정렬된 레이아웃을 생성해줘요. 기본 셰이딩 모델도 OpenPBR로 바뀌었고, 베이킹과 페인팅 모드가 이제 하나의 히스토리 스택을 공유해서 작업 흐름이 훨씬 자연스러워졌어요. 플랫폼은 Windows 11, macOS 12.0 이상, Linux를 지원하며 Steam 영구 라이선스는 $199.99, Adobe Creative Cloud 구독으로도 이용할 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/adobe-releases-substance-3d-painter-12-1/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.25',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260624_SubstancePainter121_UVUnwrap.jpg',
+            url:         'https://www.cgchannel.com/2026/06/adobe-releases-substance-3d-painter-12-1/',
+        },
+        {
+            id:          'games-349e2abd-2026-06',
+            tab:         'games',
+            headline:    'Reallusion, 무료 3D 애니메이션 툴 iClone Personal 공개 — AI Studio로 AI 영상 생성 지원',
+            summary:     'Reallusion이 iClone Personal 영구 무료 버전을 출시하며 AI Studio도 함께 선보였어요.',
+            body:        '<p>Reallusion이 3D 실시간 애니메이션 소프트웨어 iClone의 무료 에디션인 iClone Personal을 공개했어요. 기존의 30일 체험판과 달리 기간 제한이 없으며, 상업 프로젝트에도 활용할 수 있답니다. 유료 버전과 동일한 전체 툴셋과 렌더 해상도를 제공하지만, 다른 3D 소프트웨어나 게임 엔진으로의 내보내기는 평생 30회로 제한돼요. 30회를 소진한 후에도 iClone 자체의 모든 기능은 유지되므로, 초기 개발은 무료 버전으로 진행하다 최종 내보내기 시점에 구독을 시작하는 방식으로 활용할 수 있어요.</p><p>이번 공개와 함께 AI Studio도 정식 출시됐어요. AI Studio는 iClone 및 Character Creator에 통합된 3D 기반 AI 렌더링 툴셋으로, 3D 장면 데이터를 가이드 삼아 FLUX, Nano Banana, Veo, Seedance 등 다양한 외부 AI 모델로 이미지·영상을 생성할 수 있어요. AI 생성 기능은 별도의 AI Cloud 구독 크레딧 방식으로 운영되며, iClone Personal 사용자도 이용 가능하답니다. GPU 기반 포토리얼리스틱 렌더 엔진 RTX Render의 오픈 베타는 2026년 7월로 예정되어 있으며, 개인 프로젝트 한정으로 사용할 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/reallusion-releases-free-animation-tool-iclone-personal/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.25',
+            hue:         30,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260624_iClonePersonal_FreeiCloneEdition_f.jpg',
+            url:         'https://www.cgchannel.com/2026/06/reallusion-releases-free-animation-tool-iclone-personal/',
+        },
+        {
             id:          'games-6a770e18-2026-06',
             tab:         'games',
             headline:    'Unity 6.5 출시 — 셰이더 그래프·VFX 그래프 개선 및 AI 신경망 디노이저 전환',
