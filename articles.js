@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-9b683651-2026-06',
+            tab:         'games',
+            headline:    'Epic Games RealityScan 2.2, AMD GPU 지원으로 3D 포토그래메트리 접근성 확대',
+            summary:     'Epic Games의 포토그래메트리 앱 RealityScan 2.2가 AMD GPU 가속을 처음으로 지원하기 시작했어요.',
+            body:        '<p>Epic Games가 전문 포토그래메트리 소프트웨어 RealityScan의 2.2 버전을 출시하며 처음으로 AMD 그래픽 카드의 GPU 가속을 공식 지원하기 시작했어요. 이 기능은 RealityScan 역사상 사용자들로부터 가장 많이 요청된 기능 중 하나라고 Epic은 밝혔어요. 이번 업데이트로 RDNA 3·4 아키텍처 기반의 라데온 소비자용 및 워크스테이션 카드가 모두 지원되며, 씬 재구성 파이프라인의 모든 단계가 엔비디아 그래픽 카드와 동일한 속도로 하드웨어 가속돼요. 지원 카드에는 Radeon Pro W7000 시리즈, Radeon AI Pro 9000 시리즈, Radeon RX 7000·9000 시리즈, 그리고 Ryzen AI Max Pro(\'Strix Halo\') 계열의 내장 그래픽이 포함돼요. 특히 엔비디아와 AMD 카드를 한 대의 컴퓨터에 함께 꽂아도 소프트웨어가 작업을 지원 가능한 모든 그래픽 카드에 병렬로 분산 처리하는 방식이라, 기존 엔비디아 카드를 그대로 두고 AMD 카드를 추가해 처리 속도를 높일 수도 있어요. 다만 현재 이 기능은 윈도우 전용이며, 서버 팜에 쓰이는 리눅스 명령줄 버전의 지원은 나중에 추가될 예정이에요.</p><p>이번 버전에서는 새로운 무료 온라인 도구 Pano2Views도 함께 공개됐어요. 360도 카메라로 촬영한 전방위 영상을 RealityScan이 처리할 수 있는 큐브맵 형식으로 자동 변환해 주는 도구예요. 360도 카메라는 씬 전체를 한 번에 담을 수 있어 포토그래메트리에 매력적이지만, 기존 재구성 파이프라인이 기대하는 일반 이미지 포맷과 달라 직접 활용하기 어려웠어요. Pano2Views는 그 간극을 메워주고, 변환된 큐브맵에 XMP 사이드카 파일을 자동으로 첨부해 소프트웨어가 불필요한 왜곡 보정 단계를 건너뛸 수 있도록 해줘요. JPG·PNG·MP4·MOV 포맷을 지원하며 완전히 무료예요. 이번 업데이트로 라데온 카드를 쓰는 게임 아트 아티스트도 포토그래메트리 기반 에셋 제작 파이프라인을 동등한 속도로 활용할 수 있게 되어, 게임 업계에서 포토그래메트리의 진입 장벽이 한층 낮아졌어요. RealityScan은 연간 매출 100만 달러 미만의 아티스트와 스튜디오에게는 무료이며, 그 이상은 좌석당 연간 1,250달러예요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/epic-games-releases-realityscan-2-2-with-amd-gpu-support/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.28',
+            hue:         200,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/06/260625_RealityScan22_AMDGPUSupport_Pano2Views.jpg',
+            url:         'https://www.cgchannel.com/2026/06/epic-games-releases-realityscan-2-2-with-amd-gpu-support/',
+        },
+        {
             id:          'games-564a43fd-2026-06',
             tab:         'games',
             headline:    'Adobe Substance 3D Painter 12.1 출시 — 연속 리베이킹·UV 언랩 등 신기능 추가',
@@ -1130,6 +1142,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-6712b6cf-2026-06',
+            tab:         'industry',
+            headline:    'Epic CEO 팀 스위니, Valve Steam의 AI 공개 의무화 정책에 정면 반박',
+            summary:     'Epic Games CEO 팀 스위니가 Valve Steam의 AI 사용 의무 공개 정책을 \'무책임하다\'고 강하게 비판했어요.',
+            body:        '<p>Epic Games의 CEO 팀 스위니가 Valve가 2024년부터 시행 중인 Steam AI 공개 의무화 정책을 강하게 비판하며 공개적인 설전에 나섰어요. PC Gamer와의 인터뷰에서 스위니는 이 정책을 \'정말 무책임한 일\'이라고 직접 표현하며, 개발자들이 Steam에서 성공을 거두기 훨씬 어려워졌다고 주장했어요. 밸브의 정책에 따르면 게임 개발 과정에 생성형 AI를 사용한 경우 Steam 스토어 페이지에 이를 의무적으로 표기해야 하는데, 그 결과 많은 게임이 이른바 \'혐오 커뮤니티\'라고 스위니가 표현한 집단의 표적이 되어 상업적 피해를 입고 있어요. 스위니는 이 정책이 개발자들에게 진퇴양난을 강요한다고 지적했어요. AI 도구를 활용하면 생산성이 높아지지만 커뮤니티의 역풍을 감수해야 하고, 포기하면 경쟁에서 뒤처질 수밖에 없는 구조라는 거예요. 특히 Steam 출시 개발자들에게는 위시리스트 등록을 통한 최대 노출이 성패를 좌우하는데, AI 공개 라벨이 낙인처럼 작용해 상업적 가능성을 떨어뜨린다고 그는 강조했어요.</p><p>스위니의 이번 발언은 Epic가 차기 Unreal Engine 6에 AI 기능을 대폭 확대한다고 발표한 시점과 맞물려 더욱 주목받고 있어요. 그는 AI가 개발의 반복적이고 지루한 작업을 줄이고 출시 일정을 앞당기는 데 실질적으로 도움이 된다고 보고 있어요. 대형 게임 엔진 회사의 CEO가 공개적으로 유통 플랫폼의 투명성 정책에 정면 반박한 것은 이례적인 일로, AI 활용 공개 여부를 둘러싼 개발사·플랫폼·플레이어 간의 긴장이 한층 고조되고 있음을 잘 보여줘요. 앞으로 이 논쟁이 업계 전반의 AI 공개 기준과 정책 방향에 어떤 영향을 미칠지 귀추가 주목돼요.</p><p>원문: <a href="https://insider-gaming.com/epic-ceo-speaks-out-against-valves-mandatory-ai-disclosure-on-steam/">Insider Gaming</a></p>',
+            source:      'Insider Gaming',
+            publishedAt: '2026.06.28',
+            hue:         30,
+            image:       'https://insider-gaming.com/wp-content/uploads/2026/05/Unreal-Engine-6-1024x569.png',
+            url:         'https://insider-gaming.com/epic-ceo-speaks-out-against-valves-mandatory-ai-disclosure-on-steam/',
+        },
+        {
             id:          'industry-a5068806-2026-06',
             tab:         'industry',
             headline:    'Godot 엔진, AI 보조 코드는 일부 허용 — 그러나 \'바이브 코딩\' PRs는 단호히 거부',
@@ -1952,6 +1976,46 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-306cb2b9-2026-06',
+            tab:         'art',
+            headline:    'Adobe, AI 이미지 강화 툴 Topaz Labs 인수 발표',
+            summary:     'Adobe가 AI 기반 이미지·영상 업스케일링 전문 기업 Topaz Labs를 인수한다고 발표했어요.',
+            body:        '<p>Adobe가 AI 이미지·영상 화질 개선 전문 기업 Topaz Labs를 인수할 계획이라고 공식 발표했어요. 이번 인수를 통해 Adobe는 Firefly, Firefly Services, 그리고 Creative Cloud 앱 전반에 걸쳐 최첨단 AI 화질 개선 모델을 대폭 확장 적용할 방침이에요. Topaz Labs는 AI 기반 이미지 업스케일러 Gigapixel을 비롯해 사진 강화 도구 Topaz Photo, 영상 화질 개선 도구 Topaz Video 등 수백만 명이 사용하는 제품군을 보유하고 있어요. 2025년 기준 연간 매출은 약 4,800만 달러이며, 아카이브 TV 영상 복원 분야에서 기여한 공로로 테크니컬 에미상을 수상한 이력도 있어요. 인수 완료는 2026년 하반기로 예상되며 규제 당국의 승인이 필요해요. 두 회사는 이미 Photoshop 27.0의 Generative Upscale 기능을 통해 파트너십을 맺고 있었는데, 당시 Topaz Labs의 Bloom·Gigapixel 모델이 Adobe 자체 Firefly 업스케일러의 대안으로 제공됐었죠. 인수 이후에도 Topaz Labs 제품들은 자사 웹사이트를 통해 독립 소프트웨어로 계속 판매될 예정이며, CEO 에릭 양은 Adobe 소속으로 Topaz Labs 팀을 계속 이끌어갈 예정이에요.</p><p>이번 인수에서 특히 주목받는 것은 Topaz Labs의 NeuroStream 기술이에요. 소비자용 GPU에서도 대형 AI 모델을 로컬로 구동할 수 있도록 GPU 메모리 사용을 최적화하는 기술로, Adobe는 이를 통해 온디바이스 AI 영상 처리 분야의 성장 기회를 공략하겠다는 전략이에요. Topaz Labs는 2000년대 중반 포토샵 플러그인 개발사로 출발해 독립형 AI 이미지·영상 처리 소프트웨어 전문 기업으로 성장한 회사예요. 두 회사의 기술이 통합되면 크리에이티브 AI 시장에서 Adobe의 입지가 한층 강해질 전망이에요. 이미지와 영상의 AI 화질 개선 기술이 Firefly 생태계 안으로 깊숙이 녹아들면서, 크리에이터들이 훨씬 더 강력한 보정·복원 기능을 누릴 수 있게 될 것으로 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/adobe-to-acquire-topaz-labs/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.28',
+            hue:         290,
+            url:         'https://www.cgchannel.com/2026/06/adobe-to-acquire-topaz-labs/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.topazlabs.com/' },
+            ],
+        },
+        {
+            id:          'art-0f8106dc-2026-06',
+            tab:         'art',
+            headline:    'Boris FX, Optics 2026.5 업데이트로 AI 얼굴 마스킹 기능 대폭 강화',
+            summary:     'Boris FX가 Optics 2026.5를 출시하며 머신러닝 기반 얼굴 마스킹 기능을 크게 업그레이드했어요.',
+            body:        '<p>Boris FX가 사진·영상 시각 효과 애플리케이션 Optics의 2026.5 버전을 출시했어요. 이번 업데이트의 핵심은 Face ML 얼굴 마스킹 기능 강화로, 기존에 지원하던 눈·입술·피부 마스크에 더해 코와 목까지 자동으로 마스크를 생성할 수 있게 됐어요. 또한 지금까지는 포토샵과 라이트룸 전용 플러그인으로만 쓸 수 있었지만, 이번 2026.5 버전부터는 Affinity Photo, Apple Photos, Capture One 등 비어도비 소프트웨어에서도 플러그인으로 활용할 수 있게 됐어요. 기존 라이선스 가격 변동 없이 이 모든 신규 플러그인 통합이 포함돼요. 새로운 필터도 추가됐는데, 아날로그 필름이 과노출됐을 때의 번짐 효과를 구현하는 S_FilmBurn과 슬라이더 방식의 직관적인 색 보정·룩 생성 도구 Color Mixer가 포함돼요. Particle Illusion에는 새로운 파티클 스프라이트와 가변 프레임 레이트로 시네마그래프를 내보내는 기능이 추가됐어요.</p><p>앞서 공개된 Optics 2026에서는 AI 도구 4종이 처음 도입됐어요. Face ML 얼굴 마스크 생성 외에도, 사진에서 깊이 맵을 자동 생성하는 Depth Map ML, 이미지 노이즈를 제거하는 DeNoise ML, 이미지 해상도를 높이는 UpRes ML이 포함됐어요. 이번 2026.5 업데이트로 Adobe 에코시스템 밖의 크리에이터들도 이 AI 기반 마스킹·편집 도구를 자신의 기존 소프트웨어 환경에서 바로 사용할 수 있게 된 점이 특히 의미 있어요. 게임 아트의 캐릭터 얼굴 텍스처 작업이나 콘셉트 아트의 빠른 보정에도 유용하게 쓰일 수 있을 것 같아요. 영구 라이선스는 149달러이며, 월 9달러 또는 연 99달러 구독으로도 이용할 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/06/boris-fx-releases-optics-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.06.28',
+            hue:         270,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2025/12/251207_Optics2026_Photoshop.jpg',
+            url:         'https://www.cgchannel.com/2026/06/boris-fx-releases-optics-2026/',
+        },
+        {
+            id:          'art-a2dc9b13-2026-06',
+            tab:         'art',
+            headline:    'ByteDance Seedance 2.0 Mini, Runway API 통해 크리에이터에게 개방',
+            summary:     'ByteDance의 경량 AI 영상 생성 모델 Seedance 2.0 Mini가 Runway API를 통해 공식 출시됐어요.',
+            body:        '<p>ByteDance가 AI 영상 생성 플랫폼의 최저가 티어 모델인 Seedance 2.0 Mini를 2026년 6월 중순 출시하며 Runway API를 통해 크리에이터에게 공개했어요. 480P·720P 해상도로 4~15초 길이의 영상을 24fps로 생성하며, 기존 Seedance 2.0 Fast 대비 약 2배 빠른 처리 속도를 자랑해요. 가격은 표준 모델의 절반 수준으로, Atlas Cloud 기준 초당 0.056달러예요. 텍스트, 이미지, 영상, 오디오를 최대 12개까지 참조 입력으로 사용할 수 있어 캐릭터 동일성과 모션 일관성을 유지한 영상 제작이 가능해요. 단, 1080P 해상도는 지원하지 않아 방송 수준의 품질이 필요한 작업에는 적합하지 않아요.</p><p>이 모델은 품질보다 제작 효율을 우선하는 팀을 위해 설계됐어요. 이커머스 콘텐츠, 마케팅 에셋, 소셜 미디어용 UGC, 특수 효과 클립처럼 단시간에 대량으로 영상 콘텐츠를 찍어내야 하는 워크플로에 최적화된 모델이에요. ByteDance는 이 모델을 통해 실제 인물 영상 생성 분야에서 비용 기반 경쟁으로부터 강점을 지키면서 프로덕션 파이프라인 안에 자사 플랫폼을 깊이 통합하는 전략을 펼치고 있어요. 소규모 스튜디오와 인디 크리에이터에게는 고품질 대비 합리적인 비용으로 다량의 영상 에셋을 빠르게 생성할 수 있는 실용적인 선택지가 생긴 셈이에요. 소셜 미디어 광고나 게임 홍보용 콘텐츠 제작에 특히 유용하게 활용될 것으로 보여요.</p><p>원문: <a href="https://www.atlascloud.ai/blog/ai-updates/seedance-2.0-mini-overview">Atlas Cloud</a></p>',
+            source:      'Atlas Cloud',
+            publishedAt: '2026.06.28',
+            hue:         310,
+            url:         'https://www.atlascloud.ai/blog/ai-updates/seedance-2.0-mini-overview',
+            urls: [
+                { label: '바로가기', href: 'https://runwayml.com/product/seedance' },
+            ],
+        },
         {
             id:          'art-d0031300-2026-06',
             tab:         'art',
