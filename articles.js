@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-37191158-2026-07',
+            tab:         'games',
+            headline:    'Inbibo, 머신러닝으로 캐릭터 피부 시뮬레이션 속도 높인 \'AdonisML\' 출시',
+            summary:     '소프트 티슈 시뮬레이션 플러그인 Adonis 2.1이 머신러닝 기반 AdonisML 에디션을 새롭게 선보였어요.',
+            body:        '<p>게임·VFX 분야에서 소프트 티슈 시뮬레이션 플러그인으로 주목받아 온 Adonis가 버전 2.1로 업데이트되면서 머신러닝 기반 신규 에디션 \'AdonisML\'을 공식 출시했어요. 개발사 Inbibo가 내놓은 Adonis는 캐릭터의 근육·지방·피부를 각각의 독립 레이어 솔버로 분리해 물리 기반으로 시뮬레이션하는 Maya·Houdini 플러그인으로, 2019년 판매가 중단된 Ziva VFX의 공백을 채우는 도구로 시장에서 빠르게 입지를 다져 왔어요. 이번 2.1 업데이트를 기점으로 기존 에디션인 AdonisFX와 신규 에디션 AdonisML의 이원 라인업이 구성됐으며, 두 에디션 모두 Maya 2023+ 및 Houdini 20+ 환경과 Windows 10 이상·리눅스(CentOS 7+·Rocky Linux 8+) 플랫폼을 지원해요. 이번 버전부터는 소프트웨어 이름도 기존 \'AdonisFX\'에서 \'Adonis\'로 간소화됐어요. 소니 픽처스 이매지웍스 등 대형 VFX 스튜디오가 이미 현업에 적용 중인 Adonis가 ML 기능을 더하면서 업계의 관심이 한층 높아지고 있어요.</p><p>AdonisML의 핵심 신기능은 ML Deformer와 SmartTissue 두 가지예요. ML Deformer는 연산 비용이 높아 처리 속도가 느린 복잡한 티슈 셋업을 경량 머신러닝 모델로 학습시킨 뒤, 원본 시뮬레이션이 캐릭터 메시에 만들어내는 변형을 실시간에 가까운 속도로 근사적으로 재현해 줘요. 이를 통해 애니메이터는 무거운 시뮬레이션이 끝나기를 기다리는 대신 캐릭터와 즉시 인터랙티브하게 작업하며 결과를 바로 확인할 수 있어요. SmartTissue는 ML 학습 과정에서 소실되기 쉬운 흔들림·정착·오버슈트 같은 이차 움직임을 자동으로 복원해, 경량 모델임에도 사실적인 움직임 디테일이 유지되도록 보완해 줘요. 이번 업데이트에는 서로 체형이 다른 캐릭터 간 티슈 셋업을 자동 전이하는 AdnTransfer와, 시뮬레이션 아티팩트를 매끄럽게 정리하는 AdnMush 디포머도 신규 추가됐으며, AdnMush는 모든 솔버 내에서 자동 실행되어 별도의 후처리 단계를 줄여줘요. 요금은 AdonisFX 인디 구독이 월 25파운드이며, AdonisML 프로 구독은 연간 3,000파운드부터 시작해요.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/inbibo-releases-adonis-2-1-with-adonisml/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.03',
+            hue:         200,
+            image:       'https://inbibo.co.uk/storage/pages/47/media/01KWEBZ2E9NGCCHQ1FVJQ5RT9G.jpg',
+            url:         'https://www.cgchannel.com/2026/07/inbibo-releases-adonis-2-1-with-adonisml/',
+            urls: [
+                { label: '바로가기', href: 'https://inbibo.co.uk/adonisfx' },
+            ],
+        },
+        {
             id:          'games-9b683651-2026-06',
             tab:         'games',
             headline:    'Epic Games RealityScan 2.2, AMD GPU 지원으로 3D 포토그래메트리 접근성 확대',
@@ -1142,6 +1157,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-479a32aa-2026-07',
+            tab:         'industry',
+            headline:    'Godot 재단, AI가 작성한 코드 기여 사실상 전면 금지 선언',
+            summary:     'Godot 재단이 AI가 생성한 코드 기여물을 원칙적으로 금지하는 새 정책을 공식 발표했어요.',
+            body:        '<p>오픈소스 게임 엔진 Godot의 재단이 2026년 7월 1일, AI가 생성한 코드를 포함한 기여물을 원칙적으로 금지하는 새로운 정책을 공식 발표했어요. 정책 금지 범위는 세 가지예요. 자율 AI 에이전트가 자동으로 제출한 코드, 소위 \'바이브 코딩(vibe coding)\' 형태의 대규모 AI 생성 코드 조각, 그리고 AI가 작성한 커뮤니케이션 텍스트가 모두 금지 대상이에요. 반면 자동 완성·정규식·find-and-replace 같은 보조적 AI 도구 활용은 허용되지만, 이 경우에도 PR 내에서 사용 사실을 반드시 공개해야 해요. Godot 재단은 "AI는 책임을 질 수 없고, AI를 많이 사용하는 기여자가 자신의 코드를 충분히 이해하고 스스로 고칠 수 있다고 신뢰하기 어렵다"고 정책 도입 이유를 밝혔어요.</p><p>공동 창업자 Rémi Verschelde는 이번 정책 발표 이전부터 저품질 AI 생성 풀 리퀘스트가 봉사 운영진에게 과도한 리뷰 부담을 주고 커뮤니티 사기를 꺾고 있다고 공개적으로 토로해 왔어요. Godot는 소수의 자원봉사 메인테이너가 전 세계 수천 명의 기여자 PR을 검토하는 순수 오픈소스 프로젝트예요. AI 생성 기여물이 급증하면서 진지한 기여와 자동 생성 코드를 구별하는 작업이 점점 더 메인테이너들의 시간과 에너지를 갉아먹어 왔어요. 이번 결정은 AI 생성 기여물의 폭증에 직면한 오픈소스 생태계가 커뮤니티 건강성을 지키기 위해 어떻게 대응하는지를 보여주는 상징적인 사례로, 다른 오픈소스 프로젝트들의 정책 논의에서 중요한 선례가 될 것으로 주목받고 있어요.</p><p>이번 정책은 AI 도입 가속화와 오픈소스 기여 문화가 맞부딪히는 지점을 정면으로 다루고 있어요. AI 코딩 도구가 발전하면서 코드 생성 비용이 낮아진 만큼 저품질·의미 없는 기여물이 쏟아지는 \'기여 인플레이션\' 문제가 오픈소스 커뮤니티 전반의 과제로 떠오르고 있어요. Godot 재단의 이번 선택은 코드 품질과 커뮤니티 지속 가능성을 우선하는 기준을 명확히 세웠다는 점에서 주목할 만한 결단이에요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/godot-to-ban-almost-all-ai-coding-contributions">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.07.03',
+            hue:         15,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf37f0e888236bac1/6a453c420818ce731dd5fb9c/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg',
+            url:         'https://www.gamedeveloper.com/business/godot-to-ban-almost-all-ai-coding-contributions',
+        },
+        {
+            id:          'industry-e2fea90b-2026-07',
+            tab:         'industry',
+            headline:    '메타, AI 프롬프트로 미니게임 만드는 앱 \'Pocket\' 조용히 출시',
+            summary:     '메타가 텍스트 프롬프트만으로 인터랙티브 미니게임을 만들고 공유하는 앱 \'Pocket\'을 조용히 출시했어요.',
+            body:        '<p>메타가 텍스트 프롬프트만으로 인터랙티브 미니게임과 앱을 만들어 공유할 수 있는 \'Pocket\'을 앱스토어와 구글플레이에 조용히 출시했어요. 앱은 6월 29일에 실제로 배포됐지만, 리버스 엔지니어 Alessandro Paluzzi가 7월 2일에 발견하면서 비로소 세상에 알려졌어요. Pocket은 AI가 생성한 인터랙티브 경험인 \'기즈모(gizmo)\'를 피드 형식으로 탐색하고 바로 플레이할 수 있는 구조로, 올해 초 메타가 인수한 Gizmo 팀이 개발했어요. 전신인 Gizmo 플랫폼은 iOS·구글플레이 합산 누적 63만 5,000건의 설치와 98%의 긍정 반응을 기록한 서비스로, Pocket은 이 경험을 메타 생태계 안으로 가져온 것이에요. 메타는 아직 공식 발표를 내지 않아 현재는 실험 단계로 운영 중인 것으로 보여요.</p><p>Pocket은 프로그래밍 지식 없이도 자연어 프롬프트만으로 간단한 미니게임이나 인터랙티브 경험을 자동 생성하고, 다른 사용자들이 피드에서 발견해 즉시 플레이할 수 있는 소셜 창작 플랫폼이에요. 메타 AI 이미지 생성기, AI 동영상 앱 Vibes에 이어 Pocket까지, 메타는 AI를 활용해 일반 대중이 창작물을 손쉽게 만들고 공유할 수 있는 도구를 꾸준히 선보이고 있어요. 이 전략은 AI 크리에이터 생태계를 메타 플랫폼 내부로 끌어들이고, 향후 메타버스 및 소셜 게임 공간과의 연계를 강화하려는 장기 포석으로 풀이돼요.</p><p>코딩 없이 프롬프트만으로 게임을 만드는 트렌드는 메타 외에도 구글, 마이크로소프트 등 빅테크 플랫폼들이 경쟁적으로 뛰어드는 구도로 확산되고 있어요. 게임 제작의 진입 장벽이 낮아지면서 비개발자도 아이디어만으로 게임을 만들 수 있는 시대가 빠르게 다가오고 있으며, 이는 게임 생태계의 콘텐츠 생산 방식 자체를 크게 바꿀 것으로 예상돼요. 인디 개발자부터 비전문가까지 폭넓은 창작자층이 게임 제작에 새롭게 진입하는 흐름의 신호탄으로 받아들여지고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.03',
+            hue:         35,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/06/Meta-image.jpg',
+            url:         'https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/',
+        },
+        {
             id:          'industry-6712b6cf-2026-06',
             tab:         'industry',
             headline:    'Epic CEO 팀 스위니, Valve Steam의 AI 공개 의무화 정책에 정면 반박',
@@ -1976,6 +2015,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-debe7486-2026-07',
+            tab:         'art',
+            headline:    '구글, 초고속 이미지 생성 모델 \'Nano Banana 2 Lite\'와 대화형 영상 편집 \'Gemini Omni Flash\' 동시 공개',
+            summary:     '구글이 4초 만에 이미지를 생성하는 Nano Banana 2 Lite와 자연어로 영상을 편집하는 Gemini Omni Flash를 동시 공개했어요.',
+            body:        '<p>구글이 6월 30일 두 가지 새로운 생성 AI 모델을 동시에 공개했어요. 첫 번째는 약 4초 만에 이미지를 생성하는 Nano Banana 2 Lite(공식 모델명: Gemini 3.1 Flash Lite Image)로, 1,000장 기준 약 3.4센트의 낮은 단가를 제공하는 고속 이미지 생성 모델이에요. 두 번째는 텍스트·이미지·영상을 입력으로 받아 자연어 명령으로 영상을 생성하고 편집하는 Gemini Omni Flash로, 이번에 처음으로 개발자 API 접근이 공개됐어요. 두 모델 모두 구글 AI 스튜디오, Gemini API, Gemini 엔터프라이즈 에이전트 플랫폼에서 즉시 사용할 수 있으며, 모든 출력물에는 눈에 보이지 않는 SynthID 워터마크가 자동 삽입돼요.</p><p>Nano Banana 2 Lite는 빠른 프로토타이핑과 대규모 광고 소재 제작에 최적화된 모델이에요. 기존 Nano Banana보다 품질·속도·비용 모두 우수하며, 이미지 내 텍스트 가독성과 다중 이미지 생성 시 캐릭터 일관성도 개선됐어요. 구글 AI 모드 검색, Gemini 앱, NotebookLM, Google Photos, Google Ads에도 순차 적용 중이에요. Gemini Omni Flash는 캐릭터 교체·조명 변경·오브젝트 추가 같은 편집을 대화 방식으로 처리하며, 다중 모달 참조와 세계 지식을 활용해 내러티브 일관성을 유지한 영상을 생성할 수 있어요. 현재 10초 클립을 지원하며, 더 긴 영상과 오디오 참조 기능은 추후 추가될 예정이에요. 영상 생성 비용은 초당 0.1달러예요.</p><p>구글이 권장하는 핵심 워크플로는 Nano Banana 2 Lite로 이미지를 빠르게 생성한 뒤 Gemini Omni Flash로 영상화하는 파이프라인이에요. 두 모델을 이어 쓰면 이미지 생성부터 영상 완성까지 한 번에 처리할 수 있어요. 구글 AI 스튜디오에는 이 조합을 바로 체험할 수 있는 데모 앱 세 가지가 공개됐어요. 대규모 시각 에셋 생산이 필요한 광고 업계와 게임 프로모션 제작팀에게 빠르고 저렴하게 고품질 비주얼을 생산할 수 있는 실용적인 파이프라인을 제공할 것으로 기대를 모으고 있어요. 빠른 이미지·영상 제작 파이프라인이 필요한 크리에이터라면 구글 AI 스튜디오에서 지금 바로 체험해볼 수 있어요.</p><p>원문: <a href="https://basic-tutorials.com/news/nano-banana-2-lite-and-gemini-omni-flash-googles-new-ai-models-for-images-and-video/">basic-tutorials.com</a></p>',
+            source:      'basic-tutorials.com',
+            publishedAt: '2026.07.03',
+            hue:         220,
+            image:       'https://basic-tutorials.com/wp-content/uploads/2026/07/nano-banana-2-lite.jpg',
+            url:         'https://basic-tutorials.com/news/nano-banana-2-lite-and-gemini-omni-flash-googles-new-ai-models-for-images-and-video/',
+            urls: [
+                { label: '공식 발표', href: 'https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-lite-and-gemini-omni-flash-available/' },
+            ],
+        },
+        {
+            id:          'art-cc77aec9-2026-07',
+            tab:         'art',
+            headline:    '프라이버시 우선 AI 플랫폼 Venice AI, 6500만 달러 유치하며 유니콘 등극',
+            summary:     '사용자 데이터를 서버에 저장하지 않는 프라이버시 중심 AI 플랫폼 Venice AI가 유니콘 기업이 됐어요.',
+            body:        '<p>사용자 데이터를 서버에 저장하지 않는 프라이버시 중심 AI 플랫폼 Venice AI가 시리즈 A 6,500만 달러를 유치하며 기업 가치 10억 달러를 돌파해 유니콘이 됐어요. 이번 투자는 크립토 전문 벤처캐피탈 Dragonfly가 주도하고 Coinbase Ventures와 North Island Ventures가 참여했어요. Venice AI는 OpenAI·Anthropic을 비롯한 200개 이상의 AI 모델을 연결하는 동시에, 모든 사용자 입력을 클라이언트 측에서 암호화해 외부 서버에 저장하지 않는 방식으로 데이터 프라이버시를 보장해요. 텍스트·이미지·오디오·비디오 생성을 모두 지원하며, 현재 월간 활성 사용자 300만 명에 하루 API 호출이 170만 건에 달하고 있어요.</p><p>Venice AI는 연간 환산 매출 7,000만 달러 이상을 기록하며 이미 흑자 상태예요. CEO Erik Voorhees는 서비스를 "사용자를 자율적인 성인으로 대우하는 중립적 도구"로 설명하며, 데이터 통제권과 표현의 자유를 핵심 가치로 내세우고 있어요. 가상화폐 토큰 VVV를 스테이킹하면 하루 1달러의 AI 크레딧을 적립할 수 있는 크립토 연동 모델도 운영하며, 전체 사용자의 약 8%가 암호화폐로 결제하고 있어요. 유치한 자금은 자체 GPU 서버 구매와 데이터 센터 직접 운영에 사용해 클라우드 임대 의존도를 줄이고 수익성을 높이는 데 쓸 예정이에요.</p><p>AI 생성 콘텐츠 규제가 강화되고 대형 AI 플랫폼의 데이터 수집 방식에 대한 우려가 커지면서, 크리에이터들이 자신의 창작 데이터에 대한 통제권을 원하는 수요가 높아지고 있어요. 프라이버시를 핵심 차별점으로 내세운 Venice AI의 빠른 성장은, 개인 정보 보호가 실제 비즈니스 동력으로 작동하고 있음을 보여줘요. 특히 이미지·영상 생성 AI가 일상화되면서 창작물의 데이터 주권에 대한 관심이 커지는 만큼, 프라이버시 중심 AI 플랫폼의 성장은 창작 도구 시장에서도 계속될 것으로 예상돼요. 이번 투자 이후 Venice AI는 자체 인프라를 확충하면서 서비스 안정성과 프라이버시 보장 수준을 동시에 높여갈 계획이에요.</p><p>원문: <a href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.03',
+            hue:         50,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/gpt-steady-v3.png',
+            url:         'https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/',
+        },
         {
             id:          'art-306cb2b9-2026-06',
             tab:         'art',
