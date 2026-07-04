@@ -29,6 +29,30 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-ff9adf19-2026-07',
+            tab:         'games',
+            headline:    '브라우저에서 바로! AI로 4K PBR 텍스처 만드는 \'Mixos\' 등장',
+            summary:     '설치 없이 브라우저에서 4K PBR 텍스처를 만들고 AI 자동 생성까지 지원하는 \'Mixos\'가 출시됐어요.',
+            body:        '<p>웹브라우저에서 바로 4K PBR 텍스처를 제작할 수 있는 새로운 툴 \'Mixos\'가 출시됐어요. WebGPU 기반으로 구동되어 별도 소프트웨어 설치 없이 Chrome·Edge·Safari 18+ 브라우저만으로 동작해요. FBX·OBJ·glTF/GLB 형식의 3D 모델을 불러와 브러시·스탬프·스텐실·프로젝션 페인팅으로 텍스처를 직접 칠할 수 있고, 2,600개 이상의 CC0 공개 소재 라이브러리를 레이어 방식으로 혼합해 원하는 재질을 만들어낼 수도 있어요. Albedo·Normal·Roughness·Metallic·Height·Opacity 등 표준 PBR 맵은 물론 Ambient Occlusion과 Curvature 같은 지오메트리 기반 맵도 베이크 가능하고, 최대 4K 해상도로 텍스처를 내보낼 수 있어요.</p><p>AI 기능도 충실하게 갖춰져 있어요. 텍스트 프롬프트 한 줄로 완성된 PBR 텍스처 세트를 자동 생성하거나, 임포트한 3D 모델에 AI가 알아서 텍스처를 입혀주고 다양한 각도의 테스트 렌더링까지 한 번에 만들어 주는 \'Auto-Texture\' 기능이 포함돼 있어요. 완성된 텍스처는 Blender·Cinema 4D·Maya·Unity·UE5로 바로 내보낼 수 있어서 기존 아티스트 워크플로우에 자연스럽게 통합돼요. 에디터 기능 자체는 무료로 쓸 수 있지만, 워터마크 없는 내보내기는 월 9달러 Pro 요금제 이상이 필요해요. 강력한 GPU가 없어도 \'최근 6년 이내 GPU\'면 충분히 작동해, 여행 중이나 보조 기기에서도 텍스처 작업이 가능한 점이 인상적이에요.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/mixos-lets-you-paint-pbr-textures-in-your-web-browser/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.04',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/07/260703_Mixos_Paint4KPBRTexturesInBrowser_f.jpg',
+            url:         'https://www.cgchannel.com/2026/07/mixos-lets-you-paint-pbr-textures-in-your-web-browser/',
+        },
+        {
+            id:          'games-c8034a1d-2026-07',
+            tab:         'games',
+            headline:    '텍스트 한 줄로 미니게임 뚝딱! Meta \'Pocket\' 앱 공개',
+            summary:     '텍스트 프롬프트로 플레이 가능한 미니게임을 즉석 생성하는 Meta의 앱 \'Pocket\'이 조용히 테스트 단계에 들어갔어요.',
+            body:        '<p>Meta가 텍스트 프롬프트 하나로 인터랙티브 미니게임을 즉석 생성하는 모바일 앱 \'Pocket\'을 조용히 테스트하기 시작했어요. 지난 6월 29일 애플 앱스토어와 구글 플레이에 슬그머니 등장한 이 앱은, 사용자가 자연어로 게임 아이디어를 설명하면 \'Gizmo\'라고 불리는 소형 인터랙티브 앱을 AI가 자동으로 만들어줘요. 만들어진 게임은 터치 반응·기기 기울기·사운드·카메라·사진 라이브러리까지 활용할 수 있어서 퍼즐·리듬·아케이드 등 다양한 장르의 게임 구현이 가능해요. 완성된 Gizmo는 다른 사용자들이 바로 플레이할 수 있는 소셜 게임 피드 형식으로 공유돼, 마치 게임판 TikTok과 같은 경험을 제공해요.</p><p>이 앱의 뿌리는 Meta가 2026년에 인수한 Gizmo 팀으로, 코딩 지식 없이 AI로 앱을 만드는 \'Vibe coding\' 트렌드를 선도하고 있어요. Sekai·Wabi·Vibecode 같은 유사 서비스와 경쟁하지만, 결과물을 소셜 피드 형태로 제공한다는 점이 차별화 포인트예요. 현재는 일부 지역에 한정 출시된 테스트 단계라 전면 출시 일정은 아직 불확실해요. 코딩 지식 없이도 누구나 게임을 만들어 공유할 수 있는 시대가 열린다는 점에서 크리에이터 생태계에 큰 변화를 가져올 잠재력이 있어요. 다만 개인정보 수집과 AI 학습 데이터 활용에 관한 투명성이 부족하다는 우려도 함께 제기되고 있어요.</p><p>원문: <a href="https://winbuzzer.com/2026/07/03/meta-quietly-tests-pocket-for-ai-generated-mini-games-xcxwbn/">WinBuzzer</a></p>',
+            source:      'WinBuzzer',
+            publishedAt: '2026.07.04',
+            hue:         30,
+            image:       'https://cdn-chilj.nitrocdn.com/gYFaTcLxknXlucWgXPjHDdhAuyobJjHx/assets/images/optimized/rev-80252c2/winbuzzer.com/wp-content/uploads/2026/07/Meta-Gizmo-Pocket-app-1068x601-1067x.webp',
+            url:         'https://winbuzzer.com/2026/07/03/meta-quietly-tests-pocket-for-ai-generated-mini-games-xcxwbn/',
+        },
+        {
             id:          'games-37191158-2026-07',
             tab:         'games',
             headline:    'Inbibo, 머신러닝으로 캐릭터 피부 시뮬레이션 속도 높인 \'AdonisML\' 출시',
@@ -2015,6 +2039,29 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-14835061-2026-07',
+            tab:         'art',
+            headline:    'Gemini AI로 영상을 단편 영화처럼! Higgsfield \'Shorts Studio\' 출시',
+            summary:     '실제 촬영 영상을 Claymation·애니메이션 등 다양한 스타일로 변환해주는 AI 숏폼 편집 툴 \'Shorts Studio\'가 출시됐어요.',
+            body:        '<p>AI 영상 스타트업 Higgsfield가 실제 촬영 영상을 스타일리시한 숏폼 영상으로 탈바꿈시켜주는 신규 서비스 \'Shorts Studio\'를 출시했어요. Google의 Gemini Omni Flash 모델을 기반으로 동작하는 이 툴은, Claymation·일러스트레이션·애니메이션 등 다양한 프리셋 스타일을 선택하면 원본 영상의 피사체 움직임은 그대로 살린 채 전체 시각 스타일을 AI가 자동으로 바꿔줘요. 9:16과 16:9 비율의 내보내기를 모두 지원해 인스타그램 릴스·틱톡에 최적화된 숏폼 영상을 빠르고 손쉽게 제작할 수 있어요.</p><p>일반 크리에이터뿐 아니라 영화·광고·뮤직비디오 제작자들도 크게 주목하고 있는데, 기존에는 복잡한 후반 작업(VFX, 색보정, 스타일 전환)이 필요했던 작업을 AI 하나로 빠르게 처리할 수 있기 때문이에요. 피사체의 움직임과 구도를 유지한 채 배경과 전체 시각 스타일만 바꿀 수 있어서 콘셉트 테스트나 에셋 재활용 용도로도 활용 가능해요. Higgsfield는 AI 비디오 편집 분야에서 꾸준히 혁신 기능을 선보여온 스타트업으로, 이번 Shorts Studio 출시로 숏폼 크리에이터 시장에서 본격적인 경쟁력을 갖추게 됐어요.</p><p>원문: <a href="https://higgsfield.ai/shorts-studio">Higgsfield AI</a></p>',
+            source:      'Higgsfield AI',
+            publishedAt: '2026.07.04',
+            hue:         290,
+            image:       'https://static.higgsfield.ai/reels-studio-intro/og.webp',
+            url:         'https://higgsfield.ai/shorts-studio',
+        },
+        {
+            id:          'art-ef4cb930-2026-07',
+            tab:         'art',
+            headline:    '영화 100개 장면에 AI 쓴 감독의 고백 — \'영 워싱턴\' 제작 비하인드',
+            summary:     '감독 존 어윈이 역사 영화 \'영 워싱턴\'의 약 100개 장면에 Luma·Magnific 등 AI 툴을 활용했다고 직접 밝혔어요.',
+            body:        '<p>앤젤 스튜디오의 역사 영화 \'영 워싱턴(Young Washington)\'이 7월 3일 미국 전역에 개봉했어요. 감독 존 어윈이 약 100개 장면에 AI 툴을 활용했다고 직접 밝혀 화제가 되고 있어요. Luma·Amazon Project Nara·Magnific 등 AI 도구를 사용해 실제 촬영이 불가능하거나 예산 초과가 우려됐던 장면들을 완성했어요. 빙하 익사 위기 시퀀스와 대포 발사 장면이 AI의 힘을 빌렸고, 제작 스태프 2명을 말 탄 영국군 병사로 변신시키는 데에도 AI가 쓰였어요. 한 편의 상업 영화에서 이렇게 광범위하게 AI가 활용된 사례가 공개된 것은 매우 드문 일이에요.</p><p>존 어윈 감독의 제작 철학은 \'실제로 할 수 있는 건 최대한 직접 촬영하고, 그 다음 단계에서 AI로 비전을 확장한다\'는 것이에요. AI를 제작 전체를 대체하는 수단이 아니라, 실제 촬영의 한계를 극복하는 보완재로 활용한 사례예요. 이미 할리우드에서 AI 활용 여부가 뜨거운 논쟁거리인 상황에서 감독이 이를 투명하게 공개했다는 점도 업계의 주목을 받고 있어요. 저예산 독립 영화부터 대형 스튜디오까지 AI 영상 툴이 단순 실험 수준을 넘어 현장에서 실질적으로 쓰이고 있음을 보여주는 살아있는 사례예요.</p><p>원문: <a href="https://variety.com/2026/film/news/young-washington-director-jon-erwin-ai-1236801002/">Variety</a></p>',
+            source:      'Variety',
+            publishedAt: '2026.07.04',
+            hue:         340,
+            url:         'https://variety.com/2026/film/news/young-washington-director-jon-erwin-ai-1236801002/',
+        },
         {
             id:          'art-debe7486-2026-07',
             tab:         'art',
