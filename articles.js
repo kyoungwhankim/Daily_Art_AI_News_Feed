@@ -1181,6 +1181,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-9c993df3-2026-07',
+            tab:         'industry',
+            headline:    '메타, AI로 게임 만드는 앱 \'Pocket\' 출시',
+            summary:     '메타가 텍스트 프롬프트 하나로 인터랙티브 미니게임을 만드는 앱 \'Pocket\'을 조용히 출시했어요.',
+            body:        '<p>메타가 텍스트 프롬프트 하나로 소형 인터랙티브 앱과 게임을 만들 수 있는 신규 앱 \'Pocket\'을 조용히 출시했어요. 앱 내에서 생성된 결과물은 \'기즈모(Gizmo)\'라고 불리며, 사용자는 터치 반응·기기 기울기·사운드 효과·즐겨듣는 음악 등 다양한 기능을 활용해 개성 있는 인터랙티브 경험을 자유롭게 만들 수 있어요. 완성된 기즈모는 소셜 피드 형태로 공유되어 다른 사용자가 바로 플레이하거나 리믹스할 수 있어서 마치 게임판 TikTok과 같은 창작·공유 플랫폼으로 자리 잡을 것으로 보여요. 앱은 지난 6월 29일 애플 앱스토어와 구글 플레이에 동시 출시됐지만, 일부 지역에서는 아직 전체 기능을 이용하기 어려운 상태예요.</p><p>이 앱은 메타가 올해 초 인수한 AI 게임 플랫폼 \'Gizmo\' 팀의 기술을 기반으로 하고 있어요. 실제로 Pocket과 Gizmo의 원래 앱은 기능적으로 매우 유사하며, Gizmo 앱은 Pocket 출시 이전 이미 iOS·안드로이드 합산 63만 5천 건 이상의 다운로드와 98%의 긍정 평가를 기록한 바 있어요. 경쟁 서비스인 Sekai도 최근 시리즈 A에서 2천만 달러를 유치하는 등, AI 기반 게임 창작 플랫폼에 대한 시장의 관심이 그 어느 때보다 뜨거운 상황이에요. 코딩 지식 없이 누구나 AI로 게임을 만들고 나눌 수 있는 \'바이브 코딩\' 흐름이 이어지는 가운데, 메타는 Meta AI(이미지 생성)와 Vibes(영상 제작)에 이어 게임 창작 도구까지 크리에이티브 AI 라인업을 적극 확장하고 있어요.</p><p>아직 소프트 런치 단계인 만큼 정식 전면 출시 일정은 미정이에요. 창작 장벽을 낮춰 더 많은 사람이 직접 게임을 설계하고 공유할 수 있다는 점에서 기대감이 크지만, 개인정보 수집 방식과 사용자 창작물에 대한 AI 학습 데이터 활용의 투명성 등 여러 우려도 함께 제기되고 있어서, 향후 전면 출시 전까지 이러한 문제들이 어떻게 해소될지 지켜볼 필요가 있어요.</p><p>원문: <a href="https://americanbazaaronline.com/2026/07/03/meta-launches-pocket-an-ai-app-for-creating-games-484015/">American Bazaar Online</a></p>',
+            source:      'American Bazaar Online',
+            publishedAt: '2026.07.05',
+            hue:         30,
+            image:       'https://americanbazaaronline.com/wp-content/uploads/2025/06/Meta.png',
+            url:         'https://americanbazaaronline.com/2026/07/03/meta-launches-pocket-an-ai-app-for-creating-games-484015/',
+        },
+        {
             id:          'industry-479a32aa-2026-07',
             tab:         'industry',
             headline:    'Godot 재단, AI가 작성한 코드 기여 사실상 전면 금지 선언',
