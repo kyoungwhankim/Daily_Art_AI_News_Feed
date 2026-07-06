@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-1f23925d-2026-07',
+            tab:         'games',
+            headline:    '구글 딥마인드 개발자, Claude Code와 Fable 5로 클래식 게임 \'C&C\'를 단 몇 시간 만에 iOS로 이식',
+            summary:     'AI 코딩 도구로 2003년 PC RTS 게임을 40분 만에 iPhone 네이티브 앱으로 이식하는 데 성공했어요.',
+            body:        '<p>구글 딥마인드 개발자 암마르 레시(Ammaar Reshi)가 Anthropic의 Claude Code와 최신 Fable 5 모델을 활용해 2003년 출시된 PC RTS 게임 \'커맨드 앤 컨커: 제너럴스 제로아워(Command & Conquer: Generals Zero Hour)\'를 iPhone과 iPad 네이티브 앱으로 성공적으로 이식했어요. 에뮬레이터 없이 ARM64 환경에서 직접 구동되며, 캠페인 모드·스커미시 플레이·\'제너럴스 챌린지\'를 모두 지원하고 터치 컨트롤까지 갖추고 있어요. AI 코딩 도구가 복잡한 레거시 C++ 코드베이스를 스스로 분석하고 모바일 플랫폼에 맞게 변환한 점이 이번 이식의 핵심이에요.</p><p>그래픽 파이프라인은 기존 DirectX 8을 Apple의 Metal API로 변환하는 여러 단계를 거치도록 설계됐는데, 이 복잡한 과정을 AI 도구가 대부분 자동으로 처리했어요. 최초 빌드 완성까지 불과 약 40분이 걸렸고, 이후 몇 시간의 디버깅을 거쳐 완성됐어요. 레시는 이틀 동안 Claude Max 할당량을 전부 소진했다고 밝혔으며, 경쟁사 제품을 사용한 이유에 대해 "경쟁을 존중하면서 최선의 솔루션을 택하는 것이 장기적으로 올바른 방향"이라고 답했어요.</p><p>완성된 소스 코드와 마주쳤던 버그·해결 방법을 상세히 기록한 엔지니어링 문서가 GitHub에 오픈소스로 공개되어 있어요. 게임을 직접 플레이하려면 Steam에서 원본 게임(약 5달러)을 별도로 구매해야 하며, 장시간 iPad 세션에서 간헐적인 메모리 크래시가 발생할 수 있다는 점도 참고할 필요가 있어요.</p><p>원문: <a href="https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours/">The Decoder</a></p>',
+            source:      'The Decoder',
+            publishedAt: '2026.07.06',
+            hue:         35,
+            image:       'https://the-decoder.com/wp-content/uploads/2026/07/cc5_fable_5_ios_port-1200x692.png',
+            url:         'https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours/',
+        },
+        {
+            id:          'games-d716fa58-2026-07',
+            tab:         'games',
+            headline:    '3D AI Studio v6.1.8 출시 — AI 세그멘테이션 완전 재설계, 3D 프린팅용 STL 내보내기 추가',
+            summary:     '3D AI Studio v6.1.8이 출시되어 세그멘테이션을 완전 재구축하고 3D 프린팅용 STL 내보내기 기능을 추가했어요.',
+            body:        '<p>3D AI Studio가 2026년 7월 6일 버전 6.1.8을 출시하며 세그멘테이션 기능을 처음부터 완전히 재구축했어요. 새로운 베타 AI 세그멘테이션 모델은 3D 모델을 더 논리적이고 깔끔한 파트로 분리해 주고, 파트 간 조인트를 자동으로 추가해 3D 프린팅과 조립 작업에 바로 활용할 수 있는 수준으로 출력 준비를 마쳐 줘요. 기존 모델 대비 파트 분리 품질이 크게 향상되어 복잡한 캐릭터나 오브젝트도 자연스럽게 분리되며, 작업자가 수동으로 파트를 나누고 조인트를 추가하는 시간을 크게 줄여 줄 것으로 기대돼요.</p><p>새롭게 설계된 세그먼트 뷰어는 작업 편의성을 대폭 향상시켰어요. \'익스플로디드 뷰\' 슬라이더로 모델을 펼쳐 각 파트를 입체적으로 살펴볼 수 있으며, 파트를 클릭해 선택하거나 더블 클릭으로 단독 분리하는 인터랙션도 지원해요. 텍스처(PBR 재질 완전 적용), 클레이, 컬러 세 가지 뷰 모드를 자유롭게 전환할 수 있고, 사이드바 파트 썸네일로 원하는 파트를 한눈에 찾을 수 있어요. H·I·A·F 키보드 단축키와 화살표 키로 파트 간 이동도 빠르게 처리돼요.</p><p>3D 프린팅을 위한 STL 내보내기 기능도 새롭게 추가됐어요. 각 파트를 개별 STL 파일로 내보내고 하나의 ZIP으로 묶어 주기 때문에 슬라이서 소프트웨어에 바로 불러와 출력 준비를 시작할 수 있어요. 원하는 파트를 텍스처 생성기로 직접 보내거나, 여러 파트를 병합·분리하는 기능도 함께 제공되어 3D 아티스트의 전체 워크플로우가 한층 유연해졌어요.</p><p>원문: <a href="https://www.3daistudio.com/Updates">3D AI Studio</a></p>',
+            source:      '3D AI Studio',
+            publishedAt: '2026.07.06',
+            hue:         210,
+            image:       'https://www.3daistudio.com/og/updates.png',
+            url:         'https://www.3daistudio.com/Updates',
+            urls: [
+                { label: '영상', href: 'https://www.youtube.com/playlist?list=PL9V4KpAz06FJkQei8b_cUu7gE-XWljeLj' },
+            ],
+        },
+        {
             id:          'games-ff9adf19-2026-07',
             tab:         'games',
             headline:    '브라우저에서 바로! AI로 4K PBR 텍스처 만드는 \'Mixos\' 등장',
@@ -2051,6 +2078,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-73d1ca4c-2026-07',
+            tab:         'art',
+            headline:    '할리우드, ByteDance AI 영상 툴 \'Seedance\' 공개 반대 — 뒤에서는 조용히 활용 중',
+            summary:     '미국영화협회가 공식 반대 서한을 보냈지만, 할리우드 스튜디오들은 내부적으로 Seedance를 조용히 활용하고 있어요.',
+            body:        '<p>ByteDance의 AI 영상 생성 툴 Seedance가 할리우드를 공식 입장과 현실 사이의 갈등 속으로 몰아넣고 있어요. 브래드 피트와 톰 크루즈를 AI로 합성한 15초 영상이 소셜 미디어에서 바이럴되자, 미국영화협회(MPA)가 AI 기업 역사상 처음으로 ByteDance에 사용 중지 요청서를 발송했어요. MPA는 서한에서 Seedance를 "조직적 저작권 침해를 위해 설계된 기계"라고 규정하며 강도 높게 비판했어요.</p><p>그러나 겉으로 드러난 공식 반대와 달리 업계 내부의 현실은 사뭇 달라요. 심슨 애니메이션 프로듀서 조엘 쿠와하라(Joel Kuwahara)에 따르면, 다수의 스튜디오가 공식 승인 없이 \'묻지도 말고, 말하지도 말자(don\'t ask, don\'t tell)\' 방식으로 Seedance를 내부 제작 과정에 활용하고 있다고 해요. 업계 컨설턴트 피터 채티(Peter Csathy)는 크리에이티브 전문가들이 Seedance를 현재 시장에서 가장 강력한 AI 영상 생성 도구로 인정하고 있다고 전했어요.</p><p>ByteDance는 법적 압박에 굴하지 않고 제품 시연, 구인 공고, 업계 행사, 영화감독과의 파트너십 등을 통해 할리우드 내 입지를 공격적으로 확장하고 있어요. AI가 가져다주는 제작 효율성과 저작권 침해 우려 사이에서 업계 전체가 이중적 입장을 취하고 있는 이번 사태는, 생성형 AI 도구를 둘러싼 엔터테인먼트 업계의 복잡한 갈등 구도를 적나라하게 드러내고 있어요.</p><p>원문: <a href="https://the-decoder.com/hollywood-wants-seedance-banned-and-reportedly-also-wants-to-keep-using-it/">The Decoder</a></p>',
+            source:      'The Decoder',
+            publishedAt: '2026.07.06',
+            hue:         290,
+            image:       'https://the-decoder.com/wp-content/uploads/2026/07/bytedance_seedance.png',
+            url:         'https://the-decoder.com/hollywood-wants-seedance-banned-and-reportedly-also-wants-to-keep-using-it/',
+        },
         {
             id:          'art-14835061-2026-07',
             tab:         'art',
