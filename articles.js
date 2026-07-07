@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-8808c293-2026-07',
+            tab:         'games',
+            headline:    '텍스트 한 줄로 3D 프린팅 피규어까지! Hi3D AI 플랫폼 파이프라인 완벽 해부',
+            summary:     '텍스트 프롬프트 하나로 스페이스 마린 피규어를 3D 프린팅 완성 파일까지 만드는 Hi3D 파이프라인이 공개됐어요.',
+            body:        '<p>80.lv가 Hi3D AI 3D 메이커 플랫폼을 직접 시연해, 텍스트 프롬프트 하나로 커스텀 스페이스 마린 미니어처를 3D 프린팅이 가능한 완성 파일로 만드는 전 과정을 단계별로 공개했어요. Hi3D는 ①AI 개념 이미지 생성, ②2D→3D 모델 변환, ③파트 분리, ④커넥터 자동 생성, ⑤빌드 준비 및 3MF 내보내기까지 총 5단계를 완전 자동으로 처리해요. 전문 3D 소프트웨어나 모델링 경험 없이도 아이디어만으로 인쇄 가능한 조립식 피규어 파일을 단 몇 분 안에 얻을 수 있다는 게 핵심이에요. Hi3D의 이미지 생성 엔진은 3D 재구성에 최적화된 구조적 일관성을 유지하도록 설계돼, 갑주 플레이트·헬멧·흉갑 등 구성 요소가 후속 3D 변환 과정에서도 안정적으로 유지돼요.</p><p>파트 분리와 조립 단계에서도 Hi3D의 독자 기술이 돋보여요. AI가 헬멧·흉갑·어깨 갑주·다리·무기류 등 구성 요소를 논리적으로 나누고, Press-Fit Tolerance 기술로 프린터 파라미터와 소재 특성에 맞게 조립 클리어런스를 자동 조정해요. 정적 디스플레이 모델은 내구성 위주의 고정 커넥터로, 움직임이 필요한 모델은 볼 조인트 구조로 선택해 출력할 수도 있어요. 마지막 빌드 준비 단계에서는 서포트 배치와 방향 최적화까지 자동 설정해 슬라이서에 바로 넣을 수 있는 3MF 파일을 한 번에 생성해 줘요.</p><p>기존에 커스텀 피규어를 제작하려면 개념 아트, 3D 스컬핑, 메시 수리, CAD 워크플로우, 슬라이서 설정까지 방대한 전문 지식이 필요했어요. Hi3D는 이 복잡한 기술 장벽 전체를 AI로 자동화해 진입장벽을 크게 낮추는 방향을 택했어요. 생성된 3D 모델은 오픈 메시·자기교차 같은 인쇄 불량 요인을 자동 수정해 watertight 상태로 출력되므로 별도 수리 작업도 필요 없어요. 게임 아트 파이프라인에서 AI가 3D 제작 전 과정을 자동화할 수 있다는 실증 사례로, 게임 개발자와 프롭 아티스트 모두에게 유용한 레퍼런스예요.</p><p>원문: <a href="https://80.lv/articles/from-prompt-to-reality-how-to-turn-your-idea-into-a-physical-3d-printed-collectible-using-hi3d/">80 Level</a></p>',
+            source:      '80 Level',
+            publishedAt: '2026.07.07',
+            hue:         210,
+            image:       'https://80.lv/uploads/2026/07/hi3d-collectible-featured.jpg',
+            url:         'https://80.lv/articles/from-prompt-to-reality-how-to-turn-your-idea-into-a-physical-3d-printed-collectible-using-hi3d/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.hi3d.ai' },
+            ],
+        },
+        {
             id:          'games-1f23925d-2026-07',
             tab:         'games',
             headline:    '구글 딥마인드 개발자, Claude Code와 Fable 5로 클래식 게임 \'C&C\'를 단 몇 시간 만에 iOS로 이식',
@@ -1208,6 +1223,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-7c2220f5-2026-07',
+            tab:         'industry',
+            headline:    '마이크로소프트 Xbox, 3,200명 해고 및 4개 스튜디오 매각 — AI 인프라 투자의 역풍',
+            summary:     '마이크로소프트 Xbox가 3,200명 감원과 4개 스튜디오 매각을 발표해 게임 업계에 충격을 줬어요.',
+            body:        '<p>마이크로소프트 Xbox가 \'Xbox 역사상 가장 중대한 구조조정\'을 단행해 3,200명을 감원하고, 더블 파인(Double Fine)·컴펄션(Compulsion Games)·닌자 시어리(Ninja Theory)·언데드 랩스(Undead Labs) 등 4개 스튜디오를 Xbox 게임 스튜디오 생태계에서 분리한다고 발표했어요. 더블 파인과 컴펄션은 자사 IP를 그대로 보유한 채 독립 법인으로 전환하고, 닌자 시어리와 언데드 랩스는 신규 투자자와 함께하는 새 회사로 이관돼 진행 중인 프로젝트를 계속 완성해 나갈 예정이에요. 아케인 리옹(Arkane Lyon)도 전략적 대안을 검토 중이에요. 마인크래프트의 헬렌 치앙은 콘텐츠·하드웨어·플랫폼·서비스 전 부문의 손익 책임을 지는 COO로 새롭게 선임됐어요.</p><p>Xbox 신임 CEO 아샤 샤르마는 이번 구조조정의 배경으로 두 가지를 꼽았어요. 하나는 AI 데이터센터 수요 급증으로 DRAM 가격이 치솟아 Xbox 하드웨어 원가 압박이 심각해진 것이고, 다른 하나는 게임 패스와 멀티플랫폼 전략에 5년간 200억 달러 이상을 투자했음에도 연간 핵심 사업 수익이 오히려 줄었다는 점이에요. 일부 조직은 관리 단계가 14층에 달하고, 플랫폼 팀 인원이 40% 늘었음에도 플레이어 참여도는 하락했다고 밝혔어요. 구조조정 후 관리 단계는 최대 5계층·바람직하게는 3계층으로 줄이고, 외부 용역 비용도 50% 절감할 방침이에요. 공식 발표된 퍼스트 파티 게임 타이틀은 취소되지 않으나, 액티비전·베데스다·블리자드·킹·모장 등 산하 스튜디오도 인원 축소를 피하지 못했어요.</p><p>이번 감원은 2023년 마이크로소프트가 액티비전 블리자드를 약 700억 달러에 인수한 이후 다섯 번째 대규모 구조조정이에요. Xbox는 콜 오브 듀티·월드 오브 워크래프트 같은 대형 IP를 품었음에도 핵심 사업이 오히려 약화됐다는 자체 평가를 공개했어요. AI 인프라에 연간 1,000억 달러 이상을 쏟아붓는 빅테크의 전략 방향이 게임 부문 투자 축소로 이어지는 대표 사례로, 게임 산업에서 AI 투자와 사업 균형을 어떻게 가져가야 하는지에 관한 논의를 업계 전반에 불러일으키고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/xbox-cutting-3-200-jobs-and-parting-ways-with-double-fine-compulsion-ninja-theory-and-undead-labs">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.07.07',
+            hue:         10,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt1246c42605378d53/6a4bb73c3e0ca5582dc56ff1/Xbox_header.png',
+            url:         'https://www.gamedeveloper.com/business/xbox-cutting-3-200-jobs-and-parting-ways-with-double-fine-compulsion-ninja-theory-and-undead-labs',
+        },
+        {
             id:          'industry-9c993df3-2026-07',
             tab:         'industry',
             headline:    '메타, AI로 게임 만드는 앱 \'Pocket\' 출시',
@@ -2078,6 +2105,22 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-b8969997-2026-07',
+            tab:         'art',
+            headline:    'Photoroom, 오픈소스 텍스트-이미지 모델 PRX의 데이터 전략 공개 — 다양성이 품질보다 중요해요',
+            summary:     '포토룸이 오픈소스 이미지 생성 모델 PRX의 훈련 데이터 파이프라인 전략을 4부작 마지막 편으로 상세히 공개했어요.',
+            body:        '<p>포토룸(Photoroom)이 자사 오픈소스 텍스트-이미지 생성 모델 PRX의 훈련 데이터 파이프라인 구축 과정을 블로그 4부작의 마지막 편으로 공개했어요. PRX는 70억(7B) 파라미터 규모의 디퓨전 모델이며, 이번 시리즈는 아키텍처·학습 기법·평가·데이터 전략을 각각 다루고 있어요. 핵심 원칙은 \'완벽한 데이터보다 다양한 데이터\'로, 공개 데이터셋과 사내 데이터를 결합하고, Qwen3-VL-8B 비전 언어 모델로 자동 캡셔닝을 수행하며, 탐색용 Lance 포맷과 훈련용 MDS 스트리밍 포맷을 구분해 파이프라인 효율을 높였어요. Qwen3-VL-8B는 FID·CMMD·DINO-MMD 벤치마크에서 대안 모델 대비 가장 우수한 성과를 내 최종 선택됐고, 초당 약 20장의 처리 속도를 달성했어요.</p><p>기술적 결정들도 인상적이에요. 이미지는 PNG 대신 JPEG 품질 92로 저장해 시각적 차이 없이 저장 용량을 3~10배 줄였고, 캡션 품질 기반 라이트 필터링과 퍼셉추얼 해시 기반 중복 제거로 데이터 품질을 유지했어요. 다양한 이미지 비율을 처리하기 위한 애스펙트 비율 버킷팅도 구현했으며, Ray Data로 분산 처리를 수행했어요. 팀은 \'정확하지 않은 이미지도 그대로 캡셔닝하라\'는 원칙을 고수해 이미지 자체를 필터링하지 않고 캡션 정확도로 품질을 관리하는 방식을 택했어요. 사전 학습 단계에서는 완벽한 데이터보다 다양성이 더 중요하다는 실험적 발견에서 비롯된 접근 방식이에요.</p><p>대형 AI 기업이 아닌 이커머스 특화 이미지 편집 스타트업이 수십억 파라미터 이미지 생성 모델의 데이터 전략 전체를 이토록 상세히 오픈소스로 공개하는 사례는 드물어요. 모델 가중치·데모·코드까지 모두 공개된 PRX는 AI 아트 도구의 민주화를 실질적으로 이끄는 프로젝트로 주목받고 있어요. 독자적인 이미지 생성 파이프라인을 구축하려는 개발자와 AI 아트 연구자 모두에게 실용적인 레퍼런스가 될 거예요.</p><p>원문: <a href="https://huggingface.co/blog/Photoroom/prx-part4-data">Hugging Face Blog</a></p>',
+            source:      'Hugging Face Blog',
+            publishedAt: '2026.07.07',
+            hue:         285,
+            image:       'https://cdn-uploads.huggingface.co/production/uploads/680a58121b2c7c159d2bd481/5QIAhbRR2s_0sSyiBniF-.jpeg',
+            url:         'https://huggingface.co/blog/Photoroom/prx-part4-data',
+            urls: [
+                { label: '모델', href: 'https://huggingface.co/Photoroom/prx-1024-t2i-beta' },
+                { label: '데모', href: 'https://huggingface.co/spaces/Photoroom/PRX-Pixel' },
+            ],
+        },
         {
             id:          'art-73d1ca4c-2026-07',
             tab:         'art',
