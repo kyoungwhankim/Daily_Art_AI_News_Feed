@@ -1,0 +1,8 @@
+services:
+  daily-art-ai-news:
+    build: .
+    image: art-daily-art-ai-news
+    container_name: art-daily-art-ai-news
+    ports:
+      - "20001:80"
+    restart: unless-stopped
