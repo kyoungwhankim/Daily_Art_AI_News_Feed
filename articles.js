@@ -29,6 +29,22 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-031b18b0-2026-07',
+            tab:         'games',
+            headline:    'Blender 5.2 LTS 출시 — XPBD 천 시뮬레이션·Cycles 텍스처 캐시 등 5대 업데이트',
+            summary:     '블렌더 재단이 장기 지원 버전 Blender 5.2를 출시했습니다. XPBD 멀티피직스 헤어·천 시뮬레이션, Cycles 텍스처 캐시 등 핵심 기능이 추가됐습니다.',
+            body:        '<p>블렌더 재단이 오픈소스 3D 소프트웨어의 새 장기 지원(LTS) 버전 Blender 5.2를 공식 출시했습니다. LTS임에도 불구하고 상당한 규모의 업데이트를 포함하고 있어, 게임 아트·VFX·애니메이션 분야 아티스트들의 주목을 받고 있습니다. 가장 주목할 기능은 지오메트리 노드 기반 헤어·천 물리 시뮬레이션으로, XPBD(Extended Position Based Dynamics) 멀티피직스 솔버로 구동됩니다. 이 솔버는 Houdini의 Vellum이나 언리얼 엔진의 천 툴셋과 동일한 기반으로, 게임 파이프라인과의 통합 가능성을 높입니다.</p><p>Cycles 렌더러에는 텍스처 캐시 시스템이 추가돼 VRAM 사용량을 최대 80%까지 절감합니다. Principled BSDF 셰이더의 새 Thin Wall 모드는 유리·종이·나뭇잎 등 얇은 재질을 직관적으로 표현하게 해 주며, 건축 시각화에서 발생하던 실내 어두움 문제도 해결합니다. 지오메트리 노드에는 Mesh Bevel 노드와 번들·리스트 지원이 추가됐고, 그리스 펜슬 Fill 툴에는 Delaunay 알고리즘이 적용됐습니다. LTS 버전답게 장기 안정 프로젝트에 권장되며, 지금 바로 다운로드할 수 있습니다.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/blender-5-2-lts-is-here-discover-its-5-key-features/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.15',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/07/260714_Blender52_5KeyFeatures_f.jpg',
+            url:         'https://www.cgchannel.com/2026/07/blender-5-2-lts-is-here-discover-its-5-key-features/',
+            urls: [
+                { label: '공식 릴리스', href: 'https://www.blender.org/download/releases/5-2/' },
+                { label: '릴리스 노트', href: 'https://developer.blender.org/docs/release_notes/5.2/' },
+            ],
+        },
+        {
             id:          'games-c25d4b03-2026-07',
             tab:         'games',
             headline:    'CityEngine 2026 출시 — 게임 월드 빌딩용 생성형 AI 연동 Python 3 API 도입',
@@ -1307,6 +1323,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-f1c027b7-2026-07',
+            tab:         'industry',
+            headline:    'Shutterstock, AI 학습에 쓴 3D 에셋 보상금 미지급 — TurboSquid 크리에이터들 대거 이탈 위협',
+            summary:     'Shutterstock이 TurboSquid 크리에이터들의 AI 학습 데이터 보상금을 2024년 11월 이후 미지급 중이며, 아티스트들이 플랫폼 이탈을 공론화하고 있습니다.',
+            body:        '<p>Shutterstock이 운영하는 3D 에셋 마켓플레이스 TurboSquid의 크리에이터들이 AI 학습 데이터 보상금 미지급 문제로 집단 이탈 움직임을 보이고 있습니다. Shutterstock은 2021년 TurboSquid를 인수한 뒤 Contributor Fund를 통해 아티스트 자산을 AI 훈련에 활용하고 수익을 배분해왔습니다. 2023년 한 해에만 약 400만 달러가 지급됐지만, 2024년 11월 이후로는 단 한 건의 지급도 이루어지지 않고 있습니다. Shutterstock이 2026년 2분기 지급을 약속했으나 이마저도 이행되지 않았습니다.</p><p>아티스트들의 분노는 매출 급감과 불투명한 정산 구조로 더욱 커지고 있습니다. 어떤 에셋이 얼마에 누구에게 팔렸는지 전혀 공개되지 않으며, 커뮤니티 매니저조차 다음 지급 시점을 모른다고 답하고 있습니다. 많은 아티스트들이 \'스크래이핑을 막을 방법이 없어 어쩌면 차라리 보상이라도 받으려 참여했다\'고 토로합니다. 투명성과 공정한 보상을 요구하는 청원도 제기됐습니다. 설상가상으로 Getty Images와의 합병이 무산되고 CEO가 사임하면서 조직 전체가 흔들리고 있어, 단기간 내 해결은 어려울 전망입니다.</p><p>원문: <a href="https://80.lv/articles/artists-threaten-to-leave-turbosquid-because-of-plummeting-sales-missing-payments/">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.07.15',
+            hue:         10,
+            image:       'https://cdn.80.lv/api/upload/meta/49197/images/6a56389794275/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/artists-threaten-to-leave-turbosquid-because-of-plummeting-sales-missing-payments/',
+        },
+        {
             id:          'industry-acc48d1f-2026-07',
             tab:         'industry',
             headline:    '사티아 나델라 "AI 쓰는 기업은 돈과 데이터로 두 번 대가를 치른다" 경고',
@@ -2237,6 +2265,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-cb78bb15-2026-07',
+            tab:         'art',
+            headline:    'Spotify, ChatGPT식 AI 음악 어시스턴트 출시 — 대화로 플레이리스트 탐색',
+            summary:     'Spotify가 프리미엄 구독자를 위한 대화형 AI 음악 어시스턴트를 출시했습니다. 텍스트와 음성으로 음악·팟캐스트를 탐색할 수 있습니다.',
+            body:        '<p>Spotify가 프리미엄 구독자 대상 대화형 AI 어시스턴트를 공개했습니다. 텍스트와 음성으로 앱과 멀티턴 대화를 나누며 음악·팟캐스트·오디오북을 탐색하는 기능으로, 미국·아일랜드·스웨덴의 iOS·Android 사용자(18세 이상)에게 영어 베타로 먼저 출시됐습니다. 홈 화면과 재생 화면에서 모두 사용할 수 있으며, \'더 신나는 곡 추천해 줘\'처럼 맥락을 이어가는 대화가 가능합니다. 청취 기록 조회, 신규 아티스트 발견, 트랙 저장, 아티스트 팔로우까지 채팅 한 번으로 처리할 수 있습니다.</p><p>Spotify 자체 AI와 외부 여러 모델을 혼합한 하이브리드 구조로 구동되며, 기존 AI DJ·ChatGPT 연동 플레이리스트 빌더 등 AI 기능과 자연스럽게 통합됩니다. 음악 스트리밍 플랫폼의 AI 어시스턴트화는 게임·영상 플랫폼 전반으로 확산될 흐름으로 주목됩니다. 대화형 콘텐츠 큐레이션이 새로운 사용자 인터페이스 표준이 될 가능성이 높아졌습니다.</p><p>원문: <a href="https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.15',
+            hue:         120,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/You-can-now-talk-to-Spotify_FTR-blog-header.png',
+            url:         'https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/',
+        },
+        {
+            id:          'art-5ea1b61d-2026-07',
+            tab:         'art',
+            headline:    'TIDAL, 오늘(7/15)부터 100% AI 생성 음악 저작권료 지급 중단 — 식별 아이콘 도입',
+            summary:     'TIDAL이 7월 15일부로 100% AI 생성 음악에 스트리밍 저작권료 지급을 중단하고, 이용자 화면에 AI 생성 음악 식별 아이콘을 표시합니다.',
+            body:        '<p>음악 스트리밍 플랫폼 TIDAL이 2026년 7월 15일부로 100% AI 생성 음악에 스트리밍 저작권료를 지급하지 않는다고 발표했습니다. 이 정책은 생성형 AI로 \'전부 또는 상당 부분\' 만들어진 콘텐츠를 대상으로 하며, TIDAL Upload를 통해 배포되는 인디 아티스트 음원에도 동일하게 적용됩니다. 배포사는 AI 생성 콘텐츠를 플랫폼 업로드 전에 사전 식별·신고해야 하는 의무도 생겼습니다. TIDAL은 AI 음악 자체를 차단하지는 않되, 인간이 직접 제작한 음악보다 더 엄격한 콘텐츠 무결성 기준을 적용하겠다고 밝혔습니다.</p><p>이용자 화면에는 100% AI 생성 음악임을 알리는 식별 아이콘이 표시되며, 기술이 발전함에 따라 \'상당 부분 AI 생성\' 콘텐츠로 라벨 범위를 단계적으로 확대할 계획입니다. 사기 행위(청취자 기만, 대량 업로드 이상 스트리밍 등)와 연관된 AI 음악은 즉시 차단·삭제 대상이 됩니다. Qobuz에 이어 TIDAL이 엄격한 AI 로열티 차단 정책을 채택하면서, Spotify·Apple Music과 플랫폼별 정책 격차가 뚜렷해졌습니다. 이 흐름은 게임 BGM·영상 사운드트랙 시장에서의 AI 음원 활용에도 영향을 미칠 것으로 보입니다.</p><p>원문: <a href="https://ra.co/news/85507">Resident Advisor</a></p>',
+            source:      'Resident Advisor',
+            publishedAt: '2026.07.15',
+            hue:         280,
+            image:       'https://static.ra.co/images/news/2026/tidal.png',
+            url:         'https://ra.co/news/85507',
+        },
         {
             id:          'art-21c3948a-2026-07',
             tab:         'art',
