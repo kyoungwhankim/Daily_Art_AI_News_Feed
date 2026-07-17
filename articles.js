@@ -29,6 +29,34 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-457a8055-2026-07',
+            tab:         'games',
+            headline:    'SideFX, Houdini 22 정식 출시 — Gaussian Splat·AI 텍스처·캐릭터 애니메이션 대폭 강화',
+            summary:     'SideFX가 Houdini 22를 출시하며 3D Gaussian Splatting 툴셋과 AI 텍스처 기능을 새롭게 내장했어요.',
+            body:        '<p>SideFX가 절차적 3D 소프트웨어 Houdini 22를 공식 출시했어요. 이번 버전의 가장 주목할 변화는 완전히 새로운 3D Gaussian Splatting 전용 툴셋이에요. 실제 사진에서 스플랫을 학습하거나 3D 씬에서 직접 생성하는 워크플로를 지원하며, 표준 변형 노드로 스플랫을 애니메이션화하고 Karma 렌더러로 최종 렌더링까지 Houdini 안에서 완결할 수 있어요.</p><p>이미지 처리 프레임워크 Copernicus도 대폭 업데이트됐어요. 그런지 맵 자동 생성, 실험적 3D 텍스처 페인팅, 2D 리플 솔버가 추가됐고, 지형·오션 서페이스 생성을 위한 월드 빌딩 기능으로도 확장됐어요. KineFX 캐릭터 리깅과 CFX 영역도 재사용 가능한 리그 템플릿, 리그 인버전, 새로운 Set Driven Keys 컴포넌트 등으로 크게 강화됐어요. Houdini FX 노드 고정 라이선스 기준 가격은 $4,495이며, 무료 Apprentice 에디션과 저가 Indie 에디션도 계속 제공돼요. 게임·VFX 아트 파이프라인에서 Gaussian Splat 기반 씬 재구성과 AI 텍스처 생성을 한 툴 안에서 처리할 수 있게 된 만큼, 프로 아티스트들의 워크플로에 실질적인 변화가 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/sidefx-just-released-houdini-22/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.17',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/49281/images/6a57ea98136c5/contain_1200x630.jpg',
+            url:         'https://www.cgchannel.com/2026/07/sidefx-just-released-houdini-22/',
+            urls: [
+                { label: '새 기능', href: 'https://www.sidefx.com/products/whats-new-in-h22/' },
+                { label: '80.lv 기사', href: 'https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more' },
+            ],
+        },
+        {
+            id:          'games-469ac26b-2026-07',
+            tab:         'games',
+            headline:    'Roblox, 문자 프롬프트 하나로 게임 만드는 \'Build\' 기능 공개 — 3D 씬·캐릭터·사운드 AI가 한 번에 생성',
+            summary:     'Roblox가 텍스트 한 줄로 게임 전체를 자동 생성하는 \'Build\' 기능을 모바일 앱에서 공개하고 알파 테스트를 예고했어요.',
+            body:        '<p>Roblox가 텍스트 프롬프트 하나로 완성된 게임을 만들어주는 신기능 \'Build\'를 모바일 앱에서 공식 공개했어요. 예를 들어 \'울창한 숲속을 배경으로 한 아늑한 어드벤처 게임을 만들어줘\'처럼 간단한 자연어 문장만 입력하면, Roblox 자체 개발 AI — 오픈소스와 독점 모델을 혼합한 광범위한 AI 스택 — 이 게임플레이 메커니즘, 3D 환경과 캐릭터, 비주얼 스타일, 사운드 이펙트까지 한꺼번에 자동 생성해줘요. 생성된 게임은 사용자가 직접 수정·커스터마이징한 뒤 플랫폼에 공유할 수 있어요. 프로그래밍 지식이 전혀 없어도 누구나 게임 제작자로 첫발을 내딛을 수 있게 됐고, Roblox는 이 기능이 단순한 자동화 도구가 아니라 사용자가 아이디어를 현실로 빠르게 가져올 수 있도록 돕는 창작 도우미라고 설명했어요. Google의 Project Genie, Microsoft의 AI 게임 도구, Tencent의 유사 기술 등 빅테크 경쟁도 치열한 상황에서 Roblox는 자사 크리에이터 생태계를 기반으로 차별화된 전략을 펼치고 있어요.</p><p>서비스는 7월 28일부터 뉴질랜드의 9세 이상 사용자를 대상으로 퍼블릭 알파 테스트를 시작하고, 16세 이상은 완성한 게임을 전 세계에 배포할 수도 있어요. 무료·유료 버전이 모두 제공될 예정이에요. AI 생성 게임이 플랫폼 콘텐츠 퀄리티를 낮출 수 있다는 우려에 대해서, Roblox는 플레이어 잔존율을 기반으로 랭킹하는 디스커버리 시스템으로 저품질 콘텐츠를 자연스럽게 필터링한다고 밝혔어요. GDC 조사에서 업계 전문가 52%가 생성형 AI가 게임 업계에 부정적 영향을 미친다고 답했지만, 이 흐름이 빅테크 주도로 이미 강하게 전개되고 있는 만큼 필터 시스템의 실효성이 플랫폼 신뢰를 좌우할 핵심 변수가 될 거예요. 한편 \'Build\' 외에도 3D 에셋 생성 파운데이션 모델과 씬 전체를 텍스트 한 줄로 구성하는 씬 생성 모델도 함께 개발 중이어서, Roblox가 AI 기반 게임 제작 플랫폼으로 전면 탈바꿈하려는 장기 비전이 점점 선명해지고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.17',
+            hue:         330,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/Roblox-Build-feature.jpeg?w=1200',
+            url:         'https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/',
+        },
+        {
             id:          'games-0a078856-2026-07',
             tab:         'games',
             headline:    'Meshy, 대화형 에이전틱 AI로 3D 창작 패러다임 전환 — \'3D Agent Beta\' 출시',
@@ -1384,6 +1412,33 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-eb8428b3-2026-07',
+            tab:         'industry',
+            headline:    'AI 보조 언리얼 엔진 툴 직접 만들어봤더니 — 개발자가 3개월 실사용 후 느낀 것들',
+            summary:     'Thrylox 개발자가 Claude로 언리얼 엔진 AI 보조 플러그인을 만들며 느낀 AI의 강점과 한계를 솔직하게 공유했어요.',
+            body:        '<p>Thrylox의 온라인 테크 리드 올가 타라노바가 Claude를 활용해 언리얼 엔진 5용 AI 보조 플러그인 \'AssetCsvSync\'를 개발한 3개월 실사용 경험을 솔직하게 공유했어요. 이 플러그인은 CSV 파일과 언리얼 DataAsset 간 데이터를 자동 변환해주는 도구로, 주말 프로토타입에서 시작해 실제 게임 개발 파이프라인에서 매달 쓰이는 약 4,000줄 규모의 C++ 프로덕션 툴로 발전했어요. Claude는 UCLASS·UPROPERTY 매크로 같은 보일러플레이트 코드, Slate UI 컴포넌트, 리플렉션 기반 프로퍼티 순회 등 Epic 공식 문서에서 반복적으로 등장하는 잘 정형화된 언리얼 패턴에서 첫 시도만에 정확한 구현을 뽑아냈어요. 입력과 출력이 명확하게 정의되어 있고 왕복 테스트로 결과를 쉽게 검증할 수 있었기 때문이에요.</p><p>반면 한계도 뚜렷하게 드러났어요. 언리얼 엔진 특유의 에디터 동작 방식이나 프로젝트 고유의 맥락이 개입하는 영역에서는 AI 성능이 급격히 저하됐어요. 언두 시스템 통합 미흡, 변경되지 않은 값을 조용히 건너뛰는 직렬화 기본값 버그, 복잡한 중첩 구조를 지원할 때 발생하는 회귀 오류가 대표적인 사례예요. 타라노바는 "Claude는 격리된 기능 생성에는 뛰어나지만, 시스템이 점점 커질수록 전반적인 코드 일관성 유지에는 훨씬 약하다"고 평가했어요. 게임플레이 코드는 슬랙 채팅에서 오간 팀 내 암묵적 결정처럼 공식 문서화가 안 된 맥락이 많아 AI 의존도를 높이기 어렵다는 점도 강조됐어요. 결론적으로 AI 보조 개발은 요구사항이 명확하고 검증이 용이한 툴링·자동화·에디터 워크플로 영역에서 효과를 발휘하고, 변동성이 크고 팀 맥락이 뒤엉키는 게임플레이 코드는 여전히 사람의 판단이 더 중요하다는 현장의 경험을 생생하게 전달하는 사례예요. 플러그인 소스코드는 GitHub에 오픈소스로 공개됐어요.</p><p>원문: <a href="https://www.pocketgamer.biz/lessons-from-building-an-ai-assisted-unreal-engine-tool/">PocketGamer.biz</a></p>',
+            source:      'PocketGamer.biz',
+            publishedAt: '2026.07.17',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/140462/89418/olga-taranova_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/lessons-from-building-an-ai-assisted-unreal-engine-tool/',
+        },
+        {
+            id:          'industry-11e63f0e-2026-07',
+            tab:         'industry',
+            headline:    '일본 온라인 게임 개발사 100%, AI 도구 사용 중 — JOGA 연간 설문 결과',
+            summary:     '일본온라인게임협회 설문에서 온라인 게임 개발사 100%가 생성형 AI를 활용하고 있으며, Gemini·Claude 순으로 사용률이 높았어요.',
+            body:        '<p>일본온라인게임협회(JOGA)와 카도카와 ASCII 연구소가 공동 발표한 2026년 설문에서, 조사에 참여한 일본 온라인 게임 개발사 전원 — 즉 100% — 이 생성형 AI를 어떤 형태로든 활용하고 있다는 결과가 나왔어요. 가장 많이 사용된 도구는 Google Gemini(94%), Claude(84%), GitHub Copilot(76%) 순이었어요. 주요 활용 목적은 \'유저 선호도 분석\'과 \'유저 행동 예측\'이 가장 높은 비중을 차지했고, 아트·음악·보이스 액팅 같은 창작 영역에서의 직접 활용은 상대적으로 낮았어요. 전년도 같은 조사에서 ChatGPT 사용률이 59%에 그쳤던 것과 비교하면, 불과 1년 만에 일본 온라인 게임 업계 전체가 AI를 일상 업무 도구로 받아들였음을 보여주는 상징적인 수치예요. 이번 조사는 Famitsu의 보도를 통해 주목받았으며, 영문 미디어에는 Automaton과 PC Gamer가 발 빠르게 해설 기사를 냈어요.</p><p>창작 영역보다 데이터 분석 위주라는 점은 어느 정도 안도감을 주지만, 조사에 함께 참여한 게이머들이 가장 많이 표명한 우려는 "모든 게임이 비슷해 보일 것"이었어요. 영미권 플랫폼에서 볼 수 있는 AI 반발 정서가 일본에서도 문화적 고립 없이 동일하게 나타나고 있다는 점이 주목돼요. Larian Studios처럼 AI 실험을 신중하게 철회한 스튜디오 사례와는 대조적으로, 이번 조사는 현장에서 AI가 이미 되돌릴 수 없을 만큼 깊이 뿌리내렸음을 수치로 확인해줘요. 데이터센터의 전력 소비와 소음 공해, 그리고 창작물의 획일화 우려는 여전히 해결되지 않은 숙제로 남아 있어요. 하지만 이 결과는 AI 도입이 이제 \'할 것이냐 말 것이냐\'의 선택이 아니라, \'어떻게, 어떤 영역에서 책임감 있게 쓸 것이냐\'의 문제로 완전히 전환됐음을 업계 전체에 선언하는 데이터예요.</p><p>원문: <a href="https://www.pcgamer.com/gaming-industry/poll-finds-100-percent-of-japanese-online-game-developers-are-using-ai-though-mostly-for-user-preference-analysis-and-user-behavior-prediction/">PC Gamer</a></p>',
+            source:      'PC Gamer',
+            publishedAt: '2026.07.17',
+            hue:         30,
+            image:       'https://cdn.mos.cms.futurecdn.net/5BCLDn9uWa9YYLdeqYWPBL-1920-80.png',
+            url:         'https://www.pcgamer.com/gaming-industry/poll-finds-100-percent-of-japanese-online-game-developers-are-using-ai-though-mostly-for-user-preference-analysis-and-user-behavior-prediction/',
+            urls: [
+                { label: '상세 보기', href: 'https://automaton-media.com/en/news/generative-ai-use-among-japanese-online-game-companies-at-100-according-to-industry-survey/' },
+            ],
+        },
+        {
             id:          'industry-e1ef0fad-2026-07',
             tab:         'industry',
             headline:    '마이크로소프트, Xbox 인력 3,200명 추가 감원 — AI 전환 가속 속 개발자들의 절망적인 목소리',
@@ -2350,6 +2405,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-3a590b43-2026-07',
+            tab:         'art',
+            headline:    'Google Vids, AI 아바타·Gemini Omni 영상 편집 기능 추가 — 셀카 한 장으로 나만의 AI 발표자 완성',
+            summary:     'Google Vids에 셀카 한 장으로 만드는 개인화 AI 아바타와 Gemini Omni 기반 단계별 영상 편집 기능이 추가됐어요.',
+            body:        '<p>Google이 업무용 영상 제작 도구 Google Vids에 Gemini Omni 기반 영상 편집과 개인화 AI 아바타 기능을 대거 추가했어요. 셀카 사진 한 장과 목소리 녹음 한 번으로 자신을 닮은 디지털 아바타를 생성할 수 있고, 이 아바타가 AI가 만든 영상에 실제 발표자처럼 자연스럽게 등장해요. Gemini Omni는 텍스트 프롬프트와 참고 이미지를 함께 입력받아 영상을 생성하며, 배경 교체·조명 보정·특수 효과 추가 같은 후반 편집 작업도 대화하듯 단계별로 처리할 수 있어요. 처음부터 다시 만드는 대신 부분 수정을 반복하는 단계적 워크플로가 가능해, 복잡한 영상 편집 소프트웨어를 배우지 않아도 원하는 결과물을 얻을 수 있어요. 주요 타깃은 회사 내부 업데이트 영상, 사내 교육 콘텐츠, 비즈니스 발표 자료 같은 기업용 커뮤니케이션 영역이에요. 구글 계정과 연결된 Workspace 생태계 안에서 바로 쓸 수 있다는 점도 기업 사용자에게 큰 메리트예요.</p><p>보안 측면에서는 아바타를 계정 소유자의 외모와 음성에만 연결하고, AI 생성 사실을 표시하는 SynthID 워터마크를 영상에 보이지 않게 삽입해 투명성을 확보했어요. 18세 이상 사용자에게만, 특정 국가·지역에서만 제공해 오남용 방지 장치도 마련됐어요. HeyGen·Synthesia·Captions·D-ID 같은 AI 영상 스타트업과 직접 경쟁하는 포지셔닝이 분명해진 가운데, Google의 방대한 Workspace 사용자 기반과 Gemini 멀티모달 역량이 결합한 Vids의 본격 참전은 이 시장 판도를 크게 흔들 것으로 예상돼요. 창작자 입장에서는 영상 제작 진입 장벽이 대폭 낮아지는 반면, AI 아바타 확산이 초상권과 진위 판별에 어떤 영향을 미칠지도 함께 고민해야 할 시점이에요.</p><p>원문: <a href="https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.17',
+            hue:         270,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/google-vids-ai-avatar.jpg?resize=1200,772',
+            url:         'https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/',
+            urls: [
+                { label: '공식 블로그', href: 'https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/' },
+            ],
+        },
+        {
+            id:          'art-2ae0c4cb-2026-07',
+            tab:         'art',
+            headline:    'Foundry, Nuke용 AI 로토스코핑 플러그인 \'SmartRoto\' 출시 — 단순 자동화 아닌 \'아티스트 방식\' 그대로',
+            summary:     'Foundry가 Nuke용 AI 로토스코핑 플러그인 SmartRoto를 연 $499에 출시해, 키프레임 작업을 AI가 대신하고 아티스트 판단은 절대적으로 존중해요.',
+            body:        '<p>Foundry가 VFX 작업 중 가장 지루한 작업으로 꼽히는 로토스코핑을 AI로 가속화하는 Nuke 플러그인 SmartRoto를 연 $499에 출시했어요. Nuke·NukeX·Nuke Studio·Nuke Indie 전 에디션에서 노드 고정·플로팅 라이선스로 이용할 수 있어요. SmartRoto는 완전 자동화 도구가 아니에요. 아티스트가 피사체를 형태별로 나누어 깔끔한 프레임에 스플라인을 직접 그리면, AI가 이후 프레임에서 그 스플라인을 추적·변형·애니메이션화해주는 방식이에요. 즉 아티스트의 눈과 판단이 필요한 초기 형태 분해는 사람이 담당하고, 실제로 시간이 가장 많이 걸리는 키프레임 채우기 작업을 AI가 맡아요.</p><p>핵심 설계는 두 종류의 키프레임을 구분하는 것이에요. AI가 예측하는 \'smart key\'와 아티스트가 직접 놓거나 수정한 \'user key\'로 나뉘고, user key는 절대 기준(gospel)으로 취급돼 AI가 절대 덮어쓰지 않아요. 아티스트가 특정 프레임을 수정하면 그 프레임이 user key로 승격되고, AI는 이 정보를 반영해 주변 구간을 다시 계산해요. 세그멘테이션 마스크에 스플라인을 두르는 기존 시장 해법과 달리, SmartRoto는 광학 흐름(optical flow)도 이미지 매팅도 아닌 독자적인 머신러닝 모델을 쓰는데, 이 모델이 정밀도가 가장 중요한 피사체 외곽선에서 정확하게 동작하는 것이 설계의 핵심이에요. Foundry는 생산성을 최대 4배까지 향상시킬 수 있다고 밝혔으며, 게임 시네마틱 VFX 작업에서도 바로 적용 가능해요.</p><p>원문: <a href="https://www.fxguide.com/fxfeatured/foundrys-smartroto-ai-assisted-roto-that-aims-to-work-the-way-you-do/">FXGuide</a></p>',
+            source:      'FXGuide',
+            publishedAt: '2026.07.17',
+            hue:         290,
+            image:       'https://www.fxguide.com/wp-content/uploads/2026/07/fxg-featured-RotoFoundry.jpg',
+            url:         'https://www.fxguide.com/fxfeatured/foundrys-smartroto-ai-assisted-roto-that-aims-to-work-the-way-you-do/',
+        },
         {
             id:          'art-45d3546e-2026-07',
             tab:         'art',
