@@ -1412,6 +1412,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-fc0f80d1-2026-07',
+            tab:         'industry',
+            headline:    'Quest maker Meta is having its cake and eating it',
+            summary:     '메타가 AI 메모리칩 부족을 이유로 Quest 가격을 인상하면서 동시에 블랙록과 140억 달러 규모의 AI 데이터센터 구축 계약을 체결했습니다.',
+            body:        '<p>메타가 2026년 4월, AI로 인한 메모리 칩 부족을 이유로 퀘스트 3와 퀘스트 3S의 판매 가격을 인상했습니다. 전 세계적인 핵심 부품 수급난이 VR을 포함한 거의 모든 소비자 전자기기 시장에 영향을 미치고 있으며, 하드웨어 생산과 소프트웨어 지원을 지속하려면 그 비용의 일부를 소비자에게 전가할 수밖에 없다고 설명했어요. 그런데 공교롭게도 바로 같은 날, 메타는 세계 최대 자산운용사 블랙록과 약 140억 달러 규모의 전략적 합작 계약을 체결하며 텍사스주 엘패소에 1기가와트 규모의 최첨단 AI 데이터센터 캠퍼스를 구축하겠다고 발표했습니다. 이 시설은 메타의 AI 기술 개발과 핵심 비즈니스 성장에 필수적인 역할을 담당하게 될 예정이에요.</p><p>이 역설적인 행보는 업계 안팎에서 큰 논란을 불러일으키고 있어요. 소비자 전자기기의 부품 가격을 끌어올리는 핵심 원인 중 하나가 바로 메타와 같은 빅테크 기업들의 대규모 AI 인프라 투자이기 때문입니다. 결국 메타는 자신이 조장한 부품 가격 상승의 부담을 게임·VR 소비자에게 전가하면서, 정작 자신은 그 AI 인프라 투자를 더욱 확대하는 셈이에요. 메타의 VR·AR 사업을 담당하는 리얼리티랩스 부문은 메타버스 구현을 목표로 6년간 활동했지만 누적 836억 달러에 달하는 막대한 적자를 기록했습니다. 그 과정에서 Sanzaru Games, Twisted Pixel Games, Armature Studio 등 내부 VR 게임 스튜디오들이 잇따라 문을 닫았어요. 마이크로소프트 역시 엑스박스 하드웨어 가격을 반복 인상하면서 AI 인프라에 수백억 달러를 투자하는 유사한 행보를 보이고 있어, 빅테크 전반의 구조적 문제라는 지적도 나오고 있습니다. 하드웨어 소비자에게 비용을 전가하면서 AI 인프라에는 막대한 자금을 쏟아붓는 메타의 이중적 전략이 지속 가능한지에 대한 업계의 비판과 의문이 점점 더 거세지고 있습니다.</p><p>원문: <a href="https://www.gamedeveloper.com/business/quest-maker-meta-spending-billions-on-ai-data-centre-while-lamenting-the-ai-driven-component-shortage">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.07.29',
+            hue:         210,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltcff5344af178004e/6a689b494193b6063711eae1/Meta_header.png',
+            url:         'https://www.gamedeveloper.com/business/quest-maker-meta-spending-billions-on-ai-data-centre-while-lamenting-the-ai-driven-component-shortage',
+        },
+        {
             id:          'industry-eb8428b3-2026-07',
             tab:         'industry',
             headline:    'AI 보조 언리얼 엔진 툴 직접 만들어봤더니 — 개발자가 3개월 실사용 후 느낀 것들',
@@ -2405,6 +2417,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-6bb4c17a-2026-07',
+            tab:         'art',
+            headline:    'Fish Audio raises $52M seed to build AI voice models for creators and enterprises',
+            summary:     '전 Nvidia 연구원이 창업한 Fish Audio가 시드 라운드에서 5,200만 달러를 조달해 크리에이터와 기업 대상 AI 음성 모델 개발을 본격 확대합니다.',
+            body:        '<p>캘리포니아주 팔로알토 소재 인공지능 음성 모델 스타트업 피시 오디오가 시드 라운드에서 총 오천이백만 달러의 투자를 유치했습니다. 코어라인 벤처스와 캐피털 투데이가 공동 리드를 맡았으며, 다수의 투자사가 이번 라운드에 참여했어요. 회사는 전직 엔비디아 연구원 출신인 샤오지아 리아오가 창업했으며, 서비스 출시 이후 빠르게 성장해 현재 팔백만 명 이상의 사용자와 연간 반복 매출 이천백만 달러를 달성했습니다. 플랫폼은 만오천 개 이상의 자연어 제어 옵션을 갖춘 음성 생성 라이브러리를 제공하며, 지난 한 해 동안 음성 생성 모델 네 종과 음성-텍스트 변환 모델 한 종 등 총 다섯 가지 모델을 출시했어요. 이 중 세 개 모델은 오픈소스로 공개되어 깃허브에서 삼만 천 개 이상의 스타를 기록하고 있으며, 최신 모델은 유료 방식의 인터페이스로만 제공됩니다.</p><p>피시 오디오는 크리에이터와 기업 시장을 동시에 공략하는 이중 전략을 취하고 있어요. 크리에이터는 월 정기 구독 플랜을 통해 음성 생성 시간과 보이스 클로닝 기능을 이용할 수 있고, 기업 고객들은 인공지능 아바타, 게임 캐릭터 음성, 음성 에이전트 구현에 이 기술을 적극 활용하고 있습니다. 한편, 창작자들의 동의 없이 목소리가 무단으로 업로드됐다는 논란이 있었는데, 피시 오디오는 신청 후 삼 분 이내 음성 삭제가 가능한 자동화 시스템을 구축해 대응했어요. 최고경영자 리사 카오는 이번 투자를 통해 더욱 고도화된 모델 개발과 늘어나는 기업 수요에 적극 대응할 수 있게 됐다고 밝혔습니다. 올해 안에 오디오 이해 모델을, 향후에는 음성 간 직접 변환이 가능한 음성 대 음성 변환 모델도 출시할 계획이에요. 인공지능 음성 합성 시장의 경쟁이 갈수록 치열해지는 가운데, 피시 오디오가 오픈소스 생태계와 기업 고객 기반을 무기로 차별화된 입지를 구축할 수 있을지 주목됩니다.</p><p>원문: <a href="https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.07.29',
+            hue:         270,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/Fish-Audio-CoFounders.jpeg?w=1024',
+            url:         'https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/',
+        },
         {
             id:          'art-3a590b43-2026-07',
             tab:         'art',
