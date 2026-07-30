@@ -29,6 +29,44 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-cd6b6e8f-2026-07',
+            tab:         'games',
+            headline:    'AniShort, 스크립트부터 스토리보드·영상 생성까지 원스톱 AI 애니메이션 플랫폼 공개',
+            summary:     'AniShort이 스크립트부터 영상 렌더링까지 애니메이션 제작 전 과정을 하나의 브라우저 환경에서 처리하는 AI 플랫폼을 선보였어요.',
+            body:        '<p>AniShort은 시나리오 작성, 스토리보드 생성, 캐릭터 관리, 영상 제작, 편집, 렌더링까지 애니메이션 제작의 모든 단계를 브라우저 하나에서 처리할 수 있는 원스톱 AI 플랫폼이에요. 기존 워크플로는 각 단계마다 별도의 툴을 전환해야 해서 참조 파일이 끊어지거나 캐릭터 일관성이 무너지는 문제가 자주 발생했어요. AniShort은 단일 데이터 아키텍처 위에 모든 제작 단계를 통합해 이런 비효율을 근본적으로 해소했어요. 스크립트를 수정하거나 스토리보드를 변경해도 캐릭터 자산이 자동으로 이어져 대규모 프로젝트에서도 작업 흐름이 끊기지 않아요.</p><p>주목할 기능 중 하나는 \'무한 캔버스(Infinite Canvas)\' 기반의 영구 캐릭터 프로파일이에요. 한 번 만든 캐릭터를 여러 캔버스와 스토리보드에서 그대로 재사용할 수 있어, 샷마다 캐릭터를 다시 생성해야 하는 번거로움이 사라져요. Seedance 2.0 Unlimited Edition 등 주요 생성 모델을 내장하고 있어 별도 구독 없이 바로 사용할 수 있고, 대기 없이 우선 생성이 가능해요. 현재 글로벌 베타 서비스 중이며 인디 크리에이터와 소규모 스튜디오를 위한 합리적인 토큰 요금제도 준비돼 있어요.</p><p>원문: <a href="https://80.lv/articles/anishort-unifies-scriptwriting-storyboarding-video-generation-in-one-workflow">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.07.30',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/49379/images/6a692d3652c1f/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/anishort-unifies-scriptwriting-storyboarding-video-generation-in-one-workflow',
+            urls: [
+                { label: '공식 사이트', href: 'https://global.anishort.ai/' },
+            ],
+        },
+        {
+            id:          'games-6f2bfecb-2026-07',
+            tab:         'games',
+            headline:    'RTX Render for Character Creator·iClone 오픈 베타 시작 — 실시간 레이트레이싱 캐릭터 렌더링',
+            summary:     'Reallusion이 Character Creator와 iClone에서 경로 추적 방식 고품질 렌더링을 지원하는 RTX Render를 오픈 베타로 출시했어요.',
+            body:        '<p>Reallusion이 자사 캐릭터 제작 툴 Character Creator와 iClone에 경로 추적 방식의 신규 렌더러 RTX Render를 오픈 베타로 공개했어요. 기존 DirectX 11 기반 렌더 엔진을 대체하는 이 모드는 피부 서브서피스 스캐터링, 실제 카메라 심도, 헤어 전용 컨트롤, 투명도·코팅·광택 컴포넌트를 갖춘 머티리얼 시스템 등을 지원해요. 공식 표현에 따르면 \'거의 오프라인 렌더 수준\'의 품질을 외부 애플리케이션으로 파일을 내보내지 않고 소프트웨어 내에서 직접 구현할 수 있어요.</p><p>RTX Render는 NVIDIA Omniverse 기술 기반으로 NVIDIA GPU가 필수예요. 최소 GeForce RTX 3060이 필요하고 RTX 4070 Super 이상을 권장해요. AMD·Intel GPU에서는 사용이 불가능하다는 제한이 있지만, 2023년 단종된 Iray 플러그인 이후 Reallusion의 가장 강력한 네이티브 렌더링 솔루션이에요. Character Creator 5와 iClone 8 기존 사용자는 별도 베타 빌드를 설치해 바로 체험할 수 있으며, 정식 출시 후에는 두 앱 모두 무료 업데이트로 제공될 예정이에요. 베타 버전에는 55종의 기성 머티리얼과 18가지 포트레이트 조명 프리셋도 포함돼 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/try-the-open-beta-of-rtx-render-for-character-creator-and-iclone/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.30',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/07/260729_ReallusionRTXRender_CharacterCreator_iClone_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/07/try-the-open-beta-of-rtx-render-for-character-creator-and-iclone/',
+        },
+        {
+            id:          'games-f21adb6c-2026-07',
+            tab:         'games',
+            headline:    'Physical Atmosphere² for Blender — AI 기반 초고해상도 하늘 생성 플러그인 출시',
+            summary:     'Physical Addons의 신작 Physical Atmosphere²가 Blender에서 오존·대기 오염까지 재현하는 초정밀 하늘 생성 툴로 베타 출시됐어요.',
+            body:        '<p>Physical Addons가 Blender용 하늘 생성 플러그인 Physical Atmosphere²를 공개했어요. 2020년 이후 Superhive에서만 17,000건 이상 판매된 인기 애드온 Physical Starlight and Atmosphere(PSA)의 후속작으로, 진정한 분광 대기(spectral atmosphere)와 다중 산란, 오존 제어, 대기 에어로졸, 안개 설정까지 갖춘 훨씬 강력한 툴이에요. \'어이없을 만큼 고급 모드(stupidly advanced mode)\'를 통해 모든 기반 파라미터를 직접 제어할 수 있으며, 지상에서의 하늘뿐 아니라 우주에서 바라본 지구 대기까지 렌더링할 수 있어요.</p><p>시스템 요구 사양은 비교적 낮아요. 볼류메트릭 클라우드 처리에는 GeForce RTX 3060이나 AMD Radeon RX 6600 수준의 중급 GPU가 필요하지만, 대기 컴포넌트 자체는 내장 그래픽에서도 작동해요. NASA, Renault, Ubisoft, 343 Industries 등의 아티스트들도 PSA 사용자로 이름을 올리고 있어 업계 신뢰도가 높아요. 현재 베타 버전이며 초기 성능 이슈는 후속 업데이트로 대부분 수정됐어요. Blender 5.2 이상에서 호환되고 영구 라이선스 가격은 118달러, PSA 기존 사용자에게는 70% 할인이 적용돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/physical-atmosphere-2-generates-insanely-detailed-blender-skies/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.07.30',
+            hue:         120,
+            url:         'https://www.cgchannel.com/2026/07/physical-atmosphere-2-generates-insanely-detailed-blender-skies/',
+        },
+        {
             id:          'games-6051e9a9-2026-07',
             tab:         'games',
             headline:    '블렌더에서 영상 한 개로 전신 모션 캡처 — BlendCap 출시',
@@ -1442,6 +1480,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-25adcb6e-2026-07',
+            tab:         'industry',
+            headline:    'EA CEO, GenAI 도입 성과로 3,860만 달러 보상 — 스튜디오 감원과 맞닿은 논란',
+            summary:     'EA CEO가 GenAI 전략 추진과 프랜차이즈 성과를 인정받아 약 3,860만 달러의 보상 패키지를 받아 논란이 일고 있어요.',
+            body:        '<p>EA의 CEO 앤드류 윌슨이 2026 회계연도에 총 3,860만 달러(약 530억 원)의 보상 패키지를 받았어요. 전년도 3,050만 달러 대비 크게 오른 금액으로, 기본급 130만 달러 외 나머지는 주식 보상 2,800만 달러와 성과 보너스 650만 달러로 구성됐어요. EA의 연간보고서(10-K)에 따르면, Battlefield 6 성공 론칭, EA Sports FC의 지속 성과, Skate의 멀티플랫폼 얼리 액세스 배포 등 주요 프랜차이즈 목표를 달성한 것이 높이 평가받았어요. 특히 생성형 AI 전략 파트너십 구축과 우선 프로덕션 영역에서의 GenAI 도입 목표 달성도 평가 항목에 포함돼 업계의 주목을 끌었어요.</p><p>그러나 같은 기간 EA는 Full Circle 스튜디오와 Battlefield 개발 부서에서 대규모 인력 감축을 단행해 업계에서 강한 비판을 받았어요. AI 효율화로 발생한 이익이 경영진 보상에 집중되는 반면 현장 개발자들은 감원 대상이 된다는 구조적 문제가 게임 개발자 커뮤니티를 중심으로 제기되고 있어요. 보안 강화 명목으로 전용 항공기 이용 비용 230만 달러가 추가 지급된 사실도 논란을 키웠어요. 아울러 사우디아라비아 국부펀드가 포함된 컨소시엄과의 비상장화 거래 논의도 공시에 포함돼 EA의 향후 기업 구조 변화에 업계의 이목이 집중되고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.07.30',
+            hue:         10,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltb7ba5a606cc7bc51/6a69d3cc32b7ca490195fb0e/Wilson_Header.png',
+            url:         'https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption',
+        },
+        {
+            id:          'industry-84a6de29-2026-07',
+            tab:         'industry',
+            headline:    'AI 거부 선언한 게임 스튜디오들 — \'우리 게임엔 AI 없어요\'',
+            summary:     '생성형 AI 사용을 공식 거부한 게임 스튜디오 목록이 공개됐어요. 도용·법적 불확실성·창작 가치 훼손 등을 이유로 들었어요.',
+            body:        '<p>Aftermath.site의 게임 저널리스트 네이선 그레이슨이 생성형 AI 사용을 공식 거부한 게임 스튜디오 목록을 정리해 공개했어요. 포함된 스튜디오들은 각자의 언어로 거부 이유를 직접 밝히고 있는데, 저작권 침해 소지가 있는 무단 데이터 수집, AI 결과물의 법적 소유권 불명확성, 반복적이지 않은 인간 창작물의 가치, 에너지 낭비 문제 등이 공통적으로 거론됐어요. 이 목록은 지속적으로 업데이트될 예정이며, 자사 스튜디오를 올리고 싶은 개발자는 직접 연락을 취할 수 있어요.</p><p>목록에 이름을 올린 스튜디오들은 Abandoned Sheep, Alien Fruit Games, Apparition Games, The Beauty Cult, Blendo Games, Blue Bottle Games 등 다수예요. 이들 중 일부는 계약서에 AI 미사용 조항을 포함하거나 외주 계약자에게도 같은 기준을 적용하는 방식으로 실질적인 \'AI 프리\' 개발 문화를 구축하고 있어요. 업계 전반에서 AI 도입 속도가 빨라지는 흐름 속에서, 이 목록은 창작 윤리와 인간 중심 개발을 지지하는 스튜디오들의 연대 선언으로 주목받고 있어요. \'AI 거부\'가 단순한 반감이 아닌 신중한 판단과 원칙에 기반한 입장임을 보여주는 사례들이에요.</p><p>원문: <a href="https://aftermath.site/video-games-no-ai">Aftermath</a></p>',
+            source:      'Aftermath',
+            publishedAt: '2026.07.30',
+            hue:         340,
+            image:       'https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/size/w1200/2026/07/shutterstock_2267663029.jpg',
+            url:         'https://aftermath.site/video-games-no-ai',
+        },
+        {
             id:          'industry-fc0f80d1-2026-07',
             tab:         'industry',
             headline:    'Quest maker Meta is having its cake and eating it',
@@ -2447,6 +2509,17 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-eade6731-2026-07',
+            tab:         'art',
+            headline:    'OiiOii AI, 세계 최초 AI 애니메이션 에이전트 플랫폼으로 미국 시장 진출',
+            summary:     '필리핀 스타트업 OiiOii AI가 7개 전문 AI 에이전트로 구성된 애니메이션 제작 플랫폼을 미국에 정식 출시했어요.',
+            body:        '<p>필리핀 스타트업 OiiOii AI가 세계 최초의 \'AI 애니메이션 에이전트 플랫폼\'을 표방하며 미국 시장에 공식 론칭했어요. 단일 창작자가 스크립트부터 완성 단편 영화까지 전체 제작 파이프라인을 지휘할 수 있도록 설계됐어요. 일반 언어로 아이디어를 입력하면 스크립트 작성, 캐릭터·씬 디자인, 스토리보드, 음악, 최종 영상 합성을 각각 전담하는 7개의 전문 AI 에이전트가 자동으로 협력해요. Tencent WeChat, ByteDance CapCut, Bilibili 애니메이션 부문을 거친 나오나오(Naonao) 대표가 창업했으며, 창작자가 풍부한 이력을 바탕으로 \'스튜디오 없이도 스튜디오 수준의 제작\'을 목표로 삼고 있어요.</p><p>플랫폼의 핵심 강점은 일관성이에요. 전용 페이스-ID 시스템이 모든 장면에서 캐릭터 외형을 유지하고, 독립 자산 라이브러리가 전체 시퀀스에 걸쳐 캐릭터·씬·스타일을 통일시켜줘요. Seedance 2.0 등 30개 이상의 파운데이션 모델과 200종 이상의 스타일 라이브러리를 통합해 대기 없이 바로 사용할 수 있어요. 베타 서비스에는 100개 자리에 10만 명 이상이 신청하며 큰 관심을 받았어요. 생성된 콘텐츠의 소유권은 창작자에게 있고 상업적 활용도 가능해요. 2030년까지 1억 명을 지원하겠다는 목표 아래 창작 민주화를 핵심 미션으로 내세우고 있어요.</p><p>원문: <a href="https://www.manilatimes.net/2026/07/28/tmt-newswire/pr-newswire/oiioii-ai-the-worlds-first-ai-animation-agent-platform-launches-in-the-us/2392667">The Manila Times</a></p>',
+            source:      'The Manila Times',
+            publishedAt: '2026.07.30',
+            hue:         280,
+            url:         'https://www.manilatimes.net/2026/07/28/tmt-newswire/pr-newswire/oiioii-ai-the-worlds-first-ai-animation-agent-platform-launches-in-the-us/2392667',
+        },
         {
             id:          'art-13bb9f15-2026-07',
             tab:         'art',
