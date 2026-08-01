@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-69fc0ba1-2026-08',
+            tab:         'games',
+            headline:    'Reallusion, iClone용 AI 얼굴 모션캡처 플러그인 AccuFace 2 출시',
+            summary:     'Reallusion이 iClone용 AI 얼굴 모션캡처 플러그인 AccuFace 2를 출시했어요.',
+            body:        '<p>Reallusion이 iClone 캐릭터 애니메이션 소프트웨어용 AI 영상 모션캡처 플러그인 AccuFace 2를 정식 출시했어요. 이번 버전에서는 Character Creator 5(CC5) HD 얼굴 표정 프로필에 최적화된 새 AI 모델이 탑재됐어요. 저조도 환경과 원거리 촬영에서의 추적 성능이 향상됐고, 최대 128개의 립 모프를 지원해 입 모양 애니메이션 품질도 크게 개선됐답니다.</p><p>새로 도입된 Expression Curves 시스템은 배우의 얼굴 움직임을 3D 캐릭터에 곡선 기반으로 더욱 정밀하게 매핑할 수 있게 해줘요. 기존 선형 매핑 방식에 비해 세밀한 표정 제어가 가능하고, 하나의 추적 포인트로 여러 모프를 동시에 구동해 자연스러운 후속 동작도 만들 수 있어요. AMD GPU(RX 5700 이상) 가속이 새로 추가되어, 이전 NVIDIA 전용 제한에서 벗어나 더 다양한 하드웨어를 지원하게 됐답니다.</p><p>AccuFace 2는 일반 USB 웹캠 720p/30fps 환경에서도 잘 동작하기 때문에, 고가의 장비 없이도 전문 수준의 얼굴 애니메이션 제작이 가능해졌어요. 가격도 기존 $499에서 $299로 대폭 낮아지면서 소규모 게임·VFX 팀에게 더욱 현실적인 선택지가 됐어요. iClone 8.74 이상과 호환됩니다.</p><p>원문: <a href="https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.08.01',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/07/260731_AccuFace2_ExpressionCurve-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.reallusion.com/iclone/motion-capture/accuface.html' },
+            ],
+        },
+        {
             id:          'games-8d2e7639-2026-07',
             tab:         'games',
             headline:    'Hi3D V3.0, 8월 출시 예고 — 2048³ 복셀 해상도와 8K 텍스처로 AI 3D 생성 품질 도약',
@@ -1521,6 +1536,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-210f788b-2026-08',
+            tab:         'industry',
+            headline:    '중국 게임사들, AI로 인력 최대 40% 감축하면서도 생산성 유지',
+            summary:     '중국 게임 스튜디오들이 AI 도입으로 인력을 20~40% 줄이면서도 성과를 유지하고 있어요.',
+            body:        '<p>PocketGamer.biz가 중국 게임 산업 리더 7명을 인터뷰한 결과, AI 도입이 빠르게 확산되면서 대부분의 스튜디오가 인력을 20~40% 줄이면서도 기존 성과를 유지하거나, 같은 인원으로 20~40%의 성과 개선을 이루고 있다는 사실이 확인됐어요. 고객 서비스 분야에서는 인력을 50% 이상 줄인 경우도 보고됐답니다.</p><p>구체적인 사례들도 눈길을 끌어요. Tripo AI는 텍스트·이미지를 입력하면 수초 내에 프로덕션급 3D 에셋을 생성해주고, 모바일 광고 플랫폼 Mintegral은 전체 UA팀 대신 AI 에이전트 스택을 단 한 명이 운영하는 체계로 전환했어요. MOONTON은 AI로 팬 참여도를 분석해 신규 시장 진출 타이밍을 결정하는 방식을 채택하고 있답니다. 이처럼 중국 스튜디오들은 마케팅부터 에셋 제작, 라이브 운영까지 전 분야에 걸쳐 AI를 빠르게 통합하고 있어요.</p><p>이렇게 빠른 AI 통합의 배경으로는 \'일단 출시 후 개선\'이라는 중국 게임 산업 특유의 개발 문화가 꼽혀요. 완성도를 기다리기보다 먼저 출시하고 빠르게 반복하는 방식이 AI 도입과 맞물려 시너지를 내고 있는 거예요. 신중한 접근을 선호하는 서구 게임 산업과 극명하게 대비되는 이 흐름은 글로벌 게임 개발 문화의 분기점을 보여주는 신호로 볼 수 있어요.</p><p>원문: <a href="https://www.pocketgamer.biz/meaningful-collaborations-arknights-endfields-first-six-months-and-ai-in-china-week-in-views/">PocketGamer.biz</a></p>',
+            source:      'PocketGamer.biz',
+            publishedAt: '2026.08.01',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/140681/89532/weekinviews310726_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/meaningful-collaborations-arknights-endfields-first-six-months-and-ai-in-china-week-in-views/',
+        },
+        {
             id:          'industry-ab49a3a3-2026-07',
             tab:         'industry',
             headline:    '게임사들은 왜 스스로 지식을 불태우고 있나 — 대규모 해고와 조직 지식 손실',
@@ -2586,6 +2613,44 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-54d7e6f3-2026-08',
+            tab:         'art',
+            headline:    'MiniMax, 2K 해상도에 기본 오디오 내장한 영상 생성 모델 H3 공개',
+            summary:     '중국 MiniMax가 2K 해상도와 스테레오 사운드를 지원하는 영상 생성 모델 H3를 출시했어요.',
+            body:        '<p>중국 AI 기업 MiniMax가 2K 해상도, 최대 15초 클립, 기본 스테레오 사운드를 지원하는 멀티모달 영상 생성 모델 H3를 출시했어요. 텍스트·이미지·영상·오디오 등 다양한 형식을 입력으로 받아 영상을 생성할 수 있으며, 기존 영상을 편집하거나 모션을 다른 영상에 전이하는 기능도 지원해요. 첫 프레임·마지막 프레임 제어, 텍스트-영상 변환, 영상-영상 전환 등 다양한 생성 방식을 하나의 모델로 지원하는 것도 특징이에요.</p><p>H3는 광고, 이커머스, 게임 등 상업적 활용을 겨냥해 개발됐으며, 경쟁 제품 대비 3분의 1 수준의 가격으로 2K 영상을 생성할 수 있어요. 또한 수일 내에 모델 가중치를 공개(오픈 웨이트)할 예정이에요. 이는 많은 선도 모델들이 독점 운영되는 영상 AI 시장에서 차별화를 꾀하는 전략이에요. 중국산 반도체에서도 구동 가능하도록 설계된 점도 주목할 만해요.</p><p>MiniMax는 2022년 설립된 \'중국 AI 타이거스\' 중 하나로, 올해 홍콩 증시에 상장했어요. ByteDance의 Seedance와 콰이쇼우의 Kling에 이어 H3가 오픈 웨이트·저가 전략으로 가세하면서, 중국 영상 AI 시장의 경쟁이 한층 치열해질 전망이에요.</p><p>원문: <a href="https://www.indexbox.io/blog/minimax-unveils-h3-video-generation-model-with-open-weights/">IndexBox</a></p>',
+            source:      'IndexBox',
+            publishedAt: '2026.08.01',
+            hue:         280,
+            image:       'https://www.indexbox.io/landing/img/blog/telegram-fallback/40768a1e9d1e99455e149fb762356dee.webp',
+            url:         'https://www.indexbox.io/blog/minimax-unveils-h3-video-generation-model-with-open-weights/',
+            urls: [
+                { label: '공식 사이트', href: 'https://minimaxh3.art/' },
+            ],
+        },
+        {
+            id:          'art-d0d6cf3b-2026-08',
+            tab:         'art',
+            headline:    'ByteDance, 30초 4K 영상 생성 모델 Seedance 2.5 정식 출시',
+            summary:     'ByteDance Seed 팀이 30초 4K 영상 생성과 멀티모달 참조를 지원하는 Seedance 2.5를 출시했어요.',
+            body:        '<p>ByteDance의 Seed 팀이 차세대 영상 생성 모델 Seedance 2.5를 정식 출시했어요. 이번 버전은 단순히 짧은 클립을 만드는 수준을 넘어, 기승전결이 있는 완성된 창작물을 만드는 것에 초점을 맞췄어요. 단 한 번의 생성으로 최대 30초 분량의 고품질 오디오·영상 클립을 만들 수 있고, 다중 라운드 확장 기능으로 수 분짜리 콘텐츠 제작도 가능해요.</p><p>멀티모달 참조 기능이 크게 업그레이드되어 이미지 30장, 영상 클립 10개, 오디오 10개를 한 번에 참조 입력으로 사용할 수 있어요. 여러 인물, 장면, 샷 전환을 아우르는 복잡한 아이디어 구현이 가능하고, 타임스탬프 단위의 정밀 편집, 그린 스크린, 카메라 각도 조절 등 전문가급 편집 기능도 강화됐어요. Jimeng AI, Doubao Pro 등 ByteDance 플랫폼에 우선 배포되며, BytePlus ModelArk를 통한 API도 곧 제공될 예정이에요.</p><p>Seedance 2.5가 주목받는 이유는 영상 AI 모델의 패러다임 전환을 보여주기 때문이에요. \'클립 생성\'에서 \'완성된 스토리 창작\'으로의 진화가 이뤄지면서, 영상 크리에이터와 광고·엔터테인먼트 업계에서 AI 제작 워크플로가 한층 빠르게 자리잡을 전망이에요.</p><p>원문: <a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">ByteDance Seed</a></p>',
+            source:      'ByteDance Seed',
+            publishedAt: '2026.08.01',
+            hue:         260,
+            url:         'https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5',
+        },
+        {
+            id:          'art-d6ed8cf3-2026-08',
+            tab:         'art',
+            headline:    '독일 법원, GEMA AI 음악 소송서 Suno에 저작권 침해 판결',
+            summary:     '뮌헨 지방법원이 Suno의 AI 음악 모델이 GEMA 저작권 음악을 훈련 데이터에 무단 사용했다고 판결했어요.',
+            body:        '<p>독일 뮌헨 지방법원이 2026년 7월 31일, AI 음악 스타트업 Suno가 독일 음악 저작권 단체 GEMA의 저작권을 침해했다는 판결을 내렸어요. 판사 Elke Schwager는 Suno의 AI 모델이 훈련 데이터에 포함된 음악 작품들을 저장하고 출력물에 재현했다고 판단했어요. 이번 소송의 핵심 쟁점은 \'Rasputin\', \'Daddy Cool\', \'Mambo No. 5\' 등 6곡의 멜로디가 Suno 모델에 \'기억\'되어 있었는지 여부였어요.</p><p>법원은 훈련 데이터와 모델 출력물을 비교 분석한 결과, 해당 작품들의 재현이 우연이 아님을 확인했어요. Suno는 사용 중지 명령(injunction)과 손해배상 산정을 위한 정보 공개 의무를 이행해야 하며, 항소 의사를 밝혔어요. GEMA CEO는 "IP 도용에 기반한 AI 모델은 법으로 보호받지 못한다"며 AI 기업들이 반드시 라이선스를 취득해야 한다고 강조했어요. 반면 Suno는 이번 판결이 자사 기술의 작동 방식을 잘못 이해한 것이라며 반박했어요.</p><p>EU 내 AI 음악 훈련 데이터 관련 첫 주요 판결로, 향후 AI 기업들의 훈련 데이터 라이선스 계약 방식 전반에 큰 영향을 미칠 전망이에요. 미국에서도 Suno·Udio를 상대로 유사한 소송이 진행 중인 만큼, 이번 판결이 글로벌 AI 음악 산업의 지형을 바꾸는 이정표가 될 수 있어요.</p><p>원문: <a href="https://musically.com/2026/07/31/german-collecting-society-gema-wins-its-copyright-infringement-lawsuit-against-suno/">Music Ally</a></p>',
+            source:      'Music Ally',
+            publishedAt: '2026.08.01',
+            hue:         355,
+            image:       'https://musically.com/wp-content/uploads/2026/06/SUNO-logo-on-a-mobile-Jun-2026-e1782472416308.png',
+            url:         'https://musically.com/2026/07/31/german-collecting-society-gema-wins-its-copyright-infringement-lawsuit-against-suno/',
+        },
         {
             id:          'art-cc3e8e01-2026-07',
             tab:         'art',
