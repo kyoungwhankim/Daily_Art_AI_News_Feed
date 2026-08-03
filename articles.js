@@ -1536,6 +1536,22 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-e0f42d5b-2026-08',
+            tab:         'industry',
+            headline:    '유럽 집행위원회, AI 투명성 의무 본격 시행 — 딥페이크 라벨·AI 봇 고지 의무화',
+            summary:     'EU AI법 투명성 조항이 8월 2일부터 발효됐습니다. AI 봇 고지와 딥페이크 라벨이 의무화됩니다.',
+            body:        '<p>2026년 8월 2일부터 EU AI법(AI Act)의 투명성 조항이 공식 발효됐습니다. 챗봇·AI 에이전트·아바타 등 AI 시스템은 사용자에게 대화 상대가 AI임을 반드시 고지해야 하며, AI가 생성하거나 편집한 이미지·오디오·영상(딥페이크 포함)에는 기계 판독 가능한 마킹을 첨부해야 합니다. 의무 대상에는 실존 인물·장소·사건과 유사한 딥페이크 콘텐츠, 감정 인식 및 생체 분류 도구, 사람의 편집 검토 없이 공공 관심사를 보도하는 AI 생성 텍스트가 모두 포함됩니다.</p><p>집행 체계도 구체적으로 마련됐습니다. EU AI 오피스, 각 회원국 국가 당국, 유럽 데이터 보호 감독관이 규정 준수 여부를 감독하며, 위반 시 최대 1,500만 유로 또는 전 세계 연간 매출의 3%에 해당하는 과징금을 부과할 수 있습니다. 유럽 집행위원회는 실천 강령과 준수 가이드라인도 함께 발표했으며, 아마존·구글·메타·마이크로소프트·OpenAI 등 180여 개 기업이 자발적 생성 AI 콘텐츠 투명성 강령에 이미 서명한 상태입니다.</p><p>게임·창작 산업도 이번 규정에서 자유롭지 않습니다. AI로 생성하거나 변형한 영상·오디오·이미지가 실제 인물이나 사건처럼 보일 경우 라벨 부착 의무가 적용되며, 명확한 예술적·풍자적 표현에만 제한적 예외가 인정됩니다. 유럽 시장을 대상으로 AI 생성 콘텐츠를 공개하는 스튜디오와 개발사는 EU 제작 마킹 아이콘을 활용해 즉시 준수 체계를 갖춰야 합니다.</p><p>원문: <a href="https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en">European Commission</a></p>',
+            source:      'European Commission',
+            publishedAt: '2026.08.03',
+            hue:         10,
+            image:       'https://commission.europa.eu/sites/default/files/styles/ewcms_metatag_image/public/2026-07/AI-transparency-obligations%202.jpg?h=c3635fa2&itok=34Ka5Vab',
+            url:         'https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en',
+            urls: [
+                { label: '집행 정보', href: 'https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act' },
+                { label: '공식 가이드라인', href: 'https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content' },
+            ],
+        },
+        {
             id:          'industry-210f788b-2026-08',
             tab:         'industry',
             headline:    '중국 게임사들, AI로 인력 최대 40% 감축하면서도 생산성 유지',
@@ -2613,6 +2629,21 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-dfbb8ebb-2026-08',
+            tab:         'art',
+            headline:    '독일 법원, AI 음악 서비스 수노(Suno)에 저작권 침해 판결 — GEMA 소송 유럽 첫 승소',
+            summary:     '뮌헨 지방법원이 AI 음악 플랫폼 수노의 저작권 침해를 인정했습니다. 유럽 최초의 생성 AI 음악 학습 저작권 판결입니다.',
+            body:        '<p>독일 뮌헨 지방법원은 2026년 7월 31일, AI 음악 생성 플랫폼 수노(Suno)가 독일 저작권 단체 GEMA가 대리하는 저작물을 무단으로 학습 데이터로 사용한 것이 저작권 침해에 해당한다고 판결했습니다. 법원은 수노가 \'Forever Young\', \'Mambo No. 5\', \'Daddy Cool\' 등 6개 곡을 멜로디·화성·리듬 수준에서 모델 파라미터에 저장하고 재현했다고 인정했습니다. 수노에게는 침해로 얻은 수익을 공개하고 손해를 배상하도록 명령했으며, 배상액은 추후 별도로 결정될 예정입니다.</p><p>GEMA CEO 토비아스 홀츠뮐러는 이번 판결을 \'창작자들을 위한 큰 승리\'라고 평가하며, \'AI 기업들이 창작자에게 보상하지 않고 저작권 음악을 상업적으로 이용할 수 없다는 분명한 메시지\'라고 강조했습니다. 수노는 \'새로운 곡을 만들기 위해 학습했을 뿐 기존 곡을 재현하려 한 것이 아니다\'라며 판결에 이의를 제기하고 항소를 검토 중이라고 밝혔습니다. 이번 판결은 1심으로, 항소심 결과에 따라 최종 판단이 달라질 수 있습니다.</p><p>이번 판결은 AI 음악 기업이 학습용 저작물에 대한 라이선스 없이는 유럽에서 운영하기 어렵다는 선례를 처음으로 확립했다는 점에서 의미가 큽니다. 생성 AI 음악의 저작권 지위와 학습 데이터 라이선싱 문제가 유럽 전역의 핵심 의제로 떠오를 것으로 전망됩니다. 수노는 미국에서도 RIAA가 소니뮤직·유니버설뮤직·워너레코드를 대리해 제기한 별도 저작권 소송에 직면해 있어, 독일 판결이 미국 소송에도 영향을 미칠지 업계의 관심이 집중되고 있습니다.</p><p>원문: <a href="https://celebrityaccess.com/2026/08/02/suno-loses-copyright-infringement-lawsuit-brought-by-gema-in-germany/">CelebrityAccess</a></p>',
+            source:      'CelebrityAccess',
+            publishedAt: '2026.08.03',
+            hue:         350,
+            url:         'https://celebrityaccess.com/2026/08/02/suno-loses-copyright-infringement-lawsuit-brought-by-gema-in-germany/',
+            urls: [
+                { label: '관련 보도', href: 'https://www.musicbusinessworldwide.com/suno-infringed-copyright-in-gema-case-german-court-rules/' },
+                { label: '추가 보도', href: 'https://thenextweb.com/news/german-court-suno-ai-music-copyright-gema' },
+            ],
+        },
         {
             id:          'art-54d7e6f3-2026-08',
             tab:         'art',
