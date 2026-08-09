@@ -2881,6 +2881,18 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-bf1cbcdb-2026-08',
+            tab:         'art',
+            headline:    'OpenAI, 프레젠테이션 스타트업 NextSlide 인수',
+            summary:     'OpenAI가 AI 프레젠테이션 스타트업 NextSlide를 인수하고 팀 전원을 ChatGPT 개발에 합류시켰어요.',
+            body:        '<p>OpenAI가 AI 기반 프레젠테이션 자동 생성 스타트업 NextSlide를 인수했어요. NextSlide는 사용자가 입력한 프롬프트, 메모, 문서, 리서치 자료를 세련된 편집 가능한 프레젠테이션으로 자동 변환해 주는 AI 제품을 개발해 온 스타트업이에요. 인수가 완료된 후 NextSlide 팀 전원은 이제 ChatGPT 개발에 집중하고 있으며, 회사는 시각적 커뮤니케이션을 누구나 쉽게 활용할 수 있도록 돕겠다는 미션을 ChatGPT 안에서 이어나가겠다고 밝혔어요.</p><p>NextSlide 창업자 Ahmed Beshry는 링크드인 게시물을 통해 인수 거래가 \'올해 초\'에 이미 마무리됐다고 밝혔어요. Beshry는 2021년 인스타카트에 매각된 체크아웃 자동화 스타트업 Caper AI를 공동 창업한 연쇄 창업자예요. 이번 인수로 NextSlide 팀은 독립적인 제품 운영 대신 ChatGPT의 비주얼 창작 기능 강화에 역량을 집중하게 됐어요. 거래 규모와 구체적인 조건은 공개되지 않았어요.</p><p>이번 인수는 OpenAI가 ChatGPT를 텍스트 생성·대화 도구를 넘어 슬라이드·발표 자료 제작 등 비주얼 커뮤니케이션 영역으로 확장하려는 전략의 일환으로 해석돼요. Microsoft의 Copilot이 PowerPoint와 긴밀히 통합된 가운데, OpenAI도 발표 자료 자동화 시장에 본격 진출하겠다는 신호로 볼 수 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.08.13',
+            hue:         220,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2259148891.jpg',
+            url:         'https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/',
+        },
+        {
             id:          'art-9a2e404f-2026-08',
             tab:         'art',
             headline:    '픽사 공동창업자의 새 AI 역할, 애니메이션 최대 논쟁에 다시 불을 붙이다',
