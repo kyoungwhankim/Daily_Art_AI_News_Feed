@@ -29,6 +29,32 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-39c3f168-2026-08',
+            tab:         'games',
+            headline:    'Apple Silicon에서 Stable Diffusion 40% 빠르게 — Metal 포크 공개',
+            summary:     'Mac 전용 Metal 커널로 이미지 렌더링을 최대 55% 단축한 Stable Diffusion 포크가 공개됐어요.',
+            body:        '<p>개발자 Derek Anderson이 Apple Silicon 맥 전용으로 최적화된 Stable Diffusion WebUI Metal 포크를 8월 11일 공개했어요. 기존 AUTOMATIC1111 인터페이스를 그대로 유지하면서도 이미지 생성 속도를 크게 높인 것이 특징이에요. M3 Pro 기준 512×512 이미지 렌더링 시간이 8~10초에서 3~7초로 단축됐고, M1 Mac mini에서도 12.8초에서 8.7초로 줄었습니다. 기존 체크포인트, LoRA, 확장 기능이 모두 호환돼 맥 환경에서 AI 이미지 작업을 하는 아티스트나 개발자는 별도 학습 없이 즉시 도입할 수 있어요.</p><p>속도 향상의 핵심은 PyTorch MPS 백엔드 대신 Apple 네이티브 Metal API를 직접 활용한 데 있어요. 쿼리 토큰 192개 이상·헤드 차원 40·80·160에 해당하는 텐서 형태에만 선택적으로 Metal 플래시 어텐션 경로를 적용하고, 나머지는 기존 PyTorch MPS에 맡기는 방식입니다. 여기에 Metal 명령 버퍼 배치, GroupNorm+SiLU 퓨즈드 커널, 메모리 인식형 어텐션 라우팅, 레거시 MPS 우회 코드 제거 등이 결합돼 배치 작업에서 체감 효과가 더 크게 나타나요. 프롬프트를 반복 조정하며 스타일을 다듬는 게임 아트 파이프라인에서는 세션당 절약 시간이 상당히 누적될 것으로 보입니다. 포크는 GitHub에서 무료로 사용할 수 있으며, 현재 단일 개발자가 활발히 업데이트 중이에요.</p><p>원문: <a href="https://www.creativeainews.com/articles/stable-diffusion-webui-metal-apple-silicon-2026/">Creative AI News</a></p>',
+            source:      'Creative AI News',
+            publishedAt: '2026.08.13',
+            hue:         220,
+            image:       'https://www.creativeainews.com/content/images/size/w2000/2026/08/stable-diffusion-webui-metal-apple-silicon-2026-thumbnail.jpg',
+            url:         'https://www.creativeainews.com/articles/stable-diffusion-webui-metal-apple-silicon-2026/',
+        },
+        {
+            id:          'games-148005e1-2026-08',
+            tab:         'games',
+            headline:    '동영상에서 4D 월드를 — Latent-to-4D, 게임·VR 씬 제작에 새 지평',
+            summary:     '영상 잠재 공간을 4D 기하로 직접 변환하는 Latent-to-4D 기법이 허깅페이스에 공개됐어요.',
+            body:        '<p>허깅페이스에 공개된 \'Beyond Pixels: From Video Priors to 4D Worlds\' 논문은 Latent-to-4D라는 새로운 기법을 제안해요. 영상 생성 모델의 VAE 레이턴트를 RGB로 디코딩하지 않고, 잠재 공간에서 곧바로 카메라 파라미터와 동적 포인트맵(4D 기하)으로 변환하는 것이 핵심이에요. 기존 방법은 \'영상 생성 → 3D 재구성\'의 두 단계를 거치면서 중간 과정에서 아티팩트가 발생했는데, Latent-to-4D는 이 RGB 단계를 완전히 없애 더 일관성 있는 출력을 만들어 냅니다. 구조는 세 모듈로 나뉘어요. VAE 레이턴트를 4D 토큰 그리드로 정렬하는 정렬 모듈, 프레임별·글로벌 어텐션을 결합한 시공간 정제 모듈, 그리고 카메라 파라미터와 동적 기하를 최종 출력하는 4D 디코더로 구성됩니다.</p><p>성능 면에서는 Text4D-200과 I4D-200 벤치마크에서 기존 방법 대비 DINO-F1 지표가 최대 5.81포인트 앞서며 우위를 보였어요. 학습에 필요한 데이터는 약 1,000개의 재구성 클립이면 충분하고, 단일 체크포인트가 VAE 인코딩이 호환되는 서로 다른 영상 생성기 세 종류에 변경 없이 적용돼 활용도가 높습니다. 가상 프로덕션·VR/AR·게임 시뮬레이션 씬을 영상 한 편에서 바로 뽑아내는 방식이라, 게임 아트 파이프라인에서 배경 씬과 3D 환경 제작 비용을 대폭 낮출 가능성이 있어 업계의 주목을 받고 있어요.</p><p>원문: <a href="https://huggingface.co/papers/2608.10744">Hugging Face Papers</a></p>',
+            source:      'Hugging Face Papers',
+            publishedAt: '2026.08.13',
+            hue:         200,
+            url:         'https://huggingface.co/papers/2608.10744',
+            urls: [
+                { label: 'arXiv 논문', href: 'https://arxiv.org/abs/2608.10744' },
+            ],
+        },
+        {
             id:          'games-69fc0ba1-2026-08',
             tab:         'games',
             headline:    'Reallusion, iClone용 AI 얼굴 모션캡처 플러그인 AccuFace 2 출시',
@@ -1536,6 +1562,34 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-01762fd3-2026-08',
+            tab:         'industry',
+            headline:    '게임 개발자 83% \'향후 3년 내 AI가 팀 규모·역할 바꿀 것\'',
+            summary:     '게임즈컴 발표자 설문에서 83%가 생성형 AI가 팀 구조나 생산성에 영향을 미칠 것이라고 답했어요.',
+            body:        '<p>게임즈컴 개발자 컨퍼런스 발표자 100명을 대상으로 한 설문에서 83%가 \'향후 3년 내 생성형 AI가 팀 구조나 생산성에 어떤 방식으로든 영향을 미칠 것\'이라고 답했어요. 구체적으로는 36%가 AI로 인해 기존 역할이 재편될 것으로, 33%는 팀 규모 자체가 줄어들 것으로 예상했고, 14%는 개인 생산량이 증가할 것으로 봤어요. 변화가 없을 것이라는 응답은 17%에 그쳤습니다. AI가 가장 효과적으로 쓰이는 분야로는 코드·프로덕션 업무(34%)가 첫 번째로 꼽혔고, AI 개입을 최소화하겠다는 응답도 30%나 됐어요. 아트·애니메이션 분야의 AI 활용률은 4%로, 게임 아트 파이프라인에서의 실질적 침투는 여전히 초기 단계임을 보여줍니다.</p><p>이번 설문 결과는 전년도 조사와 유사한 흐름으로, 스튜디오 공식 발표와 현장 개발자의 체감 온도 사이에 간극이 지속되고 있음을 드러내요. Capcom, Owlcat Games, Pearl Abyss 같은 회사들이 AI 도입의 생산성 향상 효과를 강조하는 것과는 대조적입니다. 한편 Pearl Abyss, Ubisoft, 11 Bit Studios가 각각 \'크림슨 데저트\', \'아노 117\', \'The Alters\'에 생성형 AI를 사용하고도 처음에 공개하지 않아 논란이 됐어요. 이러한 사례들은 게임 업계 내 AI 투명성 기준에 대한 논의를 다시 불러일으키고 있으며, 기술 확산과 함께 신뢰 구축이 병행되어야 한다는 목소리가 높아지고 있습니다.</p><p>원문: <a href="https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.13',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6e9ff417175153e6/6a7c8a66f99fa04965db827a/THE_ALTERS_Announcement_KV_FINAL_nologo.jpg',
+            url:         'https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years',
+        },
+        {
+            id:          'industry-3215c4a1-2026-08',
+            tab:         'industry',
+            headline:    '에픽, ArtStation·Sketchfab을 KitBash에 매각 — 게임 아트 커뮤니티에 파장',
+            summary:     '에픽게임즈가 ArtStation과 Sketchfab을 KitBash에 매각하며 게임 아트 커뮤니티에 큰 변화가 생겼어요.',
+            body:        '<p>에픽게임즈가 2021년 인수했던 크리에이티브 포트폴리오 플랫폼 ArtStation과 3D 마켓플레이스 Sketchfab을 KitBash에 매각했어요. KitBash는 KitBash3D와 Greyscalegorilla를 운영하는 3D 아트 애셋 전문 업체예요. 거래 금액은 비공개이며, KitBash의 공동 CEO Banks Boutté는 \'이 플랫폼들은 사람들이 포트폴리오와 커리어, 커뮤니티를 쌓아온 공간\'이라며 사용자들이 소중히 여기는 것을 지킬 것이라고 밝혔습니다. 사용자 포트폴리오·라이브러리·구독권·워크플로우는 모두 그대로 유지되며 가격 변동도 없다고 공식 발표했어요.</p><p>에픽은 언리얼 엔진 6 개발, 포트나이트 운영, 에픽 게임즈 스토어 확장에 집중하기 위해 매각을 결정했다고 설명했어요. Fab 마켓플레이스는 이번 거래에서 제외됐습니다. 에픽은 2026년 초 포트나이트 매출 감소에 따른 비용 절감 차원에서 1,000명 이상을 감원했는데, 이번 매각도 그 연장선상으로 보여요. 게임 아트 업계에서는 ArtStation이 포트폴리오 공유와 구인구직의 핵심 플랫폼인 만큼, 새 운영사의 방향성과 장기적인 서비스 정책에 대한 관심이 높아지고 있어요. 아트 커뮤니티 안에서는 우려와 기대가 엇갈리는 상황입니다.</p><p>원문: <a href="https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.13',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd9226f9950b04247/6a7c7c20ba3039691d24515d/ArtStation_Header.png',
+            url:         'https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash',
+            urls: [
+                { label: '80.lv 보도', href: 'https://80.lv/articles/artstation-and-sketchfab-have-been-acquired-by-kitbash' },
+                { label: '공식 발표', href: 'https://www.epicgames.com/site/news/kitbash-acquires-artstation-and-sketchfab' },
+            ],
+        },
+        {
             id:          'industry-e0f42d5b-2026-08',
             tab:         'industry',
             headline:    '유럽 집행위원회, AI 투명성 의무 본격 시행 — 딥페이크 라벨·AI 봇 고지 의무화',
@@ -2629,6 +2683,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-2fa1580f-2026-08',
+            tab:         'art',
+            headline:    'LTX-2.5 오픈 웨이트 공개 — 영상·오디오 동시 생성, ComfyUI 지원',
+            summary:     '라이트릭스가 영상과 오디오를 단일 패스로 생성하는 오픈 웨이트 모델 LTX-2.5를 공개했어요.',
+            body:        '<p>라이트릭스(Lightricks)가 2026년 8월 11일 오픈 웨이트 멀티모달 모델 LTX-2.5를 공개했어요. 텍스트·이미지·영상을 입력받아 영상과 오디오를 단일 패스로 동시에 생성하는 것이 핵심 특징이에요. NVIDIA 고사양 GPU 기준 10초 분량 영상을 약 6.8초 만에 완성하며, 멀티샷 생성 기능으로 여러 컷에 걸쳐 캐릭터 외형·조명·목소리·스타일이 일관되게 유지됩니다. 허깅페이스에서 가중치를 내려받거나 ComfyUI 공식 노드를 통해 로컬 환경에서 바로 사용할 수 있고, LTX API를 통한 클라우드 사용도 지원해요.</p><p>이전 버전 대비 주요 업그레이드로는 네 가지가 있어요. 기존 VAE 재구성 단계를 확산 기반 비디오 디코더로 교체해 디테일과 모션 품질이 높아졌고, Gemma 4 12B 텍스트 인코더를 도입해 복잡한 프롬프트도 더 충실하게 반영해요. 내장 프롬프트 강화기와 클립 길이 예측기도 추가됐습니다. 연 매출 1,000만 달러 미만 조직에는 무료 라이선스가 제공돼 인디 크리에이터와 소규모 스튜디오에 특히 반가운 소식이에요. 클라우드 렌더 큐 없이 로컬에서 대화식으로 프롬프트를 다듬을 수 있어 애니메틱 제작이나 게임 시네마틱 프로토타이핑에도 유용하게 쓰일 전망입니다.</p><p>원문: <a href="https://www.creativeainews.com/articles/ltx-2-5-open-weights-video-comfyui-2026/">Creative AI News</a></p>',
+            source:      'Creative AI News',
+            publishedAt: '2026.08.13',
+            hue:         290,
+            image:       'https://www.creativeainews.com/content/images/size/w2000/2026/08/ltx-2-5-open-weights-video-comfyui-2026-thumbnail-0001.jpg',
+            url:         'https://www.creativeainews.com/articles/ltx-2-5-open-weights-video-comfyui-2026/',
+        },
+        {
+            id:          'art-20b26365-2026-08',
+            tab:         'art',
+            headline:    'D\'Addario, 기타 줄 데모에 AI 음악 사용 인정 — "우리가 잘못했다"',
+            summary:     'D\'Addario가 NYXL HD 홍보 영상의 배경 음악이 Suno AI로 제작됐음을 공식 인정하고 사과했어요.',
+            body:        '<p>기타 줄 제조사 D\'Addario가 NYXL HD 일렉 기타 줄 홍보 영상의 배경 음악이 생성형 AI인 Suno Studio로 제작됐음을 인스타그램 공식 성명으로 인정했어요. D\'Addario는 \'우리가 잘못했습니다. 전면 검토 결과 Suno Studio가 원곡을 재생성하는 데 쓰인 것이 확인됐습니다. 부정확한 정보를 공유한 점을 진심으로 사과드립니다\'라고 밝혔어요. 처음에는 AI 사용을 강하게 부인하면서 DAW 스템 파일까지 공개했지만, 유튜버들과 온라인 커뮤니티의 집요한 분석 끝에 결국 번복하게 됐습니다.</p><p>논란의 발단은 유튜버 Danny Sapko의 영상이었고, 이후 Rhett Shull을 포함한 여러 유튜버가 스템 파일을 직접 분석하면서 파장이 더 커졌어요. D\'Addario가 의혹 댓글을 삭제하고 직원의 개인정보가 노출됐다고 주장하면서 사태가 악화되기도 했습니다. 이번 성명에서 D\'Addario는 댓글 관리도 잘못됐다고 인정하며, 앞으로 직원과 크리에이티브 파트너가 생성형 AI 콘텐츠를 반드시 공시하도록 정책을 바꾸겠다고 밝혔어요. 이 사건은 뮤직 브랜드들이 음악가 커뮤니티의 신뢰를 지키기 위해 AI 사용 투명성을 얼마나 철저히 지켜야 하는지를 보여주는 상징적인 사례로 남을 것으로 보입니다.</p><p>원문: <a href="https://www.musicradar.com/guitars/daddario-admits-ai-used-instring-demo-video">MusicRadar</a></p>',
+            source:      'MusicRadar',
+            publishedAt: '2026.08.13',
+            hue:         10,
+            image:       'https://cdn.mos.cms.futurecdn.net/z9H4sYWjQE42gw9xW8iKRi-1286-80.jpg',
+            url:         'https://www.musicradar.com/guitars/daddario-admits-ai-used-instring-demo-video',
+            urls: [
+                { label: '관련 보도', href: 'https://www.guitarworld.com/gear/guitar-strings/daddario-admits-to-using-generative-ai' },
+            ],
+        },
         {
             id:          'art-dfbb8ebb-2026-08',
             tab:         'art',
