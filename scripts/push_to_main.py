@@ -96,6 +96,8 @@ def push_to_main() -> None:
     push_env['GIT_CURL_VERBOSE'] = '1'
     push_env.pop('HTTPS_PROXY', None)
     push_env.pop('https_proxy', None)
+    push_env.pop('HTTP_PROXY', None)
+    push_env.pop('http_proxy', None)
 
     delays = [2, 4, 8, 16]
     max_retries = len(delays)
@@ -103,7 +105,7 @@ def push_to_main() -> None:
     for attempt in range(1, max_retries + 1):
         print(f'Push attempt {attempt}/{max_retries}...', flush=True)
         r = subprocess.run(
-            ['git', 'push', '--progress', '--verbose',
+            ['git', '-c', 'http.proxy=', 'push', '--progress', '--verbose',
              remote_url, 'main'],
             cwd=REPO,
             capture_output=True,
