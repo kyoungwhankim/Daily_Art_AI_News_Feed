@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-012f4681-2026-08',
+            tab:         'games',
+            headline:    '주목해야 할 새 CG 소프트웨어: 2026년 8월 9일',
+            summary:     'Blender, FumeFX, PFTrack 등 8월 첫째 주 주목할 CG 소프트웨어 업데이트 3종을 소개합니다.',
+            body:        '<p>CG Channel이 2026년 8월 9일 기준 주간 CG 소프트웨어 라운드업을 공개했습니다. 이 시리즈는 단독 기사로 다루기 어려운 소규모 업데이트나 유용한 플러그인을 매주 한데 모아 소개하는 코너로, 게임 개발자와 VFX 아티스트에게 최신 툴 동향을 효율적으로 파악할 수 있는 정보를 제공해요. 이번 주에는 Blender용 캐릭터 애니메이션 애드온, 3ds Max용 멀티피직스 시뮬레이션 플러그인, 그리고 전문 매치무빙 소프트웨어에서 각각 주목할 만한 업데이트가 이루어졌습니다.</p><p>Blender용 Character Control Rig 0.3.1은 언리얼 엔진 MetaHuman 캐릭터의 컨트롤 리그를 Blender 내에서 자동으로 생성하는 애드온입니다. 이번 버전에서는 새로운 리타기팅 엔진이 추가되어 Mixamo, MetaHuman, UE4/5 Mannequin, Rokoko, Xsens 등 8가지 스켈레톤 소스에서 가져온 애니메이션을 컨트롤 리그에 직접 매핑할 수 있게 됐고, Auto-Rig Pro 프레임워크 지원도 새롭게 이루어졌어요.</p><p>3ds Max용 FumeFX 7.6은 CPU/GPU 멀티그리드 PCG 압력 솔버를 탑재해 GPU 시뮬레이션 속도를 이전 버전 대비 최대 2배, CPU 성능은 FumeFX 5 대비 최대 10배까지 향상시켰습니다. 재시뮬레이션 없이 해상도를 높이는 Fast Upres 알고리즘과 캐시 재생 속도를 조절하는 Retimer 알고리즘도 새로 도입됐으며, 언리얼 엔진 5용 VDB 익스포트도 이번에 정식 지원됩니다. 매치무빙 툴 PFTrack 26.08은 서드파티 앱과의 2D 이미징 좌표 정렬 정확도를 높이고, OpenEXR 비트 깊이를 더 지능적으로 선택하도록 개선됐으며, Hero Cloud 처리 속도도 빨라졌어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/08/the-week-in-cg-9-august-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.08.13',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/08/260809_TheWeekInCG_9August2025_FumeFX76_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/08/the-week-in-cg-9-august-2026/',
+        },
+        {
             id:          'games-dc4d813e-2026-08',
             tab:         'games',
             headline:    'Wan-Animate-2: 실시간 캐릭터 애니메이션 모델이 디지털 아바타 한계를 넘다',
@@ -1647,6 +1659,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-31a2d539-2026-08',
+            tab:         'industry',
+            headline:    '스퀘어 에닉스 AI 사태가 말해주는 것: 창작 과정을 기록해야 하는 이유',
+            summary:     '스퀘어 에닉스 커버 아트 AI 의혹 사태를 계기로 창작 과정 기록의 중요성이 재조명됩니다.',
+            body:        '<p>일본 대형 게임사 스퀘어 에닉스가 닌텐도 스위치 2 등 멀티 플랫폼으로 출시 예정인 《킹덤 하츠 컬렉션 [1~3]》의 커버 아트를 공개하자마자 AI 생성 의혹을 받았습니다. 도널드 덕의 양손 손가락 수가 다르고, 시계 세부 묘사가 어색하며, 키체인 크기가 일정하지 않는 등 AI 생성물에서 흔히 나타나는 오류와 유사한 특징들이 발견됐어요. 스퀘어 에닉스는 생성형 도구를 사용하지 않았으며 오류는 인적 실수에 의한 것이라고 공식 해명했지만, 세 차례 개정판을 내고도 의혹은 가라앉지 않았습니다.</p><p>Creative Bloq은 이 사태가 크리에이터 전체에게 중요한 메시지를 전한다고 분석해요. AI 의심 기준이 낮아진 현재, \'인간이 만든 작품\'이라는 주장은 단순한 진술만으로는 신뢰받기 어려워졌습니다. 스케치, 초안, 레이어 파일, 타임스탬프가 찍힌 버전 이력, 작업 화면 녹화 등 제작 흔적을 체계적으로 보존하는 것이 \'인간 창작의 증거\'로 기능하게 됐고, 이는 마케팅 소재로서의 가치를 넘어 작가의 권리를 지키는 실질적 수단이 되고 있어요.</p><p>이 사례는 AI와 인간 창작물의 구분이 점점 어려워지는 현실을 상징적으로 보여줍니다. 작업 로그·초안·참고 자료를 평소에 꾸준히 보존하는 습관이 \'있으면 좋은 것\'에서 \'필수적인 것\'으로 변화하는 시대가 됐어요. Creative Bloq은 작가들에게 소프트웨어의 버전 이력 기능을 켜두고, 가능하다면 제작 과정 영상도 보관할 것을 권고합니다.</p><p>원문: <a href="https://www.creativebloq.com/ai/ai-art/the-square-enix-ai-fiasco-convinces-me-we-all-need-to-start-documenting-our-creative-process">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.08.13',
+            hue:         15,
+            image:       'https://cdn.mos.cms.futurecdn.net/6kXsysepNhmLkYCkMg7jMk-1140-80.jpg',
+            url:         'https://www.creativebloq.com/ai/ai-art/the-square-enix-ai-fiasco-convinces-me-we-all-need-to-start-documenting-our-creative-process',
+        },
+        {
             id:          'industry-48318d56-2026-08',
             tab:         'industry',
             headline:    '구글 AI가 개발사의 기밀 콘텐츠 계획을 구글 독스 안에서 유출시키다',
@@ -2856,6 +2880,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9a2e404f-2026-08',
+            tab:         'art',
+            headline:    '픽사 공동창업자의 새 AI 역할, 애니메이션 최대 논쟁에 다시 불을 붙이다',
+            summary:     '픽사 공동창업자 에드윈 캣멀이 AI 영화제 심사위원으로 합류해 애니메이션 업계 논쟁을 재점화했습니다.',
+            body:        '<p>5회 아카데미상 수상자이자 픽사 공동창업자인 에드윈 캣멀이 상금 100만 달러 규모의 AI 영화제 \'Higgsfield Global Film Festival\'의 심사위원으로 합류했습니다. 1972년 유타 대학교에서 자신의 손 3D 모델을 제작하며 컴퓨터 그래픽의 역사를 열기 시작한 캣멀은, 루카스필름 컴퓨터 그래픽 부서를 창설하고 스티브 잡스가 이를 인수해 픽사로 탄생시킨 주역이에요. 《토이 스토리》의 총괄 프로듀서이기도 한 그가 AI 영화제 심사를 맡으면서 이 대회의 위상이 높아졌다는 평가가 나옵니다.</p><p>이 소식은 AI가 애니메이터를 대체할지, 아니면 새로운 창작 도구로 공존할지에 대한 업계 논쟁에 다시 불을 지폈습니다. 픽사 최고 크리에이티브 책임자 피트 닥터는 AI를 \'가장 인상 깊지 않은 평범한 것\'이라고 비판했고, 일각에서는 캣멀의 참여를 \'업계의 배신\'으로 해석하기도 해요. 반면 전 픽사 스토리 아티스트 코니 허는 AI를 활용해 기존 방식으로는 구현하기 어려운 애니메이션 스타일을 실현했다고 밝힌 바 있어, 업계 내 의견이 뚜렷이 엇갈리는 모습입니다.</p><p>대회 세부 조건도 논란이 됐어요. 참가자는 Higgsfield 구독자여야 하며, 출품작은 오픈소스로 공개되고 Higgsfield에 영구 마케팅 사용권이 부여됩니다. Higgsfield는 자체 AI 모델 없이 Seedance, Google Veo 등 외부 모델을 플랫폼에서 제공하고 있으며, \'칸에서 세계 최초 AI 영화 상영\'이라는 허위 마케팅으로 논란이 된 이력이 있어요. 디즈니 대규모 구조조정이 이어지는 시점에서 발표된 이 뉴스는 애니메이션 업계의 AI 논쟁이 여전히 뜨겁게 진행 중임을 보여줍니다.</p><p>원문: <a href="https://www.creativebloq.com/art/animation/pixar-co-founders-new-ai-role-is-reigniting-animations-biggest-debate">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.08.13',
+            hue:         270,
+            image:       'https://cdn.mos.cms.futurecdn.net/pqLMcFtq2rPQEBvst5Lpuk-2000-80.jpg',
+            url:         'https://www.creativebloq.com/art/animation/pixar-co-founders-new-ai-role-is-reigniting-animations-biggest-debate',
+        },
         {
             id:          'art-6a1cd1af-2026-08',
             tab:         'art',
