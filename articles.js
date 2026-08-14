@@ -1738,6 +1738,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-87118676-2026-08',
+            tab:         'industry',
+            headline:    '세이버 인터랙티브, AI 사용 논란 이후 스팀 페이지에 AI 공개 추가 예정',
+            summary:     '게임 작가 ChatGPT 교체 폭로 후 세이버 인터랙티브가 스팀 페이지에 AI 활용 사실을 명시하기로 했어요.',
+            body:        '<p>베테랑 게임 라이터 스텔라 사코가 블루스카이에 "리드쉐어 스티뮬레이터 개발 도중 ChatGPT로 교체됐다"고 공개 폭로하면서 세이버 인터랙티브의 신작이 거대한 AI 사용 논란에 휩쓸렸어요. 사코는 2023년 자신이 이 사실을 처음 공론화했을 당시의 페이스북 게시물 스크린샷까지 함께 공유하며 주장에 근거를 더했어요. 리드쉐어 스티뮬레이터는 플레이어가 라이드쉐어 운전기사가 되어 다양한 승객과 상호작용하는 독특한 시뮬레이션 게임으로, 발표 당시부터 이색 콘셉트로 게임 업계의 이목을 끌어온 작품이에요. 세이버 인터랙티브와 개발사 유니진은 2023년 이후 글로벌 직원을 세 배 이상 늘렸다고도 밝혔는데, 이를 통해 AI 대체 주장을 반박하는 논거로 제시했어요.</p><p>세이버 인터랙티브는 공식 입장에서 "어떤 작가도 AI로 대체한 사실이 없다"고 강하게 부인했어요. 다만 게임 내 \'실험적 무한 승객 생성 모드\'에 생성형 AI를 활용하고 있다는 점은 인정하며, 이 기능을 스팀 페이지에 곧 추가로 명시하겠다고 밝혔어요. 회사 측은 게임의 핵심 스토리 전체가 실제 인간이 작성했다고 강조했지만, CEO 매트 카치가 언론 인터뷰에서 사코를 비하하는 발언을 잇달아 내놓으면서 논란은 오히려 더 커지는 국면이에요. 사코도 자신의 주장이 사실이라고 재차 확인하며 입장을 굽히지 않고 있어요.</p><p>이번 사태는 게임 개발 과정에서 AI를 어떤 방식으로 활용하는지, 그리고 그 사실을 소비자에게 어느 수준까지 투명하게 공개해야 하는지에 대한 업계 표준 논의를 다시금 불러일으키고 있어요. AI 도입이 개발 전반으로 빠르게 확산되는 가운데, 자발적 공개에만 의존하기보다 명확한 기준 마련이 시급하다는 목소리가 높아지고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.14',
+            hue:         15,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltef068dcaa36e8c54/6a7c802c08084de2fdbbdab8/ss_24a50290ce0be6b7c830995615485ef9669d276a.1920x1080.jpg',
+            url:         'https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-',
+        },
+        {
+            id:          'industry-892e4123-2026-08',
+            tab:         'industry',
+            headline:    '트위치, 이용자 콘텐츠를 AI 학습에 기본 활용 — 옵트아웃도 완전한 보호 못 해',
+            summary:     '트위치가 이용자 콘텐츠를 생성형 AI 학습에 기본 제공하기로 해 크리에이터들의 거센 반발을 사고 있어요.',
+            body:        '<p>아마존 산하 트위치가 자사 플랫폼 이용자의 생성 콘텐츠를 생성형 AI 학습에 활용하겠다고 공식 발표하면서 크리에이터와 게임사의 반발이 거세지고 있어요. 논란의 핵심은 동의 방식이에요. 이용자가 별도로 거부 의사를 표명하지 않으면 자동으로 AI 학습에 동의한 것으로 처리되는 옵트아웃 구조예요. 트위치 최고제품책임자 마이크 민튼은 한 라이브 방송에서 \'옵트인 방식이었다면 아무도 동의하지 않았을 것\'이라고 솔직하게 이유를 밝혔는데, 이 발언 영상이 확산되면서 이용자들의 분노가 더욱 커지는 상황이에요. 트위치는 아마존의 AI 개발 수요에 따라 이러한 정책을 도입한 것으로 보여요.</p><p>더 심각한 문제는 옵트아웃을 선택해도 완전한 보호가 이뤄지지 않는 구조적 한계예요. 트위치 FAQ에 따르면, 직접 옵트아웃을 설정했더라도 다른 스트리머의 방송 채팅에 참여했다면 그 채널 스트리머의 설정에 따라 자신의 채팅 내용이 AI 학습에 사용될 수 있어요. 즉 내가 거부 의사를 밝혔더라도 타인의 방송 화면에 등장하는 순간 그 보호막은 사라지게 돼요. 옵트아웃은 어디까지나 본인 채널의 방송·VOD·클립에만 적용되며, AI 자동 모더레이션이나 자막 생성 등 다른 AI 서비스에는 영향을 주지 않는다고 회사 측은 설명했어요.</p><p>2024년 기준 전 세계 게임 라이브스트리밍 시청 시간의 60% 이상을 점유하는 트위치의 이번 결정은, AI 학습에 반대하는 게임사와 크리에이터에게 사실상 선택지가 없다는 점에서 더욱 우려스럽게 받아들여지고 있어요. 게임사가 자사 타이틀의 스트리밍 영상이 무단으로 AI 학습에 쓰이는 것을 막으려면 DMCA 저작권 경고를 직접 발송하는 방법밖에 없다는 지적도 나오고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.14',
+            hue:         40,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltfbed083d2e99ebc2/6a7dc571356eb87d61638027/Twitch_video_game_header.png',
+            url:         'https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not',
+        },
+        {
             id:          'industry-31a2d539-2026-08',
             tab:         'industry',
             headline:    '스퀘어 에닉스 AI 사태가 말해주는 것: 창작 과정을 기록해야 하는 이유',
@@ -2971,6 +2995,36 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-ae34ac3f-2026-08',
+            tab:         'art',
+            headline:    '앤트로픽, 실시간 영상 AI 스타트업 \'디카트\' 60억 달러 인수 협상 중',
+            summary:     '앤트로픽이 실시간 영상 AI 스타트업 디카트를 60억 달러에 인수하는 협상을 진행 중이에요.',
+            body:        '<p>앤트로픽이 이스라엘 인공지능 스타트업 디카트를 약 육십억 달러에 인수하는 협상을 진행 중이라는 보도가 나왔어요. 아직 최종 확정은 아니고 협상이 무산될 수도 있지만, 성사된다면 앤트로픽 역사상 가장 큰 규모의 인수가 될 거예요. 디카트는 이스라엘 공동창업자 세 명이 이천이십삼년에 설립한 회사로, 실시간 라이브 영상을 인공지능으로 처리해 즉각 변환하는 월드 모델 기술과 함께 칩 연산 효율을 높이는 소프트웨어를 개발하고 있어요. 이번 인수 협상이 성사될 경우 앤트로픽의 기업공개(IPO)를 앞두고 기술 역량과 인프라가 크게 강화될 것으로 기대돼요.</p><p>디카트의 대표 제품은 실시간 가상 피팅 모델 루시(Lucy)예요. 라이브 영상 속 인물이 옷이나 가방을 실제로 착용한 것처럼 보이는 고해상도 영상을 실시간으로 생성하는데, 직물 질감과 자연스러운 움직임 표현은 패션 이커머스에서 오랫동안 해결하기 어려운 기술 과제로 꼽혀 왔어요. 이베이가 투자자이자 실제 고객으로 활용 중이며, 글로벌 라이브 스트리밍 플랫폼에서 인플루언서들도 이 기술을 활용하고 있어요. 올해 오월에는 엔비디아와 어도비 등이 참여한 투자로 약 사십억 달러 기업가치를 인정받은 바 있어요.</p><p>앤트로픽이 이번 인수를 추진하는 이유는 두 가지로 분석돼요. 하나는 디카트의 칩 효율화 기술이 앤트로픽의 추론 인프라 비용을 낮추는 데 직접적으로 도움이 된다는 점이고, 다른 하나는 경쟁사인 오픈에이아이나 구글에 비해 상대적으로 약한 영상 생성 역량을 빠르게 확보할 수 있다는 점이에요. 인수가 마무리되면 디카트 팀은 앤트로픽의 추론 및 성능 개선 조직에 합류할 예정이에요.</p><p>원문: <a href="https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/">Fortune</a></p>',
+            source:      'Fortune',
+            publishedAt: '2026.08.14',
+            hue:         220,
+            image:       'https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2285051415_fc1da9-e1786627406714.jpg?resize=1200,600',
+            url:         'https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/',
+            urls: [
+                { label: '블룸버그', href: 'https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion' },
+            ],
+        },
+        {
+            id:          'art-9ef1704d-2026-08',
+            tab:         'art',
+            headline:    'LTX-2.5 오픈웨이트 영상 모델 출시 — ComfyUI 연동·실시간 물리 AI 지원',
+            summary:     '라이트릭스가 오픈웨이트 영상 AI LTX-2.5를 공개했어요. ComfyUI 연동과 로봇공학 전용 체크포인트가 특징이에요.',
+            body:        '<p>라이트릭스(Lightricks)가 오픈웨이트 영상 생성 모델 LTX-2.5를 공개했어요. 이전 버전과 비교해 시각 품질·프롬프트 이해력·생성 속도 모두 눈에 띄게 개선됐고, 개발자와 기업이 자체 하드웨어에서 직접 실행하고 파인튜닝할 수 있는 오픈웨이트 모델이에요. 이번 릴리스에서 가장 주목할 변화는 새로운 아키텍처예요. 기존에 쓰던 구조 위에 기능을 덧붙이는 방식이 아니라 생성 파이프라인 상당 부분을 새로 설계했어요. 커스텀 Gemma 4 언어 백본과 전용 프롬프트 향상기를 도입해 여러 피사체가 등장하는 복잡한 프롬프트도 정확하게 해석할 수 있게 됐고, 새로운 확산 비디오 디코더를 통해 빠른 움직임 장면에서 발생하던 아티팩트도 크게 줄었어요. 멀티샷 생성도 네이티브로 지원해 장면 전환이 있는 시퀀스에서도 캐릭터·공간·음성 일관성을 유지할 수 있어요.</p><p>개발자 친화성도 이번 출시의 핵심이에요. 허깅페이스(Hugging Face)에서 무료로 내려받을 수 있고, ComfyUI와 출시 첫날부터 네이티브로 연동돼 노드 기반 워크플로에 바로 적용할 수 있어요. 연 매출 천만 달러 미만 팀에게는 LTX API도 무료로 개방해 인디 스튜디오와 소규모 제작팀에게 사실상 진입 장벽이 없어요. 엔비디아와 협력해 RTX GPU 및 DGX Spark 시스템에서 메모리 소비를 크게 줄여 로컬 실행이 가능하게 했고, Mac도 지원해요. 라이트릭스에 따르면 LTX 계열 모델은 지금까지 누적 다운로드가 삼천삼백만 회를 돌파했어요.</p><p>물리 AI 및 로보틱스 지원도 이번 릴리스의 중요한 부분이에요. 로보틱스 전용 사전 학습 체크포인트를 별도로 제공해, 팀이 자체 도메인 데이터로 파인튜닝해 로봇이 물리 세계의 동작 방식을 학습할 수 있도록 지원해요. 마코프 로보틱스를 비롯한 실제 로봇 응용 기업들이 이미 LTX-2.5와 협력하며 성과를 내고 있어요. 라이트릭스는 영상 생성에 그치지 않고 물리 세계 시뮬레이션을 아우르는 파운데이션 모델로 포지셔닝하고 있어요.</p><p>원문: <a href="https://roboticsandautomationnews.com/2026/08/13/ltx-launches-new-free-to-use-open-world-model-for-video-and-physical-ai/104079/">Robotics & Automation News</a></p>',
+            source:      'Robotics & Automation News',
+            publishedAt: '2026.08.14',
+            hue:         280,
+            image:       'https://roboticsandautomationnews.com/wp-content/uploads/2026/08/LTX-2.5-2.jpeg',
+            url:         'https://roboticsandautomationnews.com/2026/08/13/ltx-launches-new-free-to-use-open-world-model-for-video-and-physical-ai/104079/',
+            urls: [
+                { label: '허깅페이스', href: 'https://huggingface.co/Lightricks/LTX-Video' },
+            ],
+        },
         {
             id:          'art-bf1cbcdb-2026-08',
             tab:         'art',
