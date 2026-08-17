@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-ed512070-2026-08',
+            tab:         'games',
+            headline:    'Meshy 7: Pushing the Frontier of 3D Alignment',
+            summary:     'Meshy 7은 단일 뷰 이미지를 3D 모델로 변환할 때 형상 정렬 정확도를 극대화한 새로운 이미지-투-3D 모델입니다.',
+            body:        '<p>Meshy가 최신 이미지-투-3D 모델인 Meshy 7을 공개했습니다. 이번 릴리즈의 핵심은 \'기하학적 정렬(geometry alignment)\' 성능으로, 입력 이미지와 생성된 3D 형상이 얼마나 정확하게 일치하는지를 측정하는 데 초점을 맞추고 있어요. Meshy 7은 전체적인 비율, 공간적 분포, 표면 세부 사항 세 가지 기준으로 형상을 평가하는 자동 벤치마크를 도입했으며, 단일 뷰 생성 테스트에서 비교된 모든 모델 가운데 1위를 기록했습니다.</p><p>이 벤치마크는 지금까지 주관적 평가에 의존해 왔던 3D 생성 품질 측정을 자동화한다는 점에서 의미가 크어요. 게임 아트 파이프라인에서 3D 에셋 생성 속도와 정밀도를 높이려는 개발사에게 실질적인 선택지가 될 것으로 기대됩니다. Meshy 측은 단일 이미지만으로도 사실적인 3D 메시를 뽑아낼 수 있어 기존 방식 대비 에셋 제작 시간을 크게 단축할 수 있다고 설명하고 있어요.</p><p>원문: <a href="https://www.meshy.ai/blog/meshy-7-3d-geometry-alignment-benchmark">meshy.ai</a></p>',
+            source:      'meshy.ai',
+            publishedAt: '2026.08.17',
+            hue:         200,
+            image:       'https://cdn.meshy.ai/ti_w:3840,q:75/landing-assets/blog/meshy-7/meshy-7-cover.webp',
+            url:         'https://www.meshy.ai/blog/meshy-7-3d-geometry-alignment-benchmark',
+        },
+        {
             id:          'games-012f4681-2026-08',
             tab:         'games',
             headline:    '주목해야 할 새 CG 소프트웨어: 2026년 8월 9일',
@@ -2995,6 +3007,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-00a1ed04-2026-08',
+            tab:         'art',
+            headline:    'Introducing Studio 2.0',
+            summary:     'Suno가 MIDI 지원, AI 협업 채팅, 스템 분리 등 전문 음악 제작 기능을 갖춘 Studio 2.0을 발표했습니다.',
+            body:        '<p>AI 음악 생성 플랫폼 Suno가 Studio 2.0을 공개했습니다. 이번 업데이트는 단순한 AI 작곡 도구를 넘어 전문 음악 제작 환경으로의 진화를 목표로 하고 있어요. MIDI 지원, 스템 분리, 맞춤형 오디오 이펙트, 자동화 기능 등 기존 DAW에서 익숙한 작업 흐름을 AI와 결합했습니다. 협업형 AI 채팅 인터페이스도 도입되어 창작 과정에서 AI와 실시간으로 대화하며 방향을 조율할 수 있어요.</p><p>Suno는 AI 지원 영감 도구를 유지하면서도 사용자가 직접 손을 대는 창의적 통제권을 강조하는 방향으로 설계했습니다. 이는 \'버튼 하나로 생성\'하는 방식에서 벗어나 음악인의 실제 제작 흐름에 맞게 AI를 녹여 넣는 시도예요. Studio 2.0은 게임 사운드 디자이너나 인디 음악 제작자처럼 예산이 제한된 창작자에게 전문 수준의 도구를 제공할 가능성을 열어 주고 있습니다.</p><p>원문: <a href="https://www.suno.com/blog/introducing-studio-2-0">suno.com</a></p>',
+            source:      'suno.com',
+            publishedAt: '2026.08.17',
+            hue:         290,
+            image:       'https://cdn.sanity.io/images/cl7b1q1i/production/6b98817a52aedcc909a1800e1ac42c82ed80d8bc-3840x2160.jpg?w=2400&fit=max&auto=format',
+            url:         'https://www.suno.com/blog/introducing-studio-2-0',
+        },
+        {
+            id:          'art-7f67626c-2026-08',
+            tab:         'art',
+            headline:    'How FOID AI Studio Uses Luma to Direct Without Limits',
+            summary:     '전통 감독에서 AI 영화감독으로 전환한 Vinod Padmanabhan이 Luma로 예산 장벽 없는 영화 제작을 실현하고 있습니다.',
+            body:        '<p>20년 경력의 광고·영화 감독 Vinod Padmanabhan은 전통 영화 산업을 떠나 Luma를 중심으로 자신만의 프로덕션 파이프라인을 구축했습니다. 그는 Luma를 단순한 이미지나 영상 생성 도구가 아닌, 조수·촬영감독·편집자 역할을 대신하는 완전한 스튜디오로 활용해요. \'비전을 가지고 에이전트를 감독하는 방식이 실제 세트를 운영하는 것과 똑같다\'고 그는 설명합니다. Luma의 에이전트 워크플로가 패션, 광고, 영화 제작의 맥락을 잘 이해한다는 점이 특히 강점이라고 강조했어요.</p><p>그가 Luma로 제작한 불가리아 통신 브랜드 A1 광고는 불가리아 국영 TV 최초의 AI 제작 영상으로 방영되었으며, 업계 반발에도 클라이언트가 공개적으로 지지하는 사례가 됐습니다. Vinod는 AI가 영화 제작의 문지기 역할을 해 온 예산 장벽을 제거하고, 재능이 결과를 결정하는 시대를 열고 있다고 주장해요. \'효율을 선택하지 않았다면 우리는 아직 말을 타고 다녔을 것\'이라는 그의 말처럼, AI 영화 제작은 더 이상 실험이 아닌 현실이 되고 있습니다.</p><p>원문: <a href="https://lumalabs.ai/news/how-foid-ai-studio-uses-luma-to-direct-without-limits">lumalabs.ai</a></p>',
+            source:      'lumalabs.ai',
+            publishedAt: '2026.08.17',
+            hue:         260,
+            image:       'https://cdn.sanity.io/images/2ylxvaa2/production/20cd41cc64ee58e59bcd28dee020dae14935f0a7-1920x1080.png?w=2048&fm=webp&q=75&fit=max',
+            url:         'https://lumalabs.ai/news/how-foid-ai-studio-uses-luma-to-direct-without-limits',
+        },
         {
             id:          'art-3bbbcecd-2026-08',
             tab:         'art',
