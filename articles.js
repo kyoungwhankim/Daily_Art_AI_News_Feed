@@ -1750,6 +1750,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-9260d839-2026-08',
+            tab:         'industry',
+            headline:    '세이버 인터랙티브 CEO, AI로 작가 대체 논란에 공식 반박',
+            summary:     '전직 작가가 ChatGPT로 대체됐다고 폭로한 뒤, CEO의 반박과 사과가 연이어지며 논란이 증폭됐습니다.',
+            body:        '<p>게임 개발사 세이버 인터랙티브의 전직 작가 스텔라 사코가 자신이 ChatGPT로 대체됐다고 공개 폭로하며 파문이 일었습니다. 사코는 2025년 세이버의 드라이빙 시뮬레이터 프로젝트에서 해고된 뒤 AI가 자신의 역할을 대신했다고 주장했고, 회사 측은 PC게이머를 통해 \'실제 작가를 AI로 대체한 사실이 없다\'며 부인했습니다. 그러나 CEO 매트 카치가 직접 사코를 향해 능력을 의심하는 개인적 발언을 쏟아내며 상황은 더욱 악화됐습니다.</p><p>카치는 이후 사코에게 사과의 메시지를 전했다고 알려졌지만, 린크드인에 CEO로서의 소회를 담은 또 다른 성명을 게시하며 재차 논란에 불을 지폈습니다. 베테랑 작가 셰트 팔리세크의 26분짜리 비판 영상을 자세히 묘사하며 사실상 당사자를 식별시킨 것입니다. 결국 세이버는 스팀 페이지에 AI 활용 공시를 추가했으며, 보이스 생성·현지화·NPC 대사·라디오 음악 등에 AI를 사용했음을 밝혔습니다. 이번 사건은 게임 업계에서 AI 도입의 투명성과 창작자 처우 문제가 얼마나 민감한 이슈인지를 다시금 보여줍니다.</p><p>원문: <a href="https://80.lv/articles/saber-interactive-ceo-responds-to-claims-writer-was-replaced-by-ai">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.08.18',
+            hue:         10,
+            image:       'https://cdn.80.lv/api/upload/meta/49776/images/6a82f74b400d6/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/saber-interactive-ceo-responds-to-claims-writer-was-replaced-by-ai',
+        },
+        {
             id:          'industry-87118676-2026-08',
             tab:         'industry',
             headline:    '세이버 인터랙티브, AI 사용 논란 이후 스팀 페이지에 AI 공개 추가 예정',
@@ -3007,6 +3019,34 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-117f2cf4-2026-08',
+            tab:         'art',
+            headline:    'AI 영상 플랫폼 힉스필드, 4억 달러 시리즈 B 유치 — 밸류에이션 8개월 만에 4배',
+            summary:     'AI 이미지·영상 스타트업 힉스필드가 54억 달러 기업가치를 인정받아 4억 달러 시리즈 B를 완료했습니다.',
+            body:        '<p>AI 이미지·영상 생성 플랫폼 힉스필드(Higgsfield)가 DST글로벌·골드만삭스 주도로 4억 달러 규모 시리즈 B를 마무리하며 기업가치를 54억 달러로 끌어올렸습니다. 불과 8개월 전인 2026년 1월에는 13억 달러 밸류에이션이었던 것과 비교하면 단기간에 4배 이상 뛴 셈입니다. 전직 스냅 임원 알렉스 마쉬라보프가 2023년 창업한 이 회사는 현재 200개국 3천만 명의 사용자를 확보하고 있으며, 연간 반복 매출(ARR)은 7억 달러에 달합니다.</p><p>힉스필드는 영화감독용 Cinema Studio와 마케팅팀용 Marketing Studio를 주력 제품으로 내세우며, 포춘 500대 기업 390곳을 고객사로 두고 있습니다. 칸 영화제와 뉴욕에서 AI 생성 영화를 프리미어 상영하며 창작 도구로서의 입지를 넓히는 한편, Synthesia·Runway 등 경쟁사와의 격전도 심화되고 있습니다. 이번 투자금은 채용과 제품 개발, 그리고 대규모 영상 생성을 뒷받침할 컴퓨팅 인프라 확충에 집중 투입될 예정입니다.</p><p>원문: <a href="https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.08.18',
+            hue:         260,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2259021916.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/',
+            urls: [
+                { label: '보도자료', href: 'https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html' },
+                { label: '관련 보도', href: 'https://www.wsj.com/cio-journal/this-cannes-film-cost-500-000-to-make-400-000-was-ai-compute-costs-a823b08d' },
+            ],
+        },
+        {
+            id:          'art-31494618-2026-08',
+            tab:         'art',
+            headline:    '구글 이마젠 4 API 3종 종료 — 대체 API는 최대 3배 비싸',
+            summary:     '구글이 Imagen 4 API 3종을 8월 17일부로 완전 종료하고 Gemini 3.1 Flash Image로의 전환을 요구하고 있습니다.',
+            body:        '<p>구글이 2026년 8월 17일자로 Imagen 4 API 엔드포인트 3종(imagen-4.0-generate-001, imagen-4.0-fast-generate-001, imagen-4.0-ultra-generate-001)을 완전히 종료했습니다. 구글은 \'종료된 모델은 완전히 꺼진다\'고 밝혀, 이미지 생성 기능을 서비스에 적용 중인 개발자는 즉각적인 마이그레이션이 불가피합니다. 대체 모델은 Gemini 3.1 Flash Image이며, 전용 엔드포인트 대신 generateContent 방식으로 호출 구조도 바뀌어 코드 수정이 필수적입니다.</p><p>가장 큰 우려는 비용 증가입니다. 기존 Imagen 4가 이미지당 $0.02~$0.06의 정액 요금이었다면, 새 모델은 1,000픽셀당 $0.067의 해상도 기반 과금으로 전환되어 일반적인 워크플로우 기준으로 최대 3배 이상의 비용 상승이 예상됩니다. 반면 멀티모달 입력(텍스트·이미지·영상), 대화형 편집, 서치 그라운딩, 최대 4K 출력 등 Imagen 4에 없던 기능이 추가되어 대규모 이미지 생성 파이프라인을 운용 중인 팀은 비용 대비 기능 향상을 면밀히 검토한 뒤 마이그레이션 계획을 세울 필요가 있습니다.</p><p>원문: <a href="https://www.bez-kabli.pl/googles-imagen-4-api-shutdown-arrives-with-higher-replacement-costs/">bez-kabli.pl</a></p>',
+            source:      'bez-kabli.pl',
+            publishedAt: '2026.08.18',
+            hue:         220,
+            image:       'https://www.bez-kabli.pl/wp-content/uploads/2026/08/googles-imagen-4-api-shutdown-arrives-with-higher-replacement-costs.jpg',
+            url:         'https://www.bez-kabli.pl/googles-imagen-4-api-shutdown-arrives-with-higher-replacement-costs/',
+        },
         {
             id:          'art-00a1ed04-2026-08',
             tab:         'art',
