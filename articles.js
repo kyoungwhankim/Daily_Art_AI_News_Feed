@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-26129c65-2026-08',
+            tab:         'games',
+            headline:    '스캔틱, 클라우드 없이 아이폰 하나로 3D 가우시안 스플랫 생성',
+            summary:     '아이폰만으로 온디바이스에서 3D 가우시안 스플랫을 1분 안에 생성하는 앱 스캔틱이 출시됐어요.',
+            body:        '<p>소프트웨어 개발자 세바스티안 베이어가 아이폰 카메라 영상만으로 3D 가우시안 스플랫을 생성할 수 있는 앱 \'스캔틱(Scantic)\'을 출시했어요. 3D 가우시안 스플래팅은 실제 오브젝트나 환경을 이미지·영상으로부터 고품질의 빠른 렌더링 3D 표현으로 재구성하는 기술로, 최근 게임·VFX·XR 분야에서 주목받고 있어요. 스캔틱은 오브젝트 주위를 천천히 돌며 촬영하는 것만으로 스플랫 생성을 자동 완료하며, 소규모 스캔 기준 학습 시간은 1분 이내예요. 생성된 스플랫은 PLY 포맷으로 내보낼 수 있어 Blender 등 3DGS 데이터를 지원하는 DCC 툴에서 바로 활용 가능해요. 기본 앱은 무료이며, 풀 퀄리티 내보내기는 연간 €29.99(약 35달러) 구독이나 건당 €4.99로 이용할 수 있어요.</p><p>스캔틱의 핵심 차별점은 클라우드 없이 아이폰 자체에서 모든 처리를 완료한다는 점이에요. Kiri Engine이나 Polycam 같은 기존 모바일 3D 스캔 앱들이 데이터를 클라우드에 올려 처리하는 것과 달리, 스캔틱은 아이폰 칩셋에서 직접 연산을 수행해요. 개인 데이터가 외부로 전송되지 않아 보안 문제가 없고, 다른 앱이 업로드를 마칠 시간에 이미 스플랫 생성이 끝날 만큼 빠르다고 개발자는 밝혀요. 오픈소스 Brush 엔진을 기반으로 하며, AI 코딩 도구를 활용해 초기 대비 최대 260배 성능을 끌어올렸어요. iOS 17.0 이상, A12 Bionic 칩 탑재 기기(아이폰 XS 이상)에서 동작해요.</p><p>이 앱은 3DGS 전문 지식 없이도 AI 코딩 도구만으로 성능을 개선하려는 개인 여름 프로젝트에서 출발했어요. 초기에 맥북 에어에서 3시간 이상 걸리던 스플랫 학습 시간을 점차 줄이다 보니 \'거의 우연히\' 아이폰 전용 앱이 완성됐다고 베이어는 설명해요. 향후 기존 영상으로도 스플랫을 만들 수 있는 기능과 SPZ 포맷 내보내기를 추가할 계획이에요. 안드로이드 버전은 현재 계획이 없으며, macOS 컴패니언 앱은 고려 중이에요.</p><p>원문: <a href="https://www.cgchannel.com/2026/08/scantic-trains-gaussian-splats-entirely-on-your-phone/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.08.20',
+            hue:         200,
+            url:         'https://www.cgchannel.com/2026/08/scantic-trains-gaussian-splats-entirely-on-your-phone/',
+            urls: [
+                { label: '공식 사이트', href: 'https://scantic.app/' },
+                { label: '깃허브', href: 'https://github.com/ArthurBrussee/brush' },
+                { label: '앱스토어', href: 'https://apps.apple.com/us/app/scantic/id6795293934' },
+            ],
+        },
+        {
+            id:          'games-91547b01-2026-08',
+            tab:         'games',
+            headline:    'Hi3D V3.0, 세계 최초 2048³ 복셀 해상도 AI 3D 모델 출시 — 48시간 무료 개방',
+            summary:     'AI 기반 3D 생성 플랫폼 Hi3D가 세계 최초 상용 2048³ 복셀 해상도 V3.0을 48시간 무료 체험과 함께 출시했어요.',
+            body:        '<p>AI 기반 3D 모델 생성 플랫폼 하이쓰리디(Hi3D)가 2026년 8월 19일, 세계 최초 상용 2048³ 복셀 해상도를 지원하는 버전 3.0을 출시했어요. 이전 버전 대비 복셀 수가 2.37배 늘어나면서, 극도로 확대해도 정밀한 디테일이 무너지지 않아요. 깃털, 글씨체, 로고 엣지처럼 얇고 세밀한 요소까지 정확하게 재현하며, 텍스처는 최대 8K 해상도를 지원해 실물에 가까운 결과물을 만들어 낼 수 있어요. 향상된 공간 추론 능력 덕분에 모든 각도에서 정밀한 기하학 구조와 자연스러운 입체감을 구현해요. 출시 48시간 동안 전 기능을 무료로 체험할 수 있으며, 연간 구독 플랜은 70% 할인된 가격에 제공돼요.</p><p>버전 3.0에는 이미지-3D 변환, 텍스처링, 모델 분할, 다중 포맷 내보내기 등 폭넓은 기능이 포함됐어요. 컬러 3D 프린팅을 위한 모델 분할 및 커넥터 생성 도구도 추가돼 실물 출력 작업 흐름과 매끄럽게 연결돼요. 게임·영화·산업 디자인·건축·패션·귀금속·관광·교육 등 다양한 분야에서 오브젝트의 고정밀 디지털화에 활용할 수 있어요. 이미지 한 장으로 고해상도 3D 모델을 생성할 수 있다는 점에서, 기존의 3D 스캔이나 수작업 모델링 없이도 빠른 에셋 제작이 가능해졌어요.</p><p>3D 생성 AI 기술이 빠르게 발전하는 가운데, 하이쓰리디는 기존 상용 3D 생성 모델이 1024³ 해상도에 머물던 한계를 처음으로 넘어섰다고 밝혔어요. 게임 에셋 파이프라인에 AI를 도입하려는 스튜디오라면 이번 출시를 계기로 고해상도 3D 생성 기술의 실제 품질을 직접 확인해볼 기회예요. 무료 체험 기간 이후에도 하이쓰리디 플랫폼에서 계속 서비스를 이용할 수 있으며, 추가 기능 업데이트도 예정되어 있어요.</p><p>원문: <a href="https://www.prnewswire.com/news-releases/hi3d-v3-0--the-first-commercially-available-ai-3d-model-with-2048-voxel-resolution-launches-with-48-hours-of-free-access-for-everyone-302852849.html">PR Newswire</a></p>',
+            source:      'PR Newswire',
+            publishedAt: '2026.08.20',
+            hue:         220,
+            url:         'https://www.prnewswire.com/news-releases/hi3d-v3-0--the-first-commercially-available-ai-3d-model-with-2048-voxel-resolution-launches-with-48-hours-of-free-access-for-everyone-302852849.html',
+            urls: [
+                { label: '리뷰 기사', href: 'https://www.3dnatives.com/en/hi3d-v3-2048-voxel-resolution/amp/' },
+            ],
+        },
+        {
             id:          'games-ed512070-2026-08',
             tab:         'games',
             headline:    'Meshy 7: Pushing the Frontier of 3D Alignment',
@@ -3031,6 +3061,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-2d1ab9fd-2026-08',
+            tab:         'art',
+            headline:    'AI 음악 수익, 누구에게 돌아가야 하나 — 뜨거운 논쟁',
+            summary:     'AI 음악 플랫폼의 성장으로 창작자 보상을 둘러싼 법적·경제적 논쟁이 음악 산업 전반으로 확산되고 있어요.',
+            body:        '<p>Suno, Udio 같은 AI 음악 생성 플랫폼이 급성장하면서 음악 산업의 수익 구조에 근본적인 도전이 시작됐어요. 이 플랫폼들은 텍스트 프롬프트만으로 보컬, 가사, 반주를 갖춘 완성된 노래를 만들어낼 수 있어요. 2026년 2월 기준 Suno는 유료 구독자 200만 명을 돌파했다고 밝혔어요. 핵심 논쟁은 AI 모델이 수백만 곡을 학습해 수익을 낼 때, 원작자에게 어떤 보상이 돌아가야 하는가예요. AI 학습 데이터 추적 프로젝트 \'AI Watchdog\'를 운영하는 저널리스트 알렉스 라이스너는 많은 아티스트가 자신의 곡이 AI 학습에 사용됐다는 사실을 뒤늦게 알고 놀란다고 말해요.</p><p>경제적 피해는 스트리밍 수익 분배 구조에서도 나타나고 있어요. 스트리밍 플랫폼은 전체 구독료를 모든 스트리밍 수로 나눠 분배하는데, AI가 생성한 곡이 폭발적으로 늘면서 인간 창작자의 몫이 희석될 수 있어요. 엔터테인먼트 변호사 크리스틀 델가도는 \'AI 음악과 인간 음악이 같은 풀에서 분배된다\'고 강조하며, AI 생성 곡이 수학적으로 인간 음악의 수익을 잠식한다고 지적해요. 뮤직 아티스트 연합(MAC)은 명시적 동의, 공정한 보상, 투명성 세 가지 원칙을 담은 공개 서한을 발표하며 법적 규제 마련을 촉구하고 있어요.</p><p>아티스트들 사이에서는 AI 자체에 반대하는 것이 아니라 \'명확성, 동의, 보상\' 체계가 필요하다는 목소리가 높아지고 있어요. Suno는 소송 서류에서 학습 데이터에 \'인터넷에서 접근 가능한 상당 품질의 음악 파일 대부분\'이 포함됐다고 인정한 바 있어요. 이 논쟁은 저작권법의 공정 이용 범위와 AI 시대 창작 경제의 미래를 결정짓는 분수령이 될 전망이에요.</p><p>원문: <a href="https://www.wshu.org/music/2026-08-19/the-grueling-fight-over-who-profits-from-ai-music">NPR</a></p>',
+            source:      'NPR',
+            publishedAt: '2026.08.20',
+            hue:         290,
+            image:       'https://npr.brightspotcdn.com/dims4/default/54575c7/2147483647/strip/true/crop/5184x3888+0+0/resize/880x660!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F03%2F6f%2F0eec54964dca8d3fa63141b98d88%2Ffranck-v-u3sowvixhky-unsplash.jpg',
+            url:         'https://www.wshu.org/music/2026-08-19/the-grueling-fight-over-who-profits-from-ai-music',
+        },
+        {
+            id:          'art-024df985-2026-08',
+            tab:         'art',
+            headline:    '2026년 7월 발매 음악의 40%, AI 생성 감지 — 연구 결과',
+            summary:     'SubmitHub 분석 결과 2026년 7월 출시 음악 중 38.5%에서 AI 관여가 감지됐으며, 산업 전반의 공개 기준 마련이 시급해요.',
+            body:        '<p>음악 마켓플레이스 SubmitHub이 2026년 7월 출시된 100만 건 이상의 음원을 분석한 결과, 전체의 38.5%에서 AI 관여가 확인됐어요. 세부적으로는 23.2%가 완전 AI 생성 음악이었고, 15.3%는 AI가 생성한 오디오를 인간이 편집·가공한 것으로 나타났어요. SubmitHub은 자체 AI 감지 툴 \'SH Labs\'를 통해 이번 분석을 진행했으며, 음악 업계의 \'공개 문제(disclosure problem)\'가 갈수록 심각해지고 있다고 경고했어요. 창업자 제이슨 그리시코프는 \'사람들이 AI 음악 여부를 스스로 판단할 수 있어야 한다\'며 공개 의무화를 촉구했어요.</p><p>주요 플랫폼들은 이미 대응에 나섰어요. Bandcamp은 2026년 초 AI 생성 음악을 전면 금지했고, Beatport도 이에 뒤이어 유사한 정책을 도입했어요. TIDAL은 완전 AI 생성 음악에 대한 로열티 지급을 거부하며, Spotify는 AI 콘텐츠 표시 시스템을 도입했어요. Apple Music 역시 AI 창작 음악을 청취할 때 알림을 제공하고 있어요. 이처럼 플랫폼마다 AI 음악을 다루는 방식이 제각각이라, 업계 전체를 아우르는 일관된 기준 마련이 시급한 상황이에요.</p><p>2026년 들어 AI 음악 생성 도구의 접근성이 높아지면서 음원 공급량이 폭발적으로 증가하고 있어요. 스트리밍 서비스의 수익은 총 스트리밍 수로 나뉘어 분배되기 때문에, AI 생성 음악의 급증은 인간 창작자의 몫을 수학적으로 희석시킬 수 있어요. 이번 연구 결과는 창작자 권리 보호와 AI 음악의 공존 방식을 둘러싼 논의를 더욱 가속화할 것으로 보여요.</p><p>원문: <a href="https://www.nme.com/news/music/ai-detected-in-40-per-cent-of-music-released-in-july-2026-study-reveals-3963677">NME</a></p>',
+            source:      'NME',
+            publishedAt: '2026.08.20',
+            hue:         310,
+            image:       'https://www.nme.com/wp-content/uploads/2022/11/music-industry-streaming-cma-report-696x420.jpg',
+            url:         'https://www.nme.com/news/music/ai-detected-in-40-per-cent-of-music-released-in-july-2026-study-reveals-3963677',
+        },
         {
             id:          'art-bd18d9ad-2026-08',
             tab:         'art',
