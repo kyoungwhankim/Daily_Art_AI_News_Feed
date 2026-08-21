@@ -29,6 +29,20 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-d16e917e-2026-08',
+            tab:         'games',
+            headline:    'Runway AI, 생성 영상에 네이티브 HDR 출력 지원 추가',
+            summary:     'Runway AI가 Gen-4.5·Aleph 2.0 모델에 HDR10, HLG, ProRes 등 방송 납품 규격 HDR 출력을 지원하기 시작했어요.',
+            body:        '<p>Runway AI가 8월 20일부로 AI 생성 영상의 HDR 직접 출력을 공식 지원하기 시작했어요. Gen-4.5 텍스트-투-비디오·이미지-투-비디오와 Aleph 2.0 모델이 이제 HDR10, HLG, 10비트 SDR, ProRes 422 HQ, OpenEXR 시퀀스 등 방송·영화 납품 규격의 포맷으로 바로 렌더링할 수 있어요. HDR 출력물은 BT.2020 색역에 맞게 그레이딩된 진정한 HDR 렌더로, 후처리에서 따로 톤 매핑을 거치지 않아도 돼요.</p><p>기존 SDR 영상을 HDR로 변환해주는 Ruby 기능도 API에 추가됐어요. HDR10, HLG, ProRes 편집 마스터, OpenEXR 시퀀스 형식으로 변환이 가능하고, 소스 픽셀과 오디오를 그대로 보존하면서 밝기만 HDR 헤드룸으로 확장해줘요. 게임 트레일러나 시네마틱 영상에 Runway를 활용하는 아티스트라면, AI 생성 결과물을 별도 후작업 없이 방송 및 HDR 디스플레이 규격으로 바로 납품할 수 있어 파이프라인이 크게 단축될 거예요.</p><p>원문: <a href="https://releasebot.io/updates/runwayai">Runway AI 릴리즈 노트 (via Releasebot)</a></p>',
+            source:      'Runway AI 릴리즈 노트 (via Releasebot)',
+            publishedAt: '2026.08.21',
+            hue:         200,
+            url:         'https://releasebot.io/updates/runwayai',
+            urls: [
+                { label: '공식 사이트', href: 'https://runway.com' },
+            ],
+        },
+        {
             id:          'games-26129c65-2026-08',
             tab:         'games',
             headline:    '스캔틱, 클라우드 없이 아이폰 하나로 3D 가우시안 스플랫 생성',
@@ -1780,6 +1794,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-609541c3-2026-08',
+            tab:         'industry',
+            headline:    'Dark and Darker 개발사 IRONMACE, AI 코딩 어시스턴트 Aura로 튜토리얼 개발 기간 절반으로 줄였다',
+            summary:     'IRONMACE가 AI 코딩 도구 Aura를 활용해 다크 앤 다커 첫 튜토리얼을 기존 예상 기간의 절반인 2주 만에 완성했어요.',
+            body:        '<p>다크 앤 다커를 만든 개발사 IRONMACE가 AI 코딩 어시스턴트 Aura를 이용해 게임 최초의 튜토리얼 시스템을 약 2주 만에 완성했어요. IRONMACE 대표 Terence Park는 게임 디자인·프로듀서 출신으로 프로그래밍이 주특기가 아닌데도, Aura를 \'프로젝트 전용 실시간 위키\'처럼 활용해 코드베이스를 이해하고 직접 구현까지 해냈어요. 코드베이스를 처음 접한 외부 엔지니어도 Aura 덕분에 이틀 만에 기여를 시작하고 2주 만에 주요 작업을 마쳤어요.</p><p>원래라면 팀 전체를 꾸려 5~6주가 걸릴 작업이었지만, Aura 덕에 현업 개발팀이 기존 업무를 유지하면서도 튜토리얼 개발을 병행할 수 있었어요. 팀원들이 서로 다른 시간대에서 협업 채팅을 통해 피드백을 주고받고, 새 기능이 나오면 Aura로 즉시 파악해 콘텐츠를 이어 만드는 방식으로 개발을 빠르게 진행했어요. 코딩 경험이 적은 디자이너가 AI 도구만으로 실제 게임 기능을 완성한 구체적 사례로, 소규모 인디 스튜디오의 AI 활용 가능성을 잘 보여줘요.</p><p>원문: <a href="https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.08.21',
+            hue:         30,
+            image:       'https://cdn.80.lv/api/upload/meta/49818/images/6a864293a4835/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time',
+        },
+        {
+            id:          'industry-0a1c7075-2026-08',
+            tab:         'industry',
+            headline:    '메타, AI 프롬프트로 게임 만드는 앱 \'Pocket\' 미국에 정식 출시',
+            summary:     '메타가 AI 프롬프트만으로 인터랙티브 게임을 만들고 공유할 수 있는 앱 Pocket을 미국에 정식 출시했어요.',
+            body:        '<p>메타가 AI 프롬프트만으로 소규모 인터랙티브 게임을 만들고 스크롤 피드에 공유할 수 있는 앱 \'Pocket\'을 8월 20일 미국 전역에 정식 출시했어요. 브라질 테스트 출시에 이어 본격적으로 서비스를 시작한 이 앱은, 메타가 올해 초 바이브 코딩 게임 플랫폼 Gizmo 팀을 인수하면서 개발한 프로젝트예요. Pocket에서 만든 게임 \'기즈모\'는 터치와 기기 기울기에 반응하고, 효과음과 음악, 카메라 롤 사진까지 활용할 수 있어요.</p><p>완성된 게임은 프로필에 공유하면 다른 이용자가 저장하거나 리믹스해 새 콘텐츠로 만들 수 있어요. 저커버그는 \'인스타그램 인스턴츠, 포럼, 셀러 등 최근 앱 출시 속도가 AI 덕에 크게 빨라졌다\'고 강조했어요. 코딩 지식 없이도 누구나 게임 제작에 도전할 수 있는 환경을 여는 시도로, 메타는 Pocket 출시와 함께 원래 Gizmo 앱은 서비스를 종료할 예정이에요.</p><p>원문: <a href="https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.08.21',
+            hue:         30,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/08/pocket-image.png',
+            url:         'https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/',
+        },
+        {
             id:          'industry-8b69e405-2026-08',
             tab:         'industry',
             headline:    '게임 스튜디오들이 외부 개발 파트너에 눈 돌리는 이유 — JAI 프레임워크로 AI 아트 제작 기간 단축',
@@ -3061,6 +3099,21 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-61a25f0b-2026-08',
+            tab:         'art',
+            headline:    'Black Forest Labs, AI 생성 영상을 네이티브 4K로 업스케일하는 \'FLUX Upscale\' 출시',
+            summary:     'Black Forest Labs가 AI 생성 영상을 최대 네이티브 4K까지 업스케일하는 FLUX Upscale 도구를 출시했어요.',
+            body:        '<p>FLUX 영상 생성 모델을 만든 Black Forest Labs가 8월 20일 AI 생성 영상을 최대 네이티브 4K까지 업스케일하는 FLUX Upscale 도구를 선보였어요. 일반 업스케일러와 달리 FLUX 3 영상의 특성을 이해하도록 최적화되어, 얼굴이 뭉개지거나 물·잔디 같은 텍스처에 격자 아티팩트가 생기는 문제를 효과적으로 수정해줘요. 1.5x·2x·3x 배율을 지원해 HD 입력 기준으로 1080p, 2K, 4K 출력이 가능해요.</p><p>Precise(4단계, 메가픽셀-초당 $0.07)와 Creative(8단계, $0.10) 두 가지 모드로 속도·비용과 수정 품질 사이에서 선택할 수 있어요. Precise 모드는 인물·레퍼런스 일관성이 중요한 작업에, Creative 모드는 더 많은 디테일 복원이 필요한 경우에 적합해요. 광고·캠페인 영상이나 방송 규격 납품처럼 고해상도 출력이 필수인 작업에서 AI 생성 영상과 납품 품질 사이의 간격을 줄여줄 실용적인 도구예요.</p><p>원문: <a href="https://bfl.ai/blog/flux-video-upscale">Black Forest Labs</a></p>',
+            source:      'Black Forest Labs',
+            publishedAt: '2026.08.21',
+            hue:         290,
+            image:       'https://cdn.sanity.io/images/2gpum2i6/production/1e1470ba8e99a04964574a307371d25869d377cf-3840x2160.jpg',
+            url:         'https://bfl.ai/blog/flux-video-upscale',
+            urls: [
+                { label: 'API 사이트', href: 'https://api.bfl.ai' },
+            ],
+        },
         {
             id:          'art-2d1ab9fd-2026-08',
             tab:         'art',
