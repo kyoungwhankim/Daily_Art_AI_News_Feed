@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-5f6c6e3a-2026-08',
+            tab:         'games',
+            headline:    'We\'re finally talking about AI, ft. David \'Rez\' Graham and Luke Dicken',
+            summary:     '전 Maxis 엔지니어와 전 Take-Two AI 총괄이 게임 개발 현장의 AI 현실과 과장을 솔직하게 논하는 팟캐스트예요.',
+            body:        '<p>전 Maxis 수석 엔지니어 David \'Rez\' Graham과 전 Take-Two AI 총괄 Dr. Luke Dicken이 Game Developer 팟캐스트에 출연해 게임 개발 현장에서 AI의 현실과 과장을 솔직하게 이야기했어요. 두 사람 모두 대형 스튜디오에서 오랜 시간 AI 시스템을 직접 설계하고 운영해온 경력자로, 최근 업계를 뜨겁게 달구는 생성형 AI 열풍을 현장 실무자의 시각으로 냉철하게 평가할 수 있는 위치에 있어요. 에피소드는 시니어 에디터 Bryant Francis의 진행으로 2026년 8월 21일 공개됐어요.</p><p>이번 대화에서는 세 가지 핵심 주제를 다뤘어요. 첫째, 오랜 AI 실무 경력을 가진 전문가들이 현재의 생성형 AI 붐을 어떻게 평가하는지, 둘째, 게임 AI 시스템에서 여전히 진정한 가치가 있는 요소가 무엇인지, 셋째, 개발자들이 실질적인 AI 활용과 단순한 마케팅 홍보를 어떻게 구분할 수 있는지예요. 두 게스트는 프론티어 모델이 만들어내는 화려한 시연 뒤편에 실제 개발 환경에서 쓸 수 있는 것이 무엇인지를 구체적으로 짚어줬어요. 에피소드의 핵심은 \'일의 본질과 게임 개발 속 AI의 내재적 가치\'이며, 홍보성 내용보다는 현장 실무자의 균형 잡힌 시각을 전달하는 데 초점을 뒀어요.</p><p>생성형 AI가 게임 업계 전반으로 빠르게 확산되고 있는 지금, 수십 년간 현장에서 AI를 직접 다뤄온 전문가들의 냉정한 평가는 어느 때보다 필요하게 느껴져요. 과장 없이 AI의 실질적인 가치를 짚는 이 팟캐스트는 게임 개발자라면 한 번 들어볼 만해요.</p><p>원문: <a href="https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.22',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf3fc88a2734c2ee4/6a88636db244e43b9a248c59/AIrezluke.png',
+            url:         'https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken',
+        },
+        {
             id:          'games-d16e917e-2026-08',
             tab:         'games',
             headline:    'Runway AI, 생성 영상에 네이티브 HDR 출력 지원 추가',
@@ -1794,6 +1806,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-73b8dad5-2026-08',
+            tab:         'industry',
+            headline:    'Tencent Games Brings Major Lineup To Gamescom 2026',
+            summary:     '텐센트 게임즈가 게임스컴 2026에서 Motus AI, LAP 등 핵심 AI 게임 제작 기술을 처음 공개해요.',
+            body:        '<p>텐센트 게임즈 센트럴 테크(Tencent Games Central Tech)가 게임스컴 2026에 처음 참가해 자사 핵심 AI 기술을 대거 공개해요. 시연 라인업에는 3D 캐릭터 애니메이션 생성 AI \'Motus AI\', 게임 생산 지원 플랫폼 \'GIGA\', 그리고 라이트스피드 스튜디오의 인하우스 AI 에셋 생성 플랫폼 \'LAP(LightSpeed In-House AI Platform for Game Asset Generation)\'이 포함돼요. 소비자 부스는 8월 26일부터 28일까지 쾰른메세 Hall 8.1에서 운영되며, 8월 25일 오프닝 나이트 라이브 참가 후 본 행사가 시작돼요.</p><p>LAP는 게임 에셋 제작의 효율성, 품질, 보안을 높이기 위해 만든 산업용 AI PaaS 에셋 플랫폼이에요. 9월에 제한 베타 접근이 시작되며, 이후 글로벌 멀티리전으로 출시될 예정이에요. 텐센트 게임즈 센트럴 테크는 LAP 외에도 Anti-Cheat Expert, GVoice, WeTest 등 게임 제작 및 라이브 운영 전반을 지원하는 기술 팀들을 이번 행사에 참가시켜요. 기술 세션에서는 3D 캐릭터 애니메이션을 위한 생성형 AI, FPS 전장 자율 AI 에이전트, 크로스플랫폼 오픈월드 게임의 전역 조명 및 성능 최적화, 복잡한 게임의 자율 테스트 등 다양한 주제가 다뤄져요.</p><p>게임스컴 2026에서 텐센트의 AI 기술 공개는 단순 게임 출품을 넘어 업계 파트너들에게 게임 제작 도구로서의 AI를 직접 체험시키는 자리가 될 거예요. 게임 개발사들이 비용 절감과 에셋 제작 효율화를 위해 AI 도구를 점점 더 적극적으로 찾고 있는 시점에, LAP 같은 인하우스 AI 에셋 생성 플랫폼이 제작 파이프라인을 어떻게 바꿀 수 있는지 주목할 만해요.</p><p>원문: <a href="https://twistedvoxel.com/tencent-games-brings-major-lineup-to-gamescom-2026/">Twisted Voxel</a></p>',
+            source:      'Twisted Voxel',
+            publishedAt: '2026.08.22',
+            hue:         220,
+            image:       'https://twistedvoxel.com/wp-content/uploads/2026/08/tencent.jpg',
+            url:         'https://twistedvoxel.com/tencent-games-brings-major-lineup-to-gamescom-2026/',
+        },
+        {
             id:          'industry-609541c3-2026-08',
             tab:         'industry',
             headline:    'Dark and Darker 개발사 IRONMACE, AI 코딩 어시스턴트 Aura로 튜토리얼 개발 기간 절반으로 줄였다',
@@ -3099,6 +3123,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-449723c2-2026-08',
+            tab:         'art',
+            headline:    'Apple Music Will Soon Start Labeling AI-Generated Music',
+            summary:     '애플 뮤직이 AI 생성 음원에 \'Made With AI\' 라벨을 도입해 스트리밍 업계의 AI 투명성 흐름에 합류해요.',
+            body:        '<p>애플 뮤직(Apple Music)이 AI로 제작된 음원에 \'Made With AI\' 라벨을 도입할 계획이에요. 2026년 초 공개한 AI 투명성 태그(AI Transparency Tags)를 기반으로, 음원 제작에 AI가 상당 부분 활용됐을 경우 레코드사와 배급사가 자발적으로 이를 신고하는 방식이에요. 이미 Tidal과 Deezer가 유사한 AI 라벨링을 도입한 상태이며, 애플 뮤직도 업계 전반의 AI 투명성 표준화 흐름에 합류하게 됐어요.</p><p>AI 음원 라벨링의 필요성은 수치로도 확인돼요. Deezer에 따르면 플랫폼 일일 업로드의 44%가 AI 생성 음원일 정도로, Suno나 Udio 같은 AI 음악 생성 도구의 확산 이후 AI 음악의 비중이 급격히 늘어났어요. RIAA와 IFPI는 기존 성인물 표시제와 유사한 업계 전반의 AI 라벨링 표준 도입을 제안 중이며, 스포티파이도 2026년 9월에 AI 페르소나 배지를 도입해 해당 콘텐츠를 에디토리얼 추천에서 기본 제외할 예정이에요.</p><p>AI 생성 음원의 증가와 함께 창작자의 저작권, 플랫폼의 큐레이션 책임, 청취자의 알 권리를 둘러싼 논의도 커지고 있어요. 애플 뮤직의 AI 라벨 도입은 스트리밍 플랫폼이 AI 콘텐츠를 단순 수용하는 단계를 넘어 투명하게 관리하는 방향으로 나아가고 있음을 보여주는 신호예요.</p><p>원문: <a href="https://www.thurrott.com/apple/340620/apple-music-will-soon-start-labeling-ai-generated-music">Thurrott</a></p>',
+            source:      'Thurrott',
+            publishedAt: '2026.08.22',
+            hue:         290,
+            image:       'https://thurrott-assets.nyc3.digitaloceanspaces.com/web/wp-content/uploads/sites/2/2026/08/Apple-Music.jpg',
+            url:         'https://www.thurrott.com/apple/340620/apple-music-will-soon-start-labeling-ai-generated-music',
+        },
         {
             id:          'art-61a25f0b-2026-08',
             tab:         'art',
