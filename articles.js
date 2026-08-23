@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-537bd1a2-2026-08',
+            tab:         'games',
+            headline:    '엘스랜드, AI로 제작한 게임 20종 공개 — 풀 프로덕션 AI 파이프라인 실증',
+            summary:     '모바일 게임 스타트업 엘스랜드가 AI 풀 파이프라인으로 개발한 신작 게임 20종을 공개했습니다.',
+            body:        '<p>모바일 게임 스타트업 엘스랜드(Elseland)가 AI를 활용해 제작한 신작 게임 20종을 공개했습니다. 매치3·퍼즐·아케이드·액션·하이퍼캐주얼·인터랙티브 내러티브 등 여섯 장르에 걸쳐 있으며, 비주얼 생성·3D 모델링·게임플레이 로직·레벨 디자인·밸런싱·내러티브 개발까지 제작 전 단계에 AI를 접목한 \'풀 프로덕션 AI 시스템\'을 실증했습니다. 캔디 킹덤 같은 3D 매치3 게임, 카피바라 포커 라운지, 동물 테마 클로츠키 퍼즐, AI 기반 탁상 RPG, 러너·아케이드 타이틀까지 장르 폭이 넓어 단일 AI 파이프라인으로 다양한 플레이 스타일을 소화할 수 있음을 보여줍니다.</p><p>엘스랜드는 2026년 4월 창업자 필 리우(Phil Liu)가 혼자 AI로 3D 오픈 월드를 구현할 수 있는지 실험하면서 시작됐습니다. 이후 전문 AI 에이전트를 갖춘 팀 단위 양산 체계로 발전해, 여러 창의적 방향을 병렬로 탐색하고 아이디어를 실제 플레이 가능한 게임으로 빠르게 완성하는 구조를 갖췄습니다. 20종 출시 이후에는 캐릭터·미니게임·탐험 장소를 하나로 잇는 대형 AI 3D 세계관 구축도 예고돼 있어, AI가 소규모 팀에서도 다장르 게임을 완성도 있게 제작할 수 있음을 입증하는 사례로 주목받고 있습니다.</p><p>원문: <a href="https://www.manilatimes.net/2026/08/22/tmt-newswire/pr-newswire/elseland-unveils-20-games-created-with-ai-advancing-ai-game-development-at-scale/2410238">Manila Times</a></p>',
+            source:      'Manila Times',
+            publishedAt: '2026.08.23',
+            hue:         30,
+            image:       'https://mmx.prnewswire.com/media/MS1971317/20260817040544EDT_video_1.mp4?id=OA2888883&p=thumbnail',
+            url:         'https://www.manilatimes.net/2026/08/22/tmt-newswire/pr-newswire/elseland-unveils-20-games-created-with-ai-advancing-ai-game-development-at-scale/2410238',
+        },
+        {
             id:          'games-5f6c6e3a-2026-08',
             tab:         'games',
             headline:    'We\'re finally talking about AI, ft. David \'Rez\' Graham and Luke Dicken',
@@ -3123,6 +3135,17 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-3181bcf4-2026-08',
+            tab:         'art',
+            headline:    '\'내 직업의 무덤을 파고 있다\' — AI 훈련에 참여하는 할리우드 창작자들',
+            summary:     '할리우드 창작자들이 AI 훈련 데이터를 제공하며 스스로 직업을 잠식하는 역설적 상황이 조명됐습니다.',
+            body:        '<p>가디언지(The Guardian)와 AI Commission의 심층 보도에 따르면, 할리우드 작가·감독·프로듀서 등 다양한 창작 직군 종사자들이 시간당 12~200달러를 받으며 AI 모델 훈련에 필요한 데이터를 제공하고 있습니다. 이와 맞물려 영상 산업 일자리는 45만 개에서 32만 6천 개로 약 28% 급감했으며, AI가 이미 창작 인력을 실질적으로 대체하기 시작했음을 수치로 확인할 수 있습니다. 넷플릭스는 2026년 제작한 콘텐츠 1,000편 중 300편에 AI를 활용했고, 론 하워드 감독을 비롯한 저명 감독들도 AI를 제작 과정에 수용하는 추세입니다.</p><p>역설적인 것은 AI 훈련에 참여하는 창작자들 스스로가 \'내 직업의 무덤을 파고 있다\'고 자조한다는 점입니다. 단기 수입을 위해 AI 학습 데이터를 제공하는 행위가 장기적으로 자신의 직업을 잠식하는 구조를 만들어내고 있습니다. 이 보도는 AI 도입의 단기적 경제 논리와 창작 노동의 장기적 미래 사이에 놓인 근본적 갈등을 조명합니다. 생성 AI가 단순 보조 도구를 넘어 창작 산업 전반의 구조적 재편을 이끄는 상황에서, 창작자들이 AI 개발에 기여할수록 스스로의 대체 속도를 앞당기는 딜레마는 더욱 심화되고 있습니다.</p><p>원문: <a href="https://aicommission.org/2026/08/digging-the-grave-of-my-profession-the-hollywood-creatives-training-ai-to-do-their-jobs/">The Guardian</a></p>',
+            source:      'The Guardian',
+            publishedAt: '2026.08.23',
+            hue:         0,
+            url:         'https://aicommission.org/2026/08/digging-the-grave-of-my-profession-the-hollywood-creatives-training-ai-to-do-their-jobs/',
+        },
         {
             id:          'art-449723c2-2026-08',
             tab:         'art',
