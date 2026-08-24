@@ -3136,6 +3136,18 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-2001da48-2026-08',
+            tab:         'art',
+            headline:    '2026 AI 크리에이터 페스티벌 발리서 폐막 — Wan3.0과 글로벌 크리에이터들이 만든 AI 영상 생성의 새 지평',
+            summary:     '알리바바 Wan3.0이 공개 베타에 들어간 가운데 발리 AI 크리에이터 페스티벌이 성황리에 막을 내렸어요.',
+            body:        '<p>알리바바의 최신 AI 영상 생성 모델 Wan3.0이 2026년 8월 초 알리바바 클라우드를 통해 공개 베타에 들어간 가운데, 인도네시아 발리 누사두아의 물리아 리조트에서 \'2026 AI 크리에이터 페스티벌(Wan | VivaReel AI 크리에이터 컨퍼런스)\'이 8월 22일 성황리에 막을 내렸어요. \'상상에 한계는 없다(Imagination Without Limitation)\'를 주제로 전 세계 약 30개국의 AI 크리에이터, 개발자, 투자자, 업계 리더들이 한자리에 모인 이번 행사는 AI 영상 생성 기술의 현재와 미래를 탐색하는 자리였어요.</p><p>페스티벌의 핵심은 \'사랑(LOVE)\'을 주제로 진행된 첫 번째 AI 크리에이터 어워즈였어요. 1위는 "The One Everyone Passed By"를 출품한 Boxer가 차지했으며, Coffee의 "Another me"와 Akra의 "The Last Voice"가 2위에 올랐어요. 수상작들은 Wan3.0을 활용해 언어와 문화의 경계를 넘어 감동을 전달하며 AI 창작의 무한한 가능성을 증명했어요.</p><p>Wan3.0은 텍스트, 이미지, 오디오, 영상, 웹페이지, 문서 등 멀티모달 입력을 지원하며 최대 30초 분량의 영상을 한 번에 생성할 수 있어요. 이전 모델 대비 캐릭터 일관성과 시각적 현실감이 크게 향상되었으며, VivaReel 플랫폼을 통해 전 세계 크리에이터들의 창작 활동을 폭넓게 지원할 것으로 기대돼요. VivaReel CEO 서머 리(Summer Li)는 AI가 크리에이터의 상상력을 현실로 만드는 시대가 본격화됐다고 강조했어요.</p><p>원문: <a href="https://www.manilatimes.net/2026/08/23/tmt-newswire/plentisoft/2026-ai-creator-festival-concludes-in-bali-wan30-and-global-creators-explore-the-new-frontier-of-ai-video-generation/2410452">The Manila Times</a></p>',
+            source:      'The Manila Times',
+            publishedAt: '2026.08.24',
+            hue:         50,
+            image:       'https://manilatimes.net/manilatimes/uploads/images/2026/08/23/1186811.jpg',
+            url:         'https://www.manilatimes.net/2026/08/23/tmt-newswire/plentisoft/2026-ai-creator-festival-concludes-in-bali-wan30-and-global-creators-explore-the-new-frontier-of-ai-video-generation/2410452',
+        },
+        {
             id:          'art-3181bcf4-2026-08',
             tab:         'art',
             headline:    '\'내 직업의 무덤을 파고 있다\' — AI 훈련에 참여하는 할리우드 창작자들',
