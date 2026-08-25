@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-f4069d0d-2026-08',
+            tab:         'games',
+            headline:    '게임·CG 제작자를 위한 이번 주 AI 소프트웨어 업데이트 총정리 (8월 23일 기준)',
+            summary:     'Meshy 7, Slapshot ComfyUI 노드, Topaz Hyperion 2.5 등 게임·CG 아티스트용 AI 도구 업데이트가 한꺼번에 공개됐어요.',
+            body:        '<p>이번 주 게임·CG 제작자를 위한 AI 소프트웨어 업데이트가 한꺼번에 공개됐어요. Topaz Labs의 SDR-to-HDR 변환 AI 모델 Hyperion 2.5는 색상 처리, 색조 분리, 하이라이트 디테일을 크게 개선했고, Meshy 7은 소스 이미지로부터 생성하는 3D 모델의 전체 비율, 파츠 위치 정확도, 표면 디테일 보존 품질을 대폭 향상시켰어요. 3D 가우시안 스플래팅 앱 Postshot도 1.1.69 버전에서 HTML·SPZ 내보내기 옵션 추가, GPS 지오로케이션 메타데이터 지원 등 워크플로 개선이 이루어졌어요.</p><p>가장 주목되는 업데이트는 AI 기반 VFX 플랫폼 Slapshot의 ComfyUI 노드 통합이에요. 자동 로토스코핑, 카메라 트래킹, 모션 벡터·뎁스 맵 생성 등 Slapshot의 핵심 기능이 이제 ComfyUI 노드로 사용 가능해졌어요. 덕분에 기존 ComfyUI 파이프라인에 Slapshot의 고급 VFX 기능을 바로 연결할 수 있게 됐는데, ComfyUI 노드 처리 비용은 처리된 영상 프레임당 0.25달러예요. 한 주 만에 여러 실용적인 AI 도구가 동시에 업데이트된 만큼, 게임·CG 아트 파이프라인에 바로 적용할 수 있는 선택지가 더욱 풍부해졌어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/08/new-cg-software-you-may-have-missed-23-august-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.08.25',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/08/260823_CGSoftwareYouMayHaveMissed23August2026_SlapshotComfyNodes_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/08/new-cg-software-you-may-have-missed-23-august-2026/',
+            urls: [
+                { label: '보도자료', href: 'https://www.prnewswire.com/news-releases/meshy-releases-meshy-7-a-new-foundation-model-that-sets-a-new-bar-for-image-3d-alignment-302849368.html' },
+                { label: '깃허브', href: 'https://github.com/Comfy-Org/Comfy-Desktop?tab=readme-ov-file' },
+            ],
+        },
+        {
+            id:          'games-ffcec0eb-2026-08',
+            tab:         'games',
+            headline:    '공간 스트리밍 기술로 3D 에셋 활용 가능성이 넓어지다 — Miris CTO 인터뷰',
+            summary:     'Miris CTO가 AI·HPC 결합 공간 스트리밍으로 로컬 GPU 성능 제한 없이 3D 에셋을 클라우드에서 실시간 스트리밍하는 기술을 소개했어요.',
+            body:        '<p>Miris의 CTO 숀 루퍼(Sean Rufer)가 AI와 HPC(고성능 컴퓨팅)를 결합한 공간 스트리밍 기술이 3D 에셋 활용 방식을 어떻게 바꿀 수 있는지 상세히 설명했어요. 이 기술의 핵심은 사용자의 로컬 GPU 성능에 전혀 구애받지 않고, 클라우드에서 고품질 3D 에셋을 실시간으로 렌더링한 뒤 바로 스트리밍하는 방식이에요. 개인 인디 개발자부터 대형 스튜디오까지 동일한 품질로 고사양 3D 에셋을 다룰 수 있다는 점에서 접근성이 크게 높아지게 돼요.</p><p>게임 아트 팀 관점에서 이 기술이 파이프라인에 가져올 변화는 주목할 만해요. 지금까지는 복잡한 에셋을 로컬에서 실시간으로 다루려면 고사양 워크스테이션이 필수였지만, 공간 스트리밍이 도입되면 작업자의 기기 사양에 관계없이 일관된 품질로 에셋을 확인하고 편집할 수 있어요. 이는 팀 내 하드웨어 격차 문제를 줄이고, 협업 효율을 높이는 데도 긍정적인 영향을 미칠 것으로 기대돼요. 클라우드 기반 렌더링의 비용 구조와 레이턴시 과제가 앞으로 해결해야 할 부분이지만, 기술의 방향성 자체는 3D 아트 제작 환경을 크게 바꿀 가능성을 보여주고 있어요.</p><p>원문: <a href="https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-for-3d-assets/">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.08.25',
+            hue:         200,
+            url:         'https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-for-3d-assets/',
+        },
+        {
             id:          'games-537bd1a2-2026-08',
             tab:         'games',
             headline:    '엘스랜드, AI로 제작한 게임 20종 공개 — 풀 프로덕션 AI 파이프라인 실증',
@@ -1818,6 +1845,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-792e782b-2026-08',
+            tab:         'industry',
+            headline:    '개발자 90%가 AI 활용 중 — Google Cloud 설문이 밝힌 게임 개발 현장의 AI 침투율',
+            summary:     'Google Cloud·Harris Poll 조사에서 게임 개발자 615명 중 90%가 이미 AI를 업무에 통합해 사용하고 있다고 밝혔어요.',
+            body:        '<p>Google Cloud가 Harris Poll에 의뢰해 미국·한국·노르웨이·핀란드·스웨덴의 게임 개발자 615명을 대상으로 실시한 설문 결과가 독일 쾰른의 게임 개발자 행사 devcom에서 공개됐어요. 응답자의 90%가 이미 AI를 업무 워크플로에 통합해 사용 중이며, 97%는 생성형 AI가 업계 전체를 재편하고 있다고 답했어요. 활용 분야 1위는 플레이테스팅·밸런싱(47%)이었고, 로컬라이제이션·번역(45%), 코드 생성·스크립팅(44%)이 뒤를 이었어요. 개발자의 95%는 AI 덕분에 반복적인 단순 작업이 줄어들었다고 응답했어요.</p><p>AI 도입의 이면에는 우려도 공존해요. 개발자의 63%가 AI 애플리케이션에서의 데이터 소유권 문제를 우려했고, 35%는 플레이어 데이터 프라이버시를, 32%는 AI 생성 콘텐츠의 저작권 귀속을 걱정했어요. 한편 AI 도입이 인디 스튜디오의 경쟁력을 높일 수 있다는 시각도 있어서, 응답자의 29%는 AI가 소규모 팀이 대형 스튜디오와 경쟁할 수 있게 해줄 것이라고 봤어요. 현장 전문가들은 소규모 파일럿 테스트를 먼저 진행하고, AI 도입 방향을 창작 비전과 맞춰 나가는 방식을 권고하고 있어요.</p><p>원문: <a href="https://northeasttimes.com/2026/08/24/ai-is-rewriting-how-video-games-get-made-and-fast/">Northeast Times</a></p>',
+            source:      'Northeast Times',
+            publishedAt: '2026.08.25',
+            hue:         30,
+            image:       'https://media.northeasttimes.com/uploads/2026/08/ai-is-rewriting-how-video-games-get-made-and-fast-1024x558.png',
+            url:         'https://northeasttimes.com/2026/08/24/ai-is-rewriting-how-video-games-get-made-and-fast/',
+        },
+        {
             id:          'industry-73b8dad5-2026-08',
             tab:         'industry',
             headline:    'Tencent Games Brings Major Lineup To Gamescom 2026',
@@ -3135,6 +3174,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-52611836-2026-08',
+            tab:         'art',
+            headline:    'Autodesk Flow Studio, AI 영상 생성과 3D를 결합한 새 편집 툴 공개',
+            summary:     'Autodesk Flow Studio가 3D 장면 연출과 AI 기반 2D 영상 생성을 하나의 인터페이스에서 다루는 \'3D Editor + Canvas\' 툴을 발표했어요.',
+            body:        '<p>Autodesk Flow Studio가 3D 장면 구성과 AI 기반 2D 영상 생성을 하나의 워크플로에서 다룰 수 있는 \'3D Editor + Canvas\' 툴을 공개했어요. Wonder Dynamics 공동창업자이자 현 Autodesk 소속인 니콜라 토도로비치(Nikola Todorovic)가 개발을 이끌었으며, 3~5인 소규모 팀부터 대형 스튜디오까지 모두 대응하도록 설계됐어요. 3D Editor에서 카메라 배치, 배우 블로킹, 모션 캡처 데이터, 환경 구성을 마친 뒤 Canvas의 노드 기반 2D 환경으로 넘겨 AI 모델이 조명·분위기·시네마틱 마감을 더하는 방식이에요.</p><p>이 툴의 핵심 철학은 \'프롬프트 전에 연출\'이에요. 토도로비치는 생성형 AI의 \'80/20 법칙\'을 설명했는데, AI가 결과물의 80%는 빠르게 만들어내지만 나머지 20%—정확한 카메라 움직임, 특정 퍼포먼스, 세밀한 구도—를 수정하는 과정에서 프롬프트만으로는 예측 불가능한 결과가 나오는 문제가 있어요. 3D Editor가 이 간극을 메워주는 역할을 해요. World Labs의 Marble로 만든 가우시안 스플래팅 환경도 레이아웃·카메라 설계에 활용할 수 있어서, 영화·광고 프리비즈와 버추얼 프로덕션 워크플로를 크게 단축할 것으로 기대돼요.</p><p>원문: <a href="https://www.fxguide.com/fxpodcasts/nikola-todorovic-on-autodesk-flow-studios-new-3d-editor-canvas/">fxguide</a></p>',
+            source:      'fxguide',
+            publishedAt: '2026.08.25',
+            hue:         290,
+            image:       'https://www.fxguide.com/wp-content/uploads/2026/08/fxg-featured-Flow.jpg',
+            url:         'https://www.fxguide.com/fxpodcasts/nikola-todorovic-on-autodesk-flow-studios-new-3d-editor-canvas/',
+        },
         {
             id:          'art-2001da48-2026-08',
             tab:         'art',
