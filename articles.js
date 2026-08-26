@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-cd0b1f6e-2026-08',
+            tab:         'games',
+            headline:    'NVIDIA, 게임스컴 2026서 DLSS 4.5·RTX Remix·ACE 등 차세대 PC 게임 기술 공개',
+            summary:     'NVIDIA가 게임스컴 2026에서 DLSS 4.5·RTX Spark 등 차세대 PC 게임 기술을 대거 공개했어요.',
+            body:        '<p>NVIDIA가 독일 쾰른에서 열린 게임스컴 2026에서 차세대 PC 게임 플랫폼 RTX Spark와 함께 다양한 핵심 기술을 발표했어요. 2세대 트랜스포머 모델을 탑재한 DLSS 4.5 레이 재구성이 출시되어 패스 트레이싱 콘텐츠의 이미지 품질이 한층 향상됐으며, EA·유비소프트·Embark 스튜디오 등 주요 퍼블리셔들이 RTX Spark 지원을 확약했어요. EA의 \'EA SPORTS F1 25\'와 \'Apex Legends\', 유비소프트의 \'Anno 117: Pax Romana\', Embark의 \'ARC Raiders\' 등 인기 타이틀이 RTX Spark에서 원활하게 구동될 예정이에요.</p><p>RTX Remix는 블렌더 지원을 추가하고 \'페인킬러 RTX\' 대규모 모드 업데이트가 공개됐으며 \'더 엘더 스크롤즈 III: 모로윈드 RTX\'도 출시를 앞두고 있어요. NVIDIA ACE AI 동반자 시스템은 2027년 초 Aniimo 게임에 통합될 예정이고, \'CONTROL Resonant\'와 \'007 First Light\'에는 패스 트레이싱이 적용돼요. EA와 협력한 EA Javelin 안티치트도 RTX Spark에 기본 지원되어 공정한 온라인 플레이 환경을 갖출 수 있게 됐어요.</p><p>RTX Spark는 소형 데스크톱과 노트북을 타깃으로 설계된 플랫폼으로 2026년 가을 출시 예정이에요. 개인 AI 에이전트·고급 콘텐츠 창작·고성능 게이밍을 단일 칩 위에서 구현하는 것을 목표로 하며, KRAFTON·넷이즈·라이엇 게임즈·Xbox 등 기존 지원사와 함께 폭넓은 생태계를 구축하고 있어요.</p><p>원문: <a href="https://blogs.nvidia.com/blog/gamescom-rtx-spark-pc-games-technology/">NVIDIA Blog</a></p>',
+            source:      'NVIDIA Blog',
+            publishedAt: '2026.08.26',
+            hue:         220,
+            image:       'https://blogs.nvidia.com/wp-content/uploads/2026/08/Gamescom-RTX-Spark-Key-Visual-1280x720.jpg',
+            url:         'https://blogs.nvidia.com/blog/gamescom-rtx-spark-pc-games-technology/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.nvidia.com/en-us/products/rtx-spark/' },
+            ],
+        },
+        {
             id:          'games-f4069d0d-2026-08',
             tab:         'games',
             headline:    '게임·CG 제작자를 위한 이번 주 AI 소프트웨어 업데이트 총정리 (8월 23일 기준)',
@@ -3174,6 +3189,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9e5acad3-2026-08',
+            tab:         'art',
+            headline:    '스태빌리티 AI, EA·소니·유니버설 등으로부터 7,600만 달러 시리즈 B 투자 유치',
+            summary:     '스태빌리티 AI가 EA·소니·유니버설 등 엔터테인먼트 기업들로부터 7,600만 달러 시리즈 B 투자를 유치했어요.',
+            body:        '<p>이미지 생성 AI \'스테이블 디퓨전\'의 개발사 스태빌리티 AI가 EA, 소니 뮤직, 유니버설 뮤직, 워너 뮤직, AMD 벤처스 등 엔터테인먼트·기술 기업들로부터 7,600만 달러(약 1,040억 원) 규모의 시리즈 B 투자를 유치했어요. 이번 투자로 2019년 창사 이래 스태빌리티 AI의 총 누적 투자액은 2억 3,200만 달러(약 3,170억 원)에 달하게 됐어요. CEO 프렘 아카라주는 이번 투자를 “모든 프로듀서·뮤지션·스토리텔러에게 AI가 힘을 실어주는 비전에 대한 확인”이라고 밝혔어요.</p><p>스태빌리티 AI는 조달된 자금을 음악·영상·이미지 생성 AI 모델 개발과 창작 생산성 소프트웨어, 전문 서비스 부문 확장에 활용할 계획이에요. 특히 EA·유니버설 뮤직 등을 단순 투자자가 아닌 공동 개발 파트너로 참여시킨 것이 이번 라운드의 핵심 특징으로, AI 생성 도구가 콘텐츠 제작 파이프라인에 본격 편입되고 있음을 보여줘요.</p><p>법적 측면에서는 영국 법원이 최근 게티 이미지와의 저작권 소송에서 스태빌리티 AI에 유리한 판결을 내렸으나 미국 소송은 아직 진행 중이에요. 대형 음악·게임사들의 잇따른 투자 참여는 생성 AI 기술이 엔터테인먼트 산업 전반에서 불가분의 파트너로 자리잡아 가고 있다는 신호로 업계는 주목하고 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.08.26',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2024/10/unnamed-2.png?w=1024',
+            url:         'https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/',
+        },
+        {
+            id:          'art-7abe00f7-2026-08',
+            tab:         'art',
+            headline:    '호주 ARIA, AI 전작 음악 차트 진입 금지 — 8월 29일부터 시행',
+            summary:     '호주 ARIA가 완전 AI 생성 음악을 공식 차트에서 제외하는 정책을 8월 29일부터 시행한다.',
+            body:        '<p>호주 음반 산업 협회(ARIA)가 인간의 창작 기여가 전혀 없는 완전 AI 생성 음악을 공식 차트에서 제외하는 새 정책을 8월 29일(금)자 차트부터 적용한다고 발표했어요. \'실질적으로 인간이 만든\' 음악과 AI 활용이 부수적인 음악은 계속 차트에 오를 수 있으나, 리드 보컬이나 핵심 악기 연주가 AI로 생성된 경우에는 제외될 가능성이 높아요. ARIA는 업데이트된 차트 운영 기준에 따라 부적격 음악을 제거하거나 차트 순위를 조정하고 차트 수상을 취소할 권한도 갖게 됐어요.</p><p>이번 결정의 발단은 퀸즐랜드 DJ 조시 파와즈의 마돈나 \'Like a Prayer\' AI 커버곡이 호주 라디오에서 가장 많이 재생된 곡이 되고 ARIA 차트 4위에 오른 사건이에요. 비판이 이어지자 파와즈는 Spotify 트랙 설명에 보컬과 드럼이 AI 생성임을 명시했어요. ARIA의 이번 조치는 국제 음반 산업 연맹(IFPI)이 7월 발표한 원칙을 따른 것으로, 이미 전 세계 20개 이상의 공식 차트 프로그램이 유사한 규정을 도입하고 있어요.</p><p>ARIA CEO 애너벨 허드는 AI 도구 사용 자체는 일반화됐지만 아티스트 음원으로 훈련된 AI가 만든 음악은 별개의 문제라고 강조하며, 라디오 방송국 등 관련 업계에도 동일한 기준 적용을 촉구했어요. 호주 연방 정부도 AI·데이터센터 관련 새 규정에 창작자를 위한 강력한 저작권 보호 조항을 포함시키는 작업을 진행 중이어서 AI 창작물 제도화 논의가 더욱 속도를 낼 것으로 보여요.</p><p>원문: <a href="https://www.abc.net.au/news/2026-08-25/ai-generated-music-to-be-banned-from-aria-charts/107072642">ABC News Australia</a></p>',
+            source:      'ABC News Australia',
+            publishedAt: '2026.08.26',
+            hue:         10,
+            image:       'https://live-production.wcms.abc-cdn.net.au/4305c5850797519cf17b18a4de0148ab',
+            url:         'https://www.abc.net.au/news/2026-08-25/ai-generated-music-to-be-banned-from-aria-charts/107072642',
+        },
         {
             id:          'art-52611836-2026-08',
             tab:         'art',
