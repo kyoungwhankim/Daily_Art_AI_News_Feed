@@ -29,6 +29,22 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-f3318208-2026-08',
+            tab:         'games',
+            headline:    '게임스컴 2026: 엔비디아, DLSS 4.5 출시·RTX Remix 블렌더 연동·RTX Spark 게임 지원 대거 공개',
+            summary:     '엔비디아가 게임스컴 2026에서 DLSS 4.5와 RTX Spark 지원 확대 등 대규모 발표를 쏟아냈어요.',
+            body:        '<p>엔비디아가 게임스컴 2026에서 DLSS 4.5 레이 리컨스트럭션을 정식 출시했어요. 2세대 트랜스포머 모델을 기반으로 하며, 전작보다 연산 성능이 35% 향상되고 약 20% 더 많은 파라미터를 처리해요. 앨런 웨이크 2, 사이버펑크 2077 등 약 30개 게임에서 즉시 사용 가능하고, 기어스 오브 워: E-데이 등 11개 신작 타이틀 지원도 예고됐어요.</p><p>AI 에이전트·창작·게임을 통합한 윈도우 PC 플랫폼 RTX Spark에는 EA, 유비소프트, 엠바크 스튜디오 등이 합류를 확인했어요. RTX Remix는 DLSS 4.5 지원과 블렌더 직접 연동 기능을 추가해 모더들의 워크플로우가 한층 간편해졌고, GeForce NOW도 스팀 머신 지원과 GOG 싱글 사인온을 새롭게 갖췄어요. 엔비디아의 이번 발표로 RTX 생태계가 게임 개발과 소비 전반에 걸쳐 더 넓게 자리 잡을 것으로 기대돼요.</p><p>원문: <a href="https://basic-tutorials.com/news/nvidia-at-gamescom-2026-an-overview-of-all-announcements/">Basic Tutorials</a></p>',
+            source:      'Basic Tutorials',
+            publishedAt: '2026.08.27',
+            hue:         210,
+            image:       'https://blogs.nvidia.com/wp-content/uploads/2026/08/Gamescom-RTX-Spark-Key-Visual.jpg',
+            url:         'https://basic-tutorials.com/news/nvidia-at-gamescom-2026-an-overview-of-all-announcements/',
+            urls: [
+                { label: '공식 발표', href: 'https://blogs.nvidia.com/blog/gamescom-rtx-spark-pc-games-technology/' },
+                { label: 'DLSS 4.5', href: 'https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/' },
+            ],
+        },
+        {
             id:          'games-cd0b1f6e-2026-08',
             tab:         'games',
             headline:    'NVIDIA, 게임스컴 2026서 DLSS 4.5·RTX Remix·ACE 등 차세대 PC 게임 기술 공개',
@@ -1860,6 +1876,45 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-117faf46-2026-08',
+            tab:         'industry',
+            headline:    '"이거 AI 아닌가?" — 게임스컴 ONL, 생성형 AI 논란으로 얼룩',
+            summary:     '게임스컴 2026 오프닝 나이트 라이브에서 공개된 게임들이 생성형 AI 사용 논란에 휩싸였어요.',
+            body:        '<p>게임스컴 2026 오프닝 나이트 라이브(ONL)에 출품된 일부 게임들이 생성형 AI 사용으로 인해 거센 비판을 받고 있어요. 크림슨 데저트, 1666: 암스테르담 등의 개발사는 AI 사용 사실을 인정하고 수정을 약속했고, 세가는 크레이지 택시: 월드 투어의 AI 사용에 사실상 침묵으로 일관했어요. 스팀의 AI 사용 공시 의무 덕분에 프로젝트 제타, 아이온 2 등 여러 타이틀의 AI 활용 사실이 수면 위로 드러났어요.</p><p>호요버스는 자체 AI NPC·영상 제작 툴에 140억 달러를 투자했고, 크래프톤은 \'AI 퍼스트 기업\'을 공식 선언해 업계에 파장을 일으켰어요. 한편 전략 게임 휴먼카인드 2의 실사 트레일러는 AI 슬롭이라는 의혹을 받았고, 개발사 앰플리튜드 스튜디오는 즉각 실제 촬영임을 해명해야 했어요. AI에 대한 팬들의 불신이 극에 달해 정교하게 제작된 진짜 콘텐츠까지 의심받는 역설적인 상황이 연출되고 있어요.</p><p>원문: <a href="https://kotaku.com/opening-night-live-2026-genai-slop-games-geoff-keighley-2000728477">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.08.27',
+            hue:         15,
+            image:       'https://kotaku.com/app/uploads/2026/08/ai-gamescom-games-1200x675.jpg',
+            url:         'https://kotaku.com/opening-night-live-2026-genai-slop-games-geoff-keighley-2000728477',
+        },
+        {
+            id:          'industry-0df54c94-2026-08',
+            tab:         'industry',
+            headline:    '《휴먼카인드 2》 개발진 "AI 슬롭 아냐" — 실제 배우·세트·소품으로 촬영한 트레일러',
+            summary:     '앰플리튜드 스튜디오가 게임스컴 2026에서 공개한 《휴먼카인드 2》 트레일러가 AI 슬롭이라는 의혹을 받아 즉각 해명했어요.',
+            body:        '<p>게임스컴 2026 오프닝 나이트 라이브에서 공개된 《휴먼카인드 2》 라이브액션 트레일러가 생성형 AI를 사용한 영상이 아니냐는 의혹에 휩싸였어요. 팬들은 소셜미디어에서 영상 내 특정 장면을 AI 생성물로 지목하며 비판을 쏟아냈고, 개발사 앰플리튜드 스튜디오는 즉각 X(트위터)를 통해 공식 해명에 나섰어요.</p><p>앰플리튜드는 "해당 트레일러는 불가리아 소피아의 누 보야나 필름 스튜디오에서 실제 배우, 실물 세트, 수제 소품으로 촬영했다"고 밝히며 촬영 현장 사진도 곧 공개하겠다고 약속했어요. 스팀 페이지에 AI 사용 공시가 없다는 점도 개발진 주장을 뒷받침하지만, 일부 팬들은 여전히 반신반의하는 분위기예요. 이번 사건은 생성형 AI 슬롭에 대한 피로감이 극에 달해 진짜 실사 제작물조차 의심받는 업계 현실을 단적으로 보여줘요.</p><p>원문: <a href="https://www.gamesradar.com/games/strategy/humankind-2-devs-respond-to-ai-slop-accusations-assure-fans-its-new-gamescom-trailer-features-real-actors-practical-sets-and-custom-made-props/">GamesRadar+</a></p>',
+            source:      'GamesRadar+',
+            publishedAt: '2026.08.27',
+            hue:         30,
+            image:       'https://cdn.mos.cms.futurecdn.net/kXohc6KdvhDoDVL2nGynUa-1920-80.jpg',
+            url:         'https://www.gamesradar.com/games/strategy/humankind-2-devs-respond-to-ai-slop-accusations-assure-fans-its-new-gamescom-trailer-features-real-actors-practical-sets-and-custom-made-props/',
+            urls: [
+                { label: '스팀 페이지', href: 'https://store.steampowered.com/app/2581850/HUMANKIND_2/' },
+            ],
+        },
+        {
+            id:          'industry-edb1aa16-2026-08',
+            tab:         'industry',
+            headline:    '《탈로스 원칙 3》 작가들 "AI는 표절 기계, 일자리를 빼앗는다"',
+            summary:     '《탈로스 원칙 3》의 요나스·베레나 키라체스 부부가 생성형 AI를 \'표절 기계\'로 규정하며 업계의 AI 도입에 반대 입장을 밝혔어요.',
+            body:        '<p>크로팀의 《탈로스 원칙 3》 나레이티브 디자이너 요나스 키라체스가 게임 인포머와의 인터뷰에서 AI를 강하게 비판했어요. 그는 현재의 LLM 기반 AI를 \'지능형 자동완성\'이자 \'표절 기계\'로 정의하며, 기업들이 AI를 창의적 활용 대신 단기 수익 극대화 도구로만 쓰고 있다고 꼬집었어요. 머신러닝 기술 자체는 흥미로운 응용 가능성이 있지만, 과장된 홍보와 주가 부양 수단으로 전락한 현실이 문제라고 지적했어요.</p><p>그의 아내이자 공동 작가인 베레나 키라체스도 같은 입장을 공유했어요. 이들은 라리안 수석 작가가 AI 텍스트를 \'10점 만점에 3점\'이라 평가하고, 테이크-투 CEO가 \'AI 클론은 팔리지 않는다\'고 말하는 등 업계 유수 크리에이터들이 반복해서 같은 설명을 해야 하는 현실 자체가 씁쓸하다고 비판했어요. 생성형 AI 열풍 속에서도 인간 창작의 가치를 옹호하는 목소리가 꾸준히 이어지고 있어요.</p><p>원문: <a href="https://www.pcgamer.com/games/puzzle/ai-is-just-a-plagiarism-machine-that-makes-people-lose-their-jobs-in-the-eyes-of-the-talos-principle-3s-writers/">PC Gamer</a></p>',
+            source:      'PC Gamer',
+            publishedAt: '2026.08.27',
+            hue:         350,
+            image:       'https://cdn.mos.cms.futurecdn.net/NFEPao6FVuVLkJe6ieAzYo-1920-80.jpg',
+            url:         'https://www.pcgamer.com/games/puzzle/ai-is-just-a-plagiarism-machine-that-makes-people-lose-their-jobs-in-the-eyes-of-the-talos-principle-3s-writers/',
+        },
+        {
             id:          'industry-792e782b-2026-08',
             tab:         'industry',
             headline:    '개발자 90%가 AI 활용 중 — Google Cloud 설문이 밝힌 게임 개발 현장의 AI 침투율',
@@ -3189,6 +3244,21 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-2d1ad06f-2026-08',
+            tab:         'art',
+            headline:    '애플 맥 미니 광고 "AI 아니에요" — 메이킹 영상으로 직접 증명한 인간 제작',
+            summary:     '애플의 신규 맥 미니 스톱모션 광고가 AI 의혹을 받자, 제작팀이 클레이 애니메이션 메이킹 영상을 공개해 인간 창작임을 증명했어요.',
+            body:        '<p>애플이 신형 맥 미니(M6) 소개 광고로 스톱모션 클레이 애니메이션 영상을 공개했는데, 소셜미디어에서 AI 생성 영상 아니냐는 의혹이 쏟아졌어요. 이에 애플과 제작팀은 즉각 BTS(비하인드 신) 영상을 공개해, 애니메이터들이 직접 점토를 빚고 색칠하는 과정을 보여주며 의혹을 일축했어요. 애니메이터 저스틴 다쉬는 "맥 미니의 성능과 속도를 표현하기 위해 로켓, 레이싱카, 근육맨, 복잡한 로봇 등 다양한 캐릭터를 만들었다"고 설명했어요.</p><p>이번 광고는 과거 아이패드 프로 광고가 악기와 붓 등을 으스러뜨려 창작자들의 반발을 산 것과 달리, 기술이 인간 창의성을 대체가 아닌 가능케 하는 도구임을 보여줘 창작자들의 호평을 받았어요. AI 슬롭에 대한 피로감이 극에 달한 시대에, 정교한 수작업 광고조차 AI 의혹을 받는 역설적 상황이 펼쳐지고 있어요. 인간 제작임을 적극적으로 증명해야 하는 새로운 창작 부담이 업계 전반에 걸쳐 생겨나고 있어요.</p><p>원문: <a href="https://www.creativebloq.com/design/advertising/nope-the-new-apple-ad-isnt-ai-and-theres-a-bts-video-to-prove-it">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.08.27',
+            hue:         270,
+            image:       'https://cdn.mos.cms.futurecdn.net/iM8XZECQkQHHURvdjHpBnY-1857-80.jpg',
+            url:         'https://www.creativebloq.com/design/advertising/nope-the-new-apple-ad-isnt-ai-and-theres-a-bts-video-to-prove-it',
+            urls: [
+                { label: '영상', href: 'https://youtu.be/3WpzNmY35S4' },
+            ],
+        },
         {
             id:          'art-9e5acad3-2026-08',
             tab:         'art',
