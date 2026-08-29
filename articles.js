@@ -29,6 +29,37 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-c7238555-2026-08',
+            tab:         'games',
+            headline:    'Tripo, 게임 제작을 위한 클린 토폴로지 3D 에셋 파이프라인 공개',
+            summary:     'Tripo AI가 단일 이미지에서 5초 만에 게임 레디 3D 에셋을 생성하는 Smart Mesh를 공개했어요.',
+            body:        '<p>Tripo AI의 공동 창업자 겸 수석 과학자 Dr. Yanpei Cao가 SIGGRAPH 논문 Nexus를 기반으로 한 Smart Mesh 기술을 공개했어요. 이 기술은 단일 이미지 입력으로 5초 이내에 게임 레디 3D 에셋을 생성하며, 기존 AI 생성 모델의 고질적 문제인 \'지저분한 폴리곤 수프(messy polygon soup)\'를 극복하고 깔끔한 엣지 플로우와 조절 가능한 폴리곤 예산을 갖춘 에셋을 제공해요. 아티스트는 이제 AI가 만들어준 메쉬를 손으로 수정하는 지루한 클린업 작업 없이 바로 다음 작업을 이어갈 수 있어요.</p><p>Smart Mesh 에셋은 Blender, Maya, Unity 등 주요 DCC 소프트웨어와 직접 연결되어 프로덕션 파이프라인에 즉시 투입할 수 있어요. 게임 개발자는 이제 수십 가지 방향을 동시에 시도하고 단 몇 초 안에 결과를 비교하며 최선의 방향을 선택할 수 있어, 디자인 반복 속도가 획기적으로 빨라졌어요. Dr. Cao는 \'AI가 초기 모델링을 담당하고 아티스트가 창작 방향을 결정하는 협업 구조\'를 Tripo의 핵심 방향성으로 제시했으며, 현재 바운딩 박스 제어, 비율 제어, 기존 에셋을 리마스터하는 3D-to-3D 입력 방식도 추가 개발 중이에요.</p><p>원문: <a href="https://80.lv/articles/how-tripo-is-tackling-clean-topology-for-its-3d-asset-pipeline">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.08.29',
+            hue:         200,
+            image:       'https://cdn.80.lv/api/upload/meta/49865/images/6a8caa21e033b/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/how-tripo-is-tackling-clean-topology-for-its-3d-asset-pipeline',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.tripo3d.ai' },
+            ],
+        },
+        {
+            id:          'games-13b678ef-2026-08',
+            tab:         'games',
+            headline:    'NVIDIA DLSS 5 AI 신경 렌더링 유출 — 게임 캐릭터 외형이 AI로 바뀐다',
+            summary:     'NBA 2K27에서 유출된 NVIDIA DLSS 5 파일을 모더들이 여러 게임에 적용해 AI 필터의 논란스러운 효과를 드러냈어요.',
+            body:        '<p>NBA 2K27 얼리 액세스 빌드에서 NVIDIA DLSS 5의 신경 렌더링(Neural Rendering) DLL 파일이 유출됐어요. 모더들은 이 파일을 Control, Final Fantasy 7 Rebirth, Skyrim 등 다양한 게임에 적용해 봤는데, AI 필터가 캐릭터 피부를 과도하게 매끄럽게 만들고 눈을 더 크게 변형하는 \'유미화(yassification)\' 효과를 일으키는 것으로 나타났어요. 게이머들은 결과물을 두고 \'불쾌할 정도로 끔찍하다\', \'기괴하다\'는 반응을 보였으며, 렌더링 엔지니어들도 \'원작 아티스트의 의도를 벗어난 과도한 에어브러시 효과\'라고 비판했어요.</p><p>DLSS 5의 신경 렌더링은 AI가 최종 렌더링 단계에 개입해 조명, 반사, 재질을 추가 처리하는 방식으로, NVIDIA는 이를 통해 더 정교한 포토리얼리즘을 구현할 수 있다고 홍보해왔어요. 그러나 이번 유출에서 드러났듯이, 개발사가 DLSS 5를 염두에 두고 에셋과 재질을 조정하지 않은 상태에서는 원작자의 아트 의도와 크게 어긋난 결과가 나올 수 있어요. DLSS 5 공식 출시는 2026년 가을로 예정되어 있으며, 정식 출시 시에는 개발사와의 사전 협력을 통해 이런 문제를 보완할 것으로 기대돼요.</p><p>원문: <a href="https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.08.29',
+            hue:         340,
+            image:       'https://ml.globenewswire.com/media/83b417e4-9020-4a2f-afff-e3c482bbd300/medium/nvidia-dlss-5.jpeg',
+            url:         'https://www.creativebloq.com/3d/unsettling-nvidias-dlss-5-controversial-ai-filter-has-leaked-and-gamers-are-horrified',
+            urls: [
+                { label: 'Kotaku 분석', href: 'https://kotaku.com/experimental-build-of-nvidias-dlss-5-ai-slop-filter-leaks-and-makes-beloved-video-game-characters-look-like-complete-weirdos-2000729289' },
+                { label: 'VGC 보도', href: 'https://www.videogameschronicle.com/news/this-is-horrifying-nvidias-controversial-dlss-5-ai-filter-leaks-and-layers-are-inserting-it-into-every-game/' },
+            ],
+        },
+        {
             id:          'games-544f829b-2026-08',
             tab:         'games',
             headline:    '텐센트, Gamescom 2026에서 AI 캐릭터 애니메이션·그래픽 풀파이프라인 도구 공개',
@@ -1891,6 +1922,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-3c04382f-2026-08',
+            tab:         'industry',
+            headline:    'Gamescom 2026으로 보는 게임 스튜디오 AI 도입 5가지 트렌드',
+            summary:     'Gamescom 2026에서 AI가 스튜디오 전략의 핵심으로 자리잡은 동시에, 도입 방식은 스튜디오마다 크게 엇갈렸어요.',
+            body:        '<p>Pocket Gamer가 Gamescom 2026에서 확인한 게임 스튜디오 AI 도입 트렌드를 정리했어요. NC Mobile SVP는 AI를 미래 사업 계획의 핵심으로 명시했고, Modern Times Group CEO는 \'AI 덕분에 콘텐츠 품질과 생산량이 동시에 올라갔다\'고 밝혔어요. 온디바이스 AI 처리(기기 내 AI 연산)가 새로운 트렌드로 부상하고 있으며, Apple과 Google 역시 개발자를 대상으로 적극적인 AI 솔루션 마케팅에 나섰어요.</p><p>반면 중국 스튜디오 Hypergryph의 〈Arknights: Endfield〉는 \'AI를 거의 사용하지 않는다\'고 공식 발표해 주목받았어요. 이는 업계 전반의 AI 도입이 일률적이지 않다는 것을 보여주는 사례예요. 이번 행사는 나이지리아, 모로코, UAE 등 신흥 시장의 첫 공식 참가와 함께 역대 가장 글로벌한 규모를 기록했어요. Xbox, EA, CD Projekt 등 서방 대형 퍼블리셔와 중국·아시아 스튜디오가 고르게 참여하며 게임 산업의 지형이 더욱 다양해지고 있음을 확인할 수 있었어요.</p><p>원문: <a href="https://www.pocketgamer.biz/5-takeaways-from-gamescom-2026/">Pocket Gamer</a></p>',
+            source:      'Pocket Gamer',
+            publishedAt: '2026.08.29',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/141021/89735/gamescom-2026-11_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/5-takeaways-from-gamescom-2026/',
+        },
+        {
+            id:          'industry-8c1dfe31-2026-08',
+            tab:         'industry',
+            headline:    'Gamescom ONL 게임 4개 중 1개가 생성형 AI 사용 — 업계 우려 목소리 높아져',
+            summary:     'Gamescom 2026 오프닝 나이트 라이브 출품작 55개 중 13개 이상이 생성형 AI를 사용했다는 분석이 나와 비판이 거세지고 있어요.',
+            body:        '<p>Game Developer 분석에 따르면 Gamescom 2026 오프닝 나이트 라이브(ONL)에 출품된 55개 게임 중 13개 이상이 개발 또는 마케팅에 생성형 AI를 사용한 것으로 드러났어요. 이는 출품작 4개 중 1개꼴로, 게임 개발자 커뮤니티에서 비판의 목소리가 높아지고 있어요. AI 사용을 공개하지 않다가 출시 후 플레이어가 워터마크가 남은 에셋이나 텍스트를 발견하는 사례가 반복되고 있다는 점도 지적됐어요.</p><p>Game Developer는 이런 현상이 아티스트의 순수한 창작 의도를 대체하며 업계에 \'부식 효과(corrosive effect)\'를 일으킨다고 분석했어요. 쇼 운영사가 AI 사용 기준을 명확히 제시하지 않는 배경에는 60초 광고 슬롯이 약 12만 달러에 달하는 재정적 유인이 있다는 지적도 나왔어요. BCG 연구에 따르면 실제 AI 활용 비율은 50%에 달할 수 있어, 공개된 수치보다 훨씬 많은 스튜디오가 AI를 비공개로 활용하고 있을 가능성이 제기되고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/panic-refunds-tariff-fees-1047-games-pivots-from-splitgate-and-gamescom-dev-grows-patch-notes-67">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.08.29',
+            hue:         10,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7ecaf49e4aad5de2/6a905d46db527eb74aec34d3/Patch_Notes_Template_White_(1)(1).png',
+            url:         'https://www.gamedeveloper.com/business/panic-refunds-tariff-fees-1047-games-pivots-from-splitgate-and-gamescom-dev-grows-patch-notes-67',
+        },
+        {
             id:          'industry-38b80fe9-2026-08',
             tab:         'industry',
             headline:    'Gamescom ONL 2026, 공개된 게임 넷 중 하나꼴로 AI 활용 — 업계 실제 사용률은 더 높을 듯',
@@ -3283,6 +3338,32 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-85bffcb2-2026-08',
+            tab:         'art',
+            headline:    'Midjourney, V8.2 전용 편집 모델 출시 — 이미지 수정·인페인팅·아웃페인팅 지원',
+            summary:     'Midjourney가 텍스트 지시로 이미지를 직접 편집하고 인페인팅·아웃페인팅을 지원하는 V8.2 전용 편집 모델을 공개했어요.',
+            body:        '<p>Midjourney가 V8.2 전용 이미지 편집 모델을 커뮤니티 테스트용으로 출시했어요. 이 모델은 텍스트 지시만으로 이미지를 수정할 수 있으며, 최대 4개의 레퍼런스 이미지를 동시에 활용해 원하는 방향으로 이미지를 생성하는 기능도 제공해요. 기존의 옴니레퍼런스 기능을 대체하는 통합 편집 도구로, 특정 영역만 수정하는 인페인팅과 캔버스를 확장하는 아웃페인팅도 지원해요.</p><p>이 편집 모델은 개인화 설정, 무드보드, 스타일 레퍼런스(sref)와 연동되어 기존 Midjourney 워크플로우와 자연스럽게 통합돼요. Discord에서 \'--edit\' 명령어를 입력하거나, 라이트박스 편집 버튼을 클릭하거나, 드래그 앤 드롭으로 이미지를 첨부하는 등 다양한 방식으로 이용할 수 있어요. Midjourney는 이번 출시가 커뮤니티 테스트 단계임을 밝히며 사용자들의 피드백을 통해 UI와 기능을 빠르게 개선해 나갈 계획이에요. 향후 업데이트도 빠르게 이루어질 예정으로, 이미지 창작의 유연성이 한층 높아질 전망이에요.</p><p>원문: <a href="https://updates.midjourney.com/edit-model-for-v8/">Midjourney</a></p>',
+            source:      'Midjourney',
+            publishedAt: '2026.08.29',
+            hue:         290,
+            url:         'https://updates.midjourney.com/edit-model-for-v8/',
+        },
+        {
+            id:          'art-7b649778-2026-08',
+            tab:         'art',
+            headline:    'Google Flow, Gemini Omni 1.1 Flash 탑재로 AI 영상 제작 크리에이티브 컨트롤 강화',
+            summary:     'Google Flow가 Gemini Omni 1.1 Flash를 탑재해 시작·종료 프레임 지정, 1080p/4K 내보내기, 드래프트 모드 등 새 기능을 추가했어요.',
+            body:        '<p>Google Flow가 Gemini Omni 1.1 Flash 모델을 탑재하며 영상 제작 기능을 크게 업그레이드했어요. 시작 프레임과 종료 프레임을 직접 지정해 캐릭터와 내러티브의 일관성을 유지할 수 있게 됐고, 최대 40초 길이의 씬 확장 기능도 추가됐어요. 씬 확장 시 앞서 생성된 영상의 최대 10초를 분석해 자연스러운 연결을 보장해줘요. 1080p 및 4K 고화질 내보내기도 지원해 방송·디지털 편집 워크플로우에 바로 활용할 수 있어요.</p><p>새로 도입된 360p 드래프트 모드는 표준 렌더링 대비 60% 빠르고 비용도 3분의 1 수준으로, 개념 검증과 구도 테스트를 부담 없이 진행할 수 있어요. 마음에 드는 클립이 나오면 720p로 바로 업스케일해 최종 결과물을 얻을 수 있어, 컨셉 검증부터 프로덕션급 결과물까지 하나의 워크플로우로 완성돼요. 최대 3초 분량의 영상 레퍼런스를 입력해 캐릭터 외형을 일관되게 유지하는 기능도 추가됐어요. 이번 업데이트로 Google Flow는 단순한 AI 영상 생성 도구를 넘어 크리에이터를 위한 종합 영상 제작 플랫폼으로 도약하고 있어요.</p><p>원문: <a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/">Google Labs</a></p>',
+            source:      'Google Labs',
+            publishedAt: '2026.08.29',
+            hue:         200,
+            image:       'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FlowOmni_social.max-1440x810.png',
+            url:         'https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/',
+            urls: [
+                { label: 'Gemini API', href: 'https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/' },
+            ],
+        },
         {
             id:          'art-7c6590e6-2026-08',
             tab:         'art',
