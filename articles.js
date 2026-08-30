@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-80eeb9a9-2026-08',
+            tab:         'games',
+            headline:    'NBA 2K27서 유출된 NVIDIA DLSS 5 뉴럴 렌더링 DLL, 모더들이 여러 게임에 적용',
+            summary:     'NBA 2K27 얼리 액세스에서 유출된 DLSS 5 DLL을 모더들이 Control, Skyrim 등에 성공적으로 적용했습니다.',
+            body:        '<p>NBA 2K27 얼리 액세스 클라이언트에서 NVIDIA의 미공개 DLSS 5 뉴럴 렌더링 라이브러리(nvngx_dlssnr.dll, 158MB, 버전 310.8.0.0)가 발견돼 큰 화제가 되고 있어요. 모더들은 이 파일을 추출해 Control, Skyrim 등 기존 타이틀에 직접 적용하는 데 성공했으며, 관련 영상이 온라인에 빠르게 퍼졌습니다. 이미 NVIDIA와 NDA를 체결한 리뷰어들은 전체 리뷰를 완성해 엠바고 해제를 기다리는 상태라고 밝혔는데, 전문가들은 해당 DLL이 얼리 빌드가 아닌 최종 출시 버전에 가까운 완성물로 보고 있어요.</p><p>DLSS 5 뉴럴 렌더링은 기존 업스케일링 방식을 넘어 AI가 게임의 조명과 재질을 통째로 재해석해 영상을 변환하는 기술입니다. Control 등 일부 게임에서는 시각적 품질 향상이 뚜렷하게 나타났다는 평가를 받았어요. 다만 RTX 5070 Ti 기준 4K 해상도에서 프레임레이트가 71 FPS에서 35 FPS로 절반 수준까지 하락하는 심각한 성능 저하가 확인됐고, 캐릭터 얼굴 렌더링에 왜곡 현상이 발생해 논란이 되고 있습니다. 공식 출시는 2026년 가을로 예상되며, 미디어 엠바고 해제도 수 주 내로 이뤄질 전망이에요.</p><p>원문: <a href="https://www.aroged.com/2026/08/29/leaked-version-of-dlss-5-filter-most-likely-not-an-early-version-but-a-release-version-heres-what-bloggers-have-in-their-hands/">Aroged</a></p>',
+            source:      'Aroged',
+            publishedAt: '2026.08.30',
+            hue:         220,
+            image:       'https://www.aroged.com/wp-content/uploads/2026/08/Leaked-version-of-DLSS-5-filter-most-likely-not-an.jpg',
+            url:         'https://www.aroged.com/2026/08/29/leaked-version-of-dlss-5-filter-most-likely-not-an-early-version-but-a-release-version-heres-what-bloggers-have-in-their-hands/',
+            urls: [
+                { label: '공식 발표', href: 'https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/' },
+            ],
+        },
+        {
             id:          'games-c7238555-2026-08',
             tab:         'games',
             headline:    'Tripo, 게임 제작을 위한 클린 토폴로지 3D 에셋 파이프라인 공개',
@@ -3338,6 +3353,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9335340b-2026-08',
+            tab:         'art',
+            headline:    '소니 뮤직·워너 채펠, Anthropic 상대로 대규모 저작권 침해 소송 제기',
+            summary:     '소니 뮤직과 워너 채펠이 Anthropic의 AI 학습 데이터 불법 수집을 이유로 미국 연방법원에 소송을 제기했습니다.',
+            body:        '<p>소니 뮤직 퍼블리싱과 워너 채펠이 Anthropic 및 공동창업자 다리오 아모데이, 벤저민 만을 상대로 캘리포니아 북부 연방지방법원에 저작권 침해 소송을 제기했어요. 원고 측은 Anthropic이 Claude AI 모델을 학습시키기 위해 저작권이 있는 음악 가사와 악보를 포함한 수백만 건의 자료를 \'노골적인 불법 복제\' 방식으로 수집했다고 주장합니다. 특히 소장은 Anthropic이 토렌트를 이용해 저작권 서적과 음악 콘텐츠를 무단 다운로드하는 방식을 사용했다고 구체적으로 명시하고 있어요.</p><p>이번 소송은 Anthropic이 연루된 일련의 지식재산권 분쟁 중 하나로, 2026년 1월 Concord Music Group·Universal Music Group의 소송에 이은 추가 법적 도전입니다. 앞서 작가들이 제기한 Bartz v. Anthropic 소송에서는 법원이 저작물을 AI 학습에 사용하는 것 자체는 합법일 수 있지만, 저작물을 불법 복제로 취득하는 행위는 위법이라고 판단해 약 15억 달러 규모의 합의가 이뤄진 바 있어요. Anthropic 측은 원고의 주장에 동의하지 않으며 법원에서 적극 방어하겠다는 입장을 밝혔습니다.</p><p>원문: <a href="https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.08.30',
+            hue:         10,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-1.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/',
+        },
+        {
+            id:          'art-276a9e91-2026-08',
+            tab:         'art',
+            headline:    'EDM 아티스트들, AI 생성 \'가짜 트랙\' 추적에 직접 나서 — 스트리밍 업로드의 절반이 AI 생성물',
+            summary:     'EDM 프로듀서들이 AI가 생성한 가짜 음악 트랙을 탐지해 공개하는 \'탐정 활동\'에 나서고 있습니다.',
+            body:        '<p>일렉트로닉 댄스 뮤직 커뮤니티에서 AI가 만든 음악을 인간 창작물처럼 속여 유통하는 행위를 추적하는 \'탐정 프로듀서\'들이 늘고 있어요. Max \'H4RRIS\' Harris, Nihil Young 같은 프로듀서들은 자신의 전문 지식을 활용해 AI 트랙의 특징—보컬의 날카로운 히스 노이즈, 어색한 패턴—을 찾아내 고발하는 영상을 게재하고 있습니다. Harris는 AI 생성 콘텐츠를 \'가짜 예술의 일종\'이라고 표현하며, 진정한 음악은 수백 가지 의도적인 창작 선택이 담긴 것이라고 강조해요.</p><p>스트리밍 플랫폼에서 AI 음악이 차지하는 비중은 급속히 커지고 있습니다. 최근 데이터에 따르면 일부 플랫폼의 신규 업로드 중 50% 이상이 AI 생성 음악이며, AI 음악 창작자들은 연간 수백만 달러를 벌어들이는 것으로 알려졌어요. Suno 같은 플랫폼은 사용자가 기존 저작권 트랙을 업로드해 리믹스를 요청하는 방식으로 어떤 아티스트의 음악도 복제할 수 있게 한다는 우려도 제기되고 있습니다. 탐지 활동을 벌이는 프로듀서들은 해킹 시도와 팔로워 조작 등의 보복을 당하기도 했으며, 플랫폼들의 AI 콘텐츠 표시 노력에도 불구하고 일반 청취자들은 여전히 AI 음악과 인간 음악을 구별하기 어려운 상황이에요.</p><p>원문: <a href="https://www.businessstory.org/2026/08/29/musicians-turned-detectives-are-hunting-for-ai-grifters/">The Verge</a></p>',
+            source:      'The Verge',
+            publishedAt: '2026.08.30',
+            hue:         310,
+            image:       'https://www.businessstory.org/wp-content/uploads/2026/08/musicians-turned-detectives-are-hunting-for-ai-grifters.jpg',
+            url:         'https://www.businessstory.org/2026/08/29/musicians-turned-detectives-are-hunting-for-ai-grifters/',
+        },
         {
             id:          'art-85bffcb2-2026-08',
             tab:         'art',
