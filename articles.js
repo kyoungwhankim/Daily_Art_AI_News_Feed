@@ -3354,6 +3354,18 @@ window.AIAD = {
         
     /* ---- art ---- */
         {
+            id:          'art-78004a9e-2026-08',
+            tab:         'art',
+            headline:    'OpenAI, ChatGPT에서 DALL-E 종료하고 새 이미지 툴 전 사용자에게 무료 제공',
+            summary:     'OpenAI가 ChatGPT의 DALL-E GPT를 종료하고, gpt-image-1 기반 새 이미지 도구를 모든 사용자에게 무료로 제공합니다.',
+            body:        '<p>OpenAI가 ChatGPT 내에서 이미지 생성을 전담해 온 DALL-E GPT 모드를 공식 종료하고, gpt-image-1 및 gpt-image-1-mini 기반의 새 도구인 \'ChatGPT 이미지\'로 대체했어요. 이 새 도구는 무료 플랜을 포함한 모든 계정 유형의 사용자에게 기본 제공돼요. 기능 면에서는 복잡한 장면 묘사의 정확도 향상, 시각적 아티팩트 감소, 그리고 특정 조명이나 객체 간 공간적 관계처럼 이전 모델이 일관성 없이 처리하던 구성 요청 이해도 개선이 두드러져요. OpenAI는 ChatGPT 이미지를 웹과 모바일 앱 등 모든 플랫폼에서 전 세계 사용자에게 공개했어요.</p><p>이번 변경은 OpenAI가 올해 추진 중인 제품 통합 전략의 일환이에요. 같은 DALL-E 모델은 이미 올해 5월에 개발자 API에서 제거됐고, 이달 초에는 90일 일몰 기간을 거쳐 o3 추론 모델도 ChatGPT에서 종료된 바 있어요. 다만, 추론 단계를 거쳐 이미지를 생성하는 프리미엄 기능인 \'생각하는 이미지(Images with thinking)\'는 여전히 유료 구독자 전용으로 유지돼요. DALL-E GPT로 생성한 이미지는 해당 대화가 삭제될 때 함께 사라지므로, 보관할 이미지는 지금 ChatGPT 이미지 섹션에서 미리 다운로드해 두는 것이 좋아요. DALL-E GPT를 연동했던 서드파티 앱은 ChatGPT 이미지 인터페이스로 사용자를 안내해야 하며, 이미지 생성 기능을 포함한 커스텀 GPT는 이번 변경의 영향을 받지 않아요.</p><p>원문: <a href="https://www.martincid.com/technology-sv/dall-e-gpt-retires-chatgpt-images/">Martin Cid Magazine</a></p>',
+            source:      'Martin Cid Magazine',
+            publishedAt: '2026.08.31',
+            hue:         220,
+            image:       'https://images.martincid.com/2026/08/share-og-1200x675.png',
+            url:         'https://www.martincid.com/technology-sv/dall-e-gpt-retires-chatgpt-images/',
+        },
+        {
             id:          'art-9335340b-2026-08',
             tab:         'art',
             headline:    '소니 뮤직·워너 채펠, Anthropic 상대로 대규모 저작권 침해 소송 제기',
