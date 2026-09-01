@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-7b4eb9ff-2026-09',
+            tab:         'games',
+            headline:    '인디 스튜디오, 자체 아티스트 작품으로만 학습한 로컬 AI 모델 게임에 도입',
+            summary:     'Studio Atelico가 아티스트 동의 하에 수집한 작품만으로 학습한 온디바이스 AI 모델을 게임에 적용했어요.',
+            body:        '<p>Studio Atelico는 Uber·Meta·SEGA·Creative Assembly 출신 베테랑들이 설립한 인디 스튜디오로, 자사 아티스트들의 명시적 동의와 보상 계약을 통해 수집한 작품만으로 학습된 온디바이스 AI 이미지 모델을 개발해 모바일 카드 게임 Bobium Brawlers에 적용했어요. 플레이어는 텍스트 설명만으로 게임 내 독창적인 생명체를 직접 만들 수 있으며, AI는 즉시 해당 설명을 스튜디오가 정한 비주얼 아이덴티티에 맞는 초상화와 플레이어블 덱으로 변환해 줘요. 외부 데이터를 일절 사용하지 않고 내부 아티스트 작품만을 활용해 저작권 문제 없이 생성적 게임 플레이를 구현했어요.</p><p>스튜디오는 10개 이상의 프로토타입을 만들며 \'AI에 더 많은 자유를 줄수록 게임이 더 재미있어진다\'는 초기 가정이 틀렸음을 깨달았어요. AI의 통제권이 지나치게 크면 게임 규칙이 임의적으로 느껴지고 플레이어가 숙련감을 쌓기 어려워져요. 반면 AI가 디자이너가 설정한 규칙과 창작 방향 안에서 개인화와 창의적 놀람을 더하는 역할에 집중할 때 가장 좋은 플레이 경험이 나온다는 결론에 도달했어요. 이 사례는 외부 학습 데이터 없이 내부 아티스트 작품만을 활용한 윤리적 AI 게임 아트 제작의 새로운 모델로 주목받고 있어요.</p><p>원문: <a href="https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.01',
+            hue:         25,
+            image:       'https://cdn.80.lv/api/upload/meta/49986/images/6a961376762b8/contain_1200x630.png',
+            url:         'https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists',
+        },
+        {
             id:          'games-80eeb9a9-2026-08',
             tab:         'games',
             headline:    'NBA 2K27서 유출된 NVIDIA DLSS 5 뉴럴 렌더링 DLL, 모더들이 여러 게임에 적용',
@@ -1937,6 +1949,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-f8fbf497-2026-09',
+            tab:         'industry',
+            headline:    '1666: 암스테르담, AI 자산 제거했지만 커뮤니티 신뢰 회복은 난항',
+            summary:     'Panache Digital Games가 AI 자산을 모두 제거했지만 얼리 액세스 출시 후에도 복합적 평가를 받고 있어요.',
+            body:        '<p>Panache Digital Games의 신작 1666: 암스테르담이 8월 25일 스팀 얼리 액세스로 출시됐어요. 최대 동접 2,081명을 기록했지만 평가는 복합적이에요. 출시 전부터 프롤로그와 마케팅 자료에 AI 생성 자산이 사용됐다는 의혹이 불거졌고, 스튜디오는 이를 인정하며 모든 AI 자산을 완전히 제거했다고 밝혔어요. 게임스컴 2026에서 게임 디렉터 Patrice Désilets도 \'초기 기획·프리프로덕션 단계에서만 AI를 사용했으며, 현재는 완전히 제거됐고 앞으로도 사용하지 않겠다\'고 직접 확인했어요.</p><p>하지만 AI 자산을 제거했다고 해서 커뮤니티의 불신이 사라진 건 아니에요. 플레이어들은 \'플레이스홀더 실수\'라는 해명에 납득하지 못하고 있어요. 진정한 임시 자산이라면 의도적으로 조잡하게 만들어 교체 필요성을 알아볼 수 있어야 하는데, 완성도 있어 보이는 AI 자산이 실수로 출시 버전에 남아 있었다는 설명을 믿기 어렵다는 반응이에요. 부정적 리뷰 상당수는 기술적 문제와 미완성 콘텐츠를 지적하고 있어 AI 논란이 실제 평가에도 악영향을 미쳤을 가능성이 있어요. AI 자산 사용 문제가 개발사의 신뢰를 얼마나 크게 흔들 수 있는지 보여주는 사례로 주목받고 있어요.</p><p>원문: <a href="https://www.allkeyshop.com/blog/1666-amsterdam-removes-ai-early-access-launch-news-n/">AllKeyShop</a></p>',
+            source:      'AllKeyShop',
+            publishedAt: '2026.09.01',
+            hue:         5,
+            image:       'https://www.allkeyshop.com/blog/wp-content/uploads/1666-amsterdam-ai-controvery.webp',
+            url:         'https://www.allkeyshop.com/blog/1666-amsterdam-removes-ai-early-access-launch-news-n/',
+        },
+        {
             id:          'industry-3c04382f-2026-08',
             tab:         'industry',
             headline:    'Gamescom 2026으로 보는 게임 스튜디오 AI 도입 5가지 트렌드',
@@ -3353,6 +3377,30 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-06ac0c46-2026-09',
+            tab:         'art',
+            headline:    '소니·워너 뮤직, Anthropic 상대로 저작권 침해 소송 — AI 학습에 가사 무단 사용',
+            summary:     '소니·워너 뮤직이 비틀즈·테일러 스위프트 등의 가사를 무단 수집해 AI 학습에 사용했다며 Anthropic을 고소했어요.',
+            body:        '<p>소니 뮤직 퍼블리싱과 워너 채펠 뮤직이 8월 31일 미국 캘리포니아 연방법원에 Anthropic을 상대로 저작권 침해 소송을 제기했어요. 이 소송은 Anthropic이 비틀즈·테일러 스위프트·마이클 잭슨 등 수백 명 아티스트의 가사와 악보를 토렌트로 무단 수집해 Claude AI 모델 학습에 사용했다고 주장해요. 원고 측은 Anthropic이 저작권이 있는 가사를 프롬프트를 받으면 그대로 재현하며, 이를 기반으로 만들어진 AI 생성 가사가 시장에서 원저작물의 해로운 대체품으로 유통되고 있다고 비판했어요.</p><p>이번 소송은 AI 기업을 상대로 저작권 소유자들이 잇달아 제기하는 소송 중 최신 사례예요. Universal Music Group은 2023년과 올해 Anthropic을 이미 고소했으며, Anthropic은 작가 집단과의 집단 소송을 15억 달러에 합의하며 AI 업계 최초로 저작권 합의를 이뤄낸 바 있어요. 소니·워너는 그 합의 금액이 억제력으로 충분하지 않다며 침해 저작물당 최대 15만 달러의 법정 손해배상과 추가 사용 금지 명령을 요구하고 있어요. Anthropic은 이미 법원에서 다뤄지고 있는 주장을 반복한 것이라며 강력히 방어할 것이라고 밝혔어요.</p><p>원문: <a href="https://www.aljazeera.com/economy/2026/8/31/sony-warner-music-sue-anthropic-saying-it-pirated-songs-to-train-its-ai">Al Jazeera</a></p>',
+            source:      'Al Jazeera',
+            publishedAt: '2026.09.01',
+            hue:         340,
+            image:       'https://aje.news/wp-content/uploads/2026/08/reuters_6a95c511-1788200209.jpg',
+            url:         'https://www.aljazeera.com/economy/2026/8/31/sony-warner-music-sue-anthropic-saying-it-pirated-songs-to-train-its-ai',
+        },
+        {
+            id:          'art-889fef09-2026-09',
+            tab:         'art',
+            headline:    '런웨이, 코드 없이 앱을 실시간 생성하는 AI 인터페이스 모델 \'Solaris\' 공개',
+            summary:     'Runway가 텍스트 입력만으로 대화형 앱·인터페이스를 실시간 생성하는 인터페이스 월드 모델 \'Solaris\'를 공개했어요.',
+            body:        '<p>Runway가 8월 31일 새로운 AI 시스템 계열인 \'인터페이스 월드 모델(Interface World Model)\'의 첫 모델 Solaris를 공개했어요. Solaris는 운영체제가 앱과 웹사이트를 사용자의 상호작용에 맞춰 실시간으로 생성하는 개념을 구현한 모델이에요. 기존 소프트웨어는 비주얼 디자인을 코드로 변환하는 중간 단계가 반드시 필요했지만, Solaris는 렌더링과 인터랙션을 하나의 월드 모델이 동시에 처리해요. 매 프레임을 사용자 입력에 반응하며 실시간으로 합성하기 때문에 별도 코딩 없이도 완전한 인터랙티브 앱 경험이 가능해요.</p><p>Solaris는 세 가지 핵심 특성을 갖추고 있어요. 첫째, 완전히 시각적이에요 — 이미지 자체가 애플리케이션이 돼요. 둘째, 살아있어요 — 다음 사용자 입력을 기다리지 않고 화면이 계속 진화해요. 셋째, 개방형이에요 — 개발자가 미리 정의하지 않은 상호작용도 지원해요. Runway는 Solaris가 웹사이트·앱 제작의 새로운 방식일 뿐 아니라, AI 에이전트가 끊임없이 변화하는 인터페이스 환경에서 훈련할 수 있는 새로운 방법도 열어준다고 강조했어요. 생성형 비디오를 넘어 인터랙티브 AI 인터페이스 전반으로 사업 영역을 확장하려는 Runway의 전략적 전환을 보여주는 행보예요.</p><p>원문: <a href="https://runway.com/news/research/introducing-solaris">Runway</a></p>',
+            source:      'Runway',
+            publishedAt: '2026.09.01',
+            hue:         270,
+            image:       'https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/08/082626-solaris-blogpost-thumbnail-2fe8ad11-4846-4ba2-bbbf-a8db3feaa725.png',
+            url:         'https://runway.com/news/research/introducing-solaris',
+        },
         {
             id:          'art-78004a9e-2026-08',
             tab:         'art',
