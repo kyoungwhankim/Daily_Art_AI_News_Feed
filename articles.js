@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-71c920da-2026-09',
+            tab:         'games',
+            headline:    'ArmorPaint 1.0 정식 출시 — 8년 얼리액세스 끝에 AI 신경망 텍스처 페인팅 도구 완성',
+            summary:     '오픈소스 3D 텍스처 페인팅 툴 ArmorPaint가 8년 얼리액세스를 마치고 v1.0으로 출시됐어요.',
+            body:        '<p>오픈소스 3D 텍스처 페인팅 소프트웨어 ArmorPaint가 2018년 얼리액세스 시작 이후 8년 만에 드디어 v1.0 정식 버전으로 출시됐어요. 이번 업데이트의 가장 큰 변화는 기존 Haxe 언어 기반 코드를 C 언어로 전면 재작성했다는 점이에요. 덕분에 메모리 사용량이 크게 줄었고, 기존보다 훨씬 큰 3D 모델에 고해상도 텍스처 레이어를 여러 개 올리면서도 끊김 없이 실시간 페인팅이 가능해졌어요. GPU 가속은 Direct3D 12, Vulkan, Metal, WebGPU를 모두 지원하고, 레이트레이싱도 각 플랫폼에 최적화되어 있어요.</p><p>이번 버전의 핵심 신기능은 AI 기반 \'뉴럴 노드(Neural Nodes)\'예요. 이미지 업스케일링, 사진에서 PBR 텍스처 자동 생성, 텍스트-투-이미지 생성까지 지원하는데, 사용되는 AI 모델은 전부 오픈소스로 로컬 워크스테이션이나 태블릿에서 직접 실행돼요. 기본 조각(스컬핑) 모드, UV 편집기, 타임라인 재생, 스킨드 메시 애니메이션 재생 기능도 추가됐어요. 블렌더·유니티·언리얼 엔진 라이브 링크 플러그인도 제공되어 기존 아트 파이프라인과의 통합도 수월해요.</p><p>그간 Adobe Substance 3D Painter의 저렴한 대안으로 알려졌던 ArmorPaint가 이제 AI 기능까지 갖추면서 인디 스튜디오와 개인 아티스트들에게 더욱 매력적인 선택지가 됐어요. 컴파일된 바이너리는 itch.io에서 19달러에 구입할 수 있고, 소스 코드는 zlib 라이선스로 무료 공개돼 있어요. AI 텍스처 자동화 흐름에서 비용 부담 없이 입문하고 싶은 게임 아티스트라면 주목할 만한 출시예요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/armorpaint-1-0-is-out-after-eight-years-in-early-access/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.05',
+            hue:         30,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260904_ArmorPaint10_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/armorpaint-1-0-is-out-after-eight-years-in-early-access/',
+        },
+        {
+            id:          'games-cf45d0a0-2026-09',
+            tab:         'games',
+            headline:    'NVIDIA DLSS 5, NBA 2K27에 첫 적용 — 3D 가이드 신경망 렌더링으로 게임 사실감 새 기준 제시',
+            summary:     'NVIDIA가 DLSS 5의 3D 가이드 뉴럴 렌더링을 NBA 2K27에 최초 적용해 클라우드에서 실시간 서비스를 시작했어요.',
+            body:        '<p>NVIDIA가 차세대 렌더링 기술 DLSS 5의 핵심 기능 \'3D 가이드 뉴럴 렌더링(3D-Guided Neural Rendering)\'을 NBA 2K27에 최초 적용해 클라우드 게임 서비스 GeForce NOW를 통해 제공하기 시작했어요. 이 기술은 기존 3D 그래픽 데이터에 생성형 AI 모델을 결합해, 선수의 머리카락·피부·얼굴 형상 등 세밀한 부분에서 빛이 반사되고 재질이 표현되는 방식을 AI가 직접 예측하고 채워 넣어요. NVIDIA와 Visual Concepts, 2K의 긴밀한 협업으로 완성됐으며, 스포츠 중계 방송 스타일의 리얼한 화면 구성을 목표로 개발자가 직접 튜닝했어요.</p><p>GeForce NOW Ultimate 회원은 클라우드의 RTX 5080급 하드웨어를 통해 PC·Mac·모바일·TV 등 거의 모든 기기에서 DLSS 5가 적용된 NBA 2K27를 즉시 스트리밍할 수 있어요. 다운로드나 스토리지 관리 없이 바로 클라우드에서 실행되기 때문에 하드웨어 사양에 관계없이 최고 품질의 AI 렌더링을 경험할 수 있다는 점도 주목할 만해요.</p><p>AI 기반 렌더링이 클라우드 게임 환경에서 실시간으로 작동함을 공식 증명한 중요한 사례예요. 스포츠 실황 중계에 버금가는 사실감을 게임에서 구현할 수 있음을 보여주며, AI가 게임 그래픽 파이프라인의 핵심 렌더링 단계에 빠르게 편입되고 있다는 신호이기도 해요. 향후 다른 타이틀에도 DLSS 5가 확산될 것으로 전망돼요.</p><p>원문: <a href="https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/">NVIDIA Blog</a></p>',
+            source:      'NVIDIA Blog',
+            publishedAt: '2026.09.05',
+            hue:         220,
+            image:       'https://blogs.nvidia.com/wp-content/uploads/2026/09/gfn-thursday-9-3-blog-1920x1080-logo-1280x720.jpg',
+            url:         'https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/',
+            urls: [
+                { label: '기술 상세', href: 'https://www.nvidia.com/en-us/geforce/news/dlss-5-3d-guided-neural-rendering/' },
+            ],
+        },
+        {
             id:          'games-1dce2749-2026-09',
             tab:         'games',
             headline:    'AI 에이전트로 프로토타입 제작, 2달 만에 위시리스트 12만 돌파',
@@ -1988,6 +2015,34 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-fcaf1b36-2026-09',
+            tab:         'industry',
+            headline:    'OpenAI GPT-6 Astra 출시 — "AGI 시대 도래" 선언, 게임 프로토타이핑에도 이미 실전 투입 중',
+            summary:     'OpenAI가 GPT-6 Astra를 출시하며 AGI 시대 도래를 선언했고, 이미 게임사 Playco가 프로토타이핑에 도입해 수정 작업을 50% 줄였어요.',
+            body:        '<p>OpenAI가 GPT-6 Astra를 정식 출시하면서 AI 업계에 큰 파장을 일으키고 있어요. ARC-AGI-3 벤치마크에서 98.6%를 기록하며 공동창업자 그렉 브록먼이 \'AGI 시대에 오신 것을 환영합니다\'라고 선언했어요. Astra는 기존 대화형 AI를 넘어 브라우저·앱·스프레드시트를 사람처럼 직접 조작하는 컴퓨터 사용 능력을 갖췄으며, 양식 작성, CRM 데이터 업데이트, 웹사이트 제작·테스트, FreeCAD·Power BI 등 전문 소프트웨어 운용까지 멀티스텝 워크플로를 자율적으로 완수할 수 있어요.</p><p>이미 게임 회사 Playco가 Astra를 게임 프로토타이핑에 도입해 수작업 수정 횟수를 50% 줄이는 성과를 거뒀어요. Astra는 ExploitBench 100%, FrontierMath Tier 4 v2에서 97.6%를 달성했고, DeepSWE에서도 GPT-5.6 Sol 대비 47% 빠른 속도로 74.1%를 기록했어요. 엔터프라이즈 롤아웃은 9월 5일 OpenAI Daybreak 프로그램을 통해 시작됐으며, API 가격은 입력 100만 토큰당 10달러, 출력 100만 토큰당 50달러예요.</p><p>게임 스튜디오 입장에서 AI가 단순 이미지 생성 도구 수준을 넘어 코드 작성·버그 수정·프로토타입 자동화까지 담당하는 시대가 눈앞에 다가왔다는 신호예요. OpenAI는 Astra를 자사 최초의 \'사이버보안 임계치(Critical Cybersecurity Threshold)\' 도달 모델로 지정했으며, 실시간 모니터링과 행동 정렬 훈련 등 안전 장치도 함께 공개했어요. AWS Bedrock·Microsoft Azure를 통한 기업 API 접근도 지원해요.</p><p>원문: <a href="https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra">VentureBeat</a></p>',
+            source:      'VentureBeat',
+            publishedAt: '2026.09.05',
+            hue:         30,
+            image:       'https://images.ctfassets.net/jdtwqhzvc2n1/7BwAXDCmDn9UWCm6xJlALO/dc62713fa34b189cba7ed9dc6c3ff490/ChatGPT_Image_Sep_3__2026__01_08_17_PM.png',
+            url:         'https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra',
+            urls: [
+                { label: '공식 발표', href: 'https://openai.com/index/gpt-6-astra/' },
+                { label: '게임 활용 사례', href: 'https://openai.com/index/playco-game-prototyping-with-astra/' },
+            ],
+        },
+        {
+            id:          'industry-4c999cc8-2026-09',
+            tab:         'industry',
+            headline:    'AI 월드 모델, 게임 스튜디오를 바꾼다 — Marble·Odyssey가 프리프로덕션을 어떻게 바꾸고 있나',
+            summary:     'Marble, Odyssey 등 AI 월드 모델 툴이 게임 스튜디오 프리프로덕션에 도입되기 시작했고, Autodesk가 2억 달러를 투자했어요.',
+            body:        '<p>World Labs의 Marble, Odyssey 등 AI 월드 모델 툴이 게임 스튜디오 프리프로덕션 현장에 본격 도입되고 있어요. 텍스트나 사진 한 장으로 걸어다닐 수 있는 3D 환경을 생성해내며, 지금 당장 가장 효과적인 활용처는 피치 및 프리비즈예요. 콘셉트 아트를 기반으로 레벨 분위기를 시뮬레이션한 씬을 퍼블리셔 미팅 전에 빠르게 완성할 수 있어요. NVIDIA, AMD, Autodesk가 World Labs의 2월 투자 라운드에 참여했으며, Autodesk만 2억 달러를 투자했어요. World Labs의 기업 가치는 54억 달러로 평가받고 있어요.</p><p>현재 출력물은 가우시안 스플랫, 삼각형 메시, 렌더링 영상 세 가지예요. 스플랫은 시각적으로 훌륭하지만 네이티브 충돌 처리가 없고, 메시는 어디서나 가져올 수 있지만 리토폴로지가 필요해요. 결론적으로 2026년 현재 AI 월드 모델은 \'프리프로덕션 도구\'예요. 버추얼 프로덕션과 컷씬처럼 렌더링 출력이 목표인 쪽에서 게임 아트팀보다 빠른 도입이 이루어지고 있어요.</p><p>파일럿 진행 전 반드시 확인해야 할 사항들이 있어요. 생성된 환경의 상업적 사용권 여부, 업로드 데이터 보관 정책, 스플랫-메시 변환의 실제 비용, 스튜디오 성능 예산 통과 여부, 팀원 간 동시 편집 지원 여부예요. 전문가들은 AI 월드 모델이 포토그래메트리가 2014년에 그랬던 것처럼, 분명히 미래지만 아직 파이프라인보다는 한 발 앞선 상태라고 평가해요.</p><p>원문: <a href="https://techforum.ca/articles/ai-world-models-game-studios-marble">Tech Forum</a></p>',
+            source:      'Tech Forum',
+            publishedAt: '2026.09.05',
+            hue:         30,
+            image:       'https://fs.pagegun.com/p/EVX9tqVe/media/632e4b2e.webp',
+            url:         'https://techforum.ca/articles/ai-world-models-game-studios-marble',
+        },
+        {
             id:          'industry-51734a14-2026-09',
             tab:         'industry',
             headline:    '아트스테이션, 모든 작품에 AI 크롤러 차단 기본 적용',
@@ -3455,6 +3510,36 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-9d847236-2026-09',
+            tab:         'art',
+            headline:    'NVIDIA, Hugging Face 129억 달러에 인수 확정 — 오픈소스 AI 모델 생태계 판도 바뀌나',
+            summary:     'NVIDIA가 1,800만 개발자가 사용하는 오픈소스 AI 허브 Hugging Face를 약 129억 달러에 인수 확정했어요.',
+            body:        '<p>NVIDIA가 전 세계 1,800만 개발자와 300만 AI 모델을 품은 오픈소스 AI 허브 Hugging Face를 약 129억 달러(약 17조 원)에 인수한다고 공식 확인했어요. 젠슨 황 CEO는 \'개발자들은 원하는 모델을 선택할 수 있으며, NVIDIA 컴퓨팅이 반드시 필요하지 않아도 플랫폼에서 개발·배포할 수 있다\'고 강조해 개방성 유지를 약속했어요. NVIDIA 자체도 이미 플랫폼에 500개 이상의 오픈소스 모델과 250개 데이터셋을 공개한 주요 기여자였어요.</p><p>Hugging Face는 2016년 창업 이후 3억 9,500만 달러를 조달했으며, 작년 NVIDIA의 5억 달러 인수 제안을 거절했다가 이번 협상이 성사됐어요. Clem Delangue CEO는 \'더 많은 컴퓨팅, 지원, 협력, 가시성이 필요했다\'고 밝혔어요. 현재 연간 반복 매출은 약 1억 5,000만 달러이며, 100만 개 이상의 AI 애플리케이션과 50만 개 데이터셋도 플랫폼에 올라와 있어요.</p><p>Stable Diffusion·FLUX 등 이미지 생성 모델부터 오픈소스 비디오·음악·3D 생성 모델까지 대다수가 Hugging Face에 올라와 있어 크리에이터와 아티스트들에게 예사롭지 않은 뉴스예요. NVIDIA가 더 깊이 개입하면서 하드웨어 종속성이 커질 수 있다는 우려도 있지만, 현재로서는 오픈성 유지 공약이 우선 신뢰를 얻고 있어요. 앞으로 플랫폼의 방향성 변화를 주시해야 할 시점이에요.</p><p>원문: <a href="https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.05',
+            hue:         0,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/07/hugging-face-logo-smartphone.jpg',
+            url:         'https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/',
+            urls: [
+                { label: '관련 보도', href: 'https://80.lv/articles/nvidia-will-acquire-hugging-face-for-usd12-9-billion' },
+            ],
+        },
+        {
+            id:          'art-8294794b-2026-09',
+            tab:         'art',
+            headline:    'GPT-6 Astra의 창작 혁명 — 구글 CEO "3년 안에 어떤 콘텐츠든 어떤 형식으로든 변환 가능"해진다',
+            summary:     'GPT-6 Astra 출시를 계기로 구글 CEO가 \'3년 내 어떤 콘텐츠든 어떤 형식으로 변환 가능\'해진다고 전망했어요.',
+            body:        '<p>OpenAI의 GPT-6 Astra 출시를 계기로 AI 창작 혁명의 윤곽이 한층 뚜렷해졌어요. The Rundown AI와의 인터뷰에서 구글 CEO 순다르 피차이는 \'3년 뒤엔 지금 가진 것이 얼마나 원시적이었는지 돌아보게 될 것\'이라며, 3년 내로 어떤 콘텐츠든 어떤 형식에서 어떤 형식으로도 자유롭게 변환이 가능해질 것이라고 전망했어요. GPT-6 Astra는 ARC-AGI-3에서 99.9%를 기록했으며, API 가격은 입력 100만 토큰당 10달러, 출력 100만 토큰당 50달러예요.</p><p>피차이 CEO의 예시는 구체적이에요. 유튜브 클립이 클릭 한 번으로 블로그 포스트가 되고, 뉴스레터가 녹음 없이 팟캐스트로 변환되는 것이 가능해지는 세상이에요. 크리에이터는 콘텐츠 형식을 직접 만드는 대신 아이디어·브랜드·개성만 제공하고, 소비자가 원하는 형식을 선택하게 돼요. 멀티모달 AI의 도약이 단순한 생성 품질 향상을 넘어 콘텐츠 소비 방식 자체를 재편할 수 있다는 신호예요.</p><p>이 변화는 크리에이터 생태계에 중요한 함의를 가져요. 누구나 어떤 형식의 콘텐츠든 쉽게 만들 수 있게 되면 \'많이 만드는 것\'은 더 이상 전략이 되지 않아요. 결국 이기는 크리에이터와 미디어 브랜드는 콘텐츠의 품질과 고유한 관점에 집중하게 될 거예요. 이미지·영상·음악을 만드는 아티스트들에게 AI의 멀티모달 도약은 창작 방식 자체를 바꿀 중요한 변화로 진지한 준비가 필요한 시점이에요.</p><p>원문: <a href="https://www.therundown.ai/articles/openai-generational-leap-with-gpt-6-astra">The Rundown AI</a></p>',
+            source:      'The Rundown AI',
+            publishedAt: '2026.09.05',
+            hue:         270,
+            image:       'https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80,width=800/uploads/asset/file/249a4faa-5bd7-4efb-a637-2599db6131f9/astra.png',
+            url:         'https://www.therundown.ai/articles/openai-generational-leap-with-gpt-6-astra',
+            urls: [
+                { label: '공식 발표', href: 'https://openai.com/index/gpt-6-astra/' },
+            ],
+        },
         {
             id:          'art-55bd0d30-2026-09',
             tab:         'art',
