@@ -29,6 +29,34 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-66ae981f-2026-09',
+            tab:         'games',
+            headline:    'Viggle-Animate: Character Replacement in Video from a Single Repainted Frame',
+            summary:     '단 한 장의 리페인트 프레임으로 영상 속 캐릭터를 교체하는 오픈소스 비디오 모델 Viggle-Animate가 공개됐어요.',
+            body:        '<p>Viggle-Animate는 영상의 캐릭터를 단 한 장의 리페인트 프레임만으로 교체할 수 있는 오픈소스 비디오 모델이에요. 사용자가 영상에서 프레임을 하나 골라 이미지 편집기로 캐릭터 외형을 바꾸면, 모델이 그 변경 사항을 나머지 전체 영상에 걸쳐 자동으로 전파해요. 비디오 추론 단계에서는 포즈 추정기·세그멘테이션·얼굴 추적기·텍스트 프롬프트가 전혀 필요 없고, 단 세 번의 순전파로 B200 GPU 한 장에서 124프레임을 26초 안에 생성할 수 있어요.</p><p>모델은 MiniMax-H3의 33.1B 파라미터 ref2va 트랜스포머를 기반으로, DMD(분포 매칭 증류) 기법을 통해 추론 횟수를 원래 30회에서 3회로 줄였어요. 같은 하드웨어와 해상도 조건에서 Wan2.2-Animate-14B보다 6.1배 빠른 렌더링 속도를 보여요. 리페인트 프레임이 원본 영상에서 직접 추출되기 때문에 포즈·조명·배경이 이미 정렬된 상태라서, 기존 방식처럼 외부 참조 이미지와 영상 간 불일치 문제가 없어요. 인간 캐릭터뿐 아니라 동물, 스타일화 캐릭터, 일부 비인간형 오브젝트도 지원해요.</p><p>고소음 레벨에서는 파인튜닝된 모델로, 저소음 레벨에서는 원본 MiniMax-H3 모델로 증류하는 듀얼-티처 방식을 채택해 교체 충실도와 시각 품질 두 마리 토끼를 모두 잡았어요. 모델 가중치와 추론 코드는 Apache 2.0 라이선스로 공개됐으며, HuggingFace에서 즉시 체험해볼 수 있는 데모 스페이스도 제공돼요.</p><p>원문: <a href="https://viggle.ai/blog/viggle-animate-character-replacement-from-a-repainted-frame">viggle.ai</a></p>',
+            source:      'viggle.ai',
+            publishedAt: '2026.09.07',
+            hue:         20,
+            image:       'https://assets.viggle.ai/pub/www/blog/cover-viggle-animate-character-replacement-from-a-repainted-frame-9aae0080.webp',
+            url:         'https://viggle.ai/blog/viggle-animate-character-replacement-from-a-repainted-frame',
+            urls: [
+                { label: '데모', href: 'https://huggingface.co/spaces/Viggle/viggle-animate' },
+                { label: '모델 가중치', href: 'https://huggingface.co/Viggle/Viggle-Animate' },
+                { label: '공식 발표', href: 'https://x.com/ViggleAI/status/2095924668758655163' },
+            ],
+        },
+        {
+            id:          'games-830ddf2b-2026-09',
+            tab:         'games',
+            headline:    'ComfyUI v0.34.5 — Flux 2, MiniMax H3, Z-Image Turbo, Music 3 via Comfy Cloud',
+            summary:     'ComfyUI v0.34.5에서 Flux 2, MiniMax H3 등 강력한 AI 모델을 Comfy Cloud GPU로 클라우드에서 바로 실행할 수 있어요.',
+            body:        '<p>ComfyUI v0.34.5가 릴리스되면서 Comfy Cloud GPU에서 큐레이션된 AI 워크플로를 바로 실행하는 베타 파트너 노드가 추가됐어요. Flux 2, Z-Image Turbo, Mage Flow, MiniMax H3, Music 3 워크플로를 로컬 하드웨어 없이 클라우드에서 처리할 수 있어요. 고사양 AI 모델을 직접 설치하거나 운영하는 부담 없이 강력한 생성 기능을 활용할 수 있다는 점에서 접근성이 크게 높아졌어요.</p><p>직전 버전인 v0.34.4(9월 4일)도 대형 업데이트로 주목받았어요. Meta Muse Image 1.0 노드가 추가돼 최대 10장의 참조 이미지를 활용한 텍스트-투-이미지 생성과 편집이 가능해졌어요. Recraft V4 Styles Pro, MiniMax H3 Max Turbo 비디오 생성, Tripo FBX/GLB 파이프라인 수정도 함께 포함됐어요. 이처럼 ComfyUI는 최신 AI 모델들을 빠르게 통합하며 오픈소스 AI 워크플로 도구의 허브 역할을 이어가고 있어요.</p><p>ComfyUI는 노드 기반 인터페이스로 이미지·영상·오디오 생성 파이프라인을 자유롭게 구성할 수 있는 오픈소스 플랫폼이에요. 이번 업데이트들은 개인 창작자부터 스튜디오까지 폭넓은 사용자가 최신 AI 모델을 빠르게 실험하고 파이프라인에 통합하는 데 도움이 될 거예요.</p><p>원문: <a href="https://docs.comfy.org/changelog">ComfyUI</a></p>',
+            source:      'ComfyUI',
+            publishedAt: '2026.09.07',
+            hue:         200,
+            url:         'https://docs.comfy.org/changelog',
+        },
+        {
             id:          'games-de4e9475-2026-09',
             tab:         'games',
             headline:    'Astra가 게임을 만들었습니다. 지금 바로 플레이할 수 있습니다.',
@@ -2039,6 +2067,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-d43ce275-2026-09',
+            tab:         'industry',
+            headline:    'The AI Panic Is Forcing Developers To Prove Their Trailers Were Made By Humans',
+            summary:     '휴먼카인드 2 트레일러가 AI 생성 의혹을 받자 Amplitude Studios가 인간 제작임을 증명하는 비하인드씬을 공개해야 했어요.',
+            body:        '<p>Gamescom Opening Night Live에서 공개된 휴먼카인드 2 발표 트레일러가 온라인에서 즉각적인 AI 생성 의혹을 불러일으켰어요. 73초짜리 영상은 신생아의 시점으로 인류 역사 9개 시대를 압축한 작품이었는데, 독특한 카메라 움직임과 포스트 프로덕션 블러 효과가 AI 콘텐츠처럼 보인다는 주장을 받았어요. Amplitude Studios는 이를 즉시 부인하고 실제 세트, 의상, 퍼포먼스가 담긴 비하인드씬 영상을 공개했어요.</p><p>이번 제작에는 Amplitude Studios와 크리에이티브 에이전시 BETC가 협력했으며, 각 시대를 표현하는 실제 세트와 소품, 조명, 실제 퍼포먼스를 사용했어요. 시각 효과 스튜디오 LiveFX가 토네이도와 폭발 같은 CGI 요소를 더했지만, 생성형 AI 도구는 전혀 쓰이지 않았어요. AI 오해의 원인으로는 특이한 카메라 연출, 흐림 효과, 모바일 화면 해상도 제한, AI 콘텐츠에 대한 대중의 불안감 등이 꼽혔어요.</p><p>이 사건은 게임 업계 전반에 퍼진 AI 불신의 단면을 보여줘요. 스튜디오들이 창작 과정을 선제적으로 문서화하고 증명해야 하는 부담을 지게 됐고, 이는 창작자들에게 큰 추가 비용이에요. 한편으로는 근거 없는 AI 의혹 제기가 실제 AI 생성 콘텐츠의 식별을 오히려 어렵게 만든다는 우려도 제기됐어요.</p><p>원문: <a href="https://kotaku.com/game-accused-of-using-ai-to-generate-its-reveal-trailer-proves-it-was-made-by-people-2000731291">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.09.07',
+            hue:         0,
+            image:       'https://kotaku.com/app/uploads/2026/09/trailer-real.jpg',
+            url:         'https://kotaku.com/game-accused-of-using-ai-to-generate-its-reveal-trailer-proves-it-was-made-by-people-2000731291',
+        },
+        {
             id:          'industry-fcaf1b36-2026-09',
             tab:         'industry',
             headline:    'OpenAI GPT-6 Astra 출시 — "AGI 시대 도래" 선언, 게임 프로토타이핑에도 이미 실전 투입 중',
@@ -3534,6 +3574,23 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-2bbc192c-2026-09',
+            tab:         'art',
+            headline:    'H Company Releases NeoMME: 260M/800M Single-Tower Multimodal Encoders (Apache 2.0)',
+            summary:     'H Company가 단일 트랜스포머 구조로 텍스트와 이미지를 함께 처리하는 멀티모달 인코더 NeoMME를 오픈소스로 공개했어요.',
+            body:        '<p>프랑스 AI 기업 H Company가 260M과 800M 두 가지 크기의 멀티모달 인코더 패밀리 NeoMME를 Apache 2.0 라이선스로 공개했어요. 일반적인 비전-언어 모델과 달리 NeoMME는 별도의 사전 학습된 비전 타워나 인과적 디코더 없이, 단 하나의 양방향 트랜스포머로 텍스트 토큰과 원시 이미지 패치를 함께 처리해요. 처음부터 다국어 데이터로 학습해 한국어를 포함한 다양한 언어를 지원해요.</p><p>성능 면에서도 눈에 띄는 결과를 보여줘요. 파인튜닝된 검색 특화 변형 모델이 같은 파라미터 크기 기준 ViDoRe v3 시각 문서 검색 벤치마크에서 1위를 기록했어요. 초당 51페이지를 인코딩해 ColModernVBERT보다 2배 빠르고, 계층적 토큰 풀링 기법으로 지연 상호작용 인덱스 저장 용량을 255배 줄였어요. 이 효율성 덕분에 방대한 시각 문서를 검색하는 RAG 파이프라인이나 멀티모달 에이전트에 실용적으로 적용할 수 있어요.</p><p>모든 체크포인트는 Hugging Face Transformers에서 바로 사용할 수 있어요. HuggingFace 블로그와 논문(arXiv 2609.01657)에서 기술적 세부 사항을 확인할 수 있어요. 크리에이티브 분야에서는 이미지-텍스트 교차 검색, 시각 문서 이해, 다국어 멀티모달 임베딩 등에 활용할 수 있을 것으로 기대돼요.</p><p>원문: <a href="https://www.marktechpost.com/2026/09/06/h-company-releases-neomme-a-family-of-260m-and-800m-single-tower-multimodal-encoders-that-drop-the-vision-tower-and-causal-decoder/">MarkTechPost</a></p>',
+            source:      'MarkTechPost',
+            publishedAt: '2026.09.07',
+            hue:         260,
+            image:       'https://www.unite.ai/wp-content/uploads/2026/09/h-company-releases-neomme-open-source-multimodal-encoder-family.jpg',
+            url:         'https://www.marktechpost.com/2026/09/06/h-company-releases-neomme-a-family-of-260m-and-800m-single-tower-multimodal-encoders-that-drop-the-vision-tower-and-causal-decoder/',
+            urls: [
+                { label: '관련 블로그', href: 'https://huggingface.co/blog/Hcompany/neomme' },
+                { label: '논문', href: 'https://arxiv.org/abs/2609.01657' },
+                { label: '모델 컬렉션', href: 'https://huggingface.co/collections/Hcompany/neomme-6760' },
+            ],
+        },
         {
             id:          'art-01b673fd-2026-09',
             tab:         'art',
