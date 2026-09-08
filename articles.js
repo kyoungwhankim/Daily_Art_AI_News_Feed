@@ -29,6 +29,36 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-e8b2d7e3-2026-09',
+            tab:         'games',
+            headline:    '오픈소스 3D 텍스처 페인팅 툴 ArmorPaint 1.0 출시 — 로컬 AI 기능 포함',
+            summary:     'Substance 3D Painter의 오픈소스 대안 ArmorPaint가 7년 만에 1.0을 출시하고 로컬 실행 AI \'뉴럴 노드\'를 탑재했어요.',
+            body:        '<p>오픈소스 3D 텍스처 페인팅 소프트웨어 ArmorPaint가 7년에 걸친 기나긴 개발 여정을 끝내고 드디어 버전 1.0을 공식 출시했어요. 게임즈 워크숍의 엄격한 반 AI 정책에 발맞춰 Substance 3D Painter의 유료 구독을 대체할 무료 오픈소스 선택지를 찾아왔던 개발자와 아티스트들에게 반가운 소식이에요. 개발팀은 기존 Haxe 언어 기반 코드베이스를 순수 C 언어로 완전히 다시 작성했으며, 외부 라이브러리에 일절 의존하지 않고 자체 3D 엔진, 2D 드로잉 시스템, UI를 모두 직접 구현했어요. 그 결과 전체 앱 용량이 1.44MB 플로피 디스크 두 장에 담길 만큼 극도로 경량화됐고, 그래픽 API로 Direct3D 12, Vulkan, Metal, WebGPU를 모두 지원하며 플랫폼별 레이 트레이싱까지 활용할 수 있어요.</p><p>기능 측면에서도 눈여겨볼 추가 사항이 많아요. 메시 편집을 위한 Decimate, Smooth, Bevel, Subdivide 모디파이어와 기본 UV 맵 에디터가 새로 들어왔고, 타임라인 탭, 스키닝 애니메이션 재생, 트윈 애니메이션 지원도 포함됐어요. 이번 릴리스에서 가장 주목받는 신기능은 로컬 실행 생성형 인공지능인 \'뉴럴 노드\'예요. 인터넷 연결이나 외부 클라우드 서버 없이 사용자의 기기에서 직접 AI 이미지 생성을 구동할 수 있어서, 기업 보안 정책이 엄격하거나 네트워크 환경에 제약이 있는 스튜디오에서도 걱정 없이 사용할 수 있어요. Adobe의 높은 구독료 없이 강력한 텍스처 페인팅 기능과 로컬 AI 기능을 동시에 무료로 활용할 수 있게 된 만큼, 인디 개발자부터 중소형 스튜디오에 이르기까지 게임 아트 파이프라인 전반에 걸쳐 적지 않은 변화를 가져올 릴리스예요.</p><p>원문: <a href="https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.08',
+            hue:         45,
+            image:       'https://cdn.80.lv/api/upload/meta/50083/images/6a9eea1ec6130/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released',
+            urls: [
+                { label: '다운로드', href: 'https://armorpaint.org/' },
+            ],
+        },
+        {
+            id:          'games-59e6b469-2026-09',
+            tab:         'games',
+            headline:    'Reallusion AI Studio 1.1 출시 — 독립 실행형 앱·4K·Seedance 2.5 지원',
+            summary:     '리얼루전의 AI 이미지·영상 생성 툴이 독립 실행형 앱으로 출시되며 4K 출력과 Seedance 2.5를 지원하고 신규 사용자에게 500 포인트를 무료로 제공해요.',
+            body:        '<p>리얼루전(Reallusion)이 3D 기반 AI 이미지·영상 생성 툴 AI Studio를 버전 1.1로 업데이트하며 이제 독립 실행형 앱으로도 제공하기 시작했어요. 기존에는 iClone이나 Character Creator 내에서만 사용할 수 있었지만, 이번 업데이트로 Windows 전용 독립 앱이 출시되어 리얼루전의 다른 제품 없이도 바로 AI 생성 기능을 활용할 수 있어요. 기본 앱은 무료이며 신규 사용자에게 500 AI 포인트를 무상 지급해요. 추가 포인트는 월 9.99달러부터 시작하는 유료 구독을 통해 구매할 수 있어요.</p><p>핵심 신기능으로는 ByteDance의 최신 영상 생성 엔진 Seedance 2.0 mini와 Seedance 2.5 지원이 추가됐어요. Video Create와 3D to Video 모드에서 최대 4K 해상도 영상 생성이 가능해졌고, Image Create·Image Edit에서도 4K 이미지 생성을 지원해요. 영상 속 임의 프레임을 시작 프레임으로 지정하는 Capture Frame 기능도 새로 들어왔어요. AI Actor Creator에 Basic 모드가 추가돼 캐릭터 이미지를 업로드하면 AI가 캐릭터 시트를 자동 생성해 주는 워크플로도 지원해요. iClone·Character Creator 사용자라면 기존 3D 캐릭터 파이프라인과 바로 연동해 활용할 수 있어, 게임 캐릭터 컨셉 단계부터 영상 시각화까지 통합된 흐름으로 작업하는 길이 열렸어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-7-september-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.08',
+            hue:         30,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260907_CGSoftwareYouMayHaveMissed7September2026_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-7-september-2026/',
+            urls: [
+                { label: 'AI Studio', href: 'https://ai.reallusion.com/ai-studio/default.html' },
+            ],
+        },
+        {
             id:          'games-66ae981f-2026-09',
             tab:         'games',
             headline:    'Viggle-Animate: Character Replacement in Video from a Single Repainted Frame',
@@ -2067,6 +2097,21 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-6b34adaa-2026-09',
+            tab:         'industry',
+            headline:    '세이버 인터랙티브 CCO "Space Marine 3에 생성 AI 없다" 공식 선언',
+            summary:     '세이버 인터랙티브 CCO가 Space Marine 3 등 주요 라이선스 타이틀 전체에 생성 AI가 사용되지 않는다고 공식 확인했어요.',
+            body:        '<p>세이버 인터랙티브(Saber Interactive) 최고크리에이티브책임자(CCO) 팀 윌리츠가 IGN과의 인터뷰에서 스페이스 마린 3, 헬레이저: 리바이벌, 쥬라기공원: 서바이벌, 스턴트맨: 할리우드, 투록 등 자사의 주요 라이선스 타이틀 전체에 생성 AI가 일절 사용되지 않는다고 공식 확인했어요. 워해머 IP를 보유한 게임즈 워크숍이 콘텐츠 제작·디자인에서 AI를 엄격히 금지하는 정책을 유지하고 있으며, 이 방침에 따라 스페이스 마린 3 개발 전반에 생성 AI가 사용되지 않는다는 것이 이번 확인의 핵심이에요.</p><p>이번 발언은 세이버가 소규모 타이틀 \'라이드셰어 스티뮬레이터\'에 AI 음성·대사·음악을 사용해 논란을 빚은 직후 나왔어요. CEO 맷 카치는 AI 도입을 긍정하는 입장이지만, CCO 윌리츠는 게임즈컴에서 VGC에 "업계 전체가 AI 활용 방식을 여전히 찾아가고 있다"며 소규모 타이틀을 통한 실험적 접근을 설명했어요. 스튜디오 내에서 AI 활용 범위에 대해 경영진 사이에도 입장 차가 존재한다는 점, 그리고 라이선서의 정책이 스튜디오의 AI 도입 결정에 결정적인 영향력을 행사한다는 사실이 이번 사례를 통해 다시 한번 확인됐어요. 게임 업계에서 IP 보유사의 AI 정책이 개발사의 실제 작업 방식을 어떻게 좌우하는지 보여 주는 중요한 선례가 될 것으로 보여요.</p><p>원문: <a href="https://www.videogameschronicle.com/news/saber-cco-says-theres-absolutely-no-genai-in-its-licensed-games-including-space-marine-3-hellraiser-and-jurassic-park-survival/">Video Games Chronicle</a></p>',
+            source:      'Video Games Chronicle',
+            publishedAt: '2026.09.08',
+            hue:         0,
+            image:       'https://www.videogameschronicle.com/files/2026/09/space-marine-3-hellraiser.jpg',
+            url:         'https://www.videogameschronicle.com/news/saber-cco-says-theres-absolutely-no-genai-in-its-licensed-games-including-space-marine-3-hellraiser-and-jurassic-park-survival/',
+            urls: [
+                { label: '추가 보도', href: 'https://www.pcgamer.com/games/action/there-is-absolutely-no-generative-ai-in-space-marine-3-promises-saber-interactive-executive/' },
+            ],
+        },
+        {
             id:          'industry-d43ce275-2026-09',
             tab:         'industry',
             headline:    'The AI Panic Is Forcing Developers To Prove Their Trailers Were Made By Humans',
@@ -3574,6 +3619,20 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-b29ad756-2026-09',
+            tab:         'art',
+            headline:    'ArtStation, 전 포트폴리오에 NoAI 태그 자동 적용 — AI 크롤러 차단 강화',
+            summary:     'ArtStation이 모든 포트폴리오에 NoAI 태그를 기본 적용하고 Cloudflare로 AI 크롤러를 차단해 아티스트 저작권 보호를 강화했어요.',
+            body:        '<p>KitBash3D에 인수된 ArtStation이 AI 학습 데이터 수집으로부터 아티스트를 보호하기 위한 중요한 조치를 발표했어요. 플랫폼에 등록된 모든 포트폴리오에 \'NoAI\' 태그를 기본값으로 자동 적용하고, Cloudflare를 통해 AI 크롤러의 접근을 차단하기 시작했어요. 이는 수천만 디지털 아티스트의 작품이 동의 없이 AI 훈련 데이터로 무단 수집되는 것을 막기 위한 플랫폼 수준의 직접적 대응이에요. AI가 생성한 작품 자체를 금지하지는 않지만, 인간 아티스트의 창작물이 AI 훈련에 활용되는 것만큼은 막겠다는 방침을 명확히 했어요.</p><p>ArtStation은 현재 KitBash3D·Greyscalegorilla와 함께 새로운 크리에이티브 생태계를 구축하는 과정에 있어요. 이 통합 플랫폼 환경 속에서 아티스트 저작권 보호 조치를 플랫폼 기본값으로 설정한 것은 의미 있는 변화예요. 아티스트가 별도의 설정 없이도 기본적으로 보호받을 수 있게 된다는 점에서, 지금까지 개별 아티스트가 직접 설정을 변경해야 했던 방식보다 훨씬 실질적인 보호를 제공해요. AI 시대에 창작자의 권리를 지키는 방향으로 플랫폼 업계의 기준이 이동하고 있음을 보여 주는 사례로, 다른 포트폴리오 플랫폼들의 대응 방식에도 영향을 미칠 것으로 예상돼요.</p><p>원문: <a href="https://magazine.artstation.com/2026/09/ai-updates-from-artstation/">ArtStation Magazine</a></p>',
+            source:      'ArtStation Magazine',
+            publishedAt: '2026.09.08',
+            hue:         290,
+            url:         'https://magazine.artstation.com/2026/09/ai-updates-from-artstation/',
+            urls: [
+                { label: 'Motion Mondays', href: 'https://schoolofmotion.com/blog/motion-mondays-september-7-2026' },
+            ],
+        },
         {
             id:          'art-2bbc192c-2026-09',
             tab:         'art',
