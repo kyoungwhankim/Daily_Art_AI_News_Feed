@@ -2097,6 +2097,21 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-1f0ea4fe-2026-09',
+            tab:         'industry',
+            headline:    'EA의 NHL 27, AI로 생성한 해설자 목소리 몰래 사용 논란',
+            summary:     'EA 스포츠가 해설자 동의 없이 NHL 27에 AI 복제 목소리를 사용한 것으로 알려졌어요.',
+            body:        '<p>베테랑 스포츠 해설자 존 부치그로스가 팟캐스트 \'치르핀 지브라스\'에서 EA 스포츠가 NHL 27 실황 중계에 생성형 AI로 복제한 자신의 목소리를 사용하고 있다고 밝혔어요. 그는 EA로부터 AI가 재현한 목소리 샘플을 직접 시연받은 적이 있는데, 당시 사전 동의나 별도 안내 없이 복제가 이뤄진 점이 뒤늦게 드러났어요. 시연 중 AI 목소리가 관중석을 뜻하는 \'시트(seats)\' 대신 \'의자(chairs)\'로 잘못 발음하는 실수가 있었고, 부치그로스는 \'이런 오류는 직접 수동으로 수정해야 한다, 말이라는 건 중요하다\'고 강조했어요. 그러면서도 \'같은 급여를 받으면서 일이 줄어든다면 기꺼이 받아들이겠다\'며 AI 활용에 비교적 열린 태도를 드러냈어요. 이 사실은 인사이더 게이밍의 편집장 마이크 스트로가 처음 포착한 뒤 IGN을 통해 알려졌어요.</p><p>EA의 앤드루 윌슨 CEO는 2024년부터 생성형 AI가 개발 프로세스의 60%에 영향을 줄 수 있다고 강조해 왔고, 투자자들에게 이 기술이 단순한 유행어가 아닌 비즈니스의 핵심이라고 수차례 밝혔어요. 2025년 말에는 Stability AI와 파트너십을 맺어 AI 모델·도구·워크플로우를 공동 개발하기로 했고, 이를 통해 개발팀이 콘텐츠를 만드는 방식 자체를 재정의할 수 있다는 목표를 제시했어요. NHL 27의 AI 음성 사용 여부에 대해 Game Developer가 EA 측에 입장을 요청했지만 현재까지 공식 답변은 없는 상태예요. 9월 12일 출시를 앞두고 사전 동의 없는 AI 음성 복제 가능성에 대한 업계 내 논란이 빠르게 확산되고 있어요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.09.09',
+            hue:         30,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt079cb2c6910544ff/6aa03816be8d741675b4d3d6/New_Project(35).png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator',
+            urls: [
+                { label: '팟캐스트', href: 'https://www.youtube.com/watch?v=QKTngM-27QM' },
+            ],
+        },
+        {
             id:          'industry-6b34adaa-2026-09',
             tab:         'industry',
             headline:    '세이버 인터랙티브 CCO "Space Marine 3에 생성 AI 없다" 공식 선언',
@@ -3619,6 +3634,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-ddd254d5-2026-09',
+            tab:         'art',
+            headline:    'DaVinci Resolve 21.1 출시 — MCP 서버로 AI가 편집 도구를 직접 제어',
+            summary:     '블랙매직 디자인이 MCP 서버를 통해 AI가 직접 제어 가능한 DaVinci Resolve 21.1을 출시했어요.',
+            body:        '<p>블랙매직 디자인이 영상 편집·색보정 소프트웨어 DaVinci Resolve 21.1을 출시했어요. 무료 버전과 $295 Studio 버전 모두에 100가지 이상의 새 기능이 추가된 대규모 업데이트로, 이번 릴리스의 핵심은 새로 도입된 MCP(Model Context Protocol) 서버예요. 이를 통해 Claude나 ChatGPT Codex 같은 외부 AI 도구가 자연어 명령만으로 DaVinci Resolve를 직접 제어할 수 있게 됐어요. 미디어 정리 자동화, 프로젝트 설정 변경, 긴 영상에서 하이라이트 릴 생성 같은 반복 작업을 AI에 맡길 수 있어, 아티스트가 더 창의적인 작업에 집중할 수 있는 환경이 열렸어요.</p><p>Fusion 페이지에는 2D 도형·3D 형태 생성을 위한 25개 이상의 새 Krokodove 도구가 추가됐고, 렌즈 왜곡 보정, 카메라 트래커 개선, 딥 컴포지팅 업데이트 등 VFX 아티스트를 위한 기능도 크게 강화됐어요. 색보정 페이지에서는 Dolby Vision, HDR10+, HDR Vivid 각 포맷별 개별 그레이딩이 가능해졌고, 새로운 포토 페이지는 블랙매직 디자인 하드웨어 컨트롤 패널 지원 및 더 많은 카메라 포맷을 지원해요. DaVinci Resolve 21.1은 Windows 10+, Rocky Linux 8.6, macOS 15.0+에서 무료로 사용할 수 있으며, Studio 버전은 기존 사용자에게 무료로 업데이트돼요. AI 기능, 입체 3D 도구, 협업 기능 등이 추가된 Studio 신규 라이선스는 $295에 구매할 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/blackmagic-design-releases-resolve-21-1/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.09',
+            hue:         260,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260908_DaVinciResolve211_MCPServer-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/blackmagic-design-releases-resolve-21-1/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.blackmagicdesign.com/products/davinciresolve/' },
+            ],
+        },
+        {
+            id:          'art-40cca424-2026-09',
+            tab:         'art',
+            headline:    'MiniMax H3: 이미지·영상 생성을 하나로 통합한 올인원 AI 창작 플랫폼',
+            summary:     'MiniMax H3가 이미지·영상 생성과 편집을 하나의 플랫폼에서 제공하는 올인원 AI 창작 서비스를 선보였어요.',
+            body:        '<p>MiniMax H3는 이미지 생성, 영상 제작, AI 이펙트 편집을 하나의 브라우저 인터페이스에서 모두 처리할 수 있는 올인원 AI 창작 플랫폼이에요. 텍스트 프롬프트 기반의 이미지·영상 생성, 리터칭 도구, 시각 이펙트 변환 기능을 한 곳에 통합해 마케팅 소재, 소셜 미디어 콘텐츠, 개인 창작 프로젝트 등 다양한 용도로 활용할 수 있어요. 신규 및 기존 사용자 모두에게 무료 크레딧과 일일 할당량을 제공하며, 생성한 에셋을 위한 무제한 클라우드 저장소도 지원해요.</p><p>여러 AI 도구를 번갈아 사용하던 번거로움을 없애고 하나의 플랫폼에서 창작 워크플로우를 완성할 수 있다는 점이 MiniMax H3의 가장 큰 강점이에요. 생성·편집·이펙트·에셋 관리를 한 곳에서 처리하니 앱 간 전환으로 인한 흐름 끊김이 없고, 콘텐츠 크리에이터부터 마케팅 전문가, 디자이너, 아티스트까지 폭넓은 사용자를 대상으로 해요. 플랫폼은 AI를 전문가 역량의 대체재가 아닌 창작 탐색을 돕는 보완적 도구로 포지셔닝하며, 전문 소프트웨어에 익숙하지 않은 사용자도 손쉽게 고품질 시각 콘텐츠를 만들 수 있는 접근성을 강조하고 있어요. 무료 크레딧으로 즉시 체험이 가능해 진입 장벽도 낮아요.</p><p>원문: <a href="https://nerdbot.com/2026/09/08/minimax-h3-all-in-one-ai-image-and-video-generation-platform/">Nerdbot</a></p>',
+            source:      'Nerdbot',
+            publishedAt: '2026.09.09',
+            hue:         290,
+            image:       'https://nerdbot.com/wp-content/uploads/2026/09/image-44.png',
+            url:         'https://nerdbot.com/2026/09/08/minimax-h3-all-in-one-ai-image-and-video-generation-platform/',
+        },
         {
             id:          'art-b29ad756-2026-09',
             tab:         'art',
