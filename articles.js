@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-bd1f8a4c-2026-09',
+            tab:         'games',
+            headline:    'Adobe, After Effects 26.5 출시하며 AI 어시스턴트 베타 공개',
+            summary:     'Adobe, After Effects 26.5에 AI 어시스턴트 베타 공개로 자연어 소프트웨어 제어가 가능해졌어요.',
+            body:        '<p>Adobe가 After Effects 26.5를 정식 출시하면서, 자연어 명령으로 소프트웨어를 직접 제어할 수 있는 AI 어시스턴트를 베타로 함께 공개했어요. 이번 26.5 업데이트에서 가장 주목할 정식 기능은 Object Matte 도구의 디스크 캐싱 지원이에요. Object Matte는 After Effects 26.2에서 추가된 AI 기반 자동 로토스코핑 도구인데, 기존에는 프로젝트를 닫으면 마스크 결과가 모두 사라져서 다시 처음부터 계산해야 하는 번거로움이 있었어요. 이번에 디스크 캐싱이 도입되면서 세션을 종료했다가 다시 열어도 마스크 결과가 그대로 유지되고, 모든 전파 프레임을 메모리에 올릴 필요가 없어져 계산 속도도 빨라졌어요. 온스크린 가이드도 개선돼 퍼센트 기반 위치 지정, 패널 오른쪽·하단 고정, 가이드별 색상 설정이 가능해졌어요.</p><p>베타 빌드에서 선보인 AI 어시스턴트는 자연어 텍스트 명령으로 After Effects를 제어하는 에이전트형 기능이에요. 초보 아티스트도 툴 위치를 몰라도 AI에게 원하는 작업을 입력하면 자동으로 실행해주고, 컴포지션이나 푸티지를 분석해 자동 요약을 반환하거나 모션 그래픽용 JavaScript 표현식을 직접 작성하기 어려운 아티스트를 대신해 코드를 생성해주기도 해요. Photoshop과 Premiere Pro가 올해 6월에 AI 어시스턴트 베타를 먼저 받은 데 이어 After Effects도 합류한 거예요. 베타에는 Substance 머티리얼을 3D 텍스트와 셰이프에 적용하거나 레이어를 머티리얼 소스로 활용하는 3D 기능도 포함됐어요. 게임 제작과 VFX 파이프라인에서 반복 작업을 크게 줄여주는 도구로 기대를 받고 있으며, After Effects 26.5는 월 34.49달러 구독으로 이용할 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/adobe-releases-after-effects-26-5-and-new-ai-assistant-in-beta/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.10',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260909_AfterEffects265_AIAssistantBeta_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/adobe-releases-after-effects-26-5-and-new-ai-assistant-in-beta/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.adobe.com/products/aftereffects.html' },
+            ],
+        },
+        {
             id:          'games-e8b2d7e3-2026-09',
             tab:         'games',
             headline:    '오픈소스 3D 텍스처 페인팅 툴 ArmorPaint 1.0 출시 — 로컬 AI 기능 포함',
@@ -2097,6 +2112,30 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-c224cd45-2026-09',
+            tab:         'industry',
+            headline:    '북유럽 게임 스튜디오들이 AI를 실제로 활용하는 방식 — 법적 리스크부터 팀 구조 재편까지',
+            summary:     '노르딕 게임 업계 전문가 5명이 AI가 법적 리스크, 팀 구조, 플레이어 지원 방식을 어떻게 바꾸고 있는지 솔직하게 전했어요.',
+            body:        '<p>노르딕 게임 업계 전문가 5명이 AI가 법적 리스크, 팀 구조, 플레이어 지원 방식을 어떻게 바꾸고 있는지 솔직한 현장 목소리를 전했어요. 로비오의 법무 담당 조엘리 니바는 AI의 법적 불확실성이 해소된 건 아니지만, 기업들의 관심이 실제 소송 리스크보다는 커뮤니티와 플레이어의 반발 관리 쪽으로 이동했다고 밝혔어요. 핑거소프트의 성장 총괄 다니엘 란탈라는 AI가 프로그래밍, 데이터 분석, 오류 검증 같은 자동화 업무를 처리해주면서 오히려 인간의 판단력과 창의성이 더욱 중요해졌다고 강조했어요.</p><p>Playables.ai의 CEO 엘리나 아르포넨은 현재 코드 작성의 대부분을 AI가 담당하고 사람은 리뷰와 피드백만 하는 구조로 운영 중이라고 밝혔어요. 플레이어 지원 AI 플랫폼 Theymes의 창업자 토미 코이리키비는 게임플레이 안내나 계정 문의 같은 반복 질문을 AI가 티켓이 생성되기 전에 즉시 해결해준다고 설명했어요. 지원팀이 단순 반복 요청에서 벗어나 플레이어 대화 데이터에서 사업 인사이트를 얻는 방향으로 역할이 진화하고 있다는 점도 흥미로워요. 비트매직의 CTO 마르쿠스 호르트는 이제 팀 없이 혼자서도 게임을 처음부터 끝까지 완성할 수 있게 됐다고 말해, AI가 스튜디오 구조 자체를 바꾸고 있음을 보여줬어요.</p><p>원문: <a href="https://www.pocketgamer.biz/how-nordic-studios-are-using-ai-part-two-from-solo-game-builders-to-support-that-never-sleeps/">PocketGamer.biz</a></p>',
+            source:      'PocketGamer.biz',
+            publishedAt: '2026.09.10',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/141285/89792/ainordics2_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/how-nordic-studios-are-using-ai-part-two-from-solo-game-builders-to-support-that-never-sleeps/',
+        },
+        {
+            id:          'industry-c189619d-2026-09',
+            tab:         'industry',
+            headline:    '3D AI 생성 기업 Tripo, 시리즈 A3 후 두 달 만에 4,450억 원 추가 투자 유치',
+            summary:     'Tripo AI가 시리즈 B·B+ 라운드로 약 4,450억 원을 추가 조달해 게임용 3D 에셋 생성 모델 개발을 가속화해요.',
+            body:        '<p>AI 기반 3D 생성 기술 기업 Tripo AI가 퍼펙트월드, 37인터랙티브, ThunderSoft 등 중국 게임·미디어 업계 주요 투자사로부터 시리즈 B·B+ 라운드로 약 3조 엔(4,450억 원)을 추가로 유치했어요. 이번 조달은 시리즈 A3 투자(약 1,500억 원) 직후 불과 두 달 만에 이뤄진 것으로, 올해만 3월 시리즈 A를 시작으로 A+, A++, A3를 포함하면 누적 2,000억 원 이상을 연속으로 유치한 셈이에요. 회사 측은 \'AI 모델이 매우 빠른 속도로 진화하고 있어 투자 라운드 주기도 그만큼 빨라지고 있다\'고 설명했어요. 추가 자금은 생성형 3D 모델 개발과 AI 훈련용 컴퓨팅 인프라 확충에 사용될 예정이에요.</p><p>Tripo AI는 게임 엔진에서 바로 활용할 수 있는 쿼드 토폴로지 기반의 고품질 3D 에셋을 생성하는 AI 모델을 개발하고 있어요. 최근 게임스컴에서 선보인 Tripo P2.0 Preview는 네이티브 쿼드 토폴로지와 최대 5만 개 삼각형의 고밀도 메시를 지원하는 프로덕션급 3D 생성 모델이에요. 올해 3월 출시된 P1.0이 수 초 내에 프로덕션 수준의 모델을 생성하는 기반을 처음 열었다면, P2.0은 엔진 친화적 워크플로 완성도를 한 단계 더 높인 버전이에요. AI 3D 생성 분야에 대규모 자금이 이렇게 빠르게 집중되는 건, 게임 에셋 제작 파이프라인의 판도가 바뀔 것이라는 업계의 확신을 보여주는 신호로 주목할 만해요.</p><p>원문: <a href="https://www.pocketgamer.biz/genai-firm-tripo-raises-445m-two-months-after-series-a3-round/">PocketGamer.biz</a></p>',
+            source:      'PocketGamer.biz',
+            publishedAt: '2026.09.10',
+            hue:         50,
+            image:       'https://media.pocketgamer.biz/images/141334/89814/tripo-p2_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/genai-firm-tripo-raises-445m-two-months-after-series-a3-round/',
+        },
+        {
             id:          'industry-1f0ea4fe-2026-09',
             tab:         'industry',
             headline:    'EA의 NHL 27, AI로 생성한 해설자 목소리 몰래 사용 논란',
@@ -3634,6 +3673,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-2cfab0f6-2026-09',
+            tab:         'art',
+            headline:    'Suno, Warner Music·BMG와 협력해 AI 음악 생성 모델 v6 출시',
+            summary:     'Suno가 레이블과의 라이선스 협력으로 v6 모델을 출시하고 기존 모델을 전면 종료해요.',
+            body:        '<p>AI 음악 생성 스타트업 Suno가 워너뮤직그룹(WMG), BMG, Believe와 협력해 새로운 v6 모델 3종을 공개했어요. v6는 깔끔하고 완성도 높은 결과물을 만들고, v6-wild는 예측 불가한 독창적 음악을 목표로 하며, v6-mini는 무료 사용자를 포함한 모든 사용자가 이용할 수 있어요. 이번 출시와 함께 기존의 모든 이전 모델은 순차적으로 종료되며, Suno는 v6 세대로 완전 전환될 예정이에요. 새 기능으로는 부분 곡 편집, 멀티소스 매시업, 오디오 아이솔레이션, 샘플링이 추가됐고, 텍스트뿐 아니라 오디오·이미지·영상으로도 프롬프트를 입력할 수 있어요.</p><p>이번 출시는 Suno가 2025년 11월 워너뮤직그룹과 맺은 저작권 분쟁 합의의 결과물이에요. 합의에는 라이선스 기반의 고급 모델 출시와 기존 분쟁 대상 모델 종료 조건이 포함돼 있었어요. Believe와의 협력으로 해당 플랫폼 소속 아티스트들이 새 Suno 경험에 옵트인할 수 있고, AI 생성 음악이 Believe와 TuneCore를 통해 유통될 수 있게 됐어요. 다만 아티스트에 대한 수익 배분 방식은 아직 구체적으로 공개되지 않은 상태예요. 저작권 분쟁을 겪던 레이블과 라이선스 협력으로 전환한 건 AI 음악 산업이 합법적 궤도에 진입하는 신호로 주목받고 있어요. 유니버설뮤직은 아직 참여하지 않았고, 소니는 경쟁사 Udio를 상대로 3만 곡에 대한 45억 달러 소송을 이어가고 있어요.</p><p>원문: <a href="https://thenextweb.com/news/suno-v6-warner-bmg-believe-licensed-models">The Next Web</a></p>',
+            source:      'The Next Web',
+            publishedAt: '2026.09.10',
+            hue:         290,
+            image:       'https://media.thenextweb.com/2026/06/Suno.jpg',
+            url:         'https://thenextweb.com/news/suno-v6-warner-bmg-believe-licensed-models',
+        },
         {
             id:          'art-ddd254d5-2026-09',
             tab:         'art',
