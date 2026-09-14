@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-435b20da-2026-09',
+            tab:         'games',
+            headline:    '2026년 9월 13일 주목할 CG 소프트웨어 업데이트',
+            summary:     'SwitchX 2.0, Chaos Cosmos AI 3D 생성, Maverick Render 등 게임·VFX 아티스트를 위한 AI 도구 신버전이 대거 공개됐어요.',
+            body:        '<p>CG Channel이 2026년 9월 13일 게임·VFX 아티스트를 위한 최신 CG 소프트웨어 업데이트 모음을 공개했어요. 이번 라운드업에서 가장 눈에 띄는 것은 AI 기반 두 가지 도구예요. Beeble의 <strong>SwitchX 2.0</strong>은 비디오-투-비디오 생성형 AI 모델로, 최대 20초, 네이티브 4K 10비트 영상을 생성할 수 있게 됐어요. 기존 영상의 조명·배경·소품·의상을 인물을 유지한 채 교체할 수 있어 VFX 워크플로에 실질적으로 활용 가능해요. <strong>Chaos Cosmos</strong>는 AI 3D 에셋 생성 기능(베타)을 추가해 이미지 한 장으로 3D 모델을 만들 수 있으며, Tencent HY 3D와 Microsoft Trellis.2 모델을 백엔드로 활용해요.</p><p>렌더링·리깅 도구도 실질적인 업데이트가 있었어요. <strong>Maverick Render 2026.3</strong>은 NVIDIA OptiX 9.1 기반 DEN2x 디노이저를 도입해 최종 렌더 속도를 최대 4배까지 높였고, 오픈소스 Maya 리깅 프레임워크 <strong>mGear 5.3.4/5.3.5</strong>는 Anim Picker 2.0으로 벡터 셰이프, 뷰포트 핀, 실시간 미러링을 지원해요. <strong>HDR Light Studio for Blender</strong>는 V-Ray for Blender와 Blender 5.2를 새롭게 지원하며 Blender 생태계와의 통합을 강화했어요. 게임 아트·VFX 파이프라인 전반에서 바로 활용할 수 있는 업데이트들이에요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-13-september-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.14',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260913_CGSoftwareYouMayHaveMissed13September2026_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-13-september-2026/',
+        },
+        {
             id:          'games-e9f3fb7e-2026-09',
             tab:         'games',
             headline:    'Roblox 개발자 컨퍼런스, AI 창작 도구 대거 공개: 텍스트→3D 메시·4K PBR 텍스처·AI 플레이테스터',
@@ -3861,6 +3873,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-524ab929-2026-09',
+            tab:         'art',
+            headline:    'iOS 27 내일 출시 — Image Playground AI 사실적 이미지 생성 지원',
+            summary:     '9월 14일 배포되는 iOS 27은 Image Playground에 포토리얼리스틱 이미지 생성을 추가하고 Siri AI 베타를 처음 탑재했어요.',
+            body:        '<p>Apple이 iOS 27을 2026년 9월 14일(현지시각) 배포한다고 공식 확인했어요. 이번 업데이트에서 디지털 아티스트에게 가장 주목할 만한 기능은 <strong>Image Playground</strong>의 대폭 강화예요. 이제 텍스트 설명만으로 사실적인 이미지를 생성할 수 있는 <strong>포토리얼리스틱 이미지 생성</strong>을 지원하며, 개별 오브젝트를 선택·이동·리사이즈하는 정밀 편집 기능도 추가됐어요. 모든 AI 생성 이미지에는 Apple Private Cloud Compute 기반으로 SynthID 워터마크가 자동 삽입되고, 일일 사용 한도가 적용돼요. 사진 앱에는 구도를 자동 조정하는 <strong>Extend·Reframe</strong> 기능도 새롭게 추가됐어요.</p><p>또 하나의 핵심 기능은 <strong>Siri AI</strong>의 첫 탑재예요. Siri AI는 ChatGPT와 유사한 방식으로 복잡한 질문에도 답할 수 있으며, iPhone 내 개인 정보를 활용하고 여러 앱 간 컨텍스트를 연동해 멀티스텝 요청을 처리해요. 현재 영어만 지원하며 iPhone 15 Pro 이상 기기에서 사용 가능하고, EU에서는 규제 문제로 초기에 제공되지 않아요. 이 밖에 앱 실행 최대 30%, 사진 로드 최대 70%, AirDrop 전송 최대 80% 속도 향상 등 전반적인 성능 개선도 포함됐어요.</p><p>원문: <a href="https://www.macrumors.com/2026/09/13/ios-27-features-available-tomorrow/">MacRumors</a></p>',
+            source:      'MacRumors',
+            publishedAt: '2026.09.14',
+            hue:         270,
+            image:       'https://images.macrumors.com/t/w20WmbWRkpBxaP7HVVzR345YfM0=/400x0/article-new/2026/09/iOS-27-Icon-iPhone.jpeg',
+            url:         'https://www.macrumors.com/2026/09/13/ios-27-features-available-tomorrow/',
+        },
         {
             id:          'art-960919f0-2026-09',
             tab:         'art',
