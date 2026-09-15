@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-53fa0494-2026-09',
+            tab:         'games',
+            headline:    '2026년 AI 영상 생성의 6가지 변화: 게임 시네마틱 파이프라인에 미치는 영향',
+            summary:     '2026년 AI 영상 생성 기술은 캐릭터 일관성·네이티브 오디오·장기 촬영 등 6가지 핵심 변화를 이뤄 게임 시네마틱 제작 방식을 바꾸고 있어요.',
+            body:        '<p>2026년 AI 영상 생성 기술은 큰 전환점을 맞이했어요. 가장 주목할 변화는 캐릭터 일관성으로, Seedance 2.5 등 최신 모델은 레퍼런스 이미지를 기반으로 여러 장면에 걸쳐 동일 인물을 유지할 수 있게 됐어요. 오디오도 이제 별도 작업 없이 영상 생성과 동시에 만들어져 완성된 에셋이 바로 나와요. 이미지-투-비디오 워크플로우가 표준으로 자리 잡아, 먼저 정지 화면을 승인한 뒤 모션을 생성하는 방식이 비용과 품질 모두에서 유리해졌어요.</p><p>게임 시네마틱 제작에서 가장 실질적인 영향은 단가 급락과 제작 기간 단축이에요. 10초 클립 비용이 2년 전 대비 약 10분의 1 수준으로 떨어졌고, 15~30초 연속 촬영이 가능해 긴 장면도 끊김 없이 제작할 수 있어요. Seedance·Wan 3.0·Google Veo가 대표 모델로 부상하며 스튜디오의 선택지도 넓어졌어요. 다만 복잡한 다단계 동작, 손 묘사, 텍스트, 대규모 군중 장면은 여전히 불안정해 숙련된 아티스트의 역할이 계속 중요해요.</p><p>원문: <a href="https://www.techbooky.com/ai-video-generation-2026/">TechBooky</a></p>',
+            source:      'TechBooky',
+            publishedAt: '2026.09.15',
+            hue:         200,
+            image:       'https://tbwpfiles.s3.eu-west-2.amazonaws.com/wp-content/uploads/2026/09/14085142/best-AI-video-generation-tools.png',
+            url:         'https://www.techbooky.com/ai-video-generation-2026/',
+            urls: [
+                { label: 'Google Veo', href: 'https://deepmind.google/models/veo/' },
+            ],
+        },
+        {
             id:          'games-435b20da-2026-09',
             tab:         'games',
             headline:    '2026년 9월 13일 주목할 CG 소프트웨어 업데이트',
@@ -2204,6 +2219,38 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-e2f87fae-2026-09',
+            tab:         'industry',
+            headline:    'Level-5 CEO, \'Vision 2026\' 쇼케이스 AI 사용 논란에 사과하면서도 GenAI 도입 의지 재확인',
+            summary:     'Level-5 CEO 히노 아키히로가 Vision 2026 쇼케이스의 AI 사용에 사과하면서도, 개발 기간을 5년에서 2년으로 단축하겠다는 GenAI 도입 목표를 재확인했어요.',
+            body:        '<p>Level-5의 \'Vision 2026 II: Dreams\' 발표 영상에서 《교수 레이튼》·《요괴워치》 트레일러를 비롯한 다수 장면에 생성형 AI가 활용됐다는 비판이 거세지자, CEO 히노 아키히로가 공식 사과문을 발표했어요. 히노 CEO는 쇼케이스 영상 제작에 AI를 활용한 것이 일부 팬들에게 불쾌감을 줬다고 인정하며, 완성된 게임에 어설픈 AI 산출물이 포함되지 않도록 하겠다고 약속했어요.</p><p>그러나 Level-5는 AI를 통해 기술적 효율성을 높이겠다는 방향을 유지했어요. 히노 CEO는 AI가 시나리오·캐릭터 디자인 등 핵심 창작 작업에는 관여하지 않으며, 주로 \'원본 아트워크를 3D 모델로 디지털화하는 변환 작업\'에 쓰인다고 설명했어요. 이 효율화를 통해 대형 타이틀 개발 기간을 5년에서 2년으로 단축하겠다는 목표도 재확인해, AI 도입으로 인한 일자리 감소를 우려하는 업계와 팬들의 시선이 여전히 엇갈리고 있어요.</p><p>원문: <a href="https://mynintendonews.com/2026/09/14/level-5-boss-apologises-for-ai-use-for-professor-layton-yo-kai-watch-reveals/">My Nintendo News</a></p>',
+            source:      'My Nintendo News',
+            publishedAt: '2026.09.15',
+            hue:         30,
+            image:       'https://i0.wp.com/mynintendonews.com/wp-content/uploads/2023/01/level_5_games.jpg?resize=930%2C620&ssl=1',
+            url:         'https://mynintendonews.com/2026/09/14/level-5-boss-apologises-for-ai-use-for-professor-layton-yo-kai-watch-reveals/',
+            urls: [
+                { label: 'Nintendo Life', href: 'https://www.nintendolife.com/news/2026/09/we-will-take-this-as-a-lesson-level-5-ceo-doubles-down-on-genai-despite-backlash' },
+                { label: '관련 보도', href: 'https://gamersocialclub.ca/2026/09/14/level-5-ceo-responds-to-generative-ai-use-criticism-following-showcase/' },
+            ],
+        },
+        {
+            id:          'industry-c77c9a5f-2026-09',
+            tab:         'industry',
+            headline:    'Artificial Agency, 상업용 게임 최초로 에이전트 AI NPC 탑재 — Owlchemy Labs \'Dimensional Double Shift\' 싱글플레이어 모드',
+            summary:     'Artificial Agency가 Owlchemy Labs의 게임에 에이전트 AI NPC를 세계 최초로 상용 탑재해, 1인 플레이어가 AI 동료들과 협동하는 싱글플레이어 모드를 2027년 출시 예정이에요.',
+            body:        '<p>구글 딥마인드·AAA 스튜디오 출신으로 구성된 Artificial Agency가 Owlchemy Labs의 XR 협동 게임 《Dimensional Double Shift》에 자사 Behavior Engine을 통합한다고 발표했어요. 이 통합으로 탄생하는 싱글플레이어 모드는 인간 플레이어 1명이 여러 AI 로봇 동료 \'T.E.M.P.\'와 실시간 협동하는 세계 최초 상업 게임 모드예요. AI 동료들은 자연어 음성 지시를 이해해 서로 조율하고 상황에 맞게 즉흥 대응하며, 2027년 상반기 출시 예정이에요.</p><p>핵심 기술은 \'에이전트 공감(Agent Empathy)\' 개념으로, AI가 게임 내 현실을 정확히 지각하고 행동할 수 있도록 에이전트 관점에서 설계된 방식이에요. 게임 특화 소형 모델을 학습시켜 응답 지연과 추론 비용을 실용 수준으로 낮춘 것이 핵심이에요. 기존 봇 방식과 달리 T.E.M.P.는 개방형 대화와 역할 조율이 가능해 플레이어 표현의 자유도가 훨씬 높고, PC·모바일·VR·콘솔 등 다양한 플랫폼에서 상업적으로 실용적인 수준의 에이전트 게임플레이를 구현했어요.</p><p>원문: <a href="https://www.globenewswire.com/news-release/2026/09/14/3361481/0/en/artificial-agency-integrates-agentic-behavior-into-first-commercial-video-game-in-dimensional-double-shift-s-new-single-player-mode.html">GlobeNewswire</a></p>',
+            source:      'GlobeNewswire',
+            publishedAt: '2026.09.15',
+            hue:         30,
+            image:       'https://ml.globenewswire.com/media/MjQwN2Q1MDgtNmJlMi00MjYyLWEzYzgtOGI5MTdmZGUzZjQ0LTUwMDEyNjQ3Ny0yMDI2LTA5LTE0LWVu/tiny/Artificial-Agency.png',
+            url:         'https://www.globenewswire.com/news-release/2026/09/14/3361481/0/en/artificial-agency-integrates-agentic-behavior-into-first-commercial-video-game-in-dimensional-double-shift-s-new-single-player-mode.html',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.artificial.agency/' },
+                { label: 'GamesBeat', href: 'https://gamesbeat.com/owlchemy-taps-artificial-agency-for-agentic-ai-characters-in-dimensional-double-shift-xr-game/' },
+            ],
+        },
+        {
             id:          'industry-4f05843d-2026-09',
             tab:         'industry',
             headline:    '\'교훈으로 삼겠다\'는 레벨-5 CEO, AI 논란에도 GenAI 계속 사용 선언',
@@ -3873,6 +3920,34 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-f365ebc1-2026-09',
+            tab:         'art',
+            headline:    'Kling AI, TIFF 마켓 패널에서 \'인간 주도 AI 영화 제작\' 강조 — Kling 3.0 Omni 네이티브 4K 공개',
+            summary:     'Kling AI가 TIFF 마켓 최초 B2B 패널에서 \'인간 주도\' AI 영화 제작 철학을 강조하며 Kling 3.0 Omni의 네이티브 4K 지원과 정밀 편집 기능을 선보였어요.',
+            body:        '<p>Kling AI가 캐나다 토론토 국제영화제(TIFF) 최초 B2B 마켓 행사에서 AI 보조 영화 제작의 미래를 논의하는 업계 패널을 주최했어요. 25년 이상 경력의 프로듀서 Diane Shorthouse와 AI 영화감독 Issa Sissoko가 참여해, AI 도구는 인간 감독의 창의적 비전을 구현하는 수단이어야 한다는 \'인간 주도(Human-Led)\' 철학을 공유했어요. Shorthouse는 AI로 제작 중인 장편 애니메이션 《MINIBOTS》를 소개하며 "스크립트가 여전히 청사진이다. 프롬프트가 아니라 샷을 생각한다"고 강조했어요.</p><p>Kling 3.0 Omni는 네이티브 4K 출력과 텍스트·이미지·비디오 전반에 걸친 정밀 편집 기능을 지원해요. 패널리스트들은 \'프롬프팅\'과 \'파이프라인 구축\' 사이의 차이를 명확히 했는데, 진정한 전문 제작은 레퍼런스·워크플로우·출력에 대한 완전한 제어권을 갖춘 파이프라인에서 나온다고 봤어요. 10초짜리 클립 생성과 90분 장편의 일관성 유지는 전혀 다른 문제라는 점도 강조됐어요. Sissoko는 "제어권이 AI를 전문 프로덕션 환경에서 실용적으로 만드는 핵심"이라고 밝혔어요.</p><p>원문: <a href="https://ohsem.me/2026/09/kling-ai-showcases-human-led-ai-filmmaking-at-tiff-market-panel-where-human-creative-direction-is-essential/">ohsem.me / Kling AI PR</a></p>',
+            source:      'ohsem.me / Kling AI PR',
+            publishedAt: '2026.09.15',
+            hue:         290,
+            image:       'https://ohsem.me/wp-content/uploads/2026/09/89203294-1789404664-1-Hhdr4x.jpg',
+            url:         'https://ohsem.me/2026/09/kling-ai-showcases-human-led-ai-filmmaking-at-tiff-market-panel-where-human-creative-direction-is-essential/',
+            urls: [
+                { label: '공식 사이트', href: 'https://klingai.com/' },
+                { label: 'Variety', href: 'https://variety.com/2026/film/news/kling-ai-tiff-market-ai-film-panel-1236858840/' },
+            ],
+        },
+        {
+            id:          'art-52d84ddf-2026-09',
+            tab:         'art',
+            headline:    'AI, TV·영화 제작의 실질적 도구로 정착 — 로토스코핑·배경 생성·목소리 합성까지 자동화',
+            summary:     'AI가 TV·영화 제작 현장에서 푸티지 정리·오디오 개선·VFX 자동화 등 실질적 도구로 정착하고 있으며, 배우 동의와 창작 권한 등 윤리 쟁점도 함께 부각되고 있어요.',
+            body:        '<p>AI가 이제 TV·영화 제작 현장에서 실질적인 도구로 자리 잡았어요. 푸티지 정리, 원치 않는 객체 제거, 오디오 개선, 영상 업스케일링 등 기술적 후처리 작업에서 AI 소프트웨어 활용이 일반화됐어요. 대형 프로덕션은 AI로 얼굴·대사·장면을 식별하고 분류해 수작업보다 훨씬 빠른 콘텐츠 조직화를 실현하고 있어요. 생성형 AI는 로토스코핑·배경 생성·모션 트래킹·애니메이션 등 노동 집약적 VFX 공정 자동화로 독립 영화 제작자의 접근 비용도 낮추고 있어요.</p><p>그러나 AI가 배우의 외모 변경과 목소리 재현까지 가능해지면서 동의·소유권·보상 등 법적·윤리적 쟁점이 수면 위로 떠올랐어요. 시청자가 AI 생성 콘텐츠를 인간 창작물과 구별할 수 있는지가 핵심 신뢰 문제로 부각되고 있어요. 전문가들은 AI가 창작자를 대체하는 것이 아니라 반복적 작업을 없애고 창의적 결정을 인간에게 남기는 새로운 도구로 자리 잡을 것이라고 전망해요. 결국 관객의 감동은 기술적 성취가 아닌 인간이 만든 순간에서 나온다는 점에서, AI는 그 조력자 역할에 머물 가능성이 높아요.</p><p>원문: <a href="https://news.symplexia.com/2026/09/entertainment/tv-shows/how-artificial-intelligence-is-changing-the-way-tv-and-movies-are-made/">Symplexia Labs</a></p>',
+            source:      'Symplexia Labs',
+            publishedAt: '2026.09.15',
+            hue:         260,
+            image:       'https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMNZBqAwKLUyZ1BrWYVV3ueTufn-bSQ_9KRv5GueL4S0SOXcPoKpX1lhmK8F_IH9RcDsB4SWsBt9jeG9wqgu2UJCowCmKtJ7LZl53Bg3uK8-xCIUFYg2LIA_fiavUskThobcSAvLzCFGwPrH63KSyHW7lpNLCQrAeSfM_66WrcuAgWdq4ZgQUIlw/w1200-h630-p-k-no-nu/nicolas-j-leclercq-qDLLP0yP7FU-unsplash.jpg?fit=%2C&ssl=1',
+            url:         'https://news.symplexia.com/2026/09/entertainment/tv-shows/how-artificial-intelligence-is-changing-the-way-tv-and-movies-are-made/',
+        },
         {
             id:          'art-524ab929-2026-09',
             tab:         'art',
