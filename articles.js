@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-722ab1c1-2026-09',
+            tab:         'games',
+            headline:    'AI 게임 아트에서 게임 레디 3D 에셋까지: Unity·Unreal·Godot 활용법',
+            summary:     'Meshy AI로 텍스트·이미지 입력 한 줄만으로 몇 분 만에 게임용 3D 에셋을 만들 수 있는 인디 개발자용 워크플로우를 소개했어요.',
+            body:        '<p>TechBullion은 인디 게임 개발자를 위한 AI 기반 3D 에셋 제작 워크플로우를 단계별로 소개했어요. 핵심 도구는 Meshy AI로, 텍스트 프롬프트나 이미지 한 장만 입력하면 캐릭터·무기·환경 소품·차량 등 다양한 3D 게임 에셋을 몇 분 안에 생성할 수 있어요. PBR 텍스처링, AI 리메싱, 애니메이션 리깅까지 하나의 플랫폼에서 지원해 초기 프로토타이핑 단계에서 기존 작업 대비 시간을 크게 절약할 수 있어요. AI 이미지 생성으로 콘셉트 아트를 만든 뒤 Meshy로 3D로 변환하고, Blender에서 폴리곤 정리·UV 세팅·리깅을 거쳐 Unity·Unreal Engine·Godot에 임포트하는 파이프라인이 권장돼요.</p><p>다만 AI가 생성한 에셋을 바로 게임에 투입할 수 있는 것은 아니에요. 토폴로지 정리·LOD 설정·콜리전 메시 구성·스켈레탈 리그 작업 등 기술적 최적화와 예술적 검수 과정이 반드시 필요해요. 상업 게임에 AI 에셋을 활용하려면 각 플랫폼의 라이선스 조건과 상업 이용 권리를 꼼꼼히 확인하고 에셋 출처를 기록해 두는 것도 중요해요. AI는 아이디어에서 초안까지의 여정을 획기적으로 단축해 주지만, 최종 품질과 게임 통합은 여전히 개발자의 손길에 달려 있어요.</p><p>원문: <a href="https://techbullion.com/from-ai-game-art-to-game-ready-3d-assets-best-tools-for-unity-unreal-and-godot/">TechBullion</a></p>',
+            source:      'TechBullion',
+            publishedAt: '2026.09.16',
+            hue:         35,
+            image:       'https://techbullion.com/wp-content/uploads/2025/05/Screenshot-2026-09-15-141731.png',
+            url:         'https://techbullion.com/from-ai-game-art-to-game-ready-3d-assets-best-tools-for-unity-unreal-and-godot/',
+        },
+        {
             id:          'games-53fa0494-2026-09',
             tab:         'games',
             headline:    '2026년 AI 영상 생성의 6가지 변화: 게임 시네마틱 파이프라인에 미치는 영향',
@@ -2219,6 +2231,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-549fdcf2-2026-09',
+            tab:         'industry',
+            headline:    'Xsolla, AI 코딩 툴로 엔진 무관 게임 커머스 연동 지원하는 AI 툴킷 출시',
+            summary:     'Xsolla가 Claude Code·Cursor 등 AI 코딩 툴에 게임 커머스 연동 로직을 내장한 AI 툴킷을 출시해 API 문서 없이도 결제 시스템을 하루 만에 구축할 수 있게 됐어요.',
+            body:        '<p>Xsolla가 AI 코딩 도구와 게임 커머스를 직접 연결하는 \'AI 툴킷\'을 새로 출시했어요. 이 툴킷은 Claude Code, Cursor, GitHub Copilot 등 개발자들이 이미 사용하는 AI 코딩 툴 안에 Xsolla의 게임 커머스 연동 로직을 직접 내장해, 별도로 API 문서를 찾아보지 않아도 정확한 코드를 자동으로 생성해 줘요. 상인 계정 설정, 플레이어 로그인, 카탈로그 관리, 결제 처리라는 핵심 기능 4가지를 단 하루 안에 완성할 수 있다는 점이 특히 주목돼요.</p><p>이 툴킷의 가장 큰 장점은 엔진 무관(engine-agnostic) 설계예요. Unity·Unreal Engine·Godot 등 어떤 게임 엔진을 사용하더라도 헤드리스 웹샵을 신속하게 구축할 수 있어서, 솔로 인디 개발자부터 대형 게임 스튜디오까지 폭넓게 활용할 수 있어요. AI 코딩 툴이 개발 현장의 표준 도구로 자리잡은 지금, 게임 커머스 연동의 복잡성을 대폭 낮춘 업데이트는 개발 생산성 향상에 직결돼요.</p><p>기존에는 Xsolla를 게임에 연동하려면 API 레퍼런스를 직접 파악하고 수동으로 코드를 작성해야 했지만, 이제는 AI 코딩 툴이 그 과정을 대신해 줘요. 결제 시스템 구축에 드는 시간과 비용을 대폭 줄일 수 있어, 빠른 출시가 중요한 인디 개발 생태계에 특히 환영받을 만한 소식이에요.</p><p>원문: <a href="https://www.manilatimes.net/2026/09/15/tmt-newswire/media-outreach-newswire/xsolla-launches-ai-toolkit-enabling-engine-agnostic-game-commerce-setup-with-ai-coding-tools/2425145">The Manila Times</a></p>',
+            source:      'The Manila Times',
+            publishedAt: '2026.09.16',
+            hue:         30,
+            image:       'https://manilatimes.net/manilatimes/uploads/images/2026/09/15/1217147.jpg',
+            url:         'https://www.manilatimes.net/2026/09/15/tmt-newswire/media-outreach-newswire/xsolla-launches-ai-toolkit-enabling-engine-agnostic-game-commerce-setup-with-ai-coding-tools/2425145',
+        },
+        {
             id:          'industry-e2f87fae-2026-09',
             tab:         'industry',
             headline:    'Level-5 CEO, \'Vision 2026\' 쇼케이스 AI 사용 논란에 사과하면서도 GenAI 도입 의지 재확인',
@@ -3920,6 +3944,44 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-b1a4fad5-2026-09',
+            tab:         'art',
+            headline:    '구글, 실시간 멀티모달 AI \'Gemini 3.8 Live\' 출시',
+            summary:     '구글이 카메라·마이크·화면을 동시에 인식하며 실시간 대화가 가능한 Gemini 3.8 Live와 복잡한 추론을 지원하는 Extended Thinking 모델을 출시했어요.',
+            body:        '<p>구글이 음성 AI의 차원을 한 단계 끌어올린 두 가지 새 모델을 공개했어요. \'Gemini 3.8 Live\'는 카메라·화면·마이크를 동시에 인식하며 실시간 대화를 이어갈 수 있어요. 97개 언어 간 대화 도중 자동 전환을 지원하고, 백그라운드에서 도구 호출과 API 실행을 처리하면서도 대화 흐름을 끊기지 않게 유지해요. \'Gemini 3.8 Live Extended Thinking\'은 복잡한 작업에 특화된 모델로, 추론과 발화를 동시에 진행하며 진행 상황을 실시간으로 안내해요. Artificial Analysis 음성-음성 품질 지수에서 82.6점으로 1위를 기록했고, Big Bench Audio에서 97.7%를 달성했어요.</p><p>디자이너·아티스트 관점에서 가장 주목할 기능은 \'화면을 보여주면서 AI와 대화\'하는 방식이에요. 작업 중인 화면을 공유하면 AI가 시각적 맥락을 즉시 파악하고 실시간 피드백을 제공해요. 스케치와 음성 피드백만으로 React 컴포넌트를 생성하는 데모, 체스 게임을 실시간 시각 인식으로 분석하는 데모 등이 공개됐어요. Google Workspace의 Docs Live·Gmail Live·Keep Live와 Google 검색에도 통합되며, Gemini API를 통해 개발자들도 바로 활용할 수 있어요.</p><p>원문: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Google Blog</a></p>',
+            source:      'Google Blog',
+            publishedAt: '2026.09.16',
+            hue:         220,
+            image:       'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_3-8_live___keyword__blog-social.width-1300.png',
+            url:         'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/',
+        },
+        {
+            id:          'art-32824389-2026-09',
+            tab:         'art',
+            headline:    'Canva, Affinity 3.3 업데이트 출시 — 로컬 AI·클라우드 AI 기능 대거 추가',
+            summary:     'Canva가 Affinity 3.3을 출시하며 노이즈 제거·SDR→HDR 변환 등 로컬 AI 모델과 이미지 업스케일링·레이어 분리 등 클라우드 AI 기능을 60개 이상 추가했어요.',
+            body:        '<p>Canva가 Affinity Photo·Designer·Publisher를 하나로 합친 통합 앱 \'Affinity\'의 3.3 버전을 출시했어요. 이번 업데이트에는 60가지 이상의 신규 기능이 추가됐는데, 그 중 유료 구독자를 위한 AI 기능이 특히 눈에 띄어요. 디바이스에서 직접 동작하는 로컬 AI 모델로는 노이즈 제거, 모션 블러 감소, SDR→HDR 변환, 객체 자동 감지 및 자동 마스킹 기능이 새로 추가됐어요. 인터넷 없이도 작동하는 로컬 처리 방식이라 속도가 빠르고 프라이버시도 지켜져요.</p><p>클라우드 AI 기능으로는 이미지 업스케일링, 레이어 분리(이미지를 편집 가능한 레이어로 분해), 레이어→3D 변환이 추가됐어요. Canva Pro($144/년) 이상 구독이 필요하지만, 핵심 Affinity 기능은 여전히 무료로 사용할 수 있어요. 또한 Affinity는 이제 Canva ProSuite의 일원으로서 모션 디자인 앱 Cavalry, 생성형 AI 플랫폼 Leonardo.AI, 데이터 시각화 플랫폼 Flourish와 함께 묶여 제공돼요.</p><p>그래픽 작업 측면에서도 중요한 업데이트가 있어요. 벡터 디자인 툴에 두 형태 사이를 점진적으로 블렌딩하는 \'Blend Tool\'이 추가됐고, 마스크 자동 생성 \'Mask Tool\'과 이미지 변형·캐릭터 포즈 수정이 가능한 \'Deform Tool\'도 새로 생겼어요. JavaScript로 반복 작업을 자동화할 수 있는 스크립팅 스튜디오도 주목할 만한 기능이에요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/canva-releases-affinity-3-3/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.16',
+            hue:         270,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260915_Affinity33_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/canva-releases-affinity-3-3/',
+            urls: [
+                { label: '릴리즈 노트', href: 'https://www.affinity.studio/help/release-notes/' },
+            ],
+        },
+        {
+            id:          'art-8cdf1813-2026-09',
+            tab:         'art',
+            headline:    'CorelDRAW 그래픽 스위트 2026, 텍스트→벡터 AI 기능으로 크리에이티브 워크플로우 강화',
+            summary:     'CorelDRAW 2026 9월 업데이트가 텍스트 프롬프트로 편집 가능한 벡터 그래픽을 생성하는 AI 기능과 4배 빨라진 PowerTRACE를 추가했어요.',
+            body:        '<p>Corel이 CorelDRAW 그래픽 스위트의 2026년 9월 업데이트를 발표했어요. 이번 업데이트의 핵심은 \'Text-to-vector AI\' 기능으로, 텍스트 프롬프트나 기존 아트워크를 입력하면 편집 가능한 고품질 벡터 그래픽을 자동으로 생성해 줘요. 웹 이미지부터 대형 현수막·빌보드까지 어떤 크기에도 사용 가능한 스케일러블 벡터로 출력되며, 크리에이티브 컨트롤을 유지하면서도 디자인 속도를 크게 높일 수 있어요. Corel 제품 관리 시니어 디렉터는 텍스트-벡터 AI가 고객과 제품 진화에 있어 게임 체인저라고 밝혔어요.</p><p>기존 기능도 크게 개선됐어요. 비트맵을 벡터로 변환하는 PowerTRACE가 최대 4배 빨라졌고, 오브젝트 구조와 색상 처리 정확도도 향상됐어요. CorelDRAW 웹 버전에서는 커스텀·브랜드·시스템 폰트 업로드와 DWG/DXF 파일 직접 내보내기가 가능해졌으며, 복잡한 파일 처리 안정성과 속도도 높아졌어요. 구독형($269/년)과 일회성 구매($549), 월 $9.99의 CorelDRAW Go 세 가지 플랜으로 제공돼요. 9월 22일까지 모든 사용자가 AI 벡터 생성을 무제한 무료로 체험할 수 있어서, 대형 포맷 인쇄·브랜드 디자이너라면 지금 바로 써볼 만해요.</p><p>원문: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362194/0/en/ai-vector-graphics-tools-power-creative-workflows-in-coreldraw-graphics-suite-2026.html">GlobeNewswire</a></p>',
+            source:      'GlobeNewswire',
+            publishedAt: '2026.09.16',
+            hue:         290,
+            url:         'https://www.globenewswire.com/news-release/2026/09/15/3362194/0/en/ai-vector-graphics-tools-power-creative-workflows-in-coreldraw-graphics-suite-2026.html',
+        },
         {
             id:          'art-f365ebc1-2026-09',
             tab:         'art',
