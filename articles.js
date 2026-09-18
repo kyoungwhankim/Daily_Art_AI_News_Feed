@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-4f9d5b1e-2026-09',
+            tab:         'games',
+            headline:    'CD 프로젝트 레드, 포토그래메트리용 PBR 솔버 \'sigmaPBR\' 공개',
+            summary:     'CD 프로젝트 레드 테크니컬 아티스트가 포토그래메트리 데이터를 PBR 머티리얼로 자동 변환하는 AI 솔버 \'sigmaPBR\'을 클로즈드 베타로 공개했어요.',
+            body:        '<p>CD 프로젝트 레드의 시니어 테크니컬 아티스트이자 INVOLV3D 공동 창업자인 Piotr Bieryt가 포토그래메트리 데이터에서 완전한 PBR 머티리얼 세트를 자동으로 생성하는 AI 솔버 \'sigmaPBR\'을 클로즈드 베타로 선보였어요. 포토그래메트리는 물체의 기하학적 형태와 표면 색상을 캡처하는 데 뛰어나지만, 재질이 빛에 반응하는 방식인 러프니스·스페큘러·법선 방향 같은 광학적 속성들은 정밀하게 기록하지 못해요. 때문에 아티스트들은 스캔 이후 이 속성들을 손으로 일일이 페인팅하며 보정해야 했는데, sigmaPBR이 바로 이 까다로운 수작업 과정을 완전히 자동화해 주는 거예요.</p><p>sigmaPBR은 포토메트릭 데이터와 포토그래메트리 데이터를 함께 입력받아 디퓨즈 알베도, 러프니스, 스페큘러 F0, 노멀 맵까지 포함한 프로덕션에 바로 쓸 수 있는 완전한 머티리얼 세트를 자동으로 출력해요. 결과물은 기존 프로덕션 UV 아틀라스와 정렬된 상태로 제공되며, 월드스페이스와 탄젠트스페이스 노멀 옵션도 모두 지원해서 언리얼 엔진, 유니티 등 주요 렌더링 워크플로에 곧바로 적용할 수 있어요. 로봇 스캐닝 리그, 턴테이블 시스템, 2D 머티리얼 스캐너, 핸드헬드 셋업 등 다양한 캡처 환경을 지원하므로, 소규모 인디 스튜디오부터 대형 AAA 개발사까지 폭넓게 활용할 수 있을 것으로 보여요.</p><p>이 도구는 문화유산 디지털화나 게임·영화 프로덕션용 에셋 파이프라인을 구축하는 팀에 특히 유용하며, 사실적인 머티리얼 제작에 드는 시간과 비용을 크게 줄여줄 잠재력을 갖고 있어요. 현재 INVOLV3D 웹사이트에서 자신의 캡처 셋업 정보와 데이터를 제출하면 무료로 테스트 머티리얼 솔브를 받아볼 수 있으니, 실제 파이프라인에 관심 있는 아티스트나 TD라면 한번 신청해 보시는 것도 좋을 것 같아요.</p><p>원문: <a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.18',
+            hue:         220,
+            image:       'https://cdn.80.lv/api/upload/meta/50253/images/6aac07302ae13/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans',
+        },
+        {
             id:          'games-722ab1c1-2026-09',
             tab:         'games',
             headline:    'AI 게임 아트에서 게임 레디 3D 에셋까지: Unity·Unreal·Godot 활용법',
@@ -2231,6 +2243,34 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-51b0810c-2026-09',
+            tab:         'industry',
+            headline:    '일본 게임 개발자 85.8%, 생성형 AI 사용 중 — TGS 2026서 CESA 조사 공개',
+            summary:     '일본 게임 개발자 85.8%가 생성형 AI를 업무에 활용 중이라는 CESA 설문 결과가 도쿄 게임쇼 2026에서 공개됐어요.',
+            body:        '<p>일본 게임업계 단체 CESA가 도쿄 게임쇼 2026 개막에 맞춰 공개한 설문 결과에 따르면, 일본 게임 개발자의 85.8%가 생성형 인공지능을 현재 업무에 활용 중이며 이 중 63%는 매일 사용한다고 밝혔어요. 작년 동일 조사에서는 51%였던 수치가 불과 1년 만에 34%포인트 이상 급등한 것으로, 캡콤·세가·레벨-5·코나미 등 대형 스튜디오를 포함해 총 1,349개 유효 응답을 집계한 결과예요. 불과 몇 년 전만 해도 소수 선구자들의 실험적 도입에 그쳤던 생성형 인공지능이 이제는 일본 게임 개발 현장 전반에서 일상적인 도구로 완전히 자리 잡았다는 사실을 보여주는 수치예요.</p><p>개발자들이 생성형 인공지능에 가장 기대하는 효과는 업무 효율 향상이었고, 개발 기간 단축과 비용 절감이 뒤를 이었어요. 특히 \'인공지능 결과물에 대한 인간의 검토·수정\'을 가장 중요한 안전장치로 꼽은 응답이 가장 많았는데, 이는 업계가 인공지능을 단순한 자동화 수단이 아닌 인간과 협업하는 파트너로 바라보는 성숙한 시각을 갖추고 있음을 보여줘요. 이미지 생성, 텍스트 작성, 코드 보조, 사운드 이펙트 제작 등 여러 분야에 인공지능이 고르게 쓰이고 있으며, 일부 스튜디오는 전용 생성형 인공지능 워크플로를 표준 개발 파이프라인에 공식 통합했다고 해요.</p><p>이번 조사 결과는 일본뿐 아니라 전 세계 게임 개발 현장에서 생성형 인공지능이 이미 선택이 아닌 필수 도구로 자리 잡고 있음을 잘 보여줘요. 도쿄 게임쇼 현장에 인공지능 솔루션 기업들의 부스와 관련 세션이 예년보다 눈에 띄게 늘어난 것도 이와 같은 흐름이에요. 생성형 인공지능 도입을 아직 검토 중인 국내 팀이라면, 이미 업계 표준이 어느 방향으로 기울고 있는지 이번 데이터에서 충분히 실감할 수 있을 것 같아요.</p><p>원문: <a href="https://automaton-media.com/en/news/over-85-of-japanese-game-developers-use-generative-ai-in-game-development-2026-cesa-survey-shows-an-increase-from-last-years-51/">AUTOMATON WEST</a></p>',
+            source:      'AUTOMATON WEST',
+            publishedAt: '2026.09.18',
+            hue:         30,
+            image:       'https://images.pushsquare.com/eb8a083a08591/japan-game-development-ai.900x.jpg',
+            url:         'https://automaton-media.com/en/news/over-85-of-japanese-game-developers-use-generative-ai-in-game-development-2026-cesa-survey-shows-an-increase-from-last-years-51/',
+            urls: [
+                { label: '관련 보도', href: 'https://www.pcguide.com/news/over-85-of-game-devs-in-japan-use-generative-ai-says-new-report-previewed-at-tokyo-game-show-2026/' },
+                { label: '관련 보도', href: 'https://www.pushsquare.com/news/2026/09/japanese-game-development-is-now-riddled-with-generative-ai-industry-survey-finds' },
+            ],
+        },
+        {
+            id:          'industry-61d6f56b-2026-09',
+            tab:         'industry',
+            headline:    '도쿄 게임쇼 2026, 역대 최다 1,138개사 참가 — AI 기업 대거 진출',
+            summary:     '도쿄 게임쇼 2026이 30주년을 맞아 53개국 1,138개사 역대 최대 규모로 개막했으며, 인공지능 관련 기업들이 대거 참가해 주목받고 있어요.',
+            body:        '<p>도쿄 게임쇼 2026이 30주년을 맞아 지바 시 마쿠하리 멧세에서 개막했어요. 53개국 1,138개 기업이 참가하는 역대 최대 규모로, 9월 17일부터 21일까지 5일간 운영되며 약 30만 명이 찾을 것으로 기대돼요. 첫 회였던 1996년에 87개사·11만 명 방문객으로 시작한 것과 비교하면 참가 기업은 약 13배, 방문자는 약 2.7배로 늘어나 게임 산업이 글로벌 대형 엔터테인먼트 산업으로 성장했음을 실감하게 해줘요. 국내외 주요 스튜디오부터 신흥 인디 개발사까지 폭넓은 규모의 기업들이 한자리에 모인 만큼, 올해 도쿄 게임쇼는 그 어느 해보다 풍성한 볼거리를 제공하고 있어요.</p><p>올해 행사에서 특히 두드러진 건 생성형 인공지능 관련 기업들의 약진이에요. 텍스트 한 줄만으로 3D 캐릭터 모델을 자동 생성하는 서비스 등을 선보이는 업체들이 인공지능 테크놀로지 파빌리온에 14개사나 입점하며 개발자들의 눈길을 사로잡고 있어요. 스퀘어에닉스의 파이널 판타지 관련 신작, 캡콤의 몬스터 헌터 후속작, 세가의 신규 타이틀 등 대형 기대작들도 체험 부스를 운영하며 행사를 풍성하게 채웠어요. 산리오나 기억용 반도체 기업 키옥시아처럼 게임 업계 외부에서 처음으로 참가한 기업들도 등장해 게임 생태계의 경계가 그만큼 넓어졌음을 보여줘요.</p><p>게임 개발에 있어 생성형 인공지능의 영향력이 커지는 흐름을 반영하듯, 현장에서 인공지능 도구를 직접 체험할 수 있는 부스들이 특히 많은 관심을 모으고 있어요. 도쿄 게임쇼가 단순한 게임 쇼케이스를 넘어 차세대 개발 기술을 미리 엿볼 수 있는 장으로도 자리매김하고 있다는 사실을 이번 행사가 다시 한번 잘 보여줬어요.</p><p>원문: <a href="https://finance.biggo.com/news/b6a75d43-6a0e-459e-a1b5-7154d83c617d">BigGo Finance</a></p>',
+            source:      'BigGo Finance',
+            publishedAt: '2026.09.18',
+            hue:         20,
+            image:       'https://www.pcguide.com/wp-content/uploads/2026/09/Tokyo-Game-Show-2026-banner.jpg',
+            url:         'https://finance.biggo.com/news/b6a75d43-6a0e-459e-a1b5-7154d83c617d',
+        },
+        {
             id:          'industry-549fdcf2-2026-09',
             tab:         'industry',
             headline:    'Xsolla, AI 코딩 툴로 엔진 무관 게임 커머스 연동 지원하는 AI 툴킷 출시',
@@ -3944,6 +3984,46 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-8fea66bd-2026-09',
+            tab:         'art',
+            headline:    '구글 딥마인드, AGI 대비 싱크탱크 \'딥마인드 인스티튜트\' 설립',
+            summary:     '구글 딥마인드가 AGI의 사회적 영향을 연구하는 싱크탱크 \'딥마인드 인스티튜트\'를 공식 출범시켜 경제 정책·거버넌스·인간 번영 등의 주제를 다뤄요.',
+            body:        '<p>구글 딥마인드가 인공일반지능(AGI)이 사회에 미치는 영향을 연구하고 공개 토론하는 싱크탱크 \'딥마인드 인스티튜트\'를 공식 출범시켰어요. 데미스 하사비스 딥마인드 공동 창업자, 수석 과학자 쉐인 레그, 구글 기술·사회 담당 대표 제임스 매니이카가 기관을 이끌어요. 출범과 동시에 인공지능 경제 정책, 추론 투명성, 전 세계 접근성, 인간 번영 등 여러 주제를 다룬 초기 에세이들을 공개했으며, 컴퓨터 과학자·정책 전문가·인문학자 등 다양한 분야의 외부 연구자들과 함께하는 공동 논의도 앞으로 이어나갈 계획이에요. 이 기관은 특정 기업의 이익보다는 인류 전체의 관점에서 인공지능 발전에 대한 국제적 합의를 만드는 것을 핵심 목표로 삼고 있어요.</p><p>출범 에세이 중 특히 주목받은 건 경제 정책 분야예요. 인공지능으로 인한 노동 시장 충격에 대응하기 위한 11가지 정책을 평가하면서, 연구진은 기존의 보편적 기본소득보다 국민이 생산적 자산에 직접 지분을 가지는 \'보편적 기본 자본\' 방식이 더 효과적인 안전망이 될 수 있다는 제안을 담았어요. 또한 인공지능의 안전과 책임 문제는 한 나라의 규제만으로 해결할 수 없다며, 국제 협력을 통한 글로벌 거버넌스 수립의 필요성을 강조하고 있어요. 사이버 보안 취약성, 생물학적 위협, 자기 개선형 인공지능 시스템의 위험성 등 구체적인 기술적 우려 사항들도 폭넓게 다루고 있어요.</p><p>정부 주도 인공지능 감독 기구 설립이 업계 반발로 진전이 더딘 가운데, 민간이 주도하는 AGI 대응 논의의 장이 새롭게 열렸다는 점에서 많은 관심을 받고 있어요. 예술과 창작 분야에서도 인공지능의 역할이 날로 커지고 있는 만큼, 딥마인드 인스티튜트가 다루는 사회적·윤리적 논의는 게임 개발자와 디지털 아티스트들에게도 직접적인 영향을 미칠 주제예요.</p><p>원문: <a href="https://www.therundown.ai/news/artificial-intelligence/google-deepmind-launches-think-tank-to-prepare-society-for-agi">The Rundown AI</a></p>',
+            source:      'The Rundown AI',
+            publishedAt: '2026.09.18',
+            hue:         270,
+            image:       'https://www.androidheadlines.com/wp-content/uploads/2026/09/Google-DeepMind-Institute-AGI-platform-1420x790.webp',
+            url:         'https://www.therundown.ai/news/artificial-intelligence/google-deepmind-launches-think-tank-to-prepare-society-for-agi',
+            urls: [
+                { label: '관련 보도', href: 'https://www.axios.com/2026/09/16/google-deepmind-institute-agi' },
+                { label: '관련 보도', href: 'https://www.androidheadlines.com/2026/09/google-deepmind-launches-deepmind-institute-agi-debate.html' },
+            ],
+        },
+        {
+            id:          'art-83ab9cc4-2026-09',
+            tab:         'art',
+            headline:    'Anthropic, Claude에 Docs·Slides 통합 — AI 문서·프레젠테이션 시대 개막',
+            summary:     'Anthropic이 Claude 채팅과 Cowork를 하나로 합치고 문서(Docs)·슬라이드(Slides) 기능을 출시해 AI 기반 생산성 도구로 구글 워크스페이스에 도전장을 내밀었어요.',
+            body:        '<p>Anthropic이 Claude 채팅 인터페이스와 Cowork를 하나의 통합 공간으로 합치고, 채팅창에서 바로 문서(Docs)와 슬라이드(Slides)를 만들 수 있는 기능을 Pro·Max 플랜 이용자부터 순차 출시했어요. 이번 통합으로 사용자는 어떤 작업을 어떤 도구에서 해야 할지 고민할 필요 없이 Claude 하나로 대화, 문서 작성, 슬라이드 제작을 모두 처리할 수 있게 됐어요. 인공지능이 요청의 성격을 파악해 적절한 기능으로 자동 연결해 주므로, 창을 전환하거나 별도 앱을 열 필요가 없어요. 4월에 웹사이트·프로토타입 제작 도구로 선보였던 Claude Design도 이번 통합으로 인터페이스 전체에서 쓸 수 있게 됐어요.</p><p>새로운 문서 기능은 Claude와 함께 섹션을 만들고, 댓글을 달고, 수정하는 협업 편집 환경을 제공해요. 완성된 문서는 링크로 공유하거나 모바일에서 이어 편집하는 것도 가능해요. 슬라이드 기능은 발표 자료를 만들고 편집·발표까지 지원하며, PDF 또는 파워포인트 형식으로 내보내기도 돼요. 앞으로는 Word·Google Docs 형식 내보내기도 지원할 예정이라고 해요. 이런 기능들은 현재 Pro·Max 플랜부터 순차 제공되며, 이후 무료 플랜과 팀 플랜으로도 확대될 예정이에요.</p><p>이번 업데이트는 Cowork의 메모리 레이어 강화(대화 간 사용자 맥락 유지) 직후에 나온 것으로, Anthropic이 인공지능 기반 생산성 도구 시장에서 Google Workspace나 Microsoft 365에 도전하는 행보를 이어가고 있음을 보여줘요. 게임 개발자나 아티스트에게도 기획서·제안서·포트폴리오 슬라이드를 인공지능과 함께 빠르게 만들 수 있다는 점에서, 창작 워크플로 전반에 실질적인 영향을 줄 것으로 기대돼요.</p><p>원문: <a href="https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.18',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/09/Claude-1920x1080-1.jpeg',
+            url:         'https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/',
+        },
+        {
+            id:          'art-d005098b-2026-09',
+            tab:         'art',
+            headline:    'Pinterest, AI 인테리어 리스타일 기능 \'Restyle\' 베타 공개',
+            summary:     'Pinterest가 방 사진을 찍어 올리면 AI가 다양한 스타일로 인테리어를 바꿔 보여주는 \'Restyle\' 기능을 미국·캐나다 베타로 선보였어요.',
+            body:        '<p>Pinterest가 자신의 공간 사진을 올리면 인공지능이 다양한 가구·조명·데코 스타일로 바꿔 보여주는 \'Restyle\' 기능을 미국과 캐나다에서 베타로 공개했어요. 사용자는 방 사진을 업로드하면 가구, 벽 장식, 조명, 페인트 색상 등을 자유롭게 추가하거나 바꿔볼 수 있고, 보헤미안·인더스트리얼·위스미컬·도파민 컬러 등 다양한 디자인 스타일을 시각화할 수 있어요. 마음에 들지 않는 아이템은 교체·지우기·수정이 가능하고, 이미 핀 보드에 저장해 둔 아이템을 자신의 공간에 직접 대입해 볼 수도 있어요.</p><p>기술적 기반으로는 엔비디아 블랙웰 GPU, 엔비디아 Dynamo, 오픈소스 모델, 그리고 Pinterest 자체 기술을 결합한 \'Pinterest Intelligence\'가 핵심 엔진 역할을 해요. Pinterest는 이를 통해 시각 검색 처리 능력을 높이고, 사용자의 검색을 쇼핑 발견 신호로 전환하는 인공지능 기능도 강화했다고 밝혔어요. 현재 미국·캐나다 베타로 운영 중이며, 2026년 10월에 더 넓은 범위로 확대 출시할 예정이에요.</p><p>이 기능의 핵심 목표는 \'영감에서 실제 구매까지\'를 연결하는 것이에요. 사용자가 관심 아이템을 핀으로 저장하는 데 그치지 않고, 자신의 실제 공간에 어울리는지 시각적으로 확인한 뒤 구매로 이어지는 흐름을 만들겠다는 거예요. 게임 환경 아트 기획이나 배경 콘셉트를 빠르게 탐색하고 싶은 아티스트에게도 참고할 만한 인공지능 공간 시각화 사례로, 창작자들에게도 반가운 업데이트예요.</p><p>원문: <a href="https://techcrunch.com/2026/09/17/pinterest-teases-a-new-restyle-feature-that-lets-you-redesign-your-room-with-ai/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.18',
+            hue:         60,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/09/Restyle_dopamine.png?w=1024',
+            url:         'https://techcrunch.com/2026/09/17/pinterest-teases-a-new-restyle-feature-that-lets-you-redesign-your-room-with-ai/',
+        },
         {
             id:          'art-4aad8cb8-2026-09',
             tab:         'art',
