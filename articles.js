@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-3642fc3f-2026-09',
+            tab:         'games',
+            headline:    'Blender 5.3, 3D 가우시안 스플랫 네이티브 지원 추가 예정',
+            summary:     'Blender 5.3에 외부 애드온 없이 3D 가우시안 스플랫을 임포트·렌더링할 수 있는 네이티브 지원이 추가돼요.',
+            body:        '<p>Blender 5.3에 3D 가우시안 스플랫(3DGS) 네이티브 지원이 추가될 예정이에요. 그동안은 외부 애드온을 별도로 설치해야만 3DGS 파일을 불러오거나 렌더링할 수 있었는데, 이제 Blender 코어에 해당 기능이 기본 내장되어 별도 설정 없이 바로 사용할 수 있게 돼요. PLY·SPZ 형식의 파일 임포트를 지원하며, Cycles와 EEVEE를 포함해 Blender의 모든 렌더 엔진으로 스플랫을 직접 렌더링할 수 있어요. 다만 이번 버전에서는 익스포트 기능은 포함되지 않아요.</p><p>3D 가우시안 스플랫은 사진이나 영상으로부터 3D 장면을 재구성하는 기술이에요. 수많은 작은 반투명 프리미티브(가우시안)로 물체의 형태, 색상, 질감을 정밀하게 표현하며, 게임 배경 에셋, VR·AR 콘텐츠, 영상 합성 등 다양한 분야에서 실무 활용이 빠르게 늘어나고 있어요. 현재 알파 버전에서는 몇 가지 알려진 한계가 있어요. 성능 최적화가 아직 미흡하고, Cycles·EEVEE가 선형 공간에서 동작해 렌더링 정확도가 완벽하지 않아요. Apply Transform에서 스케일·회전·구면 조화 처리에 버그도 남아 있어요. Blender 5.3 알파는 9월 30일까지 진행되며, 최종 정식 릴리스는 11월 10일로 예정되어 있어요.</p><p>원문: <a href="https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.19',
+            hue:         220,
+            image:       'https://cdn.80.lv/api/upload/meta/50269/images/6aad30fbe5adf/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support',
+        },
+        {
             id:          'games-4f9d5b1e-2026-09',
             tab:         'games',
             headline:    'CD 프로젝트 레드, 포토그래메트리용 PBR 솔버 \'sigmaPBR\' 공개',
@@ -2242,6 +2254,33 @@ window.AIAD = {
     
         
     /* ---- industry ---- */
+        {
+            id:          'industry-884d4b6a-2026-09',
+            tab:         'industry',
+            headline:    '일본 게임 개발자 85.8%가 생성형 AI 사용 중 — TGS 2026 CESA 보고서',
+            summary:     'TGS 2026에서 공개된 CESA 조사에서 일본 게임 개발자의 85.8%가 생성형 AI를 업무에 활용하고 있는 것으로 나타났어요.',
+            body:        '<p>TGS 2026(도쿄 게임쇼)에서 공개된 CESA(일본컴퓨터엔터테인먼트협회) 조사에 따르면, 일본 게임 개발자의 85.8%가 생성형 AI를 업무에 적어도 가끔은 활용하고 있어요. 이 수치는 지난해 조사의 51%에서 크게 뛰어오른 것으로, 캡콤·세가·코나미 등의 회원사 소속 개발자·교육자·학생 1,349명을 대상으로 한 설문 결과예요. 응답자 중 63%는 정기적으로 사용한다고 밝혔으며, 생성형 AI를 전혀 사용하지 않는다는 응답자는 소수에 그쳤어요.</p><p>활용 용도 1위는 비주얼·이미지 생성이었으며, 이야기·텍스트 생성과 프로그래밍 지원이 뒤를 이었어요. 약 32%의 기업은 자체 게임 엔진 개발에도 AI를 도입하고 있다고 응답했어요. 기대 효과로는 업무 효율화와 생산성 향상이 가장 많이 꼽혔고, 개발 기간 단축과 비용 절감이 그 뒤를 이었어요. 대부분의 스튜디오는 AI 결과물을 그대로 사용하지 않고 반드시 사람이 검수·수정하는 내부 정책을 운영하고 있어요. CESA 전무이사 마스다 쓰토무는 생성형 AI 도입이 광범위하게 진행되고 있다고 평가하면서도, 저작권 및 창작자 보호와 기술 혁신 사이의 균형을 찾아야 한다고 강조했어요. 전체 조사 보고서는 12월 초 발표될 예정이에요.</p><p>원문: <a href="https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.19',
+            hue:         30,
+            image:       'https://cdn.80.lv/api/upload/meta/50279/images/6aada812739f5/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report',
+            urls: [
+                { label: '관련 보도', href: 'https://automaton-media.com/en/news/over-85-of-japanese-game-developers-use-generative-ai-in-game-development-2026-cesa-survey-shows-an-increase-from-last-years-51/' },
+            ],
+        },
+        {
+            id:          'industry-1adcacfc-2026-09',
+            tab:         'industry',
+            headline:    '미호요, AI 보이스 클로닝 소송에서 11만 2천 달러 손해배상 승소',
+            summary:     '미호요가 원신 임팩트 캐릭터 음성을 AI로 무단 복제한 업체를 상대로 소송을 제기해 중국 법원에서 11만 2천 달러 손해배상 판결을 받았어요.',
+            body:        '<p>미호요(MiHoYo)가 &lt;원신 임팩트&gt; 캐릭터 음성을 AI로 무단 복제해 배포한 서비스 업체를 상대로 낸 소송에서 승소했어요. 중국 상하이 법원은 피고에게 약 80만 위안(한화 약 1억 6천만 원, 미화 약 11만 2천 달러)의 손해배상을 명령했어요. 법원은 해당 AI 보이스 클로닝 서비스가 미호요의 저작권뿐만 아니라 성우의 이미지권까지 침해했다고 판단했어요. 해당 서비스는 원신 임팩트 캐릭터들의 음성 특성을 무단으로 AI에 학습시켜 합성 음성을 생성·배포해 왔어요.</p><p>이번 판결은 중국에서 AI 음성 복제와 관련한 저작권 분쟁의 첫 사례 중 하나로, 게임 업계 전반에 중요한 법적 선례로 자리 잡을 것으로 보여요. 생성형 AI 도구가 점점 정교해지면서 게임 캐릭터 IP를 무단으로 학습·복제하는 사례가 증가하고 있는 상황에서, 중국 법원이 이에 대해 강력한 법적 구제를 인정했다는 점에서 의미가 커요.</p><p>이번 결정을 계기로 다른 게임사들도 AI 기반 저작권 침해에 적극 대응할 수 있는 법적 근거를 갖게 됐으며, AI 음성 복제 규제 논의와 캐릭터 IP 보호 정책 수립도 더욱 빨라질 전망이에요. 국내 게임사들도 유사 사례에 대비해 AI 관련 법적 보호 장치를 강화하는 움직임이 예상돼요.</p><p>원문: <a href="https://www.gamedeveloper.com/business/mihoyo-wins-112-000-in-genshin-impact-ai-voice-cloning-lawsuit">Game Developer</a></p>',
+            source:      'Game Developer',
+            publishedAt: '2026.09.19',
+            hue:         0,
+            image:       'https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png?disable=upscale&width=1200&height=630&fit=crop',
+            url:         'https://www.gamedeveloper.com/business/mihoyo-wins-112-000-in-genshin-impact-ai-voice-cloning-lawsuit',
+        },
         {
             id:          'industry-51b0810c-2026-09',
             tab:         'industry',
