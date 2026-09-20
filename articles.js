@@ -29,6 +29,18 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-cfb6a596-2026-09',
+            tab:         'games',
+            headline:    'TGS 2026 AI 기술관: Mesh AI 3분 만에 3D 에셋 생성, 넥슨 온디바이스 AI 음성 캐릭터 구현',
+            summary:     '도쿄 게임쇼 2026 AI 기술관에 14개사가 참가해 3D 에셋 자동 생성, 온디바이스 음성 인식 등 개발 혁신 AI를 선보였어요.',
+            body:        '<p>도쿄 게임쇼(TGS) 2026의 AI 기술관에는 어도비·Thinking AI·Studio51·ZEAL·Mesh AI 등 14개 기업이 부스를 열고 게임 제작 파이프라인 전반을 혁신하는 AI 솔루션을 선보였어요. 올해 가장 주목받은 기술은 Mesh AI의 3D 에셋 생성 시스템으로, 텍스트로 원하는 오브젝트를 입력하면 수 초 내 2D 이미지가 만들어지고 곧바로 3D 모델이 자동 완성돼요. 기존에 숙련 아티스트가 한 달 이상 걸리던 작업을 단 3분으로 단축한다는 시연 결과가 참관객의 큰 호응을 얻었어요.</p><p>넥슨게임즈는 신작 \'파레이돌리아(Pareidolia)\'에 탑재한 온디바이스 AI 음성 인식 기술을 공개했어요. 플레이어가 캐릭터 이름을 부르거나 말을 건네면, 별도 서버 없이 기기 자체에서 처리한 뒤 캐릭터가 실시간으로 반응하는 방식이에요. 반응 속도가 빠르고 데이터가 외부로 전송되지 않아 개인정보 보호 면에서도 강점이 있어요. Thinking AI는 데이터 분석으로 휴면 사용자의 복귀 시점을 예측하는 시스템을, ZEAL의 Story AI는 시나리오 감성 흐름을 자동 평가하는 도구를 각각 선보이며 AI 활용이 개발 전 과정으로 확산되고 있음을 보여줬어요.</p><p>원문: <a href="https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026">Seoul Economic Daily</a></p>',
+            source:      'Seoul Economic Daily',
+            publishedAt: '2026.09.20',
+            hue:         215,
+            image:       'https://wimg.sedaily.com/news/cms/2026/09/19/news-p.v1.20260918.e2120863e5e04a0db64ec3bbb1177895_P1.jpg',
+            url:         'https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026',
+        },
+        {
             id:          'games-3642fc3f-2026-09',
             tab:         'games',
             headline:    'Blender 5.3, 3D 가우시안 스플랫 네이티브 지원 추가 예정',
@@ -2254,6 +2266,18 @@ window.AIAD = {
     
         
     /* ---- industry ---- */
+        {
+            id:          'industry-da6e7536-2026-09',
+            tab:         'industry',
+            headline:    '일본 게임사 85.8% "AI 이미 도입" — TGS 2026이 드러낸 산업 전환의 현실',
+            summary:     'CESA 조사에서 일본 게임사 85.8%가 생성형 AI를 도입 중이며, TGS 2026 현장은 이 수치를 직접 확인하는 장이 됐어요.',
+            body:        '<p>일본컴퓨터엔터테인먼트협회(CESA)의 최신 설문 결과 일본 게임 개발사의 85.8%가 생성형 AI를 이미 업무에 활용하고 있거나 도입을 진행 중인 것으로 나타났어요. 1년 전 동일 조사 대비 15%포인트 이상 증가한 수치로, AI 도입이 대형 퍼블리셔뿐 아니라 인디 스튜디오까지 산업 전반으로 빠르게 확산되고 있음을 보여줘요. 도입 목적으로는 \'업무 효율화·생산성 향상\'이 가장 많이 꼽혔고, 개발 기간 단축과 비용 절감이 그 뒤를 이었어요. 반면 \'창작 자체에 AI를 활용한다\'는 응답은 아직 소수에 머물러, 현재 AI는 주로 제작 지원 도구로 활용되고 있는 것으로 분석돼요.</p><p>도쿄 게임쇼(TGS) 2026 현장은 이 통계를 체감하는 무대가 됐어요. AI 기술관에는 3D 에셋 자동 생성, 온디바이스 음성 인식, 시나리오 감성 분석 등 제작 파이프라인 전 과정을 아우르는 AI 솔루션이 집결했어요. 업계 전문가들은 미국·중국과의 AI 격차에 대한 위기의식이 일본 게임사들의 도입을 더욱 가속화하고 있다고 분석했어요. \'경쟁사가 AI로 개발 속도와 품질을 끌어올리는 상황에서 기존 수작업만 고집하면 뒤처질 수밖에 없다\'는 위기감이 현장 곳곳에서 감지됐어요. AI 인프라 혁신이 글로벌 게임 시장의 새로운 경쟁 기준으로 자리 잡고 있다는 평가가 힘을 얻고 있어요.</p><p>원문: <a href="https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026">Seoul Economic Daily</a></p>',
+            source:      'Seoul Economic Daily',
+            publishedAt: '2026.09.20',
+            hue:         30,
+            image:       'https://wimg.sedaily.com/news/cms/2026/09/19/news-p.v1.20260918.e2120863e5e04a0db64ec3bbb1177895_P1.jpg',
+            url:         'https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026',
+        },
         {
             id:          'industry-884d4b6a-2026-09',
             tab:         'industry',
