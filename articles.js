@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-12a72505-2026-09',
+            tab:         'games',
+            headline:    'Animcraft 6.0, NVIDIA Kimodo 기반 AI 텍스트-투-애니메이션으로 게임 캐릭터 제작 혁신',
+            summary:     'Basefount의 Animcraft 6.0이 NVIDIA Kimodo 기반 텍스트-투-애니메이션과 AI 리깅 모듈을 공개했어요.',
+            body:        '<p>Basefount가 자사 애니메이션 라이브러리 소프트웨어 Animcraft 6.0을 출시하면서 두 가지 주요 AI 기능을 새로 선보였어요. 첫 번째는 자체 개발한 AI 캐릭터 리깅·스킨닝 모듈로, 수십억 개의 파라미터를 활용해 로컬에서 인퍼런스하며 3ds Max, Maya 등 다양한 DCC 애플리케이션과 연동돼요. 두 번째는 NVIDIA의 Kimodo 모션 생성 모델을 기반으로 한 클립 기반 텍스트-투-애니메이션 모듈로, 텍스트 프롬프트 하나로 사람·휴머노이드 캐릭터의 모션을 직접 생성할 수 있어요.</p><p>AI 리깅 모듈은 캐릭터의 구조를 자동으로 분석해 스킨 웨이트를 계산해주기 때문에, 게임 아티스트들이 가장 시간이 많이 걸리던 리깅·웨이트 페인팅 단계를 대폭 줄일 수 있어요. 텍스트-투-애니메이션 모듈은 타임라인 스플라이싱, 지면 경로 제어, 시작 프레임 포즈 제약 등의 옵션도 지원해서 원하는 모션을 더 세밀하게 조정할 수 있고요. 두 기능 모두 코어 애플리케이션과 별도로 구매하는 방식으로 제공되며, 가격 정책은 기존 Animcraft 5.0과 동일해요. 게임 캐릭터 제작 파이프라인에서 반복적이고 기술적인 작업을 AI가 처리해주니, 아티스트들이 캐릭터의 개성과 감정 표현 같은 창의적 부분에 더 집중할 수 있게 됐다는 점이 반갑네요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-20-september-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.21',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260920_NewCGSoftwareYouMayHaveMissed20September_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-20-september-2026/',
+            urls: [
+                { label: '영상', href: 'https://www.youtube.com/watch?v=CVA4jGHAbnA&vl=en' },
+            ],
+        },
+        {
             id:          'games-cfb6a596-2026-09',
             tab:         'games',
             headline:    'TGS 2026 AI 기술관: Mesh AI 3분 만에 3D 에셋 생성, 넥슨 온디바이스 AI 음성 캐릭터 구현',
@@ -4047,6 +4062,36 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-5b5b5d4d-2026-09',
+            tab:         'art',
+            headline:    '알리바바 Qwen-Image-2.1 공개: 70억 파라미터로 유료 클로즈드 모델 능가하는 오픈웨이트 이미지 생성 모델',
+            summary:     '알리바바가 소비자 GPU에서 동작하는 70억 파라미터 오픈웨이트 이미지 생성 모델 Qwen-Image-2.1을 공개했어요.',
+            body:        '<p>알리바바 Qwen 팀이 9월 20일 오픈웨이트 이미지 생성·편집 모델 Qwen-Image-2.1을 공개했어요. 시각 생성 컴포넌트는 70억 파라미터 규모로, 팀은 자체 벤치마크에서 주요 클로즈드 모델들을 능가한다고 밝혔어요. RTX 3090 같은 소비자용 GPU에서도 실행되며, Hugging Face·GitHub·ModelScope를 통해 누구나 내려받을 수 있어요.</p><p>Qwen-Image-2.1의 가장 눈에 띄는 특징은 최대 10장의 참조 이미지를 동시에 활용하는 능력이에요. 그룹 초상화 합성이나 가상 의류 피팅처럼 복잡한 작업도 참조 이미지를 여러 장 넣어주면 훨씬 자연스럽게 처리할 수 있어요. 또한 RGBA 투명 레이어를 네이티브로 생성·편집하고, 원형 마스크나 페인팅 표시를 활용한 로컬 수정도 지원해요. 아키텍처 변경과 KV 캐시 재사용 덕분에 멀티 참조 처리 시 추론 속도도 빨라졌다고 해요. 다만 연구 라이선스로 배포되기 때문에 상업적 활용을 위해서는 별도 계약이 필요하다는 점은 유의해야 해요. 전문가급 이미지 생성을 API 비용 없이 로컬에서 처리할 수 있는 선택지가 생긴 덕분에, 인디 아티스트와 소규모 스튜디오의 제작 환경이 더 넓어질 것으로 보여요.</p><p>원문: <a href="https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/">The Decoder</a></p>',
+            source:      'The Decoder',
+            publishedAt: '2026.09.21',
+            hue:         270,
+            image:       'https://the-decoder.com/wp-content/uploads/2026/09/qwen_image_demo.png',
+            url:         'https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/',
+            urls: [
+                { label: '모델 페이지', href: 'https://huggingface.co/Qwen/Qwen-Image-2.1' },
+            ],
+        },
+        {
+            id:          'art-e74015f0-2026-09',
+            tab:         'art',
+            headline:    'Runway, AI 영상 생성을 실시간 라이브스트림으로 전환하는 기술 연구 공개',
+            summary:     'Runway가 GWM-1 기반으로 프롬프트에 즉각 반응하는 실시간 AI 영상 스트리밍 기술 연구를 공개했어요.',
+            body:        '<p>Runway가 AI 영상 생성의 패러다임을 바꿀 수 있는 새로운 기술 연구를 공개했어요. 기존 방식은 프롬프트를 입력하고 수초에서 수분을 기다려야 완성된 영상을 받을 수 있었지만, 새 접근법은 사용자가 설명하는 즉시 영상이 실시간으로 스트리밍되는 형태로 전환하는 것을 목표로 해요. 핵심은 2025년 12월에 공개된 자체 GWM-1(General World Model)로, 프레임을 순차적으로 생성하면서 카메라 움직임이나 음성 입력 등 다양한 컨트롤에 즉각 반응해요.</p><p>기술적으로는 \'자기회귀적 인과 확산(autoregressive causal diffusion)\' 방식을 채택해 이전 프레임 전체를 다음 프레임 생성의 맥락으로 활용해요. 영상 생성에서 가장 까다로운 문제인 오류 누적도 독창적으로 해결했는데, 모델을 에러 없는 정답 데이터만으로 훈련하는 대신 자체 출력물로도 재학습시켜 스스로 편차를 교정하도록 했어요. Runway는 이 기술이 교육·게임·로보틱스 시뮬레이션처럼 실시간 인터랙티브 영상이 필요한 분야에 적용될 수 있다고 설명해요. 이미 GWM Robotics를 통해 로봇 훈련용 합성 데이터를 생성하고 있으며, Waymo도 자율주행 시나리오 시뮬레이션에 유사한 월드 모델을 활용하고 있어요. AI 영상이 \'기다리는 미디어\'에서 \'반응하는 미디어\'로 전환된다면, 크리에이터들의 작업 방식도 크게 달라질 것으로 기대돼요.</p><p>원문: <a href="https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time/">The Decoder</a></p>',
+            source:      'The Decoder',
+            publishedAt: '2026.09.21',
+            hue:         290,
+            image:       'https://the-decoder.com/wp-content/uploads/2026/09/runway-logo-wall-gpt-image-2-5.jpg',
+            url:         'https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time/',
+            urls: [
+                { label: '공식 사이트', href: 'https://runway.com/research' },
+            ],
+        },
         {
             id:          'art-8fea66bd-2026-09',
             tab:         'art',
