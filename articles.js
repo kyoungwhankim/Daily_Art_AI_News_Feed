@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-85ce9fbd-2026-09',
+            tab:         'games',
+            headline:    'Tripo AI, 게임 제작에 바로 쓸 수 있는 쿼드 메시 생성 모델 \'P2.0\' 출시',
+            summary:     'AI 3D 생성의 오랜 병목이던 리토폴로지를 없애는 쿼드 메시 네이티브 생성 모델이 등장했어요.',
+            body:        '<p>Tripo AI가 9월 21일 쿼드 도미넌트 메시를 네이티브로 생성하는 3D 모델 P2.0을 공개했어요. 기존 AI 3D 생성 모델은 불규칙한 삼각 메시를 출력해 아티스트가 별도의 리토폴로지 작업을 해야 했는데, P2.0은 게임·영화 파이프라인에서 바로 편집·리깅·애니메이션이 가능한 쿼드 메시를 처음부터 출력해요.</p><p>P2.0은 최대 2만 5,000개의 쿼드 페이스와 5만 개의 삼각 페이스를 지원하며, 하나의 프롬프트에서 최대 4가지 폴리곤 카운트 변형을 동시에 생성할 수 있어요. 특정 부위만 선택해 재생성하는 Mesh Edit 기능과 텍스처링에 필요한 Smart UV 언래핑도 포함돼 실무 편의성을 높였어요. 캐릭터, 차량, 건물, 소품 등 게임·인터랙티브 콘텐츠 제작을 주요 대상으로 삼고 있어요.</p><p>Tripo AI는 약 30억 위안 규모의 시리즈 B·B+ 투자를 유치했으며, 퍼펙트월드·블루포커스·37 인터랙티브 엔터테인먼트 등 게임 퍼블리셔들이 전략적 투자자로 참여해 3D 에셋 대량 생산 수요를 겨냥하고 있음을 보여줘요.</p><p>원문: <a href="https://runtimewire.com/article/tripo-ai-p2-native-quad-meshes-3d-generation">RuntimeWire</a></p>',
+            source:      'RuntimeWire',
+            publishedAt: '2026.09.23',
+            hue:         35,
+            image:       'https://runtimewire.com/og/tripo-ai-p2-native-quad-meshes-3d-generation.16x9.jpg?v=og2-1zbna9',
+            url:         'https://runtimewire.com/article/tripo-ai-p2-native-quad-meshes-3d-generation',
+            urls: [
+                { label: '공식 발표', href: 'https://www.prnewswire.com/news-releases/tripo-ai-releases-latest-model-tripo-p2-0--advancing-ai-3d-generation-with-production-ready-assets-302885481.html' },
+            ],
+        },
+        {
+            id:          'games-4fd382f1-2026-09',
+            tab:         'games',
+            headline:    'AI 3D 에셋이 게임 업계를 어떻게 바꾸고 있는가',
+            summary:     'GDC 설문에서 개발자 36%가 생성형 AI를 업무에 활용하고 있으며, 소규모 스튜디오의 에셋 탐색 방식이 달라지고 있어요.',
+            body:        '<p>GDC 2026 산업 현황 조사에 따르면 게임 개발자 2,300여 명 중 36%가 현업에서 생성형 AI를 사용하고 있으며, 그 중 19%는 에셋 생성 목적으로 활용하고 있어요. 텍스트 프롬프트나 이미지 한 장으로 3D 모델 초안을 빠르게 만들 수 있는 Meshy 같은 도구는 소규모 스튜디오가 사람이 손을 대기 전에 여러 에셋 후보를 비교하고 선별할 수 있게 해줘요. 아이디어 탐색 비용이 줄어들면서 좁은 예산과 팀으로도 더 넓은 비주얼 방향을 실험할 수 있는 환경이 만들어지고 있어요.</p><p>하지만 생성된 에셋이 곧 완성 에셋을 의미하지는 않아요. 폴리곤 밀도, 엔진 조명 아래 텍스처 품질, 애니메이션용 변형 품질, 라이선스 확인 등 사람이 검수해야 할 항목은 여전히 남아 있어요. GDC 조사에서 개발자 52%가 생성형 AI가 업계에 해롭다고 답했고, 비주얼·테크니컬 아트 직군은 그 비율이 64%에 달해 현장의 온도는 복잡해요. AI 도구가 탐색 단계의 비용을 낮추는 데는 효과적이지만, 최종 품질은 여전히 숙련된 아티스트의 판단에 달려 있다는 점이 업계 전반의 공통된 인식이에요.</p><p>원문: <a href="https://www.b2bnn.com/2026/09/how-ai-generated-3d-assets-are-changing-the-gaming-industry/">B2B News Network</a></p>',
+            source:      'B2B News Network',
+            publishedAt: '2026.09.23',
+            hue:         50,
+            image:       'https://www.b2bnn.com/wp-content/uploads/2026/09/E474CB82-3AC0-436F-BB63-C898FA53391C.jpeg',
+            url:         'https://www.b2bnn.com/2026/09/how-ai-generated-3d-assets-are-changing-the-gaming-industry/',
+        },
+        {
             id:          'games-12a72505-2026-09',
             tab:         'games',
             headline:    'Animcraft 6.0, NVIDIA Kimodo 기반 AI 텍스트-투-애니메이션으로 게임 캐릭터 제작 혁신',
@@ -4062,6 +4089,36 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-67da154a-2026-09',
+            tab:         'art',
+            headline:    'StepFun, 음성 인식 모델 \'StepAudio 3 ASR\' 공개 — 비스트리밍 1위·오류율 1.7%',
+            summary:     '중국 AI 스타트업 StepFun이 단어 오류율 1.7%로 비스트리밍 음성-텍스트 변환 1위를 차지했어요.',
+            body:        '<p>중국 AI 스타트업 StepFun이 9월 22일 음성 인식 모델 StepAudio 3 ASR을 발표했어요. AA-WER 인덱스 비스트리밍 음성-텍스트 변환 부문에서 단어 오류율(WER) 1.7%로 59개 모델 평가 1위를 기록했어요. 이는 전 세대 모델인 StepAudio 2.5 ASR의 4.7%에서 크게 개선된 수치로, 단 한 번의 업데이트로 오류율이 60% 이상 줄어든 거예요. 비스트리밍 방식은 오디오 파일을 실시간이 아닌 전체 처리 방식으로 변환하는 것으로, 기업 받아쓰기 파이프라인, 법률·의료 문서화, 미디어 자막 작업에 널리 쓰여요.</p><p>이번 업데이트로 영어 오류율은 25%, 방언은 22.3%, 의료·금융·법률 등 전문 분야는 42.1% 개선됐으며, 속삭임이나 음악 위 노래까지 인식하는 내구성도 갖췄어요. StepAudio 3는 ASR 외에도 실시간 대화(Realtime), 음성 합성(TTS), 음향·음악 생성(Gen·Music) 모델을 함께 출시해 완전한 오디오 스택을 구성했어요. 이 성과는 음성 인식 분야에서 기존 미국 업체들의 가격 경쟁력을 압박하는 신호로 읽히며, 콘텐츠 제작자와 미디어 기업에게도 주목받는 대목이에요.</p><p>원문: <a href="https://247wallst.com/cards/xpost-01m35d3gz7jgz4603zkq2vhdd7">247 Wall St.</a></p>',
+            source:      '247 Wall St.',
+            publishedAt: '2026.09.23',
+            hue:         290,
+            image:       'https://247wallst.com/og/card/01m35d3gz7jgz4603zkq2vhdd7.png',
+            url:         'https://247wallst.com/cards/xpost-01m35d3gz7jgz4603zkq2vhdd7',
+            urls: [
+                { label: '공식 발표', href: 'https://x.com/StepFun_ai/status/2099916376274313630' },
+            ],
+        },
+        {
+            id:          'art-a80c9ce2-2026-09',
+            tab:         'art',
+            headline:    'OpenAI, GPT-6 미드티어 \'Sol\'·\'Luna\' 출시 — API 비용 50% 이상 인하',
+            summary:     'OpenAI가 복잡한 작업용 Sol과 반복 작업용 Luna를 출시하며 전 세대 대비 API 가격을 절반으로 낮췄어요.',
+            body:        '<p>OpenAI가 9월 22일 GPT-6 계열 중간급 모델 Sol과 Luna를 출시했어요. Sol은 코딩·데이터 분석 등 복잡한 작업에, Luna는 문서 요약·정보 추출·간단한 질문 답변 같은 대량 반복 작업에 최적화됐어요. API 가격은 GPT-5.6 Sol·Luna 대비 50% 이상 인하됐으며, Sol은 입력 $2·출력 $10, Luna는 입력 $0.10·출력 $0.50(100만 토큰 기준)으로 제공돼요. OpenAI는 이 가격 인하가 캐싱과 추론 효율 개선 덕분이라고 설명했어요.</p><p>OpenAI는 두 모델이 전 세대 대비 사실 오류율을 약 50% 줄였다고 밝혔어요. 특히 GPT-6 Sol은 내부 사실 정확성 평가에서 플래그십 Astra 수준의 신뢰성을 훨씬 낮은 비용으로 달성했다고 강조했어요. 두 모델은 ChatGPT Work, Codex, ChatGPT API에서 유료 계정으로 즉시 사용 가능하며, Luna는 무료·Go 사용자와 데스크톱 앱에도 순차적으로 제공될 예정이에요. 이번 출시는 Anthropic의 Claude Opus 5.5 공개 90분 후 이뤄져 양사의 치열한 경쟁을 그대로 보여줬어요.</p><p>원문: <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.23',
+            hue:         260,
+            image:       'https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/',
+            urls: [
+                { label: '관련 보도', href: 'https://venturebeat.com/technology/openai-releases-gpt-6-sol-and-luna-models-slashing-api-costs-50-or-more' },
+            ],
+        },
         {
             id:          'art-5b5b5d4d-2026-09',
             tab:         'art',
