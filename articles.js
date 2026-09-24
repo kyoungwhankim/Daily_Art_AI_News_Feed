@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-2836fe78-2026-09',
+            tab:         'games',
+            headline:    'Ludo.ai, 게임 개발자를 위한 AI 텍스처 생성 도구 출시',
+            summary:     '텍스트 프롬프트로 심리스 게임 텍스처를 자동 생성하는 Ludo.ai의 신규 도구가 출시됐어요.',
+            body:        '<p>Ludo.ai가 2026년 9월, 텍스트 프롬프트 하나로 게임 환경에 바로 적용할 수 있는 심리스 텍스처를 생성하는 AI 텍스처 제너레이터를 새롭게 출시했어요. 이끼 낀 돌, 맑은 바다, 용암, 눈 덮인 지면처럼 원하는 표면을 설명하면 상하좌우 모든 방향으로 이음새 없이 반복되는 타일 텍스처가 수 분 안에 완성돼요. 핸드페인티드·픽셀아트·수채화·코믹북·네온 등 30가지 이상의 아트 스타일을 지원해, 같은 프롬프트로 프로젝트 전체의 텍스처를 일관된 스타일로 뽑아낼 수 있어요.</p><p>가장 주목할 기능은 같은 텍스처를 모션 프롬프트로 4~64프레임의 루프 애니메이션으로 변환하는 기능이에요. 잔잔히 흔들리는 물결, 끓어오르는 용암, 흘러가는 구름처럼 반복 동작하는 표면을 스프라이트 시트로 내보내 엔진의 쿼드나 스크롤 플레인에 바로 얹을 수 있어요. 앱 내 미리보기로 타일링과 애니메이션 상태를 확인하고, 32~384px 범위에서 해상도를 조정하거나 AI 업스케일로 품질을 높일 수 있어요. Claude나 Cursor 같은 AI 코딩 도구와의 MCP 통합도 지원해서 텍스처 생성을 개발 파이프라인에 자동화로 연결할 수 있어, 반복 텍스처 제작에 시간을 쏟아온 인디 개발자와 소규모 스튜디오에 실질적인 생산성 향상을 기대할 수 있어요.</p><p>원문: <a href="https://ludo.ai/tools/texture-generator">Ludo.ai</a></p>',
+            source:      'Ludo.ai',
+            publishedAt: '2026.09.24',
+            hue:         30,
+            image:       'https://ludo.ai/images/anim-expansion-v1/texture-hero-runes-static.webp',
+            url:         'https://ludo.ai/tools/texture-generator',
+        },
+        {
+            id:          'games-7d03eefc-2026-09',
+            tab:         'games',
+            headline:    'Meshy-7.1, 사진 한 장으로 게임·3D 프린팅용 모델 생성 — 실제 테스트 결과는?',
+            summary:     '3Dnatives가 AI 3D 모델 생성기 Meshy-7.1을 9가지 피사체로 직접 테스트한 결과를 공개했어요.',
+            body:        '<p>AI 3D 모델 생성 도구 Meshy가 게임 아트 프로토타이핑과 3D 프린팅 양쪽에서 쓸 만한 수준에 이르렀는지 확인하기 위해, 3Dnatives 리뷰팀이 마스코트 피규어·자동차·시계·성당·AI 생성 이미지 등 9가지 피사체로 Meshy-7.1을 직접 테스트한 결과를 2026년 9월 23일 공개했어요. 사진 한 장을 올리면 약 1분 안에 메시가 완성되고, STL·3MF·OBJ·GLB 등 다양한 포맷과 Bambu Studio를 포함한 8개 슬라이서로 원클릭 내보내기가 지원돼요.</p><p>간단한 피사체에서는 훌륭한 결과를 보였지만 한계도 뚜렷했어요. 마스코트와 자동차처럼 배경이 단순하고 여러 방향에서 촬영한 경우 깔끔한 단일 솔리드 메시가 나왔어요. 반면 복잡한 시계처럼 얇은 부품이 많은 오브젝트는 수십 개의 분리된 조각으로 나뉘었고, 작은 글자나 로고는 뭉개져 알아볼 수 없는 수준이었어요. 또한 모든 내보내기 파일의 높이가 일률적으로 50mm로 고정되어 실제 스케일을 슬라이서에서 직접 조정해야 하는 번거로움도 있어요. 배경이 단순한 피사체의 게임 아트 프로토타이핑이나 간단한 3D 프린팅 소품 제작에는 충분히 활용할 수 있는 수준의 도구예요.</p><p>원문: <a href="https://www.3dnatives.com/en/3dnatives-lab-meshy-ai-3d-model-generator-23092026/">3Dnatives</a></p>',
+            source:      '3Dnatives',
+            publishedAt: '2026.09.24',
+            hue:         200,
+            image:       'https://www.3dnatives.com/en/wp-content/uploads/sites/2/2026/09/cover-D_montage-1.jpg',
+            url:         'https://www.3dnatives.com/en/3dnatives-lab-meshy-ai-3d-model-generator-23092026/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.meshy.ai' },
+            ],
+        },
+        {
             id:          'games-85ce9fbd-2026-09',
             tab:         'games',
             headline:    'Tripo AI, 게임 제작에 바로 쓸 수 있는 쿼드 메시 생성 모델 \'P2.0\' 출시',
@@ -4089,6 +4116,47 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-5bb3e831-2026-09',
+            tab:         'art',
+            headline:    '소니 뮤직, AI 정책 연합 ARIAM에 최초 음악사로 합류',
+            summary:     '소니 뮤직이 ARIAM AI 정책 연합에 음악 회사 최초로 합류해 창작자 권리 보호에 적극 나섰어요.',
+            body:        '<p>소니 뮤직 그룹이 2026년 9월 23일, AI 콘텐츠 정책 연합 ARIAM(Alliance for Responsible Innovation in the Arts &amp; Media)에 최초의 음악 회사로 합류했어요. 2026년 6월 로스앤젤레스에서 출범한 ARIAM은 디즈니·BBC·뉴욕타임스·파이낸셜타임스·어도비 등 영화·방송·언론·교육·기술 분야 주요 기업들이 참여하는 크리에이티브 AI 거버넌스 연합으로, 저작권 보호에 국한하지 않고 창작자와 소비자 모두를 아우르는 \'책임 설계(responsibility-by-design)\' 원칙을 핵심 가치로 내세우고 있어요.</p><p>소니 뮤직 최고운영책임자 케빈 켈러허는 "생성 AI는 아티스트와 작곡가에게 중요한 기회이자 도전이며, AI가 인간 예술성을 중심에 두고 책임감 있게 개발될 때만 혁신·창작자·소비자 모두가 상생하는 환경이 가능하다"고 밝혔어요. 소니 뮤직은 현재 AI 음악 생성 서비스 수노·우디오와 각각 저작권 침해 소송을 진행 중인 가운데 ARIAM 가입까지 더해, 음악 업계에서 AI 관련 창작자 권리 보호의 상징적 주체로 더욱 확고히 자리매김하고 있어요. 이번 합류는 AI 영상·텍스트를 넘어 음악 분야에서도 업계 차원의 책임 있는 AI 거버넌스 구축이 본격화되는 흐름을 보여줘요.</p><p>원문: <a href="https://www.musicbusinessworldwide.com/sony-music-group-becomes-first-music-company-to-join-ai-policy-coalition-ariam-alongside-disney-the-bbc-and-the-new-york-times/">Music Business Worldwide</a></p>',
+            source:      'Music Business Worldwide',
+            publishedAt: '2026.09.24',
+            hue:         350,
+            url:         'https://www.musicbusinessworldwide.com/sony-music-group-becomes-first-music-company-to-join-ai-policy-coalition-ariam-alongside-disney-the-bbc-and-the-new-york-times/',
+        },
+        {
+            id:          'art-61101ae3-2026-09',
+            tab:         'art',
+            headline:    '구글, 게임·인터랙티브 미디어용 AI 음성 합성 모델 Gemini 3.8 Flash TTS 출시',
+            summary:     '구글이 Gemini 3.8 Flash TTS를 출시해 게임·팟캐스트용 고품질 AI 음성 합성 서비스를 시작했어요.',
+            body:        '<p>구글이 2026년 9월 23일, Gemini 3.8 Flash TTS와 Flash-Lite TTS를 출시하고 Gemini API 및 AI Studio에서 즉시 사용 가능하도록 했어요. Flash TTS는 게임·오디오북·팟캐스트·인터랙티브 미디어처럼 깊은 캐릭터 표현이 필요한 창작 분야에 특화됐고, Flash-Lite TTS는 더빙·대규모 오디오 콘텐츠 생성처럼 높은 처리량과 낮은 비용이 중요한 영역을 겨냥해요. 두 모델 모두 최대 8,000토큰 텍스트를 입력받아 오디오를 바로 스트리밍으로 출력해요.</p><p>텍스트 설명으로 캐릭터 목소리를 직접 디자인하거나 약 30초 분량의 오디오 샘플로 목소리를 복제하는 기능이 핵심이에요. 웃음·한숨 같은 비언어적 표현도 인라인 태그로 제어할 수 있고, 한 번의 요청으로 두 화자가 등장하는 장면도 자연스럽게 생성할 수 있어요. API에는 30개 스튜디오 보이스가 기본 제공되고 확장 라이브러리를 더하면 130개 언어로 2,000개 이상의 보이스를 활용할 수 있어요. 게임 개발자 입장에서는 성우 섭외 없이도 프로젝트당 최대 200개의 커스텀 캐릭터 보이스를 관리할 수 있다는 점이 최대 장점으로, 대규모 AI NPC 대화 시스템 구축에 실질적인 도움이 될 것으로 보여요.</p><p>원문: <a href="https://www.progressiverobot.com/2026/09/23/gemini-3-8-flash-tts-flash-lite-tts-ai-studio/">Progressive Robot</a></p>',
+            source:      'Progressive Robot',
+            publishedAt: '2026.09.24',
+            hue:         270,
+            image:       'https://www.progressiverobot.com/wp-content/smush-webp/2026/09/gemini-3-8-flash-tts-flash-lite-tts-ai-studio_a-gemini-3.8-flash-tts-equaliser-row-of-seven-bars.jpg.webp',
+            url:         'https://www.progressiverobot.com/2026/09/23/gemini-3-8-flash-tts-flash-lite-tts-ai-studio/',
+            urls: [
+                { label: '공식 블로그', href: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/' },
+            ],
+        },
+        {
+            id:          'art-7a0b3764-2026-09',
+            tab:         'art',
+            headline:    'OpenAI, 오늘(9월 24일)부로 Sora API 완전 종료 — 1년 만에 막 내린 AI 영상 생성 플랫폼',
+            summary:     'OpenAI가 Sora API를 오늘부로 완전 종료하며 약 1년 만에 AI 영상 생성 플랫폼 서비스를 끝냈어요.',
+            body:        '<p>OpenAI가 2026년 9월 24일부로 Sora API를 공식 종료했어요. 웹·앱 서비스는 이미 4월 26일에 종료됐고, 오늘 API까지 닫히면서 2024년 말 출시 이후 약 2년 만에 Sora 서비스가 완전히 막을 내렸어요. 로이터에 따르면 OpenAI는 Sora 운영에 하루 약 100만 달러(약 13억 원)에 달하는 컴퓨팅 비용을 절감하고, 코딩 도구·기업 고객·에이전틱 제품에 집중하기 위해 Sora 서비스를 종료하기로 결정했어요. 실제로 Sora 앱의 설치 수는 2025년 12월~2026년 1월 두 달 만에 70% 이상 감소해 초기 관심이 지속적인 사용 습관으로 이어지지 못했어요.</p><p>특히 아쉬운 점은 디즈니와의 대형 협약이 실현되지 못한 채 서비스가 끝났다는 것이에요. OpenAI는 2025년 12월 디즈니·마블·픽사·스타워즈 등 200여 개 캐릭터를 Sora에서 프롬프트로 생성할 수 있는 3년 계약과 디즈니의 10억 달러 지분 투자를 발표했지만, 계약이 공식 체결되기 전에 서비스 종료가 결정됐어요. 개발자들은 Runway API·Google Flow·Adobe Firefly 영상 생성 등 대안으로 이전해야 하는 상황이에요. Sora의 종료는 스펙터클한 영상 생성 기술만으로는 지속 가능한 비즈니스를 만들기 어렵다는 현실적인 교훈을 AI 영상 업계 전반에 남겨줬어요.</p><p>원문: <a href="https://startupfortune.com/openai-shuts-down-soras-api-this-week-ending-its-billion-dollar-disney-deal/">Startup Fortune</a></p>',
+            source:      'Startup Fortune',
+            publishedAt: '2026.09.24',
+            hue:         10,
+            image:       'https://startupfortune.com/wp-content/uploads/2026/09/sora-openai-disney-1024x576.jpg',
+            url:         'https://startupfortune.com/openai-shuts-down-soras-api-this-week-ending-its-billion-dollar-disney-deal/',
+            urls: [
+                { label: '공식 안내', href: 'https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation' },
+            ],
+        },
         {
             id:          'art-67da154a-2026-09',
             tab:         'art',
