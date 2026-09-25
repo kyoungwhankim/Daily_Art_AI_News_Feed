@@ -29,6 +29,33 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-45b7f3e6-2026-09',
+            tab:         'games',
+            headline:    'Adobe, AI 이미지·영상 업스케일링 전문사 Topaz Labs 인수 완료',
+            summary:     'Adobe가 AI 업스케일링 전문 기업 Topaz Labs 인수를 9월 24일 공식 완료했어요.',
+            body:        '<p>Adobe가 AI 이미지·영상 강화 전문 기업 Topaz Labs의 인수를 2026년 9월 24일 공식 완료했어요. Topaz Labs는 영상 복원, 화질 개선, 자연스러운 결과물로 유명한 AI 기술을 보유한 회사로, 영화 제작자·사진가·디자이너들이 널리 사용해왔어요. 대표 제품으로는 영상 업스케일링용 Astra와 이미지 편집용 Wonder가 있고, 2025년 에미상 영상 기술 부문을 수상하기도 했어요.</p><p>인수를 통해 Adobe는 Topaz Labs의 AI 모델을 Firefly와 Photoshop에 통합할 예정이에요. 자체 개발한 Neurostream 기술 덕분에 사용자는 AI 모델을 로컬 기기나 클라우드에서 처리할 수 있게 돼요. 앞으로 아카이브 영상 복원, 저조도 개선, 모바일 영상 향상, 대형 스크린 최적화, 크리에이티브 업스케일링 기능이 순차적으로 추가될 예정이에요. Topaz Labs는 독립 브랜드로 유지되며 기존 앱과 모델도 계속 운영돼요.</p><p>게임 아티스트와 디지털 크리에이터들이 즐겨 쓰는 Topaz Labs 도구들이 Adobe 생태계 안으로 들어오면서, 기존 Adobe 작업 흐름에서 AI 업스케일링을 바로 활용할 수 있는 길이 열렸어요. Adobe는 올해 6월 인수 계획을 발표하고 규제 승인을 기다려왔어요.</p><p>원문: <a href="https://80.lv/articles/adobe-completes-acquisition-of-ai-image-video-upscaling-company-topaz-labs">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.25',
+            hue:         210,
+            image:       'https://cdn.80.lv/api/upload/meta/50350/images/6ab4d12c333a9/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/adobe-completes-acquisition-of-ai-image-video-upscaling-company-topaz-labs',
+        },
+        {
+            id:          'games-1bf99aee-2026-09',
+            tab:         'games',
+            headline:    'OTOY, OctaneRender 2027.1 알파 공개 — 신경 렌더링 모드와 AI Light 2.0 탑재',
+            summary:     'OTOY가 신경 렌더링 모드와 AI Light 2.0을 탑재한 OctaneRender 2027.1 알파를 공개했어요.',
+            body:        '<p>OTOY가 GPU 프로덕션 렌더러 OctaneRender 2027.1의 공개 알파 빌드를 배포하기 시작했어요. 핵심 신기능은 \'뉴럴 렌더링 모드\'와 업그레이드된 \'AI Light 2.0\'이에요. 뉴럴 렌더링 모드는 렌더 타임에 학습하는 신경 네트워크를 이용해 서브서피스 스캐터링 같은 복잡한 씬에서도 매우 적은 샘플 수로 거의 노이즈 없는 인터랙티브 렌더링을 가능하게 해요. NVIDIA DLSS의 레이 리컨스트럭션 기술과 OTOY 자체 연구를 결합한 결과예요.</p><p>AI Light 2.0은 모든 발광 프리미티브의 완전한 공간·방향 정보를 통합해 복잡한 다중 광원 씬에서 노이즈를 크게 줄여줘요. DLSS 4와 AMD FSR 3 업스케일링 지원도 추가됐어요. 알파 2에서는 회절·박막 간섭·복굴절 등 파동 광학 표면 효과를 재현하는 Physical Optics 머티리얼이 추가됐고, 알파 3에서는 SDF를 폴리곤 메시로 베이크하는 기능과 OCIO 2.5 지원이 들어왔어요. USD 익스포트 및 MaterialX 확장, glTF 2.0 지원도 포함돼요.</p><p>향후 안정 빌드에는 PBR 머티리얼 자동 생성, 3D 가우시안 스플랫 렌더링, 애니메·스케치 렌더러 등 추가 AI 기능이 예정돼 있어요. 게임 아트 파이프라인에서 머티리얼 제작과 렌더링 속도 모두 크게 개선될 것으로 기대돼요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/otoy-releases-octanerender-2027-1-in-alpha/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.25',
+            hue:         220,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/03/260316_OctaneRender20271_AILight.jpg',
+            url:         'https://www.cgchannel.com/2026/09/otoy-releases-octanerender-2027-1-in-alpha/',
+            urls: [
+                { label: '공식 데모', href: 'https://home.otoy.com/render/octane-render/demo/#x' },
+            ],
+        },
+        {
             id:          'games-2836fe78-2026-09',
             tab:         'games',
             headline:    'Ludo.ai, 게임 개발자를 위한 AI 텍스처 생성 도구 출시',
@@ -4116,6 +4143,33 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-d922e5e4-2026-09',
+            tab:         'art',
+            headline:    'Inkitt, AI로 대본을 영화로 바꾸는 \'Movie Creator\' 정식 출시',
+            summary:     '스토리 플랫폼 Inkitt이 텍스트 대본을 AI 영화로 변환하는 \'Movie Creator\'를 공개했어요.',
+            body:        '<p>스토리 플랫폼 Inkitt이 자체 AI 오케스트레이션 프레임워크 Cinematica를 이용해 텍스트 대본을 영상으로 변환하는 \'Movie Creator\'를 2026년 9월 24일 공개했어요. Cinematica는 ByteDance의 Seedance, MiniMax H3 등 여러 영상 생성 모델을 품질·비용에 따라 동적으로 선택하며, 캐릭터 일관성·음성 연속성·배경 매칭·카메라 워크 같은 영화적 요소를 자동 처리해 장편 콘텐츠 제작을 가능하게 해요.</p><p>핵심 강점은 \'전문성의 하네스화\'예요. Inkitt의 영상 프로듀서 15명이 매일 최적화 사이클에 참여하며, 캐릭터 피부 표현이나 다중 등장인물의 공간적 일관성 같은 반복 문제 해결법을 Cinematica에 지속적으로 축적해요. 생성 비용은 영상 1분당 약 20~21달러(패키지에 따라 다름)이며, 모델에 종속되지 않아 새 모델이 나와도 유연하게 교체할 수 있어요.</p><p>이 사례는 기업 경쟁력이 단순한 AI 모델 접근이 아니라, 자사 전문가의 노하우를 AI 하네스에 내재화하는 역량에서 온다는 점을 잘 보여줘요. AI 영상 제작 파이프라인의 프로덕션 레벨 접근법으로 크리에이티브 업계에서 주목받고 있어요.</p><p>원문: <a href="https://venturebeat.com/technology/should-your-enterprise-build-a-custom-ai-harness-inkitt-did-for-ai-video-5-key-takeaways">VentureBeat</a></p>',
+            source:      'VentureBeat',
+            publishedAt: '2026.09.25',
+            hue:         290,
+            image:       'https://images.ctfassets.net/jdtwqhzvc2n1/6OS9AQAETGiq6hw2EpKRr0/561c2741651b03ba08f73634cb8b491a/ChatGPT_Image_Sep_24__2026__03_02_58_PM.png',
+            url:         'https://venturebeat.com/technology/should-your-enterprise-build-a-custom-ai-harness-inkitt-did-for-ai-video-5-key-takeaways',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.inkitt.com/video/script-to-video' },
+            ],
+        },
+        {
+            id:          'art-368e9d91-2026-09',
+            tab:         'art',
+            headline:    'ElevenLabs, 기업 가치 약 30조 원 달성 — CEO가 말하는 수익성·IPO 계획',
+            summary:     'AI 음성 기업 ElevenLabs가 22억 달러(약 30조 원) 기업 가치를 인정받았어요.',
+            body:        '<p>AI 음성 기술 스타트업 ElevenLabs가 투자자들로부터 220억 달러(약 30조 원)의 기업 가치를 인정받았다고 TechCrunch가 2026년 9월 24일 보도했어요. 설립 4년 만에 연 반복 매출(ARR) 6억 달러를 달성했으며, 기업 고객(Klarna·Deutsche Telekom·Cisco·Adobe 등)이 전체 매출의 55% 이상을 차지해요. Klarna만 해도 미국 3500만 명 고객의 AI 음성 응대에 ElevenLabs를 사용해요.</p><p>CEO Mati Staniszewski는 \'대화형 AI의 튜링 테스트를 통과하는 것\'이 목표라고 밝혔어요. 모델 수준의 품질 격차가 향후 3~5년 내에 좁혀질 것이라고 인정하면서도, 현재는 여전히 의미 있는 차별화가 가능하다고 봐요. 마진보다 시장 점유율 확대를 우선시하는 전략을 택하고 있으며, 모든 고객에게 KYC 인증을 요구해 보안도 강화하고 있어요.</p><p>IPO는 2028년 무렵을 준비 중이라고 알려졌지만, CEO는 구체적 시기에 대해 신중한 입장을 유지했어요. 크리에이티브 산업 전반에서 AI 음성 레이어가 얼마나 빠르게 성장하고 있는지 보여주는 사례로, 앞으로 AI 음성 기술이 게임·영상·엔터테인먼트 콘텐츠 제작에도 깊숙이 스며들 것으로 보여요.</p><p>원문: <a href="https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.25',
+            hue:         30,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/07/Mati-Staniszewski_SXSW.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/',
+        },
         {
             id:          'art-5bb3e831-2026-09',
             tab:         'art',
