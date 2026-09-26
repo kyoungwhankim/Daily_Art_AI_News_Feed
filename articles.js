@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-87621e4d-2026-09',
+            tab:         'games',
+            headline:    '게임컴 2026: 게임 개발 현장을 바꾸는 3D 아트 & AI 기술 하이라이트',
+            summary:     '게임컴 2026에서 NVIDIA DLSS 4.5와 Tripo AI P2.0 등 게임 개발을 혁신할 3D·AI 기술이 대거 공개됐어요.',
+            body:        '<p>게임컴 2026에서 NVIDIA와 Tripo AI가 게임 개발 파이프라인을 혁신할 3D·AI 기술을 대거 공개했어요. NVIDIA는 DLSS 4.5 레이 리컨스트럭션에 2세대 트랜스포머 모델을 적용했는데, 연산 용량이 35% 증가하고 파라미터가 20% 늘어 실시간 레이 트레이싱 환경에서 디테일과 시간적 안정성이 크게 향상됐어요. 함께 공개된 RTX 메가 지오메트리는 《기어스 오브 워: E-Day》를 통해 시연됐으며, 수많은 고밀도 지오메트리가 담긴 씬에서도 파괴 연출·정교한 조명과 레이 트레이싱을 실용적으로 결합할 수 있게 해줘요.</p><p>Tripo AI는 3D 네이티브 파운데이션 모델 P2.0를 공식 출시하며 생성형 3D 툴의 새 기준을 제시했어요. P2.0은 쿼드 메시를 네이티브로 생성하고, 하나의 컨셉에서 최대 4가지 에셋 변형을 만들며, 특정 부위만 재생성하는 Mesh Edit 기능과 다각도 참조 이미지 입력도 지원해요. Tripo와 OpenAI Astra를 연동한 워크플로로 약 4시간 만에 플레이어블 3D 게임을 제작한 데모도 화제를 모았어요. AI 3D 생성 툴이 단순 모델 생성을 넘어 팀 협업·파이프라인 자동화·엔진 내보내기까지 아우르는 풀 프로덕션 워크플로로 진화하고 있다는 점이 올해 게임컴의 가장 중요한 기술 시그널이에요.</p><p>원문: <a href="https://80.lv/articles/the-biggest-3d-art-technology-highlights-from-gamescom-2026">80.lv</a></p>',
+            source:      '80.lv',
+            publishedAt: '2026.09.26',
+            hue:         40,
+            image:       'https://cdn.80.lv/api/upload/meta/50284/images/6aae39efbbe19/contain_1200x630.jpg',
+            url:         'https://80.lv/articles/the-biggest-3d-art-technology-highlights-from-gamescom-2026',
+            urls: [
+                { label: 'NVIDIA 발표', href: 'https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/#gears-of-war-e-day' },
+            ],
+        },
+        {
             id:          'games-45b7f3e6-2026-09',
             tab:         'games',
             headline:    'Adobe, AI 이미지·영상 업스케일링 전문사 Topaz Labs 인수 완료',
@@ -2362,6 +2377,18 @@ window.AIAD = {
     
         
     /* ---- industry ---- */
+        {
+            id:          'industry-ac60b0af-2026-09',
+            tab:         'industry',
+            headline:    '닛폰이치 CEO, AI 도입은 신중하게... 속도보다 품질 우선',
+            summary:     '닛폰이치 CEO가 AI를 적극 연구하면서도 개발 속도가 아닌 결과물 품질 향상을 AI 도입의 최우선 기준으로 삼겠다고 밝혔어요.',
+            body:        '<p>닛폰이치 소프트웨어의 CEO 사루하시 켄조가 PAX 웨스트에서 코타쿠와의 인터뷰를 통해 자사의 AI 도입 현황과 철학을 공개했어요. 디스가이아 시리즈로 잘 알려진 닛폰이치는 현지화와 게임 개발 분야에서 AI 활용 가능성을 적극 연구 중이에요. 사루하시 CEO는 "많은 기업이 AI를 활용하고 있기 때문에 우리도 연구하고 있다"면서도, AI가 반드시 개발 속도를 높이는 건 아니라는 점을 분명히 했어요. AI 도입의 기준은 효율이 아니라 게임 품질 향상이어야 한다는 게 그의 핵심 입장이에요.</p><p>회사는 전 세계 동시 발매를 앞당기기 위해 현지화 역량 강화를 목표로 하고 있으며, AI가 이 과정에서 실질적인 품질 개선에 기여할 수 있는지를 신중하게 검토하고 있어요. 다른 스튜디오들이 AI로 효율 극대화에 집중하는 흐름 속에서, 닛폰이치의 신중한 접근법은 창작 완성도를 중심에 둔 AI 도입 전략이 어떤 모습인지 잘 보여주는 사례예요.</p><p>원문: <a href="https://kotaku.com/nippon-ichi-nis-america-head-company-researching-ai-2000737211">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.09.26',
+            hue:         30,
+            image:       'https://kotaku.com/app/uploads/2026/09/village-in-the-shade-shot.jpg',
+            url:         'https://kotaku.com/nippon-ichi-nis-america-head-company-researching-ai-2000737211',
+        },
         {
             id:          'industry-da6e7536-2026-09',
             tab:         'industry',
