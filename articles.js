@@ -2394,6 +2394,17 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-4236e7e5-2026-09',
+            tab:         'industry',
+            headline:    '메타, 텍스트 프롬프트로 플레이어블 게임 만드는 AI 툴 \'Horizon Create·Studio\' 출시',
+            summary:     '메타가 자연어 설명만으로 2D·3D 게임을 만들 수 있는 생성형 AI 플랫폼 두 가지를 공개했어요.',
+            body:        '<p>메타가 9월 27일, 자연어 설명 한 줄만으로 플레이어블 2D·3D 게임을 제작할 수 있는 생성형 AI 플랫폼 두 가지를 발표했어요. 모바일 앱 \'Horizon Create\'는 언제 어디서나 빠르게 게임을 만들 수 있도록 설계됐고, 웹 기반 \'Horizon Studio\'는 게임 메카닉, 아트 방향, 난이도, 진행 시스템을 더욱 세밀하게 조정할 수 있는 고급 기능을 제공해요. 두 플랫폼 모두 Meta Horizon Engine의 렌더링과 물리 시뮬레이션 인프라 위에서 작동하며, 사용자가 원하는 게임을 텍스트로 묘사하면 시스템이 즉시 플레이어블한 결과물을 생성해 줘요.</p><p>메타의 Horizon 담당 부사장은 이 도구들이 "러프 스케치가 아니라 완성된 플레이어블 경험"을 만들어 준다고 강조하며, 코딩이나 3D 모델링 지식 없이도 누구나 게임 개발에 도전할 수 있는 시대가 열렸다고 밝혔어요. 게임 생성 후에도 추가 프롬프트로 환경·캐릭터·퀘스트를 반복 수정할 수 있고, 완성된 게임은 Facebook과 Instagram에 바로 배포할 수 있어요. 메타는 이 플랫폼을 통해 사용자 생성 콘텐츠 시장에서 경쟁력을 강화하고 메타버스 전략을 가속할 계획이에요. 다만 AI 생성 게임의 독창성과 품질에 대한 우려도 함께 제기되고 있어, 실제 활용 결과는 두고 봐야 할 것 같아요.</p><p>원문: <a href="https://www.cryovex.com/meta-ai-game-tools-launches-build-playable-games/">Cryovex / Meta</a></p>',
+            source:      'Cryovex / Meta',
+            publishedAt: '2026.09.28',
+            hue:         30,
+            url:         'https://www.cryovex.com/meta-ai-game-tools-launches-build-playable-games/',
+        },
+        {
             id:          'industry-dcca47f9-2026-09',
             tab:         'industry',
             headline:    'Meta의 AI 게임 생성 도구, 업계는 냉소적 — "AI 슬롭" 평가도',
@@ -4201,6 +4212,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-bce857c9-2026-09',
+            tab:         'art',
+            headline:    '일본 성우 츠다 켄지로, 틱톡의 AI 음성 복제에 소송 제기',
+            summary:     '주술회전·유희왕 성우 츠다 켄지로가 AI로 자신의 바리톤 음성을 복제한 TikTok 계정에 소송을 제기했어요.',
+            body:        '<p>주술회전과 유희왕으로 유명한 일본 성우 츠다 켄지로(55)가 자신의 목소리를 AI로 복제한 TikTok 계정을 상대로 도쿄지방법원에 소송을 제기했어요. 익명 계정이 그의 깊고 윤기 있는 바리톤 음성을 AI로 생성해 도시전설·오컬트·음모론 영상에 무단 사용했다는 것이 핵심 주장이에요. 해당 계정은 한때 구독자 20만 명 이상을 보유했으며, 월 50만 엔(약 320만 원) 이상의 수익을 올린 것으로 추산돼요. TikTok 측은 문제의 목소리가 "일반적인 남성 음성"에 불과하며 츠다의 음성과의 유사성은 주관적이라고 반박하고 있어요.</p><p>이번 소송은 AI가 개인의 음성 정체성을 침해하는 행위에 대해 일본에서 제기된 첫 사례로, 이번 주 수요일로 예정된 판결이 창작자의 목소리 권리 보호에 중요한 선례를 세울 수 있어요. 일본배우조합 사무총장은 성우의 목소리는 "수년간의 훈련과 수련의 결과물"이라며 츠다를 전폭 지지한다고 밝혔고, 일본 성우들은 허가 없는 AI 음성 복제에 반대하는 \'No More\' 캠페인도 함께 전개하고 있어요. 와세다대학교 지식재산권 교수는 츠다의 주술회전 역할로 그의 목소리가 유럽에서도 높은 인지도를 가진 만큼 이번 판결이 국제적으로도 큰 주목을 받을 것이라고 전망했어요.</p><p>원문: <a href="https://www.cp24.com/news/world/2026/09/27/anime-actor-kenjiro-tsuda-fights-tiktok-over-ai-voice-cloning/">AFP/Japan Times</a></p>',
+            source:      'AFP/Japan Times',
+            publishedAt: '2026.09.28',
+            hue:         290,
+            image:       'https://www.cp24.com/resizer/v2/XNRD7LBUP7D3EUIKBPW3G7YTZA.jpg?smart=true&auth=8eee2ec4963a804154b0a9bde8c82ec351d5f989032748b7913a476a86ccde8d&width=1200&height=630',
+            url:         'https://www.cp24.com/news/world/2026/09/27/anime-actor-kenjiro-tsuda-fights-tiktok-over-ai-voice-cloning/',
+        },
         {
             id:          'art-d922e5e4-2026-09',
             tab:         'art',
