@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-7582d185-2026-09',
+            tab:         'games',
+            headline:    'Tripo P2.0, 최대 5만 폴리곤 쿼드 메시 자동 생성 — 게임 아트 파이프라인 직접 지원',
+            summary:     'Tripo AI가 신형 3D 기초 모델 P2.0을 공개해 최대 5만 폴리곤 쿼드 메시 생성을 지원합니다.',
+            body:        '<p>Tripo AI가 새 생성형 3D 기초 모델 P2.0을 공식 출시했어요. 텍스트나 이미지 한 장만 넣으면 최대 5만 폴리곤의 쿼드 또는 트라이앵글 메시를 만들어 내고, 한 번의 생성으로 4가지 에셋 변형을 동시에 제안하는 다중 변형 기능도 갖췄어요. 특정 부위만 골라 다시 생성하는 Mesh Edit, 독립 부품 분리, 멀티뷰 레퍼런스 입력, 주요 게임 엔진 익스포트까지 지원해 단순한 이미지-투-3D 툴을 넘어섰어요.</p><p>P2.0은 현재 Tripo Studio 웹앱에서 사용할 수 있으며, 주된 타깃은 게임 및 실시간 렌더링 에셋 제작이에요. 기존 AI 3D 생성 도구들이 낮은 폴리곤과 엉성한 위상 구조로 수작업 리토폴로지가 필수였던 반면, P2.0은 쿼드 메시와 높은 폴리곤 수를 기본으로 제공해 아티스트가 바로 엔진에 가져다 쓸 수 있는 수준이에요. 게임 아트 파이프라인에서 프리프로덕션 시간을 획기적으로 단축해 줄 수 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-28-september-2026/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.09.30',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260928_NewCGSoftwareYouMayHaveMissed28September2026_f-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-28-september-2026/',
+            urls: [
+                { label: '바로가기', href: 'https://www.tripo3d.ai/' },
+            ],
+        },
+        {
             id:          'games-8ceb7f2d-2026-09',
             tab:         'games',
             headline:    'Meta, 텍스트 프롬프트로 게임 만드는 AI 도구 \'Horizon Create·Horizon Studio\' 공개',
@@ -2394,6 +2409,33 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-f77e8ad9-2026-09',
+            tab:         'industry',
+            headline:    '메타, AI로 게임 만드는 Horizon Create·Studio 공개 — 텍스트 한 줄로 2D·3D 게임 완성',
+            summary:     '메타가 AI 기반 게임 제작 툴 Horizon Create와 Horizon Studio를 발표해 코딩 없이 게임 개발이 가능해졌어요.',
+            body:        '<p>메타가 Meta Connect 2026에서 AI 기반 게임 제작 툴 Horizon Create와 Horizon Studio를 발표했어요. 스마트폰 앱 Horizon Create는 게임 아이디어를 자연어로 설명하면 결과물을 즉시 플레이하고 수정할 수 있고, 브라우저 앱 Horizon Studio는 장면 편집·에셋 교체·스크립트 파라미터 조정 등 더 세밀한 후처리를 지원해요. 두 툴 사이에서 에셋과 개발 히스토리를 자유롭게 이동할 수 있어 작업 흐름이 끊기지 않아요.</p><p>완성된 게임은 페이스북·인스타그램·Horizon 플랫폼에 바로 배포할 수 있고, 인앱 수익화와 Horizon Creator Fund 지원도 받을 수 있어요. 현재는 얼리 액세스 대기 등록 단계이지만, 인디 개발자가 코딩 없이 수십억 명의 메타 플랫폼 이용자에게 게임을 내놓을 수 있는 새로운 배포 경로가 열린 셈이에요. AI가 게임 제작의 진입 장벽을 낮추면서 크리에이터 생태계 경쟁도 한층 치열해질 것으로 보여요.</p><p>원문: <a href="https://www.pocketgamer.biz/meta-unveils-horizon-create-and-studio-for-ai-powered-game-creation/">Pocket Gamer</a></p>',
+            source:      'Pocket Gamer',
+            publishedAt: '2026.09.30',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/141542/89929/meta_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/meta-unveils-horizon-create-and-studio-for-ai-powered-game-creation/',
+            urls: [
+                { label: '신청하기', href: 'https://developers.meta.com/horizon/' },
+            ],
+        },
+        {
+            id:          'industry-3444ef45-2026-09',
+            tab:         'industry',
+            headline:    'General Intuition, 게임플레이 영상 학습 AI로 6.2조원 기업가치 달성 — 추가 2,200억 원 조달',
+            summary:     '게임 클립으로 AI를 훈련하는 General Intuition이 2억 2천만 달러 추가 투자로 62억 달러 기업가치를 인정받았어요.',
+            body:        '<p>게임플레이 영상으로 AI 모델을 훈련하는 스타트업 General Intuition이 2억 2,000만 달러(약 2,900억 원) 추가 투자를 유치해 기업가치 62억 달러를 인정받았어요. 이번 라운드에는 Valor Equity Partners, Atreides, 776, Point72, Khosla Ventures, General Catalyst가 참여했으며 누적 조달액은 6억 5,000만 달러를 넘어섰어요. 자매사인 Medal이 연간 30억 건의 게임플레이 영상을 수집·레이블링해 학습 데이터를 공급하고 있어요.</p><p>CEO Pim de Witte는 테슬라의 자율주행(FSD) 학습 방식과 동일하게, 시각과 컨트롤러 입력을 기반으로 한 수십억 개의 액션 레이블 영상으로 모델을 훈련한다고 밝혔어요. 이렇게 나온 모델은 처음 보는 환경에서도 실시간으로 동작할 수 있으며, 로보틱스·자율주행 분야의 합성 데이터 생성에도 적용될 수 있어요. 게임 데이터가 범용 AI 학습의 핵심 자원으로 부상하면서 게임 산업의 가치가 재조명받고 있어요.</p><p>원문: <a href="https://gamesbeat.com/general-intuition-raises-another-220m-at-6-2b-valuation-for-training-models-with-game-data/">GamesBeat</a></p>',
+            source:      'GamesBeat',
+            publishedAt: '2026.09.30',
+            hue:         40,
+            image:       'https://gamesbeat.com/wp-content/uploads/2025/10/general_intuition_banner.jpg',
+            url:         'https://gamesbeat.com/general-intuition-raises-another-220m-at-6-2b-valuation-for-training-models-with-game-data/',
+        },
+        {
             id:          'industry-918d94c5-2026-09',
             tab:         'industry',
             headline:    '마이크로소프트 CEO, 3년간 Xbox 5,750명 감원 두고 \'단순 구조조정\'이라 말해',
@@ -4224,6 +4266,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-585eff12-2026-09',
+            tab:         'art',
+            headline:    'AMD, AI의 대모 페이 페이 리의 World Labs를 82억 달러에 인수 — 공간 AI·3D 세계 모델 패권 쟁탈',
+            summary:     'AMD가 Fei-Fei Li의 공간 AI 기업 World Labs를 82억 달러에 인수해 엔비디아에 정면 도전합니다.',
+            body:        '<p>AMD가 ImageNet 창시자이자 스탠퍼드 교수인 Fei-Fei Li가 설립한 공간 AI 기업 World Labs를 약 82억 달러(약 11조 원)에 인수하기로 합의했어요. Li는 인수 완료 후 AMD의 EVP 겸 최고 과학자로 합류해요. World Labs는 딥러닝 기반 \'세계 모델\'을 개발하는 회사로, 물리 현실을 이해하고 시뮬레이션하는 모델을 만들어 왔어요. 대표 제품인 Marble은 엔터테인먼트 경험 생성과 로봇 훈련용 가상 환경 제작에 활용돼요.</p><p>세계 모델은 텍스트를 넘어 시각·물리 데이터를 추론하는 능력이 필수적이어서 자율주행·로보틱스 분야에서 합성 학습 데이터를 생성하는 핵심 기술로 꼽혀요. 엔비디아는 이미 오픈 가중치 세계 모델 Cosmos를 제공하고 있어서, AMD는 World Labs 인수로 이 분야의 경쟁 격차를 좁히게 됐어요. AMD 역사상 두 번째로 큰 인수이며, 3D 공간 AI가 이제 칩 메이커 간 핵심 경쟁 전장이 됐음을 보여줘요.</p><p>원문: <a href="https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.09.30',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-1833911955.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/',
+        },
         {
             id:          'art-e2afbe3d-2026-09',
             tab:         'art',
