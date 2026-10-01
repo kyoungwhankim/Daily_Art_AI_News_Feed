@@ -2,7 +2,7 @@
 
 const { useState, useEffect, useMemo, useRef } = React;
 const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
-const WHITELIST = window.AIAD_WHITELIST || { articleSources: [], githubRepos: [] };
+const WHITELIST = window.AIAD_WHITELIST || { articleSources: [] };
 
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
@@ -243,7 +243,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
             <button
               className={`tab tab-utility ${viewWhitelist ? 'active' : ''}`}
               onClick={onShowWhitelist}
-              title="스크래이핑 / Github 추적 대상 목록"
+              title="스크래이핑 대상 목록"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{marginRight:6}}>
                 <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z" />
@@ -538,78 +538,7 @@ function SkeletonCard() {
 }
 
 /* ---------- whitelist view ---------- */
-const TIER_LABELS = {
-  '⭐⭐⭐⭐': '50K+',
-  '⭐⭐⭐':  '10K+',
-  '⭐⭐':    '1K+',
-  '⭐':      '100+',
-};
-
-function WlTierRow({ kind, tier, items, repoSort }) {
-  const isCommit = repoSort === 'commit';
-  return (
-    <div className={`wl-tier ${isCommit ? 'wl-tier-commit' : ''}`}>
-      <div className="wl-tier-head">
-        <span className="wl-tier-stars" aria-label={isCommit ? `commits ${tier}` : `tier ${tier}`}>{tier}</span>
-        {!isCommit && TIER_LABELS[tier] ? (
-          <span className="wl-tier-label">{TIER_LABELS[tier]}</span>
-        ) : null}
-        <span className="wl-tier-rule" aria-hidden="true" />
-      </div>
-      <ul className="wl-grid">
-        {items.map(it => (
-          <li key={it.url} className="wl-card">
-            <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
-              <div className="wl-card-name">{it.name}</div>
-              {it.note ? <div className="wl-card-note">{it.note}</div> : null}
-              {isCommit && it.commit ? (
-                <div className="wl-card-commit">{it.commit}</div>
-              ) : null}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function WlSubgroup({ kind, title, count, items, repoSort }) {
-  // Inside a category (subgroup), group items into rows by either tier or commit-year.
-  const useTier = repoSort !== 'commit' && items.some(it => it.tier);
-  const useCommit = repoSort === 'commit' && items.some(it => it.commit);
-
-  let rows = null;
-  if (useTier) {
-    const order = ['⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐', '⭐'];
-    const map = new Map();
-    for (const it of items) {
-      const t = it.tier || '⭐';
-      if (!map.has(t)) map.set(t, []);
-      map.get(t).push(it);
-    }
-    rows = order.filter(t => map.has(t)).map(t => [t, map.get(t)]);
-    for (const [t, arr] of map) {
-      if (!order.includes(t)) rows.push([t, arr]);
-    }
-  } else if (useCommit) {
-    // bucket by year (newest first), sort items inside each bucket newest-first
-    const map = new Map();
-    for (const it of items) {
-      const y = (it.commit || '').slice(0, 4) || '연도 미상';
-      if (!map.has(y)) map.set(y, []);
-      map.get(y).push(it);
-    }
-    const years = [...map.keys()].sort((a, b) => {
-      if (a === '연도 미상') return 1;
-      if (b === '연도 미상') return -1;
-      return b.localeCompare(a);
-    });
-    rows = years.map(y => {
-      const arr = [...map.get(y)].sort((a, b) => (b.commit || '').localeCompare(a.commit || ''));
-      return [y === '연도 미상' ? y : `${y}년`, arr];
-    });
-  }
-  const showRows = useTier || useCommit;
+function WlSubgroup({ kind, title, count, items }) {
   return (
     <div className="wl-sub">
       <div className="wl-sub-head">
@@ -617,22 +546,16 @@ function WlSubgroup({ kind, title, count, items, repoSort }) {
         <span className="wl-sub-count">{String(count).padStart(2, '0')}</span>
         <span className="wl-sub-rule" aria-hidden="true" />
       </div>
-      {showRows ? (
-        rows.map(([t, arr]) => (
-          <WlTierRow key={t} kind={kind} tier={t} items={arr} repoSort={repoSort} />
-        ))
-      ) : (
-        <ul className="wl-grid">
-          {items.map(it => (
-            <li key={it.url} className="wl-card">
-              <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
-                <div className="wl-card-name">{it.name}</div>
-                {it.note ? <div className="wl-card-note">{it.note}</div> : null}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className="wl-grid">
+        {items.map(it => (
+          <li key={it.url} className="wl-card">
+            <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
+              <div className="wl-card-name">{it.name}</div>
+              {it.note ? <div className="wl-card-note">{it.note}</div> : null}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -650,29 +573,18 @@ function groupBy(items) {
 
 function WhitelistView() {
   const [wlQuery, setWlQuery] = useState('');
-  const [repoSort, setRepoSort] = useState('tier'); // 'tier' | 'commit'
   const q = wlQuery.trim().toLowerCase();
   const matches = (it) => !q ||
     (it.name && it.name.toLowerCase().includes(q)) ||
     (it.note && it.note.toLowerCase().includes(q)) ||
     (it.group && it.group.toLowerCase().includes(q)) ||
-    (it.tier && it.tier.includes(q)) ||
-    (it.commit && it.commit.includes(q)) ||
     (it.url && it.url.toLowerCase().includes(q));
 
-  const filteredRepos = (WHITELIST.githubRepos || []).filter(matches);
   const filteredSources = (WHITELIST.articleSources || []).filter(matches);
-  const totalAll = (WHITELIST.githubRepos || []).length + (WHITELIST.articleSources || []).length;
-  const totalShown = filteredRepos.length + filteredSources.length;
+  const totalAll = (WHITELIST.articleSources || []).length;
+  const totalShown = filteredSources.length;
 
   const sections = [
-    {
-      key: 'repos',
-      title: 'Github 레포지토리',
-      sub: '주요 아트 관련 오픈소스 Github 레포지토리 모음',
-      kind: 'repo',
-      items: filteredRepos,
-    },
     {
       key: 'sources',
       title: '뉴스 소스',
@@ -694,7 +606,7 @@ function WhitelistView() {
             type="search"
             value={wlQuery}
             onChange={(e) => setWlQuery(e.target.value)}
-            placeholder="레포·소스·카테고리 검색…"
+            placeholder="소스·카테고리 검색…"
             aria-label="유용한 소스 검색"
           />
           {wlQuery && (
@@ -713,28 +625,12 @@ function WhitelistView() {
             <section key={g.key} className={`wl-group wl-group-${g.kind}`}>
               <header className="wl-group-head">
                 <div className="wl-group-eyebrow">
-                  <span className="wl-group-kind">{g.kind === 'repo' ? 'GITHUB' : 'SOURCES'}</span>
+                  <span className="wl-group-kind">SOURCES</span>
                   <span className="wl-group-rule" aria-hidden="true" />
                   <span className="wl-group-count">{String(g.items.length).padStart(2, '0')}</span>
                 </div>
                 <h2 className="wl-group-title">{g.title}</h2>
                 <div className="wl-group-sub">{g.sub}</div>
-                {g.kind === 'repo' && (
-                  <div className="wl-sort" role="tablist" aria-label="레포 정렬 방식">
-                    <button
-                      role="tab"
-                      aria-selected={repoSort === 'tier'}
-                      className={`wl-sort-btn ${repoSort === 'tier' ? 'active' : ''}`}
-                      onClick={() => setRepoSort('tier')}
-                    >별점순</button>
-                    <button
-                      role="tab"
-                      aria-selected={repoSort === 'commit'}
-                      className={`wl-sort-btn ${repoSort === 'commit' ? 'active' : ''}`}
-                      onClick={() => setRepoSort('commit')}
-                    >최근 커밋순</button>
-                  </div>
-                )}
               </header>
               {groupBy(g.items).map(([sub, items]) => (
                 <WlSubgroup
@@ -743,7 +639,6 @@ function WhitelistView() {
                   title={sub}
                   count={items.length}
                   items={items}
-                  repoSort={g.kind === 'repo' ? repoSort : null}
                 />
               ))}
             </section>

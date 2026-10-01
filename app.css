@@ -962,41 +962,6 @@ mark {
   opacity: 0.75;
 }
 
-/* tier rows (⭐⭐⭐ / ⭐⭐ / ⭐) within a category */
-.wl-tier { margin-bottom: 16px; }
-.wl-tier:last-child { margin-bottom: 0; }
-.wl-tier-head {
-  display: flex;
-  align-items: center;
-  margin: 10px 0 14px;
-  padding: 2px 0 4px;
-  border-bottom: 1px solid var(--hairline);
-}
-.wl-tier-rule {
-  flex: 1;
-}
-.wl-tier-stars {
-  font-size: 14px;
-  letter-spacing: 2px;
-  line-height: 1;
-  padding: 4px 4px 4px 6px;
-  color: #c2410c;
-}
-.wl-tier-label {
-  margin-left: 4px;
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
-  font-variant-numeric: tabular-nums;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  color: #c2410c;
-  padding: 2px 6px;
-  background: transparent;
-  border: 1.5px solid #c2410c;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
 .wl-group-head {
   margin-bottom: 22px;
 }
@@ -1072,9 +1037,7 @@ mark {
   height: 100%;
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
 }
-.wl-card-link.wl-card-repo { background: #fafcf8; }
 .wl-card-link.wl-card-site { background: #fdfaf1; }
-:root[data-theme="dark"] .wl-card-link.wl-card-repo { background: #2f3a2c; }
 :root[data-theme="dark"] .wl-card-link.wl-card-site { background: #3a2c22; }
 .wl-card-link:hover {
   transform: translateY(-2px);
@@ -1083,16 +1046,6 @@ mark {
 .wl-card-link:active {
   transform: translateY(1px);
   box-shadow: none;
-}
-.wl-card-link.wl-card-repo .wl-card-name::before {
-  content: "</>";
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--accent-strong);
-  margin-right: 6px;
-  letter-spacing: 0;
-  vertical-align: 1px;
 }
 .wl-card-link.wl-card-site .wl-card-name::before {
   content: "↗";
@@ -1391,6 +1344,8 @@ mark {
   border-right: 2px solid var(--stroke);
   border-bottom: 2px solid var(--stroke);
 }
+/* odd number of channels: last card spans the full row */
+.home-card-wrap:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .home-card {
   width: 100%;
   height: 100%;
@@ -1686,58 +1641,4 @@ mark {
 }
 @media (max-width: 960px) {
   .home-ticker-head { padding: 0 24px 12px; }
-}
-
-
-/* whitelist — repo sort toggle */
-.wl-sort {
-  display: inline-flex;
-  align-items: center;
-  gap: 0;
-  margin-top: 14px;
-  padding: 3px;
-  background: var(--paper);
-  border: 1.5px solid var(--stroke);
-  border-radius: 999px;
-  box-shadow: 2px 2px 0 var(--stroke);
-}
-.wl-sort-btn {
-  appearance: none;
-  border: 0;
-  background: transparent;
-  color: var(--ink-soft);
-  font: inherit;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  padding: 6px 14px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background .15s ease, color .15s ease;
-  white-space: nowrap;
-}
-.wl-sort-btn:hover { color: var(--ink); }
-.wl-sort-btn.active {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-/* commit date stamp on cards (commit-sort mode) */
-.wl-card-commit {
-  margin-top: 6px;
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-
-
-/* 연도 행 (commit mode): 별 대신 연도 텍스트, bold 강조 */
-.wl-tier-commit .wl-tier-stars {
-  font-size: 15px;
-  letter-spacing: 0.02em;
-  font-weight: 800;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
 }
