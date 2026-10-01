@@ -29,6 +29,22 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-71dd7af7-2026-10',
+            tab:         'games',
+            headline:    '시네마 4D 2026.4, AI 챗봇으로 3D 작업 제어하는 MCP 서버 탑재',
+            summary:     '맥슨이 시네마 4D 2026.4에 클로드·ChatGPT로 3D 작업을 자동화하는 MCP 서버를 공식 탑재했어요.',
+            body:        '<p>맥슨(Maxon)이 시네마 4D 2026.4를 출시하면서 클로드(Claude), ChatGPT 같은 외부 AI 도구로 3D 소프트웨어 내부 작업을 직접 제어할 수 있는 MCP(Model Context Protocol) 서버를 공식 탑재했어요. MCP 서버를 연결하면 자연어 프롬프트만으로 씬 계층 구조 정리와 네이밍 컨벤션 변경, 멀티패스 렌더 설정, 카메라 트래킹은 물론이고 기본 모델링·UV 편집·캐릭터 리깅·애니메이션·파티클 및 액체 시뮬레이션 등 반복적이고 절차적인 작업들을 AI에게 위임할 수 있어요. 파이썬 스크립트와 조합하면 더욱 복잡한 커스텀 워크플로도 처리할 수 있으며, 실제 공개 데모에서는 AI와의 대화만으로 기성 에셋을 조합해 완성도 높은 3D 씬을 구성하는 모습이 시연됐어요.</p><p>서버는 기본적으로 비활성화 상태이며 아티스트의 로컬 머신 위에서만 실행돼요. 별도로 옵트인해야 로컬 네트워크 내 다른 머신에서도 작동하고, 클라우드 AI 서비스는 물론 LM Studio 같은 로컬 AI 앱과도 연동이 가능하지만 GPU 메모리 여유가 필요해요. 팀 렌더나 커맨드라인 렌더링 환경에서는 사용할 수 없고, 풀 라이선스 버전에서만 구동돼요. 맥슨은 "이 서버는 디자인을 창작하거나 이미지를 생성하지 않으며, 아무런 취향도 없다. 모든 명령은 아티스트에게서 나오고 모든 동작은 실행 취소 스택에 기록된다"고 강조했어요. 올해 DaVinci Resolve와 언리얼 엔진도 MCP 서버를 공식 도입했고 블렌더는 애드온 형태로 제공 중인데, 시네마 4D가 이 흐름에 합류하면서 3D 소프트웨어 전반에서 AI 자동화가 빠르게 표준으로 자리잡고 있어요.</p><p>원문: <a href="https://www.cgchannel.com/2026/09/maxon-releases-cinema-4d-2026-4-with-a-new-mcp-server/">CG Channel</a></p>',
+            source:      'CG Channel',
+            publishedAt: '2026.10.01',
+            hue:         210,
+            image:       'https://www.cgchannel.com/wp-content/uploads/2026/09/260610_Cinema4D20263_GeneratedScene-960x480.jpg',
+            url:         'https://www.cgchannel.com/2026/09/maxon-releases-cinema-4d-2026-4-with-a-new-mcp-server/',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.maxon.net/en/cinema-4d/features/mcp-server' },
+                { label: '영상', href: 'https://www.youtube.com/watch?v=bPDfwNTJOWc' },
+            ],
+        },
+        {
             id:          'games-7582d185-2026-09',
             tab:         'games',
             headline:    'Tripo P2.0, 최대 5만 폴리곤 쿼드 메시 자동 생성 — 게임 아트 파이프라인 직접 지원',
@@ -2409,6 +2425,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-604e7057-2026-10',
+            tab:         'industry',
+            headline:    'MTG, AI 활용해 규모 두 배로 키운다… 스튜디오 간 AI 허브 운영 전략 공개',
+            summary:     '게임 지주사 MTG가 AI 기반 생산성 확대로 3~5년 내 규모를 두 배로 키우겠다는 전략을 공식 발표했어요.',
+            body:        '<p>스웨덴 게임 지주사 모던 타임스 그룹(MTG)이 AI를 핵심 성장 동력으로 삼아 향후 3~5년 내 규모를 두 배로 키우겠다는 전략을 공개했어요. 마리아 레딘(Maria Redin) CEO는 "야심 찬 목표를 세우는 것이 더 멀리 나아가게 해준다"며, 자신이 취임한 이후 그룹 규모를 이미 세 배로 키웠다고 강조했어요. 성장 방식은 선별적 인수와 유기적 성장을 병행하는 동시에 AI를 통해 신작 출시 속도를 높이는 것을 핵심 축으로 삼고 있어요. AI 지원 워크플로를 활용하면 개발팀이 여러 타이틀을 동시에 제작하고 시장 반응을 더 빠르게 테스트할 수 있어서, 이전보다 훨씬 많은 아이디어를 실험할 수 있다고 밝혔어요.</p><p>MTG는 그룹이 사전 검증한 AI 툴 목록(화이트리스트) 안에서 각 스튜디오가 자율적으로 실험하도록 권한을 부여하는 분산형 프레임워크를 운영 중이에요. 그룹 중앙에서는 AI 랩을 샌드박스 형태로 운영하며 신규 도구를 먼저 검증하고, 효과가 입증된 사례는 전사에 공유되는 구조예요. 레딘 CEO는 이 접근 방식이 "아이디어를 더 빠르게 죽일 수 있어서 좋다"고 표현했는데, 가능성 없는 프로젝트를 조기에 걸러 자원을 효율적으로 배분하겠다는 의지를 담은 말이에요. 인력 감축보다 게임 산출량 자체를 늘리는 데 AI를 활용하겠다는 방침은, AI를 비용 절감 수단으로만 바라보는 시각과 다른 접근이라는 점에서 업계 주목을 받고 있어요.</p><p>원문: <a href="https://www.pocketgamer.biz/mtg-wants-to-double-its-size-while-leveraging-ai/">Pocket Gamer Biz</a></p>',
+            source:      'Pocket Gamer Biz',
+            publishedAt: '2026.10.01',
+            hue:         30,
+            image:       'https://media.pocketgamer.biz/images/141584/89954/maria-redin_l1200.jpg',
+            url:         'https://www.pocketgamer.biz/mtg-wants-to-double-its-size-while-leveraging-ai/',
+        },
+        {
             id:          'industry-f77e8ad9-2026-09',
             tab:         'industry',
             headline:    '메타, AI로 게임 만드는 Horizon Create·Studio 공개 — 텍스트 한 줄로 2D·3D 게임 완성',
@@ -4266,6 +4294,42 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-a571fadb-2026-10',
+            tab:         'art',
+            headline:    'AI, 할리우드를 바꾸다… 500만 달러 AI 영화부터 SAG-AFTRA 계약까지',
+            summary:     '15명 팀이 50만 달러 예산으로 만든 AI 영화 \'헬 그라인드\'가 칸에서 공개되며 AI가 영화 제작 전반을 바꾸고 있음을 보여줬어요.',
+            body:        '<p>하이그스필드 AI(Higgsfield AI)가 제작한 AI 생성 영화 \'헬 그라인드(Hell Grind)\'가 올봄 칸 영화제 마켓에서 공개돼 화제를 모았어요. 15명으로 구성된 팀이 단 3주 만에 50만 달러(약 6.7억 원) 예산으로 완성한 95분짜리 SF 액션 영화로, 예산의 80%는 컴퓨팅 비용이었어요. 등장인물과 배경 이미지 전부가 AI로 생성됐지만, 공동 설립자 마히 드 실바는 "영화 제작은 여전히 예술이며 앞으로도 감독·작가·배우가 필요하다"고 강조했어요. 런웨이(Runway)도 올해 3억 1500만 달러 규모의 시리즈 E를 마무리하고 라이온스게이트와 협업해 AI로 단편 영화를 제작했어요.</p><p>맥킨지는 2030년까지 AI가 영화·TV 원본 콘텐츠 제작비의 최대 20%에 영향을 미칠 것으로 전망했어요. SAG-AFTRA는 160,000명의 배우·방송 기자 등을 대표해 새 4년 계약에 AI 활용 기준과 동의·보상 조항을 명시했어요. 다만 2026년 흥행 강세를 보인 작품들은 오히려 CG보다 실물 특수효과를 앞세운 영화들이었고, 관객들이 AI 과의존 영화에 지갑을 열지 않는다는 신호도 나왔어요. 전통 VFX 수준의 영상미를 극소수 인원·저예산으로 구현할 수 있게 됐다는 점은 게임 컷씬·트레일러 제작 방식에도 유사한 변화를 불러올 것으로 예상돼요.</p><p>원문: <a href="https://fortune.com/2026/09/30/cio-intelligence-sept-30/">Fortune</a></p>',
+            source:      'Fortune',
+            publishedAt: '2026.10.01',
+            hue:         290,
+            image:       'https://fortune.com/img-assets/wp-content/uploads/2026/09/image-2-e1790787532768.jpeg',
+            url:         'https://fortune.com/2026/09/30/cio-intelligence-sept-30/',
+        },
+        {
+            id:          'art-e5a1f0cd-2026-10',
+            tab:         'art',
+            headline:    '일레븐랩스, 기업가치 220억 달러로 두 배 껑충… 3억 달러 규모 텐더 오퍼',
+            summary:     'AI 음성 스타트업 일레븐랩스가 텐더 오퍼로 기업가치 220억 달러를 인정받아 9개월 만에 두 배로 올랐어요.',
+            body:        '<p>AI 음성 합성 스타트업 일레븐랩스(ElevenLabs)가 기존 투자자 지분을 매입하는 3억 달러(약 4,050억 원) 규모의 텐더 오퍼(공개 주식 매수)를 완료하며 기업가치 220억 달러(약 29.7조 원)를 인정받았어요. 이번 딜은 웰링턴(Wellington)과 T. 로우 프라이스(T. Rowe Price)가 공동 주도했어요. 불과 9개월 전인 2026년 2월에 110억 달러 평가를 받았던 것과 비교하면 가치가 두 배로 뛴 셈이에요. 2025년 9월에는 66억 달러 평가로 1억 달러 규모 텐더를 진행한 적이 있어 성장 속도가 얼마나 빠른지 실감할 수 있어요.</p><p>2022년 설립된 일레븐랩스는 뉴욕·런던에 거점을 두고 초실감 AI 음성과 효과음 생성에 특화된 회사로, 현재 유럽에서 가장 높은 가치를 인정받는 AI 스타트업 중 하나가 됐어요. 연간 반복 매출(ARR)이 이미 1억 달러를 넘어선 상황이며, 게임·영화·광고·교육 등 다양한 분야에서 AI 더빙과 캐릭터 음성 수요가 급증한 것이 성장의 배경이에요. 게임 업계에서도 NPC 대사 생성, 다국어 현지화 더빙 등에 일레븐랩스 API를 채택하는 스튜디오가 늘고 있어, 이번 밸류에이션 상승은 AI 음성 시장 전체가 고성장 국면에 접어들었음을 나타내는 신호예요.</p><p>원문: <a href="https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.10.01',
+            hue:         250,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b',
+        },
+        {
+            id:          'art-59a2e150-2026-10',
+            tab:         'art',
+            headline:    '매시브 스튜디오·캡컷, AI로 크리스마스 단편 제작… 시드댄스 2.5 활용',
+            summary:     '가필드 무비 프로듀서 토드 가너와 매시브 스튜디오가 캡컷·시드댄스 2.5로 AI 크리스마스 단편 시리즈를 제작한다고 발표했어요.',
+            body:        '<p>영화 프로듀서 토드 가너(Todd Garner, 가필드 무비 제작자)가 설립에 참여한 매시브 스튜디오(Massive Studios)가 콘텐츠 제작 플랫폼 캡컷(CapCut)과 손잡고 AI 생성 크리스마스 단편 애니메이션 시리즈를 제작한다고 발표했어요. 총 세 편의 단편이 동시에 개발 중이며, 영상 생성에는 바이트댄스의 AI 비디오 모델 시드댄스(Seedance) 2.5가 핵심 도구로 활용돼요. 캡컷은 창작 도구 지원과 배포를 담당하고, 트레일러는 올해 추수감사절 주말에, 완성작은 크리스마스 이브에 무료 공개할 예정이에요.</p><p>제작진은 단편들이 처음부터 아티스트가 직접 그린 손 그림 디자인을 기반으로 하며, 배우 퍼포먼스로 캐릭터의 비율·표정·의상·질감·개성을 확립한 뒤 AI가 움직임 구현을 돕는 방식이라고 설명했어요. 레자 식소 사파이(Reza Sixo Safai) 감독은 "손으로 만들었다는 것이 기술을 쓰지 않았다는 뜻은 아니다. 모든 프레임에서 사람의 결정이 느껴지는 것이 중요하다"라고 강조했어요. 할리우드 메인스트림 프로듀서가 AI 영상 생성 툴을 정식 제작 파이프라인에 도입한 공식 첫 사례로 주목받으며, 게임 트레일러·시네마틱 영상 제작에 유사한 방식이 확산될지 관심이 모이고 있어요.</p><p>원문: <a href="https://www.yahoo.com/entertainment/movies/articles/massive-studios-garfield-movie-writers-092557908.html">Hollywood Reporter</a></p>',
+            source:      'Hollywood Reporter',
+            publishedAt: '2026.10.01',
+            hue:         270,
+            image:       'https://media.zenfs.com/en/the_hollywood_reporter_217/b906fa5fb09e22ac9a9d28dee1f59292.jpg',
+            url:         'https://www.yahoo.com/entertainment/movies/articles/massive-studios-garfield-movie-writers-092557908.html',
+        },
         {
             id:          'art-585eff12-2026-09',
             tab:         'art',
