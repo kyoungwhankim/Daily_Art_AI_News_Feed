@@ -41,6 +41,41 @@ CONTEXT COMPACTION:
     that file as its very first step and removes it as its very last step.
     Never delete it in between, and never create it before PHASE 1 is done.
 
+EXECUTION RULES — read before starting. These rules make the steps below
+mandatory exactly as written. They do not change any condition of the steps.
+
+  R1. Run every code block in this prompt as written. Only replace the
+      placeholders (REPLACE_WITH_..., [...] text). Do not replace a block
+      with a stub, a shortened version, an `echo`, or a different script,
+      and do not skip a block because its result "seems obvious".
+      In particular, the PHASE 1 Step 2 whitelist script MUST run and print
+      "Whitelist loaded:" with the counts before any searching starts.
+
+  R2. Search thoroughly, section by section (1 → 2 → 3). For each section,
+      search order step 1 means checking EVERY source in whitelist["common"]
+      plus that section's whitelist[...]["primary"] list for today's or
+      yesterday's (KST) articles — not a sample of them. Only after that may
+      you decide whether step 2 (broadened) or step 3 (open web) applies,
+      exactly as USING THE WHITELIST describes. Before moving to the next
+      section, print one line listing which sources you checked.
+
+  R3. PHASE 1 STEP A uses the inline python/curl script given in SECTION 1 —
+      not scripts/fetch_article.py. PHASE 2 STEP 3 uses
+      scripts/fetch_article.py — run it again for EVERY digest article, even
+      if PHASE 1 already fetched the same URL.
+
+  R4. One article at a time. In PHASE 1 run STEP A then STEP B for one
+      article before starting the next; in PHASE 2 run STEP 3 then the
+      STEP 4 save script for one article before starting the next. Never
+      save several articles in one python call.
+
+  R5. Run VERIFY DIGEST at the end of PHASE 1 and VERIFY ARTICLES before
+      updating articles.js. Never skip them.
+
+  R6. The save scripts check the length and format rules. If a save script
+      prints REJECTED, rewrite that article's text and run the save script
+      again. Do not edit or remove the checks.
+
 =====================================================================
 PHASE 1 — RESEARCH
 =====================================================================
@@ -305,6 +340,19 @@ For each article found, repeat this block:
           # {"emoji": "🔧", "label": "공식 웹사이트", "url": "https://...", "display": "바로가기"}
       ]
   }
+
+  # Format checks (EXECUTION RULE R6) — do not edit.
+  problems = []
+  if not (isinstance(article["summary_ko"], list) and len(article["summary_ko"]) == 3):
+      problems.append("summary_ko must be a list of exactly 3 sentences")
+  for k in ("title_ko", "source_url", "source_name"):
+      if not article[k] or article[k].startswith("["):
+          problems.append(f"{k} is empty or still a placeholder")
+  if any(s.startswith("[") for s in article["summary_ko"]):
+      problems.append("summary_ko still contains a placeholder")
+  if problems:
+      print("REJECTED:", "; ".join(problems))
+      raise SystemExit(1)
 
   with open('/tmp/feed/digest.json') as f:
       articles = json.load(f)
@@ -659,6 +707,27 @@ Save each completed article object to /tmp/feed/articles.json:
       ],
       "image": "[image URL or omit field]",
   }
+  # Length / format checks (EXECUTION RULE R6) — do not edit.
+  import re
+  _paras = re.sub(r'<p>원문:.*?</p>', '', article["body"])
+  _text = re.sub(r'<[^>]+>', '', _paras)
+  problems = []
+  if not 600 <= len(_text) <= 800:
+      problems.append(f"body is {len(_text)} chars (incl. spaces, without the "
+                      f"원문 line); it must be 600–800")
+  if '<p>원문: <a href="' not in article["body"]:
+      problems.append("body is missing the final 원문 attribution paragraph")
+  if "\n" in article["body"]:
+      problems.append("body contains \\n line breaks")
+  for k in ("id", "tab", "headline", "summary", "source", "url"):
+      if not article[k] or str(article[k]).startswith("["):
+          problems.append(f"{k} is empty or still a placeholder")
+  if article["tab"] not in ("games", "industry", "art"):
+      problems.append("tab must be games, industry or art")
+  if problems:
+      print("REJECTED:", "; ".join(problems))
+      raise SystemExit(1)
+
   if not article.get("urls"):
       article.pop("urls", None)
   if (not article.get("image") or article["image"].startswith("[")

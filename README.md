@@ -64,6 +64,18 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 
 단일 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다.
 
+### 실행 규칙 (EXECUTION RULES)
+
+프롬프트 맨 앞의 R1~R6은 아래 단계들을 "적힌 그대로" 실행하도록 강제한다. 단계의 조건 자체는 바꾸지 않는다.
+(Sonnet 5.5 시험 실행에서 스크립트 생략·기사 일괄 저장·검증 생략 등이 관찰되어 추가)
+
+- R1: 모든 코드 블록을 그대로 실행 (자리표시자만 채움, 대체·생략 금지)
+- R2: 섹션별로 공통 + Primary 출처를 빠짐없이 확인한 뒤에만 Broadened/오픈 웹 여부 판단
+- R3: PHASE 1 STEP A는 프롬프트 내 curl 스크립트, PHASE 2 STEP 3은 `scripts/fetch_article.py`를 기사마다 다시 실행
+- R4: 기사 하나씩 처리 (여러 기사를 한 번에 저장 금지)
+- R5: VERIFY DIGEST / VERIFY ARTICLES 필수
+- R6: 저장 스크립트의 검사(본문 600–800자: 공백 포함, 태그·원문 줄 제외 등)가 `REJECTED`를 출력하면 다시 작성
+
 ### PHASE 1 — 조사 (RESEARCH)
 
 1. **SETUP** — `/tmp/feed/` 초기화, 프롬프트에 내장된 Whitelist를 파싱해 `/tmp/feed/whitelist.json`으로 저장
