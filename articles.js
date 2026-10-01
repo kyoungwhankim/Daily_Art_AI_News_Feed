@@ -29,6 +29,21 @@ window.AIAD = {
   articles: [
     /* ---- games ---- */
         {
+            id:          'games-3fda5e84-2026-10',
+            tab:         'games',
+            headline:    '맥슨, 시네마 4D에 MCP 서버 내장 — ChatGPT·Claude·Codex로 3D 작업 자동화',
+            summary:     '맥슨이 시네마 4D에 MCP 서버를 내장해 AI 어시스턴트로 3D 작업을 자동화할 수 있게 됐어요.',
+            body:        '<p>맥슨이 3D 소프트웨어 시네마 4D에 MCP(Model Context Protocol) 서버를 기본으로 탑재했어요. 자체 AI 어시스턴트를 새로 내놓는 대신, 아티스트가 쓰던 Claude, ChatGPT, Codex 같은 외부 AI를 시네마 4D 안에서 직접 연결해 작업을 시킬 수 있게 한 거예요. 자연어로 지시하면 불러온 오브젝트를 일정한 계층 구조로 정리하고, 오브젝트와 재질의 변형을 만들고, 멀티패스 렌더를 준비하고, 기본적인 카메라 트래킹과 UV 매핑, 리깅, 애니메이션까지 맡길 수 있다고 맥슨은 설명해요. CSV 데이터를 바탕으로 씬 변형을 만들거나 렌더 큐 작업을 자동으로 만드는 예시 영상도 공개됐어요.</p><p>눈에 띄는 건 아티스트가 통제권을 유지하도록 설계했다는 점이에요. 모든 동작은 사용자의 컴퓨터에서 로컬로 실행되고, 시네마 4D의 API를 통해 이뤄져서 결과물도 평평한 이미지가 아니라 수정할 수 있는 네이티브 씬 데이터로 남아요. MCP는 기본적으로 꺼져 있고 사용자가 직접 켜야 하며, 접근 토큰으로 보호돼요. AI가 쓸 수 있는 도구 그룹도 고를 수 있고, 변경 사항은 실행 취소 기록에 묶여 나뉘며 명령은 로컬 감사 로그에 남아요. 이 기능은 시네마 4D 2026.4 이상의 윈도우와 맥에서 오늘부터 쓸 수 있고, 연말 전에 아이패드 앱도 나올 예정이에요.</p><p>원문: <a href="https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.10.01',
+            hue:         200,
+            image:       'https://cdn.mos.cms.futurecdn.net/DT46hrKgj3M2G2y2xf3KA3-1920-80.jpg',
+            url:         'https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d',
+            urls: [
+                { label: '공식 사이트', href: 'https://www.maxon.net/en/cinema-4d/features/mcp-server' },
+            ],
+        },
+        {
             id:          'games-71dd7af7-2026-10',
             tab:         'games',
             headline:    '시네마 4D 2026.4, AI 챗봇으로 3D 작업 제어하는 MCP 서버 탑재',
@@ -4306,6 +4321,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-eebff0d7-2026-10',
+            tab:         'art',
+            headline:    'AI 음성 스타트업 일레븐랩스, 기업가치 220억 달러로 두 배 껑충',
+            summary:     '일레븐랩스가 직원 지분 매각을 통해 기업가치 220억 달러를 인정받았어요.',
+            body:        '<p>AI 음성 스타트업 일레븐랩스가 직원들이 보유한 vested 지분 일부를 현금화할 수 있게 하면서, 기업가치를 220억 달러로 평가받았다고 발표했어요. 2월에 5억 달러를 투자받으며 인정받은 110억 달러의 딱 두 배예요. 이번 3억 달러 규모의 텐더 오퍼는 웰링턴과 T. 로우 프라이스가 공동으로 이끌었는데, 두 곳 모두 회사가 상장한 뒤에도 지분을 계속 들고 가려는 대형 기관투자자예요.</p><p>이런 직원 유동성 제공은 빠르게 크는 AI 스타트업들이 경쟁사로 인재가 빠져나가는 걸 막는 리텐션 수단으로 쓰는 흐름이에요. 일레븐랩스는 지난 2025년 9월에도 66억 달러 가치로 1억 달러 규모의 텐더를 진행했으니, 이번이 두 번째 직원 대상 2차 거래예요. 2022년에 설립된 이 회사는 사람처럼 자연스러운 음성과 효과음을 만들어 내는 기술로 잘 알려져 있고, 이번 평가로 유럽에서 가장 가치 있는 스타트업 대열에 합류했어요.</p><p>정리하면 1년 만에 기업가치가 66억 달러에서 220억 달러까지 올라간 셈이라, 음성과 효과음 같은 오디오 생성 분야에 시장이 얼마나 큰 기대를 걸고 있는지 보여주는 숫자예요. 게임이나 영상처럼 소리가 중요한 콘텐츠를 만드는 분들에게는 이 분야 도구들이 앞으로도 빠르게 발전할 거라는 신호로 읽을 수 있어요.</p><p>원문: <a href="https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/">TechCrunch</a></p>',
+            source:      'TechCrunch',
+            publishedAt: '2026.10.01',
+            hue:         290,
+            image:       'https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024',
+            url:         'https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/',
+        },
         {
             id:          'art-7c64b970-2026-10',
             tab:         'art',
