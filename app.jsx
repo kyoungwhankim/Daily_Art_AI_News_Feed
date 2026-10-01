@@ -2,7 +2,6 @@
 
 const { useState, useEffect, useMemo, useRef } = React;
 const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
-const WHITELIST = window.AIAD_WHITELIST || { articleSources: [] };
 
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
@@ -209,7 +208,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewWhitelist, onShowWhitelist, viewHome }) {
+function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
@@ -231,7 +230,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
             {TABS.map(t => (
               <button
                 key={t.id}
-                className={`tab ${t.id === active && !viewWhitelist && !viewHome ? 'active' : ''}`}
+                className={`tab ${t.id === active && !viewHome ? 'active' : ''}`}
                 onClick={() => onChange(t.id)}
               >
                 {t.label}
@@ -239,18 +238,6 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
                 {tabHasNew(t.id, articles) && t.id !== active && <span className="new-dot" />}
               </button>
             ))}
-            <span className="tab-spacer" aria-hidden="true" />
-            <button
-              className={`tab tab-utility ${viewWhitelist ? 'active' : ''}`}
-              onClick={onShowWhitelist}
-              title="스크래이핑 대상 목록"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{marginRight:6}}>
-                <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
-              유용한 소스
-            </button>
           </div>
         )}
       </div>
@@ -537,120 +524,8 @@ function SkeletonCard() {
   );
 }
 
-/* ---------- whitelist view ---------- */
-function WlSubgroup({ kind, title, count, items }) {
-  return (
-    <div className="wl-sub">
-      <div className="wl-sub-head">
-        <h3 className="wl-sub-title">{title}</h3>
-        <span className="wl-sub-count">{String(count).padStart(2, '0')}</span>
-        <span className="wl-sub-rule" aria-hidden="true" />
-      </div>
-      <ul className="wl-grid">
-        {items.map(it => (
-          <li key={it.url} className="wl-card">
-            <a className={`wl-card-link wl-card-${kind}`} href={it.url} target="_blank" rel="noopener noreferrer">
-              <div className="wl-card-name">{it.name}</div>
-              {it.note ? <div className="wl-card-note">{it.note}</div> : null}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function groupBy(items) {
-  const map = new Map();
-  const order = [];
-  for (const it of items) {
-    const k = it.group || '기타';
-    if (!map.has(k)) { map.set(k, []); order.push(k); }
-    map.get(k).push(it);
-  }
-  return order.map(k => [k, map.get(k)]);
-}
-
-function WhitelistView() {
-  const [wlQuery, setWlQuery] = useState('');
-  const q = wlQuery.trim().toLowerCase();
-  const matches = (it) => !q ||
-    (it.name && it.name.toLowerCase().includes(q)) ||
-    (it.note && it.note.toLowerCase().includes(q)) ||
-    (it.group && it.group.toLowerCase().includes(q)) ||
-    (it.url && it.url.toLowerCase().includes(q));
-
-  const filteredSources = (WHITELIST.articleSources || []).filter(matches);
-  const totalAll = (WHITELIST.articleSources || []).length;
-  const totalShown = filteredSources.length;
-
-  const sections = [
-    {
-      key: 'sources',
-      title: '뉴스 소스',
-      sub: '기사 스크래이핑에 사용하는 원본 출처 도메인',
-      kind: 'site',
-      items: filteredSources,
-    },
-  ];
-
-  return (
-    <div className="whitelist">
-      <div className="wl-search-bar">
-        <div className="wl-search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="7" />
-            <path d="m20 20-3.5-3.5" />
-          </svg>
-          <input
-            type="search"
-            value={wlQuery}
-            onChange={(e) => setWlQuery(e.target.value)}
-            placeholder="소스·카테고리 검색…"
-            aria-label="유용한 소스 검색"
-          />
-          {wlQuery && (
-            <button type="button" className="wl-search-clear" onClick={() => setWlQuery('')} aria-label="검색어 지우기">×</button>
-          )}
-        </div>
-        <div className="wl-search-meta">
-          {q ? `${totalShown}개 일치 · 전체 ${totalAll}개` : `전체 ${totalAll}개`}
-        </div>
-      </div>
-      {q && totalShown === 0 ? (
-        <div className="wl-empty">검색 결과가 없어요. 다른 키워드로 시도해보세요.</div>
-      ) : (
-        sections.map(g => (
-          g.items.length === 0 ? null : (
-            <section key={g.key} className={`wl-group wl-group-${g.kind}`}>
-              <header className="wl-group-head">
-                <div className="wl-group-eyebrow">
-                  <span className="wl-group-kind">SOURCES</span>
-                  <span className="wl-group-rule" aria-hidden="true" />
-                  <span className="wl-group-count">{String(g.items.length).padStart(2, '0')}</span>
-                </div>
-                <h2 className="wl-group-title">{g.title}</h2>
-                <div className="wl-group-sub">{g.sub}</div>
-              </header>
-              {groupBy(g.items).map(([sub, items]) => (
-                <WlSubgroup
-                  key={sub}
-                  kind={g.kind}
-                  title={sub}
-                  count={items.length}
-                  items={items}
-                />
-              ))}
-            </section>
-          )
-        ))
-      )}
-    </div>
-  );
-}
-
 /* ---------- home view ---------- */
-function HomeView({ onSelectTab, onShowWhitelist, onOpenArticle, articles }) {
+function HomeView({ onSelectTab, onOpenArticle, articles }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   const latest = useMemo(() => {
     return [...articles]
@@ -742,7 +617,6 @@ function App() {
   const accent = '#c2410c';
 
   const [activeTab, setActiveTab] = useState('games');
-  const [viewWhitelist, setViewWhitelist] = useState(false);
   const [viewHome, setViewHome] = useState(true);
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(() => {
@@ -833,28 +707,26 @@ function App() {
     <div className="page">
       <Header
         query={query}
-        onQuery={(v) => { setQuery(v); if (v) { setViewSaved(false); setViewHome(false); setViewWhitelist(false); } }}
+        onQuery={(v) => { setQuery(v); if (v) { setViewSaved(false); setViewHome(false); } }}
         savedCount={saved.length}
-        onShowSaved={() => { setViewSaved(true); setViewHome(false); setViewWhitelist(false); setQuery(''); }}
+        onShowSaved={() => { setViewSaved(true); setViewHome(false); setQuery(''); }}
         theme={theme}
         onToggleTheme={toggleTheme}
-        onShowHome={() => { setViewHome(true); setViewSaved(false); setViewWhitelist(false); setQuery(''); }}
+        onShowHome={() => { setViewHome(true); setViewSaved(false); setQuery(''); }}
       />
       {!viewHome && (
         <Tabs
           active={activeTab}
-          onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewWhitelist(false); setViewHome(false); setQuery(''); }}
+          onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewHome(false); setQuery(''); }}
           articles={ARTICLES}
           savedCount={saved.length}
           viewSaved={viewSaved}
           onClearSaved={() => setViewSaved(false)}
-          viewWhitelist={viewWhitelist}
-          onShowWhitelist={() => { setViewWhitelist(true); setViewSaved(false); setViewHome(false); setQuery(''); }}
           viewHome={viewHome}
         />
       )}
       
-      {!viewWhitelist && !viewHome && (
+      {!viewHome && (
         <FeedMeta
           activeTab={activeTab}
           count={visible.length}
@@ -865,13 +737,10 @@ function App() {
       <main className="feed">
         {viewHome ? (
           <HomeView
-            onSelectTab={(id) => { setActiveTab(id); setViewHome(false); setViewSaved(false); setViewWhitelist(false); setQuery(''); window.scrollTo({ top: 0 }); }}
-            onShowWhitelist={() => { setViewWhitelist(true); setViewHome(false); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+            onSelectTab={(id) => { setActiveTab(id); setViewHome(false); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
             onOpenArticle={setOpen}
             articles={ARTICLES}
           />
-        ) : viewWhitelist ? (
-          <WhitelistView />
         ) : loading ? (
           <div className="grid">
             {[0,1,2,3,4,5].map(i => <SkeletonCard key={i} />)}
