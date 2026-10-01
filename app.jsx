@@ -1,7 +1,24 @@
 /* AI Art Daily — hi-fi prototype */
 
 const { useState, useEffect, useMemo, useRef } = React;
-const { tabs: TABS, articles: ARTICLES, body: ARTICLE_BODY } = window.AIAD;
+const { tabs: TABS } = window.AIAD;
+
+/* ---------- data loading ---------- */
+// 기사 데이터는 날짜별 파일로 나뉘어 있다: data/index.json → data/articles/YYYY-MM-DD.json
+// 날짜 파일은 index의 rev(내용 해시)로 캐시를 구분하므로, 바뀐 날짜 파일만 새로 받는다.
+const DATA_BASE = 'data/';
+async function fetchJson(url, init) {
+  const r = await fetch(url, init);
+  if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+  return r.json();
+}
+async function loadArticles() {
+  const index = await fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' });
+  const days = await Promise.all(
+    index.dates.map(d => fetchJson(`${DATA_BASE}${d.file}?v=${d.rev}`))
+  );
+  return days.flat();   // index는 최신순 → 기사도 최신 날짜부터
+}
 
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
@@ -406,7 +423,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
           </div>
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
-            <div dangerouslySetInnerHTML={{ __html: article.body || ARTICLE_BODY || '' }} />
+            <div dangerouslySetInnerHTML={{ __html: article.body || '' }} />
           </div>
 
           {related.length > 0 && (
@@ -619,13 +636,32 @@ function App() {
   const [activeTab, setActiveTab] = useState('games');
   const [viewHome, setViewHome] = useState(true);
   const [query, setQuery] = useState('');
-  const [open, setOpen] = useState(() => {
-    try {
-      const id = new URLSearchParams(window.location.search).get('article');
-      if (!id) return null;
-      return ARTICLES.find(a => a.id === id) || null;
-    } catch { return null; }
-  });
+  const [articles, setArticles] = useState([]);
+  const [dataState, setDataState] = useState('loading');   // 'loading' | 'ready' | 'error'
+  const [open, setOpen] = useState(null);
+
+  // load the date-split article files once
+  useEffect(() => {
+    let cancelled = false;
+    loadArticles()
+      .then(list => {
+        if (cancelled) return;
+        setArticles(list);
+        setDataState('ready');
+        // ?article=<id> deep link → open once the data is in
+        try {
+          const id = new URLSearchParams(window.location.search).get('article');
+          if (id) setOpen(list.find(a => a.id === id) || null);
+        } catch {}
+      })
+      .catch(err => {
+        console.error('Failed to load articles', err);
+        if (!cancelled) setDataState('error');
+      });
+    return () => { cancelled = true; };
+  }, []);
+  const articlesRef = useRef(articles);
+  articlesRef.current = articles;
   const [saved, setSaved] = useState(() => {
     try { return JSON.parse(localStorage.getItem('aiad:saved') || '[]'); } catch { return []; }
   });
@@ -638,6 +674,7 @@ function App() {
     const current = url.searchParams.get('article');
     const target = open ? open.id : null;
     if (current === target) return;
+    if (!target && dataState === 'loading') return;   // keep ?article= until data loads
     if (target) url.searchParams.set('article', target);
     else url.searchParams.delete('article');
     window.history.pushState({ articleId: target }, '', url.toString());
@@ -648,7 +685,7 @@ function App() {
     function onPop() {
       const id = new URLSearchParams(window.location.search).get('article');
       if (!id) { setOpen(null); return; }
-      const found = ARTICLES.find(a => a.id === id);
+      const found = articlesRef.current.find(a => a.id === id);
       setOpen(found || null);
     }
     window.addEventListener('popstate', onPop);
@@ -682,7 +719,7 @@ function App() {
   };
 
   // filter pipeline
-  let visible = ARTICLES;
+  let visible = articles;
   if (viewSaved) {
     visible = visible.filter(a => saved.includes(a.id));
   } else if (query.trim()) {
@@ -718,7 +755,7 @@ function App() {
         <Tabs
           active={activeTab}
           onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewHome(false); setQuery(''); }}
-          articles={ARTICLES}
+          articles={articles}
           savedCount={saved.length}
           viewSaved={viewSaved}
           onClearSaved={() => setViewSaved(false)}
@@ -739,9 +776,11 @@ function App() {
           <HomeView
             onSelectTab={(id) => { setActiveTab(id); setViewHome(false); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
             onOpenArticle={setOpen}
-            articles={ARTICLES}
+            articles={articles}
           />
-        ) : loading ? (
+        ) : dataState === 'error' ? (
+          <EmptyState message="기사를 불러오지 못했어요" sub="잠시 후 새로고침해 주세요." />
+        ) : (loading || dataState === 'loading') ? (
           <div className="grid">
             {[0,1,2,3,4,5].map(i => <SkeletonCard key={i} />)}
           </div>
@@ -789,7 +828,7 @@ function App() {
           isSaved={saved.includes(open.id)}
           onToggleSave={toggleSave}
           onOpen={setOpen}
-          allArticles={ARTICLES}
+          allArticles={articles}
         />
       )}
     </div>

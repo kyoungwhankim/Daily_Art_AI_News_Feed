@@ -1,5 +1,5 @@
 """
-push_to_main.py — articles.js의 변경사항을 main 브랜치에 commit & push.
+push_to_main.py — data/ (날짜별 기사 파일)의 변경사항을 main 브랜치에 commit & push.
 
 사용법:
     python3 scripts/push_to_main.py
@@ -54,19 +54,19 @@ def verify_on_main() -> None:
 
 
 def commit_changes(upload_date: str) -> bool:
-    """articles.js의 변경사항을 stage하고 commit한다.
+    """data/ (날짜별 기사 파일 + index.json)의 변경사항을 stage하고 commit한다.
 
     Returns:
         True: 새 commit이 생성됨
         False: 변경사항이 없어서 commit 생략됨
     """
-    run(['git', 'add', 'articles.js'])
+    run(['git', 'add', 'data'])
     status = run(['git', 'diff', '--cached', '--stat'])
     print('Staged changes:', flush=True)
     print(status.stdout or '(none)', flush=True)
 
     if not status.stdout.strip():
-        print('No changes to commit — articles.js was not modified.',
+        print('No changes to commit — data/ was not modified.',
               flush=True)
         return False
 

@@ -2,11 +2,28 @@
 
 A daily, curated stream of AI-generated art and AI-in-art news in Korean.
 
-Static site — no backend, no login. Hosted on GitHub Pages. The whole app is React rendered in the browser; updating the site means editing one JavaScript file and pushing.
+Static site — no backend, no login. Hosted on GitHub Pages. The whole app is React rendered in the browser; updating the site means adding a date file under `data/articles/` and pushing.
 
 Daily updates are produced by a Claude Code Routine that runs in the cloud each morning, researches news, writes Korean translations, and pushes the change to `main` automatically.
 
 ---
+
+## 파일 구조
+
+| 경로 | 내용 |
+|---|---|
+| `index.html`, `app.jsx`, `app.css` | 사이트 (React, 브라우저에서 Babel로 실행) |
+| `config.js` | 탭 정의 (`window.AIAD.tabs`) |
+| `data/index.json` | 날짜 파일 목록 (최신순) — `date`, `file`, `count`, `rev`(내용 해시) |
+| `data/articles/YYYY-MM-DD.json` | 그날 게시된 기사 배열 (기사 형식은 `config.js` 주석 참고) |
+| `scripts/update_articles.py` | 루틴이 새 기사를 오늘 날짜 파일에 추가하고 `index.json`을 다시 만든다 |
+| `scripts/validate_data.py` | `data/` 검사 (JSON 형식, index 일치, 필수 필드, id 중복) |
+| `scripts/feed_data.py` | 위 두 스크립트의 공통 함수 |
+| `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
+| `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
+
+사이트는 `data/index.json`을 받은 뒤 날짜 파일들을 병렬로 불러온다. 날짜 파일은 `?v=<rev>`로 요청하므로 내용이 바뀐 날짜만 브라우저 캐시가 갱신된다.
+`fetch`를 쓰므로 `file://`로 직접 열면 동작하지 않는다 — 로컬에서는 `python3 -m http.server`로 띄워서 확인한다.
 
 ## 개요
 
@@ -89,7 +106,7 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 3. **STEP 1~2** — `digest.json`을 읽어 섹션 → 탭(`games`/`industry`/`art`)으로 매핑. digest에 있는 기사만, 순서대로 처리 (웹 검색 금지)
 4. **STEP 3** — 기사마다 `scripts/fetch_article.py`를 정확히 한 번 실행 (실패 시 WebFetch 1회)
 5. **STEP 4** — 필드 매핑 후 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체 등)
-6. **UPDATE articles.js** — `scripts/update_articles_js.py`로 URL 중복 제거 후 탭별 위치에 삽입, 문법 검사
+6. **UPDATE THE FEED DATA** — `scripts/update_articles.py`로 URL 중복 제거 후 오늘 날짜 파일에 추가, `scripts/validate_data.py`로 검사
 7. **COMMIT AND PUSH** — `scripts/push_to_main.py`로 `main`에 직접 push (새 브랜치·PR 금지)
 8. **FINISH** — `PUBLISH_PHASE` 표시 파일 삭제
 
@@ -118,7 +135,7 @@ PHASE 2에서는 하위 에이전트(Task tool)를 쓰지 않는다. 기사마�
 
 ### 중복 게시 방지
 
-- "오늘 또는 어제" 규칙 때문에 같은 기사가 이틀 연속 잡힐 수 있다. `update_articles_js.py`가 `articles.js`에 이미 있는 URL은 건너뛴다.
+- "오늘 또는 어제" 규칙 때문에 같은 기사가 이틀 연속 잡힐 수 있다. `update_articles.py`가 `data/articles/`의 모든 날짜 파일에 이미 있는 URL은 건너뛴다 (scheme·`www.`·끝 `/`·`#` 차이는 같은 URL로 본다).
 
 ## 아이디어
 

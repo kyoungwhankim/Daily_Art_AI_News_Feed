@@ -1,0 +1,66 @@
+[
+  {
+    "id": "autodesk-radical-mocap-0424",
+    "tab": "games",
+    "headline": "오토데스크, AI 모션캡처 기술 기업 Radical 핵심 기술 전면 인수",
+    "summary": "단일 카메라 영상에서 배우 움직임을 추출하는 Radical의 AI 모캡 기술이 Maya 등 오토데스크 제품군에 통합될 예정이에요.",
+    "body": "<p>오토데스크가 단일 카메라 영상에서 배우의 움직임을 추출하는 AI 모션캡처 스타트업 Radical의 핵심 기술 및 IP를 완전 인수했어요.<br/>Radical Core는 FBX 포맷으로 애니메이션을 내보내고, Radical Live는 Maya·블렌더·유니티·언리얼 엔진 5에 실시간으로 스트리밍할 수 있었는데, 이 기술들이 오토데스크 제품군에 통합될 예정이에요.<br/>단일 카메라만으로도 전문 모캡 수준의 애니메이션이 가능해지는 이 기술이 Maya 등 게임 아트 파이프라인에 직접 녹아들 경우 제작 비용과 시간이 크게 줄어들 것으로 기대돼요!</p><p>원문: <a href=\"https://www.cgchannel.com/2026/04/autodesk-acquires-core-tech-of-ai-motion-capture-firm-radical/\">CG Channel</a></p>",
+    "source": "CG Channel",
+    "publishedAt": "2026.04.24",
+    "hue": 200,
+    "url": "https://www.cgchannel.com/2026/04/autodesk-acquires-core-tech-of-ai-motion-capture-firm-radical/"
+  },
+  {
+    "id": "blender-tire-rig-generator-0424",
+    "tab": "games",
+    "headline": "블렌더용 타이어 자동 리깅 툴 무료 출시 — 복잡한 리깅 셋업을 한 번에",
+    "summary": "블렌더 플러그인 Tire Rig Generator가 압력·표면 변형까지 고려한 타이어 리깅 셋업을 메시 3개 입력만으로 자동 생성해줘요.",
+    "body": "<p>3D 아티스트 Raffael Kloten이 블렌더에서 타이어를 완전 자동으로 리깅해주는 무료 플러그인 'Tire Rig Generator'를 공개했어요.<br/>타이어 메쉬, 로우폴리 디포머 메쉬, 지면 메쉬만 입력하면 압력 변형과 표면 변형까지 고려한 복잡한 리깅 셋업을 자동으로 생성해준답니다.<br/>차량이 등장하는 게임이나 영상을 만드는 아티스트라면 타이어 리깅에 쏟던 시간을 확 줄일 수 있는 실용적인 도구라 주목받고 있어요!</p><p>원문: <a href=\"https://80.lv/articles/free-blender-tool-capable-of-auto-rigging-virtually-any-tire\">80 Level</a></p>",
+    "source": "80 Level",
+    "publishedAt": "2026.04.24",
+    "hue": 200,
+    "image": "https://cdn.80.lv/api/upload/meta/47932/images/69ea350bee72d/contain_1200x630.jpg",
+    "url": "https://80.lv/articles/free-blender-tool-capable-of-auto-rigging-virtually-any-tire"
+  },
+  {
+    "id": "jason-schreier-studios-ai-claude-0424",
+    "tab": "industry",
+    "headline": "제이슨 슈라이어 '거의 모든 대형 스튜디오가 Claude 등 생성 AI 도구 활용 중'",
+    "summary": "저명한 게임 저널리스트 제이슨 슈라이어가 거의 모든 대형 게임 스튜디오가 생성형 AI 도구를 개발에 적극 사용 중이라고 확인했어요.",
+    "body": "<p>저명한 게임 저널리스트 제이슨 슈라이어가 거의 모든 대형 게임 스튜디오가 Claude를 비롯한 생성형 AI 도구를 개발에 적극 사용하고 있다고 확인했어요.<br/>구글 임원의 발언에 이어 나온 이 증언으로, 업계 내부에서는 AI 사용이 이미 일반화됐지만 공개적 반응이 두려워 외부에는 알리지 않는 관행이 드러났죠.<br/>Embark Studios의 Arc Raiders AI 보이스 라인 사례처럼 일부 스튜디오가 먼저 공개했다 역풍을 맞은 경험이 있어, 업계의 투명성 딜레마가 점점 커지고 있어요!</p><p>원문: <a href=\"https://www.thegamer.com/game-studios-using-generative-ai-claude-in-development/\">TheGamer</a></p>",
+    "source": "TheGamer",
+    "publishedAt": "2026.04.24",
+    "hue": 30,
+    "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2026/04/2026040812180100_c-1.jpg?w=1600&h=900&fit=crop",
+    "url": "https://www.thegamer.com/game-studios-using-generative-ai-claude-in-development/"
+  },
+  {
+    "id": "starti-ai-studio-2-0424",
+    "tab": "art",
+    "headline": "Starti AI Studio 2.0 출시 — 광고 영상 생성에서 완전한 크리에이티브 루프 시스템으로",
+    "summary": "Starti.ai가 생성·배포·분석·최적화를 하나로 잇는 완결형 AI 광고 영상 제작 시스템 AI Studio 2.0을 출시했어요.",
+    "body": "<p>AI 광고 영상 제작 플랫폼 Starti.ai가 생성·배포·분석·최적화를 하나로 잇는 완결형 시스템 AI Studio 2.0을 4월 24일 공식 출시했어요.<br/>이번 업그레이드의 핵심은 디렉터 수준의 사고로 숏 플래닝부터 후반 작업까지 처리하는 Video Agent, 동적 콘텐츠 인식 기반의 Motion Graphics, 그리고 Google·Meta 데이터를 연동해 영상 구조 단위로 성과를 분석하는 Smart Insight 모듈이에요.<br/>단순 영상 클립 생성을 넘어 브랜드 일관성을 자동 유지하면서 캠페인 성과까지 역추적할 수 있는 시스템이라, 콘텐츠 마케팅과 광고 제작 현장에 실질적인 변화를 가져올 것으로 기대돼요!</p><p>원문: <a href=\"https://www.manilatimes.net/2026/04/24/tmt-newswire/pr-newswire/starti-ai-studio-upgrades-to-20-from-video-generation-tool-to-complete-advertising-creative-system/2327490\">PR Newswire</a></p>",
+    "source": "PR Newswire",
+    "publishedAt": "2026.04.24",
+    "hue": 290,
+    "url": "https://www.manilatimes.net/2026/04/24/tmt-newswire/pr-newswire/starti-ai-studio-upgrades-to-20-from-video-generation-tool-to-complete-advertising-creative-system/2327490",
+    "urls": [
+      {
+        "label": "공식 사이트",
+        "href": "https://www.starti.ai"
+      }
+    ]
+  },
+  {
+    "id": "weekly-genai-roundup-0424",
+    "tab": "art",
+    "headline": "[4/17~23 주간 생성 AI 뉴스] 이미지 '사고' 시대 개막·디자인 AI 등장·리서치 에이전트 전면 가동",
+    "summary": "4월 17~23일 한 주 동안 ChatGPT Images 2.0, Claude 업데이트, Google Deep Research Max 등 실용 단계 AI 도구가 대거 등장했어요.",
+    "body": "<p>지난 한 주(4월 17~23일) 생성 AI 분야에서는 ChatGPT Images 2.0 출시를 기점으로 이미지 생성이 실무 도구 수준으로 올라섰다는 평가가 나왔어요.<br/>OpenAI의 이미지 '사고(thinking)' 기능으로 텍스트 렌더링 정확도가 크게 개선됐고, Anthropic의 Claude Opus 4.7 업데이트와 Google의 Deep Research Max(MCP 연동) 출시도 주요 소식으로 꼽혔죠.<br/>이미지·디자인·리서치 에이전트 세 영역이 동시에 실용 단계로 진입하면서, 크리에이터와 게임 아티스트가 당장 써볼 수 있는 AI 도구 선택지가 이번 주에만 확 넓어졌어요!</p><p>원문: <a href=\"https://blog.greeden.me/en/2026/04/23/april-17-april-23-2026-weekly-generative-ai-news-roundup-the-practical-rise-of-image-thinking-the-emergence-of-design-ai-and-the-full-scale-arrival-of-research-agents/\">IT &amp; Life Hacks Blog</a></p>",
+    "source": "IT & Life Hacks Blog",
+    "publishedAt": "2026.04.24",
+    "hue": 290,
+    "image": "https://blog.greeden.me/wp-content/uploads/2025/02/pexels-photo-373543.jpeg",
+    "url": "https://blog.greeden.me/en/2026/04/23/april-17-april-23-2026-weekly-generative-ai-news-roundup-the-practical-rise-of-image-thinking-the-emergence-of-design-ai-and-the-full-scale-arrival-of-research-agents/"
+  }
+]

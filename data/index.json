@@ -1,0 +1,700 @@
+{
+  "dates": [
+    {
+      "date": "2026.10.01",
+      "file": "articles/2026-10-01.json",
+      "count": 9,
+      "rev": "c7da79a069"
+    },
+    {
+      "date": "2026.09.30",
+      "file": "articles/2026-09-30.json",
+      "count": 4,
+      "rev": "57ff3b4d55"
+    },
+    {
+      "date": "2026.09.29",
+      "file": "articles/2026-09-29.json",
+      "count": 5,
+      "rev": "26beb08b5b"
+    },
+    {
+      "date": "2026.09.28",
+      "file": "articles/2026-09-28.json",
+      "count": 2,
+      "rev": "47793491c2"
+    },
+    {
+      "date": "2026.09.27",
+      "file": "articles/2026-09-27.json",
+      "count": 2,
+      "rev": "5ea90f8093"
+    },
+    {
+      "date": "2026.09.26",
+      "file": "articles/2026-09-26.json",
+      "count": 2,
+      "rev": "b4895113b5"
+    },
+    {
+      "date": "2026.09.25",
+      "file": "articles/2026-09-25.json",
+      "count": 4,
+      "rev": "f44df1289b"
+    },
+    {
+      "date": "2026.09.24",
+      "file": "articles/2026-09-24.json",
+      "count": 5,
+      "rev": "fcd9baae3e"
+    },
+    {
+      "date": "2026.09.23",
+      "file": "articles/2026-09-23.json",
+      "count": 4,
+      "rev": "569f80f765"
+    },
+    {
+      "date": "2026.09.21",
+      "file": "articles/2026-09-21.json",
+      "count": 3,
+      "rev": "74baad66b1"
+    },
+    {
+      "date": "2026.09.20",
+      "file": "articles/2026-09-20.json",
+      "count": 2,
+      "rev": "3b0420f4ce"
+    },
+    {
+      "date": "2026.09.19",
+      "file": "articles/2026-09-19.json",
+      "count": 3,
+      "rev": "1cf64f9c28"
+    },
+    {
+      "date": "2026.09.18",
+      "file": "articles/2026-09-18.json",
+      "count": 6,
+      "rev": "031f213186"
+    },
+    {
+      "date": "2026.09.17",
+      "file": "articles/2026-09-17.json",
+      "count": 2,
+      "rev": "aed9ba2cce"
+    },
+    {
+      "date": "2026.09.16",
+      "file": "articles/2026-09-16.json",
+      "count": 5,
+      "rev": "ece5057ee0"
+    },
+    {
+      "date": "2026.09.15",
+      "file": "articles/2026-09-15.json",
+      "count": 5,
+      "rev": "95214f590c"
+    },
+    {
+      "date": "2026.09.14",
+      "file": "articles/2026-09-14.json",
+      "count": 2,
+      "rev": "77639ead30"
+    },
+    {
+      "date": "2026.09.13",
+      "file": "articles/2026-09-13.json",
+      "count": 7,
+      "rev": "4761258121"
+    },
+    {
+      "date": "2026.09.12",
+      "file": "articles/2026-09-12.json",
+      "count": 11,
+      "rev": "9d21bd7a48"
+    },
+    {
+      "date": "2026.09.11",
+      "file": "articles/2026-09-11.json",
+      "count": 7,
+      "rev": "f30a1ae4b9"
+    },
+    {
+      "date": "2026.09.10",
+      "file": "articles/2026-09-10.json",
+      "count": 4,
+      "rev": "434b1e1d9e"
+    },
+    {
+      "date": "2026.09.09",
+      "file": "articles/2026-09-09.json",
+      "count": 3,
+      "rev": "3b94b88961"
+    },
+    {
+      "date": "2026.09.08",
+      "file": "articles/2026-09-08.json",
+      "count": 4,
+      "rev": "a0bdaa184f"
+    },
+    {
+      "date": "2026.09.07",
+      "file": "articles/2026-09-07.json",
+      "count": 4,
+      "rev": "a784f73263"
+    },
+    {
+      "date": "2026.09.06",
+      "file": "articles/2026-09-06.json",
+      "count": 5,
+      "rev": "d4f5aad9ee"
+    },
+    {
+      "date": "2026.09.05",
+      "file": "articles/2026-09-05.json",
+      "count": 6,
+      "rev": "37a5a1e04b"
+    },
+    {
+      "date": "2026.09.04",
+      "file": "articles/2026-09-04.json",
+      "count": 8,
+      "rev": "00f0cb62e8"
+    },
+    {
+      "date": "2026.09.01",
+      "file": "articles/2026-09-01.json",
+      "count": 4,
+      "rev": "c51ceb382e"
+    },
+    {
+      "date": "2026.08.31",
+      "file": "articles/2026-08-31.json",
+      "count": 1,
+      "rev": "26f75f2a33"
+    },
+    {
+      "date": "2026.08.30",
+      "file": "articles/2026-08-30.json",
+      "count": 3,
+      "rev": "b263d4e724"
+    },
+    {
+      "date": "2026.08.29",
+      "file": "articles/2026-08-29.json",
+      "count": 6,
+      "rev": "e9c325c884"
+    },
+    {
+      "date": "2026.08.28",
+      "file": "articles/2026-08-28.json",
+      "count": 5,
+      "rev": "336ecdf99f"
+    },
+    {
+      "date": "2026.08.27",
+      "file": "articles/2026-08-27.json",
+      "count": 5,
+      "rev": "5fca4c2f9f"
+    },
+    {
+      "date": "2026.08.26",
+      "file": "articles/2026-08-26.json",
+      "count": 3,
+      "rev": "56ef00b4b8"
+    },
+    {
+      "date": "2026.08.25",
+      "file": "articles/2026-08-25.json",
+      "count": 4,
+      "rev": "f724f1ab17"
+    },
+    {
+      "date": "2026.08.24",
+      "file": "articles/2026-08-24.json",
+      "count": 1,
+      "rev": "d1e35108e0"
+    },
+    {
+      "date": "2026.08.23",
+      "file": "articles/2026-08-23.json",
+      "count": 2,
+      "rev": "cc769f663c"
+    },
+    {
+      "date": "2026.08.22",
+      "file": "articles/2026-08-22.json",
+      "count": 3,
+      "rev": "253eeb3233"
+    },
+    {
+      "date": "2026.08.21",
+      "file": "articles/2026-08-21.json",
+      "count": 4,
+      "rev": "9ff24272f9"
+    },
+    {
+      "date": "2026.08.20",
+      "file": "articles/2026-08-20.json",
+      "count": 4,
+      "rev": "b757826d57"
+    },
+    {
+      "date": "2026.08.19",
+      "file": "articles/2026-08-19.json",
+      "count": 5,
+      "rev": "eef75a543e"
+    },
+    {
+      "date": "2026.08.18",
+      "file": "articles/2026-08-18.json",
+      "count": 3,
+      "rev": "93e52a78f0"
+    },
+    {
+      "date": "2026.08.17",
+      "file": "articles/2026-08-17.json",
+      "count": 3,
+      "rev": "43480c5e9d"
+    },
+    {
+      "date": "2026.08.16",
+      "file": "articles/2026-08-16.json",
+      "count": 1,
+      "rev": "9c71c62a36"
+    },
+    {
+      "date": "2026.08.14",
+      "file": "articles/2026-08-14.json",
+      "count": 4,
+      "rev": "9b1ab3d2c5"
+    },
+    {
+      "date": "2026.08.13",
+      "file": "articles/2026-08-13.json",
+      "count": 23,
+      "rev": "cb16949abd"
+    },
+    {
+      "date": "2026.08.12",
+      "file": "articles/2026-08-12.json",
+      "count": 5,
+      "rev": "56216a41fe"
+    },
+    {
+      "date": "2026.08.07",
+      "file": "articles/2026-08-07.json",
+      "count": 5,
+      "rev": "b4aa30871b"
+    },
+    {
+      "date": "2026.08.05",
+      "file": "articles/2026-08-05.json",
+      "count": 7,
+      "rev": "381f8844dd"
+    },
+    {
+      "date": "2026.08.03",
+      "file": "articles/2026-08-03.json",
+      "count": 2,
+      "rev": "cec22b2b2d"
+    },
+    {
+      "date": "2026.08.01",
+      "file": "articles/2026-08-01.json",
+      "count": 5,
+      "rev": "8d7344e3cd"
+    },
+    {
+      "date": "2026.07.31",
+      "file": "articles/2026-07-31.json",
+      "count": 9,
+      "rev": "78fdc3b7e8"
+    },
+    {
+      "date": "2026.07.30",
+      "file": "articles/2026-07-30.json",
+      "count": 6,
+      "rev": "4d72d8edb5"
+    },
+    {
+      "date": "2026.07.29",
+      "file": "articles/2026-07-29.json",
+      "count": 6,
+      "rev": "0603acdb62"
+    },
+    {
+      "date": "2026.07.17",
+      "file": "articles/2026-07-17.json",
+      "count": 6,
+      "rev": "60354224c5"
+    },
+    {
+      "date": "2026.07.16",
+      "file": "articles/2026-07-16.json",
+      "count": 8,
+      "rev": "e6e7dcd04e"
+    },
+    {
+      "date": "2026.07.15",
+      "file": "articles/2026-07-15.json",
+      "count": 4,
+      "rev": "f11572601e"
+    },
+    {
+      "date": "2026.07.14",
+      "file": "articles/2026-07-14.json",
+      "count": 4,
+      "rev": "8b04b45b0b"
+    },
+    {
+      "date": "2026.07.13",
+      "file": "articles/2026-07-13.json",
+      "count": 7,
+      "rev": "021c202d4c"
+    },
+    {
+      "date": "2026.07.10",
+      "file": "articles/2026-07-10.json",
+      "count": 8,
+      "rev": "7515bad6e2"
+    },
+    {
+      "date": "2026.07.07",
+      "file": "articles/2026-07-07.json",
+      "count": 3,
+      "rev": "4dec573e1c"
+    },
+    {
+      "date": "2026.07.06",
+      "file": "articles/2026-07-06.json",
+      "count": 3,
+      "rev": "555dc91545"
+    },
+    {
+      "date": "2026.07.05",
+      "file": "articles/2026-07-05.json",
+      "count": 1,
+      "rev": "8ddf7aae4d"
+    },
+    {
+      "date": "2026.07.04",
+      "file": "articles/2026-07-04.json",
+      "count": 4,
+      "rev": "3a18445a8b"
+    },
+    {
+      "date": "2026.07.03",
+      "file": "articles/2026-07-03.json",
+      "count": 5,
+      "rev": "f011761f3c"
+    },
+    {
+      "date": "2026.06.28",
+      "file": "articles/2026-06-28.json",
+      "count": 5,
+      "rev": "4badcb0975"
+    },
+    {
+      "date": "2026.06.25",
+      "file": "articles/2026-06-25.json",
+      "count": 2,
+      "rev": "995c198eda"
+    },
+    {
+      "date": "2026.06.23",
+      "file": "articles/2026-06-23.json",
+      "count": 4,
+      "rev": "98a7398bb8"
+    },
+    {
+      "date": "2026.06.22",
+      "file": "articles/2026-06-22.json",
+      "count": 6,
+      "rev": "baaba9df5c"
+    },
+    {
+      "date": "2026.06.21",
+      "file": "articles/2026-06-21.json",
+      "count": 5,
+      "rev": "7f5942f106"
+    },
+    {
+      "date": "2026.06.20",
+      "file": "articles/2026-06-20.json",
+      "count": 4,
+      "rev": "f2ab76a3f0"
+    },
+    {
+      "date": "2026.06.19",
+      "file": "articles/2026-06-19.json",
+      "count": 6,
+      "rev": "482e98bbff"
+    },
+    {
+      "date": "2026.06.18",
+      "file": "articles/2026-06-18.json",
+      "count": 9,
+      "rev": "1cd99f450c"
+    },
+    {
+      "date": "2026.06.17",
+      "file": "articles/2026-06-17.json",
+      "count": 4,
+      "rev": "07a2823753"
+    },
+    {
+      "date": "2026.06.16",
+      "file": "articles/2026-06-16.json",
+      "count": 4,
+      "rev": "b0d56a80c6"
+    },
+    {
+      "date": "2026.06.14",
+      "file": "articles/2026-06-14.json",
+      "count": 1,
+      "rev": "f022f7a80d"
+    },
+    {
+      "date": "2026.06.12",
+      "file": "articles/2026-06-12.json",
+      "count": 5,
+      "rev": "896cdf0284"
+    },
+    {
+      "date": "2026.06.11",
+      "file": "articles/2026-06-11.json",
+      "count": 9,
+      "rev": "8cb8227a43"
+    },
+    {
+      "date": "2026.06.10",
+      "file": "articles/2026-06-10.json",
+      "count": 3,
+      "rev": "3a33f5b0b9"
+    },
+    {
+      "date": "2026.06.09",
+      "file": "articles/2026-06-09.json",
+      "count": 7,
+      "rev": "5175edc583"
+    },
+    {
+      "date": "2026.06.08",
+      "file": "articles/2026-06-08.json",
+      "count": 3,
+      "rev": "29997c8d99"
+    },
+    {
+      "date": "2026.06.05",
+      "file": "articles/2026-06-05.json",
+      "count": 6,
+      "rev": "8535bcbc9f"
+    },
+    {
+      "date": "2026.06.04",
+      "file": "articles/2026-06-04.json",
+      "count": 5,
+      "rev": "6e76e838e1"
+    },
+    {
+      "date": "2026.06.03",
+      "file": "articles/2026-06-03.json",
+      "count": 4,
+      "rev": "5010fa7705"
+    },
+    {
+      "date": "2026.05.31",
+      "file": "articles/2026-05-31.json",
+      "count": 4,
+      "rev": "03c6f149b8"
+    },
+    {
+      "date": "2026.05.30",
+      "file": "articles/2026-05-30.json",
+      "count": 10,
+      "rev": "3bfbecf474"
+    },
+    {
+      "date": "2026.05.29",
+      "file": "articles/2026-05-29.json",
+      "count": 4,
+      "rev": "d166ba5864"
+    },
+    {
+      "date": "2026.05.28",
+      "file": "articles/2026-05-28.json",
+      "count": 4,
+      "rev": "d294eb4315"
+    },
+    {
+      "date": "2026.05.27",
+      "file": "articles/2026-05-27.json",
+      "count": 4,
+      "rev": "cba875c17e"
+    },
+    {
+      "date": "2026.05.26",
+      "file": "articles/2026-05-26.json",
+      "count": 1,
+      "rev": "fd4298caed"
+    },
+    {
+      "date": "2026.05.25",
+      "file": "articles/2026-05-25.json",
+      "count": 1,
+      "rev": "40eb4df115"
+    },
+    {
+      "date": "2026.05.24",
+      "file": "articles/2026-05-24.json",
+      "count": 2,
+      "rev": "803e2dcd0f"
+    },
+    {
+      "date": "2026.05.23",
+      "file": "articles/2026-05-23.json",
+      "count": 3,
+      "rev": "7607c8357a"
+    },
+    {
+      "date": "2026.05.22",
+      "file": "articles/2026-05-22.json",
+      "count": 7,
+      "rev": "dc4d9a828b"
+    },
+    {
+      "date": "2026.05.21",
+      "file": "articles/2026-05-21.json",
+      "count": 6,
+      "rev": "b9f5912fdf"
+    },
+    {
+      "date": "2026.05.20",
+      "file": "articles/2026-05-20.json",
+      "count": 7,
+      "rev": "099799721d"
+    },
+    {
+      "date": "2026.05.18",
+      "file": "articles/2026-05-18.json",
+      "count": 3,
+      "rev": "80ad730189"
+    },
+    {
+      "date": "2026.05.17",
+      "file": "articles/2026-05-17.json",
+      "count": 1,
+      "rev": "64f8e2e3dc"
+    },
+    {
+      "date": "2026.05.14",
+      "file": "articles/2026-05-14.json",
+      "count": 5,
+      "rev": "d1e72436ab"
+    },
+    {
+      "date": "2026.05.13",
+      "file": "articles/2026-05-13.json",
+      "count": 8,
+      "rev": "749c76bb59"
+    },
+    {
+      "date": "2026.05.12",
+      "file": "articles/2026-05-12.json",
+      "count": 7,
+      "rev": "553428f141"
+    },
+    {
+      "date": "2026.05.10",
+      "file": "articles/2026-05-10.json",
+      "count": 4,
+      "rev": "82897e90bf"
+    },
+    {
+      "date": "2026.05.09",
+      "file": "articles/2026-05-09.json",
+      "count": 6,
+      "rev": "b64fa71831"
+    },
+    {
+      "date": "2026.05.07",
+      "file": "articles/2026-05-07.json",
+      "count": 6,
+      "rev": "082f926f66"
+    },
+    {
+      "date": "2026.05.06",
+      "file": "articles/2026-05-06.json",
+      "count": 6,
+      "rev": "1bb330938d"
+    },
+    {
+      "date": "2026.05.05",
+      "file": "articles/2026-05-05.json",
+      "count": 5,
+      "rev": "8391f86bbf"
+    },
+    {
+      "date": "2026.05.02",
+      "file": "articles/2026-05-02.json",
+      "count": 8,
+      "rev": "b75dfc765d"
+    },
+    {
+      "date": "2026.05.01",
+      "file": "articles/2026-05-01.json",
+      "count": 5,
+      "rev": "32511d4048"
+    },
+    {
+      "date": "2026.04.30",
+      "file": "articles/2026-04-30.json",
+      "count": 3,
+      "rev": "72a619a497"
+    },
+    {
+      "date": "2026.04.29",
+      "file": "articles/2026-04-29.json",
+      "count": 10,
+      "rev": "feed6abf1d"
+    },
+    {
+      "date": "2026.04.28",
+      "file": "articles/2026-04-28.json",
+      "count": 5,
+      "rev": "aaffa1ef4c"
+    },
+    {
+      "date": "2026.04.27",
+      "file": "articles/2026-04-27.json",
+      "count": 7,
+      "rev": "42e7b0220d"
+    },
+    {
+      "date": "2026.04.26",
+      "file": "articles/2026-04-26.json",
+      "count": 6,
+      "rev": "89d3520ba2"
+    },
+    {
+      "date": "2026.04.25",
+      "file": "articles/2026-04-25.json",
+      "count": 10,
+      "rev": "ea958f18af"
+    },
+    {
+      "date": "2026.04.24",
+      "file": "articles/2026-04-24.json",
+      "count": 5,
+      "rev": "7fdb348dd2"
+    },
+    {
+      "date": "2026.04.23",
+      "file": "articles/2026-04-23.json",
+      "count": 6,
+      "rev": "02c244e10c"
+    }
+  ]
+}

@@ -11,8 +11,8 @@ in any way — all inputs (the source whitelist) are embedded in this prompt.
   PHASE 1 — RESEARCH: Research today's news, save each article as a small JSON
             entry in /tmp/feed/digest.json.
   PHASE 2 — PUBLISH:  Read /tmp/feed/digest.json, convert each article into a
-            articles.js entry, then update articles.js in the repository and
-            push to main.
+            feed entry, then add the entries to today's date file in the
+            repository (data/articles/YYYY-MM-DD.json) and push to main.
 
 CRITICAL — DO NOT write HTML inline or use large heredocs for content.
 Instead, save each article as a JSON object using Python. This keeps every
@@ -26,7 +26,7 @@ WORKING FILES (all under /tmp/feed/):
   digest.json        PHASE 1 output — today's curated articles
   whitelist.json     PHASE 1 — sources parsed from the embedded whitelist
   articles.json      PHASE 2 output — entries consumed by
-                     scripts/update_articles_js.py
+                     scripts/update_articles.py
   PUBLISH_PHASE      marker file — exists only while PHASE 2 runs (see
                      CONTEXT COMPACTION below)
 Keep digest.json and articles.json separate: they have different schemas.
@@ -70,7 +70,7 @@ mandatory exactly as written. They do not change any condition of the steps.
       save several articles in one python call.
 
   R5. Run VERIFY DIGEST at the end of PHASE 1 and VERIFY ARTICLES before
-      updating articles.js. Never skip them.
+      updating the feed data. Never skip them.
 
   R6. The save scripts check the length and format rules. If a save script
       prints REJECTED, rewrite that article's text and run the save script
@@ -433,8 +433,8 @@ PHASE 2 — PUBLISH TO THE FEED
 =====================================================================
 
 Your job in this phase is to read today's curated digest (/tmp/feed/digest.json),
-convert each article into a JSON entry, then update articles.js in the
-repository. The implementation details for fetching source pages, JS-file
+convert each article into a JSON entry, then add the entries to the feed data
+in the repository (data/articles/YYYY-MM-DD.json, one file per day). The implementation details for fetching source pages, JS-file
 editing, and git push are kept in scripts/ inside the repo — your job is the
 editorial work and the orchestration. The schema and rules are inline.
 
@@ -445,8 +445,8 @@ CRITICAL — DO NOT search the open web for new articles in this phase. The
 digest is the SINGLE source of truth for which articles to include today. You
 must read it and process exactly the articles it lists, in the order they
 appear. Do NOT add articles that are not in the digest. Do NOT skip articles
-that are in the digest (unless they fail dedup against existing articles.js
-entries).
+that are in the digest (unless they fail dedup against existing feed entries
+in data/articles/).
 
 CRITICAL — DO NOT spawn sub-agents (Task tool) for ANY part of this phase,
 including reading the digest, running fetch_article.py, or processing
@@ -606,7 +606,7 @@ JSON entry following these rules.
 
   body         : Korean HTML string, 600–800 Korean characters, written in
                  polite conversational tone (~해요, ~이에요) matching existing
-                 entries in articles.js.
+                 entries in data/articles/.
 
                  Source-text priority (use the FIRST that meets the bar):
                    1. FETCH_TEXT, if it is 200 characters or more
@@ -777,39 +777,33 @@ if arts and no_image / len(arts) > 0.3:
 
 ---
 
-UPDATE articles.js IN THE REPOSITORY
+UPDATE THE FEED DATA IN THE REPOSITORY
 
-This step inserts the new articles into articles.js, deduplicating against URLs
-already present in the file (so that the same article cannot be republished
-on consecutive days).
+This step adds the new articles to today's date file
+(data/articles/YYYY-MM-DD.json), deduplicating against URLs already present in
+any date file (so that the same article cannot be republished on consecutive
+days).
 
 cd /home/user/Daily_Art_AI_News_Feed
-python3 scripts/update_articles_js.py
+python3 scripts/update_articles.py
 
 The script:
-- Reads existing ids and urls from articles.js for uniqueness checks
-- Skips any new article whose url is already present (URL dedup)
-- Inserts each new article right after its tab section marker
-  (/* ---- games ---- */ etc.)
+- Reads existing ids and urls from every file in data/articles/ for
+  uniqueness checks
+- Skips any new article whose url is already present (URL dedup; scheme,
+  www., trailing '/' and #fragment differences count as the same URL)
+- Adds each new article to today's date file, ahead of that tab's existing
+  entries for today (creates the file if this is the first run today)
 - Generates a unique slug id for each new entry if one is missing
 - Fills publishedAt with today's KST date in YYYY.MM.DD format
+- Regenerates data/index.json (the list of date files the site loads)
 
-Quick syntax sanity check:
+Quick data sanity check:
 
 cd /home/user/Daily_Art_AI_News_Feed
-node --check articles.js 2>/dev/null \
-  && echo "✅ articles.js parses as valid JavaScript." \
-  || python3 -c "
-import re
-with open('articles.js', encoding='utf-8') as f:
-    s = f.read()
-assert s.rstrip().endswith('};'), 'File does not end with };'
-assert 'tabs:' in s, 'tabs array missing'
-for m in ['/* ---- games ---- */', '/* ---- industry ---- */', '/* ---- art ---- */']:
-    assert s.count(m) == 1, f'Section marker missing or duplicated: {m}'
-print('✅ Structural checks passed.')
-"
+python3 scripts/validate_data.py
 
+It must print "✅ data/ is valid".
 If the validation fails, terminate the routine and DO NOT push the broken file.
 
 ---
