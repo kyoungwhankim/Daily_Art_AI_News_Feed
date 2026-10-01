@@ -1,0 +1,74 @@
+[
+  {
+    "id": "industry-918d94c5-2026-09",
+    "tab": "industry",
+    "headline": "마이크로소프트 CEO, 3년간 Xbox 5,750명 감원 두고 '단순 구조조정'이라 말해",
+    "summary": "사티아 나델라 CEO, Xbox 부문 3년간 5,750명 이상 감원을 '게임 사업 단순 구조조정'이라 일축했어요.",
+    "body": "<p>마이크로소프트 CEO 사티아 나델라가 Xbox 부문에서 지난 3년간 5,750명 이상을 감원한 것에 대해 '게임 사업의 단순한 구조조정'이라고 표현했어요. 이 발언은 마이크로소프트가 오픈AI 투자 등 AI 개발에 수백억 달러를 쏟아붓는 동시에, 베데스다, 하이파이 러쉬 개발사 탱고 게임웍스, 아크티비전 블리자드 산하 여러 스튜디오를 잇달아 폐쇄하거나 대규모 인력을 줄여온 상황에서 나온 거예요. 나델라는 AI에 집중하기 위한 전략적 선택이 아니라 게임 사업 전반의 효율화 과정이라는 점을 강조했지만, 업계에서는 이를 액면 그대로 받아들이기 어렵다는 반응이 많아요. 인수에 거액을 투자한 스튜디오들이 수년 내에 문을 닫거나 프로젝트를 취소당하는 모습을 지켜본 개발자들로서는 납득하기 힘든 설명이에요.</p><p>게임 개발자들 사이에서는 AI가 생산성을 높이는 도구로 활용되는 것을 넘어 인력 감축의 명분으로 쓰이는 게 아니냐는 우려가 점점 커지고 있어요. 실제로 최근 몇 년간 대형 게임사들이 AI 관련 투자를 늘리면서 동시에 개발 인력을 줄이는 사례가 반복되고 있고, 이러한 흐름이 단순한 경기 침체가 아니라 구조적 변화임을 시사한다는 분석도 나와요. 나델라의 이번 발언은 업계의 불안을 잠재우기는커녕 오히려 AI 중심 대기업들이 게임 개발 생태계를 어떻게 바라보고 있는지를 적나라하게 드러냈다는 평가를 받고 있어요.</p><p>원문: <a href=\"https://www.gamedeveloper.com/business/microsoft-ceo-says-xbox-is-simply-streamlining-after-cutting-over-5-750-jobs-in-three-years\">Game Developer</a></p>",
+    "source": "Game Developer",
+    "publishedAt": "2026.09.29",
+    "hue": 0,
+    "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png",
+    "url": "https://www.gamedeveloper.com/business/microsoft-ceo-says-xbox-is-simply-streamlining-after-cutting-over-5-750-jobs-in-three-years"
+  },
+  {
+    "id": "art-e2afbe3d-2026-09",
+    "tab": "art",
+    "headline": "AMD, 페이페이 리의 월드랩스를 82억 달러에 인수 — 3D AI로 게임·영상 시장 진출",
+    "summary": "AMD가 페이페이 리의 AI 스타트업 월드랩스를 82억 달러 전액 주식 거래로 인수한다고 발표했어요.",
+    "body": "<p>AMD가 AI 공간 지능 연구소 월드랩스(World Labs)를 82억 달러 규모의 전액 주식 거래로 인수한다고 9월 28일 발표했어요. 월드랩스는 AI 분야의 선구자 페이페이 리 박사가 공동 창업한 스타트업으로, 텍스트·이미지·영상 입력으로 상호작용 가능한 3D 세계를 생성하는 공간 지능 모델 개발에 집중해왔어요. 인수가 완료되면 페이페이 리 박사는 AMD의 EVP 겸 최고 과학자로 합류하고, 월드랩스의 연구 팀 전원이 AMD로 이적해요. 현재 개발 중인 모델 'Marble'은 텍스트나 이미지에서 실시간으로 탐색 가능한 3D 환경을 생성하는 것을 목표로 해요.</p><p>AMD CEO 리사 수는 '차세대 AI를 위한 컴퓨팅 플랫폼을 구축하려면 모델이 어떻게 진화하는지 깊이 이해해야 한다'며, 월드랩스 팀이 AMD의 하드웨어·소프트웨어·시스템 로드맵을 형성하는 데 핵심적인 역할을 할 것이라고 강조했어요. 이번 인수로 AMD는 GPU 경쟁력에 AI 소프트웨어와 모델 역량을 더해 엔비디아에 맞선 AI 인프라 통합 경쟁에 본격 뛰어들게 됐어요. 게임 개발·영화 제작·로보틱스 시뮬레이션 등 3D 생성 AI 기술이 필요한 다양한 산업에 큰 파급 효과가 예상되고, 오픈 생태계를 강화하는 AMD의 전략과도 맞닿아 있어요.</p><p>원문: <a href=\"https://newsroom.amd.com/news/amd-acquire-world-labs/\">AMD Newsroom</a></p>",
+    "source": "AMD Newsroom",
+    "publishedAt": "2026.09.29",
+    "hue": 220,
+    "image": "https://newsroom.amd.com/images/2026/09/063180c6-5b1a-4200-b238-99d7083699ae.jpg",
+    "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+  },
+  {
+    "id": "art-c8663df4-2026-09",
+    "tab": "art",
+    "headline": "CorelDRAW, 9월 업데이트로 텍스트→벡터 AI 생성 기능 추가",
+    "summary": "CorelDRAW가 텍스트 프롬프트로 편집 가능한 네이티브 벡터를 생성하는 AI 기능 세 종류를 9월 업데이트로 도입했어요.",
+    "body": "<p>CorelDRAW Graphics Suite 9월 2026 업데이트에 텍스트 프롬프트나 참조 이미지로 완전히 편집 가능한 벡터 그래픽을 생성하는 AI 기능 세 가지가 추가됐어요. Vector Spark는 아이콘·클립아트 같은 단순한 작업을 빠르게 처리하고, Vector Craft는 범용 디자인에, Vector Master는 참조 콘텐츠 기반의 복잡한 디자인과 변형에 특화돼 있어요. 래스터 이미지를 삽입하거나 트레이싱하는 기존 방식과 달리, 생성 결과물이 곡선과 노드로 이루어진 진짜 벡터 오브젝트라서 디자이너가 색상·형태·개별 요소를 직접 손보며 완성할 수 있어요. 이는 벡터 소프트웨어에서 AI 생성 기능이 처음으로 진정한 네이티브 벡터로 구현된 사례예요.</p><p>베타 테스터들이 가장 많이 활용한 방식은 자신이 이미 만들어둔 로고나 일러스트를 참조 이미지로 넣고 유사한 스타일의 아이콘이나 에셋을 추가로 만드는 것이었어요. AI가 디자인 언어를 대신 발명하는 게 아니라, 이미 완성된 나만의 스타일에서 반복 작업을 덜어주는 역할을 하는 셈이에요. 생성 도구는 클라우드 기반으로 실행되며 고성능 GPU가 없어도 사용할 수 있어요. CorelDRAW Graphics Suite는 연 269달러(또는 549달러 영구 라이선스)에 이용할 수 있고, 이번 출시를 기념해 한 주간 Vector Craft와 Vector Master의 AI 벡터 생성 횟수를 무제한으로 제공해요.</p><p>원문: <a href=\"https://www.creativebloq.com/design/graphic-design-software/coreldraw-adds-text-to-vector-ai-in-the-september-update-is-it-a-good-move\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.09.29",
+    "hue": 270,
+    "image": "https://cdn.mos.cms.futurecdn.net/Cc7Agjdq4cD8sy3c8yjz6f-1600-80.jpg",
+    "url": "https://www.creativebloq.com/design/graphic-design-software/coreldraw-adds-text-to-vector-ai-in-the-september-update-is-it-a-good-move",
+    "urls": [
+      {
+        "label": "공식 블로그",
+        "href": "https://www.coreldraw.com/en/blog/product/coreldraw-graphics-suite-september-2026-update/"
+      }
+    ]
+  },
+  {
+    "id": "art-a88ffd7e-2026-09",
+    "tab": "art",
+    "headline": "AI 애니메이션 영상 바이럴 후 표절 논란 — '노래의 바다' 캐릭터 디자인 도용 의혹",
+    "summary": "아티스트 Antrofrog의 AI 애니메이션이 수백만 뷰를 기록한 뒤 기존 작품 캐릭터를 도용했다는 논란이 커지고 있어요.",
+    "body": "<p>아티스트 Antrofrog가 사드(Sade)의 명곡 'Smooth Operator'를 배경음악으로 사용해 만든 AI 애니메이션이 소셜 미디어에서 수백만 뷰를 기록하며 큰 화제를 모았어요. 우산을 든 키 큰 남자가 도시를 누비며 화분을 받고 고양이를 구조하는 내용의 이 영상은 얼핏 보면 상당히 완성도 있어 보이지만, 자세히 들여다보면 여러 가지 문제가 드러나요. 캐릭터 디자인이 아일랜드 애니메이션 '노래의 바다(Song of the Sea)'를 비롯해 여러 기존 작품에서 무단으로 학습된 것 같다는 의혹이 제기되면서 논란이 본격화됐어요. 한 댓글 작성자는 '저 아이스크림 먹는 아이가 Song of the Sea의 벤 아니야?'라고 지적하기도 했어요.</p><p>AI 아트의 저작권 침해 문제는 이번 사건으로 다시 한번 수면 위로 떠올랐어요. 'AI 아트의 비극은 결과물이 나빠 보이는 게 아니라, 감상자를 회의주의자로 만든다는 것'이라는 비판처럼, AI가 기존 예술가들의 작업을 허락 없이 활용하는 방식에 대한 불신이 쌓이고 있어요. 애니메이션 분야는 AI에 의한 일자리 위협을 특히 민감하게 받아들이는 영역으로, 이 사건은 AI 생성 콘텐츠의 윤리 기준과 창작자 보호를 위한 논의를 더 시급하게 만들고 있어요.</p><p>원문: <a href=\"https://www.creativebloq.com/art/animation/viral-ai-animation-sparks-controversy-over-familiar-character-design\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.09.29",
+    "hue": 290,
+    "image": "https://cdn.mos.cms.futurecdn.net/zxY6jnnHDgAvHyFjMJYiSY-1920-80.jpg",
+    "url": "https://www.creativebloq.com/art/animation/viral-ai-animation-sparks-controversy-over-familiar-character-design"
+  },
+  {
+    "id": "art-c77f2490-2026-09",
+    "tab": "art",
+    "headline": "ElevenLabs, v4 음성 모델 출시 — 90개 언어, 10초 클로닝, 표정 태그 지원",
+    "summary": "ElevenLabs가 90개 언어를 지원하고 10초 음성 샘플로 클로닝이 가능한 Eleven v4 모델을 공개했어요.",
+    "body": "<p>ElevenLabs가 9월 28일 새 음성 합성 모델 Eleven v4와 v4 Turbo를 공개했어요. 이번 업데이트에서 가장 눈에 띄는 변화는 지원 언어의 확장인데, 기존 70개에서 90개로 늘었고 일본어·브라질 포르투갈어·광둥어·북경어 등의 품질이 눈에 띄게 향상됐어요. 목소리 클로닝에 필요한 음성 샘플도 단 10초로 줄어들어 더욱 접근하기 쉬워졌고, 긴 텍스트에서도 목소리 정체성을 일관되게 유지하는 능력이 강화됐어요. 기존 버전에서 도입된 인라인 표정 태그(예: [laughs], [whispers])는 이번 버전에서 여러 태그를 순차적으로 적용할 수 있도록 확장돼 더욱 자연스러운 감정 표현이 가능해졌어요.</p><p>음성 에이전트 분야에서도 중요한 개선이 이루어졌어요. v4는 레이턴시가 더 낮아지고 대규모 언어 모델의 응답에 맞춰 실시간으로 오디오를 생성하는 능력이 향상됐어요. 고객 응대 시나리오에서 대립·에스컬레이션·대기 상황을 더 자연스럽게 처리할 수 있게 돼 게임 NPC 대화, 영상 더빙, 인터랙티브 스토리텔링 등 다양한 크리에이티브 분야에서의 실시간 활용이 한층 현실적으로 됐어요. 최근 ElevenLabs는 220억 달러 기업 가치로 평가받는 등 AI 음성 분야의 선도 주자로서 입지를 확고히 하고 있어요.</p><p>원문: <a href=\"https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/\">TechCrunch</a></p>",
+    "source": "TechCrunch",
+    "publishedAt": "2026.09.29",
+    "hue": 200,
+    "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg",
+    "url": "https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/",
+    "urls": [
+      {
+        "label": "영상",
+        "href": "https://www.youtube.com/watch?v=va9CLYXfAjA"
+      }
+    ]
+  }
+]

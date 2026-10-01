@@ -1,0 +1,42 @@
+[
+  {
+    "id": "games-8ceb7f2d-2026-09",
+    "tab": "games",
+    "headline": "Meta, 텍스트 프롬프트로 게임 만드는 AI 도구 'Horizon Create·Horizon Studio' 공개",
+    "summary": "Meta가 프롬프트만으로 2D·3D 모바일 게임을 만드는 AI 도구 두 가지를 Meta Connect 2026에서 공개했어요.",
+    "body": "<p>메타가 메타 커넥트 2026에서 텍스트 프롬프트만으로 2D·3D 모바일 게임을 만들 수 있는 AI 창작 도구 두 가지를 공개했어요. 모바일 앱인 'Horizon Create'와 브라우저 기반의 'Horizon Studio'가 그것인데, 아이디어를 입력하면 멀티플레이어 시스템, 레벨 진행 구조, 난이도 밸런싱, 아트 디렉션까지 갖춘 완성형 게임이 자동으로 구성돼요. 생성 이후에도 각 요소를 직접 다듬을 수 있어요. 완성된 게임은 Facebook과 Instagram 피드에서 앱 다운로드 없이 바로 플레이할 수 있고, 인스타그램에서 클립을 보다가 수 초 안에 멀티플레이어 세션에 합류하는 것도 가능해요.</p><p>이번 발표는 일일 활성 유저 일억 이천삼백만 명을 보유한 Roblox를 정조준한 행보로 해석돼요. 메타는 Google의 Project Genie가 짧은 체험형 인터랙션에 머무는 것과 달리 자사 도구들은 긴 플레이 세션을 지원하는 완성도 높은 게임을 만들 수 있다는 점을 차별점으로 강조했어요. 원래 가상현실 앱으로 출발한 Horizon 플랫폼을 모바일로 전환하며, 수십억 명이 이미 사용하는 Facebook·Instagram을 게임 배포망으로 활용하겠다는 전략이에요. 두 도구 모두 현재 얼리 액세스 단계이며 웨이트리스트 신청이 진행 중이에요.</p><p>원문: <a href=\"https://www.techspot.com/news/113999-meta-new-ai-game-tools-can-turn-prompts.html\">TechSpot</a></p>",
+    "source": "TechSpot",
+    "publishedAt": "2026.09.27",
+    "hue": 30,
+    "image": "https://www.techspot.com/images2/news/bigimage/2026/09/2026-09-26-image.jpg",
+    "url": "https://www.techspot.com/news/113999-meta-new-ai-game-tools-can-turn-prompts.html",
+    "urls": [
+      {
+        "label": "공식 사이트",
+        "href": "https://www.meta.com/horizon/"
+      },
+      {
+        "label": "관련 보도",
+        "href": "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/"
+      }
+    ]
+  },
+  {
+    "id": "industry-dcca47f9-2026-09",
+    "tab": "industry",
+    "headline": "Meta의 AI 게임 생성 도구, 업계는 냉소적 — \"AI 슬롭\" 평가도",
+    "summary": "Meta의 새 AI 게임 도구 발표에 개발자 커뮤니티가 냉소적 반응을 보이며 'AI 슬롭'이라는 평가가 나왔어요.",
+    "body": "<p>메타가 메타 커넥트 이천이십육에서 인공지능 기반 게임 생성 도구 두 가지를 발표했지만, 전문 개발자 커뮤니티의 반응은 냉담해요. 모바일 앱인 '호라이즌 크리에이트'와 브라우저 기반의 '호라이즌 스튜디오'가 그 주인공인데, 텍스트 프롬프트만으로 이디 쓰리디 게임을 자동 생성한다는 콘셉트 자체를 게임 개발 미디어 게임프롬스크래치가 'AI 슬롭'이라고 직격했어요. 메타의 설명에 따르면 이 도구들은 전통적인 게임 개발에 필요한 수개월의 작업 기간, 고가의 장비, 전문 기술 없이도 아이디어를 입력하면 환경, 캐릭터, 게임 메커닉, 멀티플레이어 지원까지 포함된 완성형 게임을 만들어준다고 해요. 완성된 게임은 페이스북, 인스타그램, 호라이즌 피드에서 수십억 명에게 배포할 수 있어요.</p><p>전문 개발자들이 우려하는 핵심은 품질이에요. 생성형 인공지능이 게임 창작의 진입 장벽을 낮춘다는 점은 일부 긍정적으로 볼 수 있지만, 자동 생성된 게임이 진정한 창의성과 독창성을 갖출 수 있는지에 대한 의문은 여전해요. 생성된 게임이 메타 플랫폼 피드 안에만 국한된다는 점에서 독립적인 게임 개발 생태계와는 거리가 멀고, 소셜 미디어 내 콘텐츠 생성 수단에 가깝다는 비판도 나오고 있어요. 이번 논쟁은 생성형 인공지능이 창작 도구로서 어느 수준의 품질 기준을 충족해야 하는지에 대한 게임 업계 전반의 토론으로 이어지고 있어요. 메타가 앞으로 어떤 사례와 업그레이드를 통해 부정적인 시각을 극복할지 주목돼요.</p><p>원문: <a href=\"https://gamefromscratch.com/meta-horizon-create-and-horizon-studio-game-engines/\">GameFromScratch</a></p>",
+    "source": "GameFromScratch",
+    "publishedAt": "2026.09.27",
+    "hue": 20,
+    "image": "https://gamefromscratch.com/wp-content/uploads/2026/09/MetaAISlopEnginesLUM1080.jpg",
+    "url": "https://gamefromscratch.com/meta-horizon-create-and-horizon-studio-game-engines/",
+    "urls": [
+      {
+        "label": "공식 발표",
+        "href": "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/"
+      }
+    ]
+  }
+]
