@@ -53,8 +53,8 @@ mandatory exactly as written. They do not change any condition of the steps.
 
   R2. Search thoroughly, section by section (1 → 2 → 3). For each section,
       search order step 1 means checking EVERY source in whitelist["common"]
-      plus that section's whitelist[...]["primary"] list for today's or
-      yesterday's (KST) articles — not a sample of them. Only after that may
+      plus that section's whitelist[...]["primary"] list for articles that
+      meet that section's RECENCY RULE — not a sample of them. Only after that may
       you decide whether step 2 (broadened) or step 3 (open web) applies,
       exactly as USING THE WHITELIST describes. Before moving to the next
       section, print one line listing which sources you checked.
