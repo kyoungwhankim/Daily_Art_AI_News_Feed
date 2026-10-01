@@ -46,6 +46,15 @@ SECTION_MARKERS = {
 }
 
 
+def normalize_url(u: str) -> str:
+    """URL dedup용 정규화 — scheme, www., 끝의 '/', fragment 차이를 무시한다."""
+    u = (u or '').strip().split('#', 1)[0]
+    u = re.sub(r'^https?://', '', u, flags=re.IGNORECASE)
+    u = re.sub(r'^www\.', '', u, flags=re.IGNORECASE)
+    host, _, rest = u.partition('/')
+    return (host.lower() + ('/' + rest if rest else '')).rstrip('/')
+
+
 def js_string(s: str) -> str:
     """파이썬 문자열을 JS 단일 따옴표 문자열 리터럴로 변환."""
     s = s.replace('\\', '\\\\').replace("'", "\\'")
@@ -108,13 +117,14 @@ def main():
 
     # 기존 id와 url 수집 — id는 충돌 방지용, url은 dedup용
     existing_ids = set(re.findall(r"id:\s*'([^']+)'", original))
-    existing_urls = set(re.findall(r"url:\s*'([^']+)'", original))
+    existing_urls = {normalize_url(u)
+                     for u in re.findall(r"url:\s*'([^']+)'", original)}
 
     # tab별로 그룹화하면서 이미 게시된 url은 스킵 (URL dedup).
     by_tab = {'games': [], 'industry': [], 'art': []}
     skipped_dup = 0
     for i, art in enumerate(new_articles):
-        if art.get('url') in existing_urls:
+        if normalize_url(art.get('url')) in existing_urls:
             skipped_dup += 1
             continue
         by_tab[art['tab']].append((i, art))
