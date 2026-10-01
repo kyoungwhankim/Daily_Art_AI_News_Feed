@@ -2425,6 +2425,18 @@ window.AIAD = {
         
     /* ---- industry ---- */
         {
+            id:          'industry-7cef0bd9-2026-10',
+            tab:         'industry',
+            headline:    '일본 게임 개발자 85.8%가 생성형 AI 사용 중… CESA 설문',
+            summary:     '일본 게임 개발자 10명 중 8명 이상이 생성형 AI를 쓰고 있어요.',
+            body:        '<p>일본 컴퓨터엔터테인먼트협회(CESA)가 게임 개발자 콘퍼런스 CEDEC에서 개발자 1,349명을 대상으로 조사한 결과, 85.8%가 생성형 AI를 사용하고 있는 것으로 나타났어요. 작년 51%에서 크게 뛴 수치예요. 63%는 AI를 매일 쓴다고 답했고, 22.8%는 가끔 쓴다고 했어요. 주로 ChatGPT나 Copilot 같은 도구로 디버깅과 사무 업무에 활용하지만, 인게임 에셋에도 쓰이는 것으로 알려졌어요.</p><p>개발자들은 AI 덕분에 창의성이 넓어졌다는 응답이 837명, 기술적 장벽이 낮아졌다는 응답이 738명이었던 반면, 최종 사용자 경험에 도움이 된다는 응답은 147명에 그쳤어요. 회사 차원에서는 CESA 회원사의 74%가 AI 정책을 마련했지만, 시각 에셋 제작에 AI를 쓰는 곳은 12곳에 불과했고 스토리, 현지화, QA, 프로그래밍에서는 더 적었어요. 개인 개발자 사이에서는 AI가 이미 일상이 됐지만, 아트 같은 최종 결과물 영역에서는 조직들이 여전히 신중하다는 점을 보여주는 조사예요.</p><p>원문: <a href="https://kotaku.com/over-85-percent-of-japanese-game-developers-are-using-ai-2000736041">Kotaku</a></p>',
+            source:      'Kotaku',
+            publishedAt: '2026.10.01',
+            hue:         30,
+            image:       'https://kotaku.com/app/uploads/2026/09/Screenshot-2026-09-21-at-17.07.03.jpg',
+            url:         'https://kotaku.com/over-85-percent-of-japanese-game-developers-are-using-ai-2000736041',
+        },
+        {
             id:          'industry-604e7057-2026-10',
             tab:         'industry',
             headline:    'MTG, AI 활용해 규모 두 배로 키운다… 스튜디오 간 AI 허브 운영 전략 공개',
@@ -4294,6 +4306,18 @@ window.AIAD = {
         },
         
     /* ---- art ---- */
+        {
+            id:          'art-7c64b970-2026-10',
+            tab:         'art',
+            headline:    '포토샵 베타에 생성형 AI \'릴라이트\' 추가… 호불호 갈려',
+            summary:     '포토샵 베타의 생성형 AI 릴라이트가 조명을 사후에 바꿔줘요.',
+            body:        '<p>어도비가 포토샵 데스크톱 베타에 새 생성형 AI 기능 \'릴라이트(Relight)\'를 추가했어요. 이미지에 새로운 인터랙티브 조명을 비파괴 방식으로 더할 수 있어서, 촬영이 끝난 뒤에도 조명을 다시 잡을 수 있다는 게 핵심이에요. 조명의 위치, 세기, 색상, 확산 정도를 실시간으로 확인하며 조절할 수 있어요.</p><p>사용하려면 최신 베타 빌드로 업데이트한 뒤 레이어 메뉴에서 새 릴라이트 레이어를 만들면 돼요. 기본 흰색 조명이 이미지 중앙에 생기고, 캔버스 안팎으로 드래그해 옮길 수 있어요. 릴라이트 레이어가 따로 만들어지기 때문에 원본 픽셀은 그대로 유지돼요. 다만 크리에이티브 블로그는 이 기능이 엔비디아 DLSS 5만큼이나 논란이 되고 있다고 전했고, 편의성을 반기는 쪽과 결과물의 진정성을 걱정하는 쪽으로 반응이 갈리고 있어요.</p><p>원문: <a href="https://www.creativebloq.com/design/graphic-design/photoshops-newest-ai-tool-is-immediately-dividing-opinion">Creative Bloq</a></p>',
+            source:      'Creative Bloq',
+            publishedAt: '2026.10.01',
+            hue:         290,
+            image:       'https://cdn.mos.cms.futurecdn.net/naMDw2juYUcAcYp2AbFJGU-1440-80.webp',
+            url:         'https://www.creativebloq.com/design/graphic-design/photoshops-newest-ai-tool-is-immediately-dividing-opinion',
+        },
         {
             id:          'art-a571fadb-2026-10',
             tab:         'art',
