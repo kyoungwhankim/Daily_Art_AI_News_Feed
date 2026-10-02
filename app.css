@@ -1398,3 +1398,20 @@ mark {
   cursor: pointer;
 }
 .modal-keyword:hover { background: var(--accent); color: var(--card); }
+
+/* iOS "홈 화면에 추가" 안내 (PWA) */
+.install-hint {
+  position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 60;
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px;
+  background: var(--card); color: var(--ink);
+  border: 2px solid var(--stroke); border-radius: 14px;
+  box-shadow: var(--shadow-pop-sm);
+  font-size: 13px; line-height: 1.5;
+}
+.install-hint span { flex: 1; }
+.install-hint button {
+  flex: 0 0 auto; border: 0; background: transparent; color: var(--muted);
+  font-size: 16px; cursor: pointer; padding: 4px;
+}

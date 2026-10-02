@@ -50,6 +50,43 @@ function routePath(home, tab, keyword) {
 }
 const INITIAL_ROUTE = parseRoute(window.location.pathname);
 
+/* ---------- app install (PWA) ---------- */
+// 안드로이드·데스크톱 크롬: 브라우저가 주는 설치 이벤트를 받아 헤더의 "앱 설치" 버튼으로 연다.
+// 아이폰·아이패드 사파리: 설치 이벤트가 없어서 "공유 → 홈 화면에 추가" 안내를 한 번 보여 준다.
+function isStandalone() {
+  return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
+}
+function useInstallPrompt() {
+  const [evt, setEvt] = useState(null);
+  useEffect(() => {
+    const onPrompt = e => { e.preventDefault(); setEvt(e); };
+    const onInstalled = () => setEvt(null);
+    window.addEventListener('beforeinstallprompt', onPrompt);
+    window.addEventListener('appinstalled', onInstalled);
+    return () => {
+      window.removeEventListener('beforeinstallprompt', onPrompt);
+      window.removeEventListener('appinstalled', onInstalled);
+    };
+  }, []);
+  const install = evt ? () => { evt.prompt(); evt.userChoice.finally(() => setEvt(null)); } : null;
+  return install;
+}
+function IosInstallHint() {
+  const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const [show, setShow] = useState(() => {
+    try { return isIos && !isStandalone() && !localStorage.getItem('aiad:ios-hint-done'); } catch { return false; }
+  });
+  if (!show) return null;
+  const close = () => { try { localStorage.setItem('aiad:ios-hint-done', '1'); } catch {} setShow(false); };
+  return (
+    <div className="install-hint" role="dialog" aria-label="홈 화면에 추가">
+      <span>홈 화면에 추가하면 앱처럼 쓸 수 있어요 — 사파리의 <b>공유</b> 버튼 → <b>홈 화면에 추가</b></span>
+      <button type="button" onClick={close} aria-label="닫기">✕</button>
+    </div>
+  );
+}
+
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
 const KOR_DAY = ['일','월','화','수','목','금','토'];
@@ -212,6 +249,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
 /* ---------- header ---------- */
 function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome }) {
   const inputRef = useRef(null);
+  const install = useInstallPrompt();
   useEffect(() => {
     const onKey = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
@@ -244,6 +282,13 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
             />
             {!query && <span className="kbd">⌘ K</span>}
           </label>
+          {install && (
+            <button className="icon-btn" title="앱 설치" aria-label="앱 설치" onClick={install}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
+              </svg>
+            </button>
+          )}
           <button className="icon-btn" title="저장한 기사" onClick={onShowSaved}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
@@ -966,6 +1011,7 @@ function App() {
         )}
       </main>
 
+      <IosInstallHint />
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
         <div>큐레이션 · 한국어 번역</div>

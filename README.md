@@ -43,6 +43,7 @@ main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_dat
   - `articles/<id>/` — 기사별 페이지. 피드 앱과 같은 페이지라 방문자에게는 그 기사의 탭 카드 화면 위에 기사 창이 열리고, 검색엔진·링크 미리보기용 본문·OG·NewsArticle 구조화 데이터는 HTML에 들어 있다. 앱에서 기사 창을 열면 주소가 이 경로가 되고, "링크 복사"도 이 주소를 복사한다 (예전 `?article=<id>` 링크는 이 주소로 바뀐다)
   - `topics/<tab>/`, `topics/<tab>/<키워드>/` — 탭별·서브 카테고리별 페이지 (6개 이상 키워드만). 피드 앱과 같은 페이지라 방문자에게는 그 탭·서브 카테고리가 선택된 카드 화면이 열리고, 검색엔진용 기사 목록은 HTML에 들어 있다. 앱에서 탭·서브 카테고리를 바꾸면 주소도 이 경로로 바뀐다
   - `sitemap.xml`, `feed.xml`(RSS, 최신 50건), `robots.txt`, `404.html`
+  - PWA: `manifest.webmanifest`, `sw.js`(레포의 `sw.js`에 캐시 목록·버전을 채워 냄), `icons/` — 휴대폰 홈 화면에 앱처럼 설치하고, 한 번 연 화면과 기사 데이터는 오프라인에서도 열린다. 안드로이드·데스크톱 크롬에서는 헤더에 "앱 설치" 버튼이 뜨고, 아이폰·아이패드 사파리에는 "공유 → 홈 화면에 추가" 안내가 한 번 뜬다. 아이콘 원본은 `icons/icon.svg`
 - 레포의 `index.html`은 브라우저 Babel 방식 그대로라 `python3 -m http.server`로 바로 미리 볼 수 있다. 배포본을 확인하려면 `python3 scripts/build_site.py` 후 `_site/`를 띄운다 (`npx`로 esbuild를 받으므로 Node가 필요, `--no-bundle`이면 불필요).
 - 사이트 주소는 `build_site.py`의 `SITE_URL` (워크플로의 `SITE_URL` 환경 변수로도 지정).
 - 검색 등록: 구글 Search Console, 네이버 서치어드바이저에 `https://ai-art-news.pages.dev` 등록 후 `sitemap.xml`(네이버는 `feed.xml` RSS도) 제출.
