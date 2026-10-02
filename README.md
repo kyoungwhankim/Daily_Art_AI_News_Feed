@@ -40,7 +40,7 @@ main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_dat
 - 예전 주소(`kyoungwhankim.github.io/Daily_Art_AI_News_Feed/`)는 GitHub Pages(Source: GitHub Actions)에 안내 페이지만 배포한다 — 어떤 경로로 들어와도 같은 경로의 새 주소로 넘겨 준다 (`build_site.py --redirect-site`).
 - 배포 사이트에서 만들어지는 것:
   - `index.html` — 피드 앱. 설명·OG 메타 정보와 최신 기사 30건 목록을 HTML에 미리 넣고, `app.jsx`는 esbuild로 미리 변환한 `app.js` + React production 빌드를 쓴다 (브라우저 Babel 없음)
-  - `articles/<id>/` — 기사별 정적 페이지 (제목·요약·본문·원문 링크·키워드, canonical·OG·NewsArticle 구조화 데이터). 앱의 "링크 복사"는 이 주소를 복사한다
+  - `articles/<id>/` — 기사별 페이지. 피드 앱과 같은 페이지라 방문자에게는 그 기사의 탭 카드 화면 위에 기사 창이 열리고, 검색엔진·링크 미리보기용 본문·OG·NewsArticle 구조화 데이터는 HTML에 들어 있다. 앱에서 기사 창을 열면 주소가 이 경로가 되고, "링크 복사"도 이 주소를 복사한다 (예전 `?article=<id>` 링크는 이 주소로 바뀐다)
   - `topics/<tab>/`, `topics/<tab>/<키워드>/` — 탭별·서브 카테고리별 페이지 (6개 이상 키워드만). 피드 앱과 같은 페이지라 방문자에게는 그 탭·서브 카테고리가 선택된 카드 화면이 열리고, 검색엔진용 기사 목록은 HTML에 들어 있다. 앱에서 탭·서브 카테고리를 바꾸면 주소도 이 경로로 바뀐다
   - `sitemap.xml`, `feed.xml`(RSS, 최신 50건), `robots.txt`, `404.html`
 - 레포의 `index.html`은 브라우저 Babel 방식 그대로라 `python3 -m http.server`로 바로 미리 볼 수 있다. 배포본을 확인하려면 `python3 scripts/build_site.py` 후 `_site/`를 띄운다 (`npx`로 esbuild를 받으므로 Node가 필요, `--no-bundle`이면 불필요).
