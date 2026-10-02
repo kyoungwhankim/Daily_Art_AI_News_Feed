@@ -2,7 +2,7 @@
 
 A daily, curated stream of AI-generated art and AI-in-art news in Korean.
 
-Static site — no backend, no login. Hosted on GitHub Pages. The whole app is React rendered in the browser; updating the site means adding a date file under `data/articles/` and pushing.
+Static site — no backend, no login. Hosted on GitHub Pages, deployed by GitHub Actions. Updating the site means adding a date file under `data/articles/` and pushing; the Action builds the site (feed app + per-article pages for search engines) and deploys it.
 
 Daily updates are produced by a Claude Code Routine that runs in the cloud each morning, researches news, writes Korean translations, and pushes the change to `main` automatically.
 
@@ -24,9 +24,24 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 | `scripts/tag_keywords.py`, `scripts/keyword_rules.json` | 지난 기사에 키워드를 일괄로 붙이는 관리 도구 / 키워드별 검색 규칙 |
 | `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
 | `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
+| `scripts/build_site.py`, `static.css` | 배포용 정적 사이트 생성 (기사별 페이지, 목록, 사이트맵, RSS) — GitHub Actions가 실행 |
+| `.github/workflows/deploy.yml` | main push 시 사이트를 만들어 GitHub Pages에 배포 |
 
-사이트는 `data/index.json`을 받은 뒤 날짜 파일들을 병렬로 불러온다. 날짜 파일은 `?v=<rev>`로 요청하므로 내용이 바뀐 날짜만 브라우저 캐시가 갱신된다.
+피드 앱은 `data/index.json`을 받은 뒤 날짜 파일들을 병렬로 불러온다. 날짜 파일은 `?v=<rev>`로 요청하므로 내용이 바뀐 날짜만 브라우저 캐시가 갱신된다.
 `fetch`를 쓰므로 `file://`로 직접 열면 동작하지 않는다 — 로컬에서는 `python3 -m http.server`로 띄워서 확인한다.
+
+## 배포 (GitHub Actions)
+
+main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_data.py` → `build_site.py` → GitHub Pages 배포. 만든 파일(`_site/`)은 레포에 커밋하지 않는다.
+
+- 레포 Settings → Pages → Source가 **GitHub Actions**여야 한다.
+- 배포 사이트에서 만들어지는 것:
+  - `index.html` — 피드 앱. 설명·OG 메타 정보와 최신 기사 30건 목록을 HTML에 미리 넣고, `app.jsx`는 esbuild로 미리 변환한 `app.js` + React production 빌드를 쓴다 (브라우저 Babel 없음)
+  - `articles/<id>/` — 기사별 정적 페이지 (제목·요약·본문·원문 링크·키워드, canonical·OG·NewsArticle 구조화 데이터). 앱의 "링크 복사"는 이 주소를 복사한다
+  - `topics/<tab>/`, `topics/<tab>/<키워드>/` — 탭별·서브 카테고리별 목록 (6개 이상 키워드만)
+  - `sitemap.xml`, `feed.xml`(RSS, 최신 50건), `404.html`
+- 레포의 `index.html`은 브라우저 Babel 방식 그대로라 `python3 -m http.server`로 바로 미리 볼 수 있다. 배포본을 확인하려면 `python3 scripts/build_site.py` 후 `_site/`를 띄운다 (`npx`로 esbuild를 받으므로 Node가 필요, `--no-bundle`이면 불필요).
+- 사이트 주소는 `build_site.py`의 `SITE_URL`(환경 변수로 바꿀 수 있음). 프로젝트 사이트(`/Daily_Art_AI_News_Feed/` 하위 경로)라 robots.txt는 둘 수 없다 — 사이트맵은 Search Console·서치어드바이저에 직접 제출한다.
 
 ## 서브 카테고리 (키워드)
 
