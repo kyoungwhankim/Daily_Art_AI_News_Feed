@@ -1,6 +1,6 @@
 /* AI Art Daily — hi-fi prototype */
 
-const { useState, useEffect, useMemo, useRef } = React;
+const { useState, useEffect, useMemo, useRef, useCallback } = React;
 const { tabs: TABS } = window.AIAD;
 
 /* ---------- data loading ---------- */
@@ -24,7 +24,8 @@ async function loadArticles() {
 }
 
 /* ---------- page address (탭·서브 카테고리 ↔ 주소) ---------- */
-// 배포 사이트의 /topics/<tab>/ 와 /topics/<tab>/<키워드>/ 는 검색엔진용 목록 HTML을 담은 같은 앱 페이지다.
+// 배포 사이트의 /topics/<tab>/, /topics/<tab>/<키워드>/, /articles/<id>/ 는 검색엔진용 HTML을 담은 같은 앱 페이지다.
+// /articles/<id>/ 는 그 기사의 탭 화면 위에 기사 창을 연다 (링크 복사·공유 주소).
 // 주소 → 앱 상태, 앱 상태 → 주소를 맞춰서, 어떤 주소로 들어와도 같은 카드 화면이 열린다.
 // 키워드 주소 이름 규칙은 scripts/build_site.py의 kw_slug()와 같아야 한다.
 function kwSlug(label) {
@@ -33,9 +34,15 @@ function kwSlug(label) {
 function parseRoute(pathname) {
   const parts = pathname.split('/').filter(Boolean).map(p => { try { return decodeURIComponent(p); } catch { return p; } });
   if (parts[0] === 'topics' && TABS.some(t => t.id === parts[1])) {
-    return { home: false, tab: parts[1], kwSlug: parts[2] || null };
+    return { home: false, tab: parts[1], kwSlug: parts[2] || null, articleId: null };
   }
-  return { home: true, tab: null, kwSlug: null };
+  if (parts[0] === 'articles' && parts[1]) {
+    return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
+  }
+  return { home: true, tab: null, kwSlug: null, articleId: null };
+}
+function articlePath(id) {
+  return `/articles/${encodeURIComponent(id)}/`;
 }
 function routePath(home, tab, keyword) {
   if (home) return '/';
@@ -370,7 +377,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
 
   const copyLink = () => {
     // 공유용 주소는 기사별 정적 페이지 (배포 사이트에서 scripts/build_site.py가 만든다 — 링크 미리보기·검색 노출용)
-    const link = `${window.location.origin}/articles/${encodeURIComponent(article.id)}/`;
+    const link = window.location.origin + articlePath(article.id);   // 열면 카드 화면 위에 이 기사 창이 뜬다
     const done = () => { setCopied(true); setTimeout(() => setCopied(false), 1600); };
     const fallback = () => {
       try {
@@ -736,12 +743,19 @@ function App() {
           const hit = ((keywordTabs || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
           if (hit) setKeyword(hit.label);
         }
+        // /articles/<id>/ (또는 예전 ?article=<id>) 로 들어온 경우 → 그 기사의 탭 위에 기사 창
+        let id = route.articleId;
+        try { id = id || new URLSearchParams(window.location.search).get('article'); } catch {}
+        const found = id ? list.find(a => a.id === id) : null;
+        if (found) {
+          setActiveTab(found.tab);
+          setViewHome(false);
+          setOpen(found);
+          const url = new URL(window.location.href);
+          url.searchParams.delete('article');
+          window.history.replaceState({}, '', articlePath(found.id) + url.search);
+        }
         setDataState('ready');
-        // ?article=<id> deep link → open once the data is in
-        try {
-          const id = new URLSearchParams(window.location.search).get('article');
-          if (id) setOpen(list.find(a => a.id === id) || null);
-        } catch {}
       })
       .catch(err => {
         console.error('Failed to load articles', err);
@@ -759,22 +773,37 @@ function App() {
   const [viewSaved, setViewSaved] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // sync ?article=<id> into the URL when modal opens/closes
-  useEffect(() => {
-    const url = new URL(window.location.href);
-    const current = url.searchParams.get('article');
-    const target = open ? open.id : null;
-    if (current === target) return;
-    if (!target && dataState === 'loading') return;   // keep ?article= until data loads
-    if (target) url.searchParams.set('article', target);
-    else url.searchParams.delete('article');
-    window.history.pushState({ articleId: target }, '', url.toString());
-  }, [open]);
+  // 기사 창 열기/닫기 — 열면 주소가 /articles/<id>/ 가 되고, 닫으면 원래 화면 주소로 돌아간다
+  const openArticle = (a) => {
+    setOpen(a);
+    if (window.location.pathname === articlePath(a.id)) return;
+    const st = window.history.state;
+    if (st && st.modal) {
+      // 기사 창 안에서 다른 기사로 이동 → 같은 기록을 바꿔서, 닫으면 바로 원래 화면으로 돌아가게
+      window.history.replaceState({ modal: true }, '', articlePath(a.id) + window.location.search);
+    } else {
+      window.history.pushState({ modal: true }, '', articlePath(a.id) + window.location.search);
+    }
+  };
+  const closeArticle = useCallback(() => {
+    if (window.history.state && window.history.state.modal) {
+      window.history.back();          // 앱에서 연 기사 창 → 이전 주소로 (popstate가 창을 닫는다)
+    } else {
+      setOpen(null);                  // 공유 링크로 바로 들어온 경우 → 아래 effect가 탭 주소로 바꾼다
+    }
+  }, []);
 
   // back/forward → 탭·서브 카테고리와 기사 창을 주소에 맞춘다
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
+      if (route.articleId) {
+        const found = articlesRef.current.find(a => a.id === route.articleId);
+        if (found) { setActiveTab(found.tab); setViewHome(false); }
+        setOpen(found || null);
+        return;
+      }
+      setOpen(null);
       setViewHome(route.home);
       if (!route.home) {
         setActiveTab(route.tab);
@@ -783,10 +812,6 @@ function App() {
         const hit = ((keywordTabsRef.current || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
         setKeyword(hit ? hit.label : null);
       }
-      const id = new URLSearchParams(window.location.search).get('article');
-      if (!id) { setOpen(null); return; }
-      const found = articlesRef.current.find(a => a.id === id);
-      setOpen(found || null);
     }
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -826,12 +851,16 @@ function App() {
 
   // 탭·서브 카테고리를 바꾸면 주소도 /topics/... 로 바꾼다 (공유·새로고침해도 같은 화면).
   // 저장한 기사·검색 화면은 주소를 바꾸지 않는다. 데이터가 오기 전에는 들어온 주소를 그대로 둔다.
+  // 기사 창이 열려 있는 동안은 /articles/<id>/ 를 유지한다.
   useEffect(() => {
-    if (dataState !== 'ready' || viewSaved || query.trim()) return;
+    if (dataState !== 'ready' || open) return;
+    const onArticle = window.location.pathname.startsWith('/articles/');
+    if (!onArticle && (viewSaved || query.trim())) return;
     const path = routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
-    window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, viewHome, viewSaved, query, activeTab, activeKeyword]);
+    if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
+    else window.history.pushState({}, '', path + window.location.search);
+  }, [dataState, open, viewHome, viewSaved, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -895,7 +924,7 @@ function App() {
         {viewHome ? (
           <HomeView
             onSelectTab={(id) => { goTab(id); window.scrollTo({ top: 0 }); }}
-            onOpenArticle={setOpen}
+            onOpenArticle={openArticle}
             articles={articles}
           />
         ) : dataState === 'error' ? (
@@ -915,7 +944,7 @@ function App() {
         ) : (groupByDate && !query && !viewSaved) ? (
           <DateGroupedFeed
             articles={visible}
-            onOpen={setOpen}
+            onOpen={openArticle}
             onToggleSave={toggleSave}
             saved={saved}
             query={query.trim()}
@@ -927,7 +956,7 @@ function App() {
               <ArticleCard
                 key={a.id}
                 article={a}
-                onOpen={setOpen}
+                onOpen={openArticle}
                 onToggleSave={toggleSave}
                 isSaved={saved.includes(a.id)}
                 query={query.trim()}
@@ -945,12 +974,15 @@ function App() {
       {open && (
         <ArticleModal
           article={open}
-          onClose={() => setOpen(null)}
+          onClose={closeArticle}
           isSaved={saved.includes(open.id)}
           onToggleSave={toggleSave}
-          onOpen={setOpen}
+          onOpen={openArticle}
           allArticles={articles}
-          onSelectKeyword={(tab, k) => { setOpen(null); goTab(tab); setKeyword(k); window.scrollTo({ top: 0 }); }}
+          onSelectKeyword={(tab, k) => {
+            setOpen(null); goTab(tab); setKeyword(k); window.scrollTo({ top: 0 });
+            if (window.history.state && window.history.state.modal) window.history.replaceState({}, '', window.location.href);
+          }}
         />
       )}
     </div>

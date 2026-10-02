@@ -229,17 +229,21 @@ def grouped_list(root: str, items: list) -> str:
 
 # ---------- pages ----------
 
-def build_article(a: dict, related: list, subcats: dict) -> str:
-    root = '../../'
+def article_page(a: dict, related: list, subcats: dict):
+    """기사 페이지의 (검색엔진용 본문 HTML, NewsArticle 구조화 데이터).
+
+    배포 사이트의 /articles/<id>/ 는 피드 앱 페이지라, 방문자에게는 그 기사의 탭 화면 위에
+    기사 창이 열리고 이 본문은 숨겨진다 (app.jsx parseRoute).
+    """
+    root = '/'
     url = abs_url(article_path(a))
-    desc = a['summary']
     shown = {k for k, _ in subcats[a['tab']]}
     kws = [k for k in a.get('keywords', []) if k in shown]
     ld = {
         '@context': 'https://schema.org',
         '@type': 'NewsArticle',
         'headline': a['headline'][:110],
-        'description': desc,
+        'description': a['summary'],
         'datePublished': f"{iso_date(a['publishedAt'])}T09:00:00+09:00",
         'inLanguage': 'ko',
         'mainEntityOfPage': url,
@@ -250,23 +254,16 @@ def build_article(a: dict, related: list, subcats: dict) -> str:
     }
     if a.get('image'):
         ld['image'] = [a['image']]
-    extra = ('<script type="application/ld+json">'
-             + json.dumps(ld, ensure_ascii=False).replace('</', '<\\/') + '</script>')
     links = ''.join(
         f'<a href="{esc(u["href"])}" target="_blank" rel="noopener noreferrer">{esc(u.get("label") or "관련 링크")} ↗</a>'
         for u in a.get('urls', []) if u.get('href'))
     hero = (f'<img class="static-hero" src="{esc(a["image"])}" alt="{esc(a["headline"])}" '
-            f'loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />'
+            f'loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />'
             if a.get('image') else '')
     tags = ''.join(f'<a class="modal-keyword" href="{href(root, kw_path(a["tab"], k))}">#{esc(k)}</a>'
                    for k in kws)
     rel = ''.join(article_item(root, r) for r in related)
-    return (head(root, f"{a['headline']} | {SITE_NAME}", desc, url, 'article', a.get('image'), extra)
-            + f"""<body>
-<div class="page">
-{header(root)}
-<main class="static-main">
-  <article class="static-article">
+    html_ = f"""<article class="static-article">
     <nav class="static-crumb"><a href="{href(root, tab_path(a['tab']))}">{esc(TAB_LABEL[a['tab']])}</a></nav>
     <h1 class="modal-headline">{esc(a['headline'])}</h1>
     <div class="modal-meta">
@@ -279,15 +276,9 @@ def build_article(a: dict, related: list, subcats: dict) -> str:
       <p class="static-lead">{esc(a['summary'])}</p>
       {a.get('body', '')}
     </div>
-    <p class="static-open"><a class="chip" href="{root}?article={esc(a['id'])}">피드에서 보기</a></p>
   </article>
-  {f'<section class="static-related"><h2>같은 주제의 다른 기사</h2><ul class="static-list">{rel}</ul></section>' if rel else ''}
-</main>
-{footer()}
-</div>
-</body>
-</html>
-""")
+  {f'<section class="static-related"><h2>같은 주제의 다른 기사</h2><ul class="static-list">{rel}</ul></section>' if rel else ''}"""
+    return html_, ld
 
 
 def listing_fallback(title: str, desc: str, items: list, tab: str,
@@ -308,7 +299,8 @@ def listing_fallback(title: str, desc: str, items: list, tab: str,
 
 
 def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
-                bundle: bool, react_tags: str, app_v: str, ld: dict) -> str:
+                bundle: bool, react_tags: str, app_v: str, ld: dict,
+                og_type: str = 'website', image=None) -> str:
     """피드 앱 페이지 (첫 화면, /topics/... 페이지 공통).
 
     레포의 index.html을 바탕으로 메타 정보·검색엔진용 목록을 넣는다. 방문자에게는
@@ -318,16 +310,20 @@ def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
         page = f.read()
     url = abs_url(path) if path else SITE_URL + '/'
     ld_json = json.dumps(ld, ensure_ascii=False).replace('</', '<\\/')
+    img_meta = (f'<meta property="og:image" content="{esc(image)}" />\n'
+                f'<meta name="twitter:image" content="{esc(image)}" />\n') if image else ''
     meta = f"""<meta name="description" content="{esc(desc)}" />
 <link rel="canonical" href="{esc(url)}" />
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{esc(abs_url('feed.xml'))}" />
 <meta property="og:site_name" content="{esc(SITE_NAME)}" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="{og_type}" />
 <meta property="og:title" content="{esc(title)}" />
 <meta property="og:description" content="{esc(desc)}" />
 <meta property="og:url" content="{esc(url)}" />
-<meta name="twitter:card" content="summary" />
+{img_meta}<meta name="twitter:card" content="{'summary_large_image' if image else 'summary'}" />
+<meta name="twitter:title" content="{esc(title)}" />
+<meta name="twitter:description" content="{esc(desc)}" />
 <script type="application/ld+json">{ld_json}</script>
 """
     page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + meta + THEME_BOOT + '\n'
@@ -471,9 +467,9 @@ def main():
     def fin(text: str) -> str:
         return text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
 
-    def shell(path, title, desc, fallback, ld):
+    def shell(path, title, desc, fallback, ld, og_type='website', image=None):
         return fin(build_shell(os.path.join(repo, 'index.html'), path, title, desc,
-                               fallback, bundle, react_tags, app_v, ld))
+                               fallback, bundle, react_tags, app_v, ld, og_type, image))
 
     home_fallback = (f'<h1 class="feed-title">{esc(SITE_NAME)}</h1><p class="feed-sub">{esc(SITE_DESC)}</p>'
                      + grouped_list('/', articles[:HOME_LIST]))
@@ -489,7 +485,10 @@ def main():
         kws = set(a.get('keywords', []))
         related = sorted(same, key=lambda r: -len(kws & set(r.get('keywords', []))))
         related = [r for r in related if kws & set(r.get('keywords', []))][:5] or same[:5]
-        write(out, article_path(a) + 'index.html', fin(build_article(a, related, subcats)))
+        body, ld = article_page(a, related, subcats)
+        write(out, article_path(a) + 'index.html', shell(
+            article_path(a), f"{a['headline']} | {SITE_NAME}", a['summary'], body, ld,
+            'article', a.get('image')))
 
     def collection(path, name, desc):
         return {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': name,
