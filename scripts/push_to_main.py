@@ -145,9 +145,9 @@ def main():
     sync_tracking_ref()
 
     print()
-    print('Site will rebuild automatically via GitHub Pages.')
+    print('Site will rebuild automatically via GitHub Actions → Cloudflare Pages.')
     print('Daily feed is live shortly at:')
-    print('  https://kyoungwhankim.github.io/Daily_Art_AI_News_Feed/')
+    print('  https://ai-art-news.pages.dev/')
 
 
 if __name__ == '__main__':
