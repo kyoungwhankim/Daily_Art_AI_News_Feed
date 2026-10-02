@@ -6,7 +6,7 @@ const { tabs: TABS } = window.AIAD;
 /* ---------- data loading ---------- */
 // 기사 데이터는 날짜별 파일로 나뉘어 있다: data/index.json → data/articles/YYYY-MM-DD.json
 // 날짜 파일은 index의 rev(내용 해시)로 캐시를 구분하므로, 바뀐 날짜 파일만 새로 받는다.
-const DATA_BASE = 'data/';
+const DATA_BASE = '/data/';   // 사이트 최상위 기준 (/topics/... 페이지에서도 같은 데이터를 읽는다)
 async function fetchJson(url, init) {
   const r = await fetch(url, init);
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
@@ -22,6 +22,26 @@ async function loadArticles() {
   );
   return { articles: days.flat(), keywordTabs: keywords.tabs };   // index는 최신순 → 기사도 최신 날짜부터
 }
+
+/* ---------- page address (탭·서브 카테고리 ↔ 주소) ---------- */
+// 배포 사이트의 /topics/<tab>/ 와 /topics/<tab>/<키워드>/ 는 검색엔진용 목록 HTML을 담은 같은 앱 페이지다.
+// 주소 → 앱 상태, 앱 상태 → 주소를 맞춰서, 어떤 주소로 들어와도 같은 카드 화면이 열린다.
+// 키워드 주소 이름 규칙은 scripts/build_site.py의 kw_slug()와 같아야 한다.
+function kwSlug(label) {
+  return label.replace(/[\s·/]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
+}
+function parseRoute(pathname) {
+  const parts = pathname.split('/').filter(Boolean).map(p => { try { return decodeURIComponent(p); } catch { return p; } });
+  if (parts[0] === 'topics' && TABS.some(t => t.id === parts[1])) {
+    return { home: false, tab: parts[1], kwSlug: parts[2] || null };
+  }
+  return { home: true, tab: null, kwSlug: null };
+}
+function routePath(home, tab, keyword) {
+  if (home) return '/';
+  return keyword ? `/topics/${tab}/${encodeURIComponent(kwSlug(keyword))}/` : `/topics/${tab}/`;
+}
+const INITIAL_ROUTE = parseRoute(window.location.pathname);
 
 /* ---------- date helpers ---------- */
 const TODAY = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
@@ -350,7 +370,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
 
   const copyLink = () => {
     // 공유용 주소는 기사별 정적 페이지 (배포 사이트에서 scripts/build_site.py가 만든다 — 링크 미리보기·검색 노출용)
-    const link = new URL(`articles/${encodeURIComponent(article.id)}/`, window.location.href.split(/[?#]/)[0]).toString();
+    const link = `${window.location.origin}/articles/${encodeURIComponent(article.id)}/`;
     const done = () => { setCopied(true); setTimeout(() => setCopied(false), 1600); };
     const fallback = () => {
       try {
@@ -693,8 +713,8 @@ function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
   const accent = '#c2410c';
 
-  const [activeTab, setActiveTab] = useState('games');
-  const [viewHome, setViewHome] = useState(true);
+  const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
+  const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
@@ -710,6 +730,12 @@ function App() {
         if (cancelled) return;
         setArticles(list);
         setKeywordTabs(keywordTabs);
+        // /topics/<tab>/<키워드>/ 로 들어온 경우 → 그 서브 카테고리 선택
+        const route = parseRoute(window.location.pathname);
+        if (route.kwSlug) {
+          const hit = ((keywordTabs || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
+          if (hit) setKeyword(hit.label);
+        }
         setDataState('ready');
         // ?article=<id> deep link → open once the data is in
         try {
@@ -725,6 +751,8 @@ function App() {
   }, []);
   const articlesRef = useRef(articles);
   articlesRef.current = articles;
+  const keywordTabsRef = useRef(keywordTabs);
+  keywordTabsRef.current = keywordTabs;
   const [saved, setSaved] = useState(() => {
     try { return JSON.parse(localStorage.getItem('aiad:saved') || '[]'); } catch { return []; }
   });
@@ -743,9 +771,18 @@ function App() {
     window.history.pushState({ articleId: target }, '', url.toString());
   }, [open]);
 
-  // back/forward → reopen or close modal to match URL
+  // back/forward → 탭·서브 카테고리와 기사 창을 주소에 맞춘다
   useEffect(() => {
     function onPop() {
+      const route = parseRoute(window.location.pathname);
+      setViewHome(route.home);
+      if (!route.home) {
+        setActiveTab(route.tab);
+        setViewSaved(false);
+        setQuery('');
+        const hit = ((keywordTabsRef.current || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
+        setKeyword(hit ? hit.label : null);
+      }
       const id = new URLSearchParams(window.location.search).get('article');
       if (!id) { setOpen(null); return; }
       const found = articlesRef.current.find(a => a.id === id);
@@ -786,6 +823,15 @@ function App() {
   const activeKeyword = subcats.some(c => c.label === keyword) ? keyword : null;
   const showSubcats = !viewHome && !viewSaved && !query.trim() && dataState === 'ready';
   const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewSaved(false); setViewHome(false); setQuery(''); };
+
+  // 탭·서브 카테고리를 바꾸면 주소도 /topics/... 로 바꾼다 (공유·새로고침해도 같은 화면).
+  // 저장한 기사·검색 화면은 주소를 바꾸지 않는다. 데이터가 오기 전에는 들어온 주소를 그대로 둔다.
+  useEffect(() => {
+    if (dataState !== 'ready' || viewSaved || query.trim()) return;
+    const path = routePath(viewHome, activeTab, activeKeyword);
+    if (path === window.location.pathname) return;
+    window.history.pushState({}, '', path + window.location.search);
+  }, [dataState, viewHome, viewSaved, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;

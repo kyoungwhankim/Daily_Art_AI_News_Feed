@@ -290,9 +290,10 @@ def build_article(a: dict, related: list, subcats: dict) -> str:
 """)
 
 
-def build_listing(path: str, title: str, desc: str, items: list,
-                  tab: str, subcats: dict, active_kw=None) -> str:
-    root = '../' * path.count('/')
+def listing_fallback(title: str, desc: str, items: list, tab: str,
+                     subcats: dict, active_kw=None) -> str:
+    """탭·서브 카테고리 페이지의 검색엔진용 목록 (앱이 뜨면 숨겨진다)."""
+    root = '/'
     chips = ''
     if subcats.get(tab):
         chip_all = (f'<a class="chip subcat{"" if active_kw else " active"}" '
@@ -301,53 +302,48 @@ def build_listing(path: str, title: str, desc: str, items: list,
             f'<a class="chip subcat{" active" if k == active_kw else ""}" href="{href(root, kw_path(tab, k))}">'
             f'{esc(k)} <span class="subcat-count">{n}</span></a>'
             for k, n in subcats[tab]) + '</div>'
-    return (head(root, f'{title} | {SITE_NAME}', desc, abs_url(path))
-            + f"""<body>
-<div class="page">
-{header(root)}
-<main class="static-main">
-  <h1 class="feed-title">{esc(title)}</h1>
-  <p class="feed-sub">{esc(desc)} · {len(items)}개 기사</p>
-  {chips}
-  {grouped_list(root, items)}
-</main>
-{footer()}
-</div>
-</body>
-</html>
-""")
+    return (f'<h1 class="feed-title">{esc(title)}</h1>'
+            f'<p class="feed-sub">{esc(desc)} · {len(items)}개 기사</p>'
+            + chips + grouped_list(root, items))
 
 
-def build_index(src: str, items: list, bundle: bool, react_tags: str, app_v: str) -> str:
+def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
+                bundle: bool, react_tags: str, app_v: str, ld: dict) -> str:
+    """피드 앱 페이지 (첫 화면, /topics/... 페이지 공통).
+
+    레포의 index.html을 바탕으로 메타 정보·검색엔진용 목록을 넣는다. 방문자에게는
+    앱이 주소를 읽어 같은 탭·서브 카테고리의 카드 화면을 띄운다 (app.jsx parseRoute).
+    """
     with open(src, encoding='utf-8') as f:
         page = f.read()
-    meta = f"""<meta name="description" content="{esc(SITE_DESC)}" />
-<link rel="canonical" href="{esc(SITE_URL + '/')}" />
+    url = abs_url(path) if path else SITE_URL + '/'
+    ld_json = json.dumps(ld, ensure_ascii=False).replace('</', '<\\/')
+    meta = f"""<meta name="description" content="{esc(desc)}" />
+<link rel="canonical" href="{esc(url)}" />
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{esc(abs_url('feed.xml'))}" />
 <meta property="og:site_name" content="{esc(SITE_NAME)}" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{esc(SITE_NAME)} — {esc(SITE_TAGLINE)}" />
-<meta property="og:description" content="{esc(SITE_DESC)}" />
-<meta property="og:url" content="{esc(SITE_URL + '/')}" />
+<meta property="og:title" content="{esc(title)}" />
+<meta property="og:description" content="{esc(desc)}" />
+<meta property="og:url" content="{esc(url)}" />
 <meta name="twitter:card" content="summary" />
-<script type="application/ld+json">{json.dumps({'@context': 'https://schema.org', '@type': 'WebSite', 'name': SITE_NAME, 'url': SITE_URL + '/', 'inLanguage': 'ko', 'description': SITE_DESC}, ensure_ascii=False)}</script>
+<script type="application/ld+json">{ld_json}</script>
 """
-    page = page.replace('</title>\n', '</title>\n' + meta + THEME_BOOT + '\n'
-                        + '<link rel="stylesheet" href="static.css?v={STATIC_V}" />\n', 1)
+    page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + meta + THEME_BOOT + '\n'
+                  + '<link rel="stylesheet" href="/static.css?v={STATIC_V}" />\n', page, count=1)
+    # 어떤 경로의 페이지에서도 같은 파일을 읽도록 사이트 최상위 기준 주소로
+    page = re.sub(r'(href|src)="(app\.css|config\.js|app\.jsx)', r'\1="/\2', page)
     if bundle:
         page = re.sub(r'<script src="https://unpkg\.com/[^"]+"[^>]*></script>\n', '', page)
-        page = re.sub(r'<script type="text/babel" src="app\.jsx[^"]*"></script>',
-                      f'<script src="app.js?v={app_v}"></script>', page)
-        page = page.replace('<script src="config.js"></script>',
-                            react_tags + '<script src="config.js"></script>')
-    # React가 렌더링하면 사라지는, 검색엔진·JS 미실행 환경용 최신 기사 목록
-    fallback = ('<div class="static-main static-fallback">'
-                f'<h1 class="feed-title">{esc(SITE_NAME)}</h1><p class="feed-sub">{esc(SITE_DESC)}</p>'
-                '<nav class="static-nav">' + ''.join(
-                    f'<a href="{href("", tab_path(t))}">{esc(label)}</a>' for t, label, _ in TABS)
-                + '</nav>' + grouped_list('', items) + '</div>')
-    page = page.replace('<div id="root"></div>', f'<div id="root">{fallback}</div>', 1)
+        page = re.sub(r'<script type="text/babel" src="/app\.jsx[^"]*"></script>',
+                      f'<script src="/app.js?v={app_v}"></script>', page)
+        page = page.replace('<script src="/config.js"></script>',
+                            react_tags + '<script src="/config.js"></script>')
+    nav = ('<nav class="static-nav">' + ''.join(
+        f'<a href="{href("/", tab_path(t))}">{esc(label)}</a>' for t, label, _ in TABS) + '</nav>')
+    page = page.replace('<div id="root"></div>',
+                        f'<div id="root"><div class="static-main static-fallback">{nav}{fallback}</div></div>', 1)
     return page
 
 
@@ -475,8 +471,15 @@ def main():
     def fin(text: str) -> str:
         return text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
 
-    write(out, 'index.html', fin(build_index(os.path.join(repo, 'index.html'),
-                                         articles[:HOME_LIST], bundle, react_tags, app_v)))
+    def shell(path, title, desc, fallback, ld):
+        return fin(build_shell(os.path.join(repo, 'index.html'), path, title, desc,
+                               fallback, bundle, react_tags, app_v, ld))
+
+    home_fallback = (f'<h1 class="feed-title">{esc(SITE_NAME)}</h1><p class="feed-sub">{esc(SITE_DESC)}</p>'
+                     + grouped_list('/', articles[:HOME_LIST]))
+    write(out, 'index.html', shell('', f'{SITE_NAME} — {SITE_TAGLINE}', SITE_DESC, home_fallback,
+                                   {'@context': 'https://schema.org', '@type': 'WebSite', 'name': SITE_NAME,
+                                    'url': SITE_URL + '/', 'inLanguage': 'ko', 'description': SITE_DESC}))
 
     by_tab = defaultdict(list)
     for a in articles:
@@ -488,17 +491,27 @@ def main():
         related = [r for r in related if kws & set(r.get('keywords', []))][:5] or same[:5]
         write(out, article_path(a) + 'index.html', fin(build_article(a, related, subcats)))
 
+    def collection(path, name, desc):
+        return {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': name,
+                'description': desc, 'url': abs_url(path), 'inLanguage': 'ko',
+                'isPartOf': {'@type': 'WebSite', 'name': SITE_NAME, 'url': SITE_URL + '/'}}
+
     listing_paths = []
     for tab, label, desc in TABS:
         p = tab_path(tab)
         listing_paths.append(p)
-        write(out, p + 'index.html', fin(build_listing(p, label, desc, by_tab[tab], tab, subcats)))
+        write(out, p + 'index.html', shell(
+            p, f'{label} | {SITE_NAME}', desc,
+            listing_fallback(label, desc, by_tab[tab], tab, subcats), collection(p, label, desc)))
         for k, _ in subcats[tab]:
             p = kw_path(tab, k)
             listing_paths.append(p)
             items = [a for a in by_tab[tab] if k in a.get('keywords', [])]
-            write(out, p + 'index.html', fin(build_listing(
-                p, f'{k} — {label}', f'{label} 중 {k} 관련 기사', items, tab, subcats, k)))
+            kdesc = f'{label} 중 {k} 관련 기사'
+            write(out, p + 'index.html', shell(
+                p, f'{k} — {label} | {SITE_NAME}', kdesc,
+                listing_fallback(f'{k} — {label}', kdesc, items, tab, subcats, k),
+                collection(p, f'{k} — {label}', kdesc)))
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
     write(out, 'feed.xml', build_feed(articles))
