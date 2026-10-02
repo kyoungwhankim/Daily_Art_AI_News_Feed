@@ -25,7 +25,7 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 | `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
 | `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
 | `scripts/build_site.py`, `static.css` | 배포용 정적 사이트 생성 (기사별 페이지, 목록, 사이트맵, RSS) — GitHub Actions가 실행 |
-| `.github/workflows/deploy.yml` | main push 시 사이트를 만들어 GitHub Pages에 배포 |
+| `.github/workflows/deploy.yml` | main push 시 사이트를 만들어 Cloudflare Pages에 배포 (예전 GitHub Pages 주소는 안내 페이지) |
 
 피드 앱은 `data/index.json`을 받은 뒤 날짜 파일들을 병렬로 불러온다. 날짜 파일은 `?v=<rev>`로 요청하므로 내용이 바뀐 날짜만 브라우저 캐시가 갱신된다.
 `fetch`를 쓰므로 `file://`로 직접 열면 동작하지 않는다 — 로컬에서는 `python3 -m http.server`로 띄워서 확인한다.
