@@ -41,7 +41,7 @@ main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_dat
 - 배포 사이트에서 만들어지는 것:
   - `index.html` — 피드 앱. 설명·OG 메타 정보와 최신 기사 30건 목록을 HTML에 미리 넣고, `app.jsx`는 esbuild로 미리 변환한 `app.js` + React production 빌드를 쓴다 (브라우저 Babel 없음)
   - `articles/<id>/` — 기사별 정적 페이지 (제목·요약·본문·원문 링크·키워드, canonical·OG·NewsArticle 구조화 데이터). 앱의 "링크 복사"는 이 주소를 복사한다
-  - `topics/<tab>/`, `topics/<tab>/<키워드>/` — 탭별·서브 카테고리별 목록 (6개 이상 키워드만)
+  - `topics/<tab>/`, `topics/<tab>/<키워드>/` — 탭별·서브 카테고리별 페이지 (6개 이상 키워드만). 피드 앱과 같은 페이지라 방문자에게는 그 탭·서브 카테고리가 선택된 카드 화면이 열리고, 검색엔진용 기사 목록은 HTML에 들어 있다. 앱에서 탭·서브 카테고리를 바꾸면 주소도 이 경로로 바뀐다
   - `sitemap.xml`, `feed.xml`(RSS, 최신 50건), `robots.txt`, `404.html`
 - 레포의 `index.html`은 브라우저 Babel 방식 그대로라 `python3 -m http.server`로 바로 미리 볼 수 있다. 배포본을 확인하려면 `python3 scripts/build_site.py` 후 `_site/`를 띄운다 (`npx`로 esbuild를 받으므로 Node가 필요, `--no-bundle`이면 불필요).
 - 사이트 주소는 `build_site.py`의 `SITE_URL` (워크플로의 `SITE_URL` 환경 변수로도 지정).
