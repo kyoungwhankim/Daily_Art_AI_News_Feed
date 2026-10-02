@@ -10,11 +10,13 @@ build_site.py — 배포용 정적 사이트를 _site/ 에 만든다 (GitHub Act
     _site/articles/<id>/          기사별 정적 페이지 (제목·본문·OG·canonical·NewsArticle 구조화 데이터)
     _site/topics/<tab>/           탭별 기사 목록
     _site/topics/<tab>/<키워드>/   서브 카테고리별 기사 목록 (탭 안에서 6개 이상인 키워드만)
-    _site/sitemap.xml, feed.xml, 404.html
+    _site/sitemap.xml, feed.xml, 404.html, robots.txt (사이트가 도메인 최상위일 때)
     _site/app.css, config.js, data/ ... 기존 파일 복사
 
 레포의 index.html(브라우저 Babel 버전)은 로컬 미리보기용으로 그대로 둔다.
 --no-bundle 은 esbuild 없이 기존 index.html 방식(app.jsx + Babel)으로 만든다 (로컬 확인용).
+--redirect-site DIR 은 예전 GitHub Pages 주소용 안내 사이트를 DIR에 만든다 — 어떤 경로로 들어와도
+같은 경로의 새 주소(SITE_URL)로 넘겨 준다.
 """
 
 import argparse
@@ -35,7 +37,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
 
 SITE_URL = os.environ.get(
-    'SITE_URL', 'https://kyoungwhankim.github.io/Daily_Art_AI_News_Feed').rstrip('/')
+    'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
+# 예전 주소 (GitHub Pages). --redirect-site 로 이 주소용 "주소가 바뀌었어요" 안내 사이트를 만든다.
+OLD_SITE_PATH = '/Daily_Art_AI_News_Feed'
 SITE_NAME = 'AI Art Daily'
 SITE_TAGLINE = '한국어 큐레이션'
 SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한국어로 정리합니다. '
@@ -376,6 +380,39 @@ def build_feed(articles: list) -> str:
             + ''.join(items) + '</channel></rss>\n')
 
 
+def build_redirect_site(out: str) -> None:
+    """예전 주소(GitHub Pages)용: index.html·404.html이 같은 경로의 새 주소로 넘겨 준다."""
+    if os.path.isdir(out):
+        shutil.rmtree(out)
+    os.makedirs(out)
+    new = SITE_URL + '/'
+    old_path = json.dumps(OLD_SITE_PATH)
+    page = f"""<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{esc(SITE_NAME)} — 주소가 바뀌었어요</title>
+<link rel="canonical" href="{esc(new)}" />
+<script>
+(function () {{
+  var old = {old_path}, p = location.pathname;
+  if (p.indexOf(old) === 0) p = p.slice(old.length) || '/';
+  location.replace({json.dumps(SITE_URL)} + p + location.search + location.hash);
+}})();
+</script>
+<meta http-equiv="refresh" content="3; url={esc(new)}" />
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 40px;">
+<p>{esc(SITE_NAME)}의 주소가 바뀌었어요: <a href="{esc(new)}">{esc(new)}</a></p>
+</body>
+</html>
+"""
+    write(out, 'index.html', page)
+    write(out, '404.html', page)
+    print(f'Built redirect site {out} → {new}')
+
+
 def build_404() -> str:
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
     return (head(root, f'페이지를 찾을 수 없어요 | {SITE_NAME}', SITE_DESC, SITE_URL + '/')
@@ -400,7 +437,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=os.path.join(feed_data.REPO, '_site'))
     ap.add_argument('--no-bundle', action='store_true')
+    ap.add_argument('--redirect-site', metavar='DIR')
     args = ap.parse_args()
+    if args.redirect_site:
+        build_redirect_site(args.redirect_site)
+        return
     repo, out = feed_data.REPO, args.out
 
     if os.path.isdir(out):
@@ -462,6 +503,8 @@ def main():
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
+    if SITE_URL.count('/') == 2:     # 도메인 최상위 사이트일 때만 robots.txt가 의미 있다
+        write(out, 'robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
 
     print(f'Built {out}: {len(articles)} article pages, {len(listing_paths)} listing pages, '
           f'bundle={"esbuild" if bundle else "babel"}')
