@@ -1,0 +1,80 @@
+[
+  {
+    "id": "games-3924d200-2026-10",
+    "tab": "games",
+    "headline": "소니, 일반 PS5에도 AI 업스케일링 'QSSR' 도입…울버린·고스트 오브 요테이부터 지원",
+    "summary": "소니가 일반 PS5용 AI 업스케일링 기술 QSSR을 공개했어요.",
+    "body": "<p>소니가 일반 PS5를 위한 새 AI 업스케일링 기술 'QSSR(Quick Spectral Super Resolution)'을 공개했어요. 그동안 PS5 Pro에서만 쓸 수 있던 PSSR을 더 빠르고 가볍게 다듬은 버전으로, 간소화된 신경망 구조에 손으로 튜닝한 구현을 더해 일반 PS5에서도 최대 성능을 낼 수 있게 만들었대요. 게임 화면을 분석해 기존 업스케일링보다 더 높은 디테일과 시간적 안정성으로 재구성해서, 나뭇잎이나 머리카락, 옷감, 먼 배경 같은 섬세한 요소는 선명하게 살리고 움직일 때 생기는 깜빡임이나 계단 현상은 줄여줘요.</p><p>다만 일반 PS5에는 Pro의 전용 머신러닝 하드웨어가 없어서 결과가 완전히 같지는 않아요. Pro가 주로 4K 출력을 노린다면, QSSR은 1440p 근처 해상도에 더 잘 맞는 편이에요. 첫 지원작은 마블 울버린과 고스트 오브 요테이로, 인섬니악은 복잡한 거리의 픽셀 단위 선명도가 좋아졌다고 했고 서커펀치는 캐릭터와 환경의 미세한 디테일을 잘 살린다고 평가했어요. 이 기술은 AMD와의 그래픽 협업인 '프로젝트 아메시스트'에서 나왔어요.</p><p>개발자 입장에서 흥미로운 건 이미 PSSR을 지원하는 게임이라면 며칠 정도의 추가 튜닝만으로 QSSR을 붙일 수 있다는 점이에요. 소니는 이 라이브러리를 PlayStation 개발자들에게 폭넓게 제공할 계획이고, AI 기반 프레임 생성 기술도 언젠가 들어온다고 밝혔어요. 콘솔 그래픽에서 AI 복원이 기본 옵션이 되어가고 있다는 신호예요.</p><p>원문: <a href=\"https://80.lv/articles/base-ps5-finally-gets-its-own-version-of-pssr-upscaling/\">80 Level</a></p>",
+    "source": "80 Level",
+    "publishedAt": "2026.10.02",
+    "hue": 220,
+    "image": "https://cdn.80.lv/api/upload/meta/50467/images/6abeb649e7440/contain_1200x630.jpg",
+    "url": "https://80.lv/articles/base-ps5-finally-gets-its-own-version-of-pssr-upscaling/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.theverge.com/games/1003549/sony-ps5-quick-spectral-super-resolution-qssr"
+      }
+    ]
+  },
+  {
+    "id": "games-73247bd7-2026-10",
+    "tab": "games",
+    "headline": "레이어, 게임 플레이어블 광고를 몇 시간 만에 만드는 AI 에이전트 'Playables' 출시",
+    "summary": "레이어가 플레이어블 광고를 자동으로 만드는 AI 에이전트를 내놨어요.",
+    "body": "<p>게임 스튜디오용 에이전트형 크리에이티브 플랫폼 레이어(Layer)가 HTML5 플레이어블 광고를 처음부터 끝까지 만들어 주는 'Playables' 기능을 출시했어요. 게임 제목이나 한 줄 프롬프트, 크리에이티브 브리프, 스크린샷, 플레이 영상만 넣으면 에이전트가 게임의 아트 디렉션과 디자인 규칙을 분석해 어울리는 핵심 메커닉을 제안하고 작동하는 HTML을 생성해요. 초안은 몇 분, 캠페인에 바로 쓸 수 있는 완성본은 몇 시간이면 나온대요. 결과물은 MRAID 규격의 단일 파일이라 앱러빈, 메타, 틱톡, 구글, 유니티 애즈 등 주요 광고 네트워크에 그대로 올릴 수 있어요.</p><p>플레이어블 광고는 전환율이 높은 포맷이지만 하나 만드는 데 보통 1~3주와 수천 달러가 들어서 대형 타이틀만 누려왔어요. 레이어는 맞춤 레퍼런스 세트와 파인튜닝 모델, 자동 QA 점수로 스튜디오 스타일 가이드에 맞는 비주얼 품질을 유지한다고 설명해요. 클릭률이 떨어지면 채팅으로 메커닉을 바꾸거나 에셋을 리스킨하고 난이도를 조정할 수 있고, 매치3부터 방치형, 타워 디펜스, 비주얼 노벨까지 주요 모바일 장르를 지원해요.</p><p>레이어는 이미 킹, 징가, 와일드라이프 스튜디오 같은 모바일 개발사들이 정적·영상·인게임 에셋 제작에 쓰고 있는 플랫폼이에요. 마케팅용 아트 작업이 AI 에이전트로 넘어가는 흐름을 잘 보여주는 사례예요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/layer-launches-ai-playable-ad-generator-to-tackle-production-bottlenecks-for-mobile-game-studios/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.02",
+    "hue": 30,
+    "image": "https://media.pocketgamer.biz/images/141588/89956/header-4_l1200.jpg",
+    "url": "https://www.pocketgamer.biz/layer-launches-ai-playable-ad-generator-to-tackle-production-bottlenecks-for-mobile-game-studios/",
+    "urls": [
+      {
+        "label": "공식 사이트",
+        "href": "https://layer.ai/"
+      }
+    ]
+  },
+  {
+    "id": "art-d3057ab1-2026-10",
+    "tab": "art",
+    "headline": "수노, 목소리와 배경음악을 한 트랙으로 만드는 'Speech' 베타 공개",
+    "summary": "수노가 음성과 음악을 함께 생성하는 Speech를 베타로 공개했어요.",
+    "body": "<p>음악 생성 AI 서비스 수노(Suno)가 새 기능 'Speech'를 베타로 공개했어요. 수노는 이걸 목소리와 음악을 하나의 완성된 트랙으로 함께 만들어 내는 첫 오디오 모델이라고 소개해요. 사용 방법은 간단해요. 아이디어나 시, 직접 쓴 글을 입력하고 원하는 목소리와 음악 스타일을 설명하면, 낭독 음성 뒤에 오리지널 배경음악이 깔린 오디오가 만들어져요. 별도 앱이 아니라 기존 수노 안에 바로 들어가 있어요.</p><p>수노 팀은 개발하면서 친구 문자를 과장된 드라마 낭독으로 바꾸거나, 평범한 음성 메모에 웅장한 음악을 입히고, 명상 가이드나 시 낭송, 아이들을 위한 잠자리 동화까지 만들어 봤대요. 지난 한 달 동안 소수의 사용자와 테스트를 거쳤고 이제 모두에게 베타를 열었는데, 영국 억양이 가끔 호주 억양으로 넘어가거나 극적인 멈춤이 지나치게 극적일 수 있다며 아직은 진짜 베타라고 솔직하게 밝혔어요. 수노는 앞으로 커뮤니티 반응을 보며 계속 개선할 계획이에요.</p><p>보통 내레이션과 배경음악은 따로 만든 뒤 믹싱해야 하는데, 이걸 한 번에 해결한다는 점이 포인트예요. 음악 중심이던 수노가 이야기와 음성 콘텐츠로 영역을 넓히는 신호라, 트레일러나 영상 내레이션, 오디오 콘텐츠를 만드는 크리에이터에게 꽤 쓸모 있는 도구가 될 수 있어요.</p><p>원문: <a href=\"https://suno.com/blog/introducing-speech-beta\">Suno Blog</a></p>",
+    "source": "Suno Blog",
+    "publishedAt": "2026.10.02",
+    "hue": 280,
+    "image": "https://suno.com/blog/introducing-speech-beta/opengraph-image?4a0be6b3238f1ddc",
+    "url": "https://suno.com/blog/introducing-speech-beta"
+  },
+  {
+    "id": "art-352ca1f6-2026-10",
+    "tab": "art",
+    "headline": "벤 애플렉 \"넷플릭스 신작 '애니멀스'에 AI 많이 썼다\"…어디에 썼는지는 비밀",
+    "summary": "벤 애플렉이 넷플릭스 신작 '애니멀스'에 AI를 많이 썼다고 밝혔어요.",
+    "body": "<p>배우이자 감독인 벤 애플렉이 블룸버그의 스크린타임 행사에서 자신의 넷플릭스 신작 스릴러 '애니멀스'에 AI를 '여러 곳에' 활용했다고 털어놨어요. 애니멀스는 애플렉이 각본과 연출, 주연을 모두 맡은 범죄 스릴러로, 질리언 앤더슨과 스티븐 연, 케리 워싱턴 등이 출연하고 10월 9일 넷플릭스에서 공개될 예정이에요. 하지만 정확히 어떤 장면이나 작업에 AI를 썼는지는 끝내 말하지 않았어요.</p><p>이유가 재밌어요. 영화는 현실이라는 환상을 만들어 내는 일인데, 마술사가 공연 전에 무대에 나와 트릭을 하나하나 밝히면 마술이 망가지는 것과 같다는 거예요. 그러면서도 애니멀스는 아주 인간적인 영화라서 오히려 AI를 윤리적으로 쓰는 좋은 예라고 생각한다고 덧붙였어요. 참고로 애플렉은 자신이 세운 AI 회사 인터포지티브를 넷플릭스에 약 6억 달러에 매각한 인물이라, 할리우드에서 AI에 가장 적극적이고 잘 아는 사람 중 하나로 꼽혀요.</p><p>애플렉은 영화인들이 AI 툴을 직접 써 보고 통제할 수 있다는 감각을 얻으면, 막연하고 무서운 존재로 보던 시선이 사라지고 하나의 컴퓨팅 기술로 받아들이게 된다고 말했어요. 대형 스트리밍 작품에서 AI가 관객 눈에 띄지 않는 제작 도구로 자리 잡고 있다는 걸 보여주는 장면이에요.</p><p>원문: <a href=\"https://www.hollywoodreporter.com/movies/movie-news/ben-affleck-ai-netflix-movie-animals-1236717919/\">The Hollywood Reporter</a></p>",
+    "source": "The Hollywood Reporter",
+    "publishedAt": "2026.10.02",
+    "hue": 340,
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2026/08/ANIMALS_20250311_WP_0019_R2.jpg?crop=0px%2C302px%2C7200px%2C4029px&resize=1440%2C810",
+    "url": "https://www.hollywoodreporter.com/movies/movie-news/ben-affleck-ai-netflix-movie-animals-1236717919/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.gamesradar.com/entertainment/thriller-movies/ben-affleck-used-ai-for-lots-of-things-in-his-new-netflix-movie-but-is-hesitant-to-point-out-what-they-are/"
+      }
+    ]
+  },
+  {
+    "id": "art-b83be741-2026-10",
+    "tab": "art",
+    "headline": "ChatGPT, 셀카로 옷을 입어보는 '가상 피팅' 기능 전 세계 출시",
+    "summary": "ChatGPT에 셀카로 옷을 입어보는 가상 피팅 기능이 생겼어요.",
+    "body": "<p>오픈AI가 ChatGPT에 새로운 쇼핑 기능 두 가지를 전 세계에 출시했어요. 하나는 옷이나 액세서리를 가상으로 입어보는 '가상 피팅'이고, 다른 하나는 마음에 드는 상품을 저장하는 '즐겨찾기'예요. 가상 피팅은 셀카나 전신 사진을 올리면 해당 옷을 입은 모습을 보여주는 방식으로, ChatGPT 쇼핑 결과에 새로 생긴 'Try On' 버튼으로 쓸 수 있어요. 웹 스크린샷 같은 상품 이미지를 직접 올려서 입혀 달라고 요청할 수도 있고, 피팅 이미지는 저장한 상품과 함께 라이브러리에 모여요.</p><p>이 기능들은 최근 공개된 이미지 모델 ChatGPT Images 2.5를 기반으로 돌아가요. 오픈AI는 이 모델이 조명이 더 자연스럽고 질감이 풍부하며, 편집 지시를 더 안정적으로 따르고 생성 속도도 빨라졌다고 설명해요. 원하는 스타일을 말로 설명하고 그 룩을 완성할 아이템을 찾아 달라고 하거나, 유명인 착장 사진을 올려 구매 가능한 비슷한 제품을 찾는 것도 가능해요. 핀터레스트와 구글이 강세였던 패션 영감과 탐색 영역에 본격적으로 뛰어든 셈이에요.</p><p>구글이 작년에 이미 가상 피팅을 선보인 만큼 경쟁은 치열할 전망이에요. 다만 사람의 특징은 유지하면서 의상만 자연스럽게 바꾸는 이미지 편집이 대중 서비스로 들어왔다는 점은 캐릭터 의상 시안 작업에도 참고할 만해요.</p><p>원문: <a href=\"https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/\">TechCrunch</a></p>",
+    "source": "TechCrunch",
+    "publishedAt": "2026.10.02",
+    "hue": 300,
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Virtual-Try-On.jpg?resize=1200,675",
+    "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+  }
+]
