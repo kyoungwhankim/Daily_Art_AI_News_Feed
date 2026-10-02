@@ -9,6 +9,10 @@
     "publishedAt": "2026.04.29",
     "hue": 210,
     "image": "https://cdn.mos.cms.futurecdn.net/WsiyrmsCoiKRDvhiY5Bgu3-1600-80.jpg",
+    "keywords": [
+      "애니메이션",
+      "Autodesk"
+    ],
     "url": "https://www.creativebloq.com/art/animation/how-autodesks-new-ai-tool-gets-us-closer-to-just-press-animate",
     "urls": [
       {
@@ -27,6 +31,10 @@
     "publishedAt": "2026.04.29",
     "hue": 30,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/04/260428_Headshot3_NewAIModel.jpg",
+    "keywords": [
+      "3D",
+      "Reallusion"
+    ],
     "url": "https://www.cgchannel.com/2026/04/reallusion-releases-headshot-3-0/",
     "urls": [
       {
@@ -49,6 +57,11 @@
     "publishedAt": "2026.04.29",
     "hue": 240,
     "image": "https://cdn.80.lv/api/upload/meta/48013/images/69f0f0a119d49/contain_1200x630.png",
+    "keywords": [
+      "3D",
+      "Blender",
+      "Claude"
+    ],
     "url": "https://80.lv/articles/claude-ai-creator-anthropic-joins-blender-development-fund-as-corporate-patron",
     "urls": [
       {
@@ -67,6 +80,9 @@
     "publishedAt": "2026.04.29",
     "hue": 120,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/01/260127_WorldCreator20261_f.jpg",
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://www.cgchannel.com/2026/04/world-creator-2026-4-is-out-with-a-new-free-community-edition/",
     "urls": [
       {
@@ -85,6 +101,10 @@
     "publishedAt": "2026.04.29",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/48001/images/69f0bee4b3114/contain_1200x630.jpg",
+    "keywords": [
+      "Adobe",
+      "Photoshop"
+    ],
     "url": "https://www.cgchannel.com/2026/04/adobe-releases-photoshop-27-6/",
     "urls": [
       {
@@ -103,6 +123,9 @@
     "publishedAt": "2026.04.29",
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2835fcf73fe16d06/69ef8a00b14e60ac0dfba60c/WOTC_Union.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.gamedeveloper.com/business/magic-the-gathering-arena-devs-seek-to-unionise-to-deliver-genai-and-layoff-protections",
     "urls": [
       {
@@ -121,6 +144,9 @@
     "publishedAt": "2026.04.29",
     "hue": 350,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt177d8d26e29b2e79/69f09c5c6e88757c7ab0df0a/Github.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "코딩"
+    ],
     "url": "https://www.gamedeveloper.com/production/github-copilot-is-pivoting-to-usage-based-billing-because-it-s-currently-unsustainable"
   },
   {
@@ -133,6 +159,11 @@
     "publishedAt": "2026.04.29",
     "hue": 30,
     "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4Do368k4kpCQh9F6qYTEC7/54488062e4caf09f8f79568cf6fb4bf6/Ubisoft_Cloud_Logo.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "행사·컨퍼런스",
+      "Google"
+    ],
     "url": "https://news.ubisoft.com/en-us/article/1Gg5iLsAiWHezEPiHAJDGu/ubisoft-at-iicon-2026"
   },
   {
@@ -145,6 +176,9 @@
     "publishedAt": "2026.04.29",
     "hue": 290,
     "image": "https://www.progressiverobot.com/wp-content/uploads/2026/04/midjourney-v8-featured-16x9-v1.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.progressiverobot.com/2026/04/28/midjourney-v8/",
     "urls": [
       {
@@ -163,6 +197,10 @@
     "publishedAt": "2026.04.29",
     "hue": 10,
     "image": "https://scx2.b-cdn.net/gfx/news/hires/2023/openai-1.jpg",
+    "keywords": [
+      "영상",
+      "OpenAI"
+    ],
     "url": "https://techxplore.com/news/2026-04-sora-shutdown-reveals-limits-ai.html"
   }
 ]

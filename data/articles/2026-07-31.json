@@ -8,6 +8,10 @@
     "source": "PR Newswire",
     "publishedAt": "2026.07.31",
     "hue": 220,
+    "keywords": [
+      "3D",
+      "텍스처"
+    ],
     "url": "https://www.manilatimes.net/2026/07/30/tmt-newswire/pr-newswire/hi3d-announces-v30-for-august-launch-publishes-side-by-side-comparison-of-leading-ai-3d-tools/2395265",
     "urls": [
       {
@@ -25,6 +29,11 @@
     "source": "CG Channel",
     "publishedAt": "2026.07.31",
     "hue": 210,
+    "keywords": [
+      "3D",
+      "VFX",
+      "가우시안 스플래팅"
+    ],
     "url": "https://www.cgchannel.com/2026/07/check-out-this-free-gaussian-splatting-plugin-for-after-effects/",
     "urls": [
       {
@@ -47,6 +56,7 @@
     "publishedAt": "2026.07.31",
     "hue": 340,
     "image": "https://cdn.80.lv/api/upload/meta/49484/images/6a6a26dec96c9/contain_1200x630.jpg",
+    "keywords": [],
     "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks"
   },
   {
@@ -59,6 +69,9 @@
     "publishedAt": "2026.07.31",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd7c86cb623ee06c8/6a6b24cec08842e883ba72f1/Knowledge_video_game.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
   },
   {
@@ -71,6 +84,10 @@
     "publishedAt": "2026.07.31",
     "hue": 50,
     "image": "https://media.pocketgamer.biz/images/140631/89504/aws-pocket-gamer-connects-summit-shanghai-2026_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "설문·통계"
+    ],
     "url": "https://www.pocketgamer.biz/why-china-is-embracing-ai-and-very-few-studios-refuse-to-adopt-it/"
   },
   {
@@ -83,6 +100,9 @@
     "publishedAt": "2026.07.31",
     "hue": 40,
     "image": "https://media.pocketgamer.biz/images/140596/89489/honorofkings_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
     "url": "https://www.pocketgamer.biz/how-chinas-game-industry-is-using-ai-from-art-to-ad-buying/"
   },
   {
@@ -95,6 +115,10 @@
     "publishedAt": "2026.07.31",
     "hue": 270,
     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria3.5_social.max-1440x810.png",
+    "keywords": [
+      "음악·사운드",
+      "Google"
+    ],
     "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
     "urls": [
       {
@@ -113,6 +137,10 @@
     "publishedAt": "2026.07.31",
     "hue": 280,
     "image": "https://www.artnews.com/wp-content/uploads/2026/07/File.jpg?w=1024",
+    "keywords": [
+      "영상",
+      "2D·이미지"
+    ],
     "url": "https://www.artnews.com/art-news/news/harvard-art-museums-generative-ai-francois-boucher-painting-1234793832/"
   },
   {
@@ -125,6 +153,11 @@
     "publishedAt": "2026.07.31",
     "hue": 200,
     "image": "https://jetstream.blog/wp-content/uploads/2026/07/Gemini-Omni.jpg",
+    "keywords": [
+      "영상",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://jetstream.blog/en/gemini-omni-free-access-10-per-day-until-20260805/"
   }
 ]

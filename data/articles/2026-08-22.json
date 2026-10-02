@@ -9,6 +9,7 @@
     "publishedAt": "2026.08.22",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf3fc88a2734c2ee4/6a88636db244e43b9a248c59/AIrezluke.png",
+    "keywords": [],
     "url": "https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken"
   },
   {
@@ -21,6 +22,9 @@
     "publishedAt": "2026.08.22",
     "hue": 220,
     "image": "https://twistedvoxel.com/wp-content/uploads/2026/08/tencent.jpg",
+    "keywords": [
+      "행사·컨퍼런스"
+    ],
     "url": "https://twistedvoxel.com/tencent-games-brings-major-lineup-to-gamescom-2026/"
   },
   {
@@ -33,6 +37,10 @@
     "publishedAt": "2026.08.22",
     "hue": 290,
     "image": "https://thurrott-assets.nyc3.digitaloceanspaces.com/web/wp-content/uploads/sites/2/2026/08/Apple-Music.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Apple"
+    ],
     "url": "https://www.thurrott.com/apple/340620/apple-music-will-soon-start-labeling-ai-generated-music"
   }
 ]

@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.05",
     "hue": 220,
     "image": "https://cdn.mos.cms.futurecdn.net/X8SLxQP9PXhuQWSrmRzFAR-1920-80.jpg",
+    "keywords": [
+      "3D",
+      "Autodesk"
+    ],
     "url": "https://www.creativebloq.com/3d/autodesk-flow-studio-gets-a-3d-editor-and-canvas"
   },
   {
@@ -21,6 +25,7 @@
     "publishedAt": "2026.08.05",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/49582/images/6a7165f062a61/contain_1200x630.jpg",
+    "keywords": [],
     "url": "https://80.lv/articles/creating-a-cretan-mycenaean-civilization-themed-character-with-ai-workflow/"
   },
   {
@@ -32,6 +37,10 @@
     "source": "CG Channel",
     "publishedAt": "2026.08.05",
     "hue": 200,
+    "keywords": [
+      "가우시안 스플래팅",
+      "Unreal Engine"
+    ],
     "url": "https://www.cgchannel.com/2026/08/volinga-plugin-pro-lets-you-relight-4dgs-data-inside-unreal-engine/",
     "urls": [
       {
@@ -50,6 +59,9 @@
     "publishedAt": "2026.08.05",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt39609789e946e4b8/6a71ed9b0e035c3f38b1c119/EA_Saudi_Header.png",
+    "keywords": [
+      "투자·인수"
+    ],
     "url": "https://www.gamedeveloper.com/business/ea-is-now-owned-by-saudi-arabia-and-donald-trump-s-son-in-law"
   },
   {
@@ -62,6 +74,10 @@
     "publishedAt": "2026.08.05",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2026/02/spotify-logo-phone-GettyImages-2236404299.jpg?w=1024",
+    "keywords": [
+      "음악·사운드",
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/08/04/spotify-merlin-ai-remix/"
   },
   {
@@ -74,6 +90,9 @@
     "publishedAt": "2026.08.05",
     "hue": 260,
     "image": "https://www.hollywoodreporter.com/wp-content/uploads/2026/08/CanvasAfter.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.hollywoodreporter.com/business/business-news/autodesk-flow-studio-launch-film-tv-1236282851/"
   },
   {
@@ -86,6 +105,10 @@
     "publishedAt": "2026.08.05",
     "hue": 10,
     "image": "https://i0.wp.com/musically.com/wp-content/uploads/2026/08/news-stories-images-4x3-71.png",
+    "keywords": [
+      "음악·사운드",
+      "2D·이미지"
+    ],
     "url": "https://musically.com/2026/08/04/key-eu-ai-act-rules-now-being-enforced-so-how-does-that-affect-the-music-industry/"
   }
 ]

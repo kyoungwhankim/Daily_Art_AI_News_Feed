@@ -9,6 +9,11 @@
     "publishedAt": "2026.05.31",
     "hue": 195,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260530_PFTrack260519_f-610x305.jpg",
+    "keywords": [
+      "3D",
+      "영상",
+      "가우시안 스플래팅"
+    ],
     "url": "https://www.cgchannel.com/2026/05/the-pixel-farm-adds-new-point-cloud-toolset-to-pftrack-26-05/"
   },
   {
@@ -21,6 +26,7 @@
     "publishedAt": "2026.05.31",
     "hue": 10,
     "image": "https://deadline.com/wp-content/uploads/2026/05/Punky-Duck-press-image-v1b.jpg?w=681&h=383&crop=1",
+    "keywords": [],
     "url": "https://deadline.com/2026/05/punky-duck-creator-jorge-r-gutierrez-scraps-ai-amazon-project-1236930216/",
     "urls": [
       {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.05.31",
     "hue": 345,
     "image": "https://gizmodo.com/app/uploads/2026/05/punky-duck-amazon-hed.jpg",
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://gizmodo.com/amazon-pisses-off-animation-industy-with-ai-animation-fund-2000765057"
   },
   {
@@ -51,6 +60,10 @@
     "publishedAt": "2026.05.31",
     "hue": 265,
     "image": "https://i0.wp.com/musically.com/wp-content/uploads/2026/05/header-image.jpeg?fit=780%2C487&ssl=1",
+    "keywords": [
+      "영상",
+      "음악·사운드"
+    ],
     "url": "https://musically.com/2026/05/29/why-we-built-an-ai-music-video-generator-that-listens-to-songs/"
   }
 ]

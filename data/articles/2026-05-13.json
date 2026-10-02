@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.13",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/48252/images/6a033c2605030/contain_1200x630.jpg",
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://80.lv/articles/rl-based-retargeting-method-for-transferring-human-motion-to-robots"
   },
   {
@@ -21,6 +24,12 @@
     "publishedAt": "2026.05.13",
     "hue": 250,
     "image": "https://cdn.80.lv/api/upload/meta/48244/images/6a03075c2a377/contain_1200x630.jpg",
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "VFX",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/blender-studio-releases-its-first-4k-hdr-short-film-singularity",
     "urls": [
       {
@@ -39,6 +48,12 @@
     "publishedAt": "2026.05.13",
     "hue": 30,
     "image": "https://financewire.com/wp-content/uploads/2026/05/12_1_1_17784888249AQDn9TCcb.jpg",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "텍스처",
+      "Tripo"
+    ],
     "url": "https://financewire.com/2026/05/12/tripo-launches-enterprise-ai-3d-platform-with-image-to-3d-model-segmentation-and-ai-texture-tools/",
     "urls": [
       {
@@ -61,6 +76,10 @@
     "publishedAt": "2026.05.13",
     "hue": 30,
     "image": "https://insider-gaming.com/wp-content/uploads/2023/06/Lies-of-P.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "고용·노조"
+    ],
     "url": "https://insider-gaming.com/lies-of-p-dev-is-hiring-a-generative-ai-creator/"
   },
   {
@@ -73,6 +92,12 @@
     "publishedAt": "2026.05.13",
     "hue": 10,
     "image": "https://insider-gaming.com/wp-content/uploads/2026/03/EpicGames-1.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "고용·노조",
+      "행사·컨퍼런스",
+      "Epic Games"
+    ],
     "url": "https://insider-gaming.com/epic-says-ai-wont-replace-jobs-but-increase-efficiency/"
   },
   {
@@ -85,6 +110,10 @@
     "publishedAt": "2026.05.13",
     "hue": 350,
     "image": "https://www.manilatimes.net/manilatimes/uploads/images/2026/05/12/1052527.jpg",
+    "keywords": [
+      "영상",
+      "Meta"
+    ],
     "url": "https://www.manilatimes.net/2026/05/12/entertainment-lifestyle/cannes-film-festival-opens-grappling-with-ai-and-hollywood/2341283"
   },
   {
@@ -97,6 +126,9 @@
     "publishedAt": "2026.05.13",
     "hue": 280,
     "image": "https://variety.com/wp-content/uploads/2026/05/Storyverse.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://variety.com/2026/tv/markets-festivals/storyverse-ai-studio-cannes-launch-1236745956/"
   },
   {
@@ -109,6 +141,7 @@
     "publishedAt": "2026.05.13",
     "hue": 10,
     "image": "https://variety.com/wp-content/uploads/2026/05/GettyImages-2275779161.jpg?w=1000&h=563&crop=1",
+    "keywords": [],
     "url": "https://variety.com/2026/film/global/demi-moore-ai-hollywood-cannes-must-work-with-it-1236745587/"
   }
 ]

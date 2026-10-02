@@ -9,6 +9,9 @@
     "publishedAt": "2026.08.14",
     "hue": 15,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltef068dcaa36e8c54/6a7c802c08084de2fdbbdab8/ss_24a50290ce0be6b7c830995615485ef9669d276a.1920x1080.jpg",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.08.14",
     "hue": 40,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltfbed083d2e99ebc2/6a7dc571356eb87d61638027/Twitch_video_game_header.png",
+    "keywords": [
+      "AI 사용 논란",
+      "법·정책"
+    ],
     "url": "https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not"
   },
   {
@@ -33,6 +40,10 @@
     "publishedAt": "2026.08.14",
     "hue": 220,
     "image": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2285051415_fc1da9-e1786627406714.jpg?resize=1200,600",
+    "keywords": [
+      "영상",
+      "Anthropic"
+    ],
     "url": "https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/",
     "urls": [
       {
@@ -51,6 +62,9 @@
     "publishedAt": "2026.08.14",
     "hue": 280,
     "image": "https://roboticsandautomationnews.com/wp-content/uploads/2026/08/LTX-2.5-2.jpeg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://roboticsandautomationnews.com/2026/08/13/ltx-launches-new-free-to-use-open-world-model-for-video-and-physical-ai/104079/",
     "urls": [
       {

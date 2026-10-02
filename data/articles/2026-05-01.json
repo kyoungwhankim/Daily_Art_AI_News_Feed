@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.01",
     "hue": 25,
     "image": "https://cdn.80.lv/api/upload/meta/48059/images/69f331f64d1fd/contain_1200x630.jpg",
+    "keywords": [
+      "가우시안 스플래팅"
+    ],
     "url": "https://80.lv/articles/developer-builds-browser-based-fps-game-using-gaussian-splats",
     "urls": [
       {
@@ -27,6 +30,11 @@
     "publishedAt": "2026.05.01",
     "hue": 220,
     "image": "https://digitalproduction.com/wp-content/uploads/2026/04/lzmwszbzu5w-00-00-13-18-claude-now-connects-to-blender.png",
+    "keywords": [
+      "Blender",
+      "Claude",
+      "MCP"
+    ],
     "url": "https://digitalproduction.com/2026/04/30/anthropic-funds-blender-ships-claude-connector/",
     "urls": [
       {
@@ -45,6 +53,9 @@
     "publishedAt": "2026.05.01",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6d7ae8c0053864b4/69f36810966e516c534470da/GameMaker_Header.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "Claude"
+    ],
     "url": "https://www.gamedeveloper.com/production/gamemaker-incorporates-claude-code-to-enable-ai-assisted-workflows"
   },
   {
@@ -57,6 +68,10 @@
     "publishedAt": "2026.05.01",
     "hue": 130,
     "image": "https://techcrunch.com/wp-content/uploads/2026/04/S4A_Verified_Header_Ravyn.jpg?resize=1200,683",
+    "keywords": [
+      "음악·사운드",
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/04/30/spotify-introduces-verified-artist-badges-to-help-distinguish-humans-from-ai/",
     "urls": [
       {
@@ -75,6 +90,7 @@
     "publishedAt": "2026.05.01",
     "hue": 60,
     "image": "https://opengraph.githubusercontent.com/1/Night1099/COMFYUI-PBRFusion4",
+    "keywords": [],
     "url": "https://github.com/Night1099/COMFYUI-PBRFusion4/commit/17687f480f9412e2e302290cb80eb7951cce1485"
   }
 ]

@@ -9,6 +9,9 @@
     "publishedAt": "2026.08.25",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/08/260823_CGSoftwareYouMayHaveMissed23August2026_SlapshotComfyNodes_f-960x480.jpg",
+    "keywords": [
+      "Meshy"
+    ],
     "url": "https://www.cgchannel.com/2026/08/new-cg-software-you-may-have-missed-23-august-2026/",
     "urls": [
       {
@@ -30,6 +33,9 @@
     "source": "80.lv",
     "publishedAt": "2026.08.25",
     "hue": 200,
+    "keywords": [
+      "3D"
+    ],
     "url": "https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-for-3d-assets/"
   },
   {
@@ -42,6 +48,10 @@
     "publishedAt": "2026.08.25",
     "hue": 30,
     "image": "https://media.northeasttimes.com/uploads/2026/08/ai-is-rewriting-how-video-games-get-made-and-fast-1024x558.png",
+    "keywords": [
+      "설문·통계",
+      "Google"
+    ],
     "url": "https://northeasttimes.com/2026/08/24/ai-is-rewriting-how-video-games-get-made-and-fast/"
   },
   {
@@ -54,6 +64,11 @@
     "publishedAt": "2026.08.25",
     "hue": 290,
     "image": "https://www.fxguide.com/wp-content/uploads/2026/08/fxg-featured-Flow.jpg",
+    "keywords": [
+      "영상",
+      "2D·이미지",
+      "3D"
+    ],
     "url": "https://www.fxguide.com/fxpodcasts/nikola-todorovic-on-autodesk-flow-studios-new-3d-editor-canvas/"
   }
 ]

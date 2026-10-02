@@ -9,6 +9,11 @@
     "publishedAt": "2026.08.27",
     "hue": 210,
     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/Gamescom-RTX-Spark-Key-Visual.jpg",
+    "keywords": [
+      "Blender",
+      "NVIDIA",
+      "DLSS"
+    ],
     "url": "https://basic-tutorials.com/news/nvidia-at-gamescom-2026-an-overview-of-all-announcements/",
     "urls": [
       {
@@ -31,6 +36,10 @@
     "publishedAt": "2026.08.27",
     "hue": 15,
     "image": "https://kotaku.com/app/uploads/2026/08/ai-gamescom-games-1200x675.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "행사·컨퍼런스"
+    ],
     "url": "https://kotaku.com/opening-night-live-2026-genai-slop-games-geoff-keighley-2000728477"
   },
   {
@@ -43,6 +52,12 @@
     "publishedAt": "2026.08.27",
     "hue": 30,
     "image": "https://cdn.mos.cms.futurecdn.net/kXohc6KdvhDoDVL2nGynUa-1920-80.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "행사·컨퍼런스",
+      "AI 미사용 선언",
+      "영상"
+    ],
     "url": "https://www.gamesradar.com/games/strategy/humankind-2-devs-respond-to-ai-slop-accusations-assure-fans-its-new-gamescom-trailer-features-real-actors-practical-sets-and-custom-made-props/",
     "urls": [
       {
@@ -61,6 +76,10 @@
     "publishedAt": "2026.08.27",
     "hue": 350,
     "image": "https://cdn.mos.cms.futurecdn.net/NFEPao6FVuVLkJe6ieAzYo-1920-80.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "고용·노조"
+    ],
     "url": "https://www.pcgamer.com/games/puzzle/ai-is-just-a-plagiarism-machine-that-makes-people-lose-their-jobs-in-the-eyes-of-the-talos-principle-3s-writers/"
   },
   {
@@ -73,6 +92,11 @@
     "publishedAt": "2026.08.27",
     "hue": 270,
     "image": "https://cdn.mos.cms.futurecdn.net/iM8XZECQkQHHURvdjHpBnY-1857-80.jpg",
+    "keywords": [
+      "영상",
+      "애니메이션",
+      "Apple"
+    ],
     "url": "https://www.creativebloq.com/design/advertising/nope-the-new-apple-ad-isnt-ai-and-theres-a-bts-video-to-prove-it",
     "urls": [
       {

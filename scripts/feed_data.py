@@ -4,6 +4,7 @@ feed_data.py — 날짜별 기사 데이터(data/)를 다루는 공통 함수.
 레이아웃:
     data/index.json                  날짜 목록 (최신순) + 파일별 기사 수·리비전
     data/articles/YYYY-MM-DD.json    그날 게시된 기사 배열
+    data/keywords.json               탭별 서브 카테고리 키워드 목록
 
     index.json 예:
     {
@@ -27,6 +28,7 @@ REPO = os.environ.get('REPO_PATH', '/home/user/Daily_Art_AI_News_Feed')
 DATA_DIR = os.path.join(REPO, 'data')
 ARTICLES_DIR = os.path.join(DATA_DIR, 'articles')
 INDEX_PATH = os.path.join(DATA_DIR, 'index.json')
+KEYWORDS_PATH = os.path.join(DATA_DIR, 'keywords.json')
 
 TABS = ('games', 'industry', 'art')
 FILE_RE = re.compile(r'^(\d{4})-(\d{2})-(\d{2})\.json$')
@@ -52,6 +54,34 @@ def normalize_url(u: str) -> str:
     u = re.sub(r'^www\.', '', u, flags=re.IGNORECASE)
     host, _, rest = u.partition('/')
     return (host.lower() + ('/' + rest if rest else '')).rstrip('/')
+
+
+def read_keyword_spec() -> dict:
+    with open(KEYWORDS_PATH, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def write_keyword_spec(spec: dict) -> None:
+    """data/keywords.json을 한 키워드 한 줄 형식으로 쓴다."""
+    lines = ['{', '  "_comment": ' + json.dumps(
+        spec.get('_comment', []), ensure_ascii=False, indent=4
+    ).replace('\n', '\n  ') + ',', '  "tabs": {']
+    tabs = list(spec['tabs'].items())
+    for ti, (tab, rows) in enumerate(tabs):
+        lines.append(f'    "{tab}": [')
+        lines += ['      ' + json.dumps(r, ensure_ascii=False)
+                  + (',' if i < len(rows) - 1 else '')
+                  for i, r in enumerate(rows)]
+        lines.append('    ]' + (',' if ti < len(tabs) - 1 else ''))
+    lines += ['  }', '}']
+    with open(KEYWORDS_PATH, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines) + '\n')
+
+
+def keyword_lists() -> dict:
+    """탭별 키워드 label 목록 (표시 순서). {'games': ['3D', ...], ...}"""
+    spec = read_keyword_spec()
+    return {tab: [k['label'] for k in rows] for tab, rows in spec['tabs'].items()}
 
 
 def date_files() -> list:

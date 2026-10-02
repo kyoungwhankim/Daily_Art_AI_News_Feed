@@ -9,6 +9,10 @@
     "publishedAt": "2026.06.20",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/48879/images/6a345260cfc30/contain_1200x630.png",
+    "keywords": [
+      "Unreal Engine",
+      "Epic Games"
+    ],
     "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs"
   },
   {
@@ -21,6 +25,10 @@
     "publishedAt": "2026.06.20",
     "hue": 340,
     "image": "https://cdn.mos.cms.futurecdn.net/64vFnkqAR7gDvn2c4gkCzS-1600-80.jpg",
+    "keywords": [
+      "Unreal Engine",
+      "Epic Games"
+    ],
     "url": "https://www.creativebloq.com/3d/video-game-design/unreal-engines-ai-push-sparks-backlash-as-developers-fear-the-end-of-blueprints"
   },
   {
@@ -33,6 +41,10 @@
     "publishedAt": "2026.06.20",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt32972960811f0322/6a3516fcf3c7147f42450aa4/Patch_Notes_Header.png",
+    "keywords": [
+      "AI 도입 전략",
+      "Sony"
+    ],
     "url": "https://www.gamedeveloper.com/business/rockstar-s-legal-setback-final-fantasy-tax-incentives-and-playstation-swaps-pc-for-ai-patch-notes-57"
   },
   {
@@ -45,6 +57,10 @@
     "publishedAt": "2026.06.20",
     "hue": 260,
     "image": "https://dataconomy.com/wp-content/uploads/2026/06/adobe-firefly-ai-updates-premiere-illustrator-indesign.jpg",
+    "keywords": [
+      "Adobe",
+      "Premiere"
+    ],
     "url": "https://dataconomy.com/2026/06/19/adobe-firefly-ai-updates-premiere-illustrator-indesign/"
   }
 ]

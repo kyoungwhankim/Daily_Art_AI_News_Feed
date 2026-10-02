@@ -9,6 +9,11 @@
     "publishedAt": "2026.09.25",
     "hue": 210,
     "image": "https://cdn.80.lv/api/upload/meta/50350/images/6ab4d12c333a9/contain_1200x630.jpg",
+    "keywords": [
+      "영상",
+      "2D·이미지",
+      "Adobe"
+    ],
     "url": "https://80.lv/articles/adobe-completes-acquisition-of-ai-image-video-upscaling-company-topaz-labs"
   },
   {
@@ -21,6 +26,7 @@
     "publishedAt": "2026.09.25",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/03/260316_OctaneRender20271_AILight.jpg",
+    "keywords": [],
     "url": "https://www.cgchannel.com/2026/09/otoy-releases-octanerender-2027-1-in-alpha/",
     "urls": [
       {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.09.25",
     "hue": 290,
     "image": "https://images.ctfassets.net/jdtwqhzvc2n1/6OS9AQAETGiq6hw2EpKRr0/561c2741651b03ba08f73634cb8b491a/ChatGPT_Image_Sep_24__2026__03_02_58_PM.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://venturebeat.com/technology/should-your-enterprise-build-a-custom-ai-harness-inkitt-did-for-ai-video-5-key-takeaways",
     "urls": [
       {
@@ -57,6 +66,10 @@
     "publishedAt": "2026.09.25",
     "hue": 30,
     "image": "https://techcrunch.com/wp-content/uploads/2025/07/Mati-Staniszewski_SXSW.jpg?w=1024",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/"
   }
 ]

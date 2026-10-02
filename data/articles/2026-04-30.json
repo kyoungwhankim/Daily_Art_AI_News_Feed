@@ -9,6 +9,11 @@
     "publishedAt": "2026.04.30",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/48035/images/69f1d7bc75b57/contain_1200x630.jpg",
+    "keywords": [
+      "Blender",
+      "Claude",
+      "MCP"
+    ],
     "url": "https://80.lv/articles/blender-ceo-on-anthropic-funding-this-is-not-ai-takeover",
     "urls": [
       {
@@ -27,6 +32,9 @@
     "publishedAt": "2026.04.30",
     "hue": 10,
     "image": "https://media.pocketgamer.biz/images/139040/88850/magicthegatheringarenalogo-1_l1200.jpg",
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.pocketgamer.biz/magic-the-gathering-arena-team-unionises-under-cwa/"
   },
   {
@@ -39,6 +47,10 @@
     "publishedAt": "2026.04.30",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2250760741.jpg",
+    "keywords": [
+      "영상",
+      "Runway"
+    ],
     "url": "https://techcrunch.com/podcast/equity-podcast-runway-ceo-cristobal-valenzuela-ai-video-world-models/"
   }
 ]

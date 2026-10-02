@@ -9,6 +9,11 @@
     "publishedAt": "2026.05.30",
     "hue": 200,
     "image": "https://arxiv.org/html/2605.13857v1/x1.png",
+    "keywords": [
+      "3D",
+      "영상",
+      "VFX"
+    ],
     "url": "https://huggingface.co/papers/2605.13857",
     "urls": [
       {
@@ -31,6 +36,11 @@
     "publishedAt": "2026.05.30",
     "hue": 220,
     "image": "https://arxiv.org/html/2605.25220v1/x1.png",
+    "keywords": [
+      "3D",
+      "2D·이미지",
+      "가우시안 스플래팅"
+    ],
     "url": "https://huggingface.co/papers/2605.25220",
     "urls": [
       {
@@ -49,6 +59,10 @@
     "publishedAt": "2026.05.30",
     "hue": 30,
     "image": "https://arxiv.org/html/2605.30268v1/x1.png",
+    "keywords": [
+      "애니메이션",
+      "VFX"
+    ],
     "url": "https://huggingface.co/papers/2605.30268",
     "urls": [
       {
@@ -67,6 +81,9 @@
     "publishedAt": "2026.05.30",
     "hue": 340,
     "image": "https://arxiv.org/html/2605.30248v1/images/Fig1-10.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://huggingface.co/papers/2605.30248"
   },
   {
@@ -79,6 +96,9 @@
     "publishedAt": "2026.05.30",
     "hue": 210,
     "image": "https://arxiv.org/html/2605.30263v1/x1.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://huggingface.co/papers/2605.30263",
     "urls": [
       {
@@ -97,6 +117,10 @@
     "publishedAt": "2026.05.30",
     "hue": 30,
     "image": "https://deadline.com/wp-content/uploads/2026/05/LoveDianaHeartBeats-Onstage-v002.png",
+    "keywords": [
+      "AI 도입 전략",
+      "영상"
+    ],
     "url": "https://www.advanced-television.com/2026/05/29/prime-video-orders-3-animated-series-from-genai/",
     "urls": [
       {
@@ -115,6 +139,9 @@
     "publishedAt": "2026.05.30",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/48568/images/6a19d07f2a27e/contain_1200x630.jpeg",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://80.lv/articles/jorge-r-gutierrez-drops-out-of-amazon-s-genai-creators-fund-program"
   },
   {
@@ -126,6 +153,9 @@
     "source": "CG Channel",
     "publishedAt": "2026.05.30",
     "hue": 290,
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://www.cgchannel.com/2026/05/boris-fx-releases-silhouette-2026/",
     "urls": [
       {
@@ -144,6 +174,10 @@
     "publishedAt": "2026.05.30",
     "hue": 270,
     "image": "https://arxiv.org/html/2605.30073v1/x1.png",
+    "keywords": [
+      "영상",
+      "음악·사운드"
+    ],
     "url": "https://huggingface.co/papers/2605.30073",
     "urls": [
       {
@@ -162,6 +196,9 @@
     "publishedAt": "2026.05.30",
     "hue": 260,
     "image": "https://arxiv.org/html/2605.27891v1/x1.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://huggingface.co/papers/2605.27891"
   }
 ]

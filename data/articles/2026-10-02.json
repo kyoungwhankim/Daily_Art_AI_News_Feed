@@ -9,6 +9,9 @@
     "publishedAt": "2026.10.02",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/50467/images/6abeb649e7440/contain_1200x630.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://80.lv/articles/base-ps5-finally-gets-its-own-version-of-pssr-upscaling/",
     "urls": [
       {
@@ -27,6 +30,7 @@
     "publishedAt": "2026.10.02",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141588/89956/header-4_l1200.jpg",
+    "keywords": [],
     "url": "https://www.pocketgamer.biz/layer-launches-ai-playable-ad-generator-to-tackle-production-bottlenecks-for-mobile-game-studios/",
     "urls": [
       {
@@ -45,6 +49,11 @@
     "publishedAt": "2026.10.02",
     "hue": 280,
     "image": "https://suno.com/blog/introducing-speech-beta/opengraph-image?4a0be6b3238f1ddc",
+    "keywords": [
+      "음악·사운드",
+      "음성",
+      "Suno"
+    ],
     "url": "https://suno.com/blog/introducing-speech-beta"
   },
   {
@@ -57,6 +66,7 @@
     "publishedAt": "2026.10.02",
     "hue": 340,
     "image": "https://www.hollywoodreporter.com/wp-content/uploads/2026/08/ANIMALS_20250311_WP_0019_R2.jpg?crop=0px%2C302px%2C7200px%2C4029px&resize=1440%2C810",
+    "keywords": [],
     "url": "https://www.hollywoodreporter.com/movies/movie-news/ben-affleck-ai-netflix-movie-animals-1236717919/",
     "urls": [
       {
@@ -75,6 +85,10 @@
     "publishedAt": "2026.10.02",
     "hue": 300,
     "image": "https://techcrunch.com/wp-content/uploads/2026/10/Virtual-Try-On.jpg?resize=1200,675",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
   }
 ]

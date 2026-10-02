@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.17",
     "hue": 200,
     "image": "https://cdn.meshy.ai/ti_w:3840,q:75/landing-assets/blog/meshy-7/meshy-7-cover.webp",
+    "keywords": [
+      "3D",
+      "Meshy"
+    ],
     "url": "https://www.meshy.ai/blog/meshy-7-3d-geometry-alignment-benchmark"
   },
   {
@@ -21,6 +25,10 @@
     "publishedAt": "2026.08.17",
     "hue": 290,
     "image": "https://cdn.sanity.io/images/cl7b1q1i/production/6b98817a52aedcc909a1800e1ac42c82ed80d8bc-3840x2160.jpg?w=2400&fit=max&auto=format",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://www.suno.com/blog/introducing-studio-2-0"
   },
   {
@@ -33,6 +41,9 @@
     "publishedAt": "2026.08.17",
     "hue": 260,
     "image": "https://cdn.sanity.io/images/2ylxvaa2/production/20cd41cc64ee58e59bcd28dee020dae14935f0a7-1920x1080.png?w=2048&fm=webp&q=75&fit=max",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://lumalabs.ai/news/how-foid-ai-studio-uses-luma-to-direct-without-limits"
   }
 ]

@@ -9,6 +9,11 @@
     "publishedAt": "2026.05.21",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/48397/images/6a0dbf41894c9/contain_1200x630.jpg",
+    "keywords": [
+      "VFX",
+      "Blender",
+      "MCP"
+    ],
     "url": "https://80.lv/articles/new-open-source-physics-engine-for-blender-released",
     "urls": [
       {
@@ -27,6 +32,10 @@
     "publishedAt": "2026.05.21",
     "hue": 35,
     "image": "https://images.techeblog.com/wp-content/uploads/2026/05/19235927/google-gemini-omni-model.jpg",
+    "keywords": [
+      "영상",
+      "Google"
+    ],
     "url": "https://www.techeblog.com/google-gemini-omni-model-explained-demos/",
     "urls": [
       {
@@ -45,6 +54,9 @@
     "publishedAt": "2026.05.21",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-1480808838.jpg?resize=1200,800",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://techcrunch.com/2026/05/20/stability-ai-release-a-new-audio-model-that-can-create-six-minute-songs/"
   },
   {
@@ -57,6 +69,12 @@
     "publishedAt": "2026.05.21",
     "hue": 260,
     "image": "https://www.redsharknews.com/hubfs/google%20io%202026.jpg",
+    "keywords": [
+      "영상",
+      "Google",
+      "Gemini",
+      "Adobe"
+    ],
     "url": "https://www.redsharknews.com/google-io-2026-biggest-announcements-creatives",
     "urls": [
       {
@@ -75,6 +93,9 @@
     "publishedAt": "2026.05.21",
     "hue": 10,
     "image": "https://img.taipeitimes.com/images/2026/05/20/P12-260520-301.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.taipeitimes.com/News/feat/archives/2026/05/20/2003857632"
   },
   {
@@ -87,6 +108,13 @@
     "publishedAt": "2026.05.21",
     "hue": 50,
     "image": "https://nofilmschool.com/media-library/image.webp?id=66768672&width=1200&height=600&coordinates=144%2C0%2C144%2C0",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "Adobe",
+      "Photoshop",
+      "Premiere"
+    ],
     "url": "https://nofilmschool.com/adobe-creativity-connector-for-gemini",
     "urls": [
       {

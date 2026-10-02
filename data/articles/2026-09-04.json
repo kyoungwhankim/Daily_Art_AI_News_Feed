@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.04",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/49914/images/6a976fc9388c1/contain_1200x630.jpg",
+    "keywords": [
+      "VFX",
+      "Unity"
+    ],
     "url": "https://80.lv/articles/how-agents-404-devs-created-a-prototype-and-gained-120k-wishlists-in-two-months",
     "urls": [
       {
@@ -27,6 +31,10 @@
     "publishedAt": "2026.09.04",
     "hue": 220,
     "image": "https://cdn.mos.cms.futurecdn.net/B3ULyP68EiAPD55fRNR8S7-2560-80.jpg",
+    "keywords": [
+      "NVIDIA",
+      "DLSS"
+    ],
     "url": "https://www.pcgamer.com/hardware/graphics-cards/dlss-5-can-be-jammed-into-almost-any-game-now-so-ive-been-playing-fm26-with-neural-rendered-little-computer-people-because-thats-just-what-i-do/"
   },
   {
@@ -39,6 +47,9 @@
     "publishedAt": "2026.09.04",
     "hue": 340,
     "image": "https://cdn.mos.cms.futurecdn.net/iPh5JZjpBhqEQybSWb8QXo-1920-80.jpg",
+    "keywords": [
+      "DLSS"
+    ],
     "url": "https://www.gamesradar.com/games/survival/no-mans-sky-fan-adds-nvidias-dlss-5-to-the-game-hello-games-programmer-worries-the-ai-filter-could-ruin-its-unique-look-and-feel/"
   },
   {
@@ -51,6 +62,9 @@
     "publishedAt": "2026.09.04",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/50041/images/6a99d4989956c/contain_1200x630.jpg",
+    "keywords": [
+      "법·정책"
+    ],
     "url": "https://80.lv/articles/artstation-will-block-ai-crawlers-from-scraping-artists-work",
     "urls": [
       {
@@ -69,6 +83,7 @@
     "publishedAt": "2026.09.04",
     "hue": 30,
     "image": "https://news.adobe.com/news/2026/09/media_1c82548aa127fcde4032bb951cafa40918b26b5e2.jpg",
+    "keywords": [],
     "url": "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo"
   },
   {
@@ -81,6 +96,9 @@
     "publishedAt": "2026.09.04",
     "hue": 200,
     "image": "https://cdn.mos.cms.futurecdn.net/rTBSuGGDXhUBQ4VysuHrcN-2560-80.jpg",
+    "keywords": [
+      "AI 미사용 선언"
+    ],
     "url": "https://www.pcgamer.com/gaming-industry/game-development/cd-projekt-red-isnt-planning-to-rely-on-ai-making-complete-games-and-will-still-be-predominantly-using-people-for-the-witcher-4-and-beyond/"
   },
   {
@@ -93,6 +111,10 @@
     "publishedAt": "2026.09.04",
     "hue": 290,
     "image": "https://d3phaj0sisr2ct.cloudfront.net/site/research/gwm-worlds-2/images/gwm-worlds-2-card.webp",
+    "keywords": [
+      "VFX",
+      "Runway"
+    ],
     "url": "https://runway.com/research/introducing-gwm-worlds-2"
   },
   {
@@ -105,6 +127,12 @@
     "publishedAt": "2026.09.04",
     "hue": 50,
     "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2182154299.jpg?w=1024",
+    "keywords": [
+      "음성",
+      "3D",
+      "VFX",
+      "OpenAI"
+    ],
     "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/"
   }
 ]

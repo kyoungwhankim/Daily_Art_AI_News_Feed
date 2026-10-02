@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.18",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/50253/images/6aac07302ae13/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "텍스처"
+    ],
     "url": "https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans"
   },
   {
@@ -21,6 +25,10 @@
     "publishedAt": "2026.09.18",
     "hue": 30,
     "image": "https://images.pushsquare.com/eb8a083a08591/japan-game-development-ai.900x.jpg",
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://automaton-media.com/en/news/over-85-of-japanese-game-developers-use-generative-ai-in-game-development-2026-cesa-survey-shows-an-increase-from-last-years-51/",
     "urls": [
       {
@@ -43,6 +51,9 @@
     "publishedAt": "2026.09.18",
     "hue": 20,
     "image": "https://www.pcguide.com/wp-content/uploads/2026/09/Tokyo-Game-Show-2026-banner.jpg",
+    "keywords": [
+      "행사·컨퍼런스"
+    ],
     "url": "https://finance.biggo.com/news/b6a75d43-6a0e-459e-a1b5-7154d83c617d"
   },
   {
@@ -55,6 +66,9 @@
     "publishedAt": "2026.09.18",
     "hue": 270,
     "image": "https://www.androidheadlines.com/wp-content/uploads/2026/09/Google-DeepMind-Institute-AGI-platform-1420x790.webp",
+    "keywords": [
+      "Google"
+    ],
     "url": "https://www.therundown.ai/news/artificial-intelligence/google-deepmind-launches-think-tank-to-prepare-society-for-agi",
     "urls": [
       {
@@ -77,6 +91,11 @@
     "publishedAt": "2026.09.18",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2026/09/Claude-1920x1080-1.jpeg",
+    "keywords": [
+      "Google",
+      "Anthropic",
+      "Claude"
+    ],
     "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/"
   },
   {
@@ -89,6 +108,7 @@
     "publishedAt": "2026.09.18",
     "hue": 60,
     "image": "https://techcrunch.com/wp-content/uploads/2026/09/Restyle_dopamine.png?w=1024",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/09/17/pinterest-teases-a-new-restyle-feature-that-lets-you-redesign-your-room-with-ai/"
   }
 ]

@@ -13,11 +13,14 @@ async function fetchJson(url, init) {
   return r.json();
 }
 async function loadArticles() {
-  const index = await fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' });
+  const [index, keywords] = await Promise.all([
+    fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' }),
+    fetchJson(`${DATA_BASE}keywords.json`, { cache: 'no-cache' }),   // 탭별 서브 카테고리 키워드 목록
+  ]);
   const days = await Promise.all(
     index.dates.map(d => fetchJson(`${DATA_BASE}${d.file}?v=${d.rev}`))
   );
-  return days.flat();   // index는 최신순 → 기사도 최신 날짜부터
+  return { articles: days.flat(), keywordTabs: keywords.tabs };   // index는 최신순 → 기사도 최신 날짜부터
 }
 
 /* ---------- date helpers ---------- */
@@ -66,6 +69,20 @@ function tabCounts(articles) {
   articles.forEach(a => { counts[a.tab] = (counts[a.tab] || 0) + 1; });
   return counts;
 }
+// 서브 카테고리: data/keywords.json의 탭별 목록 (목록 순서) 중
+// 탭 안에서 MIN_SUBCAT_ARTICLES개 이상 기사에 붙은 키워드만 (5개 이하는 너무 지엽적이라 숨김)
+const MIN_SUBCAT_ARTICLES = 6;
+function subCategoriesFor(keywordTabs, articles, tabId) {
+  const counts = new Map();
+  articles.forEach(a => {
+    if (a.tab !== tabId) return;
+    (a.keywords || []).forEach(k => counts.set(k, (counts.get(k) || 0) + 1));
+  });
+  return ((keywordTabs && keywordTabs[tabId]) || [])
+    .map(k => ({ label: k.label, count: counts.get(k.label) || 0 }))
+    .filter(k => k.count >= MIN_SUBCAT_ARTICLES);
+}
+
 function isArticleNew(a) {
   return daysAgo(a.publishedAt) <= 2;      // auto: today, yesterday, 2 days ago
 }
@@ -225,7 +242,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome }) {
+function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome, subcats, keyword, onKeyword }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
@@ -257,13 +274,44 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
             ))}
           </div>
         )}
+        {!viewSaved && subcats && (
+          <SubCategoryBar items={subcats} total={counts[active] || 0} active={keyword} onChange={onKeyword} />
+        )}
       </div>
     </nav>
   );
 }
 
+/* ---------- sub-categories ---------- */
+function SubCategoryBar({ items, total, active, onChange }) {
+  if (!items.length) return null;
+  return (
+    <div className="subcats" role="tablist" aria-label="서브 카테고리">
+      <button
+        role="tab"
+        aria-selected={!active}
+        className={`chip subcat ${!active ? 'active' : ''}`}
+        onClick={() => onChange(null)}
+      >
+        전체 <span className="subcat-count">{total}</span>
+      </button>
+      {items.map(it => (
+        <button
+          key={it.label}
+          role="tab"
+          aria-selected={active === it.label}
+          className={`chip subcat ${active === it.label ? 'active' : ''}`}
+          onClick={() => onChange(active === it.label ? null : it.label)}
+        >
+          {it.label} <span className="subcat-count">{it.count}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
 /* ---------- feed meta ---------- */
-function FeedMeta({ activeTab, count, viewSaved, query }) {
+function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
   if (query) {
@@ -275,7 +323,7 @@ function FeedMeta({ activeTab, count, viewSaved, query }) {
   } else {
     const t = TABS.find(t => t.id === activeTab);
     title = t.label;
-    sub = `${today} · ${count}개 기사`;
+    sub = keyword ? `${today} · ${keyword} · ${count}개 기사` : `${today} · ${count}개 기사`;
   }
   const activeDesc = (!query && !viewSaved)
     ? (TABS.find(t => t.id === activeTab) || {}).desc
@@ -295,7 +343,7 @@ function FeedMeta({ activeTab, count, viewSaved, query }) {
 }
 
 /* ---------- modal ---------- */
-function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArticles }) {
+function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArticles, onSelectKeyword }) {
   const bodyRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -421,6 +469,18 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
               </a>
             ))}
           </div>
+          {(() => {
+            const kws = article.keywords || [];
+            return kws.length > 0 && (
+              <div className="modal-keywords">
+                {kws.map(k => (
+                  <button key={k} type="button" className="modal-keyword" onClick={() => onSelectKeyword(article.tab, k)}>
+                    #{k}
+                  </button>
+                ))}
+              </div>
+            );
+          })()}
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
             <div dangerouslySetInnerHTML={{ __html: article.body || '' }} />
@@ -464,8 +524,9 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
 }
 
 /* ---------- date grouped feed with pagination ---------- */
-function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query }) {
-  const [showAll, setShowAll] = useState(false);
+function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query, expandAll }) {
+  const [showAllState, setShowAll] = useState(false);
+  const showAll = showAllState || expandAll;   // 서브 카테고리 선택 시에는 지난 기사까지 모두 표시
 
   // group by publishedAt
   const groups = useMemo(() => {
@@ -636,7 +697,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('games');
   const [viewHome, setViewHome] = useState(true);
   const [query, setQuery] = useState('');
+  const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
+  const [keywordTabs, setKeywordTabs] = useState(null);
   const [dataState, setDataState] = useState('loading');   // 'loading' | 'ready' | 'error'
   const [open, setOpen] = useState(null);
 
@@ -644,9 +707,10 @@ function App() {
   useEffect(() => {
     let cancelled = false;
     loadArticles()
-      .then(list => {
+      .then(({ articles: list, keywordTabs }) => {
         if (cancelled) return;
         setArticles(list);
+        setKeywordTabs(keywordTabs);
         setDataState('ready');
         // ?article=<id> deep link → open once the data is in
         try {
@@ -709,7 +773,7 @@ function App() {
     setLoading(true);
     const t = setTimeout(() => setLoading(false), 280);
     return () => clearTimeout(t);
-  }, [activeTab, viewSaved]);
+  }, [activeTab, viewSaved, activeKeyword]);
 
   const toggleSave = (id) => {
     setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
@@ -717,6 +781,12 @@ function App() {
   const toggleTheme = () => {
     setTheme(t => t === 'dark' ? 'light' : 'dark');
   };
+
+  // 서브 카테고리 목록 (현재 탭)
+  const subcats = useMemo(() => subCategoriesFor(keywordTabs, articles, activeTab), [keywordTabs, articles, activeTab]);
+  const activeKeyword = subcats.some(c => c.label === keyword) ? keyword : null;
+  const showSubcats = !viewHome && !viewSaved && !query.trim() && dataState === 'ready';
+  const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewSaved(false); setViewHome(false); setQuery(''); };
 
   // filter pipeline
   let visible = articles;
@@ -731,6 +801,7 @@ function App() {
     );
   } else {
     visible = visible.filter(a => a.tab === activeTab);
+    if (activeKeyword) visible = visible.filter(a => (a.keywords || []).includes(activeKeyword));
   }
 
   if (false) {
@@ -754,12 +825,15 @@ function App() {
       {!viewHome && (
         <Tabs
           active={activeTab}
-          onChange={(id) => { setActiveTab(id); setViewSaved(false); setViewHome(false); setQuery(''); }}
+          onChange={goTab}
           articles={articles}
           savedCount={saved.length}
           viewSaved={viewSaved}
           onClearSaved={() => setViewSaved(false)}
           viewHome={viewHome}
+          subcats={showSubcats ? subcats : null}
+          keyword={activeKeyword}
+          onKeyword={setKeyword}
         />
       )}
       
@@ -769,12 +843,13 @@ function App() {
           count={visible.length}
           viewSaved={viewSaved}
           query={query.trim()}
+          keyword={activeKeyword}
         />
       )}
       <main className="feed">
         {viewHome ? (
           <HomeView
-            onSelectTab={(id) => { setActiveTab(id); setViewHome(false); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+            onSelectTab={(id) => { goTab(id); window.scrollTo({ top: 0 }); }}
             onOpenArticle={setOpen}
             articles={articles}
           />
@@ -799,6 +874,7 @@ function App() {
             onToggleSave={toggleSave}
             saved={saved}
             query={query.trim()}
+            expandAll={!!activeKeyword}
           />
         ) : (
           <div className="grid">
@@ -829,6 +905,7 @@ function App() {
           onToggleSave={toggleSave}
           onOpen={setOpen}
           allArticles={articles}
+          onSelectKeyword={(tab, k) => { setOpen(null); goTab(tab); setKeyword(k); window.scrollTo({ top: 0 }); }}
         />
       )}
     </div>

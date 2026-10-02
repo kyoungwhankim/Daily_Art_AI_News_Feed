@@ -9,6 +9,9 @@
     "publishedAt": "2026.06.08",
     "hue": 30,
     "image": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2026/06/07/crazy-taxi-world-tour-generative-ai-content-disclosure_feature.jpg",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://www.shacknews.com/article/149519/crazy-taxi-world-tour-generative-ai-content-disclosure",
     "urls": [
       {
@@ -27,6 +30,9 @@
     "publishedAt": "2026.06.08",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/06/crazy-taxi-soda-cans-1200x675.jpg",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://kotaku.com/why-do-you-need-generative-ai-to-make-crazy-taxi-2000703713"
   },
   {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.06.08",
     "hue": 270,
     "image": "https://cdn.dailymaverick.co.za/i/cgrRitL3Lh5A83Cx9TBBopL1WOI=/800x0/smart/filters:strip_exif()/file/attachments/orphans/avel-chuklanov_606981.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.dailymaverick.co.za/article/2026-06-07-crossed-wires-ai-is-disrupting-the-hallowed-ground-of-filmmaking/"
   }
 ]

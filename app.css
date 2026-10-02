@@ -260,7 +260,7 @@ html::before {
 }
 .tab.active {
   color: var(--ink);
-  border-bottom-color: var(--accent);
+  border-bottom-color: transparent;   /* 밑줄 없음 — 아래 서브 카테고리 줄과 겹치지 않게 */
   font-weight: 700;
 }
 .tab.active .count { color: var(--accent-strong); background: var(--accent-soft); border-color: var(--accent); }
@@ -307,6 +307,22 @@ html::before {
 .chip:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
 .chip:active { transform: translateY(1px); box-shadow: none; }
 .chip.active { background: var(--accent); color: var(--card); box-shadow: var(--shadow-pop-sm); }
+
+/* sub-categories (keyword chips) — 메뉴의 메인 탭 바로 아래 줄 */
+.subcats {
+  display: flex; flex-wrap: wrap; gap: 6px 8px;
+  margin: 0; padding: 12px 0 14px;          /* 메인 탭과 같은 왼쪽 시작선 */
+  justify-content: flex-start;
+  border-top: 1.5px solid var(--hairline);
+}
+.chip.subcat { padding: 4px 11px; font-size: 12.5px; border-width: 1.5px; }
+.subcat-count { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip.subcat.active .subcat-count { color: inherit; opacity: .8; }
+@media (max-width: 640px) {
+  .subcats { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .subcats::-webkit-scrollbar { display: none; }
+  .chip.subcat { flex: 0 0 auto; }
+}
 
 /* feed grid */
 .feed { padding: 0 40px 80px; max-width: 1280px; margin: 0 auto; width: 100%; }
@@ -1372,3 +1388,13 @@ mark {
 @media (max-width: 960px) {
   .home-ticker-head { padding: 0 24px 12px; }
 }
+
+/* modal keyword tags */
+.modal-keywords { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 20px; }
+.modal-keyword {
+  font: inherit; font-size: 12px; font-weight: 500;
+  padding: 3px 10px; border-radius: 999px;
+  border: 1.5px solid var(--accent); background: var(--accent-soft); color: var(--accent-strong);
+  cursor: pointer;
+}
+.modal-keyword:hover { background: var(--accent); color: var(--card); }

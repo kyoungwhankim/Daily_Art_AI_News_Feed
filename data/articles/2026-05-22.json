@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.22",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260521_Maya20271_f-610x305.jpg",
+    "keywords": [
+      "Autodesk"
+    ],
     "url": "https://www.cgchannel.com/2026/05/autodesk-releases-maya-2027-1/"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.05.22",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260521_Photoshop277_Remove-610x305.jpg",
+    "keywords": [
+      "Adobe",
+      "Photoshop"
+    ],
     "url": "https://www.cgchannel.com/2026/05/adobe-releases-photoshop-27-7/"
   },
   {
@@ -33,6 +40,9 @@
     "publishedAt": "2026.05.22",
     "hue": 195,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260521_3dsMax20271_f-610x305.jpg",
+    "keywords": [
+      "Autodesk"
+    ],
     "url": "https://www.cgchannel.com/2026/05/autodesk-releases-3ds-max-2027-1/"
   },
   {
@@ -45,6 +55,7 @@
     "publishedAt": "2026.05.22",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/139409/88991/introducing-fl-agent_l1200.jpg",
+    "keywords": [],
     "url": "https://www.pocketgamer.biz/firstlook-launches-ai-agent-to-unify-player-data-and-game-marketing-workflows/"
   },
   {
@@ -57,6 +68,10 @@
     "publishedAt": "2026.05.22",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2023/10/spotify-app-GettyImages-1689920063-e1702479483636.jpeg?resize=1200,676",
+    "keywords": [
+      "음악·사운드",
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/"
   },
   {
@@ -69,6 +84,12 @@
     "publishedAt": "2026.05.22",
     "hue": 280,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/Spotify-Audiobooks-Ux.jpg?resize=1200,675",
+    "keywords": [
+      "음악·사운드",
+      "음성",
+      "ElevenLabs",
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/05/21/spotify-launches-an-elevenlabs-powered-audiobook-creation-tool/"
   },
   {
@@ -81,6 +102,7 @@
     "publishedAt": "2026.05.22",
     "hue": 260,
     "image": "https://mma.prnewswire.com/media/2985794/SIGGRAPH_2025_Art_Gallery.jpg?p=facebook",
+    "keywords": [],
     "url": "https://www.prnewswire.com/news-releases/siggraph-2026-explores-the-convergence-of-art-science-and-technology-302779636.html",
     "urls": [
       {

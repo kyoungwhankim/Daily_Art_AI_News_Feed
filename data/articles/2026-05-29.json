@@ -9,6 +9,10 @@
     "publishedAt": "2026.05.29",
     "hue": 25,
     "image": "https://cdn.80.lv/api/upload/meta/48503/images/6a15daba8220b/contain_1200x630.png",
+    "keywords": [
+      "VFX",
+      "Unreal Engine"
+    ],
     "url": "https://80.lv/articles/introducing-nwiro-ai-pro-the-ultimate-unreal-engine-copilot",
     "urls": [
       {
@@ -27,6 +31,7 @@
     "publishedAt": "2026.05.29",
     "hue": 215,
     "image": "https://architosh.com/wp-content/uploads/2026/05/V-Ray_Veras_Hero_after_03.jpg",
+    "keywords": [],
     "url": "https://architosh.com/2026/05/enscape-v-ray-and-corona-get-veras-ai-integration/",
     "urls": [
       {
@@ -45,6 +50,10 @@
     "publishedAt": "2026.05.29",
     "hue": 270,
     "image": "https://eleven-public-cdn.elevenlabs.io/payloadcms/8kl37ad170a-16_9%20(1).webp",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://elevenlabs.io/blog/introducing-dubbing-v2",
     "urls": [
       {
@@ -63,6 +72,7 @@
     "publishedAt": "2026.05.29",
     "hue": 350,
     "image": "https://nofilmschool.com/media-library/steven-spielberg-draws-a-hard-line-on-ai-there-is-no-substitute-for-the-soul.webp?id=66831992&width=1245&height=700&quality=50&coordinates=0%2C0%2C0%2C1",
+    "keywords": [],
     "url": "https://nofilmschool.com/steven-spielberg-takes-on-ai"
   }
 ]

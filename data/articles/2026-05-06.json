@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.06",
     "hue": 220,
     "image": "https://media.pocketgamer.biz/images/139138/88879/unity-ai_l1200.jpg",
+    "keywords": [
+      "Unity"
+    ],
     "url": "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
     "urls": [
       {
@@ -27,6 +30,9 @@
     "publishedAt": "2026.05.06",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/139136/88877/mindtrail_l1200.jpg",
+    "keywords": [
+      "투자·인수"
+    ],
     "url": "https://www.pocketgamer.biz/turkish-mobile-studio-mindtail-raises-2m-for-ai-driven-puzzle-games/"
   },
   {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.05.06",
     "hue": 200,
     "image": "https://media.pocketgamer.biz/images/139138/88879/unity-ai_l1200.jpg",
+    "keywords": [
+      "코딩"
+    ],
     "url": "https://www.pocketgamer.biz/unity-launches-open-beta-for-unity-ai-game-development-tools/",
     "urls": [
       {
@@ -57,6 +66,9 @@
     "publishedAt": "2026.05.06",
     "hue": 350,
     "image": "https://cdn.mos.cms.futurecdn.net/8Z4JtTHVUMF5C9W9f5VNUi.jpg",
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://www.creativebloq.com/entertainment/movies-tv-shows/does-the-oscars-ai-ban-really-mean-anything"
   },
   {
@@ -69,6 +81,7 @@
     "publishedAt": "2026.05.06",
     "hue": 70,
     "image": "https://cdn.mos.cms.futurecdn.net/q5FNX6M5dVYaw8xwRwV2Dh.jpg",
+    "keywords": [],
     "url": "https://www.creativebloq.com/entertainment/movies-tv-shows/how-a-devils-wears-prada-2-artist-nailed-ai-slop"
   },
   {
@@ -81,6 +94,10 @@
     "publishedAt": "2026.05.06",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2025/07/Mati-Staniszewski_SXSW.jpg",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/"
   }
 ]

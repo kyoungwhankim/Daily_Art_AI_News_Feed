@@ -9,6 +9,9 @@
     "publishedAt": "2026.09.17",
     "hue": 20,
     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-16-at-4.19.06-PM.png?quality=90&strip=all&crop=3.9791086350975%2C0%2C92.041782729805%2C100&w=1200",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review"
   },
   {
@@ -21,6 +24,7 @@
     "publishedAt": "2026.09.17",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/post/41625/6aaa3f6a95b85.jpg",
+    "keywords": [],
     "url": "https://80.lv/articles/microsoft-publishes-draft-document-outlining-rules-for-ai-training"
   }
 ]

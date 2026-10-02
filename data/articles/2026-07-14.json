@@ -8,6 +8,7 @@
     "source": "CG Channel",
     "publishedAt": "2026.07.14",
     "hue": 200,
+    "keywords": [],
     "url": "https://www.cgchannel.com/2026/07/esri-releases-cityengine-2026/",
     "urls": [
       {
@@ -26,6 +27,9 @@
     "publishedAt": "2026.07.14",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2023/11/GettyImages-1778706504.jpg?resize=1200,783",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/"
   },
   {
@@ -38,6 +42,10 @@
     "publishedAt": "2026.07.14",
     "hue": 350,
     "image": "https://pmecdn.protonweb.com/image-transformation/?s=c&image=images/f_auto,q_auto/v1768254581/wp-pme/instagram-leak_blog_cover_90307f602e/instagram-leak_blog_cover_90307f602e.png",
+    "keywords": [
+      "2D·이미지",
+      "Meta"
+    ],
     "url": "https://proton.me/blog/meta-ai-image-generator-muse",
     "urls": [
       {
@@ -56,6 +64,11 @@
     "publishedAt": "2026.07.14",
     "hue": 220,
     "image": "https://www.geeky-gadgets.com/wp-content/uploads/2026/07/gemini-pro-delay.jpg",
+    "keywords": [
+      "3D",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://www.geeky-gadgets.com/gemini-pro-scraps-base-model/"
   }
 ]

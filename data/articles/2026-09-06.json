@@ -9,6 +9,7 @@
     "publishedAt": "2026.09.06",
     "hue": 30,
     "image": "https://expert-egret-407.convex.cloud/api/storage/c3187aa0-030e-411e-b940-8a6dd29dc891",
+    "keywords": [],
     "url": "https://www.stork.ai/blog/astra-built-a-game-you-can-play-it-now"
   },
   {
@@ -21,6 +22,10 @@
     "publishedAt": "2026.09.06",
     "hue": 200,
     "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/NVIDIA-RTX-4090-Founders-Edition-Image-Source-Nvidia.jpg.jpeg",
+    "keywords": [
+      "NVIDIA",
+      "DLSS"
+    ],
     "url": "https://www.notebookcheck.net/Nvidia-confirms-DLSS-5-is-coming-to-RTX-40-series-GPUs-but-Ada-Lovelace-owners-have-no-release-date-yet.1388828.0.html"
   },
   {
@@ -33,6 +38,9 @@
     "publishedAt": "2026.09.06",
     "hue": 290,
     "image": "https://static.wavespeed.ai/static/2026-07-21/20260721112711_knz3nwct.webp",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://wavespeed.ai/blog/ai-models/kling-o3-4k-video-edit-video-reference/",
     "urls": [
       {
@@ -51,6 +59,9 @@
     "publishedAt": "2026.09.06",
     "hue": 260,
     "image": "https://static.wavespeed.ai/static/2026-07-21/20260721112711_knz3nwct.webp",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://wavespeed.ai/blog/ai-models/bria-fibo-1-5-api/",
     "urls": [
       {
@@ -73,6 +84,10 @@
     "publishedAt": "2026.09.06",
     "hue": 320,
     "image": "https://static.wavespeed.ai/static/2026-07-21/20260721112711_knz3nwct.webp",
+    "keywords": [
+      "2D·이미지",
+      "Meta"
+    ],
     "url": "https://wavespeed.ai/blog/ai-models/meta-muse-image-api/"
   }
 ]

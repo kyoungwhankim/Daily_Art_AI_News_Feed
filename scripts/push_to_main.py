@@ -54,13 +54,14 @@ def verify_on_main() -> None:
 
 
 def commit_changes(upload_date: str) -> bool:
-    """data/ (날짜별 기사 파일 + index.json)의 변경사항을 stage하고 commit한다.
+    """data/ (날짜별 기사 파일 + index.json + keywords.json)와 키워드 규칙
+    (scripts/keyword_rules.json — add_keyword.py가 갱신)의 변경사항을 stage하고 commit한다.
 
     Returns:
         True: 새 commit이 생성됨
         False: 변경사항이 없어서 commit 생략됨
     """
-    run(['git', 'add', 'data'])
+    run(['git', 'add', 'data', 'scripts/keyword_rules.json'])
     status = run(['git', 'diff', '--cached', '--stat'])
     print('Staged changes:', flush=True)
     print(status.stdout or '(none)', flush=True)

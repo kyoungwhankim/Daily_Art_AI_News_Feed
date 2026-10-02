@@ -9,6 +9,11 @@
     "publishedAt": "2026.05.28",
     "hue": 220,
     "image": "https://d3phaj0sisr2ct.cloudfront.net/site/images/mcp/intro-mcp-thumbnial.webp",
+    "keywords": [
+      "영상",
+      "Claude",
+      "MCP"
+    ],
     "url": "https://runwayml.com/news/mcp",
     "urls": [
       {
@@ -27,6 +32,10 @@
     "publishedAt": "2026.05.28",
     "hue": 270,
     "image": "https://d3phaj0sisr2ct.cloudfront.net/site/assets/group-19.webp",
+    "keywords": [
+      "영상",
+      "Runway"
+    ],
     "url": "https://runwayml.com/news/project-luxo",
     "urls": [
       {
@@ -45,6 +54,10 @@
     "publishedAt": "2026.05.28",
     "hue": 60,
     "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024",
+    "keywords": [
+      "음악·사운드",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
     "urls": [
       {
@@ -63,6 +76,9 @@
     "publishedAt": "2026.05.28",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2020/06/GettyImages-1149449083.jpg?resize=1200,800",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/"
   }
 ]

@@ -9,6 +9,10 @@
     "publishedAt": "2026.07.30",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/49379/images/6a692d3652c1f/contain_1200x630.jpg",
+    "keywords": [
+      "애니메이션",
+      "영상"
+    ],
     "url": "https://80.lv/articles/anishort-unifies-scriptwriting-storyboarding-video-generation-in-one-workflow",
     "urls": [
       {
@@ -27,6 +31,9 @@
     "publishedAt": "2026.07.30",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/07/260729_ReallusionRTXRender_CharacterCreator_iClone_f-960x480.jpg",
+    "keywords": [
+      "Reallusion"
+    ],
     "url": "https://www.cgchannel.com/2026/07/try-the-open-beta-of-rtx-render-for-character-creator-and-iclone/"
   },
   {
@@ -38,6 +45,9 @@
     "source": "CG Channel",
     "publishedAt": "2026.07.30",
     "hue": 120,
+    "keywords": [
+      "Blender"
+    ],
     "url": "https://www.cgchannel.com/2026/07/physical-atmosphere-2-generates-insanely-detailed-blender-skies/"
   },
   {
@@ -50,6 +60,10 @@
     "publishedAt": "2026.07.30",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltb7ba5a606cc7bc51/6a69d3cc32b7ca490195fb0e/Wilson_Header.png",
+    "keywords": [
+      "AI 사용 논란",
+      "고용·노조"
+    ],
     "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
   },
   {
@@ -62,6 +76,9 @@
     "publishedAt": "2026.07.30",
     "hue": 340,
     "image": "https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/size/w1200/2026/07/shutterstock_2267663029.jpg",
+    "keywords": [
+      "AI 미사용 선언"
+    ],
     "url": "https://aftermath.site/video-games-no-ai"
   },
   {
@@ -73,6 +90,9 @@
     "source": "The Manila Times",
     "publishedAt": "2026.07.30",
     "hue": 280,
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://www.manilatimes.net/2026/07/28/tmt-newswire/pr-newswire/oiioii-ai-the-worlds-first-ai-animation-agent-platform-launches-in-the-us/2392667"
   }
 ]

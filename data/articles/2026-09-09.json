@@ -9,6 +9,9 @@
     "publishedAt": "2026.09.09",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt079cb2c6910544ff/6aa03816be8d741675b4d3d6/New_Project(35).png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator",
     "urls": [
       {
@@ -27,6 +30,7 @@
     "publishedAt": "2026.09.09",
     "hue": 260,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260908_DaVinciResolve211_MCPServer-960x480.jpg",
+    "keywords": [],
     "url": "https://www.cgchannel.com/2026/09/blackmagic-design-releases-resolve-21-1/",
     "urls": [
       {
@@ -45,6 +49,9 @@
     "publishedAt": "2026.09.09",
     "hue": 290,
     "image": "https://nerdbot.com/wp-content/uploads/2026/09/image-44.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://nerdbot.com/2026/09/08/minimax-h3-all-in-one-ai-image-and-video-generation-platform/"
   }
 ]

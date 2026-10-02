@@ -8,6 +8,10 @@
     "source": "VaaSBlock",
     "publishedAt": "2026.06.17",
     "hue": 10,
+    "keywords": [
+      "고용·노조",
+      "Microsoft"
+    ],
     "url": "https://www.vaasblock.com/news/microsoft-xbox-layoffs-ai-game-development-2026/"
   },
   {
@@ -20,6 +24,11 @@
     "publishedAt": "2026.06.17",
     "hue": 340,
     "image": "https://www.techspot.com/images2/news/bigimage/2026/06/2026-06-16-image.jpg",
+    "keywords": [
+      "고용·노조",
+      "투자·인수",
+      "Microsoft"
+    ],
     "url": "https://www.techspot.com/news/112778-xbox-closing-ninja-theory-double-fine-compulsion-may.html"
   },
   {
@@ -32,6 +41,10 @@
     "publishedAt": "2026.06.17",
     "hue": 0,
     "image": "https://images.pushsquare.com/2c3e7435a1a4d/games-industry-layoffs.900x.jpg",
+    "keywords": [
+      "고용·노조",
+      "Sony"
+    ],
     "url": "https://www.pushsquare.com/news/2026/06/rumour-gaming-industry-bloodbath-imminent-as-sony-microsoft-and-more-brace-for-mass-layoffs"
   },
   {
@@ -44,6 +57,11 @@
     "publishedAt": "2026.06.17",
     "hue": 290,
     "image": "https://www.redsharknews.com/hubfs/Object%20Matte%20in%20After%20Effects%201080px.jpg",
+    "keywords": [
+      "Adobe",
+      "Photoshop",
+      "Premiere"
+    ],
     "url": "https://www.redsharknews.com/adobe-creative-cloud-june-2026-update"
   }
 ]

@@ -8,6 +8,10 @@
     "source": "AIbase",
     "publishedAt": "2026.04.27",
     "hue": 200,
+    "keywords": [
+      "3D",
+      "텍스처"
+    ],
     "url": "https://www.aibase.com/news/27393",
     "urls": [
       {
@@ -26,6 +30,11 @@
     "publishedAt": "2026.04.27",
     "hue": 200,
     "image": "https://adsknews.autodesk.com/app/uploads/2026/04/AD_Wonder3D_boba-tea-wizard-1-1024x558.png",
+    "keywords": [
+      "3D",
+      "영상",
+      "Autodesk"
+    ],
     "url": "https://adsknews.autodesk.com/en/news/autodesk-flow-studio-launches-wonder-3d-gen-ai-model-to-help-creators-make-3d-characters-and-objects-faster-and-easier/"
   },
   {
@@ -37,6 +46,11 @@
     "source": "Kotaku",
     "publishedAt": "2026.04.27",
     "hue": 345,
+    "keywords": [
+      "AI 사용 논란",
+      "영상",
+      "2D·이미지"
+    ],
     "url": "https://kotaku.com/ff14-fanfest-panel-koji-fox-ai-art-square-enix-2000690711",
     "urls": [
       {
@@ -55,6 +69,10 @@
     "publishedAt": "2026.04.27",
     "hue": 30,
     "image": "https://s.yimg.com/ny/api/res/1.2/caORjw3ZYOGvOMNf5rHlQg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/img_1771_7378.jpg",
+    "keywords": [
+      "법·정책",
+      "AI 미사용 선언"
+    ],
     "url": "https://www.engadget.com/gaming/panic-says-the-playdate-catalog-wont-accept-games-made-with-generative-ai-160615022.html",
     "urls": [
       {
@@ -73,6 +91,10 @@
     "publishedAt": "2026.04.27",
     "hue": 200,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/04/260427_Affinity31_f.jpg",
+    "keywords": [
+      "2D·이미지",
+      "Claude"
+    ],
     "url": "https://www.cgchannel.com/2026/04/canva-releases-affinity-3-2/"
   },
   {
@@ -85,6 +107,11 @@
     "publishedAt": "2026.04.27",
     "hue": 290,
     "image": "https://gizmodo.com/app/uploads/2026/04/SamAltman_surfing_like_zuck_AI-generated-1200x675.jpg",
+    "keywords": [
+      "2D·이미지",
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://gizmodo.com/openai-unveils-new-image-generator-to-usher-in-an-ai-slop-renaissance-2000749159"
   },
   {
@@ -97,6 +124,9 @@
     "publishedAt": "2026.04.27",
     "hue": 290,
     "image": "https://mma.prnewswire.com/media/2959740/NEWTLLOGO.jpg?p=facebook",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.prweb.com/releases/twelvelabs-unveils-the-next-era-of-video-intelligence-at-nab-show-2026-302746715.html",
     "urls": [
       {

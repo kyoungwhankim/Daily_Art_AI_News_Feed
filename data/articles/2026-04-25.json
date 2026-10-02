@@ -9,6 +9,7 @@
     "publishedAt": "2026.04.25",
     "hue": 200,
     "image": "https://techcrunch.com/wp-content/uploads/2026/02/roblox-header.jpg?resize=1200,800",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/04/16/robloxs-ai-assistant-gets-new-agentic-tools-to-plan-build-and-test-games/",
     "urls": [
       {
@@ -26,6 +27,11 @@
     "source": "MarketersMEDIA",
     "publishedAt": "2026.04.25",
     "hue": 200,
+    "keywords": [
+      "3D",
+      "텍스처",
+      "Tripo"
+    ],
     "url": "https://news.marketersmedia.com/tripo-ai-introduces-h31-to-advance-high-fidelity-ai-3d-generation-for-production/89189311",
     "urls": [
       {
@@ -44,6 +50,7 @@
     "publishedAt": "2026.04.25",
     "hue": 200,
     "image": "https://techcrunch.com/wp-content/uploads/2026/04/Voyage-Promo-Art-3.jpg?w=1200",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/04/21/voyage-is-an-ai-rpg-platform-for-creating-custom-gaming-worlds-with-ai-generated-npc-interactions/"
   },
   {
@@ -55,6 +62,10 @@
     "source": "BitTopup News",
     "publishedAt": "2026.04.25",
     "hue": 30,
+    "keywords": [
+      "AI 사용 논란",
+      "2D·이미지"
+    ],
     "url": "https://news.bittopup.com/news/identity-v-ai-backlash-2026-is-the-april-23-boycott-worth-it",
     "urls": [
       {
@@ -72,6 +83,10 @@
     "source": "IT Business Net",
     "publishedAt": "2026.04.25",
     "hue": 30,
+    "keywords": [
+      "코딩",
+      "2D·이미지"
+    ],
     "url": "https://itbusinessnet.com/2026/04/makko-launches-ai-powered-2d-game-studio-with-over-40000-game-assets-created-in-beta/",
     "urls": [
       {
@@ -90,6 +105,10 @@
     "publishedAt": "2026.04.25",
     "hue": 30,
     "image": "https://www.layer.ai/_astro/coverImage.BqZiG5rZ.png",
+    "keywords": [
+      "AI 도입 전략",
+      "행사·컨퍼런스"
+    ],
     "url": "https://www.layer.ai/blog/gdc-2026-recap-how-ai-workflows-are-transforming-ua-creative-production-for-game-studios"
   },
   {
@@ -102,6 +121,10 @@
     "publishedAt": "2026.04.25",
     "hue": 290,
     "image": "https://pub-40fc341bb75049a4af5e73bf5afac3ba.r2.dev/blog-images/blog-cover-1777028586188.jpg",
+    "keywords": [
+      "영상",
+      "2D·이미지"
+    ],
     "url": "https://www.vo3ai.com/blog/kling-30-just-launched-native-4k-video3-ways-it-changes-ai-filmmaking-2026-04-24",
     "urls": [
       {
@@ -120,6 +143,9 @@
     "publishedAt": "2026.04.25",
     "hue": 290,
     "image": "https://the-decoder.com/wp-content/uploads/2024/09/openai_sora_screens-2.png",
+    "keywords": [
+      "OpenAI"
+    ],
     "url": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/",
     "urls": [
       {
@@ -137,6 +163,11 @@
     "source": "Adobe Blog",
     "publishedAt": "2026.04.25",
     "hue": 290,
+    "keywords": [
+      "Adobe",
+      "Photoshop",
+      "Premiere"
+    ],
     "url": "https://blog.adobe.com/en/publish/2026/04/15/introducing-firefly-ai-assistant-new-way-create-with-our-creative-agent",
     "urls": [
       {
@@ -155,6 +186,11 @@
     "publishedAt": "2026.04.25",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?resize=1200,669",
+    "keywords": [
+      "음악·사운드",
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/04/02/elevenlabs-releases-a-new-ai-powered-music-generation-app/"
   }
 ]

@@ -9,6 +9,9 @@
     "publishedAt": "2026.09.10",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260909_AfterEffects265_AIAssistantBeta_f-960x480.jpg",
+    "keywords": [
+      "Adobe"
+    ],
     "url": "https://www.cgchannel.com/2026/09/adobe-releases-after-effects-26-5-and-new-ai-assistant-in-beta/",
     "urls": [
       {
@@ -27,6 +30,10 @@
     "publishedAt": "2026.09.10",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141285/89792/ainordics2_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "법·정책"
+    ],
     "url": "https://www.pocketgamer.biz/how-nordic-studios-are-using-ai-part-two-from-solo-game-builders-to-support-that-never-sleeps/"
   },
   {
@@ -39,6 +46,9 @@
     "publishedAt": "2026.09.10",
     "hue": 50,
     "image": "https://media.pocketgamer.biz/images/141334/89814/tripo-p2_l1200.jpg",
+    "keywords": [
+      "투자·인수"
+    ],
     "url": "https://www.pocketgamer.biz/genai-firm-tripo-raises-445m-two-months-after-series-a3-round/"
   },
   {
@@ -51,6 +61,10 @@
     "publishedAt": "2026.09.10",
     "hue": 290,
     "image": "https://media.thenextweb.com/2026/06/Suno.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://thenextweb.com/news/suno-v6-warner-bmg-believe-licensed-models"
   }
 ]

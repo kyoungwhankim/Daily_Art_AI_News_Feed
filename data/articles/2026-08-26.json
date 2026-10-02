@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.26",
     "hue": 220,
     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/Gamescom-RTX-Spark-Key-Visual-1280x720.jpg",
+    "keywords": [
+      "NVIDIA",
+      "DLSS"
+    ],
     "url": "https://blogs.nvidia.com/blog/gamescom-rtx-spark-pc-games-technology/",
     "urls": [
       {
@@ -27,6 +31,9 @@
     "publishedAt": "2026.08.26",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2024/10/unnamed-2.png?w=1024",
+    "keywords": [
+      "Sony"
+    ],
     "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/"
   },
   {
@@ -39,6 +46,9 @@
     "publishedAt": "2026.08.26",
     "hue": 10,
     "image": "https://live-production.wcms.abc-cdn.net.au/4305c5850797519cf17b18a4de0148ab",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://www.abc.net.au/news/2026-08-25/ai-generated-music-to-be-banned-from-aria-charts/107072642"
   }
 ]

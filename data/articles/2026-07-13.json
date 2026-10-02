@@ -9,6 +9,11 @@
     "publishedAt": "2026.07.13",
     "hue": 210,
     "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.08741/gradient.png",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "NVIDIA"
+    ],
     "url": "https://huggingface.co/papers/2607.08741",
     "urls": [
       {
@@ -27,6 +32,9 @@
     "publishedAt": "2026.07.13",
     "hue": 330,
     "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.03118.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://huggingface.co/papers/2607.03118",
     "urls": [
       {
@@ -49,6 +57,9 @@
     "publishedAt": "2026.07.13",
     "hue": 200,
     "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.03803.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://huggingface.co/papers/2607.03803",
     "urls": [
       {
@@ -67,6 +78,9 @@
     "publishedAt": "2026.07.13",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/07/batman.jpg",
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://kotaku.com/christopher-nolan-points-out-that-everyone-hates-ai-2000714998"
   },
   {
@@ -79,6 +93,9 @@
     "publishedAt": "2026.07.13",
     "hue": 280,
     "image": "https://images.euronews.com/articles/stories/09/83/47/69/1200x675_cmsv2_5801489c-3381-5de6-9d5b-3a3c845b3599-9834769.jpg",
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://www.euronews.com/culture/2026/07/12/whats-left-is-you-ai-is-the-elephant-in-the-room-of-europes-biggest-animation-festival"
   },
   {
@@ -91,6 +108,10 @@
     "publishedAt": "2026.07.13",
     "hue": 50,
     "image": "https://helios-i.mashable.com/imagery/articles/03hVPYmS1vOJXD4c5qxkljr/hero-image.fill.size_1200x675.v1783881289.png",
+    "keywords": [
+      "2D·이미지",
+      "Meta"
+    ],
     "url": "https://mashable.com/tech/meta-withdraws-controversial-ai-feature-that-allowed-images-to-be-sourced"
   },
   {
@@ -103,6 +124,7 @@
     "publishedAt": "2026.07.13",
     "hue": 260,
     "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/06/28/Hy19VUCffg/Hy19VUCffg_0_0_3000_1689_0_large.jpg",
+    "keywords": [],
     "url": "https://www.ynetnews.com/culture/article/h1nk8revfe"
   }
 ]
