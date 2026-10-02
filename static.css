@@ -1,0 +1,55 @@
+/* 정적 페이지(기사별 페이지·목록 페이지, scripts/build_site.py가 생성) 전용 스타일.
+   색·글꼴은 app.css의 토큰을 그대로 쓴다. */
+
+.js .static-fallback { display: none; }   /* 피드 앱이 뜨면 미리 넣어 둔 목록은 숨김 */
+
+a.brand { text-decoration: none; }
+.static-nav { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
+.static-nav a { color: var(--ink-2); text-decoration: none; font-weight: 500; }
+.static-nav a:hover { color: var(--ink); text-decoration: underline; }
+
+.static-main {
+  max-width: 860px; width: 100%;
+  margin: 0 auto;
+  padding: 36px 40px 80px;
+}
+.static-main .feed-title { margin: 0 0 6px; }
+.static-main .feed-sub { margin: 0 0 22px; }
+.static-main .subcats { margin-bottom: 18px; }
+.static-main a.chip { text-decoration: none; }
+
+.static-crumb { font-size: 13px; margin-bottom: 14px; }
+.static-crumb a { color: var(--accent-strong); text-decoration: none; font-weight: 600; }
+.static-article .modal-meta { flex-wrap: wrap; }
+.static-article .modal-keywords { margin: 4px 0 20px; }
+a.modal-keyword { text-decoration: none; }
+.static-hero {
+  display: block; width: 100%; max-height: 460px; object-fit: cover;
+  border: 2px solid var(--stroke); border-radius: 14px;
+  margin: 0 0 28px;
+}
+.static-lead { font-size: 18px; line-height: 1.7; color: var(--ink); }
+.static-article .modal-article a { color: var(--accent-strong); }
+.static-open { margin: 28px 0 0; }
+
+.static-related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+.static-related h2, .static-date {
+  font-family: var(--font-mono);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+  margin: 28px 0 10px;
+}
+.static-list { list-style: none; margin: 0; padding: 0; }
+.static-list li { padding: 12px 0; border-bottom: 1px dashed var(--hairline); }
+.static-list li > a {
+  color: var(--ink); font-weight: 600; font-size: 16px; line-height: 1.45;
+  text-decoration: none;
+}
+.static-list li > a:hover { text-decoration: underline; }
+.static-item-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
+.static-list p { margin: 4px 0 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+
+@media (max-width: 640px) {
+  .static-main { padding: 24px 18px 60px; }
+  .site-header .static-nav { display: none; }
+}

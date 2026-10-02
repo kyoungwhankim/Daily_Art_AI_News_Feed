@@ -349,9 +349,8 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
   const [copied, setCopied] = useState(false);
 
   const copyLink = () => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('article', article.id);
-    const link = url.toString();
+    // 공유용 주소는 기사별 정적 페이지 (배포 사이트에서 scripts/build_site.py가 만든다 — 링크 미리보기·검색 노출용)
+    const link = new URL(`articles/${encodeURIComponent(article.id)}/`, window.location.href.split(/[?#]/)[0]).toString();
     const done = () => { setCopied(true); setTimeout(() => setCopied(false), 1600); };
     const fallback = () => {
       try {
@@ -773,7 +772,7 @@ function App() {
     setLoading(true);
     const t = setTimeout(() => setLoading(false), 280);
     return () => clearTimeout(t);
-  }, [activeTab, viewSaved, activeKeyword]);
+  }, [activeTab, viewSaved, keyword]);
 
   const toggleSave = (id) => {
     setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
