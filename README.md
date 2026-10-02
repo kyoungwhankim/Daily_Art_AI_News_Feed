@@ -19,11 +19,24 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 | `scripts/update_articles.py` | 루틴이 새 기사를 오늘 날짜 파일에 추가하고 `index.json`을 다시 만든다 |
 | `scripts/validate_data.py` | `data/` 검사 (JSON 형식, index 일치, 필수 필드, id 중복) |
 | `scripts/feed_data.py` | 위 두 스크립트의 공통 함수 |
+| `scripts/keywords.json` | 서브 카테고리 키워드 사전 (아래 참고) |
+| `scripts/tag_keywords.py` | 키워드 사전으로 기사에 `keywords`를 붙인다 |
 | `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
 | `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
 
 사이트는 `data/index.json`을 받은 뒤 날짜 파일들을 병렬로 불러온다. 날짜 파일은 `?v=<rev>`로 요청하므로 내용이 바뀐 날짜만 브라우저 캐시가 갱신된다.
 `fetch`를 쓰므로 `file://`로 직접 열면 동작하지 않는다 — 로컬에서는 `python3 -m http.server`로 띄워서 확인한다.
+
+## 서브 카테고리 (키워드)
+
+각 탭 아래에 키워드 칩이 있고, 누르면 그 키워드가 붙은 기사만 보인다. `전체`는 탭의 모든 기사.
+
+- 키워드 종류: 제작 대상(2D·이미지, 3D, 애니메이션, 영상, 음악·사운드, 음성, 텍스처, VFX, 가우시안 스플래팅, 코딩), 회사, 프로그램·서비스
+- 모든 기사에 `keywords` 배열이 있다 (해당 없음이면 `[]` — `전체`에서만 보인다).
+- 사이트는 탭 안에서 **6개 이상** 기사에 붙은 키워드만 칩으로 보여준다. 5개 이하는 숨겨지고, 기사가 쌓여 6개가 되면 자동으로 나타난다.
+- 태깅은 규칙 기반이다 — `scripts/keywords.json`의 `match` 단어가 제목·요약(제작 대상) 또는 제목·요약·본문 첫 문장(회사·프로그램)에 있으면 붙는다.
+- 루틴은 할 일이 없다: `update_articles.py`가 새 기사에 키워드를 자동으로 붙이고, `validate_data.py`가 사전에 없는 키워드를 막는다.
+- 사전을 고친 뒤에는 `python3 scripts/tag_keywords.py`로 전체 기사를 다시 태깅한다 (`--check`는 미리보기).
 
 ## 개요
 

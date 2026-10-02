@@ -308,6 +308,23 @@ html::before {
 .chip:active { transform: translateY(1px); box-shadow: none; }
 .chip.active { background: var(--accent); color: var(--card); box-shadow: var(--shadow-pop-sm); }
 
+/* sub-categories (keyword chips) */
+.subcats {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 0 40px 22px;
+  max-width: 1280px; margin: 0 auto;
+  width: 100%;
+}
+.chip.subcat { padding: 5px 12px; font-size: 12.5px; border-width: 1.5px; }
+.subcat-count { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip.subcat.active .subcat-count { color: inherit; opacity: .8; }
+@media (max-width: 960px) { .subcats { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 640px) {
+  .subcats { flex-wrap: nowrap; overflow-x: auto; padding-left: 18px; padding-right: 18px; scrollbar-width: none; }
+  .subcats::-webkit-scrollbar { display: none; }
+  .chip.subcat { flex: 0 0 auto; }
+}
+
 /* feed grid */
 .feed { padding: 0 40px 80px; max-width: 1280px; margin: 0 auto; width: 100%; }
 .grid {
@@ -1372,3 +1389,13 @@ mark {
 @media (max-width: 960px) {
   .home-ticker-head { padding: 0 24px 12px; }
 }
+
+/* modal keyword tags */
+.modal-keywords { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 20px; }
+.modal-keyword {
+  font: inherit; font-size: 12px; font-weight: 500;
+  padding: 3px 10px; border-radius: 999px;
+  border: 1.5px solid var(--accent); background: var(--accent-soft); color: var(--accent-strong);
+  cursor: pointer;
+}
+.modal-keyword:hover { background: var(--accent); color: var(--card); }

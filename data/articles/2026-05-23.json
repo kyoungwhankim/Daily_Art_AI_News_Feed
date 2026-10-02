@@ -9,6 +9,7 @@
     "publishedAt": "2026.05.23",
     "hue": 15,
     "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+    "keywords": [],
     "url": "https://www.npr.org/2026/05/22/g-s1-123671/ca-gov-gavin-newsom-signed-an-executive-order-to-protect-workers-from-ai",
     "urls": [
       {
@@ -27,6 +28,9 @@
     "publishedAt": "2026.05.23",
     "hue": 340,
     "image": "https://techcrunch.com/wp-content/uploads/2025/09/Huxe_Sept25_LaunchAsset_2.jpeg",
+    "keywords": [
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/05/22/audio-generation-app-huxe-founded-by-former-notebooklm-developers-shuts-down/"
   },
   {
@@ -39,6 +43,9 @@
     "publishedAt": "2026.05.23",
     "hue": 330,
     "image": "https://techcrunch.com/wp-content/uploads/2026/02/spotify-logo-phone-GettyImages-2163455819.jpg",
+    "keywords": [
+      "Spotify"
+    ],
     "url": "https://techcrunch.com/2026/05/22/spotifys-ai-bet-more-of-everything-less-of-what-you-want/"
   }
 ]

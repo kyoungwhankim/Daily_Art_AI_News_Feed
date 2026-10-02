@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.08",
     "hue": 45,
     "image": "https://cdn.80.lv/api/upload/meta/50083/images/6a9eea1ec6130/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "텍스처"
+    ],
     "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released",
     "urls": [
       {
@@ -27,6 +31,12 @@
     "publishedAt": "2026.09.08",
     "hue": 30,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260907_CGSoftwareYouMayHaveMissed7September2026_f-960x480.jpg",
+    "keywords": [
+      "2D·이미지",
+      "영상",
+      "Reallusion",
+      "Seedance"
+    ],
     "url": "https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-7-september-2026/",
     "urls": [
       {
@@ -45,6 +55,9 @@
     "publishedAt": "2026.09.08",
     "hue": 0,
     "image": "https://www.videogameschronicle.com/files/2026/09/space-marine-3-hellraiser.jpg",
+    "keywords": [
+      "Saber Interactive"
+    ],
     "url": "https://www.videogameschronicle.com/news/saber-cco-says-theres-absolutely-no-genai-in-its-licensed-games-including-space-marine-3-hellraiser-and-jurassic-park-survival/",
     "urls": [
       {
@@ -62,6 +75,7 @@
     "source": "ArtStation Magazine",
     "publishedAt": "2026.09.08",
     "hue": 290,
+    "keywords": [],
     "url": "https://magazine.artstation.com/2026/09/ai-updates-from-artstation/",
     "urls": [
       {

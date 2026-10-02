@@ -9,6 +9,9 @@
     "publishedAt": "2026.07.07",
     "hue": 210,
     "image": "https://80.lv/uploads/2026/07/hi3d-collectible-featured.jpg",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://80.lv/articles/from-prompt-to-reality-how-to-turn-your-idea-into-a-physical-3d-printed-collectible-using-hi3d/",
     "urls": [
       {
@@ -27,6 +30,9 @@
     "publishedAt": "2026.07.07",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt1246c42605378d53/6a4bb73c3e0ca5582dc56ff1/Xbox_header.png",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://www.gamedeveloper.com/business/xbox-cutting-3-200-jobs-and-parting-ways-with-double-fine-compulsion-ninja-theory-and-undead-labs"
   },
   {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.07.07",
     "hue": 285,
     "image": "https://cdn-uploads.huggingface.co/production/uploads/680a58121b2c7c159d2bd481/5QIAhbRR2s_0sSyiBniF-.jpeg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://huggingface.co/blog/Photoroom/prx-part4-data",
     "urls": [
       {

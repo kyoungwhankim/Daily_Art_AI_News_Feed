@@ -9,6 +9,10 @@
     "publishedAt": "2026.06.25",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260624_SubstancePainter121_UVUnwrap.jpg",
+    "keywords": [
+      "3D",
+      "Adobe"
+    ],
     "url": "https://www.cgchannel.com/2026/06/adobe-releases-substance-3d-painter-12-1/"
   },
   {
@@ -21,6 +25,12 @@
     "publishedAt": "2026.06.25",
     "hue": 30,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260624_iClonePersonal_FreeiCloneEdition_f.jpg",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "영상",
+      "Reallusion"
+    ],
     "url": "https://www.cgchannel.com/2026/06/reallusion-releases-free-animation-tool-iclone-personal/"
   }
 ]

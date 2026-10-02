@@ -9,6 +9,12 @@
     "publishedAt": "2026.09.11",
     "hue": 210,
     "image": "https://media.pocketgamer.biz/images/141364/89826/clause-unity_l1200.jpg",
+    "keywords": [
+      "코딩",
+      "Anthropic",
+      "Unity",
+      "Claude"
+    ],
     "url": "https://www.pocketgamer.biz/unity-launches-official-claude-code-plugin-with-29-built-in-engine-skills/",
     "urls": [
       {
@@ -27,6 +33,9 @@
     "publishedAt": "2026.09.11",
     "hue": 200,
     "image": "https://huggingface.co/blog/assets/gradio-workflow1111/thumbnail.png",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://huggingface.co/blog/gradio-workflow-1111",
     "urls": [
       {
@@ -45,6 +54,9 @@
     "publishedAt": "2026.09.11",
     "hue": 30,
     "image": "https://assetsio.gnwcdn.com/rideshare-stimulator.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "Saber Interactive"
+    ],
     "url": "https://www.gamesindustry.biz/saber-interactives-chief-creative-officer-says-weve-never-replaced-anybody-with-ai"
   },
   {
@@ -57,6 +69,9 @@
     "publishedAt": "2026.09.11",
     "hue": 10,
     "image": "https://media.pocketgamer.biz/images/136023/89822/blizzard_l1200.jpg",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://www.pocketgamer.biz/blizzard-developers-ratify-first-union-contract-with-microsoft-covering-ai-layoffs-and-remote-work/"
   },
   {
@@ -69,6 +84,11 @@
     "publishedAt": "2026.09.11",
     "hue": 280,
     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK467_AI_MUSIC_CVirginia_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+    "keywords": [
+      "음성",
+      "ElevenLabs",
+      "Universal Music"
+    ],
     "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai"
   },
   {
@@ -81,6 +101,10 @@
     "publishedAt": "2026.09.11",
     "hue": 290,
     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Suno_v6_Main.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help"
   },
   {
@@ -92,6 +116,10 @@
     "source": "The Verge",
     "publishedAt": "2026.09.11",
     "hue": 230,
+    "keywords": [
+      "Adobe",
+      "Firefly"
+    ],
     "url": "https://www.theverge.com/tech/993688/adobe-reports-record-6-76-billion-in-revenue-as-it-continues-its-ai-push"
   }
 ]

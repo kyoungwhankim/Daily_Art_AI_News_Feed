@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.21",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260920_NewCGSoftwareYouMayHaveMissed20September_f-960x480.jpg",
+    "keywords": [
+      "애니메이션",
+      "NVIDIA"
+    ],
     "url": "https://www.cgchannel.com/2026/09/new-cg-software-you-may-have-missed-20-september-2026/",
     "urls": [
       {
@@ -27,6 +31,9 @@
     "publishedAt": "2026.09.21",
     "hue": 270,
     "image": "https://the-decoder.com/wp-content/uploads/2026/09/qwen_image_demo.png",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
     "urls": [
       {
@@ -45,6 +52,10 @@
     "publishedAt": "2026.09.21",
     "hue": 290,
     "image": "https://the-decoder.com/wp-content/uploads/2026/09/runway-logo-wall-gpt-image-2-5.jpg",
+    "keywords": [
+      "영상",
+      "Runway"
+    ],
     "url": "https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time/",
     "urls": [
       {

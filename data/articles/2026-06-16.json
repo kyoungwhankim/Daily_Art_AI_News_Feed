@@ -9,6 +9,10 @@
     "publishedAt": "2026.06.16",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260504_LightWave2026_f.jpg",
+    "keywords": [
+      "3D",
+      "애니메이션"
+    ],
     "url": "https://www.cgchannel.com/2026/06/lightwave-digital-releases-lightwave-2026/",
     "urls": [
       {
@@ -35,6 +39,12 @@
     "publishedAt": "2026.06.16",
     "hue": 280,
     "image": "https://cdn.mos.cms.futurecdn.net/4AjEYV5cRosEZk8FZMLMJZ-2560-80.jpg",
+    "keywords": [
+      "2D·이미지",
+      "영상",
+      "VFX",
+      "Adobe"
+    ],
     "url": "https://www.creativebloq.com/photography/photo-editing-software/new-adobe-creative-cloud-updates-will-genuinely-save-you-time"
   },
   {
@@ -47,6 +57,9 @@
     "publishedAt": "2026.06.16",
     "hue": 260,
     "image": "https://cdn.mos.cms.futurecdn.net/u9eLVp4crWYmzUG6aWh369-1600-80.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.creativebloq.com/ai/how-one-creator-is-using-ai-to-build-an-entire-transmedia-sci-fi-universe"
   },
   {
@@ -59,6 +72,7 @@
     "publishedAt": "2026.06.16",
     "hue": 10,
     "image": "https://cdn.mos.cms.futurecdn.net/C8h2mQuGeWC8EUzNyRGzwN-1920-80.jpg",
+    "keywords": [],
     "url": "https://www.creativebloq.com/design/of-course-nikes-ai-assisted-world-cup-kit-design-looks-stupid"
   }
 ]

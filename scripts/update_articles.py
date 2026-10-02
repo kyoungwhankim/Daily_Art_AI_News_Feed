@@ -16,6 +16,8 @@ update_articles.py — /tmp/feed/articles.json의 새 기사들을
        같은 글이 어제·오늘에 두 번 게시되는 것을 방지).
     3. 각 새 기사에 고유 slug id를 생성 (`{tab}-{md5_8자}-{YYYY-MM}` 형식,
        충돌 시 `-2`, `-3` 접미사 추가)하고 publishedAt에 오늘 날짜를 넣는다.
+       서브 카테고리 keywords는 scripts/keywords.json 사전으로 자동 태깅한다
+       (tag_keywords.py — 루틴이 따로 할 일은 없다).
     4. 오늘 날짜 파일에 탭(games → industry → art)별로, 같은 탭의 기존 기사보다
        앞에 삽입한다. 파일이 없으면 새로 만든다.
     5. data/index.json을 다시 생성한다.
@@ -32,6 +34,7 @@ from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
+import tag_keywords  # noqa: E402
 
 NEW_ARTICLES_JSON = '/tmp/feed/articles.json'
 
@@ -50,7 +53,7 @@ def make_slug(headline: str, tab: str, idx: int,
 
 
 def build_entry(art: dict, idx: int, slug_suffix: str, upload_date: str,
-                existing_ids: set) -> dict:
+                existing_ids: set, rules: list) -> dict:
     """기사 dict를 사이트 데이터 형식으로 변환 (필드 순서 고정)."""
     entry = {
         'id': make_slug(art['headline'], art['tab'], idx,
@@ -65,6 +68,7 @@ def build_entry(art: dict, idx: int, slug_suffix: str, upload_date: str,
     }
     if art.get('image'):
         entry['image'] = art['image']
+    entry['keywords'] = tag_keywords.tag(entry, rules)
     entry['url'] = art['url']
     if art.get('urls'):
         entry['urls'] = [{'label': lk['label'], 'href': lk['href']}
@@ -80,6 +84,8 @@ def main():
 
     with open(NEW_ARTICLES_JSON) as f:
         new_articles = json.load(f)
+
+    rules = tag_keywords.load_rules()
 
     # 기존 id와 url 수집 — id는 충돌 방지용, url은 dedup용
     existing_ids, existing_urls = set(), set()
@@ -100,7 +106,8 @@ def main():
             raise RuntimeError(f"Unknown tab: {art['tab']!r}")
         existing_urls.add(key)
         by_tab[art['tab']].append(
-            build_entry(art, i, slug_suffix, upload_date, existing_ids))
+            build_entry(art, i, slug_suffix, upload_date, existing_ids,
+                        rules))
 
     if skipped_dup:
         print(f"Skipped {skipped_dup} article(s) already present in "
@@ -122,6 +129,10 @@ def main():
     print(f"  games:    +{len(by_tab['games'])}")
     print(f"  industry: +{len(by_tab['industry'])}")
     print(f"  art:      +{len(by_tab['art'])}")
+    for tab in feed_data.TABS:
+        for e in by_tab[tab]:
+            print(f"  [{tab}] {', '.join(e['keywords']) or '(no keywords)'}"
+                  f" — {e['headline'][:40]}")
 
 
 if __name__ == '__main__':

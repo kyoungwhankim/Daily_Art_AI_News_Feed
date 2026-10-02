@@ -9,6 +9,11 @@
     "publishedAt": "2026.09.19",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/50269/images/6aad30fbe5adf/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "가우시안 스플래팅",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support"
   },
   {
@@ -21,6 +26,7 @@
     "publishedAt": "2026.09.19",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/50279/images/6aada812739f5/contain_1200x630.jpg",
+    "keywords": [],
     "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report",
     "urls": [
       {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.09.19",
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "음성"
+    ],
     "url": "https://www.gamedeveloper.com/business/mihoyo-wins-112-000-in-genshin-impact-ai-voice-cloning-lawsuit"
   }
 ]

@@ -9,6 +9,9 @@
     "publishedAt": "2026.09.29",
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://www.gamedeveloper.com/business/microsoft-ceo-says-xbox-is-simply-streamlining-after-cutting-over-5-750-jobs-in-three-years"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.09.29",
     "hue": 220,
     "image": "https://newsroom.amd.com/images/2026/09/063180c6-5b1a-4200-b238-99d7083699ae.jpg",
+    "keywords": [
+      "3D",
+      "영상"
+    ],
     "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
   },
   {
@@ -33,6 +40,9 @@
     "publishedAt": "2026.09.29",
     "hue": 270,
     "image": "https://cdn.mos.cms.futurecdn.net/Cc7Agjdq4cD8sy3c8yjz6f-1600-80.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.creativebloq.com/design/graphic-design-software/coreldraw-adds-text-to-vector-ai-in-the-september-update-is-it-a-good-move",
     "urls": [
       {
@@ -51,6 +61,11 @@
     "publishedAt": "2026.09.29",
     "hue": 290,
     "image": "https://cdn.mos.cms.futurecdn.net/zxY6jnnHDgAvHyFjMJYiSY-1920-80.jpg",
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "음악·사운드"
+    ],
     "url": "https://www.creativebloq.com/art/animation/viral-ai-animation-sparks-controversy-over-familiar-character-design"
   },
   {
@@ -63,6 +78,10 @@
     "publishedAt": "2026.09.29",
     "hue": 200,
     "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/",
     "urls": [
       {

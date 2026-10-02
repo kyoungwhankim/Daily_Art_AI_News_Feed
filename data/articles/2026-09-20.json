@@ -9,6 +9,11 @@
     "publishedAt": "2026.09.20",
     "hue": 215,
     "image": "https://wimg.sedaily.com/news/cms/2026/09/19/news-p.v1.20260918.e2120863e5e04a0db64ec3bbb1177895_P1.jpg",
+    "keywords": [
+      "3D",
+      "음성",
+      "Adobe"
+    ],
     "url": "https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026"
   },
   {
@@ -21,6 +26,7 @@
     "publishedAt": "2026.09.20",
     "hue": 30,
     "image": "https://wimg.sedaily.com/news/cms/2026/09/19/news-p.v1.20260918.e2120863e5e04a0db64ec3bbb1177895_P1.jpg",
+    "keywords": [],
     "url": "https://en.sedaily.com/technology/2026/09/19/ai-takes-center-stage-at-tokyo-game-show-2026"
   }
 ]

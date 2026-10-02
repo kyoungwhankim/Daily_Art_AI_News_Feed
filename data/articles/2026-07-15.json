@@ -9,6 +9,11 @@
     "publishedAt": "2026.07.15",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/07/260714_Blender52_5KeyFeatures_f.jpg",
+    "keywords": [
+      "텍스처",
+      "VFX",
+      "Blender"
+    ],
     "url": "https://www.cgchannel.com/2026/07/blender-5-2-lts-is-here-discover-its-5-key-features/",
     "urls": [
       {
@@ -31,6 +36,9 @@
     "publishedAt": "2026.07.15",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/49197/images/6a56389794275/contain_1200x630.jpg",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://80.lv/articles/artists-threaten-to-leave-turbosquid-because-of-plummeting-sales-missing-payments/"
   },
   {
@@ -43,6 +51,12 @@
     "publishedAt": "2026.07.15",
     "hue": 120,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/You-can-now-talk-to-Spotify_FTR-blog-header.png",
+    "keywords": [
+      "음악·사운드",
+      "음성",
+      "Spotify",
+      "ChatGPT"
+    ],
     "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/"
   },
   {
@@ -55,6 +69,9 @@
     "publishedAt": "2026.07.15",
     "hue": 280,
     "image": "https://static.ra.co/images/news/2026/tidal.png",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://ra.co/news/85507"
   }
 ]

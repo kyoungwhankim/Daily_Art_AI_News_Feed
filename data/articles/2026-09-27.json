@@ -9,6 +9,11 @@
     "publishedAt": "2026.09.27",
     "hue": 30,
     "image": "https://www.techspot.com/images2/news/bigimage/2026/09/2026-09-26-image.jpg",
+    "keywords": [
+      "2D·이미지",
+      "3D",
+      "Meta"
+    ],
     "url": "https://www.techspot.com/news/113999-meta-new-ai-game-tools-can-turn-prompts.html",
     "urls": [
       {
@@ -31,6 +36,9 @@
     "publishedAt": "2026.09.27",
     "hue": 20,
     "image": "https://gamefromscratch.com/wp-content/uploads/2026/09/MetaAISlopEnginesLUM1080.jpg",
+    "keywords": [
+      "Meta"
+    ],
     "url": "https://gamefromscratch.com/meta-horizon-create-and-horizon-studio-game-engines/",
     "urls": [
       {

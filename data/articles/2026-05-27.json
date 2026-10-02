@@ -9,6 +9,13 @@
     "publishedAt": "2026.05.27",
     "hue": 220,
     "image": "https://media.thenextweb.com/2026/05/reallusion-ai-studio-bytedance-seedance-3d-video.avif",
+    "keywords": [
+      "3D",
+      "영상",
+      "ByteDance",
+      "Reallusion",
+      "Seedance"
+    ],
     "url": "https://thenextweb.com/news/reallusion-ai-studio-bytedance-seedance-3d-video",
     "urls": [
       {
@@ -27,6 +34,10 @@
     "publishedAt": "2026.05.27",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2026/03/tiktok-header.jpg?resize=1200,800",
+    "keywords": [
+      "음악·사운드",
+      "Universal Music"
+    ],
     "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/"
   },
   {
@@ -39,6 +50,10 @@
     "publishedAt": "2026.05.27",
     "hue": 280,
     "image": "https://www.datocms-assets.com/117789/1774532259-suno_v5-5_bloginnerbanner.png?auto=format&fit=max&w=1200",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise",
     "urls": [
       {
@@ -57,6 +72,7 @@
     "publishedAt": "2026.05.27",
     "hue": 5,
     "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2213411719.jpg?w=1024",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
     "urls": [
       {

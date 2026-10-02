@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.12",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/content/d6/images/6aa2f51db3c8c/widen_920x0.jpg",
+    "keywords": [
+      "3D",
+      "Unity"
+    ],
     "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity"
   },
   {
@@ -20,6 +24,10 @@
     "source": "CG Channel",
     "publishedAt": "2026.09.12",
     "hue": 220,
+    "keywords": [
+      "3D",
+      "가우시안 스플래팅"
+    ],
     "url": "https://www.cgchannel.com/2026/09/playcanvas-releases-supersplat-editor-3-0/",
     "urls": [
       {
@@ -38,6 +46,10 @@
     "publishedAt": "2026.09.12",
     "hue": 30,
     "image": "https://cms-media.roblox.com/assets/ced9560d-5aa5-42d3-b5d8-8e70abeac00c.png",
+    "keywords": [
+      "3D",
+      "Roblox"
+    ],
     "url": "https://gamesbeat.com/roblox-dives-into-the-details-on-its-rdc-engine-updates-roblox-wallet-and-offline-play-press-briefing/"
   },
   {
@@ -50,6 +62,9 @@
     "publishedAt": "2026.09.12",
     "hue": 30,
     "image": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/09/roblox-rdc-2026-two.jpg",
+    "keywords": [
+      "Roblox"
+    ],
     "url": "https://www.pcgamesn.com/roblox/rdc-2026"
   },
   {
@@ -62,6 +77,9 @@
     "publishedAt": "2026.09.12",
     "hue": 0,
     "image": "https://kotaku.com/app/uploads/2026/09/HRwpwtHa8AEbkT8.jpg",
+    "keywords": [
+      "코딩"
+    ],
     "url": "https://kotaku.com/steins-gate-mages-visual-novel-ai-shooter-juggernaut-2000733010"
   },
   {
@@ -74,6 +92,9 @@
     "publishedAt": "2026.09.12",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2025/12/maxresdefault.jpg",
+    "keywords": [
+      "Level-5"
+    ],
     "url": "https://kotaku.com/professor-layton-ai-level-5-curious-village-remake-inazuma-eleven-2000733548"
   },
   {
@@ -86,6 +107,11 @@
     "publishedAt": "2026.09.12",
     "hue": 270,
     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/venice_film_fest_social.max-1440x810.png",
+    "keywords": [
+      "영상",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://blog.google/innovation-and-ai/technology/xr-ar/three-google-supported-projects-premiere-during-the-83rd-venice-international-film-festival/"
   },
   {
@@ -98,6 +124,9 @@
     "publishedAt": "2026.09.12",
     "hue": 290,
     "image": "https://apicms.thestar.com.my/uploads/images/2026/09/11/thumbs/200/4105086.webp",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.thestar.com.my/tech/tech-news/2026/09/11/ai-powered-documentary-tests-cinema039s-boundaries-in-venice"
   },
   {
@@ -110,6 +139,11 @@
     "publishedAt": "2026.09.12",
     "hue": 50,
     "image": "https://i0.wp.com/musically.com/wp-content/uploads/2026/09/news-stories-images-4x3-2026-09-11T114858.172.png",
+    "keywords": [
+      "음악·사운드",
+      "ElevenLabs",
+      "Universal Music"
+    ],
     "url": "https://musically.com/2026/09/11/umgs-elevenlabs-deal-is-latest-move-to-ai-remix-experiences/"
   },
   {
@@ -121,6 +155,9 @@
     "source": "Sports Video Group",
     "publishedAt": "2026.09.12",
     "hue": 290,
+    "keywords": [
+      "NVIDIA"
+    ],
     "url": "https://www.sportsvideo.org/2026/09/11/ibc-2026-camb-ai-unveils-the-worlds-first-multilingual-broadcasting-agent-powered-by-nvidia/"
   },
   {
@@ -133,6 +170,13 @@
     "publishedAt": "2026.09.12",
     "hue": 80,
     "image": "https://pctechmag.com/wp-content/uploads/2026/09/An-AI-Music-Video-Workflow-with-GPT-Image-2.5-and-Seedance-2.5.png",
+    "keywords": [
+      "2D·이미지",
+      "영상",
+      "음악·사운드",
+      "ChatGPT",
+      "Seedance"
+    ],
     "url": "https://pctechmag.com/2026/09/from-song-to-screen-an-ai-music-video-workflow-with-gpt-image-2-5-and-seedance-2-5/"
   }
 ]

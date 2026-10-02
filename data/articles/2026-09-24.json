@@ -9,6 +9,9 @@
     "publishedAt": "2026.09.24",
     "hue": 30,
     "image": "https://ludo.ai/images/anim-expansion-v1/texture-hero-runes-static.webp",
+    "keywords": [
+      "텍스처"
+    ],
     "url": "https://ludo.ai/tools/texture-generator"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.09.24",
     "hue": 200,
     "image": "https://www.3dnatives.com/en/wp-content/uploads/sites/2/2026/09/cover-D_montage-1.jpg",
+    "keywords": [
+      "3D",
+      "Meshy"
+    ],
     "url": "https://www.3dnatives.com/en/3dnatives-lab-meshy-ai-3d-model-generator-23092026/",
     "urls": [
       {
@@ -38,6 +45,10 @@
     "source": "Music Business Worldwide",
     "publishedAt": "2026.09.24",
     "hue": 350,
+    "keywords": [
+      "음악·사운드",
+      "Sony"
+    ],
     "url": "https://www.musicbusinessworldwide.com/sony-music-group-becomes-first-music-company-to-join-ai-policy-coalition-ariam-alongside-disney-the-bbc-and-the-new-york-times/"
   },
   {
@@ -50,6 +61,11 @@
     "publishedAt": "2026.09.24",
     "hue": 270,
     "image": "https://www.progressiverobot.com/wp-content/smush-webp/2026/09/gemini-3-8-flash-tts-flash-lite-tts-ai-studio_a-gemini-3.8-flash-tts-equaliser-row-of-seven-bars.jpg.webp",
+    "keywords": [
+      "음성",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://www.progressiverobot.com/2026/09/23/gemini-3-8-flash-tts-flash-lite-tts-ai-studio/",
     "urls": [
       {
@@ -68,6 +84,11 @@
     "publishedAt": "2026.09.24",
     "hue": 10,
     "image": "https://startupfortune.com/wp-content/uploads/2026/09/sora-openai-disney-1024x576.jpg",
+    "keywords": [
+      "영상",
+      "OpenAI",
+      "Sora"
+    ],
     "url": "https://startupfortune.com/openai-shuts-down-soras-api-this-week-ending-its-billion-dollar-disney-deal/",
     "urls": [
       {

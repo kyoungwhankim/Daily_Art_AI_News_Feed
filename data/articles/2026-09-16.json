@@ -9,6 +9,12 @@
     "publishedAt": "2026.09.16",
     "hue": 35,
     "image": "https://techbullion.com/wp-content/uploads/2025/05/Screenshot-2026-09-15-141731.png",
+    "keywords": [
+      "3D",
+      "Unity",
+      "Meshy",
+      "Unreal Engine"
+    ],
     "url": "https://techbullion.com/from-ai-game-art-to-game-ready-3d-assets-best-tools-for-unity-unreal-and-godot/"
   },
   {
@@ -21,6 +27,10 @@
     "publishedAt": "2026.09.16",
     "hue": 30,
     "image": "https://manilatimes.net/manilatimes/uploads/images/2026/09/15/1217147.jpg",
+    "keywords": [
+      "코딩",
+      "Claude"
+    ],
     "url": "https://www.manilatimes.net/2026/09/15/tmt-newswire/media-outreach-newswire/xsolla-launches-ai-toolkit-enabling-engine-agnostic-game-commerce-setup-with-ai-coding-tools/2425145"
   },
   {
@@ -33,6 +43,10 @@
     "publishedAt": "2026.09.16",
     "hue": 220,
     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_3-8_live___keyword__blog-social.width-1300.png",
+    "keywords": [
+      "Google",
+      "Gemini"
+    ],
     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
   },
   {
@@ -45,6 +59,9 @@
     "publishedAt": "2026.09.16",
     "hue": 270,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260915_Affinity33_f-960x480.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.cgchannel.com/2026/09/canva-releases-affinity-3-3/",
     "urls": [
       {
@@ -62,6 +79,9 @@
     "source": "GlobeNewswire",
     "publishedAt": "2026.09.16",
     "hue": 290,
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.globenewswire.com/news-release/2026/09/15/3362194/0/en/ai-vector-graphics-tools-power-creative-workflows-in-coreldraw-graphics-suite-2026.html"
   }
 ]

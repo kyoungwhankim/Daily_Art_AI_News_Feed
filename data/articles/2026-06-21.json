@@ -9,6 +9,7 @@
     "publishedAt": "2026.06.21",
     "hue": 10,
     "image": "https://cdn.mos.cms.futurecdn.net/3VN7SmGVhGjjhRzTuSChwN-2560-80.jpg",
+    "keywords": [],
     "url": "https://www.pcgamer.com/software/ai/former-dragon-age-writer-says-ai-could-make-gamedev-frustrating-as-hell-how-are-we-going-to-train-up-the-next-generation-of-devs-if-we-eliminate-every-entry-level-task/"
   },
   {
@@ -21,6 +22,12 @@
     "publishedAt": "2026.06.21",
     "hue": 30,
     "image": "https://media.assettype.com/outlook-respawn/2026-04-23/ipfs549i/1-90.jpg",
+    "keywords": [
+      "Epic Games",
+      "Unreal Engine",
+      "Gemini",
+      "Claude"
+    ],
     "url": "https://respawn.outlookindia.com/gaming/gaming-news/vampire-survivors-halts-fortnite-crossover-over-epic-games-ai-push"
   },
   {
@@ -33,6 +40,9 @@
     "publishedAt": "2026.06.21",
     "hue": 200,
     "image": "https://twistedvoxel.com/wp-content/uploads/2026/01/playstation-astro-bot.jpg",
+    "keywords": [
+      "Sony"
+    ],
     "url": "https://www.techpowerup.com/339099/sony-highlights-playstation-ai-usage-in-legal-documentation"
   },
   {
@@ -45,6 +55,9 @@
     "publishedAt": "2026.06.21",
     "hue": 350,
     "image": "https://the-decoder.com/wp-content/uploads/2026/06/eu_ai_flag-1.png",
+    "keywords": [
+      "Amazon"
+    ],
     "url": "https://the-decoder.com/the-eu-doesnt-really-know-what-a-deepfake-is-and-thats-becoming-a-problem-for-retail/"
   },
   {
@@ -57,6 +70,7 @@
     "publishedAt": "2026.06.21",
     "hue": 120,
     "image": "https://the-decoder.com/wp-content/uploads/2026/06/norway_flag.png",
+    "keywords": [],
     "url": "https://the-decoder.com/norway-bans-generative-ai-tools-in-elementary-schools-to-protect-kids-basic-learning-skills/"
   }
 ]

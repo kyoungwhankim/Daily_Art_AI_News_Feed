@@ -9,6 +9,11 @@
     "publishedAt": "2026.06.03",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/48610/images/6a1eb784512cf/contain_1200x630.jpg",
+    "keywords": [
+      "NVIDIA",
+      "Blender",
+      "DLSS"
+    ],
     "url": "https://80.lv/articles/dlss-is-officially-coming-to-blender-5-3"
   },
   {
@@ -21,6 +26,11 @@
     "publishedAt": "2026.06.03",
     "hue": 30,
     "image": "https://cdn.pokde.net/wp-content/uploads/2026/06/02223844/dlss45rrcover-860x452.jpg",
+    "keywords": [
+      "NVIDIA",
+      "Unreal Engine",
+      "DLSS"
+    ],
     "url": "https://pokde.net/system/pc/gpu/computex-2026-dlss-4-5-ray-recon"
   },
   {
@@ -33,6 +43,10 @@
     "publishedAt": "2026.06.03",
     "hue": 220,
     "image": "https://cdn-chilj.nitrocdn.com/gYFaTcLxknXlucWgXPjHDdhAuyobJjHx/assets/images/optimized/rev-c91401d/winbuzzer.com/wp-content/uploads/2026/06/Microsoft-MAI-Plazground-1067x.jpg",
+    "keywords": [
+      "2D·이미지",
+      "Microsoft"
+    ],
     "url": "https://winbuzzer.com/2026/06/02/microsoft-adds-seven-mai-models-to-foundry-for-developers-xcxwbn/",
     "urls": [
       {
@@ -51,6 +65,12 @@
     "publishedAt": "2026.06.03",
     "hue": 290,
     "image": "https://www.thetechoutlook.com/wp-content/uploads/2026/06/Adobe-and-nVidea.jpg",
+    "keywords": [
+      "Adobe",
+      "NVIDIA",
+      "Photoshop",
+      "Premiere"
+    ],
     "url": "https://www.thetechoutlook.com/news/apps/adobe-partners-with-nvidia-to-optimize-photoshop-and-premiere-with-rtx-spark-superchip/"
   }
 ]

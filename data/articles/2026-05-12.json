@@ -9,6 +9,10 @@
     "publishedAt": "2026.05.12",
     "hue": 210,
     "image": "https://www.technology.org/texorgwp/wp-content/uploads/2026/05/sony-infiniterealities.jpeg",
+    "keywords": [
+      "애니메이션",
+      "Sony"
+    ],
     "url": "https://www.technology.org/2026/05/11/sony-ai-game-flood-predictions/"
   },
   {
@@ -21,6 +25,7 @@
     "publishedAt": "2026.05.12",
     "hue": 30,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2026/05/a-close-up-of-the-lies-of-p-coverart-showing-pinocchio-s-face.jpg",
+    "keywords": [],
     "url": "https://www.thegamer.com/lies-of-p-studio-ai-art/"
   },
   {
@@ -33,6 +38,9 @@
     "publishedAt": "2026.05.12",
     "hue": 30,
     "image": "https://sqmagazine.co.uk/wp-content/uploads/2026/05/sony-says-playstation-studios-uses-ai-tools-for-game-development.jpg",
+    "keywords": [
+      "Sony"
+    ],
     "url": "https://sqmagazine.co.uk/sony-ai-tools-playstation-studios-game-development/"
   },
   {
@@ -45,6 +53,7 @@
     "publishedAt": "2026.05.12",
     "hue": 50,
     "image": "https://static.invenglobal.com/upload/image/2026/05/11/r1778466194823116.jpeg",
+    "keywords": [],
     "url": "https://www.invenglobal.com/articles/21725/registration-for-2026-nexon-developers-conference-ndc-opens-on-the-19th",
     "urls": [
       {
@@ -62,6 +71,12 @@
     "source": "Winger Daily",
     "publishedAt": "2026.05.12",
     "hue": 290,
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "음악·사운드",
+      "MiniMax"
+    ],
     "url": "https://www.wingerdaily.com/2026/05/11/minimax-hailuo-ai-cannes-waiff-animated-music-video/"
   },
   {
@@ -74,6 +89,9 @@
     "publishedAt": "2026.05.12",
     "hue": 10,
     "image": "https://variety.com/wp-content/uploads/2026/05/GettyImages-2270535195.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://variety.com/2026/film/news/cannes-thierry-fremaux-oscars-ai-rules-obvious-1236401234/"
   },
   {
@@ -86,6 +104,10 @@
     "publishedAt": "2026.05.12",
     "hue": 260,
     "image": "https://about.fb.com/wp-content/uploads/2026/05/2026_CANNES_SIGNATURES_WEB_COULEUR-1_2560x1440.jpg",
+    "keywords": [
+      "영상",
+      "Meta"
+    ],
     "url": "https://about.fb.com/news/2026/05/meta-cannes-film-festival-partnership/"
   }
 ]

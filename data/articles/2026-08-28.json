@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.28",
     "hue": 30,
     "image": "https://www.pcguide.com/wp-content/uploads/2026/08/Tencent-Games-Central-Tech.jpg",
+    "keywords": [
+      "애니메이션",
+      "Tencent"
+    ],
     "url": "https://www.pcguide.com/news/tencent-games-central-tech-introduces-new-ai-tools-to-help-with-animation-gameplay-and-more-at-gamescom-2026/",
     "urls": [
       {
@@ -27,6 +31,7 @@
     "publishedAt": "2026.08.28",
     "hue": 220,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2026/08/geoff-keighley-on-stage-at-gamescom-onl-holding-a-mic.jpg",
+    "keywords": [],
     "url": "https://www.thegamer.com/gamescom-1-in-4-games-used-ai/"
   },
   {
@@ -39,6 +44,7 @@
     "publishedAt": "2026.08.28",
     "hue": 30,
     "image": "https://gamesbeat.com/wp-content/uploads/2026/08/unnamed-2.jpg",
+    "keywords": [],
     "url": "https://gamesbeat.com/gamescom-dev-sees-15-percent-attendance-increase-in-first-year-under-new-name/"
   },
   {
@@ -51,6 +57,9 @@
     "publishedAt": "2026.08.28",
     "hue": 260,
     "image": "https://fortune.com/img-assets/wp-content/uploads/2026/08/GettyImages-2287380982-e1787822287664.jpg",
+    "keywords": [
+      "NVIDIA"
+    ],
     "url": "https://fortune.com/2026/08/27/nvidia-hugging-face-billion-dollar-deal-open-source-ai/",
     "urls": [
       {
@@ -73,6 +82,12 @@
     "publishedAt": "2026.08.28",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg",
+    "keywords": [
+      "Google",
+      "OpenAI",
+      "Anthropic",
+      "Microsoft"
+    ],
     "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
   }
 ]

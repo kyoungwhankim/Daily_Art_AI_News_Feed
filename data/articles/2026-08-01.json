@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.01",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/07/260731_AccuFace2_ExpressionCurve-960x480.jpg",
+    "keywords": [
+      "애니메이션",
+      "Reallusion"
+    ],
     "url": "https://www.cgchannel.com/2026/07/reallusion-launches-accuface-2/",
     "urls": [
       {
@@ -27,6 +31,7 @@
     "publishedAt": "2026.08.01",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/140681/89532/weekinviews310726_l1200.jpg",
+    "keywords": [],
     "url": "https://www.pocketgamer.biz/meaningful-collaborations-arknights-endfields-first-six-months-and-ai-in-china-week-in-views/"
   },
   {
@@ -39,6 +44,11 @@
     "publishedAt": "2026.08.01",
     "hue": 280,
     "image": "https://www.indexbox.io/landing/img/blog/telegram-fallback/40768a1e9d1e99455e149fb762356dee.webp",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "MiniMax"
+    ],
     "url": "https://www.indexbox.io/blog/minimax-unveils-h3-video-generation-model-with-open-weights/",
     "urls": [
       {
@@ -56,6 +66,11 @@
     "source": "ByteDance Seed",
     "publishedAt": "2026.08.01",
     "hue": 260,
+    "keywords": [
+      "영상",
+      "ByteDance",
+      "Seedance"
+    ],
     "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
   },
   {
@@ -68,6 +83,10 @@
     "publishedAt": "2026.08.01",
     "hue": 355,
     "image": "https://musically.com/wp-content/uploads/2026/06/SUNO-logo-on-a-mobile-Jun-2026-e1782472416308.png",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://musically.com/2026/07/31/german-collecting-society-gema-wins-its-copyright-infringement-lawsuit-against-suno/"
   }
 ]

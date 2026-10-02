@@ -9,6 +9,10 @@
     "publishedAt": "2026.06.05",
     "hue": 30,
     "image": "https://www.manilatimes.net/manilatimes/uploads/images/2026/06/04/1086198.jpg",
+    "keywords": [
+      "3D",
+      "Meshy"
+    ],
     "url": "https://www.manilatimes.net/2026/06/04/tmt-newswire/pr-newswire/meshy-launches-3d-agent-beta-the-worlds-first-ai-agent-for-3d-creation/2359047",
     "urls": [
       {
@@ -27,6 +31,12 @@
     "publishedAt": "2026.06.05",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/48566/images/6a19c8c66874a/contain_1200x630.png",
+    "keywords": [
+      "Tripo",
+      "Meshy",
+      "Unreal Engine",
+      "Claude"
+    ],
     "url": "https://80.lv/articles/connect-your-favorite-ai-models-directly-into-unreal-engine-with-nwiro-integration-kit"
   },
   {
@@ -39,6 +49,7 @@
     "publishedAt": "2026.06.05",
     "hue": 10,
     "image": "https://assets.games.gg/summer_game_fest_ai_disclosures_hype_og_24b95572c1.webp",
+    "keywords": [],
     "url": "https://games.gg/news/summer-game-fest-ai-disclosures-hype/"
   },
   {
@@ -51,6 +62,9 @@
     "publishedAt": "2026.06.05",
     "hue": 270,
     "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2828fd11-d79e-4b97-98b8-4e06655d2020/ideogram-reve.jpg?t=1780534279",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.therundown.ai/p/ideogram-and-reve-rethink-how-ai-images-get-made",
     "urls": [
       {
@@ -69,6 +83,7 @@
     "publishedAt": "2026.06.05",
     "hue": 260,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/davinci-resolve-21-social.jpg",
+    "keywords": [],
     "url": "https://www.cgchannel.com/2026/06/blackmagic-design-releases-davinci-resolve-21-0/",
     "urls": [
       {
@@ -87,6 +102,9 @@
     "publishedAt": "2026.06.05",
     "hue": 350,
     "image": "https://variety.com/wp-content/uploads/2023/10/Sony-Logo.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "Sony"
+    ],
     "url": "https://variety.com/2026/biz/news/ip-ai-firm-midnight-labs-sony-million-dollar-investment-1236766931/"
   }
 ]

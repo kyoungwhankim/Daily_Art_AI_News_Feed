@@ -9,6 +9,10 @@
     "publishedAt": "2026.05.09",
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/48214/images/69fe426580475/contain_1200x630.jpg",
+    "keywords": [
+      "애니메이션",
+      "Sony"
+    ],
     "url": "https://80.lv/articles/sony-says-ai-will-unleash-the-creativity-of-our-studios-while-humans-remain-at-the-center"
   },
   {
@@ -21,6 +25,10 @@
     "publishedAt": "2026.05.09",
     "hue": 30,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2025/05/mixcollage-22-may-2025-12-14-pm-468.jpg?w=1600&h=900&fit=crop",
+    "keywords": [
+      "애니메이션",
+      "Sony"
+    ],
     "url": "https://www.thegamer.com/naughty-dog-ai-facial-animations-sony-president/"
   },
   {
@@ -33,6 +41,10 @@
     "publishedAt": "2026.05.09",
     "hue": 30,
     "image": "https://cdn.wccftech.com/wp-content/uploads/2026/05/playstation-wws-HD-1920x1081",
+    "keywords": [
+      "영상",
+      "Sony"
+    ],
     "url": "https://wccftech.com/sony-ai-game-development-strategy-larian-backlash/"
   },
   {
@@ -45,6 +57,9 @@
     "publishedAt": "2026.05.09",
     "hue": 200,
     "image": "https://www.videogameschronicle.com/files/2026/05/sony-ai-1.jpg",
+    "keywords": [
+      "Sony"
+    ],
     "url": "https://www.videogameschronicle.com/news/sony-lays-out-its-ai-plan-for-playstation-we-believe-ai-will-unleash-the-creativity-of-our-studios/"
   },
   {
@@ -57,6 +72,10 @@
     "publishedAt": "2026.05.09",
     "hue": 290,
     "image": "https://cdn.mos.cms.futurecdn.net/6SBkuqA8iY5zed3qKPXz3m-2560-80.jpg",
+    "keywords": [
+      "영상",
+      "Meta"
+    ],
     "url": "https://www.creativebloq.com/ai/ai-art/john-lennon-documentary-will-be-a-controversial-test-for-ai-video"
   },
   {
@@ -69,6 +88,10 @@
     "publishedAt": "2026.05.09",
     "hue": 260,
     "image": "https://variety.com/wp-content/uploads/2025/01/FotoJet-22.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "영상",
+      "Sony"
+    ],
     "url": "https://variety.com/2026/biz/asia/sony-playstation-ai-strategy-tariffs-memory-1236741351/"
   }
 ]

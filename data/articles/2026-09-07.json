@@ -9,6 +9,10 @@
     "publishedAt": "2026.09.07",
     "hue": 20,
     "image": "https://assets.viggle.ai/pub/www/blog/cover-viggle-animate-character-replacement-from-a-repainted-frame-9aae0080.webp",
+    "keywords": [
+      "애니메이션",
+      "영상"
+    ],
     "url": "https://viggle.ai/blog/viggle-animate-character-replacement-from-a-repainted-frame",
     "urls": [
       {
@@ -34,6 +38,12 @@
     "source": "ComfyUI",
     "publishedAt": "2026.09.07",
     "hue": 200,
+    "keywords": [
+      "2D·이미지",
+      "음악·사운드",
+      "MiniMax",
+      "ComfyUI"
+    ],
     "url": "https://docs.comfy.org/changelog"
   },
   {
@@ -46,6 +56,9 @@
     "publishedAt": "2026.09.07",
     "hue": 0,
     "image": "https://kotaku.com/app/uploads/2026/09/trailer-real.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://kotaku.com/game-accused-of-using-ai-to-generate-its-reveal-trailer-proves-it-was-made-by-people-2000731291"
   },
   {
@@ -58,6 +71,7 @@
     "publishedAt": "2026.09.07",
     "hue": 260,
     "image": "https://www.unite.ai/wp-content/uploads/2026/09/h-company-releases-neomme-open-source-multimodal-encoder-family.jpg",
+    "keywords": [],
     "url": "https://www.marktechpost.com/2026/09/06/h-company-releases-neomme-a-family-of-260m-and-800m-single-tower-multimodal-encoders-that-drop-the-vision-tower-and-causal-decoder/",
     "urls": [
       {

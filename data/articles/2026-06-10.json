@@ -9,6 +9,9 @@
     "publishedAt": "2026.06.10",
     "hue": 30,
     "image": "https://cdn.sanity.io/images/2ylxvaa2/production/2f5339a88bd93c37ce53ab8512bfc61145bc9029-1920x1080.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://lumalabs.ai/news/introducing-ray-3-2",
     "urls": [
       {
@@ -27,6 +30,9 @@
     "publishedAt": "2026.06.10",
     "hue": 200,
     "image": "https://techcrunch.com/wp-content/uploads/2026/06/apple-siri-ai-use-cases.png",
+    "keywords": [
+      "Apple"
+    ],
     "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
     "urls": [
       {
@@ -45,6 +51,10 @@
     "publishedAt": "2026.06.10",
     "hue": 260,
     "image": "https://photos5.appleinsider.com/gallery/67900-143129-29321CD5-D2BB-4D9D-A393-85526AE9460B-xl.jpg",
+    "keywords": [
+      "2D·이미지",
+      "Apple"
+    ],
     "url": "https://appleinsider.com/articles/26/06/09/apple-intelligence-gives-photos-in-ios-27-its-biggest-editing-upgrade-in-years"
   }
 ]

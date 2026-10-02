@@ -9,6 +9,12 @@
     "publishedAt": "2026.05.02",
     "hue": 35,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260501_ArcBrush_FreeNodeBasedImageEditor_f.jpg",
+    "keywords": [
+      "2D·이미지",
+      "텍스처",
+      "Meta",
+      "Photoshop"
+    ],
     "url": "https://www.cgchannel.com/2026/05/arcbrush-is-a-free-node-based-image-editor-and-texture-editor/",
     "urls": [
       {
@@ -27,6 +33,12 @@
     "publishedAt": "2026.05.02",
     "hue": 220,
     "image": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/image4-6-1024x576.jpg",
+    "keywords": [
+      "애니메이션",
+      "NVIDIA",
+      "ComfyUI",
+      "DLSS"
+    ],
     "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5/",
     "urls": [
       {
@@ -44,6 +56,10 @@
     "source": "NVIDIA Technical Blog",
     "publishedAt": "2026.05.02",
     "hue": 200,
+    "keywords": [
+      "NVIDIA",
+      "ComfyUI"
+    ],
     "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui/"
   },
   {
@@ -56,6 +72,10 @@
     "publishedAt": "2026.05.02",
     "hue": 310,
     "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+    "keywords": [
+      "코딩",
+      "Midjourney"
+    ],
     "url": "https://updates.midjourney.com/v8-1-updates/",
     "urls": [
       {
@@ -74,6 +94,10 @@
     "publishedAt": "2026.05.02",
     "hue": 100,
     "image": "https://cdn.80.lv/api/upload/meta/48089/images/69f532e91f64d/contain_1200x630.jpg",
+    "keywords": [
+      "Anthropic",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/blender-clarifies-ai-policy-and-amends-anthropic-donation"
   },
   {
@@ -86,6 +110,10 @@
     "publishedAt": "2026.05.02",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt8a34d0b262b24067/681349b9b96fde370fe6fa09/Patch_Notes_50_Header.png",
+    "keywords": [
+      "코딩",
+      "Claude"
+    ],
     "url": "https://www.gamedeveloper.com/business/gamemaker-says-ai-coding-is-inevitable-let-s-talk-about-it"
   },
   {
@@ -98,6 +126,7 @@
     "publishedAt": "2026.05.02",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/48088/images/69f5254cbadff/contain_1200x630.jpg",
+    "keywords": [],
     "url": "https://80.lv/articles/the-academy-draws-line-for-oscars-no-ai-actors-and-no-ai-scripts"
   },
   {
@@ -110,6 +139,10 @@
     "publishedAt": "2026.05.02",
     "hue": 50,
     "image": "https://techcrunch.com/wp-content/uploads/2025/04/chatgpt-india.jpg",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/"
   }
 ]

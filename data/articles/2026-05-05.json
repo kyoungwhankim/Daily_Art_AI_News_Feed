@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.05",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/05/260504_LightWave2026_f.jpg",
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://www.cgchannel.com/2026/05/lightwave-digital-unveils-lightwave-2026/"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.05.05",
     "hue": 210,
     "image": "https://cdn.80.lv/api/upload/meta/48105/images/69f8966e8a359/contain_1200x630.jpg",
+    "keywords": [
+      "텍스처",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/blender-5-2-lts-introduces-new-cycles-texture-cache-system"
   },
   {
@@ -33,6 +40,10 @@
     "publishedAt": "2026.05.05",
     "hue": 15,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/04/260428_Anthropic_BlenderCorporatePatron_f.jpg",
+    "keywords": [
+      "Anthropic",
+      "Blender"
+    ],
     "url": "https://www.cgchannel.com/2026/05/anthropics-patronage-of-blender-downgraded-to-one-off-donation/",
     "urls": [
       {
@@ -51,6 +62,7 @@
     "publishedAt": "2026.05.05",
     "hue": 350,
     "image": "https://nofilmschool.com/media-library/image.jpg?id=66678673&width=1200&height=600&coordinates=0%2C120%2C0%2C120",
+    "keywords": [],
     "url": "https://nofilmschool.com/the-academy-vs-ai"
   },
   {
@@ -63,6 +75,9 @@
     "publishedAt": "2026.05.05",
     "hue": 260,
     "image": "https://techcrunch.com/wp-content/uploads/2026/03/ai-apps-GettyImages-2214375253.jpg?resize=1200,800",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/"
   }
 ]

@@ -9,6 +9,11 @@
     "publishedAt": "2026.07.29",
     "hue": 160,
     "image": "https://cdn.80.lv/api/upload/meta/49475/images/6a673ea6b6a4e/contain_1200x630.jpg",
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/full-body-hand-facial-motion-capture-from-any-video-in-blender",
     "urls": [
       {
@@ -27,6 +32,10 @@
     "publishedAt": "2026.07.29",
     "hue": 220,
     "image": "https://www.cgchannel.com/wp-content/uploads/2024/04/240412_Flame2025_f.jpg",
+    "keywords": [
+      "VFX",
+      "Autodesk"
+    ],
     "url": "https://www.cgchannel.com/2026/07/autodesk-releases-flame-2027/",
     "urls": [
       {
@@ -45,6 +54,9 @@
     "publishedAt": "2026.07.29",
     "hue": 210,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltcff5344af178004e/6a689b494193b6063711eae1/Meta_header.png",
+    "keywords": [
+      "Meta"
+    ],
     "url": "https://www.gamedeveloper.com/business/quest-maker-meta-spending-billions-on-ai-data-centre-while-lamenting-the-ai-driven-component-shortage"
   },
   {
@@ -56,6 +68,10 @@
     "source": "PR Newswire",
     "publishedAt": "2026.07.29",
     "hue": 290,
+    "keywords": [
+      "애니메이션",
+      "영상"
+    ],
     "url": "https://www.prnewswire.com/news-releases/oiioii-ai-the-worlds-first-ai-animation-agent-platform-launches-in-the-us-302835937.html",
     "urls": [
       {
@@ -78,6 +94,9 @@
     "publishedAt": "2026.07.29",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/49479/images/6a677279974a8/contain_1200x630.jpg",
+    "keywords": [
+      "NVIDIA"
+    ],
     "url": "https://80.lv/articles/in-his-first-twitter-post-nvidia-ceo-shows-big-companies-pushing-to-keep-ai-models-publicly-downloadable"
   },
   {
@@ -90,6 +109,11 @@
     "publishedAt": "2026.07.29",
     "hue": 270,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/Fish-Audio-CoFounders.jpeg?w=1024",
+    "keywords": [
+      "음악·사운드",
+      "음성",
+      "NVIDIA"
+    ],
     "url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
   }
 ]

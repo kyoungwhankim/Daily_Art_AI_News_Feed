@@ -9,6 +9,11 @@
     "publishedAt": "2026.05.20",
     "hue": 210,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/Genie-Street-View-NYC.png?resize=1200,662",
+    "keywords": [
+      "3D",
+      "VFX",
+      "Google"
+    ],
     "url": "https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/"
   },
   {
@@ -21,6 +26,9 @@
     "publishedAt": "2026.05.20",
     "hue": 35,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/google-pics.png?resize=1200,736",
+    "keywords": [
+      "Google"
+    ],
     "url": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/"
   },
   {
@@ -32,6 +40,10 @@
     "source": "CG Channel",
     "publishedAt": "2026.05.20",
     "hue": 200,
+    "keywords": [
+      "애니메이션",
+      "VFX"
+    ],
     "url": "https://www.cgchannel.com/2026/05/new-motion-graphics-tool-caddis-puts-a-node-graph-in-every-layer/"
   },
   {
@@ -44,6 +56,7 @@
     "publishedAt": "2026.05.20",
     "hue": 30,
     "image": "https://static.invenglobal.com/upload/image/2026/05/19/r1779177860478731.jpeg",
+    "keywords": [],
     "url": "https://www.invenglobal.com/articles/21982/applications-open-for-2026-game-development-ai-transformation-ax-support-program",
     "urls": [
       {
@@ -62,6 +75,12 @@
     "publishedAt": "2026.05.20",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/Google-Omni-Flash.png?resize=1200,683",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://techcrunch.com/2026/05/19/googles-gemini-omni-turns-images-audio-and-text-into-video-and-thats-just-the-start/"
   },
   {
@@ -74,6 +93,11 @@
     "publishedAt": "2026.05.20",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/google-synth-id-developer-conference.png?resize=1200,692",
+    "keywords": [
+      "2D·이미지",
+      "Google",
+      "OpenAI"
+    ],
     "url": "https://techcrunch.com/2026/05/19/openai-is-making-it-easier-to-check-if-an-image-was-made-by-their-models/"
   },
   {
@@ -86,6 +110,12 @@
     "publishedAt": "2026.05.20",
     "hue": 260,
     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleFlow-Image.width-1300.jpg",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates/",
     "urls": [
       {

@@ -9,6 +9,9 @@
     "publishedAt": "2026.05.18",
     "hue": 20,
     "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/05/party-animals-corgi-falling-over-wall-1.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://gamerant.com/party-animals-apology-ai-contest/",
     "urls": [
       {
@@ -31,6 +34,9 @@
     "publishedAt": "2026.05.18",
     "hue": 260,
     "image": "https://i0.wp.com/beforesandafters.com/wp-content/uploads/2026/05/FMX-2026-_day2_Roland-Emmerich_Ian-Failes_01-2.jpg?fit=1280%2C853&ssl=1",
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://beforesandafters.com/2026/05/17/reflections-on-fmx-2026/",
     "urls": [
       {
@@ -49,6 +55,11 @@
     "publishedAt": "2026.05.18",
     "hue": 200,
     "image": "https://static.cryptobriefing.com/wp-content/uploads/2026/05/17160834/ai-is-winning-the-u-s-china-ai-race-1-800x420.jpeg",
+    "keywords": [
+      "영상",
+      "ByteDance",
+      "Seedance"
+    ],
     "url": "https://cryptobriefing.com/chinese-ai-video-generation-leads-us/"
   }
 ]

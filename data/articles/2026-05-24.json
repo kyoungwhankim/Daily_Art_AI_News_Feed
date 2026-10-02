@@ -9,6 +9,10 @@
     "publishedAt": "2026.05.24",
     "hue": 260,
     "image": "https://www.eyerys.com/sites/default/files/runway-aleph-2-1.avif",
+    "keywords": [
+      "영상",
+      "Runway"
+    ],
     "url": "https://www.eyerys.com/articles/news/aleph-2p0-runway-pushes-ai-video-editing-beyond-generation-precision-control"
   },
   {
@@ -21,6 +25,9 @@
     "publishedAt": "2026.05.24",
     "hue": 340,
     "image": "https://www.hollywoodreporter.com/wp-content/uploads/2026/05/The-black-ball-Jordan-Firstman-Vin-Diesel-Robot-Cannes.jpg?w=1920&h=1080&crop=1",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.hollywoodreporter.com/lists/cannes-film-festival-takeaways-ai-queer-cinema/"
   }
 ]

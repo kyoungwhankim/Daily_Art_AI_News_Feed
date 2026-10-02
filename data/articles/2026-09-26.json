@@ -9,6 +9,12 @@
     "publishedAt": "2026.09.26",
     "hue": 40,
     "image": "https://cdn.80.lv/api/upload/meta/50284/images/6aae39efbbe19/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "NVIDIA",
+      "Tripo",
+      "DLSS"
+    ],
     "url": "https://80.lv/articles/the-biggest-3d-art-technology-highlights-from-gamescom-2026",
     "urls": [
       {
@@ -27,6 +33,7 @@
     "publishedAt": "2026.09.26",
     "hue": 30,
     "image": "https://kotaku.com/app/uploads/2026/09/village-in-the-shade-shot.jpg",
+    "keywords": [],
     "url": "https://kotaku.com/nippon-ichi-nis-america-head-company-researching-ai-2000737211"
   }
 ]

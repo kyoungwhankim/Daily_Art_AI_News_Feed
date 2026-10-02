@@ -9,6 +9,13 @@
     "publishedAt": "2026.07.17",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/49281/images/6a57ea98136c5/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "텍스처",
+      "가우시안 스플래팅",
+      "Houdini"
+    ],
     "url": "https://www.cgchannel.com/2026/07/sidefx-just-released-houdini-22/",
     "urls": [
       {
@@ -31,6 +38,11 @@
     "publishedAt": "2026.07.17",
     "hue": 330,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/Roblox-Build-feature.jpeg?w=1200",
+    "keywords": [
+      "3D",
+      "음악·사운드",
+      "Roblox"
+    ],
     "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/"
   },
   {
@@ -43,6 +55,10 @@
     "publishedAt": "2026.07.17",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/140462/89418/olga-taranova_l1200.jpg",
+    "keywords": [
+      "Unreal Engine",
+      "Claude"
+    ],
     "url": "https://www.pocketgamer.biz/lessons-from-building-an-ai-assisted-unreal-engine-tool/"
   },
   {
@@ -55,6 +71,10 @@
     "publishedAt": "2026.07.17",
     "hue": 30,
     "image": "https://cdn.mos.cms.futurecdn.net/5BCLDn9uWa9YYLdeqYWPBL-1920-80.png",
+    "keywords": [
+      "Gemini",
+      "Claude"
+    ],
     "url": "https://www.pcgamer.com/gaming-industry/poll-finds-100-percent-of-japanese-online-game-developers-are-using-ai-though-mostly-for-user-preference-analysis-and-user-behavior-prediction/",
     "urls": [
       {
@@ -73,6 +93,11 @@
     "publishedAt": "2026.07.17",
     "hue": 270,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/google-vids-ai-avatar.jpg?resize=1200,772",
+    "keywords": [
+      "영상",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
     "urls": [
       {
@@ -91,6 +116,9 @@
     "publishedAt": "2026.07.17",
     "hue": 290,
     "image": "https://www.fxguide.com/wp-content/uploads/2026/07/fxg-featured-RotoFoundry.jpg",
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://www.fxguide.com/fxfeatured/foundrys-smartroto-ai-assisted-roto-that-aims-to-work-the-way-you-do/"
   }
 ]

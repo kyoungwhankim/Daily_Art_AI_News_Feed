@@ -9,6 +9,10 @@
     "publishedAt": "2026.07.10",
     "hue": 200,
     "image": "https://opengraph.githubusercontent.com/1/zibra-ai/ZibraGDS",
+    "keywords": [
+      "VFX",
+      "Unreal Engine"
+    ],
     "url": "https://www.cgchannel.com/2026/07/zibra-ai-unveils-zibragds/"
   },
   {
@@ -21,6 +25,9 @@
     "publishedAt": "2026.07.10",
     "hue": 220,
     "image": "https://www.fxguide.com/wp-content/uploads/2026/07/Portugal2-830x415.jpg",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.fxguide.com/fxfeatured/switchhdr-an-ai-model-for-hdr-reconstruction-from-sdr-video/"
   },
   {
@@ -33,6 +40,9 @@
     "publishedAt": "2026.07.10",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7edd438adc4697ea/6a5011bc4143ff42acc13198/ashasharmafeatured.png",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://www.gamedeveloper.com/business/asha-sharma-joins-federal-reserve-task-force-days-after-laying-off-thousands-at-xbox"
   },
   {
@@ -45,6 +55,10 @@
     "publishedAt": "2026.07.10",
     "hue": 30,
     "image": "https://cdn.mos.cms.futurecdn.net/cnYqvbCpcTAgL4NMej8Ea3-1213-80.jpg",
+    "keywords": [
+      "코딩",
+      "Claude"
+    ],
     "url": "https://www.pcgamer.com/gaming-industry/pc-ports-of-old-console-games-are-the-new-ai-vibe-coding-battleground/"
   },
   {
@@ -57,6 +71,10 @@
     "publishedAt": "2026.07.10",
     "hue": 260,
     "image": "https://about.fb.com/wp-content/uploads/2026/07/Muse-Image_Social-Share-1.jpg?w=1200",
+    "keywords": [
+      "2D·이미지",
+      "Meta"
+    ],
     "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
     "urls": [
       {
@@ -75,6 +93,11 @@
     "publishedAt": "2026.07.10",
     "hue": 200,
     "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/03/google-photos-2.jpg",
+    "keywords": [
+      "영상",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/"
   },
   {
@@ -87,6 +110,11 @@
     "publishedAt": "2026.07.10",
     "hue": 290,
     "image": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w2000/2026/07/Seedream-5-0-Pro-07-09-2026_01_59_AM.jpg",
+    "keywords": [
+      "2D·이미지",
+      "ByteDance",
+      "Seedance"
+    ],
     "url": "https://www.testingcatalog.com/bytedance-debuts-seedream-5-0-pro-with-advanced-reasoning/",
     "urls": [
       {
@@ -105,6 +133,7 @@
     "publishedAt": "2026.07.10",
     "hue": 320,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/c.ai-Series-1.jpg",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist/"
   }
 ]

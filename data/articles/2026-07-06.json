@@ -9,6 +9,12 @@
     "publishedAt": "2026.07.06",
     "hue": 35,
     "image": "https://the-decoder.com/wp-content/uploads/2026/07/cc5_fable_5_ios_port-1200x692.png",
+    "keywords": [
+      "코딩",
+      "Google",
+      "Anthropic",
+      "Claude"
+    ],
     "url": "https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours/"
   },
   {
@@ -21,6 +27,9 @@
     "publishedAt": "2026.07.06",
     "hue": 210,
     "image": "https://www.3daistudio.com/og/updates.png",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://www.3daistudio.com/Updates",
     "urls": [
       {
@@ -39,6 +48,11 @@
     "publishedAt": "2026.07.06",
     "hue": 290,
     "image": "https://the-decoder.com/wp-content/uploads/2026/07/bytedance_seedance.png",
+    "keywords": [
+      "영상",
+      "ByteDance",
+      "Seedance"
+    ],
     "url": "https://the-decoder.com/hollywood-wants-seedance-banned-and-reportedly-also-wants-to-keep-using-it/"
   }
 ]

@@ -9,6 +9,10 @@
     "publishedAt": "2026.06.28",
     "hue": 200,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260625_RealityScan22_AMDGPUSupport_Pano2Views.jpg",
+    "keywords": [
+      "3D",
+      "Epic Games"
+    ],
     "url": "https://www.cgchannel.com/2026/06/epic-games-releases-realityscan-2-2-with-amd-gpu-support/"
   },
   {
@@ -21,6 +25,9 @@
     "publishedAt": "2026.06.28",
     "hue": 30,
     "image": "https://insider-gaming.com/wp-content/uploads/2026/05/Unreal-Engine-6-1024x569.png",
+    "keywords": [
+      "Epic Games"
+    ],
     "url": "https://insider-gaming.com/epic-ceo-speaks-out-against-valves-mandatory-ai-disclosure-on-steam/"
   },
   {
@@ -32,6 +39,11 @@
     "source": "CG Channel",
     "publishedAt": "2026.06.28",
     "hue": 290,
+    "keywords": [
+      "2D·이미지",
+      "영상",
+      "Adobe"
+    ],
     "url": "https://www.cgchannel.com/2026/06/adobe-to-acquire-topaz-labs/",
     "urls": [
       {
@@ -50,6 +62,7 @@
     "publishedAt": "2026.06.28",
     "hue": 270,
     "image": "https://www.cgchannel.com/wp-content/uploads/2025/12/251207_Optics2026_Photoshop.jpg",
+    "keywords": [],
     "url": "https://www.cgchannel.com/2026/06/boris-fx-releases-optics-2026/"
   },
   {
@@ -61,6 +74,12 @@
     "source": "Atlas Cloud",
     "publishedAt": "2026.06.28",
     "hue": 310,
+    "keywords": [
+      "영상",
+      "ByteDance",
+      "Runway",
+      "Seedance"
+    ],
     "url": "https://www.atlascloud.ai/blog/ai-updates/seedance-2.0-mini-overview",
     "urls": [
       {

@@ -8,6 +8,10 @@
     "source": "Google Cloud Press Corner",
     "publishedAt": "2026.04.23",
     "hue": 200,
+    "keywords": [
+      "Google",
+      "Gemini"
+    ],
     "url": "https://www.googlecloudpresscorner.com/2026-04-22-How-Capcom-Is-Leading-the-Way-for-Enterprise-Agentic-AI"
   },
   {
@@ -19,6 +23,9 @@
     "source": "TechCrunch",
     "publishedAt": "2026.04.23",
     "hue": 200,
+    "keywords": [
+      "Google"
+    ],
     "url": "https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/"
   },
   {
@@ -31,6 +38,7 @@
     "publishedAt": "2026.04.23",
     "hue": 30,
     "image": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2026/04/edc895d3-afp__20231205__34728p6__v1__highres__rockstargamesreleasesfirsttrailerforgrandthefta_cropped_1.webp",
+    "keywords": [],
     "url": "https://www.freemalaysiatoday.com/category/business/2026/04/22/gaming-industry-could-unlock-us22bil-from-ai-cost-cuts-says-morgan-stanley"
   },
   {
@@ -43,6 +51,12 @@
     "publishedAt": "2026.04.23",
     "hue": 290,
     "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/04/ChatGPT.png",
+    "keywords": [
+      "2D·이미지",
+      "텍스처",
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://siliconangle.com/2026/04/21/openai-launches-chatgpt-images-2-0-codex-labs-developer-training-service/",
     "urls": [
       {
@@ -60,6 +74,9 @@
     "source": "TechCrunch",
     "publishedAt": "2026.04.23",
     "hue": 290,
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://techcrunch.com/2026/04/21/grai-believes-ai-can-make-music-more-social-not-replace-artists/"
   },
   {
@@ -71,6 +88,10 @@
     "source": "ProVideo Coalition",
     "publishedAt": "2026.04.23",
     "hue": 290,
+    "keywords": [
+      "3D",
+      "영상"
+    ],
     "url": "https://www.provideocoalition.com/best-in-show-awards-at-nab-2026/",
     "urls": [
       {

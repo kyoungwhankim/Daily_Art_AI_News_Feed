@@ -9,6 +9,9 @@
     "publishedAt": "2026.08.13",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/08/260809_TheWeekInCG_9August2025_FumeFX76_f-960x480.jpg",
+    "keywords": [
+      "Blender"
+    ],
     "url": "https://www.cgchannel.com/2026/08/the-week-in-cg-9-august-2026/"
   },
   {
@@ -21,6 +24,9 @@
     "publishedAt": "2026.08.13",
     "hue": 200,
     "image": "https://arxiv.org/html/2608.06009/x1.png",
+    "keywords": [
+      "애니메이션"
+    ],
     "url": "https://arxiv.org/abs/2608.06009",
     "urls": [
       {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.08.13",
     "hue": 200,
     "image": "https://arxiv.org/html/2608.05248/x1.png",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://arxiv.org/abs/2608.05248",
     "urls": [
       {
@@ -57,6 +66,9 @@
     "publishedAt": "2026.08.13",
     "hue": 280,
     "image": "https://arxiv.org/html/2608.05213/x1.png",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://arxiv.org/abs/2608.05213",
     "urls": [
       {
@@ -75,6 +87,10 @@
     "publishedAt": "2026.08.13",
     "hue": 340,
     "image": "https://arxiv.org/html/2608.05663/x1.png",
+    "keywords": [
+      "영상",
+      "음악·사운드"
+    ],
     "url": "https://arxiv.org/abs/2608.05663",
     "urls": [
       {
@@ -93,6 +109,7 @@
     "publishedAt": "2026.08.13",
     "hue": 220,
     "image": "https://arxiv.org/html/2608.06257/x1.png",
+    "keywords": [],
     "url": "https://arxiv.org/abs/2608.06257",
     "urls": [
       {
@@ -111,6 +128,10 @@
     "publishedAt": "2026.08.13",
     "hue": 220,
     "image": "https://www.creativeainews.com/content/images/size/w2000/2026/08/stable-diffusion-webui-metal-apple-silicon-2026-thumbnail.jpg",
+    "keywords": [
+      "Apple",
+      "Stability AI"
+    ],
     "url": "https://www.creativeainews.com/articles/stable-diffusion-webui-metal-apple-silicon-2026/"
   },
   {
@@ -123,6 +144,9 @@
     "publishedAt": "2026.08.13",
     "hue": 15,
     "image": "https://cdn.mos.cms.futurecdn.net/6kXsysepNhmLkYCkMg7jMk-1140-80.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.creativebloq.com/ai/ai-art/the-square-enix-ai-fiasco-convinces-me-we-all-need-to-start-documenting-our-creative-process"
   },
   {
@@ -135,6 +159,9 @@
     "publishedAt": "2026.08.13",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/08/Google-AI-overview-official-image-from-Google-Blog-1200x675.jpg",
+    "keywords": [
+      "Google"
+    ],
     "url": "https://kotaku.com/google-ai-somehow-leaked-a-game-devs-content-plans-hidden-inside-their-own-google-docs-2000722497"
   },
   {
@@ -147,6 +174,7 @@
     "publishedAt": "2026.08.13",
     "hue": 5,
     "image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fai-and-games-eu-ai-act.jpg",
+    "keywords": [],
     "url": "https://www.aiandgames.com/p/what-does-the-eus-ai-transparency"
   },
   {
@@ -159,6 +187,9 @@
     "publishedAt": "2026.08.13",
     "hue": 30,
     "image": "https://arxiv.org/html/2608.05565/x1.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://arxiv.org/abs/2608.05565",
     "urls": [
       {
@@ -177,6 +208,7 @@
     "publishedAt": "2026.08.13",
     "hue": 200,
     "image": "https://arxiv.org/html/2608.05926/x1.png",
+    "keywords": [],
     "url": "https://arxiv.org/abs/2608.05926",
     "urls": [
       {
@@ -195,6 +227,9 @@
     "publishedAt": "2026.08.13",
     "hue": 350,
     "image": "https://www.techtimes.com/articles/marvel-rivals-ai-texture.jpg",
+    "keywords": [
+      "텍스처"
+    ],
     "url": "https://www.techtimes.com/articles/marvel-rivals-season-9-5-ai-texture-compression"
   },
   {
@@ -207,6 +242,7 @@
     "publishedAt": "2026.08.13",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6e9ff417175153e6/6a7c8a66f99fa04965db827a/THE_ALTERS_Announcement_KV_FINAL_nologo.jpg",
+    "keywords": [],
     "url": "https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years"
   },
   {
@@ -219,6 +255,10 @@
     "publishedAt": "2026.08.13",
     "hue": 220,
     "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2259148891.jpg",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
   },
   {
@@ -231,6 +271,11 @@
     "publishedAt": "2026.08.13",
     "hue": 270,
     "image": "https://cdn.mos.cms.futurecdn.net/pqLMcFtq2rPQEBvst5Lpuk-2000-80.jpg",
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "Higgsfield"
+    ],
     "url": "https://www.creativebloq.com/art/animation/pixar-co-founders-new-ai-role-is-reigniting-animations-biggest-debate"
   },
   {
@@ -243,6 +288,9 @@
     "publishedAt": "2026.08.13",
     "hue": 290,
     "image": "https://arxiv.org/html/2608.06231/x1.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://arxiv.org/abs/2608.06231",
     "urls": [
       {
@@ -261,6 +309,9 @@
     "publishedAt": "2026.08.13",
     "hue": 260,
     "image": "https://arxiv.org/html/2608.05976/x1.png",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://arxiv.org/abs/2608.05976",
     "urls": [
       {
@@ -279,6 +330,9 @@
     "publishedAt": "2026.08.13",
     "hue": 130,
     "image": "https://arxiv.org/html/2608.05800/x1.png",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://arxiv.org/list/cs.GR/recent",
     "urls": [
       {
@@ -296,6 +350,10 @@
     "source": "ComfyUI / GitHub",
     "publishedAt": "2026.08.13",
     "hue": 290,
+    "keywords": [
+      "2D·이미지",
+      "ComfyUI"
+    ],
     "url": "https://github.com/comfyanonymous/ComfyUI"
   },
   {
@@ -307,6 +365,10 @@
     "source": "80.lv",
     "publishedAt": "2026.08.13",
     "hue": 60,
+    "keywords": [
+      "애니메이션",
+      "텍스처"
+    ],
     "url": "https://80.lv/articles/"
   },
   {
@@ -319,6 +381,11 @@
     "publishedAt": "2026.08.13",
     "hue": 290,
     "image": "https://www.creativeainews.com/content/images/size/w2000/2026/08/ltx-2-5-open-weights-video-comfyui-2026-thumbnail-0001.jpg",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "ComfyUI"
+    ],
     "url": "https://www.creativeainews.com/articles/ltx-2-5-open-weights-video-comfyui-2026/"
   },
   {
@@ -331,6 +398,11 @@
     "publishedAt": "2026.08.13",
     "hue": 10,
     "image": "https://cdn.mos.cms.futurecdn.net/z9H4sYWjQE42gw9xW8iKRi-1286-80.jpg",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://www.musicradar.com/guitars/daddario-admits-ai-used-instring-demo-video",
     "urls": [
       {

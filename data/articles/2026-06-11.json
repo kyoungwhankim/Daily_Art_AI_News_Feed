@@ -9,6 +9,9 @@
     "publishedAt": "2026.06.11",
     "hue": 200,
     "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/KingdomHeartsCollectionSwitch2Cover.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.notebookcheck.net/Kingdom-Hearts-Collection-may-use-generative-AI-art-for-PS5-and-Switch-2-covers.1318928.0.html"
   },
   {
@@ -21,6 +24,10 @@
     "publishedAt": "2026.06.11",
     "hue": 30,
     "image": "https://nintendoeverything.com/wp-content/uploads/Crazy-Taxi.png",
+    "keywords": [
+      "Microsoft",
+      "Sega"
+    ],
     "url": "https://nintendoeverything.com/crazy-taxi-world-tour-producer-explains-how-the-team-is-using-ai/"
   },
   {
@@ -33,6 +40,9 @@
     "publishedAt": "2026.06.11",
     "hue": 340,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2026/06/cover-art-for-1666-amsterdam-showing-townsfolk-gathered-near-a-market-and-looking-at-some-magic.png?w=1600&h=900&fit=crop",
+    "keywords": [
+      "2D·이미지"
+    ],
     "url": "https://www.thegamer.com/1666-amsterdam-ai-art-response/"
   },
   {
@@ -45,6 +55,7 @@
     "publishedAt": "2026.06.11",
     "hue": 0,
     "image": "https://cdn.mos.cms.futurecdn.net/Dx6kf8VmbpLwSc9Wy2DscB-1920-80.jpg",
+    "keywords": [],
     "url": "https://www.pcgamer.com/software/ai/once-again-players-are-right-to-suspect-ai-was-used-in-a-game-once-again-a-dev-apologizes-for-using-ai-in-their-game/"
   },
   {
@@ -57,6 +68,7 @@
     "publishedAt": "2026.06.11",
     "hue": 240,
     "image": "https://substackcdn.com/image/fetch/$s_!6kVU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb857ac3b-55c4-42f4-854a-b8c969763e91_1200x630.jpeg",
+    "keywords": [],
     "url": "https://www.aiandgames.com/p/the-uks-governments-new-ai-adoption",
     "urls": [
       {
@@ -75,6 +87,7 @@
     "publishedAt": "2026.06.11",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2026/06/warner-music.jpg?resize=1200,800",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/"
   },
   {
@@ -87,6 +100,9 @@
     "publishedAt": "2026.06.11",
     "hue": 260,
     "image": "https://www.digitaltrends.com/tachyon/2026/06/ai-music-jazz-cover-song.jpg?resize=1200%2C630",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://www.digitaltrends.com/movies/a-jazz-label-covered-an-ai-generated-hit-to-make-a-point-the-music-industry-has-been-avoiding/"
   },
   {
@@ -99,6 +115,10 @@
     "publishedAt": "2026.06.11",
     "hue": 280,
     "image": "https://variety.com/wp-content/uploads/2026/06/IMG_6957.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "영상",
+      "Higgsfield"
+    ],
     "url": "https://variety.com/2026/film/features/i-saw-hell-grind-ai-generated-film-cannes-shocking-realistic-1236770720/"
   },
   {
@@ -111,6 +131,9 @@
     "publishedAt": "2026.06.11",
     "hue": 50,
     "image": "https://akns-images.eonline.com/eol_images/Entire_Site/20260610/b64b3935-9f59-467b-943d-f86b8017b6ff_1781128654.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top",
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.eonline.com/news/1432858/tribeca-festival-dreams-of-violets-ash-koosha-made-ai-movie-for-s2-000",
     "urls": [
       {

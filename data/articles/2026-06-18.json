@@ -9,6 +9,13 @@
     "publishedAt": "2026.06.18",
     "hue": 220,
     "image": "https://www.engadget.com/img/gallery/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/l-intro-1781726837.jpg",
+    "keywords": [
+      "Epic Games",
+      "Unreal Engine",
+      "MCP",
+      "Gemini",
+      "Claude"
+    ],
     "url": "https://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/",
     "urls": [
       {
@@ -27,6 +34,11 @@
     "publishedAt": "2026.06.18",
     "hue": 200,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260617_5KeyFeaturesForCGArtists_UnrealEngine58_MeshTerrain.jpg",
+    "keywords": [
+      "3D",
+      "Epic Games",
+      "Unreal Engine"
+    ],
     "url": "https://www.cgchannel.com/2026/06/see-5-key-features-for-cg-artists-in-unreal-engine-5-8/",
     "urls": [
       {
@@ -45,6 +57,10 @@
     "publishedAt": "2026.06.18",
     "hue": 340,
     "image": "https://www.videogameschronicle.com/files/2026/06/Screenshot-2026-06-17-165123.jpg",
+    "keywords": [
+      "Epic Games",
+      "Unreal Engine"
+    ],
     "url": "https://www.videogameschronicle.com/news/epic-reveals-unreal-engine-6-is-integrating-ai-models-so-developers-can-reduce-tedious-work/"
   },
   {
@@ -57,6 +73,7 @@
     "publishedAt": "2026.06.18",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/139873/89187/glitch-game-agent-hero_l1200.jpg",
+    "keywords": [],
     "url": "https://www.pocketgamer.biz/glitch-launches-ai-marketing-agent-for-solo-developers-and-indie-game-teams/"
   },
   {
@@ -69,6 +86,10 @@
     "publishedAt": "2026.06.18",
     "hue": 50,
     "image": "https://kotaku.com/app/uploads/2025/07/d3e9a03068db8ed5a660c4f516385d5b.jpg",
+    "keywords": [
+      "코딩",
+      "Google"
+    ],
     "url": "https://kotaku.com/pokemon-ai-challenges-trading-card-game-tcg-art-kaggle-2000707573"
   },
   {
@@ -81,6 +102,9 @@
     "publishedAt": "2026.06.18",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/04/vcrawlers.jpg",
+    "keywords": [
+      "Epic Games"
+    ],
     "url": "https://kotaku.com/vampire-survivors-studio-reviewing-future-fortnite-collab-after-epics-genai-annoumcents-2000707634"
   },
   {
@@ -93,6 +117,10 @@
     "publishedAt": "2026.06.18",
     "hue": 290,
     "image": "https://www.basenor.com/cdn/shop/articles/561c95c5efa256bdc475a63e278c6cc1.jpg",
+    "keywords": [
+      "영상",
+      "음악·사운드"
+    ],
     "url": "https://phemex.com/news/article/xai-unveils-grok-imagine-video-15-with-enhanced-realism-89725",
     "urls": [
       {
@@ -111,6 +139,10 @@
     "publishedAt": "2026.06.18",
     "hue": 200,
     "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a32d4f7ae9712d1f8ef661e_Claude-Design-beta-static.webp",
+    "keywords": [
+      "Anthropic",
+      "Claude"
+    ],
     "url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work"
   },
   {
@@ -123,6 +155,9 @@
     "publishedAt": "2026.06.18",
     "hue": 270,
     "image": "https://storage.ghost.io/c/95/61/95616ddb-b827-4269-ad22-ff4a6b368a1f/content/images/2026/06/image.png",
+    "keywords": [
+      "Midjourney"
+    ],
     "url": "https://updates.midjourney.com/hardware-announcement-livestream/",
     "urls": [
       {

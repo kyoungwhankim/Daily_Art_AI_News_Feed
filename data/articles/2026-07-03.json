@@ -9,6 +9,9 @@
     "publishedAt": "2026.07.03",
     "hue": 200,
     "image": "https://inbibo.co.uk/storage/pages/47/media/01KWEBZ2E9NGCCHQ1FVJQ5RT9G.jpg",
+    "keywords": [
+      "VFX"
+    ],
     "url": "https://www.cgchannel.com/2026/07/inbibo-releases-adonis-2-1-with-adonisml/",
     "urls": [
       {
@@ -27,6 +30,9 @@
     "publishedAt": "2026.07.03",
     "hue": 15,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf37f0e888236bac1/6a453c420818ce731dd5fb9c/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg",
+    "keywords": [
+      "코딩"
+    ],
     "url": "https://www.gamedeveloper.com/business/godot-to-ban-almost-all-ai-coding-contributions"
   },
   {
@@ -39,6 +45,9 @@
     "publishedAt": "2026.07.03",
     "hue": 35,
     "image": "https://techcrunch.com/wp-content/uploads/2026/06/Meta-image.jpg",
+    "keywords": [
+      "Meta"
+    ],
     "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/"
   },
   {
@@ -51,6 +60,12 @@
     "publishedAt": "2026.07.03",
     "hue": 220,
     "image": "https://basic-tutorials.com/wp-content/uploads/2026/07/nano-banana-2-lite.jpg",
+    "keywords": [
+      "2D·이미지",
+      "영상",
+      "Google",
+      "Gemini"
+    ],
     "url": "https://basic-tutorials.com/news/nano-banana-2-lite-and-gemini-omni-flash-googles-new-ai-models-for-images-and-video/",
     "urls": [
       {
@@ -69,6 +84,7 @@
     "publishedAt": "2026.07.03",
     "hue": 50,
     "image": "https://techcrunch.com/wp-content/uploads/2026/07/gpt-steady-v3.png",
+    "keywords": [],
     "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/"
   }
 ]

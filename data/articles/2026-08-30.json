@@ -9,6 +9,10 @@
     "publishedAt": "2026.08.30",
     "hue": 220,
     "image": "https://www.aroged.com/wp-content/uploads/2026/08/Leaked-version-of-DLSS-5-filter-most-likely-not-an.jpg",
+    "keywords": [
+      "NVIDIA",
+      "DLSS"
+    ],
     "url": "https://www.aroged.com/2026/08/29/leaked-version-of-dlss-5-filter-most-likely-not-an-early-version-but-a-release-version-heres-what-bloggers-have-in-their-hands/",
     "urls": [
       {
@@ -27,6 +31,10 @@
     "publishedAt": "2026.08.30",
     "hue": 10,
     "image": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-1.jpg?w=1024",
+    "keywords": [
+      "Anthropic",
+      "Sony"
+    ],
     "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/"
   },
   {
@@ -39,6 +47,9 @@
     "publishedAt": "2026.08.30",
     "hue": 310,
     "image": "https://www.businessstory.org/wp-content/uploads/2026/08/musicians-turned-detectives-are-hunting-for-ai-grifters.jpg",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://www.businessstory.org/2026/08/29/musicians-turned-detectives-are-hunting-for-ai-grifters/"
   }
 ]

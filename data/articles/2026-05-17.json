@@ -9,6 +9,10 @@
     "publishedAt": "2026.05.17",
     "hue": 270,
     "image": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-22-1024x731.png",
+    "keywords": [
+      "영상",
+      "NVIDIA"
+    ],
     "url": "https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm-a-2-6b-parameter-open-source-world-model-that-generates-minute-scale-720p-video-on-a-single-gpu/",
     "urls": [
       {

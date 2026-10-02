@@ -8,6 +8,12 @@
     "source": "CG Channel",
     "publishedAt": "2026.04.24",
     "hue": 200,
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "Autodesk",
+      "Maya"
+    ],
     "url": "https://www.cgchannel.com/2026/04/autodesk-acquires-core-tech-of-ai-motion-capture-firm-radical/"
   },
   {
@@ -20,6 +26,11 @@
     "publishedAt": "2026.04.24",
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/47932/images/69ea350bee72d/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "Blender"
+    ],
     "url": "https://80.lv/articles/free-blender-tool-capable-of-auto-rigging-virtually-any-tire"
   },
   {
@@ -32,6 +43,9 @@
     "publishedAt": "2026.04.24",
     "hue": 30,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2026/04/2026040812180100_c-1.jpg?w=1600&h=900&fit=crop",
+    "keywords": [
+      "Claude"
+    ],
     "url": "https://www.thegamer.com/game-studios-using-generative-ai-claude-in-development/"
   },
   {
@@ -43,6 +57,9 @@
     "source": "PR Newswire",
     "publishedAt": "2026.04.24",
     "hue": 290,
+    "keywords": [
+      "영상"
+    ],
     "url": "https://www.manilatimes.net/2026/04/24/tmt-newswire/pr-newswire/starti-ai-studio-upgrades-to-20-from-video-generation-tool-to-complete-advertising-creative-system/2327490",
     "urls": [
       {
@@ -61,6 +78,12 @@
     "publishedAt": "2026.04.24",
     "hue": 290,
     "image": "https://blog.greeden.me/wp-content/uploads/2025/02/pexels-photo-373543.jpeg",
+    "keywords": [
+      "2D·이미지",
+      "Google",
+      "Claude",
+      "ChatGPT"
+    ],
     "url": "https://blog.greeden.me/en/2026/04/23/april-17-april-23-2026-weekly-generative-ai-news-roundup-the-practical-rise-of-image-thinking-the-emergence-of-design-ai-and-the-full-scale-arrival-of-research-agents/"
   }
 ]

@@ -9,6 +9,12 @@
     "publishedAt": "2026.04.28",
     "hue": 210,
     "image": "https://blog.adobe.com/en/publish/2026/04/27/media_120f55e65ce82173a0e54777188bd1ce9cf51b27e.png?width=1200&format=pjpg&optimize=medium",
+    "keywords": [
+      "Adobe",
+      "Photoshop",
+      "Firefly",
+      "Premiere"
+    ],
     "url": "https://blog.adobe.com/en/publish/2026/04/27/firefly-ai-assistant-public-beta",
     "urls": [
       {
@@ -27,6 +33,7 @@
     "publishedAt": "2026.04.28",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2019/09/kgh5pkhlr9tlb6bhzmcd-1200x675.jpg",
+    "keywords": [],
     "url": "https://kotaku.com/magic-the-gathering-arena-developers-unionize-layoff-remote-work-genai-protections-2000690932",
     "urls": [
       {
@@ -45,6 +52,9 @@
     "publishedAt": "2026.04.28",
     "hue": 320,
     "image": "https://variety.com/wp-content/uploads/2025/09/GettyImages-2166934862.jpg?crop=0px%2C103px%2C5000px%2C2812px&resize=1000%2C563",
+    "keywords": [
+      "음성"
+    ],
     "url": "https://variety.com/2026/music/news/taylor-swift-trademark-voice-likeness-ai-misuse-1236731401/"
   },
   {
@@ -56,6 +66,10 @@
     "source": "CG Channel",
     "publishedAt": "2026.04.28",
     "hue": 270,
+    "keywords": [
+      "음악·사운드",
+      "가우시안 스플래팅"
+    ],
     "url": "https://www.cgchannel.com/2026/04/dne-and-gracia-release-4-minute-streamable-4dgs-performance/",
     "urls": [
       {
@@ -74,6 +88,9 @@
     "publishedAt": "2026.04.28",
     "hue": 280,
     "image": "https://variety.com/wp-content/uploads/2026/04/Webtoon_Header-1.png?crop=0px%2C0px%2C4800px%2C2700px&resize=1000%2C563",
+    "keywords": [
+      "3D"
+    ],
     "url": "https://variety.com/2026/gaming/news/webtoon-entertainment-genies-ai-1236729996/"
   }
 ]

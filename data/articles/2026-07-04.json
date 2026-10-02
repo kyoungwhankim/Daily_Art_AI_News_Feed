@@ -9,6 +9,9 @@
     "publishedAt": "2026.07.04",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/07/260703_Mixos_Paint4KPBRTexturesInBrowser_f.jpg",
+    "keywords": [
+      "텍스처"
+    ],
     "url": "https://www.cgchannel.com/2026/07/mixos-lets-you-paint-pbr-textures-in-your-web-browser/"
   },
   {
@@ -21,6 +24,9 @@
     "publishedAt": "2026.07.04",
     "hue": 30,
     "image": "https://cdn-chilj.nitrocdn.com/gYFaTcLxknXlucWgXPjHDdhAuyobJjHx/assets/images/optimized/rev-80252c2/winbuzzer.com/wp-content/uploads/2026/07/Meta-Gizmo-Pocket-app-1068x601-1067x.webp",
+    "keywords": [
+      "Meta"
+    ],
     "url": "https://winbuzzer.com/2026/07/03/meta-quietly-tests-pocket-for-ai-generated-mini-games-xcxwbn/"
   },
   {
@@ -33,6 +39,12 @@
     "publishedAt": "2026.07.04",
     "hue": 290,
     "image": "https://static.higgsfield.ai/reels-studio-intro/og.webp",
+    "keywords": [
+      "애니메이션",
+      "영상",
+      "Higgsfield",
+      "Gemini"
+    ],
     "url": "https://higgsfield.ai/shorts-studio"
   },
   {
@@ -44,6 +56,9 @@
     "source": "Variety",
     "publishedAt": "2026.07.04",
     "hue": 340,
+    "keywords": [
+      "영상"
+    ],
     "url": "https://variety.com/2026/film/news/young-washington-director-jon-erwin-ai-1236801002/"
   }
 ]

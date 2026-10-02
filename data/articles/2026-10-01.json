@@ -9,6 +9,12 @@
     "publishedAt": "2026.10.01",
     "hue": 200,
     "image": "https://cdn.mos.cms.futurecdn.net/DT46hrKgj3M2G2y2xf3KA3-1920-80.jpg",
+    "keywords": [
+      "3D",
+      "MCP",
+      "Claude",
+      "ChatGPT"
+    ],
     "url": "https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d",
     "urls": [
       {
@@ -27,6 +33,12 @@
     "publishedAt": "2026.10.01",
     "hue": 210,
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260610_Cinema4D20263_GeneratedScene-960x480.jpg",
+    "keywords": [
+      "3D",
+      "MCP",
+      "Claude",
+      "ChatGPT"
+    ],
     "url": "https://www.cgchannel.com/2026/09/maxon-releases-cinema-4d-2026-4-with-a-new-mcp-server/",
     "urls": [
       {
@@ -49,6 +61,7 @@
     "publishedAt": "2026.10.01",
     "hue": 30,
     "image": "https://kotaku.com/app/uploads/2026/09/Screenshot-2026-09-21-at-17.07.03.jpg",
+    "keywords": [],
     "url": "https://kotaku.com/over-85-percent-of-japanese-game-developers-are-using-ai-2000736041"
   },
   {
@@ -61,6 +74,7 @@
     "publishedAt": "2026.10.01",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141584/89954/maria-redin_l1200.jpg",
+    "keywords": [],
     "url": "https://www.pocketgamer.biz/mtg-wants-to-double-its-size-while-leveraging-ai/"
   },
   {
@@ -73,6 +87,10 @@
     "publishedAt": "2026.10.01",
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
   },
   {
@@ -85,6 +103,10 @@
     "publishedAt": "2026.10.01",
     "hue": 290,
     "image": "https://cdn.mos.cms.futurecdn.net/naMDw2juYUcAcYp2AbFJGU-1440-80.webp",
+    "keywords": [
+      "Adobe",
+      "Photoshop"
+    ],
     "url": "https://www.creativebloq.com/design/graphic-design/photoshops-newest-ai-tool-is-immediately-dividing-opinion"
   },
   {
@@ -97,6 +119,10 @@
     "publishedAt": "2026.10.01",
     "hue": 290,
     "image": "https://fortune.com/img-assets/wp-content/uploads/2026/09/image-2-e1790787532768.jpeg",
+    "keywords": [
+      "영상",
+      "Higgsfield"
+    ],
     "url": "https://fortune.com/2026/09/30/cio-intelligence-sept-30/"
   },
   {
@@ -109,6 +135,10 @@
     "publishedAt": "2026.10.01",
     "hue": 250,
     "image": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?w=1024",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
     "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b"
   },
   {
@@ -121,6 +151,10 @@
     "publishedAt": "2026.10.01",
     "hue": 270,
     "image": "https://media.zenfs.com/en/the_hollywood_reporter_217/b906fa5fb09e22ac9a9d28dee1f59292.jpg",
+    "keywords": [
+      "영상",
+      "Seedance"
+    ],
     "url": "https://www.yahoo.com/entertainment/movies/articles/massive-studios-garfield-movie-writers-092557908.html"
   }
 ]

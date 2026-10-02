@@ -8,6 +8,11 @@
     "source": "CG Channel",
     "publishedAt": "2026.05.07",
     "hue": 200,
+    "keywords": [
+      "애니메이션",
+      "Blender",
+      "Unreal Engine"
+    ],
     "url": "https://www.cgchannel.com/2026/05/character-control-rig-generates-rigs-for-metahumans-in-blender/",
     "urls": [
       {
@@ -26,6 +31,11 @@
     "publishedAt": "2026.05.07",
     "hue": 320,
     "image": "https://cdn.80.lv/api/upload/meta/48157/images/69fb543341adc/contain_1200x630.jpg",
+    "keywords": [
+      "3D",
+      "텍스처",
+      "VFX"
+    ],
     "url": "https://80.lv/articles/instamat-instalod-get-native-linux-support",
     "urls": [
       {
@@ -44,6 +54,9 @@
     "publishedAt": "2026.05.07",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt3ea8e709a674110c/69fb12b1d7761550af8a45d1/Xbox_Copilot.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "Microsoft"
+    ],
     "url": "https://www.gamedeveloper.com/business/xbox-appoints-new-leaders-and-ditches-copilot-ai"
   },
   {
@@ -56,6 +69,9 @@
     "publishedAt": "2026.05.07",
     "hue": 200,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt17b98eb1cb9d8f22/69fb48a5574eeb48fc37ef15/EVE_Online.png?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "Google"
+    ],
     "url": "https://www.gamedeveloper.com/business/eve-online-studio-ccp-games-turns-independent-and-rebrands-as-fenris-creations"
   },
   {
@@ -68,6 +84,10 @@
     "publishedAt": "2026.05.07",
     "hue": 260,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/Memory-update.jpeg?resize=1200,845",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT"
+    ],
     "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/"
   },
   {
@@ -80,6 +100,10 @@
     "publishedAt": "2026.05.07",
     "hue": 220,
     "image": "https://www.androidauthority.com/wp-content/uploads/2024/05/Google-or-Google-Search-logo-on-Chromebook-laptop-stock-photo-1.jpg",
+    "keywords": [
+      "Google",
+      "Gemini"
+    ],
     "url": "https://www.androidauthority.com/google-project-mariner-shutdown-3664323/"
   }
 ]

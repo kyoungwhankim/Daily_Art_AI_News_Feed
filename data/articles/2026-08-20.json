@@ -8,6 +8,10 @@
     "source": "CG Channel",
     "publishedAt": "2026.08.20",
     "hue": 200,
+    "keywords": [
+      "3D",
+      "가우시안 스플래팅"
+    ],
     "url": "https://www.cgchannel.com/2026/08/scantic-trains-gaussian-splats-entirely-on-your-phone/",
     "urls": [
       {
@@ -33,6 +37,9 @@
     "source": "PR Newswire",
     "publishedAt": "2026.08.20",
     "hue": 220,
+    "keywords": [
+      "3D"
+    ],
     "url": "https://www.prnewswire.com/news-releases/hi3d-v3-0--the-first-commercially-available-ai-3d-model-with-2048-voxel-resolution-launches-with-48-hours-of-free-access-for-everyone-302852849.html",
     "urls": [
       {
@@ -51,6 +58,10 @@
     "publishedAt": "2026.08.20",
     "hue": 290,
     "image": "https://npr.brightspotcdn.com/dims4/default/54575c7/2147483647/strip/true/crop/5184x3888+0+0/resize/880x660!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F03%2F6f%2F0eec54964dca8d3fa63141b98d88%2Ffranck-v-u3sowvixhky-unsplash.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
     "url": "https://www.wshu.org/music/2026-08-19/the-grueling-fight-over-who-profits-from-ai-music"
   },
   {
@@ -63,6 +74,9 @@
     "publishedAt": "2026.08.20",
     "hue": 310,
     "image": "https://www.nme.com/wp-content/uploads/2022/11/music-industry-streaming-cma-report-696x420.jpg",
+    "keywords": [
+      "음악·사운드"
+    ],
     "url": "https://www.nme.com/news/music/ai-detected-in-40-per-cent-of-music-released-in-july-2026-study-reveals-3963677"
   }
 ]
