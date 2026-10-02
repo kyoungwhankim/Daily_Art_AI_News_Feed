@@ -11,6 +11,7 @@ build_site.py — 배포용 정적 사이트를 _site/ 에 만든다 (GitHub Act
     _site/topics/<tab>/           탭별 기사 목록
     _site/topics/<tab>/<키워드>/   서브 카테고리별 기사 목록 (탭 안에서 6개 이상인 키워드만)
     _site/sitemap.xml, feed.xml, 404.html, robots.txt (사이트가 도메인 최상위일 때)
+    _site/manifest.webmanifest, sw.js, icons/   PWA (홈 화면에 설치, 오프라인 열람)
     _site/app.css, config.js, data/ ... 기존 파일 복사
 
 레포의 index.html(브라우저 Babel 버전)은 로컬 미리보기용으로 그대로 둔다.
@@ -60,7 +61,7 @@ REACT_PROD = [
     'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
 ]
 ESBUILD = 'esbuild@0.24.2'
-STATIC_FILES = ['app.css', 'config.js', '.nojekyll']
+STATIC_FILES = ['app.css', 'config.js', '.nojekyll', 'manifest.webmanifest']
 
 
 # ---------- helpers ----------
@@ -147,6 +148,19 @@ def load():
 
 
 # ---------- page shell ----------
+
+# PWA: 앱 설치 정보 + 오프라인 캐시(service worker) 등록 — 피드 앱 페이지 공통
+PWA_HEAD = """<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#553333" />
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="AI Art Daily" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<script>if ('serviceWorker' in navigator) addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); });</script>
+"""
 
 THEME_BOOT = ("<script>document.documentElement.classList.add('js');"
               "try{document.documentElement.dataset.theme="
@@ -326,7 +340,7 @@ def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
 <meta name="twitter:description" content="{esc(desc)}" />
 <script type="application/ld+json">{ld_json}</script>
 """
-    page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + meta + THEME_BOOT + '\n'
+    page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + meta + PWA_HEAD + THEME_BOOT + '\n'
                   + '<link rel="stylesheet" href="/static.css?v={STATIC_V}" />\n', page, count=1)
     # 어떤 경로의 페이지에서도 같은 파일을 읽도록 사이트 최상위 기준 주소로
     page = re.sub(r'(href|src)="(app\.css|config\.js|app\.jsx)', r'\1="/\2', page)
@@ -444,6 +458,7 @@ def main():
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(out, name))
     shutil.copytree(os.path.join(repo, 'data'), os.path.join(out, 'data'))
+    shutil.copytree(os.path.join(repo, 'icons'), os.path.join(out, 'icons'))
 
     articles, subcats = load()
 
@@ -511,6 +526,19 @@ def main():
                 p, f'{k} — {label} | {SITE_NAME}', kdesc,
                 listing_fallback(f'{k} — {label}', kdesc, items, tab, subcats, k),
                 collection(p, f'{k} — {label}', kdesc)))
+
+    # service worker — 앱 화면을 이루는 파일을 미리 저장. 파일 내용이 바뀌면 VERSION이 바뀌어 새로 설치된다
+    with open(os.path.join(out, 'index.html'), encoding='utf-8') as f:
+        home = f.read()
+    precache = ['/'] + [u for u in re.findall(r'(?:href|src)="(/(?:app\.js|app\.css|static\.css|config\.js)[^"]*)"', home)]
+    precache += ['/manifest.webmanifest', '/icons/icon-192.png'] + (REACT_PROD if bundle else [])
+    precache = list(dict.fromkeys(precache))
+    with open(os.path.join(repo, 'sw.js'), encoding='utf-8') as f:
+        sw = f.read()
+    version = hashlib.md5(json.dumps(precache).encode()
+                          + open(os.path.join(repo, 'sw.js'), 'rb').read()).hexdigest()[:10]
+    write(out, 'sw.js', sw.replace('__VERSION__', version)
+          .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
     write(out, 'feed.xml', build_feed(articles))

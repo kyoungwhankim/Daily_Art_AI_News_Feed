@@ -1,0 +1,23 @@
+{
+  "name": "AI Art Daily — 한국어 큐레이션",
+  "short_name": "AI Art Daily",
+  "description": "게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한국어로 정리합니다.",
+  "lang": "ko",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#553333",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "게임 제작 속 AI", "url": "/topics/games/" },
+    { "name": "AI 도입 뉴스", "url": "/topics/industry/" },
+    { "name": "아트 전반 AI 뉴스", "url": "/topics/art/" }
+  ]
+}
