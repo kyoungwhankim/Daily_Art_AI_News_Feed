@@ -16,7 +16,7 @@ update_articles.py — /tmp/feed/articles.json의 새 기사들을
        같은 글이 어제·오늘에 두 번 게시되는 것을 방지).
     3. 각 새 기사에 고유 slug id를 생성 (`{tab}-{md5_8자}-{YYYY-MM}` 형식,
        충돌 시 `-2`, `-3` 접미사 추가)하고 publishedAt에 오늘 날짜를 넣는다.
-       keywords는 루틴이 고른 값을 쓰되, 그 탭의 고정 목록(data/keywords.json)에
+       keywords는 루틴이 고른 값을 쓰되, 그 탭의 목록(data/keywords.json)에
        없는 값은 경고를 출력하고 버린다. 순서는 목록 순서로 맞춘다.
     4. 오늘 날짜 파일에 탭(games → industry → art)별로, 같은 탭의 기존 기사보다
        앞에 삽입한다. 파일이 없으면 새로 만든다.

@@ -19,8 +19,9 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 | `scripts/update_articles.py` | 루틴이 새 기사를 오늘 날짜 파일에 추가하고 `index.json`을 다시 만든다 |
 | `scripts/validate_data.py` | `data/` 검사 (JSON 형식, index 일치, 필수 필드, id 중복) |
 | `scripts/feed_data.py` | 위 두 스크립트의 공통 함수 |
-| `data/keywords.json` | 탭별 서브 카테고리 고정 키워드 목록 (아래 참고) |
-| `scripts/tag_keywords.py`, `scripts/keyword_rules.json` | 키워드를 추가할 때 지난 기사에 일괄로 붙이는 관리 도구 |
+| `data/keywords.json` | 탭별 서브 카테고리 키워드 목록 (아래 참고) |
+| `scripts/add_keyword.py` | 탭 목록에 키워드를 추가하고 지난 기사에도 붙인다 (루틴이 필요할 때 사용) |
+| `scripts/tag_keywords.py`, `scripts/keyword_rules.json` | 지난 기사에 키워드를 일괄로 붙이는 관리 도구 / 키워드별 검색 규칙 |
 | `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
 | `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
 
@@ -31,16 +32,18 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 
 메뉴에서 메인 탭을 누르면 바로 아래 줄에 서브 카테고리(키워드) 칩이 나오고, 칩을 누르면 그 키워드가 붙은 기사만 보인다. `전체`는 탭의 모든 기사.
 
-- **키워드는 고정 목록이다.** [`data/keywords.json`](data/keywords.json)에 탭별로 들어 있고(표시 순서 = 목록 순서), 루틴 프롬프트의 `KEYWORD_LIST`(PHASE 2 SETUP Step 3)와 항상 같은 내용으로 유지한다.
-  - 게임 제작 속 AI 22개, AI 도입 뉴스 18개, 아트 전반 AI 뉴스 27개
+- **키워드 목록:** [`data/keywords.json`](data/keywords.json)에 탭별로 들어 있다 (표시 순서 = 목록 순서).
+  - 처음 목록(2026.10.02): 게임 제작 속 AI 22개, AI 도입 뉴스 18개, 아트 전반 AI 뉴스 27개
   - 종류: 제작 대상(3D, 애니메이션 …), 주제(AI 도입 뉴스 전용: AI 사용 논란, 고용·노조 …), 회사, 프로그램·서비스
+- 사이트는 탭 안에서 **6개 이상** 기사에 붙은 키워드만 칩으로 보여준다 (5개 이하는 지엽적이라 숨김 — 기사가 쌓이면 자동으로 나타남).
 - 모든 기사에 `keywords` 배열이 있다 (해당 없음이면 `[]` — `전체`에서만 보인다).
-- **매일 루틴:** STEP 4에서 기사마다 그 탭의 목록 안에서만 키워드를 고른다. 저장 스크립트가 목록에 없는 값을 `REJECTED`로 막고, `update_articles.py`는 레포 목록에 없는 값을 버리며, `validate_data.py`가 최종 확인한다.
-- **키워드 추가 (요청할 때만):**
-  1. `data/keywords.json`과 루틴 프롬프트 `KEYWORD_LIST`에 같은 항목을 넣는다 (루틴 설정 화면의 프롬프트도 갱신).
-  2. 지난 기사에 붙인다 — `python3 scripts/tag_keywords.py <키워드> [--tab TAB]`로 미리 보고 `--apply`로 반영. 규칙은 [`scripts/keyword_rules.json`](scripts/keyword_rules.json). 규칙이 없는 주제 키워드는 기사를 읽고 직접 붙인다.
-  3. `python3 scripts/validate_data.py`로 확인.
-- 처음 태깅(2026.10.02): 제작 대상·회사·프로그램은 규칙 기반, AI 도입 뉴스의 주제 키워드는 기사 제목·요약을 읽고 직접 붙였다.
+- **매일 루틴:**
+  - PHASE 2 SETUP Step 3에서 레포의 목록을 읽어 출력하고, STEP 4에서 기사마다 그 탭의 목록 안에서 키워드를 고른다.
+  - 목록에 없는 회사·프로그램·서비스·제작 대상(AI 도입 뉴스는 주제 포함)이 기사의 주된 대상이고 앞으로도 반복될 일반적인 대상이면 `scripts/add_keyword.py`로 추가한다. 한 번 실행에 최대 2개, 기존 키워드의 변형(PlayStation → Sony 등)은 추가하지 않는다.
+  - `add_keyword.py`는 목록에 추가하고, 같은 탭의 지난 기사 중 제목·요약에 그 이름이 있는 기사에도 붙이며, 규칙을 `scripts/keyword_rules.json`에 남긴다.
+  - 저장 스크립트가 목록에 없는 값을 `REJECTED`로 막고, `update_articles.py`는 목록에 없는 값을 버리며, `validate_data.py`가 최종 확인한다.
+- **수동 관리:** 키워드를 직접 추가할 때도 `add_keyword.py`를 쓴다. 이미 있는 키워드를 지난 기사에 더 붙이려면 `python3 scripts/tag_keywords.py <키워드> [--tab TAB]`로 미리 보고 `--apply`로 반영.
+- 처음 태깅: 제작 대상·회사·프로그램은 규칙 기반, AI 도입 뉴스의 주제 키워드는 기사 제목·요약을 읽고 직접 붙였다.
 
 ## 개요
 
@@ -119,10 +122,10 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 ### PHASE 2 — 게시 (PUBLISH)
 
 1. **Step 0** — `/tmp/feed/PUBLISH_PHASE` 표시 파일 생성 (이후 컨텍스트 압축 차단, 아래 참고)
-2. **SETUP** — 레포를 `/home/user/Daily_Art_AI_News_Feed`에 준비하고 `origin/main`으로 맞춤, 고정 `KEYWORD_LIST`를 `/tmp/feed/keywords.json`으로 저장
+2. **SETUP** — 레포를 `/home/user/Daily_Art_AI_News_Feed`에 준비하고 `origin/main`으로 맞춤, 키워드 목록(`data/keywords.json`)을 읽어 `/tmp/feed/keywords.json`으로 저장
 3. **STEP 1~2** — `digest.json`을 읽어 섹션 → 탭(`games`/`industry`/`art`)으로 매핑. digest에 있는 기사만, 순서대로 처리 (웹 검색 금지)
 4. **STEP 3** — 기사마다 `scripts/fetch_article.py`를 정확히 한 번 실행 (실패 시 WebFetch 1회)
-5. **STEP 4** — 필드 매핑 후 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체, 고정 목록 안에서 keywords 선택 등)
+5. **STEP 4** — 필드 매핑 후 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체, 목록 안에서 keywords 선택·필요 시 키워드 추가 등)
 6. **UPDATE THE FEED DATA** — `scripts/update_articles.py`로 URL 중복 제거 후 오늘 날짜 파일에 추가, `scripts/validate_data.py`로 검사
 7. **COMMIT AND PUSH** — `scripts/push_to_main.py`로 `main`에 직접 push (새 브랜치·PR 금지)
 8. **FINISH** — `PUBLISH_PHASE` 표시 파일 삭제

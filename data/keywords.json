@@ -1,7 +1,8 @@
 {
   "_comment": [
-      "서브 카테고리 고정 키워드 목록 (탭별, 표시 순서). 사이트·validate_data.py·루틴 프롬프트가 이 목록을 쓴다.",
-      "루틴 프롬프트의 KEYWORD LIST 블록과 항상 같은 내용으로 유지한다. 키워드를 추가할 때는 둘 다 고친다.",
+      "탭별 서브 카테고리 키워드 목록 (표시 순서). 사이트·validate_data.py·루틴이 이 파일을 쓴다.",
+      "루틴은 필요할 때 scripts/add_keyword.py로 키워드를 추가한다 (규칙은 루틴 프롬프트 STEP 4 \"Adding a keyword\").",
+      "사이트는 탭 안에서 6개 이상 기사에 붙은 키워드만 서브 카테고리로 보여준다.",
       "kind: target(제작 대상) | topic(주제) | company(회사) | product(프로그램·서비스)"
   ],
   "tabs": {

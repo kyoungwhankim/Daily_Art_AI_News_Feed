@@ -15,7 +15,7 @@ async function fetchJson(url, init) {
 async function loadArticles() {
   const [index, keywords] = await Promise.all([
     fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' }),
-    fetchJson(`${DATA_BASE}keywords.json`, { cache: 'no-cache' }),   // 탭별 서브 카테고리 고정 목록
+    fetchJson(`${DATA_BASE}keywords.json`, { cache: 'no-cache' }),   // 탭별 서브 카테고리 키워드 목록
   ]);
   const days = await Promise.all(
     index.dates.map(d => fetchJson(`${DATA_BASE}${d.file}?v=${d.rev}`))
@@ -69,7 +69,9 @@ function tabCounts(articles) {
   articles.forEach(a => { counts[a.tab] = (counts[a.tab] || 0) + 1; });
   return counts;
 }
-// 서브 카테고리: data/keywords.json의 탭별 고정 목록 (목록 순서) + 기사 수
+// 서브 카테고리: data/keywords.json의 탭별 목록 (목록 순서) 중
+// 탭 안에서 MIN_SUBCAT_ARTICLES개 이상 기사에 붙은 키워드만 (5개 이하는 너무 지엽적이라 숨김)
+const MIN_SUBCAT_ARTICLES = 6;
 function subCategoriesFor(keywordTabs, articles, tabId) {
   const counts = new Map();
   articles.forEach(a => {
@@ -78,7 +80,7 @@ function subCategoriesFor(keywordTabs, articles, tabId) {
   });
   return ((keywordTabs && keywordTabs[tabId]) || [])
     .map(k => ({ label: k.label, count: counts.get(k.label) || 0 }))
-    .filter(k => k.count > 0);
+    .filter(k => k.count >= MIN_SUBCAT_ARTICLES);
 }
 
 function isArticleNew(a) {

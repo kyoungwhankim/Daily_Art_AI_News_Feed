@@ -260,7 +260,7 @@ html::before {
 }
 .tab.active {
   color: var(--ink);
-  border-bottom-color: var(--accent);
+  border-bottom-color: transparent;   /* 밑줄 없음 — 아래 서브 카테고리 줄과 겹치지 않게 */
   font-weight: 700;
 }
 .tab.active .count { color: var(--accent-strong); background: var(--accent-soft); border-color: var(--accent); }
@@ -311,7 +311,8 @@ html::before {
 /* sub-categories (keyword chips) — 메뉴의 메인 탭 바로 아래 줄 */
 .subcats {
   display: flex; flex-wrap: wrap; gap: 6px 8px;
-  padding: 12px 0 14px;
+  margin: 0; padding: 12px 0 14px;          /* 메인 탭과 같은 왼쪽 시작선 */
+  justify-content: flex-start;
   border-top: 1.5px solid var(--hairline);
 }
 .chip.subcat { padding: 4px 11px; font-size: 12.5px; border-width: 1.5px; }

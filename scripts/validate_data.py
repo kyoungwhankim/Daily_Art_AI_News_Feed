@@ -9,7 +9,7 @@ validate_data.py — data/ 디렉터리가 사이트가 읽을 수 있는 상태
     - index.json의 날짜 목록·기사 수·rev가 실제 파일과 일치하는지
     - 모든 기사에 필수 필드가 있고, tab이 유효하고, publishedAt이 파일 날짜와 같은지
     - id가 전체에서 중복되지 않는지
-    - keywords가 문자열 배열이고 그 탭의 고정 목록(data/keywords.json)에 있는 값인지
+    - keywords가 문자열 배열이고 그 탭의 목록(data/keywords.json)에 있는 값인지
 
 통과하면 "✅ data/ is valid ..."를 출력하고 0으로, 실패하면 문제를 출력하고 1로 끝난다.
 """

@@ -19,7 +19,7 @@ window.AIAD = {
    *   publishedAt: '2026.04.25',           // 'YYYY.MM.DD' 형식, 사이트 업로드 날짜 (정렬·날짜 헤더에 사용; 화면에는 그대로 표시됨)
    *   hue:         30,                     // 0–360, 그라디언트 썸네일 색상
    *   image:       'assets/news/x.jpg',    // optional — 있으면 그라디언트 대신 이미지 사용
-   *   keywords:    ['3D', 'Blender'],      // 서브 카테고리 — 그 탭의 data/keywords.json 목록 안에서만
+   *   keywords:    ['3D', 'Blender'],      // 서브 카테고리 — 그 탭의 data/keywords.json 목록에 있는 값만
    *   url:         'https://...',          // 원문 링크
    *   urls: [                              // optional — 추가 관련 링크
    *     { label: '관련 보도', href: 'https://...' },

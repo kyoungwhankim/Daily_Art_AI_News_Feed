@@ -1,14 +1,14 @@
 """
 tag_keywords.py — 지난 기사에 키워드를 일괄로 붙이는 관리용 도구 (루틴은 쓰지 않는다).
 
-키워드는 고정 목록(data/keywords.json)으로 관리하고, 매일 루틴은 프롬프트의
-KEYWORD LIST를 보고 새 기사의 keywords를 직접 고른다. 키워드를 새로 추가할 때만
-이 도구로 지난 기사에 그 키워드를 붙인다.
+키워드 목록은 data/keywords.json. 매일 루틴은 새 기사의 keywords를 직접 고르고,
+새 키워드는 scripts/add_keyword.py로 추가한다. 이 도구는 이미 목록에 있는
+키워드를 지난 기사에 더 붙일 때 쓴다.
 
 사용법:
     python3 scripts/tag_keywords.py LABEL [--tab TAB] [--apply]
 
-    LABEL   추가할 키워드 (data/keywords.json의 해당 탭 목록에 먼저 넣어 둔다)
+    LABEL   붙일 키워드 (data/keywords.json의 해당 탭 목록에 있어야 한다)
     --tab   대상 탭 (생략하면 LABEL이 목록에 있는 모든 탭)
     --apply 실제로 파일에 쓴다. 없으면 붙을 기사 목록만 출력한다.
 

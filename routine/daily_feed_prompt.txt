@@ -491,109 +491,26 @@ git reset --hard origin/main
 git config user.email "claude-routine@anthropic.com"
 git config user.name "Claude Daily Routine"
 
-Step 3 — Load the fixed KEYWORD LIST (sub-categories for the site).
-The site shows these keywords as sub-categories under each tab. The list is
-FIXED: never add, rename, translate or invent a keyword. Every article's
-"keywords" field (STEP 4) may only use labels from its own tab's list below.
-Each entry is (label, note). The note says when the keyword applies; an empty
-note means the keyword is a company / program / service name.
+Step 3 — Load the KEYWORD LIST (sub-categories for the site).
+The site shows these keywords as sub-categories under each tab. The list lives
+in the repo at data/keywords.json (one list per tab, in display order). Every
+article's "keywords" field (STEP 4) may only use labels from its own tab's
+list — or a keyword you add with scripts/add_keyword.py under the rules in
+STEP 4 ("Adding a keyword"). Each entry prints as "label — note"; the note says
+when the keyword applies, and no note means a company / program / service name.
 
-python3 << 'PYEOF'
+cd /home/user/Daily_Art_AI_News_Feed
+python3 -c "
 import json
-KEYWORD_LIST = {
-    "games": [
-        ("3D", "3D 모델·에셋·메시·씬·3D 스캔을 만들거나 다루는 것이 기사의 주제"),
-        ("애니메이션", "애니메이션 작품, 캐릭터 애니메이션, 모션 생성·모션캡처·리깅이 기사의 주제"),
-        ("영상", "영상·비디오 생성/편집, 영화·트레일러·시네마틱 제작이 기사의 주제"),
-        ("텍스처", "텍스처·PBR 머티리얼 제작·페인팅이 기사의 주제"),
-        ("VFX", "시각효과(VFX)·컴포지팅·로토스코핑·물리 시뮬레이션이 기사의 주제"),
-        ("2D·이미지", "이미지·일러스트·2D 그림을 생성하거나 편집하는 것이 기사의 주제"),
-        ("가우시안 스플래팅", "가우시안 스플래팅(3DGS) 기술이 기사의 주제"),
-        ("Blender", ""),
-        ("NVIDIA", ""),
-        ("Unreal Engine", "UEFN·MetaHuman 포함"),
-        ("DLSS", ""),
-        ("Claude", ""),
-        ("Adobe", ""),
-        ("Epic Games", "Fortnite 포함"),
-        ("Google", "DeepMind 포함"),
-        ("Autodesk", ""),
-        ("Tripo", ""),
-        ("Reallusion", "iClone·Character Creator 포함"),
-        ("MCP", ""),
-        ("Meshy", ""),
-        ("Photoshop", ""),
-        ("Unity", ""),
-    ],
-    "industry": [
-        ("AI 사용 논란", "게임·트레일러·아트의 AI 사용(또는 의혹)에 대한 반발·비판·사과·해명이 기사의 주제"),
-        ("AI 도입 전략", "스튜디오·게임사가 AI를 도입·활용하는 전략이나 실제 도입 사례를 밝힌 것이 기사의 주제"),
-        ("고용·노조", "해고·감원·구조조정, 노조 결성·단체협약, 일자리 대체·채용 문제가 기사의 주제"),
-        ("행사·컨퍼런스", "GDC·게임스컴·TGS·NDC·서머 게임 페스트·RDC 등 행사·컨퍼런스·쇼케이스가 기사의 무대"),
-        ("설문·통계", "AI 사용률 설문, 시장 조사, 통계 수치·보고서가 기사의 주제"),
-        ("법·정책", "법률·정부 규제·행정명령·소송, 플랫폼·재단의 AI 정책이 기사의 주제"),
-        ("AI 미사용 선언", "스튜디오·개발자·플랫폼이 생성형 AI를 쓰지 않거나 금지한다고 밝힌 것이 기사의 주제"),
-        ("투자·인수", "투자 유치·기업가치·인수합병·매각·독립이 기사의 주제"),
-        ("코딩", "AI 코딩·코드 생성·바이브 코딩이 기사의 주제"),
-        ("영상", "영상·비디오 생성/편집, 영화·트레일러·시네마틱 제작이 기사의 주제"),
-        ("2D·이미지", "이미지·일러스트·2D 그림을 생성하거나 편집하는 것이 기사의 주제"),
-        ("Microsoft", "Xbox 포함"),
-        ("Google", "DeepMind 포함"),
-        ("Claude", ""),
-        ("Sony", "PlayStation 포함"),
-        ("Meta", ""),
-        ("Epic Games", "Fortnite 포함"),
-        ("Level-5", ""),
-    ],
-    "art": [
-        ("영상", "영상·비디오 생성/편집, 영화·트레일러·시네마틱 제작이 기사의 주제"),
-        ("음악·사운드", "음악·노래·효과음·오디오 생성이나 음악 산업이 기사의 주제"),
-        ("2D·이미지", "이미지·일러스트·2D 그림을 생성하거나 편집하는 것이 기사의 주제"),
-        ("음성", "음성 합성(TTS)·보이스 클로닝·더빙·성우 목소리가 기사의 주제"),
-        ("애니메이션", "애니메이션 작품, 캐릭터 애니메이션, 모션 생성·모션캡처·리깅이 기사의 주제"),
-        ("3D", "3D 모델·에셋·메시·씬·3D 스캔을 만들거나 다루는 것이 기사의 주제"),
-        ("VFX", "시각효과(VFX)·컴포지팅·로토스코핑·물리 시뮬레이션이 기사의 주제"),
-        ("Google", "DeepMind 포함"),
-        ("OpenAI", ""),
-        ("Gemini", "Nano Banana 포함"),
-        ("Adobe", ""),
-        ("ElevenLabs", ""),
-        ("ChatGPT", "GPT Image·DALL-E 포함"),
-        ("Suno", ""),
-        ("Seedance", "Seedream 포함"),
-        ("NVIDIA", ""),
-        ("Apple", ""),
-        ("Runway", ""),
-        ("ByteDance", ""),
-        ("Anthropic", ""),
-        ("Spotify", ""),
-        ("Meta", ""),
-        ("Claude", ""),
-        ("Photoshop", ""),
-        ("Premiere", ""),
-        ("Sony", "PlayStation 포함"),
-        ("Higgsfield", ""),
-    ],
-}
-with open('/tmp/feed/keywords.json', 'w') as f:
-    json.dump({t: [l for l, _ in rows] for t, rows in KEYWORD_LIST.items()},
-              f, ensure_ascii=False)
-print("Keyword list loaded:",
-      ", ".join(f"{t} {len(rows)}" for t, rows in KEYWORD_LIST.items()))
-for t, rows in KEYWORD_LIST.items():
-    print(f"[{t}]")
-    for l, note in rows:
-        print(f"  - {l}" + (f" — {note}" if note else ""))
-try:
-    with open('/home/user/Daily_Art_AI_News_Feed/data/keywords.json') as f:
-        repo = {t: [k["label"] for k in rows]
-                for t, rows in json.load(f)["tabs"].items()}
-    if repo != {t: [l for l, _ in rows] for t, rows in KEYWORD_LIST.items()}:
-        print("⚠️  KEYWORD LIST differs from data/keywords.json in the repo — "
-              "keywords missing from the repo list will be dropped.")
-except FileNotFoundError:
-    print("⚠️  data/keywords.json not found in the repo.")
-PYEOF
+spec = json.load(open('data/keywords.json'))['tabs']
+json.dump({t: [k['label'] for k in rows] for t, rows in spec.items()},
+          open('/tmp/feed/keywords.json', 'w'), ensure_ascii=False)
+print('Keyword list loaded:', ', '.join(t + ' ' + str(len(r)) for t, r in spec.items()))
+for t, rows in spec.items():
+    print('[' + t + ']')
+    for k in rows:
+        print('  - ' + k['label'] + (' — ' + k['desc'] if k.get('desc') else ''))
+"
 
 ---
 
@@ -764,13 +681,43 @@ JSON entry following these rules.
 
   keywords     : List of sub-category labels for this article, chosen ONLY
                  from this tab's list printed by SETUP Step 3 (exact labels,
-                 copied character for character). Pick every keyword whose
+                 copied character for character), or a keyword you add under
+                 "Adding a keyword" below. Pick every keyword whose
                  note fits the article's MAIN subject; for a company / program
                  / service name, pick it only when that company or product is
                  a main subject of the article — not when it is merely listed,
                  compared or mentioned in passing. Usually 1–4 keywords. Use
-                 [] when none fits; never stretch a keyword to fill the list,
-                 and never invent a new one.
+                 [] when none fits; never stretch a keyword to fill the list.
+
+                 Adding a keyword — only when ALL of these hold:
+                   - The article's MAIN subject is a company, program, service
+                     or production target (2D/3D/animation/sound/…) — or, for
+                     the industry tab only, a recurring industry topic — that
+                     no keyword in this tab's list already covers.
+                   - It is a general, recurring subject that future articles
+                     will also be about (a major company or a widely used
+                     tool) — not a one-off paper, small startup, single game
+                     title or feature name.
+                   - It is not a variant of an existing keyword (PlayStation
+                     belongs to Sony, Xbox to Microsoft, DeepMind to Google,
+                     MetaHuman to Unreal Engine, Nano Banana to Gemini).
+                 At most 2 new keywords per routine run in total. Label style:
+                 the official English name for companies / programs /
+                 services (e.g. "Houdini"), short Korean for targets and
+                 topics (e.g. "음악·사운드"). Add it BEFORE saving the article:
+
+                   cd /home/user/Daily_Art_AI_News_Feed
+                   python3 scripts/add_keyword.py --tab [games|industry|art] \
+                     --label "[label]" --kind [company|product|target|topic] \
+                     --match "[English name],[Korean name]" \
+                     --desc "[when it applies — targets/topics only]"
+
+                 The script adds the keyword to data/keywords.json and
+                 /tmp/feed/keywords.json and tags matching past articles in
+                 that tab (it prints them). If it prints REJECTED because the
+                 label already exists, use the existing label instead. The
+                 site shows a keyword only once 6+ articles in the tab have it,
+                 so a new keyword may stay hidden for a while — that is fine.
 
   image        : OPTIONAL but strongly preferred. Try the four steps below in
                  order and use the FIRST URL that succeeds.
@@ -849,7 +796,8 @@ Save each completed article object to /tmp/feed/articles.json:
       _bad = [k for k in article["keywords"] if k not in _allowed]
       if _bad:
           problems.append(f"keywords {_bad} are not in the {article['tab']} "
-                          f"KEYWORD LIST — use exact labels from SETUP Step 3")
+                          f"KEYWORD LIST — use exact labels from SETUP Step 3, "
+                          f"or add the keyword with scripts/add_keyword.py first")
   if problems:
       print("REJECTED:", "; ".join(problems))
       raise SystemExit(1)
