@@ -69,7 +69,9 @@
     "publishedAt": "2026.07.31",
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltd7c86cb623ee06c8/6a6b24cec08842e883ba72f1/Knowledge_video_game.png?disable=upscale&width=1200&height=630&fit=crop",
-    "keywords": [],
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
   },
   {
@@ -82,7 +84,10 @@
     "publishedAt": "2026.07.31",
     "hue": 50,
     "image": "https://media.pocketgamer.biz/images/140631/89504/aws-pocket-gamer-connects-summit-shanghai-2026_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략",
+      "설문·통계"
+    ],
     "url": "https://www.pocketgamer.biz/why-china-is-embracing-ai-and-very-few-studios-refuse-to-adopt-it/"
   },
   {
@@ -96,7 +101,7 @@
     "hue": 40,
     "image": "https://media.pocketgamer.biz/images/140596/89489/honorofkings_l1200.jpg",
     "keywords": [
-      "Tripo"
+      "AI 도입 전략"
     ],
     "url": "https://www.pocketgamer.biz/how-chinas-game-industry-is-using-ai-from-art-to-ad-buying/"
   },
@@ -133,8 +138,8 @@
     "hue": 280,
     "image": "https://www.artnews.com/wp-content/uploads/2026/07/File.jpg?w=1024",
     "keywords": [
-      "2D·이미지",
-      "영상"
+      "영상",
+      "2D·이미지"
     ],
     "url": "https://www.artnews.com/art-news/news/harvard-art-museums-generative-ai-francois-boucher-painting-1234793832/"
   },

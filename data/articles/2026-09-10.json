@@ -30,7 +30,10 @@
     "publishedAt": "2026.09.10",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141285/89792/ainordics2_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략",
+      "법·정책"
+    ],
     "url": "https://www.pocketgamer.biz/how-nordic-studios-are-using-ai-part-two-from-solo-game-builders-to-support-that-never-sleeps/"
   },
   {
@@ -44,8 +47,7 @@
     "hue": 50,
     "image": "https://media.pocketgamer.biz/images/141334/89814/tripo-p2_l1200.jpg",
     "keywords": [
-      "3D",
-      "Tripo"
+      "투자·인수"
     ],
     "url": "https://www.pocketgamer.biz/genai-firm-tripo-raises-445m-two-months-after-series-a3-round/"
   },

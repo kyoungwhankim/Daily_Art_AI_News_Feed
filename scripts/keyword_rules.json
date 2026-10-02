@@ -1,12 +1,10 @@
 {
   "_comment": [
-      "서브 카테고리 키워드 사전. scripts/tag_keywords.py가 이 사전으로 기사에 keywords를 붙인다.",
-      "label: 화면에 보이는 이름이자 기사 keywords 배열에 들어가는 값.",
-      "kind: target(제작 대상) | company(회사) | product(프로그램·서비스).",
+      "기존 기사 일괄 태깅용 규칙 (scripts/tag_keywords.py 전용). 루틴은 이 파일을 쓰지 않는다 — 루틴은 프롬프트의 KEYWORD LIST를 보고 직접 고른다.",
+      "키워드를 새로 추가할 때 지난 기사에 붙이는 출발점으로 쓴다. 규칙이 없는 주제(topic) 키워드는 기사를 읽고 직접 붙인다.",
       "match: 하나라도 맞으면 태그. 영문/숫자로만 된 값은 대소문자 무시 + 단어 경계, 그 외(한글 등)는 부분 문자열.",
       "exclude: 매칭 전에 본문에서 지워 둘 문자열 (예: '메타데이터'가 'Meta'로 잡히지 않게).",
-      "검사 범위: target은 제목+요약, company/product는 제목+요약+본문 첫 문장.",
-      "사이트는 탭 안에서 6개 이상 기사에 붙은 키워드만 서브 카테고리로 보여준다 (MIN_ARTICLES)."
+      "검사 범위: target은 제목+요약, company/product는 제목+요약+본문 첫 문장."
   ],
   "keywords": [
     {"label": "2D·이미지", "kind": "target", "match": ["이미지 생성", "이미지 편집", "이미지 모델", "이미지 툴", "이미지 도구", "생성 이미지", "AI 이미지", "이미지 AI", "이미지 생성기", "Image", "Images", "일러스트", "2D", "벡터", "드로잉", "페인팅", "회화", "초상화", "커버 아트", "아트워크", "인페인팅", "업스케일"], "exclude": ["텍스처 페인팅", "벡터AI"]},
@@ -19,7 +17,6 @@
     {"label": "VFX", "kind": "target", "match": ["VFX", "시각효과", "시각 효과", "컴포지팅", "로토", "로토스코핑", "시뮬레이션"]},
     {"label": "가우시안 스플래팅", "kind": "target", "match": ["가우시안", "Gaussian", "스플랫", "스플래팅", "splat", "splats", "splatting", "3DGS"]},
     {"label": "코딩", "kind": "target", "match": ["코딩", "coding", "바이브 코딩", "코드", "GitHub Copilot"], "exclude": ["Claude Code"]},
-
     {"label": "Adobe", "kind": "company", "match": ["Adobe", "어도비"]},
     {"label": "Autodesk", "kind": "company", "match": ["Autodesk", "오토데스크"]},
     {"label": "NVIDIA", "kind": "company", "match": ["NVIDIA", "엔비디아"]},
@@ -31,9 +28,7 @@
     {"label": "Sony", "kind": "company", "match": ["Sony", "소니", "PlayStation", "플레이스테이션"], "exclude": ["스미소니언"]},
     {"label": "Epic Games", "kind": "company", "match": ["Epic Games", "Epic", "에픽게임즈", "에픽 게임즈", "에픽"]},
     {"label": "Unity", "kind": "company", "match": ["Unity", "유니티"]},
-    {"label": "Roblox", "kind": "company", "match": ["Roblox", "로블록스"]},
     {"label": "ByteDance", "kind": "company", "match": ["ByteDance", "바이트댄스", "BytePlus"]},
-    {"label": "Tencent", "kind": "company", "match": ["Tencent", "텐센트"]},
     {"label": "Reallusion", "kind": "company", "match": ["Reallusion", "리얼루전", "iClone", "Character Creator"]},
     {"label": "Tripo", "kind": "company", "match": ["Tripo", "트리포"]},
     {"label": "Meshy", "kind": "company", "match": ["Meshy"]},
@@ -44,30 +39,15 @@
     {"label": "Apple", "kind": "company", "match": ["Apple", "애플", "WWDC", "iOS 27"], "exclude": ["애플리케이션", "애플렉", "애플 앱스토어"]},
     {"label": "Level-5", "kind": "company", "match": ["Level-5", "레벨-5", "레벨5"]},
     {"label": "Higgsfield", "kind": "company", "match": ["Higgsfield", "힉스필드", "하이그스필드"]},
-    {"label": "Universal Music", "kind": "company", "match": ["Universal Music", "UMG", "유니버설 뮤직"]},
-    {"label": "Midjourney", "kind": "company", "match": ["Midjourney", "미드저니"]},
-    {"label": "Stability AI", "kind": "company", "match": ["Stability AI", "스태빌리티", "Stable Audio", "Stable Diffusion"]},
-    {"label": "MiniMax", "kind": "company", "match": ["MiniMax", "미니맥스", "Hailuo"]},
-    {"label": "EA", "kind": "company", "match": ["EA", "Electronic Arts", "일렉트로닉 아츠"]},
-    {"label": "Saber Interactive", "kind": "company", "match": ["Saber", "세이버"]},
-    {"label": "Amazon", "kind": "company", "match": ["Amazon", "아마존"]},
-    {"label": "Sega", "kind": "company", "match": ["Sega", "세가"], "exclude": ["4세가", "14세가", "세가지"]},
-
     {"label": "Blender", "kind": "product", "match": ["Blender", "블렌더"]},
     {"label": "Unreal Engine", "kind": "product", "match": ["Unreal", "언리얼", "UE5", "UE6", "UE5.8", "UEFN", "MetaHuman", "메타휴먼"]},
     {"label": "Photoshop", "kind": "product", "match": ["Photoshop", "포토샵"]},
-    {"label": "Firefly", "kind": "product", "match": ["Firefly", "파이어플라이"]},
     {"label": "Premiere", "kind": "product", "match": ["Premiere", "프리미어"], "exclude": ["프리미어 리그"]},
-    {"label": "Maya", "kind": "product", "match": ["Maya"], "exclude": ["Maya and the Three"]},
-    {"label": "Houdini", "kind": "product", "match": ["Houdini", "후디니", "SideFX"]},
-    {"label": "ComfyUI", "kind": "product", "match": ["ComfyUI", "Comfy Cloud"]},
     {"label": "DLSS", "kind": "product", "match": ["DLSS"]},
     {"label": "MCP", "kind": "product", "match": ["MCP"]},
     {"label": "Gemini", "kind": "product", "match": ["Gemini", "제미나이", "Nano Banana"]},
     {"label": "Claude", "kind": "product", "match": ["Claude", "클로드"]},
     {"label": "ChatGPT", "kind": "product", "match": ["ChatGPT", "챗GPT", "GPT Image", "DALL-E"]},
-    {"label": "Sora", "kind": "product", "match": ["Sora", "소라"]},
-    {"label": "Seedance", "kind": "product", "match": ["Seedance", "시드댄스", "Seedream"]},
-    {"label": "Kling", "kind": "product", "match": ["Kling", "클링"]}
+    {"label": "Seedance", "kind": "product", "match": ["Seedance", "시드댄스", "Seedream"]}
   ]
 }

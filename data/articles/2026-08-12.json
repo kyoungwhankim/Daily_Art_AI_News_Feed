@@ -31,7 +31,9 @@
     "publishedAt": "2026.08.12",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltf582a97c7f66b1e6/6a79e9d13f9687dbb361f2ae/Eve_Header.png",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략"
+    ],
     "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts",
     "urls": [
       {
@@ -54,9 +56,7 @@
     "publishedAt": "2026.08.12",
     "hue": 45,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2a83331b1b9e4316/6a5e74aa0cab910337e94420/Unity7_General-announcement-asset_1920-1080.png",
-    "keywords": [
-      "Unity"
-    ],
+    "keywords": [],
     "url": "https://www.gamedeveloper.com/business/unity-credits-ai-advertising-platform-for-driving-its-best-quarter-ever"
   },
   {

@@ -1,30 +1,32 @@
 """
-tag_keywords.py — 기사에 서브 카테고리 키워드(keywords)를 붙인다.
+tag_keywords.py — 지난 기사에 키워드를 일괄로 붙이는 관리용 도구 (루틴은 쓰지 않는다).
+
+키워드는 고정 목록(data/keywords.json)으로 관리하고, 매일 루틴은 프롬프트의
+KEYWORD LIST를 보고 새 기사의 keywords를 직접 고른다. 키워드를 새로 추가할 때만
+이 도구로 지난 기사에 그 키워드를 붙인다.
 
 사용법:
-    python3 scripts/tag_keywords.py          # 모든 날짜 파일을 다시 태깅 (사전을 고친 뒤 실행)
-    python3 scripts/tag_keywords.py --check  # 파일은 그대로 두고, 다시 태깅하면 바뀔 기사 수만 출력
+    python3 scripts/tag_keywords.py LABEL [--tab TAB] [--apply]
 
-키워드 사전은 scripts/keywords.json. update_articles.py는 새 기사를 추가할 때
-이 모듈의 tag()로 keywords를 자동으로 붙이므로 루틴은 따로 실행할 필요가 없다.
+    LABEL   추가할 키워드 (data/keywords.json의 해당 탭 목록에 먼저 넣어 둔다)
+    --tab   대상 탭 (생략하면 LABEL이 목록에 있는 모든 탭)
+    --apply 실제로 파일에 쓴다. 없으면 붙을 기사 목록만 출력한다.
 
-검사 범위:
-    target(제작 대상)        제목 + 요약
-    company/product(이름)   제목 + 요약 + 본문 첫 문장
+규칙은 scripts/keyword_rules.json. 규칙이 맞은 기사에 LABEL을 더하고
+(기존 keywords는 유지), 탭 목록 순서로 정렬한다. 결과는 반드시 눈으로 확인한다.
 """
 
+import argparse
 import json
 import os
 import re
 import sys
-from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
 
-KEYWORDS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                             'keywords.json')
-MIN_ARTICLES = 6      # 사이트와 같은 기준 — 탭 안에서 6개 이상이어야 서브 카테고리
+RULES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          'keyword_rules.json')
 ASCII_RE = re.compile(r'^[\x00-\x7f]+$')
 
 
@@ -34,7 +36,7 @@ def _term_pattern(term: str) -> str:
     return re.escape(term)
 
 
-def load_rules(path: str = KEYWORDS_PATH) -> list:
+def load_rules(path: str = RULES_PATH) -> list:
     with open(path, encoding='utf-8') as f:
         spec = json.load(f)
     rules = []
@@ -55,24 +57,19 @@ def _plain(html: str) -> str:
 
 
 def _first_sentence(body: str) -> str:
-    first_p = (body or '').split('</p>', 1)[0]
-    text = _plain(first_p)
+    text = _plain((body or '').split('</p>', 1)[0])
     m = re.search(r'(.+?(?:요|다|\.))(?:\s|$)', text)
     return m.group(1) if m else text
 
 
-def tag(article: dict, rules: list) -> list:
-    """기사의 keywords 목록 (사전 순서)."""
-    short = f"{article.get('headline', '')} {article.get('summary', '')}"
-    long = f"{short} {_first_sentence(article.get('body', ''))}"
-    out = []
-    for r in rules:
-        text = short if r['kind'] == 'target' else long
-        for ex in r['exclude']:
-            text = ex.sub(' ', text)
-        if r['match'].search(text):
-            out.append(r['label'])
-    return out
+def matches(article: dict, rule: dict) -> bool:
+    """target은 제목+요약, company/product는 제목+요약+본문 첫 문장에서 찾는다."""
+    text = f"{article.get('headline', '')} {article.get('summary', '')}"
+    if rule['kind'] != 'target':
+        text += ' ' + _first_sentence(article.get('body', ''))
+    for ex in rule['exclude']:
+        text = ex.sub(' ', text)
+    return bool(rule['match'].search(text))
 
 
 def with_keywords(article: dict, keywords: list) -> dict:
@@ -90,35 +87,42 @@ def with_keywords(article: dict, keywords: list) -> dict:
 
 
 def main():
-    check_only = '--check' in sys.argv[1:]
-    rules = load_rules()
-    changed = 0
-    per_tab = {t: Counter() for t in feed_data.TABS}
-    untagged = Counter()
+    ap = argparse.ArgumentParser()
+    ap.add_argument('label')
+    ap.add_argument('--tab', choices=feed_data.TABS)
+    ap.add_argument('--apply', action='store_true')
+    args = ap.parse_args()
+
+    lists = feed_data.keyword_lists()
+    tabs = [args.tab] if args.tab else [t for t in feed_data.TABS
+                                        if args.label in lists.get(t, [])]
+    missing = [t for t in tabs if args.label not in lists.get(t, [])]
+    if not tabs or missing:
+        sys.exit(f'"{args.label}" is not in the keyword list of '
+                 f'{missing or "any tab"} — add it to data/keywords.json first.')
+    rule = next((r for r in load_rules() if r['label'] == args.label), None)
+    if rule is None:
+        sys.exit(f'No rule for "{args.label}" in scripts/keyword_rules.json — '
+                 f'add one, or tag the articles by hand.')
+
+    hits = 0
     for name in feed_data.date_files():
         day = feed_data.read_day(name)
         new_day = []
         for a in day:
-            kws = tag(a, rules)
-            if a.get('keywords') != kws:
-                changed += 1
+            kws = a.get('keywords', [])
+            if a['tab'] in tabs and args.label not in kws and matches(a, rule):
+                hits += 1
+                print(f'  + [{a["tab"]}] {a["publishedAt"]} {a["headline"][:60]}')
+                order = lists[a['tab']]
+                kws = [k for k in order if k in set(kws) | {args.label}]
             new_day.append(with_keywords(a, kws))
-            per_tab[a['tab']].update(kws)
-            if not kws:
-                untagged[a['tab']] += 1
-        if not check_only and new_day != day:
+        if args.apply and new_day != day:
             feed_data.write_day(name, new_day)
-    if not check_only:
+    if args.apply:
         feed_data.write_index()
-
-    verb = 'would change' if check_only else 'updated'
-    print(f'{verb} keywords on {changed} article(s).')
-    for t in feed_data.TABS:
-        shown = [f'{k} {n}' for k, n in per_tab[t].most_common()
-                 if n >= MIN_ARTICLES]
-        print(f'  {t}: {len(shown)} sub-categories, '
-              f'{untagged[t]} article(s) without keywords')
-        print('    ' + ', '.join(shown))
+    print(f'{"Tagged" if args.apply else "Would tag"} {hits} article(s) '
+          f'with "{args.label}".')
 
 
 if __name__ == '__main__':

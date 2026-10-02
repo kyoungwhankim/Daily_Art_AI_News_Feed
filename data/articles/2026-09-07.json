@@ -39,10 +39,7 @@
     "publishedAt": "2026.09.07",
     "hue": 200,
     "keywords": [
-      "2D·이미지",
-      "음악·사운드",
-      "MiniMax",
-      "ComfyUI"
+      "2D·이미지"
     ],
     "url": "https://docs.comfy.org/changelog"
   },
@@ -57,6 +54,8 @@
     "hue": 0,
     "image": "https://kotaku.com/app/uploads/2026/09/trailer-real.jpg",
     "keywords": [
+      "AI 사용 논란",
+      "AI 미사용 선언",
       "영상"
     ],
     "url": "https://kotaku.com/game-accused-of-using-ai-to-generate-its-reveal-trailer-proves-it-was-made-by-people-2000731291"

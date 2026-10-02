@@ -26,7 +26,10 @@
     "publishedAt": "2026.09.19",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/50279/images/6aada812739f5/contain_1200x630.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report",
     "urls": [
       {
@@ -46,7 +49,7 @@
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png?disable=upscale&width=1200&height=630&fit=crop",
     "keywords": [
-      "음성"
+      "법·정책"
     ],
     "url": "https://www.gamedeveloper.com/business/mihoyo-wins-112-000-in-genshin-impact-ai-voice-cloning-lawsuit"
   }

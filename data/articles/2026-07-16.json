@@ -34,8 +34,7 @@
     "keywords": [
       "3D",
       "텍스처",
-      "가우시안 스플래팅",
-      "Houdini"
+      "가우시안 스플래팅"
     ],
     "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more",
     "urls": [
@@ -103,7 +102,7 @@
     "hue": 5,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltaf8e7abed5ff51ef/6a564e2ebeff5ed1067c1927/Xbox_3.png",
     "keywords": [
-      "음성",
+      "고용·노조",
       "Microsoft"
     ],
     "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
@@ -118,7 +117,9 @@
     "publishedAt": "2026.07.16",
     "hue": 350,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt59aee415c75cedf4/6a5765757ef2fe2ed31a2ebb/IWGB_Header.png",
-    "keywords": [],
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.gamedeveloper.com/business/iwgb-game-workers-union-forms-redundancy-taskforce-to-defend-workers-rights"
   },
   {
@@ -133,8 +134,8 @@
     "image": "https://we0-cms.oss-cn-beijing.aliyuncs.com/cms-assets/image/2026/07/089e0220-f133-4ce2-8eaa-f9f4d3c80eec-01-image.png",
     "keywords": [
       "영상",
-      "ByteDance",
-      "Seedance"
+      "Seedance",
+      "ByteDance"
     ],
     "url": "https://we0.ai/articles/bytedance-seedance-2-5-api-july-16",
     "urls": [

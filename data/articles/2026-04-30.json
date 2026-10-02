@@ -10,10 +10,9 @@
     "hue": 200,
     "image": "https://cdn.80.lv/api/upload/meta/48035/images/69f1d7bc75b57/contain_1200x630.jpg",
     "keywords": [
-      "Anthropic",
       "Blender",
-      "MCP",
-      "Claude"
+      "Claude",
+      "MCP"
     ],
     "url": "https://80.lv/articles/blender-ceo-on-anthropic-funding-this-is-not-ai-takeover",
     "urls": [
@@ -33,7 +32,9 @@
     "publishedAt": "2026.04.30",
     "hue": 10,
     "image": "https://media.pocketgamer.biz/images/139040/88850/magicthegatheringarenalogo-1_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.pocketgamer.biz/magic-the-gathering-arena-team-unionises-under-cwa/"
   },
   {

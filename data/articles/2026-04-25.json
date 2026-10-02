@@ -9,9 +9,7 @@
     "publishedAt": "2026.04.25",
     "hue": 200,
     "image": "https://techcrunch.com/wp-content/uploads/2026/02/roblox-header.jpg?resize=1200,800",
-    "keywords": [
-      "Roblox"
-    ],
+    "keywords": [],
     "url": "https://techcrunch.com/2026/04/16/robloxs-ai-assistant-gets-new-agentic-tools-to-plan-build-and-test-games/",
     "urls": [
       {
@@ -65,6 +63,7 @@
     "publishedAt": "2026.04.25",
     "hue": 30,
     "keywords": [
+      "AI 사용 논란",
       "2D·이미지"
     ],
     "url": "https://news.bittopup.com/news/identity-v-ai-backlash-2026-is-the-april-23-boycott-worth-it",
@@ -85,8 +84,8 @@
     "publishedAt": "2026.04.25",
     "hue": 30,
     "keywords": [
-      "2D·이미지",
-      "코딩"
+      "코딩",
+      "2D·이미지"
     ],
     "url": "https://itbusinessnet.com/2026/04/makko-launches-ai-powered-2d-game-studio-with-over-40000-game-assets-created-in-beta/",
     "urls": [
@@ -106,7 +105,10 @@
     "publishedAt": "2026.04.25",
     "hue": 30,
     "image": "https://www.layer.ai/_astro/coverImage.BqZiG5rZ.png",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략",
+      "행사·컨퍼런스"
+    ],
     "url": "https://www.layer.ai/blog/gdc-2026-recap-how-ai-workflows-are-transforming-ua-creative-production-for-game-studios"
   },
   {
@@ -120,9 +122,8 @@
     "hue": 290,
     "image": "https://pub-40fc341bb75049a4af5e73bf5afac3ba.r2.dev/blog-images/blog-cover-1777028586188.jpg",
     "keywords": [
-      "2D·이미지",
       "영상",
-      "Kling"
+      "2D·이미지"
     ],
     "url": "https://www.vo3ai.com/blog/kling-30-just-launched-native-4k-video3-ways-it-changes-ai-filmmaking-2026-04-24",
     "urls": [
@@ -143,8 +144,7 @@
     "hue": 290,
     "image": "https://the-decoder.com/wp-content/uploads/2024/09/openai_sora_screens-2.png",
     "keywords": [
-      "OpenAI",
-      "Sora"
+      "OpenAI"
     ],
     "url": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/",
     "urls": [
@@ -166,7 +166,6 @@
     "keywords": [
       "Adobe",
       "Photoshop",
-      "Firefly",
       "Premiere"
     ],
     "url": "https://blog.adobe.com/en/publish/2026/04/15/introducing-firefly-ai-assistant-new-way-create-with-our-creative-agent",

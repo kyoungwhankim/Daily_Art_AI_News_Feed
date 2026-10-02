@@ -33,8 +33,7 @@
     "hue": 330,
     "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.03118.png",
     "keywords": [
-      "영상",
-      "음성"
+      "영상"
     ],
     "url": "https://huggingface.co/papers/2607.03118",
     "urls": [
@@ -79,7 +78,9 @@
     "publishedAt": "2026.07.13",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/07/batman.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://kotaku.com/christopher-nolan-points-out-that-everyone-hates-ai-2000714998"
   },
   {

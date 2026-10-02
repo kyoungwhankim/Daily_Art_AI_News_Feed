@@ -9,7 +9,9 @@
     "publishedAt": "2026.06.21",
     "hue": 10,
     "image": "https://cdn.mos.cms.futurecdn.net/3VN7SmGVhGjjhRzTuSChwN-2560-80.jpg",
-    "keywords": [],
+    "keywords": [
+      "고용·노조"
+    ],
     "url": "https://www.pcgamer.com/software/ai/former-dragon-age-writer-says-ai-could-make-gamedev-frustrating-as-hell-how-are-we-going-to-train-up-the-next-generation-of-devs-if-we-eliminate-every-entry-level-task/"
   },
   {
@@ -23,10 +25,9 @@
     "hue": 30,
     "image": "https://media.assettype.com/outlook-respawn/2026-04-23/ipfs549i/1-90.jpg",
     "keywords": [
-      "Epic Games",
-      "Unreal Engine",
-      "Gemini",
-      "Claude"
+      "AI 사용 논란",
+      "Claude",
+      "Epic Games"
     ],
     "url": "https://respawn.outlookindia.com/gaming/gaming-news/vampire-survivors-halts-fortnite-crossover-over-epic-games-ai-push"
   },
@@ -41,6 +42,7 @@
     "hue": 200,
     "image": "https://twistedvoxel.com/wp-content/uploads/2026/01/playstation-astro-bot.jpg",
     "keywords": [
+      "AI 도입 전략",
       "Sony"
     ],
     "url": "https://www.techpowerup.com/339099/sony-highlights-playstation-ai-usage-in-legal-documentation"
@@ -55,9 +57,7 @@
     "publishedAt": "2026.06.21",
     "hue": 350,
     "image": "https://the-decoder.com/wp-content/uploads/2026/06/eu_ai_flag-1.png",
-    "keywords": [
-      "Amazon"
-    ],
+    "keywords": [],
     "url": "https://the-decoder.com/the-eu-doesnt-really-know-what-a-deepfake-is-and-thats-becoming-a-problem-for-retail/"
   },
   {

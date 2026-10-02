@@ -12,8 +12,8 @@
     "keywords": [
       "3D",
       "NVIDIA",
-      "Tripo",
-      "DLSS"
+      "DLSS",
+      "Tripo"
     ],
     "url": "https://80.lv/articles/the-biggest-3d-art-technology-highlights-from-gamescom-2026",
     "urls": [
@@ -33,7 +33,9 @@
     "publishedAt": "2026.09.26",
     "hue": 30,
     "image": "https://kotaku.com/app/uploads/2026/09/village-in-the-shade-shot.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략"
+    ],
     "url": "https://kotaku.com/nippon-ichi-nis-america-head-company-researching-ai-2000737211"
   }
 ]

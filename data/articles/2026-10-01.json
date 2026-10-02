@@ -11,9 +11,8 @@
     "image": "https://cdn.mos.cms.futurecdn.net/DT46hrKgj3M2G2y2xf3KA3-1920-80.jpg",
     "keywords": [
       "3D",
-      "MCP",
       "Claude",
-      "ChatGPT"
+      "MCP"
     ],
     "url": "https://www.creativebloq.com/ai/you-can-now-use-chatgpt-and-claude-to-speed-up-3d-art-in-cinema-4d",
     "urls": [
@@ -35,9 +34,8 @@
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/09/260610_Cinema4D20263_GeneratedScene-960x480.jpg",
     "keywords": [
       "3D",
-      "MCP",
       "Claude",
-      "ChatGPT"
+      "MCP"
     ],
     "url": "https://www.cgchannel.com/2026/09/maxon-releases-cinema-4d-2026-4-with-a-new-mcp-server/",
     "urls": [
@@ -61,7 +59,9 @@
     "publishedAt": "2026.10.01",
     "hue": 30,
     "image": "https://kotaku.com/app/uploads/2026/09/Screenshot-2026-09-21-at-17.07.03.jpg",
-    "keywords": [],
+    "keywords": [
+      "설문·통계"
+    ],
     "url": "https://kotaku.com/over-85-percent-of-japanese-game-developers-are-using-ai-2000736041"
   },
   {
@@ -74,7 +74,9 @@
     "publishedAt": "2026.10.01",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141584/89954/maria-redin_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략"
+    ],
     "url": "https://www.pocketgamer.biz/mtg-wants-to-double-its-size-while-leveraging-ai/"
   },
   {

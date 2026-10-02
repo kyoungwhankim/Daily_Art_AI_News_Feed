@@ -11,8 +11,8 @@
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260618_MetaHumanAnimatorMarkerlessMocap_FreeUE5Plugin_f.jpg",
     "keywords": [
       "애니메이션",
-      "Epic Games",
-      "Unreal Engine"
+      "Unreal Engine",
+      "Epic Games"
     ],
     "url": "https://www.cgchannel.com/2026/06/get-the-free-metahuman-animator-markerless-mocap-plugin/",
     "urls": [
@@ -54,7 +54,9 @@
     "publishedAt": "2026.06.19",
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltbe73fb33ae04c613/6a34164a8682b9855121d3a3/ss_4c403dcd22f20a11524269c71f9feec96085a762.1920x1080.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 미사용 선언"
+    ],
     "url": "https://www.gamedeveloper.com/business/pocketpair-on-generative-ai-in-games-gamers-don-t-want-it-and-if-the-gamers-don-t-want-it-i-guess-that-s-it-right"
   },
   {
@@ -68,6 +70,7 @@
     "hue": 20,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt90eaa9a405d7953b/6a3404f07f3f2790b6c96006/New_Project(4).png?disable=upscale&width=1200&height=630&fit=crop",
     "keywords": [
+      "AI 사용 논란",
       "Epic Games"
     ],
     "url": "https://www.gamedeveloper.com/business/vampire-survivors-developer-reviewing-fortnite-collab-after-epic-announced-generative-ai-use"
@@ -83,11 +86,10 @@
     "hue": 290,
     "image": "https://nofilmschool.com/media-library/adobe-agentic-ai-update.jpg?id=66957300&width=1245&height=700&quality=50&coordinates=0%2C0%2C0%2C0",
     "keywords": [
-      "2D·이미지",
       "영상",
+      "2D·이미지",
       "Adobe",
       "Photoshop",
-      "Firefly",
       "Premiere"
     ],
     "url": "https://nofilmschool.com/adobe-agentic-ai-update",

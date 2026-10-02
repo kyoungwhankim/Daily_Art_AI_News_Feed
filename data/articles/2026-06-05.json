@@ -32,10 +32,10 @@
     "hue": 220,
     "image": "https://cdn.80.lv/api/upload/meta/48566/images/6a19c8c66874a/contain_1200x630.png",
     "keywords": [
-      "Tripo",
-      "Meshy",
       "Unreal Engine",
-      "Claude"
+      "Claude",
+      "Tripo",
+      "Meshy"
     ],
     "url": "https://80.lv/articles/connect-your-favorite-ai-models-directly-into-unreal-engine-with-nwiro-integration-kit"
   },
@@ -49,7 +49,10 @@
     "publishedAt": "2026.06.05",
     "hue": 10,
     "image": "https://assets.games.gg/summer_game_fest_ai_disclosures_hype_og_24b95572c1.webp",
-    "keywords": [],
+    "keywords": [
+      "AI 사용 논란",
+      "행사·컨퍼런스"
+    ],
     "url": "https://games.gg/news/summer-game-fest-ai-disclosures-hype/"
   },
   {

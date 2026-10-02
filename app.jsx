@@ -13,11 +13,14 @@ async function fetchJson(url, init) {
   return r.json();
 }
 async function loadArticles() {
-  const index = await fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' });
+  const [index, keywords] = await Promise.all([
+    fetchJson(`${DATA_BASE}index.json`, { cache: 'no-cache' }),
+    fetchJson(`${DATA_BASE}keywords.json`, { cache: 'no-cache' }),   // 탭별 서브 카테고리 고정 목록
+  ]);
   const days = await Promise.all(
     index.dates.map(d => fetchJson(`${DATA_BASE}${d.file}?v=${d.rev}`))
   );
-  return days.flat();   // index는 최신순 → 기사도 최신 날짜부터
+  return { articles: days.flat(), keywordTabs: keywords.tabs };   // index는 최신순 → 기사도 최신 날짜부터
 }
 
 /* ---------- date helpers ---------- */
@@ -66,18 +69,16 @@ function tabCounts(articles) {
   articles.forEach(a => { counts[a.tab] = (counts[a.tab] || 0) + 1; });
   return counts;
 }
-// 서브 카테고리: 탭 안에서 MIN_SUBCAT_ARTICLES개 이상 기사에 붙은 keywords (많은 순)
-const MIN_SUBCAT_ARTICLES = 6;
-function subCategoriesFor(articles, tabId) {
+// 서브 카테고리: data/keywords.json의 탭별 고정 목록 (목록 순서) + 기사 수
+function subCategoriesFor(keywordTabs, articles, tabId) {
   const counts = new Map();
   articles.forEach(a => {
     if (a.tab !== tabId) return;
     (a.keywords || []).forEach(k => counts.set(k, (counts.get(k) || 0) + 1));
   });
-  return [...counts]
-    .filter(([, n]) => n >= MIN_SUBCAT_ARTICLES)
-    .sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0]))
-    .map(([label, count]) => ({ label, count }));
+  return ((keywordTabs && keywordTabs[tabId]) || [])
+    .map(k => ({ label: k.label, count: counts.get(k.label) || 0 }))
+    .filter(k => k.count > 0);
 }
 
 function isArticleNew(a) {
@@ -239,7 +240,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome }) {
+function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome, subcats, keyword, onKeyword }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
@@ -270,6 +271,9 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
               </button>
             ))}
           </div>
+        )}
+        {!viewSaved && subcats && (
+          <SubCategoryBar items={subcats} total={counts[active] || 0} active={keyword} onChange={onKeyword} />
         )}
       </div>
     </nav>
@@ -464,8 +468,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
             ))}
           </div>
           {(() => {
-            const shown = new Set(subCategoriesFor(allArticles, article.tab).map(c => c.label));
-            const kws = (article.keywords || []).filter(k => shown.has(k));
+            const kws = article.keywords || [];
             return kws.length > 0 && (
               <div className="modal-keywords">
                 {kws.map(k => (
@@ -694,6 +697,7 @@ function App() {
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
+  const [keywordTabs, setKeywordTabs] = useState(null);
   const [dataState, setDataState] = useState('loading');   // 'loading' | 'ready' | 'error'
   const [open, setOpen] = useState(null);
 
@@ -701,9 +705,10 @@ function App() {
   useEffect(() => {
     let cancelled = false;
     loadArticles()
-      .then(list => {
+      .then(({ articles: list, keywordTabs }) => {
         if (cancelled) return;
         setArticles(list);
+        setKeywordTabs(keywordTabs);
         setDataState('ready');
         // ?article=<id> deep link → open once the data is in
         try {
@@ -776,10 +781,9 @@ function App() {
   };
 
   // 서브 카테고리 목록 (현재 탭)
-  const subcats = useMemo(() => subCategoriesFor(articles, activeTab), [articles, activeTab]);
+  const subcats = useMemo(() => subCategoriesFor(keywordTabs, articles, activeTab), [keywordTabs, articles, activeTab]);
   const activeKeyword = subcats.some(c => c.label === keyword) ? keyword : null;
   const showSubcats = !viewHome && !viewSaved && !query.trim() && dataState === 'ready';
-  const tabTotal = useMemo(() => articles.filter(a => a.tab === activeTab).length, [articles, activeTab]);
   const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewSaved(false); setViewHome(false); setQuery(''); };
 
   // filter pipeline
@@ -825,6 +829,9 @@ function App() {
           viewSaved={viewSaved}
           onClearSaved={() => setViewSaved(false)}
           viewHome={viewHome}
+          subcats={showSubcats ? subcats : null}
+          keyword={activeKeyword}
+          onKeyword={setKeyword}
         />
       )}
       
@@ -836,9 +843,6 @@ function App() {
           query={query.trim()}
           keyword={activeKeyword}
         />
-      )}
-      {showSubcats && (
-        <SubCategoryBar items={subcats} total={tabTotal} active={activeKeyword} onChange={setKeyword} />
       )}
       <main className="feed">
         {viewHome ? (

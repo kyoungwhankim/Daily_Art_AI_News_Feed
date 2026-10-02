@@ -30,7 +30,9 @@
     "publishedAt": "2026.05.06",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/139136/88877/mindtrail_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "투자·인수"
+    ],
     "url": "https://www.pocketgamer.biz/turkish-mobile-studio-mindtail-raises-2m-for-ai-driven-puzzle-games/"
   },
   {
@@ -44,8 +46,7 @@
     "hue": 200,
     "image": "https://media.pocketgamer.biz/images/139138/88879/unity-ai_l1200.jpg",
     "keywords": [
-      "코딩",
-      "Unity"
+      "코딩"
     ],
     "url": "https://www.pocketgamer.biz/unity-launches-open-beta-for-unity-ai-game-development-tools/",
     "urls": [

@@ -9,7 +9,9 @@
     "publishedAt": "2026.08.19",
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/49300/images/6a5946c558e68/contain_1200x630.png",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략"
+    ],
     "url": "https://80.lv/articles/why-game-studios-are-turning-to-external-development-partnerships"
   },
   {
@@ -23,8 +25,7 @@
     "hue": 290,
     "image": "https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/e960798a-8d34-48bb-9990-54c7cf781852/Stable_Audio_Beta_Launch_16x9.png",
     "keywords": [
-      "음악·사운드",
-      "Stability AI"
+      "음악·사운드"
     ],
     "url": "https://stability.ai/news-updates/sharing-a-new-way-to-work-with-stable-audio"
   },
@@ -39,8 +40,8 @@
     "hue": 220,
     "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/08/hf_20260807_000120_42b99b6a-a110-4fb2-9205-e22ab0276712-1.png",
     "keywords": [
-      "2D·이미지",
       "영상",
+      "2D·이미지",
       "Higgsfield"
     ],
     "url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/"
@@ -71,8 +72,8 @@
     "image": "https://ca-times.brightspotcdn.com/dims4/default/90bec78/2147483647/strip/true/crop/3804x1997+0+348/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb0%2F6e%2F2e1eeb5c4e5f914b6198d05751ff%2Fap25259113037248.jpg",
     "keywords": [
       "영상",
-      "ByteDance",
-      "Seedance"
+      "Seedance",
+      "ByteDance"
     ],
     "url": "https://www.latimes.com/entertainment-arts/business/story/2026-08-17/motion-picture-association-reaches-agreement-with-bytedance-over-ai-guardrails",
     "urls": [

@@ -308,19 +308,17 @@ html::before {
 .chip:active { transform: translateY(1px); box-shadow: none; }
 .chip.active { background: var(--accent); color: var(--card); box-shadow: var(--shadow-pop-sm); }
 
-/* sub-categories (keyword chips) */
+/* sub-categories (keyword chips) — 메뉴의 메인 탭 바로 아래 줄 */
 .subcats {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  padding: 0 40px 22px;
-  max-width: 1280px; margin: 0 auto;
-  width: 100%;
+  display: flex; flex-wrap: wrap; gap: 6px 8px;
+  padding: 12px 0 14px;
+  border-top: 1.5px solid var(--hairline);
 }
-.chip.subcat { padding: 5px 12px; font-size: 12.5px; border-width: 1.5px; }
+.chip.subcat { padding: 4px 11px; font-size: 12.5px; border-width: 1.5px; }
 .subcat-count { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .chip.subcat.active .subcat-count { color: inherit; opacity: .8; }
-@media (max-width: 960px) { .subcats { padding-left: 24px; padding-right: 24px; } }
 @media (max-width: 640px) {
-  .subcats { flex-wrap: nowrap; overflow-x: auto; padding-left: 18px; padding-right: 18px; scrollbar-width: none; }
+  .subcats { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
   .subcats::-webkit-scrollbar { display: none; }
   .chip.subcat { flex: 0 0 auto; }
 }

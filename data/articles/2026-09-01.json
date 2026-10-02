@@ -9,10 +9,7 @@
     "publishedAt": "2026.09.01",
     "hue": 25,
     "image": "https://cdn.80.lv/api/upload/meta/49986/images/6a961376762b8/contain_1200x630.png",
-    "keywords": [
-      "Meta",
-      "Sega"
-    ],
+    "keywords": [],
     "url": "https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists"
   },
   {
@@ -25,7 +22,9 @@
     "publishedAt": "2026.09.01",
     "hue": 5,
     "image": "https://www.allkeyshop.com/blog/wp-content/uploads/1666-amsterdam-ai-controvery.webp",
-    "keywords": [],
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://www.allkeyshop.com/blog/1666-amsterdam-removes-ai-early-access-launch-news-n/"
   },
   {
@@ -55,7 +54,6 @@
     "hue": 270,
     "image": "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/08/082626-solaris-blogpost-thumbnail-2fe8ad11-4846-4ba2-bbbf-a8db3feaa725.png",
     "keywords": [
-      "코딩",
       "Runway"
     ],
     "url": "https://runway.com/news/research/introducing-solaris"

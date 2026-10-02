@@ -24,10 +24,7 @@
     "publishedAt": "2026.06.11",
     "hue": 30,
     "image": "https://nintendoeverything.com/wp-content/uploads/Crazy-Taxi.png",
-    "keywords": [
-      "Microsoft",
-      "Sega"
-    ],
+    "keywords": [],
     "url": "https://nintendoeverything.com/crazy-taxi-world-tour-producer-explains-how-the-team-is-using-ai/"
   },
   {
@@ -55,7 +52,10 @@
     "publishedAt": "2026.06.11",
     "hue": 0,
     "image": "https://cdn.mos.cms.futurecdn.net/Dx6kf8VmbpLwSc9Wy2DscB-1920-80.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 사용 논란",
+      "행사·컨퍼런스"
+    ],
     "url": "https://www.pcgamer.com/software/ai/once-again-players-are-right-to-suspect-ai-was-used-in-a-game-once-again-a-dev-apologizes-for-using-ai-in-their-game/"
   },
   {
@@ -68,7 +68,10 @@
     "publishedAt": "2026.06.11",
     "hue": 240,
     "image": "https://substackcdn.com/image/fetch/$s_!6kVU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb857ac3b-55c4-42f4-854a-b8c969763e91_1200x630.jpeg",
-    "keywords": [],
+    "keywords": [
+      "고용·노조",
+      "법·정책"
+    ],
     "url": "https://www.aiandgames.com/p/the-uks-governments-new-ai-adoption",
     "urls": [
       {

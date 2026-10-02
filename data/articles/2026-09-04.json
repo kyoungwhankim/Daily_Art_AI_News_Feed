@@ -62,7 +62,9 @@
     "publishedAt": "2026.09.04",
     "hue": 10,
     "image": "https://cdn.80.lv/api/upload/meta/50041/images/6a99d4989956c/contain_1200x630.jpg",
-    "keywords": [],
+    "keywords": [
+      "법·정책"
+    ],
     "url": "https://80.lv/articles/artstation-will-block-ai-crawlers-from-scraping-artists-work",
     "urls": [
       {
@@ -81,9 +83,7 @@
     "publishedAt": "2026.09.04",
     "hue": 30,
     "image": "https://news.adobe.com/news/2026/09/media_1c82548aa127fcde4032bb951cafa40918b26b5e2.jpg",
-    "keywords": [
-      "Adobe"
-    ],
+    "keywords": [],
     "url": "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo"
   },
   {
@@ -96,7 +96,9 @@
     "publishedAt": "2026.09.04",
     "hue": 200,
     "image": "https://cdn.mos.cms.futurecdn.net/rTBSuGGDXhUBQ4VysuHrcN-2560-80.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 미사용 선언"
+    ],
     "url": "https://www.pcgamer.com/gaming-industry/game-development/cd-projekt-red-isnt-planning-to-rely-on-ai-making-complete-games-and-will-still-be-predominantly-using-people-for-the-witcher-4-and-beyond/"
   },
   {
@@ -126,10 +128,9 @@
     "hue": 50,
     "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2182154299.jpg?w=1024",
     "keywords": [
-      "3D",
       "음성",
+      "3D",
       "VFX",
-      "코딩",
       "OpenAI"
     ],
     "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/"

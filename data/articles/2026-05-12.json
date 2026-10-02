@@ -10,8 +10,7 @@
     "hue": 210,
     "image": "https://www.technology.org/texorgwp/wp-content/uploads/2026/05/sony-infiniterealities.jpeg",
     "keywords": [
-      "애니메이션",
-      "Sony"
+      "애니메이션"
     ],
     "url": "https://www.technology.org/2026/05/11/sony-ai-game-flood-predictions/"
   },
@@ -39,6 +38,7 @@
     "hue": 30,
     "image": "https://sqmagazine.co.uk/wp-content/uploads/2026/05/sony-says-playstation-studios-uses-ai-tools-for-game-development.jpg",
     "keywords": [
+      "AI 도입 전략",
       "Sony"
     ],
     "url": "https://sqmagazine.co.uk/sony-ai-tools-playstation-studios-game-development/"
@@ -53,7 +53,9 @@
     "publishedAt": "2026.05.12",
     "hue": 50,
     "image": "https://static.invenglobal.com/upload/image/2026/05/11/r1778466194823116.jpeg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스"
+    ],
     "url": "https://www.invenglobal.com/articles/21725/registration-for-2026-nexon-developers-conference-ndc-opens-on-the-19th",
     "urls": [
       {
@@ -72,10 +74,9 @@
     "publishedAt": "2026.05.12",
     "hue": 290,
     "keywords": [
-      "애니메이션",
       "영상",
       "음악·사운드",
-      "MiniMax"
+      "애니메이션"
     ],
     "url": "https://www.wingerdaily.com/2026/05/11/minimax-hailuo-ai-cannes-waiff-animated-music-video/"
   },

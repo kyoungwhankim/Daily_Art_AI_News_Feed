@@ -25,7 +25,10 @@
     "publishedAt": "2026.09.18",
     "hue": 30,
     "image": "https://images.pushsquare.com/eb8a083a08591/japan-game-development-ai.900x.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://automaton-media.com/en/news/over-85-of-japanese-game-developers-use-generative-ai-in-game-development-2026-cesa-survey-shows-an-increase-from-last-years-51/",
     "urls": [
       {
@@ -48,7 +51,9 @@
     "publishedAt": "2026.09.18",
     "hue": 20,
     "image": "https://www.pcguide.com/wp-content/uploads/2026/09/Tokyo-Game-Show-2026-banner.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스"
+    ],
     "url": "https://finance.biggo.com/news/b6a75d43-6a0e-459e-a1b5-7154d83c617d"
   },
   {

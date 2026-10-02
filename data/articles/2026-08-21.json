@@ -9,8 +9,7 @@
     "publishedAt": "2026.08.21",
     "hue": 200,
     "keywords": [
-      "영상",
-      "Runway"
+      "영상"
     ],
     "url": "https://releasebot.io/updates/runwayai",
     "urls": [
@@ -31,6 +30,7 @@
     "hue": 30,
     "image": "https://cdn.80.lv/api/upload/meta/49818/images/6a864293a4835/contain_1200x630.jpg",
     "keywords": [
+      "AI 도입 전략",
       "코딩"
     ],
     "url": "https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time"
@@ -61,8 +61,8 @@
     "hue": 290,
     "image": "https://cdn.sanity.io/images/2gpum2i6/production/1e1470ba8e99a04964574a307371d25869d377cf-3840x2160.jpg",
     "keywords": [
-      "2D·이미지",
-      "영상"
+      "영상",
+      "2D·이미지"
     ],
     "url": "https://bfl.ai/blog/flux-video-upscale",
     "urls": [

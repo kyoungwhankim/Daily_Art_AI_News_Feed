@@ -10,6 +10,7 @@
     "hue": 0,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt2c2f608b8dadcd62/6a97e133db31b5be7767f1c7/GDE27_Placeholder_-_5.png",
     "keywords": [
+      "고용·노조",
       "Microsoft"
     ],
     "url": "https://www.gamedeveloper.com/business/microsoft-ceo-says-xbox-is-simply-streamlining-after-cutting-over-5-750-jobs-in-three-years"
@@ -25,8 +26,8 @@
     "hue": 220,
     "image": "https://newsroom.amd.com/images/2026/09/063180c6-5b1a-4200-b238-99d7083699ae.jpg",
     "keywords": [
-      "3D",
-      "영상"
+      "영상",
+      "3D"
     ],
     "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
   },
@@ -62,9 +63,9 @@
     "hue": 290,
     "image": "https://cdn.mos.cms.futurecdn.net/zxY6jnnHDgAvHyFjMJYiSY-1920-80.jpg",
     "keywords": [
-      "애니메이션",
       "영상",
-      "음악·사운드"
+      "음악·사운드",
+      "애니메이션"
     ],
     "url": "https://www.creativebloq.com/art/animation/viral-ai-animation-sparks-controversy-over-familiar-character-design"
   },

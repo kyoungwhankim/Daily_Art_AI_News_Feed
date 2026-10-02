@@ -34,9 +34,7 @@
     "image": "https://images.techeblog.com/wp-content/uploads/2026/05/19235927/google-gemini-omni-model.jpg",
     "keywords": [
       "영상",
-      "음악·사운드",
-      "Google",
-      "Gemini"
+      "Google"
     ],
     "url": "https://www.techeblog.com/google-gemini-omni-model-explained-demos/",
     "urls": [
@@ -57,8 +55,7 @@
     "hue": 290,
     "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-1480808838.jpg?resize=1200,800",
     "keywords": [
-      "음악·사운드",
-      "Stability AI"
+      "음악·사운드"
     ],
     "url": "https://techcrunch.com/2026/05/20/stability-ai-release-a-new-audio-model-that-can-create-six-minute-songs/"
   },
@@ -74,9 +71,9 @@
     "image": "https://www.redsharknews.com/hubfs/google%20io%202026.jpg",
     "keywords": [
       "영상",
-      "Adobe",
       "Google",
-      "Gemini"
+      "Gemini",
+      "Adobe"
     ],
     "url": "https://www.redsharknews.com/google-io-2026-biggest-announcements-creatives",
     "urls": [
@@ -112,11 +109,11 @@
     "hue": 50,
     "image": "https://nofilmschool.com/media-library/image.webp?id=66768672&width=1200&height=600&coordinates=144%2C0%2C144%2C0",
     "keywords": [
-      "Adobe",
       "Google",
+      "Gemini",
+      "Adobe",
       "Photoshop",
-      "Premiere",
-      "Gemini"
+      "Premiere"
     ],
     "url": "https://nofilmschool.com/adobe-creativity-connector-for-gemini",
     "urls": [

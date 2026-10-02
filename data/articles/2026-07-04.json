@@ -24,9 +24,7 @@
     "publishedAt": "2026.07.04",
     "hue": 30,
     "image": "https://cdn-chilj.nitrocdn.com/gYFaTcLxknXlucWgXPjHDdhAuyobJjHx/assets/images/optimized/rev-80252c2/winbuzzer.com/wp-content/uploads/2026/07/Meta-Gizmo-Pocket-app-1068x601-1067x.webp",
-    "keywords": [
-      "Meta"
-    ],
+    "keywords": [],
     "url": "https://winbuzzer.com/2026/07/03/meta-quietly-tests-pocket-for-ai-generated-mini-games-xcxwbn/"
   },
   {
@@ -40,10 +38,10 @@
     "hue": 290,
     "image": "https://static.higgsfield.ai/reels-studio-intro/og.webp",
     "keywords": [
-      "애니메이션",
       "영상",
-      "Higgsfield",
-      "Gemini"
+      "애니메이션",
+      "Gemini",
+      "Higgsfield"
     ],
     "url": "https://higgsfield.ai/shorts-studio"
   },

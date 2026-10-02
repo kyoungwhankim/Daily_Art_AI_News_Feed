@@ -10,8 +10,7 @@
     "hue": 30,
     "image": "https://www.pcguide.com/wp-content/uploads/2026/08/Tencent-Games-Central-Tech.jpg",
     "keywords": [
-      "애니메이션",
-      "Tencent"
+      "애니메이션"
     ],
     "url": "https://www.pcguide.com/news/tencent-games-central-tech-introduces-new-ai-tools-to-help-with-animation-gameplay-and-more-at-gamescom-2026/",
     "urls": [
@@ -31,7 +30,10 @@
     "publishedAt": "2026.08.28",
     "hue": 220,
     "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2026/08/geoff-keighley-on-stage-at-gamescom-onl-holding-a-mic.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://www.thegamer.com/gamescom-1-in-4-games-used-ai/"
   },
   {
@@ -44,7 +46,10 @@
     "publishedAt": "2026.08.28",
     "hue": 30,
     "image": "https://gamesbeat.com/wp-content/uploads/2026/08/unnamed-2.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://gamesbeat.com/gamescom-dev-sees-15-percent-attendance-increase-in-first-year-under-new-name/"
   },
   {
@@ -85,8 +90,7 @@
     "keywords": [
       "Google",
       "OpenAI",
-      "Anthropic",
-      "Microsoft"
+      "Anthropic"
     ],
     "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
   }

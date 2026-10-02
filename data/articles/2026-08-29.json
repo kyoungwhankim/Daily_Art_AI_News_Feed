@@ -57,7 +57,10 @@
     "publishedAt": "2026.08.29",
     "hue": 30,
     "image": "https://media.pocketgamer.biz/images/141021/89735/gamescom-2026-11_l1200.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 도입 전략",
+      "행사·컨퍼런스"
+    ],
     "url": "https://www.pocketgamer.biz/5-takeaways-from-gamescom-2026/"
   },
   {
@@ -71,7 +74,9 @@
     "hue": 10,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt7ecaf49e4aad5de2/6a905d46db527eb74aec34d3/Patch_Notes_Template_White_(1)(1).png",
     "keywords": [
-      "음성"
+      "AI 사용 논란",
+      "행사·컨퍼런스",
+      "설문·통계"
     ],
     "url": "https://www.gamedeveloper.com/business/panic-refunds-tariff-fees-1047-games-pivots-from-splitgate-and-gamescom-dev-grows-patch-notes-67"
   },
@@ -85,8 +90,7 @@
     "publishedAt": "2026.08.29",
     "hue": 290,
     "keywords": [
-      "2D·이미지",
-      "Midjourney"
+      "2D·이미지"
     ],
     "url": "https://updates.midjourney.com/edit-model-for-v8/"
   },

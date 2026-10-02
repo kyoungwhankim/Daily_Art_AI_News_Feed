@@ -10,8 +10,7 @@
     "hue": 340,
     "image": "https://runwayml.com/opengraph-image.png?opengraph-image.0bt75ga2._tb4.png",
     "keywords": [
-      "영상",
-      "Runway"
+      "영상"
     ],
     "url": "https://runwayml.com/changelog",
     "urls": [
@@ -31,7 +30,9 @@
     "publishedAt": "2026.05.14",
     "hue": 30,
     "image": "https://techcrunch.com/wp-content/uploads/2026/05/Origin-Lab-Co-Founders.jpg?resize=1156,1200",
-    "keywords": [],
+    "keywords": [
+      "투자·인수"
+    ],
     "url": "https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/"
   },
   {
@@ -45,6 +46,7 @@
     "hue": 0,
     "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/05/13/party-animals-review-bombed-ai-video-contest.jpg",
     "keywords": [
+      "AI 사용 논란",
       "영상"
     ],
     "url": "https://www.dexerto.com/gaming/party-animals-review-bombed-after-announcing-ai-video-contest-with-15k-grand-prize-3364713/"
@@ -61,9 +63,7 @@
     "image": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/09/sora-app-icon.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
     "keywords": [
       "영상",
-      "OpenAI",
-      "Sora",
-      "Kling"
+      "OpenAI"
     ],
     "url": "https://9to5mac.com/2026/05/13/new-ai-video-generation-apps-are-rising-from-the-ashes-of-openais-sora/"
   },
@@ -80,8 +80,8 @@
     "keywords": [
       "영상",
       "음악·사운드",
-      "ByteDance",
-      "Seedance"
+      "Seedance",
+      "ByteDance"
     ],
     "url": "https://www.globenewswire.com/news-release/2026/05/13/3294227/0/en/DeepBrain-AI-Adds-Seedance-2-0-to-AI-STUDIOS-Same-Model-Fundamentally-Different-Result.html"
   }

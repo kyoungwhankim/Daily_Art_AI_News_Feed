@@ -9,8 +9,7 @@
     "publishedAt": "2026.04.23",
     "hue": 200,
     "keywords": [
-      "Google",
-      "Gemini"
+      "Google"
     ],
     "url": "https://www.googlecloudpresscorner.com/2026-04-22-How-Capcom-Is-Leading-the-Way-for-Enterprise-Agentic-AI"
   },
@@ -38,7 +37,9 @@
     "publishedAt": "2026.04.23",
     "hue": 30,
     "image": "https://www.freemalaysiatoday.com/cdn-cgi/image/quality=75,format=auto,fit=cover,dpr=1,width=1200,height=630,gravity=center/https://media.freemalaysiatoday.com/wp-content/uploads/2026/04/edc895d3-afp__20231205__34728p6__v1__highres__rockstargamesreleasesfirsttrailerforgrandthefta_cropped_1.webp",
-    "keywords": [],
+    "keywords": [
+      "설문·통계"
+    ],
     "url": "https://www.freemalaysiatoday.com/category/business/2026/04/22/gaming-industry-could-unlock-us22bil-from-ai-cost-cuts-says-morgan-stanley"
   },
   {
@@ -53,7 +54,6 @@
     "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/04/ChatGPT.png",
     "keywords": [
       "2D·이미지",
-      "텍스처",
       "OpenAI",
       "ChatGPT"
     ],
@@ -89,8 +89,8 @@
     "publishedAt": "2026.04.23",
     "hue": 290,
     "keywords": [
-      "3D",
-      "영상"
+      "영상",
+      "3D"
     ],
     "url": "https://www.provideocoalition.com/best-in-show-awards-at-nab-2026/",
     "urls": [

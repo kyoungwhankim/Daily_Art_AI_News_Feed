@@ -9,9 +9,7 @@
     "publishedAt": "2026.09.06",
     "hue": 30,
     "image": "https://expert-egret-407.convex.cloud/api/storage/c3187aa0-030e-411e-b940-8a6dd29dc891",
-    "keywords": [
-      "OpenAI"
-    ],
+    "keywords": [],
     "url": "https://www.stork.ai/blog/astra-built-a-game-you-can-play-it-now"
   },
   {
@@ -41,8 +39,7 @@
     "hue": 290,
     "image": "https://static.wavespeed.ai/static/2026-07-21/20260721112711_knz3nwct.webp",
     "keywords": [
-      "영상",
-      "Kling"
+      "영상"
     ],
     "url": "https://wavespeed.ai/blog/ai-models/kling-o3-4k-video-edit-video-reference/",
     "urls": [

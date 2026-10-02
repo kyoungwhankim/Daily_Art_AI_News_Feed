@@ -9,7 +9,10 @@
     "publishedAt": "2026.05.23",
     "hue": 15,
     "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "keywords": [],
+    "keywords": [
+      "고용·노조",
+      "법·정책"
+    ],
     "url": "https://www.npr.org/2026/05/22/g-s1-123671/ca-gov-gavin-newsom-signed-an-executive-order-to-protect-workers-from-ai",
     "urls": [
       {

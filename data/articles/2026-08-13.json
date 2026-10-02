@@ -88,8 +88,7 @@
     "hue": 340,
     "image": "https://arxiv.org/html/2608.05663/x1.png",
     "keywords": [
-      "영상",
-      "음악·사운드"
+      "영상"
     ],
     "url": "https://arxiv.org/abs/2608.05663",
     "urls": [
@@ -128,10 +127,7 @@
     "publishedAt": "2026.08.13",
     "hue": 220,
     "image": "https://www.creativeainews.com/content/images/size/w2000/2026/08/stable-diffusion-webui-metal-apple-silicon-2026-thumbnail.jpg",
-    "keywords": [
-      "Apple",
-      "Stability AI"
-    ],
+    "keywords": [],
     "url": "https://www.creativeainews.com/articles/stable-diffusion-webui-metal-apple-silicon-2026/"
   },
   {
@@ -145,6 +141,7 @@
     "hue": 15,
     "image": "https://cdn.mos.cms.futurecdn.net/6kXsysepNhmLkYCkMg7jMk-1140-80.jpg",
     "keywords": [
+      "AI 사용 논란",
       "2D·이미지"
     ],
     "url": "https://www.creativebloq.com/ai/ai-art/the-square-enix-ai-fiasco-convinces-me-we-all-need-to-start-documenting-our-creative-process"
@@ -160,6 +157,7 @@
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/08/Google-AI-overview-official-image-from-Google-Blog-1200x675.jpg",
     "keywords": [
+      "AI 사용 논란",
       "Google"
     ],
     "url": "https://kotaku.com/google-ai-somehow-leaked-a-game-devs-content-plans-hidden-inside-their-own-google-docs-2000722497"
@@ -174,7 +172,9 @@
     "publishedAt": "2026.08.13",
     "hue": 5,
     "image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fai-and-games-eu-ai-act.jpg",
-    "keywords": [],
+    "keywords": [
+      "법·정책"
+    ],
     "url": "https://www.aiandgames.com/p/what-does-the-eus-ai-transparency"
   },
   {
@@ -227,9 +227,7 @@
     "publishedAt": "2026.08.13",
     "hue": 350,
     "image": "https://www.techtimes.com/articles/marvel-rivals-ai-texture.jpg",
-    "keywords": [
-      "텍스처"
-    ],
+    "keywords": [],
     "url": "https://www.techtimes.com/articles/marvel-rivals-season-9-5-ai-texture-compression"
   },
   {
@@ -242,7 +240,10 @@
     "publishedAt": "2026.08.13",
     "hue": 30,
     "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6e9ff417175153e6/6a7c8a66f99fa04965db827a/THE_ALTERS_Announcement_KV_FINAL_nologo.jpg",
-    "keywords": [],
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
     "url": "https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years"
   },
   {
@@ -272,8 +273,8 @@
     "hue": 270,
     "image": "https://cdn.mos.cms.futurecdn.net/pqLMcFtq2rPQEBvst5Lpuk-2000-80.jpg",
     "keywords": [
-      "애니메이션",
       "영상",
+      "애니메이션",
       "Higgsfield"
     ],
     "url": "https://www.creativebloq.com/art/animation/pixar-co-founders-new-ai-role-is-reigniting-animations-biggest-debate"
@@ -351,8 +352,7 @@
     "publishedAt": "2026.08.13",
     "hue": 290,
     "keywords": [
-      "2D·이미지",
-      "ComfyUI"
+      "2D·이미지"
     ],
     "url": "https://github.com/comfyanonymous/ComfyUI"
   },
@@ -366,8 +366,7 @@
     "publishedAt": "2026.08.13",
     "hue": 60,
     "keywords": [
-      "애니메이션",
-      "텍스처"
+      "애니메이션"
     ],
     "url": "https://80.lv/articles/"
   },
@@ -383,8 +382,7 @@
     "image": "https://www.creativeainews.com/content/images/size/w2000/2026/08/ltx-2-5-open-weights-video-comfyui-2026-thumbnail-0001.jpg",
     "keywords": [
       "영상",
-      "음악·사운드",
-      "ComfyUI"
+      "음악·사운드"
     ],
     "url": "https://www.creativeainews.com/articles/ltx-2-5-open-weights-video-comfyui-2026/"
   },

@@ -11,8 +11,7 @@
     "image": "https://www.cgchannel.com/wp-content/uploads/2026/06/260608_Houdini22_GaussianSplatting.jpg",
     "keywords": [
       "애니메이션",
-      "가우시안 스플래팅",
-      "Houdini"
+      "가우시안 스플래팅"
     ],
     "url": "https://www.cgchannel.com/2026/06/sneak-peek-houdini-22/",
     "urls": [
@@ -33,7 +32,7 @@
     "hue": 30,
     "image": "https://kotaku.com/app/uploads/2026/06/Screen-Shot-2026-06-07-at-10.15.34-PM.jpg",
     "keywords": [
-      "Sega"
+      "AI 사용 논란"
     ],
     "url": "https://kotaku.com/crazy-taxi-ai-generated-assets-steam-disclosure-sega-2000703805"
   },
@@ -47,7 +46,9 @@
     "publishedAt": "2026.06.09",
     "hue": 50,
     "image": "https://kotaku.com/app/uploads/2026/06/gen-atlas.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 미사용 선언"
+    ],
     "url": "https://kotaku.com/shadow-of-the-colossus-director-fumito-ueda-says-his-new-studio-doesnt-use-ai-as-other-games-are-engulfed-in-a-backlash-2000704103"
   },
   {
@@ -61,6 +62,8 @@
     "hue": 5,
     "image": "https://www.destructoid.com/wp-content/uploads/2024/12/Raiden-wielding-a-katana-at-the-end-of-MGS2-Directed-by-Hideo-Kojima.jpg?quality=75",
     "keywords": [
+      "AI 사용 논란",
+      "AI 미사용 선언",
       "영상"
     ],
     "url": "https://www.destructoid.com/im-not-interested-in-it-kojima-retains-my-goat-status-with-clear-ai-stance/"
@@ -94,8 +97,8 @@
     "keywords": [
       "2D·이미지",
       "Google",
-      "Apple",
-      "Gemini"
+      "Gemini",
+      "Apple"
     ],
     "url": "https://www.creativebloq.com/live/news/tech/apple-wwdc-june-2026",
     "urls": [

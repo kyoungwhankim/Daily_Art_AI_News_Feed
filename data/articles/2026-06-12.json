@@ -26,8 +26,7 @@
     "publishedAt": "2026.06.12",
     "hue": 220,
     "keywords": [
-      "2D·이미지",
-      "Midjourney"
+      "2D·이미지"
     ],
     "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model/"
   },
@@ -41,7 +40,9 @@
     "publishedAt": "2026.06.12",
     "hue": 10,
     "image": "https://kotaku.com/app/uploads/2026/06/1666-ai-1200x675.jpg",
-    "keywords": [],
+    "keywords": [
+      "AI 사용 논란"
+    ],
     "url": "https://kotaku.com/1666-amsterdam-apology-ai-assets-panache-genai-2000705525"
   },
   {

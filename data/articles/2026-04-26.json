@@ -25,6 +25,8 @@
     "publishedAt": "2026.04.26",
     "hue": 20,
     "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계",
       "Google"
     ],
     "url": "https://futurism.com/artificial-intelligence/google-exec-video-games-secretly-ai"
@@ -40,6 +42,7 @@
     "hue": 30,
     "image": "https://assetsio.gnwcdn.com/xbox-series-x_lxcHHt4.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
     "keywords": [
+      "AI 도입 전략",
       "Microsoft"
     ],
     "url": "https://www.gamesindustry.biz/microsoft-gaming-reverts-to-xbox-branding"
@@ -73,9 +76,7 @@
     "publishedAt": "2026.04.26",
     "hue": 210,
     "image": "https://techcrunch.com/wp-content/uploads/2026/04/ComfyUI-Co-founders-1.png?w=1024",
-    "keywords": [
-      "ComfyUI"
-    ],
+    "keywords": [],
     "url": "https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/",
     "urls": [
       {
@@ -95,8 +96,7 @@
     "hue": 290,
     "image": "https://cdn.mos.cms.futurecdn.net/VT57Xpu5ho3w3P7JT7dV3V-1000-80.jpg",
     "keywords": [
-      "OpenAI",
-      "Sora"
+      "OpenAI"
     ],
     "url": "https://www.creativebloq.com/ai/ai-art/what-does-openais-sora-shutdown-mean-for-the-future-of-ai-video",
     "urls": [
