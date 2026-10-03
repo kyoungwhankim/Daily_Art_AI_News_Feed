@@ -1,6 +1,12 @@
 {
   "dates": [
     {
+      "date": "2026.10.03",
+      "file": "articles/2026-10-03.json",
+      "count": 7,
+      "rev": "cee08cd8fc"
+    },
+    {
       "date": "2026.10.02",
       "file": "articles/2026-10-02.json",
       "count": 5,
@@ -208,7 +214,7 @@
       "date": "2026.08.26",
       "file": "articles/2026-08-26.json",
       "count": 3,
-      "rev": "09f4f7b01e"
+      "rev": "32e79b11d9"
     },
     {
       "date": "2026.08.25",
@@ -250,7 +256,7 @@
       "date": "2026.08.19",
       "file": "articles/2026-08-19.json",
       "count": 5,
-      "rev": "f07d94aa9e"
+      "rev": "1bf70189d7"
     },
     {
       "date": "2026.08.18",
@@ -466,7 +472,7 @@
       "date": "2026.06.12",
       "file": "articles/2026-06-12.json",
       "count": 5,
-      "rev": "24f7ad9401"
+      "rev": "0f764d3fff"
     },
     {
       "date": "2026.06.11",
@@ -574,7 +580,7 @@
       "date": "2026.05.21",
       "file": "articles/2026-05-21.json",
       "count": 6,
-      "rev": "63ddfb2784"
+      "rev": "09db2c7b54"
     },
     {
       "date": "2026.05.20",
@@ -646,7 +652,7 @@
       "date": "2026.05.02",
       "file": "articles/2026-05-02.json",
       "count": 8,
-      "rev": "f156f01707"
+      "rev": "f4044d21f9"
     },
     {
       "date": "2026.05.01",

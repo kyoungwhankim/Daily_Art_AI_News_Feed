@@ -69,7 +69,9 @@
     "publishedAt": "2026.05.02",
     "hue": 310,
     "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-    "keywords": [],
+    "keywords": [
+      "Midjourney"
+    ],
     "url": "https://updates.midjourney.com/v8-1-updates/",
     "urls": [
       {

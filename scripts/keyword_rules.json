@@ -48,6 +48,8 @@
     {"label": "Gemini", "kind": "product", "match": ["Gemini", "제미나이", "Nano Banana"]},
     {"label": "Claude", "kind": "product", "match": ["Claude", "클로드"]},
     {"label": "ChatGPT", "kind": "product", "match": ["ChatGPT", "챗GPT", "GPT Image", "DALL-E"]},
-    {"label": "Seedance", "kind": "product", "match": ["Seedance", "시드댄스", "Seedream"]}
+    {"label": "Seedance", "kind": "product", "match": ["Seedance", "시드댄스", "Seedream"]},
+    {"label": "Midjourney", "kind": "product", "match": ["Midjourney", "미드저니"]},
+    {"label": "Stability AI", "kind": "company", "match": ["Stability AI", "스태빌리티 AI", "Stable Diffusion", "스테이블 디퓨전"]}
   ]
 }
