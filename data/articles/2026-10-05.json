@@ -1,0 +1,18 @@
+[
+  {
+    "id": "games-23b69d07-2026-10",
+    "tab": "games",
+    "headline": "어도비, 텍스트로 3D 월드를 만드는 AI 특허 공개… 파이어플라이의 다음 행보는?",
+    "summary": "어도비가 텍스트만으로 돌아다닐 수 있는 3D 월드를 만드는 AI 특허를 공개했어요.",
+    "body": "<p>미국 특허청(USPTO)이 어도비의 특허 출원을 대거 공개했는데, 그중 하나가 텍스트 설명만으로 직접 돌아다닐 수 있는 3D 월드를 만드는 방법이에요. 특허 추적 사이트 Patentlyze가 처음 발견했어요. 예를 들어 '안개 낀 해 질 녘의 일본 정원'이라고 입력하면, AI가 먼저 3D 스캔을 이어 붙인 360도 뷰 같은 구형 2D 이미지를 만들어요. 그다음 두 번째 AI가 이 이미지를 바탕으로 3D 지오메트리를 쌓아 올리는 2단계 구조예요. 완성된 공간은 여러 시점에서 볼 수 있고, 앞뒤로 움직이며 둘러볼 수도 있다고 해요.</p><p>지금은 절차적 생성 도구가 있다고 해도 3D 환경 하나를 만들려면 에셋 수백 개를 하나하나 스컬팅하고 표면 디테일까지 칠해야 해서 시간이 정말 많이 들어요. 어도비는 Substance 제품군을 갖고 있지만, Substance 3D Modeler는 ZBrush나 Blender에 비해 아직 틈새 도구에 가깝고 파이어플라이 기반 생성형 AI 기능도 아직 없어요. 그래서 이번 특허는 파이어플라이가 3D 쪽으로 넓어질 수 있다는 신호로 읽혀요. 비슷한 시도로는 텍스트로 360도 장면을 만드는 Blockade Labs의 Skybox AI가 있지만, 게임이나 VR·AR에서 실제로 걸어 다닐 수 있는 환경과는 아직 거리가 있어요.</p><p>어도비는 최근 몇 주 동안 사진 한 장에서 새 카메라 앵글을 만드는 AI, 3D 모델 간에 어울리는 머티리얼을 찾아주는 도구 같은 특허도 여러 건 공개했어요. 다만 특허 출원이 곧 제품 출시를 뜻하는 건 아니라서, 실제 기능으로 나올지는 지켜봐야 해요.</p><p>원문: <a href=\"https://www.creativebloq.com/design/graphic-design/adobes-ai-text-to-3d-world-concept-is-a-glimpse-of-where-firefly-could-go-next\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.05",
+    "hue": 200,
+    "image": "https://cdn.mos.cms.futurecdn.net/KCf9dWFqE4TDJMmRjfvos-1920-80.jpg",
+    "keywords": [
+      "3D",
+      "Adobe"
+    ],
+    "url": "https://www.creativebloq.com/design/graphic-design/adobes-ai-text-to-3d-world-concept-is-a-glimpse-of-where-firefly-could-go-next"
+  }
+]
