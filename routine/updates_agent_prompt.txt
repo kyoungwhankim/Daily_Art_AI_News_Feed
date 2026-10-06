@@ -21,7 +21,14 @@ HARD RULES
       same official sites (archives, older posts, release-note pages), and the official site's
       own sitemap. Never news sites, blogs of other companies, social media or aggregators.
   U3. Every entry's date is the day the SERVICE ANNOUNCED the update, read from the source.
-      Never use today's date for an older post, never guess a date. No readable date → skip it.
+      Never use today's date for an older post, never guess a date.
+      If the source dates an item only by month or year (e.g. a "202609" / "September 2026"
+      section), look for the exact day inside that item's own official text or the official
+      announcement / article it links to (e.g. "released on September 15, 2026",
+      "available from 2026-09-15") and use that day. These do NOT count as a release date:
+      the month heading itself, model-ID or version-snapshot suffixes (e.g. "-260915"),
+      page "last updated" stamps, and dates on third-party sites.
+      No exact day in the official text → skip the item.
   U4. Save entries only with scripts/service_updates.py save (it checks every entry).
       If it prints REJECTED, fix that entry and save it again. Do not edit the checks.
   U5. Do not spawn further agents.
