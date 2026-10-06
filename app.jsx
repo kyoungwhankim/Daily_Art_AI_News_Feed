@@ -40,7 +40,8 @@ function parseRoute(pathname) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
   }
   if (parts[0] === 'updates') {
-    return { home: false, tab: null, kwSlug: null, articleId: null, updates: true };
+    return { home: false, tab: null, kwSlug: null, articleId: null, updates: true,
+             updCat: parts[1] || null, updCompany: parts[2] || null };
   }
   return { home: true, tab: null, kwSlug: null, articleId: null };
 }
@@ -768,8 +769,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
 
 /* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
 // 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
-function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts }) {
+function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts, updCat, onUpdCat }) {
   const [newsOpen, setNewsOpen] = useState(true);
+  const [updOpen, setUpdOpen] = useState(true);
   const newsActive = section === 'news';
   return (
     <>
@@ -808,7 +810,7 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
             )}
           </div>
           <div className="side-group">
-            <div className={`side-group-head ${section === 'updates' ? 'active' : ''}`}>
+            <div className={`side-group-head ${section === 'updates' && !updCat ? 'active' : ''}`}>
               <button type="button" className="side-group-link" onClick={onUpdates}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
@@ -816,7 +818,22 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
                 <span>업데이트</span>
                 <span className="side-badge">NEW</span>
               </button>
+              <button type="button" className="side-caret-btn" aria-label={updOpen ? '접기' : '펼치기'} aria-expanded={updOpen} onClick={() => setUpdOpen(o => !o)}>
+                <svg className={`side-caret ${updOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
             </div>
+            {updOpen && (
+              <ul className="side-list">
+                {UPDATE_CATS.map(c => (
+                  <li key={c.slug}>
+                    <button type="button" className={`side-item ${section === 'updates' && updCat === c.slug ? 'active' : ''}`} onClick={() => onUpdCat(c.slug)}>
+                      <span>{c.label}</span>
+                      <span className="side-count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </nav>
       </aside>
@@ -825,67 +842,134 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
 }
 
 /* ---------- 업데이트 (아트 관련 AI 서비스 회사의 공식 업데이트) ---------- */
-// 아직 데이터가 연결되지 않은 화면 구성 미리보기. 공지 수집이 붙으면 SAMPLE_UPDATES 자리에 실제 데이터가 들어간다.
-const SAMPLE_UPDATES = [
-  { company: 'Midjourney', category: '이미지', title: '예시: 새 모델 버전과 편집 기능 공개', summary: '실제 공지가 연결되면 회사의 공식 업데이트 내용이 이곳에 한국어 요약으로 들어가요.' },
-  { company: 'Runway', category: '영상', title: '예시: 영상 생성 모델 업데이트', summary: '업데이트 날짜, 회사, 제목, 짧은 요약, 원문 링크를 한 줄씩 보여 줄 예정이에요.' },
-  { company: 'Meshy', category: '3D', title: '예시: 3D 생성 품질 개선과 새 내보내기 옵션', summary: '분류 칩으로 이미지·영상·3D 등 관심 분야만 골라 볼 수 있어요.' },
-  { company: 'ElevenLabs', category: '음악·음성', title: '예시: 음성 모델 신규 버전 출시', summary: '회사 이름을 누르면 그 회사의 공식 업데이트 페이지로 이동해요.' },
-];
-function UpdatesView() {
-  const cats = [...new Set(UPDATE_SOURCES.map(s => s.category))];
-  const [cat, setCat] = useState(null);
-  const sources = UPDATE_SOURCES.filter(s => !cat || s.category === cat);
-  const samples = SAMPLE_UPDATES.filter(u => !cat || u.category === cat);
-  const urlOf = name => (UPDATE_SOURCES.find(s => s.name === name) || {}).url;
-  const today = `${TODAY.getFullYear()}.${String(TODAY.getMonth() + 1).padStart(2, '0')}.${String(TODAY.getDate()).padStart(2, '0')}`;
+// 구조: 분야(위쪽 탭·사이드바) › 회사(칩) › 그 회사의 업데이트 (최신순)
+// 주소: /updates/  /updates/<분야>/  /updates/<분야>/<회사>/
+const UPDATE_CAT_SLUG = {
+  '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+  '모션': 'motion', '음악·음성': 'audio', '도구': 'tools',
+};
+const UPDATE_CATS = [...new Set(UPDATE_SOURCES.map(s => s.category))]
+  .map(label => ({ label, slug: UPDATE_CAT_SLUG[label] || kwSlug(label) }));
+const UPDATE_COMPANIES = UPDATE_SOURCES.map(s => ({
+  ...s, slug: kwSlug(s.name), catSlug: UPDATE_CAT_SLUG[s.category] || kwSlug(s.category),
+}));
+function updatesPath(cat, company) {
+  if (cat && company) return `/updates/${cat}/${company}/`;
+  if (cat) return `/updates/${cat}/`;
+  return '/updates/';
+}
+
+// 아직 공지 수집이 연결되지 않아, 화면 흐름을 보기 위한 예시 항목을 회사마다 만든다.
+// 실제 데이터가 붙으면 같은 형식({ company, date, title, summary, url, kind })으로 바뀐다.
+const SAMPLE_KINDS = {
+  'image':       [['모델', '새 이미지 모델 버전 공개'], ['기능', '편집·인페인팅 기능 개선'], ['요금', '요금제와 사용량 정책 변경'], ['API', 'API에 새 해상도 옵션 추가']],
+  'video':       [['모델', '새 영상 생성 모델 공개'], ['기능', '영상 길이 연장과 카메라 제어 추가'], ['기능', '오디오 동시 생성 지원'], ['API', 'API 요청 한도 상향']],
+  '3d':          [['모델', '3D 생성 모델 업데이트'], ['기능', '자동 리깅·텍스처 기능 추가'], ['연동', '게임 엔진 플러그인 업데이트'], ['기능', '내보내기 형식 추가']],
+  'game-assets': [['기능', '게임 에셋 스타일 학습 기능 개선'], ['연동', '엔진 연동 워크플로우 추가'], ['모델', '새 생성 모델 지원'], ['기능', '팀 협업 기능 추가']],
+  'motion':      [['기능', '모션 캡처 정확도 개선'], ['연동', 'DCC 툴 연동 업데이트'], ['기능', '얼굴·손 추적 기능 추가'], ['요금', '라이선스 정책 변경']],
+  'audio':       [['모델', '새 음성·음악 모델 공개'], ['기능', '언어·보이스 추가'], ['API', 'API 지연 시간 개선'], ['기능', '편집 기능 추가']],
+  'tools':       [['기능', '새 버전 릴리스'], ['연동', '새 모델·노드 지원 추가'], ['기능', '성능 개선과 버그 수정'], ['API', '개발자 도구 업데이트']],
+};
+function sampleUpdatesFor(c) {
+  const kinds = SAMPLE_KINDS[c.catSlug] || SAMPLE_KINDS.tools;
+  const seed = [...c.slug].reduce((n, ch) => n + ch.charCodeAt(0), 0);
+  return kinds.map(([kind, title], i) => {
+    const d = new Date(TODAY); d.setDate(d.getDate() - ((seed % 5) + i * (6 + (seed % 7))));
+    return {
+      id: `${c.slug}-${i}`, company: c, kind, sample: true,
+      date: `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`,
+      title: `${c.name} — ${title}`,
+      summary: '예시 항목이에요. 공지 수집이 연결되면 회사의 공식 업데이트를 한국어로 요약해 이 자리에 보여 드려요.',
+      url: c.url,
+    };
+  });
+}
+const ALL_UPDATES = UPDATE_COMPANIES.flatMap(sampleUpdatesFor)
+  .sort((a, b) => b.date.localeCompare(a.date) || a.company.name.localeCompare(b.company.name));
+
+function UpdatesNav({ cat, company, onCat, onCompany }) {
+  const companies = cat ? UPDATE_COMPANIES.filter(c => c.catSlug === cat) : [];
   return (
-    <>
-      <div className="feed-meta">
-        <div>
-          <h1 className="feed-title">업데이트</h1>
-          <div className="feed-sub">아트 관련 AI 서비스 {UPDATE_SOURCES.length}곳 · 공식 업데이트</div>
-          <p className="feed-desc">이미지·영상·3D·음악 등 아트 관련 AI 서비스 회사들의 공식 업데이트 소식을 모아 보여 드려요.</p>
-        </div>
-      </div>
-      <div className="subcats updates-filter" role="tablist" aria-label="분야">
-        <button className={`chip subcat ${!cat ? 'active' : ''}`} onClick={() => setCat(null)}>전체 <span className="subcat-count">{UPDATE_SOURCES.length}</span></button>
-        {cats.map(c => (
-          <button key={c} className={`chip subcat ${cat === c ? 'active' : ''}`} onClick={() => setCat(cat === c ? null : c)}>
-            {c} <span className="subcat-count">{UPDATE_SOURCES.filter(s => s.category === c).length}</span>
+    <nav className="tabs-wrap">
+      <div className="tabs-inner">
+        <div className="tabs-meta">업데이트 · {UPDATE_CATS.length}개 분야 · {UPDATE_COMPANIES.length}곳</div>
+        <div className="tabs">
+          <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
+            전체 <span className="count">{UPDATE_COMPANIES.length}</span>
           </button>
-        ))}
-      </div>
-      <main className="feed">
-        <div className="updates-notice">준비 중이에요 — 아래 업데이트 목록은 화면 구성을 보기 위한 <b>예시</b>예요.</div>
-        <ol className="updates-list">
-          {samples.map((u, i) => (
-            <li key={i} className="update-row">
-              <div className="update-date">{today}</div>
-              <div className="update-main">
-                <div className="update-head">
-                  <a className="update-company" href={urlOf(u.company)} target="_blank" rel="noopener noreferrer">{u.company}</a>
-                  <span className="update-cat">{u.category}</span>
-                  <span className="update-sample">예시</span>
-                </div>
-                <h3 className="update-title">{u.title}</h3>
-                <p className="update-summary">{u.summary}</p>
-              </div>
-            </li>
+          {UPDATE_CATS.map(c => (
+            <button key={c.slug} className={`tab ${cat === c.slug ? 'active' : ''}`} onClick={() => onCat(c.slug)}>
+              {c.label} <span className="count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
+            </button>
           ))}
-          {samples.length === 0 && <li className="update-empty">이 분야의 예시 항목은 없어요.</li>}
-        </ol>
-        <section className="update-sources">
-          <h2>모아 볼 회사 · {sources.length}곳</h2>
-          <div className="update-source-grid">
-            {sources.map(s => (
-              <a key={s.name} className="update-source" href={s.url} target="_blank" rel="noopener noreferrer">
-                <span className="update-source-name">{s.name}</span>
-                <span className="update-source-cat">{s.category}</span>
-              </a>
+        </div>
+        {cat && (
+          <div className="subcats" role="tablist" aria-label="회사">
+            <button className={`chip subcat ${!company ? 'active' : ''}`} onClick={() => onCompany(null)}>전체</button>
+            {companies.map(c => (
+              <button key={c.slug} className={`chip subcat ${company === c.slug ? 'active' : ''}`} onClick={() => onCompany(c.slug)}>
+                {c.name}
+              </button>
             ))}
           </div>
-        </section>
+        )}
+      </div>
+    </nav>
+  );
+}
+
+function UpdateRow({ u, showCompany, onCompany }) {
+  return (
+    <li className="update-row">
+      <div className="update-date">{u.date}</div>
+      <div className="update-main">
+        <div className="update-head">
+          {showCompany && (
+            <button type="button" className="update-company" onClick={() => onCompany(u.company)}>{u.company.name}</button>
+          )}
+          <span className="update-cat">{u.kind}</span>
+          {u.sample && <span className="update-sample">예시</span>}
+        </div>
+        <h3 className="update-title">{u.title}</h3>
+        <p className="update-summary">{u.summary}</p>
+        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">공식 공지 보기 ↗</a>
+      </div>
+    </li>
+  );
+}
+
+function UpdatesView({ cat, company, onCat, onCompany }) {
+  const catObj = UPDATE_CATS.find(c => c.slug === cat) || null;
+  const comp = UPDATE_COMPANIES.find(c => c.slug === company && c.catSlug === cat) || null;
+  const items = ALL_UPDATES.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug));
+  const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
+  const desc = comp
+    ? `${comp.name}의 공식 업데이트를 최신순으로 모아 보여 드려요.`
+    : catObj
+      ? `${catObj.label} 분야 AI 서비스들의 공식 업데이트예요. 회사를 고르면 그 회사 소식만 볼 수 있어요.`
+      : '아트 관련 AI 서비스 회사들의 공식 업데이트를 분야·회사별로 모아 보여 드려요.';
+  return (
+    <>
+      <UpdatesNav cat={cat} company={comp ? comp.slug : null} onCat={onCat} onCompany={slug => onCompany(cat, slug)} />
+      <div className="feed-meta">
+        <div>
+          <h1 className="feed-title">{title}</h1>
+          <div className="feed-sub">
+            {comp ? `${catObj.label} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
+          </div>
+          <p className="feed-desc">{desc}</p>
+        </div>
+        {comp && (
+          <a className="chip update-official" href={comp.url} target="_blank" rel="noopener noreferrer">공식 업데이트 페이지 ↗</a>
+        )}
+      </div>
+      <main className="feed">
+        <div className="updates-notice">준비 중이에요 — 지금 보이는 업데이트는 화면 구성을 보기 위한 <b>예시</b>예요.</div>
+        <ol className="updates-list">
+          {items.map(u => (
+            <UpdateRow key={u.id} u={u} showCompany={!comp} onCompany={c => onCompany(c.catSlug, c.slug)} />
+          ))}
+        </ol>
       </main>
     </>
   );
@@ -900,6 +984,12 @@ function App() {
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
   const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍
+  const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
+  const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 회사 (slug)
+  const goUpdates = (cat, company) => {
+    setSection('updates'); setUpdCat(cat || null); setUpdCompany(company || null);
+    setSideOpen(false); window.scrollTo({ top: 0 });
+  };
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
@@ -976,7 +1066,7 @@ function App() {
     function onPop() {
       const route = parseRoute(window.location.pathname);
       setSection(route.updates ? 'updates' : 'news');
-      if (route.updates) { setOpen(null); return; }
+      if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
         const found = articlesRef.current.find(a => a.id === route.articleId);
         if (found) { setActiveTab(found.tab); setViewHome(false); }
@@ -1036,11 +1126,11 @@ function App() {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section !== 'updates' && !onArticle && (viewSaved || query.trim())) return;
-    const path = section === 'updates' ? '/updates/' : routePath(viewHome, activeTab, activeKeyword);
+    const path = section === 'updates' ? updatesPath(updCat, updCompany) : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, section, viewHome, viewSaved, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, viewHome, viewSaved, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -1087,10 +1177,19 @@ function App() {
         counts={tabCounts(articles)}
         onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); setSideOpen(false); window.scrollTo({ top: 0 }); }}
         onTab={(id) => { setSection('news'); goTab(id); setSideOpen(false); window.scrollTo({ top: 0 }); }}
-        onUpdates={() => { setSection('updates'); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        onUpdates={() => goUpdates(null, null)}
+        updCat={updCat}
+        onUpdCat={(cat) => goUpdates(cat, null)}
       />
       <div className="layout-main">
-      {section === 'updates' ? <UpdatesView /> : (<>
+      {section === 'updates' ? (
+        <UpdatesView
+          cat={updCat}
+          company={updCompany}
+          onCat={(cat) => goUpdates(cat, null)}
+          onCompany={(cat, company) => goUpdates(cat, company)}
+        />
+      ) : (<>
       {!viewHome && (
         <Tabs
           active={activeTab}
