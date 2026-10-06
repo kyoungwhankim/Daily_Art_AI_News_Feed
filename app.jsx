@@ -1019,12 +1019,12 @@ function App() {
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
-  const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍
+  const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍 (✕나 바깥을 눌러야만 닫힌다)
   const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
   const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 회사 (slug)
   const goUpdates = (cat, company) => {
     setSection('updates'); setUpdCat(cat || null); setUpdCompany(company || null);
-    setSideOpen(false); window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0 });
   };
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
@@ -1211,8 +1211,8 @@ function App() {
         open={sideOpen}
         onClose={() => setSideOpen(false)}
         counts={tabCounts(articles)}
-        onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); setSideOpen(false); window.scrollTo({ top: 0 }); }}
-        onTab={(id) => { setSection('news'); goTab(id); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+        onTab={(id) => { setSection('news'); goTab(id); window.scrollTo({ top: 0 }); }}
         onUpdates={() => goUpdates(null, null)}
         updCat={updCat}
         onUpdCat={(cat) => goUpdates(cat, null)}
@@ -1220,7 +1220,7 @@ function App() {
         onUpdCompany={(cat, company) => goUpdates(cat, company)}
         subcats={subcats}
         keyword={activeKeyword}
-        onKeyword={(k) => { setKeyword(k); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        onKeyword={(k) => { setKeyword(k); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">
       {section === 'updates' ? (

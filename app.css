@@ -1388,6 +1388,26 @@ mark {
 @media (max-width: 960px) {
   .home-ticker-head { padding: 0 24px 12px; }
 }
+/* 모바일: 제목만 흐르는 얇은 띠 */
+@media (max-width: 640px) {
+  .home { padding-bottom: 56px; }
+  .home-ticker { padding: 0; box-shadow: none; border-top-width: 1.5px; }
+  .home-ticker::before, .home-ticker::after { width: 24px; }
+  .home-ticker-head, .home-ticker-cat, .home-ticker-meta { display: none; }
+  .home-ticker-track { gap: 0; animation-duration: 70s; }
+  .home-ticker-btn,
+  .home-ticker-btn:hover,
+  .home-ticker-btn:active {
+    width: auto; padding: 9px 14px; gap: 0;
+    background: transparent; border: 0; border-radius: 0; box-shadow: none; transform: none;
+  }
+  .home-ticker-card + .home-ticker-card .home-ticker-btn { border-left: 1px solid var(--hairline); }
+  .home-ticker-headline {
+    display: block; white-space: nowrap; max-width: 78vw;
+    overflow: hidden; text-overflow: ellipsis;
+    font-size: 13px; font-weight: 600; line-height: 1.3;
+  }
+}
 
 /* modal keyword tags */
 .modal-keywords { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 20px; }
