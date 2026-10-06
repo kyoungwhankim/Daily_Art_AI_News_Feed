@@ -1492,7 +1492,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-        <div>큐레이션 · 한국어 번역</div>
+        <div>큐레이션 · 한국어 번역 · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
       </footer>
       </div>
       </div>
