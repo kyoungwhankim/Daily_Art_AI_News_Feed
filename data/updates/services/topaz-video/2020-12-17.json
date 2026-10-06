@@ -1,0 +1,16 @@
+[
+  {
+    "id": "topaz-video-2020-12-17-1",
+    "service": "topaz-video",
+    "date": "2020.12.17",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.8.0: Artemis v9와 안티앨리어싱",
+    "summary": "노이즈·압축이 심한 영상을 살리는 Artemis v9 MQ/LQ와 모아레를 줄이는 AA 모델을 추가했어요. 모션 깜빡임도 크게 줄었어요.",
+    "details": [
+      "Intel CPU/iGPU 속도 향상",
+      "Intel Mac Big Sur 지원"
+    ],
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-8-0/18676",
+    "source": "notice"
+  }
+]

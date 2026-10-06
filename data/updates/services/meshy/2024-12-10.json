@@ -1,0 +1,17 @@
+[
+  {
+    "id": "meshy-2024-12-10-1",
+    "service": "meshy",
+    "date": "2024.12.10",
+    "kind": "API",
+    "title": "enable_pbr·should_texture 파라미터 추가",
+    "summary": "Image to 3D와 Text to 3D Refine에 enable_pbr가, Image to 3D에 should_texture가 추가됐어요. Meshy-4에서는 art_style의 pbr·low-poly 옵션이 지원 중단됐어요.",
+    "details": [
+      "Image to 3D·Text to 3D Refine에 enable_pbr 추가",
+      "Image to 3D에 should_texture 추가",
+      "art_style의 pbr(Meshy-4)·low-poly 옵션 지원 중단"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  }
+]

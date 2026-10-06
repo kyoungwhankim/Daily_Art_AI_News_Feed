@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-02-21-1",
+    "service": "fal.ai",
+    "date": "2025.02.21",
+    "kind": "모델",
+    "title": "Google Veo 2 fal API 출시",
+    "summary": "Google의 영상 생성 모델 Veo 2를 fal에서 API로 쓸 수 있게 됐어요.",
+    "url": "https://blog.fal.ai/veo2-state-of-the-art-video-generation-now-on-fal/",
+    "source": "notice"
+  }
+]

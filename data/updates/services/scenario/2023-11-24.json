@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-24-1",
+    "service": "scenario",
+    "date": "2023.11.24",
+    "kind": "기능",
+    "title": "참조 이미지 편집기·LCM 스케줄러",
+    "summary": "참조 이미지를 편집하는 Reference Image Editor와 빠른 LCM 스케줄러가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-40-november-24th-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flow-studio-2024-02-12-1",
+    "service": "flow-studio",
+    "date": "2024.02.12",
+    "kind": "기능",
+    "title": "Wonder Studio, Unreal Engine 씬 내보내기",
+    "summary": "Live Action 프로젝트를 샷별 레벨 폴더, 서브시퀀스, 인스턴스 스켈레탈 메시 등을 갖춘 Unreal Engine 씬으로 내보낼 수 있어요.",
+    "details": [
+      "샷별 레벨 폴더와 서브시퀀스",
+      "USD 캐릭터 머티리얼 인스턴스",
+      "처리된 프로젝트 원본 영상 다운로드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

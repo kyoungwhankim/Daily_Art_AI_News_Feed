@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-05-11-1",
+    "service": "meshy",
+    "date": "2026.05.11",
+    "kind": "종료",
+    "title": "symmetry_mode 파라미터 지원 중단",
+    "summary": "Text to 3D, Image to 3D, Multi-Image to 3D의 symmetry_mode가 지원 중단됐어요. 이제 결과에 영향을 주지 않아요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  }
+]

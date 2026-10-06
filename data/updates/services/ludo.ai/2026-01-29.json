@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-01-29-1",
+    "service": "ludo.ai",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "Ludo.ai API·MCP 베타 출시",
+    "summary": "공개 API와 MCP 연동이 베타로 나왔어요. Claude Desktop, VS Code, Cursor 같은 도구에서 바로 에셋을 만들 수 있어요.",
+    "url": "https://ludo.ai/whats-new#beta-launch-ludo-ai-api-mcp-integration",
+    "source": "notice"
+  }
+]

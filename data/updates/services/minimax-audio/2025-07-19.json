@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2025-07-19-1",
+    "service": "minimax-audio",
+    "date": "2025.07.19",
+    "kind": "API",
+    "title": "MiniMax T2A에 voice_modify 음성 효과",
+    "summary": "동기·비동기 음성 합성 API에 피치·볼륨 등 음성 효과를 조절하는 voice_modify 파라미터가 추가됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/apis",
+    "source": "dev"
+  }
+]

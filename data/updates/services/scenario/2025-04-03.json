@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-04-03-1",
+    "service": "scenario",
+    "date": "2025.04.03",
+    "kind": "기능",
+    "title": "Flux 이미지 생성 최대 2배 빨라짐",
+    "summary": "Flux 이미지 생성 속도가 최대 두 배 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/performance-boost-flux-image-generation-2x-faster",
+    "source": "notice"
+  }
+]

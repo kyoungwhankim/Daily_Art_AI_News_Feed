@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2026-06-08-1",
+    "service": "elevenlabs",
+    "date": "2026.06.08",
+    "kind": "종료",
+    "title": "v1 TTS·Scribe v1 모델 7월 9일 제거 예정",
+    "summary": "eleven_monolingual_v1·eleven_multilingual_v1과 scribe_v1이 2026년 7월 9일 제거될 예정이라 새 모델로 옮겨야 해요.",
+    "details": [
+      "v1 TTS → eleven_multilingual_v2 등으로 이전",
+      "scribe_v1 → scribe_v2·scribe_v2_realtime",
+      "에이전트 turn_v3 턴 감지 모델 선택",
+      "Text to Dialogue 무보존 모드"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/8",
+    "source": "dev"
+  }
+]

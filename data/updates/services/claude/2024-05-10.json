@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2024-05-10-1",
+    "service": "claude",
+    "date": "2024.05.10",
+    "kind": "정책",
+    "title": "Claude 사용 정책 업데이트",
+    "summary": "Claude 사용자를 보호하고 책임 있는 사용을 보장하기 위해 사용 정책(Usage Policy)을 개정했어요.",
+    "url": "https://www.anthropic.com/news/updating-our-usage-policy",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2024-05-10-2",
+    "service": "claude",
+    "date": "2024.05.10",
+    "kind": "기능",
+    "title": "Console 프롬프트 생성기 출시",
+    "summary": "작업에 맞는 고품질 프롬프트를 만들어 주는 Prompt Generator가 Developer Console에 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-10th-2024",
+    "source": "dev"
+  }
+]

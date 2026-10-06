@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-03-23-1",
+    "service": "kling",
+    "date": "2026.03.23",
+    "kind": "API",
+    "title": "다중 이미지 요소에도 음성 바인딩 지원",
+    "summary": "Kling API에서 영상 캐릭터 요소뿐 아니라 다중 이미지 요소에도 element_voice_id로 목소리를 연결할 수 있게 됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#03%2F23%2F2026",
+    "source": "dev"
+  }
+]

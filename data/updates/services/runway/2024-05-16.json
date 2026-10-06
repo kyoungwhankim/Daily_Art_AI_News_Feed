@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-05-16-1",
+    "service": "runway",
+    "date": "2024.05.16",
+    "kind": "기능",
+    "title": "Text to Image 프롬프트 개선 버튼",
+    "summary": "Text to Image에서 클릭 한 번으로 프롬프트를 다듬어 주는 prompt enhancer가 추가됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

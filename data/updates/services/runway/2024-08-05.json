@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-08-05-1",
+    "service": "runway",
+    "date": "2024.08.05",
+    "kind": "기능",
+    "title": "Gen-3 Alpha 마지막 프레임 지정",
+    "summary": "Gen-3 Alpha 이미지 투 비디오에서 이미지를 첫 프레임뿐 아니라 마지막 프레임으로도 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

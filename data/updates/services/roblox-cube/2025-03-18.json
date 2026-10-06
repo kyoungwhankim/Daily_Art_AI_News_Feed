@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2025-03-18-1",
+    "service": "roblox-cube",
+    "date": "2025.03.18",
+    "kind": "API",
+    "title": "Text Generation API 베타",
+    "summary": "오픈소스 LLM으로 경험 안에서 NPC 대화 등 텍스트를 생성하는 Text Generation API가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/beta-introducing-text-generation-api/3556520",
+    "source": "notice"
+  }
+]

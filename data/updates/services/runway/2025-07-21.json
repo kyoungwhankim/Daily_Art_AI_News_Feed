@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-07-21-1",
+    "service": "runway",
+    "date": "2025.07.21",
+    "kind": "API",
+    "title": "Runway Dev에 Act-Two 제공",
+    "summary": "최신 모션 캡처 모델 Act-Two를 API로 앱과 서비스에 통합할 수 있어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#act-two-on-runway-dev",
+    "source": "dev"
+  }
+]

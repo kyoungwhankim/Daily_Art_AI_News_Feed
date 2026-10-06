@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-03-05-1",
+    "service": "roblox-cube",
+    "date": "2026.03.05",
+    "kind": "기능",
+    "title": "Studio 내장 MCP 서버·플레이테스트 자동화",
+    "summary": "MCP 서버가 Studio에 내장돼 별도 설정이 필요 없어졌어요. Assistant가 플레이테스트를 실행하고 입력을 흉내 내 문제를 재현·수정할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-studio-built-in-mcp-server-and-playtest-automation/4474643",
+    "source": "notice"
+  }
+]

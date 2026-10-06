@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-06-25-1",
+    "service": "elevenlabs",
+    "date": "2025.06.25",
+    "kind": "기능",
+    "title": "Voice Design v3, 설명으로 목소리 생성",
+    "summary": "원하는 목소리를 글로 설명하면 세 가지 후보를 만들어 주는 Voice Design v3가 나왔어요. 더 빠르고 쉬워졌어요.",
+    "url": "https://elevenlabs.io/blog/voice-design-v3",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-06-12-1",
+    "service": "unity-ai",
+    "date": "2026.06.12",
+    "kind": "기능",
+    "title": "AI Assistant 2.12: 프롬프트 기록과 프로파일러 카운터",
+    "summary": "AI Assistant 2.12.0에서 위/아래 키로 이전 프롬프트를 불러오고, 프로파일러 어시스턴트가 프레임 카운터 값을 읽어요. 에셋 생성 작업 전에는 명시적 동의를 받아요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2120-pre1---2026-06-12",
+    "source": "dev"
+  }
+]

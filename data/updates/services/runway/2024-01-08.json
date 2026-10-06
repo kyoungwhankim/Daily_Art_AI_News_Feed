@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-01-08-1",
+    "service": "runway",
+    "date": "2024.01.08",
+    "kind": "기능",
+    "title": "Custom Voices 출시",
+    "summary": "짧은 오디오 샘플로 나만의 목소리를 만들어 Text to Speech나 Lip Sync 영상에 쓸 수 있어요(Pro 이상).",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2023-08-10-1",
+    "service": "elevenlabs",
+    "date": "2023.08.10",
+    "kind": "기능",
+    "title": "ElevenLabs 사용량 분석 대시보드",
+    "summary": "Independent Publisher 등급 이상 사용자는 글자 사용량 추이와 추가 지표를 보여 주는 대시보드를 쓸 수 있어요.",
+    "url": "https://elevenlabs.io/blog/usage-analytics-dashboard",
+    "source": "notice"
+  }
+]

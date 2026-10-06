@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2024-03-19-1",
+    "service": "nvidia-studio",
+    "date": "2024.03.19",
+    "kind": "기능",
+    "title": "GTC 2024: 크리에이터용 생성형 AI 도구 발표",
+    "summary": "RTX Remix 오픈 베타에 DLSS 3.5 Ray Reconstruction이 곧 추가되고, Audio2Face for iClone 8 등 생성형 AI 도구 업데이트가 발표됐어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-gtc-ai-studio-driver/",
+    "source": "notice"
+  }
+]

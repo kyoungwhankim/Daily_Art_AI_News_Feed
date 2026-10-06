@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-05-28-1",
+    "service": "claude",
+    "date": "2026.05.28",
+    "kind": "모델",
+    "title": "Claude Opus 4.8 출시",
+    "summary": "코딩·에이전트·전문 업무 성능이 향상되고 긴 작업을 안정적으로 처리하는 Claude Opus 4.8이 나왔어요.",
+    "details": [
+      "API: 기본 1M 컨텍스트, 대화 중 system 메시지 지원",
+      "refusal stop_details 공개 문서화, effort 기본값 high",
+      "Enterprise: 커스텀 역할로 커넥터 권한 관리"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-4-8",
+    "source": "notice"
+  }
+]

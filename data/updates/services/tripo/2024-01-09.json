@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-01-09-1",
+    "service": "tripo",
+    "date": "2024.01.09",
+    "kind": "API",
+    "title": "Image to 3D API 첫 출시",
+    "summary": "Tripo API 0.1.1-beta에서 이미지로 3D 모델을 만드는 Image to 3D API가 처음 나왔어요. 표현식 파싱과 API 스키마도 개선됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-1-1-beta-2024-01-09",
+    "source": "dev"
+  }
+]

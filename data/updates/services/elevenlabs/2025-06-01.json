@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-06-01-1",
+    "service": "elevenlabs",
+    "date": "2025.06.01",
+    "kind": "기능",
+    "title": "에이전트 다중 목소리 전환",
+    "summary": "ElevenLabs 에이전트가 대화 중에 여러 목소리를 오가며 말할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/1",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-04-13-1",
+    "service": "comfyui",
+    "date": "2026.04.13",
+    "kind": "연동",
+    "title": "ComfyUI, Seedance 2.0 지원",
+    "summary": "텍스트·이미지·영상·오디오로 소리까지 맞춘 고품질 영상을 만드는 ByteDance Seedance 2.0을 ComfyUI에서 쓸 수 있어요.",
+    "details": [
+      "v0.19.0: Qwen3.5 텍스트 생성, RT-DETRv4, ACE-Step 1.5 XL 지원",
+      "CURVE·Image Histogram·Color Adjustment 노드",
+      "Intel XPU 포터블 릴리스",
+      "Manager 4.1"
+    ],
+    "url": "https://blog.comfy.org/p/seedance-20-is-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

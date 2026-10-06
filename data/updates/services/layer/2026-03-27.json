@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-03-27-1",
+    "service": "layer",
+    "date": "2026.03.27",
+    "kind": "기능",
+    "title": "Kling 멀티샷 프롬프트·Reframe 노드",
+    "summary": "Kling 멀티샷 프롬프트, 영상 Reframe 노드, 오디오·영상 처리 노드, 프롬프트 템플릿이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-27",
+    "source": "notice"
+  }
+]

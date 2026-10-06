@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-03-10-1",
+    "service": "elevenlabs",
+    "date": "2025.03.10",
+    "kind": "기능",
+    "title": "Scribe HIPAA 무보존 모드",
+    "summary": "Scribe에 HIPAA를 준수하는 무보존 모드가 생기고 화자 분리 가능 길이가 늘었어요. dubbing_studio 옵션으로 고급 더빙도 만들 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/10",
+    "source": "dev"
+  }
+]

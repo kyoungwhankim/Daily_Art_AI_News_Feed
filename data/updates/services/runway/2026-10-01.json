@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-10-01-1",
+    "service": "runway",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "OpenAI Dots에서 Runway 사용 가능",
+    "summary": "Runway가 OpenAI의 Dots에 들어갔어요. 자기 전에 브리프를 맡기면 Dot이 샷을 계획하고 Runway가 촬영해 아침에 완성된 영상을 받아볼 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

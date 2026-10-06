@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-18-1",
+    "service": "claude",
+    "date": "2025.08.18",
+    "kind": "API",
+    "title": "Usage & Cost API 출시",
+    "summary": "관리자가 조직 사용량과 비용 데이터를 프로그램으로 모니터링하는 Usage & Cost API와 조직 정보 Admin API가 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+    "source": "dev"
+  }
+]

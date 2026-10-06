@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-07-17-1",
+    "service": "comfyui",
+    "date": "2026.07.17",
+    "kind": "연동",
+    "title": "ComfyUI v0.28.1: GPT-5.6과 HeyGen 노드",
+    "summary": "ComfyUI v0.28.1에서 GPT-5.6 Sol·Terra·Luna와 Gemini 3.5 Flash 모델, HeyGen 아바타 영상·토킹 포토·영상 번역·TTS 노드가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-28-1",
+    "source": "notice"
+  }
+]

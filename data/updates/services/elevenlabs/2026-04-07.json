@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-04-07-1",
+    "service": "elevenlabs",
+    "date": "2026.04.07",
+    "kind": "API",
+    "title": "STT 오디오 길이와 보이스 녹음 품질 정보",
+    "summary": "STT 응답에 오디오 길이가 포함되고, 보이스 조회에 녹음 품질과 검수 상태가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/7",
+    "source": "dev"
+  }
+]

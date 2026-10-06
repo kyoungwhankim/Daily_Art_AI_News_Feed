@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2024-08-06-1",
+    "service": "comfyui",
+    "date": "2024.08.06",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX.1 첫날 지원과 새 프런트엔드·루프 기능",
+    "summary": "Comfy Org가 Black Forest Labs의 FLUX.1 Dev·Schnell을 출시 당일부터 지원한다고 알렸어요. 주간 안정 릴리스(v0.0.4) 체계와 새 프런트엔드, 루프 실행 등 개발 방향도 공개했어요.",
+    "details": [
+      "주간 안정 릴리스 버전 체계 도입(v0.0.4)",
+      "FLUX.1-Dev·FLUX.1-Schnell 예제 워크플로 제공"
+    ],
+    "url": "https://blog.comfy.org/p/august-2024-flux-support-new-frontend-for-loops-and-more",
+    "source": "notice"
+  }
+]

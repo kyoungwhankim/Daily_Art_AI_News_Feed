@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-06-03-1",
+    "service": "mureka",
+    "date": "2025.06.03",
+    "kind": "모델",
+    "title": "mureka-6 강화 버전",
+    "summary": "Mureka API에 mureka-6 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

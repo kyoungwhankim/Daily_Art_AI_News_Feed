@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-02-27-1",
+    "service": "fal.ai",
+    "date": "2025.02.27",
+    "kind": "모델",
+    "title": "ElevenLabs 오디오 모델 전체 fal 제공",
+    "summary": "ElevenLabs의 음성·오디오 AI 모델 전체를 fal의 간단한 API로 쓸 수 있게 됐어요. 다국어를 지원해요.",
+    "url": "https://blog.fal.ai/elevenlabs-audio-suite-next-generation-voice-and-audio-ai-now-on-fal/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-26-1",
+    "service": "claude",
+    "date": "2026.08.26",
+    "kind": "API",
+    "title": "Admin API SDK·CLI 지원, Compliance 세션 정식화",
+    "summary": "Admin API를 ant CLI와 7개 언어 SDK에서 쓸 수 있게 됐어요. Cowork·Claude Code 세션용 Compliance API는 정식 출시됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2026",
+    "source": "dev"
+  }
+]

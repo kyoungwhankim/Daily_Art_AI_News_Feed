@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-06-25-1",
+    "service": "flow-studio",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "Flow Studio, Character LoRA Training",
+    "summary": "캐릭터 전용 LoRA를 자동으로 학습해 재사용하는 기능이 생겨, 영상 생성에서 캐릭터 일관성과 정체성 유지가 좋아졌어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

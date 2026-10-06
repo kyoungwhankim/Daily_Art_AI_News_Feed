@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "meshy-2026-09-29-1",
+    "service": "meshy",
+    "date": "2026.09.29",
+    "kind": "종료",
+    "title": "레거시 /v2/text-to-3d 경로 지원 중단",
+    "summary": "/openapi 접두사 없는 레거시 /v2/text-to-3d 경로가 지원 중단됐어요. 같은 요청을 받는 /openapi/v2/text-to-3d로 옮겨야 해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-28-1",
+    "service": "meshy",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "레이트 리밋 헤더·프린터 브랜드 프리셋",
+    "summary": "API 응답에 Retry-After 등 레이트 리밋 헤더가 추가됐어요. Multi-Color Print는 printer_brand로 여러 프린터용 슬라이서 프리셋을 넣어 줘요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-18-1",
+    "service": "meshy",
+    "date": "2026.09.18",
+    "kind": "모델",
+    "title": "API에 meshy-7.1·geometry_resolution 추가",
+    "summary": "Image·Multi-Image·Text to 3D에 meshy-7.1이 추가되고 latest가 이를 가리켜요. geometry_resolution(standard/2k/4k)이 ultra_mode를 대체해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-16-1",
+    "service": "meshy",
+    "date": "2026.09.16",
+    "kind": "종료",
+    "title": "meshy-5 10월 10일 종료 예고",
+    "summary": "meshy-5가 2026년 10월 10일에 종료된다고 알렸어요. Auto Split API는 텍스처가 있는 입력 작업도 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-15-1",
+    "service": "meshy",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "GPT Image 2.5 모델 추가",
+    "summary": "Text to Image와 Image to Image API에 gpt-image-2-5-flare와 gpt-image-2-5-sunburst가 추가됐어요. GPT Image 모델은 4:3, 3:4도 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-14-1",
+    "service": "meshy",
+    "date": "2026.09.14",
+    "kind": "API",
+    "title": "Image to Image에 input_task_id 추가",
+    "summary": "Image to Image API가 완료된 이미지 작업을 input_task_id로 바로 이어받을 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-11-1",
+    "service": "meshy",
+    "date": "2026.09.11",
+    "kind": "API",
+    "title": "meshy-6-lite 추가·meshy-5 지원 중단",
+    "summary": "meshy-5의 후속 meshy-6-lite가 같은 가격으로 추가됐어요. 실행 중인 작업의 DELETE는 이제 409로 거부돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-10-1",
+    "service": "meshy",
+    "date": "2026.09.10",
+    "kind": "모델",
+    "title": "Meshy 7.1 출시, Ultra 4K 지오메트리",
+    "summary": "Image to 3D에서 가장 풍부한 지오메트리 디테일을 낸다는 Meshy 7.1을 출시했어요. Ultra 4K는 지오메트리를 4096³까지 키워요.",
+    "details": [
+      "Ultra 4K 지오메트리 해상도",
+      "새 Detail Richness 벤치마크 공개"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-7-1-launch",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-09-09-1",
+    "service": "meshy",
+    "date": "2026.09.09",
+    "kind": "API",
+    "title": "Auto Split API 출시",
+    "summary": "Meshy 6·7 모델을 프린트 가능한 파츠로 자동 분할하는 Auto Split API가 나왔어요. 커넥터와 얇은 벽 보강도 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-07-1",
+    "service": "meshy",
+    "date": "2026.09.07",
+    "kind": "API",
+    "title": "Keychain API 이름 각인 지원",
+    "summary": "Creative Lab Keychain API에 name_text가 추가돼 키체인에 최대 10자 이름을 새길 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-05-1",
+    "service": "meshy",
+    "date": "2026.09.05",
+    "kind": "API",
+    "title": "Creative Lab Fidget Pixel API 추가",
+    "summary": "사진을 멀티컬러 3D 프린팅용 픽셀아트 피젯 보드로 바꾸는 Fidget Pixel API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-04-1",
+    "service": "meshy",
+    "date": "2026.09.04",
+    "kind": "API",
+    "title": "애니메이션 라이브러리 조회 API·Collapsible Fidget API",
+    "summary": "프리셋 동작 목록을 무료로 조회하는 API와, 사진으로 접이식 피젯 장난감을 만드는 Creative Lab Collapsible Fidget API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-03-1",
+    "service": "meshy",
+    "date": "2026.09.03",
+    "kind": "API",
+    "title": "Creative Lab Lamp API 개편",
+    "summary": "Lamp API prototype 단계가 램프 갓 GLB를 돌려주게 됐고, 요금이 prototype 30·build 6크레딧으로 바뀌었어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-02-1",
+    "service": "meshy",
+    "date": "2026.09.02",
+    "kind": "API",
+    "title": "Animation API, 한 번에 최대 10개 동작",
+    "summary": "Animation API가 action_ids로 최대 10개 프리셋 동작을 한 파일의 개별 클립으로 받을 수 있게 됐어요. 동작당 3크레딧이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-09-01-1",
+    "service": "meshy",
+    "date": "2026.09.01",
+    "kind": "API",
+    "title": "Multi-Image to 3D Ultra 모드·meshy-t1 문서 제외",
+    "summary": "Multi-Image to 3D에 ultra_mode가 추가됐어요. Smart Topology 문서에서는 meshy-t1이 빠지고 meshy-t2만 남았어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-28-1",
+    "service": "meshy",
+    "date": "2026.08.28",
+    "kind": "API",
+    "title": "Studio·Enterprise용 Usage API 추가",
+    "summary": "팀의 과거 API 작업 사용량과 소모 크레딧을 내보내는 Usage API가 추가됐어요. 비용 추적과 정산에 쓸 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-26-1",
+    "service": "meshy",
+    "date": "2026.08.26",
+    "kind": "API",
+    "title": "Animation API에 생성 모션 적용",
+    "summary": "Animation API가 motion_task_id를 받아 Text to Motion으로 만든 모션을 리깅된 캐릭터에 입힐 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-24-1",
+    "service": "meshy",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "gpt-image-2 화면비 확대",
+    "summary": "Text to Image와 Image to Image의 gpt-image-2가 16:9와 9:16 비율도 지원하게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-21-1",
+    "service": "meshy",
+    "date": "2026.08.21",
+    "kind": "API",
+    "title": "Text to Motion API 출시",
+    "summary": "캐릭터 모델 없이 문장으로 2–10초 모션 클립을 만드는 Text to Motion API가 나왔어요. prime(FBX)과 swift(BVH) 모드가 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-20-1",
+    "service": "meshy",
+    "date": "2026.08.20",
+    "kind": "API",
+    "title": "Multi-Color Print 스타일·Creative Lab 배경 제거",
+    "summary": "Multi-Color Print에 realistic/cartoon style이 생겼고, Creative Lab prototype 단계 전부에 remove_background가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-18-1",
+    "service": "meshy",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "Multi-Image to 3D 멀티 텍스처 이미지 지원",
+    "summary": "Multi-Image to 3D에 texture_image_urls가 추가돼 1–4장의 이미지로 텍스처링을 유도할 수 있어요(meshy-7).",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2026-08-17-1",
+    "service": "tripo",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "리타깃 프리셋 검증 방식 변경",
+    "summary": "animate_retarget의 프리셋 목록을 리그 모델 버전에 맞춰 검증하게 됐어요. Rig v1.0에는 cpr 동작이 추가됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-8-2026-08-17",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-17-1",
+    "service": "meshy",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "이미지 API 배경 제거 옵션",
+    "summary": "Text to Image와 Image to Image API에 remove_background가 추가돼 투명 PNG를 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-13-1",
+    "service": "meshy",
+    "date": "2026.08.13",
+    "kind": "모델",
+    "title": "Text to 3D API에 meshy-7·Smart Topology 추가",
+    "summary": "Text to 3D API에서 meshy-7과 Ultra 생성을 쓸 수 있게 됐어요. meshy-t2 기반 Smart Topology도 추가돼 Preview가 5크레딧이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-08-12-2",
+    "service": "meshy",
+    "date": "2026.08.12",
+    "kind": "모델",
+    "title": "Meshy T2 공개: 2초 만에 네이티브 3D 메시 생성",
+    "summary": "이미지 한 장을 평균 2초 만에 깔끔하고 가벼운 멀티파트 메시로 만드는 Meshy T2를 소개했어요. 아이소서피스 추출 대신 flow matching을 써요.",
+    "url": "https://www.meshy.ai/blog/meshy-t2-native-3d-mesh-generation",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-08-12-1",
+    "service": "meshy",
+    "date": "2026.08.12",
+    "kind": "모델",
+    "title": "Meshy 7 출시: 이미지 정합도 높인 3D 모델",
+    "summary": "입력 이미지와 생성된 3D 형태가 더 정확히 맞도록 다듬은 새 Image to 3D 모델 Meshy 7을 출시했어요. API에서도 같은 날 meshy-7을 쓸 수 있어요.",
+    "details": [
+      "Image to 3D·Multi-Image to 3D·Retexture API에 ai_model meshy-7 추가",
+      "Image to 3D에 더 세밀한 Ultra 생성(ultra_mode) 추가",
+      "Retexture에 1–4장 멀티뷰 텍스처링(multiview_image_urls) 추가"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-7-image-to-3d-geometry-alignment",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-08-07-1",
+    "service": "meshy",
+    "date": "2026.08.07",
+    "kind": "기능",
+    "title": "Multiview 업그레이드: 멀티뷰 텍스처 추가",
+    "summary": "최대 4장의 뷰로 생성하는 Multiview Geometry를 개선하고 Multiview Texture를 추가했어요. 네이티브 2K/4K/8K 베이스 컬러 텍스처를 지원해요.",
+    "url": "https://www.meshy.ai/blog/multiview-upgrade",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-08-04-1",
+    "service": "meshy",
+    "date": "2026.08.04",
+    "kind": "API",
+    "title": "프린팅 분석·수리 입력 포맷 확대",
+    "summary": "Analyze·Repair Printability가 .glb, .gltf, .obj, .fbx, .stl 모델을 받게 됐어요. 수리 결과는 입력 포맷으로 돌려줘요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-27-1",
+    "service": "meshy",
+    "date": "2026.07.27",
+    "kind": "API",
+    "title": "Creative Lab Brick Figure API 추가",
+    "summary": "사진을 브릭 스타일 미니피규어 3D 모델로 바꾸는 Brick Figure API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-22-2",
+    "service": "meshy",
+    "date": "2026.07.22",
+    "kind": "API",
+    "title": "Creative Lab Keycap API 추가",
+    "summary": "사진으로 풀컬러 커스텀 기계식 키보드 키캡 3D 모델을 만드는 Keycap API가 추가됐어요. 실제 mm 스케일로 내보내요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-22-1",
+    "service": "meshy",
+    "date": "2026.07.22",
+    "kind": "기능",
+    "title": "Meshy 텍스처, 네이티브 8K 지원",
+    "summary": "업스케일 없이 진짜 8K 베이스 컬러 텍스처를 생성하게 됐어요. 모공·섬유 같은 미세 디테일이 선명해지고 디라이팅도 깔끔해졌어요.",
+    "url": "https://www.meshy.ai/blog/8k-texture",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-07-21-1",
+    "service": "meshy",
+    "date": "2026.07.21",
+    "kind": "API",
+    "title": "API 8K 텍스처 지원",
+    "summary": "texture_resolution(2k/4k/8k)으로 8K 베이스 컬러 텍스처를 만들 수 있게 됐어요. 8K는 15크레딧이고 hd_texture는 지원 중단됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-20-1",
+    "service": "meshy",
+    "date": "2026.07.20",
+    "kind": "API",
+    "title": "Creative Lab Vinyl Figure API 추가",
+    "summary": "사진을 큰 머리 비닐 피규어 3D 모델로 바꾸는 Creative Lab Vinyl Figure API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-13-1",
+    "service": "meshy",
+    "date": "2026.07.13",
+    "kind": "모델",
+    "title": "Image to 3D에 Smart Topology(meshy-t2) 추가",
+    "summary": "Image to 3D에 Smart Topology model_type이 생겼어요. 새 meshy-t2는 깔끔한 토폴로지와 분리된 파츠, 지정 가능한 면 수를 제공해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-07-2",
+    "service": "meshy",
+    "date": "2026.07.07",
+    "kind": "API",
+    "title": "Image to Image에 aspect_ratio 추가",
+    "summary": "Image to Image API에서 출력 이미지 비율을 고를 수 있게 됐어요. 모델별로 지원하는 비율이 달라요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-07-07-1",
+    "service": "meshy",
+    "date": "2026.07.07",
+    "kind": "기능",
+    "title": "Auto Split 출시: 3D 프린팅용 자동 분할",
+    "summary": "3D 모델을 약 40초 만에 프린트 가능한 파츠로 나눠 주는 Auto Split을 출시했어요. 수밀 절단, 빌드 플레이트 자동 배치, 슬라이서 원클릭 내보내기를 지원해요.",
+    "url": "https://www.meshy.ai/blog/auto-split-3d-printing",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-06-15-1",
+    "service": "meshy",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "UV Unwrap API 출시",
+    "summary": "기존 3D 모델에 겹치지 않는 깔끔한 UV를 새로 만들어 주는 UV Unwrap API가 나왔어요. 호출당 5크레딧, 최대 40,000면까지 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-06-12-1",
+    "service": "meshy",
+    "date": "2026.06.12",
+    "kind": "요금",
+    "title": "Creative Lab Build 요금 조정",
+    "summary": "Keychain, Fridge Magnet, Figure의 Build 단계가 호출당 20에서 30크레딧으로 올랐어요. Prototype은 6크레딧 그대로예요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-06-05-1",
+    "service": "meshy",
+    "date": "2026.06.05",
+    "kind": "API",
+    "title": "투명 배경 썸네일 alpha_thumbnail 추가",
+    "summary": "여러 3D API에 alpha_thumbnail 옵션이 생겨 투명 배경(RGBA) 미리보기를 함께 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-06-04-1",
+    "service": "meshy",
+    "date": "2026.06.04",
+    "kind": "기능",
+    "title": "Meshy 3D Agent 베타 공개",
+    "summary": "대화만으로 아이디어를 다운로드 가능한 3D 모델로 만들어 주는 AI 에이전트 Meshy 3D Agent를 베타로 공개했어요. 3D 프린팅·게임 에셋·프로토타입에 쓸 수 있어요.",
+    "url": "https://www.meshy.ai/blog/meshy-3d-agent",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2026-06-03-1",
+    "service": "tripo",
+    "date": "2026.06.03",
+    "kind": "요금",
+    "title": "texture_quality=extreme 추가·텍스처 요금 단계화",
+    "summary": "텍스처 품질에 extreme 단계가 추가되고 요금이 standard +10, detailed +20, extreme +30크레딧으로 나뉘었어요. Rig v2.0 모델은 종료됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-7-2026-06-03",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-06-01-1",
+    "service": "meshy",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Creative Lab API 출시",
+    "summary": "사진이나 텍스트로 3D 프린팅용 소비자 제품을 만드는 Creative Lab API를 공개했어요. 키체인, 냉장고 자석, 피규어, 램프 네 가지로 시작해요.",
+    "details": [
+      "prototype→build 2단계 워크플로",
+      "제품별 URL과 독립 버전 관리"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-26-1",
+    "service": "meshy",
+    "date": "2026.05.26",
+    "kind": "API",
+    "title": "Multi-Image to 3D 4방향 썸네일 옵션",
+    "summary": "Multi-Image to 3D에도 multi_view_thumbnails가 추가돼 네 방향 썸네일을 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-22-1",
+    "service": "meshy",
+    "date": "2026.05.22",
+    "kind": "API",
+    "title": "Convert·Resize API 분리 출시",
+    "summary": "Remesh API의 포맷 변환과 크기 조정 기능이 독립된 Convert API와 Resize API로 나왔어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-13-1",
+    "service": "meshy",
+    "date": "2026.05.13",
+    "kind": "API",
+    "title": "Image to 3D 4방향 썸네일 옵션",
+    "summary": "Image to 3D에 multi_view_thumbnails가 추가돼 앞·오른쪽·뒤·왼쪽 썸네일 네 장을 함께 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-12-2",
+    "service": "meshy",
+    "date": "2026.05.12",
+    "kind": "API",
+    "title": "Remesh에 resize_longest_side 추가",
+    "summary": "Remesh API에서 가장 긴 변을 지정한 미터 값에 맞춰 모델 크기를 조정할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-12-1",
+    "service": "meshy",
+    "date": "2026.05.12",
+    "kind": "기능",
+    "title": "Meshy Workspace 3.0 공개",
+    "summary": "새 Discover 생성 바와 Image·3D Model·3D Printing·Animate 작업별 모듈, 통합 에셋 관리를 갖춘 Workspace 3.0을 공개했어요.",
+    "details": [
+      "Discover 생성 바로 즉시 생성",
+      "작업 중심 모듈(Image, 3D Model, 3D Printing, Animate)",
+      "에셋 통합 관리"
+    ],
+    "url": "https://www.meshy.ai/blog/workspace3",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-05-11-1",
+    "service": "meshy",
+    "date": "2026.05.11",
+    "kind": "종료",
+    "title": "symmetry_mode 파라미터 지원 중단",
+    "summary": "Text to 3D, Image to 3D, Multi-Image to 3D의 symmetry_mode가 지원 중단됐어요. 이제 결과에 영향을 주지 않아요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-05-07-1",
+    "service": "meshy",
+    "date": "2026.05.07",
+    "kind": "API",
+    "title": "3D 프린팅 분석·수리 API 출시",
+    "summary": "FDM 프린팅 적합성을 무료로 검사하는 Analyze Printability API와, 비매니폴드 엣지·구멍 등을 고치는 Repair Printability API가 나왔어요.",
+    "details": [
+      "Analyze Printability: 수밀성·부피·구멍 지표, 무료",
+      "Repair Printability: 토폴로지 문제 수리, 작업당 10크레딧"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-27-1",
+    "service": "meshy",
+    "date": "2026.04.27",
+    "kind": "API",
+    "title": "작업 응답에 consumed_credits 추가",
+    "summary": "모든 API 작업 응답에 사용한 크레딧을 보여 주는 consumed_credits 필드가 추가됐어요. 실패한 작업은 0으로 표시되고 자동 환불돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-24-1",
+    "service": "meshy",
+    "date": "2026.04.24",
+    "kind": "API",
+    "title": "Multi-Color Print에 model_url 입력 추가",
+    "summary": "Multi-Color Print가 Meshy 작업 없이도 텍스처 있는 3D 모델(.glb, .fbx)을 URL로 받아 처리할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-21-1",
+    "service": "meshy",
+    "date": "2026.04.21",
+    "kind": "API",
+    "title": "Image to 3D에 input_task_id 입력 추가",
+    "summary": "Image to 3D와 Multi-Image to 3D가 완료된 Text to Image·Image to Image 작업을 input_task_id로 바로 이어받을 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-20-1",
+    "service": "meshy",
+    "date": "2026.04.20",
+    "kind": "API",
+    "title": "4K 텍스처(hd_texture)·이미션 맵 추가",
+    "summary": "hd_texture를 켜면 베이스 컬러 텍스처를 4K로 만들 수 있어요(meshy-6). PBR 묶음에는 이미션 맵도 포함되기 시작했어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2026-04-14-1",
+    "service": "tripo",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "멀티뷰 이미지 생성·편집 작업 추가",
+    "summary": "이미지 한 장으로 같은 대상의 멀티뷰 이미지 세트를 만들고 뷰별로 편집하는 작업이 추가됐어요. multiview_to_model이 이 결과를 바로 이어받아요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-6-2026-04-14",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-14-1",
+    "service": "meshy",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "decimation_mode 파라미터 추가",
+    "summary": "Image to 3D, Multi-Image to 3D, Text to 3D Preview, Remesh에 적응형 데시메이션 수준을 정하는 decimation_mode가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-04-02-1",
+    "service": "meshy",
+    "date": "2026.04.02",
+    "kind": "API",
+    "title": "Multi-Color Print API·3MF 출력 추가",
+    "summary": "3D 모델을 1–16색 멀티컬러 3MF로 바꾸는 Multi-Color Print API가 나왔어요. 모든 엔드포인트 target_formats에서 3mf도 고를 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-04-02-1",
+    "service": "marble",
+    "date": "2026.04.02",
+    "kind": "모델",
+    "title": "Marble 1.1·Marble 1.1 Plus 모델 추가",
+    "summary": "새 Marble 1.1과 Marble 1.1 Plus 모델이 추가되고 생성 화면에 모델 선택기가 생겼어요. 기존 모델은 Marble 1.0과 1.0 Draft로 계속 쓸 수 있어요.",
+    "details": [
+      "omnibox 등에 모델 선택기 추가",
+      "에셋 페이지에 사용 모델 표시",
+      "고급 편집을 Create & edit로 제공"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#april-2-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-03-20-1",
+    "service": "meshy",
+    "date": "2026.03.20",
+    "kind": "종료",
+    "title": "Meshy-4 모델 종료, auto_size·origin_at 추가",
+    "summary": "API에서 Meshy-4 모델이 종료돼 meshy-6나 latest로 옮겨야 해요. AI가 실제 크기를 추정해 맞추는 auto_size와 원점 위치 origin_at도 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-03-17-1",
+    "service": "meshy",
+    "date": "2026.03.17",
+    "kind": "API",
+    "title": "target_formats로 출력 포맷 선택",
+    "summary": "Image to 3D, Multi-Image to 3D, Text to 3D, Retexture에 target_formats가 추가돼 필요한 3D 포맷만 만들어 완료 시간을 줄일 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2026-03-11-1",
+    "service": "tripo",
+    "date": "2026.03.11",
+    "kind": "모델",
+    "title": "Tripo v3.1·P1.0 Smart Mesh·Rig v2.5 출시",
+    "summary": "최대 200만 폴리곤의 고품질 생성 모델 Tripo v3.1과 약 2초 만에 깔끔한 토폴로지를 만드는 Smart Mesh 모델 P1.0이 나왔어요. Rig v2.5도 추가됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-5-2026-03-11",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2026-03-09-1",
+    "service": "tripo",
+    "date": "2026.03.09",
+    "kind": "API",
+    "title": "autofix 개선·작업 응답에 크레딧 사용량",
+    "summary": "흐린 이미지 등 흔한 입력 문제를 처리하는 autofix가 개선됐어요. 성공한 작업 응답에 그 요청의 크레딧 사용량이 포함돼요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-4-2026-03-09",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-02-28-1",
+    "service": "meshy",
+    "date": "2026.02.28",
+    "kind": "API",
+    "title": "remove_lighting 추가·Retexture Meshy 6 지원",
+    "summary": "베이스 컬러 텍스처의 하이라이트와 그림자를 지우는 remove_lighting이 추가됐어요. Retexture와 Text to 3D Refine은 meshy-6 텍스처링을 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-02-25-1",
+    "service": "meshy",
+    "date": "2026.02.25",
+    "kind": "API",
+    "title": "image_enhancement 파라미터 추가",
+    "summary": "Image to 3D와 Multi-Image to 3D에 image_enhancement가 추가돼 입력 이미지 보정을 끄고 원본 그대로 쓸 수 있어요(meshy-6 전용).",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-02-20-1",
+    "service": "meshy",
+    "date": "2026.02.20",
+    "kind": "API",
+    "title": "Text to 3D Preview에 로우폴리 model_type 추가",
+    "summary": "Text to 3D Preview API에도 깔끔한 로우폴리 메시를 만드는 model_type 파라미터가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2026",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-01-29-1",
+    "service": "marble",
+    "date": "2026.01.29",
+    "kind": "기능",
+    "title": "Composer 메시 가져오기, API 영상 용량 확대",
+    "summary": "Composer로 메시를 가져올 수 있게 됐어요. API의 영상 프롬프트 파일 한도는 100MB로 늘었어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#january-29-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-01-26-1",
+    "service": "meshy",
+    "date": "2026.01.26",
+    "kind": "모델",
+    "title": "Multi-Image to 3D API, Meshy-6 지원",
+    "summary": "Multi-Image to 3D API에서 meshy-6로 전체 메시를 만들 수 있게 됐고 latest도 Meshy 6를 가리켜요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-01-22-1",
+    "service": "meshy",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "Meshy-6 기준 파라미터 정리",
+    "summary": "Meshy-6 Text to 3D Preview에서 art_style이, meshy-4의 enable_pbr가 지원 중단됐어요. Meshy-6에서는 should_remesh 기본값이 false가 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-01-21-1",
+    "service": "marble",
+    "date": "2026.01.21",
+    "kind": "API",
+    "title": "World API 출시",
+    "summary": "Marble의 월드 생성 기능을 앱에 넣을 수 있는 공개 World API를 출시했어요. 텍스트·이미지·파노라마·멀티뷰·영상으로 탐험 가능한 3D 월드를 만들어요.",
+    "url": "https://www.worldlabs.ai/blog/announcing-the-world-api",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-01-19-1",
+    "service": "meshy",
+    "date": "2026.01.19",
+    "kind": "모델",
+    "title": "API latest, Meshy 6로 전환",
+    "summary": "Text to 3D Preview와 Image to 3D API에서 ai_model latest가 이제 Meshy 6를 가리켜요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-01-18-1",
+    "service": "meshy",
+    "date": "2026.01.18",
+    "kind": "모델",
+    "title": "Meshy-6 정식 출시",
+    "summary": "더 깔끔한 지오메트리와 선명한 하드서피스 디테일을 내는 Meshy-6를 출시했어요. Low Poly Mode, 멀티컬러 3D 프린팅, 업그레이드된 API도 함께 나왔어요.",
+    "details": [
+      "지오메트리·하드서피스 디테일 개선",
+      "Low Poly Mode 추가",
+      "멀티컬러 3D 프린팅 워크플로",
+      "API 업그레이드"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-6-launch",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-01-12-1",
+    "service": "meshy",
+    "date": "2026.01.12",
+    "kind": "API",
+    "title": "Image to 3D에 로우폴리 model_type 추가",
+    "summary": "Image to 3D API에 깔끔한 폴리곤의 로우폴리 메시를 만드는 model_type 파라미터가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-01-01-1",
+    "service": "marble",
+    "date": "2026.01.01",
+    "kind": "기능",
+    "title": "내보내기 옵션 개선",
+    "summary": "에셋이 실제 단위에 가깝게 크기·바닥이 맞춰져 내보내져요. OpenGL/OpenCV 좌표계 선택과 고품질 메시의 버텍스 컬러/텍스처 선택도 가능해졌어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#january-1-2026",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-12-31-1",
+    "service": "meshy",
+    "date": "2025.12.31",
+    "kind": "API",
+    "title": "API Playground·Text to Image·Image to Image API 출시",
+    "summary": "웹에서 API 파라미터를 시험해 볼 수 있는 API Playground를 열었어요. nano-banana 모델 기반 Text to Image·Image to Image API도 추가됐어요.",
+    "details": [
+      "API Playground 공개",
+      "Text to Image API·Image to Image API 추가(nano-banana, nano-banana-pro)",
+      "멀티뷰 이미지 생성 옵션"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-12-30-1",
+    "service": "tripo",
+    "date": "2025.12.30",
+    "kind": "모델",
+    "title": "v3.0 속도·텍스처 개선, v2.0 로우폴리 모델",
+    "summary": "Tripo v3.0 기본 지오메트리 생성이 빨라지고 텍스처 품질이 좋아졌어요. 품질을 높인 v2.0 로우폴리 생성 모델도 추가됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-3-2025-12-30",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-12-22-1",
+    "service": "meshy",
+    "date": "2025.12.22",
+    "kind": "종료",
+    "title": "Text to 3D 응답 video_url 지원 중단",
+    "summary": "Text to 3D API 응답의 video_url 필드가 지원 중단됐고 향후 제거될 예정이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2025",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2025-12-18-1",
+    "service": "marble",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "Chisel 복사·붙여넣기, Expand 안내 개선",
+    "summary": "Chisel에서 Ctrl+C/Ctrl+V로 복사·붙여넣기를 할 수 있게 됐어요. Expand 모드는 확장 가능한 영역을 더 분명히 안내해요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-18-2025",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2025-12-11-1",
+    "service": "marble",
+    "date": "2025.12.11",
+    "kind": "기능",
+    "title": "Studio 녹화 모드 강화, OpenGL 좌표계 내보내기",
+    "summary": "Studio 녹화 모드에서 미리보기 창 이동과 품질·해상도·비율·프레임레이트·코덱 설정이 가능해졌어요. 월드 내보내기는 OpenGL 좌표계가 기본이 됐어요.",
+    "details": [
+      "스플랫·메시 OpenGL 좌표계로 내보내기(기존 OpenCV)",
+      "SPZ 스플랫 기본 v2 포맷"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-11-2025",
+    "source": "dev"
+  },
+  {
+    "id": "rodin-2025-12-05-1",
+    "service": "rodin",
+    "date": "2025.12.05",
+    "kind": "정책",
+    "title": "Hyper3D, Shutterstock 3D 에셋 상업 라이선스 확보",
+    "summary": "Deemos가 Shutterstock의 3D 에셋 상업 라이선스를 확보해 모델 학습에 쓰기로 했어요. 권리가 정리된 데이터로 학습해 출처와 규정 준수를 강화하려는 조치예요.",
+    "details": [
+      "라이선스 데이터를 모델 학습·개발 파이프라인에 반영",
+      "같은 날 Blender와의 협력도 발표"
+    ],
+    "url": "https://hyper3d.ai/blog/hyper3d-shutterstock",
+    "source": "notice"
+  },
+  {
+    "id": "marble-2025-12-05-1",
+    "service": "marble",
+    "date": "2025.12.05",
+    "kind": "요금",
+    "title": "파노라마 편집 모델 업그레이드, 크레딧 조정",
+    "summary": "파노라마 편집이 최신 고품질 모델로 바뀌면서 편집 1회 비용이 50에서 150크레딧으로 올랐어요. 360° 파노라마 스크린샷 기능도 생겼어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-5-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-12-04-1",
+    "service": "meshy",
+    "date": "2025.12.04",
+    "kind": "API",
+    "title": "pose_mode 파라미터 추가",
+    "summary": "Text to 3D Preview, Image to 3D, Multi-Image to 3D에 a-pose/t-pose를 고르는 pose_mode가 추가됐어요. is_a_t_pose는 지원 중단됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-11-24-1",
+    "service": "meshy",
+    "date": "2025.11.24",
+    "kind": "API",
+    "title": "리메시 전 원본 모델 저장 옵션",
+    "summary": "Image to 3D와 Multi-Image to 3D에 save_pre_remeshed_model이 추가돼 리메시 전 GLB를 따로 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2025-11-20-1",
+    "service": "marble",
+    "date": "2025.11.20",
+    "kind": "기능",
+    "title": "Marble Studio, 대형 월드 편집 지원",
+    "summary": "새 LoD 스플랫 렌더링 백엔드로 Marble Studio에서 훨씬 큰 월드를 편집·합성할 수 있게 됐어요. Worlds 섹션에 월드 ID도 표시돼요.",
+    "details": [
+      "크레딧 초과 청구 버그 수정 및 환불"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#november-20-2025",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2025-11-12-1",
+    "service": "marble",
+    "date": "2025.11.12",
+    "kind": "모델",
+    "title": "Marble 정식 출시, 멀티모달 월드 모델",
+    "summary": "Marble이 누구나 쓸 수 있게 정식 출시됐어요. 텍스트·이미지·영상·3D 레이아웃으로 월드를 만들고 편집·확장·결합한 뒤 스플랫·메시·영상으로 내보낼 수 있어요.",
+    "details": [
+      "텍스트·이미지·영상·거친 3D 레이아웃 입력",
+      "월드 편집·확장·합치기",
+      "가우시안 스플랫·메시·영상 내보내기",
+      "크리에이티브 허브 Marble Labs 개설"
+    ],
+    "url": "https://www.worldlabs.ai/blog/marble-world-model",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-11-06-1",
+    "service": "meshy",
+    "date": "2025.11.06",
+    "kind": "API",
+    "title": "Meshy 6 Preview 텍스처링, 여러 API로 확대",
+    "summary": "Text to 3D Refine, Multi-Image to 3D, Retexture에서 latest로 Meshy 6 Preview를 쓸 수 있게 됐어요. Image to 3D도 텍스처링 기본값이 Meshy-6-preview가 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-11-04-1",
+    "service": "tripo",
+    "date": "2025.11.04",
+    "kind": "API",
+    "title": "Multiview-to-model, v3.0 지원",
+    "summary": "Multiview-to-model이 Tripo v3.0(Standard·Ultra)을 지원하게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-2-2025-11-04",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-11-04-1",
+    "service": "meshy",
+    "date": "2025.11.04",
+    "kind": "API",
+    "title": "업로드 모델 텍스처 보존",
+    "summary": "Remesh API가 업로드한 모델의 텍스처를 유지하게 됐어요. Retexture도 enable_original_uv를 켜면 원래 텍스처를 보존해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-10-28-1",
+    "service": "meshy",
+    "date": "2025.10.28",
+    "kind": "API",
+    "title": "x-api-version 응답 헤더 추가",
+    "summary": "현재 API 서버 버전을 알려 주는 x-api-version 응답 헤더가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-10-20-1",
+    "service": "meshy",
+    "date": "2025.10.20",
+    "kind": "API",
+    "title": "Remesh 포맷 변환 전용 옵션 추가",
+    "summary": "Remesh API에 파일 포맷만 바꾸는 convert_format_only가 추가됐어요. 리깅 작업 응답에는 rigged_character_glb_url이 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-10-01-1",
+    "service": "meshy",
+    "date": "2025.10.01",
+    "kind": "종료",
+    "title": "Text to Voxel API 제거",
+    "summary": "Text to Voxel API가 제거됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-09-26-1",
+    "service": "tripo",
+    "date": "2025.09.26",
+    "kind": "모델",
+    "title": "Tripo v3.0 정식 출시, Ultra 모드",
+    "summary": "Tripo v3.0이 정식 출시됐어요. 엣지와 표면이 더 깔끔해졌고, Ultra 모드로 최대 200만 폴리곤까지 만들 수 있어요.",
+    "details": [
+      "Ultra 모드(geometry_quality=detailed) 최대 200만 폴리곤",
+      "텍스처·재질 파이프라인 대폭 개선",
+      "이중 레이어 표면·구멍 문제 해결"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-1-2025-09-26",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-09-23-1",
+    "service": "meshy",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "Text to 3D API에 Meshy 6 Preview, 한시 50% 할인",
+    "summary": "Text to 3D API에서도 latest로 Meshy 6 Preview를 쓸 수 있게 됐어요. 9월 30일까지 Meshy-6-preview 작업이 10크레딧으로 50% 할인돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-09-18-1",
+    "service": "meshy",
+    "date": "2025.09.18",
+    "kind": "요금",
+    "title": "Meshy 6 기준 API 요금 개편",
+    "summary": "Text to 3D와 Image to 3D API 요금이 Meshy 6와 다른 모델에 따라 다르게 매겨지도록 바뀌었어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-09-16-1",
+    "service": "meshy",
+    "date": "2025.09.16",
+    "kind": "모델",
+    "title": "Image to 3D API에 Meshy 6 Preview 추가",
+    "summary": "Image to 3D API의 ai_model에 latest를 넣으면 Meshy 6 Preview를 쓸 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2025-09-16-1",
+    "service": "marble",
+    "date": "2025.09.16",
+    "kind": "모델",
+    "title": "Marble 제한 베타 프리뷰 공개",
+    "summary": "World Labs가 이미지나 텍스트로 탐험 가능한 3D 월드를 만드는 Marble을 제한 베타로 공개했어요. 더 크고 깔끔한 월드를 가우시안 스플랫으로 내보낼 수 있어요.",
+    "details": [
+      "이전보다 더 크고 다양한 스타일의 월드",
+      "가우시안 스플랫 내보내기, Spark(Three.js)로 웹 렌더링",
+      "여러 생성을 이어 붙여 큰 월드 구성"
+    ],
+    "url": "https://www.worldlabs.ai/blog/bigger-better-worlds",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-09-04-1",
+    "service": "meshy",
+    "date": "2025.09.04",
+    "kind": "API",
+    "title": "Remesh·Retexture 입력 포맷 확대",
+    "summary": "Remesh와 Retexture의 model_url이 .glb, .gltf, .obj, .fbx, .stl을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-08-18-1",
+    "service": "meshy",
+    "date": "2025.08.18",
+    "kind": "API",
+    "title": "A/T 포즈 생성 옵션 추가",
+    "summary": "Text to 3D Preview, Image to 3D, Multi-Image to 3D에 is_a_t_pose가 추가돼 A/T 포즈 모델을 만들 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-08-13-1",
+    "service": "meshy",
+    "date": "2025.08.13",
+    "kind": "모델",
+    "title": "Meshy 5 API 정식(stable) 전환",
+    "summary": "Text to 3D와 Image to 3D의 meshy-5 모델이 안정 버전이 돼 품질과 일관성이 좋아졌어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-08-12-1",
+    "service": "tripo",
+    "date": "2025.08.12",
+    "kind": "모델",
+    "title": "Tripo v3.0 베타 공개",
+    "summary": "디테일 복원과 날카로운 엣지, 하드서피스 표현을 크게 개선한 v3.0-20250812 베타가 나왔어요. 텍스처 생성과 PBR도 함께 업그레이드됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-0-2025-08-12",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-07-31-2",
+    "service": "meshy",
+    "date": "2025.07.31",
+    "kind": "API",
+    "title": "Meshy-5 PBR 텍스처 맵 지원",
+    "summary": "enable_pbr 파라미터로 meshy-5 모델에서도 PBR 맵을 받을 수 있게 됐어요. Text to 3D, Image to 3D, Multi-Image to 3D, Retexture에 적용돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-07-31-1",
+    "service": "meshy",
+    "date": "2025.07.31",
+    "kind": "기능",
+    "title": "애니메이션 프리셋 500개 이상으로 확대",
+    "summary": "Meshy의 애니메이션 프리셋이 500개 이상으로 늘어났어요. 리깅 지식 없이도 캐릭터에 다양한 동작을 빠르게 입힐 수 있어요.",
+    "url": "https://www.meshy.ai/blog/free-3d-animation",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-07-15-1",
+    "service": "meshy",
+    "date": "2025.07.15",
+    "kind": "연동",
+    "title": "Meshy x Blender 공식 플러그인·후원",
+    "summary": "Meshy가 3D AI 도구 최초로 Blender Foundation을 공식 후원하고, 모델을 원클릭으로 Blender에 가져오는 전용 플러그인을 내놨어요.",
+    "url": "https://www.meshy.ai/blog/blender-ai-plugin",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-07-03-1",
+    "service": "meshy",
+    "date": "2025.07.03",
+    "kind": "요금",
+    "title": "Meshy Education Plan 출시",
+    "summary": "학생과 교육자가 Meshy의 AI 3D 도구를 할인된 가격으로 쓸 수 있는 Education Plan을 시작했어요. 수업과 연구에 활용하기 좋아요.",
+    "url": "https://www.meshy.ai/blog/education-plan",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-06-25-1",
+    "service": "meshy",
+    "date": "2025.06.25",
+    "kind": "API",
+    "title": "Retexture API 출시",
+    "summary": "최신 모델로 기존 3D 모델에 새 텍스처를 입히는 Retexture API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-06-19-1",
+    "service": "meshy",
+    "date": "2025.06.19",
+    "kind": "API",
+    "title": "작업 삭제 API·Refine ai_model 추가",
+    "summary": "Text to 3D, Image to 3D, Remesh, Rigging, Animation 작업을 지우는 삭제 API가 추가됐어요. Text to 3D Refine에는 ai_model 파라미터가 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-06-18-1",
+    "service": "tripo",
+    "date": "2025.06.18",
+    "kind": "API",
+    "title": "Studio 핵심 기능 API로 이전: 메시 편집·이미지 생성",
+    "summary": "Tripo Studio의 핵심 기능이 API로 들어왔어요. 메시 분할·스마트 로우폴리·메시 보완 작업과 text_to_image가 추가됐어요.",
+    "details": [
+      "mesh_segmentation·smart_low_poly·mesh_completion 추가",
+      "text_to_image 작업 추가",
+      "생성 작업에 smart_low_poly·generate_parts 파라미터",
+      "texture_model에 텍스트·이미지·스타일 프롬프트",
+      "retarget에서 여러 애니메이션 한 번에 적용"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-8-0-2025-06-18",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-06-17-1",
+    "service": "meshy",
+    "date": "2025.06.17",
+    "kind": "API",
+    "title": "Webhooks 문서 공개",
+    "summary": "작업 상태를 콜백으로 받는 Webhooks 사용법이 API 문서에 추가됐어요. 폴링 없이 완료 알림을 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-06-10-1",
+    "service": "meshy",
+    "date": "2025.06.10",
+    "kind": "API",
+    "title": "Remesh API, base64 GLB 입력 지원",
+    "summary": "Remesh API의 model_url이 Data URI 형태의 base64 GLB 모델을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-06-06-1",
+    "service": "meshy",
+    "date": "2025.06.06",
+    "kind": "기능",
+    "title": "Meshy, Text to Image 기능 추가",
+    "summary": "텍스트로 AI 이미지를 바로 만들어 3D 생성의 출발점으로 쓸 수 있는 기능을 추가했어요. 컨셉 이미지부터 3D까지 한 곳에서 이어갈 수 있어요.",
+    "url": "https://www.meshy.ai/blog/transform-text-into-ai-images-for-3d-creation",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2025-05-21-1",
+    "service": "tripo",
+    "date": "2025.05.21",
+    "kind": "모델",
+    "title": "Turbo v1.0 고속 모델 추가",
+    "summary": "처리 속도를 크게 높인 Turbo-v1.0-20250506 모델이 text-to-model과 image-to-model에 추가됐어요. 빠른 응답이 필요한 서비스에 좋아요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-6-0-2025-05-21",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-05-20-1",
+    "service": "meshy",
+    "date": "2025.05.20",
+    "kind": "API",
+    "title": "moderation 파라미터 추가",
+    "summary": "Text to 3D·Image to 3D·Multi-Image to 3D API에 moderation 옵션이 생겨 생성 전에 유해 콘텐츠를 자동 검사할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-05-15-1",
+    "service": "meshy",
+    "date": "2025.05.15",
+    "kind": "API",
+    "title": "자동 리깅·애니메이션 API 출시",
+    "summary": "3D 모델을 자동으로 리깅하고 애니메이션을 입히는 Auto-rigging & Animation API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2025",
+    "source": "dev"
+  },
+  {
+    "id": "rodin-2025-04-29-1",
+    "service": "rodin",
+    "date": "2025.04.29",
+    "kind": "모델",
+    "title": "Hyper3D Rodin Gen 1.5 정식 출시",
+    "summary": "40억 개 이상 파라미터의 네이티브 3D 생성 모델 Rodin Gen 1.5를 정식 출시했어요. 이미지나 텍스트로 쿼드 메시와 PBR 재질을 바로 만들어요.",
+    "details": [
+      "쿼드 메시 직접 생성",
+      "PBR 재질 생성",
+      "3D ControlNet·LoRA 스타일 모듈",
+      "Unity·Unreal·Blender 연동, Blender MCP 지원"
+    ],
+    "url": "https://hyper3d.ai/blog/deemos-tech-launches-hyper3d-rodin",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-04-29-1",
+    "service": "meshy",
+    "date": "2025.04.29",
+    "kind": "API",
+    "title": "Meshy-5 API 지원·Multi-Image to 3D API 추가",
+    "summary": "Text to 3D와 Image to 3D API에 meshy-5 모델이 추가되고 latest도 meshy-5를 가리키게 됐어요. 1–4장 이미지로 3D를 만드는 Multi-Image to 3D API도 나왔어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-04-17-1",
+    "service": "meshy",
+    "date": "2025.04.17",
+    "kind": "API",
+    "title": "texture_image_url 파라미터 추가",
+    "summary": "Image to 3D와 Text to 3D Refine API에 texture_image_url이 추가돼 이미지로 텍스처 생성을 유도할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-03-28-1",
+    "service": "meshy",
+    "date": "2025.03.28",
+    "kind": "API",
+    "title": "ai_model에 latest 옵션 추가",
+    "summary": "Text to 3D와 Image to 3D API에 latest 옵션이 생겨 곧 나올 최신 모델을 바로 쓸 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-03-14-1",
+    "service": "meshy",
+    "date": "2025.03.14",
+    "kind": "API",
+    "title": "Text to Texture API, base64 모델 입력 지원",
+    "summary": "Text to Texture API의 model_url이 Data URI 형태의 base64 모델을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-03-06-1",
+    "service": "meshy",
+    "date": "2025.03.06",
+    "kind": "요금",
+    "title": "API 생성 작업 요금 변경",
+    "summary": "API 작업 크레딧이 바뀌었어요. Text to 3D Preview는 5, Refine은 10, Image to 3D는 텍스처 없이 5·텍스처 포함 15, Text to Texture는 10크레딧이에요.",
+    "details": [
+      "Text to 3D Preview 2→5크레딧",
+      "Text to 3D Refine 5→10크레딧",
+      "Image to 3D 텍스처 없음 5·포함 15크레딧",
+      "Text to Texture 5→10크레딧, Text to Voxel 5크레딧 유지"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-02-18-1",
+    "service": "meshy",
+    "date": "2025.02.18",
+    "kind": "API",
+    "title": "테스트 모드 API 키 도입",
+    "summary": "크레딧을 쓰지 않고 연동을 시험할 수 있는 테스트 모드 API 키가 생겼어요. 유효한 요청에는 같은 샘플 결과가 돌아와요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-02-13-1",
+    "service": "meshy",
+    "date": "2025.02.13",
+    "kind": "API",
+    "title": "무료 API 종료 예고·SSE 스트리밍 추가",
+    "summary": "2025년 3월 20일부터 API 작업 생성에 유료 구독이 필요하다고 알렸어요. 실시간 작업 상태를 받는 SSE 스트리밍 엔드포인트도 추가됐어요.",
+    "details": [
+      "무료 티어 API 작업 생성 3월 20일 종료 예고",
+      "Text to 3D·Image to 3D·Remesh·Text to Texture Stream API 추가"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-02-06-1",
+    "service": "meshy",
+    "date": "2025.02.06",
+    "kind": "API",
+    "title": "texture_prompt 파라미터 추가",
+    "summary": "Image to 3D와 Text to 3D Refine API에 texture_prompt가 추가돼 텍스트로 텍스처 생성을 유도할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2025",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2025-01-23-1",
+    "service": "tripo",
+    "date": "2025.01.23",
+    "kind": "모델",
+    "title": "Tripo v2.5 모델 공개, 기본값 전환",
+    "summary": "지오메트리 디테일과 사실적인 텍스처를 높인 v2.5-20250123이 추가되고 기본 버전이 됐어요. quad 파라미터와 gold·ancient_bronze 스타일도 생겼어요.",
+    "details": [
+      "v2.5-20250123 추가, 기본 버전으로 전환",
+      "quad(쿼드 메시) 파라미터",
+      "v1.3 및 v1.4 멀티뷰 지원 중단"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-5-0-2025-01-23",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-01-23-1",
+    "service": "meshy",
+    "date": "2025.01.23",
+    "kind": "API",
+    "title": "작업 목록 조회 엔드포인트 추가",
+    "summary": "Text to 3D, Image to 3D, Remesh, Text to Texture API에 작업 목록을 조회하는 엔드포인트가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-01-14-1",
+    "service": "meshy",
+    "date": "2025.01.14",
+    "kind": "종료",
+    "title": "Meshy-3 기반 레거시 API 지원 중단",
+    "summary": "Meshy-3 모델로 동작하던 레거시 Text to 3D·Image to 3D API가 지원 중단됐어요. 최신 API로 옮겨야 해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2025-01-07-1",
+    "service": "meshy",
+    "date": "2025.01.07",
+    "kind": "API",
+    "title": "symmetry_mode 파라미터 추가",
+    "summary": "Text to 3D Preview와 Image to 3D API에 대칭 설정을 고르는 symmetry_mode 파라미터가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2025",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-12-19-1",
+    "service": "meshy",
+    "date": "2024.12.19",
+    "kind": "API",
+    "title": "Remesh API 추가, 폴리곤 한도 확대",
+    "summary": "Meshy로 만든 3D 모델을 리메시하고 여러 포맷으로 내보내는 Remesh API가 추가됐어요. Premium 사용자의 폴리곤 수 범위는 100–300,000으로 넓어졌어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-12-12-1",
+    "service": "meshy",
+    "date": "2024.12.12",
+    "kind": "API",
+    "title": "Meshy-3 레거시 API 분리, model_url 응답 필드 지원 중단",
+    "summary": "레거시 Meshy-3 API와 최신 Meshy-4 API가 분리됐어요. 모든 응답 객체의 model_url 속성은 지원 중단됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-12-10-1",
+    "service": "meshy",
+    "date": "2024.12.10",
+    "kind": "API",
+    "title": "enable_pbr·should_texture 파라미터 추가",
+    "summary": "Image to 3D와 Text to 3D Refine에 enable_pbr가, Image to 3D에 should_texture가 추가됐어요. Meshy-4에서는 art_style의 pbr·low-poly 옵션이 지원 중단됐어요.",
+    "details": [
+      "Image to 3D·Text to 3D Refine에 enable_pbr 추가",
+      "Image to 3D에 should_texture 추가",
+      "art_style의 pbr(Meshy-4)·low-poly 옵션 지원 중단"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-12-06-1",
+    "service": "tripo",
+    "date": "2024.12.06",
+    "kind": "API",
+    "title": "orientation 파라미터·리타깃 애니메이션 추가",
+    "summary": "image_to_model과 multiview_to_model에 orientation이 추가됐어요. 리타깃용 프리셋 애니메이션과 새 스타일 두 가지도 늘었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-9-2024-12-06",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-12-05-1",
+    "service": "meshy",
+    "date": "2024.12.05",
+    "kind": "API",
+    "title": "Get Balance API·should_remesh 파라미터 추가",
+    "summary": "크레딧 잔액을 조회하는 Get Balance API가 추가됐어요. Image to 3D와 Text to 3D Preview에는 리메시 여부를 고르는 should_remesh가 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-12-03-1",
+    "service": "meshy",
+    "date": "2024.12.03",
+    "kind": "API",
+    "title": "외부 API 경로에 /openapi 접두사 도입",
+    "summary": "외부 API가 /openapi 접두사 경로를 쓰게 됐어요. 기존 경로도 계속 동작하지만 새 경로로 옮기는 것을 권장해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-11-28-1",
+    "service": "meshy",
+    "date": "2024.11.28",
+    "kind": "기능",
+    "title": "새 Meshy 워크스페이스 UI 공개",
+    "summary": "여러 생성 기능을 한 흐름으로 묶은 새 워크스페이스 UI를 출시했어요. 더 유연하고 간결하게 3D 제작을 이어갈 수 있어요.",
+    "url": "https://www.meshy.ai/blog/new-meshy-workspace",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-11-20-1",
+    "service": "tripo",
+    "date": "2024.11.20",
+    "kind": "API",
+    "title": "text_to_model 스타일·auto_size 추가",
+    "summary": "text_to_model에 style 파라미터가, 생성 API에 실제 크기 자동 조정 auto_size가 추가됐어요. 변환 옵션도 유연해졌어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-8-2024-11-20",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-11-14-1",
+    "service": "meshy",
+    "date": "2024.11.14",
+    "kind": "API",
+    "title": "Image to 3D API, base64 이미지 입력 지원",
+    "summary": "Image to 3D API가 base64로 인코딩한 이미지를 입력으로 받게 됐어요. 이미지를 따로 호스팅하지 않아도 바로 요청할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2024",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-11-12-1",
+    "service": "tripo",
+    "date": "2024.11.12",
+    "kind": "API",
+    "title": "이미지 입력에 URL 지원",
+    "summary": "image_to_model과 multiview_to_model이 이미지 URL을 입력으로 받게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-7-2024-11-12",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-11-11-1",
+    "service": "tripo",
+    "date": "2024.11.11",
+    "kind": "API",
+    "title": "texture_model 엔드포인트 추가",
+    "summary": "기존 모델에 텍스처를 입히는 texture_model 엔드포인트가 추가됐어요. 이미지 생성 스타일, 텍스처 정렬·품질 옵션, 멀티뷰 v2.0도 지원해요.",
+    "details": [
+      "image_to_model에 style 파라미터",
+      "multiview_to_model에 v2.0-20240919 지원",
+      "texture_alignment·texture_quality 추가"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-6-2024-11-11",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-10-12-1",
+    "service": "tripo",
+    "date": "2024.10.12",
+    "kind": "API",
+    "title": "3MF 변환 포맷 지원",
+    "summary": "모델 변환에서 3D 프린팅용 3mf 포맷을 지원하게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-5-2024-10-12",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-09-19-1",
+    "service": "tripo",
+    "date": "2024.09.19",
+    "kind": "모델",
+    "title": "Tripo v2.0 알고리즘 공개",
+    "summary": "완전히 새로운 생성 알고리즘 v2.0-20240919가 API에 추가됐어요. 마지막 확인 이후 작업을 한꺼번에 보는 기능과 convert의 scale_factor도 생겼어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-4-2024-09-19",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-09-02-1",
+    "service": "tripo",
+    "date": "2024.09.02",
+    "kind": "API",
+    "title": "Multiview to Model·잔액 조회 추가",
+    "summary": "여러 장의 이미지로 3D를 만드는 Multiview to Model과 잔액 확인 엔드포인트가 추가됐어요. 후처리 파라미터도 늘었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-2-2024-09-02",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-08-22-1",
+    "service": "meshy",
+    "date": "2024.08.22",
+    "kind": "모델",
+    "title": "Meshy-4 공개",
+    "summary": "지오메트리 품질과 작업 흐름을 크게 개선한 3D 생성 모델 Meshy-4를 공개했어요. 더 깔끔한 메시로 실제 제작에 쓰기 쉬워졌어요.",
+    "url": "https://www.meshy.ai/blog/meshy-4-break-grounds",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-07-30-1",
+    "service": "tripo",
+    "date": "2024.07.30",
+    "kind": "API",
+    "title": "모델 스트리밍 조회·model_version 도입",
+    "summary": "생성된 모델을 스트리밍으로 받는 방식이 추가됐어요. 모델 지정 필드가 model_version으로 바뀌고 오류 코드가 단순해졌어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-2-2024-07-30",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-07-23-1",
+    "service": "meshy",
+    "date": "2024.07.23",
+    "kind": "앱",
+    "title": "Meshy, Apple Vision Pro 앱 출시",
+    "summary": "Apple Vision Pro용 Meshy 앱을 선보였어요. 커뮤니티가 만든 수천 개의 3D 모델을 내 공간에 띄우고 꾸밀 수 있어요.",
+    "url": "https://www.meshy.ai/blog/meshy-apple-vision-pro",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-07-09-1",
+    "service": "tripo",
+    "date": "2024.07.09",
+    "kind": "API",
+    "title": "드래프트 생성 모델 버전 선택 지원",
+    "summary": "여러 엔드포인트에 새 파라미터가 추가되고, 드래프트 생성에서 모델 버전을 고를 수 있게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-1-2024-07-09",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-07-03-1",
+    "service": "meshy",
+    "date": "2024.07.03",
+    "kind": "모델",
+    "title": "Meshy-3 Turbo 공개",
+    "summary": "Meshy-3을 바탕으로 더 빠르고 강력해진 Meshy-3 Turbo를 공개했어요. 3D 생성과 애니메이션 작업 속도를 높이는 두 가지 큰 개선이 들어갔어요.",
+    "url": "https://www.meshy.ai/blog/meshy-3-turbo-accelerating-creativity",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-05-06-1",
+    "service": "tripo",
+    "date": "2024.05.06",
+    "kind": "API",
+    "title": "애니메이션 API 3개로 분리",
+    "summary": "Tripo API 1.1.0에서 애니메이션 API가 세 개의 엔드포인트로 나뉘었어요. 스타일화·변환의 콜백은 폴링 방식으로 바뀌었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-0-2024-05-06",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-04-30-1",
+    "service": "meshy",
+    "date": "2024.04.30",
+    "kind": "모델",
+    "title": "Meshy-3 공개: 조각 스타일·PBR·Image to 3D",
+    "summary": "서비스 1주년에 맞춰 Meshy-3을 공개했어요. Text to 3D가 좋아졌고, PBR 텍스처와 새로운 Image to 3D 파이프라인이 추가됐어요.",
+    "details": [
+      "Text to 3D 품질 개선",
+      "PBR 맵 생성 지원",
+      "새 Image to 3D 파이프라인"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy3-sculptures-pbr-and-image-to-3d",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-04-08-1",
+    "service": "tripo",
+    "date": "2024.04.08",
+    "kind": "요금",
+    "title": "Tripo API 1.0, 첫 유료 요금제 도입",
+    "summary": "Tripo API 1.0과 함께 첫 API 과금 플랜이 도입됐어요. 요금표와 FAQ도 공개됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-0-0-2024-04-08",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-03-21-1",
+    "service": "meshy",
+    "date": "2024.03.21",
+    "kind": "모델",
+    "title": "Meshy-2.5 공개, Text to 3D 품질 향상",
+    "summary": "Meshy-2 출시 한 달 만에 Meshy-2.5를 공개했어요. Text to 3D 품질을 높이고 제작을 편하게 해 주는 도구들을 추가했어요.",
+    "url": "https://www.meshy.ai/blog/meshy-2.5-text-to-3d-enhancements",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-02-27-1",
+    "service": "tripo",
+    "date": "2024.02.27",
+    "kind": "API",
+    "title": "Tripo API 0.2.0-beta, 엔드포인트 개편",
+    "summary": "새 API 버전으로 엔드포인트가 바뀌고 문서가 개선됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-2-0-beta-2024-02-27",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2024-02-05-1",
+    "service": "meshy",
+    "date": "2024.02.05",
+    "kind": "모델",
+    "title": "Meshy-2 공개",
+    "summary": "Text to 3D 품질을 크게 끌어올린 Meshy-2를 공개했어요. 개선된 웹 앱과 작품을 공유하고 배울 수 있는 커뮤니티도 함께 선보였어요.",
+    "url": "https://www.meshy.ai/blog/introducing-meshy-2",
+    "source": "notice"
+  },
+  {
+    "id": "tripo-2024-01-09-1",
+    "service": "tripo",
+    "date": "2024.01.09",
+    "kind": "API",
+    "title": "Image to 3D API 첫 출시",
+    "summary": "Tripo API 0.1.1-beta에서 이미지로 3D 모델을 만드는 Image to 3D API가 처음 나왔어요. 표현식 파싱과 API 스키마도 개선됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-1-1-beta-2024-01-09",
+    "source": "dev"
+  },
+  {
+    "id": "tripo-2024-01-03-1",
+    "service": "tripo",
+    "date": "2024.01.03",
+    "kind": "API",
+    "title": "Tripo API 첫 베타 버전 공개",
+    "summary": "Tripo의 첫 OpenAPI 버전(0.1.0-beta)이 공개됐어요. 개발자가 Tripo의 3D 생성 기능을 자체 서비스에 붙일 수 있게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-1-0-beta-2024-01-03",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2023-11-15-1",
+    "service": "meshy",
+    "date": "2023.11.15",
+    "kind": "연동",
+    "title": "Meshy, Snap Lens Studio와 파트너십",
+    "summary": "Snap Lens Fest에서 Meshy와 Lens Studio의 협업이 발표됐어요. Lens Studio 5.0 Beta 안에서 Meshy로 3D 머티리얼을 바로 생성해 AR 제작에 쓸 수 있어요.",
+    "url": "https://www.meshy.ai/blog/meshy-and-lens-studio-join-forces-to-shape-the-future-of-3d-ar",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2023-10-19-1",
+    "service": "meshy",
+    "date": "2023.10.19",
+    "kind": "모델",
+    "title": "Meshy-1 공개",
+    "summary": "텍스트와 이미지를 1분 안에 3D 모델로 바꿔 주는 생성 AI Meshy-1을 공개했어요. 누구나 빠르게 3D 에셋을 만들 수 있게 하는 것이 목표예요.",
+    "url": "https://www.meshy.ai/blog/meshy-1-generate-3d-models-with-ai-in-just-a-minute",
+    "source": "notice"
+  }
+]

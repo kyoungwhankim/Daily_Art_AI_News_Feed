@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-03-02-1",
+    "service": "heygen",
+    "date": "2026.03.02",
+    "kind": "연동",
+    "title": "fal에서 HeyGen 영상 기능 제공",
+    "summary": "개발자용 생성 미디어 플랫폼 fal에서 HeyGen의 Video Agent, 이미지→영상, 영상 번역, Digital Twin(Avatar 3·4)을 쓸 수 있게 됐어요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-is-now-live-on-fal",
+    "source": "notice"
+  }
+]

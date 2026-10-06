@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-06-27-1",
+    "service": "claude",
+    "date": "2024.06.27",
+    "kind": "기능",
+    "title": "Console 사용량·비용·속도 제한 탭",
+    "summary": "Developer Console에 금액·토큰·API 키별 Usage·Cost 탭과 현재 속도 제한을 보여 주는 탭이 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-27th-2024",
+    "source": "dev"
+  }
+]

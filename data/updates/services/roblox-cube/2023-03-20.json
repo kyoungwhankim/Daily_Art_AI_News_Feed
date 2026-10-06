@@ -1,0 +1,22 @@
+[
+  {
+    "id": "roblox-cube-2023-03-20-1",
+    "service": "roblox-cube",
+    "date": "2023.03.20",
+    "kind": "기능",
+    "title": "Code Assist 베타: AI 코드 자동 완성",
+    "summary": "Studio 스크립트 편집기에서 입력 중인 코드와 주석을 바탕으로 다음 줄이나 함수를 제안하는 AI 도우미 Code Assist가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/code-assist-beta-ai-powered-code-completion/2224387",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2023-03-20-2",
+    "service": "roblox-cube",
+    "date": "2023.03.20",
+    "kind": "기능",
+    "title": "Material Generator 베타",
+    "summary": "텍스트 문구로 재질 변형(Material Variant)을 몇 초 만에 만들어 씬에서 바로 미리 볼 수 있는 Material Generator가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/material-generator-beta/2224446",
+    "source": "notice"
+  }
+]

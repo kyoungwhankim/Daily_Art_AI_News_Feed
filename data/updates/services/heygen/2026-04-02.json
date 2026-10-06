@@ -1,0 +1,22 @@
+[
+  {
+    "id": "heygen-2026-04-02-1",
+    "service": "heygen",
+    "date": "2026.04.02",
+    "kind": "연동",
+    "title": "HeyGen Avatar Shot 출시: Seedance 2.0으로 시네마틱 장면",
+    "summary": "Seedance 2.0 기반 Avatar Shot으로 내 Digital Twin을 어떤 장면에든 배우처럼 넣어 역동적인 영상을 만들 수 있어요. 여러 캐릭터도 지원해요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-x-seedance-2-0-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-04-02-2",
+    "service": "heygen",
+    "date": "2026.04.02",
+    "kind": "연동",
+    "title": "HeyGen x Gamma 연동: 프레젠테이션 영상",
+    "summary": "Gamma 연동으로 프롬프트나 문서에서 아바타가 설명하는 프레젠테이션 영상을 HeyGen 안에서 바로 만들 수 있어요. PPT·PPTX·PDF를 지원해요.",
+    "url": "https://heygen.noticeable.news/publications/new-heygen-x-gamma-integration",
+    "source": "notice"
+  }
+]

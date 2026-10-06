@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-02-18-1",
+    "service": "scenario",
+    "date": "2023.02.18",
+    "kind": "기능",
+    "title": "갤러리 UI 개선: 고정 헤더·진행 표시",
+    "summary": "그리드 헤더가 스크롤해도 상단에 고정되고 진행 표시줄이 개선되는 등 사용성이 다듬어졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-february-18-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-02-28-1",
+    "service": "meshy",
+    "date": "2026.02.28",
+    "kind": "API",
+    "title": "remove_lighting 추가·Retexture Meshy 6 지원",
+    "summary": "베이스 컬러 텍스처의 하이라이트와 그림자를 지우는 remove_lighting이 추가됐어요. Retexture와 Text to 3D Refine은 meshy-6 텍스처링을 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2026",
+    "source": "dev"
+  }
+]

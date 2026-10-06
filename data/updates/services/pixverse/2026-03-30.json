@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pixverse-2026-03-30-1",
+    "service": "pixverse",
+    "date": "2026.03.30",
+    "kind": "모델",
+    "title": "PixVerse V6 출시: 카메라·연기·멀티샷 영상 개선",
+    "summary": "플래그십 모델 V6를 출시했어요. 카메라 워크와 캐릭터 감정 연기가 좋아졌고, 프롬프트 하나로 네이티브 오디오가 있는 멀티샷 단편을 만들 수 있어요.",
+    "details": [
+      "영어·중국어 등 화면 속 다국어 텍스트 생성",
+      "액션·스타일 이펙트의 프레임 간 일관성 향상",
+      "CLI로 Claude Code·Codex·Cursor 등 에이전트에서 사용"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-launches-v6-advancing-ai-video-generation",
+    "source": "notice"
+  }
+]

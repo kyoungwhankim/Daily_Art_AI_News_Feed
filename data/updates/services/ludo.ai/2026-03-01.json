@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ludo.ai-2026-03-01-1",
+    "service": "ludo.ai",
+    "date": "2026.03.01",
+    "kind": "기능",
+    "title": "애니메이션 사이 연결 클립·Pose Generator 개편",
+    "summary": "두 애니메이션을 잇는 전환 클립을 만들 수 있고, Pose Generator가 자세 변경과 회전 모드로 개편됐어요.",
+    "details": [
+      "Generate Transition·After·Before로 연결 클립 생성",
+      "Change Pose·Rotate Sprite 모드",
+      "Animation Pack·Sequence 내보내기 도구"
+    ],
+    "url": "https://ludo.ai/whats-new#generate-sequences-between-animations",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-03-06-1",
+    "service": "elevenlabs",
+    "date": "2024.03.06",
+    "kind": "API",
+    "title": "ElevenLabs Speech-to-Speech API 공개",
+    "summary": "음성 변환 Speech-to-Speech API를 누구나 쓸 수 있게 공개했어요.",
+    "url": "https://elevenlabs.io/blog/speech-to-speech-api-public-release",
+    "source": "dev"
+  }
+]

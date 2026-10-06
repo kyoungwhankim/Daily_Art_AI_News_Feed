@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-11-24-1",
+    "service": "meshy",
+    "date": "2025.11.24",
+    "kind": "API",
+    "title": "리메시 전 원본 모델 저장 옵션",
+    "summary": "Image to 3D와 Multi-Image to 3D에 save_pre_remeshed_model이 추가돼 리메시 전 GLB를 따로 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  }
+]

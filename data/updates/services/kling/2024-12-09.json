@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-12-09-1",
+    "service": "kling",
+    "date": "2024.12.09",
+    "kind": "API",
+    "title": "API에 Video V1.5 Std 모델 공개",
+    "summary": "Kling API에서 V1.5 모델을 Standard 모드로도 쓸 수 있게 됐어요. 이미지-투-비디오만 지원하고 끝 프레임 제어는 아직 없어요.",
+    "url": "https://kling.ai/document-api/updates/api#12%2F09%2F2024",
+    "source": "dev"
+  }
+]

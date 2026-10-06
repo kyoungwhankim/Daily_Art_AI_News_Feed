@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2026-07-29-1",
+    "service": "dream-machine",
+    "date": "2026.07.29",
+    "kind": "기능",
+    "title": "Layers 출시: 이미지를 레이어로 분해해 편집",
+    "summary": "Uni-1 기반 Layers가 이미지를 객체·텍스트·배경 레이어로 생성하거나 업로드한 이미지를 레이어로 분해해 줘요. 한 요소만 바꾸고 나머지는 그대로 둘 수 있어요.",
+    "details": [
+      "제품 교체, 배경 리스타일, 단일 객체 재생성",
+      "카피·폰트 색 변경, 커스텀 폰트 지원"
+    ],
+    "url": "https://lumalabs.ai/news/introducing-layers",
+    "source": "notice"
+  }
+]

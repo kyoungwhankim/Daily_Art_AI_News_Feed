@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-20-1",
+    "service": "runway",
+    "date": "2026.07.20",
+    "kind": "기능",
+    "title": "Runway MCP에 Nano Banana 2 추가",
+    "summary": "Runway MCP에서 Nano Banana 2로 1K·2K·4K 이미지를 이미지당 7크레딧에 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

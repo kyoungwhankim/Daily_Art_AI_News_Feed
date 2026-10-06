@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-01-22-1",
+    "service": "flow-studio",
+    "date": "2024.01.22",
+    "kind": "기능",
+    "title": "Wonder Studio, 실사 카메라 트래킹 매칭",
+    "summary": "Live Action 프로젝트에서 실제 카메라 움직임을 3D 가상 카메라에 자동으로 맞춰요. AI MoCap 내보내기에 카메라 트래킹과 별도 카메라 FBX도 포함돼요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

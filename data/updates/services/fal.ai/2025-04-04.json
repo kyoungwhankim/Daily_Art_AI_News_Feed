@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-04-04-1",
+    "service": "fal.ai",
+    "date": "2025.04.04",
+    "kind": "모델",
+    "title": "Sync Labs Lipsync 2.0 fal 제공",
+    "summary": "추가 학습 없이 화자 스타일을 유지하는 제로샷 영상 립싱크 모델 Lipsync 2.0이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/sync-labs-lipsync-2-0-model-now-available-on-fal/",
+    "source": "notice"
+  }
+]

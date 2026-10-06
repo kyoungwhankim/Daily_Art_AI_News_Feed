@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2026-06-02-1",
+    "service": "rokoko",
+    "date": "2026.06.02",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.6.1, Coil Pro 안정화 필터",
+    "summary": "장갑과 슈트 데이터를 더 잘 맞춰 자세를 바로잡는 Coil Pro Stabilization 필터가 추가됐고, OptiTrack Motive 라이브스트리밍 타깃도 생겼어요.",
+    "details": [
+      "Coil Pro 자세 균형 필터(Coil Pro+Smartsuit 시 자동)",
+      "Smartgloves II 버튼으로 원격 캘리브레이션",
+      "버튼 동작이 녹화·캘리브레이션 지연 설정 반영",
+      "OptiTrack Motive 장갑 스트리밍 타깃"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/47316328335377-Rokoko-Studio-2-6-1-Coil-Pro-Stabilization-Filter",
+    "source": "dev"
+  }
+]

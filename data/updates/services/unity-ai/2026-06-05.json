@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2026-06-05-1",
+    "service": "unity-ai",
+    "date": "2026.06.05",
+    "kind": "연동",
+    "title": "AI Assistant 2.11: 원격 MCP 서버(Streamable HTTP)",
+    "summary": "AI Assistant 2.11.0에서 mcp.json에 원격 MCP 서버를 HTTP로 설정할 수 있게 됐고, 체크포인트 복원 전에 영향받는 파일을 확인 창으로 보여 줘요.",
+    "details": [
+      "크레딧이 없어도 지난 대화 열람 가능",
+      "외부 에이전트 도구용 공개 API XML 문서"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2110-pre1---2026-06-05",
+    "source": "dev"
+  }
+]

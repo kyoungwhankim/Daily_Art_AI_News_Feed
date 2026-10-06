@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-12-03-1",
+    "service": "elevenlabs",
+    "date": "2024.12.03",
+    "kind": "API",
+    "title": "API 키별 크레딧 한도와 권한 설정",
+    "summary": "API 키마다 크레딧 한도와 기능별 접근 권한을 정해 비용을 관리할 수 있고, 워크스페이스 API 키에 읽기·쓰기 권한이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/3",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-03-31-1",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "종료",
+    "title": "Tripo BYOK 지원·SD 1.5·SDXL 엔드포인트 종료",
+    "summary": "새 기반 모델과 Tripo AI 자체 키(BYOK)를 지원해요. 레거시 SD 1.5·SDXL 엔드포인트는 최종 지원 중단됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-114-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-31-2",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "API",
+    "title": "LTX 2.3·Lyria 3 음악·xAI 영상",
+    "summary": "LTX 2.3, Lyria 3 음악, xAI 영상 모델이 추가되고 이미지 워크플로가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-31-3",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "연동",
+    "title": "MCP 클라이언트에서 3D·영상·오디오 보기",
+    "summary": "호환 MCP 클라이언트 안에서 3D 모델·영상·오디오를 바로 보고 다룰 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-5-0",
+    "source": "notice"
+  }
+]

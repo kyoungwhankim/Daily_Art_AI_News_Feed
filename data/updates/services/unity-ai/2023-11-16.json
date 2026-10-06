@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2023-11-16-1",
+    "service": "unity-ai",
+    "date": "2023.11.16",
+    "kind": "앱",
+    "title": "Unity Muse 얼리 액세스 출시(월 30달러)",
+    "summary": "Unite 2023에서 Chat·Sprite·Texture로 아이디어를 빠르게 다듬는 AI 도구 Unity Muse를 월 30달러 얼리 액세스로 내놓았어요. 얼리 액세스 동안 사용량 제한이 없어요.",
+    "details": [
+      "Behavior·Animate·Sketch는 프리릴리스로 공개, 2024년 정식 지원 예정",
+      "Unity 소유·라이선스 데이터로 처음부터 학습한 텍스처·스프라이트 모델",
+      "얼리 액세스 이후 저작권 침해 주장 시 Unity가 방어"
+    ],
+    "url": "https://unity.com/blog/news/unite-2023-keynote-game-development-unity-6",
+    "source": "notice"
+  }
+]

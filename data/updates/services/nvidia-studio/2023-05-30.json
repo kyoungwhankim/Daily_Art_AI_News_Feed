@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-05-30-1",
+    "service": "nvidia-studio",
+    "date": "2023.05.30",
+    "kind": "기능",
+    "title": "동시 장면 인코딩·5월 Studio 드라이버",
+    "summary": "여러 NVENC에 장면을 나눠 보내 영상 내보내기를 크게 줄이는 Simultaneous Scene Encoding이 소개되고 5월 Studio 드라이버가 나왔어요.",
+    "url": "https://blogs.nvidia.com/blog/computex-studio-laptops-encoding-capcut/",
+    "source": "notice"
+  }
+]

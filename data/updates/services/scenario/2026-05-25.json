@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-05-25-1",
+    "service": "scenario",
+    "date": "2026.05.25",
+    "kind": "기능",
+    "title": "Smart Reframe·Whisper 전사·오디오·영상 편집",
+    "summary": "지능형 이미지 리프레임, Whisper 음성 전사, 오디오·영상 자르기와 나누기 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.11.1",
+    "source": "notice"
+  }
+]

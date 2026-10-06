@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-09-21-1",
+    "service": "ludo.ai",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "Hydra 애니메이션 모델 기본 적용",
+    "summary": "스프라이트 하나와 짧은 프롬프트로 동작 전체를 순서대로 그려 내고 효과음까지 만드는 Hydra가 기본 모델이 됐어요.",
+    "url": "https://ludo.ai/whats-new#meet-hydra-animations-that-play-out-the-whole-action",
+    "source": "notice"
+  }
+]

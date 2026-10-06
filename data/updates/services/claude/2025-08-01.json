@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-01-1",
+    "service": "claude",
+    "date": "2025.08.01",
+    "kind": "기능",
+    "title": "Team·Enterprise 프로젝트 공유",
+    "summary": "Team·Enterprise 플랜에서 프로젝트 권한 설정과 조직 내 공유가 가능해졌어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

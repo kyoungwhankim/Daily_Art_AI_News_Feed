@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-12-27-1",
+    "service": "invokeai",
+    "date": "2023.12.27",
+    "kind": "기능",
+    "title": "InvokeAI 3.5.0: Workflow Library 추가",
+    "summary": "InvokeAI 3.5.0에서 워크플로를 이미지와 별개로 데이터베이스에 저장·정렬·필터링하는 Workflow Library가 생겼고, 앱에 기본 워크플로도 함께 제공돼요.",
+    "details": [
+      "노드 업데이트 기능 강화와 누락 노드 안내",
+      "노드용 커스텀 필드 타입",
+      "타일 업스케일 노드(베타)"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-v3-5-0/",
+    "source": "notice"
+  }
+]

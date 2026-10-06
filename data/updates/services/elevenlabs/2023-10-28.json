@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2023-10-28-1",
+    "service": "elevenlabs",
+    "date": "2023.10.28",
+    "kind": "기능",
+    "title": "ElevenLabs Projects 자동 음량 정규화",
+    "summary": "Projects(현 Studio)가 오디오북 유통사 기준에 맞춰 자동으로 음량을 정규화해 줘요.",
+    "url": "https://elevenlabs.io/blog/audio-normalization-in-projects",
+    "source": "notice"
+  }
+]

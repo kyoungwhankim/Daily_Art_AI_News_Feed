@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-07-16-1",
+    "service": "synthesia",
+    "date": "2021.07.16",
+    "kind": "기능",
+    "title": "Synthesia 배경 영상 길이 스크립트에 맞춤",
+    "summary": "배경 영상 속도를 자동으로 조절해 길이를 스크립트에 맞춰 줘요.",
+    "url": "https://www.synthesia.io/updates/match-to-script",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-02-10-1",
+    "service": "ltx-studio",
+    "date": "2026.02.10",
+    "kind": "기능",
+    "title": "Custom Styles를 Elements로 저장",
+    "summary": "나만의 비주얼 스타일을 Elements로 저장해 프로젝트 전체 생성에 일관되게 적용할 수 있어요. 복잡한 프롬프트가 필요 없어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

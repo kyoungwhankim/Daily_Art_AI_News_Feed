@@ -1,0 +1,27 @@
+[
+  {
+    "id": "runway-2026-07-30-1",
+    "service": "runway",
+    "date": "2026.07.30",
+    "kind": "API",
+    "title": "API 작업 비용 표시와 Model Router 용량 폴백 추가",
+    "summary": "API 응답에 작업별 크레딧 비용이 포함되고, 동시 실행 한도에 걸리면 Model Router가 다른 적합 모델로 자동 전환할 수 있어요. ElevenLabs v3 음성도 추가됐어요.",
+    "details": [
+      "작업 진행 중 예상 비용·완료 후 최종 비용 제공",
+      "모델별 용량 폴백 옵트인",
+      "Eleven v3: [laughs] 등 오디오 태그 지원, 50자당 1크레딧"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-07-30-2",
+    "service": "runway",
+    "date": "2026.07.30",
+    "kind": "종료",
+    "title": "API에서 Gen-3 Alpha Turbo·Gen-4 Aleph 지원 종료",
+    "summary": "Runway Dev에서 Gen-3 Alpha Turbo와 Gen-4 Aleph 모델 ID 요청이 더 이상 동작하지 않아요. Gen-4.5나 Gen-4 Turbo, Aleph 2.0으로 옮겨야 해요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#gen-3-alpha-turbo-and-gen-4-aleph-sunset",
+    "source": "dev"
+  }
+]

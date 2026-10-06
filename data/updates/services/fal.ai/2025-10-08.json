@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-08-1",
+    "service": "fal.ai",
+    "date": "2025.10.08",
+    "kind": "API",
+    "title": "async 없는 동기 Python 관리 클라이언트",
+    "summary": "CLI와 같은 API로 앱·러너·배포를 async/await 없이 관리하는 동기 Python 클라이언트가 나왔어요.",
+    "url": "https://fal.ai/docs/changelog#october-8-2025",
+    "source": "dev"
+  }
+]

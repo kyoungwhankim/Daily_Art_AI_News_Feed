@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-06-06-1",
+    "service": "meshy",
+    "date": "2025.06.06",
+    "kind": "기능",
+    "title": "Meshy, Text to Image 기능 추가",
+    "summary": "텍스트로 AI 이미지를 바로 만들어 3D 생성의 출발점으로 쓸 수 있는 기능을 추가했어요. 컨셉 이미지부터 3D까지 한 곳에서 이어갈 수 있어요.",
+    "url": "https://www.meshy.ai/blog/transform-text-into-ai-images-for-3d-creation",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-13-1",
+    "service": "scenario",
+    "date": "2026.01.13",
+    "kind": "API",
+    "title": "영상 이어붙이기·미디어 리사이즈 도구",
+    "summary": "미디어 크기 조정, 영상 연결, 이미지 여백 제거, 3D 포즈 제어 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-19-0",
+    "source": "notice"
+  }
+]

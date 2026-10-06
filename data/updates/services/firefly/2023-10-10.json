@@ -1,0 +1,16 @@
+[
+  {
+    "id": "firefly-2023-10-10-1",
+    "service": "firefly",
+    "date": "2023.10.10",
+    "kind": "모델",
+    "title": "Adobe MAX 2023: 새 Firefly 모델과 Generative Match",
+    "summary": "Adobe MAX에서 Firefly의 다음 단계 모델과 기능을 발표하고, 참조 이미지 스타일을 따라 생성하는 Generative Match(베타)를 내놓았어요. 초기 모델로 30억 장 이상이 생성됐어요.",
+    "details": [
+      "대부분의 Firefly 기능 결과물 상업적 이용 가능",
+      "Photoshop·Illustrator·Express·웹 앱에서 Firefly 사용"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2023/10/10/future-is-firefly-adobe-max",
+    "source": "notice"
+  }
+]

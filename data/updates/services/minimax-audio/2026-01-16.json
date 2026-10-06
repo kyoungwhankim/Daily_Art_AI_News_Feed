@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2026-01-16-1",
+    "service": "minimax-audio",
+    "date": "2026.01.16",
+    "kind": "모델",
+    "title": "MiniMax Music 2.5 출시",
+    "summary": "세부까지 지시하고 사실적인 소리를 내는 음악 모델 Music 2.5가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

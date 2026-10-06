@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-08-04-1",
+    "service": "hedra",
+    "date": "2026.08.04",
+    "kind": "API",
+    "title": "Hedra 개발자 플랫폼 공개: API·SDK·CLI·MCP",
+    "summary": "Hedra 자체 모델과 파트너 모델을 하나의 API와 하나의 청구서로 쓰는 개발자 플랫폼을 열었어요. 네이티브 SDK, CLI, MCP도 지원해 에이전트에서 바로 쓸 수 있어요.",
+    "url": "https://www.hedra.com/blog/hedra-for-developers-our-models-now-an-api",
+    "source": "notice"
+  }
+]

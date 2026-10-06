@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-19-1",
+    "service": "scenario",
+    "date": "2025.11.19",
+    "kind": "API",
+    "title": "OBJ·PBR·쿼드 생성, 워크플로 승인 노드",
+    "summary": "OBJ·PBR 텍스처·쿼드 메시 생성을 지원하고, 워크플로에 수동 확인을 받는 승인 노드가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-97-0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-08-12-1",
+    "service": "ludo.ai",
+    "date": "2026.08.12",
+    "kind": "기능",
+    "title": "Keyframe Animation: 시작·중간·끝 지정",
+    "summary": "첫·중간·마지막 프레임을 지정해 원하는 동작 흐름대로 스프라이트시트를 만드는 Keyframe Animation 탭이 생겼어요.",
+    "url": "https://ludo.ai/whats-new#keyframe-animation-direct-the-start-the-middle-and-the-end",
+    "source": "notice"
+  }
+]

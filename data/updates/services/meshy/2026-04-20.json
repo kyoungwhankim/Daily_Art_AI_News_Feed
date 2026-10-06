@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-20-1",
+    "service": "meshy",
+    "date": "2026.04.20",
+    "kind": "API",
+    "title": "4K 텍스처(hd_texture)·이미션 맵 추가",
+    "summary": "hd_texture를 켜면 베이스 컬러 텍스처를 4K로 만들 수 있어요(meshy-6). PBR 묶음에는 이미션 맵도 포함되기 시작했어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  }
+]

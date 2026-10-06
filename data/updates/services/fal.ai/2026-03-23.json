@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-23-1",
+    "service": "fal.ai",
+    "date": "2026.03.23",
+    "kind": "기능",
+    "title": "앱 개요에 러너 요약 카드",
+    "summary": "앱 개요 페이지에서 상태별 러너 수와 동시성 추세를 바로 볼 수 있는 요약 카드가 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#march-23-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-01-07-1",
+    "service": "kling",
+    "date": "2025.01.07",
+    "kind": "API",
+    "title": "Kling API에 V1.6 모델 정식 출시",
+    "summary": "Kling API에서 V1.6 영상 모델이 텍스트-투-비디오 STD, 이미지-투-비디오 STD·PRO 모드로 제공되기 시작했어요. 끝 프레임·모션 브러시 등은 아직 미지원이에요.",
+    "url": "https://kling.ai/document-api/updates/api#01%2F07%2F2025",
+    "source": "dev"
+  }
+]

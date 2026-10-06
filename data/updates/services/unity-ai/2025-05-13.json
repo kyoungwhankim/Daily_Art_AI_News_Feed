@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-05-13-1",
+    "service": "unity-ai",
+    "date": "2025.05.13",
+    "kind": "기능",
+    "title": "AI Assistant: 콘솔 첨부와 베타 백엔드 전환",
+    "summary": "AI Assistant 1.0.0-pre.4에서 콘솔 탭 내용을 첨부할 수 있고 베타 백엔드로 전환됐어요. 에디터가 일시정지된 상태에서도 Assistant를 쓸 수 있어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#100-pre4---2025-05-13",
+    "source": "dev"
+  }
+]

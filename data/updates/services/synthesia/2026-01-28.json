@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-01-28-1",
+    "service": "synthesia",
+    "date": "2026.01.28",
+    "kind": "기능",
+    "title": "Synthesia 감사 로그 출시",
+    "summary": "조직의 주요 작업을 시간순으로 기록한 감사 로그로 모니터링과 규정 준수를 지원해요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/analyze-workspace-activity-with-audit-logs",
+    "source": "notice"
+  }
+]

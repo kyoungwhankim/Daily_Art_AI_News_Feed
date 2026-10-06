@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-08-18-1",
+    "service": "runway",
+    "date": "2026.08.18",
+    "kind": "기능",
+    "title": "Workflows에 합성(Compositing) 노드 추가",
+    "summary": "이미지와 영상을 겹치고 블렌딩할 수 있는 합성 노드가 워크플로에 추가돼 모든 고객이 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

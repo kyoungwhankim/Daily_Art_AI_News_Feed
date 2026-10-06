@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2025-12-22-1",
+    "service": "kling",
+    "date": "2025.12.22",
+    "kind": "API",
+    "title": "Motion Control API 출시",
+    "summary": "Kling API에 레퍼런스 이미지와 영상을 함께 올려 동작을 옮기는 Motion Control이 추가됐어요. 표준 모드 초당 0.5, 고품질 모드 초당 0.8 points예요.",
+    "details": [
+      "캐릭터 방향이 레퍼런스 영상과 같으면 최대 30초, 이미지와 같으면 10초"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#12%2F22%2F2025",
+    "source": "dev"
+  }
+]

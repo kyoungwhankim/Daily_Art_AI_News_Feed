@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-02-16-1",
+    "service": "runway",
+    "date": "2024.02.16",
+    "kind": "기능",
+    "title": "에셋 페이지 영상 미리보기 스크럽",
+    "summary": "에셋 페이지에서 영상 위에 마우스를 올려 여러 프레임을 미리 볼 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

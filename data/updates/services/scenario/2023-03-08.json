@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-03-08-1",
+    "service": "scenario",
+    "date": "2023.03.08",
+    "kind": "API",
+    "title": "Swagger API 문서 생성 추가",
+    "summary": "API 문서를 위한 Swagger 생성이 추가되고 생성기 페이지에 뒤로 가기 버튼이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-3-0-march-8-2023",
+    "source": "notice"
+  }
+]

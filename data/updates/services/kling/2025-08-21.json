@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-08-21-1",
+    "service": "kling",
+    "date": "2025.08.21",
+    "kind": "기능",
+    "title": "KLING 2.1 시작·끝 프레임 지원",
+    "summary": "KLING 2.1에서 시작·끝 프레임을 지정해 영상을 만들 수 있게 됐어요. 1.6 대비 235% 향상된 성능이라고 밝혔어요.",
+    "url": "https://kling.ai/release-note/release-notes/2025082114",
+    "source": "notice"
+  }
+]

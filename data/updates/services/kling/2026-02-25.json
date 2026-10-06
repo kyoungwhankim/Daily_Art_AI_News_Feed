@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2026-02-25-1",
+    "service": "kling",
+    "date": "2026.02.25",
+    "kind": "API",
+    "title": "API에 3.0 Omni·V3 모델 출시, 요소 기능 업그레이드",
+    "summary": "Kling API에 영상·이미지용 3.0 Omni와 V3 모델이 나왔어요. 영상으로 요소를 만들고 목소리를 연결하는 새 요소 API(advanced-custom-elements)도 추가됐어요.",
+    "details": [
+      "요소 생성이 비동기 서비스로 변경",
+      "기존 요소 API는 계속 사용 가능하나 라이브러리는 별도"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#02%2F25%2F2026",
+    "source": "dev"
+  }
+]

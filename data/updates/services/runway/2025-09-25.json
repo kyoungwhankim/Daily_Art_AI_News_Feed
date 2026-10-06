@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-09-25-1",
+    "service": "runway",
+    "date": "2025.09.25",
+    "kind": "API",
+    "title": "Runway Dev에 ElevenLabs 음성 합성 추가",
+    "summary": "ElevenLabs Multilingual v2 Text to Speech를 API로 쓸 수 있어요. 29개 언어로 자연스러운 음성을 만들어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#text-to-speech",
+    "source": "dev"
+  }
+]

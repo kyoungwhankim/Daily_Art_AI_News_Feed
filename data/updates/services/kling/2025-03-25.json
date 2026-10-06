@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-03-25-1",
+    "service": "kling",
+    "date": "2025.03.25",
+    "kind": "API",
+    "title": "이미지 API V1.5에 얼굴·피사체 레퍼런스 추가",
+    "summary": "Kling 이미지 생성 API V1.5에서 얼굴 또는 피사체 전체를 레퍼런스로 지정해 캐릭터 외형을 일관되게 유지할 수 있게 됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#03%2F25%2F2025",
+    "source": "dev"
+  }
+]

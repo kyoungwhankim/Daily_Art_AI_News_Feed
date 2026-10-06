@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-23-1",
+    "service": "comfyui",
+    "date": "2025.08.23",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.52: Qwen ControlNet과 Python 3.13",
+    "summary": "ComfyUI v0.3.52에서 Qwen DiffSynth·InstantX ControlNet과 인페인트 패치를 지원하고, EasyCache·LazyCache와 Python 3.13 호환이 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-3-52",
+    "source": "notice"
+  }
+]

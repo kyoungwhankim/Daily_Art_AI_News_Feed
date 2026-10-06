@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-04-01-1",
+    "service": "fal.ai",
+    "date": "2026.04.01",
+    "kind": "기능",
+    "title": "분석 페이지 지연 백분위 차트",
+    "summary": "분석 페이지에 p50·p90·p95·p99 지연 시간 차트가 추가돼 지연 회귀를 한눈에 찾을 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#april-1-2026",
+    "source": "dev"
+  }
+]

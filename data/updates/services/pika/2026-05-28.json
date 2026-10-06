@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pika-2026-05-28-1",
+    "service": "pika",
+    "date": "2026.05.28",
+    "kind": "연동",
+    "title": "Pika MCP에 Founder Starter Kit 스킬 4종 추가",
+    "summary": "Pika MCP와 Skills Plugin에 브랜드 제작, 앱스토어 스크린샷, 15초 홍보 영상, 창업자 소개 영상을 만드는 스킬 4종을 추가했어요. 어떤 에이전트에서도 쓸 수 있어요.",
+    "details": [
+      "Build-a-brand: 브랜드 아이덴티티·전략·에셋 생성",
+      "App Store Screens: 앱 스크린샷 생성",
+      "App Sizzle Video: 15초 홍보 영상 생성",
+      "Founder video: 창업자 소개 영상 생성"
+    ],
+    "url": "https://pika.art/blog/founder-starter-kit",
+    "source": "notice"
+  }
+]

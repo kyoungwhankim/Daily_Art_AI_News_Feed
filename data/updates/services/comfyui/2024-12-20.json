@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-12-20-1",
+    "service": "comfyui",
+    "date": "2024.12.20",
+    "kind": "모델",
+    "title": "ComfyUI, HunyuanVideo 네이티브 지원",
+    "summary": "Tencent의 13B 파라미터 오픈소스 영상 모델 HunyuanVideo를 ComfyUI에서 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/hunyuanvideo-native-support-in-comfyui",
+    "source": "notice"
+  }
+]

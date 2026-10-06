@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-04-24-1",
+    "service": "scenario",
+    "date": "2025.04.24",
+    "kind": "기능",
+    "title": "프로젝트 직접 초대·Use Image 액션",
+    "summary": "새 멤버를 특정 프로젝트로 바로 초대할 수 있고, 모든 도구에서 Use image 액션을 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-84-new-invites-bug-fixes",
+    "source": "notice"
+  }
+]

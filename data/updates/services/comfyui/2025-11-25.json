@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfyui-2025-11-25-1",
+    "service": "comfyui",
+    "date": "2025.11.25",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX.2 출시 당일 지원",
+    "summary": "Black Forest Labs가 공개한 FLUX.2를 ComfyUI에서 로컬, API 노드, Comfy Cloud로 바로 쓸 수 있어요. 최대 4MP 사실적 출력과 최대 10장 참조 일관성을 지원해요.",
+    "details": [
+      "v0.3.72: FLUX.2 모델과 FLUX.2 Pro API 노드 지원",
+      "API 보안을 위한 Content Security Policy 헤더"
+    ],
+    "url": "https://blog.comfy.org/p/flux2-state-of-the-art-visual-intelligence",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-11-25-2",
+    "service": "comfyui",
+    "date": "2025.11.25",
+    "kind": "요금",
+    "title": "Comfy Cloud: Blackwell GPU, 자체 LoRA, 요금 변경",
+    "summary": "Comfy Cloud가 A100보다 약 2배 빠른 96GB VRAM RTX 6000 Pro Blackwell로 바뀌고, 직접 만든 LoRA를 올려 쓰는 기능과 요금 변경을 발표했어요.",
+    "url": "https://blog.comfy.org/p/comfy-cloud-new-features-and-pricing",
+    "source": "notice"
+  }
+]

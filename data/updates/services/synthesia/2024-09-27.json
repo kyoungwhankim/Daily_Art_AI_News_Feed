@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2024-09-27-1",
+    "service": "synthesia",
+    "date": "2024.09.27",
+    "kind": "API",
+    "title": "Synthesia API 영상·템플릿 목록 출처 필터",
+    "summary": "영상 목록과 템플릿 목록 엔드포인트에 출처(workspace, my_videos, shared_with_me, synthesia)를 지정하는 선택 파라미터가 추가됐어요.",
+    "url": "https://docs.synthesia.io/changelog/api-improvements",
+    "source": "dev"
+  }
+]

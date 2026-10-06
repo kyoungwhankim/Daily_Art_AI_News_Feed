@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-08-1",
+    "service": "runway",
+    "date": "2024.04.08",
+    "kind": "기능",
+    "title": "Gen-2에서 Custom Styles 사용",
+    "summary": "Gen-2에서 Custom Styles를 적용해 원하는 스타일로 영상을 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

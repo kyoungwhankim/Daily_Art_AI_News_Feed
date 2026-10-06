@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-09-1",
+    "service": "scenario",
+    "date": "2025.09.09",
+    "kind": "기능",
+    "title": "오디오 생성 도구 출시",
+    "summary": "텍스트 음성 변환과 효과음, 립싱크 등 AI 오디오 생성이 Scenario에 들어왔어요. ElevenLabs 등 모델을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v1-96-audio-generation-is-here",
+    "source": "notice"
+  }
+]

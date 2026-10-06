@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-06-12-1",
+    "service": "hugging-face",
+    "date": "2026.06.12",
+    "kind": "기능",
+    "title": "Enterprise 조직용 서비스 계정 도입",
+    "summary": "CI/CD·자동화 스크립트용으로 개인에 묶이지 않은 조직 소유 서비스 계정을 만들 수 있게 됐어요. fine-grained 토큰으로만 접근하고 리소스 그룹에도 추가할 수 있어요.",
+    "url": "https://huggingface.co/changelog/service-accounts",
+    "source": "notice"
+  }
+]

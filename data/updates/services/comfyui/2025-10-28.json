@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-10-28-1",
+    "service": "comfyui",
+    "date": "2025.10.28",
+    "kind": "연동",
+    "title": "ComfyUI, LTX-2 API 노드",
+    "summary": "동기화된 오디오와 함께 최대 4K 50fps 영상을 만드는 LTX-2(Pro·Fast)를 API 노드로 ComfyUI에서 쓸 수 있어요.",
+    "details": [
+      "v0.3.67: API 노드 네트워크 클라이언트 V2(비동기·취소 지원)",
+      "다차원 latent 지원"
+    ],
+    "url": "https://blog.comfy.org/p/ltx-2-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

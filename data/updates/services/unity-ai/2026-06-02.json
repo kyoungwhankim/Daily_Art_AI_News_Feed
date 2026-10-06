@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-06-02-1",
+    "service": "unity-ai",
+    "date": "2026.06.02",
+    "kind": "기능",
+    "title": "AI Assistant 2.10: 서브에이전트 UI",
+    "summary": "AI Assistant 2.10.0에서 서브에이전트를 보여 주는 UI가 추가되고, gltFast가 필수 의존성에서 빠졌어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2100-pre1---2026-06-02",
+    "source": "dev"
+  }
+]

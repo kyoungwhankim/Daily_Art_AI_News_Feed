@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-04-01-1",
+    "service": "elevenlabs",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "Video to Music 엔드포인트",
+    "summary": "영상 파일에서 배경음악을 만드는 video-to-music 엔드포인트와 URL로 바로 전사하는 STT 옵션이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/1",
+    "source": "dev"
+  }
+]

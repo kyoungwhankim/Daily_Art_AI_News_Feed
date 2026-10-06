@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-22-1",
+    "service": "comfyui",
+    "date": "2026.04.22",
+    "kind": "연동",
+    "title": "ComfyUI, GPT Image 2 API 노드",
+    "summary": "생성 전에 추론하는 OpenAI의 첫 이미지 모델 GPT Image 2를 API 노드로 쓸 수 있어요. 2K 출력과 정확한 글자, 8장 일관성을 지원해요.",
+    "url": "https://blog.comfy.org/p/gpt-image-2-is-now-here-via-partner",
+    "source": "notice"
+  }
+]

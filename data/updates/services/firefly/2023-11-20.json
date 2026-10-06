@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-11-20-1",
+    "service": "firefly",
+    "date": "2023.11.20",
+    "kind": "API",
+    "title": "Firefly API 최신 이미지 모델(v2) 기본 적용",
+    "summary": "x-api-variant 헤더를 v2로 지정해 최신 이미지 모델을 쓸 수 있고 기본값도 v2가 됐어요. API 문서에 스타일 가이드가 추가됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#november-20-2023",
+    "source": "dev"
+  }
+]

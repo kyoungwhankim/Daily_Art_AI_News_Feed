@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-08-01-1",
+    "service": "runway",
+    "date": "2025.08.01",
+    "kind": "API",
+    "title": "Runway Dev에 Aleph 제공",
+    "summary": "영상 편집·변환·생성 모델 Aleph를 API로 앱과 서비스에 통합할 수 있게 됐어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#aleph-on-runway-dev",
+    "source": "dev"
+  }
+]

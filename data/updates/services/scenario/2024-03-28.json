@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-03-28-1",
+    "service": "scenario",
+    "date": "2024.03.28",
+    "kind": "기능",
+    "title": "더 커진 스케치 도구",
+    "summary": "스케치 도구가 모달로 커졌고, 요금 주기 변경과 모든 파생 이미지의 전후 비교 슬라이더가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-50-bigger-sketch-tool",
+    "source": "notice"
+  }
+]

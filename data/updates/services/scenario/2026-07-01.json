@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-01-1",
+    "service": "scenario",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "3D 월드 모델·4K 영상 생성",
+    "summary": "새 3D 환경·모션 모델과 4K 영상 생성이 추가되고 웹훅 안정성이 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-4-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "dream-machine-2025-04-28-1",
+    "service": "dream-machine",
+    "date": "2025.04.28",
+    "kind": "API",
+    "title": "Luma API에 Camera Concepts 지원",
+    "summary": "API의 generations.create에 concepts 파라미터를 넣어 handheld 같은 카메라 컨셉을 Ray2 영상 생성에 적용할 수 있어요.",
+    "url": "https://docs.lumalabs.ai/changelog/concepts",
+    "source": "dev"
+  }
+]

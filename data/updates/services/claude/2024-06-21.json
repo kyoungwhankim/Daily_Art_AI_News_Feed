@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-06-21-1",
+    "service": "claude",
+    "date": "2024.06.21",
+    "kind": "모델",
+    "title": "Claude 3.5 Sonnet 출시",
+    "summary": "Claude 3 Opus를 넘어서는 성능을 두 배 속도로 내는 Claude 3.5 Sonnet이 나왔어요. claude.ai와 API, Amazon Bedrock, Vertex AI에서 쓸 수 있어요.",
+    "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+    "source": "notice"
+  }
+]

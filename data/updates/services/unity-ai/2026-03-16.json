@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-03-16-1",
+    "service": "unity-ai",
+    "date": "2026.03.16",
+    "kind": "기능",
+    "title": "AI Assistant 2.2: LLM 모델 선택",
+    "summary": "AI Assistant 2.2.0에서 사용할 LLM 모델을 고를 수 있게 되고, Generators 피드백 시스템과 프로젝트 의존성 그래프 생성이 추가됐어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#220-pre1---2026-03-16",
+    "source": "dev"
+  }
+]

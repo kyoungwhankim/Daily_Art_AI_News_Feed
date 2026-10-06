@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-10-25-1",
+    "service": "layer",
+    "date": "2024.10.25",
+    "kind": "모델",
+    "title": "FLUX 커스텀 스타일·Imagen 3 추가",
+    "summary": "FLUX 기반 커스텀 스타일 학습과 아이디어 구상용 Imagen 3 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-10-25",
+    "source": "notice"
+  }
+]

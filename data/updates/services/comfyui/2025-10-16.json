@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-10-16-1",
+    "service": "comfyui",
+    "date": "2025.10.16",
+    "kind": "연동",
+    "title": "ComfyUI, Veo 3.1 API 노드",
+    "summary": "Google DeepMind의 최신 영상 모델 Veo 3.1을 API 노드로 ComfyUI 워크플로에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/veo-31-is-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

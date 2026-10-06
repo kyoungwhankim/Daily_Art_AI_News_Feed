@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-24-1",
+    "service": "comfyui",
+    "date": "2026.04.24",
+    "kind": "기능",
+    "title": "Seedance 2.0 가상 인물·실제 인물 영상 생성",
+    "summary": "Seedance 2.0에서 AI 생성 인물이나 인증을 거친 실제 인물 사진으로 같은 얼굴이 유지되는 영상을 만들 수 있게 됐어요.",
+    "url": "https://blog.comfy.org/p/unlock-seedance20-real-human-video-generation",
+    "source": "notice"
+  }
+]

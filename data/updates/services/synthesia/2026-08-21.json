@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2026-08-21-1",
+    "service": "synthesia",
+    "date": "2026.08.21",
+    "kind": "기능",
+    "title": "Synthesia 번역 영상 레이아웃 자동 맞춤",
+    "summary": "번역 시 텍스트가 상자에 맞게 조정되고 긴 문장은 크기가 줄어 번역 영상의 슬라이드가 깔끔하게 유지돼요.",
+    "url": "https://www.synthesia.io/updates/keep-layouts-looking-polished-for-your-translated-videos",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-08-21-2",
+    "service": "synthesia",
+    "date": "2026.08.21",
+    "kind": "기능",
+    "title": "Synthesia 최대 10개 영상 일괄 더빙",
+    "summary": "영상 10개까지 한 번에 올려 언어와 옵션을 한 번만 설정하면 백그라운드에서 모두 더빙돼요.",
+    "url": "https://www.synthesia.io/updates/dub-multiple-videos-at-once-with-bulk-dubbing-uploads",
+    "source": "notice"
+  }
+]

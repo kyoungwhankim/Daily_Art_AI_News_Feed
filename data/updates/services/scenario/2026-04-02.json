@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-04-02-1",
+    "service": "scenario",
+    "date": "2026.04.02",
+    "kind": "연동",
+    "title": "Scenario, AI 에이전트에서 바로 사용 가능",
+    "summary": "Scenario MCP 서버로 Claude, Cursor 같은 AI 에이전트 안에서 바로 Scenario의 이미지·영상·3D 생성을 쓸 수 있게 됐다고 발표했어요.",
+    "url": "https://www.scenario.com/blog/Scenario-Is-Now-Available-Directly-in-Your-AI-Agent",
+    "source": "notice"
+  }
+]

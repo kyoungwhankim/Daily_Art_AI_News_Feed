@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-08-05-1",
+    "service": "invokeai",
+    "date": "2025.08.05",
+    "kind": "기능",
+    "title": "Invoke 6.3.0: FLUX Kontext 다중 참조 이미지",
+    "summary": "Invoke 6.3.0에서 FLUX Kontext에 여러 참조 이미지를 넣을 수 있게 됐고, 생성 설정·캔버스 등 스튜디오 상태가 데이터베이스에 저장돼요.",
+    "url": "https://invoke.ai/releases/version/v6-3-0/",
+    "source": "notice"
+  }
+]

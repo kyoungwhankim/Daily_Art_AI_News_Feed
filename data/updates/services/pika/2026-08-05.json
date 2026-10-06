@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pika-2026-08-05-1",
+    "service": "pika",
+    "date": "2026.08.05",
+    "kind": "API",
+    "title": "Pika API Club 출시: 100여 개 생성 모델을 하나의 API로",
+    "summary": "월 10달러 멤버십으로 영상·이미지·오디오·LLM 등 100개 이상 모델을 하나의 API로 쓰는 Pika API Club을 열었어요. 다른 애그리게이터보다 최대 88% 저렴하다고 해요.",
+    "details": [
+      "Seedance 2.0, MiniMax H3, Kling 3.0, Veo 3.1, Pika 2.5 등 영상 모델",
+      "GPT Image 2, Seedream, Nano Banana 등 이미지 모델",
+      "신규 회원에게 첫 달 10달러 크레딧"
+    ],
+    "url": "https://pika.art/blog/pika-api-club",
+    "source": "notice"
+  }
+]

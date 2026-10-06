@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-16-1",
+    "service": "runway",
+    "date": "2024.09.16",
+    "kind": "API",
+    "title": "Runway API 출시: Gen-3 Alpha Turbo",
+    "summary": "Gen-3 Alpha Turbo를 앱과 서비스에 통합할 수 있는 Runway API를 내놨어요. 안전하고 안정적인 환경에서 최신 영상 모델을 쓸 수 있어요.",
+    "url": "https://runway.com/news/introducing-the-runway-api",
+    "source": "dev"
+  }
+]

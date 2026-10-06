@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pika-2026-08-14-1",
+    "service": "pika",
+    "date": "2026.08.14",
+    "kind": "모델",
+    "title": "Pika Audio 공개: 자체 오디오 모델 4종",
+    "summary": "Pika의 첫 오디오 파운데이션 모델 제품군 Pika Audio를 공개했어요. Soundtrack·Music·SFX·Speech 4종이며 Pika API Club에서 다른 오디오 모델보다 최대 20배 저렴하게 쓸 수 있어요.",
+    "details": [
+      "Soundtrack: 영상에 맞춘 효과음·음악·음성 생성",
+      "Music: 프롬프트·가사·보이스로 노래 생성",
+      "SFX: 텍스트로 효과음 생성",
+      "Speech: 프리셋 음성·보이스 클론 TTS"
+    ],
+    "url": "https://pika.art/blog/pika-audio-models",
+    "source": "notice"
+  }
+]

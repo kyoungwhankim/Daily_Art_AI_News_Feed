@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2026-01-06-1",
+    "service": "iclone",
+    "date": "2026.01.06",
+    "kind": "요금",
+    "title": "iClone 8.65, 구독형 라이선스 도입",
+    "summary": "iClone에 구독 기반 라이선스가 추가됐어요. DA 포인트 잔액 새로고침, AccuPOSE Core 일부 무료 에셋 내장 등도 들어갔어요.",
+    "details": [
+      "구독형 라이선스",
+      "DA 포인트 잔액 새로고침",
+      "AccuPOSE Core 일부 에셋 무료 내장",
+      "프로그레시브 텍스처 로딩 최대 100%"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

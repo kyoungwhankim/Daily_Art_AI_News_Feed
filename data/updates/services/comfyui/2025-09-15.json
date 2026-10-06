@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-09-15-1",
+    "service": "comfyui",
+    "date": "2025.09.15",
+    "kind": "앱",
+    "title": "Comfy Cloud 비공개 베타",
+    "summary": "설치나 GPU 없이 브라우저에서 바로 ComfyUI를 쓰는 Comfy Cloud를 비공개 베타로 공개했어요. 모델이 미리 준비돼 있고 강력한 GPU에서 빠르게 돌아가요.",
+    "url": "https://blog.comfy.org/p/comfy-cloud",
+    "source": "notice"
+  }
+]

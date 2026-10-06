@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-07-21-1",
+    "service": "scenario",
+    "date": "2025.07.21",
+    "kind": "기능",
+    "title": "Generate in Parts: 파츠별 3D 생성",
+    "summary": "이미지 한 장을 의미 있는 여러 3D 파츠로 나눠 한 번에 만드는 Generate in Parts가 나왔어요. PartCrafter 모델을 써요.",
+    "url": "https://www.scenario.com/changelog/v1-91-1-generate-in-parts-a-new-standard-for-image-to-3d",
+    "source": "notice"
+  }
+]

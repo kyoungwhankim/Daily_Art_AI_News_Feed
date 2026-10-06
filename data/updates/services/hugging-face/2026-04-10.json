@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-04-10-1",
+    "service": "hugging-face",
+    "date": "2026.04.10",
+    "kind": "요금",
+    "title": "PRO 사용자 ZeroGPU 초과 사용 허용",
+    "summary": "PRO 사용자는 일일 포함량을 넘겨도 선불 크레딧으로 ZeroGPU Space를 계속 쓸 수 있게 됐어요. 초과 사용 요금은 10분당 1달러예요.",
+    "url": "https://huggingface.co/changelog/zerogpu-overquota",
+    "source": "notice"
+  }
+]

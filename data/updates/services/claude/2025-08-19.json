@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-19-1",
+    "service": "claude",
+    "date": "2025.08.19",
+    "kind": "API",
+    "title": "오류 응답 본문에 요청 ID 포함",
+    "summary": "오류 응답 본문에 request ID가 직접 포함돼 디버깅이 쉬워졌어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
+    "source": "dev"
+  }
+]

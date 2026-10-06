@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-09-04-1",
+    "service": "runway",
+    "date": "2026.09.04",
+    "kind": "요금",
+    "title": "소규모 팀용 Team 플랜 출시",
+    "summary": "작은 팀을 위한 셀프서브 Team 플랜이 나왔어요. 좌석마다 월 6,900크레딧이 공용 풀에 더해지고 최대 9명이 한 워크스페이스에서 함께 작업할 수 있어요.",
+    "details": [
+      "1TB 스토리지, 공유 프로젝트",
+      "생성물 댓글, 에이전트 스킬 공유, Agent와 외부 도구 연결"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-team-plan",
+    "source": "notice"
+  }
+]

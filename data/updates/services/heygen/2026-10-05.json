@@ -1,0 +1,26 @@
+[
+  {
+    "id": "heygen-2026-10-05-1",
+    "service": "heygen",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "HeyGen Video 2K 렌더와 Enterprise 요청 한도 상향",
+    "summary": "HeyGen Video API가 2K 해상도를 지원해요(768p의 3배 요금). Enterprise API 플랜의 요청 속도 한도도 크게 올렸어요.",
+    "details": [
+      "읽기 분당 1,000회, 쓰기 초당 30회",
+      "429 응답에 X-RateLimit 헤더 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-video-2k",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-05-2",
+    "service": "heygen",
+    "date": "2026.10.05",
+    "kind": "연동",
+    "title": "HeyGen Voices에 ElevenLabs v4 지원",
+    "summary": "ElevenLabs의 가장 표현력 높은 TTS 모델 v4를 HeyGen Voices에서 고를 수 있게 됐어요. 긴 스크립트에서도 톤과 속도가 일정해요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-voices-now-supports-elevenlabs-v4",
+    "source": "notice"
+  }
+]

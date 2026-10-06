@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-04-09-1",
+    "service": "synthesia",
+    "date": "2021.04.09",
+    "kind": "기능",
+    "title": "Synthesia 그리드 스냅",
+    "summary": "그리드에 맞춰 요소를 정확히 배치할 수 있는 Snap to Grid를 추가했어요.",
+    "url": "https://www.synthesia.io/updates/snap-to-grid",
+    "source": "notice"
+  }
+]

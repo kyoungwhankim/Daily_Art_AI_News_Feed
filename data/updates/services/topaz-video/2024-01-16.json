@@ -1,0 +1,16 @@
+[
+  {
+    "id": "topaz-video-2024-01-16-1",
+    "service": "topaz-video",
+    "date": "2024.01.16",
+    "kind": "앱",
+    "title": "Topaz Video AI v4.1.0: Proteus v4·Iris LQ v2·Nyx Fast",
+    "summary": "노이즈·압축 처리와 얼굴 개선이 좋아진 Proteus v4, 디테일이 나아진 Iris LQ v2, 두 배 빠른 Nyx Fast 모델을 추가했어요.",
+    "details": [
+      "EXR·DPX 지원 재구축",
+      "AVX2 필수 요건 제거"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v4-1-0/60576",
+    "source": "notice"
+  }
+]

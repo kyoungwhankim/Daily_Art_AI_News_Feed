@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-01-07-1",
+    "service": "comfyui",
+    "date": "2026.01.07",
+    "kind": "모델",
+    "title": "ComfyUI v0.8.0: LTXV 2와 NVFP4 체크포인트",
+    "summary": "ComfyUI v0.8.0에서 LTXV 2 모델과 NVFP4 체크포인트, Sage Attention 3를 지원하고, V3 API에 DynamicCombo·Autogrow를 공개했어요.",
+    "details": [
+      "Kling Omni 720p, WAN2.6 ReferenceToVideo API 노드",
+      "OOM 메모리 요약 출력"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-8-0",
+    "source": "notice"
+  }
+]

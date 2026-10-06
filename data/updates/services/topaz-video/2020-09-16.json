@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2020-09-16-1",
+    "service": "topaz-video",
+    "date": "2020.09.16",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.6.0: 영상 입출력 엔진 재작성",
+    "summary": "영상 입출력 백엔드를 새로 써서 오디오 싱크, 프레임 누락 문제를 줄였어요. MP4 비트레이트 설정과 Theia 모델 개선도 포함돼요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-6-0/16549",
+    "source": "notice"
+  }
+]

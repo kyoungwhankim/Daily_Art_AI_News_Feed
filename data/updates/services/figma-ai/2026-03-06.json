@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-03-06-1",
+    "service": "figma-ai",
+    "date": "2026.03.06",
+    "kind": "연동",
+    "title": "GitHub Copilot에서 Figma로 UI 전송",
+    "summary": "GitHub Copilot 사용자가 Figma MCP 서버에 연결해 렌더링된 UI를 편집 가능한 프레임으로 캔버스에 보낼 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=github-copilot-to-figma",
+    "source": "notice"
+  }
+]

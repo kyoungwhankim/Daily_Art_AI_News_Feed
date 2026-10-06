@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-03-1",
+    "service": "scenario",
+    "date": "2023.11.03",
+    "kind": "기능",
+    "title": "SDXL 생성기 배지·Foundation 탭",
+    "summary": "SDXL 생성기에 유형 배지와 필터가 생기고, 새 Foundation 탭과 카테고리별 NSFW 필터 설정이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-37-november-3rd-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-05-06-1",
+    "service": "tripo",
+    "date": "2024.05.06",
+    "kind": "API",
+    "title": "애니메이션 API 3개로 분리",
+    "summary": "Tripo API 1.1.0에서 애니메이션 API가 세 개의 엔드포인트로 나뉘었어요. 스타일화·변환의 콜백은 폴링 방식으로 바뀌었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-0-2024-05-06",
+    "source": "dev"
+  }
+]

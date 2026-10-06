@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-02-24-1",
+    "service": "comfyui",
+    "date": "2026.02.24",
+    "kind": "연동",
+    "title": "ComfyUI, Seedream 5.0 Lite 지원",
+    "summary": "웹 검색 정보를 활용하는 첫 Seedream 모델인 BytePlus Seedream 5.0 Lite를 API 노드로 쓸 수 있어요. 지시 이해와 일관성이 좋아졌어요.",
+    "details": [
+      "v0.15.0: Gemma3·Qwen3 기반 네이티브 텍스트 생성",
+      "PyOpenGL 기반 GLSL 셰이더 노드, 3밴드 이퀄라이저",
+      "ElevenLabs TTS·KlingAvatar API 노드",
+      "BBox 위젯, 위젯 429개를 고급 항목으로 접기"
+    ],
+    "url": "https://blog.comfy.org/p/seedream-50-lite-now-available-in",
+    "source": "notice"
+  }
+]

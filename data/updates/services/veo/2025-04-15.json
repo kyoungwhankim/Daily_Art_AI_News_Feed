@@ -1,0 +1,17 @@
+[
+  {
+    "id": "veo-2025-04-15-1",
+    "service": "veo",
+    "date": "2025.04.15",
+    "kind": "기능",
+    "title": "Gemini 앱과 Whisk에서 Veo 2 영상 생성 지원",
+    "summary": "Gemini Advanced 사용자가 Veo 2로 8초짜리 720p 영상을 만들 수 있게 됐고, Whisk Animate로 이미지를 영상으로 움직일 수 있어요.",
+    "details": [
+      "Gemini 모델 선택 메뉴에서 Veo 2 선택",
+      "8초, 720p, 16:9 MP4 출력, 월간 생성 한도 있음",
+      "Google One AI Premium 구독자 대상"
+    ],
+    "url": "https://blog.google/products-and-platforms/products/gemini/video-generation/",
+    "source": "notice"
+  }
+]

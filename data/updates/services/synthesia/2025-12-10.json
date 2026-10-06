@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2025-12-10-1",
+    "service": "synthesia",
+    "date": "2025.12.10",
+    "kind": "API",
+    "title": "Synthesia Dubbing API·Assets API 출시",
+    "summary": "영상을 여러 언어로 자동 번역·재녹음하는 Dubbing API와 입력 파일을 관리하는 Assets API를 출시했어요. 대용량 파일은 S3 멀티파트 업로드를 지원해요.",
+    "url": "https://docs.synthesia.io/changelog/new-dubbing-assets-apis",
+    "source": "dev"
+  }
+]

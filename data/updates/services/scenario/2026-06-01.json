@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-06-01-1",
+    "service": "scenario",
+    "date": "2026.06.01",
+    "kind": "연동",
+    "title": "MCP 진단 도구·요청 추적",
+    "summary": "에이전트 기반 진단과 요청 추적으로 MCP 상호작용을 점검할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-01-2",
+    "service": "scenario",
+    "date": "2026.06.01",
+    "kind": "모델",
+    "title": "Rodin Gen 2.5·Grok Imagine Video 1.5·P-Video Animate",
+    "summary": "Rodin Gen 2.5 3D 생성, Grok Imagine Video 1.5, 모션 전이 P-Video Animate가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.11.2",
+    "source": "notice"
+  }
+]

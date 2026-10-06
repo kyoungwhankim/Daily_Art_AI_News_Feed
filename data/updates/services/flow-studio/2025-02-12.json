@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2025-02-12-1",
+    "service": "flow-studio",
+    "date": "2025.02.12",
+    "kind": "기능",
+    "title": "Flow Studio, Clean Plate·Camera Track 단독 Wonder Tool",
+    "summary": "클린 플레이트와 카메라 트래킹을 각각 단독 Wonder Tool로 쓸 수 있어요. 배우가 없는 영상에서도 카메라 움직임을 추출할 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

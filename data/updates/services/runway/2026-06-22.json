@@ -1,0 +1,15 @@
+[
+  {
+    "id": "runway-2026-06-22-1",
+    "service": "runway",
+    "date": "2026.06.22",
+    "kind": "연동",
+    "title": "Figma Weave에 Aleph 2.0 탑재",
+    "summary": "Runway의 영상 편집 모델 Aleph 2.0이 Figma Weave 노드로 들어갔어요. 프레임 하나를 수정해 연결하면 영상 전체에 편집이 반영돼요.",
+    "details": [
+      "최대 30초 1080p 클립, 멀티샷 시퀀스 편집"
+    ],
+    "url": "https://runway.com/news/aleph-2-in-figma-weave",
+    "source": "notice"
+  }
+]

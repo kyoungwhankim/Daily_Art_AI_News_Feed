@@ -1,0 +1,22 @@
+[
+  {
+    "id": "figma-ai-2026-06-03-1",
+    "service": "figma-ai",
+    "date": "2026.06.03",
+    "kind": "요금",
+    "title": "Professional 요금제 종량제 AI 크레딧",
+    "summary": "Professional 요금제 관리자가 추가 AI 크레딧을 사용한 만큼 결제하는 방식으로 살 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=pay-as-you-go-ai-credits-professional-plan",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-06-03-2",
+    "service": "figma-ai",
+    "date": "2026.06.03",
+    "kind": "기능",
+    "title": "Figma Make 계획·맥락 강화 업데이트",
+    "summary": "Make에서 더 많은 맥락으로 계획을 세우고 작업 흐름을 이어가도록 돕는 세 가지 업데이트가 나왔어요.",
+    "url": "https://www.figma.com/release-notes/?title=plan-smarter-with-more-context-in-make",
+    "source": "notice"
+  }
+]

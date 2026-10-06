@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-09-05-1",
+    "service": "kling",
+    "date": "2025.09.05",
+    "kind": "API",
+    "title": "API V2.1 시작·끝 프레임, Video-to-Audio 프롬프트",
+    "summary": "Kling API V2.1 PRO 모드에서 시작·끝 프레임으로 5초·10초 영상을 만들 수 있고, Video-to-Audio에 효과음·BGM 프롬프트와 ASMR 모드가 추가됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#09%2F05%2F2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2023-11-08-1",
+    "service": "flow-studio",
+    "date": "2023.11.08",
+    "kind": "연동",
+    "title": "Wonder Studio, Maya·Blender 캐릭터 검증 애드온",
+    "summary": "Maya와 Blender용 검증 애드온으로 캐릭터 호환성을 로컬에서 바로 확인할 수 있어요. 이름 규칙 등 요구사항도 줄었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

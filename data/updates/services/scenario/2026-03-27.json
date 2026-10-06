@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-27-1",
+    "service": "scenario",
+    "date": "2026.03.27",
+    "kind": "연동",
+    "title": "MCP 에이전트 파일 업로드·에이전트 가이드",
+    "summary": "에이전트가 Scenario로 파일을 직접 올릴 수 있고, 11개 에이전트용 설정 가이드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-4-0",
+    "source": "notice"
+  }
+]

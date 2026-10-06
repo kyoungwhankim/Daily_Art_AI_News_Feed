@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-02-10-1",
+    "service": "synthesia",
+    "date": "2021.02.10",
+    "kind": "기능",
+    "title": "Synthesia 임시 저장과 슬라이드 전환 효과",
+    "summary": "작업을 저장하는 Drafts와 슬라이드 사이 Fade·Wipe·Slide 전환 효과를 추가했어요.",
+    "url": "https://www.synthesia.io/updates/drafts-and-transitions-are-now-available",
+    "source": "notice"
+  }
+]

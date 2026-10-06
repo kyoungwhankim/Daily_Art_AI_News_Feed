@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fal.ai-2026-06-16-1",
+    "service": "fal.ai",
+    "date": "2026.06.16",
+    "kind": "기능",
+    "title": "기존 Docker 서버 무수정 배포·사용량 화면 개편",
+    "summary": "ComfyUI나 커스텀 API 같은 기존 Docker 서버를 fal.App으로 다시 쓰지 않고 그대로 배포할 수 있게 됐어요. Usage & Billing 페이지도 키·사용자별 사용량 추적이 가능하게 바뀌었어요.",
+    "details": [
+      "Direct Server Mode: exposed_port로 컨테이너 포트 직접 라우팅",
+      "레지스트리 이미지 참조·Docker Hub/GAR/ECR 비공개 레지스트리 지원",
+      "Usage & Billing: 인증 방식·API 키·사용자별 필터"
+    ],
+    "url": "https://fal.ai/docs/changelog#june-16-2026",
+    "source": "dev"
+  }
+]

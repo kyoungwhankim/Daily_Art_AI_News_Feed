@@ -1,0 +1,26 @@
+[
+  {
+    "id": "runway-2026-07-28-1",
+    "service": "runway",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "SAM3 영상 분할 도구 추가",
+    "summary": "텍스트로 대상을 지정하면 영상에서 잘라내 투명 webm으로 만들어 줘요. 선택을 반전해 배경만 지울 수도 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-07-28-2",
+    "service": "runway",
+    "date": "2026.07.28",
+    "kind": "API",
+    "title": "엔터프라이즈 조직 워크스페이스 리포팅 API",
+    "summary": "엔터프라이즈 조직이 API 프로젝트에 연결된 웹 앱 워크스페이스의 생성별 크레딧 사용량과 감사 로그를 API로 내보낼 수 있어요.",
+    "details": [
+      "/v1/organization/webapp/usage",
+      "/v1/organization/webapp/audit_logs (작업·사용자·워크스페이스 필터)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#organization-workspace-reporting",
+    "source": "dev"
+  }
+]

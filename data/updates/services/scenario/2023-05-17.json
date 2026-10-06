@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-05-17-1",
+    "service": "scenario",
+    "date": "2023.05.17",
+    "kind": "기능",
+    "title": "AI Canvas 픽셀 퍼펙트 인페인팅·아웃페인팅",
+    "summary": "AI Canvas에서 생성기를 직접 이용한 픽셀 퍼펙트 인페인팅·아웃페인팅을 지원해 편집과 블렌딩이 훨씬 매끄러워졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-11-0-may-17-2023",
+    "source": "notice"
+  }
+]

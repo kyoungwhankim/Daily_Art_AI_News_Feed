@@ -1,0 +1,12 @@
+[
+  {
+    "id": "veo-2025-11-11-1",
+    "service": "veo",
+    "date": "2025.11.11",
+    "kind": "종료",
+    "title": "veo-3.0 프리뷰 모델 11월 12일 종료 예고",
+    "summary": "Gemini API의 veo-3.0-generate-preview와 veo-3.0-fast-generate-preview가 11월 12일에 종료된다고 공지됐어요. 정식 모델이나 Veo 3.1로 옮겨야 해요.",
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#11-11-2025",
+    "source": "dev"
+  }
+]

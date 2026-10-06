@@ -1,0 +1,19 @@
+[
+  {
+    "id": "iclone-2025-04-14-1",
+    "service": "iclone",
+    "date": "2025.04.14",
+    "kind": "앱",
+    "title": "iClone 8.53, Timecode 플러그인 호환과 AI Smart Search 강화",
+    "summary": "Timecode 플러그인과 호환되고 AI Smart Search가 모션 검색과 유사도 매칭을 지원해요. 타임라인 표시 모드와 렌더 번인 옵션도 추가됐어요.",
+    "details": [
+      "Timecode 플러그인 호환",
+      "AI Smart Search 모션 검색·유사도 매칭",
+      "Motion LIVE 테이크 이름·Align to Source",
+      "타임라인 표시 모드, 첫 프레임 타임코드 설정",
+      "렌더 번인 옵션"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

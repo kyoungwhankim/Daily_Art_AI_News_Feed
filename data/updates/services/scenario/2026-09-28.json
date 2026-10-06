@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-09-28-1",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "에이전트형 3D 생성·4K 48fps 영상",
+    "summary": "에이전트형 3D 아티스트 도구, 4K 48fps 영상, Ideogram·Recraft·ElevenLabs 최신 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-28-2",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Seedream 5.0 Flash: 2K·편집 가능한 레이어",
+    "summary": "최대 2K 이미지를 만들고 기본 레이어와 투명 PNG 레이어로 나눠 편집할 수 있는 Seedream 5.0 Flash가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-9be94e5773023f2f0cb31b1909899c38b9fc2e74226602ab3ce4759db539a40b",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-28-3",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "기능",
+    "title": "Blender 다운로드·내보내기 이름 템플릿·Topaz 기본",
+    "summary": "파일명 템플릿과 Blender 다운로드를 지원하고 Topaz가 기본 업스케일러가 됐어요. 워크플로 CU 비용도 미리 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-26-0",
+    "source": "notice"
+  }
+]

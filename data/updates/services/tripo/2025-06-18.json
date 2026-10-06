@@ -1,0 +1,19 @@
+[
+  {
+    "id": "tripo-2025-06-18-1",
+    "service": "tripo",
+    "date": "2025.06.18",
+    "kind": "API",
+    "title": "Studio 핵심 기능 API로 이전: 메시 편집·이미지 생성",
+    "summary": "Tripo Studio의 핵심 기능이 API로 들어왔어요. 메시 분할·스마트 로우폴리·메시 보완 작업과 text_to_image가 추가됐어요.",
+    "details": [
+      "mesh_segmentation·smart_low_poly·mesh_completion 추가",
+      "text_to_image 작업 추가",
+      "생성 작업에 smart_low_poly·generate_parts 파라미터",
+      "texture_model에 텍스트·이미지·스타일 프롬프트",
+      "retarget에서 여러 애니메이션 한 번에 적용"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-8-0-2025-06-18",
+    "source": "dev"
+  }
+]

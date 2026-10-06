@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-05-28-1",
+    "service": "hugging-face",
+    "date": "2026.05.28",
+    "kind": "기능",
+    "title": "Models 페이지 'Base only' 필터 추가",
+    "summary": "파인튜닝·어댑터·병합·양자화 모델을 숨기고 원본 베이스 모델만 보여 주는 Base only 토글이 생겼어요. 반대로 Model Tree 필터로 특정 파생 유형만 볼 수도 있어요.",
+    "url": "https://huggingface.co/changelog/filter-models-by-base-models-only",
+    "source": "notice"
+  }
+]

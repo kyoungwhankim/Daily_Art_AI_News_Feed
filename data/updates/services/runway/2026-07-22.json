@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-22-1",
+    "service": "runway",
+    "date": "2026.07.22",
+    "kind": "기능",
+    "title": "Runway MCP에서 Seedance 2.0 4K 생성 지원",
+    "summary": "Runway MCP로 Seedance 2.0 영상을 4K 해상도로 만들 수 있게 됐어요. 요청할 때 4K를 명시하면 돼요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

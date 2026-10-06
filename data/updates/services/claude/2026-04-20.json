@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-20-1",
+    "service": "claude",
+    "date": "2026.04.20",
+    "kind": "종료",
+    "title": "Claude Haiku 3 종료",
+    "summary": "Claude Haiku 3가 종료돼 요청 시 오류가 나요. Haiku 4.5로 업그레이드를 권장해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-20-2026",
+    "source": "dev"
+  }
+]

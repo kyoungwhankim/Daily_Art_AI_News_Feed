@@ -1,0 +1,19 @@
+[
+  {
+    "id": "flow-studio-2026-08-04-1",
+    "service": "flow-studio",
+    "date": "2026.08.04",
+    "kind": "기능",
+    "title": "Flow Studio, 3D Editor와 Canvas 도입",
+    "summary": "브라우저에서 캐릭터·카메라·월드로 시네마틱 씬을 만드는 3D Editor와, 노드 방식으로 이미지·영상을 생성·편집하는 Canvas가 새로 들어왔어요.",
+    "details": [
+      "설치 없이 브라우저에서 3D 씬 편집",
+      "텍스트·이미지·파노라마·영상으로 3D 월드 생성",
+      "영상에서 추출한 카메라 모션 사용",
+      "노드 기반 이미지·영상 생성 Canvas",
+      "3D Editor 렌더를 Canvas 입력으로 사용"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-08-05-1",
+    "service": "figma-ai",
+    "date": "2026.08.05",
+    "kind": "요금",
+    "title": "AI 크레딧 사용자 한도·크레딧 요청 기능",
+    "summary": "관리자가 팀·조직에서 사용자별 AI 크레딧 한도를 정하고, 사용자는 추가 크레딧을 요청할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=ai-credit-user-limits",
+    "source": "notice"
+  }
+]

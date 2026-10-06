@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-06-1",
+    "service": "scenario",
+    "date": "2026.03.06",
+    "kind": "API",
+    "title": "정확한 학습 예상 시간 표시",
+    "summary": "모델 학습에 걸리는 시간을 정확히 알려 주고 생성 안정성이 높아졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-2",
+    "source": "dev"
+  }
+]

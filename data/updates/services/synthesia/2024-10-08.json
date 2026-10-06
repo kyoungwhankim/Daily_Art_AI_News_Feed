@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2024-10-08-1",
+    "service": "synthesia",
+    "date": "2024.10.08",
+    "kind": "기능",
+    "title": "Synthesia SCORM 영상 내보내기",
+    "summary": "교육 영상을 SCORM으로 내보내 LMS에 바로 올릴 수 있게 됐어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/scorm-videos-ready-for-your-lms",
+    "source": "notice"
+  }
+]

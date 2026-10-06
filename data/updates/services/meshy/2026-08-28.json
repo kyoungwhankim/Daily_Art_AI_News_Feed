@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-28-1",
+    "service": "meshy",
+    "date": "2026.08.28",
+    "kind": "API",
+    "title": "Studio·Enterprise용 Usage API 추가",
+    "summary": "팀의 과거 API 작업 사용량과 소모 크레딧을 내보내는 Usage API가 추가됐어요. 비용 추적과 정산에 쓸 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

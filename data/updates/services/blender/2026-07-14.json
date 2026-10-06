@@ -1,0 +1,18 @@
+[
+  {
+    "id": "blender-2026-07-14-1",
+    "service": "blender",
+    "date": "2026.07.14",
+    "kind": "앱",
+    "title": "Blender 5.2 LTS 출시: 노드 기반 물리·온라인 에셋",
+    "summary": "2028년 7월까지 지원되는 Blender 5.2 LTS가 나왔어요. 헤어·천 시뮬레이션을 Geometry Nodes로 다루는 실험적 절차적 물리와 원격 호스팅 에셋 라이브러리가 핵심이에요.",
+    "details": [
+      "Geometry Nodes: 절차적 헤어·천 물리(실험), Sound 소켓과 오디오 반응 노드",
+      "Blender Online Essentials 등 원격 에셋 라이브러리 지원",
+      "Cycles 텍스처 캐시, Principled BSDF Thin Wall 모드",
+      "Grease Pencil 새 채우기 알고리즘, Scene Project 스컬프트 브러시"
+    ],
+    "url": "https://www.blender.org/press/blender-5-2-lts-release/",
+    "source": "notice"
+  }
+]

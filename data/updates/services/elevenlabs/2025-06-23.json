@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2025-06-23-1",
+    "service": "elevenlabs",
+    "date": "2025.06.23",
+    "kind": "기능",
+    "title": "개인 AI 음성 비서 11ai 공개",
+    "summary": "이름과 목소리를 정하고 MCP로 수백 개 도구에 연결하는 AI 음성 비서 11ai를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/introducing-11ai",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-06-23-2",
+    "service": "elevenlabs",
+    "date": "2025.06.23",
+    "kind": "기능",
+    "title": "famous 보이스 카테고리와 v3 태그 자동 제거",
+    "summary": "Voice Library에 famous 카테고리가 생겼고, v3에서 v2로 바꾸면 오디오 태그가 자동으로 지워져요. 더빙 CSV 프레임레이트도 지정할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/23",
+    "source": "dev"
+  }
+]

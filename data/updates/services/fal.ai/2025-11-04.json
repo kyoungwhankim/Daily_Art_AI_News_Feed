@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-11-04-1",
+    "service": "fal.ai",
+    "date": "2025.11.04",
+    "kind": "기능",
+    "title": "대시보드 러너 중지·로그 드레인",
+    "summary": "대시보드에서 러너를 바로 중지·강제 종료하고, 로그를 Datadog·Splunk 같은 외부 엔드포인트로 흘려보낼 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#november-4-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-11-04-2",
+    "service": "fal.ai",
+    "date": "2025.11.04",
+    "kind": "모델",
+    "title": "Sima Labs 이미지·영상 업스케일러 fal 출시",
+    "summary": "최대 4배 이미지 업스케일과 프레임 일관성 있는 영상 화질 개선을 지원하는 Sima Labs 업스케일러가 fal에 추가됐어요.",
+    "url": "https://blog.fal.ai/sima-upscaler-is-live-on-fal/",
+    "source": "notice"
+  }
+]

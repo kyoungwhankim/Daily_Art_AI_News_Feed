@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-06-03-1",
+    "service": "comfyui",
+    "date": "2026.06.03",
+    "kind": "모델",
+    "title": "ComfyUI, Ideogram 4.0 오픈 웨이트 첫날 지원",
+    "summary": "JSON 프롬프트를 사양서처럼 읽는 Ideogram의 첫 오픈 웨이트 9.3B 모델 Ideogram 4.0을 ComfyUI에서 출시 당일 지원해요. 포스터·레이아웃에 강해요.",
+    "details": [
+      "v0.24.0: Ideogram V4 API 노드",
+      "PiD에 SDXL·QwenImage 변형 추가",
+      "Bria 투명·그린 배경 영상, Krea 2 Medium Turbo"
+    ],
+    "url": "https://blog.comfy.org/p/ideogram-4-day-0-support-in-comfyui",
+    "source": "notice"
+  }
+]

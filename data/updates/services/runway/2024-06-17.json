@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2024-06-17-1",
+    "service": "runway",
+    "date": "2024.06.17",
+    "kind": "모델",
+    "title": "Gen-3 Alpha 발표",
+    "summary": "새 대규모 멀티모달 학습 인프라로 훈련한 차세대 영상 모델 Gen-3 Alpha를 발표했어요. 세밀한 시간 제어와 키프레이밍이 강점이에요.",
+    "details": [
+      "Text to Video, Image to Video, Motion Brush 등 기존 도구에 적용 예정",
+      "새 시각 검수 시스템과 C2PA 출처 표준 적용"
+    ],
+    "url": "https://runway.com/research/introducing-gen-3-alpha",
+    "source": "notice"
+  }
+]

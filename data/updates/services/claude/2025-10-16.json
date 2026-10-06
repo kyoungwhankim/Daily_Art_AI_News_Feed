@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2025-10-16-1",
+    "service": "claude",
+    "date": "2025.10.16",
+    "kind": "기능",
+    "title": "Agent Skills 공개",
+    "summary": "지시문·스크립트·리소스를 담은 폴더인 Skills를 Claude가 필요할 때 불러와 특화 작업을 더 잘하게 됐어요. Claude 앱·Claude Code·API에서 직접 만든 스킬을 쓸 수 있어요.",
+    "details": [
+      "API: skills-2025-10-02 베타, PowerPoint·Excel·Word·PDF 기본 스킬",
+      "Skills API(/v1/skills)로 커스텀 스킬 업로드"
+    ],
+    "url": "https://www.anthropic.com/news/skills",
+    "source": "notice"
+  }
+]

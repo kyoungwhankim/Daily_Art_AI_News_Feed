@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-10-15-1",
+    "service": "fal.ai",
+    "date": "2025.10.15",
+    "kind": "기능",
+    "title": "크리에이터·개발자 맞춤 대시보드와 문서 MCP",
+    "summary": "대시보드가 갤러리 중심 크리에이터 뷰와 지표 중심 개발자 뷰로 나뉘고, fal 문서를 Cursor에 MCP로 연결할 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#october-15-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-10-15-2",
+    "service": "fal.ai",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Veo 3.1 fal 출시 당일 제공",
+    "summary": "네이티브 오디오, 첫·끝 프레임 보간, 참조 이미지 조건을 지원하는 Google Veo 3.1을 fal에서 바로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/veo-3-1-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

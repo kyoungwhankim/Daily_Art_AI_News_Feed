@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-10-06-1",
+    "service": "comfyui",
+    "date": "2025.10.06",
+    "kind": "기능",
+    "title": "ComfyUI 0.3.63: 서브그래프 게시와 선택 툴박스 개편",
+    "summary": "ComfyUI 0.3.63에서 서브그래프를 노드 라이브러리에 게시해 재사용할 수 있게 됐고, 노드 선택 툴박스가 새로 디자인됐어요.",
+    "details": [
+      "HunyuanVAE 지원, Epsilon Scaling 노드",
+      "Kling 2.5 Turbo API 지원"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-0363-subgraph-publishing",
+    "source": "notice"
+  }
+]

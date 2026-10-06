@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-02-13-1",
+    "service": "claude",
+    "date": "2026.02.13",
+    "kind": "API",
+    "title": "Enterprise용 Analytics API",
+    "summary": "Enterprise 조직의 Claude와 Claude Code Remote 사용·참여 데이터를 일 단위로 가져오는 Analytics API가 나왔어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

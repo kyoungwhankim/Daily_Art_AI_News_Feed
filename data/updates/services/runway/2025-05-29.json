@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-05-29-1",
+    "service": "runway",
+    "date": "2025.05.29",
+    "kind": "기능",
+    "title": "Gen-4 References에 Layout Sketch 추가",
+    "summary": "빈 캔버스에서 시작하거나 기존 이미지 위에 그려 새 요소와 구도를 지정할 수 있는 Layout Sketch가 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

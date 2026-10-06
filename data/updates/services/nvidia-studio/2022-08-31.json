@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2022-08-31-1",
+    "service": "nvidia-studio",
+    "date": "2022.08.31",
+    "kind": "연동",
+    "title": "OBS Studio 28에 NVIDIA Broadcast 효과 기본 통합",
+    "summary": "OBS Studio 28.0이 NVIDIA Broadcast의 AI 가상 배경과 룸 에코 제거를 기본 통합하고, NVENC로 YouTube HEVC·HDR 스트리밍을 지원해요.",
+    "url": "https://blogs.nvidia.com/blog/in-the-nvidia-studio-august-31/",
+    "source": "notice"
+  }
+]

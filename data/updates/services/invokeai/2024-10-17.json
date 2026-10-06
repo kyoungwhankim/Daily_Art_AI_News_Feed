@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2024-10-17-1",
+    "service": "invokeai",
+    "date": "2024.10.17",
+    "kind": "기능",
+    "title": "Invoke 5.2.0: FLUX ControlNet 지원",
+    "summary": "Invoke 5.2.0에서 XLabs·InstantX의 FLUX ControlNet을 워크플로와 일반 UI 모두에서 쓸 수 있게 됐어요. 성능이 좋은 Union Pro 모델이 스타터 모델에 추가됐어요.",
+    "details": [
+      "캔버스 img2img 흐름 개선",
+      "보드 이름·날짜 정렬",
+      "모델 매니저 스타터 모델 번들",
+      "이미지 일괄 업로드"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-2-0/",
+    "source": "notice"
+  }
+]

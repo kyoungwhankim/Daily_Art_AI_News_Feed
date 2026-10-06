@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-23-1",
+    "service": "claude",
+    "date": "2026.04.23",
+    "kind": "API",
+    "title": "Managed Agents 메모리 공개 베타",
+    "summary": "Claude Managed Agents의 메모리 기능이 공개 베타가 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-23-2026",
+    "source": "dev"
+  }
+]

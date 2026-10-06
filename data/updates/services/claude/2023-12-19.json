@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-12-19-1",
+    "service": "claude",
+    "date": "2023.12.19",
+    "kind": "API",
+    "title": "Messages API 베타·법적 보호 확대",
+    "summary": "프롬프트 형식 오류를 줄여 주는 새 Messages API가 베타로 나왔어요. 상업 고객을 위한 저작권 관련 법적 보호도 확대됐어요.",
+    "url": "https://www.anthropic.com/news/expanded-legal-protections-api-improvements",
+    "source": "notice"
+  }
+]

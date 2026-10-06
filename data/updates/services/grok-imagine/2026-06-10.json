@@ -1,0 +1,17 @@
+[
+  {
+    "id": "grok-imagine-2026-06-10-1",
+    "service": "grok-imagine",
+    "date": "2026.06.10",
+    "kind": "API",
+    "title": "Files API와 Imagine 연동, 공개 URL 지원",
+    "summary": "Imagine 모든 엔드포인트에서 Files API에 저장된 파일을 입력으로 바로 쓰고, 생성 결과를 Files에 저장해 공개 링크까지 한 번에 만들 수 있게 됐어요.",
+    "details": [
+      "image_file_id·video_file_id·reference_image_file_ids로 입력 지정",
+      "storage_options로 결과물을 Files에 저장",
+      "Files 공개 URL: 1시간~30일 자동 만료 설정 가능"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes#public-urls-and-files-api--imagine-integration",
+    "source": "dev"
+  }
+]

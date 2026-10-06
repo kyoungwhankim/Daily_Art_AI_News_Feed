@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-10-22-1",
+    "service": "scenario",
+    "date": "2024.10.22",
+    "kind": "기능",
+    "title": "새 로그인 시스템: Google·Microsoft·GitHub·Hugging Face",
+    "summary": "Gmail, Microsoft, GitHub, Hugging Face 계정으로 로그인할 수 있게 됐어요. Enhance의 Precise 프리셋도 원본에 더 가깝게 바뀌었어요.",
+    "url": "https://www.scenario.com/changelog/1-72-new-authentication-system",
+    "source": "notice"
+  }
+]

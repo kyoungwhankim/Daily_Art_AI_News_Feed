@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-05-13-1",
+    "service": "suno",
+    "date": "2026.05.13",
+    "kind": "연동",
+    "title": "Suno, Apple CarPlay·Android Auto 지원",
+    "summary": "차량 대시보드에서 Apple CarPlay와 Android Auto로 Suno 곡을 스트리밍할 수 있어요.",
+    "url": "https://suno.com/release-notes/android-auto-and-carplay-integration",
+    "source": "notice"
+  }
+]

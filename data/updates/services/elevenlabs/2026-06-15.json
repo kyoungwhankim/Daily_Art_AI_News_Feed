@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-15-1",
+    "service": "elevenlabs",
+    "date": "2026.06.15",
+    "kind": "모델",
+    "title": "Music v2 API 제공",
+    "summary": "음악 생성 API에서 model_id를 music_v2로 지정해 Music v2를 쓸 수 있어요. STT 화자 라이브러리 분리도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/15",
+    "source": "dev"
+  }
+]

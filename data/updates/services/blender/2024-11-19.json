@@ -1,0 +1,16 @@
+[
+  {
+    "id": "blender-2024-11-19-1",
+    "service": "blender",
+    "date": "2024.11.19",
+    "kind": "앱",
+    "title": "Blender 4.3 출시: 브러시 에셋·새 Grease Pencil",
+    "summary": "브러시 에셋, 빨라진 스컬프팅, 완전히 새로워진 Grease Pencil을 담은 Blender 4.3이 나왔어요. EEVEE도 Light·Shadow Linking을 지원해요.",
+    "details": [
+      "EEVEE Light Linking·Shadow Linking",
+      "새 Metallic BSDF 노드"
+    ],
+    "url": "https://www.blender.org/press/blender-4-3-release/",
+    "source": "notice"
+  }
+]

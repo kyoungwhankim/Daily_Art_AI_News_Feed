@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-04-17-1",
+    "service": "comfyui",
+    "date": "2025.04.17",
+    "kind": "모델",
+    "title": "ComfyUI, HiDream-I1 네이티브 지원",
+    "summary": "MIT 라이선스로 공개된 17B 파라미터 텍스트→이미지 모델 HiDream-I1을 ComfyUI에서 네이티브로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/hidream-i1-native-support-in-comfyui",
+    "source": "notice"
+  }
+]

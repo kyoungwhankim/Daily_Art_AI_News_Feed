@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-06-13-1",
+    "service": "scenario",
+    "date": "2025.06.13",
+    "kind": "모델",
+    "title": "Flux Kontext 편집 모델 추가",
+    "summary": "Edit with Prompts에 빠르고 정교한 편집 모델 Flux Kontext가 추가됐어요. 여러 이미지와 스케치로 수정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-87-1-flux-kontext-is-on-scenario",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2025-04-17-1",
+    "service": "invokeai",
+    "date": "2025.04.17",
+    "kind": "모델",
+    "title": "Invoke 5.10.0: CogView4 지원과 Python 3.12",
+    "summary": "Invoke 5.10.0에서 FLUX에 가까운 품질의 관대한 라이선스 모델 CogView4를 지원하고, Python 3.12·PyTorch 2.6.0으로 핵심 구성요소를 올렸어요.",
+    "details": [
+      "런처 v1.5.0 이상 필요",
+      "업데이트 후 첫 실행 시 Form Builder 초기화"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-10-0/",
+    "source": "notice"
+  }
+]

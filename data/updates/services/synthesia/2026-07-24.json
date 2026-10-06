@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-07-24-1",
+    "service": "synthesia",
+    "date": "2026.07.24",
+    "kind": "기능",
+    "title": "Synthesia 모션 그래픽 자동 번역",
+    "summary": "영상 번역 과정에서 모션 그래픽도 함께 번역되도록 바뀌었어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/translate-motion-graphics-automatically",
+    "source": "notice"
+  }
+]

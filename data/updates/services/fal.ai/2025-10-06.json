@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-06-1",
+    "service": "fal.ai",
+    "date": "2025.10.06",
+    "kind": "기능",
+    "title": "커스텀 Docker 이미지 배포 지원",
+    "summary": "ContainerImage.from_dockerfile()로 원하는 Docker 이미지를 써서 런타임 환경을 완전히 제어할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#october-6-2025",
+    "source": "dev"
+  }
+]

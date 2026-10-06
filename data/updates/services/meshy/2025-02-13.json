@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2025-02-13-1",
+    "service": "meshy",
+    "date": "2025.02.13",
+    "kind": "API",
+    "title": "무료 API 종료 예고·SSE 스트리밍 추가",
+    "summary": "2025년 3월 20일부터 API 작업 생성에 유료 구독이 필요하다고 알렸어요. 실시간 작업 상태를 받는 SSE 스트리밍 엔드포인트도 추가됐어요.",
+    "details": [
+      "무료 티어 API 작업 생성 3월 20일 종료 예고",
+      "Text to 3D·Image to 3D·Remesh·Text to Texture Stream API 추가"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2025",
+    "source": "dev"
+  }
+]

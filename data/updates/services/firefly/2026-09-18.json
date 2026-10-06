@@ -1,0 +1,15 @@
+[
+  {
+    "id": "firefly-2026-09-18-1",
+    "service": "firefly",
+    "date": "2026.09.18",
+    "kind": "기능",
+    "title": "Firefly 9월 업데이트: 영상 배경 제거 등",
+    "summary": "Firefly에 영상 전체에서 배경을 자동으로 지우는 기능이 생기고, GPT Image 2 비율이 10가지로 늘었어요. Kling 3.0 Omni 참조 이미지와 더 긴 프롬프트도 지원해요.",
+    "details": [
+      "Firefly AI Assistant 말투를 작업 중심으로 조정"
+    ],
+    "url": "https://community.adobe.com/announcements-402/what-s-new-in-adobe-firefly-september-2026-1642552",
+    "source": "notice"
+  }
+]

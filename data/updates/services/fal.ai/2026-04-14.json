@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-04-14-1",
+    "service": "fal.ai",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "Model API Reference 문서 공개",
+    "summary": "fal 주요 모델의 입출력 스키마, Python·JS·cURL 예제, 실제 프롬프트 예시를 담은 자동 생성 Model API Reference가 공개됐어요.",
+    "url": "https://fal.ai/docs/changelog#april-14-2026",
+    "source": "dev"
+  }
+]

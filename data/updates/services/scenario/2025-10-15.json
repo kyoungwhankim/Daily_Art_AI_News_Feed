@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-10-15-1",
+    "service": "scenario",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Veo 3.1·Solo 프로젝트·이미지 비교",
+    "summary": "Veo 3.1과 Veo 3.1 Fast가 추가되고, 혼자 작업하는 Solo 프로젝트와 갤러리 이미지 비교 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-101-veo-3-1-solo-projects-and-image-comparison-in-gallery",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-15-2",
+    "service": "scenario",
+    "date": "2025.10.15",
+    "kind": "API",
+    "title": "API에 Veo 3.1 지원·비용 추정 개선",
+    "summary": "API에서 참조 이미지·마지막 프레임과 함께 Veo 3.1을 쓸 수 있어요. 모든 호출 비용을 미리 추정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-2-93-0-veo-3-1",
+    "source": "dev"
+  }
+]

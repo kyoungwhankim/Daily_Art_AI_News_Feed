@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-11-18-1",
+    "service": "synthesia",
+    "date": "2021.11.18",
+    "kind": "기능",
+    "title": "Synthesia 우클릭 컨텍스트 메뉴",
+    "summary": "캔버스 요소, 슬라이드, 이미지를 우클릭해 메뉴에서 빠르게 작업할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/context-menu-for-quicker-interactions",
+    "source": "notice"
+  }
+]

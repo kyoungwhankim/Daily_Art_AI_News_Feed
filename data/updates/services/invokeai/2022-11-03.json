@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2022-11-03-1",
+    "service": "invokeai",
+    "date": "2022.11.03",
+    "kind": "앱",
+    "title": "InvokeAI 2.1: WebGUI 인페인팅과 프롬프트 가중치",
+    "summary": "InvokeAI 2.1에서 WebGUI 인페인팅과 프롬프트 가중치·크로스 어텐션·프롬프트 병합 문법이 추가됐어요. 여러 모델을 불러와 빠르게 전환할 수도 있어요.",
+    "details": [
+      "WebGUI 인페인팅 지원과 탐색·사용성 개선",
+      "프롬프트 가중치, 크로스 어텐션, 프롬프트 병합 문법",
+      "여러 모델 로드 후 빠른 전환",
+      "설치 시 인기 Stable Diffusion 모델 선택·다운로드"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-1---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

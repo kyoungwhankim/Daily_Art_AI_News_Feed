@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-07-1",
+    "service": "comfyui",
+    "date": "2025.08.07",
+    "kind": "기능",
+    "title": "ComfyUI 서브그래프 정식 출시",
+    "summary": "여러 노드를 입출력을 가진 하나의 서브그래프 노드로 묶어 레고 블록처럼 재사용하는 Subgraph 기능이 정식으로 나왔어요. 복잡한 워크플로를 깔끔하게 정리할 수 있어요.",
+    "url": "https://blog.comfy.org/p/subgraph-official-release",
+    "source": "notice"
+  }
+]

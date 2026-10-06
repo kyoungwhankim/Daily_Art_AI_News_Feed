@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2006-02-08-1",
+    "service": "iclone",
+    "date": "2006.02.08",
+    "kind": "기능",
+    "title": "iClone 1.01, 실시간 픽셀 셰이더",
+    "summary": "범프·노멀·반사·알파·자체 그림자를 지원하는 실시간 Pixel Shader와 캐릭터·프롭 멀티 텍스처 편집이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

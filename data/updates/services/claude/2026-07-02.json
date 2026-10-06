@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-02-1",
+    "service": "claude",
+    "date": "2026.07.02",
+    "kind": "API",
+    "title": "메모리 목록 조회 방식 변경 베타 헤더",
+    "summary": "agent-memory-2026-07-22 헤더로 메모리 목록 조회의 정렬·depth·path_prefix 동작이 바뀌고, SDK들이 이 헤더를 기본 사용해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-2-2026",
+    "source": "dev"
+  }
+]

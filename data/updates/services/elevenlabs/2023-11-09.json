@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2023-11-09-1",
+    "service": "elevenlabs",
+    "date": "2023.11.09",
+    "kind": "모델",
+    "title": "Eleven Turbo v2 출시, 약 400ms 지연",
+    "summary": "약 400ms 지연으로 V1 모델보다 두 배 이상 빠른 음성 합성 모델 Turbo v2가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/turbo-v2-is-here",
+    "source": "notice"
+  }
+]

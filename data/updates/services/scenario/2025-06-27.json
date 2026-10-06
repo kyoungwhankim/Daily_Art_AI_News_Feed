@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-06-27-1",
+    "service": "scenario",
+    "date": "2025.06.27",
+    "kind": "기능",
+    "title": "생성형 3D: Image to 3D 출시",
+    "summary": "Scenario에서 어떤 이미지든 3D 모델로 바꾸는 Image-to-3D 도구가 나왔어요. 이미지 메뉴의 Convert to 3D로 실행해요.",
+    "url": "https://www.scenario.com/changelog/v1-88-generative-3d",
+    "source": "notice"
+  }
+]

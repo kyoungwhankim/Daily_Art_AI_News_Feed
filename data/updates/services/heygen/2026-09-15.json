@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-09-15-1",
+    "service": "heygen",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "HeyGen API 키 조회·아바타 기본 음성 엔드포인트",
+    "summary": "요청 중인 API 키의 권한을 확인하는 엔드포인트, 아바타 기본 음성 설정, 용어집·Proofread 세션 정리 엔드포인트가 추가됐어요.",
+    "url": "https://docs.heygen.com/changelog#api-key-introspection-avatar-default-voice-housekeeping-endpoints",
+    "source": "dev"
+  }
+]

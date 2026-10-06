@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-09-05-1",
+    "service": "comfyui",
+    "date": "2026.09.05",
+    "kind": "연동",
+    "title": "ComfyUI v0.34.5: Comfy Cloud 실행 노드(베타)",
+    "summary": "ComfyUI v0.34.5에서 Flux 2, Z-Image Turbo, MiniMax H3, Music 3 등 엄선된 워크플로를 Comfy Cloud에서 실행하는 베타 노드가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-34-5",
+    "source": "notice"
+  }
+]

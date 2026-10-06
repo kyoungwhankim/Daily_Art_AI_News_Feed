@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-12-1",
+    "service": "claude",
+    "date": "2025.08.12",
+    "kind": "API",
+    "title": "Claude Sonnet 4 1M 컨텍스트 베타",
+    "summary": "Claude API와 Amazon Bedrock에서 Sonnet 4의 1M 토큰 컨텍스트 창이 베타로 지원돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+    "source": "dev"
+  }
+]

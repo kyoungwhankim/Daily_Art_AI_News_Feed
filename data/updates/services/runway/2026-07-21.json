@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-07-21-1",
+    "service": "runway",
+    "date": "2026.07.21",
+    "kind": "기능",
+    "title": "Model Routers와 MCP용 Seedance 2.0 Mini·Fast, Nano Banana 2 Lite",
+    "summary": "Runway Dev에 비용·지연·품질 기준으로 영상 모델을 고르는 Model Routers가 나왔고, Runway MCP에 가벼운 Seedance 2.0 Mini·Fast와 Nano Banana 2 Lite가 추가됐어요.",
+    "details": [
+      "Model Routers: 허용/차단 목록, 비용 상한, 최적화 기준 설정",
+      "Seedance 2.0 Fast: 480p/720p 빠른 생성, Mini: 가장 저렴, explore 모드 무료",
+      "Nano Banana 2 Lite: 이미지당 4크레딧"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

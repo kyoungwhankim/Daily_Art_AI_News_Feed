@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-10-24-1",
+    "service": "runway",
+    "date": "2025.10.24",
+    "kind": "기능",
+    "title": "노드 기반 Workflows 출시",
+    "summary": "여러 모델과 모달리티, 중간 단계를 이어 붙이는 맞춤 노드 기반 Workflows를 유료 플랜에 내놨어요. 생성 과정을 더 세밀하게 제어할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-08-17-1",
+    "service": "synthesia",
+    "date": "2021.08.17",
+    "kind": "기능",
+    "title": "Synthesia 색상 선택에 영상 색상 바로가기",
+    "summary": "색상을 고를 때 현재 영상 에셋의 색상을 바로가기로 보여 줘요.",
+    "url": "https://www.synthesia.io/updates/color-picker-2021",
+    "source": "notice"
+  }
+]

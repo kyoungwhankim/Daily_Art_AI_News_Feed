@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2023-03-16-1",
+    "service": "iclone",
+    "date": "2023.03.16",
+    "kind": "앱",
+    "title": "iClone 8.21, 최대 텍스처 렌더 토글과 AutoSetup JSON",
+    "summary": "최대 텍스처 해상도 렌더를 켜고 끌 수 있게 됐고, 3ds Max·Blender 프리셋으로 FBX를 내보내면 AutoSetup용 JSON도 함께 나와요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

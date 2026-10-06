@@ -1,0 +1,19 @@
+[
+  {
+    "id": "rokoko-2024-10-29-1",
+    "service": "rokoko",
+    "date": "2024.10.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.6, 선택적 업데이트와 프리셋 저장",
+    "summary": "앞으로 대부분의 업데이트를 원할 때 설치할 수 있게 됐고, Coil Pro 3D 오차 시각화와 얼굴 필터·내보내기 프리셋 저장이 추가됐어요.",
+    "details": [
+      "대부분 업데이트를 선택 설치로 전환",
+      "Coil Pro 3D 신호 오차 시각화",
+      "Face Capture 필터 프리셋 저장(유료)",
+      "Newton 스켈레톤 UE5 내보내기 프리셋",
+      "내보내기 설정 프리셋(유료)"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/29606540466321-Rokoko-Studio-2-4-6",
+    "source": "dev"
+  }
+]

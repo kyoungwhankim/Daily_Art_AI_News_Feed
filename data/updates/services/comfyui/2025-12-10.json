@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2025-12-10-1",
+    "service": "comfyui",
+    "date": "2025.12.10",
+    "kind": "모델",
+    "title": "ComfyUI v0.4.0: Kandinsky 5.0·Ovis Image와 VRAM 절감",
+    "summary": "ComfyUI v0.4.0에서 Ovis Image, Kandinsky 5.0, Z-Image Fun ControlNet을 지원하고, 영상 모델용 temporal rolling VAE로 VRAM을 크게 줄였어요.",
+    "details": [
+      "프런트엔드 로딩 속도 대폭 개선",
+      "GPU 가속 마스크 에디터",
+      "ComfyUI-Manager pip 설치 지원",
+      "Flux2 워크플로 LoRA 메모리 예약 감소"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-4-0",
+    "source": "notice"
+  }
+]

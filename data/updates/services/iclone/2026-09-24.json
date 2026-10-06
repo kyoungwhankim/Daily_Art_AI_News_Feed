@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2026-09-24-1",
+    "service": "iclone",
+    "date": "2026.09.24",
+    "kind": "기능",
+    "title": "iClone 8용 RTX Render Open Beta 3 공개",
+    "summary": "iClone 8과 Character Creator 5용 패스 트레이싱 렌더러 RTX Render의 세 번째 오픈 베타가 나왔어요. 실제 렌즈 프리셋, 볼류메트릭 라이트, 절차적 머티리얼 애니메이션 등 영화급 촬영 기능이 늘었어요.",
+    "details": [
+      "실제 렌즈 프리셋과 Sensor Shift(틸트시프트) 카메라",
+      "실시간 레이트레이싱 볼류메트릭 라이팅",
+      "컬러 매니지먼트 확장과 후처리 전용 채널",
+      "라이브 절차적 머티리얼 워크플로"
+    ],
+    "url": "https://magazine.reallusion.com/2026/09/24/whats-new-in-rtx-render-open-beta-3-craft-film-grade-shots-animate-materials/",
+    "source": "notice"
+  }
+]

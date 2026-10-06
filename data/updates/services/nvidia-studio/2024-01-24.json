@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2024-01-24-1",
+    "service": "nvidia-studio",
+    "date": "2024.01.24",
+    "kind": "기능",
+    "title": "RTX Video HDR 배포·RTX Remix 오픈 베타",
+    "summary": "1월 Studio 드라이버로 브라우저 SDR 영상을 AI로 HDR로 바꾸는 RTX Video HDR이 나왔어요. 게임 모드 도구 RTX Remix도 오픈 베타로 공개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-video-hdr-remix-studio-driver/",
+    "source": "notice"
+  }
+]

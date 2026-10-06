@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-10-12-1",
+    "service": "tripo",
+    "date": "2024.10.12",
+    "kind": "API",
+    "title": "3MF 변환 포맷 지원",
+    "summary": "모델 변환에서 3D 프린팅용 3mf 포맷을 지원하게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-5-2024-10-12",
+    "source": "dev"
+  }
+]

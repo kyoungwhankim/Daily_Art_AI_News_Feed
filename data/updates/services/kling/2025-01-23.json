@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kling-2025-01-23-1",
+    "service": "kling",
+    "date": "2025.01.23",
+    "kind": "기능",
+    "title": "KLING 1.6 Elements·Effects, KOLORS 1.5 이미지 레퍼런스",
+    "summary": "KLING 1.6 이미지-투-비디오에 1~4장의 이미지 속 대상을 조합하는 Elements와 첫 AI Effects가 추가됐어요. KOLORS 1.5는 얼굴·피사체 레퍼런스를 지원해요.",
+    "details": [
+      "Elements로 캐릭터 일관성과 다중 캐릭터 상호작용 표현",
+      "Effects 3종: FuzzyFuzzy, MochiMochi, BoomBoom",
+      "KOLORS 1.5 Face/Subject 레퍼런스"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/2025012318",
+    "source": "notice"
+  }
+]

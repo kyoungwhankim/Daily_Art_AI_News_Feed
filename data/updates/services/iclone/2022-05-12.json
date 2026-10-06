@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2022-05-12-1",
+    "service": "iclone",
+    "date": "2022.05.12",
+    "kind": "앱",
+    "title": "iClone 8 정식 출시",
+    "summary": "3DXchange를 통합한 iClone 8이 나왔어요. 드래그 앤 드롭 임포트, 즉시 리타기팅, CC4와 공유하는 Smart Content Manager로 캐릭터 애니메이션 작업이 쉬워졌어요.",
+    "details": [
+      "3DXchange 기능 통합(FBX·OBJ 드래그 앤 드롭)",
+      "즉시·커스텀 리타기팅",
+      "CC4와 공유하는 Smart Content Manager",
+      "키워드 검색·태그·팀 공유"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

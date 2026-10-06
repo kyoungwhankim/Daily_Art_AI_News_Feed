@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-01-17-1",
+    "service": "runway",
+    "date": "2025.01.17",
+    "kind": "모델",
+    "title": "Frames 이미지 모델 제공 시작",
+    "summary": "스타일 제어와 시각적 충실도가 뛰어난 이미지 생성 모델 Frames를 Unlimited·Enterprise 플랜에 내놨어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

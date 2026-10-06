@@ -1,0 +1,19 @@
+[
+  {
+    "id": "iclone-2025-08-27-1",
+    "service": "iclone",
+    "date": "2025.08.27",
+    "kind": "앱",
+    "title": "iClone 8.6, Character Creator 5 호환과 MetaHuman 표정 임포트",
+    "summary": "새로 나온 Character Creator 5와 호환돼 CC5 HD 캐릭터와 MetaHuman 얼굴 애니메이션 임포트를 지원해요. 새 눈 셰이더와 UE5·Marmoset 내보내기 프리셋도 추가됐어요.",
+    "details": [
+      "MetaHuman 얼굴 애니메이션 임포트(CC5 필요)",
+      "CC5 HD 캐릭터·HD/Extended-Plus 프로필",
+      "Digital Human 눈 Occlusion·Tearline(HD) 셰이더",
+      "Unreal 5·Marmoset Toolbag 내보내기 프리셋",
+      "Live Face·AccuFACE 개선"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

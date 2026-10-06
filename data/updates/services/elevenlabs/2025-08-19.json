@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-19-1",
+    "service": "elevenlabs",
+    "date": "2025.08.19",
+    "kind": "기능",
+    "title": "ElevenLabs 에이전트 Chat Mode",
+    "summary": "텍스트만 주고받는 대화형 에이전트를 만드는 Chat Mode가 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agents-now-support-chat-mode",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-11-04-1",
+    "service": "meshy",
+    "date": "2025.11.04",
+    "kind": "API",
+    "title": "업로드 모델 텍스처 보존",
+    "summary": "Remesh API가 업로드한 모델의 텍스처를 유지하게 됐어요. Retexture도 enable_original_uv를 켜면 원래 텍스처를 보존해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  }
+]

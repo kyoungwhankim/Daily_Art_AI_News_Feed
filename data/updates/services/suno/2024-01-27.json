@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-01-27-1",
+    "service": "suno",
+    "date": "2024.01.27",
+    "kind": "기능",
+    "title": "Suno 곡 삭제 등 사용성 개선",
+    "summary": "Move to Trash로 곡을 삭제하는 기능 등 사용자 피드백을 반영한 사용성 개선이 들어갔어요.",
+    "url": "https://suno.com/release-notes/quality-of-life-improvements",
+    "source": "notice"
+  }
+]

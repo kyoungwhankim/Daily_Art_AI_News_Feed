@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2025-10-16-1",
+    "service": "synthesia",
+    "date": "2025.10.16",
+    "kind": "연동",
+    "title": "Synthesia에 Sora 2·Veo 3.1 통합",
+    "summary": "Synthesia 안에서 Sora 2와 Veo 3.1로 프롬프트만으로 영상 소재를 만들 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/sora-2-and-veo-3-1-in-synthesia-prompt-anything",
+    "source": "notice"
+  }
+]

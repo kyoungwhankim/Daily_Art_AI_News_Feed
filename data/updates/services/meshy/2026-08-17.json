@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-17-1",
+    "service": "meshy",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "이미지 API 배경 제거 옵션",
+    "summary": "Text to Image와 Image to Image API에 remove_background가 추가돼 투명 PNG를 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

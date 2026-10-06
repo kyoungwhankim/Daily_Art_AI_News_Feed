@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hugging-face-2026-09-24-1",
+    "service": "hugging-face",
+    "date": "2026.09.24",
+    "kind": "기능",
+    "title": "LeRobot 데이터셋 에피소드 미리보기 지원",
+    "summary": "LeRobot 데이터셋 페이지에서 여러 카메라 영상을 하나의 재생바로 동기화해 에피소드를 미리 볼 수 있게 됐어요. 목록에도 로봇 종류·에피소드 수·첫 에피소드 미리보기가 표시돼요.",
+    "url": "https://huggingface.co/changelog/preview-lerobot-episodes",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-09-24-2",
+    "service": "hugging-face",
+    "date": "2026.09.24",
+    "kind": "연동",
+    "title": "Hugging Face, Google Cloud Marketplace 입점",
+    "summary": "조직이 Google Cloud 계정으로 구독해 Inference Providers·Endpoints·Spaces·Jobs·스토리지·Team/Enterprise 좌석 비용을 기존 Google Cloud 청구서로 결제할 수 있게 됐어요.",
+    "url": "https://huggingface.co/changelog/gcp-marketplace",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "claude-2025-12-18-1",
+    "service": "claude",
+    "date": "2025.12.18",
+    "kind": "정책",
+    "title": "사용자 웰빙 보호 안전장치 강화",
+    "summary": "170개 넘는 상담 핫라인으로 연결하는 위기 분류기와, 아첨이 크게 줄어든 모델 등 새 안전장치를 도입했어요.",
+    "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-12-18-2",
+    "service": "claude",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "조직용 Skills 관리·Agent Skills 개방 표준·Chrome 베타 확대",
+    "summary": "Team·Enterprise 조직 단위 스킬 관리, 파트너 스킬 디렉터리, 개방 표준 Agent Skills가 나왔어요. Claude in Chrome은 모든 유료 플랜에 베타로 열렸어요.",
+    "details": [
+      "Chrome: Claude Code 연동, 워크플로 녹화, 콘솔 로그 읽기, 관리자 제어"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

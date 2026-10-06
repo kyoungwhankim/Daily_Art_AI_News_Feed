@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-01-21-1",
+    "service": "comfyui",
+    "date": "2026.01.21",
+    "kind": "연동",
+    "title": "ComfyUI, Seedance 1.5 Pro 오디오·영상 동시 생성",
+    "summary": "대사·음악·효과음이 맞춰진 영상을 한 번에 만드는 ByteDance Seedance 1.5 Pro를 ComfyUI에서 쓸 수 있어요. 7개 이상 언어 립싱크를 지원해요.",
+    "details": [
+      "v0.10.0: API 노드 자동 탐색, 고급 파라미터 위젯",
+      "Bria Edit 노드"
+    ],
+    "url": "https://blog.comfy.org/p/seedance-1-5-pro-now-in-comfyui",
+    "source": "notice"
+  }
+]

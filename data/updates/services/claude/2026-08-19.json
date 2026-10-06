@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-19-1",
+    "service": "claude",
+    "date": "2026.08.19",
+    "kind": "API",
+    "title": "컴퓨터 사용 정식 출시·브라우저 사용 도구·Files API 정식",
+    "summary": "computer use가 computer_toolset_20260801로 정식 출시되고, 앱이 호스팅한 브라우저를 조작하는 browser use 도구가 새로 나왔어요. Files API도 베타를 벗어났어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+    "source": "dev"
+  }
+]

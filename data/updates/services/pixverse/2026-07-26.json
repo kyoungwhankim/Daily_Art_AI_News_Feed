@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-07-26-1",
+    "service": "pixverse",
+    "date": "2026.07.26",
+    "kind": "API",
+    "title": "PixVerse API V6 레퍼런스→영상에 omni 모드 추가",
+    "summary": "V6 Reference-to-Video API가 reference_mode \"omni\"와 video_references를 지원해 영상 레퍼런스도 넣을 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

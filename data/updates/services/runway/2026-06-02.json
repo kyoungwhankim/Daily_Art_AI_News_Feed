@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-06-02-1",
+    "service": "runway",
+    "date": "2026.06.02",
+    "kind": "API",
+    "title": "Runway Dev에 Aleph 2.0 제공",
+    "summary": "Aleph 2.0을 API로 쓸 수 있어요. 텍스트 프롬프트와 타임스탬프별 키프레임 이미지로 기존 영상을 편집해요.",
+    "details": [
+      "입력 영상 2–30초, 키프레임 최대 5장",
+      "모델 ID aleph2 (aleph2_alpha는 폐기 예정 별칭)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#aleph-20-on-runway-dev",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2025-12-16-1",
+    "service": "kling",
+    "date": "2025.12.16",
+    "kind": "기능",
+    "title": "Kling VIDEO 2.6 Voice Control 기능 추가",
+    "summary": "Kling VIDEO 2.6에서 캐릭터별 목소리를 지정해 영상마다 같은 목소리를 유지할 수 있는 Voice Control이 나왔어요.",
+    "details": [
+      "API: voice_list로 지정 음성 사용, 5초 6 units·10초 12 units",
+      "커스텀 음성과 시스템 프리셋 음성 지원"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/7trhudk78j",
+    "source": "notice"
+  }
+]

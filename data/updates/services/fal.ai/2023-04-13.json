@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2023-04-13-1",
+    "service": "fal.ai",
+    "date": "2023.04.13",
+    "kind": "기능",
+    "title": "fal-serverless Web Endpoints 도입",
+    "summary": "Python 함수를 관리형 웹 서버로 노출해 REST API로 호출할 수 있는 Web Endpoints가 fal-serverless에 추가됐어요.",
+    "url": "https://blog.fal.ai/introducing-web-endpoints/",
+    "source": "notice"
+  }
+]

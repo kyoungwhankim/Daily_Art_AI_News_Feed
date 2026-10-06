@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-03-06-1",
+    "service": "scenario",
+    "date": "2025.03.06",
+    "kind": "기능",
+    "title": "Flux Sketch ControlNet·controlend 파라미터",
+    "summary": "손그림이나 선화를 렌더링하는 Flux용 Sketch ControlNet 모드와 controlend 파라미터가 추가됐어요. Live Painting도 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/v1-80-sketch-reference-controlend-faster-live-painting-more",
+    "source": "notice"
+  }
+]

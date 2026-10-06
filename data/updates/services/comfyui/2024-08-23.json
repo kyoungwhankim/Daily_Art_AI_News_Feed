@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-08-23-1",
+    "service": "comfyui",
+    "date": "2024.08.23",
+    "kind": "앱",
+    "title": "ComfyUI v0.1.x: 루프·조건 실행과 프런트엔드 개편",
+    "summary": "ComfyUI v0.1.x에서 루프와 조건 분기를 가능하게 한 실행 구조 변경(PR 2666)이 반영되고, 프런트엔드가 TypeScript로 옮겨지며 새 설정 창과 퍼지 검색이 생겼어요.",
+    "url": "https://blog.comfy.org/p/comfyui-v0-1-x-release-devil-in-the-details-2",
+    "source": "notice"
+  }
+]

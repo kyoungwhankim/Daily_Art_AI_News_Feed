@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-05-13-1",
+    "service": "comfyui",
+    "date": "2026.05.13",
+    "kind": "연동",
+    "title": "ComfyUI v0.21.1: Claude LLM 노드와 HiDream-O1",
+    "summary": "ComfyUI v0.21.1에서 Claude LLM 노드와 새 OpenAI Image·Seedream V2·Flux2 이미지 노드가 추가되고, HiDream-O1-Image를 정식 지원해요.",
+    "details": [
+      "Anima TE LoRA(Kohya) 지원",
+      "Save3D 정점 색·텍스처 저장",
+      "essentials 탭에 Create Video 추가"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-21-1",
+    "source": "notice"
+  }
+]

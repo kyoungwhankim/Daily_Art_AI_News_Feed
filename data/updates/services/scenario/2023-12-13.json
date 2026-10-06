@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2023-12-13-1",
+    "service": "scenario",
+    "date": "2023.12.13",
+    "kind": "API",
+    "title": "모델 로딩 5배 빨라짐",
+    "summary": "이미지 생성 시 모델 다운로드 속도가 5배 빨라졌고 모델 API가 더 유연해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-8-0-december-13th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-12-13-2",
+    "service": "scenario",
+    "date": "2023.12.13",
+    "kind": "기능",
+    "title": "이미지 페이지 재디자인",
+    "summary": "이미지 보기 페이지가 새로 디자인돼 확대·축소와 편집 링크가 포함된 정보 바를 제공해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-43-december-13th-2023",
+    "source": "notice"
+  }
+]

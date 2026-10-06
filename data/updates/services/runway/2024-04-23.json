@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-23-1",
+    "service": "runway",
+    "date": "2024.04.23",
+    "kind": "기능",
+    "title": "Lip Sync 영상 최대 45초",
+    "summary": "Lip Sync 영상 길이가 20초에서 45초로 늘어났어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

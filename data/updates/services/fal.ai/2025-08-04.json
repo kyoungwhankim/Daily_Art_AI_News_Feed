@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-08-04-1",
+    "service": "fal.ai",
+    "date": "2025.08.04",
+    "kind": "모델",
+    "title": "FLUX.1 Krea [dev] 추론·학습 제공",
+    "summary": "Krea와 BFL이 만든 오픈 웨이트 FLUX.1 Krea [dev]의 추론·학습 엔드포인트가 fal에 출시됐어요.",
+    "url": "https://blog.fal.ai/introducing-the-flux-1-krea-dev-on-fal/",
+    "source": "notice"
+  }
+]

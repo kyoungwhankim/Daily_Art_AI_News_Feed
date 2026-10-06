@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2023-01-01-1",
+    "service": "invokeai",
+    "date": "2023.01.01",
+    "kind": "기능",
+    "title": "InvokeAI 2.2.5: WebUI 모델 매니저와 다국어 지원",
+    "summary": "InvokeAI 2.2.5에서 WebUI 모델 매니저로 모델을 불러오고 편집할 수 있게 됐고, 사진 편집 앱 같은 Unified Canvas 대체 UI(베타)와 다국어 지원이 추가됐어요.",
+    "details": [
+      "모델 매니저: 폴더 스캔으로 .ckpt 가져오기",
+      "Unified Canvas 대체 UI 베타",
+      "러시아어·이탈리아어·포르투갈어·독일어·폴란드어 지원",
+      "Hugging Face 토큰 요구 제거"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-2-5---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

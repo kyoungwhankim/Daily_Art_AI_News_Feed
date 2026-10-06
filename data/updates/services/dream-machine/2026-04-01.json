@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dream-machine-2026-04-01-1",
+    "service": "dream-machine",
+    "date": "2026.04.01",
+    "kind": "기능",
+    "title": "Luma 계정에 팀원·관리자 역할 추가",
+    "summary": "Luma 계정에 팀원을 추가해 각자 로그인과 작업 공간을 주고, 관리자 대시보드에서 접근 권한과 크레딧 사용을 관리할 수 있어요.",
+    "details": [
+      "Admin·Team Member 두 가지 역할",
+      "팀원은 관리자 크레딧을 공용 사용",
+      "실시간 사용량 대시보드"
+    ],
+    "url": "https://lumalabs.ai/news/luma-teams",
+    "source": "notice"
+  }
+]

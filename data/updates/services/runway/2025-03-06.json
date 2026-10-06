@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-03-06-1",
+    "service": "runway",
+    "date": "2025.03.06",
+    "kind": "기능",
+    "title": "Restyle Video: 레퍼런스 이미지로 영상 스타일 변환",
+    "summary": "Gen-3 Alpha와 Turbo의 Video to Video에서 레퍼런스 이미지 한 장으로 영상 스타일을 바꿀 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

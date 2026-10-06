@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-03-17-1",
+    "service": "elevenlabs",
+    "date": "2025.03.17",
+    "kind": "요금",
+    "title": "Scribe 가격 인하와 VAD 개선",
+    "summary": "Scribe 음성 인식 가격이 내려가고 음성 구간 감지가 개선됐어요. Studio에서는 특정 멤버의 퍼블리싱 UI를 막을 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/17",
+    "source": "dev"
+  }
+]

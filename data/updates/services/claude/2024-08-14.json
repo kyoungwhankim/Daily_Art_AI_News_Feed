@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-08-14-1",
+    "service": "claude",
+    "date": "2024.08.14",
+    "kind": "API",
+    "title": "프롬프트 캐싱 베타 출시",
+    "summary": "프롬프트를 캐시해 재사용하는 기능이 베타로 나왔어요. 지연은 최대 80%, 비용은 최대 90% 줄어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-14th-2024",
+    "source": "dev"
+  }
+]

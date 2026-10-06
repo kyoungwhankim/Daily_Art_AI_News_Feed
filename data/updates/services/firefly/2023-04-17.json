@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-04-17-1",
+    "service": "firefly",
+    "date": "2023.04.17",
+    "kind": "기능",
+    "title": "Firefly 기반 영상·오디오 기능 구상 공개",
+    "summary": "NAB를 앞두고 Premiere Pro 등 영상·오디오 앱에 Firefly 생성형 AI를 넣어 분위기 묘사만으로 영상을 고치는 등의 계획을 소개했어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/04/17/reimagining-video-audio-adobe-firefly",
+    "source": "notice"
+  }
+]

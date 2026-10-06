@@ -1,0 +1,25 @@
+[
+  {
+    "id": "higgsfield-2026-08-20-1",
+    "service": "higgsfield",
+    "date": "2026.08.20",
+    "kind": "기능",
+    "title": "Video Relight·Color Palette 단독 도구 출시",
+    "summary": "기존 영상의 빛 방향·색·강도를 바꾸는 Video Relight와 프리셋이나 레퍼런스로 색감을 입히는 Color Palette를 독립 제품으로 내놨어요.",
+    "url": "https://higgsfield.ai/blog/video-relight-color-palette-higgsfield",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-08-20-2",
+    "service": "higgsfield",
+    "date": "2026.08.20",
+    "kind": "연동",
+    "title": "Blender용 Higgsfield 플러그인",
+    "summary": "Blender 뷰포트 안에서 이미지·영상·3D·애니메이션 생성 도구를 쓰고 결과를 열린 씬에 바로 넣을 수 있는 플러그인과 MCP 브리지를 소개했어요.",
+    "details": [
+      "기존 Higgsfield 계정과 크레딧 사용"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-blender-plugin",
+    "source": "notice"
+  }
+]

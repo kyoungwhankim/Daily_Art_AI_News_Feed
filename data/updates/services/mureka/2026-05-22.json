@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-05-22-1",
+    "service": "mureka",
+    "date": "2026.05.22",
+    "kind": "API",
+    "title": "리릭 비디오·리믹스 생성 API",
+    "summary": "리릭 비디오 생성과 리믹스 생성 API 두 개가 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

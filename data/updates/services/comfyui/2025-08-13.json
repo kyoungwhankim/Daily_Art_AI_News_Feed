@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2025-08-13-1",
+    "service": "comfyui",
+    "date": "2025.08.13",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.2 Fun과 LightX2V 4스텝 LoRA 지원",
+    "summary": "Wan2.2 Fun InP·Fun Control 영상 모델과 생성 속도를 크게 높이는 LightX2V Lightning LoRA를 ComfyUI에서 지원해요.",
+    "details": [
+      "v0.3.50: Qwen 이미지 모델 병합 노드와 LoRA 로딩 개선",
+      "비동기 API 노드로 외부 서비스 호출 시 블로킹 해소",
+      "AMD Radeon FP16 정확도·성능 개선"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-wan22-fun-inp-support",
+    "source": "notice"
+  }
+]

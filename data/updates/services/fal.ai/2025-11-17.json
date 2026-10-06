@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-11-17-1",
+    "service": "fal.ai",
+    "date": "2025.11.17",
+    "kind": "기능",
+    "title": "torch.compile 공유 캐시로 콜드 스타트 단축",
+    "summary": "GPU 종류별 공유 inductor 캐시로 사전 컴파일된 커널을 약 2초 만에 불러와, 워커마다 20~30초 걸리던 재컴파일을 줄일 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#november-17-2025",
+    "source": "dev"
+  }
+]

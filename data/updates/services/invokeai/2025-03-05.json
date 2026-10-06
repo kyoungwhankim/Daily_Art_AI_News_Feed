@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-03-05-1",
+    "service": "invokeai",
+    "date": "2025.03.05",
+    "kind": "기능",
+    "title": "Invoke 5.7.2: CUDA 메모리 할당기 옵션",
+    "summary": "Invoke 5.7.2에서 CUDA 메모리 할당기를 쓰는 설정이 추가돼 최대 VRAM 사용량을 줄이고 속도를 높일 수 있어요. WEBP 이미지 업로드도 지원해요.",
+    "url": "https://invoke.ai/releases/version/v5-7-2/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-06-25-1",
+    "service": "meshy",
+    "date": "2025.06.25",
+    "kind": "API",
+    "title": "Retexture API 출시",
+    "summary": "최신 모델로 기존 3D 모델에 새 텍스처를 입히는 Retexture API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  }
+]

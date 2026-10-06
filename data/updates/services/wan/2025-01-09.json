@@ -1,0 +1,16 @@
+[
+  {
+    "id": "wan-2025-01-09-1",
+    "service": "wan",
+    "date": "2025.01.09",
+    "kind": "모델",
+    "title": "Model Studio에 Wan2.1 텍스트-투-비디오 출시",
+    "summary": "Alibaba Cloud Model Studio에 Wan2.1 텍스트-투-비디오 Turbo·Plus 모델이 나왔어요. 큰 동작과 물리 법칙, 다양한 예술 스타일을 영화 같은 화질로 표현해요.",
+    "details": [
+      "wan2.1-t2v-turbo: 빠른 생성",
+      "wan2.1-t2v-plus: 더 높은 화질"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

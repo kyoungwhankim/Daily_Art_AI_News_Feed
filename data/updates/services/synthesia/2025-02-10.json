@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2025-02-10-1",
+    "service": "synthesia",
+    "date": "2025.02.10",
+    "kind": "API",
+    "title": "Synthesia API 요청 한도 등급제 도입",
+    "summary": "API 요청 한도가 등급제로 바뀌어 최상위 등급은 이전보다 최대 2배 높아졌고, 읽기와 쓰기 한도가 따로 적용돼요.",
+    "url": "https://docs.synthesia.io/changelog/api-improvements-1",
+    "source": "dev"
+  }
+]

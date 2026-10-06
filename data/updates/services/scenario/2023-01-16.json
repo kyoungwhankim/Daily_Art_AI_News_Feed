@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-01-16-1",
+    "service": "scenario",
+    "date": "2023.01.16",
+    "kind": "기능",
+    "title": "Img2Img 가중치 슬라이더 추가",
+    "summary": "Img2Img에 입력 이미지 반영 정도를 0–100으로 고르는 슬라이더가 생겼어요. 값이 높을수록 원본과 비슷하게 나와요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-16-2023",
+    "source": "notice"
+  }
+]

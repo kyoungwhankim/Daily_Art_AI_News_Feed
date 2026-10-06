@@ -1,0 +1,1920 @@
+[
+  {
+    "id": "flow-studio-2026-10-01-1",
+    "service": "flow-studio",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Flow Studio, MiniMax H3 Max와 ElevenLabs v3 추가",
+    "summary": "MiniMax H3 Max 영상 모델과 Seed Audio 1.0, ElevenLabs v3·Turbo v2.5가 추가돼 영상과 보이스오버·음악·효과음을 만들 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-09-30-1",
+    "service": "flow-studio",
+    "date": "2026.09.30",
+    "kind": "기능",
+    "title": "Flow Studio Canvas, Text·Panorama 노드와 마스크 편집",
+    "summary": "Canvas에 텍스트 생성 노드, 360도 Panorama 노드, 마스크·프롬프트 기반 이미지 부분 편집이 추가됐어요. 프롬프트 개선과 Claude·Gemini·GPT 텍스트 모델도 들어왔어요.",
+    "details": [
+      "Text Node",
+      "마스크 기반 이미지 편집과 Time Machine",
+      "Panorama Node와 Worlds 가져오기",
+      "Simplified World 생성",
+      "AI 프롬프트 개선",
+      "Seedance 2.5 Face Animation"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-09-24-1",
+    "service": "iclone",
+    "date": "2026.09.24",
+    "kind": "기능",
+    "title": "iClone 8용 RTX Render Open Beta 3 공개",
+    "summary": "iClone 8과 Character Creator 5용 패스 트레이싱 렌더러 RTX Render의 세 번째 오픈 베타가 나왔어요. 실제 렌즈 프리셋, 볼류메트릭 라이트, 절차적 머티리얼 애니메이션 등 영화급 촬영 기능이 늘었어요.",
+    "details": [
+      "실제 렌즈 프리셋과 Sensor Shift(틸트시프트) 카메라",
+      "실시간 레이트레이싱 볼류메트릭 라이팅",
+      "컬러 매니지먼트 확장과 후처리 전용 채널",
+      "라이브 절차적 머티리얼 워크플로"
+    ],
+    "url": "https://magazine.reallusion.com/2026/09/24/whats-new-in-rtx-render-open-beta-3-craft-film-grade-shots-animate-materials/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-09-11-1",
+    "service": "flow-studio",
+    "date": "2026.09.11",
+    "kind": "기능",
+    "title": "Flow Studio, Autodesk Fusion 내보내기와 Audio Node",
+    "summary": "3D 에셋을 Autodesk Fusion으로 바로 내보낼 수 있고, Canvas에 오디오 업로드와 텍스트로 오디오를 만드는 Audio Node가 생겼어요.",
+    "details": [
+      "Autodesk Fusion으로 3D 에셋 내보내기",
+      "Canvas 오디오 업로드·Audio Node",
+      "Gemini 3.1 Flash TTS 지원",
+      "개선된 Face Animation 모델",
+      "3D Editor·Canvas 프로젝트 복제"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-09-04-1",
+    "service": "flow-studio",
+    "date": "2026.09.04",
+    "kind": "정책",
+    "title": "Flow Studio, Autodesk Data Platform 사용 데이터 수집",
+    "summary": "제품 사용 방식을 파악하기 위해 Autodesk Data Platform(ADP)을 쓰기 시작했고, 다음 로그인 때 개인정보 설정을 확인하라고 안내해요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-09-01-1",
+    "service": "iclone",
+    "date": "2026.09.01",
+    "kind": "앱",
+    "title": "iClone 8.75, AI Studio 독립 실행 앱으로 분리",
+    "summary": "AI Studio가 iClone과 별도로 돌아가는 독립 앱이 되어 iClone 부담이 줄었어요. Render 메뉴에서 바로 이미지·영상을 캡처해 AI Studio로 보낼 수 있어요.",
+    "details": [
+      "Render 메뉴·패널에서 AI Studio로 바로 캡처 전송",
+      "내장 AI Studio 제거, 독립 실행으로 전환",
+      "Workspace 선택 화면 제거"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-08-31-1",
+    "service": "flow-studio",
+    "date": "2026.08.31",
+    "kind": "모델",
+    "title": "Flow Studio, Wan 3·Seedance 2.0 Fast 추가",
+    "summary": "Wan 3와 Seedance 2.0 Fast 모델을 쓸 수 있고, 모델·설정별로 더 세밀한 가격 조정이 도입됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-08-27-1",
+    "service": "flow-studio",
+    "date": "2026.08.27",
+    "kind": "기능",
+    "title": "Flow Studio 대시보드 개편과 Canvas 편집 개선",
+    "summary": "대시보드가 새로 디자인됐고, Canvas에서 다중 선택·복사·복제·전체 화면 미리보기가 가능해졌어요. 3D Editor 씬 복제도 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-08-04-1",
+    "service": "flow-studio",
+    "date": "2026.08.04",
+    "kind": "기능",
+    "title": "Flow Studio, 3D Editor와 Canvas 도입",
+    "summary": "브라우저에서 캐릭터·카메라·월드로 시네마틱 씬을 만드는 3D Editor와, 노드 방식으로 이미지·영상을 생성·편집하는 Canvas가 새로 들어왔어요.",
+    "details": [
+      "설치 없이 브라우저에서 3D 씬 편집",
+      "텍스트·이미지·파노라마·영상으로 3D 월드 생성",
+      "영상에서 추출한 카메라 모션 사용",
+      "노드 기반 이미지·영상 생성 Canvas",
+      "3D Editor 렌더를 Canvas 입력으로 사용"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-07-29-1",
+    "service": "iclone",
+    "date": "2026.07.29",
+    "kind": "앱",
+    "title": "iClone 8.74, AccuFACE 2 호환과 Live Face 녹화",
+    "summary": "Motion LIVE가 AccuFACE 2와 호환되고, 표정 커브 매핑을 직접 조절할 수 있어요. iPhone Live Face 앱에서 연기자 얼굴 영상을 녹화·저장할 수도 있어요.",
+    "details": [
+      "Motion LIVE AccuFACE 2 호환",
+      "Expression Curve 매핑 자유 조절",
+      "부분 중립 표정 Set Neutral (Partial)",
+      "Live Face iOS 앱 영상 녹화·사진첩 저장",
+      "동일 텍스처 맵 링크·인스턴스 옵션"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-07-28-1",
+    "service": "iclone",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "iClone 8 RTX Render 오픈 베타 시작",
+    "summary": "NVIDIA RTX 패스 트레이싱 기반 새 렌더 모드 RTX Render 오픈 베타가 iClone 8과 Character Creator 5에서 무료로 시작됐어요. 기존 DX11 엔진과 전환하며 쓸 수 있어요.",
+    "details": [
+      "물리 기반 패스 트레이싱 라이팅",
+      "Transmission·Coat·Sheen·Hair 전용 RTX 머티리얼",
+      "실제 카메라 피사계 심도와 절차적 하늘"
+    ],
+    "url": "https://magazine.reallusion.com/2026/07/28/rtx-render-open-beta-begins-path-traced-quality-inside-character-creator-5-and-iclone-8/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-07-17-1",
+    "service": "flow-studio",
+    "date": "2026.07.17",
+    "kind": "기능",
+    "title": "Flow Studio, Maya Scene 내보내기 강화",
+    "summary": "Maya 씬 내보내기에 HumanIK 파일과 골반 오프셋·루트 모션 가중치 슬라이더가 추가됐고, Maya 2026 포맷으로 제공돼요.",
+    "details": [
+      "HumanIK 별도 파일",
+      "골반 오프셋·스케일·깊이 슬라이더",
+      "루트·카메라 모션 가중치",
+      "샷별 월드 공간 컨트롤 그룹",
+      "구 캐릭터 자동 재검증"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2026-07-16-1",
+    "service": "rokoko",
+    "date": "2026.07.16",
+    "kind": "모델",
+    "title": "Rokoko Vision 3.0 출시, Rokoko Create로 통합",
+    "summary": "단안 AI 모캡 파이프라인을 새로 만든 Vision 3.0이 나왔어요. 더 깔끔하고 빠르며, Video-to-Motion이 웹 Rokoko Create에 Text-to-Motion과 함께 들어갔어요.",
+    "details": [
+      "새 Vision 솔버로 품질·처리 속도 향상",
+      "Vision 사이트는 Rokoko Create로 리디렉트",
+      "Studio 2.6.2에서 Vision 3.0 지원",
+      "듀얼캠·온라인 웹캠 캡처는 8월 16일 종료",
+      "Smartgloves II 새 펌웨어로 Glove Ready 슈트 버튼 지원"
+    ],
+    "url": "https://www.rokoko.com/insights/introducing-rokoko-vision-3-0",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2026-07-06-1",
+    "service": "rokoko",
+    "date": "2026.07.06",
+    "kind": "정책",
+    "title": "7월 16일 Rokoko Studio 필수 업데이트와 약관 개정",
+    "summary": "7월 16일 필수 업데이트로 Rokoko Create(Text-to-Motion·Vision)와 Studio Preview를 포함하도록 이용약관이 바뀐다고 알렸어요. 사용 방식은 그대로예요.",
+    "url": "https://support.rokoko.com/hc/en-us/articles/48470600017553-Mandatory-Rokoko-Studio-Update-16-July-2026",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2026-06-25-1",
+    "service": "flow-studio",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "Flow Studio, Character LoRA Training",
+    "summary": "캐릭터 전용 LoRA를 자동으로 학습해 재사용하는 기능이 생겨, 영상 생성에서 캐릭터 일관성과 정체성 유지가 좋아졌어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-06-23-1",
+    "service": "iclone",
+    "date": "2026.06.23",
+    "kind": "요금",
+    "title": "무료 iClone Personal 출시와 AI Studio 정식 출시",
+    "summary": "30일 체험판을 대신해 기간 제한 없는 무료 iClone Personal이 나왔고, AI Studio도 정식 출시됐어요. iClone 8.73은 Seedance 2.0 멀티 레퍼런스 등 AI 연동을 넓혔어요.",
+    "details": [
+      "iClone Personal: 시간 제한 없는 무료 에디션",
+      "AI Studio 정식 출시(얼리 액세스 종료)",
+      "Seedance 2.0 이미지·영상·오디오·AI Actor 레퍼런스",
+      "3D-to-Video에 오디오·AI Actor 레퍼런스",
+      "WebP 이미지 지원"
+    ],
+    "url": "https://magazine.reallusion.com/2026/06/23/reallusion-unlocks-limitless-creation-iclone-personal-debuts-alongside-ai-studio-official-launch/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2026-06-02-1",
+    "service": "rokoko",
+    "date": "2026.06.02",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.6.1, Coil Pro 안정화 필터",
+    "summary": "장갑과 슈트 데이터를 더 잘 맞춰 자세를 바로잡는 Coil Pro Stabilization 필터가 추가됐고, OptiTrack Motive 라이브스트리밍 타깃도 생겼어요.",
+    "details": [
+      "Coil Pro 자세 균형 필터(Coil Pro+Smartsuit 시 자동)",
+      "Smartgloves II 버튼으로 원격 캘리브레이션",
+      "버튼 동작이 녹화·캘리브레이션 지연 설정 반영",
+      "OptiTrack Motive 장갑 스트리밍 타깃"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/47316328335377-Rokoko-Studio-2-6-1-Coil-Pro-Stabilization-Filter",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2026-05-25-1",
+    "service": "iclone",
+    "date": "2026.05.25",
+    "kind": "연동",
+    "title": "iClone 8.72, 3D 기반 AI 생성 도구 AI Studio 지원",
+    "summary": "3D 장면을 정밀한 입력으로 써서 이미지·영상을 생성하는 AI Studio가 iClone 8.72에 들어왔어요. Flux·Nano Banana·Veo 3·Kling·Seedance 2.0 등 여러 모델을 골라 쓸 수 있어요.",
+    "details": [
+      "3D 카메라·모션·레이아웃을 AI 입력으로 전달",
+      "이미지·영상 합성, 토킹 아바타, 캐릭터 시트",
+      "AI Studio 툴바로 가이드 소재 빠르게 가져오기",
+      "iClone 8·CC5·CC4 회원 얼리 액세스"
+    ],
+    "url": "https://magazine.reallusion.com/2026/05/25/reallusion-announces-ai-studio-the-ai-creation-workflow-built-for-3d-artists/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-05-14-1",
+    "service": "flow-studio",
+    "date": "2026.05.14",
+    "kind": "기능",
+    "title": "Flow Studio, 고정 카메라 AI MoCap 모드",
+    "summary": "카메라가 고정되고 바닥이 평평한 영상용 Static Camera AI MoCap 모드로 더 안정적이고 발 미끄러짐이 적은 3D 모션을 얻을 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-05-06-1",
+    "service": "flow-studio",
+    "date": "2026.05.06",
+    "kind": "기능",
+    "title": "Flow Studio, Google 로그인 지원",
+    "summary": "Flow Studio에 Google 계정으로 로그인하는 옵션이 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2026-04-27-1",
+    "service": "rokoko",
+    "date": "2026.04.27",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.6.0, Smartgloves II 지원",
+    "summary": "Rokoko Studio가 정확도와 연결성을 높인 차세대 손가락 캡처 장갑 Smartgloves II를 지원해요.",
+    "url": "https://support.rokoko.com/hc/en-us/articles/46119594114833-Rokoko-Studio-2-6-0-Smartgloves-II-Support",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2026-04-27-1",
+    "service": "iclone",
+    "date": "2026.04.27",
+    "kind": "앱",
+    "title": "iClone 8.71, FBX 8K 텍스처 내보내기",
+    "summary": "iClone FBX 내보내기에서 최대 8K 텍스처 옵션을 쓸 수 있게 됐고, FBX 내보내기 지연 등 여러 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-04-16-1",
+    "service": "flow-studio",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Flow Studio Asset Generator에 리깅 추가",
+    "summary": "Asset Generator로 만든 캐릭터가 리깅까지 돼 바로 Live Action 프로젝트에 쓸 수 있어요. Trellis 2와 Nano Banana 계열 모델도 추가됐어요.",
+    "details": [
+      "생성 캐릭터 자동 리깅",
+      "Live Action에서 Neural Layer로 렌더 향상",
+      "Trellis 2 3D 생성, Nano Banana·Pro·2 이미지 생성",
+      "GLB 다운로드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2026-03-26-1",
+    "service": "rokoko",
+    "date": "2026.03.26",
+    "kind": "연동",
+    "title": "Rokoko Studio 2.5.2, Rokoko Create 연동",
+    "summary": "텍스트 프롬프트로 모션을 만드는 Rokoko Create의 결과를 Studio에서 편집해 3D 엔진으로 내보낼 수 있게 됐어요.",
+    "details": [
+      "Rokoko Create 생성 모션 편집·내보내기",
+      "Clips 섹션에 Refresh Scene 버튼"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/45150579425041-Rokoko-Studio-2-5-2",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2026-02-24-1",
+    "service": "rokoko",
+    "date": "2026.02.24",
+    "kind": "기능",
+    "title": "차세대 손가락 캡처 장갑 Smartgloves II 출시",
+    "summary": "센서 퓨전 개선, 250Hz 샘플링, 더 안정적인 캘리브레이션을 갖춘 Smartgloves II가 나왔어요. 애니메이션·버추얼 프로덕션·로보틱스용이에요.",
+    "url": "https://www.rokoko.com/insights/smartgloves-ii-precision-finger-hand-capture-redefined",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-02-12-1",
+    "service": "flow-studio",
+    "date": "2026.02.12",
+    "kind": "기능",
+    "title": "Flow Studio, Asset Creator 전체 공개",
+    "summary": "Flow Studio 안에서 고품질 3D 캐릭터와 에셋을 만드는 Asset Creator가 모든 사용자에게 열렸어요. OBJ·STL 다운로드도 지원해요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-01-26-1",
+    "service": "iclone",
+    "date": "2026.01.26",
+    "kind": "앱",
+    "title": "iClone 8.7, 노드 기반 Motion Planning 플러그인",
+    "summary": "노드 그래프로 사람 동작 스크립트와 시뮬레이션을 짜는 Motion Planning 플러그인이 나왔어요. Fly Camera, Merge Prop, USD 단위 선택 등도 추가됐어요.",
+    "details": [
+      "Motion Planning 노드 그래프와 재사용 MP Set",
+      "WASD로 움직이는 Fly Camera",
+      "프롭을 단일 메시·머티리얼로 합치는 Merge Prop",
+      "AI Prompt Control 옵션 확장",
+      "USD 내보내기 단위 선택"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2026-01-06-1",
+    "service": "iclone",
+    "date": "2026.01.06",
+    "kind": "요금",
+    "title": "iClone 8.65, 구독형 라이선스 도입",
+    "summary": "iClone에 구독 기반 라이선스가 추가됐어요. DA 포인트 잔액 새로고침, AccuPOSE Core 일부 무료 에셋 내장 등도 들어갔어요.",
+    "details": [
+      "구독형 라이선스",
+      "DA 포인트 잔액 새로고침",
+      "AccuPOSE Core 일부 에셋 무료 내장",
+      "프로그레시브 텍스처 로딩 최대 100%"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-12-05-1",
+    "service": "rokoko",
+    "date": "2025.12.05",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.5.1, 실시간 로코모션과 Drift Fix",
+    "summary": "새 로코모션 엔진이 실시간으로도 돌아가고, 녹화 시작·끝 위치를 맞춰 루트 드리프트를 보정하는 Auto Drift Fix 필터가 추가됐어요.",
+    "details": [
+      "새 Locomotion Engine 실시간 동작",
+      "Auto Drift Fix 필터",
+      "정지·앉기 자세의 idle drift 감소",
+      "후처리 속도 향상"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/41620795192977-Rokoko-Studio-2-5-1",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2025-12-04-1",
+    "service": "iclone",
+    "date": "2025.12.04",
+    "kind": "기능",
+    "title": "iClone 8.63 업데이트, Video Mocap 내장",
+    "summary": "Video Mocap 플러그인이 iClone에 내장돼 따로 설치하지 않고 툴바에서 바로 켤 수 있어요. What's New 창에서 플러그인을 활성화할 수도 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2025-10-29-1",
+    "service": "iclone",
+    "date": "2025.10.29",
+    "kind": "기능",
+    "title": "iClone Video Mocap 출시, 영상을 3D 모션으로",
+    "summary": "일반 영상을 전신·상체·손가락까지 정밀한 3D 모션으로 바꾸는 iClone Video Mocap이 나왔고, iClone 8.63이 이를 지원해요. 실시간 미리보기와 일괄 생성도 돼요.",
+    "details": [
+      "전신·상체·손가락 트래킹",
+      "실시간 미리보기, 시각적 트리밍, 일괄 생성",
+      "Motion Layer·Curve Editor·AccuPOSE로 후편집"
+    ],
+    "url": "https://magazine.reallusion.com/2025/10/29/iclone-video-mocap-converts-videos-into-editable-3d-motion/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-10-23-1",
+    "service": "rokoko",
+    "date": "2025.10.23",
+    "kind": "기능",
+    "title": "Studio Preview에 Text-to-Motion 도입",
+    "summary": "자연어 프롬프트로 캐릭터 애니메이션을 만드는 AI Text-to-Motion이 Rokoko Studio Preview에 들어왔어요. 유료 플랜 사용자에게 실험 기능으로 열렸어요.",
+    "url": "https://www.rokoko.com/insights/introducing-text-to-motion",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2025-10-23-1",
+    "service": "flow-studio",
+    "date": "2025.10.23",
+    "kind": "기능",
+    "title": "Flow Studio, 에셋 폴더·태그 관리",
+    "summary": "My Assets에서 폴더로 에셋을 정리하고 태그·필터·즐겨찾기로 찾을 수 있게 됐어요. 카메라 트래킹 정확도와 포인트 클라우드도 좋아졌어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-10-02-1",
+    "service": "rokoko",
+    "date": "2025.10.02",
+    "kind": "기능",
+    "title": "Smartsuit Pro 로코모션 엔진 대규모 업그레이드",
+    "summary": "Rokoko Studio 2.5와 함께 Smartsuit Pro의 새 로코모션 엔진이 나왔어요. 발 미끄러짐과 엉덩이 떨림을 줄인 기반 업그레이드예요.",
+    "details": [
+      "새 Locomotion 필터(우선 후처리에서 적용)",
+      "새 녹화는 기본 적용, Legacy Locomotion 선택 가능",
+      "기존 녹화는 원하면 새 필터로 재처리"
+    ],
+    "url": "https://www.rokoko.com/insights/smartsuit-pro-locomotion-engine-upgrade",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2025-08-27-1",
+    "service": "iclone",
+    "date": "2025.08.27",
+    "kind": "앱",
+    "title": "iClone 8.6, Character Creator 5 호환과 MetaHuman 표정 임포트",
+    "summary": "새로 나온 Character Creator 5와 호환돼 CC5 HD 캐릭터와 MetaHuman 얼굴 애니메이션 임포트를 지원해요. 새 눈 셰이더와 UE5·Marmoset 내보내기 프리셋도 추가됐어요.",
+    "details": [
+      "MetaHuman 얼굴 애니메이션 임포트(CC5 필요)",
+      "CC5 HD 캐릭터·HD/Extended-Plus 프로필",
+      "Digital Human 눈 Occlusion·Tearline(HD) 셰이더",
+      "Unreal 5·Marmoset Toolbag 내보내기 프리셋",
+      "Live Face·AccuFACE 개선"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2025-08-12-1",
+    "service": "flow-studio",
+    "date": "2025.08.12",
+    "kind": "요금",
+    "title": "Flow Studio 새 요금제와 무료 티어",
+    "summary": "Free·Lite·Standard·Pro·Enterprise 새 구독 티어가 나왔고 무료 티어도 생겼어요. 신규 가입과 결제는 이제 Autodesk를 통해 진행돼요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-07-24-1",
+    "service": "rokoko",
+    "date": "2025.07.24",
+    "kind": "앱",
+    "title": "Rokoko Studio에서 Studio Preview로 전환 예고",
+    "summary": "Unity 기반이던 Rokoko Studio를 성능·속도를 높인 새 Studio Preview로 옮겨 간다고 밝혔어요. 완전히 새로 설계된 차세대 버전이에요.",
+    "url": "https://www.rokoko.com/insights/transitioning-from-rokoko-studio-to-studio-preview",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2025-06-30-1",
+    "service": "flow-studio",
+    "date": "2025.06.30",
+    "kind": "연동",
+    "title": "Flow Studio, MetaHuman 바디 애니메이션 내보내기",
+    "summary": "AI Motion Capture 결과를 루트 본까지 포함한 MetaHuman 바디 애니메이션으로 Unreal Engine에 내보낼 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-05-29-1",
+    "service": "rokoko",
+    "date": "2025.05.29",
+    "kind": "연동",
+    "title": "Rokoko Headcam, MetaHuman Animator와 연동",
+    "summary": "Epic Games와 협력해 Headcam이 MetaHuman Animator의 단일 카메라 방식과 매끄럽게 연동돼요. 아이폰 리그 없이 고품질 얼굴 캡처가 가능해요.",
+    "url": "https://www.rokoko.com/insights/metahuman-animator-x-rokoko-headcam",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2025-05-07-1",
+    "service": "flow-studio",
+    "date": "2025.05.07",
+    "kind": "요금",
+    "title": "Flow Studio, Autodesk M&E Collection에 포함",
+    "summary": "Autodesk Flow Studio가 Autodesk Media & Entertainment Collection에 포함됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2025-04-14-1",
+    "service": "iclone",
+    "date": "2025.04.14",
+    "kind": "앱",
+    "title": "iClone 8.53, Timecode 플러그인 호환과 AI Smart Search 강화",
+    "summary": "Timecode 플러그인과 호환되고 AI Smart Search가 모션 검색과 유사도 매칭을 지원해요. 타임라인 표시 모드와 렌더 번인 옵션도 추가됐어요.",
+    "details": [
+      "Timecode 플러그인 호환",
+      "AI Smart Search 모션 검색·유사도 매칭",
+      "Motion LIVE 테이크 이름·Align to Source",
+      "타임라인 표시 모드, 첫 프레임 타임코드 설정",
+      "렌더 번인 옵션"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-03-20-1",
+    "service": "rokoko",
+    "date": "2025.03.20",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.8, 엄지 리타기팅 옵션 추가",
+    "summary": "커스텀 캐릭터 엄지의 사전 회전을 리타기팅 옵션에서 조정할 수 있고, Unreal 플러그인에서 라이브스트림 스켈레톤의 액터 이름을 생략할 수 있어요.",
+    "details": [
+      "커스텀 캐릭터 엄지 pre-rotation 옵션",
+      "풋락 편집 시 플레이헤드가 커서 추적",
+      "Unreal 플러그인 액터 이름 생략 옵션",
+      "Windows 11 24H2 다중 Smartglove 연결 문제 수정"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/33634504438801-Rokoko-Studio-2-4-8",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2025-02-12-1",
+    "service": "flow-studio",
+    "date": "2025.02.12",
+    "kind": "기능",
+    "title": "Flow Studio, Clean Plate·Camera Track 단독 Wonder Tool",
+    "summary": "클린 플레이트와 카메라 트래킹을 각각 단독 Wonder Tool로 쓸 수 있어요. 배우가 없는 영상에서도 카메라 움직임을 추출할 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2025-01-22-1",
+    "service": "rokoko",
+    "date": "2025.01.22",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.7, CSV 내보내기 추가",
+    "summary": "Pro·Enterprise 플랜에서 모션 데이터를 CSV로 내보낼 수 있고, Rokoko Vision 클립에 트레드밀 필터를 쓸 수 있어요. 펌웨어 업데이트도 Studio와 분리됐어요.",
+    "details": [
+      "CSV 내보내기(Pro·Enterprise)",
+      "Rokoko Vision 클립 트레드밀 필터",
+      "장비 펌웨어 업데이트를 Studio 릴리스와 분리"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/32019915383697-Rokoko-Studio-2-4-7",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2024-12-23-1",
+    "service": "flow-studio",
+    "date": "2024.12.23",
+    "kind": "기능",
+    "title": "Flow Studio, Character Pass 렌더",
+    "summary": "Live Action 프로젝트에서 캐릭터만 합친 Character Pass를 내려받아 전체를 다시 렌더하지 않고 합성을 다듬을 수 있어요. Render 단계 이름은 Export로 바뀌었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2024-11-28-1",
+    "service": "iclone",
+    "date": "2024.11.28",
+    "kind": "앱",
+    "title": "iClone 8.52, AI 포즈 기술 AccuPOSE 도입",
+    "summary": "AI 기반 자연스러운 포즈 기술 AccuPOSE가 들어왔어요. Curve Filter, Motion Trail, 비파괴 Break 등 전문 애니메이션 편집 기능도 늘었어요.",
+    "details": [
+      "AI 포징 AccuPOSE",
+      "뷰포트 본별 Motion Trail",
+      "새 Curve Filters",
+      "Non-destructive Break"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2024-11-04-1",
+    "service": "iclone",
+    "date": "2024.11.04",
+    "kind": "기능",
+    "title": "iClone 8.51, AI Smart Search 통합",
+    "summary": "Content Store·Marketplace·ActorCore의 모델과 애니메이션을 찾아 주는 AI Smart Search가 iClone에 통합됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-10-30-1",
+    "service": "flow-studio",
+    "date": "2024.10.30",
+    "kind": "기능",
+    "title": "Flow Studio, Video to 3D Scene 프로젝트 타입",
+    "summary": "멀티컷 영상을 올리면 캐릭터와 카메라의 공간 연속성을 자동으로 맞춰 3D 씬으로 만들어 줘요. 가려진 몸도 Motion Prediction으로 자연스럽게 추정해요.",
+    "details": [
+      "Animation / Video to 3D Scene 프로젝트",
+      "가림·화면 밖 구간 Motion Prediction",
+      "새 캐릭터 Nick"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-10-29-1",
+    "service": "rokoko",
+    "date": "2024.10.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.6, 선택적 업데이트와 프리셋 저장",
+    "summary": "앞으로 대부분의 업데이트를 원할 때 설치할 수 있게 됐고, Coil Pro 3D 오차 시각화와 얼굴 필터·내보내기 프리셋 저장이 추가됐어요.",
+    "details": [
+      "대부분 업데이트를 선택 설치로 전환",
+      "Coil Pro 3D 신호 오차 시각화",
+      "Face Capture 필터 프리셋 저장(유료)",
+      "Newton 스켈레톤 UE5 내보내기 프리셋",
+      "내보내기 설정 프리셋(유료)"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/29606540466321-Rokoko-Studio-2-4-6",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2024-09-19-1",
+    "service": "flow-studio",
+    "date": "2024.09.19",
+    "kind": "기능",
+    "title": "Flow Studio, 캐릭터 텍스처 다운로드",
+    "summary": "Flow Studio 기본 캐릭터의 텍스처를 플랫폼에서 바로 내려받을 수 있게 됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-09-10-1",
+    "service": "rokoko",
+    "date": "2024.09.10",
+    "kind": "요금",
+    "title": "Face Capture, Studio Pro 플랜에 무료 포함",
+    "summary": "연 480달러 추가 요금이던 Face Capture가 이제 Studio Pro 플랜에 추가 비용 없이 포함돼요. Headcam 출하 시작과 맞춘 변경이에요.",
+    "url": "https://www.rokoko.com/insights/face-capture-is-now-part-of-our-rokoko-pro-plan",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2024-09-05-1",
+    "service": "iclone",
+    "date": "2024.09.05",
+    "kind": "앱",
+    "title": "iClone 8.5, 프롭 상호작용 MD Prop과 Smart Accessory",
+    "summary": "캐릭터가 프롭과 상호작용하는 MD Prop(Prop Interaction) 템플릿 5종과 Smart Accessory가 추가된 대규모 업데이트예요.",
+    "details": [
+      "Actionable·State Switch 등 MD Prop 템플릿 5종",
+      "Smart Accessory"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-08-22-1",
+    "service": "rokoko",
+    "date": "2024.08.22",
+    "kind": "요금",
+    "title": "창립 10주년 Indie Creator Bundle 40% 할인",
+    "summary": "창립 10주년을 맞아 인디 크리에이터용 Indie Creator Bundle을 내놓고 9월 말까지 40% 할인해 줘요.",
+    "url": "https://www.rokoko.com/insights/rokoko-is-turning-10-were-sharing-the-love-with-all-indie-creators-with-the-launch-of-a-new-bundle-discount",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-08-05-1",
+    "service": "flow-studio",
+    "date": "2024.08.05",
+    "kind": "요금",
+    "title": "Flow Studio, 무료로 개별 내보내기 요소 다운로드",
+    "summary": "Live Action 템플릿 프로젝트에서는 유료 구독 없이도 개별 내보내기 요소를 받을 수 있어요. Maya·USD·Unreal 씬 FPS도 입력 영상과 같아졌어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-07-09-1",
+    "service": "flow-studio",
+    "date": "2024.07.09",
+    "kind": "기능",
+    "title": "Autodesk Flow Studio, 프로젝트 즐겨찾기",
+    "summary": "프로젝트에 별표를 달아 즐겨찾기만 걸러 볼 수 있게 됐고, 영상 업로드 흐름이 개선돼 File Not Found 오류가 줄었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-07-03-1",
+    "service": "rokoko",
+    "date": "2024.07.03",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.5, Headcam 대응과 Unreal 연동 개편",
+    "summary": "새 Headcam과 Android Face Capture 앱을 위한 준비가 들어갔고, Unreal Engine 라이브스트리밍·내보내기 연동이 전면 개편됐어요.",
+    "details": [
+      "Headcam·Android Face Capture 앱 대응",
+      "Unreal Engine 라이브스트리밍·내보내기 개편",
+      "설치·업데이트 흐름 개편",
+      "Details 패널 Transform 섹션"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/26411261719569-Rokoko-Studio-2-4-5",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2024-06-20-1",
+    "service": "flow-studio",
+    "date": "2024.06.20",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya·USD 씬에 포인트 클라우드",
+    "summary": "카메라 트래킹을 돌린 샷은 Maya·USD 씬 내보내기에 포인트 클라우드가 포함되고, 초점 거리 추정 모델도 개선됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2024-06-19-1",
+    "service": "iclone",
+    "date": "2024.06.19",
+    "kind": "앱",
+    "title": "iClone 8.42, BuildingGen·프롭 분포 옵션 개선",
+    "summary": "BuildingGen 최적화에서 창문·문을 제외할 수 있고, Prop Distribution에 Z 오프셋이 생겼어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-05-30-1",
+    "service": "flow-studio",
+    "date": "2024.05.30",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya 워크플로·Unreal 씬 개선",
+    "summary": "Maya에서 프록시를 원본 캐릭터로 바꿔도 깨지지 않고, Unreal 씬에 절차적 Control Rig가 생성돼요. 새 캐릭터 Maria와 Apple·Google Pay 결제도 추가됐어요.",
+    "details": [
+      "Maya 원본 캐릭터 교체·FBX 로드 지원",
+      "Unreal 씬 캐릭터 인스턴싱과 Control Rig",
+      "새 캐릭터 Maria",
+      "Apple Pay·Google Pay 결제"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-05-22-1",
+    "service": "rokoko",
+    "date": "2024.05.22",
+    "kind": "기능",
+    "title": "초경량 얼굴 캡처 장치 Rokoko Headcam 발표",
+    "summary": "240g짜리 경량 얼굴 모션캡처 장치 Headcam을 발표했어요. 60fps 카메라를 달았고 사전 주문가는 495달러예요.",
+    "url": "https://www.rokoko.com/insights/its-time-to-ditch-the-bulky-helmets-rokoko-unveils-worlds-lightest-face-mocap-device",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2024-04-17-1",
+    "service": "iclone",
+    "date": "2024.04.17",
+    "kind": "앱",
+    "title": "iClone 8.41, BuildingGen 호환과 EXR 렌더",
+    "summary": "BuildingGen 1.0과 호환되고, 이미지 렌더에서 EXR 포맷을 지원해요. 경로로 메시를 만드는 Create Mesh와 MD 카메라 Smooth도 추가됐어요.",
+    "details": [
+      "BuildingGen 1.0 호환",
+      "EXR 단일·시퀀스 렌더",
+      "경로 기반 Create Mesh",
+      "MD 카메라 Smooth 파라미터",
+      "표정을 순수 모프 데이터로 FBX 내보내기"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-03-14-1",
+    "service": "flow-studio",
+    "date": "2024.03.14",
+    "kind": "기능",
+    "title": "Wonder Studio, 저화질 영상 얼굴 캡처 개선",
+    "summary": "저해상도·저품질 영상 구간에서도 얼굴 추정 결과가 좋아지도록 페이셜 캡처 기술이 개선됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-03-11-1",
+    "service": "rokoko",
+    "date": "2024.03.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.4, Coil Pro Elevation Tracking과 얼굴 필터",
+    "summary": "Coil Pro와 Smartsuit Pro II 조합에서 Elevation Tracking을 쓸 수 있고, Face Capture 표정·눈 깜빡임을 조절하는 첫 필터가 생겼어요.",
+    "details": [
+      "Coil Pro Elevation Tracking",
+      "Face Capture 표정·깜빡임 범위 필터"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/23246986876305-Rokoko-Studio-2-4-4",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2024-02-29-1",
+    "service": "flow-studio",
+    "date": "2024.02.29",
+    "kind": "연동",
+    "title": "Wonder Studio Maya 애드온, 카메라 플레이트 로딩 도구",
+    "summary": "Maya 애드온에 각 카메라에 플레이트를 불러오는 새 도구가 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-02-12-1",
+    "service": "flow-studio",
+    "date": "2024.02.12",
+    "kind": "기능",
+    "title": "Wonder Studio, Unreal Engine 씬 내보내기",
+    "summary": "Live Action 프로젝트를 샷별 레벨 폴더, 서브시퀀스, 인스턴스 스켈레탈 메시 등을 갖춘 Unreal Engine 씬으로 내보낼 수 있어요.",
+    "details": [
+      "샷별 레벨 폴더와 서브시퀀스",
+      "USD 캐릭터 머티리얼 인스턴스",
+      "처리된 프로젝트 원본 영상 다운로드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2024-01-22-1",
+    "service": "flow-studio",
+    "date": "2024.01.22",
+    "kind": "기능",
+    "title": "Wonder Studio, 실사 카메라 트래킹 매칭",
+    "summary": "Live Action 프로젝트에서 실제 카메라 움직임을 3D 가상 카메라에 자동으로 맞춰요. AI MoCap 내보내기에 카메라 트래킹과 별도 카메라 FBX도 포함돼요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2024-01-05-1",
+    "service": "rokoko",
+    "date": "2024.01.05",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.3, Coil Pro 정식 지원",
+    "summary": "Coil Pro를 Smartgloves와 함께 완전히 지원해 손에 절대 위치를 주고 드리프트를 줄여요. Unreal Engine 5 내보내기 프리셋도 추가됐어요.",
+    "details": [
+      "Coil Pro + Smartgloves 지원",
+      "Smartsuit Pro II·Smartgloves 새 펌웨어 필요",
+      "Unreal Engine 5 내보내기 프리셋"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/21445198239761-Rokoko-Studio-2-4-3",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2023-12-18-1",
+    "service": "flow-studio",
+    "date": "2023.12.18",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya Scene 내보내기 출시",
+    "summary": "렌더 레이어와 Camera Sequencer가 미리 구성된 Maya 씬으로 내보낼 수 있어요. 애니메이션을 보존한 채 Maya 툴로 캐릭터를 다듬을 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-12-06-1",
+    "service": "iclone",
+    "date": "2023.12.06",
+    "kind": "앱",
+    "title": "iClone 8.4, 군중 시뮬레이션 내장",
+    "summary": "원하는 공간에 대형을 정해 사실적인 3D 군중을 뿌리고 애니메이션하는 Crowd Simulation이 내장됐어요. Motion Director 커스텀 컨트롤도 추가됐어요.",
+    "details": [
+      "Generate Crowd와 군중 템플릿",
+      "Distribute Prop 프롭 분포",
+      "NavMesh 생성",
+      "Motion Director 커스텀 인터랙티브 컨트롤"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2023-12-04-1",
+    "service": "flow-studio",
+    "date": "2023.12.04",
+    "kind": "기능",
+    "title": "Wonder Studio, USD 씬 내보내기 지원",
+    "summary": "Live Action과 AI MoCap 프로젝트를 USD 씬으로 내보낼 수 있어 다양한 DCC 툴에서 애니메이션·조명 등을 편집할 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2023-11-20-1",
+    "service": "flow-studio",
+    "date": "2023.11.20",
+    "kind": "기능",
+    "title": "Wonder Studio, 새 캐릭터 3종 추가",
+    "summary": "Brain Bot, Meera, Charlie 세 캐릭터가 라이브러리에 추가됐고, Live Action Advanced 옵션에 GIF 설명이 붙었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-11-16-1",
+    "service": "iclone",
+    "date": "2023.11.16",
+    "kind": "앱",
+    "title": "iClone 8.33, Perception Neuron 타임코드 녹화",
+    "summary": "Full-Frame Recording(Timecode)이 Perception Neuron 프로필도 지원하게 됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2023-11-08-1",
+    "service": "flow-studio",
+    "date": "2023.11.08",
+    "kind": "연동",
+    "title": "Wonder Studio, Maya·Blender 캐릭터 검증 애드온",
+    "summary": "Maya와 Blender용 검증 애드온으로 캐릭터 호환성을 로컬에서 바로 확인할 수 있어요. 이름 규칙 등 요구사항도 줄었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-11-06-1",
+    "service": "iclone",
+    "date": "2023.11.06",
+    "kind": "연동",
+    "title": "iClone 8.33, AccuFACE 1.0 호환과 타임코드 녹화",
+    "summary": "AI 얼굴 모캡 AccuFACE 1.0과 호환되고, 트래킹 지연으로 인한 프레임 누락을 막는 Full-Frame Recording(Timecode)이 Motion LIVE에 추가됐어요.",
+    "details": [
+      "AccuFACE 1.0 호환",
+      "Full-Frame Recording(Timecode): iPhone·AccuFACE·Xsens·Rokoko 지원",
+      "도킹 패널 최소 크기 축소로 뷰포트 확대"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-10-16-1",
+    "service": "iclone",
+    "date": "2023.10.16",
+    "kind": "연동",
+    "title": "iClone 8.32, ZBrush Face Tools 1.0 호환",
+    "summary": "iClone 8.32가 ZBrush Face Tools 1.0과 호환되도록 업데이트됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2023-09-14-1",
+    "service": "flow-studio",
+    "date": "2023.09.14",
+    "kind": "기능",
+    "title": "Wonder Studio, 단독 AI Motion Capture와 크레딧제 도입",
+    "summary": "아무 영상에서나 마커리스 몸·손 모션캡처 데이터를 뽑아내는 단독 AI Motion Capture 프로젝트가 추가됐어요. 프로젝트별 렌더 비용이 달라 렌더 초로 바꿔 쓰는 크레딧이 도입됐어요.",
+    "details": [
+      "AI Motion Capture 프로젝트 타입",
+      "렌더 초로 전환 가능한 크레딧",
+      "오류 프로젝트에 ID·오류 상세 미리보기",
+      "새 템플릿 추가"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2023-09-11-1",
+    "service": "rokoko",
+    "date": "2023.09.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.2, Intel Mac 지원과 Command API 확장",
+    "summary": "Intel Mac을 다시 지원하고, Command API 명령이 늘어 Unreal·Unity에서 Studio를 제어할 수 있어요. 임포트 캐릭터에 Face Capture도 적용돼요.",
+    "details": [
+      "Intel 기반 Mac 지원",
+      "UE4/UE5 A-포즈 자동 인식, UE5 A-Pose 내보내기",
+      "ARKit 블렌드셰이프 캐릭터에 Face Capture",
+      "Command API 라이브스트림·재생 명령 추가"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/18467538187409-Rokoko-Studio-2-4-2",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2023-08-31-1",
+    "service": "rokoko",
+    "date": "2023.08.31",
+    "kind": "기능",
+    "title": "Rokoko Vision 출시, 듀얼 카메라 AI 모캡",
+    "summary": "Rokoko Video가 Rokoko Vision으로 바뀌고, 카메라 두 대를 연결해 정확도를 크게 높이는 Dual Camera 기능이 추가됐어요.",
+    "url": "https://www.rokoko.com/insights/introducing-rokoko-vision-elevate-your-motion-capture-with-dual-camera-precision",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-08-02-1",
+    "service": "iclone",
+    "date": "2023.08.02",
+    "kind": "연동",
+    "title": "iClone 8.31, Omniverse Live Sync 정식 지원",
+    "summary": "iClone Omniverse Connector 8.3과 호환돼, 애니메이션 작업 중 Omniverse 렌더를 실시간으로 보며 USD 데이터를 양방향으로 주고받을 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-06-19-1",
+    "service": "iclone",
+    "date": "2023.06.19",
+    "kind": "앱",
+    "title": "iClone 8.3, 프로젝트 길이 확대와 블렌드 맵 베이크",
+    "summary": "최대 프로젝트 길이가 5만 4천에서 21만 6천 프레임으로 늘었고, 블렌드 맵 베이크·UV 설정 버튼과 MD 트리거 패널 페이징이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2023-06-15-1",
+    "service": "rokoko",
+    "date": "2023.06.15",
+    "kind": "기능",
+    "title": "절대 위치 트래킹 장치 Coil Pro 공개",
+    "summary": "IMU와 EMF를 결합한 Volta 트래킹 기술 기반의 Coil Pro를 공개했어요. 드리프트 없이 절대 위치를 잡아 주는 모션캡처 장치예요.",
+    "url": "https://www.rokoko.com/insights/coil-pro-absolute-position-tracking-announcement",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2023-04-26-1",
+    "service": "rokoko",
+    "date": "2023.04.26",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.0, 리타기팅과 커스텀 캐릭터 임포트",
+    "summary": "Studio 안에서 바로 커스텀 캐릭터를 불러와 라이브·녹화 모션을 리타기팅할 수 있게 됐어요. 요금제도 개편돼 일부 기능은 Plus·Pro 전용이 됐어요.",
+    "details": [
+      "커스텀 캐릭터(.fbx) 임포트와 리타기팅(Plus 플랜)",
+      "씬 복사로 팀원 씬 접근",
+      "녹화 시작/정지 UDP 트리거",
+      "VRChat·VMC 실험적 라이브스트리밍",
+      "구독 플랜 개편"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/14843715531281-Rokoko-Studio-2-4-0",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2023-03-16-1",
+    "service": "iclone",
+    "date": "2023.03.16",
+    "kind": "앱",
+    "title": "iClone 8.21, 최대 텍스처 렌더 토글과 AutoSetup JSON",
+    "summary": "최대 텍스처 해상도 렌더를 켜고 끌 수 있게 됐고, 3ds Max·Blender 프리셋으로 FBX를 내보내면 AutoSetup용 JSON도 함께 나와요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2023-02-24-1",
+    "service": "rokoko",
+    "date": "2023.02.24",
+    "kind": "기능",
+    "title": "Smartsuit Pro II Sensor Fusion 2.0 펌웨어",
+    "summary": "Smartsuit Pro II용 Sensor Fusion 2.0 업데이트로 자기 간섭에 강해져 드리프트가 줄고 걷기·달리기 트래킹이 더 정확해졌어요.",
+    "url": "https://www.rokoko.com/insights/sensor-fusion-2-0-more-accuracy-less-drift",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2023-02-23-1",
+    "service": "iclone",
+    "date": "2023.02.23",
+    "kind": "앱",
+    "title": "iClone 8.2, 다이내믹 주름 시스템 도입",
+    "summary": "표정 모프에 따라 실시간으로 주름이 생기는 Dynamic Wrinkle System과 더 사실적인 Look-at이 추가됐어요. 지연 텍스처 로딩으로 작업 속도도 빨라졌어요.",
+    "details": [
+      "CC3+ 캐릭터용 Expression Wrinkles",
+      "Look at이 눈썹·눈꺼풀 모프까지 구동",
+      "눈·목·몸통 비율 키 설정",
+      "절차적·지연 텍스처 로딩"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2023-02-20-1",
+    "service": "rokoko",
+    "date": "2023.02.20",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.2, Smartgloves 성능 향상",
+    "summary": "Smartgloves 트래킹 성능이 좋아지고, 부트로더 상태 장비를 Studio에서 직접 복구할 수 있게 됐어요. 내보내기 프레임워크도 더 빠르고 안정적으로 바뀌었어요.",
+    "details": [
+      "Smartgloves 성능 개선",
+      "부트로더 상태 장비 복구·펌웨어 재설치",
+      "내보내기 프레임워크 개편"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/13143030107537-Rokoko-Studio-2-3-2",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2023-01-11-1",
+    "service": "rokoko",
+    "date": "2023.01.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.1 베타 종료, 정식 버전 전환",
+    "summary": "새 Rokoko Studio가 베타 딱지를 떼고 공식 메인 툴이 됐어요. Sony mocopi 트래커 지원도 추가됐고, Studio Legacy는 점차 지원이 끝날 예정이에요.",
+    "details": [
+      "베타 종료, 정식 Rokoko Studio로 전환",
+      "Sony mocopi 내장 지원",
+      "장비 성능 상태 정보 강화",
+      "Rokoko Video 새 씬 자동 가져오기"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/12078655592337-Rokoko-Studio-2-3-1",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-12-05-1",
+    "service": "rokoko",
+    "date": "2022.12.05",
+    "kind": "기능",
+    "title": "AI 영상→애니메이션 무료 도구 Rokoko Video 출시",
+    "summary": "영상을 올리거나 웹캠·폰으로 찍으면 모션 파일을 자동으로 뽑아 주는 무료 AI 도구 Rokoko Video가 출시됐어요. 게임·영상 캐릭터 애니메이션에 바로 쓸 수 있어요.",
+    "url": "https://www.rokoko.com/insights/rokoko-video-launch",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2022-11-29-1",
+    "service": "rokoko",
+    "date": "2022.11.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.0, 오프라인 모드와 Motion Library 탑재",
+    "summary": "가장 많이 요청된 오프라인 모드가 추가돼 인터넷 없이 작업하고 나중에 동기화할 수 있어요. Motion Library도 Studio 안에서 바로 쓸 수 있어요.",
+    "details": [
+      "오프라인 모드와 새 동기화 프레임워크",
+      "Motion Library 탐색·구매·다운로드",
+      "팀 공유 액터 프리셋",
+      "장비 이름 변경"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/10987248236433-Rokoko-Studio-2-3-0",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2022-11-17-1",
+    "service": "iclone",
+    "date": "2022.11.17",
+    "kind": "앱",
+    "title": "iClone 8.12, Smart Content Manager 개선",
+    "summary": "Smart Content Manager에 상위 폴더 검색, 썸네일 크기 조절, 리스트·상세 보기, 모션 애니메이션 썸네일 등이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2022-10-31-1",
+    "service": "rokoko",
+    "date": "2022.10.31",
+    "kind": "연동",
+    "title": "Rokoko Studio 2.2.2, Rokoko Video 연동",
+    "summary": "단일 카메라 영상을 3D 애니메이션으로 바꾸는 무료 도구 Rokoko Video와 연동돼, 변환한 클립을 Studio에서 재생·정리·내보낼 수 있어요.",
+    "url": "https://support.rokoko.com/hc/en-us/articles/10260309626641-Rokoko-Studio-2-2-2",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-09-30-1",
+    "service": "rokoko",
+    "date": "2022.09.30",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.2.1, 샘플 씬과 필터 개선",
+    "summary": "실제 장비로 녹화·정리한 샘플 씬 6종이 추가돼 자유롭게 내보내 쓸 수 있고, Knee Pop Smoothing 필터 복귀 등 정리 도구가 좋아졌어요.",
+    "details": [
+      "슈트·장갑·Face Capture 샘플 씬 6종 제공",
+      "Knee Pop Smoothing 필터 재도입",
+      "발이 멀어질 때 자동 힙 보정",
+      "로코모션 안정성 향상"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/9503071465745-Rokoko-Studio-2-2-1",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2022-09-29-1",
+    "service": "iclone",
+    "date": "2022.09.29",
+    "kind": "앱",
+    "title": "iClone 8.1, Snap to Surface와 서브디비전",
+    "summary": "Motion Director 캐릭터가 지형 높이를 따라 오르내리는 Snap to Surface와 캐릭터 품질을 크게 높이는 Subdivision이 추가됐어요.",
+    "details": [
+      "Snap to Surface(감쇠·예측·높이 한도 설정)",
+      "Unreal Live Link 대상 씬 지원",
+      "캐릭터 Subdivision"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2022-07-20-1",
+    "service": "iclone",
+    "date": "2022.07.20",
+    "kind": "앱",
+    "title": "iClone 8.02, 루트 모션 임포트와 자동 전환",
+    "summary": "FBX 임포트에 Root Bone 옵션이 생겨 루트 모션을 바르게 가져오고, 타임라인 클립 간 자동 전환과 멀티스레드 소프트 클로스로 성능이 좋아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2022-06-29-1",
+    "service": "rokoko",
+    "date": "2022.06.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.2.0, Elevation Tracking 도입",
+    "summary": "Smartsuit Pro II에서 계단 오르기 같은 높이 변화를 잡아내는 Elevation Tracking이 추가됐고, 여러 액터를 한 클립에 녹화할 수 있게 됐어요.",
+    "details": [
+      "Smartsuit Pro II Elevation Tracking(스냅 높이 설정)",
+      "여러 액터를 한 클립에 녹화·재생·내보내기",
+      "녹화 클립 폴더 정리 기능"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/7235924355217-Rokoko-Studio-2-2-0",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2022-06-01-1",
+    "service": "iclone",
+    "date": "2022.06.01",
+    "kind": "앱",
+    "title": "iClone 8.01, 3Dconnexion과 지형 생성 플러그인 지원",
+    "summary": "3Dconnexion 장치와 Nature-Terrain Generator 플러그인을 지원하고, Scene Manager에서 드래그 앤 드롭으로 순서를 바꿀 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2022-05-12-1",
+    "service": "iclone",
+    "date": "2022.05.12",
+    "kind": "앱",
+    "title": "iClone 8 정식 출시",
+    "summary": "3DXchange를 통합한 iClone 8이 나왔어요. 드래그 앤 드롭 임포트, 즉시 리타기팅, CC4와 공유하는 Smart Content Manager로 캐릭터 애니메이션 작업이 쉬워졌어요.",
+    "details": [
+      "3DXchange 기능 통합(FBX·OBJ 드래그 앤 드롭)",
+      "즉시·커스텀 리타기팅",
+      "CC4와 공유하는 Smart Content Manager",
+      "키워드 검색·태그·팀 공유"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "rokoko-2022-04-22-1",
+    "service": "rokoko",
+    "date": "2022.04.22",
+    "kind": "요금",
+    "title": "Rokoko Studio 2.1.2, 에셋 제한 해제와 단축키 추가",
+    "summary": "모든 요금제에서 에셋 개수 제한이 사라졌고, Starter의 하루 15분 무료 라이브스트리밍은 없어진 대신 Plus 30일 무료 체험이 생겼어요.",
+    "details": [
+      "모든 플랜의 액터·클립 개수 제한 해제",
+      "Starter 무료 라이브스트리밍 종료, Plus 30일 체험 추가",
+      "다양한 키보드 단축키 지원",
+      "녹화 재생 중 센서 진단 정보 확인"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/5619449306385-Rokoko-Studio-2-1-2",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-03-22-1",
+    "service": "rokoko",
+    "date": "2022.03.22",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.1.1, 스켈레톤 타깃·BVH 내보내기 추가",
+    "summary": "내보내기 기능을 강화해 HumanIK·Mixamo·Unreal Engine 등 스켈레톤 타깃을 고를 수 있고 .bvh 내보내기도 돌아왔어요.",
+    "details": [
+      "Newton·HumanIK·Mixamo·3ds Max Biped·Unreal 스켈레톤 타깃",
+      "BVH 내보내기 재지원",
+      "드래그 앤 드롭으로 라이브 입력 연결",
+      "화면 밖 액터 방향 표시"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4931475563665-Rokoko-Studio-2-1-1",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-02-14-1",
+    "service": "rokoko",
+    "date": "2022.02.14",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.1.0, macOS 지원과 글러브 일체형 슈트 대응",
+    "summary": "첫 메이저 업데이트로 Studio Beta가 macOS에서도 돌아가고, 장갑을 슈트에 바로 연결하는 glove-ready Smartsuit Pro II를 지원해요.",
+    "details": [
+      "Rokoko Studio Beta macOS 버전 출시",
+      "glove-ready Smartsuit Pro II 지원",
+      "0프레임 T-포즈 포함 등 새 내보내기 옵션",
+      "캘리브레이션 카운트다운 시간 설정"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4423194573329-Rokoko-Studio-2-1-0",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-01-27-1",
+    "service": "rokoko",
+    "date": "2022.01.27",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.0.1 첫 마이너 업데이트",
+    "summary": "첫 마이너 업데이트로 뷰포트 렌더링 품질(그림자·AO)과 액터 라벨 표시, Boost Mode 표시 등이 개선됐어요.",
+    "details": [
+      "선택한 액터 위에 색상 라벨 표시",
+      "그림자·앰비언트 오클루전 등 3D 뷰포트 렌더링 개선",
+      "Smartsuit Pro II Boost Mode 상태 확인·전환"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4418477799057-Rokoko-Studio-2-0-1",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2022-01-25-1",
+    "service": "rokoko",
+    "date": "2022.01.25",
+    "kind": "앱",
+    "title": "새 Rokoko Studio 베타 2.0.0 첫 공개",
+    "summary": "완전히 새로 만든 Rokoko Studio Beta 2.0.0이 처음 공개됐어요. 이후 업데이트는 자동으로 적용되고, Face Capture에는 새 Rokoko Remote 앱이 필요해요.",
+    "url": "https://support.rokoko.com/hc/en-us/articles/4417882917777-Rokoko-Studio-2-0-0-Hello-world",
+    "source": "dev"
+  },
+  {
+    "id": "rokoko-2021-12-06-1",
+    "service": "rokoko",
+    "date": "2021.12.06",
+    "kind": "기능",
+    "title": "Smartsuit Pro II 모션캡처 슈트 발표",
+    "summary": "Rokoko가 차세대 인디용 모션캡처 슈트 Smartsuit Pro II를 발표하고 사전 주문을 시작했어요. 2022년 1월 출시 예정이라고 해요.",
+    "url": "https://www.rokoko.com/insights/rokoko-launches-smartsuit-pro-ii-an-even-better-indie-mocap-suit",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2021-11-04-1",
+    "service": "iclone",
+    "date": "2021.11.04",
+    "kind": "연동",
+    "title": "iClone 7.93, NVIDIA Omniverse Connector",
+    "summary": "무료 업데이트로 iClone Omniverse Connector가 도입돼 캐릭터·조명·카메라·프롭 애니메이션을 USD로 NVIDIA Omniverse에 보낼 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2021-06-29-1",
+    "service": "iclone",
+    "date": "2021.06.29",
+    "kind": "연동",
+    "title": "iClone 7.92, Replica Studios용 표정 루프 추가",
+    "summary": "Replica Studios 플러그인과 AccuLips를 함께 써서 얼굴 애니메이션을 만드는 표정 루프(.iTalk) 36종이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2021-04-12-1",
+    "service": "iclone",
+    "date": "2021.04.12",
+    "kind": "연동",
+    "title": "iClone 7.91, Smart Gallery 1.2 호환",
+    "summary": "강화된 Smart Gallery v1.2 플러그인과 호환되도록 업데이트됐고 일부 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2021-03-24-1",
+    "service": "iclone",
+    "date": "2021.03.24",
+    "kind": "앱",
+    "title": "iClone 7.9, AccuLips 립싱크와 ExPlus 표정",
+    "summary": "음성 기반 정밀 립싱크 AccuLips와 스캔 기반 ExpressionPlus 블렌드셰이프가 들어와 입·볼·눈썹·혀까지 자연스러운 얼굴 연기를 만들 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2020-12-02-1",
+    "service": "iclone",
+    "date": "2020.12.02",
+    "kind": "앱",
+    "title": "iClone 7.83, MP4 내보내기 fps 조절",
+    "summary": "MP4 영상 내보내기에서 fps를 조절할 수 있게 됐고, 여러 크래시와 FBX 내보내기 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2020-09-02-1",
+    "service": "iclone",
+    "date": "2020.09.02",
+    "kind": "연동",
+    "title": "iClone 7.81, Unreal 호환 FBX 에셋 이름",
+    "summary": "FBX 에셋 이름 규칙이 Unreal과 구조적으로 호환되도록 바뀌었고, 여러 버그가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2020-07-23-1",
+    "service": "iclone",
+    "date": "2020.07.23",
+    "kind": "앱",
+    "title": "iClone 7.8, CC3+ 캐릭터 베이스 지원",
+    "summary": "차세대 디지털 휴먼 베이스 CC3+와 호환되고, 프롭·헤어·비표준 캐릭터에도 SSS 셰이더를 쓸 수 있어요. Unreal Live Link 1.2와 Auto Setup 1.1도 함께 나왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2020-02-24-1",
+    "service": "iclone",
+    "date": "2020.02.24",
+    "kind": "연동",
+    "title": "iClone 7.72, Smart Gallery 플러그인 호환",
+    "summary": "콘텐츠 에셋을 직관적으로 관리하는 Smart Gallery 플러그인과 호환되고, 기본 프로젝트 GI 설정이 개선됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2019-11-18-1",
+    "service": "iclone",
+    "date": "2019.11.18",
+    "kind": "앱",
+    "title": "iClone 7.7, Digital Human Shader 도입",
+    "summary": "SSS와 Micro Normal을 쓰는 새 Digital Human Shader로 실시간 렌더 품질이 좋아졌어요. 조명 모양, 직교 카메라, 클립 스케일 등도 추가됐어요.",
+    "details": [
+      "머리·몸·눈·치아·헤어용 Digital Human Shader",
+      "튜브·큐브 등 조명 모양과 텍스처",
+      "Preview 카메라 직교 투영",
+      "그림자·스테레오 개별 설정"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2019-08-29-1",
+    "service": "iclone",
+    "date": "2019.08.29",
+    "kind": "앱",
+    "title": "iClone 7.6, 일괄 렌더와 IES 조명",
+    "summary": "오래 기다린 Batch Render와 IES 조명이 추가됐고, 유휴 시 GPU 부하가 줄어 UI가 더 부드러워졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2019-07-25-1",
+    "service": "iclone",
+    "date": "2019.07.25",
+    "kind": "연동",
+    "title": "iClone 7.5, Unreal Live Link 플러그인 지원",
+    "summary": "새로 나온 iClone Unreal Live Link 플러그인을 지원하고, 4096x2048 영상 출력과 Python 비짐·HIK API가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2019-01-29-1",
+    "service": "iclone",
+    "date": "2019.01.29",
+    "kind": "기능",
+    "title": "iClone 7.41, NVIDIA Iray 렌더러 완전 지원",
+    "summary": "NVIDIA Iray 렌더 엔진을 완전히 지원해 물리 기반 사실적 렌더링이 가능해졌어요. VRAM을 아끼는 Minimal Mode도 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2018-12-24-1",
+    "service": "iclone",
+    "date": "2018.12.24",
+    "kind": "API",
+    "title": "iClone 7.4, Python Open API 공개",
+    "summary": "개발자들이 기다린 Python Open API가 들어와 iClone 기능을 확장하는 플러그인을 직접 만들 수 있어요. 플러그인 마켓플레이스에서 공유·판매도 예정돼 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2018-09-27-1",
+    "service": "iclone",
+    "date": "2018.09.27",
+    "kind": "앱",
+    "title": "iClone 7.3, Character Creator 3 호환과 베지어 경로",
+    "summary": "Character Creator 3, Curve Editor 1.1, 3DXchange 7.3과 호환되고, 베지어 핸들로 경로를 편집하거나 iMaterialPlus로 여러 머티리얼을 한 번에 적용할 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2018-06-04-1",
+    "service": "iclone",
+    "date": "2018.06.04",
+    "kind": "연동",
+    "title": "iClone 7.22, Motion LIVE 모캡 플러그인 지원",
+    "summary": "얼굴·몸·손을 통합 모션캡처하는 Motion LIVE 플러그인을 지원하고, 전체 화면 모드가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2018-04-11-1",
+    "service": "iclone",
+    "date": "2018.04.11",
+    "kind": "앱",
+    "title": "iClone 7.21, 대규모 프로젝트 관리 개선",
+    "summary": "iClone과 3DXchange 파이프라인이 더 생산적으로 바뀌고 대규모 프로젝트 관리가 빨라지도록 여러 기능이 개선됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2017-12-21-1",
+    "service": "iclone",
+    "date": "2017.12.21",
+    "kind": "연동",
+    "title": "iClone 7.2, PopcornFX 파티클 플러그인 지원",
+    "summary": "PopcornFX 파티클 플러그인으로 화려한 파티클 효과를 쓸 수 있고, HDR·Glow 시각 효과도 좋아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2017-11-16-1",
+    "service": "iclone",
+    "date": "2017.11.16",
+    "kind": "앱",
+    "title": "iClone 7.1, 피사계 심도 개편과 Curve Editor 연동",
+    "summary": "iClone 7 최대 연간 업데이트로 DOF가 새로 설계됐고, 기본 전환이 커브로 바뀌었어요. 타임라인이 Curve Editor 플러그인과 연동돼요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2017-09-18-1",
+    "service": "iclone",
+    "date": "2017.09.18",
+    "kind": "연동",
+    "title": "iClone 7.02, Curve Editor·Faceware 플러그인 호환",
+    "summary": "새 iClone Curve Editor 플러그인과 Faceware 얼굴 모캡 플러그인과 호환되고, iSubstance 소스 맵 자동 로드가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2017-07-18-1",
+    "service": "iclone",
+    "date": "2017.07.18",
+    "kind": "앱",
+    "title": "iClone 7.01, DOF 정확도와 3DXchange 연동 속도 개선",
+    "summary": "피사계 심도 타깃 선택이 더 정확해지고, iClone과 3DXchange 사이 임포트·익스포트 시간이 짧아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2017-06-20-1",
+    "service": "iclone",
+    "date": "2017.06.20",
+    "kind": "앱",
+    "title": "iClone 7 정식 출시, PBR·GI 도입",
+    "summary": "물리 기반 렌더링(PBR), 글로벌 일루미네이션, 실제 카메라 시스템, LUT, 프로 얼굴 애니메이션 등을 갖춘 iClone 7이 나왔어요.",
+    "details": [
+      "PBR과 GI",
+      "Real Camera System",
+      "LUT 컬러 그레이딩, TAA",
+      "Pro Facial·Morph 애니메이션",
+      "IBL 이미지 트랙"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2016-10-27-1",
+    "service": "iclone",
+    "date": "2016.10.27",
+    "kind": "연동",
+    "title": "iClone 6.52, CrazyTalk Animator 3용 모션 내보내기",
+    "summary": "CrazyTalk Animator 3에서 쓸 RLMotion 내보내기가 추가됐고, DRM 인증이 더 빨라졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2016-07-14-1",
+    "service": "iclone",
+    "date": "2016.07.14",
+    "kind": "앱",
+    "title": "iClone 6.5, 360도 VR 영상과 Alembic 내보내기",
+    "summary": "VR용 360도 영상 출력과 Alembic 내보내기가 추가됐고, 2세대 엔진의 MixMove가 돌아왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2016-02-01-1",
+    "service": "iclone",
+    "date": "2016.02.01",
+    "kind": "앱",
+    "title": "iClone 6.4, 사용성 개선 업데이트",
+    "summary": "iClone·Character Creator·3DXchange 전반의 주요 업데이트로, 소프트 클로스 유지, Realtime Smooth 취소 등 사용성이 좋아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-12-22-1",
+    "service": "iclone",
+    "date": "2015.12.22",
+    "kind": "앱",
+    "title": "iClone 6.3, CrazyTalk 8 포맷 지원",
+    "summary": "CrazyTalk 8(3D Head Creator) 포맷을 지원하고 Remove Scene Animation 명령 등 사용성이 개선됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-10-14-1",
+    "service": "iclone",
+    "date": "2015.10.14",
+    "kind": "앱",
+    "title": "iClone 6.21, 발 Motion Layer 트랙 추가",
+    "summary": "타임라인에 발 Motion Layer 트랙이 생기고, 곧 나올 Kinect Mocap 플러그인을 지원하도록 준비됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-09-22-1",
+    "service": "iclone",
+    "date": "2015.09.22",
+    "kind": "기능",
+    "title": "iClone 6.2, Character Creator 탑재",
+    "summary": "iClone PRO 사용자에게 G6 캐릭터 제작 시스템 Character Creator가 무료로 제공돼 무제한으로 3D 아바타를 만들 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-04-29-1",
+    "service": "iclone",
+    "date": "2015.04.29",
+    "kind": "연동",
+    "title": "iClone 6.03, Kinect Mocap 플러그인 복귀",
+    "summary": "iClone 6용 Kinect Mocap 플러그인이 돌아왔고, 온라인 콘텐츠 검색, Indigo Preset 2.0, 경로 변환 등이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-02-10-1",
+    "service": "iclone",
+    "date": "2015.02.10",
+    "kind": "앱",
+    "title": "iClone 6.02, DirectX 9 버전 추가",
+    "summary": "저사양 그래픽카드와 노트북을 위해 DirectX 9 버전이 추가돼 DX9/DX11을 골라 쓸 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2015-01-12-1",
+    "service": "iclone",
+    "date": "2015.01.12",
+    "kind": "앱",
+    "title": "iClone 6 Standard 정식 출시(6.01)",
+    "summary": "iClone 6 Standard가 정식 출시되며 안정성과 사용성이 좋아지고 iClone 5에 있던 기능들이 돌아왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2014-12-18-1",
+    "service": "iclone",
+    "date": "2014.12.18",
+    "kind": "앱",
+    "title": "iClone 6.0 출시, PhysX·SpeedTree·Substance 통합",
+    "summary": "NVIDIA PhysX, SpeedTree, Allegorithmic Substance, Indigo RT 등 업계 기술을 통합하고 G6 캐릭터를 도입한 iClone 6가 나왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2013-11-15-1",
+    "service": "iclone",
+    "date": "2013.11.15",
+    "kind": "연동",
+    "title": "iClone 5.51, Avatar Toolkit2 호환",
+    "summary": "Monster Workshop·Toon Maker 같은 Avatar Toolkit2 시리즈와 호환되고, 64비트 버전 크래시가 줄었어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2013-08-08-1",
+    "service": "iclone",
+    "date": "2013.08.08",
+    "kind": "앱",
+    "title": "iClone 5.5, 64비트 정식 버전",
+    "summary": "64비트 iClone이 정식 출시돼 WMV·MP4 출력을 지원하고, 모션·얼굴·사운드를 담는 iMotionPlus 포맷과 제약 키 베이크가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2013-03-11-1",
+    "service": "iclone",
+    "date": "2013.03.11",
+    "kind": "앱",
+    "title": "iClone 5.4, 비표준 캐릭터 얼굴 애니메이션",
+    "summary": "3DXchange 5.4에서 얼굴 매핑한 비표준 캐릭터에도 립싱크·페이셜 퍼펫·자동 깜빡임 등 얼굴 애니메이션을 쓸 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-10-16-1",
+    "service": "iclone",
+    "date": "2012.10.16",
+    "kind": "앱",
+    "title": "iClone 5.31, 모프 기반 머리 캐릭터 호환",
+    "summary": "모프 기반 머리 캐릭터와 호환되고, 표정 스타일 적용 시 얼굴 애니메이션이 안 되던 문제 등이 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-09-06-1",
+    "service": "iclone",
+    "date": "2012.09.06",
+    "kind": "기능",
+    "title": "iClone 5.3, Kinect for Windows 모캡 강화",
+    "summary": "Kinect for Windows 모캡에 Near mode와 머리 회전 옵션이 생기고, 드라이버 1.5 업데이트로 스켈레톤 트래킹이 좋아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-04-18-1",
+    "service": "iclone",
+    "date": "2012.04.18",
+    "kind": "앱",
+    "title": "iClone 5.2, 64비트 베타와 3DXchange5 연동",
+    "summary": "64비트 OS용 베타 버전이 나왔고, 'Edit in 3DXchange'로 캐릭터를 편집하거나 클립을 3DXchange5로 보낼 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-03-23-1",
+    "service": "iclone",
+    "date": "2012.03.23",
+    "kind": "앱",
+    "title": "iClone 5.13, 물리 스프링 회전과 Reset Scale",
+    "summary": "비균등 스케일 오브젝트 찌그러짐을 막는 Reset Scale과 물리 스프링 제약의 Y·Z 회전이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-02-13-1",
+    "service": "iclone",
+    "date": "2012.02.13",
+    "kind": "기능",
+    "title": "iClone 5.12, Kinect SDK용 Device Mocap 정식판",
+    "summary": "Microsoft Kinect SDK용 Device Mocap MS 버전이 정식 출시됐고, 스크립트 제거 기능이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2012-01-18-1",
+    "service": "iclone",
+    "date": "2012.01.18",
+    "kind": "기능",
+    "title": "iClone 5.1, Kinect 모캡 손목·머리 애니메이션",
+    "summary": "Kinect SDK 베타2 기반 Device Mocap으로 손목·머리 애니메이션과 바닥 자동 감지, 미러, 스무딩을 지원해요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2011-11-22-1",
+    "service": "iclone",
+    "date": "2011.11.22",
+    "kind": "기능",
+    "title": "iClone 5.02, Device Mocap 무릎 회전 제약",
+    "summary": "Device Mocap에 발 뒤집힘을 막는 무릎 회전 제약 옵션이 생기고, 모션 레이어 첫 단계에 커브를 넣을 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2011-09-23-1",
+    "service": "iclone",
+    "date": "2011.09.23",
+    "kind": "앱",
+    "title": "iClone 5.00 출시",
+    "summary": "새 메이저 버전 iClone 5.00(5.0.0922.1)이 공식 출시됐어요. 이후 Kinect 모캡과 64비트 지원 등 5.x 업데이트가 이어졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2011-01-20-1",
+    "service": "iclone",
+    "date": "2011.01.20",
+    "kind": "앱",
+    "title": "iClone 4.31, Reallusion City 마켓플레이스 이전",
+    "summary": "콘텐츠 구매 창구가 Backstage에서 Reallusion City Marketplace로 옮겨졌고, 메모리 누수 등 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2010-08-12-1",
+    "service": "iclone",
+    "date": "2010.08.12",
+    "kind": "기능",
+    "title": "iClone 4.3, 3D 스테레오 Above/Below 포맷",
+    "summary": "3D 스테레오 출력에 Above/Below와 DualStream 포맷이 추가되고 G4 얼굴 UV가 개선됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2010-05-27-1",
+    "service": "iclone",
+    "date": "2010.05.27",
+    "kind": "기능",
+    "title": "iClone 4.2, 3D 스테레오 비전 출력",
+    "summary": "이미지·영상을 애너글리프와 Side by Side 3D 스테레오로 출력할 수 있고, 알파 채널 영상 내보내기가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2009-11-26-1",
+    "service": "iclone",
+    "date": "2009.11.26",
+    "kind": "기능",
+    "title": "iClone 4.1, 드래그 앤 드롭 이미지·영상 로드",
+    "summary": "이미지나 영상을 끌어다 놓아 평면·빌보드·배경으로 불러올 수 있고, 영상 볼륨에 키를 넣어 페이드를 만들 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2009-11-03-1",
+    "service": "iclone",
+    "date": "2009.11.03",
+    "kind": "기능",
+    "title": "iClone 4.02, 원클릭 콘텐츠 인증",
+    "summary": "DRM 콘텐츠를 한 번에 인증하는 1-Click Content Verification과 비표준 캐릭터용 페이스 캠 옵션이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2009-10-02-1",
+    "service": "iclone",
+    "date": "2009.10.02",
+    "kind": "앱",
+    "title": "iClone 4 출시, 영상 레이어와 HDR·IBL",
+    "summary": "드래그 앤 드롭 편집, 이미지·영상을 3D 오브젝트로 변환, 영상 레이어, HDR·IBL 효과, 페이셜 퍼펫이 담긴 iClone 4가 나왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2008-12-29-1",
+    "service": "iclone",
+    "date": "2008.12.29",
+    "kind": "앱",
+    "title": "iClone 3.2, 멀티코어 성능 향상",
+    "summary": "멀티코어 CPU 성능이 좋아지고, 영상 출력 후 플레이어 실행과 데이터 파일 썸네일 표시가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2008-11-21-1",
+    "service": "iclone",
+    "date": "2008.11.21",
+    "kind": "기능",
+    "title": "iClone 3.1, BackStage 라이브 콘텐츠와 WidgetMe",
+    "summary": "iClone BackStage 라이브 콘텐츠 접근, 웹용 투명 플래시 WidgetMe(베타), 자연스러운 스프링 움직임과 머티리얼 키프레임이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2008-08-09-1",
+    "service": "iclone",
+    "date": "2008.08.09",
+    "kind": "앱",
+    "title": "iClone 3.0 출시, Director 모드와 G3 캐릭터",
+    "summary": "Editor·Director 두 제작 모드, 씬 매니저, 실행 취소, 새 G3 캐릭터, 스크립트 기반 인터랙션을 갖춘 iClone 3.0이 나왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2007-10-22-1",
+    "service": "iclone",
+    "date": "2007.10.22",
+    "kind": "기능",
+    "title": "iClone 2.5, 오브젝트 직접 조작과 연결",
+    "summary": "오브젝트를 직접 골라 조작하고 캐릭터와 연결할 수 있게 됐고, 대형 씬 카메라와 카메라 단축키가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2007-07-03-1",
+    "service": "iclone",
+    "date": "2007.07.03",
+    "kind": "앱",
+    "title": "iClone 2.1, Windows Vista 지원",
+    "summary": "iClone 2.1이 Windows Vista에서 동작하도록 지원하고, G2 캐릭터 손동작 등 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2007-03-21-1",
+    "service": "iclone",
+    "date": "2007.03.21",
+    "kind": "앱",
+    "title": "iClone 2.0 출시, G2 캐릭터와 파티클",
+    "summary": "뼈대와 텍스처가 좋아진 G2 캐릭터, 파티클 효과, 안개, 발 미끄러짐 제거, 720p HD 영상 출력이 들어간 iClone 2.0이 나왔어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2006-10-04-1",
+    "service": "iclone",
+    "date": "2006.10.04",
+    "kind": "기능",
+    "title": "iClone 1.52, 렌더링 속도 최대 20배",
+    "summary": "렌더링 속도가 2배에서 최대 20배까지 빨라졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2006-08-01-1",
+    "service": "iclone",
+    "date": "2006.08.01",
+    "kind": "앱",
+    "title": "iClone 1.5, 썸네일 로딩 개선과 3D 블록 추가",
+    "summary": "썸네일 로딩이 빨라지고 걷기 모션 오프셋이 고쳐졌으며, 고해상도 3D 구체 프롭이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2006-02-08-1",
+    "service": "iclone",
+    "date": "2006.02.08",
+    "kind": "기능",
+    "title": "iClone 1.01, 실시간 픽셀 셰이더",
+    "summary": "범프·노멀·반사·알파·자체 그림자를 지원하는 실시간 Pixel Shader와 캐릭터·프롭 멀티 텍스처 편집이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  },
+  {
+    "id": "iclone-2005-12-08-1",
+    "service": "iclone",
+    "date": "2005.12.08",
+    "kind": "앱",
+    "title": "iClone 1.00 릴리스",
+    "summary": "iClone 버전 기록의 첫 항목인 v1.00이에요. 체험판 콘텐츠 썸네일과 Content Developer Info 버튼이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

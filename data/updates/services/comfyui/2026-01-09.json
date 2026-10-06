@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-01-09-1",
+    "service": "comfyui",
+    "date": "2026.01.09",
+    "kind": "기능",
+    "title": "NVIDIA GPU 최적화: NVFP4·비동기 오프로드·pinned memory",
+    "summary": "Blackwell GPU용 NVFP4 양자화 형식을 공식 지원하고, 모든 NVIDIA 그래픽카드에 비동기 오프로드와 pinned memory를 기본 적용해 하드웨어 교체 없이 속도가 빨라졌어요.",
+    "url": "https://blog.comfy.org/p/new-comfyui-optimizations-for-nvidia",
+    "source": "notice"
+  }
+]

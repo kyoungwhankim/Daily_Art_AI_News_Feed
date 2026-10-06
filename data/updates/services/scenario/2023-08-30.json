@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-08-30-1",
+    "service": "scenario",
+    "date": "2023.08.30",
+    "kind": "기능",
+    "title": "스케줄러 선택·논리 검색 툴팁",
+    "summary": "확산 과정을 제어하는 스케줄러를 고를 수 있고 검색의 논리 연산 툴팁이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-29-0-august-30-2023",
+    "source": "notice"
+  }
+]

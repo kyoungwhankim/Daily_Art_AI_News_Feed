@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-09-16-1",
+    "service": "heygen",
+    "date": "2026.09.16",
+    "kind": "API",
+    "title": "HeyGen API로 Look Packs 생성",
+    "summary": "POST /v3/avatars/looks로 기존 아바타에 Look Pack이나 룩 템플릿을 적용해 새 룩을 만들 수 있게 됐어요. 아바타 생성 가이드도 경로별로 나눴어요.",
+    "url": "https://docs.heygen.com/changelog#look-packs-over-the-api",
+    "source": "dev"
+  }
+]

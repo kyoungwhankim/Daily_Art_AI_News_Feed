@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-11-04-1",
+    "service": "comfyui",
+    "date": "2024.11.04",
+    "kind": "모델",
+    "title": "ComfyUI, Genmo Mochi 1 영상 모델 최적화 지원",
+    "summary": "Genmo의 오픈 영상 모델 Mochi 1(480P)을 ComfyUI에서 소비자용 GPU로도 돌릴 수 있도록 최적화해 지원해요.",
+    "url": "https://blog.comfy.org/p/mochi-1",
+    "source": "notice"
+  }
+]

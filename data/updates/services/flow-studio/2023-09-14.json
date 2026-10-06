@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flow-studio-2023-09-14-1",
+    "service": "flow-studio",
+    "date": "2023.09.14",
+    "kind": "기능",
+    "title": "Wonder Studio, 단독 AI Motion Capture와 크레딧제 도입",
+    "summary": "아무 영상에서나 마커리스 몸·손 모션캡처 데이터를 뽑아내는 단독 AI Motion Capture 프로젝트가 추가됐어요. 프로젝트별 렌더 비용이 달라 렌더 초로 바꿔 쓰는 크레딧이 도입됐어요.",
+    "details": [
+      "AI Motion Capture 프로젝트 타입",
+      "렌더 초로 전환 가능한 크레딧",
+      "오류 프로젝트에 ID·오류 상세 미리보기",
+      "새 템플릿 추가"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

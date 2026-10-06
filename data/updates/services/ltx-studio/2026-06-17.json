@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ltx-studio-2026-06-17-1",
+    "service": "ltx-studio",
+    "date": "2026.06.17",
+    "kind": "기능",
+    "title": "LTX Trainer 대규모 업그레이드",
+    "summary": "영상·오디오·교차 모달·레퍼런스(IC-LoRA) 학습을 하나의 프레임워크로 묶은 새 LTX Trainer를 내놨어요. 말로 설명하면 학습을 도와주는 에이전트도 생겼어요.",
+    "details": [
+      "LoRA, IC-LoRA, 전체 파인튜닝 지원, 가중치 소유권 보장",
+      "T2V, I2V, 연장, 인페인팅·아웃페인팅, A2V, V2A 등"
+    ],
+    "url": "https://ltx.io/blog/introducing-the-new-ltx-trainer-one-framework-every-training-mode",
+    "source": "notice"
+  }
+]

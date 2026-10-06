@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-02-26-1",
+    "service": "claude",
+    "date": "2025.02.26",
+    "kind": "연동",
+    "title": "Claude, Alexa+에 탑재",
+    "summary": "Claude 모델이 Amazon Bedrock을 통해 Alexa+를 구동해요. 미국에서 몇 주 안에 순차 출시될 예정이에요.",
+    "url": "https://www.anthropic.com/news/claude-and-alexa-plus",
+    "source": "notice"
+  }
+]

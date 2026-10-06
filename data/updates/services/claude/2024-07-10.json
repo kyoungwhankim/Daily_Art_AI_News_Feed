@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-07-10-1",
+    "service": "claude",
+    "date": "2024.07.10",
+    "kind": "연동",
+    "title": "Amazon Bedrock에서 Claude 3 Haiku 파인튜닝",
+    "summary": "Amazon Bedrock에서 Claude 3 Haiku를 내 데이터로 파인튜닝해 특화 작업 성능을 높일 수 있게 됐어요(프리뷰).",
+    "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
+    "source": "notice"
+  }
+]

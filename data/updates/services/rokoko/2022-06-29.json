@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2022-06-29-1",
+    "service": "rokoko",
+    "date": "2022.06.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.2.0, Elevation Tracking 도입",
+    "summary": "Smartsuit Pro II에서 계단 오르기 같은 높이 변화를 잡아내는 Elevation Tracking이 추가됐고, 여러 액터를 한 클립에 녹화할 수 있게 됐어요.",
+    "details": [
+      "Smartsuit Pro II Elevation Tracking(스냅 높이 설정)",
+      "여러 액터를 한 클립에 녹화·재생·내보내기",
+      "녹화 클립 폴더 정리 기능"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/7235924355217-Rokoko-Studio-2-2-0",
+    "source": "dev"
+  }
+]

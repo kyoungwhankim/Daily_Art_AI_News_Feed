@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-11-21-1",
+    "service": "comfyui",
+    "date": "2024.11.21",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX Tools 첫날 지원",
+    "summary": "Black Forest Labs의 FLUX.1 Fill, Redux, Depth·Canny ControlNet과 LoRA를 출시 당일 ComfyUI에서 지원해요. 디테일과 스타일을 더 정밀하게 제어할 수 있어요.",
+    "url": "https://blog.comfy.org/p/day-1-support-for-flux-tools-in-comfyui",
+    "source": "notice"
+  }
+]

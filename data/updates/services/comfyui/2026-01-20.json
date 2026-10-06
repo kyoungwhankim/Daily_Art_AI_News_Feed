@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-01-20-1",
+    "service": "comfyui",
+    "date": "2026.01.20",
+    "kind": "연동",
+    "title": "ComfyUI, Bria FIBO Edit 지원",
+    "summary": "100% 라이선스 데이터로 학습한 Bria의 JSON 기반 이미지 편집 모델 FIBO Edit을 API 노드로 쓸 수 있어요. 원하는 부분만 정밀하게 고쳐요.",
+    "url": "https://blog.comfy.org/p/introducing-bria-fibo-edit-precision-image",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-01-20-2",
+    "service": "comfyui",
+    "date": "2026.01.20",
+    "kind": "연동",
+    "title": "ComfyUI, Meshy 6 3D 생성 지원",
+    "summary": "지오메트리와 메시 품질을 높인 Meshy 6으로 ComfyUI 워크플로 안에서 고품질 3D 모델을 만들 수 있어요.",
+    "url": "https://blog.comfy.org/p/meshy-6-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

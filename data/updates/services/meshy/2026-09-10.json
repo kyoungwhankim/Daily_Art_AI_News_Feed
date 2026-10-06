@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2026-09-10-1",
+    "service": "meshy",
+    "date": "2026.09.10",
+    "kind": "모델",
+    "title": "Meshy 7.1 출시, Ultra 4K 지오메트리",
+    "summary": "Image to 3D에서 가장 풍부한 지오메트리 디테일을 낸다는 Meshy 7.1을 출시했어요. Ultra 4K는 지오메트리를 4096³까지 키워요.",
+    "details": [
+      "Ultra 4K 지오메트리 해상도",
+      "새 Detail Richness 벤치마크 공개"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-7-1-launch",
+    "source": "notice"
+  }
+]

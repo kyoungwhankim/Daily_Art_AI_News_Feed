@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-12-09-1",
+    "service": "mureka",
+    "date": "2025.12.09",
+    "kind": "모델",
+    "title": "mureka-7.6·mureka-o2 API와 WAV 출력",
+    "summary": "생성 품질을 높인 mureka-7.6과 mureka-o2 모델이 API에 나왔고, 곡·반주 생성 결과에 wav_url이 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

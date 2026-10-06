@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2023-03-10-1",
+    "service": "synthesia",
+    "date": "2023.03.10",
+    "kind": "기능",
+    "title": "Synthesia 캔버스에 영상 배치",
+    "summary": "여러 영상을 캔버스에 바로 올려 장면을 꾸밀 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/video-to-canvas",
+    "source": "notice"
+  }
+]

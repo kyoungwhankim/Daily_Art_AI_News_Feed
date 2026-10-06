@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-01-29-1",
+    "service": "hedra",
+    "date": "2026.01.29",
+    "kind": "연동",
+    "title": "Hedra에 xAI Grok Imagine 추가",
+    "summary": "xAI의 빠른 이미지·영상 생성 모델 Grok Imagine을 Hedra 워크플로 안에서 쓸 수 있게 됐어요. 이미지 생성 후 오디오가 있는 영상으로 빠르게 이어 만들 수 있어요.",
+    "url": "https://www.hedra.com/blog/grok-imagine-now-live-in-hedra",
+    "source": "notice"
+  }
+]

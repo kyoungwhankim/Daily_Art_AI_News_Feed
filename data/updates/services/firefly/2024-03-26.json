@@ -1,0 +1,15 @@
+[
+  {
+    "id": "firefly-2024-03-26-1",
+    "service": "firefly",
+    "date": "2024.03.26",
+    "kind": "기능",
+    "title": "Firefly 1주년: Structure Reference 추가",
+    "summary": "Firefly 웹 앱 Text to Image에 기존 이미지의 구도를 그대로 따라 생성하는 Structure Reference가 추가됐어요. 1년간 65억 장 넘게 생성됐어요.",
+    "details": [
+      "Style Reference와 함께 구조·스타일 동시 참조"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2024/03/26/new-structure-reference-capabilities-adobe-firefly-bring-new-level-creative-control-ideation",
+    "source": "notice"
+  }
+]

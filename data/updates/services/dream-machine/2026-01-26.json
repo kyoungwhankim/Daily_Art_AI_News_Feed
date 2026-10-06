@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2026-01-26-1",
+    "service": "dream-machine",
+    "date": "2026.01.26",
+    "kind": "모델",
+    "title": "Ray3.14 출시: 네이티브 1080p, 3배 저렴·4배 빠름",
+    "summary": "네이티브 1080p를 지원하는 Ray3.14를 내놨어요. Ray3보다 720p 기준 4배 빠르고 3배 저렴하며 Modify 일관성도 좋아졌어요.",
+    "details": [
+      "프롬프트 충실도 향상, 아티팩트 감소",
+      "Modify Video 최대 18초"
+    ],
+    "url": "https://lumalabs.ai/news/ray3_14",
+    "source": "notice"
+  }
+]

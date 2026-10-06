@@ -1,0 +1,26 @@
+[
+  {
+    "id": "runway-2026-07-08-1",
+    "service": "runway",
+    "date": "2026.07.08",
+    "kind": "기능",
+    "title": "Agent가 사용자 정의 Skills 생성",
+    "summary": "Agent에게 맞춤 Skill을 만들어 달라고 하거나 기존 대화를 재사용 가능한 Skill로 바꿔 워크스페이스와 공유할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-07-08-2",
+    "service": "runway",
+    "date": "2026.07.08",
+    "kind": "API",
+    "title": "Runway Dev에 Seedream 5.0 Pro 추가",
+    "summary": "Seedream 5.0 Pro를 Runway Dev API에서 쓸 수 있어요. 레퍼런스 최대 10장으로 다중 이미지 합성과 편집을 지원해요.",
+    "details": [
+      "1K·2K, 7가지 화면비와 auto 옵션",
+      "1K 5크레딧, 2K 9크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-50-pro-on-runway-dev",
+    "source": "dev"
+  }
+]

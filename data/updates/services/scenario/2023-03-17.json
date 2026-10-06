@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-03-17-1",
+    "service": "scenario",
+    "date": "2023.03.17",
+    "kind": "기능",
+    "title": "계정 삭제·팀 관리 기능 추가",
+    "summary": "프로필에서 계정을 삭제할 수 있고, 팀 삭제·저장·수정 기능과 팀 API가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-4-0-march-17-2023",
+    "source": "notice"
+  }
+]

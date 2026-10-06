@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-03-1",
+    "service": "scenario",
+    "date": "2026.03.03",
+    "kind": "API",
+    "title": "Gemini 3.1 Flash·Musubi 트레이너",
+    "summary": "Gemini 3.1 Flash로 생성할 수 있고, 영상 변환이 빨라졌어요. 팀 단위 병렬 작업 제한과 Musubi 트레이너도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-0",
+    "source": "dev"
+  }
+]

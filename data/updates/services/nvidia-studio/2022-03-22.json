@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2022-03-22-1",
+    "service": "nvidia-studio",
+    "date": "2022.03.22",
+    "kind": "기능",
+    "title": "GTC 2022: Omniverse 대형 업데이트·Canvas 스타일 업데이트",
+    "summary": "Omniverse Create·Machinima·Showroom이 업데이트되고 Unreal Engine 커넥터 베타가 나왔어요. NVIDIA Canvas도 스타일 업데이트를 받았고 3월 Studio 드라이버가 함께 공개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/gtc-rtx-studio-updates/",
+    "source": "notice"
+  }
+]

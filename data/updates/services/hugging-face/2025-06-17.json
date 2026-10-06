@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-06-17-1",
+    "service": "hugging-face",
+    "date": "2025.06.17",
+    "kind": "연동",
+    "title": "MCP 호환 Space를 내 도구 목록에 추가",
+    "summary": "1,000개 넘는 MCP 호환 Space를 클릭 한 번으로 내 MCP 도구에 추가해 VS Code·Cursor·Claude 같은 클라이언트에서 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog/add-compatible-spaces-to-your-mcp-tools",
+    "source": "notice"
+  }
+]

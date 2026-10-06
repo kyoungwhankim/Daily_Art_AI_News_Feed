@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-02-08-1",
+    "service": "scenario",
+    "date": "2024.02.08",
+    "kind": "기능",
+    "title": "IP Adapter 참조 모드·원클릭 배경 제거",
+    "summary": "참조 이미지 모드에서 IP Adapter를 쓸 수 있고, 모델 생성 시 배경을 한 번에 지울 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-48-february-8th-2024",
+    "source": "notice"
+  }
+]

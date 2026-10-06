@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-13-1",
+    "service": "meshy",
+    "date": "2026.08.13",
+    "kind": "모델",
+    "title": "Text to 3D API에 meshy-7·Smart Topology 추가",
+    "summary": "Text to 3D API에서 meshy-7과 Ultra 생성을 쓸 수 있게 됐어요. meshy-t2 기반 Smart Topology도 추가돼 Preview가 5크레딧이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

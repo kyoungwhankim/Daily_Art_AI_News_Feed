@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-07-12-1",
+    "service": "suno",
+    "date": "2024.07.12",
+    "kind": "기능",
+    "title": "Suno 곡 페이지에서 가사 편집",
+    "summary": "내가 만든 곡 페이지에서 표시되는 가사를 직접 고칠 수 있어요.",
+    "url": "https://suno.com/release-notes/edit-lyrics-are-available-from-within-the-song-page",
+    "source": "notice"
+  }
+]

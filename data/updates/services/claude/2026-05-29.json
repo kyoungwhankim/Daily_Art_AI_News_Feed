@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-29-1",
+    "service": "claude",
+    "date": "2026.05.29",
+    "kind": "연동",
+    "title": "Claude Platform on AWS에 Managed Agents 기능 확대",
+    "summary": "Managed Agents 웹훅, 멀티에이전트 오케스트레이션, 자체 호스팅 샌드박스를 Claude Platform on AWS에서 쓸 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
+    "source": "dev"
+  }
+]

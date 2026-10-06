@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2024-09-02-1",
+    "service": "comfyui",
+    "date": "2024.09.02",
+    "kind": "기능",
+    "title": "ComfyUI v0.2.0: FLUX ControlNet과 큐 관리 개선",
+    "summary": "ComfyUI v0.2.0에서 InstantX의 FLUX Canny·Union ControlNet을 쓸 수 있고, 큐 관리와 노드 라이브러리가 크게 개선됐어요.",
+    "details": [
+      "생성 노드로 바로 이동하는 Go-to Node",
+      "작업별 출력 폴더 보기",
+      "노드 라이브러리 즐겨찾기와 검색 필터",
+      "노드 제목 더블클릭 편집"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-v0-2-0-release",
+    "source": "notice"
+  }
+]

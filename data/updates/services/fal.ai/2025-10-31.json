@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-31-1",
+    "service": "fal.ai",
+    "date": "2025.10.31",
+    "kind": "기능",
+    "title": "앱 이벤트 타임라인",
+    "summary": "러너 이벤트·배포·설정 변경을 한 화면에서 보는 앱 이벤트 타임라인이 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#october-31-2025",
+    "source": "dev"
+  }
+]

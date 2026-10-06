@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-08-10-1",
+    "service": "elevenlabs",
+    "date": "2026.08.10",
+    "kind": "모델",
+    "title": "Dubbing v2 API 제공",
+    "summary": "화자의 목소리와 연기를 유지하며 90개 이상 언어로 옮기는 Dubbing v2를 API로 쓸 수 있어요. 보이스 검색 필터도 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/10",
+    "source": "dev"
+  }
+]

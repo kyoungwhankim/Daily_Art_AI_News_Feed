@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-04-1",
+    "service": "claude",
+    "date": "2024.11.04",
+    "kind": "모델",
+    "title": "Claude Haiku 3.5 API 출시",
+    "summary": "Claude Haiku 3.5가 텍스트 전용 모델로 Claude API에 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-4th-2024",
+    "source": "dev"
+  }
+]

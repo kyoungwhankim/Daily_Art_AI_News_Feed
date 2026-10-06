@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iclone-2026-09-01-1",
+    "service": "iclone",
+    "date": "2026.09.01",
+    "kind": "앱",
+    "title": "iClone 8.75, AI Studio 독립 실행 앱으로 분리",
+    "summary": "AI Studio가 iClone과 별도로 돌아가는 독립 앱이 되어 iClone 부담이 줄었어요. Render 메뉴에서 바로 이미지·영상을 캡처해 AI Studio로 보낼 수 있어요.",
+    "details": [
+      "Render 메뉴·패널에서 AI Studio로 바로 캡처 전송",
+      "내장 AI Studio 제거, 독립 실행으로 전환",
+      "Workspace 선택 화면 제거"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

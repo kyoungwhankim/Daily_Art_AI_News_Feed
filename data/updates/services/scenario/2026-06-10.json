@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-10-1",
+    "service": "scenario",
+    "date": "2026.06.10",
+    "kind": "연동",
+    "title": "MCP, 허용 목록·커스텀 모델 추천",
+    "summary": "에이전트가 팀 권한에 따라 비공개 커스텀 모델을 찾아 추천할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-13-0",
+    "source": "notice"
+  }
+]

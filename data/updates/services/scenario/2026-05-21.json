@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-05-21-1",
+    "service": "scenario",
+    "date": "2026.05.21",
+    "kind": "API",
+    "title": "미디어 편집 API·텍스트 에셋 추적",
+    "summary": "API로 영상·오디오를 직접 처리하고 텍스트 에셋 메타데이터를 추적할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-119-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-05-21-2",
+    "service": "scenario",
+    "date": "2026.05.21",
+    "kind": "기능",
+    "title": "브라우저 녹음·워크플로 AI 비전·3D 미리보기",
+    "summary": "브라우저에서 바로 음성을 녹음하고 워크플로 안에서 3D를 미리 볼 수 있어요. AI 워크플로 도우미가 이미지를 볼 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-11-0",
+    "source": "notice"
+  }
+]

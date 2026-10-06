@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-16-1",
+    "service": "elevenlabs",
+    "date": "2026.03.16",
+    "kind": "API",
+    "title": "음악 구간 길이 제어",
+    "summary": "상세 음악 생성에서 구간 길이를 정확히 지키는 respect_sections_durations 옵션이 생기고, 에이전트 Users 페이지가 정식 공개됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/16",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2026-05-14-1",
+    "service": "unity-ai",
+    "date": "2026.05.14",
+    "kind": "기능",
+    "title": "AI Assistant 2.8: 패키지에서 Skills 불러오기",
+    "summary": "AI Assistant 2.8.0에서 UPM 패키지의 AIAssistantSkills 폴더에서 Skills를 읽고, 계획 승인 카드에 계획 수정 흐름이 추가됐어요.",
+    "details": [
+      "Pro 라이선스에 MCP·AI Gateway 연결 3개 제공",
+      "한·중·일 언어로 쓴 SKILL.md 로딩 수정"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#280-pre1---2026-05-14",
+    "source": "dev"
+  }
+]

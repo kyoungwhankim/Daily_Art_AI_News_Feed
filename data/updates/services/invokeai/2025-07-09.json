@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2025-07-09-1",
+    "service": "invokeai",
+    "date": "2025.07.09",
+    "kind": "앱",
+    "title": "Invoke 6.0: 새 UI와 FLUX Kontext, PSD 내보내기",
+    "summary": "Invoke 6.0은 탭별 Launchpad와 자유롭게 바꾸는 패널 레이아웃으로 UI를 새로 짰어요. 캔버스를 레이어째 PSD로 내보내고 FLUX Kontext Dev를 UI에서 쓸 수 있어요.",
+    "details": [
+      "캔버스 3분할 가이드, bbox를 참조 이미지로",
+      "뷰어에서 Edit으로 새 캔버스 시작",
+      "호환 LoRA만 보여 주는 새 LoRA 선택기",
+      "OMI LoRA 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-0-0/",
+    "source": "notice"
+  }
+]

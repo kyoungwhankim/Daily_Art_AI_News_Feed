@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2026-02-26-1",
+    "service": "comfyui",
+    "date": "2026.02.26",
+    "kind": "연동",
+    "title": "ComfyUI, Nano Banana 2 지원",
+    "summary": "Flash 속도로 Pro급 품질을 내는 Google Nano Banana 2를 API 노드로 ComfyUI에서 쓸 수 있어요. 질감·디테일·조명과 프롬프트 반영이 좋아졌어요.",
+    "details": [
+      "v0.15.1: WanVideo 기반 영상 분할 모델 FlowRVS 지원"
+    ],
+    "url": "https://blog.comfy.org/p/nano-banana-2-in-comfyui",
+    "source": "notice"
+  }
+]

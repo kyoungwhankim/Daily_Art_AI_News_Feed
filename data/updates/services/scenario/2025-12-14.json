@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-12-14-1",
+    "service": "scenario",
+    "date": "2025.12.14",
+    "kind": "모델",
+    "title": "Kling O1 등 영상·오디오·3D 모델 대거 추가",
+    "summary": "Kling O1을 비롯한 새 영상·오디오·이미지 편집·3D 모델이 추가되고 사용성이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-108-0-new-video-audio-3d-models-platform-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-14-2",
+    "service": "scenario",
+    "date": "2025.12.14",
+    "kind": "API",
+    "title": "Photoroom·Magnific 업스케일 지원",
+    "summary": "Compute에 Photoroom 편집 모델과 Magnific 업스케일러, 리깅 모델 미리보기가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-13-0",
+    "source": "notice"
+  }
+]

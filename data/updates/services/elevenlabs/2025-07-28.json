@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-07-28-1",
+    "service": "elevenlabs",
+    "date": "2025.07.28",
+    "kind": "API",
+    "title": "멀티채널 전사와 Studio 자막",
+    "summary": "채널별 화자가 있는 오디오를 전사하는 use_multi_channel 옵션과 Studio 프로젝트 자막 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/28",
+    "source": "dev"
+  }
+]

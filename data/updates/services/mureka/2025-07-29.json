@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mureka-2025-07-29-1",
+    "service": "mureka",
+    "date": "2025.07.29",
+    "kind": "모델",
+    "title": "mureka-7과 추론형 mureka-o1 모델 API",
+    "summary": "음질을 높인 mureka-7과 첫 사고형 음악 추론 모델 mureka-o1이 나왔어요. 스트리밍 생성과 곡 인식·확장 API도 추가됐어요.",
+    "details": [
+      "곡·반주 생성 스트리밍 모드",
+      "song recognize·song extend API",
+      "mureka-7 모델",
+      "mureka-o1 추론 모델"
+    ],
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

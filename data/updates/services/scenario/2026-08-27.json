@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-08-27-1",
+    "service": "scenario",
+    "date": "2026.08.27",
+    "kind": "API",
+    "title": "Recraft V4 Styles·HDR 다운로드",
+    "summary": "Recraft V4 Styles 모델이 추가되고 에셋 다운로드가 HDR을 지원해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-132-0",
+    "source": "dev"
+  }
+]

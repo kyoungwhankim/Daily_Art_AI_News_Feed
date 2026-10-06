@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-27-1",
+    "service": "meshy",
+    "date": "2026.04.27",
+    "kind": "API",
+    "title": "작업 응답에 consumed_credits 추가",
+    "summary": "모든 API 작업 응답에 사용한 크레딧을 보여 주는 consumed_credits 필드가 추가됐어요. 실패한 작업은 0으로 표시되고 자동 환불돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  }
+]

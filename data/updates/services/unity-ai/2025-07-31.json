@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-07-31-1",
+    "service": "unity-ai",
+    "date": "2025.07.31",
+    "kind": "기능",
+    "title": "AI Generators: 즐겨찾기 모델 우선 표시와 업스케일 배지",
+    "summary": "AI Generators 1.0.0-pre.17에서 모델 선택기가 즐겨찾기를 먼저 보여 주고 GPT Image 모델이 기본 즐겨찾기가 됐어요. 업스케일된 스프라이트·텍스처엔 배지가 붙어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre17---2025-07-31",
+    "source": "dev"
+  }
+]

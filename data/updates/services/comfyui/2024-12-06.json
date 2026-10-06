@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2024-12-06-1",
+    "service": "comfyui",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "ComfyUI, LoRA·모델 가중치 마스킹과 스케줄링",
+    "summary": "ComfyUI 컨디셔닝 시스템에서 LoRA와 모델 가중치를 영역별로 마스킹하고 단계별로 스케줄링할 수 있게 됐어요. 모든 모델과 호환돼요.",
+    "details": [
+      "ModelPatcher 개편과 래퍼·콜백 도입으로 커스텀 노드 구현 단순화"
+    ],
+    "url": "https://blog.comfy.org/p/masking-and-scheduling-lora-and-model-weights",
+    "source": "notice"
+  }
+]

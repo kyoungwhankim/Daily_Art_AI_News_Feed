@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfyui-2025-07-28-1",
+    "service": "comfyui",
+    "date": "2025.07.28",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.2 출시 당일 지원",
+    "summary": "고·저노이즈 전문가 모델로 나뉜 MoE 구조의 영상 모델 Wan2.2를 ComfyUI에서 출시 당일 네이티브로 지원해요. Apache 2.0이라 상업 이용도 돼요.",
+    "url": "https://blog.comfy.org/p/wan22-day-0-support-in-comfyui",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-07-28-2",
+    "service": "comfyui",
+    "date": "2025.07.28",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.46: Intel XPU·Iluvatar 가속기 지원 확대",
+    "summary": "ComfyUI v0.3.46에서 Iluvatar CoreX 가속기 지원, Intel XPU 비동기 오프로드, AMD ROCm 개선이 이뤄지고 Moonvalley Marey V2V 노드가 추가됐어요.",
+    "details": [
+      "오디오 로딩을 PyAV로 교체",
+      "학습 노드 그래디언트 누적·체크포인팅"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-46",
+    "source": "notice"
+  }
+]

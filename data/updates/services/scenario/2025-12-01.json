@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-12-01-1",
+    "service": "scenario",
+    "date": "2025.12.01",
+    "kind": "API",
+    "title": "SAM3 분할·그리드 메이커·Vidu",
+    "summary": "Compute에 Meta SAM3 분할, 그리드 메이커 도구, Vidu 영상 지원이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-11-0",
+    "source": "notice"
+  }
+]

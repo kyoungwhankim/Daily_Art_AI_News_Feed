@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-08-1",
+    "service": "claude",
+    "date": "2025.08.08",
+    "kind": "API",
+    "title": "검색 결과 콘텐츠 블록 정식 출시",
+    "summary": "RAG 앱에서 출처가 붙은 자연스러운 인용을 지원하는 search result 블록이 Claude API와 Vertex AI에서 정식 제공돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+    "source": "dev"
+  }
+]

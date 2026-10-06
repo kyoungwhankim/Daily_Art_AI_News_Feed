@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-10-15-1",
+    "service": "runway",
+    "date": "2025.10.15",
+    "kind": "API",
+    "title": "Runway Dev에 Google Veo 3.1 추가",
+    "summary": "Veo 3.1을 API로 쓸 수 있어요. 첫·마지막 키프레임, Reference to Video, 1080p 출력을 지원해요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#google-veo-31",
+    "source": "dev"
+  }
+]

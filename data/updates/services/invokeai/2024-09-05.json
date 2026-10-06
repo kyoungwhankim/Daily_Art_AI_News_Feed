@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2024-09-05-1",
+    "service": "invokeai",
+    "date": "2024.09.05",
+    "kind": "모델",
+    "title": "Invoke 4.2.9: FLUX dev·schnell 워크플로 지원",
+    "summary": "Invoke 4.2.9에서 FLUX dev와 schnell을 워크플로로 쓸 수 있게 됐어요. 아직 프로토타입 단계이며 텍스트→이미지, 이미지→이미지 기본 워크플로가 제공돼요.",
+    "details": [
+      "Starter Models에서 양자화·비양자화 버전 설치",
+      "bitsandbytes nf4 양자화 모델 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/v4-2-9/",
+    "source": "notice"
+  }
+]

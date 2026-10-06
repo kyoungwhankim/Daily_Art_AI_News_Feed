@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-05-26-1",
+    "service": "elevenlabs",
+    "date": "2025.05.26",
+    "kind": "API",
+    "title": "공유 보이스 실시간 검수 필터와 AudioNative 접근성",
+    "summary": "공유 보이스 엔드포인트에 실시간 검수 보이스 필터가 생기고, AudioNative 플레이어 접근성이 좋아졌어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/26",
+    "source": "dev"
+  }
+]

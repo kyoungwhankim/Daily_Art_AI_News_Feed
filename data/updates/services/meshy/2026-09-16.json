@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-16-1",
+    "service": "meshy",
+    "date": "2026.09.16",
+    "kind": "종료",
+    "title": "meshy-5 10월 10일 종료 예고",
+    "summary": "meshy-5가 2026년 10월 10일에 종료된다고 알렸어요. Auto Split API는 텍스처가 있는 입력 작업도 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

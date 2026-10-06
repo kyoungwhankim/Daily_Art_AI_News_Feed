@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-10-10-1",
+    "service": "topaz-video",
+    "date": "2023.10.10",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.5.3: 흑백·텔레시네 입력 옵션",
+    "summary": "흑백 영상에 색이 생기지 않게 하는 Black and White 토글과 텔레시네를 되돌리는 Telecined 토글을 추가했어요. Linux에서 주요 인코더도 쓸 수 있어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-5-3/53896",
+    "source": "notice"
+  }
+]

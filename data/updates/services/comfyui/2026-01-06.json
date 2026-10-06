@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-01-06-1",
+    "service": "comfyui",
+    "date": "2026.01.06",
+    "kind": "앱",
+    "title": "ComfyUI Desktop, Windows AMD ROCm 공식 지원",
+    "summary": "ComfyUI Desktop v0.7.0부터 Windows에서 AMD ROCm을 공식 지원해 Radeon GPU와 Ryzen AI 프로세서로 더 빠르게 작업할 수 있어요.",
+    "url": "https://blog.comfy.org/p/official-amd-rocm-support-arrives",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-01-06-2",
+    "service": "comfyui",
+    "date": "2026.01.06",
+    "kind": "모델",
+    "title": "ComfyUI, 오픈소스 오디오·영상 모델 LTX-2 첫날 지원",
+    "summary": "움직임·대사·배경음·음악을 한 번에 만드는 오픈소스 오디오-영상 모델 LTX-2를 ComfyUI에서 출시 당일 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/ltx-2-open-source-audio-video-ai",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-10-31-1",
+    "service": "nvidia-studio",
+    "date": "2023.10.31",
+    "kind": "기능",
+    "title": "Omniverse에 DLSS 3.5 적용·RTX VSR 1.5 배포",
+    "summary": "Omniverse에서 DLSS 3.5 Ray Reconstruction을 쓸 수 있게 됐고, RTX VSR 1.5는 다음 날 Studio 드라이버로 배포돼요.",
+    "url": "https://blogs.nvidia.com/blog/dlss-omniverse-cinema-4d-halloween/",
+    "source": "notice"
+  }
+]

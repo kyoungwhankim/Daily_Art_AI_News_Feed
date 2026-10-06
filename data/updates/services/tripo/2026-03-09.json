@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2026-03-09-1",
+    "service": "tripo",
+    "date": "2026.03.09",
+    "kind": "API",
+    "title": "autofix 개선·작업 응답에 크레딧 사용량",
+    "summary": "흐린 이미지 등 흔한 입력 문제를 처리하는 autofix가 개선됐어요. 성공한 작업 응답에 그 요청의 크레딧 사용량이 포함돼요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-4-2026-03-09",
+    "source": "dev"
+  }
+]

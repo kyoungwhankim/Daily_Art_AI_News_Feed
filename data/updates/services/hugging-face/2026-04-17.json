@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-04-17-1",
+    "service": "hugging-face",
+    "date": "2026.04.17",
+    "kind": "API",
+    "title": "Gradio Space에 에이전트용 agents.md 자동 제공",
+    "summary": "모든 Gradio Space가 /agents.md 엔드포인트로 기계가 읽을 수 있는 API 설명을 제공해요. Claude Code·Codex 같은 코딩 에이전트가 설정 없이 Space를 호출할 수 있어요.",
+    "url": "https://huggingface.co/changelog/spaces-agents-md",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-01-1",
+    "service": "claude",
+    "date": "2024.11.01",
+    "kind": "API",
+    "title": "새 Sonnet 3.5 PDF 지원·토큰 계산",
+    "summary": "새 Claude Sonnet 3.5에서 PDF를 쓸 수 있고, 보내기 전에 메시지 토큰 수를 계산하는 기능이 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-1st-2024",
+    "source": "dev"
+  }
+]

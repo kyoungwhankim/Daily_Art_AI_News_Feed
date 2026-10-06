@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-11-19-1",
+    "service": "claude",
+    "date": "2025.11.19",
+    "kind": "기능",
+    "title": "새 문서 플랫폼 platform.claude.com/docs",
+    "summary": "개발 문서가 Claude Console 옆 platform.claude.com/docs로 옮겨져 통합된 개발자 경험을 제공해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-19-2025",
+    "source": "dev"
+  }
+]

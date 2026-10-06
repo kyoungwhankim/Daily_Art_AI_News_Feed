@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-03-29-1",
+    "service": "pixverse",
+    "date": "2026.03.29",
+    "kind": "API",
+    "title": "PixVerse API에 V6 모델 출시",
+    "summary": "PixVerse API에서 V6 모델로 텍스트→영상, 이미지→영상, Transition, Extend 생성을 할 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

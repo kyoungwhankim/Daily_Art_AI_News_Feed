@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-02-05-1",
+    "service": "scenario",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "Workflow Locking API·LLM 노드 개선",
+    "summary": "프로덕션 워크플로를 잠그는 Workflow Locking API가 나오고 LLM 노드와 LoRA 지원이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-108-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-02-05-2",
+    "service": "scenario",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "LTX-2 영상·BytePlus 모델 지원",
+    "summary": "Compute에 LTX-2 영상 모델과 ByteDance(BytePlus) 모델이 추가되고 학습·3D 텍스처·오디오 안정성이 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-24-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-12-20-1",
+    "service": "invokeai",
+    "date": "2024.12.20",
+    "kind": "앱",
+    "title": "Invoke 5.5.0: Invoke Launcher와 FLUX Control LoRA",
+    "summary": "Invoke 5.5.0과 함께 Windows·macOS·Linux에서 Invoke를 설치·업데이트·실행하는 데스크톱 앱 Invoke Launcher가 나왔어요. BFL의 FLUX Canny·Depth Control LoRA도 지원해요.",
+    "url": "https://invoke.ai/releases/version/v5-5-0/",
+    "source": "notice"
+  }
+]

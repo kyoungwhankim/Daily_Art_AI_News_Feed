@@ -1,0 +1,16 @@
+[
+  {
+    "id": "elevenlabs-2026-07-22-1",
+    "service": "elevenlabs",
+    "date": "2026.07.22",
+    "kind": "기능",
+    "title": "ElevenMusic Vocals, 일관된 목소리로 작곡",
+    "summary": "내 목소리나 Vocal Library 목소리로 여러 곡에 일관된 보컬을 입히는 Vocals 기능이 나왔어요. Music Finetunes API도 함께 공개됐어요.",
+    "details": [
+      "ElevenMusic Vocals와 Vocal Library",
+      "Music Finetunes API로 맞춤 Finetune 생성"
+    ],
+    "url": "https://elevenlabs.io/blog/introducing-vocals-a-consistent-voice-for-your-elevenmusic-songs",
+    "source": "notice"
+  }
+]

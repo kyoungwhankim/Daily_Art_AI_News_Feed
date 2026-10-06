@@ -1,0 +1,27 @@
+[
+  {
+    "id": "meshy-2026-05-12-1",
+    "service": "meshy",
+    "date": "2026.05.12",
+    "kind": "기능",
+    "title": "Meshy Workspace 3.0 공개",
+    "summary": "새 Discover 생성 바와 Image·3D Model·3D Printing·Animate 작업별 모듈, 통합 에셋 관리를 갖춘 Workspace 3.0을 공개했어요.",
+    "details": [
+      "Discover 생성 바로 즉시 생성",
+      "작업 중심 모듈(Image, 3D Model, 3D Printing, Animate)",
+      "에셋 통합 관리"
+    ],
+    "url": "https://www.meshy.ai/blog/workspace3",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-05-12-2",
+    "service": "meshy",
+    "date": "2026.05.12",
+    "kind": "API",
+    "title": "Remesh에 resize_longest_side 추가",
+    "summary": "Remesh API에서 가장 긴 변을 지정한 미터 값에 맞춰 모델 크기를 조정할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  }
+]

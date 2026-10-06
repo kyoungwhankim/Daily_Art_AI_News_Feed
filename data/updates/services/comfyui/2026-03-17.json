@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-03-17-1",
+    "service": "comfyui",
+    "date": "2026.03.17",
+    "kind": "연동",
+    "title": "ComfyUI, Reve 이미지 모델 지원",
+    "summary": "미적 감각이 강한 Reve를 최대 4K로 생성하고 Remix·Edit 노드로 다듬을 수 있도록 API 노드로 지원해요.",
+    "url": "https://blog.comfy.org/p/reve-is-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

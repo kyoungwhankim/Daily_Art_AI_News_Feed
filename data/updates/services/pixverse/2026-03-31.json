@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pixverse-2026-03-31-1",
+    "service": "pixverse",
+    "date": "2026.03.31",
+    "kind": "기능",
+    "title": "PixVerse Team Plan·Mini Apps·CLI Skills 출시",
+    "summary": "팀 공유 작업 공간인 Team Plan, 상품 이미지 한 장으로 광고 영상을 만드는 Ad Master 등 Mini Apps, 에이전트용 CLI Skills를 출시했어요.",
+    "details": [
+      "Team Plan: 좌석당 월 79달러, 권한·크레딧 공유",
+      "Ad Master: 영상당 약 3달러(구독자 2달러)",
+      "CLI와 Skills 라이브러리로 에이전트 워크플로 지원"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-evolves-from-creation-tool-to-production-platform",
+    "source": "notice"
+  }
+]

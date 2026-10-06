@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2025-03-20-1",
+    "service": "rokoko",
+    "date": "2025.03.20",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.8, 엄지 리타기팅 옵션 추가",
+    "summary": "커스텀 캐릭터 엄지의 사전 회전을 리타기팅 옵션에서 조정할 수 있고, Unreal 플러그인에서 라이브스트림 스켈레톤의 액터 이름을 생략할 수 있어요.",
+    "details": [
+      "커스텀 캐릭터 엄지 pre-rotation 옵션",
+      "풋락 편집 시 플레이헤드가 커서 추적",
+      "Unreal 플러그인 액터 이름 생략 옵션",
+      "Windows 11 24H2 다중 Smartglove 연결 문제 수정"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/33634504438801-Rokoko-Studio-2-4-8",
+    "source": "dev"
+  }
+]

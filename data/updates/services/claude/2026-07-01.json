@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-01-1",
+    "service": "claude",
+    "date": "2026.07.01",
+    "kind": "기능",
+    "title": "Fable 5·Mythos 5 접근 재개·모델 권한 관리",
+    "summary": "Claude Fable 5와 Mythos 5 접근이 다시 열렸어요. Enterprise 관리자는 사용자가 쓸 수 있는 모델과 effort 수준을 제어할 수 있게 됐어요(베타).",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

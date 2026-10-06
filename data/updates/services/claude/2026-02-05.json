@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-02-05-1",
+    "service": "claude",
+    "date": "2026.02.05",
+    "kind": "모델",
+    "title": "Claude Opus 4.6 출시",
+    "summary": "에이전트 코딩·컴퓨터 사용·도구 사용·검색·금융 작업에서 업계 선두인 Claude Opus 4.6이 나왔어요. 같은 날 Claude for PowerPoint도 공개됐어요.",
+    "details": [
+      "API: 적응형 사고 권장, effort 파라미터 정식, compaction API 베타",
+      "inference_geo 데이터 레지던시, Opus 4.6 1M 컨텍스트 베타",
+      "Claude for Excel이 피벗 테이블·조건부 서식 지원"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-4-6",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-08-05-1",
+    "service": "comfyui",
+    "date": "2026.08.05",
+    "kind": "연동",
+    "title": "ComfyUI, FLUX 3 Video API 노드",
+    "summary": "영상·오디오·이미지·행동을 한 모델로 다루는 Black Forest Labs의 FLUX 3 Video를 API 노드로 쓸 수 있어요. 기본 오디오와 20초 클립을 지원하고 오픈 웨이트는 곧 나와요.",
+    "details": [
+      "v0.30.2: Topaz Bloom 2·Wonder 3.5 추가",
+      "구형 Kling 모델과 Virtual Try-On API 제거"
+    ],
+    "url": "https://blog.comfy.org/p/flux-3-is-now-available-via-partner",
+    "source": "notice"
+  }
+]

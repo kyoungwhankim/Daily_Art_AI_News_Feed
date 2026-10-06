@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-04-27-1",
+    "service": "kling",
+    "date": "2026.04.27",
+    "kind": "API",
+    "title": "이미지 API 시리즈 장수 자동 설정 지원",
+    "summary": "Kling 이미지 API에서 series_amount를 auto로 두면 프롬프트 내용에 맞춰 시리즈 이미지 장수를 자동으로 정해줘요.",
+    "url": "https://kling.ai/document-api/updates/api#04%2F27%2F2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-03-27-1",
+    "service": "comfyui",
+    "date": "2026.03.27",
+    "kind": "연동",
+    "title": "Topaz Starlight Precise 2.5 노드",
+    "summary": "더 선명하고 아티팩트가 적은 영상 업스케일 모델 Topaz Starlight Precise 2.5를 기존과 같은 가격으로 API 노드에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/topaz-starlight-precise-25-now-available",
+    "source": "notice"
+  }
+]

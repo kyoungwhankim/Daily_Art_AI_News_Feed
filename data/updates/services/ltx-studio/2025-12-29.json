@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ltx-studio-2025-12-29-1",
+    "service": "ltx-studio",
+    "date": "2025.12.29",
+    "kind": "모델",
+    "title": "LTX-2 오픈소스 공개",
+    "summary": "오디오와 영상을 동기화해 생성하는 LTX-2의 모델 가중치와 디스틸 버전, LoRA, 학습 프레임워크를 오픈소스로 공개했어요.",
+    "details": [
+      "메인·디스틸 모델 가중치",
+      "예제 LoRA 어댑터",
+      "멀티 GPU 지원 Trainer",
+      "NVIDIA RTX GPU 최적화"
+    ],
+    "url": "https://ltx.io/blog/ltx-2-is-now-open-source",
+    "source": "notice"
+  }
+]

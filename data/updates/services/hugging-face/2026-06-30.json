@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-06-30-1",
+    "service": "hugging-face",
+    "date": "2026.06.30",
+    "kind": "기능",
+    "title": "Models 페이지 하드웨어 필터 추가",
+    "summary": "내 GPU·CPU·Apple Silicon에서 실제로 돌아가는 모델만 걸러 볼 수 있는 Hardware 필터가 생겼어요. 다른 필터와 함께 쓰고 URL로 공유도 돼요.",
+    "url": "https://huggingface.co/changelog/filter-models-by-hardware",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "heygen-2026-05-25-1",
+    "service": "heygen",
+    "date": "2026.05.25",
+    "kind": "API",
+    "title": "HeyGen API 새 화면비와 Get Asset 엔드포인트",
+    "summary": "영상 생성 API가 1:1, 4:5, 5:4, auto 화면비를 지원하고, 개별 에셋 정보를 조회하는 GET /v3/assets/{asset_id}가 추가됐어요.",
+    "details": [
+      "아바타 동의 API에 선택 항목 consent_text 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-aspect-ratios-for-social-formats",
+    "source": "dev"
+  }
+]

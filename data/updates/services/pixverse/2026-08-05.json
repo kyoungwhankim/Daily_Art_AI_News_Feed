@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-08-05-1",
+    "service": "pixverse",
+    "date": "2026.08.05",
+    "kind": "API",
+    "title": "PixVerse Viral recreation API 출시",
+    "summary": "PixVerse API에 인기 영상을 재구성해 만드는 Viral recreation API를 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

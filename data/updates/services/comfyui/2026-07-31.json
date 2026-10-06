@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-07-31-1",
+    "service": "comfyui",
+    "date": "2026.07.31",
+    "kind": "연동",
+    "title": "ComfyUI v0.29.2: Ideogram P-Image·MiniMax H3 노드",
+    "summary": "ComfyUI v0.29.2에서 Ideogram P-Image와 MiniMax H3 모델을 API 노드로 지원해요.",
+    "url": "https://docs.comfy.org/changelog#v0-29-2",
+    "source": "notice"
+  }
+]

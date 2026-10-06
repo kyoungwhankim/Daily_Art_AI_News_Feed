@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-12-07-1",
+    "service": "runway",
+    "date": "2024.12.07",
+    "kind": "기능",
+    "title": "Gen-3 Alpha 핸드헬드 카메라 흔들림 제어",
+    "summary": "Gen-3 Alpha와 Turbo의 Edit Video에서 손떨림 효과의 강도와 속도를 조절할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

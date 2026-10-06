@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-19-1",
+    "service": "comfyui",
+    "date": "2025.12.19",
+    "kind": "연동",
+    "title": "새 템플릿 라이브러리와 GPT-Image-1.5·Kling 2.6·Wan 2.6",
+    "summary": "실제 작업용 워크플로를 담은 새 템플릿 라이브러리가 나왔고, GPT-Image-1.5, Kling 2.6, Wan 2.6을 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/new-template-library-and-partner",
+    "source": "notice"
+  }
+]

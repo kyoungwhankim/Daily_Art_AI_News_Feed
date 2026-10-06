@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-09-22-1",
+    "service": "comfyui",
+    "date": "2026.09.22",
+    "kind": "기능",
+    "title": "MiniMax H3 영상 VAE 2배 가속",
+    "summary": "MiniMax H3 영상 VAE 인코딩이 최대 약 2.2배, 디코딩이 1.4~2.7배 빨라져 영상 워크플로의 VAE 시간이 대략 절반으로 줄었어요.",
+    "url": "https://blog.comfy.org/p/making-the-minimax-h3-video-vae-2x",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-09-22-2",
+    "service": "comfyui",
+    "date": "2026.09.22",
+    "kind": "연동",
+    "title": "ComfyUI v0.37.1: HY Image 3.5 Preview 노드",
+    "summary": "ComfyUI v0.37.1에서 참조 이미지 최대 5장과 네이티브 2K 출력을 지원하는 HY Image 3.5 Preview 텍스트→이미지·편집 노드가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-37-1",
+    "source": "notice"
+  }
+]

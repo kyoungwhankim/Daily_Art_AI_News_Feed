@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2023-12-18-1",
+    "service": "flow-studio",
+    "date": "2023.12.18",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya Scene 내보내기 출시",
+    "summary": "렌더 레이어와 Camera Sequencer가 미리 구성된 Maya 씬으로 내보낼 수 있어요. 애니메이션을 보존한 채 Maya 툴로 캐릭터를 다듬을 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

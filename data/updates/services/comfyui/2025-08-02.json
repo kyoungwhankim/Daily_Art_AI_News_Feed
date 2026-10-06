@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-02-1",
+    "service": "comfyui",
+    "date": "2025.08.02",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.2 FLF2V 네이티브 지원",
+    "summary": "첫 프레임과 마지막 프레임을 이어 영상을 만드는 Wan2.2 14B FLF2V를 ComfyUI에서 네이티브로 지원하고 템플릿 워크플로를 제공해요.",
+    "url": "https://blog.comfy.org/p/wan22-flf2v-comfyui-native-support",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2024-11-14-1",
+    "service": "meshy",
+    "date": "2024.11.14",
+    "kind": "API",
+    "title": "Image to 3D API, base64 이미지 입력 지원",
+    "summary": "Image to 3D API가 base64로 인코딩한 이미지를 입력으로 받게 됐어요. 이미지를 따로 호스팅하지 않아도 바로 요청할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2024",
+    "source": "dev"
+  }
+]

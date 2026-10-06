@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2024-09-19-1",
+    "service": "figma-ai",
+    "date": "2024.09.19",
+    "kind": "기능",
+    "title": "AI로 FigJam 보드를 Slides 개요로 변환",
+    "summary": "FigJam의 브레인스토밍이나 리서치 내용을 AI로 Figma Slides 발표 개요로 바꿀 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=Create%20a%20Figma%20Slides%20outline%20from%20a%20FigJam%20board%20with%20AI",
+    "source": "notice"
+  }
+]

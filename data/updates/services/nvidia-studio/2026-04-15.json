@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2026-04-15-1",
+    "service": "nvidia-studio",
+    "date": "2026.04.15",
+    "kind": "연동",
+    "title": "Adobe Premiere 새 컬러 그레이딩 모드 GPU 가속",
+    "summary": "NAB 2026에서 Adobe Premiere의 새 컬러 그레이딩 모드가 NVIDIA GPU로 가속된다고 소개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-nab-adobe-premiere-color-mode/",
+    "source": "notice"
+  }
+]

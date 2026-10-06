@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2024-04-23-1",
+    "service": "unity-ai",
+    "date": "2024.04.23",
+    "kind": "기능",
+    "title": "Unity Muse 5개 기능 모두 에디터에서 사용",
+    "summary": "Muse의 다섯 가지 기능을 Unity 에디터 안에서 바로 쓸 수 있게 됐어요. 프로젝트 정보를 읽는 에디터용 Muse Chat이 나오고 Muse Animate·Behavior가 모든 사용자에게 열렸어요.",
+    "details": [
+      "Muse Chat이 Unity 버전·렌더 파이프라인 등 프로젝트 설정을 읽어 답변",
+      "콘솔 오류를 눌러 해결책 질문",
+      "LLM 기반 Muse Behavior로 캐릭터 상호작용 설정"
+    ],
+    "url": "https://unity.com/blog/engine-platform/unity-muse-ai-capabilities-in-editor-plus-new-updates",
+    "source": "notice"
+  }
+]

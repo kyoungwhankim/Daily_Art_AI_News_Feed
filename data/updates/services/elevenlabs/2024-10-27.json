@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2024-10-27-1",
+    "service": "elevenlabs",
+    "date": "2024.10.27",
+    "kind": "API",
+    "title": "TTS 웹소켓 Auto Mode와 u-law 포맷",
+    "summary": "지연을 줄이는 TTS 웹소켓 Auto Mode와 Twilio 연동용 u-law 오디오 포맷이 추가됐고, 웹사이트 TTS 리디자인 알파가 시작됐어요.",
+    "details": [
+      "Convai API u-law 오디오 포맷",
+      "TTS 웹소켓 flush·생성 동작 개선",
+      "청크 스케줄링을 끈 Auto Mode",
+      "모든 모델 지연 일관성 개선"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/27",
+    "source": "dev"
+  }
+]

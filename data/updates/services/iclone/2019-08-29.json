@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2019-08-29-1",
+    "service": "iclone",
+    "date": "2019.08.29",
+    "kind": "앱",
+    "title": "iClone 7.6, 일괄 렌더와 IES 조명",
+    "summary": "오래 기다린 Batch Render와 IES 조명이 추가됐고, 유휴 시 GPU 부하가 줄어 UI가 더 부드러워졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

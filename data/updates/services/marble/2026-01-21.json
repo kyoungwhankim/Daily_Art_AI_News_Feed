@@ -1,0 +1,12 @@
+[
+  {
+    "id": "marble-2026-01-21-1",
+    "service": "marble",
+    "date": "2026.01.21",
+    "kind": "API",
+    "title": "World API 출시",
+    "summary": "Marble의 월드 생성 기능을 앱에 넣을 수 있는 공개 World API를 출시했어요. 텍스트·이미지·파노라마·멀티뷰·영상으로 탐험 가능한 3D 월드를 만들어요.",
+    "url": "https://www.worldlabs.ai/blog/announcing-the-world-api",
+    "source": "notice"
+  }
+]

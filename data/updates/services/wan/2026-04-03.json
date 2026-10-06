@@ -1,0 +1,16 @@
+[
+  {
+    "id": "wan-2026-04-03-1",
+    "service": "wan",
+    "date": "2026.04.03",
+    "kind": "모델",
+    "title": "Wan2.7 영상 모델과 Video Edit 출시",
+    "summary": "Wan2.7 텍스트·이미지·레퍼런스-투-비디오와 프롬프트로 부분·전체 편집하는 wan2.7-videoedit가 나왔어요. 감정 표현과 액션, 시네마틱 컷 리듬이 강화됐어요.",
+    "details": [
+      "r2v: 이미지·영상 최대 5개 혼합 레퍼런스, 음색 복제",
+      "videoedit: 이미지 레퍼런스로 요소 교체, 모션·이펙트·카메라 복제"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

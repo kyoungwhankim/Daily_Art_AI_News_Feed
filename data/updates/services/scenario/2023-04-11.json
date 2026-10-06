@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-04-11-1",
+    "service": "scenario",
+    "date": "2023.04.11",
+    "kind": "기능",
+    "title": "생성기 선택 선택사항화·팀 나가기",
+    "summary": "생성할 때 생성기를 바로 고르지 않아도 되고, 팀에서 나갈 수 있는 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-8-0-april-11-2023",
+    "source": "notice"
+  }
+]

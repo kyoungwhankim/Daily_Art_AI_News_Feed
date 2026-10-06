@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-17-1",
+    "service": "claude",
+    "date": "2026.07.17",
+    "kind": "종료",
+    "title": "레거시 Workbench·프롬프트 도구 API 종료 예고",
+    "summary": "Console의 레거시 Workbench와 실험적 프롬프트 생성·개선·템플릿화 API가 2026년 8월 17일 종료돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
+    "source": "dev"
+  }
+]

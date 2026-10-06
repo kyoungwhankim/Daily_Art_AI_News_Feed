@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-10-26-1",
+    "service": "firefly",
+    "date": "2023.10.26",
+    "kind": "API",
+    "title": "Firefly Generate Images API v1.0 출시",
+    "summary": "첫 정식 Firefly API인 Generate Images API v1.0이 나왔어요. 텍스트 프롬프트로 이미지를 만들고 v1 모델의 스타일·콘텐츠 클래스를 지원해요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#october-26-2023",
+    "source": "dev"
+  }
+]

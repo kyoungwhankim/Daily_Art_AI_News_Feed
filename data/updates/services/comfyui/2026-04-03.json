@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-03-1",
+    "service": "comfyui",
+    "date": "2026.04.03",
+    "kind": "연동",
+    "title": "ComfyUI, Wan2.7 API 노드",
+    "summary": "화질·오디오·움직임을 끌어올린 Alibaba Wan2.7을 API 노드로 쓸 수 있어요. 실사 인물 이미지 최대 5장, 음색 참조, 3x3 그리드 생성을 지원해요.",
+    "url": "https://blog.comfy.org/p/wan27-is-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-03-31-1",
+    "service": "claude",
+    "date": "2025.03.31",
+    "kind": "API",
+    "title": "Java SDK 정식·Go SDK 베타",
+    "summary": "Java SDK가 첫 정식 버전이 되고 Go SDK는 알파에서 베타로 올라갔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#march-31st-2025",
+    "source": "dev"
+  }
+]

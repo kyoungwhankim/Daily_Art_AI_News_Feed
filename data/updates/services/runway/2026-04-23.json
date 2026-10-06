@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-04-23-1",
+    "service": "runway",
+    "date": "2026.04.23",
+    "kind": "API",
+    "title": "Runway Dev에 GPT Image 2 추가",
+    "summary": "OpenAI GPT Image 2를 API로 쓸 수 있어요. 레퍼런스 최대 16장과 1K·2K·4K, 30가지 비율을 지원하지만 투명 배경은 안 돼요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#gpt-image-2",
+    "source": "dev"
+  }
+]

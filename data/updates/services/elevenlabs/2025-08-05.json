@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-05-1",
+    "service": "elevenlabs",
+    "date": "2025.08.05",
+    "kind": "모델",
+    "title": "음악 생성 모델 Eleven Music 출시",
+    "summary": "자연어 프롬프트로 어떤 스타일이든 스튜디오급 음악을 만드는 Eleven Music이 나왔어요. 상업적으로 쓸 수 있는 음악 생성 모델이에요.",
+    "url": "https://elevenlabs.io/blog/eleven-music-is-here",
+    "source": "notice"
+  }
+]

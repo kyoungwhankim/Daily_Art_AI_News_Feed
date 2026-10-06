@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-30-1",
+    "service": "scenario",
+    "date": "2026.03.30",
+    "kind": "기능",
+    "title": "워크플로 노드 그룹·3D 다운로드 개선",
+    "summary": "워크플로 노드를 그룹으로 묶고 리스트를 다룰 수 있어요. 3D 에셋 다운로드와 모델 제약 경고도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-8-0",
+    "source": "notice"
+  }
+]

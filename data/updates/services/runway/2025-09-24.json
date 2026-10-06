@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-09-24-1",
+    "service": "runway",
+    "date": "2025.09.24",
+    "kind": "API",
+    "title": "Runway Dev Playground 출시",
+    "summary": "최신 모델을 모두 써 볼 수 있는 샌드박스 Playground를 열어 개발자가 프로덕션 전에 통합을 테스트할 수 있어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#api-playground",
+    "source": "dev"
+  }
+]

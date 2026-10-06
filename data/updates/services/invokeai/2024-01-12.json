@@ -1,0 +1,15 @@
+[
+  {
+    "id": "invokeai-2024-01-12-1",
+    "service": "invokeai",
+    "date": "2024.01.12",
+    "kind": "앱",
+    "title": "Invoke 3.6.0: 브랜드와 UI/UX 전면 개편",
+    "summary": "InvokeAI가 Invoke로 브랜드를 바꾸며 3.6.0에서 UI/UX를 전면 개편했어요. 기업 배포 지원으로 확장하면서도 오픈소스 약속은 그대로라고 밝혔어요.",
+    "details": [
+      "bfloat16 사용 가능(이전 버전과 결과가 달라질 수 있음)"
+    ],
+    "url": "https://invoke.ai/releases/version/invoke-3-6-0/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-02-24-1",
+    "service": "figma-ai",
+    "date": "2026.02.24",
+    "kind": "연동",
+    "title": "Notion에서 FigJam MCP 연동",
+    "summary": "FigJam이 Notion에 미리 구성된 MCP 연동으로 들어가 Notion에서 FigJam을 쓸 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=connect-figjam-to-notion",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-08-13-1",
+    "service": "comfyui",
+    "date": "2026.08.13",
+    "kind": "모델",
+    "title": "ComfyUI, MiniMax Music 3 오픈 웨이트 음악 생성",
+    "summary": "가사와 음악 설명으로 최대 5분짜리 32kHz 스테레오 곡을 만드는 MiniMax Music 3를 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.33.1: Bria GenFill·Eraser·Expand·업스케일 노드",
+      "dynamic VRAM과 호환되는 네이티브 CUDA Graphs",
+      "Anima 튠 체크포인트 지원"
+    ],
+    "url": "https://blog.comfy.org/p/minimax-music-3-state-of-the-art",
+    "source": "notice"
+  }
+]

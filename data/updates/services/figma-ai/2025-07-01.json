@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-07-01-1",
+    "service": "figma-ai",
+    "date": "2025.07.01",
+    "kind": "API",
+    "title": "Dev Mode MCP 서버: 주석·Code Connect 스니펫",
+    "summary": "Dev Mode MCP 서버가 주석과 Code Connect 스니펫까지 전달해 에이전트 코딩 도구의 코드 생성 품질을 높여요.",
+    "url": "https://www.figma.com/release-notes/?title=Dev%20Mode%20MCP%20Server%20Updates%3A%20Annotations%20and%20Code%20Connect%20Snippets",
+    "source": "notice"
+  }
+]

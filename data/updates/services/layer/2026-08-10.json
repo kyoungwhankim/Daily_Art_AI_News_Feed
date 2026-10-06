@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-08-10-1",
+    "service": "layer",
+    "date": "2026.08.10",
+    "kind": "모델",
+    "title": "Seedance 2.5 추가",
+    "summary": "Seedance 2.5 영상 모델과 그려서 만드는 영상(draw-video), 빠른 작업 메뉴가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-10",
+    "source": "notice"
+  }
+]

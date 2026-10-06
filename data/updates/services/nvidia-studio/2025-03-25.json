@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-03-25-1",
+    "service": "nvidia-studio",
+    "date": "2025.03.25",
+    "kind": "API",
+    "title": "RTX용 NIM 마이크로서비스 제공 시작",
+    "summary": "RTX 플랫폼에 최적화된 AI 모델 패키지인 NIM 마이크로서비스를 지금 쓸 수 있고, AI Blueprints는 4월에 나올 예정이에요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-nim-blueprints-g-assist/",
+    "source": "notice"
+  }
+]

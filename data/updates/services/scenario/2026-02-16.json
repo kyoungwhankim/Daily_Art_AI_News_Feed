@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-02-16-1",
+    "service": "scenario",
+    "date": "2026.02.16",
+    "kind": "모델",
+    "title": "xAI Grok Imagine 이미지 모델 추가",
+    "summary": "xAI Grok Imagine Image와 Pro로 이미지를 생성·편집할 수 있게 됐어요. 워크플로 안정성도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/webapp-release-2-2-xai-grok-models-more-workflow-stability",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-03-15-1",
+    "service": "runway",
+    "date": "2024.03.15",
+    "kind": "기능",
+    "title": "Gen-2에서 에셋 이름 변경과 변수 지원",
+    "summary": "Gen-2 안에서 에셋 이름을 바꾸고 $Date, $Prompt 같은 변수를 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-29-1",
+    "service": "elevenlabs",
+    "date": "2026.06.29",
+    "kind": "API",
+    "title": "STT 멀티채널 통합 출력",
+    "summary": "멀티채널 전사 결과를 하나로 합쳐 받는 옵션이 생기고, 에이전트 브랜치 병합·리베이스 미리보기가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/29",
+    "source": "dev"
+  }
+]

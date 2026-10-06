@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2024-10-13-1",
+    "service": "elevenlabs",
+    "date": "2024.10.13",
+    "kind": "기능",
+    "title": "전 모델 안정성 향상과 Agents Platform 베타",
+    "summary": "Turbo v2·v2.5를 중심으로 모든 모델의 오디오 안정성이 좋아지고 첫 바이트 지연이 20~30ms 줄었어요. Agents Platform이 베타로 열렸어요.",
+    "details": [
+      "웹소켓·Projects·Reader 등에서 오디오 안정성 개선",
+      "첫 바이트 지연 약 20~30ms 단축",
+      "보이스 샘플·STS 입력 배경 소음 제거 무료 제공",
+      "Agents Platform 베타"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/13",
+    "source": "dev"
+  }
+]

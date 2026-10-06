@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-01-11-1",
+    "service": "ltx-studio",
+    "date": "2026.01.11",
+    "kind": "기능",
+    "title": "이미지 부분 편집 도구 Brush",
+    "summary": "이미지에서 바꾸고 싶은 영역을 칠하고 설명하면 그 부분만 수정하는 Brush 기능이 LTX Studio에 생겼어요. 전체를 다시 생성할 필요가 없어요.",
+    "url": "https://ltx.io/blog/how-to-make-edits-using-the-brush-tool",
+    "source": "notice"
+  }
+]

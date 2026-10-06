@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-08-11-1",
+    "service": "invokeai",
+    "date": "2023.08.11",
+    "kind": "기능",
+    "title": "InvokeAI 3.0.2: SDXL LoRA와 갤러리 다중 선택",
+    "summary": "InvokeAI 3.0.2에서 SDXL용 LoRA를 쓸 수 있고, 갤러리 다중 선택과 보드 자동 저장, ONNX 모델 지원이 추가됐어요.",
+    "details": [
+      "A1111에서 가져온 인페인팅 모델 동작",
+      "모델 병합 기능 수정, 모델 매니저 UI 개선",
+      "HTTPS로 서비스 가능"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-3-0-2/",
+    "source": "notice"
+  }
+]

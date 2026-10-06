@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-05-01-1",
+    "service": "claude",
+    "date": "2025.05.01",
+    "kind": "API",
+    "title": "프롬프트 캐싱 cache_control 위치 규칙 변경",
+    "summary": "tool_result와 document.source에서는 cache_control을 부모 블록에 지정해야 해요. 호환성을 위해 마지막 블록 지정은 자동으로 옮겨져요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-1-2025",
+    "source": "dev"
+  }
+]

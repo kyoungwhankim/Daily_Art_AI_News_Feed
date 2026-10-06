@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-02-11-1",
+    "service": "invokeai",
+    "date": "2024.02.11",
+    "kind": "기능",
+    "title": "Invoke 3.6.3: 생성 속도 대폭 향상",
+    "summary": "Invoke 3.6.3에서 이미지 생성 속도가 크게 빨라졌고, Unified Canvas에서 Ctrl+마우스 휠로 브러시 크기를 바꿀 수 있게 됐어요.",
+    "details": [
+      "Workflow Library 개선",
+      "설치·업데이트 도구 개선",
+      "더 빠른 이미지 저장"
+    ],
+    "url": "https://invoke.ai/releases/version/invoke-3-6-3/",
+    "source": "notice"
+  }
+]

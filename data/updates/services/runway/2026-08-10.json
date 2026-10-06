@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-08-10-1",
+    "service": "runway",
+    "date": "2026.08.10",
+    "kind": "기능",
+    "title": "Gen-4.5·Aleph 2 결과물 ProRes·PNG 시퀀스 내보내기",
+    "summary": "Tool Mode와 Edit Studio에서 Gen-4.5와 Aleph 2 생성물을 ProRes 4444(PCM 오디오)나 PNG 시퀀스로 내보낼 수 있어 편집 툴에 바로 올릴 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

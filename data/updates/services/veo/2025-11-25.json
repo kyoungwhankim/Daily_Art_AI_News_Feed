@@ -1,0 +1,17 @@
+[
+  {
+    "id": "veo-2025-11-25-1",
+    "service": "veo",
+    "date": "2025.11.25",
+    "kind": "기능",
+    "title": "Flow에 영상 다듬기·편집 기능 추가",
+    "summary": "Flow에서 클립 속 오브젝트를 넣거나 지우고, Reshoot로 카메라 위치·움직임을 바꿀 수 있게 됐어요. 이미지에 낙서해 지시하는 기능과 Nano Banana Pro 이미지 편집도 들어왔어요.",
+    "details": [
+      "오브젝트 삽입·제거(제거는 실험 기능)",
+      "Reshoot로 생성 영상의 카메라 앵글 변경",
+      "이미지 위에 그리거나 주석을 달아 프롬프트로 사용"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-refine-videos/",
+    "source": "notice"
+  }
+]

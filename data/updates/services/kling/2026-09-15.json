@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2026-09-15-1",
+    "service": "kling",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "Virtual Try-On 3.0 정식 출시",
+    "summary": "가상 피팅 API가 3.0으로 업그레이드돼 모델 얼굴 일관성과 화질이 크게 좋아졌어요. 플랫레이·마네킹·착용 사진 등 다양한 의류 이미지를 받을 수 있어요.",
+    "details": [
+      "포즈 고정, 얼굴 유지, 배경 유지 여부 선택",
+      "기존 V1/V1.5 파라미터 그대로 3.0으로 전환 가능"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#09%2F15%2F2026",
+    "source": "dev"
+  }
+]

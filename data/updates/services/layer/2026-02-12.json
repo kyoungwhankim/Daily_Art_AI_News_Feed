@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-02-12-1",
+    "service": "layer",
+    "date": "2026.02.12",
+    "kind": "기능",
+    "title": "내보내기 개선: PSD·메타데이터·해상도",
+    "summary": "PSD, 메타데이터, 해상도를 한 대화상자에서 고르는 통합 내보내기가 나왔어요.",
+    "url": "https://layer.ai/changelog/page/3#2026-02-12",
+    "source": "notice"
+  }
+]

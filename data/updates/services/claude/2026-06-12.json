@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-06-12-1",
+    "service": "claude",
+    "date": "2026.06.12",
+    "kind": "종료",
+    "title": "Fable 5·Mythos 5 접근 일시 중단",
+    "summary": "미국 정부의 수출 통제 지시에 따라 Claude Fable 5와 Mythos 5 접근을 일시 중단했어요.",
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-06-12-2",
+    "service": "claude",
+    "date": "2026.06.12",
+    "kind": "기능",
+    "title": "Claude 초안 제자리 편집",
+    "summary": "채팅이나 Cowork에서 Claude가 쓴 초안이 옆에 열리고, 바꿀 부분을 선택해 지시하면 그 자리에서 수정돼요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

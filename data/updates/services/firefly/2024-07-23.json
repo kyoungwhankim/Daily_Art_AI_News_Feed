@@ -1,0 +1,22 @@
+[
+  {
+    "id": "firefly-2024-07-23-1",
+    "service": "firefly",
+    "date": "2024.07.23",
+    "kind": "연동",
+    "title": "Illustrator Generative Shape Fill(베타)",
+    "summary": "최신 Firefly Vector Model로 동작하는 Generative Shape Fill(베타)이 Illustrator에 들어와 내 스타일에 맞춰 도형을 디테일과 색으로 채울 수 있어요.",
+    "url": "https://blog.adobe.com/en/publish/2024/07/23/explore-new-creative-frontiers-latest-innovations-illustrator",
+    "source": "notice"
+  },
+  {
+    "id": "firefly-2024-07-23-2",
+    "service": "firefly",
+    "date": "2024.07.23",
+    "kind": "API",
+    "title": "Firefly API: Generate Images·Similar Images 정식 출시",
+    "summary": "Firefly Generate Images API와 Generate Similar Images API가 프리뷰를 마치고 정식(GA)으로 제공돼요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#july-23-2024",
+    "source": "dev"
+  }
+]

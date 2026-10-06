@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-10-01-1",
+    "service": "meshy",
+    "date": "2025.10.01",
+    "kind": "종료",
+    "title": "Text to Voxel API 제거",
+    "summary": "Text to Voxel API가 제거됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  }
+]

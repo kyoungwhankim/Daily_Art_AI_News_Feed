@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-18-1",
+    "service": "elevenlabs",
+    "date": "2025.08.18",
+    "kind": "API",
+    "title": "Eleven Music API 공개",
+    "summary": "음악 생성 모델 Eleven Music을 API로 쓸 수 있게 됐어요. 앱과 서비스에 음악 생성을 바로 넣을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/eleven-music-now-available-in-the-api",
+    "source": "dev"
+  }
+]

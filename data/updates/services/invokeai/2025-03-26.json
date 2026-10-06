@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-03-26-1",
+    "service": "invokeai",
+    "date": "2025.03.26",
+    "kind": "모델",
+    "title": "Invoke 5.9.0: FLUX Fill과 LLaVA OneVision",
+    "summary": "Invoke 5.9.0에서 고품질 인페인팅·아웃페인팅용 FLUX Fill과, 프롬프트 생성·이미지 설명에 쓰는 LLaVA OneVision VLLM(베타)을 지원해요.",
+    "url": "https://invoke.ai/releases/version/v5-9-0/",
+    "source": "notice"
+  }
+]

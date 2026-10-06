@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-03-31-1",
+    "service": "hugging-face",
+    "date": "2026.03.31",
+    "kind": "기능",
+    "title": "Spaces에 Storage Bucket 영구 스토리지 마운트",
+    "summary": "Space 설정에서 HF Bucket을 영구 저장소 볼륨으로 마운트할 수 있게 됐어요. 모델 가중치 캐시나 사용자 업로드 저장, Space 간 파일 공유에 유용해요.",
+    "url": "https://huggingface.co/changelog/storage-buckets-for-spaces",
+    "source": "notice"
+  }
+]

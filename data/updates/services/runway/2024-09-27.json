@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-27-1",
+    "service": "runway",
+    "date": "2024.09.27",
+    "kind": "기능",
+    "title": "생성 영상 시간 편집 기능",
+    "summary": "생성한 영상을 자르고 뒤집고 속도를 조절할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

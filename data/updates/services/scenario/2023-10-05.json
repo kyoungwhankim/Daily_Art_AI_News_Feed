@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-05-1",
+    "service": "scenario",
+    "date": "2023.10.05",
+    "kind": "API",
+    "title": "prompt-generator 새 모드 추가",
+    "summary": "/prompt-generator에 structured·inventive·completion 모드가 추가돼 프롬프트를 더 다양하게 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-1-53-0-october-5th-2023",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dream-machine-2024-11-20-1",
+    "service": "dream-machine",
+    "date": "2024.11.20",
+    "kind": "기능",
+    "title": "완전히 새로워진 Dream Machine 공개",
+    "summary": "Dream Machine이 이미지·영상 생성을 아우르는 크리에이티브 플랫폼으로 새로 태어났어요. Ideas 공간, 크레딧 요금제, 키프레임 연장, 스타일 레퍼런스 등을 담았어요.",
+    "details": [
+      "Text-to-Image, Image-to-Video",
+      "키프레임 연장, 스타일 레퍼런스",
+      "자연어로 수정하는 Modify, Brainstorm·Concept Pills",
+      "iOS는 Apple 로그인 지원"
+    ],
+    "url": "https://lumalabs.ai/changelog/welcome-to-the-all-new-dream-machine",
+    "source": "notice"
+  }
+]

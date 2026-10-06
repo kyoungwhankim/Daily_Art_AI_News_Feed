@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-09-30-1",
+    "service": "ltx-studio",
+    "date": "2026.09.30",
+    "kind": "모델",
+    "title": "HDR Native와 SDR to HDR 업그레이드 공개",
+    "summary": "16비트 EXR을 받아 ACES 워크플로로 16비트 EXR을 돌려주는 HDR Native와, 8비트 SDR을 scene-linear ACEScg 16비트 EXR로 확장하는 개선된 SDR to HDR을 공개했어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

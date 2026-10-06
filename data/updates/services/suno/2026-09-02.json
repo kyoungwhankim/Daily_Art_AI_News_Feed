@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-09-02-1",
+    "service": "suno",
+    "date": "2026.09.02",
+    "kind": "기능",
+    "title": "Suno Studio 채팅 바 BPM 인식",
+    "summary": "Studio 2.0 이후 업데이트로 채팅 바가 빨라지고 BPM을 인식해 템포에 맞춰 처리해요.",
+    "url": "https://suno.com/release-notes/studio-updates-sept26",
+    "source": "notice"
+  }
+]

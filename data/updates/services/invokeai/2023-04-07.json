@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2023-04-07-1",
+    "service": "invokeai",
+    "date": "2023.04.07",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.4: LoRA·LyCORIS 지원",
+    "summary": "InvokeAI 2.3.4에서 스타일·인물·콘셉트를 입히는 LoRA와 LyCORIS 파인튜닝 모델을 쓸 수 있게 됐어요. .safetensors 파일을 loras 폴더에 넣으면 돼요.",
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-3-4-post1---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

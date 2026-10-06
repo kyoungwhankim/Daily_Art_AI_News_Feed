@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-11-26-1",
+    "service": "comfyui",
+    "date": "2025.11.26",
+    "kind": "모델",
+    "title": "ComfyUI v0.3.75: Z Image 모델 지원",
+    "summary": "ComfyUI v0.3.75에서 Alibaba의 Z Image 모델을 최적화된 성능으로 지원하고, 혼합 FP8 모델의 LoRA 문제와 Flux2 참조 이미지 메모리 추정을 고쳤어요.",
+    "url": "https://docs.comfy.org/changelog#v0-3-75",
+    "source": "notice"
+  }
+]

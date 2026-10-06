@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-22-1",
+    "service": "scenario",
+    "date": "2026.09.22",
+    "kind": "연동",
+    "title": "MCP 에셋 미리보기·뷰어 제어 확대",
+    "summary": "에이전트가 더 많은 에셋을 미리 보고 뷰어를 제어할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-22-2",
+    "service": "scenario",
+    "date": "2026.09.22",
+    "kind": "연동",
+    "title": "패럴랙스 배경·모델 비교 스킬",
+    "summary": "새 모델 비교 스킬과 패럴랙스 배경 기능이 추가되고 게임 에셋·학습 지침이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-46-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-12-08-1",
+    "service": "scenario",
+    "date": "2023.12.08",
+    "kind": "요금",
+    "title": "캔버스 검색·종량제 토글",
+    "summary": "캔버스를 검색할 수 있고, 요금제 페이지에서 종량제를 켜 한도를 넘어 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-42-december-8th-2023",
+    "source": "notice"
+  }
+]

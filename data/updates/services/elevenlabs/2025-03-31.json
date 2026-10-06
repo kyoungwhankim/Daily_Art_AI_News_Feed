@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2025-03-31-1",
+    "service": "elevenlabs",
+    "date": "2025.03.31",
+    "kind": "기능",
+    "title": "Studio Actor Mode와 Opus 포맷",
+    "summary": "내 녹음으로 대사 연기를 지시하는 Studio Actor Mode와 48kHz Opus 출력 포맷이 추가됐어요. Twilio 아웃바운드 통화도 지원해요.",
+    "details": [
+      "Studio Actor Mode",
+      "TTS Opus 48kHz 포맷",
+      "에이전트 Twilio 아웃바운드 통화",
+      "더빙 복제 기능 전체 개방"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/31",
+    "source": "dev"
+  }
+]

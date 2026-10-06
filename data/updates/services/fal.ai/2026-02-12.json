@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-12-1",
+    "service": "fal.ai",
+    "date": "2026.02.12",
+    "kind": "기능",
+    "title": "앱 카드에 오류율·스파크라인 그래프",
+    "summary": "Serverless 앱 목록 카드에 오류율 표시와 요청량·오류 추이 미니 그래프가 들어갔어요.",
+    "url": "https://fal.ai/docs/changelog#february-12-2026",
+    "source": "dev"
+  }
+]

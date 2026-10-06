@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-05-20-1",
+    "service": "scenario",
+    "date": "2026.05.20",
+    "kind": "API",
+    "title": "Grok Imagine·Veo 3.1 참조·레이어 추출",
+    "summary": "Grok Imagine, Veo 3.1 참조 이미지, 레이어 추출과 정밀 이미지 편집 도구가 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-32-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-20-2",
+    "service": "scenario",
+    "date": "2026.05.20",
+    "kind": "연동",
+    "title": "MCP 추천 도구 진행 알림",
+    "summary": "MCP 추천 도구가 진행 알림과 주의 사항을 보여 줘 더 투명하게 에셋을 제안해요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-9-0",
+    "source": "notice"
+  }
+]

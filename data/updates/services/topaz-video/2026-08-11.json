@@ -1,0 +1,16 @@
+[
+  {
+    "id": "topaz-video-2026-08-11-1",
+    "service": "topaz-video",
+    "date": "2026.08.11",
+    "kind": "모델",
+    "title": "Topaz Video 1.7.0: Starlight Precise 2.6과 Final Cut Pro 플러그인",
+    "summary": "선명도 3단계를 고르는 Starlight Precise 2.6과 Final Cut Pro용 Topaz 플러그인을 추가하고 Starlight Mini를 업데이트했어요.",
+    "details": [
+      "실시간 미리보기 안정화",
+      "내보내기 대기열에서 모델 다운로드"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-1-7-0/104328",
+    "source": "notice"
+  }
+]

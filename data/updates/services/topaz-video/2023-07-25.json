@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-07-25-1",
+    "service": "topaz-video",
+    "date": "2023.07.25",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.3.6~3.3.8: Iris Interlaced 디테일 슬라이더",
+    "summary": "Iris Interlaced 모델에 원본 디테일 복원 슬라이더를 추가하고 이미지 시퀀스 미리보기가 완료된 내보내기를 덮어쓰는 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-3-6-v3-3-8/49048",
+    "source": "notice"
+  }
+]

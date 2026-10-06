@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-05-28-1",
+    "service": "elevenlabs",
+    "date": "2026.05.28",
+    "kind": "모델",
+    "title": "Dubbing v2, 원래 연기 감정까지 옮기는 더빙",
+    "summary": "원래 화자의 감정과 연기를 모든 언어로 옮겨 주는 새 더빙 모델 Dubbing v2를 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-dubbing-v2",
+    "source": "notice"
+  }
+]

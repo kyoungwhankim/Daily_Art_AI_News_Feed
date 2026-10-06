@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-01-07-1",
+    "service": "hugging-face",
+    "date": "2026.01.07",
+    "kind": "기능",
+    "title": "Papers에 HuggingChat 어시스턴트 내장",
+    "summary": "모든 Hugging Face Papers 페이지에 HuggingChat과 MCP 서버 기반 어시스턴트가 들어가, 논문 질문 답변과 핵심 요약을 바로 받을 수 있어요.",
+    "url": "https://huggingface.co/changelog/huggingchat-papers",
+    "source": "notice"
+  }
+]

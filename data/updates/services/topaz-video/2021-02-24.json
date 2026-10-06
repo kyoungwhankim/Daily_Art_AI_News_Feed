@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2021-02-24-1",
+    "service": "topaz-video",
+    "date": "2021.02.24",
+    "kind": "앱",
+    "title": "Video Enhance AI v2.0.0: UI 전면 개편",
+    "summary": "UI를 전면 개편하고 과도한 샤프닝 아티팩트를 처리하는 Artemis v11, Dione v2 모델을 추가했어요. 파라미터가 슬라이더로 바뀌었어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v2-0-0/20543",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-29-1",
+    "service": "fal.ai",
+    "date": "2026.01.29",
+    "kind": "모델",
+    "title": "Grok Imagine fal 제공 (엔드포인트 5종)",
+    "summary": "이미지 생성·편집과 영상 생성·편집, 네이티브 오디오까지 아우르는 Grok Imagine 엔드포인트 5개가 fal에 추가됐어요.",
+    "url": "https://blog.fal.ai/grok-imagine-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

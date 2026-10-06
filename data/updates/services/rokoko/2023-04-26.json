@@ -1,0 +1,19 @@
+[
+  {
+    "id": "rokoko-2023-04-26-1",
+    "service": "rokoko",
+    "date": "2023.04.26",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.0, 리타기팅과 커스텀 캐릭터 임포트",
+    "summary": "Studio 안에서 바로 커스텀 캐릭터를 불러와 라이브·녹화 모션을 리타기팅할 수 있게 됐어요. 요금제도 개편돼 일부 기능은 Plus·Pro 전용이 됐어요.",
+    "details": [
+      "커스텀 캐릭터(.fbx) 임포트와 리타기팅(Plus 플랜)",
+      "씬 복사로 팀원 씬 접근",
+      "녹화 시작/정지 UDP 트리거",
+      "VRChat·VMC 실험적 라이브스트리밍",
+      "구독 플랜 개편"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/14843715531281-Rokoko-Studio-2-4-0",
+    "source": "dev"
+  }
+]

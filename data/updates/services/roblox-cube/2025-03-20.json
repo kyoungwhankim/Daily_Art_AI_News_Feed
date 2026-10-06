@@ -1,0 +1,17 @@
+[
+  {
+    "id": "roblox-cube-2025-03-20-1",
+    "service": "roblox-cube",
+    "date": "2025.03.20",
+    "kind": "모델",
+    "title": "Cube 3D 공개: 텍스트→3D 메시 생성 베타",
+    "summary": "1.5M 개 3D 에셋으로 학습한 1.8B 파라미터 3D 기반 모델 Cube 3D를 공개했어요. 첫 기능인 텍스트→메시 생성(Mesh Generation API)이 베타로 나왔어요.",
+    "details": [
+      "Roblox Cube: 향후 AI 도구의 핵심 생성 시스템",
+      "모델 오픈소스 공개(GitHub, 기술 보고서)",
+      "Studio Assistant와 경험 내 API로 사용"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-cube-3d-generation-tools-and-apis-for-creators/3558947",
+    "source": "notice"
+  }
+]

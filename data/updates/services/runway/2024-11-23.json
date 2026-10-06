@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-11-23-1",
+    "service": "runway",
+    "date": "2024.11.23",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo에서 Act-One 지원",
+    "summary": "Act-One을 Gen-3 Alpha Turbo에서 써서 더 빠르고 저렴하게 생성할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

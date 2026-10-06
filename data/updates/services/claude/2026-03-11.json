@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-11-1",
+    "service": "claude",
+    "date": "2026.03.11",
+    "kind": "연동",
+    "title": "Claude for Excel·PowerPoint 맥락 공유",
+    "summary": "Excel과 PowerPoint 애드인이 대화 맥락을 공유하고 스킬을 지원해요. Bedrock·Vertex AI·Foundry 사용자는 LLM 게이트웨이로 연결할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

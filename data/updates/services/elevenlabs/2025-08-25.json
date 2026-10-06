@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-25-1",
+    "service": "elevenlabs",
+    "date": "2025.08.25",
+    "kind": "API",
+    "title": "발음 사전 PATCH 업데이트",
+    "summary": "발음 사전을 PATCH로 부분 수정할 수 있게 되는 등 TTS와 에이전트 API가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/8/25",
+    "source": "dev"
+  }
+]

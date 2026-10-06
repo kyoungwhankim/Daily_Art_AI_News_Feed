@@ -1,0 +1,19 @@
+[
+  {
+    "id": "elevenlabs-2025-12-22-1",
+    "service": "elevenlabs",
+    "date": "2025.12.22",
+    "kind": "기능",
+    "title": "Eleven Music 인페인팅·스템 분리 등 새 도구",
+    "summary": "Eleven Music에 Explore, 인페인팅 API, 스템 분리, 개선된 가사 생성, 곡 타임스탬프가 추가돼 음악을 탐색·편집·제작하기 쉬워졌어요.",
+    "details": [
+      "Explore 화면",
+      "Music Inpainting API",
+      "스템 분리",
+      "가사 생성 개선",
+      "곡 타임스탬프"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-music-new-tools-for-exploring-editing-and-producing-music-with-ai",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-30-1",
+    "service": "claude",
+    "date": "2026.03.30",
+    "kind": "API",
+    "title": "Batches API 출력 300k·1M 베타 종료 예고",
+    "summary": "Message Batches API에서 Opus 4.6·Sonnet 4.6의 max_tokens를 300k까지 올릴 수 있어요(베타). Sonnet 4.5·4의 1M 베타는 4월 30일 종료 예정이에요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#march-30-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-09-29-1",
+    "service": "figma-ai",
+    "date": "2025.09.29",
+    "kind": "정책",
+    "title": "워크스페이스별 AI 기능 켜기·끄기",
+    "summary": "Enterprise 조직 관리자가 워크스페이스마다 AI 기능을 켜거나 끌 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=workspace-level-ai-settings",
+    "source": "notice"
+  }
+]

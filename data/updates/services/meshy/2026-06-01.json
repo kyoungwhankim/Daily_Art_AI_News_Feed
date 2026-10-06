@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2026-06-01-1",
+    "service": "meshy",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Creative Lab API 출시",
+    "summary": "사진이나 텍스트로 3D 프린팅용 소비자 제품을 만드는 Creative Lab API를 공개했어요. 키체인, 냉장고 자석, 피규어, 램프 네 가지로 시작해요.",
+    "details": [
+      "prototype→build 2단계 워크플로",
+      "제품별 URL과 독립 버전 관리"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  }
+]

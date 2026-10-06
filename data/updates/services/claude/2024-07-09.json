@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-07-09-1",
+    "service": "claude",
+    "date": "2024.07.09",
+    "kind": "기능",
+    "title": "Console 테스트 케이스 자동 생성·출력 비교",
+    "summary": "Developer Console에서 Claude로 프롬프트 테스트 케이스를 자동 생성하고 여러 프롬프트 출력을 나란히 비교할 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-9th-2024",
+    "source": "dev"
+  }
+]

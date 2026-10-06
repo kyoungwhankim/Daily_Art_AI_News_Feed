@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dream-machine-2024-10-10-1",
+    "service": "dream-machine",
+    "date": "2024.10.10",
+    "kind": "API",
+    "title": "Dream Machine API 콜백·크레딧 잔액 조회 추가",
+    "summary": "생성 요청에 callback_url을 넣으면 상태가 바뀔 때마다 결과를 POST로 받아볼 수 있고, 크레딧 잔액을 확인하는 엔드포인트도 생겼어요.",
+    "details": [
+      "콜백 실패 시 3회 재시도",
+      "/dream-machine/v1/credits로 잔액(센트 단위) 조회",
+      "Python·JS/TS SDK 지원"
+    ],
+    "url": "https://docs.lumalabs.ai/changelog/callbacks-and-credits-balance",
+    "source": "dev"
+  }
+]

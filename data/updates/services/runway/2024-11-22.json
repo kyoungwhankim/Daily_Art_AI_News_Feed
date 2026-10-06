@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-11-22-1",
+    "service": "runway",
+    "date": "2024.11.22",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo Expand Video 출시",
+    "summary": "입력 영상 주변을 새로 생성해 다른 화면비로 바꿔 주는 Expand Video 기능이 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

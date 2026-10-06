@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2026-09-11-1",
+    "service": "elevenlabs",
+    "date": "2026.09.11",
+    "kind": "모델",
+    "title": "Music v2.5 출시",
+    "summary": "더 풍성하고 자연스러운 악기 소리를 내는 가장 뛰어난 음악 모델 Music v2.5가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/music-v2-5-model",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-11-2",
+    "service": "elevenlabs",
+    "date": "2026.09.11",
+    "kind": "모델",
+    "title": "Scribe v2 Medical 정식 제공",
+    "summary": "의료·임상 음성에 특화된 배치 음성 인식 모델 Scribe v2 Medical이 정식 제공돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/11",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-09-09-1",
+    "service": "pixverse",
+    "date": "2025.09.09",
+    "kind": "API",
+    "title": "PixVerse API Effect center 공개: 모든 이펙트 제한 없이 사용",
+    "summary": "PixVerse API에 Effect center를 출시해 모든 영상 이펙트를 제한 없이 쓸 수 있게 했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

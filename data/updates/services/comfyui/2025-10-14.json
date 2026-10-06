@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-10-14-1",
+    "service": "comfyui",
+    "date": "2025.10.14",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.65: MMAudio 16K VAE와 RDNA4 지원",
+    "summary": "ComfyUI v0.3.65에서 MMAudio 16K VAE를 지원하고, ROCm 7.0+ RDNA4 GPU에서 PyTorch 어텐션을 켜는 등 AMD 최적화가 이뤄졌어요.",
+    "details": [
+      "Gemini Image API에 aspect_ratio 추가",
+      "코어 노드 V3 스키마 이전"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-65",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-06-12-1",
+    "service": "meshy",
+    "date": "2026.06.12",
+    "kind": "요금",
+    "title": "Creative Lab Build 요금 조정",
+    "summary": "Keychain, Fridge Magnet, Figure의 Build 단계가 호출당 20에서 30크레딧으로 올랐어요. Prototype은 6크레딧 그대로예요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  }
+]

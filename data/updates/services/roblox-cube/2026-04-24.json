@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-04-24-1",
+    "service": "roblox-cube",
+    "date": "2026.04.24",
+    "kind": "기능",
+    "title": "Assistant 데이터 모델 검색 서브에이전트·MCP 빠른 연결",
+    "summary": "큰 워크스페이스를 병렬로 조사하는 Data Model Search 서브에이전트와, 토글 하나로 외부 AI 클라이언트를 연결하는 Quick connect가 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-the-data-model-search-subagent-and-quick-connect-for-mcp-clients/4596579",
+    "source": "notice"
+  }
+]

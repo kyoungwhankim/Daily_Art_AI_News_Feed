@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-09-23-1",
+    "service": "comfyui",
+    "date": "2026.09.23",
+    "kind": "API",
+    "title": "Comfy Router: 최신 미디어 모델을 하나의 API로",
+    "summary": "Comfy 개발자 플랫폼에서 이미지·영상·3D·오디오 모델을 한 API로 연동하고 작업마다 제공자를 고르는 Comfy Router가 출시됐어요. Seedance 2.5, GPT Image 2 등을 지원해요.",
+    "url": "https://blog.comfy.org/p/introducing-comfy-router-one-api",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-09-23-2",
+    "service": "comfyui",
+    "date": "2026.09.23",
+    "kind": "연동",
+    "title": "ComfyUI v0.37.2: Recraft V4.1 Flash·Quiver Arrow 2",
+    "summary": "ComfyUI v0.37.2에서 빠르고 저렴한 Recraft V4.1 Flash, 추론 강도를 조절하는 Quiver Arrow 2 SVG 모델, Claude Opus 5.5가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-37-2",
+    "source": "notice"
+  }
+]

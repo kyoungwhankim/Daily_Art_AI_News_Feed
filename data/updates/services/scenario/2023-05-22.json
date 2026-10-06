@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-05-22-1",
+    "service": "scenario",
+    "date": "2023.05.22",
+    "kind": "기능",
+    "title": "이미지 탐색 UI 개편, Edit 탭 추가",
+    "summary": "생성 이미지를 가로 스크롤로 빠르게 보고, Edit 탭에서 다듬기·다운로드·업스케일을 할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-12-0-may-22-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-18-1",
+    "service": "claude",
+    "date": "2026.06.18",
+    "kind": "API",
+    "title": "SDK, code_execution_20260120 지원",
+    "summary": "모든 공식 SDK가 REPL 상태 유지와 프로그래매틱 도구 호출을 지원하는 code_execution_20260120 도구를 지원해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-18-2026",
+    "source": "dev"
+  }
+]

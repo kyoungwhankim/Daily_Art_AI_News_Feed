@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-07-27-1",
+    "service": "elevenlabs",
+    "date": "2026.07.27",
+    "kind": "API",
+    "title": "보이스 억양 목록 엔드포인트",
+    "summary": "공유 보이스 라이브러리의 억양 목록을 조회하는 엔드포인트가 생기고, Studio 프로젝트에 draft 상태가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/27",
+    "source": "dev"
+  }
+]

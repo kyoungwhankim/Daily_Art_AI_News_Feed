@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-05-13-1",
+    "service": "claude",
+    "date": "2026.05.13",
+    "kind": "앱",
+    "title": "Claude for Small Business 출시",
+    "summary": "소상공인이 매일 쓰는 도구 안에서 Claude를 쓰도록 커넥터와 바로 실행 가능한 워크플로를 묶은 Claude for Small Business가 나왔어요.",
+    "url": "https://www.anthropic.com/news/claude-for-small-business",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-05-13-2",
+    "service": "claude",
+    "date": "2026.05.13",
+    "kind": "API",
+    "title": "캐시 진단 공개 베타",
+    "summary": "이전 턴과 비교해 프롬프트 캐시가 어디서 어긋났는지 알려 주는 cache diagnostics가 공개 베타로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-13-2026",
+    "source": "dev"
+  }
+]

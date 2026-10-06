@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-04-24-1",
+    "service": "scenario",
+    "date": "2024.04.24",
+    "kind": "기능",
+    "title": "홈 페이지 재디자인",
+    "summary": "홈 페이지 디자인과 기능이 새로워지고 모델 썸네일로 로컬 이미지를 올릴 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/1-54-home-page-redesign",
+    "source": "notice"
+  }
+]

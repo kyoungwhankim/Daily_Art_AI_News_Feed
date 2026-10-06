@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-11-06-1",
+    "service": "meshy",
+    "date": "2025.11.06",
+    "kind": "API",
+    "title": "Meshy 6 Preview 텍스처링, 여러 API로 확대",
+    "summary": "Text to 3D Refine, Multi-Image to 3D, Retexture에서 latest로 Meshy 6 Preview를 쓸 수 있게 됐어요. Image to 3D도 텍스처링 기본값이 Meshy-6-preview가 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2025",
+    "source": "dev"
+  }
+]

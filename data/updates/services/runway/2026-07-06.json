@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-06-1",
+    "service": "runway",
+    "date": "2026.07.06",
+    "kind": "기능",
+    "title": "Agent에 PDF 입력 지원",
+    "summary": "브리프, 스크립트, 스타일 가이드 같은 PDF(최대 10MB)를 올리면 Agent가 내용을 읽어 생성에 바로 반영해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

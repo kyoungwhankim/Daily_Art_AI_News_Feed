@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-09-10-1",
+    "service": "firefly",
+    "date": "2025.09.10",
+    "kind": "종료",
+    "title": "Firefly 구버전 API 지원 종료",
+    "summary": "Generate Images v2, Expand Image v1, Fill Image v1 API가 더 이상 제공되지 않아요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#september-10-2025",
+    "source": "dev"
+  }
+]

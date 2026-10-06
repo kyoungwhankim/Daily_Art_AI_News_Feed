@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-11-11-1",
+    "service": "elevenlabs",
+    "date": "2025.11.11",
+    "kind": "모델",
+    "title": "실시간 음성 인식 Scribe v2 Realtime",
+    "summary": "가장 빠르고 정확한 실시간 음성 인식 모델 Scribe v2 Realtime을 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+    "source": "notice"
+  }
+]

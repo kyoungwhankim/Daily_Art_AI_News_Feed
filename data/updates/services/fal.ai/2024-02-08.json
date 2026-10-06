@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-02-08-1",
+    "service": "fal.ai",
+    "date": "2024.02.08",
+    "kind": "연동",
+    "title": "fal 공식 Vercel 연동 출시",
+    "summary": "Vercel과 공식 연동을 출시해 웹 개발자가 앱에 생성형 AI를 쉽게 붙일 수 있게 됐어요.",
+    "url": "https://blog.fal.ai/fal-vercel/",
+    "source": "notice"
+  }
+]

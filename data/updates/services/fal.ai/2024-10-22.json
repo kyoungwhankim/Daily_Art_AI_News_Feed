@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-10-22-1",
+    "service": "fal.ai",
+    "date": "2024.10.22",
+    "kind": "모델",
+    "title": "Stable Diffusion 3.5 Large·Turbo fal 제공",
+    "summary": "Stability AI와 협력해 Stable Diffusion 3.5 Large와 Turbo 모델을 fal에서 제공해요.",
+    "url": "https://blog.fal.ai/stable-diffusion-3-5/",
+    "source": "notice"
+  }
+]

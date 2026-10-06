@@ -1,0 +1,17 @@
+[
+  {
+    "id": "suno-2024-11-19-1",
+    "service": "suno",
+    "date": "2024.11.19",
+    "kind": "모델",
+    "title": "Suno v4 출시",
+    "summary": "음질, 가사, 곡 구조가 좋아진 v4가 Pro·Premier에 베타로 나왔어요. 기존 곡을 v4 품질로 올리는 Remaster도 추가됐어요.",
+    "details": [
+      "더 좋은 음질과 날카로운 가사",
+      "역동적인 곡 구조",
+      "Remaster로 기존 곡 업그레이드"
+    ],
+    "url": "https://suno.com/release-notes/v4-is-here",
+    "source": "notice"
+  }
+]

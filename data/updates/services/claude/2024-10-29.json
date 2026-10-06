@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-10-29-1",
+    "service": "claude",
+    "date": "2024.10.29",
+    "kind": "연동",
+    "title": "GitHub Copilot에 Claude 3.5 Sonnet 탑재",
+    "summary": "새 Claude 3.5 Sonnet이 GitHub Copilot에 순차 도입돼 VS Code와 GitHub.com에서 코딩 모델로 고를 수 있어요.",
+    "url": "https://www.anthropic.com/news/github-copilot",
+    "source": "notice"
+  }
+]

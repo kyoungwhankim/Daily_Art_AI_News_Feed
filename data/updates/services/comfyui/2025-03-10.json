@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-03-10-1",
+    "service": "comfyui",
+    "date": "2025.03.10",
+    "kind": "기능",
+    "title": "Wan 2.1·Hunyuan I2V 워크플로 업데이트",
+    "summary": "Wan 2.1을 fp16 가중치로 돌리면 품질이 더 좋아 fp16 모델을 새로 올렸고, Hunyuan 이미지→영상 워크플로도 갱신했어요.",
+    "url": "https://blog.comfy.org/p/updates-for-wan-21-and-hunyuan-image",
+    "source": "notice"
+  }
+]

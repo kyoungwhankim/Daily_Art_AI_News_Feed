@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-11-1",
+    "service": "scenario",
+    "date": "2026.06.11",
+    "kind": "연동",
+    "title": "MCP 모델 접근 안내",
+    "summary": "추천 모델이 요금제 업그레이드가 필요하면 에이전트에 미리 알려 줘요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-14-0",
+    "source": "notice"
+  }
+]

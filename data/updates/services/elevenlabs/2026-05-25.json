@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-05-25-1",
+    "service": "elevenlabs",
+    "date": "2026.05.25",
+    "kind": "기능",
+    "title": "Speech Engine 출시와 음악 생성 모드",
+    "summary": "자체 챗 에이전트나 LLM에 실시간 음성을 붙여 주는 Speech Engine이 나왔어요. 음악 생성에 track·loop·ambience 모드가 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/25",
+    "source": "dev"
+  }
+]

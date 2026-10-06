@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-16-1",
+    "service": "scenario",
+    "date": "2026.09.16",
+    "kind": "연동",
+    "title": "에이전트 스킬: 팀 관리자",
+    "summary": "에이전트가 워크스페이스 설정을 관리하는 scenario-team-admin 스킬이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-42-0",
+    "source": "notice"
+  }
+]

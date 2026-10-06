@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-05-29-1",
+    "service": "fal.ai",
+    "date": "2025.05.29",
+    "kind": "모델",
+    "title": "FLUX.1 Kontext 이미지 편집 모델 fal 제공",
+    "summary": "텍스트와 이미지를 함께 이해해 기존 이미지를 수정하는 FLUX.1 Kontext가 세 가지 버전으로 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/flux-kontext-available-on-fal/",
+    "source": "notice"
+  }
+]

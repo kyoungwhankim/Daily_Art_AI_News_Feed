@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-18-1",
+    "service": "claude",
+    "date": "2026.03.18",
+    "kind": "API",
+    "title": "Models API에 모델 기능 필드 추가",
+    "summary": "Models API가 max_input_tokens, max_tokens, capabilities를 반환해 모델별 지원 기능을 조회할 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#march-18-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "rokoko-2026-03-26-1",
+    "service": "rokoko",
+    "date": "2026.03.26",
+    "kind": "연동",
+    "title": "Rokoko Studio 2.5.2, Rokoko Create 연동",
+    "summary": "텍스트 프롬프트로 모션을 만드는 Rokoko Create의 결과를 Studio에서 편집해 3D 엔진으로 내보낼 수 있게 됐어요.",
+    "details": [
+      "Rokoko Create 생성 모션 편집·내보내기",
+      "Clips 섹션에 Refresh Scene 버튼"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/45150579425041-Rokoko-Studio-2-5-2",
+    "source": "dev"
+  }
+]

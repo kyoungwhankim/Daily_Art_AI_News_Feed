@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-01-20-1",
+    "service": "suno",
+    "date": "2026.01.20",
+    "kind": "기능",
+    "title": "Suno Mashup과 Sample 기능",
+    "summary": "두 곡을 섞어 새 곡을 만드는 Mashup과 샘플을 활용하는 Sample이 Create에 추가됐어요.",
+    "url": "https://suno.com/release-notes/meet-our-new-create-features-sample-mashup",
+    "source": "notice"
+  }
+]

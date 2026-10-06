@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mureka-2025-06-04-1",
+    "service": "mureka",
+    "date": "2025.06.04",
+    "kind": "기능",
+    "title": "Mureka 업로드 곡 구간 편집·확장",
+    "summary": "아무 곡이나 올려 특정 구간의 가사를 바꾸거나 다시 만들고, 원하는 위치에서 곡을 이어 만들 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-06-04-2",
+    "service": "mureka",
+    "date": "2025.06.04",
+    "kind": "API",
+    "title": "Mureka API m4a 업로드와 MIDI 멜로디",
+    "summary": "오디오 업로드에 m4a 포맷을 쓸 수 있고, melody 용도는 MIDI 파일도 지원해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

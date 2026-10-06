@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-28-1",
+    "service": "comfyui",
+    "date": "2026.08.28",
+    "kind": "연동",
+    "title": "Gemini Omni 1.1 Flash: 4K와 키프레임 보간",
+    "summary": "Gemini Video Omni 노드에서 Omni Flash 1.1을 골라 텍스트·이미지·참조→영상, 영상 편집, 장면 연장을 360p~4K로 할 수 있어요. 모든 클립에 오디오가 붙어요.",
+    "url": "https://blog.comfy.org/p/gemini-omni-11-flash-in-comfyui-faster",
+    "source": "notice"
+  }
+]

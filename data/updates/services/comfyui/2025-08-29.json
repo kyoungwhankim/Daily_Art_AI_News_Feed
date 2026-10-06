@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2025-08-29-1",
+    "service": "comfyui",
+    "date": "2025.08.29",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.2 S2V 음성 기반 영상 생성 지원",
+    "summary": "정지 이미지와 오디오로 대화·노래 영상을 만드는 Wan2.2-S2V를 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.3.55: 영상 수동 연장 노드와 오디오 자동 트리밍",
+      "Wan2.2 5B Fun Control·Fun Inpaint 지원",
+      "LatentCut 노드"
+    ],
+    "url": "https://blog.comfy.org/p/wan22-s2v-in-comfyui-audio-driven",
+    "source": "notice"
+  }
+]

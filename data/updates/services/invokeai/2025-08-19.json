@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2025-08-19-1",
+    "service": "invokeai",
+    "date": "2025.08.19",
+    "kind": "기능",
+    "title": "Invoke 6.4.0: 사용 편의 개선 모음",
+    "summary": "Invoke 6.4.0에서 bbox 표시 단축키, 오류 노드 빨간 강조, CLIP Skip 메타데이터 불러오기 등 사용 편의 기능이 추가됐어요. 일반 탭에서 SDXL Style 프롬프트는 빠졌어요.",
+    "details": [
+      "갤러리에서 이미지 위치 찾기 버튼",
+      "FLUX PEFT LoRA 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-4-0/",
+    "source": "notice"
+  }
+]

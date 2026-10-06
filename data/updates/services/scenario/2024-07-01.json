@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-07-01-1",
+    "service": "scenario",
+    "date": "2024.07.01",
+    "kind": "기능",
+    "title": "캔버스 Smart Selection·다운로드 포맷 선택",
+    "summary": "캔버스에 Smart Selection이 추가되고 새 사이드 메뉴, PNG·JPEG·WebP 다운로드 선택이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-61-canvas-smart-selection-side-menu-and-more",
+    "source": "notice"
+  }
+]

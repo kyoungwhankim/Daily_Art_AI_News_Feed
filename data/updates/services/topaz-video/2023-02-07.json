@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-02-07-1",
+    "service": "topaz-video",
+    "date": "2023.02.07",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.3·3.1.4: Apollo 개선과 중복 프레임 대체",
+    "summary": "Apollo 모델이 더 선명해지고, 프레임 보간에서 중복 프레임을 대체하는 기능이 추가됐어요. NVIDIA에서 흔들림 감소가 빨라졌어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-4/39879",
+    "source": "notice"
+  }
+]

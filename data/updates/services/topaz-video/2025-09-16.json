@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2025-09-16-1",
+    "service": "topaz-video",
+    "date": "2025.09.16",
+    "kind": "앱",
+    "title": "Topaz Video 1.0.0: Topaz Studio 구독형 새 앱 출시",
+    "summary": "Video AI를 잇는 구독형 앱 Topaz Video를 Topaz Studio 번들로 출시했어요. 새 디노이즈 모델 Nyx XL과 Starlight Sharp, 실시간 프레임 미리보기를 담았어요.",
+    "details": [
+      "General Enhancement 프리셋과 단일 튜닝 슬라이더",
+      "오른쪽 패널 개선",
+      "Topaz Studio 구독 라이선스로만 제공"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-1-0-0-new-studio-release/95523",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-12-22-1",
+    "service": "meshy",
+    "date": "2025.12.22",
+    "kind": "종료",
+    "title": "Text to 3D 응답 video_url 지원 중단",
+    "summary": "Text to 3D API 응답의 video_url 필드가 지원 중단됐고 향후 제거될 예정이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2025",
+    "source": "dev"
+  }
+]

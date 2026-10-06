@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-08-03-1",
+    "service": "elevenlabs",
+    "date": "2026.08.03",
+    "kind": "API",
+    "title": "Scribe v2 Realtime 개체 감지",
+    "summary": "Scribe v2 Realtime에 개체 감지 옵션이 생기고, 보이스를 격리된 데이터 레지던시 환경으로 복제할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/3",
+    "source": "dev"
+  }
+]

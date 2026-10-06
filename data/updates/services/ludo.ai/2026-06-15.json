@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-06-15-1",
+    "service": "ludo.ai",
+    "date": "2026.06.15",
+    "kind": "기능",
+    "title": "Pose Generator 카메라 각도·높이 제어",
+    "summary": "Pose Generator의 새 View 모드로 캐릭터를 원하는 방향과 카메라 높이에서 일관되게 볼 수 있어요.",
+    "url": "https://ludo.ai/whats-new#pose-generator-orbit-and-tilt-the-camera-freely",
+    "source": "notice"
+  }
+]

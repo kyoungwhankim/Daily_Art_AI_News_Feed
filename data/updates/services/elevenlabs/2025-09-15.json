@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2025-09-15-1",
+    "service": "elevenlabs",
+    "date": "2025.09.15",
+    "kind": "기능",
+    "title": "사람이 편집해 주는 Productions 서비스",
+    "summary": "사람이 다듬은 더빙·오디오북 등 콘텐츠를 플랫폼에서 바로 주문하는 관리형 서비스 Productions를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/introducing-productions-human-edited-content-done-for-you",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-09-15-2",
+    "service": "elevenlabs",
+    "date": "2025.09.15",
+    "kind": "API",
+    "title": "TTS 웹소켓 출력 포맷 지정",
+    "summary": "WebSocket 연결의 첫 메시지에서 출력 포맷을 정할 수 있고, 에이전트 첫 메시지 끼어들기를 막는 설정이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/15",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "runway-2026-09-03-1",
+    "service": "runway",
+    "date": "2026.09.03",
+    "kind": "모델",
+    "title": "GWM Worlds 2 리서치 프리뷰 공개",
+    "summary": "실시간으로 720p·24fps 영상과 48kHz 오디오를 만들어 내는 인터랙티브 월드 모델 GWM Worlds 2를 공개했어요. 환경·피사체·스타일을 정하고 텍스트 액션으로 세계를 조종할 수 있어요.",
+    "details": [
+      "2025년 12월 GWM Worlds의 후속, 생성 오디오 지원",
+      "피사체·장면 제어 강화"
+    ],
+    "url": "https://runway.com/research/introducing-gwm-worlds-2",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-09-03-2",
+    "service": "runway",
+    "date": "2026.09.03",
+    "kind": "API",
+    "title": "Runway Dev에 MiniMax H3 Max 추가",
+    "summary": "MiniMax H3 Max(h3_max)를 Runway Dev에서 쓸 수 있어요. 텍스트나 시작 프레임 이미지로 5–15초 영상을 480p·768p로 만들 수 있어요.",
+    "details": [
+      "마지막 프레임 키프레임 옵션",
+      "promptExpansionMode: disabled/balanced/quality",
+      "초당 480p 5크레딧, 768p 8크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#minimax-h3-max-on-runway-dev",
+    "source": "dev"
+  }
+]

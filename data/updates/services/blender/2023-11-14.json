@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2023-11-14-1",
+    "service": "blender",
+    "date": "2023.11.14",
+    "kind": "앱",
+    "title": "Blender 4.0 출시: 새 Principled BSDF",
+    "summary": "에너지 보존과 유연성이 좋아진 새 Principled BSDF 등 렌더링과 제작 도구를 크게 개선한 Blender 4.0이 나왔어요.",
+    "url": "https://www.blender.org/press/blender-4-0-release/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-30-1",
+    "service": "scenario",
+    "date": "2023.11.30",
+    "kind": "기능",
+    "title": "웹 앱에서 이미지 벡터화",
+    "summary": "웹 앱에서 생성 이미지를 벡터화해 .svg로 내려받을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-41-november-30th-2023",
+    "source": "notice"
+  }
+]

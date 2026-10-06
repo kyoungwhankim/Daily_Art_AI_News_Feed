@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-02-1",
+    "service": "meshy",
+    "date": "2026.04.02",
+    "kind": "API",
+    "title": "Multi-Color Print API·3MF 출력 추가",
+    "summary": "3D 모델을 1–16색 멀티컬러 3MF로 바꾸는 Multi-Color Print API가 나왔어요. 모든 엔드포인트 target_formats에서 3mf도 고를 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  }
+]

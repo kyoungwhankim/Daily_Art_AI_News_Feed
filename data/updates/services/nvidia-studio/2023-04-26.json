@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-04-26-1",
+    "service": "nvidia-studio",
+    "date": "2023.04.26",
+    "kind": "기능",
+    "title": "NVIDIA Broadcast AI 노이즈·에코 제거 소개",
+    "summary": "별도 장비 없이 AI로 잡음과 울림을 없애는 NVIDIA Broadcast 기능을 소개했어요. Studio 앱 제품군은 110개 넘는 크리에이티브 앱을 가속해요.",
+    "url": "https://blogs.nvidia.com/blog/broadcast-ai-effects-noise-echo-removal/",
+    "source": "notice"
+  }
+]

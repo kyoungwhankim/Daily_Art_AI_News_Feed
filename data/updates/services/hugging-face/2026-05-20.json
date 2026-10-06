@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-05-20-1",
+    "service": "hugging-face",
+    "date": "2026.05.20",
+    "kind": "기능",
+    "title": "리더보드 모델 크기별 필터 추가",
+    "summary": "데이터셋 벤치마크 리더보드를 모델 파라미터 수 구간으로 걸러 볼 수 있게 됐어요. 크기 구간별 상위 3개 모델에는 메달이 표시돼요.",
+    "url": "https://huggingface.co/changelog/leaderboard-filter-by-size",
+    "source": "notice"
+  }
+]

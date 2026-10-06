@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-14-1",
+    "service": "meshy",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "decimation_mode 파라미터 추가",
+    "summary": "Image to 3D, Multi-Image to 3D, Text to 3D Preview, Remesh에 적응형 데시메이션 수준을 정하는 decimation_mode가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2025-09-15-1",
+    "service": "kling",
+    "date": "2025.09.15",
+    "kind": "API",
+    "title": "Lip-Sync 다인원 지원, 온라인 TTS API 추가",
+    "summary": "Kling Lip-Sync API가 여러 사람이 나오는 화면에서 화자 지정과 시작 시점 지정을 지원하고, 시험 청취가 되는 온라인 TTS 기능도 추가됐어요.",
+    "details": [
+      "face_id로 화자 지정, sound_insert_time으로 시작 시점 지정",
+      "오디오 자르기 지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#09%2F15%2F2025",
+    "source": "dev"
+  }
+]

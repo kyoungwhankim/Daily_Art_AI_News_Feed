@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-19-1",
+    "service": "scenario",
+    "date": "2023.10.19",
+    "kind": "API",
+    "title": "캔버스 스냅샷·학습 캡션 파라미터",
+    "summary": "캔버스 에셋에 스냅샷과 복원이 생기고, /train에 이미지별 captions 파라미터가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-1-54-0-october-19th-2023",
+    "source": "dev"
+  }
+]

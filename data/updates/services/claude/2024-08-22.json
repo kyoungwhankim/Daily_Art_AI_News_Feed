@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-08-22-1",
+    "service": "claude",
+    "date": "2024.08.22",
+    "kind": "API",
+    "title": "브라우저에서 SDK 사용 지원(CORS)",
+    "summary": "API가 CORS 헤더를 반환해 dangerouslyAllowBrowser 옵션으로 브라우저에서 SDK를 쓸 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-22nd-2024",
+    "source": "dev"
+  }
+]

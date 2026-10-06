@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-07-23-1",
+    "service": "elevenlabs",
+    "date": "2026.07.23",
+    "kind": "기능",
+    "title": "Music v2 References, 레퍼런스 곡 스타일 매칭",
+    "summary": "기존 곡을 올리면 Music v2가 그 스타일과 느낌에 맞는 새 곡을 만들어 주는 References가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-references-sound-control-for-music-v2",
+    "source": "notice"
+  }
+]

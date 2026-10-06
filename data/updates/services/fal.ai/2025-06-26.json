@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-06-26-1",
+    "service": "fal.ai",
+    "date": "2025.06.26",
+    "kind": "모델",
+    "title": "FLUX.1 Kontext [dev] 추론·LoRA 학습",
+    "summary": "오픈 웨이트 FLUX.1 Kontext [dev]를 fal에서 최대 4배 빠른 추론과 LoRA 학습으로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/announcing-flux-1-kontext-dev-inference-training/",
+    "source": "notice"
+  }
+]

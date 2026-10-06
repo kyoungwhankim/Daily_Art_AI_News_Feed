@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-09-23-1",
+    "service": "figma-ai",
+    "date": "2025.09.23",
+    "kind": "API",
+    "title": "원격 MCP 서버·MCP의 Make 리소스(베타)",
+    "summary": "Figma MCP 서버를 원격으로 쓸 수 있게 되고, MCP에서 Make 리소스를 활용하는 기능과 Code Connect UI가 베타로 추가됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=remote-mcp-server",
+    "source": "notice"
+  }
+]

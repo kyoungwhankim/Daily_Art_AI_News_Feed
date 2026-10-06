@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-04-28-1",
+    "service": "fal.ai",
+    "date": "2026.04.28",
+    "kind": "정책",
+    "title": "레거시 CDN 미사용 파일 6월 1일 삭제 예정",
+    "summary": "2026년 6월 1일부터 최근 6개월간 접근하지 않은 레거시 CDN(/files/[동물]/) 객체가 삭제돼요. 최근 접근한 파일은 이미 새 CDN으로 옮겨졌어요.",
+    "url": "https://fal.ai/docs/changelog#april-28-2026",
+    "source": "dev"
+  }
+]

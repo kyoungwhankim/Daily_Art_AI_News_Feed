@@ -1,0 +1,16 @@
+[
+  {
+    "id": "elevenlabs-2025-05-30-1",
+    "service": "elevenlabs",
+    "date": "2025.05.30",
+    "kind": "기능",
+    "title": "Conversational AI 2.0 출시",
+    "summary": "엔터프라이즈 준비와 보안을 강화한 Conversational AI 2.0이 나왔어요. Claude Sonnet 4도 에이전트 LLM으로 추가됐어요.",
+    "details": [
+      "Conversational AI 2.0 신규 기능·보안 강화",
+      "Claude Sonnet 4 지원"
+    ],
+    "url": "https://elevenlabs.io/blog/conversational-ai-2-0",
+    "source": "notice"
+  }
+]

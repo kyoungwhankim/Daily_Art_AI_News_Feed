@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-12-1",
+    "service": "claude",
+    "date": "2026.05.12",
+    "kind": "기능",
+    "title": "Claude Opus 4.7 빠른 모드 지원",
+    "summary": "빠른 모드(리서치 프리뷰)를 Opus 4.7에서도 쓸 수 있어 프리미엄 요금으로 출력 생성이 크게 빨라져요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-12-2026",
+    "source": "dev"
+  }
+]

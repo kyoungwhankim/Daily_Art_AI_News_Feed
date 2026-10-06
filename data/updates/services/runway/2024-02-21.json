@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-02-21-1",
+    "service": "runway",
+    "date": "2024.02.21",
+    "kind": "기능",
+    "title": "연장된 Gen-2 클립에 Motion Brush 사용",
+    "summary": "4초를 넘겨 연장한 Gen-2 클립에도 Motion Brush를 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

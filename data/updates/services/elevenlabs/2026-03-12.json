@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-12-1",
+    "service": "elevenlabs",
+    "date": "2026.03.12",
+    "kind": "기능",
+    "title": "ElevenCreative Music Finetunes",
+    "summary": "자신의 음악으로 Finetune을 만들어 고유한 스타일이나 브랜드에 맞는 음악을 생성할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-music-finetunes-in-elevencreative",
+    "source": "notice"
+  }
+]

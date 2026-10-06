@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-08-23-1",
+    "service": "layer",
+    "date": "2024.08.23",
+    "kind": "기능",
+    "title": "타일링 가능한 이미지 생성",
+    "summary": "이음매 없이 반복되는 타일형 이미지를 생성할 수 있게 됐어요. 텍스처 제작에 유용해요.",
+    "url": "https://layer.ai/changelog/page/7#2024-08-23",
+    "source": "notice"
+  }
+]

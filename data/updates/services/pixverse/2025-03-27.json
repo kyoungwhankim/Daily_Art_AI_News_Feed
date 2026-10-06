@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-03-27-1",
+    "service": "pixverse",
+    "date": "2025.03.27",
+    "kind": "API",
+    "title": "PixVerse API에 Transition(첫·끝 프레임) 기능 추가",
+    "summary": "PixVerse API에서 첫 프레임과 끝 프레임을 지정해 영상을 만드는 Transition 기능을 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

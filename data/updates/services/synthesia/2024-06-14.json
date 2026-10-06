@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2024-06-14-1",
+    "service": "synthesia",
+    "date": "2024.06.14",
+    "kind": "기능",
+    "title": "Synthesia AI Video Assistant로 PowerPoint 영상화",
+    "summary": "PPTX를 올리면 AI Video Assistant가 스크립트 초안과 이미지·스톡 영상이 들어간 영상을 만들어 줘요.",
+    "url": "https://www.synthesia.io/updates/create-videos-from-powerpoint-with-ai-video-assistant",
+    "source": "notice"
+  }
+]

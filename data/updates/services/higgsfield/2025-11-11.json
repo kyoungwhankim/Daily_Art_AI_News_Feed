@@ -1,0 +1,12 @@
+[
+  {
+    "id": "higgsfield-2025-11-11-1",
+    "service": "higgsfield",
+    "date": "2025.11.11",
+    "kind": "기능",
+    "title": "이미지 시점을 바꾸는 Higgsfield Angles",
+    "summary": "재촬영이나 3D 모델링 없이 이미지의 카메라 시점을 바꿔 주는 Angles 도구를 소개했어요.",
+    "url": "https://higgsfield.ai/blog/Change-the-Angle-of-Any-Image",
+    "source": "notice"
+  }
+]

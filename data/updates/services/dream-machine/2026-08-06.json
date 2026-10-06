@@ -1,0 +1,33 @@
+[
+  {
+    "id": "dream-machine-2026-08-06-1",
+    "service": "dream-machine",
+    "date": "2026.08.06",
+    "kind": "기능",
+    "title": "Luma에 Seedance 2.5 탑재",
+    "summary": "Seedance 2.5를 Luma에서 쓸 수 있어요. 한 번에 30초 연속 영상을 만들고 앞뒤로 연장해도 캐릭터와 장면이 유지돼요.",
+    "details": [
+      "레퍼런스 최대 50개(이미지·영상·오디오·스타일)",
+      "네이티브 오디오 동시 생성",
+      "실사·일러스트·코믹·애니 스타일 전환",
+      "부분 수정 시 해당 요소만 다시 렌더링"
+    ],
+    "url": "https://lumalabs.ai/news/seedance-2.5-live-in-luma",
+    "source": "notice"
+  },
+  {
+    "id": "dream-machine-2026-08-06-2",
+    "service": "dream-machine",
+    "date": "2026.08.06",
+    "kind": "기능",
+    "title": "Luma Agents에 MiniMax H3 추가",
+    "summary": "MiniMax H3를 셀프서브 계정의 Luma Agents에서 쓸 수 있어요. 영상과 대사·효과음을 한 번에 동기화해 생성해요.",
+    "details": [
+      "네이티브 2K 24fps, 5–15초",
+      "이미지·영상·오디오 레퍼런스 결합",
+      "비디오 투 비디오 모션 전이"
+    ],
+    "url": "https://lumalabs.ai/news/minimax-h3-now-available-in-luma-agents",
+    "source": "notice"
+  }
+]

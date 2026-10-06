@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-01-23-1",
+    "service": "scenario",
+    "date": "2026.01.23",
+    "kind": "API",
+    "title": "Hunyuan3D 3.1·LTX-2 영상 추가",
+    "summary": "Tencent Hunyuan3D 3.1과 LTX-2 영상 모델을 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-21-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-23-2",
+    "service": "scenario",
+    "date": "2026.01.23",
+    "kind": "API",
+    "title": "Smart Topology로 3D 메시 정리",
+    "summary": "생성된 3D 모델을 게임용 깔끔한 메시로 자동 정리하는 Smart Topology가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-22-0",
+    "source": "notice"
+  }
+]

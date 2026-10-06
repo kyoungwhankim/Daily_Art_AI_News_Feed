@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mureka-2026-03-17-1",
+    "service": "mureka",
+    "date": "2026.03.17",
+    "kind": "기능",
+    "title": "Mureka Remix와 멀티트랙 Studio",
+    "summary": "보컬·멜로디를 유지한 채 장르나 가사를 바꾸는 Remix와, 멀티트랙 타임라인·스템 생성/추출·구간 재생성을 갖춘 Studio가 나왔어요.",
+    "details": [
+      "원클릭 장르 전환, 가사 다시 쓰기",
+      "멀티트랙 타임라인 편집",
+      "스템 생성·오디오/MIDI 추출",
+      "구간 재생성, 앞뒤 확장, 테이크 레인"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

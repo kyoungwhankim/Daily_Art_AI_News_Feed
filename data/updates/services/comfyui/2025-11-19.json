@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-11-19-1",
+    "service": "comfyui",
+    "date": "2025.11.19",
+    "kind": "앱",
+    "title": "ComfyUI v0.3.70: CUDA 12.6 포터블 배포",
+    "summary": "ComfyUI v0.3.70에서 CUDA 12.6용 공식 릴리스와 포터블 다운로드를 제공하고, 새 Gemini 모델 API 노드를 추가했어요.",
+    "url": "https://docs.comfy.org/changelog#v0-3-70",
+    "source": "notice"
+  }
+]

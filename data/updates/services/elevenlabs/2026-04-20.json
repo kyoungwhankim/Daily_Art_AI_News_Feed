@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-04-20-1",
+    "service": "elevenlabs",
+    "date": "2026.04.20",
+    "kind": "API",
+    "title": "STT 화자 역할 감지",
+    "summary": "Speech to Text에 화자 역할을 감지하는 옵션이 생기고, 워크플로 시작 노드를 지정해 대화를 시작할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/20",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-10-06-1",
+    "service": "scenario",
+    "date": "2025.10.06",
+    "kind": "API",
+    "title": "API에 Sora 2 지원",
+    "summary": "API에서 Sora 2를 쓸 수 있고, 프롬프트 에이전트가 Sora 2에 맞는 프롬프트를 만들어 줘요.",
+    "url": "https://www.scenario.com/changelog/api-2-91-1-sora-2",
+    "source": "dev"
+  }
+]

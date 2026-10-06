@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-10-17-1",
+    "service": "nvidia-studio",
+    "date": "2023.10.17",
+    "kind": "기능",
+    "title": "RTX Video Super Resolution 1.5 업데이트",
+    "summary": "RTX VSR이 디테일 보존과 원본 해상도 영상 화질 개선을 강화하고 RTX 20 시리즈까지 지원을 넓혔어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-video-super-resolution-ai-obs-broadcast/",
+    "source": "notice"
+  }
+]

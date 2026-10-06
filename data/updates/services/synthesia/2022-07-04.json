@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2022-07-04-1",
+    "service": "synthesia",
+    "date": "2022.07.04",
+    "kind": "기능",
+    "title": "Synthesia 스크립트 컨텍스트 메뉴",
+    "summary": "스크립트에서 멈춤, 발음 개선, 변수를 단축 메뉴로 쉽게 넣을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/script-context-menu",
+    "source": "notice"
+  }
+]

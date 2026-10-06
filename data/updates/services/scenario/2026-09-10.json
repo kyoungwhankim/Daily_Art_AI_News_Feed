@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-10-1",
+    "service": "scenario",
+    "date": "2026.09.10",
+    "kind": "API",
+    "title": "영상 편집 모델·Tripo P2·SVG 벡터화",
+    "summary": "프롬프트 기반 영상 편집, HDR 영상 포맷, Tripo P2 3D 모델, 네이티브 SVG 벡터라이저가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-10-2",
+    "service": "scenario",
+    "date": "2026.09.10",
+    "kind": "연동",
+    "title": "스킬에 GPT Image 2.5·스프라이트 시트 파이프라인",
+    "summary": "에이전트 스킬이 GPT Image 2.5를 지원하고 게임용 스프라이트 시트를 만드는 파이프라인이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-41-0",
+    "source": "notice"
+  }
+]

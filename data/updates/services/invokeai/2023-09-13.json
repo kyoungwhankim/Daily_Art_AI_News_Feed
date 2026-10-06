@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2023-09-13-1",
+    "service": "invokeai",
+    "date": "2023.09.13",
+    "kind": "기능",
+    "title": "InvokeAI 3.1.1: SDXL 인페인팅 모델과 노드 버전 관리",
+    "summary": "InvokeAI 3.1.1에서 SDXL 인페인팅 모델을 지원하고 노드 버전 관리·다형 입력이 추가됐어요. 워크플로 편집기와 모델 매니저도 개선됐어요.",
+    "url": "https://invoke.ai/releases/version/invokeai-3-1-1-/",
+    "source": "notice"
+  }
+]

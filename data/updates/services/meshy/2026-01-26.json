@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-01-26-1",
+    "service": "meshy",
+    "date": "2026.01.26",
+    "kind": "모델",
+    "title": "Multi-Image to 3D API, Meshy-6 지원",
+    "summary": "Multi-Image to 3D API에서 meshy-6로 전체 메시를 만들 수 있게 됐고 latest도 Meshy 6를 가리켜요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  }
+]

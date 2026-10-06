@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-07-21-1",
+    "service": "hugging-face",
+    "date": "2026.07.21",
+    "kind": "기능",
+    "title": "사용자·조직 이그레스(전송량) 지표 제공",
+    "summary": "대시보드에서 내 이그레스 사용량을 바로 볼 수 있고, 조직은 멤버별 데이터 사용량도 확인할 수 있게 됐어요. 현재는 Hugging Face CDN 경유 트래픽만 집계돼요.",
+    "url": "https://huggingface.co/changelog/egress",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2025-06-26-1",
+    "service": "kling",
+    "date": "2025.06.26",
+    "kind": "기능",
+    "title": "모든 영상 모델에 사운드 통합, 2.1 Master 개선",
+    "summary": "Kling의 모든 영상 모델이 소리가 들어간 영상을 생성하게 됐고, KLING 2.1 Master 이미지-투-비디오가 개선됐어요. KLING 1.6에는 Motion Control이 추가됐어요.",
+    "details": [
+      "KLING 1.6 Motion Control로 캐릭터 동작 제어",
+      "KLING 1.6 Multi-Elements Editor 10초 영상 지원"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/2025062678",
+    "source": "notice"
+  }
+]

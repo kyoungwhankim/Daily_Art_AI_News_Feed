@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-06-24-1",
+    "service": "runway",
+    "date": "2026.06.24",
+    "kind": "API",
+    "title": "Seedance 2.0 API 4K 출력 지원",
+    "summary": "Runway Dev의 Seedance 2.0이 21:9부터 9:16까지 6가지 4K 비율을 지원해요. 4K 생성은 초당 150크레딧이에요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#4k-support-for-seedance-20",
+    "source": "dev"
+  }
+]

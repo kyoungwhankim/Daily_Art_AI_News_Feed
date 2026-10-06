@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2023-03-29-1",
+    "service": "blender",
+    "date": "2023.03.29",
+    "kind": "앱",
+    "title": "Blender 3.5 출시: 뷰포트 컴포지터·헤어 에셋",
+    "summary": "뷰포트 컴포지터, 벡터 디스플레이스먼트 스컬프팅, 내장 헤어 에셋, Cycles Many Lights 샘플링을 담은 Blender 3.5가 나왔어요.",
+    "url": "https://www.blender.org/press/blender-3-5-release/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-29-1",
+    "service": "fal.ai",
+    "date": "2025.10.29",
+    "kind": "모델",
+    "title": "Bria FIBO: JSON 구조화 이미지 생성 모델",
+    "summary": "프롬프트를 구조화된 JSON으로 바꿔 조명·구도·카메라 설정을 예측 가능하게 제어하는 Bria의 FIBO가 fal에 출시됐어요.",
+    "url": "https://blog.fal.ai/introducing-fibo-structured-control-for-text-to-image-generation/",
+    "source": "notice"
+  }
+]

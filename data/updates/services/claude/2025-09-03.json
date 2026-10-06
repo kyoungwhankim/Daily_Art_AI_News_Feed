@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2025-09-03-1",
+    "service": "claude",
+    "date": "2025.09.03",
+    "kind": "연동",
+    "title": "모바일 앱 위치·지도·캘린더 연동",
+    "summary": "iOS·Android에서 Claude가 캘린더 일정 초안, 장소 찾기, 미리 알림(iOS) 관리를 도와요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-09-03-2",
+    "service": "claude",
+    "date": "2025.09.03",
+    "kind": "API",
+    "title": "클라이언트 도구 결과에 인용 가능한 문서 지원",
+    "summary": "클라이언트 측 도구 결과에 인용 가능한 문서를 넣을 수 있게 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+    "source": "dev"
+  }
+]

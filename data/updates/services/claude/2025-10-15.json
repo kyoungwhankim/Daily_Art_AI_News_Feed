@@ -1,0 +1,15 @@
+[
+  {
+    "id": "claude-2025-10-15-1",
+    "service": "claude",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Claude Haiku 4.5 출시",
+    "summary": "Sonnet 4 수준의 코딩·컴퓨터 사용 성능을 내는 가장 빠르고 저렴한 소형 모델 Claude Haiku 4.5가 모든 사용자에게 나왔어요.",
+    "details": [
+      "Claude in Chrome 기본 모델을 Haiku 4.5로 변경, 이미지 업로드·화면 영역 지정 지원"
+    ],
+    "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "source": "notice"
+  }
+]

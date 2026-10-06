@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-02-07-1",
+    "service": "comfyui",
+    "date": "2025.02.07",
+    "kind": "모델",
+    "title": "ComfyUI, Lumina Image 2.0 네이티브 지원",
+    "summary": "사실적 렌더링과 이미지 속 글자, 다양한 화풍을 지원하는 2B 파라미터 모델 Lumina Image 2.0을 ComfyUI에서 네이티브로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/lumina-image-20-native-support-in",
+    "source": "notice"
+  }
+]

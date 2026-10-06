@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-01-30-1",
+    "service": "nvidia-studio",
+    "date": "2025.01.30",
+    "kind": "기능",
+    "title": "RTX 50 출시와 새 Broadcast AI 기능",
+    "summary": "RTX 5090·5080이 FP4 지원으로 FLUX 같은 생성형 모델의 VRAM 요구를 줄이고, NVIDIA Broadcast에 새 AI 효과가 추가됐어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-ai-geforce-rtx-50-series-broadcast/",
+    "source": "notice"
+  }
+]

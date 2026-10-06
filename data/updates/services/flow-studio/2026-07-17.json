@@ -1,0 +1,19 @@
+[
+  {
+    "id": "flow-studio-2026-07-17-1",
+    "service": "flow-studio",
+    "date": "2026.07.17",
+    "kind": "기능",
+    "title": "Flow Studio, Maya Scene 내보내기 강화",
+    "summary": "Maya 씬 내보내기에 HumanIK 파일과 골반 오프셋·루트 모션 가중치 슬라이더가 추가됐고, Maya 2026 포맷으로 제공돼요.",
+    "details": [
+      "HumanIK 별도 파일",
+      "골반 오프셋·스케일·깊이 슬라이더",
+      "루트·카메라 모션 가중치",
+      "샷별 월드 공간 컨트롤 그룹",
+      "구 캐릭터 자동 재검증"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

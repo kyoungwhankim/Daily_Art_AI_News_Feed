@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-05-21-1",
+    "service": "pixverse",
+    "date": "2026.05.21",
+    "kind": "API",
+    "title": "PixVerse API V6 Fusion 업데이트: ref_name·type 선택 사항으로",
+    "summary": "V6 Fusion(레퍼런스→영상) API가 업데이트되어 ref_name과 type 값을 넣지 않아도 되게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

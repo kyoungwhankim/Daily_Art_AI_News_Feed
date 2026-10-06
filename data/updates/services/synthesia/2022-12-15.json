@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2022-12-15-1",
+    "service": "synthesia",
+    "date": "2022.12.15",
+    "kind": "기능",
+    "title": "Synthesia 자동 자막 정확도 개선",
+    "summary": "자동 자막 생성의 단어 인식 정확도를 높였어요.",
+    "url": "https://www.synthesia.io/updates/improved-closed-captions",
+    "source": "notice"
+  }
+]

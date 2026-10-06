@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-12-04-1",
+    "service": "claude",
+    "date": "2024.12.04",
+    "kind": "기능",
+    "title": "Console 사용량 API 키별 보기",
+    "summary": "Developer Console Usage·Cost 페이지에서 API 키별로 묶어 보고, API 키 목록에 최근 사용·비용 열이 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#december-4th-2024",
+    "source": "dev"
+  }
+]

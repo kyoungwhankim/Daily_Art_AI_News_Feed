@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-08-24-1",
+    "service": "scenario",
+    "date": "2023.08.24",
+    "kind": "기능",
+    "title": "앱 내 지원 양식·단축키 추가",
+    "summary": "지원 양식을 웹 앱 안에서 바로 쓸 수 있고 탐색 단축키 등 사용성이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-28-0-august-24-2023",
+    "source": "notice"
+  }
+]

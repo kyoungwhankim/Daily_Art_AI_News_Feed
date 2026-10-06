@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-09-08-1",
+    "service": "invokeai",
+    "date": "2025.09.08",
+    "kind": "기능",
+    "title": "Invoke 6.6.0: 캔버스 전경·배경색과 LoRA 기본 가중치",
+    "summary": "Invoke 6.6.0에서 캔버스 색상 선택기에 전경·배경색이 생기고(x로 전환), 모델 매니저에서 LoRA 기본 가중치를 정할 수 있게 됐어요.",
+    "url": "https://invoke.ai/releases/version/v6-6-0/",
+    "source": "notice"
+  }
+]

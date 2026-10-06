@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2025-01-16-1",
+    "service": "elevenlabs",
+    "date": "2025.01.16",
+    "kind": "기능",
+    "title": "에이전트 다국어 위젯과 End Call 툴",
+    "summary": "에이전트 위젯에 언어 선택이 생기고, 통화를 스스로 끝내는 End Call 툴이 추가됐어요. 새 에이전트 기본 모델은 Flash가 됐어요.",
+    "details": [
+      "위젯 언어 드롭다운",
+      "End Call 툴",
+      "새 에이전트 기본 모델 Flash",
+      "툴 개수 한도 5개→15개"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/1/16",
+    "source": "dev"
+  }
+]

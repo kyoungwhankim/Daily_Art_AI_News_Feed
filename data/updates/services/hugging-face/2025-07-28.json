@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-07-28-1",
+    "service": "hugging-face",
+    "date": "2025.07.28",
+    "kind": "기능",
+    "title": "Daily Papers에 Trending Papers 추가",
+    "summary": "GitHub 스타 활동을 기준으로 인기 논문과 코드 구현을 보여 주는 Trending Papers가 Daily Papers 페이지에 추가됐어요.",
+    "url": "https://huggingface.co/changelog/trending-papers",
+    "source": "notice"
+  }
+]

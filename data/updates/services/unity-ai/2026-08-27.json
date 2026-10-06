@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2026-08-27-1",
+    "service": "unity-ai",
+    "date": "2026.08.27",
+    "kind": "요금",
+    "title": "AI Assistant 2.19: 구독 기반 크레딧 안내와 무료 체험 버튼 제거",
+    "summary": "AI Assistant 2.19.0에서 크레딧·접근 배너가 조직의 AI 구독 정보를 백엔드에서 읽어 대시보드 크레딧 페이지로 안내하고, \"무료 체험 시작\" 버튼은 빠졌어요.",
+    "details": [
+      "연결이 끊긴 작업을 최대 3회 자동 재개",
+      "도메인 리로드 후 프롬프트·도구 호출 복구 개선"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2190-pre1---2026-08-27",
+    "source": "dev"
+  }
+]

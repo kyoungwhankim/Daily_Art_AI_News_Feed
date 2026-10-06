@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-11-14-1",
+    "service": "fal.ai",
+    "date": "2025.11.14",
+    "kind": "연동",
+    "title": "Serverless 앱 장애 Slack 알림",
+    "summary": "Slack 워크스페이스를 연결해 앱 시작 실패·타임아웃·치명적 오류를 채널로 바로 받아볼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#november-14-2025",
+    "source": "dev"
+  }
+]

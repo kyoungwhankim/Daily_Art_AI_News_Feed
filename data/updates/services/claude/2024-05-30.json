@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-05-30-1",
+    "service": "claude",
+    "date": "2024.05.30",
+    "kind": "API",
+    "title": "도구 사용(Tool use) 정식 출시",
+    "summary": "도구 사용이 Claude API, Amazon Bedrock, Vertex AI에서 베타 헤더 없이 정식 제공돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-30th-2024",
+    "source": "dev"
+  }
+]

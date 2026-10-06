@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-25-1",
+    "service": "fal.ai",
+    "date": "2026.02.25",
+    "kind": "기능",
+    "title": "Serverless 앱 태그 기능",
+    "summary": "대시보드에서 Serverless 앱에 팀·프로젝트별 태그를 만들어 붙이고 태그로 필터링할 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#february-25-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "runway-2024-11-25-1",
+    "service": "runway",
+    "date": "2024.11.25",
+    "kind": "모델",
+    "title": "이미지 생성 모델 Frames 발표",
+    "summary": "스타일 일관성과 시각적 충실도를 크게 높인 새 이미지 기반 모델 Frames를 발표하고 Gen-3 Alpha와 API에 단계적으로 공개하기 시작했어요.",
+    "url": "https://runway.com/research/introducing-frames",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2024-11-25-2",
+    "service": "runway",
+    "date": "2024.11.25",
+    "kind": "앱",
+    "title": "iOS 앱에서 Act-One 사용 가능",
+    "summary": "Runway iOS 앱에서도 영상 한 개와 캐릭터 이미지로 Act-One 캐릭터 연기를 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

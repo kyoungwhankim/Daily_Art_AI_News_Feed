@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2025-08-06-1",
+    "service": "minimax-audio",
+    "date": "2025.08.06",
+    "kind": "모델",
+    "title": "MiniMax Speech 2.5 출시",
+    "summary": "지원 언어가 넓어지고 목소리 유사도가 매우 높아진 차세대 음성 합성 모델 Speech 2.5가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

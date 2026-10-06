@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-02-27-1",
+    "service": "claude",
+    "date": "2025.02.27",
+    "kind": "API",
+    "title": "URL 이미지·PDF, tool_choice none, OpenAI 호환 엔드포인트",
+    "summary": "이미지와 PDF를 base64 대신 URL로 넘길 수 있고, tool_choice에 none이 추가됐어요. OpenAI SDK 호환 엔드포인트도 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#february-27th-2025",
+    "source": "dev"
+  }
+]

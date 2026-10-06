@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-09-24-1",
+    "service": "invokeai",
+    "date": "2024.09.24",
+    "kind": "앱",
+    "title": "Invoke 5.0: 레이어 기반 Control Canvas와 FLUX 통합",
+    "summary": "Invoke 5.0은 생성·반복·보정을 한 작업 공간에서 하는 새 Control Canvas를 선보이고 FLUX 모델 통합을 발표한 올해 가장 큰 업데이트예요.",
+    "details": [
+      "Raster Layers로 그리기·이동·크기 조절",
+      "캔버스에서 Control Layer 직접 편집",
+      "캔버스 상태 저장·불러오기"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-0-0/",
+    "source": "notice"
+  }
+]

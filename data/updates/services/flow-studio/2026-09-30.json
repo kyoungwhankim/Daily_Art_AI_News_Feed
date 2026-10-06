@@ -1,0 +1,20 @@
+[
+  {
+    "id": "flow-studio-2026-09-30-1",
+    "service": "flow-studio",
+    "date": "2026.09.30",
+    "kind": "기능",
+    "title": "Flow Studio Canvas, Text·Panorama 노드와 마스크 편집",
+    "summary": "Canvas에 텍스트 생성 노드, 360도 Panorama 노드, 마스크·프롬프트 기반 이미지 부분 편집이 추가됐어요. 프롬프트 개선과 Claude·Gemini·GPT 텍스트 모델도 들어왔어요.",
+    "details": [
+      "Text Node",
+      "마스크 기반 이미지 편집과 Time Machine",
+      "Panorama Node와 Worlds 가져오기",
+      "Simplified World 생성",
+      "AI 프롬프트 개선",
+      "Seedance 2.5 Face Animation"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

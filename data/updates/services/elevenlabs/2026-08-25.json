@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-08-25-1",
+    "service": "elevenlabs",
+    "date": "2026.08.25",
+    "kind": "기능",
+    "title": "ElevenMusic Composer, 구간별 곡 편집",
+    "summary": "가사·곡·프롬프트나 빈 페이지에서 시작해 곡을 구간별로 다듬는 편집기 Composer가 ElevenMusic에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/composer-section-by-section-song-editing-in-elevenmusic",
+    "source": "notice"
+  }
+]

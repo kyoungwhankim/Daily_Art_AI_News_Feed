@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-01-1",
+    "service": "fal.ai",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Analytics API 지표 14종 추가",
+    "summary": "models/serverless analytics 엔드포인트에 오류 유형, 콜드 부트, 확장 지연 백분위, 총 과금 시간 등 14개 지표가 expand 옵션으로 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#june-1-2026",
+    "source": "dev"
+  }
+]

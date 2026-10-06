@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2024-12-19-1",
+    "service": "meshy",
+    "date": "2024.12.19",
+    "kind": "API",
+    "title": "Remesh API 추가, 폴리곤 한도 확대",
+    "summary": "Meshy로 만든 3D 모델을 리메시하고 여러 포맷으로 내보내는 Remesh API가 추가됐어요. Premium 사용자의 폴리곤 수 범위는 100–300,000으로 넓어졌어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  }
+]

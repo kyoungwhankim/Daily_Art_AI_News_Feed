@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2023-02-23-1",
+    "service": "iclone",
+    "date": "2023.02.23",
+    "kind": "앱",
+    "title": "iClone 8.2, 다이내믹 주름 시스템 도입",
+    "summary": "표정 모프에 따라 실시간으로 주름이 생기는 Dynamic Wrinkle System과 더 사실적인 Look-at이 추가됐어요. 지연 텍스처 로딩으로 작업 속도도 빨라졌어요.",
+    "details": [
+      "CC3+ 캐릭터용 Expression Wrinkles",
+      "Look at이 눈썹·눈꺼풀 모프까지 구동",
+      "눈·목·몸통 비율 키 설정",
+      "절차적·지연 텍스처 로딩"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

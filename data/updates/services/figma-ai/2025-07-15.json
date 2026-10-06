@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-07-15-1",
+    "service": "figma-ai",
+    "date": "2025.07.15",
+    "kind": "연동",
+    "title": "Figma Make, Supabase 연동",
+    "summary": "Make를 떠나지 않고 프롬프트만으로 Supabase 백엔드를 붙일 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=figma-make-supabase-integration",
+    "source": "notice"
+  }
+]

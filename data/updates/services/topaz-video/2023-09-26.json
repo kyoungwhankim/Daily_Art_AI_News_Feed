@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-09-26-1",
+    "service": "topaz-video",
+    "date": "2023.09.26",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.5.1: NVENC AV1 10비트",
+    "summary": "NVENC AV1에서 10비트 출력을 지원하고 Nyx·Proteus·Iris 모델 로딩 시간을 줄였어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-5-1/53029",
+    "source": "notice"
+  }
+]

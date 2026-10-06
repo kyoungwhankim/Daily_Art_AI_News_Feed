@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2024-11-21-1",
+    "service": "ltx-studio",
+    "date": "2024.11.21",
+    "kind": "모델",
+    "title": "오픈소스 영상 모델 LTX-Video(LTXV) 0.9.0 첫 공개",
+    "summary": "Lightricks가 텍스트·이미지 투 비디오 오픈소스 모델 LTX-Video 0.9.0을 처음 공개했어요. H100에서 5초 영상을 약 4초 만에 만드는 빠른 속도가 특징이에요.",
+    "details": [
+      "768×512, 5초 클립",
+      "ComfyUI, Hugging Face, fal.ai 연동",
+      "OpenRail-M 라이선스"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

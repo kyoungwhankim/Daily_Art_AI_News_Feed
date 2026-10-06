@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-10-08-1",
+    "service": "claude",
+    "date": "2024.10.08",
+    "kind": "API",
+    "title": "Message Batches API 베타",
+    "summary": "대량 요청을 비동기로 50% 저렴하게 처리하는 Message Batches API가 베타로 나왔어요. 메시지 순서 제약도 완화됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8th-2024",
+    "source": "dev"
+  }
+]

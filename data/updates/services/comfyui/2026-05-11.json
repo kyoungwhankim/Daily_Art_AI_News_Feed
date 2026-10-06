@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-05-11-1",
+    "service": "comfyui",
+    "date": "2026.05.11",
+    "kind": "연동",
+    "title": "ComfyUI, Tripo 3.1 고디테일 3D 생성",
+    "summary": "클로즈업에도 쓸 만한 지오메트리와 표면 디테일을 내는 Tripo 3.1을 API 노드로 쓸 수 있어요.",
+    "details": [
+      "v0.21.0: BiRefNet 배경 제거, Gemma4 텍스트 생성, VOID 지원",
+      "CogVideoX, Wan-Dancer 지원",
+      "블록 프리페치와 LoRA 비동기 로딩",
+      "영상 로더에서 오디오·영상 통합"
+    ],
+    "url": "https://blog.comfy.org/p/tripo-31-in-comfyui",
+    "source": "notice"
+  }
+]

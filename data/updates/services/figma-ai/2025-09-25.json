@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-09-25-1",
+    "service": "figma-ai",
+    "date": "2025.09.25",
+    "kind": "기능",
+    "title": "Make 미리보기를 디자인 레이어로 복사",
+    "summary": "'Copy design'으로 Figma Make 미리보기를 Figma Design에 붙여 넣어 편집할 수 있는 레이어로 바꿀 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=design-snapshot-in-make",
+    "source": "notice"
+  }
+]

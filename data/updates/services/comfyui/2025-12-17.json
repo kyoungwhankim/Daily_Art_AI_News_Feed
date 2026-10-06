@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-12-17-1",
+    "service": "comfyui",
+    "date": "2025.12.17",
+    "kind": "모델",
+    "title": "ComfyUI v0.5.0: WanMove·Qwen Edit 2511 지원",
+    "summary": "ComfyUI v0.5.0에서 WanMove, Qwen Edit 2511, 인페인팅을 지원하는 Z-Image Fun Control Union 2.0이 추가됐어요.",
+    "details": [
+      "Kling Omni Image, 오디오 포함 Kling 영상 API 노드",
+      "Wan2.6, Tripo3.0 API 노드"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-5-0",
+    "source": "notice"
+  }
+]

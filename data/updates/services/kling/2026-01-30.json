@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-01-30-1",
+    "service": "kling",
+    "date": "2026.01.30",
+    "kind": "기능",
+    "title": "영상 프레임 추출과 .mov 무손실 내보내기 지원",
+    "summary": "영상에서 키프레임을 뽑아 시작·끝 프레임으로 쓸 수 있게 됐고, .mov 형식 무손실 내보내기가 추가됐어요.",
+    "url": "https://kling.ai/release-note/release-notes/7uer5xz0ub",
+    "source": "notice"
+  }
+]

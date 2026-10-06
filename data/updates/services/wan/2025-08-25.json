@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-08-25-1",
+    "service": "wan",
+    "date": "2025.08.25",
+    "kind": "모델",
+    "title": "오디오 구동 영상 모델 Wan2.2-S2V 출시(중국 리전)",
+    "summary": "Model Studio 베이징 리전에 인물 이미지와 음성으로 영상을 만드는 wan2.2-s2v와 입력 이미지 검사용 wan2.2-s2v-detect가 추가됐어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

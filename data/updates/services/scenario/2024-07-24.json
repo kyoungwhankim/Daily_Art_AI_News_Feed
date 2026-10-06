@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-07-24-1",
+    "service": "scenario",
+    "date": "2024.07.24",
+    "kind": "기능",
+    "title": "커스텀 텍스처 생성기 베타",
+    "summary": "3D 프로젝트용 텍스처 세트를 원하는 스타일로 만드는 텍스처 생성기 베타를 공개했어요. 알베도부터 맵까지 만들어요.",
+    "url": "https://www.scenario.com/changelog/1-63-custom-texture-generator-beta",
+    "source": "notice"
+  }
+]

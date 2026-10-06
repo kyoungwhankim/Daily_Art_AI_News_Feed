@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-03-28-1",
+    "service": "figma-ai",
+    "date": "2025.03.28",
+    "kind": "기능",
+    "title": "AI 프로토타입 연결 생성 시 시머 효과",
+    "summary": "'Add Interactions'로 AI가 프로토타입 연결을 만들 때 시머 효과로 생성된 연결을 보여 줘요.",
+    "url": "https://www.figma.com/release-notes/?title=shimmer-effect",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-08-19-1",
+    "service": "suno",
+    "date": "2026.08.19",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 셔플·빠른 추가",
+    "summary": "웹에서 플레이리스트를 셔플로 듣고, 플레이리스트를 라이브러리에 빠르게 추가할 수 있어요.",
+    "url": "https://suno.com/release-notes/playlist-improvements-on-web-and-ios",
+    "source": "notice"
+  }
+]

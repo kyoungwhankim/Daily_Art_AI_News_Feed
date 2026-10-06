@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-06-23-1",
+    "service": "comfyui",
+    "date": "2026.06.23",
+    "kind": "모델",
+    "title": "ComfyUI, Krea 2 오픈소스 RAW·Turbo 지원",
+    "summary": "Krea 2의 오픈 웨이트 체크포인트 RAW와 Turbo를 ComfyUI에서 로컬로 생성·학습할 수 있어요. 다양한 미감 표현에 강해요.",
+    "details": [
+      "v0.26.0: Boogu-Image, Qwen3-VL 텍스트 생성",
+      "LTX2 컨텍스트 윈도, Load3DAdvanced",
+      "Luma Ray 3.2 노드 7종",
+      "Jobs API 취소 엔드포인트"
+    ],
+    "url": "https://blog.comfy.org/p/krea-2-open-source-models-are-now",
+    "source": "notice"
+  }
+]

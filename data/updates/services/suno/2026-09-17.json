@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-09-17-1",
+    "service": "suno",
+    "date": "2026.09.17",
+    "kind": "기능",
+    "title": "Suno Studio MIDI 정확도 개선",
+    "summary": "Studio에서 MIDI 성능이 좋아져 MIDI 작업이 훨씬 정확하고 창의적으로 바뀌었어요.",
+    "url": "https://suno.com/release-notes/studio-improved-midi",
+    "source": "notice"
+  }
+]

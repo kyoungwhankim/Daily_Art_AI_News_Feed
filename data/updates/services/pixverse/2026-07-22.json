@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-07-22-1",
+    "service": "pixverse",
+    "date": "2026.07.22",
+    "kind": "API",
+    "title": "PixVerse API 이미지 아바타·립싱크에 보이스 클로닝 지원",
+    "summary": "PixVerse API의 이미지 아바타와 립싱크 생성에서 보이스 클로닝을 쓸 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2022-06-08-1",
+    "service": "blender",
+    "date": "2022.06.08",
+    "kind": "앱",
+    "title": "Blender 3.2 출시: Light Groups·그림자 커스틱",
+    "summary": "Cycles Light Groups와 그림자 커스틱, 새 페인팅 도구를 담은 Blender 3.2가 나왔어요.",
+    "url": "https://www.blender.org/press/blender-3-2-release/",
+    "source": "notice"
+  }
+]

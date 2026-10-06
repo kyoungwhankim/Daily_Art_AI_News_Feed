@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-09-25-1",
+    "service": "fal.ai",
+    "date": "2025.09.25",
+    "kind": "모델",
+    "title": "VEED Fabric 1.0: 이미지를 말하는 영상으로",
+    "summary": "이미지와 음성을 넣으면 그 이미지로 말하는 영상을 만드는 VEED Fabric 1.0이 fal에 나왔어요. 더 빠르고 긴 출력을 지원해요.",
+    "url": "https://blog.fal.ai/veed-fabric-1-0-on-fal-turn-any-image-into-a-talking-video/",
+    "source": "notice"
+  }
+]

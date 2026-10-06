@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2021-08-03-1",
+    "service": "synthesia",
+    "date": "2021.08.03",
+    "kind": "기능",
+    "title": "Synthesia 실행 취소·다시 실행",
+    "summary": "STUDIO에서 단축키나 버튼으로 모든 작업을 실행 취소하고 다시 실행할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/undo-redo",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2021-08-03-2",
+    "service": "synthesia",
+    "date": "2021.08.03",
+    "kind": "기능",
+    "title": "Synthesia 애니메이션 효과 7종 추가",
+    "summary": "이미지, 텍스트, 도형의 등장과 퇴장에 쓸 수 있는 새 애니메이션 효과 7종을 추가했어요.",
+    "url": "https://www.synthesia.io/updates/7-new-animation-effects",
+    "source": "notice"
+  }
+]

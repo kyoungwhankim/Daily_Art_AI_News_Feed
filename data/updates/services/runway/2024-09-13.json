@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-13-1",
+    "service": "runway",
+    "date": "2024.09.13",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Video to Video 출시",
+    "summary": "영상을 올리고 프롬프트나 프리셋 스타일로 움직임은 살린 채 새 영상으로 바꾸는 Video to Video가 Gen-3 Alpha에 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

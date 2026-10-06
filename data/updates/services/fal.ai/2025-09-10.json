@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fal.ai-2025-09-10-1",
+    "service": "fal.ai",
+    "date": "2025.09.10",
+    "kind": "기능",
+    "title": "러너 이력 시간·상태 필터",
+    "summary": "fal runners list --since·--state로 종료된 러너까지 시간과 상태별로 조회할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#september-10-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-09-10-2",
+    "service": "fal.ai",
+    "date": "2025.09.10",
+    "kind": "모델",
+    "title": "Seedream 4.0 fal 출시 당일 제공",
+    "summary": "2K 이미지를 몇 초 만에 만들고 4K까지 지원하는 생성·편집 겸용 Seedream 4.0이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/seedream-4-0-on-fal-fast-consistent-4k-ready-image-creation/",
+    "source": "notice"
+  },
+  {
+    "id": "fal.ai-2025-09-10-3",
+    "service": "fal.ai",
+    "date": "2025.09.10",
+    "kind": "모델",
+    "title": "Stable Audio 2.5 fal 제공",
+    "summary": "기업용으로 설계된 Stability AI의 Stable Audio 2.5가 fal에 출시됐어요. 품질과 창작 제어가 크게 좋아졌어요.",
+    "url": "https://blog.fal.ai/stable-audio-2-5-now-available-on-fal/",
+    "source": "notice"
+  }
+]

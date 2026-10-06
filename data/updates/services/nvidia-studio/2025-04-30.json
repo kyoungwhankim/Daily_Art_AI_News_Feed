@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-04-30-1",
+    "service": "nvidia-studio",
+    "date": "2025.04.30",
+    "kind": "기능",
+    "title": "3D 가이드 생성형 AI Blueprint 공개",
+    "summary": "3D 장면으로 구도와 카메라 각도를 잡아 AI 이미지 생성을 제어하는 NVIDIA AI Blueprint가 나왔어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-3d-guided-generative-ai-blueprint/",
+    "source": "notice"
+  }
+]

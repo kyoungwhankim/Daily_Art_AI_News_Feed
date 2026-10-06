@@ -1,0 +1,15 @@
+[
+  {
+    "id": "runway-2025-08-19-1",
+    "service": "runway",
+    "date": "2025.08.19",
+    "kind": "기능",
+    "title": "Chat Mode 외부 모델 지원과 Gen-4 Image Turbo 전면 제공",
+    "summary": "Chat Mode에서 일부 외부 모델을 쓸 수 있게 됐고, Gen-4 Image Turbo를 모든 사용자에게 열었어요.",
+    "details": [
+      "API: Gen-4 Image Turbo 제공, 레퍼런스 생성 10초 이내, 기존 대비 2.5–4배 저렴"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

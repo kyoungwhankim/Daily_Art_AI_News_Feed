@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pixverse-2026-08-20-1",
+    "service": "pixverse",
+    "date": "2026.08.20",
+    "kind": "연동",
+    "title": "PixVerse에 Seedance 2.5 추가: 최대 30초 영상",
+    "summary": "Seedance 2.5를 PixVerse Pro·Premium·Ultra 회원이 독립 모델로 쓸 수 있게 됐어요. Video·Transition·Reference 모드로 4~30초 영상을 만들어요.",
+    "details": [
+      "기존 Seedance 2.0은 그대로 유지",
+      "9월 18일까지 1080p 생성 할인"
+    ],
+    "url": "https://pixverse.ai/en/blog/seedance-2-5-now-available-on-pixverse",
+    "source": "notice"
+  },
+  {
+    "id": "pixverse-2026-08-20-2",
+    "service": "pixverse",
+    "date": "2026.08.20",
+    "kind": "연동",
+    "title": "PixVerse에 MiniMax H3 추가: 2K 영상 생성",
+    "summary": "MiniMax H3를 PixVerse 웹과 Canvas에서 2K 영상 생성 옵션으로 쓸 수 있게 됐어요. Video·Transition·Reference 모드로 5~15초 클립을 만들어요.",
+    "details": [
+      "출시 후 14일간 H3 크레딧 50% 할인"
+    ],
+    "url": "https://pixverse.ai/en/blog/minimax-h3-review",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-08-22-1",
+    "service": "scenario",
+    "date": "2026.08.22",
+    "kind": "연동",
+    "title": "MCP 에셋 Quality Gate 도구",
+    "summary": "에셋 품질을 자동 평가하는 Quality Gate 도구가 MCP에 추가되고 OAuth 화면이 현지화됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-26-0",
+    "source": "notice"
+  }
+]

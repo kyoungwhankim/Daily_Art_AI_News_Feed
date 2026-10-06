@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-06-1",
+    "service": "claude",
+    "date": "2024.11.06",
+    "kind": "종료",
+    "title": "Claude 1·Instant 모델 종료",
+    "summary": "Claude 1과 Claude Instant 모델이 종료됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-6th-2024",
+    "source": "dev"
+  }
+]

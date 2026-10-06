@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2025-07-14-1",
+    "service": "synthesia",
+    "date": "2025.07.14",
+    "kind": "기능",
+    "title": "Synthesia 관리자 사용량 리포트 내보내기",
+    "summary": "조직이나 워크스페이스의 사용량 CSV 리포트를 이메일로 받아 도입 현황과 ROI를 직접 파악할 수 있어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/export-admin-insights-to-track-usage",
+    "source": "notice"
+  }
+]

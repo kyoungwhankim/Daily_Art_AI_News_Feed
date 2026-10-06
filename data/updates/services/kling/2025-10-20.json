@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-10-20-1",
+    "service": "kling",
+    "date": "2025.10.20",
+    "kind": "API",
+    "title": "API에 V2.5 Turbo 지원, 이미지 요소 인식 API",
+    "summary": "Kling API의 텍스트·이미지-투-비디오가 V2.5 Turbo PRO 모드를 지원해 5초 영상을 2.5 units부터 만들 수 있어요. 피사체·얼굴·의상을 인식하는 API도 나왔어요.",
+    "url": "https://kling.ai/document-api/updates/api#10%2F20%2F2025",
+    "source": "dev"
+  }
+]

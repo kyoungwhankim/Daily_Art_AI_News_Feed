@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-12-01-1",
+    "service": "fal.ai",
+    "date": "2025.12.01",
+    "kind": "모델",
+    "title": "Kling O1 영상 편집 모델 fal 독점 API",
+    "summary": "텍스트·이미지·영상을 이해해 대화하듯 영상을 편집하는 Kling O1이 fal에서 API로 독점 제공돼요. 캐릭터 일관성과 시작·끝 프레임 제어도 지원해요.",
+    "url": "https://blog.fal.ai/introducing-kling-o1-video-available-exclusively-as-an-api-on-fal/",
+    "source": "notice"
+  }
+]

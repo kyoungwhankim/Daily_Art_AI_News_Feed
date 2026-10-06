@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fal.ai-2026-04-27-1",
+    "service": "fal.ai",
+    "date": "2026.04.27",
+    "kind": "연동",
+    "title": "노코드 ComfyUI 배포 패키지 공개",
+    "summary": "코드 없이 fal 서버리스 GPU에서 ComfyUI 워크플로를 돌리는 사용자·관리자용 패키지가 나왔어요. 더블클릭 한 번으로 H100에서 ComfyUI 캔버스를 쓸 수 있어요.",
+    "details": [
+      "사용자 패키지: API 키와 엔드포인트만 넣으면 클라우드 GPU로 ComfyUI 실행",
+      "관리자 패키지: 모델·커스텀 노드·의존성 관리와 원클릭 배포"
+    ],
+    "url": "https://fal.ai/docs/changelog#april-27-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-05-01-1",
+    "service": "scenario",
+    "date": "2024.05.01",
+    "kind": "기능",
+    "title": "SDXL LoRA 모델 업로드·튜토리얼",
+    "summary": "직접 만든 SDXL LoRA(.safetensors)를 올릴 수 있고 홈에 튜토리얼 섹션이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-55-models-upload-tutorials",
+    "source": "notice"
+  }
+]

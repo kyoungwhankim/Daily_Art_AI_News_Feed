@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-11-25-1",
+    "service": "fal.ai",
+    "date": "2025.11.25",
+    "kind": "기능",
+    "title": "스케일링 지연(scaling_delay) 설정",
+    "summary": "요청이 몇 초 대기한 뒤 새 러너를 띄울지 scaling_delay로 정할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#november-25-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-11-25-2",
+    "service": "fal.ai",
+    "date": "2025.11.25",
+    "kind": "모델",
+    "title": "FLUX.2 fal 출시 당일 제공",
+    "summary": "최대 4MP 해상도, 다중 이미지 참조, HEX 색상 제어, JSON 프롬프트를 지원하는 FLUX.2 이미지 생성·편집 모델이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/flux-2-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

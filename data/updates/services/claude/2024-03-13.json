@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-03-13-1",
+    "service": "claude",
+    "date": "2024.03.13",
+    "kind": "모델",
+    "title": "Claude 3 Haiku 출시",
+    "summary": "같은 지능대에서 가장 빠르고 저렴한 Claude 3 Haiku가 API와 claude.ai Pro에 나왔어요. 비전 기능도 갖췄어요.",
+    "url": "https://www.anthropic.com/news/claude-3-haiku",
+    "source": "notice"
+  }
+]

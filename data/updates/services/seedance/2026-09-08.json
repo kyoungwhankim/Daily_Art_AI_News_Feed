@@ -1,0 +1,16 @@
+[
+  {
+    "id": "seedance-2026-09-08-1",
+    "service": "seedance",
+    "date": "2026.09.08",
+    "kind": "종료",
+    "title": "Seedance 1.5 pro API 11월 11일 종료 예고",
+    "summary": "BytePlus ModelArk가 seedance-1-5-pro 모델을 11월 11일 종료한다고 공지했어요. 자동 이전되지 않으니 Seedance 2.0 mini 등으로 미리 바꿔야 해요.",
+    "details": [
+      "9월 15일부터 새 엔드포인트 생성 불가",
+      "권장 대체 모델: dreamina-seedance-2-0-mini"
+    ],
+    "url": "https://docs.byteplus.com/docs/modelark/model-deprecation-notice",
+    "source": "dev"
+  }
+]

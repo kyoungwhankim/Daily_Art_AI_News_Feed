@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-07-20-1",
+    "service": "elevenlabs",
+    "date": "2026.07.20",
+    "kind": "API",
+    "title": "Music Finetunes API",
+    "summary": "업로드한 오디오로 Music Finetune을 만들고 관리하는 API 다섯 개가 추가됐어요. STT 일회용 토큰 인증도 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/20",
+    "source": "dev"
+  }
+]

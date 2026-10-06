@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-21-1",
+    "service": "scenario",
+    "date": "2026.01.21",
+    "kind": "기능",
+    "title": "워크플로를 Apps로, 멀티 에셋 노드",
+    "summary": "워크플로를 쉽게 Apps로 바꿔 공유할 수 있고, 노드가 여러 에셋을 입력으로 받게 됐어요.",
+    "url": "https://www.scenario.com/changelog/1-112-workflows-to-apps-flux-lora-improvements-node-fixes",
+    "source": "notice"
+  }
+]

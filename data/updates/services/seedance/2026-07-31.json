@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedance-2026-07-31-1",
+    "service": "seedance",
+    "date": "2026.07.31",
+    "kind": "모델",
+    "title": "최대 30초 롱폼 Seedance 2.5 출시",
+    "summary": "Seedance 2.5는 한 번에 30초 오디오-비디오를 만들고 여러 번 연장할 수 있어요. 이미지 30장·영상 10개·오디오 10개까지 레퍼런스로 쓰고, 타임스탬프 단위로 정밀 편집해요.",
+    "details": [
+      "샷 전환·장면 변화 연속성 개선",
+      "클레이 렌더·모션·크리에이티브 레퍼런스 강화",
+      "그린스크린, 카메라 시점 편집 지원",
+      "Jimeng AI·Doubao Pro에 먼저 제공, BytePlus API 예정"
+    ],
+    "url": "https://seed.bytedance.com/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-12-1",
+    "service": "scenario",
+    "date": "2025.11.12",
+    "kind": "API",
+    "title": "비로그인 모델 목록·워크플로 썸네일",
+    "summary": "로그인하지 않아도 사용 가능한 모델 목록을 볼 수 있고, 공개 워크플로에 썸네일이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-96-0",
+    "source": "dev"
+  }
+]

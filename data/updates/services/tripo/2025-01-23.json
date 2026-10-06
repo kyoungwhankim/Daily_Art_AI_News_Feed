@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tripo-2025-01-23-1",
+    "service": "tripo",
+    "date": "2025.01.23",
+    "kind": "모델",
+    "title": "Tripo v2.5 모델 공개, 기본값 전환",
+    "summary": "지오메트리 디테일과 사실적인 텍스처를 높인 v2.5-20250123이 추가되고 기본 버전이 됐어요. quad 파라미터와 gold·ancient_bronze 스타일도 생겼어요.",
+    "details": [
+      "v2.5-20250123 추가, 기본 버전으로 전환",
+      "quad(쿼드 메시) 파라미터",
+      "v1.3 및 v1.4 멀티뷰 지원 중단"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-5-0-2025-01-23",
+    "source": "dev"
+  }
+]

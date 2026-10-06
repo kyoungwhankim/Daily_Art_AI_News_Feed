@@ -1,0 +1,16 @@
+[
+  {
+    "id": "seedance-2026-03-17-1",
+    "service": "seedance",
+    "date": "2026.03.17",
+    "kind": "종료",
+    "title": "Seedance 1.0 lite API 모델 종료 공지",
+    "summary": "BytePlus ModelArk가 bytedance-seedance-1-0-lite-i2v·t2v 모델의 지원 종료를 공지했어요. 5월 13일 비활성화되며 Seedance 1.0 pro fast나 2.0 fast로 옮겨야 해요.",
+    "details": [
+      "3월 23일부터 새 엔드포인트 생성 불가",
+      "자동 전환 대상: dreamina-seedance-2-0-fast"
+    ],
+    "url": "https://docs.byteplus.com/docs/modelark/model-deprecation-notice",
+    "source": "dev"
+  }
+]

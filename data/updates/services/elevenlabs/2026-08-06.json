@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-08-06-1",
+    "service": "elevenlabs",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "ElevenLabs Dubbing API 공개",
+    "summary": "개발자와 기업이 자사 제품과 워크플로에 AI 더빙을 바로 넣을 수 있는 Dubbing API가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/dubbing-api",
+    "source": "dev"
+  }
+]

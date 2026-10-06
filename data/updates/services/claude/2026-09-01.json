@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-09-01-1",
+    "service": "claude",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Claude Fable 5.1·Mythos 5.1 출시",
+    "summary": "코딩과 지식 작업에 가장 앞선 Claude Fable 5.1과 Mythos 5.1이 나왔어요.",
+    "details": [
+      "API: 1M 컨텍스트, $10/$50 per MTok, 캐시 읽기 $0.25 per MTok",
+      "tool_choice any·tool 미지원, 사고 블록은 같거나 더 새 모델에서만 유지"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

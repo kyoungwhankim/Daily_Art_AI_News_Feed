@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-03-21-1",
+    "service": "comfyui",
+    "date": "2026.03.21",
+    "kind": "기능",
+    "title": "ComfyUI v0.18.0: FP16 중간값과 VRAM 절감",
+    "summary": "ComfyUI v0.18.0에서 중간값을 FP16으로 처리하는 --fp16-intermediates 옵션과 LTX·WAN VAE의 VRAM 대폭 절감이 들어왔어요.",
+    "details": [
+      "mxfp8 정밀도, AMD gfx1150 PyTorch 어텐션",
+      "FP4·8·16 네이티브 학습",
+      "외부 분산 캐시용 CacheProvider API",
+      "seedream-3-0-t2i·seedance-1-0-lite 지원 중단 예고"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-18-0",
+    "source": "notice"
+  }
+]

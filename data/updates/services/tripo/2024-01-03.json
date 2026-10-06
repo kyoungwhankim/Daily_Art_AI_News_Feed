@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-01-03-1",
+    "service": "tripo",
+    "date": "2024.01.03",
+    "kind": "API",
+    "title": "Tripo API 첫 베타 버전 공개",
+    "summary": "Tripo의 첫 OpenAPI 버전(0.1.0-beta)이 공개됐어요. 개발자가 Tripo의 3D 생성 기능을 자체 서비스에 붙일 수 있게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-1-0-beta-2024-01-03",
+    "source": "dev"
+  }
+]

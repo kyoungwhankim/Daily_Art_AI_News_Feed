@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-26-1",
+    "service": "scenario",
+    "date": "2026.03.26",
+    "kind": "연동",
+    "title": "MCP 문서 허브·도구 탐색 개선",
+    "summary": "Scenario MCP 랜딩 페이지와 새 문서 허브가 나왔고 도구 찾기가 쉬워졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-2-0",
+    "source": "notice"
+  }
+]

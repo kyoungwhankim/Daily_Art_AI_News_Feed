@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2022-12-11-1",
+    "service": "invokeai",
+    "date": "2022.12.11",
+    "kind": "앱",
+    "title": "InvokeAI 2.2.4: 더 빠르고 안정적인 새 설치 방식",
+    "summary": "InvokeAI 2.2.4는 버그 수정 릴리스지만, 설치 경험을 전면 개편해 더 빠르고 안정적으로 설치할 수 있게 했어요. 새 설치 방식에는 Python 3.9 또는 3.10이 필요해요.",
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-2-4---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

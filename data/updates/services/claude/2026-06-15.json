@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-15-1",
+    "service": "claude",
+    "date": "2026.06.15",
+    "kind": "종료",
+    "title": "Claude Sonnet 4·Opus 4 API 종료",
+    "summary": "Claude Sonnet 4와 Opus 4가 API에서 종료됐어요. Sonnet 4.6과 Opus 4.8로 업그레이드를 권장해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-15-2026",
+    "source": "dev"
+  }
+]

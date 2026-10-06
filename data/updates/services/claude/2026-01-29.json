@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-01-29-1",
+    "service": "claude",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "구조화 출력(Structured outputs) 정식 출시",
+    "summary": "Sonnet 4.5·Opus 4.5·Haiku 4.5에서 구조화 출력이 정식 출시됐어요. output_format은 output_config.format으로 옮겨졌어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "marble-2025-12-05-1",
+    "service": "marble",
+    "date": "2025.12.05",
+    "kind": "요금",
+    "title": "파노라마 편집 모델 업그레이드, 크레딧 조정",
+    "summary": "파노라마 편집이 최신 고품질 모델로 바뀌면서 편집 1회 비용이 50에서 150크레딧으로 올랐어요. 360° 파노라마 스크린샷 기능도 생겼어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-5-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-08-31-1",
+    "service": "synthesia",
+    "date": "2026.08.31",
+    "kind": "기능",
+    "title": "Synthesia 영상 최대 20개 일괄 다운로드",
+    "summary": "다중 선택이나 폴더에서 최대 20개 영상을 개별 MP4 파일로 한 번에 내려받을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/download-multiple-videos-at-once",
+    "source": "notice"
+  }
+]

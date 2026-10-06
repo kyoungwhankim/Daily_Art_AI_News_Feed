@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-04-22-1",
+    "service": "ltx-studio",
+    "date": "2026.04.22",
+    "kind": "기능",
+    "title": "영상 4K·8K 업스케일",
+    "summary": "생성하거나 업로드한 영상을 Topaz 기반 모델로 4K·8K까지 업스케일하고 프레임레이트도 조절할 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

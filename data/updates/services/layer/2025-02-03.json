@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-02-03-1",
+    "service": "layer",
+    "date": "2025.02.03",
+    "kind": "기능",
+    "title": "Layer에 영상 생성 도입·일괄 생성",
+    "summary": "Layer에서 영상을 생성할 수 있게 됐고 일괄 생성과 프롬프트 기능이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-02-03",
+    "source": "notice"
+  }
+]

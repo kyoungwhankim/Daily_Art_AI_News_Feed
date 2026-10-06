@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-07-21-1",
+    "service": "claude",
+    "date": "2025.07.21",
+    "kind": "종료",
+    "title": "Claude 2.0·2.1·Sonnet 3 종료",
+    "summary": "Claude 2.0, 2.1, Sonnet 3 모델이 종료돼 요청 시 오류가 나요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-21-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-06-12-1",
+    "service": "fal.ai",
+    "date": "2024.06.12",
+    "kind": "모델",
+    "title": "Stable Diffusion 3 제공·ComfyUI 워크플로 지원",
+    "summary": "Stable Diffusion 3를 fal에서 쓸 수 있게 되고 ComfyUI 워크플로 실행 등 여러 업데이트가 함께 발표됐어요.",
+    "url": "https://blog.fal.ai/stable-diffusion-3-on-fal-comfyui-workflows-and-more/",
+    "source": "notice"
+  }
+]

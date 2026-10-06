@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-02-20-1",
+    "service": "roblox-cube",
+    "date": "2026.02.20",
+    "kind": "연동",
+    "title": "Studio MCP 도구 추가·Assistant 외부 LLM 지원",
+    "summary": "Studio MCP 서버에 에이전트가 게임을 계획·작성·테스트·수정하는 새 도구가 추가됐어요. Assistant에 API 키로 원하는 LLM을 연결할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/studio-mcp-server-updates-and-external-llm-support-for-assistant/4415631",
+    "source": "notice"
+  }
+]

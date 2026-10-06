@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2020-11-05-1",
+    "service": "topaz-video",
+    "date": "2020.11.05",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.7.0: 새 추론 엔진과 AMD GPU 지원",
+    "summary": "새 AI 추론 엔진으로 AMD 전용 GPU와 RTX 3000 텐서 코어를 지원하고, 모션 일관성이 좋아진 Artemis v7 모델을 넣었어요.",
+    "details": [
+      "JPEG·EXR 시퀀스 입력",
+      "MP4 H.264 CRF 화질 설정",
+      "VRAM 사용 효율 개선"
+    ],
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-7-0/17454",
+    "source": "notice"
+  }
+]

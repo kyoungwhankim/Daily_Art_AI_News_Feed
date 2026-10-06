@@ -1,0 +1,12 @@
+[
+  {
+    "id": "veo-2025-07-17-1",
+    "service": "veo",
+    "date": "2025.07.17",
+    "kind": "API",
+    "title": "Gemini API에 Veo 3 프리뷰 출시",
+    "summary": "Gemini API에 오디오가 포함된 영상을 만드는 veo-3.0-generate-preview가 추가됐어요. 개발자도 소리 있는 영상 생성을 쓸 수 있어요.",
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#07-17-2025",
+    "source": "dev"
+  }
+]

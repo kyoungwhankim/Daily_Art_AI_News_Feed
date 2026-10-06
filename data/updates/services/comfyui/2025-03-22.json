@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-03-22-1",
+    "service": "comfyui",
+    "date": "2025.03.22",
+    "kind": "모델",
+    "title": "ComfyUI, Hunyuan3D 2.0·멀티뷰 네이티브 지원",
+    "summary": "Tencent의 오픈소스 3D 생성 모델 Hunyuan3D 2.0과 멀티뷰 버전 Hunyuan3D 2.0 MV를 ComfyUI에서 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/hunyuan3d-20-and-muitiview-native",
+    "source": "notice"
+  }
+]

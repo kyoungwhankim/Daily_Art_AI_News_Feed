@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-01-1",
+    "service": "scenario",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Gemini Omni 1.1 Flash·LTX-2.5 등 22개 모델",
+    "summary": "네이티브 오디오 영상 Gemini Omni 1.1 Flash, LTX-2.5 4종, Recraft V4 Styles 등 22개 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.23.1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-01-2",
+    "service": "scenario",
+    "date": "2026.09.01",
+    "kind": "연동",
+    "title": "에이전트 스킬: 편집 가능한 SVG 브랜드 키트",
+    "summary": "에이전트가 편집 가능한 SVG로 브랜드 아이덴티티를 만들고 다듬는 scenario-brand-kit 스킬이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-39-0",
+    "source": "notice"
+  }
+]

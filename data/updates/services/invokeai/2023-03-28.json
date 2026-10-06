@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2023-03-28-1",
+    "service": "invokeai",
+    "date": "2023.03.28",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.3: SD 2.0 기반 커뮤니티 모델 지원",
+    "summary": "InvokeAI 2.3.3은 버그 수정과 함께 \"Illuminati\" 등 SD 2.0 기반 커뮤니티 모델을 불러와 쓸 수 있게 했어요. 외부 VAE 파일도 로드 전에 악성코드를 검사해요.",
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-3-3---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

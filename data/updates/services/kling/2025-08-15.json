@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kling-2025-08-15-1",
+    "service": "kling",
+    "date": "2025.08.15",
+    "kind": "기능",
+    "title": "이미지 Restyle 모델 업데이트와 Style Library 추가",
+    "summary": "Restyle 모델이 콘텐츠 일관성과 스타일화 품질을 높였고, 100가지 가까운 스타일을 모은 Style Library와 Random Style 모드가 추가됐어요.",
+    "details": [
+      "API: 새 V2.0 이미지-투-이미지(kling-v2-new) 약 300개 스타일",
+      "API: Multi-Image to Video 성능 102% 향상",
+      "API: Video-to-Audio 원본 해상도 영상 업로드 지원"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/2025081528",
+    "source": "notice"
+  }
+]

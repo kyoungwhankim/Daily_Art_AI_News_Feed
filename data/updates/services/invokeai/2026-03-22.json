@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2026-03-22-1",
+    "service": "invokeai",
+    "date": "2026.03.22",
+    "kind": "기능",
+    "title": "InvokeAI 6.12.0: 다중 사용자 모드와 캔버스 텍스트 도구",
+    "summary": "InvokeAI 6.12.0에서 한 서버를 여러 계정이 나눠 쓰는 실험적 다중 사용자 모드가 생겼고, 캔버스에 텍스트·그라데이션 도구가 추가됐어요.",
+    "details": [
+      "Z-Image Base 모델과 FLUX.2 Klein LoRA 지원",
+      "페이지 방식 갤러리 다시 제공",
+      "지역 가이드·인페인트 마스크 반전 버튼",
+      "모델 매니저 Sync Models로 고아 모델 정리"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-12-0/",
+    "source": "notice"
+  }
+]

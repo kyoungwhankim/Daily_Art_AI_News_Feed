@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dream-machine-2025-06-02-1",
+    "service": "dream-machine",
+    "date": "2025.06.02",
+    "kind": "기능",
+    "title": "Modify Video 출시: 촬영한 영상을 새로운 세계로",
+    "summary": "원본 영상의 움직임과 연기는 유지하면서 배경·스타일·의상·소품 등을 바꾸는 Modify Video를 내놨어요. 모션 캡처나 그린스크린 없이 리스타일할 수 있어요.",
+    "details": [
+      "전신·얼굴·립싱크 모션 추출해 새 캐릭터 구동",
+      "리스타일·리텍스처·월드 스왑",
+      "개별 요소 편집",
+      "Adhere·Flex·Reimagine 세 가지 강도, 최대 10초 입력"
+    ],
+    "url": "https://lumalabs.ai/news/introducing-modify-video",
+    "source": "notice"
+  }
+]

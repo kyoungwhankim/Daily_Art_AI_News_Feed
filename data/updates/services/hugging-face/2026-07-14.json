@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-07-14-1",
+    "service": "hugging-face",
+    "date": "2026.07.14",
+    "kind": "기능",
+    "title": "세분화된 액세스 토큰 프리셋 도입",
+    "summary": "Read-Only·Inference·Write·CI/CD·Full Access 프리셋으로 fine-grained 토큰을 쉽게 만들 수 있게 됐어요. 프리셋 링크 URL로 미리 설정된 토큰 생성 화면을 바로 열 수도 있어요.",
+    "url": "https://huggingface.co/changelog/token-presets",
+    "source": "notice"
+  }
+]

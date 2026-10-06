@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-03-06-1",
+    "service": "comfyui",
+    "date": "2025.03.06",
+    "kind": "모델",
+    "title": "ComfyUI, HunyuanVideo 이미지→영상 첫날 지원",
+    "summary": "HunyuanVideo의 이미지→영상(I2V) 기능을 ComfyUI에서 네이티브로 지원해 정지 이미지를 부드러운 영상으로 바꿀 수 있어요.",
+    "url": "https://blog.comfy.org/p/hunyuan-image2video-day-1-support",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2025-11-07-1",
+    "service": "kling",
+    "date": "2025.11.07",
+    "kind": "요금",
+    "title": "Kling 2.5 Turbo Standard 모드 출시, 25% 저렴",
+    "summary": "Kling 2.5 Turbo에 Standard 모드가 추가돼 5초 영상을 15크레딧에 만들 수 있어요. 기존보다 25% 낮은 가격이에요.",
+    "details": [
+      "API: 11월 11일 V2.5 Turbo STD 모드 지원(5초 1.5 units)"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/2025110722",
+    "source": "notice"
+  }
+]

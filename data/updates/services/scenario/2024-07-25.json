@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-07-25-1",
+    "service": "scenario",
+    "date": "2024.07.25",
+    "kind": "기능",
+    "title": "텍스처 렌더링 개선·새 텍스처 모델",
+    "summary": "새 텍스처 모델이 추가되고 구·원기둥 미리보기 렌더링이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-64-textures-rendering-and-improved-navigation",
+    "source": "notice"
+  }
+]

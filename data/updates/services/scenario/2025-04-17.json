@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-04-17-1",
+    "service": "scenario",
+    "date": "2025.04.17",
+    "kind": "기능",
+    "title": "Explore 탭·감사 기록",
+    "summary": "내 것과 워크스페이스·공개 콘텐츠를 둘러보고 재사용하는 Explore 탭과 감사 기록(Audit Trail)이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-83-explore-launch-audit-trail",
+    "source": "notice"
+  }
+]

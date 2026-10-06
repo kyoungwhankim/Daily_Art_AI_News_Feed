@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2025-08-08-1",
+    "service": "synthesia",
+    "date": "2025.08.08",
+    "kind": "연동",
+    "title": "Synthesia에서 Veo 3로 영상 소재 생성",
+    "summary": "텍스트 프롬프트로 8초 1080p 영상 클립을 만들어 프로젝트 어디서나 재사용할 수 있어요. Enterprise 전용이에요.",
+    "url": "https://www.synthesia.io/updates/create-video-assets-with-veo-3",
+    "source": "notice"
+  }
+]

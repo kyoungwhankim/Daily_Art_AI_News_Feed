@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-25-1",
+    "service": "scenario",
+    "date": "2026.03.25",
+    "kind": "연동",
+    "title": "Scenario MCP Server 출시",
+    "summary": "AI 에이전트가 Scenario 생성 엔진을 직접 쓰게 하는 MCP 서버를 12개 도구로 공개했어요. IDE에서 에셋 생성을 연결할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-1-0",
+    "source": "notice"
+  }
+]

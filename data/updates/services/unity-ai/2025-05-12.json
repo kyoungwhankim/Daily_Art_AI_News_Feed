@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2025-05-12-1",
+    "service": "unity-ai",
+    "date": "2025.05.12",
+    "kind": "기능",
+    "title": "AI Generators: 터레인 레이어 머티리얼과 에셋 이름 지정",
+    "summary": "AI Generators 1.0.0-pre.7에서 머티리얼 터레인 레이어를 지원하고, 에셋을 만들기 전에 이름을 정할 수 있게 됐어요. 모델 선택 사이드바도 늘었어요.",
+    "details": [
+      "터레인 오브젝트에서 모든 머티리얼 레이어 한 번에 열기",
+      "커스텀 시드·unityai 라벨 문서 추가"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre7---2025-05-12",
+    "source": "dev"
+  }
+]

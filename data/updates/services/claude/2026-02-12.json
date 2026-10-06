@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-02-12-1",
+    "service": "claude",
+    "date": "2026.02.12",
+    "kind": "요금",
+    "title": "Enterprise 플랜 셀프서비스 구매",
+    "summary": "영업팀 상담 없이 웹사이트에서 Enterprise 플랜을 바로 구매할 수 있어요. Claude·Claude Code·Cowork가 포함된 단일 좌석 유형이에요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

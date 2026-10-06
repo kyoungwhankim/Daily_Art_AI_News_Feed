@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-06-15-1",
+    "service": "scenario",
+    "date": "2023.06.15",
+    "kind": "기능",
+    "title": "Edit 메뉴에 업스케일 통합",
+    "summary": "업스케일이 Edit 메뉴에 들어가 Refine·배경 제거·Pixelate와 함께 쓸 수 있어요. 여러 이미지 배경 제거도 가능해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-17-0-june-15-2023",
+    "source": "notice"
+  }
+]

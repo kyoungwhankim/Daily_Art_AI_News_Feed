@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2025-05-22-1",
+    "service": "invokeai",
+    "date": "2025.05.22",
+    "kind": "기능",
+    "title": "Invoke 5.12.0: RTX 50 시리즈 지원과 모델 연결",
+    "summary": "Invoke 5.12.0은 PyTorch 2.7.0으로 NVIDIA 50xx GPU를 지원하고, LoRA를 메인 모델에 연결해 목록 상단에 보여 주는 모델 관계 기능을 추가했어요.",
+    "details": [
+      "IP Adapter Style (Strong)·Style (Precise) 방식 추가",
+      "커스텀 노드 기본값 검증 강화"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-12-0/",
+    "source": "notice"
+  }
+]

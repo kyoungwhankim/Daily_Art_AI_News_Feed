@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-11-10-1",
+    "service": "layer",
+    "date": "2025.11.10",
+    "kind": "기능",
+    "title": "새 3D 기능: Meshy·Seed3D·쿼드·리텍스처링",
+    "summary": "Meshy와 Seed3D 모델, 쿼드 메시 지원, 리텍스처링 등 새 3D 기능을 추가했어요.",
+    "url": "https://layer.ai/blog/seed-3d-meshy-quad-retexturing-support",
+    "source": "notice"
+  }
+]

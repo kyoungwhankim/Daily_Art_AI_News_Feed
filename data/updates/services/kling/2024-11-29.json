@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-11-29-1",
+    "service": "kling",
+    "date": "2024.11.29",
+    "kind": "API",
+    "title": "API 이미지-투-비디오에 Motion Brush 추가",
+    "summary": "Kling API의 이미지-투-비디오에서 움직일 영역과 경로를 지정하는 Motion Brush를 쓸 수 있게 됐어요. V1.0 모델 5초 영상에서 지원돼요.",
+    "url": "https://kling.ai/document-api/updates/api#11%2F29%2F2024",
+    "source": "dev"
+  }
+]

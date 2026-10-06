@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-03-29-1",
+    "service": "runway",
+    "date": "2024.03.29",
+    "kind": "기능",
+    "title": "에셋 페이지 정렬 기능",
+    "summary": "에셋 페이지를 에셋 유형, 미디어 유형, 길이, 생성자, 생성일, 즐겨찾기 여부로 정렬할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

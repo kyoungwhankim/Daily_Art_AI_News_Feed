@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kling-2026-04-23-1",
+    "service": "kling",
+    "date": "2026.04.23",
+    "kind": "기능",
+    "title": "Kling VIDEO 3.0 시리즈에 네이티브 4K 모드 추가",
+    "summary": "Kling VIDEO 3.0과 3.0 Omni에 원클릭 네이티브 4K 생성 모드가 생겼어요. 초당 30크레딧으로 시네마급 화질 영상을 만들 수 있어요.",
+    "details": [
+      "4K에서도 레퍼런스 일관성 유지",
+      "API: mode를 4k로 설정, 초당 3 units",
+      "API: kling-v3-omni는 레퍼런스 영상 외 전 기능 지원"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/z8zeqsxwol",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2025-06-04-1",
+    "service": "invokeai",
+    "date": "2025.06.04",
+    "kind": "기능",
+    "title": "Invoke 5.13.0: 인페인트 마스크 고급 설정",
+    "summary": "Invoke 5.13.0에서 인페인트 마스크마다 Noise Level과 Denoise Limit을 따로 설정해 영역별로 변화 정도를 다르게 줄 수 있게 됐어요.",
+    "details": [
+      "SDXL 학습 해상도 맞춤 비율 처리",
+      "터치패드 줌 개선",
+      "Hugging Face 저장소 하위 폴더 설치"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-13-0/",
+    "source": "notice"
+  }
+]

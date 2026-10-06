@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-08-24-1",
+    "service": "scenario",
+    "date": "2026.08.24",
+    "kind": "모델",
+    "title": "Wan 3.0·FLUX Video Upscale·PATINA 재질",
+    "summary": "네이티브 오디오 30초 영상 Wan 3.0, FLUX Video Upscale, PATINA 재질 모델 3종, Hitem3D 3.0이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.22.1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-24-2",
+    "service": "scenario",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "PATINA PBR·Krea 2 모델·에셋 보관",
+    "summary": "PATINA PBR과 Krea 2 모델이 API에 추가되고 에셋 보관(아카이브) 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-131-0",
+    "source": "dev"
+  }
+]

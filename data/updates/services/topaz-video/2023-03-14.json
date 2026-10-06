@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-03-14-1",
+    "service": "topaz-video",
+    "date": "2023.03.14",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.9: 성능 벤치마크 도구",
+    "summary": "성능을 측정하는 Benchmark 도구와 익명 데이터 수집 끄기 설정을 추가하고 Apollo 모델을 업데이트했어요. Mac에서 HEVC 호환성도 높였어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-9/41579",
+    "source": "notice"
+  }
+]

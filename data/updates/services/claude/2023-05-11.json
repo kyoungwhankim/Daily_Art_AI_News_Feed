@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-05-11-1",
+    "service": "claude",
+    "date": "2023.05.11",
+    "kind": "기능",
+    "title": "Claude 컨텍스트 창 100K 토큰으로 확대",
+    "summary": "Claude의 컨텍스트 창이 9K에서 100K 토큰(약 7만 5천 단어)으로 늘어, 수백 페이지 문서를 1분 안에 처리할 수 있게 됐어요.",
+    "url": "https://www.anthropic.com/news/100k-context-windows",
+    "source": "notice"
+  }
+]

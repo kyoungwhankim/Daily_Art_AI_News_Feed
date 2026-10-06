@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-11-01-1",
+    "service": "runway",
+    "date": "2024.11.01",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo 고급 카메라 컨트롤",
+    "summary": "Gen-3 Alpha Turbo에서 카메라 이동 방향과 강도를 직접 정하는 Advanced Camera Control을 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

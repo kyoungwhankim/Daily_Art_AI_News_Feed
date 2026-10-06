@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-02-18-1",
+    "service": "meshy",
+    "date": "2025.02.18",
+    "kind": "API",
+    "title": "테스트 모드 API 키 도입",
+    "summary": "크레딧을 쓰지 않고 연동을 시험할 수 있는 테스트 모드 API 키가 생겼어요. 유효한 요청에는 같은 샘플 결과가 돌아와요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-12-1",
+    "service": "scenario",
+    "date": "2026.06.12",
+    "kind": "API",
+    "title": "LumaLabs Uni-1·Ray 3.2·Tripo 텍스처 강화",
+    "summary": "LumaLabs Uni-1과 Ray 3.2가 추가되고 Tripo 3D에 extreme 텍스처 품질이 들어왔어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-2-0",
+    "source": "notice"
+  }
+]

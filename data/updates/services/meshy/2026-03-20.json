@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-03-20-1",
+    "service": "meshy",
+    "date": "2026.03.20",
+    "kind": "종료",
+    "title": "Meshy-4 모델 종료, auto_size·origin_at 추가",
+    "summary": "API에서 Meshy-4 모델이 종료돼 meshy-6나 latest로 옮겨야 해요. AI가 실제 크기를 추정해 맞추는 auto_size와 원점 위치 origin_at도 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  }
+]

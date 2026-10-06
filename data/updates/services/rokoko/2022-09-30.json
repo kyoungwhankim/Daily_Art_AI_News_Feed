@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2022-09-30-1",
+    "service": "rokoko",
+    "date": "2022.09.30",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.2.1, 샘플 씬과 필터 개선",
+    "summary": "실제 장비로 녹화·정리한 샘플 씬 6종이 추가돼 자유롭게 내보내 쓸 수 있고, Knee Pop Smoothing 필터 복귀 등 정리 도구가 좋아졌어요.",
+    "details": [
+      "슈트·장갑·Face Capture 샘플 씬 6종 제공",
+      "Knee Pop Smoothing 필터 재도입",
+      "발이 멀어질 때 자동 힙 보정",
+      "로코모션 안정성 향상"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/9503071465745-Rokoko-Studio-2-2-1",
+    "source": "dev"
+  }
+]

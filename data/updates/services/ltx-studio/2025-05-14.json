@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2025-05-14-1",
+    "service": "ltx-studio",
+    "date": "2025.05.14",
+    "kind": "모델",
+    "title": "LTX-Video 13B 디스틸 모델: 10초 만에 HD 영상",
+    "summary": "13B 디스틸 모델로 H100에서 HD 영상을 약 10초 만에 만들 수 있어요. 3초 만에 저해상도 미리보기를 볼 수 있어요.",
+    "details": [
+      "CFG 없이 빠른 추론",
+      "LoRA 변형은 VRAM 1GB",
+      "fp8 체크포인트 제공"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

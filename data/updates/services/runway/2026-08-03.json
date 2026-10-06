@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-08-03-1",
+    "service": "runway",
+    "date": "2026.08.03",
+    "kind": "API",
+    "title": "Model Router 라우팅 기록 제공",
+    "summary": "Model Router가 처리한 모든 요청을 기록해 어떤 모델이 왜 선택됐는지 볼 수 있어요. 개발자 포털 Activity 탭이나 공개 API로 확인할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

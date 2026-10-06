@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-06-19-1",
+    "service": "firefly",
+    "date": "2025.06.19",
+    "kind": "API",
+    "title": "Firefly Generate Video API 출시",
+    "summary": "텍스트·스틸 이미지·일러스트를 실사 영상 클립으로 바꾸는 Firefly Generate Video API를 쓸 수 있게 됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#june-19-2025",
+    "source": "dev"
+  }
+]

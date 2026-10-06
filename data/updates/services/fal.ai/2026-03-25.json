@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-25-1",
+    "service": "fal.ai",
+    "date": "2026.03.25",
+    "kind": "기능",
+    "title": "Requests 페이지 개편",
+    "summary": "요청 페이지에 상태 코드·지연 차트, 드래그 구간 필터, 콜드 스타트·실행 시간 정렬이 추가돼 장애 구간을 빠르게 찾을 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#march-25-2026",
+    "source": "dev"
+  }
+]

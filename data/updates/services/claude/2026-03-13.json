@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-13-1",
+    "service": "claude",
+    "date": "2026.03.13",
+    "kind": "요금",
+    "title": "Opus 4.6·Sonnet 4.6 1M 컨텍스트 정식·표준가",
+    "summary": "Opus 4.6과 Sonnet 4.6의 1M 컨텍스트가 표준 가격으로 정식 제공되고, 전용 1M 속도 제한이 사라졌어요. 요청당 이미지·PDF 한도도 600으로 늘었어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#march-13-2026",
+    "source": "dev"
+  }
+]

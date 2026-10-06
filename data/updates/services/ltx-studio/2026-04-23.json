@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ltx-studio-2026-04-23-1",
+    "service": "ltx-studio",
+    "date": "2026.04.23",
+    "kind": "기능",
+    "title": "LTX HDR: 16비트 HDR EXR 출력",
+    "summary": "LTX-2.3 기반 IC-LoRA로 8비트 SDR 대신 16비트 HDR EXR을 출력하는 LTX HDR을 소개했어요. 기존 영상을 HDR로 바꾸는 SDR to HDR도 LTX Studio와 API에 나왔어요.",
+    "details": [
+      "Gear Productions, Magnopus, Asteria와 공동 개발",
+      "API: /v2/video-to-video-hdr (베타)"
+    ],
+    "url": "https://ltx.io/blog/ltx-closes-the-gap-between-ai-production-with-16-bit-hdr-output",
+    "source": "notice"
+  }
+]

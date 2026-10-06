@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-06-06-1",
+    "service": "hugging-face",
+    "date": "2025.06.06",
+    "kind": "연동",
+    "title": "공식 Hugging Face MCP 서버 공개",
+    "summary": "VS Code·Cursor·Claude Desktop 등 MCP 호환 어시스턴트를 Hub에 연결하는 공식 MCP 서버가 나왔어요. Spaces·Papers 검색, 모델·데이터셋 탐색 도구와 Gradio 앱 연결을 지원해요.",
+    "url": "https://huggingface.co/changelog/hf-mcp-server",
+    "source": "notice"
+  }
+]

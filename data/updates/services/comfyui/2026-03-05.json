@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-03-05-1",
+    "service": "comfyui",
+    "date": "2026.03.05",
+    "kind": "모델",
+    "title": "ComfyUI, LTX-2.3 첫날 지원과 Dynamic VRAM 기본 적용",
+    "summary": "디테일·인물·오디오 품질을 높인 Lightricks의 LTX-2.3을 출시 당일 네이티브로 지원해요. 같은 날 v0.16.0에서 Dynamic VRAM 모드가 기본값이 됐어요.",
+    "details": [
+      "v0.16.0: ResolutionSelector 노드, LongCat-Image·SCAIL·SDPose 지원",
+      "Kling 3.0 Motion Control 활성화"
+    ],
+    "url": "https://blog.comfy.org/p/ltx-23-day-0-supporte-in-comfyui",
+    "source": "notice"
+  }
+]

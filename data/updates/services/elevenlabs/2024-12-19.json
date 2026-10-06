@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-12-19-1",
+    "service": "elevenlabs",
+    "date": "2024.12.19",
+    "kind": "모델",
+    "title": "Flash 모델 API 제공",
+    "summary": "75ms 만에 음성을 만드는 가장 빠른 TTS 모델 Flash를 API 모델 ID eleven_flash_v2·eleven_flash_v2_5로 쓸 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/19",
+    "source": "dev"
+  }
+]

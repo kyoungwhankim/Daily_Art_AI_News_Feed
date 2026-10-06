@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-08-09-1",
+    "service": "scenario",
+    "date": "2025.08.09",
+    "kind": "모델",
+    "title": "Runway Aleph·Ideogram Character 추가",
+    "summary": "기존 영상을 맥락에 맞게 편집하는 Runway Aleph와 캐릭터 일관성 모델 Ideogram Character 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-93-1-new-models-runway-aleph-ideogram-character-more",
+    "source": "notice"
+  }
+]

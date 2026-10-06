@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-09-09-1",
+    "service": "fal.ai",
+    "date": "2026.09.09",
+    "kind": "기능",
+    "title": "대시보드 Playground에서 앱 엔드포인트 전환",
+    "summary": "배포한 Serverless 앱 대시보드에 Testing > Playground가 생겨, 엔드포인트를 골라 자동 생성된 입력 폼으로 바로 요청을 실행해 볼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#september-9-2026",
+    "source": "dev"
+  }
+]

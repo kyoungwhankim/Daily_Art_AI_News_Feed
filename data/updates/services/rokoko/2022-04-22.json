@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2022-04-22-1",
+    "service": "rokoko",
+    "date": "2022.04.22",
+    "kind": "요금",
+    "title": "Rokoko Studio 2.1.2, 에셋 제한 해제와 단축키 추가",
+    "summary": "모든 요금제에서 에셋 개수 제한이 사라졌고, Starter의 하루 15분 무료 라이브스트리밍은 없어진 대신 Plus 30일 무료 체험이 생겼어요.",
+    "details": [
+      "모든 플랜의 액터·클립 개수 제한 해제",
+      "Starter 무료 라이브스트리밍 종료, Plus 30일 체험 추가",
+      "다양한 키보드 단축키 지원",
+      "녹화 재생 중 센서 진단 정보 확인"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/5619449306385-Rokoko-Studio-2-1-2",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-09-23-1",
+    "service": "roblox-cube",
+    "date": "2026.09.23",
+    "kind": "기능",
+    "title": "새 텍스처 생성 도구·Segment Any Mesh·이미지 미리보기",
+    "summary": "품질과 제어가 좋아진 텍스처 생성, 가져온 메시를 파츠로 나누는 Segment Any Mesh, 생성 메시 이미지 미리보기가 Studio에 나왔어요.",
+    "url": "https://devforum.roblox.com/t/introducing-new-texture-generation-tools-segment-any-mesh-and-image-previews/4890084",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-06-08-1",
+    "service": "heygen",
+    "date": "2026.06.08",
+    "kind": "기능",
+    "title": "HeyGen Speech Cleanup 출시",
+    "summary": "녹화 영상에서 군더더기 말, 멈춤, 말 더듬기, 재촬영 부분을 자동으로 지우고 끊김 없는 한 테이크로 이어 주는 Speech Cleanup을 출시했어요.",
+    "url": "https://heygen.noticeable.news/publications/introducing-speech-cleanup",
+    "source": "notice"
+  }
+]

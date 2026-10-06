@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2023-10-17-1",
+    "service": "topaz-video",
+    "date": "2023.10.17",
+    "kind": "앱",
+    "title": "Topaz Video AI v4.0.0: 비교 보기와 새 타임라인",
+    "summary": "두 화면에 다른 필터를 적용해 비교하는 보기, 미리보기 기록, 확대 가능한 타임라인, In·Out 트림으로 작업 방식을 크게 바꿨어요.",
+    "details": [
+      "Nyx v2와 2배 스케일 모드",
+      "앱 내 플레이어 성능 대폭 향상",
+      "UI·필터 아이콘 새 단장"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v4-0-0/54368",
+    "source": "notice"
+  }
+]

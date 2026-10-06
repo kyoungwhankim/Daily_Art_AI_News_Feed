@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-08-13-1",
+    "service": "nvidia-studio",
+    "date": "2025.08.13",
+    "kind": "API",
+    "title": "FLUX.1 Kontext [dev] NIM 마이크로서비스 출시",
+    "summary": "자연어로 이미지를 편집하는 FLUX.1 Kontext [dev]를 RTX에 최적화된 NIM 마이크로서비스로 받을 수 있어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-kontext-nim-microservice-siggraph/",
+    "source": "notice"
+  }
+]

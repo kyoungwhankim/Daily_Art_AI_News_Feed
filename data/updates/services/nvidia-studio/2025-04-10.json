@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-04-10-1",
+    "service": "nvidia-studio",
+    "date": "2025.04.10",
+    "kind": "연동",
+    "title": "DaVinci Resolve 20 RTX AI 기능·FLUX.1 NIM",
+    "summary": "DaVinci Resolve Studio 20 베타의 RTX 가속 AI 기능을 소개하고, FLUX.1 NIM 마이크로서비스 등 생성형 AI 도구를 함께 발표했어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-rtx-ai-garage-davinci-resolve-flux1-nim/",
+    "source": "notice"
+  }
+]

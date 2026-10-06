@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-10-01-1",
+    "service": "flow-studio",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Flow Studio, MiniMax H3 Max와 ElevenLabs v3 추가",
+    "summary": "MiniMax H3 Max 영상 모델과 Seed Audio 1.0, ElevenLabs v3·Turbo v2.5가 추가돼 영상과 보이스오버·음악·효과음을 만들 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

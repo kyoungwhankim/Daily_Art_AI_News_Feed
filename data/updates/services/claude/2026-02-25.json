@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-02-25-1",
+    "service": "claude",
+    "date": "2026.02.25",
+    "kind": "기능",
+    "title": "Cowork 예약 작업·Customize 섹션",
+    "summary": "Cowork에서 반복·수시 작업을 예약할 수 있고, Claude Desktop에 스킬·플러그인·커넥터를 모은 Customize 섹션이 생겼어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

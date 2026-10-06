@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-03-13-1",
+    "service": "scenario",
+    "date": "2026.03.13",
+    "kind": "API",
+    "title": "Image-to-SVG 생성 모델",
+    "summary": "이미지를 벡터 그래픽(SVG)으로 만드는 새 Image-to-SVG 모델과 학습·에셋 관리 개선이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-112-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-13-2",
+    "service": "scenario",
+    "date": "2026.03.13",
+    "kind": "모델",
+    "title": "Tripo P1 3D 모델·새 도구",
+    "summary": "깔끔한 토폴로지의 엔진용 에셋을 만드는 Tripo P1 등 새 모델과 도구, 워크플로 개선이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-v2-6-0-new-models-workflow-upgrades-and-updated-model-training",
+    "source": "notice"
+  }
+]

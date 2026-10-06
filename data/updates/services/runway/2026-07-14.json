@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-14-1",
+    "service": "runway",
+    "date": "2026.07.14",
+    "kind": "기능",
+    "title": "Runway MCP에서 Aleph 2.0 영상 편집",
+    "summary": "Runway MCP의 새 Edit Video 도구로 에이전트에게 Aleph 2.0 영상 편집을 맡길 수 있어요. 배경에 새 요소를 넣는 등의 편집이 가능해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

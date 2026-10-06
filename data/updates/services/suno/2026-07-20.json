@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-07-20-1",
+    "service": "suno",
+    "date": "2026.07.20",
+    "kind": "기능",
+    "title": "Suno 웹 곡 길이 슬라이더",
+    "summary": "웹 Create 양식에서 Duration 슬라이더로 곡 길이를 정할 수 있어요. v5.5 모델에서 지원해요.",
+    "url": "https://suno.com/release-notes/duration-slider-on-web",
+    "source": "notice"
+  }
+]

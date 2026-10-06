@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-09-18-1",
+    "service": "runway",
+    "date": "2026.09.18",
+    "kind": "요금",
+    "title": "통합 요금제 도입: 웹 앱과 Runway Dev 크레딧 공유",
+    "summary": "구매한 크레딧을 웹 앱과 Runway Dev API 양쪽에서 함께 쓸 수 있는 통합 요금제를 도입했어요. 같은 날 Runway MCP에 Kling 모델들도 추가됐어요.",
+    "details": [
+      "하나의 크레딧 풀을 웹 앱과 API에서 공용",
+      "엔터프라이즈용 통합 사용량 관리",
+      "Runway MCP에 Kling O3 4K, Kling 3.0 Standard, Kling O3 Standard, Kling 3.0 Motion Control 추가"
+    ],
+    "url": "https://runway.com/news/company-news/working-smarter-with-runway-unified-pricing",
+    "source": "notice"
+  }
+]

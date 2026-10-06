@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-08-28-1",
+    "service": "scenario",
+    "date": "2026.08.28",
+    "kind": "기능",
+    "title": "Genie 대화 탭·커스텀 홈",
+    "summary": "Genie에 대화 탭, 에셋 @멘션, 풍부한 미디어 미리보기가 생겼고 홈을 맞춤 구성할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-23-0",
+    "source": "notice"
+  }
+]

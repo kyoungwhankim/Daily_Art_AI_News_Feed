@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-03-10-1",
+    "service": "comfyui",
+    "date": "2026.03.10",
+    "kind": "기능",
+    "title": "App Mode·App Builder·ComfyHub 출시",
+    "summary": "어떤 ComfyUI 워크플로든 노드 그래프를 몰라도 쓰는 설치 없는 공유 앱으로 바꿔 주는 App Mode, App Builder, ComfyHub를 내놓았어요.",
+    "url": "https://blog.comfy.org/p/from-workflow-to-app-introducing",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-03-10-2",
+    "service": "comfyui",
+    "date": "2026.03.10",
+    "kind": "연동",
+    "title": "ComfyUI, HY 3D 고급 후처리 기능",
+    "summary": "HY 3D의 파트 분할 등 3D 후처리 기능을 API 노드로 추가해 생성한 메시를 텍스처링·게임 엔진에 쓸 수 있게 다듬을 수 있어요.",
+    "url": "https://blog.comfy.org/p/hunyuan-3d-advanced-features-now",
+    "source": "notice"
+  }
+]

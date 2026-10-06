@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-05-1",
+    "service": "claude",
+    "date": "2026.08.05",
+    "kind": "종료",
+    "title": "Inference hooks 베타·Claude Opus 4.1 종료",
+    "summary": "Enterprise에서 프롬프트를 자체 AI 보안 서버의 허용·거부 판단 뒤에 처리하는 inference hooks가 베타로 나왔어요. Claude Opus 4.1은 API에서 종료됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
+    "source": "dev"
+  }
+]

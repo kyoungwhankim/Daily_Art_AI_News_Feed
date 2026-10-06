@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-05-29-1",
+    "service": "fal.ai",
+    "date": "2026.05.29",
+    "kind": "API",
+    "title": "러너 종료 유예 시간 최대 1시간으로 확대",
+    "summary": "termination_grace_period_seconds를 최대 1시간까지 설정할 수 있어, 긴 요청과 teardown()이 강제 종료 전에 끝날 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#may-29-2026",
+    "source": "dev"
+  }
+]

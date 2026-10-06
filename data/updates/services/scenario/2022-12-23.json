@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2022-12-23-1",
+    "service": "scenario",
+    "date": "2022.12.23",
+    "kind": "기능",
+    "title": "네거티브 프롬프트·설정 불러오기 추가",
+    "summary": "원하지 않는 요소를 적어 제외하는 네거티브 프롬프트가 추가됐어요. 'Generate More Images'는 이전 설정을 편집기로 그대로 불러와요.",
+    "url": "https://www.scenario.com/changelog/web-app-december-23-2022",
+    "source": "notice"
+  }
+]

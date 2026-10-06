@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-09-02-1",
+    "service": "tripo",
+    "date": "2024.09.02",
+    "kind": "API",
+    "title": "Multiview to Model·잔액 조회 추가",
+    "summary": "여러 장의 이미지로 3D를 만드는 Multiview to Model과 잔액 확인 엔드포인트가 추가됐어요. 후처리 파라미터도 늘었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-2-2024-09-02",
+    "source": "dev"
+  }
+]

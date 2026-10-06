@@ -1,0 +1,19 @@
+[
+  {
+    "id": "invokeai-2026-05-27-1",
+    "service": "invokeai",
+    "date": "2026.05.27",
+    "kind": "연동",
+    "title": "InvokeAI 6.13.0: Qwen Image와 외부 호스팅 모델 연동",
+    "summary": "InvokeAI 6.13.0에서 Qwen Image 2.5·Edit 2.5와 Anima를 로컬로 쓰고, API 키로 OpenAI·Gemini·BytePlus·Alibaba Cloud의 외부 모델도 캔버스와 워크플로에서 쓸 수 있어요.",
+    "details": [
+      "OpenAI: GPT Image 1·1.5·1 Mini, DALL-E 3",
+      "Google: Gemini 2.5 Flash Image, Gemini 3 Pro Image Preview 등",
+      "BytePlus: Seedream 3.0~5.0 Lite",
+      "Alibaba Cloud: Qwen Image 2.0 Pro·Max, Wan 2.6 T2I",
+      "모델 설치 대기열·진행 표시 개편"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-6-13-0/",
+    "source": "notice"
+  }
+]

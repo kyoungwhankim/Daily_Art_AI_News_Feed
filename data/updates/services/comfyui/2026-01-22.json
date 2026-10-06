@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-01-22-1",
+    "service": "comfyui",
+    "date": "2026.01.22",
+    "kind": "연동",
+    "title": "ComfyUI, Vidu Q2 영상 모델 지원",
+    "summary": "캐릭터 일관성이 뛰어나고 3배 빠르며 최대 7개 참조 대상을 넣을 수 있는 Vidu Q2를 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/vidu-q2-now-live-in-comfyui",
+    "source": "notice"
+  }
+]

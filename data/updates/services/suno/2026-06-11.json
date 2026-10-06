@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-06-11-1",
+    "service": "suno",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "Suno 스템 분리 개선, 100여 악기 Advanced Split",
+    "summary": "Premier용 Advanced Split으로 100가지 가까운 악기 중 원하는 것만 뽑을 수 있고, 추출 스템이 더 깨끗해졌어요.",
+    "url": "https://suno.com/release-notes/advanced-stems",
+    "source": "notice"
+  }
+]

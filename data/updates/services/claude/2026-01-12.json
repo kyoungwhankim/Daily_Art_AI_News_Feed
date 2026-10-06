@@ -1,0 +1,26 @@
+[
+  {
+    "id": "claude-2026-01-12-1",
+    "service": "claude",
+    "date": "2026.01.12",
+    "kind": "기능",
+    "title": "Cowork 리서치 프리뷰 출시(Max, macOS)",
+    "summary": "Claude Code의 에이전트 기능을 코딩 외 업무에 쓰는 Cowork가 Claude Desktop에 나왔어요. 격리된 VM에서 로컬 파일과 MCP에 접근해요.",
+    "details": [
+      "모바일 건강·피트니스 데이터 분석(미국, Pro·Max)",
+      "HIPAA 대응 Enterprise 플랜"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-01-12-2",
+    "service": "claude",
+    "date": "2026.01.12",
+    "kind": "API",
+    "title": "console.anthropic.com → platform.claude.com 리디렉션",
+    "summary": "Claude Console이 platform.claude.com으로 완전히 옮겨졌고 기존 주소는 자동으로 리디렉션돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-12-2026",
+    "source": "dev"
+  }
+]

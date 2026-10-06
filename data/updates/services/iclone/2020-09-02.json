@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2020-09-02-1",
+    "service": "iclone",
+    "date": "2020.09.02",
+    "kind": "연동",
+    "title": "iClone 7.81, Unreal 호환 FBX 에셋 이름",
+    "summary": "FBX 에셋 이름 규칙이 Unreal과 구조적으로 호환되도록 바뀌었고, 여러 버그가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

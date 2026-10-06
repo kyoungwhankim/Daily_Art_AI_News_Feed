@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2026-05-26-1",
+    "service": "blender",
+    "date": "2026.05.26",
+    "kind": "기능",
+    "title": "Blender Roadmap 공개",
+    "summary": "진행 중인 주요 개발 프로젝트와 최근 완료된 기능을 한눈에 보여 주는 Blender Roadmap이 공개됐어요. 각 카드에서 프로젝트 페이지·PR·개발 블로그로 바로 이동할 수 있어요.",
+    "url": "https://www.blender.org/news/introducing-the-blender-roadmap/",
+    "source": "notice"
+  }
+]

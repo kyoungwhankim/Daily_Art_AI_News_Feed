@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-07-1",
+    "service": "claude",
+    "date": "2026.08.07",
+    "kind": "API",
+    "title": "Managed Agents 세션 예산·어드바이저·추론 지역",
+    "summary": "Managed Agents 세션에 지출 상한 예산, 중간 조언을 주는 advisor 모델, 추론 지역(inference_geo)을 설정할 수 있고 GitHub 저장소의 스킬도 자동으로 불러와요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
+    "source": "dev"
+  }
+]

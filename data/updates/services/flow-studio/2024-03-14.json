@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-03-14-1",
+    "service": "flow-studio",
+    "date": "2024.03.14",
+    "kind": "기능",
+    "title": "Wonder Studio, 저화질 영상 얼굴 캡처 개선",
+    "summary": "저해상도·저품질 영상 구간에서도 얼굴 추정 결과가 좋아지도록 페이셜 캡처 기술이 개선됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

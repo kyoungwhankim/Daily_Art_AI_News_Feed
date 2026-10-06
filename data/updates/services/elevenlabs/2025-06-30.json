@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-06-30-1",
+    "service": "elevenlabs",
+    "date": "2025.06.30",
+    "kind": "기능",
+    "title": "Eleven v3 기반 Voice Design",
+    "summary": "Eleven v3로 텍스트 설명에서 목소리를 만드는 새 Voice Design이 나왔고, STT 화자 분리 임계값과 PVC 배경 소음 제거가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/30",
+    "source": "dev"
+  }
+]

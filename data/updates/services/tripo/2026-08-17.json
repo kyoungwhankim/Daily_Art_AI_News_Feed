@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2026-08-17-1",
+    "service": "tripo",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "리타깃 프리셋 검증 방식 변경",
+    "summary": "animate_retarget의 프리셋 목록을 리그 모델 버전에 맞춰 검증하게 됐어요. Rig v1.0에는 cpr 동작이 추가됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-8-2026-08-17",
+    "source": "dev"
+  }
+]

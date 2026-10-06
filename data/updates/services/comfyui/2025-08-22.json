@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-22-1",
+    "service": "comfyui",
+    "date": "2025.08.22",
+    "kind": "연동",
+    "title": "API 노드 무제한 병렬 실행과 새 모델",
+    "summary": "API 노드를 기다리지 않고 무제한 병렬로 실행할 수 있게 됐고, MiniMax Hailuo-02, Vidu, GPT-5, Kling 2.1, Veo3 등 새 모델이 추가됐어요.",
+    "url": "https://blog.comfy.org/p/unlimited-parallel-api-nodes-and",
+    "source": "notice"
+  }
+]

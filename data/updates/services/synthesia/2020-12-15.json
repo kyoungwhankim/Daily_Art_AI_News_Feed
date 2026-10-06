@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2020-12-15-1",
+    "service": "synthesia",
+    "date": "2020.12.15",
+    "kind": "기능",
+    "title": "Synthesia 영상 생성 속도 50% 향상",
+    "summary": "영상 생성 속도가 50% 빨라졌고 새 음성 추가와 기존 음성 개선도 함께 이뤄졌어요.",
+    "url": "https://www.synthesia.io/updates/video-generation-just-got-50-percent-faster",
+    "source": "notice"
+  }
+]

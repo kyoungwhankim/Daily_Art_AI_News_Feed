@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-17-1",
+    "service": "scenario",
+    "date": "2026.06.17",
+    "kind": "연동",
+    "title": "MCP 에이전트 LoRA 처리 개선",
+    "summary": "에이전트가 LoRA와 조합 모델을 더 잘 다루고 검색 필터가 안정화됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-15-0",
+    "source": "notice"
+  }
+]

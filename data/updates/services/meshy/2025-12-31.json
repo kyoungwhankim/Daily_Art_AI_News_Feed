@@ -1,0 +1,17 @@
+[
+  {
+    "id": "meshy-2025-12-31-1",
+    "service": "meshy",
+    "date": "2025.12.31",
+    "kind": "API",
+    "title": "API Playground·Text to Image·Image to Image API 출시",
+    "summary": "웹에서 API 파라미터를 시험해 볼 수 있는 API Playground를 열었어요. nano-banana 모델 기반 Text to Image·Image to Image API도 추가됐어요.",
+    "details": [
+      "API Playground 공개",
+      "Text to Image API·Image to Image API 추가(nano-banana, nano-banana-pro)",
+      "멀티뷰 이미지 생성 옵션"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2025",
+    "source": "dev"
+  }
+]

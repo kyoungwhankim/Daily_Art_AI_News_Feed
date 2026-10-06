@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-03-1",
+    "service": "scenario",
+    "date": "2026.09.03",
+    "kind": "연동",
+    "title": "MCP 생성·업로드 진행 스트리밍",
+    "summary": "에이전트가 에셋 생성과 업로드 중 실시간 진행 알림을 받게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-03-2",
+    "service": "scenario",
+    "date": "2026.09.03",
+    "kind": "기능",
+    "title": "앱 내 마스킹·원클릭 다운로드",
+    "summary": "앱 안에서 마스킹을 하고, 워크플로 노드 복제와 원클릭 에셋 다운로드가 편해졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-24-0",
+    "source": "notice"
+  }
+]

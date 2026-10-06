@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-06-30-1",
+    "service": "comfyui",
+    "date": "2026.06.30",
+    "kind": "기능",
+    "title": "ComfyUI v0.27.0: int8 모델 지원",
+    "summary": "ComfyUI v0.27.0에서 더 빠르게 추론하는 int8 convrot 모델을 지원하고 Turing GPU까지 int8을 확장했어요. int8 LoRA 적용 품질과 속도도 좋아졌어요.",
+    "details": [
+      "Seed 노드, 바운딩 박스 캔버스와 Ideogram JSON 프롬프트",
+      "Krea 2 고급 모델 병합 노드",
+      "Nano Banana 2 Lite, Gemini Video Omni 노드",
+      "에셋 해싱을 옵트인으로 변경"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-27-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-05-05-1",
+    "service": "unity-ai",
+    "date": "2026.05.05",
+    "kind": "기능",
+    "title": "Unity AI 오픈 베타 구성 소개",
+    "summary": "Unity 6.0 이상에서 쓰는 AI 도구 오픈 베타의 구성(Ask·Plan·Agent 모드의 AI Assistant, MCP Server, AI Gateway, Generators)과 무료 체험 방법을 소개했어요. Muse와는 다른 제품이라고 밝혔어요.",
+    "url": "https://unity.com/blog/unity-ai-how-to-get-started",
+    "source": "notice"
+  }
+]

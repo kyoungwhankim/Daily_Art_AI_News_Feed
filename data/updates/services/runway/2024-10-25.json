@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-10-25-1",
+    "service": "runway",
+    "date": "2024.10.25",
+    "kind": "기능",
+    "title": "Gen-3 Alpha에 Act-One 단계적 공개",
+    "summary": "영상 한 개와 캐릭터 이미지만으로 표정 연기를 생성하는 Act-One을 Gen-3 Alpha 사용자에게 순차 공개하기 시작했어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

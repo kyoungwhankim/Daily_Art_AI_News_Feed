@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2023-08-22-1",
+    "service": "elevenlabs",
+    "date": "2023.08.22",
+    "kind": "모델",
+    "title": "ElevenLabs 베타 종료, Eleven Multilingual v2 출시",
+    "summary": "ElevenLabs가 베타를 마치고 약 30개 언어를 지원하는 음성 합성 모델 Eleven Multilingual v2를 내놨어요. 게임·출판·미디어 콘텐츠를 여러 언어로 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-comes-out-of-beta-and-releases-eleven-multilingual-v2-a-foundational-ai-speech-model-for-nearly-30-languages",
+    "source": "notice"
+  }
+]

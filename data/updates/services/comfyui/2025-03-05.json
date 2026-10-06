@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2025-03-05-1",
+    "service": "comfyui",
+    "date": "2025.03.05",
+    "kind": "기능",
+    "title": "ComfyUI 프런트엔드 1.10: 선택 툴박스와 워크플로 템플릿",
+    "summary": "ComfyUI 프런트엔드 1.10에서 노드를 고르고 다루는 Selection Toolbox가 생기고, 바로 쓸 수 있는 워크플로 템플릿 라이브러리가 추가됐어요.",
+    "url": "https://blog.comfy.org/p/comfyui-frontend-110-update-powerful",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-03-05-2",
+    "service": "comfyui",
+    "date": "2025.03.05",
+    "kind": "모델",
+    "title": "ComfyUI, LTX-Video 0.9.5 첫날 지원",
+    "summary": "여러 키프레임 제어와 더 긴 영상, 향상된 품질을 갖춘 LTX-Video 0.9.5를 ComfyUI에서 출시 당일 지원해요. 상업 이용 가능한 OpenRail-M 라이선스예요.",
+    "url": "https://blog.comfy.org/p/ltx-video-095-day-1-support-in-comfyui",
+    "source": "notice"
+  }
+]

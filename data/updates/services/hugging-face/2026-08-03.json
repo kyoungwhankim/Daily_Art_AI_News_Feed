@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-08-03-1",
+    "service": "hugging-face",
+    "date": "2026.08.03",
+    "kind": "기능",
+    "title": "HF Jobs 라벨 필터 추가",
+    "summary": "Jobs 목록을 라벨로 걸러 볼 수 있게 됐어요. 자주 쓰는 라벨은 개수와 함께 칩으로 보이고, key=value 입력으로 어떤 라벨이든 필터링할 수 있어요.",
+    "url": "https://huggingface.co/changelog/filter-jobs-by-label",
+    "source": "notice"
+  }
+]

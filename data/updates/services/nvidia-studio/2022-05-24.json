@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2022-05-24-1",
+    "service": "nvidia-studio",
+    "date": "2022.05.24",
+    "kind": "앱",
+    "title": "5월 Studio 드라이버: AI 앱 업데이트 지원",
+    "summary": "COMPUTEX 2022에서 새 Studio 노트북과 함께 5월 Studio 드라이버가 나왔어요. DaVinci Resolve 18 등 AI 기반 소프트웨어 업데이트를 지원해요.",
+    "url": "https://blogs.nvidia.com/blog/in-the-nvidia-studio-may-23/",
+    "source": "notice"
+  }
+]

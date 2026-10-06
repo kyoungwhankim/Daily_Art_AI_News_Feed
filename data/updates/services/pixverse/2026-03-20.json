@@ -1,0 +1,19 @@
+[
+  {
+    "id": "pixverse-2026-03-20-1",
+    "service": "pixverse",
+    "date": "2026.03.20",
+    "kind": "기능",
+    "title": "PixVerse 웹 크리에이터 패널 4가지 기능 개선",
+    "summary": "PixVerse 웹 크리에이터 패널에 폴더 업로드, 드래그 다중 선택, 최대 50개 일괄 다운로드, 복사·붙여넣기 업로드가 추가돼 작업이 빨라졌어요.",
+    "details": [
+      "선택한 폴더로 바로 업로드",
+      "드래그로 여러 에셋 선택",
+      "최대 50개 ZIP 일괄 다운로드",
+      "클립보드 이미지·영상 붙여넣기 업로드",
+      "모델 메뉴에 회사 로고 표시"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-web-creator-panel-4-power-features",
+    "source": "notice"
+  }
+]

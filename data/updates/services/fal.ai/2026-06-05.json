@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-05-1",
+    "service": "fal.ai",
+    "date": "2026.06.05",
+    "kind": "API",
+    "title": "조건별 재시도 설정 헤더 X-Fal-Retry-Config",
+    "summary": "server_error·timeout·connection_error마다 따로 재시도 횟수를 정할 수 있는 X-Fal-Retry-Config 요청 헤더가 추가됐어요. 최대 10회 시도 한도가 적용돼요.",
+    "url": "https://fal.ai/docs/changelog#june-5-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-01-15-1",
+    "service": "claude",
+    "date": "2025.01.15",
+    "kind": "API",
+    "title": "프롬프트 캐싱 사용 편의 개선",
+    "summary": "캐시 브레이크포인트를 두면 가장 긴 기존 캐시 접두부를 자동으로 읽어요. 도구 사용 시 응답 앞부분 미리 채우기도 가능해졌어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-15th-2025",
+    "source": "dev"
+  }
+]

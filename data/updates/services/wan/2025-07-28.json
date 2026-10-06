@@ -1,0 +1,16 @@
+[
+  {
+    "id": "wan-2025-07-28-1",
+    "service": "wan",
+    "date": "2025.07.28",
+    "kind": "모델",
+    "title": "Wan 2.2 영상·이미지 모델 출시",
+    "summary": "Wan 2.2 Plus 텍스트·이미지-투-비디오와 Plus·Flash 텍스트-투-이미지가 나왔어요. 큰 카메라 움직임과 시네마틱 연출 제어, 프롬프트 충실도가 좋아졌어요.",
+    "details": [
+      "wan2.2-t2v-plus, wan2.2-i2v-plus",
+      "wan2.2-t2i-plus, wan2.2-t2i-flash: 최대 200만 화소"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

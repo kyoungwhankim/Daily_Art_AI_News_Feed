@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-25-1",
+    "service": "comfyui",
+    "date": "2025.08.25",
+    "kind": "기능",
+    "title": "Qwen Image ControlNet·LoRA, EasyCache, 컨텍스트 윈도",
+    "summary": "Qwen Image ControlNet과 LoRA를 지원하고, 네이티브 EasyCache 노드로 Blackwell GPU에서 20% 빨라졌으며 긴 영상용 컨텍스트 윈도 샘플링 노드가 추가됐어요.",
+    "url": "https://blog.comfy.org/p/comfyui-now-supports-qwen-image-controlnet",
+    "source": "notice"
+  }
+]

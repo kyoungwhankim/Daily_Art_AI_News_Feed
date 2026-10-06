@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-08-1",
+    "service": "elevenlabs",
+    "date": "2025.08.08",
+    "kind": "연동",
+    "title": "Conversational AI에 GPT-5 통합",
+    "summary": "OpenAI GPT-5가 ElevenLabs Conversational AI에 통합돼 복잡한 업무를 처리하는 음성 에이전트를 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/gpt-5-available-in-elevenlabs-conversational-ai",
+    "source": "notice"
+  }
+]

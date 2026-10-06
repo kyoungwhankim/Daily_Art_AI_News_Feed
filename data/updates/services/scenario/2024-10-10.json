@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-10-10-1",
+    "service": "scenario",
+    "date": "2024.10.10",
+    "kind": "모델",
+    "title": "Flux 1.1 Pro 추가",
+    "summary": "Black Forest Labs의 새 기반 모델 Flux 1.1 Pro를 쓸 수 있어요. 캔버스에 LoRA 구성 요소 슬라이더도 돌아왔어요.",
+    "url": "https://www.scenario.com/changelog/1-71-flux-1-1-pro-more",
+    "source": "notice"
+  }
+]

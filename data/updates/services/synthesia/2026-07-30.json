@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2026-07-30-1",
+    "service": "synthesia",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "Synthesia 원형(방사형) 그라디언트 추가",
+    "summary": "배경, 도형, 텍스트에 선형과 방사형 그라디언트를 바꿔 가며 쓸 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/style-designs-with-radial-gradients",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-07-30-2",
+    "service": "synthesia",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "Synthesia AI 영상 프리셋으로 B롤 생성",
+    "summary": "프리셋을 고르고 아바타와 공간만 더하면 프롬프트 없이 B롤을 만들 수 있어요.",
+    "url": "https://www.synthesia.io/updates/generate-b-roll-with-ai-video-presets",
+    "source": "notice"
+  }
+]

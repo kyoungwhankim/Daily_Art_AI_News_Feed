@@ -1,0 +1,32 @@
+[
+  {
+    "id": "claude-2026-07-14-1",
+    "service": "claude",
+    "date": "2026.07.14",
+    "kind": "요금",
+    "title": "Claude for Teachers: 미국 K-12 교사 무료 제공",
+    "summary": "인증된 미국 K-12 교사에게 프리미엄 Claude 기능, 수업 스킬 라이브러리, 50개 주 기준 커리큘럼을 무료로 제공해요.",
+    "url": "https://www.anthropic.com/news/claude-for-teachers",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-07-14-2",
+    "service": "claude",
+    "date": "2026.07.14",
+    "kind": "정책",
+    "title": "HIPAA 구성 셀프서비스화",
+    "summary": "Claude Enterprise와 Claude Platform(API) 관리자가 BAA 검토부터 HIPAA 구성 활성화까지 직접 처리할 수 있게 됐어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-07-14-3",
+    "service": "claude",
+    "date": "2026.07.14",
+    "kind": "API",
+    "title": "Admin API로 Enterprise 사용자 관리(베타)",
+    "summary": "Admin API로 Claude Enterprise 멤버 조회·역할 변경·삭제, 초대, 그룹 관리 등을 할 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-14-2026",
+    "source": "dev"
+  }
+]

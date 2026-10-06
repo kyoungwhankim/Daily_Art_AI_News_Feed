@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-08-11-1",
+    "service": "comfyui",
+    "date": "2026.08.11",
+    "kind": "모델",
+    "title": "ComfyUI v0.32.0: LTX 2.5와 Qwen-Image 3.0",
+    "summary": "ComfyUI v0.32.0에서 STG·듀얼 CFG·길이 예측을 갖춘 LTX 2.5를 네이티브로 지원하고, Qwen-Image 3.0·3.0 Pro와 Grok Imagine Image 2.0 노드가 추가됐어요.",
+    "details": [
+      "공식 지원 최소 PyTorch 2.7",
+      "Mistral·Llama 토크나이저 transformers 의존 제거"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-32-0",
+    "source": "notice"
+  }
+]

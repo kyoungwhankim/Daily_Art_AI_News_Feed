@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iclone-2022-09-29-1",
+    "service": "iclone",
+    "date": "2022.09.29",
+    "kind": "앱",
+    "title": "iClone 8.1, Snap to Surface와 서브디비전",
+    "summary": "Motion Director 캐릭터가 지형 높이를 따라 오르내리는 Snap to Surface와 캐릭터 품질을 크게 높이는 Subdivision이 추가됐어요.",
+    "details": [
+      "Snap to Surface(감쇠·예측·높이 한도 설정)",
+      "Unreal Live Link 대상 씬 지원",
+      "캐릭터 Subdivision"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

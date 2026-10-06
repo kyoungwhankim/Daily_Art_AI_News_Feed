@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-03-26-1",
+    "service": "mureka",
+    "date": "2025.03.26",
+    "kind": "API",
+    "title": "Mureka 개인 음악 모델 학습과 API 정식 출시",
+    "summary": "내 곡을 올려 나만의 음악 모델을 학습시킬 수 있고, 구간 편집·확장이 추가됐어요. 음악·가사 생성, 모델 커스텀, TTS를 제공하는 Mureka API도 정식 출시됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

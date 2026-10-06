@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-11-19-1",
+    "service": "invokeai",
+    "date": "2024.11.19",
+    "kind": "기능",
+    "title": "Invoke 5.4.2: FLUX IP Adapter v2와 워크플로 이미지 배치",
+    "summary": "Invoke 5.4.2에서 FLUX IP Adapter v2를 지원하고, Image Batch 노드로 여러 이미지에 같은 워크플로를 한 번에 돌릴 수 있게 됐어요.",
+    "url": "https://invoke.ai/releases/version/v5-4-2/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-06-21-1",
+    "service": "suno",
+    "date": "2024.06.21",
+    "kind": "기능",
+    "title": "Suno 팔로잉 피드",
+    "summary": "팔로우한 아티스트의 최신 곡을 모아 보는 Following Feed가 생겼어요.",
+    "url": "https://suno.com/release-notes/following-feed",
+    "source": "notice"
+  }
+]

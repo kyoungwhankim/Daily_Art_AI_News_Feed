@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-10-1",
+    "service": "scenario",
+    "date": "2024.01.10",
+    "kind": "API",
+    "title": "originalAsset 쿼리 파라미터 지원",
+    "summary": "originalAsset을 true로 주면 CDN 변환을 건너뛰고 생성 직후 에셋에 바로 접근할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-13-0-january-10th-2024",
+    "source": "dev"
+  }
+]

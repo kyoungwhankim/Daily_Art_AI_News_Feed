@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2024-03-26-1",
+    "service": "blender",
+    "date": "2024.03.26",
+    "kind": "앱",
+    "title": "Blender 4.1 출시: Geometry Nodes 베이킹",
+    "summary": "노드 그룹 안에서 데이터를 베이크해 재계산을 줄이는 기능과 Menu Switch 노드 등 편의 개선을 담은 Blender 4.1이 나왔어요.",
+    "url": "https://www.blender.org/press/blender-4-1-release/",
+    "source": "notice"
+  }
+]

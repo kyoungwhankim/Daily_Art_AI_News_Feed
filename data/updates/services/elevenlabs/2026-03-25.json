@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-25-1",
+    "service": "elevenlabs",
+    "date": "2026.03.25",
+    "kind": "요금",
+    "title": "워크스페이스 Basic·Full 시트 도입",
+    "summary": "워크스페이스에 모든 제품을 쓰는 Full 시트와 ElevenCreative 사용이 제한된 Basic 시트가 생겼어요. 모든 유료 플랜에 Basic 시트 20개가 포함돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/25",
+    "source": "dev"
+  }
+]

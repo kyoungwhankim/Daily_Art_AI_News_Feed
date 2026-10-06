@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-05-15-1",
+    "service": "meshy",
+    "date": "2025.05.15",
+    "kind": "API",
+    "title": "자동 리깅·애니메이션 API 출시",
+    "summary": "3D 모델을 자동으로 리깅하고 애니메이션을 입히는 Auto-rigging & Animation API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2025",
+    "source": "dev"
+  }
+]

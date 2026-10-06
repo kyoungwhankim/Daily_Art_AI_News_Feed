@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-12-19-1",
+    "service": "scenario",
+    "date": "2023.12.19",
+    "kind": "API",
+    "title": "원본 에셋 바로 받기·모델 프리셋",
+    "summary": "originalAssets 옵션으로 변환을 건너뛰고 빠르게 결과를 받을 수 있어요. 모델에 설명·프리셋·예시를 저장할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-9-0-december-19th-2023",
+    "source": "dev"
+  }
+]

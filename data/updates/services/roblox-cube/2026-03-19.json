@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-03-19-1",
+    "service": "roblox-cube",
+    "date": "2026.03.19",
+    "kind": "기능",
+    "title": "Assistant 메시 생성 강화·스크린샷 도구",
+    "summary": "Assistant의 메시 생성이 일괄 생성, 바운딩 박스, 삼각형 수 제한을 지원해요. 새 MCP 도구와 스크린샷 도구도 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-mesh-generation-new-mcp-server-tools-screenshot-tool-and-more/4527258",
+    "source": "notice"
+  }
+]

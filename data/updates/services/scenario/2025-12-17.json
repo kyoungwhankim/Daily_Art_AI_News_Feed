@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-12-17-1",
+    "service": "scenario",
+    "date": "2025.12.17",
+    "kind": "API",
+    "title": "SAM 3D·GPT Image 1.5·Veo3 확장",
+    "summary": "SAM 3D 3D 생성, gpt-image-1.5, Veo3 영상 확장 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-14-0",
+    "source": "notice"
+  }
+]

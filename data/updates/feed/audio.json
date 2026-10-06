@@ -1,0 +1,3676 @@
+[
+  {
+    "id": "suno-2026-10-05-1",
+    "service": "suno",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "Suno 앨범 발행 기능",
+    "summary": "여러 곡을 앨범으로 묶어 발행할 수 있고, 발행하면 팔로워에게 푸시 알림이 가요.",
+    "url": "https://suno.com/release-notes/albums",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-10-01-1",
+    "service": "suno",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Suno Speech (beta), 말과 배경음악 동시 생성",
+    "summary": "말과 그 사운드트랙을 한 번에 만드는 첫 모델 Speech가 베타로 나왔어요. 피아노 위 동화 낭독 같은 콘텐츠를 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/introducing-speech-beta",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-28-1",
+    "service": "elevenlabs",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Eleven v4·v4 Turbo 출시",
+    "summary": "감정 표현이 더 풍부하고 보이스 클로닝이 강해진 Eleven v4와, 90개 이상 언어 실시간 대화용 v4 Turbo가 ElevenAgents·ElevenCreative·API에 나왔어요.",
+    "details": [
+      "Eleven v4: 감정 뉘앙스·보이스 클로닝 강화",
+      "Eleven v4 Turbo: 가장 빠른 감성 모델",
+      "STT 자연어 전사 편집 지시",
+      "Flows 템플릿 API",
+      "Text to Dialogue 연속성 유지"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-v4",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-26-1",
+    "service": "elevenlabs",
+    "date": "2026.09.26",
+    "kind": "API",
+    "title": "Image·Video·Templates API 공개",
+    "summary": "이미지·영상 생성과 Flows로 만든 템플릿을 API로 실행할 수 있어요. 새 상품마다 크리에이티브를 자동으로 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-the-image-video-and-templates-apis",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-09-25-1",
+    "service": "elevenlabs",
+    "date": "2026.09.25",
+    "kind": "요금",
+    "title": "대학생용 ElevenLabs for Students 플랜",
+    "summary": "새 학기를 맞아 대학생이 전문가급 ElevenLabs 도구를 쓸 수 있는 학생 전용 플랜이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-for-students",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-23-1",
+    "service": "elevenlabs",
+    "date": "2026.09.23",
+    "kind": "종료",
+    "title": "Sora 2·Sora 2 Pro 제거",
+    "summary": "OpenAI가 9월 24일 Sora API를 종료하면서 ElevenLabs에서도 Sora 2와 Sora 2 Pro 모델이 제거됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/23",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-09-22-1",
+    "service": "elevenlabs",
+    "date": "2026.09.22",
+    "kind": "모델",
+    "title": "Scribe v2 Medical 정식 출시",
+    "summary": "임상 음성에 맞게 미세조정한 음성 인식 모델 Scribe v2 Medical이 ElevenLabs API에서 정식 출시됐어요.",
+    "url": "https://elevenlabs.io/blog/scribe-v2-medical-generally-available",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-21-2",
+    "service": "elevenlabs",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "GPT Image 2.5 모델과 에이전트 병렬 툴 호출",
+    "summary": "이미지 생성에 gpt-image-2.5-flare·sunburst 모델이 추가됐고, 에이전트가 툴을 병렬로 호출할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/21",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-09-21-1",
+    "service": "elevenlabs",
+    "date": "2026.09.21",
+    "kind": "앱",
+    "title": "Studio 4.0, 영상·음성·음악을 한 편집기에서",
+    "summary": "Studio 4.0은 프로젝트 안에서 영상·음성·음악·효과음을 생성하고 편집·자막·내보내기까지 한 번에 할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-studio-4",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-09-17-1",
+    "service": "suno",
+    "date": "2026.09.17",
+    "kind": "기능",
+    "title": "Suno Studio MIDI 정확도 개선",
+    "summary": "Studio에서 MIDI 성능이 좋아져 MIDI 작업이 훨씬 정확하고 창의적으로 바뀌었어요.",
+    "url": "https://suno.com/release-notes/studio-improved-midi",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-09-14-1",
+    "service": "mureka",
+    "date": "2026.09.14",
+    "kind": "기능",
+    "title": "Mureka MV Director",
+    "summary": "가사·곡 구조·분위기·장르를 이해해 뮤직비디오 전체를 기획하는 AI Director와 채팅 편집 UI, 장르별 MV Skills, 곡 전체 MV 생성이 나왔어요.",
+    "details": [
+      "AI Director가 MV 전체 기획",
+      "채팅 편집·샷별 재생성·실시간 미리보기",
+      "록·힙합·K-pop 등 MV Skills",
+      "처음부터 끝까지 곡 전체 MV"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-14-2",
+    "service": "elevenlabs",
+    "date": "2026.09.14",
+    "kind": "모델",
+    "title": "Music v2.5 API 지원과 에이전트 통화 대기열",
+    "summary": "음악 엔드포인트와 SDK가 music_v2_5를 지원해요. 동시 통화 한도에 닿은 에이전트에는 대기열과 대기 음악이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/14",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-09-14-1",
+    "service": "elevenlabs",
+    "date": "2026.09.14",
+    "kind": "연동",
+    "title": "ElevenLabs MCP로 음성·음악·이미지·영상 생성",
+    "summary": "Claude·ChatGPT·Cursor에서 MCP로 음성·음악·효과음·이미지·영상을 만들고 결과를 ElevenCreative 워크스페이스로 받을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-voice-music-image-and-video-generation-in-the-elevenlabs-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-11-2",
+    "service": "elevenlabs",
+    "date": "2026.09.11",
+    "kind": "모델",
+    "title": "Scribe v2 Medical 정식 제공",
+    "summary": "의료·임상 음성에 특화된 배치 음성 인식 모델 Scribe v2 Medical이 정식 제공돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/11",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-09-11-1",
+    "service": "elevenlabs",
+    "date": "2026.09.11",
+    "kind": "모델",
+    "title": "Music v2.5 출시",
+    "summary": "더 풍성하고 자연스러운 악기 소리를 내는 가장 뛰어난 음악 모델 Music v2.5가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/music-v2-5-model",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-09-09-1",
+    "service": "suno",
+    "date": "2026.09.09",
+    "kind": "모델",
+    "title": "Suno v6·v6-wild 모델 출시",
+    "summary": "음악 업계와 협력해 만든 v6 모델군이 나왔어요. v6는 모든 장르에서 안정적이고 정교하며, v6-wild는 더 예측 불가하고 다채로운 결과를 내요.",
+    "url": "https://suno.com/release-notes/introducing-v6",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-09-08-1",
+    "service": "suno",
+    "date": "2026.09.08",
+    "kind": "연동",
+    "title": "Suno, Believe·TuneCore와 유통 파트너십",
+    "summary": "Believe·TuneCore와 제휴해 새 업계 파트너 모델로 만든 곡을 Believe와 TuneCore로 유통할 수 있게 된다고 발표했어요.",
+    "url": "https://suno.com/blog/believe-partnership",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-07-1",
+    "service": "elevenlabs",
+    "date": "2026.09.07",
+    "kind": "API",
+    "title": "워크스페이스 전체 대화 티켓 조회",
+    "summary": "접근 가능한 모든 에이전트의 대화 트리아지 티켓을 한 번에 조회하는 엔드포인트가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/7",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-09-02-1",
+    "service": "suno",
+    "date": "2026.09.02",
+    "kind": "기능",
+    "title": "Suno Studio 채팅 바 BPM 인식",
+    "summary": "Studio 2.0 이후 업데이트로 채팅 바가 빨라지고 BPM을 인식해 템포에 맞춰 처리해요.",
+    "url": "https://suno.com/release-notes/studio-updates-sept26",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-09-02-1",
+    "service": "mureka",
+    "date": "2026.09.02",
+    "kind": "기능",
+    "title": "Mureka 장르별 검색 강화",
+    "summary": "R&B부터 하우스·클래식까지 장르별로 곡·MV·캐릭터·템플릿을 찾는 검색이 강화됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-31-1",
+    "service": "elevenlabs",
+    "date": "2026.08.31",
+    "kind": "API",
+    "title": "음악 파형 시각화 데이터",
+    "summary": "음악 생성·업로드에서 파형 시각화 데이터를 받을 수 있고, 에이전트가 전화 키패드 입력을 처리해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/31",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-08-28-1",
+    "service": "mureka",
+    "date": "2026.08.28",
+    "kind": "모델",
+    "title": "mureka-9.5 강화 버전 API",
+    "summary": "Mureka API에 mureka-9.5 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-08-26-1",
+    "service": "mureka",
+    "date": "2026.08.26",
+    "kind": "요금",
+    "title": "Mureka 전곡 상업적 이용과 무제한 다운로드",
+    "summary": "생성한 모든 곡에 완전한 상업적 권리와 모든 포맷 무제한 다운로드가 주어져요. 스타일 프롬프트를 저장해 다시 쓸 수도 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-25-1",
+    "service": "elevenlabs",
+    "date": "2026.08.25",
+    "kind": "기능",
+    "title": "ElevenMusic Composer, 구간별 곡 편집",
+    "summary": "가사·곡·프롬프트나 빈 페이지에서 시작해 곡을 구간별로 다듬는 편집기 Composer가 ElevenMusic에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/composer-section-by-section-song-editing-in-elevenmusic",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-24-1",
+    "service": "elevenlabs",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "ElevenLabs CLI v1.0 출시",
+    "summary": "모든 ElevenLabs API 기능을 터미널 명령으로 쓰는 CLI v1이 나왔어요. 에이전트 친화적으로 JSON 출력과 드라이런을 지원해요.",
+    "details": [
+      "모든 API 작업을 서브커맨드로 제공",
+      "JSON·표·YAML 출력, 드라이런",
+      "ElevenAgents Procedures 정식 출시",
+      "대화 품질 트리아지 티켓 API"
+    ],
+    "url": "https://elevenlabs.io/blog/elevenlabs-cli-v1",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-22-1",
+    "service": "elevenlabs",
+    "date": "2026.08.22",
+    "kind": "종료",
+    "title": "로컬 MCP 서버 지원 중단, 호스팅 MCP로 전환",
+    "summary": "로컬 ElevenLabs MCP 서버와 MCP 플레이어가 지원 중단되고, OAuth로 로그인하는 호스팅 MCP 서버를 쓰도록 바뀌었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/22",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-08-20-1",
+    "service": "suno",
+    "date": "2026.08.20",
+    "kind": "앱",
+    "title": "Suno 모바일 오프라인 플레이리스트",
+    "summary": "모바일에서 플레이리스트를 저장해 네트워크 없이도 들을 수 있어요.",
+    "url": "https://suno.com/release-notes/offline-playlists-on-mobile",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-08-20-1",
+    "service": "mureka",
+    "date": "2026.08.20",
+    "kind": "기능",
+    "title": "Mureka Explore 개편과 원클릭 템플릿",
+    "summary": "템플릿·캐릭터·곡·MV를 둘러보는 Explore가 새로 바뀌었고, 듣고 골라 한 번에 만드는 Templates 기능이 나왔어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-08-19-1",
+    "service": "suno",
+    "date": "2026.08.19",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 셔플·빠른 추가",
+    "summary": "웹에서 플레이리스트를 셔플로 듣고, 플레이리스트를 라이브러리에 빠르게 추가할 수 있어요.",
+    "url": "https://suno.com/release-notes/playlist-improvements-on-web-and-ios",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2026-08-18-1",
+    "service": "stable-audio",
+    "date": "2026.08.18",
+    "kind": "연동",
+    "title": "Stable Audio 3.0 DAW 플러그인과 웹 편집 베타",
+    "summary": "DAW 안에서 Stable Audio 3.0으로 생성하는 플러그인과, 변형·믹스·멀티트랙·길이 확장을 지원하는 StableAudio.com 고급 생성 화면이 베타로 나왔어요.",
+    "url": "https://stability.ai/news-updates/sharing-a-new-way-to-work-with-stable-audio",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-17-1",
+    "service": "elevenlabs",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "ElevenCreative 이미지·영상·음성 생성 Flows API",
+    "summary": "영상·이미지·음성 생성을 비동기로 만들고 조회하는 Flows API가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/17",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-08-14-1",
+    "service": "mureka",
+    "date": "2026.08.14",
+    "kind": "API",
+    "title": "Mureka 영상 생성 API",
+    "summary": "Mureka API에 영상 생성 API가 새로 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-08-13-1",
+    "service": "suno",
+    "date": "2026.08.13",
+    "kind": "앱",
+    "title": "Suno Studio 2.0, MIDI·이펙트·신스 탑재",
+    "summary": "브라우저 생성형 DAW Suno Studio가 MIDI, 오디오 이펙트, 내장 신스, 채팅 바를 갖춘 2.0으로 전면 개편됐어요.",
+    "details": [
+      "타임라인 MIDI 가져오기·녹음·편집",
+      "채팅 바로 악기·보컬·플러그인·신스 프리셋 생성",
+      "오디오 이펙트와 내장 신스"
+    ],
+    "url": "https://suno.com/release-notes/studio-2",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-08-13-1",
+    "service": "mureka",
+    "date": "2026.08.13",
+    "kind": "모델",
+    "title": "Mureka V9.5 모델 출시",
+    "summary": "멜로디·화성·편곡 흐름이 더 자연스럽고 보컬과 사운드가 풍성해진 V9.5 모델이 나왔어요. 더 다양한 스타일을 소화해요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2026-08-13-1",
+    "service": "minimax-audio",
+    "date": "2026.08.13",
+    "kind": "모델",
+    "title": "MiniMax Music 3.0 오픈 웨이트 공개",
+    "summary": "콘셉트와 가사만으로 작곡·편곡·연주·프로듀싱까지 한 번에 끝내는 Music 3.0을 오픈 웨이트로 공개했어요.",
+    "url": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-13-1",
+    "service": "elevenlabs",
+    "date": "2026.08.13",
+    "kind": "기능",
+    "title": "ElevenMusic Sounds, 무료 AI 샘플·루프",
+    "summary": "보컬 찹·드럼 루프·베이스 루프 등을 담은 무료 AI 사운드·루프 라이브러리 Sounds가 ElevenMusic에 나왔어요.",
+    "url": "https://elevenlabs.io/blog/sounds-on-elevenmusic-a-free-library-of-ai-sounds-and-loops",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-08-10-1",
+    "service": "suno",
+    "date": "2026.08.10",
+    "kind": "정책",
+    "title": "Suno 다운로드 정책·이용약관 변경 예고",
+    "summary": "9월 3일부터 새 이용약관과 다운로드 방식이 적용되고, 음악 업계와 만든 새 모델이 나오면 기존 모델은 모두 은퇴한다고 알렸어요.",
+    "url": "https://suno.com/blog/suno-updates-tos",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-10-1",
+    "service": "elevenlabs",
+    "date": "2026.08.10",
+    "kind": "모델",
+    "title": "Dubbing v2 API 제공",
+    "summary": "화자의 목소리와 연기를 유지하며 90개 이상 언어로 옮기는 Dubbing v2를 API로 쓸 수 있어요. 보이스 검색 필터도 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/10",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-08-07-1",
+    "service": "suno",
+    "date": "2026.08.07",
+    "kind": "앱",
+    "title": "Suno Voices 모바일 출시와 무료 체험",
+    "summary": "한 번 녹음한 내 목소리를 어떤 곡에든 쓰는 Voices가 iOS·Android에 나왔고 무료 플랜에서도 체험할 수 있어요.",
+    "url": "https://suno.com/release-notes/updates-to-voices",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-08-06-1",
+    "service": "elevenlabs",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "ElevenLabs Dubbing API 공개",
+    "summary": "개발자와 기업이 자사 제품과 워크플로에 AI 더빙을 바로 넣을 수 있는 Dubbing API가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/dubbing-api",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-08-03-1",
+    "service": "elevenlabs",
+    "date": "2026.08.03",
+    "kind": "API",
+    "title": "Scribe v2 Realtime 개체 감지",
+    "summary": "Scribe v2 Realtime에 개체 감지 옵션이 생기고, 보이스를 격리된 데이터 레지던시 환경으로 복제할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/3",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-07-31-1",
+    "service": "suno",
+    "date": "2026.07.31",
+    "kind": "기능",
+    "title": "Suno 커버 아트 이미지·영상 편집",
+    "summary": "이미지를 올리고 텍스트로 다듬어 곡·플레이리스트·프로필용 커버 이미지나 영상을 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/cover-art-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-30-1",
+    "service": "elevenlabs",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "오디오북 Character Casting",
+    "summary": "원고 속 등장인물을 찾아 각자에게 맞는 목소리를 제안하고 실제 대사로 미리 들려주는 Character Casting이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-character-casting-in-audiobooks",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-27-1",
+    "service": "elevenlabs",
+    "date": "2026.07.27",
+    "kind": "API",
+    "title": "보이스 억양 목록 엔드포인트",
+    "summary": "공유 보이스 라이브러리의 억양 목록을 조회하는 엔드포인트가 생기고, Studio 프로젝트에 draft 상태가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/27",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-07-23-1",
+    "service": "elevenlabs",
+    "date": "2026.07.23",
+    "kind": "기능",
+    "title": "Music v2 References, 레퍼런스 곡 스타일 매칭",
+    "summary": "기존 곡을 올리면 Music v2가 그 스타일과 느낌에 맞는 새 곡을 만들어 주는 References가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-references-sound-control-for-music-v2",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-22-1",
+    "service": "elevenlabs",
+    "date": "2026.07.22",
+    "kind": "기능",
+    "title": "ElevenMusic Vocals, 일관된 목소리로 작곡",
+    "summary": "내 목소리나 Vocal Library 목소리로 여러 곡에 일관된 보컬을 입히는 Vocals 기능이 나왔어요. Music Finetunes API도 함께 공개됐어요.",
+    "details": [
+      "ElevenMusic Vocals와 Vocal Library",
+      "Music Finetunes API로 맞춤 Finetune 생성"
+    ],
+    "url": "https://elevenlabs.io/blog/introducing-vocals-a-consistent-voice-for-your-elevenmusic-songs",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-07-20-1",
+    "service": "suno",
+    "date": "2026.07.20",
+    "kind": "기능",
+    "title": "Suno 웹 곡 길이 슬라이더",
+    "summary": "웹 Create 양식에서 Duration 슬라이더로 곡 길이를 정할 수 있어요. v5.5 모델에서 지원해요.",
+    "url": "https://suno.com/release-notes/duration-slider-on-web",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-20-1",
+    "service": "elevenlabs",
+    "date": "2026.07.20",
+    "kind": "API",
+    "title": "Music Finetunes API",
+    "summary": "업로드한 오디오로 Music Finetune을 만들고 관리하는 API 다섯 개가 추가됐어요. STT 일회용 토큰 인증도 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/20",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2026-07-16-1",
+    "service": "minimax-audio",
+    "date": "2026.07.16",
+    "kind": "모델",
+    "title": "MiniMax Music-3.0 API 제공",
+    "summary": "새 음악 생성 모델 Music-3.0을 MiniMax API에서 쓸 수 있게 됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-07-15-1",
+    "service": "suno",
+    "date": "2026.07.15",
+    "kind": "연동",
+    "title": "Suno iMessage 키보드 연동",
+    "summary": "iOS 사용자는 iMessage 키보드에서 곡을 만들어 보내고, 받은 사람은 바로 듣고 노래로 답할 수 있어요.",
+    "url": "https://suno.com/release-notes/imessage-keyboard-integration",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-07-15-1",
+    "service": "mureka",
+    "date": "2026.07.15",
+    "kind": "기능",
+    "title": "Mureka 아무 곡으로 뮤직비디오 만들기",
+    "summary": "오디오 파일을 올리거나 YouTube 링크를 붙여 바로 뮤직비디오 제작을 시작할 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-13-1",
+    "service": "elevenlabs",
+    "date": "2026.07.13",
+    "kind": "API",
+    "title": "에이전트별 감정 분석 설정",
+    "summary": "플랫폼 설정에 통화 후 감정 분석 옵션이 추가돼 에이전트마다 따로 켤 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/13",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-07-09-1",
+    "service": "suno",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Suno 웹 가사 편집 개편과 Lyricist",
+    "summary": "가사 편집이 새로 디자인됐고, 내 가사 예시를 Lyricist로 저장해 같은 분위기의 가사를 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/lyrics-improvements-on-web",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-07-09-1",
+    "service": "mureka",
+    "date": "2026.07.09",
+    "kind": "API",
+    "title": "음악 채보 API와 가사 모델 강화",
+    "summary": "음악을 악보로 옮기는 Music Transcription API가 나왔고, 사운드트랙 API에 구간 파라미터가 생겼어요. 가사 생성 모델도 강화됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-07-09-1",
+    "service": "elevenlabs",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "ElevenAgents Spotlight 관찰·개선 레이어",
+    "summary": "모든 채널에서 에이전트 해결률과 만족도를 높이도록 대화를 관찰하고 개선하는 Spotlight가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenagents-spotlight",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-07-08-1",
+    "service": "mureka",
+    "date": "2026.07.08",
+    "kind": "요금",
+    "title": "Mureka 악보 다운로드와 Pro에 Mureka Co 포함",
+    "summary": "곡을 코드가 붙은 악보로 받을 수 있고, Premier 전용이던 데스크톱 DAW 도우미 Mureka Co가 Pro 플랜에도 포함됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-07-07-1",
+    "service": "suno",
+    "date": "2026.07.07",
+    "kind": "기능",
+    "title": "Suno 앱 축구 응원가 만들기",
+    "summary": "모바일 앱에서 팀에 관한 질문 4개에 답하면 그 팀만을 위한 응원가를 만들어 줘요.",
+    "url": "https://suno.com/release-notes/make-a-custom-soccer-anthem",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-06-1",
+    "service": "elevenlabs",
+    "date": "2026.07.06",
+    "kind": "API",
+    "title": "음악 상세 스트리밍",
+    "summary": "작곡 결과를 SSE로 받는 Stream music with details 엔드포인트와 Studio 자막 스타일 옵션이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/6",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-07-02-1",
+    "service": "elevenlabs",
+    "date": "2026.07.02",
+    "kind": "기능",
+    "title": "ElevenMusic Tools, 보컬 녹음·곡 변형",
+    "summary": "보컬을 녹음하거나 아이디어를 넣고 완성곡을 새롭게 바꾸는 음악 제작 도구가 ElevenMusic에 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-tools-on-elevenmusic",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-07-01-1",
+    "service": "mureka",
+    "date": "2026.07.01",
+    "kind": "기능",
+    "title": "Mureka 지식 베이스와 Coworker 미디어 업로드",
+    "summary": "모든 도구의 튜토리얼을 모은 Get Started 지식 베이스가 생겼고, Mureka Coworker에 오디오·영상·이미지를 올려 리믹스·스템 분리 등에 쓸 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-07-01-1",
+    "service": "elevenlabs",
+    "date": "2026.07.01",
+    "kind": "정책",
+    "title": "ElevenLabs 싱가포르 데이터 레지던시",
+    "summary": "엔터프라이즈용 음성 AI를 싱가포르에서 호스팅해 현지 데이터 요건을 맞출 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-singapore-data-residency",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-30-1",
+    "service": "elevenlabs",
+    "date": "2026.06.30",
+    "kind": "기능",
+    "title": "ElevenAgents Procedures",
+    "summary": "자연어나 기존 SOP 문서로 에이전트가 흔한 상황에서 어떻게 일할지 정의하는 Procedures가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/procedures",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-29-1",
+    "service": "elevenlabs",
+    "date": "2026.06.29",
+    "kind": "API",
+    "title": "STT 멀티채널 통합 출력",
+    "summary": "멀티채널 전사 결과를 하나로 합쳐 받는 옵션이 생기고, 에이전트 브랜치 병합·리베이스 미리보기가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/29",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-06-25-1",
+    "service": "mureka",
+    "date": "2026.06.25",
+    "kind": "API",
+    "title": "스템 API 보컬·반주 분리와 리릭 비디오 화면비",
+    "summary": "스템 API가 보컬+반주 분리 모델을 지원하고, 리릭 비디오 API는 여러 화면비와 레이아웃을, 가사→곡 API는 성별 파라미터를 지원해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-06-24-1",
+    "service": "mureka",
+    "date": "2026.06.24",
+    "kind": "모델",
+    "title": "Mureka Character 업그레이드와 새 보이스 모델",
+    "summary": "Voice Clone이 목소리와 아바타를 고정하는 Character로 업그레이드됐고, 음악성과 가창 재현이 좋아진 새 보이스 모델이 나왔어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-22-2",
+    "service": "elevenlabs",
+    "date": "2026.06.22",
+    "kind": "API",
+    "title": "음악 고음질 MP3 출력",
+    "summary": "음악 생성에 mp3 48kHz 240·320kbps 포맷이 추가되고, Studio 자막 애니메이션과 더빙 목록 필터가 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/22",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-06-22-1",
+    "service": "elevenlabs",
+    "date": "2026.06.22",
+    "kind": "기능",
+    "title": "ElevenCreative Ads Engine",
+    "summary": "광고 계정과 연결해 광고 소재를 50개 이상 언어로 현지화하고 완성본을 다시 플랫폼에 올려 주는 Ads Engine이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-ads-engine-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-18-1",
+    "service": "elevenlabs",
+    "date": "2026.06.18",
+    "kind": "기능",
+    "title": "ElevenMusic Mixes, 주간 맞춤 생성곡",
+    "summary": "청취 기록을 바탕으로 매주 일요일 개인 맞춤 생성곡 33곡을 만들어 주는 Mixes가 ElevenMusic에 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-mixes-on-elevenmusic",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-06-17-1",
+    "service": "mureka",
+    "date": "2026.06.17",
+    "kind": "기능",
+    "title": "Mureka MV 다중 캐릭터와 Style Enhance",
+    "summary": "뮤직비디오에 여러 캐릭터를 넣을 수 있고 생성 품질이 좋아졌어요. 마법봉 버튼으로 스타일 프롬프트를 다듬는 Style Enhance도 생겼어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-06-15-1",
+    "service": "mureka",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "프롬프트로 곡 생성 API",
+    "summary": "프롬프트만으로 곡을 만드는 API가 추가됐고, 파일 업로드 API의 vocal 파라미터는 제거됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-06-15-1",
+    "service": "elevenlabs",
+    "date": "2026.06.15",
+    "kind": "모델",
+    "title": "Music v2 API 제공",
+    "summary": "음악 생성 API에서 model_id를 music_v2로 지정해 Music v2를 쓸 수 있어요. STT 화자 라이브러리 분리도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/15",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-06-11-1",
+    "service": "suno",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "Suno 스템 분리 개선, 100여 악기 Advanced Split",
+    "summary": "Premier용 Advanced Split으로 100가지 가까운 악기 중 원하는 것만 뽑을 수 있고, 추출 스템이 더 깨끗해졌어요.",
+    "url": "https://suno.com/release-notes/advanced-stems",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-11-1",
+    "service": "elevenlabs",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "ElevenCreative Avatars, 사진으로 말하는 영상",
+    "summary": "사진 한 장과 목소리로 립싱크된 토킹 영상을 몇 초 만에 만드는 Avatars가 ElevenCreative에 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-avatars",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-08-1",
+    "service": "elevenlabs",
+    "date": "2026.06.08",
+    "kind": "종료",
+    "title": "v1 TTS·Scribe v1 모델 7월 9일 제거 예정",
+    "summary": "eleven_monolingual_v1·eleven_multilingual_v1과 scribe_v1이 2026년 7월 9일 제거될 예정이라 새 모델로 옮겨야 해요.",
+    "details": [
+      "v1 TTS → eleven_multilingual_v2 등으로 이전",
+      "scribe_v1 → scribe_v2·scribe_v2_realtime",
+      "에이전트 turn_v3 턴 감지 모델 선택",
+      "Text to Dialogue 무보존 모드"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/8",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-06-05-1",
+    "service": "mureka",
+    "date": "2026.06.05",
+    "kind": "기능",
+    "title": "Mureka AI 가수 Character와 Mureka Co Windows",
+    "summary": "곡마다 쓸 맞춤 목소리와 정체성을 가진 AI 가수 Character를 만들 수 있고, DAW를 제어하는 Mureka Co가 Windows에서도 돼요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-06-04-1",
+    "service": "suno",
+    "date": "2026.06.04",
+    "kind": "연동",
+    "title": "iOS 메모·음성 메모에서 Suno로 공유",
+    "summary": "iOS 메모의 가사와 음성 메모 녹음을 Suno로 공유하면 Create 양식에 자동으로 들어가요.",
+    "url": "https://suno.com/release-notes/share-from-ios-notes-and-voice-memos",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-04-1",
+    "service": "elevenlabs",
+    "date": "2026.06.04",
+    "kind": "기능",
+    "title": "Flows Agent, 자연어로 워크플로 생성",
+    "summary": "텍스트 프롬프트만으로 오디오·영상 Flows 파이프라인을 만들어 주고 다듬을 수 있는 Flows Agent가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-flows-agent",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-01-1",
+    "service": "elevenlabs",
+    "date": "2026.06.01",
+    "kind": "연동",
+    "title": "Exotel 전화 연동과 STT 5GB 업로드",
+    "summary": "Exotel이 정식 전화 공급자로 추가됐고, Speech to Text 업로드 한도가 3GB에서 5GB로 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/1",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-05-28-1",
+    "service": "elevenlabs",
+    "date": "2026.05.28",
+    "kind": "모델",
+    "title": "Dubbing v2, 원래 연기 감정까지 옮기는 더빙",
+    "summary": "원래 화자의 감정과 연기를 모든 언어로 옮겨 주는 새 더빙 모델 Dubbing v2를 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-dubbing-v2",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-27-1",
+    "service": "elevenlabs",
+    "date": "2026.05.27",
+    "kind": "연동",
+    "title": "Stan Lee 목소리·이미지 ElevenLabs 합류",
+    "summary": "Stan Lee Universe와 제휴해 Stan Lee의 목소리가 Iconic Marketplace와 ElevenReader에 들어오고, 그에게서 영감받은 음악 Finetune 두 개도 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-stan-lee-on-elevenlabs",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-26-1",
+    "service": "elevenlabs",
+    "date": "2026.05.26",
+    "kind": "모델",
+    "title": "Music v2 출시, 보컬·편곡 향상",
+    "summary": "모든 장르에서 보컬·악기·편곡이 좋아지고 다국어 지원이 강화된 음악 모델 Music v2가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-music-v2",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-25-1",
+    "service": "elevenlabs",
+    "date": "2026.05.25",
+    "kind": "기능",
+    "title": "Speech Engine 출시와 음악 생성 모드",
+    "summary": "자체 챗 에이전트나 LLM에 실시간 음성을 붙여 주는 Speech Engine이 나왔어요. 음악 생성에 track·loop·ambience 모드가 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/25",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-05-22-1",
+    "service": "mureka",
+    "date": "2026.05.22",
+    "kind": "API",
+    "title": "리릭 비디오·리믹스 생성 API",
+    "summary": "리릭 비디오 생성과 리믹스 생성 API 두 개가 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-05-21-1",
+    "service": "elevenlabs",
+    "date": "2026.05.21",
+    "kind": "요금",
+    "title": "ElevenReader 프리미엄 오디오북 20만 권",
+    "summary": "ElevenReader에 20만 권 이상의 프리미엄 오디오북·전자책이 추가됐고, Ultra 구독자는 월 11달러에 매달 20시간 이용할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/elevenreader-launches-premium-audiobooks",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2026-05-20-1",
+    "service": "stable-audio",
+    "date": "2026.05.20",
+    "kind": "모델",
+    "title": "오픈 웨이트 Stable Audio 3.0 모델군",
+    "summary": "완전 라이선스 데이터로 학습한 Stable Audio 3.0 모델군이 나왔어요. 최대 6분 가변 길이 생성을 지원하고 Small·Medium은 Hugging Face에 공개됐어요.",
+    "details": [
+      "Small·Medium 오픈 웨이트 공개",
+      "Large는 API·셀프호스팅 제공",
+      "최대 6분 가변 길이 생성",
+      "Community License로 상업적 이용"
+    ],
+    "url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-05-20-1",
+    "service": "mureka",
+    "date": "2026.05.20",
+    "kind": "기능",
+    "title": "Mureka 리릭 비디오 개선과 Studio 악기 모델",
+    "summary": "리릭 비디오가 더 많은 템플릿과 화면비를 지원하고, Studio 단일 악기 생성 모델이 업그레이드돼 악기 제어와 음질이 좋아졌어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-18-1",
+    "service": "elevenlabs",
+    "date": "2026.05.18",
+    "kind": "API",
+    "title": "에이전트 버전 메타데이터 조회",
+    "summary": "특정 에이전트 버전의 메타데이터를 조회하는 엔드포인트가 추가되고, 오디오 분리 기록에 영상 처리 실패 정보가 담겨요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/18",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-05-14-1",
+    "service": "suno",
+    "date": "2026.05.14",
+    "kind": "앱",
+    "title": "Suno 모바일 앱 대규모 개선",
+    "summary": "모바일 앱의 홈·탐색, 생성, 개인 설정 경험이 한꺼번에 개선됐어요.",
+    "url": "https://suno.com/release-notes/mobile-app-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-05-13-1",
+    "service": "suno",
+    "date": "2026.05.13",
+    "kind": "연동",
+    "title": "Suno, Apple CarPlay·Android Auto 지원",
+    "summary": "차량 대시보드에서 Apple CarPlay와 Android Auto로 Suno 곡을 스트리밍할 수 있어요.",
+    "url": "https://suno.com/release-notes/android-auto-and-carplay-integration",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-13-2",
+    "service": "elevenlabs",
+    "date": "2026.05.13",
+    "kind": "API",
+    "title": "Voice Design 미리듣기 API 이전과 Voice Changer WAV",
+    "summary": "text-to-voice create-previews가 지원 중단되고 Design a voice로 옮겨졌어요. Voice Changer는 WAV 출력 포맷을 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/13",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-05-13-1",
+    "service": "elevenlabs",
+    "date": "2026.05.13",
+    "kind": "기능",
+    "title": "ElevenCreative 템플릿, 완성 에셋 바로 생성",
+    "summary": "이미지·영상·음성·음악·효과음용 완성형 크리에이티브 워크플로 템플릿이 나왔어요. 입력만 올리면 결과물이 나와요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevencreative-templates",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-05-11-1",
+    "service": "mureka",
+    "date": "2026.05.11",
+    "kind": "API",
+    "title": "이미지·영상 사운드트랙 생성 API",
+    "summary": "이미지나 영상에 맞는 사운드트랙을 만드는 API가 새로 나왔어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-05-07-1",
+    "service": "elevenlabs",
+    "date": "2026.05.07",
+    "kind": "요금",
+    "title": "ElevenAPI·ElevenAgents 요금 인하와 종량제",
+    "summary": "ElevenAPI와 ElevenAgents 요금을 내리고 쓴 만큼 내는 Pay as you go 플랜을 도입했어요. 같은 날 Studio 타임라인용 AI 공동 편집자 Studio Agent도 나왔어요.",
+    "details": [
+      "ElevenAPI·ElevenAgents 가격 인하",
+      "Pay as you go 플랜",
+      "ElevenCreative Studio Agent: 채팅으로 영상 초안 편집"
+    ],
+    "url": "https://elevenlabs.io/blog/weve-lowered-api-agents-pricing-and-introduced-pay-as-you-go",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-06-1",
+    "service": "elevenlabs",
+    "date": "2026.05.06",
+    "kind": "기능",
+    "title": "ElevenAgents 새 모달리티, 이미지·파일 처리",
+    "summary": "에이전트가 이미지·파일·음성 메모·연락처·위치·키패드 입력까지 처리해 더 많은 문제를 끝까지 해결할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-new-modalities",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-04-1",
+    "service": "elevenlabs",
+    "date": "2026.05.04",
+    "kind": "API",
+    "title": "에이전트 대화 태그",
+    "summary": "대화를 정리하고 필터링하는 태그 기능이 에이전트에 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/4",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-04-30-1",
+    "service": "mureka",
+    "date": "2026.04.30",
+    "kind": "기능",
+    "title": "Mureka AI 뮤직비디오 생성",
+    "summary": "립싱크까지 맞춘 역동적인 AI 뮤직비디오를 만들 수 있고, 오디오 업로드를 한곳에서 관리해 Remix·Reference에 쓸 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-04-29-1",
+    "service": "elevenlabs",
+    "date": "2026.04.29",
+    "kind": "앱",
+    "title": "음악 탐색·제작 플랫폼 ElevenMusic 출시",
+    "summary": "완전 라이선스된 ElevenLabs 음악 모델 위에 만든 음악 탐색·제작 플랫폼 ElevenMusic이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenmusic",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-04-27-2",
+    "service": "elevenlabs",
+    "date": "2026.04.27",
+    "kind": "API",
+    "title": "실시간 Scribe 키워드·verbatim 옵션",
+    "summary": "Scribe 실시간 웹소켓에 키워드와 verbatim 옵션이 추가되고, 오디오 분리 기록 조회 엔드포인트가 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/27",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-04-27-1",
+    "service": "elevenlabs",
+    "date": "2026.04.27",
+    "kind": "기능",
+    "title": "ElevenAgents 에이전트 템플릿",
+    "summary": "자주 쓰는 사례를 담은 수십 개 사전 제작 에이전트 템플릿을 바로 고쳐 배포할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-agent-templates",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-04-20-1",
+    "service": "elevenlabs",
+    "date": "2026.04.20",
+    "kind": "API",
+    "title": "STT 화자 역할 감지",
+    "summary": "Speech to Text에 화자 역할을 감지하는 옵션이 생기고, 워크플로 시작 노드를 지정해 대화를 시작할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/20",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-04-15-1",
+    "service": "mureka",
+    "date": "2026.04.15",
+    "kind": "연동",
+    "title": "Mureka, Telegram·Line·Discord 연결",
+    "summary": "Telegram, Line, Discord에 연결해 친구들이 있는 곳에서 바로 음악을 만들고 공유할 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-04-13-1",
+    "service": "elevenlabs",
+    "date": "2026.04.13",
+    "kind": "API",
+    "title": "에이전트 대화 주제 탐색",
+    "summary": "에이전트 대화의 최신 주제를 돌려주는 엔드포인트와 커뮤니티 외 보이스 필터가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/13",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2026-04-10-1",
+    "service": "minimax-audio",
+    "date": "2026.04.10",
+    "kind": "모델",
+    "title": "MiniMax Music 2.6 출시",
+    "summary": "이전에는 할 수 없던 창작을 가능하게 한 음악 모델 Music 2.6이 나왔어요.",
+    "url": "https://www.minimax.io/news/music-26",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-04-09-2",
+    "service": "mureka",
+    "date": "2026.04.09",
+    "kind": "모델",
+    "title": "mureka-9 강화 버전 API",
+    "summary": "Mureka API에 mureka-9 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-04-09-1",
+    "service": "mureka",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "Mureka 댓글 좋아요와 추천 크리에이터",
+    "summary": "댓글에 좋아요를 누르고 알림을 받을 수 있고, 홈에서 추천 크리에이터를 볼 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-04-08-1",
+    "service": "mureka",
+    "date": "2026.04.08",
+    "kind": "API",
+    "title": "레퍼런스 오디오로 보완 트랙 생성 API",
+    "summary": "레퍼런스 오디오에 어울리는 보컬·반주·악기 단일 트랙을 만드는 API가 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-04-07-1",
+    "service": "elevenlabs",
+    "date": "2026.04.07",
+    "kind": "API",
+    "title": "STT 오디오 길이와 보이스 녹음 품질 정보",
+    "summary": "STT 응답에 오디오 길이가 포함되고, 보이스 조회에 녹음 품질과 검수 상태가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/7",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-04-02-1",
+    "service": "elevenlabs",
+    "date": "2026.04.02",
+    "kind": "모델",
+    "title": "Scribe v2 업그레이드, 개체 비식별화와 No Verbatim",
+    "summary": "Scribe v2에 개체 자동 가림, 인도어-영어 혼용 전사 개선, No Verbatim 모드가 추가되고 키워드 프롬프트가 1,000개로 늘었어요.",
+    "url": "https://elevenlabs.io/blog/scribe-v2-just-got-an-upgrade",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-04-01-1",
+    "service": "elevenlabs",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "Video to Music 엔드포인트",
+    "summary": "영상 파일에서 배경음악을 만드는 video-to-music 엔드포인트와 URL로 바로 전사하는 STT 옵션이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/1",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-03-27-1",
+    "service": "mureka",
+    "date": "2026.03.27",
+    "kind": "모델",
+    "title": "Mureka V9 모델 출시",
+    "summary": "문단 안 제어가 정밀해지고 믹스·보컬 표현과 생성 속도가 좋아진 V9 모델이 나왔어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-27-1",
+    "service": "elevenlabs",
+    "date": "2026.03.27",
+    "kind": "API",
+    "title": "ElevenAgents React SDK v1.0",
+    "summary": "웹과 React Native용 ElevenAgents React SDK의 첫 메이저 버전 1.0이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/elevenagents-react-sdk-v1-0",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-03-26-1",
+    "service": "suno",
+    "date": "2026.03.26",
+    "kind": "모델",
+    "title": "Suno v5.5, Voices·Custom Models·My Taste",
+    "summary": "편곡과 보컬이 좋아진 v5.5와 함께 내 목소리를 쓰는 Voices, 내 곡 6개 이상으로 학습하는 Custom Models, 취향 반영 My Taste가 나왔어요.",
+    "details": [
+      "v5.5 모델",
+      "Voices: 내 목소리로 노래",
+      "Custom Models: 내 카탈로그로 맞춤 학습",
+      "My Taste 개인화"
+    ],
+    "url": "https://suno.com/release-notes/introducing-v5-5-voices-custom-models-and-my-taste",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-25-1",
+    "service": "elevenlabs",
+    "date": "2026.03.25",
+    "kind": "요금",
+    "title": "워크스페이스 Basic·Full 시트 도입",
+    "summary": "워크스페이스에 모든 제품을 쓰는 Full 시트와 ElevenCreative 사용이 제한된 Basic 시트가 생겼어요. 모든 유료 플랜에 Basic 시트 20개가 포함돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/25",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-03-24-1",
+    "service": "elevenlabs",
+    "date": "2026.03.24",
+    "kind": "기능",
+    "title": "ElevenAgents Guardrails",
+    "summary": "음성 에이전트가 브랜드·주제·규정을 벗어나지 않도록 하는 설정형 안전·행동 제어 Guardrails가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/guardrails",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-23-1",
+    "service": "elevenlabs",
+    "date": "2026.03.23",
+    "kind": "API",
+    "title": "Music Marketplace 문서와 에이전트 환경 변수",
+    "summary": "AI 생성 음악 라이선스 마켓플레이스 Music Marketplace 문서와 워크스페이스 환경 변수 API가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/23",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-03-19-1",
+    "service": "elevenlabs",
+    "date": "2026.03.19",
+    "kind": "요금",
+    "title": "ElevenCreative Music Marketplace",
+    "summary": "ElevenCreative에서 만든 곡을 Music Marketplace에 올리고 다른 사람이 쓸 때 수익을 받을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-the-music-marketplace-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-03-17-1",
+    "service": "mureka",
+    "date": "2026.03.17",
+    "kind": "기능",
+    "title": "Mureka Remix와 멀티트랙 Studio",
+    "summary": "보컬·멜로디를 유지한 채 장르나 가사를 바꾸는 Remix와, 멀티트랙 타임라인·스템 생성/추출·구간 재생성을 갖춘 Studio가 나왔어요.",
+    "details": [
+      "원클릭 장르 전환, 가사 다시 쓰기",
+      "멀티트랙 타임라인 편집",
+      "스템 생성·오디오/MIDI 추출",
+      "구간 재생성, 앞뒤 확장, 테이크 레인"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-16-1",
+    "service": "elevenlabs",
+    "date": "2026.03.16",
+    "kind": "API",
+    "title": "음악 구간 길이 제어",
+    "summary": "상세 음악 생성에서 구간 길이를 정확히 지키는 respect_sections_durations 옵션이 생기고, 에이전트 Users 페이지가 정식 공개됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/16",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-03-12-1",
+    "service": "elevenlabs",
+    "date": "2026.03.12",
+    "kind": "기능",
+    "title": "ElevenCreative Music Finetunes",
+    "summary": "자신의 음악으로 Finetune을 만들어 고유한 스타일이나 브랜드에 맞는 음악을 생성할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-music-finetunes-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-11-1",
+    "service": "elevenlabs",
+    "date": "2026.03.11",
+    "kind": "기능",
+    "title": "ElevenCreative Flows, 노드 기반 생성 캔버스",
+    "summary": "이미지·영상·음성·음악·효과음 모델을 노드로 연결해 탐색하고 생성하는 캔버스 Flows가 ElevenCreative에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-flows-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-03-09-1",
+    "service": "elevenlabs",
+    "date": "2026.03.09",
+    "kind": "API",
+    "title": "STT No Verbatim 모드와 모바일 SAML SSO",
+    "summary": "말 더듬 등을 정리해 전사하는 no_verbatim 옵션과 iOS·Android 앱 SAML SSO가 추가됐어요. 에이전트는 Claude Sonnet 4.6을 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/9",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2026-03-04-1",
+    "service": "minimax-audio",
+    "date": "2026.03.04",
+    "kind": "기능",
+    "title": "MiniMax Music 2.5+, 연주곡 생성 지원",
+    "summary": "Music 2.5가 보컬 없는 연주곡 생성을 지원하며 Music 2.5+로 스타일 경계를 넓혔어요.",
+    "url": "https://www.minimax.io/news/music-25-unlock-instrumental-music",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-03-02-1",
+    "service": "mureka",
+    "date": "2026.03.02",
+    "kind": "모델",
+    "title": "mureka-8 강화 버전 API",
+    "summary": "Mureka API에 mureka-8 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-03-02-1",
+    "service": "elevenlabs",
+    "date": "2026.03.02",
+    "kind": "API",
+    "title": "음악 업로드 엔드포인트와 보이스 북마크",
+    "summary": "오디오 파일을 올리는 음악 업로드 엔드포인트, 발음 사전 규칙 일괄 설정, 보이스 북마크가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/2",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-23-1",
+    "service": "elevenlabs",
+    "date": "2026.02.23",
+    "kind": "기능",
+    "title": "음악 워크스페이스 공유와 MCP OAuth",
+    "summary": "만든 곡을 워크스페이스 안에서 공유할 수 있고, 에이전트용 MCP 서버가 OAuth 인증을 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/2/23",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-20-1",
+    "service": "elevenlabs",
+    "date": "2026.02.20",
+    "kind": "API",
+    "title": "TTS API 전 세계 최대 40% 빨라짐",
+    "summary": "Text to Speech API에 다지역 서빙이 적용돼 가까운 서버가 응답하면서 전 세계에서 최대 40% 빨라졌어요.",
+    "url": "https://elevenlabs.io/blog/text-to-speech-api-up-to-40-faster-globally",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-19-1",
+    "service": "elevenlabs",
+    "date": "2026.02.19",
+    "kind": "기능",
+    "title": "ElevenAgents Experiments, 실트래픽 A/B 테스트",
+    "summary": "실제 트래픽과 측정 지표로 에이전트 설정을 안전하게 실험하는 Experiments 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-experiments-in-elevenagents",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-02-17-1",
+    "service": "elevenlabs",
+    "date": "2026.02.17",
+    "kind": "기능",
+    "title": "고객 지원용 ElevenAgents for Support",
+    "summary": "기존 지원 문서를 에이전트 행동으로 바꿔 계속 개선되는 고객 지원 에이전트를 만드는 전용 상품이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenagents-for-support",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-02-16-1",
+    "service": "suno",
+    "date": "2026.02.16",
+    "kind": "앱",
+    "title": "Suno Studio 1.2 업데이트 적용",
+    "summary": "Studio 1.2 업데이트로 Remove FX, Warp Markers, 박자표, Alternates 같은 프로급 기능을 쓸 수 있어요.",
+    "url": "https://suno.com/release-notes/studio-just-leveled-up",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-02-16-1",
+    "service": "elevenlabs",
+    "date": "2026.02.16",
+    "kind": "API",
+    "title": "발음 사전 규칙 조회와 대화 사용자 목록",
+    "summary": "발음 사전 조회에 전체 규칙이 포함되고, 대화한 사용자 목록 엔드포인트와 지식 베이스 폴더 삭제가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/2/16",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-10-1",
+    "service": "elevenlabs",
+    "date": "2026.02.10",
+    "kind": "기능",
+    "title": "에이전트 어조 조절 Expressive Mode",
+    "summary": "에이전트가 상황에 맞게 어조를 바꿔 진정시키거나 안심시키도록 하는 Expressive Mode가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-expressive-mode",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-02-09-2",
+    "service": "elevenlabs",
+    "date": "2026.02.09",
+    "kind": "기능",
+    "title": "ElevenAgents·ElevenCreative·ElevenAPI 브랜드 개편",
+    "summary": "ElevenLabs가 ElevenAgents, ElevenCreative, ElevenAPI 제품군으로 재편됐어요. 글로벌 서버 라우팅이 기본이 됐어요.",
+    "details": [
+      "ElevenAgents(구 Agents Platform)",
+      "ElevenCreative(구 Creative Platform)",
+      "ElevenAPI(개발자 플랫폼)",
+      "글로벌 라우팅 기본 적용, preview URL 폐지",
+      "TTS Normalizer v3.1"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/2/9",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-09-1",
+    "service": "elevenlabs",
+    "date": "2026.02.09",
+    "kind": "기능",
+    "title": "ElevenCreative Audiobooks 출시",
+    "summary": "초안부터 출판까지 오디오북 제작을 한곳에서 하는 Audiobooks 도구가 ElevenCreative에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-audiobooks-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-02-06-1",
+    "service": "suno",
+    "date": "2026.02.06",
+    "kind": "앱",
+    "title": "Suno Studio 1.2 공개",
+    "summary": "Warp Markers, Remove FX, Alternates, 박자표 지원으로 Studio에서 더 세밀하게 곡을 다룰 수 있어요.",
+    "url": "https://suno.com/blog/studio1_2",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-02-06-1",
+    "service": "elevenlabs",
+    "date": "2026.02.06",
+    "kind": "API",
+    "title": "AI 코딩 에이전트용 ElevenLabs Agent Skills",
+    "summary": "API 키 설정, 에이전트, STT, TTS, 음악, 효과음 6가지 스킬로 AI 코딩 도구가 ElevenLabs 기능을 쉽게 쓰도록 했어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agent-skills",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2026-02-05-1",
+    "service": "mureka",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "반주 생성 API에 mureka-7.6",
+    "summary": "반주(Instrumental) 생성 API의 model 필드에 mureka-7.6이 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-02-02-1",
+    "service": "elevenlabs",
+    "date": "2026.02.02",
+    "kind": "모델",
+    "title": "Eleven v3 정식 출시",
+    "summary": "Eleven v3가 알파를 벗어나 정식 출시됐어요. 더 안정적이고 정확하며 지연도 줄었어요.",
+    "details": [
+      "Text-to-Dialogue WAV 출력 포맷 지원",
+      "에이전트 브랜치 이름 변경"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-v3-is-now-generally-available",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-01-27-1",
+    "service": "suno",
+    "date": "2026.01.27",
+    "kind": "기능",
+    "title": "Suno Sounds, 원샷 샘플·루프 생성",
+    "summary": "효과음 원샷이나 기타 리프·베이스라인 같은 루프를 프롬프트로 만드는 Create 모드 Sounds가 나왔어요.",
+    "url": "https://suno.com/release-notes/make-loops-and-samples-from-scratch-with-sounds",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-01-27-1",
+    "service": "mureka",
+    "date": "2026.01.27",
+    "kind": "모델",
+    "title": "Mureka V8 출시, MusiCoT 적용",
+    "summary": "멜로디 전개와 편곡이 살아 있는 발매 수준 곡을 만드는 V8이 나왔어요. 리드 보컬이 자연스러워지고 음악 사고 체인 MusiCoT으로 곡 구성이 탄탄해졌어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-01-26-1",
+    "service": "elevenlabs",
+    "date": "2026.01.26",
+    "kind": "기능",
+    "title": "에이전트 브랜치·배포 버전 관리",
+    "summary": "에이전트에 브랜치와 배포를 갖춘 버전 관리 시스템이 들어왔고, 곡 메타데이터에 BPM·박자가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/26",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2026-01-23-1",
+    "service": "minimax-audio",
+    "date": "2026.01.23",
+    "kind": "모델",
+    "title": "MiniMax Speech 2.8, 사운드 태그 지원",
+    "summary": "자연스러운 사운드 태그, 고품질 보이스 클로닝, 스튜디오급 음질을 갖춘 Speech 2.8이 나왔어요.",
+    "url": "https://www.minimax.io/news/minimax-speech-28",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-01-20-1",
+    "service": "suno",
+    "date": "2026.01.20",
+    "kind": "기능",
+    "title": "Suno Mashup과 Sample 기능",
+    "summary": "두 곡을 섞어 새 곡을 만드는 Mashup과 샘플을 활용하는 Sample이 Create에 추가됐어요.",
+    "url": "https://suno.com/release-notes/meet-our-new-create-features-sample-mashup",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-01-19-1",
+    "service": "elevenlabs",
+    "date": "2026.01.19",
+    "kind": "API",
+    "title": "오디오 출력 포맷 확장",
+    "summary": "오디오 생성 엔드포인트가 WAV 계열 등 더 많은 출력 포맷을 지원하고, 더빙 상태값이 세분화됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/19",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2026-01-16-1",
+    "service": "minimax-audio",
+    "date": "2026.01.16",
+    "kind": "모델",
+    "title": "MiniMax Music 2.5 출시",
+    "summary": "세부까지 지시하고 사실적인 소리를 내는 음악 모델 Music 2.5가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-01-12-1",
+    "service": "elevenlabs",
+    "date": "2026.01.12",
+    "kind": "모델",
+    "title": "Scribe v2 출시와 STT 개체 감지",
+    "summary": "최신 전사 모델 Scribe v2가 나왔고, Speech-to-Text에 개체 감지 옵션과 더빙 전사 포맷 엔드포인트가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/12",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-01-09-1",
+    "service": "elevenlabs",
+    "date": "2026.01.09",
+    "kind": "모델",
+    "title": "배치 전사 모델 Scribe v2 출시",
+    "summary": "대용량 배치 전사에 맞춘 최신 음성 인식 모델 Scribe v2가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-scribe-v2",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-01-06-1",
+    "service": "mureka",
+    "date": "2026.01.06",
+    "kind": "기능",
+    "title": "Mureka 홈 개편과 플레이리스트",
+    "summary": "홈이 새롭게 바뀌고 감상 경험이 좋아졌어요. 직접 플레이리스트를 만들어 관리할 수 있고 MV 보기도 개선됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-01-05-1",
+    "service": "mureka",
+    "date": "2026.01.05",
+    "kind": "모델",
+    "title": "보컬 생성 강화, 10개 언어 지원",
+    "summary": "보컬 생성 음악이 강화돼 vocal_id와 prompt를 동시에 제어할 수 있고 한국어 등 10개 언어를 지원해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-01-05-1",
+    "service": "elevenlabs",
+    "date": "2026.01.05",
+    "kind": "API",
+    "title": "Twilio·SIP 웹훅 대화 ID와 보이스 컬렉션 ID",
+    "summary": "Twilio·SIP 웹훅에 conversation_id가 포함되고, 보이스에 소속 컬렉션 ID 필드가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/5",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-12-22-1",
+    "service": "elevenlabs",
+    "date": "2025.12.22",
+    "kind": "기능",
+    "title": "Eleven Music 인페인팅·스템 분리 등 새 도구",
+    "summary": "Eleven Music에 Explore, 인페인팅 API, 스템 분리, 개선된 가사 생성, 곡 타임스탬프가 추가돼 음악을 탐색·편집·제작하기 쉬워졌어요.",
+    "details": [
+      "Explore 화면",
+      "Music Inpainting API",
+      "스템 분리",
+      "가사 생성 개선",
+      "곡 타임스탬프"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-music-new-tools-for-exploring-editing-and-producing-music-with-ai",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-12-18-1",
+    "service": "mureka",
+    "date": "2025.12.18",
+    "kind": "요금",
+    "title": "Mureka 크레딧을 Gold로 변경, 무료 일일 지급",
+    "summary": "크레딧이 Gold로 바뀌고(1크레딧=10Gold) 곡 하나에 10Gold가 들어요. 무료 사용자는 매일 40Gold를 받고 V7.5-all 모델을 쓸 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-12-18-1",
+    "service": "elevenlabs",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "ElevenLabs Agents 버전 관리",
+    "summary": "에이전트 설정 변경 이력을 모두 남기고 새 버전을 단계적으로 배포할 수 있는 버전 관리가 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-versioning",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-12-17-1",
+    "service": "elevenlabs",
+    "date": "2025.12.17",
+    "kind": "연동",
+    "title": "ElevenLabs Agents WhatsApp 지원",
+    "summary": "ElevenLabs 대화형 에이전트를 WhatsApp에서도 운영할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agents-whatsapp-support",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-12-16-1",
+    "service": "elevenlabs",
+    "date": "2025.12.16",
+    "kind": "연동",
+    "title": "Lovable에 ElevenLabs 통합",
+    "summary": "Lovable에서 ElevenLabs의 TTS·STT·Agents·Music·SFX를 써서 실시간 오디오 앱을 쉽게 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-the-elevenlabs-lovable-integration",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-12-15-1",
+    "service": "elevenlabs",
+    "date": "2025.12.15",
+    "kind": "API",
+    "title": "TTS 품질 프리셋 크레딧 표시",
+    "summary": "TTS 품질 프리셋 설명에 high(+20%)·ultra(+50%) 등 크레딧 비용이 표시되고, 엔터프라이즈는 에이전트 대화를 실시간 모니터링할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/12/15",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-12-09-1",
+    "service": "mureka",
+    "date": "2025.12.09",
+    "kind": "모델",
+    "title": "mureka-7.6·mureka-o2 API와 WAV 출력",
+    "summary": "생성 품질을 높인 mureka-7.6과 mureka-o2 모델이 API에 나왔고, 곡·반주 생성 결과에 wav_url이 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-12-08-1",
+    "service": "elevenlabs",
+    "date": "2025.12.08",
+    "kind": "API",
+    "title": "음악 생성 단어 타임스탬프",
+    "summary": "음악 생성에 단어 단위 타임스탬프가 생기고, 보이스 엔드포인트에 안정성·유사도·스타일 설정이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/12/8",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-11-28-1",
+    "service": "mureka",
+    "date": "2025.11.28",
+    "kind": "모델",
+    "title": "Mureka v7.6·O2 엔진 업그레이드",
+    "summary": "속도와 안정성의 v7.6, 더 풍부한 편곡과 프로급 사운드의 플래그십 O2 두 엔진으로 업그레이드됐어요. 구독 플랜 이름도 바뀌었어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-27-1",
+    "service": "elevenlabs",
+    "date": "2025.11.27",
+    "kind": "API",
+    "title": "더빙 화자 관리와 음악 프롬프트 개선",
+    "summary": "더빙 리소스에 새 화자를 만들고 구간을 옮길 수 있으며, 음악 프롬프트에 musical directions가 추가됐어요. 에이전트는 Gemini 3 Pro를 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/27",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-11-25-1",
+    "service": "suno",
+    "date": "2025.11.25",
+    "kind": "정책",
+    "title": "Suno, Warner Music Group과 파트너십",
+    "summary": "Suno가 Warner Music Group과 손잡고 새 기능과 인터랙티브 음악 경험을 함께 만들기로 했어요.",
+    "url": "https://suno.com/blog/wmg-partnership",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-25-1",
+    "service": "elevenlabs",
+    "date": "2025.11.25",
+    "kind": "기능",
+    "title": "ElevenLabs Creative Platform 템플릿",
+    "summary": "설정이나 파일 관리 없이 아이디어를 완성 콘텐츠로 바꿔 주는 템플릿이 Creative Platform에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-templates-on-the-elevenlabs-creative-platform",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-21-1",
+    "service": "elevenlabs",
+    "date": "2025.11.21",
+    "kind": "API",
+    "title": "에이전트 GPT-5.1과 TTS 정규화 제어",
+    "summary": "에이전트에서 GPT-5.1과 추론 강도 제어를 쓸 수 있고, TTS 텍스트 정규화 방식과 더빙 JSON 전사 포맷이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/21",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-11-17-1",
+    "service": "elevenlabs",
+    "date": "2025.11.17",
+    "kind": "기능",
+    "title": "ElevenLabs Image & Video 출시",
+    "summary": "Veo·Sora·Kling·Wan·Seedance로 이미지·영상을 만들고 ElevenLabs 목소리·음악·효과음과 합칠 수 있는 Image & Video 기능이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-image-and-video",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-13-1",
+    "service": "elevenlabs",
+    "date": "2025.11.13",
+    "kind": "연동",
+    "title": "ElevenLabs Agents SIP 업그레이드",
+    "summary": "기존 전화번호와 라우팅·인프라를 그대로 쓰면서 안정적이고 안전하게 AI 에이전트를 연결하도록 SIP 기능이 강화됐어요.",
+    "url": "https://elevenlabs.io/blog/sip-upgrades-for-elevenlabs-agents",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-12-1",
+    "service": "elevenlabs",
+    "date": "2025.11.12",
+    "kind": "모델",
+    "title": "Scribe v2 Realtime 정식 출시",
+    "summary": "가장 빠르고 정확한 실시간 음성 인식 모델 Scribe v2 Realtime이 공식 출시됐어요. 위젯 통화 종료 피드백도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/12",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-11-11-1",
+    "service": "elevenlabs",
+    "date": "2025.11.11",
+    "kind": "모델",
+    "title": "실시간 음성 인식 Scribe v2 Realtime",
+    "summary": "가장 빠르고 정확한 실시간 음성 인식 모델 Scribe v2 Realtime을 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-05-2",
+    "service": "elevenlabs",
+    "date": "2025.11.05",
+    "kind": "API",
+    "title": "Music API 스템 분리와 Text to Dialogue 타임스탬프",
+    "summary": "음악에서 보컬·드럼·베이스 등을 나누는 스템 분리 엔드포인트와 Text to Dialogue 글자 단위 타임스탬프가 추가됐어요.",
+    "details": [
+      "Music API 스템 분리",
+      "Text to Dialogue 타임스탬프·음성 구간",
+      "일회용 시간 제한 토큰",
+      "통합 ElevenLabs CLI로 Agents CLI 대체"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/5",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-11-05-1",
+    "service": "elevenlabs",
+    "date": "2025.11.05",
+    "kind": "기능",
+    "title": "ElevenLabs 자체 호스팅 LLM 에이전트 지원",
+    "summary": "오픈소스 LLM을 ElevenLabs 인프라에서 직접 호스팅해 음성 에이전트의 지연과 추론 비용을 줄였어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-hosted-llms",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-10-29-1",
+    "service": "minimax-audio",
+    "date": "2025.10.29",
+    "kind": "모델",
+    "title": "MiniMax Speech 2.6·Music 2.0 출시",
+    "summary": "더 사람 같고 즉각 반응하는 음성 에이전트용 Speech 2.6과, 감정 표현이 풍부해진 Music 2.0이 함께 나왔어요.",
+    "details": [
+      "Speech 2.6: 음성 에이전트용 저지연·자연스러운 음성",
+      "Music 2.0: 음악적 표현력 강화"
+    ],
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-10-27-1",
+    "service": "mureka",
+    "date": "2025.10.27",
+    "kind": "API",
+    "title": "스트리밍 URL 유효 시간 연장",
+    "summary": "스트림 모드에서 곡 생성이 끝난 뒤에도 스트림 URL이 5분 더 유효해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-27-1",
+    "service": "elevenlabs",
+    "date": "2025.10.27",
+    "kind": "API",
+    "title": "Agents CLI 다중 환경 관리",
+    "summary": "Agents CLI에 --env 플래그가 생겨 여러 환경에 배포한 에이전트를 관리할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/27",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-10-21-1",
+    "service": "suno",
+    "date": "2025.10.21",
+    "kind": "모델",
+    "title": "무료 모델 v4.5-all",
+    "summary": "더 풍성하고 역동적인 소리를 내는 v4.5-all을 누구나 무료로 쓸 수 있게 공개했어요.",
+    "url": "https://suno.com/release-notes/v4-5-all-a-new-free-model-for-everyone",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-10-20-1",
+    "service": "elevenlabs",
+    "date": "2025.10.20",
+    "kind": "연동",
+    "title": "Genesys 에이전트 설정 덮어쓰기",
+    "summary": "Genesys 사용자가 Genesys 흐름에서 에이전트 설정을 직접 덮어쓸 수 있고, Agents CLI와 React Native SDK가 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/20",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-14-1",
+    "service": "elevenlabs",
+    "date": "2025.10.14",
+    "kind": "API",
+    "title": "대화 중 에이전트 LLM 교체",
+    "summary": "대화 도중 에이전트의 LLM을 다른 모델로 덮어쓸 수 있게 됐고 SDK들이 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/14",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-07-2",
+    "service": "elevenlabs",
+    "date": "2025.10.07",
+    "kind": "API",
+    "title": "에이전트 Gemini 2.5 Flash 프리뷰 지원",
+    "summary": "에이전트 LLM으로 Gemini 2.5 Flash 프리뷰 모델을 쓸 수 있고, History API에 VoiceGeneration 소스가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/7",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-07-1",
+    "service": "elevenlabs",
+    "date": "2025.10.07",
+    "kind": "API",
+    "title": "멀티모달 에이전트용 컴포넌트 ElevenLabs UI",
+    "summary": "shadcn/ui 기반 컴포넌트 라이브러리 ElevenLabs UI로 멀티모달 에이전트 화면을 더 빨리 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-ui",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-06-1",
+    "service": "elevenlabs",
+    "date": "2025.10.06",
+    "kind": "기능",
+    "title": "ElevenLabs Agent Workflows",
+    "summary": "복잡한 상황을 전문 서브에이전트로 넘기고 필요하면 사람 상담원에게 연결하는 Agent Workflows가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-agent-workflows",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-09-29-1",
+    "service": "elevenlabs",
+    "date": "2025.09.29",
+    "kind": "종료",
+    "title": "v1 TTS 모델 지원 종료 예고",
+    "summary": "eleven_monolingual_v1과 eleven_multilingual_v1 모델이 사용 중단되고 2025년 12월 15일 제거될 예정이라 새 모델로 옮겨야 해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/29",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-09-25-1",
+    "service": "suno",
+    "date": "2025.09.25",
+    "kind": "앱",
+    "title": "생성형 오디오 워크스테이션 Suno Studio",
+    "summary": "샘플·라이브러리·스템에서 시작해 보컬·드럼·신스 스템 변형을 무한히 만드는 생성형 오디오 워크스테이션 Suno Studio가 Premier에 나왔어요.",
+    "url": "https://suno.com/release-notes/introducing-suno-studio",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-09-25-1",
+    "service": "mureka",
+    "date": "2025.09.25",
+    "kind": "모델",
+    "title": "mureka-7.5 모델과 곡 설명 API",
+    "summary": "mureka-7을 대체하는 mureka-7.5 모델과 곡을 분석해 설명해 주는 song describe API가 나왔어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-09-23-1",
+    "service": "suno",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "Suno v5 출시",
+    "summary": "더 선명하고 몰입감 있는 오디오와 자연스러운 보컬을 내는 음악 모델 v5가 나왔어요.",
+    "url": "https://suno.com/release-notes/introducing-v5-the-world-s-best-music-model",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-09-23-1",
+    "service": "minimax-audio",
+    "date": "2025.09.23",
+    "kind": "API",
+    "title": "MiniMax T2A v2 고정 비트레이트 옵션",
+    "summary": "T2A v2 API의 audio_setting에 CBR 인코딩을 켜는 force_cbr 파라미터가 추가됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/apis",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-09-22-1",
+    "service": "suno",
+    "date": "2025.09.22",
+    "kind": "기능",
+    "title": "Suno Hooks, 숏폼 뮤직비디오",
+    "summary": "내 영상과 Suno 곡을 묶어 짧은 뮤직비디오를 만드는 Hooks가 나왔어요. 크레딧이 들지 않아요.",
+    "url": "https://suno.com/release-notes/introducing-hooks",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-09-22-1",
+    "service": "elevenlabs",
+    "date": "2025.09.22",
+    "kind": "기능",
+    "title": "Productions 관리형 서비스 출시",
+    "summary": "사람이 편집한 자연스러운 콘텐츠를 주문하는 관리형 서비스 Productions가 크리에이터와 미디어 기업을 위해 나왔어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/22",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-09-15-2",
+    "service": "elevenlabs",
+    "date": "2025.09.15",
+    "kind": "API",
+    "title": "TTS 웹소켓 출력 포맷 지정",
+    "summary": "WebSocket 연결의 첫 메시지에서 출력 포맷을 정할 수 있고, 에이전트 첫 메시지 끼어들기를 막는 설정이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/15",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-09-15-1",
+    "service": "elevenlabs",
+    "date": "2025.09.15",
+    "kind": "기능",
+    "title": "사람이 편집해 주는 Productions 서비스",
+    "summary": "사람이 다듬은 더빙·오디오북 등 콘텐츠를 플랫폼에서 바로 주문하는 관리형 서비스 Productions를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/introducing-productions-human-edited-content-done-for-you",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-09-11-1",
+    "service": "minimax-audio",
+    "date": "2025.09.11",
+    "kind": "모델",
+    "title": "MiniMax Music 1.5, 4분 곡 생성",
+    "summary": "최대 4분 곡을 만드는 음악 모델 Music 1.5가 정식으로 나왔어요.",
+    "url": "https://www.minimax.io/news/minimax-music-15",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2025-09-10-1",
+    "service": "stable-audio",
+    "date": "2025.09.10",
+    "kind": "모델",
+    "title": "엔터프라이즈용 Stable Audio 2.5",
+    "summary": "기업 사운드 제작을 위한 Stable Audio 2.5가 나왔어요. 작곡 품질이 좋아지고 GPU에서 2초 미만으로 생성하며 오디오 인페인팅을 지원해요.",
+    "details": [
+      "StableAudio.com과 Stability AI API 제공",
+      "fal·Replicate·ComfyUI 등 파트너 플랫폼",
+      "엔터프라이즈 라이선스 온프레미스 배포"
+    ],
+    "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-09-09-1",
+    "service": "elevenlabs",
+    "date": "2025.09.09",
+    "kind": "기능",
+    "title": "ElevenLabs Agents 테스트 기능",
+    "summary": "툴 호출·상담원 연결·워크플로·가드레일을 구조화된 시뮬레이션으로 검증하는 에이전트 테스트가 나왔어요. CI/CD에도 연결돼요.",
+    "url": "https://elevenlabs.io/blog/tests-for-elevenlabs-agents",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-09-08-1",
+    "service": "elevenlabs",
+    "date": "2025.09.08",
+    "kind": "API",
+    "title": "모든 TTS 모델 언어 코드 지원",
+    "summary": "모든 Text to Speech 모델이 언어 코드를 지원하고, Eleven v3·Flash·Turbo에 텍스트 정규화가 켜졌어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/8",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-09-03-1",
+    "service": "elevenlabs",
+    "date": "2025.09.03",
+    "kind": "기능",
+    "title": "Conversational AI, ElevenLabs Agents로 이름 변경",
+    "summary": "Conversational AI의 이름이 ElevenLabs Agents로 바뀌었어요. 전화·웹·앱에서 말하고 입력하고 행동하는 에이전트 플랫폼이에요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-agents",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-09-01-1",
+    "service": "mureka",
+    "date": "2025.09.01",
+    "kind": "API",
+    "title": "생성 개수 파라미터 n",
+    "summary": "곡·반주 생성 API에서 n 파라미터로 결과 개수를 정할 수 있어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-09-01-1",
+    "service": "elevenlabs",
+    "date": "2025.09.01",
+    "kind": "API",
+    "title": "Gemini 2.5 Flash Lite HIPAA 승인",
+    "summary": "HIPAA 준수 대화에 쓸 수 있는 모델 목록에 Gemini 2.5 Flash Lite가 추가되고 SDK·MCP 서버가 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/1",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-08-29-1",
+    "service": "suno",
+    "date": "2025.08.29",
+    "kind": "요금",
+    "title": "Suno Listen & Rank로 무료 크레딧",
+    "summary": "다른 크리에이터 곡을 평가하면 무료 생성 크레딧을 받는 Listen & Rank가 나왔어요.",
+    "url": "https://suno.com/release-notes/listen-and-rank-earn-free-credits",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-28-1",
+    "service": "elevenlabs",
+    "date": "2025.08.28",
+    "kind": "기능",
+    "title": "ElevenLabs 에이전트 IVR 전화 메뉴 탐색",
+    "summary": "ElevenLabs 에이전트가 자동 응답 전화 메뉴(IVR)를 스스로 탐색할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-ivr-phone-tree-navigation",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-25-1",
+    "service": "elevenlabs",
+    "date": "2025.08.25",
+    "kind": "API",
+    "title": "발음 사전 PATCH 업데이트",
+    "summary": "발음 사전을 PATCH로 부분 수정할 수 있게 되는 등 TTS와 에이전트 API가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/8/25",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-08-20-1",
+    "service": "elevenlabs",
+    "date": "2025.08.20",
+    "kind": "API",
+    "title": "Eleven v3 (alpha) API 공개",
+    "summary": "Eleven v3 알파를 API에서 모델 ID eleven_v3로 쓸 수 있고 Text to Dialogue API도 모두에게 열렸어요. Eleven Music API는 유료 사용자 모두에게 제공돼요.",
+    "details": [
+      "eleven_v3 TTS API 지원",
+      "Text to Dialogue API 전체 공개",
+      "Eleven Music API 유료 플랜 개방",
+      "네덜란드·싱가포르 Global TTS API 프리뷰"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-v3-alpha-now-available-in-the-api",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-19-1",
+    "service": "elevenlabs",
+    "date": "2025.08.19",
+    "kind": "기능",
+    "title": "ElevenLabs 에이전트 Chat Mode",
+    "summary": "텍스트만 주고받는 대화형 에이전트를 만드는 Chat Mode가 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agents-now-support-chat-mode",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-18-1",
+    "service": "elevenlabs",
+    "date": "2025.08.18",
+    "kind": "API",
+    "title": "Eleven Music API 공개",
+    "summary": "음악 생성 모델 Eleven Music을 API로 쓸 수 있게 됐어요. 앱과 서비스에 음악 생성을 바로 넣을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/eleven-music-now-available-in-the-api",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-08-14-1",
+    "service": "elevenlabs",
+    "date": "2025.08.14",
+    "kind": "기능",
+    "title": "Conversational AI 음성사서함 감지",
+    "summary": "음성사서함을 자동으로 알아채 처리하는 시스템 툴이 생겨 음성 에이전트 운영이 더 똑똑하고 저렴해졌어요.",
+    "url": "https://elevenlabs.io/blog/voicemail-detection",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-11-1",
+    "service": "elevenlabs",
+    "date": "2025.08.11",
+    "kind": "모델",
+    "title": "Eleven Music 정식 출시",
+    "summary": "자연어 프롬프트로 어떤 스타일이든 스튜디오급 음악을 만드는 음악 생성 모델 Eleven Music이 정식 출시됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/8/11",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-08-08-1",
+    "service": "mureka",
+    "date": "2025.08.08",
+    "kind": "기능",
+    "title": "Mureka 작곡 도우미 에이전트",
+    "summary": "한 줄 아이디어나 분위기를 입력하면 분석해 서로 다른 스타일의 곡 옵션 세 가지를 가사·편곡 제안과 함께 만들어 줘요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-08-1",
+    "service": "elevenlabs",
+    "date": "2025.08.08",
+    "kind": "연동",
+    "title": "Conversational AI에 GPT-5 통합",
+    "summary": "OpenAI GPT-5가 ElevenLabs Conversational AI에 통합돼 복잡한 업무를 처리하는 음성 에이전트를 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/gpt-5-available-in-elevenlabs-conversational-ai",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-08-06-1",
+    "service": "minimax-audio",
+    "date": "2025.08.06",
+    "kind": "모델",
+    "title": "MiniMax Speech 2.5 출시",
+    "summary": "지원 언어가 넓어지고 목소리 유사도가 매우 높아진 차세대 음성 합성 모델 Speech 2.5가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-08-05-1",
+    "service": "elevenlabs",
+    "date": "2025.08.05",
+    "kind": "모델",
+    "title": "음악 생성 모델 Eleven Music 출시",
+    "summary": "자연어 프롬프트로 어떤 스타일이든 스튜디오급 음악을 만드는 Eleven Music이 나왔어요. 상업적으로 쓸 수 있는 음악 생성 모델이에요.",
+    "url": "https://elevenlabs.io/blog/eleven-music-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-08-04-1",
+    "service": "elevenlabs",
+    "date": "2025.08.04",
+    "kind": "API",
+    "title": "WebRTC용 Conversation Token",
+    "summary": "WebRTC 연결용 Conversation Token을 만드는 경로와 펼쳐지는 위젯 등 에이전트 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/8/4",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-07-30-1",
+    "service": "elevenlabs",
+    "date": "2025.07.30",
+    "kind": "정책",
+    "title": "ElevenLabs 인도 데이터 레지던시",
+    "summary": "기업이 인도 현지 규제 요건을 충족하는 인프라에서 음성 AI를 구축할 수 있도록 인도 데이터 레지던시를 도입했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-india-data-residency",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-07-29-1",
+    "service": "mureka",
+    "date": "2025.07.29",
+    "kind": "모델",
+    "title": "mureka-7과 추론형 mureka-o1 모델 API",
+    "summary": "음질을 높인 mureka-7과 첫 사고형 음악 추론 모델 mureka-o1이 나왔어요. 스트리밍 생성과 곡 인식·확장 API도 추가됐어요.",
+    "details": [
+      "곡·반주 생성 스트리밍 모드",
+      "song recognize·song extend API",
+      "mureka-7 모델",
+      "mureka-o1 추론 모델"
+    ],
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-07-28-1",
+    "service": "elevenlabs",
+    "date": "2025.07.28",
+    "kind": "API",
+    "title": "멀티채널 전사와 Studio 자막",
+    "summary": "채널별 화자가 있는 오디오를 전사하는 use_multi_channel 옵션과 Studio 프로젝트 자막 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/28",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-07-22-1",
+    "service": "elevenlabs",
+    "date": "2025.07.22",
+    "kind": "API",
+    "title": "더빙 목록 조회 엔드포인트",
+    "summary": "만든 더빙 전체를 조회하는 엔드포인트가 추가되고 에이전트 기능이 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/22",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-07-21-1",
+    "service": "elevenlabs",
+    "date": "2025.07.21",
+    "kind": "API",
+    "title": "Conversational AI WebRTC 지원",
+    "summary": "ElevenLabs Conversational AI가 WebRTC를 지원해 더 낮은 지연으로 실시간 음성 대화를 할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/conversational-ai-webrtc",
+    "source": "dev"
+  },
+  {
+    "id": "minimax-audio-2025-07-19-1",
+    "service": "minimax-audio",
+    "date": "2025.07.19",
+    "kind": "API",
+    "title": "MiniMax T2A에 voice_modify 음성 효과",
+    "summary": "동기·비동기 음성 합성 API에 피치·볼륨 등 음성 효과를 조절하는 voice_modify 파라미터가 추가됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/apis",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-07-14-1",
+    "service": "elevenlabs",
+    "date": "2025.07.14",
+    "kind": "API",
+    "title": "Text to Voice 미리듣기 스트리밍",
+    "summary": "생성한 목소리 미리듣기를 실시간 스트리밍하는 엔드포인트가 생겼고, 팟캐스트 생성에 인트로·아웃트로와 스타일 지시를 넣을 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/14",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-07-10-1",
+    "service": "mureka",
+    "date": "2025.07.10",
+    "kind": "기능",
+    "title": "Mureka TTS와 보이스 라이브러리",
+    "summary": "10개 이상 언어로 텍스트를 자연스러운 음성으로 바꾸는 TTS와 100개 이상 목소리를 담은 Voice Library가 나왔어요. 몇 초 음성으로 보이스 클론도 돼요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-07-07-1",
+    "service": "elevenlabs",
+    "date": "2025.07.07",
+    "kind": "API",
+    "title": "STT 시드 고정과 강제 정렬 신뢰도",
+    "summary": "Speech to Text에 seed로 재현 가능한 결과를 얻는 옵션이 생기고, Forced Alignment에 단어별 신뢰도 점수가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/7",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-30-1",
+    "service": "elevenlabs",
+    "date": "2025.06.30",
+    "kind": "기능",
+    "title": "Eleven v3 기반 Voice Design",
+    "summary": "Eleven v3로 텍스트 설명에서 목소리를 만드는 새 Voice Design이 나왔고, STT 화자 분리 임계값과 PVC 배경 소음 제거가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/30",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-25-1",
+    "service": "elevenlabs",
+    "date": "2025.06.25",
+    "kind": "기능",
+    "title": "Voice Design v3, 설명으로 목소리 생성",
+    "summary": "원하는 목소리를 글로 설명하면 세 가지 후보를 만들어 주는 Voice Design v3가 나왔어요. 더 빠르고 쉬워졌어요.",
+    "url": "https://elevenlabs.io/blog/voice-design-v3",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-06-24-1",
+    "service": "elevenlabs",
+    "date": "2025.06.24",
+    "kind": "앱",
+    "title": "ElevenLabs 공식 모바일 앱 출시",
+    "summary": "ElevenLabs의 AI 음성 도구를 iOS와 Android에서 바로 쓸 수 있는 공식 모바일 앱이 출시됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-the-elevenlabs-app",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-06-23-2",
+    "service": "elevenlabs",
+    "date": "2025.06.23",
+    "kind": "기능",
+    "title": "famous 보이스 카테고리와 v3 태그 자동 제거",
+    "summary": "Voice Library에 famous 카테고리가 생겼고, v3에서 v2로 바꾸면 오디오 태그가 자동으로 지워져요. 더빙 CSV 프레임레이트도 지정할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/23",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-23-1",
+    "service": "elevenlabs",
+    "date": "2025.06.23",
+    "kind": "기능",
+    "title": "개인 AI 음성 비서 11ai 공개",
+    "summary": "이름과 목소리를 정하고 MCP로 수백 개 도구에 연결하는 AI 음성 비서 11ai를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/introducing-11ai",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-06-20-1",
+    "service": "minimax-audio",
+    "date": "2025.06.20",
+    "kind": "모델",
+    "title": "MiniMax Music-1.5 베타와 Voice Design API",
+    "summary": "음악 프롬프트와 가사로 곡을 만드는 Music-1.5 베타가 나왔어요. API에는 텍스트로 목소리를 만드는 Voice Design이 추가되고 기존 text-to-voice API는 레거시가 됐어요.",
+    "details": [
+      "Music-1.5 (Beta)",
+      "Voice Design API",
+      "기존 text-to-voice API 레거시 전환"
+    ],
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-17-1",
+    "service": "elevenlabs",
+    "date": "2025.06.17",
+    "kind": "API",
+    "title": "Studio 프로젝트 JSON 초기화",
+    "summary": "from_content_json으로 구조화된 JSON 내용을 넣어 Studio 프로젝트를 만들 수 있고, 시뮬레이션 대화에 동적 변수가 지원돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/17",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-06-10-1",
+    "service": "mureka",
+    "date": "2025.06.10",
+    "kind": "API",
+    "title": "곡 생성 API 가사 구조 표기 변경",
+    "summary": "곡 생성 API가 반환하는 가사 구조에서 breakdown 표기가 break로 바뀌었어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-08-1",
+    "service": "elevenlabs",
+    "date": "2025.06.08",
+    "kind": "모델",
+    "title": "Eleven v3 (alpha) 리서치 프리뷰",
+    "summary": "가장 표현력 높은 TTS 모델 Eleven v3 알파가 리서치 프리뷰로 출시됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/8",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-06-04-2",
+    "service": "mureka",
+    "date": "2025.06.04",
+    "kind": "API",
+    "title": "Mureka API m4a 업로드와 MIDI 멜로디",
+    "summary": "오디오 업로드에 m4a 포맷을 쓸 수 있고, melody 용도는 MIDI 파일도 지원해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-06-04-1",
+    "service": "mureka",
+    "date": "2025.06.04",
+    "kind": "기능",
+    "title": "Mureka 업로드 곡 구간 편집·확장",
+    "summary": "아무 곡이나 올려 특정 구간의 가사를 바꾸거나 다시 만들고, 원하는 위치에서 곡을 이어 만들 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2025-06-03-1",
+    "service": "suno",
+    "date": "2025.06.03",
+    "kind": "기능",
+    "title": "Suno Song Editor와 12스템 분리",
+    "summary": "파형에서 구간별로 곡을 재배치·재작성하는 Song Editor, 최대 12개 스템 분리, 8분까지 곡 업로드가 나왔어요.",
+    "details": [
+      "Song Editor 구간별 편집",
+      "최대 12스템 추출",
+      "최대 8분 오디오 업로드"
+    ],
+    "url": "https://suno.com/release-notes/a-whole-new-level-of-creative-control",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-06-03-1",
+    "service": "mureka",
+    "date": "2025.06.03",
+    "kind": "모델",
+    "title": "mureka-6 강화 버전",
+    "summary": "Mureka API에 mureka-6 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-06-03-1",
+    "service": "elevenlabs",
+    "date": "2025.06.03",
+    "kind": "모델",
+    "title": "Eleven v3 (alpha), 오디오 태그와 대화 모드",
+    "summary": "오디오 태그로 감정·연기를 지시하고 여러 화자 대화를 만드는 가장 표현력 높은 TTS 모델 Eleven v3 알파가 나왔어요. 70개 이상 언어를 지원해요.",
+    "url": "https://elevenlabs.io/blog/eleven-v3",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-06-01-1",
+    "service": "elevenlabs",
+    "date": "2025.06.01",
+    "kind": "기능",
+    "title": "에이전트 다중 목소리 전환",
+    "summary": "ElevenLabs 에이전트가 대화 중에 여러 목소리를 오가며 말할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/1",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-05-30-1",
+    "service": "elevenlabs",
+    "date": "2025.05.30",
+    "kind": "기능",
+    "title": "Conversational AI 2.0 출시",
+    "summary": "엔터프라이즈 준비와 보안을 강화한 Conversational AI 2.0이 나왔어요. Claude Sonnet 4도 에이전트 LLM으로 추가됐어요.",
+    "details": [
+      "Conversational AI 2.0 신규 기능·보안 강화",
+      "Claude Sonnet 4 지원"
+    ],
+    "url": "https://elevenlabs.io/blog/conversational-ai-2-0",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-05-29-1",
+    "service": "elevenlabs",
+    "date": "2025.05.29",
+    "kind": "기능",
+    "title": "멀티모달 Conversational AI, 음성·텍스트 동시 입력",
+    "summary": "AI 에이전트가 음성과 텍스트 입력을 동시에 처리해 더 자연스럽고 효율적인 대화를 할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-multimodal-conversational-ai",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-05-28-1",
+    "service": "elevenlabs",
+    "date": "2025.05.28",
+    "kind": "기능",
+    "title": "Conversational AI 일괄 발신 Batch Calling",
+    "summary": "AI 에이전트로 여러 통화를 한꺼번에 자동으로 거는 Batch Calling 기능이 생겼어요.",
+    "url": "https://elevenlabs.io/blog/introducing-batch-calling-for-elevenlabs-conversational-ai",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-05-26-1",
+    "service": "elevenlabs",
+    "date": "2025.05.26",
+    "kind": "API",
+    "title": "공유 보이스 실시간 검수 필터와 AudioNative 접근성",
+    "summary": "공유 보이스 엔드포인트에 실시간 검수 보이스 필터가 생기고, AudioNative 플레이어 접근성이 좋아졌어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/26",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-05-23-1",
+    "service": "mureka",
+    "date": "2025.05.23",
+    "kind": "기능",
+    "title": "Mureka 작곡 과정 공개",
+    "summary": "곡을 만들 때 가사를 고른 이유와 악기·편곡 설계를 함께 보여 줘 AI 작곡 과정이 투명해졌어요. Facebook 로그인도 지원해요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2025-05-21-1",
+    "service": "suno",
+    "date": "2025.05.21",
+    "kind": "기능",
+    "title": "Suno 전체 곡 Remix",
+    "summary": "내 곡뿐 아니라 Suno의 다른 곡도 Cover·Extend·Reuse Prompt로 리믹스할 수 있고, 내 곡의 리믹스 허용 여부를 정할 수 있어요.",
+    "url": "https://suno.com/release-notes/remix-any-track-across-suno",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-05-19-1",
+    "service": "elevenlabs",
+    "date": "2025.05.19",
+    "kind": "API",
+    "title": "Speech to Text logprob 신뢰도",
+    "summary": "Speech to Text 응답에 단어 예측 신뢰도를 나타내는 logprob 필드가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/19",
+    "source": "dev"
+  },
+  {
+    "id": "stable-audio-2025-05-14-1",
+    "service": "stable-audio",
+    "date": "2025.05.14",
+    "kind": "모델",
+    "title": "온디바이스용 Stable Audio Open Small 공개",
+    "summary": "Arm과 함께 기기에서 바로 돌릴 수 있는 소형 텍스트-오디오 모델 Stable Audio Open Small을 오픈소스로 공개했어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-and-arm-release-stable-audio-open-small-enabling-real-world-deployment-for-on-device-audio-control",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-05-12-1",
+    "service": "elevenlabs",
+    "date": "2025.05.12",
+    "kind": "기능",
+    "title": "Studio 문단별 ZIP 내보내기",
+    "summary": "Studio에서 나뉜 문단을 ZIP 파일로 한꺼번에 내보낼 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/12",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-05-05-1",
+    "service": "elevenlabs",
+    "date": "2025.05.05",
+    "kind": "기능",
+    "title": "Dubbing Studio 보이스 클로닝 끄기 옵션",
+    "summary": "Dubbing Studio UI에서 업로드할 때 보이스 클로닝을 끌 수 있어 API 파라미터와 같은 동작을 해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/5",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-05-02-1",
+    "service": "elevenlabs",
+    "date": "2025.05.02",
+    "kind": "정책",
+    "title": "ElevenLabs 유럽 데이터 레지던시",
+    "summary": "현지 데이터 주권 요건을 지키면서 ElevenLabs 오디오 모델을 쓸 수 있는 유럽 데이터 레지던시를 도입했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-european-data-residency",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2025-05-01-1",
+    "service": "suno",
+    "date": "2025.05.01",
+    "kind": "모델",
+    "title": "Suno v4.5 출시",
+    "summary": "장르 다양성과 정확도, 보컬의 감정 표현이 좋아진 v4.5가 나왔어요.",
+    "url": "https://suno.com/release-notes/v4-5-levels-up-creativity",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-04-28-1",
+    "service": "elevenlabs",
+    "date": "2025.04.28",
+    "kind": "기능",
+    "title": "Agents 대시보드 커스텀 차트",
+    "summary": "Agents Platform 대시보드에 평가 결과를 보여 주는 커스텀 차트를 넣을 수 있고, 사용량 분석이 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/28",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-04-23-1",
+    "service": "elevenlabs",
+    "date": "2025.04.23",
+    "kind": "연동",
+    "title": "ElevenLabs 음성 에이전트에 Gemini 2.5 Flash",
+    "summary": "Gemini 2.5 Flash를 ElevenLabs 음성 에이전트의 LLM으로 쓸 수 있어 추론·저지연·툴 호출이 좋아졌어요.",
+    "url": "https://elevenlabs.io/blog/gemini-25-flash",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2025-04-21-1",
+    "service": "suno",
+    "date": "2025.04.21",
+    "kind": "기능",
+    "title": "Suno 루핑 비디오 곡 아트",
+    "summary": "10초 이하 세로 영상을 올려 곡 아트를 움직이는 루프 영상으로 꾸밀 수 있어요.",
+    "url": "https://suno.com/release-notes/looping-video-song-art-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-04-21-1",
+    "service": "elevenlabs",
+    "date": "2025.04.21",
+    "kind": "API",
+    "title": "Professional Voice Cloning API 공개",
+    "summary": "Professional Voice Clone을 코드로 만들고 샘플을 관리하는 API 묶음이 나왔고, STT 결과 내보내기 옵션이 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/21",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-04-18-1",
+    "service": "mureka",
+    "date": "2025.04.18",
+    "kind": "API",
+    "title": "Mureka API reference_id·vocal_id 동시 사용",
+    "summary": "곡 생성 API에서 레퍼런스와 보컬 제어 파라미터 reference_id와 vocal_id를 함께 쓸 수 있어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-04-14-1",
+    "service": "elevenlabs",
+    "date": "2025.04.14",
+    "kind": "기능",
+    "title": "새 Professional Voice Clone 생성 흐름",
+    "summary": "Professional Voice Clone을 만드는 새 흐름이 나왔고, 더빙 프로젝트의 특정 언어 렌더를 다시 생성하는 엔드포인트가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/14",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-04-07-2",
+    "service": "elevenlabs",
+    "date": "2025.04.07",
+    "kind": "모델",
+    "title": "scribe_v1_experimental 프리뷰",
+    "summary": "다국어 음성 성능을 높인 Scribe v1 실험 프리뷰가 나왔고, 유럽 전화망용 A-law 포맷이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/7",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-04-07-1",
+    "service": "elevenlabs",
+    "date": "2025.04.07",
+    "kind": "연동",
+    "title": "ElevenLabs MCP 서버 공개",
+    "summary": "Claude와 Cursor 같은 MCP 클라이언트가 텍스트 프롬프트로 ElevenLabs 오디오 기능 전체를 쓸 수 있는 MCP 서버를 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2025-04-02-1",
+    "service": "minimax-audio",
+    "date": "2025.04.02",
+    "kind": "모델",
+    "title": "MiniMax Speech-02 turbo·hd 출시",
+    "summary": "운율과 안정성, 목소리 유사도와 음질이 뛰어난 초현실 음성 모델 Speech-02 시리즈(turbo·hd)가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-03-31-1",
+    "service": "elevenlabs",
+    "date": "2025.03.31",
+    "kind": "기능",
+    "title": "Studio Actor Mode와 Opus 포맷",
+    "summary": "내 녹음으로 대사 연기를 지시하는 Studio Actor Mode와 48kHz Opus 출력 포맷이 추가됐어요. Twilio 아웃바운드 통화도 지원해요.",
+    "details": [
+      "Studio Actor Mode",
+      "TTS Opus 48kHz 포맷",
+      "에이전트 Twilio 아웃바운드 통화",
+      "더빙 복제 기능 전체 개방"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/31",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-03-26-1",
+    "service": "mureka",
+    "date": "2025.03.26",
+    "kind": "API",
+    "title": "Mureka 개인 음악 모델 학습과 API 정식 출시",
+    "summary": "내 곡을 올려 나만의 음악 모델을 학습시킬 수 있고, 구간 편집·확장이 추가됐어요. 음악·가사 생성, 모델 커스텀, TTS를 제공하는 Mureka API도 정식 출시됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-03-24-1",
+    "service": "elevenlabs",
+    "date": "2025.03.24",
+    "kind": "API",
+    "title": "Voices V2 검색 엔드포인트",
+    "summary": "더 나은 검색과 필터를 갖춘 Voices V2 엔드포인트가 추가됐고, STT 반복 처리와 Studio 고음질 Reader 내보내기가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/24",
+    "source": "dev"
+  },
+  {
+    "id": "mureka-2025-03-21-1",
+    "service": "mureka",
+    "date": "2025.03.21",
+    "kind": "모델",
+    "title": "Mureka O1·V6 모델과 반주 생성",
+    "summary": "전문가급 보컬·믹스의 O1 모델과 10개 언어·4.5분 곡을 지원하는 V6 모델이 나왔어요. 반주만 만드는 Instrumental 생성도 추가됐어요.",
+    "details": [
+      "O1: 2곡당 10크레딧",
+      "V6: 2곡당 2크레딧, 최대 4.5분",
+      "Instrumental 트랙 생성"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-03-17-1",
+    "service": "elevenlabs",
+    "date": "2025.03.17",
+    "kind": "요금",
+    "title": "Scribe 가격 인하와 VAD 개선",
+    "summary": "Scribe 음성 인식 가격이 내려가고 음성 구간 감지가 개선됐어요. Studio에서는 특정 멤버의 퍼블리싱 UI를 막을 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/17",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-03-10-1",
+    "service": "elevenlabs",
+    "date": "2025.03.10",
+    "kind": "기능",
+    "title": "Scribe HIPAA 무보존 모드",
+    "summary": "Scribe에 HIPAA를 준수하는 무보존 모드가 생기고 화자 분리 가능 길이가 늘었어요. dubbing_studio 옵션으로 고급 더빙도 만들 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/10",
+    "source": "dev"
+  },
+  {
+    "id": "stable-audio-2025-03-03-1",
+    "service": "stable-audio",
+    "date": "2025.03.03",
+    "kind": "연동",
+    "title": "Arm과 스마트폰 온디바이스 Stable Audio Open",
+    "summary": "Arm KleidiAI로 Stable Audio Open이 Arm CPU 스마트폰에서 30배 빨라져, 인터넷 없이 몇 초 만에 효과음·샘플을 만들 수 있어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-and-arm-bring-on-device-generative-audio-to-smartphones",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-03-03-1",
+    "service": "elevenlabs",
+    "date": "2025.03.03",
+    "kind": "기능",
+    "title": "Dubbing Studio에 Scribe 기본 적용",
+    "summary": "Dubbing Studio가 음성 인식에 Scribe를 기본으로 써 정확도가 올라갔고, 에이전트에 속도 조절이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/3",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-02-26-1",
+    "service": "elevenlabs",
+    "date": "2025.02.26",
+    "kind": "모델",
+    "title": "음성 인식 모델 Scribe 출시",
+    "summary": "ElevenLabs가 매우 정확한 음성 인식(ASR) 모델 Scribe를 내놨어요. 99개 언어 음성을 텍스트로 옮겨요.",
+    "url": "https://elevenlabs.io/blog/meet-scribe",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-25-2",
+    "service": "elevenlabs",
+    "date": "2025.02.25",
+    "kind": "API",
+    "title": "Speech to Text API 출시와 TTS 속도 조절",
+    "summary": "99개 언어를 지원하는 Speech to Text API가 나왔고, Text to Speech API에 말하기 속도 조절이 추가됐어요.",
+    "details": [
+      "99개 언어 Speech to Text API",
+      "TTS 속도 조절",
+      "더빙 겹치는 클립 자동 정리",
+      "IVC v2 미리듣기 즉시 생성"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/25",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-02-25-1",
+    "service": "elevenlabs",
+    "date": "2025.02.25",
+    "kind": "기능",
+    "title": "ElevenReader Publishing 출시",
+    "summary": "무료로 오디오북을 만들어 ElevenReader 앱에 배포할 수 있는 ElevenReader Publishing이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenreader-publishing",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-17-1",
+    "service": "elevenlabs",
+    "date": "2025.02.17",
+    "kind": "API",
+    "title": "에이전트 툴 호출 수정과 워크스페이스 개선",
+    "summary": "gpt-4o mini 에이전트의 툴 호출 문제와 Voice Isolator 오류가 고쳐지고 워크스페이스·API가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/17",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-02-11-1",
+    "service": "elevenlabs",
+    "date": "2025.02.11",
+    "kind": "요금",
+    "title": "Conversational AI 요금 인하, 분당 10센트부터",
+    "summary": "Conversational AI 요금이 분당 10센트부터로 내려가 음성 에이전트를 더 저렴하게 확장할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/we-cut-our-pricing-for-conversational-ai",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-10-1",
+    "service": "elevenlabs",
+    "date": "2025.02.10",
+    "kind": "요금",
+    "title": "Agents Platform 요금 인하와 GenFM 다중 소스",
+    "summary": "Agents Platform 셀프서비스 요금이 내려가고 무료 티어가 넉넉해졌어요. GenFM 팟캐스트 API는 여러 입력 소스를 받을 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/10",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-02-06-1",
+    "service": "suno",
+    "date": "2025.02.06",
+    "kind": "기능",
+    "title": "Suno 댓글 기능과 iOS Extend",
+    "summary": "웹과 iOS에서 곡에 댓글을 달고 관리할 수 있고, iOS 앱에서 곡 확장(Extend)을 쓸 수 있어요.",
+    "details": [
+      "곡 댓글·답글, 댓글 끄기·삭제",
+      "iOS Extend"
+    ],
+    "url": "https://suno.com/release-notes/comments-are-here",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-06-1",
+    "service": "elevenlabs",
+    "date": "2025.02.06",
+    "kind": "앱",
+    "title": "장편 오디오 편집기 Studio 전체 공개",
+    "summary": "크리에이터용 장편 텍스트-오디오 편집기 Studio(구 Projects)를 모두가 쓸 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/studio-is-now-available-to-everyone",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-04-1",
+    "service": "elevenlabs",
+    "date": "2025.02.04",
+    "kind": "기능",
+    "title": "Projects가 Studio로 바뀌어 정식 출시",
+    "summary": "Projects가 Studio로 이름을 바꾸고 모두에게 정식 제공돼요. 에이전트 모니터링 대시보드와 Reader 인기 콘텐츠 섹션도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/4",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-01-27-1",
+    "service": "elevenlabs",
+    "date": "2025.01.27",
+    "kind": "기능",
+    "title": "에이전트 동적 변수와 Projects 자동 재생성",
+    "summary": "에이전트에 동적 변수와 끼어들기 처리 옵션이 생겼고, Projects 자동 재생성이 추가 비용 없이 기본 제공돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/1/27",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-01-16-1",
+    "service": "elevenlabs",
+    "date": "2025.01.16",
+    "kind": "기능",
+    "title": "에이전트 다국어 위젯과 End Call 툴",
+    "summary": "에이전트 위젯에 언어 선택이 생기고, 통화를 스스로 끝내는 End Call 툴이 추가됐어요. 새 에이전트 기본 모델은 Flash가 됐어요.",
+    "details": [
+      "위젯 언어 드롭다운",
+      "End Call 툴",
+      "새 에이전트 기본 모델 Flash",
+      "툴 개수 한도 5개→15개"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/1/16",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2025-01-14-1",
+    "service": "suno",
+    "date": "2025.01.14",
+    "kind": "기능",
+    "title": "Suno Workspaces로 곡 정리",
+    "summary": "곡을 만들 때 Workspace를 만들어 작업물을 정리·관리할 수 있어요.",
+    "url": "https://suno.com/release-notes/new-feature-just-dropped-workspaces",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2025-01-08-1",
+    "service": "mureka",
+    "date": "2025.01.08",
+    "kind": "기능",
+    "title": "Mureka Create Similar",
+    "summary": "마음에 드는 곡의 레퍼런스 오디오·보컬·설명 설정을 한 번에 가져와 비슷한 곡을 만드는 Create similar가 생겼어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-01-02-1",
+    "service": "elevenlabs",
+    "date": "2025.01.02",
+    "kind": "기능",
+    "title": "Workspace 그룹과 권한 관리",
+    "summary": "조직 안에서 접근 권한을 더 잘 관리하도록 워크스페이스 그룹 관리 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/workspace-groups-and-permissions",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2024-12-27-1",
+    "service": "mureka",
+    "date": "2024.12.27",
+    "kind": "기능",
+    "title": "Mureka 커스텀 보컬",
+    "summary": "좋아하는 가수 느낌으로 보컬 음색을 맞춤 설정하는 커스텀 보컬 기능이 나왔어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-12-19-1",
+    "service": "elevenlabs",
+    "date": "2024.12.19",
+    "kind": "모델",
+    "title": "Flash 모델 API 제공",
+    "summary": "75ms 만에 음성을 만드는 가장 빠른 TTS 모델 Flash를 API 모델 ID eleven_flash_v2·eleven_flash_v2_5로 쓸 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/19",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2024-12-18-1",
+    "service": "elevenlabs",
+    "date": "2024.12.18",
+    "kind": "모델",
+    "title": "초저지연 TTS 모델 Eleven Flash 출시",
+    "summary": "약 75ms 만에 음성을 만드는 가장 빠른 TTS 모델 Flash가 나왔어요. 실시간 대화형 에이전트에 알맞아요.",
+    "details": [
+      "API 모델 ID eleven_flash_v2, eleven_flash_v2_5"
+    ],
+    "url": "https://elevenlabs.io/blog/meet-flash",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-12-06-2",
+    "service": "elevenlabs",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "GenFM 웹사이트에서도 사용",
+    "summary": "ElevenReader 앱뿐 아니라 웹사이트에서도 GenFM 팟캐스트 생성을 쓸 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/6",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2024-12-06-1",
+    "service": "elevenlabs",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "Studio 프로젝트에서 GenFM 팟캐스트 생성",
+    "summary": "Studio에서 새 프로젝트를 만들 때 GenFM podcast를 고르면 AI 목소리로 팟캐스트를 자동 생성할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/genfm-podcasts-in-projects",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-12-05-1",
+    "service": "suno",
+    "date": "2024.12.05",
+    "kind": "앱",
+    "title": "Suno Android 앱 출시",
+    "summary": "Suno 앱이 Android에도 나왔고, 모바일 앱에서 v4를 무료로 써 볼 수 있어요.",
+    "url": "https://suno.com/release-notes/suno-is-now-available-on-android",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-12-03-1",
+    "service": "elevenlabs",
+    "date": "2024.12.03",
+    "kind": "API",
+    "title": "API 키별 크레딧 한도와 권한 설정",
+    "summary": "API 키마다 크레딧 한도와 기능별 접근 권한을 정해 비용을 관리할 수 있고, 워크스페이스 API 키에 읽기·쓰기 권한이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/3",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2024-11-29-1",
+    "service": "elevenlabs",
+    "date": "2024.11.29",
+    "kind": "기능",
+    "title": "Agents Platform 정식 출시와 Projects 개편",
+    "summary": "Agents Platform이 모든 고객에게 정식 제공되고 SDK·API가 나왔어요. ElevenReader에 GenFM이 들어가고 웹 TTS 리디자인이 전체 적용됐어요.",
+    "details": [
+      "Agents Platform GA, SDK·API 공개",
+      "ElevenReader GenFM",
+      "TTS 리디자인 전체 적용",
+      "Projects 자동 재생성·이전 생성 복원·2배속 QC"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/11/29",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2024-11-27-1",
+    "service": "elevenlabs",
+    "date": "2024.11.27",
+    "kind": "기능",
+    "title": "ElevenReader에서 GenFM 개인 팟캐스트 생성",
+    "summary": "ElevenReader iOS 앱에서 PDF·기사·전자책 등으로 똑똑한 개인 팟캐스트를 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/genfm-on-elevenreader",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2024-11-25-1",
+    "service": "mureka",
+    "date": "2024.11.25",
+    "kind": "기능",
+    "title": "Mureka 곡 영상 다운로드와 설명 키워드 확장",
+    "summary": "곡 영상을 내려받을 수 있고, Description에 보컬·감정·스타일 키워드를 넣어 더 정확히 생성할 수 있어요. Basic 월간에서 Pro 연간으로 바로 업그레이드도 돼요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-11-19-1",
+    "service": "suno",
+    "date": "2024.11.19",
+    "kind": "모델",
+    "title": "Suno v4 출시",
+    "summary": "음질, 가사, 곡 구조가 좋아진 v4가 Pro·Premier에 베타로 나왔어요. 기존 곡을 v4 품질로 올리는 Remaster도 추가됐어요.",
+    "details": [
+      "더 좋은 음질과 날카로운 가사",
+      "역동적인 곡 구조",
+      "Remaster로 기존 곡 업그레이드"
+    ],
+    "url": "https://suno.com/release-notes/v4-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2024-11-18-1",
+    "service": "mureka",
+    "date": "2024.11.18",
+    "kind": "요금",
+    "title": "Mureka Basic에서 Pro로 원클릭 변경",
+    "summary": "Basic 구독을 한 번에 Pro로 바꿀 수 있게 됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2024-11-11-1",
+    "service": "mureka",
+    "date": "2024.11.11",
+    "kind": "기능",
+    "title": "Mureka 제목 기반 가사 생성과 Pro 플랜 업그레이드",
+    "summary": "곡 제목으로 가사를 만드는 Write about 기능과 초보자용 Advanced 모드 안내가 추가됐고, Pro 플랜이 업그레이드됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-11-11-1",
+    "service": "elevenlabs",
+    "date": "2024.11.11",
+    "kind": "기능",
+    "title": "Conversational AI·GenFM·Workspaces 발표",
+    "summary": "실시간 음성 대화 도구 Conversational AI, 개인 팟캐스트를 만드는 GenFM을 담은 ElevenReader 업그레이드, 다인원 협업 Workspaces를 발표했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-conversational-ai-genfm-market-expansion-and-more",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-11-07-1",
+    "service": "suno",
+    "date": "2024.11.07",
+    "kind": "앱",
+    "title": "Suno Android 앱 사전 등록",
+    "summary": "Suno Android 앱 출시를 앞두고 사전 등록을 시작했어요.",
+    "url": "https://suno.com/release-notes/suno-on-android-is-finally-open-to-pre-registration",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-10-31-1",
+    "service": "suno",
+    "date": "2024.10.31",
+    "kind": "기능",
+    "title": "Suno Personas, 보컬·스타일 저장",
+    "summary": "마음에 드는 곡의 보컬·스타일·분위기를 Persona로 저장해 다른 곡에도 다시 쓸 수 있어요.",
+    "url": "https://suno.com/release-notes/introducing-personas",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2024-10-30-1",
+    "service": "mureka",
+    "date": "2024.10.30",
+    "kind": "기능",
+    "title": "Mureka 곡 게시와 홈 개편",
+    "summary": "만든 곡을 Mureka에 게시해 홈의 New Songs에 올릴 수 있고, 홈에 Trending Songs와 장르별 곡이 생겼어요. 앱·웹 동시 로그인도 지원해요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-10-27-1",
+    "service": "elevenlabs",
+    "date": "2024.10.27",
+    "kind": "API",
+    "title": "TTS 웹소켓 Auto Mode와 u-law 포맷",
+    "summary": "지연을 줄이는 TTS 웹소켓 Auto Mode와 Twilio 연동용 u-law 오디오 포맷이 추가됐고, 웹사이트 TTS 리디자인 알파가 시작됐어요.",
+    "details": [
+      "Convai API u-law 오디오 포맷",
+      "TTS 웹소켓 flush·생성 동작 개선",
+      "청크 스케줄링을 끈 Auto Mode",
+      "모든 모델 지연 일관성 개선"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/27",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2024-10-20-1",
+    "service": "elevenlabs",
+    "date": "2024.10.20",
+    "kind": "기능",
+    "title": "Voice Design 베타 공개",
+    "summary": "텍스트 설명으로 새 목소리를 만드는 Voice Design 기능이 베타로 열렸어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/20",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-10-16-1",
+    "service": "suno",
+    "date": "2024.10.16",
+    "kind": "기능",
+    "title": "사진·영상으로 곡 만드는 Suno Scenes",
+    "summary": "사진과 영상을 바탕으로 맞춤 사운드트랙을 만드는 Suno Scenes가 미국 iPhone 앱에 먼저 나왔어요.",
+    "url": "https://suno.com/release-notes/introducing-suno-scenes",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-10-13-1",
+    "service": "elevenlabs",
+    "date": "2024.10.13",
+    "kind": "기능",
+    "title": "전 모델 안정성 향상과 Agents Platform 베타",
+    "summary": "Turbo v2·v2.5를 중심으로 모든 모델의 오디오 안정성이 좋아지고 첫 바이트 지연이 20~30ms 줄었어요. Agents Platform이 베타로 열렸어요.",
+    "details": [
+      "웹소켓·Projects·Reader 등에서 오디오 안정성 개선",
+      "첫 바이트 지연 약 20~30ms 단축",
+      "보이스 샘플·STS 입력 배경 소음 제거 무료 제공",
+      "Agents Platform 베타"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/13",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-10-10-1",
+    "service": "suno",
+    "date": "2024.10.10",
+    "kind": "기능",
+    "title": "Suno 구간 교체 Replace Section",
+    "summary": "Pro·Premier 사용자가 곡의 특정 구간 가사나 연주를 다시 만들어 바꿀 수 있어요.",
+    "url": "https://suno.com/release-notes/replace-section",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-09-24-1",
+    "service": "suno",
+    "date": "2024.09.24",
+    "kind": "기능",
+    "title": "Suno 곡 자르기 Crop Songs",
+    "summary": "Pro·Premier 사용자가 곡의 원하는 부분만 남기고 나머지를 잘라낼 수 있어요.",
+    "url": "https://suno.com/release-notes/crop-songs",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-09-24-1",
+    "service": "elevenlabs",
+    "date": "2024.09.24",
+    "kind": "API",
+    "title": "ElevenLabs WebSocket 안정성 개선과 타임아웃 설정",
+    "summary": "WebSocket API가 장편 오디오에서 더 안정적으로 동작하고, 비활성 타임아웃을 직접 설정할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/websocket-improvements-reliability-and-custom-timeout",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-09-19-1",
+    "service": "suno",
+    "date": "2024.09.19",
+    "kind": "기능",
+    "title": "Suno Exclude Styles",
+    "summary": "Pro·Premier 사용자가 곡을 만들 때 특정 악기·스타일·보컬을 빼도록 지정할 수 있어요.",
+    "url": "https://suno.com/release-notes/exclude-styles",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-09-12-1",
+    "service": "suno",
+    "date": "2024.09.12",
+    "kind": "기능",
+    "title": "Suno Covers, 멜로디 유지한 스타일 변환",
+    "summary": "내 곡의 멜로디는 그대로 두고 다른 스타일로 바꾸는 Covers가 Pro·Premier에 얼리 액세스 베타로 나왔어요.",
+    "url": "https://suno.com/release-notes/covers-reimagine-the-music-you-love",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-09-05-1",
+    "service": "elevenlabs",
+    "date": "2024.09.05",
+    "kind": "요금",
+    "title": "TTS·STS 무료 재생성 2회 제공",
+    "summary": "첫 생성 결과가 마음에 들지 않으면 Text to Speech와 Speech to Speech에서 두 번까지 무료로 다시 생성할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/two-free-regenerations",
+    "source": "notice"
+  },
+  {
+    "id": "minimax-audio-2024-08-31-1",
+    "service": "minimax-audio",
+    "date": "2024.08.31",
+    "kind": "모델",
+    "title": "MiniMax 음성 모델 Speech-01·음악 모델 Music-01",
+    "summary": "수백만 시간 음성으로 학습해 여러 감정을 표현하는 음성 생성 모델 Speech-01과, 반주와 보컬을 함께 만드는 음악 모델 Music-01을 공개했어요.",
+    "details": [
+      "Speech-01: 다감정 초현실 음성 생성",
+      "Music-01: 반주·보컬 동시 생성"
+    ],
+    "url": "https://www.minimax.io/news/speech-01",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-08-23-1",
+    "service": "suno",
+    "date": "2024.08.23",
+    "kind": "기능",
+    "title": "Suno 개인화 홈페이지",
+    "summary": "여러 언어의 글로벌 트렌딩 등 더 개인화된 새 홈페이지가 나왔어요.",
+    "url": "https://suno.com/release-notes/your-new-homepage",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-08-12-1",
+    "service": "suno",
+    "date": "2024.08.12",
+    "kind": "요금",
+    "title": "Pro·Premier 하루 50 무료 크레딧",
+    "summary": "Pro·Premier 크리에이터는 월 크레딧을 다 쓴 뒤에도 매일 무료 크레딧 50개를 받아요.",
+    "url": "https://suno.com/release-notes/pro-premier-creators-now-get-50-credits-per-day",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-07-30-1",
+    "service": "suno",
+    "date": "2024.07.30",
+    "kind": "기능",
+    "title": "Suno Create에 곡 아이디어 제안",
+    "summary": "Create의 Need ideas? 섹션에서 주제를 골라 빈칸을 채우면 개인화된 곡 아이디어를 얻을 수 있어요.",
+    "url": "https://suno.com/release-notes/new-song-ideas-available-on-create",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-07-30-1",
+    "service": "elevenlabs",
+    "date": "2024.07.30",
+    "kind": "모델",
+    "title": "베트남어·노르웨이어·헝가리어 추가, 32개 언어",
+    "summary": "베트남어, 노르웨이어, 헝가리어가 추가돼 ElevenLabs에서 32개 언어로 고품질 음성을 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-vietnamese-norwegian-and-hungarian",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-07-23-1",
+    "service": "suno",
+    "date": "2024.07.23",
+    "kind": "기능",
+    "title": "Suno 보컬·반주 스템 분리",
+    "summary": "Pro·Premier 사용자가 곡에서 보컬과 반주를 분리해 받을 수 있어요.",
+    "url": "https://suno.com/release-notes/instrumental-and-vocal-stems",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-07-22-1",
+    "service": "elevenlabs",
+    "date": "2024.07.22",
+    "kind": "앱",
+    "title": "ElevenLabs Reader 앱 Android 출시",
+    "summary": "ElevenLabs Reader 앱이 Android에서도 나와 어떤 글이든 고품질 AI 목소리로 들을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/the-reader-app-is-now-on-android",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-07-19-1",
+    "service": "elevenlabs",
+    "date": "2024.07.19",
+    "kind": "모델",
+    "title": "Eleven Turbo v2.5, 32개 언어 3배 빨라짐",
+    "summary": "힌디어·프랑스어·스페인어·중국어 등 32개 언어에서 3배 빠른 음성 합성 모델 Turbo v2.5가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-turbo-v25",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-07-12-1",
+    "service": "suno",
+    "date": "2024.07.12",
+    "kind": "기능",
+    "title": "Suno 곡 페이지에서 가사 편집",
+    "summary": "내가 만든 곡 페이지에서 표시되는 가사를 직접 고칠 수 있어요.",
+    "url": "https://suno.com/release-notes/edit-lyrics-are-available-from-within-the-song-page",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-07-10-1",
+    "service": "suno",
+    "date": "2024.07.10",
+    "kind": "기능",
+    "title": "Suno 사용자 검색과 라이브러리 페이지 이동",
+    "summary": "사용자를 검색할 수 있고, 곡이 많은 라이브러리에서 페이지 번호로 바로 이동할 수 있어요.",
+    "url": "https://suno.com/release-notes/user-search-and-jump-to-library-pages",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-07-10-1",
+    "service": "elevenlabs",
+    "date": "2024.07.10",
+    "kind": "API",
+    "title": "ElevenLabs Voice Isolator API 출시",
+    "summary": "음성·영상에서 배경 소음을 지우고 깨끗한 목소리만 뽑아 주는 Voice Isolator API가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/voice-isolator-api-launch",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-07-08-1",
+    "service": "suno",
+    "date": "2024.07.08",
+    "kind": "기능",
+    "title": "Suno.com 새 디자인",
+    "summary": "Suno.com이 새 디자인으로 바뀌었고, 곡 생성과 정리를 쉽게 하는 워크플로 개선이 이어질 예정이에요.",
+    "url": "https://suno.com/release-notes/suno-has-a-new-look",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-07-02-1",
+    "service": "elevenlabs",
+    "date": "2024.07.02",
+    "kind": "연동",
+    "title": "주디 갈랜드 등 전설적 배우 목소리 Iconic Voices",
+    "summary": "유족과의 제휴로 주디 갈랜드, 제임스 딘, 버트 레이놀즈, 로런스 올리비에 경의 목소리가 Reader 앱 음성 라이브러리에 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/iconic-voices",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-07-01-1",
+    "service": "suno",
+    "date": "2024.07.01",
+    "kind": "앱",
+    "title": "Suno iOS 앱 출시",
+    "summary": "가사·설명이나 직접 녹음한 소리로 곡을 만드는 Suno 첫 모바일 앱이 iOS로 나왔어요.",
+    "url": "https://suno.com/release-notes/suno-is-on-ios",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-06-28-1",
+    "service": "suno",
+    "date": "2024.06.28",
+    "kind": "요금",
+    "title": "Suno Audio Input 무료 계정에도 개방",
+    "summary": "Audio Input을 무료 계정을 포함한 모든 사용자가 쓸 수 있게 됐어요.",
+    "url": "https://suno.com/release-notes/audio-inputs-for-everyone",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-06-25-1",
+    "service": "elevenlabs",
+    "date": "2024.06.25",
+    "kind": "앱",
+    "title": "ElevenLabs Reader 앱 출시",
+    "summary": "어떤 글이든 ElevenLabs 목소리로 들을 수 있는 모바일 앱 ElevenLabs Reader가 출시됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-reader-app",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-06-21-1",
+    "service": "suno",
+    "date": "2024.06.21",
+    "kind": "기능",
+    "title": "Suno 팔로잉 피드",
+    "summary": "팔로우한 아티스트의 최신 곡을 모아 보는 Following Feed가 생겼어요.",
+    "url": "https://suno.com/release-notes/following-feed",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-06-12-1",
+    "service": "suno",
+    "date": "2024.06.12",
+    "kind": "기능",
+    "title": "Suno Audio Input, 어떤 소리로든 곡 만들기",
+    "summary": "Pro·Premier 사용자가 직접 녹음하거나 올린 소리로 곡을 만드는 Audio Input이 나왔어요.",
+    "url": "https://suno.com/release-notes/audio-inputs",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-06-07-1",
+    "service": "suno",
+    "date": "2024.06.07",
+    "kind": "기능",
+    "title": "Suno Song Radio",
+    "summary": "아무 곡에서나 비슷한 곡이 이어서 나오는 Song Radio를 시작할 수 있어요.",
+    "url": "https://suno.com/release-notes/song-radio",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2024-06-05-1",
+    "service": "stable-audio",
+    "date": "2024.06.05",
+    "kind": "모델",
+    "title": "오픈소스 Stable Audio Open 공개",
+    "summary": "짧은 샘플·효과음·제작용 소리를 텍스트로 만드는 오픈소스 모델 Stable Audio Open을 공개했어요.",
+    "url": "https://stability.ai/news-updates/introducing-stable-audio-open",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-06-03-1",
+    "service": "suno",
+    "date": "2024.06.03",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 검색",
+    "summary": "제목과 설명으로 플레이리스트를 검색할 수 있게 됐어요.",
+    "url": "https://suno.com/release-notes/suno-playlists-are-searchable",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-05-30-1",
+    "service": "suno",
+    "date": "2024.05.30",
+    "kind": "모델",
+    "title": "Suno v3.5 전체 공개",
+    "summary": "v3.5를 모두에게 공개해 4분 곡을 한 번에 만들고 최대 2분 확장을 할 수 있어요. 크레딧 소모는 그대로예요.",
+    "url": "https://suno.com/release-notes/v3-5-is-available-to-everyone",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-05-29-1",
+    "service": "suno",
+    "date": "2024.05.29",
+    "kind": "기능",
+    "title": "Suno 스타일 탐색과 라이브러리 검색",
+    "summary": "곡의 스타일을 눌러 같은 스타일 곡을 둘러보고, 내 라이브러리에서 곡을 검색할 수 있어요.",
+    "url": "https://suno.com/release-notes/explore-styles-and-search-through-your-library",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-05-24-1",
+    "service": "suno",
+    "date": "2024.05.24",
+    "kind": "모델",
+    "title": "Suno v3.5 얼리 액세스, 4분 곡",
+    "summary": "한 번에 최대 4분 곡을 만드는 v3.5를 Pro·Premier 회원이 먼저 쓸 수 있어요.",
+    "url": "https://suno.com/release-notes/v3-5-early-access-4-minute-songs",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-05-22-1",
+    "service": "suno",
+    "date": "2024.05.22",
+    "kind": "기능",
+    "title": "Suno 팔로우·곡 검색·이미지 커스텀",
+    "summary": "크리에이터 팔로우, 공개 곡 검색이 생기고 Pro·Premier는 프로필·커버 이미지를 올리거나 프롬프트로 다시 만들 수 있어요.",
+    "details": [
+      "크리에이터 팔로우",
+      "공개 곡 제목·태그 검색",
+      "프로필·커버·플레이리스트 이미지 커스텀",
+      "모바일 생성·탐색 개선"
+    ],
+    "url": "https://suno.com/release-notes/customize-images-pro-and-premier",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-05-16-1",
+    "service": "elevenlabs",
+    "date": "2024.05.16",
+    "kind": "기능",
+    "title": "웹 글을 음성으로 읽어 주는 Audio Native",
+    "summary": "웹사이트에 재생 버튼을 달아 글을 ElevenLabs 목소리로 자동 내레이션해 주는 Audio Native를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/audio-native",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-05-14-1",
+    "service": "elevenlabs",
+    "date": "2024.05.14",
+    "kind": "API",
+    "title": "ElevenLabs TTS 타임스탬프 엔드포인트",
+    "summary": "각 글자가 언제 발화되는지 타임스탬프를 함께 주는 Text to Speech 엔드포인트 두 개가 추가됐어요. 자막·립싱크 작업에 유용해요.",
+    "url": "https://elevenlabs.io/blog/new-text-to-speech-endpoints-with-timestamps",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-04-12-1",
+    "service": "suno",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "Suno 프로필·Explore·새 홈페이지",
+    "summary": "내 곡을 모아 보여 주는 Profiles, 탐색형 감상 공간 Explore(베타), 카테고리별 새 홈페이지가 나왔어요.",
+    "details": [
+      "Profiles와 핸들",
+      "Explore (Beta)",
+      "New·Trending·Liked 홈 카테고리"
+    ],
+    "url": "https://suno.com/release-notes/profiles",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2024-04-03-1",
+    "service": "stable-audio",
+    "date": "2024.04.03",
+    "kind": "모델",
+    "title": "Stable Audio 2.0, 3분 풀트랙과 오디오 투 오디오",
+    "summary": "프롬프트 하나로 44.1kHz 스테레오 최대 3분 곡을 구조 있게 만들고, 샘플을 올려 변환하는 audio-to-audio를 지원하는 Stable Audio 2.0이 나왔어요.",
+    "details": [
+      "최대 3분 44.1kHz 스테레오 풀트랙",
+      "업로드 샘플 audio-to-audio 변환",
+      "AudioSparx 라이선스 데이터로만 학습"
+    ],
+    "url": "https://stability.ai/news-updates/stable-audio-2-0",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-03-21-1",
+    "service": "suno",
+    "date": "2024.03.21",
+    "kind": "모델",
+    "title": "Suno v3 출시, 2분 곡을 몇 초 만에",
+    "summary": "라디오 품질 음악을 만드는 첫 모델 v3가 모든 사용자에게 열렸어요. 2분짜리 곡을 몇 초 만에 만들고 장르와 프롬프트 반영이 좋아졌어요.",
+    "details": [
+      "음질 향상",
+      "더 많은 스타일·장르",
+      "프롬프트 반영 개선, 자연스러운 엔딩"
+    ],
+    "url": "https://suno.com/blog/v3",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-03-06-1",
+    "service": "elevenlabs",
+    "date": "2024.03.06",
+    "kind": "API",
+    "title": "ElevenLabs Speech-to-Speech API 공개",
+    "summary": "음성 변환 Speech-to-Speech API를 누구나 쓸 수 있게 공개했어요.",
+    "url": "https://elevenlabs.io/blog/speech-to-speech-api-public-release",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2024-03-05-1",
+    "service": "suno",
+    "date": "2024.03.05",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 기능",
+    "summary": "라이브러리에서 플레이리스트를 만들어 곡을 정리하고 링크로 공유할 수 있어요.",
+    "url": "https://suno.com/release-notes/playlists",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-02-22-1",
+    "service": "suno",
+    "date": "2024.02.22",
+    "kind": "모델",
+    "title": "Suno V3 Alpha, Pro·Premier 선공개",
+    "summary": "음질과 표현력이 좋아진 새 모델 V3를 정식 출시 전에 Pro·Premier 회원이 V3 Alpha로 먼저 테스트할 수 있어요.",
+    "url": "https://suno.com/release-notes/v3-alpha-access-for-pro-premier-members",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-02-13-1",
+    "service": "elevenlabs",
+    "date": "2024.02.13",
+    "kind": "요금",
+    "title": "Voice Library 성우 수익 지급 Voice Actor Payouts",
+    "summary": "Voice Library에 공유한 목소리가 쓰이면 성우가 수익을 받는 Voice Actor Payouts 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-voice-actor-payouts",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2024-01-27-1",
+    "service": "suno",
+    "date": "2024.01.27",
+    "kind": "기능",
+    "title": "Suno 곡 삭제 등 사용성 개선",
+    "summary": "Move to Trash로 곡을 삭제하는 기능 등 사용자 피드백을 반영한 사용성 개선이 들어갔어요.",
+    "url": "https://suno.com/release-notes/quality-of-life-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2023-12-22-1",
+    "service": "suno",
+    "date": "2023.12.22",
+    "kind": "기능",
+    "title": "Suno 연말 패치, Continue 버튼 등",
+    "summary": "클립 이어 만들기 때 Create 버튼이 Continue로 바뀌는 등 작은 기능 개선 패치가 나왔어요.",
+    "url": "https://suno.com/release-notes/happy-holidays",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-11-22-1",
+    "service": "elevenlabs",
+    "date": "2023.11.22",
+    "kind": "기능",
+    "title": "ElevenLabs Voice Changer(Speech to Speech)",
+    "summary": "녹음한 목소리를 다른 목소리로 바꿔 주는 음성 변환 도구 Voice Changer를 선보였어요. 연기 톤과 감정을 살린 채 목소리만 바꿀 수 있어요.",
+    "url": "https://elevenlabs.io/blog/speech-to-speech",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-11-09-1",
+    "service": "elevenlabs",
+    "date": "2023.11.09",
+    "kind": "모델",
+    "title": "Eleven Turbo v2 출시, 약 400ms 지연",
+    "summary": "약 400ms 지연으로 V1 모델보다 두 배 이상 빠른 음성 합성 모델 Turbo v2가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/turbo-v2-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-10-28-1",
+    "service": "elevenlabs",
+    "date": "2023.10.28",
+    "kind": "기능",
+    "title": "ElevenLabs Projects 자동 음량 정규화",
+    "summary": "Projects(현 Studio)가 오디오북 유통사 기준에 맞춰 자동으로 음량을 정규화해 줘요.",
+    "url": "https://elevenlabs.io/blog/audio-normalization-in-projects",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-10-10-1",
+    "service": "elevenlabs",
+    "date": "2023.10.10",
+    "kind": "기능",
+    "title": "ElevenLabs AI Dubbing 출시",
+    "summary": "원래 목소리를 유지하며 영상·음성을 다른 언어로 옮기는 AI Dubbing 기능을 공개했어요. 콘텐츠의 언어 장벽을 낮추는 큰 이정표예요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-launches-voice-translation-tool-to-break-down-language-barriers-for-content",
+    "source": "notice"
+  },
+  {
+    "id": "stable-audio-2023-09-13-1",
+    "service": "stable-audio",
+    "date": "2023.09.13",
+    "kind": "앱",
+    "title": "Stability AI, 음악·효과음 생성 Stable Audio 출시",
+    "summary": "Stability AI의 첫 음악·사운드 생성 제품 Stable Audio가 웹으로 출시됐어요. 텍스트로 더 빠르고 품질 좋은 음악과 효과음을 만들 수 있어요.",
+    "url": "https://stability.ai/news-updates/stable-audio-using-ai-to-generate-music",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-09-06-1",
+    "service": "elevenlabs",
+    "date": "2023.09.06",
+    "kind": "API",
+    "title": "ElevenLabs API에 PCM 출력 포맷 추가",
+    "summary": "일반·스트리밍·웹소켓 엔드포인트에 4가지 옵션의 PCM 오디오 출력 포맷이 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/pcm-output-format",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2023-08-22-1",
+    "service": "elevenlabs",
+    "date": "2023.08.22",
+    "kind": "모델",
+    "title": "ElevenLabs 베타 종료, Eleven Multilingual v2 출시",
+    "summary": "ElevenLabs가 베타를 마치고 약 30개 언어를 지원하는 음성 합성 모델 Eleven Multilingual v2를 내놨어요. 게임·출판·미디어 콘텐츠를 여러 언어로 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-comes-out-of-beta-and-releases-eleven-multilingual-v2-a-foundational-ai-speech-model-for-nearly-30-languages",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-08-10-1",
+    "service": "elevenlabs",
+    "date": "2023.08.10",
+    "kind": "기능",
+    "title": "ElevenLabs 사용량 분석 대시보드",
+    "summary": "Independent Publisher 등급 이상 사용자는 글자 사용량 추이와 추가 지표를 보여 주는 대시보드를 쓸 수 있어요.",
+    "url": "https://elevenlabs.io/blog/usage-analytics-dashboard",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-06-20-1",
+    "service": "elevenlabs",
+    "date": "2023.06.20",
+    "kind": "기능",
+    "title": "ElevenLabs 오디오북 제작 도구와 AI 음성 판별 모델",
+    "summary": "몇 분 만에 오디오북 전체를 만드는 제작 도구와 AI 음성 판별 모델을 내놨어요. 1,900만 달러 시리즈 A 투자도 함께 발표했어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-launches-new-generative-voice-ai-products-and-announces-19m-series-a-round-led-by-nat-friedman-daniel-gross-and-andreessen-horowitz",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-04-27-1",
+    "service": "elevenlabs",
+    "date": "2023.04.27",
+    "kind": "모델",
+    "title": "Eleven Multilingual v1, 7개 언어 추가",
+    "summary": "7개 새 언어를 지원하는 다국어 음성 합성 모델 Eleven Multilingual v1이 나왔어요. 감정과 맥락을 살린 AI 음성을 여러 언어로 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/eleven-multilingual-v1",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2023-01-23-1",
+    "service": "elevenlabs",
+    "date": "2023.01.23",
+    "kind": "앱",
+    "title": "ElevenLabs 베타 플랫폼 출시",
+    "summary": "크리에이터와 출판사가 장편 콘텐츠를 실감 나는 AI 목소리로 내레이션할 수 있는 ElevenLabs 베타 플랫폼이 출시됐어요. 200만 달러 프리시드 투자도 발표했어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-raises-2m-pre-seed-and-announces-ai-speech-platform-promising-to-revolutionize-audio-storytelling",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2022-11-24-1",
+    "service": "elevenlabs",
+    "date": "2022.11.24",
+    "kind": "모델",
+    "title": "ElevenLabs 음성 합성 모델, 감정·맥락 표현 공개",
+    "summary": "ElevenLabs가 웃음까지 표현하는 감정 풍부하고 맥락을 이해하는 음성 합성 모델을 선보이며 베타를 예고했어요.",
+    "url": "https://elevenlabs.io/blog/thefirstaithatcanlaugh",
+    "source": "notice"
+  }
+]

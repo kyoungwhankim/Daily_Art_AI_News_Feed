@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2026-04-28-1",
+    "service": "unity-ai",
+    "date": "2026.04.28",
+    "kind": "연동",
+    "title": "AI Assistant 2.7: Figma-to-UI 도구와 공개 AssistantApi",
+    "summary": "AI Assistant 2.7.0에서 Figma 프로젝트의 화면과 디자인 에셋을 가져오는 Figma-to-UI 에이전트 도구와 공개 AssistantApi가 추가됐어요. 포인트 표기는 크레딧으로 바뀌었어요.",
+    "details": [
+      "프로젝트 설정에서 Figma 액세스 토큰 검증",
+      "Plan 모드에서 콘솔 로그·패키지 정보 조회",
+      "API 키·토큰이 로그에 남지 않도록 보안 강화"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#270-pre1---2026-04-28",
+    "source": "dev"
+  }
+]

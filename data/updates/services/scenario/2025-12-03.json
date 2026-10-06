@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-12-03-1",
+    "service": "scenario",
+    "date": "2025.12.03",
+    "kind": "API",
+    "title": "새 메시 변환기·공개 앱 15종",
+    "summary": "glb·obj·fbx·stl·ply·vox 간 변환을 지원하는 새 메시 변환기와 15개 이상의 공개 앱이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-100-0",
+    "source": "dev"
+  }
+]

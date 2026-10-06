@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-07-16-1",
+    "service": "unity-ai",
+    "date": "2025.07.16",
+    "kind": "기능",
+    "title": "AI Generators: 애니메이션 트림·정규화 탭",
+    "summary": "AI Generators 1.0.0-pre.16에서 애니메이션 생성기에 트림·정규화 탭이 생기고, 저작권 관련 안내와 머티리얼 베이스 맵 지정이 추가됐어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre16---2025-07-16",
+    "source": "dev"
+  }
+]

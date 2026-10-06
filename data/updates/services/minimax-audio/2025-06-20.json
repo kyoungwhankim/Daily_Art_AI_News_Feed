@@ -1,0 +1,17 @@
+[
+  {
+    "id": "minimax-audio-2025-06-20-1",
+    "service": "minimax-audio",
+    "date": "2025.06.20",
+    "kind": "모델",
+    "title": "MiniMax Music-1.5 베타와 Voice Design API",
+    "summary": "음악 프롬프트와 가사로 곡을 만드는 Music-1.5 베타가 나왔어요. API에는 텍스트로 목소리를 만드는 Voice Design이 추가되고 기존 text-to-voice API는 레거시가 됐어요.",
+    "details": [
+      "Music-1.5 (Beta)",
+      "Voice Design API",
+      "기존 text-to-voice API 레거시 전환"
+    ],
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2023-03-30-1",
+    "service": "fal.ai",
+    "date": "2023.03.30",
+    "kind": "앱",
+    "title": "fal-serverless 출시",
+    "summary": "데이터 파이프라인·ML 학습·추론용 클라우드 Python 런타임 fal-serverless를 출시했어요. 지금의 fal 플랫폼의 출발점이에요.",
+    "url": "https://blog.fal.ai/introducing-fal-serverless/",
+    "source": "notice"
+  }
+]

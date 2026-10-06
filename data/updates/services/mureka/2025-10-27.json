@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-10-27-1",
+    "service": "mureka",
+    "date": "2025.10.27",
+    "kind": "API",
+    "title": "스트리밍 URL 유효 시간 연장",
+    "summary": "스트림 모드에서 곡 생성이 끝난 뒤에도 스트림 URL이 5분 더 유효해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "nvidia-studio-2022-01-04-1",
+    "service": "nvidia-studio",
+    "date": "2022.01.04",
+    "kind": "모델",
+    "title": "NVIDIA Canvas, GauGAN2 모델로 4배 해상도",
+    "summary": "NVIDIA Canvas가 GauGAN2 AI 모델로 업데이트돼 배경을 4배 높은 해상도와 더 좋은 품질로 생성하고, 새 재질 5종이 추가됐어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-canvas-update-gaugan2-ces/",
+    "source": "notice"
+  },
+  {
+    "id": "nvidia-studio-2022-01-04-2",
+    "service": "nvidia-studio",
+    "date": "2022.01.04",
+    "kind": "요금",
+    "title": "Omniverse, 개인 크리에이터에게 무료 제공",
+    "summary": "NVIDIA Omniverse가 GeForce RTX·NVIDIA RTX GPU를 쓰는 개인 Studio 크리에이터에게 무료로 제공돼요. Machinima·Audio2Face 업데이트와 Nucleus Cloud도 발표됐어요.",
+    "url": "https://blogs.nvidia.com/blog/omniverse-available-free-to-creators/",
+    "source": "notice"
+  }
+]

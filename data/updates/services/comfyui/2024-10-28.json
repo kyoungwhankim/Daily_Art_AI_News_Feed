@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-10-28-1",
+    "service": "comfyui",
+    "date": "2024.10.28",
+    "kind": "기능",
+    "title": "ComfyUI, 11월 15일부터 새 UI를 기본값으로",
+    "summary": "5개월간 다듬은 새 UI(베타 UI)를 2024년 11월 15일부터 ComfyUI의 기본 인터페이스로 바꾸고, 기존 UI는 단계적으로 지원을 줄인다고 알렸어요.",
+    "url": "https://blog.comfy.org/p/making-new-ui-the-default-option-on-2024-11-15",
+    "source": "notice"
+  }
+]

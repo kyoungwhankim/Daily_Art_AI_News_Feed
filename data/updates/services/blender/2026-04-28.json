@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2026-04-28-1",
+    "service": "blender",
+    "date": "2026.04.28",
+    "kind": "연동",
+    "title": "Anthropic, Blender Development Fund 후원 발표",
+    "summary": "Blender Foundation이 Anthropic의 Corporate Patron 가입을 발표했어요. 후원금은 Python API 등 핵심 개발에 쓰일 예정이었으나 이후 일회성 기부로 전환됐어요.",
+    "url": "https://www.blender.org/archive/anthropic-joins-the-blender-development-fund-as-corporate-patron/",
+    "source": "notice"
+  }
+]

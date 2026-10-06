@@ -1,0 +1,15 @@
+[
+  {
+    "id": "fal.ai-2026-08-27-1",
+    "service": "fal.ai",
+    "date": "2026.08.27",
+    "kind": "모델",
+    "title": "fal 자체 영상 모델 H3 Max 공개",
+    "summary": "fal Research가 MiniMax H3를 후학습해 만든 H3 Max가 나왔어요. 5초 영상을 3초 안에 만들고, 사람 선호 평가에서 품질·프롬프트 이해·미감 모두 1위를 기록했어요.",
+    "details": [
+      "공식 MiniMax H3 엔드포인트 대비 약 35배 처리량"
+    ],
+    "url": "https://blog.fal.ai/introducing-h3-max-by-fal/",
+    "source": "notice"
+  }
+]

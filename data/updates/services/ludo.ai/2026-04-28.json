@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-04-28-1",
+    "service": "ludo.ai",
+    "date": "2026.04.28",
+    "kind": "모델",
+    "title": "애니메이션 모델 Eagle 공개·영상 비용 인하",
+    "summary": "캐릭터 일관성이 뛰어난 새 애니메이션 모델 Eagle과 오디오를 함께 만드는 Eagle with Audio가 나왔어요. 영상 생성 비용도 크게 내렸어요.",
+    "details": [
+      "모델에 코드명 도입(Eagle, Blitz)",
+      "Eagle with Audio: 대사·효과음이 동기화된 애니메이션",
+      "영상 생성 크레딧 대폭 인하",
+      "스프라이트 최대 4초, 영상 최대 15초, 길이 기반 요금"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-eagle-and-blitz-codenamed-animation-models",
+    "source": "notice"
+  }
+]

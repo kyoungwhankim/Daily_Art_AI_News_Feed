@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-07-09-1",
+    "service": "mureka",
+    "date": "2026.07.09",
+    "kind": "API",
+    "title": "음악 채보 API와 가사 모델 강화",
+    "summary": "음악을 악보로 옮기는 Music Transcription API가 나왔고, 사운드트랙 API에 구간 파라미터가 생겼어요. 가사 생성 모델도 강화됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-07-13-1",
+    "service": "elevenlabs",
+    "date": "2026.07.13",
+    "kind": "API",
+    "title": "에이전트별 감정 분석 설정",
+    "summary": "플랫폼 설정에 통화 후 감정 분석 옵션이 추가돼 에이전트마다 따로 켤 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/7/13",
+    "source": "dev"
+  }
+]

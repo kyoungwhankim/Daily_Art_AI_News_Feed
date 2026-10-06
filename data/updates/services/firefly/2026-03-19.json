@@ -1,0 +1,17 @@
+[
+  {
+    "id": "firefly-2026-03-19-1",
+    "service": "firefly",
+    "date": "2026.03.19",
+    "kind": "기능",
+    "title": "Firefly 커스텀 모델 공개 베타",
+    "summary": "내 이미지로 스타일을 학습시키는 Firefly 커스텀 모델이 모든 유료 개인 고객에게 공개 베타로 열렸어요. 캐릭터·일러스트·사진 스타일에 맞춰 Firefly와 Boards에서 쓸 수 있어요.",
+    "details": [
+      "학습과 생성에 플랜의 생성 크레딧 사용",
+      "업로드한 자료는 Firefly 모델 학습에 쓰이지 않음",
+      "Kling 등 30개 넘는 모델 제공"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2026/03/19/adobe-firefly-expands-video-image-creation-with-new-ai-capabilities-custom-models",
+    "source": "notice"
+  }
+]

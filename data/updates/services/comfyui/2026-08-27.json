@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-08-27-1",
+    "service": "comfyui",
+    "date": "2026.08.27",
+    "kind": "요금",
+    "title": "Comfy, MiniMax H3 상업 라이선스 공식 판매",
+    "summary": "MiniMax와 협력해 Comfy가 로컬 상업용 MiniMax H3 라이선스를 판매해요. 결과물 전권과 LoRA 학습 권리가 포함돼요.",
+    "url": "https://blog.comfy.org/p/comfy-is-now-the-only-official-reseller",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-08-27-2",
+    "service": "comfyui",
+    "date": "2026.08.27",
+    "kind": "연동",
+    "title": "ComfyUI v0.34.2: Gemini Omni 1.1 Flash 노드",
+    "summary": "ComfyUI v0.34.2에서 4K 출력과 영상 연장, 대화형 편집을 지원하는 Gemini Omni 1.1 Flash 영상 노드가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-34-2",
+    "source": "notice"
+  }
+]

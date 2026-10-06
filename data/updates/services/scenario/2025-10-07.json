@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-10-07-1",
+    "service": "scenario",
+    "date": "2025.10.07",
+    "kind": "기능",
+    "title": "Sora 2·Epochs·Flux Kontext LoRA",
+    "summary": "편집 모델을 직접 학습하는 Flux Kontext LoRA가 나왔어요. Sora 2 영상 모델과 학습 Epochs 설정도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-100-introducing-sora-2-and-flux-kontext-loras",
+    "source": "notice"
+  }
+]

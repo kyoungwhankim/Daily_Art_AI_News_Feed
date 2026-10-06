@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flow-studio-2024-05-30-1",
+    "service": "flow-studio",
+    "date": "2024.05.30",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya 워크플로·Unreal 씬 개선",
+    "summary": "Maya에서 프록시를 원본 캐릭터로 바꿔도 깨지지 않고, Unreal 씬에 절차적 Control Rig가 생성돼요. 새 캐릭터 Maria와 Apple·Google Pay 결제도 추가됐어요.",
+    "details": [
+      "Maya 원본 캐릭터 교체·FBX 로드 지원",
+      "Unreal 씬 캐릭터 인스턴싱과 Control Rig",
+      "새 캐릭터 Maria",
+      "Apple Pay·Google Pay 결제"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

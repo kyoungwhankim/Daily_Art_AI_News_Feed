@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-07-24-1",
+    "service": "claude",
+    "date": "2025.07.24",
+    "kind": "요금",
+    "title": "Claude Opus 4 API 속도 제한 상향",
+    "summary": "Claude API의 Opus 4 속도 제한이 올라갔어요. 티어 1~4 고객에게 바로 적용돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
+    "source": "dev"
+  }
+]

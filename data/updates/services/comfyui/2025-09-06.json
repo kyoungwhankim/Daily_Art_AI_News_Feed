@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-09-06-1",
+    "service": "comfyui",
+    "date": "2025.09.06",
+    "kind": "모델",
+    "title": "ComfyUI v0.3.58: Hunyuan Image 2.1·Hunyuan3D 2.1",
+    "summary": "ComfyUI v0.3.58에서 Hunyuan Image 2.1과 Hunyuan3D 2.1을 지원하고, Stable Audio 2.5와 Seedance 영상 API 노드가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-3-58",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2023-10-27-1",
+    "service": "scenario",
+    "date": "2023.10.27",
+    "kind": "API",
+    "title": "학습 기본 파라미터 개선",
+    "summary": "모델 학습의 기본 파라미터가 개선되고 에셋 다운로드가 최신순으로 정렬돼요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-2-0-october-27th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-27-2",
+    "service": "scenario",
+    "date": "2023.10.27",
+    "kind": "기능",
+    "title": "에셋 정보 복사·캔버스 마스크 유지",
+    "summary": "에셋 정보 필드를 클릭해 복사할 수 있고, 캔버스가 생성 후에도 마스크를 유지해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-36-october-27th-2023",
+    "source": "notice"
+  }
+]

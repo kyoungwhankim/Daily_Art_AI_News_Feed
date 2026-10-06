@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-09-15-1",
+    "service": "scenario",
+    "date": "2023.09.15",
+    "kind": "기능",
+    "title": "편집 결과 바로 열기·이미지 유형 필터",
+    "summary": "배경 제거·업스케일·Pixelate 결과가 다운로드 대신 새 이미지로 열리고, 이미지 유형별 필터가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-31-0-september-15-2023",
+    "source": "notice"
+  }
+]

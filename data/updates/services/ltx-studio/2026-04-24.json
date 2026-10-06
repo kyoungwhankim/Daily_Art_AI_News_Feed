@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-04-24-1",
+    "service": "ltx-studio",
+    "date": "2026.04.24",
+    "kind": "모델",
+    "title": "LTX Studio에 Seedance 2.0 추가",
+    "summary": "ByteDance의 Seedance 2.0을 LTX Studio 워크플로 안에서 쓸 수 있어요. 더 선명한 움직임과 높은 프롬프트 충실도를 제공해요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

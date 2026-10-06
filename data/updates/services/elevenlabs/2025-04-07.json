@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2025-04-07-1",
+    "service": "elevenlabs",
+    "date": "2025.04.07",
+    "kind": "연동",
+    "title": "ElevenLabs MCP 서버 공개",
+    "summary": "Claude와 Cursor 같은 MCP 클라이언트가 텍스트 프롬프트로 ElevenLabs 오디오 기능 전체를 쓸 수 있는 MCP 서버를 공개했어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenlabs-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-04-07-2",
+    "service": "elevenlabs",
+    "date": "2025.04.07",
+    "kind": "모델",
+    "title": "scribe_v1_experimental 프리뷰",
+    "summary": "다국어 음성 성능을 높인 Scribe v1 실험 프리뷰가 나왔고, 유럽 전화망용 A-law 포맷이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/7",
+    "source": "dev"
+  }
+]

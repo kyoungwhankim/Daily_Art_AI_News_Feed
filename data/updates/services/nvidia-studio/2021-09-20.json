@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2021-09-20-1",
+    "service": "nvidia-studio",
+    "date": "2021.09.20",
+    "kind": "기능",
+    "title": "NVIDIA Canvas 커스텀 스타일·9월 Studio 드라이버",
+    "summary": "AI 페인팅 앱 NVIDIA Canvas에 내 이미지의 스타일을 그림에 입히는 커스텀 스타일이 추가됐어요. 9월 Studio 드라이버는 Windows 11과 Maxine AR SDK 업데이트를 지원해요.",
+    "url": "https://blogs.nvidia.com/blog/canvas-update-studio-driver/",
+    "source": "notice"
+  }
+]

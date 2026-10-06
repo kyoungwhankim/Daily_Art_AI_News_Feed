@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-02-05-1",
+    "service": "mureka",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "반주 생성 API에 mureka-7.6",
+    "summary": "반주(Instrumental) 생성 API의 model 필드에 mureka-7.6이 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

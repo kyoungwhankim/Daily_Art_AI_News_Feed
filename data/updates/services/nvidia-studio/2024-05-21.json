@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2024-05-21-1",
+    "service": "nvidia-studio",
+    "date": "2024.05.21",
+    "kind": "앱",
+    "title": "5월 Studio 드라이버: AI 앱 업데이트",
+    "summary": "GPU 가속·AI 기반 크리에이티브 앱 업데이트를 지원하는 5월 Studio 드라이버가 나왔어요. RTX Video AI 향상 기능도 확대됐어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-may-driver-rtx-video-remix/",
+    "source": "notice"
+  }
+]

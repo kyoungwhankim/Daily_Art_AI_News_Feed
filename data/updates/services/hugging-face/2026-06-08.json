@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-06-08-1",
+    "service": "hugging-face",
+    "date": "2026.06.08",
+    "kind": "API",
+    "title": "HF_TOKEN 없이 CI에서 모델 배포 (Trusted Publishing)",
+    "summary": "워크로드 아이덴티티 연동으로 GitHub·GitLab·커스텀 CI에서 시크릿 없이 Hugging Face 저장소에 배포할 수 있게 됐어요. npm·PyPI의 Trusted Publishing과 같은 방식이에요.",
+    "url": "https://huggingface.co/changelog/trusted-publishers",
+    "source": "notice"
+  }
+]

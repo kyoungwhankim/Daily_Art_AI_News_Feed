@@ -1,0 +1,12 @@
+[
+  {
+    "id": "rokoko-2022-10-31-1",
+    "service": "rokoko",
+    "date": "2022.10.31",
+    "kind": "연동",
+    "title": "Rokoko Studio 2.2.2, Rokoko Video 연동",
+    "summary": "단일 카메라 영상을 3D 애니메이션으로 바꾸는 무료 도구 Rokoko Video와 연동돼, 변환한 클립을 Studio에서 재생·정리·내보낼 수 있어요.",
+    "url": "https://support.rokoko.com/hc/en-us/articles/10260309626641-Rokoko-Studio-2-2-2",
+    "source": "dev"
+  }
+]

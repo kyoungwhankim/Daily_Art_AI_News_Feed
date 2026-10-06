@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flow-studio-2024-10-30-1",
+    "service": "flow-studio",
+    "date": "2024.10.30",
+    "kind": "기능",
+    "title": "Flow Studio, Video to 3D Scene 프로젝트 타입",
+    "summary": "멀티컷 영상을 올리면 캐릭터와 카메라의 공간 연속성을 자동으로 맞춰 3D 씬으로 만들어 줘요. 가려진 몸도 Motion Prediction으로 자연스럽게 추정해요.",
+    "details": [
+      "Animation / Video to 3D Scene 프로젝트",
+      "가림·화면 밖 구간 Motion Prediction",
+      "새 캐릭터 Nick"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

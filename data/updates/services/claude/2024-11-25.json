@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-25-1",
+    "service": "claude",
+    "date": "2024.11.25",
+    "kind": "API",
+    "title": "Model Context Protocol(MCP) 공개",
+    "summary": "AI 어시스턴트를 콘텐츠 저장소·업무 도구·개발 환경 등 데이터가 있는 시스템에 연결하는 개방형 표준 MCP를 공개했어요.",
+    "url": "https://www.anthropic.com/news/model-context-protocol",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-10-03-1",
+    "service": "scenario",
+    "date": "2024.10.03",
+    "kind": "기능",
+    "title": "Flux LoRA 학습·멀티 LoRA·ControlNet",
+    "summary": "Flux 기반 LoRA 학습과 여러 LoRA를 섞는 조합을 지원해요. Flux Live와 학습한 모델 내보내기, Flux ControlNet도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-69-1-70-major-update-flux-lora-multi-lora-controlnet",
+    "source": "notice"
+  }
+]

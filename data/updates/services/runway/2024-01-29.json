@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-01-29-1",
+    "service": "runway",
+    "date": "2024.01.29",
+    "kind": "기능",
+    "title": "Gen-2 생성물 저장 폴더 지정",
+    "summary": "Gen-2 생성물을 저장할 폴더를 직접 고를 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

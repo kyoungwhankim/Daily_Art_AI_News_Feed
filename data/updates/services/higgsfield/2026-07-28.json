@@ -1,0 +1,39 @@
+[
+  {
+    "id": "higgsfield-2026-07-28-1",
+    "service": "higgsfield",
+    "date": "2026.07.28",
+    "kind": "요금",
+    "title": "Unlimited MCP 출시: Claude·ChatGPT에서 무제한 생성",
+    "summary": "MCP로 Claude와 ChatGPT 안에서도 무제한 생성을 쓸 수 있는 Unlimited MCP를 내놨어요. 이미지 11종, 오디오 5종, 영상 7종 모델이 포함돼요.",
+    "details": [
+      "신규 사용자 24시간 무료 체험(7월 31일까지)",
+      "기존 웹 전용 Unlimited 상품은 그대로 유지"
+    ],
+    "url": "https://higgsfield.ai/blog/unlimited-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-07-28-2",
+    "service": "higgsfield",
+    "date": "2026.07.28",
+    "kind": "연동",
+    "title": "DaVinci Resolve용 Higgsfield 플러그인",
+    "summary": "DaVinci Resolve 패널 하나에서 텍스트로 B-roll 생성, 색 맞춤, 리프레임, 배경 제거 등 7가지 AI 도구와 Cinema Studio·Marketing Studio를 쓸 수 있어요.",
+    "details": [
+      "AI LUT 생성기 포함"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-davinci-resolve",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-07-28-3",
+    "service": "higgsfield",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "Higgsfield Games: 프롬프트 하나로 게임 제작",
+    "summary": "자세한 설명 한 번으로 플레이 가능한 게임을 만들어 주는 Higgsfield Games를 소개했어요. 엔진이나 코딩 없이 에셋까지 생성돼요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-ai-games",
+    "source": "notice"
+  }
+]

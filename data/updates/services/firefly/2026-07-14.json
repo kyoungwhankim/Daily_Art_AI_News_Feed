@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2026-07-14-1",
+    "service": "firefly",
+    "date": "2026.07.14",
+    "kind": "연동",
+    "title": "Adobe 커넥터: Claude·ChatGPT에서 Adobe 도구 사용",
+    "summary": "MCP 기반 Adobe 커넥터로 Claude와 ChatGPT 안에서 사진 일괄 보정, 템플릿 디자인, 영상 리사이즈, Creative Cloud 라이브러리 검색을 말로 할 수 있어요.",
+    "url": "https://community.adobe.com/announcements-402/bring-adobe-creativity-straight-into-your-ai-chats-1631555",
+    "source": "notice"
+  }
+]

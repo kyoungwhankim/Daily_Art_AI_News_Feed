@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2022-05-23-1",
+    "service": "synthesia",
+    "date": "2022.05.23",
+    "kind": "기능",
+    "title": "Synthesia 여러 요소 색상 일괄 변경",
+    "summary": "영상 속 여러 요소의 색상을 클릭 한 번으로 한꺼번에 바꿀 수 있어요.",
+    "url": "https://www.synthesia.io/updates/bulk-color-change",
+    "source": "notice"
+  }
+]

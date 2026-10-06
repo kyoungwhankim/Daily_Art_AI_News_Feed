@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-17-1",
+    "service": "fal.ai",
+    "date": "2026.03.17",
+    "kind": "API",
+    "title": "x-fal-stop-runner 응답 헤더 추가",
+    "summary": "상태 코드와 상관없이 응답 후 러너를 종료할지 x-fal-stop-runner 헤더로 정할 수 있게 됐어요. 재시도 동작과 러너 수명을 분리해 제어할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#march-17-2026",
+    "source": "dev"
+  }
+]

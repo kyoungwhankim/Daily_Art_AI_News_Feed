@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-09-24-1",
+    "service": "topaz-video",
+    "date": "2025.09.24",
+    "kind": "앱",
+    "title": "Topaz Video 1.0.1: Starlight 4K ProRes 지원",
+    "summary": "Starlight 계열 모델이 4K ProRes 출력을 지원하고 Starlight Mini 다운로드·클라우드 오류를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-1-0-1-patch/96324",
+    "source": "notice"
+  }
+]

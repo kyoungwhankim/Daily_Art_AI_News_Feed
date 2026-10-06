@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-14-1",
+    "service": "elevenlabs",
+    "date": "2025.08.14",
+    "kind": "기능",
+    "title": "Conversational AI 음성사서함 감지",
+    "summary": "음성사서함을 자동으로 알아채 처리하는 시스템 툴이 생겨 음성 에이전트 운영이 더 똑똑하고 저렴해졌어요.",
+    "url": "https://elevenlabs.io/blog/voicemail-detection",
+    "source": "notice"
+  }
+]

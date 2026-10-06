@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-12-17-1",
+    "service": "ltx-studio",
+    "date": "2025.12.17",
+    "kind": "모델",
+    "title": "LTX Studio에 FLUX.2 Max 추가",
+    "summary": "프롬프트 충실도가 높고 저해상도 업스케일, 키프레임 제작, 3D 장면 시점 생성까지 하는 FLUX.2 Max를 LTX Studio에서 쓸 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

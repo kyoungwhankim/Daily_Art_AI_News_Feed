@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-09-24-1",
+    "service": "comfyui",
+    "date": "2025.09.24",
+    "kind": "연동",
+    "title": "ComfyUI, Wan 2.5(프리뷰) API 노드",
+    "summary": "음성·효과음까지 함께 만드는 1080P 10초 영상 모델 Wan 2.5(프리뷰)를 API 노드로 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/wan-25-preview-api-nodes-in-comfyui",
+    "source": "notice"
+  }
+]

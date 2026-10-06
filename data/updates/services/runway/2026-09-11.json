@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-09-11-1",
+    "service": "runway",
+    "date": "2026.09.11",
+    "kind": "API",
+    "title": "Ruby HDR 변환에서 알파 채널 보존 지원",
+    "summary": "/v1/video_to_hdr가 원본 영상의 알파 채널을 자동으로 감지해 보존해요. EXR 출력은 A 채널로, hdr_prores는 ProRes 4444로 전달돼요.",
+    "details": [
+      "ProRes 4444, 알파 포함 WebM 등 자동 감지",
+      "hdr10·hlg 출력은 알파 미지원",
+      "가격 변동 없음"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#alpha-channel-support-on-v1video_to_hdr",
+    "source": "dev"
+  }
+]

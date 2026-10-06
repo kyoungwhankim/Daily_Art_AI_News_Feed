@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-18-1",
+    "service": "claude",
+    "date": "2026.08.18",
+    "kind": "기능",
+    "title": "Console Workbench → Playground 개편",
+    "summary": "Claude Console의 Workbench가 모든 Messages API 파라미터와 기능 템플릿을 지원하는 Playground로 바뀌었어요. 실행마다 SDK 요청과 응답을 보여 줘요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2026",
+    "source": "dev"
+  }
+]

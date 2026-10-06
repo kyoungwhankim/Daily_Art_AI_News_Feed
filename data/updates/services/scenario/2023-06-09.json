@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-06-09-1",
+    "service": "scenario",
+    "date": "2023.06.09",
+    "kind": "기능",
+    "title": "Pixelate 픽셀아트 변환 출시",
+    "summary": "생성한 이미지를 게임용 픽셀아트로 바꾸는 Pixelate 기능을 Edit 메뉴에 추가했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-16-0-june-9-2023",
+    "source": "notice"
+  }
+]

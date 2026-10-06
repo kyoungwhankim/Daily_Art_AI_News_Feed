@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-09-28-1",
+    "service": "ludo.ai",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "Ludo CLI 출시",
+    "summary": "터미널에서 스프라이트·이미지·3D·영상·오디오 생성기를 모두 쓰는 Ludo CLI가 나왔어요. Claude Code 같은 코딩 에이전트 연결에 권장돼요.",
+    "url": "https://ludo.ai/whats-new#ludo-cli-every-ludo-generator-in-your-terminal",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kling-2025-03-12-1",
+    "service": "kling",
+    "date": "2025.03.12",
+    "kind": "API",
+    "title": "API 시작·끝 프레임, 카메라 컨트롤, KOLORS 1.5 지원",
+    "summary": "Kling API의 V1.5 PRO에 시작·끝 프레임, 모션 브러시, 카메라 컨트롤이, V1.6 PRO에 시작·끝 프레임이 추가됐어요. 이미지 V1.5 모델과 커스텀 영상 립싱크도 지원해요.",
+    "details": [
+      "임의의 1080p·720p 10초 이내 영상 립싱크",
+      "립싱크용 중·영 보이스 8종 추가",
+      "이미지 V1.5: 구도·조명 개선, 21:9 비율 지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#03%2F12%2F2025",
+    "source": "dev"
+  }
+]

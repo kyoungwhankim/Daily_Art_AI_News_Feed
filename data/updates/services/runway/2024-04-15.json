@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-15-1",
+    "service": "runway",
+    "date": "2024.04.15",
+    "kind": "기능",
+    "title": "AI Training 페이지 개편과 모델 공유",
+    "summary": "새로 디자인한 AI Training 페이지에서 커스텀 모델을 쉽게 찾고 워크스페이스와 공유할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

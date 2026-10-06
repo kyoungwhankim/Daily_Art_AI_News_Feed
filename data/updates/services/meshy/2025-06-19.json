@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-06-19-1",
+    "service": "meshy",
+    "date": "2025.06.19",
+    "kind": "API",
+    "title": "작업 삭제 API·Refine ai_model 추가",
+    "summary": "Text to 3D, Image to 3D, Remesh, Rigging, Animation 작업을 지우는 삭제 API가 추가됐어요. Text to 3D Refine에는 ai_model 파라미터가 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-29-1",
+    "service": "scenario",
+    "date": "2026.09.29",
+    "kind": "모델",
+    "title": "ElevenLabs v4 음성 모델 추가",
+    "summary": "100개 이상 언어로 감정과 전달을 태그로 조절하는 ElevenLabs v4 음성 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-1ea8a361f25be325f48c04d420788c7b970cd6da634e9d113c3c2ee824d92b96",
+    "source": "notice"
+  }
+]

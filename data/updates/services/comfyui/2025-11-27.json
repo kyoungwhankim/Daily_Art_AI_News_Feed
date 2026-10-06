@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2025-11-27-1",
+    "service": "comfyui",
+    "date": "2025.11.27",
+    "kind": "모델",
+    "title": "ComfyUI, Z-Image Turbo 지원",
+    "summary": "Alibaba Tongyi의 6B 이미지 모델 Z-Image의 증류 버전 Z-Image-Turbo를 ComfyUI에서 지원해요. 16GB VRAM 소비자용 GPU에서 사실적인 인물 사진을 빠르게 만들어요.",
+    "url": "https://blog.comfy.org/p/z-image-turbo-in-comfyui-realism",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-11-27-2",
+    "service": "comfyui",
+    "date": "2025.11.27",
+    "kind": "연동",
+    "title": "ComfyUI, Topaz Labs 업스케일 API 노드",
+    "summary": "Topaz Labs의 영상 업스케일(최대 4K, Astra·Starlight)과 이미지 업스케일(최대 8K, Bloom) 모델을 API 노드로 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/topazs-flagship-upscale-models-in",
+    "source": "notice"
+  }
+]

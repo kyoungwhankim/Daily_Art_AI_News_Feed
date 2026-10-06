@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2026-09-09-1",
+    "service": "synthesia",
+    "date": "2026.09.09",
+    "kind": "API",
+    "title": "Synthesia Billing API로 크레딧 사용량 추적",
+    "summary": "새 Billing API 엔드포인트로 크레딧 사용 내역을 자세히 확인해 지출을 맞춰 보고 변화를 점검할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/track-credit-usage-with-the-billing-api",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-09-09-2",
+    "service": "synthesia",
+    "date": "2026.09.09",
+    "kind": "요금",
+    "title": "Synthesia 크레딧 구매와 자동 충전",
+    "summary": "크레딧을 직접 구매하고 자동 충전을 설정해 잔액 부족으로 긴 작업이 실패하지 않게 할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/buy-credits-and-set-auto-top-ups",
+    "source": "notice"
+  }
+]

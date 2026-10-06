@@ -1,0 +1,72 @@
+[
+  {
+    "id": "scenario-2026-10-05-1",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "Claude 5.5 어시스턴트·새 3D 모델·요금 로직 개선",
+    "summary": "어시스턴트가 Claude 5.5로 업그레이드되고 새 3D 모델이 추가됐어요. 요금 계산과 검증 문제도 고쳐졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-136-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-05-2",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "ElevenLabs v4·Lyria 3.5·에이전트형 3D",
+    "summary": "ElevenLabs v4와 Google Lyria 3.5, 자율 에이전트형 3D 모델이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-3",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "연동",
+    "title": "MCP 프로젝트 관리 도구",
+    "summary": "에이전트가 새 MCP 도구로 Scenario 프로젝트를 직접 관리할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-32-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-4",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "Google Lyria 3.5: 보컬 포함 풀곡 생성",
+    "summary": "보컬이 들어간 최대 3분 길이의 곡을 만드는 Google Lyria 3.5가 추가됐어요. 길이와 구간을 프롬프트로 조절해요.",
+    "url": "https://www.scenario.com/changelog/models-04ef25ea07b84093779078d924609768eb27c519b2bd8d6d4534440e84602cd7",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-5",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "FLUX.3 Edit Video·Kling V3/O3 Image·PixVerse V6",
+    "summary": "FLUX.3 Edit Video, Kling V3/O3 Image, PixVerse V6 Extend Video가 추가돼 4K 편집과 영상 확장이 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-71ba27d0e0c10dfa857a387742b6b97ac0f13e7c9164e07a8fea9e0686dd52c6",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-6",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "팀 맞춤 홈·갤러리·워크플로 노드 제어",
+    "summary": "팀용 맞춤 홈 레이아웃을 만들고, 갤러리가 매끄러워졌어요. 웹훅과 워크플로 노드 정리 기능도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-7",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "YVO3D 로우폴리 출력 지원",
+    "summary": "YVO3D Image to 3D가 48–50,000면 목표에 맞춘 깔끔한 로우폴리 메시를 만들어요.",
+    "url": "https://www.scenario.com/changelog/yvo3d-image-to-3d-smart-low-poly",
+    "source": "notice"
+  }
+]

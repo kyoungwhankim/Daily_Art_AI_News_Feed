@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-audio-2024-04-03-1",
+    "service": "stable-audio",
+    "date": "2024.04.03",
+    "kind": "모델",
+    "title": "Stable Audio 2.0, 3분 풀트랙과 오디오 투 오디오",
+    "summary": "프롬프트 하나로 44.1kHz 스테레오 최대 3분 곡을 구조 있게 만들고, 샘플을 올려 변환하는 audio-to-audio를 지원하는 Stable Audio 2.0이 나왔어요.",
+    "details": [
+      "최대 3분 44.1kHz 스테레오 풀트랙",
+      "업로드 샘플 audio-to-audio 변환",
+      "AudioSparx 라이선스 데이터로만 학습"
+    ],
+    "url": "https://stability.ai/news-updates/stable-audio-2-0",
+    "source": "notice"
+  }
+]

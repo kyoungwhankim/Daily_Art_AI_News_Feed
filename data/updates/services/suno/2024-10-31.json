@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-10-31-1",
+    "service": "suno",
+    "date": "2024.10.31",
+    "kind": "기능",
+    "title": "Suno Personas, 보컬·스타일 저장",
+    "summary": "마음에 드는 곡의 보컬·스타일·분위기를 Persona로 저장해 다른 곡에도 다시 쓸 수 있어요.",
+    "url": "https://suno.com/release-notes/introducing-personas",
+    "source": "notice"
+  }
+]

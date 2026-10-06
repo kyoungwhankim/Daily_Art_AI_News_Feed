@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2025-03-05-1",
+    "service": "ludo.ai",
+    "date": "2025.03.05",
+    "kind": "기능",
+    "title": "3D Asset Generator 전면 개편",
+    "summary": "3D Asset Generator를 새로 설계해 Text to 3D, Image to 3D 등 여러 생성 모드를 쉽게 고를 수 있는 UI로 바꿨어요.",
+    "url": "https://ludo.ai/whats-new#revamped-3d-asset-generator",
+    "source": "notice"
+  }
+]

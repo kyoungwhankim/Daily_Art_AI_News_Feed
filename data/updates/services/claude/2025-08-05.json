@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2025-08-05-1",
+    "service": "claude",
+    "date": "2025.08.05",
+    "kind": "모델",
+    "title": "Claude Opus 4.1 출시",
+    "summary": "에이전트 작업·실무 코딩·추론이 향상된 Claude Opus 4.1이 나왔어요. SWE-bench Verified 74.5%를 기록했고 가격은 Opus 4와 같아요.",
+    "details": [
+      "유료 Claude 플랜, Claude Code, API, Bedrock, Vertex AI 제공",
+      "API: temperature와 top_p 동시 지정 불가"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-4-1",
+    "source": "notice"
+  }
+]

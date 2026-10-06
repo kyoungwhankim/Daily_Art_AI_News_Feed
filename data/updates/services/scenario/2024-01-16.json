@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-16-1",
+    "service": "scenario",
+    "date": "2024.01.16",
+    "kind": "API",
+    "title": "모델 학습 취소 지원",
+    "summary": "모델 학습을 취소할 수 있게 됐고, 웹 앱 사용자의 SDXL 이미지 배수 제한이 사라졌어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-14-0-january-16th-2024",
+    "source": "dev"
+  }
+]

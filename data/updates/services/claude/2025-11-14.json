@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-11-14-1",
+    "service": "claude",
+    "date": "2025.11.14",
+    "kind": "API",
+    "title": "구조화 출력 공개 베타",
+    "summary": "응답이 JSON 스키마를 반드시 따르게 하는 structured outputs가 Sonnet 4.5·Opus 4.1에서 공개 베타로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
+    "source": "dev"
+  }
+]

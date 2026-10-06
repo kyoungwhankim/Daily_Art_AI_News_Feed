@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-04-18-1",
+    "service": "topaz-video",
+    "date": "2023.04.18",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.2.2: 32000px 표시와 접근성 개선",
+    "summary": "최대 32000×32000 입출력을 화면에 표시하고, 하드웨어에 맞춰 최대 처리 수를 정하며 글꼴이 OS 접근성 설정을 따르게 했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-2-2/43619",
+    "source": "notice"
+  }
+]

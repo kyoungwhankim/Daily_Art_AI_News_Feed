@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-03-24-1",
+    "service": "figma-ai",
+    "date": "2026.03.24",
+    "kind": "API",
+    "title": "AI 에이전트가 Figma 캔버스에 직접 쓰기(베타)",
+    "summary": "Figma MCP 서버를 통해 AI 에이전트가 Figma 파일에 직접 디자인을 작성할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=design-with-agents-on-the-figma-canvas-now-in-beta",
+    "source": "notice"
+  }
+]

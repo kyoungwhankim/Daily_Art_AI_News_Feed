@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-10-28-1",
+    "service": "hugging-face",
+    "date": "2025.10.28",
+    "kind": "기능",
+    "title": "Community 탭 기본 정렬 설정",
+    "summary": "저장소 소유자가 Discussions·Pull Requests의 기본 정렬을 Trending·Most Reactions·Recently Created 중에서 고를 수 있게 됐어요.",
+    "url": "https://huggingface.co/changelog/community-tab-default-sorting",
+    "source": "notice"
+  }
+]

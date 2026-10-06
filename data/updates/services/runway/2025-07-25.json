@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-07-25-1",
+    "service": "runway",
+    "date": "2025.07.25",
+    "kind": "모델",
+    "title": "Runway Aleph 발표: 인컨텍스트 영상 편집 모델",
+    "summary": "기존 영상에 객체 추가·제거, 각도 변경, 스타일·조명 변환 등을 텍스트로 지시하는 인컨텍스트 영상 모델 Aleph를 발표했어요.",
+    "url": "https://runway.com/research/introducing-runway-aleph",
+    "source": "notice"
+  }
+]

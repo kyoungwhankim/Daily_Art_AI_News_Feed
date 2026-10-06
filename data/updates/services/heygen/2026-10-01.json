@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-10-01-1",
+    "service": "heygen",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "HeyGen API로 Studio 템플릿 생성",
+    "summary": "영상을 API로 Studio 템플릿으로 만들고 아바타·음성·이미지·문구를 변수로 지정해 시청자별 영상을 생성할 수 있게 됐어요.",
+    "url": "https://docs.heygen.com/changelog#create-studio-templates-via-api",
+    "source": "dev"
+  }
+]

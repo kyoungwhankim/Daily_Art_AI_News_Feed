@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2025-02-11-1",
+    "service": "invokeai",
+    "date": "2025.02.11",
+    "kind": "기능",
+    "title": "Invoke 5.6.1: 캔버스 이미지 조정 필터 등 개선",
+    "summary": "Invoke 5.6.1에서 레벨·색조 등을 바꾸는 캔버스 Adjust Image 필터와 캔버스 복사·붙여넣기가 추가되고 메모리 기본값이 개선됐어요.",
+    "details": [
+      "FLUX LoRA 호환성 확대",
+      "Queue 탭에서 모델 캐시 비우기",
+      "현재 작업 외 대기열 일괄 취소"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-6-1/",
+    "source": "notice"
+  }
+]

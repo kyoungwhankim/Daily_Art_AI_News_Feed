@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-07-18-1",
+    "service": "nvidia-studio",
+    "date": "2023.07.18",
+    "kind": "기능",
+    "title": "RTX Remix로 만든 Portal: Prelude RTX 출시",
+    "summary": "RTX Remix로 리마스터한 Portal: Prelude RTX가 풀 레이 트레이싱·DLSS 3와 함께 Steam에 무료로 나왔어요. 7월 Studio 드라이버도 함께 공개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/portal-prelude-rtx-remix-studio-driver/",
+    "source": "notice"
+  }
+]

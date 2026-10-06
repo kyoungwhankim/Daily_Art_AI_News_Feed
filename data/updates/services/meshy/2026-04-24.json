@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-24-1",
+    "service": "meshy",
+    "date": "2026.04.24",
+    "kind": "API",
+    "title": "Multi-Color Print에 model_url 입력 추가",
+    "summary": "Multi-Color Print가 Meshy 작업 없이도 텍스처 있는 3D 모델(.glb, .fbx)을 URL로 받아 처리할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  }
+]

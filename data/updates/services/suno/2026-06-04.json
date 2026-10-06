@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-06-04-1",
+    "service": "suno",
+    "date": "2026.06.04",
+    "kind": "연동",
+    "title": "iOS 메모·음성 메모에서 Suno로 공유",
+    "summary": "iOS 메모의 가사와 음성 메모 녹음을 Suno로 공유하면 Create 양식에 자동으로 들어가요.",
+    "url": "https://suno.com/release-notes/share-from-ios-notes-and-voice-memos",
+    "source": "notice"
+  }
+]

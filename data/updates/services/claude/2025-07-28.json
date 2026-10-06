@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-07-28-1",
+    "service": "claude",
+    "date": "2025.07.28",
+    "kind": "API",
+    "title": "text_editor 도구 업데이트",
+    "summary": "이전 버전 문제를 고치고 큰 파일 보기 시 잘림 길이를 정하는 max_characters를 추가한 text_editor_20250728이 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
+    "source": "dev"
+  }
+]

@@ -5,6 +5,42 @@
       "latest": "2026.10.02",
       "file": "updates/feed/image.json",
       "rev": "fa7bfae774"
+    },
+    "video": {
+      "count": 908,
+      "latest": "2026.10.05",
+      "file": "updates/feed/video.json",
+      "rev": "501b9e59ad"
+    },
+    "3d": {
+      "count": 153,
+      "latest": "2026.09.29",
+      "file": "updates/feed/3d.json",
+      "rev": "05ca1f5290"
+    },
+    "game-assets": {
+      "count": 525,
+      "latest": "2026.10.05",
+      "file": "updates/feed/game-assets.json",
+      "rev": "0832dce312"
+    },
+    "motion": {
+      "count": 161,
+      "latest": "2026.10.01",
+      "file": "updates/feed/motion.json",
+      "rev": "821ea5a3bf"
+    },
+    "audio": {
+      "count": 348,
+      "latest": "2026.10.05",
+      "file": "updates/feed/audio.json",
+      "rev": "18d01b494a"
+    },
+    "tools": {
+      "count": 981,
+      "latest": "2026.10.01",
+      "file": "updates/feed/tools.json",
+      "rev": "3c44b14cff"
     }
   },
   "services": {
@@ -67,6 +103,216 @@
       "count": 9,
       "first": "2025.10.13",
       "latest": "2026.09.04"
+    },
+    "veo": {
+      "count": 25,
+      "first": "2024.05.14",
+      "latest": "2026.06.15"
+    },
+    "kling": {
+      "count": 72,
+      "first": "2024.09.19",
+      "latest": "2026.09.28"
+    },
+    "seedance": {
+      "count": 6,
+      "first": "2025.06.11",
+      "latest": "2026.09.08"
+    },
+    "wan": {
+      "count": 25,
+      "first": "2025.01.09",
+      "latest": "2026.08.20"
+    },
+    "grok-imagine": {
+      "count": 7,
+      "first": "2025.03.19",
+      "latest": "2026.09.02"
+    },
+    "runway": {
+      "count": 181,
+      "first": "2023.10.04",
+      "latest": "2026.10.02"
+    },
+    "dream-machine": {
+      "count": 28,
+      "first": "2024.09.16",
+      "latest": "2026.10.01"
+    },
+    "higgsfield": {
+      "count": 55,
+      "first": "2025.04.24",
+      "latest": "2026.10.03"
+    },
+    "ltx-studio": {
+      "count": 63,
+      "first": "2024.11.21",
+      "latest": "2026.10.02"
+    },
+    "pika": {
+      "count": 11,
+      "first": "2026.04.02",
+      "latest": "2026.09.17"
+    },
+    "hailuo": {
+      "count": 18,
+      "first": "2024.08.31",
+      "latest": "2026.08.03"
+    },
+    "pixverse": {
+      "count": 44,
+      "first": "2025.03.27",
+      "latest": "2026.09.24"
+    },
+    "hedra": {
+      "count": 13,
+      "first": "2026.01.12",
+      "latest": "2026.08.31"
+    },
+    "heygen": {
+      "count": 54,
+      "first": "2025.11.29",
+      "latest": "2026.10.05"
+    },
+    "synthesia": {
+      "count": 188,
+      "first": "2020.10.13",
+      "latest": "2026.09.30"
+    },
+    "topaz-video": {
+      "count": 118,
+      "first": "2020.02.25",
+      "latest": "2026.09.18"
+    },
+    "meshy": {
+      "count": 115,
+      "first": "2023.10.19",
+      "latest": "2026.09.29"
+    },
+    "tripo": {
+      "count": 26,
+      "first": "2024.01.03",
+      "latest": "2026.08.17"
+    },
+    "rodin": {
+      "count": 2,
+      "first": "2025.04.29",
+      "latest": "2025.12.05"
+    },
+    "marble": {
+      "count": 10,
+      "first": "2025.09.16",
+      "latest": "2026.04.02"
+    },
+    "scenario": {
+      "count": 338,
+      "first": "2022.12.23",
+      "latest": "2026.10.05"
+    },
+    "layer": {
+      "count": 102,
+      "first": "2023.01.20",
+      "latest": "2026.09.29"
+    },
+    "ludo.ai": {
+      "count": 46,
+      "first": "2021.06.22",
+      "latest": "2026.09.28"
+    },
+    "roblox-cube": {
+      "count": 39,
+      "first": "2023.03.20",
+      "latest": "2026.09.23"
+    },
+    "rokoko": {
+      "count": 38,
+      "first": "2021.12.06",
+      "latest": "2026.07.16"
+    },
+    "iclone": {
+      "count": 89,
+      "first": "2005.12.08",
+      "latest": "2026.09.24"
+    },
+    "flow-studio": {
+      "count": 34,
+      "first": "2023.09.14",
+      "latest": "2026.10.01"
+    },
+    "elevenlabs": {
+      "count": 203,
+      "first": "2022.11.24",
+      "latest": "2026.09.28"
+    },
+    "suno": {
+      "count": 69,
+      "first": "2023.12.22",
+      "latest": "2026.10.05"
+    },
+    "mureka": {
+      "count": 54,
+      "first": "2024.10.30",
+      "latest": "2026.09.14"
+    },
+    "stable-audio": {
+      "count": 8,
+      "first": "2023.09.13",
+      "latest": "2026.08.18"
+    },
+    "minimax-audio": {
+      "count": 14,
+      "first": "2024.08.31",
+      "latest": "2026.08.13"
+    },
+    "firefly": {
+      "count": 67,
+      "first": "2023.03.21",
+      "latest": "2026.09.18"
+    },
+    "comfyui": {
+      "count": 206,
+      "first": "2024.08.06",
+      "latest": "2026.10.01"
+    },
+    "invokeai": {
+      "count": 73,
+      "first": "2022.10.10",
+      "latest": "2026.09.27"
+    },
+    "unity-ai": {
+      "count": 37,
+      "first": "2023.11.16",
+      "latest": "2026.09.17"
+    },
+    "nvidia-studio": {
+      "count": 47,
+      "first": "2021.09.20",
+      "latest": "2026.04.15"
+    },
+    "hugging-face": {
+      "count": 58,
+      "first": "2025.05.21",
+      "latest": "2026.09.25"
+    },
+    "fal.ai": {
+      "count": 167,
+      "first": "2023.03.30",
+      "latest": "2026.09.14"
+    },
+    "figma-ai": {
+      "count": 78,
+      "first": "2024.03.28",
+      "latest": "2026.09.17"
+    },
+    "blender": {
+      "count": 29,
+      "first": "2019.07.30",
+      "latest": "2026.07.14"
+    },
+    "claude": {
+      "count": 219,
+      "first": "2023.03.14",
+      "latest": "2026.10.01"
     }
   }
 }

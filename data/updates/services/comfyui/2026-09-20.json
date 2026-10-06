@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-09-20-1",
+    "service": "comfyui",
+    "date": "2026.09.20",
+    "kind": "모델",
+    "title": "ComfyUI, Qwen-Image-2.1 지원(투명 배경)",
+    "summary": "네이티브 2K 출력, RGBA 투명도, 최대 10장 입력 편집을 지원하는 7B 오픈 웨이트 모델 Qwen-Image-2.1을 ComfyUI에서 네이티브로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/qwen-image-21-in-comfyui-open-weight",
+    "source": "notice"
+  }
+]

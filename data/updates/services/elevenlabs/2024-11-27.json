@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-11-27-1",
+    "service": "elevenlabs",
+    "date": "2024.11.27",
+    "kind": "기능",
+    "title": "ElevenReader에서 GenFM 개인 팟캐스트 생성",
+    "summary": "ElevenReader iOS 앱에서 PDF·기사·전자책 등으로 똑똑한 개인 팟캐스트를 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/genfm-on-elevenreader",
+    "source": "notice"
+  }
+]

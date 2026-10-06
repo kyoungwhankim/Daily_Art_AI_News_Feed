@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2020-07-29-1",
+    "service": "topaz-video",
+    "date": "2020.07.29",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.4.2: 명령줄 인터페이스 개편",
+    "summary": "명령줄 인터페이스를 쓰기 쉽게 다시 만들고 전체 문서를 제공해요. Theia 모델도 새 버전으로 업데이트했어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-4-2-command-line-interface-and-improved-models/15749",
+    "source": "notice"
+  }
+]

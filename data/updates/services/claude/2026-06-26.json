@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-26-1",
+    "service": "claude",
+    "date": "2026.06.26",
+    "kind": "요금",
+    "title": "API 속도 제한 상향·사용 티어 3단계로 통합",
+    "summary": "Sonnet·Haiku 속도 제한을 Opus와 같게 올리고 사용 티어를 Start·Build·Scale 셋으로 통합했어요. 한도가 줄어드는 조직은 없어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-26-2026",
+    "source": "dev"
+  }
+]

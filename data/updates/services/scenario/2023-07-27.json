@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-07-27-1",
+    "service": "scenario",
+    "date": "2023.07.27",
+    "kind": "기능",
+    "title": "편집 이미지 탐색·자동 리사이즈",
+    "summary": "편집된 이미지도 같은 방식으로 탐색되고, 너무 큰 참조 이미지는 자동으로 크기가 조정돼요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-25-0-july-27-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2025-05-21-1",
+    "service": "tripo",
+    "date": "2025.05.21",
+    "kind": "모델",
+    "title": "Turbo v1.0 고속 모델 추가",
+    "summary": "처리 속도를 크게 높인 Turbo-v1.0-20250506 모델이 text-to-model과 image-to-model에 추가됐어요. 빠른 응답이 필요한 서비스에 좋아요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-6-0-2025-05-21",
+    "source": "dev"
+  }
+]

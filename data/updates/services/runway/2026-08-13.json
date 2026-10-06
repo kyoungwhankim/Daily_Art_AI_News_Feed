@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-08-13-1",
+    "service": "runway",
+    "date": "2026.08.13",
+    "kind": "기능",
+    "title": "Runway MCP에 Ideogram 4.0·Grok Imagine 1.5 추가",
+    "summary": "Runway MCP에서 텍스트 표현에 강한 Ideogram 4.0과 네이티브 오디오 영상 모델 Grok Imagine 1.5를 쓸 수 있게 됐어요.",
+    "details": [
+      "Ideogram 4.0: 9:21·21:9 초장·초광폭 비율 지원",
+      "Grok Imagine 1.5: 1–15초, 최대 1080p, 오디오 포함"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

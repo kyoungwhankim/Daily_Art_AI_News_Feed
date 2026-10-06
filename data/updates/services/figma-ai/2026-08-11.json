@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-08-11-1",
+    "service": "figma-ai",
+    "date": "2026.08.11",
+    "kind": "연동",
+    "title": "Figma MCP로 외부 에이전트에서 Weave 도구 실행",
+    "summary": "Codex·Claude·Cursor에서 Figma MCP 서버를 통해 Figma Weave 도구를 바로 실행할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=figma-mcp-run-weave-tools-right-from-your-favorite-agent",
+    "source": "notice"
+  }
+]

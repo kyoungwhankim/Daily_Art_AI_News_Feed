@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfyui-2025-07-21-1",
+    "service": "comfyui",
+    "date": "2025.07.21",
+    "kind": "모델",
+    "title": "ComfyUI, HiDream E1.1 이미지 편집 모델 지원",
+    "summary": "HiDream-ai가 공개한 이미지 편집 모델 HiDream E1.1을 ComfyUI에서 네이티브로 쓸 수 있어요. 색 보정·스타일 변경 등 여러 편집 항목에서 이전 버전을 앞섰어요.",
+    "url": "https://blog.comfy.org/p/comfyui-hidream-e11-native-support",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-07-21-2",
+    "service": "comfyui",
+    "date": "2025.07.21",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.45: SA-Solver 샘플러와 LoRA 학습 개선",
+    "summary": "ComfyUI v0.3.45에서 SA-Solver 샘플러와 실험적 CFGNorm 노드가 추가되고, LoRA 학습 노드가 여러 이미지-캡션 데이터셋을 함께 다룰 수 있게 됐어요.",
+    "details": [
+      "비동기 노드 함수 정식 지원",
+      "API에서 프롬프트 ID 직접 지정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-45",
+    "source": "notice"
+  }
+]

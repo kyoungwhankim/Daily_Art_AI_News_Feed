@@ -1,0 +1,16 @@
+[
+  {
+    "id": "minimax-audio-2025-10-29-1",
+    "service": "minimax-audio",
+    "date": "2025.10.29",
+    "kind": "모델",
+    "title": "MiniMax Speech 2.6·Music 2.0 출시",
+    "summary": "더 사람 같고 즉각 반응하는 음성 에이전트용 Speech 2.6과, 감정 표현이 풍부해진 Music 2.0이 함께 나왔어요.",
+    "details": [
+      "Speech 2.6: 음성 에이전트용 저지연·자연스러운 음성",
+      "Music 2.0: 음악적 표현력 강화"
+    ],
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

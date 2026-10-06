@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-05-28-1",
+    "service": "scenario",
+    "date": "2026.05.28",
+    "kind": "연동",
+    "title": "MCP 워크플로 게시·검증",
+    "summary": "manage_workflows 도구로 초안을 게시 상태로 바꾸고 설정을 자동 검증할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-10-0",
+    "source": "notice"
+  }
+]

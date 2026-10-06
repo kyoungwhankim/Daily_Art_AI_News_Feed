@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2024-01-05-1",
+    "service": "rokoko",
+    "date": "2024.01.05",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.3, Coil Pro 정식 지원",
+    "summary": "Coil Pro를 Smartgloves와 함께 완전히 지원해 손에 절대 위치를 주고 드리프트를 줄여요. Unreal Engine 5 내보내기 프리셋도 추가됐어요.",
+    "details": [
+      "Coil Pro + Smartgloves 지원",
+      "Smartsuit Pro II·Smartgloves 새 펌웨어 필요",
+      "Unreal Engine 5 내보내기 프리셋"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/21445198239761-Rokoko-Studio-2-4-3",
+    "source": "dev"
+  }
+]

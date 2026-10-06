@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2020-08-31-1",
+    "service": "blender",
+    "date": "2020.08.31",
+    "kind": "앱",
+    "title": "Blender 2.90 출시: Nishita 하늘·새 모션 블러",
+    "summary": "물리 기반 Nishita 하늘 텍스처, 새로 쓴 EEVEE 모션 블러, 뷰포트 OpenImageDenoise를 담은 Blender 2.90이 나왔어요.",
+    "url": "https://www.blender.org/news/blender-2-90-release/",
+    "source": "notice"
+  }
+]

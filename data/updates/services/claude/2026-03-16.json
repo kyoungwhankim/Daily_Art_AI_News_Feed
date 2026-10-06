@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-16-1",
+    "service": "claude",
+    "date": "2026.03.16",
+    "kind": "API",
+    "title": "확장 사고 표시 생략(display) 옵션",
+    "summary": "thinking.display를 omitted로 두면 사고 내용 없이 서명만 받아 스트리밍을 더 빠르게 할 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#march-16-2026",
+    "source": "dev"
+  }
+]

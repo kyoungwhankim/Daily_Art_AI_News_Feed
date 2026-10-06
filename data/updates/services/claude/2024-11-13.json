@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-13-1",
+    "service": "claude",
+    "date": "2024.11.13",
+    "kind": "API",
+    "title": "모든 Claude Sonnet 3.5 모델 PDF 지원",
+    "summary": "모든 Claude Sonnet 3.5 모델에서 PDF를 입력으로 쓸 수 있게 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-13th-2024",
+    "source": "dev"
+  }
+]

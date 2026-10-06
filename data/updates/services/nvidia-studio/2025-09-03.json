@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-09-03-1",
+    "service": "nvidia-studio",
+    "date": "2025.09.03",
+    "kind": "기능",
+    "title": "3D 오브젝트 생성 AI Blueprint 공개",
+    "summary": "프롬프트로 3D 장면을 채울 오브젝트를 빠르게 만드는 AI Blueprint가 Microsoft TRELLIS NIM과 함께 나왔어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-blueprint-3d-object-nim-microsoft-trellis/",
+    "source": "notice"
+  }
+]

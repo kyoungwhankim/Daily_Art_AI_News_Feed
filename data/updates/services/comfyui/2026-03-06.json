@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-03-06-1",
+    "service": "comfyui",
+    "date": "2026.03.06",
+    "kind": "연동",
+    "title": "ComfyUI, Kling 3.0 Motion Control",
+    "summary": "어떤 각도와 표정에서도 얼굴을 일관되게 유지하는 Element Binding을 더한 Kling Motion Control 3.0을 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/kling-30-motion-control-in-comfyui",
+    "source": "notice"
+  }
+]

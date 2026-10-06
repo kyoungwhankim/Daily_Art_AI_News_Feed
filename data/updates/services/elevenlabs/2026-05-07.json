@@ -1,0 +1,17 @@
+[
+  {
+    "id": "elevenlabs-2026-05-07-1",
+    "service": "elevenlabs",
+    "date": "2026.05.07",
+    "kind": "요금",
+    "title": "ElevenAPI·ElevenAgents 요금 인하와 종량제",
+    "summary": "ElevenAPI와 ElevenAgents 요금을 내리고 쓴 만큼 내는 Pay as you go 플랜을 도입했어요. 같은 날 Studio 타임라인용 AI 공동 편집자 Studio Agent도 나왔어요.",
+    "details": [
+      "ElevenAPI·ElevenAgents 가격 인하",
+      "Pay as you go 플랜",
+      "ElevenCreative Studio Agent: 채팅으로 영상 초안 편집"
+    ],
+    "url": "https://elevenlabs.io/blog/weve-lowered-api-agents-pricing-and-introduced-pay-as-you-go",
+    "source": "notice"
+  }
+]

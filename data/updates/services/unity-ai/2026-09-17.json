@@ -1,0 +1,15 @@
+[
+  {
+    "id": "unity-ai-2026-09-17-1",
+    "service": "unity-ai",
+    "date": "2026.09.17",
+    "kind": "기능",
+    "title": "AI Assistant 2.20: 폐기된 API 대체 안내",
+    "summary": "AI Assistant 2.20.0에서 생성한 스크립트가 폐기된 API를 쓰면 대체 API를 에이전트에 알려 스스로 고치게 하고, 긴 대화도 에디터가 멈추지 않게 했어요.",
+    "details": [
+      "Unity 7000.0에서 컴파일 지원"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2200-pre1---2026-09-17",
+    "source": "dev"
+  }
+]

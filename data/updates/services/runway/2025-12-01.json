@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-12-01-1",
+    "service": "runway",
+    "date": "2025.12.01",
+    "kind": "모델",
+    "title": "Gen-4.5 발표: 최고 수준 영상 생성 모델",
+    "summary": "움직임 품질, 프롬프트 충실도, 시각적 정확도를 크게 끌어올린 새 영상 모델 Gen-4.5를 발표했어요.",
+    "url": "https://runway.com/research/introducing-runway-gen-4.5",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2011-01-20-1",
+    "service": "iclone",
+    "date": "2011.01.20",
+    "kind": "앱",
+    "title": "iClone 4.31, Reallusion City 마켓플레이스 이전",
+    "summary": "콘텐츠 구매 창구가 Backstage에서 Reallusion City Marketplace로 옮겨졌고, 메모리 누수 등 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

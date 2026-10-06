@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-26-1",
+    "service": "meshy",
+    "date": "2026.08.26",
+    "kind": "API",
+    "title": "Animation API에 생성 모션 적용",
+    "summary": "Animation API가 motion_task_id를 받아 Text to Motion으로 만든 모션을 리깅된 캐릭터에 입힐 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-03-13-1",
+    "service": "heygen",
+    "date": "2026.03.13",
+    "kind": "기능",
+    "title": "HeyGen Video Agent에 Styles 추가",
+    "summary": "Video Agent에서 생성 전에 100개 이상의 스타일을 골라 타이포그래피, 색상, 모션, 레이아웃까지 영상 전체 비주얼을 정할 수 있게 됐어요.",
+    "url": "https://heygen.noticeable.news/publications/introducing-styles-for-video-agent",
+    "source": "notice"
+  }
+]

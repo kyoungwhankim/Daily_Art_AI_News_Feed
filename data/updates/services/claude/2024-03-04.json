@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-03-04-1",
+    "service": "claude",
+    "date": "2024.03.04",
+    "kind": "모델",
+    "title": "Claude 3 모델 패밀리(Haiku·Sonnet·Opus) 공개",
+    "summary": "Claude 3 Haiku·Sonnet·Opus 세 모델이 공개됐어요. Opus와 Sonnet은 claude.ai와 159개국에 정식 출시된 API에서 바로 쓸 수 있어요.",
+    "url": "https://www.anthropic.com/news/claude-3-family",
+    "source": "notice"
+  }
+]

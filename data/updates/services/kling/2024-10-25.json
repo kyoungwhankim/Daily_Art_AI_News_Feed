@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-10-25-1",
+    "service": "kling",
+    "date": "2024.10.25",
+    "kind": "정책",
+    "title": "API 생성 이미지·영상 30일 후 자동 삭제",
+    "summary": "정보 보안을 위해 Kling API로 생성한 이미지와 영상은 30일 뒤 삭제돼요. 결과물은 미리 저장해 두어야 해요.",
+    "url": "https://kling.ai/document-api/updates/api#10%2F25%2F2024",
+    "source": "dev"
+  }
+]

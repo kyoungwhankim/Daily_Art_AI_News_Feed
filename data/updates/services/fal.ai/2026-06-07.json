@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-07-1",
+    "service": "fal.ai",
+    "date": "2026.06.07",
+    "kind": "기능",
+    "title": "Capacity 페이지 신설",
+    "summary": "Serverless → Capacity 페이지에서 계정 GPU 한도 대비 사용량과 GPU 종류별 소비를 보고, 한도 상향도 요청할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#june-7-2026",
+    "source": "dev"
+  }
+]

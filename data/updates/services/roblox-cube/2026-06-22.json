@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-06-22-1",
+    "service": "roblox-cube",
+    "date": "2026.06.22",
+    "kind": "기능",
+    "title": "AI로 게임을 스트리밍 방식으로 전환(미리보기)",
+    "summary": "AI가 게임 코드를 Instance Streaming에 맞게 대부분 자동으로 바꿔 주는 Convert to Streaming 스킬을 미리 공개했어요.",
+    "url": "https://devforum.roblox.com/t/early-preview-convert-your-game-to-streaming-using-ai/4697943",
+    "source": "notice"
+  }
+]

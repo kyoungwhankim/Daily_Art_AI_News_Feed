@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-19-1",
+    "service": "fal.ai",
+    "date": "2026.01.19",
+    "kind": "API",
+    "title": "handle_exit()·teardown() 종료 처리",
+    "summary": "앱에 handle_exit()과 teardown()을 정의해 러너 종료 시 요청을 일찍 멈추고 리소스를 정리할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#january-19-2026",
+    "source": "dev"
+  }
+]

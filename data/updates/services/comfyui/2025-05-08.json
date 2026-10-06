@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-08-1",
+    "service": "comfyui",
+    "date": "2025.05.08",
+    "kind": "모델",
+    "title": "ComfyUI, 음악 생성 모델 ACE-Step 네이티브 지원",
+    "summary": "ACE Studio와 StepFun이 함께 만든 오픈소스 음악 생성 모델 ACE-Step을 ComfyUI에서 네이티브로 지원해요. 노래·연주곡 등 여러 장르와 다국어를 다뤄요.",
+    "url": "https://blog.comfy.org/p/stable-diffusion-moment-of-audio",
+    "source": "notice"
+  }
+]

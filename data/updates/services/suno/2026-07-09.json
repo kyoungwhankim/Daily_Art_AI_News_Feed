@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-07-09-1",
+    "service": "suno",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Suno 웹 가사 편집 개편과 Lyricist",
+    "summary": "가사 편집이 새로 디자인됐고, 내 가사 예시를 Lyricist로 저장해 같은 분위기의 가사를 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/lyrics-improvements-on-web",
+    "source": "notice"
+  }
+]

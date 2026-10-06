@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-01-29-1",
+    "service": "scenario",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "새 3D 모델·Gemini TTS·워크플로 개선",
+    "summary": "Tencent Hunyuan 3D 모델과 Gemini TTS가 추가되고 워크플로와 팀 관리 도구가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-107-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-01-29-2",
+    "service": "scenario",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "LTX-2 영상 LoRA·Skybox to 3D",
+    "summary": "LTX-2 영상에 커스텀 LoRA를 적용하고, 스카이박스를 3D 환경으로 바꿀 수 있어요. Gemini 오디오도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-23-0",
+    "source": "notice"
+  }
+]

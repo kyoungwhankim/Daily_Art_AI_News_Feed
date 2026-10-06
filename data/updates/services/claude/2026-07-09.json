@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-09-1",
+    "service": "claude",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Claude 사용 회고 기능(Reflect) 출시",
+    "summary": "Claude를 어떻게 쓰는지 월간 회고로 보여 주는 Reflect가 나왔어요. 휴식 알림과 방해 금지 시간도 설정할 수 있어요.",
+    "url": "https://www.anthropic.com/news/reflect-with-claude",
+    "source": "notice"
+  }
+]

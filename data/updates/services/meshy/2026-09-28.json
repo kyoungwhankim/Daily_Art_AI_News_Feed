@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-28-1",
+    "service": "meshy",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "레이트 리밋 헤더·프린터 브랜드 프리셋",
+    "summary": "API 응답에 Retry-After 등 레이트 리밋 헤더가 추가됐어요. Multi-Color Print는 printer_brand로 여러 프린터용 슬라이서 프리셋을 넣어 줘요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

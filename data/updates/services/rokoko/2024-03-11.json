@@ -1,0 +1,16 @@
+[
+  {
+    "id": "rokoko-2024-03-11-1",
+    "service": "rokoko",
+    "date": "2024.03.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.4, Coil Pro Elevation Tracking과 얼굴 필터",
+    "summary": "Coil Pro와 Smartsuit Pro II 조합에서 Elevation Tracking을 쓸 수 있고, Face Capture 표정·눈 깜빡임을 조절하는 첫 필터가 생겼어요.",
+    "details": [
+      "Coil Pro Elevation Tracking",
+      "Face Capture 표정·깜빡임 범위 필터"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/23246986876305-Rokoko-Studio-2-4-4",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-08-01-1",
+    "service": "kling",
+    "date": "2025.08.01",
+    "kind": "API",
+    "title": "API에 Text-to-Audio·Video-to-Audio 추가",
+    "summary": "Kling API에서 텍스트 프롬프트로 오디오를 만들고, Kling 영상이나 업로드한 영상에 소리를 입힐 수 있게 됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#08%2F01%2F2025",
+    "source": "dev"
+  }
+]

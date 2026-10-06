@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-02-29-1",
+    "service": "flow-studio",
+    "date": "2024.02.29",
+    "kind": "연동",
+    "title": "Wonder Studio Maya 애드온, 카메라 플레이트 로딩 도구",
+    "summary": "Maya 애드온에 각 카메라에 플레이트를 불러오는 새 도구가 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

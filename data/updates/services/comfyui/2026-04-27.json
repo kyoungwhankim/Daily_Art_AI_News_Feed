@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-04-27-1",
+    "service": "comfyui",
+    "date": "2026.04.27",
+    "kind": "연동",
+    "title": "ComfyUI, HappyHorse 1.0 영상 모델 지원",
+    "summary": "멀티샷 구성과 편집 워크플로에 강한 Alibaba의 시네마틱 영상 모델 HappyHorse 1.0을 ComfyUI에서 쓸 수 있어요.",
+    "details": [
+      "v0.20.0: SUPIR 업스케일, SAM 3.1, RIFE·FILM 프레임 보간",
+      "고비트 영상과 알파 채널 영상 로딩",
+      "Topaz Astra 2, Luma UNI-1, GPT 5.5 노드",
+      "Moonvalley API 노드 제거"
+    ],
+    "url": "https://blog.comfy.org/p/happyhorse-10-is-now-available",
+    "source": "notice"
+  }
+]

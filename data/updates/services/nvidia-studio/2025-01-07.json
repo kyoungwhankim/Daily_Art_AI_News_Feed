@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-01-07-1",
+    "service": "nvidia-studio",
+    "date": "2025.01.07",
+    "kind": "기능",
+    "title": "RTX 50 시리즈와 생성형 AI 크리에이티브 도구",
+    "summary": "Blackwell 기반 RTX 50 시리즈가 생성형 AI 모델을 최대 2배 빠르게, 더 적은 메모리로 돌린다고 발표했어요. 영상·스트리밍·3D용 새 도구도 함께 공개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/generative-ai-studio-ces-geforce-rtx-50-series/",
+    "source": "notice"
+  }
+]

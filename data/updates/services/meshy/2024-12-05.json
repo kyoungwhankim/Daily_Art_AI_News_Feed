@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2024-12-05-1",
+    "service": "meshy",
+    "date": "2024.12.05",
+    "kind": "API",
+    "title": "Get Balance API·should_remesh 파라미터 추가",
+    "summary": "크레딧 잔액을 조회하는 Get Balance API가 추가됐어요. Image to 3D와 Text to 3D Preview에는 리메시 여부를 고르는 should_remesh가 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  }
+]

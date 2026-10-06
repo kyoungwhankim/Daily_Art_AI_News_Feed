@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2024-12-03-1",
+    "service": "meshy",
+    "date": "2024.12.03",
+    "kind": "API",
+    "title": "외부 API 경로에 /openapi 접두사 도입",
+    "summary": "외부 API가 /openapi 접두사 경로를 쓰게 됐어요. 기존 경로도 계속 동작하지만 새 경로로 옮기는 것을 권장해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#dec-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-04-29-1",
+    "service": "meshy",
+    "date": "2025.04.29",
+    "kind": "API",
+    "title": "Meshy-5 API 지원·Multi-Image to 3D API 추가",
+    "summary": "Text to 3D와 Image to 3D API에 meshy-5 모델이 추가되고 latest도 meshy-5를 가리키게 됐어요. 1–4장 이미지로 3D를 만드는 Multi-Image to 3D API도 나왔어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2025",
+    "source": "dev"
+  }
+]

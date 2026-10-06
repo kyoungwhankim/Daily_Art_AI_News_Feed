@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-01-19-1",
+    "service": "meshy",
+    "date": "2026.01.19",
+    "kind": "모델",
+    "title": "API latest, Meshy 6로 전환",
+    "summary": "Text to 3D Preview와 Image to 3D API에서 ai_model latest가 이제 Meshy 6를 가리켜요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  }
+]

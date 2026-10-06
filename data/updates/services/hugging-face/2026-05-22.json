@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-05-22-1",
+    "service": "hugging-face",
+    "date": "2026.05.22",
+    "kind": "기능",
+    "title": "저장소 내용을 Bucket으로 즉시 복사",
+    "summary": "저장소 페이지의 'Copy to Bucket' 버튼으로 모델·데이터셋을 Bucket에 바로 복사할 수 있어요. Xet 서버 측 전송 덕분에 테라바이트급도 몇 초 만에 옮겨져요.",
+    "url": "https://huggingface.co/changelog/copy-repo-contents-to-buckets-instantly",
+    "source": "notice"
+  }
+]

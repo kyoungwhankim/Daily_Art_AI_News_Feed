@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2020-04-15-1",
+    "service": "topaz-video",
+    "date": "2020.04.15",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.2.1: Artemis 모델 업데이트",
+    "summary": "Artemis 모델을 업데이트하고 Artemis-MQ를 정리했어요. Artemis의 OpenVINO(CPU) 지원과 명령줄 GPU 옵션도 추가됐어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-2-1-openvino-v3-and-bug-fixes/14395",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-10-23-1",
+    "service": "claude",
+    "date": "2025.10.23",
+    "kind": "기능",
+    "title": "Max·Pro 플랜에 메모리 제공",
+    "summary": "Max 사용자가 Claude 메모리를 쓸 수 있게 됐고 Pro에는 2주에 걸쳐 순차 제공돼요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2025-08-20-1",
+    "service": "comfyui",
+    "date": "2025.08.20",
+    "kind": "모델",
+    "title": "ComfyUI, Qwen-Image-Edit 네이티브 지원",
+    "summary": "Qwen-Image의 20B 편집 버전 Qwen-Image-Edit을 ComfyUI에서 네이티브로 지원해 글자 편집과 의미·외형 편집을 할 수 있어요.",
+    "details": [
+      "v0.3.51: Wan 2.2 Fun Camera, FLUX Kontext 다중 참조 노드",
+      "오디오 녹음 노드",
+      "GPT-5, Kling V2.1, MiniMax Hailuo, Vidu API 노드",
+      "컨텍스트 윈도 샘플링 지원"
+    ],
+    "url": "https://blog.comfy.org/p/qwen-image-edit-comfyui-support",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2026-04-25-1",
+    "service": "topaz-video",
+    "date": "2026.04.25",
+    "kind": "모델",
+    "title": "Topaz Video 1.4.0: 로컬 Starlight Precise 2.5",
+    "summary": "클라우드 앱 Astra에서 먼저 선보인 Starlight Precise 2.5를 데스크톱에서 로컬로 렌더링할 수 있어요. 새 처리 엔진 Neuroserver도 도입했어요(Windows).",
+    "url": "https://community.topazlabs.com/t/topaz-video-1-4-0/102311",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2026-08-07-1",
+    "service": "kling",
+    "date": "2026.08.07",
+    "kind": "API",
+    "title": "Kling API Webhook 서명 지원",
+    "summary": "Kling API 콜백이 실제로 Kling에서 온 것인지 확인하는 Webhook Signature와 테스트 콜백, 시크릿 관리 기능이 추가됐어요.",
+    "details": [
+      "서명을 켜지 않으면 기존 연동은 그대로 동작"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#08%2F07%2F2026",
+    "source": "dev"
+  }
+]

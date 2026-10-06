@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-10-10-1",
+    "service": "fal.ai",
+    "date": "2025.10.10",
+    "kind": "기능",
+    "title": "앱 상세 페이지 개편 (Analytics·Runners·Logs·Versions)",
+    "summary": "앱 상세가 분석·러너·로그·버전 전용 페이지로 나뉘어 배포 상태를 더 집중해서 볼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#october-10-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-10-10-2",
+    "service": "fal.ai",
+    "date": "2025.10.10",
+    "kind": "모델",
+    "title": "Moondream 3 Preview fal 제공",
+    "summary": "활성 파라미터 2B로 빠르면서 더 긴 컨텍스트와 똑똑해진 비전 모델 Moondream 3 Preview가 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/introducing-moondream-3-on-fal/",
+    "source": "notice"
+  }
+]

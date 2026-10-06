@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2025-01-15-1",
+    "service": "dream-machine",
+    "date": "2025.01.15",
+    "kind": "모델",
+    "title": "Ray2 공개: 차세대 영상 생성 모델",
+    "summary": "Ray1보다 10배 많은 연산으로 학습한 새 영상 모델 Ray2를 공개했어요. 사실적인 질감과 자연스러운 움직임, 높은 프롬프트 이해력이 특징이에요.",
+    "details": [
+      "더 높은 해상도와 더 긴 영상 길이",
+      "루프·연장 기능, 최대 30초 연장"
+    ],
+    "url": "https://lumalabs.ai/changelog/introducing-ray2",
+    "source": "notice"
+  }
+]

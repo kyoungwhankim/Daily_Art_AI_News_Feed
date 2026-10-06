@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-08-26-1",
+    "service": "runway",
+    "date": "2026.08.26",
+    "kind": "API",
+    "title": "Runway Dev에 WAN 3.0·Meta Muse Image 추가",
+    "summary": "WAN 3.0 영상 모델과 Meta Muse Image 이미지 모델을 Runway Dev API에서 쓸 수 있게 됐어요. WAN 3.0은 네이티브 오디오와 레퍼런스 기반 샷에 강해요.",
+    "details": [
+      "WAN 3.0: 최대 30초, 480p·720p·1080p, 초당 5/10/20크레딧",
+      "Muse Image: 레퍼런스 최대 10장, 이미지당 1크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#wan-30-on-runway-dev",
+    "source": "dev"
+  }
+]

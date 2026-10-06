@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-26-1",
+    "service": "runway",
+    "date": "2024.09.26",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo Video to Video",
+    "summary": "Gen-3 Alpha Turbo에서도 Video to Video를 써서 더 빠르게 반복 작업할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

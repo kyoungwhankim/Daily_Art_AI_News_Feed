@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-08-07-1",
+    "service": "layer",
+    "date": "2024.08.07",
+    "kind": "모델",
+    "title": "Layer, FLUX 모델 도입",
+    "summary": "Black Forest Labs의 FLUX 모델을 Layer에 도입했다고 발표했어요. 더 높은 품질의 게임 아트를 만들 수 있어요.",
+    "url": "https://layer.ai/blog/flux-taking-gen-ai-journey-next-level",
+    "source": "notice"
+  }
+]

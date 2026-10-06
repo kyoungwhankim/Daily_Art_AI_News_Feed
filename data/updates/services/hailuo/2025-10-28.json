@@ -1,0 +1,28 @@
+[
+  {
+    "id": "hailuo-2025-10-28-1",
+    "service": "hailuo",
+    "date": "2025.10.28",
+    "kind": "모델",
+    "title": "MiniMax Hailuo 2.3·2.3 Fast 출시와 Media Agent 공개",
+    "summary": "신체 동작, 미세 표정, 애니·일러스트 스타일 표현이 좋아진 Hailuo 2.3을 Hailuo 02와 같은 가격에 출시했어요. Video Agent는 멀티모달 Media Agent로 진화했어요.",
+    "details": [
+      "Hailuo 2.3 Fast: 더 빠르고 배치 비용 최대 50% 절감",
+      "웹·모바일 앱·오픈 플랫폼 API 동시 적용",
+      "API: 2.3은 T2V·I2V, 2.3-Fast는 I2V 지원",
+      "768P(6·10초), 1080P(6초) 해상도 지원"
+    ],
+    "url": "https://www.minimax.io/news/minimax-hailuo-23",
+    "source": "notice"
+  },
+  {
+    "id": "hailuo-2025-10-28-2",
+    "service": "hailuo",
+    "date": "2025.10.28",
+    "kind": "연동",
+    "title": "VEED에 Hailuo-2.3 출시일 동시 탑재",
+    "summary": "VEED가 Hailuo-2.3의 출시 파트너로 AI Playground에서 바로 Hailuo-2.3을 제공해요. 생성부터 편집까지 한 흐름으로 작업할 수 있어요.",
+    "url": "https://www.minimax.io/news/minimax-and-veed-hailuo-23-for-pro-level-ai-video",
+    "source": "notice"
+  }
+]

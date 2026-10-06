@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-12-19-1",
+    "service": "runway",
+    "date": "2024.12.19",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo 중간 키프레임 지원",
+    "summary": "첫·마지막 키프레임에 더해 중간 키프레임을 넣어 이미지 투 비디오를 더 세밀하게 제어할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

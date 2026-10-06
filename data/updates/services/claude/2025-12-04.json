@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-12-04-1",
+    "service": "claude",
+    "date": "2025.12.04",
+    "kind": "API",
+    "title": "구조화 출력, Haiku 4.5 지원",
+    "summary": "구조화 출력을 Claude Haiku 4.5에서도 쓸 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#december-4-2025",
+    "source": "dev"
+  }
+]

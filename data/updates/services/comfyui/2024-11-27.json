@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-11-27-1",
+    "service": "comfyui",
+    "date": "2024.11.27",
+    "kind": "앱",
+    "title": "ComfyUI Desktop 오픈소스 공개(베타)",
+    "summary": "V1으로 불리던 ComfyUI Desktop의 코드를 오픈소스로 공개하고 Windows(NVIDIA)·macOS(M 시리즈)용 베타를 내려받을 수 있게 했어요.",
+    "url": "https://blog.comfy.org/p/open-sourcing-v1-desktop",
+    "source": "notice"
+  }
+]

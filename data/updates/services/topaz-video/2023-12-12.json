@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-12-12-1",
+    "service": "topaz-video",
+    "date": "2023.12.12",
+    "kind": "앱",
+    "title": "Topaz Video AI v4.0.7: 모델 관리자와 실시간 미리보기",
+    "summary": "Model Manager 화면과 실시간 미리보기를 다시 넣고, 비교 모드에서 왼쪽을 원본으로 고정할 수 있어요. AE 플러그인은 멀티프레임 렌더링을 지원해요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v4-0-7/58453",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-15-1",
+    "service": "meshy",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "GPT Image 2.5 모델 추가",
+    "summary": "Text to Image와 Image to Image API에 gpt-image-2-5-flare와 gpt-image-2-5-sunburst가 추가됐어요. GPT Image 모델은 4:3, 3:4도 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

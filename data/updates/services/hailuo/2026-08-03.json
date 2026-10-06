@@ -1,0 +1,18 @@
+[
+  {
+    "id": "hailuo-2026-08-03-1",
+    "service": "hailuo",
+    "date": "2026.08.03",
+    "kind": "모델",
+    "title": "MiniMax H3 오픈소스 공개",
+    "summary": "차세대 범용 영상 모델 MiniMax H3를 오픈소스로 공개했어요. Hugging Face와 ModelScope에서 받을 수 있고 4~15초, 24FPS, 32kHz 스테레오 오디오 영상을 생성해요.",
+    "details": [
+      "H3-Base-FL2VA: 첫·끝 프레임 모드",
+      "H3-Base-Ref2VA: 이미지 최대 9장 등 옴니 레퍼런스 모드",
+      "H3-Regenerate-2K로 2K 업스케일 재생성",
+      "대사 11개 언어 안정 지원(한국어 포함)"
+    ],
+    "url": "https://www.minimax.io/news/minimax-h3-open-source",
+    "source": "notice"
+  }
+]

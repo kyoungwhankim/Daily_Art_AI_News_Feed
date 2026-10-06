@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-04-28-1",
+    "service": "elevenlabs",
+    "date": "2025.04.28",
+    "kind": "기능",
+    "title": "Agents 대시보드 커스텀 차트",
+    "summary": "Agents Platform 대시보드에 평가 결과를 보여 주는 커스텀 차트를 넣을 수 있고, 사용량 분석이 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/28",
+    "source": "dev"
+  }
+]

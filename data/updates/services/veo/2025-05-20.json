@@ -1,0 +1,33 @@
+[
+  {
+    "id": "veo-2025-05-20-1",
+    "service": "veo",
+    "date": "2025.05.20",
+    "kind": "모델",
+    "title": "오디오까지 생성하는 Veo 3 공개",
+    "summary": "Veo 3는 처음으로 효과음·배경음·대사까지 함께 생성하는 영상 모델이에요. 미국 Ultra 구독자에게 Gemini 앱과 Flow로, 기업 고객에게 Vertex AI로 제공돼요.",
+    "details": [
+      "립싱크와 실제 물리 표현 개선",
+      "Veo 2에 카메라 컨트롤, 아웃페인팅, 오브젝트 추가·제거 등 신규 기능",
+      "Imagen 4, Lyria 2와 함께 발표"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/generative-media-models-io-2025/",
+    "source": "notice"
+  },
+  {
+    "id": "veo-2025-05-20-2",
+    "service": "veo",
+    "date": "2025.05.20",
+    "kind": "앱",
+    "title": "Veo 전용 AI 영화 제작 도구 Flow 출시",
+    "summary": "Veo·Imagen·Gemini에 맞춰 설계된 AI 영화 제작 도구 Flow가 공개됐어요. 캐릭터·장면 일관성을 유지하며 클립을 이어 붙여 이야기를 만들 수 있어요.",
+    "details": [
+      "Camera Controls로 카메라 움직임·앵글 직접 제어",
+      "Scenebuilder로 기존 샷 편집·연장",
+      "Asset Management로 소재와 프롬프트 관리",
+      "Flow TV에서 다른 창작물과 프롬프트 탐색"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/google-flow-veo-ai-filmmaking-tool/",
+    "source": "notice"
+  }
+]

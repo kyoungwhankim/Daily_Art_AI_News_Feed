@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-05-1",
+    "service": "scenario",
+    "date": "2026.01.05",
+    "kind": "모델",
+    "title": "Sparc3D 2.0·Flux 2 Turbo·Qwen 2512, FBX 내보내기",
+    "summary": "3D Sparc 3D 2.0, 이미지 Qwen 2512, 편집 Flux 2 Turbo가 추가되고 FBX 내보내기를 지원해요.",
+    "url": "https://www.scenario.com/changelog/1-111-sparc3d-2-0-flux-turbo-qwen-2512-platform-enhancements",
+    "source": "notice"
+  }
+]

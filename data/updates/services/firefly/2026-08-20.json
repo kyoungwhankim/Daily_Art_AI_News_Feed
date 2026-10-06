@@ -1,0 +1,16 @@
+[
+  {
+    "id": "firefly-2026-08-20-1",
+    "service": "firefly",
+    "date": "2026.08.20",
+    "kind": "기능",
+    "title": "Firefly 오디오 정식 출시: 음악·음성·효과음",
+    "summary": "Firefly의 Generate Music, Generate Speech, 효과음 생성이 모두에게 정식 제공돼요. 영상을 올리면 분위기에 맞는 음악을 만들고, 대본을 내레이션으로 바꿔요.",
+    "details": [
+      "상업적으로 안전한 결과물",
+      "Google·ElevenLabs 등 파트너 모델 함께 제공"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2026/08/20/adobe-firefly-expands-its-creative-ai-studio-generate-music-speech-and-sound-effects-in-one-place",
+    "source": "notice"
+  }
+]

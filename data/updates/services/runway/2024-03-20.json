@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-03-20-1",
+    "service": "runway",
+    "date": "2024.03.20",
+    "kind": "기능",
+    "title": "엔터프라이즈 초대 링크",
+    "summary": "엔터프라이즈 관리자가 초대 링크를 만들어 팀원이 접근을 요청하게 할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

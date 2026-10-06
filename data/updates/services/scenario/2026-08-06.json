@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-08-06-1",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "프로젝트 모델 관리·모더레이션 개선",
+    "summary": "프로젝트 단위 모델 관리와 더 똑똑한 콘텐츠 모더레이션이 들어왔어요. IP 감지 설정에는 호환성 변경이 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-129-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-08-06-2",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "Meshy-T2 3D·Grok·MiniMax 영상",
+    "summary": "스마트 토폴로지 3D Meshy-T2, Grok·MiniMax 영상 모델, Cartwheel 커스텀 캐릭터 업로드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-6-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-06-3",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "기능",
+    "title": "프로젝트 모델 제어·Genie 개선·HEIC 지원",
+    "summary": "프로젝트별 모델 접근을 강제할 수 있고 Genie가 컬렉션을 정리해 줘요. HEIC와 Randomizer 노드도 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-21-0",
+    "source": "notice"
+  }
+]

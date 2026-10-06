@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-07-11-1",
+    "service": "scenario",
+    "date": "2024.07.11",
+    "kind": "기능",
+    "title": "Restyle(스케치→렌더) 출시, Unity로 열기",
+    "summary": "입력 이미지나 스케치에 스타일을 입히는 Restyle이 나왔어요. 생성물을 Unity로 바로 내보낼 수도 있어요.",
+    "url": "https://www.scenario.com/changelog/1-62-restyle-sketch-to-render",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2026-03-03-1",
+    "service": "unity-ai",
+    "date": "2026.03.03",
+    "kind": "API",
+    "title": "AI Assistant 2.0: 패키지 통합과 MCP 도구 공개",
+    "summary": "AI Assistant 2.0.0에서 AI Toolkit과 Generators 패키지가 Assistant 하나로 합쳐지고, MCP 도구와 API가 공개되며 Skills 개발 화면이 추가됐어요.",
+    "details": [
+      "MCP 도구 카테고리 UI와 문서",
+      "Annotation 불투명도 슬라이더"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#200-pre1---2026-03-03",
+    "source": "dev"
+  }
+]

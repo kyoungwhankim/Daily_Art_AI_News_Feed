@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-07-30-1",
+    "service": "fal.ai",
+    "date": "2024.07.30",
+    "kind": "모델",
+    "title": "AuraSR v2 업스케일러 공개",
+    "summary": "fal이 만든 단일 단계 GAN 업스케일러 AuraSR의 두 번째 버전이 나왔어요.",
+    "url": "https://blog.fal.ai/aurasr-v2/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-12-08-1",
+    "service": "scenario",
+    "date": "2025.12.08",
+    "kind": "기능",
+    "title": "Apps 56종 추가·모델 썸네일 개편",
+    "summary": "홈에 56개의 새 Apps가 추가되고 모델 썸네일 디자인이 새로워졌어요.",
+    "url": "https://www.scenario.com/changelog/1-107-1-new-apps-model-thumbnails",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-08-2",
+    "service": "scenario",
+    "date": "2025.12.08",
+    "kind": "API",
+    "title": "복셀 미리보기 지원",
+    "summary": "Compute에서 복셀 미리보기를 지원하고 이미지 시퀀스→영상 변환 문제가 고쳐졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-12-0",
+    "source": "notice"
+  }
+]

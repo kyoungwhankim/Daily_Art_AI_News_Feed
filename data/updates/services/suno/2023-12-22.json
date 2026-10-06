@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2023-12-22-1",
+    "service": "suno",
+    "date": "2023.12.22",
+    "kind": "기능",
+    "title": "Suno 연말 패치, Continue 버튼 등",
+    "summary": "클립 이어 만들기 때 Create 버튼이 Continue로 바뀌는 등 작은 기능 개선 패치가 나왔어요.",
+    "url": "https://suno.com/release-notes/happy-holidays",
+    "source": "notice"
+  }
+]

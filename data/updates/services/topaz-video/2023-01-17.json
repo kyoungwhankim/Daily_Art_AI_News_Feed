@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-01-17-1",
+    "service": "topaz-video",
+    "date": "2023.01.17",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.0: 모션 디블러 Themis와 속도 향상",
+    "summary": "모든 모델의 처리 속도를 높이고 움직임 흐림을 줄이는 새 AI 모델 Themis를 추가했어요. NVIDIA에서 Chronos와 안정화가 TensorRT를 써요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-0/38922",
+    "source": "notice"
+  }
+]

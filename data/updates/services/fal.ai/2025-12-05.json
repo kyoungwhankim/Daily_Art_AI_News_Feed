@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-12-05-1",
+    "service": "fal.ai",
+    "date": "2025.12.05",
+    "kind": "연동",
+    "title": "Pika API, fal 인프라로 제공",
+    "summary": "Pika가 fal과 손잡고 Pikaframes·Pikascenes를 포함한 Model 2.2를 fal 추론 인프라에서 제공해요.",
+    "url": "https://blog.fal.ai/pika-api-is-now-powered-by-fal/",
+    "source": "notice"
+  }
+]

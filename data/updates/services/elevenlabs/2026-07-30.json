@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-07-30-1",
+    "service": "elevenlabs",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "오디오북 Character Casting",
+    "summary": "원고 속 등장인물을 찾아 각자에게 맞는 목소리를 제안하고 실제 대사로 미리 들려주는 Character Casting이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-character-casting-in-audiobooks",
+    "source": "notice"
+  }
+]

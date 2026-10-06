@@ -1,0 +1,15 @@
+[
+  {
+    "id": "scenario-2024-06-13-1",
+    "service": "scenario",
+    "date": "2024.06.13",
+    "kind": "API",
+    "title": "새 업스케일 API·IP Adapter 유형 선택",
+    "summary": "더 좋고 빠른 새 업스케일 엔드포인트가 나왔고 스타일 이미지 조건도 지원해요. 추론에 ipAdapterType이 추가됐어요.",
+    "details": [
+      "v2.29.1: 초대형 이미지 처리·업스케일 시드 제한 수정"
+    ],
+    "url": "https://www.scenario.com/changelog/2-29-0-new-upscaler-ip-adapter-and-more",
+    "source": "dev"
+  }
+]

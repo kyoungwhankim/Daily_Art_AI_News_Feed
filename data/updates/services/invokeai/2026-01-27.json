@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2026-01-27-1",
+    "service": "invokeai",
+    "date": "2026.01.27",
+    "kind": "모델",
+    "title": "InvokeAI 6.11.0: FLUX.2 Klein 생성·편집 지원",
+    "summary": "InvokeAI 6.11.0에서 빠르고 품질 좋은 FLUX.2 Klein 4B·9B 모델과 양자화 버전을 지원해요. 프롬프트로 이미지를 부분 수정하는 편집 기능도 쓸 수 있어요.",
+    "url": "https://invoke.ai/releases/version/v6-11-0/",
+    "source": "notice"
+  }
+]

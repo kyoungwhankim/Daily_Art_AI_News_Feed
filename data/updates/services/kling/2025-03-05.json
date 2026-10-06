@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-03-05-1",
+    "service": "kling",
+    "date": "2025.03.05",
+    "kind": "API",
+    "title": "Video Effects API 출시, 듀얼 이미지 효과 3종",
+    "summary": "Kling API에 크리에이티브 영상 효과 API가 추가돼 hug, kiss, heart_gesture 듀얼 이미지 효과를 호출할 수 있어요. 효과 전용 전·후처리가 포함돼요.",
+    "url": "https://kling.ai/document-api/updates/api#03%2F05%2F2025",
+    "source": "dev"
+  }
+]

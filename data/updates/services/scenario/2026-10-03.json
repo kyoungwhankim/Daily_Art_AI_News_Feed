@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-03-1",
+    "service": "scenario",
+    "date": "2026.10.03",
+    "kind": "연동",
+    "title": "스킬: 횡스크롤 게임 키트·3D 메시 파이프라인",
+    "summary": "횡스크롤 2D 게임 에셋 스킬과 Ideogram 4.5, 복잡한 3D 메시 파이프라인을 에이전트가 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-50-0",
+    "source": "notice"
+  }
+]

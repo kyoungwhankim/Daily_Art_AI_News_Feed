@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-09-29-1",
+    "service": "elevenlabs",
+    "date": "2025.09.29",
+    "kind": "종료",
+    "title": "v1 TTS 모델 지원 종료 예고",
+    "summary": "eleven_monolingual_v1과 eleven_multilingual_v1 모델이 사용 중단되고 2025년 12월 15일 제거될 예정이라 새 모델로 옮겨야 해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/29",
+    "source": "dev"
+  }
+]

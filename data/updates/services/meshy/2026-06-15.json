@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-06-15-1",
+    "service": "meshy",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "UV Unwrap API 출시",
+    "summary": "기존 3D 모델에 겹치지 않는 깔끔한 UV를 새로 만들어 주는 UV Unwrap API가 나왔어요. 호출당 5크레딧, 최대 40,000면까지 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  }
+]

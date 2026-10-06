@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2025-08-12-1",
+    "service": "tripo",
+    "date": "2025.08.12",
+    "kind": "모델",
+    "title": "Tripo v3.0 베타 공개",
+    "summary": "디테일 복원과 날카로운 엣지, 하드서피스 표현을 크게 개선한 v3.0-20250812 베타가 나왔어요. 텍스처 생성과 PBR도 함께 업그레이드됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-0-2025-08-12",
+    "source": "dev"
+  }
+]

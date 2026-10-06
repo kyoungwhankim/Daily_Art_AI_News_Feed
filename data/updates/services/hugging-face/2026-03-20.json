@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-03-20-1",
+    "service": "hugging-face",
+    "date": "2026.03.20",
+    "kind": "기능",
+    "title": "Protected Spaces: 비공개 Space를 공개 URL로",
+    "summary": "Space를 protected로 설정하면 Hugging Face에서는 비공개로 두고 URL은 공개할 수 있어요. 모델 가중치나 프롬프트를 노출하지 않고 데모·내부 도구를 배포할 수 있어요.",
+    "url": "https://huggingface.co/changelog/protected-spaces",
+    "source": "notice"
+  }
+]

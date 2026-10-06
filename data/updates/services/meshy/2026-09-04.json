@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-04-1",
+    "service": "meshy",
+    "date": "2026.09.04",
+    "kind": "API",
+    "title": "애니메이션 라이브러리 조회 API·Collapsible Fidget API",
+    "summary": "프리셋 동작 목록을 무료로 조회하는 API와, 사진으로 접이식 피젯 장난감을 만드는 Creative Lab Collapsible Fidget API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

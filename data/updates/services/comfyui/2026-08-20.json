@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-20-1",
+    "service": "comfyui",
+    "date": "2026.08.20",
+    "kind": "연동",
+    "title": "ComfyUI v0.33.3: Flux Video Upscale 노드",
+    "summary": "ComfyUI v0.33.3에서 FLUX 초해상도로 영상을 1.5~3배 키우는 Flux Video Upscale과 Seedream 빠른 모드, Gemini 3.7 Flash가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-33-3",
+    "source": "notice"
+  }
+]

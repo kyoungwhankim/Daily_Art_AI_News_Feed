@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-11-13-1",
+    "service": "elevenlabs",
+    "date": "2025.11.13",
+    "kind": "연동",
+    "title": "ElevenLabs Agents SIP 업그레이드",
+    "summary": "기존 전화번호와 라우팅·인프라를 그대로 쓰면서 안정적이고 안전하게 AI 에이전트를 연결하도록 SIP 기능이 강화됐어요.",
+    "url": "https://elevenlabs.io/blog/sip-upgrades-for-elevenlabs-agents",
+    "source": "notice"
+  }
+]

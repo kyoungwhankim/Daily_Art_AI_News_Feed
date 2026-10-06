@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-09-25-1",
+    "service": "claude",
+    "date": "2026.09.25",
+    "kind": "연동",
+    "title": "Claude 플러그인 개발자 포털 공개",
+    "summary": "새 개발자 포털로 Claude 디렉터리에 플러그인을 제출하고 심사 상황과 출시 후 사용 분석을 확인할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

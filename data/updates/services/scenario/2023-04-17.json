@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-04-17-1",
+    "service": "scenario",
+    "date": "2023.04.17",
+    "kind": "기능",
+    "title": "학습 진행률 표시·팀 대시보드",
+    "summary": "생성기 학습 진행률을 볼 수 있고, 개인 팀으로 팀 기능과 대시보드·초대를 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-9-0-april-17-2023",
+    "source": "notice"
+  }
+]

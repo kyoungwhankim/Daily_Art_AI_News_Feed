@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2019-11-21-1",
+    "service": "blender",
+    "date": "2019.11.21",
+    "kind": "앱",
+    "title": "Blender 2.81 출시: 스컬프팅 개편·RTX",
+    "summary": "스컬프팅 도구 전면 개편, Cycles NVIDIA RTX 레이 트레이싱, Intel Open Image Denoise를 담은 Blender 2.81이 나왔어요.",
+    "url": "https://www.blender.org/press/blender-2-81-released/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-09-30-1",
+    "service": "layer",
+    "date": "2024.09.30",
+    "kind": "기능",
+    "title": "오래된 스타일 간편 업그레이드",
+    "summary": "오래된 커스텀 스타일을 쉽게 최신 버전으로 올리는 흐름이 생기고 Forge가 다듬어졌어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-09-30",
+    "source": "notice"
+  }
+]

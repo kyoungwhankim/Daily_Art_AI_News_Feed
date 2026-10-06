@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2021-08-20-1",
+    "service": "synthesia",
+    "date": "2021.08.20",
+    "kind": "API",
+    "title": "Synthesia API V2 출시",
+    "summary": "오디오 업로드, 커스텀 아바타, 배경, 사운드트랙을 지원하는 API V2를 출시했어요.",
+    "url": "https://www.synthesia.io/updates/api-v2",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2021-08-20-2",
+    "service": "synthesia",
+    "date": "2021.08.20",
+    "kind": "기능",
+    "title": "Synthesia 공유 영상에 CTA 추가",
+    "summary": "Synthesia 영상을 공유할 때 행동 유도(CTA) 버튼을 넣을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/call-to-action",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2024-01-24-1",
+    "service": "invokeai",
+    "date": "2024.01.24",
+    "kind": "기능",
+    "title": "Invoke 3.6.1: Depth-Anything 기본 적용과 Remix",
+    "summary": "Invoke 3.6.1에서 Depth-Anything이 기본 깊이 처리기가 됐고, 시드만 빼고 모든 설정을 불러오는 Remix 기능이 추가됐어요.",
+    "details": [
+      "커뮤니티 피드백을 반영한 새 UI/UX 개선",
+      "설정에 About 메뉴 추가"
+    ],
+    "url": "https://invoke.ai/releases/version/invoke-3-6-1/",
+    "source": "notice"
+  }
+]

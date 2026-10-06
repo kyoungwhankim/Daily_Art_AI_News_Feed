@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tripo-2025-09-26-1",
+    "service": "tripo",
+    "date": "2025.09.26",
+    "kind": "모델",
+    "title": "Tripo v3.0 정식 출시, Ultra 모드",
+    "summary": "Tripo v3.0이 정식 출시됐어요. 엣지와 표면이 더 깔끔해졌고, Ultra 모드로 최대 200만 폴리곤까지 만들 수 있어요.",
+    "details": [
+      "Ultra 모드(geometry_quality=detailed) 최대 200만 폴리곤",
+      "텍스처·재질 파이프라인 대폭 개선",
+      "이중 레이어 표면·구멍 문제 해결"
+    ],
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-1-2025-09-26",
+    "source": "dev"
+  }
+]

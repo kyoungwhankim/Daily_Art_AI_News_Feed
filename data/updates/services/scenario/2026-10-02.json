@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-02-1",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 영상 확장·Recast 모델",
+    "summary": "클립을 최대 15초 늘리고 장면 삽입, 최대 4명 인물 교체가 가능한 MiniMax H3 Max 영상 모델 4종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-e1fc0d93974b3ff28842984cb0bdfcac1637da62d4e1f02ecd14a41ec7907016",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-02-2",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "FLUX.3 Image: 네이티브 2K·4K",
+    "summary": "레이아웃과 글자를 정확히 그리는 네이티브 2K·4K 이미지 모델 FLUX.3 Image가 추가됐어요. 참조 10장 편집도 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-eab3035ee295f6530ff6dd783b7c0f154827c48d67cb82360ed7fbe149ee8780",
+    "source": "notice"
+  }
+]

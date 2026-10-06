@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2025-05-13-1",
+    "service": "roblox-cube",
+    "date": "2025.05.13",
+    "kind": "연동",
+    "title": "오픈소스 Studio MCP 서버 공개",
+    "summary": "Claude 같은 LLM이 요청에 따라 Roblox Studio의 경험을 직접 수정할 수 있게 하는 오픈소스 Studio MCP 서버를 공개했어요.",
+    "url": "https://devforum.roblox.com/t/introducing-the-open-source-studio-mcp-server/3649365",
+    "source": "notice"
+  }
+]

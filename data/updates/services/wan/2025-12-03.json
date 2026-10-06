@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-12-03-1",
+    "service": "wan",
+    "date": "2025.12.03",
+    "kind": "모델",
+    "title": "멀티샷 스토리텔링 Wan2.6 영상 모델 출시",
+    "summary": "Wan2.6 텍스트·이미지-투-비디오가 지능형 샷 구성으로 일관된 멀티샷 영상을 최대 15초까지 만들어요. 여러 화자의 대화 음성도 자연스러워졌어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

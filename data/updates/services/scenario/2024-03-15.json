@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-03-15-1",
+    "service": "scenario",
+    "date": "2024.03.15",
+    "kind": "요금",
+    "title": "새 업스케일·새 요금제 도입",
+    "summary": "새 업스케일이 나오고 요금제가 개편돼 모든 작업에 월별 CU가 쓰여요. 팀은 모두 공유 팀이 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-49-march-15th-2024",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-12-22-1",
+    "service": "scenario",
+    "date": "2025.12.22",
+    "kind": "API",
+    "title": "이미지·영상 후처리 효과 16종",
+    "summary": "3D LUT, 필름 그레인 등 16개 이상의 후처리 효과를 이미지와 영상에 적용할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-16-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-11-12-1",
+    "service": "tripo",
+    "date": "2024.11.12",
+    "kind": "API",
+    "title": "이미지 입력에 URL 지원",
+    "summary": "image_to_model과 multiview_to_model이 이미지 URL을 입력으로 받게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-7-2024-11-12",
+    "source": "dev"
+  }
+]

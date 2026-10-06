@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-13-1",
+    "service": "comfyui",
+    "date": "2025.05.13",
+    "kind": "API",
+    "title": "API 노드, ComfyUI API 키 로그인 지원",
+    "summary": "API 노드를 ComfyUI API 키로도 로그인해 쓸 수 있게 돼, 허용 도메인 제한이 풀리고 헤드리스 환경에서도 API 노드를 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/api-nodes-login-via-comfyui-api-key",
+    "source": "notice"
+  }
+]

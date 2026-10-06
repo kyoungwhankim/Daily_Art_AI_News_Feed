@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-06-07-1",
+    "service": "suno",
+    "date": "2024.06.07",
+    "kind": "기능",
+    "title": "Suno Song Radio",
+    "summary": "아무 곡에서나 비슷한 곡이 이어서 나오는 Song Radio를 시작할 수 있어요.",
+    "url": "https://suno.com/release-notes/song-radio",
+    "source": "notice"
+  }
+]

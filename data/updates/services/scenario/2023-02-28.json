@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-02-28-1",
+    "service": "scenario",
+    "date": "2023.02.28",
+    "kind": "기능",
+    "title": "웹 앱 v1.1.0: 보안·인증 개선",
+    "summary": "접근 토큰 처리로 보안을 강화하고 인증 흐름과 리디렉션을 개선했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-1-0-february-28-2023",
+    "source": "notice"
+  }
+]

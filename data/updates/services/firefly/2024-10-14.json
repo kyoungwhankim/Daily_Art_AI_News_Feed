@@ -1,0 +1,16 @@
+[
+  {
+    "id": "firefly-2024-10-14-1",
+    "service": "firefly",
+    "date": "2024.10.14",
+    "kind": "기능",
+    "title": "Firefly 웹 앱 Generate Video(베타)",
+    "summary": "Firefly Video Model로 텍스트→영상, 이미지→영상을 만드는 Generate Video(베타)가 Firefly 웹 앱에 나왔어요. 같은 날 Premiere Pro Generative Extend(베타)와 Project Concept도 공개됐어요.",
+    "details": [
+      "Premiere Pro: 클립 앞뒤를 늘리는 Generative Extend(베타)",
+      "Project Concept: AI 기반 무드보드·콘셉트 도구"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2024/10/14/generate-video-beta-on-firefly-web-app",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-06-25-1",
+    "service": "unity-ai",
+    "date": "2025.06.25",
+    "kind": "기능",
+    "title": "AI Generators: 모델 즐겨찾기",
+    "summary": "AI Generators 1.0.0-pre.13에서 모델 즐겨찾기가 생기고 기본 변형 수가 1로 바뀌었어요. 모델 트레이너 메뉴는 제거됐어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre13---2025-06-25",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-10-16-1",
+    "service": "runway",
+    "date": "2025.10.16",
+    "kind": "API",
+    "title": "Runway Dev에 ElevenLabs 음성 분리·더빙 추가",
+    "summary": "ElevenLabs Voice Isolation으로 녹음의 배경 소음을 지우고, Dubbing으로 화자 목소리를 유지한 채 29개 언어로 번역할 수 있어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#elevenlabs-clean-audio",
+    "source": "dev"
+  }
+]

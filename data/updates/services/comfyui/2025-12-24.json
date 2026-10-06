@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2025-12-24-1",
+    "service": "comfyui",
+    "date": "2025.12.24",
+    "kind": "모델",
+    "title": "ComfyUI, Qwen Image Edit 2511·Qwen Image Layered 지원",
+    "summary": "지시 기반 고품질 편집 모델 Qwen Image Edit 2511과 레이어를 나눠 생성하는 Qwen Image Layered를 ComfyUI에서 쓸 수 있어요.",
+    "details": [
+      "v0.6.0: NewBie Image Exp0.1 지원",
+      "/api/jobs 통합 작업 API",
+      "API 노드 워터마크 기본 해제",
+      "트레이너 해상도 버킷팅"
+    ],
+    "url": "https://blog.comfy.org/p/qwen-image-edit-2511-and-qwen-image",
+    "source": "notice"
+  }
+]

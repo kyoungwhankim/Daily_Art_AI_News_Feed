@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-05-06-1",
+    "service": "topaz-video",
+    "date": "2025.05.06",
+    "kind": "앱",
+    "title": "Topaz Video AI 6.2.1·6.2.2: Resolve 플러그인 통합",
+    "summary": "DaVinci Resolve 플러그인 두 개를 하나로 합쳐 충돌을 막았어요. 여러 효과는 플러그인 인스턴스를 여러 개 적용해 써요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-6-2-1-6-2-2/90669",
+    "source": "notice"
+  }
+]

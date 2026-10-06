@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-12-19-1",
+    "service": "claude",
+    "date": "2025.12.19",
+    "kind": "종료",
+    "title": "Claude Haiku 3.5 지원 종료 예고",
+    "summary": "Claude Haiku 3.5의 지원 종료가 발표됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#december-19-2025",
+    "source": "dev"
+  }
+]

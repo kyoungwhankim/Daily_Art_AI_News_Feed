@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-04-05-1",
+    "service": "scenario",
+    "date": "2024.04.05",
+    "kind": "기능",
+    "title": "대기 중 생성 취소 기능",
+    "summary": "대기열에 있는 생성을 취소할 수 있고 대기 순번과 모델 상태가 표시돼요.",
+    "url": "https://www.scenario.com/changelog/1-51-cancel-your-generations",
+    "source": "notice"
+  }
+]

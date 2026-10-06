@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-05-27-1",
+    "service": "comfyui",
+    "date": "2026.05.27",
+    "kind": "연동",
+    "title": "ComfyUI, Krea 2 Image API 노드",
+    "summary": "창의성 조절, 스타일 참조, 무드보드 컨디셔닝을 갖춘 Krea의 첫 파운데이션 이미지 모델 Krea 2 Image를 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/krea-2-image-is-now-available-via",
+    "source": "notice"
+  }
+]

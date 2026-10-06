@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-08-09-1",
+    "service": "runway",
+    "date": "2024.08.09",
+    "kind": "기능",
+    "title": "Speech to Speech 출시",
+    "summary": "입력 음성의 내용·속도·톤은 그대로 두고 목소리만 바꾸는 Speech to Speech가 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

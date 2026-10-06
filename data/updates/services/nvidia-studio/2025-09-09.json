@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-09-09-1",
+    "service": "nvidia-studio",
+    "date": "2025.09.09",
+    "kind": "연동",
+    "title": "ComfyUI RTX 최대 40% 가속·새 모델 지원",
+    "summary": "ComfyUI가 RTX GPU에서 최대 40% 빨라지고 Wan 2.2·Qwen-Image·FLUX.1 Krea·Hunyuan3D 2.1을 지원해요. TensorRT 최적화 SD 3.5·FLUX.1 Kontext NIM도 나왔어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-comfyui-wan-qwen-flux-krea-remix/",
+    "source": "notice"
+  }
+]

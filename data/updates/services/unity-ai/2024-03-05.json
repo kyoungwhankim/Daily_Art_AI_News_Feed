@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2024-03-05-1",
+    "service": "unity-ai",
+    "date": "2024.03.05",
+    "kind": "모델",
+    "title": "Muse Texture 모델 Photo-Real-Unity-Texture-2",
+    "summary": "Muse Texture의 차세대 모델 Photo-Real-Unity-Texture-2를 적용해 나무·벽돌·콘크리트·금속 등 게임에 흔한 재질 품질이 크게 좋아졌어요.",
+    "details": [
+      "프롬프트 색상 일관성 향상",
+      "하이트맵이 기본 16비트로 개선"
+    ],
+    "url": "https://unity.com/blog/engine-platform/ai-model-improvements-higher-quality-muse-textures",
+    "source": "notice"
+  }
+]

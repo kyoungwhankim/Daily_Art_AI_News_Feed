@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-02-27-1",
+    "service": "tripo",
+    "date": "2024.02.27",
+    "kind": "API",
+    "title": "Tripo API 0.2.0-beta, 엔드포인트 개편",
+    "summary": "새 API 버전으로 엔드포인트가 바뀌고 문서가 개선됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_0-2-0-beta-2024-02-27",
+    "source": "dev"
+  }
+]

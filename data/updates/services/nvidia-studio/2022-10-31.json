@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2022-10-31-1",
+    "service": "nvidia-studio",
+    "date": "2022.10.31",
+    "kind": "연동",
+    "title": "VTube Studio에 Broadcast AR 기능 통합",
+    "summary": "VTube Studio가 NVIDIA Broadcast의 AR 기능을 통합해 아바타를 더 정교하게 제어할 수 있게 됐어요. OBS·Chrome의 AV1 인코딩, Topaz·ON1 Tensor Core 가속도 추가됐어요.",
+    "url": "https://blogs.nvidia.com/blog/in-the-nvidia-studio-october-31/",
+    "source": "notice"
+  }
+]

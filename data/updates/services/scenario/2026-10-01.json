@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-01-1",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "스킬: 방향별 스프라이트·Claude Opus 5.5 3D",
+    "summary": "에이전트가 방향별 스프라이트 사이클과 Claude Opus 5.5 3D 모델을 만들 수 있고 HEIC 업로드를 지원해요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-49-0",
+    "source": "notice"
+  }
+]

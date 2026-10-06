@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-04-01-1",
+    "service": "runway",
+    "date": "2025.04.01",
+    "kind": "모델",
+    "title": "Gen-4 출시",
+    "summary": "빠르고 제어 가능하며 프로덕션에 바로 쓸 수 있는 영상 생성 모델 Gen-4를 유료 플랜에 제공하기 시작했어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

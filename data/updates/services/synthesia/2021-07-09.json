@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-07-09-1",
+    "service": "synthesia",
+    "date": "2021.07.09",
+    "kind": "기능",
+    "title": "Synthesia PowerPoint 가져오기",
+    "summary": "PowerPoint 프레젠테이션을 가져와 영상으로 바꿀 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/import-powerpoint-presentations",
+    "source": "notice"
+  }
+]

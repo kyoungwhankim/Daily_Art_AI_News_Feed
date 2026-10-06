@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-09-21-1",
+    "service": "layer",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "Qwen Image 2.1·API 웹훅·온보딩 대화",
+    "summary": "오픈 웨이트 Qwen Image 2.1이 추가되고 API 결과를 웹훅으로 받을 수 있어요. 새 사용자를 위한 에이전트 안내 세션도 생겼어요.",
+    "url": "https://layer.ai/changelog#2026-09-21",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2023-03-01-1",
+    "service": "synthesia",
+    "date": "2023.03.01",
+    "kind": "기능",
+    "title": "Synthesia 중국어·일본어 자막 생성",
+    "summary": "중국어와 일본어로도 자막을 생성할 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/captions-in-chinese-and-japanese",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2023-03-01-2",
+    "service": "synthesia",
+    "date": "2023.03.01",
+    "kind": "기능",
+    "title": "Synthesia 새 언어 14개·음성 32종",
+    "summary": "알바니아어, 광둥어, 카자흐어 등 14개 언어를 추가하고 기존 16개 언어에 새 음성 32종을 더했어요.",
+    "url": "https://www.synthesia.io/updates/14-new-languages-and-32-new-voices",
+    "source": "notice"
+  }
+]

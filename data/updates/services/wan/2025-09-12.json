@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-09-12-1",
+    "service": "wan",
+    "date": "2025.09.12",
+    "kind": "모델",
+    "title": "Wan2.2 시작·끝 프레임 Flash 모델 출시",
+    "summary": "두 이미지 사이를 자연스럽게 잇는 wan2.2-kf2v-flash가 나왔어요. 움직임 안정성과 성공률, 프롬프트 충실도가 개선됐어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

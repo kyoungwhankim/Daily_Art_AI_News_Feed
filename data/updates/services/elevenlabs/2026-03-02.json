@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-02-1",
+    "service": "elevenlabs",
+    "date": "2026.03.02",
+    "kind": "API",
+    "title": "음악 업로드 엔드포인트와 보이스 북마크",
+    "summary": "오디오 파일을 올리는 음악 업로드 엔드포인트, 발음 사전 규칙 일괄 설정, 보이스 북마크가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/2",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-10-20-1",
+    "service": "meshy",
+    "date": "2025.10.20",
+    "kind": "API",
+    "title": "Remesh 포맷 변환 전용 옵션 추가",
+    "summary": "Remesh API에 파일 포맷만 바꾸는 convert_format_only가 추가됐어요. 리깅 작업 응답에는 rigged_character_glb_url이 생겼어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  }
+]

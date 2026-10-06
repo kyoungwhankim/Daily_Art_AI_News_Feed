@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-08-11-1",
+    "service": "scenario",
+    "date": "2026.08.11",
+    "kind": "모델",
+    "title": "FLUX.3 영상·Seedance 2.5·Meshy 7 등",
+    "summary": "FLUX.3 영상 스위트, 30초 영상 Seedance 2.5, Qwen Image 3.0, Meshy 7 이미지→3D·리텍스처가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.21.1",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-26-1",
+    "service": "comfyui",
+    "date": "2025.08.26",
+    "kind": "모델",
+    "title": "ComfyUI, Qwen-Image InstantX 통합 ControlNet 첫날 지원",
+    "summary": "Canny·Soft Edge·Depth·Pose를 한 모델로 다루는 Qwen-Image InstantX 통합 ControlNet을 출시 당일 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/day-1-support-of-qwen-image-instantx",
+    "source": "notice"
+  }
+]

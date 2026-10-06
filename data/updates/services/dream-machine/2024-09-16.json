@@ -1,0 +1,12 @@
+[
+  {
+    "id": "dream-machine-2024-09-16-1",
+    "service": "dream-machine",
+    "date": "2024.09.16",
+    "kind": "API",
+    "title": "Dream Machine API 출시",
+    "summary": "개발자가 Dream Machine 영상 생성 모델을 자기 앱과 서비스에 넣을 수 있는 Dream Machine API를 내놨어요. Python·JavaScript SDK도 함께 나왔어요.",
+    "url": "https://docs.lumalabs.ai/changelog/launch",
+    "source": "dev"
+  }
+]

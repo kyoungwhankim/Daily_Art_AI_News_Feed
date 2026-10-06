@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-01-09-1",
+    "service": "scenario",
+    "date": "2025.01.09",
+    "kind": "기능",
+    "title": "Adaptive Fill·Vary 버튼",
+    "summary": "캔버스에서 불필요한 요소를 지우는 Adaptive Fill과 클릭 한 번으로 변형을 만드는 Vary 버튼이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-77-adaptive-fill-vary-shortcuts-more",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-09-07-1",
+    "service": "elevenlabs",
+    "date": "2026.09.07",
+    "kind": "API",
+    "title": "워크스페이스 전체 대화 티켓 조회",
+    "summary": "접근 가능한 모든 에이전트의 대화 트리아지 티켓을 한 번에 조회하는 엔드포인트가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/7",
+    "source": "dev"
+  }
+]

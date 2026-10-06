@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-10-20-1",
+    "service": "fal.ai",
+    "date": "2025.10.20",
+    "kind": "기능",
+    "title": "CLI 러너 stop·kill 명령",
+    "summary": "fal runners stop으로 러너를 우아하게 멈추거나 fal runners kill로 즉시 종료할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#october-20-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-10-20-2",
+    "service": "fal.ai",
+    "date": "2025.10.20",
+    "kind": "모델",
+    "title": "Beatoven.ai maestro 음악·효과음 모델 fal 제공",
+    "summary": "고품질 음악과 효과음을 만드는 Beatoven.ai의 maestro가 Music·Sound Effects 두 API로 fal에 출시됐어요.",
+    "url": "https://blog.fal.ai/beatoven-ais-maestro-model-is-now-live-on-fal/",
+    "source": "notice"
+  }
+]

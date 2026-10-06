@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-02-10-1",
+    "service": "hugging-face",
+    "date": "2026.02.10",
+    "kind": "기능",
+    "title": "전문 검색에 조직·사용자·저장소 범위 필터",
+    "summary": "Full-text 검색을 조직·사용자·특정 저장소로 좁혀 할 수 있게 됐어요. UI와 API 모두 지원하고 필터는 URL에 저장돼 공유할 수 있어요.",
+    "url": "https://huggingface.co/changelog/scoped-search",
+    "source": "notice"
+  }
+]

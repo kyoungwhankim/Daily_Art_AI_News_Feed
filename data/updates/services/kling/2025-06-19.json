@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-06-19-1",
+    "service": "kling",
+    "date": "2025.06.19",
+    "kind": "API",
+    "title": "API에 KLING 2.1·2.1 Master 지원",
+    "summary": "Kling API에 kling-v2-1 이미지-투-비디오(STD·PRO)와 kling-v2-1-master 텍스트·이미지-투-비디오가 추가됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#06%2F19%2F2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "firefly-2025-07-17-1",
+    "service": "firefly",
+    "date": "2025.07.17",
+    "kind": "기능",
+    "title": "Firefly 영상 기능 강화와 Generate Sound Effects",
+    "summary": "Firefly Video Model의 움직임 품질과 영상 제어가 좋아지고, Generate Video에 파트너 모델이 추가됐어요. 웹 앱에서 효과음을 만들어 넣을 수도 있어요.",
+    "details": [
+      "아바타 기반 영상 실험 기능"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2025/07/17/firefly-adds-new-video-capabilities-industry-leading-ai-models-generate-sound-effects-feature",
+    "source": "notice"
+  }
+]

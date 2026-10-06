@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-06-26-1",
+    "service": "roblox-cube",
+    "date": "2026.06.26",
+    "kind": "기능",
+    "title": "Assistant의 MicroProfiler 자동 분석",
+    "summary": "Assistant가 MicroProfiler 캡처를 분석해 성능 병목을 보고하고 수정 방법을 제안해요.",
+    "url": "https://devforum.roblox.com/t/automated-performance-profiling-with-microprofiler-and-assistant/4704417",
+    "source": "notice"
+  }
+]

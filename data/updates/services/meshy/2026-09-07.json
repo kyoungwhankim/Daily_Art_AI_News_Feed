@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-07-1",
+    "service": "meshy",
+    "date": "2026.09.07",
+    "kind": "API",
+    "title": "Keychain API 이름 각인 지원",
+    "summary": "Creative Lab Keychain API에 name_text가 추가돼 키체인에 최대 10자 이름을 새길 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

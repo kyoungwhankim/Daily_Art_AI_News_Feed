@@ -1,0 +1,15 @@
+[
+  {
+    "id": "dream-machine-2025-04-18-1",
+    "service": "dream-machine",
+    "date": "2025.04.18",
+    "kind": "기능",
+    "title": "Camera Angle Concepts 9종 추가",
+    "summary": "로우 앵글, 오버 더 숄더, POV 등 9가지 카메라 앵글 컨셉을 Dream Machine에서 프롬프트로 쓸 수 있게 됐어요.",
+    "details": [
+      "Low Angle, High Angle, Ground Level, Eye Level, Aerial, Over the Shoulder, Overhead, Selfie, POV"
+    ],
+    "url": "https://lumalabs.ai/news/camera-angle-concepts",
+    "source": "notice"
+  }
+]

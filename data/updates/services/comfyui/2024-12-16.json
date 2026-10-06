@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-12-16-1",
+    "service": "comfyui",
+    "date": "2024.12.16",
+    "kind": "기능",
+    "title": "ComfyUI, 한국어 포함 기본 다국어 지원",
+    "summary": "ComfyUI에 번역 기능이 내장돼 서드파티 확장 없이 영어·중국어(간체)·러시아어·일본어·한국어로 인터페이스를 바꿀 수 있어요.",
+    "url": "https://blog.comfy.org/p/native-localization-support-i18n",
+    "source": "notice"
+  }
+]

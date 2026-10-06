@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-05-03-1",
+    "service": "ltx-studio",
+    "date": "2026.05.03",
+    "kind": "API",
+    "title": "LTX API 비동기 작업 전 영상 엔드포인트로 확대",
+    "summary": "text-to-video, image-to-video, audio-to-video, retake, extend에 v2 비동기 엔드포인트(베타)가 생겼어요. 작업을 제출하고 상태를 확인해 결과를 받으면 돼요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

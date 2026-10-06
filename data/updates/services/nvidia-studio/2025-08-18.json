@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-08-18-1",
+    "service": "nvidia-studio",
+    "date": "2025.08.18",
+    "kind": "모델",
+    "title": "G-Assist 경량 모델·플러그인 허브",
+    "summary": "Project G-Assist에 VRAM을 40% 덜 쓰는 새 모델이 들어가 6GB 이상 모든 RTX GPU를 지원하고, G-Assist Plug-In Hub가 생겼어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-gamescom-g-assist-rtx-remix/",
+    "source": "notice"
+  }
+]

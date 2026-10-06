@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-07-04-1",
+    "service": "scenario",
+    "date": "2025.07.04",
+    "kind": "기능",
+    "title": "3D 뷰어 강화",
+    "summary": "3D 뷰어가 PBR 재질, 와이어프레임, 조명·색 설정을 지원해 내보내기 전에 모델을 꼼꼼히 확인할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-89-enhanced-3d-viewer",
+    "source": "notice"
+  }
+]

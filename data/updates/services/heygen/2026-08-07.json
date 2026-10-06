@@ -1,0 +1,17 @@
+[
+  {
+    "id": "heygen-2026-08-07-1",
+    "service": "heygen",
+    "date": "2026.08.07",
+    "kind": "기능",
+    "title": "HeyGen 2026년 8월 Enterprise 릴리스",
+    "summary": "아바타 룩·음성별 접근 권한, 하위 워크스페이스 자원 회수, PPT/PDF 영상 스크립트 맞춤 옵션, 다국어 임베드 플레이어 등이 추가됐어요.",
+    "details": [
+      "Avatar Look Packs, Video Agent HyperFrames 반영",
+      "공유 플레이어에서 시청자가 언어 선택",
+      "Proofread 버전 기록·복원"
+    ],
+    "url": "https://heygen.noticeable.news/publications/august-2026-enterprise-releases",
+    "source": "notice"
+  }
+]

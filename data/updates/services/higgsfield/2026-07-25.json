@@ -1,0 +1,18 @@
+[
+  {
+    "id": "higgsfield-2026-07-25-1",
+    "service": "higgsfield",
+    "date": "2026.07.25",
+    "kind": "정책",
+    "title": "이용약관·개인정보처리방침 개정",
+    "summary": "2026년 8월 27일부터 적용되는 약관 개정을 알렸어요. 생성물 소유권은 사용자에게 있고, 모델 학습에 콘텐츠를 쓰며, 계정 삭제 후 30일 복구 기간을 둬요.",
+    "details": [
+      "입력·출력물 상업적 이용 가능, 해지 후에도 권리 유지",
+      "공개한 작업만 마케팅에 활용",
+      "구독 가격 변경 시 최소 30일 전 고지",
+      "Supercomputer Agent·개발자 접근 관련 조항 추가"
+    ],
+    "url": "https://higgsfield.ai/blog/terms-of-use-privacy-policy-update",
+    "source": "notice"
+  }
+]

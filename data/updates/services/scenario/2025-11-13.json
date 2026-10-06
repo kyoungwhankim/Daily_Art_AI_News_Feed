@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-13-1",
+    "service": "scenario",
+    "date": "2025.11.13",
+    "kind": "모델",
+    "title": "Qwen Edit LoRA·Pixverse Swap",
+    "summary": "Qwen Edit LoRA와 Pixverse Swap 영상 모델이 추가되고 내비게이션이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-104-ui-updates-qwen-edit-loras-pixverse-swap",
+    "source": "notice"
+  }
+]

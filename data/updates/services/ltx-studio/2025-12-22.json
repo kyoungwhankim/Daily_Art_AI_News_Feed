@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-12-22-1",
+    "service": "ltx-studio",
+    "date": "2025.12.22",
+    "kind": "기능",
+    "title": "Color Picker로 브랜드 색 정확히 맞추기",
+    "summary": "프롬프트 중에 정확한 색을 골라 생성 이미지가 브랜드 팔레트와 맞도록 하는 Color Picker가 나왔어요. Nano Banana Pro, Nano Banana 2, FLUX.2에서 써요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

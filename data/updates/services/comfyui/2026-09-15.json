@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-09-15-1",
+    "service": "comfyui",
+    "date": "2026.09.15",
+    "kind": "모델",
+    "title": "ComfyUI v0.36.0: FastH3·Marigold V2·YuE2",
+    "summary": "ComfyUI v0.36.0에서 8스텝 증류 FastVideo FastH3, 깊이·노멀·알베도 추정 Marigold V2, 가사 기반 음악 생성 YuE2를 지원해요.",
+    "details": [
+      "Video Concatenate, 범용 Loop 노드",
+      "Tripo P2 3D, Pruna P-Video-2 노드",
+      "빠른 디스크 자동 감지"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-36-0",
+    "source": "notice"
+  }
+]

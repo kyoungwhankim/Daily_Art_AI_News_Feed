@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-07-16-1",
+    "service": "hugging-face",
+    "date": "2026.07.16",
+    "kind": "기능",
+    "title": "AI 에이전트로 Space 만들기 옵션 추가",
+    "summary": "새 Space 생성 페이지에서 'AI 에이전트로 만들기'를 고르면 명령어를 복사해 내 에이전트에게 모델·논문·로컬 폴더용 Space를 만들고 다듬게 할 수 있어요.",
+    "url": "https://huggingface.co/changelog/spaces-with-agents",
+    "source": "notice"
+  }
+]

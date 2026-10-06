@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-07-29-1",
+    "service": "runway",
+    "date": "2024.07.29",
+    "kind": "기능",
+    "title": "Gen-3 Alpha 이미지 투 비디오와 다중 얼굴 립싱크",
+    "summary": "Gen-3 Alpha에서 이미지를 첫 프레임으로 영상을 만들 수 있게 됐고, 여러 캐릭터가 대화하는 다중 얼굴 Lip Sync도 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

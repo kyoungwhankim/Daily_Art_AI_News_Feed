@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-11-1",
+    "service": "fal.ai",
+    "date": "2026.02.11",
+    "kind": "기능",
+    "title": "로그 공유 링크·러너 사이드 시트·fal run --auth",
+    "summary": "로그 항목을 링크로 팀과 공유하고, 러너 상세 사이드 시트에서 텔레메트리와 로그를 볼 수 있어요. fal run에 --auth public/private 옵션도 생겼어요.",
+    "url": "https://fal.ai/docs/changelog#february-11-2026",
+    "source": "dev"
+  }
+]

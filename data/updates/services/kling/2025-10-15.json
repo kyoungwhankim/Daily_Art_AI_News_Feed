@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2025-10-15-1",
+    "service": "kling",
+    "date": "2025.10.15",
+    "kind": "API",
+    "title": "Avatar API 출시",
+    "summary": "Kling API에 이미지와 오디오·텍스트로 자연스러운 표정과 노래가 담긴 아바타 영상을 만드는 Avatar 기능이 추가됐어요.",
+    "details": [
+      "입력 이미지에 얼굴이 여러 개면 얼굴 지정은 아직 미지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#10%2F15%2F2025",
+    "source": "dev"
+  }
+]

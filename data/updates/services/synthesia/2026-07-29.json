@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-07-29-1",
+    "service": "synthesia",
+    "date": "2026.07.29",
+    "kind": "기능",
+    "title": "Synthesia 음성 변형(Variant) 선택 지원",
+    "summary": "음성이 최신 개선 버전으로 자동 선택되고, 원하면 특정 변형을 고르거나 이전 소리로 되돌릴 수 있어요.",
+    "url": "https://www.synthesia.io/updates/stay-current-with-voice-variants",
+    "source": "notice"
+  }
+]

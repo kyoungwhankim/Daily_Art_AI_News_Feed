@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2024-11-15-1",
+    "service": "kling",
+    "date": "2024.11.15",
+    "kind": "API",
+    "title": "API에 Video V1.5 Pro 모델과 영상 연장 기능 추가",
+    "summary": "Kling API에서 V1.5 Pro 모델로 이미지-투-비디오를 만들 수 있게 됐고, V1.0 영상을 4~5초씩 늘리는 영상 연장 API도 나왔어요.",
+    "details": [
+      "V1.5는 Pro 모드만, 끝 프레임 제어 미지원",
+      "external_task_id로 사용자 지정 작업 ID 사용 가능"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#11%2F15%2F2024",
+    "source": "dev"
+  }
+]

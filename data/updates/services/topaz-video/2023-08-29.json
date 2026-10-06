@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-08-29-1",
+    "service": "topaz-video",
+    "date": "2023.08.29",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.4.2: FFV1 인코더 추가",
+    "summary": "FFV1 인코더 옵션과 가져오기 시 이미지 시퀀스 검색 기본 설정을 추가하고 플레이어 탐색·트림 정밀도를 크게 개선했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-4-2/50951",
+    "source": "notice"
+  }
+]

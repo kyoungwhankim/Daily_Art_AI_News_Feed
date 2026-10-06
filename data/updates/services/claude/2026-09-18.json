@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-09-18-1",
+    "service": "claude",
+    "date": "2026.09.18",
+    "kind": "API",
+    "title": "Compliance API에 Claude in Chrome 세션 기록 추가",
+    "summary": "Compliance API 로컬 세션 엔드포인트가 Claude in Chrome 세션 기록도 반환해요(Enterprise 베타). 캐시 진단 응답 형식도 정리됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-18-2026",
+    "source": "dev"
+  }
+]

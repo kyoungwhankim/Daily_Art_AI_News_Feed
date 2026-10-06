@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-15-1",
+    "service": "runway",
+    "date": "2026.07.15",
+    "kind": "기능",
+    "title": "Tool Mode에 Seedream 5.0 이미지 모델 추가",
+    "summary": "Tool Mode에서 Seedream 5.0을 쓸 수 있게 됐어요. 레퍼런스 이미지 최대 14장과 2K·3K 해상도, 8가지 화면비를 지원해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

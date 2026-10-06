@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-09-1",
+    "service": "meshy",
+    "date": "2026.09.09",
+    "kind": "API",
+    "title": "Auto Split API 출시",
+    "summary": "Meshy 6·7 모델을 프린트 가능한 파츠로 자동 분할하는 Auto Split API가 나왔어요. 커넥터와 얇은 벽 보강도 지원해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

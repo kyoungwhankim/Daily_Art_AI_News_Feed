@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-08-07-1",
+    "service": "comfyui",
+    "date": "2026.08.07",
+    "kind": "기능",
+    "title": "ComfyUI v0.31.0: PSD식 레이어 합성과 Wan-Animate2",
+    "summary": "ComfyUI v0.31.0에서 블렌드 모드를 갖춘 PSD식 레이어 합성 노드와 편집기, Wan-Animate2 네이티브 지원이 추가됐어요. 3D 뷰어(베타)도 기본으로 켜져요.",
+    "details": [
+      "SeeDance 2.5, Seedream 5.0 레이어 분리 지원",
+      "Reve 노드 지원 중단",
+      "LTX·Wan 속도 개선"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-31-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2024-12-02-1",
+    "service": "dream-machine",
+    "date": "2024.12.02",
+    "kind": "API",
+    "title": "Luma API에 Photon·Photon Flash 이미지 모델 추가",
+    "summary": "새 텍스트 투 이미지 모델 Photon과 Photon Flash를 Luma API에서 쓸 수 있어요. 1080p 이미지 한 장에 Photon은 0.015달러, Flash는 0.002달러예요.",
+    "details": [
+      "멀티 이미지·스타일·캐릭터 레퍼런스 지원",
+      "API V1.2.0"
+    ],
+    "url": "https://docs.lumalabs.ai/changelog/luma-photon-photon-flash-api",
+    "source": "dev"
+  }
+]

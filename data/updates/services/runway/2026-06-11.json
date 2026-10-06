@@ -1,0 +1,15 @@
+[
+  {
+    "id": "runway-2026-06-11-1",
+    "service": "runway",
+    "date": "2026.06.11",
+    "kind": "API",
+    "title": "Runway Dev에 Magnific Video Upscaler 추가",
+    "summary": "최대 30초 영상을 720p부터 4K까지 업스케일하는 Magnific Video Upscaler를 API로 쓸 수 있어요. 크리에이티비티, 샤픈, 그레인 등을 조절할 수 있어요.",
+    "details": [
+      "출력 프레임 단위 과금"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#magnific-video-upscaler",
+    "source": "dev"
+  }
+]

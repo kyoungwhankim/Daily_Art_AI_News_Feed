@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2026-04-14-1",
+    "service": "tripo",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "멀티뷰 이미지 생성·편집 작업 추가",
+    "summary": "이미지 한 장으로 같은 대상의 멀티뷰 이미지 세트를 만들고 뷰별로 편집하는 작업이 추가됐어요. multiview_to_model이 이 결과를 바로 이어받아요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-6-2026-04-14",
+    "source": "dev"
+  }
+]

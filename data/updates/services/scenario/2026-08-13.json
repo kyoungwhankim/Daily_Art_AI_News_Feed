@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-08-13-1",
+    "service": "scenario",
+    "date": "2026.08.13",
+    "kind": "연동",
+    "title": "MCP 모델 권한 관리",
+    "summary": "MCP로 모델 권한을 직접 관리하고 미디어 편집 도구 추천이 똑똑해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-25-0",
+    "source": "notice"
+  }
+]

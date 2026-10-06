@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-12-1",
+    "service": "comfyui",
+    "date": "2026.08.12",
+    "kind": "모델",
+    "title": "ComfyUI, LTX-2.5 첫날 지원",
+    "summary": "멀티샷 생성과 소비자 하드웨어에서 빠른 속도를 갖춘 LTX의 오픈 영상 모델 LTX-2.5를 출시 첫날 ComfyUI에서 지원해요.",
+    "url": "https://blog.comfy.org/p/ltx-25-day-0-support-in-comfyui",
+    "source": "notice"
+  }
+]

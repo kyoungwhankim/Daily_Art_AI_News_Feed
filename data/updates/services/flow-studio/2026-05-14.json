@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-05-14-1",
+    "service": "flow-studio",
+    "date": "2026.05.14",
+    "kind": "기능",
+    "title": "Flow Studio, 고정 카메라 AI MoCap 모드",
+    "summary": "카메라가 고정되고 바닥이 평평한 영상용 Static Camera AI MoCap 모드로 더 안정적이고 발 미끄러짐이 적은 3D 모션을 얻을 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

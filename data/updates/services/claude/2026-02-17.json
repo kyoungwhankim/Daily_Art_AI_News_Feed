@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-02-17-1",
+    "service": "claude",
+    "date": "2026.02.17",
+    "kind": "모델",
+    "title": "Claude Sonnet 4.6 출시",
+    "summary": "코딩·컴퓨터 사용·장문 추론·에이전트 계획·디자인 전반이 향상된 Claude Sonnet 4.6이 나왔어요. 1M 토큰 컨텍스트를 베타로 지원해요.",
+    "details": [
+      "웹 검색·웹 페치와 쓰는 코드 실행 무료",
+      "웹 검색·프로그래매틱 도구 호출 등 베타 헤더 불필요, 동적 필터링 지원"
+    ],
+    "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+    "source": "notice"
+  }
+]

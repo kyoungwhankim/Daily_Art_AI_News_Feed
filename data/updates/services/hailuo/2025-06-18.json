@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hailuo-2025-06-18-1",
+    "service": "hailuo",
+    "date": "2025.06.18",
+    "kind": "모델",
+    "title": "MiniMax Hailuo 02 공개: 네이티브 1080p 영상 모델",
+    "summary": "차세대 영상 생성 모델 Hailuo 02를 공개했어요. 네이티브 1080p, 뛰어난 지시 이행과 물리 표현을 갖췄고 새 NCR 아키텍처로 효율을 크게 높였어요.",
+    "details": [
+      "네이티브 1080p, 최대 10초 영상",
+      "복잡한 체조 동작 등 극한 물리 표현",
+      "Noise-aware Compute Redistribution(NCR) 아키텍처"
+    ],
+    "url": "https://www.minimax.io/news/minimax-hailuo-02",
+    "source": "notice"
+  }
+]

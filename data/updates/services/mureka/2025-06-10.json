@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-06-10-1",
+    "service": "mureka",
+    "date": "2025.06.10",
+    "kind": "API",
+    "title": "곡 생성 API 가사 구조 표기 변경",
+    "summary": "곡 생성 API가 반환하는 가사 구조에서 breakdown 표기가 break로 바뀌었어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "higgsfield-2026-08-16-1",
+    "service": "higgsfield",
+    "date": "2026.08.16",
+    "kind": "모델",
+    "title": "MiniMax Hailuo 3.0(H3) 제공",
+    "summary": "Hailuo 2.3보다 해상도와 길이가 늘고 네이티브 사운드를 지원하는 MiniMax Hailuo 3.0을 Higgsfield에서 쓸 수 있어요. 이미지·영상·오디오 입력을 함께 써요.",
+    "url": "https://higgsfield.ai/blog/minimax-h3-higgsfield",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-08-16-2",
+    "service": "higgsfield",
+    "date": "2026.08.16",
+    "kind": "모델",
+    "title": "Black Forest Labs Flux 3 영상 모델 제공",
+    "summary": "Black Forest Labs의 첫 영상 모델 Flux 3(얼리 액세스)를 Higgsfield에서 쓸 수 있어요. 텍스트·이미지·영상으로 5–20초 클립과 동기화 오디오를 만들어요.",
+    "url": "https://higgsfield.ai/blog/flux-3-higgsfield",
+    "source": "notice"
+  }
+]

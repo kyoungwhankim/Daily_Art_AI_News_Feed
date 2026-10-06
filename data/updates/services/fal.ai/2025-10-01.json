@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-01-1",
+    "service": "fal.ai",
+    "date": "2025.10.01",
+    "kind": "기능",
+    "title": "로그 라벨 쿼리 필터·러너 시작 상태 표시",
+    "summary": "로그를 라벨 EXACT/CONTAINS 조건으로 거르고, fal runners list에서 PENDING·DOCKER_PULL·SETUP 상태를 볼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#october-1-2025",
+    "source": "dev"
+  }
+]

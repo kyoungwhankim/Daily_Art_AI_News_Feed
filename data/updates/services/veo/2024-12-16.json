@@ -1,0 +1,17 @@
+[
+  {
+    "id": "veo-2024-12-16-1",
+    "service": "veo",
+    "date": "2024.12.16",
+    "kind": "모델",
+    "title": "Veo 2 공개, VideoFX에서 제공",
+    "summary": "사실감과 시네마토그래피 이해가 크게 향상된 새 영상 모델 Veo 2가 공개되어 VideoFX에서 쓸 수 있게 됐어요. 렌즈·카메라 연출 같은 지시를 더 잘 따라요.",
+    "details": [
+      "실제 물리와 사람 움직임 표현 개선",
+      "최대 4K 해상도까지 지원하는 고품질 영상",
+      "Imagen 3 업데이트, 새 Labs 실험 Whisk 함께 발표"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/video-image-generation-update-december-2024/",
+    "source": "notice"
+  }
+]

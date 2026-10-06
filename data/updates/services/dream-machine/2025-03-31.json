@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2025-03-31-1",
+    "service": "dream-machine",
+    "date": "2025.03.31",
+    "kind": "기능",
+    "title": "Ray2 Camera Motion Concepts 출시",
+    "summary": "몇 개의 예시만으로 학습한 카메라 움직임을 Ray2에 안정적으로 적용하는 Camera Motion Concepts를 Dream Machine에 내놨어요. 여러 움직임을 자연어로 조합할 수 있어요.",
+    "details": [
+      "이미지 투 비디오, 시작·끝 키프레임, 루프와 함께 사용 가능",
+      "모델 품질 저하 없이 제어 추가"
+    ],
+    "url": "https://lumalabs.ai/news/camera-motion-concepts",
+    "source": "notice"
+  }
+]

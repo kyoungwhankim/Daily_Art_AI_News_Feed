@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-02-27-1",
+    "service": "scenario",
+    "date": "2026.02.27",
+    "kind": "API",
+    "title": "워크플로 slice 함수·Jobs API 속도 개선",
+    "summary": "워크플로에서 특정 데이터를 뽑는 slice 함수가 생기고 팀 작업 조회가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-110-0",
+    "source": "dev"
+  }
+]

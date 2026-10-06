@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-13-1",
+    "service": "fal.ai",
+    "date": "2026.01.13",
+    "kind": "기능",
+    "title": "컨테이너 빌드 COPY·ADD 로컬 파일 지원(실험)",
+    "summary": "Dockerfile의 COPY·ADD로 로컬 파일을 컨테이너 빌드에 넣을 수 있게 됐어요. 해시 기반 중복 제거와 .dockerignore를 지원해요.",
+    "url": "https://fal.ai/docs/changelog#january-13-2026",
+    "source": "dev"
+  }
+]

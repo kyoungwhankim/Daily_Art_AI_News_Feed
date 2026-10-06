@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-07-08-1",
+    "service": "comfyui",
+    "date": "2026.07.08",
+    "kind": "연동",
+    "title": "ComfyUI v0.27.1: Seedream 5 Pro·Seed Audio 1.0",
+    "summary": "ComfyUI v0.27.1에서 ByteDance Seedream 5 Pro 이미지 모델과 음성·음악·효과음을 만드는 Seed Audio 1.0 노드가 추가됐어요.",
+    "details": [
+      "Ideogram V1·V2 노드 지원 중단",
+      "StabilityAI 노드 일시 제거"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-27-1",
+    "source": "notice"
+  }
+]

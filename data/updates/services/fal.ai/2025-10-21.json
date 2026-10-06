@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fal.ai-2025-10-21-1",
+    "service": "fal.ai",
+    "date": "2025.10.21",
+    "kind": "API",
+    "title": "Platform APIs v1 정식 출시",
+    "summary": "600개 넘는 모델 검색, 실시간 가격·비용 추정, 사용량, 분석을 다루는 Platform APIs v1이 api.fal.ai/v1에 정식 공개됐어요. 동시 요청 한도 알림과 오류 분석 페이지도 추가됐어요.",
+    "details": [
+      "모델 검색·가격·사용량·분석 API",
+      "동시 요청 한도 도달 알림, 429 응답에 한도 값 포함",
+      "앱별 Errors 페이지"
+    ],
+    "url": "https://fal.ai/docs/changelog#october-21-2025",
+    "source": "dev"
+  }
+]

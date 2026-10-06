@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-05-09-1",
+    "service": "invokeai",
+    "date": "2024.05.09",
+    "kind": "기능",
+    "title": "Invoke 4.2.0: Control Layers 도입",
+    "summary": "Invoke 4.2.0에서 Control Adapter, 이미지 프롬프트, 지역별 가이드를 한 패널에서 다루는 Control Layers가 추가됐어요. 영역마다 프롬프트와 IP Adapter를 따로 걸 수 있어요.",
+    "details": [
+      "TCD 스케줄러 추가",
+      "Z 키로 이미지 뷰어 전환",
+      "Image to Image는 Initial Image 레이어로 이동"
+    ],
+    "url": "https://invoke.ai/releases/version/v4-2-0/",
+    "source": "notice"
+  }
+]

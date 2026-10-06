@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2025-02-22-1",
+    "service": "dream-machine",
+    "date": "2025.02.22",
+    "kind": "API",
+    "title": "Luma API 4K 업스케일과 진행 상황 업데이트",
+    "summary": "API로 영상을 540p부터 4K까지 생성하거나, 이미 만든 540p·720p 영상을 4K까지 업스케일할 수 있게 됐어요.",
+    "details": [
+      "resolution: 540p, 720p, 1080p, 4k",
+      "generations.upscale 엔드포인트 추가"
+    ],
+    "url": "https://docs.lumalabs.ai/changelog/upscale",
+    "source": "dev"
+  }
+]

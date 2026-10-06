@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-02-03-1",
+    "service": "comfyui",
+    "date": "2026.02.03",
+    "kind": "모델",
+    "title": "ComfyUI, ACE-Step 1.5 음악 생성 지원",
+    "summary": "소비자용 하드웨어에서 10초 안에 노래 한 곡을 만드는 오픈소스 음악 모델 ACE-Step 1.5를 ComfyUI에서 쓸 수 있어요.",
+    "details": [
+      "v0.12.0: LLM 텍스트 생성 KV 캐시",
+      "적응형 모델 로딩으로 RAM 사용 감소",
+      "HitPaw API 노드, Vidu Q3"
+    ],
+    "url": "https://blog.comfy.org/p/ace-step-15-is-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

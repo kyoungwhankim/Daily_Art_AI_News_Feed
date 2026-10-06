@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-07-21-1",
+    "service": "scenario",
+    "date": "2023.07.21",
+    "kind": "기능",
+    "title": "생성기·이미지 태그 기능",
+    "summary": "생성기와 이미지에 태그를 달아 정리하고 빠르게 찾을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-24-0-july-21-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-07-19-1",
+    "service": "layer",
+    "date": "2024.07.19",
+    "kind": "기능",
+    "title": "새 업스케일러·전후 비교·SCIM 지원",
+    "summary": "전후 미리보기가 있는 새 업스케일러와 드래그 앤 드롭, 기업용 SCIM 사용자 관리가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-07-19",
+    "source": "notice"
+  }
+]

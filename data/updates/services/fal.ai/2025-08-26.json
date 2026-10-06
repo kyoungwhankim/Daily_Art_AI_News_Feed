@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-08-26-1",
+    "service": "fal.ai",
+    "date": "2025.08.26",
+    "kind": "기능",
+    "title": "fal run 실행 시 엔드포인트 URL 표시",
+    "summary": "fal run 실행 시 CLI가 플레이그라운드·동기·비동기 경로를 모두 출력해 줘요.",
+    "url": "https://fal.ai/docs/changelog#august-26-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-08-26-2",
+    "service": "fal.ai",
+    "date": "2025.08.26",
+    "kind": "모델",
+    "title": "Gemini 2.5 Flash Image(nano-banana) fal 제공",
+    "summary": "LMArena에서 화제였던 nano-banana가 Google Gemini 2.5 Flash Image 편집 모델로 공개됐고, fal에서 바로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/introducing-gemini-2-5-flash-image-edit-aka-nano-banana/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-05-07-1",
+    "service": "kling",
+    "date": "2026.05.07",
+    "kind": "API",
+    "title": "API 멀티샷 영상에 시작·끝 프레임 지정 지원",
+    "summary": "Kling API에서 멀티샷과 시작·끝 프레임을 함께 쓸 수 있게 됐어요. kling-v3-omni와 kling-v3에서 지원돼요.",
+    "url": "https://kling.ai/document-api/updates/api#05%2F07%2F2026",
+    "source": "dev"
+  }
+]

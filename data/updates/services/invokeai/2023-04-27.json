@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-04-27-1",
+    "service": "invokeai",
+    "date": "2023.04.27",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.5: LoRA 호환성 확대와 diffusers 0.15.1",
+    "summary": "InvokeAI 2.3.5는 더 많은 LoRA·LyCORIS 모델을 지원하고 diffusers 0.15.1로 올려 성능을 개선했어요.",
+    "details": [
+      "텍스트 인코더까지 바꾸는 LoRA 적용 문제 수정",
+      "SD 1.5/2.x용 LoRA 구분과 호환 목록만 표시",
+      "LoKR LyCORIS 파일 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-2-3-5/",
+    "source": "notice"
+  }
+]

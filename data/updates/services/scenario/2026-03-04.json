@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-03-04-1",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "모델",
+    "title": "Tripo 3.1·Tripo Rigging 2.5·P-Video",
+    "summary": "Tripo 3.1 3D 생성과 자동 리깅 Tripo Rigging 2.5, P-Video 영상 모델, 새 학습 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/2-4-new-training-capabilities-tripo-3-1-p-video-workflow-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-04-2",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "API",
+    "title": "외부 모델 가져오기·ZIMAGE LoRA 개선",
+    "summary": "CivitAI와 Hugging Face 모델을 더 안정적으로 가져오고 ZIMAGE LoRA 기능이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-1",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-04-3",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "API",
+    "title": "Gemini 3.1 Flash·Z-image·3D 텍스처 편집",
+    "summary": "Gemini 3.1 Flash, Seedream 5 Lite, Z-image 모델과 3D 텍스처 편집 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-26-0",
+    "source": "notice"
+  }
+]

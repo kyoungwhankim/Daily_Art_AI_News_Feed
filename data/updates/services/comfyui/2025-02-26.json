@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-02-26-1",
+    "service": "comfyui",
+    "date": "2025.02.26",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.1 영상 모델 네이티브 지원",
+    "summary": "Alibaba의 Wan2.1 영상 모델 4종(T2V 14B·1.3B, I2V 14B 720P·480P)을 ComfyUI에서 네이티브로 지원해요. 소비자용 GPU에서도 돌아가요.",
+    "url": "https://blog.comfy.org/p/wan21-video-model-native-support",
+    "source": "notice"
+  }
+]

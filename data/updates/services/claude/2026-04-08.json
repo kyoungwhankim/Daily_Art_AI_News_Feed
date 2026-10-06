@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-08-1",
+    "service": "claude",
+    "date": "2026.04.08",
+    "kind": "API",
+    "title": "Claude Managed Agents 공개 베타·ant CLI 출시",
+    "summary": "안전한 샌드박스와 내장 도구로 Claude를 자율 에이전트로 돌리는 Managed Agents가 공개 베타로 나왔어요. Claude API용 명령줄 도구 ant CLI도 함께 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
+    "source": "dev"
+  }
+]

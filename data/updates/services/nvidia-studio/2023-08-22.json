@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-08-22-1",
+    "service": "nvidia-studio",
+    "date": "2023.08.22",
+    "kind": "기능",
+    "title": "DLSS 3.5 Ray Reconstruction 발표",
+    "summary": "AI 신경 렌더링 모델 Ray Reconstruction을 담은 DLSS 3.5가 발표됐고, Chaos Vantage·D5 Render·Omniverse에도 적용될 예정이에요.",
+    "url": "https://blogs.nvidia.com/blog/dlss-ai-rtx-remix-half-life-d5-render-chaos-vantage/",
+    "source": "notice"
+  }
+]

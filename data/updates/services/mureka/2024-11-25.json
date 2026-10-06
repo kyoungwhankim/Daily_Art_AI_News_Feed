@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2024-11-25-1",
+    "service": "mureka",
+    "date": "2024.11.25",
+    "kind": "기능",
+    "title": "Mureka 곡 영상 다운로드와 설명 키워드 확장",
+    "summary": "곡 영상을 내려받을 수 있고, Description에 보컬·감정·스타일 키워드를 넣어 더 정확히 생성할 수 있어요. Basic 월간에서 Pro 연간으로 바로 업그레이드도 돼요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

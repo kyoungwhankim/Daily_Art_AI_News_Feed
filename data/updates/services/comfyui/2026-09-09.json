@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-09-09-1",
+    "service": "comfyui",
+    "date": "2026.09.09",
+    "kind": "모델",
+    "title": "ComfyUI v0.35.0: SenseNova U1.5와 Comfy Compiler",
+    "summary": "ComfyUI v0.35.0에서 Pixal3D 멀티뷰, SenseNova U1.5, MiniMax-H3 LoRA·ControlNet을 지원하고 메모리 할당을 줄이는 Comfy Compiler가 들어왔어요.",
+    "details": [
+      "sRGB·HDR HLG·PQ 색공간 변환",
+      "GLB·OBJ·STL을 메시로 읽는 File3DToMesh",
+      "VideoTrim·VideoCrop, AVIF 저장",
+      "GPT Image 2.5 Flare·Sunburst 모델"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-35-0",
+    "source": "notice"
+  }
+]

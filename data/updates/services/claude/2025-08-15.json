@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-15-1",
+    "service": "claude",
+    "date": "2025.08.15",
+    "kind": "정책",
+    "title": "Claude 사용 정책 개정",
+    "summary": "늘어난 모델 능력과 달라진 사용 방식을 반영해 Usage Policy를 개정했어요.",
+    "url": "https://www.anthropic.com/news/usage-policy-update",
+    "source": "notice"
+  }
+]

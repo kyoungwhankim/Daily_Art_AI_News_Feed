@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fal.ai-2026-03-20-1",
+    "service": "fal.ai",
+    "date": "2026.03.20",
+    "kind": "기능",
+    "title": "요청 오류 유형 표시·러너 ID 검색·/metrics 확장",
+    "summary": "대시보드에서 실패 요청의 구체적 오류 유형을 배지로 보여 주고, 러너 ID 검색과 러너별 리소스 지표 API가 추가됐어요.",
+    "details": [
+      "오류 유형: request_timeout, runner_disconnected 등",
+      "GET /metrics/runners/{runner_id} 추가"
+    ],
+    "url": "https://fal.ai/docs/changelog#march-20-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2020-11-12-1",
+    "service": "topaz-video",
+    "date": "2020.11.12",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.7.1: ProRes 출력과 Artemis v8",
+    "summary": "ProRes(HQ) MOV 내보내기와 Artemis v8 모델을 추가하고 오디오 싱크, 가로줄 아티팩트 등 문제를 개선했어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-7-1/17703",
+    "source": "notice"
+  }
+]

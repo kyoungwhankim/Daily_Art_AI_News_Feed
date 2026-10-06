@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-02-19-1",
+    "service": "claude",
+    "date": "2026.02.19",
+    "kind": "API",
+    "title": "자동 프롬프트 캐싱·Sonnet 3.7/Haiku 3.5 종료",
+    "summary": "cache_control 하나로 마지막 블록을 자동 캐싱하는 기능이 나왔어요. Sonnet 3.7과 Haiku 3.5는 종료됐고 Haiku 3 종료가 예고됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#february-19-2026",
+    "source": "dev"
+  }
+]

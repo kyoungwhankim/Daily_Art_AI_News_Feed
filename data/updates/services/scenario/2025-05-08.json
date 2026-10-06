@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-05-08-1",
+    "service": "scenario",
+    "date": "2025.05.08",
+    "kind": "모델",
+    "title": "GPT Image 생성 모델 추가",
+    "summary": "OpenAI의 GPT-Image 모델로 이미지를 생성할 수 있게 됐어요. 프롬프트 정확도와 공간 추론이 뛰어나요.",
+    "url": "https://www.scenario.com/changelog/v1-85-2-generate-with-gpt-images",
+    "source": "notice"
+  }
+]

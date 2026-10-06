@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-09-24-1",
+    "service": "elevenlabs",
+    "date": "2024.09.24",
+    "kind": "API",
+    "title": "ElevenLabs WebSocket 안정성 개선과 타임아웃 설정",
+    "summary": "WebSocket API가 장편 오디오에서 더 안정적으로 동작하고, 비활성 타임아웃을 직접 설정할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/websocket-improvements-reliability-and-custom-timeout",
+    "source": "dev"
+  }
+]

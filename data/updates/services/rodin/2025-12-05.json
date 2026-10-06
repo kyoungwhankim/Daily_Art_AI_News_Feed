@@ -1,0 +1,16 @@
+[
+  {
+    "id": "rodin-2025-12-05-1",
+    "service": "rodin",
+    "date": "2025.12.05",
+    "kind": "정책",
+    "title": "Hyper3D, Shutterstock 3D 에셋 상업 라이선스 확보",
+    "summary": "Deemos가 Shutterstock의 3D 에셋 상업 라이선스를 확보해 모델 학습에 쓰기로 했어요. 권리가 정리된 데이터로 학습해 출처와 규정 준수를 강화하려는 조치예요.",
+    "details": [
+      "라이선스 데이터를 모델 학습·개발 파이프라인에 반영",
+      "같은 날 Blender와의 협력도 발표"
+    ],
+    "url": "https://hyper3d.ai/blog/hyper3d-shutterstock",
+    "source": "notice"
+  }
+]

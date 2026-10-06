@@ -1,0 +1,22 @@
+[
+  {
+    "id": "figma-ai-2026-04-21-1",
+    "service": "figma-ai",
+    "date": "2026.04.21",
+    "kind": "모델",
+    "title": "ChatGPT Images 2.0, Figma 이미지 도구에 추가",
+    "summary": "OpenAI의 최신 이미지 모델 ChatGPT Images 2.0을 Design·Draw·Slides·Buzz·FigJam의 Make Image·Edit Image와 Figma Weave에서 쓸 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=chatgpt-images-2-now-available-in-figma",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-04-21-2",
+    "service": "figma-ai",
+    "date": "2026.04.21",
+    "kind": "요금",
+    "title": "청구 그룹별 AI 크레딧 관리",
+    "summary": "Enterprise 관리자가 청구 그룹별로 AI 크레딧을 배정하고 사용량을 모니터링할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=ai-credits-controls-for-billing-groups",
+    "source": "notice"
+  }
+]

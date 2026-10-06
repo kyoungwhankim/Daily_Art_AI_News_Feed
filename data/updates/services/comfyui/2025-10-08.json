@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-10-08-1",
+    "service": "comfyui",
+    "date": "2025.10.08",
+    "kind": "연동",
+    "title": "ComfyUI, Sora 2 API 노드",
+    "summary": "OpenAI의 Sora-2와 Sora-2 Pro를 API 노드로 ComfyUI에서 쓸 수 있어요. 소리가 함께 생성되고 워터마크 없이 여러 해상도를 지원해요.",
+    "url": "https://blog.comfy.org/p/sora-2-api-nodes-now-in-comfyui",
+    "source": "notice"
+  }
+]

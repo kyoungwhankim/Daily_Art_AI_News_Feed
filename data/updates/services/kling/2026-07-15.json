@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2026-07-15-1",
+    "service": "kling",
+    "date": "2026.07.15",
+    "kind": "API",
+    "title": "새 API 구조를 더 많은 영상 모델로 확대",
+    "summary": "Kling 3.0 Turbo와 같은 새 API 구조가 Kling 3.0, 3.0 Omni, Motion Control, 2.6, 2.5 Turbo로 확대됐어요. 작업 ID 일괄 조회와 커서 페이지네이션을 지원해요.",
+    "details": [
+      "기존 API는 폐지 계획 없이 계속 제공",
+      "문서를 Markdown으로 내보내기 지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#07%2F15%2F2026",
+    "source": "dev"
+  }
+]

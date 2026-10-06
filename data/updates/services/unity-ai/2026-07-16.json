@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-07-16-1",
+    "service": "unity-ai",
+    "date": "2026.07.16",
+    "kind": "기능",
+    "title": "AI Assistant 2.15: Plan 모드 진입 확인과 Desktop 얼리 액세스",
+    "summary": "AI Assistant 2.15.0에서 Plan 모드로 바꾸기 전에 사용자 승인을 받는 EnterPlanMode 도구가 추가되고, Unity AI Desktop 얼리 액세스 안내 배너가 들어갔어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2150-pre1---2026-07-16",
+    "source": "dev"
+  }
+]

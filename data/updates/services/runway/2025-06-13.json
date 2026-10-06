@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-06-13-1",
+    "service": "runway",
+    "date": "2025.06.13",
+    "kind": "API",
+    "title": "Runway MCP 서버 GitHub 공개",
+    "summary": "Claude 등 MCP 호환 어시스턴트를 Runway 생성 기능에 직접 연결하는 MCP 서버를 GitHub에 공개했어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#runway-mcp-server",
+    "source": "dev"
+  }
+]

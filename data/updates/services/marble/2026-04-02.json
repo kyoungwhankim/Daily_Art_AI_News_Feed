@@ -1,0 +1,17 @@
+[
+  {
+    "id": "marble-2026-04-02-1",
+    "service": "marble",
+    "date": "2026.04.02",
+    "kind": "모델",
+    "title": "Marble 1.1·Marble 1.1 Plus 모델 추가",
+    "summary": "새 Marble 1.1과 Marble 1.1 Plus 모델이 추가되고 생성 화면에 모델 선택기가 생겼어요. 기존 모델은 Marble 1.0과 1.0 Draft로 계속 쓸 수 있어요.",
+    "details": [
+      "omnibox 등에 모델 선택기 추가",
+      "에셋 페이지에 사용 모델 표시",
+      "고급 편집을 Create & edit로 제공"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#april-2-2026",
+    "source": "dev"
+  }
+]
