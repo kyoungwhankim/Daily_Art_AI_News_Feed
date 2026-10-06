@@ -1,7 +1,7 @@
 /* AI Art Daily — hi-fi prototype */
 
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
-const { tabs: TABS } = window.AIAD;
+const { tabs: TABS, updateSources: UPDATE_SOURCES = [] } = window.AIAD;
 
 /* ---------- data loading ---------- */
 // 기사 데이터는 날짜별 파일로 나뉘어 있다: data/index.json → data/articles/YYYY-MM-DD.json
@@ -38,6 +38,9 @@ function parseRoute(pathname) {
   }
   if (parts[0] === 'articles' && parts[1]) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
+  }
+  if (parts[0] === 'updates') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, updates: true };
   }
   return { home: true, tab: null, kwSlug: null, articleId: null };
 }
@@ -247,7 +250,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
 }
 
 /* ---------- header ---------- */
-function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome }) {
+function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome, onMenu }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
   useEffect(() => {
@@ -264,6 +267,9 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
   return (
     <header className="site-header">
       <div className="header-inner">
+        <button type="button" className="menu-btn" aria-label="메뉴" onClick={onMenu}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
         <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <span className="brand-name">AI Art Daily</span>
           <small>한국어 큐레이션</small>
@@ -760,6 +766,116 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
   );
 }
 
+/* ---------- sidebar (뉴스 › AI 뉴스 / 업데이트) ---------- */
+function Sidebar({ section, open, onClose, onNews, onUpdates, newsCount }) {
+  const [groupOpen, setGroupOpen] = useState(true);
+  return (
+    <>
+      <div className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
+      <aside className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
+        <div className="side-drawer-head">
+          <span className="brand-name">AI Art Daily</span>
+          <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
+        </div>
+        <nav className="side-nav">
+          <div className="side-group">
+            <button type="button" className="side-group-head" aria-expanded={groupOpen} onClick={() => setGroupOpen(o => !o)}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 5h13v14H6a2 2 0 0 1-2-2z" /><path d="M17 9h3v8a2 2 0 0 1-2 2" /><path d="M8 9h5M8 13h5" />
+              </svg>
+              <span>뉴스</span>
+              <svg className={`side-caret ${groupOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            {groupOpen && (
+              <ul className="side-list">
+                <li>
+                  <button type="button" className={`side-item ${section === 'news' ? 'active' : ''}`} onClick={onNews}>
+                    <span>AI 뉴스</span>
+                    {newsCount > 0 && <span className="side-count">{newsCount}</span>}
+                  </button>
+                </li>
+                <li>
+                  <button type="button" className={`side-item ${section === 'updates' ? 'active' : ''}`} onClick={onUpdates}>
+                    <span>업데이트</span>
+                    <span className="side-badge">NEW</span>
+                  </button>
+                </li>
+              </ul>
+            )}
+          </div>
+        </nav>
+      </aside>
+    </>
+  );
+}
+
+/* ---------- 업데이트 (아트 관련 AI 서비스 회사의 공식 업데이트) ---------- */
+// 아직 데이터가 연결되지 않은 화면 구성 미리보기. 공지 수집이 붙으면 SAMPLE_UPDATES 자리에 실제 데이터가 들어간다.
+const SAMPLE_UPDATES = [
+  { company: 'Midjourney', category: '이미지', title: '예시: 새 모델 버전과 편집 기능 공개', summary: '실제 공지가 연결되면 회사의 공식 업데이트 내용이 이곳에 한국어 요약으로 들어가요.' },
+  { company: 'Runway', category: '영상', title: '예시: 영상 생성 모델 업데이트', summary: '업데이트 날짜, 회사, 제목, 짧은 요약, 원문 링크를 한 줄씩 보여 줄 예정이에요.' },
+  { company: 'Meshy', category: '3D', title: '예시: 3D 생성 품질 개선과 새 내보내기 옵션', summary: '분류 칩으로 이미지·영상·3D 등 관심 분야만 골라 볼 수 있어요.' },
+  { company: 'ElevenLabs', category: '음악·음성', title: '예시: 음성 모델 신규 버전 출시', summary: '회사 이름을 누르면 그 회사의 공식 업데이트 페이지로 이동해요.' },
+];
+function UpdatesView() {
+  const cats = [...new Set(UPDATE_SOURCES.map(s => s.category))];
+  const [cat, setCat] = useState(null);
+  const sources = UPDATE_SOURCES.filter(s => !cat || s.category === cat);
+  const samples = SAMPLE_UPDATES.filter(u => !cat || u.category === cat);
+  const urlOf = name => (UPDATE_SOURCES.find(s => s.name === name) || {}).url;
+  const today = `${TODAY.getFullYear()}.${String(TODAY.getMonth() + 1).padStart(2, '0')}.${String(TODAY.getDate()).padStart(2, '0')}`;
+  return (
+    <>
+      <div className="feed-meta">
+        <div>
+          <h1 className="feed-title">업데이트</h1>
+          <div className="feed-sub">아트 관련 AI 서비스 {UPDATE_SOURCES.length}곳 · 공식 업데이트</div>
+          <p className="feed-desc">이미지·영상·3D·음악 등 아트 관련 AI 서비스 회사들의 공식 업데이트 소식을 모아 보여 드려요.</p>
+        </div>
+      </div>
+      <div className="subcats updates-filter" role="tablist" aria-label="분야">
+        <button className={`chip subcat ${!cat ? 'active' : ''}`} onClick={() => setCat(null)}>전체 <span className="subcat-count">{UPDATE_SOURCES.length}</span></button>
+        {cats.map(c => (
+          <button key={c} className={`chip subcat ${cat === c ? 'active' : ''}`} onClick={() => setCat(cat === c ? null : c)}>
+            {c} <span className="subcat-count">{UPDATE_SOURCES.filter(s => s.category === c).length}</span>
+          </button>
+        ))}
+      </div>
+      <main className="feed">
+        <div className="updates-notice">준비 중이에요 — 아래 업데이트 목록은 화면 구성을 보기 위한 <b>예시</b>예요.</div>
+        <ol className="updates-list">
+          {samples.map((u, i) => (
+            <li key={i} className="update-row">
+              <div className="update-date">{today}</div>
+              <div className="update-main">
+                <div className="update-head">
+                  <a className="update-company" href={urlOf(u.company)} target="_blank" rel="noopener noreferrer">{u.company}</a>
+                  <span className="update-cat">{u.category}</span>
+                  <span className="update-sample">예시</span>
+                </div>
+                <h3 className="update-title">{u.title}</h3>
+                <p className="update-summary">{u.summary}</p>
+              </div>
+            </li>
+          ))}
+          {samples.length === 0 && <li className="update-empty">이 분야의 예시 항목은 없어요.</li>}
+        </ol>
+        <section className="update-sources">
+          <h2>모아 볼 회사 · {sources.length}곳</h2>
+          <div className="update-source-grid">
+            {sources.map(s => (
+              <a key={s.name} className="update-source" href={s.url} target="_blank" rel="noopener noreferrer">
+                <span className="update-source-name">{s.name}</span>
+                <span className="update-source-cat">{s.category}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
+
 /* ---------- App ---------- */
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -767,6 +883,8 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
+  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
+  const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
@@ -842,6 +960,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
+      setSection(route.updates ? 'updates' : 'news');
+      if (route.updates) { setOpen(null); return; }
       if (route.articleId) {
         const found = articlesRef.current.find(a => a.id === route.articleId);
         if (found) { setActiveTab(found.tab); setViewHome(false); }
@@ -900,12 +1020,12 @@ function App() {
   useEffect(() => {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
-    if (!onArticle && (viewSaved || query.trim())) return;
-    const path = routePath(viewHome, activeTab, activeKeyword);
+    if (section !== 'updates' && !onArticle && (viewSaved || query.trim())) return;
+    const path = section === 'updates' ? '/updates/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, viewHome, viewSaved, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, viewHome, viewSaved, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -934,13 +1054,25 @@ function App() {
     <div className="page">
       <Header
         query={query}
-        onQuery={(v) => { setQuery(v); if (v) { setViewSaved(false); setViewHome(false); } }}
+        onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewSaved(false); setViewHome(false); } }}
         savedCount={saved.length}
-        onShowSaved={() => { setViewSaved(true); setViewHome(false); setQuery(''); }}
+        onShowSaved={() => { setSection('news'); setViewSaved(true); setViewHome(false); setQuery(''); }}
         theme={theme}
         onToggleTheme={toggleTheme}
-        onShowHome={() => { setViewHome(true); setViewSaved(false); setQuery(''); }}
+        onShowHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); }}
+        onMenu={() => setSideOpen(true)}
       />
+      <div className="layout">
+      <Sidebar
+        section={section}
+        open={sideOpen}
+        onClose={() => setSideOpen(false)}
+        newsCount={articles.length}
+        onNews={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        onUpdates={() => { setSection('updates'); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+      />
+      <div className="layout-main">
+      {section === 'updates' ? <UpdatesView /> : (<>
       {!viewHome && (
         <Tabs
           active={activeTab}
@@ -1010,12 +1142,15 @@ function App() {
           </div>
         )}
       </main>
+      </>)}
 
-      <IosInstallHint />
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
         <div>큐레이션 · 한국어 번역</div>
       </footer>
+      </div>
+      </div>
+      <IosInstallHint />
 
       {open && (
         <ArticleModal

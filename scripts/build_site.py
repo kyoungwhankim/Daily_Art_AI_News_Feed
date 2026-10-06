@@ -39,6 +39,8 @@ import feed_data  # noqa: E402
 
 SITE_URL = os.environ.get(
     'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
+# PREVIEW=1 이면 미리보기 배포용: 모든 페이지 noindex, robots.txt 전체 차단, 사이트맵 없음
+PREVIEW = os.environ.get('PREVIEW') == '1'
 # 예전 주소 (GitHub Pages). --redirect-site 로 이 주소용 "주소가 바뀌었어요" 안내 사이트를 만든다.
 OLD_SITE_PATH = '/Daily_Art_AI_News_Feed'
 SITE_NAME = 'AI Art Daily'
@@ -540,14 +542,34 @@ def main():
     write(out, 'sw.js', sw.replace('__VERSION__', version)
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
+    # 사이드바 '뉴스 › 업데이트' 페이지 (데이터 연결 전이라 검색에는 내보내지 않는다)
+    write(out, 'updates/index.html', shell(
+        'updates/', f'업데이트 | {SITE_NAME}', '아트 관련 AI 서비스 회사들의 공식 업데이트 소식',
+        '<h1 class="feed-title">업데이트</h1>', {'@context': 'https://schema.org', '@type': 'WebPage',
+                                               'name': '업데이트', 'url': abs_url('updates/')})
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
-    if SITE_URL.count('/') == 2:     # 도메인 최상위 사이트일 때만 robots.txt가 의미 있다
+    if PREVIEW:
+        write(out, 'robots.txt', 'User-agent: *\nDisallow: /\n')
+        os.remove(os.path.join(out, 'sitemap.xml'))
+        for dp, _, fs in os.walk(out):
+            for f in fs:
+                if f.endswith('.html'):
+                    fp = os.path.join(dp, f)
+                    with open(fp, encoding='utf-8') as fh:
+                        h = fh.read()
+                    if 'name="robots"' not in h:
+                        h = h.replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1)
+                        with open(fp, 'w', encoding='utf-8') as fh:
+                            fh.write(h)
+    elif SITE_URL.count('/') == 2:     # 도메인 최상위 사이트일 때만 robots.txt가 의미 있다
         write(out, 'robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
 
     print(f'Built {out}: {len(articles)} article pages, {len(listing_paths)} listing pages, '
-          f'bundle={"esbuild" if bundle else "babel"}')
+          f'bundle={"esbuild" if bundle else "babel"}{", PREVIEW (noindex)" if PREVIEW else ""}')
 
 
 if __name__ == '__main__':

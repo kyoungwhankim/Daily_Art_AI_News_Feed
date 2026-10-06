@@ -7,6 +7,43 @@ window.AIAD = {
     { id: 'art', label: '아트 전반 AI 뉴스', desc: '게임 제작과 무관하게 모든 아트 관련 AI 뉴스들을 매일 업데이트합니다.' },
   ],
 
+  // 사이드바 '뉴스 › 업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스 회사 (분류 순서 = 필터 순서)
+  updateSources: [
+    { category: '이미지', name: 'Midjourney', url: 'https://updates.midjourney.com/' },
+    { category: '이미지', name: 'OpenAI', url: 'https://openai.com/news/' },
+    { category: '이미지', name: 'Google DeepMind', url: 'https://deepmind.google/blog/' },
+    { category: '이미지', name: 'Black Forest Labs', url: 'https://bfl.ai/blog' },
+    { category: '이미지', name: 'Stability AI', url: 'https://stability.ai/news' },
+    { category: '이미지', name: 'Krea', url: 'https://www.krea.ai/blog' },
+    { category: '이미지', name: 'Topaz Labs', url: 'https://www.topazlabs.com/news' },
+    { category: '이미지', name: 'Microsoft AI', url: 'https://microsoft.ai/news/' },
+    { category: '영상', name: 'Runway', url: 'https://runwayml.com/news' },
+    { category: '영상', name: 'Luma AI', url: 'https://lumalabs.ai/news' },
+    { category: '영상', name: 'Pika', url: 'https://pika.art/blog' },
+    { category: '영상', name: 'MiniMax', url: 'https://www.minimax.io/news' },
+    { category: '영상', name: 'PixVerse', url: 'https://pixverse.ai/en/blog' },
+    { category: '영상', name: 'Hedra', url: 'https://www.hedra.com/blog' },
+    { category: '영상', name: 'Synthesia', url: 'https://www.synthesia.io/blog' },
+    { category: '3D', name: 'Meshy', url: 'https://www.meshy.ai/blog' },
+    { category: '3D', name: 'Hyper3D Rodin', url: 'https://hyper3d.ai/blog' },
+    { category: '3D', name: 'CSM', url: 'https://www.csm.ai/blog' },
+    { category: '3D', name: 'World Labs', url: 'https://www.worldlabs.ai/blog' },
+    { category: '게임 에셋', name: 'Scenario', url: 'https://www.scenario.com/blog' },
+    { category: '게임 에셋', name: 'Layer AI', url: 'https://www.layer.ai/blog' },
+    { category: '모션', name: 'Rokoko', url: 'https://www.rokoko.com/insights' },
+    { category: '모션', name: 'Reallusion', url: 'https://magazine.reallusion.com/' },
+    { category: '모션', name: 'Autodesk', url: 'https://adsknews.autodesk.com/en/news/' },
+    { category: '음악·음성', name: 'ElevenLabs', url: 'https://elevenlabs.io/blog' },
+    { category: '음악·음성', name: 'Suno', url: 'https://suno.com/blog' },
+    { category: '도구', name: 'ComfyUI', url: 'https://docs.comfy.org/changelog' },
+    { category: '도구', name: 'NVIDIA', url: 'https://blogs.nvidia.com/' },
+    { category: '도구', name: 'Hugging Face', url: 'https://huggingface.co/blog' },
+    { category: '도구', name: 'fal.ai', url: 'https://blog.fal.ai/' },
+    { category: '도구', name: 'Figma', url: 'https://www.figma.com/blog/' },
+    { category: '도구', name: 'Blender', url: 'https://www.blender.org/news/' },
+    { category: '도구', name: 'Anthropic', url: 'https://www.anthropic.com/news' },
+  ],
+
   /*
    * 날짜 파일(data/articles/*.json)의 기사 형식:
    * {

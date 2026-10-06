@@ -36,6 +36,7 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 
 main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_data.py` → `build_site.py` → Cloudflare Pages 배포. 만든 파일(`_site/`)은 레포에 커밋하지 않는다. PR에서는 빌드만 확인한다.
 
+- `claude/**` 브랜치에 push하면 같은 빌드를 **미리보기 주소 https://preview.ai-art-news.pages.dev** 에만 배포한다 (모든 페이지 noindex, robots.txt 전체 차단, 실제 사이트·예전 주소는 건드리지 않음).
 - 필요한 레포 Secrets: `CLOUDFLARE_API_TOKEN`(권한: Account / Cloudflare Pages / Edit), `CLOUDFLARE_ACCOUNT_ID`
 - 예전 주소(`kyoungwhankim.github.io/Daily_Art_AI_News_Feed/`)는 GitHub Pages(Source: GitHub Actions)에 안내 페이지만 배포한다 — 어떤 경로로 들어와도 같은 경로의 새 주소로 넘겨 준다 (`build_site.py --redirect-site`).
 - 배포 사이트에서 만들어지는 것:
