@@ -64,7 +64,7 @@ REACT_PROD = [
     'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
 ]
 ESBUILD = 'esbuild@0.24.2'
-STATIC_FILES = ['app.css', 'config.js', '.nojekyll', 'manifest.webmanifest']
+STATIC_FILES = ['app.css', 'config.js', '.nojekyll', 'manifest.webmanifest', 'ads.txt']
 
 
 # ---------- helpers ----------
@@ -178,6 +178,7 @@ def head(root: str, title: str, desc: str, canonical: str, og_type='website',
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-adsense-account" content="ca-pub-7751014405174019" />
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
 <link rel="canonical" href="{esc(canonical)}" />
