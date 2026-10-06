@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rodin-2025-09-01-1",
+    "service": "rodin",
+    "date": "2025.09.01",
+    "kind": "모델",
+    "title": "Rodin Gen-2 API 문서·Cinema 4D 애드온 공개",
+    "summary": "새 Rodin Gen-2 API 문서와 Cinema 4D용 Rodin 애드온 문서가 공개됐어요. Gen-2·Gen-1/1.5의 quality 설명도 갱신됐어요.",
+    "details": [
+      "Rodin Gen-2 API 문서 신규 공개",
+      "Rodin add-on for Cinema 4D 문서 공개",
+      "quality 파라미터 설명 갱신"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#september-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

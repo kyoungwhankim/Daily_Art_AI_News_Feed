@@ -1,0 +1,39 @@
+[
+  {
+    "id": "heygen-2026-05-01-1",
+    "service": "heygen",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "HeyGen API 엔진 객체화·브랜드 키트·용어집 도입",
+    "summary": "POST /v3/videos의 engine이 객체 형식으로 바뀌고, Video Agent에 브랜드 키트를, 영상 번역에 브랜드 용어집을 쓸 수 있게 됐어요.",
+    "details": [
+      "engine을 {\"type\": \"avatar_v\"} 같은 객체로 지정(호환성 변경)",
+      "POST /v3/videos에 fit 파라미터 추가",
+      "Video Agent에 brand_kit_id 추가, GET /v3/brand-kits 공개",
+      "영상 번역에 brand_glossary_id와 GET /v3/brand-glossaries 추가",
+      "영상 번역에 Stock TTS(stock_voice_config) 선택 추가",
+      "aspect_ratio 기본값 16:9 명시"
+    ],
+    "url": "https://docs.heygen.com/changelog#video-engine-updates-%26-brand-kit-support",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-05-01-2",
+    "service": "heygen",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "HeyGen API Idempotency-Key·삭제 엔드포인트 추가",
+    "summary": "주요 POST 요청에 Idempotency-Key 헤더를 지원해 안전하게 재시도할 수 있게 됐고, 에셋·아바타 삭제 엔드포인트가 추가됐어요.",
+    "details": [
+      "에셋·아바타·립싱크·번역·영상·웹훅 생성에 Idempotency-Key 지원",
+      "동시 요청 충돌 시 409 Conflict 응답",
+      "DELETE /v3/assets·/v3/avatars/looks·/v3/avatars/{group_id} 추가",
+      "영상 번역 fps_mode를 vfr·cfr·passthrough로 제한(호환성 변경)",
+      "아바타 룩 엔드포인트의 supported_api_engines 정리"
+    ],
+    "url": "https://docs.heygen.com/changelog#api-updates",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

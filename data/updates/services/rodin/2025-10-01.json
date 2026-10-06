@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-10-01-1",
+    "service": "rodin",
+    "date": "2025.10.01",
+    "kind": "연동",
+    "title": "Rodin Maya 애드온 문서 공개",
+    "summary": "Autodesk Maya용 Rodin 애드온 문서가 공개돼 Maya 안에서 Rodin 3D 생성을 쓸 수 있게 됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#october-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

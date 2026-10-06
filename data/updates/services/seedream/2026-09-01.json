@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedream-2026-09-01-1",
+    "service": "seedream",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Seedream 5.0 flash, BytePlus ModelArk 출시",
+    "summary": "Seedream 5.0 pro와 같은 기능을 갖추면서 더 빠르고 저렴한 Seedream 5.0 flash가 ModelArk에 새로 나왔어요. 지연 시간과 비용에 민감한 서비스에 알맞아요.",
+    "details": [
+      "모델 ID: dola-seedream-5-0-flash-260915",
+      "인터랙티브 편집, 레이어 분해, 다국어 텍스트 생성 등 5.0 pro와 같은 기능",
+      "생성 속도는 더 빠르고 비용은 더 낮음"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1159178#202609",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

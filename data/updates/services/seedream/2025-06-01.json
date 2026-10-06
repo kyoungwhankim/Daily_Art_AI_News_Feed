@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedream-2025-06-01-1",
+    "service": "seedream",
+    "date": "2025.06.01",
+    "kind": "API",
+    "title": "Seedream 3.0 t2i, BytePlus ModelArk 출시",
+    "summary": "중영 이중언어 텍스트-이미지 모델 Seedream 3.0이 ModelArk에 새로 출시됐어요. 네이티브 2K 출력과 더 정확한 작은 글자 생성을 지원해요.",
+    "details": [
+      "모델: bytedance-seedream-3.0-t2i (250415)",
+      "네이티브 2K 해상도 출력과 더 빠른 응답",
+      "작은 글자·텍스트 레이아웃·지시 이행·미적 품질 개선"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#432098b2",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

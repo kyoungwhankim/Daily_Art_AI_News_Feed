@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2025-06-01-1",
+    "service": "seedance",
+    "date": "2025.06.01",
+    "kind": "API",
+    "title": "Seedance 1.0 lite t2v·i2v, BytePlus ModelArk 출시",
+    "summary": "Seedance 1.0의 경량 버전인 1.0 lite가 텍스트→영상, 이미지→영상 두 모델로 ModelArk에 출시됐어요. 품질을 지키면서 생성 속도를 크게 높였어요.",
+    "details": [
+      "bytedance-seedance-1-0-lite-t2v (250428)",
+      "bytedance-seedance-1-0-lite-i2v (250428)"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#432098b2",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

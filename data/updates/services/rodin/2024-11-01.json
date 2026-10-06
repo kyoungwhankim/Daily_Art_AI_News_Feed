@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2024-11-01-1",
+    "service": "rodin",
+    "date": "2024.11.01",
+    "kind": "API",
+    "title": "Rodin Check Balance API 공개",
+    "summary": "인증된 사용자의 현재 크레딧 잔액을 돌려주는 Check Balance API 문서가 공개됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#november-2024",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rodin-2026-09-01-1",
+    "service": "rodin",
+    "date": "2026.09.01",
+    "kind": "API",
+    "title": "Rodin Agentic API 문서 공개·Bang 파라미터 추가",
+    "summary": "이미지로 3D 에셋을 만드는 Rodin Agentic API 문서가 새로 공개됐고, Bang API에 품질·메시 방식 옵션이 추가됐어요.",
+    "details": [
+      "Rodin Agentic API 문서 신규 공개",
+      "Bang에 quality_override·mesh_mode 파라미터 추가"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#september-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

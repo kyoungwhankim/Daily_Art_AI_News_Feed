@@ -1,0 +1,19 @@
+[
+  {
+    "id": "seedream-2026-06-01-1",
+    "service": "seedream",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Seedream 5.0 pro, BytePlus ModelArk API 제공",
+    "summary": "정밀한 위치·요소 제어가 가능한 Dola Seedream 5.0 pro가 ModelArk 모델 목록에 새로 올라왔어요. 좌표 지정과 자유 마킹으로 원하는 부분만 편집할 수 있어요.",
+    "details": [
+      "모델 ID: dola-seedream-5-0-pro-260628",
+      "텍스트→이미지, 한 장 또는 여러 장 참조 이미지→이미지 생성",
+      "인터랙티브 편집에서 좌표 지정과 자유 마킹 지원",
+      "14개 언어 추가 네이티브 텍스트 생성"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1159178#202606",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

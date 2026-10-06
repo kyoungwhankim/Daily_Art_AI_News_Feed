@@ -1,0 +1,13 @@
+[
+  {
+    "id": "seedream-2026-01-01-1",
+    "service": "seedream",
+    "date": "2026.01.01",
+    "kind": "기능",
+    "title": "ModelArk Playground, Seedream 4.0 스토리북 다운로드 지원",
+    "summary": "BytePlus ModelArk Playground에서 Seedream 4.0으로 만든 스토리북을 내려받을 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#301dd6a6",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

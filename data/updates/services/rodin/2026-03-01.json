@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rodin-2026-03-01-1",
+    "service": "rodin",
+    "date": "2026.03.01",
+    "kind": "연동",
+    "title": "Rodin 3ds Max 애드온·Gen-2 hd_texture 추가",
+    "summary": "3ds Max용 Rodin 애드온 문서가 공개됐고, Rodin Gen-2에 고품질 텍스처를 만드는 hd_texture 파라미터가 추가됐어요.",
+    "details": [
+      "Rodin add-on for 3ds Max 문서 공개",
+      "Gen-2에 hd_texture 파라미터 추가(기본값 false)"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#march-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

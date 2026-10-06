@@ -1,0 +1,21 @@
+[
+  {
+    "id": "tripo-2026-09-01-1",
+    "service": "tripo",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Tripo 텍스처 v3.5 모델·GPT Image 2.5 지원",
+    "summary": "Tripo API v3에 새 텍스처 모델 v3.5가 추가됐고, 이미지 생성에 GPT Image 2.5 모델 두 종과 품질 단계·투명 배경 옵션이 생겼어요.",
+    "details": [
+      "/v3/models/texture와 생성 엔드포인트에 텍스처 v3.5 추가, texture_version으로 지오메트리와 별도 지정",
+      "v3.5 전용 texture_quality=fast(가장 빠른 단계)와 조명 제거 delight 옵션",
+      "text-to-image·image-to-image에 chat_image_2.5_flare·sunburst 모델 추가",
+      "quality(low~max) 단계와 2.5 모델용 background(투명 배경, PNG 필요) 추가",
+      "최대 3840px 커스텀 크기 지원",
+      "chat_image_1은 2026-10-23, chat_image_1.5는 2026-12-01 종료 예정"
+    ],
+    "url": "https://developers.tripo3d.ai/en/docs/changelog",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

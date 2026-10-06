@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2024-07-01-1",
+    "service": "rodin",
+    "date": "2024.07.01",
+    "kind": "API",
+    "title": "Rodin API 문서 첫 공개",
+    "summary": "Rodin API 문서가 처음 공개돼 개발자가 Rodin 3D 생성을 API로 쓸 수 있게 됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#july-2024",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

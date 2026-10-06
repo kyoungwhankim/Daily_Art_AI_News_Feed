@@ -1,0 +1,21 @@
+[
+  {
+    "id": "rodin-2026-08-01-1",
+    "service": "rodin",
+    "date": "2026.08.01",
+    "kind": "API",
+    "title": "Rodin 텍스처·Gen-2.5 파라미터 확대와 애드온 요금 조정",
+    "summary": "Generate Texture와 Rodin Gen-2.5에 텍스처·메시 관련 파라미터가 대거 추가됐고, Bang에 instruction 입력이 생겼어요. 애드온 요금도 조정됐어요.",
+    "details": [
+      "Generate Texture에 hd_texture·texture_delight·texture_mode 추가, 텍스처 해상도표·요금 문서화",
+      "Bang에 instruction 파라미터 추가",
+      "Gen-2.5에 image_label·is_symmetric·soft·detail_level·quad_normal 추가",
+      "Gen-2.5 텍스처 해상도표 문서화",
+      "Gen-1/1.5·Gen-2·Gen-2.5 애드온 요금 조정",
+      "Check Balance에 usage_page 요청·usage 응답 필드 추가"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#august-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

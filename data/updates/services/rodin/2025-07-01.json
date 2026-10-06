@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rodin-2025-07-01-1",
+    "service": "rodin",
+    "date": "2025.07.01",
+    "kind": "API",
+    "title": "Rodin Gen-1/1.5 quality_override·material All 추가",
+    "summary": "Rodin Gen-1/1.5 API에 quality_override 파라미터가 추가됐고, material에 PBR과 Shaded를 함께 받는 All 값이 생겼어요.",
+    "details": [
+      "quality_override 파라미터 추가",
+      "material에 All(PBR+Shaded) 추가"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#july-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

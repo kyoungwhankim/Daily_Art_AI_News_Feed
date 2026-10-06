@@ -1,0 +1,36 @@
+[
+  {
+    "id": "runway-2023-02-01-1",
+    "service": "runway",
+    "date": "2023.02.01",
+    "kind": "모델",
+    "title": "Gen-2 발표: 텍스트·이미지로 새 영상 생성",
+    "summary": "텍스트, 이미지, 영상 클립으로 완전히 새로운 영상을 만드는 멀티모달 AI 시스템 Gen-2를 발표했어요. 글만으로 영상을 만드는 Text to Video가 핵심이에요.",
+    "details": [
+      "Text to Video, Text + Image to Video, Image to Video 모드",
+      "Stylization·Storyboard·Mask·Render 등 Gen-1 모드 포함",
+      "Customization으로 더 높은 충실도의 결과"
+    ],
+    "url": "https://runway.com/research/gen-2",
+    "source": "notice",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "runway-2023-02-01-2",
+    "service": "runway",
+    "date": "2023.02.01",
+    "kind": "모델",
+    "title": "Gen-1 발표: 기존 영상을 새 스타일의 영상으로",
+    "summary": "이미지나 텍스트 프롬프트의 구도와 스타일을 원본 영상의 구조에 입혀 새 영상을 만드는 Gen-1을 발표했어요. 촬영 없이도 새로운 장면을 만들 수 있어요.",
+    "details": [
+      "Stylization: 이미지·프롬프트 스타일을 모든 프레임에 적용",
+      "Storyboard: 목업을 스타일이 입혀진 애니메이션으로",
+      "Mask: 영상의 특정 영역만 스타일 적용",
+      "Render: 텍스처 없는 렌더를 사실적인 결과로",
+      "Customization: 모델을 맞춤 설정해 더 높은 충실도"
+    ],
+    "url": "https://runway.com/research/gen-1",
+    "source": "notice",
+    "dateMonthOnly": true
+  }
+]

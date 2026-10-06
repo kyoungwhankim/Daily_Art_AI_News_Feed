@@ -1,0 +1,21 @@
+[
+  {
+    "id": "tripo-2026-04-01-1",
+    "service": "tripo",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "Tripo API v3.0 공개: 기능별 엔드포인트로 개편",
+    "summary": "Tripo API v3.0이 나와 범용 /v2/openapi/task 대신 text-to-model 같은 기능별 엔드포인트와 통합 input 필드를 쓰게 됐어요.",
+    "details": [
+      "Base URL을 /v2/openapi/에서 /v3/로 단순화",
+      "{input}-to-{output} 명명 규칙으로 엔드포인트 통일",
+      "task_id·file_token·URL을 자동 인식하는 통합 input 필드",
+      "text-to-image와 image-to-image 엔드포인트 분리",
+      "작업 일괄 조회·직접 업로드 자격 증명·사용량 조회 API 추가",
+      "create_time→created_at, consumed_credit→credits_consumed 필드명 변경"
+    ],
+    "url": "https://developers.tripo3d.ai/en/docs/changelog",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

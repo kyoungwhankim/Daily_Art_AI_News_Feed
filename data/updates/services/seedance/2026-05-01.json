@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2026-05-01-1",
+    "service": "seedance",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "Seedance 2.0 HEIC·HEIF 입력과 작업 우선순위 지정",
+    "summary": "ModelArk 영상 생성 API에서 Seedance 2.0 시리즈가 HEIC·HEIF 이미지를 입력으로 받고, 요청마다 작업 우선순위를 정할 수 있게 됐어요.",
+    "details": [
+      "Seedance 2.0 시리즈 heic·heif 입력 이미지 형식 지원",
+      "영상 생성 API에 priority 필드 추가: 같은 엔드포인트 안에서 요청별 우선순위 설정"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#rn-2605",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

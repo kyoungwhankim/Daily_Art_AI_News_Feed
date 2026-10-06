@@ -1,0 +1,16 @@
+[
+  {
+    "id": "seedance-2025-10-01-1",
+    "service": "seedance",
+    "date": "2025.10.01",
+    "kind": "모델",
+    "title": "Seedance 1.0 pro fast, BytePlus ModelArk 출시",
+    "summary": "품질·속도·비용의 균형을 맞춘 영상 생성 모델 Seedance 1.0 pro fast가 ModelArk에 새로 출시됐어요.",
+    "details": [
+      "모델 ID: seedance-1.0-pro-fast-251015"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#109857a7",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]
