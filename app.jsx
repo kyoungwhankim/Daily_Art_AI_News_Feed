@@ -769,9 +769,18 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
 
 /* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
 // 좁은 화면의 서랍을 손가락으로 끌어 여닫는다.
-// 닫혀 있을 땐 화면 왼쪽 끝에서 오른쪽으로, 열려 있을 땐 서랍이나 바깥을 왼쪽으로 끈다.
+// 닫혀 있을 땐 화면 아무 곳에서나 오른쪽으로, 열려 있을 땐 서랍이나 바깥을 왼쪽으로 스와이프한다.
+// 가로로 넘기는 영역(탭·칩 줄, 하단 띠)이나 기사 창 위에서는 그 영역의 스와이프가 먼저다.
 // 끄는 동안 서랍이 손가락을 따라오고, 놓았을 때 절반 넘게 끌었거나 빠르게 튕기면 여닫힌다.
-const DRAWER_EDGE = 28;   // 닫힌 서랍을 열 수 있는 왼쪽 끝 영역 (px)
+const DRAWER_EDGE = 28;   // 이 안쪽에서 시작하면 가로 스크롤 영역 위여도 서랍을 연다 (px)
+function inHorizontalScroller(el) {
+  for (; el && el !== document.body; el = el.parentElement) {
+    if (el.classList.contains('home-ticker') || el.classList.contains('modal-backdrop')) return true;
+    const ox = getComputedStyle(el).overflowX;
+    if ((ox === 'auto' || ox === 'scroll') && el.scrollWidth > el.clientWidth) return true;
+  }
+  return false;
+}
 function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
   const st = useRef({ open, onOpen, onClose });
   st.current.open = open; st.current.onOpen = onOpen; st.current.onClose = onClose;
@@ -793,7 +802,7 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
       if (!mq.matches || e.touches.length !== 1 || !asideRef.current) return;
       const t = e.touches[0];
       const wasOpen = st.current.open;
-      if (wasOpen ? !(asideRef.current.contains(e.target) || backdropRef.current.contains(e.target)) : t.clientX > DRAWER_EDGE) return;
+      if (wasOpen ? !(asideRef.current.contains(e.target) || backdropRef.current.contains(e.target)) : (t.clientX > DRAWER_EDGE && inHorizontalScroller(e.target))) return;
       g = { wasOpen, x0: t.clientX, y0: t.clientY, t0: Date.now(), drag: false, x: 0, w: asideRef.current.offsetWidth };
     };
     const onMove = e => {
