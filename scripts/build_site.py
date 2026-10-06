@@ -48,6 +48,10 @@ SITE_NAME = 'AI Art Daily'
 SITE_TAGLINE = '한국어 큐레이션'
 SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한국어로 정리합니다. '
              '게임 제작 속 AI, AI 도입 뉴스, 아트 전반 AI 뉴스.')
+# 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
+PRIVACY_OWNER = '[운영자 이름]'          # 개인정보 보호책임자
+CONTACT_EMAIL = '[문의 이메일]'
+PRIVACY_DATE = '2026년 10월 6일'
 TABS = [
     ('games', '게임 제작 속 AI', '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.'),
     ('industry', 'AI 도입 뉴스', '게임 스튜디오들의 AI 도입과 관련된 뉴스들을 매일 업데이트합니다.'),
@@ -217,10 +221,10 @@ def header(root: str) -> str:
 """
 
 
-def footer() -> str:
-    return """<footer class="site-footer">
+def footer(root: str = '/') -> str:
+    return f"""<footer class="site-footer">
   <div class="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-  <div>큐레이션 · 한국어 번역</div>
+  <div>큐레이션 · 한국어 번역 · <a href="{root}privacy/">개인정보처리방침</a></div>
 </footer>
 """
 
@@ -451,6 +455,110 @@ def build_redirect_site(out: str) -> None:
     print(f'Built redirect site {out} → {new}')
 
 
+def build_privacy() -> str:
+    root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
+    mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
+    return (head(root, f'개인정보처리방침 | {SITE_NAME}',
+                 f'{SITE_NAME}의 개인정보 수집·이용, 쿠키와 광고, 이용자 권리에 대한 안내입니다.',
+                 abs_url('privacy/'))
+            + f"""<body>
+<div class="page">
+{header(root)}
+<main class="static-main static-doc">
+  <h1 class="feed-title">개인정보처리방침</h1>
+  <p class="feed-sub">시행일: {PRIVACY_DATE}</p>
+
+  <p>{SITE_NAME}(이하 '사이트')는 「개인정보 보호법」 등 관련 법령을 지키며, 이용자의 개인정보를 필요한 만큼만
+  처리합니다. 이 방침은 사이트가 어떤 정보를 왜 처리하는지, 이용자가 어떤 권리를 갖는지 설명합니다.</p>
+
+  <h2>1. 처리하는 개인정보</h2>
+  <p>사이트의 기사와 업데이트 소식은 회원가입이나 로그인 없이 누구나 볼 수 있으며, 이때 이름·이메일 같은
+  정보를 받지 않습니다. 다만 아래 정보가 처리될 수 있습니다.</p>
+  <ul>
+    <li><strong>접속 기록</strong> — IP 주소, 브라우저·기기 정보, 접속 시각, 요청한 페이지.
+      사이트를 전송하는 호스팅 서비스(Cloudflare)가 보안과 서비스 운영을 위해 자동으로 기록합니다.</li>
+    <li><strong>광고 쿠키</strong> — 사이트에 표시되는 Google 애드센스 광고가 쿠키와 기기 식별자를 사용합니다
+      (아래 4항).</li>
+    <li><strong>Google 계정 로그인 정보</strong> (로그인 기능을 이용하는 경우에만) — 이메일 주소, 이름,
+      프로필 사진 주소, 계정 고유 식별자, 그리고 이용자가 직접 저장한 관심 분야 설정('나만의 피드').
+      비밀번호는 사이트가 받지 않으며 Google이 직접 인증합니다.</li>
+  </ul>
+
+  <h2>2. 이용 목적과 보유 기간</h2>
+  <ul>
+    <li>접속 기록: 서비스 제공, 장애·부정 이용 대응, 통계. 호스팅 서비스의 보관 기준에 따라 보관 후 삭제됩니다.</li>
+    <li>로그인 정보: 로그인 상태 유지와 '나만의 피드' 제공. 이용자가 계정 삭제를 요청하면 지체 없이 삭제합니다.</li>
+    <li>광고 쿠키: 광고 표시와 광고 성과 측정 (Google의 정책에 따름).</li>
+  </ul>
+  <p>법령에 따라 보관해야 하는 경우를 빼고는 목적을 이룬 개인정보를 바로 파기합니다.</p>
+
+  <h2>3. 제3자 제공과 처리 위탁</h2>
+  <p>사이트는 이용자의 개인정보를 다른 곳에 팔거나 제공하지 않습니다. 서비스 운영을 위해 아래 업체의 서비스를
+  이용하며, 이 과정에서 정보가 해외에서 처리될 수 있습니다.</p>
+  <table class="static-table">
+    <thead><tr><th>업체</th><th>하는 일</th><th>처리되는 정보</th><th>위치</th></tr></thead>
+    <tbody>
+      <tr><td>Cloudflare, Inc.</td><td>사이트 호스팅·전송</td><td>접속 기록</td><td>미국 등 전 세계 데이터센터</td></tr>
+      <tr><td>Google LLC</td><td>광고(애드센스), Google 계정 로그인</td><td>광고 쿠키, 로그인 시 계정 정보</td><td>미국 등</td></tr>
+      <tr><td>Supabase, Inc.</td><td>로그인 처리, '나만의 피드' 설정 저장</td><td>로그인 정보, 관심 분야 설정</td><td>대한민국(서울) 리전</td></tr>
+    </tbody>
+  </table>
+  <p>정보는 사이트 이용 시점에 암호화된 통신(HTTPS)으로 전송되며, 위 보유 기간 동안 처리됩니다.
+  해외 처리를 원하지 않으면 로그인 기능을 이용하지 않거나 계정 삭제를 요청할 수 있습니다.</p>
+
+  <h2>4. 쿠키와 광고</h2>
+  <ul>
+    <li>Google을 포함한 제3자 광고 업체는 쿠키를 사용해 이용자가 이 사이트나 다른 웹사이트를 방문한 기록을 바탕으로
+      광고를 게재합니다.</li>
+    <li>Google은 광고 쿠키를 사용해 이용자의 사이트 방문 기록에 기반한 광고를 이용자에게 보여 줄 수 있습니다.</li>
+    <li>맞춤 광고는 <a href="https://adssettings.google.com" rel="noopener">Google 광고 설정</a>에서 끌 수 있고,
+      제3자 업체의 맞춤 광고 쿠키는 <a href="https://www.aboutads.info/choices/" rel="noopener">aboutads.info</a>에서
+      끌 수 있습니다.</li>
+    <li>Google의 정보 처리 방식은 <a href="https://policies.google.com/technologies/partner-sites?hl=ko" rel="noopener">Google 파트너 사이트 정책</a>에서 볼 수 있습니다.</li>
+    <li>브라우저 설정에서 쿠키를 거부할 수 있으며, 이 경우 일부 기능(로그인 등)을 이용하지 못할 수 있습니다.</li>
+  </ul>
+
+  <h2>5. 브라우저에 저장하는 정보</h2>
+  <p>화면 테마(라이트·다크) 선택, 앱 설치 안내 표시 여부, 로그인 상태를 이용자의 브라우저 저장소(localStorage)에
+  저장하고, 빠른 로딩을 위해 페이지 파일을 브라우저에 캐시합니다. 이 정보는 사이트 서버로 보내지지 않으며,
+  브라우저의 사이트 데이터 삭제로 지울 수 있습니다.</p>
+
+  <h2>6. 이용자의 권리</h2>
+  <p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 아래 문의처로
+  연락하면 지체 없이 처리하고 결과를 알려 드립니다. 로그인한 이용자는 로그아웃으로 브라우저의 로그인 정보를
+  바로 지울 수 있습니다.</p>
+
+  <h2>7. 안전성 확보 조치</h2>
+  <p>모든 통신은 HTTPS로 암호화하고, 로그인 정보는 이용자 본인만 읽고 쓸 수 있도록 접근 권한을 제한하며,
+  관리용 권한은 운영자만 사용합니다.</p>
+
+  <h2>8. 만 14세 미만 아동</h2>
+  <p>사이트는 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 만 14세 미만이라면 로그인 기능을
+  이용하지 말아 주세요.</p>
+
+  <h2>9. 개인정보 보호책임자와 문의</h2>
+  <ul>
+    <li>개인정보 보호책임자: {esc(PRIVACY_OWNER)}</li>
+    <li>문의: {mail}</li>
+  </ul>
+  <p>개인정보 침해에 대한 신고나 상담은 아래 기관에도 할 수 있습니다.</p>
+  <ul>
+    <li>개인정보침해신고센터 (국번 없이 118, <a href="https://privacy.kisa.or.kr" rel="noopener">privacy.kisa.or.kr</a>)</li>
+    <li>개인정보분쟁조정위원회 (1833-6972, <a href="https://www.kopico.go.kr" rel="noopener">www.kopico.go.kr</a>)</li>
+    <li>대검찰청 (국번 없이 1301, <a href="https://www.spo.go.kr" rel="noopener">www.spo.go.kr</a>)</li>
+    <li>경찰청 (국번 없이 182, <a href="https://ecrm.police.go.kr" rel="noopener">ecrm.police.go.kr</a>)</li>
+  </ul>
+
+  <h2>10. 방침의 변경</h2>
+  <p>이 방침이 바뀌면 시행일과 함께 이 페이지에 알립니다.</p>
+</main>
+{footer(root)}
+</div>
+</body>
+</html>
+""")
+
+
 def build_404() -> str:
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
     return (head(root, f'페이지를 찾을 수 없어요 | {SITE_NAME}', SITE_DESC, SITE_URL + '/')
@@ -462,7 +570,7 @@ def build_404() -> str:
   <h1 class="feed-title">페이지를 찾을 수 없어요</h1>
   <p class="feed-sub"><a href="{root}">첫 화면으로 돌아가기</a></p>
 </main>
-{footer()}
+{footer(root)}
 </div>
 </body>
 </html>
@@ -610,9 +718,10 @@ def main():
                      f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
                      entries, [(label, f'updates/{slug}/')], show_service=False)
 
-    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths, upd_dated))
+    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
+    write(out, 'privacy/index.html', fin(build_privacy()))
     if PREVIEW:
         write(out, 'robots.txt', 'User-agent: *\nDisallow: /\n')
         os.remove(os.path.join(out, 'sitemap.xml'))

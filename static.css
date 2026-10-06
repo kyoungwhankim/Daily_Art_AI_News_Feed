@@ -49,6 +49,17 @@ a.modal-keyword { text-decoration: none; }
 .static-item-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
 .static-list p { margin: 4px 0 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
 
+.static-doc { line-height: 1.75; font-size: 15px; color: var(--ink); }
+.static-doc h2 { font-size: 18px; margin: 34px 0 10px; }
+.static-doc ul { padding-left: 20px; margin: 8px 0; }
+.static-doc li { margin: 4px 0; }
+.static-doc a { color: var(--accent-strong); }
+.static-table { width: 100%; }
+.static-table { border-collapse: collapse; font-size: 14px; margin: 10px 0; display: block; overflow-x: auto; }
+.static-table th, .static-table td { border: 1.5px solid var(--stroke); padding: 8px 10px; text-align: left; vertical-align: top; }
+.static-table th { background: var(--paper-2); white-space: nowrap; }
+.site-footer a { color: inherit; }
+
 @media (max-width: 640px) {
   .static-main { padding: 24px 18px 60px; }
   .site-header .static-nav { display: none; }
