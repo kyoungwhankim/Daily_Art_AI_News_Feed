@@ -768,15 +768,80 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
 }
 
 /* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
+// 좁은 화면의 서랍을 손가락으로 끌어 여닫는다.
+// 닫혀 있을 땐 화면 왼쪽 끝에서 오른쪽으로, 열려 있을 땐 서랍이나 바깥을 왼쪽으로 끈다.
+// 끄는 동안 서랍이 손가락을 따라오고, 놓았을 때 절반 넘게 끌었거나 빠르게 튕기면 여닫힌다.
+const DRAWER_EDGE = 28;   // 닫힌 서랍을 열 수 있는 왼쪽 끝 영역 (px)
+function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
+  const st = useRef({ open, onOpen, onClose });
+  st.current.open = open; st.current.onOpen = onOpen; st.current.onClose = onClose;
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 1024px)');
+    let g = null;   // 진행 중인 제스처
+    const paint = (x, w) => {
+      const a = asideRef.current, b = backdropRef.current;
+      a.style.transition = 'none'; a.style.transform = `translateX(${x}px)`;
+      b.style.transition = 'none'; b.style.opacity = String(1 + x / w);
+    };
+    const reset = () => {
+      for (const el of [asideRef.current, backdropRef.current]) {
+        if (el) { el.style.transition = ''; el.style.transform = ''; el.style.opacity = ''; }
+      }
+    };
+    const onStart = e => {
+      g = null;
+      if (!mq.matches || e.touches.length !== 1 || !asideRef.current) return;
+      const t = e.touches[0];
+      const wasOpen = st.current.open;
+      if (wasOpen ? !(asideRef.current.contains(e.target) || backdropRef.current.contains(e.target)) : t.clientX > DRAWER_EDGE) return;
+      g = { wasOpen, x0: t.clientX, y0: t.clientY, t0: Date.now(), drag: false, x: 0, w: asideRef.current.offsetWidth };
+    };
+    const onMove = e => {
+      if (!g) return;
+      const t = e.touches[0], dx = t.clientX - g.x0, dy = t.clientY - g.y0;
+      if (!g.drag) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        // 세로로 움직이거나 반대 방향이면 평소 스크롤로 둔다
+        if (Math.abs(dx) <= Math.abs(dy) || (g.wasOpen ? dx > 0 : dx < 0)) { g = null; return; }
+        g.drag = true;
+      }
+      e.preventDefault();
+      g.dx = dx;
+      g.x = Math.max(-g.w, Math.min(0, (g.wasOpen ? 0 : -g.w) + dx));
+      paint(g.x, g.w);
+    };
+    const onEnd = () => {
+      if (!g || !g.drag) { g = null; return; }
+      const v = g.dx / Math.max(1, Date.now() - g.t0);   // px/ms
+      const next = v > 0.3 ? true : v < -0.3 ? false : (1 + g.x / g.w) > 0.5;
+      g = null;
+      reset();
+      if (next !== st.current.open) (next ? st.current.onOpen : st.current.onClose)();
+    };
+    document.addEventListener('touchstart', onStart, { passive: true });
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onEnd);
+    document.addEventListener('touchcancel', onEnd);
+    return () => {
+      document.removeEventListener('touchstart', onStart);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onEnd);
+      document.removeEventListener('touchcancel', onEnd);
+    };
+  }, []);
+}
+
 // 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
 // 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 회사)가 펼쳐진다.
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
-function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts,
+function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
                    subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany }) {
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
   const newsActive = section === 'news';
+  const asideRef = useRef(null), backdropRef = useRef(null);
+  useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
   const current = newsActive ? (viewHome ? null : `news:${activeTab}`) : (updCat ? `upd:${updCat}` : null);
   const [folded, setFolded] = useState(null);       // 다시 눌러 접은 서브 섹션
   useEffect(() => { setFolded(null); }, [current]);
@@ -784,8 +849,8 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
   const toggle = (key, go) => { if (isOpen(key)) setFolded(key); else { setFolded(null); go(); } };
   return (
     <>
-      <div className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
-      <aside className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
+      <div ref={backdropRef} className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
+      <aside ref={asideRef} className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
         <div className="side-drawer-head">
           <span className="brand-name">AI Art Daily</span>
           <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
@@ -1223,6 +1288,7 @@ function App() {
         viewHome={viewHome}
         activeTab={activeTab}
         open={sideOpen}
+        onOpen={() => setSideOpen(true)}
         onClose={() => setSideOpen(false)}
         counts={tabCounts(articles)}
         onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
