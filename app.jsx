@@ -655,61 +655,139 @@ function SkeletonCard() {
 }
 
 /* ---------- home view ---------- */
-function HomeView({ onSelectTab, onOpenArticle, articles }) {
+// 메인 화면용 최신 서비스 업데이트 (data/updates/latest.json — 전체 피드를 받지 않는다)
+let latestUpdatesPromise = null;
+function useLatestUpdates(limit) {
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    let alive = true;
+    if (!latestUpdatesPromise) {
+      latestUpdatesPromise = fetchJson(`${DATA_BASE}updates/latest.json`, { cache: 'no-cache' }).catch(() => []);
+    }
+    latestUpdatesPromise.then(list => {
+      if (!alive) return;
+      const bySlug = Object.fromEntries(UPDATE_COMPANIES.map(c => [c.slug, c]));
+      // 한 서비스가 목록을 다 차지하지 않게 서비스마다 최대 2건
+      const per = {};
+      const picked = list.filter(e => bySlug[e.service] && (per[e.service] = (per[e.service] || 0) + 1) <= 2);
+      setItems(picked.slice(0, limit).map(e => ({ ...e, company: bySlug[e.service] })));
+    });
+    return () => { alive = false; };
+  }, [limit]);
+  return items;
+}
+
+/* ---------- home (뉴스 메인) ---------- */
+// 탭마다의 색 (섹션 막대·분류 글자) — 기사 썸네일 기본 색(hue)과 같은 계열
+const TAB_TONE = { games: 200, industry: 30, art: 290 };
+const toneOf = (tab) => (TAB_TONE[tab] != null ? { '--tone-h': TAB_TONE[tab] } : undefined);
+// 위: 톱 기사 + 최신 기사 목록 / 가운데: 탭별 최신 기사 / 아래: AI 서비스 최신 업데이트 / 하단 고정 띠
+// 같은 기사가 두 번 나오지 않게, 위쪽에 쓴 기사는 탭별 목록에서 뺀다.
+function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
-  const latest = useMemo(() => {
-    return [...articles]
-      .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
-      .slice(0, 10);
-  }, [articles]);
+  const sorted = useMemo(() => [...articles]
+    .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
+  const latest = useMemo(() => sorted.slice(0, 10), [sorted]);
   const tickerItems = useMemo(() => [...latest, ...latest], [latest]);
   const tabLabelOf = (id) => (TABS.find(t => t.id === id) || {}).label || '';
-  return (
-    <div className="home">
-      <aside className="home-hero">
-        <div className="home-eyebrow">
-          <span className="home-eyebrow-line" aria-hidden="true" />
-          <span className="home-eyebrow-text">AI ART DAILY</span>
-          <span className="home-eyebrow-date">{today}</span>
-        </div>
-        <h1 className="home-title">아트 제작자를 위한<br/>AI 뉴스 큐레이션</h1>
-        <p className="home-lede">
-          매일 쏟아지는 AI 뉴스 중 게임·아트 제작 현장에 실제로 영향을 주는 소식만 골라
-          한국어로 정리합니다.
-        </p>
-      </aside>
+  const { lead, list, perTab } = useMemo(() => {
+    const lead = sorted.slice(0, 6).find(a => a.image) || sorted[0];
+    const list = sorted.filter(a => a !== lead).slice(0, 6);
+    const shown = new Set([lead, ...list].filter(Boolean).map(a => a.id));
+    const perTab = TABS.map(t => ({ tab: t, items: sorted.filter(a => a.tab === t.id && !shown.has(a.id)).slice(0, 5) }));
+    return { lead, list, perTab };
+  }, [sorted]);
+  const updates = useLatestUpdates(10);
+  const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
 
-      <section className="home-main">
-        <div className="home-section-head">
-          <span className="home-section-eyebrow">
-            <span className="home-section-kind">CHANNELS</span>
-            <span className="home-section-rule" aria-hidden="true" />
-            <span className="home-section-count">{String(TABS.length).padStart(2, '0')}</span>
-          </span>
-          <h2 className="home-section-title">카테고리 채널</h2>
-          <div className="home-section-sub">관심 분야를 골라 오늘의 큐레이션을 확인하세요</div>
-        </div>
-        <ul className="home-grid">
-          {TABS.map((t, i) => (
-            <li key={t.id} className="home-card-wrap">
-              <button className="home-card" onClick={() => onSelectTab(t.id)}>
-                <div className="home-card-num">{String(i + 1).padStart(2, '0')}</div>
-                <div className="home-card-body">
-                  <div className="home-card-title">{t.label}</div>
-                  <p className="home-card-desc">{t.desc}</p>
-                </div>
-              </button>
-            </li>
-          ))}
-        </ul>
-        <div className="home-grid-note">
-          <span className="home-grid-note-dot" aria-hidden="true" />
-          <div className="home-grid-note-body">
-            <strong>카테고리 확장 예정</strong>
-            <span>새로운 아이디어는 언제든 환영입니다.</span>
+  return (
+    <div className="home hm">
+      <div className="hm-masthead">
+        <span className="hm-date">{today}</span>
+        <span className="hm-tagline">아트 제작자를 위한 AI 뉴스 큐레이션</span>
+      </div>
+
+      {lead && (
+        <section className="hm-top" aria-label="주요 기사">
+          <button type="button" className="hm-lead" onClick={() => onOpenArticle(lead)}>
+            <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+            <span className="hm-lead-body">
+              <span className="hm-kicker" style={toneOf(lead.tab)}>{tabLabelOf(lead.tab)}</span>
+              <span className="hm-lead-title">{lead.headline}</span>
+              <span className="hm-lead-summary">{lead.summary}</span>
+              {meta(lead)}
+            </span>
+          </button>
+          <div className="hm-latest">
+            <h2 className="hm-head hm-sec">최신 기사</h2>
+            <ol className="hm-rows">
+              {list.map(a => (
+                <li key={a.id}>
+                  <button type="button" className="hm-row" onClick={() => onOpenArticle(a)}>
+                    <span className="hm-row-text">
+                      <span className="hm-kicker" style={toneOf(a.tab)}>{tabLabelOf(a.tab)}</span>
+                      <span className="hm-row-title">{a.headline}</span>
+                      {meta(a)}
+                    </span>
+                    <span className="hm-row-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
+                  </button>
+                </li>
+              ))}
+            </ol>
           </div>
-        </div>
+        </section>
+      )}
+
+      <section className="hm-tabs" aria-label="카테고리별 기사">
+        {perTab.map(({ tab, items }) => (
+          <div key={tab.id} className="hm-col">
+            <div className="hm-col-head hm-sec" style={toneOf(tab.id)}>
+              <h2 className="hm-head">{tab.label}</h2>
+              <button type="button" className="hm-more" onClick={() => onSelectTab(tab.id)}>더보기 →</button>
+            </div>
+            {items[0] && (
+              <button type="button" className="hm-feature" onClick={() => onOpenArticle(items[0])}>
+                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline} />
+                <span className="hm-feature-title">{items[0].headline}</span>
+                {meta(items[0])}
+              </button>
+            )}
+            <ul className="hm-links">
+              {items.slice(1).map(a => (
+                <li key={a.id}>
+                  <button type="button" className="hm-link" onClick={() => onOpenArticle(a)}>
+                    <span className="hm-link-title">{a.headline}</span>
+                    {meta(a)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
+
+      {updates.length > 0 && (
+        <section className="hm-updates" aria-label="AI 서비스 업데이트">
+          <div className="hm-col-head hm-sec">
+            <h2 className="hm-head">AI 서비스 업데이트</h2>
+            <button type="button" className="hm-more" onClick={onAllUpdates}>전체 보기 →</button>
+          </div>
+          <ul className="hm-upd-list">
+            {updates.map(u => (
+              <li key={u.id}>
+                <button type="button" className="hm-upd" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
+                  <span className="hm-upd-top">
+                    <span className="hm-upd-service">{u.company.name}</span>
+                    <span className="update-cat">{u.kind}</span>
+                    {!u.dateMonthOnly && <span className="hm-upd-date">{u.date}</span>}
+                  </span>
+                  <span className="hm-upd-title">{u.title}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="home-ticker" aria-label="최신 뉴스">
         <div className="home-ticker-head">
@@ -1375,6 +1453,8 @@ function App() {
             onSelectTab={(id) => { goTab(id); window.scrollTo({ top: 0 }); }}
             onOpenArticle={openArticle}
             articles={articles}
+            onOpenUpdate={(cat, company) => goUpdates(cat, company)}
+            onAllUpdates={() => goUpdates(null, null)}
           />
         ) : dataState === 'error' ? (
           <EmptyState message="기사를 불러오지 못했어요" sub="잠시 후 새로고침해 주세요." />

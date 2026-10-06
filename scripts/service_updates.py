@@ -6,6 +6,7 @@ service_updates.py — 사이드바 '업데이트'(AI 서비스 공식 업데이
     data/updates/services/<서비스>/YYYY-MM-DD.json   그 서비스가 그날 발표한 업데이트 배열 (원본)
     data/updates/feed/<분야>.json                    분야별 전체 업데이트, 최신순 (자동 생성 — 직접 고치지 않는다)
     data/updates/index.json                          분야·서비스별 개수와 날짜 범위, 피드 파일 rev (자동 생성)
+    data/updates/latest.json                         모든 분야의 최신 업데이트 40건 — 메인 화면용 (자동 생성)
 
     <서비스>는 config.js updateSources의 name을 slug로 바꾼 값 (예: 'GPT Image' → gpt-image),
     <분야>는 category의 slug (예: '이미지' → image). 사이트 주소 규칙(app.jsx kwSlug)과 같다.
@@ -63,6 +64,8 @@ UPD_DIR = os.path.join(REPO, 'data', 'updates')
 SERVICES_DIR = os.path.join(UPD_DIR, 'services')
 FEED_DIR = os.path.join(UPD_DIR, 'feed')
 INDEX_PATH = os.path.join(UPD_DIR, 'index.json')
+LATEST_PATH = os.path.join(UPD_DIR, 'latest.json')   # 메인 화면용 — 모든 분야의 최신 업데이트
+LATEST_COUNT = 40
 
 # app.jsx UPDATE_CAT_SLUG, build_site.py UPDATE_CAT_SLUG와 같아야 한다
 CAT_SLUG = {'이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
@@ -234,6 +237,7 @@ def build_outputs(services: list) -> dict:
         path = os.path.join(FEED_DIR, f'{slug}.json')
         out[path] = items
         cats[slug] = {'count': len(items), 'latest': items[0]['date'], 'file': f'updates/feed/{slug}.json'}
+    out[LATEST_PATH] = sorted([e for items in by_cat.values() for e in items], key=sort_key, reverse=True)[:LATEST_COUNT]
     out[INDEX_PATH] = {'categories': cats, 'services': svc_index}
     return out
 
