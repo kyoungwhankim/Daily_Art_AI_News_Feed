@@ -1,0 +1,456 @@
+[
+  {
+    "id": "suno-2026-10-05-1",
+    "service": "suno",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "Suno 앨범 발행 기능",
+    "summary": "여러 곡을 앨범으로 묶어 발행할 수 있고, 발행하면 팔로워에게 푸시 알림이 가요.",
+    "url": "https://suno.com/release-notes/albums",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-7",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "YVO3D 로우폴리 출력 지원",
+    "summary": "YVO3D Image to 3D가 48–50,000면 목표에 맞춘 깔끔한 로우폴리 메시를 만들어요.",
+    "url": "https://www.scenario.com/changelog/yvo3d-image-to-3d-smart-low-poly",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-6",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "팀 맞춤 홈·갤러리·워크플로 노드 제어",
+    "summary": "팀용 맞춤 홈 레이아웃을 만들고, 갤러리가 매끄러워졌어요. 웹훅과 워크플로 노드 정리 기능도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-5",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "FLUX.3 Edit Video·Kling V3/O3 Image·PixVerse V6",
+    "summary": "FLUX.3 Edit Video, Kling V3/O3 Image, PixVerse V6 Extend Video가 추가돼 4K 편집과 영상 확장이 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-71ba27d0e0c10dfa857a387742b6b97ac0f13e7c9164e07a8fea9e0686dd52c6",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-4",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "Google Lyria 3.5: 보컬 포함 풀곡 생성",
+    "summary": "보컬이 들어간 최대 3분 길이의 곡을 만드는 Google Lyria 3.5가 추가됐어요. 길이와 구간을 프롬프트로 조절해요.",
+    "url": "https://www.scenario.com/changelog/models-04ef25ea07b84093779078d924609768eb27c519b2bd8d6d4534440e84602cd7",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-3",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "연동",
+    "title": "MCP 프로젝트 관리 도구",
+    "summary": "에이전트가 새 MCP 도구로 Scenario 프로젝트를 직접 관리할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-32-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-2",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "ElevenLabs v4·Lyria 3.5·에이전트형 3D",
+    "summary": "ElevenLabs v4와 Google Lyria 3.5, 자율 에이전트형 3D 모델이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-1",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "Claude 5.5 어시스턴트·새 3D 모델·요금 로직 개선",
+    "summary": "어시스턴트가 Claude 5.5로 업그레이드되고 새 3D 모델이 추가됐어요. 요금 계산과 검증 문제도 고쳐졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-136-0",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-05-2",
+    "service": "heygen",
+    "date": "2026.10.05",
+    "kind": "연동",
+    "title": "HeyGen Voices에 ElevenLabs v4 지원",
+    "summary": "ElevenLabs의 가장 표현력 높은 TTS 모델 v4를 HeyGen Voices에서 고를 수 있게 됐어요. 긴 스크립트에서도 톤과 속도가 일정해요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-voices-now-supports-elevenlabs-v4",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-05-1",
+    "service": "heygen",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "HeyGen Video 2K 렌더와 Enterprise 요청 한도 상향",
+    "summary": "HeyGen Video API가 2K 해상도를 지원해요(768p의 3배 요금). Enterprise API 플랜의 요청 속도 한도도 크게 올렸어요.",
+    "details": [
+      "읽기 분당 1,000회, 쓰기 초당 30회",
+      "429 응답에 X-RateLimit 헤더 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-video-2k",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-04-2",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "키네틱 뮤직비디오 스킬",
+    "summary": "키네틱 타이포그래피 뮤직비디오를 만드는 파이프라인 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-52-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-04-1",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "Godot 전문 스킬 추가",
+    "summary": "AI 코딩 에이전트가 GDScript와 프로젝트 구조를 잘 다루도록 Godot 전문 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-51-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-03-1",
+    "service": "scenario",
+    "date": "2026.10.03",
+    "kind": "연동",
+    "title": "스킬: 횡스크롤 게임 키트·3D 메시 파이프라인",
+    "summary": "횡스크롤 2D 게임 에셋 스킬과 Ideogram 4.5, 복잡한 3D 메시 파이프라인을 에이전트가 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-50-0",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-10-03-1",
+    "service": "higgsfield",
+    "date": "2026.10.03",
+    "kind": "기능",
+    "title": "AI Influencer 전면 개편",
+    "summary": "숏폼용 캐릭터 스튜디오 AI Influencer를 새로 만들었어요. 19가지 설정을 3단계 강도로 조합하고 내 얼굴도 넣을 수 있으며, Motion 탭으로 영상까지 만들 수 있어요.",
+    "url": "https://higgsfield.ai/blog/new-ai-influencer",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-02-2",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "FLUX.3 Image: 네이티브 2K·4K",
+    "summary": "레이아웃과 글자를 정확히 그리는 네이티브 2K·4K 이미지 모델 FLUX.3 Image가 추가됐어요. 참조 10장 편집도 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-eab3035ee295f6530ff6dd783b7c0f154827c48d67cb82360ed7fbe149ee8780",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-02-1",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 영상 확장·Recast 모델",
+    "summary": "클립을 최대 15초 늘리고 장면 삽입, 최대 4명 인물 교체가 가능한 MiniMax H3 Max 영상 모델 4종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-e1fc0d93974b3ff28842984cb0bdfcac1637da62d4e1f02ecd14a41ec7907016",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-02-1",
+    "service": "runway",
+    "date": "2026.10.02",
+    "kind": "기능",
+    "title": "Agent에 Seedance 2.5 Draft 모드, MCP에 Ideogram 4.5 추가",
+    "summary": "Runway Agent가 Seedance 2.5 Draft 모드로 480p 초안을 빠르고 저렴하게 만들 수 있게 됐어요. Runway MCP에서는 Ideogram 4.5 이미지 생성도 쓸 수 있어요.",
+    "details": [
+      "Draft 모드: 480p 빠른 초안 생성 후 업스케일 등 후처리 가능, 자동 추천·토글 지원",
+      "Runway MCP에서 Ideogram 4.5 이미지 생성 지원(유료 플랜)"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "qwen-image-2026-10-02-1",
+    "service": "qwen-image",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "Qwen-Image-2.1-Pro 출시: 투명 이미지 네이티브 지원",
+    "summary": "생성과 편집을 하나로 합친 가벼운 모델 Qwen-Image-2.1-Pro가 출시됐어요. 투명 배경 이미지를 바로 만들고 편집할 수 있고, 참조 이미지를 최대 10장까지 쓸 수 있어요.",
+    "details": [
+      "시각 생성부 7B 파라미터의 경량 구조로 품질·비용 균형",
+      "투명 이미지 생성, 투명 레이어 편집, 사진 속 피사체 추출",
+      "최대 10장 참조, 부분 편집, 인물·제품 보존",
+      "타이포그래피·인물 조명·디테일 개선"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  },
+  {
+    "id": "midjourney-2026-10-02-1",
+    "service": "midjourney",
+    "date": "2026.10.02",
+    "kind": "기능",
+    "title": "알파 사이트: 폴더별 파라미터 저장, sref 통합 필 등",
+    "summary": "폴더별 프롬프트 파라미터 저장, 여러 sref를 하나의 스타일 필로 묶어 보기 등 알파 사이트의 버그 수정과 사용성 개선이 이뤄졌어요.",
+    "details": [
+      "10만 장 이상 보유 시 크래시 수정",
+      "폴더 기본값으로 --exp 고정 가능",
+      "편집 결과가 원본 화면비 유지",
+      "무드보드 페이지에 파일 직접 드롭"
+    ],
+    "url": "https://updates.midjourney.com/alpha-changelog-10-1-26/",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-10-02-1",
+    "service": "ltx-studio",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "LTX for Post-Production: Alpha Gen 등 6가지 기능",
+    "summary": "합성·색·디테일·해상도용 6가지 새·개선 기능을 묶은 LTX for Post-Production을 공개했어요. 머리카락과 연기까지 살린 알파 매트를 만드는 Alpha Gen이 새로 추가됐어요.",
+    "details": [
+      "Alpha Gen, Layout to Render",
+      "HDR Native, SDR to HDR(업그레이드)",
+      "Native Resolution, Refine & Restore"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-02-1",
+    "service": "heygen",
+    "date": "2026.10.02",
+    "kind": "API",
+    "title": "HeyGen v3 API 폴더 생성·지정 지원",
+    "summary": "v3 API에서 폴더를 만들고 조회하며, 영상과 번역 결과를 원하는 폴더에 바로 저장할 수 있게 됐어요.",
+    "url": "https://docs.heygen.com/changelog#folders-on-v3",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-10-01-1",
+    "service": "suno",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Suno Speech (beta), 말과 배경음악 동시 생성",
+    "summary": "말과 그 사운드트랙을 한 번에 만드는 첫 모델 Speech가 베타로 나왔어요. 피아노 위 동화 낭독 같은 콘텐츠를 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/introducing-speech-beta",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-01-1",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "스킬: 방향별 스프라이트·Claude Opus 5.5 3D",
+    "summary": "에이전트가 방향별 스프라이트 사이클과 Claude Opus 5.5 3D 모델을 만들 수 있고 HEIC 업로드를 지원해요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-49-0",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-01-1",
+    "service": "runway",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "OpenAI Dots에서 Runway 사용 가능",
+    "summary": "Runway가 OpenAI의 Dots에 들어갔어요. 자기 전에 브리프를 맡기면 Dot이 샷을 계획하고 Runway가 촬영해 아침에 완성된 영상을 받아볼 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "magnific-2026-10-01-1",
+    "service": "magnific",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "MiniMax Hailuo 3·Hailuo 3 Max 영상 API",
+    "summary": "MiniMax Hailuo 3(768p·2K)와 Hailuo 3 Max(480p·768p) 영상 생성 엔드포인트를 추가했어요. 이미지·영상·오디오 레퍼런스를 프롬프트에서 @태그로 불러 써요.",
+    "details": [
+      "레퍼런스 이미지 9·영상 3·오디오 3개",
+      "레퍼런스 영상 길이도 과금에 포함(최대 15초)"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-1-2026",
+    "source": "dev"
+  },
+  {
+    "id": "ltx-studio-2026-10-01-1",
+    "service": "ltx-studio",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "3D 블로킹을 렌더로 바꾸는 Layout to Render",
+    "summary": "3D 블로킹 장면을 프롬프트나 레퍼런스 이미지로 완성도 높은 렌더로 바꿔 줘요. 카메라와 구도, 프레임 정렬은 그대로 유지돼요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  },
+  {
+    "id": "krea-2026-10-01-1",
+    "service": "krea",
+    "date": "2026.10.01",
+    "kind": "정책",
+    "title": "조직 단위 모델 접근 규칙 Model Access 도입",
+    "summary": "조직·워크스페이스·멤버별로 쓸 수 있는 모델을 한 곳에서 정하는 Model Access가 Manage로 옮겨졌어요. Business·Enterprise 플랜에서 쓸 수 있어요.",
+    "details": [
+      "승인 모델만 허용 또는 차단 모델 외 전체 허용 모드",
+      "차단이 승인보다 우선, 워크스페이스는 조직 범위 안에서만 축소",
+      "기존 규칙은 그대로 이전"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-1-2026",
+    "source": "dev"
+  },
+  {
+    "id": "higgsfield-2026-10-01-1",
+    "service": "higgsfield",
+    "date": "2026.10.01",
+    "kind": "기능",
+    "title": "Ads Studio 출시: 웹사이트로 정지 광고 자동 제작",
+    "summary": "웹사이트를 넣으면 카피와 비주얼, 브랜드 스타일을 갖춘 정지 광고를 만들어 주는 Ads Studio를 내놨어요. 제품 하나로 한 번에 최대 20개 변형을 만들어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-ads-studio",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-01-1",
+    "service": "heygen",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "HeyGen API로 Studio 템플릿 생성",
+    "summary": "영상을 API로 Studio 템플릿으로 만들고 아바타·음성·이미지·문구를 변수로 지정해 시청자별 영상을 생성할 수 있게 됐어요.",
+    "url": "https://docs.heygen.com/changelog#create-studio-templates-via-api",
+    "source": "dev"
+  },
+  {
+    "id": "flux-2026-10-01-1",
+    "service": "flux",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "FLUX 3 Image 출시",
+    "summary": "하나의 엔드포인트로 생성·부분 편집·최대 10장 참조 합성을 하는 FLUX 3 Image가 나왔어요. 프롬프트 안 바운딩 박스로 레이아웃을 픽셀 단위로 정할 수 있어요.",
+    "details": [
+      "프롬프트 끝 JSON 박스로 요소 배치",
+      "나머지는 그대로 두는 픽셀 정확 부분 편집",
+      "768sq부터 4K(약 16MP)까지, 15가지 비율",
+      "이미지당 $0.041(768sq)–$0.607(4K)"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#october-1-2026",
+    "source": "dev"
+  },
+  {
+    "id": "flow-studio-2026-10-01-1",
+    "service": "flow-studio",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Flow Studio, MiniMax H3 Max와 ElevenLabs v3 추가",
+    "summary": "MiniMax H3 Max 영상 모델과 Seed Audio 1.0, ElevenLabs v3·Turbo v2.5가 추가돼 영상과 보이스오버·음악·효과음을 만들 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "dream-machine-2026-10-01-1",
+    "service": "dream-machine",
+    "date": "2026.10.01",
+    "kind": "기능",
+    "title": "Luma Variants 출시: 광고 하나로 모든 사이즈·언어",
+    "summary": "승인된 정지 광고 하나를 올리고 포맷과 언어를 고르면 로고·헤드라인·CTA는 지키면서 배치별·시장별 버전을 자동으로 만들어 줘요. 모든 Luma 사용자가 쓸 수 있어요.",
+    "url": "https://lumalabs.ai/news/introducing-luma-variants",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-01-1",
+    "service": "comfyui",
+    "date": "2026.10.01",
+    "kind": "기능",
+    "title": "Comfy Agent 출시",
+    "summary": "원하는 것을 말하면 워크플로를 계획·구성·실행하고 다듬는 Comfy Agent가 Comfy Cloud에 공개됐어요. Comfy Desktop에는 몇 주 안에 들어와요.",
+    "url": "https://blog.comfy.org/p/comfy-agent-the-first-agent-for-craft",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-01-1",
+    "service": "claude",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "Models API에 모델 계열(line) 필드 추가",
+    "summary": "GET /v1/models 응답에 모델이 속한 계열(opus 등)을 알려 주는 line 필드가 추가돼, ID를 파싱하지 않고 모델을 묶을 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-1-2026",
+    "source": "dev"
+  },
+  {
+    "id": "synthesia-2026-09-30-1",
+    "service": "synthesia",
+    "date": "2026.09.30",
+    "kind": "기능",
+    "title": "Synthesia 더빙 영상에 자막 번인 추가",
+    "summary": "더빙한 영상에 클릭 한 번으로 자막을 입힐 수 있게 됐어요. 소리를 끄고 봐도 현지화 영상을 쉽게 따라갈 수 있어요.",
+    "url": "https://www.synthesia.io/updates/add-burned-in-captions-to-dubbed-videos",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-30-1",
+    "service": "scenario",
+    "date": "2026.09.30",
+    "kind": "모델",
+    "title": "Ideogram 4.5: 정확한 글자의 포스터·로고",
+    "summary": "이미지 속 글자를 정확히 그리는 Ideogram 4.5로 최대 2K 포스터·로고·패키지를 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-44ffd9be027d2ef52c490100787f6fc80cf7b1a51e641cab26b495bde4d7b259",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-09-30-2",
+    "service": "runway",
+    "date": "2026.09.30",
+    "kind": "API",
+    "title": "Runway Dev에 ElevenLabs Eleven v4 추가",
+    "summary": "Runway Dev API에서 Eleven v4(eleven_v4) 음성 합성을 쓸 수 있게 됐어요. [laughs] 같은 오디오 태그로 표현력 있는 음성을 만들 수 있어요.",
+    "details": [
+      "스크립트 최대 2,500자, Eleven v3와 같은 프리셋 보이스",
+      "2026년 10월 12일까지 1,000자당 2.2크레딧, 이후 5크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#eleven-v4-on-runway-dev",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-09-30-1",
+    "service": "runway",
+    "date": "2026.09.30",
+    "kind": "기능",
+    "title": "Runway Ads 공개: 퍼포먼스 광고 자동화 엔진",
+    "summary": "광고 계정과 브랜드 키트를 연결하면 영상·이미지 광고를 만들고 Meta·Google·TikTok에 게시한 뒤 성과를 읽어 다음 변형을 만드는 새 제품 Runway Ads를 발표했어요.",
+    "details": [
+      "광고 소재 생성부터 게시·성과 분석·반복까지 엔드투엔드 자동화",
+      "Meta, Google, TikTok 광고 플랫폼과 직접 연결"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-runway-ads",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-09-30-1",
+    "service": "ltx-studio",
+    "date": "2026.09.30",
+    "kind": "모델",
+    "title": "HDR Native와 SDR to HDR 업그레이드 공개",
+    "summary": "16비트 EXR을 받아 ACES 워크플로로 16비트 EXR을 돌려주는 HDR Native와, 8비트 SDR을 scene-linear ACEScg 16비트 EXR로 확장하는 개선된 SDR to HDR을 공개했어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-09-30-1",
+    "service": "heygen",
+    "date": "2026.09.30",
+    "kind": "모델",
+    "title": "HeyGen Video API 공개: heygen-video-1 모델",
+    "summary": "heygen-video-1 모델로 텍스트·첫 프레임·레퍼런스에서 5~15초 영상을 만드는 API를 공개했어요. 이미지 9장, 영상·오디오 각 3개까지 레퍼런스로 쓸 수 있어요.",
+    "details": [
+      "480p·768p 출력",
+      "ElevenLabs 모델을 요청별로 선택(eleven_v4 등)",
+      "Assets 라이브러리 폴더 인식",
+      "전문 보이스 클론에 break 태그 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-video-api",
+    "source": "dev"
+  }
+]
