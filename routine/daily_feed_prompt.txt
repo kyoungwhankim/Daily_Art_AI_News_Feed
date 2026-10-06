@@ -106,8 +106,9 @@ Step 2 — Clear the updates work directory.
 rm -rf /tmp/updates && mkdir -p /tmp/updates
 
 Step 3 — Start the updates agent with the Agent (Task) tool, in the
-BACKGROUND (run_in_background: true), with exactly this prompt (fill in the
-date):
+BACKGROUND (run_in_background: true), on the Haiku model (model: "haiku" —
+the agent only reads the changed sources and writes short Korean entries; the
+save script checks every entry), with exactly this prompt (fill in the date):
 
   Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/updates_agent_prompt.txt
   and follow it exactly, from STEP 1 to FINISH.
@@ -954,6 +955,7 @@ else
 fi
 python3 scripts/validate_data.py
 
+
 The merge checks every entry first. If it prints "REJECTED — nothing was
 merged", restore the updates and continue with the news only:
 
@@ -961,6 +963,14 @@ merged", restore the updates and continue with the news only:
   python3 scripts/validate_data.py
 
 validate_data.py must print "✅ data/ is valid" before you push.
+
+Then save which sources were checked today — only when the agent finished AND
+the merge was not REJECTED (otherwise skip this, so the same sources are picked
+again tomorrow). Sources the agent could not read stay unchecked:
+
+if [ -f /tmp/updates/DONE ]; then
+  python3 scripts/detect_source_changes.py commit --failed /tmp/updates/failed_sources.txt
+fi
 
 ---
 

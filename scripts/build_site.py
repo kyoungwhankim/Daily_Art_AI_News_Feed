@@ -488,7 +488,8 @@ def main():
         src = os.path.join(repo, name)
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(out, name))
-    shutil.copytree(os.path.join(repo, 'data'), os.path.join(out, 'data'))
+    shutil.copytree(os.path.join(repo, 'data'), os.path.join(out, 'data'),
+                    ignore=shutil.ignore_patterns('source_state.json'))   # 업데이트 수집용 내부 파일
     shutil.copytree(os.path.join(repo, 'icons'), os.path.join(out, 'icons'))
 
     articles, subcats = load()
