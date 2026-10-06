@@ -164,6 +164,7 @@ PHASE 1이 끝나면 에이전트가 끝났는지(`/tmp/updates/DONE`) 확인하
 - R4: 기사 하나씩 처리 (여러 기사를 한 번에 저장 금지)
 - R5: VERIFY DIGEST / VERIFY ARTICLES 필수
 - R6: 저장 스크립트의 검사(본문 600–800자: 공백 포함, 태그·원문 줄 제외 등)가 `REJECTED`를 출력하면 다시 작성
+- 중복 기사: URL 중복은 `update_articles.py`가 거르고, 같은 소식을 다른 매체가 쓴 기사는 PHASE 1 STEP A2에서 `scripts/find_similar.py`(제목 글자·고유명사 비교)로 최근 3주 기사와 오늘 digest를 확인해 건너뛴다
 
 ### PHASE 1 — 조사 (RESEARCH)
 

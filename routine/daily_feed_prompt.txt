@@ -73,7 +73,7 @@ mandatory exactly as written. They do not change any condition of the steps.
       scripts/fetch_article.py — run it again for EVERY digest article, even
       if PHASE 1 already fetched the same URL.
 
-  R4. One article at a time. In PHASE 1 run STEP A then STEP B for one
+  R4. One article at a time. In PHASE 1 run STEP A, STEP A2 then STEP B for one
       article before starting the next; in PHASE 2 run STEP 3 then the
       STEP 4 save script for one article before starting the next. Never
       save several articles in one python call.
@@ -351,7 +351,22 @@ For each article found, repeat this block:
     - Empty or under 200 characters → skip this article, find a different one
     - Clearly unrelated to game art AI tools → skip it, find a different one
     - A paywalled page showing only a teaser → skip it, find a different one
-  Only proceed to STEP B when you have confirmed the article is relevant and readable.
+  Only proceed to STEP A2 when you have confirmed the article is relevant and readable.
+
+  STEP A2 — DUPLICATE CHECK (the same story from a different outlet).
+  The URL check in PHASE 2 only catches the exact same URL. Before saving, look for
+  the same story among recent feed articles and today's digest:
+
+  cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/find_similar.py \
+    --title "[draft Korean title]" \
+    --text "[the original English headline + key names from ARTICLE_TEXT]" \
+    --digest /tmp/feed/digest.json
+
+  It prints NO_SIMILAR, or up to 5 lines "SIMILAR: score | date | tab | headline | url".
+  If any SIMILAR line is about the SAME event (the same announcement, release, deal,
+  survey or report — not merely the same company or topic), this article is a
+  duplicate: skip it and find a different one. Otherwise continue to STEP B.
+  Mention skipped duplicates in the section's checked-sources line.
 
   STEP B — Save this article as a JSON entry.
   Fill in all Korean text and values based on what you read in ARTICLE_TEXT.
@@ -404,7 +419,7 @@ For each article found, repeat this block:
   print(f"Saved article {len(articles)}/15: {article['title_ko'][:40]}...")
   PYEOF
 
-  Repeat STEP A and STEP B for each of the 5 Section 1 articles before moving on.
+  Repeat STEP A, STEP A2 and STEP B for each of the 5 Section 1 articles before moving on.
 
 ---
 
@@ -421,7 +436,7 @@ available — even 1 or 2 is fine. Do NOT include older articles to pad the coun
 SOURCES: use whitelist["industry"] together with whitelist["common"], following
 the search order described in USING THE WHITELIST above.
 
-For each article found, repeat STEP A and STEP B above, but set "section": 2.
+For each article found, repeat STEP A, STEP A2 and STEP B above, but set "section": 2.
 
   Read ARTICLE_TEXT before writing. If the article text is empty, too short,
   unrelated to studio AI adoption, or paywalled — skip it and find another.
@@ -442,7 +457,7 @@ available — even 1 or 2 is fine. Do NOT include older articles to pad the coun
 SOURCES: use whitelist["art"] together with whitelist["common"], following the
 search order described in USING THE WHITELIST above.
 
-For each article found, repeat STEP A and STEP B above, but set "section": 3.
+For each article found, repeat STEP A, STEP A2 and STEP B above, but set "section": 3.
 
   Read ARTICLE_TEXT before writing. If the article text is empty, too short,
   unrelated to creative AI, or paywalled — skip it and find another.

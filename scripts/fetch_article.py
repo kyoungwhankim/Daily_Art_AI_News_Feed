@@ -29,28 +29,41 @@ import re
 from urllib.parse import urljoin, urlparse
 
 
-def fetch_with_curl(url: str) -> str:
-    """curl로 페이지 HTML을 가져온다. Googlebot UA로 봇 차단을 우회한다."""
+GOOGLEBOT_UA = 'Mozilla/5.0 (compatible; Googlebot/2.1)'
+BROWSER_UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+              '(KHTML, like Gecko) Chrome/126 Safari/537.36')
+
+
+def fetch_with_curl(url: str, ua: str = GOOGLEBOT_UA) -> str:
+    """curl로 페이지 HTML을 가져온다. 기본은 Googlebot UA (PHASE 1 STEP A와 같은 방식)."""
     result = subprocess.run(
-        ['curl', '-s', '-L', '--max-time', '8',
-         '-H', 'User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1)', url],
-        capture_output=True, text=True, timeout=12
+        ['curl', '-s', '-L', '--max-time', '15', '-H', f'User-Agent: {ua}', url],
+        capture_output=True, text=True, timeout=20
     )
     return result.stdout
 
 
 def is_curl_failure(html: str) -> bool:
-    """빈 응답·짧은 응답·봇 차단 페이지를 curl 실패로 판정."""
+    """빈 응답·짧은 응답·봇 차단 페이지를 curl 실패로 판정.
+
+    차단 문구는 제목이나 짧은 본문에서만 찾는다 — 정상 기사도 CSS·스크립트에
+    'recaptcha', 'cloudflare' 같은 글자를 담고 있어서 HTML 전체를 보면 오판한다.
+    """
     if not html or len(html) < 500:
         return True
-    visible_len = len(re.sub(r'<[^>]+>', ' ', html).strip())
-    if visible_len < 300:
+    text = extract_body_text(html, max_chars=100000)
+    if len(text) < 300:
         return True
+    m = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
+    title = m.group(1) if m else ''
     bot_block_patterns = [
-        r'just a moment', r'enable javascript', r'access denied',
-        r'cloudflare', r'captcha', r'are you a robot',
+        r'just a moment', r'enable javascript', r'access denied', r'attention required',
+        r'captcha', r'are you a robot', r'verify you are human', r'403 forbidden',
     ]
-    return any(re.search(p, html, re.IGNORECASE) for p in bot_block_patterns)
+    if any(re.search(p, title, re.IGNORECASE) for p in bot_block_patterns):
+        return True
+    # 본문이 짧은 페이지만 본문에서도 차단 문구를 찾는다 (진짜 차단 페이지는 내용이 거의 없다)
+    return len(text) < 2000 and any(re.search(p, text, re.IGNORECASE) for p in bot_block_patterns)
 
 
 def extract_image(html: str) -> str:
@@ -122,6 +135,9 @@ def main():
 
     url = sys.argv[1]
     html = fetch_with_curl(url)
+    if is_curl_failure(html):
+        # Googlebot을 막는 사이트가 있어 일반 브라우저로 한 번 더
+        html = fetch_with_curl(url, BROWSER_UA)
 
     if is_curl_failure(html):
         print("CURL_FAILED — body empty, too short, or bot-blocked.")
