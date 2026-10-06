@@ -44,6 +44,8 @@ STATE_PATH = os.path.join(su.UPD_DIR, 'source_state.json')
 NEXT_PATH = '/tmp/updates/source_state.next.json'
 KEEP_EXTRA = 200          # 피드에서 빠진 예전 글을 더 기억해 둘 수 (지금 피드의 글은 모두 기억한다)
 MIN_TEXT = 500            # 이보다 짧으면 스크립트로 그리는 페이지로 본다
+# 루틴 환경에서 열리지 않는 곳 (GitHub는 세션에 연결된 레포만 허용된다) — 화면의 링크로만 쓰고 비교하지 않는다
+SKIP_HOSTS = {'github.com', 'api.github.com'}
 KEEP_SEEN = 3000          # 페이지마다 기억할 링크·날짜 수
 _MON = ('January|February|March|April|May|June|July|August|September|October|November|December|'
         'Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec')
@@ -126,6 +128,9 @@ def _fingerprint(url: str) -> dict:
 def cmd_check(args):
     services = su.load_services()
     state = load_json(STATE_PATH, {})
+    for s in services:
+        for k in ('notice', 'dev'):
+            s[k] = [u for u in s[k] if urlparse(u).netloc not in SKIP_HOSTS]
     urls = sorted({u for s in services for k in ('notice', 'dev') for u in s[k]})
     def fp_for(u):
         fp, old = fingerprint(u), state.get(u) or {}
@@ -232,7 +237,8 @@ def cmd_commit(args):
             continue   # 예전 상태를 두어 다음 날 다시 고른다
         state[u] = rec
     # config에서 빠진 출처는 지운다
-    current = {u for s in su.load_services() for k in ('notice', 'dev') for u in s[k]}
+    current = {u for s in su.load_services() for k in ('notice', 'dev') for u in s[k]
+               if urlparse(u).netloc not in SKIP_HOSTS}
     state = {u: r for u, r in sorted(state.items()) if u in current}
     os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
     with open(STATE_PATH, 'w', encoding='utf-8') as f:

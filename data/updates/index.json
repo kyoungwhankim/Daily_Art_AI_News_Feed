@@ -31,10 +31,10 @@
       "rev": "821ea5a3bf"
     },
     "audio": {
-      "count": 349,
+      "count": 348,
       "latest": "2026.10.05",
       "file": "updates/feed/audio.json",
-      "rev": "e4bdc151ec"
+      "rev": "18d01b494a"
     },
     "tools": {
       "count": 981,
@@ -240,7 +240,7 @@
       "latest": "2026.10.01"
     },
     "elevenlabs": {
-      "count": 204,
+      "count": 203,
       "first": "2022.11.24",
       "latest": "2026.09.28"
     },

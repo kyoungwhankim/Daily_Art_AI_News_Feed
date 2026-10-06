@@ -304,6 +304,24 @@ def url_status(url: str) -> str:
     return _url_cache[base]
 
 
+LISTING_SEGMENTS = {'blog', 'news', 'insights', 'updates', 'product-updates', 'blog-category', 'whats-new',
+                    'announcements', 'press', 'newsroom', 'releases'}
+
+
+def is_listing_url(url: str, svc: dict) -> bool:
+    """그 서비스의 출처 목록 페이지(블로그·뉴스 첫 화면) 주소인가 — 그런 주소는 글 하나를 가리키지 않는다.
+    변경 기록 페이지처럼 한 페이지에 날짜별 항목이 쌓이는 출처는 목록으로 보지 않는다."""
+    if '#' in url:
+        return False
+    key = normalize_url(url)
+    for src in svc['notice'] + svc['dev']:
+        if normalize_url(src.split('?')[0]) == key:
+            last = key.rsplit('/', 1)[-1].lower()
+            if last in LISTING_SEGMENTS or 'blog' in last or last.startswith('announcements'):
+                return True
+    return False
+
+
 def cmd_save(args):
     services = {s['slug']: s for s in load_services()}
     raw = sys.stdin.read()
@@ -328,6 +346,11 @@ def cmd_save(args):
             print(f"REJECTED {e.get('service') if isinstance(e, dict) else '?'} "
                   f"{e.get('date') if isinstance(e, dict) else ''}: " + '; '.join(problems))
             continue
+        if is_listing_url(e['url'], services[e['service']]):
+            bad += 1
+            print(f"REJECTED {e['service']} {e['date']}: url is the blog/news listing page ({e['url']}) — "
+                  f"use the URL of the announcement post itself")
+            continue
         code = url_status(e['url'])
         if code in ('404', '410'):
             bad += 1
@@ -343,6 +366,12 @@ def cmd_save(args):
             dup += 1
             print(f"SKIPPED (already collected) {e['service']} {e['date']} {e['url']}")
             continue
+        same_day = [x for x in stored_cache[e['service']] if x[1] == e['date']] + \
+                   [x for x in have if x[0] == e['service'] and x[1] == e['date']]
+        if same_day:
+            print(f"WARNING {e['service']} {e['date']}: this service already has {len(same_day)} entr(y/ies) on this "
+                  f"date ({', '.join(x[2] for x in same_day)}). If it is the same release, it is a duplicate — "
+                  f"remove it from {args.out}.")
         entries.append({k: e[k] for k in ('service', 'date', 'kind', 'title', 'summary', 'details', 'url', 'source',
                                           'dateMonthOnly') if k in e})
         have.add(key)

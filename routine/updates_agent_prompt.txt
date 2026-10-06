@@ -87,6 +87,12 @@ For each printed service (the slug, mode and match words are on its line):
 
       echo "SOURCE_URL" >> /tmp/updates/failed_sources.txt
 
+    If a listing shows only relative times ("3 hours ago", "yesterday"), open the post itself to
+    read its date. Every entry's url must be the post itself, never the blog / news listing page
+    (the save script rejects listing URLs). If save prints WARNING about an entry already stored
+    on the same date, compare them: if it is the same release, remove your new entry from the
+    hand-off file.
+
     For a feed with new items, the printed new items are what you need — read a post itself only
     when the feed text is too short to write the entry. For a changed page, compare it with the
     service's latest stored entries (`state` output) to find what is new.
