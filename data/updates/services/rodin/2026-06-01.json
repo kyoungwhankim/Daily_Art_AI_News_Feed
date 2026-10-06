@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2026-06-01-1",
+    "service": "rodin",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Rodin Gen-2.5 creative 모드 상위 티어로 제한",
+    "summary": "Rodin Gen-2.5에서 geometry_instruct_mode=creative를 Gen-2.5-Medium 이상 티어에서만 쓸 수 있도록 바뀌었어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#june-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

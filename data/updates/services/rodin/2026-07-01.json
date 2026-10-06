@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rodin-2026-07-01-1",
+    "service": "rodin",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "Hyper3D API 문서 이전, Gen-2.5 기본 모드 creative로",
+    "summary": "모든 API 문서가 새 Hyper3D API 문서 사이트로 옮겨졌고, Rodin Gen-2.5의 geometry_instruct_mode 기본값이 faithful에서 creative로 바뀌었어요.",
+    "details": [
+      "API 문서 전체를 새 Hyper3D API 문서로 이전",
+      "Gen-2.5 geometry_instruct_mode 기본값 faithful → creative"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#july-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "seedream-2026-05-01-1",
+    "service": "seedream",
+    "date": "2026.05.01",
+    "kind": "기능",
+    "title": "ModelArk Playground에서 Seedream 5.0 4K 이미지 출력",
+    "summary": "BytePlus ModelArk의 Model Playground에서 Dola-Seedream-5.0으로 4K 해상도 이미지를 출력할 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#rn-2605",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

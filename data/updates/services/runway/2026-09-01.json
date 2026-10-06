@@ -1,0 +1,19 @@
+[
+  {
+    "id": "runway-2026-09-01-1",
+    "service": "runway",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "오픈 웨이트 월드 액션 모델 Praxis-1 발표",
+    "summary": "Runway가 영상 사전학습을 실제 로봇 제어로 잇는 첫 오픈 웨이트 월드 액션 모델 Praxis-1을 발표했어요. 지금은 일부 파트너와 테스트 중이고, 몇 달 안에 오픈 웨이트로 공개할 예정이에요.",
+    "details": [
+      "범용 월드 모델과 같은 대규모 영상 사전학습 기반",
+      "Noble Machines·Standard Bots·Ultra 등 파트너 하드웨어에서 사전 테스트",
+      "공개 출시 시 오픈 웨이트로 배포 예정",
+      "로보틱스 팀을 통해 사전 접근 신청 가능"
+    ],
+    "url": "https://runway.com/research/introducing-praxis-1",
+    "source": "notice",
+    "dateMonthOnly": true
+  }
+]

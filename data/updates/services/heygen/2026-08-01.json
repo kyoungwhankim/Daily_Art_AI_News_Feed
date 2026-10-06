@@ -1,0 +1,38 @@
+[
+  {
+    "id": "heygen-2026-08-01-1",
+    "service": "heygen",
+    "date": "2026.08.01",
+    "kind": "API",
+    "title": "HeyGen API 브랜드 키트·용어집 생성·관리 지원",
+    "summary": "웹사이트 주소로 브랜드 키트를 만들고, 발음 용어집을 API로 생성·수정할 수 있게 됐어요. Video Agent와 아바타·이미지 영상에도 용어집을 적용할 수 있어요.",
+    "details": [
+      "POST /v3/brand-kits: 공개 웹사이트에서 로고·색상·폰트를 가져와 브랜드 키트 생성",
+      "PATCH·DELETE /v3/brand-kits로 역할 수정·키트 삭제",
+      "POST·PATCH /v3/brand-glossaries로 발음 용어집 생성·수정",
+      "Video Agent에 brand_glossary_id 추가, brand_kit_id와 함께 사용 가능",
+      "POST /v3/videos·배치의 아바타·이미지 영상에 brand_glossary_id 적용"
+    ],
+    "url": "https://docs.heygen.com/changelog#create-brand-kits-from-a-website",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-08-01-2",
+    "service": "heygen",
+    "date": "2026.08.01",
+    "kind": "API",
+    "title": "HeyGen API 영상 장면 조회·Enterprise 동의 영상 업로드 개방",
+    "summary": "영상의 장면별 구성을 읽는 엔드포인트가 추가됐고, Enterprise 계정 모두가 녹화된 동의 영상을 올릴 수 있게 됐어요. 번역·립싱크 자막도 항상 만들어져요.",
+    "details": [
+      "GET /v3/videos/{video_id}/scenes로 장면별 구성·대사 조회",
+      "GET /v3/videos 응답에 GIF·자막 영상·자막 파일 URL 등 추가",
+      "Level 2 동의 영상 업로드를 모든 Enterprise 계정에 개방",
+      "번역·립싱크 enable_caption 지원 중단, 자막은 항상 생성",
+      "Avatar V 사진 아바타는 참조 룩이 없어도 사진으로 바로 렌더"
+    ],
+    "url": "https://docs.heygen.com/changelog#read-a-videos-scenes",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

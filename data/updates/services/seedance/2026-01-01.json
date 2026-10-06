@@ -1,0 +1,13 @@
+[
+  {
+    "id": "seedance-2026-01-01-1",
+    "service": "seedance",
+    "date": "2026.01.01",
+    "kind": "API",
+    "title": "Seedance 1.5 pro 1080p 생성과 Draft 모드 지원",
+    "summary": "ModelArk 영상 생성 API에서 Seedance 1.5 pro로 1080p 영상을 만들 수 있고, 빠르게 초안을 확인하는 Draft Sample 모드도 쓸 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#301dd6a6",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

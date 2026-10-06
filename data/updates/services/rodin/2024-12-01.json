@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2024-12-01-1",
+    "service": "rodin",
+    "date": "2024.12.01",
+    "kind": "API",
+    "title": "Rodin mesh_mode·mesh_simplify 파라미터 추가",
+    "summary": "Rodin Gen-1/1.5 API에 삼각/사각 면을 고르는 mesh_mode(기본 Quad)와 Raw 모드 단순화 옵션 mesh_simplify가 추가됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#december-2024",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

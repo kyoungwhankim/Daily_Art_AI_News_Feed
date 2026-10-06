@@ -824,6 +824,23 @@
     "source": "notice"
   },
   {
+    "id": "runway-2026-09-01-1",
+    "service": "runway",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "오픈 웨이트 월드 액션 모델 Praxis-1 발표",
+    "summary": "Runway가 영상 사전학습을 실제 로봇 제어로 잇는 첫 오픈 웨이트 월드 액션 모델 Praxis-1을 발표했어요. 지금은 일부 파트너와 테스트 중이고, 몇 달 안에 오픈 웨이트로 공개할 예정이에요.",
+    "details": [
+      "범용 월드 모델과 같은 대규모 영상 사전학습 기반",
+      "Noble Machines·Standard Bots·Ultra 등 파트너 하드웨어에서 사전 테스트",
+      "공개 출시 시 오픈 웨이트로 배포 예정",
+      "로보틱스 팀을 통해 사전 접근 신청 가능"
+    ],
+    "url": "https://runway.com/research/introducing-praxis-1",
+    "source": "notice",
+    "dateMonthOnly": true
+  },
+  {
     "id": "synthesia-2026-08-31-1",
     "service": "synthesia",
     "date": "2026.08.31",
@@ -1586,6 +1603,42 @@
     "source": "notice"
   },
   {
+    "id": "heygen-2026-08-01-2",
+    "service": "heygen",
+    "date": "2026.08.01",
+    "kind": "API",
+    "title": "HeyGen API 영상 장면 조회·Enterprise 동의 영상 업로드 개방",
+    "summary": "영상의 장면별 구성을 읽는 엔드포인트가 추가됐고, Enterprise 계정 모두가 녹화된 동의 영상을 올릴 수 있게 됐어요. 번역·립싱크 자막도 항상 만들어져요.",
+    "details": [
+      "GET /v3/videos/{video_id}/scenes로 장면별 구성·대사 조회",
+      "GET /v3/videos 응답에 GIF·자막 영상·자막 파일 URL 등 추가",
+      "Level 2 동의 영상 업로드를 모든 Enterprise 계정에 개방",
+      "번역·립싱크 enable_caption 지원 중단, 자막은 항상 생성",
+      "Avatar V 사진 아바타는 참조 룩이 없어도 사진으로 바로 렌더"
+    ],
+    "url": "https://docs.heygen.com/changelog#read-a-videos-scenes",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-08-01-1",
+    "service": "heygen",
+    "date": "2026.08.01",
+    "kind": "API",
+    "title": "HeyGen API 브랜드 키트·용어집 생성·관리 지원",
+    "summary": "웹사이트 주소로 브랜드 키트를 만들고, 발음 용어집을 API로 생성·수정할 수 있게 됐어요. Video Agent와 아바타·이미지 영상에도 용어집을 적용할 수 있어요.",
+    "details": [
+      "POST /v3/brand-kits: 공개 웹사이트에서 로고·색상·폰트를 가져와 브랜드 키트 생성",
+      "PATCH·DELETE /v3/brand-kits로 역할 수정·키트 삭제",
+      "POST·PATCH /v3/brand-glossaries로 발음 용어집 생성·수정",
+      "Video Agent에 brand_glossary_id 추가, brand_kit_id와 함께 사용 가능",
+      "POST /v3/videos·배치의 아바타·이미지 영상에 brand_glossary_id 적용"
+    ],
+    "url": "https://docs.heygen.com/changelog#create-brand-kits-from-a-website",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "seedance-2026-07-31-1",
     "service": "seedance",
     "date": "2026.07.31",
@@ -2208,6 +2261,41 @@
     "source": "notice"
   },
   {
+    "id": "heygen-2026-07-01-2",
+    "service": "heygen",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "HeyGen 배치 생성 API와 Hyperframes 연동",
+    "summary": "영상·번역·립싱크·에셋 업로드를 한 번에 최대 100개씩 처리하는 배치 API가 생겼고, 아바타 영상을 Hyperframes로 음악·그래픽과 합성하는 가이드가 나왔어요.",
+    "details": [
+      "POST /v3/videos/batches로 최대 100개 영상 일괄 생성",
+      "번역·립싱크·에셋 업로드 배치 API와 상태 일괄 조회 추가",
+      "동의 영상(consent_video)을 API로 제출(화이트리스트 Enterprise)",
+      "Hyperframes + HeyGen: 아바타 영상에 음악·효과음·그래픽을 합성해 렌더"
+    ],
+    "url": "https://docs.heygen.com/changelog#batch-video-creation",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-07-01-1",
+    "service": "heygen",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "HeyGen Studio 장면 합성·템플릿 API 공개",
+    "summary": "POST /v3/videos에 studio 모드가 생겨 아바타 클립·이미지·영상을 한 번의 호출로 합성할 수 있게 됐어요. Studio 템플릿을 API로 조회하고 렌더할 수도 있어요.",
+    "details": [
+      "type: studio로 최대 50개 장면을 하나의 MP4로 합성, 최대 4K",
+      "영상 장면에 보이스오버와 freeze·loop·fit_to_scene 재생 모드 추가",
+      "GET /v3/templates로 템플릿·변수 스키마 조회, POST로 영상 생성",
+      "Studio 요청에 brand_glossary_id 적용, 용어집 상세 조회 엔드포인트 추가",
+      "brand_voice_id는 brand_glossary_id로 대체(지원 중단)"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-studio-scene-composition",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "synthesia-2026-06-30-1",
     "service": "synthesia",
     "date": "2026.06.30",
@@ -2543,6 +2631,72 @@
     "source": "notice"
   },
   {
+    "id": "seedance-2026-06-01-2",
+    "service": "seedance",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Seedance 2.0 API 4K 해상도 지원",
+    "summary": "BytePlus ModelArk API에서 Dreamina-Seedance-2.0으로 4K 해상도 영상을 만들 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#rn-2606",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "seedance-2026-06-01-1",
+    "service": "seedance",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Seedance 2.5, BytePlus ModelArk 출시",
+    "summary": "한 번에 최대 30초 영상을 만드는 Dreamina Seedance 2.5가 ModelArk 모델 목록에 새로 올라왔어요. 다회 연장과 타임스탬프 기반 편집도 지원해요.",
+    "details": [
+      "모델 ID: dreamina-seedance-2-5-260628",
+      "요청당 최대 30초 생성, 여러 차례 영상 연장",
+      "요청당 최대 50개 옴니 레퍼런스 에셋",
+      "타임스탬프 기반 정밀 편집"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1159178#202606",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-06-01-2",
+    "service": "heygen",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "HeyGen API 직접 업로드·효과음 검색·크레딧 조회",
+    "summary": "에셋 직접 업로드와 음악·효과음 검색 엔드포인트가 추가되고, 사용자 정보에서 남은 크레딧을 확인할 수 있게 됐어요. HyperFrames 해상도 값도 엄격해졌어요.",
+    "details": [
+      "POST /v3/assets/direct-uploads와 완료 엔드포인트로 직접 업로드",
+      "GET /v3/audio/sounds로 음악·효과음(sound_effects) 검색",
+      "GET /v3/users/me 등에 included_credits·remaining_credits 추가",
+      "DELETE /v3/voices/{voice_id}로 음성 삭제",
+      "HyperFrames 렌더 resolution을 1080p·4k 문자열로 제한(호환성 변경)",
+      "영상 번역 stock_voice_config 설명 정리(Enterprise 기능)"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-asset-and-audio-endpoints",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-06-01-1",
+    "service": "heygen",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "HeyGen API Cinematic Avatar 영상 타입·Avatar III 엔진",
+    "summary": "프롬프트와 아바타 룩만으로 장면·움직임·구도를 만드는 Cinematic Avatar 영상 타입이 추가됐어요. Avatar III 엔진과 모션 프롬프트 제어도 확대됐어요.",
+    "details": [
+      "Cinematic Avatar: 4–15초, 720p·1080p, 영상 단위 과금",
+      "POST /v3/videos에 avatar_iii 엔진 지원",
+      "motion_prompt로 몸동작·손 제스처 제어, Avatar V 영상 아바타 지원",
+      "Avatar V 엔진 설정에 reference_look_id 추가",
+      "프롬프트 아바타는 avatar_id를 시각 참조로 사용(호환성 변경)",
+      "Avatar IV·V 4K 출력 일시 중단(720p·1080p는 유지)"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-video-type-cinematic-avatar",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "heygen-2026-05-31-1",
     "service": "heygen",
     "date": "2026.05.31",
@@ -2702,6 +2856,21 @@
     "source": "notice"
   },
   {
+    "id": "heygen-2026-05-18-2",
+    "service": "heygen",
+    "date": "2026.05.18",
+    "kind": "API",
+    "title": "HeyGen API download_failed 오류 코드 추가",
+    "summary": "요청에 넣은 영상·이미지·오디오 URL을 내려받지 못하면 전용 download_failed 오류(HTTP 400)가 돌아와요. 어떤 URL이 왜 실패했는지 메시지로 알려줘요.",
+    "details": [
+      "비공개·인증 필요 URL, 파일이 아닌 페이지 URL 등이 주요 원인",
+      "Google Drive는 링크 공개, YouTube·Vimeo는 공개 영상만 지원",
+      "resource_limit_exceeded 메시지에 인스턴트 아바타 재시도·아바타 그룹 슬롯 안내 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-%60download_failed%60-error-code",
+    "source": "dev"
+  },
+  {
     "id": "heygen-2026-05-18-1",
     "service": "heygen",
     "date": "2026.05.18",
@@ -2823,6 +2992,58 @@
     "summary": "text-to-video, image-to-video, audio-to-video, retake, extend에 v2 비동기 엔드포인트(베타)가 생겼어요. 작업을 제출하고 상태를 확인해 결과를 받으면 돼요.",
     "url": "https://ltx.io/release-notes",
     "source": "dev"
+  },
+  {
+    "id": "seedance-2026-05-01-1",
+    "service": "seedance",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "Seedance 2.0 HEIC·HEIF 입력과 작업 우선순위 지정",
+    "summary": "ModelArk 영상 생성 API에서 Seedance 2.0 시리즈가 HEIC·HEIF 이미지를 입력으로 받고, 요청마다 작업 우선순위를 정할 수 있게 됐어요.",
+    "details": [
+      "Seedance 2.0 시리즈 heic·heif 입력 이미지 형식 지원",
+      "영상 생성 API에 priority 필드 추가: 같은 엔드포인트 안에서 요청별 우선순위 설정"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#rn-2605",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-05-01-2",
+    "service": "heygen",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "HeyGen API Idempotency-Key·삭제 엔드포인트 추가",
+    "summary": "주요 POST 요청에 Idempotency-Key 헤더를 지원해 안전하게 재시도할 수 있게 됐고, 에셋·아바타 삭제 엔드포인트가 추가됐어요.",
+    "details": [
+      "에셋·아바타·립싱크·번역·영상·웹훅 생성에 Idempotency-Key 지원",
+      "동시 요청 충돌 시 409 Conflict 응답",
+      "DELETE /v3/assets·/v3/avatars/looks·/v3/avatars/{group_id} 추가",
+      "영상 번역 fps_mode를 vfr·cfr·passthrough로 제한(호환성 변경)",
+      "아바타 룩 엔드포인트의 supported_api_engines 정리"
+    ],
+    "url": "https://docs.heygen.com/changelog#api-updates",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-05-01-1",
+    "service": "heygen",
+    "date": "2026.05.01",
+    "kind": "API",
+    "title": "HeyGen API 엔진 객체화·브랜드 키트·용어집 도입",
+    "summary": "POST /v3/videos의 engine이 객체 형식으로 바뀌고, Video Agent에 브랜드 키트를, 영상 번역에 브랜드 용어집을 쓸 수 있게 됐어요.",
+    "details": [
+      "engine을 {\"type\": \"avatar_v\"} 같은 객체로 지정(호환성 변경)",
+      "POST /v3/videos에 fit 파라미터 추가",
+      "Video Agent에 brand_kit_id 추가, GET /v3/brand-kits 공개",
+      "영상 번역에 brand_glossary_id와 GET /v3/brand-glossaries 추가",
+      "영상 번역에 Stock TTS(stock_voice_config) 선택 추가",
+      "aspect_ratio 기본값 16:9 명시"
+    ],
+    "url": "https://docs.heygen.com/changelog#video-engine-updates-%26-brand-kit-support",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "runway-2026-04-30-1",
@@ -3029,6 +3250,21 @@
     "source": "notice"
   },
   {
+    "id": "seedance-2026-04-14-1",
+    "service": "seedance",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "Seedance 2.0·2.0 fast, BytePlus ModelArk API 제공",
+    "summary": "Dreamina Seedance 2.0이 BytePlus ModelArk를 통해 API로 제공되기 시작했어요. 이미지·영상·오디오를 레퍼런스로 쓰는 멀티모달 영상 생성을 서비스에 바로 연동할 수 있어요.",
+    "details": [
+      "모델 ID: dreamina-seedance-2-0-260128",
+      "더 빠른 dreamina-seedance-2-0-fast-260128도 함께 출시",
+      "영상 편집·연장 지원, 광고·영상 제작·SNS 마케팅에 최적화"
+    ],
+    "url": "https://www.byteplus.com/en/blog/dreamina-seedance2-0",
+    "source": "notice"
+  },
+  {
     "id": "pika-2026-04-10-1",
     "service": "pika",
     "date": "2026.04.10",
@@ -3201,6 +3437,79 @@
     ],
     "url": "https://lumalabs.ai/news/luma-teams",
     "source": "notice"
+  },
+  {
+    "id": "seedance-2026-04-01-1",
+    "service": "seedance",
+    "date": "2026.04.01",
+    "kind": "기능",
+    "title": "ModelArk Playground에서 Seedance 2.0 1080p 출력",
+    "summary": "ModelArk Model Playground에서 Dreamina-Seedance-2.0으로 1080p 영상을 출력할 수 있게 됐고, 토큰 계산기도 Seedance 2.0 시리즈를 지원해요.",
+    "details": [
+      "Model Playground에서 Seedance 2.0 1080p 출력",
+      "토큰 계산기에 Seedance 2.0·2.0 fast 추가",
+      "최근 30일 내 지정 모델로 만든 얼굴 포함 결과물을 Seedance 2.0 입력으로 사용 가능"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#d22fddc7",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-04-01-3",
+    "service": "heygen",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "HeyGen MCP 서버 도구 확대·CLI v0.0.4",
+    "summary": "HeyGen MCP 서버에 아바타·영상·립싱크·번역 도구가 추가되고 CLI가 v3 API 전체를 지원하게 됐어요. 오류 코드와 문서도 함께 정비됐어요.",
+    "details": [
+      "MCP 서버에 아바타 생성·영상 CRUD·립싱크·번역·design_voice 도구 추가",
+      "CLI v0.0.4: v3 전체 지원, --wait·스키마 확인·--force 플래그",
+      "새 오류 코드(ai_vendor_access_restricted 등)와 오류 응답 표준화",
+      "TTS는 Starfish 엔진 지원 음성만 사용",
+      "립싱크·영상 번역 응답에 caption_url 추가",
+      "웹훅·아바타 404 오류 코드 구체화"
+    ],
+    "url": "https://docs.heygen.com/changelog#mcp-server-updates",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-04-01-2",
+    "service": "heygen",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "HeyGen Video Agent API 세션 구조 개편",
+    "summary": "Video Agent API의 세션 경로가 /v3/video-agents/{session_id}로 단순해지고, 한 번에 생성하는 generate와 대화형 chat 모드가 생겼어요.",
+    "details": [
+      "/v3/video-agents/sessions 경로 제거, 새 세션 엔드포인트로 이전(호환성 변경)",
+      "mode(generate·chat)·auto_proceed·skip_agentic_stop 추가",
+      "응답 status에 thinking 상태 추가",
+      "세션 resources 필드 제거, 리소스·세션 영상 목록 엔드포인트 추가",
+      "GET /v3/video-agents로 Video Agent 목록 조회",
+      "후속 메시지로 질문 답변·수정 요청 가능"
+    ],
+    "url": "https://docs.heygen.com/changelog#video-agent-session-refactor",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-04-01-1",
+    "service": "heygen",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "HeyGen v3 API 공개와 v1/v2 종료 일정",
+    "summary": "일관된 인터페이스와 커서 페이지네이션을 갖춘 HeyGen v3 API가 공개됐어요. v1·v2는 2026년 10월 31일에 종료될 예정이에요.",
+    "details": [
+      "영상·Video Agent·음성·번역·아바타·에셋·웹훅 v3 엔드포인트 공개",
+      "url·asset_id·base64를 구분하는 통합 에셋 입력",
+      "POST /v3/videos를 아바타·이미지용 스키마로 개편(호환성 변경)",
+      "v1·v2 API 2026년 10월 31일 종료 예정",
+      "voice_id 생략 시 아바타 기본 음성 사용, POST /v3/voices 추가",
+      "voice_settings의 volume·engine_settings와 output_format 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-v3-api-endpoints",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "veo-2026-03-31-1",
@@ -4423,6 +4732,17 @@
     "source": "dev"
   },
   {
+    "id": "seedance-2026-01-01-1",
+    "service": "seedance",
+    "date": "2026.01.01",
+    "kind": "API",
+    "title": "Seedance 1.5 pro 1080p 생성과 Draft 모드 지원",
+    "summary": "ModelArk 영상 생성 API에서 Seedance 1.5 pro로 1080p 영상을 만들 수 있고, 빠르게 초안을 확인하는 Draft Sample 모드도 쓸 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#301dd6a6",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "ltx-studio-2025-12-29-1",
     "service": "ltx-studio",
     "date": "2025.12.29",
@@ -5342,6 +5662,20 @@
     "source": "notice"
   },
   {
+    "id": "seedance-2025-10-01-1",
+    "service": "seedance",
+    "date": "2025.10.01",
+    "kind": "모델",
+    "title": "Seedance 1.0 pro fast, BytePlus ModelArk 출시",
+    "summary": "품질·속도·비용의 균형을 맞춘 영상 생성 모델 Seedance 1.0 pro fast가 ModelArk에 새로 출시됐어요.",
+    "details": [
+      "모델 ID: seedance-1.0-pro-fast-251015"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#109857a7",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "pixverse-2025-09-29-1",
     "service": "pixverse",
     "date": "2025.09.29",
@@ -5593,6 +5927,21 @@
     "summary": "Kling API V2.1 PRO 모드에서 시작·끝 프레임으로 5초·10초 영상을 만들 수 있고, Video-to-Audio에 효과음·BGM 프롬프트와 ASMR 모드가 추가됐어요.",
     "url": "https://kling.ai/document-api/updates/api#09%2F05%2F2025",
     "source": "dev"
+  },
+  {
+    "id": "seedance-2025-09-01-1",
+    "service": "seedance",
+    "date": "2025.09.01",
+    "kind": "기능",
+    "title": "Seedance 1.0 lite 참조 이미지 기반 영상 생성",
+    "summary": "Seedance 1.0 lite i2v 모델이 참조 이미지로 영상을 만드는 기능을 새로 지원해요. 여러 피사체의 일관성을 유연하게 제어할 수 있어요.",
+    "details": [
+      "기존 이미지→영상, 시작·끝 프레임 생성에 참조 이미지 생성 추가",
+      "API에 참조 이미지 파라미터 추가로 다중 이미지 참조 지원"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#427dd635",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "synthesia-2025-08-29-1",
@@ -6012,6 +6361,22 @@
     "source": "notice"
   },
   {
+    "id": "seedance-2025-07-01-1",
+    "service": "seedance",
+    "date": "2025.07.01",
+    "kind": "API",
+    "title": "Seedance 1.0 pro, BytePlus ModelArk 출시",
+    "summary": "멀티 샷 내러티브와 1080P 고화질 영상을 지원하는 Seedance 1.0 pro가 ModelArk에 새로 출시됐어요.",
+    "details": [
+      "모델: bytedance-seedance-1-0-pro (250528)",
+      "의미 이해·지시 이행 향상, 부드러운 움직임과 풍부한 디테일",
+      "Playground에서 Seedance 1.0 lite·pro 체험 지원"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#3558004a",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "kling-2025-06-30-1",
     "service": "kling",
     "date": "2025.06.30",
@@ -6214,6 +6579,21 @@
     ],
     "url": "https://lumalabs.ai/news/introducing-modify-video",
     "source": "notice"
+  },
+  {
+    "id": "seedance-2025-06-01-1",
+    "service": "seedance",
+    "date": "2025.06.01",
+    "kind": "API",
+    "title": "Seedance 1.0 lite t2v·i2v, BytePlus ModelArk 출시",
+    "summary": "Seedance 1.0의 경량 버전인 1.0 lite가 텍스트→영상, 이미지→영상 두 모델로 ModelArk에 출시됐어요. 품질을 지키면서 생성 속도를 크게 높였어요.",
+    "details": [
+      "bytedance-seedance-1-0-lite-t2v (250428)",
+      "bytedance-seedance-1-0-lite-i2v (250428)"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#432098b2",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "veo-2025-05-30-1",
@@ -9092,6 +9472,40 @@
     "summary": "Apollo 모델이 더 선명해지고, 프레임 보간에서 중복 프레임을 대체하는 기능이 추가됐어요. NVIDIA에서 흔들림 감소가 빨라졌어요.",
     "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-4/39879",
     "source": "notice"
+  },
+  {
+    "id": "runway-2023-02-01-2",
+    "service": "runway",
+    "date": "2023.02.01",
+    "kind": "모델",
+    "title": "Gen-1 발표: 기존 영상을 새 스타일의 영상으로",
+    "summary": "이미지나 텍스트 프롬프트의 구도와 스타일을 원본 영상의 구조에 입혀 새 영상을 만드는 Gen-1을 발표했어요. 촬영 없이도 새로운 장면을 만들 수 있어요.",
+    "details": [
+      "Stylization: 이미지·프롬프트 스타일을 모든 프레임에 적용",
+      "Storyboard: 목업을 스타일이 입혀진 애니메이션으로",
+      "Mask: 영상의 특정 영역만 스타일 적용",
+      "Render: 텍스처 없는 렌더를 사실적인 결과로",
+      "Customization: 모델을 맞춤 설정해 더 높은 충실도"
+    ],
+    "url": "https://runway.com/research/gen-1",
+    "source": "notice",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "runway-2023-02-01-1",
+    "service": "runway",
+    "date": "2023.02.01",
+    "kind": "모델",
+    "title": "Gen-2 발표: 텍스트·이미지로 새 영상 생성",
+    "summary": "텍스트, 이미지, 영상 클립으로 완전히 새로운 영상을 만드는 멀티모달 AI 시스템 Gen-2를 발표했어요. 글만으로 영상을 만드는 Text to Video가 핵심이에요.",
+    "details": [
+      "Text to Video, Text + Image to Video, Image to Video 모드",
+      "Stylization·Storyboard·Mask·Render 등 Gen-1 모드 포함",
+      "Customization으로 더 높은 충실도의 결과"
+    ],
+    "url": "https://runway.com/research/gen-2",
+    "source": "notice",
+    "dateMonthOnly": true
   },
   {
     "id": "topaz-video-2023-01-31-1",

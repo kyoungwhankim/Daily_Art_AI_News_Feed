@@ -22,6 +22,9 @@ service_updates.py — 사이드바 '업데이트'(AI 서비스 공식 업데이
       "details": ["…", "…"],                      선택 — 세부 변경점 한국어 bullet (최대 6개)
       "url":     "https://…",                     공식 공지 주소 (그 글 / 변경 기록 항목)
       "source":  "notice" | "dev"                 공지인지 개발자 변경 기록인지
+      "dateMonthOnly": true                       선택 — 출처에 월까지만 있고 정확한 날을 찾지 못한 항목.
+                                                  date는 그 달 1일(YYYY.MM.01)로 두고, 화면에는 날짜를 쓰지 않는다.
+                                                  순서는 그 달 1일 항목 다음, 전달 말일 항목 앞
     }
 
     같은 서비스·같은 날짜·같은 url은 한 항목이다 (중복 기준). 하루에 같은 변경 기록 페이지에
@@ -170,7 +173,9 @@ def check_entry(e: dict, services_by_slug: dict) -> list:
         p.append('url must be the official announcement URL (http/https)')
     if e.get('source') not in ('notice', 'dev'):
         p.append("source must be 'notice' or 'dev'")
-    extra = set(e) - {'id', 'service', 'date', 'kind', 'title', 'summary', 'details', 'url', 'source'}
+    if 'dateMonthOnly' in e and (e['dateMonthOnly'] is not True or not (e.get('date') or '').endswith('.01')):
+        p.append('dateMonthOnly must be true and only used with a date on the 1st (YYYY.MM.01)')
+    extra = set(e) - {'id', 'service', 'date', 'kind', 'title', 'summary', 'details', 'url', 'source', 'dateMonthOnly'}
     if extra:
         p.append(f'unknown fields {sorted(extra)}')
     return p
@@ -190,6 +195,15 @@ def check_file(path: str, services_by_slug: dict) -> tuple:
 
 
 # ---------- feed / index ----------
+
+def sort_key(e: dict) -> tuple:
+    """최신순 정렬 키 — 같은 날짜라면 날짜가 정확한 항목이 월 단위 항목(그 달 1일)보다 앞."""
+    return (e['date'], 0 if e.get('dateMonthOnly') else 1, e['service'], e.get('id', ''))
+
+
+def sorted_entries(items: list) -> list:
+    return sorted(items, key=sort_key, reverse=True)
+
 
 def _rev(path: str) -> str:
     with open(path, 'rb') as f:
@@ -216,7 +230,7 @@ def build_outputs(services: list) -> dict:
     out = {}
     cats = {}
     for slug, items in by_cat.items():
-        items.sort(key=lambda e: (e['date'], e['service'], e['id']), reverse=True)
+        items.sort(key=sort_key, reverse=True)
         path = os.path.join(FEED_DIR, f'{slug}.json')
         out[path] = items
         cats[slug] = {'count': len(items), 'latest': items[0]['date'], 'file': f'updates/feed/{slug}.json'}
@@ -329,8 +343,8 @@ def cmd_save(args):
             dup += 1
             print(f"SKIPPED (already collected) {e['service']} {e['date']} {e['url']}")
             continue
-        entries.append({k: e[k] for k in ('service', 'date', 'kind', 'title', 'summary', 'details', 'url', 'source')
-                        if k in e})
+        entries.append({k: e[k] for k in ('service', 'date', 'kind', 'title', 'summary', 'details', 'url', 'source',
+                                          'dateMonthOnly') if k in e})
         have.add(key)
         saved += 1
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
@@ -381,6 +395,8 @@ def cmd_merge(args):
             item['details'] = e['details']
         item['url'] = e['url']
         item['source'] = e['source']
+        if e.get('dateMonthOnly'):
+            item['dateMonthOnly'] = True
         day.append(item)
         _dump(path, day)
         added.setdefault(slug, []).append(item)

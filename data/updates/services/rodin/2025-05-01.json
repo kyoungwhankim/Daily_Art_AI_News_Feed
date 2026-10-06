@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-05-01-1",
+    "service": "rodin",
+    "date": "2025.05.01",
+    "kind": "API",
+    "title": "Rodin use_hyper 제거, tier 4단계로",
+    "summary": "Rodin Gen-1/1.5 API에서 use_hyper 파라미터가 제거됐고, tier가 Sketch·Regular·Detail·Smooth 네 가지로 정리됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#may-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedance-2026-04-01-1",
+    "service": "seedance",
+    "date": "2026.04.01",
+    "kind": "기능",
+    "title": "ModelArk Playground에서 Seedance 2.0 1080p 출력",
+    "summary": "ModelArk Model Playground에서 Dreamina-Seedance-2.0으로 1080p 영상을 출력할 수 있게 됐고, 토큰 계산기도 Seedance 2.0 시리즈를 지원해요.",
+    "details": [
+      "Model Playground에서 Seedance 2.0 1080p 출력",
+      "토큰 계산기에 Seedance 2.0·2.0 fast 추가",
+      "최근 30일 내 지정 모델로 만든 얼굴 포함 결과물을 Seedance 2.0 입력으로 사용 가능"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#d22fddc7",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

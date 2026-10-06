@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2026-04-01-1",
+    "service": "rodin",
+    "date": "2026.04.01",
+    "kind": "API",
+    "title": "Rodin material에 None 옵션 추가",
+    "summary": "material 값에 None이 추가돼 재질 없이 에셋을 받을 수 있게 됐어요. 이제 PBR·Shaded·All·None 중 고를 수 있어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#april-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2026-02-01-1",
+    "service": "rodin",
+    "date": "2026.02.01",
+    "kind": "API",
+    "title": "Bang 커스텀 모델 사용 시 이미지 필수",
+    "summary": "Bang에서 커스텀 모델을 넣을 때 image도 함께 보내야 하도록 워크플로가 바뀌었어요. prompt는 계속 선택 사항이에요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#february-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

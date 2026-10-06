@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-11-01-1",
+    "service": "rodin",
+    "date": "2025.11.01",
+    "kind": "API",
+    "title": "Rodin Bang API 문서 공개",
+    "summary": "새 Bang API 문서가 공개돼 개발자가 Bang 기능을 API로 쓸 수 있게 됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#november-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

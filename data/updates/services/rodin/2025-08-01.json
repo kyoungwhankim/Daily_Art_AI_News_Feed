@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-08-01-1",
+    "service": "rodin",
+    "date": "2025.08.01",
+    "kind": "연동",
+    "title": "Rodin Godot·Unity 애드온 문서 공개",
+    "summary": "Godot과 Unity용 Rodin 애드온 문서가 공개돼 게임 엔진 안에서 Rodin을 쓸 수 있게 됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#august-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

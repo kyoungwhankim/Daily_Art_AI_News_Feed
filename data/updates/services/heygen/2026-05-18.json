@@ -8,5 +8,20 @@
     "summary": "Avatar V 아바타에게 몸을 기울이기, 엄지척, 손가락으로 세기 같은 동작과 표정을 텍스트로 지시할 수 있는 Custom Motion을 출시했어요.",
     "url": "https://heygen.noticeable.news/publications/introducing-custom-motion-for-avatar-v",
     "source": "notice"
+  },
+  {
+    "id": "heygen-2026-05-18-2",
+    "service": "heygen",
+    "date": "2026.05.18",
+    "kind": "API",
+    "title": "HeyGen API download_failed 오류 코드 추가",
+    "summary": "요청에 넣은 영상·이미지·오디오 URL을 내려받지 못하면 전용 download_failed 오류(HTTP 400)가 돌아와요. 어떤 URL이 왜 실패했는지 메시지로 알려줘요.",
+    "details": [
+      "비공개·인증 필요 URL, 파일이 아닌 페이지 URL 등이 주요 원인",
+      "Google Drive는 링크 공개, YouTube·Vimeo는 공개 영상만 지원",
+      "resource_limit_exceeded 메시지에 인스턴트 아바타 재시도·아바타 그룹 슬롯 안내 추가"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-%60download_failed%60-error-code",
+    "source": "dev"
   }
 ]

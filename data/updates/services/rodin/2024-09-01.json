@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2024-09-01-1",
+    "service": "rodin",
+    "date": "2024.09.01",
+    "kind": "API",
+    "title": "Rodin condition_mode 추가, 기본값 concat",
+    "summary": "Rodin Gen-1/1.5 API에 생성 방식을 고르는 condition_mode(fuse/concat)가 추가됐고, 기본값은 concat으로 바뀌었어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#september-2024",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

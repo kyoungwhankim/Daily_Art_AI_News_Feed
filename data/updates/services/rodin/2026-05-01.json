@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rodin-2026-05-01-1",
+    "service": "rodin",
+    "date": "2026.05.01",
+    "kind": "모델",
+    "title": "Rodin Gen-2.5 API 문서 공개",
+    "summary": "새 Rodin Gen-2.5 API 문서가 공개됐어요. images 파라미터 구조도 실제 동작에 맞게 딕셔너리에서 리스트로 정리됐어요.",
+    "details": [
+      "Rodin Gen-2.5 API 문서 신규 공개",
+      "Gen-2.5 quality_override 범위 설명 갱신",
+      "Gen-2·Gen-1/1.5 문서의 images 파라미터를 리스트 구조로 수정"
+    ],
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#may-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

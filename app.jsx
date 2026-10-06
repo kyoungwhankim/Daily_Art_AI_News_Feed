@@ -996,7 +996,9 @@ function loadServiceUpdates() {
   }
   return updatesPromise;
 }
-const sortUpdates = list => list.sort((a, b) => b.date.localeCompare(a.date) || a.company.name.localeCompare(b.company.name));
+// 최신순. 월 단위 항목(dateMonthOnly — 날짜가 그 달 1일)은 그 달 1일 항목 다음, 전달 말일 항목 앞
+const sortUpdates = list => list.sort((a, b) => b.date.localeCompare(a.date)
+  || (a.dateMonthOnly ? 1 : 0) - (b.dateMonthOnly ? 1 : 0) || a.company.name.localeCompare(b.company.name));
 // 수집된 분야는 실제 항목만, 수집 전인 분야는 예시 항목
 function buildUpdates(real) {
   const bySlug = Object.fromEntries(UPDATE_COMPANIES.map(c => [c.slug, c]));
@@ -1049,7 +1051,7 @@ function UpdatesNav({ cat, company, onCat, onCompany }) {
 function UpdateRow({ u, showCompany, onCompany }) {
   return (
     <li className="update-row">
-      <div className="update-date">{u.date}</div>
+      <div className="update-date">{u.dateMonthOnly ? '' : u.date}</div>
       <div className="update-main">
         <div className="update-head">
           {showCompany && (

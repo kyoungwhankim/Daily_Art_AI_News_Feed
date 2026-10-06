@@ -1,0 +1,40 @@
+[
+  {
+    "id": "heygen-2026-06-01-1",
+    "service": "heygen",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "HeyGen API Cinematic Avatar 영상 타입·Avatar III 엔진",
+    "summary": "프롬프트와 아바타 룩만으로 장면·움직임·구도를 만드는 Cinematic Avatar 영상 타입이 추가됐어요. Avatar III 엔진과 모션 프롬프트 제어도 확대됐어요.",
+    "details": [
+      "Cinematic Avatar: 4–15초, 720p·1080p, 영상 단위 과금",
+      "POST /v3/videos에 avatar_iii 엔진 지원",
+      "motion_prompt로 몸동작·손 제스처 제어, Avatar V 영상 아바타 지원",
+      "Avatar V 엔진 설정에 reference_look_id 추가",
+      "프롬프트 아바타는 avatar_id를 시각 참조로 사용(호환성 변경)",
+      "Avatar IV·V 4K 출력 일시 중단(720p·1080p는 유지)"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-video-type-cinematic-avatar",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-06-01-2",
+    "service": "heygen",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "HeyGen API 직접 업로드·효과음 검색·크레딧 조회",
+    "summary": "에셋 직접 업로드와 음악·효과음 검색 엔드포인트가 추가되고, 사용자 정보에서 남은 크레딧을 확인할 수 있게 됐어요. HyperFrames 해상도 값도 엄격해졌어요.",
+    "details": [
+      "POST /v3/assets/direct-uploads와 완료 엔드포인트로 직접 업로드",
+      "GET /v3/audio/sounds로 음악·효과음(sound_effects) 검색",
+      "GET /v3/users/me 등에 included_credits·remaining_credits 추가",
+      "DELETE /v3/voices/{voice_id}로 음성 삭제",
+      "HyperFrames 렌더 resolution을 1080p·4k 문자열로 제한(호환성 변경)",
+      "영상 번역 stock_voice_config 설명 정리(Enterprise 기능)"
+    ],
+    "url": "https://docs.heygen.com/changelog#new-asset-and-audio-endpoints",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

@@ -137,7 +137,9 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
   을 한국어로 정리해 `/tmp/updates/entries.json`에 저장한다(`service_updates.py save`가 항목마다 검사). 뉴스 PHASE 2가 `service_updates.py merge`로 `data/updates/`에 합치고 뉴스와 함께 push한다.
 - **파일**: 원본은 `data/updates/services/<서비스>/<발표 날짜>.json`. 같은 서비스·같은 날짜·같은 url은 한 항목(중복 기준)이다. `feed/`·`index.json`은 생성 파일이라 직접 고치지 않는다 — 원본을 고쳤다면 `python3 scripts/service_updates.py rebuild`.
 - **항목 형식**: `service`, `date`(발표 날짜 `YYYY.MM.DD`), `kind`(모델·기능·API·앱·연동·요금·정책·종료), `title`, `summary`, `details`(선택), `url`, `source`(`notice`/`dev`) — 자세한 규칙은 `scripts/service_updates.py` 맨 위 설명.
+- **월 단위 항목**: 출처에 월까지만 있고 본문에서도 정확한 날을 못 찾은 항목은 `date`를 그 달 1일로, `dateMonthOnly: true`를 붙여 저장한다. 화면에는 날짜 없이 그 달 1일 항목 다음(전달 말일 항목 앞)에 보인다.
 - **화면**: 수집된 분야는 실제 항목을, 아직 수집하지 않는 분야는 '예시' 항목을 보여 준다.
+- **검색 노출**: `/updates/`, `/updates/<분야>/`, `/updates/<분야>/<서비스>/` 페이지는 빌드 때 실제 업데이트 목록(분야·전체는 최근 100건, 서비스는 전부)을 담고 사이트맵에 들어간다.
 - **출처 점검**: `python3 scripts/check_update_sources.py` — GitHub Actions(`check-update-sources.yml`)가 매주 월요일에 돌려서, 열리지 않는 출처가 생기면 실패로 알려 준다.
 
 ## 루틴 구조

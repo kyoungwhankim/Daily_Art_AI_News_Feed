@@ -1,0 +1,37 @@
+[
+  {
+    "id": "heygen-2026-07-01-1",
+    "service": "heygen",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "HeyGen Studio 장면 합성·템플릿 API 공개",
+    "summary": "POST /v3/videos에 studio 모드가 생겨 아바타 클립·이미지·영상을 한 번의 호출로 합성할 수 있게 됐어요. Studio 템플릿을 API로 조회하고 렌더할 수도 있어요.",
+    "details": [
+      "type: studio로 최대 50개 장면을 하나의 MP4로 합성, 최대 4K",
+      "영상 장면에 보이스오버와 freeze·loop·fit_to_scene 재생 모드 추가",
+      "GET /v3/templates로 템플릿·변수 스키마 조회, POST로 영상 생성",
+      "Studio 요청에 brand_glossary_id 적용, 용어집 상세 조회 엔드포인트 추가",
+      "brand_voice_id는 brand_glossary_id로 대체(지원 중단)"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-studio-scene-composition",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
+    "id": "heygen-2026-07-01-2",
+    "service": "heygen",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "HeyGen 배치 생성 API와 Hyperframes 연동",
+    "summary": "영상·번역·립싱크·에셋 업로드를 한 번에 최대 100개씩 처리하는 배치 API가 생겼고, 아바타 영상을 Hyperframes로 음악·그래픽과 합성하는 가이드가 나왔어요.",
+    "details": [
+      "POST /v3/videos/batches로 최대 100개 영상 일괄 생성",
+      "번역·립싱크·에셋 업로드 배치 API와 상태 일괄 조회 추가",
+      "동의 영상(consent_video)을 API로 제출(화이트리스트 Enterprise)",
+      "Hyperframes + HeyGen: 아바타 영상에 음악·효과음·그래픽을 합성해 렌더"
+    ],
+    "url": "https://docs.heygen.com/changelog#batch-video-creation",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

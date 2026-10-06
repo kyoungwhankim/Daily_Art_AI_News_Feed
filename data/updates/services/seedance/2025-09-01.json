@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2025-09-01-1",
+    "service": "seedance",
+    "date": "2025.09.01",
+    "kind": "기능",
+    "title": "Seedance 1.0 lite 참조 이미지 기반 영상 생성",
+    "summary": "Seedance 1.0 lite i2v 모델이 참조 이미지로 영상을 만드는 기능을 새로 지원해요. 여러 피사체의 일관성을 유연하게 제어할 수 있어요.",
+    "details": [
+      "기존 이미지→영상, 시작·끝 프레임 생성에 참조 이미지 생성 추가",
+      "API에 참조 이미지 파라미터 추가로 다중 이미지 참조 지원"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#427dd635",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

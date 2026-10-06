@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedance-2025-07-01-1",
+    "service": "seedance",
+    "date": "2025.07.01",
+    "kind": "API",
+    "title": "Seedance 1.0 pro, BytePlus ModelArk 출시",
+    "summary": "멀티 샷 내러티브와 1080P 고화질 영상을 지원하는 Seedance 1.0 pro가 ModelArk에 새로 출시됐어요.",
+    "details": [
+      "모델: bytedance-seedance-1-0-pro (250528)",
+      "의미 이해·지시 이행 향상, 부드러운 움직임과 풍부한 디테일",
+      "Playground에서 Seedance 1.0 lite·pro 체험 지원"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#3558004a",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

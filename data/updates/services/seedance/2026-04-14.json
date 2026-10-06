@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2026-04-14-1",
+    "service": "seedance",
+    "date": "2026.04.14",
+    "kind": "API",
+    "title": "Seedance 2.0·2.0 fast, BytePlus ModelArk API 제공",
+    "summary": "Dreamina Seedance 2.0이 BytePlus ModelArk를 통해 API로 제공되기 시작했어요. 이미지·영상·오디오를 레퍼런스로 쓰는 멀티모달 영상 생성을 서비스에 바로 연동할 수 있어요.",
+    "details": [
+      "모델 ID: dreamina-seedance-2-0-260128",
+      "더 빠른 dreamina-seedance-2-0-fast-260128도 함께 출시",
+      "영상 편집·연장 지원, 광고·영상 제작·SNS 마케팅에 최적화"
+    ],
+    "url": "https://www.byteplus.com/en/blog/dreamina-seedance2-0",
+    "source": "notice"
+  }
+]

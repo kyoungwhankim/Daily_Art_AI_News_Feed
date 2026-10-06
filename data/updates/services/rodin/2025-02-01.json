@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-02-01-1",
+    "service": "rodin",
+    "date": "2025.02.01",
+    "kind": "API",
+    "title": "Rodin mesh_smooth 파라미터 추가",
+    "summary": "Rodin Gen-1/1.5 API에 메시를 매끄럽게 다듬는 mesh_smooth 파라미터가 추가됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#february-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

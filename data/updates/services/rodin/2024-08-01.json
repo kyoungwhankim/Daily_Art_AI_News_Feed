@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2024-08-01-1",
+    "service": "rodin",
+    "date": "2024.08.01",
+    "kind": "기능",
+    "title": "Rodin API에 Text-to-3D 모드 추가",
+    "summary": "Rodin Gen-1/1.5 API에 Text-to-3D 모드가 생겨 이미지 없이 텍스트만으로 3D를 만들 수 있게 됐어요. images는 선택 입력이 됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#august-2024",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]

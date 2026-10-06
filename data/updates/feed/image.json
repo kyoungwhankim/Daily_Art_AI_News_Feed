@@ -405,6 +405,22 @@
     "source": "dev"
   },
   {
+    "id": "seedream-2026-09-01-1",
+    "service": "seedream",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Seedream 5.0 flash, BytePlus ModelArk 출시",
+    "summary": "Seedream 5.0 pro와 같은 기능을 갖추면서 더 빠르고 저렴한 Seedream 5.0 flash가 ModelArk에 새로 나왔어요. 지연 시간과 비용에 민감한 서비스에 알맞아요.",
+    "details": [
+      "모델 ID: dola-seedream-5-0-flash-260915",
+      "인터랙티브 편집, 레이어 분해, 다국어 텍스트 생성 등 5.0 pro와 같은 기능",
+      "생성 속도는 더 빠르고 비용은 더 낮음"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1159178#202609",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "nano-banana-2026-08-31-1",
     "service": "nano-banana",
     "date": "2026.08.31",
@@ -1256,6 +1272,23 @@
     "source": "dev"
   },
   {
+    "id": "seedream-2026-06-01-1",
+    "service": "seedream",
+    "date": "2026.06.01",
+    "kind": "API",
+    "title": "Seedream 5.0 pro, BytePlus ModelArk API 제공",
+    "summary": "정밀한 위치·요소 제어가 가능한 Dola Seedream 5.0 pro가 ModelArk 모델 목록에 새로 올라왔어요. 좌표 지정과 자유 마킹으로 원하는 부분만 편집할 수 있어요.",
+    "details": [
+      "모델 ID: dola-seedream-5-0-pro-260628",
+      "텍스트→이미지, 한 장 또는 여러 장 참조 이미지→이미지 생성",
+      "인터랙티브 편집에서 좌표 지정과 자유 마킹 지원",
+      "14개 언어 추가 네이티브 텍스트 생성"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1159178#202606",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "krea-2026-05-29-1",
     "service": "krea",
     "date": "2026.05.29",
@@ -1556,6 +1589,17 @@
     "summary": "텍스트나 이미지로 4K 영상을 만드는 Kling 4K T2V·I2V 엔드포인트를 추가했어요.",
     "url": "https://docs.magnific.com/changelog#may-05-2026",
     "source": "dev"
+  },
+  {
+    "id": "seedream-2026-05-01-1",
+    "service": "seedream",
+    "date": "2026.05.01",
+    "kind": "기능",
+    "title": "ModelArk Playground에서 Seedream 5.0 4K 이미지 출력",
+    "summary": "BytePlus ModelArk의 Model Playground에서 Dola-Seedream-5.0으로 4K 해상도 이미지를 출력할 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#rn-2605",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "midjourney-2026-04-30-1",
@@ -2352,6 +2396,17 @@
     "summary": "대시보드 Credits 페이지에서 내가 소유한 다른 조직으로 크레딧을 바로 옮길 수 있게 됐어요. 이전은 즉시 반영되고 감사 로그가 남아요.",
     "url": "https://docs.bfl.ai/release-notes#january-8-2026",
     "source": "dev"
+  },
+  {
+    "id": "seedream-2026-01-01-1",
+    "service": "seedream",
+    "date": "2026.01.01",
+    "kind": "기능",
+    "title": "ModelArk Playground, Seedream 4.0 스토리북 다운로드 지원",
+    "summary": "BytePlus ModelArk Playground에서 Seedream 4.0으로 만든 스토리북을 내려받을 수 있게 됐어요.",
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/product-update-announcements#301dd6a6",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "qwen-image-2025-12-30-1",
@@ -3390,6 +3445,22 @@
     ],
     "url": "https://docs.magnific.com/changelog/2025#june-9-2025",
     "source": "dev"
+  },
+  {
+    "id": "seedream-2025-06-01-1",
+    "service": "seedream",
+    "date": "2025.06.01",
+    "kind": "API",
+    "title": "Seedream 3.0 t2i, BytePlus ModelArk 출시",
+    "summary": "중영 이중언어 텍스트-이미지 모델 Seedream 3.0이 ModelArk에 새로 출시됐어요. 네이티브 2K 출력과 더 정확한 작은 글자 생성을 지원해요.",
+    "details": [
+      "모델: bytedance-seedream-3.0-t2i (250415)",
+      "네이티브 2K 해상도 출력과 더 빠른 응답",
+      "작은 글자·텍스트 레이아웃·지시 이행·미적 품질 개선"
+    ],
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/model-release-announcement-2025#432098b2",
+    "source": "dev",
+    "dateMonthOnly": true
   },
   {
     "id": "midjourney-2025-05-29-1",

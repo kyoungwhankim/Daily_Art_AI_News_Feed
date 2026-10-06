@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rodin-2025-01-01-1",
+    "service": "rodin",
+    "date": "2025.01.01",
+    "kind": "API",
+    "title": "Rodin Generate Texture API 공개",
+    "summary": "기존 모델에 텍스처를 생성해 입히는 Generate Texture API 문서가 새로 공개됐어요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#january-2025",
+    "source": "dev",
+    "dateMonthOnly": true
+  }
+]
