@@ -1251,16 +1251,37 @@ mark {
   z-index: 15;
   scrollbar-width: thin;
 }
-/* 넓은 화면: 선으로 나눈 영역이 아니라 떠 있는 패널 (크림 바탕 + 테두리 + 팝 그림자) */
+/* 넓은 화면: 떠 있는 옅은 패널 — 반투명 가는 테두리, 아주 연한 점 무늬, 부드러운 그림자,
+   위 가장자리에 메인 섹션과 같은 짧은 색 막대. 선택 항목은 흰 칩 + 왼쪽 막대 */
 .sidebar .side-nav {
+  position: relative;
   min-height: 100%; box-sizing: border-box;
-  padding: 14px 10px 18px;
-  background: var(--paper-2);
-  border: 2px solid var(--stroke);
-  border-radius: 18px;
-  box-shadow: var(--shadow-pop);
+  padding: 16px 10px 18px;
+  background-color: color-mix(in srgb, var(--paper-2) 45%, var(--paper));
+  background-image: radial-gradient(color-mix(in srgb, var(--stroke) 9%, transparent) 1px, transparent 1.3px);
+  background-size: 14px 14px;
+  border: 1.5px solid color-mix(in srgb, var(--stroke) 16%, transparent);
+  border-radius: 22px;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--stroke) 6%, transparent),
+              0 18px 36px -24px color-mix(in srgb, var(--stroke) 45%, transparent);
 }
-.sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover, .sidebar .side-subitem:not(.active):hover { background: var(--paper-3); }
+.sidebar .side-nav::before {
+  content: ""; position: absolute; top: -2.75px; left: 24px; width: 40px; height: 4px; border-radius: 2px;
+  background: var(--accent);
+}
+.sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover,
+.sidebar .side-subitem:not(.active):hover { background: color-mix(in srgb, var(--stroke) 5%, transparent); }
+.sidebar .side-group-head.active, .sidebar .side-item.active, .sidebar .side-subitem.active {
+  position: relative;
+  background: var(--card);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--stroke) 10%, transparent),
+              0 6px 14px -8px color-mix(in srgb, var(--stroke) 35%, transparent);
+}
+.sidebar .side-group-head.active::before, .sidebar .side-item.active::before, .sidebar .side-subitem.active::before {
+  content: ""; position: absolute; left: 0; top: 7px; bottom: 7px; width: 3px; border-radius: 0 3px 3px 0;
+  background: var(--accent);
+}
+.sidebar .side-list { border-left-color: color-mix(in srgb, var(--stroke) 14%, transparent); }
 .side-group + .side-group { margin-top: 6px; }
 .side-group-head {
   display: flex; align-items: center;
@@ -1320,6 +1341,9 @@ mark {
   .sidebar.open { transform: none; box-shadow: 6px 0 0 var(--stroke); }
   .sidebar { background: var(--paper); padding: 18px 14px; border-right: 2px solid var(--stroke); }
   .sidebar .side-nav { min-height: 0; padding: 0; background: none; border: 0; border-radius: 0; box-shadow: none; }
+  .sidebar .side-nav::before { display: none; }
+  .sidebar .side-group-head.active, .sidebar .side-item.active, .sidebar .side-subitem.active { background: var(--accent-soft); box-shadow: none; }
+  .sidebar .side-group-head.active::before, .sidebar .side-item.active::before, .sidebar .side-subitem.active::before { display: none; }
   .sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover, .sidebar .side-subitem:not(.active):hover { background: var(--paper-2); }
   .side-drawer-head {
     display: flex; align-items: center; justify-content: space-between;
