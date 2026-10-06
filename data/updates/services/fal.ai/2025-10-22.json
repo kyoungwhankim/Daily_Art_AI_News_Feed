@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-10-22-1",
+    "service": "fal.ai",
+    "date": "2025.10.22",
+    "kind": "기능",
+    "title": "fal files rm 파일 삭제 명령",
+    "summary": "fal 스토리지의 파일·폴더를 지우는 fal files rm 명령이 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#october-22-2025",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2025-10-22-2",
+    "service": "fal.ai",
+    "date": "2025.10.22",
+    "kind": "모델",
+    "title": "Kling 2.5 Turbo Standard fal 제공",
+    "summary": "움직임 안정성과 프롬프트 충실도가 좋아지고 비용은 낮아진 Kling 2.5 Turbo Standard 이미지-영상 모델이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/kling-2-5-turbo-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

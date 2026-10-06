@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2024-06-12-1",
+    "service": "stable-diffusion",
+    "date": "2024.06.12",
+    "kind": "모델",
+    "title": "Stable Diffusion 3 Medium 오픈 웨이트 공개",
+    "summary": "소비자 PC에서도 돌아가는 2B 크기의 Stable Diffusion 3 Medium 가중치를 공개했어요. API에서도 sd3-medium으로 쓸 수 있어요.",
+    "details": [
+      "Community License로 가중치 공개",
+      "API·Stable Assistant·Stable Artisan에서 사용 가능"
+    ],
+    "url": "https://stability.ai/news-updates/stable-diffusion-3-medium",
+    "source": "notice"
+  }
+]

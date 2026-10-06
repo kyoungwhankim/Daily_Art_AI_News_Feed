@@ -1,0 +1,22 @@
+[
+  {
+    "id": "meshy-2026-07-07-1",
+    "service": "meshy",
+    "date": "2026.07.07",
+    "kind": "기능",
+    "title": "Auto Split 출시: 3D 프린팅용 자동 분할",
+    "summary": "3D 모델을 약 40초 만에 프린트 가능한 파츠로 나눠 주는 Auto Split을 출시했어요. 수밀 절단, 빌드 플레이트 자동 배치, 슬라이서 원클릭 내보내기를 지원해요.",
+    "url": "https://www.meshy.ai/blog/auto-split-3d-printing",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-07-07-2",
+    "service": "meshy",
+    "date": "2026.07.07",
+    "kind": "API",
+    "title": "Image to Image에 aspect_ratio 추가",
+    "summary": "Image to Image API에서 출력 이미지 비율을 고를 수 있게 됐어요. 모델별로 지원하는 비율이 달라요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "marble-2025-11-20-1",
+    "service": "marble",
+    "date": "2025.11.20",
+    "kind": "기능",
+    "title": "Marble Studio, 대형 월드 편집 지원",
+    "summary": "새 LoD 스플랫 렌더링 백엔드로 Marble Studio에서 훨씬 큰 월드를 편집·합성할 수 있게 됐어요. Worlds 섹션에 월드 ID도 표시돼요.",
+    "details": [
+      "크레딧 초과 청구 버그 수정 및 환불"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#november-20-2025",
+    "source": "dev"
+  }
+]

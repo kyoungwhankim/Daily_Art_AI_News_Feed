@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2025-12-05-1",
+    "service": "rokoko",
+    "date": "2025.12.05",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.5.1, 실시간 로코모션과 Drift Fix",
+    "summary": "새 로코모션 엔진이 실시간으로도 돌아가고, 녹화 시작·끝 위치를 맞춰 루트 드리프트를 보정하는 Auto Drift Fix 필터가 추가됐어요.",
+    "details": [
+      "새 Locomotion Engine 실시간 동작",
+      "Auto Drift Fix 필터",
+      "정지·앉기 자세의 idle drift 감소",
+      "후처리 속도 향상"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/41620795192977-Rokoko-Studio-2-5-1",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-22-1",
+    "service": "claude",
+    "date": "2026.07.22",
+    "kind": "API",
+    "title": "Managed Agents effort·웹훅·초기 이벤트 지원",
+    "summary": "Managed Agents 에이전트에 effort 수준을 정하고, 환경·메모리 스토어 웹훅과 세션 생성 시 초기 이벤트 지정, 스레드 이벤트 델타를 지원해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+    "source": "dev"
+  }
+]

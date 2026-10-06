@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-04-29-1",
+    "service": "fal.ai",
+    "date": "2026.04.29",
+    "kind": "기능",
+    "title": "Serverless 통합 분석 대시보드",
+    "summary": "Serverless 앱 페이지가 모든 앱의 용량·트래픽·앱별 활동을 한곳에 모은 통합 분석 대시보드로 열려요.",
+    "url": "https://fal.ai/docs/changelog#april-29-2026",
+    "source": "dev"
+  }
+]

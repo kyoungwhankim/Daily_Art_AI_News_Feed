@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-05-28-1",
+    "service": "figma-ai",
+    "date": "2026.05.28",
+    "kind": "기능",
+    "title": "Figma Make로 실제 코드베이스 시각 편집(베타)",
+    "summary": "Make에서 실제 제품 코드베이스를 시각적으로 편집해 프로덕션 코드로 프로토타이핑하거나 변경 사항을 배포할 수 있어요. 비공개 베타로 순차 제공돼요.",
+    "url": "https://www.figma.com/release-notes/?title=Visually%20edit%20your%20codebase%20with%20Make",
+    "source": "notice"
+  }
+]

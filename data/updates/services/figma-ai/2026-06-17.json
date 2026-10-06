@@ -1,0 +1,22 @@
+[
+  {
+    "id": "figma-ai-2026-06-17-1",
+    "service": "figma-ai",
+    "date": "2026.06.17",
+    "kind": "API",
+    "title": "Enterprise용 AI 크레딧 사용량 API",
+    "summary": "Enterprise 고객이 새 AI Usage API로 사용자별·일별 AI 크레딧 사용 데이터를 프로그램으로 가져올 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=ai-credit-usage-api-for-enterprise-customers",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-06-17-2",
+    "service": "figma-ai",
+    "date": "2026.06.17",
+    "kind": "정책",
+    "title": "Make·Sites 웹 게시 권한을 워크스페이스 단위로",
+    "summary": "조직 관리자가 Make와 Sites 파일의 웹 게시 권한을 워크스페이스 단위로 관리할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=workspace-level-web-publishing",
+    "source": "notice"
+  }
+]

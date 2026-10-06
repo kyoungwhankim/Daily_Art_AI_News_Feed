@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-07-31-1",
+    "service": "ludo.ai",
+    "date": "2026.07.31",
+    "kind": "기능",
+    "title": "3D 모델 애니메이션: 프리셋·프롬프트",
+    "summary": "리깅된 3D 모델에 수백 개 프리셋 동작(클립당 0.2크레딧)이나 실험적 텍스트 프롬프트로 애니메이션을 입힐 수 있어요.",
+    "url": "https://ludo.ai/whats-new#animate-your-3d-models-ready-made-presets-or-a-prompt",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-04-20-1",
+    "service": "synthesia",
+    "date": "2021.04.20",
+    "kind": "기능",
+    "title": "Synthesia 둥근 모서리와 줄·글자 간격",
+    "summary": "캔버스 요소에 둥근 모서리, 줄 간격, 글자 간격 설정을 추가했어요.",
+    "url": "https://www.synthesia.io/updates/rounded-corners-and-line-character-spacing",
+    "source": "notice"
+  }
+]

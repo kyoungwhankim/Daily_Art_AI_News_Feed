@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mai-image-2026-03-19-1",
+    "service": "mai-image",
+    "date": "2026.03.19",
+    "kind": "모델",
+    "title": "MAI-Image-2 발표: Arena 상위 3개 연구소 진입",
+    "summary": "사진가·디자이너와 함께 만든 MAI-Image-2가 발표됐어요. 자연스러운 빛과 피부 톤, 안정적인 이미지 속 글자 생성으로 인포그래픽·포스터 제작에 유용해요.",
+    "details": [
+      "사실적 표현(조명, 피부 톤, 환경) 강화",
+      "포스터·인포그래픽·슬라이드용 글자 렌더링 개선",
+      "MAI Playground에서 바로 사용, Copilot·Bing Image Creator에 순차 적용",
+      "WPP 등 일부 고객에 API 제공, Microsoft Foundry 개방 예정"
+    ],
+    "url": "https://microsoft.ai/news/introducing-mai-image-2/",
+    "source": "notice"
+  }
+]

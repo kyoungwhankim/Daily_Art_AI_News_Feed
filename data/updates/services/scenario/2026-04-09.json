@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-04-09-1",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "API",
+    "title": "ElevenLabs 오디오·Magnific 영상·프로젝트 BYOK",
+    "summary": "ElevenLabs 오디오와 Magnific 영상 업스케일이 API에 추가되고 프로젝트별 BYOK 설정이 가능해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-115-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-04-09-2",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "API",
+    "title": "Seedance 2.0·Veo 3.1 Lite·Magnific 업스케일",
+    "summary": "Seedance 2.0 영상, 저렴한 Veo 3.1 Lite, Magnific 4K 업스케일이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-09-3",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "ElevenLabs 음성 복제·엔터프라이즈 승인",
+    "summary": "ElevenLabs로 커스텀 음성 모델을 학습할 수 있고 엔터프라이즈 승인 절차가 간소화됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-9-0",
+    "source": "notice"
+  }
+]

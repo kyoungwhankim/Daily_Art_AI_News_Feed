@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-02-14-1",
+    "service": "kling",
+    "date": "2025.02.14",
+    "kind": "API",
+    "title": "이미지 생성 API의 model 필드를 model_name으로 변경",
+    "summary": "Kling 이미지 생성 API에서 모델 지정 필드가 model_name으로 바뀌었어요. 기존 model 필드도 계속 동작해 호환성은 유지돼요.",
+    "url": "https://kling.ai/document-api/updates/api#02%2F14%2F2025",
+    "source": "dev"
+  }
+]

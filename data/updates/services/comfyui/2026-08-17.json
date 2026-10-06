@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-17-1",
+    "service": "comfyui",
+    "date": "2026.08.17",
+    "kind": "연동",
+    "title": "ComfyUI v0.33.2: Fish Audio와 Seedance 2.5 1080p",
+    "summary": "ComfyUI v0.33.2에서 Fish Audio TTS·STT·음성 복제 노드가 추가되고, Seedance 2.5가 1080p와 영상 이어 만들기를 지원해요.",
+    "url": "https://docs.comfy.org/changelog#v0-33-2",
+    "source": "notice"
+  }
+]

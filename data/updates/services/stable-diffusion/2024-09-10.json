@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-09-10-1",
+    "service": "stable-diffusion",
+    "date": "2024.09.10",
+    "kind": "API",
+    "title": "Fast Upscaler API 출시",
+    "summary": "약 1초 만에 이미지를 4배(최대 4MP) 키우는 저렴하고 빠른 Fast Upscaler API를 출시했어요. 압축된 이미지 개선에 좋아요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

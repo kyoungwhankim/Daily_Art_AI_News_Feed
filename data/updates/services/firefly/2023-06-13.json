@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-06-13-1",
+    "service": "firefly",
+    "date": "2023.06.13",
+    "kind": "연동",
+    "title": "Illustrator에 Generative Recolor(베타)",
+    "summary": "Firefly로 동작하는 Generative Recolor(베타)가 Illustrator에 들어와 \"네온 조명\" 같은 프롬프트만으로 벡터 작품 색을 바꿀 수 있어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/06/13/future-of-illustrator-is-here-hue-will-never-be-same",
+    "source": "notice"
+  }
+]

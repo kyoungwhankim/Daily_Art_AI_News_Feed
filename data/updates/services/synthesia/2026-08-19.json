@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-08-19-1",
+    "service": "synthesia",
+    "date": "2026.08.19",
+    "kind": "기능",
+    "title": "Synthesia Create with AI에 길이·비율·레퍼런스 설정",
+    "summary": "B롤 영상·이미지를 생성할 때 길이, 화면비, 시각 레퍼런스를 직접 지정할 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/more-control-in-create-with-ai",
+    "source": "notice"
+  }
+]

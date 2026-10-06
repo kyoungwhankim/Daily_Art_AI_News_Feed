@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-06-25-1",
+    "service": "mureka",
+    "date": "2026.06.25",
+    "kind": "API",
+    "title": "스템 API 보컬·반주 분리와 리릭 비디오 화면비",
+    "summary": "스템 API가 보컬+반주 분리 모델을 지원하고, 리릭 비디오 API는 여러 화면비와 레이아웃을, 가사→곡 API는 성별 파라미터를 지원해요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

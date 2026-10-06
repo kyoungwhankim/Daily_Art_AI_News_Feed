@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2023-02-22-1",
+    "service": "invokeai",
+    "date": "2023.02.22",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.1: 모델 관리 기능 강화",
+    "summary": "InvokeAI 2.3.1에서 로컬 모델 가져오기, 폴더 전체 스캔, URL로 인터넷에서 바로 모델 가져오기 등 모델 관리가 한층 편해졌어요.",
+    "details": [
+      "WebUI와 콘솔용 Model Installer 앱에서 모델 추가·삭제·수정",
+      "시작할 때마다 지정 폴더를 스캔해 새 모델 등록"
+    ],
+    "url": "https://invoke.ai/releases/version/v-2-3-1-post2/",
+    "source": "notice"
+  }
+]

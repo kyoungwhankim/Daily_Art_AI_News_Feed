@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2026-08-26-1",
+    "service": "recraft",
+    "date": "2026.08.26",
+    "kind": "기능",
+    "title": "레퍼런스 스타일을 유지하는 Recraft V4 Styles",
+    "summary": "레퍼런스 하나로 스타일을 정하면 이후 생성 이미지가 계속 같은 스타일을 유지하는 V4 Styles를 공개했어요. 블라인드 비교에서 7개 모델 대비 92% 선호를 받았다고 해요.",
+    "url": "https://www.recraft.ai/blog/meet-recraft-v4-styles",
+    "source": "notice"
+  }
+]

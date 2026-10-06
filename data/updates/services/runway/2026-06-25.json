@@ -1,0 +1,25 @@
+[
+  {
+    "id": "runway-2026-06-25-1",
+    "service": "runway",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "Runway Agent 2.0 공개: 마케팅 캠페인까지 자동화",
+    "summary": "Agent 2.0은 캠페인 전체를 만들고 데이터를 분석해 소재를 개선하며 플랫폼·포맷·시장별로 마케팅을 확장해요.",
+    "url": "https://runway.com/news/introducing-agent-2",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-06-25-2",
+    "service": "runway",
+    "date": "2026.06.25",
+    "kind": "API",
+    "title": "Ad Localization Recipe API 출시",
+    "summary": "기존 광고 이미지를 레이아웃과 비주얼은 유지한 채 다른 언어로 현지화하는 Ad Localization Recipe가 Runway Dev에 나왔어요.",
+    "details": [
+      "현지화 이미지당 21크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#ad-localization-recipe",
+    "source": "dev"
+  }
+]

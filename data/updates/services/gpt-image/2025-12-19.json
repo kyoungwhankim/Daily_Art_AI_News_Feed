@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gpt-image-2025-12-19-1",
+    "service": "gpt-image",
+    "date": "2025.12.19",
+    "kind": "API",
+    "title": "Responses API 이미지 생성 도구에 gpt-image-1.5 추가",
+    "summary": "Responses API의 이미지 생성 도구에서 gpt-image-1.5와 chatgpt-image-latest를 사용할 수 있게 됐어요. 대화형 앱 안에서 최신 이미지 모델을 바로 호출할 수 있어요.",
+    "url": "https://developers.openai.com/api/docs/changelog",
+    "source": "dev"
+  }
+]

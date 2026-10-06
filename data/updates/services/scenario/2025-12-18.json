@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-12-18-1",
+    "service": "scenario",
+    "date": "2025.12.18",
+    "kind": "모델",
+    "title": "대형 업데이트: Magnific·GPT 1.5·SAM·Trellis 2",
+    "summary": "GPT 1.5, Flux 2, Veo 3.1 Extend, Wan 2.6, SAM3D, Trellis 2 등 십여 개 모델과 Magnific 업스케일이 한꺼번에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-109-scenario-mega-release-magnific-sam-wan-photoroom-trellis-2-governance-shortcuts-filters",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-18-2",
+    "service": "scenario",
+    "date": "2025.12.18",
+    "kind": "API",
+    "title": "작업별 비용 상세·모델 짧은 설명",
+    "summary": "Jobs API에서 작업 비용을 확인할 수 있고, 모델에 짧은 설명이 추가돼 사람과 LLM이 찾기 쉬워졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-102-0",
+    "source": "dev"
+  }
+]

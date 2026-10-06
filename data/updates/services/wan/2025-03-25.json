@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-03-25-1",
+    "service": "wan",
+    "date": "2025.03.25",
+    "kind": "모델",
+    "title": "Wan2.1 이미지 편집 모델 출시(중국 리전)",
+    "summary": "Model Studio 베이징 리전에 프롬프트로 이미지를 편집하는 wanx2.1-imageedit 모델이 추가됐어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

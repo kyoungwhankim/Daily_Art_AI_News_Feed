@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-04-1",
+    "service": "claude",
+    "date": "2026.05.04",
+    "kind": "API",
+    "title": "Workload Identity Federation 출시",
+    "summary": "장기 API 키 대신 자체 IdP의 단기 OIDC 토큰으로 Claude API에 인증할 수 있어요. SDK가 토큰 교환을 자동 처리해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-4-2026",
+    "source": "dev"
+  }
+]

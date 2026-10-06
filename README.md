@@ -24,6 +24,12 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 | `scripts/tag_keywords.py`, `scripts/keyword_rules.json` | 지난 기사에 키워드를 일괄로 붙이는 관리 도구 / 키워드별 검색 규칙 |
 | `scripts/fetch_article.py`, `scripts/push_to_main.py` | 루틴용 기사 가져오기 / main push |
 | `routine/daily_feed_prompt.txt` | 루틴 프롬프트 전문 |
+| `routine/updates_agent_prompt.txt` | 루틴이 따로 띄우는 업데이트 수집 에이전트의 프롬프트 (아래 '서비스 업데이트') |
+| `data/updates/services/<서비스>/YYYY-MM-DD.json` | 서비스가 그날 발표한 공식 업데이트 배열 (서비스별·발표 날짜별 원본) |
+| `data/updates/feed/<분야>.json`, `data/updates/index.json` | 사이트가 읽는 분야별 업데이트 목록과 색인 — `service_updates.py`가 자동 생성 |
+| `scripts/service_updates.py` | 업데이트 데이터 저장·합치기·검사 (`save`, `merge`, `state`, `rebuild`, `validate`) |
+| `scripts/read_source.py` | 업데이트 출처(RSS·변경 기록 페이지) 하나를 읽어 텍스트로 보여 줌 |
+| `scripts/check_update_sources.py` | `config.js`의 업데이트 출처 주소가 열리는지 확인 |
 | `scripts/build_site.py`, `static.css` | 배포용 정적 사이트 생성 (기사별 페이지, 목록, 사이트맵, RSS) — GitHub Actions가 실행 |
 | `.github/workflows/deploy.yml` | main push 시 사이트를 만들어 Cloudflare Pages에 배포 (예전 GitHub Pages 주소는 안내 페이지) |
 
@@ -36,6 +42,7 @@ Daily updates are produced by a Claude Code Routine that runs in the cloud each 
 
 main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_data.py` → `build_site.py` → Cloudflare Pages 배포. 만든 파일(`_site/`)은 레포에 커밋하지 않는다. PR에서는 빌드만 확인한다.
 
+- `claude/**` 브랜치에 push하면 같은 빌드를 **미리보기 주소 https://preview.ai-art-news.pages.dev** 에만 배포한다 (모든 페이지 noindex, robots.txt 전체 차단, 실제 사이트·예전 주소는 건드리지 않음).
 - 필요한 레포 Secrets: `CLOUDFLARE_API_TOKEN`(권한: Account / Cloudflare Pages / Edit), `CLOUDFLARE_ACCOUNT_ID`
 - 예전 주소(`kyoungwhankim.github.io/Daily_Art_AI_News_Feed/`)는 GitHub Pages(Source: GitHub Actions)에 안내 페이지만 배포한다 — 어떤 경로로 들어와도 같은 경로의 새 주소로 넘겨 준다 (`build_site.py --redirect-site`).
 - 배포 사이트에서 만들어지는 것:
@@ -117,9 +124,30 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
   - 환경을 공유하면 PAT도 공유되는 문제가 발생. 환경은 개인만 사용하고 절대 공유 금지.
   - 이 작업을 위한 별도 토큰 생성. 토큰 분리.
 
+## 서비스 업데이트 (사이드바 '업데이트')
+
+아트 관련 AI 서비스의 **공식** 업데이트(공지·변경 기록·개발자 변경 기록)를 분야 › 서비스별로 모은다.
+
+- **수집 대상**: `config.js`의 `updateSources` — 서비스마다 `notice`(공지 출처), `dev`(개발자 변경 기록), `match`(회사의 여러 제품이 섞인 출처에서 이 제품 글로 볼 단어).
+  모으는 분야는 `routine/updates_agent_prompt.txt` 맨 위의 `CATEGORIES` (지금은 `이미지`). 분야를 늘리려면 거기에 분야 이름을 더한다.
+- **수집 방식**: 뉴스 루틴이 PHASE 0에서 업데이트 에이전트를 백그라운드로 띄운다. 에이전트는 서비스마다
+  - 저장된 항목이 없으면 **BACKFILL** — 서비스 시작부터 오늘까지 전체 기록
+  - 있으면 **INCREMENTAL** — 마지막 날짜 이후 새 항목
+
+  을 한국어로 정리해 `/tmp/updates/entries.json`에 저장한다(`service_updates.py save`가 항목마다 검사). 뉴스 PHASE 2가 `service_updates.py merge`로 `data/updates/`에 합치고 뉴스와 함께 push한다.
+- **파일**: 원본은 `data/updates/services/<서비스>/<발표 날짜>.json`. 같은 서비스·같은 날짜·같은 url은 한 항목(중복 기준)이다. `feed/`·`index.json`은 생성 파일이라 직접 고치지 않는다 — 원본을 고쳤다면 `python3 scripts/service_updates.py rebuild`.
+- **항목 형식**: `service`, `date`(발표 날짜 `YYYY.MM.DD`), `kind`(모델·기능·API·앱·연동·요금·정책·종료), `title`, `summary`, `details`(선택), `url`, `source`(`notice`/`dev`) — 자세한 규칙은 `scripts/service_updates.py` 맨 위 설명.
+- **화면**: 수집된 분야는 실제 항목을, 아직 수집하지 않는 분야는 '예시' 항목을 보여 준다.
+- **출처 점검**: `python3 scripts/check_update_sources.py` — GitHub Actions(`check-update-sources.yml`)가 매주 월요일에 돌려서, 열리지 않는 출처가 생기면 실패로 알려 준다.
+
 ## 루틴 구조
 
-단일 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다.
+하나의 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다. 서비스 업데이트만 별도 에이전트가 맡는다.
+
+### PHASE 0 — 업데이트 에이전트 시작
+
+레포를 준비하고, Agent(Task) 도구로 업데이트 수집 에이전트(`routine/updates_agent_prompt.txt`)를 **백그라운드로** 띄운 뒤 바로 PHASE 1로 넘어간다.
+PHASE 1이 끝나면 에이전트가 끝났는지(`/tmp/updates/DONE`) 확인하고, 끝날 때까지 기다린 다음 PHASE 2를 시작한다.
 
 ### 실행 규칙 (EXECUTION RULES)
 
@@ -147,10 +175,11 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 4. **STEP 3** — 기사마다 `scripts/fetch_article.py`를 정확히 한 번 실행 (실패 시 WebFetch 1회)
 5. **STEP 4** — 필드 매핑 후 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체, 목록 안에서 keywords 선택·필요 시 키워드 추가 등)
 6. **UPDATE THE FEED DATA** — `scripts/update_articles.py`로 URL 중복 제거 후 오늘 날짜 파일에 추가, `scripts/validate_data.py`로 검사
-7. **COMMIT AND PUSH** — `scripts/push_to_main.py`로 `main`에 직접 push (새 브랜치·PR 금지)
-8. **FINISH** — `PUBLISH_PHASE` 표시 파일 삭제
+7. **MERGE SERVICE UPDATES** — 업데이트 에이전트 결과를 `scripts/service_updates.py merge`로 `data/updates/`에 합치고 다시 검사 (뉴스가 없는 날도 실행)
+8. **COMMIT AND PUSH** — `scripts/push_to_main.py`로 `main`에 직접 push (새 브랜치·PR 금지)
+9. **FINISH** — `PUBLISH_PHASE` 표시 파일 삭제
 
-PHASE 2에서는 하위 에이전트(Task tool)를 쓰지 않는다. 기사마다 fetch 결과가 같은 세션에 보여야 하는 PRE-FLIGHT CHECK 때문이다.
+PHASE 2에서는 하위 에이전트(Task tool)를 쓰지 않는다 (업데이트 에이전트는 PHASE 0에서만 띄우고 PHASE 2 전에 끝나 있다). 기사마다 fetch 결과가 같은 세션에 보여야 하는 PRE-FLIGHT CHECK 때문이다.
 
 ### 컨텍스트 압축 규칙
 

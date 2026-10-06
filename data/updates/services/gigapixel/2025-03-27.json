@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-03-27-1",
+    "service": "gigapixel",
+    "date": "2025.03.27",
+    "kind": "앱",
+    "title": "Gigapixel v8.3.3: 주요 충돌 수정",
+    "summary": "일부 ICC 프로파일로 인한 충돌과 그레이스케일 색공간 처리 문제를 고친 패치예요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-3-3/89206",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2024-11-04-1",
+    "service": "synthesia",
+    "date": "2024.11.04",
+    "kind": "기능",
+    "title": "Synthesia 회사명으로 브랜드 키트 자동 생성",
+    "summary": "회사 이름만 입력하면 브랜드 색상, 글꼴, 로고를 자동으로 가져와 브랜드 키트를 만들어 줘요.",
+    "url": "https://www.synthesia.io/updates/create-your-company-brand-kit-in-one-click",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2025-09-23-1",
+    "service": "qwen-image",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "qwen-image-plus 출시",
+    "summary": "Model Studio에 qwen-image-plus 모델이 추가됐어요. 복잡한 텍스트 렌더링과 정밀한 이미지 편집에 강한 Qwen 이미지 생성 모델이에요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

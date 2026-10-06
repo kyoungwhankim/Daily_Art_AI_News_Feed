@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-23-1",
+    "service": "elevenlabs",
+    "date": "2026.03.23",
+    "kind": "API",
+    "title": "Music Marketplace 문서와 에이전트 환경 변수",
+    "summary": "AI 생성 음악 라이선스 마켓플레이스 Music Marketplace 문서와 워크스페이스 환경 변수 API가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/23",
+    "source": "dev"
+  }
+]

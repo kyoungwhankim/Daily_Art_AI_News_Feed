@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-11-07-1",
+    "service": "hugging-face",
+    "date": "2025.11.07",
+    "kind": "연동",
+    "title": "Okta Integration Network에 공식 앱 등록",
+    "summary": "Hugging Face 공식 앱이 Okta Integration Network에 올라 SSO 설정이 쉬워졌어요. 현재 SAML을 지원하고 OIDC·SCIM·JIT 프로비저닝은 예정이에요.",
+    "url": "https://huggingface.co/changelog/hugging-face-app-on-okta-integration-network",
+    "source": "notice"
+  }
+]

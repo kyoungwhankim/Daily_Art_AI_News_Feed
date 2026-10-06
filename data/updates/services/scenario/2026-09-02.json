@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-02-1",
+    "service": "scenario",
+    "date": "2026.09.02",
+    "kind": "연동",
+    "title": "에이전트 스킬: 영상 자막 Caption Studio",
+    "summary": "에이전트가 영상 자막을 만드는 scenario-caption-studio 스킬이 추가되고 스킬 탐색이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-40-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-02-2",
+    "service": "scenario",
+    "date": "2026.09.02",
+    "kind": "연동",
+    "title": "모델 학습 스킬, 비용 확인·승인 필수",
+    "summary": "scenario-model-training 스킬이 파인튜닝 전에 비용 견적을 받고 사용자 승인을 기다리도록 바뀌었어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-40-1",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2026-08-06-1",
+    "service": "qwen-image",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "Qwen-Image-3.0-Pro 글로벌 배포 범위 제공",
+    "summary": "Qwen-Image-3.0-Pro를 Model Studio의 글로벌(Global) 서비스 범위에서도 쓸 수 있게 됐어요. 중국(베이징)과 독일(프랑크푸르트) 리전 목록에 추가됐어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

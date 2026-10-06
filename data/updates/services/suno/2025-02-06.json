@@ -1,0 +1,16 @@
+[
+  {
+    "id": "suno-2025-02-06-1",
+    "service": "suno",
+    "date": "2025.02.06",
+    "kind": "기능",
+    "title": "Suno 댓글 기능과 iOS Extend",
+    "summary": "웹과 iOS에서 곡에 댓글을 달고 관리할 수 있고, iOS 앱에서 곡 확장(Extend)을 쓸 수 있어요.",
+    "details": [
+      "곡 댓글·답글, 댓글 끄기·삭제",
+      "iOS Extend"
+    ],
+    "url": "https://suno.com/release-notes/comments-are-here",
+    "source": "notice"
+  }
+]

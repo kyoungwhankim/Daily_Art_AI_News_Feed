@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-12-04-1",
+    "service": "runway",
+    "date": "2024.12.04",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo 고정 카메라 옵션",
+    "summary": "Gen-3 Alpha Turbo의 Camera Control에 static 체크박스가 생겨 카메라 움직임을 줄일 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

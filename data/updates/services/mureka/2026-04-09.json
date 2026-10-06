@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mureka-2026-04-09-1",
+    "service": "mureka",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "Mureka 댓글 좋아요와 추천 크리에이터",
+    "summary": "댓글에 좋아요를 누르고 알림을 받을 수 있고, 홈에서 추천 크리에이터를 볼 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-04-09-2",
+    "service": "mureka",
+    "date": "2026.04.09",
+    "kind": "모델",
+    "title": "mureka-9 강화 버전 API",
+    "summary": "Mureka API에 mureka-9 모델의 강화 버전이 공개됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

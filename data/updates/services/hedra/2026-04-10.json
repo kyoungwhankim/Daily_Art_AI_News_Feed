@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-04-10-1",
+    "service": "hedra",
+    "date": "2026.04.10",
+    "kind": "기능",
+    "title": "Hedra 에이전트에 Skills 기능 추가",
+    "summary": "반복하는 작업 지시를 저장해 두고 / 명령으로 불러 쓰는 Skills를 출시했어요. 코딩 없이 크리에이티브 브리프처럼 작성하면 돼요.",
+    "url": "https://www.hedra.com/blog/skills-in-hedra",
+    "source": "notice"
+  }
+]

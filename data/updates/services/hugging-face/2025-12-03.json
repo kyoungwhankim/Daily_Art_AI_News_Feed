@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-12-03-1",
+    "service": "hugging-face",
+    "date": "2025.12.03",
+    "kind": "기능",
+    "title": "데이터셋 복제(Duplicate) 기능 추가",
+    "summary": "Hub에서 어떤 데이터셋이든 바로 복제할 수 있게 됐어요. Xet 중복 제거 덕분에 거의 즉시 복사본이 만들어져요.",
+    "url": "https://huggingface.co/changelog/duplicate-datasets",
+    "source": "notice"
+  }
+]

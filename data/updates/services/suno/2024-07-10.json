@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-07-10-1",
+    "service": "suno",
+    "date": "2024.07.10",
+    "kind": "기능",
+    "title": "Suno 사용자 검색과 라이브러리 페이지 이동",
+    "summary": "사용자를 검색할 수 있고, 곡이 많은 라이브러리에서 페이지 번호로 바로 이동할 수 있어요.",
+    "url": "https://suno.com/release-notes/user-search-and-jump-to-library-pages",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2026-07-21-1",
+    "service": "invokeai",
+    "date": "2026.07.21",
+    "kind": "앱",
+    "title": "InvokeAI 6.13.7: API 키 유출 가능 보안 패치",
+    "summary": "6.13.6까지의 버전에 설정 파일의 API 키·토큰이 유출될 수 있는 보안 구멍이 있어 6.13.7에서 막았어요. 네트워크에 노출했다면 업그레이드 후 키를 교체하라고 권고했어요.",
+    "url": "https://invoke.ai/releases/version/v6-13-7/",
+    "source": "notice"
+  }
+]

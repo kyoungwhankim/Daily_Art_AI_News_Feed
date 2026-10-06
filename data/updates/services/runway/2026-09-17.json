@@ -1,0 +1,26 @@
+[
+  {
+    "id": "runway-2026-09-17-1",
+    "service": "runway",
+    "date": "2026.09.17",
+    "kind": "기능",
+    "title": "Enhance Frame Rate 출시: 어떤 영상이든 프레임레이트 변환",
+    "summary": "Runway에서 만들지 않은 영상까지 25·30·48·60·120fps 등으로 변환하는 Enhance Frame Rate를 내놨어요. 최대 4K, 5분 길이까지 지원해요.",
+    "details": [
+      "Enhance 메뉴, Tool Mode, Workflows, Agent에서 사용(Max 이상 플랜)",
+      "API: video upscale 엔드포인트에 model \"enhance_frame_rate\", 2초당 1크레딧, 최대 300초"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-enhance-frame-rate",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-09-17-2",
+    "service": "runway",
+    "date": "2026.09.17",
+    "kind": "연동",
+    "title": "Grok Bot용 Runway 플러그인 출시",
+    "summary": "Runway가 Grok Bot의 플러그인으로 제공돼요. Runway 계정으로 로그인하면 Grok Bot 대화 안에서 이미지와 영상을 바로 생성할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

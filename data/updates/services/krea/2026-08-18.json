@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-08-18-1",
+    "service": "krea",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "Krea 2 오픈소스 사용량 HTTP 보고 API",
+    "summary": "Krea 2 오픈 웨이트를 쓰는 엔터프라이즈 고객이 POST /oss/usage로 사용량을 직접 보고할 수 있게 됐어요. 보고한 사용량은 월 청구서에 반영돼요.",
+    "url": "https://www.krea.ai/docs/changelog#august-18-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-05-20-1",
+    "service": "synthesia",
+    "date": "2026.05.20",
+    "kind": "기능",
+    "title": "Synthesia 사진 한 장으로 개인 아바타 요청",
+    "summary": "누구든 계정 없이 사진 한 장을 제출해 개인 아바타를 만들도록 초대할 수 있어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/request-a-personal-avatar-from-photo",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "runway-2026-07-10-1",
+    "service": "runway",
+    "date": "2026.07.10",
+    "kind": "기능",
+    "title": "모바일 Tool Mode에 Nano Banana 2 Lite 추가",
+    "summary": "모바일 Tool Mode에서도 Nano Banana 2 Lite로 레퍼런스 최대 14장을 활용해 빠르게 이미지를 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-07-10-2",
+    "service": "runway",
+    "date": "2026.07.10",
+    "kind": "API",
+    "title": "Veo 네거티브 프롬프트와 Seedream 5.0 Lite API 지원",
+    "summary": "Veo 3·3.1 요청에 negativePrompt를 넣을 수 있게 됐고, Seedream 5.0 Lite가 Runway Dev API에 추가됐어요.",
+    "details": [
+      "negativePrompt 최대 1,000자, 생략 시 Runway 기본값",
+      "Seedream 5.0 Lite: 레퍼런스 14장, 2K·3K, 이미지당 4크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#veo-negative-prompt",
+    "source": "dev"
+  }
+]

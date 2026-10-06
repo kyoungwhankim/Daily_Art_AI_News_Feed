@@ -1,0 +1,26 @@
+[
+  {
+    "id": "runway-2026-07-01-1",
+    "service": "runway",
+    "date": "2026.07.01",
+    "kind": "기능",
+    "title": "Runway에 Nano Banana 2 Lite 추가",
+    "summary": "빠르면서도 품질을 지킨 이미지 모델 Nano Banana 2 Lite를 Runway에서 쓸 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-07-01-2",
+    "service": "runway",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "Runway Dev에 Gemini Omni Flash 추가",
+    "summary": "Gemini Omni Flash로 텍스트·첫 프레임·기존 영상에서 720p 영상을 만들고 편집할 수 있어요. 생성 오디오도 선택할 수 있어요.",
+    "details": [
+      "3–10초 텍스트/이미지 투 비디오, 초당 10크레딧",
+      "비디오 투 비디오 편집: 레퍼런스 이미지 최대 5장"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#gemini-omni-flash-on-runway-dev",
+    "source": "dev"
+  }
+]

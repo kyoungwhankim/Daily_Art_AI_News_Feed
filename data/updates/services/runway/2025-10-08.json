@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-10-08-1",
+    "service": "runway",
+    "date": "2025.10.08",
+    "kind": "API",
+    "title": "API 생성 길이 자유 선택과 효과음 생성",
+    "summary": "Gen-4 Turbo로 2–10초 사이 원하는 길이를 골라 만든 만큼만 비용을 낼 수 있어요. ElevenLabs 효과음 생성도 추가됐어요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#flexible-generation-length",
+    "source": "dev"
+  }
+]

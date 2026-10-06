@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-11-07-1",
+    "service": "topaz-video",
+    "date": "2023.11.07",
+    "kind": "앱",
+    "title": "Topaz Video AI v4.0.3: 프레임 보간 정확도 향상",
+    "summary": "프레임 보간의 정확도와 일관성을 높이고 Nyx가 2배로 업스케일되던 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v4-0-3/55787",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-29-1",
+    "service": "comfyui",
+    "date": "2025.05.29",
+    "kind": "연동",
+    "title": "ComfyUI, FLUX.1 Kontext API 노드 출시 당일 지원",
+    "summary": "텍스트와 이미지로 편집·생성하는 FLUX.1 Kontext를 ComfyUI 공식 API 노드로 출시 당일 지원해요. 오픈소스 버전도 곧 나온다고 했어요.",
+    "url": "https://blog.comfy.org/p/flux1-kontext-api-node-in-day-1-workflow",
+    "source": "notice"
+  }
+]

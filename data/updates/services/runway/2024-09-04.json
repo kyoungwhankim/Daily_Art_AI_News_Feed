@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-04-1",
+    "service": "runway",
+    "date": "2024.09.04",
+    "kind": "기능",
+    "title": "Gen-3 Alpha 영상 연장 최대 40초",
+    "summary": "Gen-3 Alpha 영상을 5초 또는 10초씩 늘려 최대 40초까지 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-03-17-1",
+    "service": "invokeai",
+    "date": "2025.03.17",
+    "kind": "기능",
+    "title": "Invoke 5.8.0: 새 Workflow Library와 FLUX Redux",
+    "summary": "Invoke 5.8.0에서 워크플로 라이브러리가 태그·검색·썸네일을 갖춘 그리드로 바뀌고, 참조 이미지로 스타일·구도를 이끄는 FLUX Redux를 지원해요.",
+    "url": "https://invoke.ai/releases/version/v5-8-0/",
+    "source": "notice"
+  }
+]

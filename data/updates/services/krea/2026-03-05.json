@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-03-05-1",
+    "service": "krea",
+    "date": "2026.03.05",
+    "kind": "기능",
+    "title": "이미지에서 프롬프트를 만들어 주는 Image to Prompt",
+    "summary": "이미지 도구에 이미지를 끌어 놓으면 매체·스타일·조명·구도까지 담은 30~100단어 프롬프트를 자동으로 써 줘요. 레퍼런스를 바로 생성에 활용하기 쉬워졌어요.",
+    "url": "https://www.krea.ai/blog/image-to-prompt",
+    "source": "notice"
+  }
+]

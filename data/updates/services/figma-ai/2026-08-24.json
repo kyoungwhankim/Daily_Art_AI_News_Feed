@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-08-24-1",
+    "service": "figma-ai",
+    "date": "2026.08.24",
+    "kind": "정책",
+    "title": "MCP 엔터프라이즈 관리형 인증 정식 출시",
+    "summary": "Enterprise·Organization 관리자가 Okta 같은 IdP로 Figma MCP 서버와 Claude 등 AI 에이전트의 연결을 중앙에서 관리할 수 있게 됐어요. 사용자는 개별 인증을 반복하지 않아도 돼요.",
+    "url": "https://www.figma.com/release-notes/?title=enterprise-managed-authorization-mcp",
+    "source": "notice"
+  }
+]

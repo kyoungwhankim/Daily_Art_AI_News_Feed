@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-08-17-1",
+    "service": "flux",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "FLUX 3 영상 이어 만들기 최대 15초로 제한",
+    "summary": "영상 이어 만들기(v2v) 요청의 최대 길이가 15초로 바뀌었어요. 텍스트·이미지 기반 생성과 draft enhance는 그대로 최대 20초예요.",
+    "url": "https://docs.bfl.ai/release-notes#august-17-2026",
+    "source": "dev"
+  }
+]

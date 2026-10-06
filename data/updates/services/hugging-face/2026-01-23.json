@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-01-23-1",
+    "service": "hugging-face",
+    "date": "2026.01.23",
+    "kind": "기능",
+    "title": "데이터셋 전체 크기순 정렬 추가",
+    "summary": "데이터셋 검색과 프로필 페이지에서 '가장 큰/작은 전체 크기' 순으로 정렬할 수 있게 됐어요.",
+    "url": "https://huggingface.co/changelog/sort-datasets-by-total-size",
+    "source": "notice"
+  }
+]

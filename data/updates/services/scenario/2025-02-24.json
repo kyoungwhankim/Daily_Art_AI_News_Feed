@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-02-24-1",
+    "service": "scenario",
+    "date": "2025.02.24",
+    "kind": "기능",
+    "title": "AI Boost와 이미지 검색 결합",
+    "summary": "AI Boost와 이미지 검색을 함께 써 더 정확한 결과를 얻고, 필터도 늘었어요. 모델 페이지에 작성자 이름이 표시돼요.",
+    "url": "https://www.scenario.com/changelog/v1-79-smarter-search-and-enhanced-user-experience",
+    "source": "notice"
+  }
+]

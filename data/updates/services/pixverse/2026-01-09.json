@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-01-09-1",
+    "service": "pixverse",
+    "date": "2026.01.09",
+    "kind": "API",
+    "title": "PixVerse API Webhook 기능 출시",
+    "summary": "PixVerse API에 Webhook 기능을 추가해 생성 작업이 끝나면 알림을 받을 수 있게 했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

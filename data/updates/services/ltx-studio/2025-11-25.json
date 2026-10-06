@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ltx-studio-2025-11-25-1",
+    "service": "ltx-studio",
+    "date": "2025.11.25",
+    "kind": "모델",
+    "title": "LTX Studio에 FLUX.2 추가",
+    "summary": "Black Forest Labs의 FLUX.2를 LTX Gen Space에서 쓸 수 있어요. 4MP 사실감과 정확한 조명, 공간 논리를 갖춘 이미지를 만들어요.",
+    "url": "https://ltx.io/blog/flux-2-in-ltx",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2025-11-25-2",
+    "service": "ltx-studio",
+    "date": "2025.11.25",
+    "kind": "API",
+    "title": "LTX API에 Retake 영상 편집 엔드포인트 추가",
+    "summary": "기존 영상의 특정 구간을 텍스트 프롬프트로 고쳐 다시 생성하는 retake 엔드포인트가 LTX API에 추가됐어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

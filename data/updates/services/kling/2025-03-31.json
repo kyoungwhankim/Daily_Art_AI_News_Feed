@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-03-31-1",
+    "service": "kling",
+    "date": "2025.03.31",
+    "kind": "API",
+    "title": "API V1.6 끝 프레임 생성, V1.5·V1.6 영상 연장",
+    "summary": "Kling API V1.6 PRO에서 끝 프레임만으로 앞부분 영상을 만들 수 있고, V1.5·V1.6 영상을 4~5초 연장할 수 있게 됐어요.",
+    "url": "https://kling.ai/document-api/updates/api#03%2F31%2F2025",
+    "source": "dev"
+  }
+]

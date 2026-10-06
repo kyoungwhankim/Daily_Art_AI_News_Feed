@@ -1,0 +1,17 @@
+[
+  {
+    "id": "higgsfield-2026-09-16-1",
+    "service": "higgsfield",
+    "date": "2026.09.16",
+    "kind": "API",
+    "title": "Higgsfield API 출시",
+    "summary": "50개 이상의 영상·이미지 생성 모델을 쓸 수 있는 셀프서브 개발자 API를 내놨어요. 구독 없이 잔액을 충전해 달러 기준 종량제로 결제해요.",
+    "details": [
+      "Seedance, Kling, Wan, MiniMax, LTX, Recraft 등과 자체 Soul 2·Soul Cinema 포함",
+      "웹 요금제와 별도 과금",
+      "모델별 가격·코드 샘플·비교표 제공"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "source": "notice"
+  }
+]

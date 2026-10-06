@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nano-banana-2026-01-15-1",
+    "service": "nano-banana",
+    "date": "2026.01.15",
+    "kind": "종료",
+    "title": "gemini-2.5-flash-image-preview 모델 종료",
+    "summary": "Gemini API에서 Nano Banana 프리뷰 모델 gemini-2.5-flash-image-preview가 종료됐어요. 정식 모델 gemini-2.5-flash-image를 사용해야 해요.",
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#01-15-2026",
+    "source": "dev"
+  }
+]

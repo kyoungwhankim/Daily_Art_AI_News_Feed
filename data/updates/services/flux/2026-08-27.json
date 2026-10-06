@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-08-27-1",
+    "service": "flux",
+    "date": "2026.08.27",
+    "kind": "요금",
+    "title": "크레딧 자동 충전 기능 추가",
+    "summary": "잔액이 정해 둔 기준 아래로 떨어지면 저장된 카드로 목표 금액까지 자동 충전하는 Auto Top-Up이 생겼어요. 기준은 최소 $5예요.",
+    "url": "https://docs.bfl.ai/release-notes#august-27-2026",
+    "source": "dev"
+  }
+]

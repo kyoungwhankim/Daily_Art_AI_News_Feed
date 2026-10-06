@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2025-05-21-1",
+    "service": "suno",
+    "date": "2025.05.21",
+    "kind": "기능",
+    "title": "Suno 전체 곡 Remix",
+    "summary": "내 곡뿐 아니라 Suno의 다른 곡도 Cover·Extend·Reuse Prompt로 리믹스할 수 있고, 내 곡의 리믹스 허용 여부를 정할 수 있어요.",
+    "url": "https://suno.com/release-notes/remix-any-track-across-suno",
+    "source": "notice"
+  }
+]

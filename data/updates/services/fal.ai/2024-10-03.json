@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-10-03-1",
+    "service": "fal.ai",
+    "date": "2024.10.03",
+    "kind": "모델",
+    "title": "FLUX1.1 [pro] 제공·FLUX [dev] 2배 가속",
+    "summary": "BFL의 FLUX1.1 [pro]를 fal에서 쓸 수 있게 되고, FLUX.1 [dev]는 2배 빨라졌어요.",
+    "url": "https://blog.fal.ai/announcing-flux1-1-pro/",
+    "source": "notice"
+  }
+]

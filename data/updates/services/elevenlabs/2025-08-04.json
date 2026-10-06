@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-08-04-1",
+    "service": "elevenlabs",
+    "date": "2025.08.04",
+    "kind": "API",
+    "title": "WebRTC용 Conversation Token",
+    "summary": "WebRTC 연결용 Conversation Token을 만드는 경로와 펼쳐지는 위젯 등 에이전트 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/8/4",
+    "source": "dev"
+  }
+]

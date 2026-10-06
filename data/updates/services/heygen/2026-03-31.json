@@ -1,0 +1,16 @@
+[
+  {
+    "id": "heygen-2026-03-31-1",
+    "service": "heygen",
+    "date": "2026.03.31",
+    "kind": "기능",
+    "title": "HeyGen 영상 4K 업스케일 기능 추가",
+    "summary": "Topaz Starlight Precise 2.5로 어떤 해상도의 영상이든 4K로 업스케일하는 기능을 추가했어요. 최대 120fps 프레임 보간도 선택할 수 있어요.",
+    "details": [
+      "Standard·Precise 두 엔진 선택",
+      "Apps 탭 → Upscale Video, 모든 플랜(크레딧 필요)"
+    ],
+    "url": "https://heygen.noticeable.news/publications/enhance-any-video-to-4k-quality",
+    "source": "notice"
+  }
+]

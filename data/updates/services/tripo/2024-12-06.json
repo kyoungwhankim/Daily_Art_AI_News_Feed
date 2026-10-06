@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-12-06-1",
+    "service": "tripo",
+    "date": "2024.12.06",
+    "kind": "API",
+    "title": "orientation 파라미터·리타깃 애니메이션 추가",
+    "summary": "image_to_model과 multiview_to_model에 orientation이 추가됐어요. 리타깃용 프리셋 애니메이션과 새 스타일 두 가지도 늘었어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-9-2024-12-06",
+    "source": "dev"
+  }
+]

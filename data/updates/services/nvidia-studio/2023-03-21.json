@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-03-21-1",
+    "service": "nvidia-studio",
+    "date": "2023.03.21",
+    "kind": "기능",
+    "title": "GTC 2023: Audio2Face 생성형 AI·Unity 커넥터",
+    "summary": "Omniverse Audio2Face에 생성형 AI가 적용되고, Unreal Engine 커넥터 업데이트와 Unity 커넥터 오픈 베타, SimReady 3D 에셋이 발표됐어요.",
+    "url": "https://blogs.nvidia.com/blog/omniverse-generative-ai-unity-blender-connectors/",
+    "source": "notice"
+  }
+]

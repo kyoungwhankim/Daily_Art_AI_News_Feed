@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-04-12-1",
+    "service": "fal.ai",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "이미지 모델 선호도 파인튜닝 서비스",
+    "summary": "엔터프라이즈 사용자가 앱에서 모은 사용자 선호로 이미지 모델을 파인튜닝할 수 있는 서비스를 시작했어요.",
+    "url": "https://blog.fal.ai/introducing-on-demand-preference-finetuning-for-image-models/",
+    "source": "notice"
+  }
+]

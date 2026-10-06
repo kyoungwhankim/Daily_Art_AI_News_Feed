@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-06-23-1",
+    "service": "krea",
+    "date": "2026.06.23",
+    "kind": "모델",
+    "title": "Krea 2 Raw·Turbo 오픈 웨이트와 기술 보고서 공개",
+    "summary": "Krea 2를 허용적 라이선스의 오픈 웨이트로 공개했어요. 베이스 모델 Raw와 빠른 증류 모델 Turbo를 Hugging Face·GitHub에 올리고 전체 기술 보고서도 함께 냈어요.",
+    "details": [
+      "Krea 2 Raw: 텍스트-투-이미지 베이스 모델",
+      "Krea 2 Turbo: 스타일 레퍼런스·무드보드·LoRA 호환 증류 모델",
+      "데이터·구조·학습·인프라를 담은 기술 보고서"
+    ],
+    "url": "https://www.krea.ai/blog/krea-2-technical-report",
+    "source": "notice"
+  }
+]

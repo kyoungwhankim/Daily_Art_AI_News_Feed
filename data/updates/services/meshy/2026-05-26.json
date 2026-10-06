@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-05-26-1",
+    "service": "meshy",
+    "date": "2026.05.26",
+    "kind": "API",
+    "title": "Multi-Image to 3D 4방향 썸네일 옵션",
+    "summary": "Multi-Image to 3D에도 multi_view_thumbnails가 추가돼 네 방향 썸네일을 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-01-24-1",
+    "service": "topaz-video",
+    "date": "2023.01.24",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.1: Apollo 복귀와 내보내기 옵션",
+    "summary": "Apollo 모델을 다시 넣고 임시 파일 생성을 피하는 내보내기 옵션을 추가했어요. Mac 미리보기 재생도 빨라졌어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-1/39227",
+    "source": "notice"
+  }
+]

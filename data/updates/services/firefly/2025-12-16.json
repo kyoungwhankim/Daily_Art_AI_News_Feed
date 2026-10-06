@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-12-16-1",
+    "service": "firefly",
+    "date": "2025.12.16",
+    "kind": "기능",
+    "title": "Firefly 영상 편집기 베타와 무제한 생성 연장",
+    "summary": "정밀 편집과 카메라 움직임 제어 도구, Topaz Astra 영상 업스케일이 추가되고 Firefly 영상 편집기가 베타로 나왔어요. 유료 플랜 무제한 생성은 1월 15일까지 이어져요.",
+    "url": "https://blog.adobe.com/en/publish/2025/12/16/adobe-firefly-improves-ai-video-creation-tools-new-models-unlimited-generations",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2020-06-24-1",
+    "service": "gigapixel",
+    "date": "2020.06.24",
+    "kind": "앱",
+    "title": "Gigapixel v5.0.0: 새 AI 모델과 이미지 유형 선택",
+    "summary": "AI 모델이 업데이트되고 자연 사진용과 도시·글자 같은 인공물용 모델을 고르는 Image Type이 생겼어요. 단일 이미지 보기와 새 줌 기능도 추가됐어요.",
+    "details": [
+      "미리보기 이동 반응성 대폭 개선",
+      "앱 안에서 새 버전을 받는 자동 업데이트"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-0-0/15342",
+    "source": "notice"
+  }
+]

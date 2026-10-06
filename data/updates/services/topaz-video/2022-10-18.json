@@ -1,0 +1,18 @@
+[
+  {
+    "id": "topaz-video-2022-10-18-1",
+    "service": "topaz-video",
+    "date": "2022.10.18",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.0.0: 새로 만든 앱",
+    "summary": "Video Enhance AI를 처음부터 다시 만든 Topaz Video AI v3를 출시했어요. 안정화, 초슬로모션 Apollo, 자동 Proteus 모델을 새로 넣었어요.",
+    "details": [
+      "모델 체이닝·병렬 처리·명령줄 지원",
+      "최대 16비트 색 깊이 출력",
+      "Intel Arc·RTX 4000 지원",
+      "오프라인 사용 가능"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-0-0/35818",
+    "source": "notice"
+  }
+]

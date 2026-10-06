@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-05-06-1",
+    "service": "flow-studio",
+    "date": "2026.05.06",
+    "kind": "기능",
+    "title": "Flow Studio, Google 로그인 지원",
+    "summary": "Flow Studio에 Google 계정으로 로그인하는 옵션이 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

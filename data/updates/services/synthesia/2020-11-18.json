@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2020-11-18-1",
+    "service": "synthesia",
+    "date": "2020.11.18",
+    "kind": "기능",
+    "title": "Synthesia 영상 배경 첫 버전",
+    "summary": "영상을 배경으로 쓰는 기능의 첫 버전을 모든 사용자에게 제공해요.",
+    "url": "https://www.synthesia.io/updates/try-video-backgrounds",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "comfyui-2025-01-03-1",
+    "service": "comfyui",
+    "date": "2025.01.03",
+    "kind": "연동",
+    "title": "ComfyUI Registry 출시",
+    "summary": "시맨틱 버전과 보안 검사를 갖춘 커스텀 노드 공개 저장소 ComfyUI Registry가 출시돼 최신 ComfyUI-Manager에서 바로 설치할 수 있어요. 800명 넘는 노드 작성자가 이미 등록했어요.",
+    "url": "https://blog.comfy.org/p/launching-comfyui-registry",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-01-03-2",
+    "service": "comfyui",
+    "date": "2025.01.03",
+    "kind": "정책",
+    "title": "ComfyUI 2025년 1월 보안 정책 업데이트",
+    "summary": "커스텀 노드 취약점 사례를 계기로 Registry에서 eval/exec 호출과 런타임 pip 설치 같은 위험한 코드 관행을 단계적으로 제한한다고 발표했어요.",
+    "details": [
+      "eval/exec 사용 노드에 경고 후 1개월 뒤 신규 추가 차단, 3개월 뒤 전면 차단 예정"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-2025-jan-security-update",
+    "source": "notice"
+  }
+]

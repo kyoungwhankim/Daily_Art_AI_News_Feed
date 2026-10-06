@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-06-19-1",
+    "service": "krea",
+    "date": "2026.06.19",
+    "kind": "기능",
+    "title": "엔터프라이즈 Organizations 베타, 레퍼런스 이미지 URL 입력",
+    "summary": "워크스페이스 위에서 결제·멤버·도메인·SSO를 묶는 Organizations를 엔터프라이즈 비공개 베타로 열었어요. API는 레퍼런스 이미지를 외부 URL·data URI로도 받아요.",
+    "details": [
+      "조직 단위 Owner·Admin·Member 역할",
+      "도메인 인증과 SAML SSO",
+      "모델 접근 제어(허용·차단 목록)",
+      "이미지-투-이미지·영상·스타일 전이에 외부 URL·data URI 입력"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#june-19-2026",
+    "source": "dev"
+  }
+]

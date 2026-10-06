@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-02-20-1",
+    "service": "elevenlabs",
+    "date": "2026.02.20",
+    "kind": "API",
+    "title": "TTS API 전 세계 최대 40% 빨라짐",
+    "summary": "Text to Speech API에 다지역 서빙이 적용돼 가까운 서버가 응답하면서 전 세계에서 최대 40% 빨라졌어요.",
+    "url": "https://elevenlabs.io/blog/text-to-speech-api-up-to-40-faster-globally",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-07-28-1",
+    "service": "unity-ai",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "AI Assistant 2.17: UI에서 Unity AI 브랜드 표기 변경",
+    "summary": "AI Assistant 2.17.0에서 사용자 화면의 \"Unity AI\" 브랜드 문구를 기능을 설명하는 표현으로 바꾸고, 새 서버 메시지와의 호환성을 높였어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2170-pre1---2026-07-28",
+    "source": "dev"
+  }
+]

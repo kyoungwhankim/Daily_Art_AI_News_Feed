@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-21-1",
+    "service": "claude",
+    "date": "2024.11.21",
+    "kind": "API",
+    "title": "Admin API 출시",
+    "summary": "조직 리소스를 프로그램으로 관리하는 Admin API가 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-21st-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2024-11-07-1",
+    "service": "stable-diffusion",
+    "date": "2024.11.07",
+    "kind": "API",
+    "title": "Replace Background & Relight API 추가",
+    "summary": "배경을 AI 생성 이미지나 업로드 이미지로 바꾸고 조명까지 다시 맞추는 Replace Background & Relight API가 나왔어요.",
+    "details": [
+      "Stable Image Ultra에 image-to-image 지원",
+      "SD3·SD3.5에 cfg_scale 파라미터 추가"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

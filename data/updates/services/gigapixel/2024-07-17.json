@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2024-07-17-1",
+    "service": "gigapixel",
+    "date": "2024.07.17",
+    "kind": "앱",
+    "title": "Gigapixel v7.3.0: Pro 라이선스·CLI·시드 재생성",
+    "summary": "팀·기업용 Gigapixel Pro 라이선스와 Pro 전용 명령줄 인터페이스가 나왔어요. Recovery 모델 시드 재생성과 사용자 ICC 프로파일 내보내기도 추가됐어요.",
+    "details": [
+      "Resize 모드 UI 통합",
+      "자르기 회전 15도 스냅",
+      "라이트 모드 추가"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-3-0/74896",
+    "source": "notice"
+  }
+]

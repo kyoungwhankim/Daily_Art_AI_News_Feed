@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-07-23-1",
+    "service": "suno",
+    "date": "2024.07.23",
+    "kind": "기능",
+    "title": "Suno 보컬·반주 스템 분리",
+    "summary": "Pro·Premier 사용자가 곡에서 보컬과 반주를 분리해 받을 수 있어요.",
+    "url": "https://suno.com/release-notes/instrumental-and-vocal-stems",
+    "source": "notice"
+  }
+]

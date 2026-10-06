@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-08-19-1",
+    "service": "roblox-cube",
+    "date": "2026.08.19",
+    "kind": "연동",
+    "title": "Studio MCP 멀티 에이전트 개선",
+    "summary": "모든 MCP 도구가 studio_id를 받아 여러 Studio와 클라이언트를 함께 쓰는 작업이 안정적이 됐어요. 연결된 AI 클라이언트도 설정에서 볼 수 있어요.",
+    "url": "https://devforum.roblox.com/t/studio-mcp-multi-agent-improvements-and-connected-ai-clients/4820583",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2023-02-20-1",
+    "service": "rokoko",
+    "date": "2023.02.20",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.2, Smartgloves 성능 향상",
+    "summary": "Smartgloves 트래킹 성능이 좋아지고, 부트로더 상태 장비를 Studio에서 직접 복구할 수 있게 됐어요. 내보내기 프레임워크도 더 빠르고 안정적으로 바뀌었어요.",
+    "details": [
+      "Smartgloves 성능 개선",
+      "부트로더 상태 장비 복구·펌웨어 재설치",
+      "내보내기 프레임워크 개편"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/13143030107537-Rokoko-Studio-2-3-2",
+    "source": "dev"
+  }
+]

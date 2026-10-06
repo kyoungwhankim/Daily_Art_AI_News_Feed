@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-03-03-1",
+    "service": "elevenlabs",
+    "date": "2025.03.03",
+    "kind": "기능",
+    "title": "Dubbing Studio에 Scribe 기본 적용",
+    "summary": "Dubbing Studio가 음성 인식에 Scribe를 기본으로 써 정확도가 올라갔고, 에이전트에 속도 조절이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/3",
+    "source": "dev"
+  }
+]

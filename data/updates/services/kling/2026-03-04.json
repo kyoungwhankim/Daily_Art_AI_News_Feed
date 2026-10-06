@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2026-03-04-1",
+    "service": "kling",
+    "date": "2026.03.04",
+    "kind": "기능",
+    "title": "Kling VIDEO 3.0 Motion Control 출시",
+    "summary": "모션 캡처 성능과 얼굴 일관성을 높인 VIDEO 3.0 Motion Control이 나왔어요. API에서도 요소 바인딩과 함께 쓸 수 있어요.",
+    "details": [
+      "API: model_name으로 버전 구분(기본 kling-v2-6)",
+      "API: STD 초당 0.9, PRO 초당 1.2 units"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/4titicw2vg",
+    "source": "notice"
+  }
+]

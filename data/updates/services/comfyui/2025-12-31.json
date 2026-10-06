@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2025-12-31-1",
+    "service": "comfyui",
+    "date": "2025.12.31",
+    "kind": "요금",
+    "title": "ComfyUI v0.7.0: API 노드 과금을 크레딧으로 전환",
+    "summary": "ComfyUI v0.7.0에서 API 노드 과금이 달러에서 크레딧으로 바뀌고, PyTorch 2.4 이상이 최소 요구사항이 됐어요. AMD GPU는 비동기 오프로드가 기본이에요.",
+    "details": [
+      "ManualSigmas 노드, Kling Motion Control 노드",
+      "ResizeByLongerSide 영상 지원",
+      "seededit 지원 종료"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-7-0",
+    "source": "notice"
+  }
+]

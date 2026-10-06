@@ -1,0 +1,17 @@
+[
+  {
+    "id": "kling-2026-01-23-1",
+    "service": "kling",
+    "date": "2026.01.23",
+    "kind": "API",
+    "title": "API 요소 다각도 이미지 생성, 워터마크 동시 출력",
+    "summary": "Kling API에서 요소의 정면 이미지로 다른 각도 이미지를 추론해 만들 수 있게 됐어요. 작업 조회 시 사용 units 확인과 워터마크 버전 동시 생성도 지원해요.",
+    "details": [
+      "다각도 보완: 회당 0.5 units, 3세트 결과",
+      "final_unit_deduction으로 차감량 확인",
+      "watermark_info로 워터마크 결과 동시 생성"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#01%2F23%2F2026",
+    "source": "dev"
+  }
+]

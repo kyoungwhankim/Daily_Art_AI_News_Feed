@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-01-18-1",
+    "service": "runway",
+    "date": "2024.01.18",
+    "kind": "기능",
+    "title": "Multi-Motion Brush 출시",
+    "summary": "이미지의 다섯 영역에 각각 다른 움직임을 지정할 수 있는 Multi-Motion Brush가 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-04-17-1",
+    "service": "comfyui",
+    "date": "2026.04.17",
+    "kind": "모델",
+    "title": "ComfyUI, ACE-Step 1.5 XL 음악 모델 지원",
+    "summary": "4B DiT 디코더로 상용급 음질을 내는 ACE-Step 1.5 XL(base·sft·turbo)을 로컬 GPU에서 쓸 수 있어요. 모두 MIT 라이선스예요.",
+    "details": [
+      "v0.19.4: Veo 4K와 Veo 3 Lite, gpt-image-2 옵션",
+      "Quiver arrow-1.1 SVG 모델, SeeDance 2.0 1080p",
+      "JsonExtractString 노드"
+    ],
+    "url": "https://blog.comfy.org/p/ace-step-15-xl-commercial-grade-music",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2025-12-15-1",
+    "service": "flux",
+    "date": "2025.12.15",
+    "kind": "API",
+    "title": "BFL API에 Organizations·Projects 도입",
+    "summary": "팀 단위로 결제·크레딧·멤버를 관리하는 조직(Organization)과, 프로젝트별 API 키·사용량·지출 한도를 두는 프로젝트(Project) 기능이 생겼어요. 기존 키는 그대로 작동해요.",
+    "details": [
+      "역할 기반 권한: 관리자·개발자·결제 관리자·뷰어",
+      "프로젝트 단위 API 키와 일·주·월 지출 한도",
+      "전체 활동 감사 로그",
+      "기존 계정은 Default 조직·프로젝트로 자동 이전"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#december-15-2025",
+    "source": "dev"
+  }
+]

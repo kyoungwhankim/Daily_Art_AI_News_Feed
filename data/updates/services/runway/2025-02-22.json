@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-02-22-1",
+    "service": "runway",
+    "date": "2025.02.22",
+    "kind": "기능",
+    "title": "Frames에 이미지→프롬프트·Custom Styles 추가",
+    "summary": "Frames에서 레퍼런스 이미지를 텍스트 프롬프트로 바꾸고 Custom Styles를 만들 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

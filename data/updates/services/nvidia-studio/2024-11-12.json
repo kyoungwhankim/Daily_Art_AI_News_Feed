@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2024-11-12-1",
+    "service": "nvidia-studio",
+    "date": "2024.11.12",
+    "kind": "앱",
+    "title": "NVIDIA app 정식 출시",
+    "summary": "크리에이터·게이머용 동반 앱 NVIDIA app이 정식 출시됐어요. 드라이버 업데이트, GPU 설정, RTX Video 같은 AI 기능을 한곳에서 다룰 수 있어요.",
+    "url": "https://blogs.nvidia.com/blog/ai-studio-app-geforce-rtx-remix/",
+    "source": "notice"
+  }
+]

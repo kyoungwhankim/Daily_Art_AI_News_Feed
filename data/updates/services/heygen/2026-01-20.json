@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-01-20-1",
+    "service": "heygen",
+    "date": "2026.01.20",
+    "kind": "기능",
+    "title": "HeyGen 스크립트 패널 재설계",
+    "summary": "스크립트 패널을 새로 만들어 발음 사전 관리, 음성 연출 메뉴 통합, 서식 유지 붙여넣기, 긴 스크립트 자동 장면 분할을 지원해요.",
+    "url": "https://heygen.noticeable.news/publications/updated-script-panel",
+    "source": "notice"
+  }
+]

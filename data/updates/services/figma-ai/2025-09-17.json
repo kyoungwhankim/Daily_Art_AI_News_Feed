@@ -1,0 +1,22 @@
+[
+  {
+    "id": "figma-ai-2025-09-17-1",
+    "service": "figma-ai",
+    "date": "2025.09.17",
+    "kind": "기능",
+    "title": "AI 이미지 프롬프트에 참조 이미지 6장 첨부",
+    "summary": "AI로 이미지를 만들거나 편집할 때 참조 이미지를 최대 6장 붙여 브랜드 스타일이나 특정 사물을 맞출 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=attach-images-as-references-for-your-ai-image-prompts",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2025-09-17-2",
+    "service": "figma-ai",
+    "date": "2025.09.17",
+    "kind": "정책",
+    "title": "Make·Sites 내부 공개 게시",
+    "summary": "Organization·Enterprise 사용자가 게시한 Make나 Site를 사내 사용자만 볼 수 있게 제한할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=publish-make-sites-internally",
+    "source": "notice"
+  }
+]

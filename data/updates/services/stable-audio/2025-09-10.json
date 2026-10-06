@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-audio-2025-09-10-1",
+    "service": "stable-audio",
+    "date": "2025.09.10",
+    "kind": "모델",
+    "title": "엔터프라이즈용 Stable Audio 2.5",
+    "summary": "기업 사운드 제작을 위한 Stable Audio 2.5가 나왔어요. 작곡 품질이 좋아지고 GPU에서 2초 미만으로 생성하며 오디오 인페인팅을 지원해요.",
+    "details": [
+      "StableAudio.com과 Stability AI API 제공",
+      "fal·Replicate·ComfyUI 등 파트너 플랫폼",
+      "엔터프라이즈 라이선스 온프레미스 배포"
+    ],
+    "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
+    "source": "notice"
+  }
+]

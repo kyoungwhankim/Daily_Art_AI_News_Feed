@@ -1,0 +1,15 @@
+[
+  {
+    "id": "claude-2026-09-24-1",
+    "service": "claude",
+    "date": "2026.09.24",
+    "kind": "요금",
+    "title": "일부 출력 전 거절 요청 과금 재개",
+    "summary": "bio·frontier_llm·reasoning_extraction 범주로 출력 전에 거절된 요청을 다시 과금해요. Microsoft 365용 Compliance API 로컬 세션 엔드포인트는 정식 출시됐어요.",
+    "details": [
+      "Compliance API Activity Feed에서 파일명·제목 필드 제거"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-24-2026",
+    "source": "dev"
+  }
+]

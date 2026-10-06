@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-12-1",
+    "service": "comfyui",
+    "date": "2025.12.12",
+    "kind": "요금",
+    "title": "Comfy Cloud: 자체 모델, 통합 크레딧, 새 요금제",
+    "summary": "Comfy Cloud에 직접 모델을 올려 쓰는 기능과 더 긴 워크플로 제한이 생기고, 통합 Comfy Credit 체계와 3가지 새 구독 등급이 도입됐어요.",
+    "url": "https://blog.comfy.org/p/comfy-cloud-update-unified-credit-system",
+    "source": "notice"
+  }
+]

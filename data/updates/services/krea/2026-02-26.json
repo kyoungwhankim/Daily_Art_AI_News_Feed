@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-02-26-1",
+    "service": "krea",
+    "date": "2026.02.26",
+    "kind": "모델",
+    "title": "Krea에 Nano Banana 2 추가",
+    "summary": "Google DeepMind의 차세대 이미지 모델 Nano Banana 2를 Krea에서 바로 쓸 수 있게 됐어요. 다국어 텍스트 렌더링, 캐릭터 일관성, 최대 4K 출력이 강점이에요.",
+    "details": [
+      "최대 5명 캐릭터·14개 오브젝트 일관성 유지",
+      "인포그래픽·다이어그램 등 구조적 이미지 생성",
+      "512px부터 4K까지 다양한 비율 출력"
+    ],
+    "url": "https://www.krea.ai/blog/nano-banana-2",
+    "source": "notice"
+  }
+]

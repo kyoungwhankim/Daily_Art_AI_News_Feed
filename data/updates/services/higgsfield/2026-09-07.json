@@ -1,0 +1,12 @@
+[
+  {
+    "id": "higgsfield-2026-09-07-1",
+    "service": "higgsfield",
+    "date": "2026.09.07",
+    "kind": "기능",
+    "title": "GPT-6 Astra 지원과 Higgsfield Games 2.0",
+    "summary": "GPT-6 Astra를 Higgsfield 워크플로와 MCP에서 쓸 수 있게 되면서 Games 2.0이 나왔어요. 프롬프트 하나로 멀티플레이 게임과 인터랙티브 3D를 만들어 배포할 수 있어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-mcp-gpt6-astra-games-2",
+    "source": "notice"
+  }
+]

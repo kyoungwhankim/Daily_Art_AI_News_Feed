@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-12-17-1",
+    "service": "claude",
+    "date": "2024.12.17",
+    "kind": "API",
+    "title": "Models·Batches·토큰 계산·캐싱·PDF 정식 출시",
+    "summary": "Models API, Message Batches API, 토큰 계산 API, 프롬프트 캐싱, PDF 지원이 베타 헤더 없이 정식 제공되고, Java·Go SDK 알파가 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#december-17th-2024",
+    "source": "dev"
+  }
+]

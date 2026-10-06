@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-02-10-1",
+    "service": "elevenlabs",
+    "date": "2025.02.10",
+    "kind": "요금",
+    "title": "Agents Platform 요금 인하와 GenFM 다중 소스",
+    "summary": "Agents Platform 셀프서비스 요금이 내려가고 무료 티어가 넉넉해졌어요. GenFM 팟캐스트 API는 여러 입력 소스를 받을 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/10",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2026-06-25-1",
+    "service": "flux",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "흐린 이미지 선명화 FLUX Deblur 출시",
+    "summary": "프롬프트나 마스크 없이 흐린 사진 한 장을 넣으면 인물·색·구도를 유지한 채 선명하게 복원하는 FLUX Deblur를 출시했어요.",
+    "details": [
+      "최대 4MP 입력(base64 또는 URL)",
+      "엔드포인트 /v1/flux-tools/deblur-v1"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#june-25-2026",
+    "source": "dev"
+  }
+]

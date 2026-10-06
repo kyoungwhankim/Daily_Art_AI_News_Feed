@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-04-1",
+    "service": "meshy",
+    "date": "2026.08.04",
+    "kind": "API",
+    "title": "프린팅 분석·수리 입력 포맷 확대",
+    "summary": "Analyze·Repair Printability가 .glb, .gltf, .obj, .fbx, .stl 모델을 받게 됐어요. 수리 결과는 입력 포맷으로 돌려줘요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

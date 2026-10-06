@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-07-10-1",
+    "service": "scenario",
+    "date": "2026.07.10",
+    "kind": "연동",
+    "title": "MCP 팀 관리·API 키 제어 도구",
+    "summary": "에이전트가 MCP로 팀 접근과 API 키를 직접 관리할 수 있고 Prompt Spark 흐름이 유연해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-21-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-10-2",
+    "service": "scenario",
+    "date": "2026.07.10",
+    "kind": "기능",
+    "title": "Scenario Genie 에이전트·동시 워크플로",
+    "summary": "앱 어디서나 돕는 AI 도우미 Scenario Genie가 나왔어요. 워크플로 동시 실행과 관리자용 사용량 알림도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-17-0",
+    "source": "notice"
+  }
+]

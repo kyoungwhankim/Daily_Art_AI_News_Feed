@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-05-18-1",
+    "service": "synthesia",
+    "date": "2021.05.18",
+    "kind": "기능",
+    "title": "Synthesia 진행 표시와 음성 개선",
+    "summary": "홈 화면에 영상 진행 표시를 넣고 텍스트 음성 변환 품질을 개선했어요.",
+    "url": "https://www.synthesia.io/updates/progress-indicators-and-improved-speech",
+    "source": "notice"
+  }
+]

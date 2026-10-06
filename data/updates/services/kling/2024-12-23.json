@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-12-23-1",
+    "service": "kling",
+    "date": "2024.12.23",
+    "kind": "API",
+    "title": "Kling API에 Lip-Sync 기능 추가",
+    "summary": "Video V1.0·V1.5로 만든 영상에 입 모양을 맞추는 Lip-Sync API가 추가됐어요. 얼굴 조건을 만족하는 영상이면 쓸 수 있어요.",
+    "url": "https://kling.ai/document-api/updates/api#12%2F23%2F2024",
+    "source": "dev"
+  }
+]

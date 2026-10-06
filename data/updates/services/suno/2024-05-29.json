@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-05-29-1",
+    "service": "suno",
+    "date": "2024.05.29",
+    "kind": "기능",
+    "title": "Suno 스타일 탐색과 라이브러리 검색",
+    "summary": "곡의 스타일을 눌러 같은 스타일 곡을 둘러보고, 내 라이브러리에서 곡을 검색할 수 있어요.",
+    "url": "https://suno.com/release-notes/explore-styles-and-search-through-your-library",
+    "source": "notice"
+  }
+]

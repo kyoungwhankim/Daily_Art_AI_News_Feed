@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-21-1",
+    "service": "fal.ai",
+    "date": "2026.01.21",
+    "kind": "기능",
+    "title": "격리 배포용 Environments 기능",
+    "summary": "개발·스테이징·프로덕션 환경을 나눠 앱과 시크릿을 관리하고 --env 플래그로 특정 환경에 배포할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#january-21-2026",
+    "source": "dev"
+  }
+]

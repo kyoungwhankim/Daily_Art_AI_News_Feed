@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-07-30-1",
+    "service": "hugging-face",
+    "date": "2025.07.30",
+    "kind": "기능",
+    "title": "HF Jobs 출시: Hugging Face 인프라에서 연산 작업 실행",
+    "summary": "간단한 CLI로 Hugging Face 인프라에서 스크립트부터 대규모 작업까지 실행할 수 있는 Jobs가 나왔어요. CPU부터 고성능 GPU까지 초 단위로 과금돼요.",
+    "url": "https://huggingface.co/changelog/introducing-hf-jobs",
+    "source": "notice"
+  }
+]

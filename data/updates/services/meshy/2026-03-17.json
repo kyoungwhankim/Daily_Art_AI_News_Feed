@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-03-17-1",
+    "service": "meshy",
+    "date": "2026.03.17",
+    "kind": "API",
+    "title": "target_formats로 출력 포맷 선택",
+    "summary": "Image to 3D, Multi-Image to 3D, Text to 3D, Retexture에 target_formats가 추가돼 필요한 3D 포맷만 만들어 완료 시간을 줄일 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2026",
+    "source": "dev"
+  }
+]

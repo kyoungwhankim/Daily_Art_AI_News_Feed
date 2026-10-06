@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2024-01-17-1",
+    "service": "gigapixel",
+    "date": "2024.01.17",
+    "kind": "앱",
+    "title": "Gigapixel v7.0.0: 새 AI 엔진과 v2 모델, UI 리뉴얼",
+    "summary": "AI 엔진을 새로 바꿔 호환성과 속도를 높이고 Standard·High Fidelity v2 모델을 추가한 메이저 업데이트예요. UI와 환경설정도 새로 단장했어요.",
+    "details": [
+      "업데이트 시 환경설정 초기화",
+      "Mac 최소 OS 11.0(Big Sur)"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-0-0/60649",
+    "source": "notice"
+  }
+]

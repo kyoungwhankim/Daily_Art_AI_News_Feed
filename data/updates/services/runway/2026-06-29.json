@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-06-29-1",
+    "service": "runway",
+    "date": "2026.06.29",
+    "kind": "기능",
+    "title": "Runway에 Seed Audio 1.0 추가",
+    "summary": "간단한 텍스트 프롬프트로 최대 120초의 음성, 사운드 디자인, 음악을 만들 수 있는 Seed Audio 1.0이 들어왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

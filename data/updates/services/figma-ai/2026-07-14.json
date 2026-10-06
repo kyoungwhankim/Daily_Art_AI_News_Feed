@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-07-14-1",
+    "service": "figma-ai",
+    "date": "2026.07.14",
+    "kind": "요금",
+    "title": "베타 기능 AI 크레딧 사용량 확인",
+    "summary": "관리자가 베타 기능의 AI 크레딧 사용 내역을 CSV로 내려받아 전체 AI 사용량과 향후 비용을 예측할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=see-ai-credit-usage",
+    "source": "notice"
+  }
+]

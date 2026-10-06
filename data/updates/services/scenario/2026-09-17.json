@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-09-17-1",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "API",
+    "title": "Smart Clip Extraction·워크플로 검색 엔드포인트",
+    "summary": "새 영상 클립 추출 도구와 워크플로 검색 전용 엔드포인트가 추가되고 모델 목록이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-134-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-09-17-2",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "연동",
+    "title": "MCP 학습 설정 확장·사용량 보고",
+    "summary": "에이전트가 학습 설정에 샘플 프롬프트와 원본 이미지를 넣을 수 있고 CU 사용량 보고가 정확해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-28-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-17-3",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "연동",
+    "title": "에이전트 스킬: 분석·ComfyUI 워크플로 이전",
+    "summary": "MCP 사용량 보고를 보는 분석 스킬과 ComfyUI 그래프를 Scenario 워크플로로 옮기는 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-43-0",
+    "source": "notice"
+  }
+]

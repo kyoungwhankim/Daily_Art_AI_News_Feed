@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-01-12-1",
+    "service": "meshy",
+    "date": "2026.01.12",
+    "kind": "API",
+    "title": "Image to 3D에 로우폴리 model_type 추가",
+    "summary": "Image to 3D API에 깔끔한 폴리곤의 로우폴리 메시를 만드는 model_type 파라미터가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  }
+]

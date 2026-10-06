@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-04-20-1",
+    "service": "firefly",
+    "date": "2023.04.20",
+    "kind": "기능",
+    "title": "Firefly 베타에 벡터 리컬러링 추가",
+    "summary": "텍스트 프롬프트로 벡터 작품의 색 조합을 바꾸는 생성형 AI 벡터 리컬러링 도구가 Firefly 베타에 추가됐어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/04/20/introducing-vector-recoloring-with-adobe-firefly",
+    "source": "notice"
+  }
+]

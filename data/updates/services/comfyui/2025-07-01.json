@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-07-01-1",
+    "service": "comfyui",
+    "date": "2025.07.01",
+    "kind": "연동",
+    "title": "Intel OpenVINO, ComfyUI와 협력",
+    "summary": "Intel OpenVINO 노드가 ComfyUI에 병합돼 Intel 하드웨어에서 AI 모델을 최적화해 더 효율적으로 돌릴 수 있게 됐어요.",
+    "url": "https://blog.comfy.org/p/intel-openvino-joins-forces-with",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-17-1",
+    "service": "scenario",
+    "date": "2026.07.17",
+    "kind": "기능",
+    "title": "LoRA 로딩·Expand 개선, 홈 속도 향상",
+    "summary": "LoRA 처리가 매끄러워지고 Expand 워크플로가 개선됐어요. 홈 페이지 로딩도 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-19-0",
+    "source": "notice"
+  }
+]

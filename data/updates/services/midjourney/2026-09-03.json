@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2026-09-03-1",
+    "service": "midjourney",
+    "date": "2026.09.03",
+    "kind": "기능",
+    "title": "알파 사이트: 라이트박스 내장 V8.2 에디터, Change Style",
+    "summary": "alpha.midjourney.com에 V8.2 편집 모델이 들어간 라이트박스 내장 에디터가 생겼어요. 스타일을 쉽게 바꿔 보는 Change Style 기능도 실험 중이에요.",
+    "details": [
+      "지시문 편집과 참조 이미지 최대 4장",
+      "세션 편집 기록을 한곳에서 확인",
+      "프롬프트 필 버그 수정과 속도 개선",
+      "Niji 7 + 인페인팅 정상 동작"
+    ],
+    "url": "https://updates.midjourney.com/alpha-changelog-9-2-26/",
+    "source": "notice"
+  }
+]

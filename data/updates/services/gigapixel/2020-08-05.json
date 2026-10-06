@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-08-05-1",
+    "service": "gigapixel",
+    "date": "2020.08.05",
+    "kind": "앱",
+    "title": "Gigapixel v5.0.4: 크래시 리포터 내장",
+    "summary": "충돌이 나면 익명 사용 정보 수집이 켜진 경우 자동으로 리포트를 보내는 크래시 리포터가 들어갔어요. JPG·TIFF 저장 시 PPI가 덮어써지던 문제도 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-0-4/15849",
+    "source": "notice"
+  }
+]

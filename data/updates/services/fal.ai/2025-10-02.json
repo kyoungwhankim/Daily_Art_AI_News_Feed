@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-02-1",
+    "service": "fal.ai",
+    "date": "2025.10.02",
+    "kind": "기능",
+    "title": "러너별 리비전 ID 표시",
+    "summary": "각 러너가 어떤 버전을 실행 중인지 리비전 ID가 표시되고, DEAD 상태 이름이 TERMINATED로 바뀌었어요.",
+    "url": "https://fal.ai/docs/changelog#october-2-2025",
+    "source": "dev"
+  }
+]

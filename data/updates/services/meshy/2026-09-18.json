@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-18-1",
+    "service": "meshy",
+    "date": "2026.09.18",
+    "kind": "모델",
+    "title": "API에 meshy-7.1·geometry_resolution 추가",
+    "summary": "Image·Multi-Image·Text to 3D에 meshy-7.1이 추가되고 latest가 이를 가리켜요. geometry_resolution(standard/2k/4k)이 ultra_mode를 대체해요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

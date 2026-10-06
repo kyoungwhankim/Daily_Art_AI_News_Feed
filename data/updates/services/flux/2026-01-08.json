@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-01-08-1",
+    "service": "flux",
+    "date": "2026.01.08",
+    "kind": "요금",
+    "title": "조직 간 크레딧 이전 기능 추가",
+    "summary": "대시보드 Credits 페이지에서 내가 소유한 다른 조직으로 크레딧을 바로 옮길 수 있게 됐어요. 이전은 즉시 반영되고 감사 로그가 남아요.",
+    "url": "https://docs.bfl.ai/release-notes#january-8-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "suno-2024-05-22-1",
+    "service": "suno",
+    "date": "2024.05.22",
+    "kind": "기능",
+    "title": "Suno 팔로우·곡 검색·이미지 커스텀",
+    "summary": "크리에이터 팔로우, 공개 곡 검색이 생기고 Pro·Premier는 프로필·커버 이미지를 올리거나 프롬프트로 다시 만들 수 있어요.",
+    "details": [
+      "크리에이터 팔로우",
+      "공개 곡 제목·태그 검색",
+      "프로필·커버·플레이리스트 이미지 커스텀",
+      "모바일 생성·탐색 개선"
+    ],
+    "url": "https://suno.com/release-notes/customize-images-pro-and-premier",
+    "source": "notice"
+  }
+]

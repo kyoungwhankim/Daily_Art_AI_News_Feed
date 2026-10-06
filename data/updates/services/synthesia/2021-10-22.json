@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-10-22-1",
+    "service": "synthesia",
+    "date": "2021.10.22",
+    "kind": "기능",
+    "title": "Synthesia 여러 요소 동시 선택",
+    "summary": "여러 요소를 선택해 한꺼번에 이동, 회전, 크기 조절할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/multi-element-selection",
+    "source": "notice"
+  }
+]

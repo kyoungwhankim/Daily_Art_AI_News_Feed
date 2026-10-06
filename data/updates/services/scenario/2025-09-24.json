@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-09-24-1",
+    "service": "scenario",
+    "date": "2025.09.24",
+    "kind": "모델",
+    "title": "Kling 2.5·Wan 2.5, 영상 참조 기능",
+    "summary": "Kling 2.5와 Wan 2.5 영상 모델이 추가되고, 영상을 참조로 쓰는 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-98-kling-2-5-wan-2-5-and-use-video-as-reference",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-24-2",
+    "service": "scenario",
+    "date": "2025.09.24",
+    "kind": "API",
+    "title": "Flux 네거티브 프롬프트 지원",
+    "summary": "Flux 기반 이미지 생성에 네거티브 프롬프트가 지원되고, 모델별 Compute Units 계산 기준이 공개돼요.",
+    "url": "https://www.scenario.com/changelog/api-v2-89-0-negative-prompts-support-for-flux",
+    "source": "dev"
+  }
+]

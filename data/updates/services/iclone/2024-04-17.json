@@ -1,0 +1,19 @@
+[
+  {
+    "id": "iclone-2024-04-17-1",
+    "service": "iclone",
+    "date": "2024.04.17",
+    "kind": "앱",
+    "title": "iClone 8.41, BuildingGen 호환과 EXR 렌더",
+    "summary": "BuildingGen 1.0과 호환되고, 이미지 렌더에서 EXR 포맷을 지원해요. 경로로 메시를 만드는 Create Mesh와 MD 카메라 Smooth도 추가됐어요.",
+    "details": [
+      "BuildingGen 1.0 호환",
+      "EXR 단일·시퀀스 렌더",
+      "경로 기반 Create Mesh",
+      "MD 카메라 Smooth 파라미터",
+      "표정을 순수 모프 데이터로 FBX 내보내기"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

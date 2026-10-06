@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2022-07-20-1",
+    "service": "iclone",
+    "date": "2022.07.20",
+    "kind": "앱",
+    "title": "iClone 8.02, 루트 모션 임포트와 자동 전환",
+    "summary": "FBX 임포트에 Root Bone 옵션이 생겨 루트 모션을 바르게 가져오고, 타임라인 클립 간 자동 전환과 멀티스레드 소프트 클로스로 성능이 좋아졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

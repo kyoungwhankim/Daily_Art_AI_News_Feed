@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-08-12-1",
+    "service": "stable-diffusion",
+    "date": "2025.08.12",
+    "kind": "연동",
+    "title": "Stable Diffusion 3.5 NVIDIA NIM 출시",
+    "summary": "기업이 SD3.5 Large를 빠르고 쉽게 배포하도록 NVIDIA NIM 마이크로서비스를 출시했어요. build.nvidia.com에서 쓸 수 있어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-and-nvidia-bring-faster-performance-and-simplified-enterprise-deployment-with-the-stable-diffusion-35-nim",
+    "source": "notice"
+  }
+]

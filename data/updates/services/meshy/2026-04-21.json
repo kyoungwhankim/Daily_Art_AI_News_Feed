@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-04-21-1",
+    "service": "meshy",
+    "date": "2026.04.21",
+    "kind": "API",
+    "title": "Image to 3D에 input_task_id 입력 추가",
+    "summary": "Image to 3D와 Multi-Image to 3D가 완료된 Text to Image·Image to Image 작업을 input_task_id로 바로 이어받을 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2026",
+    "source": "dev"
+  }
+]

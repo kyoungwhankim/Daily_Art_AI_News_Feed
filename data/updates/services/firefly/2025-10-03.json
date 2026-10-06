@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-10-03-1",
+    "service": "firefly",
+    "date": "2025.10.03",
+    "kind": "종료",
+    "title": "Firefly 동기식 API 제거",
+    "summary": "Generate Images·Similar Images·Object Composite·Expand·Fill v3의 동기식 API가 제거돼 비동기 버전만 써야 해요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#october-3-2025",
+    "source": "dev"
+  }
+]

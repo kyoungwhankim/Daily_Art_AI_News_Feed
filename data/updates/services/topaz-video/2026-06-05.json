@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2026-06-05-1",
+    "service": "topaz-video",
+    "date": "2026.06.05",
+    "kind": "앱",
+    "title": "Topaz Video 1.6.1: 프레임 미리보기 디인터레이스",
+    "summary": "프레임 미리보기에 디인터레이스 설정과 캐싱을 추가하고 Hyperion 2 출력에 오디오를 포함했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-1-6-1-patch/103309",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "qwen-image-2026-01-15-1",
+    "service": "qwen-image",
+    "date": "2026.01.15",
+    "kind": "모델",
+    "title": "이미지 편집 모델 qwen-image-edit-max 출시",
+    "summary": "Max 시리즈 편집 모델 qwen-image-edit-max가 출시됐어요. 산업 디자인·기하 추론, 인물 일관성이 강화되고 LoRA 기능이 통합돼 더 다양한 편집을 안정적으로 할 수 있어요.",
+    "details": [
+      "스냅샷 qwen-image-edit-max-2026-01-16",
+      "이미지 어긋남(offset) 문제 감소"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "synthesia-2021-09-23-1",
+    "service": "synthesia",
+    "date": "2021.09.23",
+    "kind": "기능",
+    "title": "Synthesia 생성 전 영상 미리보기",
+    "summary": "영상을 생성하기 전에 미리 볼 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/video-previews",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2021-09-23-2",
+    "service": "synthesia",
+    "date": "2021.09.23",
+    "kind": "기능",
+    "title": "Synthesia 커스텀 글꼴 업로드",
+    "summary": "STUDIO에 회사 글꼴을 올려 브랜딩에 쓸 수 있어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/custom-fonts",
+    "source": "notice"
+  }
+]

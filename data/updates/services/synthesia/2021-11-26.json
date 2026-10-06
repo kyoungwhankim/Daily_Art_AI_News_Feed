@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-11-26-1",
+    "service": "synthesia",
+    "date": "2021.11.26",
+    "kind": "기능",
+    "title": "Synthesia 영상 임베드",
+    "summary": "Synthesia 영상을 웹사이트에 바로 임베드할 수 있고 STUDIO에서 고치면 사이트 영상도 자동 갱신돼요.",
+    "url": "https://www.synthesia.io/updates/video-embeds",
+    "source": "notice"
+  }
+]

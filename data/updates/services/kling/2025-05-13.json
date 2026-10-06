@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2025-05-13-1",
+    "service": "kling",
+    "date": "2025.05.13",
+    "kind": "API",
+    "title": "API에 KLING 2.0 Master·이미지 V2.0 지원",
+    "summary": "Kling API에서 kling-v2-master로 텍스트·이미지-투-비디오를, kling-v2로 텍스트-투-이미지를 쓸 수 있게 됐어요.",
+    "details": [
+      "kling-v2-master는 mode 파라미터 미지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#05%2F13%2F2025",
+    "source": "dev"
+  }
+]

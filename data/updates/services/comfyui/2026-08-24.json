@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2026-08-24-1",
+    "service": "comfyui",
+    "date": "2026.08.24",
+    "kind": "연동",
+    "title": "ComfyUI v0.33.4: Wan 3.0·Meshy-7 노드",
+    "summary": "ComfyUI v0.33.4에서 최대 30초 오디오 포함 영상을 만드는 Wan 3.0과 Meshy-7, 최대 8K 영상 복원 ByteDance vCube Video Enhance 노드가 추가됐어요.",
+    "details": [
+      "Kling Image Generation에서 kling-v2 제거(9월 15일 종료 예정)"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-33-4",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ltx-studio-2025-10-20-1",
+    "service": "ltx-studio",
+    "date": "2025.10.20",
+    "kind": "기능",
+    "title": "Gen Space 카메라 모션 프리셋 공개",
+    "summary": "프롬프트 없이 돌리·크레인·핸드헬드 같은 카메라 움직임을 적용하는 프리셋이 Gen Space에 생겼어요.",
+    "url": "https://ltx.io/blog/mastering-camera-motion-gen-space",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2025-10-20-2",
+    "service": "ltx-studio",
+    "date": "2025.10.20",
+    "kind": "모델",
+    "title": "LTX Studio에 Flux Premium(Flux Kontext Pro) 출시",
+    "summary": "Flux Kontext Pro 기반 텍스트 투 이미지 Flux Premium이 LTX Studio에 나왔어요. 정확한 프롬프트 이해와 영상 연계가 강점이에요.",
+    "url": "https://ltx.io/blog/flux-premium-release",
+    "source": "notice"
+  }
+]

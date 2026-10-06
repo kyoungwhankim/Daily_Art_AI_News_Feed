@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-09-25-1",
+    "service": "mureka",
+    "date": "2025.09.25",
+    "kind": "모델",
+    "title": "mureka-7.5 모델과 곡 설명 API",
+    "summary": "mureka-7을 대체하는 mureka-7.5 모델과 곡을 분석해 설명해 주는 song describe API가 나왔어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

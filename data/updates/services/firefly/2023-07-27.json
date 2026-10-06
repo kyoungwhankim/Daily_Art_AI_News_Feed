@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-07-27-1",
+    "service": "firefly",
+    "date": "2023.07.27",
+    "kind": "연동",
+    "title": "Photoshop Generative Expand와 100개 언어 지원",
+    "summary": "Photoshop (beta)에 자르기 도구로 이미지를 원래 비율 밖으로 늘리는 Generative Expand가 추가되고, Firefly 기능이 100개 이상 언어 프롬프트를 지원해요.",
+    "url": "https://blog.adobe.com/en/publish/2023/07/27/photoshop-releases-new-generative-expand-workflow-global-language-support-for-firefly-powered-features",
+    "source": "notice"
+  }
+]

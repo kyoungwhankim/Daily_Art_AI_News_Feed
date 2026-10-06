@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-10-30-1",
+    "service": "kling",
+    "date": "2025.10.30",
+    "kind": "기능",
+    "title": "이미지 생성 Multi-Reference(Elements) 모델 업데이트",
+    "summary": "이미지 생성용 Elements가 업그레이드돼 레퍼런스 일관성과 프롬프트 충실도가 좋아졌어요. 피사체 간 상호작용과 스타일 표현도 개선됐어요.",
+    "url": "https://kling.ai/release-note/release-notes/2025103072",
+    "source": "notice"
+  }
+]

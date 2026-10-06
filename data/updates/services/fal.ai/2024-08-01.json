@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-08-01-1",
+    "service": "fal.ai",
+    "date": "2024.08.01",
+    "kind": "모델",
+    "title": "Black Forest Labs Flux fal 출시",
+    "summary": "Stable Diffusion 원작 팀이 만든 12B 오픈소스 이미지 모델 Flux를 fal에서 쓸 수 있게 됐어요.",
+    "url": "https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/",
+    "source": "notice"
+  }
+]

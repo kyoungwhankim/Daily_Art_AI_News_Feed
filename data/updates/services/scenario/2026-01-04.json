@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-04-1",
+    "service": "scenario",
+    "date": "2026.01.04",
+    "kind": "API",
+    "title": "Trellis.2 3D 지원",
+    "summary": "Compute에 Trellis.2 3D 생성이 추가되고 Qwen Edit 등 새 학습을 위한 준비가 이뤄졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-17-0",
+    "source": "notice"
+  }
+]

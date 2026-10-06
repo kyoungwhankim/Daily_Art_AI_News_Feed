@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2026-02-23-1",
+    "service": "ltx-studio",
+    "date": "2026.02.23",
+    "kind": "모델",
+    "title": "LTX-2.3과 LTX Desktop 출시",
+    "summary": "모델 구조를 크게 개선한 LTX-2.3과 LTX 엔진 위에 만든 프로덕션용 영상 편집기 LTX Desktop을 함께 내놨어요.",
+    "details": [
+      "새 VAE와 잠재 공간으로 디테일 향상",
+      "텍스트 커넥터 확대로 프롬프트 이해 향상",
+      "이미지 투 비디오 정지·Ken Burns 현상 감소"
+    ],
+    "url": "https://ltx.io/blog/ltx-2-3-release",
+    "source": "notice"
+  }
+]

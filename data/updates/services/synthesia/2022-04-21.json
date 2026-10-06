@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2022-04-21-1",
+    "service": "synthesia",
+    "date": "2022.04.21",
+    "kind": "기능",
+    "title": "Synthesia 화면 녹화기 업데이트",
+    "summary": "화면 녹화 시 스크립트가 자동 재생돼 녹화와 음성을 맞추기 쉬워졌어요.",
+    "url": "https://www.synthesia.io/updates/screen-recorder-update",
+    "source": "notice"
+  }
+]

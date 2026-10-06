@@ -1,0 +1,26 @@
+[
+  {
+    "id": "synthesia-2024-08-14-1",
+    "service": "synthesia",
+    "date": "2024.08.14",
+    "kind": "모델",
+    "title": "Synthesia 새 표현형 AI 아바타 11종",
+    "summary": "표현력 있는 새 AI 아바타 11종을 추가했어요.",
+    "url": "https://www.synthesia.io/updates/11-new-expressive-ai-avatars",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2024-08-14-2",
+    "service": "synthesia",
+    "date": "2024.08.14",
+    "kind": "API",
+    "title": "Synthesia API 자막·썸네일 URL과 video.failed 웹훅",
+    "summary": "영상 조회와 완료 웹훅에 SRT·VTT 자막과 썸네일 다운로드 URL이 포함되고, 새 video.failed 웹훅 이벤트가 추가됐어요.",
+    "details": [
+      "영상 목록에 워크스페이스·내 영상 모두 포함",
+      "템플릿 목록에 커스텀·스톡 템플릿 모두 포함"
+    ],
+    "url": "https://docs.synthesia.io/changelog/api-improvements-august",
+    "source": "dev"
+  }
+]

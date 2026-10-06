@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dream-machine-2026-06-09-1",
+    "service": "dream-machine",
+    "date": "2026.06.09",
+    "kind": "모델",
+    "title": "Ray3.2 모델과 API 출시",
+    "summary": "프레임 단위 제어를 강화한 Ray3.2를 공개하고, Ray 모델 전체 기능을 처음으로 API로 제공했어요.",
+    "details": [
+      "한 클립에 최대 16개 키프레임",
+      "연기·표정 추적 강화",
+      "네이티브 HDR, 16비트 EXR 내보내기",
+      "향상된 Reframe, 1080p 최대 20초"
+    ],
+    "url": "https://lumalabs.ai/news/introducing-ray-3-2",
+    "source": "notice"
+  }
+]

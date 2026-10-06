@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2024-05-21-1",
+    "service": "firefly",
+    "date": "2024.05.21",
+    "kind": "연동",
+    "title": "Lightroom에 Firefly 기반 Generative Remove",
+    "summary": "Lightroom 전 제품군과 Camera Raw에 Firefly로 동작하는 Generative Remove(얼리 액세스)가 들어와 복잡한 배경에서도 방해 요소를 한 번에 지울 수 있어요.",
+    "url": "https://blog.adobe.com/en/publish/2024/05/21/lightroom-introduces-power-adobe-firefly-with-generative-remove",
+    "source": "notice"
+  }
+]

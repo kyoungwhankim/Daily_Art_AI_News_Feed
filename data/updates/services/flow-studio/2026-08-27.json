@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-08-27-1",
+    "service": "flow-studio",
+    "date": "2026.08.27",
+    "kind": "기능",
+    "title": "Flow Studio 대시보드 개편과 Canvas 편집 개선",
+    "summary": "대시보드가 새로 디자인됐고, Canvas에서 다중 선택·복사·복제·전체 화면 미리보기가 가능해졌어요. 3D Editor 씬 복제도 추가됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "marble-2025-12-11-1",
+    "service": "marble",
+    "date": "2025.12.11",
+    "kind": "기능",
+    "title": "Studio 녹화 모드 강화, OpenGL 좌표계 내보내기",
+    "summary": "Studio 녹화 모드에서 미리보기 창 이동과 품질·해상도·비율·프레임레이트·코덱 설정이 가능해졌어요. 월드 내보내기는 OpenGL 좌표계가 기본이 됐어요.",
+    "details": [
+      "스플랫·메시 OpenGL 좌표계로 내보내기(기존 OpenCV)",
+      "SPZ 스플랫 기본 v2 포맷"
+    ],
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-11-2025",
+    "source": "dev"
+  }
+]

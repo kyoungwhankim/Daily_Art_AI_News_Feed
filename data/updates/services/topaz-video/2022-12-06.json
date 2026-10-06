@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2022-12-06-1",
+    "service": "topaz-video",
+    "date": "2022.12.06",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.0.6: 이미지 시퀀스 기본 FPS 설정",
+    "summary": "이미지 시퀀스의 기본 FPS를 바꿀 수 있고 미리보기 자동 재생을 껐어요. GTX 카드의 H.265 인코더 문제도 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-0-6/37526",
+    "source": "notice"
+  }
+]

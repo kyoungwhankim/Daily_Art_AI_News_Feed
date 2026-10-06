@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2023-12-06-1",
+    "service": "iclone",
+    "date": "2023.12.06",
+    "kind": "앱",
+    "title": "iClone 8.4, 군중 시뮬레이션 내장",
+    "summary": "원하는 공간에 대형을 정해 사실적인 3D 군중을 뿌리고 애니메이션하는 Crowd Simulation이 내장됐어요. Motion Director 커스텀 컨트롤도 추가됐어요.",
+    "details": [
+      "Generate Crowd와 군중 템플릿",
+      "Distribute Prop 프롭 분포",
+      "NavMesh 생성",
+      "Motion Director 커스텀 인터랙티브 컨트롤"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

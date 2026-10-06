@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-07-15-1",
+    "service": "suno",
+    "date": "2026.07.15",
+    "kind": "연동",
+    "title": "Suno iMessage 키보드 연동",
+    "summary": "iOS 사용자는 iMessage 키보드에서 곡을 만들어 보내고, 받은 사람은 바로 듣고 노래로 답할 수 있어요.",
+    "url": "https://suno.com/release-notes/imessage-keyboard-integration",
+    "source": "notice"
+  }
+]

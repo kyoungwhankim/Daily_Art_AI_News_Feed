@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2025-08-18-1",
+    "service": "qwen-image",
+    "date": "2025.08.18",
+    "kind": "모델",
+    "title": "첫 이미지 편집 모델 qwen-image-edit 출시",
+    "summary": "Qwen-Image의 글자 렌더링 능력을 편집에 적용한 첫 편집 모델 qwen-image-edit가 나왔어요. 중국어·영어 텍스트를 정밀하게 고치고, 외형 편집과 의미 편집을 모두 지원해요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

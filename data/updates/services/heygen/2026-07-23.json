@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-07-23-1",
+    "service": "heygen",
+    "date": "2026.07.23",
+    "kind": "기능",
+    "title": "HeyGen Video Agent에 HyperFrames 탑재",
+    "summary": "Video Agent가 모션 그래픽을 템플릿에서 고르는 대신 HyperFrames로 HTML 코드로 직접 만들어요. 설명한 어떤 그래픽이든 맞춤으로 생성해요.",
+    "url": "https://heygen.noticeable.news/publications/hyperframes-is-now-inside-video-agent",
+    "source": "notice"
+  }
+]

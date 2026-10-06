@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-11-10-1",
+    "service": "wan",
+    "date": "2025.11.10",
+    "kind": "모델",
+    "title": "캐릭터 애니메이션 Wan2.2-Animate 국제 출시",
+    "summary": "인물 사진에 레퍼런스 영상의 표정·동작을 옮기는 wan2.2-animate-move와 영상 속 인물을 바꾸는 wan2.2-animate-mix가 국제 리전에 나왔어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

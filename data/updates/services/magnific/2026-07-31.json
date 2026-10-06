@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-07-31-1",
+    "service": "magnific",
+    "date": "2026.07.31",
+    "kind": "API",
+    "title": "엔터프라이즈 Audit Logs API",
+    "summary": "엔터프라이즈 팀의 감사 기록을 필터와 커서 페이지네이션으로 조회하는 Audit Logs API를 추가했어요. SIEM·컴플라이언스 연동에 쓸 수 있어요.",
+    "url": "https://docs.magnific.com/changelog#july-31-2026",
+    "source": "dev"
+  }
+]

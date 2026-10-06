@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-24-1",
+    "service": "scenario",
+    "date": "2026.09.24",
+    "kind": "연동",
+    "title": "MCP 공개 카탈로그·공유 메모리",
+    "summary": "에이전트가 공개 워크플로 카탈로그를 보고, 여러 MCP 클라이언트 간에 메모리를 공유할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-24-2",
+    "service": "scenario",
+    "date": "2026.09.24",
+    "kind": "모델",
+    "title": "Gemini 3.8 Flash TTS 추가",
+    "summary": "30개 음성·24개 언어로 표현력 있는 음성과 2인 대화를 만드는 Gemini 3.8 Flash TTS가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-784c121b9b96ded270af2bb343efaa81db6f489d6dc9a7dd762f29148cb328fb",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-07-09-1",
+    "service": "comfyui",
+    "date": "2026.07.09",
+    "kind": "연동",
+    "title": "ComfyUI, Seedream 5.0 Pro 지원",
+    "summary": "편집 정밀도, 캐릭터·제품 일관성, 작은 글자와 다국어 레이아웃이 좋아진 ByteDance Seedream 5.0 Pro를 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/seedream-50-pro",
+    "source": "notice"
+  }
+]

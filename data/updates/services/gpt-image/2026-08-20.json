@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gpt-image-2026-08-20-1",
+    "service": "gpt-image",
+    "date": "2026.08.20",
+    "kind": "API",
+    "title": "gpt-image-2 투명 배경 프리뷰 지원",
+    "summary": "gpt-image-2에서 투명 배경 이미지를 프리뷰로 만들 수 있게 됐어요. background를 transparent로 두고 png나 webp로 출력하면 돼서 스티커·아이콘 같은 에셋 제작에 유용해요.",
+    "details": [
+      "Images API와 Responses API 이미지 생성 도구에서 지원",
+      "gpt-image-2, gpt-image-2-2026-04-21 대상",
+      "jpeg 출력은 투명 배경 미지원"
+    ],
+    "url": "https://developers.openai.com/api/docs/changelog",
+    "source": "dev"
+  }
+]

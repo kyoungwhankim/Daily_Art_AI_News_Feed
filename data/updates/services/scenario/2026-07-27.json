@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-07-27-1",
+    "service": "scenario",
+    "date": "2026.07.27",
+    "kind": "연동",
+    "title": "MCP 전용 OAuth 동의 화면",
+    "summary": "에이전트를 Scenario에 연결할 때 브랜드화된 OAuth 동의 페이지를 쓰게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-24-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-27-2",
+    "service": "scenario",
+    "date": "2026.07.27",
+    "kind": "모델",
+    "title": "3D 가우시안 스플래팅·Rodin·Tripo 분할",
+    "summary": "세 제공사의 3D 가우시안 스플래팅, Tripo Segmentation, Rodin Bang! 파츠 분할, Seed Audio 다국어 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-20-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-09-05-1",
+    "service": "topaz-video",
+    "date": "2023.09.05",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.4.3: Apple Silicon 동적 비트레이트",
+    "summary": "Apple Silicon에서 동적 비트레이트를 쓸 수 있고 FFV1에 MOV 컨테이너를 지원해요. 이미지 시퀀스 기본 FPS 설정도 추가됐어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-4-3/51298",
+    "source": "notice"
+  }
+]

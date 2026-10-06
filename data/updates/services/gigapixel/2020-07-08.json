@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-07-08-1",
+    "service": "gigapixel",
+    "date": "2020.07.08",
+    "kind": "앱",
+    "title": "Gigapixel v5.0.2: 외부 편집기·크기 제한 버그 수정",
+    "summary": "외부 편집기로 실행할 때 원본을 덮어쓰지 않고 출력 옵션을 고를 수 있게 됐고, 32,000×32,000 크기 제한이 양쪽 방향에 제대로 적용돼요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-0-2/15496",
+    "source": "notice"
+  }
+]

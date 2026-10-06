@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2023-11-16-1",
+    "service": "invokeai",
+    "date": "2023.11.16",
+    "kind": "기능",
+    "title": "InvokeAI 3.4.0: LCM-LoRA와 HiRes Fix 복귀",
+    "summary": "InvokeAI 3.4.0에서 LCM-LoRA를 기본 지원하고 HiRes Fix가 돌아왔어요. LoRA·텍스트 인코더 로딩도 크게 빨라졌어요.",
+    "details": [
+      "커뮤니티 노드를 nodes 폴더에 넣어 설치",
+      "ControlNet과 T2I-Adapter 동시 사용",
+      "워크플로에서 FreeU, 다중 이미지 IP-Adapter",
+      "중간 이미지 디스크 저장 중단"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-v3-4-0/",
+    "source": "notice"
+  }
+]

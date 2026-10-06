@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2026-05-21-1",
+    "service": "flux",
+    "date": "2026.05.21",
+    "kind": "기능",
+    "title": "객체 제거 도구 FLUX Erase 출시",
+    "summary": "이미지와 마스크만 넣으면 사물·사람·글자·워터마크를 지우고 그림자 같은 흔적까지 자연스럽게 복원하는 FLUX Erase를 출시했어요.",
+    "details": [
+      "프롬프트 불필요, 이진 마스크 입력",
+      "엔드포인트 /v1/flux-tools/erase-v1"
+    ],
+    "url": "https://bfl.ai/blog/flux-erase-remove-anything-leave-no-trace",
+    "source": "notice"
+  }
+]

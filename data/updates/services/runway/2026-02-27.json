@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-02-27-1",
+    "service": "runway",
+    "date": "2026.02.27",
+    "kind": "기능",
+    "title": "Runway에 Nano Banana 2 추가",
+    "summary": "일관성 높은 이미지 생성·편집 모델 Nano Banana 2를 Runway 유료 플랜에서 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

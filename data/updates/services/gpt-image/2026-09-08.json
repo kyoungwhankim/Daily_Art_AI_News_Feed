@@ -1,0 +1,18 @@
+[
+  {
+    "id": "gpt-image-2026-09-08-1",
+    "service": "gpt-image",
+    "date": "2026.09.08",
+    "kind": "모델",
+    "title": "ChatGPT Images 2.5와 GPT Image 2.5 Sunburst·Flare 출시",
+    "summary": "ChatGPT Images 2.5가 공개돼 아이디어, 스케치, 참고 사진을 더 개인화되고 완성도 높은 이미지로 바꿔 줘요. API에는 편집 정밀도용 Sunburst와 빠른 생성용 Flare가 나왔어요.",
+    "details": [
+      "API: gpt-image-2.5-sunburst(정밀 편집), gpt-image-2.5-flare(빠른 일상 생성)",
+      "Image API와 Responses API 이미지 생성 도구에서 사용",
+      "새 quality 설정 xhigh, max 지원",
+      "GPT Image 2와 같은 토큰 요금 적용"
+    ],
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "source": "notice"
+  }
+]

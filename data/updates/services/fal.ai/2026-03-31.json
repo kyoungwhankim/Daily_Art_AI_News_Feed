@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-31-1",
+    "service": "fal.ai",
+    "date": "2026.03.31",
+    "kind": "기능",
+    "title": "앱 분석 다중 엔드포인트 집계·로그 필터",
+    "summary": "App Analytics에서 모든 엔드포인트를 합산해 보고, 앱 목록에 GPU·큐 지표, 로그에 엔드포인트 필터와 출처 열이 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#march-31-2026",
+    "source": "dev"
+  }
+]

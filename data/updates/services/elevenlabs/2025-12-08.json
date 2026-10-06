@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-12-08-1",
+    "service": "elevenlabs",
+    "date": "2025.12.08",
+    "kind": "API",
+    "title": "음악 생성 단어 타임스탬프",
+    "summary": "음악 생성에 단어 단위 타임스탬프가 생기고, 보이스 엔드포인트에 안정성·유사도·스타일 설정이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/12/8",
+    "source": "dev"
+  }
+]

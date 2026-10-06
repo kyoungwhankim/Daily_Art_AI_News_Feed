@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2023-09-29-1",
+    "service": "synthesia",
+    "date": "2023.09.29",
+    "kind": "기능",
+    "title": "Synthesia 영상 번역 기능 출시",
+    "summary": "Synthesia 안에서 영상을 29개 언어로 몇 초 만에 번역할 수 있게 됐어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/translation-is-here",
+    "source": "notice"
+  }
+]

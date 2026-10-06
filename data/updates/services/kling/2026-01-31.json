@@ -1,0 +1,30 @@
+[
+  {
+    "id": "kling-2026-01-31-1",
+    "service": "kling",
+    "date": "2026.01.31",
+    "kind": "모델",
+    "title": "Kling 3.0 영상 모델 전면 출시",
+    "summary": "VIDEO O1과 2.6을 통합한 Kling 3.0이 정식 출시돼 멀티샷, 3인 이상 캐릭터 일관성, 다국어·방언 대사, 15초 영상을 지원해요. VIDEO 3.0 Omni도 함께 나왔어요.",
+    "details": [
+      "텍스트·이미지·레퍼런스-투-비디오와 영상 편집 통합",
+      "시작 프레임+요소 레퍼런스 지원",
+      "중·영·일·한·스페인어 대사 지원"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/whbvu8hsip",
+    "source": "notice"
+  },
+  {
+    "id": "kling-2026-01-31-2",
+    "service": "kling",
+    "date": "2026.01.31",
+    "kind": "모델",
+    "title": "Kling IMAGE 3.0 시리즈 출시, 4K 출력·시리즈 모드",
+    "summary": "Kling IMAGE 3.0과 IMAGE 3.0 Omni가 나와 2K·4K 이미지를 바로 출력하고, 연속 장면을 만드는 Image Series 모드를 지원해요.",
+    "details": [
+      "스타일 전환, 인물 레퍼런스, 다중 이미지 합성, 부분 재편집 통합"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/rz3idhopum",
+    "source": "notice"
+  }
+]

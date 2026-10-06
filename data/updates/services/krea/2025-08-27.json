@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2025-08-27-1",
+    "service": "krea",
+    "date": "2025.08.27",
+    "kind": "기능",
+    "title": "Krea Realtime Video 공개",
+    "summary": "재생보다 빠르게 영상을 생성해 입력을 바꾸는 즉시 결과를 보여 주는 실시간 영상 생성을 선보였어요. 캔버스 페인팅, 텍스트, 웹캠, 화면 스트리밍으로 영상을 조종할 수 있어요.",
+    "details": [
+      "프레임 간 동작·정체성·스타일 일관성 유지",
+      "캔버스에 그린 도형을 바로 영상으로 변환",
+      "웹캠·화면 스트림에 생성형 필터 적용"
+    ],
+    "url": "https://www.krea.ai/blog/announcing-realtime-video",
+    "source": "notice"
+  }
+]

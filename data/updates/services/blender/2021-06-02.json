@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2021-06-02-1",
+    "service": "blender",
+    "date": "2021.06.02",
+    "kind": "앱",
+    "title": "Blender 2.93 LTS 출시",
+    "summary": "Geometry Nodes에 노드 22개가 추가되는 등 2.x 시리즈를 마무리하는 Blender 2.93 LTS가 나왔어요.",
+    "url": "https://www.blender.org/news/blender-2-93-release/",
+    "source": "notice"
+  }
+]

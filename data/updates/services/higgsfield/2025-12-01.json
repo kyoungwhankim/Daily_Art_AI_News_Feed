@@ -1,0 +1,12 @@
+[
+  {
+    "id": "higgsfield-2025-12-01-1",
+    "service": "higgsfield",
+    "date": "2025.12.01",
+    "kind": "모델",
+    "title": "Alibaba Z-Image 탑재",
+    "summary": "가볍고 매우 빠른 Alibaba의 오픈소스 이미지 모델 Z-Image가 Higgsfield에 추가됐어요.",
+    "url": "https://higgsfield.ai/blog/Z-Image-New-from-Alibaba-in-AI-Image-Generation",
+    "source": "notice"
+  }
+]

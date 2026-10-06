@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-02-17-1",
+    "service": "flux",
+    "date": "2026.02.17",
+    "kind": "API",
+    "title": "웹훅 페이로드를 폴링 응답과 통일",
+    "summary": "웹훅 페이로드의 상태 값이 폴링 응답처럼 SUCCESS 대신 Ready로 바뀌었어요. SUCCESS를 확인하는 웹훅 처리 코드는 수정이 필요해요.",
+    "url": "https://docs.bfl.ai/release-notes#february-17-2026",
+    "source": "dev"
+  }
+]

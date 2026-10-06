@@ -1,0 +1,19 @@
+[
+  {
+    "id": "elevenlabs-2026-09-28-1",
+    "service": "elevenlabs",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Eleven v4·v4 Turbo 출시",
+    "summary": "감정 표현이 더 풍부하고 보이스 클로닝이 강해진 Eleven v4와, 90개 이상 언어 실시간 대화용 v4 Turbo가 ElevenAgents·ElevenCreative·API에 나왔어요.",
+    "details": [
+      "Eleven v4: 감정 뉘앙스·보이스 클로닝 강화",
+      "Eleven v4 Turbo: 가장 빠른 감성 모델",
+      "STT 자연어 전사 편집 지시",
+      "Flows 템플릿 API",
+      "Text to Dialogue 연속성 유지"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-v4",
+    "source": "notice"
+  }
+]

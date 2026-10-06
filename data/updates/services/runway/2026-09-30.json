@@ -1,0 +1,30 @@
+[
+  {
+    "id": "runway-2026-09-30-1",
+    "service": "runway",
+    "date": "2026.09.30",
+    "kind": "기능",
+    "title": "Runway Ads 공개: 퍼포먼스 광고 자동화 엔진",
+    "summary": "광고 계정과 브랜드 키트를 연결하면 영상·이미지 광고를 만들고 Meta·Google·TikTok에 게시한 뒤 성과를 읽어 다음 변형을 만드는 새 제품 Runway Ads를 발표했어요.",
+    "details": [
+      "광고 소재 생성부터 게시·성과 분석·반복까지 엔드투엔드 자동화",
+      "Meta, Google, TikTok 광고 플랫폼과 직접 연결"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-runway-ads",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-09-30-2",
+    "service": "runway",
+    "date": "2026.09.30",
+    "kind": "API",
+    "title": "Runway Dev에 ElevenLabs Eleven v4 추가",
+    "summary": "Runway Dev API에서 Eleven v4(eleven_v4) 음성 합성을 쓸 수 있게 됐어요. [laughs] 같은 오디오 태그로 표현력 있는 음성을 만들 수 있어요.",
+    "details": [
+      "스크립트 최대 2,500자, Eleven v3와 같은 프리셋 보이스",
+      "2026년 10월 12일까지 1,000자당 2.2크레딧, 이후 5크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#eleven-v4-on-runway-dev",
+    "source": "dev"
+  }
+]

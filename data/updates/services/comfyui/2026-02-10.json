@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-02-10-1",
+    "service": "comfyui",
+    "date": "2026.02.10",
+    "kind": "연동",
+    "title": "ComfyUI, Kling 3.0 모델군 지원",
+    "summary": "한 번에 여러 컷을 만들고 다국어 대사와 15초 생성을 지원하는 Kling Video·Image 3.0과 Omni 버전을 API 노드로 쓸 수 있어요.",
+    "details": [
+      "v0.13.0: LTX2용 EasyCache",
+      "Cosmos-Predict2·Anima FP16으로 메모리 절감"
+    ],
+    "url": "https://blog.comfy.org/p/kling-30-models-are-now-available",
+    "source": "notice"
+  }
+]

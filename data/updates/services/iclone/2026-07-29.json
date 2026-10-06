@@ -1,0 +1,19 @@
+[
+  {
+    "id": "iclone-2026-07-29-1",
+    "service": "iclone",
+    "date": "2026.07.29",
+    "kind": "앱",
+    "title": "iClone 8.74, AccuFACE 2 호환과 Live Face 녹화",
+    "summary": "Motion LIVE가 AccuFACE 2와 호환되고, 표정 커브 매핑을 직접 조절할 수 있어요. iPhone Live Face 앱에서 연기자 얼굴 영상을 녹화·저장할 수도 있어요.",
+    "details": [
+      "Motion LIVE AccuFACE 2 호환",
+      "Expression Curve 매핑 자유 조절",
+      "부분 중립 표정 Set Neutral (Partial)",
+      "Live Face iOS 앱 영상 녹화·사진첩 저장",
+      "동일 텍스처 맵 링크·인스턴스 옵션"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

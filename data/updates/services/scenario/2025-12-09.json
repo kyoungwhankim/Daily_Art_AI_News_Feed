@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-12-09-1",
+    "service": "scenario",
+    "date": "2025.12.09",
+    "kind": "API",
+    "title": "거버넌스 메타데이터 검색·공개 앱 60종",
+    "summary": "검색에 규정·거버넌스 메타데이터가 지원되고 60개 이상의 공개 앱이 워크플로로 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-101-0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-05-29-1",
+    "service": "runway",
+    "date": "2026.05.29",
+    "kind": "API",
+    "title": "Runway Dev에 HappyHorse 1.0 추가",
+    "summary": "HappyHorse 1.0으로 텍스트나 첫 프레임 이미지에서 3–15초 영상을 만들 수 있어요. 720p·1080p 10가지 출력 크기를 지원해요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#happyhorse-10",
+    "source": "dev"
+  }
+]

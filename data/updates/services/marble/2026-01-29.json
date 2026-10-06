@@ -1,0 +1,12 @@
+[
+  {
+    "id": "marble-2026-01-29-1",
+    "service": "marble",
+    "date": "2026.01.29",
+    "kind": "기능",
+    "title": "Composer 메시 가져오기, API 영상 용량 확대",
+    "summary": "Composer로 메시를 가져올 수 있게 됐어요. API의 영상 프롬프트 파일 한도는 100MB로 늘었어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#january-29-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-06-11-1",
+    "service": "scenario",
+    "date": "2025.06.11",
+    "kind": "기능",
+    "title": "영상 생성 도구 출시(Veo 3 등)",
+    "summary": "Google Veo 3 등 20여 개 영상 모델로 텍스트·이미지에서 영상을 만드는 영상 생성 도구가 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v1-86-introducing-video-generation",
+    "source": "notice"
+  }
+]

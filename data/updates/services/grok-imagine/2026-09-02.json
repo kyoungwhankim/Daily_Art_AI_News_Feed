@@ -1,0 +1,15 @@
+[
+  {
+    "id": "grok-imagine-2026-09-02-1",
+    "service": "grok-imagine",
+    "date": "2026.09.02",
+    "kind": "종료",
+    "title": "grok-imagine-image-quality 11월 2일 종료 예고",
+    "summary": "grok-imagine-image-quality 모델이 11월 2일 종료되고, 이후 요청은 더 저렴한 grok-imagine-image-2.0 low 품질로 처리돼요. 요청·응답 형식은 그대로예요.",
+    "details": [
+      "grok-imagine-image(1.0)는 영향 없음"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes#grok-imagine-image-quality-retirement-on-november-2",
+    "source": "dev"
+  }
+]

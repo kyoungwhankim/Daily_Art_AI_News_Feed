@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-06-13-1",
+    "service": "topaz-video",
+    "date": "2023.06.13",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.3.0: 얼굴 개선 모델 Iris 추가",
+    "summary": "얼굴 개선과 저·중화질 영상 향상을 위한 새 Iris 모델과 원본 디테일 복원 옵션, DPX 출력 지원을 추가했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-3-0/46759",
+    "source": "notice"
+  }
+]

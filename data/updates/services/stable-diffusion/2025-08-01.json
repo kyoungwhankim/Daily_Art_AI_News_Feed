@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-08-01-1",
+    "service": "stable-diffusion",
+    "date": "2025.08.01",
+    "kind": "요금",
+    "title": "일부 API 서비스 가격 인상 시행",
+    "summary": "8월 1일부터 일부 Stability AI API 서비스 가격이 인상됐어요. 바뀐 가격은 플랫폼 가격 페이지에서 확인할 수 있어요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

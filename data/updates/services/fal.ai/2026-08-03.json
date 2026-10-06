@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-08-03-1",
+    "service": "fal.ai",
+    "date": "2026.08.03",
+    "kind": "기능",
+    "title": "배포 메시지·어노테이션 기능",
+    "summary": "fal deploy 때 리비전마다 메시지와 GIT_SHA 같은 어노테이션을 붙일 수 있어요. 대시보드 Versions 페이지와 revisions API, Python SDK에서 확인할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#august-3-2026",
+    "source": "dev"
+  }
+]

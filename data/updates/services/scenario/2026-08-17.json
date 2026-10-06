@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-08-17-1",
+    "service": "scenario",
+    "date": "2026.08.17",
+    "kind": "모델",
+    "title": "Grok Imagine Image 2.0·ElevenLabs Dubbing V2 등",
+    "summary": "Grok Imagine Image 2.0, ElevenLabs Dubbing V2, MiniMax Music 3.0, Seedance 2.5 1080p가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.21.2",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-17-2",
+    "service": "scenario",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "MiniMax 음악·Grok Imagine 2.0·1080p 영상",
+    "summary": "MiniMax 음악 생성과 Grok Imagine 2.0이 추가되고 Seedance 2.5가 1080p를 지원해요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-8-0",
+    "source": "notice"
+  }
+]

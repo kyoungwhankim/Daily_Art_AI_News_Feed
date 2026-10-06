@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-08-11-1",
+    "service": "fal.ai",
+    "date": "2025.08.11",
+    "kind": "모델",
+    "title": "Wan 2.2 14B 텍스트-이미지 추론·학습 제공",
+    "summary": "영상 모델 Wan 2.2를 이미지 생성기로 쓰는 추론과 학습 엔드포인트가 fal에 추가됐어요.",
+    "url": "https://blog.fal.ai/introducing-wan-2-2-text-to-image/",
+    "source": "notice"
+  }
+]

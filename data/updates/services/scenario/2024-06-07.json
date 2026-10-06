@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-06-07-1",
+    "service": "scenario",
+    "date": "2024.06.07",
+    "kind": "연동",
+    "title": "Hugging Face·Civitai 모델 가져오기",
+    "summary": "Hugging Face와 Civitai의 모델을 Scenario로 바로 가져올 수 있고 HEIC 이미지도 올릴 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-58-upload-models-from-hugging-face-and-civit-ai",
+    "source": "notice"
+  }
+]

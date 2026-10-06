@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2025-08-11-1",
+    "service": "claude",
+    "date": "2025.08.11",
+    "kind": "기능",
+    "title": "지난 대화 검색 기능",
+    "summary": "Max·Team·Enterprise 사용자가 Claude에게 과거 채팅을 검색하게 해 맥락을 이어가고 여러 주제를 종합할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-08-11-2",
+    "service": "claude",
+    "date": "2025.08.11",
+    "kind": "API",
+    "title": "급격한 사용량 증가 시 429 오류로 변경",
+    "summary": "API 사용량이 급증하면 기존 529 대신 429(rate_limit_error) 오류가 반환될 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+    "source": "dev"
+  }
+]

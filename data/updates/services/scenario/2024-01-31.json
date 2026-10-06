@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-31-1",
+    "service": "scenario",
+    "date": "2024.01.31",
+    "kind": "API",
+    "title": "이미지 편집 쿨다운·업스케일 파라미터 정리",
+    "summary": "이미지 편집 API에 쿨다운이 생겨 요금제 한도를 넘어 쓸 수 있고 일부 업스케일 파라미터가 지원 중단됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-16-0-january-31th-2024",
+    "source": "dev"
+  }
+]

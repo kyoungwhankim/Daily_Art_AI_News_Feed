@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-12-27-1",
+    "service": "gigapixel",
+    "date": "2024.12.27",
+    "kind": "앱",
+    "title": "Gigapixel v8.1.1: High Fidelity 격자 아티팩트 수정",
+    "summary": "High Fidelity 모델의 격자 아티팩트와 Redefine 12k 픽셀 검사를 없애는 등 여러 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-1-1/85063",
+    "source": "notice"
+  }
+]

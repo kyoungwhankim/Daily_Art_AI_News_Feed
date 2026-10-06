@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-01-22-1",
+    "service": "ltx-studio",
+    "date": "2026.01.22",
+    "kind": "모델",
+    "title": "LTX Studio에 Z-Image 추가",
+    "summary": "Alibaba Tongyi Lab의 고속 텍스트 투 이미지 모델 Z-Image를 모든 요금제의 Gen Space에서 쓸 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

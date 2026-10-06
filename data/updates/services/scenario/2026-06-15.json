@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-06-15-1",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "Prompt Spark v3·승인 노드",
+    "summary": "더 빠르게 아이디어를 내는 Prompt Spark v3와 승인 노드가 추가되고 3D 메시 내보내기가 안정화됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-122-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-06-15-2",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "연동",
+    "title": "MCP, Figma Make·Le Chat 연결",
+    "summary": "Scenario MCP 서버를 Figma Make와 Mistral Le Chat에 연결할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-14-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-15-3",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "기능",
+    "title": "Scenario Agent 웹 검색·이미지 지원",
+    "summary": "Scenario Agent가 웹 검색과 이미지 끌어놓기를 지원해요. Cartwheel과 Pixelcut 모델도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-14-0",
+    "source": "notice"
+  }
+]

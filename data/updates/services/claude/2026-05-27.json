@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-27-1",
+    "service": "claude",
+    "date": "2026.05.27",
+    "kind": "API",
+    "title": "응답 usage에 사고 토큰 수 표시",
+    "summary": "Messages API 응답의 usage에 과금된 출력 토큰 중 확장 사고 토큰 수가 표시돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-27-2026",
+    "source": "dev"
+  }
+]

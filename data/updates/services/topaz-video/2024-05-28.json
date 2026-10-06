@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2024-05-28-1",
+    "service": "topaz-video",
+    "date": "2024.05.28",
+    "kind": "앱",
+    "title": "Topaz Video AI 5.1: 즉시 렌더링과 멀티 GPU",
+    "summary": "재생을 누르면 바로 미리보기를 렌더링하는 Instant Rendering(실험), Resolve용 프레임 보간, Pro용 멀티 GPU 모드를 추가했어요.",
+    "details": [
+      "Resolve에서 Apollo·Aion·Chronos로 최대 16배 슬로모션",
+      "새 시작 화면과 환경설정 UI",
+      "입력 색공간 직접 지정"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-5-1-5-1-2/70222",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2026-02-04-1",
+    "service": "fal.ai",
+    "date": "2026.02.04",
+    "kind": "기능",
+    "title": "로그 전체 화면 보기",
+    "summary": "로그 페이지가 전체 화면으로 열려 더 많은 로그 줄을 한 번에 볼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#february-4-2026",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2026-02-04-2",
+    "service": "fal.ai",
+    "date": "2026.02.04",
+    "kind": "모델",
+    "title": "Kling 3.0 fal 출시 당일 제공",
+    "summary": "최대 6컷 스토리보드, 재사용 요소로 일관된 캐릭터, 오디오·이미지 멀티모달 프롬프트를 지원하는 Kling 3.0을 fal에서 바로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/kling-3-0-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

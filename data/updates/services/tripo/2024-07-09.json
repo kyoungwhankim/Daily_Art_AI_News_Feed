@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-07-09-1",
+    "service": "tripo",
+    "date": "2024.07.09",
+    "kind": "API",
+    "title": "드래프트 생성 모델 버전 선택 지원",
+    "summary": "여러 엔드포인트에 새 파라미터가 추가되고, 드래프트 생성에서 모델 버전을 고를 수 있게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-1-2024-07-09",
+    "source": "dev"
+  }
+]

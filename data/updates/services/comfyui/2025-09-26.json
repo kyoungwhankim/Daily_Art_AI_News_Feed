@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-09-26-1",
+    "service": "comfyui",
+    "date": "2025.09.26",
+    "kind": "모델",
+    "title": "ComfyUI, HuMo·Chroma1-Radiance 네이티브 지원",
+    "summary": "텍스트·이미지·오디오로 사람 중심 영상을 만드는 HuMo와 픽셀 공간에서 생성하는 Chroma1-Radiance를 ComfyUI 0.3.60부터 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/humo-and-chroma1-radiance-support",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-02-1",
+    "service": "meshy",
+    "date": "2026.09.02",
+    "kind": "API",
+    "title": "Animation API, 한 번에 최대 10개 동작",
+    "summary": "Animation API가 action_ids로 최대 10개 프리셋 동작을 한 파일의 개별 클립으로 받을 수 있게 됐어요. 동작당 3크레딧이에요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-09-17-1",
+    "service": "nvidia-studio",
+    "date": "2025.09.17",
+    "kind": "연동",
+    "title": "RTX 가속 Streamlabs Streaming Assistant",
+    "summary": "라이브 방송 공동 진행·제작·문제 해결을 돕는 AI 에이전트 Streamlabs Streaming Assistant가 RTX 가속으로 소개됐어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-logitech-streamlabs-agent/",
+    "source": "notice"
+  }
+]

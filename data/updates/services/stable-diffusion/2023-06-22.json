@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2023-06-22-1",
+    "service": "stable-diffusion",
+    "date": "2023.06.22",
+    "kind": "모델",
+    "title": "SDXL 0.9 공개",
+    "summary": "SDXL 베타보다 이미지·구도 디테일이 크게 좋아진 SDXL 0.9를 공개했어요. Clipdrop에서 바로 써 볼 수 있고 연구용 가중치도 나왔어요.",
+    "details": [
+      "7월 중순 1.0 오픈 공개 예정",
+      "소비자용 GPU에서 실행 가능"
+    ],
+    "url": "https://stability.ai/news-updates/sdxl-09-stable-diffusion",
+    "source": "notice"
+  }
+]

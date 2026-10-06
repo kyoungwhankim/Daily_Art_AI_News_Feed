@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-12-18-1",
+    "service": "runway",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "Tool Mode에 오디오 탭 추가",
+    "summary": "Tool Mode의 Audio 탭에서 Text to Speech를 쓸 수 있고, 효과음(SFX)과 Speech to Speech용 오디오 Apps도 새로 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

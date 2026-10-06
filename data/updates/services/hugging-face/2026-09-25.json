@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-09-25-1",
+    "service": "hugging-face",
+    "date": "2026.09.25",
+    "kind": "기능",
+    "title": "HF Jobs에 실시간 리소스 사용량 패널 추가",
+    "summary": "Job 페이지 로그 옆에 Resources 패널이 생겨, 작업이 도는 동안 CPU·RAM·GPU·VRAM 사용량을 몇 초 간격으로 실시간 확인할 수 있어요.",
+    "url": "https://huggingface.co/changelog/live-resource-usage-on-jobs",
+    "source": "notice"
+  }
+]

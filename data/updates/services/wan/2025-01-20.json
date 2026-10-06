@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-01-20-1",
+    "service": "wan",
+    "date": "2025.01.20",
+    "kind": "모델",
+    "title": "Wan2.1 이미지-투-비디오 Plus 출시",
+    "summary": "정지 이미지를 영상으로 바꾸는 wan2.1-i2v-plus가 Model Studio에 추가됐어요. 복잡한 동작과 영화 같은 화질을 지원해요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

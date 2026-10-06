@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-07-13-1",
+    "service": "magnific",
+    "date": "2026.07.13",
+    "kind": "API",
+    "title": "Flux Kontext Max·FLUX.2 Flex API",
+    "summary": "Black Forest Labs의 고품질 맥락 편집 모델 Flux Kontext Max와 크기를 자유롭게 정하는 FLUX.2 Flex 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#july-13-2026",
+    "source": "dev"
+  }
+]

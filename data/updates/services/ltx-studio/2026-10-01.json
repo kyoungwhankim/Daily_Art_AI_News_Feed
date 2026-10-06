@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-10-01-1",
+    "service": "ltx-studio",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "3D 블로킹을 렌더로 바꾸는 Layout to Render",
+    "summary": "3D 블로킹 장면을 프롬프트나 레퍼런스 이미지로 완성도 높은 렌더로 바꿔 줘요. 카메라와 구도, 프레임 정렬은 그대로 유지돼요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

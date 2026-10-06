@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-02-10-1",
+    "service": "unity-ai",
+    "date": "2026.02.10",
+    "kind": "기능",
+    "title": "AI Assistant: Unity 6.0 지원 재개",
+    "summary": "AI Assistant·Generators 1.6.0-pre.2에서 Unity 6.0 지원이 다시 켜졌고, 설정 페이지에서 AI Gateway 항목이 빠졌어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#160-pre2---2026-02-10",
+    "source": "dev"
+  }
+]

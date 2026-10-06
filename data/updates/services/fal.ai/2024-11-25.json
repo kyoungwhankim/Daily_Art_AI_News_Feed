@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2024-11-25-1",
+    "service": "fal.ai",
+    "date": "2024.11.25",
+    "kind": "기능",
+    "title": "FLUX Portrait Trainer 출시",
+    "summary": "인물 사진에 특화돼 디테일과 닮음을 높인 FLUX 포트레이트 학습기를 fal이 공개했어요.",
+    "url": "https://blog.fal.ai/introducing-the-flux-portrait-trainer/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-06-16-1",
+    "service": "hugging-face",
+    "date": "2025.06.16",
+    "kind": "기능",
+    "title": "Models 페이지 새 필터 옵션",
+    "summary": "Models 페이지에서 작업·파라미터 수·라이브러리·지원 앱·Inference Providers 기준으로 모델을 바로 걸러 볼 수 있게 됐어요.",
+    "url": "https://huggingface.co/changelog/new-models-filtering-options",
+    "source": "notice"
+  }
+]

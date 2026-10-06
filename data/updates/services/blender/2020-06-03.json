@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2020-06-03-1",
+    "service": "blender",
+    "date": "2020.06.03",
+    "kind": "앱",
+    "title": "Blender 2.83 LTS 출시: 첫 장기 지원 버전",
+    "summary": "Blender 첫 LTS인 2.83이 나왔어요. OpenXR 기반 VR 장면 확인, OpenVDB 가져오기, OptiX 뷰포트 디노이저, Cloth 브러시가 추가됐어요.",
+    "url": "https://www.blender.org/news/blender-2-83-release/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-09-19-1",
+    "service": "suno",
+    "date": "2024.09.19",
+    "kind": "기능",
+    "title": "Suno Exclude Styles",
+    "summary": "Pro·Premier 사용자가 곡을 만들 때 특정 악기·스타일·보컬을 빼도록 지정할 수 있어요.",
+    "url": "https://suno.com/release-notes/exclude-styles",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-09-01-1",
+    "service": "elevenlabs",
+    "date": "2025.09.01",
+    "kind": "API",
+    "title": "Gemini 2.5 Flash Lite HIPAA 승인",
+    "summary": "HIPAA 준수 대화에 쓸 수 있는 모델 목록에 Gemini 2.5 Flash Lite가 추가되고 SDK·MCP 서버가 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/1",
+    "source": "dev"
+  }
+]

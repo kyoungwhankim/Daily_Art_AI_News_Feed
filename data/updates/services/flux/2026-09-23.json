@@ -1,0 +1,15 @@
+[
+  {
+    "id": "flux-2026-09-23-1",
+    "service": "flux",
+    "date": "2026.09.23",
+    "kind": "모델",
+    "title": "로봇 제어용 오픈 모델 FLUX 3 Action 공개",
+    "summary": "FLUX 3 기반 7B 월드 액션 모델 FLUX 3 Action을 오픈 웨이트로 공개했어요. RoboLab 벤치마크 1위를 기록했어요.",
+    "details": [
+      "Hugging Face 가중치, GitHub 코드 제공"
+    ],
+    "url": "https://bfl.ai/blog/flux-3-action",
+    "source": "notice"
+  }
+]

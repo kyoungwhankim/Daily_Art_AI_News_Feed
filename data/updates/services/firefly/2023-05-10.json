@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-05-10-1",
+    "service": "firefly",
+    "date": "2023.05.10",
+    "kind": "연동",
+    "title": "Firefly, Google Bard에 탑재 예정",
+    "summary": "Firefly가 Google Bard의 텍스트→이미지 기능을 맡고, 만든 이미지를 Adobe Express에서 이어 편집할 수 있게 된다고 발표했어요. 베타 첫 달에 7천만 장이 생성됐어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/05/10/adobe-firefly-adobe-express-google-bard",
+    "source": "notice"
+  }
+]

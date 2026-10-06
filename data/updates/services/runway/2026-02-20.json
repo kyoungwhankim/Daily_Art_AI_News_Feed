@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-02-20-1",
+    "service": "runway",
+    "date": "2026.02.20",
+    "kind": "기능",
+    "title": "Kling 3.0·Sora 2 Pro 등 외부 모델 대거 추가",
+    "summary": "Kling 3.0, Kling 2.6 Pro, WAN2.2 Animate, GPT-Image-1.5, Sora 2 Pro 등 다양한 외부 모델을 Runway 안에서 바로 쓸 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

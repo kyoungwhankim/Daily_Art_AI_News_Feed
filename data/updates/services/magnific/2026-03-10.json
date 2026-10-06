@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-03-10-1",
+    "service": "magnific",
+    "date": "2026.03.10",
+    "kind": "API",
+    "title": "로열티 프리 Sound Effects API",
+    "summary": "앰비언스·폴리·트랜지션 등 42개 카테고리의 로열티 프리 효과음을 검색하고 내려받는 Sound Effects API를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#march-10-2026",
+    "source": "dev"
+  }
+]

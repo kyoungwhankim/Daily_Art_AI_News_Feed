@@ -1,0 +1,18 @@
+[
+  {
+    "id": "stable-audio-2026-05-20-1",
+    "service": "stable-audio",
+    "date": "2026.05.20",
+    "kind": "모델",
+    "title": "오픈 웨이트 Stable Audio 3.0 모델군",
+    "summary": "완전 라이선스 데이터로 학습한 Stable Audio 3.0 모델군이 나왔어요. 최대 6분 가변 길이 생성을 지원하고 Small·Medium은 Hugging Face에 공개됐어요.",
+    "details": [
+      "Small·Medium 오픈 웨이트 공개",
+      "Large는 API·셀프호스팅 제공",
+      "최대 6분 가변 길이 생성",
+      "Community License로 상업적 이용"
+    ],
+    "url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+    "source": "notice"
+  }
+]

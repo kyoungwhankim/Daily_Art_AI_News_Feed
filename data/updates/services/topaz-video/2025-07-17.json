@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-07-17-1",
+    "service": "topaz-video",
+    "date": "2025.07.17",
+    "kind": "앱",
+    "title": "Topaz Video AI 7.1: 장면 전환 아티팩트 억제",
+    "summary": "장면 감지를 켜면 컷마다 독립적으로 프레임 보간해 장면 전환부 아티팩트를 줄이는 기능을 추가했어요. Intel Mac용 알파 빌드도 제공해요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-7-1/93448",
+    "source": "notice"
+  }
+]

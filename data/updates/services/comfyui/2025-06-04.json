@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-06-04-1",
+    "service": "comfyui",
+    "date": "2025.06.04",
+    "kind": "기능",
+    "title": "ComfyUI 노드 도움말 메뉴 도입",
+    "summary": "노드 라이브러리에서 각 노드의 사용법을 바로 볼 수 있는 도움말 페이지가 UI에 내장됐어요. 직접 쓴 문서가 여러 언어로 제공돼요.",
+    "url": "https://blog.comfy.org/p/introducing-the-node-help-menu",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-08-26-1",
+    "service": "figma-ai",
+    "date": "2026.08.26",
+    "kind": "앱",
+    "title": "에이전트 채팅 패널을 새 창으로 열기",
+    "summary": "macOS·Windows 데스크톱 앱에서 Figma 에이전트 채팅 패널을 별도 창으로 띄워, 다른 도구를 쓰거나 탭을 옮겨도 계속 볼 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=open-the-agent-chat-panel-in-a-new-window",
+    "source": "notice"
+  }
+]

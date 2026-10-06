@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-11-19-1",
+    "service": "figma-ai",
+    "date": "2025.11.19",
+    "kind": "연동",
+    "title": "Make 커넥터: Notion·Linear·Atlassian 등",
+    "summary": "외부 도구를 Make에 연결해 PRD·티켓·제품 문서를 가져와 맥락을 갖춘 프로토타입을 만들 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=make-connectors-notion-linear-atlassian",
+    "source": "notice"
+  }
+]

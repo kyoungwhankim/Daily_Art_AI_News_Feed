@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-02-10-1",
+    "service": "krea",
+    "date": "2026.02.10",
+    "kind": "기능",
+    "title": "Krea Nodes에 Prompt-to-Workflow 추가",
+    "summary": "한 문장으로 원하는 결과를 설명하면 Krea Nodes가 필요한 노드를 골라 연결한 워크플로를 자동으로 만들어 줘요. 복잡한 노드 설정 시간을 크게 줄여 줘요.",
+    "url": "https://www.krea.ai/blog/prompt-to-workflow",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-07-09-1",
+    "service": "flow-studio",
+    "date": "2024.07.09",
+    "kind": "기능",
+    "title": "Autodesk Flow Studio, 프로젝트 즐겨찾기",
+    "summary": "프로젝트에 별표를 달아 즐겨찾기만 걸러 볼 수 있게 됐고, 영상 업로드 흐름이 개선돼 File Not Found 오류가 줄었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

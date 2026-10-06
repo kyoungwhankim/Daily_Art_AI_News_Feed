@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stable-diffusion-2024-10-29-1",
+    "service": "stable-diffusion",
+    "date": "2024.10.29",
+    "kind": "모델",
+    "title": "Stable Diffusion 3.5 Medium 공개, Ultra는 SD3.5 Large로",
+    "summary": "2.5B 크기로 품질과 속도의 균형을 잡은 SD3.5 Medium이 API에 추가됐어요. 대표 서비스 Stable Image Ultra도 SD3.5 Large 기반으로 바뀌었어요.",
+    "details": [
+      "API model 파라미터 sd3.5-medium 지원"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

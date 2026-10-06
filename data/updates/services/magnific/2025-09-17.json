@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-09-17-1",
+    "service": "magnific",
+    "date": "2025.09.17",
+    "kind": "API",
+    "title": "PixVerse V5 영상 API",
+    "summary": "PixVerse V5로 이미지에서 영상을 만들고 확장하는 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/image-to-video/pixverse-v5"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#september-17-2025",
+    "source": "dev"
+  }
+]

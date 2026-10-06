@@ -1,7 +1,7 @@
 /* AI Art Daily — hi-fi prototype */
 
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
-const { tabs: TABS } = window.AIAD;
+const { tabs: TABS, updateSources: UPDATE_SOURCES = [] } = window.AIAD;
 
 /* ---------- data loading ---------- */
 // 기사 데이터는 날짜별 파일로 나뉘어 있다: data/index.json → data/articles/YYYY-MM-DD.json
@@ -38,6 +38,10 @@ function parseRoute(pathname) {
   }
   if (parts[0] === 'articles' && parts[1]) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
+  }
+  if (parts[0] === 'updates') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, updates: true,
+             updCat: parts[1] || null, updCompany: parts[2] || null };
   }
   return { home: true, tab: null, kwSlug: null, articleId: null };
 }
@@ -178,22 +182,11 @@ function Thumb({ hue, image, alt, children }) {
 }
 
 /* ---------- card ---------- */
-function ArticleCard({ article, onOpen, onToggleSave, isSaved, query, variant }) {
+function ArticleCard({ article, onOpen, query, variant }) {
   const cls = `card${variant ? ' ' + variant : ''}`;
   return (
     <button className={cls} onClick={() => onOpen(article)}>
-      <Thumb hue={article.hue} image={article.image} alt={article.headline}>
-        <div
-          className={`bookmark-btn ${isSaved ? 'saved' : ''}`}
-          role="button"
-          aria-label="저장"
-          onClick={e => { e.stopPropagation(); onToggleSave(article.id); }}
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill={isSaved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8">
-            <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-          </svg>
-        </div>
-      </Thumb>
+      <Thumb hue={article.hue} image={article.image} alt={article.headline} />
       <div className="card-body">
         <h3 className="card-headline">{highlight(article.headline, query)}</h3>
         <p className="card-summary">{highlight(article.summary, query)}</p>
@@ -207,7 +200,7 @@ function ArticleCard({ article, onOpen, onToggleSave, isSaved, query, variant })
 }
 
 /* ---------- date section ---------- */
-function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }) {
+function DateSection({ iso, items, onOpen, query, isToday }) {
   const lbl = dateLabel(iso);
   return (
     <section className="date-section">
@@ -221,15 +214,15 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
       </div>
       {isToday && items.length > 1 ? (
         <div className="grid today-grid">
-          <ArticleCard variant="feature" article={items[0]} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(items[0].id)} query={query} />
+          <ArticleCard variant="feature" article={items[0]} onOpen={onOpen} query={query} />
           {items.slice(1, 3).map(a => (
-            <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+            <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
           ))}
           {items.length > 3 && (
             <div style={{ gridColumn: '1 / -1' }}>
               <div className="grid">
                 {items.slice(3).map(a => (
-                  <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+                  <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
                 ))}
               </div>
             </div>
@@ -238,7 +231,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
       ) : (
         <div className="grid">
           {items.map(a => (
-            <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+            <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
           ))}
         </div>
       )}
@@ -247,9 +240,13 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
 }
 
 /* ---------- header ---------- */
-function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome }) {
+function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
+  // 좁은 화면에선 검색창을 숨겨 두고, 돋보기 버튼을 누르면 헤더 아래 한 줄로 펼친다
+  const [searchOpen, setSearchOpen] = useState(false);
+  const openSearch = () => { setSearchOpen(true); setTimeout(() => inputRef.current && inputRef.current.focus(), 0); };
+  const closeSearch = () => { setSearchOpen(false); onQuery(''); };
   useEffect(() => {
     const onKey = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
@@ -262,8 +259,11 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
   }, []);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${searchOpen ? 'searching' : ''}`}>
       <div className="header-inner">
+        <button type="button" className="menu-btn" aria-label="메뉴" onClick={onMenu}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
         <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <span className="brand-name">AI Art Daily</span>
           <small>한국어 큐레이션</small>
@@ -278,10 +278,22 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
               ref={inputRef}
               value={query}
               onChange={e => onQuery(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Escape' && searchOpen) closeSearch(); }}
+              type="search"
+              enterKeyHint="search"
               placeholder="기사 · 출처 · 키워드 검색"
             />
             {!query && <span className="kbd">⌘ K</span>}
           </label>
+          <button type="button" className="icon-btn search-toggle"
+            aria-label={searchOpen ? '검색 닫기' : '검색'} aria-expanded={searchOpen}
+            onClick={searchOpen ? closeSearch : openSearch}>
+            {searchOpen ? (
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 6l12 12M18 6L6 18" /></svg>
+            ) : (
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            )}
+          </button>
           {install && (
             <button className="icon-btn" title="앱 설치" aria-label="앱 설치" onClick={install}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -289,12 +301,6 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
               </svg>
             </button>
           )}
-          <button className="icon-btn" title="저장한 기사" onClick={onShowSaved}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-            </svg>
-            {savedCount > 0 && <span className="badge-count">{savedCount}</span>}
-          </button>
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -314,24 +320,14 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome, subcats, keyword, onKeyword }) {
+function Tabs({ active, onChange, articles, viewHome, subcats, keyword, onKeyword }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
       <div className="tabs-inner">
         <div className="tabs-meta">
-          {viewSaved ? '저장한 기사' : `카테고리 · ${TABS.length}개 채널`}
+          {`카테고리 · ${TABS.length}개 채널`}
         </div>
-        {viewSaved ? (
-          <div className="tabs">
-            <button className="tab active">
-              저장된 기사 <span className="count">{savedCount}</span>
-            </button>
-            <button className="tab" onClick={onClearSaved}>
-              <span style={{ color: 'var(--muted)' }}>← 전체 피드로 돌아가기</span>
-            </button>
-          </div>
-        ) : (
           <div className="tabs">
             {TABS.map(t => (
               <button
@@ -345,8 +341,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
               </button>
             ))}
           </div>
-        )}
-        {!viewSaved && subcats && (
+        {subcats && (
           <SubCategoryBar items={subcats} total={counts[active] || 0} active={keyword} onChange={onKeyword} />
         )}
       </div>
@@ -383,21 +378,18 @@ function SubCategoryBar({ items, total, active, onChange }) {
 }
 
 /* ---------- feed meta ---------- */
-function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
+function FeedMeta({ activeTab, count, query, keyword }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
   if (query) {
     title = `\u201c${query}\u201d 검색 결과`;
     sub = `${count}개 기사`;
-  } else if (viewSaved) {
-    title = '저장한 기사';
-    sub = `${count}개 기사 · 북마크됨`;
   } else {
     const t = TABS.find(t => t.id === activeTab);
     title = t.label;
     sub = keyword ? `${today} · ${keyword} · ${count}개 기사` : `${today} · ${count}개 기사`;
   }
-  const activeDesc = (!query && !viewSaved)
+  const activeDesc = !query
     ? (TABS.find(t => t.id === activeTab) || {}).desc
     : null;
   return (
@@ -407,7 +399,7 @@ function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
         <div className="feed-sub">{sub}</div>
         {activeDesc && <p className="feed-desc">{activeDesc}</p>}
       </div>
-      {!viewSaved && !query && (
+      {!query && (
         <div className="feed-toolbar"></div>
       )}
     </div>
@@ -415,7 +407,7 @@ function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
 }
 
 /* ---------- modal ---------- */
-function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArticles, onSelectKeyword }) {
+function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword }) {
   const bodyRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -474,15 +466,6 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <div className="modal-progress" style={{ width: `${progress}%` }} />
-        <button
-          className={`modal-save ${isSaved ? 'saved' : ''}`}
-          onClick={() => onToggleSave(article.id)}
-          aria-label="저장"
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill={isSaved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8">
-            <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-          </svg>
-        </button>
         <button className="modal-close" onClick={onClose} aria-label="닫기">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M6 6l12 12M18 6L6 18" />
@@ -595,7 +578,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
 }
 
 /* ---------- date grouped feed with pagination ---------- */
-function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query, expandAll }) {
+function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
   const [showAllState, setShowAll] = useState(false);
   const showAll = showAllState || expandAll;   // 서브 카테고리 선택 시에는 지난 기사까지 모두 표시
 
@@ -626,8 +609,6 @@ function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query, expandA
           iso={g.iso}
           items={g.items}
           onOpen={onOpen}
-          onToggleSave={onToggleSave}
-          saved={saved}
           query={query}
           isToday={daysAgo(g.iso) === 0}
         />
@@ -760,6 +741,405 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
   );
 }
 
+/* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
+// 좁은 화면의 서랍을 손가락으로 끌어 여닫는다.
+// 닫혀 있을 땐 화면 아무 곳에서나 오른쪽으로, 열려 있을 땐 서랍이나 바깥을 왼쪽으로 스와이프한다.
+// 가로로 넘기는 영역(탭·칩 줄, 하단 띠)이나 기사 창 위에서는 그 영역의 스와이프가 먼저다.
+// 끄는 동안 서랍이 손가락을 따라오고, 놓았을 때 절반 넘게 끌었거나 빠르게 튕기면 여닫힌다.
+const DRAWER_EDGE = 28;   // 이 안쪽에서 시작하면 가로 스크롤 영역 위여도 서랍을 연다 (px)
+function inHorizontalScroller(el) {
+  for (; el && el !== document.body; el = el.parentElement) {
+    if (el.classList.contains('home-ticker') || el.classList.contains('modal-backdrop')) return true;
+    const ox = getComputedStyle(el).overflowX;
+    if ((ox === 'auto' || ox === 'scroll') && el.scrollWidth > el.clientWidth) return true;
+  }
+  return false;
+}
+function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
+  const st = useRef({ open, onOpen, onClose });
+  st.current.open = open; st.current.onOpen = onOpen; st.current.onClose = onClose;
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 1024px)');
+    let g = null;   // 진행 중인 제스처
+    const paint = (x, w) => {
+      const a = asideRef.current, b = backdropRef.current;
+      a.style.transition = 'none'; a.style.transform = `translateX(${x}px)`;
+      b.style.transition = 'none'; b.style.opacity = String(1 + x / w);
+    };
+    const reset = () => {
+      for (const el of [asideRef.current, backdropRef.current]) {
+        if (el) { el.style.transition = ''; el.style.transform = ''; el.style.opacity = ''; }
+      }
+    };
+    const onStart = e => {
+      g = null;
+      if (!mq.matches || e.touches.length !== 1 || !asideRef.current) return;
+      const t = e.touches[0];
+      const wasOpen = st.current.open;
+      if (wasOpen ? !(asideRef.current.contains(e.target) || backdropRef.current.contains(e.target)) : (t.clientX > DRAWER_EDGE && inHorizontalScroller(e.target))) return;
+      g = { wasOpen, x0: t.clientX, y0: t.clientY, t0: Date.now(), drag: false, x: 0, w: asideRef.current.offsetWidth };
+    };
+    const onMove = e => {
+      if (!g) return;
+      const t = e.touches[0], dx = t.clientX - g.x0, dy = t.clientY - g.y0;
+      if (!g.drag) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        // 세로로 움직이거나 반대 방향이면 평소 스크롤로 둔다
+        if (Math.abs(dx) <= Math.abs(dy) || (g.wasOpen ? dx > 0 : dx < 0)) { g = null; return; }
+        g.drag = true;
+      }
+      e.preventDefault();
+      g.dx = dx;
+      g.x = Math.max(-g.w, Math.min(0, (g.wasOpen ? 0 : -g.w) + dx));
+      paint(g.x, g.w);
+    };
+    const onEnd = () => {
+      if (!g || !g.drag) { g = null; return; }
+      const v = g.dx / Math.max(1, Date.now() - g.t0);   // px/ms
+      const next = v > 0.3 ? true : v < -0.3 ? false : (1 + g.x / g.w) > 0.5;
+      g = null;
+      reset();
+      if (next !== st.current.open) (next ? st.current.onOpen : st.current.onClose)();
+    };
+    document.addEventListener('touchstart', onStart, { passive: true });
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onEnd);
+    document.addEventListener('touchcancel', onEnd);
+    return () => {
+      document.removeEventListener('touchstart', onStart);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onEnd);
+      document.removeEventListener('touchcancel', onEnd);
+    };
+  }, []);
+}
+
+// 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 공식 업데이트)
+// 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 서비스)가 펼쳐진다.
+// 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
+// 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
+function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
+                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany }) {
+  const [newsOpen, setNewsOpen] = useState(true);
+  const [updOpen, setUpdOpen] = useState(true);
+  const newsActive = section === 'news';
+  const asideRef = useRef(null), backdropRef = useRef(null);
+  useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
+  const current = newsActive ? (viewHome ? null : `news:${activeTab}`) : (updCat ? `upd:${updCat}` : null);
+  const [folded, setFolded] = useState(null);       // 다시 눌러 접은 서브 섹션
+  useEffect(() => { setFolded(null); }, [current]);
+  const isOpen = key => current === key && folded !== key;
+  const toggle = (key, go) => { if (isOpen(key)) setFolded(key); else { setFolded(null); go(); } };
+  return (
+    <>
+      <div ref={backdropRef} className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
+      <aside ref={asideRef} className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
+        <div className="side-drawer-head">
+          <span className="brand-name">AI Art Daily</span>
+          <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
+        </div>
+        <nav className="side-nav">
+          <div className="side-group">
+            <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (newsActive && viewHome && newsOpen) setNewsOpen(false);
+                else { setNewsOpen(true); onNewsHome(); }
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 5h13v14H6a2 2 0 0 1-2-2z" /><path d="M17 9h3v8a2 2 0 0 1-2 2" /><path d="M8 9h5M8 13h5" />
+                </svg>
+                <span>뉴스</span>
+              </button>
+              <button type="button" className="side-caret-btn" aria-label={newsOpen ? '접기' : '펼치기'} aria-expanded={newsOpen} onClick={() => setNewsOpen(o => !o)}>
+                <svg className={`side-caret ${newsOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+            </div>
+            {newsOpen && (
+              <ul className="side-list">
+                {TABS.map(t => {
+                  const here = newsActive && !viewHome && activeTab === t.id;
+                  const opened = isOpen(`news:${t.id}`);
+                  return (
+                    <li key={t.id}>
+                      <button type="button"
+                        className={`side-item ${here && !keyword ? 'active' : ''} ${opened ? 'expanded' : ''}`}
+                        aria-expanded={opened}
+                        onClick={() => toggle(`news:${t.id}`, () => onTab(t.id))}>
+                        <span>{t.label}</span>
+                        {counts[t.id] > 0 && <span className="side-count">{counts[t.id]}</span>}
+                      </button>
+                      {opened && subcats.length > 0 && (
+                        <ul className="side-sublist">
+                          {subcats.map(c => (
+                            <li key={c.label}>
+                              <button type="button" className={`side-subitem ${keyword === c.label ? 'active' : ''}`}
+                                onClick={() => onKeyword(keyword === c.label ? null : c.label)}>
+                                <span>{c.label}</span>
+                                <span className="side-count">{c.count}</span>
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'updates' && !updCat ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (section === 'updates' && !updCat && updOpen) setUpdOpen(false);
+                else { setUpdOpen(true); onUpdates(); }
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+                </svg>
+                <span>업데이트</span>
+                <span className="side-badge">NEW</span>
+              </button>
+              <button type="button" className="side-caret-btn" aria-label={updOpen ? '접기' : '펼치기'} aria-expanded={updOpen} onClick={() => setUpdOpen(o => !o)}>
+                <svg className={`side-caret ${updOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+            </div>
+            {updOpen && (
+              <ul className="side-list">
+                {UPDATE_CATS.map(c => {
+                  const here = section === 'updates' && updCat === c.slug;
+                  const opened = isOpen(`upd:${c.slug}`);
+                  return (
+                    <li key={c.slug}>
+                      <button type="button" className={`side-item ${here && !updCompany ? 'active' : ''} ${opened ? 'expanded' : ''}`}
+                        aria-expanded={opened} onClick={() => toggle(`upd:${c.slug}`, () => onUpdCat(c.slug))}>
+                        <span>{c.label}</span>
+                        <span className="side-count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
+                      </button>
+                      {opened && (
+                        <ul className="side-sublist">
+                          {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
+                            <li key={co.slug}>
+                              <button type="button" className={`side-subitem ${co.maker ? 'has-maker' : ''} ${updCompany === co.slug ? 'active' : ''}`}
+                                onClick={() => onUpdCompany(c.slug, co.slug)}>
+                                <span>{co.name}</span>
+                                {co.maker && <span className="side-maker">{co.maker}</span>}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+        </nav>
+      </aside>
+    </>
+  );
+}
+
+/* ---------- 업데이트 (아트 관련 AI 서비스의 공식 업데이트) ---------- */
+// 구조: 분야(위쪽 탭·사이드바) › 서비스(칩) › 그 서비스의 업데이트 (최신순)
+// 서비스는 제품 단위다 — 여러 분야 제품을 내는 회사(OpenAI, Google 등)는 제품마다 해당 분야에 따로 있다.
+// 주소: /updates/  /updates/<분야>/  /updates/<분야>/<서비스>/
+const UPDATE_CAT_SLUG = {
+  '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+  '모션': 'motion', '음악·음성': 'audio', '도구': 'tools',
+};
+const UPDATE_CATS = [...new Set(UPDATE_SOURCES.map(s => s.category))]
+  .map(label => ({ label, slug: UPDATE_CAT_SLUG[label] || kwSlug(label) }));
+const UPDATE_COMPANIES = UPDATE_SOURCES.map(s => ({
+  ...s, slug: kwSlug(s.name), catSlug: UPDATE_CAT_SLUG[s.category] || kwSlug(s.category),
+}));
+function updatesPath(cat, company) {
+  if (cat && company) return `/updates/${cat}/${company}/`;
+  if (cat) return `/updates/${cat}/`;
+  return '/updates/';
+}
+
+// 아직 수집하지 않는 분야(루틴이 모으는 분야는 routine/updates_agent_prompt.txt의 CATEGORIES)는
+// 화면 흐름을 보기 위한 예시 항목을 서비스마다 만든다 ('예시' 표시).
+const SAMPLE_KINDS = {
+  'image':       [['모델', '새 이미지 모델 버전 공개'], ['기능', '편집·인페인팅 기능 개선'], ['요금', '요금제와 사용량 정책 변경'], ['API', 'API에 새 해상도 옵션 추가']],
+  'video':       [['모델', '새 영상 생성 모델 공개'], ['기능', '영상 길이 연장과 카메라 제어 추가'], ['기능', '오디오 동시 생성 지원'], ['API', 'API 요청 한도 상향']],
+  '3d':          [['모델', '3D 생성 모델 업데이트'], ['기능', '자동 리깅·텍스처 기능 추가'], ['연동', '게임 엔진 플러그인 업데이트'], ['기능', '내보내기 형식 추가']],
+  'game-assets': [['기능', '게임 에셋 스타일 학습 기능 개선'], ['연동', '엔진 연동 워크플로우 추가'], ['모델', '새 생성 모델 지원'], ['기능', '팀 협업 기능 추가']],
+  'motion':      [['기능', '모션 캡처 정확도 개선'], ['연동', 'DCC 툴 연동 업데이트'], ['기능', '얼굴·손 추적 기능 추가'], ['요금', '라이선스 정책 변경']],
+  'audio':       [['모델', '새 음성·음악 모델 공개'], ['기능', '언어·보이스 추가'], ['API', 'API 지연 시간 개선'], ['기능', '편집 기능 추가']],
+  'tools':       [['기능', '새 버전 릴리스'], ['연동', '새 모델·노드 지원 추가'], ['기능', '성능 개선과 버그 수정'], ['API', '개발자 도구 업데이트']],
+};
+function sampleUpdatesFor(c) {
+  const kinds = SAMPLE_KINDS[c.catSlug] || SAMPLE_KINDS.tools;
+  const seed = [...c.slug].reduce((n, ch) => n + ch.charCodeAt(0), 0);
+  return kinds.map(([kind, title], i) => {
+    const d = new Date(TODAY); d.setDate(d.getDate() - ((seed % 5) + i * (6 + (seed % 7))));
+    return {
+      id: `${c.slug}-${i}`, company: c, kind, sample: true,
+      date: `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`,
+      title: `${c.name} — ${title}`,
+      summary: '예시 항목이에요. 공지 수집이 연결되면 서비스의 공식 업데이트를 한국어로 요약해 이 자리에 보여 드려요.',
+      url: c.url,
+    };
+  });
+}
+// 실제 업데이트: data/updates/index.json → data/updates/feed/<분야>.json (scripts/service_updates.py가 만든다)
+let updatesPromise = null;
+function loadServiceUpdates() {
+  if (!updatesPromise) {
+    updatesPromise = fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
+      .then(index => Promise.all(Object.values(index.categories || {})
+        .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
+      .then(feeds => feeds.flat())
+      .catch(() => []);   // 아직 데이터가 없으면 예시만
+  }
+  return updatesPromise;
+}
+const sortUpdates = list => list.sort((a, b) => b.date.localeCompare(a.date) || a.company.name.localeCompare(b.company.name));
+// 수집된 분야는 실제 항목만, 수집 전인 분야는 예시 항목
+function buildUpdates(real) {
+  const bySlug = Object.fromEntries(UPDATE_COMPANIES.map(c => [c.slug, c]));
+  const items = real.filter(e => bySlug[e.service]).map(e => ({ ...e, company: bySlug[e.service] }));
+  const collectedCats = new Set(items.map(u => u.company.catSlug));
+  const samples = UPDATE_COMPANIES.filter(c => !collectedCats.has(c.catSlug)).flatMap(sampleUpdatesFor);
+  return sortUpdates([...items, ...samples]);
+}
+function useServiceUpdates() {
+  const [state, setState] = useState(() => ({ ready: false, items: buildUpdates([]) }));
+  useEffect(() => {
+    let alive = true;
+    loadServiceUpdates().then(real => { if (alive) setState({ ready: true, items: buildUpdates(real) }); });
+    return () => { alive = false; };
+  }, []);
+  return state;
+}
+
+function UpdatesNav({ cat, company, onCat, onCompany }) {
+  const companies = cat ? UPDATE_COMPANIES.filter(c => c.catSlug === cat) : [];
+  return (
+    <nav className="tabs-wrap">
+      <div className="tabs-inner">
+        <div className="tabs-meta">업데이트 · {UPDATE_CATS.length}개 분야 · {UPDATE_COMPANIES.length}개 서비스</div>
+        <div className="tabs">
+          <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
+            전체 <span className="count">{UPDATE_COMPANIES.length}</span>
+          </button>
+          {UPDATE_CATS.map(c => (
+            <button key={c.slug} className={`tab ${cat === c.slug ? 'active' : ''}`} onClick={() => onCat(c.slug)}>
+              {c.label} <span className="count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
+            </button>
+          ))}
+        </div>
+        {cat && (
+          <div className="subcats" role="tablist" aria-label="서비스">
+            <button className={`chip subcat ${!company ? 'active' : ''}`} onClick={() => onCompany(null)}>전체</button>
+            {companies.map(c => (
+              <button key={c.slug} className={`chip subcat ${company === c.slug ? 'active' : ''}`} onClick={() => onCompany(c.slug)}>
+                {c.name}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
+
+function UpdateRow({ u, showCompany, onCompany }) {
+  return (
+    <li className="update-row">
+      <div className="update-date">{u.date}</div>
+      <div className="update-main">
+        <div className="update-head">
+          {showCompany && (
+            <button type="button" className="update-company" onClick={() => onCompany(u.company)}>{u.company.name}</button>
+          )}
+          <span className="update-cat">{u.kind}</span>
+          {u.sample && <span className="update-sample">예시</span>}
+        </div>
+        <h3 className="update-title">{u.title}</h3>
+        <p className="update-summary">{u.summary}</p>
+        {u.details && u.details.length > 0 && (
+          <ul className="update-details">{u.details.map((d, i) => <li key={i}>{d}</li>)}</ul>
+        )}
+        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
+          {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
+        </a>
+      </div>
+    </li>
+  );
+}
+
+// 개발자 변경 기록 중 사람이 읽을 페이지 (RSS·JSON 같은 수집용 주소는 건너뛴다)
+function devPage(c) {
+  return (c.dev || []).find(u => !FEED_URL.test(u)) || null;
+}
+const FEED_URL = /(\.rss|\.xml|\.atom|\.json|\.md)(\?|$)|\/feed\/?$|\/rss\/?$|packages\.unity\.com|huggingface\.co\/api\/|\/api\/v2\/help_center/;
+
+function UpdatesView({ cat, company, onCat, onCompany }) {
+  const catObj = UPDATE_CATS.find(c => c.slug === cat) || null;
+  const comp = UPDATE_COMPANIES.find(c => c.slug === company && c.catSlug === cat) || null;
+  const { ready, items: all } = useServiceUpdates();
+  // 전체 화면에서는 실제 항목이 있으면 예시를 빼고, 예시는 아직 수집하지 않는 분야 화면에서만 보여 준다
+  const anyReal = all.some(u => !u.sample);
+  const items = all.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug)
+    && (cat || !anyReal || !u.sample));
+  const hasSample = items.some(u => u.sample);
+  const PAGE = 30;
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => { setShown(PAGE); }, [cat, company]);
+  const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
+  const desc = comp
+    ? `${comp.maker ? `${comp.maker}의 ` : ''}${comp.name} 공식 업데이트를 최신순으로 모아 보여 드려요.`
+    : catObj
+      ? `${catObj.label} 분야 AI 서비스들의 공식 업데이트예요. 서비스를 고르면 그 서비스 소식만 볼 수 있어요.`
+      : '아트 관련 AI 서비스들의 공식 업데이트를 분야·서비스별로 모아 보여 드려요.';
+  return (
+    <>
+      <UpdatesNav cat={cat} company={comp ? comp.slug : null} onCat={onCat} onCompany={slug => onCompany(cat, slug)} />
+      <div className="feed-meta">
+        <div>
+          <h1 className="feed-title">{title}</h1>
+          <div className="feed-sub">
+            {comp ? `${catObj.label}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
+          </div>
+          <p className="feed-desc">{desc}</p>
+        </div>
+        {comp && (
+          <div className="update-official-links">
+            <a className="chip update-official" href={comp.url} target="_blank" rel="noopener noreferrer">공식 업데이트 페이지 ↗</a>
+            {devPage(comp) && (
+              <a className="chip update-official" href={devPage(comp)} target="_blank" rel="noopener noreferrer">개발자 변경 기록 ↗</a>
+            )}
+          </div>
+        )}
+      </div>
+      <main className="feed">
+        {hasSample && (
+          <div className="updates-notice">일부 분야는 준비 중이에요 — <b>예시</b> 표시가 붙은 항목은 화면 구성을 보기 위한 예시예요.</div>
+        )}
+        {ready && items.length === 0 ? (
+          <EmptyState message="아직 수집된 업데이트가 없어요" sub="새 공식 업데이트가 나오면 매일 이곳에 모아 드려요." />
+        ) : (
+          <ol className="updates-list">
+            {items.slice(0, shown).map(u => (
+              <UpdateRow key={u.id} u={u} showCompany={!comp} onCompany={c => onCompany(c.catSlug, c.slug)} />
+            ))}
+          </ol>
+        )}
+        {items.length > shown && (
+          <div className="updates-more">
+            <button type="button" className="chip" onClick={() => setShown(n => n + PAGE)}>
+              이전 업데이트 더 보기 ({items.length - shown}건 남음)
+            </button>
+          </div>
+        )}
+      </main>
+    </>
+  );
+}
+
 /* ---------- App ---------- */
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -767,6 +1147,14 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
+  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
+  const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍 (✕나 바깥을 눌러야만 닫힌다)
+  const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
+  const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 서비스 (slug)
+  const goUpdates = (cat, company) => {
+    setSection('updates'); setUpdCat(cat || null); setUpdCompany(company || null);
+    window.scrollTo({ top: 0 });
+  };
   const [query, setQuery] = useState('');
   const [keyword, setKeyword] = useState(null);       // 선택된 서브 카테고리 (null = 전체)
   const [articles, setArticles] = useState([]);
@@ -812,10 +1200,6 @@ function App() {
   articlesRef.current = articles;
   const keywordTabsRef = useRef(keywordTabs);
   keywordTabsRef.current = keywordTabs;
-  const [saved, setSaved] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('aiad:saved') || '[]'); } catch { return []; }
-  });
-  const [viewSaved, setViewSaved] = useState(false);
   const [loading, setLoading] = useState(false);
 
   // 기사 창 열기/닫기 — 열면 주소가 /articles/<id>/ 가 되고, 닫으면 원래 화면 주소로 돌아간다
@@ -842,6 +1226,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
+      setSection(route.updates ? 'updates' : 'news');
+      if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
         const found = articlesRef.current.find(a => a.id === route.articleId);
         if (found) { setActiveTab(found.tab); setViewHome(false); }
@@ -852,7 +1238,6 @@ function App() {
       setViewHome(route.home);
       if (!route.home) {
         setActiveTab(route.tab);
-        setViewSaved(false);
         setQuery('');
         const hit = ((keywordTabsRef.current || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
         setKeyword(hit ? hit.label : null);
@@ -862,6 +1247,9 @@ function App() {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
+  // 북마크 기능을 없애며 예전에 저장해 둔 목록을 지운다
+  useEffect(() => { try { localStorage.removeItem('aiad:saved'); } catch (e) {} }, []);
+
   // theme
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -869,21 +1257,13 @@ function App() {
     localStorage.setItem('aiad:theme', theme);
   }, [theme]);
 
-  // persist saved
-  useEffect(() => {
-    localStorage.setItem('aiad:saved', JSON.stringify(saved));
-  }, [saved]);
-
   // simulate loading on tab switch (briefly)
   useEffect(() => {
     setLoading(true);
     const t = setTimeout(() => setLoading(false), 280);
     return () => clearTimeout(t);
-  }, [activeTab, viewSaved, keyword]);
+  }, [activeTab, keyword]);
 
-  const toggleSave = (id) => {
-    setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
-  };
   const toggleTheme = () => {
     setTheme(t => t === 'dark' ? 'light' : 'dark');
   };
@@ -891,8 +1271,8 @@ function App() {
   // 서브 카테고리 목록 (현재 탭)
   const subcats = useMemo(() => subCategoriesFor(keywordTabs, articles, activeTab), [keywordTabs, articles, activeTab]);
   const activeKeyword = subcats.some(c => c.label === keyword) ? keyword : null;
-  const showSubcats = !viewHome && !viewSaved && !query.trim() && dataState === 'ready';
-  const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewSaved(false); setViewHome(false); setQuery(''); };
+  const showSubcats = !viewHome && !query.trim() && dataState === 'ready';
+  const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewHome(false); setQuery(''); };
 
   // 탭·서브 카테고리를 바꾸면 주소도 /topics/... 로 바꾼다 (공유·새로고침해도 같은 화면).
   // 저장한 기사·검색 화면은 주소를 바꾸지 않는다. 데이터가 오기 전에는 들어온 주소를 그대로 둔다.
@@ -900,18 +1280,16 @@ function App() {
   useEffect(() => {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
-    if (!onArticle && (viewSaved || query.trim())) return;
-    const path = routePath(viewHome, activeTab, activeKeyword);
+    if (section !== 'updates' && !onArticle && query.trim()) return;
+    const path = section === 'updates' ? updatesPath(updCat, updCompany) : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, viewHome, viewSaved, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, viewHome, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
-  if (viewSaved) {
-    visible = visible.filter(a => saved.includes(a.id));
-  } else if (query.trim()) {
+  if (query.trim()) {
     const q = query.trim().toLowerCase();
     visible = visible.filter(a =>
       a.headline.toLowerCase().includes(q) ||
@@ -934,21 +1312,46 @@ function App() {
     <div className="page">
       <Header
         query={query}
-        onQuery={(v) => { setQuery(v); if (v) { setViewSaved(false); setViewHome(false); } }}
-        savedCount={saved.length}
-        onShowSaved={() => { setViewSaved(true); setViewHome(false); setQuery(''); }}
+        onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewHome(false); } }}
         theme={theme}
         onToggleTheme={toggleTheme}
-        onShowHome={() => { setViewHome(true); setViewSaved(false); setQuery(''); }}
+        onShowHome={() => { setSection('news'); setViewHome(true); setQuery(''); }}
+        onMenu={() => setSideOpen(true)}
       />
+      <div className="layout">
+      <Sidebar
+        section={section}
+        viewHome={viewHome}
+        activeTab={activeTab}
+        open={sideOpen}
+        onOpen={() => setSideOpen(true)}
+        onClose={() => setSideOpen(false)}
+        counts={tabCounts(articles)}
+        onNewsHome={() => { setSection('news'); setViewHome(true); setQuery(''); window.scrollTo({ top: 0 }); }}
+        onTab={(id) => { setSection('news'); goTab(id); window.scrollTo({ top: 0 }); }}
+        onUpdates={() => goUpdates(null, null)}
+        updCat={updCat}
+        onUpdCat={(cat) => goUpdates(cat, null)}
+        updCompany={updCompany}
+        onUpdCompany={(cat, company) => goUpdates(cat, company)}
+        subcats={subcats}
+        keyword={activeKeyword}
+        onKeyword={(k) => { setKeyword(k); window.scrollTo({ top: 0 }); }}
+      />
+      <div className="layout-main">
+      {section === 'updates' ? (
+        <UpdatesView
+          cat={updCat}
+          company={updCompany}
+          onCat={(cat) => goUpdates(cat, null)}
+          onCompany={(cat, company) => goUpdates(cat, company)}
+        />
+      ) : (<>
       {!viewHome && (
         <Tabs
           active={activeTab}
           onChange={goTab}
           articles={articles}
-          savedCount={saved.length}
-          viewSaved={viewSaved}
-          onClearSaved={() => setViewSaved(false)}
           viewHome={viewHome}
           subcats={showSubcats ? subcats : null}
           keyword={activeKeyword}
@@ -960,7 +1363,6 @@ function App() {
         <FeedMeta
           activeTab={activeTab}
           count={visible.length}
-          viewSaved={viewSaved}
           query={query.trim()}
           keyword={activeKeyword}
         />
@@ -979,19 +1381,15 @@ function App() {
             {[0,1,2,3,4,5].map(i => <SkeletonCard key={i} />)}
           </div>
         ) : visible.length === 0 ? (
-          viewSaved ? (
-            <EmptyState message="저장한 기사가 없어요" sub="기사 카드의 북마크 아이콘을 눌러 나중에 읽을 기사를 모아보세요." />
-          ) : query ? (
+          query ? (
             <EmptyState message={`\u201c${query}\u201d에 대한 결과가 없어요`} sub="다른 키워드를 시도해 보세요." />
           ) : (
             <EmptyState />
           )
-        ) : (groupByDate && !query && !viewSaved) ? (
+        ) : (groupByDate && !query) ? (
           <DateGroupedFeed
             articles={visible}
             onOpen={openArticle}
-            onToggleSave={toggleSave}
-            saved={saved}
             query={query.trim()}
             expandAll={!!activeKeyword}
           />
@@ -1002,27 +1400,26 @@ function App() {
                 key={a.id}
                 article={a}
                 onOpen={openArticle}
-                onToggleSave={toggleSave}
-                isSaved={saved.includes(a.id)}
                 query={query.trim()}
               />
             ))}
           </div>
         )}
       </main>
+      </>)}
 
-      <IosInstallHint />
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
         <div>큐레이션 · 한국어 번역</div>
       </footer>
+      </div>
+      </div>
+      <IosInstallHint />
 
       {open && (
         <ArticleModal
           article={open}
           onClose={closeArticle}
-          isSaved={saved.includes(open.id)}
-          onToggleSave={toggleSave}
           onOpen={openArticle}
           allArticles={articles}
           onSelectKeyword={(tab, k) => {

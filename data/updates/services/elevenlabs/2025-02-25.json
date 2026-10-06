@@ -1,0 +1,28 @@
+[
+  {
+    "id": "elevenlabs-2025-02-25-1",
+    "service": "elevenlabs",
+    "date": "2025.02.25",
+    "kind": "기능",
+    "title": "ElevenReader Publishing 출시",
+    "summary": "무료로 오디오북을 만들어 ElevenReader 앱에 배포할 수 있는 ElevenReader Publishing이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenreader-publishing",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-02-25-2",
+    "service": "elevenlabs",
+    "date": "2025.02.25",
+    "kind": "API",
+    "title": "Speech to Text API 출시와 TTS 속도 조절",
+    "summary": "99개 언어를 지원하는 Speech to Text API가 나왔고, Text to Speech API에 말하기 속도 조절이 추가됐어요.",
+    "details": [
+      "99개 언어 Speech to Text API",
+      "TTS 속도 조절",
+      "더빙 겹치는 클립 자동 정리",
+      "IVC v2 미리듣기 즉시 생성"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/25",
+    "source": "dev"
+  }
+]

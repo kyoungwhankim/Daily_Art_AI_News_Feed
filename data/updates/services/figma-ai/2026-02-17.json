@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-02-17-1",
+    "service": "figma-ai",
+    "date": "2026.02.17",
+    "kind": "기능",
+    "title": "Figma Make 모델 선택기",
+    "summary": "Make 프롬프트 상자에서 AI 모델을 바로 바꿔 쓸 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=model-picker-in-make",
+    "source": "notice"
+  }
+]

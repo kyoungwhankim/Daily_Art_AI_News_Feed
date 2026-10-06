@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2025-08-28-1",
+    "service": "comfyui",
+    "date": "2025.08.28",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.53: Wav2vec2 오디오 인코더와 Gemini Image 노드",
+    "summary": "ComfyUI v0.3.53에서 Wav2vec2 오디오 인코더와 audio_encoders 폴더가 추가되고, Gemini Image API 노드와 Wan 2.2 S2V 초기 구현이 들어왔어요.",
+    "details": [
+      "DPM++ 2M SDE Heun(RES) 샘플러, LatentConcat 노드"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-53",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2026-05-13-1",
+    "service": "elevenlabs",
+    "date": "2026.05.13",
+    "kind": "기능",
+    "title": "ElevenCreative 템플릿, 완성 에셋 바로 생성",
+    "summary": "이미지·영상·음성·음악·효과음용 완성형 크리에이티브 워크플로 템플릿이 나왔어요. 입력만 올리면 결과물이 나와요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevencreative-templates",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-05-13-2",
+    "service": "elevenlabs",
+    "date": "2026.05.13",
+    "kind": "API",
+    "title": "Voice Design 미리듣기 API 이전과 Voice Changer WAV",
+    "summary": "text-to-voice create-previews가 지원 중단되고 Design a voice로 옮겨졌어요. Voice Changer는 WAV 출력 포맷을 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/5/13",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-10-02-1",
+    "service": "heygen",
+    "date": "2026.10.02",
+    "kind": "API",
+    "title": "HeyGen v3 API 폴더 생성·지정 지원",
+    "summary": "v3 API에서 폴더를 만들고 조회하며, 영상과 번역 결과를 원하는 폴더에 바로 저장할 수 있게 됐어요.",
+    "url": "https://docs.heygen.com/changelog#folders-on-v3",
+    "source": "dev"
+  }
+]

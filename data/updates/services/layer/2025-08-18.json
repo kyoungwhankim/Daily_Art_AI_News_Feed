@@ -1,0 +1,22 @@
+[
+  {
+    "id": "layer-2025-08-18-1",
+    "service": "layer",
+    "date": "2025.08.18",
+    "kind": "기능",
+    "title": "16K 업스케일·스타일 페이지 개선",
+    "summary": "최대 16K 업스케일과 스타일 페이지 UX 개선이 들어갔어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-08-18",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-18-2",
+    "service": "layer",
+    "date": "2025.08.18",
+    "kind": "요금",
+    "title": "Layer 요금제 개편 예고",
+    "summary": "9월 9일부터 사용한 만큼만 내는 방식으로 요금 체계를 바꾼다고 발표했어요. 규모와 관계없이 쓰기 쉬워져요.",
+    "url": "https://layer.ai/blog/pricing-updates-2025",
+    "source": "notice"
+  }
+]

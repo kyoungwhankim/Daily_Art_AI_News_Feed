@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-03-13-1",
+    "service": "fal.ai",
+    "date": "2025.03.13",
+    "kind": "모델",
+    "title": "Topaz Video AI 업스케일러 fal 제공",
+    "summary": "저해상도·열화된 영상을 HD로 끌어올리는 Topaz Labs 영상 업스케일러가 fal에 추가됐어요.",
+    "url": "https://blog.fal.ai/topaz-video-ai-upscaler-now-live-on-fal/",
+    "source": "notice"
+  },
+  {
+    "id": "fal.ai-2025-03-13-2",
+    "service": "fal.ai",
+    "date": "2025.03.13",
+    "kind": "모델",
+    "title": "Vidu 2.0 영상 모델 fal 제공",
+    "summary": "시작·끝 프레임과 참조 이미지를 지원하는 Vidu 영상 생성 모델이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/vidu-models-live-on-fal/",
+    "source": "notice"
+  }
+]

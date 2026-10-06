@@ -1,0 +1,18 @@
+[
+  {
+    "id": "kling-2026-09-28-1",
+    "service": "kling",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Kling 4.0 공개, 4.0 Flash 얼리 액세스",
+    "summary": "사실감과 제어력을 높인 Kling 4.0이 10월 정식 출시를 예고하고, 4.0 Flash를 일부 사용자에게 먼저 열었어요. 최대 30초, 4K·10bit HDR, 멀티 키프레임을 지원해요.",
+    "details": [
+      "최대 10장 키프레임 입력",
+      "3~30초 길이, 720p·1080p·4K",
+      "21:9 등 다양한 화면비, 스테레오 오디오",
+      "생성 페이지 리디자인"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/Kling_4",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-05-13-1",
+    "service": "invokeai",
+    "date": "2025.05.13",
+    "kind": "기능",
+    "title": "Invoke 5.11.0: 새 모델 선택 드롭다운",
+    "summary": "Invoke 5.11.0에서 모델 선택 경험을 개선한 새 드롭다운 컴포넌트가 메인 모델 선택에 적용됐어요.",
+    "url": "https://invoke.ai/releases/version/v5-11-0/",
+    "source": "notice"
+  }
+]

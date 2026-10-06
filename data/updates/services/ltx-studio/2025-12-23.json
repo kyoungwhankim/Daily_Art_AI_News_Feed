@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-12-23-1",
+    "service": "ltx-studio",
+    "date": "2025.12.23",
+    "kind": "API",
+    "title": "LTX 개발자 콘솔 공개 오픈",
+    "summary": "LTX 개발자 콘솔이 셀프 가입, 조직 자동 생성, 크레딧 충전식 선불 결제와 함께 누구에게나 열렸어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

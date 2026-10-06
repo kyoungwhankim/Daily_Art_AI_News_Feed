@@ -1,0 +1,18 @@
+[
+  {
+    "id": "unity-ai-2026-01-05-1",
+    "service": "unity-ai",
+    "date": "2026.01.05",
+    "kind": "기능",
+    "title": "AI Assistant 1.5: Ask 모드, UI Builder 에이전트, 생성기 통합",
+    "summary": "AI Assistant 1.5.0에서 실행 없이 질문만 하는 Ask 모드, 미리보기를 갖춘 UI Builder 에이전트, 파일 변경 권한 시스템이 추가되고 Generators 워크플로가 Assistant에 통합됐어요.",
+    "details": [
+      "이미지·스크린샷 첨부",
+      "Diff를 보여 주는 Code Edit 도구, 패키지 관리 도구",
+      "다단계 작업을 다루는 새 Orchestrator",
+      "Generators: 스프라이트시트, 애니메이션 루프 모드, 큐브맵 스카이박스, 오디오 편집"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#150-pre1---2026-01-05",
+    "source": "dev"
+  }
+]

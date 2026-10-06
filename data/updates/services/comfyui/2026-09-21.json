@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-09-21-1",
+    "service": "comfyui",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "ComfyUI v0.37.0: Qwen-Image-2.1·MoGe 3",
+    "summary": "ComfyUI v0.37.0에서 Qwen-Image-2.1과 단일 이미지 지오메트리 추정 MoGe 3를 지원하고, Empty Latent Image 기본 크기가 1024가 됐어요.",
+    "details": [
+      "GPT Image 2 투명 배경 옵션, Meshy 7.1",
+      "Qwen 텍스트 인코더 CUDA graphs"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-37-0",
+    "source": "notice"
+  }
+]

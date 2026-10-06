@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-05-30-1",
+    "service": "scenario",
+    "date": "2023.05.30",
+    "kind": "기능",
+    "title": "학습 진행 시각화 개선",
+    "summary": "학습의 현재 단계와 다음 단계를 더 잘 볼 수 있게 진행 표시를 개선했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-14-0-may-30-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-03-24-1",
+    "service": "scenario",
+    "date": "2023.03.24",
+    "kind": "기능",
+    "title": "웹 앱 v1.6.0: 사이드 메뉴 접기·팀 처리",
+    "summary": "사이드 메뉴 접기 보기와 로그인 페이지 이미지가 추가되고 teamId 처리가 지원돼요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-6-0-march-24-2023",
+    "source": "notice"
+  }
+]

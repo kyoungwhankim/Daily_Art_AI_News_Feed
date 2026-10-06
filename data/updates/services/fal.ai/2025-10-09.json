@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-09-1",
+    "service": "fal.ai",
+    "date": "2025.10.09",
+    "kind": "기능",
+    "title": "모델 비교용 Sandbox 공개",
+    "summary": "같은 프롬프트로 여러 모델을 동시에 돌려 결과를 나란히 비교하는 Sandbox가 fal.ai/sandbox에 나왔어요.",
+    "url": "https://fal.ai/docs/changelog#october-9-2025",
+    "source": "dev"
+  }
+]

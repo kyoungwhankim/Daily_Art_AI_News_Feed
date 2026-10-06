@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-04-23-1",
+    "service": "comfyui",
+    "date": "2025.04.23",
+    "kind": "연동",
+    "title": "ComfyUI, GPT-Image-1 API 노드 지원(베타)",
+    "summary": "OpenAI가 공개한 GPT-Image-1을 ComfyUI 네이티브 API 노드(베타)로 바로 쓸 수 있어요. 별도 API 키 설정 없이 노드 그래프 안에서 호출해요.",
+    "url": "https://blog.comfy.org/p/comfyui-now-supports-gpt-image-1",
+    "source": "notice"
+  }
+]

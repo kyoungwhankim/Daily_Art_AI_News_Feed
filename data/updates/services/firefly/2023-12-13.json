@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-12-13-1",
+    "service": "firefly",
+    "date": "2023.12.13",
+    "kind": "API",
+    "title": "Firefly API: Generative Match·Expand·Fill·Upload 추가",
+    "summary": "Firefly API에 Generative Match를 지원하는 Generate Images와 Generative Expand, Generative Fill, Upload API가 추가됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#december-13-2023",
+    "source": "dev"
+  }
+]

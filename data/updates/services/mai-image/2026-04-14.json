@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mai-image-2026-04-14-1",
+    "service": "mai-image",
+    "date": "2026.04.14",
+    "kind": "모델",
+    "title": "MAI-Image-2-Efficient 출시: 약 41% 저렴한 비용",
+    "summary": "대량·고속 작업용 MAI-Image-2-Efficient가 Microsoft Foundry와 MAI Playground에 출시됐어요. MAI-Image-2보다 22% 빠르고 가격은 약 41% 낮아 제품 사진·마케팅 소재 대량 제작에 좋아요.",
+    "details": [
+      "텍스트 입력 100만 토큰당 5달러, 이미지 출력 100만 토큰당 19.50달러",
+      "GPU 효율 4배, 다른 주요 모델보다 평균 40% 빠름",
+      "고품질 인물·복잡한 글자는 MAI-Image-2 권장"
+    ],
+    "url": "https://microsoft.ai/news/mai-image-2-efficient/",
+    "source": "notice"
+  }
+]

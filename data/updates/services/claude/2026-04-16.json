@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-04-16-1",
+    "service": "claude",
+    "date": "2026.04.16",
+    "kind": "모델",
+    "title": "Claude Opus 4.7 출시",
+    "summary": "어려운 소프트웨어 엔지니어링 작업에서 크게 향상되고 더 높은 해상도로 이미지를 보는 Claude Opus 4.7이 정식 출시됐어요. 가격은 Opus 4.6과 같아요.",
+    "details": [
+      "고해상도 이미지 입력(최대 2576px), xhigh effort 추가",
+      "task budgets 베타, 새 토크나이저",
+      "Claude in Amazon Bedrock 전체 고객에게 개방"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-4-7",
+    "source": "notice"
+  }
+]

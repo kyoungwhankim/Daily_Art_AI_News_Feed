@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-02-16-1",
+    "service": "unity-ai",
+    "date": "2026.02.16",
+    "kind": "기능",
+    "title": "AI Assistant: 체크포인트와 MCP 클라이언트",
+    "summary": "AI Assistant 1.6.0-pre.3에서 작업 전 상태로 되돌리는 체크포인트와 MCP 클라이언트 기능이 추가됐어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#160-pre3---2026-02-16",
+    "source": "dev"
+  }
+]

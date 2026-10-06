@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-06-04-1",
+    "service": "figma-ai",
+    "date": "2025.06.04",
+    "kind": "API",
+    "title": "Dev Mode MCP 서버 베타 출시",
+    "summary": "Figma 데스크톱 앱에서 프레임을 선택하면 코드 에디터의 AI 에이전트가 그 디자인을 바탕으로 코드를 생성할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=mcp-server-beta",
+    "source": "notice"
+  }
+]

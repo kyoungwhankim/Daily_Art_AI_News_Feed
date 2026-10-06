@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-08-31-1",
+    "service": "scenario",
+    "date": "2026.08.31",
+    "kind": "API",
+    "title": "Wan 3.0·LTX-2.5·Meshy 7 Ultra, Flux 학습 가속",
+    "summary": "Wan 3.0, LTX-2.5, Meshy 7 Ultra가 추가되고 LoRA 학습이 크게 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-31-2",
+    "service": "scenario",
+    "date": "2026.08.31",
+    "kind": "연동",
+    "title": "에이전트 스킬: UGC·팬캠 워크플로",
+    "summary": "AI 에이전트가 사용자 제작 콘텐츠를 관리하고 팬캠 영상을 만드는 새 스킬 2종이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-38-0",
+    "source": "notice"
+  }
+]

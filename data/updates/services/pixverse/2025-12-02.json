@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-12-02-1",
+    "service": "pixverse",
+    "date": "2025.12.02",
+    "kind": "모델",
+    "title": "PixVerse API에 V5.5 모델 출시",
+    "summary": "PixVerse API에서 새 영상 생성 모델 V5.5를 쓸 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-10-03-1",
+    "service": "comfyui",
+    "date": "2025.10.03",
+    "kind": "연동",
+    "title": "ComfyUI, Seedance Pro 첫·끝 프레임 제어",
+    "summary": "ByteDance Seedance Pro API 노드가 텍스트→영상, 이미지→영상과 함께 첫 프레임·마지막 프레임 입력을 지원해 영상의 시작과 끝을 고정할 수 있어요.",
+    "url": "https://blog.comfy.org/p/frame-control-unlocked-seedance-pro",
+    "source": "notice"
+  }
+]

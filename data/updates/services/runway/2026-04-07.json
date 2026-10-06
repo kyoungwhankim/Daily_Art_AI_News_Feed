@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-04-07-1",
+    "service": "runway",
+    "date": "2026.04.07",
+    "kind": "기능",
+    "title": "Runway에 Seedance 2.0 추가",
+    "summary": "텍스트·이미지·영상·오디오로 영상을 생성하거나 편집하는 Seedance 2.0을 미국 외 지역 Unlimited·Enterprise 플랜에서 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

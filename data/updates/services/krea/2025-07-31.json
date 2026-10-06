@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2025-07-31-1",
+    "service": "krea",
+    "date": "2025.07.31",
+    "kind": "모델",
+    "title": "FLUX.1 Krea [dev] 오픈 웨이트 공개",
+    "summary": "Black Forest Labs와 함께 만든 첫 이미지 모델 Krea 1의 오픈 버전 FLUX.1 Krea [dev]를 공개했어요. 'AI 티'를 줄인 미감과 사실감에 집중했고 FLUX.1-dev 생태계와 호환돼요.",
+    "details": [
+      "Hugging Face에 22GB 가중치, GitHub에 코드 공개",
+      "FLUX.1-dev와 완전 호환되는 guidance distilled 모델",
+      "개발 과정을 담은 기술 보고서 함께 공개"
+    ],
+    "url": "https://www.krea.ai/blog/flux-krea-open-source-release",
+    "source": "notice"
+  }
+]

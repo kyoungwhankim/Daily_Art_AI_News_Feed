@@ -1,0 +1,19 @@
+[
+  {
+    "id": "rokoko-2026-07-16-1",
+    "service": "rokoko",
+    "date": "2026.07.16",
+    "kind": "모델",
+    "title": "Rokoko Vision 3.0 출시, Rokoko Create로 통합",
+    "summary": "단안 AI 모캡 파이프라인을 새로 만든 Vision 3.0이 나왔어요. 더 깔끔하고 빠르며, Video-to-Motion이 웹 Rokoko Create에 Text-to-Motion과 함께 들어갔어요.",
+    "details": [
+      "새 Vision 솔버로 품질·처리 속도 향상",
+      "Vision 사이트는 Rokoko Create로 리디렉트",
+      "Studio 2.6.2에서 Vision 3.0 지원",
+      "듀얼캠·온라인 웹캠 캡처는 8월 16일 종료",
+      "Smartgloves II 새 펌웨어로 Glove Ready 슈트 버튼 지원"
+    ],
+    "url": "https://www.rokoko.com/insights/introducing-rokoko-vision-3-0",
+    "source": "notice"
+  }
+]

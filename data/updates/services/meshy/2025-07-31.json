@@ -1,0 +1,22 @@
+[
+  {
+    "id": "meshy-2025-07-31-1",
+    "service": "meshy",
+    "date": "2025.07.31",
+    "kind": "기능",
+    "title": "애니메이션 프리셋 500개 이상으로 확대",
+    "summary": "Meshy의 애니메이션 프리셋이 500개 이상으로 늘어났어요. 리깅 지식 없이도 캐릭터에 다양한 동작을 빠르게 입힐 수 있어요.",
+    "url": "https://www.meshy.ai/blog/free-3d-animation",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2025-07-31-2",
+    "service": "meshy",
+    "date": "2025.07.31",
+    "kind": "API",
+    "title": "Meshy-5 PBR 텍스처 맵 지원",
+    "summary": "enable_pbr 파라미터로 meshy-5 모델에서도 PBR 맵을 받을 수 있게 됐어요. Text to 3D, Image to 3D, Multi-Image to 3D, Retexture에 적용돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2025",
+    "source": "dev"
+  }
+]

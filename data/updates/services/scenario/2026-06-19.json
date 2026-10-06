@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-06-19-1",
+    "service": "scenario",
+    "date": "2026.06.19",
+    "kind": "API",
+    "title": "프로젝트 단위 API 키·3D 내보내기",
+    "summary": "프로젝트 범위의 API 키로 보안을 세분화할 수 있고 3D 에셋 내보내기 스케일이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-123-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-06-19-2",
+    "service": "scenario",
+    "date": "2026.06.19",
+    "kind": "API",
+    "title": "Cartwheel 3D 애니메이션·Pruna 가상 피팅",
+    "summary": "텍스트로 3D 캐릭터를 움직이는 Cartwheel, Reve Remix, Pruna Try-On이 추가되고 Flux LoRA 지원이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-3-0",
+    "source": "notice"
+  }
+]

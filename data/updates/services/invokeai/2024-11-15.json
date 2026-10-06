@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-11-15-1",
+    "service": "invokeai",
+    "date": "2024.11.15",
+    "kind": "모델",
+    "title": "Invoke 5.4.1: SD 3.5 Medium·Large 지원",
+    "summary": "Invoke 5.4.1에서 Stable Diffusion 3.5 Medium과 Large를 스타터 모델에서 받아 쓸 수 있게 됐어요. 문제가 있던 5.4.0을 대신하는 릴리스예요.",
+    "details": [
+      "Denoising Strength 슬라이더를 레이어 패널 상단으로 이동",
+      "Control Layer 필터 \"Simple\" 모드",
+      "레이어 미리보기 툴팁 확대"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-4-1/",
+    "source": "notice"
+  }
+]

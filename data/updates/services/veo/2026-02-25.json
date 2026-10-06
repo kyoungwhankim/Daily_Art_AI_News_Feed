@@ -1,0 +1,18 @@
+[
+  {
+    "id": "veo-2026-02-25-1",
+    "service": "veo",
+    "date": "2026.02.25",
+    "kind": "앱",
+    "title": "Flow 인터페이스 개편, 이미지 생성 통합",
+    "summary": "Flow가 이미지 생성을 전면에 둔 새 인터페이스로 바뀌어 Nano Banana로 만든 이미지를 바로 Veo 영상의 재료로 쓸 수 있어요. Whisk와 ImageFX 기능도 Flow로 옮겨왔어요.",
+    "details": [
+      "Flow에서 이미지 무료 생성",
+      "3월부터 Whisk·ImageFX 프로젝트를 Flow 라이브러리로 이전 가능",
+      "@ 기호로 라이브러리 에셋 참조",
+      "유연한 에셋 관리와 정밀한 편집 기능"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates-february-2026/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2025-04-30-1",
+    "service": "midjourney",
+    "date": "2025.04.30",
+    "kind": "모델",
+    "title": "V7 모델 업데이트, 라이트박스 에디터, --exp 파라미터",
+    "summary": "V7 이미지 품질·프롬프트 정확도·손 표현이 개선됐어요. 이미지를 더 디테일하고 역동적으로 만드는 실험적 미학 파라미터 --exp(0~100)도 추가됐어요.",
+    "details": [
+      "라이트박스 에디터 UI 개선, Vary·Upscale 버튼 포함",
+      "--exp 권장값 5·10·25·50·100"
+    ],
+    "url": "https://updates.midjourney.com/v7-update-editor-and-exp/",
+    "source": "notice"
+  }
+]

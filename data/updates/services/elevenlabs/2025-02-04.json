@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-02-04-1",
+    "service": "elevenlabs",
+    "date": "2025.02.04",
+    "kind": "기능",
+    "title": "Projects가 Studio로 바뀌어 정식 출시",
+    "summary": "Projects가 Studio로 이름을 바꾸고 모두에게 정식 제공돼요. 에이전트 모니터링 대시보드와 Reader 인기 콘텐츠 섹션도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/4",
+    "source": "dev"
+  }
+]

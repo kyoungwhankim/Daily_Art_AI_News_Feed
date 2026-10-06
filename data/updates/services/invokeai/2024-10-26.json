@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-10-26-1",
+    "service": "invokeai",
+    "date": "2024.10.26",
+    "kind": "기능",
+    "title": "Invoke 5.3.0: 캔버스 객체 선택과 FLUX IP Adapter",
+    "summary": "Invoke 5.3.0에서 Segment Anything 기반 객체 선택으로 캔버스에서 클릭만으로 인페인트 마스크를 만들 수 있고, XLabs FLUX IP Adapter도 지원해요.",
+    "details": [
+      "xformers 관련 설치 문제 해결",
+      "Apple Silicon(MPS) FLUX 지원 개선",
+      "하위 메뉴를 갖춘 컨텍스트 메뉴"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-3-0/",
+    "source": "notice"
+  }
+]

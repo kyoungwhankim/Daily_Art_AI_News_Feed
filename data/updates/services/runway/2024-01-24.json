@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-01-24-1",
+    "service": "runway",
+    "date": "2024.01.24",
+    "kind": "기능",
+    "title": "Text to Speech 입력 3배 확대",
+    "summary": "Text to Speech 입력이 최대 3,000자까지 늘어났어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

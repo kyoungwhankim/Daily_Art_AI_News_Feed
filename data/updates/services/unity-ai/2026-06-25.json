@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-06-25-1",
+    "service": "unity-ai",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "AI Assistant 2.13: 새 Skills 알림과 자동 재연결",
+    "summary": "AI Assistant 2.13.0에서 새 로컬 Skills를 알려 주는 패널이 생기고, 절전·네트워크 끊김 후에도 연결이 자동 복구돼요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2130-pre1---2026-06-25",
+    "source": "dev"
+  }
+]

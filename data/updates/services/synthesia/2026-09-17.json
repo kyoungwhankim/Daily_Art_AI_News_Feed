@@ -1,0 +1,26 @@
+[
+  {
+    "id": "synthesia-2026-09-17-1",
+    "service": "synthesia",
+    "date": "2026.09.17",
+    "kind": "API",
+    "title": "Synthesia Interactive Avatar API 출시",
+    "summary": "실시간 립싱크 아바타를 내 제품에 넣는 Interactive Avatar API를 출시했어요. 내 LLM과 음성 스택을 그대로 쓰고 끼어들기 대화도 지원해요.",
+    "details": [
+      "공식 livekit-plugins-synthesia 플러그인(Python)",
+      "Express 2 아바타 사용, 무료 500분 제공"
+    ],
+    "url": "https://docs.synthesia.io/changelog/interactive-avatar-api",
+    "source": "dev"
+  },
+  {
+    "id": "synthesia-2026-09-17-2",
+    "service": "synthesia",
+    "date": "2026.09.17",
+    "kind": "API",
+    "title": "Synthesia Billing API 출시",
+    "summary": "현재 청구 기간과 크레딧 잔액(총·사용·잔여)을 API로 조회할 수 있는 Billing API를 출시했어요.",
+    "url": "https://docs.synthesia.io/changelog/billing-api",
+    "source": "dev"
+  }
+]

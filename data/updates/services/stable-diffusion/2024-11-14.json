@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-11-14-1",
+    "service": "stable-diffusion",
+    "date": "2024.11.14",
+    "kind": "연동",
+    "title": "Amazon SageMaker JumpStart에 SD3.5 Large 제공",
+    "summary": "8B 모델 Stable Diffusion 3.5 Large를 Amazon SageMaker JumpStart에서 쓸 수 있게 됐어요. VPC 안에서 안전하게 배포할 수 있어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-3-5-large-is-now-available-in-amazon-sagemaker-jumpstart",
+    "source": "notice"
+  }
+]

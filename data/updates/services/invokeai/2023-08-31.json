@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-08-31-1",
+    "service": "invokeai",
+    "date": "2023.08.31",
+    "kind": "기능",
+    "title": "InvokeAI 3.1.0: 노드 기반 Workflow Builder 도입",
+    "summary": "InvokeAI 3.1.0은 노드 기반 워크플로를 GUI처럼 쉽게 다루는 Workflow Builder를 선보였어요. 커스텀 노드를 만들고 쓸 수 있어 확장 가능한 플랫폼이 됐어요.",
+    "details": [
+      "Node Editor와 예제 워크플로, 커뮤니티 노드",
+      "InvokeAI 전반으로 SDXL 지원 확대",
+      "인페인팅·아웃페인팅 개선"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-3-1-0/",
+    "source": "notice"
+  }
+]

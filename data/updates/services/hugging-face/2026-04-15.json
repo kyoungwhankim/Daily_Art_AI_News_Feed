@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-04-15-1",
+    "service": "hugging-face",
+    "date": "2026.04.15",
+    "kind": "기능",
+    "title": "Kernels 저장소·Kernels Hub 공개",
+    "summary": "하드웨어와 PyTorch 버전에 맞게 미리 컴파일된 최적화 커널을 Kernels Hub에서 찾아 불러올 수 있어요. torch.compile과 호환되고 기본 PyTorch 대비 1.7~2.5배 빨라져요.",
+    "url": "https://huggingface.co/changelog/kernels",
+    "source": "notice"
+  }
+]

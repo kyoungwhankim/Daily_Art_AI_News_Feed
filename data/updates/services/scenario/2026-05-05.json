@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-05-05-1",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "API",
+    "title": "Usage API 필터·Bytedance BYOK",
+    "summary": "Usage API에 필터가 생기고 Bytedance 모델 BYOK를 지원해요. SVG·영상 에셋 안정성도 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-118-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-05-05-2",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "API",
+    "title": "3D 애니메이션 도구·LTX-2.3 제어·1080p",
+    "summary": "자동 3D 캐릭터 리깅, LTX-2.3 영상 제어, 1080p 생성, SAM 3.1 영상 분할이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-31-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-05-3",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "기능",
+    "title": "Node Agent·자동 자막",
+    "summary": "워크플로를 돕는 Scenario Node Agent와 자동 자막 기능이 나왔고 Starter 플랜 API 접근이 열렸어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-10-0",
+    "source": "notice"
+  }
+]

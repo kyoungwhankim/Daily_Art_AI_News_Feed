@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2012-03-23-1",
+    "service": "iclone",
+    "date": "2012.03.23",
+    "kind": "앱",
+    "title": "iClone 5.13, 물리 스프링 회전과 Reset Scale",
+    "summary": "비균등 스케일 오브젝트 찌그러짐을 막는 Reset Scale과 물리 스프링 제약의 Y·Z 회전이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

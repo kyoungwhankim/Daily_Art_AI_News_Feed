@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-02-19-1",
+    "service": "elevenlabs",
+    "date": "2026.02.19",
+    "kind": "기능",
+    "title": "ElevenAgents Experiments, 실트래픽 A/B 테스트",
+    "summary": "실제 트래픽과 측정 지표로 에이전트 설정을 안전하게 실험하는 Experiments 기능이 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-experiments-in-elevenagents",
+    "source": "notice"
+  }
+]

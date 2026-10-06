@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-01-09-1",
+    "service": "runway",
+    "date": "2025.01.09",
+    "kind": "기능",
+    "title": "에셋 태그 기능 추가",
+    "summary": "복잡한 작업 흐름에서도 에셋을 태그로 분류하고 추적할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

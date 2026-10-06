@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-03-17-1",
+    "service": "stable-diffusion",
+    "date": "2023.03.17",
+    "kind": "기능",
+    "title": "Clipdrop에 Stable Diffusion Reimagine 출시",
+    "summary": "이미지 한 장만 올리면 프롬프트 없이 여러 변형 이미지를 만들어 주는 Stable Diffusion Reimagine이 Clipdrop 도구로 나왔어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-reimagine",
+    "source": "notice"
+  }
+]

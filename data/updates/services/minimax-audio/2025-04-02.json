@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2025-04-02-1",
+    "service": "minimax-audio",
+    "date": "2025.04.02",
+    "kind": "모델",
+    "title": "MiniMax Speech-02 turbo·hd 출시",
+    "summary": "운율과 안정성, 목소리 유사도와 음질이 뛰어난 초현실 음성 모델 Speech-02 시리즈(turbo·hd)가 나왔어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

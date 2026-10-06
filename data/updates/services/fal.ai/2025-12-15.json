@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-12-15-1",
+    "service": "fal.ai",
+    "date": "2025.12.15",
+    "kind": "모델",
+    "title": "Chatterbox Turbo TTS fal 제공",
+    "summary": "첫 음성까지 150ms 미만, 감정 표현 프롬프트와 즉석 음성 복제를 지원하는 오픈소스 TTS Chatterbox Turbo가 fal에 출시됐어요.",
+    "url": "https://blog.fal.ai/chatterbox-turbo-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

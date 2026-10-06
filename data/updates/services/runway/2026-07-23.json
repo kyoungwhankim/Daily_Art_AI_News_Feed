@@ -1,0 +1,41 @@
+[
+  {
+    "id": "runway-2026-07-23-1",
+    "service": "runway",
+    "date": "2026.07.23",
+    "kind": "API",
+    "title": "Runway Dev 출시: 개발자용 AI 미디어 플랫폼",
+    "summary": "이미지·영상·캐릭터 모델을 하나의 API로 제공하는 개발자·기업용 플랫폼 Runway Dev를 발표했어요. 모델, Media Router, Recipes·Workflows, Characters로 구성돼요.",
+    "details": [
+      "데이터 학습 미사용 계약, 제로 데이터 보존 지원",
+      "Adobe, ElevenLabs, Figma Weave 등이 이미 사용 중"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-runway-dev",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-07-23-2",
+    "service": "runway",
+    "date": "2026.07.23",
+    "kind": "API",
+    "title": "Runway Media Router 출시: 미디어 모델 자동 선택",
+    "summary": "요청마다 가장 적합한 영상·이미지·오디오 모델을 자동으로 고르는 Media Router를 Runway Dev에 내놨어요. 새 모델이 나와도 코드를 고칠 필요가 줄어요.",
+    "details": [
+      "API: 저장된 라우팅 설정을 configId로 참조",
+      "비용·지연·품질 최적화 선택, 모델 허용/차단 목록·크레딧 상한",
+      "dryRun으로 라우팅 결정 미리보기"
+    ],
+    "url": "https://runway.com/news/company-news/introducing-runway-media-router",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-07-23-3",
+    "service": "runway",
+    "date": "2026.07.23",
+    "kind": "기능",
+    "title": "Agent가 Workflows를 직접 구성·실행",
+    "summary": "원하는 작업을 말로 설명하면 Agent가 노드와 입력까지 포함한 다단계 워크플로를 만들어 실행해 줘요. 만든 워크플로는 직접 확인하고 수정할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

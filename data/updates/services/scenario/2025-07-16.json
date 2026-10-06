@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-07-16-1",
+    "service": "scenario",
+    "date": "2025.07.16",
+    "kind": "모델",
+    "title": "Minimax Hailuo 02·Image 01, GPT 충실도 모드",
+    "summary": "Minimax Hailuo 02 영상과 Minimax Image 01 이미지 모델이 추가됐어요. GPT-Image에는 High/Low 입력 충실도 모드가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/v1-91-minimax-hailuo-02-minimax-image-01-and-gpt-high-low-input-fidelity",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2025-09-10-1",
+    "service": "comfyui",
+    "date": "2025.09.10",
+    "kind": "연동",
+    "title": "ComfyUI, Seedream 4.0 API 노드",
+    "summary": "생성·편집·여러 장 출력을 한 모델로 하는 ByteDance Seedream 4.0을 API 노드로 ComfyUI에서 쓸 수 있어요. 2K 이미지를 만들어요.",
+    "url": "https://blog.comfy.org/p/seedream-40-now-available-in-comfyui",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-09-10-2",
+    "service": "comfyui",
+    "date": "2025.09.10",
+    "kind": "연동",
+    "title": "ComfyUI, Stable Audio 2.5 API 지원",
+    "summary": "기업용 음향 제작을 겨냥한 Stable Audio 2.5를 ComfyUI API로 지원해요. 최대 3분 길이 곡을 2초 안에 만들 수 있어요.",
+    "url": "https://blog.comfy.org/p/stable-audio-25-is-now-in-comfyui",
+    "source": "notice"
+  }
+]

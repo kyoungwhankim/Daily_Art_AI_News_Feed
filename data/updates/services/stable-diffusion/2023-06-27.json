@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-06-27-1",
+    "service": "stable-diffusion",
+    "date": "2023.06.27",
+    "kind": "API",
+    "title": "API에 SDXL 0.9 추가, 기본 엔진으로 지정",
+    "summary": "1024×1024로 학습된 SDXL 0.9가 API에 추가되고 기본 엔진이 됐어요. 다양한 화면 비율을 지원하고 별도 가격표가 적용돼요.",
+    "url": "https://platform.stability.ai/docs/release-notes#sdxl-v0-9-release",
+    "source": "dev"
+  }
+]

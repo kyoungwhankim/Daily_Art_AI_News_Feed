@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-25-1",
+    "service": "fal.ai",
+    "date": "2026.01.25",
+    "kind": "API",
+    "title": "요청 start_timeout 옵션",
+    "summary": "요청에 start_timeout을 지정하면 큐 대기가 너무 길 때 실행 전에 요청이 중단돼요.",
+    "url": "https://fal.ai/docs/changelog#january-25-2026",
+    "source": "dev"
+  }
+]

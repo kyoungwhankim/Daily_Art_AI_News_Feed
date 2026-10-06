@@ -1,0 +1,42 @@
+[
+  {
+    "id": "scenario-2026-06-02-1",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "API",
+    "title": "Claude Opus 4.8·Gemini 3.5 Flash 어시스턴트",
+    "summary": "어시스턴트 모델에 Claude Opus 4.8과 Gemini 3.5 Flash가 추가되고 ElevenLabs BYOK 음성 복제를 지원해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-120-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-06-02-2",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "API",
+    "title": "Compute v1.0: Gemini Image 정식·Grok Video 1.5",
+    "summary": "정식 출시된 Gemini Image 모델과 Grok Imagine Video 1.5, Smart Reframe이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-0-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-3",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "연동",
+    "title": "MCP 모델 추천 엔진 강화",
+    "summary": "에이전트가 워크플로에 쓸 모델을 더 똑똑하고 자율적으로 고를 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-4",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "기능",
+    "title": "커스텀 텍스처 모델·알파 영상 미리보기",
+    "summary": "텍스처용 커스텀 모델을 만들 수 있고 영상 미리보기가 알파 채널을 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-12-0",
+    "source": "notice"
+  }
+]

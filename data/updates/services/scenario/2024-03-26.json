@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-03-26-1",
+    "service": "scenario",
+    "date": "2024.03.26",
+    "kind": "요금",
+    "title": "병렬 추론 기준 요금 제한·사용량 API",
+    "summary": "비공개 모델 병렬 제한 대신 요금제별 병렬 추론 수 제한을 적용했어요. GET /usage로 CU 사용량을 볼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-19-0-march-26th-2024",
+    "source": "dev"
+  }
+]

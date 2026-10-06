@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-05-31-1",
+    "service": "heygen",
+    "date": "2026.05.31",
+    "kind": "API",
+    "title": "HeyGen HyperFrames 렌더 API 해상도·화면비 분리",
+    "summary": "HyperFrames 렌더 API에서 resolution이 1080p·4k 등급으로, aspect_ratio가 별도 필드로 나뉘는 호환성 변경이 즉시 적용됐어요.",
+    "url": "https://docs.heygen.com/changelog#hyperframes-render-api-%E2%80%94-decomposed-resolution-%2B-aspect-ratio",
+    "source": "dev"
+  }
+]

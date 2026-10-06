@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-04-1",
+    "service": "elevenlabs",
+    "date": "2026.06.04",
+    "kind": "기능",
+    "title": "Flows Agent, 자연어로 워크플로 생성",
+    "summary": "텍스트 프롬프트만으로 오디오·영상 Flows 파이프라인을 만들어 주고 다듬을 수 있는 Flows Agent가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-flows-agent",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "fal.ai-2026-03-18-1",
+    "service": "fal.ai",
+    "date": "2026.03.18",
+    "kind": "연동",
+    "title": "fal MCP 서버 공개 (mcp.fal.ai)",
+    "summary": "Claude Code·Cursor 등 MCP 지원 어시스턴트를 fal에 연결하는 MCP 서버가 나왔어요. 1,000개 넘는 모델 검색, 스키마·가격 확인, 추론 실행, 파일 업로드를 대화 안에서 할 수 있어요.",
+    "details": [
+      "9개 도구, 무상태·무료 (모델 실행 비용만 과금)"
+    ],
+    "url": "https://fal.ai/docs/changelog#march-18-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ltx-studio-2026-03-03-1",
+    "service": "ltx-studio",
+    "date": "2026.03.03",
+    "kind": "기능",
+    "title": "LTX Studio에 LTX 2.3 탑재",
+    "summary": "LTX 2.3이 LTX Studio에 들어와 네이티브 4K 세로 영상, 키프레임 제어, 새 오디오, 4배 나아진 프롬프트 이해를 제공해요.",
+    "url": "https://ltx.io/blog/ltx-2-3-is-live-in-ltx-studio",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-03-03-2",
+    "service": "ltx-studio",
+    "date": "2026.03.03",
+    "kind": "기능",
+    "title": "엔터프라이즈용 더빙·자막 기능 출시",
+    "summary": "LTX Studio에 더빙과 자막이 내장돼 영상 하나를 여러 언어와 시장용으로 바로 현지화할 수 있어요. 175개 이상 언어·방언을 지원해요.",
+    "details": [
+      "최대 30분 영상 립싱크 더빙",
+      "엔터프라이즈 전용, Avatars 출시 예정"
+    ],
+    "url": "https://ltx.io/blog/from-creative-generation-to-global-expansion-inside-ltx-studio",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-03-03-3",
+    "service": "ltx-studio",
+    "date": "2026.03.03",
+    "kind": "기능",
+    "title": "Gen Space에 레퍼런스 기반 Motion Control",
+    "summary": "레퍼런스 영상을 올리면 전신 움직임과 제스처를 캐릭터에 정확히 옮겨 주는 Motion Control이 Gen Space에 들어왔어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

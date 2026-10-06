@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-09-16-1",
+    "service": "recraft",
+    "date": "2025.09.16",
+    "kind": "기능",
+    "title": "대화형 Chat mode 베타와 NVIDIA Blackwell 가속",
+    "summary": "대화로 생성·편집·프롬프트 구상을 하는 Chat mode를 Free 포함 모든 플랜에 베타로 열었어요. NVIDIA Blackwell GPU 전환으로 생성은 최대 2배, 크리에이티브 업스케일은 3배 빨라졌어요.",
+    "url": "https://www.recraft.ai/press-releases/recraft-introduces-chat-mode-and-upgrades-image-generation-with-nvidia-blackwell-gpus",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-02-10-1",
+    "service": "recraft",
+    "date": "2025.02.10",
+    "kind": "기능",
+    "title": "캔버스 레이어 정렬 기능 추가",
+    "summary": "무한 캔버스의 이미지를 행이나 그리드로 깔끔하게 정렬하는 레이어 정렬 기능이 추가됐어요.",
+    "url": "https://www.recraft.ai/blog/boost-design-workflow-with-recrafts-layer-alignment",
+    "source": "notice"
+  }
+]

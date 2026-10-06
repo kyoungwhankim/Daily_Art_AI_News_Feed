@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-09-29-1",
+    "service": "comfyui",
+    "date": "2026.09.29",
+    "kind": "모델",
+    "title": "ComfyUI v0.38.0: Ming Image 디자인 모델과 Sora 노드 제거",
+    "summary": "ComfyUI v0.38.0에서 글자 많은 디자인 레이아웃용 Ming Image 0.1 Design과 Qwen-Image 2.1 ControlNet을 지원하고, 서비스가 끝난 Sora 영상 노드를 제거했어요.",
+    "details": [
+      "MiniMax-H3 Fun ControlNet Union 2.0, ID-V2V",
+      "LogC3·ACEScct HDR 색공간",
+      "Seedance 2.5 Draft 모드, Seedream 5.0 Flash",
+      "GPT-6 Sol·Luna 저가 등급"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-38-0",
+    "source": "notice"
+  }
+]

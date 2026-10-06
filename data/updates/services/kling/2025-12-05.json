@@ -1,0 +1,22 @@
+[
+  {
+    "id": "kling-2025-12-05-1",
+    "service": "kling",
+    "date": "2025.12.05",
+    "kind": "기능",
+    "title": "Kling O1 Element Library 출시",
+    "summary": "여러 각도의 레퍼런스 이미지를 올려 캐릭터·소품·장면을 등록하면 Kling O1이 기억해 일관되게 재사용해요. 시리즈 콘텐츠 제작이 빨라져요.",
+    "url": "https://kling.ai/release-note/release-notes/u3o4p73f2h",
+    "source": "notice"
+  },
+  {
+    "id": "kling-2025-12-05-2",
+    "service": "kling",
+    "date": "2025.12.05",
+    "kind": "기능",
+    "title": "Before & After 기능 출시",
+    "summary": "멀티모달 생성 결과를 원클릭으로 전후 비교 콘텐츠로 묶어주는 Before & After 기능이 추가됐어요.",
+    "url": "https://kling.ai/release-note/release-notes/2ct2ewqh5p",
+    "source": "notice"
+  }
+]

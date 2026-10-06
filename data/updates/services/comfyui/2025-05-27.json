@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-27-1",
+    "service": "comfyui",
+    "date": "2025.05.27",
+    "kind": "연동",
+    "title": "ComfyUI API 노드 2차: 3D·LLM 모델 추가",
+    "summary": "API 노드 2차 업데이트로 Gemini 2.5, GPT-4.1·o3 등 LLM과 Runway Gen-4, 3D 생성 모델 등 6개 모델이 한꺼번에 ComfyUI에 들어왔어요.",
+    "url": "https://blog.comfy.org/p/comfyui-api-nodes-wave-2-is-live",
+    "source": "notice"
+  }
+]

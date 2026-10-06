@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-01-04-1",
+    "service": "scenario",
+    "date": "2023.01.04",
+    "kind": "기능",
+    "title": "출력 이미지 배경 제거 기능",
+    "summary": "학습용 입력 이미지뿐 아니라 생성된 출력 이미지의 배경도 쉽게 지울 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-4-2023",
+    "source": "notice"
+  }
+]

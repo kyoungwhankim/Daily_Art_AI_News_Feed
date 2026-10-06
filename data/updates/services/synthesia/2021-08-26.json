@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-08-26-1",
+    "service": "synthesia",
+    "date": "2021.08.26",
+    "kind": "기능",
+    "title": "Synthesia 계정 간 영상 복제",
+    "summary": "계정 정보를 공유하지 않고 영상이나 템플릿을 다른 계정으로 복제해 협업할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/duplicate-videos-across-accounts",
+    "source": "notice"
+  }
+]

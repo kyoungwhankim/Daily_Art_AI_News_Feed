@@ -1,0 +1,12 @@
+[
+  {
+    "id": "dream-machine-2026-07-28-1",
+    "service": "dream-machine",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "보드를 정리하는 Pages 기능 추가",
+    "summary": "하나의 보드를 여러 페이지와 섹션으로 나눌 수 있는 Pages가 나왔어요. 보드당 10,000개 객체 한도 때문에 프로젝트를 쪼갤 필요가 없어졌어요.",
+    "url": "https://lumalabs.ai/news/new-luma-pages",
+    "source": "notice"
+  }
+]

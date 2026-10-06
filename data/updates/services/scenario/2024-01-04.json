@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-04-1",
+    "service": "scenario",
+    "date": "2024.01.04",
+    "kind": "API",
+    "title": "대용량 업로드·추론 취소 지원",
+    "summary": "6MB 넘는 파일의 멀티파트 업로드와 추론 취소를 지원해요. 학습 완료 시 이메일도 보내줘요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-12-0-january-4th-2024",
+    "source": "dev"
+  }
+]

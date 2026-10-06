@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-06-16-1",
+    "service": "comfyui",
+    "date": "2026.06.16",
+    "kind": "모델",
+    "title": "ComfyUI v0.25.0: Depth Anything 3·SCAIL-2와 10비트 영상",
+    "summary": "ComfyUI v0.25.0에서 Depth Anything 3, 캐릭터 교체 모델 SCAIL-2, Bernini-R을 지원하고 10비트 영상 입출력이 가능해졌어요.",
+    "details": [
+      "가우시안 스플랫·포인트 클라우드 미리보기 노드",
+      "Gemini 텍스트, Runway Aleph2 노드",
+      "v0.25.1: Kling V3-Turbo 지원",
+      "--reserve-vram·--vram-headroom 옵션"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-25-0",
+    "source": "notice"
+  }
+]

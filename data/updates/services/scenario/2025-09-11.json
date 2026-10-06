@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-11-1",
+    "service": "scenario",
+    "date": "2025.09.11",
+    "kind": "API",
+    "title": "API에 Veo3 개선·ElevenLabs 오디오 추가",
+    "summary": "Veo3·Veo3 Fast에 네거티브 프롬프트·9:16·길이 선택이 추가되고 가격이 크게 내렸어요. ElevenLabs TTS 오디오 API도 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v2-85-0-welcome-more-versatile-google-veo3-and-elevenlabs-models-family",
+    "source": "dev"
+  }
+]

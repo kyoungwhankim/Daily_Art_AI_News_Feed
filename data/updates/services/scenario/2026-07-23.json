@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-23-1",
+    "service": "scenario",
+    "date": "2026.07.23",
+    "kind": "연동",
+    "title": "MCP 도구 카탈로그 검색·멤버별 소비 한도",
+    "summary": "에이전트가 도구를 동적으로 찾고, MCP로 멤버별 소비 한도를 관리할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-22-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "elevenlabs-2025-11-05-1",
+    "service": "elevenlabs",
+    "date": "2025.11.05",
+    "kind": "기능",
+    "title": "ElevenLabs 자체 호스팅 LLM 에이전트 지원",
+    "summary": "오픈소스 LLM을 ElevenLabs 인프라에서 직접 호스팅해 음성 에이전트의 지연과 추론 비용을 줄였어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-hosted-llms",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2025-11-05-2",
+    "service": "elevenlabs",
+    "date": "2025.11.05",
+    "kind": "API",
+    "title": "Music API 스템 분리와 Text to Dialogue 타임스탬프",
+    "summary": "음악에서 보컬·드럼·베이스 등을 나누는 스템 분리 엔드포인트와 Text to Dialogue 글자 단위 타임스탬프가 추가됐어요.",
+    "details": [
+      "Music API 스템 분리",
+      "Text to Dialogue 타임스탬프·음성 구간",
+      "일회용 시간 제한 토큰",
+      "통합 ElevenLabs CLI로 Agents CLI 대체"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/5",
+    "source": "dev"
+  }
+]

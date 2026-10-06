@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-03-13-1",
+    "service": "scenario",
+    "date": "2025.03.13",
+    "kind": "기능",
+    "title": "캔버스 우클릭 메뉴·새 탭 열기",
+    "summary": "캔버스 도구가 우클릭 메뉴로 옮겨지고, 에셋과 모델을 새 탭으로 열 수 있게 됐어요. 검색 필터도 다중 선택돼요.",
+    "url": "https://www.scenario.com/changelog/v1-81-canvas-context-menu-more",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2025-10-02-1",
+    "service": "ludo.ai",
+    "date": "2025.10.02",
+    "kind": "기능",
+    "title": "Sprite Generator에 Pose Editor 추가",
+    "summary": "애니메이션의 첫 프레임 자세를 원하는 대로 잡는 Pose Editor가 추가돼 캐릭터 동작 제작이 쉬워졌어요.",
+    "url": "https://ludo.ai/whats-new#new-in-the-sprite-generator-create-and-animate-poses",
+    "source": "notice"
+  }
+]

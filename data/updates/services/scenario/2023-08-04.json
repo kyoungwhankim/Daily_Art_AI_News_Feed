@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-08-04-1",
+    "service": "scenario",
+    "date": "2023.08.04",
+    "kind": "기능",
+    "title": "이미지 일괄 다운로드 개선",
+    "summary": "이미지를 한꺼번에 내려받고 시드·번호·프롬프트로 파일명을 정할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-26-0-august-4-2023",
+    "source": "notice"
+  }
+]

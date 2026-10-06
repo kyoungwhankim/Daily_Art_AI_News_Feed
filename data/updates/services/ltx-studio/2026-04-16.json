@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ltx-studio-2026-04-16-1",
+    "service": "ltx-studio",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Editing Space: 이미지 편집 도구 통합 공간",
+    "summary": "Brush, 업스케일, 카메라 앵글 조정 등 LTX Studio의 이미지 편집 도구를 하나의 작업 공간에 모았어요.",
+    "url": "https://ltx.io/blog/stop-switching-start-editing",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-04-16-2",
+    "service": "ltx-studio",
+    "date": "2026.04.16",
+    "kind": "요금",
+    "title": "Veo 3.1 Lite 추가와 Veo 3.1 Fast 가격 인하",
+    "summary": "Google의 가장 저렴한 영상 모델 Veo 3.1 Lite를 LTX Studio에 추가하고, Veo 3.1 Fast 가격을 내렸어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

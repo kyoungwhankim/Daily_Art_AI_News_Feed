@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2025-07-25-1",
+    "service": "midjourney",
+    "date": "2025.07.25",
+    "kind": "기능",
+    "title": "비디오 루프·엔드 프레임 지원, Discord 비디오 생성",
+    "summary": "반복 재생되는 루프 영상과 시작·끝 이미지를 지정한 영상을 만들 수 있게 됐어요. Discord 봇에서도 비디오 생성이 가능해졌어요.",
+    "details": [
+      "--loop로 루프 영상",
+      "--end 이미지URL로 엔드 프레임 지정",
+      "외부 이미지는 --video로 애니메이션",
+      "Remix 모드로 연장 시 프롬프트 변경"
+    ],
+    "url": "https://updates.midjourney.com/looping-and-end-frame-for-video-video-in-the-discord-bot/",
+    "source": "notice"
+  }
+]

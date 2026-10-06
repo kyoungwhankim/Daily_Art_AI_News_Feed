@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-21-1",
+    "service": "meshy",
+    "date": "2026.08.21",
+    "kind": "API",
+    "title": "Text to Motion API 출시",
+    "summary": "캐릭터 모델 없이 문장으로 2–10초 모션 클립을 만드는 Text to Motion API가 나왔어요. prime(FBX)과 swift(BVH) 모드가 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

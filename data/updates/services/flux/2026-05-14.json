@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-05-14-1",
+    "service": "flux",
+    "date": "2026.05.14",
+    "kind": "기능",
+    "title": "FLUX Outpainting 출시",
+    "summary": "프롬프트 없이 이미지를 원하는 방향으로 자연스럽게 확장하는 FLUX Outpainting을 출시했어요. 배너·SNS 비율 변경에 유용해요.",
+    "details": [
+      "조명·질감·구도를 이어 가는 장면 확장",
+      "캔버스 크기와 원본 위치 직접 지정",
+      "최대 4MP 출력, 엔드포인트 /v1/flux-tools/outpainting-v1"
+    ],
+    "url": "https://bfl.ai/blog/outpainting-extend-any-image-in-any-direction",
+    "source": "notice"
+  }
+]

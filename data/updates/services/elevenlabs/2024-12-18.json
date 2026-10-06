@@ -1,0 +1,15 @@
+[
+  {
+    "id": "elevenlabs-2024-12-18-1",
+    "service": "elevenlabs",
+    "date": "2024.12.18",
+    "kind": "모델",
+    "title": "초저지연 TTS 모델 Eleven Flash 출시",
+    "summary": "약 75ms 만에 음성을 만드는 가장 빠른 TTS 모델 Flash가 나왔어요. 실시간 대화형 에이전트에 알맞아요.",
+    "details": [
+      "API 모델 ID eleven_flash_v2, eleven_flash_v2_5"
+    ],
+    "url": "https://elevenlabs.io/blog/meet-flash",
+    "source": "notice"
+  }
+]

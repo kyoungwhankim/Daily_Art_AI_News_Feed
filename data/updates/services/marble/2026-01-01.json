@@ -1,0 +1,12 @@
+[
+  {
+    "id": "marble-2026-01-01-1",
+    "service": "marble",
+    "date": "2026.01.01",
+    "kind": "기능",
+    "title": "내보내기 옵션 개선",
+    "summary": "에셋이 실제 단위에 가깝게 크기·바닥이 맞춰져 내보내져요. OpenGL/OpenCV 좌표계 선택과 고품질 메시의 버텍스 컬러/텍스처 선택도 가능해졌어요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#january-1-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hugging-face-2026-03-10-1",
+    "service": "hugging-face",
+    "date": "2026.03.10",
+    "kind": "기능",
+    "title": "Buckets 출시: Hub의 S3 방식 오브젝트 스토리지",
+    "summary": "버전 관리 없이 체크포인트·로그·중간 산출물을 올릴 수 있는 가변 오브젝트 스토리지 Buckets가 나왔어요. hf CLI·Python·JS·Hub API로 관리하고 Xet 기반이라 빨라요.",
+    "details": [
+      "기존 스토리지 플랜 안에서 사용자·조직 모두 사용 가능",
+      "CDN 사전 워밍 지원 (출시 시 AWS·GCP)"
+    ],
+    "url": "https://huggingface.co/changelog/introducing-storage-buckets",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-26-1",
+    "service": "scenario",
+    "date": "2026.07.26",
+    "kind": "연동",
+    "title": "MCP 핵심 도구 위주로 간소화",
+    "summary": "MCP 서버가 기본으로 핵심 도구만 노출해 컨텍스트를 아끼고, 특수 기능은 카탈로그에서 불러와요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-23-1",
+    "source": "notice"
+  }
+]

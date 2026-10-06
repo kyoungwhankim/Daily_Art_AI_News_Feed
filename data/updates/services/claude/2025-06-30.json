@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-06-30-1",
+    "service": "claude",
+    "date": "2025.06.30",
+    "kind": "종료",
+    "title": "Claude Opus 3 지원 종료 예고",
+    "summary": "Claude Opus 3의 지원 종료가 발표됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2025",
+    "source": "dev"
+  }
+]

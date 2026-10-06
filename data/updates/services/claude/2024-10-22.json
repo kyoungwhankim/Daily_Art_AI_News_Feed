@@ -1,0 +1,15 @@
+[
+  {
+    "id": "claude-2024-10-22-1",
+    "service": "claude",
+    "date": "2024.10.22",
+    "kind": "모델",
+    "title": "새 Claude 3.5 Sonnet·3.5 Haiku와 컴퓨터 사용",
+    "summary": "업그레이드된 Claude 3.5 Sonnet과 Claude 3.5 Haiku가 공개되고, Claude가 화면을 보고 마우스·키보드를 조작하는 실험적 기능 computer use가 API에 추가됐어요.",
+    "details": [
+      "Anthropic 정의 computer use 도구 API 제공(베타)"
+    ],
+    "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "source": "notice"
+  }
+]

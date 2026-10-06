@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-09-18-1",
+    "service": "claude",
+    "date": "2025.09.18",
+    "kind": "기능",
+    "title": "Enterprise 플랜 메모리 지원",
+    "summary": "Enterprise 사용자도 메모리를 쓸 수 있어 Claude가 대화 맥락을 기억하고 요약해요. 시크릿 채팅으로 제외할 수도 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

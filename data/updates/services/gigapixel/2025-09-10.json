@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2025-09-10-1",
+    "service": "gigapixel",
+    "date": "2025.09.10",
+    "kind": "앱",
+    "title": "Gigapixel AI v8.4.3: Gigapixel Studio 업그레이드 지원",
+    "summary": "앱 안에서 새 Topaz Gigapixel Studio로 업그레이드할 수 있게 됐어요. 앞으로 Gigapixel AI는 소규모 패치만 받고 새 모델은 Studio에 나와요.",
+    "details": [
+      "v8.4.4(9/19): 업그레이드 버튼 반복 문제 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-4-3-v8-4-4/95160",
+    "source": "notice"
+  }
+]

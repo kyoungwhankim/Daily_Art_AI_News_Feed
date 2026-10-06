@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pixverse-2026-07-02-1",
+    "service": "pixverse",
+    "date": "2026.07.02",
+    "kind": "연동",
+    "title": "PixVerse에 Gemini Omni Flash 추가",
+    "summary": "Gemini Omni Flash를 PixVerse에서 텍스트·이미지·레퍼런스 이미지→영상 생성에 쓸 수 있게 됐어요. 3~10초 720p 영상에 동기화된 오디오를 만들어요.",
+    "details": [
+      "16:9·9:16 비율, 레퍼런스 이미지 최대 5장",
+      "영상 편집·연장·Transition은 첫 릴리스에 미포함"
+    ],
+    "url": "https://pixverse.ai/en/blog/how-to-use-gemini-omni-flash-on-pixverse",
+    "source": "notice"
+  }
+]

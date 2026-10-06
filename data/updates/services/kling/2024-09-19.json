@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-09-19-1",
+    "service": "kling",
+    "date": "2024.09.19",
+    "kind": "API",
+    "title": "Kling API에 AI Virtual Try-On 지원, 프롬프트 한도 2500자",
+    "summary": "Kling API가 가상 피팅(kolors-virtual-try-on) API를 정식 지원하기 시작했어요. 영상 생성 프롬프트와 네거티브 프롬프트 한도도 2,500자로 바뀌었어요.",
+    "url": "https://kling.ai/document-api/updates/api#09%2F19%2F2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-05-1",
+    "service": "meshy",
+    "date": "2026.09.05",
+    "kind": "API",
+    "title": "Creative Lab Fidget Pixel API 추가",
+    "summary": "사진을 멀티컬러 3D 프린팅용 픽셀아트 피젯 보드로 바꾸는 Fidget Pixel API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

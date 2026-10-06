@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-04-09-1",
+    "service": "fal.ai",
+    "date": "2025.04.09",
+    "kind": "모델",
+    "title": "Finegrain Eraser 등 이미지 편집 모델 fal 제공",
+    "summary": "물체뿐 아니라 그림자·반사까지 지우고 배경을 복원하는 Finegrain Eraser 모델이 fal에 추가됐어요.",
+    "url": "https://blog.fal.ai/new-finegrain-models-live-on-fal/",
+    "source": "notice"
+  }
+]

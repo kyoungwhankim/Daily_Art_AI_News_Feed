@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-08-27-1",
+    "service": "magnific",
+    "date": "2026.08.27",
+    "kind": "종료",
+    "title": "레거시 Seedream API 제거",
+    "summary": "레거시 /v1/ai/text-to-image/seedream 엔드포인트가 제거됐어요. Seedream 5.0 Pro, 5.0 Lite 또는 4.5를 쓰면 돼요.",
+    "url": "https://docs.magnific.com/changelog#august-27-2026",
+    "source": "dev"
+  }
+]

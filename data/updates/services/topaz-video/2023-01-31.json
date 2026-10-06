@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-01-31-1",
+    "service": "topaz-video",
+    "date": "2023.01.31",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.2: 안정화 개선과 GTX 16 성능 향상",
+    "summary": "긴 영상·장면 전환 영상의 자동 크롭·전체 프레임 안정화를 개선하고 GTX 16 시리즈 성능을 크게 높였어요. 단일 채널 이미지 시퀀스도 지원해요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-2/39557",
+    "source": "notice"
+  }
+]

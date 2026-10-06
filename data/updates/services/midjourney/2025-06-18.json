@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2025-06-18-1",
+    "service": "midjourney",
+    "date": "2025.06.18",
+    "kind": "모델",
+    "title": "첫 비디오 모델 V1 Video 출시",
+    "summary": "Midjourney 이미지에 'Animate'를 눌러 영상으로 만드는 Image-to-Video 모델 V1을 커뮤니티 전체에 공개했어요.",
+    "details": [
+      "자동/수동 모션 프롬프트",
+      "High motion·Low motion 설정",
+      "약 4초씩 최대 4번 연장",
+      "외부 이미지도 애니메이션 가능"
+    ],
+    "url": "https://updates.midjourney.com/introducing-our-v1-video-model/",
+    "source": "notice"
+  }
+]

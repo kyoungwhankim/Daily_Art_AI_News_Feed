@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-10-30-1",
+    "service": "scenario",
+    "date": "2024.10.30",
+    "kind": "기능",
+    "title": "AI 지원 챗봇·Scribble·캔버스 기능",
+    "summary": "문서로 학습한 AI 챗봇 'Ask AI'와 내장 영상 튜토리얼, Scribble 등 새 캔버스 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-73-ai-support-bot-new-canvas-features-scribble-more",
+    "source": "notice"
+  }
+]

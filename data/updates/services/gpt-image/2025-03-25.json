@@ -1,0 +1,31 @@
+[
+  {
+    "id": "gpt-image-2025-03-25-1",
+    "service": "gpt-image",
+    "date": "2025.03.25",
+    "kind": "모델",
+    "title": "GPT-4o 네이티브 이미지 생성(4o Image Generation) 공개",
+    "summary": "ChatGPT의 GPT-4o에 네이티브 이미지 생성이 들어갔어요. 글자 렌더링과 지시 따르기가 크게 좋아져서 텍스트가 들어간 이미지나 정밀한 요구사항을 반영한 그림을 만들기 쉬워졌어요.",
+    "details": [
+      "GPT-4o 안에서 바로 이미지를 생성하는 네이티브 방식",
+      "이미지 속 텍스트 렌더링 품질 향상",
+      "복잡한 지시사항 반영 능력 강화"
+    ],
+    "url": "https://openai.com/index/introducing-4o-image-generation",
+    "source": "notice"
+  },
+  {
+    "id": "gpt-image-2025-03-25-2",
+    "service": "gpt-image",
+    "date": "2025.03.25",
+    "kind": "정책",
+    "title": "GPT-4o 시스템 카드 부록: 4o 이미지 생성 안전 정책 공개",
+    "summary": "4o 이미지 생성의 안전 평가와 정책을 담은 시스템 카드 부록이 공개됐어요. 사진 같은 결과물과 이미지 입력 변형이 가능해진 만큼 어떤 안전장치를 두었는지 설명해요.",
+    "details": [
+      "DALL·E 3 계열보다 훨씬 강력한 새로운 이미지 생성 방식이라고 설명",
+      "사실적인 이미지 생성과 입력 이미지 변형 기능에 대한 위험 평가 포함"
+    ],
+    "url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum",
+    "source": "notice"
+  }
+]

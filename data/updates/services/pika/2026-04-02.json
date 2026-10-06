@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pika-2026-04-02-1",
+    "service": "pika",
+    "date": "2026.04.02",
+    "kind": "모델",
+    "title": "PikaStream1.0 공개: AI 에이전트와 실시간 화상 대화",
+    "summary": "AI 에이전트와 얼굴을 보며 실시간으로 대화할 수 있는 실시간 영상 엔진 PikaStream1.0을 공개했어요. Pika AI Self를 Google Meet에 초대해 바로 써 볼 수 있어요.",
+    "details": [
+      "단일 H100에서 480p·24FPS 개인화 영상 실시간 생성",
+      "음성→영상 지연 약 1.5초",
+      "다른 에이전트용 Skill을 GitHub로 배포"
+    ],
+    "url": "https://pika.art/blog/introducing-real-time-video-chat",
+    "source": "notice"
+  }
+]

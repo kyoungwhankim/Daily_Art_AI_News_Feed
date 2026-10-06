@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2024-06-19-1",
+    "service": "iclone",
+    "date": "2024.06.19",
+    "kind": "앱",
+    "title": "iClone 8.42, BuildingGen·프롭 분포 옵션 개선",
+    "summary": "BuildingGen 최적화에서 창문·문을 제외할 수 있고, Prop Distribution에 Z 오프셋이 생겼어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

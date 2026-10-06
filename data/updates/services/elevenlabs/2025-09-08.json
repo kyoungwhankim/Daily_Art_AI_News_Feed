@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-09-08-1",
+    "service": "elevenlabs",
+    "date": "2025.09.08",
+    "kind": "API",
+    "title": "모든 TTS 모델 언어 코드 지원",
+    "summary": "모든 Text to Speech 모델이 언어 코드를 지원하고, Eleven v3·Flash·Turbo에 텍스트 정규화가 켜졌어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/9/8",
+    "source": "dev"
+  }
+]

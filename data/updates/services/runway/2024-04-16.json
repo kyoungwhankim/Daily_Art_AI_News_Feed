@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-16-1",
+    "service": "runway",
+    "date": "2024.04.16",
+    "kind": "기능",
+    "title": "Gen-2 안에서 Lip Sync 사용",
+    "summary": "Gen-2 도구 안에서 바로 오디오에 맞춘 Lip Sync 영상을 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

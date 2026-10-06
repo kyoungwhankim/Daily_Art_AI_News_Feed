@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-02-26-1",
+    "service": "hugging-face",
+    "date": "2026.02.26",
+    "kind": "요금",
+    "title": "Public Storage 추가 용량 판매 시작",
+    "summary": "공개 스토리지 추가 용량을 TB당 월 12달러부터 1~50TB 단위로 구매·변경·해지할 수 있게 됐어요. Xet 중복 제거로 업로드와 공간 사용이 최적화돼요.",
+    "url": "https://huggingface.co/changelog/public-storage-add-ons",
+    "source": "notice"
+  }
+]

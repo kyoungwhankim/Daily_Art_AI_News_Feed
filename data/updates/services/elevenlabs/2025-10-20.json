@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-10-20-1",
+    "service": "elevenlabs",
+    "date": "2025.10.20",
+    "kind": "연동",
+    "title": "Genesys 에이전트 설정 덮어쓰기",
+    "summary": "Genesys 사용자가 Genesys 흐름에서 에이전트 설정을 직접 덮어쓸 수 있고, Agents CLI와 React Native SDK가 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/20",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-04-18-1",
+    "service": "mureka",
+    "date": "2025.04.18",
+    "kind": "API",
+    "title": "Mureka API reference_id·vocal_id 동시 사용",
+    "summary": "곡 생성 API에서 레퍼런스와 보컬 제어 파라미터 reference_id와 vocal_id를 함께 쓸 수 있어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

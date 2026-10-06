@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-08-18-1",
+    "service": "pixverse",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "PixVerse 사용량 차감 조회 API 출시",
+    "summary": "PixVerse API에 크레딧 사용·차감 내역을 조회하는 Usage Deduction Query API를 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

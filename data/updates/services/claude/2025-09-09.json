@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-09-09-1",
+    "service": "claude",
+    "date": "2025.09.09",
+    "kind": "기능",
+    "title": "Claude 앱에서 파일 생성·편집",
+    "summary": "Claude가 앱 안에서 Excel 스프레드시트, PowerPoint 덱, 문서, PDF를 직접 만들고 편집할 수 있게 됐어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

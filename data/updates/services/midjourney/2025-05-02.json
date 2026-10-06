@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-05-02-1",
+    "service": "midjourney",
+    "date": "2025.05.02",
+    "kind": "요금",
+    "title": "V7 Fast 모드 출시, 비용 절반으로",
+    "summary": "V7 최적화로 기본 Fast 모드가 생겨 V7 작업 비용이 V6 수준으로 2배 저렴해졌어요. Fast는 약 40초, Turbo는 약 18초 걸려요.",
+    "details": [
+      "이전 버전은 --q 2로 사용",
+      "실험적 --q 4 모드 추가",
+      "--oref 작업은 여전히 2배 비용"
+    ],
+    "url": "https://updates.midjourney.com/fast-mode-for-v7/",
+    "source": "notice"
+  }
+]

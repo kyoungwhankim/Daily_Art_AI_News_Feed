@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flow-studio-2026-04-16-1",
+    "service": "flow-studio",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Flow Studio Asset Generator에 리깅 추가",
+    "summary": "Asset Generator로 만든 캐릭터가 리깅까지 돼 바로 Live Action 프로젝트에 쓸 수 있어요. Trellis 2와 Nano Banana 계열 모델도 추가됐어요.",
+    "details": [
+      "생성 캐릭터 자동 리깅",
+      "Live Action에서 Neural Layer로 렌더 향상",
+      "Trellis 2 3D 생성, Nano Banana·Pro·2 이미지 생성",
+      "GLB 다운로드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

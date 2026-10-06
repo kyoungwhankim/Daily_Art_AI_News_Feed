@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-07-01-1",
+    "service": "krea",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "Krea MCP 워크스페이스 선택과 presigned 업로드",
+    "summary": "MCP 연결 시 사용할 워크스페이스를 고를 수 있게 됐고, get_upload_url 도구로 로컬 파일을 presigned URL에 올려 바로 생성에 쓸 수 있어요.",
+    "details": [
+      "OAuth 동의 화면에 워크스페이스 선택기 추가",
+      "선택한 워크스페이스로 과금·에셋 저장",
+      "presigned URL 3시간 유효",
+      "모든 미디어 입력이 외부 URL·data URI·에셋 URL을 동일하게 지원"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#july-1-2026",
+    "source": "dev"
+  }
+]

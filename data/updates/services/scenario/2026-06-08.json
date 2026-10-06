@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-06-08-1",
+    "service": "scenario",
+    "date": "2026.06.08",
+    "kind": "API",
+    "title": "오디오 추출·스카이박스 모델·Usage API",
+    "summary": "영상에서 오디오를 추출하고 새 스카이박스 모델을 쓸 수 있어요. 팀 사용량·청구 정보도 더 자세해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-121-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-06-08-2",
+    "service": "scenario",
+    "date": "2026.06.08",
+    "kind": "API",
+    "title": "Runway Aleph 2·TripoSplat·Caption Studio",
+    "summary": "텍스트로 영상을 편집하는 Runway Aleph 2, 즉석 3D 생성 TripoSplat, 새 Caption Studio가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-1-0",
+    "source": "notice"
+  }
+]

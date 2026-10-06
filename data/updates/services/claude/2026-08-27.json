@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-27-1",
+    "service": "claude",
+    "date": "2026.08.27",
+    "kind": "API",
+    "title": "SDK Files·Skills 정식 형태 전환·개인 API 키",
+    "summary": "여러 SDK에서 client.beta.files·skills가 베타 헤더 없이 정식 형태를 반환해요. Console에서 개인 키와 서비스 계정 키를 만들 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2026",
+    "source": "dev"
+  }
+]

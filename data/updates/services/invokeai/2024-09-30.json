@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2024-09-30-1",
+    "service": "invokeai",
+    "date": "2024.09.30",
+    "kind": "기능",
+    "title": "Invoke 5.0.1: Kohya FLUX LoRA 지원",
+    "summary": "Invoke 5.0.1에서 CLIP 레이어를 포함한 Kohya FLUX LoRA를 지원하고, FLUX img2img·인페인팅 품질을 개선했어요.",
+    "details": [
+      "기본 스케줄러 dpmpp_3m_k",
+      "모델 기본 설정에 FLUX guidance 추가",
+      "FluxDenoise 노드 trajectory_guidance_strength 필드 제거(호환성 변경)"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-0-1/",
+    "source": "notice"
+  }
+]

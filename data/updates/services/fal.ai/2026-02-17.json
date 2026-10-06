@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-17-1",
+    "service": "fal.ai",
+    "date": "2026.02.17",
+    "kind": "기능",
+    "title": "러너 CRASH_BACKOFF 상태 추가",
+    "summary": "setup()에서 실패한 러너가 CRASH_BACKOFF 상태로 표시돼 재시도 대기 중인 러너를 쉽게 찾을 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#february-17-2026",
+    "source": "dev"
+  }
+]

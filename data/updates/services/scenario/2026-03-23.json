@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-03-23-1",
+    "service": "scenario",
+    "date": "2026.03.23",
+    "kind": "API",
+    "title": "모델 허용 목록·팀 API 키·반복 노드",
+    "summary": "팀 워크플로에 모델 허용 목록과 BYOK 관리, 일괄 처리를 위한 반복 노드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-113-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-23-2",
+    "service": "scenario",
+    "date": "2026.03.23",
+    "kind": "기능",
+    "title": "엔터프라이즈 키 관리·Loop·Compositor 노드",
+    "summary": "Loop와 Compositor 워크플로 노드, 모델 접근 제어, 엔터프라이즈용 BYOK(자체 키 사용)가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-7-0",
+    "source": "notice"
+  }
+]

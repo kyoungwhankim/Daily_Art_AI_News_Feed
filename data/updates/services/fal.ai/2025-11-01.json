@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-11-01-1",
+    "service": "fal.ai",
+    "date": "2025.11.01",
+    "kind": "기능",
+    "title": "러너 재시작·개별 중지·셸 접속 CLI",
+    "summary": "fal apps rollout으로 재배포 없이 모든 러너를 재시작하고, 특정 러너 중지와 실행 중 컨테이너 셸 접속(fal runners shell)이 가능해졌어요.",
+    "url": "https://fal.ai/docs/changelog#november-1-2025",
+    "source": "dev"
+  }
+]

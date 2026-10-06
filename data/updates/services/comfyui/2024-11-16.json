@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2024-11-16-1",
+    "service": "comfyui",
+    "date": "2024.11.16",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.0: 네이티브 리루트와 그룹 개선",
+    "summary": "ComfyUI v0.3.0에서 더 가볍고 직관적인 네이티브 리루트 시스템과 중첩 그룹이 추가되고, 새 UI가 기본값이 됐어요.",
+    "details": [
+      "그룹을 노드처럼 선택·복사·고정",
+      "Ctrl+`로 여는 통합 로그 뷰어",
+      "선택 영역에 맞추는 Fit View"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-v0-3-0-release",
+    "source": "notice"
+  }
+]

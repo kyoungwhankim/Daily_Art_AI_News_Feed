@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-10-1",
+    "service": "claude",
+    "date": "2026.08.10",
+    "kind": "요금",
+    "title": "Claude Sonnet 5 도입가를 정가로 확정",
+    "summary": "Claude Sonnet 5의 도입가($2/$10 per MTok)가 정가가 됐어요. 9월 1일 예정이던 인상은 없어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-10-2026",
+    "source": "dev"
+  }
+]

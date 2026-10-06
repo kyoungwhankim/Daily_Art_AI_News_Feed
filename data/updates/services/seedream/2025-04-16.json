@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedream-2025-04-16-1",
+    "service": "seedream",
+    "date": "2025.04.16",
+    "kind": "모델",
+    "title": "Seedream 3.0 출시와 기술 보고서 공개",
+    "summary": "ByteDance Seed가 중국어·영어 이중 언어 텍스트-이미지 모델 Seedream 3.0의 기술 보고서를 공개했어요. 4월에 정식 출시돼 Doubao와 Jimeng에서 쓸 수 있고, 네이티브 2K 출력과 작은 글자 렌더링이 크게 좋아졌어요.",
+    "details": [
+      "다양한 화면비에서 후처리 없이 네이티브 2K 출력",
+      "약 3초 만에 고품질 이미지 생성",
+      "작은 글자와 여러 줄 텍스트 레이아웃 정확도 향상",
+      "인체·사물 구조 정확도와 미적 품질 개선"
+    ],
+    "url": "https://seed.bytedance.com/en/blog/seedream-3-0-text-to-image-model-technical-report-released",
+    "source": "notice"
+  }
+]

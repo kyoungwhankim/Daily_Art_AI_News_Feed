@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-24-1",
+    "service": "elevenlabs",
+    "date": "2026.03.24",
+    "kind": "기능",
+    "title": "ElevenAgents Guardrails",
+    "summary": "음성 에이전트가 브랜드·주제·규정을 벗어나지 않도록 하는 설정형 안전·행동 제어 Guardrails가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/guardrails",
+    "source": "notice"
+  }
+]

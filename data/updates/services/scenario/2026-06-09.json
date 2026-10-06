@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-09-1",
+    "service": "scenario",
+    "date": "2026.06.09",
+    "kind": "기능",
+    "title": "AI 에이전트 메모리·ElevenLabs 음성 학습",
+    "summary": "AI 에이전트가 기억과 적응형 사고를 갖게 됐어요. ElevenLabs 커스텀 음성 학습과 승인 노드도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-13-0",
+    "source": "notice"
+  }
+]

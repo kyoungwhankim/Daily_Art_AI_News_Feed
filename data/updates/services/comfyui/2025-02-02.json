@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-02-02-1",
+    "service": "comfyui",
+    "date": "2025.02.02",
+    "kind": "앱",
+    "title": "ComfyUI Desktop 대기 없이 공개, 설치 편의 개선",
+    "summary": "ComfyUI Desktop을 누구나 대기 없이 내려받을 수 있게 됐고, 설치 문제를 자동으로 잡아 주는 유지보수 페이지와 PyPI 미러 지원이 추가됐어요.",
+    "url": "https://blog.comfy.org/p/easy-installation-in-desktop",
+    "source": "notice"
+  }
+]

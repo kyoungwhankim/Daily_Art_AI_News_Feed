@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-12-11-1",
+    "service": "scenario",
+    "date": "2023.12.11",
+    "kind": "API",
+    "title": "포즈 감지 모델·학습 기반 개선",
+    "summary": "ControlNet 제어를 높이는 새 포즈 감지 모델이 추가되고 SDXL LoRA 학습을 위한 기반이 마련됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-7-0-december-11th-2023",
+    "source": "dev"
+  }
+]

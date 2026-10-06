@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-06-01-1",
+    "service": "krea",
+    "date": "2026.06.01",
+    "kind": "기능",
+    "title": "Krea 2 LoRA 모든 사용자에게 개방",
+    "summary": "Krea 2 LoRA를 이제 누구나 Krea에서 직접 만들고 쓸 수 있게 됐어요. 나만의 스타일을 반복 생성에 활용하기 쉬워졌어요.",
+    "url": "https://www.krea.ai/docs/changelog#june-1-2026",
+    "source": "dev"
+  }
+]

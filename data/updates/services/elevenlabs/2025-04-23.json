@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-04-23-1",
+    "service": "elevenlabs",
+    "date": "2025.04.23",
+    "kind": "연동",
+    "title": "ElevenLabs 음성 에이전트에 Gemini 2.5 Flash",
+    "summary": "Gemini 2.5 Flash를 ElevenLabs 음성 에이전트의 LLM으로 쓸 수 있어 추론·저지연·툴 호출이 좋아졌어요.",
+    "url": "https://elevenlabs.io/blog/gemini-25-flash",
+    "source": "notice"
+  }
+]

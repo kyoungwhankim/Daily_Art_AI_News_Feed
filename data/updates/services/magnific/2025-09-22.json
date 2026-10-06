@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-09-22-1",
+    "service": "magnific",
+    "date": "2025.09.22",
+    "kind": "API",
+    "title": "PixVerse V5 Transition API",
+    "summary": "두 이미지 사이를 잇는 영상 전환을 만드는 PixVerse V5 Transition 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/image-to-video/pixverse-v5-transition"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#september-22-2025",
+    "source": "dev"
+  }
+]

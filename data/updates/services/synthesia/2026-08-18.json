@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-08-18-1",
+    "service": "synthesia",
+    "date": "2026.08.18",
+    "kind": "기능",
+    "title": "Synthesia PowerPoint 가져오기 개선",
+    "summary": "텍스트 재현, 표 지원이 좋아졌고 발표자 노트가 없으면 스크립트를 자동으로 만들어 줘요.",
+    "url": "https://www.synthesia.io/updates/import-powerpoint-improvements",
+    "source": "notice"
+  }
+]

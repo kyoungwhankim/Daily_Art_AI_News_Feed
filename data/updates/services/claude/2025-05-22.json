@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2025-05-22-1",
+    "service": "claude",
+    "date": "2025.05.22",
+    "kind": "모델",
+    "title": "Claude Opus 4·Sonnet 4 출시",
+    "summary": "코딩과 장기 에이전트 작업에 강한 Claude Opus 4와 Sonnet 4가 나왔어요. 확장 사고 중 웹 검색 등 도구 사용(베타)과 병렬 도구 사용을 지원해요.",
+    "details": [
+      "API: 인터리브드 사고, Files API, 코드 실행 도구, MCP 커넥터 베타",
+      "top_p 기본값 0.999→0.99 변경",
+      "Go SDK 정식 버전"
+    ],
+    "url": "https://www.anthropic.com/news/claude-4",
+    "source": "notice"
+  }
+]

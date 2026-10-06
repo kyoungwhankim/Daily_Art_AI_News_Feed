@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-02-11-1",
+    "service": "synthesia",
+    "date": "2026.02.11",
+    "kind": "기능",
+    "title": "Synthesia 번역 용어집 기능",
+    "summary": "핵심 용어, 약어, 브랜드명을 워크스페이스 번역 용어집으로 정해 번역을 일관되게 유지해요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/keep-translations-consistent-with-a-glossary",
+    "source": "notice"
+  }
+]

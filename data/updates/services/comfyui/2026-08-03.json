@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-08-03-1",
+    "service": "comfyui",
+    "date": "2026.08.03",
+    "kind": "모델",
+    "title": "ComfyUI, MiniMax H3 오픈 웨이트 첫날 지원",
+    "summary": "스테레오 사운드와 2K·15초 영상을 만드는 MiniMax의 첫 오픈 웨이트 영상 모델 H3를 출시 당일 네이티브로 지원해요. RTX 3060에서도 돌아가도록 최적화했어요.",
+    "details": [
+      "v0.30.0: LTX 2.3 디코딩 가속 PrunaVAED",
+      "Save Video CRF 옵션, SaveText CSV 출력",
+      "Grok Imagine Video 1.5, H3 768P 노드",
+      "Comfy Kitchen AMD 지원"
+    ],
+    "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+    "source": "notice"
+  }
+]

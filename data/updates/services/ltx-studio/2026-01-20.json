@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-01-20-1",
+    "service": "ltx-studio",
+    "date": "2026.01.20",
+    "kind": "기능",
+    "title": "LTX Studio 오디오 투 비디오",
+    "summary": "목소리 녹음, 음악, 효과음을 올리면 소리에 맞춘 영상을 만들어 주는 Audio-to-Video를 LTX Studio에 내놨어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

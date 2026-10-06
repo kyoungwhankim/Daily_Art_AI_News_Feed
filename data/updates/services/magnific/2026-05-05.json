@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-05-05-1",
+    "service": "magnific",
+    "date": "2026.05.05",
+    "kind": "API",
+    "title": "Kling 4K 텍스트·이미지-투-비디오 API",
+    "summary": "텍스트나 이미지로 4K 영상을 만드는 Kling 4K T2V·I2V 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#may-05-2026",
+    "source": "dev"
+  }
+]

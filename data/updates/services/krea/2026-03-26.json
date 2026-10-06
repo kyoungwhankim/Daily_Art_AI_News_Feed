@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-03-26-1",
+    "service": "krea",
+    "date": "2026.03.26",
+    "kind": "기능",
+    "title": "Krea Edit에 다중 영역 Annotations 지원",
+    "summary": "Krea Edit에서 여러 영역에 각각 프롬프트와 레퍼런스 이미지를 달고 한 번에 생성할 수 있게 됐어요. 여러 수정을 순서대로 반복할 필요가 없어졌어요.",
+    "url": "https://www.krea.ai/blog/annotations",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pika-2026-08-18-1",
+    "service": "pika",
+    "date": "2026.08.18",
+    "kind": "모델",
+    "title": "Pika Soundtrack 공개: 영상에서 전체 사운드스케이프 생성",
+    "summary": "영상을 올리면 동작에 맞춘 효과음·음성·음악·앰비언스를 동기화해 만들어 주는 Pika Soundtrack 모델을 소개했어요. 원하는 요소를 텍스트로 지시할 수도 있어요.",
+    "url": "https://pika.art/blog/pika-soundtrack",
+    "source": "notice"
+  },
+  {
+    "id": "pika-2026-08-18-2",
+    "service": "pika",
+    "date": "2026.08.18",
+    "kind": "모델",
+    "title": "Pika Music 공개: 텍스트·가사·보이스로 곡 생성",
+    "summary": "텍스트, 가사, 보이스, 참고 곡을 조합해 완성된 곡을 만드는 음악 생성 모델 Pika Music을 소개했어요. 90초 곡을 평균 약 6초 만에 생성해요.",
+    "url": "https://pika.art/blog/pika-music",
+    "source": "notice"
+  },
+  {
+    "id": "pika-2026-08-18-3",
+    "service": "pika",
+    "date": "2026.08.18",
+    "kind": "모델",
+    "title": "Pika SFX 공개: 텍스트로 실시간 효과음 생성",
+    "summary": "글로 설명하면 바로 쓸 수 있는 44.1kHz 스테레오 효과음을 실시간보다 빠르게 만들어 주는 Pika SFX 모델을 소개했어요. 단일 효과음부터 연속된 사운드 시퀀스까지 지원해요.",
+    "url": "https://pika.art/blog/pika-sfx",
+    "source": "notice"
+  },
+  {
+    "id": "pika-2026-08-18-4",
+    "service": "pika",
+    "date": "2026.08.18",
+    "kind": "모델",
+    "title": "Pika Speech 공개: 5초 음성으로 보이스 클론하는 TTS",
+    "summary": "5초 분량 참고 음성으로 목소리를 복제하고 요청당 최대 5분 음성을 만드는 3B TTS 모델 Pika Speech를 소개했어요. 48kHz 고음질에 실시간 계수 0.02로 매우 빨라요.",
+    "url": "https://pika.art/blog/pika-speech",
+    "source": "notice"
+  }
+]

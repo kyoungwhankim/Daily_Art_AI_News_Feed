@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-02-19-1",
+    "service": "scenario",
+    "date": "2026.02.19",
+    "kind": "API",
+    "title": "Workflow API, API 키 인증 지원",
+    "summary": "Workflow API가 API 키 인증을 완전히 지원하고 프로젝트 접근 오류를 더 분명히 알려줘요.",
+    "url": "https://www.scenario.com/changelog/api-v2-109-1",
+    "source": "dev"
+  }
+]

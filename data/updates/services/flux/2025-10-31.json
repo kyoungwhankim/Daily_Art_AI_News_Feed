@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2025-10-31-1",
+    "service": "flux",
+    "date": "2025.10.31",
+    "kind": "종료",
+    "title": "Flux Pro 1.0·Finetuning API 지원 종료 시행",
+    "summary": "예고대로 Flux Pro 1.0 엔드포인트(flux-pro-1.0, -depth, -canny)와 Finetuning API가 오늘부로 공식 지원 종료됐어요.",
+    "url": "https://docs.bfl.ai/release-notes#october-31-2025",
+    "source": "dev"
+  }
+]

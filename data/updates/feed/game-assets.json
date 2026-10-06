@@ -1,0 +1,5292 @@
+[
+  {
+    "id": "scenario-2026-10-05-7",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "YVO3D 로우폴리 출력 지원",
+    "summary": "YVO3D Image to 3D가 48–50,000면 목표에 맞춘 깔끔한 로우폴리 메시를 만들어요.",
+    "url": "https://www.scenario.com/changelog/yvo3d-image-to-3d-smart-low-poly",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-6",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "팀 맞춤 홈·갤러리·워크플로 노드 제어",
+    "summary": "팀용 맞춤 홈 레이아웃을 만들고, 갤러리가 매끄러워졌어요. 웹훅과 워크플로 노드 정리 기능도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-5",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "FLUX.3 Edit Video·Kling V3/O3 Image·PixVerse V6",
+    "summary": "FLUX.3 Edit Video, Kling V3/O3 Image, PixVerse V6 Extend Video가 추가돼 4K 편집과 영상 확장이 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-71ba27d0e0c10dfa857a387742b6b97ac0f13e7c9164e07a8fea9e0686dd52c6",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-4",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "모델",
+    "title": "Google Lyria 3.5: 보컬 포함 풀곡 생성",
+    "summary": "보컬이 들어간 최대 3분 길이의 곡을 만드는 Google Lyria 3.5가 추가됐어요. 길이와 구간을 프롬프트로 조절해요.",
+    "url": "https://www.scenario.com/changelog/models-04ef25ea07b84093779078d924609768eb27c519b2bd8d6d4534440e84602cd7",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-3",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "연동",
+    "title": "MCP 프로젝트 관리 도구",
+    "summary": "에이전트가 새 MCP 도구로 Scenario 프로젝트를 직접 관리할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-32-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-2",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "ElevenLabs v4·Lyria 3.5·에이전트형 3D",
+    "summary": "ElevenLabs v4와 Google Lyria 3.5, 자율 에이전트형 3D 모델이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-05-1",
+    "service": "scenario",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "Claude 5.5 어시스턴트·새 3D 모델·요금 로직 개선",
+    "summary": "어시스턴트가 Claude 5.5로 업그레이드되고 새 3D 모델이 추가됐어요. 요금 계산과 검증 문제도 고쳐졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-136-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-04-2",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "키네틱 뮤직비디오 스킬",
+    "summary": "키네틱 타이포그래피 뮤직비디오를 만드는 파이프라인 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-52-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-04-1",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "Godot 전문 스킬 추가",
+    "summary": "AI 코딩 에이전트가 GDScript와 프로젝트 구조를 잘 다루도록 Godot 전문 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-51-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-03-1",
+    "service": "scenario",
+    "date": "2026.10.03",
+    "kind": "연동",
+    "title": "스킬: 횡스크롤 게임 키트·3D 메시 파이프라인",
+    "summary": "횡스크롤 2D 게임 에셋 스킬과 Ideogram 4.5, 복잡한 3D 메시 파이프라인을 에이전트가 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-50-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-02-2",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "FLUX.3 Image: 네이티브 2K·4K",
+    "summary": "레이아웃과 글자를 정확히 그리는 네이티브 2K·4K 이미지 모델 FLUX.3 Image가 추가됐어요. 참조 10장 편집도 가능해요.",
+    "url": "https://www.scenario.com/changelog/models-eab3035ee295f6530ff6dd783b7c0f154827c48d67cb82360ed7fbe149ee8780",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-02-1",
+    "service": "scenario",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 영상 확장·Recast 모델",
+    "summary": "클립을 최대 15초 늘리고 장면 삽입, 최대 4명 인물 교체가 가능한 MiniMax H3 Max 영상 모델 4종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-e1fc0d93974b3ff28842984cb0bdfcac1637da62d4e1f02ecd14a41ec7907016",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-01-1",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "스킬: 방향별 스프라이트·Claude Opus 5.5 3D",
+    "summary": "에이전트가 방향별 스프라이트 사이클과 Claude Opus 5.5 3D 모델을 만들 수 있고 HEIC 업로드를 지원해요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-49-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-30-1",
+    "service": "scenario",
+    "date": "2026.09.30",
+    "kind": "모델",
+    "title": "Ideogram 4.5: 정확한 글자의 포스터·로고",
+    "summary": "이미지 속 글자를 정확히 그리는 Ideogram 4.5로 최대 2K 포스터·로고·패키지를 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-44ffd9be027d2ef52c490100787f6fc80cf7b1a51e641cab26b495bde4d7b259",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-29-1",
+    "service": "scenario",
+    "date": "2026.09.29",
+    "kind": "모델",
+    "title": "ElevenLabs v4 음성 모델 추가",
+    "summary": "100개 이상 언어로 감정과 전달을 태그로 조절하는 ElevenLabs v4 음성 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-1ea8a361f25be325f48c04d420788c7b970cd6da634e9d113c3c2ee824d92b96",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-09-29-1",
+    "service": "layer",
+    "date": "2026.09.29",
+    "kind": "기능",
+    "title": "플레이어블 광고 생성 출시",
+    "summary": "Layer 에이전트가 실제 메커닉과 실패 조건을 갖춘 바로 배포 가능한 플레이어블 광고를 만들어 줘요.",
+    "url": "https://layer.ai/blog/playable-ad-generation-is-live-in-layer",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-28-3",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "기능",
+    "title": "Blender 다운로드·내보내기 이름 템플릿·Topaz 기본",
+    "summary": "파일명 템플릿과 Blender 다운로드를 지원하고 Topaz가 기본 업스케일러가 됐어요. 워크플로 CU 비용도 미리 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-26-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-28-2",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Seedream 5.0 Flash: 2K·편집 가능한 레이어",
+    "summary": "최대 2K 이미지를 만들고 기본 레이어와 투명 PNG 레이어로 나눠 편집할 수 있는 Seedream 5.0 Flash가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-9be94e5773023f2f0cb31b1909899c38b9fc2e74226602ab3ce4759db539a40b",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-28-1",
+    "service": "scenario",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "에이전트형 3D 생성·4K 48fps 영상",
+    "summary": "에이전트형 3D 아티스트 도구, 4K 48fps 영상, Ideogram·Recraft·ElevenLabs 최신 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-09-28-1",
+    "service": "ludo.ai",
+    "date": "2026.09.28",
+    "kind": "API",
+    "title": "Ludo CLI 출시",
+    "summary": "터미널에서 스프라이트·이미지·3D·영상·오디오 생성기를 모두 쓰는 Ludo CLI가 나왔어요. Claude Code 같은 코딩 에이전트 연결에 권장돼요.",
+    "url": "https://ludo.ai/whats-new#ludo-cli-every-ludo-generator-in-your-terminal",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-09-28-1",
+    "service": "layer",
+    "date": "2026.09.28",
+    "kind": "연동",
+    "title": "Layer 플러그인 출시: Photoshop·Blender·Figma 등",
+    "summary": "Layer를 Photoshop, Premiere Pro, After Effects, Blender, Figma, Slack, Chrome 안에서 바로 쓰는 플러그인이 나왔어요. 무료로 쓸 수 있어요.",
+    "details": [
+      "선택 영역을 마스크로 쓰는 Photoshop 패널",
+      "Premiere Pro·After Effects에서 영상·오디오 생성",
+      "Spine 리그, 350개 이상 시네마틱 프리셋"
+    ],
+    "url": "https://layer.ai/changelog#2026-09-28",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-27-1",
+    "service": "scenario",
+    "date": "2026.09.27",
+    "kind": "연동",
+    "title": "MCP 0.31, Claude Code 호환 개선",
+    "summary": "skill_get 도구가 추가되고 Claude Code에서 도구 설명이 잘리는 문제가 해결됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-31-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-26-1",
+    "service": "scenario",
+    "date": "2026.09.26",
+    "kind": "연동",
+    "title": "Blender·Maya·Unreal·Unity 전문 스킬",
+    "summary": "에이전트가 Blender, Maya, ZBrush, Unreal, Unity 작업을 돕는 전문 스킬을 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-48-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-25-2",
+    "service": "scenario",
+    "date": "2026.09.25",
+    "kind": "연동",
+    "title": "스킬: 뮤직비디오·3D 조명·대화 오디오",
+    "summary": "곡 전체 뮤직비디오, 3D 조명 제어, 2인 대화 오디오 등 에이전트 스킬이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-47-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-25-1",
+    "service": "scenario",
+    "date": "2026.09.25",
+    "kind": "API",
+    "title": "GPT-6 Astra 3D·커스텀 워터마크·웹훅 알림",
+    "summary": "GPT-6 Astra 3D 모델과 워크스페이스 워터마크, 일괄 다운로드 이름 지정, 크레딧 임계 웹훅 알림이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-135-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-09-24-2",
+    "service": "scenario",
+    "date": "2026.09.24",
+    "kind": "모델",
+    "title": "Gemini 3.8 Flash TTS 추가",
+    "summary": "30개 음성·24개 언어로 표현력 있는 음성과 2인 대화를 만드는 Gemini 3.8 Flash TTS가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-784c121b9b96ded270af2bb343efaa81db6f489d6dc9a7dd762f29148cb328fb",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-24-1",
+    "service": "scenario",
+    "date": "2026.09.24",
+    "kind": "연동",
+    "title": "MCP 공개 카탈로그·공유 메모리",
+    "summary": "에이전트가 공개 워크플로 카탈로그를 보고, 여러 MCP 클라이언트 간에 메모리를 공유할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-23-1",
+    "service": "scenario",
+    "date": "2026.09.23",
+    "kind": "모델",
+    "title": "PixVerse VibeMV: 노래를 뮤직비디오로",
+    "summary": "노래 한 곡을 10초부터 6분까지의 뮤직비디오로 만드는 PixVerse VibeMV가 추가됐어요. 15가지 스타일을 고를 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-ab7207fd029ff2b41500e4ba79fcd5aea4a2b27777f6745143ee5ea3da0c716f",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-09-23-1",
+    "service": "roblox-cube",
+    "date": "2026.09.23",
+    "kind": "기능",
+    "title": "새 텍스처 생성 도구·Segment Any Mesh·이미지 미리보기",
+    "summary": "품질과 제어가 좋아진 텍스처 생성, 가져온 메시를 파츠로 나누는 Segment Any Mesh, 생성 메시 이미지 미리보기가 Studio에 나왔어요.",
+    "url": "https://devforum.roblox.com/t/introducing-new-texture-generation-tools-segment-any-mesh-and-image-previews/4890084",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-22-2",
+    "service": "scenario",
+    "date": "2026.09.22",
+    "kind": "연동",
+    "title": "패럴랙스 배경·모델 비교 스킬",
+    "summary": "새 모델 비교 스킬과 패럴랙스 배경 기능이 추가되고 게임 에셋·학습 지침이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-46-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-22-1",
+    "service": "scenario",
+    "date": "2026.09.22",
+    "kind": "연동",
+    "title": "MCP 에셋 미리보기·뷰어 제어 확대",
+    "summary": "에이전트가 더 많은 에셋을 미리 보고 뷰어를 제어할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-21-2",
+    "service": "scenario",
+    "date": "2026.09.21",
+    "kind": "연동",
+    "title": "PATINA 리텍스처 스킬",
+    "summary": "에이전트용 PATINA 리텍스처링 워크플로 스킬과 3D·오디오·이미지·영상 지침 개선이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-45-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-21-1",
+    "service": "scenario",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "ElevenLabs Music v2.5·GPT-6 Astra 3D 등",
+    "summary": "ElevenLabs Music v2.5, P-Video 2 Pro, GPT-6 Astra 3D, Scenario Vectorize, LTX-2.5 Pro 4K 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.25.2",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-09-21-1",
+    "service": "ludo.ai",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "Hydra 애니메이션 모델 기본 적용",
+    "summary": "스프라이트 하나와 짧은 프롬프트로 동작 전체를 순서대로 그려 내고 효과음까지 만드는 Hydra가 기본 모델이 됐어요.",
+    "url": "https://ludo.ai/whats-new#meet-hydra-animations-that-play-out-the-whole-action",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-09-21-1",
+    "service": "layer",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "Qwen Image 2.1·API 웹훅·온보딩 대화",
+    "summary": "오픈 웨이트 Qwen Image 2.1이 추가되고 API 결과를 웹훅으로 받을 수 있어요. 새 사용자를 위한 에이전트 안내 세션도 생겼어요.",
+    "url": "https://layer.ai/changelog#2026-09-21",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-18-1",
+    "service": "scenario",
+    "date": "2026.09.18",
+    "kind": "연동",
+    "title": "립싱크 파이프라인·2D 에셋 템플릿 스킬",
+    "summary": "scenario-video 스킬이 립싱크 전체 파이프라인을 지원하고, 아이소메트릭·스프라이트 템플릿이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-44-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-17-3",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "연동",
+    "title": "에이전트 스킬: 분석·ComfyUI 워크플로 이전",
+    "summary": "MCP 사용량 보고를 보는 분석 스킬과 ComfyUI 그래프를 Scenario 워크플로로 옮기는 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-43-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-17-2",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "연동",
+    "title": "MCP 학습 설정 확장·사용량 보고",
+    "summary": "에이전트가 학습 설정에 샘플 프롬프트와 원본 이미지를 넣을 수 있고 CU 사용량 보고가 정확해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-28-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-17-1",
+    "service": "scenario",
+    "date": "2026.09.17",
+    "kind": "API",
+    "title": "Smart Clip Extraction·워크플로 검색 엔드포인트",
+    "summary": "새 영상 클립 추출 도구와 워크플로 검색 전용 엔드포인트가 추가되고 모델 목록이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-134-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-09-16-1",
+    "service": "scenario",
+    "date": "2026.09.16",
+    "kind": "연동",
+    "title": "에이전트 스킬: 팀 관리자",
+    "summary": "에이전트가 워크스페이스 설정을 관리하는 scenario-team-admin 스킬이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-42-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-15-1",
+    "service": "scenario",
+    "date": "2026.09.15",
+    "kind": "모델",
+    "title": "GPT Image 2.5·P-Video 2·3D-to-Image",
+    "summary": "GPT Image 2.5 Flare·Sunburst, P-Video 2, 3D로 이미지를 만드는 3D-to-image, 영상 비교 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-25-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-09-15-1",
+    "service": "layer",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "Layer CLI·TypeScript SDK·에이전트 스킬",
+    "summary": "터미널과 스크립트에서 생성할 수 있는 Layer CLI, TypeScript SDK, 에이전트 스킬이 나왔어요. Gemini 마스크 편집도 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-09-15",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-10-2",
+    "service": "scenario",
+    "date": "2026.09.10",
+    "kind": "연동",
+    "title": "스킬에 GPT Image 2.5·스프라이트 시트 파이프라인",
+    "summary": "에이전트 스킬이 GPT Image 2.5를 지원하고 게임용 스프라이트 시트를 만드는 파이프라인이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-41-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-10-1",
+    "service": "scenario",
+    "date": "2026.09.10",
+    "kind": "API",
+    "title": "영상 편집 모델·Tripo P2·SVG 벡터화",
+    "summary": "프롬프트 기반 영상 편집, HDR 영상 포맷, Tripo P2 3D 모델, 네이티브 SVG 벡터라이저가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-08-1",
+    "service": "scenario",
+    "date": "2026.09.08",
+    "kind": "API",
+    "title": "배경 제거 모델·일괄 IP 감지·벡터화 옵션",
+    "summary": "새 배경 제거 모델과 세부 벡터화 옵션, 일괄 IP 감지가 API에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-133-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2026-09-08-1",
+    "service": "layer",
+    "date": "2026.09.08",
+    "kind": "모델",
+    "title": "GPT Image 2.5·FLUX.3 Edit·Meshy T2",
+    "summary": "GPT Image 2.5 Flare·Sunburst, FLUX.3 Edit 영상 편집, MiniMax H3 Max Turbo, Meshy T2, 키프레임 카메라 이동이 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-09-08",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-03-2",
+    "service": "scenario",
+    "date": "2026.09.03",
+    "kind": "기능",
+    "title": "앱 내 마스킹·원클릭 다운로드",
+    "summary": "앱 안에서 마스킹을 하고, 워크플로 노드 복제와 원클릭 에셋 다운로드가 편해졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-24-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-03-1",
+    "service": "scenario",
+    "date": "2026.09.03",
+    "kind": "연동",
+    "title": "MCP 생성·업로드 진행 스트리밍",
+    "summary": "에이전트가 에셋 생성과 업로드 중 실시간 진행 알림을 받게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-02-2",
+    "service": "scenario",
+    "date": "2026.09.02",
+    "kind": "연동",
+    "title": "모델 학습 스킬, 비용 확인·승인 필수",
+    "summary": "scenario-model-training 스킬이 파인튜닝 전에 비용 견적을 받고 사용자 승인을 기다리도록 바뀌었어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-40-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-02-1",
+    "service": "scenario",
+    "date": "2026.09.02",
+    "kind": "연동",
+    "title": "에이전트 스킬: 영상 자막 Caption Studio",
+    "summary": "에이전트가 영상 자막을 만드는 scenario-caption-studio 스킬이 추가되고 스킬 탐색이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-40-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-01-2",
+    "service": "scenario",
+    "date": "2026.09.01",
+    "kind": "연동",
+    "title": "에이전트 스킬: 편집 가능한 SVG 브랜드 키트",
+    "summary": "에이전트가 편집 가능한 SVG로 브랜드 아이덴티티를 만들고 다듬는 scenario-brand-kit 스킬이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-39-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-01-1",
+    "service": "scenario",
+    "date": "2026.09.01",
+    "kind": "모델",
+    "title": "Gemini Omni 1.1 Flash·LTX-2.5 등 22개 모델",
+    "summary": "네이티브 오디오 영상 Gemini Omni 1.1 Flash, LTX-2.5 4종, Recraft V4 Styles 등 22개 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.23.1",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-09-01-1",
+    "service": "ludo.ai",
+    "date": "2026.09.01",
+    "kind": "정책",
+    "title": "2단계 인증: 인증 앱·패스키",
+    "summary": "계정 로그인에 인증 앱이나 패스키를 이용한 2단계 인증을 켤 수 있게 됐어요.",
+    "url": "https://ludo.ai/whats-new#two-factor-authentication-authenticator-apps-and-passkeys",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-31-2",
+    "service": "scenario",
+    "date": "2026.08.31",
+    "kind": "연동",
+    "title": "에이전트 스킬: UGC·팬캠 워크플로",
+    "summary": "AI 에이전트가 사용자 제작 콘텐츠를 관리하고 팬캠 영상을 만드는 새 스킬 2종이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-38-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-31-1",
+    "service": "scenario",
+    "date": "2026.08.31",
+    "kind": "API",
+    "title": "Wan 3.0·LTX-2.5·Meshy 7 Ultra, Flux 학습 가속",
+    "summary": "Wan 3.0, LTX-2.5, Meshy 7 Ultra가 추가되고 LoRA 학습이 크게 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-08-31-1",
+    "service": "ludo.ai",
+    "date": "2026.08.31",
+    "kind": "기능",
+    "title": "모든 2D 에셋 애니메이션",
+    "summary": "캐릭터뿐 아니라 VFX, 아이콘, UI, 로고, 타일, 패럴랙스, 텍스처 등 12가지 유형을 애니메이션할 수 있어요.",
+    "url": "https://ludo.ai/whats-new#animate-any-2d-asset-textures-tiles-ui-and-more",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-08-31-1",
+    "service": "layer",
+    "date": "2026.08.31",
+    "kind": "모델",
+    "title": "MiniMax H3 Max·보드 댓글·Recraft 스타일",
+    "summary": "소리까지 함께 만드는 최대 4K·15초 영상 MiniMax H3 Max가 추가됐어요. 세션 보드 댓글과 Recraft V4 커스텀 스타일도 생겼어요.",
+    "url": "https://layer.ai/changelog#2026-08-31",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-08-30-1",
+    "service": "ludo.ai",
+    "date": "2026.08.30",
+    "kind": "모델",
+    "title": "Forge·Forge Pixel 애니메이션 모델",
+    "summary": "가장 저렴한 스프라이트 애니메이션 모델 Forge(초당 1.5크레딧)와 픽셀아트용 Forge Pixel이 추가됐어요.",
+    "url": "https://ludo.ai/whats-new#meet-forge-and-forge-pixel-animate-for-less",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-28-1",
+    "service": "scenario",
+    "date": "2026.08.28",
+    "kind": "기능",
+    "title": "Genie 대화 탭·커스텀 홈",
+    "summary": "Genie에 대화 탭, 에셋 @멘션, 풍부한 미디어 미리보기가 생겼고 홈을 맞춤 구성할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-23-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-27-1",
+    "service": "scenario",
+    "date": "2026.08.27",
+    "kind": "API",
+    "title": "Recraft V4 Styles·HDR 다운로드",
+    "summary": "Recraft V4 Styles 모델이 추가되고 에셋 다운로드가 HDR을 지원해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-132-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-08-24-2",
+    "service": "scenario",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "PATINA PBR·Krea 2 모델·에셋 보관",
+    "summary": "PATINA PBR과 Krea 2 모델이 API에 추가되고 에셋 보관(아카이브) 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-131-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-08-24-1",
+    "service": "scenario",
+    "date": "2026.08.24",
+    "kind": "모델",
+    "title": "Wan 3.0·FLUX Video Upscale·PATINA 재질",
+    "summary": "네이티브 오디오 30초 영상 Wan 3.0, FLUX Video Upscale, PATINA 재질 모델 3종, Hitem3D 3.0이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.22.1",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-08-24-1",
+    "service": "layer",
+    "date": "2026.08.24",
+    "kind": "기능",
+    "title": "립싱크·영상 편집기·Interpolate",
+    "summary": "라이트박스에서 립싱크, 세션 캔버스 영상 편집, 보간·슬로모션, Topaz 업스케일 전 라인업, 스튜디오 기준 에셋 평가가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-24",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-22-1",
+    "service": "scenario",
+    "date": "2026.08.22",
+    "kind": "연동",
+    "title": "MCP 에셋 Quality Gate 도구",
+    "summary": "에셋 품질을 자동 평가하는 Quality Gate 도구가 MCP에 추가되고 OAuth 화면이 현지화됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-26-0",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-08-19-1",
+    "service": "roblox-cube",
+    "date": "2026.08.19",
+    "kind": "연동",
+    "title": "Studio MCP 멀티 에이전트 개선",
+    "summary": "모든 MCP 도구가 studio_id를 받아 여러 Studio와 클라이언트를 함께 쓰는 작업이 안정적이 됐어요. 연결된 AI 클라이언트도 설정에서 볼 수 있어요.",
+    "url": "https://devforum.roblox.com/t/studio-mcp-multi-agent-improvements-and-connected-ai-clients/4820583",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-18-2",
+    "service": "scenario",
+    "date": "2026.08.18",
+    "kind": "기능",
+    "title": "엔터프라이즈 IP 감지·Quality Gate·Prompt Spark v3",
+    "summary": "엔터프라이즈용 IP 감지와 Quality Gate, Prompt Spark v3, 상주 AI 어시스턴트, 개선된 에셋 뷰어가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-22-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-18-1",
+    "service": "scenario",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "Quality Gate API·Meshy 7·즉시 영상 재생",
+    "summary": "새 Quality Gate API와 Meshy 7·Grok 등 최신 모델이 추가되고 영상 미리보기를 바로 스트리밍해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-130-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-08-17-2",
+    "service": "scenario",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "MiniMax 음악·Grok Imagine 2.0·1080p 영상",
+    "summary": "MiniMax 음악 생성과 Grok Imagine 2.0이 추가되고 Seedance 2.5가 1080p를 지원해요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-8-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-17-1",
+    "service": "scenario",
+    "date": "2026.08.17",
+    "kind": "모델",
+    "title": "Grok Imagine Image 2.0·ElevenLabs Dubbing V2 등",
+    "summary": "Grok Imagine Image 2.0, ElevenLabs Dubbing V2, MiniMax Music 3.0, Seedance 2.5 1080p가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.21.2",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-08-17-1",
+    "service": "layer",
+    "date": "2026.08.17",
+    "kind": "기능",
+    "title": "레이어 분해·Wan 3.0·Meshy V7",
+    "summary": "완성 이미지를 편집 가능한 레이어로 분해해 PSD로 내보낼 수 있어요. Wan 3.0, Meshy V7, MiniMax Music 3도 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-17",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-13-1",
+    "service": "scenario",
+    "date": "2026.08.13",
+    "kind": "연동",
+    "title": "MCP 모델 권한 관리",
+    "summary": "MCP로 모델 권한을 직접 관리하고 미디어 편집 도구 추천이 똑똑해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-25-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-08-12-1",
+    "service": "ludo.ai",
+    "date": "2026.08.12",
+    "kind": "기능",
+    "title": "Keyframe Animation: 시작·중간·끝 지정",
+    "summary": "첫·중간·마지막 프레임을 지정해 원하는 동작 흐름대로 스프라이트시트를 만드는 Keyframe Animation 탭이 생겼어요.",
+    "url": "https://ludo.ai/whats-new#keyframe-animation-direct-the-start-the-middle-and-the-end",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-11-1",
+    "service": "scenario",
+    "date": "2026.08.11",
+    "kind": "모델",
+    "title": "FLUX.3 영상·Seedance 2.5·Meshy 7 등",
+    "summary": "FLUX.3 영상 스위트, 30초 영상 Seedance 2.5, Qwen Image 3.0, Meshy 7 이미지→3D·리텍스처가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.21.1",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-08-10-1",
+    "service": "layer",
+    "date": "2026.08.10",
+    "kind": "모델",
+    "title": "Seedance 2.5 추가",
+    "summary": "Seedance 2.5 영상 모델과 그려서 만드는 영상(draw-video), 빠른 작업 메뉴가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-10",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-06-3",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "기능",
+    "title": "프로젝트 모델 제어·Genie 개선·HEIC 지원",
+    "summary": "프로젝트별 모델 접근을 강제할 수 있고 Genie가 컬렉션을 정리해 줘요. HEIC와 Randomizer 노드도 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-21-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-06-2",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "Meshy-T2 3D·Grok·MiniMax 영상",
+    "summary": "스마트 토폴로지 3D Meshy-T2, Grok·MiniMax 영상 모델, Cartwheel 커스텀 캐릭터 업로드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-6-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-06-1",
+    "service": "scenario",
+    "date": "2026.08.06",
+    "kind": "API",
+    "title": "프로젝트 모델 관리·모더레이션 개선",
+    "summary": "프로젝트 단위 모델 관리와 더 똑똑한 콘텐츠 모더레이션이 들어왔어요. IP 감지 설정에는 호환성 변경이 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-129-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2026-08-04-1",
+    "service": "layer",
+    "date": "2026.08.04",
+    "kind": "모델",
+    "title": "MiniMax H3·Tripo 3D 메시 작업·병렬 서브 에이전트",
+    "summary": "MiniMax H3 영상, Tripo 3D 메시 작업, 병렬 서브 에이전트, SVG 도구가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-04",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-08-03-1",
+    "service": "scenario",
+    "date": "2026.08.03",
+    "kind": "모델",
+    "title": "MiniMax H3·MAI Image 2.5 Pro·Sonilo SFX 등",
+    "summary": "MiniMax H3, Grok Imagine Video 1.5, MAI Image 2.5 Pro, Sonilo 오디오 4종, Qwen Audio 3.0 TTS 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.20.1",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-07-31-1",
+    "service": "ludo.ai",
+    "date": "2026.07.31",
+    "kind": "기능",
+    "title": "3D 모델 애니메이션: 프리셋·프롬프트",
+    "summary": "리깅된 3D 모델에 수백 개 프리셋 동작(클립당 0.2크레딧)이나 실험적 텍스트 프롬프트로 애니메이션을 입힐 수 있어요.",
+    "url": "https://ludo.ai/whats-new#animate-your-3d-models-ready-made-presets-or-a-prompt",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-30-1",
+    "service": "scenario",
+    "date": "2026.07.30",
+    "kind": "연동",
+    "title": "MCP 팀·프로젝트 자동 선택",
+    "summary": "MCP 서버가 가능하면 팀과 프로젝트 범위를 자동으로 정해 연결이 간단해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-24-1",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-07-30-1",
+    "service": "layer",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "새 Layer: 에이전트 중심으로 재구축",
+    "summary": "Layer를 처음부터 다시 만들어, 직접 조작하는 도구가 아니라 지시하는 에이전트로 바꿨다고 발표했어요.",
+    "url": "https://layer.ai/blog/the-new-layer-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-07-29-1",
+    "service": "layer",
+    "date": "2026.07.29",
+    "kind": "기능",
+    "title": "새 Layer 공개·에셋 변환·공개 쇼케이스",
+    "summary": "새롭게 바뀐 Layer가 공개됐어요. 라이트박스에서 에셋 변환, 세션 보드 편집 기록, 공개 프로젝트 쇼케이스가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-07-29",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-27-2",
+    "service": "scenario",
+    "date": "2026.07.27",
+    "kind": "모델",
+    "title": "3D 가우시안 스플래팅·Rodin·Tripo 분할",
+    "summary": "세 제공사의 3D 가우시안 스플래팅, Tripo Segmentation, Rodin Bang! 파츠 분할, Seed Audio 다국어 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-20-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-27-1",
+    "service": "scenario",
+    "date": "2026.07.27",
+    "kind": "연동",
+    "title": "MCP 전용 OAuth 동의 화면",
+    "summary": "에이전트를 Scenario에 연결할 때 브랜드화된 OAuth 동의 페이지를 쓰게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-24-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-07-27-1",
+    "service": "ludo.ai",
+    "date": "2026.07.27",
+    "kind": "기능",
+    "title": "3D 모델 원클릭 리깅",
+    "summary": "외부 소프트웨어 없이 3D 모델에 클릭 한 번으로 엔진용 스켈레톤을 넣을 수 있어요. 손가락 포함 휴머노이드도 지원해요.",
+    "url": "https://ludo.ai/whats-new#rig-your-3d-models-in-one-click-engine-ready-skeletons",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-26-1",
+    "service": "scenario",
+    "date": "2026.07.26",
+    "kind": "연동",
+    "title": "MCP 핵심 도구 위주로 간소화",
+    "summary": "MCP 서버가 기본으로 핵심 도구만 노출해 컨텍스트를 아끼고, 특수 기능은 카탈로그에서 불러와요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-23-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-23-1",
+    "service": "scenario",
+    "date": "2026.07.23",
+    "kind": "연동",
+    "title": "MCP 도구 카탈로그 검색·멤버별 소비 한도",
+    "summary": "에이전트가 도구를 동적으로 찾고, MCP로 멤버별 소비 한도를 관리할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-22-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-22-1",
+    "service": "scenario",
+    "date": "2026.07.22",
+    "kind": "API",
+    "title": "BytePlus Seed Audio 다국어 모델",
+    "summary": "BytePlus Seed Audio 1.0 Multilingual로 오디오를 만들 수 있고 Usage API 보고가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-127-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-07-20-1",
+    "service": "scenario",
+    "date": "2026.07.20",
+    "kind": "모델",
+    "title": "Reve V2.1·ACE-Step 오디오 편집 등 추가",
+    "summary": "Reve V2.1, ACE-Step 오디오 편집 3종, Sonilo 영상→음악, Veed Lipsync V2, Cartwheel 리깅, Meshy Smart Topology가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/Web-App-v2.19.1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-17-1",
+    "service": "scenario",
+    "date": "2026.07.17",
+    "kind": "기능",
+    "title": "LoRA 로딩·Expand 개선, 홈 속도 향상",
+    "summary": "LoRA 처리가 매끄러워지고 Expand 워크플로가 개선됐어요. 홈 페이지 로딩도 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-19-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-07-17-1",
+    "service": "ludo.ai",
+    "date": "2026.07.17",
+    "kind": "요금",
+    "title": "크레딧 수시 충전·자동 충전",
+    "summary": "요금제 변경 없이 250–10,000크레딧을 바로 충전할 수 있고, 자동 충전도 설정할 수 있어요.",
+    "url": "https://ludo.ai/whats-new#top-up-credits-anytime-plus-auto-top-up",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-15-1",
+    "service": "scenario",
+    "date": "2026.07.15",
+    "kind": "API",
+    "title": "모델 예시 이미지 150장·현지 시간대 사용량",
+    "summary": "모델에 예시 이미지를 최대 150장 고정할 수 있고 사용량을 현지 시간대로 볼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-126-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-07-13-1",
+    "service": "scenario",
+    "date": "2026.07.13",
+    "kind": "기능",
+    "title": "홈에서 Genie 사용·워크플로 이미지 복사",
+    "summary": "홈페이지에서 바로 Scenario Genie를 쓸 수 있고 워크플로에서 이미지를 빠르게 복사할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-18-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-07-13-1",
+    "service": "ludo.ai",
+    "date": "2026.07.13",
+    "kind": "기능",
+    "title": "영상 2배 업스케일",
+    "summary": "생성한 영상을 클릭 한 번으로 2배 해상도로 키울 수 있어요. 초당 0.2크레딧이에요.",
+    "url": "https://ludo.ai/whats-new#video-upscale-2-the-resolution-one-click",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-07-13-1",
+    "service": "layer",
+    "date": "2026.07.13",
+    "kind": "기능",
+    "title": "Veo 3.1 참조 영상·타임라인 전환·패스키",
+    "summary": "Veo 3.1 Reference-to-Video, 영상 타임라인 전환 효과, 패스키 로그인이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-07-13",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-10-2",
+    "service": "scenario",
+    "date": "2026.07.10",
+    "kind": "기능",
+    "title": "Scenario Genie 에이전트·동시 워크플로",
+    "summary": "앱 어디서나 돕는 AI 도우미 Scenario Genie가 나왔어요. 워크플로 동시 실행과 관리자용 사용량 알림도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-17-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-10-1",
+    "service": "scenario",
+    "date": "2026.07.10",
+    "kind": "연동",
+    "title": "MCP 팀 관리·API 키 제어 도구",
+    "summary": "에이전트가 MCP로 팀 접근과 API 키를 직접 관리할 수 있고 Prompt Spark 흐름이 유연해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-21-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-09-3",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "연동",
+    "title": "MCP 모델 설명·학습 파라미터",
+    "summary": "에이전트가 마크다운 모델 설명을 보고 학습 epoch를 직접 설정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-20-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-09-2",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "연동",
+    "title": "MCP 토큰 사용 최적화·일괄 폴링",
+    "summary": "MCP 응답을 간결하게 해 LLM 컨텍스트 소모를 줄이고 작업 일괄 롱폴링을 추가했어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-19-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-09-1",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "API",
+    "title": "Maya 모션 에셋·Prompt Spark 참조 확대",
+    "summary": "Maya 모션 에셋을 네이티브로 지원하고 Prompt Spark 참조 한도가 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-125-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-07-09-1",
+    "service": "roblox-cube",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Assistant 크리에이터 제작 Skills",
+    "summary": "직접 Skill을 만들거나 Assistant가 만들게 해 원하는 작업 방식을 자동화할 수 있게 됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-introducing-creator-authored-skills/4728447",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-07-09-1",
+    "service": "ludo.ai",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "스프라이트시트·영상 프롬프트 편집, 참조 영상",
+    "summary": "생성한 스프라이트시트와 영상을 프롬프트로 고치고, 참조 이미지 최대 5장으로 영상을 만들 수 있어요. Motion Transfer는 절반 가격이 됐어요.",
+    "details": [
+      "Edit Spritesheet 탭: 외형·동작을 문장으로 수정",
+      "Video Generator From References 탭, 화면비 선택",
+      "Edit Video: 생성 영상 프롬프트 편집",
+      "Motion Transfer에 Forge 모델, 초당 2크레딧"
+    ],
+    "url": "https://ludo.ai/whats-new#edit-spritesheets-with-a-prompt",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-08-1",
+    "service": "scenario",
+    "date": "2026.07.08",
+    "kind": "API",
+    "title": "Seedream 5.0 Pro·ACE-Step 음악",
+    "summary": "Seedream 5.0 Pro와 ACE-Step 음악 모델, Omni Flash 영상 키프레임 제어가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-5-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-07-1",
+    "service": "scenario",
+    "date": "2026.07.07",
+    "kind": "연동",
+    "title": "MCP 도구 네임스페이스 표준화",
+    "summary": "MCP 도구 이름 체계를 표준화해 에이전트 안정성과 오류 복구가 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-18-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-07-06-1",
+    "service": "layer",
+    "date": "2026.07.06",
+    "kind": "모델",
+    "title": "Gemini·Recraft·Reve 모델·공개 워크플로 공유",
+    "summary": "새 Gemini, Recraft, Reve 모델과 공개 워크플로 공유 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-07-06",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-03-1",
+    "service": "scenario",
+    "date": "2026.07.03",
+    "kind": "요금",
+    "title": "멤버·프로젝트·API 키별 사용 한도 설정",
+    "summary": "모든 멤버, 프로젝트, API 키에 사용량 상한을 걸 수 있는 기능을 소개했어요. 팀의 Compute Unit 지출을 예측 가능하게 관리할 수 있어요.",
+    "url": "https://www.scenario.com/blog/ai-usage-limits-scenario",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-02-2",
+    "service": "scenario",
+    "date": "2026.07.02",
+    "kind": "요금",
+    "title": "팀 소비 한도·프롬프트 @멘션",
+    "summary": "팀의 Compute Unit 사용량에 세부 한도를 걸 수 있고, 프롬프트에서 @멘션 자동완성을 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-16-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-02-1",
+    "service": "scenario",
+    "date": "2026.07.02",
+    "kind": "API",
+    "title": "3D 모델 확대·사용자별 소비 한도",
+    "summary": "3D·오디오 모델이 늘고 사용자별 소비 한도를 설정할 수 있어요. BYOK 안정성도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-124-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-07-01-1",
+    "service": "scenario",
+    "date": "2026.07.01",
+    "kind": "API",
+    "title": "3D 월드 모델·4K 영상 생성",
+    "summary": "새 3D 환경·모션 모델과 4K 영상 생성이 추가되고 웹훅 안정성이 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-4-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-30-1",
+    "service": "scenario",
+    "date": "2026.06.30",
+    "kind": "연동",
+    "title": "MCP Prompt Spark 도구·에셋 분석",
+    "summary": "에이전트용 Prompt Spark 도구와 에셋 분석 도구가 추가되고 민감한 작업 보안이 강화됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-17-0",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-06-26-1",
+    "service": "roblox-cube",
+    "date": "2026.06.26",
+    "kind": "기능",
+    "title": "Assistant의 MicroProfiler 자동 분석",
+    "summary": "Assistant가 MicroProfiler 캡처를 분석해 성능 병목을 보고하고 수정 방법을 제안해요.",
+    "url": "https://devforum.roblox.com/t/automated-performance-profiling-with-microprofiler-and-assistant/4704417",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-25-1",
+    "service": "scenario",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "통합 워크스페이스·Cartwheel·Happy Horse 1.1",
+    "summary": "이미지·영상·오디오 모델을 빠르게 오가는 통합 워크스페이스와 Cartwheel, Happy Horse 1.1, Meshy Animation 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.15.0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-06-24-1",
+    "service": "ludo.ai",
+    "date": "2026.06.24",
+    "kind": "기능",
+    "title": "생성 기록 태그·검색·필터",
+    "summary": "생성 기록에 태그를 달고, 전체 텍스트 검색과 날짜 필터로 에셋을 찾을 수 있게 됐어요.",
+    "url": "https://ludo.ai/whats-new#find-anything-tag-search-filter-your-generations",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-22-1",
+    "service": "scenario",
+    "date": "2026.06.22",
+    "kind": "모델",
+    "title": "Recraft V4.1·Riverflow 2.5·Meshy UV Unwrap 등",
+    "summary": "Recraft V4.1, Riverflow 2.5, ElevenLabs Music v2, Rodin Gen 2.5 Fast, Meshy UV Unwrap 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.14.1",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-06-22-1",
+    "service": "roblox-cube",
+    "date": "2026.06.22",
+    "kind": "기능",
+    "title": "AI로 게임을 스트리밍 방식으로 전환(미리보기)",
+    "summary": "AI가 게임 코드를 Instance Streaming에 맞게 대부분 자동으로 바꿔 주는 Convert to Streaming 스킬을 미리 공개했어요.",
+    "url": "https://devforum.roblox.com/t/early-preview-convert-your-game-to-streaming-using-ai/4697943",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-19-2",
+    "service": "scenario",
+    "date": "2026.06.19",
+    "kind": "API",
+    "title": "Cartwheel 3D 애니메이션·Pruna 가상 피팅",
+    "summary": "텍스트로 3D 캐릭터를 움직이는 Cartwheel, Reve Remix, Pruna Try-On이 추가되고 Flux LoRA 지원이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-3-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-19-1",
+    "service": "scenario",
+    "date": "2026.06.19",
+    "kind": "API",
+    "title": "프로젝트 단위 API 키·3D 내보내기",
+    "summary": "프로젝트 범위의 API 키로 보안을 세분화할 수 있고 3D 에셋 내보내기 스케일이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-123-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-06-18-1",
+    "service": "scenario",
+    "date": "2026.06.18",
+    "kind": "연동",
+    "title": "MCP 도구 43개로 재설계",
+    "summary": "MCP 도구를 43개의 단일 목적 함수로 재구성해 에이전트 성능과 도구 선택 정확도를 높였어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-16-0",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-06-18-1",
+    "service": "roblox-cube",
+    "date": "2026.06.18",
+    "kind": "기능",
+    "title": "Assistant 편집 가능한 계획·검색/삽입 개선",
+    "summary": "Planning Mode의 계획이 편집 가능한 마크다운 문서가 됐고, 인벤토리와 Creator Store 에셋 검색·삽입이 넓어졌어요.",
+    "url": "https://devforum.roblox.com/t/assistant-update-editable-markdown-plans-improvements-to-searchinsert/4690993",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-17-1",
+    "service": "scenario",
+    "date": "2026.06.17",
+    "kind": "연동",
+    "title": "MCP 에이전트 LoRA 처리 개선",
+    "summary": "에이전트가 LoRA와 조합 모델을 더 잘 다루고 검색 필터가 안정화됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-15-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-06-16-1",
+    "service": "ludo.ai",
+    "date": "2026.06.16",
+    "kind": "API",
+    "title": "API·MCP 새 도구 추가",
+    "summary": "API와 MCP에 Audio Remix, Ambiance, 태그·검색 도구가 추가되고 도구 설명이 명확해졌어요.",
+    "url": "https://ludo.ai/whats-new#api-mcp-new-tools-and-clearer-descriptions",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-15-3",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "기능",
+    "title": "Scenario Agent 웹 검색·이미지 지원",
+    "summary": "Scenario Agent가 웹 검색과 이미지 끌어놓기를 지원해요. Cartwheel과 Pixelcut 모델도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-14-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-15-2",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "연동",
+    "title": "MCP, Figma Make·Le Chat 연결",
+    "summary": "Scenario MCP 서버를 Figma Make와 Mistral Le Chat에 연결할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-14-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-15-1",
+    "service": "scenario",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "Prompt Spark v3·승인 노드",
+    "summary": "더 빠르게 아이디어를 내는 Prompt Spark v3와 승인 노드가 추가되고 3D 메시 내보내기가 안정화됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-122-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-06-15-1",
+    "service": "ludo.ai",
+    "date": "2026.06.15",
+    "kind": "기능",
+    "title": "Pose Generator 카메라 각도·높이 제어",
+    "summary": "Pose Generator의 새 View 모드로 캐릭터를 원하는 방향과 카메라 높이에서 일관되게 볼 수 있어요.",
+    "url": "https://ludo.ai/whats-new#pose-generator-orbit-and-tilt-the-camera-freely",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-12-1",
+    "service": "scenario",
+    "date": "2026.06.12",
+    "kind": "API",
+    "title": "LumaLabs Uni-1·Ray 3.2·Tripo 텍스처 강화",
+    "summary": "LumaLabs Uni-1과 Ray 3.2가 추가되고 Tripo 3D에 extreme 텍스처 품질이 들어왔어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-2-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-11-1",
+    "service": "scenario",
+    "date": "2026.06.11",
+    "kind": "연동",
+    "title": "MCP 모델 접근 안내",
+    "summary": "추천 모델이 요금제 업그레이드가 필요하면 에이전트에 미리 알려 줘요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-14-0",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-06-11-1",
+    "service": "roblox-cube",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "파츠로 나뉜 3D 모델 생성 미리보기",
+    "summary": "Assistant의 /generate_mesh와 /generate_procedural_model로 여러 파츠로 분리된 모델을 만들어 파츠별로 동작을 붙일 수 있어요.",
+    "url": "https://devforum.roblox.com/t/early-preview-generate-3d-models-segmented-into-multiple-parts/4678458",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-10-1",
+    "service": "scenario",
+    "date": "2026.06.10",
+    "kind": "연동",
+    "title": "MCP, 허용 목록·커스텀 모델 추천",
+    "summary": "에이전트가 팀 권한에 따라 비공개 커스텀 모델을 찾아 추천할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-09-1",
+    "service": "scenario",
+    "date": "2026.06.09",
+    "kind": "기능",
+    "title": "AI 에이전트 메모리·ElevenLabs 음성 학습",
+    "summary": "AI 에이전트가 기억과 적응형 사고를 갖게 됐어요. ElevenLabs 커스텀 음성 학습과 승인 노드도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-06-09-1",
+    "service": "ludo.ai",
+    "date": "2026.06.09",
+    "kind": "기능",
+    "title": "Audio Remix 모드",
+    "summary": "효과음이나 음악을 올리고 프롬프트로 바꾸고 싶은 방향을 적으면 새롭게 리믹스해 주는 Remix 모드가 생겼어요.",
+    "url": "https://ludo.ai/whats-new#remix-mode-reimagine-any-sound-with-a-prompt",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-08-2",
+    "service": "scenario",
+    "date": "2026.06.08",
+    "kind": "API",
+    "title": "Runway Aleph 2·TripoSplat·Caption Studio",
+    "summary": "텍스트로 영상을 편집하는 Runway Aleph 2, 즉석 3D 생성 TripoSplat, 새 Caption Studio가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-1-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-08-1",
+    "service": "scenario",
+    "date": "2026.06.08",
+    "kind": "API",
+    "title": "오디오 추출·스카이박스 모델·Usage API",
+    "summary": "영상에서 오디오를 추출하고 새 스카이박스 모델을 쓸 수 있어요. 팀 사용량·청구 정보도 더 자세해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-121-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-06-04-1",
+    "service": "roblox-cube",
+    "date": "2026.06.04",
+    "kind": "기능",
+    "title": "Assistant 여러 채팅·대화 기록",
+    "summary": "Assistant가 여러 채팅과 영구 대화 기록을 지원해요. 화면을 보는 스크린 캡처 서브에이전트도 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-multiple-chats-and-chat-history/4668130",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-4",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "기능",
+    "title": "커스텀 텍스처 모델·알파 영상 미리보기",
+    "summary": "텍스처용 커스텀 모델을 만들 수 있고 영상 미리보기가 알파 채널을 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-3",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "연동",
+    "title": "MCP 모델 추천 엔진 강화",
+    "summary": "에이전트가 워크플로에 쓸 모델을 더 똑똑하고 자율적으로 고를 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-2",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "API",
+    "title": "Compute v1.0: Gemini Image 정식·Grok Video 1.5",
+    "summary": "정식 출시된 Gemini Image 모델과 Grok Imagine Video 1.5, Smart Reframe이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-0-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-02-1",
+    "service": "scenario",
+    "date": "2026.06.02",
+    "kind": "API",
+    "title": "Claude Opus 4.8·Gemini 3.5 Flash 어시스턴트",
+    "summary": "어시스턴트 모델에 Claude Opus 4.8과 Gemini 3.5 Flash가 추가되고 ElevenLabs BYOK 음성 복제를 지원해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-120-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-06-02-1",
+    "service": "ludo.ai",
+    "date": "2026.06.02",
+    "kind": "기능",
+    "title": "Animation Pack 내보내기 개선",
+    "summary": "여러 애니메이션을 한 시트로 내보내는 Animation Pack의 정렬 제어와 미리보기가 개선됐어요.",
+    "url": "https://ludo.ai/whats-new#export-animation-pack-improved",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-06-02-1",
+    "service": "layer",
+    "date": "2026.06.02",
+    "kind": "모델",
+    "title": "새 Kling 모델·오디오·LLM 확장",
+    "summary": "새 Kling 모델과 함께 오디오·LLM 모델이 크게 늘었어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-06-02",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-01-2",
+    "service": "scenario",
+    "date": "2026.06.01",
+    "kind": "모델",
+    "title": "Rodin Gen 2.5·Grok Imagine Video 1.5·P-Video Animate",
+    "summary": "Rodin Gen 2.5 3D 생성, Grok Imagine Video 1.5, 모션 전이 P-Video Animate가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.11.2",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-06-01-1",
+    "service": "scenario",
+    "date": "2026.06.01",
+    "kind": "연동",
+    "title": "MCP 진단 도구·요청 추적",
+    "summary": "에이전트 기반 진단과 요청 추적으로 MCP 상호작용을 점검할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-28-1",
+    "service": "scenario",
+    "date": "2026.05.28",
+    "kind": "연동",
+    "title": "MCP 워크플로 게시·검증",
+    "summary": "manage_workflows 도구로 초안을 게시 상태로 바꾸고 설정을 자동 검증할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-05-28-1",
+    "service": "roblox-cube",
+    "date": "2026.05.28",
+    "kind": "기능",
+    "title": "Studio 테스트 API·Assistant Skills",
+    "summary": "기기 시뮬레이션, 멀티플레이 테스트, 가상 입력용 Studio API가 나왔고, Assistant가 Skills로 이를 활용해 테스트를 수행해요.",
+    "url": "https://devforum.roblox.com/t/new-studio-testing-apis-and-assistant-improvements/4657854",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-27-1",
+    "service": "scenario",
+    "date": "2026.05.27",
+    "kind": "연동",
+    "title": "MCP 에이전트 워크플로 생성 강화",
+    "summary": "에이전트가 완전히 설정된 워크플로를 만들고 배열 입력을 처리할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-9-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-25-1",
+    "service": "scenario",
+    "date": "2026.05.25",
+    "kind": "기능",
+    "title": "Smart Reframe·Whisper 전사·오디오·영상 편집",
+    "summary": "지능형 이미지 리프레임, Whisper 음성 전사, 오디오·영상 자르기와 나누기 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.11.1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-21-2",
+    "service": "scenario",
+    "date": "2026.05.21",
+    "kind": "기능",
+    "title": "브라우저 녹음·워크플로 AI 비전·3D 미리보기",
+    "summary": "브라우저에서 바로 음성을 녹음하고 워크플로 안에서 3D를 미리 볼 수 있어요. AI 워크플로 도우미가 이미지를 볼 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-21-1",
+    "service": "scenario",
+    "date": "2026.05.21",
+    "kind": "API",
+    "title": "미디어 편집 API·텍스트 에셋 추적",
+    "summary": "API로 영상·오디오를 직접 처리하고 텍스트 에셋 메타데이터를 추적할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-119-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-05-20-2",
+    "service": "scenario",
+    "date": "2026.05.20",
+    "kind": "연동",
+    "title": "MCP 추천 도구 진행 알림",
+    "summary": "MCP 추천 도구가 진행 알림과 주의 사항을 보여 줘 더 투명하게 에셋을 제안해요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-20-1",
+    "service": "scenario",
+    "date": "2026.05.20",
+    "kind": "API",
+    "title": "Grok Imagine·Veo 3.1 참조·레이어 추출",
+    "summary": "Grok Imagine, Veo 3.1 참조 이미지, 레이어 추출과 정밀 이미지 편집 도구가 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-32-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-05-19-1",
+    "service": "ludo.ai",
+    "date": "2026.05.19",
+    "kind": "기능",
+    "title": "Ambiance 모드·루프 효과음",
+    "summary": "끊김 없이 반복되는 배경 사운드를 만드는 Ambiance 모드와, 효과음을 완벽한 루프로 만드는 옵션이 추가됐어요.",
+    "url": "https://ludo.ai/whats-new#seamless-loops-ambiance-mode-looping-sound-effects",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-18-2",
+    "service": "scenario",
+    "date": "2026.05.18",
+    "kind": "모델",
+    "title": "Pixal3D·Veo 3.1 참조 영상",
+    "summary": "단일 이미지 3D 생성 Pixal3D와 Veo 3.1 참조 영상·9:16 세로 영상, 새 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.10.2",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-18-1",
+    "service": "scenario",
+    "date": "2026.05.18",
+    "kind": "연동",
+    "title": "MCP, Claude.ai·Vercel v0 연결 가이드",
+    "summary": "Claude.ai와 Vercel v0에서 Scenario MCP를 연결하는 설정 가이드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-8-1",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-05-18-1",
+    "service": "roblox-cube",
+    "date": "2026.05.18",
+    "kind": "기능",
+    "title": "Procedural Models 정식 출시",
+    "summary": "코드나 Assistant·MCP 프롬프트로 파라메트릭 3D 모델을 만드는 Procedural Models가 정식 출시됐어요.",
+    "url": "https://devforum.roblox.com/t/full-release-procedural-models-build-parametrized-3d-models-with-code-or-ai/4642542",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-11-1",
+    "service": "scenario",
+    "date": "2026.05.11",
+    "kind": "모델",
+    "title": "Ideogram 배경 제거·Clarity Pro 업스케일",
+    "summary": "Ideogram 배경 제거, LTX-2.3 Pro Audio to Video, Foley Control, 최대 16배·8K Clarity Pro 업스케일러가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-10-1",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-05-11-1",
+    "service": "ludo.ai",
+    "date": "2026.05.11",
+    "kind": "기능",
+    "title": "생성 대기열 실시간 진행 표시·병렬 생성",
+    "summary": "생성이 새 대기열로 처리돼 진행 상황을 실시간으로 볼 수 있고, Pro·Studio 플랜은 여러 생성을 동시에 돌릴 수 있어요.",
+    "url": "https://ludo.ai/whats-new#generate-more-at-once-with-live-progress",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-07-1",
+    "service": "scenario",
+    "date": "2026.05.07",
+    "kind": "연동",
+    "title": "MCP 모델 추천·멀티 단계 파이프라인",
+    "summary": "Arena ELO와 실제 성능 기반 모델 추천, 여러 단계 파이프라인 계획, 학습 기반 추천이 MCP에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-8-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-05-3",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "기능",
+    "title": "Node Agent·자동 자막",
+    "summary": "워크플로를 돕는 Scenario Node Agent와 자동 자막 기능이 나왔고 Starter 플랜 API 접근이 열렸어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-05-2",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "API",
+    "title": "3D 애니메이션 도구·LTX-2.3 제어·1080p",
+    "summary": "자동 3D 캐릭터 리깅, LTX-2.3 영상 제어, 1080p 생성, SAM 3.1 영상 분할이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-31-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-05-1",
+    "service": "scenario",
+    "date": "2026.05.05",
+    "kind": "API",
+    "title": "Usage API 필터·Bytedance BYOK",
+    "summary": "Usage API에 필터가 생기고 Bytedance 모델 BYOK를 지원해요. SVG·영상 에셋 안정성도 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-118-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-05-04-1",
+    "service": "scenario",
+    "date": "2026.05.04",
+    "kind": "모델",
+    "title": "P-Video Avatar·Uthana 캐릭터 리깅",
+    "summary": "말하는 아바타 P-Video Avatar, 자동 3D 리깅 Uthana Character Rigging, Seedream 5.0 Lite 4K 출력이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.9.5",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-05-01-1",
+    "service": "layer",
+    "date": "2026.05.01",
+    "kind": "모델",
+    "title": "Happy Horse 1.0·Meshy 6 다중 참조",
+    "summary": "Happy Horse 1.0 영상 모델과 여러 참조 이미지를 지원하는 Meshy 6가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-05-01",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-28-1",
+    "service": "scenario",
+    "date": "2026.04.28",
+    "kind": "요금",
+    "title": "Starter 플랜 API 이용 허용",
+    "summary": "Starter 플랜도 Scenario API를 쓸 수 있게 됐어요. 모델 목록과 워크플로 노드도 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-117-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-04-28-1",
+    "service": "ludo.ai",
+    "date": "2026.04.28",
+    "kind": "모델",
+    "title": "애니메이션 모델 Eagle 공개·영상 비용 인하",
+    "summary": "캐릭터 일관성이 뛰어난 새 애니메이션 모델 Eagle과 오디오를 함께 만드는 Eagle with Audio가 나왔어요. 영상 생성 비용도 크게 내렸어요.",
+    "details": [
+      "모델에 코드명 도입(Eagle, Blitz)",
+      "Eagle with Audio: 대사·효과음이 동기화된 애니메이션",
+      "영상 생성 크레딧 대폭 인하",
+      "스프라이트 최대 4초, 영상 최대 15초, 길이 기반 요금"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-eagle-and-blitz-codenamed-animation-models",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-27-1",
+    "service": "scenario",
+    "date": "2026.04.27",
+    "kind": "모델",
+    "title": "Kling V3 4K·Happy Horse·Meshy 멀티 이미지 3D",
+    "summary": "Kling V3 4K 영상, Alibaba Happy Horse, Meshy 멀티 이미지 3D, Minimax 음악 커버, Uthana 모션 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.9.4",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-04-24-1",
+    "service": "roblox-cube",
+    "date": "2026.04.24",
+    "kind": "기능",
+    "title": "Assistant 데이터 모델 검색 서브에이전트·MCP 빠른 연결",
+    "summary": "큰 워크스페이스를 병렬로 조사하는 Data Model Search 서브에이전트와, 토글 하나로 외부 AI 클라이언트를 연결하는 Quick connect가 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-the-data-model-search-subagent-and-quick-connect-for-mcp-clients/4596579",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-23-1",
+    "service": "scenario",
+    "date": "2026.04.23",
+    "kind": "API",
+    "title": "어시스턴트 스레드·Video-to-3D",
+    "summary": "에이전트용 스레드 관리와 영상으로 3D를 만드는 Video-to-3D가 추가되고 모델 목록이 크게 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-116-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-04-23-1",
+    "service": "roblox-cube",
+    "date": "2026.04.23",
+    "kind": "기능",
+    "title": "Procedural Models 베타: 코드·AI로 파라메트릭 3D",
+    "summary": "코드나 AI로 속성에 따라 자동으로 변하는 파라메트릭 3D 모델을 만드는 Procedural Models가 Studio 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/studio-beta-introducing-procedural-models-build-parametrized-3d-models-with-code-or-ai/4592056",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-22-2",
+    "service": "scenario",
+    "date": "2026.04.22",
+    "kind": "모델",
+    "title": "GPT Image 2·SAM 3.1·Seedance 2 실사 참조",
+    "summary": "OpenAI GPT Image 2, Meta SAM 3.1 분할, Seedance 2 실사 인물 참조 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.9.3",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-22-1",
+    "service": "scenario",
+    "date": "2026.04.22",
+    "kind": "연동",
+    "title": "MCP 워크플로 상태 필터",
+    "summary": "에이전트가 상태로 워크플로를 걸러 활성 Scenario 앱을 더 잘 찾을 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-7-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-04-21-1",
+    "service": "layer",
+    "date": "2026.04.21",
+    "kind": "모델",
+    "title": "GPT Image 2 추가",
+    "summary": "OpenAI GPT Image 2를 Layer에서 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-04-21",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-20-1",
+    "service": "scenario",
+    "date": "2026.04.20",
+    "kind": "모델",
+    "title": "Phota·Ernie 이미지 모델·새 TTS",
+    "summary": "실사 인물 생성·편집·업스케일 Phota 스위트와 정확한 글자 렌더링 Ernie, 새 TTS 모델 등 5종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-9-2",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-04-16-1",
+    "service": "roblox-cube",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Roblox Assistant Planning Mode",
+    "summary": "복잡한 프롬프트를 편집 가능한 작업 단계로 나눠 실행 전에 검토할 수 있는 Planning Mode가 Assistant에 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/announcing-planning-mode-for-roblox-assistant/4580715",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-10-1",
+    "service": "scenario",
+    "date": "2026.04.10",
+    "kind": "모델",
+    "title": "Seedance 2.0·Seedance 2.0 Fast 추가",
+    "summary": "물리 기반 움직임과 동기화된 오디오로 15초 영상을 만드는 Seedance 2.0과 Fast 모델이 Pro 사용자에게 열렸어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-9-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-09-3",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "ElevenLabs 음성 복제·엔터프라이즈 승인",
+    "summary": "ElevenLabs로 커스텀 음성 모델을 학습할 수 있고 엔터프라이즈 승인 절차가 간소화됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-09-2",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "API",
+    "title": "Seedance 2.0·Veo 3.1 Lite·Magnific 업스케일",
+    "summary": "Seedance 2.0 영상, 저렴한 Veo 3.1 Lite, Magnific 4K 업스케일이 Compute에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-09-1",
+    "service": "scenario",
+    "date": "2026.04.09",
+    "kind": "API",
+    "title": "ElevenLabs 오디오·Magnific 영상·프로젝트 BYOK",
+    "summary": "ElevenLabs 오디오와 Magnific 영상 업스케일이 API에 추가되고 프로젝트별 BYOK 설정이 가능해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-115-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-04-09-1",
+    "service": "roblox-cube",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "Assistant·MCP 플레이테스트 에이전트 베타",
+    "summary": "테스트 캐릭터를 생성해 게임 시나리오를 대신 플레이해 보는 플레이테스트 서브에이전트가 Studio 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/studio-beta-studio-assistant-mcp-playtest-agent/4566767",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-07-1",
+    "service": "scenario",
+    "date": "2026.04.07",
+    "kind": "모델",
+    "title": "Magnific 영상 업스케일·Veo 3.1 Lite·Sync Lipsync v3",
+    "summary": "고해상도 영상 업스케일, Veo 3.1 Lite, Sync Lipsync v3, WAN 2.7 이미지·영상 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/wan-2.7-veo-3.1-lite-magnific-video-upscaling-and-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-04-1",
+    "service": "scenario",
+    "date": "2026.04.04",
+    "kind": "연동",
+    "title": "MCP 시맨틱 검색·에셋 필터",
+    "summary": "MCP에 시맨틱 검색과 여러 유형 필터가 추가돼 에이전트가 에셋을 더 빨리 찾아요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-6-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-04-02-1",
+    "service": "scenario",
+    "date": "2026.04.02",
+    "kind": "연동",
+    "title": "Scenario, AI 에이전트에서 바로 사용 가능",
+    "summary": "Scenario MCP 서버로 Claude, Cursor 같은 AI 에이전트 안에서 바로 Scenario의 이미지·영상·3D 생성을 쓸 수 있게 됐다고 발표했어요.",
+    "url": "https://www.scenario.com/blog/Scenario-Is-Now-Available-Directly-in-Your-AI-Agent",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-04-02-1",
+    "service": "layer",
+    "date": "2026.04.02",
+    "kind": "기능",
+    "title": "영상 타임라인 편집기·자막·GIF 내보내기",
+    "summary": "영상 타임라인 편집기와 자막, GIF·PNG 시퀀스 내보내기, 새 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-04-02",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-31-3",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "연동",
+    "title": "MCP 클라이언트에서 3D·영상·오디오 보기",
+    "summary": "호환 MCP 클라이언트 안에서 3D 모델·영상·오디오를 바로 보고 다룰 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-5-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-31-2",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "API",
+    "title": "LTX 2.3·Lyria 3 음악·xAI 영상",
+    "summary": "LTX 2.3, Lyria 3 음악, xAI 영상 모델이 추가되고 이미지 워크플로가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-31-1",
+    "service": "scenario",
+    "date": "2026.03.31",
+    "kind": "종료",
+    "title": "Tripo BYOK 지원·SD 1.5·SDXL 엔드포인트 종료",
+    "summary": "새 기반 모델과 Tripo AI 자체 키(BYOK)를 지원해요. 레거시 SD 1.5·SDXL 엔드포인트는 최종 지원 중단됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-114-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-30-1",
+    "service": "scenario",
+    "date": "2026.03.30",
+    "kind": "기능",
+    "title": "워크플로 노드 그룹·3D 다운로드 개선",
+    "summary": "워크플로 노드를 그룹으로 묶고 리스트를 다룰 수 있어요. 3D 에셋 다운로드와 모델 제약 경고도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-8-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-03-30-1",
+    "service": "layer",
+    "date": "2026.03.30",
+    "kind": "연동",
+    "title": "Layer MCP 공개",
+    "summary": "Layer MCP로 사용 중인 AI 어시스턴트 안에서 Layer의 생성 엔진을 바로 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/blog/introducing-layer-mcp-your-creative-os-inside-every-ai-you-use",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-27-1",
+    "service": "scenario",
+    "date": "2026.03.27",
+    "kind": "연동",
+    "title": "MCP 에이전트 파일 업로드·에이전트 가이드",
+    "summary": "에이전트가 Scenario로 파일을 직접 올릴 수 있고, 11개 에이전트용 설정 가이드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-4-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-03-27-1",
+    "service": "layer",
+    "date": "2026.03.27",
+    "kind": "기능",
+    "title": "Kling 멀티샷 프롬프트·Reframe 노드",
+    "summary": "Kling 멀티샷 프롬프트, 영상 Reframe 노드, 오디오·영상 처리 노드, 프롬프트 템플릿이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-27",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-26-1",
+    "service": "scenario",
+    "date": "2026.03.26",
+    "kind": "연동",
+    "title": "MCP 문서 허브·도구 탐색 개선",
+    "summary": "Scenario MCP 랜딩 페이지와 새 문서 허브가 나왔고 도구 찾기가 쉬워졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-2-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-25-1",
+    "service": "scenario",
+    "date": "2026.03.25",
+    "kind": "연동",
+    "title": "Scenario MCP Server 출시",
+    "summary": "AI 에이전트가 Scenario 생성 엔진을 직접 쓰게 하는 MCP 서버를 12개 도구로 공개했어요. IDE에서 에셋 생성을 연결할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-1-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-23-2",
+    "service": "scenario",
+    "date": "2026.03.23",
+    "kind": "기능",
+    "title": "엔터프라이즈 키 관리·Loop·Compositor 노드",
+    "summary": "Loop와 Compositor 워크플로 노드, 모델 접근 제어, 엔터프라이즈용 BYOK(자체 키 사용)가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-7-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-23-1",
+    "service": "scenario",
+    "date": "2026.03.23",
+    "kind": "API",
+    "title": "모델 허용 목록·팀 API 키·반복 노드",
+    "summary": "팀 워크플로에 모델 허용 목록과 BYOK 관리, 일괄 처리를 위한 반복 노드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-113-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-03-19-1",
+    "service": "roblox-cube",
+    "date": "2026.03.19",
+    "kind": "기능",
+    "title": "Assistant 메시 생성 강화·스크린샷 도구",
+    "summary": "Assistant의 메시 생성이 일괄 생성, 바운딩 박스, 삼각형 수 제한을 지원해요. 새 MCP 도구와 스크린샷 도구도 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-mesh-generation-new-mcp-server-tools-screenshot-tool-and-more/4527258",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-03-16-1",
+    "service": "layer",
+    "date": "2026.03.16",
+    "kind": "연동",
+    "title": "MCP 지원·모델 추천",
+    "summary": "MCP를 지원하고, 오디오·영상 처리 워크플로 노드와 AI 모델 추천이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-16",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-13-2",
+    "service": "scenario",
+    "date": "2026.03.13",
+    "kind": "모델",
+    "title": "Tripo P1 3D 모델·새 도구",
+    "summary": "깔끔한 토폴로지의 엔진용 에셋을 만드는 Tripo P1 등 새 모델과 도구, 워크플로 개선이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-v2-6-0-new-models-workflow-upgrades-and-updated-model-training",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-13-1",
+    "service": "scenario",
+    "date": "2026.03.13",
+    "kind": "API",
+    "title": "Image-to-SVG 생성 모델",
+    "summary": "이미지를 벡터 그래픽(SVG)으로 만드는 새 Image-to-SVG 모델과 학습·에셋 관리 개선이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-112-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2026-03-13-1",
+    "service": "layer",
+    "date": "2026.03.13",
+    "kind": "요금",
+    "title": "멀티 워크스페이스 구독·AI 보조 Forge·FFmpeg",
+    "summary": "여러 워크스페이스 구독 관리와 AI 보조 생성, FFmpeg 지원, 새 영상 제어가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-13",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-12-1",
+    "service": "scenario",
+    "date": "2026.03.12",
+    "kind": "API",
+    "title": "Trellis 3D 리텍스처링",
+    "summary": "Trellis로 3D 모델에 새 고품질 텍스처를 입힐 수 있고 학습 재개가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-27-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-10-1",
+    "service": "scenario",
+    "date": "2026.03.10",
+    "kind": "모델",
+    "title": "LTX 2.3 Pro 등 새 영상·3D 모델",
+    "summary": "4K와 첫·끝 프레임을 지원하는 LTX 2.3 Pro 등 새 영상·3D 모델이 추가되고 워크플로가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/2-5-0-new-video-3d-models-workflow-improvements-and-platform-fixes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-06-1",
+    "service": "scenario",
+    "date": "2026.03.06",
+    "kind": "API",
+    "title": "정확한 학습 예상 시간 표시",
+    "summary": "모델 학습에 걸리는 시간을 정확히 알려 주고 생성 안정성이 높아졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-2",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2026-03-06-1",
+    "service": "layer",
+    "date": "2026.03.06",
+    "kind": "모델",
+    "title": "LTX Video 2.3·일괄 프롬프트 생성",
+    "summary": "LTX Video 2.3 모델과 일괄 AI 프롬프트 생성, 노드 그룹, 워크플로 실시간 진행 표시가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-06",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-03-05-1",
+    "service": "roblox-cube",
+    "date": "2026.03.05",
+    "kind": "기능",
+    "title": "Studio 내장 MCP 서버·플레이테스트 자동화",
+    "summary": "MCP 서버가 Studio에 내장돼 별도 설정이 필요 없어졌어요. Assistant가 플레이테스트를 실행하고 입력을 흉내 내 문제를 재현·수정할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-studio-built-in-mcp-server-and-playtest-automation/4474643",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-04-3",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "API",
+    "title": "Gemini 3.1 Flash·Z-image·3D 텍스처 편집",
+    "summary": "Gemini 3.1 Flash, Seedream 5 Lite, Z-image 모델과 3D 텍스처 편집 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-26-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-04-2",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "API",
+    "title": "외부 모델 가져오기·ZIMAGE LoRA 개선",
+    "summary": "CivitAI와 Hugging Face 모델을 더 안정적으로 가져오고 ZIMAGE LoRA 기능이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-1",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-03-04-1",
+    "service": "scenario",
+    "date": "2026.03.04",
+    "kind": "모델",
+    "title": "Tripo 3.1·Tripo Rigging 2.5·P-Video",
+    "summary": "Tripo 3.1 3D 생성과 자동 리깅 Tripo Rigging 2.5, P-Video 영상 모델, 새 학습 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/2-4-new-training-capabilities-tripo-3-1-p-video-workflow-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-03-03-1",
+    "service": "scenario",
+    "date": "2026.03.03",
+    "kind": "API",
+    "title": "Gemini 3.1 Flash·Musubi 트레이너",
+    "summary": "Gemini 3.1 Flash로 생성할 수 있고, 영상 변환이 빨라졌어요. 팀 단위 병렬 작업 제한과 Musubi 트레이너도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-111-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-03-02-1",
+    "service": "ludo.ai",
+    "date": "2026.03.02",
+    "kind": "기능",
+    "title": "애니메이션 프리셋 라이브러리·포즈 제어",
+    "summary": "대기·달리기·공격 등 카테고리별 미리 만든 애니메이션 프리셋을 여러 시점으로 검색해 쓸 수 있어요. 포즈 제어와 새 내보내기 도구도 소개했어요.",
+    "url": "https://ludo.ai/blog/pose-control-animation-presets-sprite-export",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-03-01-1",
+    "service": "ludo.ai",
+    "date": "2026.03.01",
+    "kind": "기능",
+    "title": "애니메이션 사이 연결 클립·Pose Generator 개편",
+    "summary": "두 애니메이션을 잇는 전환 클립을 만들 수 있고, Pose Generator가 자세 변경과 회전 모드로 개편됐어요.",
+    "details": [
+      "Generate Transition·After·Before로 연결 클립 생성",
+      "Change Pose·Rotate Sprite 모드",
+      "Animation Pack·Sequence 내보내기 도구"
+    ],
+    "url": "https://ludo.ai/whats-new#generate-sequences-between-animations",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-27-1",
+    "service": "scenario",
+    "date": "2026.02.27",
+    "kind": "API",
+    "title": "워크플로 slice 함수·Jobs API 속도 개선",
+    "summary": "워크플로에서 특정 데이터를 뽑는 slice 함수가 생기고 팀 작업 조회가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-110-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-02-27-1",
+    "service": "ludo.ai",
+    "date": "2026.02.27",
+    "kind": "요금",
+    "title": "추천 프로그램 Refer & Earn 시작",
+    "summary": "친구를 초대해 구독하면 양쪽 모두 크레딧을 받는 추천 프로그램을 시작했어요.",
+    "url": "https://ludo.ai/whats-new#refer-earn-invite-friends-get-credits",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-02-26-1",
+    "service": "layer",
+    "date": "2026.02.26",
+    "kind": "모델",
+    "title": "Gemini Flash 3.1·Seedream·워크플로 공유 링크",
+    "summary": "Gemini Flash 3.1과 Seedream 모델이 추가되고 워크플로를 링크로 공유할 수 있어요.",
+    "url": "https://layer.ai/changelog/page/3#2026-02-26",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-23-1",
+    "service": "scenario",
+    "date": "2026.02.23",
+    "kind": "모델",
+    "title": "Tripo 3.0·Recraft v4·LTX 영상 모델 추가",
+    "summary": "PBR·쿼드 메시를 지원하는 Tripo 3.0과 Recraft v4, LTX 영상 모델이 추가되고 워크플로가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/webapp-release-2-0-3-new-models-workflow-controls-canvas-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-02-20-1",
+    "service": "roblox-cube",
+    "date": "2026.02.20",
+    "kind": "연동",
+    "title": "Studio MCP 도구 추가·Assistant 외부 LLM 지원",
+    "summary": "Studio MCP 서버에 에이전트가 게임을 계획·작성·테스트·수정하는 새 도구가 추가됐어요. Assistant에 API 키로 원하는 LLM을 연결할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/studio-mcp-server-updates-and-external-llm-support-for-assistant/4415631",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-19-1",
+    "service": "scenario",
+    "date": "2026.02.19",
+    "kind": "API",
+    "title": "Workflow API, API 키 인증 지원",
+    "summary": "Workflow API가 API 키 인증을 완전히 지원하고 프로젝트 접근 오류를 더 분명히 알려줘요.",
+    "url": "https://www.scenario.com/changelog/api-v2-109-1",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-02-18-2",
+    "service": "scenario",
+    "date": "2026.02.18",
+    "kind": "API",
+    "title": "Flux 2 학습·Tripo 3D·Runway Gen-4.5",
+    "summary": "커스텀 Flux 2 모델 학습, Tripo 3D 생성, LTX-2와 Runway Gen-4.5 영상 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-25-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-18-1",
+    "service": "scenario",
+    "date": "2026.02.18",
+    "kind": "API",
+    "title": "Kling V3·Grok Imagine, 네이티브 FBX 지원",
+    "summary": "Kling V3와 xAI Grok Imagine 등 새 모델을 API로 쓸 수 있고, FBX 파일을 강제 변환 없이 다룰 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-109-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2026-02-17-1",
+    "service": "layer",
+    "date": "2026.02.17",
+    "kind": "모델",
+    "title": "새 이미지·영상·3D 모델, 워크플로 개선",
+    "summary": "새 이미지·영상·3D 모델이 추가되고 워크플로가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2026-02-17",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-16-1",
+    "service": "scenario",
+    "date": "2026.02.16",
+    "kind": "모델",
+    "title": "xAI Grok Imagine 이미지 모델 추가",
+    "summary": "xAI Grok Imagine Image와 Pro로 이미지를 생성·편집할 수 있게 됐어요. 워크플로 안정성도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/webapp-release-2-2-xai-grok-models-more-workflow-stability",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-02-16-1",
+    "service": "ludo.ai",
+    "date": "2026.02.16",
+    "kind": "모델",
+    "title": "Motion Transfer 모델 전면 개선",
+    "summary": "영상이나 애니메이션의 움직임을 정지 스프라이트에 옮기는 Transfer Motion의 AI 모델을 바꿔 품질이 크게 좋아졌어요.",
+    "url": "https://ludo.ai/whats-new#motion-transfer-just-got-a-level-up",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-02-12-1",
+    "service": "layer",
+    "date": "2026.02.12",
+    "kind": "기능",
+    "title": "내보내기 개선: PSD·메타데이터·해상도",
+    "summary": "PSD, 메타데이터, 해상도를 한 대화상자에서 고르는 통합 내보내기가 나왔어요.",
+    "url": "https://layer.ai/changelog/page/3#2026-02-12",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-11-1",
+    "service": "scenario",
+    "date": "2026.02.11",
+    "kind": "기능",
+    "title": "Scenario V2: 노드 기반 워크플로 도입",
+    "summary": "Scenario V2에서 노드로 전체 제작 과정을 한 번에 구성하고 반복 실행하며, 간단한 App으로 공유할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/2-0-introducing-node-based-workflows",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-02-10-1",
+    "service": "ludo.ai",
+    "date": "2026.02.10",
+    "kind": "연동",
+    "title": "Ludo AI Unity 플러그인 베타",
+    "summary": "Unity 에디터 안에서 스프라이트, 3D 모델, 효과음, 음악, 음성을 만드는 Ludo AI Unity 플러그인이 베타로 나왔어요.",
+    "url": "https://ludo.ai/whats-new#ludo-ai-unity-plugin",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-05-2",
+    "service": "scenario",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "LTX-2 영상·BytePlus 모델 지원",
+    "summary": "Compute에 LTX-2 영상 모델과 ByteDance(BytePlus) 모델이 추가되고 학습·3D 텍스처·오디오 안정성이 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-24-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-02-05-1",
+    "service": "scenario",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "Workflow Locking API·LLM 노드 개선",
+    "summary": "프로덕션 워크플로를 잠그는 Workflow Locking API가 나오고 LLM 노드와 LoRA 지원이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-108-0",
+    "source": "dev"
+  },
+  {
+    "id": "roblox-cube-2026-02-04-1",
+    "service": "roblox-cube",
+    "date": "2026.02.04",
+    "kind": "모델",
+    "title": "4D Generation 베타 출시",
+    "summary": "플레이어가 운전 가능한 자동차 같은 여러 파츠의 기능성 오브젝트를 만드는 4D Generation이 베타로 나왔어요. GenerateMeshAsync는 지원 중단돼요.",
+    "details": [
+      "GenerateModelAsync API로 4D 생성",
+      "GenerateMeshAsync는 3월 18일까지 이전 필요"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-4d-generation-unlock-new-types-of-gameplay/4331818",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-29-2",
+    "service": "scenario",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "LTX-2 영상 LoRA·Skybox to 3D",
+    "summary": "LTX-2 영상에 커스텀 LoRA를 적용하고, 스카이박스를 3D 환경으로 바꿀 수 있어요. Gemini 오디오도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-23-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-29-1",
+    "service": "scenario",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "새 3D 모델·Gemini TTS·워크플로 개선",
+    "summary": "Tencent Hunyuan 3D 모델과 Gemini TTS가 추가되고 워크플로와 팀 관리 도구가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-107-0",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-01-29-1",
+    "service": "ludo.ai",
+    "date": "2026.01.29",
+    "kind": "API",
+    "title": "Ludo.ai API·MCP 베타 출시",
+    "summary": "공개 API와 MCP 연동이 베타로 나왔어요. Claude Desktop, VS Code, Cursor 같은 도구에서 바로 에셋을 만들 수 있어요.",
+    "url": "https://ludo.ai/whats-new#beta-launch-ludo-ai-api-mcp-integration",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-23-2",
+    "service": "scenario",
+    "date": "2026.01.23",
+    "kind": "API",
+    "title": "Smart Topology로 3D 메시 정리",
+    "summary": "생성된 3D 모델을 게임용 깔끔한 메시로 자동 정리하는 Smart Topology가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-22-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-23-1",
+    "service": "scenario",
+    "date": "2026.01.23",
+    "kind": "API",
+    "title": "Hunyuan3D 3.1·LTX-2 영상 추가",
+    "summary": "Tencent Hunyuan3D 3.1과 LTX-2 영상 모델을 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-21-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-01-23-1",
+    "service": "layer",
+    "date": "2026.01.23",
+    "kind": "기능",
+    "title": "Workflows 정식 출시·추천 템플릿·모델 태그",
+    "summary": "Workflows가 정식 출시되고 추천 워크플로 템플릿, 모델 태그와 검색이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2026-01-23",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-22-2",
+    "service": "scenario",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "SVG 벡터화·레이어 합성 도구",
+    "summary": "이미지를 SVG로 바꾸고 레이어를 이미지나 영상으로 합성하는 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-20-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-22-1",
+    "service": "scenario",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "Gemini 3.0 자동 설명·Usage API 확장",
+    "summary": "Gemini 3.0 Flash로 자동 설명이 좋아지고 Usage API와 프로젝트 설명 기능이 확장됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-106-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-01-21-1",
+    "service": "scenario",
+    "date": "2026.01.21",
+    "kind": "기능",
+    "title": "워크플로를 Apps로, 멀티 에셋 노드",
+    "summary": "워크플로를 쉽게 Apps로 바꿔 공유할 수 있고, 노드가 여러 에셋을 입력으로 받게 됐어요.",
+    "url": "https://www.scenario.com/changelog/1-112-workflows-to-apps-flux-lora-improvements-node-fixes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-13-1",
+    "service": "scenario",
+    "date": "2026.01.13",
+    "kind": "API",
+    "title": "영상 이어붙이기·미디어 리사이즈 도구",
+    "summary": "미디어 크기 조정, 영상 연결, 이미지 여백 제거, 3D 포즈 제어 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-19-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-09-1",
+    "service": "scenario",
+    "date": "2026.01.09",
+    "kind": "API",
+    "title": "Hunyuan3D 2.1·HDRI 스카이박스 가속",
+    "summary": "PBR 3D 모델을 만드는 Hunyuan3D 2.1이 추가되고 HDRI 스카이박스 생성과 Flux.1 로딩이 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-18-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-06-1",
+    "service": "scenario",
+    "date": "2026.01.06",
+    "kind": "API",
+    "title": "워크플로 썸네일·에셋 다운로드 엔드포인트",
+    "summary": "워크플로와 컬렉션 썸네일을 지정하고 전용 엔드포인트로 에셋을 내려받을 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-104-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-01-05-1",
+    "service": "scenario",
+    "date": "2026.01.05",
+    "kind": "모델",
+    "title": "Sparc3D 2.0·Flux 2 Turbo·Qwen 2512, FBX 내보내기",
+    "summary": "3D Sparc 3D 2.0, 이미지 Qwen 2512, 편집 Flux 2 Turbo가 추가되고 FBX 내보내기를 지원해요.",
+    "url": "https://www.scenario.com/changelog/1-111-sparc3d-2-0-flux-turbo-qwen-2512-platform-enhancements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-01-04-1",
+    "service": "scenario",
+    "date": "2026.01.04",
+    "kind": "API",
+    "title": "Trellis.2 3D 지원",
+    "summary": "Compute에 Trellis.2 3D 생성이 추가되고 Qwen Edit 등 새 학습을 위한 준비가 이뤄졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-17-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-24-1",
+    "service": "scenario",
+    "date": "2025.12.24",
+    "kind": "모델",
+    "title": "Seedance 1.5 Pro·Kling 2.6 Motion Control 등",
+    "summary": "Seedance 1.5 Pro, Kling 2.6 Motion Control, Pika 2.2 등 새 모델과 새 3D 뷰어, 엔터프라이즈 관리 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-100-new-editing-models-pika-2-2-3d-viewer-improved-workflows-model-management",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-22-1",
+    "service": "scenario",
+    "date": "2025.12.22",
+    "kind": "API",
+    "title": "이미지·영상 후처리 효과 16종",
+    "summary": "3D LUT, 필름 그레인 등 16개 이상의 후처리 효과를 이미지와 영상에 적용할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-16-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-18-2",
+    "service": "scenario",
+    "date": "2025.12.18",
+    "kind": "API",
+    "title": "작업별 비용 상세·모델 짧은 설명",
+    "summary": "Jobs API에서 작업 비용을 확인할 수 있고, 모델에 짧은 설명이 추가돼 사람과 LLM이 찾기 쉬워졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-102-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-12-18-1",
+    "service": "scenario",
+    "date": "2025.12.18",
+    "kind": "모델",
+    "title": "대형 업데이트: Magnific·GPT 1.5·SAM·Trellis 2",
+    "summary": "GPT 1.5, Flux 2, Veo 3.1 Extend, Wan 2.6, SAM3D, Trellis 2 등 십여 개 모델과 Magnific 업스케일이 한꺼번에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-109-scenario-mega-release-magnific-sam-wan-photoroom-trellis-2-governance-shortcuts-filters",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-17-1",
+    "service": "scenario",
+    "date": "2025.12.17",
+    "kind": "API",
+    "title": "SAM 3D·GPT Image 1.5·Veo3 확장",
+    "summary": "SAM 3D 3D 생성, gpt-image-1.5, Veo3 영상 확장 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-14-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-12-16-1",
+    "service": "layer",
+    "date": "2025.12.16",
+    "kind": "모델",
+    "title": "Hunyuan 3D 3.0·Kling O1 워크플로",
+    "summary": "Hunyuan 3D 3.0과 Kling O1 기반 워크플로를 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-12-16",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-14-2",
+    "service": "scenario",
+    "date": "2025.12.14",
+    "kind": "API",
+    "title": "Photoroom·Magnific 업스케일 지원",
+    "summary": "Compute에 Photoroom 편집 모델과 Magnific 업스케일러, 리깅 모델 미리보기가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-14-1",
+    "service": "scenario",
+    "date": "2025.12.14",
+    "kind": "모델",
+    "title": "Kling O1 등 영상·오디오·3D 모델 대거 추가",
+    "summary": "Kling O1을 비롯한 새 영상·오디오·이미지 편집·3D 모델이 추가되고 사용성이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-108-0-new-video-audio-3d-models-platform-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-09-1",
+    "service": "scenario",
+    "date": "2025.12.09",
+    "kind": "API",
+    "title": "거버넌스 메타데이터 검색·공개 앱 60종",
+    "summary": "검색에 규정·거버넌스 메타데이터가 지원되고 60개 이상의 공개 앱이 워크플로로 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-101-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-12-08-2",
+    "service": "scenario",
+    "date": "2025.12.08",
+    "kind": "API",
+    "title": "복셀 미리보기 지원",
+    "summary": "Compute에서 복셀 미리보기를 지원하고 이미지 시퀀스→영상 변환 문제가 고쳐졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-12-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-08-1",
+    "service": "scenario",
+    "date": "2025.12.08",
+    "kind": "기능",
+    "title": "Apps 56종 추가·모델 썸네일 개편",
+    "summary": "홈에 56개의 새 Apps가 추가되고 모델 썸네일 디자인이 새로워졌어요.",
+    "url": "https://www.scenario.com/changelog/1-107-1-new-apps-model-thumbnails",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-04-1",
+    "service": "scenario",
+    "date": "2025.12.04",
+    "kind": "모델",
+    "title": "Seedream 4.5·Kling 영상 모델·Apps 개선",
+    "summary": "Seedream 4.5와 새 Kling 영상 모델이 추가되고, Apps와 3D 시각화 모드가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/scenario-apps-improvements-seedream-4-5-new-kling-video-models",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-12-04-1",
+    "service": "ludo.ai",
+    "date": "2025.12.04",
+    "kind": "기능",
+    "title": "Audio Generator 출시: 음성·음악·효과음",
+    "summary": "게임용 효과음, 음악, 캐릭터 음성을 만드는 Audio Generator가 나왔어요.",
+    "url": "https://ludo.ai/whats-new#introducing-the-audio-generator-create-voices-music-and-sfx",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-12-03-1",
+    "service": "scenario",
+    "date": "2025.12.03",
+    "kind": "API",
+    "title": "새 메시 변환기·공개 앱 15종",
+    "summary": "glb·obj·fbx·stl·ply·vox 간 변환을 지원하는 새 메시 변환기와 15개 이상의 공개 앱이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-100-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-12-01-1",
+    "service": "scenario",
+    "date": "2025.12.01",
+    "kind": "API",
+    "title": "SAM3 분할·그리드 메이커·Vidu",
+    "summary": "Compute에 Meta SAM3 분할, 그리드 메이커 도구, Vidu 영상 지원이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-12-01-1",
+    "service": "layer",
+    "date": "2025.12.01",
+    "kind": "기능",
+    "title": "Workflows 베타·Nano Banana Pro·FLUX 2",
+    "summary": "노드 기반 Workflows 베타와 Nano Banana Pro, FLUX 2 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-12-01",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-26-1",
+    "service": "scenario",
+    "date": "2025.11.26",
+    "kind": "기능",
+    "title": "Scenario Apps·FLUX.2·RetroDiffusion",
+    "summary": "기능별 원클릭 Apps가 생기고 FLUX.2 모델군과 RetroDiffusion 픽셀아트 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-106-flux-2-retrodiffusion-pixel-snapper-feature-apps",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-25-2",
+    "service": "scenario",
+    "date": "2025.11.25",
+    "kind": "API",
+    "title": "실험적 복셀 생성기·Gemini 3 Pro 이미지",
+    "summary": "이미지 참조가 가능한 실험적 복셀 생성 모델과 이미지 슬라이서, gemini-3-pro-image-preview 지원이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-25-1",
+    "service": "scenario",
+    "date": "2025.11.25",
+    "kind": "API",
+    "title": "배경 제거·리프레임 커스텀 모델",
+    "summary": "배경 제거와 리프레임을 커스텀 모델로 쓸 수 있고, parentId로 다른 유형의 에셋도 업로드할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-98-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-11-20-1",
+    "service": "scenario",
+    "date": "2025.11.20",
+    "kind": "모델",
+    "title": "Nano Banana Pro·OBJ 지원·Hunyuan 3D Part",
+    "summary": "더 좋은 결과를 내는 Nano Banana Pro와 OBJ 지원, Hunyuan 3D Part가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-105-nano-banana-pro-obj-support-and-key-stability-fixes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-19-1",
+    "service": "scenario",
+    "date": "2025.11.19",
+    "kind": "API",
+    "title": "OBJ·PBR·쿼드 생성, 워크플로 승인 노드",
+    "summary": "OBJ·PBR 텍스처·쿼드 메시 생성을 지원하고, 워크플로에 수동 확인을 받는 승인 노드가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-97-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-11-18-1",
+    "service": "scenario",
+    "date": "2025.11.18",
+    "kind": "API",
+    "title": "Hunyuan 3D PBR 텍스처·3D 포맷 확대",
+    "summary": "3D 렌더링이 더 많은 포맷을 바로 지원하고 Hunyuan 3D의 PBR 텍스처를 관리해요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-11-18-1",
+    "service": "layer",
+    "date": "2025.11.18",
+    "kind": "기능",
+    "title": "스프라이트 시트 템플릿·3D 기능 확대",
+    "summary": "스프라이트 시트 템플릿과 확장된 3D 생성 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-11-18",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-13-1",
+    "service": "scenario",
+    "date": "2025.11.13",
+    "kind": "모델",
+    "title": "Qwen Edit LoRA·Pixverse Swap",
+    "summary": "Qwen Edit LoRA와 Pixverse Swap 영상 모델이 추가되고 내비게이션이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-104-ui-updates-qwen-edit-loras-pixverse-swap",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-12-1",
+    "service": "scenario",
+    "date": "2025.11.12",
+    "kind": "API",
+    "title": "비로그인 모델 목록·워크플로 썸네일",
+    "summary": "로그인하지 않아도 사용 가능한 모델 목록을 볼 수 있고, 공개 워크플로에 썸네일이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-96-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2025-11-12-1",
+    "service": "layer",
+    "date": "2025.11.12",
+    "kind": "기능",
+    "title": "새 템플릿 시스템",
+    "summary": "새 Templates 시스템과 UX 개선이 들어갔어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-11-12",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-11-1",
+    "service": "scenario",
+    "date": "2025.11.11",
+    "kind": "API",
+    "title": "Vidu 영상 모델·이미지 자동 리사이즈",
+    "summary": "Compute에 Vidu 영상 모델이 추가되고 Hunyuan 3D·Veo3 입력 이미지가 자동으로 크기 조정돼요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-8-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-11-11-1",
+    "service": "ludo.ai",
+    "date": "2025.11.11",
+    "kind": "모델",
+    "title": "3D 생성 품질 향상·게임용 최적화",
+    "summary": "3D 생성 모델이 업데이트돼 텍스처 품질이 크게 좋아졌고, 엔진 요구에 맞춘 게임용 최적화 옵션이 생겼어요.",
+    "url": "https://ludo.ai/whats-new#3d-generation-evolved-better-quality-and-game-ready-optimization",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-10-1",
+    "service": "scenario",
+    "date": "2025.11.10",
+    "kind": "모델",
+    "title": "Hunyuan 3D Pro 3.0·AI 리토폴로지",
+    "summary": "Hunyuan 3D Pro(3.0)가 단일 이미지·멀티뷰·스케치 3가지로 추가됐어요. Polygen AI 리토폴로지로 최적화된 메시를 만들어요.",
+    "url": "https://www.scenario.com/changelog/1-104-hunyuan-3d-pro-3-0-is-live-including-ai-retopology",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-11-10-1",
+    "service": "layer",
+    "date": "2025.11.10",
+    "kind": "기능",
+    "title": "새 3D 기능: Meshy·Seed3D·쿼드·리텍스처링",
+    "summary": "Meshy와 Seed3D 모델, 쿼드 메시 지원, 리텍스처링 등 새 3D 기능을 추가했어요.",
+    "url": "https://layer.ai/blog/seed-3d-meshy-quad-retexturing-support",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-09-1",
+    "service": "scenario",
+    "date": "2025.11.09",
+    "kind": "API",
+    "title": "Hunyuan3D Pro 지원·3D 미리보기 5배 빨라짐",
+    "summary": "Tencent Hunyuan3D Pro를 지원하고 3D 메시 영상 미리보기 렌더링이 5배 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-7-0",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-11-07-1",
+    "service": "ludo.ai",
+    "date": "2025.11.07",
+    "kind": "기능",
+    "title": "마지막 프레임 지정·VFX 스프라이트 지원",
+    "summary": "스프라이트와 영상 애니메이션의 마지막 프레임을 지정할 수 있게 됐어요. VFX 스프라이트 생성·애니메이션도 정식 지원해요.",
+    "details": [
+      "스프라이트 애니메이션 최종 프레임 업로드·생성·복제",
+      "VFX 스프라이트(폭발, 연기 등) 완전 지원",
+      "Auto 애니메이션 여백 기본값, 프레임 ZIP 다운로드",
+      "Video Generator 최종 프레임·3–10초 길이 선택"
+    ],
+    "url": "https://ludo.ai/whats-new#final-frame-control-for-total-animation-precision",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-11-06-1",
+    "service": "roblox-cube",
+    "date": "2025.11.06",
+    "kind": "모델",
+    "title": "4D 기능성 오브젝트·향상된 3D 생성 얼리 액세스",
+    "summary": "플레이어가 경험 안에서 움직이는 기능성 4D 오브젝트를 만들 수 있는 GenerateModelAsync API와 향상된 3D 생성이 얼리 액세스로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/early-access-introducing-in-experience-4d-functional-objects-and-enhanced-3d-generation/4050893",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-05-1",
+    "service": "scenario",
+    "date": "2025.11.05",
+    "kind": "모델",
+    "title": "Qwen Edit·Meshy 3D 스위트 추가",
+    "summary": "Text to 3D, Image to 3D, 리메시, 리깅까지 Meshy 3D 도구 모음과 Qwen Edit가 추가됐어요. 프로젝트 관리도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-104-qwen-edit-meshy-3d-suite-and-project-management-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-03-2",
+    "service": "scenario",
+    "date": "2025.11.03",
+    "kind": "API",
+    "title": "Hunyuan3D Part·Meshy 리메시·리깅 지원",
+    "summary": "Compute에 Hunyuan3D Part와 Meshy Remesh·Rigging이 추가되고 편집 모델 입력 파라미터가 표준화됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-6-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-11-03-1",
+    "service": "scenario",
+    "date": "2025.11.03",
+    "kind": "API",
+    "title": "API 문서 개편·프로젝트 간 에셋 이동",
+    "summary": "API 문서 분류가 LLM 친화적으로 바뀌고 지원 중단 엔드포인트가 정리됐어요. 에셋을 프로젝트 간에 옮길 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-95-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2025-11-03-1",
+    "service": "layer",
+    "date": "2025.11.03",
+    "kind": "모델",
+    "title": "Hailuo 2.3·Qwen 커스텀 학습·Meshy 6",
+    "summary": "Hailuo 2.3 영상, Qwen 커스텀 학습, Meshy 6 3D 생성이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-11-03",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-28-1",
+    "service": "scenario",
+    "date": "2025.10.28",
+    "kind": "모델",
+    "title": "Sparc3D 3D 모델 추가",
+    "summary": "고정밀 3D 생성 모델 Sparc3D가 Standard·Portrait 두 가지로 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/sparc3d-is-live",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-10-27-1",
+    "service": "layer",
+    "date": "2025.10.27",
+    "kind": "기능",
+    "title": "영상 다듬기 옵션·Gemini 2.5 비율 확대",
+    "summary": "새 영상 다듬기(Refine) 옵션과 Gemini 2.5의 더 많은 화면비가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/3#2025-10-27",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-23-1",
+    "service": "scenario",
+    "date": "2025.10.23",
+    "kind": "기능",
+    "title": "LTX v2 모델·Compute Planner",
+    "summary": "LTX v2 Fast·Pro 영상 모델이 추가되고, 모델 배지와 비용을 미리 계획하는 Compute Planner가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-102",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-20-1",
+    "service": "scenario",
+    "date": "2025.10.20",
+    "kind": "모델",
+    "title": "Beatoven 오디오·Reve·Vidu 등 추가",
+    "summary": "Beatoven 효과음·음악 생성, Reve 이미지, Crystal 업스케일러, Vidu 영상 생성 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-102-beatoven-audio-models-reve-suite-crystal-upscaler-and-vidu-video-generation",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-10-20-1",
+    "service": "layer",
+    "date": "2025.10.20",
+    "kind": "모델",
+    "title": "Veo 3.1·이미지 편집기 개선",
+    "summary": "Veo 3.1 모델이 추가되고 이미지 편집기가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-10-20",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-15-2",
+    "service": "scenario",
+    "date": "2025.10.15",
+    "kind": "API",
+    "title": "API에 Veo 3.1 지원·비용 추정 개선",
+    "summary": "API에서 참조 이미지·마지막 프레임과 함께 Veo 3.1을 쓸 수 있어요. 모든 호출 비용을 미리 추정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-2-93-0-veo-3-1",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-10-15-1",
+    "service": "scenario",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Veo 3.1·Solo 프로젝트·이미지 비교",
+    "summary": "Veo 3.1과 Veo 3.1 Fast가 추가되고, 혼자 작업하는 Solo 프로젝트와 갤러리 이미지 비교 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-101-veo-3-1-solo-projects-and-image-comparison-in-gallery",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-10-15-1",
+    "service": "layer",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Sora 2·Qwen Plus·Style Blending",
+    "summary": "Sora 2와 Qwen Plus 모델, 여러 스타일을 섞는 Style Blending이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-10-15",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-09-1",
+    "service": "scenario",
+    "date": "2025.10.09",
+    "kind": "API",
+    "title": "프로젝트 단위 모델 제한·OVI 영상",
+    "summary": "엔터프라이즈 관리자가 프로젝트별로 모델 접근을 막을 수 있어요. OVI 영상 모델과 Krea 모델 학습도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-2-92-0-project-level-model-restrictions",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-10-07-1",
+    "service": "scenario",
+    "date": "2025.10.07",
+    "kind": "기능",
+    "title": "Sora 2·Epochs·Flux Kontext LoRA",
+    "summary": "편집 모델을 직접 학습하는 Flux Kontext LoRA가 나왔어요. Sora 2 영상 모델과 학습 Epochs 설정도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-100-introducing-sora-2-and-flux-kontext-loras",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-10-06-1",
+    "service": "scenario",
+    "date": "2025.10.06",
+    "kind": "API",
+    "title": "API에 Sora 2 지원",
+    "summary": "API에서 Sora 2를 쓸 수 있고, 프롬프트 에이전트가 Sora 2에 맞는 프롬프트를 만들어 줘요.",
+    "url": "https://www.scenario.com/changelog/api-2-91-1-sora-2",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2025-10-06-1",
+    "service": "layer",
+    "date": "2025.10.06",
+    "kind": "모델",
+    "title": "Kling 2.5·Wan 2.5·Seedream 4, 프롬프트 편집",
+    "summary": "Kling 2.5, Wan 2.5, Seedream 4 모델과 Gemini 2.5 기반 프롬프트 편집이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-10-06",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-10-03-1",
+    "service": "ludo.ai",
+    "date": "2025.10.03",
+    "kind": "기능",
+    "title": "새 Game Concept 도구 출시",
+    "summary": "게임 아이디어를 완성된 기획 문서로 정리해 주는 새 Game Concept 도구를 선보였어요.",
+    "url": "https://ludo.ai/blog/transform-your-game-ideas-into-complete-concepts-with-the-all-new-game-concept-tool",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-10-02-1",
+    "service": "ludo.ai",
+    "date": "2025.10.02",
+    "kind": "기능",
+    "title": "Sprite Generator에 Pose Editor 추가",
+    "summary": "애니메이션의 첫 프레임 자세를 원하는 대로 잡는 Pose Editor가 추가돼 캐릭터 동작 제작이 쉬워졌어요.",
+    "url": "https://ludo.ai/whats-new#new-in-the-sprite-generator-create-and-animate-poses",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-30-1",
+    "service": "scenario",
+    "date": "2025.09.30",
+    "kind": "모델",
+    "title": "Qwen Edit·Veed Fabric·Wan 2.2 시리즈 추가",
+    "summary": "립싱크 Veed Fabric, 편집 Qwen Image Edit Plus, Wan 2.2 Animate·Reframe 등 여러 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/new-models-qwen-edit-veed-fabric-wan-2-2-series-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-29-1",
+    "service": "scenario",
+    "date": "2025.09.29",
+    "kind": "API",
+    "title": "SSO 셀프 온보딩·구독 일시정지 준비",
+    "summary": "SSO를 직접 설정할 수 있게 됐고 구독 일시정지 기능을 위한 준비가 이뤄졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-90-0-prepare-for-pause-subscription",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-24-2",
+    "service": "scenario",
+    "date": "2025.09.24",
+    "kind": "API",
+    "title": "Flux 네거티브 프롬프트 지원",
+    "summary": "Flux 기반 이미지 생성에 네거티브 프롬프트가 지원되고, 모델별 Compute Units 계산 기준이 공개돼요.",
+    "url": "https://www.scenario.com/changelog/api-v2-89-0-negative-prompts-support-for-flux",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-24-1",
+    "service": "scenario",
+    "date": "2025.09.24",
+    "kind": "모델",
+    "title": "Kling 2.5·Wan 2.5, 영상 참조 기능",
+    "summary": "Kling 2.5와 Wan 2.5 영상 모델이 추가되고, 영상을 참조로 쓰는 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-98-kling-2-5-wan-2-5-and-use-video-as-reference",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-09-22-1",
+    "service": "roblox-cube",
+    "date": "2025.09.22",
+    "kind": "API",
+    "title": "Text Generation API 베타 전체 경험으로 확대",
+    "summary": "스마트 NPC를 만드는 Text Generation API 베타를 콘텐츠 등급과 관계없이 모든 경험에서 쓸 수 있게 넓혔어요.",
+    "url": "https://devforum.roblox.com/t/text-generation-api-beta-expanding-access/3952348",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-19-1",
+    "service": "scenario",
+    "date": "2025.09.19",
+    "kind": "API",
+    "title": "Edit with Prompt에 Seedream 4 지원",
+    "summary": "Edit with prompt API에서 Seedream 4를 쓸 수 있고 업로드 모델 분류가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/v2-88-0-seedream-4-with-edit-with-prompt",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-18-2",
+    "service": "scenario",
+    "date": "2025.09.18",
+    "kind": "API",
+    "title": "Flux Kontext LoRA·멀티 참조 편집",
+    "summary": "Edit with prompt의 Flux Kontext가 LoRA와 여러 참조 이미지 편집을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v2-87-0-kontext-comeback",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-18-1",
+    "service": "scenario",
+    "date": "2025.09.18",
+    "kind": "모델",
+    "title": "Kling AI Avatar Pro·MM Audio·MiniMax Music 1.5",
+    "summary": "말하는 아바타 Kling AI Avatar Pro, 영상→오디오 MM Audio, 보컬 노래 생성 MiniMax Music 1.5가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-96-2-new-model-additions-audio-lipsync",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-09-15-1",
+    "service": "layer",
+    "date": "2025.09.15",
+    "kind": "요금",
+    "title": "사용량 기반 새 요금제 시행·Veo 3 Fast",
+    "summary": "사용량(소비) 기반의 새 요금제가 시행됐어요. Veo 3 Fast 모델도 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-09-15",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-14-1",
+    "service": "scenario",
+    "date": "2025.09.14",
+    "kind": "모델",
+    "title": "Seedream 4.0 추가",
+    "summary": "ByteDance의 Seedream 4.0을 쓸 수 있어요. 참조 이미지 최대 10장과 일관된 결과 15장 일괄 생성을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v1-96-1-seedream-4-0-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-12-1",
+    "service": "scenario",
+    "date": "2025.09.12",
+    "kind": "API",
+    "title": "오디오 메타데이터·엔터프라이즈 모델 관리",
+    "summary": "오디오 에셋에 제목·설명·대사 전사가 자동으로 붙어요. 엔터프라이즈 관리자는 모델을 켜고 끌 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v2-86-0-audio-enhancements-and-models-management",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-11-1",
+    "service": "scenario",
+    "date": "2025.09.11",
+    "kind": "API",
+    "title": "API에 Veo3 개선·ElevenLabs 오디오 추가",
+    "summary": "Veo3·Veo3 Fast에 네거티브 프롬프트·9:16·길이 선택이 추가되고 가격이 크게 내렸어요. ElevenLabs TTS 오디오 API도 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v2-85-0-welcome-more-versatile-google-veo3-and-elevenlabs-models-family",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-09-09-1",
+    "service": "scenario",
+    "date": "2025.09.09",
+    "kind": "기능",
+    "title": "오디오 생성 도구 출시",
+    "summary": "텍스트 음성 변환과 효과음, 립싱크 등 AI 오디오 생성이 Scenario에 들어왔어요. ElevenLabs 등 모델을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v1-96-audio-generation-is-here",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-09-05-1",
+    "service": "roblox-cube",
+    "date": "2025.09.05",
+    "kind": "기능",
+    "title": "Assistant, MCP 기반 복잡한 작업 수행",
+    "summary": "Studio가 MCP 서버로, Assistant가 MCP 클라이언트로 동작하도록 통합해 한 번의 프롬프트로 여러 단계 작업을 처리하게 했어요.",
+    "url": "https://devforum.roblox.com/t/assistant-update-boost-your-productivity-by-executing-complex-tasks/3920088",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-09-01-1",
+    "service": "layer",
+    "date": "2025.09.01",
+    "kind": "모델",
+    "title": "Gemini 2.5·Qwen 모델, 스타일 정렬",
+    "summary": "Google Gemini 2.5와 Qwen 모델이 추가되고 스타일 정렬 기능이 생겼어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-09-01",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-08-28-1",
+    "service": "scenario",
+    "date": "2025.08.28",
+    "kind": "요금",
+    "title": "새 요금제·Pixverse V5",
+    "summary": "요금제가 새 티어와 디자인으로 개편됐어요. Pixverse V5 영상 모델과 Edit with Prompt의 Nano Banana도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-95-pixverse-v5-new-pricing-options-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-08-27-1",
+    "service": "scenario",
+    "date": "2025.08.27",
+    "kind": "모델",
+    "title": "Nano Banana(Gemini 2.5 Flash Image) 추가",
+    "summary": "캐릭터와 스타일을 유지하며 이미지를 편집하는 Nano Banana(Gemini 2.5 Flash Image)가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-94-1-nano-banana-aka-gemini-2-5-flash-image-is-now-on-scenario",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-27-1",
+    "service": "layer",
+    "date": "2025.08.27",
+    "kind": "모델",
+    "title": "Gemini 2.5 Flash Image 추가",
+    "summary": "Google의 이미지 생성·편집 모델 Gemini 2.5 Flash Image를 Layer에서 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/blog/gemini-2-5-flash-by-google",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-25-1",
+    "service": "layer",
+    "date": "2025.08.25",
+    "kind": "기능",
+    "title": "활동 보기에서 Reforge·스타일 학습 개선",
+    "summary": "활동 화면에서 바로 다시 생성(Reforge)할 수 있고 스타일 학습이 개선됐어요. 요금 변경도 준비 중이에요.",
+    "url": "https://layer.ai/changelog/page/4#2025-08-25",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-18-2",
+    "service": "layer",
+    "date": "2025.08.18",
+    "kind": "요금",
+    "title": "Layer 요금제 개편 예고",
+    "summary": "9월 9일부터 사용한 만큼만 내는 방식으로 요금 체계를 바꾼다고 발표했어요. 규모와 관계없이 쓰기 쉬워져요.",
+    "url": "https://layer.ai/blog/pricing-updates-2025",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-18-1",
+    "service": "layer",
+    "date": "2025.08.18",
+    "kind": "기능",
+    "title": "16K 업스케일·스타일 페이지 개선",
+    "summary": "최대 16K 업스케일과 스타일 페이지 UX 개선이 들어갔어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-08-18",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-08-13-1",
+    "service": "ludo.ai",
+    "date": "2025.08.13",
+    "kind": "요금",
+    "title": "스프라이트 생성 비용 50% 인하",
+    "summary": "Sprite Generator의 크레딧 비용이 절반으로 줄었어요. 2D 에셋 라이브러리를 더 저렴하게 만들 수 있어요.",
+    "url": "https://ludo.ai/whats-new#create-more-for-less-sprite-generation-costs-cut-in-half",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-08-12-1",
+    "service": "scenario",
+    "date": "2025.08.12",
+    "kind": "요금",
+    "title": "Luma Reframe·Topaz 업스케일, 새 무료 플랜",
+    "summary": "영상을 새 비율로 확장하는 Luma Reframe과 Topaz 이미지 업스케일이 추가되고 새 무료 플랜이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v1-94-luma-video-reframe-topaz-image-upscale-new-free-plan",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-11-1",
+    "service": "layer",
+    "date": "2025.08.11",
+    "kind": "기능",
+    "title": "새 Styles 개요 페이지",
+    "summary": "스타일을 한눈에 보는 새 Styles 페이지가 나왔어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-08-11",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-08-09-1",
+    "service": "scenario",
+    "date": "2025.08.09",
+    "kind": "모델",
+    "title": "Runway Aleph·Ideogram Character 추가",
+    "summary": "기존 영상을 맥락에 맞게 편집하는 Runway Aleph와 캐릭터 일관성 모델 Ideogram Character 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-93-1-new-models-runway-aleph-ideogram-character-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-08-06-1",
+    "service": "scenario",
+    "date": "2025.08.06",
+    "kind": "기능",
+    "title": "스타일 유지 업스케일러",
+    "summary": "LoRA와 커스텀 모델로 스타일 변화 없이 최대 8배 업스케일하는 새 Scenario Upscale 모델이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v1-93-style-preserving-upscale-and-additional-upscale-models",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-08-05-1",
+    "service": "layer",
+    "date": "2025.08.05",
+    "kind": "모델",
+    "title": "워크스페이스 사용량 추적·Seedance 영상",
+    "summary": "워크스페이스 사용량 추적과 Seedance 영상 모델, 영상 프레임 선택기가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-08-05",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-07-29-1",
+    "service": "ludo.ai",
+    "date": "2025.07.29",
+    "kind": "기능",
+    "title": "Sprite Generator 출시",
+    "summary": "아이디어에서 바로 애니메이션된 게임용 스프라이트 시트를 만드는 Sprite Generator가 나왔어요.",
+    "url": "https://ludo.ai/whats-new#bring-your-characters-to-life-introducing-the-all-new-sprite-generator",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-27-1",
+    "service": "scenario",
+    "date": "2025.07.27",
+    "kind": "기능",
+    "title": "새 LoRA 트레이너·Restyle 개편",
+    "summary": "Epochs·Batch Size·Repeats를 고를 수 있는 새 LoRA 트레이너가 나와 품질이 크게 좋아졌어요. Restyle 도구도 개편됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-92-new-lora-trainer-updated-restyle-tool",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-07-24-1",
+    "service": "roblox-cube",
+    "date": "2025.07.24",
+    "kind": "기능",
+    "title": "Texture Generator 스타일 제어·프롬프트 가중치",
+    "summary": "Texture Generator 베타에 참조 이미지로 스타일을 정하는 Style Control과 프롬프트 가중치가 추가됐어요.",
+    "url": "https://devforum.roblox.com/t/texture-generator-beta-update-style-control/3838563",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-07-24-1",
+    "service": "layer",
+    "date": "2025.07.24",
+    "kind": "연동",
+    "title": "ElevenLabs와 오디오 생성 파트너십",
+    "summary": "Layer가 ElevenLabs와 협력해 게임용 효과음과 보이스 등 오디오 생성을 플랫폼에 더했어요.",
+    "url": "https://layer.ai/blog/partners-eleven-labs-audio-generation-lipsync",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-21-1",
+    "service": "scenario",
+    "date": "2025.07.21",
+    "kind": "기능",
+    "title": "Generate in Parts: 파츠별 3D 생성",
+    "summary": "이미지 한 장을 의미 있는 여러 3D 파츠로 나눠 한 번에 만드는 Generate in Parts가 나왔어요. PartCrafter 모델을 써요.",
+    "url": "https://www.scenario.com/changelog/v1-91-1-generate-in-parts-a-new-standard-for-image-to-3d",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-07-21-1",
+    "service": "roblox-cube",
+    "date": "2025.07.21",
+    "kind": "모델",
+    "title": "Cube 3D 업데이트: 품질 향상·바운딩 박스 제어",
+    "summary": "Cube 3D 모델 품질이 좋아지고 생성 크기를 정하는 바운딩 박스 제어가 추가됐어요. 출시 후 100만 개 이상의 모델이 생성됐어요.",
+    "url": "https://devforum.roblox.com/t/beta-cube-3d-model-updates-better-quality-and-bounding-box-control/3828156",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-07-21-1",
+    "service": "layer",
+    "date": "2025.07.21",
+    "kind": "기능",
+    "title": "립싱크 오디오·새 업스케일러·드래그 앤 드롭",
+    "summary": "오디오 립싱크, 새 업스케일러, 드래그 앤 드롭 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/4#2025-07-21",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-07-18-1",
+    "service": "ludo.ai",
+    "date": "2025.07.18",
+    "kind": "기능",
+    "title": "새 Video Generator 출시",
+    "summary": "정지 이미지와 텍스트로 애니메이션 영상을 만드는 새 Video Generator가 나왔어요. 게임 메커닉 시각화나 홍보 영상에 좋아요.",
+    "url": "https://ludo.ai/whats-new#animate-your-ideas-introducing-the-all-new-video-generator",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-16-1",
+    "service": "scenario",
+    "date": "2025.07.16",
+    "kind": "모델",
+    "title": "Minimax Hailuo 02·Image 01, GPT 충실도 모드",
+    "summary": "Minimax Hailuo 02 영상과 Minimax Image 01 이미지 모델이 추가됐어요. GPT-Image에는 High/Low 입력 충실도 모드가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/v1-91-minimax-hailuo-02-minimax-image-01-and-gpt-high-low-input-fidelity",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-07-14-1",
+    "service": "layer",
+    "date": "2025.07.14",
+    "kind": "기능",
+    "title": "커스텀 스타일 학습 V2",
+    "summary": "커스텀 스타일 학습이 V2로 업그레이드됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-07-14",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-10-1",
+    "service": "scenario",
+    "date": "2025.07.10",
+    "kind": "모델",
+    "title": "Veo3 Fast·Runway Gen-4 References 등 15종 추가",
+    "summary": "Veo3 Fast, Runway Gen-4 References, Imagen 등 15개 이상의 이미지·영상 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-90-veo3-fast-runway-gen-4-references-imagen-more-now-on-scenario",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-08-1",
+    "service": "scenario",
+    "date": "2025.07.08",
+    "kind": "모델",
+    "title": "Rodin·Tripo 3D 모델 추가",
+    "summary": "Rodin Hyper3D, Rodin HighPack, Tripo 2.5, Tripo 2.5 Multiview 등 3D 생성 모델 4종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-89-1-rodin-and-tripo-are-available-on-scenario",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-07-07-1",
+    "service": "layer",
+    "date": "2025.07.07",
+    "kind": "기능",
+    "title": "오디오 생성·이미지 크롭 도구",
+    "summary": "Layer에서 오디오를 생성할 수 있고 이미지 크롭 도구가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-07-07",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-07-06-1",
+    "service": "ludo.ai",
+    "date": "2025.07.06",
+    "kind": "모델",
+    "title": "3D 생성 새 모델·PBR 텍스처",
+    "summary": "3D Asset Generator에 새 모델이 적용돼 품질이 높아졌고, 알베도·메탈릭·러프니스 PBR 텍스처를 지원해요.",
+    "url": "https://ludo.ai/whats-new#level-up-your-3d-assets-with-new-pbr-textures",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-04-1",
+    "service": "scenario",
+    "date": "2025.07.04",
+    "kind": "기능",
+    "title": "3D 뷰어 강화",
+    "summary": "3D 뷰어가 PBR 재질, 와이어프레임, 조명·색 설정을 지원해 내보내기 전에 모델을 꼼꼼히 확인할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-89-enhanced-3d-viewer",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-07-03-1",
+    "service": "scenario",
+    "date": "2025.07.03",
+    "kind": "모델",
+    "title": "영상 모델 Kling 2.1·Seedance 1.0 추가",
+    "summary": "Kling 2.1, Kling 2.1 Master, Seedance 1.0 Lite·Pro 영상 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-88-1-kling-2-1-seedance-1-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-06-28-1",
+    "service": "layer",
+    "date": "2025.06.28",
+    "kind": "기능",
+    "title": "Outline 참조·Topaz 업스케일",
+    "summary": "윤곽선을 참조로 쓰는 Outline 레퍼런스와 Topaz 업스케일 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-06-28",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-06-27-1",
+    "service": "scenario",
+    "date": "2025.06.27",
+    "kind": "기능",
+    "title": "생성형 3D: Image to 3D 출시",
+    "summary": "Scenario에서 어떤 이미지든 3D 모델로 바꾸는 Image-to-3D 도구가 나왔어요. 이미지 메뉴의 Convert to 3D로 실행해요.",
+    "url": "https://www.scenario.com/changelog/v1-88-generative-3d",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-06-19-1",
+    "service": "scenario",
+    "date": "2025.06.19",
+    "kind": "기능",
+    "title": "새 홈페이지",
+    "summary": "탐색과 사용성을 높인 새 Scenario 홈페이지와 계정·설정 메뉴 구성이 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v1-87-new-homepage",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-06-17-1",
+    "service": "ludo.ai",
+    "date": "2025.06.17",
+    "kind": "기능",
+    "title": "Image Generator 전면 개편",
+    "summary": "이미지 생성기와 편집기를 하나로 합치고 네 가지 생성 모드 중심의 새 워크플로를 도입했어요.",
+    "url": "https://ludo.ai/whats-new#image-generator-reimagined-powerful-new-modes-and-an-upgraded-editor",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-06-13-1",
+    "service": "scenario",
+    "date": "2025.06.13",
+    "kind": "모델",
+    "title": "Flux Kontext 편집 모델 추가",
+    "summary": "Edit with Prompts에 빠르고 정교한 편집 모델 Flux Kontext가 추가됐어요. 여러 이미지와 스케치로 수정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-87-1-flux-kontext-is-on-scenario",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-06-13-1",
+    "service": "layer",
+    "date": "2025.06.13",
+    "kind": "모델",
+    "title": "모델 구성 변경·프롬프트 최적화",
+    "summary": "제공 모델 구성이 바뀌고 프롬프트 최적화가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-06-13",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-06-11-1",
+    "service": "scenario",
+    "date": "2025.06.11",
+    "kind": "기능",
+    "title": "영상 생성 도구 출시(Veo 3 등)",
+    "summary": "Google Veo 3 등 20여 개 영상 모델로 텍스트·이미지에서 영상을 만드는 영상 생성 도구가 나왔어요.",
+    "url": "https://www.scenario.com/changelog/v1-86-introducing-video-generation",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-06-06-1",
+    "service": "layer",
+    "date": "2025.06.06",
+    "kind": "모델",
+    "title": "Veo 3 얼리 액세스·Forge Explorer",
+    "summary": "차세대 영상 모델 Veo 3 얼리 액세스와 Forge Explorer가 추가되고 앱 속도가 빨라졌어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-06-06",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-06-04-1",
+    "service": "layer",
+    "date": "2025.06.04",
+    "kind": "모델",
+    "title": "Google Veo 3 추가",
+    "summary": "Google Veo 3로 게임 트레일러와 컷신, 마케팅 영상을 만들 수 있게 됐어요.",
+    "url": "https://layer.ai/blog/google-veo-3-layer-availability",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-30-1",
+    "service": "layer",
+    "date": "2025.05.30",
+    "kind": "모델",
+    "title": "FLUX Kontext·Kling 2.1 추가",
+    "summary": "FLUX Kontext 편집 모델과 Kling 2.1 영상 모델이 추가되고 UI가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-05-30",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-29-1",
+    "service": "layer",
+    "date": "2025.05.29",
+    "kind": "모델",
+    "title": "FLUX Kontext 편집 모델 추가",
+    "summary": "편집과 제어가 뛰어난 FLUX Kontext 모델을 Layer에 도입했어요.",
+    "url": "https://layer.ai/blog/flux-kontext-editing-control",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-05-28-1",
+    "service": "ludo.ai",
+    "date": "2025.05.28",
+    "kind": "기능",
+    "title": "Playable Generator 출시: AI 웹게임 프로토타이핑",
+    "summary": "텍스트 설명으로 PixiJS 2D나 Three.js 3D 웹게임 프로토타입을 만드는 Playable Generator가 나왔어요.",
+    "url": "https://ludo.ai/whats-new#introducing-the-playable-generator-rapid-web-game-prototyping-with-ai",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-26-1",
+    "service": "layer",
+    "date": "2025.05.26",
+    "kind": "요금",
+    "title": "Imagen 4·Prompt Ideas, Pro 영상 생성 한도",
+    "summary": "Imagen 4 모델과 Prompt Ideas가 추가되고 Pro 플랜에 영상 생성 한도가 적용됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-05-26",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-22-1",
+    "service": "layer",
+    "date": "2025.05.22",
+    "kind": "모델",
+    "title": "Google Imagen 4 추가",
+    "summary": "Google의 최신 텍스트→이미지 모델 Imagen 4를 Layer에서 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/blog/google-imagen-4-layer",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-16-1",
+    "service": "layer",
+    "date": "2025.05.16",
+    "kind": "기능",
+    "title": "새 웹사이트·필터 개선·업스케일 정보",
+    "summary": "새 웹사이트가 열리고 필터가 똑똑해졌으며 업스케일 정보를 볼 수 있어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-05-16",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-05-13-1",
+    "service": "roblox-cube",
+    "date": "2025.05.13",
+    "kind": "연동",
+    "title": "오픈소스 Studio MCP 서버 공개",
+    "summary": "Claude 같은 LLM이 요청에 따라 Roblox Studio의 경험을 직접 수정할 수 있게 하는 오픈소스 Studio MCP 서버를 공개했어요.",
+    "url": "https://devforum.roblox.com/t/introducing-the-open-source-studio-mcp-server/3649365",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-05-09-1",
+    "service": "layer",
+    "date": "2025.05.09",
+    "kind": "기능",
+    "title": "AI 이미지 편집·일괄 선택·새 영상 모델",
+    "summary": "AI 이미지 편집과 일괄 선택 기능, 새 영상 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-05-09",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-05-08-1",
+    "service": "scenario",
+    "date": "2025.05.08",
+    "kind": "모델",
+    "title": "GPT Image 생성 모델 추가",
+    "summary": "OpenAI의 GPT-Image 모델로 이미지를 생성할 수 있게 됐어요. 프롬프트 정확도와 공간 추론이 뛰어나요.",
+    "url": "https://www.scenario.com/changelog/v1-85-2-generate-with-gpt-images",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-05-06-1",
+    "service": "scenario",
+    "date": "2025.05.06",
+    "kind": "기능",
+    "title": "Edit with Prompts 출시(GPT-4o·Gemini 2.0)",
+    "summary": "자연어 지시로 이미지를 편집하는 Edit with Prompts가 나왔어요. GPT-Image와 Gemini 2.0을 활용해요.",
+    "url": "https://www.scenario.com/changelog/v1-85-1-edit-with-prompts-gpt-4o-gemini-2-0",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2025-05-02-1",
+    "service": "layer",
+    "date": "2025.05.02",
+    "kind": "기능",
+    "title": "새 Canvas 편집기·Activity 피드",
+    "summary": "새 Canvas 편집기와 활동 피드, 여러 이미지를 한 번에 다듬는 일괄 Refine이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-05-02",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-04-25-1",
+    "service": "layer",
+    "date": "2025.04.25",
+    "kind": "모델",
+    "title": "새 파일 선택기·Kling 2.0·Prompt Genie",
+    "summary": "새 파일 선택기와 Kling 2.0 영상 모델, 프롬프트를 도와주는 Prompt Genie가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-04-25",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-04-24-1",
+    "service": "scenario",
+    "date": "2025.04.24",
+    "kind": "기능",
+    "title": "프로젝트 직접 초대·Use Image 액션",
+    "summary": "새 멤버를 특정 프로젝트로 바로 초대할 수 있고, 모든 도구에서 Use image 액션을 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-84-new-invites-bug-fixes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-04-17-1",
+    "service": "scenario",
+    "date": "2025.04.17",
+    "kind": "기능",
+    "title": "Explore 탭·감사 기록",
+    "summary": "내 것과 워크스페이스·공개 콘텐츠를 둘러보고 재사용하는 Explore 탭과 감사 기록(Audit Trail)이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-83-explore-launch-audit-trail",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-04-07-1",
+    "service": "layer",
+    "date": "2025.04.07",
+    "kind": "기능",
+    "title": "새 브랜딩·영상 업스케일",
+    "summary": "Layer가 새 브랜딩을 적용했고 영상 업스케일 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-04-07",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-04-03-1",
+    "service": "scenario",
+    "date": "2025.04.03",
+    "kind": "기능",
+    "title": "Flux 이미지 생성 최대 2배 빨라짐",
+    "summary": "Flux 이미지 생성 속도가 최대 두 배 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/performance-boost-flux-image-generation-2x-faster",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-04-01-1",
+    "service": "scenario",
+    "date": "2025.04.01",
+    "kind": "기능",
+    "title": "Projects 기능·활동 대시보드",
+    "summary": "콘텐츠와 팀별 공간을 만드는 Projects가 나왔어요. 권한 관리와 도구·사용자·프로젝트별 활동 대시보드도 생겼어요.",
+    "url": "https://www.scenario.com/changelog/v1-82-project-organization-new-model-list",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-29-1",
+    "service": "layer",
+    "date": "2025.03.29",
+    "kind": "기능",
+    "title": "커스텀 스타일 제어·프롬프트 관리",
+    "summary": "커스텀 스타일 세부 제어와 프롬프트 관리 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-29",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-22-1",
+    "service": "layer",
+    "date": "2025.03.22",
+    "kind": "기능",
+    "title": "제품 투어·Layer Library",
+    "summary": "새 제품 투어와 에셋을 모아 보는 Layer Library가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-22",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-21-1",
+    "service": "layer",
+    "date": "2025.03.21",
+    "kind": "모델",
+    "title": "Hunyuan 3D 2.0 모델 추가",
+    "summary": "Hunyuan3D 2.0 3D 생성 모델이 추가되고 UX가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-21",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-03-20-1",
+    "service": "roblox-cube",
+    "date": "2025.03.20",
+    "kind": "모델",
+    "title": "Cube 3D 공개: 텍스트→3D 메시 생성 베타",
+    "summary": "1.5M 개 3D 에셋으로 학습한 1.8B 파라미터 3D 기반 모델 Cube 3D를 공개했어요. 첫 기능인 텍스트→메시 생성(Mesh Generation API)이 베타로 나왔어요.",
+    "details": [
+      "Roblox Cube: 향후 AI 도구의 핵심 생성 시스템",
+      "모델 오픈소스 공개(GitHub, 기술 보고서)",
+      "Studio Assistant와 경험 내 API로 사용"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-cube-3d-generation-tools-and-apis-for-creators/3558947",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-03-20-1",
+    "service": "ludo.ai",
+    "date": "2025.03.20",
+    "kind": "기능",
+    "title": "이미지 편집 개선: 더 나은 제어",
+    "summary": "마스크 없이 편집할 때 Image Strength에 따라 더 다양한 결과를 얻을 수 있도록 이미지 편집이 개선됐어요.",
+    "url": "https://ludo.ai/whats-new#image-editing-upgrades-enhanced-control-and-improved-results",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-20-1",
+    "service": "layer",
+    "date": "2025.03.20",
+    "kind": "모델",
+    "title": "Tencent Hunyuan3D 2.0 추가",
+    "summary": "Tencent의 Hunyuan3D 2.0으로 Layer의 3D 생성 품질을 높였다고 발표했어요.",
+    "url": "https://layer.ai/blog/expanding-hunyuan3d-creation-v2",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-03-18-1",
+    "service": "roblox-cube",
+    "date": "2025.03.18",
+    "kind": "API",
+    "title": "Text Generation API 베타",
+    "summary": "오픈소스 LLM으로 경험 안에서 NPC 대화 등 텍스트를 생성하는 Text Generation API가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/beta-introducing-text-generation-api/3556520",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2025-03-17-1",
+    "service": "roblox-cube",
+    "date": "2025.03.17",
+    "kind": "기능",
+    "title": "Assistant 제어 강화·Cube 3D 메시 생성",
+    "summary": "Assistant의 동작을 더 세밀하게 제어할 수 있게 됐어요. /generate 명령으로 Cube 3D 기반 메시 생성도 베타로 쓸 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-giving-you-more-control-of-assistant/3555172",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-14-1",
+    "service": "layer",
+    "date": "2025.03.14",
+    "kind": "기능",
+    "title": "새 온보딩·워크스페이스 관리·영상 옵션",
+    "summary": "새 온보딩과 워크스페이스 관리 기능, 영상 생성 옵션이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-14",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-03-13-1",
+    "service": "scenario",
+    "date": "2025.03.13",
+    "kind": "기능",
+    "title": "캔버스 우클릭 메뉴·새 탭 열기",
+    "summary": "캔버스 도구가 우클릭 메뉴로 옮겨지고, 에셋과 모델을 새 탭으로 열 수 있게 됐어요. 검색 필터도 다중 선택돼요.",
+    "url": "https://www.scenario.com/changelog/v1-81-canvas-context-menu-more",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-03-11-1",
+    "service": "layer",
+    "date": "2025.03.11",
+    "kind": "기능",
+    "title": "벡터화·Refine 도구·자동 프롬프트 보강",
+    "summary": "이미지 벡터화와 Refine 도구, 프롬프트 자동 보강 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-11",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-03-06-1",
+    "service": "scenario",
+    "date": "2025.03.06",
+    "kind": "기능",
+    "title": "Flux Sketch ControlNet·controlend 파라미터",
+    "summary": "손그림이나 선화를 렌더링하는 Flux용 Sketch ControlNet 모드와 controlend 파라미터가 추가됐어요. Live Painting도 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/v1-80-sketch-reference-controlend-faster-live-painting-more",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-03-05-1",
+    "service": "ludo.ai",
+    "date": "2025.03.05",
+    "kind": "기능",
+    "title": "3D Asset Generator 전면 개편",
+    "summary": "3D Asset Generator를 새로 설계해 Text to 3D, Image to 3D 등 여러 생성 모드를 쉽게 고를 수 있는 UI로 바꿨어요.",
+    "url": "https://ludo.ai/whats-new#revamped-3d-asset-generator",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-02-27-1",
+    "service": "layer",
+    "date": "2025.02.27",
+    "kind": "모델",
+    "title": "Wan 2.1 영상 모델 추가",
+    "summary": "Alibaba의 Wan 2.1 영상 생성 모델을 Layer에 추가했어요.",
+    "url": "https://layer.ai/blog/alibaba-video-generation",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-02-24-1",
+    "service": "scenario",
+    "date": "2025.02.24",
+    "kind": "기능",
+    "title": "AI Boost와 이미지 검색 결합",
+    "summary": "AI Boost와 이미지 검색을 함께 써 더 정확한 결과를 얻고, 필터도 늘었어요. 모델 페이지에 작성자 이름이 표시돼요.",
+    "url": "https://www.scenario.com/changelog/v1-79-smarter-search-and-enhanced-user-experience",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-02-06-1",
+    "service": "scenario",
+    "date": "2025.02.06",
+    "kind": "기능",
+    "title": "검색 기능 전면 재구축",
+    "summary": "검색을 처음부터 다시 만들어 이미지와 모델을 더 빠르고 직관적으로 찾을 수 있어요. Cmd/Ctrl+F로 열 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v1-78-enhanced-search-and-improved-workflow",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-02-04-1",
+    "service": "layer",
+    "date": "2025.02.04",
+    "kind": "기능",
+    "title": "영상 생성 출시: 트레일러·아이템·광고",
+    "summary": "Layer에서 게임 트레일러, 아이템 영상, 광고용 영상을 만드는 영상 생성 기능을 선보였어요.",
+    "url": "https://layer.ai/blog/game-item-trailer-generator",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2025-02-03-1",
+    "service": "layer",
+    "date": "2025.02.03",
+    "kind": "기능",
+    "title": "Layer에 영상 생성 도입·일괄 생성",
+    "summary": "Layer에서 영상을 생성할 수 있게 됐고 일괄 생성과 프롬프트 기능이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-02-03",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2025-01-14-1",
+    "service": "ludo.ai",
+    "date": "2025.01.14",
+    "kind": "기능",
+    "title": "3D Generator 도구 출시",
+    "summary": "메인 메뉴에서 바로 쓰는 전용 3D Generator가 나왔어요. 텍스트와 이미지로 3D 에셋을 만들고 다듬고 관리할 수 있어요.",
+    "url": "https://ludo.ai/whats-new#streamline-asset-creation-with-new-3d-asset-generation-tools",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-01-09-1",
+    "service": "scenario",
+    "date": "2025.01.09",
+    "kind": "기능",
+    "title": "Adaptive Fill·Vary 버튼",
+    "summary": "캔버스에서 불필요한 요소를 지우는 Adaptive Fill과 클릭 한 번으로 변형을 만드는 Vary 버튼이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-77-adaptive-fill-vary-shortcuts-more",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-12-30-1",
+    "service": "layer",
+    "date": "2024.12.30",
+    "kind": "모델",
+    "title": "Trellis 3D·Tripo·Rodin 3D 모델 추가",
+    "summary": "Trellis 3D, Tripo AI, Rodin 등 새 3D 생성 모델을 Layer에 추가했어요.",
+    "url": "https://layer.ai/blog/new-3d-models-trellis-3d-tripo-ai-rodin",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-12-19-1",
+    "service": "scenario",
+    "date": "2024.12.19",
+    "kind": "기능",
+    "title": "Row View 보기 모드·Edit/Reuse 단축 메뉴",
+    "summary": "생성 결과를 추론 유형별로 묶어 보는 Row View와 이미지별 Edit·Reuse 단축 메뉴가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-76-new-display-mode-shortcuts-more",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2024-12-10-1",
+    "service": "ludo.ai",
+    "date": "2024.12.10",
+    "kind": "기능",
+    "title": "Ludo Score 2.0 공개",
+    "summary": "게임 컨셉의 시장 잠재력을 평가하는 Ludo Score가 2.0으로 업그레이드됐어요. 요소별 지표와 Ask Ludo 채팅, 단순해진 점수 체계를 갖췄어요.",
+    "url": "https://ludo.ai/blog/maximize-video-game-market-potential-ludo-score-2",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-12-06-1",
+    "service": "scenario",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "Expand(아웃페인팅) 도구·새 프롬프트 박스",
+    "summary": "어떤 이미지든 바깥으로 확장하는 Expand 도구와 개선된 Prompt Spark 프롬프트 박스가 추가됐어요. Juggernaut 모델도 들어왔어요.",
+    "url": "https://www.scenario.com/changelog/1-75-expand-new-prompt-options-juggernaut-integration",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-12-06-1",
+    "service": "layer",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "Realtime Canvas·로우폴리 3D 생성",
+    "summary": "실시간으로 그림을 생성하는 Realtime Canvas와 로우폴리 3D 에셋 생성이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2024-12-06",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-12-05-1",
+    "service": "roblox-cube",
+    "date": "2024.12.05",
+    "kind": "기능",
+    "title": "Assistant 정식 출시",
+    "summary": "Studio Assistant가 베타를 마치고 모두에게 정식 출시됐어요. 스크립트 반복 수정, 여러 스크립트 동시 삽입 등 새 기능이 더해졌어요.",
+    "url": "https://devforum.roblox.com/t/full-release-use-assistant-to-boost-your-productivity/3294217",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-12-03-1",
+    "service": "layer",
+    "date": "2024.12.03",
+    "kind": "기능",
+    "title": "Realtime: 실시간 컨셉 생성",
+    "summary": "그리는 대로 즉시 이미지가 생성되는 Realtime 기능을 소개했어요. 게임 컨셉 작업을 빠르게 반복할 수 있어요.",
+    "url": "https://layer.ai/blog/bring-concepts-life-realtime-layer",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-11-15-1",
+    "service": "layer",
+    "date": "2024.11.15",
+    "kind": "기능",
+    "title": "3D 생성 개선",
+    "summary": "3D 생성 품질이 개선되고 여러 문제가 고쳐졌어요.",
+    "url": "https://layer.ai/changelog/page/6#2024-11-15",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-11-14-1",
+    "service": "scenario",
+    "date": "2024.11.14",
+    "kind": "모델",
+    "title": "Flux 1.1 Pro Ultra·Skybox V2",
+    "summary": "Flux 1.1 Pro Ultra를 쓸 수 있고, Flux 기반으로 개선된 360° 스카이박스 생성 Skybox V2가 나왔어요.",
+    "url": "https://www.scenario.com/changelog/1-74-flux-1-1-pro-ultra-skyboxes-v2",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-11-07-1",
+    "service": "layer",
+    "date": "2024.11.07",
+    "kind": "기능",
+    "title": "Layer에 3D 생성 기능 추가",
+    "summary": "Layer에서 이미지와 프롬프트로 3D 에셋을 생성할 수 있게 됐어요. 2D와 3D를 함께 쓰는 게임 제작에 도움이 돼요.",
+    "url": "https://layer.ai/blog/unlock-a-new-dimension-with-3d-generations-on-layer",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-10-30-1",
+    "service": "scenario",
+    "date": "2024.10.30",
+    "kind": "기능",
+    "title": "AI 지원 챗봇·Scribble·캔버스 기능",
+    "summary": "문서로 학습한 AI 챗봇 'Ask AI'와 내장 영상 튜토리얼, Scribble 등 새 캔버스 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-73-ai-support-bot-new-canvas-features-scribble-more",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-10-25-1",
+    "service": "layer",
+    "date": "2024.10.25",
+    "kind": "모델",
+    "title": "FLUX 커스텀 스타일·Imagen 3 추가",
+    "summary": "FLUX 기반 커스텀 스타일 학습과 아이디어 구상용 Imagen 3 모델이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-10-25",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-10-22-1",
+    "service": "scenario",
+    "date": "2024.10.22",
+    "kind": "기능",
+    "title": "새 로그인 시스템: Google·Microsoft·GitHub·Hugging Face",
+    "summary": "Gmail, Microsoft, GitHub, Hugging Face 계정으로 로그인할 수 있게 됐어요. Enhance의 Precise 프리셋도 원본에 더 가깝게 바뀌었어요.",
+    "url": "https://www.scenario.com/changelog/1-72-new-authentication-system",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-10-10-1",
+    "service": "scenario",
+    "date": "2024.10.10",
+    "kind": "모델",
+    "title": "Flux 1.1 Pro 추가",
+    "summary": "Black Forest Labs의 새 기반 모델 Flux 1.1 Pro를 쓸 수 있어요. 캔버스에 LoRA 구성 요소 슬라이더도 돌아왔어요.",
+    "url": "https://www.scenario.com/changelog/1-71-flux-1-1-pro-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-10-03-1",
+    "service": "scenario",
+    "date": "2024.10.03",
+    "kind": "기능",
+    "title": "Flux LoRA 학습·멀티 LoRA·ControlNet",
+    "summary": "Flux 기반 LoRA 학습과 여러 LoRA를 섞는 조합을 지원해요. Flux Live와 학습한 모델 내보내기, Flux ControlNet도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-69-1-70-major-update-flux-lora-multi-lora-controlnet",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-09-30-1",
+    "service": "layer",
+    "date": "2024.09.30",
+    "kind": "기능",
+    "title": "오래된 스타일 간편 업그레이드",
+    "summary": "오래된 커스텀 스타일을 쉽게 최신 버전으로 올리는 흐름이 생기고 Forge가 다듬어졌어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-09-30",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-09-23-1",
+    "service": "scenario",
+    "date": "2024.09.23",
+    "kind": "모델",
+    "title": "Flux 모델 전체 추가",
+    "summary": "Black Forest Labs의 Flux 모델(Schnell, Dev, Pro)을 공개 모델 목록에 추가했어요. 백그라운드 작업 메뉴도 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-68-flux-is-available",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-09-12-1",
+    "service": "layer",
+    "date": "2024.09.12",
+    "kind": "기능",
+    "title": "새 Forge 경험 공개",
+    "summary": "생성 화면 Forge를 전면 개편한 새 Forge 경험을 선보였어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-09-12",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-09-03-1",
+    "service": "scenario",
+    "date": "2024.09.03",
+    "kind": "요금",
+    "title": "Scenario Live 개선·새 요금제 옵션",
+    "summary": "Scenario Live에 바로가기와 Prompt Spark가 통합되고 새 요금제 옵션이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-67-scenario-live-enhancements-new-plan-options",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-09-03-1",
+    "service": "roblox-cube",
+    "date": "2024.09.03",
+    "kind": "기능",
+    "title": "Material Generator 전체 공개",
+    "summary": "텍스트 프롬프트로 PBR 맵이 포함된 재질 변형을 만드는 Material Generator를 Studio의 모든 사용자가 쓸 수 있게 됐어요.",
+    "url": "https://devforum.roblox.com/t/material-generator-is-now-available-for-everyone/3145555",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-08-30-1",
+    "service": "layer",
+    "date": "2024.08.30",
+    "kind": "기능",
+    "title": "Layer Forge 2배 빨라짐",
+    "summary": "Layer의 이미지 생성(Forge) 속도가 두 배 빨라졌어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-08-30",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-08-23-1",
+    "service": "layer",
+    "date": "2024.08.23",
+    "kind": "기능",
+    "title": "타일링 가능한 이미지 생성",
+    "summary": "이음매 없이 반복되는 타일형 이미지를 생성할 수 있게 됐어요. 텍스처 제작에 유용해요.",
+    "url": "https://layer.ai/changelog/page/7#2024-08-23",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-08-22-1",
+    "service": "scenario",
+    "date": "2024.08.22",
+    "kind": "기능",
+    "title": "스카이박스 베타·고해상도 텍스처",
+    "summary": "Scenario 안에서 360° 스카이박스를 만드는 기능이 베타로 나왔고 고해상도 텍스처도 지원해요.",
+    "url": "https://www.scenario.com/changelog/1-66-skyboxes-high-res-textures",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-08-16-1",
+    "service": "layer",
+    "date": "2024.08.16",
+    "kind": "기능",
+    "title": "접이식 내비게이션",
+    "summary": "사이드 내비게이션을 접을 수 있게 되고 여러 문제가 고쳐졌어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-08-16",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-08-12-1",
+    "service": "layer",
+    "date": "2024.08.12",
+    "kind": "모델",
+    "title": "FLUX 1.0·BRIA 2.3 인페인팅 추가",
+    "summary": "FLUX 1.0 모델과 BRIA 2.3 인페인팅이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-08-12",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-08-07-1",
+    "service": "roblox-cube",
+    "date": "2024.08.07",
+    "kind": "기능",
+    "title": "Assistant, 플레이스 콘텐츠 수정 베타",
+    "summary": "Assistant가 DataModel을 직접 수정해 크기 무작위화, 바닥 배치, 에셋 교체 같은 반복 작업을 자동화할 수 있게 됐어요.",
+    "url": "https://devforum.roblox.com/t/expanding-assistant-to-modify-place-content-beta/3107464",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-08-07-1",
+    "service": "layer",
+    "date": "2024.08.07",
+    "kind": "모델",
+    "title": "Layer, FLUX 모델 도입",
+    "summary": "Black Forest Labs의 FLUX 모델을 Layer에 도입했다고 발표했어요. 더 높은 품질의 게임 아트를 만들 수 있어요.",
+    "url": "https://layer.ai/blog/flux-taking-gen-ai-journey-next-level",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-08-01-1",
+    "service": "scenario",
+    "date": "2024.08.01",
+    "kind": "기능",
+    "title": "다중 유형 필터·저해상도 경고",
+    "summary": "갤러리에서 여러 에셋 유형을 동시에 거를 수 있고, 학습 데이터에 저해상도 이미지를 넣으면 경고해요.",
+    "url": "https://www.scenario.com/changelog/1-65-filtering-cropping-and-low-res-warning",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-07-26-1",
+    "service": "layer",
+    "date": "2024.07.26",
+    "kind": "모델",
+    "title": "BRIA 2.3 업그레이드·커버 이미지 입력",
+    "summary": "BRIA 2.3 모델로 업그레이드하고 커버 이미지 입력을 지원해요.",
+    "url": "https://layer.ai/changelog/page/7#2024-07-26",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-07-25-1",
+    "service": "scenario",
+    "date": "2024.07.25",
+    "kind": "기능",
+    "title": "텍스처 렌더링 개선·새 텍스처 모델",
+    "summary": "새 텍스처 모델이 추가되고 구·원기둥 미리보기 렌더링이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-64-textures-rendering-and-improved-navigation",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-07-24-1",
+    "service": "scenario",
+    "date": "2024.07.24",
+    "kind": "기능",
+    "title": "커스텀 텍스처 생성기 베타",
+    "summary": "3D 프로젝트용 텍스처 세트를 원하는 스타일로 만드는 텍스처 생성기 베타를 공개했어요. 알베도부터 맵까지 만들어요.",
+    "url": "https://www.scenario.com/changelog/1-63-custom-texture-generator-beta",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-07-19-1",
+    "service": "layer",
+    "date": "2024.07.19",
+    "kind": "기능",
+    "title": "새 업스케일러·전후 비교·SCIM 지원",
+    "summary": "전후 미리보기가 있는 새 업스케일러와 드래그 앤 드롭, 기업용 SCIM 사용자 관리가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/7#2024-07-19",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-07-12-1",
+    "service": "roblox-cube",
+    "date": "2024.07.12",
+    "kind": "기능",
+    "title": "이미지로 아바타 생성: Avatar Lab Preview",
+    "summary": "이미지나 텍스트로 3D Roblox 아바타를 만드는 경험 내 아바타 생성 기술의 데모 Avatar Lab Preview를 공개했어요. 향후 API로 낼 계획이에요.",
+    "url": "https://devforum.roblox.com/t/generate-avatars-from-images-with-avatar-lab-preview-demo/3065610",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-07-11-1",
+    "service": "scenario",
+    "date": "2024.07.11",
+    "kind": "기능",
+    "title": "Restyle(스케치→렌더) 출시, Unity로 열기",
+    "summary": "입력 이미지나 스케치에 스타일을 입히는 Restyle이 나왔어요. 생성물을 Unity로 바로 내보낼 수도 있어요.",
+    "url": "https://www.scenario.com/changelog/1-62-restyle-sketch-to-render",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-07-10-1",
+    "service": "roblox-cube",
+    "date": "2024.07.10",
+    "kind": "정책",
+    "title": "생성형 AI 데이터 공유 설정 도입",
+    "summary": "생성형 AI 모델 학습에 내 에셋 데이터를 공유할지 정하는 설정과 개정된 AI 보충 약관이 도입됐어요. Creator Hub에서 기본값을 정할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/review-your-generative-ai-data-sharing-preferences/3062106",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-07-01-1",
+    "service": "scenario",
+    "date": "2024.07.01",
+    "kind": "기능",
+    "title": "캔버스 Smart Selection·다운로드 포맷 선택",
+    "summary": "캔버스에 Smart Selection이 추가되고 새 사이드 메뉴, PNG·JPEG·WebP 다운로드 선택이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-61-canvas-smart-selection-side-menu-and-more",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-06-21-1",
+    "service": "scenario",
+    "date": "2024.06.21",
+    "kind": "기능",
+    "title": "스타일 이미지로 업스케일 유도",
+    "summary": "최대 5장의 스타일 이미지로 업스케일 결과를 유도할 수 있게 됐어요. 체크포인트 모델 업로드도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-60-style-consistent-guided-and-highly-controllable-upscales",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-06-19-1",
+    "service": "scenario",
+    "date": "2024.06.19",
+    "kind": "API",
+    "title": "스카이박스 API 파라미터·문서 개편",
+    "summary": "스카이박스 API에 negativePrompt와 normalized가 추가되고 새 문서 사이트가 열렸어요. 팀 요금제 CU도 늘었어요.",
+    "url": "https://www.scenario.com/changelog/v2-30-0-improvements",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2024-06-15-1",
+    "service": "layer",
+    "date": "2024.06.15",
+    "kind": "기능",
+    "title": "홈 페이지 개편·프롬프트 번역·드래그 앤 드롭",
+    "summary": "홈 페이지가 새로워지고 프롬프트 자동 번역과 드래그 앤 드롭이 지원돼요.",
+    "url": "https://layer.ai/changelog/page/7#2024-06-15",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-06-14-1",
+    "service": "scenario",
+    "date": "2024.06.14",
+    "kind": "기능",
+    "title": "업스케일러를 Enhancer로 개편",
+    "summary": "한 번에 최대 16배까지 키우는 새 업스케일러가 나왔어요. 다양한 스타일과 프리셋으로 보정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-59-from-upscaler-to-enhancer",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-06-14-1",
+    "service": "layer",
+    "date": "2024.06.14",
+    "kind": "기능",
+    "title": "Forge Sessions V2·스타일 페이지 개편·다국어 프롬프트",
+    "summary": "새 Forge 세션 V2와 다시 디자인한 Styles 페이지, 새 프롬프트 박스, 다국어 프롬프트가 나왔어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-06-14",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-06-13-1",
+    "service": "scenario",
+    "date": "2024.06.13",
+    "kind": "API",
+    "title": "새 업스케일 API·IP Adapter 유형 선택",
+    "summary": "더 좋고 빠른 새 업스케일 엔드포인트가 나왔고 스타일 이미지 조건도 지원해요. 추론에 ipAdapterType이 추가됐어요.",
+    "details": [
+      "v2.29.1: 초대형 이미지 처리·업스케일 시드 제한 수정"
+    ],
+    "url": "https://www.scenario.com/changelog/2-29-0-new-upscaler-ip-adapter-and-more",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-06-07-1",
+    "service": "scenario",
+    "date": "2024.06.07",
+    "kind": "연동",
+    "title": "Hugging Face·Civitai 모델 가져오기",
+    "summary": "Hugging Face와 Civitai의 모델을 Scenario로 바로 가져올 수 있고 HEIC 이미지도 올릴 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-58-upload-models-from-hugging-face-and-civit-ai",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-06-03-1",
+    "service": "layer",
+    "date": "2024.06.03",
+    "kind": "기능",
+    "title": "세션 다운로드·크롭 다듬기·이미지 복사",
+    "summary": "세션 전체 다운로드와 크롭 영역 다듬기, 이미지 복사 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-06-03",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-05-26-1",
+    "service": "scenario",
+    "date": "2024.05.26",
+    "kind": "기능",
+    "title": "새 로그인 페이지·홈 사용 사례",
+    "summary": "로그인 페이지가 새로 디자인되고 홈에 사용 사례가 추가됐어요. Models 페이지 성능도 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/1-57-new-login-page-improvements",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-05-24-1",
+    "service": "layer",
+    "date": "2024.05.24",
+    "kind": "기능",
+    "title": "Forge Sessions 출시",
+    "summary": "지난 생성을 다시 열어 보고 관리하는 Forge Sessions 기능이 나왔어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-05-24",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-05-16-1",
+    "service": "scenario",
+    "date": "2024.05.16",
+    "kind": "기능",
+    "title": "새 AI Canvas 공개",
+    "summary": "인페인팅을 더 쉽게 하도록 새로 설계한 AI Canvas와 새 Models 페이지를 선보였어요.",
+    "url": "https://www.scenario.com/changelog/1-56-new-ai-canvas",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-05-03-1",
+    "service": "layer",
+    "date": "2024.05.03",
+    "kind": "기능",
+    "title": "로컬 Forge 기록 저장",
+    "summary": "Forge 생성 기록을 저장하는 기능이 추가되고 버튼 사용성이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-05-03",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-05-01-1",
+    "service": "scenario",
+    "date": "2024.05.01",
+    "kind": "기능",
+    "title": "SDXL LoRA 모델 업로드·튜토리얼",
+    "summary": "직접 만든 SDXL LoRA(.safetensors)를 올릴 수 있고 홈에 튜토리얼 섹션이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-55-models-upload-tutorials",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-04-29-1",
+    "service": "layer",
+    "date": "2024.04.29",
+    "kind": "연동",
+    "title": "BRIA와 저작권 준수 생성 AI 파트너십",
+    "summary": "Layer가 BRIA와 손잡고 게임 스튜디오가 저작권 문제 없이 쓸 수 있는 생성 AI 모델을 제공하기로 했어요.",
+    "url": "https://layer.ai/blog/layer-partners-with-bria-to-enable-copyright-compliant-gen-ai-for-game-studios",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-04-24-1",
+    "service": "scenario",
+    "date": "2024.04.24",
+    "kind": "기능",
+    "title": "홈 페이지 재디자인",
+    "summary": "홈 페이지 디자인과 기능이 새로워지고 모델 썸네일로 로컬 이미지를 올릴 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/1-54-home-page-redesign",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-04-18-1",
+    "service": "roblox-cube",
+    "date": "2024.04.18",
+    "kind": "기능",
+    "title": "Assistant 스크립트 삽입 확대",
+    "summary": "Assistant가 Part 아래뿐 아니라 DataModel 전체에 스크립트를 만들어 넣을 수 있게 됐어요. 비스크립터도 쉽게 작업할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-enhanced-script-insertion-unlocks-new-use-cases/2936134",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-04-12-1",
+    "service": "scenario",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "모델 프리셋·라이브러리에서 원클릭 학습",
+    "summary": "생성 설정을 모델 기본값으로 저장할 수 있고, 라이브러리에서 이미지를 골라 바로 모델을 학습시킬 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-52-presets-one-click-training",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-04-12-1",
+    "service": "layer",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "Forge 기록 검색·투명 배경 생성",
+    "summary": "Forge 기록을 찾아볼 수 있고 투명 배경 이미지 생성이 지원돼요.",
+    "url": "https://layer.ai/changelog/page/8#2024-04-12",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-04-08-1",
+    "service": "scenario",
+    "date": "2024.04.08",
+    "kind": "API",
+    "title": "학습 이미지 자동 캡션 개선",
+    "summary": "학습 이미지 자동 캡션이 개선되고, 워크스페이스 사용량 단계별 관리자 이메일 알림이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/2-20-0-automatic-captioning-email-notifications-controls",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-04-05-1",
+    "service": "scenario",
+    "date": "2024.04.05",
+    "kind": "기능",
+    "title": "대기 중 생성 취소 기능",
+    "summary": "대기열에 있는 생성을 취소할 수 있고 대기 순번과 모델 상태가 표시돼요.",
+    "url": "https://www.scenario.com/changelog/1-51-cancel-your-generations",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-04-05-1",
+    "service": "layer",
+    "date": "2024.04.05",
+    "kind": "기능",
+    "title": "Remove Anything 도구·튜토리얼",
+    "summary": "이미지에서 무엇이든 지우는 Remove Anything 도구와 튜토리얼 콘텐츠가 추가되고 오류 메시지가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-04-05",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-04-04-1",
+    "service": "layer",
+    "date": "2024.04.04",
+    "kind": "정책",
+    "title": "Layer, SOC 2 인증 획득",
+    "summary": "Layer가 게임용 생성 AI 제공사 최초로 SOC 2 규정 준수 인증을 받았어요. 스튜디오 데이터 보안을 강화했어요.",
+    "url": "https://layer.ai/blog/layer-becomes-the-first-soc-2-compliant-gaming-gen-ai-provider",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-03-28-1",
+    "service": "scenario",
+    "date": "2024.03.28",
+    "kind": "기능",
+    "title": "더 커진 스케치 도구",
+    "summary": "스케치 도구가 모달로 커졌고, 요금 주기 변경과 모든 파생 이미지의 전후 비교 슬라이더가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-50-bigger-sketch-tool",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-03-26-1",
+    "service": "scenario",
+    "date": "2024.03.26",
+    "kind": "요금",
+    "title": "병렬 추론 기준 요금 제한·사용량 API",
+    "summary": "비공개 모델 병렬 제한 대신 요금제별 병렬 추론 수 제한을 적용했어요. GET /usage로 CU 사용량을 볼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-19-0-march-26th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2024-03-19-1",
+    "service": "layer",
+    "date": "2024.03.19",
+    "kind": "기능",
+    "title": "에셋 캡션 지원·파일명 최적화",
+    "summary": "에셋에 캡션을 붙일 수 있고 다운로드 파일명이 정리됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-03-19",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-03-18-1",
+    "service": "roblox-cube",
+    "date": "2024.03.18",
+    "kind": "기능",
+    "title": "Texture Generator 베타",
+    "summary": "자연어 프롬프트로 MeshPart에 맞춤 1024×1024 텍스처를 만드는 Texture Generator가 베타로 나왔어요. 메시 형태를 이해하고 입혀요.",
+    "url": "https://devforum.roblox.com/t/texture-generator-beta/2880635",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-03-15-1",
+    "service": "scenario",
+    "date": "2024.03.15",
+    "kind": "요금",
+    "title": "새 업스케일·새 요금제 도입",
+    "summary": "새 업스케일이 나오고 요금제가 개편돼 모든 작업에 월별 CU가 쓰여요. 팀은 모두 공유 팀이 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-49-march-15th-2024",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-03-13-1",
+    "service": "scenario",
+    "date": "2024.03.13",
+    "kind": "요금",
+    "title": "API 선불제·Creative Units 과금 전환",
+    "summary": "API가 선불 방식으로 바뀌고 모든 호출이 Creative Units 기준으로 과금돼요. dryRun으로 비용을 미리 볼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-18-0-march-13th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "layer-2024-03-08-1",
+    "service": "layer",
+    "date": "2024.03.08",
+    "kind": "기능",
+    "title": "캔버스 Live 모드·워크스페이스 업데이트",
+    "summary": "캔버스에서 실시간 Live 모드를 쓸 수 있고 워크스페이스 기능이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-03-08",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-03-02-1",
+    "service": "layer",
+    "date": "2024.03.02",
+    "kind": "기능",
+    "title": "SDXL 스케치 지원·프롬프트 길이 변경",
+    "summary": "SDXL 스케치 입력을 지원하고 프롬프트 길이 제한이 바뀌었으며 생성(Forge) 품질이 좋아졌어요.",
+    "url": "https://layer.ai/changelog/page/9#2024-03-02",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-02-23-1",
+    "service": "layer",
+    "date": "2024.02.23",
+    "kind": "기능",
+    "title": "생성 마법사 간소화·캔버스 개선",
+    "summary": "크리에이터 마법사가 간소화되고 편집 기능과 캔버스가 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/9#2024-02-23",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2024-02-22-1",
+    "service": "roblox-cube",
+    "date": "2024.02.22",
+    "kind": "기능",
+    "title": "Code Assist 정식 출시",
+    "summary": "AI 코드 완성 Code Assist가 정식 출시됐어요. 이제 커뮤니티 스크립트 데이터로 학습한 Roblox 자체 AI 모델로 동작해요.",
+    "url": "https://devforum.roblox.com/t/code-assist-full-release-ai-powered-code-completion/2848978",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2024-02-16-1",
+    "service": "layer",
+    "date": "2024.02.16",
+    "kind": "기능",
+    "title": "새 추천 스타일·표시 옵션·학습 개선",
+    "summary": "새 추천 스타일과 표시 옵션이 추가되고 스타일 학습이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/9#2024-02-16",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-02-12-1",
+    "service": "scenario",
+    "date": "2024.02.12",
+    "kind": "API",
+    "title": "모델 추천 엔드포인트 추가",
+    "summary": "상황에 맞는 모델을 찾아 주는 추천 엔드포인트와 새 학습 파라미터, 자동 크롭 알고리즘이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-17-0-february-12th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-02-08-1",
+    "service": "scenario",
+    "date": "2024.02.08",
+    "kind": "기능",
+    "title": "IP Adapter 참조 모드·원클릭 배경 제거",
+    "summary": "참조 이미지 모드에서 IP Adapter를 쓸 수 있고, 모델 생성 시 배경을 한 번에 지울 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-48-february-8th-2024",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-01-31-1",
+    "service": "scenario",
+    "date": "2024.01.31",
+    "kind": "API",
+    "title": "이미지 편집 쿨다운·업스케일 파라미터 정리",
+    "summary": "이미지 편집 API에 쿨다운이 생겨 요금제 한도를 넘어 쓸 수 있고 일부 업스케일 파라미터가 지원 중단됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-16-0-january-31th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-01-24-1",
+    "service": "scenario",
+    "date": "2024.01.24",
+    "kind": "API",
+    "title": "IP Adapter 추론 유형·SD1.5 LoRA",
+    "summary": "img2img-ip-adapter 등 IP Adapter 기반 추론 유형과 sd-1_5-lora 모델 유형·학습이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-15-0-january-24th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-01-22-1",
+    "service": "scenario",
+    "date": "2024.01.22",
+    "kind": "기능",
+    "title": "유사 이미지 검색·태블릿 캔버스",
+    "summary": "에셋 페이지에서 비슷한 이미지를 찾을 수 있고 태블릿에서도 캔버스 마스크·그리기가 돼요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-46-january-22nd-2024",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-01-16-1",
+    "service": "scenario",
+    "date": "2024.01.16",
+    "kind": "API",
+    "title": "모델 학습 취소 지원",
+    "summary": "모델 학습을 취소할 수 있게 됐고, 웹 앱 사용자의 SDXL 이미지 배수 제한이 사라졌어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-14-0-january-16th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-01-10-1",
+    "service": "scenario",
+    "date": "2024.01.10",
+    "kind": "API",
+    "title": "originalAsset 쿼리 파라미터 지원",
+    "summary": "originalAsset을 true로 주면 CDN 변환을 건너뛰고 생성 직후 에셋에 바로 접근할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-13-0-january-10th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2024-01-08-1",
+    "service": "scenario",
+    "date": "2024.01.08",
+    "kind": "기능",
+    "title": "웹 앱에 SDXL LoRA 학습·조합 추가",
+    "summary": "웹 앱에서 SDXL LoRA 파인튜닝과 SDXL LoRA 조합을 쓸 수 있게 돼 스타일 제어가 크게 늘었어요.",
+    "url": "https://www.scenario.com/changelog/webapp-version-1-45-january-8th-2024",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2024-01-04-1",
+    "service": "scenario",
+    "date": "2024.01.04",
+    "kind": "API",
+    "title": "대용량 업로드·추론 취소 지원",
+    "summary": "6MB 넘는 파일의 멀티파트 업로드와 추론 취소를 지원해요. 학습 완료 시 이메일도 보내줘요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-12-0-january-4th-2024",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-12-21-1",
+    "service": "scenario",
+    "date": "2023.12.21",
+    "kind": "API",
+    "title": "SDXL LoRA 학습 공식 지원",
+    "summary": "sd-xl-lora 학습이 정식 지원되고 무료 사용자의 학습·추론이 다시 열렸어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-10-0-december-21th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2023-12-21-1",
+    "service": "ludo.ai",
+    "date": "2023.12.21",
+    "kind": "기능",
+    "title": "Text-to-Video Generator 베타 출시",
+    "summary": "게임 개발용 텍스트→영상 생성 도구를 베타로 공개했어요. 게임 아이디어를 짧은 영상으로 시각화할 수 있어요.",
+    "url": "https://ludo.ai/blog/future-is-here-ludo-ai-text-to-video-generator-tool-redefines-game-development",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-12-19-1",
+    "service": "scenario",
+    "date": "2023.12.19",
+    "kind": "API",
+    "title": "원본 에셋 바로 받기·모델 프리셋",
+    "summary": "originalAssets 옵션으로 변환을 건너뛰고 빠르게 결과를 받을 수 있어요. 모델에 설명·프리셋·예시를 저장할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-9-0-december-19th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-12-13-2",
+    "service": "scenario",
+    "date": "2023.12.13",
+    "kind": "기능",
+    "title": "이미지 페이지 재디자인",
+    "summary": "이미지 보기 페이지가 새로 디자인돼 확대·축소와 편집 링크가 포함된 정보 바를 제공해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-43-december-13th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-12-13-1",
+    "service": "scenario",
+    "date": "2023.12.13",
+    "kind": "API",
+    "title": "모델 로딩 5배 빨라짐",
+    "summary": "이미지 생성 시 모델 다운로드 속도가 5배 빨라졌고 모델 API가 더 유연해졌어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-8-0-december-13th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-12-11-1",
+    "service": "scenario",
+    "date": "2023.12.11",
+    "kind": "API",
+    "title": "포즈 감지 모델·학습 기반 개선",
+    "summary": "ControlNet 제어를 높이는 새 포즈 감지 모델이 추가되고 SDXL LoRA 학습을 위한 기반이 마련됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-7-0-december-11th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-12-08-1",
+    "service": "scenario",
+    "date": "2023.12.08",
+    "kind": "요금",
+    "title": "캔버스 검색·종량제 토글",
+    "summary": "캔버스를 검색할 수 있고, 요금제 페이지에서 종량제를 켜 한도를 넘어 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-42-december-8th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2023-12-01-1",
+    "service": "roblox-cube",
+    "date": "2023.12.01",
+    "kind": "기능",
+    "title": "Studio용 Assistant 베타 출시",
+    "summary": "Studio 안에서 문서 질문에 답하고, 스크립트를 만들어 넣고, 코드를 설명하고, 재질을 생성하는 Assistant가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/introducing-assistant-in-studio-beta/2725977",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-11-30-1",
+    "service": "scenario",
+    "date": "2023.11.30",
+    "kind": "기능",
+    "title": "웹 앱에서 이미지 벡터화",
+    "summary": "웹 앱에서 생성 이미지를 벡터화해 .svg로 내려받을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-41-november-30th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-11-28-1",
+    "service": "scenario",
+    "date": "2023.11.28",
+    "kind": "API",
+    "title": "이미지 패치 API 추가",
+    "summary": "기존 에셋을 지우기·덮어쓰기 모드로 수정하는 /images/patch API가 추가되고 동적 쿨다운이 도입됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-6-0-novembre-28th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-11-24-1",
+    "service": "scenario",
+    "date": "2023.11.24",
+    "kind": "기능",
+    "title": "참조 이미지 편집기·LCM 스케줄러",
+    "summary": "참조 이미지를 편집하는 Reference Image Editor와 빠른 LCM 스케줄러가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-40-november-24th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-11-20-1",
+    "service": "scenario",
+    "date": "2023.11.20",
+    "kind": "API",
+    "title": "벡터화 API·Quality Boost 추가",
+    "summary": "에셋이나 이미지를 벡터로 바꾸는 벡터화 API와, 한 번에 더 좋은 결과를 내는 Quality Boost가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-5-0-novembre-20th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-11-15-1",
+    "service": "scenario",
+    "date": "2023.11.15",
+    "kind": "기능",
+    "title": "새 홈 페이지·편집 도구 페이지",
+    "summary": "새 홈 페이지와 Pixelate·배경 제거·업스케일 전용 페이지가 사이드 메뉴에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-38-november-15th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-11-06-1",
+    "service": "scenario",
+    "date": "2023.11.06",
+    "kind": "API",
+    "title": "controlnet-img2img·qualityBoost 지원 예고",
+    "summary": "GPU 증설 속도를 높이고 magic-prompt 구조 모드를 개선했어요. 프롬프트 최대 길이가 2048자로 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-4-0-novembre-06th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-11-03-1",
+    "service": "scenario",
+    "date": "2023.11.03",
+    "kind": "기능",
+    "title": "SDXL 생성기 배지·Foundation 탭",
+    "summary": "SDXL 생성기에 유형 배지와 필터가 생기고, 새 Foundation 탭과 카테고리별 NSFW 필터 설정이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-37-november-3rd-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-10-31-1",
+    "service": "scenario",
+    "date": "2023.10.31",
+    "kind": "API",
+    "title": "SDXL 조합 복사, 새 추론 유형 준비",
+    "summary": "sd-xl-composition을 복사해 나만의 버전을 만들 수 있고 reference 등 새 추론 유형을 준비했어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-3-0-october-31th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-27-2",
+    "service": "scenario",
+    "date": "2023.10.27",
+    "kind": "기능",
+    "title": "에셋 정보 복사·캔버스 마스크 유지",
+    "summary": "에셋 정보 필드를 클릭해 복사할 수 있고, 캔버스가 생성 후에도 마스크를 유지해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-36-october-27th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-10-27-1",
+    "service": "scenario",
+    "date": "2023.10.27",
+    "kind": "API",
+    "title": "학습 기본 파라미터 개선",
+    "summary": "모델 학습의 기본 파라미터가 개선되고 에셋 다운로드가 최신순으로 정렬돼요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-2-0-october-27th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-25-1",
+    "service": "scenario",
+    "date": "2023.10.25",
+    "kind": "API",
+    "title": "API v2.0: 인프라 개편, 생성 최대 80% 빨라짐",
+    "summary": "새 인프라로 에셋 생성이 최대 80% 빨라졌어요. SDXL 모델과 LoRA 조합도 새로 지원해요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-0-0-october-25th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-20-1",
+    "service": "scenario",
+    "date": "2023.10.20",
+    "kind": "기능",
+    "title": "캔버스 지우개·생성 상태 표시",
+    "summary": "캔버스에 지우개가 추가되고 생성 페이지에서 대기·생성 중 상태를 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-35-october-20th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-10-19-1",
+    "service": "scenario",
+    "date": "2023.10.19",
+    "kind": "API",
+    "title": "캔버스 스냅샷·학습 캡션 파라미터",
+    "summary": "캔버스 에셋에 스냅샷과 복원이 생기고, /train에 이미지별 captions 파라미터가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-1-54-0-october-19th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-11-1",
+    "service": "scenario",
+    "date": "2023.10.11",
+    "kind": "기능",
+    "title": "컬렉션에 이미지 업로드·유형 필터",
+    "summary": "컬렉션에 어떤 이미지든 여러 장 드래그로 올릴 수 있고 이미지 유형 필터가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-34-0-october-11th-2023",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2023-10-11-1",
+    "service": "roblox-cube",
+    "date": "2023.10.11",
+    "kind": "기능",
+    "title": "문서용 Assistant 베타",
+    "summary": "Roblox 문서를 바탕으로 질문에 답하는 AI Assistant를 문서 사이트에서 베타로 시험하기 시작했어요.",
+    "url": "https://devforum.roblox.com/t/assistant-for-docs-use-ai-to-build-grow-and-monetize-your-creations/2641810",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-10-05-1",
+    "service": "scenario",
+    "date": "2023.10.05",
+    "kind": "API",
+    "title": "prompt-generator 새 모드 추가",
+    "summary": "/prompt-generator에 structured·inventive·completion 모드가 추가돼 프롬프트를 더 다양하게 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-1-53-0-october-5th-2023",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2023-10-01-1",
+    "service": "scenario",
+    "date": "2023.10.01",
+    "kind": "기능",
+    "title": "캔버스 화면 정리·업스케일 옵션 확대",
+    "summary": "캔버스 페이지가 깔끔해지고 프로젝트 이름 변경, 캔버스 업스케일 옵션, 새 생성 빌더 디자인이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-33-0-october-1st-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-09-15-1",
+    "service": "scenario",
+    "date": "2023.09.15",
+    "kind": "기능",
+    "title": "편집 결과 바로 열기·이미지 유형 필터",
+    "summary": "배경 제거·업스케일·Pixelate 결과가 다운로드 대신 새 이미지로 열리고, 이미지 유형별 필터가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-31-0-september-15-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-09-06-1",
+    "service": "scenario",
+    "date": "2023.09.06",
+    "kind": "기능",
+    "title": "이미지 정렬·NSFW 블러",
+    "summary": "이미지를 최신·오래된 순으로 정렬하고 안전 필터가 켜져 있으면 NSFW 이미지를 흐리게 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-30-0-september-6-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-08-30-1",
+    "service": "scenario",
+    "date": "2023.08.30",
+    "kind": "기능",
+    "title": "스케줄러 선택·논리 검색 툴팁",
+    "summary": "확산 과정을 제어하는 스케줄러를 고를 수 있고 검색의 논리 연산 툴팁이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-29-0-august-30-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-08-24-1",
+    "service": "scenario",
+    "date": "2023.08.24",
+    "kind": "기능",
+    "title": "앱 내 지원 양식·단축키 추가",
+    "summary": "지원 양식을 웹 앱 안에서 바로 쓸 수 있고 탐색 단축키 등 사용성이 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-28-0-august-24-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-08-18-1",
+    "service": "scenario",
+    "date": "2023.08.18",
+    "kind": "기능",
+    "title": "Collections 기능 추가",
+    "summary": "프로젝트별로 이미지와 생성기를 모아 관리하는 Collections가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-27-0-august-18-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-08-04-1",
+    "service": "scenario",
+    "date": "2023.08.04",
+    "kind": "기능",
+    "title": "이미지 일괄 다운로드 개선",
+    "summary": "이미지를 한꺼번에 내려받고 시드·번호·프롬프트로 파일명을 정할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-26-0-august-4-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-07-27-1",
+    "service": "scenario",
+    "date": "2023.07.27",
+    "kind": "기능",
+    "title": "편집 이미지 탐색·자동 리사이즈",
+    "summary": "편집된 이미지도 같은 방식으로 탐색되고, 너무 큰 참조 이미지는 자동으로 크기가 조정돼요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-25-0-july-27-2023",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2023-07-25-1",
+    "service": "ludo.ai",
+    "date": "2023.07.25",
+    "kind": "기능",
+    "title": "Ask Ludo AI 챗봇 추가",
+    "summary": "게임 컨셉 도구 안에서 질문하면 몇 초 만에 자세히 답해 주는 AI 채팅 도우미 Ask Ludo가 추가됐어요.",
+    "url": "https://ludo.ai/blog/ask-ludo-chatbot-game-concept",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-07-21-1",
+    "service": "scenario",
+    "date": "2023.07.21",
+    "kind": "기능",
+    "title": "생성기·이미지 태그 기능",
+    "summary": "생성기와 이미지에 태그를 달아 정리하고 빠르게 찾을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-24-0-july-21-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-07-13-1",
+    "service": "scenario",
+    "date": "2023.07.13",
+    "kind": "모델",
+    "title": "게임 아트용 Signature 생성기 9종 추가",
+    "summary": "3D부터 애니메까지 게임 아트에 맞게 미세 조정한 Signature 생성기 9종을 추가했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-23-0-july-13-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-06-20-1",
+    "service": "scenario",
+    "date": "2023.06.20",
+    "kind": "기능",
+    "title": "인터페이스 레이아웃 재설계",
+    "summary": "내비게이션을 더 쉽게 하도록 레이아웃을 바꾸고 도움말·채팅·워크스페이스 위치를 옮겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-18-0-june-20-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-06-15-1",
+    "service": "scenario",
+    "date": "2023.06.15",
+    "kind": "기능",
+    "title": "Edit 메뉴에 업스케일 통합",
+    "summary": "업스케일이 Edit 메뉴에 들어가 Refine·배경 제거·Pixelate와 함께 쓸 수 있어요. 여러 이미지 배경 제거도 가능해요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-17-0-june-15-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-06-09-1",
+    "service": "scenario",
+    "date": "2023.06.09",
+    "kind": "기능",
+    "title": "Pixelate 픽셀아트 변환 출시",
+    "summary": "생성한 이미지를 게임용 픽셀아트로 바꾸는 Pixelate 기능을 Edit 메뉴에 추가했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-16-0-june-9-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-05-30-1",
+    "service": "scenario",
+    "date": "2023.05.30",
+    "kind": "기능",
+    "title": "학습 진행 시각화 개선",
+    "summary": "학습의 현재 단계와 다음 단계를 더 잘 볼 수 있게 진행 표시를 개선했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-14-0-may-30-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-05-23-1",
+    "service": "scenario",
+    "date": "2023.05.23",
+    "kind": "기능",
+    "title": "Prompt Embeddings 기능 추가",
+    "summary": "생성기에 고정 문구를 묶어 모든 프롬프트에 자동으로 포함시키는 Prompt Embeddings가 나왔어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-13-0-may-23-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-05-22-1",
+    "service": "scenario",
+    "date": "2023.05.22",
+    "kind": "기능",
+    "title": "이미지 탐색 UI 개편, Edit 탭 추가",
+    "summary": "생성 이미지를 가로 스크롤로 빠르게 보고, Edit 탭에서 다듬기·다운로드·업스케일을 할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-12-0-may-22-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-05-17-1",
+    "service": "scenario",
+    "date": "2023.05.17",
+    "kind": "기능",
+    "title": "AI Canvas 픽셀 퍼펙트 인페인팅·아웃페인팅",
+    "summary": "AI Canvas에서 생성기를 직접 이용한 픽셀 퍼펙트 인페인팅·아웃페인팅을 지원해 편집과 블렌딩이 훨씬 매끄러워졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-11-0-may-17-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-04-24-1",
+    "service": "scenario",
+    "date": "2023.04.24",
+    "kind": "기능",
+    "title": "생성기 페이지 재디자인·팀 URL 공유",
+    "summary": "생성기 페이지를 새로 설계하고 팀 URL을 공유해 협업할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-10-0-april-24-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-04-17-1",
+    "service": "scenario",
+    "date": "2023.04.17",
+    "kind": "기능",
+    "title": "학습 진행률 표시·팀 대시보드",
+    "summary": "생성기 학습 진행률을 볼 수 있고, 개인 팀으로 팀 기능과 대시보드·초대를 쓸 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-9-0-april-17-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-04-11-1",
+    "service": "scenario",
+    "date": "2023.04.11",
+    "kind": "기능",
+    "title": "생성기 선택 선택사항화·팀 나가기",
+    "summary": "생성할 때 생성기를 바로 고르지 않아도 되고, 팀에서 나갈 수 있는 기능이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-8-0-april-11-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-03-30-1",
+    "service": "scenario",
+    "date": "2023.03.30",
+    "kind": "기능",
+    "title": "생성 페이지 재디자인·팀 API 키",
+    "summary": "생성 페이지가 새로 디자인되고, 문서와 함께 팀 API 키를 만들 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-7-0-march-30-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-03-24-1",
+    "service": "scenario",
+    "date": "2023.03.24",
+    "kind": "기능",
+    "title": "웹 앱 v1.6.0: 사이드 메뉴 접기·팀 처리",
+    "summary": "사이드 메뉴 접기 보기와 로그인 페이지 이미지가 추가되고 teamId 처리가 지원돼요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-6-0-march-24-2023",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2023-03-20-2",
+    "service": "roblox-cube",
+    "date": "2023.03.20",
+    "kind": "기능",
+    "title": "Material Generator 베타",
+    "summary": "텍스트 문구로 재질 변형(Material Variant)을 몇 초 만에 만들어 씬에서 바로 미리 볼 수 있는 Material Generator가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/material-generator-beta/2224446",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2023-03-20-1",
+    "service": "roblox-cube",
+    "date": "2023.03.20",
+    "kind": "기능",
+    "title": "Code Assist 베타: AI 코드 자동 완성",
+    "summary": "Studio 스크립트 편집기에서 입력 중인 코드와 주석을 바탕으로 다음 줄이나 함수를 제안하는 AI 도우미 Code Assist가 베타로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/code-assist-beta-ai-powered-code-completion/2224387",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-03-17-1",
+    "service": "scenario",
+    "date": "2023.03.17",
+    "kind": "기능",
+    "title": "계정 삭제·팀 관리 기능 추가",
+    "summary": "프로필에서 계정을 삭제할 수 있고, 팀 삭제·저장·수정 기능과 팀 API가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-4-0-march-17-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-03-08-1",
+    "service": "scenario",
+    "date": "2023.03.08",
+    "kind": "API",
+    "title": "Swagger API 문서 생성 추가",
+    "summary": "API 문서를 위한 Swagger 생성이 추가되고 생성기 페이지에 뒤로 가기 버튼이 생겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-3-0-march-8-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-03-03-1",
+    "service": "scenario",
+    "date": "2023.03.03",
+    "kind": "기능",
+    "title": "웹 앱 v1.2.0: 사이드 메뉴 재디자인",
+    "summary": "사이드 메뉴 상단을 새로 디자인하고 새 그리드 형식과 Shift 다중 선택을 추가했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-2-0-march-3-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-02-28-1",
+    "service": "scenario",
+    "date": "2023.02.28",
+    "kind": "기능",
+    "title": "웹 앱 v1.1.0: 보안·인증 개선",
+    "summary": "접근 토큰 처리로 보안을 강화하고 인증 흐름과 리디렉션을 개선했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-1-0-february-28-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-02-20-1",
+    "service": "scenario",
+    "date": "2023.02.20",
+    "kind": "기능",
+    "title": "웹 앱 v1.0.0 출시",
+    "summary": "Scenario 웹 앱 v1.0.0이 나왔어요. 열 개수 조절, 생성기 자동 선택, 최적 비율 버튼 등 새 기능이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-0-0-february-20-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-02-18-1",
+    "service": "scenario",
+    "date": "2023.02.18",
+    "kind": "기능",
+    "title": "갤러리 UI 개선: 고정 헤더·진행 표시",
+    "summary": "그리드 헤더가 스크롤해도 상단에 고정되고 진행 표시줄이 개선되는 등 사용성이 다듬어졌어요.",
+    "url": "https://www.scenario.com/changelog/web-app-february-18-2023",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2023-01-28-1",
+    "service": "layer",
+    "date": "2023.01.28",
+    "kind": "연동",
+    "title": "Layer AI, Unity Verified Solution 선정",
+    "summary": "Layer AI가 Unity Verified Solutions 프로그램에 선정됐어요. Unity 개발자가 검증된 도구로 Layer를 쓸 수 있어요.",
+    "url": "https://layer.ai/blog/layer-ai-becomes-a-unity-verified-solution",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-01-25-1",
+    "service": "scenario",
+    "date": "2023.01.25",
+    "kind": "기능",
+    "title": "이미지 드래그 앤 드롭·Img2Img 배경 제거",
+    "summary": "생성 그리드의 이미지를 Img2Img로 끌어다 놓을 수 있고, Img2Img 입력의 배경을 지운 뒤 생성할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-25-2023",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2023-01-20-1",
+    "service": "layer",
+    "date": "2023.01.20",
+    "kind": "앱",
+    "title": "Layer 게임 아트 생성 도구 베타 출시",
+    "summary": "게임 아티스트가 자기 스타일로 새 에셋을 대량으로 만들 수 있는 Layer의 게임 아트 생성 도구가 베타로 출시됐어요.",
+    "url": "https://layer.ai/blog/unleashing-generative-ai-games",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-01-16-1",
+    "service": "scenario",
+    "date": "2023.01.16",
+    "kind": "기능",
+    "title": "Img2Img 가중치 슬라이더 추가",
+    "summary": "Img2Img에 입력 이미지 반영 정도를 0–100으로 고르는 슬라이더가 생겼어요. 값이 높을수록 원본과 비슷하게 나와요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-16-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-01-13-1",
+    "service": "scenario",
+    "date": "2023.01.13",
+    "kind": "기능",
+    "title": "Img2Img 기능 추가",
+    "summary": "커스텀 생성기의 스타일을 유지한 채 디자인의 미세한 변형을 빠르게 실험할 수 있는 Img2Img가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-13-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2023-01-04-1",
+    "service": "scenario",
+    "date": "2023.01.04",
+    "kind": "기능",
+    "title": "출력 이미지 배경 제거 기능",
+    "summary": "학습용 입력 이미지뿐 아니라 생성된 출력 이미지의 배경도 쉽게 지울 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-4-2023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2022-12-23-1",
+    "service": "scenario",
+    "date": "2022.12.23",
+    "kind": "기능",
+    "title": "네거티브 프롬프트·설정 불러오기 추가",
+    "summary": "원하지 않는 요소를 적어 제외하는 네거티브 프롬프트가 추가됐어요. 'Generate More Images'는 이전 설정을 편집기로 그대로 불러와요.",
+    "url": "https://www.scenario.com/changelog/web-app-december-23-2022",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2022-04-07-1",
+    "service": "ludo.ai",
+    "date": "2022.04.07",
+    "kind": "기능",
+    "title": "Game Concept 기능 출시",
+    "summary": "게임 기획을 한곳에서 정리하는 올인원 Game Concept 템플릿과 Game Elements 기능을 출시했어요.",
+    "url": "https://ludo.ai/blog/press-release-ludo-launches-game-changing-new-game-concept-feature-to-support-developers-to-plan-create-and-make-great-games",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2021-11-10-1",
+    "service": "ludo.ai",
+    "date": "2021.11.10",
+    "kind": "기능",
+    "title": "AI 아이콘 검색 기능·무료 티어 출시",
+    "summary": "AI로 게임 아이콘을 찾아 주는 아이콘 검색 기능을 내놓고, 누구나 쓸 수 있는 무료 티어를 열었어요.",
+    "url": "https://ludo.ai/blog/press-release-trailblazing-creators-platform-ludo-launches-iconic-new-function-for-game-developers-and-designers",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2021-08-05-1",
+    "service": "ludo.ai",
+    "date": "2021.08.05",
+    "kind": "기능",
+    "title": "게임 트렌드 데이터 센터 공개",
+    "summary": "전 세계 게임 개발 트렌드를 실시간 데이터로 보여 주는 게임 창의성 트렌드 데이터 센터를 공개했어요.",
+    "url": "https://ludo.ai/blog/press-release-ludo-the-creativity-toolkit-for-game-developers-reveals-world-first-game-creativity-trends-data-centre",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2021-06-22-1",
+    "service": "ludo.ai",
+    "date": "2021.06.22",
+    "kind": "요금",
+    "title": "Team Tier 구독·협업 기능 추가",
+    "summary": "원격 게임 디자인 팀을 위한 월 50달러 Team Tier 구독과 협업 기능을 추가했어요. 30일 무료 체험도 제공해요.",
+    "url": "https://ludo.ai/blog/press-release-ludo-the-ai-gamestorming-platform-adds-new-team-tier-subscription-and-collaboration-features-to-keep-creativity-flowing-for-remote-studio-teams",
+    "source": "notice"
+  }
+]

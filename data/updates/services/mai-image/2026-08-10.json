@@ -1,0 +1,15 @@
+[
+  {
+    "id": "mai-image-2026-08-10-1",
+    "service": "mai-image",
+    "date": "2026.08.10",
+    "kind": "모델",
+    "title": "MAI-Image-2.6 발표: Arena 텍스트-이미지 2위",
+    "summary": "MAI-Image-2.6이 Arena 텍스트-이미지 순위 2위로 발표됐어요. MAI-Image-2.5보다 전체 Elo가 79점, 글자 렌더링은 91점 올랐어요.",
+    "details": [
+      "MAI Playground에 먼저 제공 후 Microsoft Foundry 등으로 확대 예정"
+    ],
+    "url": "https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/",
+    "source": "notice"
+  }
+]

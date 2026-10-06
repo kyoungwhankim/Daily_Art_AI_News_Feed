@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-23-1",
+    "service": "claude",
+    "date": "2026.06.23",
+    "kind": "기능",
+    "title": "Claude Tag 출시: Slack에서 Claude에게 업무 위임",
+    "summary": "Slack 채널에서 @Claude를 태그해 작업을 맡기는 Claude Tag가 Team·Enterprise에 나왔어요. 채널 맥락을 기억하고 연결된 도구와 코드베이스로 일해요.",
+    "url": "https://www.anthropic.com/news/introducing-claude-tag",
+    "source": "notice"
+  }
+]

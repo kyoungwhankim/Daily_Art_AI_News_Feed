@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-09-18-1",
+    "service": "hugging-face",
+    "date": "2025.09.18",
+    "kind": "기능",
+    "title": "저장소 전체 파일 크기 표시",
+    "summary": "Files & Versions 탭에 현재 브랜치·폴더의 전체 크기가 표시돼 모델·데이터셋·Space의 스토리지 사용량을 바로 알 수 있어요.",
+    "url": "https://huggingface.co/changelog/total-file-size",
+    "source": "notice"
+  }
+]

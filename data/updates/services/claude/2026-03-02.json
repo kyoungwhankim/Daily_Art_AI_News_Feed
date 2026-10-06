@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-02-1",
+    "service": "claude",
+    "date": "2026.03.02",
+    "kind": "기능",
+    "title": "무료 사용자에게도 메모리 제공",
+    "summary": "채팅 기록 기반 메모리를 무료 사용자를 포함한 모든 Claude 사용자가 쓸 수 있게 됐어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

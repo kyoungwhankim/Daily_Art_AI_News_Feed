@@ -1,0 +1,15 @@
+[
+  {
+    "id": "invokeai-2023-05-19-1",
+    "service": "invokeai",
+    "date": "2023.05.19",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.5.post1: Xformers 속도와 재현성 동시 확보",
+    "summary": "NVIDIA 사용자는 이제 Xformers를 켜도 같은 시드·설정에서 동일한 이미지를 얻을 수 있어 속도와 재현성 중 하나를 고를 필요가 없어졌어요.",
+    "details": [
+      "Torch 2.0.0, Diffusers 0.16.1, Xformers 0.0.19로 업데이트"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-3-5-post1/",
+    "source": "notice"
+  }
+]

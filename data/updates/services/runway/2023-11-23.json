@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2023-11-23-1",
+    "service": "runway",
+    "date": "2023.11.23",
+    "kind": "기능",
+    "title": "Gen-2 Motion Brush·Style Presets 등 공개",
+    "summary": "붓질로 움직일 영역과 방향을 지정하는 Motion Brush와 복잡한 프롬프트 없이 스타일을 고르는 Style Presets 등 Gen-2 새 기능을 모든 사용자에게 공개했어요.",
+    "details": [
+      "Motion Brush: Gen-2 Image to Video 모드에서 사용",
+      "Gen-2 Style Presets"
+    ],
+    "url": "https://runway.com/research/more-control-fidelity-and-expressibility",
+    "source": "notice"
+  }
+]

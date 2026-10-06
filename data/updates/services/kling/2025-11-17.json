@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-11-17-1",
+    "service": "kling",
+    "date": "2025.11.17",
+    "kind": "API",
+    "title": "API V2.5 Turbo PRO 시작·끝 프레임 지원",
+    "summary": "Kling API의 V2.5 Turbo PRO에서 image와 image_tail을 넣어 시작·끝 프레임 영상을 만들 수 있게 됐어요. 5초 2.5 units, 10초 5 units예요.",
+    "url": "https://kling.ai/document-api/updates/api#11%2F17%2F2025",
+    "source": "dev"
+  }
+]

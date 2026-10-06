@@ -1,0 +1,17 @@
+[
+  {
+    "id": "meshy-2024-04-30-1",
+    "service": "meshy",
+    "date": "2024.04.30",
+    "kind": "모델",
+    "title": "Meshy-3 공개: 조각 스타일·PBR·Image to 3D",
+    "summary": "서비스 1주년에 맞춰 Meshy-3을 공개했어요. Text to 3D가 좋아졌고, PBR 텍스처와 새로운 Image to 3D 파이프라인이 추가됐어요.",
+    "details": [
+      "Text to 3D 품질 개선",
+      "PBR 맵 생성 지원",
+      "새 Image to 3D 파이프라인"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy3-sculptures-pbr-and-image-to-3d",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nano-banana-2025-10-02-1",
+    "service": "nano-banana",
+    "date": "2025.10.02",
+    "kind": "API",
+    "title": "Gemini 2.5 Flash Image 정식(GA) 출시",
+    "summary": "Nano Banana 모델 gemini-2.5-flash-image가 Gemini API와 Vertex AI에서 정식 버전으로 출시됐어요. 화면비 조절과 배치 처리 등이 더해져 실제 서비스에 쓰기 좋아졌어요.",
+    "details": [
+      "화면비(aspect ratio) 제어 지원",
+      "이미지만 출력하는 응답 모드 지원",
+      "Vertex AI 지역 엔드포인트와 배치 예측 지원",
+      "여러 참조 이미지 기반 생성과 멀티턴 편집 개선"
+    ],
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#10-02-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-02-1",
+    "service": "fal.ai",
+    "date": "2026.02.02",
+    "kind": "기능",
+    "title": "앱 페이지에서 환경 전환",
+    "summary": "앱 페이지의 환경 드롭다운으로 같은 앱의 다른 환경으로 바로 이동하고 시크릿을 확인할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#february-2-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2025-11-07-1",
+    "service": "ludo.ai",
+    "date": "2025.11.07",
+    "kind": "기능",
+    "title": "마지막 프레임 지정·VFX 스프라이트 지원",
+    "summary": "스프라이트와 영상 애니메이션의 마지막 프레임을 지정할 수 있게 됐어요. VFX 스프라이트 생성·애니메이션도 정식 지원해요.",
+    "details": [
+      "스프라이트 애니메이션 최종 프레임 업로드·생성·복제",
+      "VFX 스프라이트(폭발, 연기 등) 완전 지원",
+      "Auto 애니메이션 여백 기본값, 프레임 ZIP 다운로드",
+      "Video Generator 최종 프레임·3–10초 길이 선택"
+    ],
+    "url": "https://ludo.ai/whats-new#final-frame-control-for-total-animation-precision",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "pixverse-2026-02-06-1",
+    "service": "pixverse",
+    "date": "2026.02.06",
+    "kind": "연동",
+    "title": "PixVerse에 Sora 2·Sora 2 Pro 추가",
+    "summary": "OpenAI의 Sora 2와 Sora 2 Pro를 PixVerse에서 쓸 수 있게 됐어요. Pro·Premium 구독자가 4·8·12초 영상을 만들 수 있어요.",
+    "details": [
+      "Sora 2: 최대 720p",
+      "Sora 2 Pro: 최대 1080p",
+      "16:9·9:16 비율 지원"
+    ],
+    "url": "https://pixverse.ai/en/blog/sora-2-now-available-on-pixverse",
+    "source": "notice"
+  },
+  {
+    "id": "pixverse-2026-02-06-2",
+    "service": "pixverse",
+    "date": "2026.02.06",
+    "kind": "연동",
+    "title": "PixVerse에 Veo 3.1 Standard·Fast 추가",
+    "summary": "Google의 Veo 3.1 Standard와 Fast를 PixVerse에서 쓸 수 있게 됐어요. Pro·Premium 구독자가 1080p 4·6·8초 영상을 만들 수 있어요.",
+    "url": "https://pixverse.ai/en/blog/veo-3-1-now-available-on-pixverse",
+    "source": "notice"
+  }
+]

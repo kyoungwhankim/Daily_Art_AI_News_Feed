@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-12-19-1",
+    "service": "scenario",
+    "date": "2024.12.19",
+    "kind": "기능",
+    "title": "Row View 보기 모드·Edit/Reuse 단축 메뉴",
+    "summary": "생성 결과를 추론 유형별로 묶어 보는 Row View와 이미지별 Edit·Reuse 단축 메뉴가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-76-new-display-mode-shortcuts-more",
+    "source": "notice"
+  }
+]

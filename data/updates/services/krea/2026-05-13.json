@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-05-13-1",
+    "service": "krea",
+    "date": "2026.05.13",
+    "kind": "기능",
+    "title": "Krea 2 무드보드 공개 링크 공유",
+    "summary": "Krea 2 무드보드를 공개 링크로 누구에게나 공유할 수 있게 됐어요. 받은 사람은 무드보드로 생성할 수 있지만 편집은 할 수 없고, 공유는 언제든 끌 수 있어요.",
+    "url": "https://www.krea.ai/docs/changelog#may-13-2026",
+    "source": "dev"
+  }
+]

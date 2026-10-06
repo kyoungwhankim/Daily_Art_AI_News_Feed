@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-09-02-1",
+    "service": "comfyui",
+    "date": "2026.09.02",
+    "kind": "연동",
+    "title": "ComfyUI v0.34.3: MiniMax H3 Max 옵션",
+    "summary": "ComfyUI v0.34.3에서 MiniMax H3 텍스트→영상·첫/끝 프레임·참조 노드에 H3 Max 모델 옵션이 추가되고 TRELLIS 리메시 메모리가 줄었어요.",
+    "url": "https://docs.comfy.org/changelog#v0-34-3",
+    "source": "notice"
+  }
+]

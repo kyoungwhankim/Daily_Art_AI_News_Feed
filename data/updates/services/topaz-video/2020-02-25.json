@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2020-02-25-1",
+    "service": "topaz-video",
+    "date": "2020.02.25",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.0.2 첫 출시(Windows)",
+    "summary": "Topaz Labs가 AI 영상 업스케일 앱 Video Enhance AI를 Windows용으로 처음 출시했어요. 고품질·CG·저품질 영상용 AI 모델 3종을 제공해요.",
+    "details": [
+      "프레임별 미리보기 렌더링",
+      "여러 영상 일괄 처리",
+      "MP4, PNG, 8·16비트 TIF 시퀀스 출력"
+    ],
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-0-2-initial-release/13632",
+    "source": "notice"
+  }
+]

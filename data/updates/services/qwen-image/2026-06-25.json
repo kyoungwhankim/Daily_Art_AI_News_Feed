@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2026-06-25-1",
+    "service": "qwen-image",
+    "date": "2026.06.25",
+    "kind": "모델",
+    "title": "qwen-image-2.0-pro 6월 스냅샷 출시",
+    "summary": "qwen-image-2.0-pro-2026-06-22 스냅샷이 추가됐어요. 1,000토큰 지시 지원, 섬세한 질감, 강한 의미 반영으로 2.0 시리즈에서 가장 강력한 글자 렌더링을 제공해요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

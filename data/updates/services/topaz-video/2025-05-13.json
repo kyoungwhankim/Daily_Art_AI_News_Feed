@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-05-13-1",
+    "service": "topaz-video",
+    "date": "2025.05.13",
+    "kind": "모델",
+    "title": "Topaz Video AI 7.0: 로컬 확산 모델 Starlight Mini",
+    "summary": "확산 기반 복원 모델 Starlight를 내 PC에서 돌리는 Starlight Mini를 출시했어요. 8GB 이상 NVIDIA GPU가 있는 Windows에서 로컬 렌더링할 수 있어요.",
+    "url": "https://community.topazlabs.com/t/video-ai-7-0-new-starlight-mini-local-ai-model/90631",
+    "source": "notice"
+  }
+]

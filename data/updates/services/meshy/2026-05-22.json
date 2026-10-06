@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-05-22-1",
+    "service": "meshy",
+    "date": "2026.05.22",
+    "kind": "API",
+    "title": "Convert·Resize API 분리 출시",
+    "summary": "Remesh API의 포맷 변환과 크기 조정 기능이 독립된 Convert API와 Resize API로 나왔어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2026-07-09-1",
+    "service": "unity-ai",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "AI Assistant 2.14: 3D 메시 형식 선택",
+    "summary": "AI Assistant 2.14.0에서 GenerateAsset 도구가 FBX·GLB 3D 메시 형식 요청을 따르고, 텍스트→모션 길이를 모델 단위에 맞춰 보내요.",
+    "details": [
+      "체크포인트 첫 사용 안내 배너",
+      "에디터 분석 비활성화 시 대화 내용 전송 중단"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2140-pre1---2026-07-09",
+    "source": "dev"
+  }
+]

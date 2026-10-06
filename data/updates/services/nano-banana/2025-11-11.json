@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nano-banana-2025-11-11-1",
+    "service": "nano-banana",
+    "date": "2025.11.11",
+    "kind": "연동",
+    "title": "Google Photos에 Nano Banana 리스타일·AI 템플릿 도입",
+    "summary": "Google Photos에 Nano Banana 기반 기능이 들어와 사진을 르네상스 초상화나 동화책 그림처럼 다시 꾸밀 수 있어요. 안드로이드에는 프로필 사진·카드용 AI 템플릿도 나와요.",
+    "details": [
+      "Nano Banana로 사진 스타일 바꾸기(restyle)",
+      "AI 템플릿으로 프로필 사진·홀리데이 카드 등 생성(안드로이드)",
+      "'Help me edit'로 선글라스 제거·미소 보정 등 개인화 편집"
+    ],
+    "url": "https://blog.google/products-and-platforms/products/photos/nano-banana-ai-templates-ask-photos/",
+    "source": "notice"
+  },
+  {
+    "id": "nano-banana-2025-11-11-2",
+    "service": "nano-banana",
+    "date": "2025.11.11",
+    "kind": "연동",
+    "title": "Google Messages에 Nano Banana 기반 Remix 기능 출시",
+    "summary": "Google Messages에서 대화 속 사진을 Nano Banana로 편집·재해석하는 Remix 기능이 출시되기 시작했어요. 친구들이 같은 사진을 주고받으며 계속 리믹스할 수 있어요.",
+    "details": [
+      "사진을 길게 눌러 Remix 버튼으로 편집",
+      "그룹 채팅에서도 사용 가능, 상대 기종과 무관하게 결과 공유",
+      "안드로이드 전용, 18세 이상"
+    ],
+    "url": "https://blog.google/products-and-platforms/products/messages/remix-nano-banana/",
+    "source": "notice"
+  }
+]

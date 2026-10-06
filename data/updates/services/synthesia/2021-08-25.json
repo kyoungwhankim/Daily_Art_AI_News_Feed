@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-08-25-1",
+    "service": "synthesia",
+    "date": "2021.08.25",
+    "kind": "기능",
+    "title": "Synthesia 아바타를 캔버스 요소로 배치",
+    "summary": "아바타를 이미지나 도형처럼 크기를 바꾸고 자유롭게 옮길 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/avatar-as-a-canvas-element",
+    "source": "notice"
+  }
+]

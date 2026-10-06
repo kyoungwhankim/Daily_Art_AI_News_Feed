@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-08-09-1",
+    "service": "claude",
+    "date": "2023.08.09",
+    "kind": "모델",
+    "title": "Claude Instant 1.2 출시",
+    "summary": "Claude 2의 개선점을 이어받아 수학·코딩·추론·안전성이 좋아진 더 빠르고 저렴한 Claude Instant 1.2가 나왔어요.",
+    "url": "https://www.anthropic.com/news/releasing-claude-instant-1-2",
+    "source": "notice"
+  }
+]

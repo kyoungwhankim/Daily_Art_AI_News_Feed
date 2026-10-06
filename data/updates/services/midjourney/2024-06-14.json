@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-06-14-1",
+    "service": "midjourney",
+    "date": "2024.06.14",
+    "kind": "기능",
+    "title": "Submitting 상태 작업의 Rerun 버튼 임시 비활성화",
+    "summary": "제출 중인 작업에서 Rerun을 누르면 계속 오류가 나는 문제 때문에 해당 버튼을 일시적으로 껐어요. 일주일 안에 다시 켜는 것을 목표로 하고 있어요.",
+    "url": "https://updates.midjourney.com/temporarily-disabling-rerun-on-unstarted-jobs/",
+    "source": "notice"
+  }
+]

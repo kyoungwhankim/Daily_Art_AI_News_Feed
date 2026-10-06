@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-04-29-1",
+    "service": "firefly",
+    "date": "2025.04.29",
+    "kind": "API",
+    "title": "Firefly API에 Image Model 4 추가",
+    "summary": "Generate Images와 Generate Similar Images API에서 Firefly Image Model 4를 쓸 수 있어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#april-29-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-02-09-1",
+    "service": "runway",
+    "date": "2024.02.09",
+    "kind": "기능",
+    "title": "에셋 페이지 로딩 약 1.5배 빨라짐",
+    "summary": "에셋이 많은 사용자도 에셋 페이지를 훨씬 빠르게 불러올 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

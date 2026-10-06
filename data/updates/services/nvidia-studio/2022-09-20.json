@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2022-09-20-1",
+    "service": "nvidia-studio",
+    "date": "2022.09.20",
+    "kind": "기능",
+    "title": "RTX 40 시리즈와 Studio AI 도구 발표",
+    "summary": "GTC에서 GeForce RTX 40 시리즈와 함께 RTX Remix 등 새로운 Studio AI 도구가 발표됐어요. 듀얼 AV1 인코더로 영상 작업도 빨라져요.",
+    "url": "https://blogs.nvidia.com/blog/nvidia-studio-geforce-rtx-40-series/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-12-28-1",
+    "service": "comfyui",
+    "date": "2024.12.28",
+    "kind": "기능",
+    "title": "ComfyUI, 8GB VRAM HunyuanVideo와 PixArt 지원",
+    "summary": "타일 디코딩 개선으로 HunyuanVideo를 8GB VRAM에서도 돌릴 수 있게 됐고, PixArt 모델 지원도 추가됐어요.",
+    "url": "https://blog.comfy.org/p/running-hunyuan-with-8gb-vram-and",
+    "source": "notice"
+  }
+]

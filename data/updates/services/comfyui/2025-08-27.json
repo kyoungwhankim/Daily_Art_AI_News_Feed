@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-27-1",
+    "service": "comfyui",
+    "date": "2025.08.27",
+    "kind": "연동",
+    "title": "ComfyUI, nano-banana(Gemini 2.5 Flash Image) API 노드",
+    "summary": "캐릭터 일관성이 뛰어난 Google의 nano-banana(Gemini 2.5 Flash Image)를 API 노드로 ComfyUI 캔버스에서 바로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/nano-banana-via-comfyui-api-nodes",
+    "source": "notice"
+  }
+]

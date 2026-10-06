@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-01-17-1",
+    "service": "comfyui",
+    "date": "2025.01.17",
+    "kind": "모델",
+    "title": "ComfyUI, NVIDIA Cosmos 영상 모델 지원",
+    "summary": "NVIDIA Cosmos 7B·14B 텍스트→영상, 이미지→영상 확산 모델을 ComfyUI에서 지원해요. 7B 모델은 24GB GPU에 맞아요.",
+    "url": "https://blog.comfy.org/p/comfyui-now-supports-nvidia-cosmos",
+    "source": "notice"
+  }
+]

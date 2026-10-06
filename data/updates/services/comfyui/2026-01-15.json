@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-01-15-1",
+    "service": "comfyui",
+    "date": "2026.01.15",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX.2 [klein] 4B·9B 지원",
+    "summary": "생성과 편집을 하나로 묶은 Flux 계열 최고속 모델 FLUX.2 [klein] 4B·9B를 ComfyUI에서 지원해요. 증류 버전은 약 1초 만에 결과가 나와요.",
+    "details": [
+      "v0.9.2: Z-Image ControlNet Lite, Meshy 3D API 노드",
+      "저장소 주소가 Comfy-Org/ComfyUI로 변경"
+    ],
+    "url": "https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing",
+    "source": "notice"
+  }
+]

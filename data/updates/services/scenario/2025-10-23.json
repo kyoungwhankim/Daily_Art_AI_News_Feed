@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-10-23-1",
+    "service": "scenario",
+    "date": "2025.10.23",
+    "kind": "기능",
+    "title": "LTX v2 모델·Compute Planner",
+    "summary": "LTX v2 Fast·Pro 영상 모델이 추가되고, 모델 배지와 비용을 미리 계획하는 Compute Planner가 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-102",
+    "source": "notice"
+  }
+]

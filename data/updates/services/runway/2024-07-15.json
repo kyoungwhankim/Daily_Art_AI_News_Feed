@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-07-15-1",
+    "service": "runway",
+    "date": "2024.07.15",
+    "kind": "앱",
+    "title": "모바일 앱에 생성 피드 추가",
+    "summary": "Runway 모바일 앱에서 Gen-3 Alpha 영상 생성 피드를 볼 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

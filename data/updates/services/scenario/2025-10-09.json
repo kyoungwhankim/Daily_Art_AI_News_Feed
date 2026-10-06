@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-10-09-1",
+    "service": "scenario",
+    "date": "2025.10.09",
+    "kind": "API",
+    "title": "프로젝트 단위 모델 제한·OVI 영상",
+    "summary": "엔터프라이즈 관리자가 프로젝트별로 모델 접근을 막을 수 있어요. OVI 영상 모델과 Krea 모델 학습도 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-2-92-0-project-level-model-restrictions",
+    "source": "dev"
+  }
+]

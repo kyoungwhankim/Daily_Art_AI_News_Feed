@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-02-12-1",
+    "service": "stable-diffusion",
+    "date": "2025.02.12",
+    "kind": "연동",
+    "title": "Azure AI Foundry에 SD3.5 Large·Stable Image 출시",
+    "summary": "Stable Diffusion 3.5 Large, Stable Image Ultra, Stable Image Core를 Microsoft Azure AI Foundry 모델 카탈로그에서 쓸 수 있게 됐어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-35-large-is-now-available-on-microsoft-ai-foundry",
+    "source": "notice"
+  }
+]

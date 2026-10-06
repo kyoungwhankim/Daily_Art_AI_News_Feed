@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-15-1",
+    "service": "fal.ai",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "Serverless Usage API 추가",
+    "summary": "GET /v1/serverless/usage로 배포 앱별 머신 초 사용량과 할인 반영 비용을 앱·환경·머신 타입별로 조회할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#june-15-2026",
+    "source": "dev"
+  }
+]

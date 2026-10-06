@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-01-10-1",
+    "service": "runway",
+    "date": "2025.01.10",
+    "kind": "기능",
+    "title": "Gen-3 Alpha에서 4K 업스케일",
+    "summary": "Gen-3 Alpha 안에서 생성 영상을 바로 4K로 업스케일할 수 있어 프로덕션용 결과물을 만들기 쉬워졌어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

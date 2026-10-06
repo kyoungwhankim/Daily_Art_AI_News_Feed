@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-07-08-1",
+    "service": "fal.ai",
+    "date": "2026.07.08",
+    "kind": "API",
+    "title": "앱 단위 재시도 설정(retry_config)",
+    "summary": "배포 시 retry_config로 앱 기본 재시도 예산을 조건별로 지정할 수 있게 됐어요. 요청마다 X-Fal-Retry-Config 헤더로 덮어쓸 수도 있어요.",
+    "url": "https://fal.ai/docs/changelog#july-8-2026",
+    "source": "dev"
+  }
+]

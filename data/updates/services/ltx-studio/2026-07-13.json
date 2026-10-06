@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ltx-studio-2026-07-13-1",
+    "service": "ltx-studio",
+    "date": "2026.07.13",
+    "kind": "API",
+    "title": "LTX API 영상 아웃페인팅(Reframe) 엔드포인트",
+    "summary": "원본 프레임은 그대로 두고 새로 드러나는 영역만 생성해 영상을 다른 화면비로 바꾸는 Reframe 엔드포인트를 냈어요. 최대 60초, 1080p를 지원해요.",
+    "details": [
+      "1:1, 4:5, 5:4, 9:16, 16:9 지원"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

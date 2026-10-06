@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-10-03-1",
+    "service": "claude",
+    "date": "2024.10.03",
+    "kind": "API",
+    "title": "병렬 도구 사용 끄기 옵션",
+    "summary": "tool_choice에 disable_parallel_tool_use를 설정해 Claude가 한 번에 도구 하나만 쓰게 할 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-3rd-2024",
+    "source": "dev"
+  }
+]

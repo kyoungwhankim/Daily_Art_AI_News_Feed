@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-12-19-1",
+    "service": "hugging-face",
+    "date": "2025.12.19",
+    "kind": "기능",
+    "title": "프로필에 대표 조직 설정 기능",
+    "summary": "프로필에 대표 조직을 지정하면 사용자 이름 옆에 조직 배지가 표시돼요. Team·Enterprise 조직에서 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog/primary-organization-on-profiles",
+    "source": "notice"
+  }
+]

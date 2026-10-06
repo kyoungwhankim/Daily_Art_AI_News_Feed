@@ -1,0 +1,16 @@
+[
+  {
+    "id": "nano-banana-2026-05-28-1",
+    "service": "nano-banana",
+    "date": "2026.05.28",
+    "kind": "API",
+    "title": "Nano Banana 2·Nano Banana Pro 정식(GA) 출시",
+    "summary": "gemini-3.1-flash-image(Nano Banana 2)와 gemini-3-pro-image(Nano Banana Pro)가 Gemini API에서 정식 버전으로 출시됐어요. 영상을 입력해 썸네일이나 포스터를 만드는 기능도 추가됐어요.",
+    "details": [
+      "영상-이미지 생성: 영상 파일·YouTube URL을 맥락으로 이미지 생성(gemini-3.1-flash-image 전용)",
+      "프리뷰 모델 gemini-3.1-flash-image-preview, gemini-3-pro-image-preview는 2026년 6월 25일 종료 예정"
+    ],
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#05-28-2026",
+    "source": "dev"
+  }
+]

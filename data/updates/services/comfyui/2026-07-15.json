@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-07-15-1",
+    "service": "comfyui",
+    "date": "2026.07.15",
+    "kind": "모델",
+    "title": "ComfyUI v0.28.0: SeedVR2 업스케일과 int4 모델",
+    "summary": "ComfyUI v0.28.0에서 SeedVR2 이미지·영상 업스케일과 PixelDiT PID 1.5, int4 모델을 지원하고 Save 3D(Advanced)·텍스트 오버레이 노드가 추가됐어요.",
+    "details": [
+      "sync.so sync-3 립싱크 노드",
+      "--models-directory 실행 옵션",
+      "PyTorch 2.4 지원 중단"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-28-0",
+    "source": "notice"
+  }
+]

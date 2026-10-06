@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-09-01-1",
+    "service": "figma-ai",
+    "date": "2026.09.01",
+    "kind": "기능",
+    "title": "생성형 플러그인·셰이더 업데이트",
+    "summary": "Figma 에이전트로 만든 생성형 플러그인과 셰이더에 애니메이션·인터랙션, 게시 기능, 코드 접근이 추가됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=updates-to-generative-plugins-shaders",
+    "source": "notice"
+  }
+]

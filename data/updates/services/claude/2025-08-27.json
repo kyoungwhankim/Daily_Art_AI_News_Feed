@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-27-1",
+    "service": "claude",
+    "date": "2025.08.27",
+    "kind": "API",
+    "title": "PHP SDK 베타 출시",
+    "summary": "Claude API용 PHP SDK가 베타로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+    "source": "dev"
+  }
+]

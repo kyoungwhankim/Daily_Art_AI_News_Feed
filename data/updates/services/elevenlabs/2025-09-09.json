@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-09-09-1",
+    "service": "elevenlabs",
+    "date": "2025.09.09",
+    "kind": "기능",
+    "title": "ElevenLabs Agents 테스트 기능",
+    "summary": "툴 호출·상담원 연결·워크플로·가드레일을 구조화된 시뮬레이션으로 검증하는 에이전트 테스트가 나왔어요. CI/CD에도 연결돼요.",
+    "url": "https://elevenlabs.io/blog/tests-for-elevenlabs-agents",
+    "source": "notice"
+  }
+]

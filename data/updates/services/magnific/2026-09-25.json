@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-09-25-1",
+    "service": "magnific",
+    "date": "2026.09.25",
+    "kind": "API",
+    "title": "Kling 3 Omni 네이티브 4K, Audit Logs 30일 조회",
+    "summary": "Kling 3 Omni를 업스케일 없이 3840x2160으로 렌더링하는 4K 엔드포인트를 추가했어요. Audit Logs API 조회 기간은 15일에서 30일로 늘었어요.",
+    "url": "https://docs.magnific.com/changelog#september-25-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-05-11-1",
+    "service": "figma-ai",
+    "date": "2026.05.11",
+    "kind": "기능",
+    "title": "Figma Make 커스텀 스킬",
+    "summary": "기존 스킬을 가져오거나 Make에서 새로 만들어, 프롬프트에서 슬래시 명령으로 불러 쓸 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=Custom%20skills%20in%20Make",
+    "source": "notice"
+  }
+]

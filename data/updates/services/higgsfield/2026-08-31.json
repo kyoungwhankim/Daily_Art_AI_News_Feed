@@ -1,0 +1,12 @@
+[
+  {
+    "id": "higgsfield-2026-08-31-1",
+    "service": "higgsfield",
+    "date": "2026.08.31",
+    "kind": "기능",
+    "title": "Genjutsu 출시: 재촬영 없이 클립 일부 다시 만들기",
+    "summary": "영상의 움직임을 추출해 새 장면을 만드는 Motion Transfer와 지정한 요소만 바꾸는 Object Swap을 담은 새 도구 Genjutsu를 내놨어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-genjutsu",
+    "source": "notice"
+  }
+]

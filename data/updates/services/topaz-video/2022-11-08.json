@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2022-11-08-1",
+    "service": "topaz-video",
+    "date": "2022.11.08",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.0.3: 16K 이미지 시퀀스 출력",
+    "summary": "이미지 시퀀스를 최대 16K로 출력할 수 있고 앱 내 다운로드 속도가 빨라졌어요. NAS 내보내기와 EXR 입출력도 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-0-3/36569",
+    "source": "notice"
+  }
+]

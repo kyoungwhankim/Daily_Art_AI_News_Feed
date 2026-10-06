@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-02-12-1",
+    "service": "scenario",
+    "date": "2024.02.12",
+    "kind": "API",
+    "title": "모델 추천 엔드포인트 추가",
+    "summary": "상황에 맞는 모델을 찾아 주는 추천 엔드포인트와 새 학습 파라미터, 자동 크롭 알고리즘이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-17-0-february-12th-2024",
+    "source": "dev"
+  }
+]

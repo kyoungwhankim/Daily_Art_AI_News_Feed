@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-03-11-1",
+    "service": "magnific",
+    "date": "2026.03.11",
+    "kind": "API",
+    "title": "Kling 3 Motion Control API",
+    "summary": "레퍼런스 영상의 움직임을 캐릭터 이미지에 입히는 Kling 3 Motion Control을 Pro·Standard 엔드포인트로 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#march-11-2026",
+    "source": "dev"
+  }
+]

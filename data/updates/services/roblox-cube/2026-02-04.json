@@ -1,0 +1,16 @@
+[
+  {
+    "id": "roblox-cube-2026-02-04-1",
+    "service": "roblox-cube",
+    "date": "2026.02.04",
+    "kind": "모델",
+    "title": "4D Generation 베타 출시",
+    "summary": "플레이어가 운전 가능한 자동차 같은 여러 파츠의 기능성 오브젝트를 만드는 4D Generation이 베타로 나왔어요. GenerateMeshAsync는 지원 중단돼요.",
+    "details": [
+      "GenerateModelAsync API로 4D 생성",
+      "GenerateMeshAsync는 3월 18일까지 이전 필요"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-4d-generation-unlock-new-types-of-gameplay/4331818",
+    "source": "notice"
+  }
+]

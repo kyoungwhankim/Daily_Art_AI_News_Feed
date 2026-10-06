@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-04-10-1",
+    "service": "topaz-video",
+    "date": "2025.04.10",
+    "kind": "앱",
+    "title": "Topaz Video AI 6.2: RTX 5000 최적화와 SSO 로그인",
+    "summary": "RTX 5000 시리즈용 TensorRT 10을 적용하고 Google·Apple 로그인을 지원해요. EXR 처리와 오류 메시지도 개선했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-6-2/89785",
+    "source": "notice"
+  }
+]

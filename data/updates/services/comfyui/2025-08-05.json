@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-08-05-1",
+    "service": "comfyui",
+    "date": "2025.08.05",
+    "kind": "모델",
+    "title": "ComfyUI, Qwen-Image 네이티브 지원",
+    "summary": "이미지 속 글자를 정확히 그리는 Qwen 팀의 20B MMDiT 모델 Qwen-Image를 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.3.49: 오디오가 함께 나오는 Veo3 영상 생성 노드 추가",
+      "최근 사용 항목 API"
+    ],
+    "url": "https://blog.comfy.org/p/qwen-image-in-comfyui-new-era-of",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-06-19-1",
+    "service": "scenario",
+    "date": "2024.06.19",
+    "kind": "API",
+    "title": "스카이박스 API 파라미터·문서 개편",
+    "summary": "스카이박스 API에 negativePrompt와 normalized가 추가되고 새 문서 사이트가 열렸어요. 팀 요금제 CU도 늘었어요.",
+    "url": "https://www.scenario.com/changelog/v2-30-0-improvements",
+    "source": "dev"
+  }
+]

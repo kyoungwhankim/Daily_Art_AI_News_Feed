@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-06-08-1",
+    "service": "firefly",
+    "date": "2023.06.08",
+    "kind": "연동",
+    "title": "새 Adobe Express에 Firefly 기능 통합",
+    "summary": "새 올인원 편집기로 바뀐 Adobe Express에 Firefly 기반 텍스트→이미지와 텍스트 효과 등 생성형 AI 기능이 들어갔어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/06/08/adobe-express-june-2023-release",
+    "source": "notice"
+  }
+]

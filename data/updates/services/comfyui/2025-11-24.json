@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-11-24-1",
+    "service": "comfyui",
+    "date": "2025.11.24",
+    "kind": "모델",
+    "title": "ComfyUI, HunyuanVideo 1.5 네이티브 지원",
+    "summary": "24GB VRAM 소비자용 GPU에서도 플래그십급 영상을 만드는 Tencent의 8.3B 경량 모델 HunyuanVideo 1.5를 ComfyUI에서 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/hunyuanvideo-15-native-support",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-13-1",
+    "service": "fal.ai",
+    "date": "2025.10.13",
+    "kind": "API",
+    "title": "fal.distributed 멀티 GPU·커스텀 헤더",
+    "summary": "fal.distributed 모듈로 H100·A100 2·4·8개 GPU에서 데이터·모델 병렬 추론과 분산 학습을 할 수 있어요. API 요청에 커스텀 HTTP 헤더도 붙일 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#october-13-2025",
+    "source": "dev"
+  }
+]

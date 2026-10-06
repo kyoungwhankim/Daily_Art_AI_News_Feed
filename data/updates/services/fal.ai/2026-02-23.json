@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-23-1",
+    "service": "fal.ai",
+    "date": "2026.02.23",
+    "kind": "API",
+    "title": "CLI 러너 출력에 머신 타입 표시",
+    "summary": "fal runners list 등의 출력과 JSON에 각 러너의 머신 타입(GPU-A100 등)이 표시돼요.",
+    "url": "https://fal.ai/docs/changelog#february-23-2026",
+    "source": "dev"
+  }
+]

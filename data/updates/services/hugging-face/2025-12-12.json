@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-12-12-1",
+    "service": "hugging-face",
+    "date": "2025.12.12",
+    "kind": "기능",
+    "title": "문서 페이지에 HuggingChat 어시스턴트 내장",
+    "summary": "모든 Hugging Face Docs 페이지 오른쪽 아래에 HuggingChat 기반 어시스턴트가 생겨, 라이브러리와 서비스 사용법을 더 빨리 찾을 수 있어요.",
+    "url": "https://huggingface.co/changelog/huggingchat-docs",
+    "source": "notice"
+  }
+]

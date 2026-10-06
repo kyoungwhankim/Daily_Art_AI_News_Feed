@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-01-13-1",
+    "service": "scenario",
+    "date": "2023.01.13",
+    "kind": "기능",
+    "title": "Img2Img 기능 추가",
+    "summary": "커스텀 생성기의 스타일을 유지한 채 디자인의 미세한 변형을 빠르게 실험할 수 있는 Img2Img가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-january-13-2023",
+    "source": "notice"
+  }
+]

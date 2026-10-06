@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-09-03-1",
+    "service": "gigapixel",
+    "date": "2020.09.03",
+    "kind": "앱",
+    "title": "Gigapixel v5.1.5: Intel Tiger Lake OpenVINO 지원",
+    "summary": "OpenVINO 처리가 새 Intel Tiger Lake CPU를 지원해요. OpenVINO 오류 시 기본 CPU 처리로 자동 전환하고 얼굴 감지 충돌도 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-1-5/16349",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mai-image-2026-04-02-1",
+    "service": "mai-image",
+    "date": "2026.04.02",
+    "kind": "API",
+    "title": "MAI-Image-2, Microsoft Foundry 제공과 가격 공개",
+    "summary": "MAI-Image-2가 MAI-Transcribe-1, MAI-Voice-1과 함께 Microsoft Foundry에서 제공돼요. 가격은 텍스트 입력 100만 토큰당 5달러, 이미지 출력 100만 토큰당 33달러부터예요.",
+    "details": [
+      "Copilot에서 이미지 생성 성능과 속도 개선",
+      "WPP가 초기 엔터프라이즈 파트너로 대규모 활용",
+      "MAI-Image-2 모델 카드 공개"
+    ],
+    "url": "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-03-24-1",
+    "service": "gigapixel",
+    "date": "2025.03.24",
+    "kind": "앱",
+    "title": "Gigapixel v8.3.2: Windows ARM 빌드와 RAW 수정",
+    "summary": "Qualcomm Snapdragon용 Windows ARM 빌드를 내놓고, 흑백 이미지 충돌과 RAW 파일 로딩 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-3-2/89078",
+    "source": "notice"
+  }
+]

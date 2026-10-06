@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-03-28-1",
+    "service": "meshy",
+    "date": "2025.03.28",
+    "kind": "API",
+    "title": "ai_model에 latest 옵션 추가",
+    "summary": "Text to 3D와 Image to 3D API에 latest 옵션이 생겨 곧 나올 최신 모델을 바로 쓸 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2025-11-24-1",
+    "service": "claude",
+    "date": "2025.11.24",
+    "kind": "모델",
+    "title": "Claude Opus 4.5 출시",
+    "summary": "코딩과 에이전트 성능이 최고 수준이면서 가격은 낮아진 새 플래그십 Claude Opus 4.5가 나왔어요.",
+    "details": [
+      "API: 프로그래매틱 도구 호출·도구 검색·effort 파라미터 베타",
+      "Claude for Excel 베타 확대, 대화 자동 압축(compaction)",
+      "Claude in Chrome 모든 Max 사용자에게 베타 제공"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-4-5",
+    "source": "notice"
+  }
+]

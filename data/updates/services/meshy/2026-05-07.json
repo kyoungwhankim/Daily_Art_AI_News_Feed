@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2026-05-07-1",
+    "service": "meshy",
+    "date": "2026.05.07",
+    "kind": "API",
+    "title": "3D 프린팅 분석·수리 API 출시",
+    "summary": "FDM 프린팅 적합성을 무료로 검사하는 Analyze Printability API와, 비매니폴드 엣지·구멍 등을 고치는 Repair Printability API가 나왔어요.",
+    "details": [
+      "Analyze Printability: 수밀성·부피·구멍 지표, 무료",
+      "Repair Printability: 토폴로지 문제 수리, 작업당 10크레딧"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2026",
+    "source": "dev"
+  }
+]

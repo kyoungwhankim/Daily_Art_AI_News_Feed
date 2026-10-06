@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2026-04-15-1",
+    "service": "ltx-studio",
+    "date": "2026.04.15",
+    "kind": "기능",
+    "title": "LTX-2.3 HDR IC-LoRA와 에디터 업그레이드",
+    "summary": "LTX-2.3용 IC-LoRA로 16비트 HDR 영상 생성과 SDR→HDR 변환을 할 수 있게 됐어요. LTX Studio 편집기에는 전환·블렌딩·속도 등 8가지 기능이 추가됐어요.",
+    "details": [
+      "HDR: ACES 지원 float16 EXR 출력, ComfyUI 연동",
+      "API 크레딧 자동 충전(Auto Top-Up)",
+      "에디터: 전환, 블렌딩 모드, 속도, 역재생, 레이어 불투명도"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

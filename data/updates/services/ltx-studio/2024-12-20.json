@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ltx-studio-2024-12-20-1",
+    "service": "ltx-studio",
+    "date": "2024.12.20",
+    "kind": "모델",
+    "title": "LTX-Video 0.9.1: STG·PAG 지원과 macOS 지원",
+    "summary": "LTX-Video 0.9.1에서 품질 제어용 STG·PAG 가이던스를 지원하고 VAE 디코더를 개선했어요. macOS MPS 지원과 연구 논문도 함께 공개했어요.",
+    "details": [
+      "미사용 컴포넌트 CPU 오프로딩으로 메모리 절감"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

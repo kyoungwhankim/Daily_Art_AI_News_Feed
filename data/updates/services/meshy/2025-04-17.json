@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-04-17-1",
+    "service": "meshy",
+    "date": "2025.04.17",
+    "kind": "API",
+    "title": "texture_image_url 파라미터 추가",
+    "summary": "Image to 3D와 Text to 3D Refine API에 texture_image_url이 추가돼 이미지로 텍스처 생성을 유도할 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#apr-2025",
+    "source": "dev"
+  }
+]

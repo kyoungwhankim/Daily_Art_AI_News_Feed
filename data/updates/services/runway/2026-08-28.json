@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-08-28-1",
+    "service": "runway",
+    "date": "2026.08.28",
+    "kind": "기능",
+    "title": "Runway MCP에서 HDR 영상 변환 지원",
+    "summary": "Runway MCP로 연결된 에이전트에서 영상을 HDR로 업그레이드할 수 있어요. HDR10, HLG, HDR ProRes 출력 형식을 고를 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

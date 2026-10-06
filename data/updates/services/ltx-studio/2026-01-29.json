@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ltx-studio-2026-01-29-1",
+    "service": "ltx-studio",
+    "date": "2026.01.29",
+    "kind": "모델",
+    "title": "LTX-2 1월 업데이트: 실무 워크플로 제어 강화",
+    "summary": "LTX-2에 실제 작업에서 쓸 제어 기능을 더한 1월 업데이트를 내놨어요. ComfyUI용 Gemma 텍스트 인코딩 노드로 VRAM 부담을 줄였어요.",
+    "details": [
+      "LTXVSaveConditioning·LoadConditioning 노드",
+      "무료 Gemma API 텍스트 인코딩 노드"
+    ],
+    "url": "https://ltx.io/blog/end-of-january-ltx-2-drop",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-01-29-2",
+    "service": "ltx-studio",
+    "date": "2026.01.29",
+    "kind": "기능",
+    "title": "로고·폰트를 Elements로 저장",
+    "summary": "로고와 폰트를 Elements로 올려 프로젝트의 모든 생성 이미지에 바로 적용할 수 있어요. 브랜드 규격을 정확히 지킬 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pixverse-2026-02-10-1",
+    "service": "pixverse",
+    "date": "2026.02.10",
+    "kind": "모델",
+    "title": "PixVerse R1 720p 업데이트와 API 대기자 모집",
+    "summary": "실시간 월드 모델 R1이 720p 고화질과 실시간 오디오 생성, 인터랙티브 스토리텔링을 지원하게 됐어요. 파트너 대상 API 대기자 접수도 시작했어요.",
+    "details": [
+      "해상도 480p→720p",
+      "장면에 맞춘 실시간 오디오 합성",
+      "프롬프트로 이야기 전개를 조종하는 스토리텔링 엔진",
+      "UGC 월드 공유 플랫폼"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-r1-720p-real-time-video-api-partner-program",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-02-1",
+    "service": "fal.ai",
+    "date": "2026.03.02",
+    "kind": "모델",
+    "title": "HeyGen 모델 fal 제공 시작",
+    "summary": "말하는 아바타, 자동 영상 생성, 다국어 립싱크를 지원하는 HeyGen 모델을 fal에서 쓸 수 있게 됐어요.",
+    "url": "https://blog.fal.ai/heygen-models-are-now-available-on-fal/",
+    "source": "notice"
+  }
+]

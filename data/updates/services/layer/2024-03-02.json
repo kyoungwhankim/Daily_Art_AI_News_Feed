@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-03-02-1",
+    "service": "layer",
+    "date": "2024.03.02",
+    "kind": "기능",
+    "title": "SDXL 스케치 지원·프롬프트 길이 변경",
+    "summary": "SDXL 스케치 입력을 지원하고 프롬프트 길이 제한이 바뀌었으며 생성(Forge) 품질이 좋아졌어요.",
+    "url": "https://layer.ai/changelog/page/9#2024-03-02",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-06-12-1",
+    "service": "nvidia-studio",
+    "date": "2025.06.12",
+    "kind": "모델",
+    "title": "TensorRT로 Stable Diffusion 3.5 가속",
+    "summary": "양자화와 TensorRT 최적화로 Stable Diffusion 3.5 Large의 VRAM 사용을 줄이고 RTX GPU에서 더 빠르게 돌릴 수 있게 됐어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-paris-tensorrt-rtx-nim-microservices/",
+    "source": "notice"
+  }
+]

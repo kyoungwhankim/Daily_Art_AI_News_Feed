@@ -1,0 +1,31 @@
+[
+  {
+    "id": "hailuo-2024-08-31-1",
+    "service": "hailuo",
+    "date": "2024.08.31",
+    "kind": "모델",
+    "title": "MiniMax 첫 영상 생성 모델 video-01 공개",
+    "summary": "MiniMax가 첫 AI 네이티브 영상 생성 모델 video-01을 공식 출시했어요. 720p·25fps 고화질에 영화 같은 카메라 움직임을 지원해요.",
+    "details": [
+      "텍스트→영상, 이미지→영상 두 가지 모드",
+      "현재 최대 6초 영상 생성, 다음 버전은 10초 예정"
+    ],
+    "url": "https://www.minimax.io/news/video-01",
+    "source": "notice"
+  },
+  {
+    "id": "hailuo-2024-08-31-2",
+    "service": "hailuo",
+    "date": "2024.08.31",
+    "kind": "API",
+    "title": "Video-01 영상 생성 API 정식 출시",
+    "summary": "MiniMax 오픈 플랫폼에서 video-01 영상 생성 API를 정식으로 열었어요. 텍스트·이미지로 720p·25fps 영상을 비동기 작업 방식으로 만들 수 있어요.",
+    "details": [
+      "작업 생성 후 task_id로 상태 조회",
+      "완료 시 file_id로 File API에서 다운로드",
+      "결과 URL은 9시간 동안 유효"
+    ],
+    "url": "https://www.minimax.io/news/video-generation-api",
+    "source": "notice"
+  }
+]

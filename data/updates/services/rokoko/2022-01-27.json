@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2022-01-27-1",
+    "service": "rokoko",
+    "date": "2022.01.27",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.0.1 첫 마이너 업데이트",
+    "summary": "첫 마이너 업데이트로 뷰포트 렌더링 품질(그림자·AO)과 액터 라벨 표시, Boost Mode 표시 등이 개선됐어요.",
+    "details": [
+      "선택한 액터 위에 색상 라벨 표시",
+      "그림자·앰비언트 오클루전 등 3D 뷰포트 렌더링 개선",
+      "Smartsuit Pro II Boost Mode 상태 확인·전환"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4418477799057-Rokoko-Studio-2-0-1",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-06-17-1",
+    "service": "elevenlabs",
+    "date": "2025.06.17",
+    "kind": "API",
+    "title": "Studio 프로젝트 JSON 초기화",
+    "summary": "from_content_json으로 구조화된 JSON 내용을 넣어 Studio 프로젝트를 만들 수 있고, 시뮬레이션 대화에 동적 변수가 지원돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/6/17",
+    "source": "dev"
+  }
+]

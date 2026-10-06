@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-18-1",
+    "service": "comfyui",
+    "date": "2026.08.18",
+    "kind": "연동",
+    "title": "Comfy MCP 로컬 버전 오픈소스 공개",
+    "summary": "Claude·Cursor·Codex 같은 에이전트가 내 PC의 ComfyUI와 모델, 커스텀 노드로 워크플로를 만들고 실행하는 로컬 Comfy MCP를 오픈소스로 공개했어요.",
+    "url": "https://blog.comfy.org/p/open-sourcing-comfy-mcp-on-local",
+    "source": "notice"
+  }
+]

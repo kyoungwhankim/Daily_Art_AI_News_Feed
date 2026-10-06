@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2026-07-17-1",
+    "service": "gigapixel",
+    "date": "2026.07.17",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.3.2: JXL 지원과 안정성 개선",
+    "summary": "JXL 파일을 지원하고 HEIC 관련 충돌, Face Recovery v3 렌더링, 설치 프로그램 문제를 고쳤어요.",
+    "details": [
+      "v1.3.3(7/27): 내보내기 폴더 기억, 각종 충돌 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-3-2-1-3-3/104057",
+    "source": "notice"
+  }
+]

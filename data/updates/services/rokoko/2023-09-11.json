@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2023-09-11-1",
+    "service": "rokoko",
+    "date": "2023.09.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.2, Intel Mac 지원과 Command API 확장",
+    "summary": "Intel Mac을 다시 지원하고, Command API 명령이 늘어 Unreal·Unity에서 Studio를 제어할 수 있어요. 임포트 캐릭터에 Face Capture도 적용돼요.",
+    "details": [
+      "Intel 기반 Mac 지원",
+      "UE4/UE5 A-포즈 자동 인식, UE5 A-Pose 내보내기",
+      "ARKit 블렌드셰이프 캐릭터에 Face Capture",
+      "Command API 라이브스트림·재생 명령 추가"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/18467538187409-Rokoko-Studio-2-4-2",
+    "source": "dev"
+  }
+]

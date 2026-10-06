@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-01-21-1",
+    "service": "figma-ai",
+    "date": "2026.01.21",
+    "kind": "API",
+    "title": "Discovery API로 사용자 AI 프롬프트 조회",
+    "summary": "Governance+ Enterprise 플랜은 Discovery API로 Figma 디자인 AI 도구와 Figma Make에 입력된 사용자 프롬프트 텍스트를 가져올 수 있어요.",
+    "url": "https://developers.figma.com/docs/rest-api/changelog/#2026-01-21",
+    "source": "dev"
+  }
+]

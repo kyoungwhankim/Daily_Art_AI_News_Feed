@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-13-1",
+    "service": "runway",
+    "date": "2026.07.13",
+    "kind": "API",
+    "title": "Runway Dev에 Seedream 5.0 Lite 제공",
+    "summary": "Seedream 5.0 Lite를 Runway Dev에서 이미지당 4크레딧으로 쓸 수 있어요. Seedream 5.0 Pro와 같은 텍스트 투 이미지 엔드포인트를 사용해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

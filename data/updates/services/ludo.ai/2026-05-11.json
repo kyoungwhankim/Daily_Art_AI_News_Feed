@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-05-11-1",
+    "service": "ludo.ai",
+    "date": "2026.05.11",
+    "kind": "기능",
+    "title": "생성 대기열 실시간 진행 표시·병렬 생성",
+    "summary": "생성이 새 대기열로 처리돼 진행 상황을 실시간으로 볼 수 있고, Pro·Studio 플랜은 여러 생성을 동시에 돌릴 수 있어요.",
+    "url": "https://ludo.ai/whats-new#generate-more-at-once-with-live-progress",
+    "source": "notice"
+  }
+]

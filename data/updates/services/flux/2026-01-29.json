@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-01-29-1",
+    "service": "flux",
+    "date": "2026.01.29",
+    "kind": "기능",
+    "title": "FLUX.2 [flex] 최대 3배 속도 향상",
+    "summary": "FLUX.2 [flex]가 품질은 그대로 두고 최대 3배 빨라졌어요. 타이포그래피·프롬프트 반영·세밀한 제어도 변함없어요.",
+    "url": "https://docs.bfl.ai/release-notes#january-29-2026",
+    "source": "dev"
+  }
+]

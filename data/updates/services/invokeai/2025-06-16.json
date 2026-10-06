@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-06-16-1",
+    "service": "invokeai",
+    "date": "2025.06.16",
+    "kind": "기능",
+    "title": "Invoke 5.15.0: AI Toolkit FLUX LoRA 지원",
+    "summary": "Invoke 5.15.0에서 AI Toolkit으로 만든 FLUX LoRA를 지원하고, SDXL IP Adapter Plus를 스타터 모델에 추가했어요. 갤러리는 생성 날짜로도 검색돼요.",
+    "url": "https://invoke.ai/releases/version/v5-15-0/",
+    "source": "notice"
+  }
+]

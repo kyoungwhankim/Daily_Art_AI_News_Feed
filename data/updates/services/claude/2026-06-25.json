@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-06-25-1",
+    "service": "claude",
+    "date": "2026.06.25",
+    "kind": "정책",
+    "title": "Remote Control용 신뢰 기기(Trusted Devices)",
+    "summary": "Team·Enterprise 관리자가 로컬 Claude Code 세션을 원격으로 보거나 조작하기 전에 기기 인증을 요구할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-06-25-2",
+    "service": "claude",
+    "date": "2026.06.25",
+    "kind": "종료",
+    "title": "Claude Opus 4.7 빠른 모드 지원 종료 예고",
+    "summary": "Opus 4.7의 fast 모드가 2026년 7월 24일 제거될 예정이에요. Opus 4.8 빠른 모드로 옮기길 권장해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-25-2026",
+    "source": "dev"
+  }
+]

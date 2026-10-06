@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-03-06-1",
+    "service": "layer",
+    "date": "2026.03.06",
+    "kind": "모델",
+    "title": "LTX Video 2.3·일괄 프롬프트 생성",
+    "summary": "LTX Video 2.3 모델과 일괄 AI 프롬프트 생성, 노드 그룹, 워크플로 실시간 진행 표시가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/2#2026-03-06",
+    "source": "notice"
+  }
+]

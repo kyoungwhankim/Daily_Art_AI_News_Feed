@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2025-12-15-1",
+    "service": "magnific",
+    "date": "2025.12.15",
+    "kind": "API",
+    "title": "AI Skin Enhancer API(Creative·Faithful·Flexible)",
+    "summary": "인물 사진의 피부를 AI로 보정하는 Skin Enhancer 엔드포인트를 Creative·Faithful·Flexible 세 모드로 추가했어요.",
+    "details": [
+      "POST /v1/ai/skin-enhancer/creative",
+      "POST /v1/ai/skin-enhancer/faithful",
+      "POST /v1/ai/skin-enhancer/flexible"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#december-15-2025",
+    "source": "dev"
+  }
+]

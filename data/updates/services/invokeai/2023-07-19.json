@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-07-19-1",
+    "service": "invokeai",
+    "date": "2023.07.19",
+    "kind": "앱",
+    "title": "InvokeAI 3.0.0: ControlNet·노드 기반으로 대개편",
+    "summary": "InvokeAI 3.0.0은 2.3.5 이후 기능과 사용성을 크게 끌어올린 메이저 릴리스예요. ControlNet 인터페이스, Dynamic Prompts, SDXL 예비 지원 등이 들어갔어요.",
+    "details": [
+      "ControlNet으로 인물 자세 등 정밀 제어",
+      "Dynamic Prompts로 프롬프트 조합 생성",
+      "Stable Diffusion XL 예비 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-3-0-0/",
+    "source": "notice"
+  }
+]

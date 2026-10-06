@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-09-10-1",
+    "service": "claude",
+    "date": "2024.09.10",
+    "kind": "기능",
+    "title": "Developer Console Workspaces",
+    "summary": "프로젝트별로 지출·속도 제한을 정하고 API 키를 묶어 사용량과 권한을 관리하는 Workspaces가 Console에 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10th-2024",
+    "source": "dev"
+  }
+]

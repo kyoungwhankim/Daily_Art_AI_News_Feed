@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-01-16-1",
+    "service": "comfyui",
+    "date": "2026.01.16",
+    "kind": "연동",
+    "title": "ComfyUI, WAN 2.6 Reference-to-Video",
+    "summary": "참조 영상 1~2개에서 움직임·카메라·스타일을 배워 새 영상을 만드는 Alibaba WAN 2.6 Reference-to-Video를 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/wan26-reference-to-video",
+    "source": "notice"
+  }
+]

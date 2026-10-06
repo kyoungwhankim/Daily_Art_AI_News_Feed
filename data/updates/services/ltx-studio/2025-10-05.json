@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-10-05-1",
+    "service": "ltx-studio",
+    "date": "2025.10.05",
+    "kind": "모델",
+    "title": "LTX Studio에 Nano Banana(Gemini Flash) 통합",
+    "summary": "Google의 Nano Banana(Gemini Flash Image)를 LTX Studio에 통합해 '거의 맞는' 이미지를 대화로 다듬어 원하는 결과에 맞출 수 있어요.",
+    "url": "https://ltx.io/blog/nano-banana",
+    "source": "notice"
+  }
+]

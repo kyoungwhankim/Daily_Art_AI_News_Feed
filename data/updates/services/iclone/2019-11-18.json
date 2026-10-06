@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2019-11-18-1",
+    "service": "iclone",
+    "date": "2019.11.18",
+    "kind": "앱",
+    "title": "iClone 7.7, Digital Human Shader 도입",
+    "summary": "SSS와 Micro Normal을 쓰는 새 Digital Human Shader로 실시간 렌더 품질이 좋아졌어요. 조명 모양, 직교 카메라, 클립 스케일 등도 추가됐어요.",
+    "details": [
+      "머리·몸·눈·치아·헤어용 Digital Human Shader",
+      "튜브·큐브 등 조명 모양과 텍스처",
+      "Preview 카메라 직교 투영",
+      "그림자·스테레오 개별 설정"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

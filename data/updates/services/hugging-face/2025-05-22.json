@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-05-22-1",
+    "service": "hugging-face",
+    "date": "2025.05.22",
+    "kind": "기능",
+    "title": "Papers에 AI 한 줄 요약 추가",
+    "summary": "Daily Papers의 각 논문에 AI가 만든 한 문장 초록 요약이 붙어, 최신 연구를 훨씬 빠르게 훑어볼 수 있어요.",
+    "url": "https://huggingface.co/changelog/paper-ai-summary",
+    "source": "notice"
+  }
+]

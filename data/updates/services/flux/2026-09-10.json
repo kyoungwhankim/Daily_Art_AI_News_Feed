@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-09-10-1",
+    "service": "flux",
+    "date": "2026.09.10",
+    "kind": "API",
+    "title": "FLUX 3 Video 2K·4K 출력 지원",
+    "summary": "flux-3-video에서 qhd(2K)·uhd(4K) 해상도를 바로 고를 수 있어 별도 업스케일 없이 한 번에 고해상도 영상을 받을 수 있어요.",
+    "details": [
+      "qhd 2560×1440, uhd 3840×2176(16:9)",
+      "t2v·i2v 초당 $0.40(2K)/$0.80(4K)",
+      "draft_enhance에서도 2K·4K 지원"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#september-10-2026",
+    "source": "dev"
+  }
+]

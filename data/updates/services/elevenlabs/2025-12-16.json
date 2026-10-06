@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-12-16-1",
+    "service": "elevenlabs",
+    "date": "2025.12.16",
+    "kind": "연동",
+    "title": "Lovable에 ElevenLabs 통합",
+    "summary": "Lovable에서 ElevenLabs의 TTS·STT·Agents·Music·SFX를 써서 실시간 오디오 앱을 쉽게 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-the-elevenlabs-lovable-integration",
+    "source": "notice"
+  }
+]

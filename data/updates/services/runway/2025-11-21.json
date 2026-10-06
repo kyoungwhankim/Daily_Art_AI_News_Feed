@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-11-21-1",
+    "service": "runway",
+    "date": "2025.11.21",
+    "kind": "기능",
+    "title": "Workflows에 오디오·업스케일 노드 추가",
+    "summary": "Workflows에 오디오 노드와 영상 업스케일 노드, 새 추천 워크플로 3종이 추가됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

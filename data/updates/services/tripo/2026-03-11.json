@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2026-03-11-1",
+    "service": "tripo",
+    "date": "2026.03.11",
+    "kind": "모델",
+    "title": "Tripo v3.1·P1.0 Smart Mesh·Rig v2.5 출시",
+    "summary": "최대 200만 폴리곤의 고품질 생성 모델 Tripo v3.1과 약 2초 만에 깔끔한 토폴로지를 만드는 Smart Mesh 모델 P1.0이 나왔어요. Rig v2.5도 추가됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-5-2026-03-11",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-06-25-1",
+    "service": "runway",
+    "date": "2025.06.25",
+    "kind": "기능",
+    "title": "Gen-4 References 객체 일관성 개선",
+    "summary": "개선된 Gen-4 References가 객체 일관성과 프롬프트 충실도를 크게 높였어요. 모든 사용자가 쓸 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

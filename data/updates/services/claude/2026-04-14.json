@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-14-1",
+    "service": "claude",
+    "date": "2026.04.14",
+    "kind": "종료",
+    "title": "Claude Sonnet 4·Opus 4 지원 종료 예고",
+    "summary": "Sonnet 4와 Opus 4가 2026년 6월 15일 API에서 종료될 예정이에요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
+    "source": "dev"
+  }
+]

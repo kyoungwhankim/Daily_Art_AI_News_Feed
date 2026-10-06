@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2025-11-04-1",
+    "service": "tripo",
+    "date": "2025.11.04",
+    "kind": "API",
+    "title": "Multiview-to-model, v3.0 지원",
+    "summary": "Multiview-to-model이 Tripo v3.0(Standard·Ultra)을 지원하게 됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-2-2025-11-04",
+    "source": "dev"
+  }
+]

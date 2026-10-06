@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-02-23-1",
+    "service": "scenario",
+    "date": "2026.02.23",
+    "kind": "모델",
+    "title": "Tripo 3.0·Recraft v4·LTX 영상 모델 추가",
+    "summary": "PBR·쿼드 메시를 지원하는 Tripo 3.0과 Recraft v4, LTX 영상 모델이 추가되고 워크플로가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/webapp-release-2-0-3-new-models-workflow-controls-canvas-improvements",
+    "source": "notice"
+  }
+]

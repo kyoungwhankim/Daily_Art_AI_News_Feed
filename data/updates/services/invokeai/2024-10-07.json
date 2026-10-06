@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2024-10-07-1",
+    "service": "invokeai",
+    "date": "2024.10.07",
+    "kind": "기능",
+    "title": "Invoke 5.1.0: 태블릿 필압 지원과 GGUF FLUX",
+    "summary": "Invoke 5.1.0에서 캔버스가 드로잉 태블릿·터치 입력과 필압을 지원하고, GGUF 형식 FLUX 모델을 쓸 수 있게 됐어요.",
+    "details": [
+      "마우스 가운데 버튼 패닝",
+      "Apple Pencil 지원 개선",
+      "레이어·캔버스를 bbox로 자르기",
+      "새 세션으로 설정 초기화"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-1-0/",
+    "source": "notice"
+  }
+]

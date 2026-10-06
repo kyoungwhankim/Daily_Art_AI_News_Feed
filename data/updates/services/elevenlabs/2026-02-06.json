@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-02-06-1",
+    "service": "elevenlabs",
+    "date": "2026.02.06",
+    "kind": "API",
+    "title": "AI 코딩 에이전트용 ElevenLabs Agent Skills",
+    "summary": "API 키 설정, 에이전트, STT, TTS, 음악, 효과음 6가지 스킬로 AI 코딩 도구가 ElevenLabs 기능을 쉽게 쓰도록 했어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agent-skills",
+    "source": "dev"
+  }
+]

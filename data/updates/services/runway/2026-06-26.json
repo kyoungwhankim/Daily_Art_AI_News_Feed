@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-06-26-1",
+    "service": "runway",
+    "date": "2026.06.26",
+    "kind": "API",
+    "title": "Runway Dev에 Seedance 2.0 Mini 추가",
+    "summary": "가장 가벼운 Seedance 2.0 Mini를 API로 쓸 수 있어요. 텍스트·이미지·영상 투 비디오와 키프레임, 레퍼런스, 생성 오디오를 지원해요.",
+    "details": [
+      "4–15초, 480p·720p",
+      "초당 16크레딧, 최소 64크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedance-20-mini-on-runway-dev",
+    "source": "dev"
+  }
+]

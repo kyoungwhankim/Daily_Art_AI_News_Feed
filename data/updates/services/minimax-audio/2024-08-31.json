@@ -1,0 +1,16 @@
+[
+  {
+    "id": "minimax-audio-2024-08-31-1",
+    "service": "minimax-audio",
+    "date": "2024.08.31",
+    "kind": "모델",
+    "title": "MiniMax 음성 모델 Speech-01·음악 모델 Music-01",
+    "summary": "수백만 시간 음성으로 학습해 여러 감정을 표현하는 음성 생성 모델 Speech-01과, 반주와 보컬을 함께 만드는 음악 모델 Music-01을 공개했어요.",
+    "details": [
+      "Speech-01: 다감정 초현실 음성 생성",
+      "Music-01: 반주·보컬 동시 생성"
+    ],
+    "url": "https://www.minimax.io/news/speech-01",
+    "source": "notice"
+  }
+]

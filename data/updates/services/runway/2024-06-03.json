@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-06-03-1",
+    "service": "runway",
+    "date": "2024.06.03",
+    "kind": "기능",
+    "title": "Text to Speech 최대 10,000자",
+    "summary": "Text to Speech가 최대 10,000자까지 생성할 수 있게 늘어났어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

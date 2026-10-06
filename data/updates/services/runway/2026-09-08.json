@@ -1,0 +1,30 @@
+[
+  {
+    "id": "runway-2026-09-08-1",
+    "service": "runway",
+    "date": "2026.09.08",
+    "kind": "연동",
+    "title": "Premiere Pro·After Effects용 Runway 플러그인 출시",
+    "summary": "Adobe Premiere Pro와 After Effects 패널에서 Runway의 전체 모델 라인업으로 이미지·영상을 생성하고 Aleph 2로 타임라인 영상을 바로 리스타일할 수 있어요.",
+    "details": [
+      "macOS·Windows 무료 다운로드, 기존 유료 플랜 크레딧 사용",
+      "생성 결과를 컴프·시퀀스에 바로 배치"
+    ],
+    "url": "https://runway.com/news/company-news/runway-for-adobe",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-09-08-2",
+    "service": "runway",
+    "date": "2026.09.08",
+    "kind": "API",
+    "title": "Runway Dev에 GPT Image 2.5 Flare·Sunburst 추가",
+    "summary": "OpenAI GPT Image 2.5 Flare와 Sunburst를 Runway Dev API에서 쓸 수 있어요. 최대 16장 레퍼런스와 1K·2K·4K 해상도를 지원하고 Sunburst는 투명 배경도 돼요.",
+    "details": [
+      "프롬프트 최대 32,000자, 30가지 화면비",
+      "quality low~max 5단계, 이미지당 1–76크레딧"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#gpt-image-25-on-runway-dev",
+    "source": "dev"
+  }
+]

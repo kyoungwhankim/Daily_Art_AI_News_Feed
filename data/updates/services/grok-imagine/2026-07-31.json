@@ -1,0 +1,15 @@
+[
+  {
+    "id": "grok-imagine-2026-07-31-1",
+    "service": "grok-imagine",
+    "date": "2026.07.31",
+    "kind": "API",
+    "title": "grok-imagine-video-1.5 텍스트·이미지·레퍼런스-투-비디오 지원",
+    "summary": "grok-imagine-video-1.5가 텍스트-투-비디오, 이미지-투-비디오, 레퍼런스-투-비디오(프리셋 음성 선택 가능)를 지원하고 T2V·I2V는 네이티브 1080p로 출력해요.",
+    "details": [
+      "텍스트-투-비디오는 내부적으로 텍스트-투-이미지 후 이미지-투-비디오로 처리"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes#grok-imagine-video-15-modalities",
+    "source": "dev"
+  }
+]

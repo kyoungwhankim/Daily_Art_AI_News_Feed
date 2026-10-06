@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-08-13-1",
+    "service": "meshy",
+    "date": "2025.08.13",
+    "kind": "모델",
+    "title": "Meshy 5 API 정식(stable) 전환",
+    "summary": "Text to 3D와 Image to 3D의 meshy-5 모델이 안정 버전이 돼 품질과 일관성이 좋아졌어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2025",
+    "source": "dev"
+  }
+]

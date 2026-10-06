@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-06-1",
+    "service": "scenario",
+    "date": "2023.11.06",
+    "kind": "API",
+    "title": "controlnet-img2img·qualityBoost 지원 예고",
+    "summary": "GPU 증설 속도를 높이고 magic-prompt 구조 모드를 개선했어요. 프롬프트 최대 길이가 2048자로 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-4-0-novembre-06th-2023",
+    "source": "dev"
+  }
+]

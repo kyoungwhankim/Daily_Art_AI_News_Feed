@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fal.ai-2026-03-11-1",
+    "service": "fal.ai",
+    "date": "2026.03.11",
+    "kind": "API",
+    "title": "API 응답에 error_type 추가·앱 목록 보기",
+    "summary": "오류 응답에 기계가 읽을 수 있는 error_type 필드가 추가돼 재시도 로직을 정교하게 짤 수 있어요. 분석 간격 선택·차트 확대, 앱 목록 뷰, 종료 유예 시간 설정도 나왔어요.",
+    "details": [
+      "error_type: request_timeout, runner_scheduling_failure 등",
+      "termination_grace_period_seconds 파라미터 (최대 30초)",
+      "분석 Interval 선택과 드래그 확대"
+    ],
+    "url": "https://fal.ai/docs/changelog#march-11-2026",
+    "source": "dev"
+  }
+]

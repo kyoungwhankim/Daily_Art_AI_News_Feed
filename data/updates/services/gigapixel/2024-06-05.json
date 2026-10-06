@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2024-06-05-1",
+    "service": "gigapixel",
+    "date": "2024.06.05",
+    "kind": "앱",
+    "title": "Gigapixel v7.2.0: Recovery 고속 모드와 CMYK 지원",
+    "summary": "20배 이상 빠른 Recovery Speed 모드와 여러 부분을 미리 보는 Multi-Preview가 추가됐어요. CMYK 파일 입력과 CMYK TIFF 출력도 지원해요.",
+    "details": [
+      "비교 도구에서 모델 교체·제외, 3분할 보기",
+      "Low Resolution v2 결과 개선",
+      "Adobe RGB·ProPhoto 색 정확도 향상"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-2-0/70675",
+    "source": "notice"
+  }
+]

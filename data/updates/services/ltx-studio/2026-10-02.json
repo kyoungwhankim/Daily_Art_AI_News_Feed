@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2026-10-02-1",
+    "service": "ltx-studio",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "LTX for Post-Production: Alpha Gen 등 6가지 기능",
+    "summary": "합성·색·디테일·해상도용 6가지 새·개선 기능을 묶은 LTX for Post-Production을 공개했어요. 머리카락과 연기까지 살린 알파 매트를 만드는 Alpha Gen이 새로 추가됐어요.",
+    "details": [
+      "Alpha Gen, Layout to Render",
+      "HDR Native, SDR to HDR(업그레이드)",
+      "Native Resolution, Refine & Restore"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

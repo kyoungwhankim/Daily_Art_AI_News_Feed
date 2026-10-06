@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-11-06-1",
+    "service": "hugging-face",
+    "date": "2025.11.06",
+    "kind": "기능",
+    "title": "문서에 llms.txt·Markdown 제공 (AI 에이전트용)",
+    "summary": "Hugging Face Docs가 llms.txt·llms-full.txt를 제공하고, 에이전트가 페이지를 가져가면 Markdown 버전이 자동으로 나가 토큰을 아낄 수 있어요.",
+    "url": "https://huggingface.co/changelog/docs-llms-txt",
+    "source": "notice"
+  }
+]

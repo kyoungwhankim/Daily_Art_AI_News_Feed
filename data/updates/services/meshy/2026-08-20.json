@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-20-1",
+    "service": "meshy",
+    "date": "2026.08.20",
+    "kind": "API",
+    "title": "Multi-Color Print 스타일·Creative Lab 배경 제거",
+    "summary": "Multi-Color Print에 realistic/cartoon style이 생겼고, Creative Lab prototype 단계 전부에 remove_background가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

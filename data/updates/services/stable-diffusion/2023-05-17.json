@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-05-17-1",
+    "service": "stable-diffusion",
+    "date": "2023.05.17",
+    "kind": "앱",
+    "title": "DreamStudio 오픈소스판 StableStudio 공개",
+    "summary": "Stable Diffusion용 웹앱 DreamStudio를 StableStudio라는 이름의 오픈소스로 공개했어요. 커뮤니티와 함께 생성형 AI UI를 발전시키겠다는 취지예요.",
+    "url": "https://stability.ai/news-updates/stablestudio-open-source-community-driven-future-dreamstudio-release",
+    "source": "notice"
+  }
+]

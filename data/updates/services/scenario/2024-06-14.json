@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-06-14-1",
+    "service": "scenario",
+    "date": "2024.06.14",
+    "kind": "기능",
+    "title": "업스케일러를 Enhancer로 개편",
+    "summary": "한 번에 최대 16배까지 키우는 새 업스케일러가 나왔어요. 다양한 스타일과 프리셋으로 보정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-59-from-upscaler-to-enhancer",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-01-27-1",
+    "service": "comfyui",
+    "date": "2026.01.27",
+    "kind": "모델",
+    "title": "ComfyUI, Z-Image(비증류) 출시 당일 지원",
+    "summary": "Z-Image 계열의 기반이 되는 비증류 원본 체크포인트 Z-Image를 ComfyUI에서 출시 당일 지원해 파인튜닝과 세밀한 제어가 가능해요.",
+    "details": [
+      "v0.11.0: Anima 모델 지원",
+      "Flux2 LoKr LoRA, LTX2 Tiny VAE",
+      "Magnific·Hunyuan3D·WaveSpeed API 노드"
+    ],
+    "url": "https://blog.comfy.org/p/z-image-day-0-support-in-comfyui",
+    "source": "notice"
+  }
+]

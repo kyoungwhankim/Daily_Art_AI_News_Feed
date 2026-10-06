@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-09-21-1",
+    "service": "synthesia",
+    "date": "2026.09.21",
+    "kind": "기능",
+    "title": "Synthesia 장면별 아바타 애니메이션 미리보기",
+    "summary": "에디터에서 한 장면만 아바타 애니메이션까지 미리 볼 수 있어 전체 영상을 다시 생성하지 않고 연기를 검토할 수 있어요.",
+    "url": "https://www.synthesia.io/updates/preview-individual-scenes-with-fully-animated-avatars",
+    "source": "notice"
+  }
+]

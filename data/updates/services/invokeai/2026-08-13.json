@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2026-08-13-1",
+    "service": "invokeai",
+    "date": "2026.08.13",
+    "kind": "앱",
+    "title": "InvokeAI 6.13.8: 원격 코드 실행 취약점 보안 패치",
+    "summary": "InvokeAI 6.13.8은 커스텀 노드 폴더 파일을 덮어써 코드를 실행할 수 있는 취약점과 내부망 요청 위조 취약점을 막은 보안 패치예요. 업그레이드가 강력히 권장돼요.",
+    "url": "https://invoke.ai/releases/version/v6-13-8/",
+    "source": "notice"
+  }
+]

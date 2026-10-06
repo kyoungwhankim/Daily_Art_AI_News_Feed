@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2025-08-20-1",
+    "service": "elevenlabs",
+    "date": "2025.08.20",
+    "kind": "API",
+    "title": "Eleven v3 (alpha) API 공개",
+    "summary": "Eleven v3 알파를 API에서 모델 ID eleven_v3로 쓸 수 있고 Text to Dialogue API도 모두에게 열렸어요. Eleven Music API는 유료 사용자 모두에게 제공돼요.",
+    "details": [
+      "eleven_v3 TTS API 지원",
+      "Text to Dialogue API 전체 공개",
+      "Eleven Music API 유료 플랜 개방",
+      "네덜란드·싱가포르 Global TTS API 프리뷰"
+    ],
+    "url": "https://elevenlabs.io/blog/eleven-v3-alpha-now-available-in-the-api",
+    "source": "notice"
+  }
+]

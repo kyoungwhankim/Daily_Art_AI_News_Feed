@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2026-08-13-1",
+    "service": "gigapixel",
+    "date": "2026.08.13",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.3.4: Wonder 3.5 추가",
+    "summary": "더 선명하고 반복 패턴이 줄어든 Wonder 3.5가 로컬·클라우드로 추가됐어요. 저해상도·압축 사진에서 디테일과 글자 복원이 좋아졌어요.",
+    "details": [
+      "내보내기 시 Topaz Labs 워터마크 옵션(기본 꺼짐)",
+      "출처(provenance) 메타데이터 태그 지원"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-3-4/104403",
+    "source": "notice"
+  }
+]

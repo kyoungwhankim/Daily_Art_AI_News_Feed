@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-05-20-1",
+    "service": "invokeai",
+    "date": "2024.05.20",
+    "kind": "기능",
+    "title": "Invoke 4.2.2: 워크플로 실행 취소와 이미지에서 불러오기",
+    "summary": "Invoke 4.2.2에서 워크플로 편집기에 실행 취소/다시 실행이 생겼고, Invoke로 만든 모든 이미지에 그래프가 담겨 어떤 이미지에서든 워크플로를 불러올 수 있어요.",
+    "url": "https://invoke.ai/releases/version/v4-2-2/",
+    "source": "notice"
+  }
+]

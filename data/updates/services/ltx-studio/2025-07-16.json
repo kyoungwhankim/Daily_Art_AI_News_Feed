@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2025-07-16-1",
+    "service": "ltx-studio",
+    "date": "2025.07.16",
+    "kind": "모델",
+    "title": "LTX-Video 0.9.8: 60초 생성과 IC-LoRA Detailer",
+    "summary": "LTX-Video 0.9.8에서 최대 60초 영상 생성을 지원하고 2B 디스틸 모델과 디테일을 살리는 IC-LoRA Detailer를 공개했어요.",
+    "details": [
+      "FP8 양자화 가중치",
+      "2B·13B 풀 파인튜닝·LoRA 학습 지원",
+      "depth·pose·canny 컨트롤 LoRA"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

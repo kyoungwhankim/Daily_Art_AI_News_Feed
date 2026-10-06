@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-31-1",
+    "service": "scenario",
+    "date": "2023.10.31",
+    "kind": "API",
+    "title": "SDXL 조합 복사, 새 추론 유형 준비",
+    "summary": "sd-xl-composition을 복사해 나만의 버전을 만들 수 있고 reference 등 새 추론 유형을 준비했어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-3-0-october-31th-2023",
+    "source": "dev"
+  }
+]

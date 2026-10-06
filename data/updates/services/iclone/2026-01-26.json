@@ -1,0 +1,19 @@
+[
+  {
+    "id": "iclone-2026-01-26-1",
+    "service": "iclone",
+    "date": "2026.01.26",
+    "kind": "앱",
+    "title": "iClone 8.7, 노드 기반 Motion Planning 플러그인",
+    "summary": "노드 그래프로 사람 동작 스크립트와 시뮬레이션을 짜는 Motion Planning 플러그인이 나왔어요. Fly Camera, Merge Prop, USD 단위 선택 등도 추가됐어요.",
+    "details": [
+      "Motion Planning 노드 그래프와 재사용 MP Set",
+      "WASD로 움직이는 Fly Camera",
+      "프롭을 단일 메시·머티리얼로 합치는 Merge Prop",
+      "AI Prompt Control 옵션 확장",
+      "USD 내보내기 단위 선택"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

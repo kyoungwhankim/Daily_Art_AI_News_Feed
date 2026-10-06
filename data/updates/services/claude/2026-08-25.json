@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-25-1",
+    "service": "claude",
+    "date": "2026.08.25",
+    "kind": "기능",
+    "title": "Cowork 메모리·편집 가능한 토픽·민감 주제 설정",
+    "summary": "메모리가 채팅과 클라우드 Cowork 전반에서 작동하고, 설정의 Topics에서 기억 항목을 수정·삭제할 수 있어요. 건강·신념 같은 민감 주제는 켜야만 기억돼요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-10-05-1",
+    "service": "suno",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "Suno 앨범 발행 기능",
+    "summary": "여러 곡을 앨범으로 묶어 발행할 수 있고, 발행하면 팔로워에게 푸시 알림이 가요.",
+    "url": "https://suno.com/release-notes/albums",
+    "source": "notice"
+  }
+]

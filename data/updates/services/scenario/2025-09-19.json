@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-19-1",
+    "service": "scenario",
+    "date": "2025.09.19",
+    "kind": "API",
+    "title": "Edit with Prompt에 Seedream 4 지원",
+    "summary": "Edit with prompt API에서 Seedream 4를 쓸 수 있고 업로드 모델 분류가 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/v2-88-0-seedream-4-with-edit-with-prompt",
+    "source": "dev"
+  }
+]

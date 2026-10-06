@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-15-1",
+    "service": "comfyui",
+    "date": "2026.04.15",
+    "kind": "모델",
+    "title": "ComfyUI, Baidu ERNIE-Image 지원",
+    "summary": "Apache-2.0 라이선스의 8B DiT 텍스트→이미지 모델 ERNIE-Image를 ComfyUI에서 지원해요. 정밀한 글자 렌더링과 내장 프롬프트 보강이 특징이에요.",
+    "url": "https://blog.comfy.org/p/ernie-image-day-0-support",
+    "source": "notice"
+  }
+]

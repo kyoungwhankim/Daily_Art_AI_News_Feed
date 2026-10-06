@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2024-09-16-1",
+    "service": "magnific",
+    "date": "2024.09.16",
+    "kind": "API",
+    "title": "Image Upscaler API 출시",
+    "summary": "AI로 이미지를 2배·4배·8배·16배까지 키우는 Image Upscaler API를 내놓았어요. 해상도와 품질을 함께 끌어올릴 수 있어요.",
+    "details": [
+      "POST /v1/ai/image-upscaler"
+    ],
+    "url": "https://docs.magnific.com/changelog/2024#september-16-2024",
+    "source": "dev"
+  }
+]

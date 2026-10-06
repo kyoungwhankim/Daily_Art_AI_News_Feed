@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ltx-studio-2025-03-05-1",
+    "service": "ltx-studio",
+    "date": "2025.03.05",
+    "kind": "모델",
+    "title": "LTX-Video 0.9.5: 상업적 이용 허용·키프레임·영상 연장",
+    "summary": "LTX-Video 0.9.5부터 OpenRail-M 라이선스로 상업적 이용이 가능해졌어요. 키프레임 조건 지정과 영상 연장 기능도 추가됐어요.",
+    "details": [
+      "더 높은 해상도 지원, VAE 개선",
+      "LTX-Studio 웹 앱과 온라인 데모 함께 공개"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

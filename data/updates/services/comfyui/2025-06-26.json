@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-06-26-1",
+    "service": "comfyui",
+    "date": "2025.06.26",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX.1 Kontext [dev] 출시 당일 지원",
+    "summary": "이미지를 이해하고 편집하는 12B 오픈 모델 FLUX.1 Kontext [dev]를 ComfyUI에서 출시 당일 네이티브로 지원해 로컬에서 생성·편집할 수 있어요.",
+    "url": "https://blog.comfy.org/p/flux1-kontext-dev-day-0-support",
+    "source": "notice"
+  }
+]

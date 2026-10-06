@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2024-12-30-1",
+    "service": "kling",
+    "date": "2024.12.30",
+    "kind": "API",
+    "title": "Virtual Try-On V1.5 모델 출시",
+    "summary": "가상 피팅 API가 V1.5로 전면 업그레이드돼 상의·하의·원피스 단품은 물론 상의+하의 조합 피팅도 지원해요.",
+    "url": "https://kling.ai/document-api/updates/api#12%2F30%2F2024",
+    "source": "dev"
+  }
+]

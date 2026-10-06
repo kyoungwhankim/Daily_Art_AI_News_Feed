@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pixverse-2026-04-07-1",
+    "service": "pixverse",
+    "date": "2026.04.07",
+    "kind": "모델",
+    "title": "PixVerse C1 공개: 영화 제작용 첫 영상 모델",
+    "summary": "영화 제작을 위한 첫 영상 모델 C1을 공개했어요. 액션·VFX 표현, 스토리보드→영상 변환, 레퍼런스 기반 일관성을 갖추고 최대 1080p·15초 오디오 포함 영상을 만들어요.",
+    "details": [
+      "근접 격투·고속 동작의 물리 일관성",
+      "파티클·유체·대기 효과 지원",
+      "API에서 텍스트·이미지→영상, Transition, Fusion 지원"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-introduces-c1-ai-video-model-for-film-production",
+    "source": "notice"
+  }
+]

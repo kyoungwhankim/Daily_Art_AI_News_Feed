@@ -1,0 +1,16 @@
+[
+  {
+    "id": "krea-2026-08-28-1",
+    "service": "krea",
+    "date": "2026.08.28",
+    "kind": "종료",
+    "title": "Wan 3.0 추가와 Veo 2·Veo 3 종료",
+    "summary": "Alibaba의 Wan 3.0 영상 모델을 영상 도구와 API에 추가했어요. 반면 Veo 2와 Veo 3는 종료돼 Veo 3.1·3.1 Lite로 옮겨야 해요.",
+    "details": [
+      "Wan 3.0: 480p·720p·1080p, 레퍼런스 미디어 또는 시작·끝 프레임",
+      "Veo 2·3 API 엔드포인트 사용 중단, 종료 후 410 Gone"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#august-28-2026",
+    "source": "dev"
+  }
+]

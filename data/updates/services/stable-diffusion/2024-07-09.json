@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-07-09-1",
+    "service": "stable-diffusion",
+    "date": "2024.07.09",
+    "kind": "기능",
+    "title": "Stable Assistant에 Search & Replace 추가",
+    "summary": "Stable Image Ultra 기반 챗봇 Stable Assistant에 이미지 속 사물을 다른 것으로 바꾸는 Search & Replace와 Stable Audio 음악 생성이 추가됐어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-releases-stable-assistant-features",
+    "source": "notice"
+  }
+]

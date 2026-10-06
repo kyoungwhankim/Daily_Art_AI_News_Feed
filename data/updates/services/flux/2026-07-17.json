@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2026-07-17-1",
+    "service": "flux",
+    "date": "2026.07.17",
+    "kind": "API",
+    "title": "FLUX Virtual Try-On v2 출시",
+    "summary": "얼굴·정체성 보존과 의류 디테일을 개선한 vto-v2를 내놨어요. 요청 형식은 v1과 같아 경로만 바꾸면 되고, 이제 권장 버전이에요.",
+    "details": [
+      "최대 4MP 입력을 그대로 사용(v1은 2MP)",
+      "엔드포인트 /v1/flux-tools/vto-v2, v1도 계속 제공"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#july-17-2026",
+    "source": "dev"
+  }
+]

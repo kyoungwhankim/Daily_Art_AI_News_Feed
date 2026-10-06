@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-08-09-1",
+    "service": "ltx-studio",
+    "date": "2026.08.09",
+    "kind": "기능",
+    "title": "LTX-2.5 SDR to HDR 자동 변환",
+    "summary": "LTX-2.5가 SDR 영상의 날아간 하이라이트와 뭉개진 그림자를 복원해 진짜 HDR로 바꿔 줘요. 결과는 바로 그레이딩할 수 있는 scene-linear EXR이에요.",
+    "url": "https://ltx.io/blog/sdr-to-hdr",
+    "source": "notice"
+  }
+]

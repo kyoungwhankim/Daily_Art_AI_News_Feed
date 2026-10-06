@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-11-26-1",
+    "service": "comfyui",
+    "date": "2024.11.26",
+    "kind": "모델",
+    "title": "ComfyUI, SD 3.5 Large ControlNet 지원",
+    "summary": "Stability AI의 Stable Diffusion 3.5 Large용 Blur·Canny·Depth ControlNet 모델을 ComfyUI에서 지원해요. 상업·비상업 모두 커뮤니티 라이선스로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/sd3-5-large-controlnet",
+    "source": "notice"
+  }
+]

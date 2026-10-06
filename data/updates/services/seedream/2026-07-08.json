@@ -1,0 +1,18 @@
+[
+  {
+    "id": "seedream-2026-07-08-1",
+    "service": "seedream",
+    "date": "2026.07.08",
+    "kind": "모델",
+    "title": "Seedream 5.0 Pro 공개: 디자인을 이해하는 이미지 모델",
+    "summary": "복잡한 정보 시각화와 픽셀 단위 인터랙티브 편집을 지원하는 Seedream 5.0 Pro가 공개됐어요. 10개 이상 언어의 직접 입력과 고품질 글자 렌더링도 지원해요.",
+    "details": [
+      "데이터·개념·긴 글을 인포그래픽·포스터 레이아웃으로 변환",
+      "점 선택·올가미 선택·스케치·색/재질 교체 등 정밀 편집",
+      "조명·재질·피부 질감의 사실적 표현 강화",
+      "프랑스어·독일어·일본어·한국어·아랍어 등 다국어 렌더링"
+    ],
+    "url": "https://seed.bytedance.com/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro",
+    "source": "notice"
+  }
+]

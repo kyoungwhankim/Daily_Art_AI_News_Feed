@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-08-1",
+    "service": "scenario",
+    "date": "2026.09.08",
+    "kind": "API",
+    "title": "배경 제거 모델·일괄 IP 감지·벡터화 옵션",
+    "summary": "새 배경 제거 모델과 세부 벡터화 옵션, 일괄 IP 감지가 API에 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-133-0",
+    "source": "dev"
+  }
+]

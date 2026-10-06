@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-10-23-1",
+    "service": "magnific",
+    "date": "2025.10.23",
+    "kind": "API",
+    "title": "Magnific Precision V2 업스케일 API",
+    "summary": "Magnific V2로 원본에 충실하게 정밀 업스케일하는 Upscale with Precision 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/image-upscaler-precision-v2"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#october-23-2025",
+    "source": "dev"
+  }
+]

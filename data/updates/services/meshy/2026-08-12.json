@@ -1,0 +1,27 @@
+[
+  {
+    "id": "meshy-2026-08-12-1",
+    "service": "meshy",
+    "date": "2026.08.12",
+    "kind": "모델",
+    "title": "Meshy 7 출시: 이미지 정합도 높인 3D 모델",
+    "summary": "입력 이미지와 생성된 3D 형태가 더 정확히 맞도록 다듬은 새 Image to 3D 모델 Meshy 7을 출시했어요. API에서도 같은 날 meshy-7을 쓸 수 있어요.",
+    "details": [
+      "Image to 3D·Multi-Image to 3D·Retexture API에 ai_model meshy-7 추가",
+      "Image to 3D에 더 세밀한 Ultra 생성(ultra_mode) 추가",
+      "Retexture에 1–4장 멀티뷰 텍스처링(multiview_image_urls) 추가"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-7-image-to-3d-geometry-alignment",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-08-12-2",
+    "service": "meshy",
+    "date": "2026.08.12",
+    "kind": "모델",
+    "title": "Meshy T2 공개: 2초 만에 네이티브 3D 메시 생성",
+    "summary": "이미지 한 장을 평균 2초 만에 깔끔하고 가벼운 멀티파트 메시로 만드는 Meshy T2를 소개했어요. 아이소서피스 추출 대신 flow matching을 써요.",
+    "url": "https://www.meshy.ai/blog/meshy-t2-native-3d-mesh-generation",
+    "source": "notice"
+  }
+]

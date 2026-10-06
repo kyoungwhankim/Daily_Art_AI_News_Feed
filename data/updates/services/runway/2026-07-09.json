@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-07-09-1",
+    "service": "runway",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Agent 안에 Studio 타임라인 편집기 탑재",
+    "summary": "Studio의 타임라인 편집기가 Agent에 들어가 한 대화에서 생성·조립·수정·내보내기까지 할 수 있어요. 트랙에 맞춰 클립 동기화도 맡길 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

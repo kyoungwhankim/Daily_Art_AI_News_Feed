@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-04-04-1",
+    "service": "scenario",
+    "date": "2026.04.04",
+    "kind": "연동",
+    "title": "MCP 시맨틱 검색·에셋 필터",
+    "summary": "MCP에 시맨틱 검색과 여러 유형 필터가 추가돼 에이전트가 에셋을 더 빨리 찾아요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-6-0",
+    "source": "notice"
+  }
+]

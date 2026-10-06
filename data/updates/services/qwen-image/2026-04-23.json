@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2026-04-23-1",
+    "service": "qwen-image",
+    "date": "2026.04.23",
+    "kind": "모델",
+    "title": "qwen-image-2.0-pro 4월 스냅샷 업데이트",
+    "summary": "qwen-image-2.0-pro가 2026-04-22 스냅샷으로 업데이트됐어요. 생성과 편집을 통합한 2.0 시리즈의 최상위 모델로 글자 렌더링과 사실적 질감이 가장 뛰어나요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

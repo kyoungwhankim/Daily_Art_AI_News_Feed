@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-05-14-1",
+    "service": "comfyui",
+    "date": "2026.05.14",
+    "kind": "모델",
+    "title": "ComfyUI, VOID·BiRefNet·Gemma 4 네이티브 지원",
+    "summary": "Netflix의 영상 객체 제거 모델 VOID, 고해상도 배경 분리 BiRefNet, Google의 멀티모달 LLM Gemma 4를 ComfyUI에서 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/new-open-source-models-now-in-comfyui",
+    "source": "notice"
+  }
+]

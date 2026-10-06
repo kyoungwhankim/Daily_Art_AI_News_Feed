@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-07-25-1",
+    "service": "stable-diffusion",
+    "date": "2024.07.25",
+    "kind": "API",
+    "title": "Control Style API 추가",
+    "summary": "입력 이미지의 스타일 요소를 뽑아 프롬프트 기반 새 이미지에 입히는 Control Style 서비스가 추가됐어요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

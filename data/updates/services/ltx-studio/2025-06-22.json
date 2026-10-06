@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-06-22-1",
+    "service": "ltx-studio",
+    "date": "2025.06.22",
+    "kind": "모델",
+    "title": "LTX Studio에 Google Veo 3 통합",
+    "summary": "Google의 Veo 3 영상 모델을 LTX Studio 워크플로 안에서 바로 쓸 수 있게 됐어요.",
+    "url": "https://ltx.io/blog/veo3-integration",
+    "source": "notice"
+  }
+]

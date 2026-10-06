@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-10-01-1",
+    "service": "claude",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "Models API에 모델 계열(line) 필드 추가",
+    "summary": "GET /v1/models 응답에 모델이 속한 계열(opus 등)을 알려 주는 line 필드가 추가돼, ID를 파싱하지 않고 모델을 묶을 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-1-2026",
+    "source": "dev"
+  }
+]

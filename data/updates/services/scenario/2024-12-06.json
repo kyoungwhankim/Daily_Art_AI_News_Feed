@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-12-06-1",
+    "service": "scenario",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "Expand(아웃페인팅) 도구·새 프롬프트 박스",
+    "summary": "어떤 이미지든 바깥으로 확장하는 Expand 도구와 개선된 Prompt Spark 프롬프트 박스가 추가됐어요. Juggernaut 모델도 들어왔어요.",
+    "url": "https://www.scenario.com/changelog/1-75-expand-new-prompt-options-juggernaut-integration",
+    "source": "notice"
+  }
+]

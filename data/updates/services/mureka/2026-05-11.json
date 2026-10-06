@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-05-11-1",
+    "service": "mureka",
+    "date": "2026.05.11",
+    "kind": "API",
+    "title": "이미지·영상 사운드트랙 생성 API",
+    "summary": "이미지나 영상에 맞는 사운드트랙을 만드는 API가 새로 나왔어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

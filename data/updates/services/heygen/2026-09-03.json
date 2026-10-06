@@ -1,0 +1,17 @@
+[
+  {
+    "id": "heygen-2026-09-03-1",
+    "service": "heygen",
+    "date": "2026.09.03",
+    "kind": "API",
+    "title": "HeyGen Professional Voice Clone API와 번역 규칙",
+    "summary": "자체 HeyGen Voice 모델로 20분 이상 녹음을 학습하는 전문 보이스 클론 API를 열고, 브랜드 용어집에 번역 제외·강제 번역 규칙을 추가했어요.",
+    "details": [
+      "POST /v3/models/audio/voices로 보이스 생성·재학습",
+      "44.1kHz WAV 생성과 SSE 스트리밍 TTS",
+      "do_not_translate_terms, forced_translations 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#heygen-professional-voice-clone",
+    "source": "dev"
+  }
+]

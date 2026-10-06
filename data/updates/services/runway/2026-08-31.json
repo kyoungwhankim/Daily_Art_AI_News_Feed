@@ -1,0 +1,15 @@
+[
+  {
+    "id": "runway-2026-08-31-1",
+    "service": "runway",
+    "date": "2026.08.31",
+    "kind": "기능",
+    "title": "Runway Ruby를 Tool Mode 전용 모델로 제공",
+    "summary": "HDR 컬러 그레이딩 모델 Ruby를 Tool Mode 모델 선택기에서 바로 고를 수 있게 됐어요. 외부 영상도 불러와 Ruby로 그레이딩할 수 있어요.",
+    "details": [
+      "API: Ruby·Gen-4.5 HDR 출력에 ACES 1.3/2.0 ACEScg OpenEXR 시퀀스 전달 추가"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

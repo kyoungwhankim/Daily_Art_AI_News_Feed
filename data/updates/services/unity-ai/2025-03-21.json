@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-03-21-1",
+    "service": "unity-ai",
+    "date": "2025.03.21",
+    "kind": "앱",
+    "title": "Unity AI Generators 패키지 첫 출시",
+    "summary": "에디터 안에서 스프라이트·텍스처·머티리얼·애니메이션·사운드 에셋을 만드는 AI Generators 패키지의 첫 프리릴리스(1.0.0-pre.1)가 나왔어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre1---2025-03-21",
+    "source": "dev"
+  }
+]

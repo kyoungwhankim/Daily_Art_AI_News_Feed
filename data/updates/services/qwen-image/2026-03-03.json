@@ -1,0 +1,17 @@
+[
+  {
+    "id": "qwen-image-2026-03-03-1",
+    "service": "qwen-image",
+    "date": "2026.03.03",
+    "kind": "모델",
+    "title": "Qwen-Image-2.0 시리즈(qwen-image-2.0, 2.0-pro) 출시",
+    "summary": "이미지 생성과 편집을 하나로 합친 Qwen-Image-2.0 시리즈가 출시됐어요. 1,000토큰 프롬프트를 지원하는 강화된 글자 렌더링과 더 사실적인 질감이 특징이에요.",
+    "details": [
+      "qwen-image-2.0-pro: 2.0 시리즈 중 최고 글자 렌더링·질감",
+      "qwen-image-2.0: 성능과 속도의 균형을 맞춘 가속 버전",
+      "스냅샷 2026-03-03 버전 함께 제공"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

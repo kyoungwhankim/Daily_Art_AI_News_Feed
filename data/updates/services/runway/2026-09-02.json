@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-09-02-1",
+    "service": "runway",
+    "date": "2026.09.02",
+    "kind": "API",
+    "title": "Runway Dev MCP 출시: 코딩 에이전트가 통합 작업 담당",
+    "summary": "코딩 에이전트가 Runway Dev 연동을 계획·설정·디버깅할 수 있는 호스팅 MCP 서버를 내놨어요. 모델 선택, 요청 스키마 확인, Model Router 구성까지 에이전트가 처리해요.",
+    "url": "https://runway.com/news/company-news/runway-dev-mcp",
+    "source": "dev"
+  }
+]

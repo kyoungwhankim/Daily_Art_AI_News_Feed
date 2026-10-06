@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-11-1",
+    "service": "elevenlabs",
+    "date": "2026.03.11",
+    "kind": "기능",
+    "title": "ElevenCreative Flows, 노드 기반 생성 캔버스",
+    "summary": "이미지·영상·음성·음악·효과음 모델을 노드로 연결해 탐색하고 생성하는 캔버스 Flows가 ElevenCreative에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-flows-in-elevencreative",
+    "source": "notice"
+  }
+]

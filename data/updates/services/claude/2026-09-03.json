@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-09-03-1",
+    "service": "claude",
+    "date": "2026.09.03",
+    "kind": "API",
+    "title": "ant CLI 1.30: ant apply로 리소스를 코드로 관리",
+    "summary": "파일로 정의한 에이전트·환경·스킬·메모리 스토어·배포를 ant apply로 만들고 업데이트할 수 있어요. 잠금 파일로 CI에서도 같은 리소스를 관리해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2026",
+    "source": "dev"
+  }
+]

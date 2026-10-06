@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-12-1",
+    "service": "scenario",
+    "date": "2025.09.12",
+    "kind": "API",
+    "title": "오디오 메타데이터·엔터프라이즈 모델 관리",
+    "summary": "오디오 에셋에 제목·설명·대사 전사가 자동으로 붙어요. 엔터프라이즈 관리자는 모델을 켜고 끌 수 있어요.",
+    "url": "https://www.scenario.com/changelog/v2-86-0-audio-enhancements-and-models-management",
+    "source": "dev"
+  }
+]

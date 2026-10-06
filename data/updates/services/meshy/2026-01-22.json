@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-01-22-1",
+    "service": "meshy",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "Meshy-6 기준 파라미터 정리",
+    "summary": "Meshy-6 Text to 3D Preview에서 art_style이, meshy-4의 enable_pbr가 지원 중단됐어요. Meshy-6에서는 should_remesh 기본값이 false가 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jan-2026",
+    "source": "dev"
+  }
+]

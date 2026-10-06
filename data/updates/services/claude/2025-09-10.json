@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-09-10-1",
+    "service": "claude",
+    "date": "2025.09.10",
+    "kind": "API",
+    "title": "웹 페치 도구 베타·Claude Code Analytics API",
+    "summary": "Claude가 지정한 웹 페이지와 PDF 전체를 가져오는 web fetch 도구 베타와 Claude Code 사용 지표 API가 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-03-17-1",
+    "service": "synthesia",
+    "date": "2026.03.17",
+    "kind": "기능",
+    "title": "Synthesia 외부 화면 녹화를 편집 가능한 영상으로",
+    "summary": "MP4 화면 녹화를 올리면 Synthesia가 자동으로 편집 가능한 영상으로 바꿔 줘요.",
+    "url": "https://www.synthesia.io/updates/turn-external-screen-recordings-into-editable-synthesia-videos",
+    "source": "notice"
+  }
+]

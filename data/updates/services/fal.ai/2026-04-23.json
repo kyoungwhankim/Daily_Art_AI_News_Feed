@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fal.ai-2026-04-23-1",
+    "service": "fal.ai",
+    "date": "2026.04.23",
+    "kind": "기능",
+    "title": "fal Workflow 개선·러너 종료 사유 표시",
+    "summary": "fal Workflow의 모델 검색과 노드 편집이 개선되고, 대시보드에서 러너가 종료된 이유를 바로 확인할 수 있게 됐어요.",
+    "details": [
+      "Workflow: 노드 ID 표시, 노드 잠금, 미디어 타입 아이콘",
+      "러너 상세·목록·이벤트에 종료 사유 표시"
+    ],
+    "url": "https://fal.ai/docs/changelog#april-23-2026",
+    "source": "dev"
+  }
+]

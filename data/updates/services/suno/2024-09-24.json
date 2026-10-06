@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-09-24-1",
+    "service": "suno",
+    "date": "2024.09.24",
+    "kind": "기능",
+    "title": "Suno 곡 자르기 Crop Songs",
+    "summary": "Pro·Premier 사용자가 곡의 원하는 부분만 남기고 나머지를 잘라낼 수 있어요.",
+    "url": "https://suno.com/release-notes/crop-songs",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2026-09-04-1",
+    "service": "comfyui",
+    "date": "2026.09.04",
+    "kind": "연동",
+    "title": "ComfyUI v0.34.4: Meta Muse Image와 Claude Fable 5.1",
+    "summary": "ComfyUI v0.34.4에서 참조 이미지 최대 10장을 쓰는 Meta Muse Image 1.0 노드와 Claude Fable 5.1, MiniMax H3 Max Turbo 옵션이 추가됐어요.",
+    "details": [
+      "Recraft V4 Styles Pro 모델"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-34-4",
+    "source": "notice"
+  }
+]

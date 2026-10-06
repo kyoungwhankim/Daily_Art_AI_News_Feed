@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-04-1",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "Godot 전문 스킬 추가",
+    "summary": "AI 코딩 에이전트가 GDScript와 프로젝트 구조를 잘 다루도록 Godot 전문 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-51-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-04-2",
+    "service": "scenario",
+    "date": "2026.10.04",
+    "kind": "연동",
+    "title": "키네틱 뮤직비디오 스킬",
+    "summary": "키네틱 타이포그래피 뮤직비디오를 만드는 파이프라인 스킬이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-52-0",
+    "source": "notice"
+  }
+]

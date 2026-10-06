@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-04-23-1",
+    "service": "scenario",
+    "date": "2026.04.23",
+    "kind": "API",
+    "title": "어시스턴트 스레드·Video-to-3D",
+    "summary": "에이전트용 스레드 관리와 영상으로 3D를 만드는 Video-to-3D가 추가되고 모델 목록이 크게 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-116-0",
+    "source": "dev"
+  }
+]

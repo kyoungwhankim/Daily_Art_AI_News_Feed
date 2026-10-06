@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-01-27-1",
+    "service": "elevenlabs",
+    "date": "2025.01.27",
+    "kind": "기능",
+    "title": "에이전트 동적 변수와 Projects 자동 재생성",
+    "summary": "에이전트에 동적 변수와 끼어들기 처리 옵션이 생겼고, Projects 자동 재생성이 추가 비용 없이 기본 제공돼요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/1/27",
+    "source": "dev"
+  }
+]

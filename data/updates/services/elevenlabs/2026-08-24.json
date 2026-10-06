@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2026-08-24-1",
+    "service": "elevenlabs",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "ElevenLabs CLI v1.0 출시",
+    "summary": "모든 ElevenLabs API 기능을 터미널 명령으로 쓰는 CLI v1이 나왔어요. 에이전트 친화적으로 JSON 출력과 드라이런을 지원해요.",
+    "details": [
+      "모든 API 작업을 서브커맨드로 제공",
+      "JSON·표·YAML 출력, 드라이런",
+      "ElevenAgents Procedures 정식 출시",
+      "대화 품질 트리아지 티켓 API"
+    ],
+    "url": "https://elevenlabs.io/blog/elevenlabs-cli-v1",
+    "source": "notice"
+  }
+]

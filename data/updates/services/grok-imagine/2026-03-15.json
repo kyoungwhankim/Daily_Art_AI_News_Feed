@@ -1,0 +1,15 @@
+[
+  {
+    "id": "grok-imagine-2026-03-15-1",
+    "service": "grok-imagine",
+    "date": "2026.03.15",
+    "kind": "API",
+    "title": "Batch API에서 이미지·영상 생성 지원",
+    "summary": "xAI Batch API로 이미지 생성, 이미지 편집, 영상 생성을 대량으로 처리할 수 있게 됐어요. 결과의 이미지·영상 URL은 1시간 뒤 만료돼요.",
+    "details": [
+      "Files API로 JSONL 파일을 올려 배치 생성 가능, 채팅·이미지·영상을 한 파일에 섞을 수 있음"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes#batch-api-supports-image-and-video-generation",
+    "source": "dev"
+  }
+]

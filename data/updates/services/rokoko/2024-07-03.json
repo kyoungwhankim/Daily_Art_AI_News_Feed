@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2024-07-03-1",
+    "service": "rokoko",
+    "date": "2024.07.03",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.5, Headcam 대응과 Unreal 연동 개편",
+    "summary": "새 Headcam과 Android Face Capture 앱을 위한 준비가 들어갔고, Unreal Engine 라이브스트리밍·내보내기 연동이 전면 개편됐어요.",
+    "details": [
+      "Headcam·Android Face Capture 앱 대응",
+      "Unreal Engine 라이브스트리밍·내보내기 개편",
+      "설치·업데이트 흐름 개편",
+      "Details 패널 Transform 섹션"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/26411261719569-Rokoko-Studio-2-4-5",
+    "source": "dev"
+  }
+]

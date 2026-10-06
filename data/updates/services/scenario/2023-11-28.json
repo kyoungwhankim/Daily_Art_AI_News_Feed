@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-28-1",
+    "service": "scenario",
+    "date": "2023.11.28",
+    "kind": "API",
+    "title": "이미지 패치 API 추가",
+    "summary": "기존 에셋을 지우기·덮어쓰기 모드로 수정하는 /images/patch API가 추가되고 동적 쿨다운이 도입됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-6-0-novembre-28th-2023",
+    "source": "dev"
+  }
+]

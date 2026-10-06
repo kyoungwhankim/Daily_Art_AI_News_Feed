@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-07-14-1",
+    "service": "magnific",
+    "date": "2026.07.14",
+    "kind": "API",
+    "title": "PixVerse 텍스트-투-비디오·전환 API 5종",
+    "summary": "PixVerse V5·V5.5·V6 텍스트-투-비디오와 V5.5·V6 첫·끝 프레임 전환 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#july-14-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2020-02-14-1",
+    "service": "blender",
+    "date": "2020.02.14",
+    "kind": "앱",
+    "title": "Blender 2.82 출시: UDIM·USD·Mantaflow",
+    "summary": "UDIM·USD 지원, Mantaflow 유체·연기 시뮬레이션, AI 디노이징을 담은 Blender 2.82가 나왔어요.",
+    "url": "https://www.blender.org/news/blender-2-82-released/",
+    "source": "notice"
+  }
+]

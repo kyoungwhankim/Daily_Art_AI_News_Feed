@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2026-01-22-1",
+    "service": "gigapixel",
+    "date": "2026.01.22",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.1.0: Wonder 2와 Recover 3",
+    "summary": "얼굴·피부·글자 디테일을 더 정밀하게 살리는 Wonder 2(클라우드 전용)와 가장 자연스러운 복원 모델 Recover 3가 추가됐어요.",
+    "details": [
+      "Recover 3: Windows 로컬+클라우드, macOS 클라우드",
+      "클라우드 큐 Download All, 생성형 모델용 파일 목록",
+      "v1.1.1(1/23) 포함"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-1-0-v1-1-1/100363",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-09-30-1",
+    "service": "comfyui",
+    "date": "2026.09.30",
+    "kind": "API",
+    "title": "Comfy API 출시: 워크플로를 프로덕션 API로 배포",
+    "summary": "유료 Comfy 요금제 사용자는 ComfyUI 워크플로를 커스텀 노드·LoRA·모델과 함께 패키징해 원하는 GPU에서 자동 확장 API 엔드포인트로 배포할 수 있어요.",
+    "url": "https://blog.comfy.org/p/comfy-api-is-live-deploy-comfyui",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-09-30-2",
+    "service": "comfyui",
+    "date": "2026.09.30",
+    "kind": "연동",
+    "title": "ComfyUI v0.38.1: Ideogram 4.5·HeyGen Video 1.0",
+    "summary": "ComfyUI v0.38.1에서 Ideogram 4.5 생성·편집 노드와 HeyGen Video 1.0 참조·이미지→영상 노드, Claude Sonnet 5.5가 추가됐어요.",
+    "url": "https://docs.comfy.org/changelog#v0-38-1",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-12-21-1",
+    "service": "scenario",
+    "date": "2023.12.21",
+    "kind": "API",
+    "title": "SDXL LoRA 학습 공식 지원",
+    "summary": "sd-xl-lora 학습이 정식 지원되고 무료 사용자의 학습·추론이 다시 열렸어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-10-0-december-21th-2023",
+    "source": "dev"
+  }
+]

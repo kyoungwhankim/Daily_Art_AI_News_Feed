@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mai-image-2026-09-04-1",
+    "service": "mai-image",
+    "date": "2026.09.04",
+    "kind": "API",
+    "title": "MAI-Image-2.6·2.6-Flash, Foundry 공개 프리뷰",
+    "summary": "MAI-Image-2.6과 새 MAI-Image-2.6-Flash가 Microsoft Foundry에서 공개 프리뷰로 제공돼요. 여러 장 참조 편집, 웹 그라운딩, 유연한 화면비를 지원해요.",
+    "details": [
+      "2.6-Flash: GPT-Image-2-Medium보다 2.8배 빠르고 효율 72% 향상",
+      "Arena 텍스트-이미지·편집 모두 2위"
+    ],
+    "url": "https://microsoft.ai/news/pushing-the-quality-cost-frontier-with-mai-image-2-6/",
+    "source": "notice"
+  }
+]

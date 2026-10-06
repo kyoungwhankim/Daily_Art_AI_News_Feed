@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2026-02-12-1",
+    "service": "seedance",
+    "date": "2026.02.12",
+    "kind": "모델",
+    "title": "멀티모달 영상 모델 Seedance 2.0 공식 출시",
+    "summary": "텍스트·이미지·오디오·영상 4가지 입력을 받는 Seedance 2.0이 출시됐어요. 이미지 9장, 영상 3개, 오디오 3개까지 레퍼런스로 넣고 15초 멀티샷 오디오-비디오를 만들 수 있어요.",
+    "details": [
+      "복잡한 동작·다인물 상호작용 장면 품질 향상",
+      "영상 연장과 편집을 안정적으로 지원",
+      "듀얼 채널 오디오 출력"
+    ],
+    "url": "https://seed.bytedance.com/blog/seedance-2-0-official-launch",
+    "source": "notice"
+  }
+]

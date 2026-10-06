@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-29-1",
+    "service": "claude",
+    "date": "2026.04.29",
+    "kind": "API",
+    "title": "오픈소스 Claude API 스킬 공개",
+    "summary": "8개 언어로 Messages API와 Managed Agents 개발 자료를 제공하는 오픈소스 Claude API 스킬이 나왔어요. Claude Code에도 포함돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-29-2026",
+    "source": "dev"
+  }
+]

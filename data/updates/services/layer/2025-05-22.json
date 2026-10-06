@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-05-22-1",
+    "service": "layer",
+    "date": "2025.05.22",
+    "kind": "모델",
+    "title": "Google Imagen 4 추가",
+    "summary": "Google의 최신 텍스트→이미지 모델 Imagen 4를 Layer에서 쓸 수 있게 됐어요.",
+    "url": "https://layer.ai/blog/google-imagen-4-layer",
+    "source": "notice"
+  }
+]

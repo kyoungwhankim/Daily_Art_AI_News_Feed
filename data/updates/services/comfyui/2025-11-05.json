@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2025-11-05-1",
+    "service": "comfyui",
+    "date": "2025.11.05",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.68: 혼합 정밀도 양자화와 RAM 압박 캐시",
+    "summary": "ComfyUI v0.3.68에서 혼합 정밀도 양자화 시스템과 메모리가 부족할 때 똑똑하게 캐시를 관리하는 RAM Pressure 모드가 도입됐어요.",
+    "details": [
+      "pinned memory로 모델 오프로딩 가속",
+      "WAN·Lumina용 ScaleROPE 노드",
+      "한 워크플로에서 서브그래프 여러 번 실행",
+      "LTXV API 12~20초 길이 옵션"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-68",
+    "source": "notice"
+  }
+]

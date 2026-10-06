@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-07-09-1",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "API",
+    "title": "Maya 모션 에셋·Prompt Spark 참조 확대",
+    "summary": "Maya 모션 에셋을 네이티브로 지원하고 Prompt Spark 참조 한도가 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-125-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-07-09-2",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "연동",
+    "title": "MCP 토큰 사용 최적화·일괄 폴링",
+    "summary": "MCP 응답을 간결하게 해 LLM 컨텍스트 소모를 줄이고 작업 일괄 롱폴링을 추가했어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-19-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-07-09-3",
+    "service": "scenario",
+    "date": "2026.07.09",
+    "kind": "연동",
+    "title": "MCP 모델 설명·학습 파라미터",
+    "summary": "에이전트가 마크다운 모델 설명을 보고 학습 epoch를 직접 설정할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-20-0",
+    "source": "notice"
+  }
+]

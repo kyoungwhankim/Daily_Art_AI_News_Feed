@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-07-1",
+    "service": "comfyui",
+    "date": "2025.12.07",
+    "kind": "연동",
+    "title": "ComfyUI, Kling O1 영상 편집 API 노드",
+    "summary": "영상을 넣고 텍스트로 편집하거나 영상을 참조로 쓰는 Kling O1을 API 노드로 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/kling-o1-in-comfyui-the-video-editing",
+    "source": "notice"
+  }
+]

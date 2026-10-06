@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2025-01-02-1",
+    "service": "flux",
+    "date": "2025.01.02",
+    "kind": "연동",
+    "title": "NVIDIA와 협력해 RTX 50 시리즈용 FLUX 최적화",
+    "summary": "NVIDIA와 협력해 GeForce RTX 50 시리즈의 FP4 연산으로 FLUX 모델의 메모리 사용을 줄이고 속도를 높였어요. FLUX.1 [dev]는 10GB VRAM으로 RTX 4090 대비 2배 빨라졌어요.",
+    "url": "https://bfl.ai/blog/25-01-03-nvidia",
+    "source": "notice"
+  }
+]

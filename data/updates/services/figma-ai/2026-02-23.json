@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-02-23-1",
+    "service": "figma-ai",
+    "date": "2026.02.23",
+    "kind": "정책",
+    "title": "AI 호스팅 제어 (Governance+)",
+    "summary": "Governance+ 조직 관리자가 AI 요청이 Figma의 AWS 환경 안에서만 처리되도록 설정할 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=ai-hosting-controls-governance",
+    "source": "notice"
+  }
+]

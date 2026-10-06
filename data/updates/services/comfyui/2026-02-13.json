@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-02-13-1",
+    "service": "comfyui",
+    "date": "2026.02.13",
+    "kind": "연동",
+    "title": "ComfyUI, Hunyuan 3D 3.0 API 노드",
+    "summary": "텍스트·이미지·스케치로 몇 분 만에 프로덕션용 3D 에셋을 만드는 Tencent Hunyuan 3D 3.0을 API 노드로 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/hunyuan-3d-30-in-comfyui-state-of",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2025-03-17-1",
+    "service": "roblox-cube",
+    "date": "2025.03.17",
+    "kind": "기능",
+    "title": "Assistant 제어 강화·Cube 3D 메시 생성",
+    "summary": "Assistant의 동작을 더 세밀하게 제어할 수 있게 됐어요. /generate 명령으로 Cube 3D 기반 메시 생성도 베타로 쓸 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-updates-giving-you-more-control-of-assistant/3555172",
+    "source": "notice"
+  }
+]

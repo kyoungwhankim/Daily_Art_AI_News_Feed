@@ -1,0 +1,15 @@
+[
+  {
+    "id": "heygen-2026-07-08-1",
+    "service": "heygen",
+    "date": "2026.07.08",
+    "kind": "기능",
+    "title": "HeyGen 2026년 7월 Enterprise 릴리스",
+    "summary": "읽기 쉬운 감사 로그, 하위 워크스페이스 사용량 분석, 개발자 전용 메뉴, PPT에서 브랜드 시스템 생성, 영상 번역 화면 개편이 들어갔어요.",
+    "details": [
+      "소유권 이전 설정 제거, 모든 Super Admin 동등 권한"
+    ],
+    "url": "https://heygen.noticeable.news/publications/july-2026-enterprise-releases",
+    "source": "notice"
+  }
+]

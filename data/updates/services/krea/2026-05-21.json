@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-05-21-1",
+    "service": "krea",
+    "date": "2026.05.21",
+    "kind": "기능",
+    "title": "Krea 2 LoRA 학습 베타 시작",
+    "summary": "이미지 3장 이상으로 스타일·캐릭터·오브젝트를 학습하는 Krea 2 LoRA 학습을 베타로 시작했어요. 학습한 LoRA는 이미지 도구에서 바로 쓸 수 있고, 우선 Max·Business 구독자에게 제공돼요.",
+    "url": "https://www.krea.ai/blog/krea-2-lora-training",
+    "source": "notice"
+  }
+]

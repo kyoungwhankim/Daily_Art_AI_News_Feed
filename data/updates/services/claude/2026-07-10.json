@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-10-1",
+    "service": "claude",
+    "date": "2026.07.10",
+    "kind": "기능",
+    "title": "Claude 메모리 개편: 항목별 메모리",
+    "summary": "Claude 메모리가 일일 요약 대신 분류된 개별 항목으로 바뀌어, 대화 중 Claude가 읽고 업데이트해요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

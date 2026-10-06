@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mai-image-2026-06-02-1",
+    "service": "mai-image",
+    "date": "2026.06.02",
+    "kind": "모델",
+    "title": "MAI-Image-2.5와 MAI-Image-2.5-Flash 출시",
+    "summary": "Arena 이미지 편집 순위 2위에 오른 MAI-Image-2.5와 빠른 대량 작업용 2.5-Flash가 출시됐어요. 부분 편집과 얼굴 일관성이 강화됐고 Foundry에서 바로 쓸 수 있어요.",
+    "details": [
+      "정밀한 부분 편집(사물 교체, 글자 수정, 모션 블러 제거)",
+      "포즈·표정이 바뀌어도 얼굴 동일성 유지",
+      "PowerPoint에 적용, OneDrive 편집 기능에 순차 도입",
+      "2.5 가격: 텍스트 입력 5달러, 이미지 입력 8달러, 이미지 출력 47달러(100만 토큰당)",
+      "OpenRouter에서도 제공"
+    ],
+    "url": "https://microsoft.ai/news/introducing-mai-image-2-5/",
+    "source": "notice"
+  }
+]

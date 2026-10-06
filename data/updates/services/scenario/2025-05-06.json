@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-05-06-1",
+    "service": "scenario",
+    "date": "2025.05.06",
+    "kind": "기능",
+    "title": "Edit with Prompts 출시(GPT-4o·Gemini 2.0)",
+    "summary": "자연어 지시로 이미지를 편집하는 Edit with Prompts가 나왔어요. GPT-Image와 Gemini 2.0을 활용해요.",
+    "url": "https://www.scenario.com/changelog/v1-85-1-edit-with-prompts-gpt-4o-gemini-2-0",
+    "source": "dev"
+  }
+]

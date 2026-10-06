@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-10-27-1",
+    "service": "elevenlabs",
+    "date": "2025.10.27",
+    "kind": "API",
+    "title": "Agents CLI 다중 환경 관리",
+    "summary": "Agents CLI에 --env 플래그가 생겨 여러 환경에 배포한 에이전트를 관리할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/27",
+    "source": "dev"
+  }
+]

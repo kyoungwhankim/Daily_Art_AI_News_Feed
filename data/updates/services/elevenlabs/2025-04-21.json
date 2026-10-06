@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-04-21-1",
+    "service": "elevenlabs",
+    "date": "2025.04.21",
+    "kind": "API",
+    "title": "Professional Voice Cloning API 공개",
+    "summary": "Professional Voice Clone을 코드로 만들고 샘플을 관리하는 API 묶음이 나왔고, STT 결과 내보내기 옵션이 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/4/21",
+    "source": "dev"
+  }
+]

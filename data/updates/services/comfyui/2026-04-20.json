@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-20-1",
+    "service": "comfyui",
+    "date": "2026.04.20",
+    "kind": "연동",
+    "title": "ComfyUI, Quiver 구조화 SVG 생성",
+    "summary": "Quiver의 Arrow 1.1·1.1 Max로 텍스트→SVG 생성과 이미지 벡터화를 API 노드에서 할 수 있어요.",
+    "url": "https://blog.comfy.org/p/quiver-structured-svg-generation",
+    "source": "notice"
+  }
+]

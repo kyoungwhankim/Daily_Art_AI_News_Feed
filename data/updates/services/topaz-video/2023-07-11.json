@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-07-11-1",
+    "service": "topaz-video",
+    "date": "2023.07.11",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.3.4: 이미지 시퀀스 시작 프레임 번호 지정",
+    "summary": "이미지 시퀀스 내보내기에서 시작 프레임 번호를 직접 정할 수 있고 .3gp 파일을 가져올 수 있어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-3-4/48346",
+    "source": "notice"
+  }
+]

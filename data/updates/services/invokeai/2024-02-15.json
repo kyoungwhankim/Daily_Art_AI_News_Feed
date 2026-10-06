@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-02-15-1",
+    "service": "invokeai",
+    "date": "2024.02.15",
+    "kind": "기능",
+    "title": "Invoke 3.7.0: 워크플로 Linear View",
+    "summary": "Invoke 3.7.0에서 워크플로를 숨기고 결과 이미지에 집중하는 Linear View가 추가됐어요. DWPose가 기본 OpenPose 처리기가 됐고 심리스 타일링도 개선됐어요.",
+    "url": "https://invoke.ai/releases/version/invoke-3-7-0/",
+    "source": "notice"
+  }
+]

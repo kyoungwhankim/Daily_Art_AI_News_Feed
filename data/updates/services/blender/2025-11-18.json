@@ -1,0 +1,18 @@
+[
+  {
+    "id": "blender-2025-11-18-1",
+    "service": "blender",
+    "date": "2025.11.18",
+    "kind": "앱",
+    "title": "Blender 5.0 출시: ACES·HDR 색 관리",
+    "summary": "Blender 5.0이 나왔어요. ACES 파이프라인과 HDR·광색역을 완전히 지원하도록 색 관리가 개편됐고, Geometry Nodes에 볼륨·SDF 노드가 추가됐어요.",
+    "details": [
+      "ACES 1.3/2.0 뷰, Rec.2100 HDR 디스플레이, 작업 색공간(ACEScg 등)",
+      "Volume·SDF 노드, 스토리보드 템플릿",
+      "Array·Scatter on Surface 모디파이어, UV Sync 개편",
+      "버그 588개 수정"
+    ],
+    "url": "https://www.blender.org/press/blender-5-0-release/",
+    "source": "notice"
+  }
+]

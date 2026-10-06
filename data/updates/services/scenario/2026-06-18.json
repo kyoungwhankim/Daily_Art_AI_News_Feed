@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-06-18-1",
+    "service": "scenario",
+    "date": "2026.06.18",
+    "kind": "연동",
+    "title": "MCP 도구 43개로 재설계",
+    "summary": "MCP 도구를 43개의 단일 목적 함수로 재구성해 에이전트 성능과 도구 선택 정확도를 높였어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-16-0",
+    "source": "notice"
+  }
+]

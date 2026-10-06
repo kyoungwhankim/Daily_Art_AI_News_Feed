@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dream-machine-2026-08-11-1",
+    "service": "dream-machine",
+    "date": "2026.08.11",
+    "kind": "기능",
+    "title": "Luma Scenes 출시: 스토리보드로 검토 후 렌더링",
+    "summary": "브리프나 브랜드 에셋으로 편집 가능한 키프레임 스토리보드를 만들고, 장면마다 승인한 뒤 Ray3.2나 Seedance 2로 렌더링하는 Luma Scenes를 내놨어요.",
+    "details": [
+      "Uni-1 기반, 모든 장면을 한 맥락에서 생성",
+      "키프레임 재생성·댓글 수정·교체, 드래그로 타이밍 조정",
+      "9:16·16:9, 전체 클립 또는 개별 클립 내보내기"
+    ],
+    "url": "https://lumalabs.ai/news/introducing-luma-scenes",
+    "source": "notice"
+  }
+]

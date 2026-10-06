@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-09-15-1",
+    "service": "runway",
+    "date": "2026.09.15",
+    "kind": "기능",
+    "title": "에셋 댓글에서 Agent 호출 기능 추가",
+    "summary": "엔터프라이즈 플랜에서 에셋 페이지 댓글에 @Agent를 멘션해 바로 수정을 요청할 수 있어요. Agent의 응답이 편집 이력으로 남아 팀 협업이 쉬워져요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

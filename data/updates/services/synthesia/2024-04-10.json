@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2024-04-10-1",
+    "service": "synthesia",
+    "date": "2024.04.10",
+    "kind": "API",
+    "title": "Synthesia API 정식 출시(GA)",
+    "summary": "Synthesia API가 베타를 끝내고 Creator와 Enterprise 요금제에서 정식으로 제공돼요.",
+    "url": "https://docs.synthesia.io/changelog/synthesia-apis-are-generally-available",
+    "source": "dev"
+  }
+]

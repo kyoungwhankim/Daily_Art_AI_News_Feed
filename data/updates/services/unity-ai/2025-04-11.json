@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-04-11-1",
+    "service": "unity-ai",
+    "date": "2025.04.11",
+    "kind": "앱",
+    "title": "Unity AI Assistant 패키지 첫 출시",
+    "summary": "새 AI Assistant 서버와 통신하는 AI Assistant 패키지가 처음 공개됐어요. Window > AI > Assistant 메뉴에서 열 수 있어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#100-pre1---2025-04-11",
+    "source": "dev"
+  }
+]

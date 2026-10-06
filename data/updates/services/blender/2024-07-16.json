@@ -1,0 +1,17 @@
+[
+  {
+    "id": "blender-2024-07-16-1",
+    "service": "blender",
+    "date": "2024.07.16",
+    "kind": "앱",
+    "title": "Blender 4.2 LTS 출시: 새 EEVEE·Extensions",
+    "summary": "처음부터 다시 쓴 EEVEE Next와 온라인 Extensions 플랫폼을 담은 Blender 4.2 LTS가 나왔어요. 실시간 글로벌 일루미네이션과 디스플레이스먼트를 지원해요.",
+    "details": [
+      "EEVEE: 스크린 스페이스 GI, 실제 디스플레이스먼트, 뷰포트 모션 블러",
+      "Extensions 온라인 플랫폼",
+      "Khronos PBR Neutral 톤 매퍼 내장"
+    ],
+    "url": "https://www.blender.org/press/blender-4-2-lts-release/",
+    "source": "notice"
+  }
+]

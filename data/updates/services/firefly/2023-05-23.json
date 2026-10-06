@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-05-23-1",
+    "service": "firefly",
+    "date": "2023.05.23",
+    "kind": "연동",
+    "title": "Photoshop (beta)에 Firefly 기반 Generative Fill",
+    "summary": "Photoshop (beta) 앱에 Firefly로 동작하는 Generative Fill이 들어와, 텍스트 프롬프트로 이미지에 내용을 추가·확장·삭제할 수 있게 됐어요.",
+    "url": "https://blog.adobe.com/en/publish/2023/05/23/future-of-photoshop-powered-by-adobe-firefly",
+    "source": "notice"
+  }
+]

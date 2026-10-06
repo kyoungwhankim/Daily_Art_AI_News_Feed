@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-11-12-1",
+    "service": "elevenlabs",
+    "date": "2025.11.12",
+    "kind": "모델",
+    "title": "Scribe v2 Realtime 정식 출시",
+    "summary": "가장 빠르고 정확한 실시간 음성 인식 모델 Scribe v2 Realtime이 공식 출시됐어요. 위젯 통화 종료 피드백도 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/12",
+    "source": "dev"
+  }
+]

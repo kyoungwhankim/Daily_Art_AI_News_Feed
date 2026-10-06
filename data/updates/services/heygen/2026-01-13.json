@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-01-13-1",
+    "service": "heygen",
+    "date": "2026.01.13",
+    "kind": "종료",
+    "title": "HeyGen Expressive Avatar 엔진을 Avatar 4로 통합",
+    "summary": "별도 Expressive Avatar 엔진을 쓰던 아바타 룩이 기본적으로 Avatar 4를 쓰도록 바뀌었어요. 생성 크레딧이 들 수 있어 대량 제작은 Unlimited Avatar를 권장해요.",
+    "url": "https://heygen.noticeable.news/publications/expressive-avatars-update",
+    "source": "notice"
+  }
+]

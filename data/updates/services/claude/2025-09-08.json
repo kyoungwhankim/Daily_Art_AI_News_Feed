@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-09-08-1",
+    "service": "claude",
+    "date": "2025.09.08",
+    "kind": "API",
+    "title": "C# SDK 베타 출시",
+    "summary": "Claude API용 C# SDK가 베타로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
+    "source": "dev"
+  }
+]

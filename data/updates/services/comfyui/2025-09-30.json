@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-09-30-1",
+    "service": "comfyui",
+    "date": "2025.09.30",
+    "kind": "연동",
+    "title": "ComfyUI v0.3.61: Rodin3D Gen-2와 Wan2.5 이미지 편집",
+    "summary": "ComfyUI v0.3.61에서 Rodin의 이미지→3D 도구 Rodin3D Gen-2와 Wan2.5 이미지→이미지 편집 API 노드가 추가되고, v0.3.62에서 Seedance Pro를 지원해요.",
+    "url": "https://docs.comfy.org/changelog#v0-3-61",
+    "source": "notice"
+  }
+]

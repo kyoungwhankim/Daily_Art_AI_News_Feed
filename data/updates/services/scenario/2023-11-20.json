@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-11-20-1",
+    "service": "scenario",
+    "date": "2023.11.20",
+    "kind": "API",
+    "title": "벡터화 API·Quality Boost 추가",
+    "summary": "에셋이나 이미지를 벡터로 바꾸는 벡터화 API와, 한 번에 더 좋은 결과를 내는 Quality Boost가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-5-0-novembre-20th-2023",
+    "source": "dev"
+  }
+]

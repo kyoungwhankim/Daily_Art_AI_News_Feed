@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-06-01-1",
+    "service": "comfyui",
+    "date": "2026.06.01",
+    "kind": "모델",
+    "title": "ComfyUI, TripoSplat 3D 가우시안 스플랫 네이티브 지원",
+    "summary": "이미지 한 장을 3D 가우시안으로 바꾸는 Tripo의 오픈소스 모델 TripoSplat을 ComfyUI에서 출시 당일 지원해요.",
+    "details": [
+      "v0.23.0: Microsoft Lens, NVIDIA PixelDiT·PiD 지원",
+      "GAUSSIAN 타입과 스플랫 노드",
+      "멀티스레드 모델 로딩, 멀티 GPU 작업 분할",
+      "OpenRouter·Rodin2.5·Krea2·Beeble·Tripo P1 노드"
+    ],
+    "url": "https://blog.comfy.org/p/bringing-native-support-for-3d-gaussian",
+    "source": "notice"
+  }
+]

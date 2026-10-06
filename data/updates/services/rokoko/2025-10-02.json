@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2025-10-02-1",
+    "service": "rokoko",
+    "date": "2025.10.02",
+    "kind": "기능",
+    "title": "Smartsuit Pro 로코모션 엔진 대규모 업그레이드",
+    "summary": "Rokoko Studio 2.5와 함께 Smartsuit Pro의 새 로코모션 엔진이 나왔어요. 발 미끄러짐과 엉덩이 떨림을 줄인 기반 업그레이드예요.",
+    "details": [
+      "새 Locomotion 필터(우선 후처리에서 적용)",
+      "새 녹화는 기본 적용, Legacy Locomotion 선택 가능",
+      "기존 녹화는 원하면 새 필터로 재처리"
+    ],
+    "url": "https://www.rokoko.com/insights/smartsuit-pro-locomotion-engine-upgrade",
+    "source": "notice"
+  }
+]

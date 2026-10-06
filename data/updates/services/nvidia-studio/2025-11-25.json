@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-11-25-1",
+    "service": "nvidia-studio",
+    "date": "2025.11.25",
+    "kind": "모델",
+    "title": "FLUX.2, RTX·ComfyUI 최적화 버전 제공",
+    "summary": "Black Forest Labs가 FLUX.2를 출시했고, NVIDIA는 ComfyUI와 함께 FP8 양자화와 RTX 최적화를 적용해 로컬에서 돌리기 쉽게 했어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/",
+    "source": "notice"
+  }
+]

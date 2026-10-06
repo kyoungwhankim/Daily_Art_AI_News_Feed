@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2024-11-21-1",
+    "service": "flux",
+    "date": "2024.11.21",
+    "kind": "기능",
+    "title": "FLUX.1 Tools(Fill·Depth·Canny·Redux) 공개",
+    "summary": "인페인팅·아웃페인팅용 Fill, 구조 제어용 Depth·Canny, 이미지 변형용 Redux로 구성된 FLUX.1 Tools를 공개했어요. 이후 Depth·Canny는 API에서 지원 종료됐어요.",
+    "details": [
+      "FLUX.1 Fill: 인페인팅·아웃페인팅",
+      "FLUX.1 Depth / Canny: 깊이·윤곽선 기반 구조 제어",
+      "FLUX.1 Redux: 입력 이미지 변형·리스타일",
+      "[pro] API와 [dev] 오픈 웨이트로 제공"
+    ],
+    "url": "https://bfl.ai/blog/24-11-21-tools",
+    "source": "notice"
+  }
+]

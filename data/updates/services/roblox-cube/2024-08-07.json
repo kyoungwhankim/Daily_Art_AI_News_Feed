@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2024-08-07-1",
+    "service": "roblox-cube",
+    "date": "2024.08.07",
+    "kind": "기능",
+    "title": "Assistant, 플레이스 콘텐츠 수정 베타",
+    "summary": "Assistant가 DataModel을 직접 수정해 크기 무작위화, 바닥 배치, 에셋 교체 같은 반복 작업을 자동화할 수 있게 됐어요.",
+    "url": "https://devforum.roblox.com/t/expanding-assistant-to-modify-place-content-beta/3107464",
+    "source": "notice"
+  }
+]

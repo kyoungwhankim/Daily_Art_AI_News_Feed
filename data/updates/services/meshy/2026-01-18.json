@@ -1,0 +1,18 @@
+[
+  {
+    "id": "meshy-2026-01-18-1",
+    "service": "meshy",
+    "date": "2026.01.18",
+    "kind": "모델",
+    "title": "Meshy-6 정식 출시",
+    "summary": "더 깔끔한 지오메트리와 선명한 하드서피스 디테일을 내는 Meshy-6를 출시했어요. Low Poly Mode, 멀티컬러 3D 프린팅, 업그레이드된 API도 함께 나왔어요.",
+    "details": [
+      "지오메트리·하드서피스 디테일 개선",
+      "Low Poly Mode 추가",
+      "멀티컬러 3D 프린팅 워크플로",
+      "API 업그레이드"
+    ],
+    "url": "https://www.meshy.ai/blog/meshy-6-launch",
+    "source": "notice"
+  }
+]

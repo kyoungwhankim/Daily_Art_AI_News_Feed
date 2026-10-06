@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-09-23-1",
+    "service": "comfyui",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.2 Animate·Qwen-Image-Edit 2509 지원",
+    "summary": "연기자 영상으로 캐릭터를 움직이거나 바꾸는 Wan2.2 Animate와 다중 이미지 편집을 지원하는 Qwen-Image-Edit 2509를 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.3.60: HuMo 1.7B·17B, Chroma Radiance 지원",
+      "Omnigen2 UMO LoRA 지원"
+    ],
+    "url": "https://blog.comfy.org/p/wan22-animate-and-qwen-image-edit-2509",
+    "source": "notice"
+  }
+]

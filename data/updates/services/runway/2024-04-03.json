@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-03-1",
+    "service": "runway",
+    "date": "2024.04.03",
+    "kind": "기능",
+    "title": "생성 도구 에셋 선택 시 즐겨찾기 필터",
+    "summary": "Gen-1, Gen-2, Image to Image에서 에셋을 고를 때 즐겨찾기로 필터링할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

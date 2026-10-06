@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2026-06-03-1",
+    "service": "tripo",
+    "date": "2026.06.03",
+    "kind": "요금",
+    "title": "texture_quality=extreme 추가·텍스처 요금 단계화",
+    "summary": "텍스처 품질에 extreme 단계가 추가되고 요금이 standard +10, detailed +20, extreme +30크레딧으로 나뉘었어요. Rig v2.0 모델은 종료됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-9-7-2026-06-03",
+    "source": "dev"
+  }
+]

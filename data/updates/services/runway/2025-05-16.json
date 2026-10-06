@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-05-16-1",
+    "service": "runway",
+    "date": "2025.05.16",
+    "kind": "API",
+    "title": "Gen-4 Image API 출시",
+    "summary": "Gen-4 Image를 Runway API로 제공해 누구나 멀티모달 이미지 생성을 앱과 서비스에 넣을 수 있게 됐어요.",
+    "url": "https://runway.com/news/introducing-runway-api-for-gen-4-images",
+    "source": "dev"
+  }
+]

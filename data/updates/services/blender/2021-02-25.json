@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2021-02-25-1",
+    "service": "blender",
+    "date": "2021.02.25",
+    "kind": "앱",
+    "title": "Blender 2.92 출시: Geometry Nodes 첫 도입",
+    "summary": "노드로 메시를 만들고 다루는 Geometry Nodes 편집기가 처음 도입된 Blender 2.92가 나왔어요.",
+    "url": "https://www.blender.org/news/blender-2-92-release/",
+    "source": "notice"
+  }
+]

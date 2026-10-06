@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-02-26-1",
+    "service": "synthesia",
+    "date": "2021.02.26",
+    "kind": "기능",
+    "title": "Synthesia 텍스트·도형 오버레이와 음성 전용 클립",
+    "summary": "텍스트·도형 오버레이, 음성만 있는 클립을 추가하고 영상당 최대 50개 슬라이드를 지원해요.",
+    "url": "https://www.synthesia.io/updates/add-text-shape-overlays-and-voice-only-clips",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "comfyui-2026-08-08-1",
+    "service": "comfyui",
+    "date": "2026.08.08",
+    "kind": "모델",
+    "title": "ComfyUI, Wan Animate 2 네이티브 지원",
+    "summary": "구동 영상을 트랜스포머가 직접 읽고 텍스트로 시점을 바꾸는 캐릭터 애니메이션 모델 Wan Animate 2와 실시간 Lite 버전을 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/wan-animate-2-is-now-available-in",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-08-08-2",
+    "service": "comfyui",
+    "date": "2026.08.08",
+    "kind": "연동",
+    "title": "ComfyUI, Seedance 2.5 API 노드",
+    "summary": "한 번에 30초 영상, 최대 50개 참조 에셋, 프롬프트 기반 영상 편집, 10개 이상 언어 출력을 지원하는 Seedance 2.5를 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/seedance-25-is-now-available-via",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-08-19-1",
+    "service": "runway",
+    "date": "2026.08.19",
+    "kind": "기능",
+    "title": "Seedream 5.0 Pro Layers로 이미지 레이어 분리",
+    "summary": "이미지를 레이어로 나눠 각 레이어를 따로 켜고 변형할 수 있는 새 도구가 생겼어요. 세밀한 이미지 편집과 에셋 추출에 유용해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

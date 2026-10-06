@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-05-14-1",
+    "service": "claude",
+    "date": "2024.05.14",
+    "kind": "앱",
+    "title": "Claude, 유럽 출시",
+    "summary": "Claude 어시스턴트를 유럽 전역의 개인과 기업이 쓸 수 있게 됐어요.",
+    "url": "https://www.anthropic.com/news/claude-europe",
+    "source": "notice"
+  }
+]

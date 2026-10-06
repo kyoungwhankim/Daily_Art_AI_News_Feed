@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2025-06-30-1",
+    "service": "flow-studio",
+    "date": "2025.06.30",
+    "kind": "연동",
+    "title": "Flow Studio, MetaHuman 바디 애니메이션 내보내기",
+    "summary": "AI Motion Capture 결과를 루트 본까지 포함한 MetaHuman 바디 애니메이션으로 Unreal Engine에 내보낼 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

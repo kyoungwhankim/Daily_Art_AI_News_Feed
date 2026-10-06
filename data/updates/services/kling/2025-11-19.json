@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-11-19-1",
+    "service": "kling",
+    "date": "2025.11.19",
+    "kind": "API",
+    "title": "Multi-Image to Image API에 V2.1 모델 지원",
+    "summary": "Kling API의 Multi-Image to Image가 V2.1 모델을 지원하게 됐어요. 이미지 한 장당 16 units가 차감돼요.",
+    "url": "https://kling.ai/document-api/updates/api#11%2F19%2F2025",
+    "source": "dev"
+  }
+]

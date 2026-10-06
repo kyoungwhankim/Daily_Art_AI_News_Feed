@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-31-1",
+    "service": "comfyui",
+    "date": "2026.08.31",
+    "kind": "기능",
+    "title": "Trellis.2·Pixal3D 코어 통합과 3D 파이프라인 재구축",
+    "summary": "오픈 3D 생성 모델 Trellis.2와 Pixal3D가 커스텀 노드 없이 ComfyUI 코어에서 돌아가요. 새 3D 로드·미리보기·저장 노드와 PBR 텍스처 굽기도 함께 들어왔어요.",
+    "url": "https://blog.comfy.org/p/trellis2-and-pixal3d-are-now-native",
+    "source": "notice"
+  }
+]

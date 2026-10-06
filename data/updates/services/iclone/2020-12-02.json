@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2020-12-02-1",
+    "service": "iclone",
+    "date": "2020.12.02",
+    "kind": "앱",
+    "title": "iClone 7.83, MP4 내보내기 fps 조절",
+    "summary": "MP4 영상 내보내기에서 fps를 조절할 수 있게 됐고, 여러 크래시와 FBX 내보내기 문제가 고쳐졌어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfyui-2025-06-05-1",
+    "service": "comfyui",
+    "date": "2025.06.05",
+    "kind": "기능",
+    "title": "ComfyUI 서브그래프 공개 베타 예고",
+    "summary": "워크플로 일부를 입출력을 가진 하나의 슈퍼 노드로 묶는 Subgraph 기능을 다음 주 공개 베타로 내놓는다고 알렸어요.",
+    "url": "https://blog.comfy.org/p/subgraphs-are-coming-to-comfyui",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2025-06-05-2",
+    "service": "comfyui",
+    "date": "2025.06.05",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.40: ImageStitch 노드와 도움말 통합",
+    "summary": "ComfyUI v0.3.40에서 여러 이미지를 이어 붙이는 ImageStitch, 이미지 크기 읽기, 정규식 치환 노드가 추가되고 노드 라이브러리에 도움말이 통합됐어요.",
+    "details": [
+      "커스텀 노드 pyproject.toml 의존성 관리 지원",
+      "프런트엔드 v1.21.7, XSS 취약점 수정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-40",
+    "source": "notice"
+  }
+]

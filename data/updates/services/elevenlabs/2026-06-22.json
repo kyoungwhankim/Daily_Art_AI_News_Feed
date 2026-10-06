@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2026-06-22-1",
+    "service": "elevenlabs",
+    "date": "2026.06.22",
+    "kind": "기능",
+    "title": "ElevenCreative Ads Engine",
+    "summary": "광고 계정과 연결해 광고 소재를 50개 이상 언어로 현지화하고 완성본을 다시 플랫폼에 올려 주는 Ads Engine이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-ads-engine-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-06-22-2",
+    "service": "elevenlabs",
+    "date": "2026.06.22",
+    "kind": "API",
+    "title": "음악 고음질 MP3 출력",
+    "summary": "음악 생성에 mp3 48kHz 240·320kbps 포맷이 추가되고, Studio 자막 애니메이션과 더빙 목록 필터가 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/22",
+    "source": "dev"
+  }
+]

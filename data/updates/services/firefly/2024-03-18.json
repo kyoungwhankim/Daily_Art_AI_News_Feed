@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2024-03-18-1",
+    "service": "firefly",
+    "date": "2024.03.18",
+    "kind": "연동",
+    "title": "Substance 3D 앱에 Firefly 기능 첫 도입",
+    "summary": "Substance 3D Sampler의 텍스트→텍스처와 Stager의 Generative Background 등 Firefly 기반 베타 기능이 처음으로 Substance 3D 앱에 들어갔어요.",
+    "url": "https://blog.adobe.com/en/publish/2024/03/18/adobe-announces-firefly-powered-features-substance-3d-apps",
+    "source": "notice"
+  }
+]

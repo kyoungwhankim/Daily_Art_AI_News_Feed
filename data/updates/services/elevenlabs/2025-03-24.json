@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-03-24-1",
+    "service": "elevenlabs",
+    "date": "2025.03.24",
+    "kind": "API",
+    "title": "Voices V2 검색 엔드포인트",
+    "summary": "더 나은 검색과 필터를 갖춘 Voices V2 엔드포인트가 추가됐고, STT 반복 처리와 Studio 고음질 Reader 내보내기가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/3/24",
+    "source": "dev"
+  }
+]

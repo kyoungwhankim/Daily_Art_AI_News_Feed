@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hugging-face-2025-05-23-1",
+    "service": "hugging-face",
+    "date": "2025.05.23",
+    "kind": "기능",
+    "title": "Static Space 빌드 단계 지원",
+    "summary": "Static Space에 서빙 전 커스텀 빌드 단계를 넣을 수 있어 React·Svelte·Vue 앱을 바로 배포할 수 있어요. 세 프레임워크용 템플릿도 추가됐어요.",
+    "url": "https://huggingface.co/changelog/static-spaces-build-step",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2025-05-23-2",
+    "service": "hugging-face",
+    "date": "2025.05.23",
+    "kind": "기능",
+    "title": "신규 사용자·조직 기본 스토리지를 Xet으로",
+    "summary": "새로 가입하는 사용자와 조직은 기본으로 Xet 스토리지를 쓰게 됐어요. 기존 계정도 hf.co/join/xet에서 이전할 수 있어요.",
+    "url": "https://huggingface.co/changelog/xet-default-for-new-users",
+    "source": "notice"
+  }
+]

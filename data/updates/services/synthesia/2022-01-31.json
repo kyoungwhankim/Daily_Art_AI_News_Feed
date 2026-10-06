@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2022-01-31-1",
+    "service": "synthesia",
+    "date": "2022.01.31",
+    "kind": "기능",
+    "title": "Synthesia 자막 SRT 다운로드",
+    "summary": "버튼 클릭으로 자막을 SRT 형식으로 내려받을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/download-captions",
+    "source": "notice"
+  }
+]

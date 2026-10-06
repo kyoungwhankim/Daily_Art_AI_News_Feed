@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-06-21-1",
+    "service": "scenario",
+    "date": "2024.06.21",
+    "kind": "기능",
+    "title": "스타일 이미지로 업스케일 유도",
+    "summary": "최대 5장의 스타일 이미지로 업스케일 결과를 유도할 수 있게 됐어요. 체크포인트 모델 업로드도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/1-60-style-consistent-guided-and-highly-controllable-upscales",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "veo-2025-05-30-1",
+    "service": "veo",
+    "date": "2025.05.30",
+    "kind": "기능",
+    "title": "Veo 3 제공 국가 확대와 모바일 앱 지원",
+    "summary": "Veo 3가 Ultra 플랜 73개국으로 확대되고, Pro 구독자도 Flow와 Gemini 모바일 앱에서 Veo 3를 쓸 수 있게 됐어요. 생성 영상에는 보이는 워터마크가 추가돼요.",
+    "details": [
+      "Pro 구독자: Flow 제한 접근, Gemini 앱 10회 체험",
+      "Flow의 Ultra 사용자 영상은 보이는 워터마크 제외"
+    ],
+    "url": "https://blog.google/products-and-platforms/products/gemini/veo-3-expansion-mobile/",
+    "source": "notice"
+  }
+]

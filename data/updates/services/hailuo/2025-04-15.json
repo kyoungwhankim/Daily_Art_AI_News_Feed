@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hailuo-2025-04-15-1",
+    "service": "hailuo",
+    "date": "2025.04.15",
+    "kind": "연동",
+    "title": "Hedra에 MiniMax 영상·TTS 모델 통합",
+    "summary": "MiniMax의 영상 생성 모델과 TTS 모델이 Hedra에 통합됐어요. Hedra에서 고품질 영상 생성과 다국어 음성을 함께 쓸 수 있어요.",
+    "url": "https://www.minimax.io/news/minimax-video-and-tts-models-are-now-on-hedra",
+    "source": "notice"
+  },
+  {
+    "id": "hailuo-2025-04-15-2",
+    "service": "hailuo",
+    "date": "2025.04.15",
+    "kind": "연동",
+    "title": "fal.ai에서 MiniMax 영상·이미지·오디오 모델 제공",
+    "summary": "MiniMax의 이미지·영상·오디오(음성·음악) 모델 전체를 fal.ai 플랫폼에서 쓸 수 있게 됐어요. 모델 갤러리에서 'MiniMax'를 검색하면 돼요.",
+    "url": "https://www.minimax.io/news/minimax-partners-with-falai",
+    "source": "notice"
+  }
+]

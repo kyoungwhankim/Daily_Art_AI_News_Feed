@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-06-20-1",
+    "service": "pixverse",
+    "date": "2025.06.20",
+    "kind": "API",
+    "title": "PixVerse API 텍스트·이미지→영상에 camera_movement 필드 지원",
+    "summary": "PixVerse API의 텍스트→영상과 이미지→영상 생성에서 camera_movement 필드로 카메라 움직임을 지정할 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

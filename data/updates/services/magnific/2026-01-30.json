@@ -1,0 +1,16 @@
+[
+  {
+    "id": "magnific-2026-01-30-1",
+    "service": "magnific",
+    "date": "2026.01.30",
+    "kind": "API",
+    "title": "Veo 3.1 Reference-to-Video API",
+    "summary": "레퍼런스 이미지 1~3장으로 캐릭터·사물 일관성을 유지하는 Google Veo 3.1 레퍼런스-투-비디오 엔드포인트를 추가했어요.",
+    "details": [
+      "720p·1080p·4K, 고정 8초 24fps",
+      "대사·효과음 네이티브 오디오"
+    ],
+    "url": "https://docs.magnific.com/changelog#january-30-2026",
+    "source": "dev"
+  }
+]

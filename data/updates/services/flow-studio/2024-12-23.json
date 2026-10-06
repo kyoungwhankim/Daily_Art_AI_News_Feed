@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-12-23-1",
+    "service": "flow-studio",
+    "date": "2024.12.23",
+    "kind": "기능",
+    "title": "Flow Studio, Character Pass 렌더",
+    "summary": "Live Action 프로젝트에서 캐릭터만 합친 Character Pass를 내려받아 전체를 다시 렌더하지 않고 합성을 다듬을 수 있어요. Render 단계 이름은 Export로 바뀌었어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

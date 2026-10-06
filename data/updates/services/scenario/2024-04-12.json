@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-04-12-1",
+    "service": "scenario",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "모델 프리셋·라이브러리에서 원클릭 학습",
+    "summary": "생성 설정을 모델 기본값으로 저장할 수 있고, 라이브러리에서 이미지를 골라 바로 모델을 학습시킬 수 있어요.",
+    "url": "https://www.scenario.com/changelog/1-52-presets-one-click-training",
+    "source": "notice"
+  }
+]

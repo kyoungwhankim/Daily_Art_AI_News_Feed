@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-11-18-1",
+    "service": "comfyui",
+    "date": "2025.11.18",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.69: pinned memory 기본 적용과 VRAM 절감",
+    "summary": "ComfyUI v0.3.69에서 NVIDIA·AMD GPU에 pinned memory가 기본으로 켜지고, Flux·Qwen·LTX-Video의 VRAM 사용량이 줄었어요.",
+    "details": [
+      "VRAM이 늘면 자동으로 모델 언로드",
+      "Flux에서 ScaleROPE 노드 동작"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-69",
+    "source": "notice"
+  }
+]

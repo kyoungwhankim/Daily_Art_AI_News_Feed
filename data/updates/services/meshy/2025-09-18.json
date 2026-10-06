@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-09-18-1",
+    "service": "meshy",
+    "date": "2025.09.18",
+    "kind": "요금",
+    "title": "Meshy 6 기준 API 요금 개편",
+    "summary": "Text to 3D와 Image to 3D API 요금이 Meshy 6와 다른 모델에 따라 다르게 매겨지도록 바뀌었어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  }
+]

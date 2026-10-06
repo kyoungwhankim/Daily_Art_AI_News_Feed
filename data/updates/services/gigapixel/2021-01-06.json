@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2021-01-06-1",
+    "service": "gigapixel",
+    "date": "2021.01.06",
+    "kind": "앱",
+    "title": "Gigapixel v5.4: CR3·DNG 지원 강화",
+    "summary": "CR3 파일과 파노라마 이미지 지원을 강화하고 DNG로 저장할 수 있게 했어요. 화질 피드백을 보내는 앱 내 평가 기능도 생겼어요.",
+    "details": [
+      "v5.4.3(1/20): Art 모델 업데이트로 색 아티팩트 제거",
+      "v5.4.4(1/28)·v5.4.5(2/25): 충돌·유휴 CPU 사용량 개선"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-4-5/19205",
+    "source": "notice"
+  }
+]

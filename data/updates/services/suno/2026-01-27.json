@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-01-27-1",
+    "service": "suno",
+    "date": "2026.01.27",
+    "kind": "기능",
+    "title": "Suno Sounds, 원샷 샘플·루프 생성",
+    "summary": "효과음 원샷이나 기타 리프·베이스라인 같은 루프를 프롬프트로 만드는 Create 모드 Sounds가 나왔어요.",
+    "url": "https://suno.com/release-notes/make-loops-and-samples-from-scratch-with-sounds",
+    "source": "notice"
+  }
+]

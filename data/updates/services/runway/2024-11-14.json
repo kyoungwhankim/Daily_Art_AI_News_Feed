@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2024-11-14-1",
+    "service": "runway",
+    "date": "2024.11.14",
+    "kind": "API",
+    "title": "Runway API 키프레임·셀프서브 요금제·조직 기능 추가",
+    "summary": "Gen-3 Alpha Turbo API에 첫·마지막 키프레임 지원과 약정 없는 셀프서브 사용 등급, 멀티유저 조직 기능이 추가됐어요.",
+    "details": [
+      "First, Last, First/Last 키프레임 지원",
+      "더 높은 동시 실행 한도의 셀프서브 등급",
+      "조직에 사용자 초대해 키·결제·사용량 관리"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

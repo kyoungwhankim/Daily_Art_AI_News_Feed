@@ -1,0 +1,25 @@
+[
+  {
+    "id": "veo-2025-07-10-1",
+    "service": "veo",
+    "date": "2025.07.10",
+    "kind": "기능",
+    "title": "Flow, Frames to Video에 음성 추가·140여 개국 확대",
+    "summary": "Flow의 Frames to Video에서 Veo 3로 대사(음성)까지 생성할 수 있게 됐고, Veo 3 Fast에서도 Frames to Video를 쓸 수 있어요. Flow 제공 국가는 140개국 이상으로 늘었어요.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-adds-speech-expands/",
+    "source": "notice"
+  },
+  {
+    "id": "veo-2025-07-10-2",
+    "service": "veo",
+    "date": "2025.07.10",
+    "kind": "기능",
+    "title": "Gemini 앱에 Veo 3 사진-투-비디오 기능 추가",
+    "summary": "Gemini에서 사진을 올리면 Veo 3가 소리가 있는 8초 영상으로 바꿔줘요. 일부 국가의 Google AI Pro·Ultra 구독자에게 제공돼요.",
+    "details": [
+      "생성 영상에 보이는 워터마크와 SynthID 적용"
+    ],
+    "url": "https://blog.google/products-and-platforms/products/gemini/photo-to-video/",
+    "source": "notice"
+  }
+]

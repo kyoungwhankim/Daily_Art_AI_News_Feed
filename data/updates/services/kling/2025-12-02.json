@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-12-02-1",
+    "service": "kling",
+    "date": "2025.12.02",
+    "kind": "모델",
+    "title": "Kling Image O1 모델 출시",
+    "summary": "멀티모달 추론으로 복합적인 지시를 정확히 이해하는 이미지 모델 Kling Image O1이 나왔어요. 하나의 엔진으로 생성과 편집 명령을 모두 처리해요.",
+    "url": "https://kling.ai/release-note/release-notes/exv6o36sxa",
+    "source": "notice"
+  }
+]

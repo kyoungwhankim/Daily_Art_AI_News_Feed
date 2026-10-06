@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2024-02-26-1",
+    "service": "runway",
+    "date": "2024.02.26",
+    "kind": "기능",
+    "title": "Assets V2와 Motion Brush 자동 영역 감지",
+    "summary": "에셋 페이지를 새로 디자인하고 즐겨찾기를 추가했어요. Motion Brush가 이미지의 주요 요소를 자동 감지해 브러시 작업이 훨씬 빨라졌어요.",
+    "details": [
+      "즐겨찾기 기능",
+      "설정에서 크레딧 사용 내역 표 확인",
+      "엔터프라이즈 Editor의 teamspace 생성"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

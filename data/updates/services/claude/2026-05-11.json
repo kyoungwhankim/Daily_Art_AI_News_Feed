@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-11-1",
+    "service": "claude",
+    "date": "2026.05.11",
+    "kind": "연동",
+    "title": "Claude Platform on AWS 출시",
+    "summary": "AWS 결제·IAM 인증으로 Anthropic 관리 인프라의 Claude API를 쓰는 Claude Platform on AWS가 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-11-2026",
+    "source": "dev"
+  }
+]

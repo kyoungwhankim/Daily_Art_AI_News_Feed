@@ -1,0 +1,17 @@
+[
+  {
+    "id": "veo-2024-05-14-1",
+    "service": "veo",
+    "date": "2024.05.14",
+    "kind": "모델",
+    "title": "Google I/O 2024에서 영상 생성 모델 Veo 첫 공개",
+    "summary": "Google DeepMind가 1080p 고화질 영상을 다양한 시네마틱 스타일로 생성하는 첫 영상 모델 Veo를 공개했어요. 대기자 명단으로 먼저 체험할 수 있어요.",
+    "details": [
+      "텍스트로 1080p 영상 생성, 다양한 영상 스타일 지원",
+      "Google Labs 실험 도구 VideoFX에서 Veo 제공 시작",
+      "Imagen 3와 함께 발표, SynthID 워터마크 적용"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/google-generative-ai-veo-imagen-3/",
+    "source": "notice"
+  }
+]

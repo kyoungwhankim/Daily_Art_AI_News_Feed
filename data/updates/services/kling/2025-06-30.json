@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-06-30-1",
+    "service": "kling",
+    "date": "2025.06.30",
+    "kind": "API",
+    "title": "Lip-Sync API 최대 60초 영상 지원",
+    "summary": "Kling Lip-Sync API가 최대 영상 길이를 10초에서 60초로 늘렸고, 생성 시간도 최소 2분 수준으로 빨라졌어요. 코드 수정은 필요 없어요.",
+    "url": "https://kling.ai/document-api/updates/api#06%2F30%2F2025",
+    "source": "dev"
+  }
+]

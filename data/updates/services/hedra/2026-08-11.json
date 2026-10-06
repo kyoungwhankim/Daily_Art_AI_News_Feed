@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-08-11-1",
+    "service": "hedra",
+    "date": "2026.08.11",
+    "kind": "기능",
+    "title": "Hedra Visual Skills: 스킬에 레퍼런스 이미지 영구 저장",
+    "summary": "Hedra 스킬에 로고, 제품 사진, 사운드, 참고 영상 같은 레퍼런스를 저장해 둘 수 있게 됐어요. 스킬마다 이미지를 최대 10장까지 붙여 매번 다시 첨부할 필요가 없어요.",
+    "url": "https://www.hedra.com/blog/visual-skills",
+    "source": "notice"
+  }
+]

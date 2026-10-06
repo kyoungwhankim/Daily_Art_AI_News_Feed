@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-08-22-1",
+    "service": "elevenlabs",
+    "date": "2026.08.22",
+    "kind": "종료",
+    "title": "로컬 MCP 서버 지원 중단, 호스팅 MCP로 전환",
+    "summary": "로컬 ElevenLabs MCP 서버와 MCP 플레이어가 지원 중단되고, OAuth로 로그인하는 호스팅 MCP 서버를 쓰도록 바뀌었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/8/22",
+    "source": "dev"
+  }
+]

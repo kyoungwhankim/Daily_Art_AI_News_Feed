@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-30-1",
+    "service": "elevenlabs",
+    "date": "2026.06.30",
+    "kind": "기능",
+    "title": "ElevenAgents Procedures",
+    "summary": "자연어나 기존 SOP 문서로 에이전트가 흔한 상황에서 어떻게 일할지 정의하는 Procedures가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/procedures",
+    "source": "notice"
+  }
+]

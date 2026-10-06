@@ -1,0 +1,32 @@
+[
+  {
+    "id": "synthesia-2021-06-25-1",
+    "service": "synthesia",
+    "date": "2021.06.25",
+    "kind": "기능",
+    "title": "Synthesia 배경 에셋 자르기·트리밍",
+    "summary": "배경 영상과 이미지를 자르고 길이를 다듬을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/cropping-and-trimming-of-background-assets",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2021-06-25-2",
+    "service": "synthesia",
+    "date": "2021.06.25",
+    "kind": "기능",
+    "title": "Synthesia 무료 스톡 이미지·영상",
+    "summary": "STUDIO에서 저작권 걱정 없는 스톡 이미지와 영상 수천 개를 바로 고를 수 있어요.",
+    "url": "https://www.synthesia.io/updates/stock-images-and-video",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2021-06-25-3",
+    "service": "synthesia",
+    "date": "2021.06.25",
+    "kind": "기능",
+    "title": "Synthesia 커스텀 배경음악 업로드",
+    "summary": "직접 가진 배경음악을 올려 영상에 쓸 수 있게 됐어요.",
+    "url": "https://www.synthesia.io/updates/upload-custom-soundtracks",
+    "source": "notice"
+  }
+]

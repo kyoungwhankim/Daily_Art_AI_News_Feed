@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-13-1",
+    "service": "claude",
+    "date": "2025.08.13",
+    "kind": "종료",
+    "title": "Sonnet 3.5 종료 예고·1시간 캐시 정식",
+    "summary": "Sonnet 3.5 모델이 10월 28일 종료될 예정이에요. 프롬프트 캐싱 1시간 유지 옵션은 베타 헤더 없이 쓸 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "comfyui-2026-01-13-1",
+    "service": "comfyui",
+    "date": "2026.01.13",
+    "kind": "기능",
+    "title": "ComfyUI v0.9.0: 모델 에셋 관리 기반 마련",
+    "summary": "ComfyUI v0.9.0에서 모델 에셋 관리를 위한 기본 API가 추가되고, NVFP4 양자화 모델에서 LoRA를 쓸 수 있게 됐어요.",
+    "details": [
+      "SigLIP 2 NAFlex 지원",
+      "ImageCompare·JoinAudioChannels 노드",
+      "Vidu2 API 노드",
+      "AMD gfx1200 PyTorch 어텐션 기본 적용"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-9-0",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-01-13-2",
+    "service": "comfyui",
+    "date": "2026.01.13",
+    "kind": "연동",
+    "title": "ComfyUI, Kling 2.6 Motion Control",
+    "summary": "참조 영상의 동작과 표정을 캐릭터 이미지에 옮기는 Kling 2.6 Motion Control을 ComfyUI에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/kling-26-motion-control",
+    "source": "notice"
+  }
+]

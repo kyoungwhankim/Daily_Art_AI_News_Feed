@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-02-17-1",
+    "service": "elevenlabs",
+    "date": "2026.02.17",
+    "kind": "기능",
+    "title": "고객 지원용 ElevenAgents for Support",
+    "summary": "기존 지원 문서를 에이전트 행동으로 바꿔 계속 개선되는 고객 지원 에이전트를 만드는 전용 상품이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-elevenagents-for-support",
+    "source": "notice"
+  }
+]

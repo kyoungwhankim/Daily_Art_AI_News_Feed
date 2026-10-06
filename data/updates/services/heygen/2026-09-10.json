@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-09-10-1",
+    "service": "heygen",
+    "date": "2026.09.10",
+    "kind": "API",
+    "title": "HeyGen API Burst Concurrency 도입",
+    "summary": "Enterprise 워크스페이스가 동시 처리 한도를 최대 +50까지 필요할 때만 늘릴 수 있어요. 초과 처리분만 계약 단가의 1.5배로 청구돼요.",
+    "url": "https://docs.heygen.com/changelog#burst-concurrency",
+    "source": "dev"
+  }
+]

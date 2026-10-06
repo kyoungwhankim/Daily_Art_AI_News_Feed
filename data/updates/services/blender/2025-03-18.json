@@ -1,0 +1,17 @@
+[
+  {
+    "id": "blender-2025-03-18-1",
+    "service": "blender",
+    "date": "2025.03.18",
+    "kind": "앱",
+    "title": "Blender 4.4 출시: 안정성과 애니메이션 개선",
+    "summary": "'Winter of Quality'로 700개 넘는 이슈를 고친 Blender 4.4가 나왔어요. 여러 데이터블록 애니메이션을 한 Action에 담는 Slots가 도입됐어요.",
+    "details": [
+      "Action Slots로 다중 애니메이션 관리",
+      "컴포지터 CPU 전면 재작성",
+      "Grease Pencil 안정화, VSE 텍스트 편집 개선"
+    ],
+    "url": "https://www.blender.org/press/blender-4-4-release/",
+    "source": "notice"
+  }
+]

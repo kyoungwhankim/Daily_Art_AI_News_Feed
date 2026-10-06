@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-03-19-1",
+    "service": "claude",
+    "date": "2024.03.19",
+    "kind": "연동",
+    "title": "Claude 3, Google Vertex AI 정식 제공",
+    "summary": "Claude 3 Haiku와 Sonnet을 Google Cloud Vertex AI에서 정식으로 쓸 수 있게 됐어요.",
+    "url": "https://www.anthropic.com/news/google-vertex-general-availability",
+    "source": "notice"
+  }
+]

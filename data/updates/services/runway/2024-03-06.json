@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-03-06-1",
+    "service": "runway",
+    "date": "2024.03.06",
+    "kind": "기능",
+    "title": "이미지 생성 도구 자동 저장 위치 설정",
+    "summary": "Text to Image와 Image to Image에서 앞으로의 생성물을 저장할 기본 위치를 정할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

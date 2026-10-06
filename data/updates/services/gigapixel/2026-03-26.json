@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2026-03-26-1",
+    "service": "gigapixel",
+    "date": "2026.03.26",
+    "kind": "API",
+    "title": "Topaz API 가격 체계 개편: Gigapixel 모델군 24MP/크레딧",
+    "summary": "Topaz API 첫 릴리스 노트에서 모델을 계열별로 묶고 출력 메가픽셀 기준 가격으로 단순화했어요. Gigapixel 계열은 크레딧당 24MP예요.",
+    "details": [
+      "일부 모델 가격 인하, 인상은 없음",
+      "Bloom·Starlight 프리미엄 모델 전체 고객 개방",
+      "개발자 문서·API Playground·Credit Calculator 개편"
+    ],
+    "url": "https://community.topazlabs.com/t/release-3-26-2026/101667",
+    "source": "dev"
+  }
+]

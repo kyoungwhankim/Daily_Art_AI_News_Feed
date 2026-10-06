@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-07-09-1",
+    "service": "runway",
+    "date": "2024.07.09",
+    "kind": "기능",
+    "title": "사이드바 디자인 개편",
+    "summary": "자주 쓰는 도구에 쉽게 접근할 수 있도록 내비게이션 사이드바를 새로 디자인했어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

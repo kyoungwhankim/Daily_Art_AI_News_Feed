@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-06-24-1",
+    "service": "comfyui",
+    "date": "2026.06.24",
+    "kind": "연동",
+    "title": "ComfyUI, HappyHorse 1.1 지원",
+    "summary": "대사·효과음·배경음을 한 번에 렌더링하는 Alibaba HappyHorse 1.1을 API 노드로 쓸 수 있어요. 같은 날 Seedance 2.0 4K와 Grok 영상 1080p도 추가됐어요.",
+    "url": "https://blog.comfy.org/p/happyhorse-11-is-now-available-in",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-04-01-1",
+    "service": "scenario",
+    "date": "2025.04.01",
+    "kind": "기능",
+    "title": "Projects 기능·활동 대시보드",
+    "summary": "콘텐츠와 팀별 공간을 만드는 Projects가 나왔어요. 권한 관리와 도구·사용자·프로젝트별 활동 대시보드도 생겼어요.",
+    "url": "https://www.scenario.com/changelog/v1-82-project-organization-new-model-list",
+    "source": "notice"
+  }
+]

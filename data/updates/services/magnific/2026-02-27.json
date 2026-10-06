@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-02-27-1",
+    "service": "magnific",
+    "date": "2026.02.27",
+    "kind": "요금",
+    "title": "Video Upscaler Turbo와 프레임 기반 과금, Runway Gen 4.5",
+    "summary": "Video Upscaler에 Turbo 전용 엔드포인트를 추가하고 출력 해상도별 프레임 기반 과금으로 바꿨어요. Runway Gen 4.5 영상 생성 엔드포인트도 추가됐어요.",
+    "details": [
+      "POST /v1/ai/video-upscaler/turbo",
+      "기존 turbo·premium_quality 파라미터 제거",
+      "Runway Gen 4.5 텍스트·이미지-투-비디오"
+    ],
+    "url": "https://docs.magnific.com/changelog#february-27-2026",
+    "source": "dev"
+  }
+]

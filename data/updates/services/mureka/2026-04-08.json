@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-04-08-1",
+    "service": "mureka",
+    "date": "2026.04.08",
+    "kind": "API",
+    "title": "레퍼런스 오디오로 보완 트랙 생성 API",
+    "summary": "레퍼런스 오디오에 어울리는 보컬·반주·악기 단일 트랙을 만드는 API가 추가됐어요.",
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

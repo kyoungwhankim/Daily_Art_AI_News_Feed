@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2024-07-15-1",
+    "service": "invokeai",
+    "date": "2024.07.15",
+    "kind": "기능",
+    "title": "Invoke 4.2.6: 갤러리 개편과 MultiDiffusion 타일 업스케일",
+    "summary": "Invoke 4.2.6에서 갤러리가 페이지 방식으로 바뀌고 보드·이미지 검색이 생겼어요. MultiDiffusion 타일 업스케일과 diffusers 변환 없는 체크포인트 사용도 지원해요.",
+    "details": [
+      "보드 목록 UI 개편과 보드 보관(Archive)",
+      "메타데이터 전문 검색"
+    ],
+    "url": "https://invoke.ai/releases/version/v4-2-6/",
+    "source": "notice"
+  }
+]

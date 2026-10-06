@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-17-1",
+    "service": "comfyui",
+    "date": "2025.05.17",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.1-VACE 네이티브 지원",
+    "summary": "Alibaba Tongyi의 통합 영상 편집 모델 Wan2.1-VACE를 ComfyUI에서 네이티브로 지원하고, ACE-Step 음악 생성 워크플로도 개선했어요.",
+    "url": "https://blog.comfy.org/p/wan21-vace-native-support-and-ace",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "heygen-2025-11-30-1",
+    "service": "heygen",
+    "date": "2025.11.30",
+    "kind": "모델",
+    "title": "HeyGen Avatar IV 업그레이드: 제스처 제어와 자동 렌더 선택",
+    "summary": "Avatar IV 엔진이 업그레이드돼 프롬프트로 제스처 시점과 순서를 정하고, 더 섬세한 표정과 몸짓을 표현해요. 렌더 방식도 자동으로 골라 줘요.",
+    "url": "https://heygen.noticeable.news/publications/avatar-iv-upgrades",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2025-11-30-2",
+    "service": "heygen",
+    "date": "2025.11.30",
+    "kind": "종료",
+    "title": "HeyGen Voices 탭 이동과 Flux 제품 배치 기능 제거",
+    "summary": "독립 Voices 탭이 각 작업 흐름 안으로 옮겨졌고, Flux 기반 제품 배치 기능은 제거됐어요. 레퍼런스 이미지 룩 편집은 Nano Banana로 처리해요.",
+    "url": "https://heygen.noticeable.news/publications/whats-leaving",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2025-11-30-3",
+    "service": "heygen",
+    "date": "2025.11.30",
+    "kind": "앱",
+    "title": "HeyGen Android 앱 미국 출시",
+    "summary": "HeyGen이 미국에서 Android 앱을 정식 출시했어요. 휴대폰에서 영상을 만들고 편집해 바로 게시할 수 있어요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-now-on-android",
+    "source": "notice"
+  }
+]

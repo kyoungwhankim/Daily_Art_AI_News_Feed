@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pika-2026-05-26-1",
+    "service": "pika",
+    "date": "2026.05.26",
+    "kind": "기능",
+    "title": "Pika Experiments 공개: 에이전트 프로토타입 공개 워크숍",
+    "summary": "개발 중인 에이전트 프로토타입을 코드와 함께 공개하는 Pika Experiments를 시작했어요. 첫 실험은 대화에 맞춰 화면 UI를 실시간으로 만들어 주는 Generative UI예요.",
+    "url": "https://pika.art/blog/pika-experiments",
+    "source": "notice"
+  }
+]

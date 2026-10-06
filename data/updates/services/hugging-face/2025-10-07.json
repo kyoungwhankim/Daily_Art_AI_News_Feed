@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-10-07-1",
+    "service": "hugging-face",
+    "date": "2025.10.07",
+    "kind": "기능",
+    "title": "GGUF 메타데이터 웹 편집기 추가",
+    "summary": "10GB 이하 GGUF 파일의 채팅 템플릿 같은 메타데이터를 웹에서 바로 수정할 수 있게 됐어요. Xet 덕분에 가능해진 기능이에요.",
+    "url": "https://huggingface.co/changelog/gguf-metadata-editor",
+    "source": "notice"
+  }
+]

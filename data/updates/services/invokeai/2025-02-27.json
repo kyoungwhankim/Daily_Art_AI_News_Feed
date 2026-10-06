@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-02-27-1",
+    "service": "invokeai",
+    "date": "2025.02.27",
+    "kind": "기능",
+    "title": "Invoke 5.7.0: 워크플로 Form Builder",
+    "summary": "Invoke 5.7.0에서 워크플로 Linear View가 제목·텍스트·컨테이너 등을 배치할 수 있는 Form Builder로 바뀌었어요. 인기 메타데이터 노드 팩도 코어에 들어왔어요.",
+    "url": "https://invoke.ai/releases/version/v5-7-0/",
+    "source": "notice"
+  }
+]

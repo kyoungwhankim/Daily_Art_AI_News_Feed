@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-02-05-1",
+    "service": "hugging-face",
+    "date": "2026.02.05",
+    "kind": "기능",
+    "title": "커뮤니티 평가·벤치마크 저장소 리더보드",
+    "summary": "벤치마크 데이터셋이 평가 리더보드를 호스팅하고 모델 페이지에 평가 점수가 표시돼요. 직접 돌린 평가 결과를 PR로 제출해 커뮤니티 평가로 올릴 수 있어요.",
+    "url": "https://huggingface.co/changelog/dataset-leaderboards",
+    "source": "notice"
+  }
+]

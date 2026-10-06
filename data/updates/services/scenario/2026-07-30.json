@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-30-1",
+    "service": "scenario",
+    "date": "2026.07.30",
+    "kind": "연동",
+    "title": "MCP 팀·프로젝트 자동 선택",
+    "summary": "MCP 서버가 가능하면 팀과 프로젝트 범위를 자동으로 정해 연결이 간단해졌어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-24-1",
+    "source": "notice"
+  }
+]

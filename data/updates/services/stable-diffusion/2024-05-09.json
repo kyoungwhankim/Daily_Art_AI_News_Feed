@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stable-diffusion-2024-05-09-1",
+    "service": "stable-diffusion",
+    "date": "2024.05.09",
+    "kind": "연동",
+    "title": "Discord 봇 Stable Artisan 출시",
+    "summary": "Discord에서 Stable Diffusion 3와 Stable Image Core로 이미지를 만들고 편집하는 봇 Stable Artisan을 출시했어요.",
+    "details": [
+      "Search and Replace, 배경 제거, Creative Upscale, Outpainting 지원"
+    ],
+    "url": "https://stability.ai/news-updates/stable-artisan",
+    "source": "notice"
+  }
+]

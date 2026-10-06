@@ -1,0 +1,16 @@
+[
+  {
+    "id": "runway-2026-08-15-1",
+    "service": "runway",
+    "date": "2026.08.15",
+    "kind": "기능",
+    "title": "Seedance 2.5 1080p 생성 지원",
+    "summary": "Seedance 2.5가 모든 화면에서 1080p로 생성할 수 있게 돼 더 선명한 결과를 얻을 수 있어요.",
+    "details": [
+      "API: seedance2_5 텍스트·이미지·영상 투 비디오 1080p, 출력 초당 68크레딧",
+      "4K는 Seedance 2.0에서 유지"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

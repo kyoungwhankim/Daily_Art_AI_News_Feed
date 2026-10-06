@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-11-20-1",
+    "service": "tripo",
+    "date": "2024.11.20",
+    "kind": "API",
+    "title": "text_to_model 스타일·auto_size 추가",
+    "summary": "text_to_model에 style 파라미터가, 생성 API에 실제 크기 자동 조정 auto_size가 추가됐어요. 변환 옵션도 유연해졌어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-8-2024-11-20",
+    "source": "dev"
+  }
+]

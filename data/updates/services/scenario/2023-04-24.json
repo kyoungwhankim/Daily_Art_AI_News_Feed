@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-04-24-1",
+    "service": "scenario",
+    "date": "2023.04.24",
+    "kind": "기능",
+    "title": "생성기 페이지 재디자인·팀 URL 공유",
+    "summary": "생성기 페이지를 새로 설계하고 팀 URL을 공유해 협업할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-10-0-april-24-2023",
+    "source": "notice"
+  }
+]

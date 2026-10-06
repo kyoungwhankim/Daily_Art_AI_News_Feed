@@ -1,0 +1,22 @@
+[
+  {
+    "id": "firefly-2026-08-06-1",
+    "service": "firefly",
+    "date": "2026.08.06",
+    "kind": "연동",
+    "title": "ChatGPT용 Adobe 플러그인 출시",
+    "summary": "ChatGPT Work와 Codex에서 Adobe의 70개 넘는 창작·생산성 도구로 이미지·영상·디자인·문서를 만드는 Adobe 플러그인이 나왔어요.",
+    "url": "https://blog.adobe.com/en/publish/2026/08/06/introducing-adobe-chatgpt-create-edit-get-work-done-all-in-chatgpt",
+    "source": "notice"
+  },
+  {
+    "id": "firefly-2026-08-06-2",
+    "service": "firefly",
+    "date": "2026.08.06",
+    "kind": "기능",
+    "title": "Firefly Creative Production 워크플로 템플릿 정리",
+    "summary": "기업용 Firefly Creative Production 홈에서 워크플로 템플릿을 Banners at Scale과 Product Assets로 나눠 쉽게 찾고 실행할 수 있게 됐어요.",
+    "url": "https://community.adobe.com/announcements-402/new-in-adobe-firefly-creative-production-workflow-templates-now-organized-by-banners-at-scale-and-product-assets-1635296",
+    "source": "notice"
+  }
+]

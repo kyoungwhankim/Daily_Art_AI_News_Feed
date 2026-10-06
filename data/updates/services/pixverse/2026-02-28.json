@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-02-28-1",
+    "service": "pixverse",
+    "date": "2026.02.28",
+    "kind": "API",
+    "title": "PixVerse API에 Mimic(모션 컨트롤) 기능 추가",
+    "summary": "PixVerse API에 참고 영상의 동작을 따라 하게 만드는 Mimic 기능을 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

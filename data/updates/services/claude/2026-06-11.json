@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-11-1",
+    "service": "claude",
+    "date": "2026.06.11",
+    "kind": "API",
+    "title": "코드 실행·웹 검색·웹 페치 도구 새 버전",
+    "summary": "코드 실행 도구가 90초 셀 제한을 알려 주는 새 버전을, 웹 검색·페치 도구가 결과 블록을 응답에서 뺄 수 있는 새 버전을 지원해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-08-19-1",
+    "service": "fal.ai",
+    "date": "2025.08.19",
+    "kind": "모델",
+    "title": "Qwen Image Edit fal 제공",
+    "summary": "글꼴 스타일을 유지한 채 텍스트를 고치는 등 편집 능력이 뛰어난 오픈 웨이트 Qwen Image Edit이 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/introducing-qwen-image-edit/",
+    "source": "notice"
+  }
+]

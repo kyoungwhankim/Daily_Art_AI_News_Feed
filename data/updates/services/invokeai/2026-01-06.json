@@ -1,0 +1,18 @@
+[
+  {
+    "id": "invokeai-2026-01-06-1",
+    "service": "invokeai",
+    "date": "2026.01.06",
+    "kind": "모델",
+    "title": "InvokeAI 6.10.0: Z-Image Turbo 지원",
+    "summary": "상업 법인 종료 후 첫 커뮤니티 에디션 릴리스인 6.10.0에서 영어·중국어 글자를 잘 그리는 Z-Image Turbo 모델군을 지원해요. 16GB VRAM에서 전체 모델이 돌아가요.",
+    "details": [
+      "diffusers·safetensors·GGUF·FP8 등 대부분 버전 지원",
+      "ZiT LoRA·ControlNet·캔버스·지역 가이드 지원",
+      "워크플로 태그와 Prompt Template 노드",
+      "프롬프트 가중치 단축키(Ctrl+화살표)"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-10-0/",
+    "source": "notice"
+  }
+]

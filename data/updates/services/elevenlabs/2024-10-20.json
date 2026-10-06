@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-10-20-1",
+    "service": "elevenlabs",
+    "date": "2024.10.20",
+    "kind": "기능",
+    "title": "Voice Design 베타 공개",
+    "summary": "텍스트 설명으로 새 목소리를 만드는 Voice Design 기능이 베타로 열렸어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/10/20",
+    "source": "dev"
+  }
+]

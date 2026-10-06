@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-05-06-1",
+    "service": "claude",
+    "date": "2026.05.06",
+    "kind": "요금",
+    "title": "Claude 사용 한도 상향·SpaceX 컴퓨트 계약",
+    "summary": "Claude 사용 한도를 올리고, 단기 용량을 크게 늘릴 SpaceX와의 컴퓨트 파트너십을 체결했어요.",
+    "url": "https://www.anthropic.com/news/higher-limits-spacex",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-05-06-2",
+    "service": "claude",
+    "date": "2026.05.06",
+    "kind": "API",
+    "title": "Managed Agents 멀티에이전트·Outcomes·웹훅·Dreams",
+    "summary": "Managed Agents의 멀티에이전트 오케스트레이션과 Outcomes가 공개 베타가 되고, 웹훅과 메모리를 재정리하는 Dreams(리서치 프리뷰)가 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
+    "source": "dev"
+  }
+]

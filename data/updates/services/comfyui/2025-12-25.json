@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-25-1",
+    "service": "comfyui",
+    "date": "2025.12.25",
+    "kind": "연동",
+    "title": "ComfyUI, Tripo v3.0 3D 생성 지원",
+    "summary": "더 깔끔한 지오메트리와 고품질 텍스처, Standard·Detailed(Ultra) 모드를 갖춘 Tripo v3.0을 ComfyUI 워크플로에서 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/generate-high-fidelity-3d-models",
+    "source": "notice"
+  }
+]

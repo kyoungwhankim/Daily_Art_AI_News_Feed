@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-11-1",
+    "service": "meshy",
+    "date": "2026.09.11",
+    "kind": "API",
+    "title": "meshy-6-lite 추가·meshy-5 지원 중단",
+    "summary": "meshy-5의 후속 meshy-6-lite가 같은 가격으로 추가됐어요. 실행 중인 작업의 DELETE는 이제 409로 거부돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

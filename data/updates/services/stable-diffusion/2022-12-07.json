@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2022-12-07-1",
+    "service": "stable-diffusion",
+    "date": "2022.12.07",
+    "kind": "모델",
+    "title": "Stable Diffusion 2.1 공개",
+    "summary": "2.0 출시 몇 주 만에 데이터셋 필터링을 완화해 예전 프롬프트 스타일도 잘 듣는 Stable Diffusion 2.1을 공개했어요. API와 DreamStudio에서도 쓸 수 있어요.",
+    "details": [
+      "512px·768px 모델, Hugging Face 체크포인트 공개",
+      "API에 가중치를 준 멀티 프롬프트(네거티브 프롬프트) 지원"
+    ],
+    "url": "https://stability.ai/news-updates/stablediffusion2-1-release7-dec-2022",
+    "source": "notice"
+  }
+]

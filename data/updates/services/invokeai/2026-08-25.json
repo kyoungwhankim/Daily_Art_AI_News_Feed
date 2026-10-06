@@ -1,0 +1,19 @@
+[
+  {
+    "id": "invokeai-2026-08-25-1",
+    "service": "invokeai",
+    "date": "2026.08.25",
+    "kind": "기능",
+    "title": "InvokeAI 6.14.0: Wan 2.2 영상 생성과 멀티 GPU",
+    "summary": "InvokeAI 6.14.0에서 Wan 2.2로 텍스트·이미지 기반 짧은 영상을 만들 수 있고, 여러 GPU에 생성 작업을 나누는 멀티 GPU를 지원해요.",
+    "details": [
+      "Krea.2 Turbo·Raw, FLUX.2 Dev, Ernie Image Turbo, Ideogram 4 지원",
+      "Anima ControlNet·인페인팅, FLUX.2 PiD 4K 초해상도",
+      "Intel XPU 기본 지원",
+      "FP8로 VRAM 약 50% 절감",
+      "태블릿 필압 브러시 불투명도"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-6-14-0/",
+    "source": "notice"
+  }
+]

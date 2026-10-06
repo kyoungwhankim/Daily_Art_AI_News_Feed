@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2022-02-02-1",
+    "service": "gigapixel",
+    "date": "2022.02.02",
+    "kind": "앱",
+    "title": "Gigapixel AI v5.8: 얼굴 보정 개선과 메모리 절감",
+    "summary": "새 얼굴 감지·보정 모델로 인물 확대가 좋아졌고, 큰 이미지 내보내기 메모리 사용과 JPEG 입출력 시간이 줄었어요.",
+    "details": [
+      "Windows GPU에서 대부분 모델 디테일 향상",
+      "Photoshop 플러그인 설치 메뉴 추가"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-8-0/29700",
+    "source": "notice"
+  }
+]

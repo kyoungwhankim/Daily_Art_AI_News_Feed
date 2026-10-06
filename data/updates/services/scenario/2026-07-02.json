@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-07-02-1",
+    "service": "scenario",
+    "date": "2026.07.02",
+    "kind": "API",
+    "title": "3D 모델 확대·사용자별 소비 한도",
+    "summary": "3D·오디오 모델이 늘고 사용자별 소비 한도를 설정할 수 있어요. BYOK 안정성도 개선됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-124-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-07-02-2",
+    "service": "scenario",
+    "date": "2026.07.02",
+    "kind": "요금",
+    "title": "팀 소비 한도·프롬프트 @멘션",
+    "summary": "팀의 Compute Unit 사용량에 세부 한도를 걸 수 있고, 프롬프트에서 @멘션 자동완성을 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-16-0",
+    "source": "notice"
+  }
+]

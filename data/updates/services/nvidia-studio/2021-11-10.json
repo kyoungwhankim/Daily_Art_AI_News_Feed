@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2021-11-10-1",
+    "service": "nvidia-studio",
+    "date": "2021.11.10",
+    "kind": "앱",
+    "title": "11월 Studio 드라이버·Omniverse 업데이트",
+    "summary": "GTC에서 Omniverse VR·Remote·Showroom 등 새 기능이 발표됐고, 이를 지원하는 11월 Studio 드라이버가 나왔어요. Logitech 헤드셋에는 Broadcast 노이즈 제거가 통합됐어요.",
+    "url": "https://blogs.nvidia.com/blog/studio-gtc/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-09-14-1",
+    "service": "claude",
+    "date": "2026.09.14",
+    "kind": "API",
+    "title": "요청 시 대화 압축(compaction) 베타",
+    "summary": "Messages API로 원하는 시점에 대화를 압축해 서명된 compaction 블록을 받아, 이후 요청에서 이전 메시지 대신 보낼 수 있어요(compact-2026-09-04 베타).",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-14-2026",
+    "source": "dev"
+  }
+]

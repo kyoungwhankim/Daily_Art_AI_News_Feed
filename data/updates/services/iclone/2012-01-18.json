@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2012-01-18-1",
+    "service": "iclone",
+    "date": "2012.01.18",
+    "kind": "기능",
+    "title": "iClone 5.1, Kinect 모캡 손목·머리 애니메이션",
+    "summary": "Kinect SDK 베타2 기반 Device Mocap으로 손목·머리 애니메이션과 바닥 자동 감지, 미러, 스무딩을 지원해요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

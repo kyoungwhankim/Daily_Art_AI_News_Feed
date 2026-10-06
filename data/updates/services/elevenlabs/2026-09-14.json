@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2026-09-14-1",
+    "service": "elevenlabs",
+    "date": "2026.09.14",
+    "kind": "연동",
+    "title": "ElevenLabs MCP로 음성·음악·이미지·영상 생성",
+    "summary": "Claude·ChatGPT·Cursor에서 MCP로 음성·음악·효과음·이미지·영상을 만들고 결과를 ElevenCreative 워크스페이스로 받을 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-voice-music-image-and-video-generation-in-the-elevenlabs-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-14-2",
+    "service": "elevenlabs",
+    "date": "2026.09.14",
+    "kind": "모델",
+    "title": "Music v2.5 API 지원과 에이전트 통화 대기열",
+    "summary": "음악 엔드포인트와 SDK가 music_v2_5를 지원해요. 동시 통화 한도에 닿은 에이전트에는 대기열과 대기 음악이 생겼어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/9/14",
+    "source": "dev"
+  }
+]

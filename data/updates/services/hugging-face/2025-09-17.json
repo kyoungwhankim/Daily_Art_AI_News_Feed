@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-09-17-1",
+    "service": "hugging-face",
+    "date": "2025.09.17",
+    "kind": "기능",
+    "title": "Spaces 커스텀 도메인 지원",
+    "summary": "Space를 내 도메인으로 호스팅할 수 있게 됐어요. PRO 사용자와 Team·Enterprise 조직이 Space 설정에서 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog/custom-domains-for-spaces",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2025-09-18-1",
+    "service": "dream-machine",
+    "date": "2025.09.18",
+    "kind": "모델",
+    "title": "Ray3 출시: 추론하는 영상 모델",
+    "summary": "스스로 결과를 평가하고 다듬는 추론 영상 모델 Ray3를 Dream Machine에 내놨어요. 10·12·16비트 HDR EXR 생성과 빠른 탐색용 Draft Mode를 지원해요.",
+    "details": [
+      "ACES2065-1 EXR 형식 HDR 출력",
+      "Adobe Firefly 앱에도 출시"
+    ],
+    "url": "https://lumalabs.ai/news/ray3",
+    "source": "notice"
+  }
+]

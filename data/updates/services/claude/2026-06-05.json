@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-05-1",
+    "service": "claude",
+    "date": "2026.06.05",
+    "kind": "종료",
+    "title": "Claude Opus 4.1 지원 종료 예고",
+    "summary": "Claude Opus 4.1이 2026년 8월 5일 API에서 종료될 예정이에요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-5-2026",
+    "source": "dev"
+  }
+]

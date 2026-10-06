@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-04-08-1",
+    "service": "tripo",
+    "date": "2024.04.08",
+    "kind": "요금",
+    "title": "Tripo API 1.0, 첫 유료 요금제 도입",
+    "summary": "Tripo API 1.0과 함께 첫 API 과금 플랜이 도입됐어요. 요금표와 FAQ도 공개됐어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-0-0-2024-04-08",
+    "source": "dev"
+  }
+]

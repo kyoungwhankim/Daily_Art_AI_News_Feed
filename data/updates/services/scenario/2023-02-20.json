@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-02-20-1",
+    "service": "scenario",
+    "date": "2023.02.20",
+    "kind": "기능",
+    "title": "웹 앱 v1.0.0 출시",
+    "summary": "Scenario 웹 앱 v1.0.0이 나왔어요. 열 개수 조절, 생성기 자동 선택, 최적 비율 버튼 등 새 기능이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-0-0-february-20-2023",
+    "source": "notice"
+  }
+]

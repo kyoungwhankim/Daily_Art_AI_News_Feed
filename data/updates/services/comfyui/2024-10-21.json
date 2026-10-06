@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2024-10-21-1",
+    "service": "comfyui",
+    "date": "2024.10.21",
+    "kind": "앱",
+    "title": "ComfyUI V1: 데스크톱 앱 클로즈드 베타",
+    "summary": "Windows·macOS·Linux용 코드 서명 데스크톱 앱 ComfyUI V1을 클로즈드 베타로 공개했어요. 자동 업데이트, 200MB 경량 패키지, ComfyUI Manager 기본 탑재가 특징이에요.",
+    "details": [
+      "워크플로 탭으로 여러 작업 전환",
+      "커스텀 단축키",
+      "기존 설치의 모델·입출력 자동 가져오기",
+      "통합 로그 뷰어"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-v1-release",
+    "source": "notice"
+  }
+]

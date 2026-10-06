@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-03-11-1",
+    "service": "firefly",
+    "date": "2025.03.11",
+    "kind": "API",
+    "title": "Firefly API 커스텀 모델 지원",
+    "summary": "Generate Images API에서 커스텀 모델로 이미지를 만들 수 있게 됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#march-11-2025",
+    "source": "dev"
+  }
+]

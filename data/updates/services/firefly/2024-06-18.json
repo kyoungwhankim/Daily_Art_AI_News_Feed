@@ -1,0 +1,16 @@
+[
+  {
+    "id": "firefly-2024-06-18-1",
+    "service": "firefly",
+    "date": "2024.06.18",
+    "kind": "API",
+    "title": "Firefly API: Image Model 3(프리뷰)와 신규 API",
+    "summary": "Firefly Image Model 3(프리뷰)를 지원하는 V3 Generate Images·Expand·Fill API와 새 Generate Similar Images, Generate Object Composite API가 추가됐어요.",
+    "details": [
+      "콘텐츠 클래스·스타일 프리셋, 스타일·구조 참조 가이드",
+      "Firefly Services SDK 시작 가이드"
+    ],
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#june-18-2024",
+    "source": "dev"
+  }
+]

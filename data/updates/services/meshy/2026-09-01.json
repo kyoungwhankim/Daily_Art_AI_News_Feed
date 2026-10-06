@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-01-1",
+    "service": "meshy",
+    "date": "2026.09.01",
+    "kind": "API",
+    "title": "Multi-Image to 3D Ultra 모드·meshy-t1 문서 제외",
+    "summary": "Multi-Image to 3D에 ultra_mode가 추가됐어요. Smart Topology 문서에서는 meshy-t1이 빠지고 meshy-t2만 남았어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

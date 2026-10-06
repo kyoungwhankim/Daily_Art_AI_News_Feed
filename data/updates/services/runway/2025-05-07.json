@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-05-07-1",
+    "service": "runway",
+    "date": "2025.05.07",
+    "kind": "요금",
+    "title": "무료 플랜에 Gen-4 이미지·References 제공",
+    "summary": "Gen-4 Text to Image와 References를 무료 플랜 사용자도 쓸 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-06-03-1",
+    "service": "suno",
+    "date": "2024.06.03",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 검색",
+    "summary": "제목과 설명으로 플레이리스트를 검색할 수 있게 됐어요.",
+    "url": "https://suno.com/release-notes/suno-playlists-are-searchable",
+    "source": "notice"
+  }
+]

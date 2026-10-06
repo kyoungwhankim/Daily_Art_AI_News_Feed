@@ -1,0 +1,18 @@
+[
+  {
+    "id": "suno-2026-03-26-1",
+    "service": "suno",
+    "date": "2026.03.26",
+    "kind": "모델",
+    "title": "Suno v5.5, Voices·Custom Models·My Taste",
+    "summary": "편곡과 보컬이 좋아진 v5.5와 함께 내 목소리를 쓰는 Voices, 내 곡 6개 이상으로 학습하는 Custom Models, 취향 반영 My Taste가 나왔어요.",
+    "details": [
+      "v5.5 모델",
+      "Voices: 내 목소리로 노래",
+      "Custom Models: 내 카탈로그로 맞춤 학습",
+      "My Taste 개인화"
+    ],
+    "url": "https://suno.com/release-notes/introducing-v5-5-voices-custom-models-and-my-taste",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-18-1",
+    "service": "meshy",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "Multi-Image to 3D 멀티 텍스처 이미지 지원",
+    "summary": "Multi-Image to 3D에 texture_image_urls가 추가돼 1–4장의 이미지로 텍스처링을 유도할 수 있어요(meshy-7).",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

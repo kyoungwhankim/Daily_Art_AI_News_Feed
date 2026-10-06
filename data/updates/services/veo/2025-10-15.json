@@ -1,0 +1,18 @@
+[
+  {
+    "id": "veo-2025-10-15-1",
+    "service": "veo",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "Veo 3.1 공개, Flow 편집 기능에 오디오 지원",
+    "summary": "오디오·서사 제어·사실감이 개선된 Veo 3.1이 공개되고, Flow의 Ingredients to Video·Frames to Video·Extend에도 오디오가 들어갔어요. Gemini API에도 프리뷰로 나왔어요.",
+    "details": [
+      "Flow에서 클립을 더 세밀하게 편집하는 기능 추가",
+      "Gemini API: Veo 3.1·3.1 Fast 프리뷰, 영상 연장",
+      "Gemini API: 최대 3장 레퍼런스 이미지, 첫·마지막 프레임 지정",
+      "Veo 3 출력 길이 4·6·8초 옵션 추가"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/veo-updates-flow/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-06-05-1",
+    "service": "meshy",
+    "date": "2026.06.05",
+    "kind": "API",
+    "title": "투명 배경 썸네일 alpha_thumbnail 추가",
+    "summary": "여러 3D API에 alpha_thumbnail 옵션이 생겨 투명 배경(RGBA) 미리보기를 함께 받을 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2026",
+    "source": "dev"
+  }
+]

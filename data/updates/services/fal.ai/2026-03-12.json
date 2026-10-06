@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-12-1",
+    "service": "fal.ai",
+    "date": "2026.03.12",
+    "kind": "기능",
+    "title": "앱 버전 삭제·러너 링크 공유",
+    "summary": "대시보드에서 앱 버전을 개별 삭제하고, 러너 상세를 URL로 공유하고, 요청 로그를 엔드포인트별로 거를 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#march-12-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-09-16-1",
+    "service": "claude",
+    "date": "2026.09.16",
+    "kind": "기능",
+    "title": "Cowork를 모든 대화에서 · 디자인·슬라이드·문서 생성",
+    "summary": "Claude Cowork 기능을 모드 선택 없이 모든 대화에서 쓸 수 있게 됐어요. 어떤 대화에서든 디자인·덱·문서를 만들고 편집할 수 있고, Claude Design·Slides·Docs는 무료 플랜 포함 모든 플랜에서 제공돼요.",
+    "details": [
+      "Pro·Max부터 웹·데스크톱·모바일 순차 적용",
+      "Claude Design 캔버스 편집·디자인 시스템 가져오기를 대화 안에서 지원"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

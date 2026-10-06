@@ -1,0 +1,17 @@
+[
+  {
+    "id": "suno-2024-04-12-1",
+    "service": "suno",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "Suno 프로필·Explore·새 홈페이지",
+    "summary": "내 곡을 모아 보여 주는 Profiles, 탐색형 감상 공간 Explore(베타), 카테고리별 새 홈페이지가 나왔어요.",
+    "details": [
+      "Profiles와 핸들",
+      "Explore (Beta)",
+      "New·Trending·Liked 홈 카테고리"
+    ],
+    "url": "https://suno.com/release-notes/profiles",
+    "source": "notice"
+  }
+]

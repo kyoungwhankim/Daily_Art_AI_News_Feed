@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-08-22-1",
+    "service": "scenario",
+    "date": "2024.08.22",
+    "kind": "기능",
+    "title": "스카이박스 베타·고해상도 텍스처",
+    "summary": "Scenario 안에서 360° 스카이박스를 만드는 기능이 베타로 나왔고 고해상도 텍스처도 지원해요.",
+    "url": "https://www.scenario.com/changelog/1-66-skyboxes-high-res-textures",
+    "source": "notice"
+  }
+]

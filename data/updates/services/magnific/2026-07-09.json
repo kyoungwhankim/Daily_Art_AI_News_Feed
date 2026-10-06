@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-07-09-1",
+    "service": "magnific",
+    "date": "2026.07.09",
+    "kind": "API",
+    "title": "Seedream 5.0 Pro 생성·편집 API",
+    "summary": "ByteDance 플래그십 Seedream 5.0 Pro의 텍스트-투-이미지와 편집 엔드포인트를 추가했어요. 2K 출력과 레퍼런스 이미지 최대 10장 편집을 지원해요.",
+    "details": [
+      "POST /v1/ai/text-to-image/seedream-v5-pro",
+      "POST /v1/ai/text-to-image/seedream-v5-pro-edit",
+      "2k·1.5k 해상도, 8가지 종횡비"
+    ],
+    "url": "https://docs.magnific.com/changelog#july-9-2026",
+    "source": "dev"
+  }
+]

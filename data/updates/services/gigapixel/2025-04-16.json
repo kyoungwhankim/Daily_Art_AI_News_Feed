@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-04-16-1",
+    "service": "gigapixel",
+    "date": "2025.04.16",
+    "kind": "앱",
+    "title": "Gigapixel v8.3.4: 모델 처리 오류 수정",
+    "summary": "RAW가 검게 불러와지던 문제와 Text & Shapes·High Fidelity v2 처리 오류를 고쳤어요. 투명 이미지 로컬 렌더링도 바로잡았어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-3-4/89968",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-06-07-1",
+    "service": "comfyui",
+    "date": "2025.06.07",
+    "kind": "API",
+    "title": "커스텀 노드 표준 Nodes v3 구상 공개",
+    "summary": "의존성 충돌 등 커스텀 노드 문제를 풀기 위한 Nodes v3 구상을 처음 공개하고 노드 작성자들의 의견을 받기 시작했어요.",
+    "url": "https://blog.comfy.org/p/dependency-resolution-and-custom",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-02-23-1",
+    "service": "runway",
+    "date": "2024.02.23",
+    "kind": "기능",
+    "title": "에셋 일괄 작업",
+    "summary": "여러 에셋을 한 번에 이동·다운로드·삭제할 수 있는 일괄 작업이 추가됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

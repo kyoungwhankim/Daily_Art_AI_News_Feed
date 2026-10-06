@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-15-1",
+    "service": "scenario",
+    "date": "2026.09.15",
+    "kind": "모델",
+    "title": "GPT Image 2.5·P-Video 2·3D-to-Image",
+    "summary": "GPT Image 2.5 Flare·Sunburst, P-Video 2, 3D로 이미지를 만드는 3D-to-image, 영상 비교 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-25-0",
+    "source": "notice"
+  }
+]

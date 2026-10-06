@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-01-16-1",
+    "service": "claude",
+    "date": "2026.01.16",
+    "kind": "요금",
+    "title": "Cowork Pro 확대·Team 표준 좌석에 Claude Code 포함",
+    "summary": "Cowork 리서치 프리뷰가 Pro(macOS)로 확대되고, Team 표준 좌석에 Claude Code가 포함됐어요. Opus 4·4.1은 앱 모델 선택기에서 빠졌어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

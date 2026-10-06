@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-08-21-1",
+    "service": "claude",
+    "date": "2025.08.21",
+    "kind": "기능",
+    "title": "공유 아티팩트 임베드·데스크톱 확장 관리자 제어",
+    "summary": "무료·Pro·Max 사용자가 게시한 아티팩트의 임베드 코드를 만들 수 있고, Team·Enterprise는 데스크톱 확장을 관리할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

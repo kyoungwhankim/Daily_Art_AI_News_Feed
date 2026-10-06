@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2023-12-04-1",
+    "service": "flow-studio",
+    "date": "2023.12.04",
+    "kind": "기능",
+    "title": "Wonder Studio, USD 씬 내보내기 지원",
+    "summary": "Live Action과 AI MoCap 프로젝트를 USD 씬으로 내보낼 수 있어 다양한 DCC 툴에서 애니메이션·조명 등을 편집할 수 있어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

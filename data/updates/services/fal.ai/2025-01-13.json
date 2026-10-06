@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-01-13-1",
+    "service": "fal.ai",
+    "date": "2025.01.13",
+    "kind": "모델",
+    "title": "PlayAI PlayDialog 대화형 음성 모델 fal 제공",
+    "summary": "350ms 지연으로 감정과 맥락을 살린 대화형 음성을 만드는 PlayAI의 PlayDialog가 fal에 출시됐어요.",
+    "url": "https://blog.fal.ai/introducing-playdialog-the-next-evolution-in-conversational-ai/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-03-1",
+    "service": "fal.ai",
+    "date": "2026.02.03",
+    "kind": "API",
+    "title": "입출력 정의용 FalBaseModel 도입",
+    "summary": "Pydantic 기반 FalBaseModel로 숨김 필드, 필드 순서, 이미지·오디오·영상 필드 헬퍼를 지정해 API와 플레이그라운드 UI를 더 잘 정의할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#february-3-2026",
+    "source": "dev"
+  }
+]

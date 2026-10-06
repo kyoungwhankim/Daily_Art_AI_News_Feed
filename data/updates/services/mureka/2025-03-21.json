@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mureka-2025-03-21-1",
+    "service": "mureka",
+    "date": "2025.03.21",
+    "kind": "모델",
+    "title": "Mureka O1·V6 모델과 반주 생성",
+    "summary": "전문가급 보컬·믹스의 O1 모델과 10개 언어·4.5분 곡을 지원하는 V6 모델이 나왔어요. 반주만 만드는 Instrumental 생성도 추가됐어요.",
+    "details": [
+      "O1: 2곡당 10크레딧",
+      "V6: 2곡당 2크레딧, 최대 4.5분",
+      "Instrumental 트랙 생성"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

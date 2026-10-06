@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-11-20-1",
+    "service": "claude",
+    "date": "2024.11.20",
+    "kind": "API",
+    "title": "입력·출력 토큰별 속도 제한·Workbench 도구 사용",
+    "summary": "분당 토큰 제한이 입력·출력 토큰별 제한으로 바뀌었고, Workbench에서 도구 사용을 지원해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-20th-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-07-27-1",
+    "service": "ludo.ai",
+    "date": "2026.07.27",
+    "kind": "기능",
+    "title": "3D 모델 원클릭 리깅",
+    "summary": "외부 소프트웨어 없이 3D 모델에 클릭 한 번으로 엔진용 스켈레톤을 넣을 수 있어요. 손가락 포함 휴머노이드도 지원해요.",
+    "url": "https://ludo.ai/whats-new#rig-your-3d-models-in-one-click-engine-ready-skeletons",
+    "source": "notice"
+  }
+]

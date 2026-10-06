@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-06-14-1",
+    "service": "runway",
+    "date": "2024.06.14",
+    "kind": "정책",
+    "title": "커스텀 보이스 생성 시 본인 동의 필수",
+    "summary": "Custom Voice를 만들 때 명시적인 사용자 동의 절차(Voice Verification)를 거치도록 바뀌었어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iclone-2026-07-28-1",
+    "service": "iclone",
+    "date": "2026.07.28",
+    "kind": "기능",
+    "title": "iClone 8 RTX Render 오픈 베타 시작",
+    "summary": "NVIDIA RTX 패스 트레이싱 기반 새 렌더 모드 RTX Render 오픈 베타가 iClone 8과 Character Creator 5에서 무료로 시작됐어요. 기존 DX11 엔진과 전환하며 쓸 수 있어요.",
+    "details": [
+      "물리 기반 패스 트레이싱 라이팅",
+      "Transmission·Coat·Sheen·Hair 전용 RTX 머티리얼",
+      "실제 카메라 피사계 심도와 절차적 하늘"
+    ],
+    "url": "https://magazine.reallusion.com/2026/07/28/rtx-render-open-beta-begins-path-traced-quality-inside-character-creator-5-and-iclone-8/",
+    "source": "notice"
+  }
+]

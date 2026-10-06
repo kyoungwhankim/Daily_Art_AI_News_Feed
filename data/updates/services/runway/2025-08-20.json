@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-08-20-1",
+    "service": "runway",
+    "date": "2025.08.20",
+    "kind": "기능",
+    "title": "Act-Two에서 목소리 변경 지원",
+    "summary": "Act-Two 화면에서 바로 퍼포먼스의 목소리를 바꿀 수 있어 캐릭터 연기 생성이 더 유연해졌어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

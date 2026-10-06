@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-09-15-1",
+    "service": "layer",
+    "date": "2026.09.15",
+    "kind": "API",
+    "title": "Layer CLI·TypeScript SDK·에이전트 스킬",
+    "summary": "터미널과 스크립트에서 생성할 수 있는 Layer CLI, TypeScript SDK, 에이전트 스킬이 나왔어요. Gemini 마스크 편집도 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-09-15",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-03-07-1",
+    "service": "topaz-video",
+    "date": "2023.03.07",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.1.8: FFmpeg 6.0 적용",
+    "summary": "FFmpeg 6.0으로 업데이트하고 중복 프레임 제거가 3채널을 검사하도록 개선했어요. 손상된 모델 파일은 자동으로 다시 받아요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-1-8/41269",
+    "source": "notice"
+  }
+]

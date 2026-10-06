@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-11-01-1",
+    "service": "invokeai",
+    "date": "2024.11.01",
+    "kind": "기능",
+    "title": "Invoke 5.3.1: 모든 레이어 병합 지원",
+    "summary": "Invoke 5.3.1에서 모든 레이어 종류에 병합이 가능해지고 Merge Down이 추가됐어요. Merge Visible은 사진 편집 앱처럼 새 레이어로 합치도록 바뀌었어요.",
+    "url": "https://invoke.ai/releases/version/v5-3-1/",
+    "source": "notice"
+  }
+]

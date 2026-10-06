@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2021-08-25-1",
+    "service": "gigapixel",
+    "date": "2021.08.25",
+    "kind": "앱",
+    "title": "Gigapixel v5.6.0: 최대 3개 모델 비교 보기",
+    "summary": "최대 3개 모델을 한 번에 비교하는 Comparison View와 분할 보기가 추가됐어요. 처리 하드웨어 자동 선택과 모델 다운로드 진행 표시도 생겼어요.",
+    "details": [
+      "v5.6.1(8/27): Mac 메모리 누수 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-6-1/26422",
+    "source": "notice"
+  }
+]

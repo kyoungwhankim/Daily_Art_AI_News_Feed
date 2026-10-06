@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-10-28-1",
+    "service": "claude",
+    "date": "2025.10.28",
+    "kind": "종료",
+    "title": "Sonnet 3.5 종료·사고 블록 자동 정리",
+    "summary": "Claude Sonnet 3.5 모델이 종료되고 Sonnet 3.7 종료가 예고됐어요. 컨텍스트 편집에 사고 블록 자동 정리가 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+    "source": "dev"
+  }
+]

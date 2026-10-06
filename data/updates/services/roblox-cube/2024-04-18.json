@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2024-04-18-1",
+    "service": "roblox-cube",
+    "date": "2024.04.18",
+    "kind": "기능",
+    "title": "Assistant 스크립트 삽입 확대",
+    "summary": "Assistant가 Part 아래뿐 아니라 DataModel 전체에 스크립트를 만들어 넣을 수 있게 됐어요. 비스크립터도 쉽게 작업할 수 있어요.",
+    "url": "https://devforum.roblox.com/t/assistant-enhanced-script-insertion-unlocks-new-use-cases/2936134",
+    "source": "notice"
+  }
+]

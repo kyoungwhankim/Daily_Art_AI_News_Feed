@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2025-04-23-1",
+    "service": "midjourney",
+    "date": "2025.04.23",
+    "kind": "기능",
+    "title": "에디터 개편, V7 새 프롬프트 바와 --weird·--tile·Remix",
+    "summary": "외부 이미지 에디터가 모든 요금제에 열리고 UI가 단순해졌어요. V7용 새 프롬프트 바와 --weird, --tile, Remix 지원도 추가됐어요.",
+    "details": [
+      "레이어로 여러 이미지 가져오기, 스마트 선택",
+      "AI 모더레이션 개선으로 차단 감소",
+      "개인화·Draft·대화·음성 모드 토글 버튼",
+      "Draft의 Enhance 버튼 품질 개선"
+    ],
+    "url": "https://updates.midjourney.com/editor-improvements-a/",
+    "source": "notice"
+  }
+]

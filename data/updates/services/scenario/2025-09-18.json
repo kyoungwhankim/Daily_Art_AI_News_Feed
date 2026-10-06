@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-09-18-1",
+    "service": "scenario",
+    "date": "2025.09.18",
+    "kind": "모델",
+    "title": "Kling AI Avatar Pro·MM Audio·MiniMax Music 1.5",
+    "summary": "말하는 아바타 Kling AI Avatar Pro, 영상→오디오 MM Audio, 보컬 노래 생성 MiniMax Music 1.5가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-96-2-new-model-additions-audio-lipsync",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2025-09-18-2",
+    "service": "scenario",
+    "date": "2025.09.18",
+    "kind": "API",
+    "title": "Flux Kontext LoRA·멀티 참조 편집",
+    "summary": "Edit with prompt의 Flux Kontext가 LoRA와 여러 참조 이미지 편집을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v2-87-0-kontext-comeback",
+    "source": "dev"
+  }
+]

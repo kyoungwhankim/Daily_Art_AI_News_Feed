@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-05-21-1",
+    "service": "claude",
+    "date": "2025.05.21",
+    "kind": "API",
+    "title": "Ruby SDK 정식 출시",
+    "summary": "Claude API용 Ruby SDK가 베타를 벗어나 첫 정식 버전이 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-21-2025",
+    "source": "dev"
+  }
+]

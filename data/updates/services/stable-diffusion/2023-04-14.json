@@ -1,0 +1,22 @@
+[
+  {
+    "id": "stable-diffusion-2023-04-14-1",
+    "service": "stable-diffusion",
+    "date": "2023.04.14",
+    "kind": "연동",
+    "title": "Amazon Bedrock에 Stable Diffusion 모델 제공",
+    "summary": "AWS와 전략적 제휴를 맺고 새 관리형 서비스 Amazon Bedrock을 통해 Stable Diffusion 모델을 API로 제공하기로 했어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-makes-its-stable-diffusion-models-available-on-amazons-new-bedrock-service",
+    "source": "notice"
+  },
+  {
+    "id": "stable-diffusion-2023-04-14-2",
+    "service": "stable-diffusion",
+    "date": "2023.04.14",
+    "kind": "API",
+    "title": "API에 SDXL 베타 엔진 추가",
+    "summary": "gRPC SDK와 REST API에서 stable-diffusion-xl-beta-v2-2-2 엔진을 쓸 수 있게 됐어요. 최대 512×896 해상도 제한과 별도 가격이 적용돼요.",
+    "url": "https://platform.stability.ai/docs/release-notes#sdxl-release",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dream-machine-2025-06-24-1",
+    "service": "dream-machine",
+    "date": "2025.06.24",
+    "kind": "API",
+    "title": "Modify Video API 출시",
+    "summary": "Modify Video를 API와 SDK로 쓸 수 있게 돼 영상 변환 워크플로를 대규모로 자동화할 수 있어요. Ray2 기반이에요.",
+    "details": [
+      "최대 10초, 100MB, 24fps",
+      "Python·JS SDK 1.15.0"
+    ],
+    "url": "https://lumalabs.ai/changelog/modify-video-api-release",
+    "source": "dev"
+  }
+]

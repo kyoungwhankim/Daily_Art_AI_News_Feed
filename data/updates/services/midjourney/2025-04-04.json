@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2025-04-04-1",
+    "service": "midjourney",
+    "date": "2025.04.04",
+    "kind": "모델",
+    "title": "Midjourney V7 알파 공개",
+    "summary": "텍스트·이미지 프롬프트 이해와 화질, 손·몸 일관성이 크게 좋아진 V7을 알파로 공개했어요. 개인화가 기본으로 켜진 첫 모델이에요.",
+    "details": [
+      "절반 비용·10배 속도의 Draft Mode(--draft)",
+      "대화형 모드와 음성 모드 지원",
+      "Turbo·Relax 모드로 출시, 표준 속도는 추후",
+      "업스케일·편집·Retexture는 V6 모델로 대체 처리"
+    ],
+    "url": "https://updates.midjourney.com/v7-alpha/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-02-19-1",
+    "service": "gigapixel",
+    "date": "2025.02.19",
+    "kind": "앱",
+    "title": "Gigapixel v8.2.1: 안정성 패치",
+    "summary": "레거시 모델 선택 문제와 macOS Redefine 경고 창 문제를 고치고 배치 클라우드 렌더링 예상 시간을 개선했어요. EULA도 업데이트됐어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-2-1/87737",
+    "source": "notice"
+  }
+]

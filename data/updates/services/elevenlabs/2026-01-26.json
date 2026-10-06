@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-01-26-1",
+    "service": "elevenlabs",
+    "date": "2026.01.26",
+    "kind": "기능",
+    "title": "에이전트 브랜치·배포 버전 관리",
+    "summary": "에이전트에 브랜치와 배포를 갖춘 버전 관리 시스템이 들어왔고, 곡 메타데이터에 BPM·박자가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/26",
+    "source": "dev"
+  }
+]

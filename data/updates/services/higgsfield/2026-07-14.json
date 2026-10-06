@@ -1,0 +1,12 @@
+[
+  {
+    "id": "higgsfield-2026-07-14-1",
+    "service": "higgsfield",
+    "date": "2026.07.14",
+    "kind": "기능",
+    "title": "주제·URL로 해설 영상 만드는 Explainer",
+    "summary": "주제나 URL, 파일을 넣으면 일관된 스타일과 내레이션을 갖춘 최대 10분짜리 구조화된 해설 영상을 만들어 주는 Explainer를 소개했어요.",
+    "url": "https://higgsfield.ai/blog/ai-video-from-text-and-url",
+    "source": "notice"
+  }
+]

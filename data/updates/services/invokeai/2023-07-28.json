@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-07-28-1",
+    "service": "invokeai",
+    "date": "2023.07.28",
+    "kind": "모델",
+    "title": "InvokeAI 3.0.1: Stable Diffusion XL 1.0 지원",
+    "summary": "InvokeAI 3.0.1에서 Text2Image·Image2Image 패널로 Stable Diffusion XL 1.0을 바로 렌더링할 수 있게 됐어요(Unified Canvas 제외).",
+    "details": [
+      "SDXL base·refiner를 설치 도구나 모델 매니저에서 다운로드",
+      "SDXL 권장 비가시 워터마크 옵션",
+      "NSFW 감지기 재도입"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-3-0-1/",
+    "source": "notice"
+  }
+]

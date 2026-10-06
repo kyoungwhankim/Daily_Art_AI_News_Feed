@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-09-10-1",
+    "service": "krea",
+    "date": "2026.09.10",
+    "kind": "기능",
+    "title": "Krea Agent 모든 플랜에 공개",
+    "summary": "브리프를 쓰면 계획·모델 선택·이미지·영상·오디오 생성과 정리까지 해 주는 Krea Agent를 Free를 포함한 모든 플랜에 열었어요. 출시 주간에는 무료 크레딧도 줬어요.",
+    "details": [
+      "웹, Slack, ChatGPT용 Krea에서 사용",
+      "생성 비용은 이미지·영상 도구와 동일",
+      "9월 15일까지 Free 300·Basic 1,500·Pro 이상 5,000 무료 크레딧"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#september-10-2026",
+    "source": "dev"
+  }
+]

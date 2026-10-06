@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-18-1",
+    "service": "claude",
+    "date": "2026.05.18",
+    "kind": "기능",
+    "title": "웹 검색 도구 SEC 공시 데이터 강화",
+    "summary": "웹 검색 도구가 더 풍부한 SEC 공시 데이터를 반환해 금융 리서치 에이전트가 1차 출처로 근거를 댈 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#may-18-2026",
+    "source": "dev"
+  }
+]

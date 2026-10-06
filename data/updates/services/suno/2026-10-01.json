@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2026-10-01-1",
+    "service": "suno",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "Suno Speech (beta), 말과 배경음악 동시 생성",
+    "summary": "말과 그 사운드트랙을 한 번에 만드는 첫 모델 Speech가 베타로 나왔어요. 피아노 위 동화 낭독 같은 콘텐츠를 만들 수 있어요.",
+    "url": "https://suno.com/release-notes/introducing-speech-beta",
+    "source": "notice"
+  }
+]

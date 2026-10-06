@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-09-07-1",
+    "service": "synthesia",
+    "date": "2026.09.07",
+    "kind": "기능",
+    "title": "Synthesia 모션 그래픽에 브랜드 키트 글꼴 적용",
+    "summary": "모션 그래픽이 기본으로 브랜드 키트 글꼴을 쓰고, 브랜드 키트를 바꾸면 자동으로 갱신돼요.",
+    "url": "https://www.synthesia.io/updates/brand-kit-font-support-in-motion-graphics",
+    "source": "notice"
+  }
+]

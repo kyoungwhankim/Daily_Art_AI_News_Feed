@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pixverse-2026-01-12-1",
+    "service": "pixverse",
+    "date": "2026.01.12",
+    "kind": "모델",
+    "title": "PixVerse R1 공개: 실시간 인터랙티브 월드 모델",
+    "summary": "사용자 입력에 즉시 반응하는 1080P 영상을 끝없이 생성하는 실시간 월드 모델 PixVerse R1을 출시했어요. 게임·인터랙티브 콘텐츠에 쓸 수 있어요.",
+    "details": [
+      "영상·오디오·월드 상태를 하나의 시스템에서 동시 생성",
+      "샘플링 단계를 1~4단계로 줄여 실시간 응답",
+      "realtime.pixverse.ai에서 이용, 기업 API는 파트너 대상"
+    ],
+    "url": "https://pixverse.ai/en/blog/pixverse-launches-r1-real-time-world-model",
+    "source": "notice"
+  }
+]

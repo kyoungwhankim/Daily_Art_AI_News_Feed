@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-18-1",
+    "service": "scenario",
+    "date": "2026.09.18",
+    "kind": "연동",
+    "title": "립싱크 파이프라인·2D 에셋 템플릿 스킬",
+    "summary": "scenario-video 스킬이 립싱크 전체 파이프라인을 지원하고, 아이소메트릭·스프라이트 템플릿이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-44-0",
+    "source": "notice"
+  }
+]

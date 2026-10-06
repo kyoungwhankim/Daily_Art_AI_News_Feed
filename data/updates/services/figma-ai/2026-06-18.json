@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-06-18-1",
+    "service": "figma-ai",
+    "date": "2026.06.18",
+    "kind": "기능",
+    "title": "Figma 디자인 에이전트 웹 검색 지원",
+    "summary": "디자인 에이전트가 웹에서 실시간 정보를 가져와 모범 사례를 찾고, 플레이스홀더 대신 실제 콘텐츠로 디자인을 채울 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=search-the-web-in-the-figma-design-agent",
+    "source": "notice"
+  }
+]

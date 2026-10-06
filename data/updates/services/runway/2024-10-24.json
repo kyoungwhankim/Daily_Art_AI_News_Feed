@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-10-24-1",
+    "service": "runway",
+    "date": "2024.10.24",
+    "kind": "기능",
+    "title": "생성 영상 GIF 내보내기",
+    "summary": "Gen-2, Gen-3 Alpha, Gen-3 Alpha Turbo 생성 피드에서 영상을 GIF로 내보낼 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "dream-machine-2026-09-02-1",
+    "service": "dream-machine",
+    "date": "2026.09.02",
+    "kind": "기능",
+    "title": "Luma Agents 아랍어 인터페이스 출시 예정 발표",
+    "summary": "Luma Agents가 올해 안에 메뉴와 작업 도구까지 아랍어로 현지화된 인터페이스를 제공한다고 발표했어요. 영어 외 첫 인터페이스 언어예요.",
+    "details": [
+      "현재도 아랍어 프롬프트와 결과물 생성 지원"
+    ],
+    "url": "https://lumalabs.ai/news/luma-ai-to-launch-native-arabic-language-interface-for-saudi-and-arabic-speaking-creative-community",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-29-1",
+    "service": "comfyui",
+    "date": "2025.12.29",
+    "kind": "정책",
+    "title": "ComfyUI 저장소, 1월 6일까지 Comfy-Org로 이전",
+    "summary": "ComfyUI 저장소를 @comfyanonymous 계정에서 @Comfy-Org 조직으로 1월 6일까지 옮긴다고 미리 알렸어요. 기존 주소는 자동으로 연결돼요.",
+    "url": "https://blog.comfy.org/p/comfyui-repo-will-moved-to-comfy",
+    "source": "notice"
+  }
+]

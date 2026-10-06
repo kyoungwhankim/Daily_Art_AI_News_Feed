@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-03-18-1",
+    "service": "midjourney",
+    "date": "2024.03.18",
+    "kind": "기능",
+    "title": "Niji용 새 --sref 업데이트 롤백",
+    "summary": "Niji 모델의 새 스타일 참조에서 큰 버그가 발견돼 이전 버전으로 되돌렸어요. 새 sref는 일반 V6에서는 계속 쓸 수 있어요.",
+    "url": "https://updates.midjourney.com/rolling-back-niji-style-ref-update/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2023-02-02-1",
+    "service": "stable-diffusion",
+    "date": "2023.02.02",
+    "kind": "API",
+    "title": "REST API v1beta 릴리스 후보 공개",
+    "summary": "REST API v1beta가 나와 입력 파라미터를 정리하고 해상도 허용 범위를 넓혔어요. image-to-image에 image_strength 파라미터도 생겼어요.",
+    "details": [
+      "최소 가로·세로 128px, 픽셀 수 기준 검증",
+      "오류에 id 필드 포함"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes#v1beta-rc",
+    "source": "dev"
+  }
+]

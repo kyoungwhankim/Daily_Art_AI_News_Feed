@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-10-21-1",
+    "service": "comfyui",
+    "date": "2025.10.21",
+    "kind": "기능",
+    "title": "ComfyUI 0.3.66: 서브그래프 파라미터 패널과 새 템플릿 라이브러리",
+    "summary": "서브그래프 안에 들어가지 않고 위젯을 편집하는 Parameters 패널과, 모델 태그로 거르는 새 템플릿 라이브러리가 ComfyUI 0.3.66에 추가됐어요.",
+    "details": [
+      "워크플로 취소 속도 개선",
+      "PyTorch 2.9에서 VAE 메모리 3배 사용 문제 수정"
+    ],
+    "url": "https://blog.comfy.org/p/comfyui-0366-updates",
+    "source": "notice"
+  }
+]

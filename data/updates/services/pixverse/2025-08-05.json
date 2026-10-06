@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-08-05-1",
+    "service": "pixverse",
+    "date": "2025.08.05",
+    "kind": "API",
+    "title": "PixVerse API에 Sound effect·Fusion 기능 추가",
+    "summary": "PixVerse API에 효과음 생성(Sound effect)과 레퍼런스 기반 영상 생성(Fusion) 기능을 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-10-11-1",
+    "service": "stable-diffusion",
+    "date": "2024.10.11",
+    "kind": "종료",
+    "title": "구형 SD 2.1·SDXL 베타 API 모델 지원 종료",
+    "summary": "stable-diffusion-512-v2-1, SDXL 베타·0.9, ESRGAN 업스케일러 등 구형 API 모델 지원을 종료했어요. SDXL 1.0, SD3, Stable Image로 옮기길 권해요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

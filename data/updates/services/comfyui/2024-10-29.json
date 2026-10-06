@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-10-29-1",
+    "service": "comfyui",
+    "date": "2024.10.29",
+    "kind": "모델",
+    "title": "ComfyUI, Stable Diffusion 3.5 Medium 지원",
+    "summary": "소비자용 GPU에 맞춘 2.6B 파라미터 모델 Stable Diffusion 3.5 Medium을 ComfyUI에서 지원해요. 0.25~2메가픽셀 해상도를 다뤄요.",
+    "url": "https://blog.comfy.org/p/sd-35-medium",
+    "source": "notice"
+  }
+]

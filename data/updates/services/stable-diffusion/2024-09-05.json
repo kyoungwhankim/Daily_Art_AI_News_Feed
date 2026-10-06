@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stable-diffusion-2024-09-05-1",
+    "service": "stable-diffusion",
+    "date": "2024.09.05",
+    "kind": "연동",
+    "title": "Lenovo Creator Zone에 Stable Diffusion 탑재",
+    "summary": "Lenovo가 전용 파인튜닝 Stable Diffusion을 탑재한 이미지 생성·편집 앱 Lenovo Creator Zone을 공개했어요.",
+    "details": [
+      "텍스트·스케치·이미지 기반 생성, 고급 편집 도구"
+    ],
+    "url": "https://stability.ai/news-updates/lenovo-features-stability-ai-text-to-image-model-in-its-new-lenovo-creator-zone",
+    "source": "notice"
+  }
+]

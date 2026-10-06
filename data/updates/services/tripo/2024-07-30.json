@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-07-30-1",
+    "service": "tripo",
+    "date": "2024.07.30",
+    "kind": "API",
+    "title": "모델 스트리밍 조회·model_version 도입",
+    "summary": "생성된 모델을 스트리밍으로 받는 방식이 추가됐어요. 모델 지정 필드가 model_version으로 바뀌고 오류 코드가 단순해졌어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-1-2-2024-07-30",
+    "source": "dev"
+  }
+]

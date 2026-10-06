@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-07-07-1",
+    "service": "layer",
+    "date": "2025.07.07",
+    "kind": "기능",
+    "title": "오디오 생성·이미지 크롭 도구",
+    "summary": "Layer에서 오디오를 생성할 수 있고 이미지 크롭 도구가 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/5#2025-07-07",
+    "source": "notice"
+  }
+]

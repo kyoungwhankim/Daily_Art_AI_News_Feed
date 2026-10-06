@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-06-02-1",
+    "service": "claude",
+    "date": "2026.06.02",
+    "kind": "정책",
+    "title": "Enterprise 커스텀 역할에 관리자 권한 추가",
+    "summary": "Enterprise의 커스텀 역할에 관리자 권한을 더해, 소유자가 아니어도 청구·개인정보 등 특정 관리 영역만 맡길 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-06-02-2",
+    "service": "claude",
+    "date": "2026.06.02",
+    "kind": "요금",
+    "title": "어드바이저 출력 제한·출력 전 거절 미과금",
+    "summary": "advisor 도구에 max_tokens로 출력을 제한할 수 있고, 출력 없이 거절된 요청은 과금되지 않아요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-2-2026",
+    "source": "dev"
+  }
+]

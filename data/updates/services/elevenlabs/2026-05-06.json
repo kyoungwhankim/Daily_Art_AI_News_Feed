@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-05-06-1",
+    "service": "elevenlabs",
+    "date": "2026.05.06",
+    "kind": "기능",
+    "title": "ElevenAgents 새 모달리티, 이미지·파일 처리",
+    "summary": "에이전트가 이미지·파일·음성 메모·연락처·위치·키패드 입력까지 처리해 더 많은 문제를 끝까지 해결할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-new-modalities",
+    "source": "notice"
+  }
+]

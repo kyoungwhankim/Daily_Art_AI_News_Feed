@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-11-02-1",
+    "service": "fal.ai",
+    "date": "2025.11.02",
+    "kind": "기능",
+    "title": "대용량 파일 업로드 타임아웃 10분으로 연장",
+    "summary": "fal files upload의 타임아웃이 10분으로 늘어 수 GB 파일도 오류 없이 올릴 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#november-2-2025",
+    "source": "dev"
+  }
+]

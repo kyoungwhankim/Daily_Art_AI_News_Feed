@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-18-1",
+    "service": "comfyui",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "새 ComfyUI-Manager 통합",
+    "summary": "ComfyUI-Manager가 ComfyUI에 공식 통합되고, 더 빠른 검색과 안전한 설치를 위한 새 Manager UI가 추가됐어요.",
+    "url": "https://blog.comfy.org/p/meet-the-new-comfyui-manager",
+    "source": "notice"
+  }
+]

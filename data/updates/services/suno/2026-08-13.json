@@ -1,0 +1,17 @@
+[
+  {
+    "id": "suno-2026-08-13-1",
+    "service": "suno",
+    "date": "2026.08.13",
+    "kind": "앱",
+    "title": "Suno Studio 2.0, MIDI·이펙트·신스 탑재",
+    "summary": "브라우저 생성형 DAW Suno Studio가 MIDI, 오디오 이펙트, 내장 신스, 채팅 바를 갖춘 2.0으로 전면 개편됐어요.",
+    "details": [
+      "타임라인 MIDI 가져오기·녹음·편집",
+      "채팅 바로 악기·보컬·플러그인·신스 프리셋 생성",
+      "오디오 이펙트와 내장 신스"
+    ],
+    "url": "https://suno.com/release-notes/studio-2",
+    "source": "notice"
+  }
+]

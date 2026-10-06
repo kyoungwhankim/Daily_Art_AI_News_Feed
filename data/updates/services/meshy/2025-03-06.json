@@ -1,0 +1,18 @@
+[
+  {
+    "id": "meshy-2025-03-06-1",
+    "service": "meshy",
+    "date": "2025.03.06",
+    "kind": "요금",
+    "title": "API 생성 작업 요금 변경",
+    "summary": "API 작업 크레딧이 바뀌었어요. Text to 3D Preview는 5, Refine은 10, Image to 3D는 텍스처 없이 5·텍스처 포함 15, Text to Texture는 10크레딧이에요.",
+    "details": [
+      "Text to 3D Preview 2→5크레딧",
+      "Text to 3D Refine 5→10크레딧",
+      "Image to 3D 텍스처 없음 5·포함 15크레딧",
+      "Text to Texture 5→10크레딧, Text to Voxel 5크레딧 유지"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  }
+]

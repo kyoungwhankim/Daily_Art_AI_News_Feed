@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-09-1",
+    "service": "elevenlabs",
+    "date": "2026.03.09",
+    "kind": "API",
+    "title": "STT No Verbatim 모드와 모바일 SAML SSO",
+    "summary": "말 더듬 등을 정리해 전사하는 no_verbatim 옵션과 iOS·Android 앱 SAML SSO가 추가됐어요. 에이전트는 Claude Sonnet 4.6을 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/3/9",
+    "source": "dev"
+  }
+]

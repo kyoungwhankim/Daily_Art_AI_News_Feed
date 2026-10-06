@@ -1,0 +1,17 @@
+[
+  {
+    "id": "nano-banana-2026-06-30-1",
+    "service": "nano-banana",
+    "date": "2026.06.30",
+    "kind": "모델",
+    "title": "Nano Banana 2 Lite(Gemini 3.1 Flash Lite Image) 출시",
+    "summary": "Nano Banana 제품군 중 가장 빠르고 저렴한 Nano Banana 2 Lite가 출시됐어요. 대량·고속 이미지 파이프라인용이며, 첫 Nano Banana(gemini-2.5-flash-image)의 대체 모델로 권장돼요.",
+    "details": [
+      "모델명 gemini-3.1-flash-lite-image, Gemini API에서 바로 GA",
+      "Google AI Studio, Gemini API, Gemini Enterprise Agent Platform 제공",
+      "AI Mode in Search, Gemini 앱 등 소비자 제품에도 적용"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+    "source": "notice"
+  }
+]

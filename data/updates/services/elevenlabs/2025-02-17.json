@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-02-17-1",
+    "service": "elevenlabs",
+    "date": "2025.02.17",
+    "kind": "API",
+    "title": "에이전트 툴 호출 수정과 워크스페이스 개선",
+    "summary": "gpt-4o mini 에이전트의 툴 호출 문제와 Voice Isolator 오류가 고쳐지고 워크스페이스·API가 개선됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/2/17",
+    "source": "dev"
+  }
+]

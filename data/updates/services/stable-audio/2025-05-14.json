@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-audio-2025-05-14-1",
+    "service": "stable-audio",
+    "date": "2025.05.14",
+    "kind": "모델",
+    "title": "온디바이스용 Stable Audio Open Small 공개",
+    "summary": "Arm과 함께 기기에서 바로 돌릴 수 있는 소형 텍스트-오디오 모델 Stable Audio Open Small을 오픈소스로 공개했어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-and-arm-release-stable-audio-open-small-enabling-real-world-deployment-for-on-device-audio-control",
+    "source": "notice"
+  }
+]

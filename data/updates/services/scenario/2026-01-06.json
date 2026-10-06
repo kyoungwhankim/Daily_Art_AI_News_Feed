@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-06-1",
+    "service": "scenario",
+    "date": "2026.01.06",
+    "kind": "API",
+    "title": "워크플로 썸네일·에셋 다운로드 엔드포인트",
+    "summary": "워크플로와 컬렉션 썸네일을 지정하고 전용 엔드포인트로 에셋을 내려받을 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-104-0",
+    "source": "dev"
+  }
+]

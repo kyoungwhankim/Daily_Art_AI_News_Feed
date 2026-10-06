@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hailuo-2025-02-11-1",
+    "service": "hailuo",
+    "date": "2025.02.11",
+    "kind": "모델",
+    "title": "T2V-01-Director·I2V-01-Director 카메라 제어 모델 출시",
+    "summary": "카메라 움직임 지시를 더 정확히 따르는 영상 생성 모델 T2V-01-Director와 I2V-01-Director를 출시했어요. 샷 구성으로 영화 같은 연출을 하기 좋아졌어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models#feb-11-2025",
+    "source": "dev"
+  }
+]

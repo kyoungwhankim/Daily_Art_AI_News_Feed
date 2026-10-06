@@ -1,0 +1,18 @@
+[
+  {
+    "id": "gigapixel-2025-09-16-1",
+    "service": "gigapixel",
+    "date": "2025.09.16",
+    "kind": "앱",
+    "title": "Topaz Gigapixel Studio v1.0 출시: Standard Max·Wonder",
+    "summary": "새 이름의 Topaz Gigapixel(Studio) 첫 버전이 나왔어요. 사양 부담이 적은 Standard Max와 자연스러운 Wonder 모델이 추가되고 이미지 클라우드 렌더링이 무제한이 됐어요.",
+    "details": [
+      "Google 계정 SSO 로그인",
+      "Redefine 프롬프트를 EXIF에 저장",
+      "Topaz Photo식 새 자르기 도구",
+      "v1.0.1(9/18): 결제 창 등 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-0-0-v1-0-1/95528",
+    "source": "notice"
+  }
+]

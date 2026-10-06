@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rokoko-2025-01-22-1",
+    "service": "rokoko",
+    "date": "2025.01.22",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.4.7, CSV 내보내기 추가",
+    "summary": "Pro·Enterprise 플랜에서 모션 데이터를 CSV로 내보낼 수 있고, Rokoko Vision 클립에 트레드밀 필터를 쓸 수 있어요. 펌웨어 업데이트도 Studio와 분리됐어요.",
+    "details": [
+      "CSV 내보내기(Pro·Enterprise)",
+      "Rokoko Vision 클립 트레드밀 필터",
+      "장비 펌웨어 업데이트를 Studio 릴리스와 분리"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/32019915383697-Rokoko-Studio-2-4-7",
+    "source": "dev"
+  }
+]

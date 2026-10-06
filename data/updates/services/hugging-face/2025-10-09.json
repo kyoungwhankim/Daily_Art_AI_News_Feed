@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-10-09-1",
+    "service": "hugging-face",
+    "date": "2025.10.09",
+    "kind": "기능",
+    "title": "Papers에 조직 태그 기능",
+    "summary": "논문 제출 시 조직을 태그하면 그 조직의 Papers 페이지에 자동으로 모여요. 연구실·회사별로 논문을 찾기 쉬워졌어요.",
+    "url": "https://huggingface.co/changelog/organization-tagging-for-papers",
+    "source": "notice"
+  }
+]

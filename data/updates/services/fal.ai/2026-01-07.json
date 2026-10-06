@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-07-1",
+    "service": "fal.ai",
+    "date": "2026.01.07",
+    "kind": "기능",
+    "title": "fal 앱 우아한 종료(SIGTERM) 지원",
+    "summary": "fal 1.61.0부터 러너 종료 시 SIGTERM과 5초 유예 시간이 주어져 진행 중인 요청을 마칠 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#january-7-2026",
+    "source": "dev"
+  }
+]

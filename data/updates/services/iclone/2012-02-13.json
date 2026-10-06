@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2012-02-13-1",
+    "service": "iclone",
+    "date": "2012.02.13",
+    "kind": "기능",
+    "title": "iClone 5.12, Kinect SDK용 Device Mocap 정식판",
+    "summary": "Microsoft Kinect SDK용 Device Mocap MS 버전이 정식 출시됐고, 스크립트 제거 기능이 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

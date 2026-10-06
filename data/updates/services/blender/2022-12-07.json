@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2022-12-07-1",
+    "service": "blender",
+    "date": "2022.12.07",
+    "kind": "앱",
+    "title": "Blender 3.4 출시: Cycles Path Guiding",
+    "summary": "Intel Open Path Guiding을 통합한 Cycles 경로 유도, 새 스컬프트·페인트 마스킹, UV 편집 도구를 담은 Blender 3.4가 나왔어요.",
+    "url": "https://www.blender.org/press/blender-3-4-release/",
+    "source": "notice"
+  }
+]

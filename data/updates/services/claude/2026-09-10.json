@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2026-09-10-1",
+    "service": "claude",
+    "date": "2026.09.10",
+    "kind": "기능",
+    "title": "팀 사용 분석 Smart reports 베타",
+    "summary": "팀의 Claude 사용 현황, 비용, 마찰 지점, 스킬로 만들 만한 반복 패턴을 분석하는 smart reports가 Enterprise에 베타로 나왔어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-09-10-2",
+    "service": "claude",
+    "date": "2026.09.10",
+    "kind": "API",
+    "title": "Managed Agents 자동 권한 평가·ant CLI 세션 연결",
+    "summary": "Managed Agents 권한 정책에 auto가 추가돼 서버가 각 도구 호출을 실행·거부·승인 대기로 판단해요. ant CLI 1.32.0은 터미널을 세션에 연결하는 명령을 추가했어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2026",
+    "source": "dev"
+  }
+]

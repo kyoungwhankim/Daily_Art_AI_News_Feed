@@ -1,0 +1,15 @@
+[
+  {
+    "id": "unity-ai-2026-03-23-1",
+    "service": "unity-ai",
+    "date": "2026.03.23",
+    "kind": "기능",
+    "title": "AI Assistant 2.3: 웹 검색과 2D 씬 캡처",
+    "summary": "AI Assistant 2.3.0에서 웹 페이지를 가져오는 Unity.Web.Fetch 도구와 2D 씬 캡처 도구, 의존성 그래프 조회가 추가되고 MCP 연결이 훨씬 빨라졌어요.",
+    "details": [
+      "배치 모드 MCP 자동 승인 설정"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#230-pre1---2026-03-23",
+    "source": "dev"
+  }
+]

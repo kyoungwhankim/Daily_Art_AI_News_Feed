@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ludo.ai-2026-02-16-1",
+    "service": "ludo.ai",
+    "date": "2026.02.16",
+    "kind": "모델",
+    "title": "Motion Transfer 모델 전면 개선",
+    "summary": "영상이나 애니메이션의 움직임을 정지 스프라이트에 옮기는 Transfer Motion의 AI 모델을 바꿔 품질이 크게 좋아졌어요.",
+    "url": "https://ludo.ai/whats-new#motion-transfer-just-got-a-level-up",
+    "source": "notice"
+  }
+]

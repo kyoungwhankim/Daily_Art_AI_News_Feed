@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2022-04-14-1",
+    "service": "topaz-video",
+    "date": "2022.04.14",
+    "kind": "앱",
+    "title": "Video Enhance AI v2.6.4: Intel ARC GPU 지원",
+    "summary": "Intel ARC GPU를 지원하고 NVIDIA GTX 성능을 10~15%, 16GB M1 성능을 15~20% 높였어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-v2-6-4/27636",
+    "source": "notice"
+  }
+]

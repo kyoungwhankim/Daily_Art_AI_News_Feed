@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-11-1",
+    "service": "scenario",
+    "date": "2025.11.11",
+    "kind": "API",
+    "title": "Vidu 영상 모델·이미지 자동 리사이즈",
+    "summary": "Compute에 Vidu 영상 모델이 추가되고 Hunyuan 3D·Veo3 입력 이미지가 자동으로 크기 조정돼요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-8-0",
+    "source": "notice"
+  }
+]

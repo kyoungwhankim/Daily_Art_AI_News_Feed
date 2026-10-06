@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-04-20-1",
+    "service": "scenario",
+    "date": "2026.04.20",
+    "kind": "모델",
+    "title": "Phota·Ernie 이미지 모델·새 TTS",
+    "summary": "실사 인물 생성·편집·업스케일 Phota 스위트와 정확한 글자 렌더링 Ernie, 새 TTS 모델 등 5종이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-9-2",
+    "source": "notice"
+  }
+]

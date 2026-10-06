@@ -1,0 +1,17 @@
+[
+  {
+    "id": "wan-2025-02-27-1",
+    "service": "wan",
+    "date": "2025.02.27",
+    "kind": "모델",
+    "title": "Wan2.1 오픈소스 공개, i2v Turbo 추가",
+    "summary": "Alibaba Cloud가 Wan2.1의 14B·1.3B 파라미터 영상 모델 4종을 ModelScope와 Hugging Face에 무료로 공개했어요. 같은 날 Model Studio에 wan2.1-i2v-turbo도 나왔어요.",
+    "details": [
+      "공개 모델: T2V-14B, T2V-1.3B, I2V-14B-720P, I2V-14B-480P",
+      "중·영 텍스트 효과를 지원하는 첫 영상 생성 모델",
+      "VBench 종합 86.22%로 상위권"
+    ],
+    "url": "https://www.alibabacloud.com/blog/alibaba-cloud-open-sources-its-ai-models-for-video-generation_602025",
+    "source": "notice"
+  }
+]

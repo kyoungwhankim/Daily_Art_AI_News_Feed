@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rodin-2025-04-29-1",
+    "service": "rodin",
+    "date": "2025.04.29",
+    "kind": "모델",
+    "title": "Hyper3D Rodin Gen 1.5 정식 출시",
+    "summary": "40억 개 이상 파라미터의 네이티브 3D 생성 모델 Rodin Gen 1.5를 정식 출시했어요. 이미지나 텍스트로 쿼드 메시와 PBR 재질을 바로 만들어요.",
+    "details": [
+      "쿼드 메시 직접 생성",
+      "PBR 재질 생성",
+      "3D ControlNet·LoRA 스타일 모듈",
+      "Unity·Unreal·Blender 연동, Blender MCP 지원"
+    ],
+    "url": "https://hyper3d.ai/blog/deemos-tech-launches-hyper3d-rodin",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "midjourney-2026-08-21-1",
+    "service": "midjourney",
+    "date": "2026.08.21",
+    "kind": "기능",
+    "title": "알파 사이트 변경 로그: 폴더 그룹, Upscale·Zoom·Vary 복귀",
+    "summary": "alpha.midjourney.com의 대규모 개편 후 2주간의 개선 사항이에요. 폴더 그룹 사이드바, Upscale·Zoom·Vary 복귀, 설정 유지와 성능 개선이 포함됐어요.",
+    "details": [
+      "사이드바에 폴더 트리와 New Project 버튼",
+      "Vary가 설정을 따르도록 수정",
+      "프롬프트 필(pill) 개선과 hover 카드",
+      "갤러리 필터를 토글 칩으로 재디자인",
+      "Explore의 Top Week/Month에 V8.2 이미지 표시"
+    ],
+    "url": "https://updates.midjourney.com/changelog-8-20-26/",
+    "source": "notice"
+  }
+]

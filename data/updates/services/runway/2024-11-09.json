@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-11-09-1",
+    "service": "runway",
+    "date": "2024.11.09",
+    "kind": "기능",
+    "title": "Act-One 세로 영상 생성",
+    "summary": "Gen-3 Alpha의 Act-One으로 세로 영상을 만들 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

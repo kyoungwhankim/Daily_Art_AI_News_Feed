@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2019-01-29-1",
+    "service": "iclone",
+    "date": "2019.01.29",
+    "kind": "기능",
+    "title": "iClone 7.41, NVIDIA Iray 렌더러 완전 지원",
+    "summary": "NVIDIA Iray 렌더 엔진을 완전히 지원해 물리 기반 사실적 렌더링이 가능해졌어요. VRAM을 아끼는 Minimal Mode도 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

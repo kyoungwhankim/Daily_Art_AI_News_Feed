@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-01-23-1",
+    "service": "claude",
+    "date": "2025.01.23",
+    "kind": "API",
+    "title": "Citations(출처 인용) 기능 출시",
+    "summary": "Claude가 답변에 정보 출처를 표시하는 Citations 기능과 일반 텍스트·커스텀 콘텐츠 문서 지원이 API에 추가됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-23rd-2025",
+    "source": "dev"
+  }
+]

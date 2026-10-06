@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2025-09-22-1",
+    "service": "suno",
+    "date": "2025.09.22",
+    "kind": "기능",
+    "title": "Suno Hooks, 숏폼 뮤직비디오",
+    "summary": "내 영상과 Suno 곡을 묶어 짧은 뮤직비디오를 만드는 Hooks가 나왔어요. 크레딧이 들지 않아요.",
+    "url": "https://suno.com/release-notes/introducing-hooks",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2024-04-10-1",
+    "service": "gigapixel",
+    "date": "2024.04.10",
+    "kind": "앱",
+    "title": "Gigapixel v7.1.0: 확산 기반 Recovery 모델 베타",
+    "summary": "1MP 미만 이미지를 새 디테일로 복원하는 확산 기반 Recovery 모델(베타)과 Text & Shapes, Low Resolution v2 모델이 추가됐어요.",
+    "details": [
+      "모델 비교 보기 추가",
+      "Topaz 공통 UI 프레임워크 적용",
+      "v7.1.1(4/12): 버그 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-1-0-v7-1-1/67374",
+    "source": "notice"
+  }
+]

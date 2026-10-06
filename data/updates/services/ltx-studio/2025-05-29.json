@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2025-05-29-1",
+    "service": "ltx-studio",
+    "date": "2025.05.29",
+    "kind": "모델",
+    "title": "LTX Studio에 FLUX.1 Kontext 도입",
+    "summary": "맥락을 이해하는 이미지 생성·편집 모델 FLUX.1 Kontext를 LTX Studio에서 쓸 수 있게 됐어요. 콘셉트부터 에셋까지 비주얼을 세밀하게 제어할 수 있어요.",
+    "url": "https://ltx.io/blog/flux-kontext-in-ltx-studio",
+    "source": "notice"
+  }
+]

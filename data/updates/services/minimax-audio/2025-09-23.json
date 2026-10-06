@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2025-09-23-1",
+    "service": "minimax-audio",
+    "date": "2025.09.23",
+    "kind": "API",
+    "title": "MiniMax T2A v2 고정 비트레이트 옵션",
+    "summary": "T2A v2 API의 audio_setting에 CBR 인코딩을 켜는 force_cbr 파라미터가 추가됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/apis",
+    "source": "dev"
+  }
+]

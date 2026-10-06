@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hugging-face-2026-07-22-1",
+    "service": "hugging-face",
+    "date": "2026.07.22",
+    "kind": "연동",
+    "title": "Hugging Face MCP 서버 개선: hf_fs 도구·Sandboxes",
+    "summary": "MCP 서버가 더 적은 도구와 토큰으로 Hub에 접근하도록 개편됐어요. 새 hf_fs 도구 하나로 저장소·스토리지·문서·논문을 탐색하고, Sandboxes로 안전한 실행 환경도 붙일 수 있어요.",
+    "details": [
+      "hf_fs: 저장소·스토리지·문서·논문을 하나의 인터페이스로 검색·탐색 (약 1,000 토큰)",
+      "Sandboxes: 버킷·저장소에 연결된 보안 실행 환경 추가"
+    ],
+    "url": "https://huggingface.co/changelog/mcp-improvements-jul-26",
+    "source": "notice"
+  }
+]

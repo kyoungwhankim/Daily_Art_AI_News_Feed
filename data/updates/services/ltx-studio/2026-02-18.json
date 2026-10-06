@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-02-18-1",
+    "service": "ltx-studio",
+    "date": "2026.02.18",
+    "kind": "API",
+    "title": "LTX API 영상 연장 엔드포인트",
+    "summary": "영상 앞이나 뒤에 프레임을 생성해 길이를 늘리는 v1/extend 엔드포인트가 추가됐어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

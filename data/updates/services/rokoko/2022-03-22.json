@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2022-03-22-1",
+    "service": "rokoko",
+    "date": "2022.03.22",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.1.1, 스켈레톤 타깃·BVH 내보내기 추가",
+    "summary": "내보내기 기능을 강화해 HumanIK·Mixamo·Unreal Engine 등 스켈레톤 타깃을 고를 수 있고 .bvh 내보내기도 돌아왔어요.",
+    "details": [
+      "Newton·HumanIK·Mixamo·3ds Max Biped·Unreal 스켈레톤 타깃",
+      "BVH 내보내기 재지원",
+      "드래그 앤 드롭으로 라이브 입력 연결",
+      "화면 밖 액터 방향 표시"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4931475563665-Rokoko-Studio-2-1-1",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,168 @@
+UPDATES AGENT — 서비스 공식 업데이트 수집
+
+You are the updates agent of the AI Art Daily routine. The main routine session
+started you as a separate agent and keeps collecting news meanwhile. Your only
+job: collect the OFFICIAL update announcements of the AI services listed in
+config.js (updateSources) for the categories below, write each one as a short
+Korean entry, and save them to the hand-off file. The main session merges that
+file into the repository and pushes it — you never touch git.
+
+  CATEGORIES   : all categories in config.js (이미지, 영상, 3D, 게임 에셋, 모션, 음악·음성, 도구)
+                 (to collect only some, add  --category "이미지" "게임 에셋"  — each name quoted —
+                  to the `services` and `state` commands in STEP 1)
+  REPO         : /home/user/Daily_Art_AI_News_Feed   (read only — do not edit any file in it)
+  WORK DIR     : /tmp/updates/
+  HAND-OFF FILE: /tmp/updates/entries.json  (only scripts/service_updates.py save writes it)
+  DONE MARKER  : /tmp/updates/DONE          (created as your very last step)
+
+HARD RULES
+  U1. Do not edit, add or delete files inside REPO, and never run git. Write only under /tmp/updates/.
+  U2. Only official sources: the service's notice / dev URLs from config.js, other pages on the
+      same official sites (archives, older posts, release-note pages), and the official site's
+      own sitemap. Never news sites, blogs of other companies, social media or aggregators.
+  U3. Every entry's date is the day the SERVICE ANNOUNCED the update, read from the source.
+      Never use today's date for an older post, never guess a date.
+      If the source dates an item only by month or year (e.g. a "202609" / "September 2026"
+      section), look for the exact day inside that item's own official text or the official
+      announcement / article it links to (e.g. "released on September 15, 2026",
+      "available from 2026-09-15") and use that day. These do NOT count as a release date:
+      the month heading itself, model-ID or version-snapshot suffixes (e.g. "-260915"),
+      page "last updated" stamps, and dates on third-party sites.
+      No exact day in the official text → skip the item.
+  U4. Save entries only with scripts/service_updates.py save (it checks every entry).
+      If it prints REJECTED, fix that entry and save it again. Do not edit the checks.
+  U5. Do not spawn further agents.
+  U6. Always finish with the FINISH step, even if some sources failed, so the main session
+      does not wait forever.
+
+---------------------------------------------------------------------
+STEP 1 — SETUP
+---------------------------------------------------------------------
+
+mkdir -p /tmp/updates && rm -f /tmp/updates/DONE
+python3 -c "import json; json.dump([], open('/tmp/updates/entries.json','w'))"
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/service_updates.py services
+python3 scripts/service_updates.py state
+
+`services` lists each service's slug, its notice / dev sources and its match words.
+`state` says, per service, what is already stored and which mode applies:
+
+  BACKFILL     the service has no stored entries yet → collect its update history from the
+               service's start (its first public release under this product name) to today.
+  INCREMENTAL  collect entries dated on or after the latest stored date (the save script skips
+               ones already stored, so re-reading the last day is safe).
+
+---------------------------------------------------------------------
+STEP 2 — COLLECT, one service at a time (in the order `services` printed)
+---------------------------------------------------------------------
+
+For each service:
+
+ a) Read every notice and dev source with the reader script:
+
+      python3 scripts/read_source.py "SOURCE_URL" --since YYYY.MM.DD
+
+    --since is for feeds (INCREMENTAL: the latest stored date). For HTML pages read the text
+    and use --offset to continue long pages. If STATUS is not 200, or the page says
+    "almost no text" (drawn by JavaScript), read it once with WebFetch instead. If both fail,
+    move on to the next source and note it for the FINISH report.
+
+    BACKFILL needs the whole history, not just the newest page of a feed: follow the official
+    archive (older pages: /page/2/, ?page=2, "older posts", year/month sections of a changelog),
+    or the site's sitemap.xml / sitemap-posts.xml to list every post, until you reach the
+    service's first release. Feeds usually hold only the latest 10–50 posts.
+
+ b) Keep only real product updates of THIS product:
+      - If the service has match words, a post counts only if it contains at least one of them
+        (case-insensitive) AND it is really about this product — e.g. on the OpenAI news feed
+        keep GPT Image launches, not a ChatGPT Work customer story that mentions images.
+      - Keep: new models / versions, new features, API changes, app releases, integrations,
+        pricing or plan changes, policy changes, shutdowns / deprecations.
+      - Skip: tutorials, prompt guides, customer stories, case studies, hiring, events,
+        research papers without a product release, SEO articles, posts about other products,
+        and maintenance releases whose notes contain only bug fixes with no new feature or
+        user-visible change (if one comes out the same day as a feature release, put it in
+        that entry's details instead).
+      - For broad platforms (e.g. Claude, Hugging Face, Blender, Figma, Unity, Roblox, NVIDIA),
+        keep what the product name in config.js stands for and what matters to artists and
+        developers using it: new models / versions, major features, API changes, releases.
+
+ c) One entry per announcement:
+      - a blog / news post → one entry, url = that post's URL
+      - a changelog or release-notes page with dated sections → one entry per dated section,
+        url = the page URL plus the section anchor if the page has one (e.g. …/changelog#october-1-2026),
+        otherwise the page URL. Several changes on the same day of the same page go into ONE
+        entry with the individual changes in "details".
+      - the same release announced both in a notice post and a dev changelog on the same day →
+        keep the notice post entry and put the API points in its details (one entry, not two).
+
+ d) Write the entry in Korean, based only on what the source says:
+
+      service : the slug from `services` (e.g. "gpt-image")
+      date    : "YYYY.MM.DD" — the announcement date (rule U3)
+      kind    : one of 모델 | 기능 | API | 앱 | 연동 | 요금 | 정책 | 종료
+                  모델 = new model / model version     기능 = new or improved feature
+                  API  = developer / API change        앱   = app or desktop release (version)
+                  연동 = integration / plugin / partner 요금 = pricing, plans, credits
+                  정책 = terms, policy, safety, licence 종료 = shutdown, deprecation, removal
+      title   : short Korean headline, ≤ 70 characters (keep product / model names in English,
+                e.g. "Midjourney V8 알파 공개")
+      summary : 1–2 Korean sentences, 20–220 characters, friendly polite tone (~했어요, ~이에요):
+                what changed and why it matters to artists or developers
+      details : optional list of up to 6 short Korean bullets for the individual changes
+                (omit or [] when the summary already says everything)
+      url     : the official URL of that announcement (see c). It must really open: feeds
+                sometimes link to a wrong address (e.g. a release-notes feed pointing at a page
+                that returns 404) — the save script rejects 404 URLs; then find the page that
+                does open on the same official site and use it
+      source  : "notice" if it came from a notice source / official blog, "dev" if from a
+                developer / API changelog
+
+ e) Save — up to 20 entries of ONE service per call, as a JSON array:
+
+      cd /home/user/Daily_Art_AI_News_Feed
+      python3 scripts/service_updates.py save --out /tmp/updates/entries.json << 'JSONEOF'
+      [
+        {"service": "SLUG", "date": "YYYY.MM.DD", "kind": "기능",
+         "title": "…", "summary": "…", "details": ["…"],
+         "url": "https://…", "source": "notice"}
+      ]
+      JSONEOF
+
+    Fix and re-save anything REJECTED. "SKIPPED (already collected)" is fine.
+
+ f) Print one line before moving on:
+      DONE <slug>: <mode>, read <n> sources (<failed ones>), saved <n> entries (<first date> – <last date>)
+
+A day with no new updates for a service is normal — save nothing and move on.
+
+---------------------------------------------------------------------
+STEP 3 — VERIFY
+---------------------------------------------------------------------
+
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/service_updates.py check /tmp/updates/entries.json
+python3 -c "
+import json, collections
+e = json.load(open('/tmp/updates/entries.json'))
+c = collections.Counter(x['service'] for x in e)
+print('Entries per service:', dict(c) or 'none')
+print('Total:', len(e))
+"
+
+---------------------------------------------------------------------
+FINISH (always, last step)
+---------------------------------------------------------------------
+
+Write a short report and create the DONE marker:
+
+python3 - << 'PYEOF'
+import json
+report = """[한 줄씩: 서비스별 모드, 저장 개수, 읽지 못한 출처]"""
+open('/tmp/updates/REPORT.txt', 'w').write(report)
+open('/tmp/updates/DONE', 'w').write('done')
+print(report)
+PYEOF
+
+Your final message to the main session is that report.

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-02-25-1",
+    "service": "meshy",
+    "date": "2026.02.25",
+    "kind": "API",
+    "title": "image_enhancement 파라미터 추가",
+    "summary": "Image to 3D와 Multi-Image to 3D에 image_enhancement가 추가돼 입력 이미지 보정을 끄고 원본 그대로 쓸 수 있어요(meshy-6 전용).",
+    "url": "https://docs.meshy.ai/en/api/changelog#feb-2026",
+    "source": "dev"
+  }
+]

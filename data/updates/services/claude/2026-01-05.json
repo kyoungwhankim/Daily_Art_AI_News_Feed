@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-01-05-1",
+    "service": "claude",
+    "date": "2026.01.05",
+    "kind": "종료",
+    "title": "Claude Opus 3 종료",
+    "summary": "Claude Opus 3가 API에서 종료됐어요. Opus 4.5로 업그레이드를 권장해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-5-2026",
+    "source": "dev"
+  }
+]

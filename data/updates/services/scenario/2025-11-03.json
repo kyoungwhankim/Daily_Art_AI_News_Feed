@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-11-03-1",
+    "service": "scenario",
+    "date": "2025.11.03",
+    "kind": "API",
+    "title": "API 문서 개편·프로젝트 간 에셋 이동",
+    "summary": "API 문서 분류가 LLM 친화적으로 바뀌고 지원 중단 엔드포인트가 정리됐어요. 에셋을 프로젝트 간에 옮길 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-95-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-11-03-2",
+    "service": "scenario",
+    "date": "2025.11.03",
+    "kind": "API",
+    "title": "Hunyuan3D Part·Meshy 리메시·리깅 지원",
+    "summary": "Compute에 Hunyuan3D Part와 Meshy Remesh·Rigging이 추가되고 편집 모델 입력 파라미터가 표준화됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-6-0",
+    "source": "notice"
+  }
+]

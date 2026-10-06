@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-07-18-1",
+    "service": "hugging-face",
+    "date": "2025.07.18",
+    "kind": "API",
+    "title": "Inference Providers, OpenAI 호환 API 완전 지원",
+    "summary": "Inference Providers가 OpenAI 호환 API를 완전히 지원해요. router.huggingface.co/v1에 모델 이름과 공급자 이름을 넣으면 OpenAI SDK 그대로 공급자를 바꿔 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog/inference-providers-openai-compatible",
+    "source": "notice"
+  }
+]

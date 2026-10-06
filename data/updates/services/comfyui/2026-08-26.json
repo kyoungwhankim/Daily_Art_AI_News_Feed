@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-08-26-1",
+    "service": "comfyui",
+    "date": "2026.08.26",
+    "kind": "모델",
+    "title": "ComfyUI v0.34.0: Pixal3D·TRELLIS2와 HDR 영상 저장",
+    "summary": "ComfyUI v0.34.0에서 리메시·UV 펼치기·텍스처 굽기까지 갖춘 Pixal3D·TRELLIS2 3D 생성과 SAM 3D Body를 지원하고, AV1 HDR 영상 저장이 추가됐어요.",
+    "details": [
+      "PixVerse V6 오디오 포함 영상 노드",
+      "v0.34.1: Wan 3.0 Prime, Recraft V4 Styles",
+      "Veo 2·Veo 3.0 모델 제거"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-34-0",
+    "source": "notice"
+  }
+]

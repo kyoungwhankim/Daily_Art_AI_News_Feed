@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2026-08-27-1",
+    "service": "gigapixel",
+    "date": "2026.08.27",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.3.5: 버그 수정과 메모리 요건",
+    "summary": "일부 JPG가 회색으로 열리던 문제와 얼굴 복원 설정 전달 문제를 고쳤어요. 16GB 미만 Apple Silicon에서는 NeuroServer 실행을 막아요.",
+    "details": [
+      "v1.3.6(8/31): Mac Photoshop 플러그인 실행 문제 수정",
+      "EULA 업데이트"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-3-5-v1-3-6/104643",
+    "source": "notice"
+  }
+]

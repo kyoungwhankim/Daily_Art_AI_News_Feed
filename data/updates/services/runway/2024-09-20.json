@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-09-20-1",
+    "service": "runway",
+    "date": "2024.09.20",
+    "kind": "기능",
+    "title": "Gen-3 Alpha Turbo 세로 영상과 크레딧 분석",
+    "summary": "모든 사용자가 Gen-3 Alpha Turbo로 세로 영상을 만들 수 있고, 엔터프라이즈 워크스페이스 분석에 크레딧 사용 그래프가 추가됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

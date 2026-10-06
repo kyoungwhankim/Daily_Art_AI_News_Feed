@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-06-05-1",
+    "service": "hugging-face",
+    "date": "2025.06.05",
+    "kind": "기능",
+    "title": "Enterprise용 Inference Providers 대시보드",
+    "summary": "Enterprise 조직이 서버리스 추론 파트너 사용량을 팀원별 호출 수와 비용까지 한눈에 볼 수 있는 전용 대시보드가 생겼어요.",
+    "url": "https://huggingface.co/changelog/inference-providers-dashboard",
+    "source": "notice"
+  }
+]

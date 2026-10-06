@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2026-02-27-1",
+    "service": "firefly",
+    "date": "2026.02.27",
+    "kind": "연동",
+    "title": "Firefly에 Gemini 3.1(Nano Banana 2) 추가",
+    "summary": "Google의 Gemini 3.1(Nano Banana 2)을 Firefly에서 쓸 수 있어요. 더 빠르고 일관성이 좋아졌으며 최대 4K를 지원하고, 유료 플랜은 3월 16일까지 무제한이에요.",
+    "url": "https://community.adobe.com/announcements-402/gemini-3-1-w-nano-banana-2-now-available-in-firefly-1551685",
+    "source": "notice"
+  }
+]

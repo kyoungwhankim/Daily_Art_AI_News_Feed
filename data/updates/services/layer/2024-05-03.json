@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-05-03-1",
+    "service": "layer",
+    "date": "2024.05.03",
+    "kind": "기능",
+    "title": "로컬 Forge 기록 저장",
+    "summary": "Forge 생성 기록을 저장하는 기능이 추가되고 버튼 사용성이 개선됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-05-03",
+    "source": "notice"
+  }
+]

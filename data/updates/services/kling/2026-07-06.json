@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-07-06-1",
+    "service": "kling",
+    "date": "2026.07.06",
+    "kind": "API",
+    "title": "API 차감 내역 조회·내보내기 기능 추가",
+    "summary": "Kling API에서 리소스 패키지와 잔액 차감 내역을 시간·API Key·패키지별로 필터링해 조회할 수 있게 됐어요. 커서 방식 조회를 지원해요.",
+    "url": "https://kling.ai/document-api/updates/api#07%2F06%2F2026",
+    "source": "dev"
+  }
+]

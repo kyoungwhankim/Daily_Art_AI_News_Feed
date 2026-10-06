@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2023-10-03-1",
+    "service": "invokeai",
+    "date": "2023.10.03",
+    "kind": "기능",
+    "title": "InvokeAI 3.2.0: 생성 큐와 IP-Adapter 지원",
+    "summary": "InvokeAI 3.2.0에서 여러 생성을 대기열에 넣고 배치로 관리하는 Queueing 기능과 IP-Adapter 지원이 추가됐어요.",
+    "details": [
+      "TAESD·TAESDXL 지원",
+      "\"Use All\"로 LoRA·ControlNet 불러오기",
+      "노드 캐싱으로 성능 향상, SD1.5 v-prediction 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-v3-2-0/",
+    "source": "notice"
+  }
+]

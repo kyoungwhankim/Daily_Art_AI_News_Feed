@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-11-21-1",
+    "service": "elevenlabs",
+    "date": "2025.11.21",
+    "kind": "API",
+    "title": "에이전트 GPT-5.1과 TTS 정규화 제어",
+    "summary": "에이전트에서 GPT-5.1과 추론 강도 제어를 쓸 수 있고, TTS 텍스트 정규화 방식과 더빙 JSON 전사 포맷이 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/21",
+    "source": "dev"
+  }
+]

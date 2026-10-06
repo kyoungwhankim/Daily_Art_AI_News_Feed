@@ -39,6 +39,8 @@ import feed_data  # noqa: E402
 
 SITE_URL = os.environ.get(
     'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
+# PREVIEW=1 이면 미리보기 배포용: 모든 페이지 noindex, robots.txt 전체 차단, 사이트맵 없음
+PREVIEW = os.environ.get('PREVIEW') == '1'
 # 예전 주소 (GitHub Pages). --redirect-site 로 이 주소용 "주소가 바뀌었어요" 안내 사이트를 만든다.
 OLD_SITE_PATH = '/Daily_Art_AI_News_Feed'
 SITE_NAME = 'AI Art Daily'
@@ -386,6 +388,22 @@ def build_feed(articles: list) -> str:
             + ''.join(items) + '</channel></rss>\n')
 
 
+UPDATE_CAT_SLUG = {   # app.jsx의 UPDATE_CAT_SLUG와 같아야 한다
+    '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+    '모션': 'motion', '음악·음성': 'audio', '도구': 'tools',
+}
+
+
+def update_tree(repo: str) -> list:
+    """config.js의 updateSources → [(분야, 분야 slug, [서비스 이름...]), ...] (설정 순서)."""
+    with open(os.path.join(repo, 'config.js'), encoding='utf-8') as f:
+        cfg = f.read()
+    tree = {}
+    for cat, name in re.findall(r"\{\s*category:\s*'([^']+)',\s*name:\s*'([^']+)'", cfg):
+        tree.setdefault(cat, []).append(name)
+    return [(c, UPDATE_CAT_SLUG.get(c, kw_slug(c)), names) for c, names in tree.items()]
+
+
 def build_redirect_site(out: str) -> None:
     """예전 주소(GitHub Pages)용: index.html·404.html이 같은 경로의 새 주소로 넘겨 준다."""
     if os.path.isdir(out):
@@ -540,14 +558,40 @@ def main():
     write(out, 'sw.js', sw.replace('__VERSION__', version)
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
+    # 사이드바 대분류 '업데이트' 페이지: /updates/, /updates/<분야>/, /updates/<분야>/<서비스>/
+    # (데이터 연결 전이라 검색에는 내보내지 않는다. 분야·서비스 주소 규칙은 app.jsx와 같아야 한다)
+    upd_pages = [('updates/', '업데이트')]
+    for cat, cat_slug, companies in update_tree(repo):
+        upd_pages.append((f'updates/{cat_slug}/', f'{cat} 업데이트'))
+        upd_pages += [(f'updates/{cat_slug}/{kw_slug(n)}/', f'{n} 업데이트') for n in companies]
+    for path_, name in upd_pages:
+        write(out, path_ + 'index.html', shell(
+            path_, f'{name} | {SITE_NAME}', '아트 관련 AI 서비스들의 공식 업데이트 소식',
+            f'<h1 class="feed-title">{esc(name)}</h1>',
+            {'@context': 'https://schema.org', '@type': 'WebPage', 'name': name, 'url': abs_url(path_)})
+            .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
-    if SITE_URL.count('/') == 2:     # 도메인 최상위 사이트일 때만 robots.txt가 의미 있다
+    if PREVIEW:
+        write(out, 'robots.txt', 'User-agent: *\nDisallow: /\n')
+        os.remove(os.path.join(out, 'sitemap.xml'))
+        for dp, _, fs in os.walk(out):
+            for f in fs:
+                if f.endswith('.html'):
+                    fp = os.path.join(dp, f)
+                    with open(fp, encoding='utf-8') as fh:
+                        h = fh.read()
+                    if 'name="robots"' not in h:
+                        h = h.replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1)
+                        with open(fp, 'w', encoding='utf-8') as fh:
+                            fh.write(h)
+    elif SITE_URL.count('/') == 2:     # 도메인 최상위 사이트일 때만 robots.txt가 의미 있다
         write(out, 'robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
 
     print(f'Built {out}: {len(articles)} article pages, {len(listing_paths)} listing pages, '
-          f'bundle={"esbuild" if bundle else "babel"}')
+          f'bundle={"esbuild" if bundle else "babel"}{", PREVIEW (noindex)" if PREVIEW else ""}')
 
 
 if __name__ == '__main__':

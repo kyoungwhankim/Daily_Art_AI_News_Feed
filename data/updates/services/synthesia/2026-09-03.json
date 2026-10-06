@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-09-03-1",
+    "service": "synthesia",
+    "date": "2026.09.03",
+    "kind": "기능",
+    "title": "Synthesia 더빙 영상 화자 지정 수정",
+    "summary": "더빙 영상에서 화자를 클릭 한 번으로 재지정·추가·이름 변경할 수 있어요. Enterprise 요금제에서 제공돼요.",
+    "url": "https://www.synthesia.io/updates/adjust-speaker-attribution-for-dubbed-videos",
+    "source": "notice"
+  }
+]

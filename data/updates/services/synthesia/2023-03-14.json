@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2023-03-14-1",
+    "service": "synthesia",
+    "date": "2023.03.14",
+    "kind": "기능",
+    "title": "Synthesia Animation Markers",
+    "summary": "스크립트에 마커를 넣어 애니메이션 타이밍을 정확히 맞출 수 있는 Animation Markers를 추가했어요.",
+    "url": "https://www.synthesia.io/updates/animation-markers",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-10-20-1",
+    "service": "scenario",
+    "date": "2025.10.20",
+    "kind": "모델",
+    "title": "Beatoven 오디오·Reve·Vidu 등 추가",
+    "summary": "Beatoven 효과음·음악 생성, Reve 이미지, Crystal 업스케일러, Vidu 영상 생성 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-102-beatoven-audio-models-reve-suite-crystal-upscaler-and-vidu-video-generation",
+    "source": "notice"
+  }
+]

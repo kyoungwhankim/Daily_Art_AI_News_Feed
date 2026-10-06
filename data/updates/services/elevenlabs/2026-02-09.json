@@ -1,0 +1,29 @@
+[
+  {
+    "id": "elevenlabs-2026-02-09-1",
+    "service": "elevenlabs",
+    "date": "2026.02.09",
+    "kind": "기능",
+    "title": "ElevenCreative Audiobooks 출시",
+    "summary": "초안부터 출판까지 오디오북 제작을 한곳에서 하는 Audiobooks 도구가 ElevenCreative에 들어왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-audiobooks-in-elevencreative",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-02-09-2",
+    "service": "elevenlabs",
+    "date": "2026.02.09",
+    "kind": "기능",
+    "title": "ElevenAgents·ElevenCreative·ElevenAPI 브랜드 개편",
+    "summary": "ElevenLabs가 ElevenAgents, ElevenCreative, ElevenAPI 제품군으로 재편됐어요. 글로벌 서버 라우팅이 기본이 됐어요.",
+    "details": [
+      "ElevenAgents(구 Agents Platform)",
+      "ElevenCreative(구 Creative Platform)",
+      "ElevenAPI(개발자 플랫폼)",
+      "글로벌 라우팅 기본 적용, preview URL 폐지",
+      "TTS Normalizer v3.1"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/2/9",
+    "source": "dev"
+  }
+]

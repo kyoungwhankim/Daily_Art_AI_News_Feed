@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-01-1",
+    "service": "elevenlabs",
+    "date": "2026.06.01",
+    "kind": "연동",
+    "title": "Exotel 전화 연동과 STT 5GB 업로드",
+    "summary": "Exotel이 정식 전화 공급자로 추가됐고, Speech to Text 업로드 한도가 3GB에서 5GB로 늘었어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/6/1",
+    "source": "dev"
+  }
+]

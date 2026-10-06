@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-12-15-1",
+    "service": "elevenlabs",
+    "date": "2025.12.15",
+    "kind": "API",
+    "title": "TTS 품질 프리셋 크레딧 표시",
+    "summary": "TTS 품질 프리셋 설명에 high(+20%)·ultra(+50%) 등 크레딧 비용이 표시되고, 엔터프라이즈는 에이전트 대화를 실시간 모니터링할 수 있어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/12/15",
+    "source": "dev"
+  }
+]

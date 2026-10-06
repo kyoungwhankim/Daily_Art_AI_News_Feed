@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-04-19-1",
+    "service": "comfyui",
+    "date": "2025.04.19",
+    "kind": "모델",
+    "title": "ComfyUI, Wan2.1 FLF2V·Wan2.1 Fun 지원",
+    "summary": "첫 프레임과 마지막 프레임 사이를 잇는 720p 영상 모델 Wan2.1 FLF2V와 Wan2.1 Fun 시리즈를 ComfyUI에서 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/comfyui-wan21-flf2v-and-wan21-fun",
+    "source": "notice"
+  }
+]

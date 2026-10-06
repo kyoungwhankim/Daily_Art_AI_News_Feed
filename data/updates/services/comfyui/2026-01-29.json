@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-01-29-1",
+    "service": "comfyui",
+    "date": "2026.01.29",
+    "kind": "연동",
+    "title": "ComfyUI, xAI Grok Imagine 이미지·영상 노드",
+    "summary": "xAI의 grok-imagine-image와 grok-imagine-video(베타)를 API 노드로 ComfyUI에서 쓸 수 있어요. 이미지·영상 생성과 편집을 지원해요.",
+    "url": "https://blog.comfy.org/p/grok-imagine-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

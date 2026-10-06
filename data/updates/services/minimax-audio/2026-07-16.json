@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimax-audio-2026-07-16-1",
+    "service": "minimax-audio",
+    "date": "2026.07.16",
+    "kind": "모델",
+    "title": "MiniMax Music-3.0 API 제공",
+    "summary": "새 음악 생성 모델 Music-3.0을 MiniMax API에서 쓸 수 있게 됐어요.",
+    "url": "https://platform.minimax.io/docs/release-notes/models",
+    "source": "dev"
+  }
+]

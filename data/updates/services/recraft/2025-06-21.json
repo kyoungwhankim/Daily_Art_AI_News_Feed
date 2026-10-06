@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-06-21-1",
+    "service": "recraft",
+    "date": "2025.06.21",
+    "kind": "기능",
+    "title": "자연어 이미지 편집 도입(GPT-4o·Flux Kontext)",
+    "summary": "GPT-4o와 Flux Kontext 같은 외부 모델을 활용해 말로 지시해서 이미지를 수정·재스타일링하는 자연어 편집을 도입했어요.",
+    "url": "https://www.recraft.ai/blog/introducing-prompt-based-editing-the-ingenious-shortcut-for-your-ai-images",
+    "source": "notice"
+  }
+]

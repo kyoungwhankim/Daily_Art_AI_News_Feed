@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-09-03-1",
+    "service": "meshy",
+    "date": "2026.09.03",
+    "kind": "API",
+    "title": "Creative Lab Lamp API 개편",
+    "summary": "Lamp API prototype 단계가 램프 갓 GLB를 돌려주게 됐고, 요금이 prototype 30·build 6크레딧으로 바뀌었어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2026",
+    "source": "dev"
+  }
+]

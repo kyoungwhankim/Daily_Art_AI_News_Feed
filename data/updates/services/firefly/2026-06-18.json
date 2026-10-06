@@ -1,0 +1,15 @@
+[
+  {
+    "id": "firefly-2026-06-18-1",
+    "service": "firefly",
+    "date": "2026.06.18",
+    "kind": "기능",
+    "title": "Firefly AI Assistant 기능 확장과 새 스튜디오 미리보기",
+    "summary": "Firefly AI Assistant(베타)에 새 크리에이티브 스킬·도구·개인화가 추가되고, 생성·편집·에셋 정리를 한 곳에 모은 새 Firefly 스튜디오가 비공개 베타로 공개됐어요.",
+    "details": [
+      "캐릭터·장소·사물을 저장해 재사용하는 Elements 조기 공개"
+    ],
+    "url": "https://blog.adobe.com/en/publish/2026/06/18/adobe-firefly-introduces-new-agentic-capabilities-and-an-upgraded-creative-ai-studio-built-for-the-way-you-work",
+    "source": "notice"
+  }
+]

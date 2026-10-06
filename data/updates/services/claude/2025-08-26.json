@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2025-08-26-1",
+    "service": "claude",
+    "date": "2025.08.26",
+    "kind": "기능",
+    "title": "Claude in Chrome 실험 출시",
+    "summary": "Claude가 웹사이트를 읽고 클릭하며 함께 탐색하는 실험적 브라우저 확장 Claude in Chrome이 나왔어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-08-26-2",
+    "service": "claude",
+    "date": "2025.08.26",
+    "kind": "요금",
+    "title": "Sonnet 4 1M 컨텍스트 한도 상향·Vertex AI 제공",
+    "summary": "Claude API에서 Sonnet 4 1M 컨텍스트 속도 제한이 늘고 Vertex AI에서도 1M 컨텍스트를 쓸 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+    "source": "dev"
+  }
+]

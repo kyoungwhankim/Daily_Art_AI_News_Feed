@@ -1,0 +1,26 @@
+[
+  {
+    "id": "midjourney-2026-02-26-1",
+    "service": "midjourney",
+    "date": "2026.02.26",
+    "kind": "기능",
+    "title": "새 개인화 인터페이스, Niji 7 개인화·무드보드 지원",
+    "summary": "이미지 목록을 클릭·스크롤하며 개인화 프로필을 만드는 새 인터페이스가 웹에 나왔어요. Niji 7에서도 개인화와 무드보드를 쓸 수 있어요.",
+    "details": [
+      "1:1 비교보다 빠르고 정확한 개인화",
+      "웹 Rooms 종료로 사이트 성능 향상"
+    ],
+    "url": "https://updates.midjourney.com/personalization-and-web-updates/",
+    "source": "notice"
+  },
+  {
+    "id": "midjourney-2026-02-26-2",
+    "service": "midjourney",
+    "date": "2026.02.26",
+    "kind": "종료",
+    "title": "웹 Rooms 기능 종료",
+    "summary": "실험적 기능이던 Rooms를 웹사이트에서 제거했어요. 실시간 도움은 Help 페이지, Discord #support·#promptcraft, 이메일로 받을 수 있어요.",
+    "url": "https://updates.midjourney.com/an-update-on-rooms/",
+    "source": "notice"
+  }
+]

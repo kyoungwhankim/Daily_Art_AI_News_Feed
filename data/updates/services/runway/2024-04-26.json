@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-26-1",
+    "service": "runway",
+    "date": "2024.04.26",
+    "kind": "기능",
+    "title": "Gen-2 프롬프트 개선 버튼",
+    "summary": "Gen-2에서 클릭 한 번으로 프롬프트를 다듬어 더 좋은 결과를 얻을 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

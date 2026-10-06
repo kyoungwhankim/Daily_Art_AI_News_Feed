@@ -1,0 +1,12 @@
+[
+  {
+    "id": "marble-2025-12-18-1",
+    "service": "marble",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "Chisel 복사·붙여넣기, Expand 안내 개선",
+    "summary": "Chisel에서 Ctrl+C/Ctrl+V로 복사·붙여넣기를 할 수 있게 됐어요. Expand 모드는 확장 가능한 영역을 더 분명히 안내해요.",
+    "url": "https://docs.worldlabs.ai/marble/release-notes#december-18-2025",
+    "source": "dev"
+  }
+]

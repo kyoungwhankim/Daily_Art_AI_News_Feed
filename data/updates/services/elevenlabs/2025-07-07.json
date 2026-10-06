@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-07-07-1",
+    "service": "elevenlabs",
+    "date": "2025.07.07",
+    "kind": "API",
+    "title": "STT 시드 고정과 강제 정렬 신뢰도",
+    "summary": "Speech to Text에 seed로 재현 가능한 결과를 얻는 옵션이 생기고, Forced Alignment에 단어별 신뢰도 점수가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/7/7",
+    "source": "dev"
+  }
+]

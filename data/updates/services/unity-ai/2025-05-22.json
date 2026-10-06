@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2025-05-22-1",
+    "service": "unity-ai",
+    "date": "2025.05.22",
+    "kind": "기능",
+    "title": "AI Generators: Promote to Terrain Layer 추가",
+    "summary": "AI Generators 1.0.0-pre.9에서 생성한 머티리얼을 우클릭으로 터레인 레이어로 바꾸는 기능과 일시정지 플레이 모드 지원이 추가됐어요. 2x2까지 작은 참조 이미지도 자동 업스케일해요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre9---2025-05-22",
+    "source": "dev"
+  }
+]

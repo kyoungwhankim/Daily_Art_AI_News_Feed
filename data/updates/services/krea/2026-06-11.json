@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-06-11-1",
+    "service": "krea",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "Krea 2 Generative Sliders 도입",
+    "summary": "프롬프트를 바꾸지 않고 Intensity·Complexity·Movement 슬라이더와 Creativity 모드로 Krea 2 결과의 방향을 조절할 수 있게 됐어요.",
+    "url": "https://www.krea.ai/blog/generative-sliders",
+    "source": "notice"
+  }
+]

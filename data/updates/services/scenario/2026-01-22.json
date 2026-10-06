@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-01-22-1",
+    "service": "scenario",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "Gemini 3.0 자동 설명·Usage API 확장",
+    "summary": "Gemini 3.0 Flash로 자동 설명이 좋아지고 Usage API와 프로젝트 설명 기능이 확장됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-106-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-01-22-2",
+    "service": "scenario",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "SVG 벡터화·레이어 합성 도구",
+    "summary": "이미지를 SVG로 바꾸고 레이어를 이미지나 영상으로 합성하는 도구가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-20-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-06-05-1",
+    "service": "fal.ai",
+    "date": "2025.06.05",
+    "kind": "모델",
+    "title": "Veo 3 fal API 최초 제공",
+    "summary": "Google DeepMind의 최신 영상 모델 Veo 3를 fal에서 API로 처음 쓸 수 있게 됐어요.",
+    "url": "https://blog.fal.ai/veo-3/",
+    "source": "notice"
+  }
+]

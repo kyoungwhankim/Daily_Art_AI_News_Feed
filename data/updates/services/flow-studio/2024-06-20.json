@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2024-06-20-1",
+    "service": "flow-studio",
+    "date": "2024.06.20",
+    "kind": "기능",
+    "title": "Wonder Studio, Maya·USD 씬에 포인트 클라우드",
+    "summary": "카메라 트래킹을 돌린 샷은 Maya·USD 씬 내보내기에 포인트 클라우드가 포함되고, 초점 거리 추정 모델도 개선됐어요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

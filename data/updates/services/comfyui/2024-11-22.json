@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-11-22-1",
+    "service": "comfyui",
+    "date": "2024.11.22",
+    "kind": "모델",
+    "title": "ComfyUI, LTX Video 첫날 네이티브 지원",
+    "summary": "Lightricks의 2B 파라미터 영상 모델 LTX Video를 출시 첫날부터 ComfyUI에서 지원해요. 768x512 24fps 영상을 재생보다 빠르게 만들어요.",
+    "url": "https://blog.comfy.org/p/ltxv-day-1-comfyui",
+    "source": "notice"
+  }
+]

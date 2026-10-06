@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-06-06-1",
+    "service": "claude",
+    "date": "2025.06.06",
+    "kind": "모델",
+    "title": "미국 국가안보 고객용 Claude Gov 모델",
+    "summary": "미국 국가안보 기관 고객을 위해 만든 Claude Gov 모델을 공개했어요.",
+    "url": "https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers",
+    "source": "notice"
+  }
+]

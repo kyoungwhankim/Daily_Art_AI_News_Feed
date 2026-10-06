@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2020-11-18-1",
+    "service": "gigapixel",
+    "date": "2020.11.18",
+    "kind": "앱",
+    "title": "Gigapixel v5.3: Art 모델과 Reduce Color Bleed",
+    "summary": "CG·그림·그래픽 디자인 이미지에 맞는 새 AI 모드 Art와 색 번짐을 줄이는 Reduce Color Bleed 컨트롤이 추가됐어요.",
+    "details": [
+      "파일 목록·처리 화면·튜토리얼 UI 개편",
+      "v5.3.1: GPU 격자 아티팩트 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-3-2/17826",
+    "source": "notice"
+  }
+]

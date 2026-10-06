@@ -1,0 +1,18 @@
+[
+  {
+    "id": "heygen-2026-01-26-1",
+    "service": "heygen",
+    "date": "2026.01.26",
+    "kind": "기능",
+    "title": "HeyGen Video Agent 전면 재구축",
+    "summary": "Video Agent를 처음부터 다시 만들었어요. 렌더 전에 전체 영상 계획을 보고 대화로 고칠 수 있고, 편집 가능한 모션 그래픽과 B롤을 생성해요.",
+    "details": [
+      "Blueprint 우선 제작",
+      "AI Studio에서 편집 가능한 모션 그래픽",
+      "스타일 일관성 유지",
+      "Build·Chat 모드 선택"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-our-new-video-agent",
+    "source": "notice"
+  }
+]

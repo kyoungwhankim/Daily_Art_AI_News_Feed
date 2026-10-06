@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comfyui-2026-03-25-1",
+    "service": "comfyui",
+    "date": "2026.03.25",
+    "kind": "기능",
+    "title": "ComfyUI Dynamic VRAM 메모리 시스템",
+    "summary": "가장 큰 모델도 적은 메모리로 돌리는 새 메모리 최적화 시스템 Dynamic VRAM을 소개했어요. NVIDIA에서는 3주 전부터 안정판에 들어가 있어요.",
+    "url": "https://blog.comfy.org/p/dynamic-vram-in-comfyui-saving-local",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-03-25-2",
+    "service": "comfyui",
+    "date": "2026.03.25",
+    "kind": "연동",
+    "title": "Grok Imagine 참조 영상·영상 연장 노드",
+    "summary": "참조 이미지 최대 7장으로 일관된 영상을 만드는 Grok Reference-to-Video와 영상을 최대 10초 늘리는 Grok Video Extend 노드가 추가됐어요.",
+    "details": [
+      "v0.18.4: Wan2.7 API 노드 추가",
+      "v0.18.3: 새 Topaz 모델 API 노드"
+    ],
+    "url": "https://blog.comfy.org/p/grok-imagine-model-feature-updates",
+    "source": "notice"
+  }
+]

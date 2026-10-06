@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-05-14-1",
+    "service": "wan",
+    "date": "2025.05.14",
+    "kind": "모델",
+    "title": "올인원 영상 편집 모델 Wan2.1-VACE-Plus 출시",
+    "summary": "부분 편집, 리페인팅, 배경 확장, 길이 연장, 이미지 레퍼런스를 한 모델로 처리하는 wan2.1-vace-plus가 출시됐어요. 텍스트·이미지·영상으로 제어할 수 있어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

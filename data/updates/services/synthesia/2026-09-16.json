@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-09-16-1",
+    "service": "synthesia",
+    "date": "2026.09.16",
+    "kind": "연동",
+    "title": "Synthesia에서 Flux 3로 B롤 생성",
+    "summary": "Black Forest Labs의 Flux 3로 오디오가 동기화된 최대 20초 B롤을 만들어 바로 영상에 넣을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/generate-b-roll-with-flux-3-from-black-forest-labs",
+    "source": "notice"
+  }
+]

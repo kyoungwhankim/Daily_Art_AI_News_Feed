@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-06-20-1",
+    "service": "hugging-face",
+    "date": "2025.06.20",
+    "kind": "기능",
+    "title": "조직·사용자 프로필에 저장소 목록 페이지",
+    "summary": "조직·사용자 프로필에 모델·데이터셋·Space를 탐색하는 전용 목록 페이지가 생겨, 기여가 많은 계정의 자료도 찾기 쉬워졌어요.",
+    "url": "https://huggingface.co/changelog/org-profiles-repository-listing-pages",
+    "source": "notice"
+  }
+]

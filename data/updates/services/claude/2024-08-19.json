@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-08-19-1",
+    "service": "claude",
+    "date": "2024.08.19",
+    "kind": "API",
+    "title": "Sonnet 3.5 8,192 토큰 출력 정식",
+    "summary": "Claude Sonnet 3.5의 8,192 토큰 출력이 베타 헤더 없이 정식 제공돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19th-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-04-20-1",
+    "service": "magnific",
+    "date": "2026.04.20",
+    "kind": "API",
+    "title": "Google Imagen 4 Fast·Ultra API",
+    "summary": "Google Imagen 4 Fast와 Ultra 텍스트-투-이미지 엔드포인트를 추가했어요. 이 엔드포인트는 2026년 8월 20일 제거됐어요.",
+    "url": "https://docs.magnific.com/changelog#april-20-2026",
+    "source": "dev"
+  }
+]

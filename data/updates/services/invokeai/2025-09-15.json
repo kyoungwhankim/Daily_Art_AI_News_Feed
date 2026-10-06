@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2025-09-15-1",
+    "service": "invokeai",
+    "date": "2025.09.15",
+    "kind": "기능",
+    "title": "Invoke 6.7.0: SAM2 객체 선택과 레이어 색 보정",
+    "summary": "Invoke 6.7.0에서 Segment Anything v2와 박스·텍스트 프롬프트로 객체를 선택할 수 있고, 래스터 레이어에 비파괴 색 보정을 걸 수 있게 됐어요.",
+    "details": [
+      "밝기·대비·채도·색온도·곡선 조정",
+      "최근 프롬프트 100개를 저장하는 Prompt History",
+      "워크플로 숫자 입력에 수식 사용"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-7-0/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-21-1",
+    "service": "scenario",
+    "date": "2026.09.21",
+    "kind": "모델",
+    "title": "ElevenLabs Music v2.5·GPT-6 Astra 3D 등",
+    "summary": "ElevenLabs Music v2.5, P-Video 2 Pro, GPT-6 Astra 3D, Scenario Vectorize, LTX-2.5 Pro 4K 등이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/WebApp-v2.25.2",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-09-21-2",
+    "service": "scenario",
+    "date": "2026.09.21",
+    "kind": "연동",
+    "title": "PATINA 리텍스처 스킬",
+    "summary": "에이전트용 PATINA 리텍스처링 워크플로 스킬과 3D·오디오·이미지·영상 지침 개선이 들어갔어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-45-0",
+    "source": "notice"
+  }
+]

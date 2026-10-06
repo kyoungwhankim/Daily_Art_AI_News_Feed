@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-09-04-1",
+    "service": "meshy",
+    "date": "2025.09.04",
+    "kind": "API",
+    "title": "Remesh·Retexture 입력 포맷 확대",
+    "summary": "Remesh와 Retexture의 model_url이 .glb, .gltf, .obj, .fbx, .stl을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  }
+]

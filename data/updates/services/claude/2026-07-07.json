@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-07-07-1",
+    "service": "claude",
+    "date": "2026.07.07",
+    "kind": "기능",
+    "title": "Claude Cowork 웹·모바일 지원",
+    "summary": "Claude Cowork를 데스크톱뿐 아니라 웹과 모바일에서도 쓸 수 있게 됐어요. 세션이 원격으로 실행돼 노트북을 닫아도 작업과 예약 작업이 계속돼요.",
+    "details": [
+      "Max부터 순차 제공",
+      "Microsoft 365 커넥터 쓰기 도구: 메일·캘린더·OneDrive·SharePoint"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

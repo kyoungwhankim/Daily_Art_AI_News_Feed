@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-07-24-1",
+    "service": "claude",
+    "date": "2026.07.24",
+    "kind": "모델",
+    "title": "Claude Opus 5 출시",
+    "summary": "Fable 5에 가까운 지능을 절반 가격에 제공하는 Claude Opus 5가 나왔어요. Max의 기본 모델이자 Pro에서 가장 강한 모델이에요.",
+    "details": [
+      "API: 1M 컨텍스트, 128k 출력, $5/$25 per MTok",
+      "effort 전 단계(low~max) 지원, 대화 중 도구 변경 베타"
+    ],
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "source": "notice"
+  }
+]

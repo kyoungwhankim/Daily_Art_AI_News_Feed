@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-01-19-1",
+    "service": "ltx-studio",
+    "date": "2026.01.19",
+    "kind": "API",
+    "title": "LTX API 업로드 엔드포인트 추가",
+    "summary": "서명된 URL로 에셋을 올리는 v1/upload 엔드포인트가 LTX API에 추가됐어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-07-13-1",
+    "service": "pixverse",
+    "date": "2026.07.13",
+    "kind": "앱",
+    "title": "PixVerse CLI: 터미널에서 영상·이미지 생성",
+    "summary": "터미널에서 영상·이미지·음성·음악을 생성하는 공식 PixVerse CLI를 소개했어요. JSON 출력으로 Claude Code, Cursor 같은 에이전트 자동화에 맞춰져 있어요.",
+    "url": "https://pixverse.ai/en/blog/pixverse-cli-generate-ai-videos-images-from-terminal",
+    "source": "notice"
+  }
+]

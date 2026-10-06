@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-08-21-1",
+    "service": "comfyui",
+    "date": "2025.08.21",
+    "kind": "기능",
+    "title": "ComfyUI 0.3.51: 서브그래프·새 매니저 UI·미니맵",
+    "summary": "6월 이후 가장 큰 프런트엔드 업데이트로 서브그래프가 안정판에 들어오고 새 Manager UI, 워크플로 미니맵, 단축키 패널 등이 추가됐어요.",
+    "url": "https://blog.comfy.org/p/comfyui-035-frontend-updates",
+    "source": "notice"
+  }
+]

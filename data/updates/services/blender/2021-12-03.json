@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2021-12-03-1",
+    "service": "blender",
+    "date": "2021.12.03",
+    "kind": "앱",
+    "title": "Blender 3.0 출시: Cycles X",
+    "summary": "GPU 커널을 다시 써 2~8배 빨라진 Cycles와 반응성이 좋아진 뷰포트를 담은 Blender 3.0이 나왔어요.",
+    "url": "https://www.blender.org/press/blender-3-0-a-new-era-for-content-creation/",
+    "source": "notice"
+  }
+]

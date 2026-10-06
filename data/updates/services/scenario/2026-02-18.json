@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-02-18-1",
+    "service": "scenario",
+    "date": "2026.02.18",
+    "kind": "API",
+    "title": "Kling V3·Grok Imagine, 네이티브 FBX 지원",
+    "summary": "Kling V3와 xAI Grok Imagine 등 새 모델을 API로 쓸 수 있고, FBX 파일을 강제 변환 없이 다룰 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-109-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-02-18-2",
+    "service": "scenario",
+    "date": "2026.02.18",
+    "kind": "API",
+    "title": "Flux 2 학습·Tripo 3D·Runway Gen-4.5",
+    "summary": "커스텀 Flux 2 모델 학습, Tripo 3D 생성, LTX-2와 Runway Gen-4.5 영상 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-25-0",
+    "source": "notice"
+  }
+]

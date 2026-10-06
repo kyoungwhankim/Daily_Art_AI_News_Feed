@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2024-11-29-1",
+    "service": "elevenlabs",
+    "date": "2024.11.29",
+    "kind": "기능",
+    "title": "Agents Platform 정식 출시와 Projects 개편",
+    "summary": "Agents Platform이 모든 고객에게 정식 제공되고 SDK·API가 나왔어요. ElevenReader에 GenFM이 들어가고 웹 TTS 리디자인이 전체 적용됐어요.",
+    "details": [
+      "Agents Platform GA, SDK·API 공개",
+      "ElevenReader GenFM",
+      "TTS 리디자인 전체 적용",
+      "Projects 자동 재생성·이전 생성 복원·2배속 QC"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2024/11/29",
+    "source": "dev"
+  }
+]

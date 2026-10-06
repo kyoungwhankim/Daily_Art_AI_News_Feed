@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-04-30-1",
+    "service": "heygen",
+    "date": "2026.04.30",
+    "kind": "API",
+    "title": "HeyGen API 워터마크 크기·투명도·위치 제어",
+    "summary": "POST /v3/videos의 watermark에 scale, opacity, placement 옵션이 추가돼 워터마크 크기와 투명도, 위치를 세밀하게 조정할 수 있어요.",
+    "url": "https://docs.heygen.com/changelog#custom-watermark-controls",
+    "source": "dev"
+  }
+]

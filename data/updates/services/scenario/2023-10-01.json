@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-01-1",
+    "service": "scenario",
+    "date": "2023.10.01",
+    "kind": "기능",
+    "title": "캔버스 화면 정리·업스케일 옵션 확대",
+    "summary": "캔버스 페이지가 깔끔해지고 프로젝트 이름 변경, 캔버스 업스케일 옵션, 새 생성 빌더 디자인이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-33-0-october-1st-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-06-20-1",
+    "service": "scenario",
+    "date": "2023.06.20",
+    "kind": "기능",
+    "title": "인터페이스 레이아웃 재설계",
+    "summary": "내비게이션을 더 쉽게 하도록 레이아웃을 바꾸고 도움말·채팅·워크스페이스 위치를 옮겼어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-18-0-june-20-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-03-27-1",
+    "service": "elevenlabs",
+    "date": "2026.03.27",
+    "kind": "API",
+    "title": "ElevenAgents React SDK v1.0",
+    "summary": "웹과 React Native용 ElevenAgents React SDK의 첫 메이저 버전 1.0이 나왔어요.",
+    "url": "https://elevenlabs.io/blog/elevenagents-react-sdk-v1-0",
+    "source": "dev"
+  }
+]

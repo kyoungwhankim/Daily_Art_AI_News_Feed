@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-07-02-1",
+    "service": "nvidia-studio",
+    "date": "2025.07.02",
+    "kind": "모델",
+    "title": "FLUX.1 Kontext RTX 가속 버전 공개",
+    "summary": "Black Forest Labs의 이미지 편집 모델 FLUX.1 Kontext가 RTX용 TensorRT 가속과 함께 다운로드 제공돼요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-kontext-nim-tensorrt/",
+    "source": "notice"
+  }
+]

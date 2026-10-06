@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2025-07-08-1",
+    "service": "comfyui",
+    "date": "2025.07.08",
+    "kind": "연동",
+    "title": "ComfyUI, Moonvalley Marey Realism v1.5 API 노드",
+    "summary": "100% 라이선스 콘텐츠로 학습한 Moonvalley의 영상 모델 Marey Realism v1.5를 텍스트·이미지→영상 API 노드로 쓸 수 있어요. 기본 1080P 출력이에요.",
+    "details": [
+      "v0.3.44: TCFG·ER-SDE·Skip Layer Guidance 등 샘플링 기능",
+      "ImageRotate·ImageFlip 노드 추가",
+      "--whitelist-custom-nodes 실행 옵션"
+    ],
+    "url": "https://blog.comfy.org/p/marey-realism-v15-in-comfyui-built",
+    "source": "notice"
+  }
+]

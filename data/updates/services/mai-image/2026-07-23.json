@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mai-image-2026-07-23-1",
+    "service": "mai-image",
+    "date": "2026.07.23",
+    "kind": "모델",
+    "title": "최고 품질 모델 MAI-Image-2.5-Pro 공개 프리뷰",
+    "summary": "MAI 이미지 모델 중 가장 충실도가 높은 MAI-Image-2.5-Pro가 공개 프리뷰로 나왔어요. 히어로 이미지, 정밀 편집, 정확한 글자 렌더링에 맞춰져 있어요.",
+    "details": [
+      "가격: 텍스트 입력 5달러, 이미지 입력 8달러, 이미지 출력 106달러(100만 토큰당)",
+      "Bing Image Creator가 기본적으로 100% 자체 MAI 모델로 동작",
+      "PowerPoint 이미지-이미지 기능에 MAI-Image-2.5 적용"
+    ],
+    "url": "https://microsoft.ai/news/introducing-mai-image-2-5-pro-and-mai-voice-2-flash/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-10-14-1",
+    "service": "elevenlabs",
+    "date": "2025.10.14",
+    "kind": "API",
+    "title": "대화 중 에이전트 LLM 교체",
+    "summary": "대화 도중 에이전트의 LLM을 다른 모델로 덮어쓸 수 있게 됐고 SDK들이 업데이트됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/14",
+    "source": "dev"
+  }
+]

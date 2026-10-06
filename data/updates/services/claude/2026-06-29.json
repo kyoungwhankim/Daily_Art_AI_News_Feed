@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-29-1",
+    "service": "claude",
+    "date": "2026.06.29",
+    "kind": "종료",
+    "title": "Claude Opus 4.6 빠른 모드 제거",
+    "summary": "claude-opus-4-6의 fast 모드가 제거돼 표준 속도·요금으로 처리돼요. 빠른 모드는 Opus 4.8로 이전해야 해요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-29-2026",
+    "source": "dev"
+  }
+]

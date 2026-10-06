@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-05-20-1",
+    "service": "meshy",
+    "date": "2025.05.20",
+    "kind": "API",
+    "title": "moderation 파라미터 추가",
+    "summary": "Text to 3D·Image to 3D·Multi-Image to 3D API에 moderation 옵션이 생겨 생성 전에 유해 콘텐츠를 자동 검사할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#may-2025",
+    "source": "dev"
+  }
+]

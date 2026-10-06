@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-04-14-1",
+    "service": "krea",
+    "date": "2026.04.14",
+    "kind": "기능",
+    "title": "이미지 도구에서 여러 모델 나란히 비교",
+    "summary": "이미지 도구에서 Multiple Models를 켜면 같은 프롬프트와 설정으로 여러 모델을 한 번에 생성해 결과를 나란히 비교할 수 있어요.",
+    "url": "https://www.krea.ai/docs/changelog#april-14-2026",
+    "source": "dev"
+  }
+]

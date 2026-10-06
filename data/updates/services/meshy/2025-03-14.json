@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-03-14-1",
+    "service": "meshy",
+    "date": "2025.03.14",
+    "kind": "API",
+    "title": "Text to Texture API, base64 모델 입력 지원",
+    "summary": "Text to Texture API의 model_url이 Data URI 형태의 base64 모델을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#mar-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-03-13-1",
+    "service": "scenario",
+    "date": "2024.03.13",
+    "kind": "요금",
+    "title": "API 선불제·Creative Units 과금 전환",
+    "summary": "API가 선불 방식으로 바뀌고 모든 호출이 Creative Units 기준으로 과금돼요. dryRun으로 비용을 미리 볼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-18-0-march-13th-2024",
+    "source": "dev"
+  }
+]

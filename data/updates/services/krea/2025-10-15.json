@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2025-10-15-1",
+    "service": "krea",
+    "date": "2025.10.15",
+    "kind": "모델",
+    "title": "실시간 장편 영상 모델 Krea Realtime 14B 공개",
+    "summary": "Wan 2.1 14B에서 Self-Forcing으로 증류한 140억 파라미터 자기회귀 영상 모델 Krea Realtime 14B를 공개했어요. 생성 중에 프롬프트를 바꿔 영상을 실시간으로 연출할 수 있어요.",
+    "details": [
+      "B200 GPU 한 장에서 4스텝 기준 약 11fps 텍스트-투-비디오",
+      "기존 실시간 영상 모델보다 10배 이상 큰 규모",
+      "첫 프레임까지 지연 약 1초"
+    ],
+    "url": "https://www.krea.ai/blog/krea-realtime-14b",
+    "source": "notice"
+  }
+]

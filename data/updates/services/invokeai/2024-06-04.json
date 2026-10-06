@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-06-04-1",
+    "service": "invokeai",
+    "date": "2024.06.04",
+    "kind": "기능",
+    "title": "Invoke 4.2.4: 이미지 비교 뷰어",
+    "summary": "Invoke 4.2.4에서 두 이미지를 슬라이더·나란히·호버 방식으로 비교하는 기능이 추가됐어요. 성능과 코드 품질 개선도 함께 이뤄졌어요.",
+    "url": "https://invoke.ai/releases/version/v4-2-4/",
+    "source": "notice"
+  }
+]

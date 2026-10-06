@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iclone-2025-10-29-1",
+    "service": "iclone",
+    "date": "2025.10.29",
+    "kind": "기능",
+    "title": "iClone Video Mocap 출시, 영상을 3D 모션으로",
+    "summary": "일반 영상을 전신·상체·손가락까지 정밀한 3D 모션으로 바꾸는 iClone Video Mocap이 나왔고, iClone 8.63이 이를 지원해요. 실시간 미리보기와 일괄 생성도 돼요.",
+    "details": [
+      "전신·상체·손가락 트래킹",
+      "실시간 미리보기, 시각적 트리밍, 일괄 생성",
+      "Motion Layer·Curve Editor·AccuPOSE로 후편집"
+    ],
+    "url": "https://magazine.reallusion.com/2025/10/29/iclone-video-mocap-converts-videos-into-editable-3d-motion/",
+    "source": "notice"
+  }
+]

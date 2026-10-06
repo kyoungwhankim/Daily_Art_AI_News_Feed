@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-03-13-1",
+    "service": "comfyui",
+    "date": "2026.03.13",
+    "kind": "기능",
+    "title": "ComfyUI v0.17.0: 비동기 에셋 스캐너와 Painter 노드",
+    "summary": "ComfyUI v0.17.0에서 비동기 2단계 스캐너 기반 에셋 구조로 로딩이 빨라지고, Painter 노드와 Reve Image API 노드가 추가됐어요.",
+    "details": [
+      "Flux 2 Klein KV 캐시 노드",
+      "ComfyUI Manager 4.1b2"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-17-0",
+    "source": "notice"
+  }
+]

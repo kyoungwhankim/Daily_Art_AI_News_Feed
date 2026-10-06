@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-07-25-1",
+    "service": "hugging-face",
+    "date": "2025.07.25",
+    "kind": "앱",
+    "title": "huggingface-cli가 hf로 이름 바꾸고 개편",
+    "summary": "CLI 이름이 hf로 바뀌고 'hf <리소스> <동작>' 구조로 정리됐어요. 기존 명령도 계속 동작하며 새 명령을 안내해 줘요.",
+    "url": "https://huggingface.co/changelog/better-hf-cli",
+    "source": "notice"
+  }
+]

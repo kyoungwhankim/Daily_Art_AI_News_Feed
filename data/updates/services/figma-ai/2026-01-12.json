@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-01-12-1",
+    "service": "figma-ai",
+    "date": "2026.01.12",
+    "kind": "요금",
+    "title": "조직 AI 크레딧 사용 이력 조회",
+    "summary": "Organization·Enterprise 관리자가 과거 AI 크레딧 사용 데이터를 보고 향후 비용을 계획할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=ai-credit-usage-history",
+    "source": "notice"
+  }
+]

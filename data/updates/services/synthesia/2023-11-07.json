@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2023-11-07-1",
+    "service": "synthesia",
+    "date": "2023.11.07",
+    "kind": "기능",
+    "title": "Synthesia 영상 번역 언어 50개 추가",
+    "summary": "영상 번역 언어를 50개 늘려 80개 이상 언어·방언으로 현지화할 수 있게 됐어요(Enterprise).",
+    "url": "https://www.synthesia.io/updates/50-new-translation-languages",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-06-05-1",
+    "service": "claude",
+    "date": "2024.06.05",
+    "kind": "앱",
+    "title": "Claude, 캐나다 출시",
+    "summary": "캐나다의 개인과 기업이 Claude를 쓸 수 있게 됐어요.",
+    "url": "https://www.anthropic.com/news/introducing-claude-to-canada",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "blender-2026-03-17-1",
+    "service": "blender",
+    "date": "2026.03.17",
+    "kind": "앱",
+    "title": "Blender 5.1 출시: 속도와 안정성 강화",
+    "summary": "Blender 5.1이 나왔어요. 셰이더용 Raycast 노드로 Cycles·EEVEE에서 NPR 스타일 효과를 만들 수 있고, EEVEE 머티리얼과 GPU 셰이더 컴파일이 크게 빨라졌어요.",
+    "details": [
+      "새 Raycast 셰이더 노드 (Cycles·EEVEE)",
+      "EEVEE 파이프라인 병렬 사전 컴파일로 빠른 시작"
+    ],
+    "url": "https://www.blender.org/press/blender-5-1-release/",
+    "source": "notice"
+  }
+]

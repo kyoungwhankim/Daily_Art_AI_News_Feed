@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-08-23-1",
+    "service": "stable-diffusion",
+    "date": "2023.08.23",
+    "kind": "연동",
+    "title": "NVIDIA TensorRT로 SDXL 속도 향상",
+    "summary": "NVIDIA와 협력해 TensorRT 버전 SDXL과 ONNX 가중치를 공개했어요. H100에서 성능이 두 배가 돼 고해상도 이미지를 1.47초에 만들어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-sdxl-gets-boost-from-nvidia-tensor-rt",
+    "source": "notice"
+  }
+]

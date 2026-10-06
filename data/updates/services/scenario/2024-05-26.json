@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-05-26-1",
+    "service": "scenario",
+    "date": "2024.05.26",
+    "kind": "기능",
+    "title": "새 로그인 페이지·홈 사용 사례",
+    "summary": "로그인 페이지가 새로 디자인되고 홈에 사용 사례가 추가됐어요. Models 페이지 성능도 좋아졌어요.",
+    "url": "https://www.scenario.com/changelog/1-57-new-login-page-improvements",
+    "source": "notice"
+  }
+]

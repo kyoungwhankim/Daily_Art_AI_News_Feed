@@ -1,0 +1,16 @@
+[
+  {
+    "id": "recraft-2024-09-09-1",
+    "service": "recraft",
+    "date": "2024.09.09",
+    "kind": "요금",
+    "title": "크레딧 기반 구독 요금제로 개편",
+    "summary": "Recraft가 무료 플랜을 유지하면서 월 크레딧과 우선 생성, 이미지 소유권 등을 주는 크레딧 기반 유료 구독 체계로 요금제를 바꿨어요.",
+    "details": [
+      "Free·Basic·Advanced·Pro 등 단계별 플랜",
+      "유료 플랜은 월 크레딧·우선 생성·비공개 이미지·소유권 제공"
+    ],
+    "url": "https://www.recraft.ai/blog/pricing-update",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-04-23-1",
+    "service": "figma-ai",
+    "date": "2025.04.23",
+    "kind": "기능",
+    "title": "gpt-image-1 기반 Edit Image 도입",
+    "summary": "Figma Design에 프롬프트로 이미지를 수정하는 Edit Image가 도입됐어요. OpenAI gpt-image-1로 동작해요.",
+    "url": "https://www.figma.com/release-notes/?title=updates-to-ai",
+    "source": "notice"
+  }
+]

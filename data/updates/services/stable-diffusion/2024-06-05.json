@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-06-05-1",
+    "service": "stable-diffusion",
+    "date": "2024.06.05",
+    "kind": "API",
+    "title": "Stable Image Ultra 생성 API 출시",
+    "summary": "Stability AI에서 가장 높은 화질과 프롬프트 정렬을 보여 주는 이미지 생성 서비스 Stable Image Ultra를 API로 출시했어요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

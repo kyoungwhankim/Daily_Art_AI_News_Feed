@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2021-01-19-1",
+    "service": "topaz-video",
+    "date": "2021.01.19",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.9.0: 인터레이스용 Dione 모델",
+    "summary": "인터레이스 영상을 디인터레이스·노이즈 제거·프레임 2배로 한 번에 처리하는 Dione DV/TV/TD 모델을 추가했어요.",
+    "details": [
+      "Artemis HQ/MQ/LQ v10 업데이트",
+      "적응형 그레인 파라미터",
+      "DV·VOB·MXF 파일 읽기 지원"
+    ],
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-9-0/19413",
+    "source": "notice"
+  }
+]

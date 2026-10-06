@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-29-1",
+    "service": "scenario",
+    "date": "2025.09.29",
+    "kind": "API",
+    "title": "SSO 셀프 온보딩·구독 일시정지 준비",
+    "summary": "SSO를 직접 설정할 수 있게 됐고 구독 일시정지 기능을 위한 준비가 이뤄졌어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-90-0-prepare-for-pause-subscription",
+    "source": "dev"
+  }
+]

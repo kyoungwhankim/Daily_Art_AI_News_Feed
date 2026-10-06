@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-08-19-1",
+    "service": "stable-diffusion",
+    "date": "2024.08.19",
+    "kind": "API",
+    "title": "Search and Recolor 편집 API 추가",
+    "summary": "프롬프트로 이미지 속 특정 사물의 색만 바꾸는 Search and Recolor 편집 API가 추가됐어요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

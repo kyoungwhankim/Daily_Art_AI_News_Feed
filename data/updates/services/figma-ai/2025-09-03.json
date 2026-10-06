@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-09-03-1",
+    "service": "figma-ai",
+    "date": "2025.09.03",
+    "kind": "정책",
+    "title": "조직 전체 Make·Sites 비밀번호 필수화",
+    "summary": "Enterprise 관리자가 조직에서 게시되는 모든 Sites와 Make에 비밀번호 보호를 의무화할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=make-passwords-required-across-your-organization",
+    "source": "notice"
+  }
+]

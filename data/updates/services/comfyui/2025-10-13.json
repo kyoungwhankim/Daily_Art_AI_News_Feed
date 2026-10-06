@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-10-13-1",
+    "service": "comfyui",
+    "date": "2025.10.13",
+    "kind": "연동",
+    "title": "ComfyUI, NVIDIA DGX Spark에서 동작",
+    "summary": "128GB 통합 메모리를 갖춘 소형 컴퓨터 NVIDIA DGX Spark에서 ComfyUI가 잘 돌아가며, 시험한 모든 모델이 작동한다고 소개했어요.",
+    "url": "https://blog.comfy.org/p/comfyui-on-nvidia-dgx-spark",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-07-31-1",
+    "service": "comfyui",
+    "date": "2025.07.31",
+    "kind": "모델",
+    "title": "ComfyUI, FLUX.1 Krea [dev] 첫날 지원",
+    "summary": "Black Forest Labs와 Krea가 함께 만든, AI 티가 덜 나는 오픈 모델 FLUX.1 Krea [dev]를 ComfyUI에서 출시 첫날 네이티브로 지원해요.",
+    "url": "https://blog.comfy.org/p/flux1-krea-dev-lands-on-comfyui-on",
+    "source": "notice"
+  }
+]

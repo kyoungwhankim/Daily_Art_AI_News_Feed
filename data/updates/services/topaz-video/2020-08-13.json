@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2020-08-13-1",
+    "service": "topaz-video",
+    "date": "2020.08.13",
+    "kind": "앱",
+    "title": "Video Enhance AI v1.5.1: H.264 출력 전환",
+    "summary": "영상 출력 코덱을 H.263에서 H.264로 바꾸고, Theia 파라미터 기본값 저장 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/video-enhance-ai-v1-5-1/15985",
+    "source": "notice"
+  }
+]

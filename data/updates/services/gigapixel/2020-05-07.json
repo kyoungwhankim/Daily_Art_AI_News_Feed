@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2020-05-07-1",
+    "service": "gigapixel",
+    "date": "2020.05.07",
+    "kind": "앱",
+    "title": "Gigapixel AI v4.8: 폴더 드래그 앤 드롭 복구",
+    "summary": "폴더를 끌어다 놓으면 하위 폴더 10단계까지 이미지를 한 번에 불러와요. Esc 키 동작과 소수점 배율 입력도 개선됐어요.",
+    "details": [
+      "v4.8.2: 확장자가 소문자로 강제되던 문제 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-ai-v4-8-2/14704",
+    "source": "notice"
+  }
+]

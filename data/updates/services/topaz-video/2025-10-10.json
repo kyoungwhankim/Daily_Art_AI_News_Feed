@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-10-10-1",
+    "service": "topaz-video",
+    "date": "2025.10.10",
+    "kind": "앱",
+    "title": "Topaz Video 1.0.2: 플러그인 복귀",
+    "summary": "1.0.0에서 빠졌던 플러그인들을 이전 상태로 되살려 다시 쓸 수 있게 했어요. 성능을 높인 플러그인 재작성도 진행 중이에요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-1-0-2-patch-with-plugins/97371",
+    "source": "notice"
+  }
+]

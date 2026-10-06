@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-01-26-1",
+    "service": "runway",
+    "date": "2024.01.26",
+    "kind": "기능",
+    "title": "Custom Voices 워크스페이스 공유",
+    "summary": "만든 Custom Voice를 워크스페이스 구성원과 공유할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

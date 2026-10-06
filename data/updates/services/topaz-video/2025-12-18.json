@@ -1,0 +1,16 @@
+[
+  {
+    "id": "topaz-video-2025-12-18-1",
+    "service": "topaz-video",
+    "date": "2025.12.18",
+    "kind": "앱",
+    "title": "Topaz Video 1.1.0: 새 디노이즈 필터와 그레인 개선",
+    "summary": "새 Denoise 필터를 추가하고 그레인 효과를 크게 개선했어요. Pro용 Starlight Mini 이름이 돌아왔고 AMD·Mac 지원이 좋아졌어요.",
+    "details": [
+      "After Effects·DaVinci Resolve 플러그인 업데이트",
+      "코덱 업데이트"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-video-1-1-0/99278",
+    "source": "notice"
+  }
+]

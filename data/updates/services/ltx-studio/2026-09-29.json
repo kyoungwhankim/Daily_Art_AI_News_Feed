@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ltx-studio-2026-09-29-1",
+    "service": "ltx-studio",
+    "date": "2026.09.29",
+    "kind": "모델",
+    "title": "LTX 후반 작업용 Native Resolution·Refine·Restore",
+    "summary": "단일 GPU에서 납품 해상도 그대로 처리하는 Native Resolution 워크플로와 흐린 영상을 선명하게 하는 Refine, 오래된 영상 색을 살리는 Restore IC-LoRA를 공개했어요.",
+    "details": [
+      "8K 이상 업스케일과 조합 가능"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

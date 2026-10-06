@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2024-11-18-1",
+    "service": "firefly",
+    "date": "2024.11.18",
+    "kind": "API",
+    "title": "Firefly 비동기 API 정식 출시",
+    "summary": "Generate Image, Expand, Fill, Object Composite, Similar Images의 비동기(Async) API가 정식으로 제공돼요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#november-18-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-06-10-1",
+    "service": "meshy",
+    "date": "2025.06.10",
+    "kind": "API",
+    "title": "Remesh API, base64 GLB 입력 지원",
+    "summary": "Remesh API의 model_url이 Data URI 형태의 base64 GLB 모델을 받게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jun-2025",
+    "source": "dev"
+  }
+]

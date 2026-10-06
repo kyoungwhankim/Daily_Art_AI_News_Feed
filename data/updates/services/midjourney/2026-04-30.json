@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2026-04-30-1",
+    "service": "midjourney",
+    "date": "2026.04.30",
+    "kind": "모델",
+    "title": "V8.1 Discord·midjourney.com 제공, 선명도 개선",
+    "summary": "V8.1을 Discord와 midjourney.com에서도 쓸 수 있게 됐고, 특히 SREF·무드보드에서 선명도와 화질이 좋아졌어요.",
+    "details": [
+      "서버 전환 기간 동안 SD가 기본값",
+      "HD는 설정 또는 --hd로 사용"
+    ],
+    "url": "https://updates.midjourney.com/v8-1-updates/",
+    "source": "notice"
+  }
+]

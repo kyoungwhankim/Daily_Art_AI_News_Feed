@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-03-09-1",
+    "service": "magnific",
+    "date": "2026.03.09",
+    "kind": "API",
+    "title": "로열티 프리 Music API",
+    "summary": "Magnific Music 카탈로그의 로열티 프리 음악을 장르·무드로 검색하고 내려받는 Music API를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#march-9-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2026-08-04-1",
+    "service": "flux",
+    "date": "2026.08.04",
+    "kind": "모델",
+    "title": "FLUX 3 Video 정식 출시: 오디오 동기화 영상 생성",
+    "summary": "FLUX 3의 첫 영상 생성 기능이 BFL API로 공개됐어요. 텍스트·이미지로 최대 20초 영상을 만들고 대사·효과음까지 함께 생성해요.",
+    "details": [
+      "24fps, 다국어 음성과 립싱크",
+      "t2v·i2v(키프레임 1–10장)·v2v·draft_enhance 4가지 모드",
+      "한 번에 여러 장면·카메라 앵글, 정확한 화면 속 텍스트",
+      "엔드포인트 POST /v1/flux-3-video"
+    ],
+    "url": "https://bfl.ai/blog/flux-3-video",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-01-22-1",
+    "service": "magnific",
+    "date": "2026.01.22",
+    "kind": "API",
+    "title": "Nano Banana Pro 텍스트-투-이미지 API",
+    "summary": "Google Nano Banana Pro(Gemini 3) 이미지 생성 엔드포인트를 추가했어요. 레퍼런스 이미지 최대 3장과 4K까지의 해상도 옵션을 지원해요.",
+    "details": [
+      "POST /v1/ai/text-to-image/nano-banana-pro",
+      "다양한 종횡비, low·medium·high(4K) 해상도",
+      "웹훅 알림"
+    ],
+    "url": "https://docs.magnific.com/changelog#january-22-2026",
+    "source": "dev"
+  }
+]

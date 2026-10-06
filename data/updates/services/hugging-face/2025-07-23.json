@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2025-07-23-1",
+    "service": "hugging-face",
+    "date": "2025.07.23",
+    "kind": "기능",
+    "title": "Dataset Viewer JSON 셀 지원",
+    "summary": "Dataset Viewer에서 JSON 셀을 펼쳐 볼 수 있어 중첩 구조 확인과 복사가 쉬워졌어요. 도구 호출 데이터셋을 볼 때 특히 유용해요.",
+    "url": "https://huggingface.co/changelog/dataset-viewer-json-support",
+    "source": "notice"
+  }
+]

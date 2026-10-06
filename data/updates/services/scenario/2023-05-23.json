@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-05-23-1",
+    "service": "scenario",
+    "date": "2023.05.23",
+    "kind": "기능",
+    "title": "Prompt Embeddings 기능 추가",
+    "summary": "생성기에 고정 문구를 묶어 모든 프롬프트에 자동으로 포함시키는 Prompt Embeddings가 나왔어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-13-0-may-23-2023",
+    "source": "notice"
+  }
+]

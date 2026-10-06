@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-02-20-1",
+    "service": "midjourney",
+    "date": "2025.02.20",
+    "kind": "기능",
+    "title": "웹에 폴더·정리 시스템 추가",
+    "summary": "Create와 Organize 페이지에 폴더 메뉴가 생겨 프로젝트별로 이미지를 정리할 수 있어요. 폴더를 열어 둔 채 만들면 자동으로 저장돼요.",
+    "details": [
+      "폴더를 그룹으로 묶기",
+      "한 이미지를 여러 폴더에 추가",
+      "폴더 우클릭으로 전체 다운로드"
+    ],
+    "url": "https://updates.midjourney.com/new-tools-for-organization/",
+    "source": "notice"
+  }
+]

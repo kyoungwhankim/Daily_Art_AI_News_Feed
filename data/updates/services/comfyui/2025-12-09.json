@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-09-1",
+    "service": "comfyui",
+    "date": "2025.12.09",
+    "kind": "연동",
+    "title": "Ubisoft, PBR 재질 모델 CHORD와 ComfyUI 노드 공개",
+    "summary": "Ubisoft La Forge가 PBR 재질 추정 모델 CHORD와 ComfyUI-Chord 노드를 연구용 라이선스로 공개해 ComfyUI에서 재질 생성 워크플로를 만들 수 있게 됐어요.",
+    "url": "https://blog.comfy.org/p/ubisoft-open-sources-the-chord-model",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-07-21-1",
+    "service": "invokeai",
+    "date": "2025.07.21",
+    "kind": "기능",
+    "title": "Invoke 6.1.0: Send to Gallery 모드 복원",
+    "summary": "Invoke 6.1.0에서 캔버스 Save All Images to Gallery 설정이 v5의 Send to Gallery처럼 스테이징을 건너뛰도록 바뀌어 대량 생성 작업 흐름이 돌아왔어요.",
+    "url": "https://invoke.ai/releases/version/v6-1-0/",
+    "source": "notice"
+  }
+]

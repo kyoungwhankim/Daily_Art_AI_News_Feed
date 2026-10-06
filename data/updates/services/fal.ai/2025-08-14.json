@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-08-14-1",
+    "service": "fal.ai",
+    "date": "2025.08.14",
+    "kind": "모델",
+    "title": "Qwen Image 추론·학습 엔드포인트 제공",
+    "summary": "프롬프트 이해가 뛰어난 Alibaba Qwen Image 모델의 추론과 학습 엔드포인트가 fal에 나왔어요.",
+    "url": "https://blog.fal.ai/introducing-qwen-image/",
+    "source": "notice"
+  },
+  {
+    "id": "fal.ai-2025-08-14-2",
+    "service": "fal.ai",
+    "date": "2025.08.14",
+    "kind": "모델",
+    "title": "Moonvalley Marey Realism v1.5 fal 제공",
+    "summary": "완전 라이선스 데이터로만 학습한 영상 모델 Marey Realism v1.5가 fal에 나왔어요. 상업적으로 안심하고 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/moonvalleys-marey-realism-v1-5-is-now-on-fal-the-most-advanced-generative-filmmaking-yet/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-05-18-1",
+    "service": "scenario",
+    "date": "2026.05.18",
+    "kind": "연동",
+    "title": "MCP, Claude.ai·Vercel v0 연결 가이드",
+    "summary": "Claude.ai와 Vercel v0에서 Scenario MCP를 연결하는 설정 가이드가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-8-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-05-18-2",
+    "service": "scenario",
+    "date": "2026.05.18",
+    "kind": "모델",
+    "title": "Pixal3D·Veo 3.1 참조 영상",
+    "summary": "단일 이미지 3D 생성 Pixal3D와 Veo 3.1 참조 영상·9:16 세로 영상, 새 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2.10.2",
+    "source": "notice"
+  }
+]

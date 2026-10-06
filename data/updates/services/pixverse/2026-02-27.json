@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pixverse-2026-02-27-1",
+    "service": "pixverse",
+    "date": "2026.02.27",
+    "kind": "연동",
+    "title": "PixVerse에 Nano Banana 2 이미지 모델 추가",
+    "summary": "Google의 빠른 이미지 모델 Nano Banana 2를 모든 PixVerse 가입자가 쓸 수 있게 됐어요. 최대 4K 출력과 9장 레퍼런스 입력을 지원해요.",
+    "details": [
+      "512p 16크레딧, 1K 25크레딧부터",
+      "4단계 해상도 선택"
+    ],
+    "url": "https://pixverse.ai/en/blog/nano-banana-2-now-available-on-pixverse",
+    "source": "notice"
+  }
+]

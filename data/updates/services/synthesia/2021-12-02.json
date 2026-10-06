@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-12-02-1",
+    "service": "synthesia",
+    "date": "2021.12.02",
+    "kind": "기능",
+    "title": "Synthesia 텍스트 편집기 개선",
+    "summary": "텍스트 일부의 색상, 스타일, 자간을 바꾸고 글머리표를 넣을 수 있게 텍스트 편집기를 개선했어요.",
+    "url": "https://www.synthesia.io/updates/improved-text-editor",
+    "source": "notice"
+  }
+]

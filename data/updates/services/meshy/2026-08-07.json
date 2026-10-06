@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-07-1",
+    "service": "meshy",
+    "date": "2026.08.07",
+    "kind": "기능",
+    "title": "Multiview 업그레이드: 멀티뷰 텍스처 추가",
+    "summary": "최대 4장의 뷰로 생성하는 Multiview Geometry를 개선하고 Multiview Texture를 추가했어요. 네이티브 2K/4K/8K 베이스 컬러 텍스처를 지원해요.",
+    "url": "https://www.meshy.ai/blog/multiview-upgrade",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-07-09-1",
+    "service": "ludo.ai",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "스프라이트시트·영상 프롬프트 편집, 참조 영상",
+    "summary": "생성한 스프라이트시트와 영상을 프롬프트로 고치고, 참조 이미지 최대 5장으로 영상을 만들 수 있어요. Motion Transfer는 절반 가격이 됐어요.",
+    "details": [
+      "Edit Spritesheet 탭: 외형·동작을 문장으로 수정",
+      "Video Generator From References 탭, 화면비 선택",
+      "Edit Video: 생성 영상 프롬프트 편집",
+      "Motion Transfer에 Forge 모델, 초당 2크레딧"
+    ],
+    "url": "https://ludo.ai/whats-new#edit-spritesheets-with-a-prompt",
+    "source": "notice"
+  }
+]

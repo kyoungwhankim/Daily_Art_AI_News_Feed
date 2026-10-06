@@ -1,0 +1,27 @@
+[
+  {
+    "id": "runway-2025-12-11-1",
+    "service": "runway",
+    "date": "2025.12.11",
+    "kind": "모델",
+    "title": "Gen-4.5 모든 유료 플랜에 제공",
+    "summary": "Runway가 세계 최고라고 소개한 영상 모델 Gen-4.5를 모든 유료 플랜에서 쓸 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2025-12-11-2",
+    "service": "runway",
+    "date": "2025.12.11",
+    "kind": "모델",
+    "title": "General World Model GWM-1 공개",
+    "summary": "Gen-4.5 기반으로 실시간 프레임 단위 생성과 액션 제어가 가능한 첫 범용 월드 모델 GWM-1을 발표했어요. GWM Worlds, Avatars, Robotics 세 가지로 나와요.",
+    "details": [
+      "GWM Worlds: 탐험 가능한 환경",
+      "GWM Avatars: 대화형 캐릭터",
+      "GWM Robotics: 로봇 조작"
+    ],
+    "url": "https://runway.com/research/introducing-runway-gwm-1",
+    "source": "notice"
+  }
+]

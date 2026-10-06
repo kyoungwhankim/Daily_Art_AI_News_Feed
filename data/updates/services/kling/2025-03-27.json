@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2025-03-27-1",
+    "service": "kling",
+    "date": "2025.03.27",
+    "kind": "기능",
+    "title": "Kling AI 전면 리디자인, AI 사운드 생성 추가",
+    "summary": "Kling AI가 사용성을 개선한 새 디자인으로 바뀌고, 영상 내용에 맞춰 소리를 만드는 AI 사운드 생성이 추가됐어요. KLING 1.6도 영상 연장을 지원해요.",
+    "details": [
+      "에셋 관리에 폴더 기능 추가",
+      "새 효과 BloomBloom 추가"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/2025032754",
+    "source": "notice"
+  }
+]

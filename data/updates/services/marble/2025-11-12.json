@@ -1,0 +1,18 @@
+[
+  {
+    "id": "marble-2025-11-12-1",
+    "service": "marble",
+    "date": "2025.11.12",
+    "kind": "모델",
+    "title": "Marble 정식 출시, 멀티모달 월드 모델",
+    "summary": "Marble이 누구나 쓸 수 있게 정식 출시됐어요. 텍스트·이미지·영상·3D 레이아웃으로 월드를 만들고 편집·확장·결합한 뒤 스플랫·메시·영상으로 내보낼 수 있어요.",
+    "details": [
+      "텍스트·이미지·영상·거친 3D 레이아웃 입력",
+      "월드 편집·확장·합치기",
+      "가우시안 스플랫·메시·영상 내보내기",
+      "크리에이티브 허브 Marble Labs 개설"
+    ],
+    "url": "https://www.worldlabs.ai/blog/marble-world-model",
+    "source": "notice"
+  }
+]

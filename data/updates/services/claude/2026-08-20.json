@@ -1,0 +1,15 @@
+[
+  {
+    "id": "claude-2026-08-20-1",
+    "service": "claude",
+    "date": "2026.08.20",
+    "kind": "API",
+    "title": "Python SDK v1.0 출시",
+    "summary": "Python SDK v1.0이 나왔어요. HTTP 계층이 httpx2로 바뀌고 Python 3.10 이상이 필요하며, 레거시 Text Completions API 등 오래된 기능이 제거됐어요.",
+    "details": [
+      "Google Cloud에 컴퓨터·브라우저 사용 툴셋 제공"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2025-08-26-1",
+    "service": "firefly",
+    "date": "2025.08.26",
+    "kind": "연동",
+    "title": "Firefly에 Gemini 2.5 Flash Image 탑재",
+    "summary": "Google이 공개한 Gemini 2.5 Flash Image를 출시 당일부터 Firefly와 Adobe Express에서 쓸 수 있어요.",
+    "url": "https://blog.adobe.com/en/publish/2025/08/26/adobe-firefly-adobe-express-now-feature-googles-gemini-flash-image-model",
+    "source": "notice"
+  }
+]

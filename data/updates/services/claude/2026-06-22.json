@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-06-22-1",
+    "service": "claude",
+    "date": "2026.06.22",
+    "kind": "API",
+    "title": "MCP 터널 관리 API 이전",
+    "summary": "MCP 터널(리서치 프리뷰) 관리 API가 Admin API에서 Claude API의 /v1/tunnels로 옮겨졌어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-22-2026",
+    "source": "dev"
+  }
+]

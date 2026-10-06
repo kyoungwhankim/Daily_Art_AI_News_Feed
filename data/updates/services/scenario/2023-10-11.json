@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-11-1",
+    "service": "scenario",
+    "date": "2023.10.11",
+    "kind": "기능",
+    "title": "컬렉션에 이미지 업로드·유형 필터",
+    "summary": "컬렉션에 어떤 이미지든 여러 장 드래그로 올릴 수 있고 이미지 유형 필터가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-34-0-october-11th-2023",
+    "source": "notice"
+  }
+]

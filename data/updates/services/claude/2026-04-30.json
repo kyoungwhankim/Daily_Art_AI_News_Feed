@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-30-1",
+    "service": "claude",
+    "date": "2026.04.30",
+    "kind": "종료",
+    "title": "Sonnet 4.5·4의 1M 컨텍스트 베타 종료",
+    "summary": "Sonnet 4.5와 Sonnet 4의 1M 컨텍스트 베타가 종료돼 200k를 넘는 요청은 오류가 나요. Sonnet 4.6·Opus 4.6으로 이전하세요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-30-2026",
+    "source": "dev"
+  }
+]

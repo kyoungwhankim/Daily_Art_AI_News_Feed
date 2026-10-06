@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2025-08-07-1",
+    "service": "midjourney",
+    "date": "2025.08.07",
+    "kind": "기능",
+    "title": "비디오 HD 모드(720p) 출시",
+    "summary": "네이티브 720p로 렌더링하는 비디오 HD 모드가 Pro·Mega 플랜에 나왔어요. 일반 영상보다 약 3.2배 비싸서 전문가용이에요.",
+    "details": [
+      "Relax 모드 미지원",
+      "설정의 Video Resolution에서 HD 선택"
+    ],
+    "url": "https://updates.midjourney.com/hd-mode-for-video/",
+    "source": "notice"
+  }
+]

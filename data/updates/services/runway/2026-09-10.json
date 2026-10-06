@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-09-10-1",
+    "service": "runway",
+    "date": "2026.09.10",
+    "kind": "기능",
+    "title": "Agent가 Brand Kits를 직접 만들고 편집",
+    "summary": "Runway Agent가 대화 안에서 Brand Kits를 만들고 수정할 수 있게 됐어요. 에셋과 텍스트를 묶어 재사용 가능한 브랜드 아이덴티티를 쉽게 구축할 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

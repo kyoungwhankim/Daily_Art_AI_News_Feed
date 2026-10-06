@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-03-11-1",
+    "service": "layer",
+    "date": "2025.03.11",
+    "kind": "기능",
+    "title": "벡터화·Refine 도구·자동 프롬프트 보강",
+    "summary": "이미지 벡터화와 Refine 도구, 프롬프트 자동 보강 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/6#2025-03-11",
+    "source": "notice"
+  }
+]

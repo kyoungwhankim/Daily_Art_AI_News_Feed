@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-02-12-1",
+    "service": "pixverse",
+    "date": "2026.02.12",
+    "kind": "API",
+    "title": "PixVerse API에 v5.6 Fusion(레퍼런스→영상) 출시",
+    "summary": "PixVerse API에서 v5.6 모델로 레퍼런스 이미지를 조합해 영상을 만드는 Fusion 기능을 쓸 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

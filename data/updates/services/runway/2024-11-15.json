@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-11-15-1",
+    "service": "runway",
+    "date": "2024.11.15",
+    "kind": "기능",
+    "title": "Video to Video 20초 생성 지원",
+    "summary": "Gen-3 Alpha와 Turbo의 Video to Video로 최대 20초 영상을 만들 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

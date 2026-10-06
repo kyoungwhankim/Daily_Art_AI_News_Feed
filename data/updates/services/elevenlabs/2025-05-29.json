@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-05-29-1",
+    "service": "elevenlabs",
+    "date": "2025.05.29",
+    "kind": "기능",
+    "title": "멀티모달 Conversational AI, 음성·텍스트 동시 입력",
+    "summary": "AI 에이전트가 음성과 텍스트 입력을 동시에 처리해 더 자연스럽고 효율적인 대화를 할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/introducing-multimodal-conversational-ai",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2024-10-12-1",
+    "service": "firefly",
+    "date": "2024.10.12",
+    "kind": "API",
+    "title": "Firefly API: Object Composite·Expand·Fill 정식 출시",
+    "summary": "Generate Object Composite, Expand Image, Fill Image API가 프리뷰를 마치고 정식으로 제공돼요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#october-12-2024",
+    "source": "dev"
+  }
+]

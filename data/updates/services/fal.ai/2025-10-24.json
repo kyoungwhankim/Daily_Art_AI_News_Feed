@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-10-24-1",
+    "service": "fal.ai",
+    "date": "2025.10.24",
+    "kind": "앱",
+    "title": "PyTorch 고속 모델 로딩 FlashPack 공개",
+    "summary": "fal이 만든 FlashPack은 PyTorch 체크포인트를 기존보다 3~6배 빠르게 GPU로 불러오는 파일 형식이자 로더예요.",
+    "url": "https://blog.fal.ai/introducing-flashpack-lightning-fast-model-loading-for-pytorch/",
+    "source": "notice"
+  },
+  {
+    "id": "fal.ai-2025-10-24-2",
+    "service": "fal.ai",
+    "date": "2025.10.24",
+    "kind": "모델",
+    "title": "LTX 2.0 API fal 출시 당일 제공",
+    "summary": "최대 4K·50fps, 동기화 오디오, 10초 영상을 지원하는 LTX 2.0 Fast·Pro를 fal에서 바로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/ltx-2-0-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

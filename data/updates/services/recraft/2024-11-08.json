@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2024-11-08-1",
+    "service": "recraft",
+    "date": "2024.11.08",
+    "kind": "API",
+    "title": "Recraft V3 이미지 생성 API 공개",
+    "summary": "Recraft V3를 기업·개발자용 API로 제공하기 시작했어요. 생성에 더해 벡터화, 배경 제거, 업스케일 등 편집 도구도 API로 쓸 수 있어요.",
+    "url": "https://www.recraft.ai/blog/discover-the-power-of-recrafts-image-generation-api",
+    "source": "notice"
+  }
+]

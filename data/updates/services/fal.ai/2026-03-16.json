@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-03-16-1",
+    "service": "fal.ai",
+    "date": "2026.03.16",
+    "kind": "기능",
+    "title": "앱 카드 오류율 분리 표시",
+    "summary": "앱 목록 카드에 클라이언트·서버 오류율이 따로 표시되고 GPU 종류 아이콘이 바뀌었어요.",
+    "url": "https://fal.ai/docs/changelog#march-16-2026",
+    "source": "dev"
+  }
+]

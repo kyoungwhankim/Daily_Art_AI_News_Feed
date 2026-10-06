@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-09-14-1",
+    "service": "scenario",
+    "date": "2025.09.14",
+    "kind": "모델",
+    "title": "Seedream 4.0 추가",
+    "summary": "ByteDance의 Seedream 4.0을 쓸 수 있어요. 참조 이미지 최대 10장과 일관된 결과 15장 일괄 생성을 지원해요.",
+    "url": "https://www.scenario.com/changelog/v1-96-1-seedream-4-0-is-here",
+    "source": "notice"
+  }
+]

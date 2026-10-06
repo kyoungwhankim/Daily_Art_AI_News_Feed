@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-08-18-1",
+    "service": "fal.ai",
+    "date": "2025.08.18",
+    "kind": "연동",
+    "title": "노드 캔버스 Weavy에 fal 모델 연동",
+    "summary": "크리에이터용 노드 캔버스 Weavy에서 fal 모델 라이브러리를 바로 불러와 합성·마스킹 등과 엮은 반복 가능한 워크플로를 만들 수 있어요.",
+    "url": "https://blog.fal.ai/powering-creative-workflows-with-weavy-x-fal/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-10-28-1",
+    "service": "meshy",
+    "date": "2025.10.28",
+    "kind": "API",
+    "title": "x-api-version 응답 헤더 추가",
+    "summary": "현재 API 서버 버전을 알려 주는 x-api-version 응답 헤더가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#oct-2025",
+    "source": "dev"
+  }
+]

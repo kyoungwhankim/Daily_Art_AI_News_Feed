@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-06-17-1",
+    "service": "midjourney",
+    "date": "2025.06.17",
+    "kind": "모델",
+    "title": "V7, Midjourney 기본 모델로 전환",
+    "summary": "Omni-reference와 V7 스타일 참조 출시 후 기본 모델이 V7로 바뀌었어요. 설정이나 --v 6.1로 이전 모델로 돌아갈 수 있어요.",
+    "details": [
+      "화질·프롬프트 이해·일관성 향상",
+      "Draft mode 10배 속도",
+      "개선된 개인화 프로필, 사용자 85%가 선호"
+    ],
+    "url": "https://updates.midjourney.com/v7-is-now-the-default-model/",
+    "source": "notice"
+  }
+]

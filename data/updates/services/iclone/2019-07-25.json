@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2019-07-25-1",
+    "service": "iclone",
+    "date": "2019.07.25",
+    "kind": "연동",
+    "title": "iClone 7.5, Unreal Live Link 플러그인 지원",
+    "summary": "새로 나온 iClone Unreal Live Link 플러그인을 지원하고, 4096x2048 영상 출력과 Python 비짐·HIK API가 추가됐어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-07-27-1",
+    "service": "meshy",
+    "date": "2026.07.27",
+    "kind": "API",
+    "title": "Creative Lab Brick Figure API 추가",
+    "summary": "사진을 브릭 스타일 미니피규어 3D 모델로 바꾸는 Brick Figure API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  }
+]

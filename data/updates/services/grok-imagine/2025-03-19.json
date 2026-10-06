@@ -1,0 +1,12 @@
+[
+  {
+    "id": "grok-imagine-2025-03-19-1",
+    "service": "grok-imagine",
+    "date": "2025.03.19",
+    "kind": "API",
+    "title": "xAI API에 이미지 생성 모델 공개",
+    "summary": "xAI API에서 이미지 생성 모델을 쓸 수 있게 됐어요. 개발자가 Grok의 이미지 생성 기능을 자체 서비스에 넣을 수 있어요.",
+    "url": "https://docs.x.ai/developers/release-notes#image-generation-model-available-on-api",
+    "source": "dev"
+  }
+]

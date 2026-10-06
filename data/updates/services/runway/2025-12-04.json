@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-12-04-1",
+    "service": "runway",
+    "date": "2025.12.04",
+    "kind": "기능",
+    "title": "Workflows를 Apps로 게시",
+    "summary": "직접 만든 Workflows를 Apps로 바꿔 워크스페이스 구성원과 공유할 수 있게 됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

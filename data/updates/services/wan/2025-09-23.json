@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-09-23-1",
+    "service": "wan",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "오디오 동기 생성 Wan2.5 Preview 영상 모델 출시",
+    "summary": "Wan2.5 Preview 텍스트·이미지-투-비디오가 영상과 소리를 함께 생성하고 10초 영상까지 만들어요. 동작 표현과 화질도 개선됐어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

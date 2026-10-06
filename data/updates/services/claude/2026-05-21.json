@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-05-21-1",
+    "service": "claude",
+    "date": "2026.05.21",
+    "kind": "연동",
+    "title": "Claude Compliance API 보안·컴플라이언스 도구 연동",
+    "summary": "Compliance API가 주요 보안·컴플라이언스 도구와 연동돼 IT·보안팀이 다른 앱처럼 Claude를 관리할 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

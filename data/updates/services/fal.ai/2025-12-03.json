@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2025-12-03-1",
+    "service": "fal.ai",
+    "date": "2025.12.03",
+    "kind": "모델",
+    "title": "Kling 2.6 fal 독점 출시 (네이티브 오디오)",
+    "summary": "텍스트·이미지-영상 모두 네이티브 오디오를 생성하는 Kling 2.6이 fal에서 출시 당일 독점 제공돼요.",
+    "url": "https://blog.fal.ai/kling-2-6-is-now-available-on-fal/",
+    "source": "notice"
+  },
+  {
+    "id": "fal.ai-2025-12-03-2",
+    "service": "fal.ai",
+    "date": "2025.12.03",
+    "kind": "모델",
+    "title": "Seedream 4.5 fal 출시 당일 제공",
+    "summary": "작은 얼굴, 깔끔한 텍스트, 최대 10장 참조 이미지 합성 품질을 끌어올린 Seedream 4.5를 fal에서 바로 쓸 수 있어요.",
+    "url": "https://blog.fal.ai/seedream-4-5-is-now-available-on-fal/",
+    "source": "notice"
+  }
+]

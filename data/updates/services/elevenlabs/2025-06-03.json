@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-06-03-1",
+    "service": "elevenlabs",
+    "date": "2025.06.03",
+    "kind": "모델",
+    "title": "Eleven v3 (alpha), 오디오 태그와 대화 모드",
+    "summary": "오디오 태그로 감정·연기를 지시하고 여러 화자 대화를 만드는 가장 표현력 높은 TTS 모델 Eleven v3 알파가 나왔어요. 70개 이상 언어를 지원해요.",
+    "url": "https://elevenlabs.io/blog/eleven-v3",
+    "source": "notice"
+  }
+]

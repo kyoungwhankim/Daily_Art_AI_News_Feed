@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-05-05-1",
+    "service": "elevenlabs",
+    "date": "2025.05.05",
+    "kind": "기능",
+    "title": "Dubbing Studio 보이스 클로닝 끄기 옵션",
+    "summary": "Dubbing Studio UI에서 업로드할 때 보이스 클로닝을 끌 수 있어 API 파라미터와 같은 동작을 해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/5",
+    "source": "dev"
+  }
+]

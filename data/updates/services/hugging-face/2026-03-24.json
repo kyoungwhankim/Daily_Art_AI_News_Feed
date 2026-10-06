@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-03-24-1",
+    "service": "hugging-face",
+    "date": "2026.03.24",
+    "kind": "앱",
+    "title": "hf-mount 공개: Hub 저장소를 로컬 파일시스템으로",
+    "summary": "Storage Bucket·모델·데이터셋을 로컬 파일시스템처럼 붙일 수 있는 hf-mount가 나왔어요. Bucket은 읽기·쓰기, 모델·데이터셋은 읽기 전용이에요.",
+    "url": "https://huggingface.co/changelog/hf-mount",
+    "source": "notice"
+  }
+]

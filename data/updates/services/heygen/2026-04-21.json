@@ -1,0 +1,15 @@
+[
+  {
+    "id": "heygen-2026-04-21-1",
+    "service": "heygen",
+    "date": "2026.04.21",
+    "kind": "기능",
+    "title": "HeyGen Instant Highlights v2",
+    "summary": "긴 영상에서 쇼츠 클립을 뽑는 Instant Highlights를 새로 만들었어요. 프롬프트로 장면을 찾고 화자를 따라가는 카메라와 다중 화자 처리를 지원해요.",
+    "details": [
+      "자막·175개 이상 언어 번역·4K 업스케일을 한 흐름에서"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-instant-highlights-v2",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-04-16-1",
+    "service": "gigapixel",
+    "date": "2020.04.16",
+    "kind": "앱",
+    "title": "Gigapixel AI v4.6: 최대 배율을 32k 픽셀 기준으로",
+    "summary": "최대 확대 배율이 6배 고정 대신 최대 32k 픽셀 기준으로 바뀌었고, 색 프로파일·색공간 변환 오류가 고쳐졌어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-ai-v4-6/14410",
+    "source": "notice"
+  }
+]

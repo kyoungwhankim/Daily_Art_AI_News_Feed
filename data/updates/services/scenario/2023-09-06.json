@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-09-06-1",
+    "service": "scenario",
+    "date": "2023.09.06",
+    "kind": "기능",
+    "title": "이미지 정렬·NSFW 블러",
+    "summary": "이미지를 최신·오래된 순으로 정렬하고 안전 필터가 켜져 있으면 NSFW 이미지를 흐리게 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-30-0-september-6-2023",
+    "source": "notice"
+  }
+]

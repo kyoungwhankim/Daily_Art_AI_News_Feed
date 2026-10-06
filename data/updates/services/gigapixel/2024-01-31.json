@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-01-31-1",
+    "service": "gigapixel",
+    "date": "2024.01.31",
+    "kind": "앱",
+    "title": "Gigapixel v7.0.1: 알파 채널도 AI로 확대",
+    "summary": "알파 채널을 단순 확대 대신 모델로 처리하게 바꾸고, PNG PPI 저장과 DNG 프로파일 문제를 고쳤어요. 여러 카메라 지원도 추가됐어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-0-1/61801",
+    "source": "notice"
+  }
+]

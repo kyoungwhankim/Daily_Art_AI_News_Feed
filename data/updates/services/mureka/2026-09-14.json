@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mureka-2026-09-14-1",
+    "service": "mureka",
+    "date": "2026.09.14",
+    "kind": "기능",
+    "title": "Mureka MV Director",
+    "summary": "가사·곡 구조·분위기·장르를 이해해 뮤직비디오 전체를 기획하는 AI Director와 채팅 편집 UI, 장르별 MV Skills, 곡 전체 MV 생성이 나왔어요.",
+    "details": [
+      "AI Director가 MV 전체 기획",
+      "채팅 편집·샷별 재생성·실시간 미리보기",
+      "록·힙합·K-pop 등 MV Skills",
+      "처음부터 끝까지 곡 전체 MV"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

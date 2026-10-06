@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2020-07-01-1",
+    "service": "gigapixel",
+    "date": "2020.07.01",
+    "kind": "앱",
+    "title": "Gigapixel v5.0.1: 튜토리얼과 외부 편집기 지원",
+    "summary": "대화형 튜토리얼 3개가 추가되고, Windows에서 다른 사진 편집기의 외부 편집기로 Gigapixel을 쓸 수 있게 됐어요.",
+    "details": [
+      "대량 파일 열기 속도 크게 향상"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-0-1/15419",
+    "source": "notice"
+  }
+]

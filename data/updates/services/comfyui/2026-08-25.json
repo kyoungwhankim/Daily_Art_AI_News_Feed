@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-08-25-1",
+    "service": "comfyui",
+    "date": "2026.08.25",
+    "kind": "연동",
+    "title": "ComfyUI, Wan 3.0 지원",
+    "summary": "한 번에 30초 영상을 만들고 이미지 10장·영상 5개·오디오 5개까지 참조하는 Alibaba Wan 3.0을 ComfyUI에서 쓸 수 있어요. 지시 기반 영상 편집도 지원해요.",
+    "url": "https://blog.comfy.org/p/wan-30-in-comfyui-native-30-second",
+    "source": "notice"
+  }
+]

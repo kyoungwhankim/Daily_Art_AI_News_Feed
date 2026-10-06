@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-05-20-1",
+    "service": "stable-diffusion",
+    "date": "2024.05.20",
+    "kind": "API",
+    "title": "Erase Object·Conservative Upscale API 추가",
+    "summary": "불필요한 사물을 지우는 Erase Object와 원본을 지키며 최대 4K까지 키우는 Conservative Upscale이 추가됐어요. Outpaint는 최대 2000px까지 확장돼요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

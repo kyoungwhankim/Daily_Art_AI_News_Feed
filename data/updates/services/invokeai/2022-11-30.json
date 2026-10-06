@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2022-11-30-1",
+    "service": "invokeai",
+    "date": "2022.11.30",
+    "kind": "기능",
+    "title": "InvokeAI 2.2: 무한 캔버스 Unified Canvas 도입",
+    "summary": "InvokeAI 2.2에서 아웃페인팅·인페인팅·img2img·txt2img를 한 화면에서 하는 무한 캔버스 Unified Canvas가 추가됐어요. 지금까지 WebUI에 더해진 가장 큰 기능이에요.",
+    "details": [
+      "Unified Canvas: 브러시, 무제한 히스토리, 실시간 진행 표시",
+      "Hugging Face 임베딩을 앱 안에서 바로 불러오는 임베딩 관리",
+      "여러 임베딩 동시 사용"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-2-0/",
+    "source": "notice"
+  }
+]

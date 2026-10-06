@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2026-01-09-1",
+    "service": "qwen-image",
+    "date": "2026.01.09",
+    "kind": "모델",
+    "title": "qwen-image-plus 2026-01-09 스냅샷 출시",
+    "summary": "qwen-image-plus-2026-01-09 스냅샷이 나왔어요. Qwen-Image-Max를 증류·가속한 버전이라 고품질 이미지를 더 빨리 만들 수 있어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iclone-2011-11-22-1",
+    "service": "iclone",
+    "date": "2011.11.22",
+    "kind": "기능",
+    "title": "iClone 5.02, Device Mocap 무릎 회전 제약",
+    "summary": "Device Mocap에 발 뒤집힘을 막는 무릎 회전 제약 옵션이 생기고, 모션 레이어 첫 단계에 커브를 넣을 수 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

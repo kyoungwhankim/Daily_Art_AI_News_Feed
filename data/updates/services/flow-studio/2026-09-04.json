@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flow-studio-2026-09-04-1",
+    "service": "flow-studio",
+    "date": "2026.09.04",
+    "kind": "정책",
+    "title": "Flow Studio, Autodesk Data Platform 사용 데이터 수집",
+    "summary": "제품 사용 방식을 파악하기 위해 Autodesk Data Platform(ADP)을 쓰기 시작했고, 다음 로그인 때 개인정보 설정을 확인하라고 안내해요.",
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

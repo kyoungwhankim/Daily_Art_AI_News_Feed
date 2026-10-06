@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2023-02-03-1",
+    "service": "invokeai",
+    "date": "2023.02.03",
+    "kind": "기능",
+    "title": "InvokeAI 2.3.0: diffusers 모델 형식으로 전환",
+    "summary": "InvokeAI 2.3.0은 Stable Diffusion 모델을 diffusers 형식으로 옮겨 모델 로딩이 훨씬 빨라졌어요. 개발자와 사용자 경험을 함께 높인 기능·성능 업데이트예요.",
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-3-0/",
+    "source": "notice"
+  }
+]

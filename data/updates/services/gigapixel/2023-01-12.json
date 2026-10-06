@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2023-01-12-1",
+    "service": "gigapixel",
+    "date": "2023.01.12",
+    "kind": "앱",
+    "title": "Gigapixel AI v6.3: 새 Standard·HQ 모델",
+    "summary": "새 구조의 Standard 모델과 고화질 원본용 HQ 모델, 압축 아티팩트를 조절하는 Fix compression 슬라이더가 추가됐어요.",
+    "details": [
+      "v6.3.2(1/13): 자르기 미적용 수정",
+      "v6.3.3(1/24): 구형 NVIDIA GPU 아티팩트 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v6-3-3/38730",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2026-03-21-1",
+    "service": "midjourney",
+    "date": "2026.03.21",
+    "kind": "기능",
+    "title": "V8 알파 Relax 모드와 새 SREF/무드보드 버전",
+    "summary": "Standard·Pro·Mega 구독자가 V8 알파를 Relax 모드로 쓸 수 있게 됐어요. 4배 빠르고 저렴한 새 SREF/무드보드 버전이 기본이 됐어요.",
+    "details": [
+      "이전 sref 버전은 --sv 6",
+      "새 버전은 --hd 지원, --p·--stylize·--exp와 잘 어울림",
+      "다음 버전(V8.1) 학습 진행 중"
+    ],
+    "url": "https://updates.midjourney.com/relax-mode-for-v8-alpha/",
+    "source": "notice"
+  }
+]

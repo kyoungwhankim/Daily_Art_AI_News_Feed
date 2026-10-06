@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fal.ai-2026-08-17-1",
+    "service": "fal.ai",
+    "date": "2026.08.17",
+    "kind": "API",
+    "title": "Platform MCP 서버·Serverless 관측 API 공개",
+    "summary": "AI 어시스턴트가 내 fal 계정의 요청·로그·배포 이력을 살펴 디버깅하게 해 주는 Platform MCP 서버가 나왔어요. 읽기 전용·무료이고, 이를 뒷받침하는 새 관측 API도 함께 공개됐어요.",
+    "details": [
+      "api.fal.ai/v1/mcp/platform, 15개 도구 (디버깅 11 + 탐색 4)",
+      "GET /v1/serverless/apps, events, revisions, runners/history 추가"
+    ],
+    "url": "https://fal.ai/docs/changelog#august-17-2026",
+    "source": "dev"
+  }
+]

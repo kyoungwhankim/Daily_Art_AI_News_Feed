@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2021-12-21-1",
+    "service": "synthesia",
+    "date": "2021.12.21",
+    "kind": "기능",
+    "title": "Synthesia 자막(Closed Captions) 지원",
+    "summary": "영상에 자막을 켤 수 있는 Closed Captions 기능을 추가했어요.",
+    "url": "https://www.synthesia.io/updates/closed-captions",
+    "source": "notice"
+  }
+]

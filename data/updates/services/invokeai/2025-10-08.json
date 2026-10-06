@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2025-10-08-1",
+    "service": "invokeai",
+    "date": "2025.10.08",
+    "kind": "기능",
+    "title": "Invoke 6.8.0: 참조 이미지 자르기 도구",
+    "summary": "Invoke 6.8.0에서 전역 참조 이미지를 자르는 Crop 도구와 프롬프트 기록 단축키가 추가되고 모델 매니저 UI가 개선됐어요.",
+    "details": [
+      "NOOB-IPA-MARK1 IP Adapter 지원",
+      "워크플로 편집기 동적 모델 드롭다운"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-8-0/",
+    "source": "notice"
+  }
+]

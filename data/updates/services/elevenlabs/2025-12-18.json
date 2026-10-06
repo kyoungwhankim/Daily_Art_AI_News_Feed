@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-12-18-1",
+    "service": "elevenlabs",
+    "date": "2025.12.18",
+    "kind": "기능",
+    "title": "ElevenLabs Agents 버전 관리",
+    "summary": "에이전트 설정 변경 이력을 모두 남기고 새 버전을 단계적으로 배포할 수 있는 버전 관리가 추가됐어요.",
+    "url": "https://elevenlabs.io/blog/introducing-versioning",
+    "source": "notice"
+  }
+]

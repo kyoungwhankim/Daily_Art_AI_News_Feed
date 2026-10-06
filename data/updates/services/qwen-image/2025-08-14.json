@@ -1,0 +1,12 @@
+[
+  {
+    "id": "qwen-image-2025-08-14-1",
+    "service": "qwen-image",
+    "date": "2025.08.14",
+    "kind": "모델",
+    "title": "Qwen-Image 첫 이미지 생성 모델 qwen-image 출시",
+    "summary": "Qwen 시리즈의 첫 이미지 생성 기반 모델 qwen-image가 Model Studio(국제)에 출시됐어요. 복잡한 글자 렌더링, 특히 중국어 텍스트 표현과 정밀한 이미지 편집에 강해요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2026-04-14-1",
+    "service": "comfyui",
+    "date": "2026.04.14",
+    "kind": "연동",
+    "title": "ComfyUI, Sonilo 영상 맞춤 음악 생성",
+    "summary": "영상의 장면·속도·감정을 분석해 프레임 단위로 맞춘 배경음악을 만드는 Sonilo를 API 노드로 쓸 수 있어요.",
+    "url": "https://blog.comfy.org/p/comfyui-now-supports-sonilo-via-partner",
+    "source": "notice"
+  }
+]

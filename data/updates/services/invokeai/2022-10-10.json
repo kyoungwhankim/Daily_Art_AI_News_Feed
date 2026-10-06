@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2022-10-10-1",
+    "service": "invokeai",
+    "date": "2022.10.10",
+    "kind": "앱",
+    "title": "InvokeAI 2.0 출시: 새 WebUI와 데스크톱 모드",
+    "summary": "Stable Diffusion 툴킷 InvokeAI 2.0이 나왔어요. 완전히 새로 만든 WebUI 프런트엔드와 데스크톱 모드, 최적화된 백엔드 서버를 갖췄고 약 3.5GB VRAM으로 512x768 이미지를 만들 수 있어요.",
+    "details": [
+      "GFPGAN·CodeFormer 얼굴 복원, RealESRGAN 업스케일 통합",
+      "CLI에서 인페인팅·아웃페인팅·네거티브 프롬프트·Textual Inversion 지원",
+      "Windows·Linux·Mac(M1/M2) 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-version-2-0-0---a-stable-diffusion-toolkit/",
+    "source": "notice"
+  }
+]

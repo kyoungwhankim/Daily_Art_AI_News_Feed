@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2025-12-02-1",
+    "service": "comfyui",
+    "date": "2025.12.02",
+    "kind": "기능",
+    "title": "ComfyUI v0.3.76: Nodes 2.0 공개 베타",
+    "summary": "ComfyUI v0.3.76에서 새 노드 UI인 Nodes 2.0과 Linear 모드가 공개 베타로 나오고, 워크플로 진행 패널과 Assets 사이드바가 추가됐어요.",
+    "details": [
+      "3D 노드 파노라마 이미지 지원",
+      "네이티브 LoRA 트레이너 다중 해상도·Z-Image 학습",
+      "NVIDIA에서 비동기 오프로딩 기본 적용",
+      "Veo3 첫·끝 프레임, Kling O1 API 노드"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-3-76",
+    "source": "notice"
+  }
+]

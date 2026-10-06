@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-08-18-1",
+    "service": "scenario",
+    "date": "2026.08.18",
+    "kind": "API",
+    "title": "Quality Gate API·Meshy 7·즉시 영상 재생",
+    "summary": "새 Quality Gate API와 Meshy 7·Grok 등 최신 모델이 추가되고 영상 미리보기를 바로 스트리밍해요.",
+    "url": "https://www.scenario.com/changelog/api-v2-130-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-08-18-2",
+    "service": "scenario",
+    "date": "2026.08.18",
+    "kind": "기능",
+    "title": "엔터프라이즈 IP 감지·Quality Gate·Prompt Spark v3",
+    "summary": "엔터프라이즈용 IP 감지와 Quality Gate, Prompt Spark v3, 상주 AI 어시스턴트, 개선된 에셋 뷰어가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-22-0",
+    "source": "notice"
+  }
+]

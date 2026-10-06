@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-04-07-1",
+    "service": "claude",
+    "date": "2026.04.07",
+    "kind": "모델",
+    "title": "Claude Mythos Preview·Bedrock Messages API 프리뷰",
+    "summary": "방어적 사이버보안용 Claude Mythos Preview가 Project Glasswing 초대 전용으로 공개되고, Amazon Bedrock에서 1st-party와 같은 Messages API가 리서치 프리뷰로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
+    "source": "dev"
+  }
+]

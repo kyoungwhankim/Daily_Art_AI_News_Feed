@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-08-18-1",
+    "service": "meshy",
+    "date": "2025.08.18",
+    "kind": "API",
+    "title": "A/T 포즈 생성 옵션 추가",
+    "summary": "Text to 3D Preview, Image to 3D, Multi-Image to 3D에 is_a_t_pose가 추가돼 A/T 포즈 모델을 만들 수 있게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2025",
+    "source": "dev"
+  }
+]

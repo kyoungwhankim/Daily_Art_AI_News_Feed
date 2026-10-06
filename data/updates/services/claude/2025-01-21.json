@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-01-21-1",
+    "service": "claude",
+    "date": "2025.01.21",
+    "kind": "종료",
+    "title": "Claude 2·2.1·Sonnet 3 지원 종료 예고",
+    "summary": "Claude 2, 2.1, Sonnet 3 모델의 지원 종료가 발표됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#january-21st-2025",
+    "source": "dev"
+  }
+]

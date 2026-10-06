@@ -1,0 +1,22 @@
+[
+  {
+    "id": "heygen-2026-02-11-1",
+    "service": "heygen",
+    "date": "2026.02.11",
+    "kind": "앱",
+    "title": "HeyGen 모바일 Edit Styles 출시",
+    "summary": "iOS 앱에서 템플릿 12종으로 훅, 단어 단위 자막, 줌 효과를 자동으로 넣어 바로 게시용 영상을 만들 수 있어요. Android는 곧 지원해요.",
+    "url": "https://heygen.noticeable.news/publications/introducing-edit-styles-for-heygen-mobile",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-02-11-2",
+    "service": "heygen",
+    "date": "2026.02.11",
+    "kind": "요금",
+    "title": "HeyGen Business 플랜 연동에 별도 API 플랜 불필요",
+    "summary": "Business 플랜에서 HubSpot, Clay, Zapier, Make, n8n 연동을 별도 API 구독 없이 쓸 수 있게 됐어요. 연동은 일반 생성 크레딧(크레딧당 0.05달러)을 써요.",
+    "url": "https://heygen.noticeable.news/publications/heygen-for-business-integrations",
+    "source": "notice"
+  }
+]

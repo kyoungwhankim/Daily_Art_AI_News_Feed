@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2025-09-11-1",
+    "service": "pixverse",
+    "date": "2025.09.11",
+    "kind": "API",
+    "title": "PixVerse API 영상 생성에 효과음·립싱크 TTS 옵션 추가",
+    "summary": "텍스트→영상, 이미지→영상, Transition 생성에서 sound_effect와 lip_sync_tts 옵션을 함께 쓸 수 있게 됐어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

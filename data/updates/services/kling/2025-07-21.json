@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-07-21-1",
+    "service": "kling",
+    "date": "2025.07.21",
+    "kind": "API",
+    "title": "Multi-Elements API 출시, 영상 속 요소 추가·교체·삭제",
+    "summary": "Kling API에 기존 영상에 요소를 추가·교체·삭제하는 Multi-Elements 기능이 나왔어요. 영상을 초기화하고 태깅한 뒤 작업을 만드는 방식이에요.",
+    "url": "https://kling.ai/document-api/updates/api#07%2F21%2F2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-01-05-1",
+    "service": "elevenlabs",
+    "date": "2026.01.05",
+    "kind": "API",
+    "title": "Twilio·SIP 웹훅 대화 ID와 보이스 컬렉션 ID",
+    "summary": "Twilio·SIP 웹훅에 conversation_id가 포함되고, 보이스에 소속 컬렉션 ID 필드가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/1/5",
+    "source": "dev"
+  }
+]

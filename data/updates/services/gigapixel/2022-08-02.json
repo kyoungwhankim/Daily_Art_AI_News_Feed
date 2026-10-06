@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2022-08-02-1",
+    "service": "gigapixel",
+    "date": "2022.08.02",
+    "kind": "앱",
+    "title": "Gigapixel v6.2.0: 자동 모델 선택",
+    "summary": "이미지 내용을 보고 추천 모델을 고르는 자동 모델 선택이 생겼고, 모든 모델의 색 보존과 블록 아티팩트가 개선됐어요.",
+    "details": [
+      "Reduce Color Bleed를 Gamma Correction으로 이름 변경",
+      "v6.2.2(10/25): Intel Arc·RTX 40 시리즈 지원"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v6-2-2/33331",
+    "source": "notice"
+  }
+]

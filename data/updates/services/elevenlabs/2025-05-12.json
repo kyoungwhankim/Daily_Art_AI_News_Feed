@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-05-12-1",
+    "service": "elevenlabs",
+    "date": "2025.05.12",
+    "kind": "기능",
+    "title": "Studio 문단별 ZIP 내보내기",
+    "summary": "Studio에서 나뉜 문단을 ZIP 파일로 한꺼번에 내보낼 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/5/12",
+    "source": "dev"
+  }
+]

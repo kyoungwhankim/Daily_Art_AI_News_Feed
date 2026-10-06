@@ -1,0 +1,15 @@
+[
+  {
+    "id": "comfyui-2025-06-30-1",
+    "service": "comfyui",
+    "date": "2025.06.30",
+    "kind": "모델",
+    "title": "ComfyUI, OmniGen2 네이티브 지원",
+    "summary": "텍스트→이미지, 지시 기반 편집, 다중 이미지 합성을 하나로 묶은 7B 멀티모달 모델 OmniGen2를 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.3.43: Flux Kontext·OmniGen2 문서 추가, Kontext 메모리 추정 버그 수정"
+    ],
+    "url": "https://blog.comfy.org/p/omnigen2-native-support-in-comfyui",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-07-13-1",
+    "service": "scenario",
+    "date": "2023.07.13",
+    "kind": "모델",
+    "title": "게임 아트용 Signature 생성기 9종 추가",
+    "summary": "3D부터 애니메까지 게임 아트에 맞게 미세 조정한 Signature 생성기 9종을 추가했어요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-23-0-july-13-2023",
+    "source": "notice"
+  }
+]

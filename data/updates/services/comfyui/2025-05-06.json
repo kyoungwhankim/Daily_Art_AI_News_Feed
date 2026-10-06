@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-05-06-1",
+    "service": "comfyui",
+    "date": "2025.05.06",
+    "kind": "연동",
+    "title": "ComfyUI 네이티브 API 노드 출시와 새 브랜드",
+    "summary": "Veo2, Flux Ultra 등 유료 모델 API를 ComfyUI 안에서 부르는 네이티브 API 노드를 11개 모델·65개 노드로 한꺼번에 출시하고 새 브랜드도 공개했어요.",
+    "url": "https://blog.comfy.org/p/comfyui-native-api-nodes",
+    "source": "notice"
+  }
+]

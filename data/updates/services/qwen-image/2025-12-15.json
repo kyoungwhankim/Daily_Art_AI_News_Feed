@@ -1,0 +1,15 @@
+[
+  {
+    "id": "qwen-image-2025-12-15-1",
+    "service": "qwen-image",
+    "date": "2025.12.15",
+    "kind": "모델",
+    "title": "qwen-image-edit-plus 12월 스냅샷 출시",
+    "summary": "qwen-image-edit-plus-2025-12-15 스냅샷이 나왔어요. 10월 버전보다 인물 일관성, 산업 디자인, 기하 추론이 좋아졌고 조명 효과 같은 LoRA 기능이 통합됐어요.",
+    "details": [
+      "이미지가 어긋나는(offset) 문제 완화"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

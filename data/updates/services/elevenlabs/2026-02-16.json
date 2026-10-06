@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-02-16-1",
+    "service": "elevenlabs",
+    "date": "2026.02.16",
+    "kind": "API",
+    "title": "발음 사전 규칙 조회와 대화 사용자 목록",
+    "summary": "발음 사전 조회에 전체 규칙이 포함되고, 대화한 사용자 목록 엔드포인트와 지식 베이스 폴더 삭제가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/2/16",
+    "source": "dev"
+  }
+]

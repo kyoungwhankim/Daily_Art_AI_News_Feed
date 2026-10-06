@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-06-12-1",
+    "service": "runway",
+    "date": "2025.06.12",
+    "kind": "기능",
+    "title": "Chat Mode 출시",
+    "summary": "하나의 대화형 화면에서 Gen-4 이미지, 영상, References로 원하는 것을 만들 수 있는 Chat Mode를 모든 사용자에게 공개했어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2023-03-21-1",
+    "service": "synthesia",
+    "date": "2023.03.21",
+    "kind": "기능",
+    "title": "Synthesia 애니메이션 속도 곡선 설정",
+    "summary": "애니메이션 설정에서 Bounce, Smooth, Linear 속도 곡선을 고를 수 있어요.",
+    "url": "https://www.synthesia.io/updates/animation-velocity",
+    "source": "notice"
+  }
+]

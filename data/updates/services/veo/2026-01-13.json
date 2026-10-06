@@ -1,0 +1,17 @@
+[
+  {
+    "id": "veo-2026-01-13-1",
+    "service": "veo",
+    "date": "2026.01.13",
+    "kind": "기능",
+    "title": "Veo 3.1 Ingredients to Video 개선, 세로 영상·4K 지원",
+    "summary": "Veo 3.1의 레퍼런스 이미지 기반 영상 생성이 더 표현력 있고 일관되게 개선됐고, 9:16 세로 영상과 1080p·4K 업스케일을 지원해요. Gemini 앱, YouTube Shorts, Flow, API 등에 적용돼요.",
+    "details": [
+      "캐릭터·배경 일관성 유지 강화",
+      "네이티브 세로(9:16) 출력으로 숏폼 제작",
+      "Gemini API·Vertex AI에서 4K와 개선된 1080p 출력 제공"
+    ],
+    "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/",
+    "source": "notice"
+  }
+]

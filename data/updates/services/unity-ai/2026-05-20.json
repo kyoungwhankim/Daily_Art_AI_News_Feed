@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-05-20-1",
+    "service": "unity-ai",
+    "date": "2026.05.20",
+    "kind": "기능",
+    "title": "AI Assistant 2.9: 계획 부분 수정 EditPlan 도구",
+    "summary": "AI Assistant 2.9.0에서 기존 계획 파일을 부분 수정하는 EditPlan 도구와 권한 요청 내용을 크게 보는 View 버튼이 추가됐어요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#290-pre1---2026-05-20",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "invokeai-2025-08-28-1",
+    "service": "invokeai",
+    "date": "2025.08.28",
+    "kind": "기능",
+    "title": "Invoke 6.5.0: 폼 셔플 버튼과 bbox 비율 잠금",
+    "summary": "Invoke 6.5.0에서 워크플로 폼의 숫자 필드에 Shuffle 버튼이 생기고, 캔버스 bbox 크기 조절이 비율 잠금을 따르도록 바뀌었어요.",
+    "details": [
+      "지원하지 않는 모델에서 참조 이미지·크기 설정 자동 숨김"
+    ],
+    "url": "https://invoke.ai/releases/version/v6-5-0/",
+    "source": "notice"
+  }
+]

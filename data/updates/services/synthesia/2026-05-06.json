@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-05-06-1",
+    "service": "synthesia",
+    "date": "2026.05.06",
+    "kind": "기능",
+    "title": "Synthesia 더빙 스크립트 자유 수정",
+    "summary": "원문과 번역 더빙 스크립트를 검증 제약 없이 고칠 수 있고 변경 내역은 감사 로그에 남아요.",
+    "url": "https://www.synthesia.io/updates/correct-dubbing-transcripts-seamlessly",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2025-06-11-1",
+    "service": "claude",
+    "date": "2025.06.11",
+    "kind": "정책",
+    "title": "Bedrock의 Claude, FedRAMP High·DoD IL4/5 승인",
+    "summary": "AWS GovCloud의 Amazon Bedrock에서 Claude가 FedRAMP High와 국방부 IL4/5 워크로드 사용 승인을 받았어요.",
+    "url": "https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-06-11-2",
+    "service": "claude",
+    "date": "2025.06.11",
+    "kind": "API",
+    "title": "세분화된 도구 스트리밍 공개 베타",
+    "summary": "도구 사용 파라미터를 버퍼링·JSON 검증 없이 스트리밍하는 fine-grained tool streaming이 공개 베타로 나왔어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2025",
+    "source": "dev"
+  }
+]

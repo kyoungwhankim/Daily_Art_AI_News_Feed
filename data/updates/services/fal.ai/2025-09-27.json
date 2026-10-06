@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-09-27-1",
+    "service": "fal.ai",
+    "date": "2025.09.27",
+    "kind": "기능",
+    "title": "CLI 요청 큐 확인·비우기",
+    "summary": "fal queue size와 fal queue flush로 앱의 대기 요청 수를 확인하고 비울 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#september-27-2025",
+    "source": "dev"
+  }
+]

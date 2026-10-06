@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-09-1",
+    "service": "scenario",
+    "date": "2025.11.09",
+    "kind": "API",
+    "title": "Hunyuan3D Pro 지원·3D 미리보기 5배 빨라짐",
+    "summary": "Tencent Hunyuan3D Pro를 지원하고 3D 메시 영상 미리보기 렌더링이 5배 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-7-0",
+    "source": "notice"
+  }
+]

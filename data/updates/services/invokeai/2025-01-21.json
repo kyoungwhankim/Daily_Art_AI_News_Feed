@@ -1,0 +1,17 @@
+[
+  {
+    "id": "invokeai-2025-01-21-1",
+    "service": "invokeai",
+    "date": "2025.01.21",
+    "kind": "기능",
+    "title": "Invoke 5.6.0: 저사양 GPU용 Low-VRAM 모드",
+    "summary": "Invoke 5.6.0은 메모리 관리를 크게 개선해 VRAM이 작은 GPU에서도 24GB 비양자화 FLUX dev 같은 큰 모델을 돌릴 수 있게 했어요.",
+    "details": [
+      "부분 모델 로딩, 동적 RAM·VRAM 캐시",
+      "캔버스 Blur·Noise 필터",
+      "워크플로 배치: 실수·정수·문자열 타입과 생성기"
+    ],
+    "url": "https://invoke.ai/releases/version/v5-6-0/",
+    "source": "notice"
+  }
+]

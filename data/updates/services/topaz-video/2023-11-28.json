@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-11-28-1",
+    "service": "topaz-video",
+    "date": "2023.11.28",
+    "kind": "앱",
+    "title": "Topaz Video AI v4.0.5: 프리셋 UI 단순화",
+    "summary": "프리셋 UI를 단순하게 바꾸고 프레임 보간의 중복 프레임 제거를 개선했어요. AE 플러그인은 Auto 파라미터를 지원해요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v4-0-5/57385",
+    "source": "notice"
+  }
+]

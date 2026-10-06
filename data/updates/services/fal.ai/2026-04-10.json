@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fal.ai-2026-04-10-1",
+    "service": "fal.ai",
+    "date": "2026.04.10",
+    "kind": "API",
+    "title": "Serverless Analytics API 추가",
+    "summary": "GET /v1/serverless/analytics로 앱 소유자가 엔드포인트별 요청 수·성공률·지연 백분위를 시간 단위로 조회해 외부 도구로 내보낼 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#april-10-2026",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2026-04-10-2",
+    "service": "fal.ai",
+    "date": "2026.04.10",
+    "kind": "모델",
+    "title": "렌더 이미지에서 PBR 맵을 뽑는 PATINA 공개",
+    "summary": "FLUX.2 [klein] 기반 PATINA는 완성된 렌더 이미지에서 고해상도 PBR 머티리얼 맵을 만들어 줘요. AI 이미지를 실제 CGI 렌더링 워크플로에 쓰기 쉬워졌어요.",
+    "url": "https://blog.fal.ai/introducing-patina/",
+    "source": "notice"
+  }
+]

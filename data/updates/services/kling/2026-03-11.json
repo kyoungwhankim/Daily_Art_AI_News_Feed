@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2026-03-11-1",
+    "service": "kling",
+    "date": "2026.03.11",
+    "kind": "API",
+    "title": "API 3.0 Omni에 지능형 샷 타입 추가",
+    "summary": "Kling API 3.0 Omni에서 shot_type을 intelligence로 설정하면 모델이 알아서 스토리보드를 나눠 생성해요.",
+    "url": "https://kling.ai/document-api/updates/api#03%2F11%2F2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-05-29-1",
+    "service": "layer",
+    "date": "2025.05.29",
+    "kind": "모델",
+    "title": "FLUX Kontext 편집 모델 추가",
+    "summary": "편집과 제어가 뛰어난 FLUX Kontext 모델을 Layer에 도입했어요.",
+    "url": "https://layer.ai/blog/flux-kontext-editing-control",
+    "source": "notice"
+  }
+]

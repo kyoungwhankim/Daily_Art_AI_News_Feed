@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2024-05-16-1",
+    "service": "elevenlabs",
+    "date": "2024.05.16",
+    "kind": "기능",
+    "title": "웹 글을 음성으로 읽어 주는 Audio Native",
+    "summary": "웹사이트에 재생 버튼을 달아 글을 ElevenLabs 목소리로 자동 내레이션해 주는 Audio Native를 선보였어요.",
+    "url": "https://elevenlabs.io/blog/audio-native",
+    "source": "notice"
+  }
+]

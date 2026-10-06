@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-09-23-1",
+    "service": "scenario",
+    "date": "2024.09.23",
+    "kind": "모델",
+    "title": "Flux 모델 전체 추가",
+    "summary": "Black Forest Labs의 Flux 모델(Schnell, Dev, Pro)을 공개 모델 목록에 추가했어요. 백그라운드 작업 메뉴도 생겼어요.",
+    "url": "https://www.scenario.com/changelog/1-68-flux-is-available",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-01-27-1",
+    "service": "hedra",
+    "date": "2026.01.27",
+    "kind": "연동",
+    "title": "Hedra에 Kling O1 추가",
+    "summary": "텍스트·이미지·영상 레퍼런스로 영상을 생성하고 편집하는 통합 멀티모달 영상 모델 Kling O1을 Hedra에서 바로 쓸 수 있게 됐어요.",
+    "url": "https://www.hedra.com/blog/kling-o1-is-now-available-in-hedra",
+    "source": "notice"
+  }
+]

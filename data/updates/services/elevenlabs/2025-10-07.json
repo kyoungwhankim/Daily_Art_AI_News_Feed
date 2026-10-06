@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2025-10-07-1",
+    "service": "elevenlabs",
+    "date": "2025.10.07",
+    "kind": "API",
+    "title": "멀티모달 에이전트용 컴포넌트 ElevenLabs UI",
+    "summary": "shadcn/ui 기반 컴포넌트 라이브러리 ElevenLabs UI로 멀티모달 에이전트 화면을 더 빨리 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-ui",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2025-10-07-2",
+    "service": "elevenlabs",
+    "date": "2025.10.07",
+    "kind": "API",
+    "title": "에이전트 Gemini 2.5 Flash 프리뷰 지원",
+    "summary": "에이전트 LLM으로 Gemini 2.5 Flash 프리뷰 모델을 쓸 수 있고, History API에 VoiceGeneration 소스가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/10/7",
+    "source": "dev"
+  }
+]

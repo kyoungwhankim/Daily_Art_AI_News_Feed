@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2025-12-05-1",
+    "service": "comfyui",
+    "date": "2025.12.05",
+    "kind": "기능",
+    "title": "Nodes 2.0: Vue 기반 새 노드 인터페이스",
+    "summary": "ComfyUI 노드 시스템을 LiteGraph 캔버스 렌더링에서 Vue 기반으로 옮긴 Nodes 2.0을 소개하고 사용자 피드백을 요청했어요. 더 빠른 개선과 풍부한 상호작용을 위한 변화예요.",
+    "url": "https://blog.comfy.org/p/comfyui-node-2-0",
+    "source": "notice"
+  }
+]

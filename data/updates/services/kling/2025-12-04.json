@@ -1,0 +1,12 @@
+[
+  {
+    "id": "kling-2025-12-04-1",
+    "service": "kling",
+    "date": "2025.12.04",
+    "kind": "기능",
+    "title": "Kling AI Avatar 2.0 출시, 최대 5분 영상",
+    "summary": "표현력이 강화된 Avatar 2.0이 나와 최대 5분 길이의 아바타 영상을 만들 수 있어요. API에서도 파라미터 변경 없이 5분 생성이 지원돼요.",
+    "url": "https://kling.ai/release-note/release-notes/9bbqv0a76z",
+    "source": "notice"
+  }
+]

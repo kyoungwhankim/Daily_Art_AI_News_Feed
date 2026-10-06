@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2022-11-29-1",
+    "service": "rokoko",
+    "date": "2022.11.29",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.0, 오프라인 모드와 Motion Library 탑재",
+    "summary": "가장 많이 요청된 오프라인 모드가 추가돼 인터넷 없이 작업하고 나중에 동기화할 수 있어요. Motion Library도 Studio 안에서 바로 쓸 수 있어요.",
+    "details": [
+      "오프라인 모드와 새 동기화 프레임워크",
+      "Motion Library 탐색·구매·다운로드",
+      "팀 공유 액터 프리셋",
+      "장비 이름 변경"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/10987248236433-Rokoko-Studio-2-3-0",
+    "source": "dev"
+  }
+]

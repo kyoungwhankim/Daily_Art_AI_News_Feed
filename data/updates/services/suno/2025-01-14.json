@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2025-01-14-1",
+    "service": "suno",
+    "date": "2025.01.14",
+    "kind": "기능",
+    "title": "Suno Workspaces로 곡 정리",
+    "summary": "곡을 만들 때 Workspace를 만들어 작업물을 정리·관리할 수 있어요.",
+    "url": "https://suno.com/release-notes/new-feature-just-dropped-workspaces",
+    "source": "notice"
+  }
+]

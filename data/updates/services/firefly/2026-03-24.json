@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2026-03-24-1",
+    "service": "firefly",
+    "date": "2026.03.24",
+    "kind": "API",
+    "title": "Firefly Composite Operations API 출시",
+    "summary": "Precise Composite, Adaptive Composite, Object Composite API로 구성된 Composite Operations API를 쓸 수 있게 됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#march-24-2026",
+    "source": "dev"
+  }
+]

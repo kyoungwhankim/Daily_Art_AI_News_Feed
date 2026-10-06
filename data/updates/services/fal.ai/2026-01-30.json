@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-01-30-1",
+    "service": "fal.ai",
+    "date": "2026.01.30",
+    "kind": "API",
+    "title": "러너 IDLE 상태 추가 (호환성 주의)",
+    "summary": "요청을 기다리는 러너를 나타내는 IDLE 상태가 추가됐어요. 러너 상태를 프로그램으로 추적한다면 연동 코드를 업데이트해야 할 수 있어요.",
+    "url": "https://fal.ai/docs/changelog#january-30-2026",
+    "source": "dev"
+  }
+]

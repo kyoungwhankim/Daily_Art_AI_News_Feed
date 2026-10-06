@@ -1,0 +1,22 @@
+[
+  {
+    "id": "figma-ai-2026-01-22-1",
+    "service": "figma-ai",
+    "date": "2026.01.22",
+    "kind": "기능",
+    "title": "Figma Make 신규 기능 묶음",
+    "summary": "Figma Make에 여러 새 기능이 추가돼 프로토타입을 만들고 다듬기가 더 편해졌어요.",
+    "url": "https://www.figma.com/release-notes/?title=more-new-features-in-figma-make",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-01-22-2",
+    "service": "figma-ai",
+    "date": "2026.01.22",
+    "kind": "기능",
+    "title": "Figma Make 프로토타입 임베드",
+    "summary": "Make 프로토타입을 Figma Design·FigJam·Slides에 임베드해 함께 논의하고 반복할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=share-your-figma-make-prototypes",
+    "source": "notice"
+  }
+]

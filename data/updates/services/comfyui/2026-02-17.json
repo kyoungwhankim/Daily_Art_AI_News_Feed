@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-02-17-1",
+    "service": "comfyui",
+    "date": "2026.02.17",
+    "kind": "연동",
+    "title": "ComfyUI, Recraft V4·V4 Pro 이미지·벡터 생성",
+    "summary": "디자이너와 함께 구도·조명·색감을 다듬은 Recraft V4와 V4 Pro를 API 노드로 쓸 수 있어요. 텍스트→벡터 생성도 지원해요.",
+    "details": [
+      "v0.14.0: Qwen 2512 ControlNet, Flux 계열 NAG 적용",
+      "Node Replacement API, VideoSlice·Create List 노드",
+      "Magnific 업스케일러, Tencent 3D, Bria RMBG, Kling V3·O3 API 노드",
+      "Anima에서 내장 LoRA 학습"
+    ],
+    "url": "https://blog.comfy.org/p/recraft-v4-now-available-in-comfyui",
+    "source": "notice"
+  }
+]

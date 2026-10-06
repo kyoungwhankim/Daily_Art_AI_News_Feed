@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topaz-video-2021-11-09-1",
+    "service": "topaz-video",
+    "date": "2021.11.09",
+    "kind": "앱",
+    "title": "Video Enhance AI v2.6.0: Apple Silicon 네이티브 지원",
+    "summary": "M1 Mac 네이티브 지원과 빠른 움직임용 Chronos Fast 모델을 추가하고 Proteus·Artemis·Dione을 업데이트해 아티팩트를 줄였어요.",
+    "details": [
+      "설정을 한곳에 모은 환경설정 패널",
+      "모델 관리자 없이 모든 모델 사용",
+      "설치 파일 크기 대폭 축소"
+    ],
+    "url": "https://community.topazlabs.com/t/video-enhance-v2-6-4/27636",
+    "source": "notice"
+  }
+]

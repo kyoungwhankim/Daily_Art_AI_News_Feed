@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-07-11-1",
+    "service": "claude",
+    "date": "2023.07.11",
+    "kind": "모델",
+    "title": "Claude 2 출시와 claude.ai 베타 공개",
+    "summary": "성능이 좋아지고 100K 토큰 컨텍스트를 지원하는 Claude 2가 API와 claude.ai 베타로 나왔어요. 무해성도 2배 개선됐어요.",
+    "url": "https://www.anthropic.com/news/claude-2",
+    "source": "notice"
+  }
+]

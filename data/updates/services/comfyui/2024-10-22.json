@@ -1,0 +1,12 @@
+[
+  {
+    "id": "comfyui-2024-10-22-1",
+    "service": "comfyui",
+    "date": "2024.10.22",
+    "kind": "모델",
+    "title": "ComfyUI, Stable Diffusion 3.5 지원",
+    "summary": "Stability AI가 공개한 Stable Diffusion 3.5 Large와 Large Turbo를 ComfyUI에서 로컬로 바로 쓸 수 있게 됐어요.",
+    "url": "https://blog.comfy.org/p/sd3-5-comfyui",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-12-19-1",
+    "service": "stable-diffusion",
+    "date": "2024.12.19",
+    "kind": "연동",
+    "title": "Amazon Bedrock에 SD3.5 Large 정식 제공",
+    "summary": "Stable Diffusion 3.5 Large를 Amazon Bedrock에서 정식으로 쓸 수 있게 됐어요. Bedrock의 Stable Image Ultra·Core도 최신 기술로 업그레이드됐어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-35-large-is-now-available-on-amazon-bedrock",
+    "source": "notice"
+  }
+]

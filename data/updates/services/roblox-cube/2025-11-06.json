@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2025-11-06-1",
+    "service": "roblox-cube",
+    "date": "2025.11.06",
+    "kind": "모델",
+    "title": "4D 기능성 오브젝트·향상된 3D 생성 얼리 액세스",
+    "summary": "플레이어가 경험 안에서 움직이는 기능성 4D 오브젝트를 만들 수 있는 GenerateModelAsync API와 향상된 3D 생성이 얼리 액세스로 나왔어요.",
+    "url": "https://devforum.roblox.com/t/early-access-introducing-in-experience-4d-functional-objects-and-enhanced-3d-generation/4050893",
+    "source": "notice"
+  }
+]

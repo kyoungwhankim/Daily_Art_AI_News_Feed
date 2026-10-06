@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2025-09-04-1",
+    "service": "comfyui",
+    "date": "2025.09.04",
+    "kind": "모델",
+    "title": "ComfyUI, ByteDance USO 스타일·주제 생성 모델 지원",
+    "summary": "스타일 기반과 주제 기반 생성을 하나로 묶은 FLUX 기반 ByteDance USO 모델을 ComfyUI에서 네이티브로 지원해요.",
+    "details": [
+      "v0.3.57: ImageScaleToMaxDimension 노드",
+      "ByteDance 이미지 노드, Ideogram v3 캐릭터 참조"
+    ],
+    "url": "https://blog.comfy.org/p/uso-available-in-comfyui",
+    "source": "notice"
+  }
+]

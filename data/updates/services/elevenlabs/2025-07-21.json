@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-07-21-1",
+    "service": "elevenlabs",
+    "date": "2025.07.21",
+    "kind": "API",
+    "title": "Conversational AI WebRTC 지원",
+    "summary": "ElevenLabs Conversational AI가 WebRTC를 지원해 더 낮은 지연으로 실시간 음성 대화를 할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/conversational-ai-webrtc",
+    "source": "dev"
+  }
+]

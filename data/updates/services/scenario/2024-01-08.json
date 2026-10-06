@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-08-1",
+    "service": "scenario",
+    "date": "2024.01.08",
+    "kind": "기능",
+    "title": "웹 앱에 SDXL LoRA 학습·조합 추가",
+    "summary": "웹 앱에서 SDXL LoRA 파인튜닝과 SDXL LoRA 조합을 쓸 수 있게 돼 스타일 제어가 크게 늘었어요.",
+    "url": "https://www.scenario.com/changelog/webapp-version-1-45-january-8th-2024",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2022-02-14-1",
+    "service": "rokoko",
+    "date": "2022.02.14",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.1.0, macOS 지원과 글러브 일체형 슈트 대응",
+    "summary": "첫 메이저 업데이트로 Studio Beta가 macOS에서도 돌아가고, 장갑을 슈트에 바로 연결하는 glove-ready Smartsuit Pro II를 지원해요.",
+    "details": [
+      "Rokoko Studio Beta macOS 버전 출시",
+      "glove-ready Smartsuit Pro II 지원",
+      "0프레임 T-포즈 포함 등 새 내보내기 옵션",
+      "캘리브레이션 카운트다운 시간 설정"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/4423194573329-Rokoko-Studio-2-1-0",
+    "source": "dev"
+  }
+]

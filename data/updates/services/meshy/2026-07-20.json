@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-07-20-1",
+    "service": "meshy",
+    "date": "2026.07.20",
+    "kind": "API",
+    "title": "Creative Lab Vinyl Figure API 추가",
+    "summary": "사진을 큰 머리 비닐 피규어 3D 모델로 바꾸는 Creative Lab Vinyl Figure API가 추가됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#jul-2026",
+    "source": "dev"
+  }
+]

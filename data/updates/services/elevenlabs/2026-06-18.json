@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-06-18-1",
+    "service": "elevenlabs",
+    "date": "2026.06.18",
+    "kind": "기능",
+    "title": "ElevenMusic Mixes, 주간 맞춤 생성곡",
+    "summary": "청취 기록을 바탕으로 매주 일요일 개인 맞춤 생성곡 33곡을 만들어 주는 Mixes가 ElevenMusic에 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-mixes-on-elevenmusic",
+    "source": "notice"
+  }
+]

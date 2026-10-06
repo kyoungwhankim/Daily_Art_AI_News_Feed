@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-02-16-1",
+    "service": "fal.ai",
+    "date": "2026.02.16",
+    "kind": "기능",
+    "title": "로그 히스토그램·컨텍스트 이동·시간대 전환",
+    "summary": "로그 페이지에 심각도별 로그량 히스토그램, 주변 로그로 이동하는 Jump to Context, UTC·로컬 시간대 전환이 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#february-16-2026",
+    "source": "dev"
+  }
+]

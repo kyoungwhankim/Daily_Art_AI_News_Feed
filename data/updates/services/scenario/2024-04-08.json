@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-04-08-1",
+    "service": "scenario",
+    "date": "2024.04.08",
+    "kind": "API",
+    "title": "학습 이미지 자동 캡션 개선",
+    "summary": "학습 이미지 자동 캡션이 개선되고, 워크스페이스 사용량 단계별 관리자 이메일 알림이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/2-20-0-automatic-captioning-email-notifications-controls",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-04-23-1",
+    "service": "nvidia-studio",
+    "date": "2025.04.23",
+    "kind": "기능",
+    "title": "Project G-Assist 플러그인 빌더 공개",
+    "summary": "RTX 시스템을 조정·제어하는 AI 비서 G-Assist에 누구나 기능을 더할 수 있는 플러그인 빌더가 나왔어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-g-assist-plugin-builder/",
+    "source": "notice"
+  }
+]

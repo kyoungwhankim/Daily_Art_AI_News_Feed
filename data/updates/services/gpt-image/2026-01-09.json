@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gpt-image-2026-01-09-1",
+    "service": "gpt-image",
+    "date": "2026.01.09",
+    "kind": "API",
+    "title": "gpt-image-1.5 이미지 편집 fidelity 설정 버그 수정",
+    "summary": "/v1/images/edits에서 fidelity를 low(기본값)로 지정해도 gpt-image-1.5와 chatgpt-image-latest가 high fidelity로 동작하던 문제가 고쳐졌어요.",
+    "url": "https://developers.openai.com/api/docs/changelog",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-03-12-1",
+    "service": "scenario",
+    "date": "2026.03.12",
+    "kind": "API",
+    "title": "Trellis 3D 리텍스처링",
+    "summary": "Trellis로 3D 모델에 새 고품질 텍스처를 입힐 수 있고 학습 재개가 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-27-0",
+    "source": "notice"
+  }
+]

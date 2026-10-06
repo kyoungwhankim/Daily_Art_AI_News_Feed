@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-06-11-1",
+    "service": "roblox-cube",
+    "date": "2026.06.11",
+    "kind": "기능",
+    "title": "파츠로 나뉜 3D 모델 생성 미리보기",
+    "summary": "Assistant의 /generate_mesh와 /generate_procedural_model로 여러 파츠로 분리된 모델을 만들어 파츠별로 동작을 붙일 수 있어요.",
+    "url": "https://devforum.roblox.com/t/early-preview-generate-3d-models-segmented-into-multiple-parts/4678458",
+    "source": "notice"
+  }
+]

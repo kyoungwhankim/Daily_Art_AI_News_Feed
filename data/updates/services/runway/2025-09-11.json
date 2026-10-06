@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2025-09-11-1",
+    "service": "runway",
+    "date": "2025.09.11",
+    "kind": "기능",
+    "title": "라이트 모드 추가",
+    "summary": "설정에서 라이트 모드와 다크 모드를 골라 앱 테마를 바꿀 수 있어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

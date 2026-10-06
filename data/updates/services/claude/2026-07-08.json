@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-07-08-1",
+    "service": "claude",
+    "date": "2026.07.08",
+    "kind": "API",
+    "title": "API 키 만료 기간 설정",
+    "summary": "Console에서 API 키와 Admin API 키를 만들 때 만료 기간을 정할 수 있고, 7일 이상 키는 만료 전 이메일 알림이 와요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#july-8-2026",
+    "source": "dev"
+  }
+]

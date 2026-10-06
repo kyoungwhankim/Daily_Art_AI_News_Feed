@@ -1,0 +1,37 @@
+[
+  {
+    "id": "claude-2026-06-30-1",
+    "service": "claude",
+    "date": "2026.06.30",
+    "kind": "정책",
+    "title": "Claude Fable 5 재배포 발표",
+    "summary": "7월 1일부터 강화된 사이버 안전장치와 새 탈옥 대응 프레임워크를 적용해 Claude Fable 5를 다시 제공한다고 발표했어요.",
+    "url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-06-30-2",
+    "service": "claude",
+    "date": "2026.06.30",
+    "kind": "모델",
+    "title": "Claude Sonnet 5 출시",
+    "summary": "계획 수립·브라우저·터미널 도구 사용·자율 실행에 강한 가장 에이전트다운 Sonnet 5가 나왔어요. Opus 4.8에 가까운 성능을 더 낮은 가격에 제공해요.",
+    "details": [
+      "API: 1M 컨텍스트, 도입가 $2/$10 per MTok",
+      "적응형 사고 기본, 수동 확장 사고·샘플링 파라미터 제거",
+      "새 토크나이저(같은 텍스트에 약 30% 많은 토큰)"
+    ],
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-06-30-3",
+    "service": "claude",
+    "date": "2026.06.30",
+    "kind": "앱",
+    "title": "Claude Science: 과학자용 AI 워크벤치",
+    "summary": "연구자가 자주 쓰는 도구를 통합하고 감사 가능한 산출물과 유연한 컴퓨팅 자원을 제공하는 Claude Science가 나왔어요.",
+    "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "source": "notice"
+  }
+]

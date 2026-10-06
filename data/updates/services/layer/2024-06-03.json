@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2024-06-03-1",
+    "service": "layer",
+    "date": "2024.06.03",
+    "kind": "기능",
+    "title": "세션 다운로드·크롭 다듬기·이미지 복사",
+    "summary": "세션 전체 다운로드와 크롭 영역 다듬기, 이미지 복사 기능이 추가됐어요.",
+    "url": "https://layer.ai/changelog/page/8#2024-06-03",
+    "source": "notice"
+  }
+]

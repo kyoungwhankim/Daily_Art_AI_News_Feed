@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-03-14-1",
+    "service": "claude",
+    "date": "2023.03.14",
+    "kind": "모델",
+    "title": "Claude 첫 공개: 채팅·API로 제공",
+    "summary": "차세대 AI 어시스턴트 Claude가 채팅 인터페이스와 API로 공개됐어요. Notion·Quora·DuckDuckGo가 초기 파트너로 참여했어요.",
+    "url": "https://www.anthropic.com/news/introducing-claude",
+    "source": "notice"
+  }
+]

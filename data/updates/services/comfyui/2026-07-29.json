@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-07-29-1",
+    "service": "comfyui",
+    "date": "2026.07.29",
+    "kind": "모델",
+    "title": "ComfyUI v0.29.0: JoyImageEdit·MageFlow·Gemma4 12B",
+    "summary": "ComfyUI v0.29.0에서 JoyImageEdit, MageFlow, Gemma4 12B, Wan용 Uni3C ControlNet을 지원하고 트레이너가 영상도 다룰 수 있게 됐어요.",
+    "details": [
+      "Recraft V4.1, Claude Opus 5 등 새 모델 노드",
+      "Runway Gen3a 지원 중단",
+      "영상 트랜스코딩 스트리밍으로 RAM 절약"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-29-0",
+    "source": "notice"
+  }
+]

@@ -3,6 +3,7 @@
 # 같은 경로의 새 주소로 넘겨 주는 안내 페이지만 배포한다.
 # 만든 파일(_site/)은 레포에 커밋하지 않는다 — scripts/build_site.py 참고.
 # PR에서는 빌드만 확인하고 배포하지 않는다.
+# claude/** 브랜치에 push하면 미리보기 주소(https://preview.ai-art-news.pages.dev, 검색 차단)에만 배포한다.
 #
 # 필요한 레포 Secrets: CLOUDFLARE_API_TOKEN (Cloudflare Pages: Edit), CLOUDFLARE_ACCOUNT_ID
 # 레포 Settings → Pages → Source 는 "GitHub Actions" (예전 주소 안내 페이지용).
@@ -10,7 +11,7 @@ name: Deploy site
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'claude/**']
   pull_request:
   workflow_dispatch:
 
@@ -20,12 +21,14 @@ permissions:
   id-token: write
 
 concurrency:
-  group: ${{ github.event_name == 'pull_request' && format('build-{0}', github.ref) || 'deploy' }}
+  group: ${{ github.event_name == 'pull_request' && format('build-{0}', github.ref) || (github.ref == 'refs/heads/main' && 'deploy' || 'preview') }}
   cancel-in-progress: false
 
 env:
   CF_PROJECT: ai-art-news
   SITE_URL: https://ai-art-news.pages.dev
+  IS_MAIN: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+  IS_PREVIEW: ${{ github.event_name == 'push' && github.ref != 'refs/heads/main' }}
 
 jobs:
   build:
@@ -44,11 +47,20 @@ jobs:
         run: python3 scripts/validate_data.py
       - name: Build site
         run: python3 scripts/build_site.py --out _site
+        env:
+          PREVIEW: ${{ env.IS_PREVIEW == 'true' && '1' || '' }}
+
+      - name: Deploy preview to Cloudflare Pages (preview.ai-art-news.pages.dev)
+        if: env.IS_PREVIEW == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages deploy _site --project-name "$CF_PROJECT" --branch preview --commit-dirty=true
       - name: Build redirect site for the old address
         run: python3 scripts/build_site.py --redirect-site _redirect
 
       - name: Deploy to Cloudflare Pages
-        if: github.event_name != 'pull_request'
+        if: env.IS_MAIN == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -58,7 +70,7 @@ jobs:
           npx --yes wrangler@4 pages deploy _site --project-name "$CF_PROJECT" --branch main --commit-dirty=true
 
       - name: Check the new address serves this site
-        if: github.event_name != 'pull_request'
+        if: env.IS_MAIN == 'true'
         run: |
           # 예전 주소를 넘기기 전에, 새 주소가 정말 이 사이트인지 확인한다
           # (프로젝트 이름이 이미 쓰이고 있어 주소가 달라졌다면 여기서 멈춘다)
@@ -72,11 +84,12 @@ jobs:
           exit 1
 
       - uses: actions/upload-pages-artifact@v3
+        if: env.IS_PREVIEW != 'true'
         with:
           path: _redirect
 
   deploy-redirect:
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:

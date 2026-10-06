@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2024-07-26-1",
+    "service": "invokeai",
+    "date": "2024.07.26",
+    "kind": "기능",
+    "title": "Invoke 4.2.7: 전용 업스케일 탭",
+    "summary": "Invoke 4.2.7에서 MultiDiffusion 기반 전용 업스케일 탭이 생겨 적은 메모리로 아주 큰 이미지까지 업스케일할 수 있어요. 커스텀 업스케일 모델도 지원해요.",
+    "url": "https://invoke.ai/releases/version/v4-2-7/",
+    "source": "notice"
+  }
+]

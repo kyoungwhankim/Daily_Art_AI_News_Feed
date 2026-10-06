@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hailuo-2026-07-31-1",
+    "service": "hailuo",
+    "date": "2026.07.31",
+    "kind": "모델",
+    "title": "MiniMax H3 공개: 오디오까지 생성하는 범용 영상 모델",
+    "summary": "Hailuo 01·02를 잇는 범용 멀티모달 생성 모델 MiniMax H3를 출시했어요. 텍스트·이미지·영상·오디오 맥락을 이해해 스테레오 오디오가 포함된 최대 2K·15초 영상을 만들어요.",
+    "details": [
+      "Hailuo AI에서 바로 체험 가능",
+      "Hailuo-02 아키텍처를 버리고 작업 일반화 중심으로 새 설계"
+    ],
+    "url": "https://www.minimax.io/blog/minimax-h3",
+    "source": "notice"
+  }
+]

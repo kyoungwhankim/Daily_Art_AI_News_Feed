@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2024-01-24-1",
+    "service": "scenario",
+    "date": "2024.01.24",
+    "kind": "API",
+    "title": "IP Adapter 추론 유형·SD1.5 LoRA",
+    "summary": "img2img-ip-adapter 등 IP Adapter 기반 추론 유형과 sd-1_5-lora 모델 유형·학습이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-version-2-15-0-january-24th-2024",
+    "source": "dev"
+  }
+]

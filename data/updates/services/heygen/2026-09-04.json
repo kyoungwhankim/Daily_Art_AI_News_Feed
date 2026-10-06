@@ -1,0 +1,18 @@
+[
+  {
+    "id": "heygen-2026-09-04-1",
+    "service": "heygen",
+    "date": "2026.09.04",
+    "kind": "기능",
+    "title": "HeyGen 2026년 9월 Enterprise 릴리스",
+    "summary": "BrandKit과 브랜드 거버넌스, 아바타 교체 흐름, 템플릿 잠금, 새 홈, API 사용량 대시보드, 커스텀 Look Pack이 추가됐어요. Motion Elements 등은 종료돼요.",
+    "details": [
+      "Cartesia Sonic 3.6 음성 모델 Enterprise 제공",
+      "휴대폰 QR로 보이스 클론 녹음",
+      "Viewer·Developer 역할 폐지(9월 15일)",
+      "Motion Elements를 HyperFrames로 대체"
+    ],
+    "url": "https://heygen.noticeable.news/publications/september-2026-enterprise-releases",
+    "source": "notice"
+  }
+]

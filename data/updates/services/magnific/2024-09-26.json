@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2024-09-26-1",
+    "service": "magnific",
+    "date": "2024.09.26",
+    "kind": "API",
+    "title": "Image Relight API 출시",
+    "summary": "텍스트 프롬프트, 레퍼런스 이미지, 라이트 맵으로 이미지의 조명을 바꾸는 Image Relight 기능을 API로 제공하기 시작했어요.",
+    "details": [
+      "POST /v1/ai/image-relight"
+    ],
+    "url": "https://docs.magnific.com/changelog/2024#september-26-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "firefly-2026-04-24-1",
+    "service": "firefly",
+    "date": "2026.04.24",
+    "kind": "API",
+    "title": "Firefly Upscale API 정식 출시(호환성 변경)",
+    "summary": "Upscale API가 정식 출시되며 모델 이름을 precise_upsampler_v1로 바로잡았어요. creative_upsampler_v1 헤더 값은 422 오류가 나니 수정이 필요해요.",
+    "details": [
+      "스키마·operationId의 Creative* 이름을 Precise*로 변경",
+      "요청·응답 구조는 동일"
+    ],
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#april-24-2026",
+    "source": "dev"
+  }
+]

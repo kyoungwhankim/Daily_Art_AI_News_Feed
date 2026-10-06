@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-07-03-1",
+    "service": "scenario",
+    "date": "2026.07.03",
+    "kind": "요금",
+    "title": "멤버·프로젝트·API 키별 사용 한도 설정",
+    "summary": "모든 멤버, 프로젝트, API 키에 사용량 상한을 걸 수 있는 기능을 소개했어요. 팀의 Compute Unit 지출을 예측 가능하게 관리할 수 있어요.",
+    "url": "https://www.scenario.com/blog/ai-usage-limits-scenario",
+    "source": "notice"
+  }
+]

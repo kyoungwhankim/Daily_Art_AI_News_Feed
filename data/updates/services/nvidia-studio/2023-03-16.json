@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2023-03-16-1",
+    "service": "nvidia-studio",
+    "date": "2023.03.16",
+    "kind": "기능",
+    "title": "NVIDIA Canvas 1.4: 파노라마 모드(베타)",
+    "summary": "AI로 붓질을 풍경으로 바꾸는 NVIDIA Canvas 1.4가 나왔어요. 360도 파노라마를 만들 수 있는 Panorama 모드가 새로 들어갔어요.",
+    "url": "https://blogs.nvidia.com/blog/in-the-nvidia-studio-march-16/",
+    "source": "notice"
+  }
+]

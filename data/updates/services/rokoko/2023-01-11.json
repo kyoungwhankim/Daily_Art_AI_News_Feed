@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rokoko-2023-01-11-1",
+    "service": "rokoko",
+    "date": "2023.01.11",
+    "kind": "앱",
+    "title": "Rokoko Studio 2.3.1 베타 종료, 정식 버전 전환",
+    "summary": "새 Rokoko Studio가 베타 딱지를 떼고 공식 메인 툴이 됐어요. Sony mocopi 트래커 지원도 추가됐고, Studio Legacy는 점차 지원이 끝날 예정이에요.",
+    "details": [
+      "베타 종료, 정식 Rokoko Studio로 전환",
+      "Sony mocopi 내장 지원",
+      "장비 성능 상태 정보 강화",
+      "Rokoko Video 새 씬 자동 가져오기"
+    ],
+    "url": "https://support.rokoko.com/hc/en-us/articles/12078655592337-Rokoko-Studio-2-3-1",
+    "source": "dev"
+  }
+]

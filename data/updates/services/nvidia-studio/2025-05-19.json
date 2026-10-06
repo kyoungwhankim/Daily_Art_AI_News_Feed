@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nvidia-studio-2025-05-19-1",
+    "service": "nvidia-studio",
+    "date": "2025.05.19",
+    "kind": "API",
+    "title": "RTX AI PC용 TensorRT 재설계",
+    "summary": "TensorRT가 RTX AI PC용으로 재설계돼 기기에서 바로 엔진을 만드는 방식으로 바뀌었어요. Windows 11 생성형 AI 개발이 쉬워졌어요.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-computex-microsoft-build/",
+    "source": "notice"
+  }
+]

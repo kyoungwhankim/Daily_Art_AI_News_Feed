@@ -1,0 +1,17 @@
+[
+  {
+    "id": "suno-2025-06-03-1",
+    "service": "suno",
+    "date": "2025.06.03",
+    "kind": "기능",
+    "title": "Suno Song Editor와 12스템 분리",
+    "summary": "파형에서 구간별로 곡을 재배치·재작성하는 Song Editor, 최대 12개 스템 분리, 8분까지 곡 업로드가 나왔어요.",
+    "details": [
+      "Song Editor 구간별 편집",
+      "최대 12스템 추출",
+      "최대 8분 오디오 업로드"
+    ],
+    "url": "https://suno.com/release-notes/a-whole-new-level-of-creative-control",
+    "source": "notice"
+  }
+]

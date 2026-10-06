@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-01-09-1",
+    "service": "scenario",
+    "date": "2026.01.09",
+    "kind": "API",
+    "title": "Hunyuan3D 2.1·HDRI 스카이박스 가속",
+    "summary": "PBR 3D 모델을 만드는 Hunyuan3D 2.1이 추가되고 HDRI 스카이박스 생성과 Flux.1 로딩이 빨라졌어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-18-0",
+    "source": "notice"
+  }
+]

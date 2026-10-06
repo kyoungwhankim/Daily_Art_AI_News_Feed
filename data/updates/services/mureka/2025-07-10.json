@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2025-07-10-1",
+    "service": "mureka",
+    "date": "2025.07.10",
+    "kind": "기능",
+    "title": "Mureka TTS와 보이스 라이브러리",
+    "summary": "10개 이상 언어로 텍스트를 자연스러운 음성으로 바꾸는 TTS와 100개 이상 목소리를 담은 Voice Library가 나왔어요. 몇 초 음성으로 보이스 클론도 돼요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

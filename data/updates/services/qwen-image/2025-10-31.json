@@ -1,0 +1,15 @@
+[
+  {
+    "id": "qwen-image-2025-10-31-1",
+    "service": "qwen-image",
+    "date": "2025.10.31",
+    "kind": "모델",
+    "title": "qwen-image-edit-plus 출시: 더 빠른 편집과 다중 출력",
+    "summary": "첫 편집 모델을 바탕으로 추론 성능과 안정성을 높인 qwen-image-edit-plus가 출시됐어요. 응답 시간이 크게 줄었고 한 번의 요청으로 여러 장의 이미지를 받을 수 있어요.",
+    "details": [
+      "스냅샷 qwen-image-edit-plus-2025-10-30"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

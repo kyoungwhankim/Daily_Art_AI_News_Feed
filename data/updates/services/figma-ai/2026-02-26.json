@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-02-26-1",
+    "service": "figma-ai",
+    "date": "2026.02.26",
+    "kind": "연동",
+    "title": "Codex에서 Figma로 화면 캡처 변환",
+    "summary": "Codex와 Figma MCP 서버로 앱 화면이나 요소를 캡처해 Figma의 편집 가능한 디자인 레이어로 바꿀 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=codex-to-figma",
+    "source": "notice"
+  }
+]

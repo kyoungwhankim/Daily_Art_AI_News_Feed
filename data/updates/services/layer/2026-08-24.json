@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2026-08-24-1",
+    "service": "layer",
+    "date": "2026.08.24",
+    "kind": "기능",
+    "title": "립싱크·영상 편집기·Interpolate",
+    "summary": "라이트박스에서 립싱크, 세션 캔버스 영상 편집, 보간·슬로모션, Topaz 업스케일 전 라인업, 스튜디오 기준 에셋 평가가 추가됐어요.",
+    "url": "https://layer.ai/changelog#2026-08-24",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "unity-ai-2026-07-21-1",
+    "service": "unity-ai",
+    "date": "2026.07.21",
+    "kind": "요금",
+    "title": "AI Assistant 2.16: MCP·Gateway 연결 수 제한 해제",
+    "summary": "AI Assistant 2.16.0에서 MCP와 AI Gateway 연결이 더 이상 라이선스 등급별 한도로 제한되지 않아요. Assistant·Generators가 HTTP 프록시 설정도 따라요.",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#2160-pre1---2026-07-21",
+    "source": "dev"
+  },
+  {
+    "id": "unity-ai-2026-07-21-2",
+    "service": "unity-ai",
+    "date": "2026.07.21",
+    "kind": "기능",
+    "title": "Unite Seoul: 무료 MCP·CLI 내장 Unity 7 공개",
+    "summary": "Unite Seoul 키노트에서 크리에이터와 코딩 에이전트가 함께 일하도록 무료 MCP·CLI·API를 내장한 Unity 7을 공개했어요. 프리뷰는 12월, 정식 출시는 내년 1분기 목표예요.",
+    "url": "https://unity.com/blog/unite-seoul-keynote-2026-recap",
+    "source": "notice"
+  }
+]

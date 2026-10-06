@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2025-09-15-1",
+    "service": "claude",
+    "date": "2025.09.15",
+    "kind": "연동",
+    "title": "Xcode에서 Claude 정식 지원",
+    "summary": "Xcode 26에 Claude 계정을 연결해 Apple 앱 개발 중 디버깅·리팩터링에 Claude Sonnet 4를 쓸 수 있어요.",
+    "url": "https://www.anthropic.com/news/claude-in-xcode",
+    "source": "notice"
+  }
+]

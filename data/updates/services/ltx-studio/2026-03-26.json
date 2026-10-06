@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ltx-studio-2026-03-26-1",
+    "service": "ltx-studio",
+    "date": "2026.03.26",
+    "kind": "모델",
+    "title": "LTX-2.3 오픈 가중치 공개: 22B 모델",
+    "summary": "22B 파라미터로 커진 LTX-2.3을 공개했어요. 오디오와 영상을 한 번에 생성하고 최대 4K 50fps, 20초 클립과 네이티브 세로 영상을 지원해요.",
+    "details": [
+      "새 고해상도 VAE로 질감 표현 향상",
+      "스테레오 24kHz 오디오",
+      "Desktop Editor를 Apache 2.0으로 공개"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "dev"
+  }
+]

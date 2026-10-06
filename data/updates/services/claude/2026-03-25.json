@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-03-25-1",
+    "service": "claude",
+    "date": "2026.03.25",
+    "kind": "기능",
+    "title": "Claude 모바일 앱에서 인터랙티브 앱 지원",
+    "summary": "iOS·Android Claude 앱이 인터랙티브 앱과 연결돼 실시간 차트, 다이어그램 스케치, 공유용 에셋을 대화 안에서 다룰 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

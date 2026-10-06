@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-09-22-1",
+    "service": "claude",
+    "date": "2026.09.22",
+    "kind": "모델",
+    "title": "Claude Opus 5.5 출시",
+    "summary": "Claude 5.5 패밀리의 첫 모델 Opus 5.5가 나왔어요. 대부분 작업에서 Fable 5.1 수준이면서 Opus 5보다 40% 저렴하게 돌릴 수 있어요.",
+    "details": [
+      "API: 기본 1M 컨텍스트, 128k 출력, $4/$20 per MTok",
+      "상시 적응형 사고, 빠른 모드 리서치 프리뷰",
+      "대화 중 system 메시지 안에 도구 정의(베타)"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

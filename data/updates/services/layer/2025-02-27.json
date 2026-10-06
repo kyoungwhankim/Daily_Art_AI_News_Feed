@@ -1,0 +1,12 @@
+[
+  {
+    "id": "layer-2025-02-27-1",
+    "service": "layer",
+    "date": "2025.02.27",
+    "kind": "모델",
+    "title": "Wan 2.1 영상 모델 추가",
+    "summary": "Alibaba의 Wan 2.1 영상 생성 모델을 Layer에 추가했어요.",
+    "url": "https://layer.ai/blog/alibaba-video-generation",
+    "source": "notice"
+  }
+]

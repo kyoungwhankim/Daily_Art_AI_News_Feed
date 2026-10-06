@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2026-04-09-1",
+    "service": "unity-ai",
+    "date": "2026.04.09",
+    "kind": "기능",
+    "title": "AI Assistant 2.5: Plan 모드와 Skills",
+    "summary": "AI Assistant 2.5.0에서 구현 계획을 먼저 세우는 Plan 모드와 파일 기반 Skills 불러오기, Grep 도구가 추가됐어요. AgentTool 공개 API로 직접 도구를 정의할 수 있어요.",
+    "details": [
+      "Project Settings > AI > Skills 페이지",
+      "여러 질문을 묻는 ask_user 도구 UI",
+      "Unity 6000.5 베타 지원"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/changelog/CHANGELOG.html#250-pre1---2026-04-09",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-10-06-1",
+    "service": "elevenlabs",
+    "date": "2025.10.06",
+    "kind": "기능",
+    "title": "ElevenLabs Agent Workflows",
+    "summary": "복잡한 상황을 전문 서브에이전트로 넘기고 필요하면 사람 상담원에게 연결하는 Agent Workflows가 나왔어요.",
+    "url": "https://elevenlabs.io/blog/introducing-agent-workflows",
+    "source": "notice"
+  }
+]

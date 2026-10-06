@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-05-01-1",
+    "service": "gigapixel",
+    "date": "2024.05.01",
+    "kind": "앱",
+    "title": "Gigapixel v7.1.3: 안정성 개선",
+    "summary": "핀치 줌 제한, 레거시 모델 전환 시 깜박임, 비교 보기 단축키 문제 등을 고치고 Lensfun을 자동 업데이트했어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-1-3/68786",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-02-09-1",
+    "service": "magnific",
+    "date": "2026.02.09",
+    "kind": "API",
+    "title": "Ideogram Image Expand API",
+    "summary": "Ideogram 모델로 이미지 가장자리를 각각 최대 2048px까지 확장하는 아웃페인팅 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#february-9-2026",
+    "source": "dev"
+  }
+]

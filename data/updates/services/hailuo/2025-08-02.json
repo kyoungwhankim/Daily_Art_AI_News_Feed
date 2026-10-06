@@ -1,0 +1,15 @@
+[
+  {
+    "id": "hailuo-2025-08-02-1",
+    "service": "hailuo",
+    "date": "2025.08.02",
+    "kind": "API",
+    "title": "MiniMax-Hailuo-02 API에 512p 이미지→영상 추가",
+    "summary": "MiniMax-Hailuo-02 모델 API에서 512p 이미지→영상 생성을 지원하기 시작했어요. 6초·10초 길이를 고를 수 있어요.",
+    "details": [
+      "프롬프트 처리 지연을 줄이는 fast_pretreatment 파라미터 추가"
+    ],
+    "url": "https://platform.minimax.io/docs/release-notes/apis#aug-2-2025",
+    "source": "dev"
+  }
+]

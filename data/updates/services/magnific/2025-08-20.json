@@ -1,0 +1,16 @@
+[
+  {
+    "id": "magnific-2025-08-20-1",
+    "service": "magnific",
+    "date": "2025.08.20",
+    "kind": "API",
+    "title": "Seedream·HyperFlux 텍스트-투-이미지 API",
+    "summary": "ByteDance Seedream과 HyperFlux 텍스트-투-이미지 엔드포인트를 API에 추가했어요. 레거시 Seedream 엔드포인트는 2026년 8월 27일 제거됐어요.",
+    "details": [
+      "POST /v1/ai/text-to-image/seedream",
+      "POST /v1/ai/text-to-image/hyperflux"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#august-20-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2025-11-21-1",
+    "service": "comfyui",
+    "date": "2025.11.21",
+    "kind": "연동",
+    "title": "ComfyUI, Nano Banana Pro(Gemini 3 Pro Image) 지원",
+    "summary": "Google DeepMind의 고품질 이미지 생성·편집 모델 Nano Banana Pro를 API 노드로 ComfyUI에서 쓸 수 있어요. 4K 생성과 정확한 글자 렌더링이 특징이에요.",
+    "details": [
+      "v0.3.71: HunyuanVideo 1.5 지원",
+      "Topaz 영상 개선 API 노드",
+      "PreviewAny 노드 이름을 Preview as Text로 변경"
+    ],
+    "url": "https://blog.comfy.org/p/meet-nano-banana-pro-in-comfyui",
+    "source": "notice"
+  }
+]

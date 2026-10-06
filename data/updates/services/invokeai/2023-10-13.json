@@ -1,0 +1,15 @@
+[
+  {
+    "id": "invokeai-2023-10-13-1",
+    "service": "invokeai",
+    "date": "2023.10.13",
+    "kind": "기능",
+    "title": "InvokeAI 3.3.0: T2I-Adapter와 다중 IP-Adapter",
+    "summary": "InvokeAI 3.3.0에서 T2I-Adapter와 여러 IP-Adapter 동시 사용을 지원하고, 얼굴 작업용 새 노드와 빠른 모델 로딩이 추가됐어요.",
+    "details": [
+      "3.3부터 Python 3.10 이상만 지원"
+    ],
+    "url": "https://invoke.ai/releases/version/invokeai-3-3-0post1/",
+    "source": "notice"
+  }
+]

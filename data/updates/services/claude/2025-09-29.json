@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2025-09-29-1",
+    "service": "claude",
+    "date": "2025.09.29",
+    "kind": "모델",
+    "title": "Claude Sonnet 4.5 출시",
+    "summary": "코딩, 복잡한 에이전트, 컴퓨터 사용에서 최고 수준인 Claude Sonnet 4.5가 나왔어요. 같은 날 Claude Code는 VS Code 확장과 체크포인트를 추가했어요.",
+    "details": [
+      "API: 메모리 도구·컨텍스트 편집 베타, model_context_window_exceeded 정지 사유",
+      "Bedrock·Vertex 글로벌 엔드포인트 가격 도입",
+      "앱: Pro 플랜·모바일에서 파일 생성·편집, Claude in Chrome 확대"
+    ],
+    "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+    "source": "notice"
+  }
+]

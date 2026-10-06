@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-08-24-1",
+    "service": "meshy",
+    "date": "2026.08.24",
+    "kind": "API",
+    "title": "gpt-image-2 화면비 확대",
+    "summary": "Text to Image와 Image to Image의 gpt-image-2가 16:9와 9:16 비율도 지원하게 됐어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#aug-2026",
+    "source": "dev"
+  }
+]

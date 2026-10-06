@@ -1,0 +1,12 @@
+[
+  {
+    "id": "roblox-cube-2026-05-28-1",
+    "service": "roblox-cube",
+    "date": "2026.05.28",
+    "kind": "기능",
+    "title": "Studio 테스트 API·Assistant Skills",
+    "summary": "기기 시뮬레이션, 멀티플레이 테스트, 가상 입력용 Studio API가 나왔고, Assistant가 Skills로 이를 활용해 테스트를 수행해요.",
+    "url": "https://devforum.roblox.com/t/new-studio-testing-apis-and-assistant-improvements/4657854",
+    "source": "notice"
+  }
+]

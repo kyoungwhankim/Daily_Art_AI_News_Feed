@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2025-10-25-1",
+    "service": "fal.ai",
+    "date": "2025.10.25",
+    "kind": "기능",
+    "title": "Serverless 인앱 온보딩 가이드",
+    "summary": "설치부터 첫 Serverless 배포까지 단계별로 안내하는 대화형 가이드가 대시보드에 추가됐어요.",
+    "url": "https://fal.ai/docs/changelog#october-25-2025",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2024-09-24-1",
+    "service": "topaz-video",
+    "date": "2024.09.24",
+    "kind": "앱",
+    "title": "Topaz Video AI 5.3.3: 배치 처리 흐름 개편",
+    "summary": "여러 소스를 선택했을 때 설정을 바꾸지 않으면 각 영상 설정을, 바꾸면 모든 영상에 변경을 적용하도록 배치 처리를 개편했어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-5-3-3/78511",
+    "source": "notice"
+  }
+]

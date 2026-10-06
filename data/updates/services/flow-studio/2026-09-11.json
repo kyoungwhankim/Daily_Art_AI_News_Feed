@@ -1,0 +1,19 @@
+[
+  {
+    "id": "flow-studio-2026-09-11-1",
+    "service": "flow-studio",
+    "date": "2026.09.11",
+    "kind": "기능",
+    "title": "Flow Studio, Autodesk Fusion 내보내기와 Audio Node",
+    "summary": "3D 에셋을 Autodesk Fusion으로 바로 내보낼 수 있고, Canvas에 오디오 업로드와 텍스트로 오디오를 만드는 Audio Node가 생겼어요.",
+    "details": [
+      "Autodesk Fusion으로 3D 에셋 내보내기",
+      "Canvas 오디오 업로드·Audio Node",
+      "Gemini 3.1 Flash TTS 지원",
+      "개선된 Face Animation 모델",
+      "3D Editor·Canvas 프로젝트 복제"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

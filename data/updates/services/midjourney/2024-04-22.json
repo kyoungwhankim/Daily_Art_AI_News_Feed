@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-04-22-1",
+    "service": "midjourney",
+    "date": "2024.04.22",
+    "kind": "기능",
+    "title": "--sref random 랜덤 스타일 기능 공개",
+    "summary": "프롬프트 뒤에 --sref random을 붙이면 완전히 무작위 스타일로 이미지를 만들 수 있어요. 마음에 드는 스타일을 찾아 다시 쓰기 좋은 탐색 도구예요.",
+    "url": "https://updates.midjourney.com/sref-random/",
+    "source": "notice"
+  }
+]

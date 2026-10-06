@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pixverse-2026-02-04-1",
+    "service": "pixverse",
+    "date": "2026.02.04",
+    "kind": "API",
+    "title": "PixVerse API에 Image templates 기능 추가",
+    "summary": "PixVerse API에 템플릿으로 이미지를 생성하는 Image templates 기능을 출시했어요.",
+    "url": "https://docs.platform.pixverse.ai/change-logs-906383m0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-02-10-1",
+    "service": "runway",
+    "date": "2026.02.10",
+    "kind": "API",
+    "title": "Runway Dev에 Gen-4.5 제공",
+    "summary": "Gen-4.5를 API로 쓸 수 있게 됐어요. 텍스트 투 비디오와 이미지 투 비디오를 지원하고 길이는 2–10초예요.",
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#gen-45-on-runway-dev",
+    "source": "dev"
+  }
+]

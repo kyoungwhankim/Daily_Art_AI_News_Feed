@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2023-10-12-1",
+    "service": "firefly",
+    "date": "2023.10.12",
+    "kind": "연동",
+    "title": "Adobe Stock에 Firefly 텍스트→이미지·이미지 확장",
+    "summary": "Adobe Stock 개인·팀 고객이 Firefly 기반 Text to Image와 Expand Image를 쓸 수 있게 됐고, Text to Image 결과물엔 지식재산권 면책이 적용돼요.",
+    "url": "https://blog.adobe.com/en/publish/2023/10/12/adobe-stock-new-generative-ai-features",
+    "source": "notice"
+  }
+]

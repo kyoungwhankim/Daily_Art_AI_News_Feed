@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-11-26-1",
+    "service": "scenario",
+    "date": "2025.11.26",
+    "kind": "기능",
+    "title": "Scenario Apps·FLUX.2·RetroDiffusion",
+    "summary": "기능별 원클릭 Apps가 생기고 FLUX.2 모델군과 RetroDiffusion 픽셀아트 모델이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/1-106-flux-2-retrodiffusion-pixel-snapper-feature-apps",
+    "source": "notice"
+  }
+]

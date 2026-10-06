@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-09-27-1",
+    "service": "scenario",
+    "date": "2026.09.27",
+    "kind": "연동",
+    "title": "MCP 0.31, Claude Code 호환 개선",
+    "summary": "skill_get 도구가 추가되고 Claude Code에서 도구 설명이 잘리는 문제가 해결됐어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-31-0",
+    "source": "notice"
+  }
+]

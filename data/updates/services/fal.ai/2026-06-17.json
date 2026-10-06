@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-17-1",
+    "service": "fal.ai",
+    "date": "2026.06.17",
+    "kind": "기능",
+    "title": "Serverless 사용량 페이지 신설",
+    "summary": "Serverless → Usage 페이지에서 앱·환경·머신 타입별 컴퓨트 사용량과 Reserve·Burst·On-Demand 등 가격 구분별 지출을 볼 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#june-17-2026",
+    "source": "dev"
+  }
+]

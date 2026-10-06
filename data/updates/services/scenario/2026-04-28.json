@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-04-28-1",
+    "service": "scenario",
+    "date": "2026.04.28",
+    "kind": "요금",
+    "title": "Starter 플랜 API 이용 허용",
+    "summary": "Starter 플랜도 Scenario API를 쓸 수 있게 됐어요. 모델 목록과 워크플로 노드도 늘었어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-117-0",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-07-30-1",
+    "service": "figma-ai",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "Figma Make에 편집 패널 추가",
+    "summary": "요소를 클릭해 속성을 직접 조정하거나, 화면에 주석을 달아 에이전트가 수정하게 하는 새 속성 패널이 Figma Make에 들어왔어요.",
+    "url": "https://www.figma.com/release-notes/?title=new-the-editing-panel-in-figma-make",
+    "source": "notice"
+  }
+]

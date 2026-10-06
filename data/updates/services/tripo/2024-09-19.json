@@ -1,0 +1,12 @@
+[
+  {
+    "id": "tripo-2024-09-19-1",
+    "service": "tripo",
+    "date": "2024.09.19",
+    "kind": "모델",
+    "title": "Tripo v2.0 알고리즘 공개",
+    "summary": "완전히 새로운 생성 알고리즘 v2.0-20240919가 API에 추가됐어요. 마지막 확인 이후 작업을 한꺼번에 보는 기능과 convert의 scale_factor도 생겼어요.",
+    "url": "https://docs.tripo3d.ai/get-started/changelog.html#_1-4-4-2024-09-19",
+    "source": "dev"
+  }
+]

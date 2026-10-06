@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-05-20-1",
+    "service": "comfyui",
+    "date": "2026.05.20",
+    "kind": "모델",
+    "title": "ComfyUI v0.22.0: Stable Audio 3·MoGe 지원",
+    "summary": "ComfyUI v0.22.0에서 Stable Audio 3와 MoGe 모델을 지원하고, OpenRouter LLM·Rodin2.5·Krea2 이미지 노드가 같은 날 추가됐어요.",
+    "details": [
+      "HiDream-O1 영역 컨디셔닝",
+      "StringFormat 노드, 배치 노드 최소 크기 1",
+      "ByteDance Seed2.0 LLM 노드"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-22-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "invokeai-2025-10-17-1",
+    "service": "invokeai",
+    "date": "2025.10.17",
+    "kind": "기능",
+    "title": "Invoke 6.9.0: 모델 매니저 설치 개선",
+    "summary": "Invoke 6.9.0은 모델 매니저를 개선해 종류를 알 수 없는 모델도 Unknown으로 설치한 뒤 직접 지정할 수 있게 했어요. 모델 폴더는 UUID별 평면 구조로 바뀌어요.",
+    "url": "https://invoke.ai/releases/version/v6-9-0/",
+    "source": "notice"
+  }
+]

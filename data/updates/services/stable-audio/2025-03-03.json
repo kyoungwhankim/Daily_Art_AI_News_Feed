@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-audio-2025-03-03-1",
+    "service": "stable-audio",
+    "date": "2025.03.03",
+    "kind": "연동",
+    "title": "Arm과 스마트폰 온디바이스 Stable Audio Open",
+    "summary": "Arm KleidiAI로 Stable Audio Open이 Arm CPU 스마트폰에서 30배 빨라져, 인터넷 없이 몇 초 만에 효과음·샘플을 만들 수 있어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-and-arm-bring-on-device-generative-audio-to-smartphones",
+    "source": "notice"
+  }
+]

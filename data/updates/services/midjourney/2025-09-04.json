@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2025-09-04-1",
+    "service": "midjourney",
+    "date": "2025.09.04",
+    "kind": "기능",
+    "title": "Style Explorer V1 출시",
+    "summary": "서로 다른 SREF 코드로 렌더링한 스타일을 둘러보고 저장하는 스타일 탐색 페이지가 생겼어요. 'Try Style'로 내 프롬프트를 바로 적용해 볼 수 있어요.",
+    "details": [
+      "'photographic', 'anime' 같은 단어로 스타일 검색",
+      "좋아요로 스타일 저장"
+    ],
+    "url": "https://updates.midjourney.com/style-explorer-v1/",
+    "source": "notice"
+  }
+]

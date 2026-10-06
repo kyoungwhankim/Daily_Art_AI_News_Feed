@@ -1,0 +1,22 @@
+[
+  {
+    "id": "claude-2025-09-16-1",
+    "service": "claude",
+    "date": "2025.09.16",
+    "kind": "기능",
+    "title": "Claude in Chrome 1만 명 확대",
+    "summary": "Claude in Chrome이 Max 사용자 1만 명으로 확대되고 장시간 워크플로, 슬래시 명령, 맥락 기반 프롬프트 제안이 추가됐어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2025-09-16-2",
+    "service": "claude",
+    "date": "2025.09.16",
+    "kind": "정책",
+    "title": "개발자 서비스 Claude 브랜드로 통합",
+    "summary": "Console은 platform.claude.com, 문서는 docs.claude.com, 도움말은 support.claude.com으로 바뀌어요. API와 SDK는 그대로예요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-16-2025",
+    "source": "dev"
+  }
+]

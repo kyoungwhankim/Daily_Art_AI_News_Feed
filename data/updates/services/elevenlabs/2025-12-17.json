@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-12-17-1",
+    "service": "elevenlabs",
+    "date": "2025.12.17",
+    "kind": "연동",
+    "title": "ElevenLabs Agents WhatsApp 지원",
+    "summary": "ElevenLabs 대화형 에이전트를 WhatsApp에서도 운영할 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/blog/elevenlabs-agents-whatsapp-support",
+    "source": "notice"
+  }
+]

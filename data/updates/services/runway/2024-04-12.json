@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2024-04-12-1",
+    "service": "runway",
+    "date": "2024.04.12",
+    "kind": "기능",
+    "title": "워크스페이스 분석에 멤버십 차트 추가",
+    "summary": "엔터프라이즈 워크스페이스 분석에서 구성원 현황을 보는 차트가 추가됐어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

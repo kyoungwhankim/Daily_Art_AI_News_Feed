@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2024-07-30-1",
+    "service": "topaz-video",
+    "date": "2024.07.30",
+    "kind": "앱",
+    "title": "Topaz Video AI 5.2.2: 알파 보존 개선과 Live Render",
+    "summary": "TIFF·PNG 시퀀스 간 알파 레이어 보존을 개선하고 Instant Render 이름을 Live Render로 바꿨어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-5-2-2/75780",
+    "source": "notice"
+  }
+]

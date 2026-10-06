@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-11-21-1",
+    "service": "claude",
+    "date": "2023.11.21",
+    "kind": "모델",
+    "title": "Claude 2.1 출시: 200K 컨텍스트·도구 사용 베타",
+    "summary": "업계 최대 200K 토큰 컨텍스트, 환각 감소, 시스템 프롬프트, 도구 사용 베타를 갖춘 Claude 2.1이 API와 claude.ai에 나왔어요. 가격도 조정됐어요.",
+    "url": "https://www.anthropic.com/news/claude-2-1",
+    "source": "notice"
+  }
+]

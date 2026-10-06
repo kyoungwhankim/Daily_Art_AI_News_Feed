@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-06-02-1",
+    "service": "gigapixel",
+    "date": "2020.06.02",
+    "kind": "앱",
+    "title": "Gigapixel v4.9.3: 물리 단위 크기 조절 개편",
+    "summary": "인치·센티미터·PPI 같은 물리 단위로 크기를 정하는 방식을 더 직관적으로 바꾸고, 해상도 메타데이터도 제대로 기록하게 했어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v4-9-3-2/15051",
+    "source": "notice"
+  }
+]

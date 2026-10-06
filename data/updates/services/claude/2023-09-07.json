@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2023-09-07-1",
+    "service": "claude",
+    "date": "2023.09.07",
+    "kind": "요금",
+    "title": "Claude Pro 구독 출시",
+    "summary": "claude.ai에서 사용량 5배, 혼잡 시간 우선 접속, 새 기능 조기 이용을 제공하는 유료 구독 Claude Pro가 나왔어요.",
+    "url": "https://www.anthropic.com/news/claude-pro",
+    "source": "notice"
+  }
+]

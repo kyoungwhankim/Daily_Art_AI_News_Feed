@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-09-28-1",
+    "service": "claude",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Claude Sonnet 5.5 출시",
+    "summary": "Claude 5.5 패밀리의 두 번째 모델 Sonnet 5.5가 나왔어요. Opus 5.5를 보완하는 더 빠르고 저렴한 모델이에요.",
+    "details": [
+      "API: claude-sonnet-5-5, Bedrock·AWS·Google Cloud·Foundry 제공",
+      "Sonnet 5 대비 호환성 변경 5가지(강제 도구 선택 400 오류 등) 주의"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2023-03-21-1",
+    "service": "stable-diffusion",
+    "date": "2023.03.21",
+    "kind": "API",
+    "title": "REST API v1 정식 출시와 이미지 업스케일 지원",
+    "summary": "REST API v1이 정식 출시돼 업스케일 엔드포인트와 개선된 오류 처리를 제공해요. Photoshop·Blender 플러그인에도 업스케일러가 추가됐어요.",
+    "details": [
+      "v1alpha·v1beta는 2023년 5월 1일 제거 예정",
+      "image-to-image에서 height·width 제거, null 값 금지"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes#rest-api-v1",
+    "source": "dev"
+  }
+]

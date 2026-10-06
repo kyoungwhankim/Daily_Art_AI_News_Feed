@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-09-29-1",
+    "service": "synthesia",
+    "date": "2026.09.29",
+    "kind": "기능",
+    "title": "Synthesia 에디터 WebP 이미지 업로드 지원",
+    "summary": "정지·애니메이션 WebP 파일을 변환 없이 에디터 캔버스에 바로 올릴 수 있고 투명도도 유지돼요.",
+    "url": "https://www.synthesia.io/updates/upload-webp-images-to-your-videos",
+    "source": "notice"
+  }
+]

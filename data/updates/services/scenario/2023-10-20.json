@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2023-10-20-1",
+    "service": "scenario",
+    "date": "2023.10.20",
+    "kind": "기능",
+    "title": "캔버스 지우개·생성 상태 표시",
+    "summary": "캔버스에 지우개가 추가되고 생성 페이지에서 대기·생성 중 상태를 보여줘요.",
+    "url": "https://www.scenario.com/changelog/web-app-version-1-35-october-20th-2023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "runway-2026-08-20-1",
+    "service": "runway",
+    "date": "2026.08.20",
+    "kind": "기능",
+    "title": "Runway Ruby 출시: SDR 영상을 진짜 HDR로",
+    "summary": "어떤 SDR 영상이든 HDR로 바꾸는 컬러 그레이딩 모델 Ruby가 Tool Mode, Workflows, Runway Dev에 나왔어요. Runway MCP에서는 워크플로 목록·편집·실행도 지원해요.",
+    "details": [
+      "Ruby: 1·3자 모델 결과물과 기존 영상 모두 변환",
+      "API: /v1/video_to_hdr, HDR10·HLG·ProRes·EXR 출력, 초당 20크레딧",
+      "API: Gen-4.5·Aleph 2.0에 HDR·후반작업용 출력 포맷 추가",
+      "Runway MCP에서 워크플로 실행 지원"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

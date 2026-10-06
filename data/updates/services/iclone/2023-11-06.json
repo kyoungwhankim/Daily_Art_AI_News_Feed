@@ -1,0 +1,17 @@
+[
+  {
+    "id": "iclone-2023-11-06-1",
+    "service": "iclone",
+    "date": "2023.11.06",
+    "kind": "연동",
+    "title": "iClone 8.33, AccuFACE 1.0 호환과 타임코드 녹화",
+    "summary": "AI 얼굴 모캡 AccuFACE 1.0과 호환되고, 트래킹 지연으로 인한 프레임 누락을 막는 Full-Frame Recording(Timecode)이 Motion LIVE에 추가됐어요.",
+    "details": [
+      "AccuFACE 1.0 호환",
+      "Full-Frame Recording(Timecode): iPhone·AccuFACE·Xsens·Rokoko 지원",
+      "도킹 패널 최소 크기 축소로 뷰포트 확대"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

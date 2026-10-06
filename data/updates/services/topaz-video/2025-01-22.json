@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2025-01-22-1",
+    "service": "topaz-video",
+    "date": "2025.01.22",
+    "kind": "앱",
+    "title": "Topaz Video AI 6.0.2·6.0.3: HLG HDR 변환",
+    "summary": "SDR→HDR 변환에 HLG 전송 함수를 지원하고 OpenFX 프레임 보간 플러그인 속도를 높였어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-6-0-2-6-0-3/86462",
+    "source": "notice"
+  }
+]

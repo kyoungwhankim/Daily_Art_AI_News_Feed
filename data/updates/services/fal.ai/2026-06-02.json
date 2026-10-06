@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-06-02-1",
+    "service": "fal.ai",
+    "date": "2026.06.02",
+    "kind": "기능",
+    "title": "앱 목록 머신 타입 필터·정렬",
+    "summary": "Serverless 앱 목록을 H100·A100 같은 머신 타입으로 거르고 활성 러너·GPU·큐 크기로 정렬할 수 있게 됐어요.",
+    "url": "https://fal.ai/docs/changelog#june-2-2026",
+    "source": "dev"
+  }
+]

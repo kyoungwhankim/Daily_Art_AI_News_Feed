@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2026-08-20-1",
+    "service": "flux",
+    "date": "2026.08.20",
+    "kind": "기능",
+    "title": "FLUX Video Upscale 출시: 최대 4K 영상 업스케일",
+    "summary": "FLUX 3 기반 영상 초해상도 도구로 최대 20초 클립을 원본 오디오를 유지한 채 최대 4K까지 키울 수 있어요.",
+    "details": [
+      "1.5–3배 업스케일, 원본 비율 유지",
+      "precise(원본 보존)·creative(디테일 생성) 두 모드",
+      "메가픽셀·초당 $0.07(precise)/$0.10(creative)",
+      "엔드포인트 /v1/flux-tools/video-upscale-v1"
+    ],
+    "url": "https://bfl.ai/blog/flux-video-upscale",
+    "source": "notice"
+  }
+]

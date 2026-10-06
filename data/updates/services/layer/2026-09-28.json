@@ -1,0 +1,17 @@
+[
+  {
+    "id": "layer-2026-09-28-1",
+    "service": "layer",
+    "date": "2026.09.28",
+    "kind": "연동",
+    "title": "Layer 플러그인 출시: Photoshop·Blender·Figma 등",
+    "summary": "Layer를 Photoshop, Premiere Pro, After Effects, Blender, Figma, Slack, Chrome 안에서 바로 쓰는 플러그인이 나왔어요. 무료로 쓸 수 있어요.",
+    "details": [
+      "선택 영역을 마스크로 쓰는 Photoshop 패널",
+      "Premiere Pro·After Effects에서 영상·오디오 생성",
+      "Spine 리그, 350개 이상 시네마틱 프리셋"
+    ],
+    "url": "https://layer.ai/changelog#2026-09-28",
+    "source": "notice"
+  }
+]

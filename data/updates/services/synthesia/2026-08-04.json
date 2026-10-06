@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-08-04-1",
+    "service": "synthesia",
+    "date": "2026.08.04",
+    "kind": "기능",
+    "title": "Synthesia 이미지·영상에 테두리 추가",
+    "summary": "이미지, 영상, GIF에 안쪽·바깥쪽·가운데 테두리를 별도 도형 없이 넣을 수 있어요.",
+    "url": "https://www.synthesia.io/updates/add-borders-to-images-and-videos",
+    "source": "notice"
+  }
+]

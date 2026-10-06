@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2024-08-16-1",
+    "service": "midjourney",
+    "date": "2024.08.16",
+    "kind": "기능",
+    "title": "통합 웹 이미지 에디터 출시, 웹 생성 확대",
+    "summary": "reframe·repaint·vary region·pan·zoom을 하나로 합친 웹 에디터가 나왔어요. 10장 이상 만든 사용자는 누구나 웹에서 생성할 수 있게 됐어요.",
+    "details": [
+      "웹 Rooms와 Discord 채널 간 메시지·이미지 동기화",
+      "Daily Theme, Prompt Craft 등 미러링 채널 운영"
+    ],
+    "url": "https://updates.midjourney.com/image-editor/",
+    "source": "notice"
+  }
+]

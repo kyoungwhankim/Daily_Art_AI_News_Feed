@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-06-19-1",
+    "service": "gigapixel",
+    "date": "2024.06.19",
+    "kind": "앱",
+    "title": "Gigapixel v7.2.1: 색 정확도와 파일 형식 수정",
+    "summary": "그레이스케일 프로파일을 지원하고 CMYK·PNG·TIFF 비트 심도 관련 문제를 고쳐 색 정확도를 더 높였어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-2-1/71572",
+    "source": "notice"
+  }
+]

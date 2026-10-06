@@ -1,0 +1,16 @@
+[
+  {
+    "id": "kling-2025-12-15-1",
+    "service": "kling",
+    "date": "2025.12.15",
+    "kind": "기능",
+    "title": "Kling VIDEO O1 업그레이드, 720p와 3~10초 시작·끝 프레임",
+    "summary": "Kling VIDEO O1이 720p 생성을 지원하고 시작·끝 프레임 영상 길이를 3~10초로 고를 수 있게 됐어요. 같은 날 API에 V2.6과 Omni 모델이 출시됐어요.",
+    "details": [
+      "API: V2.6 텍스트·이미지-투-비디오, sound 파라미터로 오디오 포함 여부 선택",
+      "API: Omni-Video·Omni-Image 모델 출시"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/zipxp988c2",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kling-2025-12-17-1",
+    "service": "kling",
+    "date": "2025.12.17",
+    "kind": "기능",
+    "title": "Kling VIDEO 2.6 Motion Control 출시",
+    "summary": "레퍼런스 영상의 동작과 표정을 그대로 따라 하는 Motion Control이 2.6에 나와 최대 30초 고난도 동작을 한 번에 만들 수 있어요.",
+    "details": [
+      "움직임·표정·립싱크·제스처 제어"
+    ],
+    "url": "https://kling.ai/release-note/release-notes/rybo04kstj",
+    "source": "notice"
+  }
+]

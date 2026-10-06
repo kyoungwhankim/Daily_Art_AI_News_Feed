@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-09-15-1",
+    "service": "claude",
+    "date": "2026.09.15",
+    "kind": "연동",
+    "title": "Salesforce in Claude 베타",
+    "summary": "영업 계정·기회·파이프라인을 Claude로 가져오고 37개 영업 스킬을 쓰는 Salesforce 플러그인이 베타로 나왔어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

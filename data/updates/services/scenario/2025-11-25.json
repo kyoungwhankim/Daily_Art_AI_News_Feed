@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2025-11-25-1",
+    "service": "scenario",
+    "date": "2025.11.25",
+    "kind": "API",
+    "title": "배경 제거·리프레임 커스텀 모델",
+    "summary": "배경 제거와 리프레임을 커스텀 모델로 쓸 수 있고, parentId로 다른 유형의 에셋도 업로드할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-98-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2025-11-25-2",
+    "service": "scenario",
+    "date": "2025.11.25",
+    "kind": "API",
+    "title": "실험적 복셀 생성기·Gemini 3 Pro 이미지",
+    "summary": "이미지 참조가 가능한 실험적 복셀 생성 모델과 이미지 슬라이서, gemini-3-pro-image-preview 지원이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v0-10-0",
+    "source": "notice"
+  }
+]

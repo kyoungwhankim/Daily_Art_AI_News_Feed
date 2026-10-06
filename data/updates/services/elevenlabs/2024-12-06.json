@@ -1,0 +1,22 @@
+[
+  {
+    "id": "elevenlabs-2024-12-06-1",
+    "service": "elevenlabs",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "Studio 프로젝트에서 GenFM 팟캐스트 생성",
+    "summary": "Studio에서 새 프로젝트를 만들 때 GenFM podcast를 고르면 AI 목소리로 팟캐스트를 자동 생성할 수 있어요.",
+    "url": "https://elevenlabs.io/blog/genfm-podcasts-in-projects",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2024-12-06-2",
+    "service": "elevenlabs",
+    "date": "2024.12.06",
+    "kind": "기능",
+    "title": "GenFM 웹사이트에서도 사용",
+    "summary": "ElevenReader 앱뿐 아니라 웹사이트에서도 GenFM 팟캐스트 생성을 쓸 수 있게 됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2024/12/6",
+    "source": "dev"
+  }
+]

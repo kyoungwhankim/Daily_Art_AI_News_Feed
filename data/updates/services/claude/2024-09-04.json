@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2024-09-04-1",
+    "service": "claude",
+    "date": "2024.09.04",
+    "kind": "종료",
+    "title": "Claude 1 모델 지원 종료 예고",
+    "summary": "Claude 1 모델의 지원 종료가 발표됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#september-4th-2024",
+    "source": "dev"
+  }
+]

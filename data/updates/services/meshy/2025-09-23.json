@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2025-09-23-1",
+    "service": "meshy",
+    "date": "2025.09.23",
+    "kind": "모델",
+    "title": "Text to 3D API에 Meshy 6 Preview, 한시 50% 할인",
+    "summary": "Text to 3D API에서도 latest로 Meshy 6 Preview를 쓸 수 있게 됐어요. 9월 30일까지 Meshy-6-preview 작업이 10크레딧으로 50% 할인돼요.",
+    "url": "https://docs.meshy.ai/en/api/changelog#sep-2025",
+    "source": "dev"
+  }
+]

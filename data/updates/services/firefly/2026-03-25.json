@@ -1,0 +1,12 @@
+[
+  {
+    "id": "firefly-2026-03-25-1",
+    "service": "firefly",
+    "date": "2026.03.25",
+    "kind": "API",
+    "title": "Firefly Upscale API 출시",
+    "summary": "이미지를 업스케일하는 Firefly Upscale API를 쓸 수 있게 됐어요.",
+    "url": "https://developer.adobe.com/firefly-services/docs/firefly-api/getting-started/changelog/#march-25-2026",
+    "source": "dev"
+  }
+]

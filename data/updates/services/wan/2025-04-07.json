@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wan-2025-04-07-1",
+    "service": "wan",
+    "date": "2025.04.07",
+    "kind": "모델",
+    "title": "Wan2.1 시작·끝 프레임 영상 모델 출시",
+    "summary": "두 이미지를 자연스럽게 이어주는 wan2.1-kf2v-plus가 Model Studio에 나왔어요. 큰 동작과 물리 법칙을 지키는 영상 전환을 만들어요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

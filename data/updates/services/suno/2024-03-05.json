@@ -1,0 +1,12 @@
+[
+  {
+    "id": "suno-2024-03-05-1",
+    "service": "suno",
+    "date": "2024.03.05",
+    "kind": "기능",
+    "title": "Suno 플레이리스트 기능",
+    "summary": "라이브러리에서 플레이리스트를 만들어 곡을 정리하고 링크로 공유할 수 있어요.",
+    "url": "https://suno.com/release-notes/playlists",
+    "source": "notice"
+  }
+]

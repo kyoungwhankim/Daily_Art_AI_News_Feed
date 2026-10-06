@@ -1,0 +1,12 @@
+[
+  {
+    "id": "veo-2024-12-03-1",
+    "service": "veo",
+    "date": "2024.12.03",
+    "kind": "연동",
+    "title": "Vertex AI에서 Veo 비공개 프리뷰 제공",
+    "summary": "Google Cloud의 Vertex AI 고객이 텍스트나 이미지로 영상을 만드는 Veo를 비공개 프리뷰로 쓸 수 있게 됐어요. 기업용 클라우드에서 이미지-투-비디오를 제공하는 첫 사례예요.",
+    "url": "https://blog.google/feed/imagen-3-veo-vertex-ai/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-02-11-1",
+    "service": "scenario",
+    "date": "2026.02.11",
+    "kind": "기능",
+    "title": "Scenario V2: 노드 기반 워크플로 도입",
+    "summary": "Scenario V2에서 노드로 전체 제작 과정을 한 번에 구성하고 반복 실행하며, 간단한 App으로 공유할 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/2-0-introducing-node-based-workflows",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "seedance-2025-06-11-1",
+    "service": "seedance",
+    "date": "2025.06.11",
+    "kind": "모델",
+    "title": "ByteDance Seed 영상 기반 모델 Seedance 1.0 공개",
+    "summary": "텍스트와 이미지로 1080p 영상을 만들고 한 영상 안에서 2~3개 샷 전환을 자연스럽게 이어주는 Seedance 1.0이 공개됐어요. 기술 보고서도 함께 나왔어요.",
+    "details": [
+      "10초 영상에 와이드·미디엄·클로즈업 멀티샷 전환",
+      "움직임 안정성과 다양한 스타일 표현 개선",
+      "1080p 5초 영상을 약 41.4초에 생성(NVIDIA L20)"
+    ],
+    "url": "https://seed.bytedance.com/en/blog/tech-report-of-seedance-1-0-is-now-publicly-available",
+    "source": "notice"
+  }
+]

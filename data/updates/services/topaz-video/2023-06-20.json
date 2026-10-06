@@ -1,0 +1,12 @@
+[
+  {
+    "id": "topaz-video-2023-06-20-1",
+    "service": "topaz-video",
+    "date": "2023.06.20",
+    "kind": "앱",
+    "title": "Topaz Video AI v3.3.1: 내보내기 설정 UI 개편",
+    "summary": "긴 인코더 목록을 ProRes·H264·H265·VP9·AV1별 선택으로 바꾸고 이미지 시퀀스 탭을 분리했어요. 오디오는 AAC·AC3·PCM 변환과 비트레이트를 설정할 수 있어요.",
+    "url": "https://community.topazlabs.com/t/topaz-video-ai-v3-3-1/47149",
+    "source": "notice"
+  }
+]

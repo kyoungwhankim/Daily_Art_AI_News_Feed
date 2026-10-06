@@ -1,0 +1,16 @@
+[
+  {
+    "id": "magnific-2026-08-26-1",
+    "service": "magnific",
+    "date": "2026.08.26",
+    "kind": "API",
+    "title": "Topaz 영상 업스케일 API, Veo 3.1 끝 프레임 지원",
+    "summary": "Topaz Starlight로 영상을 최대 4K까지 업스케일하는 엔드포인트를 추가했어요. Veo 3.1 이미지-투-비디오는 마지막 프레임 지정도 받아요.",
+    "details": [
+      "Starlight Precise 2.5 / Fast 2, AI 프레임 보간",
+      "Veo 3.1·3.1 Fast에 image_end 옵션"
+    ],
+    "url": "https://docs.magnific.com/changelog#august-26-2026",
+    "source": "dev"
+  }
+]

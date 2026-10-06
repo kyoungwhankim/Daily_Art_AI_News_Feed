@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-07-22-1",
+    "service": "gigapixel",
+    "date": "2020.07.22",
+    "kind": "앱",
+    "title": "Gigapixel v5.0.3: Lightroom 정식 지원",
+    "summary": "Windows와 Mac에서 Lightroom 연동을 정식 지원해요. 줌 단축키가 다른 Topaz 앱과 같게 바뀌었고 배치 취소 버그가 고쳐졌어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-0-3/15655",
+    "source": "notice"
+  }
+]

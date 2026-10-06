@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2025-11-20-1",
+    "service": "midjourney",
+    "date": "2025.11.20",
+    "kind": "기능",
+    "title": "웹 기능명 변경(Trash·Public/Private)과 모바일 개선",
+    "summary": "'Hide' 필터가 'Trash'로, Stealth 사용자의 Publish/Unpublish가 Public/Private으로 이름이 바뀌었어요. 모바일 웹 경험도 여러 곳 다듬었어요.",
+    "details": [
+      "이미지 프롬프트 트레이 재설계",
+      "라이트박스 스와이프 닫기",
+      "모바일 에디터 글리치 수정",
+      "Organize 필터 스크롤 지원"
+    ],
+    "url": "https://updates.midjourney.com/web-updates-3/",
+    "source": "notice"
+  }
+]

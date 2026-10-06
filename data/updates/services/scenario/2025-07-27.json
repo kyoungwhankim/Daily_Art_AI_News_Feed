@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2025-07-27-1",
+    "service": "scenario",
+    "date": "2025.07.27",
+    "kind": "기능",
+    "title": "새 LoRA 트레이너·Restyle 개편",
+    "summary": "Epochs·Batch Size·Repeats를 고를 수 있는 새 LoRA 트레이너가 나와 품질이 크게 좋아졌어요. Restyle 도구도 개편됐어요.",
+    "url": "https://www.scenario.com/changelog/v1-92-new-lora-trainer-updated-restyle-tool",
+    "source": "notice"
+  }
+]

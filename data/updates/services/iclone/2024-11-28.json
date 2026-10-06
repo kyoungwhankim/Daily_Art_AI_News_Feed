@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2024-11-28-1",
+    "service": "iclone",
+    "date": "2024.11.28",
+    "kind": "앱",
+    "title": "iClone 8.52, AI 포즈 기술 AccuPOSE 도입",
+    "summary": "AI 기반 자연스러운 포즈 기술 AccuPOSE가 들어왔어요. Curve Filter, Motion Trail, 비파괴 Break 등 전문 애니메이션 편집 기능도 늘었어요.",
+    "details": [
+      "AI 포징 AccuPOSE",
+      "뷰포트 본별 Motion Trail",
+      "새 Curve Filters",
+      "Non-destructive Break"
+    ],
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
+  }
+]

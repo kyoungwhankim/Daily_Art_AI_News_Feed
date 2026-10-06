@@ -1,0 +1,12 @@
+[
+  {
+    "id": "runway-2026-09-22-1",
+    "service": "runway",
+    "date": "2026.09.22",
+    "kind": "기능",
+    "title": "Runway MCP에서 Brand Kits 참조 지원",
+    "summary": "Runway MCP의 에이전트가 워크스페이스의 Brand Kits를 찾아 레퍼런스로 활용할 수 있게 됐어요. MCP에서는 읽기 전용이고 생성·편집은 앱에서 해요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2026-04-13-1",
+    "service": "elevenlabs",
+    "date": "2026.04.13",
+    "kind": "API",
+    "title": "에이전트 대화 주제 탐색",
+    "summary": "에이전트 대화의 최신 주제를 돌려주는 엔드포인트와 커뮤니티 외 보이스 필터가 추가됐어요.",
+    "url": "https://elevenlabs.io/docs/changelog/2026/4/13",
+    "source": "dev"
+  }
+]

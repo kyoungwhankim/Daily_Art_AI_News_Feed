@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-08-06-1",
+    "service": "claude",
+    "date": "2026.08.06",
+    "kind": "정책",
+    "title": "스킬·플러그인 보안 스캔(베타)",
+    "summary": "Enterprise에서 제3자 스킬과 플러그인을 업로드·수정할 때 악성 콘텐츠를 자동 검사하는 기능을 켤 수 있어요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

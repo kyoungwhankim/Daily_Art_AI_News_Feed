@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-02-20-1",
+    "service": "claude",
+    "date": "2026.02.20",
+    "kind": "기능",
+    "title": "Claude Code Security 공개",
+    "summary": "방어자에게 최신 사이버보안 역량을 제공해 더 안전한 코드베이스를 만들도록 돕는 Claude Code Security를 공개했어요.",
+    "url": "https://www.anthropic.com/news/claude-code-security",
+    "source": "notice"
+  }
+]

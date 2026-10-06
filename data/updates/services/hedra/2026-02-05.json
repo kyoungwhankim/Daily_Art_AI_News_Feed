@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hedra-2026-02-05-1",
+    "service": "hedra",
+    "date": "2026.02.05",
+    "kind": "모델",
+    "title": "Hedra Omnia 공개: 후속 학습용 통합 월드 모델",
+    "summary": "시각·텍스트·오디오를 함께 이해하는 통합 베이스 모델 Hedra Omnia를 공개했어요. 파트너가 자기 데이터로 후속 학습해 도메인 모델을 만들 수 있는 기반이에요.",
+    "url": "https://www.hedra.com/blog/hedra-omnia-frontier-ai-video-model",
+    "source": "notice"
+  }
+]

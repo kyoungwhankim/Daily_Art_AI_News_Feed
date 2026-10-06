@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2023-04-27-1",
+    "service": "elevenlabs",
+    "date": "2023.04.27",
+    "kind": "모델",
+    "title": "Eleven Multilingual v1, 7개 언어 추가",
+    "summary": "7개 새 언어를 지원하는 다국어 음성 합성 모델 Eleven Multilingual v1이 나왔어요. 감정과 맥락을 살린 AI 음성을 여러 언어로 만들 수 있어요.",
+    "url": "https://elevenlabs.io/blog/eleven-multilingual-v1",
+    "source": "notice"
+  }
+]

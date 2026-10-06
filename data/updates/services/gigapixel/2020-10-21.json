@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2020-10-21-1",
+    "service": "gigapixel",
+    "date": "2020.10.21",
+    "kind": "앱",
+    "title": "Gigapixel v5.2.0: Compressed 모델·새 UI·자르기 도구",
+    "summary": "압축 손상이 많은 사진에 맞춘 새 AI 모델 Compressed와 전면 새 UI, 자르기 도구를 담은 첫 유료 메이저 업그레이드예요.",
+    "details": [
+      "v5.2.1(10/23)·v5.2.2(10/28): 버그 수정, 업데이트 알림 최대 한 달 연기",
+      "v5.2.2가 macOS 10.12 지원 마지막 버전",
+      "v5.2.3(11/4): 컨트롤 패널 좌우 도킹"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-2-3/17157",
+    "source": "notice"
+  }
+]

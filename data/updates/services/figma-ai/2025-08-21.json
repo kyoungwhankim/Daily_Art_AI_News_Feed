@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2025-08-21-1",
+    "service": "figma-ai",
+    "date": "2025.08.21",
+    "kind": "기능",
+    "title": "게시된 Sites·Make 비밀번호 보호",
+    "summary": "내부 검토나 고객 공유용으로 게시한 Sites와 Make에 비밀번호를 걸 수 있게 됐어요.",
+    "url": "https://www.figma.com/release-notes/?title=new-password-protection-for-published-sites-and-make",
+    "source": "notice"
+  }
+]

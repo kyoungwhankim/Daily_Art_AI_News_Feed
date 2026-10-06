@@ -1,0 +1,16 @@
+[
+  {
+    "id": "unity-ai-2025-08-27-1",
+    "service": "unity-ai",
+    "date": "2025.08.27",
+    "kind": "기능",
+    "title": "AI Generators: BMP·GIF·PSD·HDR 이미지 형식 지원",
+    "summary": "AI Generators 1.0.0-pre.20에서 PNG·JPG·EXR 외에 BMP·GIF·TIFF·PSD·HDR로도 이미지를 만들 수 있고, 머티리얼 생성기에 패턴 검색이 추가됐어요.",
+    "details": [
+      "생성 에셋 부분 완료·복구 허용",
+      "이미지 모델 미선택 시 즐겨찾기 모델 자동 선택"
+    ],
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.generators@1.7/changelog/CHANGELOG.html#100-pre20---2025-08-27",
+    "source": "dev"
+  }
+]

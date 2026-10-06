@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-09-25-1",
+    "service": "scenario",
+    "date": "2026.09.25",
+    "kind": "API",
+    "title": "GPT-6 Astra 3D·커스텀 워터마크·웹훅 알림",
+    "summary": "GPT-6 Astra 3D 모델과 워크스페이스 워터마크, 일괄 다운로드 이름 지정, 크레딧 임계 웹훅 알림이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/api-v2-135-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-09-25-2",
+    "service": "scenario",
+    "date": "2026.09.25",
+    "kind": "연동",
+    "title": "스킬: 뮤직비디오·3D 조명·대화 오디오",
+    "summary": "곡 전체 뮤직비디오, 3D 조명 제어, 2인 대화 오디오 등 에이전트 스킬이 넓어졌어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-47-0",
+    "source": "notice"
+  }
+]

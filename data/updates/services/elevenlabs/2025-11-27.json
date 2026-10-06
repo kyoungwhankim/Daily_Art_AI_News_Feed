@@ -1,0 +1,12 @@
+[
+  {
+    "id": "elevenlabs-2025-11-27-1",
+    "service": "elevenlabs",
+    "date": "2025.11.27",
+    "kind": "API",
+    "title": "더빙 화자 관리와 음악 프롬프트 개선",
+    "summary": "더빙 리소스에 새 화자를 만들고 구간을 옮길 수 있으며, 음악 프롬프트에 musical directions가 추가됐어요. 에이전트는 Gemini 3 Pro를 지원해요.",
+    "url": "https://elevenlabs.io/docs/changelog/2025/11/27",
+    "source": "dev"
+  }
+]
