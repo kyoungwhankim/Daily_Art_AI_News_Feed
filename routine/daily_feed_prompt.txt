@@ -5,14 +5,21 @@ and digital artists, published as a static GitHub Pages site at:
 
   Repository: https://github.com/kyoungwhankim/Daily_Art_AI_News_Feed
 
-This routine runs in two phases inside ONE session. It does NOT use Confluence
-in any way — all inputs (the source whitelist) are embedded in this prompt.
+This routine runs inside ONE session, plus ONE separate agent for service
+updates. It does NOT use Confluence in any way — all inputs (the source
+whitelist) are embedded in this prompt.
 
+  PHASE 0 — START THE UPDATES AGENT: Start a separate background agent that
+            collects the official update announcements of AI services
+            (sidebar '업데이트') into /tmp/updates/entries.json, following
+            routine/updates_agent_prompt.txt. It runs while you do PHASE 1.
   PHASE 1 — RESEARCH: Research today's news, save each article as a small JSON
-            entry in /tmp/feed/digest.json.
+            entry in /tmp/feed/digest.json. At the end, wait for the updates
+            agent to finish.
   PHASE 2 — PUBLISH:  Read /tmp/feed/digest.json, convert each article into a
             feed entry, then add the entries to today's date file in the
-            repository (data/articles/YYYY-MM-DD.json) and push to main.
+            repository (data/articles/YYYY-MM-DD.json), merge the service
+            updates into data/updates/, and push to main.
 
 CRITICAL — DO NOT write HTML inline or use large heredocs for content.
 Instead, save each article as a JSON object using Python. This keeps every
@@ -77,6 +84,38 @@ mandatory exactly as written. They do not change any condition of the steps.
   R6. The save scripts check the length and format rules. If a save script
       prints REJECTED, rewrite that article's text and run the save script
       again. Do not edit or remove the checks.
+
+=====================================================================
+PHASE 0 — START THE UPDATES AGENT
+=====================================================================
+
+Step 1 — Make sure the repository is cloned and current (the updates agent
+reads its scripts and config.js from it).
+
+if [ ! -d /home/user/Daily_Art_AI_News_Feed/.git ]; then
+  cd /home/user
+  git clone https://${GITHUB_TOKEN}@github.com/kyoungwhankim/Daily_Art_AI_News_Feed.git
+fi
+cd /home/user/Daily_Art_AI_News_Feed
+git fetch origin main
+git checkout main
+git reset --hard origin/main
+
+Step 2 — Clear the updates work directory.
+
+rm -rf /tmp/updates && mkdir -p /tmp/updates
+
+Step 3 — Start the updates agent with the Agent (Task) tool, in the
+BACKGROUND (run_in_background: true), with exactly this prompt (fill in the
+date):
+
+  Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/updates_agent_prompt.txt
+  and follow it exactly, from STEP 1 to FINISH.
+
+Do not wait for it and do not do its work yourself — go straight on to
+PHASE 1. This is the ONLY agent this routine starts. You will be notified when
+it finishes; its result is /tmp/updates/entries.json plus the marker
+/tmp/updates/DONE.
 
 =====================================================================
 PHASE 1 — RESEARCH
@@ -430,6 +469,21 @@ print(f'Total: {total} articles collected today.')
 
 /tmp/feed/digest.json is the hand-off to PHASE 2.
 
+---
+
+WAIT FOR THE UPDATES AGENT
+
+Before starting PHASE 2, the updates agent from PHASE 0 must be finished:
+
+test -f /tmp/updates/DONE && echo "Updates agent finished." && cat /tmp/updates/REPORT.txt \
+  || echo "Updates agent still running."
+
+If it prints "still running", wait for the agent's completion notification
+(do not start PHASE 2, do not end the routine, do not do the agent's work
+yourself), then run the check again. If the agent ended with an error and no
+DONE marker, note that and go on to PHASE 2 — the news is published anyway and
+the service updates are skipped today.
+
 =====================================================================
 PHASE 2 — PUBLISH TO THE FEED
 =====================================================================
@@ -450,7 +504,8 @@ appear. Do NOT add articles that are not in the digest. Do NOT skip articles
 that are in the digest (unless they fail dedup against existing feed entries
 in data/articles/).
 
-CRITICAL — DO NOT spawn sub-agents (Task tool) for ANY part of this phase,
+CRITICAL — DO NOT spawn sub-agents (Task tool) for ANY part of this phase
+(the updates agent from PHASE 0 is already finished and is the only agent),
 including reading the digest, running fetch_article.py, or processing
 articles in parallel. Sub-agents would hide STEP 3 output from this session
 (breaking the PRE-FLIGHT CHECK that requires fresh fetch results visible in
@@ -475,7 +530,8 @@ with open('/tmp/feed/articles.json', 'w') as f: json.dump([], f)
 print('Initialized.')
 "
 
-Step 2 — Make sure the main working directory has the repository cloned.
+Step 2 — Make sure the main working directory has the repository cloned and
+reset to the latest main (the updates agent did not change it).
 This must live at /home/user/Daily_Art_AI_News_Feed because the commit signing
 program only accepts requests from the main working directory.
 
@@ -539,8 +595,9 @@ STEP 1 — LOAD THE DIGEST
           print(f"  - {a['title_ko'][:50]} | {a['source_url']}")
   PYEOF
 
-If the script prints "No articles in digest today.", terminate the routine —
-there is nothing to publish.
+If the script prints "No articles in digest today.", skip PROCESS ARTICLES,
+VERIFY ARTICLES and scripts/update_articles.py, and go straight to
+MERGE SERVICE UPDATES — the service updates are still published.
 
 ---
 
@@ -884,6 +941,29 @@ If the validation fails, terminate the routine and DO NOT push the broken file.
 
 ---
 
+MERGE SERVICE UPDATES
+
+Merge the updates agent's entries into data/updates/ (one file per service per
+announcement date, plus the generated feed and index the site reads):
+
+cd /home/user/Daily_Art_AI_News_Feed
+if [ -f /tmp/updates/DONE ] && [ -s /tmp/updates/entries.json ]; then
+  python3 scripts/service_updates.py merge /tmp/updates/entries.json
+else
+  echo "No service updates to merge today."
+fi
+python3 scripts/validate_data.py
+
+The merge checks every entry first. If it prints "REJECTED — nothing was
+merged", restore the updates and continue with the news only:
+
+  git checkout -- data/updates 2>/dev/null; git clean -fdq data/updates
+  python3 scripts/validate_data.py
+
+validate_data.py must print "✅ data/ is valid" before you push.
+
+---
+
 COMMIT AND PUSH
 
 ⚠️  HARD RULE — DO NOT CREATE NEW BRANCHES
@@ -903,6 +983,9 @@ python3 scripts/push_to_main.py
 ---
 
 FINISH
+
+In your final report, include the updates agent's report
+(/tmp/updates/REPORT.txt) and the merge summary line.
 
 Leave publish mode as the very last step of the routine, whether the push
 succeeded or the routine is terminating early in PHASE 2:

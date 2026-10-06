@@ -28,6 +28,11 @@ def load_sources():
 
 
 def status(url):
+    first = _status(url)
+    return first if first.startswith('2') or first == '403' else _status(url)   # 일시 오류는 한 번 더
+
+
+def _status(url):
     req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': '*/*'})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:

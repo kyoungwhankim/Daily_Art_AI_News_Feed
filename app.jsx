@@ -959,8 +959,8 @@ function updatesPath(cat, company) {
   return '/updates/';
 }
 
-// 아직 공지 수집이 연결되지 않아, 화면 흐름을 보기 위한 예시 항목을 서비스마다 만든다.
-// 실제 데이터가 붙으면 같은 형식({ company, date, title, summary, url, kind })으로 바뀐다.
+// 아직 수집하지 않는 분야(루틴이 모으는 분야는 routine/updates_agent_prompt.txt의 CATEGORIES)는
+// 화면 흐름을 보기 위한 예시 항목을 서비스마다 만든다 ('예시' 표시).
 const SAMPLE_KINDS = {
   'image':       [['모델', '새 이미지 모델 버전 공개'], ['기능', '편집·인페인팅 기능 개선'], ['요금', '요금제와 사용량 정책 변경'], ['API', 'API에 새 해상도 옵션 추가']],
   'video':       [['모델', '새 영상 생성 모델 공개'], ['기능', '영상 길이 연장과 카메라 제어 추가'], ['기능', '오디오 동시 생성 지원'], ['API', 'API 요청 한도 상향']],
@@ -984,8 +984,36 @@ function sampleUpdatesFor(c) {
     };
   });
 }
-const ALL_UPDATES = UPDATE_COMPANIES.flatMap(sampleUpdatesFor)
-  .sort((a, b) => b.date.localeCompare(a.date) || a.company.name.localeCompare(b.company.name));
+// 실제 업데이트: data/updates/index.json → data/updates/feed/<분야>.json (scripts/service_updates.py가 만든다)
+let updatesPromise = null;
+function loadServiceUpdates() {
+  if (!updatesPromise) {
+    updatesPromise = fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
+      .then(index => Promise.all(Object.values(index.categories || {})
+        .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
+      .then(feeds => feeds.flat())
+      .catch(() => []);   // 아직 데이터가 없으면 예시만
+  }
+  return updatesPromise;
+}
+const sortUpdates = list => list.sort((a, b) => b.date.localeCompare(a.date) || a.company.name.localeCompare(b.company.name));
+// 수집된 분야는 실제 항목만, 수집 전인 분야는 예시 항목
+function buildUpdates(real) {
+  const bySlug = Object.fromEntries(UPDATE_COMPANIES.map(c => [c.slug, c]));
+  const items = real.filter(e => bySlug[e.service]).map(e => ({ ...e, company: bySlug[e.service] }));
+  const collectedCats = new Set(items.map(u => u.company.catSlug));
+  const samples = UPDATE_COMPANIES.filter(c => !collectedCats.has(c.catSlug)).flatMap(sampleUpdatesFor);
+  return sortUpdates([...items, ...samples]);
+}
+function useServiceUpdates() {
+  const [state, setState] = useState(() => ({ ready: false, items: buildUpdates([]) }));
+  useEffect(() => {
+    let alive = true;
+    loadServiceUpdates().then(real => { if (alive) setState({ ready: true, items: buildUpdates(real) }); });
+    return () => { alive = false; };
+  }, []);
+  return state;
+}
 
 function UpdatesNav({ cat, company, onCat, onCompany }) {
   const companies = cat ? UPDATE_COMPANIES.filter(c => c.catSlug === cat) : [];
@@ -1032,7 +1060,12 @@ function UpdateRow({ u, showCompany, onCompany }) {
         </div>
         <h3 className="update-title">{u.title}</h3>
         <p className="update-summary">{u.summary}</p>
-        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">공식 공지 보기 ↗</a>
+        {u.details && u.details.length > 0 && (
+          <ul className="update-details">{u.details.map((d, i) => <li key={i}>{d}</li>)}</ul>
+        )}
+        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
+          {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
+        </a>
       </div>
     </li>
   );
@@ -1047,7 +1080,12 @@ const FEED_URL = /(\.rss|\.xml|\.atom|\.json|\.md)(\?|$)|\/feed\/?$|\/rss\/?$|pa
 function UpdatesView({ cat, company, onCat, onCompany }) {
   const catObj = UPDATE_CATS.find(c => c.slug === cat) || null;
   const comp = UPDATE_COMPANIES.find(c => c.slug === company && c.catSlug === cat) || null;
-  const items = ALL_UPDATES.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug));
+  const { ready, items: all } = useServiceUpdates();
+  const items = all.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug));
+  const hasSample = items.some(u => u.sample);
+  const PAGE = 30;
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => { setShown(PAGE); }, [cat, company]);
   const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
   const desc = comp
     ? `${comp.maker ? `${comp.maker}의 ` : ''}${comp.name} 공식 업데이트를 최신순으로 모아 보여 드려요.`
@@ -1075,12 +1113,25 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
         )}
       </div>
       <main className="feed">
-        <div className="updates-notice">준비 중이에요 — 지금 보이는 업데이트는 화면 구성을 보기 위한 <b>예시</b>예요.</div>
-        <ol className="updates-list">
-          {items.map(u => (
-            <UpdateRow key={u.id} u={u} showCompany={!comp} onCompany={c => onCompany(c.catSlug, c.slug)} />
-          ))}
-        </ol>
+        {hasSample && (
+          <div className="updates-notice">일부 분야는 준비 중이에요 — <b>예시</b> 표시가 붙은 항목은 화면 구성을 보기 위한 예시예요.</div>
+        )}
+        {ready && items.length === 0 ? (
+          <EmptyState message="아직 수집된 업데이트가 없어요" sub="새 공식 업데이트가 나오면 매일 이곳에 모아 드려요." />
+        ) : (
+          <ol className="updates-list">
+            {items.slice(0, shown).map(u => (
+              <UpdateRow key={u.id} u={u} showCompany={!comp} onCompany={c => onCompany(c.catSlug, c.slug)} />
+            ))}
+          </ol>
+        )}
+        {items.length > shown && (
+          <div className="updates-more">
+            <button type="button" className="chip" onClick={() => setShown(n => n + PAGE)}>
+              이전 업데이트 더 보기 ({items.length - shown}건 남음)
+            </button>
+          </div>
+        )}
       </main>
     </>
   );

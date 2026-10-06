@@ -1577,3 +1577,7 @@ a.chip.update-official { text-decoration: none; align-self: center; white-space:
 
 .update-official-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
 @media (max-width: 640px) { .update-official-links { justify-content: flex-start; } }
+
+.update-details { margin: 6px 0 8px; padding-left: 18px; color: var(--ink-2); font-size: 13.5px; line-height: 1.6; }
+.update-details li + li { margin-top: 2px; }
+.updates-more { display: flex; justify-content: center; margin: 22px 0 8px; }
