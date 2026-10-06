@@ -1,5 +1,27 @@
 [
   {
+    "id": "industry-8b9e2295-2026-10",
+    "tab": "industry",
+    "headline": "'밴조-카주이: 리컴파일드' 개발자 \"생성형 AI가 고전 게임 PC 포팅을 빠르게 한다는 건 거짓\"",
+    "summary": "밴조-카주이 PC 포팅 개발자가 생성형 AI로 급조한 고전 게임 포팅을 비판했어요.",
+    "body": "<p>N64 플랫포머 '밴조-카주이'의 비공식 PC 버전인 '밴조: 리컴파일드'를 만든 개발자 DarioSamo가 생성형 AI로 고전 게임을 서둘러 PC에 옮기는 흐름을 강하게 비판했어요. 최근 한 유튜브 채널이 생성형 AI를 활용한 '밴조-투이' 리컴파일 프로젝트를 소개했는데, 이 프로젝트는 리컴파일드 팀이 만든 툴을 바탕으로 했지만 팀의 작업은 아니에요. 그는 영상이 이 점을 분명히 밝히지 않아 무책임하다고 지적하면서, 이런 소개가 AI로 급조한 프로젝트를 계속 쏟아내게 만드는 유인이 된다고 말했어요.</p><p>이어 블루스카이 스레드에서 그는 리컴파일 방식에서는 AI가 포팅 속도를 높여준다는 주장이 사실이 아니라고 설명했어요. 정적 리컴파일 도구가 나온 2년 전부터 이미 하루도 안 걸려 게임을 띄울 수 있었고, 진짜 일은 고주사율·와이드스크린·편의 기능처럼 원작을 제대로 이해하고 다듬는 그 이후 단계라는 거예요. 그런데 AI 덕분에 게임이 실행되기만 하면 일이 끝났다고 여기고, 신용카드와 AI 구독만 있으면 된다고 생각하는 새로운 부류가 늘고 있다고 꼬집었어요.</p><p>디컴파일과 리컴파일은 원래 게임이 어떻게 만들어졌는지 이해하고 보존하려는 작업이라, 결과물만 빠르게 뽑는 접근은 그 취지와 맞지 않는다는 게 그의 주장이에요. 게임 보존·이식 커뮤니티에서 AI 활용을 둘러싼 반발이 점점 커지고 있다는 걸 보여주는 사례예요.</p><p>원문: <a href=\"https://www.rockpapershotgun.com/claims-that-genai-speeds-up-pc-ports-of-classic-games-are-either-false-or-missing-the-point-says-banjo-kazooie-recompiled-developer\">Rock Paper Shotgun</a></p>",
+    "source": "Rock Paper Shotgun",
+    "publishedAt": "2026.10.06",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/banjo-kazooie-unofficial-pc-port-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 사용 논란",
+      "코딩"
+    ],
+    "url": "https://www.rockpapershotgun.com/claims-that-genai-speeds-up-pc-ports-of-classic-games-are-either-false-or-missing-the-point-says-banjo-kazooie-recompiled-developer",
+    "urls": [
+      {
+        "label": "개발자 스레드",
+        "href": "https://bsky.app/profile/dariosamo.bsky.social/post/3mx3qim3b432d"
+      }
+    ]
+  },
+  {
     "id": "industry-ec0d4a93-2026-10",
     "tab": "industry",
     "headline": "재젝스, 룬스케이프 트레일러 생성형 AI 사용 논란에 영상 내리고 사과",
