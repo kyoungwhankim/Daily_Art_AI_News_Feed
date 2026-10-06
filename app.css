@@ -1277,14 +1277,10 @@ mark {
   box-shadow: 0 1px 2px color-mix(in srgb, var(--stroke) 10%, transparent),
               0 6px 14px -8px color-mix(in srgb, var(--stroke) 35%, transparent);
 }
-/* 대분류(뉴스·업데이트) 머리는 늘 흰 박스 — 선택된 쪽은 글자색으로 구분 */
-.sidebar .side-group-head {
-  background: var(--card);
-  box-shadow: 0 1px 2px color-mix(in srgb, var(--stroke) 10%, transparent),
-              0 6px 14px -8px color-mix(in srgb, var(--stroke) 35%, transparent);
+.sidebar .side-group-head.active::before, .sidebar .side-item.active::before, .sidebar .side-subitem.active::before {
+  content: ""; position: absolute; left: 0; top: 7px; bottom: 7px; width: 3px; border-radius: 0 3px 3px 0;
+  background: var(--accent);
 }
-.sidebar .side-group-head:not(.active):hover { background: var(--card); }
-.sidebar .side-group-head:not(.active):hover .side-group-link { color: var(--accent-strong); }
 .sidebar .side-list { border-left-color: color-mix(in srgb, var(--stroke) 14%, transparent); }
 .side-group + .side-group { margin-top: 6px; }
 .side-group-head {
@@ -1347,9 +1343,7 @@ mark {
   .sidebar .side-nav { min-height: 0; padding: 0; background: none; border: 0; border-radius: 0; box-shadow: none; }
   .sidebar .side-nav::before { display: none; }
   .sidebar .side-group-head.active, .sidebar .side-item.active, .sidebar .side-subitem.active { background: var(--accent-soft); box-shadow: none; }
-  .sidebar .side-group-head { background: none; box-shadow: none; }
-  .sidebar .side-group-head:not(.active):hover { background: var(--paper-2); }
-  .sidebar .side-group-head:not(.active):hover .side-group-link { color: var(--ink); }
+  .sidebar .side-group-head.active::before, .sidebar .side-item.active::before, .sidebar .side-subitem.active::before { display: none; }
   .sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover, .sidebar .side-subitem:not(.active):hover { background: var(--paper-2); }
   .side-drawer-head {
     display: flex; align-items: center; justify-content: space-between;
