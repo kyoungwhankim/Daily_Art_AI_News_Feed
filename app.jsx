@@ -1038,6 +1038,12 @@ function UpdateRow({ u, showCompany, onCompany }) {
   );
 }
 
+// 개발자 변경 기록 중 사람이 읽을 페이지 (RSS·JSON 같은 수집용 주소는 건너뛴다)
+function devPage(c) {
+  return (c.dev || []).find(u => !FEED_URL.test(u)) || null;
+}
+const FEED_URL = /(\.rss|\.xml|\.atom|\.json|\.md)(\?|$)|\/feed\/?$|\/rss\/?$|packages\.unity\.com|huggingface\.co\/api\/|\/api\/v2\/help_center/;
+
 function UpdatesView({ cat, company, onCat, onCompany }) {
   const catObj = UPDATE_CATS.find(c => c.slug === cat) || null;
   const comp = UPDATE_COMPANIES.find(c => c.slug === company && c.catSlug === cat) || null;
@@ -1060,7 +1066,12 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
           <p className="feed-desc">{desc}</p>
         </div>
         {comp && (
-          <a className="chip update-official" href={comp.url} target="_blank" rel="noopener noreferrer">공식 업데이트 페이지 ↗</a>
+          <div className="update-official-links">
+            <a className="chip update-official" href={comp.url} target="_blank" rel="noopener noreferrer">공식 업데이트 페이지 ↗</a>
+            {devPage(comp) && (
+              <a className="chip update-official" href={devPage(comp)} target="_blank" rel="noopener noreferrer">개발자 변경 기록 ↗</a>
+            )}
+          </div>
         )}
       </div>
       <main className="feed">
