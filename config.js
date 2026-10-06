@@ -7,6 +7,71 @@ window.AIAD = {
     { id: 'art', label: '아트 전반 AI 뉴스', desc: '게임 제작과 무관하게 모든 아트 관련 AI 뉴스들을 매일 업데이트합니다.' },
   ],
 
+  // 아티스트 브리핑 — 게임 아트 직군마다 관심 가질 뉴스·업데이트를 골라 보여 준다 (주소: /for/<id>/)
+  // short:    헤더 '내 직군' 표시·추천 표시에 쓰는 짧은 이름
+  // tags:     기사 서브 카테고리(data/keywords.json) 중 이 직군과 바로 이어지는 것
+  // terms:    기사 제목·요약·본문, 업데이트 제목·요약·세부 내용에서 찾을 단어 (영문은 단어 단위, 한글은 띄어쓰기 무시)
+  // services: 이 직군이 쓰는 업데이트 서비스 (slug) — 그 서비스의 업데이트는 모두 추천
+  // 고르는 기준 (app.jsx roleMatch, scripts/build_site.py role_match가 같아야 한다):
+  //   기사 — 서브 카테고리 3점, 제목의 단어 3점, 요약의 단어 2점, 본문에만 있는 단어 1점. 3점 이상만
+  //   업데이트 — services에 든 서비스, 또는 제목·요약·세부 내용에 단어가 있는 것
+  roles: [
+    { id: '3d', label: '3D 아티스트', short: '3D', desc: '모델링·텍스처·머티리얼과 3D 생성 AI',
+      tags: ['3D', '텍스처', '가우시안 스플래팅', 'Blender', 'Meshy', 'Tripo', 'Autodesk'],
+      terms: ['3D 모델', '3D 에셋', '3D 생성', '모델링', '텍스처', '리토폴로지', '토폴로지', 'UV', 'PBR', '머티리얼',
+              '스컬프팅', '메시', '폴리곤', 'image-to-3D', 'text-to-3D', 'Blender', '블렌더', 'Maya', 'ZBrush', 'Substance',
+              '3ds Max', 'Houdini', 'Hunyuan3D', 'TRELLIS', 'Meshy', 'Tripo', 'Rodin'],
+      services: ['meshy', 'tripo', 'rodin', 'blender', 'roblox-cube'] },
+    { id: '2d', label: '2D·컨셉 아티스트', short: '2D·컨셉', desc: '일러스트·컨셉아트·이미지 생성과 편집',
+      tags: ['2D·이미지', 'Photoshop', 'Midjourney'],
+      terms: ['일러스트', '컨셉 아트', '컨셉아트', '이미지 생성', '이미지 편집', '캐릭터 디자인', '드로잉', '페인팅', '스케치',
+              '인페인팅', '업스케일', '스타일 참조', 'LoRA', 'Photoshop', '포토샵', 'Procreate', 'Clip Studio', 'Midjourney',
+              'Firefly', 'Krita', '스프라이트', '픽셀 아트', '웹툰'],
+      services: ['midjourney', 'gpt-image', 'nano-banana', 'seedream', 'qwen-image', 'flux', 'stable-diffusion', 'krea',
+                 'recraft', 'magnific', 'gigapixel', 'mai-image', 'firefly', 'scenario', 'layer', 'invokeai'] },
+    { id: 'animator', label: '애니메이터', short: '애니메이터', desc: '캐릭터 애니메이션·모션 캡처·립싱크',
+      tags: ['애니메이션'],
+      terms: ['애니메이터', '캐릭터 애니메이션', '3D 애니메이션', '모션 캡처', '모캡', 'mocap', 'motion capture', '키프레임',
+              '인비트윈', '중간 프레임', '립싱크', 'lip sync', 'lip-sync', '페이셜', '표정 애니메이션', '동작 생성', 'text-to-motion',
+              'Cascadeur', 'Mixamo', 'Rokoko', 'iClone', 'Move AI', 'Wonder Studio', 'Wonder Dynamics', 'Flow Studio'],
+      services: ['rokoko', 'iclone', 'flow-studio', 'hedra'] },
+    { id: 'rigger', label: '리거', short: '리거', desc: '리깅·스키닝·페이셜 리그 자동화',
+      tags: [],
+      terms: ['리깅', '리거', '오토 리깅', '자동 리깅', 'rig', 'rigging', 'auto-rig', 'auto rig', 'AccuRIG', '스키닝', 'skinning',
+              '웨이트 페인팅', '블렌드셰이프', 'blendshape', 'blend shape', '스켈레톤', 'skeleton', '페이셜 리그', 'ARKit',
+              'Mixamo', 'Cascadeur'],
+      services: ['rokoko', 'iclone'] },
+    { id: 'vfx', label: 'VFX 아티스트', short: 'VFX', desc: '이펙트·합성·시뮬레이션과 영상 생성 AI',
+      tags: ['VFX'],
+      terms: ['VFX', '시각 효과', '시각효과', '이펙트', '파티클', '컴포지팅', 'compositing', '로토스코핑', 'rotoscoping', 'Nuke',
+              'Houdini', 'After Effects', 'Niagara', '시뮬레이션', '유체', '그린 스크린', 'green screen', '매치무브', '리라이팅',
+              'relight', 'Wonder Studio', 'Runway', 'DaVinci', '영상 생성', 'video generation'],
+      services: ['runway', 'veo', 'kling', 'seedance', 'wan', 'dream-machine', 'ltx-studio', 'pika', 'topaz-video', 'higgsfield'] },
+    { id: 'ta', label: '테크니컬 아티스트', short: 'TA', desc: '파이프라인·셰이더·엔진·도구 자동화',
+      tags: ['MCP', 'Unreal Engine', 'Unity', 'DLSS', '코딩'],
+      terms: ['테크니컬 아티스트', '셰이더', 'shader', '파이프라인', 'pipeline', '프로시저럴', 'procedural', 'PCG', 'Houdini',
+              'Python', '파이썬', '스크립트', '플러그인', 'MCP', 'ComfyUI', 'Unreal Engine', '언리얼', 'Unity', '유니티',
+              'Godot', 'LOD', '실시간 렌더링', 'DLSS', 'USD', 'OpenUSD', 'SDK'],
+      services: ['comfyui', 'invokeai', 'unity-ai', 'nvidia-studio', 'hugging-face', 'fal.ai', 'blender', 'claude'] },
+    { id: 'env', label: '레벨 아티스트', short: '레벨', desc: '월드·지형·스플래팅과 배경 생성',
+      tags: ['가우시안 스플래팅'],
+      terms: ['월드 모델', 'world model', '3D 월드', '월드 생성', '레벨 디자인', '지형', 'terrain', '오픈 월드', '배경 아트',
+              '환경 아트', '가우시안 스플래팅', 'Gaussian Splatting', '포토그래메트리', 'photogrammetry', '스카이박스', 'skybox',
+              '파노라마', 'HDRI', 'Genie', 'World Labs', 'Marble', 'PCG'],
+      services: ['marble'] },
+    { id: 'sound', label: '사운드 디자이너', short: '사운드', desc: '효과음·음악·음성·더빙 AI',
+      tags: ['음악·사운드', '음성', 'ElevenLabs', 'Suno'],
+      terms: ['사운드', '효과음', '음향', '작곡', 'BGM', '배경음악', '보이스', '음성 합성', '성우', 'TTS', 'text-to-speech',
+              '더빙', 'dubbing', '오디오', 'audio', 'sound effect', 'SFX', 'ElevenLabs', 'Suno', 'Udio', 'Stable Audio',
+              'MusicGen', 'Lyria', 'Wwise', 'FMOD'],
+      services: ['elevenlabs', 'suno', 'mureka', 'stable-audio', 'minimax-audio'] },
+    { id: 'ui', label: 'UI·UX 디자이너', short: 'UI·UX', desc: '인터페이스·아이콘·벡터·타이포',
+      tags: [],
+      terms: ['UI 디자인', 'UI·UX', 'UI/UX', '게임 UI', 'UX', '인터페이스 디자인', '아이콘', 'icon', '로고', '타이포', '폰트', 'font',
+              '벡터 그래픽', '벡터 변환', 'vector graphics', 'SVG', '와이어프레임', 'Figma', '피그마', '디자인 시스템', 'HUD'],
+      services: ['figma-ai', 'recraft'] },
+  ],
+
   // 사이드바 대분류 '업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스(제품) (분류 순서 = 필터 순서)
   // name:   사이드바에 보이는 제품(서비스) 이름 / maker: 만든 회사 (제품 이름과 같으면 생략)
   // url:    방문자에게 보여 줄 공식 업데이트 페이지

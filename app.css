@@ -913,7 +913,7 @@ mark {
 .hm-kicker[style*="--tone-h"] { color: oklch(0.5 0.13 var(--tone-h)); }
 [data-theme="dark"] .hm-kicker[style*="--tone-h"] { color: oklch(0.78 0.11 var(--tone-h)); }
 .hm-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; font-variant-numeric: tabular-nums; }
-.hm button:not(.home-ticker-btn) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
+.hm button:not(.home-ticker-btn):not(.role-choice):not(.brief-link) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
 
 /* 톱 기사 + 최신 기사 */
 .hm-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 32px; align-items: start; }
@@ -1433,3 +1433,172 @@ a.chip.update-official { text-decoration: none; align-self: center; white-space:
 .update-details { margin: 6px 0 8px; padding-left: 18px; color: var(--ink-2); font-size: 13.5px; line-height: 1.6; }
 .update-details li + li { margin-top: 2px; }
 .updates-more { display: flex; justify-content: center; margin: 22px 0 8px; }
+
+/* 아티스트 브리핑 화면 (/for/) */
+.role-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.role-card {
+  width: 100%; height: 100%; text-align: left; cursor: pointer; font: inherit; color: var(--ink);
+  display: flex; flex-direction: column; gap: 6px; padding: 18px 20px;
+  background: var(--card); border: 2px solid var(--stroke); border-radius: 16px;
+  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
+}
+.role-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop-sm); }
+.role-card-name { font-size: 18px; font-weight: 800; }
+.role-card-desc { font-size: 13.5px; color: var(--ink-2); line-height: 1.5; }
+.role-card-count { margin-top: auto; padding-top: 8px; font-size: 12.5px; font-weight: 700; color: var(--accent-strong); }
+.role-terms { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.role-term { font-size: 12px; padding: 2px 9px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--hairline); color: var(--ink-2); }
+button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; }
+.role-kind { display: flex; gap: 8px; margin-top: 16px; }
+.role-kind .chip { padding: 6px 14px; font-size: 14px; font-weight: 700; }
+.role-kind .count { margin-left: 4px; font-weight: 600; opacity: .7; }
+
+.role-card.mine { border-color: var(--accent); box-shadow: var(--shadow-pop-sm); }
+.role-card-mine { margin-left: 8px; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px;
+  background: var(--accent); color: var(--card); vertical-align: 3px; }
+.role-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
+.role-title-row .feed-title { margin: 0; }
+.role-set-btn, .role-mine-badge {
+  display: inline-flex; align-items: center; gap: 5px; font: inherit; font-size: 12.5px; font-weight: 700;
+  padding: 5px 12px; border-radius: 999px; white-space: nowrap;
+}
+.role-set-btn { border: 1.5px solid var(--accent); background: var(--card); color: var(--accent-strong); cursor: pointer; }
+.role-set-btn:hover { background: var(--accent-soft); }
+.role-mine-badge { background: var(--accent); color: var(--card); border: 1.5px solid var(--accent); }
+
+/* 직군 고르기 칩 */
+.role-choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.role-choice {
+  font: inherit; font-size: 13.5px; font-weight: 700; color: var(--ink); cursor: pointer;
+  padding: 7px 14px; border: 1.5px solid var(--stroke); border-radius: 999px; background: var(--card);
+  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease, background .15s;
+}
+.role-choice:hover { transform: translateY(-1px); box-shadow: var(--shadow-pop-sm); }
+.role-choice.active { background: var(--accent); border-color: var(--accent); color: var(--card); }
+
+/* 헤더: 내 직군 */
+.role-picker { position: relative; }
+.role-pill {
+  height: 40px; padding: 0 12px; display: inline-flex; align-items: center; gap: 6px;
+  border-radius: 999px; border: 2px solid var(--stroke); background: var(--card); color: var(--ink);
+  font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
+}
+.role-pill:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
+.role-pill.set { background: var(--accent-soft); color: var(--accent-strong); }
+.role-pill-caret { opacity: .6; }
+.role-menu {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; width: min(340px, calc(100vw - 32px));
+  background: var(--card); border: 2px solid var(--stroke); border-radius: 16px; box-shadow: var(--shadow-pop-sm);
+  padding: 16px;
+}
+.role-menu-head { margin-bottom: 12px; }
+.role-menu-head strong { display: block; font-size: 15px; }
+.role-menu-head span { display: block; margin-top: 3px; font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
+.role-menu .role-choice { font-size: 12.5px; padding: 5px 11px; }
+.role-menu-foot { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 10px; border-top: 1.5px solid var(--hairline); }
+.role-menu-link, .brief-link {
+  font: inherit; font-size: 13px; font-weight: 700; color: var(--accent-strong); background: none; border: 0; padding: 0; cursor: pointer;
+}
+.role-menu-link:hover, .brief-link:hover { text-decoration: underline; }
+.role-menu-link.muted, .brief-link.muted { color: var(--muted) !important; font-weight: 500; }
+
+/* 추천 이유 표시 */
+.role-tag {
+  display: inline-flex; align-items: center; gap: 4px; max-width: 100%;
+  font-size: 11px; line-height: 1.5; padding: 1px 8px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent-strong); white-space: nowrap; overflow: hidden;
+}
+.role-tag b { font-weight: 800; }
+.role-tag-why { overflow: hidden; text-overflow: ellipsis; opacity: .85; }
+.role-tag-why::before { content: "· "; }
+.card-body > .role-tag { align-self: flex-start; margin-bottom: -4px; }
+.update-head .role-tag { margin-left: 2px; }
+.modal-roles { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 0 0 20px; }
+.modal-roles-label { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 800; color: var(--accent-strong); margin-right: 2px; }
+.modal-role {
+  font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; color: var(--ink);
+  padding: 3px 10px; border-radius: 999px; border: 1.5px solid var(--stroke); background: var(--card);
+}
+.modal-role span { font-weight: 500; color: var(--muted); margin-left: 6px; }
+.modal-role.mine { background: var(--accent); border-color: var(--accent); color: var(--card); }
+.modal-role.mine span { color: inherit; opacity: .85; }
+.modal-role:hover { box-shadow: var(--shadow-pop-sm); }
+
+/* 메인: 첫 방문 질문 카드 + 오늘의 브리핑 */
+.brief-eyebrow { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 800; letter-spacing: .04em; color: var(--accent-strong); }
+.brief-prompt, .brief {
+  margin: 0 0 34px; padding: 22px 24px; border: 2px solid var(--stroke); border-radius: 20px;
+  background:
+    radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--accent) 22%, transparent) 1px, transparent 0) 0 0 / 14px 14px,
+    var(--accent-soft);
+}
+.brief-prompt h2 { margin: 6px 0 4px; font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+.brief-prompt p { margin: 0 0 14px; font-size: 14px; color: var(--ink-2); }
+.brief-prompt-foot { display: flex; gap: 18px; margin-top: 14px; }
+.brief-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.brief-title { margin: 4px 0 2px; font-size: 21px; font-weight: 800; letter-spacing: -0.01em; }
+.brief-sub { margin: 0; font-size: 13px; color: var(--ink-2); }
+.brief-new { color: var(--accent-strong); }
+.brief-actions { display: flex; align-items: center; gap: 16px; white-space: nowrap; padding-top: 4px; }
+.brief-change { margin-top: 14px; }
+.brief-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 16px; }
+.brief-col { background: var(--card); border: 1.5px solid var(--stroke); border-radius: 14px; padding: 12px 16px 6px; }
+.brief-col-head { margin: 0 0 4px; font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--muted); }
+.brief-list { list-style: none; margin: 0; padding: 0; }
+.brief-list li + li { border-top: 1px dashed var(--hairline); }
+.brief-item { display: block; width: 100%; padding: 10px 0 !important; }
+.brief-item-top { display: flex; align-items: center; gap: 6px; min-height: 18px; }
+.brief-why { font-size: 11.5px; font-weight: 700; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.brief-dot { font-size: 10px; font-weight: 800; letter-spacing: .04em; padding: 0 6px; border-radius: 999px; background: var(--accent); color: var(--card); }
+.brief-item-title {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  margin: 3px 0 2px; font-size: 15px; line-height: 1.45; font-weight: 700;
+}
+.brief-item:hover .brief-item-title { text-decoration: underline; }
+.brief-empty { font-size: 13.5px; color: var(--muted); margin: 8px 0 12px; }
+
+/* 사이드바: 아티스트 브리핑 바로가기 */
+.side-brief { margin: 0 0 14px; }
+.side-brief-btn {
+  width: 100%; display: flex; align-items: center; gap: 10px; text-align: left; cursor: pointer;
+  padding: 10px 11px; border-radius: 14px; border: 2px solid var(--stroke);
+  background: var(--accent); color: #fff; font: inherit;
+  box-shadow: 0 3px 0 var(--stroke);
+  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease, filter .15s;
+}
+.side-brief-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 0 var(--stroke); filter: brightness(1.05); }
+.side-brief-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--stroke); }
+.side-brief-btn.active { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+.side-brief-icon {
+  flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  background: #fff; color: var(--accent-strong); border: 1.5px solid var(--stroke);
+  animation: side-brief-pulse 2.6s ease-in-out infinite;
+}
+.side-brief-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.side-brief-title { font-size: 15px; font-weight: 800; letter-spacing: -0.01em; }
+.side-brief-sub { font-size: 11.5px; opacity: .92; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.side-brief-arrow { flex: none; transition: transform .15s ease; }
+.side-brief-btn:hover .side-brief-arrow { transform: translateX(3px); }
+@keyframes side-brief-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,.75); }
+  50% { box-shadow: 0 0 0 5px rgba(255,255,255,0); }
+}
+@media (prefers-reduced-motion: reduce) { .side-brief-icon { animation: none; } }
+
+@media (max-width: 900px) {
+  .brief-cols { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .role-pill { width: 40px; padding: 0; justify-content: center; }
+  .role-pill-label, .role-pill-caret { display: none; }
+  .role-pill.set::after { content: ""; position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .role-pill { position: relative; }
+  .brief-prompt, .brief { padding: 16px; border-radius: 16px; margin-bottom: 26px; }
+  .brief-prompt h2 { font-size: 19px; }
+  .role-choice { font-size: 13px; padding: 6px 12px; }
+  .brief-head { flex-direction: column; gap: 8px; }
+  .brief-actions { padding-top: 0; }
+  .brief-title { font-size: 18px; }
+  .brief-list li:nth-child(n+4) { display: none; }
+}

@@ -1,7 +1,7 @@
 /* AI Art Daily — hi-fi prototype */
 
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
-const { tabs: TABS, updateSources: UPDATE_SOURCES = [] } = window.AIAD;
+const { tabs: TABS, updateSources: UPDATE_SOURCES = [], roles: ROLES = [] } = window.AIAD;
 
 /* ---------- data loading ---------- */
 // 기사 데이터는 날짜별 파일로 나뉘어 있다: data/index.json → data/articles/YYYY-MM-DD.json
@@ -38,6 +38,10 @@ function parseRoute(pathname) {
   }
   if (parts[0] === 'articles' && parts[1]) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
+  }
+  if (parts[0] === 'for') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, roles: true,
+             role: ROLES.some(r => r.id === parts[1]) ? parts[1] : null };
   }
   if (parts[0] === 'updates') {
     return { home: false, tab: null, kwSlug: null, articleId: null, updates: true,
@@ -188,6 +192,7 @@ function ArticleCard({ article, onOpen, query, variant }) {
     <button className={cls} onClick={() => onOpen(article)}>
       <Thumb hue={article.hue} image={article.image} alt={article.headline} />
       <div className="card-body">
+        <RoleTag article={article} />
         <h3 className="card-headline">{highlight(article.headline, query)}</h3>
         <p className="card-summary">{highlight(article.summary, query)}</p>
         <div className="card-foot">
@@ -301,6 +306,7 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
               </svg>
             </button>
           )}
+          <RolePicker />
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -407,7 +413,10 @@ function FeedMeta({ activeTab, count, query, keyword }) {
 }
 
 /* ---------- modal ---------- */
-function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword }) {
+function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, onRole }) {
+  const { myRole } = React.useContext(BriefingContext);
+  const roleHits = ROLES.map(r => ({ r, why: articleRoleReasons(r, article) })).filter(x => x.why)
+    .sort((x, y) => (y.r.id === myRole) - (x.r.id === myRole));
   const bodyRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -535,6 +544,17 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword }
               </div>
             );
           })()}
+          {roleHits.length > 0 && (
+            <div className="modal-roles">
+              <span className="modal-roles-label"><TargetIcon size={12} /> 아티스트 브리핑</span>
+              {roleHits.map(({ r, why }) => (
+                <button key={r.id} type="button" className={`modal-role ${r.id === myRole ? 'mine' : ''}`}
+                  title={`추천 이유: ${why.join(', ')}`} onClick={() => onRole(r.id)}>
+                  {r.label}<span>{why.slice(0, 2).join(', ')}</span>
+                </button>
+              ))}
+            </div>
+          )}
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
             <div dangerouslySetInnerHTML={{ __html: article.body || '' }} />
@@ -683,7 +703,115 @@ const TAB_TONE = { games: 200, industry: 30, art: 290 };
 const toneOf = (tab) => (TAB_TONE[tab] != null ? { '--tone-h': TAB_TONE[tab] } : undefined);
 // 위: 톱 기사 + 최신 기사 목록 / 가운데: 탭별 최신 기사 / 아래: AI 서비스 최신 업데이트 / 하단 고정 띠
 // 같은 기사가 두 번 나오지 않게, 위쪽에 쓴 기사는 탭별 목록에서 뺀다.
-function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates }) {
+// 첫 방문 질문 카드 (메인 맨 위)
+function RolePrompt({ onPick, onLater, onBrowse }) {
+  return (
+    <section className="brief-prompt" aria-label="아티스트 브리핑 시작">
+      <div className="brief-prompt-text">
+        <span className="brief-eyebrow"><TargetIcon size={12} /> 아티스트 브리핑</span>
+        <h2>어떤 일을 하세요?</h2>
+        <p>직군을 고르면 오늘 볼 뉴스와 AI 서비스 업데이트를 골라 드려요. 이 브라우저에만 저장돼요.</p>
+      </div>
+      <RoleChoices value={null} onPick={onPick} />
+      <div className="brief-prompt-foot">
+        <button type="button" className="brief-link" onClick={onBrowse}>직군별 브리핑 둘러보기</button>
+        <button type="button" className="brief-link muted" onClick={onLater}>나중에</button>
+      </div>
+    </section>
+  );
+}
+
+// 지난 방문 이후 새 소식: 직군별로 지난번에 보여 준 항목 id를 저장해 두고 비교한다 (처음엔 표시 안 함)
+const SEEN_PREFIX = 'aiad:brief-seen:';
+function useNewSince(roleId, ids, ready) {
+  const [fresh, setFresh] = useState(() => new Set());
+  const done = useRef({});
+  useEffect(() => {
+    if (!ready || done.current[roleId]) return;
+    done.current[roleId] = true;
+    let prev = null;
+    try { prev = JSON.parse(readLS(SEEN_PREFIX + roleId) || 'null'); } catch (e) {}
+    setFresh(prev ? new Set(ids.filter(id => !prev.includes(id))) : new Set());
+    writeLS(SEEN_PREFIX + roleId, JSON.stringify(ids));
+  }, [roleId, ready, ids]);
+  return fresh;
+}
+
+// 메인 맨 위 "오늘의 ○○ 브리핑"
+const BRIEF_N = 5;
+function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, onChange }) {
+  const { ready: updReady, items: allUpd } = useServiceUpdates();
+  const news = useMemo(() => roleArticles(role, articles), [role, articles]);
+  const upd = useMemo(() => roleUpdates(role, allUpd), [role, allUpd]);
+  const SEEN_N = 60;
+  const ids = useMemo(() => [...news.slice(0, SEEN_N).map(a => 'a:' + a.id), ...upd.slice(0, SEEN_N).map(u => 'u:' + u.id)],
+    [news, upd]);
+  const fresh = useNewSince(role.id, ids, articles.length > 0 && updReady);
+  const [changing, setChanging] = useState(false);
+  const newCount = fresh.size;
+  return (
+    <section className="brief" aria-label={`${role.label} 브리핑`}>
+      <div className="brief-head">
+        <div>
+          <span className="brief-eyebrow"><TargetIcon size={12} /> 아티스트 브리핑</span>
+          <h2 className="brief-title">오늘의 {role.label} 브리핑</h2>
+          <p className="brief-sub">
+            {newCount > 0 ? <b className="brief-new">지난 방문 이후 새 소식 {newCount}건</b> : '관련 뉴스와 업데이트를 최신순으로 골랐어요'}
+            <span> · 뉴스 {news.length} · 업데이트 {updReady ? upd.length : '…'}</span>
+          </p>
+        </div>
+        <div className="brief-actions">
+          <button type="button" className="brief-link muted" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+          <button type="button" className="hm-more" onClick={onAll}>브리핑 전체 보기 →</button>
+        </div>
+      </div>
+      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="brief-change" />}
+      <div className="brief-cols">
+        <div className="brief-col">
+          <h3 className="brief-col-head">뉴스</h3>
+          {news.length === 0 ? <p className="brief-empty">아직 관련 뉴스가 없어요.</p> : (
+            <ol className="brief-list">
+              {news.slice(0, BRIEF_N).map(a => (
+                <li key={a.id}>
+                  <button type="button" className="brief-item" onClick={() => onOpenArticle(a)}>
+                    <span className="brief-item-top">
+                      {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
+                      <span className="brief-why">{articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label).slice(0, 2).join(' · ')}</span>
+                    </span>
+                    <span className="brief-item-title">{a.headline}</span>
+                    <span className="hm-meta">{a.source} · {a.publishedAt}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+        <div className="brief-col">
+          <h3 className="brief-col-head">AI 서비스 업데이트</h3>
+          {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
+            <ol className="brief-list">
+              {upd.slice(0, BRIEF_N).map(u => (
+                <li key={u.id}>
+                  <button type="button" className="brief-item" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
+                    <span className="brief-item-top">
+                      {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
+                      <span className="hm-upd-service">{u.company.name}</span>
+                      <span className="update-cat">{u.kind}</span>
+                    </span>
+                    <span className="brief-item-title">{u.title}</span>
+                    {!u.dateMonthOnly && <span className="hm-meta">{u.date}</span>}
+                  </button>
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates, onRole, roleState }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   const sorted = useMemo(() => [...articles]
     .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
@@ -706,6 +834,13 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         <span className="hm-date">{today}</span>
         <span className="hm-tagline">아트 제작자를 위한 AI 뉴스 큐레이션</span>
       </div>
+
+      {ROLES.length > 0 && (roleState.myRole ? (
+        <BriefingSection role={ROLE_BY_ID[roleState.myRole]} articles={sorted} onOpenArticle={onOpenArticle}
+          onOpenUpdate={onOpenUpdate} onAll={() => onRole(roleState.myRole)} onChange={roleState.setMyRole} />
+      ) : !roleState.asked && (
+        <RolePrompt onPick={roleState.setMyRole} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
+      ))}
 
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
@@ -897,7 +1032,8 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
-                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany }) {
+                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole }) {
+  const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
   const newsActive = section === 'news';
@@ -917,6 +1053,20 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
           <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
         </div>
         <nav className="side-nav">
+          {ROLES.length > 0 && (
+            <div className="side-brief">
+              <button type="button" className={`side-brief-btn ${section === 'roles' ? 'active' : ''}`} onClick={() => onRole(myRole || null)}>
+                <span className="side-brief-icon"><TargetIcon size={18} /></span>
+                <span className="side-brief-text">
+                  <span className="side-brief-title">아티스트 브리핑</span>
+                  <span className="side-brief-sub">
+                    {myRole && ROLE_BY_ID[myRole] ? `${ROLE_BY_ID[myRole].short || ROLE_BY_ID[myRole].label} 맞춤 소식` : '직군별 맞춤 소식'}
+                  </span>
+                </span>
+                <svg className="side-brief-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </div>
+          )}
           <div className="side-group">
             <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
               <button type="button" className="side-group-link" onClick={() => {
@@ -1137,6 +1287,7 @@ function UpdateRow({ u, showCompany, onCompany }) {
           )}
           <span className="update-cat">{u.kind}</span>
           {u.sample && <span className="update-sample">예시</span>}
+          <RoleTag update={u} />
         </div>
         <h3 className="update-title">{u.title}</h3>
         <p className="update-summary">{u.summary}</p>
@@ -1220,6 +1371,293 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   );
 }
 
+/* ---------- 아티스트 브리핑 (직군별 추천) ---------- */
+// config.js의 roles. 고르는 기준은 scripts/build_site.py의 role_articles·role_updates와 같아야 한다.
+//   기사 — 서브 카테고리 3점, 제목의 단어 3점, 요약의 단어 2점, 본문에만 있는 단어 1점 → 3점 이상
+//   업데이트 — 직군의 서비스, 또는 제목에 단어가 있거나 요약·세부 내용에 서로 다른 단어가 2개 이상
+// 영문 단어는 단어 단위(앞뒤가 영문·숫자가 아님)로, 한글이 섞인 단어는 띄어쓰기를 무시하고 찾는다.
+// '내 직군'은 이 브라우저에 저장한다 (로그인 없이). 로그인 후 '나만의 피드'의 기본값으로 이어 쓴다.
+function rolesPath(role) {
+  return role ? `/for/${role}/` : '/for/';
+}
+const ROLE_BY_ID = Object.fromEntries(ROLES.map(r => [r.id, r]));
+const reEscape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function compileTerms(terms) {
+  return terms.map(t => /^[\x00-\x7f]+$/.test(t)
+    ? { t, re: new RegExp(`(?<![a-z0-9])${reEscape(t.toLowerCase())}(?![a-z0-9])`) }
+    : { t, ko: t.toLowerCase().replace(/\s+/g, '') });
+}
+function termHits(compiled, text) {
+  const low = (text || '').toLowerCase(), flat = low.replace(/\s+/g, '');
+  const out = [];
+  compiled.forEach(c => { if (c.re ? c.re.test(low) : flat.includes(c.ko)) out.push(c.t); });
+  return out;
+}
+const stripHtml = h => (h || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+const COMPILED_ROLES = Object.fromEntries(ROLES.map(r => [r.id, compileTerms(r.terms || [])]));
+const ROLE_CACHE = Object.fromEntries(ROLES.map(r => [r.id, { a: new Map(), u: new Map() }]));
+// 이 기사가 직군에 맞으면 추천 이유(걸린 서브 카테고리·단어, 강한 것부터), 아니면 null
+function articleRoleReasons(role, a) {
+  const cache = ROLE_CACHE[role.id].a;
+  if (cache.has(a.id)) return cache.get(a.id);
+  const ct = COMPILED_ROLES[role.id], tags = new Set(role.tags || []);
+  const tagHits = (a.keywords || []).filter(k => tags.has(k));
+  const h = termHits(ct, a.headline);
+  const sm = termHits(ct, a.summary).filter(t => !h.includes(t));
+  let score = 3 * tagHits.length + 3 * h.length + 2 * sm.length;
+  let b = [];
+  if (score < 3) {
+    b = termHits(ct, stripHtml(a.body)).filter(t => !h.includes(t) && !sm.includes(t));
+    score += b.length;
+  }
+  const res = score >= 3 ? [...new Set([...h, ...sm, ...tagHits, ...b])] : null;   // 제목 단어부터
+  cache.set(a.id, res);
+  return res;
+}
+function updateRoleReasons(role, u) {
+  if (u.sample) return null;
+  const cache = ROLE_CACHE[role.id].u;
+  if (cache.has(u.id)) return cache.get(u.id);
+  const ct = COMPILED_ROLES[role.id];
+  const t = termHits(ct, u.title);
+  const rest = termHits(ct, `${u.summary} ${(u.details || []).join(' ')}`);
+  const svc = (role.services || []).includes(u.service);
+  const res = (svc || t.length > 0 || rest.length >= 2)
+    ? [...new Set([...(svc && u.company ? [u.company.name] : []), ...t, ...rest])] : null;
+  cache.set(u.id, res);
+  return res;
+}
+function roleArticles(role, articles) {
+  return articles.filter(a => articleRoleReasons(role, a));
+}
+function roleUpdates(role, updates) {
+  return updates.filter(u => updateRoleReasons(role, u));
+}
+
+// 내 직군 (브라우저 저장) + 화면 어디서나 쓰는 브리핑 정보
+const ROLE_KEY = 'aiad:role', ROLE_ASKED_KEY = 'aiad:role-asked';
+function readLS(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function writeLS(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
+function useMyRole() {
+  const [myRole, setMyRoleState] = useState(() => (ROLE_BY_ID[readLS(ROLE_KEY)] ? readLS(ROLE_KEY) : null));
+  const [asked, setAskedState] = useState(() => !!readLS(ROLE_ASKED_KEY));
+  const setMyRole = id => { setMyRoleState(id || null); writeLS(ROLE_KEY, id || null); writeLS(ROLE_ASKED_KEY, '1'); setAskedState(true); };
+  const dismiss = () => { writeLS(ROLE_ASKED_KEY, '1'); setAskedState(true); };
+  return { myRole, setMyRole, asked, dismiss };
+}
+const BriefingContext = React.createContext({ myRole: null, setMyRole() {}, openBriefing() {} });
+
+// 목록·기사 창에 붙는 "왜 추천됐는지" 표시 (내 직군과 맞을 때만)
+function RoleTag({ article, update, compact }) {
+  const { myRole } = React.useContext(BriefingContext);
+  const role = myRole && ROLE_BY_ID[myRole];
+  if (!role) return null;
+  const why = article ? articleRoleReasons(role, article) : updateRoleReasons(role, update);
+  if (!why) return null;
+  const shown = why.filter(w => w !== role.short && w !== role.label).slice(0, 2);   // "3D 추천 · 3D" 같은 반복은 뺀다
+  return (
+    <span className="role-tag" title={`${role.label} 추천 이유: ${why.join(', ')}`}>
+      <TargetIcon size={11} />
+      <b>{role.short || role.label} 추천</b>
+      {!compact && shown.length > 0 && <span className="role-tag-why">{shown.join(', ')}</span>}
+    </span>
+  );
+}
+function TargetIcon({ size = 14 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="0.8" fill="currentColor" />
+    </svg>
+  );
+}
+
+// 직군 고르기 칩 (첫 방문 질문 카드·헤더 메뉴·브리핑 화면 공통)
+function RoleChoices({ value, onPick, className }) {
+  return (
+    <div className={`role-choices ${className || ''}`}>
+      {ROLES.map(r => (
+        <button key={r.id} type="button" className={`role-choice ${value === r.id ? 'active' : ''}`}
+          aria-pressed={value === r.id} onClick={() => onPick(r.id)}>
+          {r.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+// 헤더의 내 직군 표시 + 메뉴
+function RolePicker() {
+  const { myRole, setMyRole, openBriefing } = React.useContext(BriefingContext);
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = e => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    const onKey = e => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('mousedown', onDown); document.addEventListener('touchstart', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => { document.removeEventListener('mousedown', onDown); document.removeEventListener('touchstart', onDown); document.removeEventListener('keydown', onKey); };
+  }, [open]);
+  if (!ROLES.length) return null;
+  const role = myRole && ROLE_BY_ID[myRole];
+  return (
+    <div className="role-picker" ref={ref}>
+      <button type="button" className={`role-pill ${role ? 'set' : ''}`} aria-haspopup="dialog" aria-expanded={open}
+        title="아티스트 브리핑 — 내 직군" onClick={() => setOpen(o => !o)}>
+        <TargetIcon size={15} />
+        <span className="role-pill-label">{role ? (role.short || role.label) : '내 직군'}</span>
+        <svg className="role-pill-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6"><path d="m6 9 6 6 6-6" /></svg>
+      </button>
+      {open && (
+        <div className="role-menu" role="dialog" aria-label="내 직군 고르기">
+          <div className="role-menu-head">
+            <strong>아티스트 브리핑</strong>
+            <span>직군을 고르면 사이트 곳곳에서 관련 소식을 먼저 골라 드려요.</span>
+          </div>
+          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); }} />
+          <div className="role-menu-foot">
+            {role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(myRole); }}>내 브리핑 보기 →</button>}
+            {role && <button type="button" className="role-menu-link muted" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>}
+            {!role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(null); }}>직군별 브리핑 둘러보기 →</button>}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function RolesNav({ role, onRole }) {
+  return (
+    <nav className="tabs-wrap">
+      <div className="tabs-inner">
+        <div className="tabs-meta">아티스트 브리핑 · {ROLES.length}개 직군</div>
+        <div className="tabs">
+          <button className={`tab ${!role ? 'active' : ''}`} onClick={() => onRole(null)}>전체 직군</button>
+          {ROLES.map(r => (
+            <button key={r.id} className={`tab ${role === r.id ? 'active' : ''}`} onClick={() => onRole(r.id)}>{r.label}</button>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany }) {
+  const { myRole, setMyRole } = React.useContext(BriefingContext);
+  const r = ROLES.find(x => x.id === role) || null;
+  const { ready: updReady, items: allUpd } = useServiceUpdates();
+  const sortedArticles = useMemo(() => [...articles]
+    .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
+  const counts = useMemo(() => Object.fromEntries(ROLES.map(x => [x.id, {
+    news: roleArticles(x, sortedArticles).length, upd: roleUpdates(x, allUpd).length,
+  }])), [sortedArticles, allUpd]);
+  const news = useMemo(() => (r ? roleArticles(r, sortedArticles) : []), [r, sortedArticles]);
+  const upd = useMemo(() => (r ? roleUpdates(r, allUpd) : []), [r, allUpd]);
+  const [kind, setKind] = useState('news');
+  const PAGE = 30;
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => { setShown(PAGE); }, [role, kind]);
+  const [allTerms, setAllTerms] = useState(false);
+  useEffect(() => { setAllTerms(false); }, [role]);
+
+  if (!r) {
+    return (
+      <>
+        <RolesNav role={null} onRole={onRole} />
+        <div className="feed-meta">
+          <div>
+            <h1 className="feed-title">아티스트 브리핑</h1>
+            <p className="feed-desc">게임 아트 직군마다 관심 가질 키워드를 미리 골라 두고, 그 키워드가 담긴 뉴스와 AI 서비스 업데이트만 모아 드려요. 내 직군을 정해 두면 메인 화면과 기사 목록에서도 관련 소식을 먼저 알려 드려요.</p>
+          </div>
+        </div>
+        <main className="feed">
+          <ul className="role-grid">
+            {ROLES.map(x => (
+              <li key={x.id}>
+                <button type="button" className={`role-card ${myRole === x.id ? 'mine' : ''}`} onClick={() => onRole(x.id)}>
+                  <span className="role-card-name">{x.label}{myRole === x.id && <span className="role-card-mine">내 직군</span>}</span>
+                  <span className="role-card-desc">{x.desc}</span>
+                  <span className="role-card-count">
+                    {articlesReady ? `뉴스 ${counts[x.id].news}` : '뉴스 …'} · {updReady ? `업데이트 ${counts[x.id].upd}` : '업데이트 …'}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </main>
+      </>
+    );
+  }
+  const TERMS_SHOWN = 14;
+  const terms = allTerms ? r.terms : r.terms.slice(0, TERMS_SHOWN);
+  const list = kind === 'news' ? news : upd;
+  return (
+    <>
+      <RolesNav role={role} onRole={onRole} />
+      <div className="feed-meta">
+        <div>
+          <div className="role-title-row">
+            <h1 className="feed-title">{r.label} 브리핑</h1>
+            {myRole === r.id ? (
+              <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
+            ) : (
+              <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
+                <TargetIcon size={13} /> 내 직군으로 설정
+              </button>
+            )}
+          </div>
+          <div className="feed-sub">{r.desc}</div>
+          <div className="role-terms" aria-label="추천 키워드">
+            {terms.map(t => <span key={t} className="role-term">{t}</span>)}
+            {r.terms.length > TERMS_SHOWN && (
+              <button type="button" className="role-term role-term-more" onClick={() => setAllTerms(v => !v)}>
+                {allTerms ? '접기' : `+${r.terms.length - TERMS_SHOWN}개`}
+              </button>
+            )}
+          </div>
+          <div className="role-kind" role="tablist" aria-label="추천 종류">
+        <button role="tab" aria-selected={kind === 'news'} className={`chip subcat ${kind === 'news' ? 'active' : ''}`} onClick={() => setKind('news')}>
+          뉴스 <span className="count">{articlesReady ? news.length : '…'}</span>
+        </button>
+        <button role="tab" aria-selected={kind === 'updates'} className={`chip subcat ${kind === 'updates' ? 'active' : ''}`} onClick={() => setKind('updates')}>
+          업데이트 <span className="count">{updReady ? upd.length : '…'}</span>
+        </button>
+          </div>
+        </div>
+      </div>
+      <main className="feed">
+        {kind === 'news' ? (
+          !articlesReady ? (
+            <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
+          ) : news.length === 0 ? (
+            <EmptyState message="아직 추천할 뉴스가 없어요" sub="관련 소식이 들어오면 이곳에 모아 드려요." />
+          ) : (
+            <DateGroupedFeed articles={news.slice(0, shown)} onOpen={onOpenArticle} query="" expandAll />
+          )
+        ) : (
+          updReady && upd.length === 0 ? (
+            <EmptyState message="아직 추천할 업데이트가 없어요" sub="관련 업데이트가 나오면 이곳에 모아 드려요." />
+          ) : (
+            <ol className="updates-list">
+              {upd.slice(0, shown).map(u => (
+                <UpdateRow key={u.id} u={u} showCompany onCompany={c => onCompany(c.catSlug, c.slug)} />
+              ))}
+            </ol>
+          )
+        )}
+        {list.length > shown && (
+          <div className="updates-more">
+            <button type="button" className="chip" onClick={() => setShown(n => n + PAGE)}>
+              {kind === 'news' ? '지난 기사' : '이전 업데이트'} 더 보기 ({list.length - shown}건 남음)
+            </button>
+          </div>
+        )}
+      </main>
+    </>
+  );
+}
+
 /* ---------- App ---------- */
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -1227,7 +1665,10 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
-  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
+  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles' : 'news');   // 사이드바: 'news' | 'updates' | 'roles'
+  const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
+  const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
+  const goRole = (id) => { setSection('roles'); setRole(id || null); window.scrollTo({ top: 0 }); };
   const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍 (✕나 바깥을 눌러야만 닫힌다)
   const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
   const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 서비스 (slug)
@@ -1306,7 +1747,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : 'news');
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : 'news');
+      if (route.roles) { setOpen(null); setRole(route.role || null); return; }
       if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
         const found = articlesRef.current.find(a => a.id === route.articleId);
@@ -1360,12 +1802,13 @@ function App() {
   useEffect(() => {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
-    if (section !== 'updates' && !onArticle && query.trim()) return;
-    const path = section === 'updates' ? updatesPath(updCat, updCompany) : routePath(viewHome, activeTab, activeKeyword);
+    if (section === 'news' && !onArticle && query.trim()) return;
+    const path = section === 'updates' ? updatesPath(updCat, updCompany)
+      : section === 'roles' ? rolesPath(role) : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, section, updCat, updCompany, viewHome, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, role, viewHome, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -1388,7 +1831,11 @@ function App() {
   // groupByDate flag
   const groupByDate = true;
 
+  const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole, openBriefing: goRole }),
+    [roleState.myRole]);   // eslint-disable-line
+
   return (
+    <BriefingContext.Provider value={briefing}>
     <div className="page">
       <Header
         query={query}
@@ -1414,12 +1861,22 @@ function App() {
         onUpdCat={(cat) => goUpdates(cat, null)}
         updCompany={updCompany}
         onUpdCompany={(cat, company) => goUpdates(cat, company)}
+        onRole={(id) => { goRole(id); setSideOpen(false); }}
         subcats={subcats}
         keyword={activeKeyword}
         onKeyword={(k) => { setKeyword(k); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">
-      {section === 'updates' ? (
+      {section === 'roles' ? (
+        <RolesView
+          role={role}
+          onRole={goRole}
+          articles={articles}
+          articlesReady={dataState === 'ready'}
+          onOpenArticle={openArticle}
+          onCompany={(cat, company) => goUpdates(cat, company)}
+        />
+      ) : section === 'updates' ? (
         <UpdatesView
           cat={updCat}
           company={updCompany}
@@ -1455,6 +1912,8 @@ function App() {
             articles={articles}
             onOpenUpdate={(cat, company) => goUpdates(cat, company)}
             onAllUpdates={() => goUpdates(null, null)}
+            onRole={goRole}
+            roleState={roleState}
           />
         ) : dataState === 'error' ? (
           <EmptyState message="기사를 불러오지 못했어요" sub="잠시 후 새로고침해 주세요." />
@@ -1504,6 +1963,10 @@ function App() {
           onClose={closeArticle}
           onOpen={openArticle}
           allArticles={articles}
+          onRole={(id) => {
+            setOpen(null); goRole(id);
+            if (window.history.state && window.history.state.modal) window.history.replaceState({}, '', window.location.href);
+          }}
           onSelectKeyword={(tab, k) => {
             setOpen(null); goTab(tab); setKeyword(k); window.scrollTo({ top: 0 });
             if (window.history.state && window.history.state.modal) window.history.replaceState({}, '', window.location.href);
@@ -1511,6 +1974,7 @@ function App() {
         />
       )}
     </div>
+    </BriefingContext.Provider>
   );
 }
 
