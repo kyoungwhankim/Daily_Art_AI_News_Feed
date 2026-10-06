@@ -20,21 +20,6 @@
     "source": "notice"
   },
   {
-    "id": "elevenlabs-2026-09-28-2",
-    "service": "elevenlabs",
-    "date": "2026.09.28",
-    "kind": "모델",
-    "title": "Eleven v4 출시: 감정 표현력 향상",
-    "summary": "Eleven v4와 Eleven v4 Turbo 출시로 감정 표현력, 응답 속도, 음성 복제 기능이 개선되었어요.",
-    "details": [
-      "Eleven v4와 Eleven v4 Turbo 출시",
-      "ElevenAgents, ElevenCreative, API에서 사용 가능",
-      "감정 표현, 반응 속도, 음성 복제 개선"
-    ],
-    "url": "https://elevenlabs.io/blog",
-    "source": "notice"
-  },
-  {
     "id": "elevenlabs-2026-09-28-1",
     "service": "elevenlabs",
     "date": "2026.09.28",
