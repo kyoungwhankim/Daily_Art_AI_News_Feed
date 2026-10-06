@@ -893,7 +893,7 @@ mark {
 .home { padding: 22px 0 230px; }
 .hm-masthead {
   display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
-  position: relative; padding-bottom: 12px; margin-bottom: 22px; border-bottom: 1.5px solid var(--hairline);
+  position: relative; padding-bottom: 12px; margin-bottom: 22px; border-bottom: 1.5px solid var(--stroke);
 }
 /* 섹션 구분: 굵은 검은 줄 대신 연한 가는 선 + 왼쪽 끝 짧은 색 막대 (--tone-h: 탭 색상, 없으면 강조색) */
 .hm-masthead::after, .hm-sec::before {
@@ -901,7 +901,7 @@ mark {
   background: var(--accent);
 }
 .hm-masthead::after { bottom: -2.75px; }
-.hm-sec { position: relative; border-top: 1.5px solid var(--hairline); }
+.hm-sec { position: relative; border-top: 1.5px solid var(--stroke); }
 .hm-sec::before { top: -2.75px; }
 .hm-sec[style*="--tone-h"]::before { background: oklch(0.62 0.13 var(--tone-h)); }
 .hm-date { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--ink); letter-spacing: .02em; }
@@ -1236,7 +1236,7 @@ mark {
 }
 
 /* ---------- 사이드바 레이아웃 (뉴스 › AI 뉴스 / 업데이트) ---------- */
-:root { --header-h: 78px; --sidebar-w: 232px; }
+:root { --header-h: 78px; --sidebar-w: 250px; }
 .site-header .header-inner { max-width: none; }          /* 헤더는 사이드바와 같은 왼쪽 시작선 */
 .layout { display: flex; flex: 1; align-items: stretch; }
 .layout-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
@@ -1247,11 +1247,20 @@ mark {
   position: sticky; top: var(--header-h);
   height: calc(100vh - var(--header-h));
   overflow-y: auto;
-  border-right: 2px solid var(--stroke);
-  background: var(--paper);
-  padding: 18px 14px;
+  padding: 18px 4px 18px 18px;
   z-index: 15;
+  scrollbar-width: thin;
 }
+/* 넓은 화면: 선으로 나눈 영역이 아니라 떠 있는 패널 (크림 바탕 + 테두리 + 팝 그림자) */
+.sidebar .side-nav {
+  min-height: 100%; box-sizing: border-box;
+  padding: 14px 10px 18px;
+  background: var(--paper-2);
+  border: 2px solid var(--stroke);
+  border-radius: 18px;
+  box-shadow: var(--shadow-pop);
+}
+.sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover, .sidebar .side-subitem:not(.active):hover { background: var(--paper-3); }
 .side-group + .side-group { margin-top: 6px; }
 .side-group-head {
   display: flex; align-items: center;
@@ -1309,6 +1318,9 @@ mark {
     z-index: 70; box-shadow: none;
   }
   .sidebar.open { transform: none; box-shadow: 6px 0 0 var(--stroke); }
+  .sidebar { background: var(--paper); padding: 18px 14px; border-right: 2px solid var(--stroke); }
+  .sidebar .side-nav { min-height: 0; padding: 0; background: none; border: 0; border-radius: 0; box-shadow: none; }
+  .sidebar .side-group-head:not(.active):hover, .sidebar .side-item:not(.active):hover, .sidebar .side-subitem:not(.active):hover { background: var(--paper-2); }
   .side-drawer-head {
     display: flex; align-items: center; justify-content: space-between;
     padding: 6px 12px 18px; margin-bottom: 8px; border-bottom: 1.5px solid var(--hairline);
