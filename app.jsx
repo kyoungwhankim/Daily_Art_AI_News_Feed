@@ -182,22 +182,11 @@ function Thumb({ hue, image, alt, children }) {
 }
 
 /* ---------- card ---------- */
-function ArticleCard({ article, onOpen, onToggleSave, isSaved, query, variant }) {
+function ArticleCard({ article, onOpen, query, variant }) {
   const cls = `card${variant ? ' ' + variant : ''}`;
   return (
     <button className={cls} onClick={() => onOpen(article)}>
-      <Thumb hue={article.hue} image={article.image} alt={article.headline}>
-        <div
-          className={`bookmark-btn ${isSaved ? 'saved' : ''}`}
-          role="button"
-          aria-label="저장"
-          onClick={e => { e.stopPropagation(); onToggleSave(article.id); }}
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill={isSaved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8">
-            <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-          </svg>
-        </div>
-      </Thumb>
+      <Thumb hue={article.hue} image={article.image} alt={article.headline} />
       <div className="card-body">
         <h3 className="card-headline">{highlight(article.headline, query)}</h3>
         <p className="card-summary">{highlight(article.summary, query)}</p>
@@ -211,7 +200,7 @@ function ArticleCard({ article, onOpen, onToggleSave, isSaved, query, variant })
 }
 
 /* ---------- date section ---------- */
-function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }) {
+function DateSection({ iso, items, onOpen, query, isToday }) {
   const lbl = dateLabel(iso);
   return (
     <section className="date-section">
@@ -225,15 +214,15 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
       </div>
       {isToday && items.length > 1 ? (
         <div className="grid today-grid">
-          <ArticleCard variant="feature" article={items[0]} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(items[0].id)} query={query} />
+          <ArticleCard variant="feature" article={items[0]} onOpen={onOpen} query={query} />
           {items.slice(1, 3).map(a => (
-            <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+            <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
           ))}
           {items.length > 3 && (
             <div style={{ gridColumn: '1 / -1' }}>
               <div className="grid">
                 {items.slice(3).map(a => (
-                  <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+                  <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
                 ))}
               </div>
             </div>
@@ -242,7 +231,7 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
       ) : (
         <div className="grid">
           {items.map(a => (
-            <ArticleCard key={a.id} article={a} onOpen={onOpen} onToggleSave={onToggleSave} isSaved={saved.includes(a.id)} query={query} />
+            <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />
           ))}
         </div>
       )}
@@ -251,9 +240,13 @@ function DateSection({ iso, items, onOpen, onToggleSave, saved, query, isToday }
 }
 
 /* ---------- header ---------- */
-function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme, onShowHome, onMenu }) {
+function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
+  // 좁은 화면에선 검색창을 숨겨 두고, 돋보기 버튼을 누르면 헤더 아래 한 줄로 펼친다
+  const [searchOpen, setSearchOpen] = useState(false);
+  const openSearch = () => { setSearchOpen(true); setTimeout(() => inputRef.current && inputRef.current.focus(), 0); };
+  const closeSearch = () => { setSearchOpen(false); onQuery(''); };
   useEffect(() => {
     const onKey = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
@@ -266,7 +259,7 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
   }, []);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${searchOpen ? 'searching' : ''}`}>
       <div className="header-inner">
         <button type="button" className="menu-btn" aria-label="메뉴" onClick={onMenu}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
@@ -285,10 +278,22 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
               ref={inputRef}
               value={query}
               onChange={e => onQuery(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Escape' && searchOpen) closeSearch(); }}
+              type="search"
+              enterKeyHint="search"
               placeholder="기사 · 출처 · 키워드 검색"
             />
             {!query && <span className="kbd">⌘ K</span>}
           </label>
+          <button type="button" className="icon-btn search-toggle"
+            aria-label={searchOpen ? '검색 닫기' : '검색'} aria-expanded={searchOpen}
+            onClick={searchOpen ? closeSearch : openSearch}>
+            {searchOpen ? (
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 6l12 12M18 6L6 18" /></svg>
+            ) : (
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            )}
+          </button>
           {install && (
             <button className="icon-btn" title="앱 설치" aria-label="앱 설치" onClick={install}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -296,12 +301,6 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
               </svg>
             </button>
           )}
-          <button className="icon-btn" title="저장한 기사" onClick={onShowSaved}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-            </svg>
-            {savedCount > 0 && <span className="badge-count">{savedCount}</span>}
-          </button>
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -321,24 +320,14 @@ function Header({ query, onQuery, savedCount, onShowSaved, theme, onToggleTheme,
 }
 
 /* ---------- tabs ---------- */
-function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved, viewHome, subcats, keyword, onKeyword }) {
+function Tabs({ active, onChange, articles, viewHome, subcats, keyword, onKeyword }) {
   const counts = useMemo(() => tabCounts(articles), [articles]);
   return (
     <nav className="tabs-wrap">
       <div className="tabs-inner">
         <div className="tabs-meta">
-          {viewSaved ? '저장한 기사' : `카테고리 · ${TABS.length}개 채널`}
+          {`카테고리 · ${TABS.length}개 채널`}
         </div>
-        {viewSaved ? (
-          <div className="tabs">
-            <button className="tab active">
-              저장된 기사 <span className="count">{savedCount}</span>
-            </button>
-            <button className="tab" onClick={onClearSaved}>
-              <span style={{ color: 'var(--muted)' }}>← 전체 피드로 돌아가기</span>
-            </button>
-          </div>
-        ) : (
           <div className="tabs">
             {TABS.map(t => (
               <button
@@ -352,8 +341,7 @@ function Tabs({ active, onChange, articles, savedCount, viewSaved, onClearSaved,
               </button>
             ))}
           </div>
-        )}
-        {!viewSaved && subcats && (
+        {subcats && (
           <SubCategoryBar items={subcats} total={counts[active] || 0} active={keyword} onChange={onKeyword} />
         )}
       </div>
@@ -390,21 +378,18 @@ function SubCategoryBar({ items, total, active, onChange }) {
 }
 
 /* ---------- feed meta ---------- */
-function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
+function FeedMeta({ activeTab, count, query, keyword }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
   if (query) {
     title = `\u201c${query}\u201d 검색 결과`;
     sub = `${count}개 기사`;
-  } else if (viewSaved) {
-    title = '저장한 기사';
-    sub = `${count}개 기사 · 북마크됨`;
   } else {
     const t = TABS.find(t => t.id === activeTab);
     title = t.label;
     sub = keyword ? `${today} · ${keyword} · ${count}개 기사` : `${today} · ${count}개 기사`;
   }
-  const activeDesc = (!query && !viewSaved)
+  const activeDesc = !query
     ? (TABS.find(t => t.id === activeTab) || {}).desc
     : null;
   return (
@@ -414,7 +399,7 @@ function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
         <div className="feed-sub">{sub}</div>
         {activeDesc && <p className="feed-desc">{activeDesc}</p>}
       </div>
-      {!viewSaved && !query && (
+      {!query && (
         <div className="feed-toolbar"></div>
       )}
     </div>
@@ -422,7 +407,7 @@ function FeedMeta({ activeTab, count, viewSaved, query, keyword }) {
 }
 
 /* ---------- modal ---------- */
-function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArticles, onSelectKeyword }) {
+function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword }) {
   const bodyRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -481,15 +466,6 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <div className="modal-progress" style={{ width: `${progress}%` }} />
-        <button
-          className={`modal-save ${isSaved ? 'saved' : ''}`}
-          onClick={() => onToggleSave(article.id)}
-          aria-label="저장"
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill={isSaved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8">
-            <path d="M6 4h12v17l-6-4-6 4z" strokeLinejoin="round" />
-          </svg>
-        </button>
         <button className="modal-close" onClick={onClose} aria-label="닫기">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M6 6l12 12M18 6L6 18" />
@@ -602,7 +578,7 @@ function ArticleModal({ article, onClose, isSaved, onToggleSave, onOpen, allArti
 }
 
 /* ---------- date grouped feed with pagination ---------- */
-function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query, expandAll }) {
+function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
   const [showAllState, setShowAll] = useState(false);
   const showAll = showAllState || expandAll;   // 서브 카테고리 선택 시에는 지난 기사까지 모두 표시
 
@@ -633,8 +609,6 @@ function DateGroupedFeed({ articles, onOpen, onToggleSave, saved, query, expandA
           iso={g.iso}
           items={g.items}
           onOpen={onOpen}
-          onToggleSave={onToggleSave}
-          saved={saved}
           query={query}
           isToday={daysAgo(g.iso) === 0}
         />
@@ -1159,10 +1133,6 @@ function App() {
   articlesRef.current = articles;
   const keywordTabsRef = useRef(keywordTabs);
   keywordTabsRef.current = keywordTabs;
-  const [saved, setSaved] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('aiad:saved') || '[]'); } catch { return []; }
-  });
-  const [viewSaved, setViewSaved] = useState(false);
   const [loading, setLoading] = useState(false);
 
   // 기사 창 열기/닫기 — 열면 주소가 /articles/<id>/ 가 되고, 닫으면 원래 화면 주소로 돌아간다
@@ -1201,7 +1171,6 @@ function App() {
       setViewHome(route.home);
       if (!route.home) {
         setActiveTab(route.tab);
-        setViewSaved(false);
         setQuery('');
         const hit = ((keywordTabsRef.current || {})[route.tab] || []).find(k => kwSlug(k.label) === route.kwSlug);
         setKeyword(hit ? hit.label : null);
@@ -1211,6 +1180,9 @@ function App() {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
+  // 북마크 기능을 없애며 예전에 저장해 둔 목록을 지운다
+  useEffect(() => { try { localStorage.removeItem('aiad:saved'); } catch (e) {} }, []);
+
   // theme
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -1218,21 +1190,13 @@ function App() {
     localStorage.setItem('aiad:theme', theme);
   }, [theme]);
 
-  // persist saved
-  useEffect(() => {
-    localStorage.setItem('aiad:saved', JSON.stringify(saved));
-  }, [saved]);
-
   // simulate loading on tab switch (briefly)
   useEffect(() => {
     setLoading(true);
     const t = setTimeout(() => setLoading(false), 280);
     return () => clearTimeout(t);
-  }, [activeTab, viewSaved, keyword]);
+  }, [activeTab, keyword]);
 
-  const toggleSave = (id) => {
-    setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
-  };
   const toggleTheme = () => {
     setTheme(t => t === 'dark' ? 'light' : 'dark');
   };
@@ -1240,8 +1204,8 @@ function App() {
   // 서브 카테고리 목록 (현재 탭)
   const subcats = useMemo(() => subCategoriesFor(keywordTabs, articles, activeTab), [keywordTabs, articles, activeTab]);
   const activeKeyword = subcats.some(c => c.label === keyword) ? keyword : null;
-  const showSubcats = !viewHome && !viewSaved && !query.trim() && dataState === 'ready';
-  const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewSaved(false); setViewHome(false); setQuery(''); };
+  const showSubcats = !viewHome && !query.trim() && dataState === 'ready';
+  const goTab = (id) => { setActiveTab(id); setKeyword(null); setViewHome(false); setQuery(''); };
 
   // 탭·서브 카테고리를 바꾸면 주소도 /topics/... 로 바꾼다 (공유·새로고침해도 같은 화면).
   // 저장한 기사·검색 화면은 주소를 바꾸지 않는다. 데이터가 오기 전에는 들어온 주소를 그대로 둔다.
@@ -1249,18 +1213,16 @@ function App() {
   useEffect(() => {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
-    if (section !== 'updates' && !onArticle && (viewSaved || query.trim())) return;
+    if (section !== 'updates' && !onArticle && query.trim()) return;
     const path = section === 'updates' ? updatesPath(updCat, updCompany) : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, section, updCat, updCompany, viewHome, viewSaved, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, viewHome, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
-  if (viewSaved) {
-    visible = visible.filter(a => saved.includes(a.id));
-  } else if (query.trim()) {
+  if (query.trim()) {
     const q = query.trim().toLowerCase();
     visible = visible.filter(a =>
       a.headline.toLowerCase().includes(q) ||
@@ -1283,12 +1245,10 @@ function App() {
     <div className="page">
       <Header
         query={query}
-        onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewSaved(false); setViewHome(false); } }}
-        savedCount={saved.length}
-        onShowSaved={() => { setSection('news'); setViewSaved(true); setViewHome(false); setQuery(''); }}
+        onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewHome(false); } }}
         theme={theme}
         onToggleTheme={toggleTheme}
-        onShowHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); }}
+        onShowHome={() => { setSection('news'); setViewHome(true); setQuery(''); }}
         onMenu={() => setSideOpen(true)}
       />
       <div className="layout">
@@ -1300,7 +1260,7 @@ function App() {
         onOpen={() => setSideOpen(true)}
         onClose={() => setSideOpen(false)}
         counts={tabCounts(articles)}
-        onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); window.scrollTo({ top: 0 }); }}
+        onNewsHome={() => { setSection('news'); setViewHome(true); setQuery(''); window.scrollTo({ top: 0 }); }}
         onTab={(id) => { setSection('news'); goTab(id); window.scrollTo({ top: 0 }); }}
         onUpdates={() => goUpdates(null, null)}
         updCat={updCat}
@@ -1325,9 +1285,6 @@ function App() {
           active={activeTab}
           onChange={goTab}
           articles={articles}
-          savedCount={saved.length}
-          viewSaved={viewSaved}
-          onClearSaved={() => setViewSaved(false)}
           viewHome={viewHome}
           subcats={showSubcats ? subcats : null}
           keyword={activeKeyword}
@@ -1339,7 +1296,6 @@ function App() {
         <FeedMeta
           activeTab={activeTab}
           count={visible.length}
-          viewSaved={viewSaved}
           query={query.trim()}
           keyword={activeKeyword}
         />
@@ -1358,19 +1314,15 @@ function App() {
             {[0,1,2,3,4,5].map(i => <SkeletonCard key={i} />)}
           </div>
         ) : visible.length === 0 ? (
-          viewSaved ? (
-            <EmptyState message="저장한 기사가 없어요" sub="기사 카드의 북마크 아이콘을 눌러 나중에 읽을 기사를 모아보세요." />
-          ) : query ? (
+          query ? (
             <EmptyState message={`\u201c${query}\u201d에 대한 결과가 없어요`} sub="다른 키워드를 시도해 보세요." />
           ) : (
             <EmptyState />
           )
-        ) : (groupByDate && !query && !viewSaved) ? (
+        ) : (groupByDate && !query) ? (
           <DateGroupedFeed
             articles={visible}
             onOpen={openArticle}
-            onToggleSave={toggleSave}
-            saved={saved}
             query={query.trim()}
             expandAll={!!activeKeyword}
           />
@@ -1381,8 +1333,6 @@ function App() {
                 key={a.id}
                 article={a}
                 onOpen={openArticle}
-                onToggleSave={toggleSave}
-                isSaved={saved.includes(a.id)}
                 query={query.trim()}
               />
             ))}
@@ -1403,8 +1353,6 @@ function App() {
         <ArticleModal
           article={open}
           onClose={closeArticle}
-          isSaved={saved.includes(open.id)}
-          onToggleSave={toggleSave}
           onOpen={openArticle}
           allArticles={articles}
           onSelectKeyword={(tab, k) => {

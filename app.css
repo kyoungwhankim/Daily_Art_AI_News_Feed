@@ -190,22 +190,11 @@ html::before {
   transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
   position: relative;
 }
+.search-toggle { display: none; }
+.search input { -webkit-appearance: none; appearance: none; }
+.search input::-webkit-search-cancel-button { display: none; }
 .icon-btn:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
 .icon-btn:active { transform: translateY(1px); box-shadow: none; }
-.icon-btn .badge-count {
-  position: absolute; top: -4px; right: -4px;
-  min-width: 18px; height: 18px;
-  background: var(--accent);
-  color: var(--card);
-  font-size: 9px;
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 0 5px;
-  display: grid; place-items: center;
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  border: 1.5px solid var(--stroke);
-}
 
 /* tabs */
 .tabs-wrap {
@@ -343,6 +332,16 @@ html::before {
   .header-inner { padding: 14px 18px; gap: 12px; }
   .feed, .tabs-inner, .feed-meta { padding-left: 18px; padding-right: 18px; }
   .search { display: none; }
+  /* 돋보기 버튼으로 헤더 아래에 펼치는 검색 줄 */
+  .search-toggle { display: grid; }
+  .header-inner { position: relative; }
+  .site-header.searching .header-inner { padding-bottom: 66px; }
+  .site-header.searching .search {
+    display: flex; position: absolute; left: 18px; right: 18px; bottom: 14px;
+    width: auto; height: 42px;
+  }
+  .search input { font-size: 16px; }   /* 16px 미만이면 iOS가 화면을 확대한다 */
+  .search .kbd { display: none; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0; }
   .tabs::-webkit-scrollbar { display: none; }
 }
@@ -430,20 +429,6 @@ html::before {
   border: 1.5px solid var(--stroke);
   transform: rotate(2deg);
 }
-.bookmark-btn {
-  position: absolute; top: 10px; right: 10px;
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  background: var(--card);
-  display: grid; place-items: center;
-  border: 2px solid var(--stroke);
-  color: var(--ink);
-  cursor: pointer;
-  z-index: 2;
-  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1));
-}
-.bookmark-btn:hover { transform: scale(1.08) rotate(-4deg); }
-.bookmark-btn.saved { color: var(--accent-strong); background: var(--accent-soft); }
 
 .card-body {
   padding: 18px 20px 20px;
@@ -587,7 +572,7 @@ mark {
   width: 0;
   transition: width .1s linear;
 }
-.modal-close, .modal-save {
+.modal-close {
   position: absolute;
   top: 16px;
   width: 38px; height: 38px;
@@ -601,12 +586,10 @@ mark {
   transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
 }
 .modal-close { right: 16px; }
-.modal-save { right: 64px; }
-.modal-close:hover, .modal-save:hover {
+.modal-close:hover {
   box-shadow: var(--shadow-pop-sm);
   transform: translateY(-1px);
 }
-.modal-save.saved { color: var(--accent-strong); background: var(--accent-soft); }
 
 .modal-hero {
   flex: 0 0 auto;
