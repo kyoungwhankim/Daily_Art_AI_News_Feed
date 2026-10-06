@@ -766,9 +766,11 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
   );
 }
 
-/* ---------- sidebar (뉴스 › AI 뉴스 / 업데이트) ---------- */
-function Sidebar({ section, open, onClose, onNews, onUpdates, newsCount }) {
-  const [groupOpen, setGroupOpen] = useState(true);
+/* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
+// 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
+function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts }) {
+  const [newsOpen, setNewsOpen] = useState(true);
+  const newsActive = section === 'news';
   return (
     <>
       <div className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
@@ -779,29 +781,42 @@ function Sidebar({ section, open, onClose, onNews, onUpdates, newsCount }) {
         </div>
         <nav className="side-nav">
           <div className="side-group">
-            <button type="button" className="side-group-head" aria-expanded={groupOpen} onClick={() => setGroupOpen(o => !o)}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 5h13v14H6a2 2 0 0 1-2-2z" /><path d="M17 9h3v8a2 2 0 0 1-2 2" /><path d="M8 9h5M8 13h5" />
-              </svg>
-              <span>뉴스</span>
-              <svg className={`side-caret ${groupOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
-            </button>
-            {groupOpen && (
+            <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={onNewsHome}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 5h13v14H6a2 2 0 0 1-2-2z" /><path d="M17 9h3v8a2 2 0 0 1-2 2" /><path d="M8 9h5M8 13h5" />
+                </svg>
+                <span>뉴스</span>
+              </button>
+              <button type="button" className="side-caret-btn" aria-label={newsOpen ? '접기' : '펼치기'} aria-expanded={newsOpen} onClick={() => setNewsOpen(o => !o)}>
+                <svg className={`side-caret ${newsOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+            </div>
+            {newsOpen && (
               <ul className="side-list">
-                <li>
-                  <button type="button" className={`side-item ${section === 'news' ? 'active' : ''}`} onClick={onNews}>
-                    <span>AI 뉴스</span>
-                    {newsCount > 0 && <span className="side-count">{newsCount}</span>}
-                  </button>
-                </li>
-                <li>
-                  <button type="button" className={`side-item ${section === 'updates' ? 'active' : ''}`} onClick={onUpdates}>
-                    <span>업데이트</span>
-                    <span className="side-badge">NEW</span>
-                  </button>
-                </li>
+                {TABS.map(t => (
+                  <li key={t.id}>
+                    <button type="button"
+                      className={`side-item ${newsActive && !viewHome && activeTab === t.id ? 'active' : ''}`}
+                      onClick={() => onTab(t.id)}>
+                      <span>{t.label}</span>
+                      {counts[t.id] > 0 && <span className="side-count">{counts[t.id]}</span>}
+                    </button>
+                  </li>
+                ))}
               </ul>
             )}
+          </div>
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'updates' ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={onUpdates}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+                </svg>
+                <span>업데이트</span>
+                <span className="side-badge">NEW</span>
+              </button>
+            </div>
           </div>
         </nav>
       </aside>
@@ -1065,10 +1080,13 @@ function App() {
       <div className="layout">
       <Sidebar
         section={section}
+        viewHome={viewHome}
+        activeTab={activeTab}
         open={sideOpen}
         onClose={() => setSideOpen(false)}
-        newsCount={articles.length}
-        onNews={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        counts={tabCounts(articles)}
+        onNewsHome={() => { setSection('news'); setViewHome(true); setViewSaved(false); setQuery(''); setSideOpen(false); window.scrollTo({ top: 0 }); }}
+        onTab={(id) => { setSection('news'); goTab(id); setSideOpen(false); window.scrollTo({ top: 0 }); }}
         onUpdates={() => { setSection('updates'); setSideOpen(false); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">

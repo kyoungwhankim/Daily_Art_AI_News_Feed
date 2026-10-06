@@ -7,7 +7,7 @@ window.AIAD = {
     { id: 'art', label: '아트 전반 AI 뉴스', desc: '게임 제작과 무관하게 모든 아트 관련 AI 뉴스들을 매일 업데이트합니다.' },
   ],
 
-  // 사이드바 '뉴스 › 업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스 회사 (분류 순서 = 필터 순서)
+  // 사이드바 대분류 '업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스 회사 (분류 순서 = 필터 순서)
   updateSources: [
     { category: '이미지', name: 'Midjourney', url: 'https://updates.midjourney.com/' },
     { category: '이미지', name: 'OpenAI', url: 'https://openai.com/news/' },

@@ -1433,17 +1433,25 @@ mark {
   padding: 18px 14px;
   z-index: 15;
 }
+.side-group + .side-group { margin-top: 6px; }
 .side-group-head {
-  width: 100%;
-  display: flex; align-items: center; gap: 10px;
-  padding: 10px 12px;
-  border: 0; background: transparent; cursor: pointer;
-  color: var(--ink); font: inherit; font-size: 15px; font-weight: 700;
+  display: flex; align-items: center;
   border-radius: 10px;
 }
 .side-group-head:hover { background: var(--paper-2); }
-.side-caret { margin-left: auto; color: var(--muted); transition: transform .15s ease; transform: rotate(-90deg); }
+.side-group-head.active { background: var(--accent-soft); }
+.side-group-head.active .side-group-link { color: var(--accent-strong); }
+.side-group-link {
+  flex: 1; min-width: 0;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  border: 0; background: transparent; cursor: pointer;
+  color: var(--ink); font: inherit; font-size: 15px; font-weight: 700; text-align: left;
+}
+.side-caret-btn { border: 0; background: transparent; cursor: pointer; padding: 10px 12px; color: var(--muted); display: grid; place-items: center; }
+.side-caret { transition: transform .15s ease; transform: rotate(-90deg); }
 .side-caret.open { transform: none; }
+.side-group-link .side-badge { margin-left: auto; }
 .side-list { list-style: none; margin: 4px 0 0; padding: 0 0 0 14px; border-left: 1.5px solid var(--hairline); margin-left: 20px; }
 .side-item {
   width: 100%;

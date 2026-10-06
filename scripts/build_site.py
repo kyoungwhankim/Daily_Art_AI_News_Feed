@@ -542,7 +542,7 @@ def main():
     write(out, 'sw.js', sw.replace('__VERSION__', version)
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
-    # 사이드바 '뉴스 › 업데이트' 페이지 (데이터 연결 전이라 검색에는 내보내지 않는다)
+    # 사이드바 대분류 '업데이트' 페이지 (데이터 연결 전이라 검색에는 내보내지 않는다)
     write(out, 'updates/index.html', shell(
         'updates/', f'업데이트 | {SITE_NAME}', '아트 관련 AI 서비스 회사들의 공식 업데이트 소식',
         '<h1 class="feed-title">업데이트</h1>', {'@context': 'https://schema.org', '@type': 'WebPage',
