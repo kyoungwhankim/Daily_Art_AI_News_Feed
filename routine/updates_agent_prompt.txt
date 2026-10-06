@@ -7,9 +7,9 @@ config.js (updateSources) for the categories below, write each one as a short
 Korean entry, and save them to the hand-off file. The main session merges that
 file into the repository and pushes it — you never touch git.
 
-  CATEGORIES   : 이미지
-                 (only these categories are collected. To add a category later,
-                  add its Korean name here, e.g. "이미지 영상")
+  CATEGORIES   : all categories in config.js (이미지, 영상, 3D, 게임 에셋, 모션, 음악·음성, 도구)
+                 (to collect only some, add  --category "이미지" "게임 에셋"  — each name quoted —
+                  to the `services` and `state` commands in STEP 1)
   REPO         : /home/user/Daily_Art_AI_News_Feed   (read only — do not edit any file in it)
   WORK DIR     : /tmp/updates/
   HAND-OFF FILE: /tmp/updates/entries.json  (only scripts/service_updates.py save writes it)
@@ -42,10 +42,8 @@ STEP 1 — SETUP
 mkdir -p /tmp/updates && rm -f /tmp/updates/DONE
 python3 -c "import json; json.dump([], open('/tmp/updates/entries.json','w'))"
 cd /home/user/Daily_Art_AI_News_Feed
-python3 scripts/service_updates.py services --category 이미지
-python3 scripts/service_updates.py state --category 이미지
-
-(Use the CATEGORIES value above in both --category arguments.)
+python3 scripts/service_updates.py services
+python3 scripts/service_updates.py state
 
 `services` lists each service's slug, its notice / dev sources and its match words.
 `state` says, per service, what is already stored and which mode applies:
@@ -82,7 +80,13 @@ For each service:
       - Keep: new models / versions, new features, API changes, app releases, integrations,
         pricing or plan changes, policy changes, shutdowns / deprecations.
       - Skip: tutorials, prompt guides, customer stories, case studies, hiring, events,
-        research papers without a product release, SEO articles, posts about other products.
+        research papers without a product release, SEO articles, posts about other products,
+        and maintenance releases whose notes contain only bug fixes with no new feature or
+        user-visible change (if one comes out the same day as a feature release, put it in
+        that entry's details instead).
+      - For broad platforms (e.g. Claude, Hugging Face, Blender, Figma, Unity, Roblox, NVIDIA),
+        keep what the product name in config.js stands for and what matters to artists and
+        developers using it: new models / versions, major features, API changes, releases.
 
  c) One entry per announcement:
       - a blog / news post → one entry, url = that post's URL
