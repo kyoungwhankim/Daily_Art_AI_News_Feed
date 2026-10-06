@@ -59,6 +59,10 @@ a.modal-keyword { text-decoration: none; }
 .static-table th, .static-table td { border: 1.5px solid var(--stroke); padding: 8px 10px; text-align: left; vertical-align: top; }
 .static-table th { background: var(--paper-2); white-space: nowrap; }
 .site-footer a { color: inherit; }
+.static-contact { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 24px 0 0;
+  padding: 20px 24px; border: 2px solid var(--stroke); border-radius: 14px; background: var(--card); }
+.static-contact dt { font-weight: 700; }
+.static-contact dd { margin: 0; overflow-wrap: anywhere; }
 
 @media (max-width: 640px) {
   .static-main { padding: 24px 18px 60px; }

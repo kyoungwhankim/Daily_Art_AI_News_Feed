@@ -49,8 +49,8 @@ SITE_TAGLINE = '한국어 큐레이션'
 SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한국어로 정리합니다. '
              '게임 제작 속 AI, AI 도입 뉴스, 아트 전반 AI 뉴스.')
 # 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
-PRIVACY_OWNER = '[운영자 이름]'          # 개인정보 보호책임자
-CONTACT_EMAIL = '[문의 이메일]'
+PRIVACY_OWNER = '김경환'          # 개인정보 보호책임자 (contact/ 페이지에도 쓴다)
+CONTACT_EMAIL = 'kyoungwhankim.dev@gmail.com'
 PRIVACY_DATE = '2026년 10월 6일'
 TABS = [
     ('games', '게임 제작 속 AI', '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.'),
@@ -183,6 +183,7 @@ def head(root: str, title: str, desc: str, canonical: str, og_type='website',
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="google-adsense-account" content="ca-pub-7751014405174019" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7751014405174019" crossorigin="anonymous"></script>
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
 <link rel="canonical" href="{esc(canonical)}" />
@@ -224,7 +225,7 @@ def header(root: str) -> str:
 def footer(root: str = '/') -> str:
     return f"""<footer class="site-footer">
   <div class="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-  <div>큐레이션 · 한국어 번역 · <a href="{root}privacy/">개인정보처리방침</a></div>
+  <div>큐레이션 · 한국어 번역 · <a href="{root}contact/">문의</a> · <a href="{root}privacy/">개인정보처리방침</a></div>
 </footer>
 """
 
@@ -453,6 +454,27 @@ def build_redirect_site(out: str) -> None:
     write(out, 'index.html', page)
     write(out, '404.html', page)
     print(f'Built redirect site {out} → {new}')
+
+
+def build_contact() -> str:
+    root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
+    return (head(root, f'문의 | {SITE_NAME}', f'{SITE_NAME} 관리자 연락처입니다.', abs_url('contact/'))
+            + f"""<body>
+<div class="page">
+{header(root)}
+<main class="static-main static-doc">
+  <h1 class="feed-title">문의</h1>
+  <p class="feed-sub">기사 내용 정정, 저작권, 제휴, 개인정보 관련 문의는 아래 이메일로 보내 주세요.</p>
+  <dl class="static-contact">
+    <dt>관리자</dt><dd>{esc(PRIVACY_OWNER)}</dd>
+    <dt>이메일</dt><dd><a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a></dd>
+  </dl>
+</main>
+{footer(root)}
+</div>
+</body>
+</html>
+""")
 
 
 def build_privacy() -> str:
@@ -718,10 +740,11 @@ def main():
                      f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
                      entries, [(label, f'updates/{slug}/')], show_service=False)
 
-    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['privacy/'], upd_dated))
+    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
     write(out, 'privacy/index.html', fin(build_privacy()))
+    write(out, 'contact/index.html', fin(build_contact()))
     if PREVIEW:
         write(out, 'robots.txt', 'User-agent: *\nDisallow: /\n')
         os.remove(os.path.join(out, 'sitemap.xml'))
