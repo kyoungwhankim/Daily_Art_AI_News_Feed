@@ -45,11 +45,21 @@ STEP 1 — SETUP
 
 mkdir -p /tmp/updates && rm -f /tmp/updates/DONE
 python3 -c "import json; json.dump([], open('/tmp/updates/entries.json','w'))"
+: > /tmp/updates/failed_sources.txt
 cd /home/user/Daily_Art_AI_News_Feed
-python3 scripts/service_updates.py services
+python3 scripts/detect_source_changes.py check --out /tmp/updates/changed.json
 python3 scripts/service_updates.py state
 
-`services` lists each service's slug, its notice / dev sources and its match words.
+`detect_source_changes.py check` (a script — no AI reading) downloads every source and
+compares it with the last check. It prints ONLY the services and sources you must read
+today, with the reason:
+  "N new feed item(s)"  → the new feed posts are listed under it (date, title, link)
+  "page text changed"   → the page changed since the last check; find the new items on it
+  "drawn by JavaScript" / "could not fetch" → cannot be compared; read it with WebFetch
+  "BACKFILL" / "first check" → read the source fully
+Every service and source NOT printed is unchanged — do not open it; it has nothing new.
+If it prints "Nothing changed", skip STEP 2 and go to STEP 3.
+
 `state` says, per service, what is already stored and which mode applies:
 
   BACKFILL     the service has no stored entries yet → collect its update history from the
@@ -60,19 +70,26 @@ python3 scripts/service_updates.py state
                be added there after the latest stored date.
 
 ---------------------------------------------------------------------
-STEP 2 — COLLECT, one service at a time (in the order `services` printed)
+STEP 2 — COLLECT, one service at a time (only the services `check` printed, in that order)
 ---------------------------------------------------------------------
 
-For each service:
+For each printed service (the slug, mode and match words are on its line):
 
- a) Read every notice and dev source with the reader script:
+ a) Read ONLY the sources printed under it, with the reader script:
 
       python3 scripts/read_source.py "SOURCE_URL" --since YYYY.MM.DD
 
     --since is for feeds (INCREMENTAL: the latest stored date). For HTML pages read the text
     and use --offset to continue long pages. If STATUS is not 200, or the page says
     "almost no text" (drawn by JavaScript), read it once with WebFetch instead. If both fail,
-    move on to the next source and note it for the FINISH report.
+    move on to the next source and note it for the FINISH report, and add its URL as one line to
+    /tmp/updates/failed_sources.txt (then it is checked again tomorrow):
+
+      echo "SOURCE_URL" >> /tmp/updates/failed_sources.txt
+
+    For a feed with new items, the printed new items are what you need — read a post itself only
+    when the feed text is too short to write the entry. For a changed page, compare it with the
+    service's latest stored entries (`state` output) to find what is new.
 
     BACKFILL needs the whole history, not just the newest page of a feed: follow the official
     archive (older pages: /page/2/, ?page=2, "older posts", year/month sections of a changelog),
@@ -140,6 +157,8 @@ For each service:
 
  f) Print one line before moving on:
       DONE <slug>: <mode>, read <n> sources (<failed ones>), saved <n> entries (<first date> – <last date>)
+
+Read only what `check` printed. Do not open other services' sources "just in case".
 
 A day with no new updates for a service is normal — save nothing and move on.
 
