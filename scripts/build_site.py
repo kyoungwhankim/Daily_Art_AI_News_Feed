@@ -423,6 +423,68 @@ def updates_fallback(title: str, desc: str, entries: list, by_slug: dict, links:
             + ''.join(update_item(root, e, by_slug[e['service']], show_service) for e in entries) + '</ul>')
 
 
+# ---------- 아티스트 브리핑 — 직군별 추천 (/for/, /for/<직군>/) ----------
+# 고르는 기준은 app.jsx roleArticles·roleUpdates와 같아야 한다 (config.js roles 주석 참고).
+ROLE_LIST = 30   # 직군 페이지의 검색엔진용 목록에 넣을 최근 기사·업데이트 수
+
+
+def load_roles() -> list:
+    js = "global.window={};require(process.argv[1]);console.log(JSON.stringify(window.AIAD.roles||[]))"
+    out = subprocess.run(['node', '-e', js, os.path.join(feed_data.REPO, 'config.js')],
+                         capture_output=True, text=True, check=True).stdout
+    return json.loads(out)
+
+
+def compile_terms(terms: list) -> list:
+    out = []
+    for t in terms:
+        if re.fullmatch(r'[\x00-\x7f]+', t):
+            out.append((t, re.compile(r'(?<![a-z0-9])' + re.escape(t.lower()) + r'(?![a-z0-9])'), None))
+        else:
+            out.append((t, None, re.sub(r'\s+', '', t.lower())))
+    return out
+
+
+def term_hits(compiled: list, text: str) -> set:
+    low = (text or '').lower()
+    flat = re.sub(r'\s+', '', low)
+    return {t for t, rx, ko in compiled if (rx.search(low) if rx else ko in flat)}
+
+
+def role_articles(role: dict, articles: list) -> list:
+    ct, tags = compile_terms(role.get('terms', [])), set(role.get('tags', []))
+    out = []
+    for a in articles:
+        h = term_hits(ct, a['headline'])
+        s = term_hits(ct, a['summary']) - h
+        score = 3 * len(tags & set(a.get('keywords', []))) + 3 * len(h) + 2 * len(s)
+        if score < 3:
+            score += len(term_hits(ct, html.unescape(re.sub(r'<[^>]+>', ' ', a.get('body', '')))) - h - s)
+        if score >= 3:
+            out.append(a)
+    return out
+
+
+def role_updates(role: dict, entries: list) -> list:
+    ct, svc = compile_terms(role.get('terms', [])), set(role.get('services', []))
+    return [e for e in entries if e['service'] in svc or term_hits(ct, e['title'])
+            or len(term_hits(ct, e['summary'] + ' ' + ' '.join(e.get('details') or []))) >= 2]
+
+
+def role_fallback(role: dict, news: list, upd: list, by_slug: dict, roles: list) -> str:
+    root = '/'
+    nav = '<div class="subcats">' + ''.join(
+        f'<a class="chip subcat{" active" if r["id"] == role["id"] else ""}" href="{href(root, "for/" + r["id"] + "/")}">'
+        f'{esc(r["label"])}</a>' for r in roles) + '</div>'
+    return (f'<h1 class="feed-title">{esc(role["label"])} 브리핑 — 추천 뉴스·업데이트</h1>'
+            f'<p class="feed-sub">{esc(role["desc"])} · 키워드: {esc(", ".join(role["terms"][:12]))}</p>' + nav
+            + f'<h2 class="static-date">추천 뉴스 ({len(news)}건 중 최근 {min(len(news), ROLE_LIST)}건)</h2>'
+            + grouped_list(root, news[:ROLE_LIST])
+            + f'<h2 class="static-date">추천 업데이트 ({len(upd)}건 중 최근 {min(len(upd), ROLE_LIST)}건)</h2>'
+            + '<ul class="static-list">'
+            + ''.join(update_item(root, e, by_slug[e['service']], True) for e in upd[:ROLE_LIST]) + '</ul>')
+
+
 def build_redirect_site(out: str) -> None:
     """예전 주소(GitHub Pages)용: index.html·404.html이 같은 경로의 새 주소로 넘겨 준다."""
     if os.path.isdir(out):
@@ -739,6 +801,27 @@ def main():
             upd_page(f'updates/{slug}/{sv["slug"]}/', f'{who} 업데이트',
                      f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
                      entries, [(label, f'updates/{slug}/')], show_service=False)
+
+    # 아티스트 브리핑 (직군별 추천)
+    roles = load_roles()
+    if roles:
+        role_desc = '게임 아트 직군(3D·2D·애니메이터·리거·VFX·테크니컬 아티스트·사운드 등)별로 관심 가질 AI 뉴스와 서비스 업데이트를 모았어요.'
+        write(out, 'for/index.html', shell(
+            'for/', f'아티스트 브리핑 | {SITE_NAME}', role_desc,
+            '<h1 class="feed-title">아티스트 브리핑</h1>'
+            f'<p class="feed-sub">{esc(role_desc)}</p><ul class="static-list">' + ''.join(
+                f'<li><a href="{href("/", "for/" + r["id"] + "/")}">{esc(r["label"])}</a><p>{esc(r["desc"])}</p></li>'
+                for r in roles) + '</ul>',
+            collection('for/', '아티스트 브리핑', role_desc)))
+        listing_paths.append('for/')
+        for r in roles:
+            p = f'for/{r["id"]}/'
+            news, upd = role_articles(r, articles), role_updates(r, all_upd)
+            d = f'{r["label"]}를 위한 AI 뉴스와 서비스 업데이트 — {r["desc"]}'
+            write(out, p + 'index.html', shell(
+                p, f'{r["label"]} 브리핑 | {SITE_NAME}', d,
+                role_fallback(r, news, upd, by_slug, roles), collection(p, f'{r["label"]} 브리핑', d)))
+            listing_paths.append(p)
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))

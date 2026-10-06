@@ -144,6 +144,18 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 - **모델**: 업데이트 에이전트는 Haiku로 띄운다(`daily_feed_prompt.txt` PHASE 0). 뉴스 조사·게시와 합치기·푸시는 루틴 설정의 모델.
 - **출처 점검**: `python3 scripts/check_update_sources.py` — GitHub Actions(`check-update-sources.yml`)가 매주 월요일에 돌려서, 열리지 않는 출처가 생기면 실패로 알려 준다.
 
+## 아티스트 브리핑 (직군별 추천)
+
+게임 아트 직군(3D·2D·애니메이터·리거·VFX·테크니컬 아티스트·레벨·사운드·UI)마다 미리 고른 키워드로
+이미 모은 뉴스와 서비스 업데이트 중 관련 있는 것만 보여 준다. 따로 수집하지 않고, 화면에서 바로 고른다.
+
+- 내 직군: 메인 첫 방문 질문 카드나 헤더의 '내 직군'에서 고른다 (브라우저 localStorage `aiad:role`). 고르면 메인 맨 위에
+  '오늘의 ○○ 브리핑'(지난 방문 이후 새 소식 표시)이 나오고, 기사 카드·업데이트·기사 창에 추천 이유가 붙는다
+
+- 직군·키워드: `config.js`의 `roles` (tags = 기사 서브 카테고리, terms = 찾을 단어, services = 업데이트 서비스)
+- 고르는 기준: `app.jsx` roleArticles·roleUpdates (검색엔진용 `/for/<직군>/` 페이지는 `scripts/build_site.py` role_articles·role_updates — 두 곳이 같아야 한다)
+- 추천이 엉뚱하면 그 직군의 terms에서 흔한 단어를 빼고, 빠진 소식이 있으면 단어를 더한다
+
 ## 루틴 구조
 
 하나의 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다. 서비스 업데이트만 별도 에이전트가 맡는다.
