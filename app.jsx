@@ -769,7 +769,10 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
 
 /* ---------- sidebar (대분류: 뉴스 · 업데이트) ---------- */
 // 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
-function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts, updCat, onUpdCat }) {
+// 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 회사)가 펼쳐진다.
+// 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
+function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts,
+                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany }) {
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
   const newsActive = section === 'news';
@@ -796,16 +799,33 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
             </div>
             {newsOpen && (
               <ul className="side-list">
-                {TABS.map(t => (
-                  <li key={t.id}>
-                    <button type="button"
-                      className={`side-item ${newsActive && !viewHome && activeTab === t.id ? 'active' : ''}`}
-                      onClick={() => onTab(t.id)}>
-                      <span>{t.label}</span>
-                      {counts[t.id] > 0 && <span className="side-count">{counts[t.id]}</span>}
-                    </button>
-                  </li>
-                ))}
+                {TABS.map(t => {
+                  const here = newsActive && !viewHome && activeTab === t.id;
+                  return (
+                    <li key={t.id}>
+                      <button type="button"
+                        className={`side-item ${here && !keyword ? 'active' : ''} ${here ? 'expanded' : ''}`}
+                        aria-expanded={here}
+                        onClick={() => onTab(t.id)}>
+                        <span>{t.label}</span>
+                        {counts[t.id] > 0 && <span className="side-count">{counts[t.id]}</span>}
+                      </button>
+                      {here && subcats.length > 0 && (
+                        <ul className="side-sublist">
+                          {subcats.map(c => (
+                            <li key={c.label}>
+                              <button type="button" className={`side-subitem ${keyword === c.label ? 'active' : ''}`}
+                                onClick={() => onKeyword(keyword === c.label ? null : c.label)}>
+                                <span>{c.label}</span>
+                                <span className="side-count">{c.count}</span>
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>
@@ -824,14 +844,30 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
             </div>
             {updOpen && (
               <ul className="side-list">
-                {UPDATE_CATS.map(c => (
-                  <li key={c.slug}>
-                    <button type="button" className={`side-item ${section === 'updates' && updCat === c.slug ? 'active' : ''}`} onClick={() => onUpdCat(c.slug)}>
-                      <span>{c.label}</span>
-                      <span className="side-count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
-                    </button>
-                  </li>
-                ))}
+                {UPDATE_CATS.map(c => {
+                  const here = section === 'updates' && updCat === c.slug;
+                  return (
+                    <li key={c.slug}>
+                      <button type="button" className={`side-item ${here && !updCompany ? 'active' : ''} ${here ? 'expanded' : ''}`}
+                        aria-expanded={here} onClick={() => onUpdCat(c.slug)}>
+                        <span>{c.label}</span>
+                        <span className="side-count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
+                      </button>
+                      {here && (
+                        <ul className="side-sublist">
+                          {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
+                            <li key={co.slug}>
+                              <button type="button" className={`side-subitem ${updCompany === co.slug ? 'active' : ''}`}
+                                onClick={() => onUpdCompany(c.slug, co.slug)}>
+                                <span>{co.name}</span>
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>
@@ -1180,6 +1216,11 @@ function App() {
         onUpdates={() => goUpdates(null, null)}
         updCat={updCat}
         onUpdCat={(cat) => goUpdates(cat, null)}
+        updCompany={updCompany}
+        onUpdCompany={(cat, company) => goUpdates(cat, company)}
+        subcats={subcats}
+        keyword={activeKeyword}
+        onKeyword={(k) => { setKeyword(k); setSideOpen(false); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">
       {section === 'updates' ? (
