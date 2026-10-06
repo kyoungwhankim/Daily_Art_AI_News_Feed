@@ -221,7 +221,7 @@
     "details": [
       "gemini-3.1-flash-lite-image 종료 예정일은 2027년 6월 28일 이후"
     ],
-    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/release-notes#September_14_2026",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#September_14_2026",
     "source": "dev"
   },
   {
@@ -416,7 +416,7 @@
       "영상 입력 기반 이미지 생성 GA(3.1 Flash Image)",
       "US·EU 멀티 리전 엔드포인트 지원"
     ],
-    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/release-notes#August_31_2026",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#August_31_2026",
     "source": "dev"
   },
   {

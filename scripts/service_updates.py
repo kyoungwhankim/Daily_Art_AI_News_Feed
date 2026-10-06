@@ -34,7 +34,7 @@ service_updates.py — 사이드바 '업데이트'(AI 서비스 공식 업데이
         서비스별로 지금까지 모은 개수·첫/마지막 날짜·최근 항목 (수집 범위와 중복 판단용)
     python3 scripts/service_updates.py save --out FILE  < 항목.json
         표준 입력의 항목(객체 하나 또는 배열)을 검사해 FILE(수집 결과 배열)에 덧붙인다.
-        틀린 항목은 REJECTED로 이유를 보여 주고 넣지 않는다. 이미 저장됐거나(data/updates)
+        틀린 항목과 url이 404·410(없는 페이지)인 항목은 REJECTED로 이유를 보여 주고 넣지 않는다. 이미 저장됐거나(data/updates)
         FILE에 있는 항목(같은 서비스·날짜·url)은 건너뛴다
     python3 scripts/service_updates.py check FILE
         수집 결과(항목 배열 JSON) 검사만
@@ -276,6 +276,20 @@ def cmd_state(args):
             print(f"    {e['date']}  [{e['kind']}] {e['title']}  <{e['url']}>")
 
 
+_url_cache = {}
+
+
+def url_status(url: str) -> str:
+    """주소가 실제로 열리는지 (#fragment 제외). '404'·'410'이면 없는 페이지다."""
+    base = url.split('#', 1)[0]
+    if base not in _url_cache:
+        r = subprocess.run(['curl', '-sS', '-o', '/dev/null', '-w', '%{http_code}', '-L', '--max-time', '25',
+                            '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+                            base], capture_output=True, text=True)
+        _url_cache[base] = r.stdout.strip() or '000'
+    return _url_cache[base]
+
+
 def cmd_save(args):
     services = {s['slug']: s for s in load_services()}
     raw = sys.stdin.read()
@@ -299,6 +313,13 @@ def cmd_save(args):
             bad += 1
             print(f"REJECTED {e.get('service') if isinstance(e, dict) else '?'} "
                   f"{e.get('date') if isinstance(e, dict) else ''}: " + '; '.join(problems))
+            continue
+        code = url_status(e['url'])
+        if code in ('404', '410'):
+            bad += 1
+            print(f"REJECTED {e['service']} {e['date']}: url returns {code} (page not found): {e['url']} — "
+                  f"feeds sometimes link to a wrong address; find the official page that really opens "
+                  f"(open it with read_source.py) and use that URL")
             continue
         key = (e['service'], e['date'], normalize_url(e['url']))
         if e['service'] not in stored_cache:

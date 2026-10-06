@@ -26,7 +26,7 @@ window.AIAD = {
       match: ['gpt-image', 'ChatGPT Images', 'image generation'] },
     { category: '이미지', name: 'Nano Banana', maker: 'Google', url: 'https://deepmind.google/models/gemini-image/',
       notice: ['https://deepmind.google/blog/rss.xml', 'https://blog.google/products/gemini/rss/', 'https://gemini.google/release-notes/'],
-      dev: ['https://ai.google.dev/gemini-api/docs/changelog', 'https://docs.cloud.google.com/feeds/gemini-enterprise-agent-platform-release-notes.xml'],
+      dev: ['https://ai.google.dev/gemini-api/docs/changelog', 'https://docs.cloud.google.com/feeds/gemini-enterprise-agent-platform-release-notes.xml', 'https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes'],
       match: ['Nano Banana', 'Gemini Image', 'flash-image', 'pro-image'] },
     { category: '이미지', name: 'Seedream', maker: 'ByteDance', url: 'https://seed.bytedance.com/en/blog',
       notice: ['https://seed.bytedance.com/sitemap.xml'],

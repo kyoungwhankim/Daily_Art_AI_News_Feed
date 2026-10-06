@@ -101,7 +101,10 @@ For each service:
                 what changed and why it matters to artists or developers
       details : optional list of up to 6 short Korean bullets for the individual changes
                 (omit or [] when the summary already says everything)
-      url     : the official URL of that announcement (see c)
+      url     : the official URL of that announcement (see c). It must really open: feeds
+                sometimes link to a wrong address (e.g. a release-notes feed pointing at a page
+                that returns 404) — the save script rejects 404 URLs; then find the page that
+                does open on the same official site and use it
       source  : "notice" if it came from a notice source / official blog, "dev" if from a
                 developer / API changelog
 
