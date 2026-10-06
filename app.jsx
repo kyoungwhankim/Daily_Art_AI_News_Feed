@@ -678,6 +678,9 @@ function useLatestUpdates(limit) {
 }
 
 /* ---------- home (뉴스 메인) ---------- */
+// 탭마다의 색 (섹션 막대·분류 글자) — 기사 썸네일 기본 색(hue)과 같은 계열
+const TAB_TONE = { games: 200, industry: 30, art: 290 };
+const toneOf = (tab) => (TAB_TONE[tab] != null ? { '--tone-h': TAB_TONE[tab] } : undefined);
 // 위: 톱 기사 + 최신 기사 목록 / 가운데: 탭별 최신 기사 / 아래: AI 서비스 최신 업데이트 / 하단 고정 띠
 // 같은 기사가 두 번 나오지 않게, 위쪽에 쓴 기사는 탭별 목록에서 뺀다.
 function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates }) {
@@ -709,20 +712,20 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
           <button type="button" className="hm-lead" onClick={() => onOpenArticle(lead)}>
             <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
             <span className="hm-lead-body">
-              <span className="hm-kicker">{tabLabelOf(lead.tab)}</span>
+              <span className="hm-kicker" style={toneOf(lead.tab)}>{tabLabelOf(lead.tab)}</span>
               <span className="hm-lead-title">{lead.headline}</span>
               <span className="hm-lead-summary">{lead.summary}</span>
               {meta(lead)}
             </span>
           </button>
           <div className="hm-latest">
-            <h2 className="hm-head">최신 기사</h2>
+            <h2 className="hm-head hm-sec">최신 기사</h2>
             <ol className="hm-rows">
               {list.map(a => (
                 <li key={a.id}>
                   <button type="button" className="hm-row" onClick={() => onOpenArticle(a)}>
                     <span className="hm-row-text">
-                      <span className="hm-kicker">{tabLabelOf(a.tab)}</span>
+                      <span className="hm-kicker" style={toneOf(a.tab)}>{tabLabelOf(a.tab)}</span>
                       <span className="hm-row-title">{a.headline}</span>
                       {meta(a)}
                     </span>
@@ -738,7 +741,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
       <section className="hm-tabs" aria-label="카테고리별 기사">
         {perTab.map(({ tab, items }) => (
           <div key={tab.id} className="hm-col">
-            <div className="hm-col-head">
+            <div className="hm-col-head hm-sec" style={toneOf(tab.id)}>
               <h2 className="hm-head">{tab.label}</h2>
               <button type="button" className="hm-more" onClick={() => onSelectTab(tab.id)}>더보기 →</button>
             </div>
@@ -765,7 +768,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
 
       {updates.length > 0 && (
         <section className="hm-updates" aria-label="AI 서비스 업데이트">
-          <div className="hm-col-head">
+          <div className="hm-col-head hm-sec">
             <h2 className="hm-head">AI 서비스 업데이트</h2>
             <button type="button" className="hm-more" onClick={onAllUpdates}>전체 보기 →</button>
           </div>
