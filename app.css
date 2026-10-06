@@ -1569,3 +1569,8 @@ a.chip.update-official { text-decoration: none; align-self: center; white-space:
 .side-subitem.active { background: var(--accent-soft); color: var(--accent-strong); font-weight: 700; }
 .side-subitem .side-count { margin-left: auto; }
 @media (prefers-reduced-motion: reduce) { .side-sublist { animation: none; } }
+
+/* 서비스 이름 아래 작게 만든 회사 */
+.side-subitem.has-maker { flex-direction: column; align-items: flex-start; gap: 1px; }
+.side-maker { font-size: 11px; font-weight: 400; color: var(--muted-2); }
+.side-subitem.active .side-maker { color: inherit; opacity: .75; }

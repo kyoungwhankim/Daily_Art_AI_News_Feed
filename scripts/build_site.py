@@ -395,7 +395,7 @@ UPDATE_CAT_SLUG = {   # app.jsx의 UPDATE_CAT_SLUG와 같아야 한다
 
 
 def update_tree(repo: str) -> list:
-    """config.js의 updateSources → [(분야, 분야 slug, [회사 이름...]), ...] (설정 순서)."""
+    """config.js의 updateSources → [(분야, 분야 slug, [서비스 이름...]), ...] (설정 순서)."""
     with open(os.path.join(repo, 'config.js'), encoding='utf-8') as f:
         cfg = f.read()
     tree = {}
@@ -558,15 +558,15 @@ def main():
     write(out, 'sw.js', sw.replace('__VERSION__', version)
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
-    # 사이드바 대분류 '업데이트' 페이지: /updates/, /updates/<분야>/, /updates/<분야>/<회사>/
-    # (데이터 연결 전이라 검색에는 내보내지 않는다. 분야·회사 주소 규칙은 app.jsx와 같아야 한다)
+    # 사이드바 대분류 '업데이트' 페이지: /updates/, /updates/<분야>/, /updates/<분야>/<서비스>/
+    # (데이터 연결 전이라 검색에는 내보내지 않는다. 분야·서비스 주소 규칙은 app.jsx와 같아야 한다)
     upd_pages = [('updates/', '업데이트')]
     for cat, cat_slug, companies in update_tree(repo):
         upd_pages.append((f'updates/{cat_slug}/', f'{cat} 업데이트'))
         upd_pages += [(f'updates/{cat_slug}/{kw_slug(n)}/', f'{n} 업데이트') for n in companies]
     for path_, name in upd_pages:
         write(out, path_ + 'index.html', shell(
-            path_, f'{name} | {SITE_NAME}', '아트 관련 AI 서비스 회사들의 공식 업데이트 소식',
+            path_, f'{name} | {SITE_NAME}', '아트 관련 AI 서비스들의 공식 업데이트 소식',
             f'<h1 class="feed-title">{esc(name)}</h1>',
             {'@context': 'https://schema.org', '@type': 'WebPage', 'name': name, 'url': abs_url(path_)})
             .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))

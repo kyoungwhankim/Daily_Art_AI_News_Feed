@@ -814,8 +814,8 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
   }, []);
 }
 
-// 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
-// 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 회사)가 펼쳐진다.
+// 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 공식 업데이트)
+// 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 서비스)가 펼쳐진다.
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
@@ -919,9 +919,10 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                         <ul className="side-sublist">
                           {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
                             <li key={co.slug}>
-                              <button type="button" className={`side-subitem ${updCompany === co.slug ? 'active' : ''}`}
+                              <button type="button" className={`side-subitem ${co.maker ? 'has-maker' : ''} ${updCompany === co.slug ? 'active' : ''}`}
                                 onClick={() => onUpdCompany(c.slug, co.slug)}>
                                 <span>{co.name}</span>
+                                {co.maker && <span className="side-maker">{co.maker}</span>}
                               </button>
                             </li>
                           ))}
@@ -939,9 +940,10 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
   );
 }
 
-/* ---------- 업데이트 (아트 관련 AI 서비스 회사의 공식 업데이트) ---------- */
-// 구조: 분야(위쪽 탭·사이드바) › 회사(칩) › 그 회사의 업데이트 (최신순)
-// 주소: /updates/  /updates/<분야>/  /updates/<분야>/<회사>/
+/* ---------- 업데이트 (아트 관련 AI 서비스의 공식 업데이트) ---------- */
+// 구조: 분야(위쪽 탭·사이드바) › 서비스(칩) › 그 서비스의 업데이트 (최신순)
+// 서비스는 제품 단위다 — 여러 분야 제품을 내는 회사(OpenAI, Google 등)는 제품마다 해당 분야에 따로 있다.
+// 주소: /updates/  /updates/<분야>/  /updates/<분야>/<서비스>/
 const UPDATE_CAT_SLUG = {
   '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
   '모션': 'motion', '음악·음성': 'audio', '도구': 'tools',
@@ -957,7 +959,7 @@ function updatesPath(cat, company) {
   return '/updates/';
 }
 
-// 아직 공지 수집이 연결되지 않아, 화면 흐름을 보기 위한 예시 항목을 회사마다 만든다.
+// 아직 공지 수집이 연결되지 않아, 화면 흐름을 보기 위한 예시 항목을 서비스마다 만든다.
 // 실제 데이터가 붙으면 같은 형식({ company, date, title, summary, url, kind })으로 바뀐다.
 const SAMPLE_KINDS = {
   'image':       [['모델', '새 이미지 모델 버전 공개'], ['기능', '편집·인페인팅 기능 개선'], ['요금', '요금제와 사용량 정책 변경'], ['API', 'API에 새 해상도 옵션 추가']],
@@ -977,7 +979,7 @@ function sampleUpdatesFor(c) {
       id: `${c.slug}-${i}`, company: c, kind, sample: true,
       date: `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`,
       title: `${c.name} — ${title}`,
-      summary: '예시 항목이에요. 공지 수집이 연결되면 회사의 공식 업데이트를 한국어로 요약해 이 자리에 보여 드려요.',
+      summary: '예시 항목이에요. 공지 수집이 연결되면 서비스의 공식 업데이트를 한국어로 요약해 이 자리에 보여 드려요.',
       url: c.url,
     };
   });
@@ -990,7 +992,7 @@ function UpdatesNav({ cat, company, onCat, onCompany }) {
   return (
     <nav className="tabs-wrap">
       <div className="tabs-inner">
-        <div className="tabs-meta">업데이트 · {UPDATE_CATS.length}개 분야 · {UPDATE_COMPANIES.length}곳</div>
+        <div className="tabs-meta">업데이트 · {UPDATE_CATS.length}개 분야 · {UPDATE_COMPANIES.length}개 서비스</div>
         <div className="tabs">
           <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
             전체 <span className="count">{UPDATE_COMPANIES.length}</span>
@@ -1002,7 +1004,7 @@ function UpdatesNav({ cat, company, onCat, onCompany }) {
           ))}
         </div>
         {cat && (
-          <div className="subcats" role="tablist" aria-label="회사">
+          <div className="subcats" role="tablist" aria-label="서비스">
             <button className={`chip subcat ${!company ? 'active' : ''}`} onClick={() => onCompany(null)}>전체</button>
             {companies.map(c => (
               <button key={c.slug} className={`chip subcat ${company === c.slug ? 'active' : ''}`} onClick={() => onCompany(c.slug)}>
@@ -1042,10 +1044,10 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   const items = ALL_UPDATES.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug));
   const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
   const desc = comp
-    ? `${comp.name}의 공식 업데이트를 최신순으로 모아 보여 드려요.`
+    ? `${comp.maker ? `${comp.maker}의 ` : ''}${comp.name} 공식 업데이트를 최신순으로 모아 보여 드려요.`
     : catObj
-      ? `${catObj.label} 분야 AI 서비스들의 공식 업데이트예요. 회사를 고르면 그 회사 소식만 볼 수 있어요.`
-      : '아트 관련 AI 서비스 회사들의 공식 업데이트를 분야·회사별로 모아 보여 드려요.';
+      ? `${catObj.label} 분야 AI 서비스들의 공식 업데이트예요. 서비스를 고르면 그 서비스 소식만 볼 수 있어요.`
+      : '아트 관련 AI 서비스들의 공식 업데이트를 분야·서비스별로 모아 보여 드려요.';
   return (
     <>
       <UpdatesNav cat={cat} company={comp ? comp.slug : null} onCat={onCat} onCompany={slug => onCompany(cat, slug)} />
@@ -1053,7 +1055,7 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
         <div>
           <h1 className="feed-title">{title}</h1>
           <div className="feed-sub">
-            {comp ? `${catObj.label} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
+            {comp ? `${catObj.label}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
           </div>
           <p className="feed-desc">{desc}</p>
         </div>
@@ -1083,7 +1085,7 @@ function App() {
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : 'news');   // 사이드바: 'news' | 'updates'
   const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍 (✕나 바깥을 눌러야만 닫힌다)
   const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
-  const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 회사 (slug)
+  const [updCompany, setUpdCompany] = useState(INITIAL_ROUTE.updCompany || null); // 업데이트 › 분야 › 서비스 (slug)
   const goUpdates = (cat, company) => {
     setSection('updates'); setUpdCat(cat || null); setUpdCompany(company || null);
     window.scrollTo({ top: 0 });
