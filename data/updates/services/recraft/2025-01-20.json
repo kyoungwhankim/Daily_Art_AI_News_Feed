@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-01-20-1",
+    "service": "recraft",
+    "date": "2025.01.20",
+    "kind": "기능",
+    "title": "스타일 생성에 프롬프트 지시 결합",
+    "summary": "레퍼런스 이미지로 스타일을 만들 때 프롬프트로 세부 스타일 지시를 함께 줄 수 있게 됐어요. 레퍼런스만으로 잡기 어려운 디테일을 더 정확히 맞출 수 있어요.",
+    "url": "https://www.recraft.ai/blog/style-creation-in-recraft-now-supports-prompt-engineering",
+    "source": "notice"
+  }
+]

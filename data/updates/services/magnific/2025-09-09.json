@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-09-09-1",
+    "service": "magnific",
+    "date": "2025.09.09",
+    "kind": "API",
+    "title": "Seedream V4 생성·편집 API",
+    "summary": "ByteDance Seedream V4로 이미지를 생성하고 편집하는 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/text-to-image/seedream-v4"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#september-9-2025",
+    "source": "dev"
+  }
+]

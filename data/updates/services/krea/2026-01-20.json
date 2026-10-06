@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-01-20-1",
+    "service": "krea",
+    "date": "2026.01.20",
+    "kind": "기능",
+    "title": "Krea Realtime Edit: 붓질마다 바로 바뀌는 캔버스",
+    "summary": "붓질할 때마다 이미지가 즉시 갱신되는 실시간 편집 캔버스 Realtime Edit를 내놓았어요. 생성 버튼 없이 그리면서 바로 결과를 보고, 웹캠 스트림도 입력으로 쓸 수 있어요.",
+    "url": "https://www.krea.ai/blog/realtime-edit",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2025-04-17-1",
+    "service": "stable-diffusion",
+    "date": "2025.04.17",
+    "kind": "종료",
+    "title": "SD3.0 API 종료, SD3.5로 자동 전환",
+    "summary": "Stable Diffusion 3.0 API를 종료하고 같은 가격의 SD3.5로 자동 전환했어요. 별도 코드 수정은 필요 없어요.",
+    "details": [
+      "sd3-large → sd3.5-large",
+      "sd3-large-turbo → sd3.5-large-turbo",
+      "sd3-medium → sd3.5-medium"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

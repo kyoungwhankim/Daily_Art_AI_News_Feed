@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-09-04-1",
+    "service": "stable-diffusion",
+    "date": "2024.09.04",
+    "kind": "연동",
+    "title": "Amazon Bedrock에 SD3 Large·Stable Image 모델 출시",
+    "summary": "Stable Image Ultra, Stable Diffusion 3 Large, Stable Image Core 세 모델을 Amazon Bedrock에서 쓸 수 있게 됐어요.",
+    "url": "https://stability.ai/news-updates/stability-ais-top-3-text-to-image-models-now-available-in-amazon-bedrock",
+    "source": "notice"
+  }
+]

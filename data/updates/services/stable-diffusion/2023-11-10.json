@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stable-diffusion-2023-11-10-1",
+    "service": "stable-diffusion",
+    "date": "2023.11.10",
+    "kind": "API",
+    "title": "API에 Stable Diffusion v1.6 추가",
+    "summary": "v1.5를 대체하는 더 좋고 저렴한 Stable Diffusion v1.6이 REST API에 추가됐어요. 일부 레거시 모델은 11월 15일 지원 종료돼요.",
+    "details": [
+      "image-to-image는 아직 미지원"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes#stable-image-v1-release",
+    "source": "dev"
+  }
+]

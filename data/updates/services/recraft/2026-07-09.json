@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2026-07-09-1",
+    "service": "recraft",
+    "date": "2026.07.09",
+    "kind": "기능",
+    "title": "Recraft Studio 안에서 벡터 직접 편집",
+    "summary": "AI로 생성한 벡터를 Figma로 내보내지 않고 Recraft Studio 안에서 앵커 포인트 이동, 도형별 색 변경, 요소 복제까지 직접 편집할 수 있게 됐어요.",
+    "url": "https://www.recraft.ai/blog/vector-editor",
+    "source": "notice"
+  }
+]

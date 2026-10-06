@@ -1,0 +1,18 @@
+[
+  {
+    "id": "qwen-image-2026-07-20-1",
+    "service": "qwen-image",
+    "date": "2026.07.20",
+    "kind": "모델",
+    "title": "Qwen-Image-3.0-Pro 출시",
+    "summary": "최대 4.5k 토큰 입력과 이미지 속 이미지 같은 고밀도 레이아웃을 한 번에 만드는 Qwen-Image-3.0-Pro가 출시됐어요. 신문, 스토리보드, 메뉴판 같은 복잡한 구성을 바로 생성할 수 있어요.",
+    "details": [
+      "10px 작은 글자까지 정밀 렌더링",
+      "미세 표정·모공·머리카락 등 사진에 가까운 디테일",
+      "12개 언어, 20개 이상 폰트 네이티브 렌더링",
+      "웹페이지·게임·라이브 방송 화면 사실적 재현"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

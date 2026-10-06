@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-04-16-1",
+    "service": "stable-diffusion",
+    "date": "2025.04.16",
+    "kind": "연동",
+    "title": "AMD Radeon·Ryzen AI용 Stable Diffusion 최적화",
+    "summary": "AMD와 협력해 SD3.5 Large·Large Turbo, SDXL 1.0·SDXL Turbo의 ONNX 최적화 버전을 Hugging Face에 공개했어요. Amuse 3.0에서 써 볼 수 있어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-now-optimized-for-amd-radeon-gpus",
+    "source": "notice"
+  }
+]

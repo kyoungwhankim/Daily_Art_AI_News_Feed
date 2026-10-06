@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-02-20-1",
+    "service": "recraft",
+    "date": "2025.02.20",
+    "kind": "기능",
+    "title": "Frames에서 투명 이미지 배경 생성",
+    "summary": "투명 레이어를 프레임에 넣으면 자동으로 배경 생성 모드로 바뀌어 오브젝트에 어울리는 다양한 배경을 만들어 줘요. 제품 사진 작업에 유용해요.",
+    "url": "https://www.recraft.ai/blog/generate-background-in-frames",
+    "source": "notice"
+  }
+]

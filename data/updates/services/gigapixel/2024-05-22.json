@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-05-22-1",
+    "service": "gigapixel",
+    "date": "2024.05.22",
+    "kind": "앱",
+    "title": "Gigapixel v7.1.4: Photoshop 플러그인 수정",
+    "summary": "Photoshop 플러그인이 결과를 돌려주지 못하던 문제와 출력 해상도 무시, 이중 처리, 흑백 변환 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-1-4/69909",
+    "source": "notice"
+  }
+]

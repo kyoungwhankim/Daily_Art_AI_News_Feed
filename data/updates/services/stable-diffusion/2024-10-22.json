@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2024-10-22-1",
+    "service": "stable-diffusion",
+    "date": "2024.10.22",
+    "kind": "모델",
+    "title": "Stable Diffusion 3.5 Large·Large Turbo 공개",
+    "summary": "가장 강력한 기본 모델 Stable Diffusion 3.5를 오픈 공개했어요. 소비자 하드웨어에서 돌아가고 Community License로 상업 사용도 무료예요.",
+    "details": [
+      "SD3.5 Large: 8B, 1MP 고품질",
+      "SD3.5 Large Turbo: 4스텝 고속 생성",
+      "API 모델 sd3.5-large, sd3.5-large-turbo"
+    ],
+    "url": "https://stability.ai/news-updates/introducing-stable-diffusion-3-5",
+    "source": "notice"
+  }
+]

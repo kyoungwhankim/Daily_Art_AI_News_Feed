@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-09-07-1",
+    "service": "krea",
+    "date": "2026.09.07",
+    "kind": "기능",
+    "title": "실시간 AI 영상 도구 Realtime Director 소프트 런치",
+    "summary": "프롬프트를 입력하면 재생 중인 영상 스트림이 바로 바뀌는 Realtime Director를 선보였어요. 이미지·영상 도구에는 생성 전 예상 컴퓨트 비용 표시도 추가됐어요.",
+    "details": [
+      "첫 프레임 레퍼런스 이미지 지정, 완성 영상 자동 저장",
+      "생성 전 예상 컴퓨트 비용 표시",
+      "엔터프라이즈 SSO 연결 이름과 워크스페이스 자동 가입",
+      "CAPTCHA 실패 시 이메일 코드 로그인"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#september-7-2026",
+    "source": "dev"
+  }
+]

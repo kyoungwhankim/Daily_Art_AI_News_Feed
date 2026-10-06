@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-07-14-1",
+    "service": "recraft",
+    "date": "2025.07.14",
+    "kind": "연동",
+    "title": "Recraft MCP 지원 시작",
+    "summary": "Model Context Protocol을 지원해 Claude, Cursor 같은 AI 에이전트에서 도구를 바꾸지 않고 Recraft로 이미지를 바로 생성할 수 있게 됐어요.",
+    "url": "https://www.recraft.ai/blog/recraft-mcp",
+    "source": "notice"
+  }
+]

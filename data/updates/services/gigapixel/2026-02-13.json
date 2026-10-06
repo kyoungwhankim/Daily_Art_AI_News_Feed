@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2026-02-13-1",
+    "service": "gigapixel",
+    "date": "2026.02.13",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.1.2: Mac에서 Recover 3 로컬 실행",
+    "summary": "Mac에서도 Recover 3를 로컬로 돌릴 수 있게 됐고 Recover 1은 레거시로 옮겨졌어요. 생성형 모델 미리보기 컨트롤과 파일 크기 예측은 빠졌어요.",
+    "details": [
+      "좌석 회수용 시트 관리 추가",
+      "파일 크기 대신 메가픽셀 표시"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-1-2/100818",
+    "source": "notice"
+  }
+]

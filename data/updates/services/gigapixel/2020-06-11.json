@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2020-06-11-1",
+    "service": "gigapixel",
+    "date": "2020.06.11",
+    "kind": "앱",
+    "title": "Gigapixel v4.9.4: PPI·PPCM 단위 분리 전환",
+    "summary": "크기 단위와 별도로 Pixels Per Inch와 Pixels Per Centimeter를 바꿀 수 있게 됐고, 단위 변환·반올림 오류가 고쳐졌어요.",
+    "details": [
+      "v4.9.4.1: 일부 기기 미리보기 배율 문제 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v4-9-4-1/15206",
+    "source": "notice"
+  }
+]

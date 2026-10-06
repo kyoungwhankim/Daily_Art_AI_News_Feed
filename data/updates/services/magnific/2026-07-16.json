@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-07-16-1",
+    "service": "magnific",
+    "date": "2026.07.16",
+    "kind": "API",
+    "title": "Google Lyria·Lyria 3 음악 생성 API",
+    "summary": "텍스트로 음악을 만드는 Google Lyria(30초 연주곡)와, clip·pro 변형과 레퍼런스 이미지를 지원하는 Lyria 3 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#july-16-2026",
+    "source": "dev"
+  }
+]

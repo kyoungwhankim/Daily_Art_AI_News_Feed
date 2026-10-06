@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2026-03-03-1",
+    "service": "flux",
+    "date": "2026.03.03",
+    "kind": "기능",
+    "title": "FLUX.2 [pro] 2배 속도 향상과 preview 엔드포인트",
+    "summary": "FLUX.2 [pro]가 생성·편집 모두 약 2배 빨라졌고 품질과 가격은 그대로예요. 최신 개선이 먼저 반영되는 flux-2-pro-preview 엔드포인트도 새로 생겼어요.",
+    "details": [
+      "코드 변경 없는 드롭인 업그레이드",
+      "flux-2-pro는 재현성을 위한 고정 스냅샷으로 유지"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#march-3-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2025-05-29-1",
+    "service": "flux",
+    "date": "2025.05.29",
+    "kind": "모델",
+    "title": "FLUX.1 Kontext와 BFL Playground 공개",
+    "summary": "텍스트와 이미지를 함께 넣어 생성·편집하는 FLUX.1 Kontext 모델군과, 브라우저에서 바로 써 볼 수 있는 BFL Playground를 공개했어요. 캐릭터 일관성을 유지한 반복 편집이 강점이에요.",
+    "details": [
+      "FLUX.1 Kontext [pro]: 텍스트·참조 이미지 입력으로 생성과 부분 편집",
+      "기존 최신 모델보다 최대 한 자릿수 빠른 반복 편집",
+      "API 진입점이 되는 FLUX Playground 출시"
+    ],
+    "url": "https://bfl.ai/blog/flux-1-kontext",
+    "source": "notice"
+  }
+]

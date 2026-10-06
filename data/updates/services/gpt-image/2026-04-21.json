@@ -1,0 +1,18 @@
+[
+  {
+    "id": "gpt-image-2026-04-21-1",
+    "service": "gpt-image",
+    "date": "2026.04.21",
+    "kind": "모델",
+    "title": "ChatGPT Images 2.0과 GPT Image 2 출시",
+    "summary": "ChatGPT Images 2.0이 공개되고 API에 GPT Image 2가 출시됐어요. 텍스트 렌더링, 다국어 지원, 시각적 추론이 좋아졌고 API에서는 유연한 크기와 토큰 기반 요금을 지원해요.",
+    "details": [
+      "텍스트 렌더링·다국어 지원·시각적 추론 개선",
+      "API: 유연한 이미지 크기와 고충실도 이미지 입력 지원",
+      "토큰 기반 이미지 요금 적용",
+      "Batch API 지원(50% 할인)"
+    ],
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-0",
+    "source": "notice"
+  }
+]

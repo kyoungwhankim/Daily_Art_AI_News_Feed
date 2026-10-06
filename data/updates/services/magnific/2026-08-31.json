@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-08-31-1",
+    "service": "magnific",
+    "date": "2026.08.31",
+    "kind": "API",
+    "title": "GPT Image 2 생성·편집 API",
+    "summary": "OpenAI GPT Image 2로 이미지를 생성하고 자연어로 편집하는 엔드포인트를 추가했어요. 1k·2k·4k 해상도와 세 가지 품질 등급을 지원해요.",
+    "url": "https://docs.magnific.com/changelog#august-31-2026",
+    "source": "dev"
+  }
+]

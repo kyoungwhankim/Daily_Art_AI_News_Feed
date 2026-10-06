@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-07-31-1",
+    "service": "gigapixel",
+    "date": "2024.07.31",
+    "kind": "앱",
+    "title": "Gigapixel v7.3.1: CLI 기존 파일 건너뛰기",
+    "summary": "CLI에 출력 파일이 있으면 건너뛰는 --skip-existing 옵션이 생겼고, 사용자 ICC 프로파일 자동 선택과 플러그인 캡처 버튼이 추가됐어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-3-1/75800",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-02-03-1",
+    "service": "recraft",
+    "date": "2025.02.03",
+    "kind": "기능",
+    "title": "이미지 세트에 가로·세로 비율 지원",
+    "summary": "한 번에 6장을 만드는 이미지 세트를 가로 또는 세로 비율로도 생성할 수 있게 됐어요. SNS·웹·인쇄용 세트를 만들기 편해졌어요.",
+    "url": "https://www.recraft.ai/blog/introducing-recrafts-aspect-ratio-feature-for-image-sets",
+    "source": "notice"
+  }
+]

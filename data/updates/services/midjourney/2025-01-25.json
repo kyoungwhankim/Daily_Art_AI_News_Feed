@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2025-01-25-1",
+    "service": "midjourney",
+    "date": "2025.01.25",
+    "kind": "기능",
+    "title": "웹 Describe 기능, 무드보드·sref 블렌딩",
+    "summary": "웹에서 이미지를 우클릭해 Describe로 프롬프트 4개를 받을 수 있게 됐어요. 여러 무드보드나 무드보드와 스타일 참조를 섞어 쓸 수도 있어요.",
+    "details": [
+      "--profile 코드 여러 개 조합 가능",
+      "무드보드를 링크 또는 스냅샷 코드로 공유"
+    ],
+    "url": "https://updates.midjourney.com/describe-on-web-moodboard-blending/",
+    "source": "notice"
+  }
+]

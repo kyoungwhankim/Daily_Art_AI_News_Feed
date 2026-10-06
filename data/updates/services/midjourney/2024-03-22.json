@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-03-22-1",
+    "service": "midjourney",
+    "date": "2024.03.22",
+    "kind": "기능",
+    "title": "웹에서 --sv가 제출되지 않던 문제 수정",
+    "summary": "웹에서 프롬프트에 넣은 --sv 파라미터가 함께 제출되지 않던 작은 호환성 문제를 고쳤어요.",
+    "url": "https://updates.midjourney.com/fix-for-sv-no-submitting-in-web/",
+    "source": "notice"
+  }
+]

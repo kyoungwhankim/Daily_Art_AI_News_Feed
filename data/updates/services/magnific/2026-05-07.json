@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-05-07-1",
+    "service": "magnific",
+    "date": "2026.05.07",
+    "kind": "API",
+    "title": "Happy Horse 1.0 영상 생성·편집 API",
+    "summary": "Artificial Analysis 영상 아레나 1위인 Alibaba의 Happy Horse 1.0을 텍스트·이미지·레퍼런스-투-비디오와 영상 편집 엔드포인트로 추가했어요.",
+    "details": [
+      "720p·1080p, 3~15초",
+      "최대 9개 캐릭터 레퍼런스",
+      "자연어 영상 편집과 레퍼런스 이미지 5장"
+    ],
+    "url": "https://docs.magnific.com/changelog#may-07-2026",
+    "source": "dev"
+  }
+]

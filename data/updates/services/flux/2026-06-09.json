@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-06-09-1",
+    "service": "flux",
+    "date": "2026.06.09",
+    "kind": "API",
+    "title": "FLUX Outpainting 빠른 모드 추가",
+    "summary": "FLUX Outpainting에 mode 파라미터가 생겨 더 빠르고 저렴한 fast 모드를 고를 수 있어요. 기본값 high는 기존 품질 그대로예요.",
+    "url": "https://docs.bfl.ai/release-notes#june-9-2026",
+    "source": "dev"
+  }
+]

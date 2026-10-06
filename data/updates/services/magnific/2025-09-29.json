@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-09-29-1",
+    "service": "magnific",
+    "date": "2025.09.29",
+    "kind": "API",
+    "title": "Image To Prompt API 추가",
+    "summary": "이미지를 분석해 AI 생성용 프롬프트를 만들어 주는 Image To Prompt 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/image-to-prompt"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#september-29-2025",
+    "source": "dev"
+  }
+]

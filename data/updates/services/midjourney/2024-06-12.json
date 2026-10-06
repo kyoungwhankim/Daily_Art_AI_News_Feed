@@ -1,0 +1,32 @@
+[
+  {
+    "id": "midjourney-2024-06-12-1",
+    "service": "midjourney",
+    "date": "2024.06.12",
+    "kind": "기능",
+    "title": "모델 개인화(--p) 초기 테스트 출시",
+    "summary": "내 랭킹과 좋아요를 학습해 프롬프트의 빈칸을 내 취향으로 채워 주는 모델 개인화 --p가 나왔어요. 약 200개의 평가가 있어야 쓸 수 있어요.",
+    "details": [
+      "--p 또는 설정에서 모든 프롬프트에 적용",
+      "공유 가능한 개인화 코드 생성",
+      "--s 0~1000으로 개인화 강도 조절"
+    ],
+    "url": "https://updates.midjourney.com/personalization/",
+    "source": "notice"
+  },
+  {
+    "id": "midjourney-2024-06-12-2",
+    "service": "midjourney",
+    "date": "2024.06.12",
+    "kind": "기능",
+    "title": "웹 편집 도구 개편: Reframe·Repaint",
+    "summary": "웹사이트를 더 쉽게 쓰도록 Pan과 Zoom을 'Reframe'으로 합치고, Vary Region 이름을 'Repaint'로 바꿨어요.",
+    "details": [
+      "Reframe 안에서 Remix로 프롬프트 변경 가능",
+      "오류 메시지가 더 자세해짐",
+      "Rank 메뉴는 Tasks 페이지로, Report Bug는 Help 메뉴로 이동"
+    ],
+    "url": "https://updates.midjourney.com/web-updates/",
+    "source": "notice"
+  }
+]

@@ -1081,7 +1081,10 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   const catObj = UPDATE_CATS.find(c => c.slug === cat) || null;
   const comp = UPDATE_COMPANIES.find(c => c.slug === company && c.catSlug === cat) || null;
   const { ready, items: all } = useServiceUpdates();
-  const items = all.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug));
+  // 전체 화면에서는 실제 항목이 있으면 예시를 빼고, 예시는 아직 수집하지 않는 분야 화면에서만 보여 준다
+  const anyReal = all.some(u => !u.sample);
+  const items = all.filter(u => (!cat || u.company.catSlug === cat) && (!comp || u.company.slug === comp.slug)
+    && (cat || !anyReal || !u.sample));
   const hasSample = items.some(u => u.sample);
   const PAGE = 30;
   const [shown, setShown] = useState(PAGE);

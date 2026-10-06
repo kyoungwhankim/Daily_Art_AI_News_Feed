@@ -1,0 +1,17 @@
+[
+  {
+    "id": "nano-banana-2026-08-31-1",
+    "service": "nano-banana",
+    "date": "2026.08.31",
+    "kind": "API",
+    "title": "Vertex에서 Nano Banana 4K 출력·영상 입력 GA",
+    "summary": "Gemini Enterprise Agent Platform에서 Gemini 3.1 Flash Image와 Gemini 3 Pro Image의 4K 이미지 출력이 정식 지원돼요. 3.1 Flash Image는 미국·EU 멀티 리전에서도 쓸 수 있어요.",
+    "details": [
+      "4K 해상도 출력 GA(3.1 Flash Image, 3 Pro Image)",
+      "영상 입력 기반 이미지 생성 GA(3.1 Flash Image)",
+      "US·EU 멀티 리전 엔드포인트 지원"
+    ],
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/release-notes#August_31_2026",
+    "source": "dev"
+  }
+]

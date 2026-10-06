@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-03-18-1",
+    "service": "krea",
+    "date": "2026.03.18",
+    "kind": "기능",
+    "title": "Krea Nodes에 Node Agent 추가",
+    "summary": "Nodes 안의 Node Agent가 한 문장을 읽고 캔버스 상태를 파악해 파이프라인을 계획·연결·실행해 줘요. 실행 전에 계획을 먼저 보여 줘서 확인 후 진행할 수 있어요.",
+    "url": "https://www.krea.ai/blog/ai-workflow-agent",
+    "source": "notice"
+  }
+]

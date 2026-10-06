@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-09-06-1",
+    "service": "midjourney",
+    "date": "2024.09.06",
+    "kind": "기능",
+    "title": "Niji 모델 개인화 지원",
+    "summary": "rank-niji에서 200장 이상 평가하면 --niji 프롬프트에 --p를 붙여 내 취향에 맞춘 애니메이션 결과를 받을 수 있어요.",
+    "url": "https://updates.midjourney.com/personalization-for-niji/",
+    "source": "notice"
+  }
+]

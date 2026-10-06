@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2025-01-16-1",
+    "service": "flux",
+    "date": "2025.01.16",
+    "kind": "API",
+    "title": "FLUX Pro Finetuning API 출시",
+    "summary": "사용자 이미지 몇 장으로 FLUX Pro를 맞춤 학습할 수 있는 Finetuning API를 출시했어요. 특정 인물·제품·스타일을 프롬프트로 다시 그려낼 수 있어요.",
+    "url": "https://bfl.ai/blog/25-01-16-finetuning",
+    "source": "notice"
+  }
+]

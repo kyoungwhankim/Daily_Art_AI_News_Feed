@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2024-03-12-1",
+    "service": "midjourney",
+    "date": "2024.03.12",
+    "kind": "기능",
+    "title": "Character Reference(--cref) 테스트 시작",
+    "summary": "참조 이미지 속 캐릭터의 얼굴·머리·옷을 유지해 주는 --cref 기능이 공개됐어요. 일관된 캐릭터로 스토리나 세계관을 만들 때 유용해요.",
+    "details": [
+      "--cw 0~100으로 참조 강도 조절(0은 얼굴 위주)",
+      "Midjourney로 만든 캐릭터에 최적, 실사 인물용은 아님",
+      "Niji·일반 모델 모두 지원, --sref와 함께 사용 가능",
+      "여러 URL로 캐릭터 블렌딩 가능"
+    ],
+    "url": "https://updates.midjourney.com/character-refs/",
+    "source": "notice"
+  }
+]

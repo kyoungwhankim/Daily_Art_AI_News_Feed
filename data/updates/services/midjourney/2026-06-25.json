@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2026-06-25-1",
+    "service": "midjourney",
+    "date": "2026.06.25",
+    "kind": "기능",
+    "title": "V8.1 Draft 모드에서 --sref random 지원",
+    "summary": "Draft 모드 프롬프트에 --sref random을 넣으면 서로 다른 스타일의 이미지 24장을 한 번에 만들어 스타일을 빠르게 탐색할 수 있어요.",
+    "url": "https://updates.midjourney.com/random-styles-in-draft-mode/",
+    "source": "notice"
+  }
+]

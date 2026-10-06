@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-04-17-1",
+    "service": "stable-diffusion",
+    "date": "2024.04.17",
+    "kind": "API",
+    "title": "Stable Diffusion 3 API 출시",
+    "summary": "Stable Diffusion 3와 SD3 Turbo를 Fireworks AI와 함께 개발자 플랫폼 API로 내놨어요. 타이포그래피와 프롬프트 반영에서 강점을 보여요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-3-api",
+    "source": "notice"
+  }
+]

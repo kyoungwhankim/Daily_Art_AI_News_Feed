@@ -1,0 +1,32 @@
+[
+  {
+    "id": "midjourney-2026-09-24-1",
+    "service": "midjourney",
+    "date": "2026.09.24",
+    "kind": "기능",
+    "title": "알파 사이트: 스타일 실시간 미리보기·기본 파라미터, 한국어 정식 지원",
+    "summary": "Styles 사이드바에서 현재 프롬프트를 여러 스타일로 미리 볼 수 있고, 기본 파라미터를 저장할 수 있게 됐어요. 한국어는 midjourney.com 전체에 적용됐어요.",
+    "details": [
+      "Create 피드 전면 masonry 리디자인",
+      "검색·스크롤 위치 유지",
+      "Styles 사이드바에 Profiles·Featured 탭",
+      "에디터가 v8.1·v8.2 편집과 HD 캔버스 지원",
+      "weird 슬라이더 수정"
+    ],
+    "url": "https://updates.midjourney.com/alpha-changelog-9-23-26/",
+    "source": "notice"
+  },
+  {
+    "id": "midjourney-2026-09-24-2",
+    "service": "midjourney",
+    "date": "2026.09.24",
+    "kind": "기능",
+    "title": "편집 모델 인페인팅 개선과 V8.1/8.2 --tile 개선",
+    "summary": "편집 모델의 인페인팅·아웃페인팅이 선택한 픽셀만 바꾸도록 개선돼 반복 편집에도 화질이 떨어지지 않아요. V8.1/8.2의 --tile 이음새도 사라졌어요.",
+    "details": [
+      "알파 사이트에서 Styles 사이드바 실시간 미리보기 실험"
+    ],
+    "url": "https://updates.midjourney.com/edit-updates-thumbnail-previews-and-more/",
+    "source": "notice"
+  }
+]

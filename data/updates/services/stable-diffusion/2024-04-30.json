@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2024-04-30-1",
+    "service": "stable-diffusion",
+    "date": "2024.04.30",
+    "kind": "API",
+    "title": "Control Sketch·Control Structure API 추가",
+    "summary": "러프 스케치를 완성된 이미지로 바꾸는 Control Sketch와 입력 이미지 구조를 유지하는 Control Structure가 추가됐어요. Outpaint·Creative Upscale도 개선됐어요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

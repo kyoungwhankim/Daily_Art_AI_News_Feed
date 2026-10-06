@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2021-11-10-1",
+    "service": "gigapixel",
+    "date": "2021.11.10",
+    "kind": "앱",
+    "title": "Gigapixel v5.7.0: 더 선명한 새 Standard 모델",
+    "summary": "같은 이미지에서 더 많은 디테일을 내는 새 Standard 모델과 전용 Auto 설정 모델이 나왔어요. 미리보기 패널과 자르기 도구도 바뀌었어요.",
+    "details": [
+      "비교 보기 최대 4개 모델",
+      "v5.7.1(11/17): Photoshop 플러그인 M1 호환",
+      "v5.7.2(11/22)·v5.7.3(12/1): 플러그인 연동 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-7-3/27672",
+    "source": "notice"
+  }
+]

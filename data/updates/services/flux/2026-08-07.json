@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-08-07-1",
+    "service": "flux",
+    "date": "2026.08.07",
+    "kind": "연동",
+    "title": "FLUX 3 영상용 Agent Skills 6종 추가",
+    "summary": "코딩 에이전트가 FLUX 3 영상 생성을 연출하도록 돕는 Agent Skills 6종이 추가됐어요. 프롬프트 점검, 키프레임, 오디오·대사 등을 다뤄요.",
+    "details": [
+      "flux-3-video, flux-3-prompt-doctor",
+      "flux-3-cinematic-inserts, flux-3-keyframes-continuation",
+      "flux-3-audio-dialogue, flux-3-generate"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#august-7-2026",
+    "source": "dev"
+  }
+]

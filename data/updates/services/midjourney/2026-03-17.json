@@ -1,0 +1,19 @@
+[
+  {
+    "id": "midjourney-2026-03-17-1",
+    "service": "midjourney",
+    "date": "2026.03.17",
+    "kind": "모델",
+    "title": "Midjourney V8 알파 공개",
+    "summary": "지시를 더 잘 따르고 텍스트 렌더링이 좋아졌으며 생성 속도가 약 5배 빠른 V8을 alpha.midjourney.com에서 테스트할 수 있게 됐어요.",
+    "details": [
+      "2K 네이티브 렌더링 --hd, --q 4 지원",
+      "V7 개인화·무드보드·sref 호환",
+      "대화 모드 개선, Grid Mode, 사이드바 설정",
+      "--hd·--q 4·sref·무드보드 작업은 4배 비용",
+      "Relax는 아직 미지원"
+    ],
+    "url": "https://updates.midjourney.com/v8-alpha/",
+    "source": "notice"
+  }
+]

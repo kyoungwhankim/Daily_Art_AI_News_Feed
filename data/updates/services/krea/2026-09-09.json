@@ -1,0 +1,19 @@
+[
+  {
+    "id": "krea-2026-09-09-1",
+    "service": "krea",
+    "date": "2026.09.09",
+    "kind": "기능",
+    "title": "Elements 재사용 요소와 GPT Image 2.5 모델 추가",
+    "summary": "캐릭터·장소·사물을 @태그로 저장해 재사용하는 Elements가 Seedance Studio에 나왔어요. GPT Image 2.5 Flare·Sunburst, MiniMax H3 Max Turbo도 추가되고 Kling 구버전은 종료돼요.",
+    "details": [
+      "Elements: 레퍼런스 이미지 최대 8장과 가이드를 하나의 @태그로",
+      "GPT Image 2.5 Flare(투명 배경)·Sunburst(속도) API 제공",
+      "MiniMax H3 Max Turbo와 H3 Max 네이티브 1080p",
+      "엔터프라이즈 후불 청구서",
+      "Kling 1.0~2.1 종료(9월 15일 API sunset)"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#september-9-2026",
+    "source": "dev"
+  }
+]

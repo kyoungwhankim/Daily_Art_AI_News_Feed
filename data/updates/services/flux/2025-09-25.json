@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2025-09-25-1",
+    "service": "flux",
+    "date": "2025.09.25",
+    "kind": "연동",
+    "title": "Adobe Photoshop 생성형 채우기에 FLUX.1 Kontext [pro] 탑재",
+    "summary": "Photoshop (beta)의 Generative Fill에서 FLUX.1 Kontext [pro]를 골라 편집할 수 있게 됐어요. 베타 기간에는 한시적으로 무료로 써 볼 수 있어요.",
+    "url": "https://bfl.ai/blog/flux1-kontext-now-in-adobe-photoshop-powering-every-pixel",
+    "source": "notice"
+  }
+]

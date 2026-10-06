@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-06-17-1",
+    "service": "magnific",
+    "date": "2025.06.17",
+    "kind": "API",
+    "title": "Text to Icon 아이콘 생성 API",
+    "summary": "텍스트로 아이콘을 생성하는 Text to Icon 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/text-to-icon/preview"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#june-17-2025",
+    "source": "dev"
+  }
+]

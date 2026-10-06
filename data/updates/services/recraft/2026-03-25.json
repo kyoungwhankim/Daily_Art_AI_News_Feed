@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2026-03-25-1",
+    "service": "recraft",
+    "date": "2026.03.25",
+    "kind": "기능",
+    "title": "Recraft V4 Exploration Mode 추가",
+    "summary": "짧은 프롬프트로 8가지 서로 다른 시각적 해석을 먼저 받아 보고 마음에 드는 방향을 다듬어 가는 Exploration Mode가 V4에 추가됐어요.",
+    "url": "https://www.recraft.ai/blog/exploration-mode",
+    "source": "notice"
+  }
+]

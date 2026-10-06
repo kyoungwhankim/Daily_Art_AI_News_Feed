@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2026-06-11-1",
+    "service": "midjourney",
+    "date": "2026.06.11",
+    "kind": "모델",
+    "title": "V8.1, Midjourney 기본 모델로 전환",
+    "summary": "기본 모델이 V7에서 V8.1로 바뀌었어요. SD는 4초, HD는 12초 만에 이미지가 나오고 HD는 V7보다 4배 해상도예요.",
+    "details": [
+      "V7 omni-reference는 V8용 개선판 전까지 계속 사용",
+      "V8.0 알파 모델은 2주 뒤 종료 예정"
+    ],
+    "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model/",
+    "source": "notice"
+  }
+]

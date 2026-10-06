@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2026-04-23-1",
+    "service": "flux",
+    "date": "2026.04.23",
+    "kind": "API",
+    "title": "FLUX.2 LoRA 추론 공개 베타",
+    "summary": "직접 학습한 LoRA를 대시보드에 올려 FLUX.2 [klein] 기반 -finetuned 엔드포인트로 GPU 없이 서빙할 수 있게 됐어요. 베타 동안 기본 모델과 같은 가격이에요.",
+    "details": [
+      "finetune_id·finetune_strength 파라미터 추가",
+      "klein 4B·9B·Base 변형 FP8, BF16 옵션 등 6개 엔드포인트"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#april-23-2026",
+    "source": "dev"
+  }
+]

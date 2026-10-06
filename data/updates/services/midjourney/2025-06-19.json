@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2025-06-19-1",
+    "service": "midjourney",
+    "date": "2025.06.19",
+    "kind": "기능",
+    "title": "영상 'Save for Social Media' 저장 옵션",
+    "summary": "소셜 미디어 업로드 시 영상이 과하게 압축되는 문제를 줄이는 새 인코더를 적용한 'Save for Social Media' 저장 옵션이 생겼어요.",
+    "url": "https://updates.midjourney.com/save-for-social-media/",
+    "source": "notice"
+  }
+]

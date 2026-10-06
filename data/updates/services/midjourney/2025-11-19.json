@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-11-19-1",
+    "service": "midjourney",
+    "date": "2025.11.19",
+    "kind": "기능",
+    "title": "사용자 프로필 기능 출시",
+    "summary": "내 작품을 커뮤니티에 보여 줄 수 있는 사용자 프로필이 나왔어요. 사용자명·프로필 이미지·배너·소개·SNS 링크를 꾸미고 대표작을 고를 수 있어요.",
+    "details": [
+      "다른 사용자 팔로우(팔로워는 본인만 확인)",
+      "공유 가능한 프로필 링크",
+      "24시간 내 프로필 완성 시 fast 5시간 보상"
+    ],
+    "url": "https://updates.midjourney.com/profiles-on-midjourney/",
+    "source": "notice"
+  }
+]

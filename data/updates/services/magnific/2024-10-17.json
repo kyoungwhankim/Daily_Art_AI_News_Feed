@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2024-10-17-1",
+    "service": "magnific",
+    "date": "2024.10.17",
+    "kind": "API",
+    "title": "Mystic 고해상도 이미지 생성 API 개선",
+    "summary": "Mystic 이미지 생성 모드를 개선해 더 높은 해상도 출력과 세밀한 제어를 지원하는 텍스트-투-이미지 생성을 API로 제공해요.",
+    "details": [
+      "POST /v1/ai/mystic"
+    ],
+    "url": "https://docs.magnific.com/changelog/2024#october-17-2024",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2021-04-21-1",
+    "service": "gigapixel",
+    "date": "2021.04.21",
+    "kind": "앱",
+    "title": "Gigapixel v5.5.0: 새 AI 엔진과 Very Compressed 모델",
+    "summary": "AI 엔진을 내장해 최신 하드웨어 성능을 높이고 모든 모델을 업데이트했어요. Very Compressed 모델과 워터마크 방식 새 체험판도 나왔어요.",
+    "details": [
+      "모델별 대화형 툴팁 추가",
+      "v5.5.1(4/26)·v5.5.2(5/10): macOS 안정성 개선"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-5-2/23277",
+    "source": "notice"
+  }
+]

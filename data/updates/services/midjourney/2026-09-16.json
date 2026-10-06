@@ -1,0 +1,18 @@
+[
+  {
+    "id": "midjourney-2026-09-16-1",
+    "service": "midjourney",
+    "date": "2026.09.16",
+    "kind": "기능",
+    "title": "알파 사이트: 한국어 지원, 에디터·모바일 개선",
+    "summary": "alpha.midjourney.com에 한국어가 추가됐어요. V8.2 에디터 수정과 모바일·태블릿 첫 개선, 프롬프트 바 버그 수정도 함께 이뤄졌어요.",
+    "details": [
+      "이미지 첨부 시 '무엇을 바꿀까요?' 안내",
+      "Draft 배치에 Enhance 버튼",
+      "--no a, b 목록 전체 인식",
+      "폴더 링크가 이름 변경 후에도 유지"
+    ],
+    "url": "https://updates.midjourney.com/alpha-changelog-9-16-26/",
+    "source": "notice"
+  }
+]

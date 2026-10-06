@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-06-12-1",
+    "service": "stable-diffusion",
+    "date": "2025.06.12",
+    "kind": "연동",
+    "title": "TensorRT 최적화 SD3.5 공개",
+    "summary": "NVIDIA와 함께 TensorRT·FP8로 최적화한 SD3.5를 공개했어요. Large는 최대 2.3배, Medium은 1.7배 빨라지고 VRAM은 40% 줄었어요.",
+    "url": "https://stability.ai/news-updates/stable-diffusion-35-models-optimized-with-tensorrt-deliver-2x-faster-performance-and-40-less-memory-on-nvidia-rtx-gpus",
+    "source": "notice"
+  }
+]

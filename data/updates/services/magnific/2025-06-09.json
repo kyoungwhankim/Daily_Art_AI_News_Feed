@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-06-09-1",
+    "service": "magnific",
+    "date": "2025.06.09",
+    "kind": "API",
+    "title": "Kling 2.1 Master 이미지-투-비디오 API",
+    "summary": "이미지로 영상을 만드는 Kling 2.1 Master 모델 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/image-to-video/kling-v2-1-master"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#june-9-2025",
+    "source": "dev"
+  }
+]

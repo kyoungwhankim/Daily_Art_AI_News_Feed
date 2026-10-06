@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-09-16-1",
+    "service": "magnific",
+    "date": "2026.09.16",
+    "kind": "API",
+    "title": "GPT Image 2.5 생성·편집 API",
+    "summary": "GPT Image 2보다 빠른 OpenAI GPT Image 2.5 엔드포인트를 추가했어요. 다섯 품질 등급, 네이티브 투명 배경, flare·sunburst 변형을 지원해요.",
+    "url": "https://docs.magnific.com/changelog#september-16-2026",
+    "source": "dev"
+  }
+]

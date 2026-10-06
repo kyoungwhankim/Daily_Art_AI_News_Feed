@@ -1,0 +1,27 @@
+[
+  {
+    "id": "recraft-2026-09-09-1",
+    "service": "recraft",
+    "date": "2026.09.09",
+    "kind": "모델",
+    "title": "Recraft Studio에 ChatGPT Images 2.5 추가",
+    "summary": "OpenAI의 ChatGPT Images 2.5를 Recraft Studio에서 쓸 수 있게 됐어요. 이전 모델보다 지연이 50% 줄었고 국소 편집과 투명 배경 처리가 좋아졌어요.",
+    "url": "https://www.recraft.ai/blog/chatgpt-images-2-5-is-now-in-recraft-studio",
+    "source": "notice"
+  },
+  {
+    "id": "recraft-2026-09-09-2",
+    "service": "recraft",
+    "date": "2026.09.09",
+    "kind": "모델",
+    "title": "Recraft Studio에 영상 모델 3종 추가",
+    "summary": "Gemini Omni Flash 1.1, MiniMax H3 Turbo, Alibaba Wan 3.0 세 가지 영상 생성 모델을 Recraft Studio에 추가했어요.",
+    "details": [
+      "Gemini Omni Flash 1.1: 텍스트·사진·오디오·영상 레퍼런스 조합",
+      "MiniMax H3 Turbo: 빠른 대량 영상 생성",
+      "Wan 3.0: 오디오 포함 최대 30초 1080p"
+    ],
+    "url": "https://www.recraft.ai/blog/three-new-models-in-recraft-studio",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-11-28-1",
+    "service": "stable-diffusion",
+    "date": "2023.11.28",
+    "kind": "모델",
+    "title": "실시간 생성 모델 SDXL Turbo 공개",
+    "summary": "새 증류 기법 ADD로 단 1스텝에 이미지를 만드는 SDXL Turbo를 공개했어요. 비상업 연구 라이선스로 배포되고 Clipdrop에서 실시간 데모를 써 볼 수 있어요.",
+    "url": "https://stability.ai/news-updates/stability-ai-sdxl-turbo",
+    "source": "notice"
+  }
+]

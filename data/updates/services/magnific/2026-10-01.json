@@ -1,0 +1,16 @@
+[
+  {
+    "id": "magnific-2026-10-01-1",
+    "service": "magnific",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "MiniMax Hailuo 3·Hailuo 3 Max 영상 API",
+    "summary": "MiniMax Hailuo 3(768p·2K)와 Hailuo 3 Max(480p·768p) 영상 생성 엔드포인트를 추가했어요. 이미지·영상·오디오 레퍼런스를 프롬프트에서 @태그로 불러 써요.",
+    "details": [
+      "레퍼런스 이미지 9·영상 3·오디오 3개",
+      "레퍼런스 영상 길이도 과금에 포함(최대 15초)"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-1-2026",
+    "source": "dev"
+  }
+]

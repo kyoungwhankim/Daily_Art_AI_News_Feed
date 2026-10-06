@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2025-11-25-1",
+    "service": "flux",
+    "date": "2025.11.25",
+    "kind": "모델",
+    "title": "FLUX.2 공개: [pro]·[flex]·[dev]",
+    "summary": "여러 참조 이미지로 캐릭터·스타일 일관성을 지키고, 텍스트 렌더링과 구조화 프롬프트에 강한 차세대 모델 FLUX.2를 공개했어요. 32B 오픈 웨이트 [dev]도 함께 나왔어요.",
+    "details": [
+      "FLUX.2 [pro]: MP당 $0.03부터, 참조 이미지 최대 8장(Playground 10장)",
+      "FLUX.2 [flex]: 스텝 수(최대 50)·가이던스 조절, 타이포그래피 특화",
+      "FLUX.2 [dev]: Hugging Face 32B 오픈 웨이트",
+      "HEX 색상 지정, JSON 구조화 프롬프트, 최대 4MP 출력"
+    ],
+    "url": "https://bfl.ai/blog/flux-2",
+    "source": "notice"
+  }
+]

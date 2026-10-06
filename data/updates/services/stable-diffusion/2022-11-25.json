@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2022-11-25-1",
+    "service": "stable-diffusion",
+    "date": "2022.11.25",
+    "kind": "API",
+    "title": "Stability API에 Stable Diffusion 2.0 추가",
+    "summary": "API에서 Stable Diffusion 2.0(512px·768px)과 Inpainting 2.0을 쓸 수 있게 됐고, 적은 스텝으로 좋은 결과를 내는 새 샘플러 두 가지도 추가됐어요.",
+    "details": [
+      "새 샘플러 k_dpmpp_2m, k_dpmpp_2s_ancestral",
+      "샘플러 생략 시 API가 최적값 자동 선택",
+      "1.4·1.5·Inpainting 1.0도 계속 제공"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes#v2",
+    "source": "dev"
+  }
+]

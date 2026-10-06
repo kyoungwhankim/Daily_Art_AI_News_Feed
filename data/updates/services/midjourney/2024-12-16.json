@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2024-12-16-1",
+    "service": "midjourney",
+    "date": "2024.12.16",
+    "kind": "기능",
+    "title": "개인화 프로필 여러 개·무드보드 도입",
+    "summary": "개인화 프로필을 여러 개 만들고, 업로드한 이미지로 만든 무드보드로 모델을 개인화할 수 있게 됐어요. 설정 속도도 최대 5배 빨라졌어요.",
+    "details": [
+      "40개 평가로 시작, 200개면 안정화",
+      "프로필 이름 지정과 복수 기본값 선택",
+      "프로필별로 만든 이미지 모아 보기"
+    ],
+    "url": "https://updates.midjourney.com/profiles-and-moodboards/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2024-10-23-1",
+    "service": "midjourney",
+    "date": "2024.10.23",
+    "kind": "기능",
+    "title": "외부 이미지 에디터·Retexture·AI 모더레이터 V2 테스트",
+    "summary": "내 컴퓨터의 이미지를 올려 확장·자르기·리페인트할 수 있는 외부 이미지 에디터와, 장면의 조명·재질을 바꾸는 Retexture 모드를 테스트하기 시작했어요.",
+    "details": [
+      "개인화·sref·cref·이미지 프롬프트와 호환",
+      "프롬프트·이미지·마스크를 종합 판단하는 V2 AI 모더레이터",
+      "1만 장 이상 생성자, 연간 구독자, 12개월 연속 월 구독자에게 우선 개방"
+    ],
+    "url": "https://updates.midjourney.com/external-image-editor/",
+    "source": "notice"
+  }
+]

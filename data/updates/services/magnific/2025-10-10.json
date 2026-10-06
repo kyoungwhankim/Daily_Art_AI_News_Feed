@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-10-10-1",
+    "service": "magnific",
+    "date": "2025.10.10",
+    "kind": "API",
+    "title": "Improve Prompt API 추가",
+    "summary": "AI 생성용 프롬프트를 더 좋게 다듬어 주는 Improve Prompt 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/improve-prompt"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#october-10-2025",
+    "source": "dev"
+  }
+]

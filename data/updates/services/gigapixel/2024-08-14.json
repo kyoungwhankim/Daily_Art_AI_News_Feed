@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-08-14-1",
+    "service": "gigapixel",
+    "date": "2024.08.14",
+    "kind": "앱",
+    "title": "Gigapixel v7.3.2: 대량 배치 성능 개선",
+    "summary": "자동 닫기를 쓰는 대량 배치와 이미지 불러오기 성능이 좋아졌고, 흑백 오판정 등 작은 문제가 고쳐졌어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-3-2/76428",
+    "source": "notice"
+  }
+]

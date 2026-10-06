@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-02-11-1",
+    "service": "magnific",
+    "date": "2026.02.11",
+    "kind": "API",
+    "title": "Change Camera 시점 변환 API",
+    "summary": "사진 한 장에서 수평 회전·수직 기울기·줌을 조절해 다른 카메라 각도의 이미지를 만드는 Change Camera 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#february-11-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2026-05-07-1",
+    "service": "gigapixel",
+    "date": "2026.05.07",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.2.0: Wonder 3·High Fidelity v3·로컬 렌더",
+    "summary": "VRAM을 최대 95% 줄이는 NeuroStream·NeuroServer로 Wonder 2·Wonder 3를 내 PC에서 돌릴 수 있게 됐어요. 디테일을 높인 High Fidelity v3도 추가됐어요.",
+    "details": [
+      "로컬 렌더: NVIDIA·AMD 8GB VRAM 이상, Apple Silicon 16GB·macOS 14 이상",
+      "Wonder 3 클라우드 렌더 지원",
+      "Mac 설치 파일 Intel·Apple Silicon 분리"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-2-0-wonder-2-wonder-3-and-high-fidelity-v3/102626",
+    "source": "notice"
+  }
+]

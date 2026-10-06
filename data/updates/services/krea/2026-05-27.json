@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-05-27-1",
+    "service": "krea",
+    "date": "2026.05.27",
+    "kind": "API",
+    "title": "Krea 2 API 출시: 스타일 전이·무드보드 지원",
+    "summary": "Krea 2 Medium·Large를 API로 제공하기 시작했어요. 스타일 전이, 무드보드, 조절 가능한 creativity 파라미터를 지원하고 Fal·Comfy·Runware 등 파트너로도 쓸 수 있어요.",
+    "details": [
+      "Medium·Large 두 가지 크기",
+      "여러 레퍼런스 이미지 기반 스타일 전이",
+      "수십 장 무드보드 입력 지원",
+      "Nous Research Hermes, Claude·Codex 연동 문서 제공"
+    ],
+    "url": "https://www.krea.ai/blog/krea-2-api-launch",
+    "source": "notice"
+  }
+]

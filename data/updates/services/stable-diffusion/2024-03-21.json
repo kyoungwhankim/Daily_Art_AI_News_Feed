@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2024-03-21-1",
+    "service": "stable-diffusion",
+    "date": "2024.03.21",
+    "kind": "API",
+    "title": "Stable Image 서비스와 v2beta API 출시",
+    "summary": "개발자 플랫폼에 생성·업스케일·편집·제어 4가지로 나뉜 Stable Image API 서비스가 나왔어요. 새 기능은 모두 REST v2beta API로 제공돼요.",
+    "details": [
+      "대표 생성 서비스 Stable Image Core",
+      "Creative Upscaler, Search and Replace 편집",
+      "기존 API는 Legacy로 유지보수 전환"
+    ],
+    "url": "https://stability.ai/news-updates/image-services-on-stability-ai-developer-platform",
+    "source": "notice"
+  }
+]

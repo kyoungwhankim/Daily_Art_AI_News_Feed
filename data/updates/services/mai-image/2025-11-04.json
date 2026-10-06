@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mai-image-2025-11-04-1",
+    "service": "mai-image",
+    "date": "2025.11.04",
+    "kind": "연동",
+    "title": "MAI-Image-1, Bing Image Creator와 Copilot에 적용",
+    "summary": "MAI-Image-1이 Bing Image Creator 모델 메뉴에 DALL-E 3, GPT-4o와 나란히 추가됐어요. Copilot Audio Expressions의 Story Mode에서도 이야기를 이미지로 그려 줘요.",
+    "details": [
+      "bing.com/create, Bing 모바일 앱, Bing 검색창에서 사용",
+      "Bing Image Creator와 Copilot Labs 이용 가능 국가 전체 제공"
+    ],
+    "url": "https://microsoft.ai/news/introducing-mai-image-1-debuting-in-the-top-10-on-lmarena/",
+    "source": "notice"
+  }
+]

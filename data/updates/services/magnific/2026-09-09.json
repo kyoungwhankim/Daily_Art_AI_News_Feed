@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-09-09-1",
+    "service": "magnific",
+    "date": "2026.09.09",
+    "kind": "API",
+    "title": "Seedance 2.x 프롬프트 4만 자로 확대",
+    "summary": "모든 Seedance 2.x 모델의 프롬프트 한도가 2,000자에서 40,000자로 늘었어요. 긴 프롬프트도 비용은 같아요.",
+    "url": "https://docs.magnific.com/changelog#september-9-2026",
+    "source": "dev"
+  }
+]

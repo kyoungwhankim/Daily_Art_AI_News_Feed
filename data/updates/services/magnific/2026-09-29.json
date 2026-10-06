@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-09-29-1",
+    "service": "magnific",
+    "date": "2026.09.29",
+    "kind": "API",
+    "title": "크레딧 사용량에 tool_name 필드 추가",
+    "summary": "팀 크레딧 사용량 API의 각 행에 실제 과금된 도구를 알려 주는 tool_name이 추가됐어요. 같은 카테고리의 다른 도구 사용을 중복으로 오인하지 않게 됐어요.",
+    "url": "https://docs.magnific.com/changelog#september-29-2026",
+    "source": "dev"
+  }
+]

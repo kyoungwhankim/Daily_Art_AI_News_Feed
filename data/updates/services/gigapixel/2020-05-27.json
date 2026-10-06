@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-05-27-1",
+    "service": "gigapixel",
+    "date": "2020.05.27",
+    "kind": "앱",
+    "title": "Gigapixel AI v4.9.2: Remove Blur·Suppress Noise 컨트롤 개편",
+    "summary": "흐림 제거와 노이즈 억제 컨트롤을 DeNoise AI처럼 바꾸고 숫자 입력·초기화 버튼을 넣었어요. 배치에서 이미지별 Auto 설정도 제대로 계산돼요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-ai-v4-9-2/14944",
+    "source": "notice"
+  }
+]

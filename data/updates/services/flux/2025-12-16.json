@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2025-12-16-1",
+    "service": "flux",
+    "date": "2025.12.16",
+    "kind": "모델",
+    "title": "최상위 모델 FLUX.2 [max] 출시",
+    "summary": "편집 일관성과 프롬프트 반영이 가장 뛰어난 FLUX.2 [max]를 출시했어요. 웹 검색으로 최신 정보를 반영해 이미지를 만드는 그라운딩 검색도 지원해요.",
+    "details": [
+      "참조 이미지 최대 10장으로 정체성 유지 편집",
+      "실시간 날씨·최근 뉴스 등을 반영하는 Grounding search",
+      "Playground와 API에서 사용 가능"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#december-16-2025",
+    "source": "dev"
+  }
+]

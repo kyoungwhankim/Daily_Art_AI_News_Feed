@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2022-11-24-1",
+    "service": "stable-diffusion",
+    "date": "2022.11.24",
+    "kind": "모델",
+    "title": "Stable Diffusion 2.0 오픈소스 공개",
+    "summary": "새 텍스트 인코더 OpenCLIP으로 학습해 화질을 높인 Stable Diffusion 2.0을 오픈소스로 공개했어요. 768px 모델과 업스케일러, depth-to-image 모델도 함께 나왔어요.",
+    "details": [
+      "OpenCLIP 텍스트 인코더 도입",
+      "512px·768px 텍스트-이미지 모델",
+      "4배 업스케일러, depth-to-image, 새 인페인팅 모델"
+    ],
+    "url": "https://stability.ai/news-updates/stable-diffusion-v2-release",
+    "source": "notice"
+  }
+]

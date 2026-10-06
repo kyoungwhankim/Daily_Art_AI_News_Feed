@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2025-11-14-1",
+    "service": "gigapixel",
+    "date": "2025.11.14",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.0.3: Grain 토글과 Intel Mac 지원 복귀",
+    "summary": "생성형 결과가 너무 매끈할 때 자연스러운 입자를 더하는 Grain 토글이 모든 모델에 추가됐어요. Intel Mac에서도 다시 모든 모델을 쓸 수 있어요.",
+    "details": [
+      "Intel Mac은 생성형 모델 로컬 내보내기 비활성",
+      "v1.0.4(11/18)·v1.0.5(12/9)·v1.0.7(12/16): 버그 수정"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-0-3-v1-0-7/98426",
+    "source": "notice"
+  }
+]

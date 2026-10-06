@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-03-15-1",
+    "service": "midjourney",
+    "date": "2024.03.15",
+    "kind": "기능",
+    "title": "Style Reference v2 공개",
+    "summary": "스타일 참조(--sref)가 v2로 업데이트돼 스타일을 더 정확히 이해하고 스타일 외 요소가 섞이는 현상이 줄었어요. --sw 가중치도 범위가 넓어지고 더 의미 있게 바뀌었어요.",
+    "url": "https://updates.midjourney.com/style-ref-v2/",
+    "source": "notice"
+  }
+]

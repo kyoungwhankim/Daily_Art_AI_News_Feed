@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2024-11-20-1",
+    "service": "gigapixel",
+    "date": "2024.11.20",
+    "kind": "앱",
+    "title": "Gigapixel v8.0.2: 생성형 모델 알파 지원, 클라우드 가격 변경",
+    "summary": "생성형 모델이 기본 알파 채널을 지원하고 Redefine 텍스처가 창의성에 맞춰 바뀌어요. Cloud Render 가격도 업데이트됐어요.",
+    "details": [
+      "CLI에서 감마 보정 사용 가능"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-0-2/81616",
+    "source": "notice"
+  }
+]

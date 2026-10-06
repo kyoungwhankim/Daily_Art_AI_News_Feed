@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-08-13-1",
+    "service": "midjourney",
+    "date": "2025.08.13",
+    "kind": "기능",
+    "title": "HD 비디오 Standard 플랜 확대, 배치 크기·무드보드 페이지",
+    "summary": "Standard 플랜에서도 HD 비디오를 만들 수 있게 됐고, 영상을 1~2개씩 적게 생성해 비용을 줄일 수 있어요. 무드보드는 별도 페이지로 분리됐어요.",
+    "details": [
+      "--bs 1 / --bs 2로 배치 크기 지정",
+      "비디오 썸네일이 마지막 프레임으로 변경",
+      "비디오 모더레이션 정확도 개선"
+    ],
+    "url": "https://updates.midjourney.com/new-video-options-and-a-home-for-moodboards/",
+    "source": "notice"
+  }
+]

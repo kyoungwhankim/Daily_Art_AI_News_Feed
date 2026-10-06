@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-03-26-1",
+    "service": "magnific",
+    "date": "2026.03.26",
+    "kind": "API",
+    "title": "Video Upscaler Precision API",
+    "summary": "원본 디테일에 충실한 확산 모델 기반 정밀 영상 업스케일 API를 추가했어요. 1K·2K·4K 출력과 샤프닝·그레인·FPS 부스트를 지원해요.",
+    "url": "https://docs.magnific.com/changelog#march-26-2026",
+    "source": "dev"
+  }
+]

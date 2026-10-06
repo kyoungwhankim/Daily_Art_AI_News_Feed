@@ -1,0 +1,19 @@
+[
+  {
+    "id": "seedream-2026-02-13-1",
+    "service": "seedream",
+    "date": "2026.02.13",
+    "kind": "모델",
+    "title": "Seedream 5.0 Lite 공개: 더 깊은 추론과 실시간 검색",
+    "summary": "통합 멀티모달 구조로 이해·추론·생성 능력을 끌어올린 Seedream 5.0 Lite가 공개됐어요. 실시간 검색으로 최신 정보를 반영해 이미지를 만들 수 있고, Elo 점수가 Seedream 4.5를 넘었어요.",
+    "details": [
+      "모호한 지시와 참조 이미지 특징을 더 정확히 이해",
+      "피사체 일관성과 이미지-텍스트 정렬 개선",
+      "풍부한 세계 지식으로 정보 시각화 강화",
+      "실시간 검색 강화 기능 도입",
+      "Dreamina AI, Volcano Ark 체험 센터 등에서 사용 가능"
+    ],
+    "url": "https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite",
+    "source": "notice"
+  }
+]

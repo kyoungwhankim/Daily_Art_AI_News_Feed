@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-06-25-1",
+    "service": "magnific",
+    "date": "2026.06.25",
+    "kind": "API",
+    "title": "사용자 생성물 조회 Creations API",
+    "summary": "API 키로 사용자의 최근 생성물과 메타데이터를 최신순으로 불러오는 Creations API를 추가했어요. 크레딧은 들지 않아요.",
+    "url": "https://docs.magnific.com/changelog#june-25-2026",
+    "source": "dev"
+  }
+]

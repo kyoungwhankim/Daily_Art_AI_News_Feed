@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-09-16-1",
+    "service": "krea",
+    "date": "2026.09.16",
+    "kind": "기능",
+    "title": "Organizations 전체 공개와 멤버 사용량 한도",
+    "summary": "Organizations를 영업 문의 없이 모든 팀에 열었어요. 기존 워크스페이스 편입, 태그, 멤버별 월 사용량 한도, 조직 전체 사용량 리포트가 함께 추가됐어요.",
+    "details": [
+      "인증 도메인 기반 워크스페이스 편입",
+      "워크스페이스 태그로 정리·필터",
+      "워크스페이스 기본·멤버별 월 컴퓨트 한도",
+      "조직 단위 Usage 페이지, Admin의 결제 관리"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#september-16-2026",
+    "source": "dev"
+  }
+]

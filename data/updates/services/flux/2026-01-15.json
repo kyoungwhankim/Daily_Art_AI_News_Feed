@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-01-15-1",
+    "service": "flux",
+    "date": "2026.01.15",
+    "kind": "모델",
+    "title": "초고속 모델군 FLUX.2 [klein] 공개",
+    "summary": "생성과 편집을 하나로 묶고 1초 미만 추론이 가능한 가장 빠른 모델군 FLUX.2 [klein]을 공개했어요. 13GB VRAM 소비자 GPU에서도 돌아가요.",
+    "details": [
+      "4B(Apache 2.0)·9B(비상업 라이선스) 오픈 웨이트",
+      "API 가격: 4B $0.014, 9B $0.015부터(이미지당)",
+      "엔드포인트 flux-2-klein-4b, flux-2-klein-9b"
+    ],
+    "url": "https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence",
+    "source": "notice"
+  }
+]

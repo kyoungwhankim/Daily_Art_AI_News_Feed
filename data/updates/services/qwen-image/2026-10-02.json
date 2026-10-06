@@ -1,0 +1,18 @@
+[
+  {
+    "id": "qwen-image-2026-10-02-1",
+    "service": "qwen-image",
+    "date": "2026.10.02",
+    "kind": "모델",
+    "title": "Qwen-Image-2.1-Pro 출시: 투명 이미지 네이티브 지원",
+    "summary": "생성과 편집을 하나로 합친 가벼운 모델 Qwen-Image-2.1-Pro가 출시됐어요. 투명 배경 이미지를 바로 만들고 편집할 수 있고, 참조 이미지를 최대 10장까지 쓸 수 있어요.",
+    "details": [
+      "시각 생성부 7B 파라미터의 경량 구조로 품질·비용 균형",
+      "투명 이미지 생성, 투명 레이어 편집, 사진 속 피사체 추출",
+      "최대 10장 참조, 부분 편집, 인물·제품 보존",
+      "타이포그래피·인물 조명·디테일 개선"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-03-03-1",
+    "service": "recraft",
+    "date": "2025.03.03",
+    "kind": "기능",
+    "title": "이미지에서 프롬프트를 뽑는 Extract Prompt",
+    "summary": "아무 이미지나 분석해 스타일·색·구성을 담은 텍스트 프롬프트로 바꿔 주는 Extract Prompt 기능을 소개했어요.",
+    "url": "https://www.recraft.ai/blog/extract-prompts-from-any-image-with-recraft",
+    "source": "notice"
+  }
+]

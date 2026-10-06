@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-06-16-1",
+    "service": "krea",
+    "date": "2026.06.16",
+    "kind": "정책",
+    "title": "Krea 2 엔터프라이즈 API에 Zero Data Retention",
+    "summary": "엔터프라이즈 API 고객이 요청 헤더 하나로 프롬프트와 생성물을 저장하지 않게 할 수 있는 Zero Data Retention을 지원해요.",
+    "details": [
+      "X-Api-Zero-Data-Retention: 1 헤더 사용",
+      "krea-2 medium·large·medium-turbo 지원",
+      "레퍼런스 이미지는 data URI로만 전달"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#june-16-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2022-08-22-1",
+    "service": "stable-diffusion",
+    "date": "2022.08.22",
+    "kind": "모델",
+    "title": "Stable Diffusion 일반 공개",
+    "summary": "연구자 공개에 이어 Stable Diffusion을 누구나 쓸 수 있도록 공개했어요. 상업·비상업 사용을 허용하는 CreativeML OpenRAIL-M 라이선스로 배포돼요.",
+    "details": [
+      "CreativeML OpenRAIL-M 라이선스",
+      "기본 포함 AI 안전 분류기(조절 가능)"
+    ],
+    "url": "https://stability.ai/news-updates/stable-diffusion-public-release",
+    "source": "notice"
+  }
+]

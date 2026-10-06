@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2026-08-27-1",
+    "service": "midjourney",
+    "date": "2026.08.27",
+    "kind": "모델",
+    "title": "V8.2 이미지 편집 모델 테스트 시작",
+    "summary": "지시문으로 이미지를 편집하고 최대 4장의 참조 이미지로 생성하는 첫 V8.2 편집 모델을 모두가 테스트할 수 있게 됐어요. omni-reference를 대체해요.",
+    "details": [
+      "인페인팅·아웃페인팅 지원",
+      "개인화·무드보드·sref 사용 가능",
+      "라이트박스 'edit' 또는 Discord --edit URL"
+    ],
+    "url": "https://updates.midjourney.com/edit-model-for-v8/",
+    "source": "notice"
+  }
+]

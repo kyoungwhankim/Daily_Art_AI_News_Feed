@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2026-07-24-1",
+    "service": "midjourney",
+    "date": "2026.07.24",
+    "kind": "모델",
+    "title": "Midjourney V8.2 출시",
+    "summary": "미학·화질·개인화에 집중한 V8.2가 나왔어요. 더 창의적이고 과감한 이미지를 만들고, 저품질 결과가 크게 줄었어요.",
+    "details": [
+      "평가가 많은 프로필일수록 취향 이해 향상",
+      "개인화 프로필 생성용 이미지 풀 확대"
+    ],
+    "url": "https://updates.midjourney.com/version-8-2/",
+    "source": "notice"
+  }
+]

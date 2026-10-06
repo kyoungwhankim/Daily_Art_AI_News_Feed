@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2020-04-09-1",
+    "service": "gigapixel",
+    "date": "2020.04.09",
+    "kind": "앱",
+    "title": "Gigapixel AI v4.5.0: UI 전면 개편과 배치 개별 설정",
+    "summary": "DeNoise·Sharpen과 같은 배치 작업 흐름으로 UI 전체를 바꾸고, 배치 안 이미지마다 다른 처리 설정을 줄 수 있게 했어요.",
+    "details": [
+      "새 설치 프레임워크, 확대 방식 자동 파일명 추가",
+      "환경설정·저장·배치 패널 재설계"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-ai-v4-5-0/14269",
+    "source": "notice"
+  }
+]

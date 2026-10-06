@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-05-28-1",
+    "service": "gigapixel",
+    "date": "2025.05.28",
+    "kind": "앱",
+    "title": "Gigapixel v8.4.1: 얼굴 감지·복원 개선",
+    "summary": "Face Recovery 자동 선택이 확신도 높은 얼굴만 고르도록 바뀌었고, 그레이스케일 ICC가 붙은 RGB 이미지 로딩 문제를 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-4-1/91709",
+    "source": "notice"
+  }
+]

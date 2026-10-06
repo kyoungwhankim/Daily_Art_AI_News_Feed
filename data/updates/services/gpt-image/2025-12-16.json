@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gpt-image-2025-12-16-1",
+    "service": "gpt-image",
+    "date": "2025.12.16",
+    "kind": "모델",
+    "title": "새 ChatGPT Images와 GPT-Image-1.5 출시",
+    "summary": "더 빨라진 새 ChatGPT Images 경험과 함께 API용 GPT-Image-1.5가 출시됐어요. OpenAI의 최신·최고 이미지 생성 모델로, ChatGPT와 API 모두에서 쓸 수 있어요.",
+    "details": [
+      "ChatGPT Images 생성 속도 개선",
+      "API에 gpt-image-1.5와 chatgpt-image-latest 모델 추가"
+    ],
+    "url": "https://openai.com/index/new-chatgpt-images-is-here",
+    "source": "notice"
+  }
+]

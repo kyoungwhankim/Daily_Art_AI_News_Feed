@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nano-banana-2025-10-13-1",
+    "service": "nano-banana",
+    "date": "2025.10.13",
+    "kind": "연동",
+    "title": "Nano Banana, Google 검색·NotebookLM·Photos로 확대",
+    "summary": "Nano Banana가 Google 검색(Lens)과 NotebookLM에 들어오고 곧 Google Photos에도 적용된다고 발표됐어요. Gemini 앱에서는 지금까지 50억 장 넘는 이미지가 만들어졌다고 해요.",
+    "details": [
+      "Lens의 새 Create 모드로 사진을 바로 AI 변환",
+      "NotebookLM Video Overviews에 수채화·애니메이션 등 6가지 새 스타일",
+      "소스 기반 맥락 일러스트 생성과 새 Brief 형식",
+      "Google Photos 적용은 몇 주 내 예정"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/nano-banana-google-products/",
+    "source": "notice"
+  }
+]

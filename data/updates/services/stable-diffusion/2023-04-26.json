@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-04-26-1",
+    "service": "stable-diffusion",
+    "date": "2023.04.26",
+    "kind": "API",
+    "title": "Image Upscaling API 출시",
+    "summary": "작은 이미지를 선명하게 키우는 Image Upscaling API를 출시했어요. 빠른 Real-ESRGAN과 디테일을 살리는 Stable Diffusion 4x Upscaler 두 모델을 제공해요.",
+    "url": "https://stability.ai/news-updates/stability-ai-releases-image-upscaling-api",
+    "source": "notice"
+  }
+]

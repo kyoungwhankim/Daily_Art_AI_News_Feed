@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2024-03-13-1",
+    "service": "gigapixel",
+    "date": "2024.03.13",
+    "kind": "앱",
+    "title": "Gigapixel v7.0.4: RAW 흐름 개편, DNG 내보내기 종료",
+    "summary": "색 정확도와 최적화를 위해 RAW 처리 흐름을 바꾸고 DNG 내보내기 지원을 중단했어요. RAW는 기본적으로 TIFF로 저장돼요.",
+    "details": [
+      "10만 장 불러오기 2분 20초 → 11초"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-0-4/65276",
+    "source": "notice"
+  }
+]

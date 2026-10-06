@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2025-07-24-1",
+    "service": "stable-diffusion",
+    "date": "2025.07.24",
+    "kind": "종료",
+    "title": "SD 1.6 API 종료와 가격 인상 예고",
+    "summary": "Stable Video Diffusion API와 Stable Diffusion 1.6 API를 종료했어요. 일부 API 가격은 8월 1일부터 오르고, SD1.6 사용자는 SDXL로 옮기길 권해요.",
+    "url": "https://platform.stability.ai/docs/release-notes",
+    "source": "dev"
+  }
+]

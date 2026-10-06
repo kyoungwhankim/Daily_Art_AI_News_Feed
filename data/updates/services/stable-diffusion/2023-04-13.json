@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2023-04-13-1",
+    "service": "stable-diffusion",
+    "date": "2023.04.13",
+    "kind": "모델",
+    "title": "Stable Diffusion XL 베타 공개",
+    "summary": "사진 같은 사실감과 구도, 얼굴 표현이 좋아진 SDXL 베타를 API 고객과 DreamStudio 사용자에게 공개했어요. 짧은 프롬프트로도 풍부한 이미지를 만들어요.",
+    "details": [
+      "향상된 포토리얼리즘과 얼굴 생성",
+      "더 읽기 쉬운 텍스트 생성"
+    ],
+    "url": "https://stability.ai/news-updates/stable-diffusion-xl-beta-available-for-api-customers-and-dreamstudio-users",
+    "source": "notice"
+  }
+]

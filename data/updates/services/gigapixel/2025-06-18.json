@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2025-06-18-1",
+    "service": "gigapixel",
+    "date": "2025.06.18",
+    "kind": "앱",
+    "title": "Gigapixel v8.4.2: 색 프로파일 정리",
+    "summary": "모든 디스플레이 색 프로파일을 지원하게 돼 sRGB 대체 옵션을 없앴어요. 설치 안정성과 잘못된 색 변환 문제도 고쳤어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-4-2/92086",
+    "source": "notice"
+  }
+]

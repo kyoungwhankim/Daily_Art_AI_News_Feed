@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2026-05-13-1",
+    "service": "gigapixel",
+    "date": "2026.05.13",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.3.0: Recover Faces 3, 3배 빨라진 NeuroServer",
+    "summary": "크기 제한과 점 아티팩트를 없앤 생성형 얼굴 복원 모델 Recover Faces 3가 나왔어요. Wonder 3·Recover Faces 3 처리 속도는 300% 이상 빨라졌어요.",
+    "details": [
+      "Recover Faces 3는 로컬 전용(NVIDIA·AMD·Apple Silicon)",
+      "Recover Faces 1 지원 종료"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-3-0-recover-faces-3-300-speed-up-for-neuroserver-models/102815",
+    "source": "notice"
+  }
+]

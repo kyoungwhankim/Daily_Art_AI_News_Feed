@@ -1,0 +1,12 @@
+[
+  {
+    "id": "midjourney-2024-03-26-1",
+    "service": "midjourney",
+    "date": "2024.03.26",
+    "kind": "기능",
+    "title": "알파 웹에 새 버그 신고 도구 도입",
+    "summary": "버그 신고 채널 링크 대신 프롬프트·작업·스크린샷을 첨부해 신고할 수 있는 도구가 생겼어요. 신고 전 status.midjourney.com 상태도 바로 볼 수 있어요.",
+    "url": "https://updates.midjourney.com/new-alpha-reporting-tool/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "krea-2026-03-02-1",
+    "service": "krea",
+    "date": "2026.03.02",
+    "kind": "기능",
+    "title": "Krea 전면 리디자인: 단일 사이드바와 새 모바일",
+    "summary": "Krea의 모든 화면을 다시 디자인했어요. 모든 도구가 하나의 사이드바에 모였고, 모델별 비용·속도 정보와 처음부터 다시 만든 모바일 경험을 제공해요.",
+    "details": [
+      "이미지·영상·편집·3D·실시간 도구를 한 사이드바로 통합",
+      "모델 선택 시 비용·속도·특징 표시, 즐겨 쓰는 도구 고정",
+      "홈페이지 용량 1/3로 축소, 세션 검색",
+      "모바일 앱 새로 구축"
+    ],
+    "url": "https://www.krea.ai/blog/redesign",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-03-02-2",
+    "service": "krea",
+    "date": "2026.03.02",
+    "kind": "앱",
+    "title": "Krea iPad 앱에 Voice Mode 추가",
+    "summary": "iPad에서 그림을 그리면서 말로 지시하면 캔버스가 실시간으로 바뀌는 Voice Mode를 선보였어요. 펜을 떼지 않고 '배경을 더 따뜻하게' 같은 수정이 가능해요.",
+    "url": "https://www.krea.ai/blog/voice-mode",
+    "source": "notice"
+  }
+]

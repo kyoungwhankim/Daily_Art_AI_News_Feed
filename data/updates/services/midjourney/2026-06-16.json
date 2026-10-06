@@ -1,0 +1,16 @@
+[
+  {
+    "id": "midjourney-2026-06-16-1",
+    "service": "midjourney",
+    "date": "2026.06.16",
+    "kind": "기능",
+    "title": "V8.1 Draft 모드와 --preview 기능 미리보기",
+    "summary": "한 번에 저해상도 이미지 24장을 만드는 V8.1 Draft 모드가 나왔어요. --preview로 개발 중인 새 모델을 미리 써 볼 수도 있어요.",
+    "details": [
+      "Draft는 V8.1 SD의 절반 fast 시간",
+      "Vary로 원하는 이미지를 정식 품질로 렌더링"
+    ],
+    "url": "https://updates.midjourney.com/draft-mode-for-v8-1-and-new-feature-previews/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2020-09-09-1",
+    "service": "gigapixel",
+    "date": "2020.09.09",
+    "kind": "앱",
+    "title": "Gigapixel v5.1.6: NVIDIA GPU 충돌 수정",
+    "summary": "NVIDIA 20 시리즈와 구형 드라이버 환경에서 나던 충돌을 고치고, Game Ready 드라이버로 바꿀 필요도 없앴어요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v5-1-6/16471",
+    "source": "notice"
+  }
+]

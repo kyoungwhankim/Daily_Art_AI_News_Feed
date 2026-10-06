@@ -1,0 +1,22 @@
+[
+  {
+    "id": "krea-2026-06-03-1",
+    "service": "krea",
+    "date": "2026.06.03",
+    "kind": "모델",
+    "title": "2초 만에 생성하는 Krea 2 Turbo 출시",
+    "summary": "Krea 2의 빠른 버전 Krea 2 Turbo로 약 2초 만에 고품질 이미지를 만들 수 있어요. 스타일 레퍼런스·무드보드·LoRA와 호환되고 무료로 써 볼 수 있어요.",
+    "url": "https://www.krea.ai/blog/krea-2-turbo",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-06-03-2",
+    "service": "krea",
+    "date": "2026.06.03",
+    "kind": "모델",
+    "title": "Krea에 Ideogram v4.0 추가",
+    "summary": "2K 네이티브 해상도, 뛰어난 텍스트 렌더링, JSON 프롬프트를 지원하는 Ideogram v4.0을 Krea에서 쓸 수 있게 됐어요.",
+    "url": "https://www.krea.ai/docs/changelog#june-3-2026",
+    "source": "dev"
+  }
+]

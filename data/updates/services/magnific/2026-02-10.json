@@ -1,0 +1,16 @@
+[
+  {
+    "id": "magnific-2026-02-10-1",
+    "service": "magnific",
+    "date": "2026.02.10",
+    "kind": "API",
+    "title": "Ideogram 인페인팅·Seedream V4.5 확장 API",
+    "summary": "마스크와 프롬프트로 부분 편집하는 Ideogram Image Edit와, Seedream V4.5로 이미지를 바깥으로 넓히는 Image Expand 엔드포인트를 추가했어요.",
+    "details": [
+      "POST /v1/ai/ideogram-image-edit (TURBO·DEFAULT·QUALITY)",
+      "POST /v1/ai/image-expand/seedream-v4-5"
+    ],
+    "url": "https://docs.magnific.com/changelog#february-10-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-05-11-1",
+    "service": "flux",
+    "date": "2026.05.11",
+    "kind": "연동",
+    "title": "공식 FLUX MCP 서버 출시",
+    "summary": "mcp.bfl.ai에서 공식 FLUX MCP 서버가 열려 Claude·Cursor·Codex 등 MCP 클라이언트 안에서 FLUX 이미지를 생성·편집·변형할 수 있게 됐어요.",
+    "details": [
+      "BFL 계정 OAuth 로그인, API 키 입력 불필요",
+      "FLUX.2 Pro·Max·Klein·Flex와 FLUX Tools 지원",
+      "생성 기록 탐색과 변형 분기"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#may-11-2026",
+    "source": "dev"
+  }
+]

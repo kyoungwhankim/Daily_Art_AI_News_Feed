@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-02-05-1",
+    "service": "magnific",
+    "date": "2026.02.05",
+    "kind": "API",
+    "title": "Kling 3 영상 생성 API",
+    "summary": "Kuaishou의 최신 영상 모델 Kling 3를 Pro와 Standard 두 등급 엔드포인트로 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#february-5-2026",
+    "source": "dev"
+  }
+]

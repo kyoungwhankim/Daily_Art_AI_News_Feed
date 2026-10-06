@@ -1,0 +1,15 @@
+[
+  {
+    "id": "nano-banana-2026-09-14-1",
+    "service": "nano-banana",
+    "date": "2026.09.14",
+    "kind": "종료",
+    "title": "Gemini 2.5 Flash Image 종료일 2027년 3월로 연장",
+    "summary": "Gemini Enterprise Agent Platform에서 gemini-2.5-flash-image의 종료일이 2026년 10월 2일에서 2027년 3월 15일로 늦춰졌어요. Gemini 3.1 Flash-Lite Image로 옮기길 권장해요.",
+    "details": [
+      "gemini-3.1-flash-lite-image 종료 예정일은 2027년 6월 28일 이후"
+    ],
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/release-notes#September_14_2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "qwen-image-2026-08-04-1",
+    "service": "qwen-image",
+    "date": "2026.08.04",
+    "kind": "모델",
+    "title": "Qwen-Image-3.0 Standard 출시",
+    "summary": "일상적인 대량 제작에 맞춘 Qwen-Image-3.0 표준 모델이 출시됐어요. 4.5k 토큰 지시 이해와 안정적인 글자 렌더링을 더 낮은 비용으로 쓸 수 있어 포스터·웹페이지 일괄 생성에 좋아요.",
+    "details": [
+      "10px 작은 글자, 12개 언어, 20개 이상 폰트 지원",
+      "국제(International)와 글로벌(Global) 배포 범위에 함께 출시"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

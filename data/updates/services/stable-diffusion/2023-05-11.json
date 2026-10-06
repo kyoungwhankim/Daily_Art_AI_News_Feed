@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2023-05-11-1",
+    "service": "stable-diffusion",
+    "date": "2023.05.11",
+    "kind": "API",
+    "title": "Stable Animation SDK 출시",
+    "summary": "Stable Diffusion 모델로 애니메이션을 만드는 Stable Animation SDK를 내놨어요. 텍스트, 시작 이미지, 원본 영상을 입력으로 쓸 수 있어요.",
+    "details": [
+      "SD 2.0·SDXL 등 모든 Stable Diffusion 모델 사용 가능",
+      "gRPC SDK 전용, image_to_prompt 함수 위치 변경"
+    ],
+    "url": "https://stability.ai/news-updates/stable-animation-sdk",
+    "source": "notice"
+  }
+]

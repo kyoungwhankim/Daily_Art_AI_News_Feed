@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2024-10-02-1",
+    "service": "flux",
+    "date": "2024.10.02",
+    "kind": "모델",
+    "title": "FLUX1.1 [pro]와 BFL API 베타 공개",
+    "summary": "FLUX.1 [pro]보다 6배 빠르면서 화질·프롬프트 반영·다양성이 좋아진 FLUX1.1 [pro]를 내놓고, 개발자용 BFL API 베타를 일반 공개했어요.",
+    "details": [
+      "FLUX1.1 [pro]: 이전 대비 6배 빠른 생성",
+      "기존 FLUX.1 [pro]도 같은 결과를 2배 빠르게 생성",
+      "BFL API 베타 일반 공개"
+    ],
+    "url": "https://bfl.ai/blog/24-10-02-flux",
+    "source": "notice"
+  }
+]

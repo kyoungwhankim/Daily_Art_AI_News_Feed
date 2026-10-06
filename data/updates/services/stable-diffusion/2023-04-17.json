@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stable-diffusion-2023-04-17-1",
+    "service": "stable-diffusion",
+    "date": "2023.04.17",
+    "kind": "API",
+    "title": "REST API에 스타일 프리셋 지원",
+    "summary": "DreamStudio와 같은 스타일 프리셋을 REST API의 style_preset 파라미터로 쓸 수 있게 됐어요. Extras 필드와 Client ID 헤더도 추가됐어요.",
+    "url": "https://platform.stability.ai/docs/release-notes#style-presets",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nano-banana-2025-12-08-1",
+    "service": "nano-banana",
+    "date": "2025.12.08",
+    "kind": "연동",
+    "title": "Mixboard에서 Nano Banana Pro로 프레젠테이션 생성",
+    "summary": "Google Labs의 Mixboard가 보드 내용을 Nano Banana Pro로 프레젠테이션으로 바꿔 주는 기능을 추가했어요. 이미지 위에 낙서해서 원하는 부분만 편집하는 기능도 생겼어요.",
+    "details": [
+      "보드를 고품질 시각 자료가 담긴 프레젠테이션으로 변환",
+      "셀카 카메라와 PDF 업로드 지원",
+      "이미지에 직접 낙서해 부분 편집",
+      "프로젝트당 여러 보드 생성"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/create-presentations-with-nano-banana-pro-in-mixboard-and-more/",
+    "source": "notice"
+  }
+]

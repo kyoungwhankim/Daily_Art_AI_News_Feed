@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-03-03-1",
+    "service": "magnific",
+    "date": "2026.03.03",
+    "kind": "API",
+    "title": "Nano Banana Pro Flash 이미지 API",
+    "summary": "Gemini 3.1 Flash 기반 Nano Banana Pro Flash 엔드포인트를 추가했어요. Google 검색 그라운딩, 레퍼런스 3장, 최대 4K를 지원해요.",
+    "url": "https://docs.magnific.com/changelog#march-3-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stable-diffusion-2022-12-01-1",
+    "service": "stable-diffusion",
+    "date": "2022.12.01",
+    "kind": "요금",
+    "title": "DreamStudio 생성 가격 80% 인하, SD 2.0 탑재",
+    "summary": "표준 이미지 생성 비용을 1.0에서 0.2 크레딧으로 80% 낮췄고 DreamStudio와 API 모두에 바로 적용됐어요. DreamStudio beta에서 SD 2.0도 고를 수 있어요.",
+    "details": [
+      "Stable Diffusion v2.0, v2.0-768, Inpainting v2.0 추가"
+    ],
+    "url": "https://stability.ai/news-updates/dreamstudio-update-1-dec-2022",
+    "source": "notice"
+  }
+]

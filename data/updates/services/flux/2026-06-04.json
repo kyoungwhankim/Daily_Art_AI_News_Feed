@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-06-04-1",
+    "service": "flux",
+    "date": "2026.06.04",
+    "kind": "연동",
+    "title": "ASUS ProArt 노트북에 FLUX.2 [klein] 온디바이스 탑재",
+    "summary": "ASUS·NVIDIA와 협력해 FLUX.2 [klein] 4B를 ASUS ProArt RTX 노트북에 기본 탑재했어요. 8GB VRAM에서 인터넷 없이 5초 안에 이미지를 만들 수 있어요.",
+    "url": "https://bfl.ai/blog/flux2-klein-on-device",
+    "source": "notice"
+  }
+]

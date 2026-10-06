@@ -1,0 +1,27 @@
+[
+  {
+    "id": "krea-2026-05-15-1",
+    "service": "krea",
+    "date": "2026.05.15",
+    "kind": "요금",
+    "title": "Krea 2를 Pro 사용자에게 제공, 갤러리에서 sref 복사",
+    "summary": "자체 이미지 모델 Krea 2(K2)를 모든 Pro 사용자에게 열었어요. 갤러리에서 스타일 레퍼런스를 바로 보고 한 번에 복사해 재사용할 수도 있어요.",
+    "details": [
+      "Krea 2 Large·Medium을 Pro 플랜에서 사용 가능",
+      "일러스트·페인팅·망가·애니메이션·워드마크에 강점",
+      "갤러리에서 style ref 원클릭 복사와 화살표 탐색"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#may-15-2026",
+    "source": "dev"
+  },
+  {
+    "id": "krea-2026-05-15-2",
+    "service": "krea",
+    "date": "2026.05.15",
+    "kind": "기능",
+    "title": "Krea 2 무드보드 기능 소개",
+    "summary": "Krea 2와 함께 무드보드가 나왔어요. 이미지 수 제한 없이 레퍼런스를 모으면 LLM과 클러스터링으로 스타일뿐 아니라 개념·캐릭터·분위기까지 읽어 생성에 반영해요.",
+    "url": "https://www.krea.ai/blog/moodboards-krea-2",
+    "source": "notice"
+  }
+]

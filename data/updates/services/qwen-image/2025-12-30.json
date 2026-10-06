@@ -1,0 +1,15 @@
+[
+  {
+    "id": "qwen-image-2025-12-30-1",
+    "service": "qwen-image",
+    "date": "2025.12.30",
+    "kind": "모델",
+    "title": "qwen-image-max 출시: 더 사실적인 이미지",
+    "summary": "Max 시리즈 이미지 생성 모델 qwen-image-max가 출시됐어요. Plus보다 'AI 같은 느낌'을 크게 줄여 인물 질감, 자연 질감, 글자 표현이 더 사실적이에요.",
+    "details": [
+      "스냅샷 qwen-image-max-2025-12-30"
+    ],
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2025-05-22-1",
+    "service": "gigapixel",
+    "date": "2025.05.22",
+    "kind": "앱",
+    "title": "Gigapixel v8.4.0: Pre-downscaling과 개인화 Auto",
+    "summary": "Recover v2에 정보 밀도를 높이는 Pre-downscaling이 들어갔고, Auto 모드가 내 보정 기록을 학습해요. Redefine은 Realistic·Creative로 나뉘었어요.",
+    "details": [
+      "독일어·프랑스어·스페인어·포르투갈어·일본어 지원",
+      "클라우드 결과 비교 도구, Get Help 버튼"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-4-0/91353",
+    "source": "notice"
+  }
+]

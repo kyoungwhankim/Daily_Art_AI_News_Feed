@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2024-10-16-1",
+    "service": "magnific",
+    "date": "2024.10.16",
+    "kind": "API",
+    "title": "Text-to-Image Classic Fast 이미지 크기 파라미터 변경",
+    "summary": "Text-to-Image Classic Fast 모델의 이미지 크기 파라미터를 바꿔 종횡비 정보를 더 정확하고 명확하게 지정할 수 있게 했어요.",
+    "url": "https://docs.magnific.com/changelog/2024#october-16-2024",
+    "source": "dev"
+  }
+]

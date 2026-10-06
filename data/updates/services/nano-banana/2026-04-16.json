@@ -1,0 +1,17 @@
+[
+  {
+    "id": "nano-banana-2026-04-16-1",
+    "service": "nano-banana",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Gemini 앱, Personal Intelligence로 개인화 이미지 생성",
+    "summary": "Gemini 앱이 Personal Intelligence와 Google Photos를 연결해 Nano Banana로 나와 가족이 등장하는 맞춤 이미지를 긴 프롬프트 없이 만들어 줘요. 미국 Google AI Plus·Pro·Ultra 구독자부터 제공돼요.",
+    "details": [
+      "Google Photos에서 인물 사진을 자동으로 가져와 참조",
+      "참조 사진 교체·결과 수정 가능",
+      "개인 사진 라이브러리는 모델 학습에 쓰지 않음"
+    ],
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
+    "source": "notice"
+  }
+]

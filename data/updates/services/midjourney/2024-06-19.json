@@ -1,0 +1,19 @@
+[
+  {
+    "id": "midjourney-2024-06-19-1",
+    "service": "midjourney",
+    "date": "2024.06.19",
+    "kind": "기능",
+    "title": "웹 개선: 통합 Help 페이지, 공개 Rooms 등",
+    "summary": "이미지 업로드 피드백 개선, 통합 /help 페이지와 도움말 봇, Rooms 공개 열람 등 웹사이트 전반의 개선 사항이 적용됐어요.",
+    "details": [
+      "Firefox에서 이미지 드래그 정상 동작",
+      "Basic 플랜의 Relax 선택 오류 수정",
+      "Rooms를 계정 보유자 누구나 열람 가능",
+      "Prompt Craft·Newbies·Help 기본 Room 추가",
+      "시스템 라이트/다크 모드 연동 옵션"
+    ],
+    "url": "https://updates.midjourney.com/web-updates-2/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-06-16-1",
+    "service": "midjourney",
+    "date": "2025.06.16",
+    "kind": "기능",
+    "title": "V7 Style Reference 시스템 출시",
+    "summary": "V7용 새 스타일 참조가 모든 V7 작업의 기본으로 적용됐어요. 스타일 이해가 더 똑똑해지고 원치 않는 피사체가 섞이는 일이 줄었어요.",
+    "details": [
+      "더 넓은 스타일의 새 --sref random",
+      "기존 sref 코드는 V6 또는 --sv 4로 사용",
+      "무드보드 정확도도 함께 향상"
+    ],
+    "url": "https://updates.midjourney.com/style-references-for-v7/",
+    "source": "notice"
+  }
+]

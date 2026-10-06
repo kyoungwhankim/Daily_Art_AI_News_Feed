@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-04-16-1",
+    "service": "krea",
+    "date": "2026.04.16",
+    "kind": "기능",
+    "title": "Seedance Effects로 영상에 원클릭 효과 적용",
+    "summary": "영상 도구에서 'add effects'로 모션·스타일 효과 라이브러리를 열어 한 번에 적용할 수 있는 Seedance Effects를 선보였어요.",
+    "url": "https://www.krea.ai/docs/changelog#april-16-2026",
+    "source": "dev"
+  }
+]

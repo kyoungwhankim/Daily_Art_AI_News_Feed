@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flux-2024-11-06-1",
+    "service": "flux",
+    "date": "2024.11.06",
+    "kind": "기능",
+    "title": "FLUX1.1 [pro] Ultra·Raw 모드 추가",
+    "summary": "FLUX1.1 [pro]에 최대 4MP 고해상도를 약 10초에 뽑는 Ultra 모드와, 더 자연스러운 사진 느낌을 내는 Raw 모드가 추가됐어요.",
+    "details": [
+      "Ultra 모드: 표준 대비 4배 해상도(최대 4MP)",
+      "Raw 모드: 덜 가공된 사실적인 사진 스타일"
+    ],
+    "url": "https://bfl.ai/blog/24-11-06-ultra",
+    "source": "notice"
+  }
+]

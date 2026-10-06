@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-02-28-1",
+    "service": "gigapixel",
+    "date": "2024.02.28",
+    "kind": "앱",
+    "title": "Gigapixel v7.0.3: 대량 배치 로딩 대폭 최적화",
+    "summary": "이미지 불러오기와 압축 저장을 최적화해 대량 배치가 훨씬 빨라졌어요. 2만 장 로딩이 38분에서 10초로 줄었다고 해요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-0-3/64051",
+    "source": "notice"
+  }
+]

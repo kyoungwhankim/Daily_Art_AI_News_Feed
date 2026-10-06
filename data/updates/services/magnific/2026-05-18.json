@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-05-18-1",
+    "service": "magnific",
+    "date": "2026.05.18",
+    "kind": "API",
+    "title": "PixVerse V5.5 이미지-투-비디오 API",
+    "summary": "네이티브 오디오, 멀티 클립 출력, 프롬프트 추론 모드와 10초 길이를 지원하는 PixVerse V5.5 엔드포인트를 추가했어요.",
+    "url": "https://docs.magnific.com/changelog#may-18-2026",
+    "source": "dev"
+  }
+]

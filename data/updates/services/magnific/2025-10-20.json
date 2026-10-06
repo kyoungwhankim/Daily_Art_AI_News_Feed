@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-10-20-1",
+    "service": "magnific",
+    "date": "2025.10.20",
+    "kind": "API",
+    "title": "텍스트로 효과음 생성 API",
+    "summary": "텍스트 설명으로 효과음을 만드는 Sound Effects 생성 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/sound-effects"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#october-20-2025",
+    "source": "dev"
+  }
+]

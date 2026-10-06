@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gpt-image-2026-02-10-1",
+    "service": "gpt-image",
+    "date": "2026.02.10",
+    "kind": "API",
+    "title": "GPT Image 모델 Batch API 지원",
+    "summary": "gpt-image-1.5, chatgpt-image-latest, gpt-image-1, gpt-image-1-mini를 Batch API로 처리할 수 있게 됐어요. 대량 이미지 생성 작업을 비동기로 묶어 돌리기 좋아요.",
+    "url": "https://developers.openai.com/api/docs/changelog",
+    "source": "dev"
+  }
+]

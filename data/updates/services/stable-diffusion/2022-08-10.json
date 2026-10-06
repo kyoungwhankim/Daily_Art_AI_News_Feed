@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stable-diffusion-2022-08-10-1",
+    "service": "stable-diffusion",
+    "date": "2022.08.10",
+    "kind": "모델",
+    "title": "Stable Diffusion 연구자 대상 1차 공개",
+    "summary": "텍스트로 이미지를 만드는 Stable Diffusion을 연구자에게 먼저 공개했어요. 10GB 미만 VRAM의 소비자용 GPU에서 512×512 이미지를 몇 초 만에 만들 수 있어요.",
+    "details": [
+      "CompVis·Runway 연구진의 Latent Diffusion 기반",
+      "LAION-Aesthetics 데이터셋으로 학습",
+      "Hugging Face에서 가중치 제공, 곧 일반 공개 예정"
+    ],
+    "url": "https://stability.ai/news-updates/stable-diffusion-announcement",
+    "source": "notice"
+  }
+]

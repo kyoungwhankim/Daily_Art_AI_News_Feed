@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gigapixel-2022-04-05-1",
+    "service": "gigapixel",
+    "date": "2022.04.05",
+    "kind": "앱",
+    "title": "Gigapixel AI v6.0: Apple M1 네이티브 지원",
+    "summary": "Apple M1을 네이티브로 지원해 성능이 크게 좋아졌어요. Mac DMG 설치, 새 테마, 모델 일괄 다운로드도 추가됐어요.",
+    "details": [
+      "macOS 10.14·Windows 10 이상 필요",
+      "Very Compressed 모델 픽셀 밀림 감소"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v6-0-0/31066",
+    "source": "notice"
+  }
+]

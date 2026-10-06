@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-06-13-1",
+    "service": "krea",
+    "date": "2026.06.13",
+    "kind": "API",
+    "title": "Krea 2 API 생성 슬라이더와 MCP OAuth 로그인",
+    "summary": "Krea 2 API에 intensity·complexity·movement 슬라이더 필드가 추가됐어요. Krea MCP 서버는 API 키 없이 OAuth 로그인으로 연결할 수 있게 됐어요.",
+    "details": [
+      "슬라이더 값 −100~100, 비용 변화 없음",
+      "krea-2 medium·large·medium-turbo 모두 지원",
+      "https://api.krea.ai/mcp 에 OAuth로 연결(Claude Code·Codex·Cursor 등)",
+      "MCP 과금: OAuth는 계정 컴퓨트, API 토큰은 워크스페이스 API 잔액"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#june-13-2026",
+    "source": "dev"
+  }
+]

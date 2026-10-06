@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gigapixel-2024-10-18-1",
+    "service": "gigapixel",
+    "date": "2024.10.18",
+    "kind": "앱",
+    "title": "Gigapixel 8: 생성형 Redefine 모델과 클라우드 렌더링",
+    "summary": "프롬프트로도 안내할 수 있는 생성형 확대 모델 Redefine과, Topaz 서버에서 처리하는 클라우드 렌더링이 추가됐어요. Face Recovery Gen 2 측면 얼굴도 좋아졌어요.",
+    "details": [
+      "2주간 업그레이드 시 렌더링 크레딧 $25 제공"
+    ],
+    "url": "https://community.topazlabs.com/t/gigapixel-v8-0-0/79692",
+    "source": "notice"
+  }
+]

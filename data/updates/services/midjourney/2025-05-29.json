@@ -1,0 +1,15 @@
+[
+  {
+    "id": "midjourney-2025-05-29-1",
+    "service": "midjourney",
+    "date": "2025.05.29",
+    "kind": "기능",
+    "title": "V7 생성 속도 약 40% 향상, 에디터 모더레이션 개선",
+    "summary": "V7 Fast 작업이 36초에서 22초, Turbo가 13초에서 9초로 빨라졌어요. 에디터의 AI 모더레이션 차단 정확도도 58%에서 96%로 올랐어요.",
+    "details": [
+      "커뮤니티 기능 우선순위 투표(midjourney.com/ideas) 진행"
+    ],
+    "url": "https://updates.midjourney.com/faster-v7-ideas-ranking-party-and-better-moderation/",
+    "source": "notice"
+  }
+]

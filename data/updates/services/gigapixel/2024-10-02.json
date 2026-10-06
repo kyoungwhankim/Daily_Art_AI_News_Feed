@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gigapixel-2024-10-02-1",
+    "service": "gigapixel",
+    "date": "2024.10.02",
+    "kind": "앱",
+    "title": "Gigapixel v7.4.4: Gigaprint 회전 이미지 수정",
+    "summary": "90·270도 회전 이미지가 Gigaprint에서 작동하지 않던 문제와 태블릿 패닝 메모리 누수를 고친 소규모 업데이트예요.",
+    "url": "https://community.topazlabs.com/t/gigapixel-v7-4-4/78991",
+    "source": "notice"
+  }
+]

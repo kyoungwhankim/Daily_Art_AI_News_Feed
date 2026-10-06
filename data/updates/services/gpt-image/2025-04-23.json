@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gpt-image-2025-04-23-1",
+    "service": "gpt-image",
+    "date": "2025.04.23",
+    "kind": "API",
+    "title": "API에 gpt-image-1 출시",
+    "summary": "ChatGPT의 이미지 생성 모델이 API에서 'gpt-image-1'로 제공되기 시작했어요. 개발자와 기업이 자체 도구와 플랫폼에 전문가 수준의 이미지 생성·편집 기능을 넣을 수 있게 됐어요.",
+    "details": [
+      "새 이미지 생성 모델 gpt-image-1 추가 (품질과 지시 따르기 향상)",
+      "Image Generation·Edit 엔드포인트에 gpt-image-1 전용 파라미터 추가"
+    ],
+    "url": "https://openai.com/index/image-generation-api",
+    "source": "notice"
+  }
+]

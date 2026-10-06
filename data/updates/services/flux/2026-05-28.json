@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2026-05-28-1",
+    "service": "flux",
+    "date": "2026.05.28",
+    "kind": "기능",
+    "title": "가상 피팅 FLUX VTO 출시",
+    "summary": "사람 사진에 옷을 입혀 보면서 얼굴과 포즈를 유지하는 저지연 가상 피팅 도구 FLUX Virtual Try-On을 출시했어요.",
+    "details": [
+      "단일 의류·여러 벌 코디·모델 간 참조 지원",
+      "평면 상품컷과 착용 이미지 모두 입력 가능",
+      "엔드포인트 /v1/flux-tools/vto-v1"
+    ],
+    "url": "https://bfl.ai/blog/flux-vto-virtual-try-on-at-catalog-scale",
+    "source": "notice"
+  }
+]

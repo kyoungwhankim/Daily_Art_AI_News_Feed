@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flux-2026-06-15-1",
+    "service": "flux",
+    "date": "2026.06.15",
+    "kind": "API",
+    "title": "모더레이션 응답에 차단 사유 표시",
+    "summary": "요청이나 결과가 모더레이션에 걸리면 폴링 응답 details에 Violence 같은 차단 카테고리 목록이 담겨요. 요청 수정이나 사용자 안내에 쓸 수 있어요.",
+    "url": "https://docs.bfl.ai/release-notes#june-15-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "krea-2026-05-29-1",
+    "service": "krea",
+    "date": "2026.05.29",
+    "kind": "기능",
+    "title": "Krea Train에 Krea 2 공개 LoRA 도입",
+    "summary": "Krea 2로 학습한 LoRA를 비공개로 두거나 다른 사람이 찾아 쓸 수 있는 공개 LoRA로 공유할 수 있게 됐어요. 클로즈드 베타로 시작했어요.",
+    "url": "https://www.krea.ai/blog/public-loras-krea-2-train",
+    "source": "notice"
+  }
+]

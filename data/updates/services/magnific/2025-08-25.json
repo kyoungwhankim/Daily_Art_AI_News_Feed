@@ -1,0 +1,15 @@
+[
+  {
+    "id": "magnific-2025-08-25-1",
+    "service": "magnific",
+    "date": "2025.08.25",
+    "kind": "API",
+    "title": "Gemini 2.5 Flash Image 생성·편집 API",
+    "summary": "Google Gemini 2.5 Flash(Nano Banana)로 이미지를 생성·편집하는 엔드포인트를 API에 추가했어요.",
+    "details": [
+      "POST /v1/ai/gemini-2-5-flash-image-preview"
+    ],
+    "url": "https://docs.magnific.com/changelog/2025#august-25-2025",
+    "source": "dev"
+  }
+]

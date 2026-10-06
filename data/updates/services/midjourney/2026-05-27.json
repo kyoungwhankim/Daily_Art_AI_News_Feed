@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2026-05-27-1",
+    "service": "midjourney",
+    "date": "2026.05.27",
+    "kind": "기능",
+    "title": "대화형 모드 개선과 'Rerun as HD' 버튼",
+    "summary": "음성·텍스트 대화형 모드가 이미지 프롬프트, 스타일 참조, 설정, 최근 작업을 참고하도록 개선됐어요. SD로 만든 V8.1 이미지를 HD로 다시 만드는 버튼도 생겼어요.",
+    "details": [
+      "폴더 화면에 숨겨진 항목 수 표시",
+      "모바일 설정 메뉴 재구성",
+      "업로드 한도 20MB 안내 등 버그 수정"
+    ],
+    "url": "https://updates.midjourney.com/web-updates-5/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "seedream-2025-12-03-1",
+    "service": "seedream",
+    "date": "2025.12.03",
+    "kind": "모델",
+    "title": "Seedream 4.5 출시: 더 선명한 디테일과 4K 일관성",
+    "summary": "BytePlus가 Seedream 4.5를 발표했어요. 디테일 정확도, 피사체 일관성, 글자·얼굴 렌더링, 다중 이미지 합성이 개선됐고, 기업 고객은 BytePlus ModelArk에서 바로 쓸 수 있어요.",
+    "details": [
+      "세밀한 디테일과 피사체 특성 보존 강화",
+      "시네마틱 색감·조명과 4K 스타일 출력",
+      "작은 글자와 작은 얼굴 렌더링 선명도 향상",
+      "복잡한 프롬프트와 다중 이미지 편집 정확도 향상",
+      "BytePlus ModelArk API로 제공"
+    ],
+    "url": "https://www.byteplus.com/en/blog/seedream4-5",
+    "source": "notice"
+  }
+]

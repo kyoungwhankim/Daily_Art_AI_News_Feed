@@ -1,0 +1,17 @@
+[
+  {
+    "id": "flux-2024-08-01-1",
+    "service": "flux",
+    "date": "2024.08.01",
+    "kind": "모델",
+    "title": "Black Forest Labs 출범과 FLUX.1 모델 공개",
+    "summary": "Latent Diffusion·Stable Diffusion 연구진이 Black Forest Labs를 출범하며 첫 텍스트-이미지 모델 FLUX.1 제품군을 공개했어요.",
+    "details": [
+      "FLUX.1 [pro]: API로 제공되는 최상위 모델",
+      "FLUX.1 [dev]: 비상업용 오픈 웨이트 모델",
+      "FLUX.1 [schnell]: Apache 2.0의 빠른 오픈 모델"
+    ],
+    "url": "https://bfl.ai/blog/24-08-01-bfl",
+    "source": "notice"
+  }
+]

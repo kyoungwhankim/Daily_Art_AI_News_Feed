@@ -1,0 +1,17 @@
+[
+  {
+    "id": "recraft-2024-10-30-1",
+    "service": "recraft",
+    "date": "2024.10.30",
+    "kind": "모델",
+    "title": "Recraft V3 공개, 텍스트 생성 대폭 강화",
+    "summary": "Artificial Analysis 리더보드 1위를 차지한 Recraft V3를 발표했어요. 텍스트 생성이 크게 좋아졌고 텍스트 크기·위치 지정, 정밀 스타일 제어, 아웃페인팅도 추가됐어요.",
+    "details": [
+      "무료·유료 사용자 모두 데스크톱·모바일 앱·API에서 사용",
+      "이미지 안 텍스트 크기와 위치 지정",
+      "정밀 스타일 제어, 인페인팅 개선, 아웃페인팅 추가"
+    ],
+    "url": "https://www.recraft.ai/blog/recraft-introduces-a-revolutionary-ai-model-that-thinks-in-design-language",
+    "source": "notice"
+  }
+]

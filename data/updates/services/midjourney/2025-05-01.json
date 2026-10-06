@@ -1,0 +1,17 @@
+[
+  {
+    "id": "midjourney-2025-05-01-1",
+    "service": "midjourney",
+    "date": "2025.05.01",
+    "kind": "기능",
+    "title": "Omni-Reference(--oref) 테스트 시작",
+    "summary": "캐릭터·사물·탈것 등을 '이 대상을 이미지에 넣어 줘'처럼 넣을 수 있는 V7용 Omni-Reference가 나왔어요. V6의 캐릭터 참조를 대체하고 더 많은 걸 할 수 있어요.",
+    "details": [
+      "웹은 프롬프트 바에 이미지 드롭, Discord는 --oref URL",
+      "--ow 0~1000으로 강도 조절(기본 100)",
+      "개인화·sref·무드보드와 함께 사용 가능"
+    ],
+    "url": "https://updates.midjourney.com/omni-reference-oref/",
+    "source": "notice"
+  }
+]

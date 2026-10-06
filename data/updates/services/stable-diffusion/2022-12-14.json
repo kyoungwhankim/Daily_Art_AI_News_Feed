@@ -1,0 +1,16 @@
+[
+  {
+    "id": "stable-diffusion-2022-12-14-1",
+    "service": "stable-diffusion",
+    "date": "2022.12.14",
+    "kind": "API",
+    "title": "REST API v1alpha 릴리스 후보 공개",
+    "summary": "Stable Diffusion용 REST API v1alpha가 공개돼 마스크 기반 image-to-image 엔드포인트와 더 명확한 HTTP 오류 코드를 제공해요.",
+    "details": [
+      "/image-to-image/masking 엔드포인트 추가",
+      "400·401·403·404 오류 코드 정리"
+    ],
+    "url": "https://platform.stability.ai/docs/release-notes#v1alpha-rc",
+    "source": "dev"
+  }
+]

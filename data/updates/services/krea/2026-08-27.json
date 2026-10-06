@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-08-27-1",
+    "service": "krea",
+    "date": "2026.08.27",
+    "kind": "기능",
+    "title": "Seedance Studio 출시, MiniMax H3·Gemini Omni Flash 1.1 추가",
+    "summary": "이미지·영상을 감독하듯 만드는 데스크톱 작업 공간 Seedance Studio를 내놓았어요. MiniMax H3·H3 Max, Gemini Omni Flash 1.1 영상 모델과 워크스페이스 사용량 API도 추가됐어요.",
+    "details": [
+      "Studio: 카메라·장면·색 컨트롤, 커스텀 룩·팔레트, 주석, 3D 카메라 경로",
+      "MiniMax H3: 최대 9장 레퍼런스의 2K 영상, H3 Max는 런치 50% 할인",
+      "Gemini Omni Flash 1.1: 네이티브 오디오 포함 3~10초 영상",
+      "엔터프라이즈용 GET /usage 작업별 사용량 API"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#august-27-2026",
+    "source": "dev"
+  }
+]

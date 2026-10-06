@@ -1,0 +1,19 @@
+[
+  {
+    "id": "nano-banana-2026-02-26-1",
+    "service": "nano-banana",
+    "date": "2026.02.26",
+    "kind": "모델",
+    "title": "Nano Banana 2(Gemini 3.1 Flash Image) 출시",
+    "summary": "Nano Banana Pro의 고급 기능을 Flash 속도로 제공하는 Nano Banana 2가 출시됐어요. 세계 지식, 피사체 일관성, 정확한 지시 따르기를 빠르게 쓸 수 있어 대량 작업에 좋아요.",
+    "details": [
+      "Gemini 앱, 검색, Google Ads 등으로 순차 적용",
+      "API: gemini-3.1-flash-image-preview (AI Studio·Gemini API, Vertex AI 프리뷰)",
+      "웹 이미지 검색 기반 시각적 그라운딩",
+      "텍스트 렌더링 개선과 이미지 내 다국어 현지화",
+      "SynthID와 C2PA Content Credentials 강화"
+    ],
+    "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+    "source": "notice"
+  }
+]

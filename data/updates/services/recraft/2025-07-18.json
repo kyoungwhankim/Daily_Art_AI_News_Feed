@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2025-07-18-1",
+    "service": "recraft",
+    "date": "2025.07.18",
+    "kind": "기능",
+    "title": "자연어 지시를 알아듣고 도구를 자동 실행",
+    "summary": "'배경 투명하게', '이 아이콘 벡터화' 같은 문장을 입력하면 Recraft가 알맞은 도구를 골라 자동으로 적용해 줘요. 생성·편집·업스케일 모두에 통해요.",
+    "url": "https://www.recraft.ai/blog/natural-language",
+    "source": "notice"
+  }
+]

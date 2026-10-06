@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2025-04-02-1",
+    "service": "krea",
+    "date": "2025.04.02",
+    "kind": "요금",
+    "title": "Krea Teams Essentials 팀 플랜 출시",
+    "summary": "팀원을 초대하고 컴퓨트와 결제를 하나의 계정으로 공유하는 첫 팀 플랜 Krea Teams Essentials를 내놓았어요. 스튜디오 단위로 Krea를 쓰기 쉬워졌어요.",
+    "details": [
+      "팀원 초대",
+      "팀 전체가 쓰는 공유 컴퓨트",
+      "소유자 계정 하나로 사용량·결제 관리"
+    ],
+    "url": "https://www.krea.ai/blog/introducing-teams",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "categories": {
+    "image": {
+      "count": 450,
+      "latest": "2026.10.02",
+      "file": "updates/feed/image.json",
+      "rev": "3d6ce67856"
+    }
+  },
+  "services": {
+    "midjourney": {
+      "count": 66,
+      "first": "2024.03.07",
+      "latest": "2026.10.02"
+    },
+    "gpt-image": {
+      "count": 12,
+      "first": "2025.03.25",
+      "latest": "2026.09.08"
+    },
+    "nano-banana": {
+      "count": 19,
+      "first": "2025.08.26",
+      "latest": "2026.09.14"
+    },
+    "seedream": {
+      "count": 6,
+      "first": "2025.04.16",
+      "latest": "2026.07.08"
+    },
+    "qwen-image": {
+      "count": 15,
+      "first": "2025.08.14",
+      "latest": "2026.10.02"
+    },
+    "flux": {
+      "count": 42,
+      "first": "2024.08.01",
+      "latest": "2026.10.01"
+    },
+    "stable-diffusion": {
+      "count": 54,
+      "first": "2022.08.10",
+      "latest": "2025.09.18"
+    },
+    "krea": {
+      "count": 46,
+      "first": "2025.03.26",
+      "latest": "2026.10.01"
+    },
+    "recraft": {
+      "count": 39,
+      "first": "2024.03.13",
+      "latest": "2026.09.23"
+    },
+    "magnific": {
+      "count": 63,
+      "first": "2024.09.16",
+      "latest": "2026.10.01"
+    },
+    "gigapixel": {
+      "count": 79,
+      "first": "2020.04.09",
+      "latest": "2026.08.27"
+    },
+    "mai-image": {
+      "count": 9,
+      "first": "2025.10.13",
+      "latest": "2026.09.04"
+    }
+  }
+}
