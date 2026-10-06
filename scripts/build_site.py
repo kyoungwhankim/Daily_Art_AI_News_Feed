@@ -36,6 +36,7 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
+import service_updates  # noqa: E402
 
 SITE_URL = os.environ.get(
     'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
@@ -359,10 +360,12 @@ def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
     return page
 
 
-def build_sitemap(articles: list, listing_paths: list) -> str:
+def build_sitemap(articles: list, listing_paths: list, dated_paths=()) -> str:
+    """dated_paths: [(경로, 'YYYY.MM.DD')] — 업데이트 페이지처럼 페이지마다 최근 날짜가 다른 목록."""
     latest = iso_date(articles[0]['publishedAt']) if articles else ''
     rows = [f'<url><loc>{esc(SITE_URL + "/")}</loc><lastmod>{latest}</lastmod></url>']
     rows += [f'<url><loc>{esc(abs_url(p))}</loc><lastmod>{latest}</lastmod></url>' for p in listing_paths]
+    rows += [f'<url><loc>{esc(abs_url(p))}</loc><lastmod>{iso_date(d)}</lastmod></url>' for p, d in dated_paths]
     rows += [f'<url><loc>{esc(abs_url(article_path(a)))}</loc>'
              f'<lastmod>{iso_date(a["publishedAt"])}</lastmod></url>' for a in articles]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -388,20 +391,30 @@ def build_feed(articles: list) -> str:
             + ''.join(items) + '</channel></rss>\n')
 
 
-UPDATE_CAT_SLUG = {   # app.jsx의 UPDATE_CAT_SLUG와 같아야 한다
-    '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
-    '모션': 'motion', '음악·음성': 'audio', '도구': 'tools',
-}
+UPDATES_LIST = 100   # 분야·전체 업데이트 페이지의 검색엔진용 목록에 넣을 최근 항목 수 (서비스 페이지는 전부)
 
 
-def update_tree(repo: str) -> list:
-    """config.js의 updateSources → [(분야, 분야 slug, [서비스 이름...]), ...] (설정 순서)."""
-    with open(os.path.join(repo, 'config.js'), encoding='utf-8') as f:
-        cfg = f.read()
-    tree = {}
-    for cat, name in re.findall(r"\{\s*category:\s*'([^']+)',\s*name:\s*'([^']+)'", cfg):
-        tree.setdefault(cat, []).append(name)
-    return [(c, UPDATE_CAT_SLUG.get(c, kw_slug(c)), names) for c, names in tree.items()]
+def update_item(root: str, e: dict, svc: dict, show_service: bool) -> str:
+    """업데이트 한 건 (검색엔진용). 월 단위 항목(dateMonthOnly)은 날짜를 쓰지 않는다."""
+    meta = [svc['name']] if show_service else []
+    meta.append(e['kind'])
+    if not e.get('dateMonthOnly'):
+        meta.append(e['date'])
+    det = ''.join(f'<li>{esc(d)}</li>' for d in e.get('details', []))
+    who = (f'<a href="{href(root, "updates/" + svc["catSlug"] + "/" + svc["slug"] + "/")}">{esc(svc["name"])}</a> — '
+           if show_service else '')
+    return (f'<li>{who}<a href="{esc(e["url"])}" rel="noopener">{esc(e["title"])}</a>'
+            f'<span class="static-item-meta">{esc(" · ".join(meta))}</span>'
+            f'<p>{esc(e["summary"])}</p>' + (f'<ul>{det}</ul>' if det else '') + '</li>')
+
+
+def updates_fallback(title: str, desc: str, entries: list, by_slug: dict, links: list, show_service=True) -> str:
+    root = '/'
+    nav = ('<div class="subcats">' + ''.join(
+        f'<a class="chip subcat" href="{href(root, p)}">{esc(t)}</a>' for t, p in links) + '</div>') if links else ''
+    return (f'<h1 class="feed-title">{esc(title)}</h1><p class="feed-sub">{esc(desc)} · 업데이트 {len(entries)}건</p>'
+            + nav + '<ul class="static-list">'
+            + ''.join(update_item(root, e, by_slug[e['service']], show_service) for e in entries) + '</ul>')
 
 
 def build_redirect_site(out: str) -> None:
@@ -559,19 +572,43 @@ def main():
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
     # 사이드바 대분류 '업데이트' 페이지: /updates/, /updates/<분야>/, /updates/<분야>/<서비스>/
-    # (데이터 연결 전이라 검색에는 내보내지 않는다. 분야·서비스 주소 규칙은 app.jsx와 같아야 한다)
-    upd_pages = [('updates/', '업데이트')]
-    for cat, cat_slug, companies in update_tree(repo):
-        upd_pages.append((f'updates/{cat_slug}/', f'{cat} 업데이트'))
-        upd_pages += [(f'updates/{cat_slug}/{kw_slug(n)}/', f'{n} 업데이트') for n in companies]
-    for path_, name in upd_pages:
-        write(out, path_ + 'index.html', shell(
-            path_, f'{name} | {SITE_NAME}', '아트 관련 AI 서비스들의 공식 업데이트 소식',
-            f'<h1 class="feed-title">{esc(name)}</h1>',
-            {'@context': 'https://schema.org', '@type': 'WebPage', 'name': name, 'url': abs_url(path_)})
-            .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+    # 검색엔진용으로 실제 업데이트 목록을 담는다 (앱이 뜨면 숨겨진다). 주소 규칙은 app.jsx와 같아야 한다.
+    services = service_updates.load_services()
+    by_slug = {sv['slug']: sv for sv in services}
+    all_upd = service_updates.sorted_entries(
+        [e for sv in services for e in service_updates.read_service(sv['slug'])])
+    cats = []
+    for sv in services:
+        if sv['catSlug'] not in [c for c, _ in cats]:
+            cats.append((sv['catSlug'], sv['category']))
+    cat_links = [(label, f'updates/{slug}/') for slug, label in cats]
+    upd_desc = '아트 관련 AI 서비스들의 공식 업데이트(새 모델·기능·API 변경)를 분야·서비스별로 한국어로 정리했어요.'
+    upd_dated = []
 
-    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths))
+    def upd_page(path_, title, desc, entries, links, show_service=True, limit=None):
+        shown = entries[:limit] if limit else entries
+        write(out, path_ + 'index.html', shell(
+            path_, f'{title} | {SITE_NAME}', desc,
+            updates_fallback(title, desc, shown, by_slug, links, show_service),
+            collection(path_, title, desc)))
+        if entries:
+            upd_dated.append((path_, entries[0]['date']))
+
+    upd_page('updates/', 'AI 서비스 업데이트', upd_desc, all_upd, cat_links, limit=UPDATES_LIST)
+    for slug, label in cats:
+        svs = [sv for sv in services if sv['catSlug'] == slug]
+        entries = [e for e in all_upd if by_slug[e['service']]['catSlug'] == slug]
+        upd_page(f'updates/{slug}/', f'{label} AI 서비스 업데이트',
+                 f'{label} 분야 AI 서비스({", ".join(sv["name"] for sv in svs[:6])} 등)의 공식 업데이트를 최신순으로 정리했어요.',
+                 entries, [(sv['name'], f'updates/{slug}/{sv["slug"]}/') for sv in svs], limit=UPDATES_LIST)
+        for sv in svs:
+            entries = [e for e in all_upd if e['service'] == sv['slug']]
+            who = f'{sv["maker"]} {sv["name"]}' if sv.get('maker') else sv['name']
+            upd_page(f'updates/{slug}/{sv["slug"]}/', f'{who} 업데이트',
+                     f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
+                     entries, [(label, f'updates/{slug}/')], show_service=False)
+
+    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths, upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))
     if PREVIEW:
