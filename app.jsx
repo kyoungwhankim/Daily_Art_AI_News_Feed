@@ -771,11 +771,17 @@ function HomeView({ onSelectTab, onOpenArticle, articles }) {
 // 뉴스 › 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스 (지금 피드),  업데이트 (AI 서비스 회사 공식 업데이트)
 // 서브 섹션(뉴스의 탭, 업데이트의 분야)을 누르면 그 아래 서브 카테고리(키워드, 회사)가 펼쳐진다.
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
+// 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTab, onUpdates, counts,
                    subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany }) {
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
   const newsActive = section === 'news';
+  const current = newsActive ? (viewHome ? null : `news:${activeTab}`) : (updCat ? `upd:${updCat}` : null);
+  const [folded, setFolded] = useState(null);       // 다시 눌러 접은 서브 섹션
+  useEffect(() => { setFolded(null); }, [current]);
+  const isOpen = key => current === key && folded !== key;
+  const toggle = (key, go) => { if (isOpen(key)) setFolded(key); else { setFolded(null); go(); } };
   return (
     <>
       <div className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
@@ -787,7 +793,10 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
         <nav className="side-nav">
           <div className="side-group">
             <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
-              <button type="button" className="side-group-link" onClick={onNewsHome}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (newsActive && viewHome && newsOpen) setNewsOpen(false);
+                else { setNewsOpen(true); onNewsHome(); }
+              }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 5h13v14H6a2 2 0 0 1-2-2z" /><path d="M17 9h3v8a2 2 0 0 1-2 2" /><path d="M8 9h5M8 13h5" />
                 </svg>
@@ -801,16 +810,17 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
               <ul className="side-list">
                 {TABS.map(t => {
                   const here = newsActive && !viewHome && activeTab === t.id;
+                  const opened = isOpen(`news:${t.id}`);
                   return (
                     <li key={t.id}>
                       <button type="button"
-                        className={`side-item ${here && !keyword ? 'active' : ''} ${here ? 'expanded' : ''}`}
-                        aria-expanded={here}
-                        onClick={() => onTab(t.id)}>
+                        className={`side-item ${here && !keyword ? 'active' : ''} ${opened ? 'expanded' : ''}`}
+                        aria-expanded={opened}
+                        onClick={() => toggle(`news:${t.id}`, () => onTab(t.id))}>
                         <span>{t.label}</span>
                         {counts[t.id] > 0 && <span className="side-count">{counts[t.id]}</span>}
                       </button>
-                      {here && subcats.length > 0 && (
+                      {opened && subcats.length > 0 && (
                         <ul className="side-sublist">
                           {subcats.map(c => (
                             <li key={c.label}>
@@ -831,7 +841,10 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
           </div>
           <div className="side-group">
             <div className={`side-group-head ${section === 'updates' && !updCat ? 'active' : ''}`}>
-              <button type="button" className="side-group-link" onClick={onUpdates}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (section === 'updates' && !updCat && updOpen) setUpdOpen(false);
+                else { setUpdOpen(true); onUpdates(); }
+              }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
                 </svg>
@@ -846,14 +859,15 @@ function Sidebar({ section, viewHome, activeTab, open, onClose, onNewsHome, onTa
               <ul className="side-list">
                 {UPDATE_CATS.map(c => {
                   const here = section === 'updates' && updCat === c.slug;
+                  const opened = isOpen(`upd:${c.slug}`);
                   return (
                     <li key={c.slug}>
-                      <button type="button" className={`side-item ${here && !updCompany ? 'active' : ''} ${here ? 'expanded' : ''}`}
-                        aria-expanded={here} onClick={() => onUpdCat(c.slug)}>
+                      <button type="button" className={`side-item ${here && !updCompany ? 'active' : ''} ${opened ? 'expanded' : ''}`}
+                        aria-expanded={opened} onClick={() => toggle(`upd:${c.slug}`, () => onUpdCat(c.slug))}>
                         <span>{c.label}</span>
                         <span className="side-count">{UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).length}</span>
                       </button>
-                      {here && (
+                      {opened && (
                         <ul className="side-sublist">
                           {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
                             <li key={co.slug}>
