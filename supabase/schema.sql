@@ -50,15 +50,11 @@ language sql stable set search_path = '' as $$ select 1 $$;
 revoke all on function public.keep_alive() from public;
 grant execute on function public.keep_alive() to anon, authenticated;
 
--- 6) 저장한 글 · 덜 보기 · 마지막 방문일 (나만의 피드)
+-- 6) 저장한 글 · 마지막 방문일 (나만의 피드)
 --    용량을 아끼려고 기본값 없이 비워 둔다 — 쓰지 않는 회원은 자리를 차지하지 않는다 (null).
 --    글은 내용을 복사하지 않고 기사·업데이트 id만 저장한다.
 alter table public.profiles add column if not exists saved   text[];   -- 저장한 기사·업데이트 id (최근 저장 순)
-alter table public.profiles add column if not exists muted   text[];   -- 덜 보기: 뉴스 주제 '탭|키워드' 또는 서비스 slug
 alter table public.profiles add column if not exists seen_on date;     -- 마지막 방문일 ('지난 방문 이후 새 소식' 표시용)
 alter table public.profiles drop constraint if exists profiles_saved_limit;
 alter table public.profiles add constraint profiles_saved_limit
   check (saved is null or (cardinality(saved) <= 500 and octet_length(array_to_string(saved, '')) <= 500 * 60));
-alter table public.profiles drop constraint if exists profiles_muted_limit;
-alter table public.profiles add constraint profiles_muted_limit
-  check (muted is null or (cardinality(muted) <= 50 and octet_length(array_to_string(muted, '')) <= 50 * 120));

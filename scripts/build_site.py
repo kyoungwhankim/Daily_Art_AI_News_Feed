@@ -626,7 +626,7 @@ def build_privacy() -> str:
       (아래 4항).</li>
     <li><strong>Google 계정 로그인 정보</strong> (로그인 기능을 이용하는 경우에만) — 이메일 주소, 이름,
       프로필 사진 주소, 계정 고유 식별자, 그리고 이용자가 직접 저장한 관심 분야 설정('나만의 피드')·저장한 기사와
-      업데이트 목록·'덜 보기'로 고른 주제와 서비스·마지막 방문일(새 소식 표시용).
+      업데이트 목록·마지막 방문일(새 소식 표시용).
       비밀번호는 사이트가 받지 않으며 Google이 직접 인증합니다.</li>
   </ul>
 
@@ -767,7 +767,9 @@ def main():
     static_v = file_hash(os.path.join(repo, 'static.css'))
 
     def fin(text: str) -> str:
-        return text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
+        text = text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
+        # index.html(앱 화면 틀)의 app.css?v=고정값도 내용 해시로 — 서비스 워커가 예전 CSS를 계속 쓰지 않게
+        return re.sub(r'app\.css\?v=[^"\']+', f'app.css?v={css_v}', text)
 
     def shell(path, title, desc, fallback, ld, og_type='website', image=None):
         return fin(build_shell(os.path.join(repo, 'index.html'), path, title, desc,

@@ -1889,7 +1889,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .side-me-role { margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); }
 .side-me.active .side-me-role { background: var(--card); }
 
-/* ---------- 저장 · 덜 보기 · 지난 방문 이후 새 소식 ---------- */
+/* ---------- 저장 · 지난 방문 이후 새 소식 ---------- */
 .save-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 5px;
   font: inherit; font-size: 12px; font-weight: 700; cursor: pointer;
@@ -1915,21 +1915,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em;
   color: var(--card); background: var(--new); padding: 1px 7px; border-radius: 999px;
 }
-.mute-link {
-  margin-left: 14px; font: inherit; font-size: 12.5px; color: var(--muted);
-  background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
-}
-.mute-link:hover, .mute-link.on { color: var(--ink-2); }
-
-.modal-mute { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -10px 0 20px; }
-.modal-mute-label { font-size: 12px; font-weight: 700; color: var(--muted); margin-right: 2px; }
-.modal-mute-btn {
-  font: inherit; font-size: 12px; cursor: pointer; color: var(--muted);
-  padding: 2px 9px; border-radius: 999px; border: 1.5px dashed var(--hairline); background: transparent;
-}
-.modal-mute-btn:hover { color: var(--ink-2); border-color: var(--muted); }
-.modal-mute-btn.on { color: var(--ink-2); border-style: solid; background: var(--paper-2); text-decoration: line-through; }
-
 .mf-new { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 12px; font-size: 13.5px; color: var(--ink-2); }
 .mf-new b { color: var(--accent-strong); }
 .mf-new .chip { padding: 4px 12px; font-size: 13px; }

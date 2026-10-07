@@ -328,13 +328,13 @@ function useAuth() {
 
 /* ---------- 나만의 피드: 회원 관심사 (Supabase profiles 표, supabase/schema.sql) ---------- */
 // 직군 · 관심 뉴스 서브 카테고리('탭|키워드') · 관심 AI 서비스(slug) · 직접 입력 키워드 · 직군 추천 포함 여부
-// + 저장한 글(id) · 덜 보기('탭|키워드' 또는 서비스 slug) · 마지막 방문일
-const PROFILE_COLS = 'role, news_topics, services, keywords, include_role, saved, muted, seen_on';
-const EMPTY_PROFILE = { role: null, news_topics: [], services: [], keywords: [], include_role: true, saved: [], muted: [], seen_on: null };
-const SAVED_MAX = 500, MUTED_MAX = 50;
-// 저장한 글·덜 보기는 비어 있으면 null로 보낸다 (빈 목록도 자리를 차지한다 — 회원이 많아져도 용량을 아끼려고)
-const NULL_WHEN_EMPTY = ['saved', 'muted'];
-function normProfile(p) { return p ? { ...p, saved: p.saved || [], muted: p.muted || [] } : null; }
+// + 저장한 글(id) · 마지막 방문일
+const PROFILE_COLS = 'role, news_topics, services, keywords, include_role, saved, seen_on';
+const EMPTY_PROFILE = { role: null, news_topics: [], services: [], keywords: [], include_role: true, saved: [], seen_on: null };
+const SAVED_MAX = 500;
+// 저장한 글은 비어 있으면 null로 보낸다 (빈 목록도 자리를 차지한다 — 회원이 많아져도 용량을 아끼려고)
+const NULL_WHEN_EMPTY = ['saved'];
+function normProfile(p) { return p ? { ...p, saved: p.saved || [] } : null; }
 function useProfile(user) {
   const [state, setState] = useState({ loading: false, profile: null, error: null });
   const ref = useRef(null);            // 가장 최근 회원 정보 (연달아 누를 때 앞의 변경을 잃지 않게)
@@ -376,7 +376,7 @@ function useProfile(user) {
     queue.current = run.catch(() => {});
     return run;
   };
-  // 저장·덜 보기 버튼: 화면에 바로 반영하고 순서대로 보낸다. 실패하면 서버 값으로 되돌린다
+  // 저장 버튼: 화면에 바로 반영하고 순서대로 보낸다. 실패하면 서버 값으로 되돌린다
   const quick = (makePatch) => {
     if (!loaded.current) return;
     const patch = makePatch(ref.current || EMPTY_PROFILE);
@@ -395,8 +395,8 @@ function useProfile(user) {
   const loading = state.loading || !!(user && state.forId !== user.id);
   return { ...state, loading, save, quick, touchSeen };
 }
-// 로그인 회원 기능을 카드·업데이트·기사 창 어디서든 쓰게 (저장 · 덜 보기 · 지난 방문 이후 새 소식)
-const MemberContext = React.createContext({ enabled: false, user: null, saved: new Set(), muted: new Set(), prevSeen: null, toggleSave() {}, toggleMute() {} });
+// 로그인 회원 기능을 카드·업데이트·기사 창 어디서든 쓰게 (저장 · 지난 방문 이후 새 소식)
+const MemberContext = React.createContext({ enabled: false, user: null, saved: new Set(), prevSeen: null, toggleSave() {} });
 const isNewSince = (date, prev) => !!(prev && date && date > prev);   // 날짜는 'YYYY.MM.DD' 문자열
 
 // 지난 방문일: 브라우저에 저장하고, 로그인 회원이면 Supabase(seen_on)와 맞춰 다른 기기에서 본 것도 반영한다.
@@ -449,8 +449,8 @@ function SaveToggle({ id, overlay, label }) {
   return <button type="button" {...props}>{icon}{label && <span>{on ? '저장됨' : '저장'}</span>}</button>;
 }
 
-// 서버 응답이 오기 전에 버튼으로 바꾼 저장·덜 보기 값은 화면 값을 유지한다
-function pickLocal(p) { return p ? { saved: p.saved, muted: p.muted } : {}; }
+// 서버 응답이 오기 전에 버튼으로 바꾼 저장 목록은 화면 값을 유지한다
+function pickLocal(p) { return p ? { saved: p.saved } : {}; }
 
 function GoogleMark() {
   return (
@@ -710,7 +710,6 @@ function FeedMeta({ activeTab, count, query, keyword }) {
 /* ---------- modal ---------- */
 function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, onRole }) {
   const { myRole } = React.useContext(BriefingContext);
-  const member = React.useContext(MemberContext);
   const roleHits = ROLES.map(r => ({ r, why: articleRoleReasons(r, article) })).filter(x => x.why)
     .sort((x, y) => (y.r.id === myRole) - (x.r.id === myRole));
   const bodyRef = useRef(null);
@@ -843,20 +842,6 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, 
               </div>
             );
           })()}
-          {member.user && (article.keywords || []).length > 0 && (
-            <div className="modal-mute">
-              <span className="modal-mute-label">나만의 피드에서 덜 보기</span>
-              {article.keywords.map(k => {
-                const v = `${article.tab}|${k}`, on = member.muted.has(v);
-                return (
-                  <button key={k} type="button" className={`modal-mute-btn ${on ? 'on' : ''}`} aria-pressed={on}
-                    title={on ? '다시 보기' : `'${k}' 주제를 나만의 피드에서 빼요`} onClick={() => member.toggleMute(v)}>
-                    {on ? '✓ ' : ''}{k}
-                  </button>
-                );
-              })}
-            </div>
-          )}
           {roleHits.length > 0 && (
             <div className="modal-roles">
               <span className="modal-roles-label"><TargetIcon size={12} /> 아티스트 브리핑</span>
@@ -1673,9 +1658,8 @@ function UpdatesNav({ cat, company, onCat, onCompany }) {
   );
 }
 
-function UpdateRow({ u, showCompany, onCompany, mutable }) {
+function UpdateRow({ u, showCompany, onCompany }) {
   const m = React.useContext(MemberContext);
-  const muted = m.muted.has(u.service);
   return (
     <li className="update-row">
       <div className="update-date">{u.dateMonthOnly ? '' : u.date}</div>
@@ -1698,11 +1682,6 @@ function UpdateRow({ u, showCompany, onCompany, mutable }) {
         <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
           {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
         </a>
-        {mutable && m.user && !u.sample && (
-          <button type="button" className={`mute-link ${muted ? 'on' : ''}`} onClick={() => m.toggleMute(u.service)}>
-            {muted ? `${u.company.name} 다시 보기` : `${u.company.name} 덜 보기`}
-          </button>
-        )}
       </div>
     </li>
   );
@@ -1958,7 +1937,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   const terms = allTerms ? r.terms : r.terms.slice(0, TERMS_SHOWN);
   const newsList = onlyNew ? newNews : news, updList = onlyNew ? newUpd : upd;
   const list = kind === 'news' ? newsList : kind === 'updates' ? updList : [];
-  const mutedCount = (profile.muted || []).length;
   return (
     <>
       <RolesNav role={role} onRole={onRole} />
@@ -2033,19 +2011,17 @@ function compileMyFeed(profile) {
   const services = new Set(profile.services || []);
   const kw = compileTerms(profile.keywords || []);
   const role = profile.include_role && profile.role && ROLE_BY_ID[profile.role];
-  const muted = new Set(profile.muted || []);
-  return { topics, services, kw, role, muted };
+  return { topics, services, kw, role };
 }
 // 기사·업데이트마다 왜 피드에 들어왔는지 (없으면 null)
 function myArticleWhy(c, a) {
-  if (c.muted.size && (a.keywords || []).some(k => c.muted.has(`${a.tab}|${k}`))) return null;   // 덜 보기
   const why = (a.keywords || []).filter(k => c.topics.has(`${a.tab}|${k}`));
   termHits(c.kw, `${a.headline} ${a.summary}`).forEach(t => why.push(t));
   if (!why.length && c.role && articleRoleReasons(c.role, a)) why.push(c.role.short || c.role.label);
   return why.length ? [...new Set(why)] : null;
 }
 function myUpdateWhy(c, u) {
-  if (u.sample || c.muted.has(u.service)) return null;
+  if (u.sample) return null;
   const why = c.services.has(u.service) ? [u.company.name] : [];
   termHits(c.kw, `${u.title} ${u.summary} ${(u.details || []).join(' ')}`).forEach(t => why.push(t));
   if (!why.length && c.role && updateRoleReasons(c.role, u)) why.push(c.role.short || c.role.label);
@@ -2073,9 +2049,7 @@ function ProfileForm({ profile, keywordTabs, onSave, onSaved, savedLabel = '나�
   const save = async () => {
     setStatus('saving');
     try {
-      const muted = init.muted.filter(v => !topics.has(v) && !services.has(v));   // 다시 고른 주제·서비스는 덜 보기에서 뺀다
-      await onSave({ role, news_topics: [...topics], services: [...services], keywords, include_role: includeRole,
-        ...(muted.length !== init.muted.length ? { muted } : {}) });
+      await onSave({ role, news_topics: [...topics], services: [...services], keywords, include_role: includeRole });
       setStatus('saved'); setDirty(false);
     } catch (e) { setStatus('error'); }
   };
@@ -2175,7 +2149,6 @@ function ProfileModal({ profile, keywordTabs, onSave, onClose }) {
 
 // 설정 페이지 (/settings/): 계정 정보 · 관심사 · 회원 탈퇴
 function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welcome }) {
-  const member = React.useContext(MemberContext);
   const [deleting, setDeleting] = useState(false);
   const head = (
     <div className="feed-meta feed-meta-band">
@@ -2225,19 +2198,6 @@ function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welco
             onSave={onSave} onSaved={onMyFeed} />
         )}
       </section>
-      {profileState.profile && (profileState.profile.muted || []).length > 0 && (
-        <section className="st-card">
-          <h2>덜 보기 <span>나만의 피드에서 뺀 주제·서비스 — 누르면 다시 보여요</span></h2>
-          <div className="role-choices">
-            {profileState.profile.muted.map(v => {
-              const [tab, k] = v.includes('|') ? v.split('|') : [null, null];
-              const name = tab ? `${(TABS.find(t => t.id === tab) || {}).label || tab} · ${k}`
-                : (UPDATE_COMPANIES.find(x => x.slug === v) || {}).name || v;
-              return <button key={v} type="button" className="role-choice" onClick={() => member.toggleMute(v)}>{name} ✕</button>;
-            })}
-          </div>
-        </section>
-      )}
       <section className="st-card st-danger">
         <h2>회원 탈퇴</h2>
         <p>탈퇴하면 Google 로그인 정보와 저장한 관심사·글이 바로 지워지고 되돌릴 수 없어요. 기사와 업데이트는 로그인 없이 계속 볼 수 있어요.</p>
@@ -2251,7 +2211,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const profile = profileState.profile;
   // 저장 버튼을 눌러도 피드를 다시 계산하거나 '더 보기'가 접히지 않게 관심사만 본다
-  const interestKey = profile ? JSON.stringify([profile.role, profile.news_topics, profile.services, profile.keywords, profile.include_role, profile.muted]) : '';
+  const interestKey = profile ? JSON.stringify([profile.role, profile.news_topics, profile.services, profile.keywords, profile.include_role]) : '';
   const c = useMemo(() => (profile ? compileMyFeed(profile) : null), [interestKey]);   // eslint-disable-line
   const sorted = useMemo(() => [...articles].sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
   const news = useMemo(() => (c ? sorted.filter(a => myArticleWhy(c, a)) : []), [c, sorted]);
@@ -2302,7 +2262,6 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   ];
   const newsList = onlyNew ? newNews : news, updList = onlyNew ? newUpd : upd;
   const list = kind === 'news' ? newsList : kind === 'updates' ? updList : [];
-  const mutedCount = (profile.muted || []).length;
   return (<>
     {band(<>
       <div className="role-terms" aria-label="내 관심사">
@@ -2321,13 +2280,10 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
           저장 <span className="count">{savedIds.length}</span>
         </button>
       </div>
-      {kind !== 'saved' && (
+      {kind !== 'saved' && m.prevSeen && (
         <div className="mf-new">
-          {m.prevSeen ? (<>
-            <span>지난 방문({m.prevSeen.slice(5)}) 이후 새 소식 · 뉴스 <b>{articlesReady ? newNews.length : '…'}</b> · 업데이트 <b>{updReady ? newUpd.length : '…'}</b></span>
-            <button type="button" className={`chip ${onlyNew ? 'active' : ''}`} aria-pressed={onlyNew} onClick={() => setOnlyNew(v => !v)}>새 소식만</button>
-          </>) : <span>다음 방문부터 새로 올라온 소식에 NEW 표시를 해 드려요.</span>}
-          {mutedCount > 0 && <button type="button" className="brief-link muted" onClick={onEdit}>덜 보기 {mutedCount}개 관리</button>}
+          <span>지난 방문({m.prevSeen.slice(5)}) 이후 새 소식 · 뉴스 <b>{articlesReady ? newNews.length : '…'}</b> · 업데이트 <b>{updReady ? newUpd.length : '…'}</b></span>
+          <button type="button" className={`chip ${onlyNew ? 'active' : ''}`} aria-pressed={onlyNew} onClick={() => setOnlyNew(v => !v)}>새 소식만</button>
         </div>
       )}
     </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
@@ -2357,7 +2313,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
         updReady && updList.length === 0 ? (onlyNew ? <EmptyState message="지난 방문 이후 새 업데이트가 없어요" sub="'새 소식만'을 끄면 전체를 볼 수 있어요." />
           : <EmptyState message="관심사에 맞는 업데이트가 아직 없어요" sub="관심 AI 서비스를 골라 보세요." />)
         : <ol className="updates-list">{updList.slice(0, shown).map(u => (
-            <UpdateRow key={u.id} u={u} showCompany mutable onCompany={co => onCompany(co.catSlug, co.slug)} />
+            <UpdateRow key={u.id} u={u} showCompany onCompany={co => onCompany(co.catSlug, co.slug)} />
           ))}</ol>
       )}
       {list.length > shown && (
@@ -2577,32 +2533,19 @@ function App() {
   const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole }),
     [roleState.myRole]);   // eslint-disable-line
 
-  // 저장 · 덜 보기 · 지난 방문 이후 새 소식
+  // 저장 · 지난 방문 이후 새 소식
   const prevSeen = useLastVisit(auth.user, profileState);
   const askLogin = (msg) => { if (auth.enabled && window.confirm(`${msg} Google로 로그인할까요?`)) auth.signIn(); };
   const pf = profileState.profile;
   const member = useMemo(() => ({
     enabled: auth.enabled, user: auth.user, prevSeen,
     saved: new Set((pf && pf.saved) || []),
-    muted: new Set((pf && pf.muted) || []),
     toggleSave(id) {
       if (!auth.user) { askLogin('로그인하면 기사와 업데이트를 저장해 두고 어느 기기에서든 다시 볼 수 있어요.'); return; }
       profileState.quick(p => {
         if (p.saved.includes(id)) return { saved: p.saved.filter(x => x !== id) };
         if (p.saved.length >= SAVED_MAX) { alert(`저장은 ${SAVED_MAX}개까지예요. 나만의 피드 › 저장에서 다 본 글을 정리해 주세요.`); return null; }
         return { saved: [id, ...p.saved] };
-      });
-    },
-    // 덜 보기: 뉴스 주제 '탭|키워드' 또는 서비스 slug. 덜 보기로 하면 관심 주제·서비스에서도 뺀다
-    toggleMute(v) {
-      if (!auth.user) return;
-      profileState.quick(p => {
-        if (p.muted.includes(v)) return { muted: p.muted.filter(x => x !== v) };
-        if (p.muted.length >= MUTED_MAX) { alert(`덜 보기는 ${MUTED_MAX}개까지예요. 설정에서 정리해 주세요.`); return null; }
-        const patch = { muted: [...p.muted, v] };
-        if (p.news_topics.includes(v)) patch.news_topics = p.news_topics.filter(x => x !== v);
-        if (p.services.includes(v)) patch.services = p.services.filter(x => x !== v);
-        return patch;
       });
     },
   }), [auth.enabled, auth.user, prevSeen, pf]);   // eslint-disable-line
