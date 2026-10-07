@@ -45,7 +45,6 @@ PREVIEW = os.environ.get('PREVIEW') == '1'
 # 예전 주소 (GitHub Pages). --redirect-site 로 이 주소용 "주소가 바뀌었어요" 안내 사이트를 만든다.
 OLD_SITE_PATH = '/Daily_Art_AI_News_Feed'
 SITE_NAME = 'AI Art Daily'
-SITE_TAGLINE = '한국어 큐레이션'
 SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한국어로 정리합니다. '
              '게임 제작 속 AI, AI 도입 뉴스, 아트 전반 AI 뉴스.')
 # 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
@@ -775,7 +774,7 @@ def main():
 
     home_fallback = (f'<h1 class="feed-title">{esc(SITE_NAME)}</h1><p class="feed-sub">{esc(SITE_DESC)}</p>'
                      + grouped_list('/', articles[:HOME_LIST]))
-    write(out, 'index.html', shell('', f'{SITE_NAME} — {SITE_TAGLINE}', SITE_DESC, home_fallback,
+    write(out, 'index.html', shell('', SITE_NAME, SITE_DESC, home_fallback,
                                    {'@context': 'https://schema.org', '@type': 'WebSite', 'name': SITE_NAME,
                                     'url': SITE_URL + '/', 'inLanguage': 'ko', 'description': SITE_DESC}))
 
