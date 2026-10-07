@@ -35,11 +35,11 @@
   --shadow-pop-sm: 0 2px 0 #334955;
 }
 :root[data-theme="dark"] {
-  /* 다크 모드 — 검은 배경, 카드는 아주 어두운 청회색 */
-  --paper: #000000;
-  --paper-2: #11161a;
-  --paper-3: #07090b;
-  --card: #11161a;
+  /* 다크 모드 — 아주 살짝 밝힌 검은 배경, 카드는 어두운 청회색 */
+  --paper: #0e1114;
+  --paper-2: #181d21;
+  --paper-3: #0a0c0e;
+  --card: #181d21;
   --ink: #cfd8de;
   --ink-2: #a9b9c3;
   --muted: #7f97a6;
