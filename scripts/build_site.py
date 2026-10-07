@@ -68,7 +68,7 @@ REACT_PROD = [
     'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
 ]
 ESBUILD = 'esbuild@0.24.2'
-STATIC_FILES = ['app.css', 'config.js', '.nojekyll', 'manifest.webmanifest', 'ads.txt']
+STATIC_FILES = ['app.css', 'config.js', '.nojekyll', 'manifest.webmanifest', 'ads.txt', 'favicon.ico']
 
 
 # ---------- helpers ----------
@@ -200,6 +200,9 @@ def head(root: str, title: str, desc: str, canonical: str, og_type='website',
 <meta name="twitter:description" content="{esc(desc)}" />
 {f'<meta name="twitter:image" content="{esc(img)}" />' if img else ''}
 {THEME_BOOT}
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
 <link rel="stylesheet" href="{root}app.css?v={{CSS_V}}" />
 <link rel="stylesheet" href="{root}static.css?v={{STATIC_V}}" />
 {extra}
@@ -821,6 +824,10 @@ def main():
         sw = f.read()
     version = hashlib.md5(json.dumps(precache).encode()
                           + open(os.path.join(repo, 'sw.js'), 'rb').read()).hexdigest()[:10]
+    # 아이콘·로고 주소에 내용 해시를 붙인다 — 바꾸면 브라우저 탭 아이콘·오프라인 캐시가 새 파일을 받는다
+    icon_names = ['icon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'logo.svg']
+    icon_v = hashlib.md5(b''.join(open(os.path.join(repo, 'icons', n), 'rb').read() for n in icon_names)).hexdigest()[:8]
+    version = hashlib.md5((version + icon_v).encode()).hexdigest()[:10]
     write(out, 'sw.js', sw.replace('__VERSION__', version)
           .replace('__PRECACHE__', json.dumps(precache, ensure_ascii=False)))
 
@@ -894,6 +901,18 @@ def main():
                                             f'<h1 class="feed-title">설정</h1><p class="feed-sub">{esc(st_desc)}</p>',
                                             collection('settings/', '설정', st_desc))
           .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+
+    icon_re = re.compile(r'(/icons/(?:' + '|'.join(re.escape(n) for n in icon_names) + r'))(?=["\'])')
+    for dp, _, fs in os.walk(out):
+        for fn in fs:
+            if fn.endswith('.html') or fn == 'manifest.webmanifest':
+                fp = os.path.join(dp, fn)
+                with open(fp, encoding='utf-8') as fh:
+                    txt = fh.read()
+                new = icon_re.sub(lambda m: m.group(1) + '?v=' + icon_v, txt)
+                if new != txt:
+                    with open(fp, 'w', encoding='utf-8') as fh:
+                        fh.write(new)
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
