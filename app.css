@@ -22,13 +22,13 @@
   --hairline: #c0c0c0;        /* cream-400, hairline divider */
   --hairline-strong: #a2a2a2; /* kraft-400 */
   --stroke: #444444;          /* cocoa stroke (the signature) */
-  --accent: #747474;          /* 강조색 — 무채색 회색 */
-  --accent-strong: #6c6c6c;   /* sage-600 */
-  --accent-soft: #e3e3e3;     /* sage-100 */
+  --accent: #4f65a3;          /* 강조색 — 로고 색에서 채도를 낮춘 푸른색 (나머지는 무채색) */
+  --accent-strong: #435791;   /* 강조 글자 */
+  --accent-soft: #e8ecf5;     /* 강조 배경 */
   --kraft: #a2a2a2;
   --kraft-soft: #e0e0e0;
-  --link: #6c6c6c;            /* sky-500 */
-  --new: #686868;             /* jade-500 */
+  --link: #435791;
+  --new: #3f86a3;
   --shadow-md: 0 4px 0 rgba(68,68,68,.12), 0 2px 8px rgba(68,68,68,.06);
   --shadow-lg: 0 6px 0 rgba(68,68,68,.14), 0 14px 28px rgba(68,68,68,.10);
   --shadow-pop: 0 4px 0 #444444;
@@ -47,13 +47,13 @@
   --hairline: #303030;
   --hairline-strong: #585858;
   --stroke: #373737;
-  --accent: #808080;
-  --accent-strong: #9e9e9e;
-  --accent-soft: #2b2b2b;
+  --accent: #6178b5;
+  --accent-strong: #98a9d6;
+  --accent-soft: #1f2536;
   --kraft: #a2a2a2;
   --kraft-soft: #242424;
-  --link: #afafaf;
-  --new: #888888;
+  --link: #98a9d6;
+  --new: #6fb2cc;
   --shadow-md: 0 4px 0 rgba(0,0,0,.5), 0 6px 18px rgba(0,0,0,.3);
   --shadow-lg: 0 6px 0 rgba(0,0,0,.55), 0 18px 36px rgba(0,0,0,.4);
   --shadow-pop: 0 4px 0 #000000;
