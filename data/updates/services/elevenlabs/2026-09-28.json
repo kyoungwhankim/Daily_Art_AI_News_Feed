@@ -15,5 +15,21 @@
     ],
     "url": "https://elevenlabs.io/blog/eleven-v4",
     "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-28-2",
+    "service": "elevenlabs",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Eleven v4 및 v4 Turbo 일반 공개",
+    "summary": "90개 이상의 언어에서 더 높은 품질, 더욱 표현력 있는 음성 및 개선된 음성 복제를 제공합니다. v4 Turbo는 실시간 애플리케이션용으로 약 100ms의 중간 추론 지연 시간을 제공합니다.",
+    "details": [
+      "90개 이상 언어 지원",
+      "음성 복제 개선",
+      "실시간 스트리밍 지원",
+      "텍스트-대화 API 개선"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog",
+    "source": "dev"
   }
 ]

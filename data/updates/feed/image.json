@@ -1,5 +1,22 @@
 [
   {
+    "id": "nano-banana-2026-10-06-1",
+    "service": "nano-banana",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Gemini Nano Banana 2.1 일반 공개",
+    "summary": "고속 멀티모달 이미지 생성 및 편집에 최적화된 Nano Banana 2.1이 일반 공개되었습니다. 시각 품질, 프롬프트 준수, 텍스트 렌더링이 개선되었으며 1K, 2K, 4K 해상도를 지원합니다.",
+    "details": [
+      "고속 멀티모달 이미지 생성 및 편집 최적화",
+      "시각 품질 개선",
+      "프롬프트 준수 개선",
+      "텍스트 렌더링 개선",
+      "1K, 2K, 4K 해상도 지원"
+    ],
+    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+    "source": "dev"
+  },
+  {
     "id": "qwen-image-2026-10-02-1",
     "service": "qwen-image",
     "date": "2026.10.02",

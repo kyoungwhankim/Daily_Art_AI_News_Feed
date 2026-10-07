@@ -1,10 +1,10 @@
 {
   "categories": {
     "image": {
-      "count": 455,
-      "latest": "2026.10.02",
+      "count": 456,
+      "latest": "2026.10.06",
       "file": "updates/feed/image.json",
-      "rev": "ff1056b5de"
+      "rev": "6ee5a309a0"
     },
     "video": {
       "count": 933,
@@ -31,16 +31,16 @@
       "rev": "821ea5a3bf"
     },
     "audio": {
-      "count": 348,
+      "count": 350,
       "latest": "2026.10.05",
       "file": "updates/feed/audio.json",
-      "rev": "18d01b494a"
+      "rev": "34a6e572f0"
     },
     "tools": {
-      "count": 981,
-      "latest": "2026.10.01",
+      "count": 987,
+      "latest": "2026.10.06",
       "file": "updates/feed/tools.json",
-      "rev": "3c44b14cff"
+      "rev": "da1d8c9128"
     }
   },
   "services": {
@@ -55,9 +55,9 @@
       "latest": "2026.09.08"
     },
     "nano-banana": {
-      "count": 19,
+      "count": 20,
       "first": "2025.08.26",
-      "latest": "2026.09.14"
+      "latest": "2026.10.06"
     },
     "seedream": {
       "count": 11,
@@ -240,9 +240,9 @@
       "latest": "2026.10.01"
     },
     "elevenlabs": {
-      "count": 203,
+      "count": 205,
       "first": "2022.11.24",
-      "latest": "2026.09.28"
+      "latest": "2026.10.05"
     },
     "suno": {
       "count": 69,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 206,
+      "count": 208,
       "first": "2024.08.06",
-      "latest": "2026.10.01"
+      "latest": "2026.10.06"
     },
     "invokeai": {
       "count": 73,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 58,
+      "count": 59,
       "first": "2025.05.21",
-      "latest": "2026.09.25"
+      "latest": "2026.10.06"
     },
     "fal.ai": {
       "count": 167,
@@ -300,9 +300,9 @@
       "latest": "2026.09.14"
     },
     "figma-ai": {
-      "count": 78,
+      "count": 79,
       "first": "2024.03.28",
-      "latest": "2026.09.17"
+      "latest": "2026.10.06"
     },
     "blender": {
       "count": 29,
@@ -310,7 +310,7 @@
       "latest": "2026.07.14"
     },
     "claude": {
-      "count": 219,
+      "count": 221,
       "first": "2023.03.14",
       "latest": "2026.10.01"
     }

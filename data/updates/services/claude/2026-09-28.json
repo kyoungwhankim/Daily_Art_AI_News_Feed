@@ -12,5 +12,21 @@
     ],
     "url": "https://support.claude.com/en/articles/12138966-release-notes",
     "source": "notice"
+  },
+  {
+    "id": "claude-2026-09-28-2",
+    "service": "claude",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Claude Sonnet 5.5 출시",
+    "summary": "Claude API, Amazon Bedrock, Google Cloud 등에서 사용 가능한 새로운 Claude Sonnet 5.5 모델이 출시되었습니다.",
+    "details": [
+      "Claude API에서 사용 가능",
+      "Amazon Bedrock 지원",
+      "Google Cloud 지원",
+      "Microsoft Foundry 지원"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source": "dev"
   }
 ]

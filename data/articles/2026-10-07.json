@@ -1,0 +1,158 @@
+[
+  {
+    "id": "games-80987f58-2026-10",
+    "tab": "games",
+    "headline": "어도비 포토샵 27.11 출시, AI 경계 보정 '인핸스 엣지'와 GPT Image 2 지원",
+    "summary": "어도비가 AI 경계 보정 기능과 GPT Image 2를 지원하는 포토샵 27.11을 출시했어요.",
+    "body": "<p>어도비가 포토샵 27.11 버전을 출시했어요. 포토샵은 게임과 엔터테인먼트 업계에서 컨셉 아트, 텍스처 편집, 렌더 리터칭에 두루 쓰이는 툴인데요, 이번 업데이트의 핵심은 '인핸스 엣지(Enhance Edge)'라는 새 AI 기능이에요. 배경 제거(Remove Background)로 만든 마스크를 다듬어 주는 옵션으로, 컨텍스트 작업 표시줄에서 바로 쓸 수 있어요. RGBA 디퓨전 방식으로 마스크 가장자리의 색 번짐을 없애 줘서, 머리카락이나 털, 반투명 재질처럼 따내기 까다로운 부분도 훨씬 깔끔하게 분리할 수 있대요.</p><p>다만 무료는 아니에요. 지우기 도구와 달리 인핸스 엣지는 한 번 쓸 때마다 생성 크레딧 20개를 소모해서, 자주 쓰려면 별도의 파이어플라이 구독이 필요할 수 있어요. 서드파티 AI 모델 지원도 늘었어요. 이제 '이미지 생성' 기능에서 텍스트 프롬프트로 이미지를 만들거나, 27.10에서 추가된 '프롬프트로 편집' 기능으로 이미지를 고칠 때 GPT Image 2 모델을 고를 수 있어요. 어도비는 자사 제품에서 쓸 수 있는 외부 AI 모델을 33개로 늘렸고, 포토샵에서도 제미나이와 FLUX 계열, 지난달 인수한 토파즈 랩스의 모델까지 쓸 수 있게 됐어요.</p><p>이 밖에 새 문서 대화상자의 최근 항목을 이름 변경하거나 삭제하는 기능이 추가됐고, 데이터 수집에 동의한 사용자의 실제 사용 데이터로 윈도우 성능도 개선했대요. 캐릭터 시트나 컨셉 아트에서 누끼 작업이 많은 게임 아티스트라면 반가운 업데이트지만, 크레딧 비용까지 함께 따져보는 게 좋겠어요.</p><p>원문: <a href=\"https://www.cgchannel.com/2026/10/adobe-releases-photoshop-27-11/\">CG Channel</a></p>",
+    "source": "CG Channel",
+    "publishedAt": "2026.10.07",
+    "hue": 220,
+    "image": "https://www.cgchannel.com/wp-content/uploads/2026/10/261006_Photoshop2711_f-960x480.jpg",
+    "keywords": [
+      "2D·이미지",
+      "Adobe",
+      "Photoshop"
+    ],
+    "url": "https://www.cgchannel.com/2026/10/adobe-releases-photoshop-27-11/",
+    "urls": [
+      {
+        "label": "릴리스 노트",
+        "href": "https://helpx.adobe.com/photoshop/desktop/whats-new/photoshop-on-desktop-release-notes.html"
+      }
+    ]
+  },
+  {
+    "id": "industry-3c74bb5b-2026-10",
+    "tab": "industry",
+    "headline": "세가 \"게임의 창작 영역은 AI에 맡기지 않는다\"…퍼블리싱·사내 업무에만 활용",
+    "summary": "세가가 게임 창작에는 AI를 쓰지 않고 업무 효율화에만 활용한다고 밝혔어요.",
+    "body": "<p>세가의 사이토 츠요시 상무 겸 부최고사업책임자가 닛케이와의 인터뷰에서 게임 개발에서 생성형 AI 활용에 '매우 신중하다'며, 게임의 창작 영역은 AI에 맡기지 않는다고 밝혔어요. 그는 \"퍼블리싱과 사내 부서 같은 영역, 그리고 사업 아이디어를 내는 데에는 AI로 효율을 높이고 있지만, 게임 개발 과정에서는 아주 조심스럽게 쓰고 있다\"고 설명했어요. 세가는 작년에 '생성형 AI 위원회'를 만들었고, 그 안에 사내 AI 도구를 개발하는 'AI 태스크포스'도 두고 있대요. 이 조직은 북미·유럽 홍보팀과 함께 게임 유통 플랫폼의 AI 사용 공개 요청에도 대응하고 있어요.</p><p>이런 입장 표명은 올해 초 '크레이지 택시: 월드 투어'의 배경 에셋 개발 과정에서 생성형 AI가 쓰였다는 사실이 알려지며 논란이 된 뒤에 나온 거예요. 당시 시리즈 창시자 칸노 켄지는 AI를 아이디어와 참고용으로만 썼다고 해명했어요. 비슷하게 크리스탈 다이나믹스도 '툼 레이더: 레거시 오브 아틀란티스'에서 AI로 게임 속 오브젝트를 미리 시각화해 보고, 괜찮으면 기존 파이프라인에서 사람이 직접 컨셉을 잡고 만든다고 밝힌 바 있어요.</p><p>대형 퍼블리셔들이 AI를 아예 배제하기보다 기획·사무 영역과 최종 결과물 사이에 선을 긋는 방식으로 정리하고 있다는 점에서, AI 도입 정책을 고민하는 스튜디오에 참고가 될 만한 사례예요.</p><p>원문: <a href=\"https://www.gamesindustry.biz/sega-wont-entrust-the-creative-aspect-of-games-to-ai-but-is-using-tech-to-improve-efficiency-in-other-departments\">GamesIndustry.biz</a></p>",
+    "source": "GamesIndustry.biz",
+    "publishedAt": "2026.10.07",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/crazy-taxi-1.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.gamesindustry.biz/sega-wont-entrust-the-creative-aspect-of-games-to-ai-but-is-using-tech-to-improve-efficiency-in-other-departments"
+  },
+  {
+    "id": "industry-017ec7e5-2026-10",
+    "tab": "industry",
+    "headline": "북유럽 스튜디오들의 AI 활용법 3부: 로어 검수는 AI에, 이야기는 작가에게",
+    "summary": "북유럽 게임 스튜디오들이 AI를 어디에 쓰고 어디서 배제하는지 들려줬어요.",
+    "body": "<p>포켓게이머비즈가 북유럽 게임 업계의 AI 활용을 다룬 시리즈 3부를 공개했어요. 이번엔 AI 툴을 만드는 사람, 매일 쓰는 개발자, 원주민 이야기를 다루는 스튜디오 대표, 노동자 대표까지 네 명의 목소리를 담았어요. 사미 신화를 바탕으로 한 어드벤처 '스카브마'를 만든 레드 스테이지의 마리아나 아우라넨은 게임에는 생성형 AI를 전혀 쓰지 않고, 문법 검사나 보고서, 일정·예산 정리 같은 '지루한 부분'에만 쓴다고 했어요. AI는 뻔하고 고정관념적인 콘텐츠를 만들기 쉽고, 특히 소수 문화를 다룰 땐 그 공동체의 지식이 꼭 필요하다는 이유예요.</p><p>인디 스튜디오 DREADMILL의 토미 토이카는 AI를 '프로그래머의 프로그래머'라고 불렀어요. 작은 팀에선 개발자를 대체하기보다 작업 속도를 높이는 증폭기 역할을 하고, 대신 컨셉 탐색, 임시 에셋, 번역, 마케팅 초안처럼 원래 외주로 맡기던 일을 AI가 대신하고 있대요. 다만 게임 디자인, 아트 디렉션, 최종 비주얼 에셋, 내러티브는 전부 사람이 만든다고 강조했어요. 내러티브 툴 브림스톤 AI의 공동창업자는 수십 년 로어가 쌓인 라이선스 게임에서 새 대사가 공식 설정과 맞는지 AI로 검수하는 사례를 소개했어요.</p><p>AI가 줄이는 게 개발자 일자리보다 외주 물량이라는 현장의 증언은, 아트 외주 구조를 가진 스튜디오라면 눈여겨볼 대목이에요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/nordic-ai-part-three-how-nordic-studios-are-using-ai-part-three-lore-checks-a-programmers-programmer-and-the-parts-writers-keep-for-themselves/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.07",
+    "hue": 40,
+    "image": "https://media.pocketgamer.biz/images/141607/89958/nordicsaipart3_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.pocketgamer.biz/nordic-ai-part-three-how-nordic-studios-are-using-ai-part-three-lore-checks-a-programmers-programmer-and-the-parts-writers-keep-for-themselves/"
+  },
+  {
+    "id": "industry-7554857d-2026-10",
+    "tab": "industry",
+    "headline": "'디지' 원작자 올리버 쌍둥이, 생성형 AI로 신작 개발…\"AI 없었으면 못 만들었다\"",
+    "summary": "고전 '디지' 원작자들이 생성형 AI로 신작을 만들고 있다고 공개했어요.",
+    "body": "<p>80년대 후반 영국에서 큰 인기를 끈 달걀 캐릭터 플랫포머 '디지' 시리즈의 원작자 올리버 쌍둥이가 블랙풀에서 열린 플레이 엑스포에서 신작 두 편을 공개했어요. 앤드류 올리버는 1989년작 '트레저 아일랜드 디지'를 ZX 스펙트럼판과 NES판을 합쳐 리메이크하고, 새 메가드라이브 버전과 현대적인 비주얼의 '울트라' 버전까지 만든다고 밝혔고, 필립 올리버는 '저니 투 디 에메랄드 시티'를 소개했어요. 두 사람은 이 프로젝트들을 생성형 AI로 만들고 있다는 사실을 숨기지 않았어요.</p><p>필립은 \"에메랄드 시티의 아트를 전부 사람이 만들었다면 아티스트 두어 명이 1년 넘게 매달리고, 이것저것 합쳐 10만 파운드쯤 들었을 것\"이라며 AI가 아니었으면 시도조차 못 했을 거라고 설명했어요. 앤드류도 사인회에서 만난 팬의 말을 빌려 AI가 인디도 자금력 있는 대형 스튜디오 수준의 비주얼로 경쟁할 수 있는 문을 열어준다며 동의했어요. 반면 이를 보도한 록 페이퍼 샷건은 게임을 만드는 데 돈과 사람이 드는 건 당연한 일이고, 남의 작업을 학습한 생성형 AI로 그 과정을 건너뛰는 건 문제라고 꼬집었어요.</p><p>소규모 개발자에겐 비용 절감 수단으로, 아티스트에겐 일감을 줄이는 위협으로 받아들여지는 AI 아트의 양면이 그대로 드러난 사례예요.</p><p>원문: <a href=\"https://www.rockpapershotgun.com/retro-platformer-series-dizzy-is-back-for-a-new-game-from-its-original-creators-who-are-really-happy-for-you-to-know-its-made-with-ai\">Rock Paper Shotgun</a></p>",
+    "source": "Rock Paper Shotgun",
+    "publishedAt": "2026.10.07",
+    "hue": 320,
+    "image": "https://assetsio.gnwcdn.com/Dizzy.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 도입 전략",
+      "2D·이미지"
+    ],
+    "url": "https://www.rockpapershotgun.com/retro-platformer-series-dizzy-is-back-for-a-new-game-from-its-original-creators-who-are-really-happy-for-you-to-know-its-made-with-ai",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.timeextension.com/features/if-i-didnt-have-these-powerful-tools-i-wouldnt-do-it-at-all-the-oliver-twins-explain-why-theyre-dizzy-about-genai"
+      },
+      {
+        "label": "영상",
+        "href": "https://www.youtube.com/watch?v=lTSaPajJCcE"
+      }
+    ]
+  },
+  {
+    "id": "industry-43aa34d0-2026-10",
+    "tab": "industry",
+    "headline": "워호스 공동창업자 \"AI는 면죄부가 아니다\"…인력 절반 대체론은 착각",
+    "summary": "워호스 공동창업자가 AI로 인력을 대체한다는 경영진의 발상은 틀렸다고 지적했어요.",
+    "body": "<p>'킹덤 컴: 딜리버런스'로 유명한 워호스 스튜디오의 공동창업자 마틴 클리마가 게임 업계 경영진의 AI 인식을 비판했어요. 최근 게임 업계에선 AI가 성우 연기 같은 영역에 파고들고, 끝없이 이어지는 정리해고의 이유로도 거론되고 있는데요. 클리마는 \"AI는 면죄부가 아니다\"라며, 경영진이 AI를 '너무 단순화된 머릿속 모델'로 이해하고 있다고 꼬집었어요. 비용 절감이 지금처럼 중요하다면 AI 도입은 피할 수 없겠지만, 사람들이 생각하는 방식대로 작동하진 않는다는 거예요.</p><p>특히 직원 절반을 해고하고 그 자리를 AI로 채우겠다는 생각은 '근본적으로 잘못된 발상'이라고 했어요. 그는 플레이어들이 점점 더 큰 게임을 원하기 때문에, 결국 스튜디오는 개발팀 규모를 그대로 유지하면서 AI로 역량을 보강하는 쪽으로 갈 거라고 내다봤어요. 그렇게 하면 같은 비용으로 더 많은 분기 클래스나 더 많은 미션을 담은, 이전보다 큰 게임을 만들 수 있다는 거죠. 다시 말해 AI가 게임 개발비를 줄여주진 않더라도, 같은 돈으로 더 큰 게임을 만들게 해준다는 시각이에요. 테이크투의 스트라우스 젤닉 CEO도 '복제품은 팔리지 않는다'며 AI가 히트작을 만들진 못해도 개발자에겐 도움이 될 수 있다고 말한 바 있어요.</p><p>AI를 감원의 명분으로 삼으려는 흐름에 대해 현장 출신 경영자가 내놓은 현실적인 반론이라 의미가 있어요.</p><p>원문: <a href=\"https://www.pcgamer.com/software/ai/warhorse-co-founder-believes-ai-is-not-a-get-out-of-jail-free-card-and-that-execs-have-a-simplified-mental-model-of-what-it-means-for-games/\">PC Gamer</a></p>",
+    "source": "PC Gamer",
+    "publishedAt": "2026.10.07",
+    "hue": 10,
+    "image": "https://cdn.mos.cms.futurecdn.net/Z5dm3tHivwkvMfs8GBBsRJ-1920-80.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "고용·노조"
+    ],
+    "url": "https://www.pcgamer.com/software/ai/warhorse-co-founder-believes-ai-is-not-a-get-out-of-jail-free-card-and-that-execs-have-a-simplified-mental-model-of-what-it-means-for-games/"
+  },
+  {
+    "id": "industry-7b37f22c-2026-10",
+    "tab": "industry",
+    "headline": "D&D·매직 더 개더링 개발자들 노조 결성…\"경영진의 생성형 AI 강요 멈춰야\"",
+    "summary": "위저드 오브 더 코스트 개발자들이 노조를 결성하며 AI 강요 중단을 요구했어요.",
+    "body": "<p>'던전 앤 드래곤'과 '매직: 더 개더링'을 만드는 위저드 오브 더 코스트 개발자들이 노조 결성을 선언했어요. D&D, D&D 비욘드, 매직: 더 개더링, 듀얼 마스터즈 개발진이 미국통신노동자조합(CWA)이 지원하는 '유나이티드 위저드 오브 더 코스트'에 합류하겠다고 밝히고, 회사에 노조를 자발적으로 인정해 달라고 요구했어요. 이 노조는 지난 4월 디지털 카드게임 'MTG 아레나' 개발자들만으로 출범했고, 회사가 당시 자발적 인정 요구에 응하지 않았지만 6월 선거에서 승리한 바 있어요. CWA는 앞서 액티비전과 엑스박스 노조도 지원해 왔어요.</p><p>노조의 요구 사항에는 공정한 임금, 쉽게 이용할 수 있는 의료 보장, 재택근무 보호와 함께 'AI 잠식으로부터의 보호'가 포함됐어요. 노조는 \"경영진이 팀의 의사와 상관없이 LLM과 생성형 AI 도입을 밀어붙여 왔다\"며 \"이건 멈춰야 하고, 우리 팀에는 목표와 가치에 맞는 실효성 있고 강제력 있는 AI 정책이 필요하다\"고 주장했어요. 회사는 10월 13일까지 자발적 인정 여부를 답해야 하고, 노조는 이미 미국 노동관계위원회(NLRB)에 선거 청원도 냈어요. 팬들에겐 온라인 청원 서명을 부탁하고 있대요.</p><p>AI 도입 방식이 임금·복지와 나란히 노사 협상의 핵심 의제로 올라섰다는 점에서 게임 업계 전반에 시사하는 바가 커요.</p><p>원문: <a href=\"https://www.gamesradar.com/tabletop-gaming/d-and-d-and-magic-the-gathering-developers-unionize-allege-wizards-of-the-coast-is-pushing-adoption-of-llms-and-generative-ai/\">GamesRadar+</a></p>",
+    "source": "GamesRadar+",
+    "publishedAt": "2026.10.07",
+    "hue": 350,
+    "image": "https://cdn.mos.cms.futurecdn.net/XYDnJMVAtjTKpH8V2fhFdA-1920-80.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "고용·노조"
+    ],
+    "url": "https://www.gamesradar.com/tabletop-gaming/d-and-d-and-magic-the-gathering-developers-unionize-allege-wizards-of-the-coast-is-pushing-adoption-of-llms-and-generative-ai/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.ign.com/articles/wizards-of-the-coast-union-demands-company-stop-pushing-generative-ai"
+      }
+    ]
+  },
+  {
+    "id": "art-13740743-2026-10",
+    "tab": "art",
+    "headline": "구글 플로우 뮤직, 말로 만든 나만의 음악 툴을 VST3·AU 플러그인으로 내보낸다",
+    "summary": "구글 플로우 뮤직에서 만든 커스텀 음악 툴을 DAW 플러그인으로 쓸 수 있게 됐어요.",
+    "body": "<p>구글 랩스가 음악 창작 도구 '구글 플로우 뮤직'에 새 기능을 추가했어요. 플로우 뮤직의 '스페이스(Spaces)'는 아티스트나 프로듀서, 작곡가가 코딩 경험 없이 자연어로 설명만 해서 나만의 악기나 이펙트를 만들 수 있는 기능인데요. 이제 이렇게 만든 스페이스를 VST3나 AU 플러그인으로 내보내서, 평소 쓰는 디지털 오디오 워크스테이션(DAW) 안에서 그대로 돌릴 수 있게 됐어요. 말하자면 음악 제작 도구를 '바이브 코딩'으로 직접 만들어서, 익숙한 프로 작업 환경에 바로 끼워 넣을 수 있다는 거예요.</p><p>구글은 사람마다 작업 방식이 다르다는 점에서 출발했다고 설명했어요. 정해진 기능만 있는 범용 플러그인 대신 각자의 프로세스와 스타일에 맞춘 도구를 만들 수 있게 하자는 거죠. 실제 사례로 프로듀서 크리스 리딕-타인스가 만든 'No Chaser' 플러그인을 소개했는데, 어디서 녹음했든 상관없이 반주와 보컬을 스튜디오 품질로 선명하게 다듬어 주는 도구래요. 구글은 최근 업계 창작자들이 직접 만든 플로우 도구들도 함께 공개하며 창작자 중심의 AI 툴 생태계를 넓혀가고 있어요.</p><p>AI가 곡을 대신 써주는 방향이 아니라, 창작자가 자기 워크플로에 딱 맞는 도구를 스스로 만들게 돕는 방향이라는 점이 흥미로워요. 게임 사운드 디자이너처럼 특수한 이펙트가 자주 필요한 작업자라면 한번 시도해볼 만해요.</p><p>원문: <a href=\"https://blog.google/innovation-and-ai/models-and-research/google-labs/create-music-production-plugins-google-flow/\">Google Blog</a></p>",
+    "source": "Google Blog",
+    "publishedAt": "2026.10.07",
+    "hue": 270,
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/119A6335_1.max-1440x810.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Google"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/create-music-production-plugins-google-flow/",
+    "urls": [
+      {
+        "label": "공식 사이트",
+        "href": "https://www.flowmusic.app/"
+      }
+    ]
+  },
+  {
+    "id": "art-ed1ddc16-2026-10",
+    "tab": "art",
+    "headline": "프리즈 아티스트 어워드 수상작 '페럴 메타버스', 제미나이로 디자인한 오를 수 있는 거대 거미 게임",
+    "summary": "프리즈 어워드 수상작가가 제미나이로 비주얼을 만든 거대 거미 게임 조각을 선보여요.",
+    "body": "<p>아테네에서 활동하는 아티스트 테오 트리안타필리디스가 2026 프리즈 런던 아티스트 어워드를 받았어요. 이 상은 경력의 중요한 시기에 있는 작가가 야심 찬 신작을 만들 수 있도록 지원하는 상인데요, 그는 비디오 게임과 실시간 시뮬레이션, 퍼포먼스, 설치 작업을 넘나들며 놀이 같은 세계를 만들어 온 작가예요. 이번 프리즈 런던에서는 포르마, 구글 아츠 앤 컬처와 함께 만든 '페럴 메타버스(스파이더), 2026'을 선보이는데, 관람객이 직접 올라탈 수 있는 거대한 거미 조각이자 실시간 멀티플레이 게임이에요.</p><p>멀리서 보면 위협적인 거미지만 가까이 가면 부드러운 소재라 만지고 싶어진대요. 관람객들이 서로 도와 다리에 올라타면 공유 디지털 공간인 '페럴 메타버스'로 들어가 함께 움직이고 협력하게 돼요. 수상 지원금으로 조각가, 제작자, 텍스타일 디자이너, 게임 개발자, 토목 엔지니어까지 팀을 키웠고, 작업 과정에 제미나이를 도구이자 협업자로 들여와 게임의 분위기를 결정한 스케치, 캐릭터 디자인, 배경, 3D 렌더를 생성했어요. AI 결과물을 조각의 재료처럼 다루면서 게임과 관객 상호작용을 한층 더 밀어붙일 수 있었대요. 작품은 10월 14일부터 18일까지 리젠트 파크의 프리즈 런던에서 볼 수 있어요.</p><p>AI 생성 이미지를 최종 결과물이 아니라 조각과 게임을 잇는 중간 재료로 쓴 사례라, 컨셉 작업에 AI를 어떻게 녹일지 고민하는 아티스트에게 좋은 참고가 될 거예요.</p><p>원문: <a href=\"https://blog.google/company-news/outreach-and-initiatives/arts-culture/frieze-london-2026/\">Google Blog</a></p>",
+    "source": "Google Blog",
+    "publishedAt": "2026.10.07",
+    "hue": 280,
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Theo_Triantafyllidis_Feral_Metaverse_Spider_h.width-1300.png",
+    "keywords": [
+      "3D",
+      "Google",
+      "Gemini"
+    ],
+    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/frieze-london-2026/"
+  }
+]

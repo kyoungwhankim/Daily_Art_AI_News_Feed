@@ -1,0 +1,31 @@
+[
+  {
+    "id": "comfyui-2026-10-06-1",
+    "service": "comfyui",
+    "date": "2026.10.06",
+    "kind": "앱",
+    "title": "ComfyUI v0.39.0 릴리스",
+    "summary": "DynamicGroup 위젯 입력, Eleven v4 및 v4 Turbo 지원, GPT Image 2 배경 제거 등이 포함됩니다.",
+    "details": [
+      "DynamicGroup 위젯 입력 추가",
+      "Eleven v4/v4 Turbo TTS 노드 추가",
+      "Luma Ray 2 노드 지원 중단 예정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-39-0",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-06-2",
+    "service": "comfyui",
+    "date": "2026.10.06",
+    "kind": "앱",
+    "title": "ComfyUI v0.38.2 릴리스",
+    "summary": "FLUX 3 이미지 모델 및 Grok Imagine Video 1.5 Lite 지원이 추가되었습니다.",
+    "details": [
+      "FLUX 3 이미지 모델 지원 (텍스트-이미지, 편집, 바운딩 박스 제어)",
+      "Grok Imagine Video 1.5 Lite 저가 옵션 추가"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-38-2",
+    "source": "notice"
+  }
+]

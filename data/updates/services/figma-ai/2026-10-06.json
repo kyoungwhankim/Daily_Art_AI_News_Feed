@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-10-06-1",
+    "service": "figma-ai",
+    "date": "2026.10.06",
+    "kind": "기능",
+    "title": "Figma 에이전트 일반 공개",
+    "summary": "개선된 지연 시간, 멀티플레이어 성능, Figma 컨텍스트 접근성 및 디자인 라이브러리 가이드 도구가 포함된 베타 버전이 일반 공개되었습니다.",
+    "details": [
+      "지연 시간 개선",
+      "멀티플레이어 성능 개선",
+      "Figma 컨텍스트 접근성 향상",
+      "디자인 라이브러리 가이드 도구 추가"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=the-figma-agent-is-generally-available",
+    "source": "notice"
+  }
+]
