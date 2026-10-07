@@ -68,7 +68,7 @@ window.AIAD = {
               '환경 아트', '가우시안 스플래팅', 'Gaussian Splatting', '포토그래메트리', 'photogrammetry', '스카이박스', 'skybox',
               '파노라마', 'HDRI', 'Genie', 'World Labs', 'Marble', 'PCG'],
       services: ['marble'] },
-    { id: 'sound', label: '사운드 디자이너', short: '사운드', desc: '효과음·음악·음성·더빙 AI',
+    { id: 'sound', label: '사운드 디자이너', short: '사운드', desc: '효과음·음악·음성·더빙 AI', photo: '/icons/roles/sound.webp',
       tags: ['음악·사운드', '음성', 'ElevenLabs', 'Suno'],
       terms: ['사운드', '효과음', '음향', '작곡', 'BGM', '배경음악', '보이스', '음성 합성', '성우', 'TTS', 'text-to-speech',
               '더빙', 'dubbing', '오디오', 'audio', 'sound effect', 'SFX', 'ElevenLabs', 'Suno', 'Udio', 'Stable Audio',
