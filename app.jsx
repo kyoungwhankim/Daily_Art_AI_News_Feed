@@ -891,10 +891,13 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
   const today = `${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   return (
     <section className="bx" aria-label={`${role.label} 브리핑`}>
-      <div className="bx-band">
-        <svg className="bx-rings" viewBox="0 0 200 200" aria-hidden="true">
-          <circle cx="100" cy="100" r="96" /><circle cx="100" cy="100" r="70" /><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="18" />
-        </svg>
+      <div className={`bx-band ${role.photo ? 'has-photo' : ''}`}
+        style={role.photo ? { '--bx-photo': `url("${role.photo}")` } : undefined}>
+        {!role.photo && (
+          <svg className="bx-rings" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="96" /><circle cx="100" cy="100" r="70" /><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="18" />
+          </svg>
+        )}
         <div className="bx-band-main">
           <span className="bx-eyebrow"><TargetIcon size={12} /> ARTIST BRIEFING <i>·</i> {today}</span>
           <h2 className="bx-role">{role.label}</h2>
@@ -907,7 +910,7 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
             <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
           </div>
         </div>
-        <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />
+        {!role.photo && <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />}
       </div>
       {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
 
