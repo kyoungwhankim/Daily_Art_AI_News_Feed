@@ -161,6 +161,7 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 - Google 로그인: Supabase Auth. 공개 키(Project URL, publishable 키)는 `config.js` auth에 있다 (secret 키는 넣지 않는다)
 - 회원 관심사: Supabase `profiles` 표 — 직군, 관심 뉴스 서브 카테고리(`탭|키워드`), 관심 서비스 slug, 직접 키워드, 직군 추천 포함 여부.
   만드는 SQL은 `supabase/schema.sql` (본인 줄만 읽고 쓰는 행 단위 보안 + 회원 탈퇴 함수). Supabase SQL Editor에서 실행한다
+- 사이드바 맨 위: 나만의 피드(큰 버튼), 그 아래 아티스트 브리핑. 메인 맨 위 브리핑은 로그인 회원이면 나만의 피드, 아니면 내 직군 브리핑
 - 화면: 처음 로그인하면 `/settings/` 설정 페이지로 안내, `/me/` 나만의 피드(관심사 수정 팝업), 계정 메뉴는 나만의 피드·설정·로그아웃. 설정 페이지에 계정 정보·관심사·회원 탈퇴. 로그인 회원의 직군은 '내 직군'과 동기화된다
 - 데이터 보기: Supabase 대시보드 → Table Editor → profiles (회원 수·관심사 통계는 SQL Editor에서 조회)
 

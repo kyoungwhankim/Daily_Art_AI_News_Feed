@@ -1608,20 +1608,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   50% { box-shadow: 0 0 0 5px rgba(255,255,255,0); }
 }
 @media (prefers-reduced-motion: reduce) { .side-brief-icon { animation: none; } }
-.side-role { margin-top: 8px; border: 1.5px solid var(--stroke); border-radius: 12px; background: var(--card); overflow: hidden; }
-.side-role-toggle {
-  width: 100%; display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer;
-  background: none; border: 0; font: inherit; color: var(--ink); text-align: left;
-}
-.side-role-label { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
-.side-role-value { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 800; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.side-role-value.unset { text-decoration: underline; text-underline-offset: 3px; }
-.side-role-toggle:hover { background: var(--paper-2); }
-.side-role-panel { padding: 4px 10px 10px; border-top: 1px dashed var(--hairline); }
-.side-role-panel .role-choices { gap: 6px; padding-top: 8px; }
-.side-role-panel .role-choice { font-size: 12px; padding: 4px 10px; border-width: 1.5px; }
-.side-role-clear { margin-top: 8px; background: none; border: 0; padding: 0; font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; }
-.side-role-clear:hover { text-decoration: underline; }
 
 @media (max-width: 900px) {
   .brief-cols { grid-template-columns: 1fr; }
@@ -1899,3 +1885,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .pe-body .pe-foot { margin: 8px -16px -20px; padding: 12px 16px; }
   .pe-head h2 { font-size: 19px; }
 }
+
+.side-me-role { margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); }
+.side-me.active .side-me-role { background: var(--card); }
