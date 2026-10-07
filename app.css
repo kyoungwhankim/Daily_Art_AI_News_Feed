@@ -1822,3 +1822,13 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 @media (max-width: 640px) {
   .brand .brand-mark { width: 26px; height: 26px; }
 }
+/* 모바일 헤더: 메뉴·로고·검색·테마·로그인이 한 줄에 들어가게 */
+@media (max-width: 640px) {
+  .header-inner .header-actions { gap: 6px; }
+  .header-inner .icon-btn, .header-inner .login-btn, .header-inner .account-btn { width: 36px; height: 36px; }
+  .header-inner .brand { gap: 6px; min-width: 0; }
+  .header-inner .brand-name { font-size: 19px; }
+}
+@media (max-width: 380px) {
+  .header-inner .brand-name { font-size: 17px; }
+}

@@ -11,8 +11,8 @@ window.AIAD = {
   // supabaseAnonKey는 브라우저에 공개되도록 만든 키(anon / publishable)라 여기 둬도 된다.
   // service_role(secret) 키는 절대 넣지 않는다.
   auth: {
-    supabaseUrl: '',        // 예: 'https://abcdefghijkl.supabase.co'
-    supabaseAnonKey: '',
+    supabaseUrl: 'https://abablvgtlhuvwdpxvoyu.supabase.co',
+    supabaseAnonKey: 'sb_publishable_W-s11n1xtrEMpNcahwqp4A_zG_Bxlau',   // publishable 키 (공개용)
   },
 
   // 아티스트 브리핑 — 게임 아트 직군마다 관심 가질 뉴스·업데이트를 골라 보여 준다 (주소: /for/<id>/)
