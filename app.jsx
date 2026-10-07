@@ -1824,7 +1824,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
 function App() {
   const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
-  const accent = '#c2410c';
+  const accent = '#0c58c2';
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
