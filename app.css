@@ -1794,3 +1794,10 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
     var(--bx-photo) 75% center / cover no-repeat, #171717; }
   .sec-band-title { font-size: 26px; }
 }
+
+/* 아티스트 브리핑 직군 화면 머리 띠 */
+.sec-band-actions { margin-top: 12px; display: flex; gap: 8px; }
+.sec-band .role-set-btn { background: rgba(255,255,255,.92); color: #333; border-color: rgba(255,255,255,.92); }
+.sec-band .role-set-btn:hover { background: #fff; }
+.sec-band .role-mine-badge { background: rgba(255,255,255,.16); color: #f2f2f2; border-color: rgba(255,255,255,.4); }
+.feed-meta-band .role-terms { margin-top: 10px; }

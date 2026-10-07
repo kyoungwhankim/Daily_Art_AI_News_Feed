@@ -509,14 +509,15 @@ function SubCategoryBar({ items, total, active, onChange }) {
 /* ---------- feed meta ---------- */
 // 뉴스·업데이트 중분류 머리 띠 (config.js bands에 사진을 넣으면 배경 사진, 없으면 색 띠)
 const SECTION_BANDS = window.AIAD.bands || {};
-function SectionBand({ bandKey, eyebrow, title }) {
-  const photo = SECTION_BANDS[bandKey];
+function SectionBand({ bandKey, eyebrow, title, photo: photoProp, children }) {
+  const photo = photoProp || SECTION_BANDS[bandKey];
   return (
     <div className={`sec-band ${photo ? 'has-photo' : ''}`} data-band={bandKey}
       style={photo ? { '--bx-photo': `url("${photo}")` } : undefined}>
       <div className="sec-band-main">
         {eyebrow && <span className="bx-eyebrow">{eyebrow}</span>}
         <h1 className="sec-band-title">{title}</h1>
+        {children}
       </div>
     </div>
   );
@@ -1779,18 +1780,19 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   return (
     <>
       <RolesNav role={role} onRole={onRole} />
-      <div className="feed-meta">
+      <div className="feed-meta feed-meta-band">
         <div>
-          <div className="role-title-row">
-            <h1 className="feed-title">{r.label} 브리핑</h1>
-            {myRole === r.id ? (
-              <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
-            ) : (
-              <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
-                <TargetIcon size={13} /> 내 직군으로 설정
-              </button>
-            )}
-          </div>
+          <SectionBand bandKey={`role:${r.id}`} photo={r.photo} eyebrow="ARTIST BRIEFING" title={`${r.label} 브리핑`}>
+            <div className="sec-band-actions">
+              {myRole === r.id ? (
+                <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
+              ) : (
+                <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
+                  <TargetIcon size={13} /> 내 직군으로 설정
+                </button>
+              )}
+            </div>
+          </SectionBand>
           <div className="feed-sub">{r.desc}</div>
           <div className="role-terms" aria-label="추천 키워드">
             {terms.map(t => <span key={t} className="role-term">{t}</span>)}
