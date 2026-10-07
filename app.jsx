@@ -1935,8 +1935,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   }
   const TERMS_SHOWN = 14;
   const terms = allTerms ? r.terms : r.terms.slice(0, TERMS_SHOWN);
-  const newsList = onlyNew ? newNews : news, updList = onlyNew ? newUpd : upd;
-  const list = kind === 'news' ? newsList : kind === 'updates' ? updList : [];
+  const list = kind === 'news' ? news : upd;
   return (
     <>
       <RolesNav role={role} onRole={onRole} />
@@ -1964,7 +1963,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
           </div>
           <div className="role-kind" role="tablist" aria-label="추천 종류">
         <button role="tab" aria-selected={kind === 'news'} className={`chip subcat ${kind === 'news' ? 'active' : ''}`} onClick={() => setKind('news')}>
-          뉴스 <span className="count">{articlesReady ? newsList.length : '…'}</span>
+          뉴스 <span className="count">{articlesReady ? news.length : '…'}</span>
         </button>
         <button role="tab" aria-selected={kind === 'updates'} className={`chip subcat ${kind === 'updates' ? 'active' : ''}`} onClick={() => setKind('updates')}>
           업데이트 <span className="count">{updReady ? upd.length : '…'}</span>
