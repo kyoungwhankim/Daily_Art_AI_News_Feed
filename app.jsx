@@ -1824,7 +1824,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
 function App() {
   const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
-  const accent = '#0c82c2';
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
@@ -1938,7 +1937,6 @@ function App() {
   // theme
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document.documentElement.style.setProperty('--accent', accent);
     localStorage.setItem('aiad:theme', theme);
   }, [theme]);
 
