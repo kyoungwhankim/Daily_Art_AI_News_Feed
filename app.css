@@ -1888,3 +1888,51 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 
 .side-me-role { margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); }
 .side-me.active .side-me-role { background: var(--card); }
+
+/* ---------- 저장 · 덜 보기 · 지난 방문 이후 새 소식 ---------- */
+.save-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  font: inherit; font-size: 12px; font-weight: 700; cursor: pointer;
+  color: var(--ink-2); background: var(--card);
+  border: 1.5px solid var(--hairline); border-radius: 999px; padding: 3px 9px;
+}
+.save-btn:hover { color: var(--accent-strong); border-color: var(--accent); }
+.save-btn.on { color: var(--accent-strong); border-color: var(--accent); background: var(--accent-soft, var(--paper-2)); }
+.save-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.save-overlay {
+  position: absolute; top: 10px; right: 10px; z-index: 1;
+  width: 32px; height: 32px; padding: 0;
+  border: 1.5px solid var(--stroke); box-shadow: var(--shadow-pop-sm);
+}
+.save-overlay.on { background: var(--accent); color: #fff; border-color: var(--stroke); }
+.update-head .save-btn { margin-left: auto; }
+.modal-actions { order: 99; margin-left: auto; display: inline-flex; gap: 6px; }
+.modal-actions .modal-copy { margin-left: 0; }
+.modal-actions .save-btn { font-size: 13px; padding: 6px 12px; border: 1.5px solid var(--stroke); color: var(--ink); }
+.modal-actions .save-btn.on { color: var(--accent-strong); }
+
+.update-new {
+  font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em;
+  color: var(--card); background: var(--new); padding: 1px 7px; border-radius: 999px;
+}
+.mute-link {
+  margin-left: 14px; font: inherit; font-size: 12.5px; color: var(--muted);
+  background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.mute-link:hover, .mute-link.on { color: var(--ink-2); }
+
+.modal-mute { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -10px 0 20px; }
+.modal-mute-label { font-size: 12px; font-weight: 700; color: var(--muted); margin-right: 2px; }
+.modal-mute-btn {
+  font: inherit; font-size: 12px; cursor: pointer; color: var(--muted);
+  padding: 2px 9px; border-radius: 999px; border: 1.5px dashed var(--hairline); background: transparent;
+}
+.modal-mute-btn:hover { color: var(--ink-2); border-color: var(--muted); }
+.modal-mute-btn.on { color: var(--ink-2); border-style: solid; background: var(--paper-2); text-decoration: line-through; }
+
+.mf-new { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 12px; font-size: 13.5px; color: var(--ink-2); }
+.mf-new b { color: var(--accent-strong); }
+.mf-new .chip { padding: 4px 12px; font-size: 13px; }
+.mf-saved-h { font-size: 16px; margin: 8px 0 14px; }
+.mf-saved-h span { font-size: 13px; color: var(--muted); font-weight: 600; margin-left: 4px; }
+.mf-saved-h:not(:first-child) { margin-top: 32px; }
