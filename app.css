@@ -1641,22 +1641,26 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .bx { margin: 0 0 38px; border: 2px solid var(--stroke); border-radius: 22px; overflow: hidden; background: var(--card);
   box-shadow: 0 4px 0 var(--stroke); }
 .bx-band {
-  position: relative; overflow: hidden; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px;
-  padding: 22px 26px 20px; color: #fff8ec;
+  position: relative; overflow: hidden; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding: 22px 26px 22px; min-height: 196px; color: #fff8ec;
   background:
     radial-gradient(circle at 1px 1px, rgba(255,248,236,.13) 1px, transparent 0) 0 0 / 12px 12px,
     linear-gradient(120deg, #3b2424 0%, #553333 55%, color-mix(in oklab, #553333 70%, var(--accent)) 100%);
 }
-.bx-rings { position: absolute; right: -40px; top: 50%; width: 260px; height: 260px; transform: translateY(-50%);
+.bx-art { position: relative; flex: none; pointer-events: none; width: 300px; height: auto; margin: -10px -6px -14px 0; filter: drop-shadow(0 6px 0 rgba(0,0,0,.25));
+  animation: bx-float 5s ease-in-out infinite; }
+@keyframes bx-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .bx-art { animation: none; } }
+.bx-rings { position: absolute; right: 60px; top: 50%; width: 300px; height: 300px; transform: translateY(-50%);
   fill: none; stroke: rgba(255,248,236,.14); stroke-width: 10; pointer-events: none; }
-.bx-band-main { position: relative; min-width: 0; }
+.bx-band-main { position: relative; z-index: 1; min-width: 0; }
 .bx-eyebrow { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; font-weight: 700;
   letter-spacing: .12em; color: rgba(255,248,236,.8); }
 .bx-eyebrow i { font-style: normal; opacity: .5; }
 .bx-role { margin: 6px 0 4px; font-size: 34px; line-height: 1.1; font-weight: 900; letter-spacing: -0.02em; color: #fff8ec; }
 .bx-band-sub { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: rgba(255,248,236,.85); }
 .bx-new { font-size: 12px; font-weight: 800; padding: 2px 10px; border-radius: 999px; background: var(--accent); color: #fff; }
-.bx-band-actions { position: relative; display: flex; align-items: center; gap: 10px; flex: none; }
+.bx-band-actions { position: relative; display: flex; align-items: center; gap: 10px; margin-top: 16px; }
 .bx-ghost, .bx-cta { font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; border-radius: 999px; padding: 8px 14px; white-space: nowrap;
   transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease; }
 .bx-ghost { background: transparent; color: #fff8ec; border: 1.5px solid rgba(255,248,236,.45); }
@@ -1723,11 +1727,13 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 @media (max-width: 640px) {
   .bx { border-radius: 18px; margin-bottom: 28px; }
-  .bx-band { flex-direction: column; align-items: flex-start; padding: 18px 18px 16px; }
-  .bx-rings { width: 180px; height: 180px; right: -50px; top: 40%; }
-  .bx-role { font-size: 27px; }
-  .bx-band-actions { width: 100%; }
-  .bx-cta { margin-left: auto; }
+  .bx-band { padding: 18px 18px 16px; min-height: 0; }
+  .bx-rings { width: 200px; height: 200px; right: -60px; top: 34%; }
+  .bx-art { position: absolute; right: -16px; top: 38px; width: 140px; margin: 0; opacity: .95; }
+  .bx-band-main { width: 100%; }
+  .bx-role { font-size: 27px; max-width: 62%; }
+  .bx-band-sub { max-width: 62%; }
+  .bx-band-actions { margin-top: 14px; }
   .bx-stat { padding: 10px 14px; flex: 1 1 30%; }
   .bx-stat b { font-size: 18px; }
   .bx-stat-svc b { font-size: 14px; }

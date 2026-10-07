@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke="#2a1717" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="160" cy="100" r="88" fill="#fff3dc" fill-opacity=".10" stroke="none"/>
+<path d="M98 112V96a62 62 0 0 1 124 0v16" stroke-width="10"/>
+<path d="M98 112V96a62 62 0 0 1 124 0v16" stroke="#8f7ad8" stroke-width="4"/>
+<rect x="80" y="104" width="34" height="56" rx="14" fill="#c2410c"/><rect x="206" y="104" width="34" height="56" rx="14" fill="#c2410c"/>
+<rect x="90" y="114" width="10" height="36" rx="5" fill="#f08a3c" stroke="none"/><rect x="216" y="114" width="10" height="36" rx="5" fill="#f08a3c" stroke="none"/>
+<g stroke="#ffd36b" stroke-width="6"><path d="M136 124v20M150 110v48M164 118v32M178 104v60"/></g>
+<g stroke="#fff3dc" stroke-width="6"><path d="M28 132v10M44 120v34M60 128v18M260 128v18M276 116v42M292 130v14"/></g>
+<path d="M44 50v34" stroke="#fff3dc"/><ellipse cx="36" cy="86" rx="10" ry="7" fill="#ffd36b"/><path d="M44 50l20 6v12" stroke="#fff3dc"/>
+<path d="M268 40v30M290 34v30M268 40l22-6" stroke="#fff3dc"/><ellipse cx="260" cy="72" rx="9" ry="6" fill="#6aa8e8"/><ellipse cx="282" cy="66" rx="9" ry="6" fill="#6aa8e8"/>
+</svg>

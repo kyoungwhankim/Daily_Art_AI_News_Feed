@@ -902,11 +902,12 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
             오늘의 브리핑
             {newCount > 0 && <span className="bx-new">지난 방문 이후 새 소식 {newCount}건</span>}
           </p>
+          <div className="bx-band-actions">
+            <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
+            <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+          </div>
         </div>
-        <div className="bx-band-actions">
-          <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
-          <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
-        </div>
+        <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />
       </div>
       {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
 
