@@ -861,7 +861,6 @@ function useNewSince(roleId, ids, ready) {
 }
 
 // 메인 맨 위 "오늘의 ○○ 브리핑"
-const BRIEF_N = 5;
 function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, onChange }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const news = useMemo(() => roleArticles(role, articles), [role, articles]);
@@ -872,66 +871,115 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
   const fresh = useNewSince(role.id, ids, articles.length > 0 && updReady);
   const [changing, setChanging] = useState(false);
   const newCount = fresh.size;
+  const why = a => articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label);
+  // 이번 주 흐름: 최근 7일 뉴스·업데이트 수, 가장 활발한 서비스, 자주 걸린 키워드
+  const pulse = useMemo(() => {
+    const weekNews = news.filter(a => daysAgo(a.publishedAt) <= 6);
+    const weekUpd = upd.filter(u => !u.dateMonthOnly && daysAgo(u.date) <= 6);
+    const svc = {};
+    upd.filter(u => !u.dateMonthOnly && daysAgo(u.date) <= 13).forEach(u => { svc[u.company.name] = (svc[u.company.name] || 0) + 1; });
+    const busiest = Object.entries(svc).sort((x, y) => y[1] - x[1])[0] || null;
+    const kw = {};
+    news.slice(0, 30).forEach(a => why(a).forEach(t => { kw[t] = (kw[t] || 0) + 1; }));
+    upd.slice(0, 30).forEach(u => (updateRoleReasons(role, u) || []).forEach(t => { if (t !== u.company.name) kw[t] = (kw[t] || 0) + 1; }));
+    const keywords = Object.entries(kw).filter(([t]) => t !== role.short && t !== role.label)
+      .sort((x, y) => y[1] - x[1]).slice(0, 6);
+    return { weekNews: weekNews.length, weekUpd: weekUpd.length, busiest, keywords };
+  }, [news, upd, role]);   // eslint-disable-line
+  const lead = news[0];
+  const rest = news.slice(1, 5);
+  const today = `${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   return (
-    <section className="brief" aria-label={`${role.label} 브리핑`}>
-      <div className="brief-head">
-        <div>
-          <span className="brief-eyebrow"><TargetIcon size={12} /> 아티스트 브리핑</span>
-          <h2 className="brief-title">오늘의 {role.label} 브리핑</h2>
-          <p className="brief-sub">
-            {newCount > 0 ? <b className="brief-new">지난 방문 이후 새 소식 {newCount}건</b> : '관련 뉴스와 업데이트를 최신순으로 골랐어요'}
-            <span> · 뉴스 {news.length} · 업데이트 {updReady ? upd.length : '…'}</span>
+    <section className="bx" aria-label={`${role.label} 브리핑`}>
+      <div className="bx-band">
+        <svg className="bx-rings" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="96" /><circle cx="100" cy="100" r="70" /><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="18" />
+        </svg>
+        <div className="bx-band-main">
+          <span className="bx-eyebrow"><TargetIcon size={12} /> ARTIST BRIEFING <i>·</i> {today}</span>
+          <h2 className="bx-role">{role.label}</h2>
+          <p className="bx-band-sub">
+            오늘의 브리핑
+            {newCount > 0 && <span className="bx-new">지난 방문 이후 새 소식 {newCount}건</span>}
           </p>
         </div>
-        <div className="brief-actions">
-          <button type="button" className="brief-link muted" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
-          <button type="button" className="hm-more" onClick={onAll}>브리핑 전체 보기 →</button>
+        <div className="bx-band-actions">
+          <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+          <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
         </div>
       </div>
-      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="brief-change" />}
-      <div className="brief-cols">
-        <div className="brief-col">
-          <h3 className="brief-col-head">뉴스</h3>
-          {news.length === 0 ? <p className="brief-empty">아직 관련 뉴스가 없어요.</p> : (
-            <ol className="brief-list">
-              {news.slice(0, BRIEF_N).map(a => (
-                <li key={a.id}>
-                  <button type="button" className="brief-item brief-item-thumb" onClick={() => onOpenArticle(a)}>
-                    <span className="brief-item-text">
-                      <span className="brief-item-top">
-                        {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
-                        <span className="brief-why">{articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label).slice(0, 2).join(' · ')}</span>
-                      </span>
-                      <span className="brief-item-title">{a.headline}</span>
-                      <span className="hm-meta">{a.source} · {a.publishedAt}</span>
+      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
+
+      <div className="bx-pulse">
+        <div className="bx-stat"><b>{pulse.weekNews}</b><span>이번 주 뉴스</span></div>
+        <div className="bx-stat"><b>{updReady ? pulse.weekUpd : '…'}</b><span>이번 주 업데이트</span></div>
+        <div className="bx-stat bx-stat-svc"><b>{pulse.busiest ? pulse.busiest[0] : '—'}</b><span>요즘 가장 활발한 서비스</span></div>
+        {pulse.keywords.length > 0 && (
+          <div className="bx-kw">
+            <span className="bx-kw-label">자주 보이는 키워드</span>
+            <span className="bx-kw-list">
+              {pulse.keywords.map(([t, n]) => <span key={t} className="bx-kw-chip">#{t}<i>{n}</i></span>)}
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="bx-body">
+        {lead ? (
+          <button type="button" className="bx-lead" onClick={() => onOpenArticle(lead)}>
+            <span className="bx-lead-img">
+              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+              {fresh.has('a:' + lead.id) && <span className="brief-dot bx-lead-new">NEW</span>}
+            </span>
+            <span className="bx-lead-body">
+              <span className="bx-why">{why(lead).slice(0, 3).map(t => <span key={t}>#{t}</span>)}</span>
+              <span className="bx-lead-title">{lead.headline}</span>
+              <span className="bx-lead-summary">{lead.summary}</span>
+              <span className="hm-meta">{lead.source} · {lead.publishedAt}</span>
+            </span>
+          </button>
+        ) : <p className="brief-empty">아직 관련 뉴스가 없어요.</p>}
+        {rest.length > 0 && (
+          <ol className="bx-list">
+            {rest.map((a, i) => (
+              <li key={a.id}>
+                <button type="button" className="bx-item" onClick={() => onOpenArticle(a)}>
+                  <span className="bx-num">{String(i + 2).padStart(2, '0')}</span>
+                  <span className="bx-item-text">
+                    <span className="bx-item-top">
+                      {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
+                      <span className="brief-why">{why(a).slice(0, 2).join(' · ')}</span>
                     </span>
-                    <span className="hm-row-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
-                  </button>
-                </li>
-              ))}
-            </ol>
-          )}
-        </div>
-        <div className="brief-col">
-          <h3 className="brief-col-head">AI 서비스 업데이트</h3>
-          {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
-            <ol className="brief-list">
-              {upd.slice(0, BRIEF_N).map(u => (
-                <li key={u.id}>
-                  <button type="button" className="brief-item" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
-                    <span className="brief-item-top">
-                      {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
-                      <span className="hm-upd-service">{u.company.name}</span>
-                      <span className="update-cat">{u.kind}</span>
-                    </span>
-                    <span className="brief-item-title">{u.title}</span>
-                    {!u.dateMonthOnly && <span className="hm-meta">{u.date}</span>}
-                  </button>
-                </li>
-              ))}
-            </ol>
-          )}
-        </div>
+                    <span className="bx-item-title">{a.headline}</span>
+                    <span className="hm-meta">{a.source} · {a.publishedAt}</span>
+                  </span>
+                  <span className="bx-item-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
+      </div>
+
+      <div className="bx-log">
+        <h3 className="bx-log-head">업데이트 로그 <span>{role.short || role.label}에 쓰는 AI 서비스 소식</span></h3>
+        {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
+          <ol className="bx-log-list">
+            {upd.slice(0, 6).map(u => (
+              <li key={u.id}>
+                <button type="button" className="bx-log-item" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
+                  <span className="bx-log-top">
+                    <span className="bx-log-svc">{u.company.name}</span>
+                    <span className="update-cat">{u.kind}</span>
+                    {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
+                  </span>
+                  <span className="bx-log-title">{u.title}</span>
+                  <span className="hm-meta">{u.dateMonthOnly ? u.date.slice(0, 7) : u.date}</span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
       </div>
     </section>
   );
