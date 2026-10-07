@@ -1086,6 +1086,11 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
   const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
 
   return (
+    <>
+    {/* 관심사 수정 팝업은 .hm 밖에 둔다 (.hm 버튼 초기화 스타일이 팝업 버튼에 걸리지 않게) */}
+    {editingFeed && feedProfile && (
+      <ProfileModal profile={feedProfile} keywordTabs={keywordTabs} onSave={onSaveProfile} onClose={() => setEditingFeed(false)} />
+    )}
     <div className="home hm">
       <div className="hm-masthead">
         <span className="hm-date">{today}</span>
@@ -1101,9 +1106,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
       ) : !roleState.asked && (
         <RolePrompt onPick={roleState.setMyRole} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
       ))}
-      {editingFeed && feedProfile && (
-        <ProfileModal profile={feedProfile} keywordTabs={keywordTabs} onSave={onSaveProfile} onClose={() => setEditingFeed(false)} />
-      )}
+
 
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
@@ -1214,6 +1217,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         </div>
       </section>
     </div>
+    </>
   );
 }
 
