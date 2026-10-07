@@ -42,3 +42,10 @@ language sql security definer set search_path = '' as $$
 $$;
 revoke all on function public.delete_my_account() from public, anon;
 grant execute on function public.delete_my_account() to authenticated;
+
+-- 5) 깨우기용 함수 (.github/workflows/supabase-keepalive.yml이 주 2회 부른다)
+--    무료 플랜은 7일 동안 활동이 없으면 프로젝트가 일시정지된다. 회원 데이터는 건드리지 않고 1만 돌려준다.
+create or replace function public.keep_alive() returns int
+language sql stable set search_path = '' as $$ select 1 $$;
+revoke all on function public.keep_alive() from public;
+grant execute on function public.keep_alive() to anon, authenticated;

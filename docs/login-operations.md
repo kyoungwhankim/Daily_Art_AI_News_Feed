@@ -60,7 +60,12 @@ AI Art Daily의 로그인(Google)과 나만의 피드를 운영하면서 알아 
 ### ⚠️ 7일 일시정지 (무료 플랜에서 가장 먼저 겪을 수 있는 문제)
 - 무료 프로젝트는 일주일 동안 사용이 없으면 자동으로 **일시정지(paused)** 된다. 멈추면 로그인과 나만의 피드가 동작하지 않는다(뉴스·업데이트는 그대로 보인다).
 - 대처: Supabase 대시보드에서 프로젝트를 열고 **Restore project**를 누르면 몇 분 뒤 다시 켜진다. 데이터는 그대로 남아 있다.
-- 예방: 회원이 꾸준히 로그인하면 멈추지 않는다. 초기에 방문자가 적다면 GitHub Actions로 일주일에 한두 번 Supabase에 간단한 요청을 보내 깨워 두는 방법이 있다(필요하면 Claude에게 "Supabase 깨우기 워크플로 추가해줘"라고 요청).
+- 예방: GitHub Actions 작업 **Supabase keep-alive**(`.github/workflows/supabase-keepalive.yml`)가 월·목요일 아침에 자동으로 돈다.
+  - `keep_alive()` 함수(`supabase/schema.sql` 5번)를 불러 데이터베이스에 활동을 남긴다. 회원 데이터는 건드리지 않는다.
+  - 함께 로그인 서버 상태, Google 로그인 켜짐 여부, 배포된 `config.js`의 Supabase 설정을 확인한다 (`scripts/check_supabase.py`).
+  - 실패하면 GitHub 알림 메일이 오고 레포에 **"Supabase 점검 실패"** 이슈가 열린다. 다시 성공하면 이슈가 자동으로 닫힌다.
+  - 공개 키만 쓰므로 Secret은 필요 없다. Actions 탭 → Supabase keep-alive → **Run workflow**로 바로 돌려 볼 수 있다.
+  - 이미 멈춘 프로젝트를 되살리지는 못한다(무료 플랜은 대시보드에서 직접 Restore). 빨리 알아채는 게 목적이다.
 - Pro 플랜은 일시정지가 없다.
 
 ### 업그레이드(Pro) 를 고려할 때
@@ -171,6 +176,7 @@ select date(created_at) as 날짜, count(*) from auth.users group by 1 order by 
 
 | 증상 | 확인할 곳 |
 |---|---|
+| "Supabase 점검 실패" 이슈가 열림 | 이슈 안의 로그에서 FAIL 줄 확인. 대부분 일시정지 → 대시보드에서 Restore project. `keep_alive` 404면 schema.sql 5번을 다시 실행 |
 | 로그인 버튼이 안 보임 | `config.js`의 `supabaseUrl`·`supabaseAnonKey`가 비어 있지 않은지 |
 | 로그인 누르면 오류 / 아무 일도 없음 | Supabase 프로젝트가 **일시정지**됐는지(대시보드 첫 화면), Providers → Google이 켜져 있는지 |
 | Google 화면에 `redirect_uri_mismatch` | Google Cloud 클라이언트의 승인된 리디렉션 URI가 `https://abablvgtlhuvwdpxvoyu.supabase.co/auth/v1/callback`과 정확히 같은지 |
@@ -187,7 +193,7 @@ select date(created_at) as 날짜, count(*) from auth.users group by 1 order by 
 ## 9. 정기 점검 (한 달에 한 번, 5분)
 
 - [ ] Supabase **Usage**: MAU, DB 크기, egress가 한도의 80%를 넘지 않았는지
-- [ ] Supabase 프로젝트가 일시정지되지 않았는지
+- [ ] Actions 탭에서 Supabase keep-alive 작업이 계속 성공하고 있는지 (GitHub은 레포에 60일 동안 활동이 없으면 정해진 시간 작업을 끈다 — 꺼졌으면 Actions 탭에서 다시 켠다)
 - [ ] `profiles` CSV 백업 (무료 플랜일 때)
 - [ ] Authentication → Users에서 이상하게 많은 가입(스팸)이 없는지
 - [ ] 위 4장의 통계 쿼리로 인기 주제·서비스·직접 키워드 확인 → 서브 카테고리·업데이트 서비스 추가 아이디어로 활용
