@@ -1843,7 +1843,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .account-danger { color: #b54848 !important; }
 
 /* 설정 페이지 (/settings/) */
-.settings { max-width: 900px; margin-left: 0; display: flex; flex-direction: column; gap: 18px; }
+.settings { display: flex; flex-direction: column; gap: 18px; }   /* 폭·가운데 정렬은 .feed와 같게 (머리 띠와 같은 선) */
 .st-card { background: var(--card); border: 2px solid var(--stroke); border-radius: 18px; padding: 20px 22px; }
 .st-card h2 { margin: 0 0 12px; font-size: 18px; font-weight: 800; }
 .st-card h2 span { font-size: 12.5px; font-weight: 500; color: var(--muted); margin-left: 6px; }
