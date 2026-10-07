@@ -64,7 +64,7 @@
 html, body { margin: 0; padding: 0; }
 html { background: var(--paper); }
 body {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   background: var(--paper);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -125,7 +125,7 @@ html::before {
   transform: rotate(-8deg) scale(1.06);
 }
 .brand-name {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -168,7 +168,7 @@ html::before {
   font-family: inherit; font-size: 13px; color: var(--ink);
 }
 .search input::placeholder { color: var(--muted-2); }
-.kbd {
+.kbd { white-space: nowrap;
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   font-size: 10px;
@@ -310,7 +310,7 @@ html::before {
   width: 100%;
 }
 .feed-title {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -517,7 +517,7 @@ html::before {
   border-radius: 50%;
   background: var(--kraft-soft);
   border: 1.5px solid var(--stroke);
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 11px; font-weight: 700;
   display: grid; place-items: center;
   color: var(--ink);
@@ -545,12 +545,12 @@ mark {
   border: 1.5px dashed var(--hairline-strong);
   border-radius: 50%;
   display: grid; place-items: center;
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 30px;
   color: var(--muted-2);
 }
 .empty h3 {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 22px; font-weight: 500;
   color: var(--ink);
   margin: 0 0 8px;
@@ -657,7 +657,7 @@ mark {
   font-weight: 700;
 }
 .modal-headline {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
@@ -716,7 +716,7 @@ mark {
 }
 .modal-article p { margin: 0 0 20px; }
 .modal-article h3 {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 21px;
   font-weight: 600;
   color: var(--ink);
@@ -727,7 +727,7 @@ mark {
   margin: 28px 0;
   padding: 6px 0 6px 24px;
   border-left: 4px solid var(--accent);
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 19px;
   line-height: 1.55;
   font-style: italic;
@@ -788,7 +788,7 @@ mark {
   border-bottom: 1.5px dashed var(--hairline);
 }
 .date-label {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.015em;
@@ -840,7 +840,7 @@ mark {
 }
 .grid.today-grid .card.feature .thumb { aspect-ratio: 4 / 3; }
 .grid.today-grid .card.feature .card-headline {
-  font-family: "Pretendard", "Pretendard Variable", -apple-system, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
@@ -1764,3 +1764,16 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 /* 다크 모드: 브리핑 머리 띠 글자도 너무 하얗지 않게 */
 [data-theme="dark"] .bx-role { color: #dbe3e8; }
 [data-theme="dark"] .bx-cta { background: #d5dde2; border-color: #d5dde2; }
+
+/* 글꼴 비교 (미리보기 사이트 전용) */
+.font-picker { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 10px 0 12px;
+  border: 2px solid var(--stroke); border-radius: 999px; background: var(--card); color: var(--ink); }
+.font-picker span { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.font-picker select { border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 13px; font-weight: 700;
+  cursor: pointer; max-width: 150px; outline: none; }
+.font-picker select option { background: var(--card); color: var(--ink); }
+@media (max-width: 640px) {
+  .font-picker { height: 40px; padding: 0 6px 0 8px; }
+  .font-picker span { display: none; }
+  .font-picker select { max-width: 92px; font-size: 12px; }
+}

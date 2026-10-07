@@ -367,6 +367,54 @@ function AccountButton({ auth }) {
   );
 }
 
+/* ---------- 글꼴 비교 (미리보기 사이트·로컬에서만 보이는 임시 도구) ---------- */
+// 고르면 사이트 전체 글꼴(--font-sans·--font-mono)을 바꾸고 이 브라우저에 기억한다. 최종 글꼴을 정하면 지운다.
+const FONT_OPTIONS = [
+  { id: 'pretendard', label: 'Pretendard (현재)', family: '"Pretendard", "Pretendard Variable"' },
+  { id: 'plex', label: 'IBM Plex Sans KR', family: '"IBM Plex Sans KR"',
+    css: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap' },
+  { id: 'nanumsquareneo', label: '나눔스퀘어 네오', family: '"NanumSquareNeo"',
+    css: 'https://cdn.jsdelivr.net/gh/moonspam/NanumSquareNeo@1.0/nanumsquareneo.css' },
+  { id: 'suit', label: 'SUIT', family: '"SUIT"',
+    css: 'https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css' },
+  { id: 'wanted', label: 'Wanted Sans', family: '"Wanted Sans Variable"',
+    css: 'https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css' },
+  { id: 'spoqa', label: '스포카 한 산스 Neo', family: '"Spoqa Han Sans Neo"',
+    css: 'https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/css/SpoqaHanSansNeo.css' },
+  { id: 'noto', label: 'Noto Sans KR', family: '"Noto Sans KR"',
+    css: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap' },
+  { id: 'd2coding', label: 'D2Coding (고정폭)', family: '"D2 coding"',
+    css: 'https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css' },
+];
+const FONT_PICKER_ON = /^(preview\.|localhost|127\.)/.test(window.location.hostname) || /[?&]fonts=1/.test(window.location.search);
+function applyFont(id) {
+  const f = FONT_OPTIONS.find(x => x.id === id) || FONT_OPTIONS[0];
+  if (f.css && !document.querySelector(`link[data-font="${f.id}"]`)) {
+    const l = document.createElement('link');
+    l.rel = 'stylesheet'; l.href = f.css; l.dataset.font = f.id;
+    document.head.appendChild(l);
+  }
+  const stack = `${f.family}, "Pretendard", -apple-system, system-ui, sans-serif`;
+  document.documentElement.style.setProperty('--font-sans', stack);
+  document.documentElement.style.setProperty('--font-mono', stack);
+}
+function FontPicker() {
+  const [id, setId] = useState(() => { try { return localStorage.getItem('aiad:font-preview') || 'pretendard'; } catch (e) { return 'pretendard'; } });
+  useEffect(() => {
+    if (!FONT_PICKER_ON) return;
+    applyFont(id); try { localStorage.setItem('aiad:font-preview', id); } catch (e) {}
+  }, [id]);
+  if (!FONT_PICKER_ON) return null;
+  return (
+    <label className="font-picker" title="글꼴 비교 (미리보기 전용)">
+      <span>글꼴</span>
+      <select value={id} onChange={e => setId(e.target.value)}>
+        {FONT_OPTIONS.map(f => <option key={f.id} value={f.id}>{f.label}</option>)}
+      </select>
+    </label>
+  );
+}
+
 /* ---------- header ---------- */
 function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth }) {
   const inputRef = useRef(null);
@@ -429,6 +477,7 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
               </svg>
             </button>
           )}
+          <FontPicker />
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
