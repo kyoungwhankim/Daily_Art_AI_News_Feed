@@ -429,7 +429,6 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
               </svg>
             </button>
           )}
-          <RolePicker />
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -863,7 +862,7 @@ function useNewSince(roleId, ids, ready) {
 
 // 메인 맨 위 "오늘의 ○○ 브리핑"
 const BRIEF_N = 5;
-function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, onChange }) {
+function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, showHint, onHintClose }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const news = useMemo(() => roleArticles(role, articles), [role, articles]);
   const upd = useMemo(() => roleUpdates(role, allUpd), [role, allUpd]);
@@ -871,7 +870,6 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
   const ids = useMemo(() => [...news.slice(0, SEEN_N).map(a => 'a:' + a.id), ...upd.slice(0, SEEN_N).map(u => 'u:' + u.id)],
     [news, upd]);
   const fresh = useNewSince(role.id, ids, articles.length > 0 && updReady);
-  const [changing, setChanging] = useState(false);
   const newCount = fresh.size;
   return (
     <section className="brief" aria-label={`${role.label} 브리핑`}>
@@ -885,11 +883,15 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
           </p>
         </div>
         <div className="brief-actions">
-          <button type="button" className="brief-link muted" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
           <button type="button" className="hm-more" onClick={onAll}>브리핑 전체 보기 →</button>
         </div>
       </div>
-      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="brief-change" />}
+      {showHint && (
+        <div className="brief-hint">
+          <span>직군은 언제든 사이드바(모바일은 ☰ 메뉴) <b>아티스트 브리핑</b> 아래 <b>내 직군</b>에서 바꿀 수 있어요.</span>
+          <button type="button" className="brief-hint-close" aria-label="안내 닫기" onClick={onHintClose}>✕</button>
+        </div>
+      )}
       <div className="brief-cols">
         <div className="brief-col">
           <h3 className="brief-col-head">뉴스</h3>
@@ -961,9 +963,10 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
 
       {ROLES.length > 0 && (roleState.myRole ? (
         <BriefingSection role={ROLE_BY_ID[roleState.myRole]} articles={sorted} onOpenArticle={onOpenArticle}
-          onOpenUpdate={onOpenUpdate} onAll={() => onRole(roleState.myRole)} onChange={roleState.setMyRole} />
+          onOpenUpdate={onOpenUpdate} onAll={() => onRole(roleState.myRole)}
+          showHint={roleState.justPicked} onHintClose={() => roleState.setJustPicked(false)} />
       ) : !roleState.asked && (
-        <RolePrompt onPick={roleState.setMyRole} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
+        <RolePrompt onPick={id => { roleState.setMyRole(id); roleState.setJustPicked(true); }} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
       ))}
 
       {lead && (
@@ -1189,6 +1192,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 </span>
                 <svg className="side-brief-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
               </button>
+              <SideRoleSelect onPicked={id => { if (section === 'roles') onRole(id); }} />
             </div>
           )}
           <div className="side-group">
@@ -1568,9 +1572,10 @@ function useMyRole() {
   const [asked, setAskedState] = useState(() => !!readLS(ROLE_ASKED_KEY));
   const setMyRole = id => { setMyRoleState(id || null); writeLS(ROLE_KEY, id || null); writeLS(ROLE_ASKED_KEY, '1'); setAskedState(true); };
   const dismiss = () => { writeLS(ROLE_ASKED_KEY, '1'); setAskedState(true); };
-  return { myRole, setMyRole, asked, dismiss };
+  const [justPicked, setJustPicked] = useState(false);   // 첫 방문 카드에서 막 고름 → 바꾸는 곳 안내를 한 번 보여 준다
+  return { myRole, setMyRole, asked, dismiss, justPicked, setJustPicked };
 }
-const BriefingContext = React.createContext({ myRole: null, setMyRole() {}, openBriefing() {} });
+const BriefingContext = React.createContext({ myRole: null, setMyRole() {} });
 
 // 목록·기사 창에 붙는 "왜 추천됐는지" 표시 (내 직군과 맞을 때만)
 function RoleTag({ article, update, compact }) {
@@ -1610,41 +1615,24 @@ function RoleChoices({ value, onPick, className }) {
   );
 }
 
-// 헤더의 내 직군 표시 + 메뉴
-function RolePicker() {
-  const { myRole, setMyRole, openBriefing } = React.useContext(BriefingContext);
+// 사이드바 '아티스트 브리핑' 버튼 아래 — 내 직군을 정하는 유일한 곳 (첫 방문 질문 카드 빼고)
+function SideRoleSelect({ onPicked }) {
+  const { myRole, setMyRole } = React.useContext(BriefingContext);
   const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-  useEffect(() => {
-    if (!open) return;
-    const onDown = e => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
-    const onKey = e => { if (e.key === 'Escape') setOpen(false); };
-    document.addEventListener('mousedown', onDown); document.addEventListener('touchstart', onDown);
-    document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('mousedown', onDown); document.removeEventListener('touchstart', onDown); document.removeEventListener('keydown', onKey); };
-  }, [open]);
-  if (!ROLES.length) return null;
   const role = myRole && ROLE_BY_ID[myRole];
   return (
-    <div className="role-picker" ref={ref}>
-      <button type="button" className={`role-pill ${role ? 'set' : ''}`} aria-haspopup="dialog" aria-expanded={open}
-        title="아티스트 브리핑 — 내 직군" onClick={() => setOpen(o => !o)}>
-        <TargetIcon size={15} />
-        <span className="role-pill-label">{role ? (role.short || role.label) : '내 직군'}</span>
-        <svg className="role-pill-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6"><path d="m6 9 6 6 6-6" /></svg>
+    <div className={`side-role ${open ? 'open' : ''}`}>
+      <button type="button" className="side-role-toggle" aria-expanded={open} onClick={() => setOpen(o => !o)}>
+        <span className="side-role-label">내 직군</span>
+        <span className={`side-role-value ${role ? '' : 'empty'}`}>{role ? role.label : '선택하기'}</span>
+        <svg className={`side-caret ${open ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
       </button>
       {open && (
-        <div className="role-menu" role="dialog" aria-label="내 직군 고르기">
-          <div className="role-menu-head">
-            <strong>아티스트 브리핑</strong>
-            <span>직군을 고르면 사이트 곳곳에서 관련 소식을 먼저 골라 드려요.</span>
-          </div>
-          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); }} />
-          <div className="role-menu-foot">
-            {role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(myRole); }}>내 브리핑 보기 →</button>}
-            {role && <button type="button" className="role-menu-link muted" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>}
-            {!role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(null); }}>직군별 브리핑 둘러보기 →</button>}
-          </div>
+        <div className="side-role-panel">
+          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); onPicked(id); }} />
+          {role && (
+            <button type="button" className="side-role-clear" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>
+          )}
         </div>
       )}
     </div>
@@ -1652,6 +1640,7 @@ function RolePicker() {
 }
 
 function RolesNav({ role, onRole }) {
+  const { myRole } = React.useContext(BriefingContext);
   return (
     <nav className="tabs-wrap">
       <div className="tabs-inner">
@@ -1659,7 +1648,10 @@ function RolesNav({ role, onRole }) {
         <div className="tabs">
           <button className={`tab ${!role ? 'active' : ''}`} onClick={() => onRole(null)}>전체 직군</button>
           {ROLES.map(r => (
-            <button key={r.id} className={`tab ${role === r.id ? 'active' : ''}`} onClick={() => onRole(r.id)}>{r.label}</button>
+            <button key={r.id} className={`tab ${role === r.id ? 'active' : ''}`} onClick={() => onRole(r.id)}
+              title={myRole === r.id ? '내 직군' : undefined}>
+              {myRole === r.id && <span className="tab-mine"><TargetIcon size={12} /></span>}{r.label}
+            </button>
           ))}
         </div>
       </div>
@@ -1668,7 +1660,7 @@ function RolesNav({ role, onRole }) {
 }
 
 function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany }) {
-  const { myRole, setMyRole } = React.useContext(BriefingContext);
+  const { myRole } = React.useContext(BriefingContext);
   const r = ROLES.find(x => x.id === role) || null;
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const sortedArticles = useMemo(() => [...articles]
@@ -1692,7 +1684,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
         <div className="feed-meta">
           <div>
             <h1 className="feed-title">아티스트 브리핑</h1>
-            <p className="feed-desc">게임 아트 직군마다 관심 가질 키워드를 미리 골라 두고, 그 키워드가 담긴 뉴스와 AI 서비스 업데이트만 모아 드려요. 내 직군을 정해 두면 메인 화면과 기사 목록에서도 관련 소식을 먼저 알려 드려요.</p>
+            <p className="feed-desc">게임 아트 직군마다 관심 가질 키워드를 미리 골라 두고, 그 키워드가 담긴 뉴스와 AI 서비스 업데이트만 모아 드려요. 사이드바 '아티스트 브리핑' 아래에서 내 직군을 정해 두면 메인 화면과 기사 목록에서도 관련 소식을 먼저 알려 드려요.</p>
           </div>
         </div>
         <main className="feed">
@@ -1723,13 +1715,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
         <div>
           <div className="role-title-row">
             <h1 className="feed-title">{r.label} 브리핑</h1>
-            {myRole === r.id ? (
-              <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
-            ) : (
-              <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
-                <TargetIcon size={13} /> 내 직군으로 설정
-              </button>
-            )}
+            {myRole === r.id && <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>}
           </div>
           <div className="feed-sub">{r.desc}</div>
           <div className="role-terms" aria-label="추천 키워드">
@@ -1956,7 +1942,7 @@ function App() {
   // groupByDate flag
   const groupByDate = true;
 
-  const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole, openBriefing: goRole }),
+  const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole }),
     [roleState.myRole]);   // eslint-disable-line
 
   return (

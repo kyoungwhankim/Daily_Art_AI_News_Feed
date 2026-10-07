@@ -1500,12 +1500,10 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   background: var(--accent); color: var(--card); vertical-align: 3px; }
 .role-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
 .role-title-row .feed-title { margin: 0; }
-.role-set-btn, .role-mine-badge {
-  display: inline-flex; align-items: center; gap: 5px; font: inherit; font-size: 12.5px; font-weight: 700;
+.role-mine-badge {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 700;
   padding: 5px 12px; border-radius: 999px; white-space: nowrap;
 }
-.role-set-btn { border: 1.5px solid var(--accent); background: var(--card); color: var(--accent-strong); cursor: pointer; }
-.role-set-btn:hover { background: var(--accent-soft); }
 .role-mine-badge { background: var(--accent); color: var(--card); border: 1.5px solid var(--accent); }
 
 /* 직군 고르기 칩 */
@@ -1517,33 +1515,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 .role-choice:hover { transform: translateY(-1px); box-shadow: var(--shadow-pop-sm); }
 .role-choice.active { background: var(--accent); border-color: var(--accent); color: var(--card); }
-
-/* 헤더: 내 직군 */
-.role-picker { position: relative; }
-.role-pill {
-  height: 40px; padding: 0 12px; display: inline-flex; align-items: center; gap: 6px;
-  border-radius: 999px; border: 2px solid var(--stroke); background: var(--card); color: var(--ink);
-  font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer; white-space: nowrap;
-  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
-}
-.role-pill:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
-.role-pill.set { background: var(--accent-soft); color: var(--accent-strong); }
-.role-pill-caret { opacity: .6; }
-.role-menu {
-  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; width: min(340px, calc(100vw - 32px));
-  background: var(--card); border: 2px solid var(--stroke); border-radius: 16px; box-shadow: var(--shadow-pop-sm);
-  padding: 16px;
-}
-.role-menu-head { margin-bottom: 12px; }
-.role-menu-head strong { display: block; font-size: 15px; }
-.role-menu-head span { display: block; margin-top: 3px; font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
-.role-menu .role-choice { font-size: 12.5px; padding: 5px 11px; }
-.role-menu-foot { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 10px; border-top: 1.5px solid var(--hairline); }
-.role-menu-link, .brief-link {
-  font: inherit; font-size: 13px; font-weight: 700; color: var(--accent-strong); background: none; border: 0; padding: 0; cursor: pointer;
-}
-.role-menu-link:hover, .brief-link:hover { text-decoration: underline; }
-.role-menu-link.muted, .brief-link.muted { color: var(--muted) !important; font-weight: 500; }
 
 /* 추천 이유 표시 */
 .role-tag {
@@ -1583,7 +1554,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .brief-sub { margin: 0; font-size: 13px; color: var(--ink-2); }
 .brief-new { color: var(--accent-strong); }
 .brief-actions { display: flex; align-items: center; gap: 16px; white-space: nowrap; padding-top: 4px; }
-.brief-change { margin-top: 14px; }
 .brief-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 16px; }
 .brief-col { background: var(--card); border: 1.5px solid var(--stroke); border-radius: 14px; padding: 12px 16px 6px; }
 .brief-col-head { margin: 0 0 4px; font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--muted); }
@@ -1627,15 +1597,33 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   50% { box-shadow: 0 0 0 5px rgba(255,255,255,0); }
 }
 @media (prefers-reduced-motion: reduce) { .side-brief-icon { animation: none; } }
+.side-role { margin-top: 8px; border: 1.5px solid var(--stroke); border-radius: 12px; background: var(--card); overflow: hidden; }
+.side-role-toggle {
+  width: 100%; display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer;
+  background: none; border: 0; font: inherit; color: var(--ink); text-align: left;
+}
+.side-role-label { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.side-role-value { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 800; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.side-role-value.empty { color: var(--accent-strong); text-decoration: underline; text-underline-offset: 3px; }
+.side-role-toggle:hover { background: var(--paper-2); }
+.side-role-panel { padding: 4px 10px 10px; border-top: 1px dashed var(--hairline); }
+.side-role-panel .role-choices { gap: 6px; padding-top: 8px; }
+.side-role-panel .role-choice { font-size: 12px; padding: 4px 10px; border-width: 1.5px; }
+.side-role-clear { margin-top: 8px; background: none; border: 0; padding: 0; font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; }
+.side-role-clear:hover { text-decoration: underline; }
+.tab-mine { display: inline-flex; vertical-align: -1px; margin-right: 4px; color: var(--accent-strong); }
+.brief-hint {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 14px;
+  padding: 9px 12px; border-radius: 10px; background: var(--card); border: 1.5px dashed var(--accent);
+  font-size: 13px; color: var(--ink-2);
+}
+.brief-hint b { color: var(--ink); }
+.hm button.brief-hint-close, .brief-hint-close { flex: none; padding: 2px 6px; color: var(--muted); font-size: 13px; }
 
 @media (max-width: 900px) {
   .brief-cols { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .role-pill { width: 40px; padding: 0; justify-content: center; }
-  .role-pill-label, .role-pill-caret { display: none; }
-  .role-pill.set::after { content: ""; position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
-  .role-pill { position: relative; }
   .brief-prompt, .brief { padding: 16px; border-radius: 16px; margin-bottom: 26px; }
   .brief-prompt h2 { font-size: 19px; }
   .role-choice { font-size: 13px; padding: 6px 12px; }
