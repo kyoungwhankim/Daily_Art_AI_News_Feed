@@ -1801,8 +1801,8 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .sec-band .role-set-btn:hover { background: #fff; }
 .sec-band .role-mine-badge { background: rgba(255,255,255,.16); color: #f2f2f2; border-color: rgba(255,255,255,.4); }
 .feed-meta-band .role-terms { margin-top: 10px; }
-/* 아티스트 브리핑 직군 화면: 사진 윗부분이 보이게 (아래쪽을 자른다) */
-.sec-band.has-photo[data-band^="role:"] { background-position: 0 0, right top; }
+/* 아티스트 브리핑 직군 화면: 사진을 가운데보다 살짝 위 기준으로 */
+.sec-band.has-photo[data-band^="role:"] { background-position: 0 0, right 35%; }
 @media (max-width: 640px) {
-  .sec-band.has-photo[data-band^="role:"] { background-position: 0 0, 75% top; }
+  .sec-band.has-photo[data-band^="role:"] { background-position: 0 0, 75% 35%; }
 }
