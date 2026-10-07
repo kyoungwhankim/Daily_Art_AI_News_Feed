@@ -35,29 +35,29 @@
   --shadow-pop-sm: 0 2px 0 #334955;
 }
 :root[data-theme="dark"] {
-  /* "evening" theme — kept warm, cocoa stays the ink */
-  --paper: #1a242a;
-  --paper-2: #223038;
-  --paper-3: #121a1f;
-  --card: #223038;
+  /* 다크 모드 — 검은 배경, 카드는 아주 어두운 청회색 */
+  --paper: #000000;
+  --paper-2: #11161a;
+  --paper-3: #07090b;
+  --card: #11161a;
   --ink: #ecf3f6;
   --ink-2: #c6d9e3;
   --muted: #8aa8b9;
   --muted-2: #54778a;
-  --hairline: #364d5a;
-  --hairline-strong: #54778a;
-  --stroke: #121a1f;
+  --hairline: #26313a;
+  --hairline-strong: #46596a;
+  --stroke: #2b3743;
   --accent: #4a8db5;
   --accent-strong: #84b0b7;
-  --accent-soft: #304f54;
+  --accent-soft: #1e3338;
   --kraft: #8aa8b9;
-  --kraft-soft: #2c3f49;
+  --kraft-soft: #1c262d;
   --link: #94b0ca;
   --new: #5fa7b2;
   --shadow-md: 0 4px 0 rgba(0,0,0,.5), 0 6px 18px rgba(0,0,0,.3);
   --shadow-lg: 0 6px 0 rgba(0,0,0,.55), 0 18px 36px rgba(0,0,0,.4);
-  --shadow-pop: 0 4px 0 #121a1f;
-  --shadow-pop-sm: 0 2px 0 #121a1f;
+  --shadow-pop: 0 4px 0 #000000;
+  --shadow-pop-sm: 0 2px 0 #000000;
 }
 
 * { box-sizing: border-box; }
