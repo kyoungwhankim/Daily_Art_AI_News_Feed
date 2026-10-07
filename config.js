@@ -86,9 +86,9 @@ window.AIAD = {
   //   news:<탭 id>  — 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스
   //   updates       — 업데이트 전체,  updates:<분야 slug> — 이미지·영상·3D·게임 에셋·모션·음악·음성·도구
   bands: {
-    'news:games': '/icons/bands/news-games.webp', 'news:industry': '', 'news:art': '',
-    'updates': '',
-    'updates:image': '', 'updates:video': '', 'updates:3d': '', 'updates:game-assets': '',
+    'news:games': '/icons/bands/news-games.webp', 'news:industry': '/icons/bands/news-industry.webp', 'news:art': '/icons/bands/news-art.webp',
+    'updates': '/icons/bands/updates.webp',
+    'updates:image': '/icons/bands/updates-image.webp', 'updates:video': '', 'updates:3d': '', 'updates:game-assets': '',
     'updates:motion': '', 'updates:audio': '', 'updates:tools': '',
   },
 
