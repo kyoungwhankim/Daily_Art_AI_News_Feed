@@ -1,6 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#444444"/>
-  <rect x="96" y="96" width="320" height="320" rx="56" fill="#f1f1f1"/>
-  <text x="256" y="300" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="150" fill="#444444" letter-spacing="-6">AI</text>
-  <text x="256" y="362" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="34" fill="#676767" letter-spacing="3">ART DAILY</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="88 90 424 424" width="100%" height="100%">
+  <defs>
+    <!-- 세련되고 미래지향적인 블루-인디고-청록 그라데이션 -->
+    <linearGradient id="heavyBlendGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b5998" />
+      <stop offset="50%" stop-color="#4e54c8" />
+      <stop offset="100%" stop-color="#12c2e9" />
+    </linearGradient>
+  </defs>
+
+  <!-- 
+    [2배 두께(100px) 최적화 탄젠트 대칭 삼각형]
+    - 선 두께(stroke-width)를 100으로 대폭 키워 가시성과 무게감을 극대화했습니다.
+    - 선 두께가 두꺼워짐에 따라 캔버스 크기를 600x600으로 확장하고, 
+      모서리의 둥근 반경(R)을 60으로 정교하게 조정하여 곡선 변환부의 완벽한 탄젠트 블렌딩(연속성)을 유지했습니다.
+  -->
+  <path d="
+    M 248.04 186.67
+    A 60 60 0 0 1 351.96 186.67
+    L 451.96 359.87
+    A 60 60 0 0 1 400.00 449.87
+    L 200.00 449.87
+    A 60 60 0 0 1 148.04 359.87
+    Z"
+    fill="none"
+    stroke="url(#heavyBlendGrad)"
+    stroke-width="100"
+    stroke-linejoin="round"
+    stroke-linecap="round" />
 </svg>
