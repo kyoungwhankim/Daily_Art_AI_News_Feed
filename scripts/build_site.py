@@ -50,7 +50,7 @@ SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한�
 # 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
 PRIVACY_OWNER = '김경환'          # 개인정보 보호책임자 (contact/ 페이지에도 쓴다)
 CONTACT_EMAIL = 'kyoungwhankim.dev@gmail.com'
-PRIVACY_DATE = '2026년 10월 6일'
+PRIVACY_DATE = '2026년 10월 7일'
 TABS = [
     ('games', '게임 제작 속 AI', '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.'),
     ('industry', 'AI 도입 뉴스', '게임 스튜디오들의 AI 도입과 관련된 뉴스들을 매일 업데이트합니다.'),
@@ -625,7 +625,8 @@ def build_privacy() -> str:
     <li><strong>광고 쿠키</strong> — 사이트에 표시되는 Google 애드센스 광고가 쿠키와 기기 식별자를 사용합니다
       (아래 4항).</li>
     <li><strong>Google 계정 로그인 정보</strong> (로그인 기능을 이용하는 경우에만) — 이메일 주소, 이름,
-      프로필 사진 주소, 계정 고유 식별자, 그리고 이용자가 직접 저장한 관심 분야 설정('나만의 피드').
+      프로필 사진 주소, 계정 고유 식별자, 그리고 이용자가 직접 저장한 관심 분야 설정('나만의 피드')·저장한 기사와
+      업데이트 목록·마지막 방문일(새 소식 표시용).
       비밀번호는 사이트가 받지 않으며 Google이 직접 인증합니다.</li>
   </ul>
 
@@ -645,7 +646,7 @@ def build_privacy() -> str:
     <tbody>
       <tr><td>Cloudflare, Inc.</td><td>사이트 호스팅·전송</td><td>접속 기록</td><td>미국 등 전 세계 데이터센터</td></tr>
       <tr><td>Google LLC</td><td>광고(애드센스), Google 계정 로그인</td><td>광고 쿠키, 로그인 시 계정 정보</td><td>미국 등</td></tr>
-      <tr><td>Supabase, Inc.</td><td>로그인 처리, '나만의 피드' 설정 저장</td><td>로그인 정보, 관심 분야 설정</td><td>대한민국(서울) 리전</td></tr>
+      <tr><td>Supabase, Inc.</td><td>로그인 처리, '나만의 피드' 설정 저장</td><td>로그인 정보, 관심 분야 설정, 저장한 글 목록, 마지막 방문일</td><td>대한민국(서울) 리전</td></tr>
     </tbody>
   </table>
   <p>정보는 사이트 이용 시점에 암호화된 통신(HTTPS)으로 전송되며, 위 보유 기간 동안 처리됩니다.
@@ -664,7 +665,7 @@ def build_privacy() -> str:
   </ul>
 
   <h2>5. 브라우저에 저장하는 정보</h2>
-  <p>화면 테마(라이트·다크) 선택, 앱 설치 안내 표시 여부, 로그인 상태를 이용자의 브라우저 저장소(localStorage)에
+  <p>화면 테마(라이트·다크) 선택, 앱 설치 안내 표시 여부, 마지막 방문일(새 소식 표시용), 로그인 상태를 이용자의 브라우저 저장소(localStorage)에
   저장하고, 빠른 로딩을 위해 페이지 파일을 브라우저에 캐시합니다. 이 정보는 사이트 서버로 보내지지 않으며,
   브라우저의 사이트 데이터 삭제로 지울 수 있습니다.</p>
 
@@ -766,7 +767,9 @@ def main():
     static_v = file_hash(os.path.join(repo, 'static.css'))
 
     def fin(text: str) -> str:
-        return text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
+        text = text.replace('{CSS_V}', css_v).replace('{STATIC_V}', static_v)
+        # index.html(앱 화면 틀)의 app.css?v=고정값도 내용 해시로 — 서비스 워커가 예전 CSS를 계속 쓰지 않게
+        return re.sub(r'app\.css\?v=[^"\']+', f'app.css?v={css_v}', text)
 
     def shell(path, title, desc, fallback, ld, og_type='website', image=None):
         return fin(build_shell(os.path.join(repo, 'index.html'), path, title, desc,
