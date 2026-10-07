@@ -244,131 +244,8 @@ function DateSection({ iso, items, onOpen, query, isToday }) {
   );
 }
 
-/* ---------- 로그인 (Supabase + Google) ---------- */
-// config.js의 auth 값이 있어야 켜진다. Supabase 라이브러리(약 220KB)는 로그인 버튼을 누르거나
-// 이미 로그인한 사람(브라우저에 세션이 있음)일 때만 불러온다 — 대부분의 방문자는 받지 않는다.
-const AUTH_CFG = window.AIAD.auth || {};
-const AUTH_ON = !!(AUTH_CFG.supabaseUrl && AUTH_CFG.supabaseAnonKey);
-const SUPABASE_JS = {
-  src: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js',
-  integrity: 'sha384-Rj26LVGvoeRVR6+mwQmFfcR3QOBEwT+ZmuCWpuiqeTzJpCs0ER4ITAWGb4Hiy3Ok',
-};
-let supabasePromise = null;
-function getSupabase() {
-  if (!supabasePromise) {
-    supabasePromise = new Promise((resolve, reject) => {
-      if (window.supabase) return resolve();
-      const el = document.createElement('script');
-      el.src = SUPABASE_JS.src; el.integrity = SUPABASE_JS.integrity; el.crossOrigin = 'anonymous';
-      el.onload = resolve; el.onerror = () => { supabasePromise = null; reject(new Error('supabase-js load failed')); };
-      document.head.appendChild(el);
-    }).then(() => window.supabase.createClient(AUTH_CFG.supabaseUrl, AUTH_CFG.supabaseAnonKey, {
-      auth: { flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
-    }));
-  }
-  return supabasePromise;
-}
-function hasStoredSession() {
-  try { return Object.keys(localStorage).some(k => /^sb-.+-auth-token$/.test(k)); } catch { return false; }
-}
-// Google에서 돌아온 주소의 ?code= 를 지운다 (세션으로 바꾼 뒤)
-function cleanAuthParams() {
-  const u = new URL(window.location.href);
-  if (!u.searchParams.has('code') && !u.searchParams.has('error')) return;
-  ['code', 'error', 'error_code', 'error_description', 'state'].forEach(k => u.searchParams.delete(k));
-  window.history.replaceState(window.history.state, '', u.pathname + u.search + u.hash);
-}
-function useAuth() {
-  const [user, setUser] = useState(null);
-  const [busy, setBusy] = useState(false);
-  useEffect(() => {
-    if (!AUTH_ON) return;
-    const returning = /[?&](code|error)=/.test(window.location.search) || hasStoredSession();
-    if (!returning) return;
-    let sub = null, alive = true;
-    getSupabase().then(async sb => {
-      const { data } = await sb.auth.getSession();
-      if (alive) setUser(data.session ? data.session.user : null);
-      cleanAuthParams();
-      sub = sb.auth.onAuthStateChange((_event, session) => { if (alive) setUser(session ? session.user : null); }).data.subscription;
-    }).catch(() => {});
-    return () => { alive = false; if (sub) sub.unsubscribe(); };
-  }, []);
-  const signIn = async () => {
-    setBusy(true);
-    try {
-      const sb = await getSupabase();
-      // 로그인한 화면으로 돌아온다 (Supabase의 Redirect URLs에 이 사이트 주소가 등록돼 있어야 한다)
-      await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + window.location.pathname } });
-    } catch (e) { setBusy(false); alert('로그인을 시작하지 못했어요. 잠시 후 다시 시도해 주세요.'); }
-  };
-  const signOut = async () => {
-    try { const sb = await getSupabase(); await sb.auth.signOut(); } catch (e) {}
-    setUser(null);
-  };
-  return { enabled: AUTH_ON, user, busy, signIn, signOut };
-}
-
-function GoogleMark() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 48 48" aria-hidden="true">
-      <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.3-.4-3.5z"/>
-      <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
-      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/>
-      <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.2-.1-2.3-.4-3.5z"/>
-    </svg>
-  );
-}
-
-// 헤더의 로그인 버튼 / 로그인 후 프로필 메뉴
-function AccountButton({ auth }) {
-  const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-  useEffect(() => {
-    if (!open) return;
-    const onDown = e => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
-    const onKey = e => { if (e.key === 'Escape') setOpen(false); };
-    document.addEventListener('mousedown', onDown); document.addEventListener('touchstart', onDown);
-    document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('mousedown', onDown); document.removeEventListener('touchstart', onDown); document.removeEventListener('keydown', onKey); };
-  }, [open]);
-  if (!auth.enabled) return null;
-  if (!auth.user) {
-    return (
-      <button type="button" className="login-btn" onClick={auth.signIn} disabled={auth.busy} aria-label="Google로 로그인">
-        <GoogleMark /><span className="login-btn-label">{auth.busy ? '이동 중…' : '로그인'}</span>
-      </button>
-    );
-  }
-  const meta = auth.user.user_metadata || {};
-  const name = meta.full_name || meta.name || auth.user.email || '사용자';
-  const avatar = meta.avatar_url || meta.picture;
-  return (
-    <div className="account" ref={ref}>
-      <button type="button" className="account-btn" aria-haspopup="menu" aria-expanded={open}
-        aria-label={`${name} 계정 메뉴`} onClick={() => setOpen(o => !o)}>
-        {avatar ? <img src={avatar} alt="" referrerPolicy="no-referrer" /> : <span>{name.slice(0, 1)}</span>}
-      </button>
-      {open && (
-        <div className="account-menu" role="menu">
-          <div className="account-who">
-            <strong>{name}</strong>
-            {auth.user.email && <span>{auth.user.email}</span>}
-          </div>
-          <button type="button" role="menuitem" className="account-item" disabled>
-            나만의 피드 <span className="account-soon">준비 중</span>
-          </button>
-          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); auth.signOut(); }}>
-            로그아웃
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}
-
 /* ---------- header ---------- */
-function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth }) {
+function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
   // 좁은 화면에선 검색창을 숨겨 두고, 돋보기 버튼을 누르면 헤더 아래 한 줄로 펼친다
@@ -441,7 +318,6 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
               </svg>
             )}
           </button>
-          <AccountButton auth={auth} />
         </div>
       </div>
     </header>
@@ -1846,7 +1722,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
 
 /* ---------- App ---------- */
 function App() {
-  const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
@@ -2023,7 +1898,6 @@ function App() {
     <BriefingContext.Provider value={briefing}>
     <div className="page">
       <Header
-        auth={auth}
         query={query}
         onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewHome(false); } }}
         theme={theme}
