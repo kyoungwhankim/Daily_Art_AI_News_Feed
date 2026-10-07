@@ -395,7 +395,6 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
         <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <img className="brand-mark" src="/icons/logo.svg" alt="" aria-hidden="true" />
           <span className="brand-name">AI Art Daily</span>
-          <small>한국어 큐레이션</small>
         </div>
         <div className="header-actions">
           <label className="search">

@@ -213,7 +213,6 @@ def header(root: str) -> str:
     <a class="brand" href="{root}">
       <img class="brand-mark" src="{root}icons/logo.svg" alt="" aria-hidden="true" />
       <span class="brand-name">{esc(SITE_NAME)}</span>
-      <small>{esc(SITE_TAGLINE)}</small>
     </a>
     <nav class="static-nav">
       {''.join(f'<a href="{href(root, tab_path(t))}">{esc(label)}</a>' for t, label, _ in TABS)}
