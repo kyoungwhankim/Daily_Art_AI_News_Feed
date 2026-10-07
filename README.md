@@ -156,6 +156,14 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 - 고르는 기준: `app.jsx` roleArticles·roleUpdates (검색엔진용 `/for/<직군>/` 페이지는 `scripts/build_site.py` role_articles·role_updates — 두 곳이 같아야 한다)
 - 추천이 엉뚱하면 그 직군의 terms에서 흔한 단어를 빼고, 빠진 소식이 있으면 단어를 더한다
 
+## 로그인 · 나만의 피드 (Supabase)
+
+- Google 로그인: Supabase Auth. 공개 키(Project URL, publishable 키)는 `config.js` auth에 있다 (secret 키는 넣지 않는다)
+- 회원 관심사: Supabase `profiles` 표 — 직군, 관심 뉴스 서브 카테고리(`탭|키워드`), 관심 서비스 slug, 직접 키워드, 직군 추천 포함 여부.
+  만드는 SQL은 `supabase/schema.sql` (본인 줄만 읽고 쓰는 행 단위 보안 + 회원 탈퇴 함수). Supabase SQL Editor에서 실행한다
+- 화면: 처음 로그인하면 관심사 설정 창, `/me/` 나만의 피드, 계정 메뉴의 관심사 설정·회원 탈퇴. 로그인 회원의 직군은 '내 직군'과 동기화된다
+- 데이터 보기: Supabase 대시보드 → Table Editor → profiles (회원 수·관심사 통계는 SQL Editor에서 조회)
+
 ## 루틴 구조
 
 하나의 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다. 서비스 업데이트만 별도 에이전트가 맡는다.
