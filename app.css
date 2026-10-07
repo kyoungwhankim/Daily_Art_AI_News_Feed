@@ -1569,6 +1569,8 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .brief-list { list-style: none; margin: 0; padding: 0; }
 .brief-list li + li { border-top: 1px dashed var(--hairline); }
 .brief-item { display: block; width: 100%; padding: 10px 0 !important; }
+.brief-item-thumb { display: grid !important; grid-template-columns: minmax(0, 1fr) 96px; gap: 14px; align-items: start; }
+.brief-item-text { min-width: 0; display: block; }
 .brief-item-top { display: flex; align-items: center; gap: 6px; min-height: 18px; }
 .brief-why { font-size: 11.5px; font-weight: 700; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .brief-dot { font-size: 10px; font-weight: 800; letter-spacing: .04em; padding: 0 6px; border-radius: 999px; background: var(--accent); color: var(--card); }
@@ -1632,4 +1634,5 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .brief-actions { padding-top: 0; }
   .brief-title { font-size: 18px; }
   .brief-list li:nth-child(n+4) { display: none; }
+  .brief-item-thumb { grid-template-columns: minmax(0, 1fr) 84px; gap: 12px; }
 }

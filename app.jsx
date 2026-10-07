@@ -896,13 +896,16 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
             <ol className="brief-list">
               {news.slice(0, BRIEF_N).map(a => (
                 <li key={a.id}>
-                  <button type="button" className="brief-item" onClick={() => onOpenArticle(a)}>
-                    <span className="brief-item-top">
-                      {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
-                      <span className="brief-why">{articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label).slice(0, 2).join(' · ')}</span>
+                  <button type="button" className="brief-item brief-item-thumb" onClick={() => onOpenArticle(a)}>
+                    <span className="brief-item-text">
+                      <span className="brief-item-top">
+                        {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
+                        <span className="brief-why">{articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label).slice(0, 2).join(' · ')}</span>
+                      </span>
+                      <span className="brief-item-title">{a.headline}</span>
+                      <span className="hm-meta">{a.source} · {a.publishedAt}</span>
                     </span>
-                    <span className="brief-item-title">{a.headline}</span>
-                    <span className="hm-meta">{a.source} · {a.publishedAt}</span>
+                    <span className="hm-row-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
                   </button>
                 </li>
               ))}
