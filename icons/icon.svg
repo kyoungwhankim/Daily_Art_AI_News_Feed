@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#334155"/>
-  <rect x="96" y="96" width="320" height="320" rx="56" fill="#e7effb"/>
-  <text x="256" y="300" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="150" fill="#334155" letter-spacing="-6">AI</text>
-  <text x="256" y="362" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="34" fill="#0c58c2" letter-spacing="3">ART DAILY</text>
+  <rect width="512" height="512" fill="#334955"/>
+  <rect x="96" y="96" width="320" height="320" rx="56" fill="#e7f4fb"/>
+  <text x="256" y="300" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="150" fill="#334955" letter-spacing="-6">AI</text>
+  <text x="256" y="362" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="34" fill="#0c82c2" letter-spacing="3">ART DAILY</text>
 </svg>

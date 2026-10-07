@@ -158,7 +158,7 @@ def load():
 
 # PWA: 앱 설치 정보 + 오프라인 캐시(service worker) 등록 — 피드 앱 페이지 공통
 PWA_HEAD = """<link rel="manifest" href="/manifest.webmanifest" />
-<meta name="theme-color" content="#334155" />
+<meta name="theme-color" content="#334955" />
 <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
 <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
