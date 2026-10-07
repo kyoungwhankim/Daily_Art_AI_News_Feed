@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hugging-face-2026-10-06-1",
+    "service": "hugging-face",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Falcon-Emirati LLM 공개",
+    "summary": "아랍 에미리트 방언, 문화, 뉘앙스를 학습한 새로운 Falcon 언어 모델입니다.",
+    "details": [
+      "아랍 에미리트 방언 지원",
+      "문화적 맥락 이해"
+    ],
+    "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+    "source": "notice"
+  }
+]

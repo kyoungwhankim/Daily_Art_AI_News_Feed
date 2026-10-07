@@ -13,5 +13,21 @@
     ],
     "url": "https://support.claude.com/en/articles/12138966-release-notes",
     "source": "notice"
+  },
+  {
+    "id": "claude-2026-09-22-2",
+    "service": "claude",
+    "date": "2026.09.22",
+    "kind": "모델",
+    "title": "Claude Opus 5.5 출시",
+    "summary": "장시간 에이전트 코딩 및 지식 작업을 위해 설계된 Claude Opus 5.5 모델(1M 토큰 컨텍스트, 128k 최대 출력, 적응형 사고)이 출시되었습니다.",
+    "details": [
+      "1M 토큰 기본 컨텍스트 윈도우",
+      "128k 최대 출력 토큰",
+      "항상 활성화된 적응형 사고",
+      "빠른 모드 지원"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source": "dev"
   }
 ]

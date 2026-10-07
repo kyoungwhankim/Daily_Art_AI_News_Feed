@@ -1,5 +1,81 @@
 [
   {
+    "id": "nano-banana-2026-10-06-1",
+    "service": "nano-banana",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Gemini Nano Banana 2.1 일반 공개",
+    "summary": "고속 멀티모달 이미지 생성 및 편집에 최적화된 Nano Banana 2.1이 일반 공개되었습니다. 시각 품질, 프롬프트 준수, 텍스트 렌더링이 개선되었으며 1K, 2K, 4K 해상도를 지원합니다.",
+    "details": [
+      "고속 멀티모달 이미지 생성 및 편집 최적화",
+      "시각 품질 개선",
+      "프롬프트 준수 개선",
+      "텍스트 렌더링 개선",
+      "1K, 2K, 4K 해상도 지원"
+    ],
+    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-06-1",
+    "service": "hugging-face",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Falcon-Emirati LLM 공개",
+    "summary": "아랍 에미리트 방언, 문화, 뉘앙스를 학습한 새로운 Falcon 언어 모델입니다.",
+    "details": [
+      "아랍 에미리트 방언 지원",
+      "문화적 맥락 이해"
+    ],
+    "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-10-06-1",
+    "service": "figma-ai",
+    "date": "2026.10.06",
+    "kind": "기능",
+    "title": "Figma 에이전트 일반 공개",
+    "summary": "개선된 지연 시간, 멀티플레이어 성능, Figma 컨텍스트 접근성 및 디자인 라이브러리 가이드 도구가 포함된 베타 버전이 일반 공개되었습니다.",
+    "details": [
+      "지연 시간 개선",
+      "멀티플레이어 성능 개선",
+      "Figma 컨텍스트 접근성 향상",
+      "디자인 라이브러리 가이드 도구 추가"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=the-figma-agent-is-generally-available",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-06-2",
+    "service": "comfyui",
+    "date": "2026.10.06",
+    "kind": "앱",
+    "title": "ComfyUI v0.38.2 릴리스",
+    "summary": "FLUX 3 이미지 모델 및 Grok Imagine Video 1.5 Lite 지원이 추가되었습니다.",
+    "details": [
+      "FLUX 3 이미지 모델 지원 (텍스트-이미지, 편집, 바운딩 박스 제어)",
+      "Grok Imagine Video 1.5 Lite 저가 옵션 추가"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-38-2",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-06-1",
+    "service": "comfyui",
+    "date": "2026.10.06",
+    "kind": "앱",
+    "title": "ComfyUI v0.39.0 릴리스",
+    "summary": "DynamicGroup 위젯 입력, Eleven v4 및 v4 Turbo 지원, GPT Image 2 배경 제거 등이 포함됩니다.",
+    "details": [
+      "DynamicGroup 위젯 입력 추가",
+      "Eleven v4/v4 Turbo TTS 노드 추가",
+      "Luma Ray 2 노드 지원 중단 예정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-39-0",
+    "source": "notice"
+  },
+  {
     "id": "suno-2026-10-05-1",
     "service": "suno",
     "date": "2026.10.05",
@@ -101,6 +177,22 @@
       "429 응답에 X-RateLimit 헤더 추가"
     ],
     "url": "https://docs.heygen.com/changelog#heygen-video-2k",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-10-05-1",
+    "service": "elevenlabs",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "ElevenAgents에 병합 제안 알파 추가",
+    "summary": "구조화된 절차가 저장 및 게시 시 자동으로 컴파일 및 검증됩니다. 팀은 에이전트 브랜치에 대한 병합 제안을 열고 변경 사항을 검토할 수 있습니다.",
+    "details": [
+      "구조화된 절차 자동 컴파일 및 검증",
+      "병합 제안 알파 추가",
+      "JavaScript/Python SDK v2.71.0 릴리스",
+      "새로운 에이전트 LLM 옵션 지원"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog",
     "source": "dev"
   },
   {
@@ -377,80 +469,6 @@
     "title": "Models API에 모델 계열(line) 필드 추가",
     "summary": "GET /v1/models 응답에 모델이 속한 계열(opus 등)을 알려 주는 line 필드가 추가돼, ID를 파싱하지 않고 모델을 묶을 수 있어요.",
     "url": "https://platform.claude.com/docs/en/release-notes/overview#october-1-2026",
-    "source": "dev"
-  },
-  {
-    "id": "synthesia-2026-09-30-1",
-    "service": "synthesia",
-    "date": "2026.09.30",
-    "kind": "기능",
-    "title": "Synthesia 더빙 영상에 자막 번인 추가",
-    "summary": "더빙한 영상에 클릭 한 번으로 자막을 입힐 수 있게 됐어요. 소리를 끄고 봐도 현지화 영상을 쉽게 따라갈 수 있어요.",
-    "url": "https://www.synthesia.io/updates/add-burned-in-captions-to-dubbed-videos",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-09-30-1",
-    "service": "scenario",
-    "date": "2026.09.30",
-    "kind": "모델",
-    "title": "Ideogram 4.5: 정확한 글자의 포스터·로고",
-    "summary": "이미지 속 글자를 정확히 그리는 Ideogram 4.5로 최대 2K 포스터·로고·패키지를 만들 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-44ffd9be027d2ef52c490100787f6fc80cf7b1a51e641cab26b495bde4d7b259",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-09-30-2",
-    "service": "runway",
-    "date": "2026.09.30",
-    "kind": "API",
-    "title": "Runway Dev에 ElevenLabs Eleven v4 추가",
-    "summary": "Runway Dev API에서 Eleven v4(eleven_v4) 음성 합성을 쓸 수 있게 됐어요. [laughs] 같은 오디오 태그로 표현력 있는 음성을 만들 수 있어요.",
-    "details": [
-      "스크립트 최대 2,500자, Eleven v3와 같은 프리셋 보이스",
-      "2026년 10월 12일까지 1,000자당 2.2크레딧, 이후 5크레딧"
-    ],
-    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#eleven-v4-on-runway-dev",
-    "source": "dev"
-  },
-  {
-    "id": "runway-2026-09-30-1",
-    "service": "runway",
-    "date": "2026.09.30",
-    "kind": "기능",
-    "title": "Runway Ads 공개: 퍼포먼스 광고 자동화 엔진",
-    "summary": "광고 계정과 브랜드 키트를 연결하면 영상·이미지 광고를 만들고 Meta·Google·TikTok에 게시한 뒤 성과를 읽어 다음 변형을 만드는 새 제품 Runway Ads를 발표했어요.",
-    "details": [
-      "광고 소재 생성부터 게시·성과 분석·반복까지 엔드투엔드 자동화",
-      "Meta, Google, TikTok 광고 플랫폼과 직접 연결"
-    ],
-    "url": "https://runway.com/news/company-news/introducing-runway-ads",
-    "source": "notice"
-  },
-  {
-    "id": "ltx-studio-2026-09-30-1",
-    "service": "ltx-studio",
-    "date": "2026.09.30",
-    "kind": "모델",
-    "title": "HDR Native와 SDR to HDR 업그레이드 공개",
-    "summary": "16비트 EXR을 받아 ACES 워크플로로 16비트 EXR을 돌려주는 HDR Native와, 8비트 SDR을 scene-linear ACEScg 16비트 EXR로 확장하는 개선된 SDR to HDR을 공개했어요.",
-    "url": "https://ltx.io/release-notes",
-    "source": "dev"
-  },
-  {
-    "id": "heygen-2026-09-30-1",
-    "service": "heygen",
-    "date": "2026.09.30",
-    "kind": "모델",
-    "title": "HeyGen Video API 공개: heygen-video-1 모델",
-    "summary": "heygen-video-1 모델로 텍스트·첫 프레임·레퍼런스에서 5~15초 영상을 만드는 API를 공개했어요. 이미지 9장, 영상·오디오 각 3개까지 레퍼런스로 쓸 수 있어요.",
-    "details": [
-      "480p·768p 출력",
-      "ElevenLabs 모델을 요청별로 선택(eleven_v4 등)",
-      "Assets 라이브러리 폴더 인식",
-      "전문 보이스 클론에 break 태그 지원"
-    ],
-    "url": "https://docs.heygen.com/changelog#heygen-video-api",
     "source": "dev"
   }
 ]

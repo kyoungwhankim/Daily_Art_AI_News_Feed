@@ -10,6 +10,22 @@
     "source": "notice"
   },
   {
+    "id": "elevenlabs-2026-10-05-1",
+    "service": "elevenlabs",
+    "date": "2026.10.05",
+    "kind": "API",
+    "title": "ElevenAgents에 병합 제안 알파 추가",
+    "summary": "구조화된 절차가 저장 및 게시 시 자동으로 컴파일 및 검증됩니다. 팀은 에이전트 브랜치에 대한 병합 제안을 열고 변경 사항을 검토할 수 있습니다.",
+    "details": [
+      "구조화된 절차 자동 컴파일 및 검증",
+      "병합 제안 알파 추가",
+      "JavaScript/Python SDK v2.71.0 릴리스",
+      "새로운 에이전트 LLM 옵션 지원"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog",
+    "source": "dev"
+  },
+  {
     "id": "suno-2026-10-01-1",
     "service": "suno",
     "date": "2026.10.01",
@@ -18,6 +34,22 @@
     "summary": "말과 그 사운드트랙을 한 번에 만드는 첫 모델 Speech가 베타로 나왔어요. 피아노 위 동화 낭독 같은 콘텐츠를 만들 수 있어요.",
     "url": "https://suno.com/release-notes/introducing-speech-beta",
     "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-09-28-2",
+    "service": "elevenlabs",
+    "date": "2026.09.28",
+    "kind": "모델",
+    "title": "Eleven v4 및 v4 Turbo 일반 공개",
+    "summary": "90개 이상의 언어에서 더 높은 품질, 더욱 표현력 있는 음성 및 개선된 음성 복제를 제공합니다. v4 Turbo는 실시간 애플리케이션용으로 약 100ms의 중간 추론 지연 시간을 제공합니다.",
+    "details": [
+      "90개 이상 언어 지원",
+      "음성 복제 개선",
+      "실시간 스트리밍 지원",
+      "텍스트-대화 API 개선"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog",
+    "source": "dev"
   },
   {
     "id": "elevenlabs-2026-09-28-1",
