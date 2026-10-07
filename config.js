@@ -7,6 +7,14 @@ window.AIAD = {
     { id: 'art', label: '아트 전반 AI 뉴스', desc: '게임 제작과 무관하게 모든 아트 관련 AI 뉴스들을 매일 업데이트합니다.' },
   ],
 
+  // 로그인 (Supabase + Google). 두 값이 비어 있으면 로그인 버튼이 보이지 않는다.
+  // supabaseAnonKey는 브라우저에 공개되도록 만든 키(anon / publishable)라 여기 둬도 된다.
+  // service_role(secret) 키는 절대 넣지 않는다.
+  auth: {
+    supabaseUrl: 'https://abablvgtlhuvwdpxvoyu.supabase.co',
+    supabaseAnonKey: 'sb_publishable_W-s11n1xtrEMpNcahwqp4A_zG_Bxlau',   // publishable 키 (공개용)
+  },
+
   // 아티스트 브리핑 — 게임 아트 직군마다 관심 가질 뉴스·업데이트를 골라 보여 준다 (주소: /for/<id>/)
   // short:    헤더 '내 직군' 표시·추천 표시에 쓰는 짧은 이름
   // photo:    (선택) 메인 브리핑 머리 띠 배경 사진 — 3:1, 사람은 오른쪽, 왼쪽은 어둡게 비운 사진. 없으면 icons/roles/<id>.svg 일러스트

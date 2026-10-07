@@ -196,6 +196,48 @@ html::before {
 .icon-btn:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
 .icon-btn:active { transform: translateY(1px); box-shadow: none; }
 
+/* 로그인 / 계정 메뉴 */
+.login-btn {
+  height: 40px; padding: 0 14px 0 12px;
+  display: inline-flex; align-items: center; gap: 8px;
+  border-radius: 999px; border: 2px solid var(--stroke);
+  background: var(--card); color: var(--ink);
+  font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  transition: transform .15s var(--ease-pop, cubic-bezier(0.34,1.56,0.64,1)), box-shadow .15s ease;
+}
+.login-btn:hover { box-shadow: var(--shadow-pop-sm); transform: translateY(-1px); }
+.login-btn:disabled { opacity: .7; cursor: progress; }
+.account { position: relative; }
+.account-btn {
+  width: 40px; height: 40px; padding: 0; overflow: hidden;
+  border-radius: 999px; border: 2px solid var(--stroke);
+  background: var(--paper-3); color: var(--ink);
+  display: grid; place-items: center; cursor: pointer;
+  font: inherit; font-weight: 800; font-size: 16px;
+}
+.account-btn img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.account-menu {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60;
+  min-width: 220px; max-width: min(300px, calc(100vw - 32px));
+  background: var(--card); border: 2px solid var(--stroke); border-radius: 14px;
+  box-shadow: var(--shadow-pop-sm); padding: 6px;
+}
+.account-who { padding: 8px 10px 10px; border-bottom: 1.5px solid var(--stroke); margin-bottom: 6px; }
+.account-who strong { display: block; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.account-who span { display: block; font-size: 12px; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 2px; }
+.account-item {
+  width: 100%; text-align: left; padding: 9px 10px; border: 0; border-radius: 8px;
+  background: none; color: var(--ink); font: inherit; font-size: 14px; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.account-item:hover:not(:disabled) { background: var(--paper-2); }
+.account-item:disabled { color: var(--ink-2); cursor: default; }
+.account-soon { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: var(--paper-3); }
+@media (max-width: 640px) {
+  .login-btn { width: 40px; padding: 0; justify-content: center; }
+  .login-btn-label { display: none; }
+}
+
 /* tabs */
 .tabs-wrap {
   border-bottom: 2px solid var(--stroke);
@@ -1566,20 +1608,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   50% { box-shadow: 0 0 0 5px rgba(255,255,255,0); }
 }
 @media (prefers-reduced-motion: reduce) { .side-brief-icon { animation: none; } }
-.side-role { margin-top: 8px; border: 1.5px solid var(--stroke); border-radius: 12px; background: var(--card); overflow: hidden; }
-.side-role-toggle {
-  width: 100%; display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer;
-  background: none; border: 0; font: inherit; color: var(--ink); text-align: left;
-}
-.side-role-label { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
-.side-role-value { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 800; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.side-role-value.unset { text-decoration: underline; text-underline-offset: 3px; }
-.side-role-toggle:hover { background: var(--paper-2); }
-.side-role-panel { padding: 4px 10px 10px; border-top: 1px dashed var(--hairline); }
-.side-role-panel .role-choices { gap: 6px; padding-top: 8px; }
-.side-role-panel .role-choice { font-size: 12px; padding: 4px 10px; border-width: 1.5px; }
-.side-role-clear { margin-top: 8px; background: none; border: 0; padding: 0; font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; }
-.side-role-clear:hover { text-decoration: underline; }
 
 @media (max-width: 900px) {
   .brief-cols { grid-template-columns: 1fr; }
@@ -1780,3 +1808,83 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 @media (max-width: 640px) {
   .brand .brand-mark { width: 26px; height: 26px; }
 }
+/* 모바일 헤더: 메뉴·로고·검색·테마·로그인이 한 줄에 들어가게 */
+@media (max-width: 640px) {
+  .header-inner .header-actions { gap: 6px; }
+  .header-inner .icon-btn, .header-inner .login-btn, .header-inner .account-btn { width: 36px; height: 36px; }
+  .header-inner .brand { gap: 6px; min-width: 0; }
+  .header-inner .brand-name { font-size: 19px; }
+}
+@media (max-width: 380px) {
+  .header-inner .brand-name { font-size: 17px; }
+}
+
+/* 나만의 피드 — 사이드바 바로가기 */
+.side-me {
+  width: 100%; margin-top: 8px; display: flex; align-items: center; gap: 8px; padding: 9px 12px; cursor: pointer;
+  border: 1.5px solid var(--stroke); border-radius: 12px; background: var(--card); color: var(--accent-strong);
+  font: inherit; font-size: 13.5px; font-weight: 800; text-align: left;
+}
+.side-me:hover, .side-me.active { background: var(--accent-soft); }
+.account-danger { color: #b54848 !important; }
+
+/* 설정 페이지 (/settings/) */
+.settings { display: flex; flex-direction: column; gap: 18px; }   /* 폭·가운데 정렬은 .feed와 같게 (머리 띠와 같은 선) */
+.st-card { background: var(--card); border: 2px solid var(--stroke); border-radius: 18px; padding: 20px 22px; }
+.st-card h2 { margin: 0 0 12px; font-size: 18px; font-weight: 800; }
+.st-card h2 span { font-size: 12.5px; font-weight: 500; color: var(--muted); margin-left: 6px; }
+.st-card p { margin: 0 0 12px; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+.st-account { display: grid; grid-template-columns: max-content 1fr; gap: 8px 22px; margin: 0; font-size: 14px; }
+.st-account dt { color: var(--muted); font-weight: 700; }
+.st-account dd { margin: 0; overflow-wrap: anywhere; }
+.st-actions { margin-top: 14px; }
+.st-welcome { display: flex; flex-direction: column; gap: 4px; padding: 14px 18px; border-radius: 14px;
+  background: var(--accent-soft); border: 1.5px solid var(--accent); font-size: 14px; color: var(--ink-2); }
+.st-welcome strong { color: var(--accent-strong); font-size: 15px; }
+.st-danger { border-color: #c96a6a; }
+.st-danger h2 { color: #b54848; }
+.st-danger-btn { border-color: #b54848 !important; color: #b54848 !important; font-weight: 700; }
+.st-danger-btn:hover { background: #b54848 !important; color: #fff !important; }
+.pe-sec { padding: 16px 0; border-bottom: 1px dashed var(--hairline); }
+.pe-sec:first-child { padding-top: 0; }
+.pe-sec h3 { margin: 0 0 10px; font-size: 15px; font-weight: 800; }
+.pe-sec h3 span, .pe-check span { font-size: 12px; font-weight: 500; color: var(--muted); margin-left: 4px; }
+.pe-group { margin-bottom: 12px; }
+.pe-group-name { font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+.pe-form .role-choice { font-size: 12.5px; padding: 5px 11px; }
+.pe-check { display: flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 13.5px; cursor: pointer; }
+.pe-kw { display: flex; gap: 8px; }
+.pe-kw input { flex: 1; min-width: 0; height: 36px; padding: 0 12px; border: 1.5px solid var(--stroke); border-radius: 999px;
+  background: var(--paper); color: var(--ink); font: inherit; font-size: 14px; }
+.pe-kw-list { margin-top: 10px; }
+.pe-foot { position: sticky; bottom: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin: 8px -22px -20px; padding: 14px 22px; border-top: 1.5px solid var(--hairline); background: var(--paper-2); border-radius: 0 0 16px 16px; }
+.pe-foot span { margin-right: auto; font-size: 13px; color: var(--muted); }
+.pe-foot .chip { padding: 8px 16px; font-size: 13.5px; font-weight: 700; }
+@media (max-width: 640px) {
+  .st-card { padding: 16px; }
+  .pe-foot { margin: 8px -16px -16px; padding: 12px 16px; }
+}
+
+
+/* 나만의 피드 '관심사 수정' 팝업 */
+.pe {
+  position: relative; width: min(760px, calc(100vw - 32px)); max-height: calc(100vh - 48px); display: flex; flex-direction: column;
+  background: var(--card); color: var(--ink); border: 2px solid var(--stroke); border-radius: 20px; box-shadow: var(--shadow-lg); overflow: hidden;
+}
+.pe-head { display: flex; justify-content: space-between; gap: 16px; padding: 22px 24px 14px; border-bottom: 1.5px solid var(--hairline); }
+.pe-eyebrow { color: var(--accent-strong); }
+.pe-head h2 { margin: 6px 0 4px; font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+.pe-head p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
+.pe-close { position: static; flex: none; }
+.pe-body { overflow-y: auto; padding: 18px 24px 0; }
+.pe-body .pe-foot { margin: 8px -24px 0; padding: 14px 24px; border-radius: 0; }   /* 팝업 맨 아래까지 덮는다 */
+@media (max-width: 640px) {
+  .pe { max-height: calc(100vh - 24px); border-radius: 16px; }
+  .pe-head, .pe-body { padding-left: 16px; padding-right: 16px; }
+  .pe-body .pe-foot { margin: 8px -16px 0; padding: 12px 16px; }
+  .pe-head h2 { font-size: 19px; }
+}
+
+.side-me-role { margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); }
+.side-me.active .side-me-role { background: var(--card); }

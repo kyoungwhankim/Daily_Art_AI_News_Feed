@@ -609,8 +609,8 @@ def build_privacy() -> str:
 
   <h2>6. 이용자의 권리</h2>
   <p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 아래 문의처로
-  연락하면 지체 없이 처리하고 결과를 알려 드립니다. 로그인한 이용자는 로그아웃으로 브라우저의 로그인 정보를
-  바로 지울 수 있습니다.</p>
+  연락하면 지체 없이 처리하고 결과를 알려 드립니다. 로그인한 이용자는 계정 메뉴의 '관심사 설정'에서 저장한 정보를
+  고치고, '회원 탈퇴'로 계정과 저장한 정보를 바로 삭제할 수 있습니다.</p>
 
   <h2>7. 안전성 확보 조치</h2>
   <p>모든 통신은 HTTPS로 암호화하고, 로그인 정보는 이용자 본인만 읽고 쓸 수 있도록 접근 권한을 제한하며,
@@ -822,6 +822,19 @@ def main():
                 p, f'{r["label"]} 브리핑 | {SITE_NAME}', d,
                 role_fallback(r, news, upd, by_slug, roles), collection(p, f'{r["label"]} 브리핑', d)))
             listing_paths.append(p)
+
+    # 나만의 피드 (/me/) — 로그인 회원 화면이라 검색엔진에는 내보내지 않는다
+    me_desc = '로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 모아 볼 수 있어요.'
+    write(out, 'me/index.html', shell('me/', f'나만의 피드 | {SITE_NAME}', me_desc,
+                                      f'<h1 class="feed-title">나만의 피드</h1><p class="feed-sub">{esc(me_desc)}</p>',
+                                      collection('me/', '나만의 피드', me_desc))
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+
+    st_desc = '계정 정보, 나만의 피드 관심사, 회원 탈퇴를 관리해요.'
+    write(out, 'settings/index.html', shell('settings/', f'설정 | {SITE_NAME}', st_desc,
+                                            f'<h1 class="feed-title">설정</h1><p class="feed-sub">{esc(st_desc)}</p>',
+                                            collection('settings/', '설정', st_desc))
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))

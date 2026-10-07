@@ -39,6 +39,12 @@ function parseRoute(pathname) {
   if (parts[0] === 'articles' && parts[1]) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
   }
+  if (parts[0] === 'settings') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, settings: true };
+  }
+  if (parts[0] === 'me') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, me: true };
+  }
   if (parts[0] === 'for') {
     return { home: false, tab: null, kwSlug: null, articleId: null, roles: true,
              role: ROLES.some(r => r.id === parts[1]) ? parts[1] : null };
@@ -244,8 +250,168 @@ function DateSection({ iso, items, onOpen, query, isToday }) {
   );
 }
 
+/* ---------- 로그인 (Supabase + Google) ---------- */
+// config.js의 auth 값이 있어야 켜진다. Supabase 라이브러리(약 220KB)는 로그인 버튼을 누르거나
+// 이미 로그인한 사람(브라우저에 세션이 있음)일 때만 불러온다 — 대부분의 방문자는 받지 않는다.
+const AUTH_CFG = window.AIAD.auth || {};
+const AUTH_ON = !!(AUTH_CFG.supabaseUrl && AUTH_CFG.supabaseAnonKey);
+const SUPABASE_JS = {
+  src: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js',
+  integrity: 'sha384-Rj26LVGvoeRVR6+mwQmFfcR3QOBEwT+ZmuCWpuiqeTzJpCs0ER4ITAWGb4Hiy3Ok',
+};
+let supabasePromise = null;
+function getSupabase() {
+  if (!supabasePromise) {
+    supabasePromise = new Promise((resolve, reject) => {
+      if (window.supabase) return resolve();
+      const el = document.createElement('script');
+      el.src = SUPABASE_JS.src; el.integrity = SUPABASE_JS.integrity; el.crossOrigin = 'anonymous';
+      el.onload = resolve; el.onerror = () => { supabasePromise = null; reject(new Error('supabase-js load failed')); };
+      document.head.appendChild(el);
+    }).then(() => window.supabase.createClient(AUTH_CFG.supabaseUrl, AUTH_CFG.supabaseAnonKey, {
+      auth: { flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
+    }));
+  }
+  return supabasePromise;
+}
+function hasStoredSession() {
+  try { return Object.keys(localStorage).some(k => /^sb-.+-auth-token$/.test(k)); } catch { return false; }
+}
+// Google에서 돌아온 주소의 ?code= 를 지운다 (세션으로 바꾼 뒤)
+function cleanAuthParams() {
+  const u = new URL(window.location.href);
+  if (!u.searchParams.has('code') && !u.searchParams.has('error')) return;
+  ['code', 'error', 'error_code', 'error_description', 'state'].forEach(k => u.searchParams.delete(k));
+  window.history.replaceState(window.history.state, '', u.pathname + u.search + u.hash);
+}
+function useAuth() {
+  const [user, setUser] = useState(null);
+  const [busy, setBusy] = useState(false);
+  useEffect(() => {
+    if (!AUTH_ON) return;
+    const returning = /[?&](code|error)=/.test(window.location.search) || hasStoredSession();
+    if (!returning) return;
+    let sub = null, alive = true;
+    getSupabase().then(async sb => {
+      const { data } = await sb.auth.getSession();
+      if (alive) setUser(data.session ? data.session.user : null);
+      cleanAuthParams();
+      sub = sb.auth.onAuthStateChange((_event, session) => { if (alive) setUser(session ? session.user : null); }).data.subscription;
+    }).catch(() => {});
+    return () => { alive = false; if (sub) sub.unsubscribe(); };
+  }, []);
+  const signIn = async () => {
+    setBusy(true);
+    try {
+      const sb = await getSupabase();
+      // 로그인한 화면으로 돌아온다 (Supabase의 Redirect URLs에 이 사이트 주소가 등록돼 있어야 한다)
+      await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + window.location.pathname } });
+    } catch (e) { setBusy(false); alert('로그인을 시작하지 못했어요. 잠시 후 다시 시도해 주세요.'); }
+  };
+  const signOut = async () => {
+    try { const sb = await getSupabase(); await sb.auth.signOut(); } catch (e) {}
+    setUser(null);
+  };
+  // 회원 탈퇴 — Supabase의 delete_my_account() (supabase/schema.sql)가 계정과 관심사를 함께 지운다
+  const deleteAccount = async () => {
+    const sb = await getSupabase();
+    const { error } = await sb.rpc('delete_my_account');
+    if (error) throw error;
+    await signOut();
+  };
+  return { enabled: AUTH_ON, user, busy, signIn, signOut, deleteAccount };
+}
+
+/* ---------- 나만의 피드: 회원 관심사 (Supabase profiles 표, supabase/schema.sql) ---------- */
+// 직군 · 관심 뉴스 서브 카테고리('탭|키워드') · 관심 AI 서비스(slug) · 직접 입력 키워드 · 직군 추천 포함 여부
+const EMPTY_PROFILE = { role: null, news_topics: [], services: [], keywords: [], include_role: true };
+function useProfile(user) {
+  const [state, setState] = useState({ loading: false, profile: null, error: null });
+  useEffect(() => {
+    if (!user) { setState({ loading: false, profile: null, error: null }); return; }
+    let alive = true;
+    setState(s => ({ ...s, loading: true }));
+    getSupabase().then(sb => sb.from('profiles')
+      .select('role, news_topics, services, keywords, include_role').eq('id', user.id).maybeSingle())
+      .then(({ data, error }) => { if (alive) setState({ loading: false, profile: data || null, error: error || null }); })
+      .catch(error => { if (alive) setState({ loading: false, profile: null, error }); });
+    return () => { alive = false; };
+  }, [user && user.id]);   // eslint-disable-line
+  const save = async (patch) => {
+    const next = { ...EMPTY_PROFILE, ...(state.profile || {}), ...patch };
+    const sb = await getSupabase();
+    const { data, error } = await sb.from('profiles')
+      .upsert({ id: user.id, ...next }).select('role, news_topics, services, keywords, include_role').single();
+    if (error) throw error;
+    setState({ loading: false, profile: data, error: null });
+    return data;
+  };
+  return { ...state, save };
+}
+
+function GoogleMark() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 48 48" aria-hidden="true">
+      <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.3-.4-3.5z"/>
+      <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/>
+      <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.2-.1-2.3-.4-3.5z"/>
+    </svg>
+  );
+}
+
+// 헤더의 로그인 버튼 / 로그인 후 프로필 메뉴
+function AccountButton({ auth, onMyFeed, onSettings }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = e => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    const onKey = e => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('mousedown', onDown); document.addEventListener('touchstart', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => { document.removeEventListener('mousedown', onDown); document.removeEventListener('touchstart', onDown); document.removeEventListener('keydown', onKey); };
+  }, [open]);
+  if (!auth.enabled) return null;
+  if (!auth.user) {
+    return (
+      <button type="button" className="login-btn" onClick={auth.signIn} disabled={auth.busy} aria-label="Google로 로그인">
+        <GoogleMark /><span className="login-btn-label">{auth.busy ? '이동 중…' : '로그인'}</span>
+      </button>
+    );
+  }
+  const meta = auth.user.user_metadata || {};
+  const name = meta.full_name || meta.name || auth.user.email || '사용자';
+  const avatar = meta.avatar_url || meta.picture;
+  return (
+    <div className="account" ref={ref}>
+      <button type="button" className="account-btn" aria-haspopup="menu" aria-expanded={open}
+        aria-label={`${name} 계정 메뉴`} onClick={() => setOpen(o => !o)}>
+        {avatar ? <img src={avatar} alt="" referrerPolicy="no-referrer" /> : <span>{name.slice(0, 1)}</span>}
+      </button>
+      {open && (
+        <div className="account-menu" role="menu">
+          <div className="account-who">
+            <strong>{name}</strong>
+            {auth.user.email && <span>{auth.user.email}</span>}
+          </div>
+          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onMyFeed(); }}>
+            나만의 피드
+          </button>
+          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onSettings(); }}>
+            설정
+          </button>
+          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); auth.signOut(); }}>
+            로그아웃
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ---------- header ---------- */
-function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
+function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth, onMyFeed, onSettings }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
   // 좁은 화면에선 검색창을 숨겨 두고, 돋보기 버튼을 누르면 헤더 아래 한 줄로 펼친다
@@ -318,6 +484,7 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
               </svg>
             )}
           </button>
+          <AccountButton auth={auth} onMyFeed={onMyFeed} onSettings={onSettings} />
         </div>
       </div>
     </header>
@@ -760,17 +927,23 @@ function useNewSince(roleId, ids, ready) {
 }
 
 // 메인 맨 위 "오늘의 ○○ 브리핑"
-function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, onChange }) {
+// 메인 맨 위 브리핑. feedProfile이 있으면 로그인 회원의 '나만의 피드', 없으면 직군(role) 브리핑
+function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle, onOpenUpdate, onAll, onChange, onEditFeed }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
-  const news = useMemo(() => roleArticles(role, articles), [role, articles]);
-  const upd = useMemo(() => roleUpdates(role, allUpd), [role, allUpd]);
+  const feed = useMemo(() => (feedProfile ? compileMyFeed(feedProfile) : null), [feedProfile]);
+  // 나만의 피드 모드에서 role은 사진·이름표용 (회원 직군, 없으면 null)
+  const role = feed ? ((feedProfile.role && ROLE_BY_ID[feedProfile.role]) || null) : roleProp;
+  const roleNames = role ? [role.short, role.label] : [];
+  const news = useMemo(() => (feed ? articles.filter(a => myArticleWhy(feed, a)) : roleArticles(role, articles)), [feed, role, articles]);
+  const upd = useMemo(() => (feed ? allUpd.filter(u => myUpdateWhy(feed, u)) : roleUpdates(role, allUpd)), [feed, role, allUpd]);
+  const updWhy = u => (feed ? myUpdateWhy(feed, u) : updateRoleReasons(role, u)) || [];
   const SEEN_N = 60;
   const ids = useMemo(() => [...news.slice(0, SEEN_N).map(a => 'a:' + a.id), ...upd.slice(0, SEEN_N).map(u => 'u:' + u.id)],
     [news, upd]);
-  const fresh = useNewSince(role.id, ids, articles.length > 0 && updReady);
+  const fresh = useNewSince(feed ? 'me' : role.id, ids, articles.length > 0 && updReady);
   const [changing, setChanging] = useState(false);
   const newCount = fresh.size;
-  const why = a => articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label);
+  const why = a => ((feed ? myArticleWhy(feed, a) : articleRoleReasons(role, a)) || []).filter(w => !roleNames.includes(w));
   // 이번 주 흐름: 최근 7일 뉴스·업데이트 수, 가장 활발한 서비스, 자주 걸린 키워드
   const pulse = useMemo(() => {
     const weekNews = news.filter(a => daysAgo(a.publishedAt) <= 6);
@@ -780,38 +953,44 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
     const busiest = Object.entries(svc).sort((x, y) => y[1] - x[1])[0] || null;
     const kw = {};
     news.slice(0, 30).forEach(a => why(a).forEach(t => { kw[t] = (kw[t] || 0) + 1; }));
-    upd.slice(0, 30).forEach(u => (updateRoleReasons(role, u) || []).forEach(t => { if (t !== u.company.name) kw[t] = (kw[t] || 0) + 1; }));
-    const keywords = Object.entries(kw).filter(([t]) => t !== role.short && t !== role.label)
+    upd.slice(0, 30).forEach(u => updWhy(u).forEach(t => { if (t !== u.company.name) kw[t] = (kw[t] || 0) + 1; }));
+    const keywords = Object.entries(kw).filter(([t]) => !roleNames.includes(t))
       .sort((x, y) => y[1] - x[1]).slice(0, 6);
     return { weekNews: weekNews.length, weekUpd: weekUpd.length, busiest, keywords };
-  }, [news, upd, role]);   // eslint-disable-line
+  }, [news, upd, role, feed]);   // eslint-disable-line
   const lead = news[0];
+  const photo = role && role.photo;
   const rest = news.slice(1, 5);
   const today = `${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   return (
-    <section className="bx" aria-label={`${role.label} 브리핑`}>
-      <div className={`bx-band ${role.photo ? 'has-photo' : ''}`}
-        style={role.photo ? { '--bx-photo': `url("${role.photo}")` } : undefined}>
-        {!role.photo && (
+    <section className="bx" aria-label={feed ? '나만의 피드 브리핑' : `${role.label} 브리핑`}>
+      <div className={`bx-band ${photo ? 'has-photo' : ''}`}
+        style={photo ? { '--bx-photo': `url("${photo}")` } : undefined}>
+        {!photo && (
           <svg className="bx-rings" viewBox="0 0 200 200" aria-hidden="true">
             <circle cx="100" cy="100" r="96" /><circle cx="100" cy="100" r="70" /><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="18" />
           </svg>
         )}
         <div className="bx-band-main">
-          <span className="bx-eyebrow"><TargetIcon size={12} /> ARTIST BRIEFING <i>·</i> {today}</span>
-          <h2 className="bx-role">{role.label}</h2>
+          <span className="bx-eyebrow"><TargetIcon size={12} /> {feed ? 'MY FEED' : 'ARTIST BRIEFING'} <i>·</i> {today}</span>
+          <h2 className="bx-role">{feed ? '나만의 피드' : role.label}</h2>
           <p className="bx-band-sub">
             오늘의 브리핑
             {newCount > 0 && <span className="bx-new">지난 방문 이후 새 소식 {newCount}건</span>}
           </p>
           <div className="bx-band-actions">
-            <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
-            <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+            {feed ? (<>
+              <button type="button" className="bx-cta" onClick={onAll}>나만의 피드 전체 보기 →</button>
+              <button type="button" className="bx-ghost" onClick={onEditFeed}>관심사 수정</button>
+            </>) : (<>
+              <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
+              <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+            </>)}
           </div>
         </div>
-        {!role.photo && <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />}
+        {!photo && role && <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />}
       </div>
-      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
+      {changing && !feed && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
 
       <div className="bx-pulse">
         <div className="bx-stat"><b>{pulse.weekNews}</b><span>이번 주 뉴스</span></div>
@@ -865,7 +1044,7 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
       </div>
 
       <div className="bx-log">
-        <h3 className="bx-log-head">업데이트 로그 <span>{role.short || role.label}에 쓰는 AI 서비스 소식</span></h3>
+        <h3 className="bx-log-head">업데이트 로그 <span>{feed ? '내가 고른 서비스·키워드의 AI 서비스 소식' : `${role.short || role.label}에 쓰는 AI 서비스 소식`}</span></h3>
         {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
           <ol className="bx-log-list">
             {upd.slice(0, 6).map(u => (
@@ -888,7 +1067,8 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
   );
 }
 
-function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates, onRole, roleState }) {
+function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates, onRole, roleState, feedProfile, onMyFeed, keywordTabs, onSaveProfile }) {
+  const [editingFeed, setEditingFeed] = useState(false);
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   const sorted = useMemo(() => [...articles]
     .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
@@ -906,18 +1086,27 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
   const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
 
   return (
+    <>
+    {/* 관심사 수정 팝업은 .hm 밖에 둔다 (.hm 버튼 초기화 스타일이 팝업 버튼에 걸리지 않게) */}
+    {editingFeed && feedProfile && (
+      <ProfileModal profile={feedProfile} keywordTabs={keywordTabs} onSave={onSaveProfile} onClose={() => setEditingFeed(false)} />
+    )}
     <div className="home hm">
       <div className="hm-masthead">
         <span className="hm-date">{today}</span>
         <span className="hm-tagline">아트 제작자를 위한 AI 뉴스 큐레이션</span>
       </div>
 
-      {ROLES.length > 0 && (roleState.myRole ? (
+      {feedProfile ? (
+        <BriefingSection feedProfile={feedProfile} articles={sorted} onOpenArticle={onOpenArticle}
+          onOpenUpdate={onOpenUpdate} onAll={onMyFeed} onEditFeed={() => setEditingFeed(true)} />
+      ) : ROLES.length > 0 && (roleState.myRole ? (
         <BriefingSection role={ROLE_BY_ID[roleState.myRole]} articles={sorted} onOpenArticle={onOpenArticle}
           onOpenUpdate={onOpenUpdate} onAll={() => onRole(roleState.myRole)} onChange={roleState.setMyRole} />
       ) : !roleState.asked && (
         <RolePrompt onPick={roleState.setMyRole} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
       ))}
+
 
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
@@ -1028,6 +1217,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         </div>
       </section>
     </div>
+    </>
   );
 }
 
@@ -1109,7 +1299,7 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
-                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole }) {
+                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole, onMe, loggedIn }) {
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
@@ -1132,17 +1322,22 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
         <nav className="side-nav">
           {ROLES.length > 0 && (
             <div className="side-brief">
-              <button type="button" className={`side-brief-btn ${section === 'roles' ? 'active' : ''}`} onClick={() => onRole(myRole || null)}>
-                <span className="side-brief-icon"><TargetIcon size={18} /></span>
+              {/* 메인 서비스: 나만의 피드 (로그인 전이면 /me/에서 로그인을 안내한다) */}
+              <button type="button" className={`side-brief-btn ${section === 'me' ? 'active' : ''}`} onClick={onMe}>
+                <span className="side-brief-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" /></svg>
+                </span>
                 <span className="side-brief-text">
-                  <span className="side-brief-title">아티스트 브리핑</span>
-                  <span className="side-brief-sub">
-                    {myRole && ROLE_BY_ID[myRole] ? `${ROLE_BY_ID[myRole].short || ROLE_BY_ID[myRole].label} 맞춤 소식` : '직군별 맞춤 소식'}
-                  </span>
+                  <span className="side-brief-title">나만의 피드</span>
+                  <span className="side-brief-sub">{loggedIn ? '내 관심사 소식만' : '로그인하고 시작하기'}</span>
                 </span>
                 <svg className="side-brief-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
               </button>
-              <SideRoleSelect onPicked={id => { if (section === 'roles') onRole(id); }} />
+              <button type="button" className={`side-me ${section === 'roles' ? 'active' : ''}`} onClick={() => onRole(myRole || null)}>
+                <TargetIcon size={15} />
+                <span>아티스트 브리핑</span>
+                {myRole && ROLE_BY_ID[myRole] && <span className="side-me-role">{ROLE_BY_ID[myRole].short || ROLE_BY_ID[myRole].label}</span>}
+              </button>
             </div>
           )}
           <div className="side-group">
@@ -1564,30 +1759,6 @@ function RoleChoices({ value, onPick, className }) {
   );
 }
 
-// 사이드바 '아티스트 브리핑' 버튼 아래 — 내 직군 정하기 (예전 헤더 '내 직군' 버튼)
-function SideRoleSelect({ onPicked }) {
-  const { myRole, setMyRole } = React.useContext(BriefingContext);
-  const [open, setOpen] = useState(false);
-  const role = myRole && ROLE_BY_ID[myRole];
-  return (
-    <div className={`side-role ${open ? 'open' : ''}`}>
-      <button type="button" className="side-role-toggle" aria-expanded={open} onClick={() => setOpen(o => !o)}>
-        <span className="side-role-label">내 직군</span>
-        <span className={`side-role-value ${role ? '' : 'unset'}`}>{role ? role.label : '선택하기'}</span>
-        <svg className={`side-caret ${open ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
-      </button>
-      {open && (
-        <div className="side-role-panel">
-          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); onPicked(id); }} />
-          {role && (
-            <button type="button" className="side-role-clear" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
-
 function RolesNav({ role, onRole }) {
   return (
     <nav className="tabs-wrap">
@@ -1720,15 +1891,327 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   );
 }
 
+/* ---------- 나만의 피드 ---------- */
+function myFeedPath() { return '/me/'; }
+function compileMyFeed(profile) {
+  const topics = new Set(profile.news_topics || []);
+  const services = new Set(profile.services || []);
+  const kw = compileTerms(profile.keywords || []);
+  const role = profile.include_role && profile.role && ROLE_BY_ID[profile.role];
+  return { topics, services, kw, role };
+}
+// 기사·업데이트마다 왜 피드에 들어왔는지 (없으면 null)
+function myArticleWhy(c, a) {
+  const why = (a.keywords || []).filter(k => c.topics.has(`${a.tab}|${k}`));
+  termHits(c.kw, `${a.headline} ${a.summary}`).forEach(t => why.push(t));
+  if (!why.length && c.role && articleRoleReasons(c.role, a)) why.push(c.role.short || c.role.label);
+  return why.length ? [...new Set(why)] : null;
+}
+function myUpdateWhy(c, u) {
+  if (u.sample) return null;
+  const why = c.services.has(u.service) ? [u.company.name] : [];
+  termHits(c.kw, `${u.title} ${u.summary} ${(u.details || []).join(' ')}`).forEach(t => why.push(t));
+  if (!why.length && c.role && updateRoleReasons(c.role, u)) why.push(c.role.short || c.role.label);
+  return why.length ? [...new Set(why)] : null;
+}
+
+// 관심사 설정 (설정 페이지 /settings/ 안의 양식)
+function ProfileForm({ profile, keywordTabs, onSave, onSaved, savedLabel = '나만의 피드 보기 →' }) {
+  const init = { ...EMPTY_PROFILE, ...(profile || {}) };
+  const [role, setRole] = useState(init.role);
+  const [topics, setTopics] = useState(new Set(init.news_topics));
+  const [services, setServices] = useState(new Set(init.services));
+  const [keywords, setKeywords] = useState(init.keywords);
+  const [includeRole, setIncludeRole] = useState(init.include_role);
+  const [draft, setDraft] = useState('');
+  const [status, setStatus] = useState('');   // '' | 'saving' | 'saved' | 'error'
+  const [dirty, setDirty] = useState(false);
+  const touch = () => { setDirty(true); setStatus(''); };
+  const toggle = (set, setter, v) => { const n = new Set(set); n.has(v) ? n.delete(v) : n.add(v); setter(n); touch(); };
+  const addKeyword = () => {
+    const v = draft.trim().slice(0, 30);
+    if (v && !keywords.includes(v) && keywords.length < 20) { setKeywords([...keywords, v]); touch(); }
+    setDraft('');
+  };
+  const save = async () => {
+    setStatus('saving');
+    try {
+      await onSave({ role, news_topics: [...topics], services: [...services], keywords, include_role: includeRole });
+      setStatus('saved'); setDirty(false);
+    } catch (e) { setStatus('error'); }
+  };
+  const count = topics.size + services.size + keywords.length + (role ? 1 : 0);
+  return (
+    <div className="pe-form">
+      <section className="pe-sec">
+        <h3>직군</h3>
+        <RoleChoices value={role} onPick={id => { setRole(role === id ? null : id); touch(); }} />
+        <label className="pe-check">
+          <input type="checkbox" checked={includeRole} onChange={e => { setIncludeRole(e.target.checked); touch(); }} />
+          직군 추천 소식도 함께 보기 <span>(아티스트 브리핑과 같은 기준)</span>
+        </label>
+      </section>
+      <section className="pe-sec">
+        <h3>관심 뉴스 주제</h3>
+        {TABS.map(t => (
+          <div key={t.id} className="pe-group">
+            <div className="pe-group-name">{t.label}</div>
+            <div className="role-choices">
+              {((keywordTabs && keywordTabs[t.id]) || []).map(k => {
+                const v = `${t.id}|${k.label}`;
+                return <button key={v} type="button" className={`role-choice ${topics.has(v) ? 'active' : ''}`}
+                  aria-pressed={topics.has(v)} onClick={() => toggle(topics, setTopics, v)}>{k.label}</button>;
+              })}
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="pe-sec">
+        <h3>관심 AI 서비스 <span>공식 업데이트를 받아 볼 서비스</span></h3>
+        {UPDATE_CATS.map(c => (
+          <div key={c.slug} className="pe-group">
+            <div className="pe-group-name">{c.label}</div>
+            <div className="role-choices">
+              {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
+                <button key={co.slug} type="button" className={`role-choice ${services.has(co.slug) ? 'active' : ''}`}
+                  aria-pressed={services.has(co.slug)} onClick={() => toggle(services, setServices, co.slug)}>{co.name}</button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="pe-sec">
+        <h3>직접 입력 키워드 <span>기사·업데이트 제목과 요약에서 찾아요 (최대 20개)</span></h3>
+        <div className="pe-kw">
+          <input value={draft} maxLength={30} placeholder="예: 리깅, Unreal Engine, 텍스처"
+            onChange={e => setDraft(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); addKeyword(); } }} />
+          <button type="button" className="chip" onClick={addKeyword}>추가</button>
+        </div>
+        {keywords.length > 0 && (
+          <div className="role-choices pe-kw-list">
+            {keywords.map(k => (
+              <button key={k} type="button" className="role-choice active" onClick={() => { setKeywords(keywords.filter(x => x !== k)); touch(); }}>{k} ✕</button>
+            ))}
+          </div>
+        )}
+      </section>
+      <div className="pe-foot">
+        <span>
+          {status === 'saved' ? '저장했어요.' : status === 'error' ? '저장하지 못했어요. 잠시 후 다시 시도해 주세요.'
+            : dirty ? `${count}개 선택 · 저장하지 않은 변경이 있어요` : `${count}개 선택`}
+        </span>
+        {status === 'saved' && <button type="button" className="chip" onClick={onSaved}>{savedLabel}</button>}
+        <button type="button" className="chip active" disabled={status === 'saving'} onClick={save}>{status === 'saving' ? '저장 중…' : '저장하기'}</button>
+      </div>
+    </div>
+  );
+}
+
+// 나만의 피드의 '관심사 수정' 팝업 (설정 페이지와 같은 양식)
+function ProfileModal({ profile, keywordTabs, onSave, onClose }) {
+  useEffect(() => {
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey); document.body.classList.add('no-scroll');
+    return () => { window.removeEventListener('keydown', onKey); document.body.classList.remove('no-scroll'); };
+  }, [onClose]);
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="pe" role="dialog" aria-label="관심사 수정" onClick={e => e.stopPropagation()}>
+        <div className="pe-head">
+          <div>
+            <span className="bx-eyebrow pe-eyebrow">MY FEED</span>
+            <h2>관심사 수정</h2>
+            <p>고른 직군·주제·서비스·키워드에 맞는 소식만 나만의 피드에 모아 드려요.</p>
+          </div>
+          <button type="button" className="modal-close pe-close" onClick={onClose} aria-label="닫기">✕</button>
+        </div>
+        <div className="pe-body">
+          <ProfileForm profile={profile} keywordTabs={keywordTabs} onSave={onSave} onSaved={onClose} savedLabel="닫고 피드 보기" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// 설정 페이지 (/settings/): 계정 정보 · 관심사 · 회원 탈퇴
+function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welcome }) {
+  const [deleting, setDeleting] = useState(false);
+  const head = (
+    <div className="feed-meta feed-meta-band">
+      <div><SectionBand bandKey="settings" eyebrow="SETTINGS" title="설정" /></div>
+    </div>
+  );
+  if (!auth.enabled || !auth.user) {
+    return (<>{head}<main className="feed settings">
+      <div className="st-card">
+        <h2>로그인이 필요해요</h2>
+        <p>로그인하면 관심사를 저장하고 나만의 피드를 볼 수 있어요.</p>
+        {auth.enabled && <button type="button" className="chip active" onClick={auth.signIn}>Google로 로그인</button>}
+      </div>
+    </main></>);
+  }
+  const u = auth.user, meta = u.user_metadata || {};
+  const joined = u.created_at ? new Date(u.created_at) : null;
+  const del = async () => {
+    if (!window.confirm('탈퇴하면 계정과 저장한 관심사가 모두 지워지고 되돌릴 수 없어요. 탈퇴할까요?')) return;
+    setDeleting(true);
+    try { await auth.deleteAccount(); alert('탈퇴했어요. 그동안 이용해 주셔서 고마워요.'); window.location.href = '/'; }
+    catch (e) { setDeleting(false); alert('탈퇴하지 못했어요. 잠시 후 다시 시도하거나 문의 메일로 알려 주세요.'); }
+  };
+  return (<>
+    {head}
+    <main className="feed settings">
+      {welcome && !profileState.profile && (
+        <div className="st-welcome">
+          <strong>환영해요! 나만의 피드를 만들어 볼까요?</strong>
+          <span>아래에서 직군·관심 주제·서비스·키워드를 고르고 저장하면, 맞는 소식만 한 페이지에 모아 드려요.</span>
+        </div>
+      )}
+      <section className="st-card">
+        <h2>계정</h2>
+        <dl className="st-account">
+          <dt>이름</dt><dd>{meta.full_name || meta.name || '—'}</dd>
+          <dt>이메일</dt><dd>{u.email || '—'}</dd>
+          <dt>로그인 방식</dt><dd>Google</dd>
+          {joined && <><dt>가입일</dt><dd>{`${joined.getFullYear()}.${String(joined.getMonth() + 1).padStart(2, '0')}.${String(joined.getDate()).padStart(2, '0')}`}</dd></>}
+        </dl>
+        <div className="st-actions"><button type="button" className="chip" onClick={auth.signOut}>로그아웃</button></div>
+      </section>
+      <section className="st-card">
+        <h2>관심사 <span>나만의 피드에 모을 소식을 골라요</span></h2>
+        {profileState.loading ? <p className="feed-desc">불러오는 중이에요…</p> : (
+          <ProfileForm profile={profileState.profile} keywordTabs={keywordTabs}
+            onSave={onSave} onSaved={onMyFeed} />
+        )}
+      </section>
+      <section className="st-card st-danger">
+        <h2>회원 탈퇴</h2>
+        <p>탈퇴하면 Google 로그인 정보와 저장한 관심사가 바로 지워지고 되돌릴 수 없어요. 기사와 업데이트는 로그인 없이 계속 볼 수 있어요.</p>
+        <button type="button" className="chip st-danger-btn" disabled={deleting} onClick={del}>{deleting ? '처리 중…' : '회원 탈퇴'}</button>
+      </section>
+    </main>
+  </>);
+}
+
+function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany }) {
+  const { ready: updReady, items: allUpd } = useServiceUpdates();
+  const profile = profileState.profile;
+  const c = useMemo(() => (profile ? compileMyFeed(profile) : null), [profile]);
+  const sorted = useMemo(() => [...articles].sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '')), [articles]);
+  const news = useMemo(() => (c ? sorted.filter(a => myArticleWhy(c, a)) : []), [c, sorted]);
+  const upd = useMemo(() => (c ? allUpd.filter(u => myUpdateWhy(c, u)) : []), [c, allUpd]);
+  const [kind, setKind] = useState('news');
+  const PAGE = 30;
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => { setShown(PAGE); }, [kind, profile]);
+  const [editing, setEditing] = useState(false);
+  const role = profile && profile.role && ROLE_BY_ID[profile.role];
+  const band = (sub, children) => (
+    <div className="feed-meta feed-meta-band">
+      <div>
+        <SectionBand bandKey="me" photo={role && role.photo} eyebrow="MY FEED" title="나만의 피드">{children}</SectionBand>
+        {sub}
+      </div>
+    </div>
+  );
+  if (!auth.enabled || !auth.user) {
+    return (<>
+      {band(<p className="feed-desc">로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 한 페이지에 모아 볼 수 있어요.</p>,
+        auth.enabled && <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={auth.signIn}>Google로 로그인</button></div>)}
+    </>);
+  }
+  if (profileState.loading) return band(<p className="feed-desc">관심사를 불러오는 중이에요…</p>);
+  if (!profile) {
+    return band(<p className="feed-desc">아직 관심사가 없어요. 직군과 관심 주제를 골라 나만의 피드를 만들어 보세요.</p>,
+      <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={onEdit}>관심사 설정하기</button></div>);
+  }
+  const chips = [
+    ...(role ? [role.label] : []),
+    ...profile.news_topics.map(v => v.split('|')[1]),
+    ...profile.services.map(sl => (UPDATE_COMPANIES.find(x => x.slug === sl) || {}).name).filter(Boolean),
+    ...profile.keywords,
+  ];
+  const list = kind === 'news' ? news : upd;
+  return (<>
+    {band(<>
+      <div className="role-terms" aria-label="내 관심사">
+        {chips.slice(0, 24).map((t, i) => <span key={t + i} className="role-term">{t}</span>)}
+        {chips.length > 24 && <span className="role-term">+{chips.length - 24}개</span>}
+        {chips.length === 0 && <span className="feed-desc">고른 관심사가 없어요 — 수정에서 골라 주세요.</span>}
+      </div>
+      <div className="role-kind" role="tablist" aria-label="피드 종류">
+        <button role="tab" aria-selected={kind === 'news'} className={`chip subcat ${kind === 'news' ? 'active' : ''}`} onClick={() => setKind('news')}>
+          뉴스 <span className="count">{articlesReady ? news.length : '…'}</span>
+        </button>
+        <button role="tab" aria-selected={kind === 'updates'} className={`chip subcat ${kind === 'updates' ? 'active' : ''}`} onClick={() => setKind('updates')}>
+          업데이트 <span className="count">{updReady ? upd.length : '…'}</span>
+        </button>
+      </div>
+    </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
+    {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
+    <main className="feed">
+      {kind === 'news' ? (
+        !articlesReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
+        : news.length === 0 ? <EmptyState message="관심사에 맞는 뉴스가 아직 없어요" sub="관심 주제나 키워드를 더 골라 보세요." />
+        : <DateGroupedFeed articles={news.slice(0, shown)} onOpen={onOpenArticle} query="" expandAll />
+      ) : (
+        updReady && upd.length === 0 ? <EmptyState message="관심사에 맞는 업데이트가 아직 없어요" sub="관심 AI 서비스를 골라 보세요." />
+        : <ol className="updates-list">{upd.slice(0, shown).map(u => (
+            <UpdateRow key={u.id} u={u} showCompany onCompany={co => onCompany(co.catSlug, co.slug)} />
+          ))}</ol>
+      )}
+      {list.length > shown && (
+        <div className="updates-more">
+          <button type="button" className="chip" onClick={() => setShown(n => n + PAGE)}>더 보기 ({list.length - shown}건 남음)</button>
+        </div>
+      )}
+    </main>
+  </>);
+}
+
 /* ---------- App ---------- */
 function App() {
+  const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
-  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles' : 'news');   // 사이드바: 'news' | 'updates' | 'roles'
+  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles'
+    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings'
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
+  const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
+  const [welcome, setWelcome] = useState(false);
+  const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
+  const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
+  // 처음 로그인한 회원(관심사 없음)은 한 번 설정 페이지로 안내한다
+  useEffect(() => {
+    if (!auth.user || profileState.loading || profileState.profile || profileState.error) return;
+    try { if (localStorage.getItem('aiad:pe-asked:' + auth.user.id)) return; localStorage.setItem('aiad:pe-asked:' + auth.user.id, '1'); } catch (e) {}
+    setWelcome(true); goSettings();
+  }, [auth.user, profileState.loading, profileState.profile, profileState.error]);   // eslint-disable-line
+  const saveProfile = async (patch) => {
+    await profileState.save(patch);
+    lastSyncedRole.current = patch.role || null;
+    if ((patch.role || null) !== (roleState.myRole || null)) roleState.setMyRole(patch.role || null);
+  };
+  // 로그인 회원의 직군 = 내 직군 (기기 사이 동기화). 회원 정보를 불러오면 그 직군으로 맞추고, 사이드바에서 바꾸면 저장한다
+  const lastSyncedRole = useRef(undefined);
+  useEffect(() => {
+    const p = profileState.profile;
+    if (!p) { lastSyncedRole.current = undefined; return; }
+    if (lastSyncedRole.current === undefined) {
+      lastSyncedRole.current = p.role || null;
+      if (p.role && p.role !== roleState.myRole) roleState.setMyRole(p.role);
+    }
+  }, [profileState.profile]);   // eslint-disable-line
+  useEffect(() => {
+    if (!profileState.profile || lastSyncedRole.current === undefined) return;
+    if ((roleState.myRole || null) === lastSyncedRole.current) return;
+    lastSyncedRole.current = roleState.myRole || null;
+    profileState.save({ role: roleState.myRole || null }).catch(() => {});
+  }, [roleState.myRole]);   // eslint-disable-line
   const goRole = (id) => { setSection('roles'); setRole(id || null); window.scrollTo({ top: 0 }); };
   const [sideOpen, setSideOpen] = useState(false);    // 좁은 화면에서 사이드바 서랍 (✕나 바깥을 눌러야만 닫힌다)
   const [updCat, setUpdCat] = useState(INITIAL_ROUTE.updCat || null);          // 업데이트 › 분야 (slug)
@@ -1808,7 +2291,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : route.roles ? 'roles' : 'news');
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : 'news');
+      if (route.me || route.settings) { setOpen(null); return; }
       if (route.roles) { setOpen(null); setRole(route.role || null); return; }
       if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
@@ -1864,7 +2348,7 @@ function App() {
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section === 'news' && !onArticle && query.trim()) return;
     const path = section === 'updates' ? updatesPath(updCat, updCompany)
-      : section === 'roles' ? rolesPath(role) : routePath(viewHome, activeTab, activeKeyword);
+      : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : section === 'settings' ? '/settings/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
@@ -1898,6 +2382,9 @@ function App() {
     <BriefingContext.Provider value={briefing}>
     <div className="page">
       <Header
+        auth={auth}
+        onMyFeed={goMe}
+        onSettings={goSettings}
         query={query}
         onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewHome(false); } }}
         theme={theme}
@@ -1922,12 +2409,29 @@ function App() {
         updCompany={updCompany}
         onUpdCompany={(cat, company) => goUpdates(cat, company)}
         onRole={(id) => { goRole(id); setSideOpen(false); }}
+        onMe={() => { goMe(); setSideOpen(false); }}
+        loggedIn={!!auth.user}
         subcats={subcats}
         keyword={activeKeyword}
         onKeyword={(k) => { setKeyword(k); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">
-      {section === 'roles' ? (
+      {section === 'settings' ? (
+        <SettingsView auth={auth} profileState={profileState} keywordTabs={keywordTabs}
+          onSave={saveProfile} onMyFeed={goMe} welcome={welcome} />
+      ) : section === 'me' ? (
+        <MyFeedView
+          auth={auth}
+          profileState={profileState}
+          onEdit={goSettings}
+          onSave={saveProfile}
+          keywordTabs={keywordTabs}
+          articles={articles}
+          articlesReady={dataState === 'ready'}
+          onOpenArticle={openArticle}
+          onCompany={(cat, company) => goUpdates(cat, company)}
+        />
+      ) : section === 'roles' ? (
         <RolesView
           role={role}
           onRole={goRole}
@@ -1974,6 +2478,10 @@ function App() {
             onAllUpdates={() => goUpdates(null, null)}
             onRole={goRole}
             roleState={roleState}
+            feedProfile={auth.user ? profileState.profile : null}
+            onMyFeed={goMe}
+            keywordTabs={keywordTabs}
+            onSaveProfile={saveProfile}
           />
         ) : dataState === 'error' ? (
           <EmptyState message="기사를 불러오지 못했어요" sub="잠시 후 새로고침해 주세요." />
@@ -2016,6 +2524,7 @@ function App() {
       </div>
       </div>
       <IosInstallHint />
+
 
       {open && (
         <ArticleModal
