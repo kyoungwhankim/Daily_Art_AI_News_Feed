@@ -1,0 +1,66 @@
+# 월·목요일, Supabase(로그인 · 나만의 피드)를 깨우고 상태를 확인한다.
+# 무료 플랜은 7일 동안 활동이 없으면 일시정지되므로, 주 2회 keep_alive() 함수를 불러 활동을 남긴다.
+# 확인이 실패하면 작업이 실패해서 GitHub가 알림(메일)을 보내고, 'Supabase 점검 실패' 이슈를 연다
+# (이미 열려 있으면 댓글만 단다). 다시 성공하면 그 이슈를 닫는다.
+# 공개 키만 쓰므로 필요한 Secret은 없다. Actions 탭에서 'Run workflow'로 바로 돌릴 수도 있다.
+# 처음 한 번 supabase/schema.sql의 5) keep_alive 함수를 SQL Editor에서 실행해 두어야 한다.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    - cron: '23 0 * * 1,4'   # 월·목요일 09:23 KST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: supabase-keepalive
+  cancel-in-progress: false
+
+env:
+  ISSUE_TITLE: 'Supabase 점검 실패'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check Supabase
+        run: python3 scripts/check_supabase.py | tee check.log; exit ${PIPESTATUS[0]}
+      - name: Open or update issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          {
+            echo "Supabase 점검이 실패했다: $run_url"
+            echo
+            echo '```'
+            cat check.log 2>/dev/null || echo '(로그 없음)'
+            echo '```'
+            echo
+            echo '일시정지됐다면 Supabase 대시보드에서 프로젝트를 열고 **Restore project**를 누른다.'
+            echo '자세한 내용: docs/login-operations.md'
+          } > body.md
+          num=$(gh issue list --state open --search "\"$ISSUE_TITLE\" in:title" --json number,title \
+                --jq "map(select(.title == env.ISSUE_TITLE))[0].number // empty")
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file body.md
+          else
+            gh issue create --title "$ISSUE_TITLE" --body-file body.md
+          fi
+      - name: Close issue on success
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for num in $(gh issue list --state open --search "\"$ISSUE_TITLE\" in:title" --json number,title \
+                       --jq "map(select(.title == env.ISSUE_TITLE)) | .[].number"); do
+            gh issue close "$num" --comment "다시 정상으로 확인됐다: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          done
