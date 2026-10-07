@@ -211,6 +211,7 @@ def header(root: str) -> str:
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{root}">
+      <img class="brand-mark" src="{root}icons/logo.svg" alt="" aria-hidden="true" />
       <span class="brand-name">{esc(SITE_NAME)}</span>
       <small>{esc(SITE_TAGLINE)}</small>
     </a>

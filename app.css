@@ -1806,3 +1806,19 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 @media (max-width: 640px) {
   .sec-band.has-photo[data-band^="role:"] { background-position: 0 0, 75% 35%; }
 }
+
+/* 로고 (icons/logo.svg) + 그라데이션 글자 */
+.brand .brand-mark, .side-drawer-brand .brand-mark { width: 30px; height: 30px; transform: none; }
+.brand:hover .brand-mark { transform: scale(1.06); }
+.brand-name {
+  font-weight: 800; letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #4e54c8 0%, #3b5998 60%, #12c2e9 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+}
+[data-theme="dark"] .brand-name { background: linear-gradient(90deg, #7b80e6 0%, #6b8ccf 60%, #3fd0f0 100%);
+  -webkit-background-clip: text; background-clip: text; }
+.side-drawer-brand { display: inline-flex; align-items: center; gap: 8px; }
+.side-drawer-brand .brand-mark { width: 24px; height: 24px; }
+@media (max-width: 640px) {
+  .brand .brand-mark { width: 26px; height: 26px; }
+}

@@ -393,6 +393,7 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
         </button>
         <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+          <img className="brand-mark" src="/icons/logo.svg" alt="" aria-hidden="true" />
           <span className="brand-name">AI Art Daily</span>
           <small>한국어 큐레이션</small>
         </div>
@@ -1250,7 +1251,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
       <div ref={backdropRef} className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
       <aside ref={asideRef} className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
         <div className="side-drawer-head">
-          <span className="brand-name">AI Art Daily</span>
+          <span className="side-drawer-brand"><img className="brand-mark" src="/icons/logo.svg" alt="" aria-hidden="true" /><span className="brand-name">AI Art Daily</span></span>
           <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
         </div>
         <nav className="side-nav">
