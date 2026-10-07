@@ -40,9 +40,9 @@
   --paper-2: #11161a;
   --paper-3: #07090b;
   --card: #11161a;
-  --ink: #ecf3f6;
-  --ink-2: #c6d9e3;
-  --muted: #8aa8b9;
+  --ink: #cfd8de;
+  --ink-2: #a9b9c3;
+  --muted: #7f97a6;
   --muted-2: #54778a;
   --hairline: #26313a;
   --hairline-strong: #46596a;
@@ -1761,3 +1761,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .bx-log-list { display: flex; overflow-x: auto; gap: 10px; scroll-snap-type: x mandatory; padding-bottom: 4px; }
   .bx-log-list li { flex: 0 0 78%; scroll-snap-align: start; }
 }
+/* 다크 모드: 브리핑 머리 띠 글자도 너무 하얗지 않게 */
+[data-theme="dark"] .bx-role { color: #dbe3e8; }
+[data-theme="dark"] .bx-cta { background: #d5dde2; border-color: #d5dde2; }
