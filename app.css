@@ -1613,7 +1613,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 .side-role-label { font-size: 12px; font-weight: 700; color: var(--muted); white-space: nowrap; }
 .side-role-value { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 800; color: var(--accent-strong); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.side-role-value.empty { text-decoration: underline; text-underline-offset: 3px; }
+.side-role-value.unset { text-decoration: underline; text-underline-offset: 3px; }
 .side-role-toggle:hover { background: var(--paper-2); }
 .side-role-panel { padding: 4px 10px 10px; border-top: 1px dashed var(--hairline); }
 .side-role-panel .role-choices { gap: 6px; padding-top: 8px; }

@@ -1619,7 +1619,7 @@ function SideRoleSelect({ onPicked }) {
     <div className={`side-role ${open ? 'open' : ''}`}>
       <button type="button" className="side-role-toggle" aria-expanded={open} onClick={() => setOpen(o => !o)}>
         <span className="side-role-label">내 직군</span>
-        <span className={`side-role-value ${role ? '' : 'empty'}`}>{role ? role.label : '선택하기'}</span>
+        <span className={`side-role-value ${role ? '' : 'unset'}`}>{role ? role.label : '선택하기'}</span>
         <svg className={`side-caret ${open ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
       </button>
       {open && (
