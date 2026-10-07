@@ -1325,7 +1325,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 </span>
                 <span className="side-brief-text">
                   <span className="side-brief-title">나만의 피드</span>
-                  <span className="side-brief-sub">{loggedIn ? '내 관심사 소식 모아 보기' : '로그인하고 시작하기'}</span>
+                  <span className="side-brief-sub">{loggedIn ? '내 관심사 소식만' : '로그인하고 시작하기'}</span>
                 </span>
                 <svg className="side-brief-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
               </button>
