@@ -158,7 +158,7 @@ def load():
 
 # PWA: 앱 설치 정보 + 오프라인 캐시(service worker) 등록 — 피드 앱 페이지 공통
 PWA_HEAD = """<link rel="manifest" href="/manifest.webmanifest" />
-<meta name="theme-color" content="#553333" />
+<meta name="theme-color" content="#444444" />
 <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
 <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -211,8 +211,8 @@ def header(root: str) -> str:
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{root}">
+      <img class="brand-mark" src="{root}icons/logo.svg" alt="" aria-hidden="true" />
       <span class="brand-name">{esc(SITE_NAME)}</span>
-      <small>{esc(SITE_TAGLINE)}</small>
     </a>
     <nav class="static-nav">
       {''.join(f'<a href="{href(root, tab_path(t))}">{esc(label)}</a>' for t, label, _ in TABS)}

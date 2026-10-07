@@ -270,8 +270,8 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
         </button>
         <div className="brand" onClick={() => { onQuery(''); onShowHome && onShowHome(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+          <img className="brand-mark" src="/icons/logo.svg" alt="" aria-hidden="true" />
           <span className="brand-name">AI Art Daily</span>
-          <small>한국어 큐레이션</small>
         </div>
         <div className="header-actions">
           <label className="search">
@@ -306,7 +306,6 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu }) {
               </svg>
             </button>
           )}
-          <RolePicker />
           <button className="icon-btn" title={theme === 'dark' ? '라이트 모드' : '다크 모드'} onClick={onToggleTheme}>
             {theme === 'dark' ? (
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -384,6 +383,22 @@ function SubCategoryBar({ items, total, active, onChange }) {
 }
 
 /* ---------- feed meta ---------- */
+// 뉴스·업데이트 중분류 머리 띠 (config.js bands에 사진을 넣으면 배경 사진, 없으면 색 띠)
+const SECTION_BANDS = window.AIAD.bands || {};
+function SectionBand({ bandKey, eyebrow, title, photo: photoProp, children }) {
+  const photo = photoProp || SECTION_BANDS[bandKey];
+  return (
+    <div className={`sec-band ${photo ? 'has-photo' : ''}`} data-band={bandKey}
+      style={photo ? { '--bx-photo': `url("${photo}")` } : undefined}>
+      <div className="sec-band-main">
+        {eyebrow && <span className="bx-eyebrow">{eyebrow}</span>}
+        <h1 className="sec-band-title">{title}</h1>
+        {children}
+      </div>
+    </div>
+  );
+}
+
 function FeedMeta({ activeTab, count, query, keyword }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
@@ -398,16 +413,23 @@ function FeedMeta({ activeTab, count, query, keyword }) {
   const activeDesc = !query
     ? (TABS.find(t => t.id === activeTab) || {}).desc
     : null;
+  if (!query) {
+    return (
+      <div className="feed-meta feed-meta-band">
+        <div>
+          <SectionBand bandKey={`news:${activeTab}`} eyebrow="NEWS" title={title} />
+          <div className="feed-sub">{sub}</div>
+          {activeDesc && <p className="feed-desc">{activeDesc}</p>}
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="feed-meta">
       <div>
         <h1 className="feed-title">{title}</h1>
         <div className="feed-sub">{sub}</div>
-        {activeDesc && <p className="feed-desc">{activeDesc}</p>}
       </div>
-      {!query && (
-        <div className="feed-toolbar"></div>
-      )}
     </div>
   );
 }
@@ -738,7 +760,6 @@ function useNewSince(roleId, ids, ready) {
 }
 
 // 메인 맨 위 "오늘의 ○○ 브리핑"
-const BRIEF_N = 5;
 function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, onChange }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const news = useMemo(() => roleArticles(role, articles), [role, articles]);
@@ -749,63 +770,119 @@ function BriefingSection({ role, articles, onOpenArticle, onOpenUpdate, onAll, o
   const fresh = useNewSince(role.id, ids, articles.length > 0 && updReady);
   const [changing, setChanging] = useState(false);
   const newCount = fresh.size;
+  const why = a => articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label);
+  // 이번 주 흐름: 최근 7일 뉴스·업데이트 수, 가장 활발한 서비스, 자주 걸린 키워드
+  const pulse = useMemo(() => {
+    const weekNews = news.filter(a => daysAgo(a.publishedAt) <= 6);
+    const weekUpd = upd.filter(u => !u.dateMonthOnly && daysAgo(u.date) <= 6);
+    const svc = {};
+    upd.filter(u => !u.dateMonthOnly && daysAgo(u.date) <= 13).forEach(u => { svc[u.company.name] = (svc[u.company.name] || 0) + 1; });
+    const busiest = Object.entries(svc).sort((x, y) => y[1] - x[1])[0] || null;
+    const kw = {};
+    news.slice(0, 30).forEach(a => why(a).forEach(t => { kw[t] = (kw[t] || 0) + 1; }));
+    upd.slice(0, 30).forEach(u => (updateRoleReasons(role, u) || []).forEach(t => { if (t !== u.company.name) kw[t] = (kw[t] || 0) + 1; }));
+    const keywords = Object.entries(kw).filter(([t]) => t !== role.short && t !== role.label)
+      .sort((x, y) => y[1] - x[1]).slice(0, 6);
+    return { weekNews: weekNews.length, weekUpd: weekUpd.length, busiest, keywords };
+  }, [news, upd, role]);   // eslint-disable-line
+  const lead = news[0];
+  const rest = news.slice(1, 5);
+  const today = `${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   return (
-    <section className="brief" aria-label={`${role.label} 브리핑`}>
-      <div className="brief-head">
-        <div>
-          <span className="brief-eyebrow"><TargetIcon size={12} /> 아티스트 브리핑</span>
-          <h2 className="brief-title">오늘의 {role.label} 브리핑</h2>
-          <p className="brief-sub">
-            {newCount > 0 ? <b className="brief-new">지난 방문 이후 새 소식 {newCount}건</b> : '관련 뉴스와 업데이트를 최신순으로 골랐어요'}
-            <span> · 뉴스 {news.length} · 업데이트 {updReady ? upd.length : '…'}</span>
+    <section className="bx" aria-label={`${role.label} 브리핑`}>
+      <div className={`bx-band ${role.photo ? 'has-photo' : ''}`}
+        style={role.photo ? { '--bx-photo': `url("${role.photo}")` } : undefined}>
+        {!role.photo && (
+          <svg className="bx-rings" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="96" /><circle cx="100" cy="100" r="70" /><circle cx="100" cy="100" r="44" /><circle cx="100" cy="100" r="18" />
+          </svg>
+        )}
+        <div className="bx-band-main">
+          <span className="bx-eyebrow"><TargetIcon size={12} /> ARTIST BRIEFING <i>·</i> {today}</span>
+          <h2 className="bx-role">{role.label}</h2>
+          <p className="bx-band-sub">
+            오늘의 브리핑
+            {newCount > 0 && <span className="bx-new">지난 방문 이후 새 소식 {newCount}건</span>}
           </p>
+          <div className="bx-band-actions">
+            <button type="button" className="bx-cta" onClick={onAll}>브리핑 전체 보기 →</button>
+            <button type="button" className="bx-ghost" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
+          </div>
         </div>
-        <div className="brief-actions">
-          <button type="button" className="brief-link muted" onClick={() => setChanging(c => !c)}>{changing ? '닫기' : '직군 바꾸기'}</button>
-          <button type="button" className="hm-more" onClick={onAll}>브리핑 전체 보기 →</button>
-        </div>
+        {!role.photo && <img className="bx-art" src={`/icons/roles/${role.id}.svg`} alt="" aria-hidden="true" />}
       </div>
-      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="brief-change" />}
-      <div className="brief-cols">
-        <div className="brief-col">
-          <h3 className="brief-col-head">뉴스</h3>
-          {news.length === 0 ? <p className="brief-empty">아직 관련 뉴스가 없어요.</p> : (
-            <ol className="brief-list">
-              {news.slice(0, BRIEF_N).map(a => (
-                <li key={a.id}>
-                  <button type="button" className="brief-item" onClick={() => onOpenArticle(a)}>
-                    <span className="brief-item-top">
+      {changing && <RoleChoices value={role.id} onPick={id => { onChange(id); setChanging(false); }} className="bx-change" />}
+
+      <div className="bx-pulse">
+        <div className="bx-stat"><b>{pulse.weekNews}</b><span>이번 주 뉴스</span></div>
+        <div className="bx-stat"><b>{updReady ? pulse.weekUpd : '…'}</b><span>이번 주 업데이트</span></div>
+        <div className="bx-stat bx-stat-svc"><b>{pulse.busiest ? pulse.busiest[0] : '—'}</b><span>요즘 가장 활발한 서비스</span></div>
+        {pulse.keywords.length > 0 && (
+          <div className="bx-kw">
+            <span className="bx-kw-label">자주 보이는 키워드</span>
+            <span className="bx-kw-list">
+              {pulse.keywords.map(([t, n]) => <span key={t} className="bx-kw-chip">#{t}<i>{n}</i></span>)}
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="bx-body">
+        {lead ? (
+          <button type="button" className="bx-lead" onClick={() => onOpenArticle(lead)}>
+            <span className="bx-lead-img">
+              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+              {fresh.has('a:' + lead.id) && <span className="brief-dot bx-lead-new">NEW</span>}
+            </span>
+            <span className="bx-lead-body">
+              <span className="bx-why">{why(lead).slice(0, 3).map(t => <span key={t}>#{t}</span>)}</span>
+              <span className="bx-lead-title">{lead.headline}</span>
+              <span className="bx-lead-summary">{lead.summary}</span>
+              <span className="hm-meta">{lead.source} · {lead.publishedAt}</span>
+            </span>
+          </button>
+        ) : <p className="brief-empty">아직 관련 뉴스가 없어요.</p>}
+        {rest.length > 0 && (
+          <ol className="bx-list">
+            {rest.map((a, i) => (
+              <li key={a.id}>
+                <button type="button" className="bx-item" onClick={() => onOpenArticle(a)}>
+                  <span className="bx-num">{String(i + 2).padStart(2, '0')}</span>
+                  <span className="bx-item-text">
+                    <span className="bx-item-top">
                       {fresh.has('a:' + a.id) && <span className="brief-dot">NEW</span>}
-                      <span className="brief-why">{articleRoleReasons(role, a).filter(w => w !== role.short && w !== role.label).slice(0, 2).join(' · ')}</span>
+                      <span className="brief-why">{why(a).slice(0, 2).join(' · ')}</span>
                     </span>
-                    <span className="brief-item-title">{a.headline}</span>
+                    <span className="bx-item-title">{a.headline}</span>
                     <span className="hm-meta">{a.source} · {a.publishedAt}</span>
-                  </button>
-                </li>
-              ))}
-            </ol>
-          )}
-        </div>
-        <div className="brief-col">
-          <h3 className="brief-col-head">AI 서비스 업데이트</h3>
-          {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
-            <ol className="brief-list">
-              {upd.slice(0, BRIEF_N).map(u => (
-                <li key={u.id}>
-                  <button type="button" className="brief-item" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
-                    <span className="brief-item-top">
-                      {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
-                      <span className="hm-upd-service">{u.company.name}</span>
-                      <span className="update-cat">{u.kind}</span>
-                    </span>
-                    <span className="brief-item-title">{u.title}</span>
-                    {!u.dateMonthOnly && <span className="hm-meta">{u.date}</span>}
-                  </button>
-                </li>
-              ))}
-            </ol>
-          )}
-        </div>
+                  </span>
+                  <span className="bx-item-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
+      </div>
+
+      <div className="bx-log">
+        <h3 className="bx-log-head">업데이트 로그 <span>{role.short || role.label}에 쓰는 AI 서비스 소식</span></h3>
+        {updReady && upd.length === 0 ? <p className="brief-empty">아직 관련 업데이트가 없어요.</p> : (
+          <ol className="bx-log-list">
+            {upd.slice(0, 6).map(u => (
+              <li key={u.id}>
+                <button type="button" className="bx-log-item" onClick={() => onOpenUpdate(u.company.catSlug, u.company.slug)}>
+                  <span className="bx-log-top">
+                    <span className="bx-log-svc">{u.company.name}</span>
+                    <span className="update-cat">{u.kind}</span>
+                    {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
+                  </span>
+                  <span className="bx-log-title">{u.title}</span>
+                  <span className="hm-meta">{u.dateMonthOnly ? u.date.slice(0, 7) : u.date}</span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
       </div>
     </section>
   );
@@ -1049,7 +1126,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
       <div ref={backdropRef} className={`sidebar-backdrop ${open ? 'open' : ''}`} onClick={onClose} />
       <aside ref={asideRef} className={`sidebar ${open ? 'open' : ''}`} aria-label="카테고리">
         <div className="side-drawer-head">
-          <span className="brand-name">AI Art Daily</span>
+          <span className="side-drawer-brand"><img className="brand-mark" src="/icons/logo.svg" alt="" aria-hidden="true" /><span className="brand-name">AI Art Daily</span></span>
           <button type="button" className="side-close" aria-label="메뉴 닫기" onClick={onClose}>✕</button>
         </div>
         <nav className="side-nav">
@@ -1065,6 +1142,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 </span>
                 <svg className="side-brief-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
               </button>
+              <SideRoleSelect onPicked={id => { if (section === 'roles') onRole(id); }} />
             </div>
           )}
           <div className="side-group">
@@ -1320,7 +1398,7 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   const PAGE = 30;
   const [shown, setShown] = useState(PAGE);
   useEffect(() => { setShown(PAGE); }, [cat, company]);
-  const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
+  const title = catObj ? catObj.label : '업데이트';   // 머리 띠 제목은 중분류 (서비스를 골라도 유지)
   const desc = comp
     ? `${comp.maker ? `${comp.maker}의 ` : ''}${comp.name} 공식 업데이트를 최신순으로 모아 보여 드려요.`
     : catObj
@@ -1329,11 +1407,11 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   return (
     <>
       <UpdatesNav cat={cat} company={comp ? comp.slug : null} onCat={onCat} onCompany={slug => onCompany(cat, slug)} />
-      <div className="feed-meta">
+      <div className="feed-meta feed-meta-band">
         <div>
-          <h1 className="feed-title">{title}</h1>
+          <SectionBand bandKey={catObj ? `updates:${catObj.slug}` : 'updates'} eyebrow="UPDATES" title={title} />
           <div className="feed-sub">
-            {comp ? `${catObj.label}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
+            {comp ? `${comp.name}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
           </div>
           <p className="feed-desc">{desc}</p>
         </div>
@@ -1446,7 +1524,7 @@ function useMyRole() {
   const dismiss = () => { writeLS(ROLE_ASKED_KEY, '1'); setAskedState(true); };
   return { myRole, setMyRole, asked, dismiss };
 }
-const BriefingContext = React.createContext({ myRole: null, setMyRole() {}, openBriefing() {} });
+const BriefingContext = React.createContext({ myRole: null, setMyRole() {} });
 
 // 목록·기사 창에 붙는 "왜 추천됐는지" 표시 (내 직군과 맞을 때만)
 function RoleTag({ article, update, compact }) {
@@ -1486,41 +1564,24 @@ function RoleChoices({ value, onPick, className }) {
   );
 }
 
-// 헤더의 내 직군 표시 + 메뉴
-function RolePicker() {
-  const { myRole, setMyRole, openBriefing } = React.useContext(BriefingContext);
+// 사이드바 '아티스트 브리핑' 버튼 아래 — 내 직군 정하기 (예전 헤더 '내 직군' 버튼)
+function SideRoleSelect({ onPicked }) {
+  const { myRole, setMyRole } = React.useContext(BriefingContext);
   const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-  useEffect(() => {
-    if (!open) return;
-    const onDown = e => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
-    const onKey = e => { if (e.key === 'Escape') setOpen(false); };
-    document.addEventListener('mousedown', onDown); document.addEventListener('touchstart', onDown);
-    document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('mousedown', onDown); document.removeEventListener('touchstart', onDown); document.removeEventListener('keydown', onKey); };
-  }, [open]);
-  if (!ROLES.length) return null;
   const role = myRole && ROLE_BY_ID[myRole];
   return (
-    <div className="role-picker" ref={ref}>
-      <button type="button" className={`role-pill ${role ? 'set' : ''}`} aria-haspopup="dialog" aria-expanded={open}
-        title="아티스트 브리핑 — 내 직군" onClick={() => setOpen(o => !o)}>
-        <TargetIcon size={15} />
-        <span className="role-pill-label">{role ? (role.short || role.label) : '내 직군'}</span>
-        <svg className="role-pill-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6"><path d="m6 9 6 6 6-6" /></svg>
+    <div className={`side-role ${open ? 'open' : ''}`}>
+      <button type="button" className="side-role-toggle" aria-expanded={open} onClick={() => setOpen(o => !o)}>
+        <span className="side-role-label">내 직군</span>
+        <span className={`side-role-value ${role ? '' : 'unset'}`}>{role ? role.label : '선택하기'}</span>
+        <svg className={`side-caret ${open ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
       </button>
       {open && (
-        <div className="role-menu" role="dialog" aria-label="내 직군 고르기">
-          <div className="role-menu-head">
-            <strong>아티스트 브리핑</strong>
-            <span>직군을 고르면 사이트 곳곳에서 관련 소식을 먼저 골라 드려요.</span>
-          </div>
-          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); }} />
-          <div className="role-menu-foot">
-            {role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(myRole); }}>내 브리핑 보기 →</button>}
-            {role && <button type="button" className="role-menu-link muted" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>}
-            {!role && <button type="button" className="role-menu-link" onClick={() => { setOpen(false); openBriefing(null); }}>직군별 브리핑 둘러보기 →</button>}
-          </div>
+        <div className="side-role-panel">
+          <RoleChoices value={myRole} onPick={id => { setMyRole(id); setOpen(false); onPicked(id); }} />
+          {role && (
+            <button type="button" className="side-role-clear" onClick={() => { setMyRole(null); setOpen(false); }}>선택 해제</button>
+          )}
         </div>
       )}
     </div>
@@ -1595,18 +1656,19 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   return (
     <>
       <RolesNav role={role} onRole={onRole} />
-      <div className="feed-meta">
+      <div className="feed-meta feed-meta-band">
         <div>
-          <div className="role-title-row">
-            <h1 className="feed-title">{r.label} 브리핑</h1>
-            {myRole === r.id ? (
-              <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
-            ) : (
-              <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
-                <TargetIcon size={13} /> 내 직군으로 설정
-              </button>
-            )}
-          </div>
+          <SectionBand bandKey={`role:${r.id}`} photo={r.photo} eyebrow="ARTIST BRIEFING" title={`${r.label} 브리핑`}>
+            <div className="sec-band-actions">
+              {myRole === r.id ? (
+                <span className="role-mine-badge"><TargetIcon size={12} /> 내 직군</span>
+              ) : (
+                <button type="button" className="role-set-btn" onClick={() => setMyRole(r.id)}>
+                  <TargetIcon size={13} /> 내 직군으로 설정
+                </button>
+              )}
+            </div>
+          </SectionBand>
           <div className="feed-sub">{r.desc}</div>
           <div className="role-terms" aria-label="추천 키워드">
             {terms.map(t => <span key={t} className="role-term">{t}</span>)}
@@ -1661,7 +1723,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
 /* ---------- App ---------- */
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
-  const accent = '#c2410c';
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
@@ -1775,7 +1836,6 @@ function App() {
   // theme
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document.documentElement.style.setProperty('--accent', accent);
     localStorage.setItem('aiad:theme', theme);
   }, [theme]);
 
@@ -1831,7 +1891,7 @@ function App() {
   // groupByDate flag
   const groupByDate = true;
 
-  const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole, openBriefing: goRole }),
+  const briefing = useMemo(() => ({ myRole: roleState.myRole, setMyRole: roleState.setMyRole }),
     [roleState.myRole]);   // eslint-disable-line
 
   return (
