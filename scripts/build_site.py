@@ -830,6 +830,12 @@ def main():
                                       collection('me/', '나만의 피드', me_desc))
           .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
 
+    st_desc = '계정 정보, 나만의 피드 관심사, 회원 탈퇴를 관리해요.'
+    write(out, 'settings/index.html', shell('settings/', f'설정 | {SITE_NAME}', st_desc,
+                                            f'<h1 class="feed-title">설정</h1><p class="feed-sub">{esc(st_desc)}</p>',
+                                            collection('settings/', '설정', st_desc))
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(build_404()))

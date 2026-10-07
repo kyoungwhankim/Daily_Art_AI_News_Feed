@@ -39,6 +39,9 @@ function parseRoute(pathname) {
   if (parts[0] === 'articles' && parts[1]) {
     return { home: false, tab: null, kwSlug: null, articleId: parts[1] };
   }
+  if (parts[0] === 'settings') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, settings: true };
+  }
   if (parts[0] === 'me') {
     return { home: false, tab: null, kwSlug: null, articleId: null, me: true };
   }
@@ -358,7 +361,7 @@ function GoogleMark() {
 }
 
 // 헤더의 로그인 버튼 / 로그인 후 프로필 메뉴
-function AccountButton({ auth, onMyFeed, onEditProfile }) {
+function AccountButton({ auth, onMyFeed, onSettings }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
   useEffect(() => {
@@ -395,19 +398,11 @@ function AccountButton({ auth, onMyFeed, onEditProfile }) {
           <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onMyFeed(); }}>
             나만의 피드
           </button>
-          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onEditProfile(); }}>
-            관심사 설정
+          <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onSettings(); }}>
+            설정
           </button>
           <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); auth.signOut(); }}>
             로그아웃
-          </button>
-          <button type="button" role="menuitem" className="account-item account-danger" onClick={async () => {
-            setOpen(false);
-            if (!window.confirm('탈퇴하면 계정과 저장한 관심사가 모두 지워지고 되돌릴 수 없어요. 탈퇴할까요?')) return;
-            try { await auth.deleteAccount(); alert('탈퇴했어요. 그동안 이용해 주셔서 고마워요.'); }
-            catch (e) { alert('탈퇴하지 못했어요. 잠시 후 다시 시도하거나 문의 메일로 알려 주세요.'); }
-          }}>
-            회원 탈퇴
           </button>
         </div>
       )}
@@ -416,7 +411,7 @@ function AccountButton({ auth, onMyFeed, onEditProfile }) {
 }
 
 /* ---------- header ---------- */
-function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth, onMyFeed, onEditProfile }) {
+function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth, onMyFeed, onSettings }) {
   const inputRef = useRef(null);
   const install = useInstallPrompt();
   // 좁은 화면에선 검색창을 숨겨 두고, 돋보기 버튼을 누르면 헤더 아래 한 줄로 펼친다
@@ -489,7 +484,7 @@ function Header({ query, onQuery, theme, onToggleTheme, onShowHome, onMenu, auth
               </svg>
             )}
           </button>
-          <AccountButton auth={auth} onMyFeed={onMyFeed} onEditProfile={onEditProfile} />
+          <AccountButton auth={auth} onMyFeed={onMyFeed} onSettings={onSettings} />
         </div>
       </div>
     </header>
@@ -1922,8 +1917,8 @@ function myUpdateWhy(c, u) {
   return why.length ? [...new Set(why)] : null;
 }
 
-// 관심사 설정 창 (처음 로그인했을 때 · 계정 메뉴 '관심사 설정' · 나만의 피드 '수정')
-function ProfileEditor({ profile, keywordTabs, onSave, onClose, first }) {
+// 관심사 설정 (설정 페이지 /settings/ 안의 양식)
+function ProfileForm({ profile, keywordTabs, onSave, onSaved, savedLabel = '나만의 피드 보기 →' }) {
   const init = { ...EMPTY_PROFILE, ...(profile || {}) };
   const [role, setRole] = useState(init.role);
   const [topics, setTopics] = useState(new Set(init.news_topics));
@@ -1931,103 +1926,177 @@ function ProfileEditor({ profile, keywordTabs, onSave, onClose, first }) {
   const [keywords, setKeywords] = useState(init.keywords);
   const [includeRole, setIncludeRole] = useState(init.include_role);
   const [draft, setDraft] = useState('');
-  const [saving, setSaving] = useState(false);
-  const toggle = (set, setter, v) => { const n = new Set(set); n.has(v) ? n.delete(v) : n.add(v); setter(n); };
+  const [status, setStatus] = useState('');   // '' | 'saving' | 'saved' | 'error'
+  const [dirty, setDirty] = useState(false);
+  const touch = () => { setDirty(true); setStatus(''); };
+  const toggle = (set, setter, v) => { const n = new Set(set); n.has(v) ? n.delete(v) : n.add(v); setter(n); touch(); };
   const addKeyword = () => {
     const v = draft.trim().slice(0, 30);
-    if (v && !keywords.includes(v) && keywords.length < 20) setKeywords([...keywords, v]);
+    if (v && !keywords.includes(v) && keywords.length < 20) { setKeywords([...keywords, v]); touch(); }
     setDraft('');
   };
+  const save = async () => {
+    setStatus('saving');
+    try {
+      await onSave({ role, news_topics: [...topics], services: [...services], keywords, include_role: includeRole });
+      setStatus('saved'); setDirty(false);
+    } catch (e) { setStatus('error'); }
+  };
+  const count = topics.size + services.size + keywords.length + (role ? 1 : 0);
+  return (
+    <div className="pe-form">
+      <section className="pe-sec">
+        <h3>직군</h3>
+        <RoleChoices value={role} onPick={id => { setRole(role === id ? null : id); touch(); }} />
+        <label className="pe-check">
+          <input type="checkbox" checked={includeRole} onChange={e => { setIncludeRole(e.target.checked); touch(); }} />
+          직군 추천 소식도 함께 보기 <span>(아티스트 브리핑과 같은 기준)</span>
+        </label>
+      </section>
+      <section className="pe-sec">
+        <h3>관심 뉴스 주제</h3>
+        {TABS.map(t => (
+          <div key={t.id} className="pe-group">
+            <div className="pe-group-name">{t.label}</div>
+            <div className="role-choices">
+              {((keywordTabs && keywordTabs[t.id]) || []).map(k => {
+                const v = `${t.id}|${k.label}`;
+                return <button key={v} type="button" className={`role-choice ${topics.has(v) ? 'active' : ''}`}
+                  aria-pressed={topics.has(v)} onClick={() => toggle(topics, setTopics, v)}>{k.label}</button>;
+              })}
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="pe-sec">
+        <h3>관심 AI 서비스 <span>공식 업데이트를 받아 볼 서비스</span></h3>
+        {UPDATE_CATS.map(c => (
+          <div key={c.slug} className="pe-group">
+            <div className="pe-group-name">{c.label}</div>
+            <div className="role-choices">
+              {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
+                <button key={co.slug} type="button" className={`role-choice ${services.has(co.slug) ? 'active' : ''}`}
+                  aria-pressed={services.has(co.slug)} onClick={() => toggle(services, setServices, co.slug)}>{co.name}</button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="pe-sec">
+        <h3>직접 입력 키워드 <span>기사·업데이트 제목과 요약에서 찾아요 (최대 20개)</span></h3>
+        <div className="pe-kw">
+          <input value={draft} maxLength={30} placeholder="예: 리깅, Unreal Engine, 텍스처"
+            onChange={e => setDraft(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); addKeyword(); } }} />
+          <button type="button" className="chip" onClick={addKeyword}>추가</button>
+        </div>
+        {keywords.length > 0 && (
+          <div className="role-choices pe-kw-list">
+            {keywords.map(k => (
+              <button key={k} type="button" className="role-choice active" onClick={() => { setKeywords(keywords.filter(x => x !== k)); touch(); }}>{k} ✕</button>
+            ))}
+          </div>
+        )}
+      </section>
+      <div className="pe-foot">
+        <span>
+          {status === 'saved' ? '저장했어요.' : status === 'error' ? '저장하지 못했어요. 잠시 후 다시 시도해 주세요.'
+            : dirty ? `${count}개 선택 · 저장하지 않은 변경이 있어요` : `${count}개 선택`}
+        </span>
+        {status === 'saved' && <button type="button" className="chip" onClick={onSaved}>{savedLabel}</button>}
+        <button type="button" className="chip active" disabled={status === 'saving'} onClick={save}>{status === 'saving' ? '저장 중…' : '저장하기'}</button>
+      </div>
+    </div>
+  );
+}
+
+// 나만의 피드의 '관심사 수정' 팝업 (설정 페이지와 같은 양식)
+function ProfileModal({ profile, keywordTabs, onSave, onClose }) {
   useEffect(() => {
     const onKey = e => { if (e.key === 'Escape') onClose(); };
     window.addEventListener('keydown', onKey); document.body.classList.add('no-scroll');
     return () => { window.removeEventListener('keydown', onKey); document.body.classList.remove('no-scroll'); };
   }, [onClose]);
-  const save = async () => {
-    setSaving(true);
-    try {
-      await onSave({ role, news_topics: [...topics], services: [...services], keywords, include_role: includeRole });
-      onClose();
-    } catch (e) { setSaving(false); alert('저장하지 못했어요. 잠시 후 다시 시도해 주세요.'); }
-  };
-  const count = topics.size + services.size + keywords.length + (role ? 1 : 0);
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="pe" role="dialog" aria-label="관심사 설정" onClick={e => e.stopPropagation()}>
+      <div className="pe" role="dialog" aria-label="관심사 수정" onClick={e => e.stopPropagation()}>
         <div className="pe-head">
           <div>
             <span className="bx-eyebrow pe-eyebrow">MY FEED</span>
-            <h2>{first ? '나만의 피드를 만들어 볼까요?' : '관심사 설정'}</h2>
-            <p>고른 직군·주제·서비스·키워드에 맞는 뉴스와 업데이트만 한 페이지에 모아 드려요. 언제든 바꿀 수 있어요.</p>
+            <h2>관심사 수정</h2>
+            <p>고른 직군·주제·서비스·키워드에 맞는 소식만 나만의 피드에 모아 드려요.</p>
           </div>
           <button type="button" className="modal-close pe-close" onClick={onClose} aria-label="닫기">✕</button>
         </div>
         <div className="pe-body">
-          <section className="pe-sec">
-            <h3>직군</h3>
-            <RoleChoices value={role} onPick={id => setRole(role === id ? null : id)} />
-            <label className="pe-check">
-              <input type="checkbox" checked={includeRole} onChange={e => setIncludeRole(e.target.checked)} />
-              직군 추천 소식도 함께 보기 <span>(아티스트 브리핑과 같은 기준)</span>
-            </label>
-          </section>
-          <section className="pe-sec">
-            <h3>관심 뉴스 주제</h3>
-            {TABS.map(t => (
-              <div key={t.id} className="pe-group">
-                <div className="pe-group-name">{t.label}</div>
-                <div className="role-choices">
-                  {((keywordTabs && keywordTabs[t.id]) || []).map(k => {
-                    const v = `${t.id}|${k.label}`;
-                    return <button key={v} type="button" className={`role-choice ${topics.has(v) ? 'active' : ''}`}
-                      aria-pressed={topics.has(v)} onClick={() => toggle(topics, setTopics, v)}>{k.label}</button>;
-                  })}
-                </div>
-              </div>
-            ))}
-          </section>
-          <section className="pe-sec">
-            <h3>관심 AI 서비스 <span>공식 업데이트를 받아 볼 서비스</span></h3>
-            {UPDATE_CATS.map(c => (
-              <div key={c.slug} className="pe-group">
-                <div className="pe-group-name">{c.label}</div>
-                <div className="role-choices">
-                  {UPDATE_COMPANIES.filter(x => x.catSlug === c.slug).map(co => (
-                    <button key={co.slug} type="button" className={`role-choice ${services.has(co.slug) ? 'active' : ''}`}
-                      aria-pressed={services.has(co.slug)} onClick={() => toggle(services, setServices, co.slug)}>{co.name}</button>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </section>
-          <section className="pe-sec">
-            <h3>직접 입력 키워드 <span>기사·업데이트 제목과 요약에서 찾아요 (최대 20개)</span></h3>
-            <div className="pe-kw">
-              <input value={draft} maxLength={30} placeholder="예: 리깅, Unreal Engine, 텍스처"
-                onChange={e => setDraft(e.target.value)}
-                onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); addKeyword(); } }} />
-              <button type="button" className="chip" onClick={addKeyword}>추가</button>
-            </div>
-            {keywords.length > 0 && (
-              <div className="role-choices pe-kw-list">
-                {keywords.map(k => (
-                  <button key={k} type="button" className="role-choice active" onClick={() => setKeywords(keywords.filter(x => x !== k))}>{k} ✕</button>
-                ))}
-              </div>
-            )}
-          </section>
-        </div>
-        <div className="pe-foot">
-          <span>{count}개 선택</span>
-          <button type="button" className="chip" onClick={onClose}>{first ? '나중에' : '취소'}</button>
-          <button type="button" className="chip active" disabled={saving} onClick={save}>{saving ? '저장 중…' : '저장하기'}</button>
+          <ProfileForm profile={profile} keywordTabs={keywordTabs} onSave={onSave} onSaved={onClose} savedLabel="닫고 피드 보기" />
         </div>
       </div>
     </div>
   );
 }
 
-function MyFeedView({ auth, profileState, onEdit, articles, articlesReady, onOpenArticle, onCompany }) {
+// 설정 페이지 (/settings/): 계정 정보 · 관심사 · 회원 탈퇴
+function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welcome }) {
+  const [deleting, setDeleting] = useState(false);
+  const head = (
+    <div className="feed-meta feed-meta-band">
+      <div><SectionBand bandKey="settings" eyebrow="SETTINGS" title="설정" /></div>
+    </div>
+  );
+  if (!auth.enabled || !auth.user) {
+    return (<>{head}<main className="feed settings">
+      <div className="st-card">
+        <h2>로그인이 필요해요</h2>
+        <p>로그인하면 관심사를 저장하고 나만의 피드를 볼 수 있어요.</p>
+        {auth.enabled && <button type="button" className="chip active" onClick={auth.signIn}>Google로 로그인</button>}
+      </div>
+    </main></>);
+  }
+  const u = auth.user, meta = u.user_metadata || {};
+  const joined = u.created_at ? new Date(u.created_at) : null;
+  const del = async () => {
+    if (!window.confirm('탈퇴하면 계정과 저장한 관심사가 모두 지워지고 되돌릴 수 없어요. 탈퇴할까요?')) return;
+    setDeleting(true);
+    try { await auth.deleteAccount(); alert('탈퇴했어요. 그동안 이용해 주셔서 고마워요.'); window.location.href = '/'; }
+    catch (e) { setDeleting(false); alert('탈퇴하지 못했어요. 잠시 후 다시 시도하거나 문의 메일로 알려 주세요.'); }
+  };
+  return (<>
+    {head}
+    <main className="feed settings">
+      {welcome && !profileState.profile && (
+        <div className="st-welcome">
+          <strong>환영해요! 나만의 피드를 만들어 볼까요?</strong>
+          <span>아래에서 직군·관심 주제·서비스·키워드를 고르고 저장하면, 맞는 소식만 한 페이지에 모아 드려요.</span>
+        </div>
+      )}
+      <section className="st-card">
+        <h2>계정</h2>
+        <dl className="st-account">
+          <dt>이름</dt><dd>{meta.full_name || meta.name || '—'}</dd>
+          <dt>이메일</dt><dd>{u.email || '—'}</dd>
+          <dt>로그인 방식</dt><dd>Google</dd>
+          {joined && <><dt>가입일</dt><dd>{`${joined.getFullYear()}.${String(joined.getMonth() + 1).padStart(2, '0')}.${String(joined.getDate()).padStart(2, '0')}`}</dd></>}
+        </dl>
+        <div className="st-actions"><button type="button" className="chip" onClick={auth.signOut}>로그아웃</button></div>
+      </section>
+      <section className="st-card">
+        <h2>관심사 <span>나만의 피드에 모을 소식을 골라요</span></h2>
+        {profileState.loading ? <p className="feed-desc">불러오는 중이에요…</p> : (
+          <ProfileForm profile={profileState.profile} keywordTabs={keywordTabs}
+            onSave={onSave} onSaved={onMyFeed} />
+        )}
+      </section>
+      <section className="st-card st-danger">
+        <h2>회원 탈퇴</h2>
+        <p>탈퇴하면 Google 로그인 정보와 저장한 관심사가 바로 지워지고 되돌릴 수 없어요. 기사와 업데이트는 로그인 없이 계속 볼 수 있어요.</p>
+        <button type="button" className="chip st-danger-btn" disabled={deleting} onClick={del}>{deleting ? '처리 중…' : '회원 탈퇴'}</button>
+      </section>
+    </main>
+  </>);
+}
+
+function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const profile = profileState.profile;
   const c = useMemo(() => (profile ? compileMyFeed(profile) : null), [profile]);
@@ -2038,6 +2107,7 @@ function MyFeedView({ auth, profileState, onEdit, articles, articlesReady, onOpe
   const PAGE = 30;
   const [shown, setShown] = useState(PAGE);
   useEffect(() => { setShown(PAGE); }, [kind, profile]);
+  const [editing, setEditing] = useState(false);
   const role = profile && profile.role && ROLE_BY_ID[profile.role];
   const band = (sub, children) => (
     <div className="feed-meta feed-meta-band">
@@ -2080,7 +2150,8 @@ function MyFeedView({ auth, profileState, onEdit, articles, articlesReady, onOpe
           업데이트 <span className="count">{updReady ? upd.length : '…'}</span>
         </button>
       </div>
-    </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={onEdit}>관심사 수정</button></div>)}
+    </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
+    {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
       {kind === 'news' ? (
         !articlesReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2108,18 +2179,25 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
-  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles' : INITIAL_ROUTE.me ? 'me' : 'news');   // 'news' | 'updates' | 'roles' | 'me'
+  const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles'
+    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings'
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
   const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
-  const [editingProfile, setEditingProfile] = useState(false);
+  const [welcome, setWelcome] = useState(false);
   const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
-  // 처음 로그인한 회원(관심사 없음)에게 한 번 설정 창을 띄운다
+  const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
+  // 처음 로그인한 회원(관심사 없음)은 한 번 설정 페이지로 안내한다
   useEffect(() => {
     if (!auth.user || profileState.loading || profileState.profile || profileState.error) return;
-    try { if (sessionStorage.getItem('aiad:pe-asked')) return; sessionStorage.setItem('aiad:pe-asked', '1'); } catch (e) {}
-    setEditingProfile('first');
-  }, [auth.user, profileState.loading, profileState.profile, profileState.error]);
+    try { if (localStorage.getItem('aiad:pe-asked:' + auth.user.id)) return; localStorage.setItem('aiad:pe-asked:' + auth.user.id, '1'); } catch (e) {}
+    setWelcome(true); goSettings();
+  }, [auth.user, profileState.loading, profileState.profile, profileState.error]);   // eslint-disable-line
+  const saveProfile = async (patch) => {
+    await profileState.save(patch);
+    lastSyncedRole.current = patch.role || null;
+    if ((patch.role || null) !== (roleState.myRole || null)) roleState.setMyRole(patch.role || null);
+  };
   // 로그인 회원의 직군 = 내 직군 (기기 사이 동기화). 회원 정보를 불러오면 그 직군으로 맞추고, 사이드바에서 바꾸면 저장한다
   const lastSyncedRole = useRef(undefined);
   useEffect(() => {
@@ -2215,8 +2293,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : 'news');
-      if (route.me) { setOpen(null); return; }
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : 'news');
+      if (route.me || route.settings) { setOpen(null); return; }
       if (route.roles) { setOpen(null); setRole(route.role || null); return; }
       if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
@@ -2272,7 +2350,7 @@ function App() {
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section === 'news' && !onArticle && query.trim()) return;
     const path = section === 'updates' ? updatesPath(updCat, updCompany)
-      : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : routePath(viewHome, activeTab, activeKeyword);
+      : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : section === 'settings' ? '/settings/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
@@ -2308,7 +2386,7 @@ function App() {
       <Header
         auth={auth}
         onMyFeed={goMe}
-        onEditProfile={() => setEditingProfile(true)}
+        onSettings={goSettings}
         query={query}
         onQuery={(v) => { setQuery(v); if (v) { setSection('news'); setViewHome(false); } }}
         theme={theme}
@@ -2339,11 +2417,16 @@ function App() {
         onKeyword={(k) => { setKeyword(k); window.scrollTo({ top: 0 }); }}
       />
       <div className="layout-main">
-      {section === 'me' ? (
+      {section === 'settings' ? (
+        <SettingsView auth={auth} profileState={profileState} keywordTabs={keywordTabs}
+          onSave={saveProfile} onMyFeed={goMe} welcome={welcome} />
+      ) : section === 'me' ? (
         <MyFeedView
           auth={auth}
           profileState={profileState}
-          onEdit={() => setEditingProfile(true)}
+          onEdit={goSettings}
+          onSave={saveProfile}
+          keywordTabs={keywordTabs}
           articles={articles}
           articlesReady={dataState === 'ready'}
           onOpenArticle={openArticle}
@@ -2438,20 +2521,7 @@ function App() {
       </div>
       </div>
       <IosInstallHint />
-      {editingProfile && auth.user && (
-        <ProfileEditor
-          first={editingProfile === 'first'}
-          profile={profileState.profile || { ...EMPTY_PROFILE, role: roleState.myRole }}
-          keywordTabs={keywordTabs}
-          onSave={async (patch) => {
-            await profileState.save(patch);
-            lastSyncedRole.current = patch.role || null;
-            if ((patch.role || null) !== (roleState.myRole || null)) roleState.setMyRole(patch.role || null);
-            goMe();
-          }}
-          onClose={() => setEditingProfile(false)}
-        />
-      )}
+
 
       {open && (
         <ArticleModal
