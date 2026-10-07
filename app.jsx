@@ -401,6 +401,9 @@ function AccountButton({ auth, onMyFeed, onSettings }) {
           <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); onSettings(); }}>
             설정
           </button>
+          <a role="menuitem" className="account-item" href="/contact/">
+            문의
+          </a>
           <button type="button" role="menuitem" className="account-item" onClick={() => { setOpen(false); auth.signOut(); }}>
             로그아웃
           </button>

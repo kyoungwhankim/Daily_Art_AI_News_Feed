@@ -68,3 +68,27 @@ a.modal-keyword { text-decoration: none; }
   .static-main { padding: 24px 18px 60px; }
   .site-header .static-nav { display: none; }
 }
+
+/* 문의 양식 */
+.contact-form { display: flex; flex-direction: column; gap: 14px; margin: 26px 0 8px; padding: 22px 24px;
+  border: 2px solid var(--stroke); border-radius: 16px; background: var(--card); }
+.contact-form label { display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.contact-form label span { font-weight: 500; color: var(--muted); }
+.contact-form .cf-l { font-weight: 700; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font: inherit; font-size: 14.5px; font-weight: 400; color: var(--ink); background: var(--paper);
+  border: 1.5px solid var(--stroke); border-radius: 10px; padding: 9px 12px; }
+.contact-form textarea { resize: vertical; min-height: 140px; line-height: 1.6; }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cf-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.cf-status { flex: 1; min-width: 200px; color: var(--muted); }
+.cf-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.cf-btns .chip { padding: 9px 18px; font-size: 14px; font-weight: 700; }
+.cf-status { font-size: 13.5px; }
+.cf-status.ok { color: var(--accent-strong); }
+.cf-status.err { color: #b54848; }
+@media (max-width: 640px) {
+  .contact-form { padding: 16px; }
+  .cf-row { grid-template-columns: 1fr; }
+}

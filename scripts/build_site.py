@@ -518,15 +518,73 @@ def build_redirect_site(out: str) -> None:
     print(f'Built redirect site {out} → {new}')
 
 
+# 문의 양식: 서버 없이 메일 작성 창을 연다 (받는 사람·제목·본문이 채워진 상태)
+#   기본 메일 앱(mailto: — Outlook·메일 앱 등 컴퓨터에 설정된 앱), Outlook 웹, Gmail 웹
+CONTACT_JS = r"""
+(function () {
+  var MAIL = '__MAIL__';
+  var form = document.getElementById('contact-form'), st = document.getElementById('cf-status');
+  function say(t, ok) { st.textContent = t; st.className = 'cf-status ' + (ok ? 'ok' : 'err'); }
+  function compose() {
+    var f = new FormData(form), msg = (f.get('message') || '').trim();
+    if (msg.length < 5) { say('내용을 적어 주세요.'); return null; }
+    var name = (f.get('name') || '').trim();
+    var subject = '[AI Art Daily 문의] ' + f.get('topic');
+    var body = msg + (name ? '\n\n— ' + name : '');
+    say('메일 작성 창을 열었어요. 내용을 확인하고 보내기를 눌러 주세요.', true);
+    return { s: encodeURIComponent(subject), b: encodeURIComponent(body), to: encodeURIComponent(MAIL) };
+  }
+  document.querySelectorAll('[data-send]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var c = compose(); if (!c) return;
+      var kind = btn.getAttribute('data-send');
+      if (kind === 'app') location.href = 'mailto:' + MAIL + '?subject=' + c.s + '&body=' + c.b;
+      else if (kind === 'outlook') window.open('https://outlook.live.com/mail/0/deeplink/compose?to=' + c.to + '&subject=' + c.s + '&body=' + c.b, '_blank', 'noopener');
+      else if (kind === 'gmail') window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + c.to + '&su=' + c.s + '&body=' + c.b, '_blank', 'noopener');
+    });
+  });
+})();
+"""
+
+
 def build_contact() -> str:
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
-    return (head(root, f'문의 | {SITE_NAME}', f'{SITE_NAME} 관리자 연락처입니다.', abs_url('contact/'))
+    js = CONTACT_JS.replace('__MAIL__', CONTACT_EMAIL)
+    return (head(root, f'문의 | {SITE_NAME}', f'{SITE_NAME}에 문의하거나 뉴스 피드 개선 아이디어를 보내 주세요.', abs_url('contact/'))
             + f"""<body>
 <div class="page">
 {header(root)}
 <main class="static-main static-doc">
   <h1 class="feed-title">문의</h1>
-  <p class="feed-sub">기사 내용 정정, 저작권, 제휴, 개인정보 관련 문의는 아래 이메일로 보내 주세요.</p>
+  <p class="feed-sub">기사 내용 정정, 저작권, 제휴, 개인정보 관련 문의를 받아요.
+  <strong>뉴스 피드를 더 좋게 만들 아이디어도 언제든 환영해요</strong> — 보고 싶은 주제, 추가했으면 하는 AI 서비스, 불편한 점 무엇이든 편하게 보내 주세요.</p>
+
+  <form class="contact-form" id="contact-form" novalidate>
+    <div class="cf-row">
+      <label>문의 종류
+        <select name="topic">
+          <option>뉴스 피드 개선 아이디어</option>
+          <option>기사 내용 정정</option>
+          <option>저작권</option>
+          <option>제휴</option>
+          <option>개인정보·계정</option>
+          <option>기타</option>
+        </select>
+      </label>
+      <label><b class="cf-l">이름 <span>(선택)</span></b><input name="name" maxlength="50" autocomplete="name" /></label>
+    </div>
+    <label>내용<textarea name="message" rows="7" maxlength="3000" placeholder="자유롭게 적어 주세요."></textarea></label>
+    <div class="cf-foot">
+      <span class="cf-status" id="cf-status" role="status">버튼을 누르면 받는 사람·제목·내용이 채워진 메일 작성 창이 열려요.</span>
+      <div class="cf-btns">
+        <button type="button" class="chip active" data-send="app">메일 앱으로 보내기</button>
+        <button type="button" class="chip" data-send="outlook">Outlook 웹</button>
+        <button type="button" class="chip" data-send="gmail">Gmail</button>
+      </div>
+    </div>
+  </form>
+
   <dl class="static-contact">
     <dt>관리자</dt><dd>{esc(PRIVACY_OWNER)}</dd>
     <dt>이메일</dt><dd><a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a></dd>
@@ -534,6 +592,7 @@ def build_contact() -> str:
 </main>
 {footer(root)}
 </div>
+<script>{js}</script>
 </body>
 </html>
 """)
