@@ -89,7 +89,7 @@ window.AIAD = {
     'news:games': '/icons/bands/news-games.webp', 'news:industry': '/icons/bands/news-industry.webp', 'news:art': '/icons/bands/news-art.webp',
     'updates': '/icons/bands/updates.webp',
     'updates:image': '/icons/bands/updates-image.webp', 'updates:video': '/icons/bands/updates-video.webp', 'updates:3d': '/icons/bands/updates-3d.webp', 'updates:game-assets': '/icons/bands/updates-game-assets.webp',
-    'updates:motion': '/icons/bands/updates-motion.webp', 'updates:audio': '/icons/bands/updates-audio.webp', 'updates:tools': '',
+    'updates:motion': '/icons/bands/updates-motion.webp', 'updates:audio': '/icons/bands/updates-audio.webp', 'updates:tools': '/icons/bands/updates-tools.webp',
   },
 
   // 사이드바 대분류 '업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스(제품) (분류 순서 = 필터 순서)
