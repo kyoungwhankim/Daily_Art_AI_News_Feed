@@ -81,6 +81,17 @@ window.AIAD = {
       services: ['figma-ai', 'recraft'] },
   ],
 
+  // 뉴스·업데이트 중분류 화면 맨 위 머리 띠 사진 (3:1, 사람·피사체는 오른쪽, 왼쪽은 어둡게 비운 사진).
+  // 비어 있으면 사진 없이 색 띠만 나온다. 소분류(서브 카테고리·서비스)를 골라도 중분류 띠가 그대로 유지된다.
+  //   news:<탭 id>  — 게임 제작 속 AI / AI 도입 뉴스 / 아트 전반 AI 뉴스
+  //   updates       — 업데이트 전체,  updates:<분야 slug> — 이미지·영상·3D·게임 에셋·모션·음악·음성·도구
+  bands: {
+    'news:games': '', 'news:industry': '', 'news:art': '',
+    'updates': '',
+    'updates:image': '', 'updates:video': '', 'updates:3d': '', 'updates:game-assets': '',
+    'updates:motion': '', 'updates:audio': '', 'updates:tools': '',
+  },
+
   // 사이드바 대분류 '업데이트' — 공식 업데이트를 모아 볼 아트 관련 AI 서비스(제품) (분류 순서 = 필터 순서)
   // name:   사이드바에 보이는 제품(서비스) 이름 / maker: 만든 회사 (제품 이름과 같으면 생략)
   // url:    방문자에게 보여 줄 공식 업데이트 페이지

@@ -507,6 +507,21 @@ function SubCategoryBar({ items, total, active, onChange }) {
 }
 
 /* ---------- feed meta ---------- */
+// 뉴스·업데이트 중분류 머리 띠 (config.js bands에 사진을 넣으면 배경 사진, 없으면 색 띠)
+const SECTION_BANDS = window.AIAD.bands || {};
+function SectionBand({ bandKey, eyebrow, title }) {
+  const photo = SECTION_BANDS[bandKey];
+  return (
+    <div className={`sec-band ${photo ? 'has-photo' : ''}`} data-band={bandKey}
+      style={photo ? { '--bx-photo': `url("${photo}")` } : undefined}>
+      <div className="sec-band-main">
+        {eyebrow && <span className="bx-eyebrow">{eyebrow}</span>}
+        <h1 className="sec-band-title">{title}</h1>
+      </div>
+    </div>
+  );
+}
+
 function FeedMeta({ activeTab, count, query, keyword }) {
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   let title, sub;
@@ -521,16 +536,23 @@ function FeedMeta({ activeTab, count, query, keyword }) {
   const activeDesc = !query
     ? (TABS.find(t => t.id === activeTab) || {}).desc
     : null;
+  if (!query) {
+    return (
+      <div className="feed-meta feed-meta-band">
+        <div>
+          <SectionBand bandKey={`news:${activeTab}`} eyebrow="NEWS" title={title} />
+          <div className="feed-sub">{sub}</div>
+          {activeDesc && <p className="feed-desc">{activeDesc}</p>}
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="feed-meta">
       <div>
         <h1 className="feed-title">{title}</h1>
         <div className="feed-sub">{sub}</div>
-        {activeDesc && <p className="feed-desc">{activeDesc}</p>}
       </div>
-      {!query && (
-        <div className="feed-toolbar"></div>
-      )}
     </div>
   );
 }
@@ -1499,7 +1521,7 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   const PAGE = 30;
   const [shown, setShown] = useState(PAGE);
   useEffect(() => { setShown(PAGE); }, [cat, company]);
-  const title = comp ? comp.name : catObj ? catObj.label : '업데이트';
+  const title = catObj ? catObj.label : '업데이트';   // 머리 띠 제목은 중분류 (서비스를 골라도 유지)
   const desc = comp
     ? `${comp.maker ? `${comp.maker}의 ` : ''}${comp.name} 공식 업데이트를 최신순으로 모아 보여 드려요.`
     : catObj
@@ -1508,11 +1530,11 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
   return (
     <>
       <UpdatesNav cat={cat} company={comp ? comp.slug : null} onCat={onCat} onCompany={slug => onCompany(cat, slug)} />
-      <div className="feed-meta">
+      <div className="feed-meta feed-meta-band">
         <div>
-          <h1 className="feed-title">{title}</h1>
+          <SectionBand bandKey={catObj ? `updates:${catObj.slug}` : 'updates'} eyebrow="UPDATES" title={title} />
           <div className="feed-sub">
-            {comp ? `${catObj.label}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
+            {comp ? `${comp.name}${comp.maker ? ` · ${comp.maker}` : ''} · 업데이트 ${items.length}건` : `업데이트 ${items.length}건 · 최신순`}
           </div>
           <p className="feed-desc">{desc}</p>
         </div>
