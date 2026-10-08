@@ -161,6 +161,12 @@ function subCategoriesFor(keywordTabs, articles, tabId) {
     .filter(k => k.count >= MIN_SUBCAT_ARTICLES);
 }
 
+// 오늘 올라온 기사 표시 (점이 은은하게 깜빡이는 TODAY 글자)
+const isToday = (a) => daysAgo(a.publishedAt) === 0;
+function TodayMark() {
+  return <span className="today-mark">TODAY</span>;
+}
+
 function isArticleNew(a) {
   return daysAgo(a.publishedAt) <= 2;      // auto: today, yesterday, 2 days ago
 }
@@ -207,7 +213,7 @@ function ArticleCard({ article, onOpen, query, variant }) {
         <p className="card-summary">{highlight(article.summary, query)}</p>
         <div className="card-foot">
           <span className="source">{article.source}</span>
-          <span>{article.publishedAt}</span>
+          {isToday(article) ? <TodayMark /> : <span>{article.publishedAt}</span>}
         </div>
       </div>
     </button>
@@ -1195,7 +1201,10 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
   // 아래 LATEST 띠 접기 (이 브라우저에 기억)
   const [tickerClosed, setTickerClosed] = useState(() => readLS('aiad:ticker-closed') === '1');
   const toggleTicker = (closed) => { setTickerClosed(closed); writeLS('aiad:ticker-closed', closed ? '1' : null); };
-  const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
+  const meta = (a) => (isToday(a)
+    ? <span className="hm-meta"><TodayMark />{a.source}</span>
+    : <span className="hm-meta">{a.source} · {a.publishedAt}</span>);
+  const todayCount = useMemo(() => articles.filter(isToday).length, [articles]);
 
   return (
     <>
@@ -1206,6 +1215,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
     <div className="home hm">
       <div className="hm-masthead">
         <span className="hm-date">{today}</span>
+        {todayCount > 0 && <span className="hm-today"><TodayMark />오늘 올라온 기사 {todayCount}개</span>}
         <span className="hm-tagline">아트 제작자를 위한 AI 뉴스 큐레이션</span>
       </div>
 
@@ -1330,7 +1340,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
                   <span className="home-ticker-meta">
                     <span className="home-ticker-source">{a.source}</span>
                     <span className="home-ticker-dot" aria-hidden="true" />
-                    <span className="home-ticker-date">{a.publishedAt}</span>
+                    {isToday(a) ? <TodayMark /> : <span className="home-ticker-date">{a.publishedAt}</span>}
                   </span>
                 </button>
               </li>
