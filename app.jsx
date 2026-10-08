@@ -204,7 +204,8 @@ function ArticleCard({ article, onOpen, query, variant }) {
   return (
     <button className={cls} onClick={() => onOpen(article)}>
       <Thumb hue={article.hue} image={article.image} alt={article.headline}>
-        {isNewSince(article.publishedAt, m.prevSeen) && <span className="thumb-badge">NEW</span>}
+        {isToday(article) ? <span className="thumb-today"><TodayMark /></span>
+          : isNewSince(article.publishedAt, m.prevSeen) && <span className="thumb-badge">NEW</span>}
         <SaveToggle id={article.id} overlay />
       </Thumb>
       <div className="card-body">
@@ -1125,7 +1126,9 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
         {lead ? (
           <button type="button" className="bx-lead" onClick={() => onOpenArticle(lead)}>
             <span className="bx-lead-img">
-              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
+              {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
+            </Thumb>
               {fresh.has('a:' + lead.id) && <span className="brief-dot bx-lead-new">NEW</span>}
             </span>
             <span className="bx-lead-body">
@@ -1233,7 +1236,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
           <button type="button" className="hm-lead" onClick={() => onOpenArticle(lead)}>
-            <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+            <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
+              {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
+            </Thumb>
             <span className="hm-lead-body">
               <span className="hm-kicker" style={toneOf(lead.tab)}>{tabLabelOf(lead.tab)}</span>
               <span className="hm-lead-title">{lead.headline}</span>
@@ -1270,7 +1275,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
             </div>
             {items[0] && (
               <button type="button" className="hm-feature" onClick={() => onOpenArticle(items[0])}>
-                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline} />
+                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline}>
+                  {isToday(items[0]) && <span className="thumb-today"><TodayMark /></span>}
+                </Thumb>
                 <span className="hm-feature-title">{items[0].headline}</span>
                 {meta(items[0])}
               </button>
