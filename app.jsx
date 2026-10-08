@@ -161,6 +161,12 @@ function subCategoriesFor(keywordTabs, articles, tabId) {
     .filter(k => k.count >= MIN_SUBCAT_ARTICLES);
 }
 
+// 오늘 올라온 기사 표시 (색이 흐르는 TODAY 글자 + 빛나는 점)
+const isToday = (a) => daysAgo(a.publishedAt) === 0;
+function TodayMark() {
+  return <span className="today-mark"><span>TODAY</span></span>;
+}
+
 function isArticleNew(a) {
   return daysAgo(a.publishedAt) <= 2;      // auto: today, yesterday, 2 days ago
 }
@@ -198,7 +204,8 @@ function ArticleCard({ article, onOpen, query, variant }) {
   return (
     <button className={cls} onClick={() => onOpen(article)}>
       <Thumb hue={article.hue} image={article.image} alt={article.headline}>
-        {isNewSince(article.publishedAt, m.prevSeen) && <span className="thumb-badge">NEW</span>}
+        {isToday(article) ? <span className="thumb-today"><TodayMark /></span>
+          : isNewSince(article.publishedAt, m.prevSeen) && <span className="thumb-badge">NEW</span>}
         <SaveToggle id={article.id} overlay />
       </Thumb>
       <div className="card-body">
@@ -207,7 +214,7 @@ function ArticleCard({ article, onOpen, query, variant }) {
         <p className="card-summary">{highlight(article.summary, query)}</p>
         <div className="card-foot">
           <span className="source">{article.source}</span>
-          <span>{article.publishedAt}</span>
+          {isToday(article) ? <TodayMark /> : <span>{article.publishedAt}</span>}
         </div>
       </div>
     </button>
@@ -1119,7 +1126,9 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
         {lead ? (
           <button type="button" className="bx-lead" onClick={() => onOpenArticle(lead)}>
             <span className="bx-lead-img">
-              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
+              {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
+            </Thumb>
               {fresh.has('a:' + lead.id) && <span className="brief-dot bx-lead-new">NEW</span>}
             </span>
             <span className="bx-lead-body">
@@ -1195,7 +1204,10 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
   // 아래 LATEST 띠 접기 (이 브라우저에 기억)
   const [tickerClosed, setTickerClosed] = useState(() => readLS('aiad:ticker-closed') === '1');
   const toggleTicker = (closed) => { setTickerClosed(closed); writeLS('aiad:ticker-closed', closed ? '1' : null); };
-  const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
+  const meta = (a) => (isToday(a)
+    ? <span className="hm-meta"><TodayMark />{a.source}</span>
+    : <span className="hm-meta">{a.source} · {a.publishedAt}</span>);
+  const todayCount = useMemo(() => articles.filter(isToday).length, [articles]);
 
   return (
     <>
@@ -1206,6 +1218,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
     <div className="home hm">
       <div className="hm-masthead">
         <span className="hm-date">{today}</span>
+        {todayCount > 0 && <span className="hm-today"><TodayMark />오늘 올라온 기사 {todayCount}개</span>}
         <span className="hm-tagline">아트 제작자를 위한 AI 뉴스 큐레이션</span>
       </div>
 
@@ -1223,7 +1236,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
           <button type="button" className="hm-lead" onClick={() => onOpenArticle(lead)}>
-            <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} />
+            <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
+              {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
+            </Thumb>
             <span className="hm-lead-body">
               <span className="hm-kicker" style={toneOf(lead.tab)}>{tabLabelOf(lead.tab)}</span>
               <span className="hm-lead-title">{lead.headline}</span>
@@ -1260,7 +1275,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
             </div>
             {items[0] && (
               <button type="button" className="hm-feature" onClick={() => onOpenArticle(items[0])}>
-                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline} />
+                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline}>
+                  {isToday(items[0]) && <span className="thumb-today"><TodayMark /></span>}
+                </Thumb>
                 <span className="hm-feature-title">{items[0].headline}</span>
                 {meta(items[0])}
               </button>
@@ -1330,7 +1347,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
                   <span className="home-ticker-meta">
                     <span className="home-ticker-source">{a.source}</span>
                     <span className="home-ticker-dot" aria-hidden="true" />
-                    <span className="home-ticker-date">{a.publishedAt}</span>
+                    {isToday(a) ? <TodayMark /> : <span className="home-ticker-date">{a.publishedAt}</span>}
                   </span>
                 </button>
               </li>

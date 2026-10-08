@@ -1945,3 +1945,42 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .mf-saved-h { font-size: 16px; margin: 8px 0 14px; }
 .mf-saved-h span { font-size: 13px; color: var(--muted); font-weight: 600; margin-left: 4px; }
 .mf-saved-h:not(:first-child) { margin-top: 32px; }
+
+/* ---------- 오늘 올라온 기사: TODAY 표시 ---------- */
+/* 배경 없이 글자만: 채도 높은 그라데이션이 천천히 흐르고, 앞의 점이 은은하게 빛난다 */
+.today-mark {
+  --today-grad: linear-gradient(90deg, #ff2e7e, #ff7a1a, #a63dff, #2f7bff, #ff2e7e);
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 900; letter-spacing: 0.14em; line-height: 1;
+}
+.today-mark::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%; flex: none;
+  background: #ff2e7e;
+  animation: todayDot 1.8s ease-out infinite;
+}
+.today-mark span {
+  background: var(--today-grad); background-size: 300% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+  animation: todayFlow 4s linear infinite;
+}
+[data-theme="dark"] .today-mark { --today-grad: linear-gradient(90deg, #ff5c9a, #ffa04d, #c27bff, #5c9bff, #ff5c9a); }
+@keyframes todayFlow { from { background-position: 0% 50%; } to { background-position: 300% 50%; } }
+@keyframes todayDot {
+  0%   { box-shadow: 0 0 0 0 rgba(255,46,126,.6); background: #ff2e7e; }
+  50%  { background: #a63dff; }
+  70%  { box-shadow: 0 0 0 7px rgba(255,46,126,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,46,126,0); background: #ff2e7e; }
+}
+.hm-meta .today-mark { margin-right: 8px; vertical-align: 0; }
+.hm-today { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--ink); }
+/* 썸네일 왼쪽 위: 사진 위에서도 읽히게 반투명 어두운 유리만 깐다 */
+.thumb-today {
+  position: absolute; top: 12px; left: 12px; z-index: 1; display: inline-flex;
+  padding: 6px 10px; border-radius: 999px;
+  background: rgba(16,18,24,.55); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.thumb-today .today-mark { --today-grad: linear-gradient(90deg, #ff6aa6, #ffb15c, #cf8dff, #7fb0ff, #ff6aa6); }
+@media (prefers-reduced-motion: reduce) {
+  .today-mark::before, .today-mark span { animation: none; }
+}
