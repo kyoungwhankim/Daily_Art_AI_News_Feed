@@ -161,10 +161,10 @@ function subCategoriesFor(keywordTabs, articles, tabId) {
     .filter(k => k.count >= MIN_SUBCAT_ARTICLES);
 }
 
-// 오늘 올라온 기사 표시 (점이 은은하게 깜빡이는 TODAY 글자)
+// 오늘 올라온 기사 표시 (색이 흐르는 TODAY 글자 + 빛나는 점)
 const isToday = (a) => daysAgo(a.publishedAt) === 0;
 function TodayMark() {
-  return <span className="today-mark">TODAY</span>;
+  return <span className="today-mark"><span>TODAY</span></span>;
 }
 
 function isArticleNew(a) {
