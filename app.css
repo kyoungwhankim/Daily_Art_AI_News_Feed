@@ -1252,9 +1252,10 @@ mark {
 /* 모바일: 제목만 흐르는 얇은 띠 */
 @media (max-width: 640px) {
   .home-ticker { padding: 0; box-shadow: none; border-top-width: 1.5px; }
-  .home-ticker::before, .home-ticker::after { width: 24px; }
+  /* 좁은 띠라 양끝 흐림(그라데이션)은 글자를 가려서 뺀다 */
+  .home-ticker::before, .home-ticker::after { display: none; }
+  .home-ticker-track-wrap { -webkit-mask-image: none; mask-image: none; }
   .home-ticker { padding-right: 40px; }
-  .home-ticker::after { right: 40px; }
   .home-ticker-close { top: 50%; right: 6px; transform: translateY(-50%); width: 28px; height: 28px; box-shadow: none; }
   .home-ticker-open { right: 12px; bottom: 12px; padding: 7px 12px; }
   .home-ticker-head, .home-ticker-cat, .home-ticker-meta { display: none; }
