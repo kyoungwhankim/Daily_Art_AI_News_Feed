@@ -1192,6 +1192,9 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
     return { lead, list, perTab };
   }, [sorted]);
   const updates = useLatestUpdates(10);
+  // 아래 LATEST 띠 접기 (이 브라우저에 기억)
+  const [tickerClosed, setTickerClosed] = useState(() => readLS('aiad:ticker-closed') === '1');
+  const toggleTicker = (closed) => { setTickerClosed(closed); writeLS('aiad:ticker-closed', closed ? '1' : null); };
   const meta = (a) => <span className="hm-meta">{a.source} · {a.publishedAt}</span>;
 
   return (
@@ -1299,7 +1302,17 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         </section>
       )}
 
+      {tickerClosed ? (
+        <button type="button" className="home-ticker-open" onClick={() => toggleTicker(false)} aria-label="최신 뉴스 띠 펼치기">
+          <span className="home-ticker-pulse" aria-hidden="true" />
+          LATEST
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6" /></svg>
+        </button>
+      ) : (
       <section className="home-ticker" aria-label="최신 뉴스">
+        <button type="button" className="home-ticker-close" onClick={() => toggleTicker(true)} aria-label="최신 뉴스 띠 접기" title="접기">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+        </button>
         <div className="home-ticker-head">
           <span className="home-ticker-eyebrow">
             <span className="home-ticker-pulse" aria-hidden="true" />
@@ -1325,6 +1338,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
           </ul>
         </div>
       </section>
+      )}
     </div>
     </>
   );

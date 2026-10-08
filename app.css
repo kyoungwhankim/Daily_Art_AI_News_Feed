@@ -955,7 +955,7 @@ mark {
 .hm-kicker[style*="--tone-h"] { color: oklch(0.5 0.13 var(--tone-h)); }
 [data-theme="dark"] .hm-kicker[style*="--tone-h"] { color: oklch(0.78 0.11 var(--tone-h)); }
 .hm-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; font-variant-numeric: tabular-nums; }
-.hm button:not(.home-ticker-btn):not(.role-choice):not(.brief-link):not(.bx-ghost):not(.bx-cta) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
+.hm button:not(.home-ticker-btn):not(.home-ticker-close):not(.home-ticker-open):not(.role-choice):not(.brief-link):not(.bx-ghost):not(.bx-cta) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
 
 /* 톱 기사 + 최신 기사 */
 .hm-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 32px; align-items: start; }
@@ -1224,6 +1224,25 @@ mark {
   flex-shrink: 0;
 }
 
+/* LATEST 띠 접기 · 펼치기 */
+.home-ticker-close {
+  position: absolute; top: 10px; right: 16px; z-index: 3;
+  width: 30px; height: 30px; padding: 0; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-2); background: var(--card);
+  border: 1.5px solid var(--stroke); border-radius: 999px; box-shadow: var(--shadow-pop-sm);
+}
+.home-ticker-close:hover { color: var(--accent-strong); }
+.home-ticker-open {
+  position: fixed; right: 20px; bottom: 16px; z-index: 15;
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em;
+  color: var(--accent-strong); background: var(--accent-soft);
+  padding: 8px 14px; border: 1.5px solid var(--stroke); border-radius: 999px; box-shadow: var(--shadow-pop-sm);
+}
+.home-ticker-open:hover { transform: translateY(-1px); box-shadow: var(--shadow-pop); }
+.home-ticker-close:focus-visible, .home-ticker-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 @media (prefers-reduced-motion: reduce) {
   .home-ticker-track { animation: none; }
 }
@@ -1234,6 +1253,10 @@ mark {
 @media (max-width: 640px) {
   .home-ticker { padding: 0; box-shadow: none; border-top-width: 1.5px; }
   .home-ticker::before, .home-ticker::after { width: 24px; }
+  .home-ticker { padding-right: 40px; }
+  .home-ticker::after { right: 40px; }
+  .home-ticker-close { top: 50%; right: 6px; transform: translateY(-50%); width: 28px; height: 28px; box-shadow: none; }
+  .home-ticker-open { right: 12px; bottom: 12px; padding: 7px 12px; }
   .home-ticker-head, .home-ticker-cat, .home-ticker-meta { display: none; }
   .home-ticker-track { gap: 0; animation-duration: 70s; }
   .home-ticker-btn,
