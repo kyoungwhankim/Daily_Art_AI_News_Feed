@@ -163,6 +163,7 @@ function subCategoriesFor(keywordTabs, articles, tabId) {
 
 // 오늘 올라온 기사 표시 (색이 흐르는 TODAY 글자 + 빛나는 점)
 const isToday = (a) => daysAgo(a.publishedAt) === 0;
+const isTodayUpdate = (u) => !u.sample && !u.dateMonthOnly && daysAgo(u.date) === 0;   // 월 단위 항목은 제외
 function TodayMark() {
   return <span className="today-mark"><span>TODAY</span></span>;
 }
@@ -1174,7 +1175,7 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
                     {fresh.has('u:' + u.id) && <span className="brief-dot">NEW</span>}
                   </span>
                   <span className="bx-log-title">{u.title}</span>
-                  <span className="hm-meta">{u.dateMonthOnly ? u.date.slice(0, 7) : u.date}</span>
+                  <span className="hm-meta">{isTodayUpdate(u) ? <TodayMark /> : u.dateMonthOnly ? u.date.slice(0, 7) : u.date}</span>
                 </button>
               </li>
             ))}
@@ -1309,7 +1310,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
                   <span className="hm-upd-top">
                     <span className="hm-upd-service">{u.company.name}</span>
                     <span className="update-cat">{u.kind}</span>
-                    {!u.dateMonthOnly && <span className="hm-upd-date">{u.date}</span>}
+                    {isTodayUpdate(u) ? <TodayMark /> : !u.dateMonthOnly && <span className="hm-upd-date">{u.date}</span>}
                   </span>
                   <span className="hm-upd-title">{u.title}</span>
                 </button>
@@ -1693,7 +1694,7 @@ function UpdateRow({ u, showCompany, onCompany }) {
   const m = React.useContext(MemberContext);
   return (
     <li className="update-row">
-      <div className="update-date">{u.dateMonthOnly ? '' : u.date}</div>
+      <div className="update-date">{isTodayUpdate(u) ? <TodayMark /> : u.dateMonthOnly ? '' : u.date}</div>
       <div className="update-main">
         <div className="update-head">
           {showCompany && (
@@ -1701,7 +1702,7 @@ function UpdateRow({ u, showCompany, onCompany }) {
           )}
           <span className="update-cat">{u.kind}</span>
           {u.sample && <span className="update-sample">예시</span>}
-          {!u.sample && isNewSince(u.date, m.prevSeen) && <span className="update-new">NEW</span>}
+          {!u.sample && !isTodayUpdate(u) && isNewSince(u.date, m.prevSeen) && <span className="update-new">NEW</span>}
           <RoleTag update={u} />
           {!u.sample && <SaveToggle id={u.id} />}
         </div>
