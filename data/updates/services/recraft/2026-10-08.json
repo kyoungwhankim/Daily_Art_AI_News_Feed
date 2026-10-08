@@ -1,0 +1,12 @@
+[
+  {
+    "id": "recraft-2026-10-08-1",
+    "service": "recraft",
+    "date": "2026.10.08",
+    "kind": "연동",
+    "title": "Recraft Studio에 Nano Banana 2.1 추가",
+    "summary": "Recraft Studio의 모델 선택기에서 Google의 Nano Banana 2.1을 고를 수 있게 됐어요. 화질, 텍스트 표현, 일관성이 개선된 모델이에요.",
+    "url": "https://www.recraft.ai/blog/nano-banana-2-1-in-recraft-studio",
+    "source": "notice"
+  }
+]

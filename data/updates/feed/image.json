@@ -1,5 +1,15 @@
 [
   {
+    "id": "recraft-2026-10-08-1",
+    "service": "recraft",
+    "date": "2026.10.08",
+    "kind": "연동",
+    "title": "Recraft Studio에 Nano Banana 2.1 추가",
+    "summary": "Recraft Studio의 모델 선택기에서 Google의 Nano Banana 2.1을 고를 수 있게 됐어요. 화질, 텍스트 표현, 일관성이 개선된 모델이에요.",
+    "url": "https://www.recraft.ai/blog/nano-banana-2-1-in-recraft-studio",
+    "source": "notice"
+  },
+  {
     "id": "nano-banana-2026-10-06-1",
     "service": "nano-banana",
     "date": "2026.10.06",
@@ -15,6 +25,16 @@
     ],
     "url": "https://ai.google.dev/gemini-api/docs/changelog",
     "source": "dev"
+  },
+  {
+    "id": "recraft-2026-10-03-1",
+    "service": "recraft",
+    "date": "2026.10.03",
+    "kind": "연동",
+    "title": "Recraft Studio에 Ideogram 4.5 추가 예정",
+    "summary": "편집에 특화된 Ideogram 4.5가 곧 Recraft Studio에 추가된다고 알렸어요. 추가되면 Recraft 안에서 바로 사용할 수 있어요.",
+    "url": "https://www.recraft.ai/blog/ideogram-4-5-is-coming-to-recraft-studio",
+    "source": "notice"
   },
   {
     "id": "qwen-image-2026-10-02-1",

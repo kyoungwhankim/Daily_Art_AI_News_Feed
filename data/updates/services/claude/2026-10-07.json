@@ -1,0 +1,38 @@
+[
+  {
+    "id": "claude-2026-10-07-1",
+    "service": "claude",
+    "date": "2026.10.07",
+    "kind": "모델",
+    "title": "Claude Haiku 5.5 출시",
+    "summary": "가장 빠르고 저렴하면서 가장 성능이 좋은 소형 모델 Claude Haiku 5.5가 나왔어요. 대량 처리와 응답 속도가 중요한 작업에 맞춰져 있어요.",
+    "details": [
+      "1M 토큰 컨텍스트 창, 최대 출력 128k 토큰 지원",
+      "adaptive thinking과 effort 파라미터 지원",
+      "Claude API, Amazon Bedrock, Google Cloud, Microsoft Foundry에서 이용 가능",
+      "Haiku 4.5용 코드는 수동 budget_tokens 설정에서 400 오류가 날 수 있어 마이그레이션 가이드 확인이 필요해요"
+    ],
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-07-2",
+    "service": "claude",
+    "date": "2026.10.07",
+    "kind": "요금",
+    "title": "Claude Sonnet 5.5 프롬프트 캐시 읽기 가격 인하",
+    "summary": "Claude Sonnet 5.5의 프롬프트 캐시 읽기 가격이 100만 토큰당 0.20달러에서 0.10달러로 내려갔어요. 캐시 쓰기와 나머지 가격은 그대로예요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-7-2026",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-07-3",
+    "service": "claude",
+    "date": "2026.10.07",
+    "kind": "요금",
+    "title": "Max·Team 요금제에 월별 API 크레딧 포함",
+    "summary": "Max와 Team 요금제에 매달 API 크레딧이 포함돼요. Console 조직을 연결하면 받을 수 있고, 며칠에 걸쳐 순차적으로 지급돼요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  }
+]

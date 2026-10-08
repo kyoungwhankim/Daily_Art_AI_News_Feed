@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-10-06-1",
+    "service": "meshy",
+    "date": "2026.10.06",
+    "kind": "기능",
+    "title": "Print Analyze에 얇은 벽 검사 추가",
+    "summary": "프린트 가능성 분석이 출력 크기 기준으로 벽 두께를 검사하게 됐어요. Repair 기능도 얇은 벽을 두껍게 보정할 수 있어요. 요금은 그대로예요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  }
+]

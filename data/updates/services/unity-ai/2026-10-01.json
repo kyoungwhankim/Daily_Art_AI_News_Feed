@@ -1,0 +1,12 @@
+[
+  {
+    "id": "unity-ai-2026-10-01-1",
+    "service": "unity-ai",
+    "date": "2026.10.01",
+    "kind": "연동",
+    "title": "Unity 플러그인, Grok Build에서 사용 가능",
+    "summary": "공식 Unity 플러그인이 Grok Build에서도 동작해요. 터미널에서 명령어 한 줄로 Unity가 만든 스킬 30개 이상을 설치해 코딩 에이전트에 연결할 수 있어요.",
+    "url": "https://unity.com/blog/unity-plugin-grok",
+    "source": "notice"
+  }
+]

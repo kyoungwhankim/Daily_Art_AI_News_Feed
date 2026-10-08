@@ -1,22 +1,22 @@
 {
   "categories": {
     "image": {
-      "count": 456,
-      "latest": "2026.10.06",
+      "count": 458,
+      "latest": "2026.10.08",
       "file": "updates/feed/image.json",
-      "rev": "6ee5a309a0"
+      "rev": "aa57c9372f"
     },
     "video": {
-      "count": 933,
-      "latest": "2026.10.05",
+      "count": 934,
+      "latest": "2026.10.06",
       "file": "updates/feed/video.json",
-      "rev": "8b97a0f3ad"
+      "rev": "ed0794f252"
     },
     "3d": {
-      "count": 177,
-      "latest": "2026.09.29",
+      "count": 178,
+      "latest": "2026.10.06",
       "file": "updates/feed/3d.json",
-      "rev": "fde4a35be9"
+      "rev": "955a50db45"
     },
     "game-assets": {
       "count": 525,
@@ -37,10 +37,10 @@
       "rev": "34a6e572f0"
     },
     "tools": {
-      "count": 987,
-      "latest": "2026.10.06",
+      "count": 993,
+      "latest": "2026.10.07",
       "file": "updates/feed/tools.json",
-      "rev": "da1d8c9128"
+      "rev": "a71d5be4bd"
     }
   },
   "services": {
@@ -85,9 +85,9 @@
       "latest": "2026.10.01"
     },
     "recraft": {
-      "count": 39,
+      "count": 41,
       "first": "2024.03.13",
-      "latest": "2026.09.23"
+      "latest": "2026.10.08"
     },
     "magnific": {
       "count": 63,
@@ -140,9 +140,9 @@
       "latest": "2026.10.01"
     },
     "higgsfield": {
-      "count": 55,
+      "count": 56,
       "first": "2025.04.24",
-      "latest": "2026.10.03"
+      "latest": "2026.10.06"
     },
     "ltx-studio": {
       "count": 63,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 115,
+      "count": 116,
       "first": "2023.10.19",
-      "latest": "2026.09.29"
+      "latest": "2026.10.06"
     },
     "tripo": {
       "count": 29,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 208,
+      "count": 209,
       "first": "2024.08.06",
-      "latest": "2026.10.06"
+      "latest": "2026.10.07"
     },
     "invokeai": {
       "count": 73,
@@ -280,9 +280,9 @@
       "latest": "2026.09.27"
     },
     "unity-ai": {
-      "count": 37,
+      "count": 38,
       "first": "2023.11.16",
-      "latest": "2026.09.17"
+      "latest": "2026.10.01"
     },
     "nvidia-studio": {
       "count": 47,
@@ -310,9 +310,9 @@
       "latest": "2026.07.14"
     },
     "claude": {
-      "count": 221,
+      "count": 225,
       "first": "2023.03.14",
-      "latest": "2026.10.01"
+      "latest": "2026.10.07"
     }
   }
 }

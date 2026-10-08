@@ -1,0 +1,16 @@
+[
+  {
+    "id": "comfyui-2026-10-07-1",
+    "service": "comfyui",
+    "date": "2026.10.07",
+    "kind": "앱",
+    "title": "ComfyUI v0.39.1 릴리스: Nano Banana 2.1 노드 추가",
+    "summary": "ComfyUI v0.39.1이 나왔어요. 파트너 노드에 Nano Banana 2.1이 추가돼 한 노드에서 텍스트-이미지와 이미지 편집을 1K~4K 해상도로 할 수 있어요.",
+    "details": [
+      "Nano Banana 2.1: 텍스트-이미지와 이미지 편집을 한 노드에서 처리",
+      "사고 수준 3단계, 참조 이미지 최대 14장 지원"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-39-1",
+    "source": "dev"
+  }
+]
