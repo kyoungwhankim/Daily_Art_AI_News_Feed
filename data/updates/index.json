@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 458,
+      "count": 462,
       "latest": "2026.10.08",
       "file": "updates/feed/image.json",
-      "rev": "aa57c9372f"
+      "rev": "45ace524bb"
     },
     "video": {
-      "count": 934,
-      "latest": "2026.10.06",
+      "count": 936,
+      "latest": "2026.10.08",
       "file": "updates/feed/video.json",
-      "rev": "ed0794f252"
+      "rev": "b70ee5dafb"
     },
     "3d": {
       "count": 178,
@@ -25,29 +25,29 @@
       "rev": "0832dce312"
     },
     "motion": {
-      "count": 161,
-      "latest": "2026.10.01",
+      "count": 162,
+      "latest": "2026.10.08",
       "file": "updates/feed/motion.json",
-      "rev": "821ea5a3bf"
+      "rev": "5db49dd05e"
     },
     "audio": {
-      "count": 350,
-      "latest": "2026.10.05",
+      "count": 351,
+      "latest": "2026.10.08",
       "file": "updates/feed/audio.json",
-      "rev": "34a6e572f0"
+      "rev": "e429eb3b9b"
     },
     "tools": {
-      "count": 993,
-      "latest": "2026.10.07",
+      "count": 994,
+      "latest": "2026.10.08",
       "file": "updates/feed/tools.json",
-      "rev": "a71d5be4bd"
+      "rev": "2a3f03859c"
     }
   },
   "services": {
     "midjourney": {
-      "count": 66,
+      "count": 68,
       "first": "2024.03.07",
-      "latest": "2026.10.02"
+      "latest": "2026.10.08"
     },
     "gpt-image": {
       "count": 12,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 46,
+      "count": 47,
       "first": "2025.03.26",
-      "latest": "2026.10.01"
+      "latest": "2026.10.08"
     },
     "recraft": {
       "count": 41,
@@ -90,9 +90,9 @@
       "latest": "2026.10.08"
     },
     "magnific": {
-      "count": 63,
+      "count": 64,
       "first": "2024.09.16",
-      "latest": "2026.10.01"
+      "latest": "2026.10.08"
     },
     "gigapixel": {
       "count": 79,
@@ -135,9 +135,9 @@
       "latest": "2026.10.02"
     },
     "dream-machine": {
-      "count": 28,
+      "count": 29,
       "first": "2024.09.16",
-      "latest": "2026.10.01"
+      "latest": "2026.10.08"
     },
     "higgsfield": {
       "count": 56,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 66,
+      "count": 67,
       "first": "2025.11.29",
-      "latest": "2026.10.05"
+      "latest": "2026.10.08"
     },
     "synthesia": {
       "count": 188,
@@ -230,9 +230,9 @@
       "latest": "2026.07.16"
     },
     "iclone": {
-      "count": 89,
+      "count": 90,
       "first": "2005.12.08",
-      "latest": "2026.09.24"
+      "latest": "2026.10.08"
     },
     "flow-studio": {
       "count": 34,
@@ -245,9 +245,9 @@
       "latest": "2026.10.05"
     },
     "suno": {
-      "count": 69,
+      "count": 70,
       "first": "2023.12.22",
-      "latest": "2026.10.05"
+      "latest": "2026.10.08"
     },
     "mureka": {
       "count": 54,
@@ -310,9 +310,9 @@
       "latest": "2026.07.14"
     },
     "claude": {
-      "count": 225,
+      "count": 226,
       "first": "2023.03.14",
-      "latest": "2026.10.07"
+      "latest": "2026.10.08"
     }
   }
 }

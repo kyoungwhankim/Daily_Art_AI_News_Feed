@@ -1,0 +1,22 @@
+[
+  {
+    "id": "midjourney-2026-10-08-1",
+    "service": "midjourney",
+    "date": "2026.10.08",
+    "kind": "기능",
+    "title": "알파 사이트에 Thinking 모드 테스트 시작",
+    "summary": "알파 사이트에서 이미지 생성 Thinking 모드를 테스트하고 있어요. 작업의 라이트박스에서 'Rerun (Thinking)'을 누르면 실행되며 사용자 의견을 모으는 중이에요.",
+    "url": "https://updates.midjourney.com/testing-thinking-mode/",
+    "source": "notice"
+  },
+  {
+    "id": "midjourney-2026-10-08-2",
+    "service": "midjourney",
+    "date": "2026.10.08",
+    "kind": "기능",
+    "title": "알파 사이트에 공유 폴더 도입",
+    "summary": "알파 사이트에 여러 사람이 함께 쓰는 공유 폴더가 추가됐어요. 알파 사용자 의견과 오피스 아워에서 나온 아이디어를 반영한 이번 주 변경 사항이에요.",
+    "url": "https://updates.midjourney.com/alpha-changelog-10-7-26/",
+    "source": "notice"
+  }
+]

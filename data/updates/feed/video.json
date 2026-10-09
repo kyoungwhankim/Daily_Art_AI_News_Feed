@@ -1,5 +1,25 @@
 [
   {
+    "id": "heygen-2026-10-08-1",
+    "service": "heygen",
+    "date": "2026.10.08",
+    "kind": "API",
+    "title": "HeyGen Video 1080p 렌더 지원",
+    "summary": "POST /v3/models/videos에서 resolution을 1080p로 지정할 수 있게 됐어요. 요금은 768p의 3배인 2K와 같고, 16:9는 1890×1080, 9:16은 1080×1890으로 출력돼요.",
+    "url": "https://docs.heygen.com/changelog#hey-gen-video-1080p",
+    "source": "dev"
+  },
+  {
+    "id": "dream-machine-2026-10-08-1",
+    "service": "dream-machine",
+    "date": "2026.10.08",
+    "kind": "연동",
+    "title": "Luma, Claude Motion과 연동",
+    "summary": "Claude에서 만든 설명 영상 애니메이션을 Luma에서 열어 이어서 편집할 수 있도록 두 회사가 파트너십을 맺었어요.",
+    "url": "https://lumalabs.ai/news/Luma-Claude-Motion-Launch-Partnership",
+    "source": "notice"
+  },
+  {
     "id": "higgsfield-2026-10-06-1",
     "service": "higgsfield",
     "date": "2026.10.06",

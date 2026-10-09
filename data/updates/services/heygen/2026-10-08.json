@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-10-08-1",
+    "service": "heygen",
+    "date": "2026.10.08",
+    "kind": "API",
+    "title": "HeyGen Video 1080p 렌더 지원",
+    "summary": "POST /v3/models/videos에서 resolution을 1080p로 지정할 수 있게 됐어요. 요금은 768p의 3배인 2K와 같고, 16:9는 1890×1080, 9:16은 1080×1890으로 출력돼요.",
+    "url": "https://docs.heygen.com/changelog#hey-gen-video-1080p",
+    "source": "dev"
+  }
+]

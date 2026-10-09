@@ -1,0 +1,162 @@
+[
+  {
+    "id": "games-40be1ee3-2026-10",
+    "tab": "games",
+    "headline": "구글, 코딩 없이 AI로 게임 만드는 플랫폼 'Playground' 공개",
+    "summary": "구글 랩스가 대화형 AI로 게임을 만드는 실험적 플랫폼 Playground를 공개했어요.",
+    "body": "<p>구글 랩스가 코딩 없이 게임을 만들 수 있는 실험적 플랫폼 Playground를 공개했어요. '생각할 수 있으면 플레이할 수 있다'는 문구를 내건 이 서비스는 브라우저에서 바로 동작하고, 대화형 인터페이스에 만들고 싶은 게임을 글로 적으면 AI가 그 내용을 게임으로 만들어줘요. 빈 캔버스에서 시작하거나 스타터 프롬프트를 리믹스할 수 있고, 가이드 기능의 도움을 받아 콘셉트를 다듬은 뒤 곧바로 테스트해볼 수도 있어요. 물리, 규칙, 캐릭터, 환경을 바꾸고 싶을 때도 그냥 말로 요청하면 된다고 해요.</p><p>완성한 게임은 친구나 Playground 커뮤니티에 공유할 수 있고, 갤러리는 플레이어 평점과 플레이 활동을 바탕으로 재미있는 게임을 골라 보여줘요. 공개되는 게임은 구글의 안전성 검사를 거친다고 해요. 또 곧 유니티의 게임 생성 도구 Unity Spark와 연동돼서, 더 본격적인 게임 메커닉과 고품질 3D, 유니티 런타임의 유연성까지 활용할 수 있게 될 예정이에요.</p><p>다만 지금은 미국 거주자만 쓸 수 있고, Google AI 구독 등급에 따라 제작 권한이 단계적으로 열려요. 아직 실험 단계지만, 빅테크가 엔진 회사와 손잡고 일반인용 AI 게임 제작 시장에 직접 뛰어들었다는 점에서 게임 개발자와 아티스트 모두 눈여겨볼 만한 소식이에요.</p><p>원문: <a href=\"https://80.lv/articles/google-released-its-own-game-creation-platform/\">80 Level</a></p>",
+    "source": "80 Level",
+    "publishedAt": "2026.10.09",
+    "hue": 200,
+    "image": "https://cdn.80.lv/api/upload/meta/50558/images/6ac78b0dc65c3/contain_1200x630.jpg",
+    "keywords": [
+      "Google",
+      "Unity"
+    ],
+    "url": "https://80.lv/articles/google-released-its-own-game-creation-platform/"
+  },
+  {
+    "id": "games-bf5302c5-2026-10",
+    "tab": "games",
+    "headline": "유니티, 에셋 스토어 에셋으로 AI 게임 만드는 'Unity Spark' 공개",
+    "summary": "유니티가 코드 없이 프롬프트로 게임을 만드는 새 도구 Unity Spark를 공개했어요.",
+    "body": "<p>유니티가 코드를 한 줄도 쓰지 않고 게임을 만들고, 다듬고, 배포까지 할 수 있는 새 게임 제작 도구 Unity Spark를 공개했어요. 프롬프트로 게임을 시작하되, 유니티 에셋 스토어에 올라온 아티스트 제작 에셋을 그대로 가져다 쓰는 방식이에요. 이렇게 만든 프로젝트는 새로 나온 웹 기반 에디터로 옮겨서 계속 손보며 발전시킬 수 있어요. 현재는 클로즈드 베타를 앞두고 대기자 명단을 받고 있고, Spark로 만든 SF 슈팅 게임 Space Corridor도 함께 선보였어요.</p><p>유니티는 구글의 실험적 게임 플랫폼 Playground와도 손을 잡았어요. 올해 안에 Spark가 Playground에 통합되면, 크리에이터들은 Spark로 더 본격적인 게임을 만들어 Playground를 통해 배포할 수 있게 돼요. 맷 브롬버그 CEO는 이번 도구가 AI에게 이미 있는 게임을 그대로 토해내게 하는 '원샷 생성'이 아니라, 다듬고 공유할 가치가 있는 독창적인 경험을 만드는 도구라고 강조했어요.</p><p>특히 그는 \"모든 건 게임 아트에서 시작한다\"며 커뮤니티 아티스트들이 만든 수천 개의 고품질 에셋이 Spark의 핵심이라고 말했어요. AI 게임 생성 경쟁 속에서 에셋 제작자의 작업물이 어떻게 활용되고 가치가 매겨질지 보여주는 흐름이라, 에셋 스토어에 작업을 올리는 아티스트라면 특히 관심을 가질 만해요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/unity-unveils-spark-ai-game-maker-with-google-playground-integration/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.09",
+    "hue": 220,
+    "image": "https://media.pocketgamer.biz/images/141676/90007/unity-spark_l1200.jpg",
+    "keywords": [
+      "Google",
+      "Unity"
+    ],
+    "url": "https://www.pocketgamer.biz/unity-unveils-spark-ai-game-maker-with-google-playground-integration/"
+  },
+  {
+    "id": "industry-a6218231-2026-10",
+    "tab": "industry",
+    "headline": "'데드 스페이스' 글렌 스코필드 \"지금은 AI보다 창의적 아이디어가 돈을 더 아껴줘요\"",
+    "summary": "글렌 스코필드가 AAA 개발비를 줄이는 데는 AI보다 창의적 아이디어가 낫다고 말했어요.",
+    "body": "<p>데드 스페이스의 총괄 프로듀서이자 콜 오브 듀티 스튜디오 슬레지해머 게임즈를 이끌었던 글렌 스코필드가 은퇴 후 GamesIndustry.biz와의 인터뷰에서 AAA 게임 개발비와 AI에 대한 생각을 밝혔어요. 그는 그래픽과 특수효과 경쟁으로 개발비가 너무 올랐다며, 2,800만 달러가 들었던 데드 스페이스 시절과 달리 지금은 1억 5천만 달러 이하로 만드는 것도 어렵다고 말했어요. 7,000만 달러 규모라면 팀이 작고 단단해지고 외주도 덜 흩어진다고 해요.</p><p>그가 내놓은 해법은 AI가 아니라 아이디어였어요. 예전 게임의 에셋을 스토리의 일부로 자연스럽게 재활용하는 구상만으로 약 2,500만 달러를 아낄 수 있다며 \"지금은 창의적인 아이디어 하나가 AI보다 돈을 더 아껴준다\"고 했죠. 그렇다고 AI를 반대하는 건 아니에요. 미드저니는 그에게 도구가 아니라 그림, 포토샵, 포토배싱처럼 하나의 '매체'라고 표현했어요.</p><p>스코필드는 엔진에 레이싱, 물리, 물 모듈을 따로 만들듯 AI도 게임과 스토리에 맞는 몇 곳에만 집중적으로 투자해야 한다고 강조했어요. 충돌 처리를 고치고 카메라를 더 좋게 만드는 식으로요. AI를 어디에 쓸지 고민하는 스튜디오 리더들에게 베테랑의 현실적인 관점을 보여주는 인터뷰예요.</p><p>원문: <a href=\"https://www.gamesindustry.biz/a-creative-idea-can-save-more-money-than-ai-can-right-now-glen-schofield-on-his-retirement-callisto-protocols-development-and-the-state-of-aaa\">GamesIndustry.biz</a></p>",
+    "source": "GamesIndustry.biz",
+    "publishedAt": "2026.10.09",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/glen-schofield.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.gamesindustry.biz/a-creative-idea-can-save-more-money-than-ai-can-right-now-glen-schofield-on-his-retirement-callisto-protocols-development-and-the-state-of-aaa"
+  },
+  {
+    "id": "industry-011361b7-2026-10",
+    "tab": "industry",
+    "headline": "전 테이크투 AI 총괄 루크 디켄 \"AI 생산성 경쟁은 러닝머신, 지금은 관망해도 괜찮아요\"",
+    "summary": "전 테이크투 AI 총괄 루크 디켄이 AI 과열을 경고하며 신중한 도입을 조언했어요.",
+    "body": "<p>징가에서 10년간 응용 AI 그룹을 만들고 테이크투에서 AI 총괄을 맡았던 루크 디켄이 PocketGamer.biz 인터뷰에서 지금의 AI 붐을 '역사상 가장 큰 자본 오배분 중 하나'라고 비판했어요. 그는 AI 기술 자체보다 빅테크 자본주의를 경계한다며, 수조 달러 규모의 기업가치를 뒷받침할 비즈니스 계산이 없다고 말했어요. 다만 반AI가 아니라 반과대광고라며, 퍼포먼스 마케팅 소재나 프로토타이핑에는 생성형 AI가 잘 맞는다고 했어요. 단, 프로토타입은 절대 그대로 출시하지 말라는 조건을 붙였죠.</p><p>그가 가장 걱정하는 건 인력과 파이프라인이에요. 주니어 채용을 줄이면 실적 발표에는 좋아 보이지만, 업계가 처음 맞는 대규모 은퇴 물결 앞에서 다음 세대 시니어를 키우지 못하게 된다고 지적했어요. 또 외부 AI API에 의존하는 파이프라인은 보조금이 끝나고 가격이 오르면 흔들릴 수 있다고 경고했어요.</p><p>디켄은 지금을 업계가 3D로 넘어가던 시기에 비유하며, 3~5년 안에 AI 도구도 마야나 블렌더처럼 표준으로 정리될 거라고 봤어요. 생산성만 쫓는 건 러닝머신 위를 달리는 것과 같고, 진짜 기회는 새로운 플레이어 경험에 있다는 거예요. 아직 관망 중인 스튜디오라면 그대로 지켜봐도 된다는 조언이에요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/in-the-hot-seat-ex-take-two-ai-chief-luke-dicken-on-the-2tn-bubble-junior-jobs-and-the-next-2008/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.09",
+    "hue": 10,
+    "image": "https://media.pocketgamer.biz/images/141675/90006/lukedickeninthehseat_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "고용·노조"
+    ],
+    "url": "https://www.pocketgamer.biz/in-the-hot-seat-ex-take-two-ai-chief-luke-dicken-on-the-2tn-bubble-junior-jobs-and-the-next-2008/"
+  },
+  {
+    "id": "industry-84b508c8-2026-10",
+    "tab": "industry",
+    "headline": "AI가 주인공인 인디 게임 'Limerence', 오히려 '생성형 AI 미사용' 배지를 내건 이유",
+    "summary": "AI 연인을 다룬 인디 게임 Limerence가 생성형 AI 미사용 배지를 내걸었어요.",
+    "body": "<p>AI 연인을 소재로 한 분기형 내러티브 스릴러 Limerence를 만드는 인디 스튜디오 Salix Games가 스팀 페이지에 '생성형 AI를 개발에 쓰지 않았다'는 배지를 크게 달았어요. 닌텐도 품질 인증 마크를 떠올리게 하는 이 배지는 친구 스튜디오 Polygon Treehouse가 시작한 캠페인에서 가져온 거예요. 제시카 손더스 CEO는 처음엔 배지가 없었는데, 게임 소재가 AI라는 이유로 '생성형 AI를 썼으니 지지할 수 없다'는 메시지를 받으면서 일부러 크게 알릴 수밖에 없었다고 말했어요.</p><p>Salix Games도 예산 압박은 커요. 2019년 데뷔작은 상업적으로 성공하지 못했고, 코로나 이후 해고와 스튜디오 폐쇄가 이어지면서 큰 프로젝트를 위한 투자는 거의 끊긴 상태예요. 그래서 AI 지름길 대신 '최소 예산으로 우리가 가진 기술을 최대한 살리는 방법'을 택했어요. 스플래시 데미지 시절 동료였던 뱅상 주아요의 스튜디오 Game in a Frame과 손잡고, 그가 유니티로 만든 자체 툴로 복잡한 분기 대화와 유일한 등장인물인 3D AI 아바타 Kai를 함께 만들고 있어요.</p><p>게임에 AI가 쓰였는지 따지는 게 일상이 된 요즘, AI를 쓰지 않았다는 사실 자체가 마케팅 포인트가 되고 있다는 걸 보여주는 사례예요. 작은 팀이 생산 규모를 줄이고 협업으로 살아남는 방식도 눈여겨볼 만해요.</p><p>원문: <a href=\"https://www.creativebloq.com/3d/video-game-design/this-indie-game-about-ai-doesnt-use-gen-ai-but-features-a-lot-of-content-from-real-people-and-creators\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.09",
+    "hue": 300,
+    "image": "https://cdn.mos.cms.futurecdn.net/oEZpBLdJt8kUeiNDiHzamb-1407-80.png",
+    "keywords": [
+      "AI 미사용 선언"
+    ],
+    "url": "https://www.creativebloq.com/3d/video-game-design/this-indie-game-about-ai-doesnt-use-gen-ai-but-features-a-lot-of-content-from-real-people-and-creators",
+    "urls": [
+      {
+        "label": "스팀 페이지",
+        "href": "https://store.steampowered.com/app/3875300/Limerence/"
+      }
+    ]
+  },
+  {
+    "id": "art-dc223610-2026-10",
+    "tab": "art",
+    "headline": "한 개발자가 AI로 포토샵·프리미어·일러스트레이터를 복제해 무료로 풀었어요",
+    "summary": "한 개발자가 Claude와 Rust로 어도비 대표 툴을 복제해 무료로 공개했어요.",
+    "body": "<p>15년 차 소프트웨어 개발자 브랜던 토머스가 Claude와 Rust를 이용해 포토샵, 프리미어, 일러스트레이터 등 어도비의 대표 크리에이티브 툴을 다시 만들어 무료로 공개했어요. 그는 해커 뉴스에 어도비 구독의 '해지 위약금' 같은 다크 패턴에 여러 번 당한 게 계기였다고 밝혔어요. 레딧에서는 자신이 가벼운 바이브 코더가 아니라, 하루 수십억 달러가 오가는 결제 시스템과 로보틱스 자동화를 만들어온 베테랑이며 Rust를 10년 가까이 써왔다고 강조했어요.</p><p>하지만 크리에이티브 블록의 시선은 회의적이에요. 결국 소프트웨어로 소프트웨어를 복제한 것일 뿐인데, 어도비에 한 방 먹이는 통쾌함은 있어도 이것이 소프트웨어와 창작의 미래에 좋은 신호인지는 모르겠다는 거예요. 무언가를 그대로 베끼는 게 새로운 걸 만드는 것만큼 흥미로운 일이냐는 질문도 던졌어요. 한 레딧 사용자도 포토샵처럼 보이고 일부 기능이 되는 검증 안 된 프로그램과, 오래 믿고 쓸 수 있도록 유지되는 생산성 소프트웨어는 완전히 다르다고 지적했어요.</p><p>전문 크리에이터가 작업 파일과 생계를 AI가 만든 소프트웨어에 맡기긴 아직 어렵다는 반응이 많지만, AI 코딩으로 거대 크리에이티브 툴의 대안을 혼자 만들 수 있게 됐다는 점은 업계가 주목할 변화예요.</p><p>원문: <a href=\"https://www.creativebloq.com/design/design-software/someone-just-rebuilt-adobe-creative-cloud-with-ai-then-gave-it-away-for-free\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.09",
+    "hue": 270,
+    "image": "https://cdn.mos.cms.futurecdn.net/z4qUZQDmLs4Mxw7a7Cx85G-889-80.jpg",
+    "keywords": [
+      "Adobe",
+      "Claude",
+      "Photoshop"
+    ],
+    "url": "https://www.creativebloq.com/design/design-software/someone-just-rebuilt-adobe-creative-cloud-with-ai-then-gave-it-away-for-free",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
+      }
+    ]
+  },
+  {
+    "id": "art-b3b1f8f8-2026-10",
+    "tab": "art",
+    "headline": "환타의 AI 할로윈 광고, '공포보다 무서운 AI 슬롭'이라며 뭇매",
+    "summary": "환타가 AI로 만든 할로윈 광고를 내보냈다가 거센 비판을 받고 있어요.",
+    "body": "<p>코카콜라 컴퍼니의 환타가 AI 스튜디오 GRAiL과 함께 만든 할로윈 광고 'Fanta's Haunted Universe'를 공개했다가 혹평을 받고 있어요. 크리스마스가 코카콜라의 것이라면 할로윈은 환타의 것이 돼야 한다는 생각으로 기획한 캠페인으로, 브랜드가 할로윈을 '차지'할 수 있게 돕는 하나의 세계관 플랫폼이 목표라고 해요. 사이보그 프랑켄슈타인, 늑대인간 DJ 같은 '오리지널' 캐릭터가 등장하고, 영화 스크림의 고스트페이스도 카메오로 나와요. 환타는 이 세계관을 매년 이어가며 이야기를 키워갈 계획이에요.</p><p>하지만 반응은 차가워요. AI 이미지 사용 자체를 윤리적으로 반대하는 사람이 많은 데다, 영상 반응은 앞서 논란이 된 코카콜라의 AI 크리스마스 광고 때만큼 거세요. 댓글 대부분이 부정적이고, 다시는 환타를 사지 않겠다는 사람도 많아요. 극장에서 광고를 본 관객들은 코카콜라 같은 회사가 진짜 광고를 만들 돈이 없냐고 꼬집었고, 무료 스트리밍 영화보다도 노력과 창의성이 부족해 보인다는 반응도 나왔어요.</p><p>대형 브랜드들이 AI 영상 광고를 계속 시도하고 있지만 소비자 반발도 매번 되풀이되고 있어요. AI 영상을 상업 작업에 쓰려는 크리에이터와 브랜드에게 품질과 대중 정서가 얼마나 큰 변수인지 보여주는 사례예요.</p><p>원문: <a href=\"https://www.creativebloq.com/ai/fantas-ai-slop-halloween-advert-is-a-real-horror-show\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.09",
+    "hue": 30,
+    "image": "https://cdn.mos.cms.futurecdn.net/LwnUfbgu2K8uUiUSyLP8Wh-1920-80.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.creativebloq.com/ai/fantas-ai-slop-halloween-advert-is-a-real-horror-show"
+  },
+  {
+    "id": "art-66ef07a6-2026-10",
+    "tab": "art",
+    "headline": "키샷 2026 리뷰: 3D 렌더링 안에 들어온 생성형 AI 'AI Shots', 써볼 만해요",
+    "summary": "KeyShot 2026 리뷰에서 생성형 AI 기능 AI Shots가 가장 큰 개선점으로 꼽혔어요.",
+    "body": "<p>크리에이티브 블록이 제품 시각화 툴 KeyShot 2026을 리뷰하면서, 생성형 AI 워크플로 AI Shots를 이번 버전의 가장 큰 개선점으로 꼽았어요. KeyShot은 오래전부터 점진적 디노이징에 AI를 써왔는데, 2025.2 버전에서 처음 들어온 AI Shots에 개발 역량을 집중하고 있다고 해요. AI Shots로는 CAD 모델에서 바로 이미지를 생성하거나 기존 이미지를 편집할 수 있어서, 3D를 고려하지 않은 외부 도구 대신 렌더링 툴 안에서 생성형 AI를 쓸 수 있어요.</p><p>이번 버전에서는 AI 모델이 개선돼 이전보다 훨씬 짧은 프롬프트로도 잘 동작하고, 프롬프트 하나로 조금씩 다른 이미지를 여러 장 뽑을 수도 있어요. 특히 일반 3D 렌더와 AI Shots 결과물을 모두 2배나 4배 해상도로 빠르게 업스케일하는 기능이 호평을 받았어요. 이 밖에도 부품마다 이름 붙인 여러 피벗을 지정할 수 있는 이동 툴 개선과, 렌더 결과를 검색하고 정리하는 새 갤러리 창이 추가됐어요. 가격은 프로페셔널 구독 기준 연 1,299달러예요.</p><p>리뷰어는 AI가 사용자의 창의성을 빼앗지 않으면서 결과물과 작업 흐름을 개선한다고 평가했어요. 3D 아티스트에게 생성형 AI가 별도 서비스가 아니라 기존 렌더링 파이프라인 안으로 녹아드는 흐름을 잘 보여주는 사례예요.</p><p>원문: <a href=\"https://www.creativebloq.com/3d/keyshot-2026-review-fast-easy-3d-rendering-and-with-ai-tools-you-might-actually-use\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.09",
+    "hue": 220,
+    "image": "https://cdn.mos.cms.futurecdn.net/Wiazc2RkJ5yXNeZL3GWPTX-2560-80.jpg",
+    "keywords": [
+      "2D·이미지",
+      "3D"
+    ],
+    "url": "https://www.creativebloq.com/3d/keyshot-2026-review-fast-easy-3d-rendering-and-with-ai-tools-you-might-actually-use"
+  },
+  {
+    "id": "art-b4751d01-2026-10",
+    "tab": "art",
+    "headline": "'AI 덕후' 벤 애플렉, 영화 제작 속 AI를 술술 설명해 화제",
+    "summary": "벤 애플렉이 인터뷰에서 영화 제작 속 AI 기술을 깊이 있게 설명해 화제가 됐어요.",
+    "body": "<p>올해 초 자신의 AI 영화 제작 스타트업을 넷플릭스에 매각한 배우 겸 감독 벤 애플렉이 인터뷰 영상들로 화제가 되고 있어요. GQ의 'One More Question' 인터뷰에서 그는 어릴 때부터 컴퓨터를 좋아했다며 머신러닝, 신경망, 트랜스포머, 텐서, GPU, 추론 같은 용어를 하나하나 풀어 설명했어요. 아날로그 필름이 디지털로 바뀌던 시기에 관심을 갖게 됐고, VFX 작업에는 오래전부터 머신러닝이 쓰여 왔다며 직접 파이썬 스크립트도 짠다고 말했어요.</p><p>그는 합성곱 신경망으로 엣지와 특징을 찾아 창틀 위치를 인식하면 그린스크린 합성을 훨씬 쉽게 할 수 있다는 예를 들었어요. 할리우드 스타라는 지위를 이용해 OpenAI 등 AI 기업을 찾아가 기술을 살펴봤고, 그 경험이 직접 AI 분야에 뛰어드는 계기가 됐다고 해요. 초상권 같은 업계의 오랜 관계를 존중하면서 아티스트와 함께 일하는 윤리적 방식을 위해, 8개월 동안 여러 카메라로 직접 촬영해 오픈 모델의 후반 학습용 데이터셋을 만들었다고 밝혔어요. 매각가로 알려진 5억 8,700만 달러는 정확하지 않다고도 했어요.</p><p>AI가 영화 제작을 대체하는 게 아니라 돕는 도구여야 한다는 그의 관점은, 할리우드 한복판에서 AI를 받아들이는 현실적인 방식을 보여줘서 영상 크리에이터들에게도 흥미로운 이야기예요.</p><p>원문: <a href=\"https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/\">TechCrunch</a></p>",
+    "source": "TechCrunch",
+    "publishedAt": "2026.10.09",
+    "hue": 260,
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/ben-affleck-GettyImages-2297443537.jpg?w=1024",
+    "keywords": [
+      "영상",
+      "VFX"
+    ],
+    "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+    "urls": [
+      {
+        "label": "영상",
+        "href": "https://youtu.be/HzraLR2VkNM"
+      }
+    ]
+  }
+]

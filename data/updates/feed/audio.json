@@ -1,5 +1,20 @@
 [
   {
+    "id": "suno-2026-10-08-1",
+    "service": "suno",
+    "date": "2026.10.08",
+    "kind": "기능",
+    "title": "Suno Studio 편집 기능 개선",
+    "summary": "Studio에서 새 클립의 박자 감지가 정밀해졌고, 클립을 늘이거나 페이드 곡선을 조절할 수 있게 됐어요.",
+    "details": [
+      "Shift 클릭 드래그로 클립 늘이기 지원",
+      "로그와 지수 형태의 페이드 곡선 조절 추가",
+      "와이브테이블 신스, 타이핑 키보드, 플러그인 화면을 별도 창으로 띄울 수 있어요"
+    ],
+    "url": "https://suno.com/release-notes/studio-updates-oct26",
+    "source": "notice"
+  },
+  {
     "id": "suno-2026-10-05-1",
     "service": "suno",
     "date": "2026.10.05",

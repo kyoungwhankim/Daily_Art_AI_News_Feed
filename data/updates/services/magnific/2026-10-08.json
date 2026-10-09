@@ -1,0 +1,12 @@
+[
+  {
+    "id": "magnific-2026-10-08-1",
+    "service": "magnific",
+    "date": "2026.10.08",
+    "kind": "모델",
+    "title": "Magnific One 이미지 모델 공개",
+    "summary": "아트 디렉션이 내장된 이미지 모델 Magnific One이 API에 추가됐어요. 완성 이미지 모드와 여러 결과를 한눈에 보는 초안 모드를 지원해요.",
+    "url": "https://docs.magnific.com/changelog",
+    "source": "dev"
+  }
+]

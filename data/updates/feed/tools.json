@@ -1,5 +1,15 @@
 [
   {
+    "id": "claude-2026-10-08-1",
+    "service": "claude",
+    "date": "2026.10.08",
+    "kind": "정책",
+    "title": "2026 사용 정책 업데이트",
+    "summary": "11월 12일부터 적용되는 사용 정책이 개정됐어요. 기만적 캠페인과 감시 관련 금지 조항이 명확해졌고, 무기와 지원되지 않는 지역 이용에 관한 내용도 구체화됐어요.",
+    "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+    "source": "notice"
+  },
+  {
     "id": "comfyui-2026-10-07-1",
     "service": "comfyui",
     "date": "2026.10.07",
