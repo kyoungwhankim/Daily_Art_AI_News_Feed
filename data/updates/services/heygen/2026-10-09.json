@@ -1,0 +1,16 @@
+[
+  {
+    "id": "heygen-2026-10-09-1",
+    "service": "heygen",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "HeyGen Voice 즉시 보이스 클론과 TTS 추가",
+    "summary": "녹음 한 개로 바로 쓸 수 있는 즉시 보이스 클론이 API에 추가됐어요. 학습 없이 voice_id를 받아 음성 생성에 바로 쓸 수 있어요.",
+    "details": [
+      "POST /v3/models/audio/voices에 mode: instant 추가",
+      "보이스 생성·재학습 시 mode(instant 또는 professional) 필수"
+    ],
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-instant-clone-and-text-to-speech",
+    "source": "dev"
+  }
+]

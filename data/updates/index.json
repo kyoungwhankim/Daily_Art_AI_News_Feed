@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 462,
-      "latest": "2026.10.08",
+      "count": 463,
+      "latest": "2026.10.09",
       "file": "updates/feed/image.json",
-      "rev": "45ace524bb"
+      "rev": "b9087b0655"
     },
     "video": {
-      "count": 936,
-      "latest": "2026.10.08",
+      "count": 938,
+      "latest": "2026.10.09",
       "file": "updates/feed/video.json",
-      "rev": "b70ee5dafb"
+      "rev": "8d692a125a"
     },
     "3d": {
       "count": 178,
@@ -37,10 +37,10 @@
       "rev": "e429eb3b9b"
     },
     "tools": {
-      "count": 994,
-      "latest": "2026.10.08",
+      "count": 997,
+      "latest": "2026.10.09",
       "file": "updates/feed/tools.json",
-      "rev": "2a3f03859c"
+      "rev": "84a1b573e1"
     }
   },
   "services": {
@@ -65,9 +65,9 @@
       "latest": "2026.09.01"
     },
     "qwen-image": {
-      "count": 15,
+      "count": 16,
       "first": "2025.08.14",
-      "latest": "2026.10.02"
+      "latest": "2026.10.09"
     },
     "flux": {
       "count": 42,
@@ -160,9 +160,9 @@
       "latest": "2026.08.03"
     },
     "pixverse": {
-      "count": 44,
+      "count": 45,
       "first": "2025.03.27",
-      "latest": "2026.09.24"
+      "latest": "2026.10.09"
     },
     "hedra": {
       "count": 13,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 67,
+      "count": 68,
       "first": "2025.11.29",
-      "latest": "2026.10.08"
+      "latest": "2026.10.09"
     },
     "synthesia": {
       "count": 188,
@@ -295,9 +295,9 @@
       "latest": "2026.10.06"
     },
     "fal.ai": {
-      "count": 167,
+      "count": 168,
       "first": "2023.03.30",
-      "latest": "2026.09.14"
+      "latest": "2026.10.09"
     },
     "figma-ai": {
       "count": 79,
@@ -310,9 +310,9 @@
       "latest": "2026.07.14"
     },
     "claude": {
-      "count": 226,
+      "count": 228,
       "first": "2023.03.14",
-      "latest": "2026.10.08"
+      "latest": "2026.10.09"
     }
   }
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-10-09-1",
+    "service": "claude",
+    "date": "2026.10.09",
+    "kind": "API",
+    "title": "Managed Agents 동적 워크플로 베타 공개",
+    "summary": "Claude Managed Agents의 에이전트가 많은 작업을 여러 단계로 나눠 실행하는 동적 워크플로를 쓸 수 있게 됐어요. 베타 헤더로 켤 수 있어요.",
+    "details": [
+      "managed-agents-2026-04-01 베타 헤더로 사용",
+      "수백 건 문서 검토처럼 큰 작업을 백그라운드에서 실행"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-9-2026",
+    "source": "dev"
+  }
+]

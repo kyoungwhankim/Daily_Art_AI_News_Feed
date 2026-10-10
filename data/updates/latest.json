@@ -1,5 +1,67 @@
 [
   {
+    "id": "qwen-image-2026-10-09-1",
+    "service": "qwen-image",
+    "date": "2026.10.09",
+    "kind": "모델",
+    "title": "Qwen-Image-2.1-Turbo 공개",
+    "summary": "Qwen-Image 시리즈의 균형 잡힌 오픈소스 이미지 모델 Qwen-Image-2.1-Turbo가 Model Studio에 나왔어요. 비용 대비 성능이 좋아 대량 이미지 작업에 알맞아요.",
+    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "dev"
+  },
+  {
+    "id": "pixverse-2026-10-09-1",
+    "service": "pixverse",
+    "date": "2026.10.09",
+    "kind": "연동",
+    "title": "PixVerse Growth Studio, Meta 카탈로그 영상 연동",
+    "summary": "Growth Studio가 Meta 카탈로그와 연결돼 상품 카탈로그 전체에 맞는 영상 소재를 만들 수 있게 됐어요.",
+    "url": "https://pixverse.ai/en/blog/pixverse-growth-studio-meta-catalog-product-video",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-09-1",
+    "service": "heygen",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "HeyGen Voice 즉시 보이스 클론과 TTS 추가",
+    "summary": "녹음 한 개로 바로 쓸 수 있는 즉시 보이스 클론이 API에 추가됐어요. 학습 없이 voice_id를 받아 음성 생성에 바로 쓸 수 있어요.",
+    "details": [
+      "POST /v3/models/audio/voices에 mode: instant 추가",
+      "보이스 생성·재학습 시 mode(instant 또는 professional) 필수"
+    ],
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-instant-clone-and-text-to-speech",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2026-10-09-1",
+    "service": "fal.ai",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "API 키 권한 프리셋과 팀 역할 추가",
+    "summary": "API 키를 권한 프리셋으로 만들고 모델과 만료일을 제한할 수 있게 됐어요. 팀에는 Creator와 Viewer 역할이 추가돼 권한을 더 세밀하게 나눌 수 있어요.",
+    "details": [
+      "키 생성 시 API·SERVERLESS·DEPLOY·COMPUTE·BILLING·READONLY·FULL 중 선택",
+      "Creator는 Playground·Sandbox·Workflows 사용, Viewer는 읽기 전용"
+    ],
+    "url": "https://fal.ai/docs/changelog#october-9-2026",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-09-1",
+    "service": "claude",
+    "date": "2026.10.09",
+    "kind": "API",
+    "title": "Managed Agents 동적 워크플로 베타 공개",
+    "summary": "Claude Managed Agents의 에이전트가 많은 작업을 여러 단계로 나눠 실행하는 동적 워크플로를 쓸 수 있게 됐어요. 베타 헤더로 켤 수 있어요.",
+    "details": [
+      "managed-agents-2026-04-01 베타 헤더로 사용",
+      "수백 건 문서 검토처럼 큰 작업을 백그라운드에서 실행"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-9-2026",
+    "source": "dev"
+  },
+  {
     "id": "suno-2026-10-08-1",
     "service": "suno",
     "date": "2026.10.08",
@@ -93,6 +155,16 @@
     "summary": "Claude에서 만든 설명 영상 애니메이션을 Luma에서 열어 이어서 편집할 수 있도록 두 회사가 파트너십을 맺었어요.",
     "url": "https://lumalabs.ai/news/Luma-Claude-Motion-Launch-Partnership",
     "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-08-2",
+    "service": "claude",
+    "date": "2026.10.08",
+    "kind": "API",
+    "title": "Compliance API 채팅 조회에 통합 Claude 대화 추가",
+    "summary": "Compliance API의 채팅 엔드포인트가 통합 Claude 환경의 대화도 반환하게 됐어요. Claude Enterprise 조직에서 베타로 제공돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
+    "source": "dev"
   },
   {
     "id": "claude-2026-10-08-1",
@@ -388,66 +460,6 @@
     "title": "키네틱 뮤직비디오 스킬",
     "summary": "키네틱 타이포그래피 뮤직비디오를 만드는 파이프라인 스킬이 추가됐어요.",
     "url": "https://www.scenario.com/changelog/skills-v0-52-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-04-1",
-    "service": "scenario",
-    "date": "2026.10.04",
-    "kind": "연동",
-    "title": "Godot 전문 스킬 추가",
-    "summary": "AI 코딩 에이전트가 GDScript와 프로젝트 구조를 잘 다루도록 Godot 전문 스킬이 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-51-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-03-1",
-    "service": "scenario",
-    "date": "2026.10.03",
-    "kind": "연동",
-    "title": "스킬: 횡스크롤 게임 키트·3D 메시 파이프라인",
-    "summary": "횡스크롤 2D 게임 에셋 스킬과 Ideogram 4.5, 복잡한 3D 메시 파이프라인을 에이전트가 쓸 수 있어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-50-0",
-    "source": "notice"
-  },
-  {
-    "id": "recraft-2026-10-03-1",
-    "service": "recraft",
-    "date": "2026.10.03",
-    "kind": "연동",
-    "title": "Recraft Studio에 Ideogram 4.5 추가 예정",
-    "summary": "편집에 특화된 Ideogram 4.5가 곧 Recraft Studio에 추가된다고 알렸어요. 추가되면 Recraft 안에서 바로 사용할 수 있어요.",
-    "url": "https://www.recraft.ai/blog/ideogram-4-5-is-coming-to-recraft-studio",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-10-03-1",
-    "service": "higgsfield",
-    "date": "2026.10.03",
-    "kind": "기능",
-    "title": "AI Influencer 전면 개편",
-    "summary": "숏폼용 캐릭터 스튜디오 AI Influencer를 새로 만들었어요. 19가지 설정을 3단계 강도로 조합하고 내 얼굴도 넣을 수 있으며, Motion 탭으로 영상까지 만들 수 있어요.",
-    "url": "https://higgsfield.ai/blog/new-ai-influencer",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-02-2",
-    "service": "scenario",
-    "date": "2026.10.02",
-    "kind": "모델",
-    "title": "FLUX.3 Image: 네이티브 2K·4K",
-    "summary": "레이아웃과 글자를 정확히 그리는 네이티브 2K·4K 이미지 모델 FLUX.3 Image가 추가됐어요. 참조 10장 편집도 가능해요.",
-    "url": "https://www.scenario.com/changelog/models-eab3035ee295f6530ff6dd783b7c0f154827c48d67cb82360ed7fbe149ee8780",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-02-1",
-    "service": "scenario",
-    "date": "2026.10.02",
-    "kind": "모델",
-    "title": "MiniMax H3 Max 영상 확장·Recast 모델",
-    "summary": "클립을 최대 15초 늘리고 장면 삽입, 최대 4명 인물 교체가 가능한 MiniMax H3 Max 영상 모델 4종이 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/models-e1fc0d93974b3ff28842984cb0bdfcac1637da62d4e1f02ecd14a41ec7907016",
     "source": "notice"
   }
 ]

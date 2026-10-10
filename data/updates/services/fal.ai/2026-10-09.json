@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fal.ai-2026-10-09-1",
+    "service": "fal.ai",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "API 키 권한 프리셋과 팀 역할 추가",
+    "summary": "API 키를 권한 프리셋으로 만들고 모델과 만료일을 제한할 수 있게 됐어요. 팀에는 Creator와 Viewer 역할이 추가돼 권한을 더 세밀하게 나눌 수 있어요.",
+    "details": [
+      "키 생성 시 API·SERVERLESS·DEPLOY·COMPUTE·BILLING·READONLY·FULL 중 선택",
+      "Creator는 Playground·Sandbox·Workflows 사용, Viewer는 읽기 전용"
+    ],
+    "url": "https://fal.ai/docs/changelog#october-9-2026",
+    "source": "dev"
+  }
+]

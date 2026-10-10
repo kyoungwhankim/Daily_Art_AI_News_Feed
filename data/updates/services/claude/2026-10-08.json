@@ -8,5 +8,15 @@
     "summary": "11월 12일부터 적용되는 사용 정책이 개정됐어요. 기만적 캠페인과 감시 관련 금지 조항이 명확해졌고, 무기와 지원되지 않는 지역 이용에 관한 내용도 구체화됐어요.",
     "url": "https://www.anthropic.com/news/2026-usage-policy-update",
     "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-08-2",
+    "service": "claude",
+    "date": "2026.10.08",
+    "kind": "API",
+    "title": "Compliance API 채팅 조회에 통합 Claude 대화 추가",
+    "summary": "Compliance API의 채팅 엔드포인트가 통합 Claude 환경의 대화도 반환하게 됐어요. Claude Enterprise 조직에서 베타로 제공돼요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
+    "source": "dev"
   }
 ]
