@@ -157,6 +157,23 @@
     "source": "notice"
   },
   {
+    "id": "comfyui-2026-10-08-1",
+    "service": "comfyui",
+    "date": "2026.10.08",
+    "kind": "연동",
+    "title": "ComfyUI v0.39.2 릴리스: 파트너 노드 추가",
+    "summary": "ComfyUI v0.39.2가 공개됐어요. Kling 가상 피팅, Clarity AI 업스케일러, Vidu Q4 프리뷰, Quiver SVG V2 파트너 노드가 추가되었어요.",
+    "details": [
+      "Kling Virtual Try-On 노드: 의상 이미지로 인물 가상 피팅",
+      "Clarity AI Crystal Upscaler 노드: 최대 200배 업스케일과 디테일 조정",
+      "Vidu Q4 프리뷰 노드: 540p~4K 영상 생성, 동기화된 오디오",
+      "Quiver SVG V2 노드: 텍스트·이미지를 SVG로 변환 (기존 Quiver 노드는 지원 중단)",
+      "워크플로 템플릿 v0.11.78 갱신"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-39-2",
+    "source": "notice"
+  },
+  {
     "id": "claude-2026-10-08-2",
     "service": "claude",
     "date": "2026.10.08",
@@ -451,15 +468,5 @@
     ],
     "url": "https://elevenlabs.io/docs/changelog",
     "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-04-2",
-    "service": "scenario",
-    "date": "2026.10.04",
-    "kind": "연동",
-    "title": "키네틱 뮤직비디오 스킬",
-    "summary": "키네틱 타이포그래피 뮤직비디오를 만드는 파이프라인 스킬이 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-52-0",
-    "source": "notice"
   }
 ]

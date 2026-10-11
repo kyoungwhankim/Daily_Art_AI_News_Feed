@@ -1,0 +1,63 @@
+[
+  {
+    "id": "industry-308dd74f-2026-10",
+    "tab": "industry",
+    "headline": "AI 챗봇 운전 게임 데모, 하루 1,000달러 운영비에 인디 개발사가 대출까지",
+    "summary": "AI 챗봇 게임 데모 운영비가 하루 1,000달러를 넘어 4인 개발사가 대출을 받았어요.",
+    "body": "<p>4인 인디 개발사 Easy Fox가 준비 중인 'Teach My Little Sister How To Drive'는 플레이어가 조수석에 앉아 엉뚱한 여동생에게 운전을 가르쳐 면허 시험에 붙게 만드는 게임이에요. 핵심은 이 여동생이 실시간으로 대화하는 AI 챗봇이라는 점인데요, 스팀에 공개한 데모가 예상보다 큰 인기를 끌면서 오히려 개발사가 빚을 지게 됐다고 해요. 최근 스팀 공지에 따르면 지난 한 달 동안 데모 플레이어가 20배 넘게 늘었고, 그만큼 운영비도 크게 불어났대요.</p><p>처음에는 구글 Gemini 기반 챗봇을 연결했는데, 무료 데모라 이용자가 몰리면서 사용 한도 오류가 계속 났고 구글에서도 뾰족한 해결책을 주지 못했다고 해요. 결국 OpenAI 모델로 바꿨지만 비용 문제는 그대로였고, 데모를 유지하는 데만 하루 1,000달러 넘게 들어 은행 대출까지 받았대요. 개발사는 이 비용을 정식 출시 가격에 반영할 수밖에 없다고 밝혔고, 재정 압박 때문에 데모를 일찍 닫을 수도 있지만 아직 결정하진 않았다고 했어요. 여동생 AI가 지시를 잘 따르지 않는다는 플레이어 불만도 함께 다뤘고요.</p><p>많은 개발사가 에셋이나 코드 제작에 AI를 쓰는 것과 달리, 이 게임은 플레이 내내 AI 에이전트를 돌리는 드문 사례예요. 게임 안에 실시간 생성형 AI를 넣으면 이용자가 늘수록 토큰 비용이 고스란히 개발사 부담이 된다는 점을 잘 보여줘서, AI 기능을 기획하는 팀이라면 수익 구조부터 따져봐야 한다는 교훈을 줘요.</p><p>원문: <a href=\"https://kotaku.com/ai-driven-driving-simulator-developers-go-into-debt-just-to-maintain-steam-demo-2000743791\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.11",
+    "hue": 30,
+    "image": "https://kotaku.com/app/uploads/2026/10/teachmysisterhowtodrive-1200x675.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://kotaku.com/ai-driven-driving-simulator-developers-go-into-debt-just-to-maintain-steam-demo-2000743791",
+    "urls": [
+      {
+        "label": "스팀 페이지",
+        "href": "https://store.steampowered.com/app/3948460/Teach_My_Little_Sister_How_To_Drive/"
+      },
+      {
+        "label": "개발사 공지",
+        "href": "https://store.steampowered.com/news/app/3948460/view/699903960312447039"
+      }
+    ]
+  },
+  {
+    "id": "art-60827b26-2026-10",
+    "tab": "art",
+    "headline": "할리우드의 승부수는 '지루한 AI'? 화면 밖 사전 제작에 AI를 써야 하는 이유",
+    "summary": "할리우드가 AI를 써야 할 곳은 화면이 아니라 사전 제작이라는 주장이 나왔어요.",
+    "body": "<p>영화 제작 관리 플랫폼 Filmustage의 공동 창업자이자 CEO인 에고르 두브로프스키가 Creative Bloq 기고에서 할리우드에 가장 현실적인 AI 활용법은 '지루한 AI'라고 주장했어요. 디즈니 '스트레인지 월드'가 약 2억 달러, '플래시'가 1억 5천만 달러 넘는 손실을 낸 것처럼 영화 한 편의 실패 비용이 워낙 크다 보니, 제작비와 시간을 확 줄여 주는 생성형 AI에 끌리는 건 당연하다고 해요. 하지만 AI가 각본을 쓰고 연기하고 촬영까지 사람 없이 해내는 수준과는 아직 거리가 멀다고 짚었어요.</p><p>창작자들의 반발도 커요. 2023년 SAG-AFTRA 파업의 주요 원인이 AI의 창작 일자리 대체였고, 관객도 AI 배우가 나온 작품은 물론 AI를 조금만 쓴 영화나 포스터에도 냉담한 반응을 보였죠. 반면 넷플릭스 '더 젠틀맨'은 AI를 대본 분석과 촬영 결정 지원처럼 보이지 않는 곳에만 써서 좋은 평가를 받았다고 해요. 글쓴이는 할리우드 감독 조수로 일했던 경험을 바탕으로, 콜시트 확인이나 촬영 일정, 예산 계산 같은 반복 업무는 스태프들도 기꺼이 넘기고 싶어 한다고 말해요.</p><p>이런 사전 제작 업무는 AI가 사람보다 빠르고 피로로 인한 실수도 없어서 오히려 더 잘한다는 게 핵심이에요. 화면에 나오는 결과물은 사람에게 맡기고 뒤편 업무만 AI로 돕는 방식이라면 갈등 없이 비용을 줄일 수 있다는 거라, 게임 제작 현장에도 참고할 만한 관점이에요.</p><p>원문: <a href=\"https://www.creativebloq.com/features/why-boring-ai-is-hollywoods-best-bet\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.11",
+    "hue": 270,
+    "image": "https://cdn.mos.cms.futurecdn.net/R63kywzJWrB7y2FfKVHCDB-1920-80.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.creativebloq.com/features/why-boring-ai-is-hollywoods-best-bet"
+  },
+  {
+    "id": "art-7c5ab383-2026-10",
+    "tab": "art",
+    "headline": "벤 애플렉의 '윤리적 AI' 영화 '애니멀스', 공개 직후 관객 반응은 싸늘",
+    "summary": "벤 애플렉이 '윤리적 AI'를 내세운 넷플릭스 영화 '애니멀스'가 혹평을 받고 있어요.",
+    "body": "<p>배우이자 감독인 벤 애플렉이 1년 넘게 할리우드의 AI 활용을 지지해 왔는데요, 이번 주말 넷플릭스에 공개된 그의 신작 '애니멀스'는 그가 말해 온 '윤리적 AI' 활용을 보여주는 작품으로 주목받았어요. 애플렉이 감독과 주연을 맡았고, 여론조사에서 밀리던 시장 후보가 아들이 인질로 잡히자 아내와 함께 선거에 타격을 주지 않으면서 몸값을 마련하려는 정치 스릴러예요. 하지만 결과물은 관객의 마음을 사로잡지 못하고 있대요.</p><p>'아르고'로 아카데미 작품상을 받은 애플렉이지만, 비평가들은 평면적인 인물과 어색한 대사를 지적했고 로튼토마토의 비평가와 관객 점수 모두 낮은 편이라고 해요. 온라인에서는 어딘가 부자연스러운 화면 구도를 두고 AI 흔적이 아니냐는 이야기까지 돌고 있어요. 정작 애플렉은 제작 과정에서 AI를 어디에 썼는지 구체적으로 밝히지 않았어요. 대신 창작자의 권리나 지식재산권을 침해하지 않고, 사람들의 생계를 위협하지 않는 방식으로 AI를 쓰고 싶다고 강조해 왔죠. 최근 블룸버그 행사에서도 '그냥 입력하면 사람들이 보고 싶은 영화가 뚝딱 나오는 날은 오지 않을 것'이라고 말했대요.</p><p>Kotaku는 관객이 여전히 사람의 손길이 담긴 작품을 원한다고 짚었어요. AI 활용을 앞세운 작품이 실제 관객에게 어떻게 받아들여지는지 보여주는 사례라, 창작 현장에서 AI를 어떻게 알리고 써야 할지 고민할 거리를 줘요.</p><p>원문: <a href=\"https://kotaku.com/ben-afflecks-ethical-ai-vehicle-failing-to-impress-human-viewers-2000743803\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.11",
+    "hue": 330,
+    "image": "https://kotaku.com/app/uploads/2026/10/animals.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://kotaku.com/ben-afflecks-ethical-ai-vehicle-failing-to-impress-human-viewers-2000743803",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.hollywoodreporter.com/movies/movie-news/ben-affleck-approach-ai-ethically-animals-replacing-1236720613/"
+      }
+    ]
+  }
+]

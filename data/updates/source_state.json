@@ -651,8 +651,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "e24acec0f49ebfe1",
-  "chars": 28214,
+  "hash": "dc11b9403223ad60",
+  "chars": 28213,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -2845,8 +2845,8 @@
  },
  "https://developers.openai.com/api/docs/changelog": {
   "kind": "page",
-  "hash": "4c060c491833611e",
-  "chars": 58502,
+  "hash": "e810fb689e36ea24",
+  "chars": 58521,
   "links": [
    "0018788938",
    "00699c0470",
@@ -3272,6 +3272,7 @@
    "a30204725e",
    "a36b1c18b7",
    "a3bd4c0c45",
+   "a5f0c2a4d7",
    "a688c92709",
    "a6977dc6ce",
    "a6ece1a25d",
@@ -6265,6 +6266,7 @@
  "https://docs.comfy.org/changelog/rss.xml": {
   "kind": "feed",
   "items": [
+   "0c19d198a07f",
    "57c632e3f683",
    "10dc630657f3",
    "b07fed28eaf1",
@@ -6843,8 +6845,8 @@
  },
  "https://docs.lumalabs.ai/changelog": {
   "kind": "page",
-  "hash": "03029b562eb19290",
-  "chars": 657,
+  "hash": "51e41c840ad3f423",
+  "chars": 656,
   "links": [
    "0159bc936c",
    "05ce119f25",
@@ -7148,6 +7150,7 @@
    "0f58f5573c",
    "0fd5e06c2d",
    "11d2f9256a",
+   "13066a942a",
    "171331d297",
    "179ea775d7",
    "17cd748574",
@@ -7266,6 +7269,7 @@
    "a873d3bd5b",
    "aac8318c7f",
    "ab1089a574",
+   "ac7f830d6e",
    "aeb014690b",
    "afa54b9aa4",
    "afdf40825b",
@@ -7450,6 +7454,7 @@
    "abf5bb7052",
    "b13155925f",
    "b653b7666a",
+   "be8a785bf2",
    "c1a851c970",
    "c483c1c578",
    "c69bb91e41",
@@ -10166,6 +10171,7 @@
  "https://higgsfield.ai/blog/rss.xml": {
   "kind": "feed",
   "items": [
+   "70224211e81f",
    "116ef4604a76",
    "674fcc47ef1f",
    "f5ece37769a8",
@@ -10283,7 +10289,6 @@
    "655b23626436",
    "ffd2af45e337",
    "35ccf8c627ab",
-   "70224211e81f",
    "b5faaccbb0ea",
    "74b020ead28b",
    "04b7f8e15fa2",
@@ -10420,8 +10425,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "645cb83122a87c44",
-  "chars": 4350,
+  "hash": "4a0b7e3aa07d6e2c",
+  "chars": 4396,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -11406,7 +11411,7 @@
  "https://huggingface.co/changelog": {
   "kind": "page",
   "hash": "e266f8bed04124ee",
-  "chars": 2265,
+  "chars": 2269,
   "links": [
    "1a666dcca2",
    "220de2ff7a",
@@ -12407,8 +12412,8 @@
  },
  "https://kling.ai/blog": {
   "kind": "page",
-  "hash": "3892abf47c6214b3",
-  "chars": 2454,
+  "hash": "014ea6774091afeb",
+  "chars": 2476,
   "links": [
    "000ab2313e",
    "02f0201a8e",
@@ -12429,6 +12434,7 @@
    "220de2ff7a",
    "291851c1c9",
    "2aa478c345",
+   "2d14c071e4",
    "2e1283cea4",
    "30a885612d",
    "31696725a0",
@@ -12455,6 +12461,7 @@
    "77f9ef92b4",
    "79274c9f13",
    "7e536fa5e1",
+   "83dbaa7ece",
    "85db6ed402",
    "8713beec36",
    "87e2d3d738",
@@ -12470,6 +12477,7 @@
    "a320740945",
    "a3646e4918",
    "a88576ae2a",
+   "b3cfa9273f",
    "b40e735b77",
    "b5cd619e7d",
    "b5f43fc2be",
@@ -12493,6 +12501,7 @@
    "d6d35970a5",
    "d7cb35136b",
    "d861fb9933",
+   "d89cc150ee",
    "dbd486d0b6",
    "e02a8850ee",
    "e03c25f780",
@@ -12506,10 +12515,12 @@
    "f10ec55efe",
    "f193567724",
    "f8c63b0d87",
-   "f9a542a849"
+   "f9a542a849",
+   "fe0a6161eb"
   ],
   "dates": [
    "09 Jul 2093",
+   "Oct 10, 2026",
    "Oct 2, 2026",
    "Sep 24, 2026",
    "Sep 28, 2026",
@@ -14951,8 +14962,8 @@
  },
  "https://platform.claude.com/docs/en/release-notes/overview": {
   "kind": "page",
-  "hash": "dd6c8d92c9f53519",
-  "chars": 86747,
+  "hash": "6e03ed2cd040e5b5",
+  "chars": 86768,
   "links": [
    "00118fa80a",
    "001afc5bf4",
@@ -17088,6 +17099,7 @@
    "53edc4caae",
    "584f094f89",
    "5afd73e0e9",
+   "6d33497dac",
    "6dff525c95",
    "7d13e530ac",
    "a274291abc",
@@ -17353,6 +17365,7 @@
    "Oct 06, 2026",
    "Oct 08, 2026",
    "Oct 09, 2026",
+   "Oct 11, 2026",
    "October 15, 2025",
    "September 11, 2025",
    "September 15, 2025",
@@ -17362,7 +17375,7 @@
  },
  "https://www.anthropic.com/news": {
   "kind": "page",
-  "hash": "5a709f7b68f23cd0",
+  "hash": "7fd0bc2636438825",
   "chars": 2024,
   "links": [
    "00118fa80a",
@@ -19632,8 +19645,8 @@
  },
  "https://www.scenario.com/changelog": {
   "kind": "page",
-  "hash": "cba7b72a08b98fdd",
-  "chars": 47320,
+  "hash": "e7864e0312fb746d",
+  "chars": 47500,
   "links": [
    "016ef85946",
    "017879a00f",
@@ -20043,6 +20056,7 @@
    "cbb0af9161",
    "cd4f170147",
    "ce00978eb5",
+   "ce37b65c17",
    "cecf274ee7",
    "ced3f3bb42",
    "cee47fbe72",

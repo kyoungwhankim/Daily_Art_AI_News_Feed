@@ -19,10 +19,10 @@
       "rev": "955a50db45"
     },
     "game-assets": {
-      "count": 525,
+      "count": 526,
       "latest": "2026.10.05",
       "file": "updates/feed/game-assets.json",
-      "rev": "0832dce312"
+      "rev": "01b0618dff"
     },
     "motion": {
       "count": 162,
@@ -37,10 +37,10 @@
       "rev": "e429eb3b9b"
     },
     "tools": {
-      "count": 997,
+      "count": 998,
       "latest": "2026.10.09",
       "file": "updates/feed/tools.json",
-      "rev": "84a1b573e1"
+      "rev": "6970d9203a"
     }
   },
   "services": {
@@ -205,7 +205,7 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 338,
+      "count": 339,
       "first": "2022.12.23",
       "latest": "2026.10.05"
     },
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 209,
+      "count": 210,
       "first": "2024.08.06",
-      "latest": "2026.10.07"
+      "latest": "2026.10.08"
     },
     "invokeai": {
       "count": 73,
