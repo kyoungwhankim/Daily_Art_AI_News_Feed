@@ -1,5 +1,19 @@
 [
   {
+    "id": "meshy-2026-10-10-1",
+    "service": "meshy",
+    "date": "2026.10.10",
+    "kind": "API",
+    "title": "Meshy API 이미지 입력에 .webp 형식 추가",
+    "summary": "Image to 3D, Multi-Image to 3D, Image to Image 등에서 .webp 이미지를 바로 입력할 수 있게 됐어요. 잔액 조회 API는 월 충전분과 영구 크레딧을 나눠 보여줘요.",
+    "details": [
+      "Image to 3D, Multi-Image to 3D, Image to Image, Retexture, Text to 3D Refine에서 .webp 지원 (URL과 data URI 모두)",
+      "Get Balance 응답에 monthly_credits, permanent_credits, monthly_resets_at 필드 추가"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
     "id": "qwen-image-2026-10-09-1",
     "service": "qwen-image",
     "date": "2026.10.09",
@@ -17,6 +31,22 @@
     "title": "PixVerse Growth Studio, Meta 카탈로그 영상 연동",
     "summary": "Growth Studio가 Meta 카탈로그와 연결돼 상품 카탈로그 전체에 맞는 영상 소재를 만들 수 있게 됐어요.",
     "url": "https://pixverse.ai/en/blog/pixverse-growth-studio-meta-catalog-product-video",
+    "source": "notice"
+  },
+  {
+    "id": "ltx-studio-2026-10-09-1",
+    "service": "ltx-studio",
+    "date": "2026.10.09",
+    "kind": "앱",
+    "title": "LTX Desktop 대규모 업데이트 공개",
+    "summary": "오픈소스 LTX Desktop이 로컬에서 영상 프로젝트를 만들고 관리하기 편하도록 크게 바뀌었어요. 내장 LoRA와 배치 생성, 원격 생성 기능이 추가됐어요.",
+    "details": [
+      "내장 LoRA 13종과 AlphaGen, Deblur, Colorization, Layout to Render 등 IC-LoRA 추가",
+      "Retake, Extend, 개선된 프롬프트 보강 기능 추가",
+      "여러 생성을 대기열에 넣는 배치 생성과 같은 Wi-Fi 기기에서 보는 원격 생성 지원",
+      "홈 화면 개편, 에셋 라이브러리, 설치 과정 간소화"
+    ],
+    "url": "https://ltx.io/release-notes",
     "source": "notice"
   },
   {
@@ -438,35 +468,5 @@
     "summary": "ElevenLabs의 가장 표현력 높은 TTS 모델 v4를 HeyGen Voices에서 고를 수 있게 됐어요. 긴 스크립트에서도 톤과 속도가 일정해요.",
     "url": "https://heygen.noticeable.news/publications/heygen-voices-now-supports-elevenlabs-v4",
     "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-05-1",
-    "service": "heygen",
-    "date": "2026.10.05",
-    "kind": "API",
-    "title": "HeyGen Video 2K 렌더와 Enterprise 요청 한도 상향",
-    "summary": "HeyGen Video API가 2K 해상도를 지원해요(768p의 3배 요금). Enterprise API 플랜의 요청 속도 한도도 크게 올렸어요.",
-    "details": [
-      "읽기 분당 1,000회, 쓰기 초당 30회",
-      "429 응답에 X-RateLimit 헤더 추가"
-    ],
-    "url": "https://docs.heygen.com/changelog#heygen-video-2k",
-    "source": "dev"
-  },
-  {
-    "id": "elevenlabs-2026-10-05-1",
-    "service": "elevenlabs",
-    "date": "2026.10.05",
-    "kind": "API",
-    "title": "ElevenAgents에 병합 제안 알파 추가",
-    "summary": "구조화된 절차가 저장 및 게시 시 자동으로 컴파일 및 검증됩니다. 팀은 에이전트 브랜치에 대한 병합 제안을 열고 변경 사항을 검토할 수 있습니다.",
-    "details": [
-      "구조화된 절차 자동 컴파일 및 검증",
-      "병합 제안 알파 추가",
-      "JavaScript/Python SDK v2.71.0 릴리스",
-      "새로운 에이전트 LLM 옵션 지원"
-    ],
-    "url": "https://elevenlabs.io/docs/changelog",
-    "source": "dev"
   }
 ]

@@ -1,5 +1,19 @@
 [
   {
+    "id": "meshy-2026-10-10-1",
+    "service": "meshy",
+    "date": "2026.10.10",
+    "kind": "API",
+    "title": "Meshy API 이미지 입력에 .webp 형식 추가",
+    "summary": "Image to 3D, Multi-Image to 3D, Image to Image 등에서 .webp 이미지를 바로 입력할 수 있게 됐어요. 잔액 조회 API는 월 충전분과 영구 크레딧을 나눠 보여줘요.",
+    "details": [
+      "Image to 3D, Multi-Image to 3D, Image to Image, Retexture, Text to 3D Refine에서 .webp 지원 (URL과 data URI 모두)",
+      "Get Balance 응답에 monthly_credits, permanent_credits, monthly_resets_at 필드 추가"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-10-06-1",
     "service": "meshy",
     "date": "2026.10.06",

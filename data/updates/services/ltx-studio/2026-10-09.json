@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ltx-studio-2026-10-09-1",
+    "service": "ltx-studio",
+    "date": "2026.10.09",
+    "kind": "앱",
+    "title": "LTX Desktop 대규모 업데이트 공개",
+    "summary": "오픈소스 LTX Desktop이 로컬에서 영상 프로젝트를 만들고 관리하기 편하도록 크게 바뀌었어요. 내장 LoRA와 배치 생성, 원격 생성 기능이 추가됐어요.",
+    "details": [
+      "내장 LoRA 13종과 AlphaGen, Deblur, Colorization, Layout to Render 등 IC-LoRA 추가",
+      "Retake, Extend, 개선된 프롬프트 보강 기능 추가",
+      "여러 생성을 대기열에 넣는 배치 생성과 같은 Wi-Fi 기기에서 보는 원격 생성 지원",
+      "홈 화면 개편, 에셋 라이브러리, 설치 과정 간소화"
+    ],
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

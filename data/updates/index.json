@@ -7,16 +7,16 @@
       "rev": "b9087b0655"
     },
     "video": {
-      "count": 938,
+      "count": 939,
       "latest": "2026.10.09",
       "file": "updates/feed/video.json",
-      "rev": "8d692a125a"
+      "rev": "97960c83af"
     },
     "3d": {
-      "count": 178,
-      "latest": "2026.10.06",
+      "count": 179,
+      "latest": "2026.10.10",
       "file": "updates/feed/3d.json",
-      "rev": "955a50db45"
+      "rev": "96e9a14faa"
     },
     "game-assets": {
       "count": 526,
@@ -145,9 +145,9 @@
       "latest": "2026.10.06"
     },
     "ltx-studio": {
-      "count": 63,
+      "count": 64,
       "first": "2024.11.21",
-      "latest": "2026.10.02"
+      "latest": "2026.10.09"
     },
     "pika": {
       "count": 11,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 116,
+      "count": 117,
       "first": "2023.10.19",
-      "latest": "2026.10.06"
+      "latest": "2026.10.10"
     },
     "tripo": {
       "count": 29,

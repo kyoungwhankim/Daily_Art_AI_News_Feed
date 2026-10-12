@@ -1,0 +1,90 @@
+[
+  {
+    "id": "games-0dd66d3c-2026-10",
+    "tab": "games",
+    "headline": "구글 AI 게임 생성 서비스 'Playground', 와이어드 기자가 직접 게임 세 개 만들어 봤다",
+    "summary": "구글 Playground로 와이어드 기자가 하루 만에 게임 세 개를 만들어 봤어요.",
+    "body": "<p>구글이 이번 주 Google Labs를 통해 공개한 AI 게임 생성 서비스 'Playground'를 와이어드 기자가 직접 써 봤어요. Playground는 만들고 싶은 게임을 채팅하듯 평범한 말로 설명하면 브라우저에서 바로 돌아가는 게임을 만들어 주는 서비스로, 말하자면 게임판 '바이브 코딩'이에요. 레퍼런스로 쓸 사진·영상·모델을 올릴 수도 있고, 따로 에셋을 주지 않으면 비주얼과 디자인은 전부 AI가 생성해요. 메타가 9월에 발표한 Horizon Create와 비슷한 방식이에요.</p><p>개발 경험이 거의 없는 기자는 하루 만에 플레이 가능한 게임 세 개를 만들었어요. '귀여운 돼지로 만든 테트리스'라는 프롬프트로 만든 'Pork Drop', 한 줄 요청만으로 나온 2D 플래시풍 파티 게임 'Dinner Darling', 그리고 리듬 게임에서 시작해 핫라인 마이애미 같은 탑다운 슈터로 바꾼 'Neon Don'이에요. 특히 Neon Don은 레벨 스케일링, 보스 생성, 적 다양화, 캐릭터 대사 시스템까지 대화로 하나씩 추가했는데, 버그를 고쳐 달라고 하면 고쳐 주다가도 가끔 새 문제를 만들기도 했대요.</p><p>기자 스스로 결과물이 '전혀 좋지 않다'고 인정했지만, 진짜 개발자라면 기능을 더 날카롭게 다듬을 수 있을 거라고 봤어요. 메타에 이어 구글까지 프롬프트 기반 게임 생성에 뛰어든 만큼, 아이디어 프로토타이핑이나 아트 콘셉트 검증 방식이 어떻게 달라질지 지켜볼 만해요.</p><p>원문: <a href=\"https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/\">WIRED</a></p>",
+    "source": "WIRED",
+    "publishedAt": "2026.10.12",
+    "hue": 200,
+    "image": "https://media.wired.com/photos/6ac967401dd8a2ab2e331c51/191:100/w_1280,c_limit/Google-Playground-Gear-PG_THUMBNAIL_BLOG%20(1).png",
+    "keywords": [
+      "Google"
+    ],
+    "url": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/"
+  },
+  {
+    "id": "industry-75767db2-2026-10",
+    "tab": "industry",
+    "headline": "LLM 탑재 운전 교습 게임, 데모 AI 비용만 하루 1,000달러… 개발사는 은행 대출까지",
+    "summary": "LLM NPC 게임 데모의 AI 비용이 하루 1,000달러를 넘어 개발사가 대출까지 받았어요.",
+    "body": "<p>운전 교습 코미디 시뮬레이터 'Teach My Little Sister How To Drive'의 개발사 Easy Fox가 데모 운영에만 AI 서비스 비용으로 하루 1,000달러 넘게 쓰고 있다고 스팀 공지로 밝혔어요. 이 게임은 조수석에 앉은 플레이어가 동생에게 운전을 가르치는 내용인데, 동생 캐릭터 뒤에 LLM 챗봇이 들어 있어서 대화를 나누거나 '여기서 좌회전' 같은 음성 지시를 하면 반응하는 방식이에요. 지금은 OpenAI 모델을 쓰고, 정식 출시 때는 Gemini로 바꿀 계획이래요.</p><p>2월에 공개한 데모가 최근 한 달 사이 플레이어 수가 20배 이상 늘면서 토큰 비용이 크게 불어났어요. 개발사는 플레이어 한 명당 비용이 비싼 게 아니라 사람이 너무 많아서라고 설명했고, 결국 은행 대출까지 받았지만 정식 출시 전에 데모를 일찍 닫아야 할 수도 있다고 했어요. FRVR에 따르면 늘어난 규모가 동시 접속 450명 수준이라, 출시 후 수익성에 대한 의문도 나오고 있어요.</p><p>Easy Fox는 예상 AI 사용량을 게임 가격에 반영하되 토큰 사용료를 따로 받지는 않겠다고 했고, 고사양 GPU 유저를 위한 로컬 AI 모델 도입도 검토 중이에요. LLM 기반 NPC가 왜 아직 드문지를 운영 비용 측면에서 잘 보여주는 사례예요.</p><p>원문: <a href=\"https://www.pcgamer.com/games/sim/the-developer-of-an-ai-powered-driving-instruction-simulator-is-spending-usd1-000-per-month-just-to-keep-its-demo-running/\">PC Gamer</a></p>",
+    "source": "PC Gamer",
+    "publishedAt": "2026.10.12",
+    "hue": 30,
+    "image": "https://cdn.mos.cms.futurecdn.net/mpQFst9ntNsDXtxsubpvs-1920-80.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.pcgamer.com/games/sim/the-developer-of-an-ai-powered-driving-instruction-simulator-is-spending-usd1-000-per-month-just-to-keep-its-demo-running/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://kotaku.com/ai-driven-driving-simulator-developers-go-into-debt-just-to-maintain-steam-demo-2000743791"
+      }
+    ]
+  },
+  {
+    "id": "art-ea7a9e7c-2026-10",
+    "tab": "art",
+    "headline": "'서울의 봄' 김성수 감독 \"AI는 상상 속 장면을 보여주는 도구\"… 부산영화제서 AI 제작 경험 공개",
+    "summary": "김성수 감독이 부산영화제에서 AI가 이제 자기 연출의 일부가 됐다고 말했어요.",
+    "body": "<p>'서울의 봄' 김성수 감독이 부산국제영화제 아시아콘텐츠&amp;필름마켓에서 Kling AI가 연 세션에 나와, 한때 영화 산업의 파괴자로 여겼던 AI가 이제는 자기 작업의 일부가 됐다고 말했어요. 계기는 8분짜리 단편 'Worm Train'이었어요. 거대한 벌레가 승객으로 가득 찬 기차와 부딪히는 장면을 AI가 못 그려 한 번 포기했지만, 몇 달 뒤 기술이 따라오면서 완성할 수 있었대요. 애니메이션 아트 디렉터와 음악 감독을 포함한 9명 팀이 일부만 AI로 만들고 나머지는 기존 방식으로 찍었어요.</p><p>준비 중인 7부작 드라마도 같은 하이브리드 방식으로 만들어요. 실사로 찍으려면 막대한 돈이 드는 15분 분량의 경인고속도로 추격 장면을 AI로 먼저 만든 뒤, 어떤 컷에 배우가 필요하고 어디에 VFX를 쓸지 정한대요. 함께 나온 AI 제작사 MooAm의 해리 현 대표는 연출 경험 없이 만든 AI 결과물은 얼굴·세트·조명이 다 똑같아 보인다며, 연출팀에 컷 생성과 연속성을 관리하는 'AI 코디네이터'를 두고 있다고 소개했어요.</p><p>'강자아' 공동 감독 리웨이는 AI가 콘셉트 디자인 같은 시행착오 단계에서 가장 유용하다고 했고, 김 감독은 기술 표준보다 상업적 이용과 권리 규칙부터 정해야 한다고 강조했어요.</p><p>원문: <a href=\"https://variety.com/2026/film/markets-festivals/12-12-the-day-director-kim-sung-soo-ai-craft-1236908089/\">Variety</a></p>",
+    "source": "Variety",
+    "publishedAt": "2026.10.12",
+    "hue": 270,
+    "image": "https://variety.com/wp-content/uploads/2026/10/Busan-AI-panel.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://variety.com/2026/film/markets-festivals/12-12-the-day-director-kim-sung-soo-ai-craft-1236908089/"
+  },
+  {
+    "id": "art-268645ab-2026-10",
+    "tab": "art",
+    "headline": "이미 찍은 SF 스릴러 'Overstake', 생성형 AI로 배경·액션 다시 짓는다… 부산 마켓서 세일즈 시작",
+    "summary": "실사로 찍은 SF 스릴러 'Overstake'가 생성형 AI로 배경과 액션을 다시 만들고 있어요.",
+    "body": "<p>홍콩 영화 세일즈사 Cappu Films가 스타스 마레예프 감독의 SF 액션 스릴러 'Overstake'의 전 세계 판매를 맡아, 부산국제영화제 아시아콘텐츠&amp;필름마켓에서 바이어들에게 처음 소개하고 있어요. 이 영화의 특징은 실사로 촬영한 연기는 그대로 살리고, 영화 속 배경을 생성형 AI로 새로 짓는다는 점이에요. 부상당한 퇴역 군인이 거액이 걸린 목숨 건 내기 게임에 뛰어들어, 두 시간 안에 산업 도시를 가로지르며 전처를 지켜야 하는 이야기예요. 낯선 사람들은 휴대폰으로 그를 돕거나 막으라는 제안을 받고, 주최 측은 이 생존기를 쇼로 만들어요.</p><p>마레예프 감독은 이미 연출한 영화로 돌아가 예전엔 불가능했던 규모로 세계를 다시 지을 기회라며, 연기와 이야기는 토대로 남기고 생성형 AI로 환경·액션·비주얼 언어를 새로 고민하되 영화의 인간적인 핵심은 잃지 않겠다고 말했어요. AI 작업이 아직 진행 중이라 부산에서는 프로모 영상과 완성된 몇몇 시퀀스만 공개돼요. Cappu Films 측은 감독의 프로모 영상에 깊은 인상을 받았고, SF·액션 장르가 자사의 강점이라 배급 파트너들에게 적극 소개하겠다고 밝혔어요.</p><p>이미 촬영을 마친 작품을 AI로 '리빌드'해 스케일을 키우는 방식은 저예산 장르 영화가 시도해 볼 만한 새로운 제작 모델이라, 시장 반응이 어떨지 눈여겨볼 만해요.</p><p>원문: <a href=\"https://variety.com/2026/film/markets-festivals/sci-fi-thriller-overstake-generative-ai-rebuild-busan-market-1236907993/\">Variety</a></p>",
+    "source": "Variety",
+    "publishedAt": "2026.10.12",
+    "hue": 230,
+    "image": "https://variety.com/wp-content/uploads/2026/10/Overstake.jpg?w=1000&h=563&crop=1",
+    "keywords": [
+      "영상",
+      "VFX"
+    ],
+    "url": "https://variety.com/2026/film/markets-festivals/sci-fi-thriller-overstake-generative-ai-rebuild-busan-market-1236907993/"
+  },
+  {
+    "id": "art-3bd74045-2026-10",
+    "tab": "art",
+    "headline": "니콜라스 케이지 \"난 AI 친화적인 배우가 아니다\"… '스파이더 누아르' AI 동의서 거부 공개",
+    "summary": "니콜라스 케이지가 '스파이더 누아르'의 AI 활용 동의서에 서명하지 않았다고 밝혔어요.",
+    "body": "<p>니콜라스 케이지가 이번 주말 뉴욕 코믹콘 패널에서, 아마존의 실사 드라마 '스파이더 누아르'에 AI를 써도 된다는 동의서에 서명하지 않았다고 밝혔어요. 그는 아마존을 OpenAI에 500억 달러를 투자한 '아주 AI 친화적인 회사'라고 부르며 \"나는 AI 친화적인 배우가 아니다, 아마 그 스튜디오와는 다시 일하지 않을 것 같다, 그래도 괜찮다\"고 말했어요.</p><p>'스파이더 누아르'는 케이지가 탐정 버전의 벤 라일리를 연기한 작품으로, 호평과 에미상 후보 지명에도 불구하고 지난달 시즌 1만으로 종영이 결정됐어요. AI 동의 거부가 이 결정에 얼마나 영향을 줬는지는 확인되지 않았어요. 케이지는 소니의 애니메이션 '스파이더버스' 시리즈에서는 계속 같은 캐릭터를 맡을 예정이에요. 그는 할리우드의 AI 바람 때문에 오히려 유튜브식 DIY 제작으로 성장해 생성형 AI에 더 비판적인 젊은 감독들과 일하고 싶어졌다며, AI 비판론자로 알려진 '백룸' 감독 케인 파슨스를 직접 언급했어요.</p><p>스튜디오가 배우에게 AI 활용 동의를 요구하는 일이 늘어나는 가운데 톱스타가 공개적으로 선을 그은 사례라, 배우의 얼굴·목소리·연기 데이터를 AI에 쓰는 문제를 둘러싼 논쟁에 다시 불이 붙을 것 같아요.</p><p>원문: <a href=\"https://kotaku.com/nicolas-cage-says-hes-not-working-with-amazon-after-refusing-ai-on-spider-noir-i-am-not-an-ai-friendly-actor-2000744149\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.12",
+    "hue": 350,
+    "image": "https://kotaku.com/app/uploads/2026/02/HA1o565a4AAms80.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://kotaku.com/nicolas-cage-says-hes-not-working-with-amazon-after-refusing-ai-on-spider-noir-i-am-not-an-ai-friendly-actor-2000744149",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.ign.com/articles/nicolas-cage-says-hell-probably-never-work-with-amazon-again-after-declining-spider-noir-ai-waiver"
+      }
+    ]
+  }
+]
