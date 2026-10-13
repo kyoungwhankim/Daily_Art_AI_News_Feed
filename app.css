@@ -2136,3 +2136,63 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .free-row-more { margin-left: auto; font-size: 12.5px; font-weight: 700; color: var(--accent-strong); text-decoration: none; }
 .free-row-more:hover { text-decoration: underline; }
 .free-row .hm-free-grid { margin-top: 12px; }
+
+/* ---------- 날짜별 기사: 빈칸 없이 이어 흐른다 (날짜는 카드 오른쪽 아래, 오늘 기사는 TODAY) ---------- */
+.grid.date-flow { margin-top: 8px; }
+.date-label .today-mark { align-self: center; font-size: 12px; }
+
+/* 오늘 기사 카드: 테두리에 TODAY 글자와 같은 무지개색이 천천히 흐른다 */
+.card.is-today {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff2e7e, #ff7a1a, #a63dff, #2f7bff, #ff2e7e) border-box;
+  background-size: 100% 100%, 300% 100%;
+  animation: todayBorder 6s linear infinite;
+}
+[data-theme="dark"] .card.is-today {
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff5c9a, #ffa04d, #c27bff, #5c9bff, #ff5c9a) border-box;
+  background-size: 100% 100%, 300% 100%;
+}
+@keyframes todayBorder { from { background-position: 0 0, 0% 50%; } to { background-position: 0 0, 300% 50%; } }
+@media (prefers-reduced-motion: reduce) { .card.is-today { animation: none; } }
+/* 메인·브리핑: 오늘 기사의 큰 카드와 썸네일 테두리에도 같은 무지개 */
+.hm-lead.is-today, .thumb.today-ring, .home-ticker-btn.is-today {
+  border-color: transparent !important;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff2e7e, #ff7a1a, #a63dff, #2f7bff, #ff2e7e) border-box !important;
+  background-size: 100% 100%, 300% 100% !important;
+  animation: todayBorder 6s linear infinite;
+}
+[data-theme="dark"] .hm-lead.is-today, [data-theme="dark"] .thumb.today-ring, [data-theme="dark"] .home-ticker-btn.is-today {
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff5c9a, #ffa04d, #c27bff, #5c9bff, #ff5c9a) border-box !important;
+  background-size: 100% 100%, 300% 100% !important;
+}
+@media (prefers-reduced-motion: reduce) { .hm-lead.is-today, .thumb.today-ring, .home-ticker-btn.is-today { animation: none; } }
+@media (max-width: 640px) { .home-ticker-btn.is-today { background: transparent !important; animation: none; } }
+
+/* 사이드바 '나만의 피드' 버튼: 천천히 흐르는 그라데이션 + 가끔 지나가는 빛 */
+.side-brief-btn {
+  position: relative; overflow: hidden;
+  background: linear-gradient(110deg, #ff2e7e, #a63dff 35%, #2f7bff 65%, #ff7a1a 100%);
+  background-size: 260% 100%;
+  animation: briefFlow 9s ease-in-out infinite alternate;
+}
+.side-brief-btn::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 45%; pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent);
+  transform: skewX(-18deg);
+  animation: briefShine 5.5s ease-in-out infinite;
+}
+.side-brief-btn > * { position: relative; z-index: 1; }
+.side-brief-title { text-shadow: 0 1px 6px rgba(0,0,0,.18); }
+.side-brief-icon { color: #a63dff; }
+[data-theme="dark"] .side-brief-btn { background-image: linear-gradient(110deg, #ff5c9a, #c27bff 35%, #5c9bff 65%, #ffa04d 100%); }
+@keyframes briefFlow { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
+@keyframes briefShine { 0%, 70% { left: -60%; } 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .side-brief-btn, .side-brief-btn::after { animation: none; } .side-brief-btn::after { display: none; } }

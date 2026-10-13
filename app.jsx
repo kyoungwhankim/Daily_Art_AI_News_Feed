@@ -179,12 +179,12 @@ function tabHasNew(tabId, articles) {
 }
 
 /* ---------- thumb ---------- */
-function Thumb({ hue, image, alt, children }) {
+function Thumb({ hue, image, alt, children, ring }) {
   const [failed, setFailed] = useState(false);
   const bg = `linear-gradient(135deg, oklch(0.88 0.06 ${hue}) 0%, oklch(0.78 0.09 ${(hue + 40) % 360}) 100%)`;
   const showImg = image && !failed;
   return (
-    <div className="thumb">
+    <div className={`thumb${ring ? ' today-ring' : ''}`}>
       {showImg ? (
         <img
           className="thumb-img"
@@ -203,7 +203,7 @@ function Thumb({ hue, image, alt, children }) {
 
 /* ---------- card ---------- */
 function ArticleCard({ article, onOpen, query, variant }) {
-  const cls = `card${variant ? ' ' + variant : ''}`;
+  const cls = `card${variant ? ' ' + variant : ''}${isToday(article) ? ' is-today' : ''}`;
   const m = React.useContext(MemberContext);
   return (
     <button className={cls} onClick={() => onOpen(article)}>
@@ -226,17 +226,17 @@ function ArticleCard({ article, onOpen, query, variant }) {
 }
 
 /* ---------- date section ---------- */
-function DateSection({ iso, items, onOpen, query, isToday }) {
+function DateSection({ iso, items, onOpen, query, isToday, total }) {
   const lbl = dateLabel(iso);
   return (
     <section className="date-section">
       <div className="date-header">
         <div className="date-label">
-          {lbl.pin && <span className="pin">{lbl.pin}</span>}
+          {lbl.pin && <TodayMark />}
           <span>{lbl.main}</span>
           {lbl.sub && <span className="iso">· {lbl.sub}</span>}
         </div>
-        <div className="date-count">{items.length}개 기사</div>
+        <div className="date-count">{total || items.length}개 기사</div>
       </div>
       {isToday && items.length > 1 ? (
         <div className="grid today-grid">
@@ -931,18 +931,24 @@ function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
 
   const visibleGroups = showAll ? groups : recent;
 
+  // 오늘 기사가 3개 이상이면 지금처럼 큰 '오늘' 묶음으로, 나머지 날짜는 한 격자에 이어서 흐르게 한다.
+  // 날짜는 카드 오른쪽 아래에 있고, 오늘 기사는 TODAY 표시로 구분한다.
+  const todayBig = visibleGroups.length && daysAgo(visibleGroups[0].iso) === 0 && visibleGroups[0].items.length >= 3;
+  const flowGroups = todayBig ? visibleGroups.slice(1) : visibleGroups;
+  const todayRest = todayBig ? visibleGroups[0].items.slice(3) : [];   // 큰 묶음(대표 1 + 옆 2) 다음 오늘 기사는 흐름 맨 앞에
+
   return (
     <>
-      {visibleGroups.map(g => (
-        <DateSection
-          key={g.iso}
-          iso={g.iso}
-          items={g.items}
-          onOpen={onOpen}
-          query={query}
-          isToday={daysAgo(g.iso) === 0}
-        />
-      ))}
+      {todayBig && (
+        <DateSection iso={visibleGroups[0].iso} items={visibleGroups[0].items.slice(0, 3)} total={visibleGroups[0].items.length}
+          onOpen={onOpen} query={query} isToday />
+      )}
+      {(flowGroups.length > 0 || todayRest.length > 0) && (
+        <div className="grid date-flow">
+          {todayRest.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />)}
+          {flowGroups.map(g => g.items.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />))}
+        </div>
+      )}
       {!showAll && older.length > 0 && (
         <div className="show-older">
           <button onClick={() => setShowAll(true)}>
@@ -1131,7 +1137,7 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
         {lead ? (
           <button type="button" className="bx-lead" onClick={() => onOpenArticle(lead)}>
             <span className="bx-lead-img">
-              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
+              <Thumb hue={lead.hue} image={lead.image} alt={lead.headline} ring={isToday(lead)}>
               {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
             </Thumb>
               {fresh.has('a:' + lead.id) && <span className="brief-dot bx-lead-new">NEW</span>}
@@ -1140,7 +1146,8 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
               <span className="bx-why">{why(lead).slice(0, 3).map(t => <span key={t}>#{t}</span>)}</span>
               <span className="bx-lead-title">{lead.headline}</span>
               <span className="bx-lead-summary">{lead.summary}</span>
-              <span className="hm-meta">{lead.source} · {lead.publishedAt}</span>
+              {isToday(lead) ? <span className="hm-meta"><TodayMark />{lead.source}</span>
+                : <span className="hm-meta">{lead.source} · {lead.publishedAt}</span>}
             </span>
           </button>
         ) : <p className="brief-empty">아직 관련 뉴스가 없어요.</p>}
@@ -1156,9 +1163,10 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
                       <span className="brief-why">{why(a).slice(0, 2).join(' · ')}</span>
                     </span>
                     <span className="bx-item-title">{a.headline}</span>
-                    <span className="hm-meta">{a.source} · {a.publishedAt}</span>
+                    {isToday(a) ? <span className="hm-meta"><TodayMark />{a.source}</span>
+                      : <span className="hm-meta">{a.source} · {a.publishedAt}</span>}
                   </span>
-                  <span className="bx-item-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
+                  <span className="bx-item-thumb"><Thumb hue={a.hue} image={a.image} alt="" ring={isToday(a)} /></span>
                 </button>
               </li>
             ))}
@@ -1240,7 +1248,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
 
       {lead && (
         <section className="hm-top" aria-label="주요 기사">
-          <button type="button" className="hm-lead" onClick={() => onOpenArticle(lead)}>
+          <button type="button" className={`hm-lead${isToday(lead) ? ' is-today' : ''}`} onClick={() => onOpenArticle(lead)}>
             <Thumb hue={lead.hue} image={lead.image} alt={lead.headline}>
               {isToday(lead) && <span className="thumb-today"><TodayMark /></span>}
             </Thumb>
@@ -1262,7 +1270,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
                       <span className="hm-row-title">{a.headline}</span>
                       {meta(a)}
                     </span>
-                    <span className="hm-row-thumb"><Thumb hue={a.hue} image={a.image} alt="" /></span>
+                    <span className="hm-row-thumb"><Thumb hue={a.hue} image={a.image} alt="" ring={isToday(a)} /></span>
                   </button>
                 </li>
               ))}
@@ -1280,7 +1288,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
             </div>
             {items[0] && (
               <button type="button" className="hm-feature" onClick={() => onOpenArticle(items[0])}>
-                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline}>
+                <Thumb hue={items[0].hue} image={items[0].image} alt={items[0].headline} ring={isToday(items[0])}>
                   {isToday(items[0]) && <span className="thumb-today"><TodayMark /></span>}
                 </Thumb>
                 <span className="hm-feature-title">{items[0].headline}</span>
@@ -1348,7 +1356,7 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
           <ul className="home-ticker-track">
             {tickerItems.map((a, i) => (
               <li key={`${a.id}-${i}`} className="home-ticker-card">
-                <button className="home-ticker-btn" onClick={() => onOpenArticle(a)}>
+                <button className={`home-ticker-btn${isToday(a) ? ' is-today' : ''}`} onClick={() => onOpenArticle(a)}>
                   <span className="home-ticker-cat">{tabLabelOf(a.tab)}</span>
                   <span className="home-ticker-headline">{a.headline}</span>
                   <span className="home-ticker-meta">
