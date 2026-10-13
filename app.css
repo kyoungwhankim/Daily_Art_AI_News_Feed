@@ -2158,3 +2158,20 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 @keyframes todayBorder { from { background-position: 0 0, 0% 50%; } to { background-position: 0 0, 300% 50%; } }
 @media (prefers-reduced-motion: reduce) { .card.is-today { animation: none; } }
+/* 메인·브리핑: 오늘 기사의 큰 카드와 썸네일 테두리에도 같은 무지개 */
+.hm-lead.is-today, .thumb.today-ring, .home-ticker-btn.is-today {
+  border-color: transparent !important;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff2e7e, #ff7a1a, #a63dff, #2f7bff, #ff2e7e) border-box !important;
+  background-size: 100% 100%, 300% 100% !important;
+  animation: todayBorder 6s linear infinite;
+}
+[data-theme="dark"] .hm-lead.is-today, [data-theme="dark"] .thumb.today-ring, [data-theme="dark"] .home-ticker-btn.is-today {
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff5c9a, #ffa04d, #c27bff, #5c9bff, #ff5c9a) border-box !important;
+  background-size: 100% 100%, 300% 100% !important;
+}
+@media (prefers-reduced-motion: reduce) { .hm-lead.is-today, .thumb.today-ring, .home-ticker-btn.is-today { animation: none; } }
+@media (max-width: 640px) { .home-ticker-btn.is-today { background: transparent !important; animation: none; } }
