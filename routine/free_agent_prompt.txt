@@ -35,7 +35,6 @@ STEP 1 — SETUP
 
 mkdir -p /tmp/free && rm -f /tmp/free/DONE
 python3 -c "import json; json.dump([], open('/tmp/free/entries.json','w'))"
-: > /tmp/free/affiliate.txt
 : > /tmp/free/candidates.txt
 cd /home/user/Daily_Art_AI_News_Feed
 python3 scripts/free_tools.py list
@@ -86,9 +85,6 @@ For each service:
     try_url     https URL where a person starts using it for free (sign-up / app page)
     source_url  https URL of the official page you read (F2)
     note        (Korean, ≤ 100 chars, optional) anything else worth knowing
-    affiliate   {"program": true|false|null, "url": "<official affiliate / partner program signup page>"|null}
-                Look for an official affiliate / referral-partner program (often linked in the
-                site footer: "Affiliates", "Partners", "Creator program"). null when unknown.
 
     If last week's result exists (see `list`) and the offer CHANGED, add:
     direction   "up" (more free use), "down" (less), "new" (free offer appeared), or
@@ -97,17 +93,14 @@ For each service:
 
  c. Save it (one service per call; the JSON is one line, single-quoted for the shell):
 
-python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "kling", "status": "ok", "type": "plan", "offer": "매일 66 크레딧", "limits": "720p · 워터마크 · 대기열 느림", "card": false, "watermark": true, "commercial": false, "try_url": "https://klingai.com/", "source_url": "https://klingai.com/membership/membership-plan", "affiliate": {"program": true, "url": "https://klingai.com/affiliate"}}'
+python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "kling", "status": "ok", "type": "plan", "offer": "매일 66 크레딧", "limits": "720p · 워터마크 · 대기열 느림", "card": false, "watermark": true, "commercial": false, "try_url": "https://klingai.com/", "source_url": "https://klingai.com/membership/membership-plan"}'
 
     For an unverified service only slug and status are needed:
 
 python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "example", "status": "unverified"}'
 
-    If the text contains a single quote ('), write it as ' inside the JSON.
+    If the text contains a single quote ('), write it as \u0027 inside the JSON.
     Then print one line:  DONE <slug>: <status> <type> "<offer>"
-
- d. If you found an affiliate program, also append one line to /tmp/free/affiliate.txt:
-      <name> | <affiliate signup URL> | <commission or terms in a few words, if stated>
 
 While checking, if you meet a well-known ART AI service with a free trial / free plan that
 is NOT on the list (image, video, 3D, game assets, animation, music, design), append it to
@@ -129,8 +122,6 @@ c = Counter(x['status'] for x in e)
 lines = [f'Free tools agent: checked {len(e)} services — ' + ', '.join(f'{k} {v}' for k, v in sorted(c.items()))]
 un = [x['slug'] for x in e if x['status'] == 'unverified']
 if un: lines.append('Unverified: ' + ', '.join(un))
-aff = open('/tmp/free/affiliate.txt').read().strip()
-if aff: lines.append('Affiliate programs found:\n' + aff)
 cand = open('/tmp/free/candidates.txt').read().strip()
 if cand: lines.append('New service candidates (not added):\n' + cand)
 open('/tmp/free/REPORT.txt', 'w').write('\n'.join(lines) + '\n')

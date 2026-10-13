@@ -1876,7 +1876,7 @@ const toneVars = slug => { const [a, b] = FREE_TONE[slug] || ['#6178b5', '#98a9d
 function FreeCard({ t, d }) {
   const unverified = d && (d.status === 'unverified' || d.status_note === 'unverified');
   const has = d && d.offer;
-  const tryUrl = t.aff || (d && d.try_url) || t.url;
+  const tryUrl = (d && d.try_url) || t.url;
   const isFree = t.kind === 'free';
   return (
     <li className={`free-card ${isFree ? 'is-free' : ''} ${has ? '' : 'is-pending'}`} style={toneVars(t.catSlug)}>
@@ -1900,11 +1900,10 @@ function FreeCard({ t, d }) {
         )}
         {has && d.note && <p className="free-note">{d.note}</p>}
         <div className="free-foot">
-          <a className="free-try" href={tryUrl} target="_blank" rel={t.aff ? 'sponsored noopener' : 'noopener noreferrer'}>
+          <a className="free-try" href={tryUrl} target="_blank" rel="noopener noreferrer">
             {!has ? '가격 확인하기' : isFree ? '바로 쓰기' : '무료로 써보기'}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
-          {t.aff && <span className="free-aff" title="이 링크로 가입하면 사이트가 소개 수수료를 받을 수 있어요">제휴</span>}
           <span className="free-meta">
             {unverified && <span className="free-unverified">확인 필요</span>}
             {d && d.source_url && <a href={d.source_url} target="_blank" rel="noopener noreferrer">근거</a>}
@@ -1991,7 +1990,6 @@ function FreeView({ cat, onCat }) {
         <p className="free-disclaimer">
           'FREE' 도장이 찍힌 카드는 원래 무료인 서비스(오픈소스 등)예요 — 유료로 바뀌지 않았는지 매주 확인해요.
           무료 혜택은 서비스 사정에 따라 예고 없이 바뀔 수 있으니, 가입 전에 공식 페이지(카드의 '근거')를 확인해 주세요.
-          '제휴' 표시가 있는 링크로 가입하면 사이트가 소개 수수료를 받을 수 있지만, 이용자의 비용은 같아요.
         </p>
       </>)}
     </main>

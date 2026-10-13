@@ -2068,7 +2068,6 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .free-try svg { transition: transform .15s ease; }
 .free-try:hover { transform: translateY(-1px); box-shadow: 0 10px 22px -8px var(--fc1); }
 .free-try:hover svg { transform: translateX(3px); }
-.free-aff { font-size: 10.5px; font-weight: 700; color: var(--muted); border: 1px solid var(--hairline); border-radius: 4px; padding: 1px 5px; }
 .free-meta { margin-left: auto; display: inline-flex; gap: 8px; align-items: center; font-size: 11.5px; color: var(--muted); }
 .free-meta a { color: var(--muted); }
 .free-unverified { color: #b5651d; font-weight: 700; }

@@ -7,7 +7,7 @@
     python3 scripts/free_tools.py merge <entries.json>  # 조사 결과를 검사하고 data/free/tools.json에 반영
     python3 scripts/free_tools.py validate            # data/free/tools.json 검사
 
-서비스 목록은 config.js의 freeTools (이름·분류·종류·주소·제휴 링크).
+서비스 목록은 config.js의 freeTools (이름·분류·종류·주소).
 조사 결과(혜택 내용)는 매주 루틴의 무료 혜택 에이전트(routine/free_agent_prompt.txt)가 채운다.
 
 data/free/tools.json:
@@ -117,19 +117,13 @@ def check_entry(e: dict, tool: dict) -> list:
     for k in ('try_url', 'source_url'):
         if not is_url(e.get(k)):
             errs.append(f'{k} must be an https:// URL')
-    aff = e.get('affiliate')
-    if aff is not None:
-        if not isinstance(aff, dict) or aff.get('program') not in (True, False, None):
-            errs.append('affiliate must be {"program": true|false|null, "url": "https://..."|null}')
-        elif aff.get('url') not in (None, '') and not is_url(aff.get('url')):
-            errs.append('affiliate.url must be an https:// URL or null')
     if e.get('direction') not in (None, *DIRECTIONS):
         errs.append(f'direction must be one of {sorted(DIRECTIONS)}')
     return errs
 
 
 KEEP = ('status', 'type', 'offer', 'limits', 'card', 'watermark', 'commercial',
-        'try_url', 'source_url', 'note', 'affiliate')
+        'try_url', 'source_url', 'note')
 
 
 def change_of(old: dict, new: dict, tool: dict, e: dict):

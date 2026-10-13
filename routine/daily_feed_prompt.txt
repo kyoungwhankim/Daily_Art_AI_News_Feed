@@ -1058,7 +1058,7 @@ FINISH
 
 In your final report, include the updates agent's report
 (/tmp/updates/REPORT.txt) and the merge summary line. On free-tools days also
-include /tmp/free/REPORT.txt (it lists affiliate programs found and new service
+include /tmp/free/REPORT.txt (it lists unverified services and new service
 candidates for the site owner) and the free-tools merge summary line.
 
 Leave publish mode as the very last step of the routine, whether the push

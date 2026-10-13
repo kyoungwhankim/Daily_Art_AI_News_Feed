@@ -322,7 +322,6 @@ window.AIAD = {
   // 사이드바 '무료로 써보기' (/free/) — 무료 체험·무료 플랜을 조사할 아트 AI 서비스 (분류 순서 = 탭 순서).
   // kind: 'trial' = 무료 체험·무료 플랜·가입 크레딧을 조사 / 'free' = 원래 무료(오픈소스 등) — 유료 전환 여부를 확인.
   // 혜택 내용은 매주 루틴(routine/free_agent_prompt.txt)이 조사해 data/free/tools.json에 저장한다.
-  // aff: 승인받은 제휴 링크 (있으면 '무료로 써보기' 버튼이 이 주소로 가고 '제휴' 표시가 붙는다)
   freeTools: [
     { category: '이미지', name: 'Midjourney', kind: 'trial', url: 'https://www.midjourney.com/' },
     { category: '이미지', name: 'GPT Image', kind: 'trial', url: 'https://chatgpt.com/' },
@@ -374,7 +373,7 @@ window.AIAD = {
     { category: '애니메이션·모션', name: 'Plask', kind: 'trial', url: 'https://plask.ai/' },
     { category: '애니메이션·모션', name: 'Move.ai', kind: 'trial', url: 'https://www.move.ai/' },
     { category: '애니메이션·모션', name: 'Krikey', kind: 'trial', url: 'https://www.krikey.ai/' },
-    { category: '음악·음성', name: 'ElevenLabs', kind: 'trial', url: 'https://elevenlabs.io/', aff: 'https://try.elevenlabs.io/aiartdaily' },
+    { category: '음악·음성', name: 'ElevenLabs', kind: 'trial', url: 'https://elevenlabs.io/' },
     { category: '음악·음성', name: 'Suno', kind: 'trial', url: 'https://suno.com/' },
     { category: '음악·음성', name: 'Mureka', kind: 'trial', url: 'https://www.mureka.ai/' },
     { category: '음악·음성', name: 'Stable Audio', kind: 'trial', url: 'https://stableaudio.com/' },
