@@ -2175,3 +2175,24 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 @media (prefers-reduced-motion: reduce) { .hm-lead.is-today, .thumb.today-ring, .home-ticker-btn.is-today { animation: none; } }
 @media (max-width: 640px) { .home-ticker-btn.is-today { background: transparent !important; animation: none; } }
+
+/* 사이드바 '나만의 피드' 버튼: 천천히 흐르는 그라데이션 + 가끔 지나가는 빛 */
+.side-brief-btn {
+  position: relative; overflow: hidden;
+  background: linear-gradient(110deg, #ff2e7e, #a63dff 35%, #2f7bff 65%, #ff7a1a 100%);
+  background-size: 260% 100%;
+  animation: briefFlow 9s ease-in-out infinite alternate;
+}
+.side-brief-btn::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 45%; pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent);
+  transform: skewX(-18deg);
+  animation: briefShine 5.5s ease-in-out infinite;
+}
+.side-brief-btn > * { position: relative; z-index: 1; }
+.side-brief-title { text-shadow: 0 1px 6px rgba(0,0,0,.18); }
+.side-brief-icon { color: #a63dff; }
+[data-theme="dark"] .side-brief-btn { background-image: linear-gradient(110deg, #ff5c9a, #c27bff 35%, #5c9bff 65%, #ffa04d 100%); }
+@keyframes briefFlow { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
+@keyframes briefShine { 0%, 70% { left: -60%; } 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .side-brief-btn, .side-brief-btn::after { animation: none; } .side-brief-btn::after { display: none; } }
