@@ -202,14 +202,13 @@ function Thumb({ hue, image, alt, children }) {
 }
 
 /* ---------- card ---------- */
-function ArticleCard({ article, onOpen, query, variant, dateTag }) {
+function ArticleCard({ article, onOpen, query, variant }) {
   const cls = `card${variant ? ' ' + variant : ''}`;
   const m = React.useContext(MemberContext);
   return (
     <button className={cls} onClick={() => onOpen(article)}>
       <Thumb hue={article.hue} image={article.image} alt={article.headline}>
-        {dateTag ? <span className="thumb-date">{dateTag}</span>
-          : isToday(article) ? <span className="thumb-today"><TodayMark /></span>
+        {isToday(article) ? <span className="thumb-today"><TodayMark /></span>
           : isNewSince(article.publishedAt, m.prevSeen) && <span className="thumb-badge">NEW</span>}
         <SaveToggle id={article.id} overlay />
       </Thumb>
@@ -233,7 +232,7 @@ function DateSection({ iso, items, onOpen, query, isToday, total }) {
     <section className="date-section">
       <div className="date-header">
         <div className="date-label">
-          {lbl.pin && <span className="pin">{lbl.pin}</span>}
+          {lbl.pin && <TodayMark />}
           <span>{lbl.main}</span>
           {lbl.sub && <span className="iso">· {lbl.sub}</span>}
         </div>
@@ -908,19 +907,6 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, 
   );
 }
 
-/* ---------- 날짜 표시: 그날 첫 기사 카드의 썸네일 위에 붙는 작은 날짜 꼬리표 ---------- */
-function DateTag({ iso, count }) {
-  const lbl = dateLabel(iso);
-  const d = parseDate(iso);
-  const md = `${d.getMonth() + 1}월 ${d.getDate()}일`;
-  const head = lbl.main === '오늘' || lbl.main === '어제' ? `${lbl.main} · ${md}` : `${md} ${KOR_DAY[d.getDay()]}요일`;
-  return (
-    <span className={`date-tag ${lbl.pin ? 'is-today' : ''}`}>
-      <b>{head}</b><span>기사 {count}개</span>
-    </span>
-  );
-}
-
 /* ---------- date grouped feed with pagination ---------- */
 function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
   const [showAllState, setShowAll] = useState(false);
@@ -946,7 +932,7 @@ function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
   const visibleGroups = showAll ? groups : recent;
 
   // 오늘 기사가 3개 이상이면 지금처럼 큰 '오늘' 묶음으로, 나머지 날짜는 한 격자에 이어서 흐르게 한다.
-  // 날짜가 바뀌는 곳(그날 첫 기사 카드)에는 썸네일 위에 날짜 꼬리표를 붙인다.
+  // 날짜는 카드 오른쪽 아래에 있고, 오늘 기사는 TODAY 표시로 구분한다.
   const todayBig = visibleGroups.length && daysAgo(visibleGroups[0].iso) === 0 && visibleGroups[0].items.length >= 3;
   const flowGroups = todayBig ? visibleGroups.slice(1) : visibleGroups;
   const todayRest = todayBig ? visibleGroups[0].items.slice(3) : [];   // 큰 묶음(대표 1 + 옆 2) 다음 오늘 기사는 흐름 맨 앞에
@@ -960,10 +946,7 @@ function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
       {(flowGroups.length > 0 || todayRest.length > 0) && (
         <div className="grid date-flow">
           {todayRest.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />)}
-          {flowGroups.map(g => g.items.map((a, i) => (
-            <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query}
-              dateTag={i === 0 ? <DateTag iso={g.iso} count={g.items.length} /> : null} />
-          )))}
+          {flowGroups.map(g => g.items.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />))}
         </div>
       )}
       {!showAll && older.length > 0 && (
