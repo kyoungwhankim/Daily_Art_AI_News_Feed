@@ -96,10 +96,11 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 | 글로벌 스튜디오의 AI 도입 뉴스 | `industry` — AI 도입 뉴스 |
 | 아트 전반 AI 뉴스 | `art` — 아트 전반 AI 뉴스 |
 
-#### 뉴스 출처는 Whitelist 출처를 우선으로 탐색하되 새로운 뉴스가 없으면 검색 범위를 확장
+#### 뉴스 출처는 Whitelist 출처를 우선으로 탐색하되 목표 개수를 못 채우면 검색 범위를 확장
 
-- KST 기준 오늘 또는 어제 뉴스만 탐색. 섹션별 최대 5개. 뉴스가 없다면 억지로 게재할 필요 없음.
-- 탐색 순서: 공통 + 섹션별 Primary → (없으면) 섹션별 Broadened → (그래도 없으면) 오픈 웹 검색
+- KST 기준 오늘 또는 어제 뉴스만 탐색. 섹션별 최대 20개. 뉴스가 없다면 억지로 게재할 필요 없음 (개수를 위해 품질·중복 기준을 낮추지 않는다).
+- 탐색 순서: 공통 + 섹션별 Primary → (목표 개수에 못 미치면) 섹션별 Broadened → (둘 다 없으면) 오픈 웹 검색
+- 출처에는 한국(디스이즈게임, 게임메카, 인벤, ZDNet Korea, AI타임스 등)·일본(AUTOMATON, 4Gamer, CGWORLD, GameBusiness.jp 등)·중국(36Kr, TechNode, Pandaily)·유럽(heise, Golem, GamesMarkt, AFJV, Game World Observer, MobileGamer.biz 등)의 공식·전문 매체도 있다. 기사 언어와 상관없이 한국어로 정리한다
 - 콘텐츠 팜, SEO 애그리게이터, 광고 위주 재게시 사이트는 제외.
 
 ### Whitelist

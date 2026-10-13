@@ -175,16 +175,25 @@ string in the script below.
                venturebeat.com/games, blogs.nvidia.com, stability.ai/news,
                runwayml.com/blog, business.adobe.com/ai.html, midjourney.com, meshy.ai/blog,
                lumalabs.ai, elevenlabs.io/blog, cgchannel.com, fxguide.com,
-               beforesandafters.com, sidefx.com/news, autodesk.com/blogs
+               beforesandafters.com, sidefx.com/news, autodesk.com/blogs,
+               thisisgame.com, gamemeca.com, inven.co.kr, cgworld.jp, 4gamer.net,
+               automaton-media.com
   - Broadened: techcrunch.com, theverge.com, arstechnica.com, wired.com,
+               game.donga.com, zdnet.co.kr, famitsu.com, gamebusiness.jp,
+               gameworldobserver.com, golem.de, heise.de,
                towardsdatascience.com, huggingface.co/blog, paperswithcode.com,
                any official company blog or press release from an AI tool maker
   [글로벌 스튜디오 AI 도입]
   - Primary:   gamedeveloper.com, gdconf.com, gamesindustry.biz, pocketgamer.biz,
                venturebeat.com/games, kotaku.com, polygon.com, ign.com,
                unrealengine.com/blog, unity.com/blog, 80.lv, eurogamer.net,
-               rockpapershotgun.com, pcgamer.com, gamesradar.com
+               rockpapershotgun.com, pcgamer.com, gamesradar.com,
+               thisisgame.com, gamemeca.com, inven.co.kr, zdnet.co.kr,
+               automaton-media.com, gamebusiness.jp, 4gamer.net,
+               gameworldobserver.com, mobilegamer.biz, gamesmarkt.de, afjv.com
   - Broadened: techcrunch.com, theverge.com, bloomberg.com, reuters.com,
+               game.donga.com, famitsu.com, 36kr.com, technode.com, pandaily.com,
+               heise.de, golem.de,
                wired.com, arstechnica.com, any studio official blog or press release
   [아트 전반]
   - Primary:   venturebeat.com/ai, theverge.com, techcrunch.com, arstechnica.com,
@@ -192,8 +201,11 @@ string in the script below.
                research.adobe.com, blogs.nvidia.com, runwayml.com/blog,
                stability.ai/news, elevenlabs.io/blog, suno.ai/blog,
                fxguide.com, beforesandafters.com, cgchannel.com,
-               musictech.com, soundonsound.com, nofilmschool.com
+               musictech.com, soundonsound.com, nofilmschool.com,
+               aitimes.com, cgworld.jp, itmedia.co.jp/aiplus, cartoonbrew.com,
+               heise.de, technode.com
   - Broadened: wired.com, bloomberg.com, reuters.com, thenextweb.com,
+               zdnet.co.kr, 36kr.com, pandaily.com, golem.de,
                towardsdatascience.com, paperswithcode.com,
                any official AI lab blog or product announcement page
   """
@@ -268,12 +280,23 @@ For each section below, read the corresponding entry from /tmp/feed/whitelist.js
 Each entry has two source lists:
   - whitelist["common"]                → applies to every section
   - whitelist[<section>]["primary"]    → preferred for that section
-  - whitelist[<section>]["broadened"]  → fall back here if primary yields nothing today
+  - whitelist[<section>]["broadened"]  → also check when primary does not fill the TARGET
+
+The lists include official / professional media from Korea, Japan, China and
+Europe (e.g. thisisgame.com, gamemeca.com, inven.co.kr, automaton-media.com,
+4gamer.net, cgworld.jp, gamebusiness.jp, 36kr.com, heise.de). Articles in
+Korean, Japanese, Chinese or German are fine — read them and write the entry
+in Korean as usual. The same news reported by several outlets is still ONE
+article (STEP A2 similarity check).
 
 Search order (apply to every section):
   1. common + this section's primary
-  2. If step 1 yields nothing today, also try this section's broadened list
-  3. Last resort — open web search, only if both above yield nothing today
+  2. If step 1 found FEWER articles than the TARGET, also check every source in
+     this section's broadened list
+  3. Last resort — open web search, only if steps 1 and 2 together found nothing today
+Quality is never traded for count: every article must still meet the section's
+topic, RECENCY RULE and the checks in STEP A / A2 / B. If the sources only have a
+few qualifying articles, publish only those.
 Always avoid: content farms, SEO aggregators, and ad-heavy republishers.
 
 You can quickly re-print the lists for a section with:
@@ -300,7 +323,7 @@ RECENCY RULE: Only include articles whose stated publication date is either
 today in KST or the calendar day immediately before today in KST. Read the publication
 date from the article body or page metadata — do NOT pass on the basis of
 "feels recent."
-TARGET: up to 5 articles. If fewer than 5 exist today, collect however many are
+TARGET: up to 20 articles. If fewer than 20 exist today, collect however many are
 available — even 1 or 2 is fine. Do NOT include older articles to pad the count.
 
 SOURCES: use whitelist["games"] together with whitelist["common"], following the
@@ -437,10 +460,10 @@ For each article found, repeat this block:
   articles.append(article)
   with open('/tmp/feed/digest.json', 'w') as f:
       json.dump(articles, f, ensure_ascii=False, indent=2)
-  print(f"Saved article {len(articles)}/15: {article['title_ko'][:40]}...")
+  print(f"Saved article {len(articles)} (up to 60): {article['title_ko'][:40]}...")
   PYEOF
 
-  Repeat STEP A, STEP A2 and STEP B for each of the 5 Section 1 articles before moving on.
+  Repeat STEP A, STEP A2 and STEP B for each Section 1 article before moving on.
 
 ---
 
@@ -451,7 +474,7 @@ in their art production workflows: studio announcements, policy decisions, team
 restructuring, published case studies, developer interviews, real-world adoption.
 
 RECENCY RULE: Only include articles published within the last 24 hours.
-TARGET: up to 5 articles. If fewer than 5 exist today, collect however many are
+TARGET: up to 20 articles. If fewer than 20 exist today, collect however many are
 available — even 1 or 2 is fine. Do NOT include older articles to pad the count.
 
 SOURCES: use whitelist["industry"] together with whitelist["common"], following
@@ -472,7 +495,7 @@ generation, music generation, audio generation, AI tools for film, animation, mu
 or other creative industries.
 
 RECENCY RULE: Only include articles published within the last 24 hours.
-TARGET: up to 5 articles. If fewer than 5 exist today, collect however many are
+TARGET: up to 20 articles. If fewer than 20 exist today, collect however many are
 available — even 1 or 2 is fine. Do NOT include older articles to pad the count.
 
 SOURCES: use whitelist["art"] together with whitelist["common"], following the
