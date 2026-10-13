@@ -2137,31 +2137,15 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .free-row-more:hover { text-decoration: underline; }
 .free-row .hm-free-grid { margin-top: 12px; }
 
-/* ---------- 날짜 타일: 기사 격자 안에서 날짜가 바뀌는 곳 (빈칸 없이 이어 흐르게) ---------- */
+/* ---------- 날짜 꼬리표: 그날 첫 기사 카드의 썸네일 왼쪽 위 (기사는 빈칸 없이 이어 흐른다) ---------- */
 .grid.date-flow { margin-top: 8px; }
-.date-tile {
-  display: flex; flex-direction: column; gap: 4px; min-height: 100%;
-  padding: 22px 22px 20px; border-radius: 20px;
-  background: var(--paper-2); border: 2px dashed var(--hairline);
-  color: var(--ink);
+.thumb-date { position: absolute; top: 12px; left: 12px; z-index: 1; display: inline-flex; }
+.date-tag {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  padding: 6px 12px; border-radius: 999px;
+  background: rgba(17,19,24,.72); color: #fff; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,.18);
 }
-.date-tile-top { display: flex; align-items: center; gap: 8px; min-height: 22px; }
-.date-tile .pin {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
-  color: var(--card); background: var(--accent); padding: 4px 10px; border-radius: 999px;
-}
-.date-tile-wd { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: .04em; }
-.date-tile-main { margin-top: auto; font-size: 34px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; }
-.date-tile-sub { font-size: 14px; font-weight: 600; color: var(--muted); }
-.date-tile-count { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--accent-strong); }
-.date-tile-kw { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: 6px; font-size: 12px; color: var(--muted); }
-.date-tile.is-today { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
-/* 한 줄에 카드 하나(휴대폰)일 때는 얇은 날짜 띠로 */
-@media (max-width: 640px) {
-  .date-tile { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; min-height: 0; padding: 12px 16px; border-radius: 14px; }
-  .date-tile-top { order: 2; min-height: 0; }
-  .date-tile-main { order: 1; margin-top: 0; font-size: 20px; }
-  .date-tile-sub { order: 3; font-size: 12px; }
-  .date-tile-count { order: 4; margin: 0 0 0 auto; font-size: 12px; }
-  .date-tile-kw { order: 5; flex-basis: 100%; margin-top: 0; }
-}
+.date-tag b { font-size: 13px; font-weight: 800; letter-spacing: -0.01em; }
+.date-tag span { font-size: 11px; font-weight: 600; opacity: .8; }
+.date-tag.is-today { background: var(--accent); }
