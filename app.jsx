@@ -226,7 +226,7 @@ function ArticleCard({ article, onOpen, query, variant }) {
 }
 
 /* ---------- date section ---------- */
-function DateSection({ iso, items, onOpen, query, isToday }) {
+function DateSection({ iso, items, onOpen, query, isToday, total }) {
   const lbl = dateLabel(iso);
   return (
     <section className="date-section">
@@ -236,7 +236,7 @@ function DateSection({ iso, items, onOpen, query, isToday }) {
           <span>{lbl.main}</span>
           {lbl.sub && <span className="iso">· {lbl.sub}</span>}
         </div>
-        <div className="date-count">{items.length}개 기사</div>
+        <div className="date-count">{total || items.length}개 기사</div>
       </div>
       {isToday && items.length > 1 ? (
         <div className="grid today-grid">
@@ -907,6 +907,30 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, 
   );
 }
 
+/* ---------- 날짜 타일 (기사 격자 안에서 날짜가 바뀌는 곳) ---------- */
+function DateTile({ iso, items }) {
+  const lbl = dateLabel(iso);
+  const d = parseDate(iso);
+  // 그날 기사에 많이 붙은 키워드 3개
+  const kw = useMemo(() => {
+    const c = new Map();
+    items.forEach(a => (a.keywords || []).forEach(k => c.set(k, (c.get(k) || 0) + 1)));
+    return [...c.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3).map(([k]) => k);
+  }, [items]);
+  return (
+    <div className={`date-tile ${lbl.pin ? 'is-today' : ''}`} role="heading" aria-level="2">
+      <div className="date-tile-top">
+        {lbl.pin && <span className="pin">{lbl.pin}</span>}
+        <span className="date-tile-wd">{d ? KOR_DAY[d.getDay()] + '요일' : ''}</span>
+      </div>
+      <div className="date-tile-main">{lbl.main === '오늘' || lbl.main === '어제' ? lbl.main : `${d.getMonth() + 1}월 ${d.getDate()}일`}</div>
+      {(lbl.main === '오늘' || lbl.main === '어제') && d && <div className="date-tile-sub">{d.getMonth() + 1}월 {d.getDate()}일</div>}
+      <div className="date-tile-count">기사 {items.length}개</div>
+      {kw.length > 0 && <div className="date-tile-kw">{kw.map(k => <span key={k}>#{k}</span>)}</div>}
+    </div>
+  );
+}
+
 /* ---------- date grouped feed with pagination ---------- */
 function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
   const [showAllState, setShowAll] = useState(false);
@@ -931,18 +955,29 @@ function DateGroupedFeed({ articles, onOpen, query, expandAll }) {
 
   const visibleGroups = showAll ? groups : recent;
 
+  // 오늘 기사가 3개 이상이면 지금처럼 큰 '오늘' 묶음으로, 나머지 날짜는 한 격자에 이어서 흐르게 한다.
+  // 날짜가 바뀌는 곳에 카드 한 칸 크기의 날짜 타일을 넣어 줄이 비지 않게 한다.
+  const todayBig = visibleGroups.length && daysAgo(visibleGroups[0].iso) === 0 && visibleGroups[0].items.length >= 3;
+  const flowGroups = todayBig ? visibleGroups.slice(1) : visibleGroups;
+  const todayRest = todayBig ? visibleGroups[0].items.slice(3) : [];   // 큰 묶음(대표 1 + 옆 2) 다음 오늘 기사는 흐름 맨 앞에
+
   return (
     <>
-      {visibleGroups.map(g => (
-        <DateSection
-          key={g.iso}
-          iso={g.iso}
-          items={g.items}
-          onOpen={onOpen}
-          query={query}
-          isToday={daysAgo(g.iso) === 0}
-        />
-      ))}
+      {todayBig && (
+        <DateSection iso={visibleGroups[0].iso} items={visibleGroups[0].items.slice(0, 3)} total={visibleGroups[0].items.length}
+          onOpen={onOpen} query={query} isToday />
+      )}
+      {(flowGroups.length > 0 || todayRest.length > 0) && (
+        <div className="grid date-flow">
+          {todayRest.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />)}
+          {flowGroups.map(g => (
+            <React.Fragment key={g.iso}>
+              <DateTile iso={g.iso} items={g.items} />
+              {g.items.map(a => <ArticleCard key={a.id} article={a} onOpen={onOpen} query={query} />)}
+            </React.Fragment>
+          ))}
+        </div>
+      )}
       {!showAll && older.length > 0 && (
         <div className="show-older">
           <button onClick={() => setShowAll(true)}>
