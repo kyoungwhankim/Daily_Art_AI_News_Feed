@@ -2196,3 +2196,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 @keyframes briefFlow { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
 @keyframes briefShine { 0%, 70% { left: -60%; } 100% { left: 130%; } }
 @media (prefers-reduced-motion: reduce) { .side-brief-btn, .side-brief-btn::after { animation: none; } .side-brief-btn::after { display: none; } }
+/* LATEST 띠: 카드에 마우스를 올리면 살짝 떠오르므로 위·아래에 여유를 둔다 (윗줄이 잘리지 않게) */
+.home-ticker-track { padding: 4px 0 6px; }
+.home-ticker { padding-top: 10px; }
+@media (max-width: 640px) { .home-ticker-track { padding: 0; } .home-ticker { padding-top: 0; } }
