@@ -922,9 +922,9 @@ def main():
         fdesc = ('이미지·영상·3D·애니메이션·음악 등 아트 AI 서비스의 무료 체험·무료 플랜과 무료 서비스를 모았어요. '
                  '매주 공식 가격 페이지를 확인해 갱신해요.')
         write(out, 'free/index.html', shell(
-            'free/', f'아트 AI 무료로 써보기 | {SITE_NAME}', fdesc,
-            free_fallback('아트 AI 무료로 써보기', fdesc, ftools, fdata.get('tools', {}), flinks),
-            collection('free/', '아트 AI 무료로 써보기', fdesc)))
+            'free/', f'AI 무료로 써보기 | {SITE_NAME}', fdesc,
+            free_fallback('AI 무료로 써보기', fdesc, ftools, fdata.get('tools', {}), flinks),
+            collection('free/', 'AI 무료로 써보기', fdesc)))
         listing_paths.append('free/')
         for slug, label in fcats:
             ts = [t for t in ftools if t['catSlug'] == slug]

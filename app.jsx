@@ -864,6 +864,7 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, 
               ))}
             </div>
           )}
+          <FreeMentions article={article} />
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
             <div dangerouslySetInnerHTML={{ __html: article.body || '' }} />
@@ -1300,6 +1301,8 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         ))}
       </section>
 
+      <HomeFree />
+
       {updates.length > 0 && (
         <section className="hm-updates" aria-label="AI 서비스 업데이트">
           <div className="hm-col-head hm-sec">
@@ -1448,7 +1451,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
-  const [freeOpen, setFreeOpen] = useState(false);
+  const [freeOpen, setFreeOpen] = useState(true);
   const newsActive = section === 'news';
   const asideRef = useRef(null), backdropRef = useRef(null);
   useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
@@ -1590,13 +1593,13 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="8" width="18" height="4" rx="1" /><path d="M12 8v13M19 12v9H5v-9" /><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5" />
                 </svg>
-                <span>무료로 써보기</span>
+                <span>AI 무료로 써보기</span>
               </button>
               <button type="button" className="side-caret-btn" aria-label={freeOpen ? '접기' : '펼치기'} aria-expanded={freeOpen} onClick={() => setFreeOpen(o => !o)}>
-                <svg className={`side-caret ${freeOpen || section === 'free' ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+                <svg className={`side-caret ${freeOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
               </button>
             </div>
-            {(freeOpen || section === 'free') && (
+            {freeOpen && (
               <ul className="side-list">
                 {FREE_CATS.map(c => (
                   <li key={c.slug}>
@@ -1663,11 +1666,14 @@ function sampleUpdatesFor(c) {
 let updatesPromise = null;
 function loadServiceUpdates() {
   if (!updatesPromise) {
-    updatesPromise = fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
-      .then(index => Promise.all(Object.values(index.categories || {})
-        .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
-      .then(feeds => feeds.flat())
-      .catch(() => []);   // 아직 데이터가 없으면 예시만
+    updatesPromise = Promise.all([
+      fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
+        .then(index => Promise.all(Object.values(index.categories || {})
+          .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
+        .then(feeds => feeds.flat())
+        .catch(() => []),   // 아직 데이터가 없으면 예시만
+      loadFreeData().then(freeChangeUpdates).catch(() => []),   // 무료로 써보기의 '무료 혜택' 변경 소식도 함께
+    ]).then(([a, b]) => [...a, ...b]);
   }
   return updatesPromise;
 }
@@ -1744,9 +1750,13 @@ function UpdateRow({ u, showCompany, onCompany }) {
         {u.details && u.details.length > 0 && (
           <ul className="update-details">{u.details.map((d, i) => <li key={i}>{d}</li>)}</ul>
         )}
-        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
-          {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
-        </a>
+        {u.source === 'free' ? (
+          <FreeLink cat={FREE_BY_SLUG[u.service].catSlug} className="update-link">AI 무료로 써보기에서 보기 →</FreeLink>
+        ) : (
+          <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
+            {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
+          </a>
+        )}
       </div>
     </li>
   );
@@ -1797,6 +1807,7 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
         )}
       </div>
       <main className="feed">
+        {comp && <FreeHint slug={comp.slug} />}
         {hasSample && (
           <div className="updates-notice">일부 분야는 준비 중이에요 — <b>예시</b> 표시가 붙은 항목은 화면 구성을 보기 위한 예시예요.</div>
         )}
@@ -1844,18 +1855,194 @@ const FREE_TYPE_LABEL = { plan: '무료 플랜', trial: '기간제 체험', cred
 const CHANGE_LABEL = { new: '새 혜택', up: '늘어남', down: '줄어듦', changed: '바뀜', ended: '종료', paid: '유료 전환' };
 
 let freeDataPromise = null;
+function loadFreeData() {
+  if (!freeDataPromise) {
+    freeDataPromise = fetchJson(`${DATA_BASE}free/tools.json`, { cache: 'no-cache' })
+      .catch(() => ({ updated: null, tools: {}, changes: [] }));
+  }
+  return freeDataPromise;
+}
 function useFreeData() {
   const [state, setState] = useState({ ready: false, data: { updated: null, tools: {}, changes: [] } });
   useEffect(() => {
     let alive = true;
-    if (!freeDataPromise) {
-      freeDataPromise = fetchJson(`${DATA_BASE}free/tools.json`, { cache: 'no-cache' })
-        .catch(() => ({ updated: null, tools: {}, changes: [] }));
-    }
-    freeDataPromise.then(data => { if (alive) setState({ ready: true, data }); });
+    loadFreeData().then(data => { if (alive) setState({ ready: true, data }); });
     return () => { alive = false; };
   }, []);
   return state;
+}
+// 무료로 써 볼 수 있는(확인된) 서비스의 조사 결과 — 없으면 null
+const freeOffer = (data, slug) => {
+  const d = data.tools[slug];
+  return d && d.offer && !['ended', 'paid', 'unverified'].includes(d.status) && d.type !== 'none' ? d : null;
+};
+const FREE_BY_SLUG = Object.fromEntries(FREE_TOOLS.map(t => [t.slug, t]));
+let freeNameTerms = null;   // 처음 쓸 때 만든다 (compileTerms가 아래쪽에 있어서)
+const getFreeNameTerms = () => freeNameTerms || (freeNameTerms = FREE_TOOLS.map(t => [t, compileTerms([t.name])]));
+// 업데이트 흐름에 넣을 '무료 혜택' 소식 (최근 바뀐 혜택 중 업데이트 서비스 목록에 있는 것)
+function freeChangeUpdates(data) {
+  return (data.changes || []).filter(c => FREE_BY_SLUG[c.slug]).map(c => ({
+    id: `free-${c.date}-${c.slug}`, service: c.slug, date: c.date, kind: '무료 혜택', source: 'free',
+    title: `${FREE_BY_SLUG[c.slug].name} 무료 혜택 ${CHANGE_LABEL[c.kind] || '바뀜'}`, summary: c.text,
+    url: freePath(FREE_BY_SLUG[c.slug].catSlug),
+  }));
+}
+
+// 방문(페이지를 열 때)마다 한 번 정한 무작위 순서 — 같은 방문 안에서 메인으로 돌아와도 바뀌지 않는다
+const VISIT_SEED = Math.random();
+function shuffledByVisit(list) {
+  let x = Math.floor(VISIT_SEED * 2147483647) || 1;
+  const rnd = () => (x = (x * 48271) % 2147483647) / 2147483647;
+  const out = [...list];
+  for (let i = out.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [out[i], out[j]] = [out[j], out[i]]; }
+  return out;
+}
+// 메인 화면 '무료로 써보기' 칸: 최근 2주 안에 바뀐 무료 혜택 + 무료 쿠폰 6개 (방문할 때마다 다른 서비스)
+function HomeFree() {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const changes = (data.changes || []).filter(c => FREE_BY_SLUG[c.slug] && daysAgo(c.date) <= 13).slice(0, 4);
+  const pool = FREE_TOOLS.filter(t => freeOffer(data, t.slug));
+  if (!pool.length) return null;
+  const picks = shuffledByVisit(pool).slice(0, 6);
+  return (
+    <section className="hm-free" aria-label="AI 무료로 써보기">
+      <div className="hm-col-head hm-sec">
+        <h2 className="hm-head">AI 무료로 써보기</h2>
+        <FreeLink className="hm-more">전체 보기 →</FreeLink>
+      </div>
+      {changes.length > 0 && (
+        <ul className="hm-free-changes">
+          {changes.map((c, i) => (
+            <li key={c.slug + c.date + i}>
+              <span className={`free-change-kind k-${c.kind}`}>{CHANGE_LABEL[c.kind] || '바뀜'}</span>
+              <b>{FREE_BY_SLUG[c.slug].name}</b> {c.text}
+            </li>
+          ))}
+        </ul>
+      )}
+      <ul className="hm-free-grid">
+        {picks.map(t => (
+          <li key={t.slug}>
+            <FreeLink cat={t.catSlug} className="hm-free-coupon" style={toneVars(t.catSlug)}>
+              <span className="hm-free-cat">{t.category}</span>
+              <span className="hm-free-name">{t.name}</span>
+              <span className="hm-free-offer">{data.tools[t.slug].offer}</span>
+            </FreeLink>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+// 작은 무료 쿠폰 묶음 (메인·아티스트 브리핑·나만의 피드에서 같이 쓴다)
+function FreeCouponRow({ title, sub, tools, data, moreCat }) {
+  if (!tools.length) return null;
+  return (
+    <section className="free-row" aria-label={title}>
+      <div className="free-row-head">
+        <h2>{title}</h2>
+        {sub && <span>{sub}</span>}
+        <FreeLink cat={moreCat} className="free-row-more">AI 무료로 써보기 전체 →</FreeLink>
+      </div>
+      <ul className="hm-free-grid">
+        {tools.map(t => (
+          <li key={t.slug}>
+            <FreeLink cat={t.catSlug} className="hm-free-coupon" style={toneVars(t.catSlug)}>
+              <span className="hm-free-cat">{t.category}</span>
+              <span className="hm-free-name">{t.name}</span>
+              <span className="hm-free-offer">{data.tools[t.slug].offer}</span>
+            </FreeLink>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+// 카드 등록 없이 계속 무료인 것부터
+const freeScore = (data, t) => { const d = data.tools[t.slug]; return (d.card === false ? 0 : 2) + (d.type === 'plan' || d.type === 'free' ? 0 : 1); };
+
+// 아티스트 브리핑: 직군이 쓰는 서비스(config.js roles.services) 중 무료로 써볼 수 있는 것 + 직군과 가까운 분야의 무료 툴로 채운다
+const ROLE_FREE_CATS = {
+  '3d': ['3d'], '2d': ['image', 'tools'], animator: ['motion'], rigger: ['motion', '3d'], vfx: ['video'],
+  ta: ['tools', '3d'], env: ['3d', 'game-assets'], sound: ['audio'], ui: ['tools', 'image'],
+};
+// 직군 추천 순서: 직군이 쓰는 서비스 → 가까운 분야의 무료 툴 (각각 카드 등록 없이 계속 무료인 것부터)
+function roleFreePicks(role, data, exclude = []) {
+  const ok = t => !!freeOffer(data, t.slug) && !exclude.includes(t);
+  const byScore = (a, b) => freeScore(data, a) - freeScore(data, b);
+  const own = FREE_TOOLS.filter(t => (role.services || []).includes(t.slug) && ok(t)).sort(byScore);
+  const cats = ROLE_FREE_CATS[role.id] || [];
+  const near = FREE_TOOLS.filter(t => cats.includes(t.catSlug) && ok(t) && !own.includes(t)).sort(byScore);
+  return [...own, ...near];
+}
+function RoleFreeTools({ role }) {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const cats = ROLE_FREE_CATS[role.id] || [];
+  return <FreeCouponRow title={`${role.label}가 무료로 써볼 만한 AI`} sub="돈 내기 전에 먼저 시험해 보세요"
+    tools={roleFreePicks(role, data).slice(0, 6)} data={data} moreCat={cats[0] || null} />;
+}
+
+// 나만의 피드: 관심 서비스로 고른 것 중 무료로 써볼 수 있는 것을 먼저, 남는 자리는 직군 추천과 같은 방식으로 채운다
+function MyFreeTools({ profile }) {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const mine = FREE_TOOLS.filter(t => (profile.services || []).includes(t.slug) && freeOffer(data, t.slug))
+    .sort((a, b) => freeScore(data, a) - freeScore(data, b));
+  const role = profile.role && ROLE_BY_ID[profile.role];
+  const tools = [...mine, ...(role ? roleFreePicks(role, data, mine) : [])].slice(0, 6);
+  const sub = mine.length && tools.length > mine.length ? '관심 서비스를 먼저, 남은 자리는 내 직군에 맞는 무료 툴로 골랐어요'
+    : mine.length ? '관심 서비스로 고른 것 중 무료 혜택이 있는 곳' : '내 직군에 맞는 무료 툴을 골랐어요';
+  return <FreeCouponRow title="무료로 먼저 써볼 만한 AI" sub={sub} tools={tools} data={data} moreCat={null} />;
+}
+
+// 무료로 써보기 페이지로 이동 (앱 안에서) — App이 넣어 준다
+const FreeNavContext = React.createContext(null);
+function FreeLink({ cat, className, style, children }) {
+  const go = React.useContext(FreeNavContext);
+  return (
+    <a className={className} style={style} href={freePath(cat)}
+      onClick={e => { if (go && !e.metaKey && !e.ctrlKey) { e.preventDefault(); go(cat); } }}>{children}</a>
+  );
+}
+
+// 업데이트 서비스 페이지 위쪽: 이 서비스를 무료로 써 볼 수 있으면 한 줄 안내
+function FreeHint({ slug }) {
+  const { data } = useFreeData();
+  const t = FREE_BY_SLUG[slug], d = t && freeOffer(data, slug);
+  if (!d) return null;
+  return (
+    <div className="free-hint" style={toneVars(t.catSlug)}>
+      <span className="free-hint-label">{t.kind === 'free' ? '무료 서비스' : 'AI 무료로 써보기'}</span>
+      <span className="free-hint-offer">{d.offer}</span>
+      <a className="free-hint-try" href={d.try_url || t.url} target="_blank" rel="noopener noreferrer">{t.kind === 'free' ? '바로 쓰기' : 'AI 무료로 써보기'} ↗</a>
+      <FreeLink cat={t.catSlug} className="free-hint-more">다른 무료 {t.category} 서비스 →</FreeLink>
+    </div>
+  );
+}
+
+// 기사 창: 기사 제목·요약에 나온 서비스 중 무료로 써 볼 수 있는 것
+function FreeMentions({ article }) {
+  const { data } = useFreeData();
+  const text = `${article.headline} ${article.summary}`;
+  const hits = getFreeNameTerms().filter(([t, ct]) => freeOffer(data, t.slug) && termHits(ct, text).length).slice(0, 3);
+  if (!hits.length) return null;
+  return (
+    <div className="free-mentions">
+      <span className="free-mentions-label">무료로 써볼 수 있어요</span>
+      {hits.map(([t]) => {
+        const d = freeOffer(data, t.slug);
+        return (
+          <a key={t.slug} className="free-mention" style={toneVars(t.catSlug)} href={d.try_url || t.url}
+            target="_blank" rel="noopener noreferrer" title={d.limits || ''}>
+            <b>{t.name}</b><span>{d.offer}</span>
+          </a>
+        );
+      })}
+    </div>
+  );
 }
 const shortDate = d => (d ? d.slice(5) : '');
 
@@ -1901,7 +2088,7 @@ function FreeCard({ t, d }) {
         {has && d.note && <p className="free-note">{d.note}</p>}
         <div className="free-foot">
           <a className="free-try" href={tryUrl} target="_blank" rel="noopener noreferrer">
-            {!has ? '가격 확인하기' : isFree ? '바로 쓰기' : '무료로 써보기'}
+            {!has ? '가격 확인하기' : isFree ? '바로 쓰기' : 'AI 무료로 써보기'}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
           <span className="free-meta">
@@ -1933,7 +2120,7 @@ function FreeView({ cat, onCat }) {
   return (<>
     <nav className="tabs-wrap">
       <div className="tabs-inner">
-        <div className="tabs-meta">무료로 써보기 · {FREE_CATS.length}개 분야 · {FREE_TOOLS.length}개 서비스</div>
+        <div className="tabs-meta">AI 무료로 써보기 · {FREE_CATS.length}개 분야 · {FREE_TOOLS.length}개 서비스</div>
         <div className="tabs">
           <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
             전체 <span className="count">{FREE_TOOLS.length}</span>
@@ -1948,7 +2135,7 @@ function FreeView({ cat, onCat }) {
     </nav>
     <div className="feed-meta feed-meta-band">
       <div>
-        <SectionBand bandKey={cat ? `updates:${cat}` : 'updates'} eyebrow="FREE TO TRY" title={catLabel ? `${catLabel} 무료로 써보기` : '무료로 써보기'} />
+        <SectionBand bandKey={cat ? `updates:${cat}` : 'updates'} eyebrow="FREE TO TRY" title={catLabel ? `${catLabel} AI 무료로 써보기` : 'AI 무료로 써보기'} />
         <p className="feed-desc">
           아트 AI 서비스를 돈 내기 전에 무료로 써 볼 수 있는 방법을 모았어요. 매주 공식 가격 페이지를 확인해 갱신해요
           {data.updated ? ` (최근 확인 ${data.updated})` : ''}.
@@ -2206,6 +2393,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
         </div>
       </div>
       <main className="feed">
+        <RoleFreeTools role={r} />
         {kind === 'news' ? (
           !articlesReady ? (
             <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2522,6 +2710,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
     </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
     {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
+      {kind !== 'saved' && <MyFreeTools profile={profile} />}
       {kind === 'saved' ? (
         savedIds.length === 0 ? <EmptyState message="저장한 글이 없어요" sub="기사 카드나 업데이트의 책갈피 버튼을 누르면 여기에 모여요." />
         : !articlesReady || !updReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2789,6 +2978,7 @@ function App() {
   return (
     <BriefingContext.Provider value={briefing}>
     <MemberContext.Provider value={member}>
+    <FreeNavContext.Provider value={goFree}>
     <div className="page">
       <Header
         auth={auth}
@@ -2956,6 +3146,7 @@ function App() {
         />
       )}
     </div>
+    </FreeNavContext.Provider>
     </MemberContext.Provider>
     </BriefingContext.Provider>
   );
