@@ -1,0 +1,19 @@
+Today is {{date}}.
+
+You run the AI Art Daily daily routine (Korean AI news digest for game developers and digital artists, repository https://github.com/kyoungwhankim/Daily_Art_AI_News_Feed).
+The full, current instructions live in the repository file routine/daily_feed_prompt.txt. This stored prompt only loads that file, so the routine always follows the latest version in main.
+
+Step 1 — Get the latest repository:
+
+if [ ! -d /home/user/Daily_Art_AI_News_Feed/.git ]; then
+  cd /home/user
+  git clone https://${GITHUB_TOKEN}@github.com/kyoungwhankim/Daily_Art_AI_News_Feed.git
+fi
+cd /home/user/Daily_Art_AI_News_Feed
+git fetch origin main
+git checkout main
+git reset --hard origin/main
+
+Step 2 — Read /home/user/Daily_Art_AI_News_Feed/routine/daily_feed_prompt.txt in full (it is long — read it in parts until you reach its FINISH section) and follow it exactly, from its first line to FINISH, as if its text were this prompt. All of its EXECUTION RULES apply. Wherever the file says {{date}}, use today's date given at the top of this prompt (also inside the prompts you pass to the agents it starts).
+
+Step 3 — If the conversation is ever compacted, re-read routine/daily_feed_prompt.txt and continue from the step you were on (the working files under /tmp/feed, /tmp/updates and /tmp/free show your progress). Never start over from PHASE 0 after a compaction.
