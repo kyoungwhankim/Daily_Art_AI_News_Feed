@@ -1922,6 +1922,7 @@ function FreeView({ cat, onCat }) {
   const inCat = FREE_TOOLS.filter(t => !cat || t.catSlug === cat);
   const gone = t => { const d = data.tools[t.slug]; return d && (d.status === 'ended' || d.status === 'paid' || d.type === 'none'); };
   // 분야마다: 무료 체험·플랜(확인된 것 먼저) → 무료 서비스(오픈소스 등) → 확인하지 못한 것
+  const pending = t => !(data.tools[t.slug] && data.tools[t.slug].offer);
   const rank = t => (t.kind === 'free' ? 1 : 0) + (data.tools[t.slug] && data.tools[t.slug].offer ? 0 : 2);
   const groups = FREE_CATS.filter(c => !cat || c.slug === cat).map(c => ({
     ...c, tools: inCat.filter(t => t.catSlug === c.slug && !gone(t)).sort((x, y) => rank(x) - rank(y)),
@@ -1977,7 +1978,11 @@ function FreeView({ cat, onCat }) {
               {cat ? g.label : <button type="button" className="free-cat-link" onClick={() => onCat(g.slug)}>{g.label}</button>}
               <span>{g.tools.length}</span>
             </h2>
-            <ul className="free-grid">{g.tools.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+            {/* 확인하지 못한 서비스는 따로 한 묶음으로 — 다른 카드 높이에 맞춰 늘어나지 않고 같은 크기로 */}
+            <ul className="free-grid">{g.tools.filter(t => !pending(t)).map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+            {g.tools.some(pending) && (
+              <ul className="free-grid free-grid-pending">{g.tools.filter(pending).map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+            )}
           </section>
         ))}
         {ended.length > 0 && (
