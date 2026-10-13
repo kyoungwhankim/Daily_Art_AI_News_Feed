@@ -1871,37 +1871,53 @@ function FreeFlag({ on, yes, no }) {
   return <span className={`free-flag ${on ? 'yes' : 'no'}`}>{on ? yes : no}</span>;
 }
 
+// 분야마다 쿠폰 색 (그라데이션 두 색)
+const FREE_TONE = {
+  image: ['#ff4d8d', '#ff9a3c'], video: ['#7b5cff', '#3fa0ff'], '3d': ['#00b3a4', '#38d6ff'],
+  'game-assets': ['#3cc35f', '#c4e33b'], motion: ['#ff7a29', '#ffc23d'], audio: ['#c03cff', '#ff5ea8'],
+  tools: ['#2f6bff', '#00c2d1'],
+};
+const toneVars = slug => { const [a, b] = FREE_TONE[slug] || ['#6178b5', '#98a9d6']; return { '--fc1': a, '--fc2': b }; };
+
+// 무료 혜택 카드: 위쪽은 분야 색의 쿠폰(혜택), 아래쪽은 조건과 '무료로 써보기'
 function FreeCard({ t, d }) {
   const unverified = d && (d.status === 'unverified' || d.status_note === 'unverified');
   const has = d && d.offer;
   const tryUrl = t.aff || (d && d.try_url) || t.url;
+  const isFree = t.kind === 'free';
   return (
-    <li className={`free-card ${t.kind === 'free' ? 'is-free' : ''}`}>
-      <div className="free-card-head">
-        <span className="free-name">{t.name}</span>
-        <span className="free-cat">{t.category}</span>
-        {has && d.type && <span className="free-type">{FREE_TYPE_LABEL[d.type]}</span>}
-      </div>
-      <div className={`free-offer ${has ? '' : 'pending'}`}>{has ? d.offer : unverified ? '공식 페이지에서 무료 혜택을 확인해 주세요' : '조사 중이에요'}</div>
-      {has && d.limits && <div className="free-limits">{d.limits}</div>}
-      {has && (
-        <div className="free-flags">
-          <FreeFlag on={d.card === false ? true : d.card === true ? false : null} yes="카드 등록 없이" no="카드 등록 필요" />
-          <FreeFlag on={d.watermark === false ? true : d.watermark === true ? false : null} yes="워터마크 없음" no="워터마크 있음" />
-          <FreeFlag on={d.commercial} yes="상업적 이용 가능" no="상업적 이용 불가" />
+    <li className={`free-card ${isFree ? 'is-free' : ''} ${has ? '' : 'is-pending'}`} style={toneVars(t.catSlug)}>
+      <div className="free-ticket">
+        <div className="free-ticket-top">
+          <span className="free-type">{has && d.type ? FREE_TYPE_LABEL[d.type] : isFree ? '무료 서비스' : '확인 중'}</span>
+          <span className="free-cat">{t.category}</span>
         </div>
-      )}
-      {has && d.note && <p className="free-note">{d.note}</p>}
-      <div className="free-foot">
-        <a className="free-try" href={tryUrl} target="_blank" rel={t.aff ? 'sponsored noopener' : 'noopener noreferrer'}>
-          {t.kind === 'free' ? '바로 쓰기' : '무료로 써보기'} ↗
-        </a>
-        {t.aff && <span className="free-aff" title="이 링크로 가입하면 사이트가 소개 수수료를 받을 수 있어요">제휴</span>}
-        <span className="free-meta">
-          {unverified && <span className="free-unverified">확인 필요</span>}
-          {d && d.source_url && <a href={d.source_url} target="_blank" rel="noopener noreferrer">근거</a>}
-          {d && d.checked && <span>{shortDate(d.checked)} 확인</span>}
-        </span>
+        <div className="free-offer">{has ? d.offer : unverified ? '공식 페이지에서 확인해 주세요' : '조사 중이에요'}</div>
+        <div className="free-name">{t.name}</div>
+        {isFree && <span className="free-stamp" aria-hidden="true">FREE</span>}
+      </div>
+      <div className="free-body">
+        {has && d.limits && <div className="free-limits">{d.limits}</div>}
+        {has && (
+          <div className="free-flags">
+            <FreeFlag on={d.card === false ? true : d.card === true ? false : null} yes="카드 등록 없이" no="카드 등록 필요" />
+            <FreeFlag on={d.watermark === false ? true : d.watermark === true ? false : null} yes="워터마크 없음" no="워터마크 있음" />
+            <FreeFlag on={d.commercial} yes="상업적 이용 가능" no="상업적 이용 불가" />
+          </div>
+        )}
+        {has && d.note && <p className="free-note">{d.note}</p>}
+        <div className="free-foot">
+          <a className="free-try" href={tryUrl} target="_blank" rel={t.aff ? 'sponsored noopener' : 'noopener noreferrer'}>
+            {isFree ? '바로 쓰기' : '무료로 써보기'}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          {t.aff && <span className="free-aff" title="이 링크로 가입하면 사이트가 소개 수수료를 받을 수 있어요">제휴</span>}
+          <span className="free-meta">
+            {unverified && <span className="free-unverified">확인 필요</span>}
+            {d && d.source_url && <a href={d.source_url} target="_blank" rel="noopener noreferrer">근거</a>}
+            {d && d.checked && <span>{shortDate(d.checked)} 확인</span>}
+          </span>
+        </div>
       </div>
     </li>
   );
@@ -1949,6 +1965,13 @@ function FreeView({ cat, onCat }) {
       </div>
     </div>
     <main className="feed free">
+      {ready && (
+        <div className="free-stats">
+          <div><b>{inCat.filter(t => !gone(t)).length}</b><span>무료로 써 볼 수 있는 서비스</span></div>
+          <div><b>{inCat.filter(t => (data.tools[t.slug] || {}).card === false).length}</b><span>카드 등록 없이 바로</span></div>
+          <div><b>{inCat.filter(t => { const d = data.tools[t.slug] || {}; return d.type === 'plan' || d.type === 'free'; }).length}</b><span>계속 무료로 쓸 수 있는 곳</span></div>
+        </div>
+      )}
       {changes.length > 0 && (
         <section className="free-changes" aria-label="최근 바뀐 무료 혜택">
           <h2 className="free-h">최근 바뀐 무료 혜택</h2>
