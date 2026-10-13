@@ -37,6 +37,7 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
 import service_updates  # noqa: E402
+import free_tools  # noqa: E402
 
 SITE_URL = os.environ.get(
     'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
@@ -423,6 +424,43 @@ def updates_fallback(title: str, desc: str, entries: list, by_slug: dict, links:
     return (f'<h1 class="feed-title">{esc(title)}</h1><p class="feed-sub">{esc(desc)} · 업데이트 {len(entries)}건</p>'
             + nav + '<ul class="static-list">'
             + ''.join(update_item(root, e, by_slug[e['service']], show_service) for e in entries) + '</ul>')
+
+
+# ---------- 무료로 써보기 (/free/, /free/<분야>/) ----------
+# 주소 규칙·분야 slug는 app.jsx FREE_CAT_SLUG와 같아야 한다.
+FREE_CAT_SLUG = {'이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+                 '애니메이션·모션': 'motion', '음악·음성': 'audio', '디자인·도구': 'tools'}
+FREE_TYPE_LABEL = {'plan': '무료 플랜', 'trial': '기간제 체험', 'credits': '가입 크레딧', 'free': '무료 서비스'}
+
+
+def free_item(t: dict, d: dict) -> str:
+    gone = d.get('status') in ('ended', 'paid') or d.get('type') == 'none'
+    if gone:
+        return ''
+    offer = d.get('offer') or '조사 중'
+    meta = [t['category']]
+    if d.get('type') in FREE_TYPE_LABEL:
+        meta.append(FREE_TYPE_LABEL[d['type']])
+    if d.get('checked'):
+        meta.append(d['checked'] + ' 확인')
+    url = d.get('try_url') or t['url']
+    rel = 'noopener'
+    lim = f'<p>{esc(d["limits"])}</p>' if d.get('limits') else ''
+    return (f'<li><a href="{esc(url)}" rel="{rel}">{esc(t["name"])}</a> — {esc(offer)}'
+            f'<span class="static-item-meta">{esc(" · ".join(meta))}</span>{lim}</li>')
+
+
+def free_fallback(title: str, desc: str, tools: list, data: dict, links: list) -> str:
+    nav = ('<div class="subcats">' + ''.join(
+        f'<a class="chip subcat" href="{href("/", p)}">{esc(t)}</a>' for t, p in links) + '</div>') if links else ''
+    trials = ''.join(free_item(t, data.get(t['slug'], {})) for t in tools if t['kind'] == 'trial')
+    frees = ''.join(free_item(t, data.get(t['slug'], {})) for t in tools if t['kind'] == 'free')
+    out = f'<h1 class="feed-title">{esc(title)}</h1><p class="feed-sub">{esc(desc)}</p>' + nav
+    if trials:
+        out += f'<h2>무료 체험 · 무료 플랜</h2><ul class="static-list">{trials}</ul>'
+    if frees:
+        out += f'<h2>무료 서비스</h2><ul class="static-list">{frees}</ul>'
+    return out
 
 
 # ---------- 아티스트 브리핑 — 직군별 추천 (/for/, /for/<직군>/) ----------
@@ -869,6 +907,35 @@ def main():
             upd_page(f'updates/{slug}/{sv["slug"]}/', f'{who} 업데이트',
                      f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
                      entries, [(label, f'updates/{slug}/')], show_service=False)
+
+    # 무료로 써보기: /free/, /free/<분야>/ (검색엔진용 목록 — 앱이 뜨면 숨겨진다)
+    ftools = free_tools.load_tools()
+    if ftools:
+        fdata = free_tools.load_data()
+        for t in ftools:
+            t['catSlug'] = FREE_CAT_SLUG.get(t['category'], free_tools.kw_slug(t['category']))
+        fcats = []
+        for t in ftools:
+            if t['catSlug'] not in [c for c, _ in fcats]:
+                fcats.append((t['catSlug'], t['category']))
+        flinks = [(label, f'free/{slug}/') for slug, label in fcats]
+        fdesc = ('이미지·영상·3D·애니메이션·음악 등 아트 AI 서비스의 무료 체험·무료 플랜과 무료 서비스를 모았어요. '
+                 '매주 공식 가격 페이지를 확인해 갱신해요.')
+        write(out, 'free/index.html', shell(
+            'free/', f'아트 AI 무료로 써보기 | {SITE_NAME}', fdesc,
+            free_fallback('아트 AI 무료로 써보기', fdesc, ftools, fdata.get('tools', {}), flinks),
+            collection('free/', '아트 AI 무료로 써보기', fdesc)))
+        listing_paths.append('free/')
+        for slug, label in fcats:
+            ts = [t for t in ftools if t['catSlug'] == slug]
+            d = (f'{label} AI 서비스({", ".join(t["name"] for t in ts[:5])} 등)를 무료로 써 보는 방법 — '
+                 '무료 크레딧·무료 체험·무료 플랜을 매주 확인해 정리했어요.')
+            title = f'무료 {label} AI 서비스'
+            write(out, f'free/{slug}/index.html', shell(
+                f'free/{slug}/', f'{title} | {SITE_NAME}', d,
+                free_fallback(title, d, ts, fdata.get('tools', {}), [('전체', 'free/')]),
+                collection(f'free/{slug}/', title, d)))
+            listing_paths.append(f'free/{slug}/')
 
     # 아티스트 브리핑 (직군별 추천)
     roles = load_roles()

@@ -156,6 +156,15 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 - 고르는 기준: `app.jsx` roleArticles·roleUpdates (검색엔진용 `/for/<직군>/` 페이지는 `scripts/build_site.py` role_articles·role_updates — 두 곳이 같아야 한다)
 - 추천이 엉뚱하면 그 직군의 terms에서 흔한 단어를 빼고, 빠진 소식이 있으면 단어를 더한다
 
+## 무료로 써보기 (사이드바 '무료로 써보기', /free/)
+
+- 아트 AI 서비스(이미지·영상·3D·게임 에셋·애니메이션·모션·음악·음성·디자인·도구)의 무료 체험·무료 플랜·가입 크레딧과, 원래 무료인 '무료 서비스'(오픈소스 등)를 분야별 카드로 보여 준다
+- 서비스 목록: `config.js` `freeTools` — `kind: 'trial'`(무료 혜택 조사) / `kind: 'free'`(무료 서비스 — 유료로 바뀌었는지 확인)
+- 조사 결과: `data/free/tools.json` — 서비스별 혜택(종류·양·제한·카드 등록·워터마크·상업 이용·근거 링크·확인일)과 최근 바뀐 혜택(`changes`)
+- 매주 조사: 루틴이 `scripts/free_tools.py due`가 DUE일 때(마지막 조사 후 6일 이상) 무료 혜택 에이전트(`routine/free_agent_prompt.txt`, Sonnet)를 띄운다. 공식 페이지만 근거로 쓰고, 확실하지 않으면 `unverified`(지난 결과 유지 + '확인 필요' 표시). `free_tools.py add`가 항목마다 검사, `merge`가 지난주와 비교해 바뀐 혜택을 기록
+- 보고서(`/tmp/free/REPORT.txt`, 루틴 최종 보고에 포함): 확인하지 못한 서비스, 목록에 없는 새 서비스 후보
+- 검색용 정적 페이지: `/free/`, `/free/<분야>/` (사이트맵 포함)
+
 ## 로그인 · 나만의 피드 (Supabase)
 
 - Google 로그인: Supabase Auth. 공개 키(Project URL, publishable 키)는 `config.js` auth에 있다 (secret 키는 넣지 않는다)

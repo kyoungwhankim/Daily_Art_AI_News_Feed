@@ -6,13 +6,16 @@ and digital artists, published as a static GitHub Pages site at:
   Repository: https://github.com/kyoungwhankim/Daily_Art_AI_News_Feed
 
 This routine runs inside ONE session, plus ONE separate agent for service
-updates. It does NOT use Confluence in any way — all inputs (the source
+updates — and, once a week, a second separate agent for the free-tools page. It does NOT use Confluence in any way — all inputs (the source
 whitelist) are embedded in this prompt.
 
   PHASE 0 — START THE UPDATES AGENT: Start a separate background agent that
             collects the official update announcements of AI services
             (sidebar '업데이트') into /tmp/updates/entries.json, following
             routine/updates_agent_prompt.txt. It runs while you do PHASE 1.
+            Once a week (when scripts/free_tools.py due says DUE) also start
+            the free-tools agent (routine/free_agent_prompt.txt) that checks the
+            free trials / free plans of art AI services (sidebar '무료로 써보기').
   PHASE 1 — RESEARCH: Research today's news, save each article as a small JSON
             entry in /tmp/feed/digest.json. At the end, wait for the updates
             agent to finish.
@@ -113,10 +116,28 @@ save script checks every entry), with exactly this prompt (fill in the date):
   Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/updates_agent_prompt.txt
   and follow it exactly, from STEP 1 to FINISH.
 
-Do not wait for it and do not do its work yourself — go straight on to
-PHASE 1. This is the ONLY agent this routine starts. You will be notified when
+Do not wait for it and do not do its work yourself. You will be notified when
 it finishes; its result is /tmp/updates/entries.json plus the marker
 /tmp/updates/DONE.
+
+Step 4 — Once a week: the free-tools agent ('무료로 써보기' page).
+
+cd /home/user/Daily_Art_AI_News_Feed
+rm -rf /tmp/free
+python3 scripts/free_tools.py due
+
+If it prints "NOT DUE", skip the rest of this step (no free-tools agent today).
+If it prints "DUE", start a second agent with the Agent (Task) tool, in the
+BACKGROUND (run_in_background: true), on the Sonnet model (model: "sonnet" —
+it has to read pricing pages carefully and must not guess; the add script checks
+every entry), with exactly this prompt (fill in the date):
+
+  Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/free_agent_prompt.txt
+  and follow it exactly, from STEP 1 to FINISH.
+
+Its result is /tmp/free/entries.json plus the marker /tmp/free/DONE.
+
+These are the ONLY agents this routine starts. Go straight on to PHASE 1.
 
 =====================================================================
 PHASE 1 — RESEARCH
@@ -499,6 +520,16 @@ If it prints "still running", wait for the agent's completion notification
 yourself), then run the check again. If the agent ended with an error and no
 DONE marker, note that and go on to PHASE 2 — the news is published anyway and
 the service updates are skipped today.
+
+If the free-tools agent was started today (PHASE 0 Step 4 printed DUE), wait for
+it the same way:
+
+test ! -d /tmp/free && echo "No free-tools agent today." \
+  || { test -f /tmp/free/DONE && echo "Free-tools agent finished." && cat /tmp/free/REPORT.txt \
+       || echo "Free-tools agent still running."; }
+
+If it ended with an error and no DONE marker, note that and go on — the
+free-tools page simply keeps last week's data and is checked again tomorrow.
 
 =====================================================================
 PHASE 2 — PUBLISH TO THE FEED
@@ -989,6 +1020,22 @@ fi
 
 ---
 
+MERGE FREE TOOLS (only on the days the free-tools agent ran)
+
+cd /home/user/Daily_Art_AI_News_Feed
+if [ -f /tmp/free/DONE ] && [ -s /tmp/free/entries.json ]; then
+  python3 scripts/free_tools.py merge /tmp/free/entries.json && python3 scripts/free_tools.py validate
+else
+  echo "No free-tools results to merge today."
+fi
+
+If merge prints "REJECTED — nothing was merged" or validate fails, restore the
+file and continue (the page keeps last week's data; it is checked again tomorrow):
+
+  git checkout -- data/free 2>/dev/null; git clean -fdq data/free
+
+---
+
 COMMIT AND PUSH
 
 ⚠️  HARD RULE — DO NOT CREATE NEW BRANCHES
@@ -1010,7 +1057,9 @@ python3 scripts/push_to_main.py
 FINISH
 
 In your final report, include the updates agent's report
-(/tmp/updates/REPORT.txt) and the merge summary line.
+(/tmp/updates/REPORT.txt) and the merge summary line. On free-tools days also
+include /tmp/free/REPORT.txt (it lists unverified services and new service
+candidates for the site owner) and the free-tools merge summary line.
 
 Leave publish mode as the very last step of the routine, whether the push
 succeeded or the routine is terminating early in PHASE 2:

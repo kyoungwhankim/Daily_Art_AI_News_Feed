@@ -1986,3 +1986,104 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 }
 .hm-upd-top .today-mark { margin-left: auto; }
 .update-date .today-mark { margin-top: 1px; }
+
+/* ---------- 무료로 써보기 (/free/) ---------- */
+/* 카드 = 분야 색 쿠폰: 위쪽 그라데이션 티켓(혜택) + 점선 절취선 + 아래 조건·버튼 */
+.free-h { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-size: 19px; font-weight: 900; margin: 30px 0 14px; color: var(--ink); }
+.free-h > span { font-size: 13px; font-weight: 800; color: #fff; background: linear-gradient(90deg, var(--fc1, #ff4d8d), var(--fc2, #7b5cff)); padding: 1px 9px; border-radius: 999px; }
+/* 분야 묶음: 분야 색 막대 + 이름 */
+.free-group + .free-group { margin-top: 10px; }
+.free-cat-h { align-items: center; padding-left: 14px; position: relative; font-size: 21px; }
+.free-cat-h::before {
+  content: ""; position: absolute; left: 0; top: 3px; bottom: 3px; width: 5px; border-radius: 3px;
+  background: linear-gradient(180deg, var(--fc1), var(--fc2));
+}
+.free-cat-link { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.free-cat-link:hover { color: var(--fc1); }
+.free-h small { flex-basis: 100%; font-size: 12.5px; font-weight: 500; color: var(--muted); }
+
+.free-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
+.free-card {
+  --notch: var(--paper);
+  position: relative; display: flex; flex-direction: column;
+  background: var(--card); border-radius: 18px; overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0,0,0,.04), 0 8px 24px -12px color-mix(in srgb, var(--fc1) 55%, transparent);
+  transition: transform .2s cubic-bezier(.34,1.56,.64,1), box-shadow .2s ease;
+}
+.free-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px -14px color-mix(in srgb, var(--fc1) 70%, transparent); }
+.free-ticket {
+  position: relative; padding: 16px 18px 18px; color: #fff;
+  background: linear-gradient(135deg, var(--fc1), var(--fc2));
+}
+.free-ticket::after {   /* 반짝이는 결 */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(120% 90% at 100% 0%, rgba(255,255,255,.35), transparent 55%);
+}
+.free-ticket-top { display: flex; align-items: center; gap: 8px; }
+.free-type { font-size: 11px; font-weight: 800; letter-spacing: .02em; background: rgba(255,255,255,.25); padding: 3px 9px; border-radius: 999px; backdrop-filter: blur(4px); }
+.free-cat { margin-left: auto; font-size: 11px; font-weight: 700; opacity: .85; }
+.free-name { position: relative; z-index: 1; margin-top: 10px; font-size: 26px; font-weight: 900; line-height: 1.15; letter-spacing: -0.02em; text-shadow: 0 1px 12px rgba(0,0,0,.12); }
+.free-offer { position: relative; z-index: 1; margin-top: 6px; padding-right: 64px; font-size: 14.5px; font-weight: 700; line-height: 1.4; opacity: .96; }
+.free-stamp {
+  position: absolute; right: 14px; bottom: 12px; z-index: 1;
+  font-family: var(--font-mono); font-size: 13px; font-weight: 900; letter-spacing: .2em;
+  border: 2px solid rgba(255,255,255,.85); border-radius: 6px; padding: 2px 6px; transform: rotate(-10deg); opacity: .9;
+}
+/* 절취선 + 양쪽 홈 */
+.free-body {
+  position: relative; flex: 1; display: flex; flex-direction: column; gap: 9px;
+  padding: 16px 18px 14px; border-top: 2px dashed color-mix(in srgb, var(--fc1) 45%, transparent);
+}
+.free-body::before, .free-body::after {
+  content: ""; position: absolute; top: -10px; width: 18px; height: 18px; border-radius: 50%; background: var(--notch);
+}
+.free-body::before { left: -9px; } .free-body::after { right: -9px; }
+/* 확인하지 못한 서비스: 카드·버튼 전체를 채도와 명도를 확 낮춘 회색 톤으로 */
+.free-card.is-pending { --fc1: #8a8f96; --fc2: #a7acb2; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+.free-card.is-pending:hover { box-shadow: 0 10px 22px -14px rgba(0,0,0,.35); }
+.free-card.is-pending .free-ticket { background: linear-gradient(135deg, #8a8f96, #a3a8ae); }
+.free-card.is-pending .free-ticket::after { opacity: .4; }
+.free-card.is-pending .free-offer { font-weight: 600; opacity: .9; }
+.free-card.is-pending .free-try { background: #8a8f96; box-shadow: none; }
+.free-card.is-pending .free-try:hover { background: #767b82; }
+.free-card.is-pending .free-body { border-top-color: #c5c9ce; }
+[data-theme="dark"] .free-card.is-pending { --fc1: #4c5157; --fc2: #5c6167; }
+[data-theme="dark"] .free-card.is-pending .free-ticket { background: linear-gradient(135deg, #43484e, #555a60); }
+[data-theme="dark"] .free-card.is-pending .free-try { background: #4c5157; color: #d5d8dc; }
+[data-theme="dark"] .free-card.is-pending .free-body { border-top-color: #3a3e43; }
+.free-limits { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+.free-flags { display: flex; flex-wrap: wrap; gap: 6px; }
+.free-flag { font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; color: var(--muted); background: var(--paper-2); }
+.free-flag.yes { color: color-mix(in srgb, var(--fc1) 80%, var(--ink)); background: color-mix(in srgb, var(--fc1) 13%, transparent); }
+.free-note { margin: 0; font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+.free-foot { margin-top: auto; padding-top: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.free-try {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13.5px; font-weight: 800; color: #fff; text-decoration: none;
+  padding: 8px 14px; border-radius: 999px;
+  background: linear-gradient(90deg, var(--fc1), var(--fc2));
+  box-shadow: 0 6px 16px -8px var(--fc1);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.free-try svg { transition: transform .15s ease; }
+.free-try:hover { transform: translateY(-1px); box-shadow: 0 10px 22px -8px var(--fc1); }
+.free-try:hover svg { transform: translateX(3px); }
+.free-meta { margin-left: auto; display: inline-flex; gap: 8px; align-items: center; font-size: 11.5px; color: var(--muted); }
+.free-meta a { color: var(--muted); }
+.free-unverified { color: #b5651d; font-weight: 700; }
+[data-theme="dark"] .free-unverified { color: #f0a35e; }
+
+.free-changes { border-radius: 16px; padding: 4px 18px 14px; margin-bottom: 8px; background: var(--paper-2); border: 1.5px solid var(--hairline); }
+.free-changes .free-h { margin: 14px 0 8px; font-size: 15px; }
+.free-changes ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 13.5px; color: var(--ink-2); }
+.free-change-kind { display: inline-block; min-width: 54px; font-size: 11px; font-weight: 800; margin-right: 6px; color: #7b5cff; }
+.free-change-kind.k-down, .free-change-kind.k-ended, .free-change-kind.k-paid { color: #e5484d; }
+.free-change-date { margin-left: 6px; font-size: 11.5px; color: var(--muted); }
+.free-ended { margin-top: 22px; font-size: 13px; color: var(--muted); }
+.free-disclaimer { margin-top: 26px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+@media (prefers-reduced-motion: reduce) { .free-card, .free-try, .free-try svg { transition: none; } }
+.free-card.is-pending .free-unverified { color: var(--muted); }
+.free-grid-pending { margin-top: 18px; align-items: start; }
+.free-grid-pending .free-card { height: auto; }
+.free-card.is-pending .free-body { flex: none; padding-top: 14px; padding-bottom: 14px; }
+.free-card.is-pending .free-foot { margin-top: 0; padding-top: 0; }
