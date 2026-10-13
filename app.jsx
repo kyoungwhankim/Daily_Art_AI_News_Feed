@@ -203,7 +203,7 @@ function Thumb({ hue, image, alt, children }) {
 
 /* ---------- card ---------- */
 function ArticleCard({ article, onOpen, query, variant }) {
-  const cls = `card${variant ? ' ' + variant : ''}`;
+  const cls = `card${variant ? ' ' + variant : ''}${isToday(article) ? ' is-today' : ''}`;
   const m = React.useContext(MemberContext);
   return (
     <button className={cls} onClick={() => onOpen(article)}>

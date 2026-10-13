@@ -2140,3 +2140,21 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 /* ---------- 날짜별 기사: 빈칸 없이 이어 흐른다 (날짜는 카드 오른쪽 아래, 오늘 기사는 TODAY) ---------- */
 .grid.date-flow { margin-top: 8px; }
 .date-label .today-mark { align-self: center; font-size: 12px; }
+
+/* 오늘 기사 카드: 테두리에 TODAY 글자와 같은 무지개색이 천천히 흐른다 */
+.card.is-today {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff2e7e, #ff7a1a, #a63dff, #2f7bff, #ff2e7e) border-box;
+  background-size: 100% 100%, 300% 100%;
+  animation: todayBorder 6s linear infinite;
+}
+[data-theme="dark"] .card.is-today {
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(90deg, #ff5c9a, #ffa04d, #c27bff, #5c9bff, #ff5c9a) border-box;
+  background-size: 100% 100%, 300% 100%;
+}
+@keyframes todayBorder { from { background-position: 0 0, 0% 50%; } to { background-position: 0 0, 300% 50%; } }
+@media (prefers-reduced-motion: reduce) { .card.is-today { animation: none; } }
