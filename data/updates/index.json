@@ -1,28 +1,28 @@
 {
   "categories": {
     "image": {
-      "count": 463,
-      "latest": "2026.10.09",
+      "count": 464,
+      "latest": "2026.10.12",
       "file": "updates/feed/image.json",
-      "rev": "b9087b0655"
+      "rev": "d01a31c2c8"
     },
     "video": {
-      "count": 939,
-      "latest": "2026.10.09",
+      "count": 942,
+      "latest": "2026.10.12",
       "file": "updates/feed/video.json",
-      "rev": "97960c83af"
+      "rev": "88eaf6b72e"
     },
     "3d": {
-      "count": 179,
-      "latest": "2026.10.10",
+      "count": 180,
+      "latest": "2026.10.12",
       "file": "updates/feed/3d.json",
-      "rev": "96e9a14faa"
+      "rev": "f1cab2b002"
     },
     "game-assets": {
-      "count": 526,
-      "latest": "2026.10.05",
+      "count": 536,
+      "latest": "2026.10.12",
       "file": "updates/feed/game-assets.json",
-      "rev": "01b0618dff"
+      "rev": "d52db9f6df"
     },
     "motion": {
       "count": 162,
@@ -31,16 +31,16 @@
       "rev": "5db49dd05e"
     },
     "audio": {
-      "count": 351,
-      "latest": "2026.10.08",
+      "count": 352,
+      "latest": "2026.10.09",
       "file": "updates/feed/audio.json",
-      "rev": "e429eb3b9b"
+      "rev": "d9d476c9ec"
     },
     "tools": {
-      "count": 998,
-      "latest": "2026.10.09",
+      "count": 1000,
+      "latest": "2026.10.12",
       "file": "updates/feed/tools.json",
-      "rev": "6970d9203a"
+      "rev": "9266790a92"
     }
   },
   "services": {
@@ -95,9 +95,9 @@
       "latest": "2026.10.08"
     },
     "gigapixel": {
-      "count": 79,
+      "count": 80,
       "first": "2020.04.09",
-      "latest": "2026.08.27"
+      "latest": "2026.10.12"
     },
     "mai-image": {
       "count": 9,
@@ -130,9 +130,9 @@
       "latest": "2026.09.02"
     },
     "runway": {
-      "count": 184,
+      "count": 186,
       "first": "2023.02.01",
-      "latest": "2026.10.02"
+      "latest": "2026.10.12"
     },
     "dream-machine": {
       "count": 29,
@@ -140,9 +140,9 @@
       "latest": "2026.10.08"
     },
     "higgsfield": {
-      "count": 56,
+      "count": 57,
       "first": "2025.04.24",
-      "latest": "2026.10.06"
+      "latest": "2026.10.12"
     },
     "ltx-studio": {
       "count": 64,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 117,
+      "count": 118,
       "first": "2023.10.19",
-      "latest": "2026.10.10"
+      "latest": "2026.10.12"
     },
     "tripo": {
       "count": 29,
@@ -205,9 +205,9 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 339,
+      "count": 349,
       "first": "2022.12.23",
-      "latest": "2026.10.05"
+      "latest": "2026.10.12"
     },
     "layer": {
       "count": 102,
@@ -250,9 +250,9 @@
       "latest": "2026.10.08"
     },
     "mureka": {
-      "count": 54,
+      "count": 55,
       "first": "2024.10.30",
-      "latest": "2026.09.14"
+      "latest": "2026.10.09"
     },
     "stable-audio": {
       "count": 8,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 59,
+      "count": 61,
       "first": "2025.05.21",
-      "latest": "2026.10.06"
+      "latest": "2026.10.12"
     },
     "fal.ai": {
       "count": 168,

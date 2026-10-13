@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-10-1",
+    "service": "scenario",
+    "date": "2026.10.10",
+    "kind": "기능",
+    "title": "Skills v0.54.0: 다중 레퍼런스 합성과 광고 파이프라인",
+    "summary": "여러 레퍼런스를 합성하는 스킬과 썸네일·광고 변형, 9:16 키네틱 영상 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-54-0",
+    "source": "dev"
+  }
+]

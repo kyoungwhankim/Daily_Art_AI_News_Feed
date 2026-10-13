@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-10-12-1",
+    "service": "hugging-face",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "액세스 토큰에 contributor 권한 추가",
+    "summary": "Fine-grained 토큰과 서비스 계정 토큰에 contributor 권한을 줄 수 있어요. 이 권한이 있으면 지정한 계정이나 조직에 저장소를 만들고 쓸 수 있어서 CI나 학습 작업에 안전해요.",
+    "url": "https://huggingface.co/changelog/contribute-permission-for-access-tokens",
+    "source": "notice"
+  }
+]

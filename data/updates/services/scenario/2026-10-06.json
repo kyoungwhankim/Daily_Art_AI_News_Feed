@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-06-1",
+    "service": "scenario",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Kandinsky 6.0 Lite·Pro 모델 추가",
+    "summary": "Kandinsky 6.0 Lite와 Pro가 추가됐어요. 5초 영상을 네이티브 오디오와 함께 만들고 업스케일할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-8f7b7da8c25b9a965a57ce99ef87bdf473e63591b0bd5a119f306bccfcfaf98c",
+    "source": "notice"
+  }
+]

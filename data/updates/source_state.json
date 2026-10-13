@@ -1,8 +1,8 @@
 {
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "kind": "page",
-  "hash": "700206f6bea6e041",
-  "chars": 44414,
+  "hash": "1a2c2d7637c4d160",
+  "chars": 44536,
   "links": [
    "001f316ea9",
    "00d98edc4e",
@@ -241,6 +241,7 @@
    "2026-10-06",
    "2026-10-07",
    "2026-10-09",
+   "2026-10-12",
    "April 1, 2026",
    "April 14, 2026",
    "April 15, 2026",
@@ -651,8 +652,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "3868bb2a3c45a91e",
-  "chars": 28214,
+  "hash": "319ab712e1dfecac",
+  "chars": 28215,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -1671,6 +1672,7 @@
    "cb6f1584f1",
    "cbc081b7ea",
    "cc0a3c6f05",
+   "cc6308e8b5",
    "cc8eedee99",
    "ccbd6ca82b",
    "cce4f5aeb2",
@@ -1856,6 +1858,7 @@
    "f347d6267e",
    "f356216a3e",
    "f35936894b",
+   "f39173740d",
    "f408a0eb5a",
    "f411146d57",
    "f418e3b705",
@@ -1865,6 +1868,7 @@
    "f49099869d",
    "f4dfe53783",
    "f544f62c62",
+   "f55b9ee569",
    "f56950553e",
    "f5ef16bdae",
    "f640e7644f",
@@ -1925,7 +1929,8 @@
    "2026-10-06",
    "2026-10-07",
    "2026-10-08",
-   "2026-10-09"
+   "2026-10-09",
+   "2026-10-12"
   ]
  },
  "https://community.topazlabs.com/c/api/api-releases/136": {
@@ -1944,6 +1949,7 @@
  "https://community.topazlabs.com/c/topaz-gigapixel/topaz-gigapixel-releases/128.rss": {
   "kind": "feed",
   "items": [
+   "a625f98ce73a",
    "1ba04b687765",
    "fb3d472236d6",
    "fe8f97e9765c",
@@ -3536,6 +3542,8 @@
  "https://devforum.roblox.com/c/updates/announcements/36.rss": {
   "kind": "feed",
   "items": [
+   "590468d03fdc",
+   "e5faaa3a67a8",
    "4f8dbc2633d2",
    "9314ff95d771",
    "c7908ac39d68",
@@ -3892,8 +3900,8 @@
  },
  "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes": {
   "kind": "page",
-  "hash": "5b1be7850b6131a2",
-  "chars": 67132,
+  "hash": "9db9e5e0c6f5797e",
+  "chars": 68235,
   "links": [
    "000ccc61aa",
    "000f0509c1",
@@ -6191,6 +6199,7 @@
    "2026-10-06",
    "2026-10-07",
    "2026-10-09",
+   "2026-10-12",
    "April 22, 2026",
    "April 28, 2026",
    "August 04, 2026",
@@ -6243,6 +6252,7 @@
    "October 05, 2026",
    "October 06, 2026",
    "October 07, 2026",
+   "October 12, 2026",
    "October 2, 2026",
    "October 21, 2026",
    "September 01, 2026",
@@ -6291,8 +6301,8 @@
  },
  "https://docs.dev.runwayml.com/api-details/api_changelog/": {
   "kind": "page",
-  "hash": "5676b38361e57e51",
-  "chars": 28632,
+  "hash": "3d12dea921a7584b",
+  "chars": 30797,
   "links": [
    "010ee38c4f",
    "05d564234c",
@@ -7132,8 +7142,8 @@
  },
  "https://docs.meshy.ai/en/api/changelog": {
   "kind": "page",
-  "hash": "535467eb7349caa7",
-  "chars": 31815,
+  "hash": "07302c7cc26a0dbd",
+  "chars": 32853,
   "links": [
    "0032b13f45",
    "01901921a5",
@@ -7149,6 +7159,7 @@
    "0c953e8a5f",
    "0dcadf01dc",
    "0dd3138851",
+   "0e4a3d2bc7",
    "0f1492c1a1",
    "0f58f5573c",
    "0fd5e06c2d",
@@ -7172,6 +7183,7 @@
    "220de2ff7a",
    "2229b56c3c",
    "22b4556e74",
+   "24ee91ccea",
    "25106e1789",
    "266ea80996",
    "29af90bd82",
@@ -7239,6 +7251,7 @@
    "823aa6e0e8",
    "82f8a5df62",
    "8443cb6524",
+   "859a5a5723",
    "85cbe62a1d",
    "87787c6e66",
    "884d97d0e5",
@@ -7264,6 +7277,7 @@
    "9e4c21ef29",
    "9e4d8aec1d",
    "a0e64025a8",
+   "a1498460c8",
    "a15f76080e",
    "a269c7a9e3",
    "a2c47c382a",
@@ -7312,6 +7326,7 @@
    "e02165103c",
    "e0c647650a",
    "e0caef44d0",
+   "e16a51146e",
    "e2ca0854ac",
    "e7ae70ddcf",
    "ea5cc30360",
@@ -7425,6 +7440,7 @@
    "0dade9b20c",
    "0e1c921596",
    "129297dfb8",
+   "2025a56f50",
    "219866c785",
    "256794a0be",
    "26f0c20a1f",
@@ -7708,8 +7724,8 @@
  },
  "https://docs.x.ai/developers/release-notes": {
   "kind": "page",
-  "hash": "586c008f46666bce",
-  "chars": 17367,
+  "hash": "b58a39ffdae46791",
+  "chars": 17469,
   "links": [
    "01ce7a0e38",
    "02b55804c2",
@@ -7729,6 +7745,7 @@
    "2739102bac",
    "2bdcb74bda",
    "308358ab76",
+   "368a706ff7",
    "379a25f5d7",
    "3c2de93998",
    "3f5d13f98f",
@@ -7780,6 +7797,7 @@
    "a857b56ea1",
    "a9e58c31c6",
    "ab914de752",
+   "ada2836362",
    "adc012fc07",
    "ae688452bc",
    "b23066fb1a",
@@ -7805,7 +7823,8 @@
    "f42b211ab8",
    "f545ac65d1",
    "f894fd1913",
-   "fd3ce3524b"
+   "fd3ce3524b",
+   "ff5c8cc965"
   ],
   "dates": [
    "2026-03-02",
@@ -7813,10 +7832,12 @@
    "2026-10-02",
    "2026-10-08",
    "2026-10-09",
+   "2026-10-10",
    "August 5, 2026",
    "May 15, 2026",
    "Nov 2, 2026",
    "November 2, 2026",
+   "October 10, 2026",
    "October 2, 2026",
    "October 8, 2026",
    "October 9, 2026"
@@ -10174,6 +10195,10 @@
  "https://higgsfield.ai/blog/rss.xml": {
   "kind": "feed",
   "items": [
+   "996c3071837b",
+   "4f60d3eaed79",
+   "8163713df837",
+   "4c77e295da8d",
    "70224211e81f",
    "116ef4604a76",
    "674fcc47ef1f",
@@ -10327,7 +10352,6 @@
    "ab818ade1fb1",
    "c120f4de1b8b",
    "fe8949273834",
-   "8163713df837",
    "1fba45acdc3e",
    "0e0f4fe0490e",
    "5198401d31bc",
@@ -10342,7 +10366,6 @@
    "6639a1df60ba",
    "50507e4e4671",
    "6b582b1b761c",
-   "8a8f90db258e",
    "46c7c82b3e99",
    "04b7bb50f564",
    "d6d0609356cc",
@@ -10421,6 +10444,7 @@
    "f1e1333034ee",
    "496f548fc814",
    "c9c227a5e157",
+   "8a8f90db258e",
    "dddbb0dbd723",
    "a65ffd0abcbe",
    "0e44451731a8"
@@ -10428,8 +10452,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "bf78360257479e1c",
-  "chars": 4321,
+  "hash": "4f3f40d31b41fbdf",
+  "chars": 4230,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -11417,9 +11441,10 @@
  },
  "https://huggingface.co/changelog": {
   "kind": "page",
-  "hash": "e266f8bed04124ee",
-  "chars": 2269,
+  "hash": "e13f2e7d508d7a87",
+  "chars": 2343,
   "links": [
+   "16dacebbf9",
    "1a666dcca2",
    "220de2ff7a",
    "2300311e82",
@@ -11438,6 +11463,7 @@
    "7659fda96c",
    "7e43ca2ff2",
    "8ba94786eb",
+   "ac393bfbde",
    "aee70d8289",
    "b74693a58d",
    "c2864931a5",
@@ -12784,6 +12810,7 @@
    "Oct 06 2026",
    "Oct 07 2026",
    "Oct 11 2026",
+   "Oct 12 2026",
    "October 19, 2025",
    "October 20, 2025",
    "October 5, 2025",
@@ -13084,6 +13111,7 @@
    "4d233b322c",
    "4d413c4d1a",
    "4d67b8261d",
+   "4f5e48bfbb",
    "50b1716090",
    "512a0c8819",
    "51548951ff",
@@ -16985,6 +17013,8 @@
  "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Azure-AI-Foundry-Blog": {
   "kind": "feed",
   "items": [
+   "6edaf581fc58",
+   "0c485df66090",
    "4455bc5967d0",
    "3945b950145a",
    "2882061fab87",
@@ -18866,6 +18896,7 @@
    "416751d6ab",
    "4743192cbf",
    "4bdfb25f25",
+   "52798724f2",
    "5501169152",
    "5c7d68a4b8",
    "5ea5a566d1",
@@ -18904,8 +18935,8 @@
  },
  "https://www.mureka.ai/whats-new_en.html": {
   "kind": "page",
-  "hash": "bb13056dc82a2d30",
-  "chars": 4208,
+  "hash": "2f041db1f0418e57",
+  "chars": 4151,
   "links": [
    "1dff482912",
    "220de2ff7a",
@@ -18935,7 +18966,8 @@
    "2026-08-20",
    "2026-08-26",
    "2026-09-02",
-   "2026-09-14"
+   "2026-09-14",
+   "2026-10-09"
   ]
  },
  "https://www.reallusion.com/iclone/update.html": {
@@ -19167,6 +19199,7 @@
    "daaa442794",
    "db63c2c89d",
    "dca2a6c5a3",
+   "dfc2eb6c01",
    "dfc773fa8c",
    "e1ca318447",
    "e24b487e2f",
@@ -19307,6 +19340,7 @@
    "Oct 05 2026",
    "Oct 07 2026",
    "Oct 08 2026",
+   "Oct 12 2026",
    "October 1, 2024",
    "October 1, 2026",
    "October 24, 2024",
@@ -19453,6 +19487,7 @@
    "d9d9cd45b5",
    "daaa442794",
    "dca2a6c5a3",
+   "dfc2eb6c01",
    "dfc773fa8c",
    "e084fbd7ee",
    "e24c9fbd8b",
@@ -19482,6 +19517,7 @@
    "Oct 05 2026",
    "Oct 07 2026",
    "Oct 08 2026",
+   "Oct 12 2026",
    "September 16, 2025"
   ]
  },
@@ -19655,8 +19691,8 @@
  },
  "https://www.scenario.com/changelog": {
   "kind": "page",
-  "hash": "4f75cb18dfa97d0b",
-  "chars": 47658,
+  "hash": "74956bee7d390ba3",
+  "chars": 48618,
   "links": [
    "016ef85946",
    "017879a00f",
@@ -19782,6 +19818,7 @@
    "35fdc75292",
    "364aa637f9",
    "3798e940cd",
+   "37c4fa2c91",
    "38f0ebd133",
    "39257bcb87",
    "39f3f60110",
@@ -19791,6 +19828,7 @@
    "3bc14e7cb2",
    "3c4006c11b",
    "3c5b501fd5",
+   "3d33631e1e",
    "3d54080b6c",
    "3d67a1dd13",
    "3d75808032",
@@ -19821,6 +19859,7 @@
    "4e359ee310",
    "4eaf1b5d21",
    "4f076b2ec5",
+   "4f43bbddeb",
    "4fb573fac6",
    "4fb98a9304",
    "50f00bce9f",
@@ -19892,6 +19931,7 @@
    "7000044d88",
    "70157872bd",
    "703606bfc4",
+   "70dedec15f",
    "7140e3e544",
    "7178743140",
    "719965f470",
@@ -19922,6 +19962,7 @@
    "80cd5782f6",
    "810a737ae0",
    "81263e081c",
+   "818403802f",
    "81b04ec53c",
    "81b2a2b78e",
    "8218ce0a3a",
@@ -19929,6 +19970,7 @@
    "83348de260",
    "847d8172c3",
    "84a0fc91e9",
+   "84aa994830",
    "85a3508f5e",
    "85b9e3cf24",
    "85d67d04c5",
@@ -19952,6 +19994,7 @@
    "90126caefc",
    "906e1a7421",
    "914de8f6ed",
+   "92431057dd",
    "93bbb82dc0",
    "93dae6031c",
    "93f1ad3d42",
@@ -19992,6 +20035,7 @@
    "a2fe367c76",
    "a35e08d965",
    "a36ee06ea2",
+   "a3ce7bfc1e",
    "a43a68c884",
    "a51df5ebf7",
    "a643a08568",
@@ -20005,9 +20049,11 @@
    "a9460382a1",
    "a9aa31ba82",
    "aaf6e54aa3",
+   "ac5a7b2964",
    "ac98dffa06",
    "acf831ddc4",
    "ad920bf380",
+   "adaddd71aa",
    "ae0520eba3",
    "b03284c9cf",
    "b182ba8c52",
@@ -20311,7 +20357,8 @@
   "dates": [
    "Oct 05 2026",
    "Oct 08 2026",
-   "Oct 09 2026"
+   "Oct 09 2026",
+   "Oct 12 2026"
   ]
  },
  "https://www.topazlabs.com/news": {
@@ -20434,6 +20481,7 @@
    "Oct 02 2026",
    "Oct 08 2026",
    "Oct 09 2026",
+   "Oct 12 2026",
    "October 7, 2026",
    "September 11, 2026",
    "September 28, 2026"

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-10-09-1",
+    "service": "hugging-face",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "Hub에 Decision Model 태그와 필터 추가",
+    "summary": "Decision 모델에 전용 decision-model 태그와 아이콘이 생겼어요. GGUF 모델은 llama.cpp 메타데이터로 자동 태그되고, 모델 페이지에서 필터로 모아 볼 수 있어요.",
+    "url": "https://huggingface.co/changelog/decision-models-on-the-hub",
+    "source": "notice"
+  }
+]

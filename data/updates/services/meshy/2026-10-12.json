@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-10-12-1",
+    "service": "meshy",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "USDZ 파일 단위를 미터로 변경",
+    "summary": "USDZ 파일이 미터 단위로 저장돼서 AR Quick Look, Blender 같은 USD 뷰어에서 실제 크기로 열려요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  }
+]

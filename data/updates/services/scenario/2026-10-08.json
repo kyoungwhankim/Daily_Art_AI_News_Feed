@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-08-1",
+    "service": "scenario",
+    "date": "2026.10.08",
+    "kind": "모델",
+    "title": "Vidu Q4 4K 영상과 동기화된 오디오 지원",
+    "summary": "Vidu Q4로 4K 영상을 만들 수 있어요. 3~16초 길이이고 이미지 한 장이나 레퍼런스 이미지 최대 15장, 사운드 3개까지 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-d99a5b23c46d563a2c743d248ddc8e621963334a5531d35cab31d7fc1c75e023",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-10-06-1",
+    "service": "runway",
+    "date": "2026.10.06",
+    "kind": "API",
+    "title": "Runway Dev에 Nano Banana 2.1 추가",
+    "summary": "Runway Dev API에서 Nano Banana 2.1 이미지 생성을 쓸 수 있게 됐어요. 레퍼런스 이미지를 최대 14장까지 넣을 수 있어요.",
+    "details": [
+      "프롬프트 최대 5,500자",
+      "레퍼런스 이미지 최대 14장, 프롬프트에서 태그로 참조 가능",
+      "1~4장 출력"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  }
+]

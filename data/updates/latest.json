@@ -1,5 +1,142 @@
 [
   {
+    "id": "scenario-2026-10-12-5",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "MCP 서버 v0.33.0: OAuth 보안 강화",
+    "summary": "처음 보는 HTTPS OAuth 리디렉션은 사용자가 확인해야 진행돼요. v0.32.1·0.32.2에서는 병렬 작업 제한 대기와 OAuth 지원도 개선됐어요.",
+    "details": [
+      "v0.32.1: 컬렉션 일괄 업데이트와 레이트 리밋 처리 개선",
+      "v0.32.2: Cursor, Antigravity, Notion, Manus OAuth 지원 확대"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-33-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-12-4",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "Compute v1.13.0: LTX-2.5·Vidu Q4 프리뷰 추가",
+    "summary": "LTX-2.5와 Vidu Q4 프리뷰 영상 모델이 Compute에 들어왔어요. Tripo 3D 리토폴로지 도구도 함께 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-3",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "Scenario API v2.137.0: 이미지·3D 모델 확장",
+    "summary": "API에서 새 이미지·3D 모델을 쓸 수 있고, 커스텀 모델 접근 제한이 풀렸어요. 개인정보 보호 설정도 더 엄격해졌어요.",
+    "details": [
+      "3D 편집 모델 추가",
+      "커스텀 모델 무제한 접근",
+      "더 강화된 개인정보 보호 설정"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-137-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-12-2",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "앱",
+    "title": "Scenario 웹 앱 v2.28.0 업데이트",
+    "summary": "워크플로 편집이 훨씬 빨라졌고, 노드 액션과 드래그 앤 드롭으로 레퍼런스 에셋을 바로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-28-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-1",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "모델",
+    "title": "Tripo Retopology v3·Smart UV 모델 추가",
+    "summary": "Scenario에 Tripo Retopology v3와 Smart UV가 추가됐어요. 무거운 3D 메시를 쿼드 기반 저폴리로 바꾸고 텍스처를 살린 채 UV를 다시 펼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-eee4a1e5ced2d77030db5186b4bbaee130abef2ab2db3cdd5fd3f28515fa1377",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-12-1",
+    "service": "runway",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "Runway Dev에 Ideogram 4.5·4.0 추가",
+    "summary": "Runway Dev API에서 Ideogram 4.5와 4.0 이미지 모델을 쓸 수 있게 됐어요. 4.5는 긴 프롬프트와 레퍼런스 이미지 5장을 지원해요.",
+    "details": [
+      "Ideogram 4.5 (ideogram_4_5): 프롬프트 최대 10,000자, 레퍼런스 5장, 1~8장 출력",
+      "Ideogram 4.0 (ideogram_4_0): 프롬프트 최대 4,000자, 이미지 1장 리믹스, 1~4장 출력"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-10-12-1",
+    "service": "meshy",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "USDZ 파일 단위를 미터로 변경",
+    "summary": "USDZ 파일이 미터 단위로 저장돼서 AR Quick Look, Blender 같은 USD 뷰어에서 실제 크기로 열려요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-12-1",
+    "service": "hugging-face",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "액세스 토큰에 contributor 권한 추가",
+    "summary": "Fine-grained 토큰과 서비스 계정 토큰에 contributor 권한을 줄 수 있어요. 이 권한이 있으면 지정한 계정이나 조직에 저장소를 만들고 쓸 수 있어서 CI나 학습 작업에 안전해요.",
+    "url": "https://huggingface.co/changelog/contribute-permission-for-access-tokens",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-10-12-1",
+    "service": "higgsfield",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "Claude용 Katana 스킬로 영상 편집 재현",
+    "summary": "Higgsfield가 Claude에서 쓰는 Katana 스킬을 공개했어요. 레퍼런스 영상과 캐릭터·제품 사진 최대 5장으로 편집 영상을 다시 만들 수 있어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-katana",
+    "source": "notice"
+  },
+  {
+    "id": "gigapixel-2026-10-12-1",
+    "service": "gigapixel",
+    "date": "2026.10.12",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.4.0 업데이트",
+    "summary": "대용량 이미지 미리보기 속도를 높이고 일부 UX를 다듬은 v1.4.0이 나왔어요. 성능과 안정성 중심의 업데이트예요.",
+    "details": [
+      "대용량 이미지 미리보기 로딩 속도 개선",
+      "M6 호환성은 조사 중이라 문제가 생기면 지원팀에 로그를 보내 달라고 안내했어요"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-4-0/105136",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-11-1",
+    "service": "scenario",
+    "date": "2026.10.11",
+    "kind": "기능",
+    "title": "Skills v0.55.0: 리그 가능한 3D 캐릭터 지원",
+    "summary": "scenario-3d 스킬이 리그 작업용 쿼드 토폴로지 캐릭터를 만들 수 있게 됐어요. 다단계 파이프라인 검증과 배치 생성도 더 안정적이에요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-55-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-10-1",
+    "service": "scenario",
+    "date": "2026.10.10",
+    "kind": "기능",
+    "title": "Skills v0.54.0: 다중 레퍼런스 합성과 광고 파이프라인",
+    "summary": "여러 레퍼런스를 합성하는 스킬과 썸네일·광고 변형, 9:16 키네틱 영상 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-54-0",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-10-10-1",
     "service": "meshy",
     "date": "2026.10.10",
@@ -34,6 +171,21 @@
     "source": "notice"
   },
   {
+    "id": "mureka-2026-10-09-1",
+    "service": "mureka",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "Mureka 전면 개편 리믹스 기능 공개",
+    "summary": "리믹스 기능이 새로 나왔어요. 아카펠라, 어쿠스틱 데모, 반주곡을 더 자유롭게 리믹스할 수 있고 멜로디와 보컬 품질도 좋아졌어요.",
+    "details": [
+      "아카펠라·어쿠스틱 데모·인스트루멘탈 리믹스 지원",
+      "가사, 스타일, 리드 악기, 곡 구조를 더 세밀하게 조정",
+      "멜로디와 보컬, 리믹스 음질 개선"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
     "id": "ltx-studio-2026-10-09-1",
     "service": "ltx-studio",
     "date": "2026.10.09",
@@ -47,6 +199,16 @@
       "홈 화면 개편, 에셋 라이브러리, 설치 과정 간소화"
     ],
     "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-09-1",
+    "service": "hugging-face",
+    "date": "2026.10.09",
+    "kind": "기능",
+    "title": "Hub에 Decision Model 태그와 필터 추가",
+    "summary": "Decision 모델에 전용 decision-model 태그와 아이콘이 생겼어요. GGUF 모델은 llama.cpp 메타데이터로 자동 태그되고, 모델 페이지에서 필터로 모아 볼 수 있어요.",
+    "url": "https://huggingface.co/changelog/decision-models-on-the-hub",
     "source": "notice"
   },
   {
@@ -104,6 +266,16 @@
       "와이브테이블 신스, 타이핑 키보드, 플러그인 화면을 별도 창으로 띄울 수 있어요"
     ],
     "url": "https://suno.com/release-notes/studio-updates-oct26",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-08-1",
+    "service": "scenario",
+    "date": "2026.10.08",
+    "kind": "모델",
+    "title": "Vidu Q4 4K 영상과 동기화된 오디오 지원",
+    "summary": "Vidu Q4로 4K 영상을 만들 수 있어요. 3~16초 길이이고 이미지 한 장이나 레퍼런스 이미지 최대 15장, 사운드 3개까지 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-d99a5b23c46d563a2c743d248ddc8e621963334a5531d35cab31d7fc1c75e023",
     "source": "notice"
   },
   {
@@ -224,6 +396,16 @@
     "source": "notice"
   },
   {
+    "id": "scenario-2026-10-07-1",
+    "service": "scenario",
+    "date": "2026.10.07",
+    "kind": "기능",
+    "title": "Nano Banana 2.1 레퍼런스 이미지 최대 14장 지원",
+    "summary": "Nano Banana 2.1에서 레퍼런스 이미지를 최대 14장까지 넣을 수 있어요. 입력 영상도 쓸 수 있고 8:1까지 넓은 파노라마 비율을 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-0e07e74a29fa8e6fc335df3b60673ca959ee0fcc576872cb391aaa4e0348a48b",
+    "source": "notice"
+  },
+  {
     "id": "comfyui-2026-10-07-1",
     "service": "comfyui",
     "date": "2026.10.07",
@@ -274,199 +456,13 @@
     "source": "notice"
   },
   {
-    "id": "nano-banana-2026-10-06-1",
-    "service": "nano-banana",
+    "id": "scenario-2026-10-06-1",
+    "service": "scenario",
     "date": "2026.10.06",
     "kind": "모델",
-    "title": "Gemini Nano Banana 2.1 일반 공개",
-    "summary": "고속 멀티모달 이미지 생성 및 편집에 최적화된 Nano Banana 2.1이 일반 공개되었습니다. 시각 품질, 프롬프트 준수, 텍스트 렌더링이 개선되었으며 1K, 2K, 4K 해상도를 지원합니다.",
-    "details": [
-      "고속 멀티모달 이미지 생성 및 편집 최적화",
-      "시각 품질 개선",
-      "프롬프트 준수 개선",
-      "텍스트 렌더링 개선",
-      "1K, 2K, 4K 해상도 지원"
-    ],
-    "url": "https://ai.google.dev/gemini-api/docs/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-06-1",
-    "service": "meshy",
-    "date": "2026.10.06",
-    "kind": "기능",
-    "title": "Print Analyze에 얇은 벽 검사 추가",
-    "summary": "프린트 가능성 분석이 출력 크기 기준으로 벽 두께를 검사하게 됐어요. Repair 기능도 얇은 벽을 두껍게 보정할 수 있어요. 요금은 그대로예요.",
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-10-06-1",
-    "service": "hugging-face",
-    "date": "2026.10.06",
-    "kind": "모델",
-    "title": "Falcon-Emirati LLM 공개",
-    "summary": "아랍 에미리트 방언, 문화, 뉘앙스를 학습한 새로운 Falcon 언어 모델입니다.",
-    "details": [
-      "아랍 에미리트 방언 지원",
-      "문화적 맥락 이해"
-    ],
-    "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-10-06-1",
-    "service": "higgsfield",
-    "date": "2026.10.06",
-    "kind": "기능",
-    "title": "Ads Studio에 Ad Multiplier 출시",
-    "summary": "참조 광고 영상 하나로 캐릭터, 제품, 장소를 바꾼 여러 버전을 만드는 Ad Multiplier가 Ads Studio에 나왔어요. 훅, 대본, CTA도 버전마다 바꿔 비교 테스트할 수 있어요.",
-    "url": "https://higgsfield.ai/blog/ad-multiplier-ads-studio",
-    "source": "notice"
-  },
-  {
-    "id": "figma-ai-2026-10-06-1",
-    "service": "figma-ai",
-    "date": "2026.10.06",
-    "kind": "기능",
-    "title": "Figma 에이전트 일반 공개",
-    "summary": "개선된 지연 시간, 멀티플레이어 성능, Figma 컨텍스트 접근성 및 디자인 라이브러리 가이드 도구가 포함된 베타 버전이 일반 공개되었습니다.",
-    "details": [
-      "지연 시간 개선",
-      "멀티플레이어 성능 개선",
-      "Figma 컨텍스트 접근성 향상",
-      "디자인 라이브러리 가이드 도구 추가"
-    ],
-    "url": "https://www.figma.com/release-notes/?title=the-figma-agent-is-generally-available",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-06-2",
-    "service": "comfyui",
-    "date": "2026.10.06",
-    "kind": "앱",
-    "title": "ComfyUI v0.38.2 릴리스",
-    "summary": "FLUX 3 이미지 모델 및 Grok Imagine Video 1.5 Lite 지원이 추가되었습니다.",
-    "details": [
-      "FLUX 3 이미지 모델 지원 (텍스트-이미지, 편집, 바운딩 박스 제어)",
-      "Grok Imagine Video 1.5 Lite 저가 옵션 추가"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-38-2",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-06-1",
-    "service": "comfyui",
-    "date": "2026.10.06",
-    "kind": "앱",
-    "title": "ComfyUI v0.39.0 릴리스",
-    "summary": "DynamicGroup 위젯 입력, Eleven v4 및 v4 Turbo 지원, GPT Image 2 배경 제거 등이 포함됩니다.",
-    "details": [
-      "DynamicGroup 위젯 입력 추가",
-      "Eleven v4/v4 Turbo TTS 노드 추가",
-      "Luma Ray 2 노드 지원 중단 예정"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-39-0",
-    "source": "notice"
-  },
-  {
-    "id": "claude-2026-10-06-1",
-    "service": "claude",
-    "date": "2026.10.06",
-    "kind": "정책",
-    "title": "사이버 보안 검증 프로그램(Cyber Verification Program) 확대",
-    "summary": "검증된 보안 전문가에게 고급 사이버 보안 기능과 차단 분류기 완화를 제공하는 프로그램이 새롭게 확대됐어요.",
-    "url": "https://www.anthropic.com/news/cyber-verification-program",
-    "source": "notice"
-  },
-  {
-    "id": "suno-2026-10-05-1",
-    "service": "suno",
-    "date": "2026.10.05",
-    "kind": "기능",
-    "title": "Suno 앨범 발행 기능",
-    "summary": "여러 곡을 앨범으로 묶어 발행할 수 있고, 발행하면 팔로워에게 푸시 알림이 가요.",
-    "url": "https://suno.com/release-notes/albums",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-7",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "기능",
-    "title": "YVO3D 로우폴리 출력 지원",
-    "summary": "YVO3D Image to 3D가 48–50,000면 목표에 맞춘 깔끔한 로우폴리 메시를 만들어요.",
-    "url": "https://www.scenario.com/changelog/yvo3d-image-to-3d-smart-low-poly",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-6",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "기능",
-    "title": "팀 맞춤 홈·갤러리·워크플로 노드 제어",
-    "summary": "팀용 맞춤 홈 레이아웃을 만들고, 갤러리가 매끄러워졌어요. 웹훅과 워크플로 노드 정리 기능도 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/web-app-v2-27-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-5",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "모델",
-    "title": "FLUX.3 Edit Video·Kling V3/O3 Image·PixVerse V6",
-    "summary": "FLUX.3 Edit Video, Kling V3/O3 Image, PixVerse V6 Extend Video가 추가돼 4K 편집과 영상 확장이 가능해요.",
-    "url": "https://www.scenario.com/changelog/models-71ba27d0e0c10dfa857a387742b6b97ac0f13e7c9164e07a8fea9e0686dd52c6",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-4",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "모델",
-    "title": "Google Lyria 3.5: 보컬 포함 풀곡 생성",
-    "summary": "보컬이 들어간 최대 3분 길이의 곡을 만드는 Google Lyria 3.5가 추가됐어요. 길이와 구간을 프롬프트로 조절해요.",
-    "url": "https://www.scenario.com/changelog/models-04ef25ea07b84093779078d924609768eb27c519b2bd8d6d4534440e84602cd7",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-3",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "연동",
-    "title": "MCP 프로젝트 관리 도구",
-    "summary": "에이전트가 새 MCP 도구로 Scenario 프로젝트를 직접 관리할 수 있게 됐어요.",
-    "url": "https://www.scenario.com/changelog/mcp-server-v0-32-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-2",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "API",
-    "title": "ElevenLabs v4·Lyria 3.5·에이전트형 3D",
-    "summary": "ElevenLabs v4와 Google Lyria 3.5, 자율 에이전트형 3D 모델이 Compute에 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/compute-v1-12-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-05-1",
-    "service": "scenario",
-    "date": "2026.10.05",
-    "kind": "API",
-    "title": "Claude 5.5 어시스턴트·새 3D 모델·요금 로직 개선",
-    "summary": "어시스턴트가 Claude 5.5로 업그레이드되고 새 3D 모델이 추가됐어요. 요금 계산과 검증 문제도 고쳐졌어요.",
-    "url": "https://www.scenario.com/changelog/api-v2-136-0",
-    "source": "dev"
-  },
-  {
-    "id": "heygen-2026-10-05-2",
-    "service": "heygen",
-    "date": "2026.10.05",
-    "kind": "연동",
-    "title": "HeyGen Voices에 ElevenLabs v4 지원",
-    "summary": "ElevenLabs의 가장 표현력 높은 TTS 모델 v4를 HeyGen Voices에서 고를 수 있게 됐어요. 긴 스크립트에서도 톤과 속도가 일정해요.",
-    "url": "https://heygen.noticeable.news/publications/heygen-voices-now-supports-elevenlabs-v4",
+    "title": "Kandinsky 6.0 Lite·Pro 모델 추가",
+    "summary": "Kandinsky 6.0 Lite와 Pro가 추가됐어요. 5초 영상을 네이티브 오디오와 함께 만들고 업스케일할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-8f7b7da8c25b9a965a57ce99ef87bdf473e63591b0bd5a119f306bccfcfaf98c",
     "source": "notice"
   }
 ]

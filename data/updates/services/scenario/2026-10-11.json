@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-11-1",
+    "service": "scenario",
+    "date": "2026.10.11",
+    "kind": "기능",
+    "title": "Skills v0.55.0: 리그 가능한 3D 캐릭터 지원",
+    "summary": "scenario-3d 스킬이 리그 작업용 쿼드 토폴로지 캐릭터를 만들 수 있게 됐어요. 다단계 파이프라인 검증과 배치 생성도 더 안정적이에요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-55-0",
+    "source": "dev"
+  }
+]

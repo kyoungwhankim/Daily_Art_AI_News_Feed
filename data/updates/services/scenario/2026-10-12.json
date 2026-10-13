@@ -1,0 +1,61 @@
+[
+  {
+    "id": "scenario-2026-10-12-1",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "모델",
+    "title": "Tripo Retopology v3·Smart UV 모델 추가",
+    "summary": "Scenario에 Tripo Retopology v3와 Smart UV가 추가됐어요. 무거운 3D 메시를 쿼드 기반 저폴리로 바꾸고 텍스처를 살린 채 UV를 다시 펼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-eee4a1e5ced2d77030db5186b4bbaee130abef2ab2db3cdd5fd3f28515fa1377",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-2",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "앱",
+    "title": "Scenario 웹 앱 v2.28.0 업데이트",
+    "summary": "워크플로 편집이 훨씬 빨라졌고, 노드 액션과 드래그 앤 드롭으로 레퍼런스 에셋을 바로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-28-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-3",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "Scenario API v2.137.0: 이미지·3D 모델 확장",
+    "summary": "API에서 새 이미지·3D 모델을 쓸 수 있고, 커스텀 모델 접근 제한이 풀렸어요. 개인정보 보호 설정도 더 엄격해졌어요.",
+    "details": [
+      "3D 편집 모델 추가",
+      "커스텀 모델 무제한 접근",
+      "더 강화된 개인정보 보호 설정"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-137-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-12-4",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "Compute v1.13.0: LTX-2.5·Vidu Q4 프리뷰 추가",
+    "summary": "LTX-2.5와 Vidu Q4 프리뷰 영상 모델이 Compute에 들어왔어요. Tripo 3D 리토폴로지 도구도 함께 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-5",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "MCP 서버 v0.33.0: OAuth 보안 강화",
+    "summary": "처음 보는 HTTPS OAuth 리디렉션은 사용자가 확인해야 진행돼요. v0.32.1·0.32.2에서는 병렬 작업 제한 대기와 OAuth 지원도 개선됐어요.",
+    "details": [
+      "v0.32.1: 컬렉션 일괄 업데이트와 레이트 리밋 처리 개선",
+      "v0.32.2: Cursor, Antigravity, Notion, Manus OAuth 지원 확대"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-33-0",
+    "source": "dev"
+  }
+]

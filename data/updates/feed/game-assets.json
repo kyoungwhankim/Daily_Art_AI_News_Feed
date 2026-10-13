@@ -1,5 +1,114 @@
 [
   {
+    "id": "scenario-2026-10-12-5",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "MCP 서버 v0.33.0: OAuth 보안 강화",
+    "summary": "처음 보는 HTTPS OAuth 리디렉션은 사용자가 확인해야 진행돼요. v0.32.1·0.32.2에서는 병렬 작업 제한 대기와 OAuth 지원도 개선됐어요.",
+    "details": [
+      "v0.32.1: 컬렉션 일괄 업데이트와 레이트 리밋 처리 개선",
+      "v0.32.2: Cursor, Antigravity, Notion, Manus OAuth 지원 확대"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-33-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-12-4",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "연동",
+    "title": "Compute v1.13.0: LTX-2.5·Vidu Q4 프리뷰 추가",
+    "summary": "LTX-2.5와 Vidu Q4 프리뷰 영상 모델이 Compute에 들어왔어요. Tripo 3D 리토폴로지 도구도 함께 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-13-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-3",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "API",
+    "title": "Scenario API v2.137.0: 이미지·3D 모델 확장",
+    "summary": "API에서 새 이미지·3D 모델을 쓸 수 있고, 커스텀 모델 접근 제한이 풀렸어요. 개인정보 보호 설정도 더 엄격해졌어요.",
+    "details": [
+      "3D 편집 모델 추가",
+      "커스텀 모델 무제한 접근",
+      "더 강화된 개인정보 보호 설정"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-137-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-12-2",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "앱",
+    "title": "Scenario 웹 앱 v2.28.0 업데이트",
+    "summary": "워크플로 편집이 훨씬 빨라졌고, 노드 액션과 드래그 앤 드롭으로 레퍼런스 에셋을 바로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-28-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-12-1",
+    "service": "scenario",
+    "date": "2026.10.12",
+    "kind": "모델",
+    "title": "Tripo Retopology v3·Smart UV 모델 추가",
+    "summary": "Scenario에 Tripo Retopology v3와 Smart UV가 추가됐어요. 무거운 3D 메시를 쿼드 기반 저폴리로 바꾸고 텍스처를 살린 채 UV를 다시 펼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-eee4a1e5ced2d77030db5186b4bbaee130abef2ab2db3cdd5fd3f28515fa1377",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-11-1",
+    "service": "scenario",
+    "date": "2026.10.11",
+    "kind": "기능",
+    "title": "Skills v0.55.0: 리그 가능한 3D 캐릭터 지원",
+    "summary": "scenario-3d 스킬이 리그 작업용 쿼드 토폴로지 캐릭터를 만들 수 있게 됐어요. 다단계 파이프라인 검증과 배치 생성도 더 안정적이에요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-55-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-10-1",
+    "service": "scenario",
+    "date": "2026.10.10",
+    "kind": "기능",
+    "title": "Skills v0.54.0: 다중 레퍼런스 합성과 광고 파이프라인",
+    "summary": "여러 레퍼런스를 합성하는 스킬과 썸네일·광고 변형, 9:16 키네틱 영상 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-54-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-08-1",
+    "service": "scenario",
+    "date": "2026.10.08",
+    "kind": "모델",
+    "title": "Vidu Q4 4K 영상과 동기화된 오디오 지원",
+    "summary": "Vidu Q4로 4K 영상을 만들 수 있어요. 3~16초 길이이고 이미지 한 장이나 레퍼런스 이미지 최대 15장, 사운드 3개까지 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-d99a5b23c46d563a2c743d248ddc8e621963334a5531d35cab31d7fc1c75e023",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-07-1",
+    "service": "scenario",
+    "date": "2026.10.07",
+    "kind": "기능",
+    "title": "Nano Banana 2.1 레퍼런스 이미지 최대 14장 지원",
+    "summary": "Nano Banana 2.1에서 레퍼런스 이미지를 최대 14장까지 넣을 수 있어요. 입력 영상도 쓸 수 있고 8:1까지 넓은 파노라마 비율을 만들 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-0e07e74a29fa8e6fc335df3b60673ca959ee0fcc576872cb391aaa4e0348a48b",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-06-1",
+    "service": "scenario",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Kandinsky 6.0 Lite·Pro 모델 추가",
+    "summary": "Kandinsky 6.0 Lite와 Pro가 추가됐어요. 5초 영상을 네이티브 오디오와 함께 만들고 업스케일할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-8f7b7da8c25b9a965a57ce99ef87bdf473e63591b0bd5a119f306bccfcfaf98c",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-05-7",
     "service": "scenario",
     "date": "2026.10.05",

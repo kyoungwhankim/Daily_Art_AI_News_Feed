@@ -29,7 +29,8 @@
       {"label": "Meshy", "kind": "company"},
       {"label": "Photoshop", "kind": "product"},
       {"label": "Unity", "kind": "company"},
-      {"label": "Midjourney", "kind": "product"}
+      {"label": "Midjourney", "kind": "product"},
+      {"label": "Roblox", "kind": "company"}
     ],
     "industry": [
       {"label": "AI 사용 논란", "kind": "topic", "desc": "게임·트레일러·아트의 AI 사용(또는 의혹)에 대한 반발·비판·사과·해명이 기사의 주제"},
