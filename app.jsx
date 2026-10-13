@@ -1451,7 +1451,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
-  const [freeOpen, setFreeOpen] = useState(false);
+  const [freeOpen, setFreeOpen] = useState(true);
   const newsActive = section === 'news';
   const asideRef = useRef(null), backdropRef = useRef(null);
   useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
@@ -1596,10 +1596,10 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 <span>AI 무료로 써보기</span>
               </button>
               <button type="button" className="side-caret-btn" aria-label={freeOpen ? '접기' : '펼치기'} aria-expanded={freeOpen} onClick={() => setFreeOpen(o => !o)}>
-                <svg className={`side-caret ${freeOpen || section === 'free' ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+                <svg className={`side-caret ${freeOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
               </button>
             </div>
-            {(freeOpen || section === 'free') && (
+            {freeOpen && (
               <ul className="side-list">
                 {FREE_CATS.map(c => (
                   <li key={c.slug}>
