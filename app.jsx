@@ -1882,7 +1882,7 @@ function FreeCard({ t, d }) {
         <span className="free-cat">{t.category}</span>
         {has && d.type && <span className="free-type">{FREE_TYPE_LABEL[d.type]}</span>}
       </div>
-      <div className="free-offer">{has ? d.offer : '조사 중이에요'}</div>
+      <div className={`free-offer ${has ? '' : 'pending'}`}>{has ? d.offer : unverified ? '공식 페이지에서 무료 혜택을 확인해 주세요' : '조사 중이에요'}</div>
       {has && d.limits && <div className="free-limits">{d.limits}</div>}
       {has && (
         <div className="free-flags">
@@ -1916,7 +1916,9 @@ function FreeView({ cat, onCat }) {
   const active = FREE_FILTERS.filter(f => filters.has(f.id));
   const pass = t => { const d = data.tools[t.slug] || {}; return active.every(f => f.test(t, d)); };
   const gone = t => { const d = data.tools[t.slug]; return d && (d.status === 'ended' || d.status === 'paid' || d.type === 'none'); };
-  const trials = inCat.filter(t => t.kind === 'trial' && !gone(t) && pass(t));
+  // 확인된 서비스를 먼저, 확인하지 못한 서비스는 뒤로
+  const known = t => (data.tools[t.slug] && data.tools[t.slug].offer ? 0 : 1);
+  const trials = inCat.filter(t => t.kind === 'trial' && !gone(t) && pass(t)).sort((a, b) => known(a) - known(b));
   const frees = inCat.filter(t => t.kind === 'free' && !gone(t) && pass(t));
   const ended = inCat.filter(gone);
   const changes = (data.changes || []).filter(c => inCat.some(t => t.slug === c.slug)).slice(0, 8);
