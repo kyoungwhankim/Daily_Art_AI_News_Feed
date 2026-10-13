@@ -864,6 +864,7 @@ function ArticleModal({ article, onClose, onOpen, allArticles, onSelectKeyword, 
               ))}
             </div>
           )}
+          <FreeMentions article={article} />
           <div className="modal-article">
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--ink)' }}>{article.summary}</p>
             <div dangerouslySetInnerHTML={{ __html: article.body || '' }} />
@@ -1300,6 +1301,8 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
         ))}
       </section>
 
+      <HomeFree />
+
       {updates.length > 0 && (
         <section className="hm-updates" aria-label="AI 서비스 업데이트">
           <div className="hm-col-head hm-sec">
@@ -1663,11 +1666,14 @@ function sampleUpdatesFor(c) {
 let updatesPromise = null;
 function loadServiceUpdates() {
   if (!updatesPromise) {
-    updatesPromise = fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
-      .then(index => Promise.all(Object.values(index.categories || {})
-        .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
-      .then(feeds => feeds.flat())
-      .catch(() => []);   // 아직 데이터가 없으면 예시만
+    updatesPromise = Promise.all([
+      fetchJson(`${DATA_BASE}updates/index.json`, { cache: 'no-cache' })
+        .then(index => Promise.all(Object.values(index.categories || {})
+          .map(c => fetchJson(`${DATA_BASE}${c.file}?v=${c.rev}`))))
+        .then(feeds => feeds.flat())
+        .catch(() => []),   // 아직 데이터가 없으면 예시만
+      loadFreeData().then(freeChangeUpdates).catch(() => []),   // 무료로 써보기의 '무료 혜택' 변경 소식도 함께
+    ]).then(([a, b]) => [...a, ...b]);
   }
   return updatesPromise;
 }
@@ -1744,9 +1750,13 @@ function UpdateRow({ u, showCompany, onCompany }) {
         {u.details && u.details.length > 0 && (
           <ul className="update-details">{u.details.map((d, i) => <li key={i}>{d}</li>)}</ul>
         )}
-        <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
-          {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
-        </a>
+        {u.source === 'free' ? (
+          <FreeLink cat={FREE_BY_SLUG[u.service].catSlug} className="update-link">무료로 써보기에서 보기 →</FreeLink>
+        ) : (
+          <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
+            {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
+          </a>
+        )}
       </div>
     </li>
   );
@@ -1797,6 +1807,7 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
         )}
       </div>
       <main className="feed">
+        {comp && <FreeHint slug={comp.slug} />}
         {hasSample && (
           <div className="updates-notice">일부 분야는 준비 중이에요 — <b>예시</b> 표시가 붙은 항목은 화면 구성을 보기 위한 예시예요.</div>
         )}
@@ -1844,18 +1855,125 @@ const FREE_TYPE_LABEL = { plan: '무료 플랜', trial: '기간제 체험', cred
 const CHANGE_LABEL = { new: '새 혜택', up: '늘어남', down: '줄어듦', changed: '바뀜', ended: '종료', paid: '유료 전환' };
 
 let freeDataPromise = null;
+function loadFreeData() {
+  if (!freeDataPromise) {
+    freeDataPromise = fetchJson(`${DATA_BASE}free/tools.json`, { cache: 'no-cache' })
+      .catch(() => ({ updated: null, tools: {}, changes: [] }));
+  }
+  return freeDataPromise;
+}
 function useFreeData() {
   const [state, setState] = useState({ ready: false, data: { updated: null, tools: {}, changes: [] } });
   useEffect(() => {
     let alive = true;
-    if (!freeDataPromise) {
-      freeDataPromise = fetchJson(`${DATA_BASE}free/tools.json`, { cache: 'no-cache' })
-        .catch(() => ({ updated: null, tools: {}, changes: [] }));
-    }
-    freeDataPromise.then(data => { if (alive) setState({ ready: true, data }); });
+    loadFreeData().then(data => { if (alive) setState({ ready: true, data }); });
     return () => { alive = false; };
   }, []);
   return state;
+}
+// 무료로 써 볼 수 있는(확인된) 서비스의 조사 결과 — 없으면 null
+const freeOffer = (data, slug) => {
+  const d = data.tools[slug];
+  return d && d.offer && !['ended', 'paid', 'unverified'].includes(d.status) && d.type !== 'none' ? d : null;
+};
+const FREE_BY_SLUG = Object.fromEntries(FREE_TOOLS.map(t => [t.slug, t]));
+let freeNameTerms = null;   // 처음 쓸 때 만든다 (compileTerms가 아래쪽에 있어서)
+const getFreeNameTerms = () => freeNameTerms || (freeNameTerms = FREE_TOOLS.map(t => [t, compileTerms([t.name])]));
+// 업데이트 흐름에 넣을 '무료 혜택' 소식 (최근 바뀐 혜택 중 업데이트 서비스 목록에 있는 것)
+function freeChangeUpdates(data) {
+  return (data.changes || []).filter(c => FREE_BY_SLUG[c.slug]).map(c => ({
+    id: `free-${c.date}-${c.slug}`, service: c.slug, date: c.date, kind: '무료 혜택', source: 'free',
+    title: `${FREE_BY_SLUG[c.slug].name} 무료 혜택 ${CHANGE_LABEL[c.kind] || '바뀜'}`, summary: c.text,
+    url: freePath(FREE_BY_SLUG[c.slug].catSlug),
+  }));
+}
+
+// 메인 화면 '무료로 써보기' 칸: 최근 2주 안에 바뀐 무료 혜택 + 오늘의 무료 쿠폰 6개 (날마다 돌아가며)
+function HomeFree() {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const changes = (data.changes || []).filter(c => FREE_BY_SLUG[c.slug] && daysAgo(c.date) <= 13).slice(0, 4);
+  const score = t => { const d = data.tools[t.slug]; return (d.card === false ? 0 : 2) + (d.type === 'plan' || d.type === 'free' ? 0 : 1); };
+  const pool = FREE_TOOLS.filter(t => freeOffer(data, t.slug)).sort((a, b) => score(a) - score(b));
+  if (!pool.length) return null;
+  const start = Math.floor(TODAY.getTime() / 86400000) % pool.length;
+  const picks = [...pool.slice(start), ...pool.slice(0, start)].slice(0, 6);
+  return (
+    <section className="hm-free" aria-label="무료로 써보기">
+      <div className="hm-col-head hm-sec">
+        <h2 className="hm-head">무료로 써보기</h2>
+        <FreeLink className="hm-more">전체 보기 →</FreeLink>
+      </div>
+      {changes.length > 0 && (
+        <ul className="hm-free-changes">
+          {changes.map((c, i) => (
+            <li key={c.slug + c.date + i}>
+              <span className={`free-change-kind k-${c.kind}`}>{CHANGE_LABEL[c.kind] || '바뀜'}</span>
+              <b>{FREE_BY_SLUG[c.slug].name}</b> {c.text}
+            </li>
+          ))}
+        </ul>
+      )}
+      <ul className="hm-free-grid">
+        {picks.map(t => (
+          <li key={t.slug}>
+            <FreeLink cat={t.catSlug} className="hm-free-coupon" style={toneVars(t.catSlug)}>
+              <span className="hm-free-cat">{t.category}</span>
+              <span className="hm-free-name">{t.name}</span>
+              <span className="hm-free-offer">{data.tools[t.slug].offer}</span>
+            </FreeLink>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+// 무료로 써보기 페이지로 이동 (앱 안에서) — App이 넣어 준다
+const FreeNavContext = React.createContext(null);
+function FreeLink({ cat, className, style, children }) {
+  const go = React.useContext(FreeNavContext);
+  return (
+    <a className={className} style={style} href={freePath(cat)}
+      onClick={e => { if (go && !e.metaKey && !e.ctrlKey) { e.preventDefault(); go(cat); } }}>{children}</a>
+  );
+}
+
+// 업데이트 서비스 페이지 위쪽: 이 서비스를 무료로 써 볼 수 있으면 한 줄 안내
+function FreeHint({ slug }) {
+  const { data } = useFreeData();
+  const t = FREE_BY_SLUG[slug], d = t && freeOffer(data, slug);
+  if (!d) return null;
+  return (
+    <div className="free-hint" style={toneVars(t.catSlug)}>
+      <span className="free-hint-label">{t.kind === 'free' ? '무료 서비스' : '무료로 써보기'}</span>
+      <span className="free-hint-offer">{d.offer}</span>
+      <a className="free-hint-try" href={d.try_url || t.url} target="_blank" rel="noopener noreferrer">{t.kind === 'free' ? '바로 쓰기' : '무료로 써보기'} ↗</a>
+      <FreeLink cat={t.catSlug} className="free-hint-more">다른 무료 {t.category} 서비스 →</FreeLink>
+    </div>
+  );
+}
+
+// 기사 창: 기사 제목·요약에 나온 서비스 중 무료로 써 볼 수 있는 것
+function FreeMentions({ article }) {
+  const { data } = useFreeData();
+  const text = `${article.headline} ${article.summary}`;
+  const hits = getFreeNameTerms().filter(([t, ct]) => freeOffer(data, t.slug) && termHits(ct, text).length).slice(0, 3);
+  if (!hits.length) return null;
+  return (
+    <div className="free-mentions">
+      <span className="free-mentions-label">무료로 써볼 수 있어요</span>
+      {hits.map(([t]) => {
+        const d = freeOffer(data, t.slug);
+        return (
+          <a key={t.slug} className="free-mention" style={toneVars(t.catSlug)} href={d.try_url || t.url}
+            target="_blank" rel="noopener noreferrer" title={d.limits || ''}>
+            <b>{t.name}</b><span>{d.offer}</span>
+          </a>
+        );
+      })}
+    </div>
+  );
 }
 const shortDate = d => (d ? d.slice(5) : '');
 
@@ -2789,6 +2907,7 @@ function App() {
   return (
     <BriefingContext.Provider value={briefing}>
     <MemberContext.Provider value={member}>
+    <FreeNavContext.Provider value={goFree}>
     <div className="page">
       <Header
         auth={auth}
@@ -2956,6 +3075,7 @@ function App() {
         />
       )}
     </div>
+    </FreeNavContext.Provider>
     </MemberContext.Provider>
     </BriefingContext.Provider>
   );
