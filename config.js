@@ -374,7 +374,7 @@ window.AIAD = {
     { category: '애니메이션·모션', name: 'Plask', kind: 'trial', url: 'https://plask.ai/' },
     { category: '애니메이션·모션', name: 'Move.ai', kind: 'trial', url: 'https://www.move.ai/' },
     { category: '애니메이션·모션', name: 'Krikey', kind: 'trial', url: 'https://www.krikey.ai/' },
-    { category: '음악·음성', name: 'ElevenLabs', kind: 'trial', url: 'https://elevenlabs.io/', aff: 'https://try.elevenlabs.io/8n1ui31stzyp' },
+    { category: '음악·음성', name: 'ElevenLabs', kind: 'trial', url: 'https://elevenlabs.io/', aff: 'https://try.elevenlabs.io/aiartdaily' },
     { category: '음악·음성', name: 'Suno', kind: 'trial', url: 'https://suno.com/' },
     { category: '음악·음성', name: 'Mureka', kind: 'trial', url: 'https://www.mureka.ai/' },
     { category: '음악·음성', name: 'Stable Audio', kind: 'trial', url: 'https://stableaudio.com/' },
