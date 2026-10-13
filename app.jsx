@@ -1841,13 +1841,6 @@ const FREE_CATS = [...new Set(FREE_TOOLS.map(t => t.category))]
   .map(label => ({ label, slug: FREE_CAT_SLUG[label] || kwSlug(label) }));
 function freePath(cat) { return cat ? `/free/${cat}/` : '/free/'; }
 const FREE_TYPE_LABEL = { plan: '무료 플랜', trial: '기간제 체험', credits: '가입 크레딧', free: '무료 서비스', none: '무료 혜택 없음' };
-const FREE_FILTERS = [
-  { id: 'nocard', label: '카드 등록 없이', test: (t, d) => d.card === false },
-  { id: 'plan', label: '계속 무료(충전형)', test: (t, d) => d.type === 'plan' || d.type === 'free' },
-  { id: 'trial', label: '기간제 체험', test: (t, d) => d.type === 'trial' },
-  { id: 'nowm', label: '워터마크 없음', test: (t, d) => d.watermark === false },
-  { id: 'commercial', label: '상업적 이용 가능', test: (t, d) => d.commercial === true },
-];
 const CHANGE_LABEL = { new: '새 혜택', up: '늘어남', down: '줄어듦', changed: '바뀜', ended: '종료', paid: '유료 전환' };
 
 let freeDataPromise = null;
@@ -1925,20 +1918,18 @@ function FreeCard({ t, d }) {
 
 function FreeView({ cat, onCat }) {
   const { ready, data } = useFreeData();
-  const [filters, setFilters] = useState(() => new Set());
-  const toggle = id => setFilters(f => { const n = new Set(f); n.has(id) ? n.delete(id) : n.add(id); return n; });
   const catLabel = cat && (FREE_CATS.find(c => c.slug === cat) || {}).label;
   const inCat = FREE_TOOLS.filter(t => !cat || t.catSlug === cat);
-  const active = FREE_FILTERS.filter(f => filters.has(f.id));
-  const pass = t => { const d = data.tools[t.slug] || {}; return active.every(f => f.test(t, d)); };
   const gone = t => { const d = data.tools[t.slug]; return d && (d.status === 'ended' || d.status === 'paid' || d.type === 'none'); };
-  // 확인된 서비스를 먼저, 확인하지 못한 서비스는 뒤로
-  const known = t => (data.tools[t.slug] && data.tools[t.slug].offer ? 0 : 1);
-  const trials = inCat.filter(t => t.kind === 'trial' && !gone(t) && pass(t)).sort((a, b) => known(a) - known(b));
-  const frees = inCat.filter(t => t.kind === 'free' && !gone(t) && pass(t));
+  // 분야마다: 무료 체험·플랜(확인된 것 먼저) → 무료 서비스(오픈소스 등) → 확인하지 못한 것
+  const rank = t => (t.kind === 'free' ? 1 : 0) + (data.tools[t.slug] && data.tools[t.slug].offer ? 0 : 2);
+  const groups = FREE_CATS.filter(c => !cat || c.slug === cat).map(c => ({
+    ...c, tools: inCat.filter(t => t.catSlug === c.slug && !gone(t)).sort((x, y) => rank(x) - rank(y)),
+  })).filter(g => g.tools.length);
   const ended = inCat.filter(gone);
   const changes = (data.changes || []).filter(c => inCat.some(t => t.slug === c.slug)).slice(0, 8);
   const nameOf = slug => (FREE_TOOLS.find(t => t.slug === slug) || {}).name || slug;
+
   return (<>
     <nav className="tabs-wrap">
       <div className="tabs-inner">
@@ -1965,13 +1956,6 @@ function FreeView({ cat, onCat }) {
       </div>
     </div>
     <main className="feed free">
-      {ready && (
-        <div className="free-stats">
-          <div><b>{inCat.filter(t => !gone(t)).length}</b><span>무료로 써 볼 수 있는 서비스</span></div>
-          <div><b>{inCat.filter(t => (data.tools[t.slug] || {}).card === false).length}</b><span>카드 등록 없이 바로</span></div>
-          <div><b>{inCat.filter(t => { const d = data.tools[t.slug] || {}; return d.type === 'plan' || d.type === 'free'; }).length}</b><span>계속 무료로 쓸 수 있는 곳</span></div>
-        </div>
-      )}
       {changes.length > 0 && (
         <section className="free-changes" aria-label="최근 바뀐 무료 혜택">
           <h2 className="free-h">최근 바뀐 무료 혜택</h2>
@@ -1986,28 +1970,22 @@ function FreeView({ cat, onCat }) {
           </ul>
         </section>
       )}
-      <div className="free-filters" role="group" aria-label="조건으로 거르기">
-        {FREE_FILTERS.map(f => (
-          <button key={f.id} type="button" className={`chip ${filters.has(f.id) ? 'active' : ''}`} aria-pressed={filters.has(f.id)}
-            onClick={() => toggle(f.id)}>{f.label}</button>
-        ))}
-      </div>
       {!ready ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div> : (<>
-        <h2 className="free-h">무료 체험 · 무료 플랜 <span>{trials.length}</span></h2>
-        {trials.length === 0 ? <p className="feed-desc">조건에 맞는 서비스가 없어요.</p> : (
-          <ul className="free-grid">{trials.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
-        )}
-        {(frees.length > 0 || !cat) && (<>
-          <h2 className="free-h">무료 서비스 <span>{frees.length}</span><small>오픈소스·무료 소프트웨어 — 유료로 바뀌지 않았는지 매주 확인해요</small></h2>
-          {frees.length === 0 ? <p className="feed-desc">조건에 맞는 서비스가 없어요.</p> : (
-            <ul className="free-grid">{frees.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
-          )}
-        </>)}
+        {groups.map(g => (
+          <section key={g.slug} className="free-group" style={toneVars(g.slug)} aria-label={g.label}>
+            <h2 className="free-h free-cat-h">
+              {cat ? g.label : <button type="button" className="free-cat-link" onClick={() => onCat(g.slug)}>{g.label}</button>}
+              <span>{g.tools.length}</span>
+            </h2>
+            <ul className="free-grid">{g.tools.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+          </section>
+        ))}
         {ended.length > 0 && (
           <p className="free-ended">지금은 무료로 쓸 방법이 없어요: {ended.map(t => t.name).join(', ')}</p>
         )}
         <p className="free-disclaimer">
-          무료 혜택은 서비스 사정에 따라 예고 없이 바뀔 수 있어요. 가입 전에 공식 페이지(카드의 '근거')를 확인해 주세요.
+          'FREE' 도장이 찍힌 카드는 원래 무료인 서비스(오픈소스 등)예요 — 유료로 바뀌지 않았는지 매주 확인해요.
+          무료 혜택은 서비스 사정에 따라 예고 없이 바뀔 수 있으니, 가입 전에 공식 페이지(카드의 '근거')를 확인해 주세요.
           '제휴' 표시가 있는 링크로 가입하면 사이트가 소개 수수료를 받을 수 있지만, 이용자의 비용은 같아요.
         </p>
       </>)}
