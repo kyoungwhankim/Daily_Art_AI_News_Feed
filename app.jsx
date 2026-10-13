@@ -1593,7 +1593,7 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="8" width="18" height="4" rx="1" /><path d="M12 8v13M19 12v9H5v-9" /><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5" />
                 </svg>
-                <span>무료로 써보기</span>
+                <span>AI 무료로 써보기</span>
               </button>
               <button type="button" className="side-caret-btn" aria-label={freeOpen ? '접기' : '펼치기'} aria-expanded={freeOpen} onClick={() => setFreeOpen(o => !o)}>
                 <svg className={`side-caret ${freeOpen || section === 'free' ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
