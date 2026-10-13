@@ -1885,8 +1885,8 @@ function FreeCard({ t, d }) {
           <span className="free-type">{has && d.type ? FREE_TYPE_LABEL[d.type] : isFree ? '무료 서비스' : '확인 중'}</span>
           <span className="free-cat">{t.category}</span>
         </div>
-        <div className="free-offer">{has ? d.offer : unverified ? '공식 페이지에서 확인해 주세요' : '조사 중이에요'}</div>
         <div className="free-name">{t.name}</div>
+        <div className="free-offer">{has ? d.offer : unverified ? '공식 페이지에서 확인해 주세요' : '조사 중이에요'}</div>
         {isFree && <span className="free-stamp" aria-hidden="true">FREE</span>}
       </div>
       <div className="free-body">
