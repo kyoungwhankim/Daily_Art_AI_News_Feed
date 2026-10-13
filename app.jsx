@@ -1751,7 +1751,7 @@ function UpdateRow({ u, showCompany, onCompany }) {
           <ul className="update-details">{u.details.map((d, i) => <li key={i}>{d}</li>)}</ul>
         )}
         {u.source === 'free' ? (
-          <FreeLink cat={FREE_BY_SLUG[u.service].catSlug} className="update-link">무료로 써보기에서 보기 →</FreeLink>
+          <FreeLink cat={FREE_BY_SLUG[u.service].catSlug} className="update-link">AI 무료로 써보기에서 보기 →</FreeLink>
         ) : (
           <a className="update-link" href={u.url} target="_blank" rel="noopener noreferrer">
             {u.source === 'dev' ? '개발자 변경 기록 보기 ↗' : '공식 공지 보기 ↗'}
@@ -1906,9 +1906,9 @@ function HomeFree() {
   if (!pool.length) return null;
   const picks = shuffledByVisit(pool).slice(0, 6);
   return (
-    <section className="hm-free" aria-label="무료로 써보기">
+    <section className="hm-free" aria-label="AI 무료로 써보기">
       <div className="hm-col-head hm-sec">
-        <h2 className="hm-head">무료로 써보기</h2>
+        <h2 className="hm-head">AI 무료로 써보기</h2>
         <FreeLink className="hm-more">전체 보기 →</FreeLink>
       </div>
       {changes.length > 0 && (
@@ -1953,9 +1953,9 @@ function FreeHint({ slug }) {
   if (!d) return null;
   return (
     <div className="free-hint" style={toneVars(t.catSlug)}>
-      <span className="free-hint-label">{t.kind === 'free' ? '무료 서비스' : '무료로 써보기'}</span>
+      <span className="free-hint-label">{t.kind === 'free' ? '무료 서비스' : 'AI 무료로 써보기'}</span>
       <span className="free-hint-offer">{d.offer}</span>
-      <a className="free-hint-try" href={d.try_url || t.url} target="_blank" rel="noopener noreferrer">{t.kind === 'free' ? '바로 쓰기' : '무료로 써보기'} ↗</a>
+      <a className="free-hint-try" href={d.try_url || t.url} target="_blank" rel="noopener noreferrer">{t.kind === 'free' ? '바로 쓰기' : 'AI 무료로 써보기'} ↗</a>
       <FreeLink cat={t.catSlug} className="free-hint-more">다른 무료 {t.category} 서비스 →</FreeLink>
     </div>
   );
@@ -2026,7 +2026,7 @@ function FreeCard({ t, d }) {
         {has && d.note && <p className="free-note">{d.note}</p>}
         <div className="free-foot">
           <a className="free-try" href={tryUrl} target="_blank" rel="noopener noreferrer">
-            {!has ? '가격 확인하기' : isFree ? '바로 쓰기' : '무료로 써보기'}
+            {!has ? '가격 확인하기' : isFree ? '바로 쓰기' : 'AI 무료로 써보기'}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
           <span className="free-meta">
@@ -2058,7 +2058,7 @@ function FreeView({ cat, onCat }) {
   return (<>
     <nav className="tabs-wrap">
       <div className="tabs-inner">
-        <div className="tabs-meta">무료로 써보기 · {FREE_CATS.length}개 분야 · {FREE_TOOLS.length}개 서비스</div>
+        <div className="tabs-meta">AI 무료로 써보기 · {FREE_CATS.length}개 분야 · {FREE_TOOLS.length}개 서비스</div>
         <div className="tabs">
           <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
             전체 <span className="count">{FREE_TOOLS.length}</span>
@@ -2073,7 +2073,7 @@ function FreeView({ cat, onCat }) {
     </nav>
     <div className="feed-meta feed-meta-band">
       <div>
-        <SectionBand bandKey={cat ? `updates:${cat}` : 'updates'} eyebrow="FREE TO TRY" title={catLabel ? `${catLabel} 무료로 써보기` : '무료로 써보기'} />
+        <SectionBand bandKey={cat ? `updates:${cat}` : 'updates'} eyebrow="FREE TO TRY" title={catLabel ? `${catLabel} AI 무료로 써보기` : 'AI 무료로 써보기'} />
         <p className="feed-desc">
           아트 AI 서비스를 돈 내기 전에 무료로 써 볼 수 있는 방법을 모았어요. 매주 공식 가격 페이지를 확인해 갱신해요
           {data.updated ? ` (최근 확인 ${data.updated})` : ''}.
