@@ -2129,3 +2129,10 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .free-mention b { font-weight: 800; }
 .free-mention span { font-weight: 600; opacity: .92; }
 .free-mention:hover { filter: brightness(1.06); }
+.free-row { margin: 0 0 26px; padding-bottom: 22px; border-bottom: 1.5px dashed var(--hairline); }
+.free-row-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; }
+.free-row-head h2 { margin: 0; font-size: 17px; font-weight: 900; color: var(--ink); }
+.free-row-head > span { font-size: 12.5px; color: var(--muted); }
+.free-row-more { margin-left: auto; font-size: 12.5px; font-weight: 700; color: var(--accent-strong); text-decoration: none; }
+.free-row-more:hover { text-decoration: underline; }
+.free-row .hm-free-grid { margin-top: 12px; }

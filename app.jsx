@@ -1936,6 +1936,60 @@ function HomeFree() {
   );
 }
 
+// 작은 무료 쿠폰 묶음 (메인·아티스트 브리핑·나만의 피드에서 같이 쓴다)
+function FreeCouponRow({ title, sub, tools, data, moreCat }) {
+  if (!tools.length) return null;
+  return (
+    <section className="free-row" aria-label={title}>
+      <div className="free-row-head">
+        <h2>{title}</h2>
+        {sub && <span>{sub}</span>}
+        <FreeLink cat={moreCat} className="free-row-more">AI 무료로 써보기 전체 →</FreeLink>
+      </div>
+      <ul className="hm-free-grid">
+        {tools.map(t => (
+          <li key={t.slug}>
+            <FreeLink cat={t.catSlug} className="hm-free-coupon" style={toneVars(t.catSlug)}>
+              <span className="hm-free-cat">{t.category}</span>
+              <span className="hm-free-name">{t.name}</span>
+              <span className="hm-free-offer">{data.tools[t.slug].offer}</span>
+            </FreeLink>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+// 카드 등록 없이 계속 무료인 것부터
+const freeScore = (data, t) => { const d = data.tools[t.slug]; return (d.card === false ? 0 : 2) + (d.type === 'plan' || d.type === 'free' ? 0 : 1); };
+
+// 아티스트 브리핑: 직군이 쓰는 서비스(config.js roles.services) 중 무료로 써볼 수 있는 것 + 직군과 가까운 분야의 무료 툴로 채운다
+const ROLE_FREE_CATS = {
+  '3d': ['3d'], '2d': ['image', 'tools'], animator: ['motion'], rigger: ['motion', '3d'], vfx: ['video'],
+  ta: ['tools', '3d'], env: ['3d', 'game-assets'], sound: ['audio'], ui: ['tools', 'image'],
+};
+function RoleFreeTools({ role }) {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const ok = t => !!freeOffer(data, t.slug);
+  const own = FREE_TOOLS.filter(t => (role.services || []).includes(t.slug) && ok(t));
+  const cats = ROLE_FREE_CATS[role.id] || [];
+  const near = FREE_TOOLS.filter(t => cats.includes(t.catSlug) && ok(t) && !own.includes(t))
+    .sort((a, b) => freeScore(data, a) - freeScore(data, b));
+  const tools = [...own.sort((a, b) => freeScore(data, a) - freeScore(data, b)), ...near].slice(0, 6);
+  return <FreeCouponRow title={`${role.label}가 무료로 써볼 만한 AI`} sub="돈 내기 전에 먼저 시험해 보세요"
+    tools={tools} data={data} moreCat={cats[0] || null} />;
+}
+
+// 나만의 피드: 관심 서비스로 고른 것 중 무료로 써볼 수 있는 것
+function MyFreeTools({ services }) {
+  const { ready, data } = useFreeData();
+  if (!ready) return null;
+  const tools = FREE_TOOLS.filter(t => (services || []).includes(t.slug) && freeOffer(data, t.slug))
+    .sort((a, b) => freeScore(data, a) - freeScore(data, b)).slice(0, 6);
+  return <FreeCouponRow title="관심 서비스, 무료로 먼저 써보기" sub="관심 서비스로 고른 것 중 무료 혜택이 있는 곳" tools={tools} data={data} moreCat={null} />;
+}
+
 // 무료로 써보기 페이지로 이동 (앱 안에서) — App이 넣어 준다
 const FreeNavContext = React.createContext(null);
 function FreeLink({ cat, className, style, children }) {
@@ -2331,6 +2385,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
         </div>
       </div>
       <main className="feed">
+        <RoleFreeTools role={r} />
         {kind === 'news' ? (
           !articlesReady ? (
             <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2647,6 +2702,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
     </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
     {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
+      {kind !== 'saved' && <MyFreeTools services={profile.services} />}
       {kind === 'saved' ? (
         savedIds.length === 0 ? <EmptyState message="저장한 글이 없어요" sub="기사 카드나 업데이트의 책갈피 버튼을 누르면 여기에 모여요." />
         : !articlesReady || !updReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
