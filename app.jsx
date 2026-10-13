@@ -1888,16 +1888,23 @@ function freeChangeUpdates(data) {
   }));
 }
 
-// 메인 화면 '무료로 써보기' 칸: 최근 2주 안에 바뀐 무료 혜택 + 오늘의 무료 쿠폰 6개 (날마다 돌아가며)
+// 방문(페이지를 열 때)마다 한 번 정한 무작위 순서 — 같은 방문 안에서 메인으로 돌아와도 바뀌지 않는다
+const VISIT_SEED = Math.random();
+function shuffledByVisit(list) {
+  let x = Math.floor(VISIT_SEED * 2147483647) || 1;
+  const rnd = () => (x = (x * 48271) % 2147483647) / 2147483647;
+  const out = [...list];
+  for (let i = out.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [out[i], out[j]] = [out[j], out[i]]; }
+  return out;
+}
+// 메인 화면 '무료로 써보기' 칸: 최근 2주 안에 바뀐 무료 혜택 + 무료 쿠폰 6개 (방문할 때마다 다른 서비스)
 function HomeFree() {
   const { ready, data } = useFreeData();
   if (!ready) return null;
   const changes = (data.changes || []).filter(c => FREE_BY_SLUG[c.slug] && daysAgo(c.date) <= 13).slice(0, 4);
-  const score = t => { const d = data.tools[t.slug]; return (d.card === false ? 0 : 2) + (d.type === 'plan' || d.type === 'free' ? 0 : 1); };
-  const pool = FREE_TOOLS.filter(t => freeOffer(data, t.slug)).sort((a, b) => score(a) - score(b));
+  const pool = FREE_TOOLS.filter(t => freeOffer(data, t.slug));
   if (!pool.length) return null;
-  const start = Math.floor(TODAY.getTime() / 86400000) % pool.length;
-  const picks = [...pool.slice(start), ...pool.slice(0, start)].slice(0, 6);
+  const picks = shuffledByVisit(pool).slice(0, 6);
   return (
     <section className="hm-free" aria-label="무료로 써보기">
       <div className="hm-col-head hm-sec">
