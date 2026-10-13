@@ -49,6 +49,9 @@ function parseRoute(pathname) {
     return { home: false, tab: null, kwSlug: null, articleId: null, roles: true,
              role: ROLES.some(r => r.id === parts[1]) ? parts[1] : null };
   }
+  if (parts[0] === 'free') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, free: true, freeCat: parts[1] || null };
+  }
   if (parts[0] === 'updates') {
     return { home: false, tab: null, kwSlug: null, articleId: null, updates: true,
              updCat: parts[1] || null, updCompany: parts[2] || null };
@@ -1440,10 +1443,12 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
 // 펼쳐지는 건 지금 선택된 서브 섹션 하나뿐이라, 다른 서브 섹션을 고르면 이전 것은 접힌다.
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
-                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole, onMe, loggedIn }) {
+                   subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole, onMe, loggedIn,
+                   freeCat, onFree }) {
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
+  const [freeOpen, setFreeOpen] = useState(false);
   const newsActive = section === 'news';
   const asideRef = useRef(null), backdropRef = useRef(null);
   useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
@@ -1573,6 +1578,34 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                     </li>
                   );
                 })}
+              </ul>
+            )}
+          </div>
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'free' && !freeCat ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (section === 'free' && !freeCat && freeOpen) setFreeOpen(false);
+                else { setFreeOpen(true); onFree(null); }
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="8" width="18" height="4" rx="1" /><path d="M12 8v13M19 12v9H5v-9" /><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5" />
+                </svg>
+                <span>무료로 써보기</span>
+              </button>
+              <button type="button" className="side-caret-btn" aria-label={freeOpen ? '접기' : '펼치기'} aria-expanded={freeOpen} onClick={() => setFreeOpen(o => !o)}>
+                <svg className={`side-caret ${freeOpen || section === 'free' ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+            </div>
+            {(freeOpen || section === 'free') && (
+              <ul className="side-list">
+                {FREE_CATS.map(c => (
+                  <li key={c.slug}>
+                    <button type="button" className={`side-item ${section === 'free' && freeCat === c.slug ? 'active' : ''}`} onClick={() => onFree(c.slug)}>
+                      <span>{c.label}</span>
+                      <span className="side-count">{FREE_TOOLS.filter(t => t.catSlug === c.slug).length}</span>
+                    </button>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
@@ -1794,6 +1827,169 @@ function UpdatesView({ cat, company, onCat, onCompany }) {
 //   업데이트 — 직군의 서비스, 또는 제목에 단어가 있거나 요약·세부 내용에 서로 다른 단어가 2개 이상
 // 영문 단어는 단어 단위(앞뒤가 영문·숫자가 아님)로, 한글이 섞인 단어는 띄어쓰기를 무시하고 찾는다.
 // '내 직군'은 이 브라우저에 저장한다 (로그인 없이). 로그인 후 '나만의 피드'의 기본값으로 이어 쓴다.
+/* ---------- 무료로 써보기 (아트 AI 서비스의 무료 체험·무료 플랜 + 원래 무료인 서비스) ---------- */
+// 서비스 목록: config.js freeTools / 조사 결과: data/free/tools.json (매주 루틴이 scripts/free_tools.py로 갱신)
+// 주소: /free/  /free/<분야>/
+const FREE_CAT_SLUG = {
+  '이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+  '애니메이션·모션': 'motion', '음악·음성': 'audio', '디자인·도구': 'tools',
+};
+const FREE_TOOLS = (window.AIAD.freeTools || []).map(t => ({
+  ...t, slug: kwSlug(t.name), catSlug: FREE_CAT_SLUG[t.category] || kwSlug(t.category),
+}));
+const FREE_CATS = [...new Set(FREE_TOOLS.map(t => t.category))]
+  .map(label => ({ label, slug: FREE_CAT_SLUG[label] || kwSlug(label) }));
+function freePath(cat) { return cat ? `/free/${cat}/` : '/free/'; }
+const FREE_TYPE_LABEL = { plan: '무료 플랜', trial: '기간제 체험', credits: '가입 크레딧', free: '무료 서비스', none: '무료 혜택 없음' };
+const FREE_FILTERS = [
+  { id: 'nocard', label: '카드 등록 없이', test: (t, d) => d.card === false },
+  { id: 'plan', label: '계속 무료(충전형)', test: (t, d) => d.type === 'plan' || d.type === 'free' },
+  { id: 'trial', label: '기간제 체험', test: (t, d) => d.type === 'trial' },
+  { id: 'nowm', label: '워터마크 없음', test: (t, d) => d.watermark === false },
+  { id: 'commercial', label: '상업적 이용 가능', test: (t, d) => d.commercial === true },
+];
+const CHANGE_LABEL = { new: '새 혜택', up: '늘어남', down: '줄어듦', changed: '바뀜', ended: '종료', paid: '유료 전환' };
+
+let freeDataPromise = null;
+function useFreeData() {
+  const [state, setState] = useState({ ready: false, data: { updated: null, tools: {}, changes: [] } });
+  useEffect(() => {
+    let alive = true;
+    if (!freeDataPromise) {
+      freeDataPromise = fetchJson(`${DATA_BASE}free/tools.json`, { cache: 'no-cache' })
+        .catch(() => ({ updated: null, tools: {}, changes: [] }));
+    }
+    freeDataPromise.then(data => { if (alive) setState({ ready: true, data }); });
+    return () => { alive = false; };
+  }, []);
+  return state;
+}
+const shortDate = d => (d ? d.slice(5) : '');
+
+function FreeFlag({ on, yes, no }) {
+  if (on == null) return null;
+  return <span className={`free-flag ${on ? 'yes' : 'no'}`}>{on ? yes : no}</span>;
+}
+
+function FreeCard({ t, d }) {
+  const unverified = d && (d.status === 'unverified' || d.status_note === 'unverified');
+  const has = d && d.offer;
+  const tryUrl = t.aff || (d && d.try_url) || t.url;
+  return (
+    <li className={`free-card ${t.kind === 'free' ? 'is-free' : ''}`}>
+      <div className="free-card-head">
+        <span className="free-name">{t.name}</span>
+        <span className="free-cat">{t.category}</span>
+        {has && d.type && <span className="free-type">{FREE_TYPE_LABEL[d.type]}</span>}
+      </div>
+      <div className="free-offer">{has ? d.offer : '조사 중이에요'}</div>
+      {has && d.limits && <div className="free-limits">{d.limits}</div>}
+      {has && (
+        <div className="free-flags">
+          <FreeFlag on={d.card === false ? true : d.card === true ? false : null} yes="카드 등록 없이" no="카드 등록 필요" />
+          <FreeFlag on={d.watermark === false ? true : d.watermark === true ? false : null} yes="워터마크 없음" no="워터마크 있음" />
+          <FreeFlag on={d.commercial} yes="상업적 이용 가능" no="상업적 이용 불가" />
+        </div>
+      )}
+      {has && d.note && <p className="free-note">{d.note}</p>}
+      <div className="free-foot">
+        <a className="free-try" href={tryUrl} target="_blank" rel={t.aff ? 'sponsored noopener' : 'noopener noreferrer'}>
+          {t.kind === 'free' ? '바로 쓰기' : '무료로 써보기'} ↗
+        </a>
+        {t.aff && <span className="free-aff" title="이 링크로 가입하면 사이트가 소개 수수료를 받을 수 있어요">제휴</span>}
+        <span className="free-meta">
+          {unverified && <span className="free-unverified">확인 필요</span>}
+          {d && d.source_url && <a href={d.source_url} target="_blank" rel="noopener noreferrer">근거</a>}
+          {d && d.checked && <span>{shortDate(d.checked)} 확인</span>}
+        </span>
+      </div>
+    </li>
+  );
+}
+
+function FreeView({ cat, onCat }) {
+  const { ready, data } = useFreeData();
+  const [filters, setFilters] = useState(() => new Set());
+  const toggle = id => setFilters(f => { const n = new Set(f); n.has(id) ? n.delete(id) : n.add(id); return n; });
+  const catLabel = cat && (FREE_CATS.find(c => c.slug === cat) || {}).label;
+  const inCat = FREE_TOOLS.filter(t => !cat || t.catSlug === cat);
+  const active = FREE_FILTERS.filter(f => filters.has(f.id));
+  const pass = t => { const d = data.tools[t.slug] || {}; return active.every(f => f.test(t, d)); };
+  const gone = t => { const d = data.tools[t.slug]; return d && (d.status === 'ended' || d.status === 'paid' || d.type === 'none'); };
+  const trials = inCat.filter(t => t.kind === 'trial' && !gone(t) && pass(t));
+  const frees = inCat.filter(t => t.kind === 'free' && !gone(t) && pass(t));
+  const ended = inCat.filter(gone);
+  const changes = (data.changes || []).filter(c => inCat.some(t => t.slug === c.slug)).slice(0, 8);
+  const nameOf = slug => (FREE_TOOLS.find(t => t.slug === slug) || {}).name || slug;
+  return (<>
+    <nav className="tabs-wrap">
+      <div className="tabs-inner">
+        <div className="tabs-meta">무료로 써보기 · {FREE_CATS.length}개 분야 · {FREE_TOOLS.length}개 서비스</div>
+        <div className="tabs">
+          <button className={`tab ${!cat ? 'active' : ''}`} onClick={() => onCat(null)}>
+            전체 <span className="count">{FREE_TOOLS.length}</span>
+          </button>
+          {FREE_CATS.map(c => (
+            <button key={c.slug} className={`tab ${cat === c.slug ? 'active' : ''}`} onClick={() => onCat(c.slug)}>
+              {c.label} <span className="count">{FREE_TOOLS.filter(t => t.catSlug === c.slug).length}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </nav>
+    <div className="feed-meta feed-meta-band">
+      <div>
+        <SectionBand bandKey={cat ? `updates:${cat}` : 'updates'} eyebrow="FREE TO TRY" title={catLabel ? `${catLabel} 무료로 써보기` : '무료로 써보기'} />
+        <p className="feed-desc">
+          아트 AI 서비스를 돈 내기 전에 무료로 써 볼 수 있는 방법을 모았어요. 매주 공식 가격 페이지를 확인해 갱신해요
+          {data.updated ? ` (최근 확인 ${data.updated})` : ''}.
+        </p>
+      </div>
+    </div>
+    <main className="feed free">
+      {changes.length > 0 && (
+        <section className="free-changes" aria-label="최근 바뀐 무료 혜택">
+          <h2 className="free-h">최근 바뀐 무료 혜택</h2>
+          <ul>
+            {changes.map((c, i) => (
+              <li key={c.slug + c.date + i}>
+                <span className={`free-change-kind k-${c.kind}`}>{CHANGE_LABEL[c.kind] || '바뀜'}</span>
+                <b>{nameOf(c.slug)}</b> {c.text}
+                <span className="free-change-date">{shortDate(c.date)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      <div className="free-filters" role="group" aria-label="조건으로 거르기">
+        {FREE_FILTERS.map(f => (
+          <button key={f.id} type="button" className={`chip ${filters.has(f.id) ? 'active' : ''}`} aria-pressed={filters.has(f.id)}
+            onClick={() => toggle(f.id)}>{f.label}</button>
+        ))}
+      </div>
+      {!ready ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div> : (<>
+        <h2 className="free-h">무료 체험 · 무료 플랜 <span>{trials.length}</span></h2>
+        {trials.length === 0 ? <p className="feed-desc">조건에 맞는 서비스가 없어요.</p> : (
+          <ul className="free-grid">{trials.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+        )}
+        {(frees.length > 0 || !cat) && (<>
+          <h2 className="free-h">무료 서비스 <span>{frees.length}</span><small>오픈소스·무료 소프트웨어 — 유료로 바뀌지 않았는지 매주 확인해요</small></h2>
+          {frees.length === 0 ? <p className="feed-desc">조건에 맞는 서비스가 없어요.</p> : (
+            <ul className="free-grid">{frees.map(t => <FreeCard key={t.slug} t={t} d={data.tools[t.slug]} />)}</ul>
+          )}
+        </>)}
+        {ended.length > 0 && (
+          <p className="free-ended">지금은 무료로 쓸 방법이 없어요: {ended.map(t => t.name).join(', ')}</p>
+        )}
+        <p className="free-disclaimer">
+          무료 혜택은 서비스 사정에 따라 예고 없이 바뀔 수 있어요. 가입 전에 공식 페이지(카드의 '근거')를 확인해 주세요.
+          '제휴' 표시가 있는 링크로 가입하면 사이트가 소개 수수료를 받을 수 있지만, 이용자의 비용은 같아요.
+        </p>
+      </>)}
+    </main>
+  </>);
+}
+
 function rolesPath(role) {
   return role ? `/for/${role}/` : '/for/';
 }
@@ -2364,7 +2560,9 @@ function App() {
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles'
-    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings'
+    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : INITIAL_ROUTE.free ? 'free' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings' | 'free'
+  const [freeCat, setFreeCat] = useState(INITIAL_ROUTE.freeCat || null);        // 무료로 써보기 › 분야 (slug)
+  const goFree = (cat) => { setSection('free'); setFreeCat(cat || null); setOpen(null); window.scrollTo({ top: 0 }); };
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
   const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
@@ -2477,8 +2675,9 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : 'news');
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : route.free ? 'free' : 'news');
       if (route.me || route.settings) { setOpen(null); return; }
+      if (route.free) { setOpen(null); setFreeCat(route.freeCat || null); return; }
       if (route.roles) { setOpen(null); setRole(route.role || null); return; }
       if (route.updates) { setOpen(null); setUpdCat(route.updCat || null); setUpdCompany(route.updCompany || null); return; }
       if (route.articleId) {
@@ -2533,12 +2732,12 @@ function App() {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section === 'news' && !onArticle && query.trim()) return;
-    const path = section === 'updates' ? updatesPath(updCat, updCompany)
+    const path = section === 'free' ? freePath(freeCat) : section === 'updates' ? updatesPath(updCat, updCompany)
       : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : section === 'settings' ? '/settings/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, section, updCat, updCompany, role, viewHome, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, freeCat, role, viewHome, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -2614,6 +2813,8 @@ function App() {
         onUpdCompany={(cat, company) => goUpdates(cat, company)}
         onRole={(id) => { goRole(id); setSideOpen(false); }}
         onMe={() => { goMe(); setSideOpen(false); }}
+        freeCat={freeCat}
+        onFree={(cat) => { goFree(cat); setSideOpen(false); }}
         loggedIn={!!auth.user}
         subcats={subcats}
         keyword={activeKeyword}
@@ -2644,6 +2845,8 @@ function App() {
           onOpenArticle={openArticle}
           onCompany={(cat, company) => goUpdates(cat, company)}
         />
+      ) : section === 'free' ? (
+        <FreeView cat={freeCat} onCat={(cat) => goFree(cat)} />
       ) : section === 'updates' ? (
         <UpdatesView
           cat={updCat}

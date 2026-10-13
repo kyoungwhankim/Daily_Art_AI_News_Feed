@@ -37,6 +37,7 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import feed_data  # noqa: E402
 import service_updates  # noqa: E402
+import free_tools  # noqa: E402
 
 SITE_URL = os.environ.get(
     'SITE_URL', 'https://ai-art-news.pages.dev').rstrip('/')
@@ -50,7 +51,7 @@ SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한�
 # 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
 PRIVACY_OWNER = '김경환'          # 개인정보 보호책임자 (contact/ 페이지에도 쓴다)
 CONTACT_EMAIL = 'kyoungwhankim.dev@gmail.com'
-PRIVACY_DATE = '2026년 10월 7일'
+PRIVACY_DATE = '2026년 10월 13일'
 TABS = [
     ('games', '게임 제작 속 AI', '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.'),
     ('industry', 'AI 도입 뉴스', '게임 스튜디오들의 AI 도입과 관련된 뉴스들을 매일 업데이트합니다.'),
@@ -425,6 +426,43 @@ def updates_fallback(title: str, desc: str, entries: list, by_slug: dict, links:
             + ''.join(update_item(root, e, by_slug[e['service']], show_service) for e in entries) + '</ul>')
 
 
+# ---------- 무료로 써보기 (/free/, /free/<분야>/) ----------
+# 주소 규칙·분야 slug는 app.jsx FREE_CAT_SLUG와 같아야 한다.
+FREE_CAT_SLUG = {'이미지': 'image', '영상': 'video', '3D': '3d', '게임 에셋': 'game-assets',
+                 '애니메이션·모션': 'motion', '음악·음성': 'audio', '디자인·도구': 'tools'}
+FREE_TYPE_LABEL = {'plan': '무료 플랜', 'trial': '기간제 체험', 'credits': '가입 크레딧', 'free': '무료 서비스'}
+
+
+def free_item(t: dict, d: dict) -> str:
+    gone = d.get('status') in ('ended', 'paid') or d.get('type') == 'none'
+    if gone:
+        return ''
+    offer = d.get('offer') or '조사 중'
+    meta = [t['category']]
+    if d.get('type') in FREE_TYPE_LABEL:
+        meta.append(FREE_TYPE_LABEL[d['type']])
+    if d.get('checked'):
+        meta.append(d['checked'] + ' 확인')
+    url = t.get('aff') or d.get('try_url') or t['url']
+    rel = 'sponsored noopener' if t.get('aff') else 'noopener'
+    lim = f'<p>{esc(d["limits"])}</p>' if d.get('limits') else ''
+    return (f'<li><a href="{esc(url)}" rel="{rel}">{esc(t["name"])}</a> — {esc(offer)}'
+            f'<span class="static-item-meta">{esc(" · ".join(meta))}</span>{lim}</li>')
+
+
+def free_fallback(title: str, desc: str, tools: list, data: dict, links: list) -> str:
+    nav = ('<div class="subcats">' + ''.join(
+        f'<a class="chip subcat" href="{href("/", p)}">{esc(t)}</a>' for t, p in links) + '</div>') if links else ''
+    trials = ''.join(free_item(t, data.get(t['slug'], {})) for t in tools if t['kind'] == 'trial')
+    frees = ''.join(free_item(t, data.get(t['slug'], {})) for t in tools if t['kind'] == 'free')
+    out = f'<h1 class="feed-title">{esc(title)}</h1><p class="feed-sub">{esc(desc)}</p>' + nav
+    if trials:
+        out += f'<h2>무료 체험 · 무료 플랜</h2><ul class="static-list">{trials}</ul>'
+    if frees:
+        out += f'<h2>무료 서비스</h2><ul class="static-list">{frees}</ul>'
+    return out
+
+
 # ---------- 아티스트 브리핑 — 직군별 추천 (/for/, /for/<직군>/) ----------
 # 고르는 기준은 app.jsx roleArticles·roleUpdates와 같아야 한다 (config.js roles 주석 참고).
 ROLE_LIST = 30   # 직군 페이지의 검색엔진용 목록에 넣을 최근 기사·업데이트 수
@@ -662,6 +700,9 @@ def build_privacy() -> str:
       끌 수 있습니다.</li>
     <li>Google의 정보 처리 방식은 <a href="https://policies.google.com/technologies/partner-sites?hl=ko" rel="noopener">Google 파트너 사이트 정책</a>에서 볼 수 있습니다.</li>
     <li>브라우저 설정에서 쿠키를 거부할 수 있으며, 이 경우 일부 기능(로그인 등)을 이용하지 못할 수 있습니다.</li>
+    <li>'무료로 써보기' 페이지의 일부 링크는 제휴(어필리에이트) 링크이며 '제휴'로 표시합니다. 이 링크로 가입하면
+      해당 서비스가 이용자를 구분하기 위해 자체 쿠키를 쓸 수 있고, 사이트는 소개 수수료를 받을 수 있습니다.
+      이용자의 비용은 같으며, 사이트는 이 과정에서 이용자의 개인정보를 받지 않습니다.</li>
   </ul>
 
   <h2>5. 브라우저에 저장하는 정보</h2>
@@ -869,6 +910,35 @@ def main():
             upd_page(f'updates/{slug}/{sv["slug"]}/', f'{who} 업데이트',
                      f'{who}의 공식 업데이트(새 모델·기능·API·개발자 변경 기록)를 최신순으로 한국어로 정리했어요.',
                      entries, [(label, f'updates/{slug}/')], show_service=False)
+
+    # 무료로 써보기: /free/, /free/<분야>/ (검색엔진용 목록 — 앱이 뜨면 숨겨진다)
+    ftools = free_tools.load_tools()
+    if ftools:
+        fdata = free_tools.load_data()
+        for t in ftools:
+            t['catSlug'] = FREE_CAT_SLUG.get(t['category'], free_tools.kw_slug(t['category']))
+        fcats = []
+        for t in ftools:
+            if t['catSlug'] not in [c for c, _ in fcats]:
+                fcats.append((t['catSlug'], t['category']))
+        flinks = [(label, f'free/{slug}/') for slug, label in fcats]
+        fdesc = ('이미지·영상·3D·애니메이션·음악 등 아트 AI 서비스의 무료 체험·무료 플랜과 무료 서비스를 모았어요. '
+                 '매주 공식 가격 페이지를 확인해 갱신해요.')
+        write(out, 'free/index.html', shell(
+            'free/', f'아트 AI 무료로 써보기 | {SITE_NAME}', fdesc,
+            free_fallback('아트 AI 무료로 써보기', fdesc, ftools, fdata.get('tools', {}), flinks),
+            collection('free/', '아트 AI 무료로 써보기', fdesc)))
+        listing_paths.append('free/')
+        for slug, label in fcats:
+            ts = [t for t in ftools if t['catSlug'] == slug]
+            d = (f'{label} AI 서비스({", ".join(t["name"] for t in ts[:5])} 등)를 무료로 써 보는 방법 — '
+                 '무료 크레딧·무료 체험·무료 플랜을 매주 확인해 정리했어요.')
+            title = f'무료 {label} AI 서비스'
+            write(out, f'free/{slug}/index.html', shell(
+                f'free/{slug}/', f'{title} | {SITE_NAME}', d,
+                free_fallback(title, d, ts, fdata.get('tools', {}), [('전체', 'free/')]),
+                collection(f'free/{slug}/', title, d)))
+            listing_paths.append(f'free/{slug}/')
 
     # 아티스트 브리핑 (직군별 추천)
     roles = load_roles()

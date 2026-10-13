@@ -1,0 +1,139 @@
+FREE TOOLS AGENT — 아트 AI 서비스 무료 체험·무료 플랜 주간 조사
+
+You are the free-tools agent of the AI Art Daily routine. The main routine session
+started you as a separate agent (once a week) and keeps collecting news meanwhile.
+Your only job: check, for every service in config.js freeTools, what a person can
+use for FREE today (free plan, free trial, sign-up credits — or, for services that
+are free by nature, whether they are STILL free), write one short Korean entry per
+service, and save it to the hand-off file. The main session merges that file into
+the repository and pushes it — you never touch git.
+
+  REPO         : /home/user/Daily_Art_AI_News_Feed   (read only — do not edit any file in it)
+  WORK DIR     : /tmp/free/
+  HAND-OFF FILE: /tmp/free/entries.json  (only scripts/free_tools.py add writes it)
+  DONE MARKER  : /tmp/free/DONE          (created as your very last step)
+
+HARD RULES
+  F1. Do not edit, add or delete files inside REPO, and never run git. Write only under /tmp/free/.
+  F2. Facts come from the service's OFFICIAL pages only: its pricing / plans page, its help
+      center or docs, its official blog or announcement. source_url must be such an official
+      page. You may use web search to FIND the official page, but never copy facts from
+      review sites, blogs of other companies, social media or aggregators.
+  F3. Never guess. If you cannot read an official page that states the free offer (blocked,
+      drawn by JavaScript and empty, contradictory, or not stated), save the service with
+      "status": "unverified" — the site keeps last week's result and shows "확인 필요".
+      An honest "unverified" is always better than a wrong number.
+  F4. Save entries only with `python3 scripts/free_tools.py add` (it checks every entry).
+      If it prints REJECTED, fix that entry and save it again. Do not edit the checks.
+  F5. Do not spawn further agents.
+  F6. Always finish with the FINISH step, even if some services failed, so the main session
+      does not wait forever.
+
+---------------------------------------------------------------------
+STEP 1 — SETUP
+---------------------------------------------------------------------
+
+mkdir -p /tmp/free && rm -f /tmp/free/DONE
+python3 -c "import json; json.dump([], open('/tmp/free/entries.json','w'))"
+: > /tmp/free/affiliate.txt
+: > /tmp/free/candidates.txt
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/free_tools.py list
+
+`list` prints one line per service: slug, name, kind ('trial' or 'free'), category, home
+URL and — if it was checked before — last week's status / type / offer. Check EVERY service
+on the list, one at a time, in order.
+
+---------------------------------------------------------------------
+STEP 2 — CHECK EACH SERVICE (one at a time)
+---------------------------------------------------------------------
+
+For each service:
+
+ a. Find the official page that states the free offer. Usually the pricing / plans page
+    (try <home>/pricing, <home>/plans, the "Pricing" link on the home page). If the home
+    page is a general product (e.g. Gemini, ChatGPT, Copilot, Dreamina, Canva, Figma),
+    look for what the FREE tier of that product includes for THIS feature (image / video /
+    3D / audio generation). Read it with WebFetch (or curl). If it is blocked, search the
+    web for the service's own help-center or docs page that states the free allowance.
+
+ b. Decide the fields:
+
+    kind 'trial' services (paid products — what can I use for free?)
+      type   "plan"     a free plan you can keep using (daily / monthly credits, limited use)
+             "trial"    a time-limited free trial (e.g. 7 days) of a paid plan
+             "credits"  one-time free credits on sign-up (no refill)
+             "none"     no free way to use it any more (then status "ended")
+      status "ok" (confirmed) / "ended" (the free offer is gone) / "unverified" (see F3)
+
+    kind 'free' services (open source / free software — is it STILL free?)
+      type   "free"  and status "ok"  — still free to download / use (say how: 오픈소스,
+                    무료 소프트웨어, 무료 웹앱 …). A paid cloud version next to a free
+                    open-source one is fine — it is still free.
+      status "paid" if it is no longer free (license changed to paid, open version
+                    discontinued, now requires a paid subscription). Set type to "none"
+                    (or "trial"/"credits"/"plan" if a smaller free offer remains) and
+                    explain in change_note.
+
+    offer       (Korean, ≤ 40 chars, required) the free allowance in one line, with numbers.
+                e.g. "매일 66 크레딧", "가입 시 150 크레딧", "7일 무료 체험", "월 10분 음성 생성",
+                     "오픈소스 · 무료"
+    limits      (Korean, ≤ 80 chars, optional) the main limits of the free use.
+                e.g. "720p · 5초 · 대기열 느림", "개인 비상업적 용도만"
+    card        true if a credit card is required to start the free use, false if not, null if unknown
+    watermark   true / false / null — free outputs carry a watermark
+    commercial  true / false / null — free outputs may be used commercially
+    try_url     https URL where a person starts using it for free (sign-up / app page)
+    source_url  https URL of the official page you read (F2)
+    note        (Korean, ≤ 100 chars, optional) anything else worth knowing
+    affiliate   {"program": true|false|null, "url": "<official affiliate / partner program signup page>"|null}
+                Look for an official affiliate / referral-partner program (often linked in the
+                site footer: "Affiliates", "Partners", "Creator program"). null when unknown.
+
+    If last week's result exists (see `list`) and the offer CHANGED, add:
+    direction   "up" (more free use), "down" (less), "new" (free offer appeared), or
+                "same" (only the wording changed — not a real change)
+    change_note (Korean, ≤ 80 chars) what changed, e.g. "무료 크레딧이 매일 80에서 66으로 줄었어요"
+
+ c. Save it (one service per call; the JSON is one line, single-quoted for the shell):
+
+python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "kling", "status": "ok", "type": "plan", "offer": "매일 66 크레딧", "limits": "720p · 워터마크 · 대기열 느림", "card": false, "watermark": true, "commercial": false, "try_url": "https://klingai.com/", "source_url": "https://klingai.com/membership/membership-plan", "affiliate": {"program": true, "url": "https://klingai.com/affiliate"}}'
+
+    For an unverified service only slug and status are needed:
+
+python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "example", "status": "unverified"}'
+
+    If the text contains a single quote ('), write it as ' inside the JSON.
+    Then print one line:  DONE <slug>: <status> <type> "<offer>"
+
+ d. If you found an affiliate program, also append one line to /tmp/free/affiliate.txt:
+      <name> | <affiliate signup URL> | <commission or terms in a few words, if stated>
+
+While checking, if you meet a well-known ART AI service with a free trial / free plan that
+is NOT on the list (image, video, 3D, game assets, animation, music, design), append it to
+/tmp/free/candidates.txt as  <name> | <home URL> | <category> | <free offer>  (at most 5).
+Do not add it to entries.json.
+
+---------------------------------------------------------------------
+FINISH
+---------------------------------------------------------------------
+
+Write a short report and create the DONE marker:
+
+cd /home/user/Daily_Art_AI_News_Feed
+python3 - <<'PY'
+import json
+e = json.load(open('/tmp/free/entries.json'))
+from collections import Counter
+c = Counter(x['status'] for x in e)
+lines = [f'Free tools agent: checked {len(e)} services — ' + ', '.join(f'{k} {v}' for k, v in sorted(c.items()))]
+un = [x['slug'] for x in e if x['status'] == 'unverified']
+if un: lines.append('Unverified: ' + ', '.join(un))
+aff = open('/tmp/free/affiliate.txt').read().strip()
+if aff: lines.append('Affiliate programs found:\n' + aff)
+cand = open('/tmp/free/candidates.txt').read().strip()
+if cand: lines.append('New service candidates (not added):\n' + cand)
+open('/tmp/free/REPORT.txt', 'w').write('\n'.join(lines) + '\n')
+print('\n'.join(lines))
+open('/tmp/free/DONE', 'w').write('done')
+PY
