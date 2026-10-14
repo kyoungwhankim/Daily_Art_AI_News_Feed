@@ -174,6 +174,17 @@ THEME_BOOT = ("<script>document.documentElement.classList.add('js');"
               "localStorage.getItem('aiad:theme')||'light'}catch(e){}</script>")
 
 
+ADS_SCRIPT = ('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+              '?client=ca-pub-7751014405174019" crossorigin="anonymous"></script>\n')
+
+
+def no_ads(h: str) -> str:
+    """내용이 거의 없는 화면(404·설정·로그인 전 나만의 피드)에서는 광고 스크립트를 뺀다.
+    애드센스 정책: 게시자 콘텐츠가 없는 화면에 광고를 게재하면 안 된다.
+    (소유권 확인용 google-adsense-account 메타 태그는 남긴다.)"""
+    return h.replace(ADS_SCRIPT, '', 1)
+
+
 def head(root: str, title: str, desc: str, canonical: str, og_type='website',
          image=None, extra='') -> str:
     img = image or ''
@@ -183,8 +194,7 @@ def head(root: str, title: str, desc: str, canonical: str, og_type='website',
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="google-adsense-account" content="ca-pub-7751014405174019" />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7751014405174019" crossorigin="anonymous"></script>
-<title>{esc(title)}</title>
+{ADS_SCRIPT}<title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
 <link rel="canonical" href="{esc(canonical)}" />
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{esc(abs_url('feed.xml'))}" />
@@ -960,16 +970,16 @@ def main():
 
     # 나만의 피드 (/me/) — 로그인 회원 화면이라 검색엔진에는 내보내지 않는다
     me_desc = '로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 모아 볼 수 있어요.'
-    write(out, 'me/index.html', shell('me/', f'나만의 피드 | {SITE_NAME}', me_desc,
+    write(out, 'me/index.html', no_ads(shell('me/', f'나만의 피드 | {SITE_NAME}', me_desc,
                                       f'<h1 class="feed-title">나만의 피드</h1><p class="feed-sub">{esc(me_desc)}</p>',
                                       collection('me/', '나만의 피드', me_desc))
-          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1)))
 
     st_desc = '계정 정보, 나만의 피드 관심사, 회원 탈퇴를 관리해요.'
-    write(out, 'settings/index.html', shell('settings/', f'설정 | {SITE_NAME}', st_desc,
+    write(out, 'settings/index.html', no_ads(shell('settings/', f'설정 | {SITE_NAME}', st_desc,
                                             f'<h1 class="feed-title">설정</h1><p class="feed-sub">{esc(st_desc)}</p>',
                                             collection('settings/', '설정', st_desc))
-          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1))
+          .replace('<title>', '<meta name="robots" content="noindex" />\n<title>', 1)))
 
     icon_re = re.compile(r'(/icons/(?:' + '|'.join(re.escape(n) for n in icon_names) + r'))(?=["\'])')
     for dp, _, fs in os.walk(out):
@@ -985,7 +995,7 @@ def main():
 
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
-    write(out, '404.html', fin(build_404()))
+    write(out, '404.html', fin(no_ads(build_404())))
     write(out, 'privacy/index.html', fin(build_privacy()))
     write(out, 'contact/index.html', fin(build_contact()))
     if PREVIEW:
