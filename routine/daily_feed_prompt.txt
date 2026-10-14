@@ -22,7 +22,8 @@ whitelist) are embedded in this prompt.
   PHASE 2 — PUBLISH:  Read /tmp/feed/digest.json, convert each article into a
             feed entry, then add the entries to today's date file in the
             repository (data/articles/YYYY-MM-DD.json), merge the service
-            updates into data/updates/, and push to main.
+            updates into data/updates/, and push to main. On Fridays an agent
+            also writes the weekly per-role report (data/reports/) before the push.
 
 CRITICAL — DO NOT write HTML inline or use large heredocs for content.
 Instead, save each article as a JSON object using Python. This keeps every
@@ -137,7 +138,8 @@ every entry), with exactly this prompt (fill in the date):
 
 Its result is /tmp/free/entries.json plus the marker /tmp/free/DONE.
 
-These are the ONLY agents this routine starts. Go straight on to PHASE 1.
+These are the only agents started in PHASE 0 (on Fridays one more agent writes the
+weekly report after PHASE 2 — see WEEKLY REPORT). Go straight on to PHASE 1.
 
 =====================================================================
 PHASE 1 — RESEARCH
@@ -1071,6 +1073,41 @@ file and continue (the page keeps last week's data; it is checked again tomorrow
 
 ---
 
+WEEKLY REPORT (Fridays only — '금주 리포트', one short report per role)
+
+Runs after today's articles are merged, so the report covers the whole week
+(Saturday–Friday) including today.
+
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/weekly_report.py due
+
+If it prints "NOT DUE", skip this section. If it prints "DUE":
+
+rm -rf /tmp/report && python3 scripts/weekly_report.py context
+
+Then start ONE agent with the Agent (Task) tool in the FOREGROUND (wait for it),
+on the Opus model (model: "opus" — it writes analysis for professionals and
+must not invent facts; the add script checks every report), with exactly this
+prompt (fill in the date):
+
+  Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/report_agent_prompt.txt
+  and follow it exactly, from STEP 1 to FINISH.
+
+When it returns, merge and check:
+
+if [ -f /tmp/report/DONE ] && [ -s /tmp/report/entries.json ]; then
+  python3 scripts/weekly_report.py merge /tmp/report/entries.json && python3 scripts/weekly_report.py validate
+else
+  echo "No weekly report this week."
+fi
+
+If merge prints REJECTED or validate fails, restore and continue with the news only
+(the report is then missing for this week — say so in the final report):
+
+  git checkout -- data/reports 2>/dev/null; git clean -fdq data/reports
+
+---
+
 COMMIT AND PUSH
 
 ⚠️  HARD RULE — DO NOT CREATE NEW BRANCHES
@@ -1094,7 +1131,8 @@ FINISH
 In your final report, include the updates agent's report
 (/tmp/updates/REPORT.txt) and the merge summary line. On free-tools days also
 include /tmp/free/REPORT.txt (it lists unverified services and new service
-candidates for the site owner) and the free-tools merge summary line.
+candidates for the site owner) and the free-tools merge summary line. On
+Fridays also include /tmp/report/REPORT.txt and the weekly report merge line.
 
 Leave publish mode as the very last step of the routine, whether the push
 succeeded or the routine is terminating early in PHASE 2:
