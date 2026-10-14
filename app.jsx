@@ -2756,6 +2756,97 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
 }
 
 /* ---------- App ---------- */
+/* ---------- 첫 화면 안내 팝업 (나만의 피드 사용법) ---------- */
+// 메인(/)으로 들어올 때 띄운다. '오늘은 그만 보기'를 누르면 그날(브라우저 날짜)에는 다시 뜨지 않는다.
+const GUIDE_KEY = 'aiad:guide-hide';
+const todayKey = () => new Date().toLocaleDateString('sv-SE');   // YYYY-MM-DD
+function guideHiddenToday() {
+  try { return localStorage.getItem(GUIDE_KEY) === todayKey(); } catch { return false; }
+}
+const GUIDE_DONE_KEY = 'aiad:feed-set';   // 나만의 피드를 설정한 적 있는 브라우저 (안내를 띄우지 않는다)
+function feedSetHere() {
+  try { return localStorage.getItem(GUIDE_DONE_KEY) === '1'; } catch { return false; }
+}
+const GUIDE_STEPS = [
+  ['Google로 로그인', '가입 절차 없이 한 번에'],
+  ['직군·관심사 고르기', '주제 · AI 서비스 · 키워드'],
+  ['매일 확인', '새 소식은 NEW, 다시 볼 건 저장'],
+];
+// 왼쪽 그림: 실제 나만의 피드 화면을 줄여 그린 모형
+function GuideMock() {
+  const rows = [
+    { hue: 'a', w: '86%', isNew: true },
+    { hue: 'b', w: '72%', isNew: true, saved: true },
+    { hue: 'c', w: '80%' },
+  ];
+  return (
+    <div className="gm" aria-hidden="true">
+      <div className="gm-card">
+        <div className="gm-head">
+          <span className="gm-star">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" /></svg>
+          </span>
+          <b>나만의 피드</b>
+          <span className="gm-today">오늘 <em>3</em></span>
+        </div>
+        <div className="gm-chips"><span>3D 아티스트</span><span>영상 생성</span><span>Blender</span></div>
+        {rows.map((r, i) => (
+          <div className="gm-row" key={i} style={{ '--i': i }}>
+            <span className={`gm-thumb gm-thumb-${r.hue}`} />
+            <span className="gm-lines">
+              {r.isNew && <span className="gm-new">NEW</span>}
+              <span className="gm-line" style={{ width: r.w }} />
+              <span className="gm-line gm-line-2" />
+            </span>
+            <span className={`gm-mark ${r.saved ? 'on' : ''}`}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill={r.saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+function GuidePopup({ loggedIn, onStart, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  const hideToday = () => {
+    try { localStorage.setItem(GUIDE_KEY, todayKey()); } catch {}
+    onClose();
+  };
+  return (
+    <div className="guide-backdrop" onClick={onClose}>
+      <div className="guide" role="dialog" aria-modal="true" aria-labelledby="guide-title" onClick={(e) => e.stopPropagation()}>
+        <button type="button" className="guide-x" onClick={onClose} aria-label="닫기">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+        <div className="guide-art"><GuideMock /></div>
+        <div className="guide-body">
+          <span className="guide-pill">처음 오셨나요?</span>
+          <h2 id="guide-title">내 분야에 맞는 AI 소식만<br />골라서, 매일 새로운 소식으로</h2>
+          <p className="guide-lead">직군+관심사만 고르면 나만의 피드가 채워져요.</p>
+          <ol className="guide-steps">
+            {GUIDE_STEPS.map(([t, d], i) => (
+              <li key={t}><span className="guide-n">{i + 1}</span><span><b>{t}</b><small>{d}</small></span></li>
+            ))}
+          </ol>
+          <button type="button" className="guide-cta" onClick={onStart}>
+            {loggedIn ? '관심사 고르러 가기' : '나만의 피드 시작하기'}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </button>
+          <div className="guide-foot">
+            <button type="button" onClick={hideToday}>오늘은 그만 보기</button>
+            <button type="button" onClick={onClose}>둘러볼게요</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -2769,6 +2860,19 @@ function App() {
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
   const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
+  // 첫 화면 안내: 메인으로 들어왔고, 오늘 그만 보기를 누르지 않았고, 나만의 피드를 설정한 회원이 아닐 때만.
+  // 로그인 상태로 돌아온 사람은 관심사를 불러온 뒤에 판단한다 (설정한 회원에게 잠깐 떴다 사라지지 않게).
+  const [guide, setGuide] = useState(() => !!INITIAL_ROUTE.home && !guideHiddenToday() && !feedSetHere());
+  const closeGuide = useCallback(() => setGuide(false), []);
+  const feedSet = !!(auth.user && profileState.profile);
+  useEffect(() => {
+    if (!feedSet) return;
+    try { localStorage.setItem(GUIDE_DONE_KEY, '1'); } catch {}
+    setGuide(false);
+  }, [feedSet]);
+  const guideReady = !(AUTH_ON && hasStoredSession())
+    || !!(auth.user && !profileState.loading && profileState.forId === auth.user.id);
+  const showGuide = guide && guideReady && !feedSet;
   const [welcome, setWelcome] = useState(false);
   const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
   const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
@@ -3142,11 +3246,12 @@ function App() {
 
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-        <div>큐레이션 · 한국어 번역 · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
+        <div>큐레이션 · 한국어 번역 · <a href="/about/">소개</a> · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
       </footer>
       </div>
       </div>
       <IosInstallHint />
+      {showGuide && <GuidePopup loggedIn={!!auth.user} onClose={closeGuide} onStart={() => { setGuide(false); goMe(); }} />}
 
 
       {open && (

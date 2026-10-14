@@ -238,7 +238,7 @@ def header(root: str) -> str:
 def footer(root: str = '/') -> str:
     return f"""<footer class="site-footer">
   <div class="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-  <div>큐레이션 · 한국어 번역 · <a href="{root}contact/">문의</a> · <a href="{root}privacy/">개인정보처리방침</a></div>
+  <div>큐레이션 · 한국어 번역 · <a href="{root}about/">소개</a> · <a href="{root}contact/">문의</a> · <a href="{root}privacy/">개인정보처리방침</a></div>
 </footer>
 """
 
@@ -648,6 +648,95 @@ def build_contact() -> str:
 """)
 
 
+def build_about() -> str:
+    root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
+    mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
+    tabs = ''.join(f'<li><a href="{href(root, tab_path(t))}"><strong>{esc(label)}</strong></a> — {esc(desc)}</li>'
+                   for t, label, desc in TABS)
+    return (head(root, f'소개 | {SITE_NAME}',
+                 f'{SITE_NAME}는 직군과 관심사에 맞춘 나만의 AI 뉴스 피드예요. 운영 목적과 기사를 고르고 쓰는 기준을 소개합니다.',
+                 abs_url('about/'))
+            + f"""<body>
+<div class="page">
+{header(root)}
+<main class="static-main static-doc">
+  <h1 class="feed-title">소개</h1>
+  <p class="feed-sub">{SITE_NAME}는 게임과 아트를 만드는 사람들을 위한 <strong>나만의 AI 뉴스 피드</strong>예요.
+  내 직군과 관심사만 알려 주면, 매일 쏟아지는 AI 소식 가운데 내 작업에 필요한 것만 골라 한국어로 모아 드려요.</p>
+  <p><a class="chip active" href="{root}me/">나만의 피드 시작하기 →</a></p>
+
+  <h2>운영 목적</h2>
+  <p>AI는 하루가 다르게 발전하고, 새 도구와 소식이 매일 쏟아집니다. 그런데 정작 현업 아티스트들은 정보의 홍수
+  속에서 내 작업에 정말 필요한 양질의 정보를 찾기가 점점 어려워지고 있어요. 바쁜 작업 틈틈이 수많은 해외 매체와
+  서비스 공지를 일일이 확인하기는 쉽지 않으니까요.</p>
+  <p>{SITE_NAME}는 그런 아쉬움에서 출발했습니다. 믿을 수 있는 출처의 새 AI 소식을 매일 골라, 아티스트 각자의
+  <strong>직무와 관심사에 맞게 큐레이션</strong>해 전하는 것이 이 서비스의 목표예요. 넘쳐나는 정보를 쫓는 대신,
+  꼭 알아야 할 소식만 짧은 시간에 확인하고 다시 작업에 집중할 수 있도록 돕고 싶습니다.</p>
+
+  <h2>나만의 피드</h2>
+  <p>Google 계정으로 로그인하고 관심사를 고르면, 그에 맞는 소식만 모인 나만의 피드가 매일 아침 새로 채워져요.</p>
+  <ol>
+    <li><strong>관심사 고르기</strong> — 내 직군(3D·2D·컨셉, 애니메이터, 리거, VFX, 테크니컬 아티스트, 레벨,
+      사운드, UI·UX), 관심 뉴스 주제, 업데이트를 받아 볼 AI 서비스, 직접 입력한 키워드를 골라요.</li>
+    <li><strong>매일 맞춤 소식 받기</strong> — 고른 관심사에 맞는 뉴스 기사와 AI 서비스의 공식 업데이트가 한곳에 모여요.
+      관심 서비스를 무료로 써 볼 수 있는 방법이 생기면 그것도 알려 드려요.</li>
+    <li><strong>새 소식만 빠르게</strong> — 지난 방문 이후 새로 들어온 소식에는 NEW 표시가 붙어, 이미 본 것은 건너뛰고
+      새 소식만 확인할 수 있어요.</li>
+    <li><strong>나중에 다시 보기</strong> — 마음에 드는 기사와 업데이트는 저장해 두고 언제든 다시 볼 수 있어요.</li>
+  </ol>
+  <p>로그인하지 않아도 <a href="{root}for/">아티스트 브리핑</a>에서 직군을 고르면 그 직군에 맞춘 소식을 바로 볼 수 있어요.
+  관심사 설정과 저장 정보를 어떻게 다루는지는 <a href="{root}privacy/">개인정보처리방침</a>에 적어 두었어요.</p>
+
+  <h2>피드에 담기는 소식</h2>
+  <p>나만의 피드는 아래 소식들 가운데 내 관심사에 맞는 것을 골라 보여 줘요. 각 분류는 따로 둘러볼 수도 있어요.</p>
+  <ul>
+    {tabs}
+    <li><a href="{root}updates/"><strong>업데이트</strong></a> — 이미지·영상·3D·음악 등 아트 AI 서비스 50여 곳의
+      공식 업데이트 소식.</li>
+    <li><a href="{root}free/"><strong>AI 무료로 써보기</strong></a> — 아트 AI 서비스를 무료로 써 볼 수 있는
+      방법(무료 플랜·체험·가입 크레딧)을 매주 확인해 정리.</li>
+  </ul>
+
+  <h2>기사를 고르는 기준</h2>
+  <ul>
+    <li><strong>믿을 수 있는 출처만</strong> — AI 회사·게임 엔진·스튜디오의 공식 발표와, 한국·미국·일본·중국·유럽의
+      게임·아트·기술 전문 매체 약 80곳을 출처 목록으로 정해 두고 그 안에서 고릅니다.</li>
+    <li><strong>새 소식만</strong> — 발행일이 오늘이나 어제인 기사만 다루고, 이미 소개한 소식을 다른 매체가
+      다시 보도한 경우에는 새로 밝혀진 사실이 없으면 싣지 않아요.</li>
+    <li><strong>아트 작업과 관련 있는 것</strong> — 이미지·영상·3D·애니메이션·사운드 제작 도구, 스튜디오의 AI 도입,
+      창작자와 저작권 이슈처럼 만드는 사람에게 의미 있는 소식을 우선합니다. 단순 주가·투자 소식이나
+      창작과 관계없는 AI 뉴스는 다루지 않아요.</li>
+  </ul>
+
+  <h2>기사를 쓰는 방식</h2>
+  <ul>
+    <li>원문을 읽고 핵심을 한국어로 새로 씁니다. 원문을 그대로 옮기거나 통째로 번역하지 않아요.</li>
+    <li>무슨 일이 있었는지, 구체적으로 무엇이 바뀌는지, 그리고 <strong>아트 작업에 왜 중요한지</strong>를 함께 적어요.</li>
+    <li>모든 기사에 원문 매체 이름, 발행일, 원문 링크를 밝히고, 더 자세한 내용은 원문에서 보도록 안내합니다.
+      대표 이미지는 원문 매체가 공유용으로 제공하는 이미지를 출처와 함께 씁니다.</li>
+    <li>서비스 업데이트와 무료 이용 정보는 각 서비스의 공식 페이지(요금제·도움말·공식 블로그)에서 확인한 내용만
+      싣고, 확인하지 못한 정보는 '확인 필요'로 표시해요.</li>
+  </ul>
+
+  <h2>AI 활용과 운영</h2>
+  <p>기사 수집과 한국어 요약에는 AI 도구를 활용합니다. 어떤 출처를 쓸지, 어떤 소식을 싣고 뺄지, 기사를
+  어떤 형식과 기준으로 쓸지는 운영자가 정하고 계속 다듬어요. 사실과 다른 내용이나 잘못된 번역을 발견하면
+  <a href="{root}contact/">문의</a>로 알려 주세요. 확인한 뒤 바로 고칩니다.</p>
+
+  <h2>운영자</h2>
+  <dl class="static-contact">
+    <dt>운영</dt><dd>{esc(PRIVACY_OWNER)}</dd>
+    <dt>이메일</dt><dd>{mail}</dd>
+    <dt>문의</dt><dd><a href="{root}contact/">문의 페이지</a> · <a href="{root}privacy/">개인정보처리방침</a></dd>
+  </dl>
+</main>
+{footer(root)}
+</div>
+</body>
+</html>
+""")
+
+
 def build_privacy() -> str:
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
     mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
@@ -993,9 +1082,10 @@ def main():
                     with open(fp, 'w', encoding='utf-8') as fh:
                         fh.write(new)
 
-    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
+    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['about/', 'contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(no_ads(build_404())))
+    write(out, 'about/index.html', fin(build_about()))
     write(out, 'privacy/index.html', fin(build_privacy()))
     write(out, 'contact/index.html', fin(build_contact()))
     if PREVIEW:
