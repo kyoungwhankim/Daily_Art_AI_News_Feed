@@ -238,7 +238,7 @@ def header(root: str) -> str:
 def footer(root: str = '/') -> str:
     return f"""<footer class="site-footer">
   <div class="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-  <div>큐레이션 · 한국어 번역 · <a href="{root}contact/">문의</a> · <a href="{root}privacy/">개인정보처리방침</a></div>
+  <div>큐레이션 · 한국어 번역 · <a href="{root}about/">소개</a> · <a href="{root}contact/">문의</a> · <a href="{root}privacy/">개인정보처리방침</a></div>
 </footer>
 """
 
@@ -648,6 +648,73 @@ def build_contact() -> str:
 """)
 
 
+def build_about() -> str:
+    root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
+    mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
+    tabs = ''.join(f'<li><a href="{href(root, tab_path(t))}"><strong>{esc(label)}</strong></a> — {esc(desc)}</li>'
+                   for t, label, desc in TABS)
+    return (head(root, f'소개 | {SITE_NAME}',
+                 f'{SITE_NAME}가 무엇을 다루고, 기사를 어떻게 고르고 쓰는지 소개합니다.',
+                 abs_url('about/'))
+            + f"""<body>
+<div class="page">
+{header(root)}
+<main class="static-main static-doc">
+  <h1 class="feed-title">소개</h1>
+  <p class="feed-sub">{SITE_NAME}는 게임과 아트를 만드는 사람들을 위한 한국어 AI 뉴스 사이트예요.
+  매일 아침, 아트 작업에 영향을 주는 AI 소식을 골라 한국어로 정리합니다.</p>
+
+  <h2>무엇을 다루나요</h2>
+  <ul>
+    {tabs}
+    <li><a href="{root}updates/"><strong>업데이트</strong></a> — 이미지·영상·3D·음악 등 아트 AI 서비스 50여 곳의
+      공식 업데이트 소식을 서비스별로 모아요.</li>
+    <li><a href="{root}for/"><strong>아티스트 브리핑</strong></a> — 3D·2D·애니메이터·VFX·사운드 등 직군별로
+      꼭 볼 만한 뉴스와 도구를 묶어 보여 줘요.</li>
+    <li><a href="{root}free/"><strong>AI 무료로 써보기</strong></a> — 아트 AI 서비스를 무료로 써 볼 수 있는
+      방법(무료 플랜·체험·가입 크레딧)을 매주 확인해 정리해요.</li>
+  </ul>
+
+  <h2>기사를 고르는 기준</h2>
+  <ul>
+    <li><strong>믿을 수 있는 출처만</strong> — AI 회사·게임 엔진·스튜디오의 공식 발표와, 한국·미국·일본·중국·유럽의
+      게임·아트·기술 전문 매체 약 80곳을 출처 목록으로 정해 두고 그 안에서 고릅니다.</li>
+    <li><strong>새 소식만</strong> — 발행일이 오늘이나 어제인 기사만 다루고, 이미 소개한 소식을 다른 매체가
+      다시 보도한 경우에는 새로 밝혀진 사실이 없으면 싣지 않아요.</li>
+    <li><strong>아트 작업과 관련 있는 것</strong> — 이미지·영상·3D·애니메이션·사운드 제작 도구, 스튜디오의 AI 도입,
+      창작자와 저작권 이슈처럼 만드는 사람에게 의미 있는 소식을 우선합니다. 단순 주가·투자 소식이나
+      창작과 관계없는 AI 뉴스는 다루지 않아요.</li>
+  </ul>
+
+  <h2>기사를 쓰는 방식</h2>
+  <ul>
+    <li>원문을 읽고 핵심을 한국어로 새로 씁니다. 원문을 그대로 옮기거나 통째로 번역하지 않아요.</li>
+    <li>무슨 일이 있었는지, 구체적으로 무엇이 바뀌는지, 그리고 <strong>아트 작업에 왜 중요한지</strong>를 함께 적어요.</li>
+    <li>모든 기사에 원문 매체 이름, 발행일, 원문 링크를 밝히고, 더 자세한 내용은 원문에서 보도록 안내합니다.
+      대표 이미지는 원문 매체가 공유용으로 제공하는 이미지를 출처와 함께 씁니다.</li>
+    <li>서비스 업데이트와 무료 이용 정보는 각 서비스의 공식 페이지(요금제·도움말·공식 블로그)에서 확인한 내용만
+      싣고, 확인하지 못한 정보는 '확인 필요'로 표시해요.</li>
+  </ul>
+
+  <h2>AI 활용과 운영</h2>
+  <p>기사 수집과 한국어 요약에는 AI 도구를 활용합니다. 어떤 출처를 쓸지, 어떤 소식을 싣고 뺄지, 기사를
+  어떤 형식과 기준으로 쓸지는 운영자가 정하고 계속 다듬어요. 사실과 다른 내용이나 잘못된 번역을 발견하면
+  <a href="{root}contact/">문의</a>로 알려 주세요. 확인한 뒤 바로 고칩니다.</p>
+
+  <h2>운영자</h2>
+  <dl class="static-contact">
+    <dt>운영</dt><dd>{esc(PRIVACY_OWNER)}</dd>
+    <dt>이메일</dt><dd>{mail}</dd>
+    <dt>문의</dt><dd><a href="{root}contact/">문의 페이지</a> · <a href="{root}privacy/">개인정보처리방침</a></dd>
+  </dl>
+</main>
+{footer(root)}
+</div>
+</body>
+</html>
+""")
+
+
 def build_privacy() -> str:
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
     mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
@@ -993,9 +1060,10 @@ def main():
                     with open(fp, 'w', encoding='utf-8') as fh:
                         fh.write(new)
 
-    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['contact/', 'privacy/'], upd_dated))
+    write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['about/', 'contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(no_ads(build_404())))
+    write(out, 'about/index.html', fin(build_about()))
     write(out, 'privacy/index.html', fin(build_privacy()))
     write(out, 'contact/index.html', fin(build_contact()))
     if PREVIEW:
