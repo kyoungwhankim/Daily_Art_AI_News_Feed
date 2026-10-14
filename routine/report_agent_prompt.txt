@@ -17,24 +17,25 @@ READER AND TONE
   briefing they can read in one minute — like an analyst's weekly note, not a blog post.
   - Write like an experienced senior colleague explaining the week to a teammate: kind and
     easy to follow, but professional and precise. Korean 합쇼체 — every sentence ends in
-    "-습니다 / -됩니다 / -있습니다" (a suggestion may end in "-해 보세요", a question in "-ㄹ까요?", both sparingly). Never "-다" 보고서체,
+    "-습니다 / -됩니다 / -있습니다" (a suggestion may end in "-해 보세요" / "-해 두세요", a question in "-ㄹ까요?", both sparingly). Never "-다" 보고서체,
     never 해요체 ("-해요", "-있어요").
   - It must NOT read like AI-generated text. Write the way a person writes:
       · Plain words and normal sentence order. Say what happened, then why it matters.
       · No buzzwords or empty phrases: "본격화", "가속화", "패러다임", "게임 체인저", "혁신적",
         "주목할 만하다", "기대된다", "시사한다", "~의 강세", "~의 시대", "새로운 국면",
         "판도", "흐름이 뚜렷", "~로 넘어갔다/넘어가고 있다", "~에 불과하다".
-      · No contrast templates: "단순히 A가 아니라 B", "A를 넘어 B로", "A에서 B까지",
-        "A는 B, C는 D" pairs, "A하는 쪽과 B하는 쪽".
+      · No contrast templates: "단순히 A가 아니라 B", "A를 넘어 B로", "A에서 B까지" /
+        "A부터 B까지" as a slogan, "A는 B, C는 D" pairs, "A하는 쪽과 B하는 쪽". A plain fact
+        range is fine ("10월 3일부터 9일까지", "1,000만 명을 넘었습니다").
       · No em dashes (—) or colons in titles or sentences; no title made of two clauses
         joined by a comma for effect. A title is one natural sentence or phrase.
       · Do not start sentences with "이는", "이러한", "결국", "즉". Do not stack three items
         in a row for rhythm.
       · Address the reader directly when it helps ("~해 두시면 좋습니다", "~를 확인해 보세요").
-    good title: "키샷과 리얼루전, 3D 툴 안에 생성형 AI를 넣었습니다"
+    good title: "블렌더 새 버전에 AI 리토폴로지 기능이 들어왔습니다"  (made-up example)
     bad title:  "렌더러와 캐릭터 툴 안으로 들어온 생성형 AI" / "A에서 B까지, C의 강세"
-    good item:  "키샷 2026에 AI Shots 기능이 들어갔습니다. CAD 모델에서 바로 이미지를 만들고 고칠 수 있고, 렌더 결과를 2배나 4배로 키울 수 있습니다."
-    bad item:   "키샷 2026의 AI Shots는 CAD 모델에서 바로 이미지를 생성·편집한다."
+    good item:  "툴 X 5.0에 AI 업스케일 기능이 들어갔습니다. 렌더 결과를 2배나 4배로 키울 수 있고, 프로 구독에 포함됩니다."  (made-up example)
+    bad item:   "툴 X 5.0의 AI 업스케일은 렌더 결과를 2배·4배로 확대한다."
   - No emoji, no exclamation marks, no cute or casual phrasing.
   - Concrete: name the tool, company, feature and number from the articles.
   - Every factual claim must come from this week's articles in context.md. Never invent
@@ -55,7 +56,7 @@ STEP 1 — READ THIS WEEK
 ---------------------------------------------------------------------
 
 cd /home/user/Daily_Art_AI_News_Feed
-echo '[]' > /tmp/report/entries.json && rm -f /tmp/report/DONE
+mkdir -p /tmp/report && echo '[]' > /tmp/report/entries.json && rm -f /tmp/report/DONE
 cat /tmp/report/context.md
 
 context.md lists, for each role, the articles that match that role (same rule as the site's
