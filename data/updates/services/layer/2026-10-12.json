@@ -1,0 +1,20 @@
+[
+  {
+    "id": "layer-2026-10-12-1",
+    "service": "layer",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "Layer 대규모 업데이트: 도구형 홈과 Worlds 공개",
+    "summary": "이미지·영상·오디오·3D 작업을 작업별 도구로 나눈 새 홈이 나왔고, 프롬프트나 이미지로 탐색 가능한 Worlds도 생겼어요. DaVinci Resolve 플러그인과 PBR 머티리얼 생성도 추가됐어요.",
+    "details": [
+      "이미지·영상·오디오 작업별 전용 도구 추가 (리스타일, 지우기, 더빙 등)",
+      "Create world: 프롬프트나 이미지 최대 4장으로 둘러볼 수 있는 3D 공간 생성",
+      "Draft 미리보기: 일부 영상 모델에서 저렴한 미리보기 후 고화질 완성",
+      "DaVinci Resolve Studio 19 이상용 Layer 패널 출시",
+      "Blender에서 PBR 머티리얼 자동 생성",
+      "서비스 계정과 개인 액세스 토큰 만료 기간 설정"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  }
+]

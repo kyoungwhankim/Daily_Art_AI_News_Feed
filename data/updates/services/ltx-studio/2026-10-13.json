@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ltx-studio-2026-10-13-1",
+    "service": "ltx-studio",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "LTX Trainer를 LTX Explore에서 바로 사용",
+    "summary": "LTX Trainer로 캐릭터와 스타일 LoRA를 LTX Explore 안에서 바로 학습할 수 있게 됐어요. GPU 설정이나 개발 작업 없이 시작할 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  }
+]

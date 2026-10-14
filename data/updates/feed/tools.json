@@ -1,5 +1,25 @@
 [
   {
+    "id": "figma-ai-2026-10-13-1",
+    "service": "figma-ai",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Figma Make에 Gemini 4 Argon 도입",
+    "summary": "Figma Make에서 Gemini 4 Argon 모델을 쓸 수 있도록 롤아웃을 시작했어요. 프로토타입을 만들 때 더 강한 추론 모델을 쓸 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=gemini-4-argon-is-rolling-out-in-figma-make",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-13-1",
+    "service": "comfyui",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "NVIDIA VFX 노드 공개: 영상 업스케일·프레임 생성",
+    "summary": "RTX GPU에서 영상 업스케일, 프레임 보간, SDR-HDR 변환을 로컬로 할 수 있는 NVIDIA VFX 노드가 나왔어요. EXR과 색 관리도 지원해요.",
+    "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling",
+    "source": "notice"
+  },
+  {
     "id": "hugging-face-2026-10-12-1",
     "service": "hugging-face",
     "date": "2026.10.12",

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-10-13-1",
+    "service": "runway",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Runway Dev에 Kling 2.5 Turbo Pro·3.0·O3 추가",
+    "summary": "Runway Dev API에서 Kling 모델을 쓸 수 있게 됐어요. 텍스트나 이미지로 영상을 만들고, O3 모델은 레퍼런스 이미지와 영상 편집도 지원해요.",
+    "details": [
+      "Kling 2.5 Turbo Pro: 5·10초, 텍스트·시작 프레임 기반 영상 생성",
+      "Kling 3.0 Standard·Pro·4K: 3~15초, 오디오 옵션과 멀티샷 프롬프트 지원",
+      "Kling O3 Standard·Pro·4K: 레퍼런스 이미지 최대 7장, 영상-투-영상 편집"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  }
+]

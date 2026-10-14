@@ -1,5 +1,70 @@
 [
   {
+    "id": "runway-2026-10-13-1",
+    "service": "runway",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Runway Dev에 Kling 2.5 Turbo Pro·3.0·O3 추가",
+    "summary": "Runway Dev API에서 Kling 모델을 쓸 수 있게 됐어요. 텍스트나 이미지로 영상을 만들고, O3 모델은 레퍼런스 이미지와 영상 편집도 지원해요.",
+    "details": [
+      "Kling 2.5 Turbo Pro: 5·10초, 텍스트·시작 프레임 기반 영상 생성",
+      "Kling 3.0 Standard·Pro·4K: 3~15초, 오디오 옵션과 멀티샷 프롬프트 지원",
+      "Kling O3 Standard·Pro·4K: 레퍼런스 이미지 최대 7장, 영상-투-영상 편집"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "ltx-studio-2026-10-13-1",
+    "service": "ltx-studio",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "LTX Trainer를 LTX Explore에서 바로 사용",
+    "summary": "LTX Trainer로 캐릭터와 스타일 LoRA를 LTX Explore 안에서 바로 학습할 수 있게 됐어요. GPU 설정이나 개발 작업 없이 시작할 수 있어요.",
+    "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-13-2",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "HeyGen 10월 엔터프라이즈 API 업데이트",
+    "summary": "HeyGen API에 템플릿 생성, 프로페셔널 보이스 클론, Look Packs가 추가됐어요. ElevenLabs v4 음성도 쓸 수 있어요.",
+    "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-api-releases",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-13-1",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "HeyGen Voice 1 Turbo 모델 추가",
+    "summary": "TTS API에 빠르고 저렴한 heygen-voice-1-turbo 모델이 추가됐어요. 인스턴트 보이스의 응답 지연이 줄고 비용도 낮아졌어요.",
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-1-turbo",
+    "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-10-13-1",
+    "service": "figma-ai",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Figma Make에 Gemini 4 Argon 도입",
+    "summary": "Figma Make에서 Gemini 4 Argon 모델을 쓸 수 있도록 롤아웃을 시작했어요. 프로토타입을 만들 때 더 강한 추론 모델을 쓸 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=gemini-4-argon-is-rolling-out-in-figma-make",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-13-1",
+    "service": "comfyui",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "NVIDIA VFX 노드 공개: 영상 업스케일·프레임 생성",
+    "summary": "RTX GPU에서 영상 업스케일, 프레임 보간, SDR-HDR 변환을 로컬로 할 수 있는 NVIDIA VFX 노드가 나왔어요. EXR과 색 관리도 지원해요.",
+    "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-12-5",
     "service": "scenario",
     "date": "2026.10.12",
@@ -81,6 +146,24 @@
     "summary": "USDZ 파일이 미터 단위로 저장돼서 AR Quick Look, Blender 같은 USD 뷰어에서 실제 크기로 열려요.",
     "url": "https://docs.meshy.ai/en/api/changelog",
     "source": "dev"
+  },
+  {
+    "id": "layer-2026-10-12-1",
+    "service": "layer",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "Layer 대규모 업데이트: 도구형 홈과 Worlds 공개",
+    "summary": "이미지·영상·오디오·3D 작업을 작업별 도구로 나눈 새 홈이 나왔고, 프롬프트나 이미지로 탐색 가능한 Worlds도 생겼어요. DaVinci Resolve 플러그인과 PBR 머티리얼 생성도 추가됐어요.",
+    "details": [
+      "이미지·영상·오디오 작업별 전용 도구 추가 (리스타일, 지우기, 더빙 등)",
+      "Create world: 프롬프트나 이미지 최대 4장으로 둘러볼 수 있는 3D 공간 생성",
+      "Draft 미리보기: 일부 영상 모델에서 저렴한 미리보기 후 고화질 완성",
+      "DaVinci Resolve Studio 19 이상용 Layer 패널 출시",
+      "Blender에서 PBR 머티리얼 자동 생성",
+      "서비스 계정과 개인 액세스 토큰 만료 기간 설정"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
   },
   {
     "id": "hugging-face-2026-10-12-1",
@@ -384,85 +467,5 @@
     "summary": "Compliance API의 채팅 엔드포인트가 통합 Claude 환경의 대화도 반환하게 됐어요. Claude Enterprise 조직에서 베타로 제공돼요.",
     "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
     "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-08-1",
-    "service": "claude",
-    "date": "2026.10.08",
-    "kind": "정책",
-    "title": "2026 사용 정책 업데이트",
-    "summary": "11월 12일부터 적용되는 사용 정책이 개정됐어요. 기만적 캠페인과 감시 관련 금지 조항이 명확해졌고, 무기와 지원되지 않는 지역 이용에 관한 내용도 구체화됐어요.",
-    "url": "https://www.anthropic.com/news/2026-usage-policy-update",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-07-1",
-    "service": "scenario",
-    "date": "2026.10.07",
-    "kind": "기능",
-    "title": "Nano Banana 2.1 레퍼런스 이미지 최대 14장 지원",
-    "summary": "Nano Banana 2.1에서 레퍼런스 이미지를 최대 14장까지 넣을 수 있어요. 입력 영상도 쓸 수 있고 8:1까지 넓은 파노라마 비율을 만들 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-0e07e74a29fa8e6fc335df3b60673ca959ee0fcc576872cb391aaa4e0348a48b",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-07-1",
-    "service": "comfyui",
-    "date": "2026.10.07",
-    "kind": "앱",
-    "title": "ComfyUI v0.39.1 릴리스: Nano Banana 2.1 노드 추가",
-    "summary": "ComfyUI v0.39.1이 나왔어요. 파트너 노드에 Nano Banana 2.1이 추가돼 한 노드에서 텍스트-이미지와 이미지 편집을 1K~4K 해상도로 할 수 있어요.",
-    "details": [
-      "Nano Banana 2.1: 텍스트-이미지와 이미지 편집을 한 노드에서 처리",
-      "사고 수준 3단계, 참조 이미지 최대 14장 지원"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-39-1",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-07-3",
-    "service": "claude",
-    "date": "2026.10.07",
-    "kind": "요금",
-    "title": "Max·Team 요금제에 월별 API 크레딧 포함",
-    "summary": "Max와 Team 요금제에 매달 API 크레딧이 포함돼요. Console 조직을 연결하면 받을 수 있고, 며칠에 걸쳐 순차적으로 지급돼요.",
-    "url": "https://support.claude.com/en/articles/12138966-release-notes",
-    "source": "notice"
-  },
-  {
-    "id": "claude-2026-10-07-2",
-    "service": "claude",
-    "date": "2026.10.07",
-    "kind": "요금",
-    "title": "Claude Sonnet 5.5 프롬프트 캐시 읽기 가격 인하",
-    "summary": "Claude Sonnet 5.5의 프롬프트 캐시 읽기 가격이 100만 토큰당 0.20달러에서 0.10달러로 내려갔어요. 캐시 쓰기와 나머지 가격은 그대로예요.",
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-7-2026",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-07-1",
-    "service": "claude",
-    "date": "2026.10.07",
-    "kind": "모델",
-    "title": "Claude Haiku 5.5 출시",
-    "summary": "가장 빠르고 저렴하면서 가장 성능이 좋은 소형 모델 Claude Haiku 5.5가 나왔어요. 대량 처리와 응답 속도가 중요한 작업에 맞춰져 있어요.",
-    "details": [
-      "1M 토큰 컨텍스트 창, 최대 출력 128k 토큰 지원",
-      "adaptive thinking과 effort 파라미터 지원",
-      "Claude API, Amazon Bedrock, Google Cloud, Microsoft Foundry에서 이용 가능",
-      "Haiku 4.5용 코드는 수동 budget_tokens 설정에서 400 오류가 날 수 있어 마이그레이션 가이드 확인이 필요해요"
-    ],
-    "url": "https://www.anthropic.com/claude-haiku-5-5",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-06-1",
-    "service": "scenario",
-    "date": "2026.10.06",
-    "kind": "모델",
-    "title": "Kandinsky 6.0 Lite·Pro 모델 추가",
-    "summary": "Kandinsky 6.0 Lite와 Pro가 추가됐어요. 5초 영상을 네이티브 오디오와 함께 만들고 업스케일할 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-8f7b7da8c25b9a965a57ce99ef87bdf473e63591b0bd5a119f306bccfcfaf98c",
-    "source": "notice"
   }
 ]

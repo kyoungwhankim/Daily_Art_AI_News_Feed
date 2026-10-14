@@ -1,0 +1,22 @@
+[
+  {
+    "id": "heygen-2026-10-13-1",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "HeyGen Voice 1 Turbo 모델 추가",
+    "summary": "TTS API에 빠르고 저렴한 heygen-voice-1-turbo 모델이 추가됐어요. 인스턴트 보이스의 응답 지연이 줄고 비용도 낮아졌어요.",
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-1-turbo",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-13-2",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "HeyGen 10월 엔터프라이즈 API 업데이트",
+    "summary": "HeyGen API에 템플릿 생성, 프로페셔널 보이스 클론, Look Packs가 추가됐어요. ElevenLabs v4 음성도 쓸 수 있어요.",
+    "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-api-releases",
+    "source": "notice"
+  }
+]
