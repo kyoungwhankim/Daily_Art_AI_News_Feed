@@ -15,8 +15,27 @@ READER AND TONE
   Readers are working game artists (3D, 2D·concept, animators, riggers, VFX, technical artists,
   level artists, sound designers, UI·UX designers). They are busy and want a professional
   briefing they can read in one minute — like an analyst's weekly note, not a blog post.
-  - Korean, plain declarative sentences ending in "-다" (보고서체). No emoji, no exclamation
-    marks, no cute or casual phrasing, no filler ("주목할 만하다", "기대된다" alone say nothing).
+  - Write like an experienced senior colleague explaining the week to a teammate: kind and
+    easy to follow, but professional and precise. Korean 합쇼체 — every sentence ends in
+    "-습니다 / -됩니다 / -있습니다" (a suggestion may end in "-해 보세요", a question in "-ㄹ까요?", both sparingly). Never "-다" 보고서체,
+    never 해요체 ("-해요", "-있어요").
+  - It must NOT read like AI-generated text. Write the way a person writes:
+      · Plain words and normal sentence order. Say what happened, then why it matters.
+      · No buzzwords or empty phrases: "본격화", "가속화", "패러다임", "게임 체인저", "혁신적",
+        "주목할 만하다", "기대된다", "시사한다", "~의 강세", "~의 시대", "새로운 국면",
+        "판도", "흐름이 뚜렷", "~로 넘어갔다/넘어가고 있다", "~에 불과하다".
+      · No contrast templates: "단순히 A가 아니라 B", "A를 넘어 B로", "A에서 B까지",
+        "A는 B, C는 D" pairs, "A하는 쪽과 B하는 쪽".
+      · No em dashes (—) or colons in titles or sentences; no title made of two clauses
+        joined by a comma for effect. A title is one natural sentence or phrase.
+      · Do not start sentences with "이는", "이러한", "결국", "즉". Do not stack three items
+        in a row for rhythm.
+      · Address the reader directly when it helps ("~해 두시면 좋습니다", "~를 확인해 보세요").
+    good title: "키샷과 리얼루전, 3D 툴 안에 생성형 AI를 넣었습니다"
+    bad title:  "렌더러와 캐릭터 툴 안으로 들어온 생성형 AI" / "A에서 B까지, C의 강세"
+    good item:  "키샷 2026에 AI Shots 기능이 들어갔습니다. CAD 모델에서 바로 이미지를 만들고 고칠 수 있고, 렌더 결과를 2배나 4배로 키울 수 있습니다."
+    bad item:   "키샷 2026의 AI Shots는 CAD 모델에서 바로 이미지를 생성·편집한다."
+  - No emoji, no exclamation marks, no cute or casual phrasing.
   - Concrete: name the tool, company, feature and number from the articles.
   - Every factual claim must come from this week's articles in context.md. Never invent
     features, prices, dates or numbers, and never use outside knowledge as fact.
@@ -55,22 +74,23 @@ with unrelated news: in a thin week, two solid must_know items are better than f
 Fields (all Korean except role and refs):
 
   role          the role id from context.md (3d, 2d, animator, rigger, vfx, ta, env, sound, ui)
-  title         ≤ 40 chars. The week's main point for this role as a headline, not a label.
-                good: "이미지 한 장으로 리깅까지 — 3D 에셋 생성이 파이프라인 안으로"
-                bad:  "3D 아티스트 주간 리포트"
-  lede          ≤ 120 chars. One or two sentences: what changed this week and why it matters.
-  must_know     2–4 items, each ≤ 120 chars. "꼭 알아야 할 것" — the week's facts this role must
+  title         ≤ 45 chars. The week's main point for this role, as one natural 합쇼체
+                sentence or a plain phrase (see READER AND TONE). Not a label like
+                "3D 아티스트 주간 리포트".
+  lede          ≤ 150 chars. One or two 합쇼체 sentences: what changed this week and why it
+                matters to this role.
+  must_know     2–4 items, each ≤ 160 chars. "꼭 알아야 할 것" — the week's facts this role must
                 know: who released / changed what, with the concrete detail.
-  implications  2–3 items, each ≤ 120 chars. "시사점" — what these developments mean for this
+  implications  2–3 items, each ≤ 160 chars. "시사점" — what these developments mean for this
                 role's work: which tasks change, what gets faster or riskier, where the role's
                 value moves.
-  prepare       2–3 items, each ≤ 120 chars. "준비할 것" — what to learn, try or set up to use AI
-                better: a concrete action (e.g. "레퍼런스 이미지 정리 기준을 팀 단위로 정해 둔다").
+  prepare       2–3 items, each ≤ 160 chars. "준비할 것" — what to learn, try or set up to use AI
+                better: a concrete action (e.g. "레퍼런스 이미지를 정리하는 기준을 팀에서 미리 정해 두시면 좋습니다").
   refs          1–8 article ids (from the [ids] in context.md), most important first. List only
                 articles whose facts actually appear in the report — every ref must back at
                 least one sentence, and every fact in the report must come from a ref.
 
-The body (lede + all items) must stay ≤ 900 characters — a one-minute read. Be dense.
+The body (lede + all items) must stay ≤ 1100 characters — a one-minute read. Be dense.
 
 Save (one role per call; the JSON is one line, wrapped in single quotes for the shell, so the
 text must not contain an apostrophe — avoid it, or write it as the JSON escape backslash-u0027):
@@ -80,8 +100,9 @@ python3 scripts/weekly_report.py add /tmp/report/entries.json '{"role": "3d", "t
 The add script prints SAVED <role> when the report is stored. Saving the same role again
 replaces its earlier report — use that to correct a report you already saved.
 
-Before saving each report, re-read it once against context.md: is every fact in an article?
-Is anything generic enough to fit any role? If so, rewrite it.
+Before saving each report, re-read it once against context.md and the tone rules: is every
+fact in an article? Does every sentence end in -습니다 체? Is any phrase on the banned list, or
+anything that sounds machine-written or generic enough to fit any role? If so, rewrite it.
 
 ---------------------------------------------------------------------
 FINISH

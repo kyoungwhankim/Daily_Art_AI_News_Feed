@@ -31,10 +31,15 @@ WORK = '/tmp/report'
 DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
 # 1분 읽기 분량 — 글자 수 제한 (한국어 기준)
-LIMITS = {'title': 40, 'lede': 120, 'item': 120}
+LIMITS = {'title': 45, 'lede': 150, 'item': 160}
 COUNTS = {'must_know': (2, 4), 'implications': (2, 3), 'prepare': (2, 3)}
-TOTAL_MAX = 900          # 제목 제외 본문 전체 글자 수
+TOTAL_MAX = 1100         # 제목 제외 본문 전체 글자 수
 REFS = (1, 8)            # 참고 기사 수
+# 말투: 합쇼체(~습니다)만, AI스러운 상투어·대시 금지 (routine/report_agent_prompt.txt READER AND TONE)
+BANNED = ['본격화', '가속화', '패러다임', '게임 체인저', '게임체인저', '혁신적', '주목할 만', '기대된다',
+          '시사한다', '의 강세', '의 시대', '새로운 국면', '판도', '흐름이 뚜렷', '넘어갔다', '넘어가고 있다',
+          '에 불과', '단순히', '를 넘어', '을 넘어']
+SENT_END = re.compile(r'(니다|니까|까요|세요)[.?]$')   # 권유는 '~해 보세요'까지 허용
 BODY_EXCERPT = 700       # context.md에 넣는 기사 본문 앞부분 글자 수
 
 
@@ -168,6 +173,19 @@ def check(e: dict, ctx: dict) -> list:
         if bad:
             errs.append(f'refs not in this week\'s articles: {bad}')
     text = ' '.join([e.get('title') or '', e.get('lede') or ''] + sum((e.get(k) or [] for k in COUNTS), []))
+    for w in BANNED:
+        if w in text:
+            errs.append(f'banned phrase "{w}" (see READER AND TONE)')
+    if '—' in text or '–' in text:
+        errs.append('no em/en dashes (—, –) — write plain sentences')
+    for k, v in [('lede', [e.get('lede') or ''])] + [(k, e.get(k) or []) for k in COUNTS]:
+        for i, para in enumerate(v):
+            if not isinstance(para, str):
+                continue
+            for sent in re.split(r'(?<=[.?!])\s+', para.strip()):
+                if sent and not SENT_END.search(sent):
+                    errs.append(f'{k}[{i}]: every sentence must end in -습니다/-니다 (합쇼체): "{sent[-25:]}"')
+                    break
     if re.search(r'\[[^\]]*\]|TODO|REPLACE', text):
         errs.append('placeholder text left in the report')
     return errs
