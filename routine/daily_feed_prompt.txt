@@ -71,7 +71,7 @@ mandatory exactly as written. They do not change any condition of the steps.
       exactly as USING THE WHITELIST describes. Before moving to the next
       section, print one line listing which sources you checked.
 
-  R3. PHASE 1 STEP A uses the inline python/curl script given in SECTION 1 —
+  R3. PHASE 1 STEP A uses scripts/peek_article.py (SECTION 1) —
       not scripts/fetch_article.py. PHASE 2 STEP 3 uses
       scripts/fetch_article.py — run it again for EVERY digest article, even
       if PHASE 1 already fetched the same URL.
@@ -169,44 +169,44 @@ string in the script below.
   # ===== WHITELIST_ARTICLES (edit sources here) =====
   raw = """
   [공통]
-  therundown.ai, bensbites.com, theneurondaily.com, marktechpost.com, creativebloq.com, openai.com/news, developers.openai.com/blog, deepmind.google/blog, blog.google/technology/ai, runwayml.com/research, huggingface.co/blog, towardsdatascience.com, theverge.com
+  therundown.ai, bensbites.com, theneurondaily.com, marktechpost.com, creativebloq.com, openai.com/news, developers.openai.com/blog, deepmind.google/blog, blog.google/technology/ai, runway.com/news, huggingface.co/blog, towardsdatascience.com, theverge.com
   [게임 제작]
   - Primary:   80.lv, gamedeveloper.com, unrealengine.com/blog, unity.com/blog,
                venturebeat.com/games, blogs.nvidia.com, stability.ai/news,
-               runwayml.com/blog, business.adobe.com/ai.html, midjourney.com, meshy.ai/blog,
+               runway.com/news, news.adobe.com, midjourney.com, meshy.ai/blog,
                lumalabs.ai, elevenlabs.io/blog, cgchannel.com, fxguide.com,
                beforesandafters.com, sidefx.com/news, autodesk.com/blogs,
-               thisisgame.com, gamemeca.com, inven.co.kr, cgworld.jp, 4gamer.net,
+               gamemeca.com, inven.co.kr, cgworld.jp, 4gamer.net,
                automaton-media.com
   - Broadened: techcrunch.com, theverge.com, arstechnica.com, wired.com,
                game.donga.com, zdnet.co.kr, famitsu.com, gamebusiness.jp,
                gameworldobserver.com, golem.de, heise.de,
-               towardsdatascience.com, huggingface.co/blog, paperswithcode.com,
+               towardsdatascience.com, huggingface.co/blog, huggingface.co/papers,
                any official company blog or press release from an AI tool maker
   [글로벌 스튜디오 AI 도입]
   - Primary:   gamedeveloper.com, gdconf.com, gamesindustry.biz, pocketgamer.biz,
                venturebeat.com/games, kotaku.com, polygon.com, ign.com,
                unrealengine.com/blog, unity.com/blog, 80.lv, eurogamer.net,
                rockpapershotgun.com, pcgamer.com, gamesradar.com,
-               thisisgame.com, gamemeca.com, inven.co.kr, zdnet.co.kr,
+               gamemeca.com, inven.co.kr, zdnet.co.kr,
                automaton-media.com, gamebusiness.jp, 4gamer.net,
                gameworldobserver.com, mobilegamer.biz, gamesmarkt.de, afjv.com
-  - Broadened: techcrunch.com, theverge.com, bloomberg.com, reuters.com,
+  - Broadened: techcrunch.com, theverge.com, apnews.com,
                game.donga.com, famitsu.com, 36kr.com, technode.com, pandaily.com,
                heise.de, golem.de,
                wired.com, arstechnica.com, any studio official blog or press release
   [아트 전반]
   - Primary:   venturebeat.com/ai, theverge.com, techcrunch.com, arstechnica.com,
                huggingface.co/blog, openai.com/news, deepmind.google/blog,
-               research.adobe.com, blogs.nvidia.com, runwayml.com/blog,
-               stability.ai/news, elevenlabs.io/blog, suno.ai/blog,
+               news.adobe.com, blogs.nvidia.com, runway.com/news,
+               stability.ai/news, elevenlabs.io/blog, suno.com/blog,
                fxguide.com, beforesandafters.com, cgchannel.com,
                musictech.com, soundonsound.com, nofilmschool.com,
                aitimes.com, cgworld.jp, itmedia.co.jp/aiplus, cartoonbrew.com,
                heise.de, technode.com
-  - Broadened: wired.com, bloomberg.com, reuters.com, thenextweb.com,
+  - Broadened: wired.com, apnews.com, thenextweb.com,
                zdnet.co.kr, 36kr.com, pandaily.com, golem.de,
-               towardsdatascience.com, paperswithcode.com,
+               towardsdatascience.com, huggingface.co/papers,
                any official AI lab blog or product announcement page
   """
   # ===== end WHITELIST_ARTICLES =====
@@ -283,11 +283,15 @@ Each entry has two source lists:
   - whitelist[<section>]["broadened"]  → also check when primary does not fill the TARGET
 
 The lists include official / professional media from Korea, Japan, China and
-Europe (e.g. thisisgame.com, gamemeca.com, inven.co.kr, automaton-media.com,
+Europe (e.g. gamemeca.com, inven.co.kr, automaton-media.com,
 4gamer.net, cgworld.jp, gamebusiness.jp, 36kr.com, heise.de). Articles in
 Korean, Japanese, Chinese or German are fine — read them and write the entry
 in Korean as usual. The same news reported by several outlets is still ONE
 article (STEP A2 similarity check).
+
+Any whitelisted source may be used for ANY section. While checking a source for
+one section, if you see an on-topic article for another section, note its URL and
+use it when you reach that section (it still needs that section's checks).
 
 Search order (apply to every section):
   1. common + this section's primary
@@ -309,6 +313,18 @@ You can quickly re-print the lists for a section with:
   print('Primary :', ', '.join(w[sec]['primary']))
   print('Broadened:', ', '.join(w[sec]['broadened']))
   "
+
+SOURCE ACCESS NOTES — how to read sources that are hard to check from the homepage.
+"Checking a source" means finding its articles from today / yesterday (KST). Use, in order:
+the RSS feed if it has one, the site's news / list page, then WebFetch of that page,
+then a WebSearch restricted to the site (e.g. `site:gamemeca.com AI`). Known feeds / pages:
+  80.lv/feed · gamesindustry.biz/feed · gamedeveloper.com/rss.xml (use only /news/, /art/,
+  /production/ … article links, ignore keyword pages) · theverge.com/rss/ai-artificial-intelligence/index.xml ·
+  feeds.feedburner.com/ign/all · runway.com/news · news.adobe.com · suno.com/blog ·
+  huggingface.co/papers (research papers — use only clear creative-tool results)
+  venturebeat.com often answers 429 (rate limit) — wait once and retry, then use
+  `site:venturebeat.com` search. A source that cannot be read at all today counts as
+  checked: list it as "unreachable" in the checked-sources line instead of skipping silently.
 
 ---
 
@@ -333,60 +349,11 @@ For each article found, repeat this block:
 
   STEP A — Fetch the article and extract image, links, and body text:
 
-  python3 << 'PYEOF'
-  import subprocess, re
-  from urllib.parse import urljoin, urlparse
+  cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/peek_article.py "REPLACE_WITH_ARTICLE_URL"
 
-  url = "REPLACE_WITH_ARTICLE_URL"
-  result = subprocess.run(
-      ['curl', '-s', '-L', '--max-time', '8',
-       '-H', 'User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1)', url],
-      capture_output=True, text=True, timeout=12
-  )
-  html = result.stdout
-
-  # Extract og:image
-  image_url = ''
-  for p in [
-      r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']',
-      r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']',
-      r'name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)["\']',
-      r'content=["\']([^"\']+)["\'][^>]*name=["\']twitter:image["\']',
-  ]:
-      m = re.search(p, html, re.IGNORECASE)
-      if m:
-          image_url = m.group(1).strip()
-          break
-
-  # Extract candidate links
-  hrefs = re.findall(r'<a[^>]+href=["\']([^"\'#][^"\']*)["\']', html, re.IGNORECASE)
-  base = urlparse(url).netloc
-  links, seen = [], set()
-  for href in hrefs:
-      full = href if href.startswith('http') else urljoin(url, href)
-      p = urlparse(full)
-      if full not in seen and p.netloc and p.netloc != base and (
-          any(v in p.netloc for v in ['youtube.com','youtu.be','vimeo.com']) or
-          any(k in full.lower() for k in ['github.com','huggingface.co','demo',
-              'trial','product','features','release','launch','app'])
-      ):
-          seen.add(full); links.append(full)
-      if len(links) >= 8: break
-
-  # Extract visible article body text
-  clean = re.sub(r'<(script|style|nav|footer|header|aside|iframe|form)[^>]*>.*?</\1>',
-                 '', html, flags=re.DOTALL|re.IGNORECASE)
-  clean = re.sub(r'<[^>]+>', ' ', clean)
-  clean = re.sub(r'[ \t]+', ' ', clean)
-  clean = re.sub(r'\n\s*\n+', '\n', clean).strip()
-  article_text = clean[:3000]
-
-  print("OG_IMAGE:", image_url or "NO_IMAGE")
-  for l in links:
-      print("LINK:", l)
-  print("---ARTICLE_TEXT---")
-  print(article_text)
-  PYEOF
+  It prints OG_IMAGE:, LINK: lines, then ---ARTICLE_TEXT--- and the first 3,000
+  characters of the page text. If the page blocks scripts (403/empty text), read
+  the article with WebFetch instead; if that also fails, skip the article.
 
   Read the ARTICLE_TEXT printed above carefully before writing anything.
   Base your title_ko and summary_ko entirely on what the article actually says.
@@ -403,13 +370,20 @@ For each article found, repeat this block:
 
   cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/find_similar.py \
     --title "[draft Korean title]" \
-    --text "[the original English headline + key names from ARTICLE_TEXT]" \
+    --text "[the original headline + key names, numbers and amounts from ARTICLE_TEXT + your draft Korean summary]" \
     --digest /tmp/feed/digest.json
 
-  It prints NO_SIMILAR, or up to 5 lines "SIMILAR: score | date | tab | headline | url".
-  If any SIMILAR line is about the SAME event (the same announcement, release, deal,
-  survey or report — not merely the same company or topic), this article is a
-  duplicate: skip it and find a different one. Otherwise continue to STEP B.
+  It prints NO_SIMILAR, or up to 5 lines "SIMILAR: score | date | tab | headline | url"
+  (or "LIKELY_SAME: ..." when the score is 0.35 or higher).
+  If any line is about the SAME event (the same announcement, release, deal,
+  survey, report, incident or interview — not merely the same company or topic),
+  this article is a duplicate: skip it and find a different one. A different outlet,
+  a different angle or a later follow-up with no new facts is still the SAME event.
+  The same game / studio / product together with the same numbers (amounts, counts,
+  dates) almost always means the same event.
+  For every LIKELY_SAME line, skip the article unless you can name the concrete new
+  fact that makes it a different event (write that fact in the checked-sources line).
+  Otherwise continue to STEP B.
   Mention skipped duplicates in the section's checked-sources line.
 
   STEP B — Save this article as a JSON entry.

@@ -100,7 +100,10 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 
 - KST 기준 오늘 또는 어제 뉴스만 탐색. 섹션별 최대 20개. 뉴스가 없다면 억지로 게재할 필요 없음 (개수를 위해 품질·중복 기준을 낮추지 않는다).
 - 탐색 순서: 공통 + 섹션별 Primary → (목표 개수에 못 미치면) 섹션별 Broadened → (둘 다 없으면) 오픈 웹 검색
-- 출처에는 한국(디스이즈게임, 게임메카, 인벤, ZDNet Korea, AI타임스 등)·일본(AUTOMATON, 4Gamer, CGWORLD, GameBusiness.jp 등)·중국(36Kr, TechNode, Pandaily)·유럽(heise, Golem, GamesMarkt, AFJV, Game World Observer, MobileGamer.biz 등)의 공식·전문 매체도 있다. 기사 언어와 상관없이 한국어로 정리한다
+- Whitelist의 출처는 어느 섹션에든 쓸 수 있다 (다른 섹션 출처를 보다 맞는 기사를 찾으면 그 섹션에 쓴다). 읽기 어려운 출처는 프롬프트의 SOURCE ACCESS NOTES(피드 주소·검색 방법)를 따른다
+- 같은 소식 검사: `scripts/find_similar.py`가 제목·요약의 글자 묶음, 고유명사·숫자(금액 등), 조사를 뗀 한국어 낱말을 비교한다. 점수 0.35 이상은 LIKELY_SAME — 새 사실이 없으면 건너뛴다
+- PHASE 1 STEP A(기사 미리 읽기)는 `scripts/peek_article.py`
+- 출처에는 한국(게임메카, 인벤, ZDNet Korea, AI타임스 등)·일본(AUTOMATON, 4Gamer, CGWORLD, GameBusiness.jp 등)·중국(36Kr, TechNode, Pandaily)·유럽(heise, Golem, GamesMarkt, AFJV, Game World Observer, MobileGamer.biz 등)의 공식·전문 매체도 있다. 기사 언어와 상관없이 한국어로 정리한다
 - 콘텐츠 팜, SEO 애그리게이터, 광고 위주 재게시 사이트는 제외.
 
 ### Whitelist
