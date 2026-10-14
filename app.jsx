@@ -2772,6 +2772,18 @@ function App() {
   const [welcome, setWelcome] = useState(false);
   const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
   const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
+
+  // 설정·로그인 전 나만의 피드는 정적 페이지에 광고 스크립트가 없다 (애드센스: 콘텐츠 없는 화면에 광고 금지).
+  // 그 주소로 들어왔다가 내용 있는 화면(기사·로그인 후 피드)으로 가면 그때 불러온다.
+  useEffect(() => {
+    if (section === 'settings' || (section === 'me' && !auth.user)) return;
+    if (document.querySelector('script[src*="adsbygoogle.js"]')) return;
+    const s = document.createElement('script');
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7751014405174019';
+    document.head.appendChild(s);
+  }, [section, auth.user]);
   // 처음 로그인한 회원(관심사 없음)은 한 번 설정 페이지로 안내한다
   useEffect(() => {
     if (!auth.user || profileState.loading || profileState.profile || profileState.error) return;
