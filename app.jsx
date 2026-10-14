@@ -2756,6 +2756,63 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
 }
 
 /* ---------- App ---------- */
+/* ---------- 첫 화면 안내 팝업 (나만의 피드 사용법) ---------- */
+// 메인(/)으로 들어올 때 띄운다. '오늘은 그만 보기'를 누르면 그날(브라우저 날짜)에는 다시 뜨지 않는다.
+const GUIDE_KEY = 'aiad:guide-hide';
+const todayKey = () => new Date().toLocaleDateString('sv-SE');   // YYYY-MM-DD
+function guideHiddenToday() {
+  try { return localStorage.getItem(GUIDE_KEY) === todayKey(); } catch { return false; }
+}
+const GUIDE_STEPS = [
+  { icon: 'M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3', title: '로그인', sub: 'Google 계정으로 한 번에' },
+  { icon: 'M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6', title: '관심사 고르기', sub: '직군 · 주제 · AI 서비스 · 키워드' },
+  { icon: 'M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z', title: '매일 아침 확인', sub: '새 소식엔 NEW 표시' },
+  { icon: 'M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z', title: '저장하기', sub: '다시 볼 소식은 북마크' },
+];
+function GuidePopup({ loggedIn, onStart, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  const hideToday = () => {
+    try { localStorage.setItem(GUIDE_KEY, todayKey()); } catch {}
+    onClose();
+  };
+  return (
+    <div className="guide-backdrop" onClick={onClose}>
+      <div className="guide" role="dialog" aria-modal="true" aria-labelledby="guide-title" onClick={(e) => e.stopPropagation()}>
+        <button type="button" className="guide-x" onClick={onClose} aria-label="닫기">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+        <div className="guide-hero">
+          <span className="guide-eyebrow">HOW TO USE</span>
+          <h2 id="guide-title">내 일에 필요한 AI 소식만,<br /><em>나만의 피드</em></h2>
+        </div>
+        <ol className="guide-steps">
+          {GUIDE_STEPS.map((st, i) => (
+            <li key={st.title} style={{ '--i': i }}>
+              <span className="guide-num">{i + 1}</span>
+              <span className="guide-ic">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d={st.icon} /></svg>
+              </span>
+              <b>{st.title}</b>
+              <small>{st.sub}</small>
+            </li>
+          ))}
+        </ol>
+        <button type="button" className="guide-cta" onClick={onStart}>
+          {loggedIn ? '나만의 피드 보기' : '나만의 피드 시작하기'} <span aria-hidden="true">→</span>
+        </button>
+        <div className="guide-foot">
+          <button type="button" onClick={hideToday}>오늘은 그만 보기</button>
+          <button type="button" onClick={onClose}>닫기</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const auth = useAuth();
   const [theme, setTheme] = useState(() => localStorage.getItem('aiad:theme') || 'light');
@@ -2772,6 +2829,8 @@ function App() {
   const [welcome, setWelcome] = useState(false);
   const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
   const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
+  const [guide, setGuide] = useState(() => !!INITIAL_ROUTE.home && !guideHiddenToday());
+  const closeGuide = useCallback(() => setGuide(false), []);
 
   // 설정·로그인 전 나만의 피드는 정적 페이지에 광고 스크립트가 없다 (애드센스: 콘텐츠 없는 화면에 광고 금지).
   // 그 주소로 들어왔다가 내용 있는 화면(기사·로그인 후 피드)으로 가면 그때 불러온다.
@@ -3147,6 +3206,7 @@ function App() {
       </div>
       </div>
       <IosInstallHint />
+      {guide && <GuidePopup loggedIn={!!auth.user} onClose={closeGuide} onStart={() => { setGuide(false); goMe(); }} />}
 
 
       {open && (
