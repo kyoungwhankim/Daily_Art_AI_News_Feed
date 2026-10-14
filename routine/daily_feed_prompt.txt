@@ -317,14 +317,52 @@ You can quickly re-print the lists for a section with:
 SOURCE ACCESS NOTES — how to read sources that are hard to check from the homepage.
 "Checking a source" means finding its articles from today / yesterday (KST). Use, in order:
 the RSS feed if it has one, the site's news / list page, then WebFetch of that page,
-then a WebSearch restricted to the site (e.g. `site:gamemeca.com AI`). Known feeds / pages:
-  80.lv/feed · gamesindustry.biz/feed · gamedeveloper.com/rss.xml (use only /news/, /art/,
-  /production/ … article links, ignore keyword pages) · theverge.com/rss/ai-artificial-intelligence/index.xml ·
-  feeds.feedburner.com/ign/all · runway.com/news · news.adobe.com · suno.com/blog ·
-  huggingface.co/papers (research papers — use only clear creative-tool results)
-  venturebeat.com often answers 429 (rate limit) — wait once and retry, then use
-  `site:venturebeat.com` search. A source that cannot be read at all today counts as
-  checked: list it as "unreachable" in the checked-sources line instead of skipping silently.
+then a WebSearch restricted to the site (e.g. `site:gamemeca.com AI`). Read feeds with
+curl and a browser User-Agent (feeds are long — grep the <item>/<entry> titles and dates):
+
+  curl -sL --max-time 15 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126" "FEED_URL"
+
+FEEDS (all checked 2026-10-14 and returning current items):
+  common   therundown.ai/feed/ · bensbites.com/feed · rss.beehiiv.com/feeds/N4eCstxvgX.xml (The Neuron)
+           · www.marktechpost.com/feed/ · creativebloq.com/feeds.xml · openai.com/news/rss.xml
+           · developers.openai.com/rss.xml (posts rarely) · deepmind.google/blog/feed
+           · blog.google/technology/ai/rss · huggingface.co/blog/feed.xml · towardsdatascience.com/feed
+           · theverge.com/rss/ai-artificial-intelligence/index.xml (all news: theverge.com/rss/index.xml)
+  games    80.lv/feed · gamedeveloper.com/rss.xml (use only /news/, /art/, /production/ … article
+           links, ignore keyword pages) · unrealengine.com/rss.xml · unity.com/blog/feed
+           · blogs.nvidia.com/feed/ · stability.ai/news-updates?format=rss · elevenlabs.io/blog/rss.xml
+           · fxguide.com/feed · beforesandafters.com/feed/ · gameworldobserver.com/feed
+           · techcrunch.com/feed/ · arstechnica.com/feed · wired.com/feed/rss
+  studios  gamesindustry.biz/feed · pocketgamer.biz/rss · kotaku.com/feed · polygon.com/feed
+           · ign.com/rss/v2/articles/feed · eurogamer.net/feed · rockpapershotgun.com/feed
+           · pcgamer.com/feeds.xml · gamesradar.com/feeds.xml · mobilegamer.biz/feed/
+           · gamesmarket.global/rss/ (gamesmarkt.de) · afjv.com/rss.xml
+  art      cartoonbrew.com/feed · musictech.com/feed · soundonsound.com/rss.xml
+           · nofilmschool.com/feeds/feed.rss · thenextweb.com/feed
+  Korea    gamemeca.com/rss.php · inven.co.kr/webzine/news/rss.php · game.donga.com/feeds/rss/
+           · feeds.feedburner.com/zdkorea (ZDNet Korea) · aitimes.com/rss/allArticle.xml
+  Japan    4gamer.net/rss/index.xml · automaton-media.com/feed/ · gamebusiness.jp/rss20/index.rdf
+           · cgworld.jp/atom.xml · rss.itmedia.co.jp/rss/2.0/aiplus.xml (ITmedia AI+)
+  China    www.36kr.com/feed (needs www.) · technode.com/feed/
+           · pandaily.com/feed
+  Europe   golem.de/rss · heise.de/rss/heise-atom.xml
+
+NO FEED — the list page shows dates that curl can read (curl the page, grep for today's date):
+  cgchannel.com (homepage; its /feed/ is stuck in 2024 — do not use it) · runway.com/news
+  · meshy.ai/blog · lumalabs.ai/blog · suno.com/blog · huggingface.co/papers (research papers —
+  use only clear creative-tool results) · famitsu.com (homepage, dates as 2026年10月14日)
+  · gdconf.com/news · news.adobe.com (homepage; may lag — also run `site:news.adobe.com` search)
+
+NO FEED, NO READABLE DATES — WebFetch the page, then `site:` search if that fails:
+  sidefx.com/news · midjourney.com/updates · developers.openai.com/blog (feed above works)
+
+BLOCKED for scripts — use `site:` search only:
+  venturebeat.com (429 rate limit; wait once and retry, then `site:venturebeat.com`)
+  · apnews.com (403) · autodesk.com/blogs (403) · openai.com pages (403 — the news feed works)
+
+A source that cannot be read at all today counts as checked: list it as "unreachable" in the
+checked-sources line instead of skipping silently. A source with no item from today / yesterday
+is "checked, nothing new" — not unreachable.
 
 ---
 
