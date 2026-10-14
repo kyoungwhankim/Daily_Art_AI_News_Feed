@@ -6,16 +6,19 @@
 (예전에는 루틴 프롬프트에 같은 코드를 직접 넣어 매번 붙여 넣었다. 동작은 같다.)
 PHASE 2 STEP 3은 scripts/fetch_article.py(본문 8000자, WebFetch 필요 여부 표시)를 쓴다.
 """
-import subprocess, re, sys
+import os, re, sys
 from urllib.parse import urljoin, urlparse
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fetch_article import fetch_with_curl, is_curl_failure, BROWSER_UA
+
 url = sys.argv[1]
-result = subprocess.run(
-    ['curl', '-s', '-L', '--max-time', '8',
-     '-H', 'User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1)', url],
-    capture_output=True, text=True, timeout=12
-)
-html = result.stdout
+html = fetch_with_curl(url)
+if is_curl_failure(html):
+    # Googlebot을 막는 사이트(befores & afters 등)가 있어 일반 브라우저로 한 번 더
+    html = fetch_with_curl(url, BROWSER_UA)
+if is_curl_failure(html):
+    print("CURL_FAILED — body empty, too short, or bot-blocked. Read this URL with WebFetch instead.")
 
 # Extract og:image
 image_url = ''
