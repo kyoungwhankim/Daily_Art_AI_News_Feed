@@ -2763,12 +2763,50 @@ const todayKey = () => new Date().toLocaleDateString('sv-SE');   // YYYY-MM-DD
 function guideHiddenToday() {
   try { return localStorage.getItem(GUIDE_KEY) === todayKey(); } catch { return false; }
 }
+const GUIDE_DONE_KEY = 'aiad:feed-set';   // 나만의 피드를 설정한 적 있는 브라우저 (안내를 띄우지 않는다)
+function feedSetHere() {
+  try { return localStorage.getItem(GUIDE_DONE_KEY) === '1'; } catch { return false; }
+}
 const GUIDE_STEPS = [
-  { icon: 'M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3', title: '로그인', sub: 'Google 계정으로 한 번에' },
-  { icon: 'M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6', title: '관심사 고르기', sub: '직군 · 주제 · AI 서비스 · 키워드' },
-  { icon: 'M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z', title: '매일 아침 확인', sub: '새 소식엔 NEW 표시' },
-  { icon: 'M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z', title: '저장하기', sub: '다시 볼 소식은 북마크' },
+  ['Google로 로그인', '가입 절차 없이 한 번에'],
+  ['직군·관심사 고르기', '주제 · AI 서비스 · 키워드'],
+  ['매일 아침 확인', '새 소식은 NEW, 다시 볼 건 저장'],
 ];
+// 왼쪽 그림: 실제 나만의 피드 화면을 줄여 그린 모형
+function GuideMock() {
+  const rows = [
+    { hue: 'a', w: '86%', isNew: true },
+    { hue: 'b', w: '72%', isNew: true, saved: true },
+    { hue: 'c', w: '80%' },
+  ];
+  return (
+    <div className="gm" aria-hidden="true">
+      <div className="gm-card">
+        <div className="gm-head">
+          <span className="gm-star">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" /></svg>
+          </span>
+          <b>나만의 피드</b>
+          <span className="gm-today">오늘 <em>3</em></span>
+        </div>
+        <div className="gm-chips"><span>3D 아티스트</span><span>영상 생성</span><span>Blender</span></div>
+        {rows.map((r, i) => (
+          <div className="gm-row" key={i} style={{ '--i': i }}>
+            <span className={`gm-thumb gm-thumb-${r.hue}`} />
+            <span className="gm-lines">
+              {r.isNew && <span className="gm-new">NEW</span>}
+              <span className="gm-line" style={{ width: r.w }} />
+              <span className="gm-line gm-line-2" />
+            </span>
+            <span className={`gm-mark ${r.saved ? 'on' : ''}`}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill={r.saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /></svg>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 function GuidePopup({ loggedIn, onStart, onClose }) {
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -2783,30 +2821,26 @@ function GuidePopup({ loggedIn, onStart, onClose }) {
     <div className="guide-backdrop" onClick={onClose}>
       <div className="guide" role="dialog" aria-modal="true" aria-labelledby="guide-title" onClick={(e) => e.stopPropagation()}>
         <button type="button" className="guide-x" onClick={onClose} aria-label="닫기">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
         </button>
-        <div className="guide-hero">
-          <span className="guide-eyebrow">HOW TO USE</span>
-          <h2 id="guide-title">내 일에 필요한 AI 소식만,<br /><em>나만의 피드</em></h2>
-        </div>
-        <ol className="guide-steps">
-          {GUIDE_STEPS.map((st, i) => (
-            <li key={st.title} style={{ '--i': i }}>
-              <span className="guide-num">{i + 1}</span>
-              <span className="guide-ic">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d={st.icon} /></svg>
-              </span>
-              <b>{st.title}</b>
-              <small>{st.sub}</small>
-            </li>
-          ))}
-        </ol>
-        <button type="button" className="guide-cta" onClick={onStart}>
-          {loggedIn ? '나만의 피드 보기' : '나만의 피드 시작하기'} <span aria-hidden="true">→</span>
-        </button>
-        <div className="guide-foot">
-          <button type="button" onClick={hideToday}>오늘은 그만 보기</button>
-          <button type="button" onClick={onClose}>닫기</button>
+        <div className="guide-art"><GuideMock /></div>
+        <div className="guide-body">
+          <span className="guide-pill">처음 오셨나요?</span>
+          <h2 id="guide-title">내 일에 맞춘 AI 소식,<br />매일 아침 한 곳에</h2>
+          <p className="guide-lead">관심사만 고르면 나만의 피드가 채워져요.</p>
+          <ol className="guide-steps">
+            {GUIDE_STEPS.map(([t, d], i) => (
+              <li key={t}><span className="guide-n">{i + 1}</span><span><b>{t}</b><small>{d}</small></span></li>
+            ))}
+          </ol>
+          <button type="button" className="guide-cta" onClick={onStart}>
+            {loggedIn ? '관심사 고르러 가기' : '나만의 피드 시작하기'}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </button>
+          <div className="guide-foot">
+            <button type="button" onClick={hideToday}>오늘은 그만 보기</button>
+            <button type="button" onClick={onClose}>둘러볼게요</button>
+          </div>
         </div>
       </div>
     </div>
@@ -2826,11 +2860,22 @@ function App() {
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
   const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
+  // 첫 화면 안내: 메인으로 들어왔고, 오늘 그만 보기를 누르지 않았고, 나만의 피드를 설정한 회원이 아닐 때만.
+  // 로그인 상태로 돌아온 사람은 관심사를 불러온 뒤에 판단한다 (설정한 회원에게 잠깐 떴다 사라지지 않게).
+  const [guide, setGuide] = useState(() => !!INITIAL_ROUTE.home && !guideHiddenToday() && !feedSetHere());
+  const closeGuide = useCallback(() => setGuide(false), []);
+  const feedSet = !!(auth.user && profileState.profile);
+  useEffect(() => {
+    if (!feedSet) return;
+    try { localStorage.setItem(GUIDE_DONE_KEY, '1'); } catch {}
+    setGuide(false);
+  }, [feedSet]);
+  const guideReady = !(AUTH_ON && hasStoredSession())
+    || !!(auth.user && !profileState.loading && profileState.forId === auth.user.id);
+  const showGuide = guide && guideReady && !feedSet;
   const [welcome, setWelcome] = useState(false);
   const goMe = () => { setSection('me'); setOpen(null); window.scrollTo({ top: 0 }); };
   const goSettings = () => { setSection('settings'); setOpen(null); window.scrollTo({ top: 0 }); };
-  const [guide, setGuide] = useState(() => !!INITIAL_ROUTE.home && !guideHiddenToday());
-  const closeGuide = useCallback(() => setGuide(false), []);
 
   // 설정·로그인 전 나만의 피드는 정적 페이지에 광고 스크립트가 없다 (애드센스: 콘텐츠 없는 화면에 광고 금지).
   // 그 주소로 들어왔다가 내용 있는 화면(기사·로그인 후 피드)으로 가면 그때 불러온다.
@@ -3206,7 +3251,7 @@ function App() {
       </div>
       </div>
       <IosInstallHint />
-      {guide && <GuidePopup loggedIn={!!auth.user} onClose={closeGuide} onStart={() => { setGuide(false); goMe(); }} />}
+      {showGuide && <GuidePopup loggedIn={!!auth.user} onClose={closeGuide} onStart={() => { setGuide(false); goMe(); }} />}
 
 
       {open && (
