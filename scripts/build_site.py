@@ -654,15 +654,16 @@ def build_about() -> str:
     tabs = ''.join(f'<li><a href="{href(root, tab_path(t))}"><strong>{esc(label)}</strong></a> — {esc(desc)}</li>'
                    for t, label, desc in TABS)
     return (head(root, f'소개 | {SITE_NAME}',
-                 f'{SITE_NAME}가 무엇을 다루고, 기사를 어떻게 고르고 쓰는지 소개합니다.',
+                 f'{SITE_NAME}는 직군과 관심사에 맞춘 나만의 AI 뉴스 피드예요. 운영 목적과 기사를 고르고 쓰는 기준을 소개합니다.',
                  abs_url('about/'))
             + f"""<body>
 <div class="page">
 {header(root)}
 <main class="static-main static-doc">
   <h1 class="feed-title">소개</h1>
-  <p class="feed-sub">{SITE_NAME}는 게임과 아트를 만드는 사람들을 위한 한국어 AI 뉴스 사이트예요.
-  매일 아침, 아트 작업에 영향을 주는 AI 소식을 골라 한국어로 정리합니다.</p>
+  <p class="feed-sub">{SITE_NAME}는 게임과 아트를 만드는 사람들을 위한 <strong>나만의 AI 뉴스 피드</strong>예요.
+  내 직군과 관심사만 알려 주면, 매일 쏟아지는 AI 소식 가운데 내 작업에 필요한 것만 골라 한국어로 모아 드려요.</p>
+  <p><a class="chip active" href="{root}me/">나만의 피드 시작하기 →</a></p>
 
   <h2>운영 목적</h2>
   <p>AI는 하루가 다르게 발전하고, 새 도구와 소식이 매일 쏟아집니다. 그런데 정작 현업 아티스트들은 정보의 홍수
@@ -672,15 +673,28 @@ def build_about() -> str:
   <strong>직무와 관심사에 맞게 큐레이션</strong>해 전하는 것이 이 서비스의 목표예요. 넘쳐나는 정보를 쫓는 대신,
   꼭 알아야 할 소식만 짧은 시간에 확인하고 다시 작업에 집중할 수 있도록 돕고 싶습니다.</p>
 
-  <h2>무엇을 다루나요</h2>
+  <h2>나만의 피드</h2>
+  <p>Google 계정으로 로그인하고 관심사를 고르면, 그에 맞는 소식만 모인 나만의 피드가 매일 아침 새로 채워져요.</p>
+  <ol>
+    <li><strong>관심사 고르기</strong> — 내 직군(3D·2D·컨셉, 애니메이터, 리거, VFX, 테크니컬 아티스트, 레벨,
+      사운드, UI·UX), 관심 뉴스 주제, 업데이트를 받아 볼 AI 서비스, 직접 입력한 키워드를 골라요.</li>
+    <li><strong>매일 맞춤 소식 받기</strong> — 고른 관심사에 맞는 뉴스 기사와 AI 서비스의 공식 업데이트가 한곳에 모여요.
+      관심 서비스를 무료로 써 볼 수 있는 방법이 생기면 그것도 알려 드려요.</li>
+    <li><strong>새 소식만 빠르게</strong> — 지난 방문 이후 새로 들어온 소식에는 NEW 표시가 붙어, 이미 본 것은 건너뛰고
+      새 소식만 확인할 수 있어요.</li>
+    <li><strong>나중에 다시 보기</strong> — 마음에 드는 기사와 업데이트는 저장해 두고 언제든 다시 볼 수 있어요.</li>
+  </ol>
+  <p>로그인하지 않아도 <a href="{root}for/">아티스트 브리핑</a>에서 직군을 고르면 그 직군에 맞춘 소식을 바로 볼 수 있어요.
+  관심사 설정과 저장 정보를 어떻게 다루는지는 <a href="{root}privacy/">개인정보처리방침</a>에 적어 두었어요.</p>
+
+  <h2>피드에 담기는 소식</h2>
+  <p>나만의 피드는 아래 소식들 가운데 내 관심사에 맞는 것을 골라 보여 줘요. 각 분류는 따로 둘러볼 수도 있어요.</p>
   <ul>
     {tabs}
     <li><a href="{root}updates/"><strong>업데이트</strong></a> — 이미지·영상·3D·음악 등 아트 AI 서비스 50여 곳의
-      공식 업데이트 소식을 서비스별로 모아요.</li>
-    <li><a href="{root}for/"><strong>아티스트 브리핑</strong></a> — 3D·2D·애니메이터·VFX·사운드 등 직군별로
-      꼭 볼 만한 뉴스와 도구를 묶어 보여 줘요.</li>
+      공식 업데이트 소식.</li>
     <li><a href="{root}free/"><strong>AI 무료로 써보기</strong></a> — 아트 AI 서비스를 무료로 써 볼 수 있는
-      방법(무료 플랜·체험·가입 크레딧)을 매주 확인해 정리해요.</li>
+      방법(무료 플랜·체험·가입 크레딧)을 매주 확인해 정리.</li>
   </ul>
 
   <h2>기사를 고르는 기준</h2>
