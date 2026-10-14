@@ -2212,7 +2212,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .guide {
   --g-bg: #ffffff; --g-ink: #1d1d22; --g-sub: #6b6b75; --g-line: #ececf0; --g-soft: #f5f6fa;
   position: relative; width: 100%; max-width: 780px; max-height: calc(100vh - 40px); overflow: auto;
-  display: grid; grid-template-columns: 1fr 1.05fr;
+  display: grid; grid-template-columns: .9fr 1.15fr;
   background: var(--g-bg); color: var(--g-ink);
   border-radius: 24px; border: 1px solid rgba(0,0,0,.06);
   box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 24px 64px -12px rgba(20,20,40,.35);
@@ -2296,7 +2296,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   color: #4459a8; background: #eef1fc;
 }
 [data-theme="dark"] .guide-pill { color: #a9b8ef; background: #232a44; }
-.guide-body h2 { margin: 14px 0 8px; font-size: 26px; line-height: 1.32; font-weight: 800; letter-spacing: -0.03em; }
+.guide-body h2 { margin: 14px 0 8px; word-break: keep-all; font-size: 25px; line-height: 1.32; font-weight: 800; letter-spacing: -0.03em; }
 .guide-lead { margin: 0 0 22px; font-size: 14.5px; color: var(--g-sub); }
 .guide-steps { list-style: none; margin: 0 0 24px; padding: 0; display: flex; flex-direction: column; gap: 14px; }
 .guide-steps li { display: flex; align-items: flex-start; gap: 12px; }

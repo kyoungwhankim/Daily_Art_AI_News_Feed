@@ -2770,7 +2770,7 @@ function feedSetHere() {
 const GUIDE_STEPS = [
   ['Google로 로그인', '가입 절차 없이 한 번에'],
   ['직군·관심사 고르기', '주제 · AI 서비스 · 키워드'],
-  ['매일 아침 확인', '새 소식은 NEW, 다시 볼 건 저장'],
+  ['매일 확인', '새 소식은 NEW, 다시 볼 건 저장'],
 ];
 // 왼쪽 그림: 실제 나만의 피드 화면을 줄여 그린 모형
 function GuideMock() {
@@ -2826,8 +2826,8 @@ function GuidePopup({ loggedIn, onStart, onClose }) {
         <div className="guide-art"><GuideMock /></div>
         <div className="guide-body">
           <span className="guide-pill">처음 오셨나요?</span>
-          <h2 id="guide-title">내 일에 맞춘 AI 소식,<br />매일 아침 한 곳에</h2>
-          <p className="guide-lead">관심사만 고르면 나만의 피드가 채워져요.</p>
+          <h2 id="guide-title">내 분야에 맞는 AI 소식만<br />골라서, 매일 새로운 소식으로</h2>
+          <p className="guide-lead">직군+관심사만 고르면 나만의 피드가 채워져요.</p>
           <ol className="guide-steps">
             {GUIDE_STEPS.map(([t, d], i) => (
               <li key={t}><span className="guide-n">{i + 1}</span><span><b>{t}</b><small>{d}</small></span></li>
