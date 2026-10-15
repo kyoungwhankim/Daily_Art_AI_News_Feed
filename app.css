@@ -2383,13 +2383,13 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 .rp-doc, .rp-crumbs { max-width: 760px; margin-left: auto; margin-right: auto; }
 .rp-doc-head { padding: 22px 0 24px; border-bottom: 2px solid var(--rp-ink); }
 .rp-doc-head h1 { margin: 14px 0 14px; font-size: 30px; line-height: 1.32; font-weight: 800; letter-spacing: -0.03em; word-break: keep-all; }
-.rp-lede { margin: 0; font-size: 16.5px; line-height: 1.7; color: var(--rp-ink); word-break: keep-all; }
+.rp-lede { margin: 0; font-size: 17.5px; line-height: 1.7; color: var(--rp-ink); word-break: keep-all; }
 .rp-byline { margin-top: 16px; font-size: 12.5px; color: var(--rp-meta); }
 .rp-sec { padding: 22px 0 6px; border-bottom: 1px solid var(--rp-line); }
 .rp-sec h2 { display: flex; align-items: baseline; gap: 12px; margin: 0 0 12px; font-size: 17px; font-weight: 800; letter-spacing: -0.01em; }
 .rp-sec-no { font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--rp-hi); font-variant-numeric: tabular-nums; }
 .rp-sec ul { list-style: none; margin: 0; padding: 0; }
-.rp-sec li { position: relative; padding: 0 0 14px 18px; font-size: 15.5px; line-height: 1.75; word-break: keep-all; }
+.rp-sec li { position: relative; padding: 0 0 14px 18px; font-size: 16.5px; line-height: 1.75; word-break: keep-all; }
 .rp-sec ul li::before { content: ""; position: absolute; left: 2px; top: .78em; width: 6px; height: 1.5px; background: var(--rp-ink); }
 .rp-refs ol { margin: 0; padding: 0 0 8px; list-style: none; counter-reset: ref; }
 .rp-refs li { counter-increment: ref; padding: 0 0 10px 26px; }
@@ -2418,8 +2418,9 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .rp-row-head { display: none; }
   .rp-row .rp-role { order: -1; }
   .rp-range { display: none; }
-  .rp-lede { font-size: 15.5px; }
-  .rp-sec li { font-size: 15px; }
+  .rp-lede { font-size: 16.5px; }
+  .rp-sec li { font-size: 16px; }
+  .rp-refs li { font-size: 13.5px; }
   .rp-pager { grid-template-columns: 1fr; }
   .rp-pager button.next { text-align: left; }
 }
