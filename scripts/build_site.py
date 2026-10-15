@@ -700,7 +700,7 @@ def build_about() -> str:
       <div class="lp-a-img"></div>
       <div class="lp-a-meta"><span>80 Level · 2026.10.08</span><span class="lp-a-link">원문 보기 ↗</span></div>
       <p></p><p></p><p class="s"></p>
-      <div class="lp-a-why"><b>아트 작업에 왜 중요한지</b><p></p></div>
+      <p></p><p class="s"></p>
     </div>"""
     ops_vis = f"""<div class="lp-mock lp-ops">
       <div class="lp-ops-h">운영자</div>
@@ -744,7 +744,7 @@ def build_about() -> str:
         </ul>""", source_vis),
         ('기사를 쓰는 방식', """<ul class="lp-bullets">
           <li><b>새로 씁니다</b> 원문을 읽고 핵심을 한국어로 새로 씁니다. 원문을 그대로 옮기거나 통째로 번역하지 않아요.</li>
-          <li><b>왜 중요한지까지</b> 무슨 일이 있었는지, 무엇이 바뀌는지, 그리고 아트 작업에 왜 중요한지를 함께 적어요.</li>
+          <li><b>핵심만 짧게</b> 무슨 일이 있었는지, 무엇이 바뀌는지를 짧게 정리해요.</li>
           <li><b>출처를 밝힙니다</b> 모든 기사에 원문 매체 이름, 발행일, 원문 링크를 밝힙니다. 대표 이미지는 원문 매체가
             공유용으로 제공하는 이미지를 출처와 함께 씁니다.</li>
           <li><b>공식 페이지 기준</b> 서비스 업데이트와 무료 이용 정보는 공식 페이지에서 확인한 내용만 싣고,
