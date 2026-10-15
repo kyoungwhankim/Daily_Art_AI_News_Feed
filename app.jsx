@@ -2812,7 +2812,6 @@ const repRange = (a, b) => `${repDate(a)} – ${b.slice(5).replace('-', '.')}`;
 const REPORT_SECTIONS = [
   ['must_know', '꼭 알아야 할 것'],
   ['implications', '시사점'],
-  ['prepare', '준비할 것'],
 ];
 
 function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
@@ -2894,7 +2893,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
       <header className="rp-head">
         <div className="rp-kicker"><span>WEEKLY REPORT</span><span>매주 금요일 발행</span></div>
         <h1>{roleObj ? `${roleObj.label} 리포트` : '금주 리포트'}</h1>
-        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것, 시사점, 준비할 것을 1분 분량으로 정리했습니다.</p>
+        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것과 시사점을 1분 분량으로 정리했습니다.</p>
       </header>
       <div className="rp-filter" role="tablist">
         <button type="button" className={!role ? 'on' : ''} onClick={() => onOpen(null, null)}>전체</button>

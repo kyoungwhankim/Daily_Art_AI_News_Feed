@@ -1069,7 +1069,7 @@ def main():
     rep_index = load_json_safe(os.path.join(repo, 'data', 'reports', 'index.json')).get('reports', [])
     role_label = {r['id']: r['label'] for r in roles}
     by_id = {a['id']: a for a in articles}
-    rep_desc = '그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것, 시사점, 준비할 것을 1분 분량으로 정리했습니다.'
+    rep_desc = '그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것과 시사점을 1분 분량으로 정리했습니다.'
 
     def rep_list(items):
         return '<ul class="static-list">' + ''.join(
@@ -1101,7 +1101,7 @@ def main():
         for e in week.get('reports', []):
             p = f'reports/{e["role"]}/{date}/'
             secs = ''.join(f'<h2>{label}</h2><ul>' + ''.join(f'<li>{esc(t)}</li>' for t in e.get(k, [])) + '</ul>'
-                           for k, label in (('must_know', '꼭 알아야 할 것'), ('implications', '시사점'), ('prepare', '준비할 것')))
+                           for k, label in (('must_know', '꼭 알아야 할 것'), ('implications', '시사점')))
             refs = ''.join(f'<li><a href="{href("/", article_path(by_id[i]))}">{esc(by_id[i]["headline"])}</a>'
                            f'<span class="static-item-meta">{esc(by_id[i]["source"])} · {esc(by_id[i]["publishedAt"])}</span></li>'
                            for i in e.get('refs', []) if i in by_id)

@@ -32,8 +32,8 @@ DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
 # 1분 읽기 분량 — 글자 수 제한 (한국어 기준)
 LIMITS = {'title': 45, 'lede': 150, 'item': 160}
-COUNTS = {'must_know': (2, 4), 'implications': (2, 3), 'prepare': (2, 3)}
-TOTAL_MAX = 1100         # 제목 제외 본문 전체 글자 수
+COUNTS = {'must_know': (2, 4), 'implications': (2, 4)}
+TOTAL_MAX = 950          # 제목 제외 본문 전체 글자 수
 REFS = (1, 8)            # 참고 기사 수
 # 말투: 합쇼체(~습니다)만, AI스러운 상투어·대시 금지 (routine/report_agent_prompt.txt READER AND TONE)
 BANNED = ['본격화', '가속화', '패러다임', '게임 체인저', '게임체인저', '혁신적', '주목할 만', '기대된다',
@@ -202,7 +202,7 @@ def cmd_add(args):
         e = json.loads(raw)
     except json.JSONDecodeError as err:
         sys.exit(f'REJECTED: not valid JSON ({err})')
-    e = {k: e.get(k) for k in ('role', 'title', 'lede', 'must_know', 'implications', 'prepare', 'refs')}
+    e = {k: e.get(k) for k in ('role', 'title', 'lede', 'must_know', 'implications', 'refs')}
     errs = check(e, ctx)
     if errs:
         print('REJECTED:\n  - ' + '\n  - '.join(errs))
@@ -267,7 +267,7 @@ def cmd_validate(args):
             n += 1
             if e.get('role') not in role_ids:
                 problems.append(f'{name}: unknown role {e.get("role")}')
-            for k in ('title', 'lede', 'must_know', 'implications', 'prepare', 'refs'):
+            for k in ('title', 'lede', 'must_know', 'implications', 'refs'):
                 if not e.get(k):
                     problems.append(f'{name} {e.get("role")}: missing {k}')
     idx = read_json(INDEX, {}).get('reports', [])
