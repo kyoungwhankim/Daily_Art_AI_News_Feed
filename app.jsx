@@ -1206,7 +1206,7 @@ function BriefingSection({ role: roleProp, feedProfile, articles, onOpenArticle,
   );
 }
 
-function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates, onRole, roleState, feedProfile, onMyFeed, keywordTabs, onSaveProfile }) {
+function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpdates, onRole, roleState, feedProfile, onMyFeed, keywordTabs, onSaveProfile, onReport }) {
   const [editingFeed, setEditingFeed] = useState(false);
   const today = `${TODAY.getFullYear()}년 ${TODAY.getMonth() + 1}월 ${TODAY.getDate()}일 (${KOR_DAY[TODAY.getDay()]})`;
   const sorted = useMemo(() => [...articles]
@@ -1252,6 +1252,8 @@ function HomeView({ onSelectTab, onOpenArticle, articles, onOpenUpdate, onAllUpd
       ) : !roleState.asked && (
         <RolePrompt onPick={roleState.setMyRole} onLater={roleState.dismiss} onBrowse={() => onRole(null)} />
       ))}
+      {/* 금주 리포트 한 줄 — 내 직군(나만의 피드 직군 → 브라우저에 저장한 직군)의 리포트 모음, 없으면 전체 리포트 */}
+      <ReportStrip role={(feedProfile && feedProfile.role) || roleState.myRole} onOpen={onReport} />
 
 
       {lead && (
@@ -3405,6 +3407,7 @@ function App() {
             onMyFeed={goMe}
             keywordTabs={keywordTabs}
             onSaveProfile={saveProfile}
+            onReport={goReports}
           />
         ) : dataState === 'error' ? (
           <EmptyState message="기사를 불러오지 못했어요" sub="잠시 후 새로고침해 주세요." />

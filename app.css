@@ -955,7 +955,7 @@ mark {
 .hm-kicker[style*="--tone-h"] { color: oklch(0.5 0.13 var(--tone-h)); }
 [data-theme="dark"] .hm-kicker[style*="--tone-h"] { color: oklch(0.78 0.11 var(--tone-h)); }
 .hm-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; font-variant-numeric: tabular-nums; }
-.hm button:not(.home-ticker-btn):not(.home-ticker-close):not(.home-ticker-open):not(.role-choice):not(.brief-link):not(.bx-ghost):not(.bx-cta) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
+.hm button:not(.home-ticker-btn):not(.home-ticker-close):not(.home-ticker-open):not(.role-choice):not(.brief-link):not(.bx-ghost):not(.bx-cta):not(.rp-strip) { font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
 
 /* 톱 기사 + 최신 기사 */
 .hm-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 32px; align-items: start; }
