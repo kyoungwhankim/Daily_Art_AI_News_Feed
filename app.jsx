@@ -1990,68 +1990,6 @@ function HomeFree() {
   );
 }
 
-// 작은 무료 쿠폰 묶음 (메인·아티스트 브리핑·나만의 피드에서 같이 쓴다)
-function FreeCouponRow({ title, sub, tools, data, moreCat }) {
-  if (!tools.length) return null;
-  return (
-    <section className="free-row" aria-label={title}>
-      <div className="free-row-head">
-        <h2>{title}</h2>
-        {sub && <span>{sub}</span>}
-        <FreeLink cat={moreCat} className="free-row-more">AI 무료로 써보기 전체 →</FreeLink>
-      </div>
-      <ul className="hm-free-grid">
-        {tools.map(t => (
-          <li key={t.slug}>
-            <FreeLink cat={t.catSlug} className="hm-free-coupon" style={toneVars(t.catSlug)}>
-              <span className="hm-free-cat">{t.category}</span>
-              <span className="hm-free-name">{t.name}</span>
-              <span className="hm-free-offer">{data.tools[t.slug].offer}</span>
-            </FreeLink>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-// 카드 등록 없이 계속 무료인 것부터
-const freeScore = (data, t) => { const d = data.tools[t.slug]; return (d.card === false ? 0 : 2) + (d.type === 'plan' || d.type === 'free' ? 0 : 1); };
-
-// 아티스트 브리핑: 직군이 쓰는 서비스(config.js roles.services) 중 무료로 써볼 수 있는 것 + 직군과 가까운 분야의 무료 툴로 채운다
-const ROLE_FREE_CATS = {
-  '3d': ['3d'], '2d': ['image', 'tools'], animator: ['motion'], rigger: ['motion', '3d'], vfx: ['video'],
-  ta: ['tools', '3d'], env: ['3d', 'game-assets'], sound: ['audio'], ui: ['tools', 'image'],
-};
-// 직군 추천 순서: 직군이 쓰는 서비스 → 가까운 분야의 무료 툴 (각각 카드 등록 없이 계속 무료인 것부터)
-function roleFreePicks(role, data, exclude = []) {
-  const ok = t => !!freeOffer(data, t.slug) && !exclude.includes(t);
-  const byScore = (a, b) => freeScore(data, a) - freeScore(data, b);
-  const own = FREE_TOOLS.filter(t => (role.services || []).includes(t.slug) && ok(t)).sort(byScore);
-  const cats = ROLE_FREE_CATS[role.id] || [];
-  const near = FREE_TOOLS.filter(t => cats.includes(t.catSlug) && ok(t) && !own.includes(t)).sort(byScore);
-  return [...own, ...near];
-}
-function RoleFreeTools({ role }) {
-  const { ready, data } = useFreeData();
-  if (!ready) return null;
-  const cats = ROLE_FREE_CATS[role.id] || [];
-  return <FreeCouponRow title={`${role.label}가 무료로 써볼 만한 AI`} sub="돈 내기 전에 먼저 시험해 보세요"
-    tools={roleFreePicks(role, data).slice(0, 6)} data={data} moreCat={cats[0] || null} />;
-}
-
-// 나만의 피드: 관심 서비스로 고른 것 중 무료로 써볼 수 있는 것을 먼저, 남는 자리는 직군 추천과 같은 방식으로 채운다
-function MyFreeTools({ profile }) {
-  const { ready, data } = useFreeData();
-  if (!ready) return null;
-  const mine = FREE_TOOLS.filter(t => (profile.services || []).includes(t.slug) && freeOffer(data, t.slug))
-    .sort((a, b) => freeScore(data, a) - freeScore(data, b));
-  const role = profile.role && ROLE_BY_ID[profile.role];
-  const tools = [...mine, ...(role ? roleFreePicks(role, data, mine) : [])].slice(0, 6);
-  const sub = mine.length && tools.length > mine.length ? '관심 서비스를 먼저, 남은 자리는 내 직군에 맞는 무료 툴로 골랐어요'
-    : mine.length ? '관심 서비스로 고른 것 중 무료 혜택이 있는 곳' : '내 직군에 맞는 무료 툴을 골랐어요';
-  return <FreeCouponRow title="무료로 먼저 써볼 만한 AI" sub={sub} tools={tools} data={data} moreCat={null} />;
-}
-
 // 무료로 써보기 페이지로 이동 (앱 안에서) — App이 넣어 준다
 const FreeNavContext = React.createContext(null);
 function FreeLink({ cat, className, style, children }) {
@@ -2448,7 +2386,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
         </div>
       </div>
       <main className="feed">
-        <RoleFreeTools role={r} />
         <ReportStrip role={r.id} onOpen={onReport} />
         {kind === 'news' ? (
           !articlesReady ? (
@@ -2767,7 +2704,6 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
     </>, <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={() => setEditing(true)}>관심사 수정</button></div>)}
     {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
-      {kind !== 'saved' && <MyFreeTools profile={profile} />}
       {kind !== 'saved' && <ReportStrip role={(role && role.id) || myRole} onOpen={onReport} />}
       {kind === 'saved' ? (
         savedIds.length === 0 ? <EmptyState message="저장한 글이 없어요" sub="기사 카드나 업데이트의 책갈피 버튼을 누르면 여기에 모여요." />
