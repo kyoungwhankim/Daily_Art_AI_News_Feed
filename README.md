@@ -176,6 +176,7 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 - 루틴: 기사 반영 뒤 `scripts/weekly_report.py due`가 DUE(금요일, 아직 안 씀)이면 `context`로 직군별 기사 자료(`/tmp/report/context.md`)를 만들고, 리포트 에이전트(`routine/report_agent_prompt.txt`, Opus)를 띄운다. `add`가 리포트마다 분량(본문 950자 이내)·형식·근거 기사 id를 검사하고, `merge`·`validate`로 반영
 - 직군별 기사는 아티스트 브리핑과 같은 기준(`build_site.role_articles`)으로 고른다
 - 지난 주 리포트를 다시 쓰려면: `python3 scripts/weekly_report.py context 2026-10-09` → 에이전트 → `merge`
+- `merge`는 그 주 파일에 합친다: entries.json에 든 직군만 바꾸고 나머지 직군 리포트는 그대로 둔다 (한 직군만 다시 써서 merge해도 된다)
 - 검색용 정적 페이지: `/reports/`, `/reports/<직군>/`, `/reports/<직군>/<날짜>/` (사이트맵 포함)
 
 ## 로그인 · 나만의 피드 (Supabase)

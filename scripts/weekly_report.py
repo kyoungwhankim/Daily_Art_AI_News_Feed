@@ -225,13 +225,19 @@ def cmd_merge(args):
     bad = [(e.get('role'), errs) for e in entries for errs in [check(e, ctx)] if errs]
     if bad:
         sys.exit(f'REJECTED: {bad}')
-    entries.sort(key=lambda e: order.index(e['role']))
-    missing = [r for r in order if r not in {e['role'] for e in entries}]
-    write_json(os.path.join(REPORTS_DIR, ctx['date'] + '.json'),
-               {'date': ctx['date'], 'from': ctx['from'], 'to': ctx['to'], 'articles': len(ctx['all']),
-                'reports': entries})
+    # 그 주 파일이 이미 있으면 같은 직군만 바꾸고 나머지 직군 리포트는 그대로 둔다
+    # (한 직군만 다시 써서 merge해도 다른 직군이 지워지지 않게)
+    target = os.path.join(REPORTS_DIR, ctx['date'] + '.json')
+    kept = [e for e in read_json(target, {}).get('reports', [])
+            if e.get('role') not in {x['role'] for x in entries}]
+    replaced = len(read_json(target, {}).get('reports', [])) - len(kept)
+    merged = sorted(kept + entries, key=lambda e: order.index(e['role']) if e['role'] in order else len(order))
+    missing = [r for r in order if r not in {e['role'] for e in merged}]
+    write_json(target, {'date': ctx['date'], 'from': ctx['from'], 'to': ctx['to'], 'articles': len(ctx['all']),
+                        'reports': merged})
     write_index()
-    print(f'Merged weekly report {ctx["date"]}: {len(entries)} roles'
+    print(f'Merged weekly report {ctx["date"]}: {len(entries)} written ({replaced} replaced), '
+          f'{len(kept)} kept, {len(merged)} roles in total'
           + (f' (missing: {", ".join(missing)})' if missing else ''))
 
 
