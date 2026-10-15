@@ -237,6 +237,17 @@ html::before {
   .login-btn { width: 40px; padding: 0; justify-content: center; }
   .login-btn-label { display: none; }
 }
+/* Google 공식 로그인 버튼 (app.jsx GoogleButton) — 넓은 화면은 '로그인', 좁은 화면은 동그란 G */
+.login-gsi { display: flex; align-items: center; }
+.login-gsi-narrow { display: none; }
+.gsi-btn { display: flex; align-items: center; min-height: 40px; }
+.gsi-btn iframe { color-scheme: normal; }   /* 다크 모드에서도 버튼 둘레가 비치지 않게 */
+.login-gsi[aria-busy="true"] { opacity: .6; pointer-events: none; }
+@media (max-width: 640px) {
+  .login-gsi-wide { display: none; }
+  .login-gsi-narrow { display: block; }
+}
+.sec-band-actions .gsi-btn, .st-login .gsi-btn { min-height: 44px; }
 
 /* tabs */
 .tabs-wrap {

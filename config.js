@@ -13,6 +13,8 @@ window.AIAD = {
   auth: {
     supabaseUrl: 'https://abablvgtlhuvwdpxvoyu.supabase.co',
     supabaseAnonKey: 'sb_publishable_W-s11n1xtrEMpNcahwqp4A_zG_Bxlau',   // publishable 키 (공개용)
+    // Google OAuth 클라이언트 ID (공개용). 있으면 Google 공식 로그인 버튼(팝업)으로 로그인한다 — app.jsx GoogleButton
+    googleClientId: '93239311043-87597h1tl85v5oc9efcdgp8o8432cbn7.apps.googleusercontent.com',
   },
 
   // 아티스트 브리핑 — 게임 아트 직군마다 관심 가질 뉴스·업데이트를 골라 보여 준다 (주소: /for/<id>/)
