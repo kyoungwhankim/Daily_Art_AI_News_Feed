@@ -307,6 +307,69 @@ function cleanAuthParams() {
   ['code', 'error', 'error_code', 'error_description', 'state'].forEach(k => u.searchParams.delete(k));
   window.history.replaceState(window.history.state, '', u.pathname + u.search + u.hash);
 }
+// Google 로그인 버튼 (Google Identity Services). 로그인은 우리 사이트의 Google 팝업에서 끝나고, 받은 ID 토큰을
+// Supabase에 넘긴다 (signInWithIdToken). 그래서 Google 계정 선택 화면에 supabase.co 대신 사이트 주소가 보인다.
+// Google Cloud 콘솔의 OAuth 클라이언트 '승인된 자바스크립트 원본'에 사이트 주소가 있어야 한다.
+// 스크립트를 못 불러오면 예전 방식(Supabase로 이동하는 버튼)으로 대신한다.
+const GSI_SRC = 'https://accounts.google.com/gsi/client';
+let gsiPromise = null, gsiNonce = null;
+function initGsi() {
+  if (!AUTH_CFG.googleClientId) return Promise.reject(new Error('no client id'));
+  if (!gsiPromise) {
+    gsiPromise = new Promise((resolve, reject) => {
+      if (window.google && window.google.accounts) return resolve();
+      const el = document.createElement('script');
+      el.src = GSI_SRC; el.async = true;
+      el.onload = resolve; el.onerror = () => { gsiPromise = null; reject(new Error('gsi load failed')); };
+      document.head.appendChild(el);
+    }).then(async () => {
+      // nonce: Google에는 SHA-256 값을, Supabase에는 원래 값을 준다 (토큰 재사용 방지)
+      const raw = Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2, '0')).join('');
+      const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
+      gsiNonce = raw;
+      window.google.accounts.id.initialize({
+        client_id: AUTH_CFG.googleClientId,
+        nonce: Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join(''),
+        callback: (r) => window.__aiadGsiLogin && window.__aiadGsiLogin(r.credential),
+        auto_select: false, cancel_on_tap_outside: true, itp_support: true,
+      });
+    });
+  }
+  return gsiPromise;
+}
+function useThemeAttr() {
+  const get = () => document.documentElement.dataset.theme || 'light';
+  const [t, setT] = useState(get);
+  useEffect(() => {
+    const mo = new MutationObserver(() => setT(get()));
+    mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => mo.disconnect();
+  }, []);
+  return t;
+}
+// variant: 'full' (Google 계정으로 로그인) · 'pill' (헤더용 작은 '로그인') · 'icon' (동그란 G)
+function GoogleButton({ variant = 'full', fallback = null }) {
+  const ref = useRef(null);
+  const [failed, setFailed] = useState(false);
+  const theme = useThemeAttr();
+  useEffect(() => {
+    let on = true;
+    initGsi().then(() => {
+      if (!on || !ref.current) return;
+      ref.current.innerHTML = '';
+      const base = { theme: theme === 'dark' ? 'filled_black' : 'outline', locale: 'ko' };
+      window.google.accounts.id.renderButton(ref.current, variant === 'icon'
+        ? { ...base, type: 'icon', shape: 'circle', size: 'large' }
+        : variant === 'pill'
+          ? { ...base, type: 'standard', shape: 'pill', size: 'large', text: 'signin', logo_alignment: 'left' }
+          : { ...base, type: 'standard', shape: 'pill', size: 'large', text: 'signin_with', logo_alignment: 'left' });
+    }).catch(() => { if (on) setFailed(true); });
+    return () => { on = false; };
+  }, [variant, theme]);
+  if (failed) return fallback;
+  return <div ref={ref} className={`gsi-btn gsi-${variant}`} />;
+}
+
 function useAuth() {
   const [user, setUser] = useState(null);
   const [busy, setBusy] = useState(false);
@@ -314,15 +377,37 @@ function useAuth() {
     if (!AUTH_ON) return;
     const returning = /[?&](code|error)=/.test(window.location.search) || hasStoredSession();
     if (!returning) return;
-    let sub = null, alive = true;
+    let alive = true;
     getSupabase().then(async sb => {
       const { data } = await sb.auth.getSession();
       if (alive) setUser(data.session ? data.session.user : null);
       cleanAuthParams();
-      sub = sb.auth.onAuthStateChange((_event, session) => { if (alive) setUser(session ? session.user : null); }).data.subscription;
+      if (alive) watch(sb);
     }).catch(() => {});
-    return () => { alive = false; if (sub) sub.unsubscribe(); };
-  }, []);
+    return () => { alive = false; if (subRef.current) { subRef.current.unsubscribe(); subRef.current = null; } };
+  }, []);   // eslint-disable-line
+  const subRef = useRef(null);
+  const watch = (sb) => {
+    if (subRef.current) return;
+    subRef.current = sb.auth.onAuthStateChange((_event, session) => setUser(session ? session.user : null)).data.subscription;
+  };
+  // Google 버튼에서 받은 ID 토큰으로 Supabase 로그인
+  useEffect(() => {
+    if (!AUTH_ON) return;
+    window.__aiadGsiLogin = async (credential) => {
+      setBusy(true);
+      try {
+        const sb = await getSupabase();
+        const { data, error } = await sb.auth.signInWithIdToken({ provider: 'google', token: credential, nonce: gsiNonce });
+        if (error) throw error;
+        setUser(data.user);
+        watch(sb);
+      } catch (e) {
+        alert('로그인하지 못했어요. 잠시 후 다시 시도해 주세요.');
+      } finally { setBusy(false); }
+    };
+    return () => { delete window.__aiadGsiLogin; };
+  }, []);   // eslint-disable-line
   const signIn = async () => {
     setBusy(true);
     try {
@@ -496,10 +581,17 @@ function AccountButton({ auth, onMyFeed, onSettings }) {
   }, [open]);
   if (!auth.enabled) return null;
   if (!auth.user) {
-    return (
+    const old = (
       <button type="button" className="login-btn" onClick={auth.signIn} disabled={auth.busy} aria-label="Google로 로그인">
         <GoogleMark /><span className="login-btn-label">{auth.busy ? '이동 중…' : '로그인'}</span>
       </button>
+    );
+    // 넓은 화면은 '로그인' 글자 버튼, 좁은 화면은 동그란 G 버튼 (CSS가 하나만 보여 준다)
+    return (
+      <div className="login-gsi" aria-busy={auth.busy}>
+        <span className="login-gsi-wide"><GoogleButton variant="pill" fallback={old} /></span>
+        <span className="login-gsi-narrow"><GoogleButton variant="icon" fallback={old} /></span>
+      </div>
     );
   }
   const meta = auth.user.user_metadata || {};
@@ -2576,7 +2668,7 @@ function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welco
       <div className="st-card">
         <h2>로그인이 필요해요</h2>
         <p>로그인하면 관심사를 저장하고 나만의 피드를 볼 수 있어요.</p>
-        {auth.enabled && <button type="button" className="chip active" onClick={auth.signIn}>Google로 로그인</button>}
+        {auth.enabled && <GoogleButton fallback={<button type="button" className="chip active" onClick={auth.signIn}>Google로 로그인</button>} />}
       </div>
     </main></>);
   }
@@ -2663,7 +2755,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   if (!auth.enabled || !auth.user) {
     return (<>
       {band(<p className="feed-desc">로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 한 페이지에 모아 볼 수 있어요.</p>,
-        auth.enabled && <div className="sec-band-actions"><button type="button" className="role-set-btn" onClick={auth.signIn}>Google로 로그인</button></div>)}
+        auth.enabled && <div className="sec-band-actions"><GoogleButton fallback={<button type="button" className="role-set-btn" onClick={auth.signIn}>Google로 로그인</button>} /></div>)}
     </>);
   }
   if (profileState.loading) return band(<p className="feed-desc">관심사를 불러오는 중이에요…</p>);
@@ -3273,7 +3365,8 @@ function App() {
 
   // 저장 · 지난 방문 이후 새 소식
   const prevSeen = useLastVisit(auth.user, profileState);
-  const askLogin = (msg) => { if (auth.enabled && window.confirm(`${msg} Google로 로그인할까요?`)) auth.signIn(); };
+  // 로그인 전에 저장 등을 누르면: Google 버튼이 있는 나만의 피드 화면으로 안내한다
+  const askLogin = (msg) => { if (auth.enabled && window.confirm(`${msg} 로그인 화면으로 갈까요?`)) goMe(); };
   const pf = profileState.profile;
   const member = useMemo(() => ({
     enabled: auth.enabled, user: auth.user, prevSeen,
