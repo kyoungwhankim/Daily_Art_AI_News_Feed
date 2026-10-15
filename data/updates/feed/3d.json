@@ -1,5 +1,21 @@
 [
   {
+    "id": "meshy-2026-10-14-1",
+    "service": "meshy",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "model_url 파일 한도 100MB에서 400MB로 확대",
+    "summary": "URL로 넘기는 3D 모델 파일의 최대 크기가 400MB로 늘었어요. 100MB를 넘는 파일은 면 수와 형식 조건을 지켜야 하며, 가격은 그대로예요.",
+    "details": [
+      "Retexture, Remesh, Rigging, Convert 등에서 http/https URL 기준 400MB까지 허용",
+      "100MB 초과 GLB·glTF·FBX·OBJ는 면 1천만 개 이하(다색 출력은 800만 개)",
+      "100MB 초과 FBX는 바이너리 7.1 이상, glTF는 Draco 압축 미사용 필요",
+      "data: URI는 여전히 100MB까지"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-10-12-1",
     "service": "meshy",
     "date": "2026.10.12",

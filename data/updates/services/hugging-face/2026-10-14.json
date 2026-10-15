@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-10-14-1",
+    "service": "hugging-face",
+    "date": "2026.10.14",
+    "kind": "기능",
+    "title": "Hub 텐서 뷰어 로딩 속도 개선",
+    "summary": "샤드로 나뉜 큰 모델을 열 때 텐서 뷰어가 모든 샤드 헤더를 한 번의 요청으로 가져와서 훨씬 빨라졌어요.",
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  }
+]

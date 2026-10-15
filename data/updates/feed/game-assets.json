@@ -1,5 +1,99 @@
 [
   {
+    "id": "scenario-2026-10-14-4",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "종료",
+    "title": "GPT Image 1·1.5 모델 종료 예고",
+    "summary": "Scenario에서 GPT Image 1과 GPT Image 1.5 모델이 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
+    "url": "https://www.scenario.com/changelog/gpt-image-1-and-1-5-retirement",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-3",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "종료",
+    "title": "Gemini 3.1 Flash TTS 종료 예고",
+    "summary": "Scenario에서 Gemini 3.1 Flash TTS 모델이 곧 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
+    "url": "https://www.scenario.com/changelog/gemini-3-1-flash-tts-retirement",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-2",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.56.0 출시",
+    "summary": "Godot 등 여러 엔진과 DCC 도구에서 쓸 수 있는 워크플로와 3D 메시 편집 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-56-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-1",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "연동",
+    "title": "Scenario for Blender 0.11.0 출시",
+    "summary": "Blender 뷰포트 안에서 오디오를 들을 수 있고, 고품질 WAV 파일로 내보낼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-4",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario for Blender 0.10.0 출시",
+    "summary": "Blender 안에서 AI 이미지, 영상, 3D, 오디오를 바로 만들 수 있는 플러그인 업데이트예요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-3",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario MCP 서버 v0.34.0 출시",
+    "summary": "프로토콜 호환성이 개선되고 설정 가이드가 보강됐어요. 외부 AI 에이전트에서 Scenario를 연결할 때 참고하면 좋아요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-34-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-2",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "Scenario API v2.138.0 출시",
+    "summary": "작업(job) 필터링이 강화되고 API 제어 기능과 에셋 조회가 개선됐어요. 개발 연동을 쓰는 분은 확인해 보세요.",
+    "url": "https://www.scenario.com/changelog/api-v2-138-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-13-1",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 3D to Video 모델 추가",
+    "summary": "Scenario에 MiniMax H3 Max 3D-투-비디오 모델이 추가됐어요. 3D로 짠 사전 시각화 장면을 영상으로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-2170f727531497869374ad8a8d6471fb4880e051f9c4dc36532eb93d20392aa4",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-10-13-1",
+    "service": "ludo.ai",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "Hydra+ 애니메이션 모델 공개",
+    "summary": "Hydra와 같은 움직임을 유지하면서 얼굴 선이나 장식 같은 세밀한 디테일을 더 선명하게 살려주는 Hydra+가 나왔어요.",
+    "details": [
+      "Animate, Keyframe Animation, New Direction에서 선택 가능, 초당 4크레딧, 3~5초 애니메이션",
+      "기존 Hydra 애니메이션에 Improve Details로 디테일만 덧입히는 기능은 초당 1크레딧"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-hydra-the-same-animation-finer-detail",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-12-5",
     "service": "scenario",
     "date": "2026.10.12",
@@ -195,6 +289,21 @@
     "summary": "어시스턴트가 Claude 5.5로 업그레이드되고 새 3D 모델이 추가됐어요. 요금 계산과 검증 문제도 고쳐졌어요.",
     "url": "https://www.scenario.com/changelog/api-v2-136-0",
     "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-10-05-1",
+    "service": "ludo.ai",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "New Direction: 애니메이션을 다른 방향으로 다시 생성",
+    "summary": "이미 만든 스프라이트 애니메이션을 같은 움직임과 타이밍 그대로 다른 방향으로 다시 만들 수 있어요. 탑다운 게임용 방향 세트를 빠르게 준비하기 좋아요.",
+    "details": [
+      "Change Direction으로 8방위와 시점 높이를 골라 첫 프레임 생성",
+      "Hydra 기반, 3~5초, 초당 3크레딧",
+      "API의 rotateSpritesheet와 CLI의 ludo sprite rotate-sheet로도 사용 가능"
+    ],
+    "url": "https://ludo.ai/whats-new#new-direction-turn-any-animation-to-face-another-way",
+    "source": "notice"
   },
   {
     "id": "scenario-2026-10-04-2",

@@ -7,22 +7,22 @@
       "rev": "d01a31c2c8"
     },
     "video": {
-      "count": 946,
-      "latest": "2026.10.13",
+      "count": 949,
+      "latest": "2026.10.14",
       "file": "updates/feed/video.json",
-      "rev": "869f554279"
+      "rev": "b90c403050"
     },
     "3d": {
-      "count": 180,
-      "latest": "2026.10.12",
+      "count": 181,
+      "latest": "2026.10.14",
       "file": "updates/feed/3d.json",
-      "rev": "f1cab2b002"
+      "rev": "d18b30f030"
     },
     "game-assets": {
-      "count": 537,
-      "latest": "2026.10.12",
+      "count": 547,
+      "latest": "2026.10.14",
       "file": "updates/feed/game-assets.json",
-      "rev": "a438c3e2fc"
+      "rev": "3b69ad88e8"
     },
     "motion": {
       "count": 162,
@@ -31,16 +31,16 @@
       "rev": "5db49dd05e"
     },
     "audio": {
-      "count": 352,
-      "latest": "2026.10.09",
+      "count": 353,
+      "latest": "2026.10.12",
       "file": "updates/feed/audio.json",
-      "rev": "d9d476c9ec"
+      "rev": "9900f068b6"
     },
     "tools": {
-      "count": 1002,
-      "latest": "2026.10.13",
+      "count": 1008,
+      "latest": "2026.10.14",
       "file": "updates/feed/tools.json",
-      "rev": "f79c2a5827"
+      "rev": "99da57de05"
     }
   },
   "services": {
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 70,
+      "count": 73,
       "first": "2025.11.29",
-      "latest": "2026.10.13"
+      "latest": "2026.10.14"
     },
     "synthesia": {
       "count": 188,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 118,
+      "count": 119,
       "first": "2023.10.19",
-      "latest": "2026.10.12"
+      "latest": "2026.10.14"
     },
     "tripo": {
       "count": 29,
@@ -205,9 +205,9 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 349,
+      "count": 357,
       "first": "2022.12.23",
-      "latest": "2026.10.12"
+      "latest": "2026.10.14"
     },
     "layer": {
       "count": 103,
@@ -215,9 +215,9 @@
       "latest": "2026.10.12"
     },
     "ludo.ai": {
-      "count": 46,
+      "count": 48,
       "first": "2021.06.22",
-      "latest": "2026.09.28"
+      "latest": "2026.10.13"
     },
     "roblox-cube": {
       "count": 39,
@@ -240,9 +240,9 @@
       "latest": "2026.10.01"
     },
     "elevenlabs": {
-      "count": 205,
+      "count": 206,
       "first": "2022.11.24",
-      "latest": "2026.10.05"
+      "latest": "2026.10.12"
     },
     "suno": {
       "count": 70,
@@ -270,7 +270,7 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 211,
+      "count": 212,
       "first": "2024.08.06",
       "latest": "2026.10.13"
     },
@@ -290,14 +290,14 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 61,
+      "count": 62,
       "first": "2025.05.21",
-      "latest": "2026.10.12"
+      "latest": "2026.10.14"
     },
     "fal.ai": {
-      "count": 168,
+      "count": 169,
       "first": "2023.03.30",
-      "latest": "2026.10.09"
+      "latest": "2026.10.13"
     },
     "figma-ai": {
       "count": 80,
@@ -305,14 +305,14 @@
       "latest": "2026.10.13"
     },
     "blender": {
-      "count": 29,
+      "count": 31,
       "first": "2019.07.30",
-      "latest": "2026.07.14"
+      "latest": "2026.07.30"
     },
     "claude": {
-      "count": 228,
+      "count": 229,
       "first": "2023.03.14",
-      "latest": "2026.10.09"
+      "latest": "2026.10.14"
     }
   }
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "scenario-2026-10-13-1",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 3D to Video 모델 추가",
+    "summary": "Scenario에 MiniMax H3 Max 3D-투-비디오 모델이 추가됐어요. 3D로 짠 사전 시각화 장면을 영상으로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-2170f727531497869374ad8a8d6471fb4880e051f9c4dc36532eb93d20392aa4",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-2",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "Scenario API v2.138.0 출시",
+    "summary": "작업(job) 필터링이 강화되고 API 제어 기능과 에셋 조회가 개선됐어요. 개발 연동을 쓰는 분은 확인해 보세요.",
+    "url": "https://www.scenario.com/changelog/api-v2-138-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-13-3",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario MCP 서버 v0.34.0 출시",
+    "summary": "프로토콜 호환성이 개선되고 설정 가이드가 보강됐어요. 외부 AI 에이전트에서 Scenario를 연결할 때 참고하면 좋아요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-34-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-4",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario for Blender 0.10.0 출시",
+    "summary": "Blender 안에서 AI 이미지, 영상, 3D, 오디오를 바로 만들 수 있는 플러그인 업데이트예요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-10-0",
+    "source": "notice"
+  }
+]

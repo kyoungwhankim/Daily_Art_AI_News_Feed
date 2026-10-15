@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-10-14-1",
+    "service": "claude",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "Claude Platform에 OpenTelemetry 내보내기 베타 공개",
+    "summary": "Messages API 요청과 Managed Agents 세션을 OpenTelemetry로 추적해 관찰 도구에 보낼 수 있는 베타가 나왔어요.",
+    "details": [
+      "Python, TypeScript, C#, Go, Java, PHP, Ruby SDK에서 스팬 생성",
+      "Claude Console에서 OpenTelemetry 대상을 추가해 설정",
+      "Claude Managed Agents 예약 배포가 Claude Platform on AWS에서 사용 가능"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-14-2026",
+    "source": "dev"
+  }
+]

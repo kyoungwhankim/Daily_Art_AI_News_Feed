@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2026-07-30-1",
+    "service": "blender",
+    "date": "2026.07.30",
+    "kind": "기능",
+    "title": "Blender 5.2 LTS 지오메트리 노드 물리 기능",
+    "summary": "Blender 5.2 LTS에서 지오메트리 노드로 물리 효과를 만드는 기능과 이후 계획이 소개됐어요.",
+    "url": "https://code.blender.org/2026/07/geometry-nodes-physics/",
+    "source": "dev"
+  }
+]

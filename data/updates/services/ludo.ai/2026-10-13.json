@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ludo.ai-2026-10-13-1",
+    "service": "ludo.ai",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "Hydra+ 애니메이션 모델 공개",
+    "summary": "Hydra와 같은 움직임을 유지하면서 얼굴 선이나 장식 같은 세밀한 디테일을 더 선명하게 살려주는 Hydra+가 나왔어요.",
+    "details": [
+      "Animate, Keyframe Animation, New Direction에서 선택 가능, 초당 4크레딧, 3~5초 애니메이션",
+      "기존 Hydra 애니메이션에 Improve Details로 디테일만 덧입히는 기능은 초당 1크레딧"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-hydra-the-same-animation-finer-detail",
+    "source": "notice"
+  }
+]

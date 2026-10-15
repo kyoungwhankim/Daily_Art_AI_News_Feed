@@ -1,0 +1,19 @@
+[
+  {
+    "id": "elevenlabs-2026-10-12-1",
+    "service": "elevenlabs",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "티켓 병합, TTS 오디오 효과, 음성 컬렉션 API 추가",
+    "summary": "ElevenAgents에서 상담 티켓을 병합하고 검색할 수 있게 됐어요. 음성 생성에는 오디오 효과 옵션이 붙었고, 음성 컬렉션도 API로 관리할 수 있어요.",
+    "details": [
+      "TTS와 Text to Dialogue에 audio_effects 옵션 추가(필터, 거리감, 리버브, 배경 소음, 패닝)",
+      "실시간 Speech to Text에 턴 예측 기반 커밋 전략(turn_prediction) 추가",
+      "음성 컬렉션 API로 생성·조회·수정·삭제",
+      "JavaScript·Python SDK v2.72.0, CLI v1.5.0 릴리스",
+      "ElevenAgents 음성 웹훅 재시도 정책과 위젯 종료 확인 창 추가"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/12",
+    "source": "dev"
+  }
+]

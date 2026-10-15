@@ -18,5 +18,20 @@
     "summary": "HeyGen API에 템플릿 생성, 프로페셔널 보이스 클론, Look Packs가 추가됐어요. ElevenLabs v4 음성도 쓸 수 있어요.",
     "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-api-releases",
     "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-13-3",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "HeyGen 10월 엔터프라이즈 웹 업데이트",
+    "summary": "관리자가 멤버별 사용 한도를 정하고 SSO 가입 통제를 쓸 수 있게 됐어요. 팀은 Video Agent 세션을 함께 편집하고, 브랜드 용어집도 새로 만들어졌어요.",
+    "details": [
+      "멤버별 사용 한도와 한도 증가 요청 기능",
+      "Video Agent 세션을 여러 명이 함께 작업",
+      "Brand Glossary 재설계와 Video Plan 개편"
+    ],
+    "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-web-releases",
+    "source": "notice"
   }
 ]

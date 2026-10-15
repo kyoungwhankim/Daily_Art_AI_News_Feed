@@ -1,5 +1,156 @@
 [
   {
+    "id": "scenario-2026-10-14-4",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "종료",
+    "title": "GPT Image 1·1.5 모델 종료 예고",
+    "summary": "Scenario에서 GPT Image 1과 GPT Image 1.5 모델이 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
+    "url": "https://www.scenario.com/changelog/gpt-image-1-and-1-5-retirement",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-3",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "종료",
+    "title": "Gemini 3.1 Flash TTS 종료 예고",
+    "summary": "Scenario에서 Gemini 3.1 Flash TTS 모델이 곧 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
+    "url": "https://www.scenario.com/changelog/gemini-3-1-flash-tts-retirement",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-2",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.56.0 출시",
+    "summary": "Godot 등 여러 엔진과 DCC 도구에서 쓸 수 있는 워크플로와 3D 메시 편집 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-56-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-14-1",
+    "service": "scenario",
+    "date": "2026.10.14",
+    "kind": "연동",
+    "title": "Scenario for Blender 0.11.0 출시",
+    "summary": "Blender 뷰포트 안에서 오디오를 들을 수 있고, 고품질 WAV 파일로 내보낼 수 있어요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-11-0",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-10-14-1",
+    "service": "meshy",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "model_url 파일 한도 100MB에서 400MB로 확대",
+    "summary": "URL로 넘기는 3D 모델 파일의 최대 크기가 400MB로 늘었어요. 100MB를 넘는 파일은 면 수와 형식 조건을 지켜야 하며, 가격은 그대로예요.",
+    "details": [
+      "Retexture, Remesh, Rigging, Convert 등에서 http/https URL 기준 400MB까지 허용",
+      "100MB 초과 GLB·glTF·FBX·OBJ는 면 1천만 개 이하(다색 출력은 800만 개)",
+      "100MB 초과 FBX는 바이너리 7.1 이상, glTF는 Draco 압축 미사용 필요",
+      "data: URI는 여전히 100MB까지"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-14-1",
+    "service": "hugging-face",
+    "date": "2026.10.14",
+    "kind": "기능",
+    "title": "Hub 텐서 뷰어 로딩 속도 개선",
+    "summary": "샤드로 나뉜 큰 모델을 열 때 텐서 뷰어가 모든 샤드 헤더를 한 번의 요청으로 가져와서 훨씬 빨라졌어요.",
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-14-2",
+    "service": "heygen",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "HeyGen API에 공개 음성 조회와 문자 타임스탬프 추가",
+    "summary": "공개 음성을 API로 조회해 바로 쓸 수 있게 됐고, 완성된 음성에 문자 단위 타임스탬프를 받을 수 있어요. 자막 제작에 특히 유용해요.",
+    "details": [
+      "GET /v3/models/audio/voices에서 type을 public으로 지정해 공개 음성 조회",
+      "완성된 음성의 캐릭터 단위 타임스탬프 제공",
+      "브랜드 용어집 규칙을 언어별로 지정(pronunciation_language, target_language)"
+    ],
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-public-voices-and-batch-timestamps",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-14-1",
+    "service": "heygen",
+    "date": "2026.10.14",
+    "kind": "모델",
+    "title": "HeyGen Voice 공개: 영상에 맞춰 말하는 음성 모델",
+    "summary": "짧은 녹음이나 사진으로 목소리를 만들고, 장면의 공간감과 전달 방식에 맞춰 말하는 새 음성 모델이 나왔어요.",
+    "details": [
+      "최대 60초 녹음으로 목소리 생성, 사진만으로 인물과 장소에 맞는 음성 디자인",
+      "Adaptive Mode로 방 울림과 마이크 거리 등 장면 조건에 맞춤",
+      "Professional Voice Clone은 30분~2시간 녹음으로 학습하는 추가 옵션이며 API 기준 100만 자당 30달러"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-14-1",
+    "service": "claude",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "Claude Platform에 OpenTelemetry 내보내기 베타 공개",
+    "summary": "Messages API 요청과 Managed Agents 세션을 OpenTelemetry로 추적해 관찰 도구에 보낼 수 있는 베타가 나왔어요.",
+    "details": [
+      "Python, TypeScript, C#, Go, Java, PHP, Ruby SDK에서 스팬 생성",
+      "Claude Console에서 OpenTelemetry 대상을 추가해 설정",
+      "Claude Managed Agents 예약 배포가 Claude Platform on AWS에서 사용 가능"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-14-2026",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-13-4",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario for Blender 0.10.0 출시",
+    "summary": "Blender 안에서 AI 이미지, 영상, 3D, 오디오를 바로 만들 수 있는 플러그인 업데이트예요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-10-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-3",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "연동",
+    "title": "Scenario MCP 서버 v0.34.0 출시",
+    "summary": "프로토콜 호환성이 개선되고 설정 가이드가 보강됐어요. 외부 AI 에이전트에서 Scenario를 연결할 때 참고하면 좋아요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-34-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-13-2",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "Scenario API v2.138.0 출시",
+    "summary": "작업(job) 필터링이 강화되고 API 제어 기능과 에셋 조회가 개선됐어요. 개발 연동을 쓰는 분은 확인해 보세요.",
+    "url": "https://www.scenario.com/changelog/api-v2-138-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-13-1",
+    "service": "scenario",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "MiniMax H3 Max 3D to Video 모델 추가",
+    "summary": "Scenario에 MiniMax H3 Max 3D-투-비디오 모델이 추가됐어요. 3D로 짠 사전 시각화 장면을 영상으로 바꿀 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-2170f727531497869374ad8a8d6471fb4880e051f9c4dc36532eb93d20392aa4",
+    "source": "notice"
+  },
+  {
     "id": "runway-2026-10-13-1",
     "service": "runway",
     "date": "2026.10.13",
@@ -15,6 +166,20 @@
     "source": "dev"
   },
   {
+    "id": "ludo.ai-2026-10-13-1",
+    "service": "ludo.ai",
+    "date": "2026.10.13",
+    "kind": "모델",
+    "title": "Hydra+ 애니메이션 모델 공개",
+    "summary": "Hydra와 같은 움직임을 유지하면서 얼굴 선이나 장식 같은 세밀한 디테일을 더 선명하게 살려주는 Hydra+가 나왔어요.",
+    "details": [
+      "Animate, Keyframe Animation, New Direction에서 선택 가능, 초당 4크레딧, 3~5초 애니메이션",
+      "기존 Hydra 애니메이션에 Improve Details로 디테일만 덧입히는 기능은 초당 1크레딧"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-hydra-the-same-animation-finer-detail",
+    "source": "notice"
+  },
+  {
     "id": "ltx-studio-2026-10-13-1",
     "service": "ltx-studio",
     "date": "2026.10.13",
@@ -22,6 +187,21 @@
     "title": "LTX Trainer를 LTX Explore에서 바로 사용",
     "summary": "LTX Trainer로 캐릭터와 스타일 LoRA를 LTX Explore 안에서 바로 학습할 수 있게 됐어요. GPU 설정이나 개발 작업 없이 시작할 수 있어요.",
     "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-13-3",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "HeyGen 10월 엔터프라이즈 웹 업데이트",
+    "summary": "관리자가 멤버별 사용 한도를 정하고 SSO 가입 통제를 쓸 수 있게 됐어요. 팀은 Video Agent 세션을 함께 편집하고, 브랜드 용어집도 새로 만들어졌어요.",
+    "details": [
+      "멤버별 사용 한도와 한도 증가 요청 기능",
+      "Video Agent 세션을 여러 명이 함께 작업",
+      "Brand Glossary 재설계와 Video Plan 개편"
+    ],
+    "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-web-releases",
     "source": "notice"
   },
   {
@@ -53,6 +233,32 @@
     "summary": "Figma Make에서 Gemini 4 Argon 모델을 쓸 수 있도록 롤아웃을 시작했어요. 프로토타입을 만들 때 더 강한 추론 모델을 쓸 수 있어요.",
     "url": "https://www.figma.com/release-notes/?title=gemini-4-argon-is-rolling-out-in-figma-make",
     "source": "notice"
+  },
+  {
+    "id": "fal.ai-2026-10-13-1",
+    "service": "fal.ai",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "앱·러너 관리 API에 호출 제한 도입",
+    "summary": "앱과 러너를 목록 조회, 확인, 셸 접속, 중지, 종료할 때 호출 제한이 생겼어요. 제한을 넘으면 REST API는 429 오류를 반환해요.",
+    "url": "https://fal.ai/docs/changelog#october-13-2026",
+    "source": "dev"
+  },
+  {
+    "id": "comfyui-2026-10-13-2",
+    "service": "comfyui",
+    "date": "2026.10.13",
+    "kind": "앱",
+    "title": "ComfyUI v0.40.0 출시: Qwen-Image 2.1 Turbo 지원",
+    "summary": "8단계로 빠르게 생성하는 Qwen-Image 2.1 Turbo를 지원하고, 여러 LoRA를 순서대로 쌓는 로더와 카메라 앵글 노드가 추가됐어요.",
+    "details": [
+      "Qwen-Image 2.1 Turbo 텍스트-이미지와 이미지 편집 템플릿",
+      "LoRA 스택 로더, 카메라 앵글과 카메라 정보 노드, 블렌드 연산",
+      "Fish Audio Drama 3, Higgsfield 모션 전이, HeyGen Video 2K 등 파트너 노드 업데이트",
+      "EXR 저장 압축과 에셋 라이브러리 기능 개선"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-40-0",
+    "source": "dev"
   },
   {
     "id": "comfyui-2026-10-13-1",
@@ -200,6 +406,23 @@
     "source": "notice"
   },
   {
+    "id": "elevenlabs-2026-10-12-1",
+    "service": "elevenlabs",
+    "date": "2026.10.12",
+    "kind": "기능",
+    "title": "티켓 병합, TTS 오디오 효과, 음성 컬렉션 API 추가",
+    "summary": "ElevenAgents에서 상담 티켓을 병합하고 검색할 수 있게 됐어요. 음성 생성에는 오디오 효과 옵션이 붙었고, 음성 컬렉션도 API로 관리할 수 있어요.",
+    "details": [
+      "TTS와 Text to Dialogue에 audio_effects 옵션 추가(필터, 거리감, 리버브, 배경 소음, 패닝)",
+      "실시간 Speech to Text에 턴 예측 기반 커밋 전략(turn_prediction) 추가",
+      "음성 컬렉션 API로 생성·조회·수정·삭제",
+      "JavaScript·Python SDK v2.72.0, CLI v1.5.0 릴리스",
+      "ElevenAgents 음성 웹훅 재시도 정책과 위젯 종료 확인 창 추가"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/12",
+    "source": "dev"
+  },
+  {
     "id": "scenario-2026-10-11-1",
     "service": "scenario",
     "date": "2026.10.11",
@@ -252,220 +475,5 @@
     "summary": "Growth Studio가 Meta 카탈로그와 연결돼 상품 카탈로그 전체에 맞는 영상 소재를 만들 수 있게 됐어요.",
     "url": "https://pixverse.ai/en/blog/pixverse-growth-studio-meta-catalog-product-video",
     "source": "notice"
-  },
-  {
-    "id": "mureka-2026-10-09-1",
-    "service": "mureka",
-    "date": "2026.10.09",
-    "kind": "기능",
-    "title": "Mureka 전면 개편 리믹스 기능 공개",
-    "summary": "리믹스 기능이 새로 나왔어요. 아카펠라, 어쿠스틱 데모, 반주곡을 더 자유롭게 리믹스할 수 있고 멜로디와 보컬 품질도 좋아졌어요.",
-    "details": [
-      "아카펠라·어쿠스틱 데모·인스트루멘탈 리믹스 지원",
-      "가사, 스타일, 리드 악기, 곡 구조를 더 세밀하게 조정",
-      "멜로디와 보컬, 리믹스 음질 개선"
-    ],
-    "url": "https://www.mureka.ai/whats-new_en.html",
-    "source": "notice"
-  },
-  {
-    "id": "ltx-studio-2026-10-09-1",
-    "service": "ltx-studio",
-    "date": "2026.10.09",
-    "kind": "앱",
-    "title": "LTX Desktop 대규모 업데이트 공개",
-    "summary": "오픈소스 LTX Desktop이 로컬에서 영상 프로젝트를 만들고 관리하기 편하도록 크게 바뀌었어요. 내장 LoRA와 배치 생성, 원격 생성 기능이 추가됐어요.",
-    "details": [
-      "내장 LoRA 13종과 AlphaGen, Deblur, Colorization, Layout to Render 등 IC-LoRA 추가",
-      "Retake, Extend, 개선된 프롬프트 보강 기능 추가",
-      "여러 생성을 대기열에 넣는 배치 생성과 같은 Wi-Fi 기기에서 보는 원격 생성 지원",
-      "홈 화면 개편, 에셋 라이브러리, 설치 과정 간소화"
-    ],
-    "url": "https://ltx.io/release-notes",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-10-09-1",
-    "service": "hugging-face",
-    "date": "2026.10.09",
-    "kind": "기능",
-    "title": "Hub에 Decision Model 태그와 필터 추가",
-    "summary": "Decision 모델에 전용 decision-model 태그와 아이콘이 생겼어요. GGUF 모델은 llama.cpp 메타데이터로 자동 태그되고, 모델 페이지에서 필터로 모아 볼 수 있어요.",
-    "url": "https://huggingface.co/changelog/decision-models-on-the-hub",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-09-1",
-    "service": "heygen",
-    "date": "2026.10.09",
-    "kind": "기능",
-    "title": "HeyGen Voice 즉시 보이스 클론과 TTS 추가",
-    "summary": "녹음 한 개로 바로 쓸 수 있는 즉시 보이스 클론이 API에 추가됐어요. 학습 없이 voice_id를 받아 음성 생성에 바로 쓸 수 있어요.",
-    "details": [
-      "POST /v3/models/audio/voices에 mode: instant 추가",
-      "보이스 생성·재학습 시 mode(instant 또는 professional) 필수"
-    ],
-    "url": "https://docs.heygen.com/changelog#hey-gen-voice-instant-clone-and-text-to-speech",
-    "source": "dev"
-  },
-  {
-    "id": "fal.ai-2026-10-09-1",
-    "service": "fal.ai",
-    "date": "2026.10.09",
-    "kind": "기능",
-    "title": "API 키 권한 프리셋과 팀 역할 추가",
-    "summary": "API 키를 권한 프리셋으로 만들고 모델과 만료일을 제한할 수 있게 됐어요. 팀에는 Creator와 Viewer 역할이 추가돼 권한을 더 세밀하게 나눌 수 있어요.",
-    "details": [
-      "키 생성 시 API·SERVERLESS·DEPLOY·COMPUTE·BILLING·READONLY·FULL 중 선택",
-      "Creator는 Playground·Sandbox·Workflows 사용, Viewer는 읽기 전용"
-    ],
-    "url": "https://fal.ai/docs/changelog#october-9-2026",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-09-1",
-    "service": "claude",
-    "date": "2026.10.09",
-    "kind": "API",
-    "title": "Managed Agents 동적 워크플로 베타 공개",
-    "summary": "Claude Managed Agents의 에이전트가 많은 작업을 여러 단계로 나눠 실행하는 동적 워크플로를 쓸 수 있게 됐어요. 베타 헤더로 켤 수 있어요.",
-    "details": [
-      "managed-agents-2026-04-01 베타 헤더로 사용",
-      "수백 건 문서 검토처럼 큰 작업을 백그라운드에서 실행"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-9-2026",
-    "source": "dev"
-  },
-  {
-    "id": "suno-2026-10-08-1",
-    "service": "suno",
-    "date": "2026.10.08",
-    "kind": "기능",
-    "title": "Suno Studio 편집 기능 개선",
-    "summary": "Studio에서 새 클립의 박자 감지가 정밀해졌고, 클립을 늘이거나 페이드 곡선을 조절할 수 있게 됐어요.",
-    "details": [
-      "Shift 클릭 드래그로 클립 늘이기 지원",
-      "로그와 지수 형태의 페이드 곡선 조절 추가",
-      "와이브테이블 신스, 타이핑 키보드, 플러그인 화면을 별도 창으로 띄울 수 있어요"
-    ],
-    "url": "https://suno.com/release-notes/studio-updates-oct26",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-08-1",
-    "service": "scenario",
-    "date": "2026.10.08",
-    "kind": "모델",
-    "title": "Vidu Q4 4K 영상과 동기화된 오디오 지원",
-    "summary": "Vidu Q4로 4K 영상을 만들 수 있어요. 3~16초 길이이고 이미지 한 장이나 레퍼런스 이미지 최대 15장, 사운드 3개까지 쓸 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-d99a5b23c46d563a2c743d248ddc8e621963334a5531d35cab31d7fc1c75e023",
-    "source": "notice"
-  },
-  {
-    "id": "recraft-2026-10-08-1",
-    "service": "recraft",
-    "date": "2026.10.08",
-    "kind": "연동",
-    "title": "Recraft Studio에 Nano Banana 2.1 추가",
-    "summary": "Recraft Studio의 모델 선택기에서 Google의 Nano Banana 2.1을 고를 수 있게 됐어요. 화질, 텍스트 표현, 일관성이 개선된 모델이에요.",
-    "url": "https://www.recraft.ai/blog/nano-banana-2-1-in-recraft-studio",
-    "source": "notice"
-  },
-  {
-    "id": "midjourney-2026-10-08-2",
-    "service": "midjourney",
-    "date": "2026.10.08",
-    "kind": "기능",
-    "title": "알파 사이트에 공유 폴더 도입",
-    "summary": "알파 사이트에 여러 사람이 함께 쓰는 공유 폴더가 추가됐어요. 알파 사용자 의견과 오피스 아워에서 나온 아이디어를 반영한 이번 주 변경 사항이에요.",
-    "url": "https://updates.midjourney.com/alpha-changelog-10-7-26/",
-    "source": "notice"
-  },
-  {
-    "id": "midjourney-2026-10-08-1",
-    "service": "midjourney",
-    "date": "2026.10.08",
-    "kind": "기능",
-    "title": "알파 사이트에 Thinking 모드 테스트 시작",
-    "summary": "알파 사이트에서 이미지 생성 Thinking 모드를 테스트하고 있어요. 작업의 라이트박스에서 'Rerun (Thinking)'을 누르면 실행되며 사용자 의견을 모으는 중이에요.",
-    "url": "https://updates.midjourney.com/testing-thinking-mode/",
-    "source": "notice"
-  },
-  {
-    "id": "magnific-2026-10-08-1",
-    "service": "magnific",
-    "date": "2026.10.08",
-    "kind": "모델",
-    "title": "Magnific One 이미지 모델 공개",
-    "summary": "아트 디렉션이 내장된 이미지 모델 Magnific One이 API에 추가됐어요. 완성 이미지 모드와 여러 결과를 한눈에 보는 초안 모드를 지원해요.",
-    "url": "https://docs.magnific.com/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "krea-2026-10-08-1",
-    "service": "krea",
-    "date": "2026.10.08",
-    "kind": "정책",
-    "title": "엔터프라이즈 오픈소스 모델 사용량 보고 절차 안내",
-    "summary": "오픈소스 모델 사용량을 보고하는 엔터프라이즈 고객은 보고할 워크스페이스를 Krea 팀에 알려 등록해야 해요. 등록 후에는 사용량 보고와 월 청구 방식이 기존과 같아요.",
-    "url": "https://www.krea.ai/docs/changelog#october-8-2026",
-    "source": "dev"
-  },
-  {
-    "id": "iclone-2026-10-08-1",
-    "service": "iclone",
-    "date": "2026.10.08",
-    "kind": "연동",
-    "title": "Reallusion, Escape.AI와 파트너십 체결",
-    "summary": "iClone과 Character Creator 5의 3D 제작 환경을 Escape.AI의 커넥티드 TV 유통망과 연결해 일관된 AI 영상 제작과 배포를 돕기로 했어요.",
-    "url": "https://magazine.reallusion.com/2026/10/08/reallusion-and-escape-ai-partner-to-solve-ai-video-bottlenecks-and-expand-distribution/",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-08-1",
-    "service": "heygen",
-    "date": "2026.10.08",
-    "kind": "API",
-    "title": "HeyGen Video 1080p 렌더 지원",
-    "summary": "POST /v3/models/videos에서 resolution을 1080p로 지정할 수 있게 됐어요. 요금은 768p의 3배인 2K와 같고, 16:9는 1890×1080, 9:16은 1080×1890으로 출력돼요.",
-    "url": "https://docs.heygen.com/changelog#hey-gen-video-1080p",
-    "source": "dev"
-  },
-  {
-    "id": "dream-machine-2026-10-08-1",
-    "service": "dream-machine",
-    "date": "2026.10.08",
-    "kind": "연동",
-    "title": "Luma, Claude Motion과 연동",
-    "summary": "Claude에서 만든 설명 영상 애니메이션을 Luma에서 열어 이어서 편집할 수 있도록 두 회사가 파트너십을 맺었어요.",
-    "url": "https://lumalabs.ai/news/Luma-Claude-Motion-Launch-Partnership",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-08-1",
-    "service": "comfyui",
-    "date": "2026.10.08",
-    "kind": "연동",
-    "title": "ComfyUI v0.39.2 릴리스: 파트너 노드 추가",
-    "summary": "ComfyUI v0.39.2가 공개됐어요. Kling 가상 피팅, Clarity AI 업스케일러, Vidu Q4 프리뷰, Quiver SVG V2 파트너 노드가 추가되었어요.",
-    "details": [
-      "Kling Virtual Try-On 노드: 의상 이미지로 인물 가상 피팅",
-      "Clarity AI Crystal Upscaler 노드: 최대 200배 업스케일과 디테일 조정",
-      "Vidu Q4 프리뷰 노드: 540p~4K 영상 생성, 동기화된 오디오",
-      "Quiver SVG V2 노드: 텍스트·이미지를 SVG로 변환 (기존 Quiver 노드는 지원 중단)",
-      "워크플로 템플릿 v0.11.78 갱신"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-39-2",
-    "source": "notice"
-  },
-  {
-    "id": "claude-2026-10-08-2",
-    "service": "claude",
-    "date": "2026.10.08",
-    "kind": "API",
-    "title": "Compliance API 채팅 조회에 통합 Claude 대화 추가",
-    "summary": "Compliance API의 채팅 엔드포인트가 통합 Claude 환경의 대화도 반환하게 됐어요. Claude Enterprise 조직에서 베타로 제공돼요.",
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
-    "source": "dev"
   }
 ]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blender-2026-07-22-1",
+    "service": "blender",
+    "date": "2026.07.22",
+    "kind": "기능",
+    "title": "Remote Asset Libraries: 온라인 에셋을 필요할 때만 내려받기",
+    "summary": "온라인에 저장된 에셋 라이브러리를 Blender 안에서 둘러보고, 실제로 쓸 때만 다운로드할 수 있는 기능이 소개됐어요.",
+    "url": "https://code.blender.org/2026/07/remote-asset-libraries/",
+    "source": "dev"
+  }
+]

@@ -1,5 +1,35 @@
 [
   {
+    "id": "heygen-2026-10-14-2",
+    "service": "heygen",
+    "date": "2026.10.14",
+    "kind": "API",
+    "title": "HeyGen API에 공개 음성 조회와 문자 타임스탬프 추가",
+    "summary": "공개 음성을 API로 조회해 바로 쓸 수 있게 됐고, 완성된 음성에 문자 단위 타임스탬프를 받을 수 있어요. 자막 제작에 특히 유용해요.",
+    "details": [
+      "GET /v3/models/audio/voices에서 type을 public으로 지정해 공개 음성 조회",
+      "완성된 음성의 캐릭터 단위 타임스탬프 제공",
+      "브랜드 용어집 규칙을 언어별로 지정(pronunciation_language, target_language)"
+    ],
+    "url": "https://docs.heygen.com/changelog#hey-gen-voice-public-voices-and-batch-timestamps",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-14-1",
+    "service": "heygen",
+    "date": "2026.10.14",
+    "kind": "모델",
+    "title": "HeyGen Voice 공개: 영상에 맞춰 말하는 음성 모델",
+    "summary": "짧은 녹음이나 사진으로 목소리를 만들고, 장면의 공간감과 전달 방식에 맞춰 말하는 새 음성 모델이 나왔어요.",
+    "details": [
+      "최대 60초 녹음으로 목소리 생성, 사진만으로 인물과 장소에 맞는 음성 디자인",
+      "Adaptive Mode로 방 울림과 마이크 거리 등 장면 조건에 맞춤",
+      "Professional Voice Clone은 30분~2시간 녹음으로 학습하는 추가 옵션이며 API 기준 100만 자당 30달러"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice",
+    "source": "notice"
+  },
+  {
     "id": "runway-2026-10-13-1",
     "service": "runway",
     "date": "2026.10.13",
@@ -22,6 +52,21 @@
     "title": "LTX Trainer를 LTX Explore에서 바로 사용",
     "summary": "LTX Trainer로 캐릭터와 스타일 LoRA를 LTX Explore 안에서 바로 학습할 수 있게 됐어요. GPU 설정이나 개발 작업 없이 시작할 수 있어요.",
     "url": "https://ltx.io/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-13-3",
+    "service": "heygen",
+    "date": "2026.10.13",
+    "kind": "기능",
+    "title": "HeyGen 10월 엔터프라이즈 웹 업데이트",
+    "summary": "관리자가 멤버별 사용 한도를 정하고 SSO 가입 통제를 쓸 수 있게 됐어요. 팀은 Video Agent 세션을 함께 편집하고, 브랜드 용어집도 새로 만들어졌어요.",
+    "details": [
+      "멤버별 사용 한도와 한도 증가 요청 기능",
+      "Video Agent 세션을 여러 명이 함께 작업",
+      "Brand Glossary 재설계와 Video Plan 개편"
+    ],
+    "url": "https://heygen.noticeable.news/publications/october-2026-enterprise-web-releases",
     "source": "notice"
   },
   {

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ludo.ai-2026-10-05-1",
+    "service": "ludo.ai",
+    "date": "2026.10.05",
+    "kind": "기능",
+    "title": "New Direction: 애니메이션을 다른 방향으로 다시 생성",
+    "summary": "이미 만든 스프라이트 애니메이션을 같은 움직임과 타이밍 그대로 다른 방향으로 다시 만들 수 있어요. 탑다운 게임용 방향 세트를 빠르게 준비하기 좋아요.",
+    "details": [
+      "Change Direction으로 8방위와 시점 높이를 골라 첫 프레임 생성",
+      "Hydra 기반, 3~5초, 초당 3크레딧",
+      "API의 rotateSpritesheet와 CLI의 ludo sprite rotate-sheet로도 사용 가능"
+    ],
+    "url": "https://ludo.ai/whats-new#new-direction-turn-any-animation-to-face-another-way",
+    "source": "notice"
+  }
+]

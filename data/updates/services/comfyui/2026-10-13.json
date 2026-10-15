@@ -8,5 +8,21 @@
     "summary": "RTX GPU에서 영상 업스케일, 프레임 보간, SDR-HDR 변환을 로컬로 할 수 있는 NVIDIA VFX 노드가 나왔어요. EXR과 색 관리도 지원해요.",
     "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling",
     "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-13-2",
+    "service": "comfyui",
+    "date": "2026.10.13",
+    "kind": "앱",
+    "title": "ComfyUI v0.40.0 출시: Qwen-Image 2.1 Turbo 지원",
+    "summary": "8단계로 빠르게 생성하는 Qwen-Image 2.1 Turbo를 지원하고, 여러 LoRA를 순서대로 쌓는 로더와 카메라 앵글 노드가 추가됐어요.",
+    "details": [
+      "Qwen-Image 2.1 Turbo 텍스트-이미지와 이미지 편집 템플릿",
+      "LoRA 스택 로더, 카메라 앵글과 카메라 정보 노드, 블렌드 연산",
+      "Fish Audio Drama 3, Higgsfield 모션 전이, HeyGen Video 2K 등 파트너 노드 업데이트",
+      "EXR 저장 압축과 에셋 라이브러리 기능 개선"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-40-0",
+    "source": "dev"
   }
 ]

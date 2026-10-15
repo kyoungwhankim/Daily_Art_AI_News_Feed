@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fal.ai-2026-10-13-1",
+    "service": "fal.ai",
+    "date": "2026.10.13",
+    "kind": "API",
+    "title": "앱·러너 관리 API에 호출 제한 도입",
+    "summary": "앱과 러너를 목록 조회, 확인, 셸 접속, 중지, 종료할 때 호출 제한이 생겼어요. 제한을 넘으면 REST API는 429 오류를 반환해요.",
+    "url": "https://fal.ai/docs/changelog#october-13-2026",
+    "source": "dev"
+  }
+]
