@@ -2343,7 +2343,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
 
 /* ---------- 금주 리포트 (/reports/) ---------- */
 /* 사이트의 다른 화면과 달리 장식 없이: 얇은 선, 단정한 타이포, 둥근 모서리 최소 */
-.rp { --rp-ink: #111111; --rp-sub: #2b2b2b; --rp-meta: #5a5a5a; --rp-line: #d6d6d6; --rp-hi: var(--accent-strong);
+.rp { --rp-ink: #111111; --rp-sub: #2b2b2b; --rp-meta: #5a5a5a; --rp-faint: #8a8a8a; --rp-line: #d6d6d6; --rp-hi: var(--accent-strong);
   width: 100%; max-width: 1280px; margin: 0 auto; padding: 8px 40px 56px; color: var(--rp-ink); }
 .rp-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 0; font-size: 11.5px; font-weight: 700;
   letter-spacing: .08em; color: var(--rp-meta); text-transform: uppercase; }
@@ -2375,7 +2375,7 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .rp-range, .rp-date { font-size: 12.5px; color: var(--rp-meta); font-variant-numeric: tabular-nums; padding-top: 3px; white-space: nowrap; }
 
-[data-theme="dark"] .rp { --rp-ink: #f2f2f2; --rp-sub: #e0e0e0; --rp-meta: #a8a8a8; --rp-line: #333333; }
+[data-theme="dark"] .rp { --rp-ink: #f2f2f2; --rp-sub: #e0e0e0; --rp-meta: #a8a8a8; --rp-faint: #7c7c7c; --rp-line: #333333; }
 /* 리포트 본문 */
 .rp-crumbs { display: flex; align-items: center; gap: 8px; padding: 14px 0 0; font-size: 13px; color: var(--rp-meta); }
 .rp-crumbs button { border: 0; background: none; padding: 0; cursor: pointer; font: inherit; color: var(--rp-meta); }
@@ -2397,9 +2397,11 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   font-size: 11.5px; font-weight: 700; color: var(--rp-meta); font-variant-numeric: tabular-nums; }
 .rp-refs button { display: flex; flex-direction: column; gap: 2px; border: 0; background: none; padding: 0; text-align: left;
   cursor: pointer; font: inherit; color: inherit; }
-.rp-ref-title { font-size: 14.5px; line-height: 1.5; }
+.rp-refs h2 { font-size: 15px; color: var(--rp-meta); }
+.rp-refs li { font-size: 13.5px; color: var(--rp-meta); }
+.rp-ref-title { font-size: 13.5px; line-height: 1.5; color: var(--rp-meta); }
 .rp-refs button:hover .rp-ref-title { text-decoration: underline; text-underline-offset: 3px; }
-.rp-ref-meta { font-size: 12px; color: var(--rp-meta); }
+.rp-ref-meta { font-size: 11.5px; color: var(--rp-faint); }
 .rp-pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 22px 0 0; }
 .rp-pager button { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; text-align: left; cursor: pointer;
   border: 1px solid var(--rp-line); border-radius: 4px; background: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--rp-ink); }
