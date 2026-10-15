@@ -52,6 +52,9 @@ function parseRoute(pathname) {
   if (parts[0] === 'free') {
     return { home: false, tab: null, kwSlug: null, articleId: null, free: true, freeCat: parts[1] || null };
   }
+  if (parts[0] === 'about') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, about: true };
+  }
   if (parts[0] === 'reports') {
     return { home: false, tab: null, kwSlug: null, articleId: null, reports: true,
              repRole: ROLES.some(r => r.id === parts[1]) ? parts[1] : null,
@@ -2949,6 +2952,46 @@ function ReportStrip({ role, onOpen }) {
   );
 }
 
+/* ---------- 소개 (/about/) ---------- */
+// 본문은 scripts/build_site.py build_about()이 만든 /about/content.html (검색엔진용 정적 내용과 같은 글).
+// 화면에 들어온 섹션에 .in을 붙여 왼쪽·오른쪽에서 번갈아 나타나게 하고, 숫자는 0부터 올라간다 (static.css .lp-*)
+let aboutPromise = null;
+function AboutView() {
+  const ref = useRef(null);
+  const [html, setHtml] = useState(null);
+  useEffect(() => {
+    if (!aboutPromise) aboutPromise = fetch('/about/content.html').then(r => (r.ok ? r.text() : '')).catch(() => '');
+    let on = true;
+    aboutPromise.then(t => { if (on) setHtml(t); });
+    return () => { on = false; };
+  }, []);
+  useEffect(() => {
+    const root = ref.current;
+    if (!root || !html) return;
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const count = (el) => {
+      const end = +el.getAttribute('data-count');
+      if (reduce) { el.textContent = end; return; }
+      let t0 = null;
+      const step = (t) => { if (!t0) t0 = t; const k = Math.min(1, (t - t0) / 900);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    };
+    const els = root.querySelectorAll('.lp-reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+    const io = new IntersectionObserver(list => list.forEach(x => {
+      if (!x.isIntersecting) return;
+      x.target.classList.add('in');
+      x.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(x.target);
+    }), { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+    return () => io.disconnect();
+  }, [html]);
+  if (html === null) return <main className="feed"><p className="feed-desc">불러오는 중이에요…</p></main>;
+  return <div ref={ref} className="about-wrap" dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
 /* ---------- 첫 화면 안내 팝업 (나만의 피드 사용법) ---------- */
 // 메인(/)으로 들어올 때 띄운다. '오늘은 그만 보기'를 누르면 그날(브라우저 날짜)에는 다시 뜨지 않는다.
 const GUIDE_KEY = 'aiad:guide-hide';
@@ -3047,7 +3090,7 @@ function App() {
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles'
-    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : INITIAL_ROUTE.free ? 'free' : INITIAL_ROUTE.reports ? 'reports' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings' | 'free'
+    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : INITIAL_ROUTE.free ? 'free' : INITIAL_ROUTE.reports ? 'reports' : INITIAL_ROUTE.about ? 'about' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings' | 'free'
   const [freeCat, setFreeCat] = useState(INITIAL_ROUTE.freeCat || null);        // 무료로 써보기 › 분야 (slug)
   const goFree = (cat) => { setSection('free'); setFreeCat(cat || null); setOpen(null); window.scrollTo({ top: 0 }); };
   const [repRole, setRepRole] = useState(INITIAL_ROUTE.repRole || null);        // 금주 리포트 › 직군
@@ -3190,7 +3233,8 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : route.free ? 'free' : route.reports ? 'reports' : 'news');
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : route.free ? 'free' : route.reports ? 'reports' : route.about ? 'about' : 'news');
+      if (route.about) { setOpen(null); return; }
       if (route.reports) { setOpen(null); setRepRole(route.repRole || null); setRepDay(route.repRole ? route.repDate : null); return; }
       if (route.me || route.settings) { setOpen(null); return; }
       if (route.free) { setOpen(null); setFreeCat(route.freeCat || null); return; }
@@ -3248,7 +3292,7 @@ function App() {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section === 'news' && !onArticle && query.trim()) return;
-    const path = section === 'reports' ? reportsPath(repRole, repDay) : section === 'free' ? freePath(freeCat) : section === 'updates' ? updatesPath(updCat, updCompany)
+    const path = section === 'about' ? '/about/' : section === 'reports' ? reportsPath(repRole, repDay) : section === 'free' ? freePath(freeCat) : section === 'updates' ? updatesPath(updCat, updCompany)
       : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : section === 'settings' ? '/settings/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
@@ -3366,6 +3410,8 @@ function App() {
           onCompany={(cat, company) => goUpdates(cat, company)}
           onReport={goReports}
         />
+      ) : section === 'about' ? (
+        <AboutView />
       ) : section === 'reports' ? (
         <ReportsView role={repRole} date={repDay} onOpen={goReports} articles={articles} onOpenArticle={openArticle} />
       ) : section === 'free' ? (
@@ -3449,7 +3495,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-        <div>큐레이션 · 한국어 번역 · <a href="/about/">소개</a> · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
+        <div>큐레이션 · 한국어 번역 · <a href="/about/" onClick={(e) => { e.preventDefault(); setSection('about'); setOpen(null); window.scrollTo({ top: 0 }); }}>소개</a> · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
       </footer>
       </div>
       </div>

@@ -656,33 +656,12 @@ def build_contact() -> str:
 """)
 
 
-# 소개 페이지 (/about/) — 랜딩 페이지 형식. 스크롤하면 섹션이 왼쪽·오른쪽에서 번갈아 나타난다 (static.css .lp-*)
-ABOUT_JS = """
-(function () {
-  var els = document.querySelectorAll('.lp-reveal');
-  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function count(el) {
-    var end = +el.getAttribute('data-count'), t0 = null;
-    if (reduce) { el.textContent = end; return; }
-    function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 900);
-      el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); }
-    requestAnimationFrame(step);
-  }
-  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
-  var io = new IntersectionObserver(function (list) {
-    list.forEach(function (x) {
-      if (!x.isIntersecting) return;
-      x.target.classList.add('in');
-      x.target.querySelectorAll('[data-count]').forEach(count);
-      io.unobserve(x.target);
-    });
-  }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
-  els.forEach(function (e) { io.observe(e); });
-})();
-"""
+# 소개 페이지 (/about/) — 랜딩 페이지 형식. 스크롤하면 섹션이 왼쪽·오른쪽에서 번갈아 나타난다
+# (스타일 static.css .lp-*, 등장 동작 app.jsx AboutView)
 
 
 def build_about() -> str:
+    """소개 페이지 본문 조각 — 앱이 /about/content.html을 읽어 화면에 넣는다 (app.jsx AboutView)."""
     root = '/' + SITE_URL.split('/', 3)[3] + '/' if SITE_URL.count('/') >= 3 else '/'
     mail = f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>'
     cats = [(href(root, tab_path(t)), label, desc) for t, label, desc in TABS] + [
@@ -777,13 +756,7 @@ def build_about() -> str:
     ]
     body = ''.join(row(i + 1, 'left' if i % 2 == 0 else 'right', t, b_, v) for i, (t, b_, v) in enumerate(rows))
 
-    return (head(root, f'소개 | {SITE_NAME}',
-                 f'{SITE_NAME}는 직군과 관심사에 맞춘 나만의 AI 뉴스 피드예요. 운영 목적과 기사를 고르고 쓰는 기준을 소개합니다.',
-                 abs_url('about/'))
-            + f"""<body>
-<div class="page">
-{header(root)}
-<main class="lp">
+    return ('''<div class="lp">''' + f"""
   <section class="lp-hero">
     <div class="lp-hero-text lp-reveal from-up">
       <span class="lp-pill">ABOUT {esc(SITE_NAME).upper()}</span>
@@ -801,13 +774,7 @@ def build_about() -> str:
     <div class="lp-scroll" aria-hidden="true"><span></span></div>
   </section>
   {body}
-</main>
-{footer(root)}
-</div>
-<script>{ABOUT_JS}</script>
-</body>
-</html>
-""")
+</div>""")
 
 
 def build_privacy() -> str:
@@ -1211,7 +1178,11 @@ def main():
     write(out, 'sitemap.xml', build_sitemap(articles, listing_paths + ['about/', 'contact/', 'privacy/'], upd_dated))
     write(out, 'feed.xml', build_feed(articles))
     write(out, '404.html', fin(no_ads(build_404())))
-    write(out, 'about/index.html', fin(build_about()))
+    about_html = build_about()
+    write(out, 'about/content.html', about_html)
+    about_desc = f'{SITE_NAME}는 직군과 관심사에 맞춘 나만의 AI 뉴스 피드예요. 운영 목적과 기사를 고르고 쓰는 기준을 소개합니다.'
+    write(out, 'about/index.html', shell('about/', f'소개 | {SITE_NAME}', about_desc, about_html,
+                                         collection('about/', '소개', about_desc)))
     write(out, 'privacy/index.html', fin(build_privacy()))
     write(out, 'contact/index.html', fin(build_contact()))
     if PREVIEW:
