@@ -1463,7 +1463,7 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
                    subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole, onMe, loggedIn,
-                   freeCat, onFree, repRole, onReports }) {
+                   freeCat, onFree, repRole, onReports, onAbout }) {
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
@@ -1506,6 +1506,16 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
               </button>
             </div>
           )}
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'about' ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={onAbout}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" />
+                </svg>
+                <span>About</span>
+              </button>
+            </div>
+          </div>
           <div className="side-group">
             <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
               <button type="button" className="side-group-link" onClick={() => {
@@ -3378,6 +3388,7 @@ function App() {
         onFree={(cat) => { goFree(cat); setSideOpen(false); }}
         repRole={repRole}
         onReports={(r) => { goReports(r, null); setSideOpen(false); }}
+        onAbout={() => { setSection('about'); setOpen(null); setSideOpen(false); window.scrollTo({ top: 0 }); }}
         loggedIn={!!auth.user}
         subcats={subcats}
         keyword={activeKeyword}
