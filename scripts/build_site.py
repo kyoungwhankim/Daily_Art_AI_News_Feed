@@ -671,7 +671,6 @@ def build_about() -> str:
   <h1 class="feed-title">소개</h1>
   <p class="feed-sub">{SITE_NAME}는 게임과 아트를 만드는 사람들을 위한 <strong>나만의 AI 뉴스 피드</strong>예요.
   내 직군과 관심사만 알려 주면, 매일 쏟아지는 AI 소식 가운데 내 작업에 필요한 것만 골라 한국어로 모아 드려요.</p>
-  <p><a class="chip active" href="{root}me/">나만의 피드 시작하기 →</a></p>
 
   <h2>운영 목적</h2>
   <p>AI는 하루가 다르게 발전하고, 새 도구와 소식이 매일 쏟아집니다. 그런데 정작 현업 아티스트들은 정보의 홍수
