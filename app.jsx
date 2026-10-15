@@ -52,6 +52,14 @@ function parseRoute(pathname) {
   if (parts[0] === 'free') {
     return { home: false, tab: null, kwSlug: null, articleId: null, free: true, freeCat: parts[1] || null };
   }
+  if (parts[0] === 'about') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, about: true };
+  }
+  if (parts[0] === 'reports') {
+    return { home: false, tab: null, kwSlug: null, articleId: null, reports: true,
+             repRole: ROLES.some(r => r.id === parts[1]) ? parts[1] : null,
+             repDate: /^\d{4}-\d{2}-\d{2}$/.test(parts[2] || '') ? parts[2] : null };
+  }
   if (parts[0] === 'updates') {
     return { home: false, tab: null, kwSlug: null, articleId: null, updates: true,
              updCat: parts[1] || null, updCompany: parts[2] || null };
@@ -1455,11 +1463,12 @@ function useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose) {
 // 이미 펼쳐진 메뉴(서브 섹션, 뉴스·업데이트)를 다시 누르면 접힌다.
 function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHome, onTab, onUpdates, counts,
                    subcats, keyword, onKeyword, updCat, onUpdCat, updCompany, onUpdCompany, onRole, onMe, loggedIn,
-                   freeCat, onFree }) {
+                   freeCat, onFree, repRole, onReports, onAbout }) {
   const { myRole } = React.useContext(BriefingContext);
   const [newsOpen, setNewsOpen] = useState(true);
   const [updOpen, setUpdOpen] = useState(true);
   const [freeOpen, setFreeOpen] = useState(true);
+  const [repOpen, setRepOpen] = useState(true);
   const newsActive = section === 'news';
   const asideRef = useRef(null), backdropRef = useRef(null);
   useDrawerSwipe(asideRef, backdropRef, open, onOpen, onClose);
@@ -1497,6 +1506,16 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
               </button>
             </div>
           )}
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'about' ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={onAbout}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" />
+                </svg>
+                <span>About</span>
+              </button>
+            </div>
+          </div>
           <div className="side-group">
             <div className={`side-group-head ${newsActive && viewHome ? 'active' : ''}`}>
               <button type="button" className="side-group-link" onClick={() => {
@@ -1589,6 +1608,33 @@ function Sidebar({ section, viewHome, activeTab, open, onOpen, onClose, onNewsHo
                     </li>
                   );
                 })}
+              </ul>
+            )}
+          </div>
+          <div className="side-group">
+            <div className={`side-group-head ${section === 'reports' && !repRole ? 'active' : ''}`}>
+              <button type="button" className="side-group-link" onClick={() => {
+                if (section === 'reports' && !repRole && repOpen) setRepOpen(false);
+                else { setRepOpen(true); onReports(null); }
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6" /><path d="M8 13h8M8 17h5" />
+                </svg>
+                <span>금주 리포트</span>
+              </button>
+              <button type="button" className="side-caret-btn" aria-label={repOpen ? '접기' : '펼치기'} aria-expanded={repOpen} onClick={() => setRepOpen(o => !o)}>
+                <svg className={`side-caret ${repOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+            </div>
+            {repOpen && (
+              <ul className="side-list">
+                {ROLES.map(r => (
+                  <li key={r.id}>
+                    <button type="button" className={`side-item ${section === 'reports' && repRole === r.id ? 'active' : ''}`} onClick={() => onReports(r.id)}>
+                      <span>{r.label}</span>
+                    </button>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
@@ -2316,7 +2362,7 @@ function RolesNav({ role, onRole }) {
   );
 }
 
-function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany }) {
+function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany, onReport }) {
   const { myRole, setMyRole } = React.useContext(BriefingContext);
   const r = ROLES.find(x => x.id === role) || null;
   const { ready: updReady, items: allUpd } = useServiceUpdates();
@@ -2345,6 +2391,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
           </div>
         </div>
         <main className="feed">
+          <ReportStrip role={myRole} onOpen={onReport} />
           <ul className="role-grid">
             {ROLES.map(x => (
               <li key={x.id}>
@@ -2402,6 +2449,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
       </div>
       <main className="feed">
         <RoleFreeTools role={r} />
+        <ReportStrip role={r.id} onOpen={onReport} />
         {kind === 'news' ? (
           !articlesReady ? (
             <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2636,7 +2684,7 @@ function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welco
   </>);
 }
 
-function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany }) {
+function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany, onReport }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const profile = profileState.profile;
   // 저장 버튼을 눌러도 피드를 다시 계산하거나 '더 보기'가 접히지 않게 관심사만 본다
@@ -2664,6 +2712,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   }, [savedIds, articles, allUpd]);
   const [editing, setEditing] = useState(false);
   const role = profile && profile.role && ROLE_BY_ID[profile.role];
+  const { myRole } = React.useContext(BriefingContext);
   const band = (sub, children) => (
     <div className="feed-meta feed-meta-band">
       <div>
@@ -2719,6 +2768,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
     {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
       {kind !== 'saved' && <MyFreeTools profile={profile} />}
+      {kind !== 'saved' && <ReportStrip role={(role && role.id) || myRole} onOpen={onReport} />}
       {kind === 'saved' ? (
         savedIds.length === 0 ? <EmptyState message="저장한 글이 없어요" sub="기사 카드나 업데이트의 책갈피 버튼을 누르면 여기에 모여요." />
         : !articlesReady || !updReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2756,6 +2806,202 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
 }
 
 /* ---------- App ---------- */
+/* ---------- 금주 리포트 (매주 금요일, 직군별 1분 리포트) ---------- */
+// 데이터: data/reports/index.json (목록) + data/reports/YYYY-MM-DD.json (그 주 본문) — scripts/weekly_report.py
+// 주소: /reports/  /reports/<직군>/  /reports/<직군>/<날짜>/   (scripts/build_site.py의 정적 페이지와 같다)
+function reportsPath(role, date) {
+  if (role && date) return `/reports/${role}/${date}/`;
+  return role ? `/reports/${role}/` : '/reports/';
+}
+let reportIndexPromise = null;
+const reportWeekCache = {};
+function loadReportIndex() {
+  if (!reportIndexPromise) reportIndexPromise = fetchJson(`${DATA_BASE}reports/index.json?v=${Date.now() >> 22}`)
+    .then(d => d.reports || []).catch(() => []);
+  return reportIndexPromise;
+}
+function loadReportWeek(date) {
+  if (!reportWeekCache[date]) reportWeekCache[date] = fetchJson(`${DATA_BASE}reports/${date}.json`).catch(() => null);
+  return reportWeekCache[date];
+}
+const repDate = d => d.replace(/-/g, '.');
+const repRange = (a, b) => `${repDate(a)} – ${b.slice(5).replace('-', '.')}`;
+const REPORT_SECTIONS = [
+  ['must_know', '꼭 알아야 할 것'],
+  ['implications', '시사점'],
+];
+
+function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
+  const [list, setList] = useState(null);
+  const [week, setWeek] = useState(null);
+  useEffect(() => { let on = true; loadReportIndex().then(l => { if (on) setList(l); }); return () => { on = false; }; }, []);
+  useEffect(() => {
+    if (!date) { setWeek(null); return; }
+    let on = true; setWeek(undefined);
+    loadReportWeek(date).then(w => { if (on) setWeek(w); });
+    return () => { on = false; };
+  }, [date]);
+  const roleObj = role && ROLE_BY_ID[role];
+  const rows = (list || []).filter(r => !role || r.role === role);
+  const latestDate = list && list.length ? list[0].date : null;
+
+  if (date) {
+    const rep = week && (week.reports || []).find(r => r.role === role);
+    const mine = (list || []).filter(r => r.role === role);
+    const at = mine.findIndex(r => r.date === date);
+    const newer = at > 0 ? mine[at - 1] : null, older = at >= 0 && at < mine.length - 1 ? mine[at + 1] : null;
+    const byId = Object.fromEntries((articles || []).map(a => [a.id, a]));
+    return (
+      <div className="rp">
+        <div className="rp-crumbs">
+          <button type="button" onClick={() => onOpen(null, null)}>금주 리포트</button>
+          <span>/</span>
+          <button type="button" onClick={() => onOpen(role, null)}>{roleObj ? roleObj.label : role}</button>
+        </div>
+        {week === undefined || list === null ? <p className="rp-empty">불러오는 중…</p>
+          : !rep ? <p className="rp-empty">리포트를 찾을 수 없습니다.</p> : (
+          <article className="rp-doc">
+            <header className="rp-doc-head">
+              <div className="rp-kicker">
+                <span>WEEKLY REPORT</span>{list && list[0] && list[0].date === date && <span className="rp-kicker-latest"><span className="rp-latest">LATEST</span></span>}<span>{roleObj ? roleObj.label : role}</span>
+                <span>{repRange(week.from, week.to)}</span><span>1분 읽기</span>
+              </div>
+              <h1>{rep.title}</h1>
+              <p className="rp-lede">{rep.lede}</p>
+              <div className="rp-byline">AI Art Daily 편집 · {repDate(week.date)} 발행 · 이번 주 기사 {week.articles}건 분석</div>
+            </header>
+            {REPORT_SECTIONS.map(([k, label], i) => (
+              <section key={k} className="rp-sec">
+                <h2><span className="rp-sec-no">{String(i + 1).padStart(2, '0')}</span>{label}</h2>
+                <ul>{(rep[k] || []).map((t, j) => <li key={j}>{t}</li>)}</ul>
+              </section>
+            ))}
+            {rep.refs && rep.refs.length > 0 && (
+              <section className="rp-sec rp-refs">
+                <h2><span className="rp-sec-no">REF</span>근거 기사</h2>
+                <ol>
+                  {rep.refs.map(id => {
+                    const a = byId[id];
+                    return (
+                      <li key={id}>
+                        {a ? (
+                          <button type="button" onClick={() => onOpenArticle(a)}>
+                            <span className="rp-ref-title">{a.headline}</span>
+                            <span className="rp-ref-meta">{a.source} · {a.publishedAt}</span>
+                          </button>
+                        ) : <a href={`/articles/${encodeURIComponent(id)}/`}>{id}</a>}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </section>
+            )}
+            <nav className="rp-pager">
+              {older ? <button type="button" onClick={() => onOpen(role, older.date)}><small>이전 리포트</small>{older.title}</button> : <span />}
+              {newer ? <button type="button" className="next" onClick={() => onOpen(role, newer.date)}><small>다음 리포트</small>{newer.title}</button> : <span />}
+            </nav>
+          </article>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="rp">
+      <header className="rp-head">
+        <div className="rp-kicker"><span>WEEKLY REPORT</span><span>매주 금요일 발행</span></div>
+        <h1>{roleObj ? `${roleObj.label} 리포트` : '금주 리포트'}</h1>
+        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것과 시사점을 1분 분량으로 정리했습니다.</p>
+      </header>
+      <div className="rp-filter" role="tablist">
+        <button type="button" className={!role ? 'on' : ''} onClick={() => onOpen(null, null)}>전체</button>
+        {ROLES.map(r => (
+          <button type="button" key={r.id} className={role === r.id ? 'on' : ''} onClick={() => onOpen(r.id, null)}>{r.short || r.label}</button>
+        ))}
+      </div>
+      {list === null ? <p className="rp-empty">불러오는 중…</p>
+        : rows.length === 0 ? <p className="rp-empty">아직 발행된 리포트가 없습니다. 매주 금요일에 발행됩니다.</p> : (
+        <div className="rp-board">
+          <div className="rp-row rp-row-head" aria-hidden="true">
+            <span>직군</span><span>제목</span><span>기간</span><span>발행일</span>
+          </div>
+          {rows.map(r => (
+            <button type="button" key={r.date + r.role} className={`rp-row ${r.date === latestDate ? 'is-latest' : ''}`} onClick={() => onOpen(r.role, r.date)}>
+              <span className="rp-role">{(ROLE_BY_ID[r.role] || {}).label || r.role}</span>
+              <span className="rp-title">
+                <b>{r.date === latestDate && <span className="rp-latest">LATEST</span>}{r.title}</b>
+                <small>{r.lede}</small>
+              </span>
+              <span className="rp-range">{repRange(r.from, r.to)}</span>
+              <span className="rp-date">{repDate(r.date)}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// 나만의 피드·아티스트 브리핑: '무료로 써볼 만한 AI'와 뉴스 카드 사이의 금주 리포트 바로가기
+// 직군이 있으면 그 직군의 리포트 모음(/reports/<직군>/)으로, 없으면 전체 리포트로 간다.
+function ReportStrip({ role, onOpen }) {
+  const [list, setList] = useState(null);
+  useEffect(() => { let on = true; loadReportIndex().then(l => { if (on) setList(l); }); return () => { on = false; }; }, []);
+  if (!list || !list.length) return null;
+  const r = role && ROLE_BY_ID[role];
+  const latest = (r ? list.find(x => x.role === r.id) : null) || list[0];
+  const isNew = latest.date === list[0].date;
+  return (
+    <button type="button" className="rp-strip" onClick={() => onOpen(r ? r.id : null, null)}>
+      <span className="rp-strip-label">{r ? `${r.label} 리포트` : '금주 리포트'}</span>
+      {isNew && <span className="rp-latest">LATEST</span>}
+      <span className="rp-strip-title">{r ? latest.title : `직군별 리포트 ${list.filter(x => x.date === latest.date).length}편이 발행됐습니다`}</span>
+      <span className="rp-strip-week">{repRange(latest.from, latest.to)}</span>
+      <span className="rp-strip-go">리포트 모음 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+    </button>
+  );
+}
+
+/* ---------- 소개 (/about/) ---------- */
+// 본문은 scripts/build_site.py build_about()이 만든 /about/content.html (검색엔진용 정적 내용과 같은 글).
+// 화면에 들어온 섹션에 .in을 붙여 왼쪽·오른쪽에서 번갈아 나타나게 하고, 숫자는 0부터 올라간다 (static.css .lp-*)
+let aboutPromise = null;
+function AboutView() {
+  const ref = useRef(null);
+  const [html, setHtml] = useState(null);
+  useEffect(() => {
+    if (!aboutPromise) aboutPromise = fetch('/about/content.html').then(r => (r.ok ? r.text() : '')).catch(() => '');
+    let on = true;
+    aboutPromise.then(t => { if (on) setHtml(t); });
+    return () => { on = false; };
+  }, []);
+  useEffect(() => {
+    const root = ref.current;
+    if (!root || !html) return;
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const count = (el) => {
+      const end = +el.getAttribute('data-count');
+      if (reduce) { el.textContent = end; return; }
+      let t0 = null;
+      const step = (t) => { if (!t0) t0 = t; const k = Math.min(1, (t - t0) / 900);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    };
+    const els = root.querySelectorAll('.lp-reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+    const io = new IntersectionObserver(list => list.forEach(x => {
+      if (!x.isIntersecting) return;
+      x.target.classList.add('in');
+      x.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(x.target);
+    }), { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+    return () => io.disconnect();
+  }, [html]);
+  if (html === null) return <main className="feed"><p className="feed-desc">불러오는 중이에요…</p></main>;
+  return <div ref={ref} className="about-wrap" dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
 /* ---------- 첫 화면 안내 팝업 (나만의 피드 사용법) ---------- */
 // 메인(/)으로 들어올 때 띄운다. '오늘은 그만 보기'를 누르면 그날(브라우저 날짜)에는 다시 뜨지 않는다.
 const GUIDE_KEY = 'aiad:guide-hide';
@@ -2770,7 +3016,7 @@ function feedSetHere() {
 const GUIDE_STEPS = [
   ['Google로 로그인', '가입 절차 없이 한 번에'],
   ['직군·관심사 고르기', '주제 · AI 서비스 · 키워드'],
-  ['매일 확인', '새 소식은 NEW, 다시 볼 건 저장'],
+  ['매일 확인', '새 소식은 NEW, 매주 직군별 리포트까지'],
 ];
 // 왼쪽 그림: 실제 나만의 피드 화면을 줄여 그린 모형
 function GuideMock() {
@@ -2854,9 +3100,12 @@ function App() {
   const [activeTab, setActiveTab] = useState(INITIAL_ROUTE.tab || 'games');
   const [viewHome, setViewHome] = useState(INITIAL_ROUTE.home);
   const [section, setSection] = useState(INITIAL_ROUTE.updates ? 'updates' : INITIAL_ROUTE.roles ? 'roles'
-    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : INITIAL_ROUTE.free ? 'free' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings' | 'free'
+    : INITIAL_ROUTE.me ? 'me' : INITIAL_ROUTE.settings ? 'settings' : INITIAL_ROUTE.free ? 'free' : INITIAL_ROUTE.reports ? 'reports' : INITIAL_ROUTE.about ? 'about' : 'news');   // 'news' | 'updates' | 'roles' | 'me' | 'settings' | 'free'
   const [freeCat, setFreeCat] = useState(INITIAL_ROUTE.freeCat || null);        // 무료로 써보기 › 분야 (slug)
   const goFree = (cat) => { setSection('free'); setFreeCat(cat || null); setOpen(null); window.scrollTo({ top: 0 }); };
+  const [repRole, setRepRole] = useState(INITIAL_ROUTE.repRole || null);        // 금주 리포트 › 직군
+  const [repDay, setRepDay] = useState(INITIAL_ROUTE.repDate || null);          // 금주 리포트 › 보고 있는 리포트 (날짜)
+  const goReports = (r, d) => { setSection('reports'); setRepRole(r || null); setRepDay(r && d ? d : null); setOpen(null); window.scrollTo({ top: 0 }); };
   const [role, setRole] = useState(INITIAL_ROUTE.role || null);                 // 아티스트 브리핑 › 보고 있는 직군 id
   const roleState = useMyRole();                                                // 내 직군 (브라우저 저장)
   const profileState = useProfile(auth.user);                                   // 로그인 회원의 관심사 (Supabase)
@@ -2994,7 +3243,9 @@ function App() {
   useEffect(() => {
     function onPop() {
       const route = parseRoute(window.location.pathname);
-      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : route.free ? 'free' : 'news');
+      setSection(route.updates ? 'updates' : route.roles ? 'roles' : route.me ? 'me' : route.settings ? 'settings' : route.free ? 'free' : route.reports ? 'reports' : route.about ? 'about' : 'news');
+      if (route.about) { setOpen(null); return; }
+      if (route.reports) { setOpen(null); setRepRole(route.repRole || null); setRepDay(route.repRole ? route.repDate : null); return; }
       if (route.me || route.settings) { setOpen(null); return; }
       if (route.free) { setOpen(null); setFreeCat(route.freeCat || null); return; }
       if (route.roles) { setOpen(null); setRole(route.role || null); return; }
@@ -3051,12 +3302,12 @@ function App() {
     if (dataState !== 'ready' || open) return;
     const onArticle = window.location.pathname.startsWith('/articles/');
     if (section === 'news' && !onArticle && query.trim()) return;
-    const path = section === 'free' ? freePath(freeCat) : section === 'updates' ? updatesPath(updCat, updCompany)
+    const path = section === 'about' ? '/about/' : section === 'reports' ? reportsPath(repRole, repDay) : section === 'free' ? freePath(freeCat) : section === 'updates' ? updatesPath(updCat, updCompany)
       : section === 'roles' ? rolesPath(role) : section === 'me' ? myFeedPath() : section === 'settings' ? '/settings/' : routePath(viewHome, activeTab, activeKeyword);
     if (path === window.location.pathname) return;
     if (onArticle) window.history.replaceState({}, '', path + window.location.search);   // 공유 링크로 들어와 창을 닫음
     else window.history.pushState({}, '', path + window.location.search);
-  }, [dataState, open, section, updCat, updCompany, freeCat, role, viewHome, query, activeTab, activeKeyword]);
+  }, [dataState, open, section, updCat, updCompany, freeCat, repRole, repDay, role, viewHome, query, activeTab, activeKeyword]);
 
   // filter pipeline
   let visible = articles;
@@ -3135,6 +3386,9 @@ function App() {
         onMe={() => { goMe(); setSideOpen(false); }}
         freeCat={freeCat}
         onFree={(cat) => { goFree(cat); setSideOpen(false); }}
+        repRole={repRole}
+        onReports={(r) => { goReports(r, null); setSideOpen(false); }}
+        onAbout={() => { setSection('about'); setOpen(null); setSideOpen(false); window.scrollTo({ top: 0 }); }}
         loggedIn={!!auth.user}
         subcats={subcats}
         keyword={activeKeyword}
@@ -3155,6 +3409,7 @@ function App() {
           articlesReady={dataState === 'ready'}
           onOpenArticle={openArticle}
           onCompany={(cat, company) => goUpdates(cat, company)}
+          onReport={goReports}
         />
       ) : section === 'roles' ? (
         <RolesView
@@ -3164,7 +3419,12 @@ function App() {
           articlesReady={dataState === 'ready'}
           onOpenArticle={openArticle}
           onCompany={(cat, company) => goUpdates(cat, company)}
+          onReport={goReports}
         />
+      ) : section === 'about' ? (
+        <AboutView />
+      ) : section === 'reports' ? (
+        <ReportsView role={repRole} date={repDay} onOpen={goReports} articles={articles} onOpenArticle={openArticle} />
       ) : section === 'free' ? (
         <FreeView cat={freeCat} onCat={(cat) => goFree(cat)} />
       ) : section === 'updates' ? (
@@ -3246,7 +3506,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="meta-line">AI Art Daily · 매일 오전 업데이트</div>
-        <div>큐레이션 · 한국어 번역 · <a href="/about/">소개</a> · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
+        <div>큐레이션 · 한국어 번역 · <a href="/about/" onClick={(e) => { e.preventDefault(); setSection('about'); setOpen(null); window.scrollTo({ top: 0 }); }}>소개</a> · <a href="/contact/">문의</a> · <a href="/privacy/">개인정보처리방침</a></div>
       </footer>
       </div>
       </div>
