@@ -226,7 +226,7 @@ a.modal-keyword { text-decoration: none; }
 .js .lp-reveal.from-up { transform: translateY(30px); }
 .js .lp-visual.lp-reveal { transition-delay: .12s; }
 .js .lp-hero-art.lp-reveal { transition-delay: .2s; }
-.js .lp-reveal.in { opacity: 1; transform: none; }
+.js .lp .lp-reveal.in { opacity: 1; transform: none; }   /* 모바일의 from-left/right 규칙보다 우선 */
 
 @media (max-width: 900px) {
   .lp { padding: 0 20px 24px; }

@@ -1839,8 +1839,18 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .header-inner .brand { gap: 6px; min-width: 0; }
   .header-inner .brand-name { font-size: 19px; }
 }
-@media (max-width: 380px) {
-  .header-inner .brand-name { font-size: 17px; }
+@media (max-width: 420px) {
+  /* 좁은 폰: 메뉴·로고·검색·설치·테마·로그인 버튼이 한 줄에 겹치지 않게 조금씩 줄인다 */
+  .header-inner { padding: 12px; gap: 8px; }
+  .header-inner .header-actions { gap: 4px; flex: none; }
+  .header-inner .menu-btn, .header-inner .icon-btn, .header-inner .login-btn, .header-inner .account-btn { width: 34px; height: 34px; }
+  .header-inner .brand { flex: 1 1 auto; gap: 5px; overflow: hidden; }
+  .header-inner .brand .brand-mark { width: 24px; height: 24px; flex: none; }
+  .header-inner .brand-name { font-size: 16.5px; }
+}
+@media (max-width: 350px) {
+  .header-inner .brand-name { font-size: 15px; }
+  .header-inner .brand .brand-mark { display: none; }   /* 아주 좁은 화면: 글자 로고만 */
 }
 
 /* 나만의 피드 — 사이드바 바로가기 */
