@@ -51,7 +51,7 @@ SITE_DESC = ('게임 제작과 아트 분야의 AI 뉴스를 매일 골라 한�
 # 개인정보처리방침 (privacy/ 페이지). 내용을 바꾸면 PRIVACY_DATE도 고친다.
 PRIVACY_OWNER = '김경환'          # 개인정보 보호책임자 (contact/ 페이지에도 쓴다)
 CONTACT_EMAIL = 'kyoungwhankim.dev@gmail.com'
-PRIVACY_DATE = '2026년 10월 7일'
+PRIVACY_DATE = '2026년 10월 15일'
 TABS = [
     ('games', '게임 제작 속 AI', '게임 아트 리소스 제작에 사용되는 AI 관련 뉴스들을 매일 업데이트합니다.'),
     ('industry', 'AI 도입 뉴스', '게임 스튜디오들의 AI 도입과 관련된 뉴스들을 매일 업데이트합니다.'),
@@ -178,6 +178,15 @@ ADS_SCRIPT = ('<script async src="https://pagead2.googlesyndication.com/pagead/j
               '?client=ca-pub-7751014405174019" crossorigin="anonymous"></script>\n')
 
 
+# Google Analytics (GA4). 미리보기 배포(PREVIEW=1)에는 넣지 않는다 — 통계에 섞이지 않게.
+# 앱 안의 화면 이동은 GA4 '향상된 측정'(브라우저 기록 변경 기반 페이지 조회)이 잡는다.
+GA_ID = 'G-9J775N3RCG'
+GTAG = ('' if PREVIEW else
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>\n'
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        f"gtag('js',new Date());gtag('config','{GA_ID}');</script>\n")
+
+
 def no_ads(h: str) -> str:
     """내용이 거의 없는 화면(404·설정·로그인 전 나만의 피드)에서는 광고 스크립트를 뺀다.
     애드센스 정책: 게시자 콘텐츠가 없는 화면에 광고를 게재하면 안 된다.
@@ -194,7 +203,7 @@ def head(root: str, title: str, desc: str, canonical: str, og_type='website',
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="google-adsense-account" content="ca-pub-7751014405174019" />
-{ADS_SCRIPT}<title>{esc(title)}</title>
+{ADS_SCRIPT}{GTAG}<title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
 <link rel="canonical" href="{esc(canonical)}" />
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{esc(abs_url('feed.xml'))}" />
@@ -362,7 +371,7 @@ def build_shell(src: str, path: str, title: str, desc: str, fallback: str,
 <meta name="twitter:description" content="{esc(desc)}" />
 <script type="application/ld+json">{ld_json}</script>
 """
-    page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + meta + PWA_HEAD + THEME_BOOT + '\n'
+    page = re.sub(r'<title>[^<]*</title>\n', lambda m: f'<title>{esc(title)}</title>\n' + GTAG + meta + PWA_HEAD + THEME_BOOT + '\n'
                   + '<link rel="stylesheet" href="/static.css?v={STATIC_V}" />\n', page, count=1)
     # 어떤 경로의 페이지에서도 같은 파일을 읽도록 사이트 최상위 기준 주소로
     page = re.sub(r'(href|src)="(app\.css|config\.js|app\.jsx)', r'\1="/\2', page)
@@ -799,6 +808,9 @@ def build_privacy() -> str:
   <ul>
     <li><strong>접속 기록</strong> — IP 주소, 브라우저·기기 정보, 접속 시각, 요청한 페이지.
       사이트를 전송하는 호스팅 서비스(Cloudflare)가 보안과 서비스 운영을 위해 자동으로 기록합니다.</li>
+    <li><strong>방문 통계</strong> — 방문한 페이지, 유입 경로, 체류 시간, 브라우저·기기 종류, 대략적인 지역(국가·도시),
+      그리고 이를 구분하기 위한 쿠키 식별자. Google 애널리틱스와 Cloudflare Web Analytics로 수집하며, 이름이나
+      이메일처럼 개인을 바로 알아볼 수 있는 정보는 포함하지 않습니다. Cloudflare Web Analytics는 쿠키를 쓰지 않습니다.</li>
     <li><strong>광고 쿠키</strong> — 사이트에 표시되는 Google 애드센스 광고가 쿠키와 기기 식별자를 사용합니다
       (아래 4항).</li>
     <li><strong>Google 계정 로그인 정보</strong> (로그인 기능을 이용하는 경우에만) — 이메일 주소, 이름,
@@ -811,6 +823,8 @@ def build_privacy() -> str:
   <ul>
     <li>접속 기록: 서비스 제공, 장애·부정 이용 대응, 통계. 호스팅 서비스의 보관 기준에 따라 보관 후 삭제됩니다.</li>
     <li>로그인 정보: 로그인 상태 유지와 '나만의 피드' 제공. 이용자가 계정 삭제를 요청하면 지체 없이 삭제합니다.</li>
+    <li>방문 통계: 많이 보는 기사와 기능을 파악해 서비스를 개선하는 데 씁니다. Google 애널리틱스 데이터는 수집 후
+      14개월이 지나면 삭제되도록 설정하며, Cloudflare Web Analytics는 Cloudflare의 보관 기준을 따릅니다.</li>
     <li>광고 쿠키: 광고 표시와 광고 성과 측정 (Google의 정책에 따름).</li>
   </ul>
   <p>법령에 따라 보관해야 하는 경우를 빼고는 목적을 이룬 개인정보를 바로 파기합니다.</p>
@@ -821,16 +835,19 @@ def build_privacy() -> str:
   <table class="static-table">
     <thead><tr><th>업체</th><th>하는 일</th><th>처리되는 정보</th><th>위치</th></tr></thead>
     <tbody>
-      <tr><td>Cloudflare, Inc.</td><td>사이트 호스팅·전송</td><td>접속 기록</td><td>미국 등 전 세계 데이터센터</td></tr>
-      <tr><td>Google LLC</td><td>광고(애드센스), Google 계정 로그인</td><td>광고 쿠키, 로그인 시 계정 정보</td><td>미국 등</td></tr>
+      <tr><td>Cloudflare, Inc.</td><td>사이트 호스팅·전송, 방문 통계(Web Analytics)</td><td>접속 기록, 방문 통계</td><td>미국 등 전 세계 데이터센터</td></tr>
+      <tr><td>Google LLC</td><td>광고(애드센스), 방문 통계(애널리틱스), Google 계정 로그인</td><td>광고·통계 쿠키, 방문 통계, 로그인 시 계정 정보</td><td>미국 등</td></tr>
       <tr><td>Supabase, Inc.</td><td>로그인 처리, '나만의 피드' 설정 저장</td><td>로그인 정보, 관심 분야 설정, 저장한 글 목록, 마지막 방문일</td><td>대한민국(서울) 리전</td></tr>
     </tbody>
   </table>
   <p>정보는 사이트 이용 시점에 암호화된 통신(HTTPS)으로 전송되며, 위 보유 기간 동안 처리됩니다.
   해외 처리를 원하지 않으면 로그인 기능을 이용하지 않거나 계정 삭제를 요청할 수 있습니다.</p>
 
-  <h2>4. 쿠키와 광고</h2>
+  <h2>4. 쿠키, 방문 통계와 광고</h2>
   <ul>
+    <li>사이트는 방문 통계를 위해 Google 애널리틱스를 사용하며, Google 애널리틱스는 쿠키로 방문자를 구분합니다.
+      Google 애널리틱스 수집을 원하지 않으면 <a href="https://tools.google.com/dlpage/gaoptout?hl=ko" rel="noopener">Google 애널리틱스 차단 브라우저 부가기능</a>을
+      설치하거나 브라우저에서 쿠키를 거부할 수 있습니다.</li>
     <li>Google을 포함한 제3자 광고 업체는 쿠키를 사용해 이용자가 이 사이트나 다른 웹사이트를 방문한 기록을 바탕으로
       광고를 게재합니다.</li>
     <li>Google은 광고 쿠키를 사용해 이용자의 사이트 방문 기록에 기반한 광고를 이용자에게 보여 줄 수 있습니다.</li>
