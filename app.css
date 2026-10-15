@@ -2424,3 +2424,26 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .rp-pager { grid-template-columns: 1fr; }
   .rp-pager button.next { text-align: left; }
 }
+
+/* 나만의 피드·아티스트 브리핑 맨 위 금주 리포트 바로가기 — 리포트 화면과 같은 단정한 톤 */
+.rp-strip-wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding: 14px 40px 0; }
+.rp-strip { width: 100%; display: flex; align-items: center; gap: 14px; padding: 11px 16px; cursor: pointer; text-align: left;
+  font: inherit; color: #111; background: var(--card); border: 1px solid #cfcfcf; border-left: 3px solid var(--accent-strong);
+  border-radius: 4px; transition: border-color .12s, background .12s; }
+.rp-strip:hover { border-color: #111; border-left-color: var(--accent-strong); }
+.rp-strip:hover .rp-strip-go svg { transform: translateX(3px); }
+.rp-strip-label { flex: none; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; color: var(--accent-strong); }
+.rp-strip-week { flex: none; font-size: 12px; color: #5a5a5a; font-variant-numeric: tabular-nums; }
+.rp-strip-title { flex: 1; min-width: 0; font-size: 14.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rp-strip-title b { font-weight: 700; margin-right: 6px; }
+.rp-strip-go { flex: none; display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; }
+.rp-strip-go svg { transition: transform .15s ease; }
+[data-theme="dark"] .rp-strip { color: #f2f2f2; border-color: #3a3a3a; }
+[data-theme="dark"] .rp-strip:hover { border-color: #f2f2f2; }
+[data-theme="dark"] .rp-strip-week { color: #a8a8a8; }
+@media (max-width: 760px) {
+  .rp-strip-wrap { padding: 10px 16px 0; }
+  .rp-strip { flex-wrap: wrap; gap: 4px 10px; padding: 10px 12px; }
+  .rp-strip-title { flex-basis: 100%; order: 3; white-space: normal; font-size: 14px; }
+  .rp-strip-go { margin-left: auto; }
+}

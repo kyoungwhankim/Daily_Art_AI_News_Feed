@@ -2349,7 +2349,7 @@ function RolesNav({ role, onRole }) {
   );
 }
 
-function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany }) {
+function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCompany, onReport }) {
   const { myRole, setMyRole } = React.useContext(BriefingContext);
   const r = ROLES.find(x => x.id === role) || null;
   const { ready: updReady, items: allUpd } = useServiceUpdates();
@@ -2370,6 +2370,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   if (!r) {
     return (
       <>
+        <ReportStrip onOpen={onReport} />
         <RolesNav role={null} onRole={onRole} />
         <div className="feed-meta">
           <div>
@@ -2400,6 +2401,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   const list = kind === 'news' ? news : upd;
   return (
     <>
+      <ReportStrip onOpen={onReport} />
       <RolesNav role={role} onRole={onRole} />
       <div className="feed-meta feed-meta-band">
         <div>
@@ -2669,7 +2671,7 @@ function SettingsView({ auth, profileState, keywordTabs, onSave, onMyFeed, welco
   </>);
 }
 
-function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany }) {
+function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles, articlesReady, onOpenArticle, onCompany, onReport }) {
   const { ready: updReady, items: allUpd } = useServiceUpdates();
   const profile = profileState.profile;
   // 저장 버튼을 눌러도 피드를 다시 계산하거나 '더 보기'가 접히지 않게 관심사만 본다
@@ -2697,14 +2699,16 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   }, [savedIds, articles, allUpd]);
   const [editing, setEditing] = useState(false);
   const role = profile && profile.role && ROLE_BY_ID[profile.role];
-  const band = (sub, children) => (
+  const strip = <ReportStrip onOpen={onReport} />;
+  const band = (sub, children) => (<>
+    {strip}
     <div className="feed-meta feed-meta-band">
       <div>
         <SectionBand bandKey="me" photo={role && role.photo} eyebrow="MY FEED" title="나만의 피드">{children}</SectionBand>
         {sub}
       </div>
     </div>
-  );
+  </>);
   if (!auth.enabled || !auth.user) {
     return (<>
       {band(<p className="feed-desc">로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 한 페이지에 모아 볼 수 있어요.</p>,
@@ -2917,6 +2921,25 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
           ))}
         </div>
       )}
+    </div>
+  );
+}
+
+// 나만의 피드·아티스트 브리핑 맨 위: 가장 최근 금주 리포트 바로가기 (게시판으로)
+function ReportStrip({ onOpen }) {
+  const [list, setList] = useState(null);
+  useEffect(() => { let on = true; loadReportIndex().then(l => { if (on) setList(l); }); return () => { on = false; }; }, []);
+  if (!list || !list.length) return null;
+  const week = list[0];
+  const n = list.filter(r => r.date === week.date).length;
+  return (
+    <div className="rp-strip-wrap">
+      <button type="button" className="rp-strip" onClick={() => onOpen(null, null)}>
+        <span className="rp-strip-label">금주 리포트</span>
+        <span className="rp-strip-week">{repRange(week.from, week.to)}</span>
+        <span className="rp-strip-title">최신 리포트가 발행됐습니다. 직군별 {n}편을 확인해 보세요.</span>
+        <span className="rp-strip-go">읽기 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+      </button>
     </div>
   );
 }
@@ -3326,6 +3349,7 @@ function App() {
           articlesReady={dataState === 'ready'}
           onOpenArticle={openArticle}
           onCompany={(cat, company) => goUpdates(cat, company)}
+          onReport={goReports}
         />
       ) : section === 'roles' ? (
         <RolesView
@@ -3335,6 +3359,7 @@ function App() {
           articlesReady={dataState === 'ready'}
           onOpenArticle={openArticle}
           onCompany={(cat, company) => goUpdates(cat, company)}
+          onReport={goReports}
         />
       ) : section === 'reports' ? (
         <ReportsView role={repRole} date={repDay} onOpen={goReports} articles={articles} onOpenArticle={openArticle} />
