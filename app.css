@@ -2425,25 +2425,44 @@ button.role-term { cursor: pointer; font: inherit; font-size: 12px; font-weight:
   .rp-pager button.next { text-align: left; }
 }
 
-/* 나만의 피드·아티스트 브리핑 맨 위 금주 리포트 바로가기 — 리포트 화면과 같은 단정한 톤 */
-.rp-strip-wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding: 14px 40px 0; }
-.rp-strip { width: 100%; display: flex; align-items: center; gap: 14px; padding: 11px 16px; cursor: pointer; text-align: left;
-  font: inherit; color: #111; background: var(--card); border: 1px solid #cfcfcf; border-left: 3px solid var(--accent-strong);
-  border-radius: 4px; transition: border-color .12s, background .12s; }
+/* 나만의 피드·아티스트 브리핑: 무료 AI와 뉴스 카드 사이 금주 리포트 바로가기 — 리포트 화면과 같은 단정한 톤 */
+.rp-strip { width: 100%; display: flex; align-items: center; gap: 12px; margin: 0 0 26px; padding: 13px 18px; cursor: pointer;
+  text-align: left; font: inherit; color: #111; background: var(--card); border: 1px solid #cfcfcf;
+  border-left: 3px solid var(--accent-strong); border-radius: 4px; transition: border-color .12s; }
 .rp-strip:hover { border-color: #111; border-left-color: var(--accent-strong); }
 .rp-strip:hover .rp-strip-go svg { transform: translateX(3px); }
-.rp-strip-label { flex: none; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; color: var(--accent-strong); }
+.rp-strip-label { flex: none; font-size: 12px; font-weight: 800; letter-spacing: .02em; color: var(--accent-strong); }
+.rp-strip-title { flex: 1; min-width: 0; font-size: 15px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .rp-strip-week { flex: none; font-size: 12px; color: #5a5a5a; font-variant-numeric: tabular-nums; }
-.rp-strip-title { flex: 1; min-width: 0; font-size: 14.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.rp-strip-title b { font-weight: 700; margin-right: 6px; }
 .rp-strip-go { flex: none; display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; }
 .rp-strip-go svg { transition: transform .15s ease; }
 [data-theme="dark"] .rp-strip { color: #f2f2f2; border-color: #3a3a3a; }
 [data-theme="dark"] .rp-strip:hover { border-color: #f2f2f2; }
 [data-theme="dark"] .rp-strip-week { color: #a8a8a8; }
 @media (max-width: 760px) {
-  .rp-strip-wrap { padding: 10px 16px 0; }
-  .rp-strip { flex-wrap: wrap; gap: 4px 10px; padding: 10px 12px; }
-  .rp-strip-title { flex-basis: 100%; order: 3; white-space: normal; font-size: 14px; }
-  .rp-strip-go { margin-left: auto; }
+  .rp-strip { flex-wrap: wrap; gap: 6px 8px; padding: 11px 13px; }
+  .rp-strip-title { flex-basis: 100%; order: 3; white-space: normal; font-size: 14.5px; }
+  .rp-strip-week { margin-left: auto; }
+  .rp-strip-go { order: 4; }
 }
+
+/* LATEST — 가장 최근 리포트 표시: 단색 배지 위로 빛이 천천히 지나간다 */
+.rp-latest { position: relative; overflow: hidden; display: inline-flex; align-items: center; flex: none;
+  padding: 3px 7px 3px 6px; margin-right: 8px; border-radius: 3px; vertical-align: 2px;
+  font-size: 10px; font-weight: 800; letter-spacing: .12em; line-height: 1.2; color: #fff; background: var(--accent-strong); }
+.rp-latest::before { content: ""; width: 5px; height: 5px; margin-right: 5px; border-radius: 50%; background: #fff;
+  animation: rpLatestDot 1.6s ease-in-out infinite; }
+.rp-latest::after { content: ""; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent); transform: skewX(-20deg);
+  animation: rpLatestShine 3.2s ease-in-out infinite; }
+@keyframes rpLatestDot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+@keyframes rpLatestShine { 0% { left: -60%; } 55%, 100% { left: 130%; } }
+[data-theme="dark"] .rp-latest { background: #4f65a3; }
+.rp-row.is-latest { background: #f4f6fb; }
+.rp-row.is-latest:hover { background: #ebeff8; }
+[data-theme="dark"] .rp-row.is-latest { background: #181c27; }
+[data-theme="dark"] .rp-row.is-latest:hover { background: #1f2433; }
+.rp-kicker .rp-kicker-latest::before { display: none; }
+.rp-kicker .rp-kicker-latest { margin-left: 10px; }
+.rp-kicker .rp-kicker-latest .rp-latest { color: #fff; margin-right: 0; }
+@media (prefers-reduced-motion: reduce) { .rp-latest::before, .rp-latest::after { animation: none; } }

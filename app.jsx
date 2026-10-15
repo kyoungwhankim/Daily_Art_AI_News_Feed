@@ -2370,7 +2370,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   if (!r) {
     return (
       <>
-        <ReportStrip onOpen={onReport} />
         <RolesNav role={null} onRole={onRole} />
         <div className="feed-meta">
           <div>
@@ -2379,6 +2378,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
           </div>
         </div>
         <main className="feed">
+          <ReportStrip role={myRole} onOpen={onReport} />
           <ul className="role-grid">
             {ROLES.map(x => (
               <li key={x.id}>
@@ -2401,7 +2401,6 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
   const list = kind === 'news' ? news : upd;
   return (
     <>
-      <ReportStrip onOpen={onReport} />
       <RolesNav role={role} onRole={onRole} />
       <div className="feed-meta feed-meta-band">
         <div>
@@ -2437,6 +2436,7 @@ function RolesView({ role, onRole, articles, articlesReady, onOpenArticle, onCom
       </div>
       <main className="feed">
         <RoleFreeTools role={r} />
+        <ReportStrip role={r.id} onOpen={onReport} />
         {kind === 'news' ? (
           !articlesReady ? (
             <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2699,16 +2699,15 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
   }, [savedIds, articles, allUpd]);
   const [editing, setEditing] = useState(false);
   const role = profile && profile.role && ROLE_BY_ID[profile.role];
-  const strip = <ReportStrip onOpen={onReport} />;
-  const band = (sub, children) => (<>
-    {strip}
+  const { myRole } = React.useContext(BriefingContext);
+  const band = (sub, children) => (
     <div className="feed-meta feed-meta-band">
       <div>
         <SectionBand bandKey="me" photo={role && role.photo} eyebrow="MY FEED" title="나만의 피드">{children}</SectionBand>
         {sub}
       </div>
     </div>
-  </>);
+  );
   if (!auth.enabled || !auth.user) {
     return (<>
       {band(<p className="feed-desc">로그인하면 내 직군·관심 주제·관심 서비스·키워드에 맞는 뉴스와 업데이트만 한 페이지에 모아 볼 수 있어요.</p>,
@@ -2756,6 +2755,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
     {editing && <ProfileModal profile={profile} keywordTabs={keywordTabs} onSave={onSave} onClose={() => setEditing(false)} />}
     <main className="feed">
       {kind !== 'saved' && <MyFreeTools profile={profile} />}
+      {kind !== 'saved' && <ReportStrip role={(role && role.id) || myRole} onOpen={onReport} />}
       {kind === 'saved' ? (
         savedIds.length === 0 ? <EmptyState message="저장한 글이 없어요" sub="기사 카드나 업데이트의 책갈피 버튼을 누르면 여기에 모여요." />
         : !articlesReady || !updReady ? <div className="grid">{[0, 1, 2].map(i => <SkeletonCard key={i} />)}</div>
@@ -2830,6 +2830,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
   }, [date]);
   const roleObj = role && ROLE_BY_ID[role];
   const rows = (list || []).filter(r => !role || r.role === role);
+  const latestDate = list && list.length ? list[0].date : null;
 
   if (date) {
     const rep = week && (week.reports || []).find(r => r.role === role);
@@ -2849,7 +2850,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
           <article className="rp-doc">
             <header className="rp-doc-head">
               <div className="rp-kicker">
-                <span>WEEKLY REPORT</span><span>{roleObj ? roleObj.label : role}</span>
+                <span>WEEKLY REPORT</span>{list && list[0] && list[0].date === date && <span className="rp-kicker-latest"><span className="rp-latest">LATEST</span></span>}<span>{roleObj ? roleObj.label : role}</span>
                 <span>{repRange(week.from, week.to)}</span><span>1분 읽기</span>
               </div>
               <h1>{rep.title}</h1>
@@ -2912,9 +2913,12 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
             <span>직군</span><span>제목</span><span>기간</span><span>발행일</span>
           </div>
           {rows.map(r => (
-            <button type="button" key={r.date + r.role} className="rp-row" onClick={() => onOpen(r.role, r.date)}>
+            <button type="button" key={r.date + r.role} className={`rp-row ${r.date === latestDate ? 'is-latest' : ''}`} onClick={() => onOpen(r.role, r.date)}>
               <span className="rp-role">{(ROLE_BY_ID[r.role] || {}).label || r.role}</span>
-              <span className="rp-title"><b>{r.title}</b><small>{r.lede}</small></span>
+              <span className="rp-title">
+                <b>{r.date === latestDate && <span className="rp-latest">LATEST</span>}{r.title}</b>
+                <small>{r.lede}</small>
+              </span>
               <span className="rp-range">{repRange(r.from, r.to)}</span>
               <span className="rp-date">{repDate(r.date)}</span>
             </button>
@@ -2925,22 +2929,23 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
   );
 }
 
-// 나만의 피드·아티스트 브리핑 맨 위: 가장 최근 금주 리포트 바로가기 (게시판으로)
-function ReportStrip({ onOpen }) {
+// 나만의 피드·아티스트 브리핑: '무료로 써볼 만한 AI'와 뉴스 카드 사이의 금주 리포트 바로가기
+// 직군이 있으면 그 직군의 리포트 모음(/reports/<직군>/)으로, 없으면 전체 리포트로 간다.
+function ReportStrip({ role, onOpen }) {
   const [list, setList] = useState(null);
   useEffect(() => { let on = true; loadReportIndex().then(l => { if (on) setList(l); }); return () => { on = false; }; }, []);
   if (!list || !list.length) return null;
-  const week = list[0];
-  const n = list.filter(r => r.date === week.date).length;
+  const r = role && ROLE_BY_ID[role];
+  const latest = (r ? list.find(x => x.role === r.id) : null) || list[0];
+  const isNew = latest.date === list[0].date;
   return (
-    <div className="rp-strip-wrap">
-      <button type="button" className="rp-strip" onClick={() => onOpen(null, null)}>
-        <span className="rp-strip-label">금주 리포트</span>
-        <span className="rp-strip-week">{repRange(week.from, week.to)}</span>
-        <span className="rp-strip-title">최신 리포트가 발행됐습니다. 직군별 {n}편을 확인해 보세요.</span>
-        <span className="rp-strip-go">읽기 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
-      </button>
-    </div>
+    <button type="button" className="rp-strip" onClick={() => onOpen(r ? r.id : null, null)}>
+      <span className="rp-strip-label">{r ? `${r.label} 리포트` : '금주 리포트'}</span>
+      {isNew && <span className="rp-latest">LATEST</span>}
+      <span className="rp-strip-title">{r ? latest.title : `직군별 리포트 ${list.filter(x => x.date === latest.date).length}편이 발행됐습니다`}</span>
+      <span className="rp-strip-week">{repRange(latest.from, latest.to)}</span>
+      <span className="rp-strip-go">리포트 모음 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+    </button>
   );
 }
 
