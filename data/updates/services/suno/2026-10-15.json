@@ -1,0 +1,16 @@
+[
+  {
+    "id": "suno-2026-10-15-1",
+    "service": "suno",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Suno 공유 워크스페이스와 공유 커스텀 모델 추가",
+    "summary": "팀이 함께 쓸 수 있는 공유 워크스페이스가 생겼어요. 초대받은 사람만 곡 라이브러리에 접근할 수 있어요.",
+    "details": [
+      "공유 워크스페이스는 Pro·Premier 사용자가 쓸 수 있어요",
+      "공유 커스텀 모델로 협업자와 모델을 나눠 쓸 수 있고, 입력이 2배로 늘었어요 (Premier 전용)"
+    ],
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  }
+]

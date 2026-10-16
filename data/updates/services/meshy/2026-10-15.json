@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2026-10-15-1",
+    "service": "meshy",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Meshy 스마트 토폴로지 모델 meshy-t2.5 추가",
+    "summary": "게임 에셋용 스마트 토폴로지 모델 meshy-t2.5가 Image to 3D, Text to 3D API에 추가됐어요. 더 선명한 디테일을 가진 삼각형 기반 메시를 만들어요.",
+    "details": [
+      "model_type을 smart-topology로 설정해서 쓸 수 있어요",
+      "출력은 삼각형만 나오고 target_polycount는 100~30,000을 받아요"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  }
+]

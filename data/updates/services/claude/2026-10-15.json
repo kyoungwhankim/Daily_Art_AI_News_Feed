@@ -1,0 +1,18 @@
+[
+  {
+    "id": "claude-2026-10-15-1",
+    "service": "claude",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "Claude Opus 5.5 패스트 모드 정식 공개",
+    "summary": "Claude Opus 5.5의 패스트 모드가 리서치 프리뷰를 벗어나서 이제 별도 신청 없이 쓸 수 있어요. 요청할 때 베타 헤더를 보내지 않아도 돼요.",
+    "details": [
+      "Opus 5.5는 모든 사용량 등급에 기본 패스트 모드 속도 제한이 적용돼요",
+      "Opus 5와 Opus 4.8의 패스트 모드는 아직 리서치 프리뷰라서 기존 베타 헤더를 계속 보내야 해요",
+      "Claude in Microsoft Foundry(Azure 배포)에서도 Opus 5.5 패스트 모드를 쓸 수 있어요",
+      "Compliance API로 조직 구성원이 저장한 사용자 지침을 읽을 수 있는 베타가 열렸어요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2026",
+    "source": "dev"
+  }
+]

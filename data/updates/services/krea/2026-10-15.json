@@ -1,0 +1,19 @@
+[
+  {
+    "id": "krea-2026-10-15-1",
+    "service": "krea",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "Krea 3 API 얼리 액세스 시작",
+    "summary": "Krea 3 이미지 편집 모델을 API로 쓸 수 있는 얼리 액세스가 열렸어요. 자연어 지시로 이미지를 고치고 최대 8장의 참조 이미지를 함께 쓸 수 있어요.",
+    "details": [
+      "빠른 모드(fast)와 고품질 모드(high)를 고를 수 있어요",
+      "영역 편집으로 일부만 바꾸고 나머지는 픽셀 단위로 유지해요",
+      "1K·2K 출력, $0.03/1K 이미지부터예요",
+      "Enterprise 워크스페이스는 Zero Data Retention을 쓸 수 있어요",
+      "기존 thinking_mode 값은 2026년 10월 23일에 종료돼요 (fast·high로 변경)"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-15-2026",
+    "source": "dev"
+  }
+]

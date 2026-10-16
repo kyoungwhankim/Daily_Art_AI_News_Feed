@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-10-15-1",
+    "service": "magnific",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Ideogram 4·4.5 API 추가",
+    "summary": "글자가 정확하게 들어가는 이미지 모델 Ideogram 4와 4.5가 Magnific API에 추가됐어요. 텍스트가 필요한 디자인 작업에 쓰기 좋아요.",
+    "details": [
+      "Ideogram 4: 15가지 화면 비율의 텍스트→이미지, 네거티브 프롬프트와 seed를 지원해요",
+      "Ideogram 4.5: 텍스트→이미지와 함께 이미지 편집(최대 5장, 첫 장을 편집하고 나머지는 참조)을 지원해요",
+      "가격은 Ideogram 4는 렌더링 속도, 4.5는 품질 단계에 따라 달라요"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-15-2026",
+    "source": "dev"
+  }
+]

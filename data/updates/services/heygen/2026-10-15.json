@@ -1,0 +1,16 @@
+[
+  {
+    "id": "heygen-2026-10-15-1",
+    "service": "heygen",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "이미지로 만드는 인스턴트 음성 기능 추가",
+    "summary": "사진 한 장을 넣으면 그 장면의 배경 분위기가 음성에 담기는 기능이 HeyGen API에 추가됐어요. 조용한 방은 깨끗하게, 시끄러운 곳은 그 분위기를 살려 줘요.",
+    "details": [
+      "POST /v3/models/audio/voices의 인스턴트 모드에서 image 값을 받을 수 있어요",
+      "인스턴트 음성 생성은 미리보기 기간 동안 무료예요"
+    ],
+    "url": "https://docs.heygen.com/changelog#instant-voices-from-an-image",
+    "source": "dev"
+  }
+]

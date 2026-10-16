@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ludo.ai-2026-10-15-1",
+    "service": "ludo.ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Directional Sprites 베타 공개, 8방향 일관된 캐릭터 스프라이트",
+    "summary": "캐릭터 하나를 8방향 스프라이트 시트로 뽑아주는 Directional Sprites 베타가 나왔어요. 3D 모델 한 번으로 모든 방향이 같은 옷과 비율을 유지해요.",
+    "details": [
+      "14가지 2D 스타일 중에서 고를 수 있어요",
+      "걷기·달리기 등 애니메이션 전체에서 일관성이 유지돼요",
+      "출시 가격 기준으로 Sprite Generator 애니메이션의 약 1/10 비용이에요"
+    ],
+    "url": "https://ludo.ai/whats-new#directional-sprites-one-consistent-character-in-8-directions-in-the-2d-style-you",
+    "source": "notice"
+  }
+]

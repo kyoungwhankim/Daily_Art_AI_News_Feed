@@ -1,28 +1,28 @@
 {
   "categories": {
     "image": {
-      "count": 464,
-      "latest": "2026.10.12",
+      "count": 468,
+      "latest": "2026.10.15",
       "file": "updates/feed/image.json",
-      "rev": "d01a31c2c8"
+      "rev": "a2eba7a80a"
     },
     "video": {
-      "count": 949,
-      "latest": "2026.10.14",
+      "count": 950,
+      "latest": "2026.10.15",
       "file": "updates/feed/video.json",
-      "rev": "b90c403050"
+      "rev": "31b5d09915"
     },
     "3d": {
-      "count": 181,
-      "latest": "2026.10.14",
+      "count": 182,
+      "latest": "2026.10.15",
       "file": "updates/feed/3d.json",
-      "rev": "d18b30f030"
+      "rev": "5cc6d651de"
     },
     "game-assets": {
-      "count": 547,
-      "latest": "2026.10.14",
+      "count": 549,
+      "latest": "2026.10.15",
       "file": "updates/feed/game-assets.json",
-      "rev": "3b69ad88e8"
+      "rev": "306286663d"
     },
     "motion": {
       "count": 162,
@@ -31,16 +31,16 @@
       "rev": "5db49dd05e"
     },
     "audio": {
-      "count": 353,
-      "latest": "2026.10.12",
+      "count": 354,
+      "latest": "2026.10.15",
       "file": "updates/feed/audio.json",
-      "rev": "9900f068b6"
+      "rev": "6845446975"
     },
     "tools": {
-      "count": 1008,
-      "latest": "2026.10.14",
+      "count": 1012,
+      "latest": "2026.10.15",
       "file": "updates/feed/tools.json",
-      "rev": "99da57de05"
+      "rev": "62965b4730"
     }
   },
   "services": {
@@ -70,9 +70,9 @@
       "latest": "2026.10.09"
     },
     "flux": {
-      "count": 42,
+      "count": 43,
       "first": "2024.08.01",
-      "latest": "2026.10.01"
+      "latest": "2026.10.15"
     },
     "stable-diffusion": {
       "count": 54,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 47,
+      "count": 48,
       "first": "2025.03.26",
-      "latest": "2026.10.08"
+      "latest": "2026.10.15"
     },
     "recraft": {
       "count": 41,
@@ -90,9 +90,9 @@
       "latest": "2026.10.08"
     },
     "magnific": {
-      "count": 64,
+      "count": 66,
       "first": "2024.09.16",
-      "latest": "2026.10.08"
+      "latest": "2026.10.15"
     },
     "gigapixel": {
       "count": 80,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 73,
+      "count": 74,
       "first": "2025.11.29",
-      "latest": "2026.10.14"
+      "latest": "2026.10.15"
     },
     "synthesia": {
       "count": 188,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 119,
+      "count": 120,
       "first": "2023.10.19",
-      "latest": "2026.10.14"
+      "latest": "2026.10.15"
     },
     "tripo": {
       "count": 29,
@@ -205,7 +205,7 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 357,
+      "count": 358,
       "first": "2022.12.23",
       "latest": "2026.10.14"
     },
@@ -215,9 +215,9 @@
       "latest": "2026.10.12"
     },
     "ludo.ai": {
-      "count": 48,
+      "count": 49,
       "first": "2021.06.22",
-      "latest": "2026.10.13"
+      "latest": "2026.10.15"
     },
     "roblox-cube": {
       "count": 39,
@@ -245,9 +245,9 @@
       "latest": "2026.10.12"
     },
     "suno": {
-      "count": 70,
+      "count": 71,
       "first": "2023.12.22",
-      "latest": "2026.10.08"
+      "latest": "2026.10.15"
     },
     "mureka": {
       "count": 55,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 212,
+      "count": 213,
       "first": "2024.08.06",
-      "latest": "2026.10.13"
+      "latest": "2026.10.15"
     },
     "invokeai": {
       "count": 73,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 62,
+      "count": 63,
       "first": "2025.05.21",
-      "latest": "2026.10.14"
+      "latest": "2026.10.15"
     },
     "fal.ai": {
       "count": 169,
@@ -300,9 +300,9 @@
       "latest": "2026.10.13"
     },
     "figma-ai": {
-      "count": 80,
+      "count": 81,
       "first": "2024.03.28",
-      "latest": "2026.10.13"
+      "latest": "2026.10.15"
     },
     "blender": {
       "count": 31,
@@ -310,9 +310,9 @@
       "latest": "2026.07.30"
     },
     "claude": {
-      "count": 229,
+      "count": 230,
       "first": "2023.03.14",
-      "latest": "2026.10.14"
+      "latest": "2026.10.15"
     }
   }
 }

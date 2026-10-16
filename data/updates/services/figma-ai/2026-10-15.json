@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-10-15-1",
+    "service": "figma-ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Figma Make 코드 레이어·Specs 오픈 베타 공개",
+    "summary": "Config India 2026에서 Figma Make에 코드 레이어 편집과 Specs 기능이 오픈 베타로 공개됐어요. 디자인 시스템 코드를 가져와서 에이전트가 실제 컴포넌트를 만들 수 있어요.",
+    "details": [
+      "코드 레이어 생성·편집은 유료 플랜에서 11월 4일까지 무료예요",
+      "Specs: 디자인 의도와 기술 명세를 팀과 에이전트가 함께 보는 공간이에요 (유료 플랜 오픈 베타)",
+      "Make에서 Payload 백엔드를 바로 만들 수 있어요 (CMS·DB·인증 포함)",
+      "GitHub 저장소나 npm 패키지에서 코드를 가져와 실제 디자인 시스템에 맞출 수 있어요"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=config-india-2026",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "games-a7ab7c52-2026-10",
+    "tab": "games",
+    "headline": "쿤룬테크, 게임 엔진에 실시간 영상 AI를 결합한 'Matrix-Game 4.0' 오픈소스 공개",
+    "summary": "쿤룬테크가 게임 엔진과 실시간 AI 영상 렌더링을 결합한 Matrix-Game 4.0을 오픈소스로 공개했어요.",
+    "body": "<p>중국 쿤룬테크(스카이워크 AI)가 10월 15일 게임 엔진과 실시간 AI 영상 렌더링을 하나로 묶은 오픈소스 시스템 'Matrix-Game 4.0'을 공개했어요. 회사 설명에 따르면 소비자용 그래픽카드인 엔비디아 RTX 5090 한 장으로 480p 해상도의 게임플레이를 초당 60프레임으로 돌릴 수 있고, 입력부터 화면 반응까지의 지연 시간도 150밀리초 미만이라고 해요.</p><p>구조가 꽤 흥미로운데요. 월드 상태와 물리, 상호작용 규칙은 기존처럼 게임 엔진이 맡고, 영상 생성 모델이 단순한 로우폴리 화면을 받아서 디테일한 비주얼로 바꿔 그려 주는 방식이에요. 여기에 코딩 에이전트가 붙어서 플레이어가 말로 지시한 내용을 새로운 게임 규칙과 프롬프트로 옮겨 주기 때문에, 게임플레이 자체와 AI가 그리는 그래픽을 함께 바꿀 수 있대요. 이번 공개에는 모델 가중치와 추론 코드, 브라우저 데모, 슈팅·드라이빙 시나리오용 게임 에셋까지 포함됐어요.</p><p>팀은 앞으로 해상도를 높이고, 지원하는 게임 장르를 넓히며, 여러 플레이어가 같은 화면을 일관되게 보는 멀티플레이 경험도 연구할 계획이라고 밝혔어요. 아직 480p라 실제 상용 게임에 바로 쓰기는 어렵지만, 로우폴리 블록아웃 위에 AI로 룩을 입히는 '뉴럴 렌더링' 방식을 누구나 직접 실험해 볼 수 있게 됐다는 점에서 아트 파이프라인의 미래를 가늠해 볼 수 있는 소식이에요.</p><p>원문: <a href=\"https://technode.com/2026/10/15/kunlun-tech-releases-open-source-ai-game-system-that-runs-on-a-single-rtx-5090/\">TechNode</a></p>",
+    "source": "TechNode",
+    "publishedAt": "2026.10.16",
+    "hue": 210,
+    "image": "https://i0.wp.com/technode.com/wp-content/uploads/2026/10/feed-20261015-cn-371266.jpg?fit=1280%2C720&ssl=1",
+    "keywords": [
+      "영상",
+      "NVIDIA"
+    ],
+    "url": "https://technode.com/2026/10/15/kunlun-tech-releases-open-source-ai-game-system-that-runs-on-a-single-rtx-5090/",
+    "urls": [
+      {
+        "label": "깃허브",
+        "href": "https://github.com/SkyworkAI/Matrix-Game"
+      },
+      {
+        "label": "관련 보도",
+        "href": "https://pandaily.com/skywork-matrix-game-4-open-source-game-engine-real-time-neural-rendering-rtx-5090"
+      }
+    ]
+  },
+  {
+    "id": "games-e4049b1c-2026-10",
+    "tab": "games",
+    "headline": "배틀필드 6 시즌5 유료 스킨, 권총 5자루·'Secuty' 오타 패치로 AI 생성 의혹 논란",
+    "summary": "배틀필드 6 시즌5 배틀패스 스킨이 AI로 만든 것 같다는 의혹으로 비판받고 있어요.",
+    "body": "<p>EA의 '배틀필드 6' 시즌5 '시즈 오브 베이거스'가 이번 주 출시됐는데, 반응이 엇갈리고 있어요. 새 맵 '에어리어 51'은 게임 최고의 맵 중 하나라는 호평을 받았지만, 배틀패스로 판매되는 캐릭터 코스메틱이 생성형 AI로 만든 것 아니냐는 의혹에 휩싸였어요. 똑같은 권총 다섯 자루를 몸에 찬 캐릭터, 이해하기 힘든 탄창 배치, 그리고 'security operator' 문구 바로 위에 'Secuty'라고 잘못 쓰인 팔 패치가 대표적으로 지적됐어요.</p><p>레딧의 배틀필드 6 커뮤니티에서는 관련 글이 수천 개의 추천과 댓글을 받으며 퍼졌고, '돈을 받고 AI 생성 콘텐츠를 파는 건 최악의 무례'라는 반응까지 나왔어요. 아직 EA가 AI 사용을 인정한 건 아니지만, 배틀필드 6는 출시 몇 달 뒤에도 AI로 만든 듯한 코스메틱이 발견돼 한참 뒤에야 패치로 수정한 전력이 있어요. 올해 초 일부 개발자가 해고된 상황이라 여론은 더 싸늘한 편이에요.</p><p>코타쿠는 오타가 난 패치처럼 사람 아티스트라면 실수로라도 내보내지 않았을 결과물이라고 꼬집었어요. 유료로 판매되는 아트 에셋일수록 AI 사용 여부와 상관없이 최종 검수가 브랜드 신뢰를 좌우한다는 점을 다시 확인시켜 준 사례예요.</p><p>원문: <a href=\"https://kotaku.com/battlefield-6-gets-slammed-for-more-slop-slipping-through-charging-players-for-ai-generated-content-is-peak-disrespect-2000746452\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.16",
+    "hue": 20,
+    "image": "https://kotaku.com/app/uploads/2026/10/battlefield-ai.jpg",
+    "keywords": [],
+    "url": "https://kotaku.com/battlefield-6-gets-slammed-for-more-slop-slipping-through-charging-players-for-ai-generated-content-is-peak-disrespect-2000746452"
+  },
+  {
+    "id": "games-9ea7086d-2026-10",
+    "tab": "games",
+    "headline": "세가, AI 업스케일 아트 논란 '토탈 워: 쇼군 2' 컴플리트 에디션 출시 이틀 만에 판매 중단",
+    "summary": "세가가 AI 업스케일 논란의 쇼군 2 컴플리트 에디션을 판매 중단하고 원작 판매를 재개해요.",
+    "body": "<p>세가가 10월 13일 출시한 '토탈 워: 쇼군 2 – 컴플리트 에디션'을 출시 이틀 만에 일시적으로 판매 중단하기로 했어요. 이 버전은 그래픽 오류와 새로 생긴 버그, 불편한 UI, 그리고 고지 없이 AI 업스케일로 키운 게임 내 아트 때문에 스팀에서 부정적 평가가 쏟아졌어요. 게다가 출시와 동시에 기존 버전을 모두 판매 중단하고 가격을 40달러로 올리면서 반발이 더 커졌죠.</p><p>세가는 X에 올린 성명에서 '컴플리트 에디션이 여러분의 기대와 우리 기준 모두에 미치지 못했다'며 플랫폼과 협력해 문제를 조사하는 동안 판매를 내리겠다고 밝혔어요. 이미 구매한 사람은 계속 플레이할 수 있고, 원래 버전도 다시 판매할 예정이에요. 다만 성명은 AI 사용에 대해서는 아무 말도 하지 않았어요. 코타쿠는 원작의 작고 흐릿한 이미지를 AI로 확대한 결과물이 우스꽝스러울 정도였고, 반대로 백과사전 아트 상당수는 아예 업스케일되지 않은 채 우표만 한 크기로 남아 있었다고 지적했어요.</p><p>저해상도 원작 아트를 AI로 살리는 건 리마스터 작업에서 솔깃한 선택지예요. 하지만 이번 일처럼 결과물을 하나하나 확인하는 검수 과정 없이 그대로 내보내면, 오랫동안 사랑받은 명작 IP의 평판까지 한순간에 무너질 수 있다는 걸 보여준 사례예요.</p><p>원문: <a href=\"https://kotaku.com/sega-total-war-shogun-2-complete-edition-ai-reviews-pulled-from-sale-2000746339\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.16",
+    "hue": 0,
+    "image": "https://kotaku.com/app/uploads/2026/10/shogun-2-1200x675.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
+    "url": "https://kotaku.com/sega-total-war-shogun-2-complete-edition-ai-reviews-pulled-from-sale-2000746339",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.inven.co.kr/webzine/news/?news=322180"
+      }
+    ]
+  },
+  {
+    "id": "games-e9da2b0a-2026-10",
+    "tab": "games",
+    "headline": "블리자드, '와우 포에버' 광고 영상 AI 사용 의혹에 \"절대 아냐… 실제 팀원이 만든다\" 일축",
+    "summary": "블리자드가 와우 포에버 광고 영상에 생성형 AI를 쓰지 않았다고 강하게 부인했어요.",
+    "body": "<p>다음 달 출시를 앞둔 '월드 오브 워크래프트: 포에버'의 SNS 광고 영상을 두고 생성형 AI로 만든 것 아니냐는 의혹이 온라인에서 나왔어요. 그러자 블리자드의 디지털 마케팅 매니저가 X에 직접 글을 올려 '이 영상에 AI를 썼느냐는 댓글이 있던데, 대답은 아주 크게 헬 나(hell nah)'라며 강하게 부인했어요.</p><p>그는 '실제 팀원들이 대본을 쓰고, 영상을 확보해 편집하며, 나는 매주 성우들과 함께 녹음 부스에 들어간다'고 제작 과정을 설명했어요. 월드 오브 워크래프트의 소셜 미디어 매니저도 '우리는 어떤 소셜 콘텐츠에도 AI를 쓰지 않는다'는 글을 덧붙이며 힘을 실었어요. 게임스레이더+는 최근 에픽게임즈가 '바이브 코딩'으로 만든 새 런처를 공개하고 팀 스위니 CEO가 '최대한의 AI 가속'을 위한 대전환을 언급한 것과 대비된다고 짚으며, 소셜 광고처럼 작은 작업에서도 자사 크리에이터를 지지하는 모습이 반갑다고 평가했어요.</p><p>대규모 감원과 함께 생성형 AI 도입을 선언하는 회사가 늘어나는 가운데, 블리자드는 광고 같은 마케팅 아트까지 사람이 만든다는 점을 분명히 했어요. AI 사용 여부 자체가 팬들의 신뢰와 브랜드 이미지에 직결되는 시대라는 걸 보여주는 장면이에요.</p><p>원문: <a href=\"https://www.gamesradar.com/games/world-of-warcraft/accused-of-using-ai-in-world-of-warcraft-forever-videos-blizzard-employee-says-hell-nah-we-have-real-team-members/\">GamesRadar+</a></p>",
+    "source": "GamesRadar+",
+    "publishedAt": "2026.10.16",
+    "hue": 230,
+    "image": "https://cdn.mos.cms.futurecdn.net/zGfJ4sQPFeYrLTGitFGaNJ-1920-80.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.gamesradar.com/games/world-of-warcraft/accused-of-using-ai-in-world-of-warcraft-forever-videos-blizzard-employee-says-hell-nah-we-have-real-team-members/"
+  },
+  {
+    "id": "industry-85d82a3f-2026-10",
+    "tab": "industry",
+    "headline": "에픽게임즈, AI로 '바이브 코딩'한 새 런처 프리뷰 공개… \"스팀보다 46% 빨라\"",
+    "summary": "에픽게임즈가 AI 바이브 코딩으로 새로 만든 런처를 공개하며 스팀보다 빠르다고 주장했어요.",
+    "body": "<p>에픽게임즈가 완전히 새로 만든 에픽게임즈 런처를 프리뷰 버전으로 공개했어요. 회사는 이 런처가 콜드 스타트부터 스토어 페이지까지 스팀보다 46% 빠르고, 시스템 트레이에서 라이브러리를 여는 속도도 14% 빠르다고 주장했어요. 에픽은 블로그에서 이 런처를 AI로 코드를 짜는 방식, 이른바 '바이브 코딩'으로 만들었다고 밝혔어요.</p><p>에픽게임즈 스토어 총괄 마틴 킬리는 IGN 인터뷰에서 라이브러리 로딩이 기존보다 30배, 시작 속도는 2배 빨라졌고 용량은 300MB에 불과하다고 설명했어요. 셸과 다운로드 매니저, 라이브러리, 스토어 구조까지 기술 스택을 통째로 새로 썼는데, AI 덕분에 작은 팀이 코드베이스를 다시 쓰고 윈도우와 맥, 앞으로 나올 리눅스까지 빠르게 대응할 수 있었다고 해요. 다만 '아트나 디자인 스타일에 AI를 쓴 건 아니고, 그 부분은 기존 디자인 그룹이 맡았다'고 선을 그었어요.</p><p>이번 발표는 에픽이 디즈니 협업 프로젝트를 'AI 퍼스트' 방식으로 전환했다는 보도 직후에 나왔어요. 팀 스위니 CEO도 '최대한의 AI 가속을 위해 개발자를 재배치하는 대전환이 진행 중'이라고 밝혀, 대형 게임사가 AI를 실제 제품 개발 깊숙이 들이는 흐름을 보여주고 있어요.</p><p>원문: <a href=\"https://www.gamesindustry.biz/epic-games-claims-its-new-vibe-coded-launcher-runs-46-faster-than-steam-from-cold-start-to-store-page\">GamesIndustry.biz</a></p>",
+    "source": "GamesIndustry.biz",
+    "publishedAt": "2026.10.16",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/epic-games-launcher_kTybhO5.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 도입 전략",
+      "코딩",
+      "Epic Games"
+    ],
+    "url": "https://www.gamesindustry.biz/epic-games-claims-its-new-vibe-coded-launcher-runs-46-faster-than-steam-from-cold-start-to-store-page",
+    "urls": [
+      {
+        "label": "공식 발표",
+        "href": "https://store.epicgames.com/news/epic-games-launcher-preview"
+      },
+      {
+        "label": "관련 보도",
+        "href": "https://www.ign.com/articles/we-vibe-coded-a-new-epic-games-launcher-epics-new-store-app-was-built-using-ai"
+      }
+    ]
+  },
+  {
+    "id": "industry-50aa5798-2026-10",
+    "tab": "industry",
+    "headline": "전 테이크투 AI 총괄·고도 엔진 대표 \"AI 바이브 코딩발 디컴파일·포팅 물결, 업계가 진지하게 대비해야\"",
+    "summary": "AI 바이브 코딩으로 늘어난 게임 디컴파일·클론에 대해 업계 전문가들이 대비를 촉구했어요.",
+    "body": "<p>최근 AI 코딩 도구의 성능이 크게 오르면서 게임을 디컴파일해 웹 브라우저로 옮기거나, 다른 게임에 이식하는 '바이브 코딩' 포트와 클론이 쏟아지고 있어요. 깃허브의 DMCA 기록에는 게임 퍼블리셔들의 삭제 요청이 줄을 잇고, 엑스박스 CEO 아샤 샤르마도 블로그에서 이 현상을 직접 언급했을 정도예요. 코타쿠는 이 흐름이 업계에 어떤 의미인지 테이크투 전 AI 총괄 루크 디큰과 고도 엔진 대표 에밀리오 코폴라에게 물었어요.</p><p>징가와 테이크투에서 AI 연구를 이끌었던 디큰은 'AI는 해결한다고 주장하는 문제만큼 새로운 문제를 업계에 만들어내고 있다'며 디컴파일·포팅 물결을 진지하게 받아들여야 한다고 말했어요. 그는 앞으로 더 침습적인 DRM이나 플랫폼 차원의 보호, 스트리밍 확대처럼 소비자에게 불편한 대응이 늘 거라고 내다봤어요. 코폴라는 해적판은 원래 있던 문제지만 이제는 클론으로 돈을 버는 악용이 핵심이라며, 저품질 클론으로 수익을 내는 스팀 같은 플랫폼의 책임을 강조했어요.</p><p>코폴라는 개발자들이 클론 우려 때문에 얼리 액세스 빌드 공개를 꺼린다는 이야기도 전했어요. 두 사람 모두 결국 재미있는 게임을 만드는 건 사람의 몫이라고 입을 모았는데, AI 도입이 제작 효율뿐 아니라 IP 보호 전략까지 바꾸고 있다는 점을 보여줘요.</p><p>원문: <a href=\"https://kotaku.com/ai-vibe-coding-just-hit-the-video-game-industry-like-an-avalanche-2000746366\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.16",
+    "hue": 340,
+    "image": "https://kotaku.com/app/uploads/2026/04/Slay-the-Spire-2-official-trailer-image-Necrobinder-1200x675.jpg",
+    "keywords": [
+      "코딩"
+    ],
+    "url": "https://kotaku.com/ai-vibe-coding-just-hit-the-video-game-industry-like-an-avalanche-2000746366"
+  },
+  {
+    "id": "industry-c76b7e32-2026-10",
+    "tab": "industry",
+    "headline": "'극한탈출' 우치코시 코타로, 신작 중단 이유로 AI 언급 \"AI를 못 써서 일자리를 잃을 수도\"",
+    "summary": "우치코시 코타로가 새 스튜디오를 세우며 신작 중단 이유 중 하나로 AI를 꼽았어요.",
+    "body": "<p>'Ever17', '극한탈출', 'AI: 솜니움 파일' 시리즈로 유명한 게임 크리에이터 우치코시 코타로가 10월 15일 자신의 개발 스튜디오 'CRASH KEYS'를 설립했다고 발표했어요. 그는 1년 반 동안 만들던 신작이 개발 중단됐다고 밝히면서, 함께 일해 온 토우키오 게임스에도 여전히 적을 두고 있고 '단간론파'의 고다카 가즈타카 대표와 사이가 틀어진 것도 아니라고 X에서 설명했어요. 고다카 대표도 '응원하고 지원하겠다'며 팬들에게 응원을 부탁했어요.</p><p>눈길을 끄는 건 개발 중단 이유 중 하나로 AI를 꼽은 대목이에요. 우치코시는 중규모 게임 제작사는 비용 절감 압박을 받는데, AI를 쓸 수 있었다면 번거로운 작업을 AI에 맡겨 인원은 유지한 채 개발 기간을 줄일 수 있었을지도 모른다고 말했어요. 하지만 '지금 분위기에서는 게임 제작에 AI를 쓰는 게 금기처럼 여겨지니, 이 상황에서는 질 수밖에 없는 싸움'이라며 'AI가 쓰이지 않아서 제작자가 일자리를 잃을 수도 있다'고 덧붙였어요.</p><p>CRASH KEYS는 앞으로 프로젝트를 차례로 공개할 예정이며 함께할 투자 파트너를 찾고 있어요. AI 반감과 비용 압박 사이에 낀 중규모 스튜디오의 현실적인 딜레마를 베테랑 크리에이터가 솔직하게 털어놓은 사례예요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/15/28326.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.16",
+    "hue": 45,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/199931.jpg",
+    "keywords": [
+      "고용·노조"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/15/28326.html",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://automaton-media.com/articles/newsjp/20261014-473464/"
+      }
+    ]
+  },
+  {
+    "id": "art-3c888791-2026-10",
+    "tab": "art",
+    "headline": "일레븐랩스, 영상만 올리면 배경음악과 효과음을 자동 생성·배치하는 'Instant Soundtracks' 출시",
+    "summary": "일레븐랩스가 영상에 맞춰 음악과 효과음을 자동으로 만들어 주는 기능을 출시했어요.",
+    "body": "<p>일레븐랩스가 자사 크리에이티브 플랫폼 ElevenCreative에 'Instant Soundtracks' 기능을 추가했어요. 영상을 업로드하면 AI 모델이 영상에 어울리는 오리지널 배경음악을 작곡하고, 동시에 화면을 분석해 효과음이 필요한 순간을 찾아 그 타이밍에 맞는 효과음을 생성해 줘요. 만들어진 효과음은 타임라인에 자동으로 배치되는데, 예를 들어 광고 마지막에 로고가 등장할 때 '휙' 하는 소리를 정확히 맞춰 넣는 식이에요.</p><p>이번 업데이트로 숏폼 영상의 컷 전환과 화면 속 동작에 맞춘 타이밍이 더 정교해졌고, 장면마다 음악 분위기를 바꾸는 것도 자연스러워졌대요. 빠른 장면에서는 EDM이나 R&amp;B가 흐르다가 잔잔한 장면에서는 어쿠스틱 기타로 넘어가는 식이죠. 영상에 원래 있던 오디오를 참고 자료로 넣으면 장르와 BPM, 악기 구성을 분석해 비슷한 성격의 새 음악을 만들어 주기도 해요. 효과음은 음악과 별도 레이어로 나와서 편집기에서 따로 타이밍을 조정하거나 음악만 바꿀 수 있어요.</p><p>기능은 ElevenCreative와 ElevenMusic, API로 바로 쓸 수 있고, API에서 트랙 분리 옵션을 켜면 음악과 효과음을 따로 담은 ZIP 파일을 받을 수 있어요. 게임 트레일러나 숏폼 홍보 영상의 사운드 초안을 빠르게 잡는 데 유용해 보여요.</p><p>원문: <a href=\"https://elevenlabs.io/blog/introducing-instant-soundtracks\">ElevenLabs Blog</a></p>",
+    "source": "ElevenLabs Blog",
+    "publishedAt": "2026.10.16",
+    "hue": 280,
+    "image": "https://eleven-public-cdn.elevenlabs.io/payloadcms/sm49fesxdni-Blog-cover.webp",
+    "keywords": [
+      "영상",
+      "음악·사운드",
+      "ElevenLabs"
+    ],
+    "url": "https://elevenlabs.io/blog/introducing-instant-soundtracks"
+  },
+  {
+    "id": "art-a2c9c91c-2026-10",
+    "tab": "art",
+    "headline": "블렌더 초보가 엔비디아 RTX Spark 로컬 AI 에이전트에게 3D 작업을 맡겨 봤더니… 간단한 건 척척, 복잡한 건 아직",
+    "summary": "RTX Spark의 로컬 AI 에이전트로 블렌더를 조작해 본 실사용 테스트 결과가 나왔어요.",
+    "body": "<p>크리에이티브블록 기자가 엔비디아 RTX Spark를 탑재한 ASUS ProArt P16 노트북에서 로컬 AI 에이전트 'Hermes'로 블렌더를 직접 조작해 보는 테스트를 진행했어요. 모델은 로컬에서 돌아가는 Qwen3.8 27B였고, 블렌더를 전혀 다룰 줄 모르는 초보 입장에서 AI 에이전트가 '팀원'처럼 일해 줄 수 있는지 확인하는 게 목적이었어요. 설치 과정은 에이전트가 필요한 소프트웨어 버전과 권한 설정까지 안내해 줘서 간단했대요.</p><p>단순한 작업은 꽤 잘 해냈어요. 이발소 예제 씬의 조명을 훨씬 따뜻하게 바꿔 달라고 하자 스크립트로 블렌더를 조작해 처리했고, 결과를 직접 확인한 뒤 전후 비교 이미지를 나란히 붙여 내보내기까지 했어요. 반면 곱슬머리 캐릭터 모델의 머리색을 바꾸고 얼굴에 광대 분장을 입히는 다단계 편집에서는 머리와 눈 색은 금방 바꿨지만, 분장은 오래 걸린 끝에 대략적인 결과만 냈고 이후엔 작은 수정마다 승인을 요청했어요. 꼬리가 긴 쥐를 처음부터 만들어 달라는 요청에는 다소 거칠지만 빠르게 모델을 만들고, 꼬리가 안 보이자 카메라 각도를 바꿀지 먼저 물어보기도 했대요.</p><p>대화만으로 3D 작업을 시작할 수 있다는 가능성과, 아직은 사람이 다듬어야 하는 출발점 수준이라는 한계를 함께 보여준 테스트예요.</p><p>원문: <a href=\"https://www.creativebloq.com/features/i-asked-nvidia-sparks-ai-agent-to-run-blender-for-me-heres-what-happened\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.16",
+    "hue": 220,
+    "image": "https://cdn.mos.cms.futurecdn.net/RMydSd9JF8efBK722qUKkG-1920-80.jpg",
+    "keywords": [
+      "3D",
+      "NVIDIA"
+    ],
+    "url": "https://www.creativebloq.com/features/i-asked-nvidia-sparks-ai-agent-to-run-blender-for-me-heres-what-happened"
+  },
+  {
+    "id": "art-67ffbb10-2026-10",
+    "tab": "art",
+    "headline": "ILM·소니 이미지웍스·스카이댄스 경영진, 뷰 콘퍼런스서 \"AI는 작업 시간은 줄여도 안목은 못 줄인다\"",
+    "summary": "애니메이션·VFX 스튜디오 경영진들이 뷰 콘퍼런스에서 AI와 아티스트의 미래를 논의했어요.",
+    "body": "<p>이탈리아 토리노에서 열린 뷰 콘퍼런스에서 세계적인 애니메이션·VFX 스튜디오 경영진 7명이 기술·경제 변화와 아티스트의 미래를 주제로 토론했어요. 소니 픽처스 이미지웍스의 미셸 그레이디, ILM의 재닛 르윈, 스카이댄스 애니메이션의 홀리 에드워즈, 프루프의 론 프랭클, 더 야드의 로랑 에르만, 시네사이트의 숀 월시 등이 참여했고, 사회는 befores &amp; afters의 이언 페일스가 맡았어요.</p><p>생성형 AI는 단골 주제였지만, 경영진들은 대체로 AI를 당장 기존 제작 방식을 대신할 기술이 아니라 더 큰 기술 변화의 일부로 봤어요. 월시는 '결과를 모르는 새 방식으로 공정 전체를 갈아엎는 건 쉽지 않다'며 감독의 창작 의도를 지키는 점진적 도입을 강조했고, VFX 아티스트는 이 전환을 관리하기 위해서라도 앞으로 계속 필요할 거라고 말했어요. 에르만은 'AI는 실행 시간을 압축할 수 있어도 취향은 압축하지 못한다'며 이미지를 판단하고 개선하는 안목을 키워야 한다고 했고, 프랭클은 아이디어 속도로 창작 대화를 나눌 수 있게 될 가능성에 주목했어요. 르윈은 AI를 만능 해법으로 보는 건 오류라면서도 열린 마음을 유지해야 한다고 덧붙였어요.</p><p>그레이디는 'K팝 데몬 헌터스'에서 시작한 언리얼 엔진 활용을 '스파이더맨: 비욘드 더 스파이더버스'에서 더 확대하고 있다고 소개하기도 했어요.</p><p>원문: <a href=\"https://www.cartoonbrew.com/events/studio-executive-roundtable-view-conference-267928.html\">Cartoon Brew</a></p>",
+    "source": "Cartoon Brew",
+    "publishedAt": "2026.10.16",
+    "hue": 270,
+    "image": "https://www.cartoonbrew.com/wp-content/uploads/2026/10/View-Executives.jpg",
+    "keywords": [
+      "애니메이션",
+      "VFX",
+      "Sony"
+    ],
+    "url": "https://www.cartoonbrew.com/events/studio-executive-roundtable-view-conference-267928.html"
+  },
+  {
+    "id": "art-0d71ed4f-2026-10",
+    "tab": "art",
+    "headline": "이스트소프트, 이수만 걸그룹 'A2O 라이트' 멤버 AI 아바타와 영상통화하는 앱 '블루밍톡' 출시",
+    "summary": "이스트소프트가 K-팝 그룹 멤버 AI 아바타와 대화하는 영상통화 앱 블루밍톡을 내놨어요.",
+    "body": "<p>이스트소프트가 실시간 대화형 AI 아바타 서비스 '페르소 인터랙티브'를 적용한 K-팝 아티스트 영상통화 앱 '블루밍톡'을 선보였어요. 이수만 프로듀서가 SM엔터테인먼트를 떠난 뒤 세운 블루밍그레이스와 함께 만든 서비스로, 걸그룹 'A2O 라이트'와 보이그룹 'A2O 소울'의 국내 데뷔에 맞춰 공개됐어요. 두 그룹 멤버 24명의 글로벌 팬 소통 채널로 쓰일 예정이에요.</p><p>위버스나 버블처럼 실제 아티스트가 직접 소통하는 기존 플랫폼과 달리, 블루밍톡은 스타를 닮은 AI 아바타와 대화하는 게 핵심이에요. 팬은 원하는 멤버의 AI 아바타와 DM은 물론 음성통화와 영상통화로 1대1 대화를 나눌 수 있어요. 이스트소프트는 실제 아티스트 촬영 데이터를 바탕으로 24명의 아바타를 하나하나 제작했고, 서버에서 렌더링해 스트리밍하는 방식이라 기기 성능과 상관없이 고화질 영상통화를 제공한대요. 블루밍그레이스는 서비스 운영과 IP 관리를, 이스트소프트는 아바타 제작과 실시간 렌더링·스트리밍 기술을, 마인드로직은 앱 개발을 맡았어요.</p><p>A2O 라이트는 데뷔곡 '니온'으로 공개 29시간 만에 멜론 톱100 1위에 오르며 화제가 됐어요. 한국어·영어·일본어·중국어로 지원 언어도 넓힐 계획이라, 실사 기반 디지털 휴먼이 엔터테인먼트 IP 사업에 본격적으로 들어오는 흐름을 보여줘요.</p><p>원문: <a href=\"https://www.aitimes.com/news/articleView.html?idxno=216305\">AI타임스</a></p>",
+    "source": "AI타임스",
+    "publishedAt": "2026.10.16",
+    "hue": 300,
+    "image": "https://cdn.aitimes.com/news/photo/202610/216305_220347_3631.png",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=216305"
+  },
+  {
+    "id": "art-e2b05ddc-2026-10",
+    "tab": "art",
+    "headline": "유튜브 'AI 슬롭'에 맞선 아동용 스트리밍 '마카' 출시… 광고·자동재생 없이 전문가가 검수한 작품만",
+    "summary": "AI 생성 저품질 영상에 맞서 전문가가 검수한 작품만 보여주는 아동용 스트리밍이 나왔어요.",
+    "body": "<p>0~6세 아이를 위한 새 스트리밍 앱 '마카(Maka)'가 출시됐어요. 유튜브의 아동용 영상에는 AI로 만든 기괴하고 과도하게 자극적인 영상, 이른바 'AI 슬롭'이 넘쳐나는데, 마카는 그 대안을 표방해요. 광고와 자동재생, 무한 스크롤이 없고, 알고리즘도 시청 시간을 늘리는 방향으로 설계하지 않았대요. 공동 창업자 타니엘라 레타는 아동 미디어를 '참여 유도 기계'로 만드는 장치들을 일부러 버렸다고 설명했어요.</p><p>마카에 올라가는 모든 에피소드는 예일 아동연구센터 연구진과 함께 만든 평가 체계 'Imprint'로 아동 발달 전문가가 검수해요. 장면 전환 속도부터 감정 조절, 친절함, 보호자와 아이의 관계 묘사, 비판적 사고와 언어 발달 지원까지 일곱 가지 핵심 영역을 따져 본대요. 출시 라인업은 세계 스튜디오와 독립 창작자의 작품 25편으로, '프랭클린', '더 위글스', '포코요', '세서미 스트리트' 등이 포함됐고 요금은 월 15달러, 연 107달러예요.</p><p>커먼센스 미디어 연구 책임자 마이클 롭은 교육용처럼 포장된 AI 영상이 줄거리도 없고 잘못된 정보까지 담는 경우가 많다고 지적했어요. AI 영상이 넘쳐날수록 사람이 만들고 검증한 애니메이션이 오히려 차별점이 될 수 있다는 걸 보여주는 사례예요.</p><p>원문: <a href=\"https://www.wired.com/story/maka-streaming-platform-for-kids-fighting-against-ai-slop/\">WIRED</a></p>",
+    "source": "WIRED",
+    "publishedAt": "2026.10.16",
+    "hue": 120,
+    "image": "https://media.wired.com/photos/6acfb4b1bca2b73e26f409dc/191:100/w_1280,c_limit/Kids-Content-Deeply-Broken-Culture-Mockup_Gradient_Channels.jpg",
+    "keywords": [
+      "영상",
+      "애니메이션"
+    ],
+    "url": "https://www.wired.com/story/maka-streaming-platform-for-kids-fighting-against-ai-slop/"
+  }
+]

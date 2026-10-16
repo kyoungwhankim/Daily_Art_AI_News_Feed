@@ -1,5 +1,172 @@
 [
   {
+    "id": "suno-2026-10-15-1",
+    "service": "suno",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Suno 공유 워크스페이스와 공유 커스텀 모델 추가",
+    "summary": "팀이 함께 쓸 수 있는 공유 워크스페이스가 생겼어요. 초대받은 사람만 곡 라이브러리에 접근할 수 있어요.",
+    "details": [
+      "공유 워크스페이스는 Pro·Premier 사용자가 쓸 수 있어요",
+      "공유 커스텀 모델로 협업자와 모델을 나눠 쓸 수 있고, 입력이 2배로 늘었어요 (Premier 전용)"
+    ],
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-10-15-1",
+    "service": "meshy",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Meshy 스마트 토폴로지 모델 meshy-t2.5 추가",
+    "summary": "게임 에셋용 스마트 토폴로지 모델 meshy-t2.5가 Image to 3D, Text to 3D API에 추가됐어요. 더 선명한 디테일을 가진 삼각형 기반 메시를 만들어요.",
+    "details": [
+      "model_type을 smart-topology로 설정해서 쓸 수 있어요",
+      "출력은 삼각형만 나오고 target_polycount는 100~30,000을 받아요"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "magnific-2026-10-15-1",
+    "service": "magnific",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Ideogram 4·4.5 API 추가",
+    "summary": "글자가 정확하게 들어가는 이미지 모델 Ideogram 4와 4.5가 Magnific API에 추가됐어요. 텍스트가 필요한 디자인 작업에 쓰기 좋아요.",
+    "details": [
+      "Ideogram 4: 15가지 화면 비율의 텍스트→이미지, 네거티브 프롬프트와 seed를 지원해요",
+      "Ideogram 4.5: 텍스트→이미지와 함께 이미지 편집(최대 5장, 첫 장을 편집하고 나머지는 참조)을 지원해요",
+      "가격은 Ideogram 4는 렌더링 속도, 4.5는 품질 단계에 따라 달라요"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-15-2026",
+    "source": "dev"
+  },
+  {
+    "id": "ludo.ai-2026-10-15-1",
+    "service": "ludo.ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Directional Sprites 베타 공개, 8방향 일관된 캐릭터 스프라이트",
+    "summary": "캐릭터 하나를 8방향 스프라이트 시트로 뽑아주는 Directional Sprites 베타가 나왔어요. 3D 모델 한 번으로 모든 방향이 같은 옷과 비율을 유지해요.",
+    "details": [
+      "14가지 2D 스타일 중에서 고를 수 있어요",
+      "걷기·달리기 등 애니메이션 전체에서 일관성이 유지돼요",
+      "출시 가격 기준으로 Sprite Generator 애니메이션의 약 1/10 비용이에요"
+    ],
+    "url": "https://ludo.ai/whats-new#directional-sprites-one-consistent-character-in-8-directions-in-the-2d-style-you",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-15-1",
+    "service": "krea",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "Krea 3 API 얼리 액세스 시작",
+    "summary": "Krea 3 이미지 편집 모델을 API로 쓸 수 있는 얼리 액세스가 열렸어요. 자연어 지시로 이미지를 고치고 최대 8장의 참조 이미지를 함께 쓸 수 있어요.",
+    "details": [
+      "빠른 모드(fast)와 고품질 모드(high)를 고를 수 있어요",
+      "영역 편집으로 일부만 바꾸고 나머지는 픽셀 단위로 유지해요",
+      "1K·2K 출력, $0.03/1K 이미지부터예요",
+      "Enterprise 워크스페이스는 Zero Data Retention을 쓸 수 있어요",
+      "기존 thinking_mode 값은 2026년 10월 23일에 종료돼요 (fast·high로 변경)"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-15-2026",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-15-1",
+    "service": "hugging-face",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Diffusers에 FLUX.3 Image Klein 지원 추가",
+    "summary": "Hugging Face Diffusers 라이브러리에서 FLUX.3 Image Klein 이미지 모델을 바로 불러와 쓸 수 있게 됐어요. 오픈 웨이트라서 로컬 GPU에서도 돌릴 수 있어요.",
+    "details": [
+      "Klein Base는 파인튜닝과 LoRA 학습용이에요",
+      "가중치는 Hugging Face에서 내려받을 수 있어요"
+    ],
+    "url": "https://huggingface.co/blog/flux-3",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-15-1",
+    "service": "heygen",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "이미지로 만드는 인스턴트 음성 기능 추가",
+    "summary": "사진 한 장을 넣으면 그 장면의 배경 분위기가 음성에 담기는 기능이 HeyGen API에 추가됐어요. 조용한 방은 깨끗하게, 시끄러운 곳은 그 분위기를 살려 줘요.",
+    "details": [
+      "POST /v3/models/audio/voices의 인스턴트 모드에서 image 값을 받을 수 있어요",
+      "인스턴트 음성 생성은 미리보기 기간 동안 무료예요"
+    ],
+    "url": "https://docs.heygen.com/changelog#instant-voices-from-an-image",
+    "source": "dev"
+  },
+  {
+    "id": "flux-2026-10-15-1",
+    "service": "flux",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "FLUX 3 Image Klein 공개, 오픈 웨이트 5.6B 모델",
+    "summary": "5.6B 파라미터의 오픈 웨이트 이미지 모델 FLUX 3 Image Klein이 공개됐어요. 소비자용 GPU에서도 실행할 수 있고 4K까지 출력하며, LoRA 학습도 지원해요.",
+    "details": [
+      "Klein (Distilled)은 16스텝 빠른 추론, Klein Base는 파인튜닝·LoRA 학습용이에요",
+      "텍스트→이미지, 이미지 편집, 다중 참조(최대 10장), 바운딩 박스를 지원해요",
+      "해상도 768sq~4k, 1k 기준 장당 $0.009부터예요",
+      "Hugging Face 가중치와 ComfyUI 워크플로로도 사용할 수 있어요"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#october-15-2026",
+    "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-10-15-1",
+    "service": "figma-ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Figma Make 코드 레이어·Specs 오픈 베타 공개",
+    "summary": "Config India 2026에서 Figma Make에 코드 레이어 편집과 Specs 기능이 오픈 베타로 공개됐어요. 디자인 시스템 코드를 가져와서 에이전트가 실제 컴포넌트를 만들 수 있어요.",
+    "details": [
+      "코드 레이어 생성·편집은 유료 플랜에서 11월 4일까지 무료예요",
+      "Specs: 디자인 의도와 기술 명세를 팀과 에이전트가 함께 보는 공간이에요 (유료 플랜 오픈 베타)",
+      "Make에서 Payload 백엔드를 바로 만들 수 있어요 (CMS·DB·인증 포함)",
+      "GitHub 저장소나 npm 패키지에서 코드를 가져와 실제 디자인 시스템에 맞출 수 있어요"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=config-india-2026",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-15-1",
+    "service": "comfyui",
+    "date": "2026.10.15",
+    "kind": "앱",
+    "title": "ComfyUI v0.41.0·v0.41.1 출시, FLUX.3 Klein과 Krea 3 노드 추가",
+    "summary": "ComfyUI v0.41.0과 v0.41.1이 함께 나왔어요. FLUX.3 Image Klein을 기본 지원하고, Krea 3 이미지 노드를 파트너 노드로 쓸 수 있어요.",
+    "details": [
+      "FLUX.3 Image Klein: 기본(base)과 증류(distilled) 체크포인트를 기본 지원해요",
+      "Krea 3 Image 파트너 노드: 텍스트→이미지와 편집을 한 노드에서 처리하고, 참조 이미지 최대 8장을 받아요",
+      "FLUX.3 Layout Prompt, SDR→HDR 변환 노드 등이 추가됐어요",
+      "FLUX.3 Klein 텍스트→이미지·이미지 편집 템플릿 4종이 들어왔어요"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-41-0",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-15-1",
+    "service": "claude",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "Claude Opus 5.5 패스트 모드 정식 공개",
+    "summary": "Claude Opus 5.5의 패스트 모드가 리서치 프리뷰를 벗어나서 이제 별도 신청 없이 쓸 수 있어요. 요청할 때 베타 헤더를 보내지 않아도 돼요.",
+    "details": [
+      "Opus 5.5는 모든 사용량 등급에 기본 패스트 모드 속도 제한이 적용돼요",
+      "Opus 5와 Opus 4.8의 패스트 모드는 아직 리서치 프리뷰라서 기존 베타 헤더를 계속 보내야 해요",
+      "Claude in Microsoft Foundry(Azure 배포)에서도 Opus 5.5 패스트 모드를 쓸 수 있어요",
+      "Compliance API로 조직 구성원이 저장한 사용자 지침을 읽을 수 있는 베타가 열렸어요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2026",
+    "source": "dev"
+  },
+  {
     "id": "scenario-2026-10-14-4",
     "service": "scenario",
     "date": "2026.10.14",
@@ -53,6 +220,22 @@
       "data: URI는 여전히 100MB까지"
     ],
     "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "magnific-2026-10-14-1",
+    "service": "magnific",
+    "date": "2026.10.14",
+    "kind": "모델",
+    "title": "Nano Banana 2.1·Recraft V4 시리즈 API 추가",
+    "summary": "Google의 Nano Banana 2.1과 Recraft V4 계열(V4, V4 Pro, V4.1) 이미지 모델이 Magnific API에 추가됐어요. 디자인용 텍스트·UI 목업에 강한 모델들이에요.",
+    "details": [
+      "Nano Banana 2.1: 참조 이미지 최대 14장, 8:1 등 14가지 비율, Google 검색 그라운딩을 지원해요",
+      "Nano Banana 2.1 가격은 해상도(1K·2K·4K)로만 정해져요",
+      "Recraft V4.1: tier(mid·pro)와 variant(standard·utility)를 고를 수 있어요",
+      "V4.1 utility 모드는 다이어그램·와이어프레임 같은 UI 목업에 맞춰요"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-14-2026",
     "source": "dev"
   },
   {
@@ -327,153 +510,6 @@
     "title": "Tripo Retopology v3·Smart UV 모델 추가",
     "summary": "Scenario에 Tripo Retopology v3와 Smart UV가 추가됐어요. 무거운 3D 메시를 쿼드 기반 저폴리로 바꾸고 텍스처를 살린 채 UV를 다시 펼 수 있어요.",
     "url": "https://www.scenario.com/changelog/models-eee4a1e5ced2d77030db5186b4bbaee130abef2ab2db3cdd5fd3f28515fa1377",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-10-12-1",
-    "service": "runway",
-    "date": "2026.10.12",
-    "kind": "API",
-    "title": "Runway Dev에 Ideogram 4.5·4.0 추가",
-    "summary": "Runway Dev API에서 Ideogram 4.5와 4.0 이미지 모델을 쓸 수 있게 됐어요. 4.5는 긴 프롬프트와 레퍼런스 이미지 5장을 지원해요.",
-    "details": [
-      "Ideogram 4.5 (ideogram_4_5): 프롬프트 최대 10,000자, 레퍼런스 5장, 1~8장 출력",
-      "Ideogram 4.0 (ideogram_4_0): 프롬프트 최대 4,000자, 이미지 1장 리믹스, 1~4장 출력"
-    ],
-    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
-    "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-12-1",
-    "service": "meshy",
-    "date": "2026.10.12",
-    "kind": "API",
-    "title": "USDZ 파일 단위를 미터로 변경",
-    "summary": "USDZ 파일이 미터 단위로 저장돼서 AR Quick Look, Blender 같은 USD 뷰어에서 실제 크기로 열려요.",
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "layer-2026-10-12-1",
-    "service": "layer",
-    "date": "2026.10.12",
-    "kind": "기능",
-    "title": "Layer 대규모 업데이트: 도구형 홈과 Worlds 공개",
-    "summary": "이미지·영상·오디오·3D 작업을 작업별 도구로 나눈 새 홈이 나왔고, 프롬프트나 이미지로 탐색 가능한 Worlds도 생겼어요. DaVinci Resolve 플러그인과 PBR 머티리얼 생성도 추가됐어요.",
-    "details": [
-      "이미지·영상·오디오 작업별 전용 도구 추가 (리스타일, 지우기, 더빙 등)",
-      "Create world: 프롬프트나 이미지 최대 4장으로 둘러볼 수 있는 3D 공간 생성",
-      "Draft 미리보기: 일부 영상 모델에서 저렴한 미리보기 후 고화질 완성",
-      "DaVinci Resolve Studio 19 이상용 Layer 패널 출시",
-      "Blender에서 PBR 머티리얼 자동 생성",
-      "서비스 계정과 개인 액세스 토큰 만료 기간 설정"
-    ],
-    "url": "https://www.layer.ai/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-10-12-1",
-    "service": "hugging-face",
-    "date": "2026.10.12",
-    "kind": "기능",
-    "title": "액세스 토큰에 contributor 권한 추가",
-    "summary": "Fine-grained 토큰과 서비스 계정 토큰에 contributor 권한을 줄 수 있어요. 이 권한이 있으면 지정한 계정이나 조직에 저장소를 만들고 쓸 수 있어서 CI나 학습 작업에 안전해요.",
-    "url": "https://huggingface.co/changelog/contribute-permission-for-access-tokens",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-10-12-1",
-    "service": "higgsfield",
-    "date": "2026.10.12",
-    "kind": "연동",
-    "title": "Claude용 Katana 스킬로 영상 편집 재현",
-    "summary": "Higgsfield가 Claude에서 쓰는 Katana 스킬을 공개했어요. 레퍼런스 영상과 캐릭터·제품 사진 최대 5장으로 편집 영상을 다시 만들 수 있어요.",
-    "url": "https://higgsfield.ai/blog/higgsfield-katana",
-    "source": "notice"
-  },
-  {
-    "id": "gigapixel-2026-10-12-1",
-    "service": "gigapixel",
-    "date": "2026.10.12",
-    "kind": "앱",
-    "title": "Topaz Gigapixel v1.4.0 업데이트",
-    "summary": "대용량 이미지 미리보기 속도를 높이고 일부 UX를 다듬은 v1.4.0이 나왔어요. 성능과 안정성 중심의 업데이트예요.",
-    "details": [
-      "대용량 이미지 미리보기 로딩 속도 개선",
-      "M6 호환성은 조사 중이라 문제가 생기면 지원팀에 로그를 보내 달라고 안내했어요"
-    ],
-    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-4-0/105136",
-    "source": "notice"
-  },
-  {
-    "id": "elevenlabs-2026-10-12-1",
-    "service": "elevenlabs",
-    "date": "2026.10.12",
-    "kind": "기능",
-    "title": "티켓 병합, TTS 오디오 효과, 음성 컬렉션 API 추가",
-    "summary": "ElevenAgents에서 상담 티켓을 병합하고 검색할 수 있게 됐어요. 음성 생성에는 오디오 효과 옵션이 붙었고, 음성 컬렉션도 API로 관리할 수 있어요.",
-    "details": [
-      "TTS와 Text to Dialogue에 audio_effects 옵션 추가(필터, 거리감, 리버브, 배경 소음, 패닝)",
-      "실시간 Speech to Text에 턴 예측 기반 커밋 전략(turn_prediction) 추가",
-      "음성 컬렉션 API로 생성·조회·수정·삭제",
-      "JavaScript·Python SDK v2.72.0, CLI v1.5.0 릴리스",
-      "ElevenAgents 음성 웹훅 재시도 정책과 위젯 종료 확인 창 추가"
-    ],
-    "url": "https://elevenlabs.io/docs/changelog/2026/10/12",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-11-1",
-    "service": "scenario",
-    "date": "2026.10.11",
-    "kind": "기능",
-    "title": "Skills v0.55.0: 리그 가능한 3D 캐릭터 지원",
-    "summary": "scenario-3d 스킬이 리그 작업용 쿼드 토폴로지 캐릭터를 만들 수 있게 됐어요. 다단계 파이프라인 검증과 배치 생성도 더 안정적이에요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-55-0",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-10-1",
-    "service": "scenario",
-    "date": "2026.10.10",
-    "kind": "기능",
-    "title": "Skills v0.54.0: 다중 레퍼런스 합성과 광고 파이프라인",
-    "summary": "여러 레퍼런스를 합성하는 스킬과 썸네일·광고 변형, 9:16 키네틱 영상 워크플로가 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-54-0",
-    "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-10-1",
-    "service": "meshy",
-    "date": "2026.10.10",
-    "kind": "API",
-    "title": "Meshy API 이미지 입력에 .webp 형식 추가",
-    "summary": "Image to 3D, Multi-Image to 3D, Image to Image 등에서 .webp 이미지를 바로 입력할 수 있게 됐어요. 잔액 조회 API는 월 충전분과 영구 크레딧을 나눠 보여줘요.",
-    "details": [
-      "Image to 3D, Multi-Image to 3D, Image to Image, Retexture, Text to 3D Refine에서 .webp 지원 (URL과 data URI 모두)",
-      "Get Balance 응답에 monthly_credits, permanent_credits, monthly_resets_at 필드 추가"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "qwen-image-2026-10-09-1",
-    "service": "qwen-image",
-    "date": "2026.10.09",
-    "kind": "모델",
-    "title": "Qwen-Image-2.1-Turbo 공개",
-    "summary": "Qwen-Image 시리즈의 균형 잡힌 오픈소스 이미지 모델 Qwen-Image-2.1-Turbo가 Model Studio에 나왔어요. 비용 대비 성능이 좋아 대량 이미지 작업에 알맞아요.",
-    "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
-    "source": "dev"
-  },
-  {
-    "id": "pixverse-2026-10-09-1",
-    "service": "pixverse",
-    "date": "2026.10.09",
-    "kind": "연동",
-    "title": "PixVerse Growth Studio, Meta 카탈로그 영상 연동",
-    "summary": "Growth Studio가 Meta 카탈로그와 연결돼 상품 카탈로그 전체에 맞는 영상 소재를 만들 수 있게 됐어요.",
-    "url": "https://pixverse.ai/en/blog/pixverse-growth-studio-meta-catalog-product-video",
     "source": "notice"
   }
 ]

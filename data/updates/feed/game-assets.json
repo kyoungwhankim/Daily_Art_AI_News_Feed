@@ -1,5 +1,20 @@
 [
   {
+    "id": "ludo.ai-2026-10-15-1",
+    "service": "ludo.ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Directional Sprites 베타 공개, 8방향 일관된 캐릭터 스프라이트",
+    "summary": "캐릭터 하나를 8방향 스프라이트 시트로 뽑아주는 Directional Sprites 베타가 나왔어요. 3D 모델 한 번으로 모든 방향이 같은 옷과 비율을 유지해요.",
+    "details": [
+      "14가지 2D 스타일 중에서 고를 수 있어요",
+      "걷기·달리기 등 애니메이션 전체에서 일관성이 유지돼요",
+      "출시 가격 기준으로 Sprite Generator 애니메이션의 약 1/10 비용이에요"
+    ],
+    "url": "https://ludo.ai/whats-new#directional-sprites-one-consistent-character-in-8-directions-in-the-2d-style-you",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-14-4",
     "service": "scenario",
     "date": "2026.10.14",
@@ -364,6 +379,23 @@
     "summary": "에이전트가 방향별 스프라이트 사이클과 Claude Opus 5.5 3D 모델을 만들 수 있고 HEIC 업로드를 지원해요.",
     "url": "https://www.scenario.com/changelog/skills-v0-49-0",
     "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-01-3",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "기능",
+    "title": "2026년 10월 웹앱·API 업데이트 (Seedance 2.5 드래프트 등)",
+    "summary": "10월에 Scenario 웹앱과 API에 Seedance 2.5 드래프트 모드가 들어왔고, 모델과 플러그인 업데이트도 이어졌어요. 정확한 공개일은 공식 changelog에 적혀 있지 않아요.",
+    "details": [
+      "웹앱 v2.29.0: 이미지 일괄 업로드, Seedance 2.5 드래프트, 새 모델 추가",
+      "API v2.139.0: Seedance 2.5 드래프트 모드와 작업 상태 정보 업데이트",
+      "P-Video 2 Pro Reference: 참조 영상과 오디오 가이드 지원",
+      "Mirelo SFX 2.0: 텍스트→오디오, 비디오→오디오, 비디오→비디오 모델 추가"
+    ],
+    "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
+    "source": "notice",
+    "dateMonthOnly": true
   },
   {
     "id": "scenario-2026-10-01-2",

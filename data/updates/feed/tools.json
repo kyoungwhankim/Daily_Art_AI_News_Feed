@@ -1,5 +1,67 @@
 [
   {
+    "id": "hugging-face-2026-10-15-1",
+    "service": "hugging-face",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Diffusers에 FLUX.3 Image Klein 지원 추가",
+    "summary": "Hugging Face Diffusers 라이브러리에서 FLUX.3 Image Klein 이미지 모델을 바로 불러와 쓸 수 있게 됐어요. 오픈 웨이트라서 로컬 GPU에서도 돌릴 수 있어요.",
+    "details": [
+      "Klein Base는 파인튜닝과 LoRA 학습용이에요",
+      "가중치는 Hugging Face에서 내려받을 수 있어요"
+    ],
+    "url": "https://huggingface.co/blog/flux-3",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-10-15-1",
+    "service": "figma-ai",
+    "date": "2026.10.15",
+    "kind": "기능",
+    "title": "Figma Make 코드 레이어·Specs 오픈 베타 공개",
+    "summary": "Config India 2026에서 Figma Make에 코드 레이어 편집과 Specs 기능이 오픈 베타로 공개됐어요. 디자인 시스템 코드를 가져와서 에이전트가 실제 컴포넌트를 만들 수 있어요.",
+    "details": [
+      "코드 레이어 생성·편집은 유료 플랜에서 11월 4일까지 무료예요",
+      "Specs: 디자인 의도와 기술 명세를 팀과 에이전트가 함께 보는 공간이에요 (유료 플랜 오픈 베타)",
+      "Make에서 Payload 백엔드를 바로 만들 수 있어요 (CMS·DB·인증 포함)",
+      "GitHub 저장소나 npm 패키지에서 코드를 가져와 실제 디자인 시스템에 맞출 수 있어요"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=config-india-2026",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-15-1",
+    "service": "comfyui",
+    "date": "2026.10.15",
+    "kind": "앱",
+    "title": "ComfyUI v0.41.0·v0.41.1 출시, FLUX.3 Klein과 Krea 3 노드 추가",
+    "summary": "ComfyUI v0.41.0과 v0.41.1이 함께 나왔어요. FLUX.3 Image Klein을 기본 지원하고, Krea 3 이미지 노드를 파트너 노드로 쓸 수 있어요.",
+    "details": [
+      "FLUX.3 Image Klein: 기본(base)과 증류(distilled) 체크포인트를 기본 지원해요",
+      "Krea 3 Image 파트너 노드: 텍스트→이미지와 편집을 한 노드에서 처리하고, 참조 이미지 최대 8장을 받아요",
+      "FLUX.3 Layout Prompt, SDR→HDR 변환 노드 등이 추가됐어요",
+      "FLUX.3 Klein 텍스트→이미지·이미지 편집 템플릿 4종이 들어왔어요"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-41-0",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-15-1",
+    "service": "claude",
+    "date": "2026.10.15",
+    "kind": "API",
+    "title": "Claude Opus 5.5 패스트 모드 정식 공개",
+    "summary": "Claude Opus 5.5의 패스트 모드가 리서치 프리뷰를 벗어나서 이제 별도 신청 없이 쓸 수 있어요. 요청할 때 베타 헤더를 보내지 않아도 돼요.",
+    "details": [
+      "Opus 5.5는 모든 사용량 등급에 기본 패스트 모드 속도 제한이 적용돼요",
+      "Opus 5와 Opus 4.8의 패스트 모드는 아직 리서치 프리뷰라서 기존 베타 헤더를 계속 보내야 해요",
+      "Claude in Microsoft Foundry(Azure 배포)에서도 Opus 5.5 패스트 모드를 쓸 수 있어요",
+      "Compliance API로 조직 구성원이 저장한 사용자 지침을 읽을 수 있는 베타가 열렸어요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2026",
+    "source": "dev"
+  },
+  {
     "id": "hugging-face-2026-10-14-1",
     "service": "hugging-face",
     "date": "2026.10.14",

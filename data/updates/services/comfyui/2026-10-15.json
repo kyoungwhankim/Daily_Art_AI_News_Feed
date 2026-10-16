@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-10-15-1",
+    "service": "comfyui",
+    "date": "2026.10.15",
+    "kind": "앱",
+    "title": "ComfyUI v0.41.0·v0.41.1 출시, FLUX.3 Klein과 Krea 3 노드 추가",
+    "summary": "ComfyUI v0.41.0과 v0.41.1이 함께 나왔어요. FLUX.3 Image Klein을 기본 지원하고, Krea 3 이미지 노드를 파트너 노드로 쓸 수 있어요.",
+    "details": [
+      "FLUX.3 Image Klein: 기본(base)과 증류(distilled) 체크포인트를 기본 지원해요",
+      "Krea 3 Image 파트너 노드: 텍스트→이미지와 편집을 한 노드에서 처리하고, 참조 이미지 최대 8장을 받아요",
+      "FLUX.3 Layout Prompt, SDR→HDR 변환 노드 등이 추가됐어요",
+      "FLUX.3 Klein 텍스트→이미지·이미지 편집 템플릿 4종이 들어왔어요"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-41-0",
+    "source": "dev"
+  }
+]
