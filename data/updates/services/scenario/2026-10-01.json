@@ -44,5 +44,21 @@
     "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
     "source": "notice",
     "dateMonthOnly": true
+  },
+  {
+    "id": "scenario-2026-10-01-4",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "OmniHuman 2, Krea 3, Meshy T2.5 등 신규 모델 추가",
+    "summary": "Scenario에 OmniHuman 2, Krea 3, Meshy T2.5 모델이 새로 추가됐어요. 공식 페이지에 일 단위 날짜가 없어 10월 기준으로 기록했어요.",
+    "details": [
+      "OmniHuman 2, Krea 3, Meshy T2.5 모델 추가",
+      "Godot 플러그인 v0.2.0: 안정적인 가져오기와 공식 문서",
+      "P-Video 2 Pro Reference: 영상·오디오 가이드 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-0b9e21c35a750fd10ab204df96017cfc68a270c07872edecc06f0b085bef7bd8",
+    "source": "notice",
+    "dateMonthOnly": true
   }
 ]

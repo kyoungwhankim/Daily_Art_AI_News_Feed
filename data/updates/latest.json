@@ -1,5 +1,38 @@
 [
   {
+    "id": "roblox-cube-2026-10-16-1",
+    "service": "roblox-cube",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "텍스처 생성 Quality 모드 베타 공개",
+    "summary": "Roblox Studio에서 4K PBR 텍스처(컬러·러프니스·메탈릭)를 만드는 Quality 모드가 베타로 나왔어요. 약 2분이 걸리고, 기존 Fast 모드보다 세밀해요.",
+    "details": [
+      "Quality 모드: 4K PBR 텍스처, 약 2분 소요",
+      "Fast 모드: 1K 컬러 전용, 약 30초",
+      "여러 파트로 된 메시 텍스처 생성 지원",
+      "투명 재질과 노멀 맵 세부는 아직 미지원"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-16-1",
+    "service": "krea",
+    "date": "2026.10.16",
+    "kind": "모델",
+    "title": "Krea 3 기본 이미지 모델 전환과 FLUX 3 Video 2K·4K",
+    "summary": "Krea 3가 앱의 기본 이미지 모델이 되었어요. 모든 사용자가 바로 생성할 수 있고, Krea 3 Ultra는 Max 플랜 이상에서 쓸 수 있어요.",
+    "details": [
+      "Krea 3 기본 모델 전환, Ultra는 Max 플랜 이상",
+      "Krea MCP에서 남은 compute unit 확인 가능",
+      "Topaz Starlight Fast 3 영상 업스케일러 추가",
+      "FLUX 3 Video 2K·4K 출력 지원",
+      "Krea Agent 속도 개선과 명령 기록 표시"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-16-2026",
+    "source": "notice"
+  },
+  {
     "id": "suno-2026-10-15-1",
     "service": "suno",
     "date": "2026.10.15",
@@ -491,25 +524,5 @@
     ],
     "url": "https://www.scenario.com/changelog/api-v2-137-0",
     "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-12-2",
-    "service": "scenario",
-    "date": "2026.10.12",
-    "kind": "앱",
-    "title": "Scenario 웹 앱 v2.28.0 업데이트",
-    "summary": "워크플로 편집이 훨씬 빨라졌고, 노드 액션과 드래그 앤 드롭으로 레퍼런스 에셋을 바로 바꿀 수 있어요.",
-    "url": "https://www.scenario.com/changelog/web-app-v2-28-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-12-1",
-    "service": "scenario",
-    "date": "2026.10.12",
-    "kind": "모델",
-    "title": "Tripo Retopology v3·Smart UV 모델 추가",
-    "summary": "Scenario에 Tripo Retopology v3와 Smart UV가 추가됐어요. 무거운 3D 메시를 쿼드 기반 저폴리로 바꾸고 텍스처를 살린 채 UV를 다시 펼 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-eee4a1e5ced2d77030db5186b4bbaee130abef2ab2db3cdd5fd3f28515fa1377",
-    "source": "notice"
   }
 ]

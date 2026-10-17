@@ -80,7 +80,8 @@
       {"label": "Premiere", "kind": "product"},
       {"label": "Sony", "kind": "company", "desc": "PlayStation 포함"},
       {"label": "Higgsfield", "kind": "company"},
-      {"label": "Stability AI", "kind": "company"}
+      {"label": "Stability AI", "kind": "company"},
+      {"label": "Kling", "kind": "product"}
     ]
   }
 }

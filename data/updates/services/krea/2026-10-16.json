@@ -1,0 +1,19 @@
+[
+  {
+    "id": "krea-2026-10-16-1",
+    "service": "krea",
+    "date": "2026.10.16",
+    "kind": "모델",
+    "title": "Krea 3 기본 이미지 모델 전환과 FLUX 3 Video 2K·4K",
+    "summary": "Krea 3가 앱의 기본 이미지 모델이 되었어요. 모든 사용자가 바로 생성할 수 있고, Krea 3 Ultra는 Max 플랜 이상에서 쓸 수 있어요.",
+    "details": [
+      "Krea 3 기본 모델 전환, Ultra는 Max 플랜 이상",
+      "Krea MCP에서 남은 compute unit 확인 가능",
+      "Topaz Starlight Fast 3 영상 업스케일러 추가",
+      "FLUX 3 Video 2K·4K 출력 지원",
+      "Krea Agent 속도 개선과 명령 기록 표시"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-16-2026",
+    "source": "notice"
+  }
+]

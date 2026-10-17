@@ -1,0 +1,18 @@
+[
+  {
+    "id": "roblox-cube-2026-10-16-1",
+    "service": "roblox-cube",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "텍스처 생성 Quality 모드 베타 공개",
+    "summary": "Roblox Studio에서 4K PBR 텍스처(컬러·러프니스·메탈릭)를 만드는 Quality 모드가 베타로 나왔어요. 약 2분이 걸리고, 기존 Fast 모드보다 세밀해요.",
+    "details": [
+      "Quality 모드: 4K PBR 텍스처, 약 2분 소요",
+      "Fast 모드: 1K 컬러 전용, 약 30초",
+      "여러 파트로 된 메시 텍스처 생성 지원",
+      "투명 재질과 노멀 맵 세부는 아직 미지원"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282",
+    "source": "notice"
+  }
+]

@@ -1,5 +1,21 @@
 [
   {
+    "id": "roblox-cube-2026-10-16-1",
+    "service": "roblox-cube",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "텍스처 생성 Quality 모드 베타 공개",
+    "summary": "Roblox Studio에서 4K PBR 텍스처(컬러·러프니스·메탈릭)를 만드는 Quality 모드가 베타로 나왔어요. 약 2분이 걸리고, 기존 Fast 모드보다 세밀해요.",
+    "details": [
+      "Quality 모드: 4K PBR 텍스처, 약 2분 소요",
+      "Fast 모드: 1K 컬러 전용, 약 30초",
+      "여러 파트로 된 메시 텍스처 생성 지원",
+      "투명 재질과 노멀 맵 세부는 아직 미지원"
+    ],
+    "url": "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282",
+    "source": "notice"
+  },
+  {
     "id": "ludo.ai-2026-10-15-1",
     "service": "ludo.ai",
     "date": "2026.10.15",
@@ -379,6 +395,22 @@
     "summary": "에이전트가 방향별 스프라이트 사이클과 Claude Opus 5.5 3D 모델을 만들 수 있고 HEIC 업로드를 지원해요.",
     "url": "https://www.scenario.com/changelog/skills-v0-49-0",
     "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-01-4",
+    "service": "scenario",
+    "date": "2026.10.01",
+    "kind": "모델",
+    "title": "OmniHuman 2, Krea 3, Meshy T2.5 등 신규 모델 추가",
+    "summary": "Scenario에 OmniHuman 2, Krea 3, Meshy T2.5 모델이 새로 추가됐어요. 공식 페이지에 일 단위 날짜가 없어 10월 기준으로 기록했어요.",
+    "details": [
+      "OmniHuman 2, Krea 3, Meshy T2.5 모델 추가",
+      "Godot 플러그인 v0.2.0: 안정적인 가져오기와 공식 문서",
+      "P-Video 2 Pro Reference: 영상·오디오 가이드 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-0b9e21c35a750fd10ab204df96017cfc68a270c07872edecc06f0b085bef7bd8",
+    "source": "notice",
+    "dateMonthOnly": true
   },
   {
     "id": "scenario-2026-10-01-3",
