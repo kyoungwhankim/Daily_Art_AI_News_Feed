@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-17-1",
+    "service": "scenario",
+    "date": "2026.10.17",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.57.0: Blender 애니메이션 스킬과 SeeDance 드래프트",
+    "summary": "Blender 애니메이션 작업을 돕는 스킬과 SeeDance 드래프트 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-57-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-17-2",
+    "service": "scenario",
+    "date": "2026.10.17",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.58.0: Blender 워크플로와 FFmpeg 7 수정",
+    "summary": "새 Blender 워크플로와 릴 재편집 기능이 추가됐고, FFmpeg 7 관련 문제가 수정됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-58-0",
+    "source": "notice"
+  }
+]

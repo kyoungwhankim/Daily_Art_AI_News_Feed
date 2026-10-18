@@ -1,5 +1,30 @@
 [
   {
+    "id": "higgsfield-2026-10-17-1",
+    "service": "higgsfield",
+    "date": "2026.10.17",
+    "kind": "기능",
+    "title": "Higgsfield Community 공개와 Higgsfield Grants 도입",
+    "summary": "작품과 프로필을 공유하는 Higgsfield Community가 열렸어요. 커뮤니티 평가와 성과에 따라 생성 크레딧을 받을 수 있는 Grants도 함께 도입됐어요.",
+    "details": [
+      "Community 페이지에서 프로젝트·샷·크리에이터를 한곳에서 탐색",
+      "프로필에 Ranking과 Creators 탭 추가",
+      "공개된 Open Project는 사용한 모델과 프롬프트를 볼 수 있음"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-community",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-17-1",
+    "service": "heygen",
+    "date": "2026.10.17",
+    "kind": "API",
+    "title": "전문 음성 생성 시 언어 입력이 선택 사항으로 변경",
+    "summary": "전문가 모드 음성 생성 API에서 language 값을 생략할 수 있게 됐어요. 생략하면 녹음에서 언어를 자동으로 감지해요.",
+    "url": "https://docs.heygen.com/changelog#professional-voices-without-a-language",
+    "source": "dev"
+  },
+  {
     "id": "heygen-2026-10-15-1",
     "service": "heygen",
     "date": "2026.10.15",

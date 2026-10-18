@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scenario-2026-10-15-1",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "앱",
+    "title": "Scenario 웹 앱 v2.29.0: 이미지 일괄 업로드와 Seedance 2.5 드래프트",
+    "summary": "여러 이미지를 한 번에 올리는 일괄 업로드가 추가됐고, Seedance 2.5 드래프트를 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-15-2",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "P-Video 2 Pro Reference, 영상·오디오 가이드 지원",
+    "summary": "P-Video 2 Pro Reference가 영상과 오디오를 가이드 입력으로 받을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/models-8893eb2fdb27cfa9aedf323f038efca0ba94a06a193d5f9504484d45cfcaf443",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-15-3",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Mirelo SFX 2.0 추가: 텍스트·영상에서 오디오 생성",
+    "summary": "Mirelo SFX 2.0이 추가돼 텍스트에서 오디오, 영상에서 오디오, 영상에서 영상으로의 변환을 할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-83a2a126f6ad068162fc0146fcc084062355bb5e6b2ae0db9d8507e7ca304c4c",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-10-17-1",
+    "service": "krea",
+    "date": "2026.10.17",
+    "kind": "모델",
+    "title": "Wan 3.0 Prime 영상 모델 추가와 Agent 비용 미리 확인",
+    "summary": "Krea에서 Alibaba Wan 3.0 Prime 영상 모델을 쓸 수 있게 됐어요. Agent와 MCP에서는 생성 전에 비용을 미리 확인할 수 있어요.",
+    "details": [
+      "Wan 3.0 Prime: Wan 3.0의 빠른 버전으로 영상 생성 지원",
+      "Agent와 Krea MCP에서 생성 비용(compute units)을 미리 확인",
+      "워크스페이스 관리자가 Agent의 Connect 버튼에서 연동을 바로 켤 수 있음",
+      "커스텀 앱이 세션별로 설정을 기억하도록 개선"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-17-2026",
+    "source": "dev"
+  }
+]

@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 469,
-      "latest": "2026.10.16",
+      "count": 471,
+      "latest": "2026.10.17",
       "file": "updates/feed/image.json",
-      "rev": "b429faebde"
+      "rev": "46d363a0d7"
     },
     "video": {
-      "count": 950,
-      "latest": "2026.10.15",
+      "count": 952,
+      "latest": "2026.10.17",
       "file": "updates/feed/video.json",
-      "rev": "31b5d09915"
+      "rev": "4b0a199252"
     },
     "3d": {
       "count": 182,
@@ -19,10 +19,10 @@
       "rev": "5cc6d651de"
     },
     "game-assets": {
-      "count": 551,
-      "latest": "2026.10.16",
+      "count": 558,
+      "latest": "2026.10.17",
       "file": "updates/feed/game-assets.json",
-      "rev": "ad30bcad08"
+      "rev": "1ac23299de"
     },
     "motion": {
       "count": 162,
@@ -31,10 +31,10 @@
       "rev": "5db49dd05e"
     },
     "audio": {
-      "count": 354,
-      "latest": "2026.10.15",
+      "count": 355,
+      "latest": "2026.10.17",
       "file": "updates/feed/audio.json",
-      "rev": "6845446975"
+      "rev": "e65cbc13b2"
     },
     "tools": {
       "count": 1012,
@@ -55,9 +55,9 @@
       "latest": "2026.09.08"
     },
     "nano-banana": {
-      "count": 20,
+      "count": 21,
       "first": "2025.08.26",
-      "latest": "2026.10.06"
+      "latest": "2026.10.14"
     },
     "seedream": {
       "count": 11,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 49,
+      "count": 50,
       "first": "2025.03.26",
-      "latest": "2026.10.16"
+      "latest": "2026.10.17"
     },
     "recraft": {
       "count": 41,
@@ -140,9 +140,9 @@
       "latest": "2026.10.08"
     },
     "higgsfield": {
-      "count": 57,
+      "count": 58,
       "first": "2025.04.24",
-      "latest": "2026.10.12"
+      "latest": "2026.10.17"
     },
     "ltx-studio": {
       "count": 65,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 74,
+      "count": 75,
       "first": "2025.11.29",
-      "latest": "2026.10.15"
+      "latest": "2026.10.17"
     },
     "synthesia": {
       "count": 188,
@@ -205,9 +205,9 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 359,
+      "count": 366,
       "first": "2022.12.23",
-      "latest": "2026.10.14"
+      "latest": "2026.10.17"
     },
     "layer": {
       "count": 103,
@@ -250,9 +250,9 @@
       "latest": "2026.10.15"
     },
     "mureka": {
-      "count": 55,
+      "count": 56,
       "first": "2024.10.30",
-      "latest": "2026.10.09"
+      "latest": "2026.10.17"
     },
     "stable-audio": {
       "count": 8,

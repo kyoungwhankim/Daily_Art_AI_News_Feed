@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-10-17-1",
+    "service": "heygen",
+    "date": "2026.10.17",
+    "kind": "API",
+    "title": "전문 음성 생성 시 언어 입력이 선택 사항으로 변경",
+    "summary": "전문가 모드 음성 생성 API에서 language 값을 생략할 수 있게 됐어요. 생략하면 녹음에서 언어를 자동으로 감지해요.",
+    "url": "https://docs.heygen.com/changelog#professional-voices-without-a-language",
+    "source": "dev"
+  }
+]

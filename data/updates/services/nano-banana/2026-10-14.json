@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nano-banana-2026-10-14-1",
+    "service": "nano-banana",
+    "date": "2026.10.14",
+    "kind": "요금",
+    "title": "Gemini Nano Banana 2.1 Priority PayGo 정식 공개",
+    "summary": "Gemini Nano Banana 2.1의 Priority Pay-as-you-go 요금제가 글로벌 엔드포인트에서 정식(GA) 출시됐어요. 추가 요금을 내고 우선 처리를 받는 방식이에요.",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_14_2026",
+    "source": "dev"
+  }
+]

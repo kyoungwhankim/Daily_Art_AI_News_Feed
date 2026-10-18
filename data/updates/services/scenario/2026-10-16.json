@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-16-1",
+    "service": "scenario",
+    "date": "2026.10.16",
+    "kind": "모델",
+    "title": "OmniHuman 2, Meshy T2.5, Krea 3 모델 추가",
+    "summary": "Scenario 모델 목록에 OmniHuman 2, Meshy T2.5, Krea 3가 새로 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-0b9e21c35a750fd10ab204df96017cfc68a270c07872edecc06f0b085bef7bd8",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-16-2",
+    "service": "scenario",
+    "date": "2026.10.16",
+    "kind": "연동",
+    "title": "Scenario Godot 플러그인 v0.2.1: 생성 폼 안정화",
+    "summary": "Godot 에디터에서 쓰는 Scenario 플러그인의 생성 폼이 더 안정적으로 동작하도록 수정됐어요.",
+    "url": "https://www.scenario.com/changelog/plugins-godot-v0-2-1",
+    "source": "notice"
+  }
+]

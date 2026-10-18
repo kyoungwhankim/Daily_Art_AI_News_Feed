@@ -1,5 +1,45 @@
 [
   {
+    "id": "scenario-2026-10-17-2",
+    "service": "scenario",
+    "date": "2026.10.17",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.58.0: Blender 워크플로와 FFmpeg 7 수정",
+    "summary": "새 Blender 워크플로와 릴 재편집 기능이 추가됐고, FFmpeg 7 관련 문제가 수정됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-58-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-17-1",
+    "service": "scenario",
+    "date": "2026.10.17",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.57.0: Blender 애니메이션 스킬과 SeeDance 드래프트",
+    "summary": "Blender 애니메이션 작업을 돕는 스킬과 SeeDance 드래프트 워크플로가 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-57-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-16-2",
+    "service": "scenario",
+    "date": "2026.10.16",
+    "kind": "연동",
+    "title": "Scenario Godot 플러그인 v0.2.1: 생성 폼 안정화",
+    "summary": "Godot 에디터에서 쓰는 Scenario 플러그인의 생성 폼이 더 안정적으로 동작하도록 수정됐어요.",
+    "url": "https://www.scenario.com/changelog/plugins-godot-v0-2-1",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-16-1",
+    "service": "scenario",
+    "date": "2026.10.16",
+    "kind": "모델",
+    "title": "OmniHuman 2, Meshy T2.5, Krea 3 모델 추가",
+    "summary": "Scenario 모델 목록에 OmniHuman 2, Meshy T2.5, Krea 3가 새로 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/models-0b9e21c35a750fd10ab204df96017cfc68a270c07872edecc06f0b085bef7bd8",
+    "source": "notice"
+  },
+  {
     "id": "roblox-cube-2026-10-16-1",
     "service": "roblox-cube",
     "date": "2026.10.16",
@@ -13,6 +53,36 @@
       "투명 재질과 노멀 맵 세부는 아직 미지원"
     ],
     "url": "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-15-3",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "Mirelo SFX 2.0 추가: 텍스트·영상에서 오디오 생성",
+    "summary": "Mirelo SFX 2.0이 추가돼 텍스트에서 오디오, 영상에서 오디오, 영상에서 영상으로의 변환을 할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-83a2a126f6ad068162fc0146fcc084062355bb5e6b2ae0db9d8507e7ca304c4c",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-15-2",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "모델",
+    "title": "P-Video 2 Pro Reference, 영상·오디오 가이드 지원",
+    "summary": "P-Video 2 Pro Reference가 영상과 오디오를 가이드 입력으로 받을 수 있게 됐어요.",
+    "url": "https://www.scenario.com/changelog/models-8893eb2fdb27cfa9aedf323f038efca0ba94a06a193d5f9504484d45cfcaf443",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-15-1",
+    "service": "scenario",
+    "date": "2026.10.15",
+    "kind": "앱",
+    "title": "Scenario 웹 앱 v2.29.0: 이미지 일괄 업로드와 Seedance 2.5 드래프트",
+    "summary": "여러 이미지를 한 번에 올리는 일괄 업로드가 추가됐고, Seedance 2.5 드래프트를 지원해요.",
+    "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
     "source": "notice"
   },
   {
