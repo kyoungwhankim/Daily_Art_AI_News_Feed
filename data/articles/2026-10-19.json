@@ -1,0 +1,86 @@
+[
+  {
+    "id": "industry-fcc6ece3-2026-10",
+    "tab": "industry",
+    "headline": "반다이남코 개발자가 짚은 '게임 개발 AI의 거짓말'과 진짜 쓸모 있는 영역",
+    "summary": "반다이남코 개발자가 현장에서 겪은 AI 도입의 착각과 실제로 통한 활용법을 공개했어요.",
+    "body": "<p>반다이남코 엔터테인먼트의 다마키 아야 씨가 8월 도쿄에서 열린 '게임메이커즈 스크램블 2026'에서 게임 개발 현장의 AI 활용을 둘러싼 거짓말과 진실을 짚는 강연을 했어요. 첫 번째 거짓말은 'AI로 시간 단축'이에요. 막연히 효율화를 내세운 제안은 대개 현장이 그만큼 곤란하지 않아서 거절당하고, 문서 요약처럼 숙련자가 이미 빨리 하는 일은 특히 반응이 나쁘대요. 대신 수년 치 영상·음성 아카이브에서 VLM으로 원하는 장면이나 표정을 찾아내는 것처럼 사람 능력으로는 감당하기 어려운 일에 쓰는 게 환영받았다고 해요.</p><p>두 번째는 사내 AI 챗봇이에요. 정리되지 않은 낡은 데이터를 넣으면 가칭과 확정 이름을 서로 다른 캐릭터로 인식하는 식으로 오답이 나와 오히려 팀의 신뢰를 잃는대요. 그래서 텍스트 마스터와 용어집을 Claude로 분석해 위키부터 만들게 하고, 사람이 그 내용을 검수하는 방식으로 정확도를 끌어올렸어요. 세 번째는 'AI로 게임을 만든다'는 기대인데, 최신 모델은 지시를 과하게 해석하거나 대사가 장황해지는 문제도 있다고 해요. 다마키 씨는 실제로 움직이는 프로토타입 제작이 가장 현실적인 활용처라며, 결국 개발 현장 스스로 AI를 잘 알아야 한다고 강조했어요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/18/28368.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.19",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/200098.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "행사·컨퍼런스"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/18/28368.html"
+  },
+  {
+    "id": "industry-9c345a08-2026-10",
+    "tab": "industry",
+    "headline": "팀 스위니 에픽게임즈 CEO \"AI가 게임의 황금기를 연다\"…개발 조직도 AI 중심으로 재편",
+    "summary": "팀 스위니 CEO가 AI 코딩 덕분에 게임의 황금기가 온다며 친AI 행보를 이어갔어요.",
+    "body": "<p>에픽게임즈의 팀 스위니 CEO가 다시 한 번 AI를 적극 옹호하고 나섰어요. 그는 AI 코딩 실력이 지난 1년 사이 크게 좋아졌다며, 앞으로 개발사들이 훨씬 적은 자원으로 대형 게임을 만들 수 있게 되면서 '게임의 황금기'가 열릴 거라고 주장했어요. 또 X에 에픽이 지금 '최대한의 AI 가속'을 위해 개발자들을 재배치하고 있다고 밝혔고, 자신이 언리얼 엔진 1을 직접 코딩하던 시간도 AI가 있었다면 아낄 수 있었을 거라며 AI가 사람 개발자와 비슷한 품질의 코드를 만든다고 말했어요.</p><p>하지만 반응은 차가워요. 게임 커뮤니티에서는 여전히 AI 사용을 곱지 않게 보는 시선이 많고, 에픽의 디즈니 협업 신작이 AI 활용을 우선한다는 보도가 나온 뒤 반발이 더 커졌어요. 일부 개발사가 에픽의 AI 사용을 이유로 포트나이트 콜라보를 거절하고 있다는 소문까지 돌고, 내부 개발자들에게 '이제 손으로 짠 코드는 없다'는 지침이 내려졌다는 보도도 있었어요. 최근 프리뷰로 공개된 새 런처 역시 바이브 코딩으로 만들어졌다는 점이 알려지며 성의가 없다는 비판을 받았죠. 스위니가 물러설 기미를 보이지 않는 만큼, 에픽의 다음 제품들은 플레이어들이 생성형 AI로 만든 게임을 얼마나 받아들일지 가늠하는 시험대가 될 전망이에요.</p><p>원문: <a href=\"https://www.polygon.com/epic-games-tim-sweeney-gold-age-of-gaming-ai-development/\">Polygon</a></p>",
+    "source": "Polygon",
+    "publishedAt": "2026.10.19",
+    "hue": 25,
+    "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/fortnite-star-wars-uefn.jpg?w=1600&h=900&fit=crop",
+    "keywords": [
+      "AI 도입 전략",
+      "코딩",
+      "Epic Games"
+    ],
+    "url": "https://www.polygon.com/epic-games-tim-sweeney-gold-age-of-gaming-ai-development/"
+  },
+  {
+    "id": "industry-1de05d48-2026-10",
+    "tab": "industry",
+    "headline": "\"AI로 금방 베낄까 봐\"…인디 게임 '드렁큰 가디스 리플럭스', 스팀 넥스트 페스트 데모 취소",
+    "summary": "AI 클론 게임이 쏟아질까 걱정한 인디 개발사가 넥스트 페스트 데모를 접었어요.",
+    "body": "<p>스팀 위시리스트 2만 5천 건을 넘긴 인디 게임 '드렁큰 가디스 리플럭스'가 10월 19일부터 26일까지 열리는 스팀 넥스트 페스트 데모 공개를 며칠 앞두고 전격 취소했어요. 아름다운 애니풍 악마와 러시안룰렛처럼 술 대결을 벌이며 하룻밤을 버텨야 하는 독특한 콘셉트로 주목받던 작품이에요. 퍼블리셔 얼라이언스 아츠는 X를 통해 팬들에게 사과하며 두 가지 이유를 밝혔어요. 하나는 게임 플레이 영상과 방송이 퍼블리싱 규정을 지키는지 관리하기 어렵다는 점이고, 다른 하나는 데모를 공개하면 누군가 생성형 AI로 금방 클론 게임을 만들어 낼 수 있다는 걱정이었어요.</p><p>AI 도구와 바이브 코딩이 개발 속도를 끌어올린 만큼 남의 게임을 베끼는 것도 쉬워졌어요. 데모를 본 누군가가 AI로 비슷한 게임을 먼저 완성해 출시해 버리면, 정작 원작은 정식 출시 전에 흥행 기회를 잃을 수도 있는 셈이죠. 대신 개발사 후유는 공식 디스코드에서 신청을 받아 일부 플레이어만 참여하는 비공개 테스트를 열기로 했고, 정식 출시는 12월 8일이에요. 데모로 위시리스트를 모으는 게 인디 게임의 기본 홍보 공식이었던 만큼, AI 시대의 도용 우려가 출시 전 마케팅 방식까지 바꾸고 있다는 점에서 눈여겨볼 만한 사례예요.</p><p>원문: <a href=\"https://www.polygon.com/drunken-goddess-reflux-demo-canceled/\">Polygon</a></p>",
+    "source": "Polygon",
+    "publishedAt": "2026.10.19",
+    "hue": 330,
+    "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/drunken-goddess-reflex-drinking-game.jpg?w=1600&h=900&fit=crop",
+    "keywords": [
+      "AI 사용 논란",
+      "코딩"
+    ],
+    "url": "https://www.polygon.com/drunken-goddess-reflux-demo-canceled/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.gamebusiness.jp/article/2026/10/18/28361.html"
+      }
+    ]
+  },
+  {
+    "id": "art-fd698695-2026-10",
+    "tab": "art",
+    "headline": "'그루팔로' 그림 작가 악셀 셰플러, ChatGPT가 그린 복제 이미지에 소송 검토",
+    "summary": "그루팔로 작가가 ChatGPT의 캐릭터 복제 이미지에 맞서 공동 소송을 검토하고 있어요.",
+    "body": "<p>전 세계적으로 사랑받는 그림책 캐릭터 '그루팔로'를 그린 일러스트레이터 악셀 셰플러가 실리콘밸리 빅테크를 상대로 법적 대응에 나설지 고민하고 있어요. 독일 주간지 차이트에 따르면, ChatGPT 같은 챗봇에 그루팔로 그림을 요청하면 1분도 안 돼 원작과 똑같아 보이는 이미지가 나오는데, 이를 본 셰플러는 큰 충격을 받았다고 해요. 그는 배경만 다를 뿐 캐릭터는 명백히 자기 그림이라고 강조했고, 다른 창작자들과 힘을 합쳐 공동 소송을 내는 방안을 검토하고 있어요. 이미 출판사들과 지원 방안을 논의 중이고, 법률 자문도 알아보는 단계래요.</p><p>독일에서는 AI와 저작권을 둘러싼 논쟁이 점점 뜨거워지고 있어요. 펭귄랜덤하우스 독일 법인이 유럽 출판사로는 처음으로 '꼬마 용 코코넛' 이미지 무단 생성을 문제 삼아 OpenAI를 고소했고, 카를센 출판사도 그림책 'NEIN호른' 저작권 침해로 소송을 냈어요. 카를센 측은 ChatGPT가 표지와 가짜 ISBN, 출판사 로고까지 갖춘 인쇄용 그림책을 통째로 만들어 준다고 지적했어요. 반면 OpenAI는 AI가 데이터를 데이터베이스처럼 저장하지 않고 패턴만 학습해 새 결과물을 만든다고 반박하고 있어요. 글과 그림이 한 몸인 아동 그림책은 AI 모방이 특히 눈에 잘 띄는 분야라, 셰플러가 실제로 소송에 나서면 빅테크를 향한 압박이 더 커질 전망이에요.</p><p>원문: <a href=\"https://www.heise.de/news/KI-Kopien-des-Grueffelo-Illustrator-Axel-Scheffler-will-gegen-Betreiber-klagen-11491779.html\">heise online</a></p>",
+    "source": "heise online",
+    "publishedAt": "2026.10.19",
+    "hue": 270,
+    "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/8/4/6/4/6/Grueffello-Shutter-36407d9007a89fae.png?func=bound&height=1200&org_if_sml=1&q=85&width=1200",
+    "keywords": [
+      "2D·이미지",
+      "ChatGPT"
+    ],
+    "url": "https://www.heise.de/news/KI-Kopien-des-Grueffelo-Illustrator-Axel-Scheffler-will-gegen-Betreiber-klagen-11491779.html"
+  },
+  {
+    "id": "art-d8d0778a-2026-10",
+    "tab": "art",
+    "headline": "디즈니, 파산한 캐릭터.AI 직원 대부분 영입…연 6천만 달러 규모",
+    "summary": "디즈니가 파산한 캐릭터.AI 직원 60명 이상에게 채용을 제안했고 대부분이 수락했어요.",
+    "body": "<p>캐릭터와 대화하는 챗봇 서비스로 유명한 스타트업 캐릭터.AI가 이번 주 파산을 신청한 가운데, 직원 상당수가 디즈니로 자리를 옮기게 됐어요. 블룸버그가 찾아낸 법원 제출 문서에 따르면 디즈니는 캐릭터.AI 직원 중 과반인 최소 60명에게 채용을 제안하기로 했고, 이들에게 지급할 연간 보상 총액은 약 6천만 달러로 추산돼요. 문서에는 제안을 받은 직원 대다수가 이미 수락했다는 내용도 담겼어요. 앞서 캐릭터.AI의 전 CEO 카란딥 아난드는 디즈니 역사상 첫 CTO로 합류했고, 캐릭터.AI는 디즈니가 자사 자산 일부를 2천만 달러에 인수하기로 했다고 밝힌 바 있어요.</p><p>다만 이번 계약은 이른바 '스토킹 호스' 입찰이라, 다른 회사가 더 높은 금액을 제시하면 결과가 바뀔 수도 있어요. 캐릭터.AI는 사용자층이 크고 활발했지만 높은 운영 비용과 소송·규제 리스크에 발목이 잡혔다고 문서에서 설명했어요. 실제로 챗봇에 집착하던 14세 소년이 극단적 선택을 한 사건으로 유가족에게 소송을 당했고, 아동 안전 문제로 정부 조사도 받고 있어요. 수많은 캐릭터 IP를 가진 디즈니가 대화형 AI 인력과 기술을 통째로 흡수하는 셈이라, 앞으로 디즈니 캐릭터와 직접 대화하는 서비스 같은 엔터테인먼트 활용이 나올지 관심이 모여요.</p><p>원문: <a href=\"https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/\">TechCrunch</a></p>",
+    "source": "TechCrunch",
+    "publishedAt": "2026.10.19",
+    "hue": 220,
+    "image": "https://techcrunch.com/wp-content/uploads/2024/01/character-ai-alexa.jpg?resize=1200,675",
+    "keywords": [],
+    "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/"
+  }
+]

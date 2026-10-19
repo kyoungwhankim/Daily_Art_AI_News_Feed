@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-18-1",
+    "service": "scenario",
+    "date": "2026.10.18",
+    "kind": "연동",
+    "title": "Scenario Blender 플러그인 v0.12.0 공개",
+    "summary": "Blender 플러그인 v0.12.0이 나왔어요. 3D 결과물을 Blender 안에서 바로 수정하고 에이전트 설정도 함께 할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/plugins-blender-v0-12-0",
+    "source": "notice"
+  }
+]

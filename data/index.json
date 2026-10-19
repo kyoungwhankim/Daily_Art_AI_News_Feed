@@ -1,6 +1,12 @@
 {
   "dates": [
     {
+      "date": "2026.10.19",
+      "file": "articles/2026-10-19.json",
+      "count": 5,
+      "rev": "32573fb994"
+    },
+    {
       "date": "2026.10.18",
       "file": "articles/2026-10-18.json",
       "count": 2,

@@ -633,6 +633,7 @@
  "https://blogs.nvidia.com/blog/tag/rtx-ai-garage/feed/": {
   "kind": "feed",
   "items": [
+   "5d68a827cceb",
    "b3f81d593899",
    "fea3c194e78e",
    "7dc9207322e1",
@@ -651,7 +652,6 @@
    "44822fda3cae",
    "26ca37c086d7",
    "76e0ea82076a",
-   "5d68a827cceb",
    "0d2c3554e570",
    "7e4c863e03b2"
   ]
@@ -674,8 +674,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "9f88b151708c4aa4",
-  "chars": 28809,
+  "hash": "5038930f66146df3",
+  "chars": 28811,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -3837,8 +3837,8 @@
  },
  "https://docs.byteplus.com/en/docs/ModelArk/1159178": {
   "kind": "page",
-  "hash": "4c1a4c9cc06e3b19",
-  "chars": 3671,
+  "hash": "9ac229e94addc9f5",
+  "chars": 3669,
   "links": [
    "04b3bd9488",
    "054cdfb59b",
@@ -3955,6 +3955,7 @@
    "fe8116432e"
   ],
   "dates": [
+   "October 18, 2026",
    "September 28, 2026"
   ]
  },
@@ -10650,8 +10651,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "ac3594dd36578e16",
-  "chars": 4402,
+  "hash": "a68ee8745c71c5b9",
+  "chars": 4316,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -10667,6 +10668,7 @@
    "20662f841a",
    "220de2ff7a",
    "2a4c60215f",
+   "2d9455f664",
    "373a7733d3",
    "37f4ae3580",
    "3a4a425396",
@@ -10674,6 +10676,7 @@
    "4a9f3d81cb",
    "4b2fbc86e9",
    "4b98a87acd",
+   "4c2d71534c",
    "5274e6ff6d",
    "5592dcb2fe",
    "5704da8a5d",
@@ -10707,6 +10710,7 @@
    "ad8328ff3e",
    "bccc613a54",
    "c2864931a5",
+   "c3df7a1b24",
    "c53d14c9fd",
    "c544b0c812",
    "cc935de4d2",
@@ -12956,6 +12960,7 @@
    "78e6c12e94",
    "797229b6d9",
    "79ef39143e",
+   "7a7f5d8186",
    "7accf607dd",
    "7b4cf83496",
    "7e55a62c91",
@@ -13061,6 +13066,7 @@
    "Oct 13 2026",
    "Oct 14 2026",
    "Oct 15 2026",
+   "Oct 18 2026",
    "October 13, 2026",
    "October 19, 2025",
    "October 20, 2025",
@@ -13141,6 +13147,7 @@
    "e936530b15",
    "ea7919d3f1",
    "ef635a0191",
+   "ef7ef8730d",
    "f074590a40",
    "f3710c576a",
    "f4d5e27523",
@@ -13246,6 +13253,7 @@
    "b930181949",
    "cfb5d0f9a2",
    "ea7919d3f1",
+   "ef7ef8730d",
    "f3710c576a",
    "f730d9b32d"
   ],
@@ -13622,6 +13630,7 @@
  "https://magazine.reallusion.com/feed/": {
   "kind": "feed",
   "items": [
+   "6ab4e179557d",
    "c240fe7e615d",
    "0b318e64bac3",
    "b83810beeab6",
@@ -17741,8 +17750,8 @@
  },
  "https://www.anthropic.com/news": {
   "kind": "page",
-  "hash": "eba8d3ecece480be",
-  "chars": 2008,
+  "hash": "37bf2df0f9ce40f2",
+  "chars": 1982,
   "links": [
    "00118fa80a",
    "0022de8bdc",
@@ -17756,6 +17765,7 @@
    "1374dc9cb8",
    "1a722cc72b",
    "1baf18a1b8",
+   "1c22cd60dc",
    "1f00778818",
    "20b3901d03",
    "220de2ff7a",
@@ -17866,6 +17876,7 @@
    "Oct 1, 2026",
    "Oct 14, 2026",
    "Oct 15, 2026",
+   "Oct 18, 2026",
    "Oct 2, 2026",
    "Oct 6, 2026",
    "Oct 7, 2026",
@@ -18837,8 +18848,8 @@
  },
  "https://www.layer.ai/changelog": {
   "kind": "page",
-  "hash": "f08e51b2ee3103ac",
-  "chars": 73694,
+  "hash": "278dbe69eafa21f1",
+  "chars": 73715,
   "links": [
    "0178abbef1",
    "022e22c273",
@@ -20131,8 +20142,8 @@
  },
  "https://www.scenario.com/changelog": {
   "kind": "page",
-  "hash": "d9aae904edc1d668",
-  "chars": 50910,
+  "hash": "c89b31fcadfffab7",
+  "chars": 51032,
   "links": [
    "016ef85946",
    "017879a00f",
@@ -20405,6 +20416,7 @@
    "798a8b06ee",
    "7aaa3c0ef8",
    "7aaee05673",
+   "7b601671d5",
    "7c546bb22a",
    "7c758ab01e",
    "7c7ecd84d2",
