@@ -1,0 +1,15 @@
+[
+  {
+    "id": "runway-2026-10-14-1",
+    "service": "runway",
+    "date": "2026.10.14",
+    "kind": "연동",
+    "title": "Runway MCP에 Fish Audio Drama 3 추가",
+    "summary": "Runway MCP에서 Fish Audio Drama 3로 대본을 감정이 살아있는 내레이션으로 바꿀 수 있게 되었어요.",
+    "details": [
+      "7개 음성과 속삭임, 웃음 등 연기 지시를 지원해요"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  }
+]

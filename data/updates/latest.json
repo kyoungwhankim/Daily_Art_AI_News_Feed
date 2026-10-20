@@ -1,5 +1,67 @@
 [
   {
+    "id": "unity-ai-2026-10-19-1",
+    "service": "unity-ai",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Unity AI Assistant 2.21.0-pre.1 프리뷰 공개",
+    "summary": "Unity 에디터의 AI Assistant에 에이전트가 위험한 명령을 승인 창 없이 실행하도록 하는 설정이 생겼어요. 대화 기록을 요약할 때는 Compacting 진행 표시가 보여요.",
+    "details": [
+      "자동 승인 설정: 위험한 작업을 명령마다 승인 창을 띄우지 않고 실행",
+      "대화 맥락을 정리하는 동안 Compacting 진행 표시 추가",
+      "프로젝트 스킬(SKILL.md)의 description 파싱 오류 수정"
+    ],
+    "url": "https://packages.unity.com/com.unity.ai.assistant",
+    "source": "dev"
+  },
+  {
+    "id": "krea-2026-10-19-1",
+    "service": "krea",
+    "date": "2026.10.19",
+    "kind": "API",
+    "title": "Krea 3 API 일반 공개와 MCP 비용 미리 확인",
+    "summary": "모든 워크스페이스에서 Krea 3 API를 호출할 수 있게 되었어요. MCP 생성 도구에서 preflight를 켜면 작업을 제출하지 않고 비용 견적과 잔액을 확인할 수 있어요.",
+    "details": [
+      "fast와 high 사고 모드는 베타 접근 없이 사용할 수 있어요",
+      "preflight 응답에 mode, compute_units, affordable 등이 포함돼요",
+      "코드 예제는 KREA_API_KEY 환경 변수에서 토큰을 읽어요"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-19-2026",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-19-1",
+    "service": "hugging-face",
+    "date": "2026.10.19",
+    "kind": "연동",
+    "title": "Transformers·Diffusers에서 AWS Trainium 네이티브 지원",
+    "summary": "TorchNeuron으로 AWS Trainium이 PyTorch의 기본 장치처럼 동작해서, Transformers와 Diffusers 같은 Hugging Face 라이브러리를 그대로 쓸 수 있어요. 공개 베타는 10월 20일부터 시작해요.",
+    "details": [
+      "TorchNeuron은 eager 모드, torch.compile, FSDP, TP 등 PyTorch 분산 API를 지원해요",
+      "Transformers, Diffusers, Accelerate, PEFT, TRL이 Trainium에서 직접 실행돼요",
+      "10월 20일부터 pip install torch-neuronx로 설치할 수 있어요"
+    ],
+    "url": "https://huggingface.co/blog/hf-torchneuron",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-10-19-1",
+    "service": "flow-studio",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Flow Studio 3D 에디터에 키프레임과 오브젝트 복제 추가",
+    "summary": "3D 에디터에서 정지된 오브젝트에 키프레임 애니메이션을 줄 수 있고, 장면 오브젝트를 복사해 여러 개로 나눠 쓸 수 있게 되었어요. 텍스처링 옵션도 늘었어요.",
+    "details": [
+      "오브젝트 키프레임: 개별 키프레임이나 전체 모션 경로를 편집",
+      "장면 오브젝트 복사, 붙여넣기, 다중 선택 복제 지원",
+      "고급 텍스처링: Wonder 3D Lite 또는 Advanced 선택, 호환되는 드래프트에서 Trellis 2.0 사용",
+      "Image-to-3D 입력에 AI 이미지 향상 적용",
+      "Unreal Engine 프로젝트를 5.7.4로 업그레이드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-18-1",
     "service": "scenario",
     "date": "2026.10.18",
@@ -175,6 +237,20 @@
     "title": "Scenario 웹 앱 v2.29.0: 이미지 일괄 업로드와 Seedance 2.5 드래프트",
     "summary": "여러 이미지를 한 번에 올리는 일괄 업로드가 추가됐고, Seedance 2.5 드래프트를 지원해요.",
     "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-15-1",
+    "service": "runway",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Runway MCP에 Mirelo SFX 2.0과 BiRefNet v2 추가",
+    "summary": "Runway MCP에서 Mirelo SFX 2.0으로 클립에 맞는 효과음 트랙을 만들고, BiRefNet v2로 배경을 자동 제거할 수 있게 되었어요.",
+    "details": [
+      "Mirelo SFX 2.0: 클립과 설명으로 발걸음, 환경음 같은 별도 오디오 트랙 생성",
+      "BiRefNet v2: 전경을 자동으로 인식해 배경 제거, 제품 사진과 에셋 준비에 활용"
+    ],
+    "url": "https://runwayml.com/changelog",
     "source": "notice"
   },
   {
@@ -371,6 +447,19 @@
     "source": "notice"
   },
   {
+    "id": "runway-2026-10-14-1",
+    "service": "runway",
+    "date": "2026.10.14",
+    "kind": "연동",
+    "title": "Runway MCP에 Fish Audio Drama 3 추가",
+    "summary": "Runway MCP에서 Fish Audio Drama 3로 대본을 감정이 살아있는 내레이션으로 바꿀 수 있게 되었어요.",
+    "details": [
+      "7개 음성과 속삭임, 웃음 등 연기 지시를 지원해요"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
     "id": "nano-banana-2026-10-14-1",
     "service": "nano-banana",
     "date": "2026.10.14",
@@ -436,75 +525,5 @@
     ],
     "url": "https://docs.heygen.com/changelog#hey-gen-voice-public-voices-and-batch-timestamps",
     "source": "dev"
-  },
-  {
-    "id": "heygen-2026-10-14-1",
-    "service": "heygen",
-    "date": "2026.10.14",
-    "kind": "모델",
-    "title": "HeyGen Voice 공개: 영상에 맞춰 말하는 음성 모델",
-    "summary": "짧은 녹음이나 사진으로 목소리를 만들고, 장면의 공간감과 전달 방식에 맞춰 말하는 새 음성 모델이 나왔어요.",
-    "details": [
-      "최대 60초 녹음으로 목소리 생성, 사진만으로 인물과 장소에 맞는 음성 디자인",
-      "Adaptive Mode로 방 울림과 마이크 거리 등 장면 조건에 맞춤",
-      "Professional Voice Clone은 30분~2시간 녹음으로 학습하는 추가 옵션이며 API 기준 100만 자당 30달러"
-    ],
-    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice",
-    "source": "notice"
-  },
-  {
-    "id": "claude-2026-10-14-1",
-    "service": "claude",
-    "date": "2026.10.14",
-    "kind": "API",
-    "title": "Claude Platform에 OpenTelemetry 내보내기 베타 공개",
-    "summary": "Messages API 요청과 Managed Agents 세션을 OpenTelemetry로 추적해 관찰 도구에 보낼 수 있는 베타가 나왔어요.",
-    "details": [
-      "Python, TypeScript, C#, Go, Java, PHP, Ruby SDK에서 스팬 생성",
-      "Claude Console에서 OpenTelemetry 대상을 추가해 설정",
-      "Claude Managed Agents 예약 배포가 Claude Platform on AWS에서 사용 가능"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-14-2026",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-13-4",
-    "service": "scenario",
-    "date": "2026.10.13",
-    "kind": "연동",
-    "title": "Scenario for Blender 0.10.0 출시",
-    "summary": "Blender 안에서 AI 이미지, 영상, 3D, 오디오를 바로 만들 수 있는 플러그인 업데이트예요.",
-    "url": "https://www.scenario.com/changelog/plugins-blender-v0-10-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-13-3",
-    "service": "scenario",
-    "date": "2026.10.13",
-    "kind": "연동",
-    "title": "Scenario MCP 서버 v0.34.0 출시",
-    "summary": "프로토콜 호환성이 개선되고 설정 가이드가 보강됐어요. 외부 AI 에이전트에서 Scenario를 연결할 때 참고하면 좋아요.",
-    "url": "https://www.scenario.com/changelog/mcp-server-v0-34-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-13-2",
-    "service": "scenario",
-    "date": "2026.10.13",
-    "kind": "API",
-    "title": "Scenario API v2.138.0 출시",
-    "summary": "작업(job) 필터링이 강화되고 API 제어 기능과 에셋 조회가 개선됐어요. 개발 연동을 쓰는 분은 확인해 보세요.",
-    "url": "https://www.scenario.com/changelog/api-v2-138-0",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-13-1",
-    "service": "scenario",
-    "date": "2026.10.13",
-    "kind": "모델",
-    "title": "MiniMax H3 Max 3D to Video 모델 추가",
-    "summary": "Scenario에 MiniMax H3 Max 3D-투-비디오 모델이 추가됐어요. 3D로 짠 사전 시각화 장면을 영상으로 바꿀 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-2170f727531497869374ad8a8d6471fb4880e051f9c4dc36532eb93d20392aa4",
-    "source": "notice"
   }
 ]

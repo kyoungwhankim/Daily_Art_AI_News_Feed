@@ -1,5 +1,22 @@
 [
   {
+    "id": "flow-studio-2026-10-19-1",
+    "service": "flow-studio",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Flow Studio 3D 에디터에 키프레임과 오브젝트 복제 추가",
+    "summary": "3D 에디터에서 정지된 오브젝트에 키프레임 애니메이션을 줄 수 있고, 장면 오브젝트를 복사해 여러 개로 나눠 쓸 수 있게 되었어요. 텍스처링 옵션도 늘었어요.",
+    "details": [
+      "오브젝트 키프레임: 개별 키프레임이나 전체 모션 경로를 편집",
+      "장면 오브젝트 복사, 붙여넣기, 다중 선택 복제 지원",
+      "고급 텍스처링: Wonder 3D Lite 또는 Advanced 선택, 호환되는 드래프트에서 Trellis 2.0 사용",
+      "Image-to-3D 입력에 AI 이미지 향상 적용",
+      "Unreal Engine 프로젝트를 5.7.4로 업그레이드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
     "id": "iclone-2026-10-08-1",
     "service": "iclone",
     "date": "2026.10.08",
@@ -7,6 +24,21 @@
     "title": "Reallusion, Escape.AI와 파트너십 체결",
     "summary": "iClone과 Character Creator 5의 3D 제작 환경을 Escape.AI의 커넥티드 TV 유통망과 연결해 일관된 AI 영상 제작과 배포를 돕기로 했어요.",
     "url": "https://magazine.reallusion.com/2026/10/08/reallusion-and-escape-ai-partner-to-solve-ai-video-bottlenecks-and-expand-distribution/",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-10-06-1",
+    "service": "flow-studio",
+    "date": "2026.10.06",
+    "kind": "모델",
+    "title": "Flow Studio에 MiniMax H3 Turbo 추가",
+    "summary": "Autodesk Flow Studio에서 MiniMax H3 Turbo로 텍스트나 이미지를 바탕으로 영상을 만들 수 있게 되었어요. 3D 에디터와 캔버스에는 도움말 메뉴도 생겼어요.",
+    "details": [
+      "MiniMax H3와 H3 Turbo 모델 추가",
+      "3D 에디터와 캔버스의 새 도움말 메뉴: 단축키, 튜토리얼, 버그 신고",
+      "신규 사용자를 위한 온보딩 화면 개선"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
     "source": "notice"
   },
   {

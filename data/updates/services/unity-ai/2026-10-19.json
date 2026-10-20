@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2026-10-19-1",
+    "service": "unity-ai",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Unity AI Assistant 2.21.0-pre.1 프리뷰 공개",
+    "summary": "Unity 에디터의 AI Assistant에 에이전트가 위험한 명령을 승인 창 없이 실행하도록 하는 설정이 생겼어요. 대화 기록을 요약할 때는 Compacting 진행 표시가 보여요.",
+    "details": [
+      "자동 승인 설정: 위험한 작업을 명령마다 승인 창을 띄우지 않고 실행",
+      "대화 맥락을 정리하는 동안 Compacting 진행 표시 추가",
+      "프로젝트 스킬(SKILL.md)의 description 파싱 오류 수정"
+    ],
+    "url": "https://packages.unity.com/com.unity.ai.assistant",
+    "source": "dev"
+  }
+]

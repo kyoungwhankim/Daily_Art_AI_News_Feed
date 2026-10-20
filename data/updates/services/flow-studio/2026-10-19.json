@@ -1,0 +1,19 @@
+[
+  {
+    "id": "flow-studio-2026-10-19-1",
+    "service": "flow-studio",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Flow Studio 3D 에디터에 키프레임과 오브젝트 복제 추가",
+    "summary": "3D 에디터에서 정지된 오브젝트에 키프레임 애니메이션을 줄 수 있고, 장면 오브젝트를 복사해 여러 개로 나눠 쓸 수 있게 되었어요. 텍스처링 옵션도 늘었어요.",
+    "details": [
+      "오브젝트 키프레임: 개별 키프레임이나 전체 모션 경로를 편집",
+      "장면 오브젝트 복사, 붙여넣기, 다중 선택 복제 지원",
+      "고급 텍스처링: Wonder 3D Lite 또는 Advanced 선택, 호환되는 드래프트에서 Trellis 2.0 사용",
+      "Image-to-3D 입력에 AI 이미지 향상 적용",
+      "Unreal Engine 프로젝트를 5.7.4로 업그레이드"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hugging-face-2026-10-19-1",
+    "service": "hugging-face",
+    "date": "2026.10.19",
+    "kind": "연동",
+    "title": "Transformers·Diffusers에서 AWS Trainium 네이티브 지원",
+    "summary": "TorchNeuron으로 AWS Trainium이 PyTorch의 기본 장치처럼 동작해서, Transformers와 Diffusers 같은 Hugging Face 라이브러리를 그대로 쓸 수 있어요. 공개 베타는 10월 20일부터 시작해요.",
+    "details": [
+      "TorchNeuron은 eager 모드, torch.compile, FSDP, TP 등 PyTorch 분산 API를 지원해요",
+      "Transformers, Diffusers, Accelerate, PEFT, TRL이 Trainium에서 직접 실행돼요",
+      "10월 20일부터 pip install torch-neuronx로 설치할 수 있어요"
+    ],
+    "url": "https://huggingface.co/blog/hf-torchneuron",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-10-19-1",
+    "service": "krea",
+    "date": "2026.10.19",
+    "kind": "API",
+    "title": "Krea 3 API 일반 공개와 MCP 비용 미리 확인",
+    "summary": "모든 워크스페이스에서 Krea 3 API를 호출할 수 있게 되었어요. MCP 생성 도구에서 preflight를 켜면 작업을 제출하지 않고 비용 견적과 잔액을 확인할 수 있어요.",
+    "details": [
+      "fast와 high 사고 모드는 베타 접근 없이 사용할 수 있어요",
+      "preflight 응답에 mode, compute_units, affordable 등이 포함돼요",
+      "코드 예제는 KREA_API_KEY 환경 변수에서 토큰을 읽어요"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-19-2026",
+    "source": "notice"
+  }
+]

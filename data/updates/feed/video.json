@@ -25,6 +25,20 @@
     "source": "dev"
   },
   {
+    "id": "runway-2026-10-15-1",
+    "service": "runway",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Runway MCP에 Mirelo SFX 2.0과 BiRefNet v2 추가",
+    "summary": "Runway MCP에서 Mirelo SFX 2.0으로 클립에 맞는 효과음 트랙을 만들고, BiRefNet v2로 배경을 자동 제거할 수 있게 되었어요.",
+    "details": [
+      "Mirelo SFX 2.0: 클립과 설명으로 발걸음, 환경음 같은 별도 오디오 트랙 생성",
+      "BiRefNet v2: 전경을 자동으로 인식해 배경 제거, 제품 사진과 에셋 준비에 활용"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-10-15-1",
     "service": "heygen",
     "date": "2026.10.15",
@@ -37,6 +51,19 @@
     ],
     "url": "https://docs.heygen.com/changelog#instant-voices-from-an-image",
     "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-14-1",
+    "service": "runway",
+    "date": "2026.10.14",
+    "kind": "연동",
+    "title": "Runway MCP에 Fish Audio Drama 3 추가",
+    "summary": "Runway MCP에서 Fish Audio Drama 3로 대본을 감정이 살아있는 내레이션으로 바꿀 수 있게 되었어요.",
+    "details": [
+      "7개 음성과 속삭임, 웃음 등 연기 지시를 지원해요"
+    ],
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
   },
   {
     "id": "heygen-2026-10-14-2",

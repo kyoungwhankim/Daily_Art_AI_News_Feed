@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 471,
-      "latest": "2026.10.17",
+      "count": 472,
+      "latest": "2026.10.19",
       "file": "updates/feed/image.json",
-      "rev": "46d363a0d7"
+      "rev": "7c426e831e"
     },
     "video": {
-      "count": 952,
+      "count": 954,
       "latest": "2026.10.17",
       "file": "updates/feed/video.json",
-      "rev": "4b0a199252"
+      "rev": "52ab1a109e"
     },
     "3d": {
       "count": 182,
@@ -25,10 +25,10 @@
       "rev": "2878608754"
     },
     "motion": {
-      "count": 162,
-      "latest": "2026.10.08",
+      "count": 164,
+      "latest": "2026.10.19",
       "file": "updates/feed/motion.json",
-      "rev": "5db49dd05e"
+      "rev": "499cf5cf04"
     },
     "audio": {
       "count": 355,
@@ -37,10 +37,10 @@
       "rev": "e65cbc13b2"
     },
     "tools": {
-      "count": 1012,
-      "latest": "2026.10.15",
+      "count": 1014,
+      "latest": "2026.10.19",
       "file": "updates/feed/tools.json",
-      "rev": "62965b4730"
+      "rev": "14cc99a90b"
     }
   },
   "services": {
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 50,
+      "count": 51,
       "first": "2025.03.26",
-      "latest": "2026.10.17"
+      "latest": "2026.10.19"
     },
     "recraft": {
       "count": 41,
@@ -130,9 +130,9 @@
       "latest": "2026.09.02"
     },
     "runway": {
-      "count": 187,
+      "count": 189,
       "first": "2023.02.01",
-      "latest": "2026.10.13"
+      "latest": "2026.10.15"
     },
     "dream-machine": {
       "count": 29,
@@ -235,9 +235,9 @@
       "latest": "2026.10.08"
     },
     "flow-studio": {
-      "count": 34,
+      "count": 36,
       "first": "2023.09.14",
-      "latest": "2026.10.01"
+      "latest": "2026.10.19"
     },
     "elevenlabs": {
       "count": 206,
@@ -280,9 +280,9 @@
       "latest": "2026.09.27"
     },
     "unity-ai": {
-      "count": 38,
+      "count": 39,
       "first": "2023.11.16",
-      "latest": "2026.10.01"
+      "latest": "2026.10.19"
     },
     "nvidia-studio": {
       "count": 47,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 63,
+      "count": 64,
       "first": "2025.05.21",
-      "latest": "2026.10.15"
+      "latest": "2026.10.19"
     },
     "fal.ai": {
       "count": 169,
