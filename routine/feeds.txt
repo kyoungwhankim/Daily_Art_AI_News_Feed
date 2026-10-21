@@ -1,0 +1,73 @@
+# 출처별 피드 주소 — scripts/scan_feeds.py가 읽는다 (2026-10-14 확인, 2026-10-21 정리)
+# 형식: <routine/sources.txt의 출처 이름>  <피드 주소>  [ai]
+#   ai  = AI 전문 출처라 모든 글을 후보로 둔다. 표시가 없으면 제목·요약에 AI 관련 단어가 있는 글만 후보로 둔다.
+# 피드가 없는 출처는 여기 없고, 루틴 지침 SOURCE ACCESS NOTES의 방법으로 직접 확인한다.
+
+# 공통
+therundown.ai              https://therundown.ai/feed/                                   ai
+bensbites.com              https://bensbites.com/feed                                    ai
+theneurondaily.com         https://rss.beehiiv.com/feeds/N4eCstxvgX.xml                  ai
+marktechpost.com           https://www.marktechpost.com/feed/                            ai
+creativebloq.com           https://www.creativebloq.com/feeds.xml
+openai.com/news            https://openai.com/news/rss.xml                               ai
+developers.openai.com/blog https://developers.openai.com/rss.xml                         ai
+deepmind.google/blog       https://deepmind.google/blog/feed                             ai
+blog.google/technology/ai  https://blog.google/technology/ai/rss                         ai
+huggingface.co/blog        https://huggingface.co/blog/feed.xml                          ai
+towardsdatascience.com     https://towardsdatascience.com/feed                           ai
+theverge.com               https://www.theverge.com/rss/ai-artificial-intelligence/index.xml  ai
+
+# 게임 제작 · 아트
+80.lv                      https://80.lv/feed
+gamedeveloper.com          https://www.gamedeveloper.com/rss.xml
+unrealengine.com/blog      https://www.unrealengine.com/rss.xml
+unity.com/blog             https://unity.com/blog/feed
+blogs.nvidia.com           https://blogs.nvidia.com/feed/
+stability.ai/news          https://stability.ai/news-updates?format=rss                  ai
+elevenlabs.io/blog         https://elevenlabs.io/blog/rss.xml                            ai
+fxguide.com                https://www.fxguide.com/feed
+beforesandafters.com       https://beforesandafters.com/feed/
+gameworldobserver.com      https://gameworldobserver.com/feed
+techcrunch.com             https://techcrunch.com/feed/
+arstechnica.com            https://arstechnica.com/feed
+wired.com                  https://www.wired.com/feed/rss
+cartoonbrew.com            https://www.cartoonbrew.com/feed
+musictech.com              https://musictech.com/feed
+soundonsound.com           https://www.soundonsound.com/rss.xml
+nofilmschool.com           https://nofilmschool.com/feeds/feed.rss
+thenextweb.com             https://thenextweb.com/feed
+
+# 스튜디오 · 업계
+gamesindustry.biz          https://www.gamesindustry.biz/feed
+pocketgamer.biz            https://www.pocketgamer.biz/rss
+kotaku.com                 https://kotaku.com/feed
+polygon.com                https://www.polygon.com/feed
+ign.com                    https://www.ign.com/rss/v2/articles/feed
+eurogamer.net              https://www.eurogamer.net/feed
+rockpapershotgun.com       https://www.rockpapershotgun.com/feed
+pcgamer.com                https://www.pcgamer.com/feeds.xml
+gamesradar.com             https://www.gamesradar.com/feeds.xml
+mobilegamer.biz            https://mobilegamer.biz/feed/
+gamesmarkt.de              https://www.gamesmarket.global/rss/
+afjv.com                   https://afjv.com/rss.xml
+
+# 한국
+gamemeca.com               https://www.gamemeca.com/rss.php
+inven.co.kr                https://www.inven.co.kr/webzine/news/rss.php
+game.donga.com             https://game.donga.com/feeds/rss/
+zdnet.co.kr                https://feeds.feedburner.com/zdkorea
+aitimes.com                https://www.aitimes.com/rss/allArticle.xml                    ai
+
+# 일본
+4gamer.net                 https://www.4gamer.net/rss/index.xml
+automaton-media.com        https://automaton-media.com/feed/
+gamebusiness.jp            https://www.gamebusiness.jp/rss20/index.rdf
+cgworld.jp                 https://cgworld.jp/atom.xml
+itmedia.co.jp/aiplus       https://rss.itmedia.co.jp/rss/2.0/aiplus.xml                  ai
+
+# 중국 · 유럽
+36kr.com                   https://www.36kr.com/feed
+technode.com               https://technode.com/feed/
+pandaily.com               https://pandaily.com/feed
+golem.de                   https://www.golem.de/rss
+heise.de                   https://www.heise.de/rss/heise-atom.xml

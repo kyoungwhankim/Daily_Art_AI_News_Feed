@@ -110,6 +110,11 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 
 출처 목록은 [`routine/sources.txt`](routine/sources.txt)에 있다. 루틴이 PHASE 1 SETUP에서
 `scripts/routine_steps.py sources`로 읽어 `/tmp/feed/whitelist.json`을 만든다. 출처를 바꾸려면 이 파일만 고친다.
+피드가 있는 출처의 피드 주소는 [`routine/feeds.txt`](routine/feeds.txt)에 있다. 루틴은 SETUP에서
+`scripts/scan_feeds.py`로 피드 전부를 한 번에 읽어(약 5초) 오늘·어제(KST) 글만 짧은 목록으로 받는다.
+AI 전문 출처가 아니면 제목·요약에 AI 관련 단어가 있는 글만 남기고, 이미 실린 주소는 뺀다.
+예전처럼 모델이 피드 원문을 하나씩 열지 않아 대화가 짧아지고 비용이 준다.
+피드가 없거나 읽기에 실패한 출처만 모델이 직접 확인한다. 출처를 추가할 때 피드가 있으면 이 파일에도 넣는다.
 
 - `[공통]` — 모든 섹션에 적용
 - `[게임 제작]`, `[글로벌 스튜디오 AI 도입]`, `[아트 전반]` — 각각 `- Primary:` / `- Broadened:` 목록
@@ -216,7 +221,7 @@ PHASE 1이 끝나면 에이전트가 끝났는지(`/tmp/updates/DONE`) 확인하
 
 ### PHASE 1 — 조사 (RESEARCH)
 
-1. **SETUP** — `routine_steps.py init`·`sources`: `/tmp/feed/` 초기화, `routine/sources.txt`를 읽어 `/tmp/feed/whitelist.json`으로 저장
+1. **SETUP** — `routine_steps.py init`·`sources`: `/tmp/feed/` 초기화, `routine/sources.txt`를 읽어 `/tmp/feed/whitelist.json`으로 저장, `scan_feeds.py`로 출처 피드를 한 번에 읽어 오늘·어제 후보 목록 출력 (`/tmp/feed/candidates.json`)
 2. **SECTION 1, 2, 3 — 뉴스 수집** — Whitelist 기반 검색, 각 기사를 curl로 페치해 og:image + 링크 + 본문 추출, `routine_steps.py digest-add`로 `/tmp/feed/digest.json`에 하나씩 저장 (형식 검사)
 3. **VERIFY DIGEST** — `routine_steps.py digest-verify`로 섹션별 수집 건수 확인
 
