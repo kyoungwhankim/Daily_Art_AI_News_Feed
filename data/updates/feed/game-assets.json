@@ -1,5 +1,33 @@
 [
   {
+    "id": "scenario-2026-10-20-1",
+    "service": "scenario",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.59.0: Blender 내보내기와 영상 색보정",
+    "summary": "Scenario 스킬 v0.59.0이 나왔어요. Blender 내보내기, 영상 색보정, 3D 업그레이드가 포함돼요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-59-0",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-10-19-1",
+    "service": "layer",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Layer 마커 편집, 스카이박스·타일·UI 킷 출시",
+    "summary": "이미지에 표시한 영역을 따라 수정하는 마커 편집과 스카이박스, 게임 타일, 9-slice UI 요소 생성이 추가됐어요. 여러 게임 엔진용으로 내보내기도 지원해요.",
+    "details": [
+      "마커(상자·타원·화살표·선·핀)로 수정 영역을 지정",
+      "Create skybox로 PNG·HDR·OpenEXR 파노라마 생성",
+      "아이소메트릭·헥스 타일을 Godot, Unity, Tiled용 타일셋으로 내보내기",
+      "버튼·패널을 늘릴 수 있는 9-slice UI 요소를 Unity, Godot, CSS용 UI 킷으로 내보내기",
+      "영상을 Lottie 또는 GIF로 내보내기",
+      "Creator 역할 추가와 Enterprise 사용량 한도 설정"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-18-1",
     "service": "scenario",
     "date": "2026.10.18",

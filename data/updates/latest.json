@@ -1,5 +1,81 @@
 [
   {
+    "id": "scenario-2026-10-20-1",
+    "service": "scenario",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.59.0: Blender 내보내기와 영상 색보정",
+    "summary": "Scenario 스킬 v0.59.0이 나왔어요. Blender 내보내기, 영상 색보정, 3D 업그레이드가 포함돼요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-59-0",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-20-1",
+    "service": "krea",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Krea Agent API와 FLUX 3 Max 영상 생성 추가",
+    "summary": "Krea Agent를 HTTP로 실행하는 Agent API와 FLUX 3 Max 영상 생성이 추가됐어요. Krea 3가 베타를 벗어나 정식 모델이 됐어요.",
+    "details": [
+      "FLUX 3 Max로 5~20초 오디오 포함 영상을 720p·1080p로 생성",
+      "Agent API로 세션 시작, 결과 대기, 후속 요청 전송",
+      "Agent가 Blender 등 연결된 데스크톱 앱을 조작",
+      "Krea 3 Ultra thinking mode를 API에 추가(Max 이상 플랜, 생성당 $0.20)",
+      "Krea CLI 브라우저 로그인 지원",
+      "Krea 3 베타 종료"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-20-2026",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-20-2",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "AnyLanguageModel 1.0 정식 출시",
+    "summary": "Apple 플랫폼 앱에서 로컬 모델과 호스팅 모델을 같은 API로 바꿔 쓸 수 있는 AnyLanguageModel 1.0이 나왔어요. swift-huggingface 1.0과 swift-xet 1.0도 함께 나왔어요.",
+    "details": [
+      "Foundation Models API와 호환되는 API 유지",
+      "swift-huggingface 1.0, swift-xet 1.0 동시 공개"
+    ],
+    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-20-1",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "TorchTPU로 Transformers·Diffusers를 TPU에서 실행",
+    "summary": "PyTorch 네이티브 백엔드인 TorchTPU가 들어와 Transformers, Diffusers, Kernels를 TPU에서 바로 실행할 수 있어요. Hub에서 모델을 고른 뒤 tpu 장치로 보내면 돼요.",
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-20-1",
+    "service": "heygen",
+    "date": "2026.10.20",
+    "kind": "API",
+    "title": "HeyGen Speech to Speech API 추가",
+    "summary": "녹음을 워크스페이스의 인스턴트 음성으로 다시 말하게 하는 Speech to Speech API가 추가됐어요. 단어와 타이밍은 그대로 유지돼요.",
+    "details": [
+      "POST /v3/models/audio/sts로 최대 300초 녹음 처리",
+      "결과는 WAV 한 개로 반환"
+    ],
+    "url": "https://docs.heygen.com/changelog#speech-to-speech",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-20-1",
+    "service": "claude",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Claude 추론 훅 Enterprise 정식 공개",
+    "summary": "추론 훅(inference hooks)이 Claude Enterprise 조직에서 베타를 벗어나 정식으로 쓸 수 있게 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026",
+    "source": "dev"
+  },
+  {
     "id": "unity-ai-2026-10-19-1",
     "service": "unity-ai",
     "date": "2026.10.19",
@@ -13,6 +89,24 @@
     ],
     "url": "https://packages.unity.com/com.unity.ai.assistant",
     "source": "dev"
+  },
+  {
+    "id": "layer-2026-10-19-1",
+    "service": "layer",
+    "date": "2026.10.19",
+    "kind": "기능",
+    "title": "Layer 마커 편집, 스카이박스·타일·UI 킷 출시",
+    "summary": "이미지에 표시한 영역을 따라 수정하는 마커 편집과 스카이박스, 게임 타일, 9-slice UI 요소 생성이 추가됐어요. 여러 게임 엔진용으로 내보내기도 지원해요.",
+    "details": [
+      "마커(상자·타원·화살표·선·핀)로 수정 영역을 지정",
+      "Create skybox로 PNG·HDR·OpenEXR 파노라마 생성",
+      "아이소메트릭·헥스 타일을 Godot, Unity, Tiled용 타일셋으로 내보내기",
+      "버튼·패널을 늘릴 수 있는 9-slice UI 요소를 Unity, Godot, CSS용 UI 킷으로 내보내기",
+      "영상을 Lottie 또는 GIF로 내보내기",
+      "Creator 역할 추가와 Enterprise 사용량 한도 설정"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
   },
   {
     "id": "krea-2026-10-19-1",
@@ -193,6 +287,20 @@
       "Krea Agent 속도 개선과 명령 기록 표시"
     ],
     "url": "https://www.krea.ai/docs/changelog#october-16-2026",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-16-1",
+    "service": "hugging-face",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "Hub 모델·데이터셋 페이지를 작성자별로 필터링",
+    "summary": "모델과 데이터셋 페이지를 작성자 기준으로 걸러 볼 수 있게 됐어요. 사용자와 조직 프로필에서 바로 필터를 열 수 있어요.",
+    "details": [
+      "huggingface.co/models?author=… 형태로 작성자 필터 지원",
+      "필터 카드에 현재 보고 있는 작성자가 표시되고 작업·크기·라이브러리·라이선스 필터와 함께 유지"
+    ],
+    "url": "https://huggingface.co/changelog",
     "source": "notice"
   },
   {
@@ -425,105 +533,5 @@
     "summary": "Scenario에서 Gemini 3.1 Flash TTS 모델이 곧 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
     "url": "https://www.scenario.com/changelog/gemini-3-1-flash-tts-retirement",
     "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-14-2",
-    "service": "scenario",
-    "date": "2026.10.14",
-    "kind": "기능",
-    "title": "Scenario 스킬 v0.56.0 출시",
-    "summary": "Godot 등 여러 엔진과 DCC 도구에서 쓸 수 있는 워크플로와 3D 메시 편집 기능이 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-56-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-14-1",
-    "service": "scenario",
-    "date": "2026.10.14",
-    "kind": "연동",
-    "title": "Scenario for Blender 0.11.0 출시",
-    "summary": "Blender 뷰포트 안에서 오디오를 들을 수 있고, 고품질 WAV 파일로 내보낼 수 있어요.",
-    "url": "https://www.scenario.com/changelog/plugins-blender-v0-11-0",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-10-14-1",
-    "service": "runway",
-    "date": "2026.10.14",
-    "kind": "연동",
-    "title": "Runway MCP에 Fish Audio Drama 3 추가",
-    "summary": "Runway MCP에서 Fish Audio Drama 3로 대본을 감정이 살아있는 내레이션으로 바꿀 수 있게 되었어요.",
-    "details": [
-      "7개 음성과 속삭임, 웃음 등 연기 지시를 지원해요"
-    ],
-    "url": "https://runwayml.com/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "nano-banana-2026-10-14-1",
-    "service": "nano-banana",
-    "date": "2026.10.14",
-    "kind": "요금",
-    "title": "Gemini Nano Banana 2.1 Priority PayGo 정식 공개",
-    "summary": "Gemini Nano Banana 2.1의 Priority Pay-as-you-go 요금제가 글로벌 엔드포인트에서 정식(GA) 출시됐어요. 추가 요금을 내고 우선 처리를 받는 방식이에요.",
-    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_14_2026",
-    "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-14-1",
-    "service": "meshy",
-    "date": "2026.10.14",
-    "kind": "API",
-    "title": "model_url 파일 한도 100MB에서 400MB로 확대",
-    "summary": "URL로 넘기는 3D 모델 파일의 최대 크기가 400MB로 늘었어요. 100MB를 넘는 파일은 면 수와 형식 조건을 지켜야 하며, 가격은 그대로예요.",
-    "details": [
-      "Retexture, Remesh, Rigging, Convert 등에서 http/https URL 기준 400MB까지 허용",
-      "100MB 초과 GLB·glTF·FBX·OBJ는 면 1천만 개 이하(다색 출력은 800만 개)",
-      "100MB 초과 FBX는 바이너리 7.1 이상, glTF는 Draco 압축 미사용 필요",
-      "data: URI는 여전히 100MB까지"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "magnific-2026-10-14-1",
-    "service": "magnific",
-    "date": "2026.10.14",
-    "kind": "모델",
-    "title": "Nano Banana 2.1·Recraft V4 시리즈 API 추가",
-    "summary": "Google의 Nano Banana 2.1과 Recraft V4 계열(V4, V4 Pro, V4.1) 이미지 모델이 Magnific API에 추가됐어요. 디자인용 텍스트·UI 목업에 강한 모델들이에요.",
-    "details": [
-      "Nano Banana 2.1: 참조 이미지 최대 14장, 8:1 등 14가지 비율, Google 검색 그라운딩을 지원해요",
-      "Nano Banana 2.1 가격은 해상도(1K·2K·4K)로만 정해져요",
-      "Recraft V4.1: tier(mid·pro)와 variant(standard·utility)를 고를 수 있어요",
-      "V4.1 utility 모드는 다이어그램·와이어프레임 같은 UI 목업에 맞춰요"
-    ],
-    "url": "https://docs.magnific.com/changelog#october-14-2026",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-10-14-1",
-    "service": "hugging-face",
-    "date": "2026.10.14",
-    "kind": "기능",
-    "title": "Hub 텐서 뷰어 로딩 속도 개선",
-    "summary": "샤드로 나뉜 큰 모델을 열 때 텐서 뷰어가 모든 샤드 헤더를 한 번의 요청으로 가져와서 훨씬 빨라졌어요.",
-    "url": "https://huggingface.co/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-14-2",
-    "service": "heygen",
-    "date": "2026.10.14",
-    "kind": "API",
-    "title": "HeyGen API에 공개 음성 조회와 문자 타임스탬프 추가",
-    "summary": "공개 음성을 API로 조회해 바로 쓸 수 있게 됐고, 완성된 음성에 문자 단위 타임스탬프를 받을 수 있어요. 자막 제작에 특히 유용해요.",
-    "details": [
-      "GET /v3/models/audio/voices에서 type을 public으로 지정해 공개 음성 조회",
-      "완성된 음성의 캐릭터 단위 타임스탬프 제공",
-      "브랜드 용어집 규칙을 언어별로 지정(pronunciation_language, target_language)"
-    ],
-    "url": "https://docs.heygen.com/changelog#hey-gen-voice-public-voices-and-batch-timestamps",
-    "source": "dev"
   }
 ]

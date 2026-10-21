@@ -1,5 +1,39 @@
 [
   {
+    "id": "hugging-face-2026-10-20-2",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "AnyLanguageModel 1.0 정식 출시",
+    "summary": "Apple 플랫폼 앱에서 로컬 모델과 호스팅 모델을 같은 API로 바꿔 쓸 수 있는 AnyLanguageModel 1.0이 나왔어요. swift-huggingface 1.0과 swift-xet 1.0도 함께 나왔어요.",
+    "details": [
+      "Foundation Models API와 호환되는 API 유지",
+      "swift-huggingface 1.0, swift-xet 1.0 동시 공개"
+    ],
+    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-20-1",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "TorchTPU로 Transformers·Diffusers를 TPU에서 실행",
+    "summary": "PyTorch 네이티브 백엔드인 TorchTPU가 들어와 Transformers, Diffusers, Kernels를 TPU에서 바로 실행할 수 있어요. Hub에서 모델을 고른 뒤 tpu 장치로 보내면 돼요.",
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-20-1",
+    "service": "claude",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Claude 추론 훅 Enterprise 정식 공개",
+    "summary": "추론 훅(inference hooks)이 Claude Enterprise 조직에서 베타를 벗어나 정식으로 쓸 수 있게 됐어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026",
+    "source": "dev"
+  },
+  {
     "id": "unity-ai-2026-10-19-1",
     "service": "unity-ai",
     "date": "2026.10.19",
@@ -27,6 +61,20 @@
       "10월 20일부터 pip install torch-neuronx로 설치할 수 있어요"
     ],
     "url": "https://huggingface.co/blog/hf-torchneuron",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-16-1",
+    "service": "hugging-face",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "Hub 모델·데이터셋 페이지를 작성자별로 필터링",
+    "summary": "모델과 데이터셋 페이지를 작성자 기준으로 걸러 볼 수 있게 됐어요. 사용자와 조직 프로필에서 바로 필터를 열 수 있어요.",
+    "details": [
+      "huggingface.co/models?author=… 형태로 작성자 필터 지원",
+      "필터 카드에 현재 보고 있는 작성자가 표시되고 작업·크기·라이브러리·라이선스 필터와 함께 유지"
+    ],
+    "url": "https://huggingface.co/changelog",
     "source": "notice"
   },
   {

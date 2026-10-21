@@ -1,0 +1,16 @@
+[
+  {
+    "id": "heygen-2026-10-20-1",
+    "service": "heygen",
+    "date": "2026.10.20",
+    "kind": "API",
+    "title": "HeyGen Speech to Speech API 추가",
+    "summary": "녹음을 워크스페이스의 인스턴트 음성으로 다시 말하게 하는 Speech to Speech API가 추가됐어요. 단어와 타이밍은 그대로 유지돼요.",
+    "details": [
+      "POST /v3/models/audio/sts로 최대 300초 녹음 처리",
+      "결과는 WAV 한 개로 반환"
+    ],
+    "url": "https://docs.heygen.com/changelog#speech-to-speech",
+    "source": "dev"
+  }
+]

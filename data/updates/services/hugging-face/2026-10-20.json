@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hugging-face-2026-10-20-1",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "TorchTPU로 Transformers·Diffusers를 TPU에서 실행",
+    "summary": "PyTorch 네이티브 백엔드인 TorchTPU가 들어와 Transformers, Diffusers, Kernels를 TPU에서 바로 실행할 수 있어요. Hub에서 모델을 고른 뒤 tpu 장치로 보내면 돼요.",
+    "url": "https://huggingface.co/blog/hf-torchtpu",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-10-20-2",
+    "service": "hugging-face",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "AnyLanguageModel 1.0 정식 출시",
+    "summary": "Apple 플랫폼 앱에서 로컬 모델과 호스팅 모델을 같은 API로 바꿔 쓸 수 있는 AnyLanguageModel 1.0이 나왔어요. swift-huggingface 1.0과 swift-xet 1.0도 함께 나왔어요.",
+    "details": [
+      "Foundation Models API와 호환되는 API 유지",
+      "swift-huggingface 1.0, swift-xet 1.0 동시 공개"
+    ],
+    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+    "source": "notice"
+  }
+]

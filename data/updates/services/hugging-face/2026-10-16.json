@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hugging-face-2026-10-16-1",
+    "service": "hugging-face",
+    "date": "2026.10.16",
+    "kind": "기능",
+    "title": "Hub 모델·데이터셋 페이지를 작성자별로 필터링",
+    "summary": "모델과 데이터셋 페이지를 작성자 기준으로 걸러 볼 수 있게 됐어요. 사용자와 조직 프로필에서 바로 필터를 열 수 있어요.",
+    "details": [
+      "huggingface.co/models?author=… 형태로 작성자 필터 지원",
+      "필터 카드에 현재 보고 있는 작성자가 표시되고 작업·크기·라이브러리·라이선스 필터와 함께 유지"
+    ],
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  }
+]

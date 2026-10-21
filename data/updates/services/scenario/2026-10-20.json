@@ -1,0 +1,12 @@
+[
+  {
+    "id": "scenario-2026-10-20-1",
+    "service": "scenario",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Scenario 스킬 v0.59.0: Blender 내보내기와 영상 색보정",
+    "summary": "Scenario 스킬 v0.59.0이 나왔어요. Blender 내보내기, 영상 색보정, 3D 업그레이드가 포함돼요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-59-0",
+    "source": "notice"
+  }
+]

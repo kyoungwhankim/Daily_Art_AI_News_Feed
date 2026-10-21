@@ -1,0 +1,20 @@
+[
+  {
+    "id": "krea-2026-10-20-1",
+    "service": "krea",
+    "date": "2026.10.20",
+    "kind": "기능",
+    "title": "Krea Agent API와 FLUX 3 Max 영상 생성 추가",
+    "summary": "Krea Agent를 HTTP로 실행하는 Agent API와 FLUX 3 Max 영상 생성이 추가됐어요. Krea 3가 베타를 벗어나 정식 모델이 됐어요.",
+    "details": [
+      "FLUX 3 Max로 5~20초 오디오 포함 영상을 720p·1080p로 생성",
+      "Agent API로 세션 시작, 결과 대기, 후속 요청 전송",
+      "Agent가 Blender 등 연결된 데스크톱 앱을 조작",
+      "Krea 3 Ultra thinking mode를 API에 추가(Max 이상 플랜, 생성당 $0.20)",
+      "Krea CLI 브라우저 로그인 지원",
+      "Krea 3 베타 종료"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-20-2026",
+    "source": "dev"
+  }
+]
