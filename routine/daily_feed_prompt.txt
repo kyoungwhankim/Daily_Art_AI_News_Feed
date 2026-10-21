@@ -72,7 +72,7 @@ mandatory exactly as written. They do not change any condition of the steps.
       exactly as USING THE WHITELIST describes. Before moving to the next
       section, print one line listing which sources you checked.
 
-  R3. PHASE 1 STEP A uses scripts/peek_article.py (SECTION 1) —
+  R3. PHASE 1 STEP A (every section) uses scripts/peek_article.py —
       not scripts/fetch_article.py. PHASE 2 STEP 3 uses
       scripts/fetch_article.py — run it again for EVERY digest article, even
       if PHASE 1 already fetched the same URL.
@@ -167,7 +167,7 @@ For each section below, read the corresponding entry from /tmp/feed/whitelist.js
   Section 2 — AI 도입                  → whitelist["industry"]
   Section 3 — 아트 전반 AI 소식         → whitelist["art"]
 
-Each entry has two source lists:
+Each section uses three source lists:
   - whitelist["common"]                → applies to every section
   - whitelist[<section>]["primary"]    → preferred for that section
   - whitelist[<section>]["broadened"]  → also check when primary does not fill the TARGET
@@ -348,7 +348,7 @@ Search for news about how game studios — large or indie — are adopting gener
 in their art production workflows: studio announcements, policy decisions, team
 restructuring, published case studies, developer interviews, real-world adoption.
 
-RECENCY RULE: Only include articles published within the last 24 hours.
+RECENCY RULE: Same as Section 1 — the stated publication date is today or yesterday in KST.
 TARGET: up to 20 articles. If fewer than 20 exist today, collect however many are
 available — even 1 or 2 is fine. Do NOT include older articles to pad the count.
 
@@ -369,7 +369,7 @@ image generation, video generation, movie production, 3D mesh generation, textur
 generation, music generation, audio generation, AI tools for film, animation, music,
 or other creative industries.
 
-RECENCY RULE: Only include articles published within the last 24 hours.
+RECENCY RULE: Same as Section 1 — the stated publication date is today or yesterday in KST.
 TARGET: up to 20 articles. If fewer than 20 exist today, collect however many are
 available — even 1 or 2 is fine. Do NOT include older articles to pad the count.
 
@@ -533,6 +533,9 @@ output is shared by both the body and image field mappings in STEP 4 — do
 not run it again later.
 
   python3 scripts/fetch_article.py "ARTICLE_URL"
+
+Do not trim its output (no head / sed / tail): the PRE-FLIGHT CHECK needs the
+OG_IMAGE: and ---ARTICLE_TEXT--- lines, and a trimmed run means fetching again.
 
 The script prints these lines (Routine depends on this exact format):
 

@@ -82,7 +82,7 @@ def cmd_init(_):
     except FileNotFoundError:
         pass
     save(DIGEST, [])
-    print('Initialized.')
+    print('Initialized: empty digest.')
 
 
 def parse_sources():
@@ -169,7 +169,7 @@ def cmd_publish_init(_):
     open(os.path.join(FEED, 'PUBLISH_PHASE'), 'w').close()
     save(ARTICLES, [])
     print('PHASE 2 started — context compaction is now blocked.')
-    print('Initialized.')
+    print('Initialized: empty articles list.')
 
 
 def cmd_digest_list(_):
