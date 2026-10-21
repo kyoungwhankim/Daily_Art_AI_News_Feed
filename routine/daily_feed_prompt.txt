@@ -167,10 +167,14 @@ python3 scripts/scan_feeds.py
 It reads all feeds outside this conversation and prints only items dated today or
 yesterday (KST), grouped by source: "date | title | url | first words of the summary".
 URLs already published on the site are removed. Feeds of non-AI outlets marked
-"(AI-related only)" show only items whose title or summary mentions AI. The full list
-is saved to /tmp/feed/candidates.json. Use this output for all three sections — do
-NOT curl those feeds again. Its last lines name feeds that failed, are stale or have
-no dates: check those sources by hand like the NO FEED sources below.
+"(AI-related only)" show only items whose title or summary mentions AI. Each source shows
+at most 12 items; "12 of 45" plus a "(more: ...)" line means run that command to see the
+rest. Use this output for all three sections — do NOT curl those feeds again.
+Its last lines:
+  "Checked, nothing new"   — feed sources read with nothing for today. They count as
+                             checked; list them so in the R2 checked-sources line.
+  "Feeds to check by hand" — feeds that failed, are stale or have no dates: check those
+                             sources by hand like the NO FEED sources below.
 The dates in the scan are the feed's dates; STEP A still confirms each article's
 date from the page itself.
 
@@ -228,17 +232,19 @@ To see one feed source's items without the AI filter (e.g. an AI story with a va
 run `python3 scripts/scan_feeds.py --source kotaku.com --all` — never curl a raw feed.
 
 NO FEED — the list page shows dates that curl can read (curl the page, grep for today's date):
-  cgchannel.com (homepage; its /feed/ is stuck in 2024 — do not use it) · runway.com/news
-  · meshy.ai/blog · lumalabs.ai/blog · suno.com/blog · huggingface.co/papers (research papers —
-  use only clear creative-tool results) · famitsu.com (homepage, dates as 2026年10月14日)
+  runway.com/news · suno.com/blog · huggingface.co/papers (research papers — use only clear
+  creative-tool results; a paper counts as dated the day it appears on the daily papers page)
+  · famitsu.com (homepage, dates as 2026年10月14日)
   · gdconf.com/news · news.adobe.com (homepage; may lag — also run `site:news.adobe.com` search)
 
 NO FEED, NO READABLE DATES — WebFetch the page, then `site:` search if that fails:
-  sidefx.com/news · midjourney.com/updates · developers.openai.com/blog (feed above works)
+  sidefx.com/news · midjourney.com/updates · developers.openai.com/blog (its feed is stale)
+  · cgchannel.com (homepage has no article dates; its /feed/ is stuck in 2024 — do not use it)
+  · meshy.ai/blog · lumalabs.ai/blog
 
 BLOCKED for scripts — use `site:` search only:
   venturebeat.com (429 rate limit; wait once and retry, then `site:venturebeat.com`)
-  · apnews.com (403) · autodesk.com/blogs (403) · openai.com pages (403 — the news feed works)
+  · apnews.com (403, and WebSearch may refuse it — then mark it unreachable) · autodesk.com/blogs (403) · openai.com pages (403 — the news feed works)
 
 A source that cannot be read at all today counts as checked: list it as "unreachable" in the
 checked-sources line instead of skipping silently. A source with no item from today / yesterday

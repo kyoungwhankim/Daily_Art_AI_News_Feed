@@ -43,7 +43,7 @@ AI_LONG = re.compile(
 
 
 def is_ai(item):
-    text = item['title'] + ' ' + item['desc'][:200]    # 요약 끝까지 보면 관련 없는 글이 많이 걸린다
+    text = item['title'] + ' ' + item['desc'][:120]    # 요약 끝까지 보면 관련 없는 글이 많이 걸린다
     return bool(AI_SHORT.search(text) or AI_LONG.search(text))
 
 
@@ -174,6 +174,9 @@ def published_urls():
 
 
 def main():
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     arg = lambda k, d: sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
     days = int(arg('--days', 2))
     only = arg('--source', None)
@@ -187,7 +190,7 @@ def main():
     with ThreadPoolExecutor(12) as ex:
         results = list(ex.map(scan, feeds))
 
-    out, problems, total = [], [], 0
+    out, problems, quiet, total = [], [], [], 0
     print(f'Feed scan: {len(feeds)} feeds, items dated {since:%Y-%m-%d} ~ {now:%Y-%m-%d} (KST)')
     print('Format: date | title | url | first words of the summary. Already-published URLs are removed.\n')
     for feed, items, err in results:
@@ -206,10 +209,16 @@ def main():
             latest = max(i['date'] for i in dated)
             if now - latest > timedelta(days=7):
                 problems.append(f"{feed['source']}: stale feed (latest item {latest:%Y-%m-%d})")
+            else:
+                quiet.append(feed['source'])
             continue
         keep = [i for i in recent if normalize_url(i['url']) not in seen and (feed['ai'] or no_filter or is_ai(i))]
         keep.sort(key=lambda i: i['date'], reverse=True)
+        for i in keep:             # 파일에는 잘리지 않은 전체 목록을 남긴다
+            out.append({'source': feed['source'], 'date': i['date'].isoformat(), 'title': i['title'],
+                        'url': i['url'], 'desc': i['desc'][:400]})
         if not keep:
+            quiet.append(feed['source'])
             continue
         shown = keep if only else keep[:PER_SOURCE]
         total += len(shown)
@@ -218,18 +227,21 @@ def main():
         for i in shown:
             desc = i['desc'][:DESC_LEN] + ('…' if len(i['desc']) > DESC_LEN else '')
             print(f"- {i['date']:%m-%d} | {i['title']} | {i['url']}" + (f' | {desc}' if desc else ''))
-            out.append({'source': feed['source'], 'date': i['date'].isoformat(), 'title': i['title'],
-                        'url': i['url'], 'desc': i['desc'][:400]})
+        if len(keep) > len(shown):
+            print(f"  (more: python3 scripts/scan_feeds.py --source {feed['source']})")
         print()
 
     if only:                       # 한 출처만 본 경우 전체 목록 파일은 덮어쓰지 않는다
-        print(f'Feed scan done: {total} items.' + (' ' + problems[0] if problems else ''))
+        print(f'Feed scan done: {total} items.' + (' ' + problems[0] if problems else '')
+              + (' Checked, nothing new.' if quiet else ''))
         return
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
-    print(f'Feed scan done: {total} candidates from {len(feeds) - len(problems)} readable feeds '
-          f'(saved to {OUT}).')
+    print(f'Feed scan done: {total} candidates shown from {len(feeds) - len(problems)} readable feeds '
+          f'({len(out)} in {OUT}).')
+    if quiet:
+        print('Checked, nothing new (no new item, or none about AI): ' + ', '.join(quiet))
     if problems:
         print('Feeds to check by hand (open the site the way SOURCE ACCESS NOTES says):')
         for p in problems:
