@@ -1,0 +1,43 @@
+# 루틴 기사 출처 목록 (whitelist). 루틴은 scripts/routine_steps.py sources 로 읽는다.
+# [섹션] 아래에 '- Primary:' / '- Broadened:' 목록. [공통]은 쉼표로 나열한 한 목록.
+# 출처를 바꾸려면 이 파일만 고친다. 읽는 방법·피드 주소는 routine/daily_feed_prompt.txt SOURCE ACCESS NOTES.
+[공통]
+therundown.ai, bensbites.com, theneurondaily.com, marktechpost.com, creativebloq.com, openai.com/news, developers.openai.com/blog, deepmind.google/blog, blog.google/technology/ai, runway.com/news, huggingface.co/blog, towardsdatascience.com, theverge.com
+[게임 제작]
+- Primary:   80.lv, gamedeveloper.com, unrealengine.com/blog, unity.com/blog,
+             venturebeat.com/games, blogs.nvidia.com, stability.ai/news,
+             runway.com/news, news.adobe.com, midjourney.com, meshy.ai/blog,
+             lumalabs.ai, elevenlabs.io/blog, cgchannel.com, fxguide.com,
+             beforesandafters.com, sidefx.com/news, autodesk.com/blogs,
+             gamemeca.com, inven.co.kr, cgworld.jp, 4gamer.net,
+             automaton-media.com
+- Broadened: techcrunch.com, theverge.com, arstechnica.com, wired.com,
+             game.donga.com, zdnet.co.kr, famitsu.com, gamebusiness.jp,
+             gameworldobserver.com, golem.de, heise.de,
+             towardsdatascience.com, huggingface.co/blog, huggingface.co/papers,
+             any official company blog or press release from an AI tool maker
+[글로벌 스튜디오 AI 도입]
+- Primary:   gamedeveloper.com, gdconf.com, gamesindustry.biz, pocketgamer.biz,
+             venturebeat.com/games, kotaku.com, polygon.com, ign.com,
+             unrealengine.com/blog, unity.com/blog, 80.lv, eurogamer.net,
+             rockpapershotgun.com, pcgamer.com, gamesradar.com,
+             gamemeca.com, inven.co.kr, zdnet.co.kr,
+             automaton-media.com, gamebusiness.jp, 4gamer.net,
+             gameworldobserver.com, mobilegamer.biz, gamesmarkt.de, afjv.com
+- Broadened: techcrunch.com, theverge.com, apnews.com,
+             game.donga.com, famitsu.com, 36kr.com, technode.com, pandaily.com,
+             heise.de, golem.de,
+             wired.com, arstechnica.com, any studio official blog or press release
+[아트 전반]
+- Primary:   venturebeat.com/ai, theverge.com, techcrunch.com, arstechnica.com,
+             huggingface.co/blog, openai.com/news, deepmind.google/blog,
+             news.adobe.com, blogs.nvidia.com, runway.com/news,
+             stability.ai/news, elevenlabs.io/blog, suno.com/blog,
+             fxguide.com, beforesandafters.com, cgchannel.com,
+             musictech.com, soundonsound.com, nofilmschool.com,
+             aitimes.com, cgworld.jp, itmedia.co.jp/aiplus, cartoonbrew.com,
+             heise.de, technode.com
+- Broadened: wired.com, apnews.com, thenextweb.com,
+             zdnet.co.kr, 36kr.com, pandaily.com, golem.de,
+             towardsdatascience.com, huggingface.co/papers,
+             any official AI lab blog or product announcement page
