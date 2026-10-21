@@ -65,7 +65,7 @@ main에 push되면 `.github/workflows/deploy.yml`이 실행된다: `validate_dat
 - 사이트는 탭 안에서 **6개 이상** 기사에 붙은 키워드만 칩으로 보여준다 (5개 이하는 지엽적이라 숨김 — 기사가 쌓이면 자동으로 나타남).
 - 모든 기사에 `keywords` 배열이 있다 (해당 없음이면 `[]` — `전체`에서만 보인다).
 - **매일 루틴:**
-  - PHASE 2 SETUP Step 3에서 레포의 목록을 읽어 출력하고, STEP 4에서 기사마다 그 탭의 목록 안에서 키워드를 고른다.
+  - PHASE 2 SETUP Step 3(`routine_steps.py keywords`)에서 레포의 목록을 읽어 출력하고, STEP 4에서 기사마다 그 탭의 목록 안에서 키워드를 고른다.
   - 목록에 없는 회사·프로그램·서비스·제작 대상(AI 도입 뉴스는 주제 포함)이 기사의 주된 대상이고 앞으로도 반복될 일반적인 대상이면 `scripts/add_keyword.py`로 추가한다. 한 번 실행에 최대 2개, 기존 키워드의 변형(PlayStation → Sony 등)은 추가하지 않는다.
   - `add_keyword.py`는 목록에 추가하고, 같은 탭의 지난 기사 중 제목·요약에 그 이름이 있는 기사에도 붙이며, 규칙을 `scripts/keyword_rules.json`에 남긴다.
   - 저장 스크립트가 목록에 없는 값을 `REJECTED`로 막고, `update_articles.py`는 목록에 없는 값을 버리며, `validate_data.py`가 최종 확인한다.
@@ -108,9 +108,8 @@ Claude Routine을 사용해서 아트 전용 데일리 뉴스 피드를 만든�
 
 ### Whitelist
 
-출처 목록은 루틴 프롬프트 안의 `WHITELIST_ARTICLES` 블록에 들어 있다
-([`routine/daily_feed_prompt.txt`](routine/daily_feed_prompt.txt) PHASE 1 → Step 2).
-출처를 바꾸려면 루틴 프롬프트의 이 블록을 수정하고, 이 레포의 사본도 같이 갱신한다.
+출처 목록은 [`routine/sources.txt`](routine/sources.txt)에 있다. 루틴이 PHASE 1 SETUP에서
+`scripts/routine_steps.py sources`로 읽어 `/tmp/feed/whitelist.json`을 만든다. 출처를 바꾸려면 이 파일만 고친다.
 
 - `[공통]` — 모든 섹션에 적용
 - `[게임 제작]`, `[글로벌 스튜디오 AI 도입]`, `[아트 전반]` — 각각 `- Primary:` / `- Broadened:` 목록
@@ -217,17 +216,17 @@ PHASE 1이 끝나면 에이전트가 끝났는지(`/tmp/updates/DONE`) 확인하
 
 ### PHASE 1 — 조사 (RESEARCH)
 
-1. **SETUP** — `/tmp/feed/` 초기화, 프롬프트에 내장된 Whitelist를 파싱해 `/tmp/feed/whitelist.json`으로 저장
-2. **SECTION 1, 2, 3 — 뉴스 수집** — Whitelist 기반 검색, 각 기사를 curl로 페치해 og:image + 링크 + 본문 추출, JSON 객체로 `/tmp/feed/digest.json`에 누적 저장
-3. **VERIFY DIGEST** — 섹션별 수집 건수 확인
+1. **SETUP** — `routine_steps.py init`·`sources`: `/tmp/feed/` 초기화, `routine/sources.txt`를 읽어 `/tmp/feed/whitelist.json`으로 저장
+2. **SECTION 1, 2, 3 — 뉴스 수집** — Whitelist 기반 검색, 각 기사를 curl로 페치해 og:image + 링크 + 본문 추출, `routine_steps.py digest-add`로 `/tmp/feed/digest.json`에 하나씩 저장 (형식 검사)
+3. **VERIFY DIGEST** — `routine_steps.py digest-verify`로 섹션별 수집 건수 확인
 
 ### PHASE 2 — 게시 (PUBLISH)
 
-1. **Step 0** — `/tmp/feed/PUBLISH_PHASE` 표시 파일 생성 (이후 컨텍스트 압축 차단, 아래 참고)
-2. **SETUP** — 레포를 `/home/user/Daily_Art_AI_News_Feed`에 준비하고 `origin/main`으로 맞춤, 키워드 목록(`data/keywords.json`)을 읽어 `/tmp/feed/keywords.json`으로 저장
+1. **Step 0/1** — `routine_steps.py publish-init`: `/tmp/feed/PUBLISH_PHASE` 표시 파일 생성 (이후 컨텍스트 압축 차단, 아래 참고)
+2. **SETUP** — 레포를 `/home/user/Daily_Art_AI_News_Feed`에 준비하고 `origin/main`으로 맞춤, `routine_steps.py keywords`로 키워드 목록(`data/keywords.json`)을 읽어 `/tmp/feed/keywords.json`으로 저장
 3. **STEP 1~2** — `digest.json`을 읽어 섹션 → 탭(`games`/`industry`/`art`)으로 매핑. digest에 있는 기사만, 순서대로 처리 (웹 검색 금지)
 4. **STEP 3** — 기사마다 `scripts/fetch_article.py`를 정확히 한 번 실행 (실패 시 WebFetch 1회)
-5. **STEP 4** — 필드 매핑 후 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체, 목록 안에서 keywords 선택·필요 시 키워드 추가 등)
+5. **STEP 4** — 필드 매핑 후 `routine_steps.py article-add`로 `/tmp/feed/articles.json`에 저장 (본문 600–800자, 이미지 4단계 대체, 목록 안에서 keywords 선택·필요 시 키워드 추가 등)
 6. **UPDATE THE FEED DATA** — `scripts/update_articles.py`로 URL 중복 제거 후 오늘 날짜 파일에 추가, `scripts/validate_data.py`로 검사
 7. **MERGE SERVICE UPDATES** — 업데이트 에이전트 결과를 `scripts/service_updates.py merge`로 `data/updates/`에 합치고 다시 검사 (뉴스가 없는 날도 실행)
 8. **COMMIT AND PUSH** — `scripts/push_to_main.py`로 `main`에 직접 push (새 브랜치·PR 금지)
