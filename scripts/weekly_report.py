@@ -30,10 +30,10 @@ INDEX = os.path.join(REPORTS_DIR, 'index.json')
 WORK = '/tmp/report'
 DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
-# 1분 읽기 분량 — 글자 수 제한 (한국어 기준)
-LIMITS = {'title': 45, 'lede': 150, 'item': 160}
-COUNTS = {'must_know': (2, 4), 'implications': (2, 4)}
-TOTAL_MAX = 950          # 제목 제외 본문 전체 글자 수
+# 분량 — 글자 수 제한 (한국어 기준). 시사점이 리포트의 중심이라 더 길고 많다
+LIMITS = {'title': 45, 'lede': 150, 'item': 160, 'implication': 220}
+COUNTS = {'must_know': (2, 4), 'implications': (4, 8)}
+TOTAL_MAX = 2000         # 제목 제외 본문 전체 글자 수 (3분 안팎)
 REFS = (1, 8)            # 참고 기사 수
 # 말투: 합쇼체(~습니다)만, AI스러운 상투어·대시 금지 (routine/report_agent_prompt.txt READER AND TONE)
 BANNED = ['본격화', '가속화', '패러다임', '게임 체인저', '게임체인저', '혁신적', '주목할 만', '기대된다',
@@ -159,12 +159,12 @@ def check(e: dict, ctx: dict) -> list:
         for i, s in enumerate(v):
             if not isinstance(s, str) or not s.strip():
                 errs.append(f'{k}[{i}] is empty')
-            elif len(s) > LIMITS['item']:
-                errs.append(f'{k}[{i}] is {len(s)} chars (max {LIMITS["item"]})')
+            elif len(s) > (lim := LIMITS['implication' if k == 'implications' else 'item']):
+                errs.append(f'{k}[{i}] is {len(s)} chars (max {lim})')
             else:
                 total += len(s)
     if total > TOTAL_MAX:
-        errs.append(f'body is {total} chars (max {TOTAL_MAX} — a one-minute read)')
+        errs.append(f'body is {total} chars (max {TOTAL_MAX})')
     refs = e.get('refs')
     if not isinstance(refs, list) or not (REFS[0] <= len(refs) <= REFS[1]):
         errs.append(f'refs must be a list of {REFS[0]}-{REFS[1]} article ids')

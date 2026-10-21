@@ -733,11 +733,11 @@ def build_about() -> str:
         <p class="lp-note">로그인하지 않아도 <a href="{root}for/">아티스트 브리핑</a>에서 직군별 소식을 바로 볼 수 있어요.
         관심사와 저장 정보를 다루는 방식은 <a href="{root}privacy/">개인정보처리방침</a>에 적어 두었어요.</p>""", feed_mock),
         ('금주 리포트', f"""<p>매주 금요일, 그 주(토요일~금요일)에 올라온 기사를 바탕으로 직군별 리포트를 발행합니다.
-        바쁜 주에도 1분이면 내 직군에 필요한 소식을 따라갈 수 있도록 짧게 정리해요.</p>
+        바쁜 주에도 몇 분이면 내 직군에 필요한 소식과 그 의미를 따라갈 수 있도록 정리해요.</p>
         <ul class="lp-bullets">
           <li><b>직군별로 따로</b> 3D부터 UI·UX 디자이너까지 9개 직군마다 한 편씩 씁니다.</li>
           <li><b>꼭 알아야 할 것</b> 놓치면 안 되는 소식을 도구 이름과 숫자까지 구체적으로 적어요.</li>
-          <li><b>시사점</b> 그 소식이 실제 작업에 어떤 영향을 주는지 정리해요.</li>
+          <li><b>시사점</b> 작업 단계, 비용과 일정, 품질 검수, 라이선스, 팀과 역량 관점에서 그 소식이 실제 작업에 주는 영향을 분석해요.</li>
           <li><b>근거 기사</b> 모든 사실은 그 주에 실린 기사에서 가져오고, 바탕이 된 기사를 함께 밝힙니다.</li>
         </ul>
         <p class="lp-note"><a href="{root}reports/">금주 리포트 보기 →</a></p>""", report_mock),
@@ -1118,7 +1118,7 @@ def main():
     rep_index = load_json_safe(os.path.join(repo, 'data', 'reports', 'index.json')).get('reports', [])
     role_label = {r['id']: r['label'] for r in roles}
     by_id = {a['id']: a for a in articles}
-    rep_desc = '그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것과 시사점을 1분 분량으로 정리했습니다.'
+    rep_desc = '그 주에 올라온 AI 소식을 직군별로 분석합니다. 내 직군이 꼭 알아야 할 것과 작업에 주는 시사점을 정리했습니다.'
 
     def rep_list(items):
         return '<ul class="static-list">' + ''.join(
