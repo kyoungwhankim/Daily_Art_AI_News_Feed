@@ -60,14 +60,17 @@ mandatory exactly as written. They do not change any condition of the steps.
       with a stub, a shortened version, an `echo`, or a different script,
       and do not skip a block because its result "seems obvious".
       In particular, `routine_steps.py sources` (PHASE 1 SETUP) MUST run and
-      print "Whitelist loaded:" with the counts before any searching starts.
+      print "Whitelist loaded:" with the counts, and `scan_feeds.py` MUST run
+      and print "Feed scan done:", before any searching starts.
       Likewise `routine_steps.py keywords` (PHASE 2 SETUP) MUST run and print
       "Keyword list loaded:" before the first article is processed.
 
   R2. Search thoroughly, section by section (1 → 2 → 3). For each section,
       search order step 1 means checking EVERY source in whitelist["common"]
       plus that section's whitelist[...]["primary"] list for articles that
-      meet that section's RECENCY RULE — not a sample of them. Only after that may
+      meet that section's RECENCY RULE — not a sample of them. A source in
+      routine/feeds.txt is checked by reading its lines in the FEED SCAN
+      output; every other source is checked by hand (SOURCE ACCESS NOTES). Only after that may
       you decide whether step 2 (broadened) or step 3 (open web) applies,
       exactly as USING THE WHITELIST describes. Before moving to the next
       section, print one line listing which sources you checked.
@@ -157,6 +160,20 @@ python3 scripts/routine_steps.py sources
 It must print "Whitelist loaded:" with the counts. If it prints "Whitelist parsing
 failed", terminate the routine and report — do not guess a whitelist.
 
+Step 2 — FEED SCAN: read every source feed at once (routine/feeds.txt).
+
+python3 scripts/scan_feeds.py
+
+It reads all feeds outside this conversation and prints only items dated today or
+yesterday (KST), grouped by source: "date | title | url | first words of the summary".
+URLs already published on the site are removed. Feeds of non-AI outlets marked
+"(AI-related only)" show only items whose title or summary mentions AI. The full list
+is saved to /tmp/feed/candidates.json. Use this output for all three sections — do
+NOT curl those feeds again. Its last lines name feeds that failed, are stale or have
+no dates: check those sources by hand like the NO FEED sources below.
+The dates in the scan are the feed's dates; STEP A still confirms each article's
+date from the page itself.
+
 ---
 
 USING THE WHITELIST
@@ -197,38 +214,18 @@ Re-print the lists for a section any time with:
 
   python3 scripts/routine_steps.py sources games     (or industry / art)
 
-SOURCE ACCESS NOTES — how to read sources that are hard to check from the homepage.
-"Checking a source" means finding its articles from today / yesterday (KST). Use, in order:
-the RSS feed if it has one, the site's news / list page, then WebFetch of that page,
-then a WebSearch restricted to the site (e.g. `site:gamemeca.com AI`). Read feeds with
-curl and a browser User-Agent (feeds are long — grep the <item>/<entry> titles and dates):
+SOURCE ACCESS NOTES — how to check sources the FEED SCAN does not cover.
+"Checking a source" means finding its articles from today / yesterday (KST). Sources with a
+feed are in routine/feeds.txt and are covered by the FEED SCAN (PHASE 1 SETUP Step 2) —
+read their lines there. gamedeveloper.com: use only /news/, /art/, /production/ … article
+links, ignore keyword pages. For every other source use, in order: the site's news / list
+page, then WebFetch of that page, then a WebSearch restricted to the site
+(e.g. `site:gamemeca.com AI`). Fetch pages with curl and a browser User-Agent:
 
-  curl -sL --max-time 15 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126" "FEED_URL"
+  curl -sL --max-time 15 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126" "PAGE_URL"
 
-FEEDS (all checked 2026-10-14 and returning current items):
-  common   therundown.ai/feed/ · bensbites.com/feed · rss.beehiiv.com/feeds/N4eCstxvgX.xml (The Neuron)
-           · www.marktechpost.com/feed/ · creativebloq.com/feeds.xml · openai.com/news/rss.xml
-           · developers.openai.com/rss.xml (posts rarely) · deepmind.google/blog/feed
-           · blog.google/technology/ai/rss · huggingface.co/blog/feed.xml · towardsdatascience.com/feed
-           · theverge.com/rss/ai-artificial-intelligence/index.xml (all news: theverge.com/rss/index.xml)
-  games    80.lv/feed · gamedeveloper.com/rss.xml (use only /news/, /art/, /production/ … article
-           links, ignore keyword pages) · unrealengine.com/rss.xml · unity.com/blog/feed
-           · blogs.nvidia.com/feed/ · stability.ai/news-updates?format=rss · elevenlabs.io/blog/rss.xml
-           · fxguide.com/feed · beforesandafters.com/feed/ · gameworldobserver.com/feed
-           · techcrunch.com/feed/ · arstechnica.com/feed · wired.com/feed/rss
-  studios  gamesindustry.biz/feed · pocketgamer.biz/rss · kotaku.com/feed · polygon.com/feed
-           · ign.com/rss/v2/articles/feed · eurogamer.net/feed · rockpapershotgun.com/feed
-           · pcgamer.com/feeds.xml · gamesradar.com/feeds.xml · mobilegamer.biz/feed/
-           · gamesmarket.global/rss/ (gamesmarkt.de) · afjv.com/rss.xml
-  art      cartoonbrew.com/feed · musictech.com/feed · soundonsound.com/rss.xml
-           · nofilmschool.com/feeds/feed.rss · thenextweb.com/feed
-  Korea    gamemeca.com/rss.php · inven.co.kr/webzine/news/rss.php · game.donga.com/feeds/rss/
-           · feeds.feedburner.com/zdkorea (ZDNet Korea) · aitimes.com/rss/allArticle.xml
-  Japan    4gamer.net/rss/index.xml · automaton-media.com/feed/ · gamebusiness.jp/rss20/index.rdf
-           · cgworld.jp/atom.xml · rss.itmedia.co.jp/rss/2.0/aiplus.xml (ITmedia AI+)
-  China    www.36kr.com/feed (needs www.) · technode.com/feed/
-           · pandaily.com/feed
-  Europe   golem.de/rss · heise.de/rss/heise-atom.xml
+To see one feed source's items without the AI filter (e.g. an AI story with a vague title),
+run `python3 scripts/scan_feeds.py --source kotaku.com --all` — never curl a raw feed.
 
 NO FEED — the list page shows dates that curl can read (curl the page, grep for today's date):
   cgchannel.com (homepage; its /feed/ is stuck in 2024 — do not use it) · runway.com/news
