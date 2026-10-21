@@ -1086,8 +1086,8 @@ If it prints "NOT DUE", skip this section. If it prints "DUE":
 rm -rf /tmp/report && python3 scripts/weekly_report.py context
 
 Then start ONE agent with the Agent (Task) tool in the FOREGROUND (wait for it),
-on the Opus model (model: "opus" — it writes analysis for professionals and
-must not invent facts; the add script checks every report), with exactly this
+on the Sonnet model (model: "sonnet" — the add script checks length, tone,
+banned phrases and article ids of every report), with exactly this
 prompt (fill in the date):
 
   Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/report_agent_prompt.txt

@@ -2836,7 +2836,7 @@ function MyFeedView({ auth, profileState, onEdit, onSave, keywordTabs, articles,
 }
 
 /* ---------- App ---------- */
-/* ---------- 금주 리포트 (매주 금요일, 직군별 1분 리포트) ---------- */
+/* ---------- 금주 리포트 (매주 금요일, 직군별 주간 리포트) ---------- */
 // 데이터: data/reports/index.json (목록) + data/reports/YYYY-MM-DD.json (그 주 본문) — scripts/weekly_report.py
 // 주소: /reports/  /reports/<직군>/  /reports/<직군>/<날짜>/   (scripts/build_site.py의 정적 페이지와 같다)
 function reportsPath(role, date) {
@@ -2856,6 +2856,8 @@ function loadReportWeek(date) {
 }
 const repDate = d => d.replace(/-/g, '.');
 const repRange = (a, b) => `${repDate(a)} – ${b.slice(5).replace('-', '.')}`;
+// 읽는 시간: 한국어 1분에 500자 안팎으로 잡는다
+const readMin = (r) => Math.max(1, Math.round(([r.lede, ...(r.must_know || []), ...(r.implications || [])].join('').length) / 500));
 const REPORT_SECTIONS = [
   ['must_know', '꼭 알아야 할 것'],
   ['implications', '시사점'],
@@ -2894,7 +2896,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
             <header className="rp-doc-head">
               <div className="rp-kicker">
                 <span>WEEKLY REPORT</span>{list && list[0] && list[0].date === date && <span className="rp-kicker-latest"><span className="rp-latest">LATEST</span></span>}<span>{roleObj ? roleObj.label : role}</span>
-                <span>{repRange(week.from, week.to)}</span><span>1분 읽기</span>
+                <span>{repRange(week.from, week.to)}</span><span>{readMin(rep)}분 읽기</span>
               </div>
               <h1>{rep.title}</h1>
               <p className="rp-lede">{rep.lede}</p>
@@ -2941,7 +2943,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
       <header className="rp-head">
         <div className="rp-kicker"><span>WEEKLY REPORT</span><span>매주 금요일 발행</span></div>
         <h1>{roleObj ? `${roleObj.label} 리포트` : '금주 리포트'}</h1>
-        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 꼭 알아야 할 것과 시사점을 1분 분량으로 정리했습니다.</p>
+        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 내 직군이 꼭 알아야 할 것과 작업에 주는 시사점을 정리했습니다.</p>
       </header>
       <div className="rp-filter" role="tablist">
         <button type="button" className={!role ? 'on' : ''} onClick={() => onOpen(null, null)}>전체</button>
