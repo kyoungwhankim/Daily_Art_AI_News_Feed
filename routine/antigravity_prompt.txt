@@ -93,7 +93,7 @@ A3. Order of work:
     WAIT FOR THE UPDATES AGENT: run its `agent-status` commands; they print "finished".
 A4. WEEKLY REPORT (when `weekly_report.py due` prints DUE): after the
     `weekly_report.py context` step, read routine/report_agent_prompt.txt and follow it from
-    STEP 1 to FINISH yourself, then continue with `merge-report` in daily_feed_prompt.txt.
+    STEP 1 to FINISH yourself, then continue with `apply-report` in daily_feed_prompt.txt.
 A5. While doing an agent's work, that agent's own rules apply too (e.g. "do not edit files
     inside REPO, never run git" — its scripts write only to the work folders).
 A6. PHASE 2's "Do NOT spawn sub-agents" stays true: process every article yourself, one at a

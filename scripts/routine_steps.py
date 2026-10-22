@@ -33,8 +33,9 @@ digest-add / article-add 는 표준 입력으로 파이썬 딕셔너리 리터�
   python3 scripts/routine_steps.py agent-count updates                      서비스별 저장 개수
   python3 scripts/routine_steps.py agent-finish updates|free|report [--file PATH]   REPORT.txt + DONE 표시
   python3 scripts/routine_steps.py agent-status updates|free                에이전트가 끝났는지
-  python3 scripts/routine_steps.py merge-updates | commit-sources | merge-free | merge-report
-  python3 scripts/routine_steps.py restore updates|free|reports             data/<이름> 변경 되돌리기
+  python3 scripts/routine_steps.py apply-updates | save-source-state | apply-free | apply-report
+  python3 scripts/routine_steps.py undo-data updates|free|reports           data/<이름> 변경 되돌리기
+(이름에 merge·commit·restore를 쓰지 않는다 — 자동 승인 검사가 git 명령으로 오해해 막은 적이 있다)
   python3 scripts/routine_steps.py publish-end       게시 모드 끝 (PUBLISH_PHASE 삭제)
   python3 scripts/routine_steps.py push-local        로컬 git 로그인으로 main에 커밋·푸시 (토큰 없는 환경용)
 """
@@ -412,40 +413,46 @@ def done_with_entries(name):
     return os.path.exists(os.path.join(d, 'DONE')) and load(os.path.join(d, 'entries.json'), [])
 
 
-def cmd_merge_updates(_):
+def cmd_apply_updates(_):
     rc = 0
+    rejected = os.path.join(WORK['updates'], 'MERGE_REJECTED')
     if done_with_entries('updates'):
         rc = py('service_updates.py', 'merge', os.path.join(WORK['updates'], 'entries.json'))
+        if rc:      # 병합이 거부되면 출처 확인 기록도 남기지 않는다 (save-source-state가 본다)
+            open(rejected, 'w').close()
     else:
         print('No service updates to merge today.')
     rc = py('validate_data.py') or rc
     sys.exit(rc)
 
 
-def cmd_commit_sources(_):
+def cmd_save_source_state(_):
+    if os.path.exists(os.path.join(WORK['updates'], 'MERGE_REJECTED')):
+        print('Service updates were REJECTED — source state not saved (checked again tomorrow).')
+        return
     if os.path.exists(os.path.join(WORK['updates'], 'DONE')):
         sys.exit(py('detect_source_changes.py', 'commit', '--failed',
                     os.path.join(WORK['updates'], 'failed_sources.txt')))
     print('Updates work did not finish — source state not saved (checked again tomorrow).')
 
 
-def cmd_merge_free(_):
+def cmd_apply_free(_):
     if done_with_entries('free'):
         f = os.path.join(WORK['free'], 'entries.json')
         sys.exit(py('free_tools.py', 'merge', f) or py('free_tools.py', 'validate'))
     print('No free-tools results to merge today.')
 
 
-def cmd_merge_report(_):
+def cmd_apply_report(_):
     if done_with_entries('report'):
         f = os.path.join(WORK['report'], 'entries.json')
         sys.exit(py('weekly_report.py', 'merge', f) or py('weekly_report.py', 'validate'))
     print('No weekly report this week.')
 
 
-def cmd_restore(args):
+def cmd_undo_data(args):
     if not args or args[0] not in ('updates', 'free', 'reports'):
-        sys.exit('usage: restore updates|free|reports')
+        sys.exit('usage: undo-data updates|free|reports')
     path = 'data/' + args[0]
     subprocess.run(['git', 'checkout', '--', path], cwd=REPO, capture_output=True)
     subprocess.run(['git', 'clean', '-fdq', path], cwd=REPO)
@@ -501,8 +508,8 @@ if __name__ == '__main__':
             'env-check': cmd_env_check, 'today': cmd_today, 'paths': cmd_paths, 'workdir': cmd_workdir,
             'agent-init': cmd_agent_init, 'agent-note': cmd_agent_note, 'agent-count': cmd_agent_count,
             'agent-finish': cmd_agent_finish, 'agent-status': cmd_agent_status,
-            'merge-updates': cmd_merge_updates, 'commit-sources': cmd_commit_sources,
-            'merge-free': cmd_merge_free, 'merge-report': cmd_merge_report, 'restore': cmd_restore,
+            'apply-updates': cmd_apply_updates, 'save-source-state': cmd_save_source_state,
+            'apply-free': cmd_apply_free, 'apply-report': cmd_apply_report, 'undo-data': cmd_undo_data,
             'publish-end': cmd_publish_end, 'push-local': cmd_push_local}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit('usage: routine_steps.py ' + '|'.join(cmds))

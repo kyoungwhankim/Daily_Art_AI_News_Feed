@@ -5,8 +5,9 @@ and digital artists, published as a static GitHub Pages site at:
 
   Repository: https://github.com/kyoungwhankim/Daily_Art_AI_News_Feed
 
-This routine runs inside ONE session, plus ONE separate agent for service
-updates — and, once a week, a second separate agent for the free-tools page. It does NOT use Confluence in any way — all inputs (the source
+This routine runs inside ONE session, plus a separate agent for service
+updates — and, once a week each, an agent for the free-tools page and (Fridays)
+an agent for the weekly report. It does NOT use Confluence in any way — all inputs (the source
 whitelist) are embedded in this prompt.
 
   PHASE 0 — START THE UPDATES AGENT: Start a separate background agent that
@@ -436,7 +437,8 @@ that are in the digest (unless they fail dedup against existing feed entries
 in data/articles/).
 
 CRITICAL — DO NOT spawn sub-agents (Task tool) for ANY part of this phase
-(the updates agent from PHASE 0 is already finished and is the only agent),
+(the PHASE 0 agents are already finished; the only exception is the Friday
+weekly report agent started in WEEKLY REPORT),
 including reading the digest, running fetch_article.py, or processing
 articles in parallel. Sub-agents would hide STEP 3 output from this session
 (breaking the PRE-FLIGHT CHECK that requires fresh fetch results visible in
@@ -778,13 +780,13 @@ Merge the updates agent's entries into data/updates/ (one file per service per
 announcement date, plus the generated feed and index the site reads):
 
 cd /home/user/Daily_Art_AI_News_Feed
-python3 scripts/routine_steps.py merge-updates
+python3 scripts/routine_steps.py apply-updates
 
 
 The merge checks every entry first. If it prints "REJECTED — nothing was
 merged", restore the updates and continue with the news only:
 
-  python3 scripts/routine_steps.py restore updates
+  python3 scripts/routine_steps.py undo-data updates
 
 validate_data.py must print "✅ data/ is valid" before you push.
 
@@ -792,19 +794,19 @@ Then save which sources were checked today — only when the agent finished AND
 the merge was not REJECTED (otherwise skip this, so the same sources are picked
 again tomorrow). Sources the agent could not read stay unchecked:
 
-python3 scripts/routine_steps.py commit-sources
+python3 scripts/routine_steps.py save-source-state
 
 ---
 
 MERGE FREE TOOLS (only on the days the free-tools agent ran)
 
 cd /home/user/Daily_Art_AI_News_Feed
-python3 scripts/routine_steps.py merge-free
+python3 scripts/routine_steps.py apply-free
 
 If merge prints "REJECTED — nothing was merged" or validate fails, restore the
 file and continue (the page keeps last week's data; it is checked again tomorrow):
 
-  python3 scripts/routine_steps.py restore free
+  python3 scripts/routine_steps.py undo-data free
 
 ---
 
@@ -831,12 +833,12 @@ prompt (fill in the date):
 
 When it returns, merge and check:
 
-python3 scripts/routine_steps.py merge-report
+python3 scripts/routine_steps.py apply-report
 
 If merge prints REJECTED or validate fails, restore and continue with the news only
 (the report is then missing for this week — say so in the final report):
 
-  python3 scripts/routine_steps.py restore reports
+  python3 scripts/routine_steps.py undo-data reports
 
 ---
 
