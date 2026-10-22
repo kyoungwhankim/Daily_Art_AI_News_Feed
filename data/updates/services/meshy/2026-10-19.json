@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-10-19-1",
+    "service": "meshy",
+    "date": "2026.10.19",
+    "kind": "API",
+    "title": "Keychain·Fridge Magnet export_resolution 최대값 512로 변경",
+    "summary": "Keychain과 Fridge Magnet 빌드 작업의 export_resolution 최대값이 2048에서 512로 줄었어요. 512가 실제 깊이 맵 해상도라서 더 큰 값은 파일만 키우고 결과는 같아요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  }
+]

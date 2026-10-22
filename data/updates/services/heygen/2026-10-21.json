@@ -1,0 +1,12 @@
+[
+  {
+    "id": "heygen-2026-10-21-1",
+    "service": "heygen",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "HeyGen Video 길이 자동 설정 추가",
+    "summary": "API에서 duration을 auto로 지정하면 HeyGen이 프롬프트에 맞춰 5~15초 사이의 길이를 골라줘요. 대사가 자연스러운 속도에 맞춰지고, 과금은 결정된 길이 기준이에요.",
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  }
+]

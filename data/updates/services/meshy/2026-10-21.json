@@ -1,0 +1,12 @@
+[
+  {
+    "id": "meshy-2026-10-21-1",
+    "service": "meshy",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "API 작업에 X-Meshy-Metadata 헤더 추가",
+    "summary": "Studio와 Enterprise 팀은 작업을 만들 때 X-Meshy-Metadata 헤더로 직접 정한 키와 값을 붙일 수 있어요. 나중에 Usage 기록의 metadata 필드에서 다시 확인할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  }
+]

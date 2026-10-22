@@ -1,5 +1,25 @@
 [
   {
+    "id": "meshy-2026-10-21-1",
+    "service": "meshy",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "API 작업에 X-Meshy-Metadata 헤더 추가",
+    "summary": "Studio와 Enterprise 팀은 작업을 만들 때 X-Meshy-Metadata 헤더로 직접 정한 키와 값을 붙일 수 있어요. 나중에 Usage 기록의 metadata 필드에서 다시 확인할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-10-19-1",
+    "service": "meshy",
+    "date": "2026.10.19",
+    "kind": "API",
+    "title": "Keychain·Fridge Magnet export_resolution 최대값 512로 변경",
+    "summary": "Keychain과 Fridge Magnet 빌드 작업의 export_resolution 최대값이 2048에서 512로 줄었어요. 512가 실제 깊이 맵 해상도라서 더 큰 값은 파일만 키우고 결과는 같아요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-10-15-1",
     "service": "meshy",
     "date": "2026.10.15",

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hugging-face-2026-10-21-1",
+    "service": "hugging-face",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "Hugging Face 로그인에 패스키 지원 추가",
+    "summary": "지문, 얼굴 인식, 화면 잠금이나 보안 키로 로그인할 수 있어요. 패스키는 인증 앱과 함께 두 번째 인증 수단으로도 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  }
+]

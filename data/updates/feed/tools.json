@@ -1,5 +1,56 @@
 [
   {
+    "id": "hugging-face-2026-10-21-1",
+    "service": "hugging-face",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "Hugging Face 로그인에 패스키 지원 추가",
+    "summary": "지문, 얼굴 인식, 화면 잠금이나 보안 키로 로그인할 수 있어요. 패스키는 인증 앱과 함께 두 번째 인증 수단으로도 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-21-1",
+    "service": "comfyui",
+    "date": "2026.10.21",
+    "kind": "앱",
+    "title": "ComfyUI v0.42.0~v0.42.3 릴리스, MOSS-Image 지원",
+    "summary": "ComfyUI 0.42 시리즈가 나왔어요. 새 오픈소스 모델 MOSS-Image를 텍스트 이미지 생성과 레이아웃 기반 생성에 쓸 수 있고, 파트너 노드도 여럿 추가됐어요.",
+    "details": [
+      "v0.42.0: MOSS-Image 텍스트 이미지 생성과 레이아웃 기반 생성, 다국어 텍스트 렌더링",
+      "v0.42.2: MOSS-Image 색상·깊이 맵 제어, FLUX 3 Max와 FLUX 3 Video 2K·4K 해상도, Clarity AI Crystal 비디오 업스케일러 노드",
+      "v0.42.3: Bria FIBO 2.0 노드, HeyGen Voice 1.0 노드, MiniMax-H3 PDD 헤드 LoRA 개선",
+      "v0.42.1: 모델 프리패치 그래프 정리의 메모리 해제 버그 수정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-42-0",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-21-2",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "API 버전 2026-10-21 출시, SDK 라이선스 변경",
+    "summary": "API 버전 2026-10-21이 나왔고, 새 SDK와 CLI는 기본으로 이 버전을 보내요. 사용자 프로필에서 기업 고객별 제한 상태를 확인할 수 있는 필드도 추가됐어요.",
+    "details": [
+      "SDK 메이저 버전 업데이트 (Python 2.0.0, TypeScript 1.0.0 등)에 일부 호환성 깨짐 포함",
+      "SDK와 CLI 라이선스가 MIT에서 Apache 2.0으로 변경",
+      "사용자 프로필에 enforcement_status, enforcement_actions 필드 추가"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-21-1",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "앱",
+    "title": "Claude Duet 리서치 프리뷰 공개",
+    "summary": "Pro와 Max 플랜 사용자를 대상으로 Claude Duet 리서치 프리뷰가 열렸어요. Claude가 먼저 제안하고 움직이는 능동형 에이전트 앱이에요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
     "id": "hugging-face-2026-10-20-2",
     "service": "hugging-face",
     "date": "2026.10.20",

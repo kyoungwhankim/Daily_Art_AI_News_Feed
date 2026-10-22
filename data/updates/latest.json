@@ -1,5 +1,100 @@
 [
   {
+    "id": "synthesia-2026-10-21-1",
+    "service": "synthesia",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "Interactive Avatar용 LiveKit 플러그인 공개",
+    "summary": "Node.js에서 LiveKit 에이전트에 Synthesia Interactive Avatar를 몇 줄의 코드로 붙일 수 있는 공식 플러그인이 나왔어요.",
+    "url": "https://docs.synthesia.io/changelog/interactive-avatars-livekit-plugin-for-nodejs",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-21-1",
+    "service": "runway",
+    "date": "2026.10.21",
+    "kind": "연동",
+    "title": "Runway Dev에 Nano Banana 2 Lite 추가",
+    "summary": "Runway Dev에서 Nano Banana 2 Lite를 이미지 생성과 편집에 바로 쓸 수 있게 됐어요. 프롬프트는 최대 5,500자, 참조 이미지는 최대 14장까지 넣을 수 있어요.",
+    "details": [
+      "모델 ID: gemini_image3.1_flash_lite",
+      "텍스트 프롬프트 생성과 참조 이미지 기반 편집 지원"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-10-21-1",
+    "service": "meshy",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "API 작업에 X-Meshy-Metadata 헤더 추가",
+    "summary": "Studio와 Enterprise 팀은 작업을 만들 때 X-Meshy-Metadata 헤더로 직접 정한 키와 값을 붙일 수 있어요. 나중에 Usage 기록의 metadata 필드에서 다시 확인할 수 있어요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-21-1",
+    "service": "hugging-face",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "Hugging Face 로그인에 패스키 지원 추가",
+    "summary": "지문, 얼굴 인식, 화면 잠금이나 보안 키로 로그인할 수 있어요. 패스키는 인증 앱과 함께 두 번째 인증 수단으로도 쓸 수 있어요.",
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-21-1",
+    "service": "heygen",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "HeyGen Video 길이 자동 설정 추가",
+    "summary": "API에서 duration을 auto로 지정하면 HeyGen이 프롬프트에 맞춰 5~15초 사이의 길이를 골라줘요. 대사가 자연스러운 속도에 맞춰지고, 과금은 결정된 길이 기준이에요.",
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "comfyui-2026-10-21-1",
+    "service": "comfyui",
+    "date": "2026.10.21",
+    "kind": "앱",
+    "title": "ComfyUI v0.42.0~v0.42.3 릴리스, MOSS-Image 지원",
+    "summary": "ComfyUI 0.42 시리즈가 나왔어요. 새 오픈소스 모델 MOSS-Image를 텍스트 이미지 생성과 레이아웃 기반 생성에 쓸 수 있고, 파트너 노드도 여럿 추가됐어요.",
+    "details": [
+      "v0.42.0: MOSS-Image 텍스트 이미지 생성과 레이아웃 기반 생성, 다국어 텍스트 렌더링",
+      "v0.42.2: MOSS-Image 색상·깊이 맵 제어, FLUX 3 Max와 FLUX 3 Video 2K·4K 해상도, Clarity AI Crystal 비디오 업스케일러 노드",
+      "v0.42.3: Bria FIBO 2.0 노드, HeyGen Voice 1.0 노드, MiniMax-H3 PDD 헤드 LoRA 개선",
+      "v0.42.1: 모델 프리패치 그래프 정리의 메모리 해제 버그 수정"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-42-0",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-21-2",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "API 버전 2026-10-21 출시, SDK 라이선스 변경",
+    "summary": "API 버전 2026-10-21이 나왔고, 새 SDK와 CLI는 기본으로 이 버전을 보내요. 사용자 프로필에서 기업 고객별 제한 상태를 확인할 수 있는 필드도 추가됐어요.",
+    "details": [
+      "SDK 메이저 버전 업데이트 (Python 2.0.0, TypeScript 1.0.0 등)에 일부 호환성 깨짐 포함",
+      "SDK와 CLI 라이선스가 MIT에서 Apache 2.0으로 변경",
+      "사용자 프로필에 enforcement_status, enforcement_actions 필드 추가"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-21-1",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "앱",
+    "title": "Claude Duet 리서치 프리뷰 공개",
+    "summary": "Pro와 Max 플랜 사용자를 대상으로 Claude Duet 리서치 프리뷰가 열렸어요. Claude가 먼저 제안하고 움직이는 능동형 에이전트 앱이에요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-20-1",
     "service": "scenario",
     "date": "2026.10.20",
@@ -52,6 +147,21 @@
     "source": "notice"
   },
   {
+    "id": "higgsfield-2026-10-20-1",
+    "service": "higgsfield",
+    "date": "2026.10.20",
+    "kind": "연동",
+    "title": "Higgsfield에서 Kling 4.0 사용 가능",
+    "summary": "Higgsfield에서 Kling 4.0을 쓸 수 있게 됐어요. Kling 3.0보다 생성 길이가 두 배로 늘었고 키프레임과 다양한 참조 입력을 지원해요.",
+    "details": [
+      "생성 최대 길이 두 배 확대",
+      "전체 영상에 키프레임 추가 지원",
+      "Creative Recreation과 기존 영상 편집 옵션 추가"
+    ],
+    "url": "https://higgsfield.ai/blog/kling-4-0-on-higgsfield",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-10-20-1",
     "service": "heygen",
     "date": "2026.10.20",
@@ -88,6 +198,16 @@
       "프로젝트 스킬(SKILL.md)의 description 파싱 오류 수정"
     ],
     "url": "https://packages.unity.com/com.unity.ai.assistant",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-10-19-1",
+    "service": "meshy",
+    "date": "2026.10.19",
+    "kind": "API",
+    "title": "Keychain·Fridge Magnet export_resolution 최대값 512로 변경",
+    "summary": "Keychain과 Fridge Magnet 빌드 작업의 export_resolution 최대값이 2048에서 512로 줄었어요. 512가 실제 깊이 맵 해상도라서 더 큰 값은 파일만 키우고 결과는 같아요.",
+    "url": "https://docs.meshy.ai/en/api/changelog",
     "source": "dev"
   },
   {
@@ -273,6 +393,16 @@
     "source": "notice"
   },
   {
+    "id": "pika-2026-10-16-1",
+    "service": "pika",
+    "date": "2026.10.16",
+    "kind": "연동",
+    "title": "Pika, ChatGPT 안에서 사용 가능",
+    "summary": "Pika를 ChatGPT 플러그인으로 연결해 대화 안에서 바로 영상, 이미지, 사운드를 만들 수 있어요. 40개 이상의 크리에이티브 앱과 100개 이상의 생성 모델이 포함돼요.",
+    "url": "https://pika.art/blog/pika-chatgpt-plugin",
+    "source": "notice"
+  },
+  {
     "id": "krea-2026-10-16-1",
     "service": "krea",
     "date": "2026.10.16",
@@ -302,6 +432,16 @@
     ],
     "url": "https://huggingface.co/changelog",
     "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-10-15-1",
+    "service": "synthesia",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Synthesia MCP 공개 베타",
+    "summary": "Claude나 ChatGPT에서 Synthesia에 연결해 채팅 안에서 영상 초안을 만들고 영상을 생성하고 라이브러리를 검색할 수 있어요. Syren 영상도 채팅으로 수정할 수 있어요.",
+    "url": "https://docs.synthesia.io/changelog/synthesia-mcp",
+    "source": "dev"
   },
   {
     "id": "suno-2026-10-15-1",
@@ -359,179 +499,6 @@
       "BiRefNet v2: 전경을 자동으로 인식해 배경 제거, 제품 사진과 에셋 준비에 활용"
     ],
     "url": "https://runwayml.com/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "meshy-2026-10-15-1",
-    "service": "meshy",
-    "date": "2026.10.15",
-    "kind": "모델",
-    "title": "Meshy 스마트 토폴로지 모델 meshy-t2.5 추가",
-    "summary": "게임 에셋용 스마트 토폴로지 모델 meshy-t2.5가 Image to 3D, Text to 3D API에 추가됐어요. 더 선명한 디테일을 가진 삼각형 기반 메시를 만들어요.",
-    "details": [
-      "model_type을 smart-topology로 설정해서 쓸 수 있어요",
-      "출력은 삼각형만 나오고 target_polycount는 100~30,000을 받아요"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "magnific-2026-10-15-1",
-    "service": "magnific",
-    "date": "2026.10.15",
-    "kind": "모델",
-    "title": "Ideogram 4·4.5 API 추가",
-    "summary": "글자가 정확하게 들어가는 이미지 모델 Ideogram 4와 4.5가 Magnific API에 추가됐어요. 텍스트가 필요한 디자인 작업에 쓰기 좋아요.",
-    "details": [
-      "Ideogram 4: 15가지 화면 비율의 텍스트→이미지, 네거티브 프롬프트와 seed를 지원해요",
-      "Ideogram 4.5: 텍스트→이미지와 함께 이미지 편집(최대 5장, 첫 장을 편집하고 나머지는 참조)을 지원해요",
-      "가격은 Ideogram 4는 렌더링 속도, 4.5는 품질 단계에 따라 달라요"
-    ],
-    "url": "https://docs.magnific.com/changelog#october-15-2026",
-    "source": "dev"
-  },
-  {
-    "id": "ludo.ai-2026-10-15-1",
-    "service": "ludo.ai",
-    "date": "2026.10.15",
-    "kind": "기능",
-    "title": "Directional Sprites 베타 공개, 8방향 일관된 캐릭터 스프라이트",
-    "summary": "캐릭터 하나를 8방향 스프라이트 시트로 뽑아주는 Directional Sprites 베타가 나왔어요. 3D 모델 한 번으로 모든 방향이 같은 옷과 비율을 유지해요.",
-    "details": [
-      "14가지 2D 스타일 중에서 고를 수 있어요",
-      "걷기·달리기 등 애니메이션 전체에서 일관성이 유지돼요",
-      "출시 가격 기준으로 Sprite Generator 애니메이션의 약 1/10 비용이에요"
-    ],
-    "url": "https://ludo.ai/whats-new#directional-sprites-one-consistent-character-in-8-directions-in-the-2d-style-you",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-15-1",
-    "service": "krea",
-    "date": "2026.10.15",
-    "kind": "API",
-    "title": "Krea 3 API 얼리 액세스 시작",
-    "summary": "Krea 3 이미지 편집 모델을 API로 쓸 수 있는 얼리 액세스가 열렸어요. 자연어 지시로 이미지를 고치고 최대 8장의 참조 이미지를 함께 쓸 수 있어요.",
-    "details": [
-      "빠른 모드(fast)와 고품질 모드(high)를 고를 수 있어요",
-      "영역 편집으로 일부만 바꾸고 나머지는 픽셀 단위로 유지해요",
-      "1K·2K 출력, $0.03/1K 이미지부터예요",
-      "Enterprise 워크스페이스는 Zero Data Retention을 쓸 수 있어요",
-      "기존 thinking_mode 값은 2026년 10월 23일에 종료돼요 (fast·high로 변경)"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-15-2026",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-10-15-1",
-    "service": "hugging-face",
-    "date": "2026.10.15",
-    "kind": "기능",
-    "title": "Diffusers에 FLUX.3 Image Klein 지원 추가",
-    "summary": "Hugging Face Diffusers 라이브러리에서 FLUX.3 Image Klein 이미지 모델을 바로 불러와 쓸 수 있게 됐어요. 오픈 웨이트라서 로컬 GPU에서도 돌릴 수 있어요.",
-    "details": [
-      "Klein Base는 파인튜닝과 LoRA 학습용이에요",
-      "가중치는 Hugging Face에서 내려받을 수 있어요"
-    ],
-    "url": "https://huggingface.co/blog/flux-3",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-15-1",
-    "service": "heygen",
-    "date": "2026.10.15",
-    "kind": "API",
-    "title": "이미지로 만드는 인스턴트 음성 기능 추가",
-    "summary": "사진 한 장을 넣으면 그 장면의 배경 분위기가 음성에 담기는 기능이 HeyGen API에 추가됐어요. 조용한 방은 깨끗하게, 시끄러운 곳은 그 분위기를 살려 줘요.",
-    "details": [
-      "POST /v3/models/audio/voices의 인스턴트 모드에서 image 값을 받을 수 있어요",
-      "인스턴트 음성 생성은 미리보기 기간 동안 무료예요"
-    ],
-    "url": "https://docs.heygen.com/changelog#instant-voices-from-an-image",
-    "source": "dev"
-  },
-  {
-    "id": "flux-2026-10-15-1",
-    "service": "flux",
-    "date": "2026.10.15",
-    "kind": "모델",
-    "title": "FLUX 3 Image Klein 공개, 오픈 웨이트 5.6B 모델",
-    "summary": "5.6B 파라미터의 오픈 웨이트 이미지 모델 FLUX 3 Image Klein이 공개됐어요. 소비자용 GPU에서도 실행할 수 있고 4K까지 출력하며, LoRA 학습도 지원해요.",
-    "details": [
-      "Klein (Distilled)은 16스텝 빠른 추론, Klein Base는 파인튜닝·LoRA 학습용이에요",
-      "텍스트→이미지, 이미지 편집, 다중 참조(최대 10장), 바운딩 박스를 지원해요",
-      "해상도 768sq~4k, 1k 기준 장당 $0.009부터예요",
-      "Hugging Face 가중치와 ComfyUI 워크플로로도 사용할 수 있어요"
-    ],
-    "url": "https://docs.bfl.ai/release-notes#october-15-2026",
-    "source": "dev"
-  },
-  {
-    "id": "figma-ai-2026-10-15-1",
-    "service": "figma-ai",
-    "date": "2026.10.15",
-    "kind": "기능",
-    "title": "Figma Make 코드 레이어·Specs 오픈 베타 공개",
-    "summary": "Config India 2026에서 Figma Make에 코드 레이어 편집과 Specs 기능이 오픈 베타로 공개됐어요. 디자인 시스템 코드를 가져와서 에이전트가 실제 컴포넌트를 만들 수 있어요.",
-    "details": [
-      "코드 레이어 생성·편집은 유료 플랜에서 11월 4일까지 무료예요",
-      "Specs: 디자인 의도와 기술 명세를 팀과 에이전트가 함께 보는 공간이에요 (유료 플랜 오픈 베타)",
-      "Make에서 Payload 백엔드를 바로 만들 수 있어요 (CMS·DB·인증 포함)",
-      "GitHub 저장소나 npm 패키지에서 코드를 가져와 실제 디자인 시스템에 맞출 수 있어요"
-    ],
-    "url": "https://www.figma.com/release-notes/?title=config-india-2026",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-15-1",
-    "service": "comfyui",
-    "date": "2026.10.15",
-    "kind": "앱",
-    "title": "ComfyUI v0.41.0·v0.41.1 출시, FLUX.3 Klein과 Krea 3 노드 추가",
-    "summary": "ComfyUI v0.41.0과 v0.41.1이 함께 나왔어요. FLUX.3 Image Klein을 기본 지원하고, Krea 3 이미지 노드를 파트너 노드로 쓸 수 있어요.",
-    "details": [
-      "FLUX.3 Image Klein: 기본(base)과 증류(distilled) 체크포인트를 기본 지원해요",
-      "Krea 3 Image 파트너 노드: 텍스트→이미지와 편집을 한 노드에서 처리하고, 참조 이미지 최대 8장을 받아요",
-      "FLUX.3 Layout Prompt, SDR→HDR 변환 노드 등이 추가됐어요",
-      "FLUX.3 Klein 텍스트→이미지·이미지 편집 템플릿 4종이 들어왔어요"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-41-0",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-15-1",
-    "service": "claude",
-    "date": "2026.10.15",
-    "kind": "API",
-    "title": "Claude Opus 5.5 패스트 모드 정식 공개",
-    "summary": "Claude Opus 5.5의 패스트 모드가 리서치 프리뷰를 벗어나서 이제 별도 신청 없이 쓸 수 있어요. 요청할 때 베타 헤더를 보내지 않아도 돼요.",
-    "details": [
-      "Opus 5.5는 모든 사용량 등급에 기본 패스트 모드 속도 제한이 적용돼요",
-      "Opus 5와 Opus 4.8의 패스트 모드는 아직 리서치 프리뷰라서 기존 베타 헤더를 계속 보내야 해요",
-      "Claude in Microsoft Foundry(Azure 배포)에서도 Opus 5.5 패스트 모드를 쓸 수 있어요",
-      "Compliance API로 조직 구성원이 저장한 사용자 지침을 읽을 수 있는 베타가 열렸어요"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2026",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-14-4",
-    "service": "scenario",
-    "date": "2026.10.14",
-    "kind": "종료",
-    "title": "GPT Image 1·1.5 모델 종료 예고",
-    "summary": "Scenario에서 GPT Image 1과 GPT Image 1.5 모델이 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
-    "url": "https://www.scenario.com/changelog/gpt-image-1-and-1-5-retirement",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-14-3",
-    "service": "scenario",
-    "date": "2026.10.14",
-    "kind": "종료",
-    "title": "Gemini 3.1 Flash TTS 종료 예고",
-    "summary": "Scenario에서 Gemini 3.1 Flash TTS 모델이 곧 종료된다고 알렸어요. 종료일과 대체 모델은 공지에 명시되지 않았어요.",
-    "url": "https://www.scenario.com/changelog/gemini-3-1-flash-tts-retirement",
     "source": "notice"
   }
 ]

@@ -1,5 +1,54 @@
 [
   {
+    "id": "synthesia-2026-10-21-1",
+    "service": "synthesia",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "Interactive Avatar용 LiveKit 플러그인 공개",
+    "summary": "Node.js에서 LiveKit 에이전트에 Synthesia Interactive Avatar를 몇 줄의 코드로 붙일 수 있는 공식 플러그인이 나왔어요.",
+    "url": "https://docs.synthesia.io/changelog/interactive-avatars-livekit-plugin-for-nodejs",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-21-1",
+    "service": "runway",
+    "date": "2026.10.21",
+    "kind": "연동",
+    "title": "Runway Dev에 Nano Banana 2 Lite 추가",
+    "summary": "Runway Dev에서 Nano Banana 2 Lite를 이미지 생성과 편집에 바로 쓸 수 있게 됐어요. 프롬프트는 최대 5,500자, 참조 이미지는 최대 14장까지 넣을 수 있어요.",
+    "details": [
+      "모델 ID: gemini_image3.1_flash_lite",
+      "텍스트 프롬프트 생성과 참조 이미지 기반 편집 지원"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-21-1",
+    "service": "heygen",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "HeyGen Video 길이 자동 설정 추가",
+    "summary": "API에서 duration을 auto로 지정하면 HeyGen이 프롬프트에 맞춰 5~15초 사이의 길이를 골라줘요. 대사가 자연스러운 속도에 맞춰지고, 과금은 결정된 길이 기준이에요.",
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "higgsfield-2026-10-20-1",
+    "service": "higgsfield",
+    "date": "2026.10.20",
+    "kind": "연동",
+    "title": "Higgsfield에서 Kling 4.0 사용 가능",
+    "summary": "Higgsfield에서 Kling 4.0을 쓸 수 있게 됐어요. Kling 3.0보다 생성 길이가 두 배로 늘었고 키프레임과 다양한 참조 입력을 지원해요.",
+    "details": [
+      "생성 최대 길이 두 배 확대",
+      "전체 영상에 키프레임 추가 지원",
+      "Creative Recreation과 기존 영상 편집 옵션 추가"
+    ],
+    "url": "https://higgsfield.ai/blog/kling-4-0-on-higgsfield",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-10-20-1",
     "service": "heygen",
     "date": "2026.10.20",
@@ -36,6 +85,26 @@
     "title": "전문 음성 생성 시 언어 입력이 선택 사항으로 변경",
     "summary": "전문가 모드 음성 생성 API에서 language 값을 생략할 수 있게 됐어요. 생략하면 녹음에서 언어를 자동으로 감지해요.",
     "url": "https://docs.heygen.com/changelog#professional-voices-without-a-language",
+    "source": "dev"
+  },
+  {
+    "id": "pika-2026-10-16-1",
+    "service": "pika",
+    "date": "2026.10.16",
+    "kind": "연동",
+    "title": "Pika, ChatGPT 안에서 사용 가능",
+    "summary": "Pika를 ChatGPT 플러그인으로 연결해 대화 안에서 바로 영상, 이미지, 사운드를 만들 수 있어요. 40개 이상의 크리에이티브 앱과 100개 이상의 생성 모델이 포함돼요.",
+    "url": "https://pika.art/blog/pika-chatgpt-plugin",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-10-15-1",
+    "service": "synthesia",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Synthesia MCP 공개 베타",
+    "summary": "Claude나 ChatGPT에서 Synthesia에 연결해 채팅 안에서 영상 초안을 만들고 영상을 생성하고 라이브러리를 검색할 수 있어요. Syren 영상도 채팅으로 수정할 수 있어요.",
+    "url": "https://docs.synthesia.io/changelog/synthesia-mcp",
     "source": "dev"
   },
   {

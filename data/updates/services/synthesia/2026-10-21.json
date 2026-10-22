@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-10-21-1",
+    "service": "synthesia",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "Interactive Avatar용 LiveKit 플러그인 공개",
+    "summary": "Node.js에서 LiveKit 에이전트에 Synthesia Interactive Avatar를 몇 줄의 코드로 붙일 수 있는 공식 플러그인이 나왔어요.",
+    "url": "https://docs.synthesia.io/changelog/interactive-avatars-livekit-plugin-for-nodejs",
+    "source": "dev"
+  }
+]

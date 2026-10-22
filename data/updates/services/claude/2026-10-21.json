@@ -1,0 +1,27 @@
+[
+  {
+    "id": "claude-2026-10-21-1",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "앱",
+    "title": "Claude Duet 리서치 프리뷰 공개",
+    "summary": "Pro와 Max 플랜 사용자를 대상으로 Claude Duet 리서치 프리뷰가 열렸어요. Claude가 먼저 제안하고 움직이는 능동형 에이전트 앱이에요.",
+    "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-21-2",
+    "service": "claude",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "API 버전 2026-10-21 출시, SDK 라이선스 변경",
+    "summary": "API 버전 2026-10-21이 나왔고, 새 SDK와 CLI는 기본으로 이 버전을 보내요. 사용자 프로필에서 기업 고객별 제한 상태를 확인할 수 있는 필드도 추가됐어요.",
+    "details": [
+      "SDK 메이저 버전 업데이트 (Python 2.0.0, TypeScript 1.0.0 등)에 일부 호환성 깨짐 포함",
+      "SDK와 CLI 라이선스가 MIT에서 Apache 2.0으로 변경",
+      "사용자 프로필에 enforcement_status, enforcement_actions 필드 추가"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source": "dev"
+  }
+]

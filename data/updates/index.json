@@ -7,16 +7,16 @@
       "rev": "05ddca8d0b"
     },
     "video": {
-      "count": 955,
-      "latest": "2026.10.20",
+      "count": 961,
+      "latest": "2026.10.21",
       "file": "updates/feed/video.json",
-      "rev": "178f68dbc2"
+      "rev": "c22f505d57"
     },
     "3d": {
-      "count": 182,
-      "latest": "2026.10.15",
+      "count": 184,
+      "latest": "2026.10.21",
       "file": "updates/feed/3d.json",
-      "rev": "5cc6d651de"
+      "rev": "f76c3c0bc3"
     },
     "game-assets": {
       "count": 561,
@@ -37,10 +37,10 @@
       "rev": "e65cbc13b2"
     },
     "tools": {
-      "count": 1018,
-      "latest": "2026.10.20",
+      "count": 1022,
+      "latest": "2026.10.21",
       "file": "updates/feed/tools.json",
-      "rev": "cf787c529b"
+      "rev": "eb664acfdd"
     }
   },
   "services": {
@@ -130,9 +130,9 @@
       "latest": "2026.09.02"
     },
     "runway": {
-      "count": 189,
+      "count": 190,
       "first": "2023.02.01",
-      "latest": "2026.10.15"
+      "latest": "2026.10.21"
     },
     "dream-machine": {
       "count": 29,
@@ -140,9 +140,9 @@
       "latest": "2026.10.08"
     },
     "higgsfield": {
-      "count": 58,
+      "count": 59,
       "first": "2025.04.24",
-      "latest": "2026.10.17"
+      "latest": "2026.10.20"
     },
     "ltx-studio": {
       "count": 65,
@@ -150,9 +150,9 @@
       "latest": "2026.10.13"
     },
     "pika": {
-      "count": 11,
+      "count": 12,
       "first": "2026.04.02",
-      "latest": "2026.09.17"
+      "latest": "2026.10.16"
     },
     "hailuo": {
       "count": 18,
@@ -170,14 +170,14 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 76,
+      "count": 77,
       "first": "2025.11.29",
-      "latest": "2026.10.20"
+      "latest": "2026.10.21"
     },
     "synthesia": {
-      "count": 188,
+      "count": 190,
       "first": "2020.10.13",
-      "latest": "2026.09.30"
+      "latest": "2026.10.21"
     },
     "topaz-video": {
       "count": 118,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 120,
+      "count": 122,
       "first": "2023.10.19",
-      "latest": "2026.10.15"
+      "latest": "2026.10.21"
     },
     "tripo": {
       "count": 29,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 213,
+      "count": 214,
       "first": "2024.08.06",
-      "latest": "2026.10.15"
+      "latest": "2026.10.21"
     },
     "invokeai": {
       "count": 73,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 67,
+      "count": 68,
       "first": "2025.05.21",
-      "latest": "2026.10.20"
+      "latest": "2026.10.21"
     },
     "fal.ai": {
       "count": 169,
@@ -310,9 +310,9 @@
       "latest": "2026.07.30"
     },
     "claude": {
-      "count": 231,
+      "count": 233,
       "first": "2023.03.14",
-      "latest": "2026.10.20"
+      "latest": "2026.10.21"
     }
   }
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "higgsfield-2026-10-20-1",
+    "service": "higgsfield",
+    "date": "2026.10.20",
+    "kind": "연동",
+    "title": "Higgsfield에서 Kling 4.0 사용 가능",
+    "summary": "Higgsfield에서 Kling 4.0을 쓸 수 있게 됐어요. Kling 3.0보다 생성 길이가 두 배로 늘었고 키프레임과 다양한 참조 입력을 지원해요.",
+    "details": [
+      "생성 최대 길이 두 배 확대",
+      "전체 영상에 키프레임 추가 지원",
+      "Creative Recreation과 기존 영상 편집 옵션 추가"
+    ],
+    "url": "https://higgsfield.ai/blog/kling-4-0-on-higgsfield",
+    "source": "notice"
+  }
+]

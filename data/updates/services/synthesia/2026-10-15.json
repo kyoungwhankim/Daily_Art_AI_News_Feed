@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthesia-2026-10-15-1",
+    "service": "synthesia",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Synthesia MCP 공개 베타",
+    "summary": "Claude나 ChatGPT에서 Synthesia에 연결해 채팅 안에서 영상 초안을 만들고 영상을 생성하고 라이브러리를 검색할 수 있어요. Syren 영상도 채팅으로 수정할 수 있어요.",
+    "url": "https://docs.synthesia.io/changelog/synthesia-mcp",
+    "source": "dev"
+  }
+]
