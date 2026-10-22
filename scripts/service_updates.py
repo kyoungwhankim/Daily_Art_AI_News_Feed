@@ -301,7 +301,7 @@ def url_status(url: str) -> str:
     """주소가 실제로 열리는지 (#fragment 제외). '404'·'410'이면 없는 페이지다."""
     base = url.split('#', 1)[0]
     if base not in _url_cache:
-        r = subprocess.run(['curl', '-sS', '-o', '/dev/null', '-w', '%{http_code}', '-L', '--max-time', '25',
+        r = subprocess.run(['curl', '-sS', '-o', os.devnull, '-w', '%{http_code}', '-L', '--max-time', '25',
                             '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36',
                             base], capture_output=True, text=True)
         _url_cache[base] = r.stdout.strip() or '000'
@@ -328,7 +328,7 @@ def is_listing_url(url: str, svc: dict) -> bool:
 
 def cmd_save(args):
     services = {s['slug']: s for s in load_services()}
-    raw = sys.stdin.read()
+    raw = open(args.file, encoding='utf-8').read() if args.file else sys.stdin.read()
     try:
         new = json.loads(raw)
     except ValueError as e:
@@ -526,7 +526,7 @@ def main():
     p.set_defaults(fn=cmd_services)
     p = sub.add_parser('state'); p.add_argument('--category', nargs='*'); p.add_argument('--recent', type=int, default=5)
     p.set_defaults(fn=cmd_state)
-    p = sub.add_parser('save'); p.add_argument('--out', required=True); p.set_defaults(fn=cmd_save)
+    p = sub.add_parser('save'); p.add_argument('--out', required=True); p.add_argument('--file'); p.set_defaults(fn=cmd_save)
     p = sub.add_parser('check'); p.add_argument('file'); p.set_defaults(fn=cmd_check)
     p = sub.add_parser('merge'); p.add_argument('file'); p.set_defaults(fn=cmd_merge)
     p = sub.add_parser('rebuild'); p.set_defaults(fn=cmd_rebuild)

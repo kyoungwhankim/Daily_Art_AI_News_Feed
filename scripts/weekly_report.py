@@ -192,8 +192,10 @@ def check(e: dict, ctx: dict) -> list:
 
 
 def cmd_add(args):
+    if len(args) == 3 and args[1] == '--file':          # JSON을 파일로 받기 (Windows 셸 따옴표 문제 회피)
+        args = [args[0], open(args[2], encoding='utf-8').read()]
     if len(args) != 2:
-        sys.exit("usage: weekly_report.py add /tmp/report/entries.json '<json>'")
+        sys.exit("usage: weekly_report.py add /tmp/report/entries.json '<json>'  (or --file PATH)")
     path, raw = args
     ctx = read_json(os.path.join(WORK, 'context.json'), None)
     if not ctx:

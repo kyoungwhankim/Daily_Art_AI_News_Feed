@@ -1,0 +1,134 @@
+AI Art Daily — daily routine for Google Antigravity (Gemini) on Windows
+
+The Antigravity Automation only loads this file. This file runs the SAME routine as the Claude
+routine — routine/daily_feed_prompt.txt and the three agent prompts it names — and lists what
+to do differently here (Windows PowerShell, no sub-agents, local GitHub login).
+
+This run is unattended — nobody is watching. Never stop to ask a question or wait for a
+confirmation. Finish the whole routine.
+
+=====================================================================
+SETUP — run these first, one command at a time
+=====================================================================
+
+The Automation prompt already moved the terminal to the repository and reset it to main.
+Check the environment and get today's date:
+
+python scripts/routine_steps.py env-check
+python scripts/routine_steps.py today
+python scripts/routine_steps.py paths
+
+- env-check must end with "Environment OK.". If it says "utf-8 : NOT SET", run
+  `$env:PYTHONUTF8 = "1"` and run env-check again. If it still fails (python, git, curl or node
+  missing), stop and report the failing line.
+- `today` prints TODAY (KST, YYYY-MM-DD). Use it wherever the files say {{date}}.
+- `paths` prints where the work folders really are on this computer (e.g. /tmp/feed is
+  C:\tmp\feed). Call that folder WORK_FEED; the others WORK_UPDATES, WORK_FREE, WORK_REPORT.
+- The repository folder (`Get-Location`) is REPO_DIR.
+
+Then read routine/daily_feed_prompt.txt in full (it is long — read it in parts until you
+reach its FINISH section), and follow it from its first line to FINISH with the rules below.
+
+=====================================================================
+WINDOWS RULES (W) — how to run the commands written in the routine files
+=====================================================================
+
+The routine files were written for a Linux bash shell. Your terminal is Windows PowerShell.
+Translate every command like this — and change nothing else:
+
+W1. `python3` → `python`. Arguments stay the same, including paths like /tmp/feed/digest.json
+    (Python on this computer maps them to the work folders `paths` printed).
+
+W2. `/home/user/Daily_Art_AI_News_Feed` means REPO_DIR. Lines that are only
+    `cd /home/user/Daily_Art_AI_News_Feed` and the prefix `cd /home/user/Daily_Art_AI_News_Feed && `
+    are dropped — the terminal is already in REPO_DIR. If a command says a scripts/ file is not
+    found, run `Set-Location <REPO_DIR>` and repeat it.
+
+W3. Heredocs. A command written as
+        python3 scripts/X.py ARGS << 'PYEOF'      (or 'JSONEOF', 'EOF')
+        ...content...
+        PYEOF
+    becomes: write the content (exactly, as UTF-8) to a file with your file-writing tool —
+    WORK_FEED\input.txt for the main routine, WORK_UPDATES\input.txt for the updates work —
+    then run `python scripts/X.py ARGS --file <that file>`. Every such command supports
+    --file (routine_steps.py digest-add / article-add / agent-finish, service_updates.py save).
+    Overwrite the same input file each time.
+
+W4. Single-quoted JSON arguments (free_tools.py add ... '{...}', weekly_report.py add ... '{...}')
+    must not be typed on the command line in PowerShell. Write the JSON to WORK_FREE\input.json
+    or WORK_REPORT\input.json and run
+        python scripts/free_tools.py add /tmp/free/entries.json --file <that file>
+        python scripts/weekly_report.py add /tmp/report/entries.json --file <that file>
+
+W5. Other shell tools:
+    - `curl ...` → `curl.exe ...` with the same options (plain `curl` is a different command
+      in PowerShell).
+    - `grep PATTERN` on a command's output → `| Select-String PATTERN`.
+    - `cat FILE` → read the file with your file-reading tool (use the real path from `paths`).
+    - Multi-line commands joined with `\` at line ends do not exist in the current files; if
+      you meet one, run it as a single line.
+
+W6. Git. Skip every `if [ ! -d ... ]; then git clone ... fi` block (the repository is already
+    here) and every `git config user.email` / `git config user.name` line. GITHUB_TOKEN is not
+    needed — this computer's GitHub login is used. Keep `git fetch origin main`,
+    `git checkout main` and `git reset --hard origin/main` (run them one per line).
+
+=====================================================================
+AGENT RULES (A) — no sub-agents: do their work yourself, in order
+=====================================================================
+
+The routine starts separate agents with "the Agent (Task) tool" and names models (haiku,
+sonnet). Do not start any agent and ignore the model names. Do their work yourself:
+
+A1. PHASE 0 Step 2: run the workdir command only. PHASE 0 Step 3 (updates agent): do NOT do
+    it now.
+A2. PHASE 0 Step 4: run the free-tools `due` check now and remember DUE / NOT DUE.
+A3. Order of work:
+      PHASE 0 → PHASE 1 up to and including VERIFY DIGEST
+      → UPDATES WORK → FREE-TOOLS WORK (only if DUE) → WAIT FOR THE UPDATES AGENT → PHASE 2
+    UPDATES WORK: read routine/updates_agent_prompt.txt and follow it from STEP 1 to FINISH,
+    with the W rules. Its FINISH (`agent-finish updates`) creates the DONE marker.
+    FREE-TOOLS WORK: read routine/free_agent_prompt.txt and follow it from STEP 1 to FINISH,
+    with the W rules.
+    WAIT FOR THE UPDATES AGENT: run its `agent-status` commands; they print "finished".
+A4. WEEKLY REPORT (when `weekly_report.py due` prints DUE): after the
+    `weekly_report.py context` step, read routine/report_agent_prompt.txt and follow it from
+    STEP 1 to FINISH yourself, then continue with `merge-report` in daily_feed_prompt.txt.
+A5. While doing an agent's work, that agent's own rules apply too (e.g. "do not edit files
+    inside REPO, never run git" — its scripts write only to the work folders).
+A6. PHASE 2's "Do NOT spawn sub-agents" stays true: process every article yourself, one at a
+    time (R4).
+
+=====================================================================
+OTHER RULES
+=====================================================================
+
+T1. Web tools. "WebFetch" means your tool for reading a web page by URL (use the browser if
+    that tool fails). "WebSearch" and "`site:` search" mean your Google Search tool.
+
+T2. Context. There is no PreCompact hook here; still run `routine_steps.py publish-init` and
+    `routine_steps.py publish-end` where the routine says. If your context is summarized or
+    you lose track, re-read routine/daily_feed_prompt.txt and this file, look at the work
+    files (digest.json and articles.json in WORK_FEED; DONE / entries.json in the other work
+    folders) and continue from the step you were on — never start over from PHASE 0.
+
+T3. COMMIT AND PUSH: do NOT run scripts/push_to_main.py (it needs a token from the Claude
+    environment). Run instead:
+
+    python scripts/routine_steps.py push-local
+
+    It commits data/ to main with this computer's GitHub login, pulls with rebase and pushes
+    (it retries once and never force-pushes). The HARD RULE still applies: main only, no new
+    branch, no pull request. If it fails, put its error in the final report.
+
+T4. Never stop early to ask anything. When a step fails, do what the routine says for that
+    failure (skip the article, mark the source unreachable, restore and continue, ...).
+    Terminate early only where the routine says to terminate.
+
+=====================================================================
+FINISH
+=====================================================================
+
+Give the final report daily_feed_prompt.txt asks for (articles per tab, the updates /
+free-tools / weekly report summaries, the push result). Add one line naming any step where a
+W / A / T rule did not work as written, so the instructions can be fixed.

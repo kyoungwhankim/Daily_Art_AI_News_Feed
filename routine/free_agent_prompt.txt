@@ -33,10 +33,8 @@ HARD RULES
 STEP 1 — SETUP
 ---------------------------------------------------------------------
 
-mkdir -p /tmp/free && rm -f /tmp/free/DONE
-python3 -c "import json; json.dump([], open('/tmp/free/entries.json','w'))"
-: > /tmp/free/candidates.txt
 cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/routine_steps.py agent-init free
 python3 scripts/free_tools.py list
 
 `list` prints one line per service: slug, name, kind ('trial' or 'free'), category, home
@@ -100,11 +98,13 @@ python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "kling", "sta
 python3 scripts/free_tools.py add /tmp/free/entries.json '{"slug": "example", "status": "unverified"}'
 
     If the text contains a single quote ('), write it as \u0027 inside the JSON.
+    (Or write the JSON to a file and run `python3 scripts/free_tools.py add /tmp/free/entries.json --file PATH`.)
     Then print one line:  DONE <slug>: <status> <type> "<offer>"
 
 While checking, if you meet a well-known ART AI service with a free trial / free plan that
 is NOT on the list (image, video, 3D, game assets, animation, music, design), append it to
-/tmp/free/candidates.txt as  <name> | <home URL> | <category> | <free offer>  (at most 5).
+/tmp/free/candidates.txt (at most 5), one line each:
+  python3 scripts/routine_steps.py agent-note free "<name> | <home URL> | <category> | <free offer>"
 Do not add it to entries.json.
 
 ---------------------------------------------------------------------
@@ -114,17 +114,4 @@ FINISH
 Write a short report and create the DONE marker:
 
 cd /home/user/Daily_Art_AI_News_Feed
-python3 - <<'PY'
-import json
-e = json.load(open('/tmp/free/entries.json'))
-from collections import Counter
-c = Counter(x['status'] for x in e)
-lines = [f'Free tools agent: checked {len(e)} services — ' + ', '.join(f'{k} {v}' for k, v in sorted(c.items()))]
-un = [x['slug'] for x in e if x['status'] == 'unverified']
-if un: lines.append('Unverified: ' + ', '.join(un))
-cand = open('/tmp/free/candidates.txt').read().strip()
-if cand: lines.append('New service candidates (not added):\n' + cand)
-open('/tmp/free/REPORT.txt', 'w').write('\n'.join(lines) + '\n')
-print('\n'.join(lines))
-open('/tmp/free/DONE', 'w').write('done')
-PY
+python3 scripts/routine_steps.py agent-finish free

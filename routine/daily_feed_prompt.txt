@@ -110,7 +110,7 @@ git reset --hard origin/main
 
 Step 2 — Clear the updates work directory.
 
-rm -rf /tmp/updates && mkdir -p /tmp/updates
+python3 scripts/routine_steps.py workdir updates
 
 Step 3 — Start the updates agent with the Agent (Task) tool, in the
 BACKGROUND (run_in_background: true), on the Haiku model (model: "haiku" —
@@ -127,7 +127,7 @@ it finishes; its result is /tmp/updates/entries.json plus the marker
 Step 4 — Once a week: the free-tools agent ('무료로 써보기' page).
 
 cd /home/user/Daily_Art_AI_News_Feed
-rm -rf /tmp/free
+python3 scripts/routine_steps.py workdir free --remove
 python3 scripts/free_tools.py due
 
 If it prints "NOT DUE", skip the rest of this step (no free-tools agent today).
@@ -292,10 +292,7 @@ For each article found, repeat this block:
   The URL check in PHASE 2 only catches the exact same URL. Before saving, look for
   the same story among recent feed articles and today's digest:
 
-  cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/find_similar.py \
-    --title "[draft Korean title]" \
-    --text "[the original headline + key names, numbers and amounts from ARTICLE_TEXT + your draft Korean summary]" \
-    --digest /tmp/feed/digest.json
+  cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/find_similar.py --title "[draft Korean title]" --text "[the original headline + key names, numbers and amounts from ARTICLE_TEXT + your draft Korean summary]" --digest /tmp/feed/digest.json
 
   It prints NO_SIMILAR, or up to 5 lines "SIMILAR: score | date | tab | headline | url"
   (or "LIKELY_SAME: ..." when the score is 0.35 or higher).
@@ -340,6 +337,8 @@ For each article found, repeat this block:
   PYEOF
 
   It checks the format (R6) and prints "Saved article N" or "REJECTED: ...".
+  (In a shell without heredocs, write the same dict to a file and run
+  `python3 scripts/routine_steps.py digest-add --file PATH` instead.)
 
   Repeat STEP A, STEP A2 and STEP B for each Section 1 article before moving on.
 
@@ -400,8 +399,7 @@ WAIT FOR THE UPDATES AGENT
 
 Before starting PHASE 2, the updates agent from PHASE 0 must be finished:
 
-test -f /tmp/updates/DONE && echo "Updates agent finished." && cat /tmp/updates/REPORT.txt \
-  || echo "Updates agent still running."
+python3 scripts/routine_steps.py agent-status updates
 
 If it prints "still running", wait for the agent's completion notification
 (do not start PHASE 2, do not end the routine, do not do the agent's work
@@ -412,9 +410,7 @@ the service updates are skipped today.
 If the free-tools agent was started today (PHASE 0 Step 4 printed DUE), wait for
 it the same way:
 
-test ! -d /tmp/free && echo "No free-tools agent today." \
-  || { test -f /tmp/free/DONE && echo "Free-tools agent finished." && cat /tmp/free/REPORT.txt \
-       || echo "Free-tools agent still running."; }
+python3 scripts/routine_steps.py agent-status free
 
 If it ended with an error and no DONE marker, note that and go on — the
 free-tools page simply keeps last week's data and is checked again tomorrow.
@@ -660,10 +656,7 @@ JSON entry following these rules.
                  topics (e.g. "음악·사운드"). Add it BEFORE saving the article:
 
                    cd /home/user/Daily_Art_AI_News_Feed
-                   python3 scripts/add_keyword.py --tab [games|industry|art] \
-                     --label "[label]" --kind [company|product|target|topic] \
-                     --match "[English name],[Korean name]" \
-                     --desc "[when it applies — targets/topics only]"
+                   python3 scripts/add_keyword.py --tab [games|industry|art] --label "[label]" --kind [company|product|target|topic] --match "[English name],[Korean name]" --desc "[when it applies — targets/topics only]"
 
                  The script adds the keyword to data/keywords.json and
                  /tmp/feed/keywords.json and tags matching past articles in
@@ -727,7 +720,8 @@ Save each completed article (one call per article):
   It checks the length and format rules (R6: body 600–800 characters including
   spaces, without tags and the 원문 line; 원문 paragraph; keywords from the tab's
   list) and prints "Saved article N" or "REJECTED: ...". Empty urls / image are
-  dropped automatically.
+  dropped automatically. (Without heredocs: write the dict to a file and run
+  `python3 scripts/routine_steps.py article-add --file PATH`.)
 
 Repeat STEP 3 and STEP 4 for every article in the digest.
 
@@ -784,19 +778,13 @@ Merge the updates agent's entries into data/updates/ (one file per service per
 announcement date, plus the generated feed and index the site reads):
 
 cd /home/user/Daily_Art_AI_News_Feed
-if [ -f /tmp/updates/DONE ] && [ -s /tmp/updates/entries.json ]; then
-  python3 scripts/service_updates.py merge /tmp/updates/entries.json
-else
-  echo "No service updates to merge today."
-fi
-python3 scripts/validate_data.py
+python3 scripts/routine_steps.py merge-updates
 
 
 The merge checks every entry first. If it prints "REJECTED — nothing was
 merged", restore the updates and continue with the news only:
 
-  git checkout -- data/updates 2>/dev/null; git clean -fdq data/updates
-  python3 scripts/validate_data.py
+  python3 scripts/routine_steps.py restore updates
 
 validate_data.py must print "✅ data/ is valid" before you push.
 
@@ -804,25 +792,19 @@ Then save which sources were checked today — only when the agent finished AND
 the merge was not REJECTED (otherwise skip this, so the same sources are picked
 again tomorrow). Sources the agent could not read stay unchecked:
 
-if [ -f /tmp/updates/DONE ]; then
-  python3 scripts/detect_source_changes.py commit --failed /tmp/updates/failed_sources.txt
-fi
+python3 scripts/routine_steps.py commit-sources
 
 ---
 
 MERGE FREE TOOLS (only on the days the free-tools agent ran)
 
 cd /home/user/Daily_Art_AI_News_Feed
-if [ -f /tmp/free/DONE ] && [ -s /tmp/free/entries.json ]; then
-  python3 scripts/free_tools.py merge /tmp/free/entries.json && python3 scripts/free_tools.py validate
-else
-  echo "No free-tools results to merge today."
-fi
+python3 scripts/routine_steps.py merge-free
 
 If merge prints "REJECTED — nothing was merged" or validate fails, restore the
 file and continue (the page keeps last week's data; it is checked again tomorrow):
 
-  git checkout -- data/free 2>/dev/null; git clean -fdq data/free
+  python3 scripts/routine_steps.py restore free
 
 ---
 
@@ -836,7 +818,8 @@ python3 scripts/weekly_report.py due
 
 If it prints "NOT DUE", skip this section. If it prints "DUE":
 
-rm -rf /tmp/report && python3 scripts/weekly_report.py context
+python3 scripts/routine_steps.py workdir report
+python3 scripts/weekly_report.py context
 
 Then start ONE agent with the Agent (Task) tool in the FOREGROUND (wait for it),
 on the Sonnet model (model: "sonnet" — the add script checks length, tone,
@@ -848,16 +831,12 @@ prompt (fill in the date):
 
 When it returns, merge and check:
 
-if [ -f /tmp/report/DONE ] && [ -s /tmp/report/entries.json ]; then
-  python3 scripts/weekly_report.py merge /tmp/report/entries.json && python3 scripts/weekly_report.py validate
-else
-  echo "No weekly report this week."
-fi
+python3 scripts/routine_steps.py merge-report
 
 If merge prints REJECTED or validate fails, restore and continue with the news only
 (the report is then missing for this week — say so in the final report):
 
-  git checkout -- data/reports 2>/dev/null; git clean -fdq data/reports
+  python3 scripts/routine_steps.py restore reports
 
 ---
 
@@ -890,4 +869,4 @@ Fridays also include /tmp/report/REPORT.txt and the weekly report merge line.
 Leave publish mode as the very last step of the routine, whether the push
 succeeded or the routine is terminating early in PHASE 2:
 
-rm -f /tmp/feed/PUBLISH_PHASE
+python3 scripts/routine_steps.py publish-end
