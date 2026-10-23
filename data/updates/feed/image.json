@@ -1,5 +1,19 @@
 [
   {
+    "id": "magnific-2026-10-22-1",
+    "service": "magnific",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "팀 그룹 API에 상위 그룹 정보 추가",
+    "summary": "GET /v1/analytics/team-groups 응답에 parent_group_id가 추가돼 하위 그룹 구조를 추가 호출 없이 만들 수 있어요. 기존 필드는 그대로예요.",
+    "details": [
+      "상위 그룹이 없는 그룹은 parent_group_id가 null",
+      "하위 그룹은 상위 그룹의 group_id를 가져요"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-22-2026",
+    "source": "dev"
+  },
+  {
     "id": "krea-2026-10-20-1",
     "service": "krea",
     "date": "2026.10.20",

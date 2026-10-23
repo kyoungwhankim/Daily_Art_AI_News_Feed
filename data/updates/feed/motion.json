@@ -17,6 +17,22 @@
     "source": "notice"
   },
   {
+    "id": "rokoko-2026-10-15-1",
+    "service": "rokoko",
+    "date": "2026.10.15",
+    "kind": "연동",
+    "title": "Rokoko SDK, NVIDIA Isaac Lab 지원",
+    "summary": "Rokoko Smartgloves II로 Isaac Lab의 로봇을 손으로 직접 조작하고 시연 데이터를 기록할 수 있게 됐어요. 기존 Isaac Lab 리타게터와 작업을 그대로 쓸 수 있어요.",
+    "details": [
+      "Rokoko Device SDK가 Isaac Lab 2.3.0(Isaac Sim 5.1.0)을 지원",
+      "Franka 팔과 Fourier GR1T2 휴머노이드 손을 검증",
+      "텔레오퍼레이션 시연을 HDF5로 기록",
+      "Device SDK는 라이선스 방식으로 제공"
+    ],
+    "url": "https://www.rokoko.com/insights/rokoko-sdk-now-supports-nvidia-isaac-lab",
+    "source": "notice"
+  },
+  {
     "id": "iclone-2026-10-08-1",
     "service": "iclone",
     "date": "2026.10.08",

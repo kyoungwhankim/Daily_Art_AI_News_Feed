@@ -1,5 +1,68 @@
 [
   {
+    "id": "hugging-face-2026-10-22-1",
+    "service": "hugging-face",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Hub에서 OpenUSD·SimReady 3D 미리보기 지원",
+    "summary": "USD 파일을 Hub에서 바로 3D 뷰어로 열어볼 수 있게 됐어요. SimReady 패키지가 있는 데이터셋은 페이지에서 3D 에셋 미리보기도 보여줘요.",
+    "details": [
+      "OpenUSD(.usd, .usda, .usdc, .usdz) 파일을 3D 뷰어로 열람",
+      "SimReady 데이터셋에 3D Assets 미리보기 표시",
+      "뷰어는 huggingface.js의 @huggingface/usd-web-viewer로 오픈소스 공개"
+    ],
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-10-22-1",
+    "service": "figma-ai",
+    "date": "2026.10.22",
+    "kind": "요금",
+    "title": "Enterprise 관리자용 AI 크레딧 관리 기능 추가",
+    "summary": "Enterprise 플랜 관리자가 유료 AI 크레딧의 사용자별 기본 권한을 정하고 SCIM으로 한도를 관리할 수 있게 됐어요. 곧 Enterprise 플랜에 순차 적용될 예정이에요.",
+    "details": [
+      "조직·결제 그룹 단위로 유료 AI 크레딧 기본 권한 설정",
+      "SCIM으로 AI 크레딧 접근과 한도 관리",
+      "Starter·Professional 플랜 외부 생성 제어",
+      "팀·폴더·파일 관리용 관리자 REST API 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=new-controls-enterprise-admins",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-22-1",
+    "service": "comfyui",
+    "date": "2026.10.22",
+    "kind": "연동",
+    "title": "ComfyUI v0.42.4 릴리스, 파트너 노드 업데이트",
+    "summary": "VEED 영상 노드와 Mirelo SFX 2.0 노드가 추가되고 Krea 3 이미지 노드에 생각 모드가 생겼어요. 음성 시 입 모양 맞춤과 배경 제거도 워크플로에서 바로 쓸 수 있어요.",
+    "details": [
+      "VEED Fabric 1.0: 사진과 음성으로 립싱크 영상 생성",
+      "VEED Lipsync 2.0: 촬영한 영상의 입 모양을 새 음성에 맞춰 재싱크",
+      "VEED Remove Video Background와 Clean Audio 노드",
+      "Mirelo SFX 2.0: 텍스트나 영상 동작에 맞춘 효과음 생성",
+      "Krea 3 Image 울트라 생각 모드 추가",
+      "HeyGen Voice 노드에 현재 가격 표시"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-42-4",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-22-1",
+    "service": "claude",
+    "date": "2026.10.22",
+    "kind": "연동",
+    "title": "Claude 모델을 Google Cloud에서 바로 사용",
+    "summary": "Google Cloud 프로젝트를 통해 Anthropic이 운영하는 Claude API를 쓸 수 있게 됐어요. 접근은 Google Cloud IAM으로 관리하고 결제는 Google Cloud Marketplace에서 처리해요.",
+    "details": [
+      "Claude Models on Google Cloud (Anthropic managed) 출시",
+      "Claude Opus 5.5 패스트 모드를 이 경로에서도 사용할 수 있어요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
+    "source": "dev"
+  },
+  {
     "id": "hugging-face-2026-10-21-1",
     "service": "hugging-face",
     "date": "2026.10.21",

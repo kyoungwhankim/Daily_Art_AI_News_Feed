@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-10-22-1",
+    "service": "figma-ai",
+    "date": "2026.10.22",
+    "kind": "요금",
+    "title": "Enterprise 관리자용 AI 크레딧 관리 기능 추가",
+    "summary": "Enterprise 플랜 관리자가 유료 AI 크레딧의 사용자별 기본 권한을 정하고 SCIM으로 한도를 관리할 수 있게 됐어요. 곧 Enterprise 플랜에 순차 적용될 예정이에요.",
+    "details": [
+      "조직·결제 그룹 단위로 유료 AI 크레딧 기본 권한 설정",
+      "SCIM으로 AI 크레딧 접근과 한도 관리",
+      "Starter·Professional 플랜 외부 생성 제어",
+      "팀·폴더·파일 관리용 관리자 REST API 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=new-controls-enterprise-admins",
+    "source": "notice"
+  }
+]

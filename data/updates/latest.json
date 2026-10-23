@@ -1,5 +1,149 @@
 [
   {
+    "id": "scenario-2026-10-22-3",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "API v2.141.0: 어시스턴트 모델 확대와 3D 에셋 개선",
+    "summary": "Claude 5.5와 GPT-5.6 Terra 같은 AI 어시스턴트 모델을 API에서 쓸 수 있게 됐어요. 단계별 요금이 적용되고 3D 에셋 내보내기도 더 안정적이에요.",
+    "url": "https://www.scenario.com/changelog/api-v2-141-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-22-2",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "웹 앱 v2.30.0: 텍스트로 3D 생성과 3D 뷰어 확장",
+    "summary": "프롬프트로 Astra 3D와 Opus 5.5 3D 모델을 만들 수 있게 됐어요. STL, PLY, USDZ 파일도 3D 뷰어에서 열 수 있어요.",
+    "details": [
+      "Astra 3D, Opus 5.5 3D 기반 텍스트-투-3D",
+      "새 Genie 모델로 채팅",
+      "STL, PLY, USDZ 3D 뷰어 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/web-app-v2-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-22-1",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "모델",
+    "title": "LTX-2.5, Viggle, Nemotron 3.5 Super 모델 추가",
+    "summary": "영상 편집·복원·업스케일, 3D 모션 캡처, 미디어를 텍스트로 바꾸는 26개 모델이 새로 들어왔어요. 게임 에셋 영상 작업에 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-a02c466567004be7fd505c4fe2383edb5b373680119395de49a8150fed47dfca",
+    "source": "notice"
+  },
+  {
+    "id": "roblox-cube-2026-10-22-1",
+    "service": "roblox-cube",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Studio 베타: Lua로 텍스트 음성(TTS) 에셋 생성",
+    "summary": "Studio에서 AssetService:CreateAssetAsync로 음성 에셋을 Lua 스크립트로 만들 수 있게 됐어요. 음성 생성에 플레이 시간 기준 호출 제한이 없고, 샘플 스크립트로 여러 대사를 한꺼번에 만들 수 있어요.",
+    "details": [
+      "AudioTextToSpeech 객체로 Enum.AssetType.Audio 에셋 생성",
+      "text, voiceId, pitch, speed 필드 지원",
+      "에셋 이름과 설명, 크리에이터 ID 설정은 아직 미지원",
+      "자동 생성된 이름은 에셋 ID 기준"
+    ],
+    "url": "https://devforum.roblox.com/t/studio-beta-text-to-speech-asset-creation-support-in-lua/4950480",
+    "source": "notice"
+  },
+  {
+    "id": "magnific-2026-10-22-1",
+    "service": "magnific",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "팀 그룹 API에 상위 그룹 정보 추가",
+    "summary": "GET /v1/analytics/team-groups 응답에 parent_group_id가 추가돼 하위 그룹 구조를 추가 호출 없이 만들 수 있어요. 기존 필드는 그대로예요.",
+    "details": [
+      "상위 그룹이 없는 그룹은 parent_group_id가 null",
+      "하위 그룹은 상위 그룹의 group_id를 가져요"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-22-2026",
+    "source": "dev"
+  },
+  {
+    "id": "hugging-face-2026-10-22-1",
+    "service": "hugging-face",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Hub에서 OpenUSD·SimReady 3D 미리보기 지원",
+    "summary": "USD 파일을 Hub에서 바로 3D 뷰어로 열어볼 수 있게 됐어요. SimReady 패키지가 있는 데이터셋은 페이지에서 3D 에셋 미리보기도 보여줘요.",
+    "details": [
+      "OpenUSD(.usd, .usda, .usdc, .usdz) 파일을 3D 뷰어로 열람",
+      "SimReady 데이터셋에 3D Assets 미리보기 표시",
+      "뷰어는 huggingface.js의 @huggingface/usd-web-viewer로 오픈소스 공개"
+    ],
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-22-1",
+    "service": "heygen",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "HeyGen Video 최대 30초 영상 생성 지원",
+    "summary": "text-to-video와 image-to-video에서 5초부터 30초까지 길이를 고를 수 있게 됐어요. 모델 ID와 엔드포인트는 그대로예요.",
+    "details": [
+      "turbo 또는 quality 보정에서 5~30초 설정 가능",
+      "해상도 480p, 768p, 1080p, 2K 지원",
+      "duration을 auto로 두면 8~30초 중에서 선택",
+      "Reference-to-video와 MCP 요청은 여전히 15초까지"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-10-22-1",
+    "service": "figma-ai",
+    "date": "2026.10.22",
+    "kind": "요금",
+    "title": "Enterprise 관리자용 AI 크레딧 관리 기능 추가",
+    "summary": "Enterprise 플랜 관리자가 유료 AI 크레딧의 사용자별 기본 권한을 정하고 SCIM으로 한도를 관리할 수 있게 됐어요. 곧 Enterprise 플랜에 순차 적용될 예정이에요.",
+    "details": [
+      "조직·결제 그룹 단위로 유료 AI 크레딧 기본 권한 설정",
+      "SCIM으로 AI 크레딧 접근과 한도 관리",
+      "Starter·Professional 플랜 외부 생성 제어",
+      "팀·폴더·파일 관리용 관리자 REST API 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=new-controls-enterprise-admins",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-22-1",
+    "service": "comfyui",
+    "date": "2026.10.22",
+    "kind": "연동",
+    "title": "ComfyUI v0.42.4 릴리스, 파트너 노드 업데이트",
+    "summary": "VEED 영상 노드와 Mirelo SFX 2.0 노드가 추가되고 Krea 3 이미지 노드에 생각 모드가 생겼어요. 음성 시 입 모양 맞춤과 배경 제거도 워크플로에서 바로 쓸 수 있어요.",
+    "details": [
+      "VEED Fabric 1.0: 사진과 음성으로 립싱크 영상 생성",
+      "VEED Lipsync 2.0: 촬영한 영상의 입 모양을 새 음성에 맞춰 재싱크",
+      "VEED Remove Video Background와 Clean Audio 노드",
+      "Mirelo SFX 2.0: 텍스트나 영상 동작에 맞춘 효과음 생성",
+      "Krea 3 Image 울트라 생각 모드 추가",
+      "HeyGen Voice 노드에 현재 가격 표시"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-42-4",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-10-22-1",
+    "service": "claude",
+    "date": "2026.10.22",
+    "kind": "연동",
+    "title": "Claude 모델을 Google Cloud에서 바로 사용",
+    "summary": "Google Cloud 프로젝트를 통해 Anthropic이 운영하는 Claude API를 쓸 수 있게 됐어요. 접근은 Google Cloud IAM으로 관리하고 결제는 Google Cloud Marketplace에서 처리해요.",
+    "details": [
+      "Claude Models on Google Cloud (Anthropic managed) 출시",
+      "Claude Opus 5.5 패스트 모드를 이 경로에서도 사용할 수 있어요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
+    "source": "dev"
+  },
+  {
     "id": "synthesia-2026-10-21-1",
     "service": "synthesia",
     "date": "2026.10.21",
@@ -8,6 +152,44 @@
     "summary": "Node.js에서 LiveKit 에이전트에 Synthesia Interactive Avatar를 몇 줄의 코드로 붙일 수 있는 공식 플러그인이 나왔어요.",
     "url": "https://docs.synthesia.io/changelog/interactive-avatars-livekit-plugin-for-nodejs",
     "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-21-3",
+    "service": "scenario",
+    "date": "2026.10.21",
+    "kind": "API",
+    "title": "API v2.140.0: 텍스트-투-3D와 에셋 복구 기능",
+    "summary": "API에서 텍스트로 3D를 만들 수 있게 됐고, 삭제한 에셋을 복구할 수 있어요. BYOK 자격 증명 제어와 작업 상태 추적도 강화됐어요.",
+    "details": [
+      "영상 모델 확대",
+      "삭제된 에셋 복구",
+      "BYOK 자격 증명 세부 제어"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-140-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-21-2",
+    "service": "scenario",
+    "date": "2026.10.21",
+    "kind": "기능",
+    "title": "MiniMax H3 Max 리프레임으로 새 화면비 영상 생성",
+    "summary": "기존 영상을 새 화면비로 바꾸면서 빈 영역은 AI가 채워 줘요. 480p부터 1080p까지 출력할 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-6c735a53dfe41d4d07d3862224426a30ddb7e58bd75127c0782b9991da1919bb",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-21-1",
+    "service": "scenario",
+    "date": "2026.10.21",
+    "kind": "종료",
+    "title": "Seedance 1 모델 2026년 11월 11일 종료",
+    "summary": "Seedance 1.5 Pro, Seedance 1 Pro, Seedance 1 Pro Fast가 11월 11일부터 동작을 멈춰요. 그 전까지는 계속 쓸 수 있어요.",
+    "details": [
+      "Seedance 2.0 Mini, Seedance 2.0, Seedance 2.5로 옮기는 것을 권장"
+    ],
+    "url": "https://www.scenario.com/changelog/seedance-1-models-retirement",
+    "source": "notice"
   },
   {
     "id": "runway-2026-10-21-1",
@@ -92,6 +274,16 @@
     "title": "Claude Duet 리서치 프리뷰 공개",
     "summary": "Pro와 Max 플랜 사용자를 대상으로 Claude Duet 리서치 프리뷰가 열렸어요. Claude가 먼저 제안하고 움직이는 능동형 에이전트 앱이에요.",
     "url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-20-2",
+    "service": "scenario",
+    "date": "2026.10.20",
+    "kind": "모델",
+    "title": "FLUX.3 Max 영상 모델에 이미지·키프레임 입력 추가",
+    "summary": "FLUX.3 Max로 텍스트, 단일 이미지, 최대 10개 키프레임에서 최대 20초 720p 또는 1080p 영상을 만들 수 있어요. 네이티브 오디오도 포함돼요.",
+    "url": "https://www.scenario.com/changelog/models-12db7727a427d49e4a4191d0fd176e61cf526ba69e82b4209f943f086df0aa50",
     "source": "notice"
   },
   {
@@ -276,6 +468,22 @@
     "source": "notice"
   },
   {
+    "id": "elevenlabs-2026-10-19-1",
+    "service": "elevenlabs",
+    "date": "2026.10.19",
+    "kind": "모델",
+    "title": "Eleven Realtime 모델과 실시간 번역, Video to Music API 공개",
+    "summary": "ElevenAgents 음성 에이전트용 Eleven Realtime 모델이 나왔고, 영상에 맞춰 음악을 만들어 주는 Video to Music API도 제공돼요. 실시간 번역은 엔터프라이즈 워크스페이스에서 쓸 수 있어요.",
+    "details": [
+      "Eleven Realtime v1 Mini(기본)와 v1 Max(복잡한 추론용) 출시, OpenAI Realtime API 형식과 호환",
+      "Realtime Translation: 말하는 도중 목소리를 유지한 채 다른 언어로 실시간 번역(WebSocket, 엔터프라이즈)",
+      "Video to Music API: 영상 최대 10개(합계 200MB)에서 어울리는 음악 생성, 효과음과 스템 분리 옵션",
+      "ElevenAgents에 알림(Alerts)과 Guardrails 정식 출시, 새 LLM 추가"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/19",
+    "source": "dev"
+  },
+  {
     "id": "scenario-2026-10-18-1",
     "service": "scenario",
     "date": "2026.10.18",
@@ -313,192 +521,6 @@
     "title": "Mureka 라이브러리에 워크스페이스 기능 추가",
     "summary": "곡을 워크스페이스별로 나눠 정리할 수 있게 됐어요. 여러 곡을 한 번에 선택해 필터링하거나 다운로드하고 이동할 수 있어요.",
     "url": "https://www.mureka.ai/whats-new_en.html",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-17-1",
-    "service": "krea",
-    "date": "2026.10.17",
-    "kind": "모델",
-    "title": "Wan 3.0 Prime 영상 모델 추가와 Agent 비용 미리 확인",
-    "summary": "Krea에서 Alibaba Wan 3.0 Prime 영상 모델을 쓸 수 있게 됐어요. Agent와 MCP에서는 생성 전에 비용을 미리 확인할 수 있어요.",
-    "details": [
-      "Wan 3.0 Prime: Wan 3.0의 빠른 버전으로 영상 생성 지원",
-      "Agent와 Krea MCP에서 생성 비용(compute units)을 미리 확인",
-      "워크스페이스 관리자가 Agent의 Connect 버튼에서 연동을 바로 켤 수 있음",
-      "커스텀 앱이 세션별로 설정을 기억하도록 개선"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-17-2026",
-    "source": "dev"
-  },
-  {
-    "id": "higgsfield-2026-10-17-1",
-    "service": "higgsfield",
-    "date": "2026.10.17",
-    "kind": "기능",
-    "title": "Higgsfield Community 공개와 Higgsfield Grants 도입",
-    "summary": "작품과 프로필을 공유하는 Higgsfield Community가 열렸어요. 커뮤니티 평가와 성과에 따라 생성 크레딧을 받을 수 있는 Grants도 함께 도입됐어요.",
-    "details": [
-      "Community 페이지에서 프로젝트·샷·크리에이터를 한곳에서 탐색",
-      "프로필에 Ranking과 Creators 탭 추가",
-      "공개된 Open Project는 사용한 모델과 프롬프트를 볼 수 있음"
-    ],
-    "url": "https://higgsfield.ai/blog/higgsfield-community",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-17-1",
-    "service": "heygen",
-    "date": "2026.10.17",
-    "kind": "API",
-    "title": "전문 음성 생성 시 언어 입력이 선택 사항으로 변경",
-    "summary": "전문가 모드 음성 생성 API에서 language 값을 생략할 수 있게 됐어요. 생략하면 녹음에서 언어를 자동으로 감지해요.",
-    "url": "https://docs.heygen.com/changelog#professional-voices-without-a-language",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-16-2",
-    "service": "scenario",
-    "date": "2026.10.16",
-    "kind": "연동",
-    "title": "Scenario Godot 플러그인 v0.2.1: 생성 폼 안정화",
-    "summary": "Godot 에디터에서 쓰는 Scenario 플러그인의 생성 폼이 더 안정적으로 동작하도록 수정됐어요.",
-    "url": "https://www.scenario.com/changelog/plugins-godot-v0-2-1",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-16-1",
-    "service": "scenario",
-    "date": "2026.10.16",
-    "kind": "모델",
-    "title": "OmniHuman 2, Meshy T2.5, Krea 3 모델 추가",
-    "summary": "Scenario 모델 목록에 OmniHuman 2, Meshy T2.5, Krea 3가 새로 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/models-0b9e21c35a750fd10ab204df96017cfc68a270c07872edecc06f0b085bef7bd8",
-    "source": "notice"
-  },
-  {
-    "id": "roblox-cube-2026-10-16-1",
-    "service": "roblox-cube",
-    "date": "2026.10.16",
-    "kind": "기능",
-    "title": "텍스처 생성 Quality 모드 베타 공개",
-    "summary": "Roblox Studio에서 4K PBR 텍스처(컬러·러프니스·메탈릭)를 만드는 Quality 모드가 베타로 나왔어요. 약 2분이 걸리고, 기존 Fast 모드보다 세밀해요.",
-    "details": [
-      "Quality 모드: 4K PBR 텍스처, 약 2분 소요",
-      "Fast 모드: 1K 컬러 전용, 약 30초",
-      "여러 파트로 된 메시 텍스처 생성 지원",
-      "투명 재질과 노멀 맵 세부는 아직 미지원"
-    ],
-    "url": "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282",
-    "source": "notice"
-  },
-  {
-    "id": "pika-2026-10-16-1",
-    "service": "pika",
-    "date": "2026.10.16",
-    "kind": "연동",
-    "title": "Pika, ChatGPT 안에서 사용 가능",
-    "summary": "Pika를 ChatGPT 플러그인으로 연결해 대화 안에서 바로 영상, 이미지, 사운드를 만들 수 있어요. 40개 이상의 크리에이티브 앱과 100개 이상의 생성 모델이 포함돼요.",
-    "url": "https://pika.art/blog/pika-chatgpt-plugin",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-16-1",
-    "service": "krea",
-    "date": "2026.10.16",
-    "kind": "모델",
-    "title": "Krea 3 기본 이미지 모델 전환과 FLUX 3 Video 2K·4K",
-    "summary": "Krea 3가 앱의 기본 이미지 모델이 되었어요. 모든 사용자가 바로 생성할 수 있고, Krea 3 Ultra는 Max 플랜 이상에서 쓸 수 있어요.",
-    "details": [
-      "Krea 3 기본 모델 전환, Ultra는 Max 플랜 이상",
-      "Krea MCP에서 남은 compute unit 확인 가능",
-      "Topaz Starlight Fast 3 영상 업스케일러 추가",
-      "FLUX 3 Video 2K·4K 출력 지원",
-      "Krea Agent 속도 개선과 명령 기록 표시"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-16-2026",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-10-16-1",
-    "service": "hugging-face",
-    "date": "2026.10.16",
-    "kind": "기능",
-    "title": "Hub 모델·데이터셋 페이지를 작성자별로 필터링",
-    "summary": "모델과 데이터셋 페이지를 작성자 기준으로 걸러 볼 수 있게 됐어요. 사용자와 조직 프로필에서 바로 필터를 열 수 있어요.",
-    "details": [
-      "huggingface.co/models?author=… 형태로 작성자 필터 지원",
-      "필터 카드에 현재 보고 있는 작성자가 표시되고 작업·크기·라이브러리·라이선스 필터와 함께 유지"
-    ],
-    "url": "https://huggingface.co/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "synthesia-2026-10-15-1",
-    "service": "synthesia",
-    "date": "2026.10.15",
-    "kind": "연동",
-    "title": "Synthesia MCP 공개 베타",
-    "summary": "Claude나 ChatGPT에서 Synthesia에 연결해 채팅 안에서 영상 초안을 만들고 영상을 생성하고 라이브러리를 검색할 수 있어요. Syren 영상도 채팅으로 수정할 수 있어요.",
-    "url": "https://docs.synthesia.io/changelog/synthesia-mcp",
-    "source": "dev"
-  },
-  {
-    "id": "suno-2026-10-15-1",
-    "service": "suno",
-    "date": "2026.10.15",
-    "kind": "기능",
-    "title": "Suno 공유 워크스페이스와 공유 커스텀 모델 추가",
-    "summary": "팀이 함께 쓸 수 있는 공유 워크스페이스가 생겼어요. 초대받은 사람만 곡 라이브러리에 접근할 수 있어요.",
-    "details": [
-      "공유 워크스페이스는 Pro·Premier 사용자가 쓸 수 있어요",
-      "공유 커스텀 모델로 협업자와 모델을 나눠 쓸 수 있고, 입력이 2배로 늘었어요 (Premier 전용)"
-    ],
-    "url": "https://suno.com/release-notes",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-15-3",
-    "service": "scenario",
-    "date": "2026.10.15",
-    "kind": "모델",
-    "title": "Mirelo SFX 2.0 추가: 텍스트·영상에서 오디오 생성",
-    "summary": "Mirelo SFX 2.0이 추가돼 텍스트에서 오디오, 영상에서 오디오, 영상에서 영상으로의 변환을 할 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-83a2a126f6ad068162fc0146fcc084062355bb5e6b2ae0db9d8507e7ca304c4c",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-15-2",
-    "service": "scenario",
-    "date": "2026.10.15",
-    "kind": "모델",
-    "title": "P-Video 2 Pro Reference, 영상·오디오 가이드 지원",
-    "summary": "P-Video 2 Pro Reference가 영상과 오디오를 가이드 입력으로 받을 수 있게 됐어요.",
-    "url": "https://www.scenario.com/changelog/models-8893eb2fdb27cfa9aedf323f038efca0ba94a06a193d5f9504484d45cfcaf443",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-15-1",
-    "service": "scenario",
-    "date": "2026.10.15",
-    "kind": "앱",
-    "title": "Scenario 웹 앱 v2.29.0: 이미지 일괄 업로드와 Seedance 2.5 드래프트",
-    "summary": "여러 이미지를 한 번에 올리는 일괄 업로드가 추가됐고, Seedance 2.5 드래프트를 지원해요.",
-    "url": "https://www.scenario.com/changelog/web-app-v2-29-0",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-10-15-1",
-    "service": "runway",
-    "date": "2026.10.15",
-    "kind": "연동",
-    "title": "Runway MCP에 Mirelo SFX 2.0과 BiRefNet v2 추가",
-    "summary": "Runway MCP에서 Mirelo SFX 2.0으로 클립에 맞는 효과음 트랙을 만들고, BiRefNet v2로 배경을 자동 제거할 수 있게 되었어요.",
-    "details": [
-      "Mirelo SFX 2.0: 클립과 설명으로 발걸음, 환경음 같은 별도 오디오 트랙 생성",
-      "BiRefNet v2: 전경을 자동으로 인식해 배경 제거, 제품 사진과 에셋 준비에 활용"
-    ],
-    "url": "https://runwayml.com/changelog",
     "source": "notice"
   }
 ]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "scenario-2026-10-22-1",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "모델",
+    "title": "LTX-2.5, Viggle, Nemotron 3.5 Super 모델 추가",
+    "summary": "영상 편집·복원·업스케일, 3D 모션 캡처, 미디어를 텍스트로 바꾸는 26개 모델이 새로 들어왔어요. 게임 에셋 영상 작업에 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-a02c466567004be7fd505c4fe2383edb5b373680119395de49a8150fed47dfca",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-22-2",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "웹 앱 v2.30.0: 텍스트로 3D 생성과 3D 뷰어 확장",
+    "summary": "프롬프트로 Astra 3D와 Opus 5.5 3D 모델을 만들 수 있게 됐어요. STL, PLY, USDZ 파일도 3D 뷰어에서 열 수 있어요.",
+    "details": [
+      "Astra 3D, Opus 5.5 3D 기반 텍스트-투-3D",
+      "새 Genie 모델로 채팅",
+      "STL, PLY, USDZ 3D 뷰어 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/web-app-v2-30-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-22-3",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "API v2.141.0: 어시스턴트 모델 확대와 3D 에셋 개선",
+    "summary": "Claude 5.5와 GPT-5.6 Terra 같은 AI 어시스턴트 모델을 API에서 쓸 수 있게 됐어요. 단계별 요금이 적용되고 3D 에셋 내보내기도 더 안정적이에요.",
+    "url": "https://www.scenario.com/changelog/api-v2-141-0",
+    "source": "dev"
+  }
+]

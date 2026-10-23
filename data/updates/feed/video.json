@@ -1,5 +1,21 @@
 [
   {
+    "id": "heygen-2026-10-22-1",
+    "service": "heygen",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "HeyGen Video 최대 30초 영상 생성 지원",
+    "summary": "text-to-video와 image-to-video에서 5초부터 30초까지 길이를 고를 수 있게 됐어요. 모델 ID와 엔드포인트는 그대로예요.",
+    "details": [
+      "turbo 또는 quality 보정에서 5~30초 설정 가능",
+      "해상도 480p, 768p, 1080p, 2K 지원",
+      "duration을 auto로 두면 8~30초 중에서 선택",
+      "Reference-to-video와 MCP 요청은 여전히 15초까지"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
     "id": "synthesia-2026-10-21-1",
     "service": "synthesia",
     "date": "2026.10.21",

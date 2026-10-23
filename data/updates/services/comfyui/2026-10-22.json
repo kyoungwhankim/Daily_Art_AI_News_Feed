@@ -1,0 +1,20 @@
+[
+  {
+    "id": "comfyui-2026-10-22-1",
+    "service": "comfyui",
+    "date": "2026.10.22",
+    "kind": "연동",
+    "title": "ComfyUI v0.42.4 릴리스, 파트너 노드 업데이트",
+    "summary": "VEED 영상 노드와 Mirelo SFX 2.0 노드가 추가되고 Krea 3 이미지 노드에 생각 모드가 생겼어요. 음성 시 입 모양 맞춤과 배경 제거도 워크플로에서 바로 쓸 수 있어요.",
+    "details": [
+      "VEED Fabric 1.0: 사진과 음성으로 립싱크 영상 생성",
+      "VEED Lipsync 2.0: 촬영한 영상의 입 모양을 새 음성에 맞춰 재싱크",
+      "VEED Remove Video Background와 Clean Audio 노드",
+      "Mirelo SFX 2.0: 텍스트나 영상 동작에 맞춘 효과음 생성",
+      "Krea 3 Image 울트라 생각 모드 추가",
+      "HeyGen Voice 노드에 현재 가격 표시"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-42-4",
+    "source": "dev"
+  }
+]

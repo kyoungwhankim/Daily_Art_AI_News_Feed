@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2026-10-19-1",
+    "service": "elevenlabs",
+    "date": "2026.10.19",
+    "kind": "모델",
+    "title": "Eleven Realtime 모델과 실시간 번역, Video to Music API 공개",
+    "summary": "ElevenAgents 음성 에이전트용 Eleven Realtime 모델이 나왔고, 영상에 맞춰 음악을 만들어 주는 Video to Music API도 제공돼요. 실시간 번역은 엔터프라이즈 워크스페이스에서 쓸 수 있어요.",
+    "details": [
+      "Eleven Realtime v1 Mini(기본)와 v1 Max(복잡한 추론용) 출시, OpenAI Realtime API 형식과 호환",
+      "Realtime Translation: 말하는 도중 목소리를 유지한 채 다른 언어로 실시간 번역(WebSocket, 엔터프라이즈)",
+      "Video to Music API: 영상 최대 10개(합계 200MB)에서 어울리는 음악 생성, 효과음과 스템 분리 옵션",
+      "ElevenAgents에 알림(Alerts)과 Guardrails 정식 출시, 새 LLM 추가"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/19",
+    "source": "dev"
+  }
+]

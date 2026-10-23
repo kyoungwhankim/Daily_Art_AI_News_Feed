@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hugging-face-2026-10-22-1",
+    "service": "hugging-face",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Hub에서 OpenUSD·SimReady 3D 미리보기 지원",
+    "summary": "USD 파일을 Hub에서 바로 3D 뷰어로 열어볼 수 있게 됐어요. SimReady 패키지가 있는 데이터셋은 페이지에서 3D 에셋 미리보기도 보여줘요.",
+    "details": [
+      "OpenUSD(.usd, .usda, .usdc, .usdz) 파일을 3D 뷰어로 열람",
+      "SimReady 데이터셋에 3D Assets 미리보기 표시",
+      "뷰어는 huggingface.js의 @huggingface/usd-web-viewer로 오픈소스 공개"
+    ],
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  }
+]
