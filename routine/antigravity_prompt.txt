@@ -12,7 +12,12 @@ SETUP — run these first, one command at a time
 =====================================================================
 
 The Automation prompt already moved the terminal to the repository and reset it to main.
-Check the environment and get today's date:
+`git reset --hard` keeps new files that an earlier (test) run left in data/, so remove them
+first — otherwise they would be published with today's push:
+
+git clean -fdq data
+
+Then check the environment and get today's date:
 
 $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py env-check
 $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py today
