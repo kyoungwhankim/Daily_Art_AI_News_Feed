@@ -87,7 +87,7 @@ def main():
     slug_suffix = today.strftime('%Y-%m')
     day_file = feed_data.date_to_filename(upload_date)
 
-    with open(NEW_ARTICLES_JSON) as f:
+    with open(NEW_ARTICLES_JSON, encoding='utf-8') as f:
         new_articles = json.load(f)
 
     keyword_lists = feed_data.keyword_lists()

@@ -43,10 +43,8 @@ HARD RULES
 STEP 1 — SETUP
 ---------------------------------------------------------------------
 
-mkdir -p /tmp/updates && rm -f /tmp/updates/DONE
-python3 -c "import json; json.dump([], open('/tmp/updates/entries.json','w'))"
-: > /tmp/updates/failed_sources.txt
 cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/routine_steps.py agent-init updates
 python3 scripts/detect_source_changes.py check --out /tmp/updates/changed.json
 python3 scripts/service_updates.py state
 
@@ -85,7 +83,7 @@ For each printed service (the slug, mode and match words are on its line):
     move on to the next source and note it for the FINISH report, and add its URL as one line to
     /tmp/updates/failed_sources.txt (then it is checked again tomorrow):
 
-      echo "SOURCE_URL" >> /tmp/updates/failed_sources.txt
+      python3 scripts/routine_steps.py agent-note updates "SOURCE_URL"
 
     If a listing shows only relative times ("3 hours ago", "yesterday"), open the post itself to
     read its date. Every entry's url must be the post itself, never the blog / news listing page
@@ -159,6 +157,8 @@ For each printed service (the slug, mode and match words are on its line):
       ]
       JSONEOF
 
+    (Without heredocs: write the JSON array to a file and add `--file PATH` to the save command.)
+
     Fix and re-save anything REJECTED. "SKIPPED (already collected)" is fine.
 
  f) Print one line before moving on:
@@ -174,13 +174,7 @@ STEP 3 — VERIFY
 
 cd /home/user/Daily_Art_AI_News_Feed
 python3 scripts/service_updates.py check /tmp/updates/entries.json
-python3 -c "
-import json, collections
-e = json.load(open('/tmp/updates/entries.json'))
-c = collections.Counter(x['service'] for x in e)
-print('Entries per service:', dict(c) or 'none')
-print('Total:', len(e))
-"
+python3 scripts/routine_steps.py agent-count updates
 
 ---------------------------------------------------------------------
 FINISH (always, last step)
@@ -188,12 +182,12 @@ FINISH (always, last step)
 
 Write a short report and create the DONE marker:
 
-python3 - << 'PYEOF'
-import json
-report = """[한 줄씩: 서비스별 모드, 저장 개수, 읽지 못한 출처]"""
-open('/tmp/updates/REPORT.txt', 'w').write(report)
-open('/tmp/updates/DONE', 'w').write('done')
-print(report)
-PYEOF
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/routine_steps.py agent-finish updates << 'EOF'
+[한 줄씩: 서비스별 모드, 저장 개수, 읽지 못한 출처]
+EOF
+
+(Without heredocs: write the report text to a file and run
+`python3 scripts/routine_steps.py agent-finish updates --file PATH`.)
 
 Your final message to the main session is that report.

@@ -24,7 +24,8 @@ import json
 import os
 import re
 
-REPO = os.environ.get('REPO_PATH', '/home/user/Daily_Art_AI_News_Feed')
+# 저장소 위치: REPO_PATH가 있으면 그것, 없으면 이 파일(scripts/)의 상위 폴더 — 어느 컴퓨터에서든 동작
+REPO = os.environ.get('REPO_PATH') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(REPO, 'data')
 ARTICLES_DIR = os.path.join(DATA_DIR, 'articles')
 INDEX_PATH = os.path.join(DATA_DIR, 'index.json')

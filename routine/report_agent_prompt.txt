@@ -79,7 +79,7 @@ STEP 1 — READ THIS WEEK
 ---------------------------------------------------------------------
 
 cd /home/user/Daily_Art_AI_News_Feed
-mkdir -p /tmp/report && echo '[]' > /tmp/report/entries.json && rm -f /tmp/report/DONE
+python3 scripts/routine_steps.py agent-init report
 cat /tmp/report/context.md
 
 context.md lists, for each role, the articles that match that role (same rule as the site's
@@ -118,6 +118,8 @@ text must not contain an apostrophe — avoid it, or write it as the JSON escape
 
 python3 scripts/weekly_report.py add /tmp/report/entries.json '{"role": "3d", "title": "...", "lede": "...", "must_know": ["...", "..."], "implications": ["...", "...", "...", "..."], "refs": ["id1", "id2"]}'
 
+(Or write the JSON to a file and run `python3 scripts/weekly_report.py add /tmp/report/entries.json --file PATH`.)
+
 The add script prints SAVED <role> when the report is stored. Saving the same role again
 replaces its earlier report — use that to correct a report you already saved.
 
@@ -129,11 +131,5 @@ anything that sounds machine-written or generic enough to fit any role? If so, r
 FINISH
 ---------------------------------------------------------------------
 
-python3 - <<'PY'
-import json
-e = json.load(open('/tmp/report/entries.json'))
-line = f'Weekly report agent: wrote {len(e)} reports — ' + ', '.join(x['role'] for x in e)
-open('/tmp/report/REPORT.txt', 'w').write(line + '\n')
-print(line)
-open('/tmp/report/DONE', 'w').write('done')
-PY
+cd /home/user/Daily_Art_AI_News_Feed
+python3 scripts/routine_steps.py agent-finish report

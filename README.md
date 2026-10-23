@@ -198,6 +198,7 @@ AI 전문 출처가 아니면 제목·요약에 AI 관련 단어가 있는 글�
 
 - 루틴(claude.ai Routines)에 저장된 프롬프트는 `routine/trigger_prompt.txt`(짧은 불러오기용)다. 실행할 때마다 main을 받아 `routine/daily_feed_prompt.txt`를 읽고 그대로 따른다 — 루틴 내용은 레포의 이 파일만 고치면 된다
 - 계정을 바꾸거나 새 루틴으로 옮길 때 맞출 설정(프롬프트·실행 주기·모델·`GITHUB_TOKEN`·네트워크): [docs/routine-setup.md](docs/routine-setup.md)
+- Google Antigravity Automation(Windows, Gemini)으로 돌릴 때: [docs/antigravity-setup.md](docs/antigravity-setup.md). Automation은 `routine/antigravity_prompt.txt`를 읽고, 그 파일이 같은 지침(`daily_feed_prompt.txt`)을 Windows 방식으로 따르게 한다. 지침의 셸 단계는 `scripts/routine_steps.py` 명령으로 모아 두어 bash가 없어도 돈다
 
 하나의 루틴이 한 세션 안에서 다음 단계를 순서대로 수행한다. 서비스 업데이트만 별도 에이전트가 맡는다.
 

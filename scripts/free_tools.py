@@ -284,6 +284,8 @@ def main() -> int:
         return cmd_due()
     if cmd == 'list':
         return cmd_list()
+    if cmd == 'add' and len(sys.argv) == 5 and sys.argv[3] == '--file':   # JSON을 파일로 받기
+        return cmd_add(sys.argv[2], open(sys.argv[4], encoding='utf-8').read())
     if cmd == 'add' and len(sys.argv) == 4:
         return cmd_add(sys.argv[2], sys.argv[3])
     if cmd == 'merge' and len(sys.argv) == 3:
