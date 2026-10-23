@@ -36,6 +36,7 @@ STOP = {'ai', 'the', 'a', 'an', 'of', 'and', 'for', 'to', 'in', 'on', 'with', 'i
         'game', 'games', 'gaming', 'studio', 'studios', 'model', 'models', 'tool', 'tools', 'video', 'image',
         '생성형', '게임', '공개', '도입', '출시', '발표', '기능', '모델', '개발', '사용', '위한', '통해', '대한'}
 THRESHOLD = 0.22
+RARE_DF = 3        # 최근 기사 3건 이하에만 나오는 3글자 이상 한국어 낱말은 고유명사처럼 취급
 LIKELY = 0.35      # 이 점수 이상이면 같은 소식일 가능성이 높다 — 루틴은 같은 사건이 아님을 확인할 때만 저장한다
 
 
@@ -90,9 +91,14 @@ def main():
         if dt.date(*map(int, day.split('.'))) < since:
             continue
         candidates += feed_data.read_day(name)
+    # 낱말마다 최근 기사 몇 건에 나오는지 — 드물게 나오는 한국어 고유명사(메가잼, 쯔꾸르 …)도 '흔치 않은 이름'으로 본다
+    cand_tok = [tokens(a['headline'] + ' ' + a.get('summary', '')) for a in candidates]
+    df = {}
+    for ts in cand_tok:
+        for t in ts:
+            df[t] = df.get(t, 0) + 1
     found = []
-    for a in candidates:
-        old_tok = tokens(a['headline'] + ' ' + a.get('summary', ''))
+    for a, old_tok in zip(candidates, cand_tok):
         shared = new_tok & old_tok
         # 제목끼리, 그리고 새 제목과 예전 기사의 제목+요약을 비교해 더 높은 쪽을 쓴다
         bi = max(jaccard(new_bi, bigrams(a['headline'])),
@@ -101,9 +107,11 @@ def main():
         cover = len(shared) / len(new_tok) if new_tok else 0.0
         score = 0.5 * bi + 0.5 * max(jaccard(new_tok, old_tok), cover * 0.8)
         # 이름이 흔치 않은 고유명사(영문)나 숫자(금액·수치)가 둘 이상 겹치면 같은 소식일 가능성이 크다
-        rare = {t for t in shared if re.search(r'[a-z0-9]', t)}
+        rare = {t for t in shared if re.search(r'[a-z0-9]', t) or (len(t) >= 3 and df.get(t, 0) <= RARE_DF)}
         if len(rare) >= 2:
             score += 0.15
+        elif any(df.get(t, 0) <= 2 for t in rare):    # 아주 드문 이름 하나만 겹쳐도 후보로는 보여 준다
+            score += 0.1
         # 한국어 핵심 낱말이 넷 이상 겹치면 같은 사건일 가능성이 크다
         if len(shared - rare) >= 4:
             score += 0.1
