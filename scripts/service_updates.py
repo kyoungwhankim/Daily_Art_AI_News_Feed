@@ -209,13 +209,13 @@ def sorted_entries(items: list) -> list:
 
 
 def _rev(path: str) -> str:
-    with open(path, 'rb') as f:
-        return hashlib.md5(f.read()).hexdigest()[:10]
+    with open(path, 'rb') as f:     # CRLF로 받은 파일도 서버(LF)와 같은 해시
+        return hashlib.md5(f.read().replace(b'\r\n', b'\n')).hexdigest()[:10]
 
 
 def _dump(path: str, obj) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
         f.write('\n')
 
@@ -381,7 +381,7 @@ def cmd_save(args):
         have.add(key)
         saved += 1
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
-    with open(args.out, 'w', encoding='utf-8') as f:
+    with open(args.out, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(entries, f, ensure_ascii=False, indent=1)
     print(f'Saved {saved}, skipped {dup} duplicates, rejected {bad}. {args.out} now has {len(entries)} entries.')
     if bad:

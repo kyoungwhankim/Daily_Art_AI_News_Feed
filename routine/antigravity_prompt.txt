@@ -14,12 +14,13 @@ SETUP — run these first, one command at a time
 The Automation prompt already moved the terminal to the repository and reset it to main.
 Check the environment and get today's date:
 
-python scripts/routine_steps.py env-check
-python scripts/routine_steps.py today
-python scripts/routine_steps.py paths
+$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py env-check
+$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py today
+$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py paths
 
-- env-check must end with "Environment OK.". If it says "utf-8 : NOT SET", run
-  `$env:PYTHONUTF8 = "1"` and run env-check again. If it still fails (python, git, curl or node
+- Each terminal call may start a fresh PowerShell session, so EVERY python command in this
+  routine starts with `$env:PYTHONUTF8 = "1"; ` (rule W1). Without it Korean text breaks.
+- env-check must end with "Environment OK.". If it still fails (python, git, curl or node
   missing), stop and report the failing line.
 - `today` prints TODAY (KST, YYYY-MM-DD). Use it wherever the files say {{date}}.
 - `paths` prints where the work folders really are on this computer (e.g. /tmp/feed is
@@ -36,8 +37,9 @@ WINDOWS RULES (W) — how to run the commands written in the routine files
 The routine files were written for a Linux bash shell. Your terminal is Windows PowerShell.
 Translate every command like this — and change nothing else:
 
-W1. `python3` → `python`. Arguments stay the same, including paths like /tmp/feed/digest.json
-    (Python on this computer maps them to the work folders `paths` printed).
+W1. `python3 ...` → `$env:PYTHONUTF8 = "1"; python ...` — always with that prefix. Arguments
+    stay the same, including paths like /tmp/feed/digest.json (Python on this computer maps
+    them to the work folders `paths` printed).
 
 W2. `/home/user/Daily_Art_AI_News_Feed` means REPO_DIR. Lines that are only
     `cd /home/user/Daily_Art_AI_News_Feed` and the prefix `cd /home/user/Daily_Art_AI_News_Feed && `
@@ -67,6 +69,14 @@ W5. Other shell tools:
     - `cat FILE` → read the file with your file-reading tool (use the real path from `paths`).
     - Multi-line commands joined with `\` at line ends do not exist in the current files; if
       you meet one, run it as a single line.
+
+W5b. Quoting text arguments (e.g. find_similar.py --title / --text, agent-note). PowerShell
+    expands `$` inside double quotes and splits on curly quotes, so put each text argument in
+    SINGLE quotes and write a single quote inside it as two single quotes:
+        --title 'Epic AI 게임잼' --text 'Epic''s jam, $50k prize ...'
+    Replace curly quotes (“ ” ‘ ’) in the text with plain ones first. If a command fails because
+    of quoting, fix the quoting and run it again — never skip the step (STEP A2 duplicate check
+    above all).
 
 W6. Git. Skip every `if [ ! -d ... ]; then git clone ... fi` block (the repository is already
     here) and every `git config user.email` / `git config user.name` line. GITHUB_TOKEN is not

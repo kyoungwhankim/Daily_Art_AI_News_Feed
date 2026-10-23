@@ -75,7 +75,7 @@ def load_data() -> dict:
 
 def save_data(data: dict) -> None:
     os.makedirs(os.path.dirname(DATA), exist_ok=True)
-    with open(DATA, 'w', encoding='utf-8') as f:
+    with open(DATA, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
         f.write('\n')
 
@@ -169,7 +169,7 @@ def cmd_add(path: str, raw: str) -> int:
         with open(path, encoding='utf-8') as f:
             entries = json.load(f)
     entries = [x for x in entries if x.get('slug') != slug] + [e]
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(entries, f, ensure_ascii=False, indent=1)
     print(f'SAVED {slug} ({e["status"]}) — {len(entries)}/{len(tools)} services in {path}')
     return 0

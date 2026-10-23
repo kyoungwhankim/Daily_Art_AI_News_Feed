@@ -75,7 +75,7 @@ def write_keyword_spec(spec: dict) -> None:
                   for i, r in enumerate(rows)]
         lines.append('    ]' + (',' if ti < len(tabs) - 1 else ''))
     lines += ['  }', '}']
-    with open(KEYWORDS_PATH, 'w', encoding='utf-8') as f:
+    with open(KEYWORDS_PATH, 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(lines) + '\n')
 
 
@@ -103,13 +103,13 @@ def serialize_day(articles: list) -> str:
 
 def write_day(name: str, articles: list) -> None:
     os.makedirs(ARTICLES_DIR, exist_ok=True)
-    with open(os.path.join(ARTICLES_DIR, name), 'w', encoding='utf-8') as f:
+    with open(os.path.join(ARTICLES_DIR, name), 'w', encoding='utf-8', newline='\n') as f:
         f.write(serialize_day(articles))
 
 
 def file_rev(name: str) -> str:
-    with open(os.path.join(ARTICLES_DIR, name), 'rb') as f:
-        return hashlib.md5(f.read()).hexdigest()[:10]
+    with open(os.path.join(ARTICLES_DIR, name), 'rb') as f:     # CRLF로 받은 파일도 서버(LF)와 같은 해시
+        return hashlib.md5(f.read().replace(b'\r\n', b'\n')).hexdigest()[:10]
 
 
 def build_index() -> dict:
@@ -126,7 +126,7 @@ def build_index() -> dict:
 
 def write_index() -> dict:
     index = build_index()
-    with open(INDEX_PATH, 'w', encoding='utf-8') as f:
+    with open(INDEX_PATH, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
         f.write('\n')
     return index

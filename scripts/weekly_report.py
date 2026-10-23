@@ -79,7 +79,7 @@ def read_json(path, default):
 
 def write_json(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write('\n')
 
@@ -132,7 +132,7 @@ def cmd_context(args):
                   f'{body[:BODY_EXCERPT]}{"…" if len(body) > BODY_EXCERPT else ""}\n')
     os.makedirs(WORK, exist_ok=True)
     write_json(os.path.join(WORK, 'context.json'), ctx)
-    with open(os.path.join(WORK, 'context.md'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(WORK, 'context.md'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(md) + '\n')
     print(f'Week {start} ~ {end}: {len(arts)} articles → {WORK}/context.json, {WORK}/context.md')
 

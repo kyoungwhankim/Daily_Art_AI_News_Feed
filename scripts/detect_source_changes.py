@@ -204,10 +204,10 @@ def cmd_check(args):
                            'match': s['match'], 'sources': todo})
 
     os.makedirs(os.path.dirname(NEXT_PATH), exist_ok=True)
-    with open(NEXT_PATH, 'w', encoding='utf-8') as f:
+    with open(NEXT_PATH, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(nxt, f, ensure_ascii=False, indent=1)
     if args.out:
-        with open(args.out, 'w', encoding='utf-8') as f:
+        with open(args.out, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(report, f, ensure_ascii=False, indent=1)
 
     n_src = sum(len(r['sources']) for r in report)
@@ -241,7 +241,7 @@ def cmd_commit(args):
                if urlparse(u).netloc not in SKIP_HOSTS}
     state = {u: r for u, r in sorted(state.items()) if u in current}
     os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
-    with open(STATE_PATH, 'w', encoding='utf-8') as f:
+    with open(STATE_PATH, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(state, f, ensure_ascii=False, indent=1)
         f.write('\n')
     print(f'Saved source state: {len(state)} sources ({len(failed)} kept for retry).')

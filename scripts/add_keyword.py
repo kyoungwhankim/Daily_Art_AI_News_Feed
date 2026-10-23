@@ -82,7 +82,7 @@ def main():
         feed_data.write_keyword_spec(spec)
         feed_data.write_index()
         if os.path.exists(TMP_KEYWORDS):
-            with open(TMP_KEYWORDS, 'w') as f:
+            with open(TMP_KEYWORDS, 'w', encoding='utf-8', newline='\n') as f:
                 json.dump(feed_data.keyword_lists(), f, ensure_ascii=False)
         with open(tag_keywords.RULES_PATH, encoding='utf-8') as f:
             rules = json.load(f)
@@ -95,7 +95,7 @@ def main():
                       + (',' if i < len(rules['keywords']) - 1 else '')
                       for i, k in enumerate(rules['keywords'])]
             lines += ['  ]', '}']
-            with open(tag_keywords.RULES_PATH, 'w', encoding='utf-8') as f:
+            with open(tag_keywords.RULES_PATH, 'w', encoding='utf-8', newline='\n') as f:
                 f.write('\n'.join(lines) + '\n')
 
     verb = 'Would add' if args.dry_run else 'Added'

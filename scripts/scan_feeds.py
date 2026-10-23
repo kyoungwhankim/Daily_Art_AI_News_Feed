@@ -236,7 +236,7 @@ def main():
               + (' Checked, nothing new.' if quiet else ''))
         return
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, 'w', encoding='utf-8') as f:
+    with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f'Feed scan done: {total} candidates shown from {len(feeds) - len(problems)} readable feeds '
           f'({len(out)} in {OUT}).')
