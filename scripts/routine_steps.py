@@ -50,6 +50,8 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if hasattr(sys.stdout, 'reconfigure'):      # Windows 콘솔(cp949)에서 출력 중 멈추지 않게
+    sys.stdout.reconfigure(errors='replace')
 FEED = '/tmp/feed'
 DIGEST = os.path.join(FEED, 'digest.json')
 ARTICLES = os.path.join(FEED, 'articles.json')
@@ -73,7 +75,7 @@ def load(path, default):
 
 
 def save(path, data):
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -343,7 +345,7 @@ def cmd_agent_init(args):
         pass
     save(os.path.join(d, 'entries.json'), [])
     if name in NOTE_FILE:
-        open(os.path.join(d, NOTE_FILE[name]), 'w', encoding='utf-8').close()
+        open(os.path.join(d, NOTE_FILE[name]), 'w', encoding='utf-8', newline='\n').close()
     print(f'{name} work started: {d}')
 
 
@@ -386,7 +388,7 @@ def cmd_agent_finish(args):
                   else sys.stdin.read()).strip()
         if not report:
             sys.exit('give the report text on stdin or with --file PATH')
-    with open(os.path.join(d, 'REPORT.txt'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(d, 'REPORT.txt'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(report + '\n')
     with open(os.path.join(d, 'DONE'), 'w') as f:
         f.write('done')
