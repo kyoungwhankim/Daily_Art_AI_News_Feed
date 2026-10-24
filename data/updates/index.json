@@ -1,10 +1,10 @@
 {
   "categories": {
     "image": {
-      "count": 475,
-      "latest": "2026.10.23",
+      "count": 476,
+      "latest": "2026.10.24",
       "file": "updates/feed/image.json",
-      "rev": "1405cab831"
+      "rev": "b34ed8203d"
     },
     "video": {
       "count": 965,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 53,
+      "count": 54,
       "first": "2025.03.26",
-      "latest": "2026.10.23"
+      "latest": "2026.10.24"
     },
     "recraft": {
       "count": 41,

@@ -1,5 +1,19 @@
 [
   {
+    "id": "krea-2026-10-24-1",
+    "service": "krea",
+    "date": "2026.10.24",
+    "kind": "기능",
+    "title": "오디오 도구 및 음성 클론 전체 공개",
+    "summary": "모든 사용자가 오디오 도구를 사용할 수 있으며, Train 메뉴에서 음성 클론이 가능합니다.",
+    "details": [
+      "생성 전 예상 비용 표시",
+      "음성 디자인 옵션 나란히 표시"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-24-2026",
+    "source": "dev"
+  },
+  {
     "id": "krea-2026-10-23-1",
     "service": "krea",
     "date": "2026.10.23",
