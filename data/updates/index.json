@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 474,
-      "latest": "2026.10.22",
+      "count": 475,
+      "latest": "2026.10.23",
       "file": "updates/feed/image.json",
-      "rev": "24756257d3"
+      "rev": "1405cab831"
     },
     "video": {
-      "count": 962,
-      "latest": "2026.10.22",
+      "count": 965,
+      "latest": "2026.10.23",
       "file": "updates/feed/video.json",
-      "rev": "d15103d49e"
+      "rev": "0a3e464c40"
     },
     "3d": {
       "count": 184,
@@ -31,10 +31,10 @@
       "rev": "427c00968f"
     },
     "audio": {
-      "count": 356,
-      "latest": "2026.10.19",
+      "count": 357,
+      "latest": "2026.10.23",
       "file": "updates/feed/audio.json",
-      "rev": "4a85943f47"
+      "rev": "bbdc872a5d"
     },
     "tools": {
       "count": 1026,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 52,
+      "count": 53,
       "first": "2025.03.26",
-      "latest": "2026.10.20"
+      "latest": "2026.10.23"
     },
     "recraft": {
       "count": 41,
@@ -135,14 +135,14 @@
       "latest": "2026.10.21"
     },
     "dream-machine": {
-      "count": 29,
+      "count": 30,
       "first": "2024.09.16",
-      "latest": "2026.10.08"
+      "latest": "2026.10.23"
     },
     "higgsfield": {
-      "count": 59,
+      "count": 60,
       "first": "2025.04.24",
-      "latest": "2026.10.20"
+      "latest": "2026.10.22"
     },
     "ltx-studio": {
       "count": 65,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 78,
+      "count": 79,
       "first": "2025.11.29",
-      "latest": "2026.10.22"
+      "latest": "2026.10.23"
     },
     "synthesia": {
       "count": 190,
@@ -245,9 +245,9 @@
       "latest": "2026.10.19"
     },
     "suno": {
-      "count": 71,
+      "count": 72,
       "first": "2023.12.22",
-      "latest": "2026.10.15"
+      "latest": "2026.10.23"
     },
     "mureka": {
       "count": 56,

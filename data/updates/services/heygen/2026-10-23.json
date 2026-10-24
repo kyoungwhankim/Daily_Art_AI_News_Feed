@@ -1,0 +1,15 @@
+[
+  {
+    "id": "heygen-2026-10-23-1",
+    "service": "heygen",
+    "date": "2026.10.23",
+    "kind": "API",
+    "title": "워크스페이스당 브랜드 용어집 하나로 제한",
+    "summary": "워크스페이스에 용어집이 이미 있으면 새로 만들 때 409 응답을 받아요. 규칙을 바꾸려면 기존 용어집을 PATCH로 수정해야 해요.",
+    "details": [
+      "번역 기능에서 do-not-translate 용어와 강제 번역 목록을 API로 설정 가능"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  }
+]
