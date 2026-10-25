@@ -1,0 +1,83 @@
+[
+  {
+    "id": "industry-15560bfa-2026-10",
+    "tab": "industry",
+    "headline": "크리에이티브 어셈블리, '쇼군 2 컴플리트 에디션' 부실 인정…\"애셋 제작에 생성 AI 안 써, 외주 의혹은 조사 중\"",
+    "summary": "크리에이티브 어셈블리가 쇼군 2 리마스터의 부실을 인정하고 AI 원칙을 밝혔어요.",
+    "body": "<p>크리에이티브 어셈블리가 공식 포럼에 '토탈 워' 시리즈 총괄 부사장 로저 콜럼의 성명을 올리고, 판매가 일시 중단된 '토탈 워: 쇼군 2 컴플리트 에디션'이 회사의 품질 기준에 못 미쳤다고 인정했어요. 이 작품은 2011년작 본편과 모든 DLC를 묶고 그래픽 강화와 일본어 지원을 더한 결정판으로 10월 14일 나왔지만, 무거운 동작과 버그, 기존 모드와의 호환 문제로 스팀 평가가 '압도적으로 부정적'으로 시작했고 세가와 함께 다음 날 판매를 멈췄어요.</p><p>콜럼은 이 작품이 사내 개발작이 아니었고, 사내 팀이 다음 대형 프로젝트에 집중하는 사이 외부 개발을 제대로 챙기지 못해 사내 리뷰와 QA를 거치지 않았다고 설명했어요. 그래도 토탈 워라는 이름을 단 이상 책임은 회사에 있다며, 경험 많은 개발자로 소규모 팀을 꾸려 세가·외주사와 다음 대응을 정하겠다고 했어요.</p><p>게임 속 백과사전 이미지 일부가 AI로 업스케일됐다는 의혹에는, 자사는 게임 애셋 제작에 생성 AI를 쓰지 않고 협력 외주사에도 같은 원칙을 요구한다며 이번 건은 조사 중이라고 답했어요. 대신 분석, 디버깅, 프로토타입처럼 개발자를 돕는 용도로는 AI 툴을 쓰고 있다고 밝혔어요. 외주 결과물까지 AI 정책이 지켜지는지 검수하는 일이 스튜디오의 새 과제가 됐다는 걸 보여 주는 사례예요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/25/28444.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.25",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/201083.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "AI 미사용 선언"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/25/28444.html",
+    "urls": [
+      {
+        "label": "공식 발표",
+        "href": "https://store.steampowered.com/news/app/3846830/view/684142629662759164"
+      }
+    ]
+  },
+  {
+    "id": "industry-37b31ede-2026-10",
+    "tab": "industry",
+    "headline": "팀 스위니, 스팀 AI 사용 고지 또 저격…\"개발자에게 정치적 성명을 강요하는 것\"",
+    "summary": "팀 스위니가 스팀의 생성 AI 사용 고지 의무를 다시 강하게 비판했어요.",
+    "body": "<p>에픽게임즈 CEO 팀 스위니가 밸브가 스팀에서 판매하는 게임에 생성 AI 사용 고지를 계속 의무화하는 것을 두고 다시 비판에 나섰어요. 그는 '개발자에게 증오 집단이 그들을 공격하는 데 쓸 정치적 성명을 쓰도록 강요하는 건 끔찍하다'고 말했어요. 스팀은 생성 AI를 쓴 게임에 사용 방식을 적게 하는데, 예를 들어 '콜 오브 듀티: 모던 워페어 4'는 일부 게임 내 애셋 개발에 생성 AI 툴을 쓴다고 밝히고 있어요.</p><p>스위니는 2025년 11월부터 앞으로 거의 모든 제작에 AI가 쓰일 텐데 고지는 무의미하다고 주장했고, 올해 6월에는 이를 '주홍글씨'에 비유했어요. 이번 발언은 생성 미디어 클라우드 기업 Fal 관계자가 'AI 고지라는 전제 자체가 2026년엔 터무니없다'고 쓴 글에 동조하는 답글이었어요. 에픽은 이달 런처를 바이브 코딩으로 만들었다고 밝혔고, AI 사용을 필수로 내건 언리얼 엔진 게임잼 공지를 냈다가 '원하는 만큼만 써도 된다'고 고치기도 했어요.</p><p>한편 스팀 넥스트 페스트에는 AI를 활용한 데모가 역대 가장 많이 몰렸고, 인기작을 AI로 순식간에 베끼는 클론 문제까지 불거지고 있어요. 고지가 소비자에게 필요한 정보인지, 개발자에게 낙인인지를 둘러싼 논쟁이라 플랫폼 정책 변화에 따라 출시 전략도 달라질 수 있어요.</p><p>원문: <a href=\"https://www.gamesradar.com/games/still-mad-at-valve-for-steams-ai-disclosures-epic-games-boss-criticizes-forcing-developers-to-write-a-political-statement-to-be-used-against-them-by-the-hate-mob/\">GamesRadar+</a></p>",
+    "source": "GamesRadar+",
+    "publishedAt": "2026.10.25",
+    "hue": 30,
+    "image": "https://cdn.mos.cms.futurecdn.net/7M3WodRrErU8qfasfyuLrW-2560-80.jpg",
+    "keywords": [
+      "법·정책",
+      "Epic Games"
+    ],
+    "url": "https://www.gamesradar.com/games/still-mad-at-valve-for-steams-ai-disclosures-epic-games-boss-criticizes-forcing-developers-to-write-a-political-statement-to-be-used-against-them-by-the-hate-mob/"
+  },
+  {
+    "id": "art-19359a46-2026-10",
+    "tab": "art",
+    "headline": "BBC '블루 플래닛 III', AI 시대에 '진짜'임을 보여주려 거친 장면을 그대로 살렸다",
+    "summary": "블루 플래닛 III가 진짜임을 보여주려고 흠 있는 장면을 그대로 남겼어요.",
+    "body": "<p>BBC의 자연 다큐멘터리 '블루 플래닛 III'가 예전 같으면 편집에서 잘려 나갔을 불완전한 장면들을 일부러 남겨, 화면 속 바다가 실제로 촬영된 진짜라는 걸 보여주는 방식을 택했어요. 이전 시리즈는 너무 선명하고 아름다워 오히려 비현실적으로 보일 정도의 영상으로 유명했는데, 요즘은 지나치게 매끄럽고 완벽한 화면이 AI 생성물의 대표적인 징후로 여겨지기 때문이에요.</p><p>총괄 프로듀서 엘리자베스 화이트는 가디언 인터뷰에서 예전에는 물속에 떠다니는 플랑크톤 같은 부유물이 많거나, 화면에 보트나 부표가 걸리거나, 물 상태가 좋지 않으면 그 컷을 버렸다고 말했어요. 이번에는 그런 요소를 모두 그대로 살려 더 진솔하고 자연스러운 바다를 보여준다고 해요. 시리즈에는 해면으로 구멍을 막아 물고기를 가두는 돌고래, 서로 다른 종의 물고기 간 소통, 먹이를 먹으려고 줄지어 늘어선 20만 마리의 게 같은 장면이 담겼어요.</p><p>화이트는 실제 바다 생물이 AI가 상상할 수 있는 것보다 아마 더 놀라울 것이라고 말했어요. AI 영상이 흔해질수록 완벽함 대신 날것의 흔적을 진정성의 증거로 내세우는 연출이 다큐멘터리와 영상 제작 전반에서 하나의 전략이 될 수 있다는 점에서 눈여겨볼 만한 사례예요.</p><p>원문: <a href=\"https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai\">The Verge</a></p>",
+    "source": "The Verge",
+    "publishedAt": "2026.10.25",
+    "hue": 290,
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&strip=all&crop=0%2C3.4695867913185%2C100%2C93.060826417363&w=1200",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+  },
+  {
+    "id": "art-6c183a96-2026-10",
+    "tab": "art",
+    "headline": "잭 도시의 블록, 사람 말소리로만 학습한 음성 대화 AI '데사' 공개",
+    "summary": "블록이 사람 대화 음성만으로 학습한 음성 AI 모델 데사를 공개했어요.",
+    "body": "<p>잭 도시가 이끄는 블록이 '오직 사람의 대화만으로 처음부터 학습한' AI 모델 '데사(Dessa)'를 발표했어요. 데사 팀은 이 모델이 진정한 음성-음성(speech-to-speech) 모델이고, 아는 모든 것을 사람의 말소리에서 배웠다고 설명해요. 맥북 프로 M4 맥스급 이상의 기기에서 로컬로 돌릴 수 있다고 하고, 먼저 소수의 AI 안전 연구자에게 얼리 액세스를 줄 계획이에요.</p><p>블록이 공개한 대화 샘플은 대체로 자연스럽게 주고받지만 가끔 어색하고 묘한 순간도 있어요. 데사 리드 라가반 투라이라트남이 공유한 대화에선 모델이 상대를 처음에 '호날두'라는 사람으로 착각했고, 크리스토퍼 놀란 영화 이야기를 하다 브라이언 싱어의 슈퍼맨 영화로 엉뚱하게 빠지기도 했어요. 깜짝 파리 여행 이야기에는 울먹이는 듯한 감사로 답했고, 오픈AI의 GPT-Live-1 음성 모델과의 대화에선 데사가 더 자연스럽게 들렸다고 해요.</p><p>팀은 아기가 글자를 보지 않고도 말을 배우듯 모델도 그럴 수 있는지 보고 싶었다며, 지금의 음성 AI는 말을 텍스트로 납작하게 바꿔 사람의 타이밍과 감정을 놓친다고 지적했어요. 목소리의 리듬과 감정을 그대로 다루는 접근이라 대화형 캐릭터 음성 연출에도 참고할 만해요.</p><p>원문: <a href=\"https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech\">The Verge</a></p>",
+    "source": "The Verge",
+    "publishedAt": "2026.10.25",
+    "hue": 290,
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS536_AI_HALLUCINATION_B.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+    "keywords": [
+      "음성"
+    ],
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+  },
+  {
+    "id": "art-26c18f5a-2026-10",
+    "tab": "art",
+    "headline": "미국 펜실베이니아주, AI로 만든 광고에 표시 의무화…이미지·영상·음성 모두 해당",
+    "summary": "펜실베이니아주가 AI로 만들거나 크게 고친 광고에 표시를 의무화했어요.",
+    "body": "<p>조시 셔피로 펜실베이니아 주지사가 지난 목요일 'AI 기만 광고 방지법(Artificial Intelligence Deceptive Advertising Act)'에 서명했어요. 이 법은 AI로 생성했거나 AI로 상당 부분 수정한 광고라면 정지 이미지든 영상이든 음성이든 텍스트든, 광고와 같은 형식으로 AI 사용 표시를 넣도록 요구해요. 수십억 달러 규모 기업의 TV 광고부터 동네 식당의 빽빽한 전단지까지 모두 적용 대상이에요.</p><p>펜실베이니아는 AI 콘텐츠 표시를 의무화한 첫 주들 가운데 하나이고, 광고를 어디서 만들었는지와 상관없이 표시를 요구해요. 그래서 펜실베이니아에서도 방송될 광고라면 다른 주에서 보는 광고에도 표시가 붙을 수 있어요. 다만 허점도 많다는 평가예요. '상당한 수정'의 기준이 주관적이고, 패러디·풍자·논평·비평이나 '명백한 허구'는 예외로 두는데 그 범위가 불분명해요. 또 상품이나 서비스에 대해 소비자에게 잘못된 인식을 주는 방식으로 합성 콘텐츠를 쓴 경우에만 표시가 필요하다고 읽힐 여지도 있어요.</p><p>법안을 발의한 닉 피시오타노 주 상원의원 측은 아직 답을 주지 않았어요. AI로 광고 비주얼과 영상을 만드는 제작사라면 표시 방식까지 작업에 포함해야 하는 흐름이에요.</p><p>원문: <a href=\"https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act\">The Verge</a></p>",
+    "source": "The Verge",
+    "publishedAt": "2026.10.25",
+    "hue": 290,
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+    "keywords": [],
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+  }
+]

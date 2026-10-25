@@ -682,8 +682,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "bcd9290fb5479941",
-  "chars": 28824,
+  "hash": "77f27412f5e5b0bb",
+  "chars": 28819,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -3742,7 +3742,7 @@
  },
  "https://docs.bfl.ai/release-notes": {
   "kind": "page",
-  "hash": "8db5a87c872a9acf",
+  "hash": "1ad790256d1cd787",
   "chars": 99771,
   "links": [
    "00a157f3b4",
@@ -6367,6 +6367,7 @@
    "2026-10-14",
    "2026-10-15",
    "2026-10-21",
+   "2026-10-22",
    "April 22, 2026",
    "April 28, 2026",
    "August 04, 2026",
@@ -7367,8 +7368,8 @@
  },
  "https://docs.meshy.ai/en/api/changelog": {
   "kind": "page",
-  "hash": "78ba841505779af1",
-  "chars": 35345,
+  "hash": "13f1e0b139986f86",
+  "chars": 35634,
   "links": [
    "0032b13f45",
    "01901921a5",
@@ -7630,6 +7631,7 @@
    "8fabd4f064",
    "90e32e382b",
    "95304b9cb1",
+   "9a3ba78ce8",
    "9fe43af6d6",
    "a06c489b13",
    "a567c80d54",
@@ -9999,8 +10001,8 @@
  },
  "https://gemini.google/release-notes/": {
   "kind": "page",
-  "hash": "d44aa1955776aaf1",
-  "chars": 68870,
+  "hash": "be68a8afb810fc52",
+  "chars": 120051,
   "links": [
    "027b0afdc2",
    "051c0a046d",
@@ -10462,6 +10464,10 @@
  "https://higgsfield.ai/blog/rss.xml": {
   "kind": "feed",
   "items": [
+   "0a6e20cb6373",
+   "5f66069864c5",
+   "fbb078a1a53c",
+   "5babc34cadc6",
    "3a9611389ffa",
    "3d0e421c18ed",
    "56345de6b0a8",
@@ -10588,15 +10594,15 @@
    "10c53bfd0399",
    "ad9a3d5720ab",
    "5992108e3a4f",
-   "2ee75227ea3c",
+   "70a5632a792a",
    "bbd1481060f2",
    "e155160fad24",
    "058845edafb5",
-   "54641ceef767",
+   "5658725b4156",
    "c799f8adcf16",
    "12bc90924c2f",
    "a0826f030f98",
-   "b60d5a9000de",
+   "226e3a0b02d7",
    "3cffdd04356a",
    "b71e06507558",
    "a6e73073d8ff",
@@ -10627,7 +10633,7 @@
    "4e7373798299",
    "3ca1abacefc5",
    "0a9a10b8767e",
-   "e65e9939bad7",
+   "ded1c4bfcf37",
    "a45b3ce9b806",
    "2916705f23b9",
    "39d21ca38de9",
@@ -10733,6 +10739,10 @@
    "f1e1333034ee",
    "496f548fc814",
    "c9c227a5e157",
+   "2ee75227ea3c",
+   "54641ceef767",
+   "b60d5a9000de",
+   "e65e9939bad7",
    "3ecfbc48650e",
    "5951ccabf52a",
    "ed6db38d5946",
@@ -10751,8 +10761,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "7cdd9afa89f097be",
-  "chars": 4332,
+  "hash": "3d3e4505b13ff9cd",
+  "chars": 4363,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -10863,7 +10873,7 @@
  "https://huggingface.co/api/models?author=Lightricks&sort=lastModified&direction=-1&limit=5": {
   "kind": "page",
   "hash": "2ed1ee66aa993fc5",
-  "chars": 3062,
+  "chars": 3063,
   "links": [],
   "dates": []
  },
@@ -11902,6 +11912,7 @@
    "622a4a9935",
    "63b182e279",
    "64136c8d22",
+   "65051990a7",
    "653a108149",
    "687e003125",
    "6a64a56606",
@@ -15517,8 +15528,8 @@
  },
  "https://platform.claude.com/docs/en/release-notes/overview": {
   "kind": "page",
-  "hash": "99011f42bb0ef2db",
-  "chars": 92766,
+  "hash": "8808598bd12aaf3a",
+  "chars": 92439,
   "links": [
    "00118fa80a",
    "001afc5bf4",
@@ -18665,6 +18676,7 @@
    "October 22, 2026",
    "October 23, 2026",
    "October 24, 2026",
+   "October 25, 2026",
    "Sep 1, 2026",
    "Sep 10, 2026",
    "Sep 15, 2026",
@@ -19219,10 +19231,12 @@
  },
  "https://www.krea.ai/docs/changelog": {
   "kind": "page",
-  "hash": "8f7ec13138ed0bdb",
-  "chars": 41936,
+  "hash": "f8ed70856c07351a",
+  "chars": 42905,
   "links": [
+   "003a234805",
    "0230bdf988",
+   "03b5193261",
    "05820cde98",
    "05ed3b0292",
    "0743d11301",

@@ -1,5 +1,5 @@
 {
- "updated": "2026.10.19",
+ "updated": "2026.10.25",
  "tools": {
   "midjourney": {
    "status": "ok",
@@ -32,54 +32,52 @@
    "status": "ok",
    "type": "plan",
    "offer": "무료 Gemini 앱에서 이미지 생성·편집",
-   "limits": "사용량 제한 (5시간마다 리셋, 주간 한도)",
+   "limits": "표준 사용 한도 · 구체 횟수 미표기 · Pro 모델은 유료",
    "card": false,
    "try_url": "https://gemini.google.com/",
-   "source_url": "https://gemini.google/subscriptions/",
-   "note": "Nano Banana Pro는 Flow에서 제한적으로 제공",
+   "source_url": "https://support.google.com/gemini/answer/16275805",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "seedream": {
    "status": "ok",
    "type": "plan",
-   "offer": "매일 120 크레딧",
-   "limits": "크레딧으로 이미지·영상 생성 · 모델별 소모량 다름",
+   "offer": "매일 무료 크레딧 제공",
+   "limits": "크레딧 수치는 공식 페이지에 명시되지 않음",
    "card": false,
    "try_url": "https://dreamina.capcut.com/",
-   "source_url": "https://dreamina.capcut.com/ai-video/free-image-to-video-generator-credits-faq",
+   "source_url": "https://dreamina.capcut.com/",
+   "note": "지난주 확인한 매일 120 크레딧은 이번에 재확인하지 못했어요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.25"
   },
   "krea": {
    "status": "ok",
    "type": "plan",
    "offer": "매일 100 컴퓨트 유닛",
-   "limits": "이미지 동시 1개 · 업스케일 2K까지",
+   "limits": "이미지 동시 1건 · 영상 모델은 제한적 · 업스케일 최대 2K",
    "card": false,
    "try_url": "https://www.krea.ai/",
    "source_url": "https://www.krea.ai/pricing",
-   "note": "상업적 이용 여부는 페이지 내 표기가 엇갈려요",
+   "note": "무료 카드에 상업 라이선스 표기가 있으나 FAQ와 불일치해요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "recraft": {
    "status": "ok",
    "type": "plan",
-   "offer": "무료 플랜 · 크레딧 매일 리셋",
-   "limits": "하루 업로드 3장 · 생성물 공개 · 상업적 이용 불가",
+   "offer": "무료 플랜 · 크레딧 제공",
+   "limits": "무료 이미지는 Recraft 소유·공개 갤러리 노출",
    "card": false,
    "commercial": false,
    "try_url": "https://www.recraft.ai/",
-   "source_url": "https://www.recraft.ai/docs/plans-and-billing/free-plan",
-   "note": "하루 크레딧 수량은 공식 문서에 명시되지 않음 · 무료 생성물 소유권은 Recraft",
+   "source_url": "https://www.recraft.ai/pricing",
+   "note": "크레딧 수치는 페이지에 명시되지 않았어요",
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.25"
   },
   "magnific": {
    "status": "unverified",
@@ -131,27 +129,26 @@
   "playground": {
    "status": "ok",
    "type": "plan",
-   "offer": "월 3 크레딧 + 3시간마다 이미지 생성",
-   "limits": "하루 다운로드 2회 · 피크 시간 느림",
+   "offer": "3시간마다 이미지 10장 + 월 3회 프리미엄",
+   "limits": "피크 시간 느림 · 하루 다운로드 2회",
+   "card": false,
    "commercial": true,
    "try_url": "https://playground.com/",
    "source_url": "https://playgroundai.com/pricing",
-   "note": "3시간당 이미지 수는 페이지 내 표기가 5장/10장으로 엇갈려요",
-   "card": null,
    "watermark": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "veo": {
    "status": "ended",
    "type": "none",
    "offer": "무료 Gemini엔 영상 생성 없음",
-   "limits": "영상 생성은 유료 AI Plus부터",
+   "limits": "영상 생성은 유료 Google AI 플랜 필요",
    "try_url": "https://gemini.google.com/",
-   "source_url": "https://gemini.google/subscriptions/",
+   "source_url": "https://support.google.com/gemini/answer/16275805",
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "kling": {
    "status": "unverified",
@@ -161,15 +158,15 @@
   "seedance": {
    "status": "ok",
    "type": "plan",
-   "offer": "Dreamina에서 매일 120 크레딧",
-   "limits": "크레딧은 공용 일일 예산 · 영상 1개당 소모량 다름 · 지역·계정별 상이 가능",
+   "offer": "Dreamina 매일 무료 크레딧 제공",
+   "limits": "크레딧 수치는 공식 페이지에 명시되지 않음",
    "card": false,
-   "try_url": "https://dreamina.capcut.com/tools/seedance-2-0",
-   "source_url": "https://dreamina.capcut.com/ai-video/free-image-to-video-generator-credits-faq",
+   "try_url": "https://dreamina.capcut.com/",
+   "source_url": "https://dreamina.capcut.com/",
+   "note": "지난주 확인한 매일 120 크레딧은 이번에 재확인하지 못했어요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.25"
   },
   "grok-imagine": {
    "status": "unverified",
@@ -211,13 +208,13 @@
    "status": "ended",
    "type": "none",
    "offer": "무료 플랜 월 0 크레딧 (팩 구매만)",
-   "limits": "크레딧 팩 구매 후 사용 · 워터마크 없음",
+   "limits": "충전 크레딧으로만 생성 가능",
    "watermark": false,
    "commercial": false,
    "try_url": "https://pika.art/",
    "source_url": "https://pika.art/pricing",
    "card": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "hailuo": {
    "status": "ok",
@@ -237,13 +234,13 @@
    "status": "ok",
    "type": "credits",
    "offer": "가입 시 125 크레딧 (1회)",
-   "limits": "일부 모델만 · 크레딧 만료 없음 · 저장공간 5GB",
-   "try_url": "https://runway.com/",
+   "limits": "만료 없음 · 저장공간 5GB · 일부 모델만",
+   "card": false,
+   "try_url": "https://runwayml.com/",
    "source_url": "https://runway.com/pricing",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "pixverse": {
    "status": "unverified",
@@ -259,25 +256,25 @@
    "status": "ok",
    "type": "plan",
    "offer": "월 3개 영상 (각 최대 1분)",
-   "limits": "Avatar IV · 스톡 아바타 500+ · 30개 이상 언어",
+   "limits": "워터마크 · 보이스 클론 1개",
+   "card": false,
+   "watermark": true,
    "try_url": "https://www.heygen.com/",
    "source_url": "https://www.heygen.com/pricing",
-   "card": null,
-   "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "synthesia": {
    "status": "ok",
    "type": "plan",
    "offer": "월 10분 영상 생성 + 500 크레딧",
-   "limits": "Synthesia 워터마크 포함",
+   "limits": "워터마크 포함",
+   "card": false,
    "watermark": true,
    "try_url": "https://www.synthesia.io/",
    "source_url": "https://www.synthesia.io/pricing",
-   "card": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "topaz-video": {
    "status": "ok",
@@ -302,13 +299,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "매일 무료 영상 5개",
-   "limits": "워터마크 · 동시 생성 1개 · 생성물 7일 보관",
+   "limits": "동시 1건 · 영상 최대 1분 · 에셋 7일 보관 · Seedance 불가",
+   "card": false,
    "watermark": true,
    "try_url": "https://viggle.ai/",
    "source_url": "https://viggle.ai/pricing",
-   "card": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "kaiber": {
    "status": "ended",
@@ -327,14 +324,14 @@
    "status": "ok",
    "type": "plan",
    "offer": "월 100 크레딧",
-   "limits": "월 에셋 10개 · 다운로드 10회 · 대기열 낮은 우선순위",
+   "limits": "월 에셋 10개 · 동시 1건 · 대기열 낮음",
    "card": false,
    "commercial": true,
    "try_url": "https://www.meshy.ai/",
    "source_url": "https://www.meshy.ai/pricing",
-   "note": "무료 결과물은 CC BY 4.0 (출처 표기 시 상업 이용 가능)",
+   "note": "무료 플랜은 CC BY 4.0 (상업 이용 시 출처 표기)",
    "watermark": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "tripo": {
    "status": "unverified",
@@ -345,14 +342,14 @@
    "status": "ok",
    "type": "plan",
    "offer": "무료 생성·미리보기 · 비공개 에셋 10개",
-   "limits": "내보내기·고급 기능 제한 · 크레딧 수량 미표기",
-   "commercial": false,
+   "limits": "스마트 로우폴리·HD 텍스처·API는 유료",
+   "card": false,
    "try_url": "https://hyper3d.ai/",
    "source_url": "https://hyper3d.ai/pricing",
-   "note": "유료 플랜에서 더 넓은 사용 권한 제공",
-   "card": null,
+   "note": "크레딧은 개당 $1.5 구매 방식이에요",
    "watermark": null,
-   "checked": "2026.10.19"
+   "commercial": null,
+   "checked": "2026.10.25"
   },
   "marble": {
    "status": "ok",
@@ -390,14 +387,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "무료 플랜 · AI 크레딧 없음",
-   "limits": "웹 내보내기에 Spline 로고 · 파일 수 제한",
+   "limits": "개인 파일 제한 · 웹 내보내기 워터마크",
+   "card": false,
    "watermark": true,
    "try_url": "https://spline.design/",
    "source_url": "https://spline.design/pricing",
-   "note": "AI 3D·텍스처·이미지 생성은 유료 플랜부터",
-   "card": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "hunyuan3d": {
    "status": "ok",
@@ -440,25 +436,25 @@
    "status": "ok",
    "type": "plan",
    "offer": "Starter 무료 · 월 30초 AI 모션캡처",
-   "limits": "텍스트→모션 클립 무제한 · FBX만 내보내기",
-   "try_url": "https://www.rokoko.com/products/vision",
+   "limits": "FBX만 내보내기 · 텍스트→모션 월 5개 Studio 가져오기",
+   "card": false,
+   "try_url": "https://www.rokoko.com/",
    "source_url": "https://www.rokoko.com/products/vision",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "iclone": {
    "status": "ok",
    "type": "plan",
    "offer": "Personal 에디션 무료 · 기한 없음",
    "limits": "3D 내보내기 시간 제한",
+   "card": false,
    "try_url": "https://www.reallusion.com/iclone/",
-   "source_url": "https://www.reallusion.com/iclone/",
-   "card": null,
+   "source_url": "https://www.reallusion.com/iclone/default.html",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "flow-studio": {
    "status": "ok",
@@ -484,7 +480,8 @@
    "note": "무료 버전의 상업 이용 조건이 페이지 내 표기가 엇갈려요",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.19",
+   "status_note": "unverified"
   },
   "deepmotion": {
    "status": "ok",
@@ -504,13 +501,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "매일 15초 모션 캡처",
-   "limits": "저장공간 1GB · 전신·손 캡처 · FBX/GLB/BVH 내보내기",
+   "limits": "저장 1GB · FBX/GLB/BVH 내보내기",
    "card": false,
    "try_url": "https://plask.ai/",
    "source_url": "https://plask.ai/pricing",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "move.ai": {
    "status": "unverified",
@@ -521,26 +518,25 @@
    "status": "ok",
    "type": "credits",
    "offer": "가입 시 20 크레딧 (1회)",
-   "limits": "HD MP4·GIF 내보내기 제한 · FBX 내보내기 불가",
+   "limits": "FBX 내보내기·워터마크 제거는 유료",
+   "card": false,
    "try_url": "https://www.krikey.ai/",
    "source_url": "https://www.krikey.ai/pricing",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "elevenlabs": {
    "status": "ok",
    "type": "plan",
    "offer": "매달 10,000 크레딧 (TTS 약 10분)",
-   "limits": "스튜디오 프로젝트 3개 · 동시 요청 약 2개",
+   "limits": "스튜디오 프로젝트 3개 · 미사용 크레딧 이월 없음",
+   "card": false,
+   "watermark": false,
+   "commercial": false,
    "try_url": "https://elevenlabs.io/",
-   "source_url": "https://elevenlabs.io/pricing",
-   "note": "상업 라이선스는 Starter 이상 플랜에 표기돼 있어요",
-   "card": null,
-   "watermark": null,
-   "commercial": null,
-   "checked": "2026.10.19"
+   "source_url": "https://www.elevenlabs.io/pricing",
+   "checked": "2026.10.25"
   },
   "stable-audio": {
    "status": "unverified",
@@ -570,13 +566,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "매일 50 크레딧",
-   "limits": "곡 다운로드 불가 · 공용 대기열",
+   "limits": "v6-mini 무료 모델 · 동시 4곡 · 다운로드 없음",
+   "card": false,
    "commercial": false,
    "try_url": "https://suno.com/",
    "source_url": "https://suno.com/pricing",
-   "card": null,
    "watermark": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "mureka": {
    "status": "ok",
@@ -609,14 +605,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "매달 다운로드 3회",
-   "limits": "비상업적 용도만 · AIVA 크레딧 표기 필요",
+   "limits": "곡당 3분 · 비상업용 · 저작권은 AIVA 소유 · 출처 표기",
+   "card": false,
+   "watermark": false,
    "commercial": false,
    "try_url": "https://www.aiva.ai/",
    "source_url": "https://www.aiva.ai/pricing",
-   "note": "무료 곡의 저작권은 AIVA가 보유해요",
-   "card": null,
-   "watermark": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "soundraw": {
    "status": "ok",
@@ -635,25 +630,25 @@
    "status": "ok",
    "type": "plan",
    "offer": "매일 무료 생성 (횟수 제한, 매일 충전)",
-   "limits": "정확한 일일 횟수 미표기 · 영상·오디오는 프리미엄 크레딧 사용",
+   "limits": "Nano Banana 등 일부 모델 포함 · 구체 횟수 미표기",
+   "card": false,
    "try_url": "https://firefly.adobe.com/",
    "source_url": "https://www.adobe.com/products/firefly/plans.html",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "figma-ai": {
    "status": "ok",
    "type": "plan",
    "offer": "하루 150 AI 크레딧 (월 최대 500)",
-   "limits": "요청에 따라 크레딧 사용량 달라짐",
+   "limits": "요청별 사용량 상이",
+   "card": false,
    "try_url": "https://www.figma.com/ai/",
    "source_url": "https://www.figma.com/pricing/",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "canva-ai": {
    "status": "unverified",
@@ -664,13 +659,13 @@
    "status": "ok",
    "type": "plan",
    "offer": "하루 배경 제거·업스케일 등 각 20회",
-   "limits": "텍스트 제거 하루 50회",
+   "limits": "텍스트 제거 50회 · 24시간 기준",
+   "card": false,
    "try_url": "https://clipdrop.co/",
    "source_url": "https://clipdrop.co/pricing",
-   "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "photoroom": {
    "status": "ok",
@@ -704,49 +699,48 @@
    "status": "ok",
    "type": "free",
    "offer": "오픈소스 · 무료 (GPL-3.0)",
-   "limits": "유료 Comfy Cloud·파트너 API 노드는 별도",
+   "limits": "클라우드·API 노드는 별도 유료",
    "card": false,
    "watermark": false,
-   "try_url": "https://www.comfy.org/",
+   "try_url": "https://www.comfy.org/download",
    "source_url": "https://github.com/comfyanonymous/ComfyUI",
    "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "stable-diffusion": {
    "status": "ok",
    "type": "free",
    "offer": "오픈 웨이트 · 무료 (커뮤니티 라이선스)",
-   "limits": "연매출 100만 달러 미만일 때 무료",
+   "limits": "연 매출 $1M 미만만 무료, 이상은 엔터프라이즈 라이선스",
    "card": false,
    "watermark": false,
    "commercial": true,
    "try_url": "https://stability.ai/stable-image",
    "source_url": "https://stability.ai/license",
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "invokeai": {
    "status": "ok",
    "type": "free",
    "offer": "오픈소스 · 무료 (Apache 2.0)",
-   "limits": "일부 모델은 별도 라이선스 적용",
    "card": false,
    "watermark": false,
+   "commercial": true,
    "try_url": "https://invoke.ai/",
    "source_url": "https://github.com/invoke-ai/InvokeAI",
-   "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "blender": {
    "status": "ok",
    "type": "free",
    "offer": "오픈소스 · 무료 (GPL)",
-   "limits": "만든 작업물은 상업적으로 사용 가능",
+   "limits": "소스 GPL 2+, 배포 바이너리 GPL 3+",
    "card": false,
    "watermark": false,
    "commercial": true,
-   "try_url": "https://www.blender.org/",
+   "try_url": "https://www.blender.org/download/",
    "source_url": "https://www.blender.org/about/license/",
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "qwen-image": {
    "status": "ok",
@@ -754,39 +748,54 @@
    "offer": "오픈소스 · 무료 (Apache 2.0)",
    "card": false,
    "watermark": false,
+   "commercial": true,
    "try_url": "https://github.com/QwenLM/Qwen-Image",
    "source_url": "https://github.com/QwenLM/Qwen-Image",
-   "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   },
   "roblox-cube": {
    "status": "ok",
    "type": "free",
    "offer": "오픈 웨이트 · 무료 공개",
-   "limits": "공개 가중치는 연구용(RAIL) 라이선스 · 상업 이용 불가",
+   "limits": "라이선스 세부 조건은 저장소 LICENSE 참고",
    "card": false,
-   "watermark": false,
-   "commercial": false,
    "try_url": "https://github.com/Roblox/cube",
    "source_url": "https://github.com/Roblox/cube",
-   "note": "Roblox Studio 어시스턴트에서도 메시 생성 가능 (24시간 절차적 모델 50개 한도)",
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "watermark": null,
+   "commercial": null,
+   "checked": "2026.10.25"
   },
   "wan": {
    "status": "ok",
    "type": "free",
    "offer": "오픈소스 · 무료 (Apache 2.0, Wan2.2)",
-   "limits": "모델 사용 책임은 사용자에게 있음",
    "card": false,
    "watermark": false,
+   "commercial": true,
    "try_url": "https://wan.video/",
    "source_url": "https://github.com/Wan-Video/Wan2.2",
-   "commercial": null,
-   "checked": "2026.10.19"
+   "checked": "2026.10.25"
   }
  },
  "changes": [
+  {
+   "date": "2026.10.25",
+   "slug": "recraft",
+   "kind": "changed",
+   "text": "무료 플랜 · 크레딧 매일 리셋 → 무료 플랜 · 크레딧 제공"
+  },
+  {
+   "date": "2026.10.25",
+   "slug": "seedream",
+   "kind": "changed",
+   "text": "매일 120 크레딧 → 매일 무료 크레딧 제공"
+  },
+  {
+   "date": "2026.10.25",
+   "slug": "seedance",
+   "kind": "changed",
+   "text": "Dreamina에서 매일 120 크레딧 → Dreamina 매일 무료 크레딧 제공"
+  },
   {
    "date": "2026.10.19",
    "slug": "nano-banana",

@@ -13,10 +13,10 @@
       "rev": "0a3e464c40"
     },
     "3d": {
-      "count": 184,
-      "latest": "2026.10.21",
+      "count": 185,
+      "latest": "2026.10.23",
       "file": "updates/feed/3d.json",
-      "rev": "f76c3c0bc3"
+      "rev": "ce63bc6e71"
     },
     "game-assets": {
       "count": 569,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 122,
+      "count": 123,
       "first": "2023.10.19",
-      "latest": "2026.10.21"
+      "latest": "2026.10.23"
     },
     "tripo": {
       "count": 29,
