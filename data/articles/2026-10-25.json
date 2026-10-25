@@ -1,5 +1,35 @@
 [
   {
+    "id": "games-b15df448-2026-10",
+    "tab": "games",
+    "headline": "엔비디아, 게임 NPC 및 로컬 에이전트용 소형 모델 '네모트론 3.5 볼트' 공개",
+    "summary": "엔비디아가 4GB VRAM으로 구동되는 온디바이스 환경용 오픈 언어 모델 '네모트론 3.5 볼트'를 출시했습니다.",
+    "body": "<p>엔비디아(NVIDIA)가 게임 속 NPC나 음성 비서, 로봇 인터페이스 등 온디바이스 환경을 겨냥해 특화된 소형 오픈 언어 모델 '네모트론 3.5 볼트(Nemotron 3.5 Bolt) E4B 4GB'를 새롭게 공개했습니다. 이 모델은 구글의 오픈 모델인 젬마 4 E4B를 기반으로 개발되었으며, 독특하게도 일반적인 지도 미세 조정(SFT) 과정을 완전히 생략하고 강화 학습만을 적용하여 대화의 품질과 반응성을 극한으로 끌어올린 것이 가장 큰 특징입니다. 이를 통해 사용자들은 훨씬 자연스럽고 직관적인 대화 경험을 얻을 수 있습니다.</p><p>무엇보다 가장 눈에 띄는 장점은 다중 턴(multi-turn) 방식의 도구 호출 기능을 완벽하게 지원하면서도 4GB 안팎의 아주 적은 VRAM만으로도 부드럽게 구동된다는 점입니다. 일반적인 RTX 그래픽카드나 젯슨(Jetson) 등의 소형 기기에서 이 모델을 단독으로 구동하더라도 여유 메모리 공간이 충분히 남게 됩니다. 덕분에 남은 공간에 시각(Vision) 인식을 위한 모델이나 음성 합성 모델을 함께 올려 동시에 통합적으로 실행하는 것이 가능해집니다.</p><p>특히 즉각적인 반응 속도와 상황 인지 능력이 생명인 차세대 게임 내 캐릭터 시스템(NVIDIA ACE) 개발에 있어서 획기적인 발전을 가져올 것으로 널리 기대되고 있습니다. 무거운 클라우드 서버에 의존하지 않고 기기 자체에서 실시간으로 추론과 행동 결정을 즉시 내릴 수 있는 빠르고 가벼운 로컬 에이전트를 구축하려는 수많은 게임 개발자 및 연구자들에게 이 모델은 가뭄의 단비와도 같은 매우 강력하고 효율적인 도구가 될 것으로 전망됩니다.</p><p>원문: <a href=\"https://www.marktechpost.com/2026/10/23/nvidia-nemotron-3-5-bolt-e4b-4gb/\">MarkTechPost</a></p>",
+    "source": "MarkTechPost",
+    "publishedAt": "2026.10.25",
+    "hue": 200,
+    "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-33-scaled.png",
+    "keywords": [
+      "NVIDIA"
+    ],
+    "url": "https://www.marktechpost.com/2026/10/23/nvidia-nemotron-3-5-bolt-e4b-4gb/"
+  },
+  {
+    "id": "industry-5e26a8b2-2026-10",
+    "tab": "industry",
+    "headline": "미야모토 시게루 'AI 발전할수록 진정한 창작의 의미 고민하게 될 것'",
+    "summary": "닌텐도의 미야모토 시게루 펠로우가 기자회견을 통해 AI가 발전할수록 인간의 진정한 창작의 의미를 고찰하게 될 것이라고 밝혔습니다.",
+    "body": "<p>일본 정부로부터 게임 업계 종사자 최초로 문화훈장을 수훈하게 된 닌텐도의 미야모토 시게루 대표이사 펠로우가 최근 열린 기자회견에서 생성형 AI와 창작의 의미에 대한 자신의 깊이 있는 견해를 밝혔습니다. 단순한 제작 효율성 측면을 넘어 기술 발전이 창작자에게 던지는 근본적인 질문을 짚어내며 큰 울림을 주고 있습니다.</p><p>그는 과거 디자이너들이 직접 손으로 글씨를 쓰던 시대에서 컴퓨터와 워드프로세서가 도입된 이후 비로소 개인의 진정한 레이아웃 감각과 디자인 역량이 명확히 드러났던 역사적 사례를 먼저 언급했습니다. 이어 \"지금 바로 생성형 AI를 통해 그런 비슷한 일이 다시 벌어지고 있다\"고 진단하며, 단순하고 기계적인 작업을 AI가 빠르고 편리하게 대신 처리해 줄수록 우리 모두가 '정말 무언가를 새롭게 만든다는 것'이 진정으로 무엇인지 더 치열하고 진지하게 고찰할 기회가 될 것이라고 매우 긍정적으로 평가했습니다.</p><p>다만 미야모토 펠로우는 \"가장 무서운 것은 기술이 해준 단순 작업의 결과물에 안주하고 만족해 자신이 꽤 괜찮은 것을 스스로 창작해 냈다고 착각하는 것\"이라며 결과물 이면에 담긴 창작자의 뚜렷한 의도와 치열한 철학의 부재를 매섭게 경계했습니다. 생성형 AI 활용을 둘러싸고 여러 대형 스튜디오와 게임 이용자들 사이에서 거센 논쟁과 갑론을박이 계속되는 요즘, 최첨단 기술을 유용한 도구로 흔쾌히 인정하면서도 결과물의 최종적인 가치와 책임은 결국 그것을 다루는 사람의 몫이어야 한다는 거장의 통찰이 빛을 발하고 있습니다.</p><p>원문: <a href=\"https://www.inven.co.kr/webzine/news/?news=322537\">Inven</a></p>",
+    "source": "Inven",
+    "publishedAt": "2026.10.25",
+    "hue": 30,
+    "image": "https://static.inven.co.kr/column/2026/10/24/news/i1046084331.jpg",
+    "keywords": [
+      "Nintendo"
+    ],
+    "url": "https://www.inven.co.kr/webzine/news/?news=322537"
+  },
+  {
     "id": "industry-15560bfa-2026-10",
     "tab": "industry",
     "headline": "크리에이티브 어셈블리, '쇼군 2 컴플리트 에디션' 부실 인정…\"애셋 제작에 생성 AI 안 써, 외주 의혹은 조사 중\"",
@@ -36,6 +66,21 @@
       "Epic Games"
     ],
     "url": "https://www.gamesradar.com/games/still-mad-at-valve-for-steams-ai-disclosures-epic-games-boss-criticizes-forcing-developers-to-write-a-political-statement-to-be-used-against-them-by-the-hate-mob/"
+  },
+  {
+    "id": "art-c41140dd-2026-10",
+    "tab": "art",
+    "headline": "Kyutai, 실시간 월드 모델을 위한 초저지연 비디오 오토인코더 'CADRE' 공개",
+    "summary": "프랑스 AI 연구소 큐타이가 반응 속도를 230ms 이하로 대폭 단축한 비디오 오토인코더 CADRE를 공개했습니다.",
+    "body": "<p>프랑스의 AI 연구소 큐타이(Kyutai)가 실시간 인터랙티브 월드 모델을 위해 특별히 설계된 최신 오픈소스 비디오 오토인코더 'CADRE' 라인업을 새롭게 공개했습니다. 기존 텍스트 기반 비디오 생성 모델에서 주로 쓰이던 오토인코더들은 여러 프레임을 한 번에 압축하는 방식을 사용해 동작 지연이 심하게 발생한다는 치명적인 한계가 있었습니다.</p><p>이번에 공개된 CADRE 모델은 이러한 지연 문제를 획기적으로 개선하여, 단 1대의 H100 GPU 환경에서 초당 20프레임(fps)의 비디오를 구동할 때 230ms 이하의 매우 빠르고 쾌적한 반응 속도를 성공적으로 구현해냈습니다. 시각적 품질과 세밀한 움직임을 그대로 유지하면서도 극도로 빠른 정보 처리가 가능해 실시간 상호작용이 필수적인 가상 환경에 매우 적합합니다.</p><p>이는 Wan 2.2, LTX-2, Cosmos 등 내로라하는 최신 비디오 생성 모델들의 기존 오토인코더들과 직접 비교해 보아도 처리 속도와 영상 품질 면에서 모두 우위를 점한 놀라운 성과입니다. 이번 CADRE 오토인코더의 전격적인 공개는 향후 지연 없는 실시간 인터랙티브 비디오나 사용자의 조작에 즉각적으로 반응하는 가상 월드 모델 생성 관련 연구와 개발에 아주 큰 도움을 줄 것으로 많은 기대를 모으고 있습니다.</p><p>원문: <a href=\"https://www.marktechpost.com/2026/10/23/kyutai-cadre-video-autoencoders-interactive-world-models/\">MarkTechPost</a></p>",
+    "source": "MarkTechPost",
+    "publishedAt": "2026.10.25",
+    "hue": 290,
+    "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-32-scaled.png",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.marktechpost.com/2026/10/23/kyutai-cadre-video-autoencoders-interactive-world-models/"
   },
   {
     "id": "art-19359a46-2026-10",
