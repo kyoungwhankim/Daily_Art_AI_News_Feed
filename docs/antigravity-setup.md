@@ -20,23 +20,26 @@ Claude 루틴과 같은 구조입니다. Automation에는 짧은 실행 프롬�
    ```powershell
    setx PYTHONUTF8 1
    ```
-3. **루틴 전용 클론** — 매일 `git reset --hard`로 main에 맞추므로 평소 작업 폴더와 따로 둡니다.
+3. **루틴 전용 클론 — Antigravity scratch 폴더에** — Automation은 프로젝트가 아니라 Antigravity 전용 작업 공간
+   `C:\Users\<사용자>\.gemini\antigravity\scratch`에서 돕니다. 그 밖의 폴더(예: `D:\GitRepos\...`)는 승인 없이
+   접근하지 못해, 저장소도 이 안에 둡니다. 매일 `git reset --hard`로 main에 맞추므로 평소 작업 폴더로 쓰지 마세요.
    ```powershell
-   cd $HOME
+   cd $HOME\.gemini\antigravity\scratch
    git clone https://github.com/kyoungwhankim/Daily_Art_AI_News_Feed.git
    ```
-   다른 위치에 두면 3번 프롬프트의 경로도 바꾸세요.
 4. **GitHub 로그인 확인** — 아래가 비밀번호 창 없이 성공해야 합니다. 처음엔 Git Credential Manager 창이 뜨면 브라우저로 로그인하세요. 토큰을 프롬프트에 넣을 필요는 없습니다.
    ```powershell
-   cd $HOME\Daily_Art_AI_News_Feed
+   cd $HOME\.gemini\antigravity\scratch\Daily_Art_AI_News_Feed
    git push --dry-run origin main
+   git config --local --list
    ```
+   마지막 줄 결과에 `user.name=Claude Daily Routine`이 있으면 `git config --unset user.name`, `git config --unset user.email`로 지우세요 (커밋이 내 계정으로 찍히게).
 5. **환경 점검** — "Environment OK."가 나와야 합니다.
    ```powershell
    python scripts/routine_steps.py env-check
    ```
-6. **Antigravity에서 이 폴더 열기** — Automation이 이 폴더(워크스페이스)에서 돌게 합니다.
-7. **자동 승인** — 아무도 보지 않는 실행이라, 터미널 명령·파일 쓰기·웹 접근을 매번 승인하라고 하면 거기서 멈춥니다. Automation을 만들 때 Review permissions 화면과 Antigravity 설정의 실행 정책을 자동 진행으로 맞춰 주세요. 이 루틴은 저장소 폴더와 `C:\tmp` 아래만 씁니다.
+6. **자동 승인** — 아무도 보지 않는 실행이라, 터미널 명령·파일 쓰기·웹 접근을 매번 승인하라고 하면 거기서 멈춥니다. Automation을 만들 때 Review permissions 화면과 Antigravity 설정의 실행 정책을 자동 진행으로 맞춰 주세요. 이 루틴은 저장소 폴더와 작업 파일 폴더 `C:\tmp`(feed·updates·free·report — 매일 비우고 새로 쓰는 임시 파일) 아래만 씁니다.
+7. **수동 시험은 같은 폴더에서** — Automation 전에 일반 대화로 시험할 때도 Prompt의 경로(scratch 폴더)를 그대로 씁니다. 다른 폴더에서 시험하면 시험 결과가 그 폴더에 남아, Automation과 다른 상태가 됩니다.
 8. **매일 오전 9시에 컴퓨터가 켜져 있고 Antigravity가 실행 중**이어야 합니다 (절전 모드 해제).
 
 ## 2. New Automation 입력값
@@ -56,7 +59,7 @@ You run the AI Art Daily daily routine (Korean AI news digest, GitHub repository
 
 Step 1 — In the PowerShell terminal, go to the repository and reset it to the latest main (one command per line):
 
-Set-Location $HOME\Daily_Art_AI_News_Feed
+Set-Location $HOME\.gemini\antigravity\scratch\Daily_Art_AI_News_Feed
 git fetch origin main
 git checkout main
 git reset --hard origin/main
