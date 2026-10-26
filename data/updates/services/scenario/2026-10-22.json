@@ -33,5 +33,15 @@
     "summary": "Claude 5.5와 GPT-5.6 Terra 같은 AI 어시스턴트 모델을 API에서 쓸 수 있게 됐어요. 단계별 요금이 적용되고 3D 에셋 내보내기도 더 안정적이에요.",
     "url": "https://www.scenario.com/changelog/api-v2-141-0",
     "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-22-4",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Compute v1.14.0: Viggle 영상과 텍스트→3D 생성 추가",
+    "summary": "Scenario Compute v1.14.0이 나왔어요. Viggle 영상 생성, 텍스트에서 3D 생성, Ideogram 벡터 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-14-0",
+    "source": "dev"
   }
 ]

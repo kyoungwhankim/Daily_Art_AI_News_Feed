@@ -682,8 +682,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "77f27412f5e5b0bb",
-  "chars": 28819,
+  "hash": "52baf909a1f62583",
+  "chars": 28822,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -695,6 +695,7 @@
    "03161569c9",
    "034d471c7b",
    "0395cdea8a",
+   "03d00d356b",
    "046c63bc6b",
    "04c4689d23",
    "0536ad9a37",
@@ -779,6 +780,7 @@
    "13eefb8ccc",
    "1419e42d3e",
    "148f8142bc",
+   "14a04f1aa5",
    "14c8bb4266",
    "151e629b05",
    "15342fdb3d",
@@ -1427,6 +1429,7 @@
    "8c30861b45",
    "8c9b240ead",
    "8d0013fcc5",
+   "8d481897eb",
    "8d6c24f0d2",
    "8d915f11eb",
    "8dbe5feec3",
@@ -2005,6 +2008,7 @@
    "2026-10-21",
    "2026-10-22",
    "2026-10-23",
+   "2026-10-25",
    "Nov 1, 2026",
    "Nov 11, 2026",
    "Nov 2, 2026",
@@ -3742,7 +3746,7 @@
  },
  "https://docs.bfl.ai/release-notes": {
   "kind": "page",
-  "hash": "1ad790256d1cd787",
+  "hash": "dd3338a3f5057f2f",
   "chars": 99771,
   "links": [
    "00a157f3b4",
@@ -7586,7 +7590,7 @@
  "https://docs.synthesia.io/changelog": {
   "kind": "page",
   "hash": "683e8ea5df00c114",
-  "chars": 770,
+  "chars": 771,
   "links": [
    "00ec88111a",
    "02607a38ab",
@@ -21183,7 +21187,7 @@
  },
  "https://www.scenario.com/changelog": {
   "kind": "page",
-  "hash": "557300617d12fe54",
+  "hash": "64c35dae810f6c52",
   "chars": 52414,
   "links": [
    "0033af77b7",

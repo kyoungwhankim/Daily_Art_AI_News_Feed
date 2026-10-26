@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-23-1",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "Kling V4 모델 추가 (영상 생성·영상 편집)",
+    "summary": "Scenario에 Kling V4 모델이 추가됐어요. 텍스트에서 영상 만들기, 이미지에서 영상 만들기, 영상 편집을 Scenario에서 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-83c59df5ef2ee6e2915eaa5db6ce9de2c138fa6030d084a8cb6c34b7f7e23109",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-23-2",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "HeyGen Voice·PixVerse V6 Max·Ideogram Vector 모델 추가",
+    "summary": "Scenario에 HeyGen Voice, HeyGen Voice Turbo, PixVerse V6 Max, Ideogram Vector, Video Chroma Key 모델이 추가됐어요. 음성, 벡터 이미지, 영상 작업에 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-5043262ff6e0b102324982b7b83f3bf7103c35a8a25862ad7b6c899eccde9b56",
+    "source": "notice"
+  }
+]

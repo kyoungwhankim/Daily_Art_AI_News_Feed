@@ -24,6 +24,26 @@
     "source": "notice"
   },
   {
+    "id": "scenario-2026-10-23-2",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "HeyGen Voice·PixVerse V6 Max·Ideogram Vector 모델 추가",
+    "summary": "Scenario에 HeyGen Voice, HeyGen Voice Turbo, PixVerse V6 Max, Ideogram Vector, Video Chroma Key 모델이 추가됐어요. 음성, 벡터 이미지, 영상 작업에 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-5043262ff6e0b102324982b7b83f3bf7103c35a8a25862ad7b6c899eccde9b56",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-23-1",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "Kling V4 모델 추가 (영상 생성·영상 편집)",
+    "summary": "Scenario에 Kling V4 모델이 추가됐어요. 텍스트에서 영상 만들기, 이미지에서 영상 만들기, 영상 편집을 Scenario에서 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-83c59df5ef2ee6e2915eaa5db6ce9de2c138fa6030d084a8cb6c34b7f7e23109",
+    "source": "notice"
+  },
+  {
     "id": "meshy-2026-10-23-1",
     "service": "meshy",
     "date": "2026.10.23",
@@ -74,6 +94,16 @@
     "summary": "Luma 플랫폼에서 Kling 4.0 모델을 바로 사용할 수 있게 되었어요. 빠른 동작과 역동적인 카메라 움직임이 필요한 샷을 Luma 보드에서 바로 다듬을 수 있어요.",
     "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
     "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-22-4",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Compute v1.14.0: Viggle 영상과 텍스트→3D 생성 추가",
+    "summary": "Scenario Compute v1.14.0이 나왔어요. Viggle 영상 생성, 텍스트에서 3D 생성, Ideogram 벡터 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-14-0",
+    "source": "dev"
   },
   {
     "id": "scenario-2026-10-22-3",
@@ -477,48 +507,5 @@
     ],
     "url": "https://packages.unity.com/com.unity.ai.assistant",
     "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-19-1",
-    "service": "meshy",
-    "date": "2026.10.19",
-    "kind": "API",
-    "title": "Keychain·Fridge Magnet export_resolution 최대값 512로 변경",
-    "summary": "Keychain과 Fridge Magnet 빌드 작업의 export_resolution 최대값이 2048에서 512로 줄었어요. 512가 실제 깊이 맵 해상도라서 더 큰 값은 파일만 키우고 결과는 같아요.",
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "layer-2026-10-19-1",
-    "service": "layer",
-    "date": "2026.10.19",
-    "kind": "기능",
-    "title": "Layer 마커 편집, 스카이박스·타일·UI 킷 출시",
-    "summary": "이미지에 표시한 영역을 따라 수정하는 마커 편집과 스카이박스, 게임 타일, 9-slice UI 요소 생성이 추가됐어요. 여러 게임 엔진용으로 내보내기도 지원해요.",
-    "details": [
-      "마커(상자·타원·화살표·선·핀)로 수정 영역을 지정",
-      "Create skybox로 PNG·HDR·OpenEXR 파노라마 생성",
-      "아이소메트릭·헥스 타일을 Godot, Unity, Tiled용 타일셋으로 내보내기",
-      "버튼·패널을 늘릴 수 있는 9-slice UI 요소를 Unity, Godot, CSS용 UI 킷으로 내보내기",
-      "영상을 Lottie 또는 GIF로 내보내기",
-      "Creator 역할 추가와 Enterprise 사용량 한도 설정"
-    ],
-    "url": "https://www.layer.ai/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-19-1",
-    "service": "krea",
-    "date": "2026.10.19",
-    "kind": "API",
-    "title": "Krea 3 API 일반 공개와 MCP 비용 미리 확인",
-    "summary": "모든 워크스페이스에서 Krea 3 API를 호출할 수 있게 되었어요. MCP 생성 도구에서 preflight를 켜면 작업을 제출하지 않고 비용 견적과 잔액을 확인할 수 있어요.",
-    "details": [
-      "fast와 high 사고 모드는 베타 접근 없이 사용할 수 있어요",
-      "preflight 응답에 mode, compute_units, affordable 등이 포함돼요",
-      "코드 예제는 KREA_API_KEY 환경 변수에서 토큰을 읽어요"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-19-2026",
-    "source": "notice"
   }
 ]
