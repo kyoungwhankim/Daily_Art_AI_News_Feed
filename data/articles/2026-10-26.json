@@ -1,0 +1,116 @@
+[
+  {
+    "id": "industry-3fdd4b4d-2026-10",
+    "tab": "industry",
+    "headline": "쇼군 2 리마스터 AI 아트 논란에 CA 부사장 '우리 개발작 아냐, 생성형 AI 에셋은 안 써'",
+    "summary": "CA 부사장이 쇼군 2 리마스터 논란을 사과하며 생성형 AI 에셋 미사용 원칙을 밝혔어요.",
+    "body": "<p>'토탈 워: 쇼군 2 컴플리트 에디션'이 스팀에서 '압도적으로 부정적' 평가를 받고 판매가 중단된 가운데, 토탈 워 시리즈 부사장 로저 콜럼이 레딧에 개인 명의 사과문을 올렸어요. 그는 이 작품이 크리에이티브 어셈블리(CA)가 직접 개발한 게임이 아니어서 내부 검수와 QA를 거치지 않았고, 모든 팀이 차기작에 집중하느라 외부 개발을 제대로 살피지 못했다고 인정했어요. 스팀 페이지에는 공동 개발사로 마타부 게임즈가 올라 있어요.</p><p>이번 리마스터에서 가장 큰 불만은 생성형 AI로 만든 것처럼 보이는 아트였어요. 콜럼은 CA가 아트를 포함한 게임 에셋을 만드는 데 생성형 AI를 쓰지 않으며, 함께 일하는 외부 개발사에도 같은 기준을 요구한다고 밝혔어요. 이번 건은 현재 조사 중이라고 해요. 그러면서도 'AI는 창작자를 도울 수 있지만 대체해서는 안 된다'며 분석, 디버깅, 빠른 프로토타이핑처럼 전문가가 창작에 집중하도록 돕는 용도로는 AI 도구를 쓴다고 설명했어요.</p><p>콜럼은 개인을 향한 비난은 자제해 달라며 화는 자신에게 내 달라고 했고, 시니어 개발자 소규모 팀을 꾸려 세가, 외부 개발사와 함께 후속 조치를 논의하고 있다고 전했어요. 내부 원칙이 분명한 스튜디오라도 외주 파이프라인을 관리하지 못하면 AI 논란을 피하기 어렵다는 걸 보여 주는 사례예요.</p><p>원문: <a href=\"https://www.thegamer.com/total-war-shogun-2-creative-assembly-roger-collum-response/\">TheGamer</a></p>",
+    "source": "TheGamer",
+    "publishedAt": "2026.10.26",
+    "hue": 30,
+    "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2026/10/total-war-shogun-2-complete-edition-cover-art-of-two-armies-readying-for-war-with-their-leaders-face-to-face-in-the-sky.jpg?w=1600&h=900&fit=crop",
+    "keywords": [
+      "AI 사용 논란",
+      "AI 미사용 선언"
+    ],
+    "url": "https://www.thegamer.com/total-war-shogun-2-creative-assembly-roger-collum-response/",
+    "urls": [
+      {
+        "label": "스팀 페이지",
+        "href": "https://store.steampowered.com/app/3846830/Total_War_SHOGUN_2__Complete_Edition/"
+      }
+    ]
+  },
+  {
+    "id": "art-25f18b73-2026-10",
+    "tab": "art",
+    "headline": "그록, AI로 만든 '오디세이' 1화 7분 공개…장편 예고는 시리즈로 축소",
+    "summary": "그록 이매진으로 만든 AI 영상 '오디세이' 1화 7분이 공개됐어요.",
+    "body": "<p>일론 머스크가 석 달 전 '역사적으로 정확한' 장편 영화로 내놓겠다고 예고했던 AI 버전 '오디세이'가 7분 분량으로 공개됐어요. 그록 측은 이를 '오디세이 시리즈 1화'라고 부르며 공개했고, 영상은 그록 이매진으로 만들었어요. 제작에는 원더 스튜디오와 데브 워커 감독이 참여했고, 반응이 좋으면 어떻게 만들었는지 제작 과정 전체를 풀어 보겠다고 했어요.</p><p>이 영상은 지난 7월 개봉해 아이맥스 매진 행렬을 이어 간 크리스토퍼 놀런의 '오디세이'와 자연스럽게 비교되고 있어요. 놀런 버전은 6개국 촬영과 수천 명의 출연진·스태프가 참여한 실사 중심 작품이고, 놀런은 스스로를 기술 회의론자라고 말해 왔어요. 테크크런치는 그록 버전이 예상보다 덜 어색하고 일부 장면은 실제 배우가 바다를 항해하는 것처럼 보일 정도라고 평가했어요. 하지만 지나치게 긴 내레이션, 어색한 대사, 긴장감 없는 전개 탓에 예술성과 몰입감은 찾기 어렵고, 절반도 보기 전에 남은 시간을 확인하게 됐다고 혹평했어요.</p><p>개별 샷의 사실감은 꽤 올라왔지만 이야기와 연출이 받쳐 주지 않으면 장편으로 이어가기 어렵다는 점을 보여 준 사례예요. AI 영상이 실제 영화 제작에 어디까지 다가왔는지 가늠해 보기에 좋아요.</p><p>원문: <a href=\"https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/\">TechCrunch</a></p>",
+    "source": "TechCrunch",
+    "publishedAt": "2026.10.26",
+    "hue": 290,
+    "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/"
+  },
+  {
+    "id": "art-fa3922b4-2026-10",
+    "tab": "art",
+    "headline": "멜론 3위 찍은 AI 노래 '꿈꾸던 어른이 되었나요?', 제작팀이 밝힌 수노 활용법",
+    "summary": "멜론 3위 AI 노래 제작팀이 수노 활용법과 과제를 공개했어요.",
+    "body": "<p>AI로 만든 노래 '꿈꾸던 어른이 되었나요?'가 멜론 톱100 3위, 유튜브 뮤직 2위에 오르며 화제를 모았어요. 6월 23일 발매된 이 곡은 약 3개월 만에 차트 상위권에 올랐고, 유튜브 조회수는 1295만 회를 넘었어요. 곡을 만든 팀은 황치열, 길구봉구 등과 10년 넘게 작업해 온 베테랑 작곡팀 글로리웨이브로, AI 음악 전용 프로젝트 '머무르'로 여러 곡을 발표해 왔어요.</p><p>제작 방식은 이래요. 가사는 사람이 직접 쓰고, 멜로디·편곡·보컬은 음악 생성 AI 수노로 만든 뒤 큐베이스에서 소스를 더해 편집하고 믹싱·마스터링으로 마무리했어요. 팀은 예전엔 편곡과 가이드 녹음을 거쳐야 곡의 전체 그림을 볼 수 있었는데, 이제는 수노가 예상 못 한 멜로디와 편곡을 제안해 다양한 장르와 보컬을 빠르게 시도해 볼 수 있다고 했어요. 다만 특정 부분만 고치기 어려워 작업을 반복하기도 했고, 한국어 발음이 어색해서 가사를 직접 손보는 등 세부 작업은 여전히 사람 몫이었대요.</p><p>팀은 AI 사용 여부보다 사람이 어떤 부분에 기여했는지 구분하는 현실적인 기준이 필요하다고 강조했고, 앞으로 실제 악기 연주와 사람 보컬도 더할 계획이에요. AI 음악이 차트에 오르는 시대에 표기, 저작권, 수익 배분 문제가 본격적인 과제로 떠오르고 있어요.</p><p>원문: <a href=\"https://www.aitimes.com/news/articleView.html?idxno=216553\">AI타임스</a></p>",
+    "source": "AI타임스",
+    "publishedAt": "2026.10.26",
+    "hue": 290,
+    "image": "https://cdn.aitimes.com/news/photo/202610/216553_220650_5836.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Suno"
+    ],
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=216553"
+  },
+  {
+    "id": "art-83fd5c03-2026-10",
+    "tab": "art",
+    "headline": "AI 회사들은 왜 자기 브랜딩을 사람 디자이너에게 맡길까",
+    "summary": "AI 기업들이 브랜드 디자인은 사람에게 맡기는 이유를 짚었어요.",
+    "body": "<p>크리에이티브 블록이 디자이너 일자리를 위협하는 AI 기업들이 정작 자기 브랜드 아이덴티티는 사람 디자이너에게 맡기는 역설을 짚었어요. 올해만 해도 디자인 스튜디오 How&amp;How가 이미지 생성 AI 이데오그램을 리브랜딩했고, 라자레프는 AI 영상 앱 엘바의 아이덴티티를, 투게더는 AI 감사 기업 클루시아의 로고를 만들었어요. 메타는 레터링 아티스트 제시카 히셰에게 새 AI 플랫폼 뮤즈의 로고를 의뢰했어요. 이데오그램 리브랜딩은 뇌 모양 심볼에 AI로 만든 이미지를 포토샵에서 손으로 다듬는 방식으로 완성됐어요.</p><p>글쓴이는 브랜딩의 핵심이 예쁜 이미지가 아니라 사람들이 믿게 만드는 데 있다고 설명해요. 지금 AI 기업은 디자이너뿐 아니라 일반 대중에게도 신뢰 문제를 안고 있어서, 오히려 사람의 손길을 앞세우는 게 자연스럽다는 거예요. 한편 히셰는 1만 2500달러 보수로 작은 가게 두 곳과 직원을 지킬 수 있다고 밝혔지만, 스레드에서 창작 수요를 줄이는 기술에 신뢰를 빌려준다는 거센 비판을 받았어요.</p><p>글쓴이는 의뢰를 거절해도 다른 디자이너가 맡을 뿐이라 AI 흐름을 멈추긴 어렵다며, 쉽게 답하기 어려운 문제라고 정리했어요. AI 시대에 디자이너가 어떤 일을 맡고 어떤 가치를 내세울지 생각해 볼 만한 글이에요.</p><p>원문: <a href=\"https://www.creativebloq.com/news/why-do-ai-platforms-want-humans-to-design-their-branding\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.26",
+    "hue": 290,
+    "image": "https://cdn.mos.cms.futurecdn.net/8iLPH4BsY5429rchU9dzuZ-1920-80.png",
+    "keywords": [
+      "2D·이미지"
+    ],
+    "url": "https://www.creativebloq.com/news/why-do-ai-platforms-want-humans-to-design-their-branding",
+    "urls": [
+      {
+        "label": "엘바 사례",
+        "href": "https://www.lazarev.agency/cases/ai-video-editor-app-design"
+      }
+    ]
+  },
+  {
+    "id": "art-e7b41116-2026-10",
+    "tab": "art",
+    "headline": "저스트잇 메뉴에 '진짜 재킷 입은 감자'…AI 음식 이미지 대참사에 사과",
+    "summary": "저스트잇이 엉뚱한 AI 메뉴 이미지 논란에 사과하고 이미지를 내렸어요.",
+    "body": "<p>영국 음식 배달앱 저스트잇이 식당 메뉴 이름을 그대로 이미지로 바꾸는 AI 기능을 도입했다가 황당한 결과물이 쏟아지자 사과하고 이미지를 삭제하겠다고 밝혔어요. BBC 보도에 따르면 재킷 포테이토는 감자 사진이 붙은 진짜 재킷으로, '라이터' 아침 식사는 담배 라이터로 그려졌어요. 오타 때문에 비행기 모양이 된 갈릭 브레드, 타이거 새우 대신 등장한 새끼 호랑이 한 그릇, 말 그대로 구멍 속 두꺼비가 된 '토드 인 더 홀'도 있었어요.</p><p>이용자들은 SNS에 'AI 대 현실' 비교 사진을 올리며 조롱했고, 실제 음식이 AI 이미지와 전혀 달랐는데도 환불을 거절당했다는 불만도 나왔어요. 경쟁사 우버이츠가 약 3년 전 같은 망신을 당했는데, 기술이 훨씬 발전한 지금 40억 달러 규모 기업이 제대로 테스트도 안 하고 더 나쁜 결과를 냈다는 비판이 이어졌어요. 크리에이티브 블록은 AI가 의도대로 완벽하게 작동했더라도 가짜 음식 사진은 결국 고객 실망과 불만을 부를 수밖에 없다고 지적했어요.</p><p>아마존이나 레딧처럼 플랫폼이 자동으로 붙인 AI 이미지 때문에 정작 식당과 판매자가 피해를 보는 일이 늘고 있다는 점에서, 상업 이미지에 생성형 AI를 쓸 때 검수와 책임이 얼마나 중요한지 다시 보여 준 사례예요.</p><p>원문: <a href=\"https://www.creativebloq.com/news/just-eats-ai-apocalypse-raises-a-pretty-obvious-question\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.26",
+    "hue": 290,
+    "image": "https://cdn.mos.cms.futurecdn.net/q7XXHzcWFP9uk4mvXKsJk9-1920-80.jpg",
+    "keywords": [
+      "2D·이미지"
+    ],
+    "url": "https://www.creativebloq.com/news/just-eats-ai-apocalypse-raises-a-pretty-obvious-question"
+  },
+  {
+    "id": "art-50da9ca2-2026-10",
+    "tab": "art",
+    "headline": "텐센트, 영상 만드는 도중 장면을 바꾸는 월드 모델 'Hy-Nomas' 오픈소스 공개",
+    "summary": "텐센트가 생성 중 장면을 바꾸는 월드 모델 Hy-Nomas를 공개했어요.",
+    "body": "<p>텐센트가 텍스트 명령과 카메라 움직임에 맞춰 영상을 계속 이어서 만들어 가는 인터랙티브 비디오 월드 모델 'Hy-Nomas'를 오픈소스로 공개했어요. 가장 큰 특징은 영상이 생성되는 도중에도 자유롭게 개입할 수 있다는 점이에요. 사물을 새로 추가하거나 등장인물의 행동, 배경, 화풍을 바꿀 수 있고, 카메라 시점과 이동 경로도 직접 지정할 수 있어요. 앞서 만든 장면 정보를 기억해 다음 구간에 활용하도록 설계해서 긴 영상도 일관되게 이어 가는 걸 노렸어요.</p><p>텐센트는 모델 가중치와 실행 코드를 함께 풀었고, RTX 4090 한 장에서도 돌릴 수 있는 저메모리 설정을 마련했어요. 로보틱스처럼 특수한 분야에는 가벼운 LoRA로 맞춤 학습을 할 수 있다고 해요. 같은 날 AI타임스가 묶어 소개한 신작 중에는 VAST AI 리서치의 '에덴라이브'도 있는데, 게임 엔진의 단순한 화면을 RTX 5090 한 장에서 720p, 초당 24프레임 이상의 실사풍·스타일 영상으로 바꿔 주는 실시간 생성 렌더러예요. 게임 규칙과 사물 위치는 기존 프로그램이 맡고 AI는 화면 표현만 담당하는 구조예요.</p><p>가중치와 코드가 모두 공개된 만큼, 인터랙티브 영상이나 게임처럼 시점을 움직이며 장면을 탐색하는 콘텐츠를 실험해 보고 싶은 창작자에게 좋은 출발점이 될 수 있어요.</p><p>원문: <a href=\"https://www.aitimes.com/news/articleView.html?idxno=216628\">AI타임스</a></p>",
+    "source": "AI타임스",
+    "publishedAt": "2026.10.26",
+    "hue": 290,
+    "image": "https://cdn.aitimes.com/news/photo/202610/216628_220750_2242.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=216628",
+    "urls": [
+      {
+        "label": "허깅페이스",
+        "href": "https://huggingface.co/tencent/Hy-Nomas"
+      },
+      {
+        "label": "깃허브",
+        "href": "https://github.com/VAST-AI-Research/EdenLive"
+      }
+    ]
+  }
+]

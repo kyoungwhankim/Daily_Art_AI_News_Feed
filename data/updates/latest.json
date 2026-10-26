@@ -1,5 +1,111 @@
 [
   {
+    "id": "krea-2026-10-24-1",
+    "service": "krea",
+    "date": "2026.10.24",
+    "kind": "기능",
+    "title": "오디오 도구 및 음성 클론 전체 공개",
+    "summary": "모든 사용자가 오디오 도구를 사용할 수 있으며, Train 메뉴에서 음성 클론이 가능합니다.",
+    "details": [
+      "생성 전 예상 비용 표시",
+      "음성 디자인 옵션 나란히 표시"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-24-2026",
+    "source": "dev"
+  },
+  {
+    "id": "suno-2026-10-23-1",
+    "service": "suno",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Suno iOS 앱에 iPhone Duo 지원과 AirPlay 추가",
+    "summary": "iOS 앱이 iPhone Duo 화면에 맞게 최적화되었고, 재생 중인 곡과 플레이리스트를 AirPlay 스피커나 TV로 바로 보낼 수 있어요. iOS 1.93 이상에서 사용할 수 있어요.",
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-23-2",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "HeyGen Voice·PixVerse V6 Max·Ideogram Vector 모델 추가",
+    "summary": "Scenario에 HeyGen Voice, HeyGen Voice Turbo, PixVerse V6 Max, Ideogram Vector, Video Chroma Key 모델이 추가됐어요. 음성, 벡터 이미지, 영상 작업에 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-5043262ff6e0b102324982b7b83f3bf7103c35a8a25862ad7b6c899eccde9b56",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-23-1",
+    "service": "scenario",
+    "date": "2026.10.23",
+    "kind": "모델",
+    "title": "Kling V4 모델 추가 (영상 생성·영상 편집)",
+    "summary": "Scenario에 Kling V4 모델이 추가됐어요. 텍스트에서 영상 만들기, 이미지에서 영상 만들기, 영상 편집을 Scenario에서 바로 쓸 수 있어요.",
+    "url": "https://www.scenario.com/changelog/models-83c59df5ef2ee6e2915eaa5db6ce9de2c138fa6030d084a8cb6c34b7f7e23109",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-10-23-1",
+    "service": "meshy",
+    "date": "2026.10.23",
+    "kind": "종료",
+    "title": "Rigging의 texture_image_url 파라미터 지원 종료",
+    "summary": "Rigging API의 texture_image_url 파라미터가 지원 중단됐어요. 모델에 텍스처가 이미 있다면 이 값을 빼고 요청해야 PBR 맵이 유지돼요.",
+    "details": [
+      "texture_image_url을 보내면 해당 이미지가 리깅된 모델의 유일한 텍스처가 되어 PBR 맵이 사라져요",
+      "model_url 파일의 내장 텍스처나 입력 작업의 텍스처가 자동으로 쓰여요"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "krea-2026-10-23-1",
+    "service": "krea",
+    "date": "2026.10.23",
+    "kind": "API",
+    "title": "Krea 3 API에 바운딩 박스 편집 추가",
+    "summary": "Krea 3 API에서 참조 이미지의 특정 영역을 바운딩 박스로 지정하고 영역마다 다른 지시를 줄 수 있어요. 레거시 thinking_mode 값의 종료일은 10월 30일로 늦춰졌어요.",
+    "details": [
+      "바운딩 박스는 요청당 최대 24개, 좌표는 0~1 비율",
+      "프롬프트에서 @label로 박스를 참조하고 thinking_mode high가 필요해요",
+      "레거시 thinking_mode 종료일 10월 23일에서 10월 30일로 변경"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-23-2026",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-23-1",
+    "service": "heygen",
+    "date": "2026.10.23",
+    "kind": "API",
+    "title": "워크스페이스당 브랜드 용어집 하나로 제한",
+    "summary": "워크스페이스에 용어집이 이미 있으면 새로 만들 때 409 응답을 받아요. 규칙을 바꾸려면 기존 용어집을 PATCH로 수정해야 해요.",
+    "details": [
+      "번역 기능에서 do-not-translate 용어와 강제 번역 목록을 API로 설정 가능"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "dream-machine-2026-10-23-1",
+    "service": "dream-machine",
+    "date": "2026.10.23",
+    "kind": "연동",
+    "title": "Luma에 Kling 4.0 탑재",
+    "summary": "Luma 플랫폼에서 Kling 4.0 모델을 바로 사용할 수 있게 되었어요. 빠른 동작과 역동적인 카메라 움직임이 필요한 샷을 Luma 보드에서 바로 다듬을 수 있어요.",
+    "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-22-4",
+    "service": "scenario",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Compute v1.14.0: Viggle 영상과 텍스트→3D 생성 추가",
+    "summary": "Scenario Compute v1.14.0이 나왔어요. Viggle 영상 생성, 텍스트에서 3D 생성, Ideogram 벡터 기능이 추가됐어요.",
+    "url": "https://www.scenario.com/changelog/compute-v1-14-0",
+    "source": "dev"
+  },
+  {
     "id": "scenario-2026-10-22-3",
     "service": "scenario",
     "date": "2026.10.22",
@@ -77,6 +183,16 @@
       "뷰어는 huggingface.js의 @huggingface/usd-web-viewer로 오픈소스 공개"
     ],
     "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-10-22-1",
+    "service": "higgsfield",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "Higgsfield Content Factory 출시",
+    "summary": "'만약에…' 질문 하나로 장면별 대본, 등장인물, 음성, 편집까지 만드는 짧은 영상 도구예요. 15초에서 5분 사이 길이를 1~4편까지 한 번에 만들 수 있어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-introduces-content-factory",
     "source": "notice"
   },
   {
@@ -391,136 +507,5 @@
     ],
     "url": "https://packages.unity.com/com.unity.ai.assistant",
     "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-19-1",
-    "service": "meshy",
-    "date": "2026.10.19",
-    "kind": "API",
-    "title": "Keychain·Fridge Magnet export_resolution 최대값 512로 변경",
-    "summary": "Keychain과 Fridge Magnet 빌드 작업의 export_resolution 최대값이 2048에서 512로 줄었어요. 512가 실제 깊이 맵 해상도라서 더 큰 값은 파일만 키우고 결과는 같아요.",
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "layer-2026-10-19-1",
-    "service": "layer",
-    "date": "2026.10.19",
-    "kind": "기능",
-    "title": "Layer 마커 편집, 스카이박스·타일·UI 킷 출시",
-    "summary": "이미지에 표시한 영역을 따라 수정하는 마커 편집과 스카이박스, 게임 타일, 9-slice UI 요소 생성이 추가됐어요. 여러 게임 엔진용으로 내보내기도 지원해요.",
-    "details": [
-      "마커(상자·타원·화살표·선·핀)로 수정 영역을 지정",
-      "Create skybox로 PNG·HDR·OpenEXR 파노라마 생성",
-      "아이소메트릭·헥스 타일을 Godot, Unity, Tiled용 타일셋으로 내보내기",
-      "버튼·패널을 늘릴 수 있는 9-slice UI 요소를 Unity, Godot, CSS용 UI 킷으로 내보내기",
-      "영상을 Lottie 또는 GIF로 내보내기",
-      "Creator 역할 추가와 Enterprise 사용량 한도 설정"
-    ],
-    "url": "https://www.layer.ai/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-19-1",
-    "service": "krea",
-    "date": "2026.10.19",
-    "kind": "API",
-    "title": "Krea 3 API 일반 공개와 MCP 비용 미리 확인",
-    "summary": "모든 워크스페이스에서 Krea 3 API를 호출할 수 있게 되었어요. MCP 생성 도구에서 preflight를 켜면 작업을 제출하지 않고 비용 견적과 잔액을 확인할 수 있어요.",
-    "details": [
-      "fast와 high 사고 모드는 베타 접근 없이 사용할 수 있어요",
-      "preflight 응답에 mode, compute_units, affordable 등이 포함돼요",
-      "코드 예제는 KREA_API_KEY 환경 변수에서 토큰을 읽어요"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-19-2026",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-10-19-1",
-    "service": "hugging-face",
-    "date": "2026.10.19",
-    "kind": "연동",
-    "title": "Transformers·Diffusers에서 AWS Trainium 네이티브 지원",
-    "summary": "TorchNeuron으로 AWS Trainium이 PyTorch의 기본 장치처럼 동작해서, Transformers와 Diffusers 같은 Hugging Face 라이브러리를 그대로 쓸 수 있어요. 공개 베타는 10월 20일부터 시작해요.",
-    "details": [
-      "TorchNeuron은 eager 모드, torch.compile, FSDP, TP 등 PyTorch 분산 API를 지원해요",
-      "Transformers, Diffusers, Accelerate, PEFT, TRL이 Trainium에서 직접 실행돼요",
-      "10월 20일부터 pip install torch-neuronx로 설치할 수 있어요"
-    ],
-    "url": "https://huggingface.co/blog/hf-torchneuron",
-    "source": "notice"
-  },
-  {
-    "id": "flow-studio-2026-10-19-1",
-    "service": "flow-studio",
-    "date": "2026.10.19",
-    "kind": "기능",
-    "title": "Flow Studio 3D 에디터에 키프레임과 오브젝트 복제 추가",
-    "summary": "3D 에디터에서 정지된 오브젝트에 키프레임 애니메이션을 줄 수 있고, 장면 오브젝트를 복사해 여러 개로 나눠 쓸 수 있게 되었어요. 텍스처링 옵션도 늘었어요.",
-    "details": [
-      "오브젝트 키프레임: 개별 키프레임이나 전체 모션 경로를 편집",
-      "장면 오브젝트 복사, 붙여넣기, 다중 선택 복제 지원",
-      "고급 텍스처링: Wonder 3D Lite 또는 Advanced 선택, 호환되는 드래프트에서 Trellis 2.0 사용",
-      "Image-to-3D 입력에 AI 이미지 향상 적용",
-      "Unreal Engine 프로젝트를 5.7.4로 업그레이드"
-    ],
-    "url": "https://help.wonderdynamics.com/release-notes/",
-    "source": "notice"
-  },
-  {
-    "id": "elevenlabs-2026-10-19-1",
-    "service": "elevenlabs",
-    "date": "2026.10.19",
-    "kind": "모델",
-    "title": "Eleven Realtime 모델과 실시간 번역, Video to Music API 공개",
-    "summary": "ElevenAgents 음성 에이전트용 Eleven Realtime 모델이 나왔고, 영상에 맞춰 음악을 만들어 주는 Video to Music API도 제공돼요. 실시간 번역은 엔터프라이즈 워크스페이스에서 쓸 수 있어요.",
-    "details": [
-      "Eleven Realtime v1 Mini(기본)와 v1 Max(복잡한 추론용) 출시, OpenAI Realtime API 형식과 호환",
-      "Realtime Translation: 말하는 도중 목소리를 유지한 채 다른 언어로 실시간 번역(WebSocket, 엔터프라이즈)",
-      "Video to Music API: 영상 최대 10개(합계 200MB)에서 어울리는 음악 생성, 효과음과 스템 분리 옵션",
-      "ElevenAgents에 알림(Alerts)과 Guardrails 정식 출시, 새 LLM 추가"
-    ],
-    "url": "https://elevenlabs.io/docs/changelog/2026/10/19",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-18-1",
-    "service": "scenario",
-    "date": "2026.10.18",
-    "kind": "연동",
-    "title": "Scenario Blender 플러그인 v0.12.0 공개",
-    "summary": "Blender 플러그인 v0.12.0이 나왔어요. 3D 결과물을 Blender 안에서 바로 수정하고 에이전트 설정도 함께 할 수 있어요.",
-    "url": "https://www.scenario.com/changelog/plugins-blender-v0-12-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-17-2",
-    "service": "scenario",
-    "date": "2026.10.17",
-    "kind": "기능",
-    "title": "Scenario 스킬 v0.58.0: Blender 워크플로와 FFmpeg 7 수정",
-    "summary": "새 Blender 워크플로와 릴 재편집 기능이 추가됐고, FFmpeg 7 관련 문제가 수정됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-58-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-17-1",
-    "service": "scenario",
-    "date": "2026.10.17",
-    "kind": "기능",
-    "title": "Scenario 스킬 v0.57.0: Blender 애니메이션 스킬과 SeeDance 드래프트",
-    "summary": "Blender 애니메이션 작업을 돕는 스킬과 SeeDance 드래프트 워크플로가 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-57-0",
-    "source": "notice"
-  },
-  {
-    "id": "mureka-2026-10-17-1",
-    "service": "mureka",
-    "date": "2026.10.17",
-    "kind": "기능",
-    "title": "Mureka 라이브러리에 워크스페이스 기능 추가",
-    "summary": "곡을 워크스페이스별로 나눠 정리할 수 있게 됐어요. 여러 곡을 한 번에 선택해 필터링하거나 다운로드하고 이동할 수 있어요.",
-    "url": "https://www.mureka.ai/whats-new_en.html",
-    "source": "notice"
   }
 ]

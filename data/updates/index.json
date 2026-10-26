@@ -1,28 +1,28 @@
 {
   "categories": {
     "image": {
-      "count": 474,
-      "latest": "2026.10.22",
+      "count": 476,
+      "latest": "2026.10.24",
       "file": "updates/feed/image.json",
-      "rev": "24756257d3"
+      "rev": "b34ed8203d"
     },
     "video": {
-      "count": 962,
-      "latest": "2026.10.22",
+      "count": 965,
+      "latest": "2026.10.23",
       "file": "updates/feed/video.json",
-      "rev": "d15103d49e"
+      "rev": "0a3e464c40"
     },
     "3d": {
-      "count": 184,
-      "latest": "2026.10.21",
+      "count": 185,
+      "latest": "2026.10.23",
       "file": "updates/feed/3d.json",
-      "rev": "f76c3c0bc3"
+      "rev": "ce63bc6e71"
     },
     "game-assets": {
-      "count": 569,
-      "latest": "2026.10.22",
+      "count": 572,
+      "latest": "2026.10.23",
       "file": "updates/feed/game-assets.json",
-      "rev": "0c84ea503c"
+      "rev": "648a6226e2"
     },
     "motion": {
       "count": 165,
@@ -31,10 +31,10 @@
       "rev": "427c00968f"
     },
     "audio": {
-      "count": 356,
-      "latest": "2026.10.19",
+      "count": 357,
+      "latest": "2026.10.23",
       "file": "updates/feed/audio.json",
-      "rev": "4a85943f47"
+      "rev": "bbdc872a5d"
     },
     "tools": {
       "count": 1026,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 52,
+      "count": 54,
       "first": "2025.03.26",
-      "latest": "2026.10.20"
+      "latest": "2026.10.24"
     },
     "recraft": {
       "count": 41,
@@ -135,14 +135,14 @@
       "latest": "2026.10.21"
     },
     "dream-machine": {
-      "count": 29,
+      "count": 30,
       "first": "2024.09.16",
-      "latest": "2026.10.08"
+      "latest": "2026.10.23"
     },
     "higgsfield": {
-      "count": 59,
+      "count": 60,
       "first": "2025.04.24",
-      "latest": "2026.10.20"
+      "latest": "2026.10.22"
     },
     "ltx-studio": {
       "count": 65,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 78,
+      "count": 79,
       "first": "2025.11.29",
-      "latest": "2026.10.22"
+      "latest": "2026.10.23"
     },
     "synthesia": {
       "count": 190,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 122,
+      "count": 123,
       "first": "2023.10.19",
-      "latest": "2026.10.21"
+      "latest": "2026.10.23"
     },
     "tripo": {
       "count": 29,
@@ -205,9 +205,9 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 375,
+      "count": 378,
       "first": "2022.12.23",
-      "latest": "2026.10.22"
+      "latest": "2026.10.23"
     },
     "layer": {
       "count": 104,
@@ -245,9 +245,9 @@
       "latest": "2026.10.19"
     },
     "suno": {
-      "count": 71,
+      "count": 72,
       "first": "2023.12.22",
-      "latest": "2026.10.15"
+      "latest": "2026.10.23"
     },
     "mureka": {
       "count": 56,

@@ -52,6 +52,7 @@
     {"label": "Midjourney", "kind": "product", "match": ["Midjourney", "미드저니"]},
     {"label": "Stability AI", "kind": "company", "match": ["Stability AI", "스태빌리티 AI", "Stable Diffusion", "스테이블 디퓨전"]},
     {"label": "Roblox", "kind": "company", "match": ["Roblox", "로블록스"]},
-    {"label": "Kling", "kind": "product", "match": ["Kling", "클링"]}
+    {"label": "Kling", "kind": "product", "match": ["Kling", "클링"]},
+    {"label": "Nintendo", "kind": "company", "match": ["Nintendo", "닌텐도"]}
   ]
 }

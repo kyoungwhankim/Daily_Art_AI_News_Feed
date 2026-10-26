@@ -1,5 +1,15 @@
 [
   {
+    "id": "suno-2026-10-23-1",
+    "service": "suno",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Suno iOS 앱에 iPhone Duo 지원과 AirPlay 추가",
+    "summary": "iOS 앱이 iPhone Duo 화면에 맞게 최적화되었고, 재생 중인 곡과 플레이리스트를 AirPlay 스피커나 TV로 바로 보낼 수 있어요. iOS 1.93 이상에서 사용할 수 있어요.",
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  },
+  {
     "id": "elevenlabs-2026-10-19-1",
     "service": "elevenlabs",
     "date": "2026.10.19",

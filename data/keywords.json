@@ -50,7 +50,8 @@
       {"label": "Sony", "kind": "company", "desc": "PlayStation 포함"},
       {"label": "Meta", "kind": "company"},
       {"label": "Epic Games", "kind": "company", "desc": "Fortnite 포함"},
-      {"label": "Level-5", "kind": "company"}
+      {"label": "Level-5", "kind": "company"},
+      {"label": "Nintendo", "kind": "company"}
     ],
     "art": [
       {"label": "영상", "kind": "target", "desc": "영상·비디오 생성/편집, 영화·트레일러·시네마틱 제작이 기사의 주제"},
