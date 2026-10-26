@@ -479,6 +479,12 @@ def cmd_push_local(_):
     branch = git('rev-parse', '--abbrev-ref', 'HEAD').stdout.strip()
     if branch != 'main':
         sys.exit(f'Not on main (on "{branch}") — refusing to push.')
+    # 이 컴퓨터의 git 사용자로 커밋한다 — Claude 루틴 지침의 `git config user.*`가 실수로 실행돼
+    # 저장소에 'Claude Daily Routine'이 남아 있으면 지운다
+    if git('config', '--local', 'user.email').stdout.strip() == 'claude-routine@anthropic.com':
+        git('config', '--local', '--unset', 'user.email')
+        git('config', '--local', '--unset', 'user.name')
+        print('Removed the Claude routine git identity from this repository (using your own).')
     git('add', 'data', 'scripts/keyword_rules.json')
     stat = git('diff', '--cached', '--stat').stdout
     print('Staged changes:\n' + (stat or '(none)'))
