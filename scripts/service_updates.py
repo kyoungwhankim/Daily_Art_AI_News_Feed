@@ -328,7 +328,7 @@ def is_listing_url(url: str, svc: dict) -> bool:
 
 def cmd_save(args):
     services = {s['slug']: s for s in load_services()}
-    raw = open(args.file, encoding='utf-8').read() if args.file else sys.stdin.read()
+    raw = open(args.file, encoding='utf-8-sig').read() if args.file else sys.stdin.read()
     try:
         new = json.loads(raw)
     except ValueError as e:

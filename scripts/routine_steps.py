@@ -56,6 +56,7 @@ FEED = '/tmp/feed'
 DIGEST = os.path.join(FEED, 'digest.json')
 ARTICLES = os.path.join(FEED, 'articles.json')
 KEYWORDS = os.path.join(FEED, 'keywords.json')
+ARTICLES_SIG = os.path.join(FEED, 'articles.sig')     # article-add만 쓴다 — push-local이 손으로 고친 파일을 가려낸다
 SOURCES = os.path.join(REPO, 'routine', 'sources.txt')
 WORK = {'updates': '/tmp/updates', 'free': '/tmp/free', 'report': '/tmp/report'}
 NOTE_FILE = {'updates': 'failed_sources.txt', 'free': 'candidates.txt'}
@@ -82,7 +83,7 @@ def save(path, data):
 def read_literal(args=()):
     args = list(args)
     if '--file' in args:
-        src = open(args[args.index('--file') + 1], encoding='utf-8').read().strip()
+        src = open(args[args.index('--file') + 1], encoding='utf-8-sig').read().strip()   # BOM이 붙어도 읽음
     else:
         src = sys.stdin.read().strip()
     # 'article = {...}' 처럼 이름을 붙여 써도 받아 준다
@@ -197,11 +198,26 @@ def cmd_digest_verify(_):
     print(f'Total: {len(arts)} articles collected today.')
 
 
+def file_sig(path):
+    import hashlib
+    try:
+        with open(path, 'rb') as f:
+            return hashlib.sha256(f.read()).hexdigest()
+    except FileNotFoundError:
+        return ''
+
+
+def write_sig():
+    with open(ARTICLES_SIG, 'w') as f:
+        f.write(file_sig(ARTICLES))
+
+
 # ---------------------------------------------------------------- PHASE 2
 def cmd_publish_init(_):
     os.makedirs(FEED, exist_ok=True)
     open(os.path.join(FEED, 'PUBLISH_PHASE'), 'w').close()
     save(ARTICLES, [])
+    write_sig()
     print('PHASE 2 started — context compaction is now blocked.')
     print('Initialized: empty articles list.')
 
@@ -266,6 +282,7 @@ def cmd_article_add(args):
     arts = load(ARTICLES, [])
     arts.append(a)
     save(ARTICLES, arts)
+    write_sig()
     print(f"Saved article {len(arts)}: [{tab}] {a['headline'][:40]}... keywords={kws}")
 
 
@@ -384,7 +401,7 @@ def cmd_agent_finish(args):
         report = f'Weekly report agent: wrote {len(e)} reports — ' + ', '.join(x['role'] for x in e)
     else:
         # 업데이트 작업: 보고 내용(서비스별 모드·저장 개수·읽지 못한 출처)은 작성자가 준다
-        report = (open(args[args.index('--file') + 1], encoding='utf-8').read() if '--file' in args
+        report = (open(args[args.index('--file') + 1], encoding='utf-8-sig').read() if '--file' in args
                   else sys.stdin.read()).strip()
         if not report:
             sys.exit('give the report text on stdin or with --file PATH')
@@ -474,11 +491,43 @@ def git(*a):
     return subprocess.run(['git'] + list(a), cwd=REPO, capture_output=True, text=True)
 
 
-def cmd_push_local(_):
+def preflight(args):
+    """푸시 전 검사 — 루틴 단계를 건너뛴 결과가 사이트에 올라가지 않게 한다. 문제 목록을 돌려준다."""
+    problems = []
+    digest = load(DIGEST, None)
+    if digest is None:
+        problems.append('no /tmp/feed/digest.json — PHASE 1 (digest-add) was not run')
+    arts = load(ARTICLES, None)
+    if arts is None:
+        problems.append('no /tmp/feed/articles.json — PHASE 2 (publish-init / article-add) was not run')
+    elif not os.path.exists(ARTICLES_SIG) or open(ARTICLES_SIG).read().strip() != file_sig(ARTICLES):
+        problems.append('/tmp/feed/articles.json was not written by `routine_steps.py article-add` '
+                        '(edited by hand or another tool) — save every article with article-add')
+    if digest is not None and arts is not None and len(arts) < len(digest):
+        problems.append(f'digest has {len(digest)} articles but only {len(arts)} were saved with article-add')
+    if not os.path.exists(os.path.join(WORK['updates'], 'DONE')):
+        problems.append('updates work not finished (no /tmp/updates/DONE) — do the UPDATES WORK '
+                        '(routine/updates_agent_prompt.txt) up to agent-finish')
+    cands = load(os.path.join(FEED, 'candidates.json'), [])
+    if digest is not None and len(cands) >= 60 and len(digest) < 4 and '--few-ok' not in args:
+        problems.append(f'only {len(digest)} articles from {len(cands)} feed-scan candidates — check every '
+                        'source in the FEED SCAN output (all languages) per R2; if the day really has so few, '
+                        'rerun with --few-ok "<reason>"')
+    return problems
+
+
+def cmd_push_local(args):
     """토큰 없이 이 컴퓨터의 git 로그인으로 main에 올린다 (Antigravity 등 로컬 실행용)."""
     branch = git('rev-parse', '--abbrev-ref', 'HEAD').stdout.strip()
     if branch != 'main':
         sys.exit(f'Not on main (on "{branch}") — refusing to push.')
+    problems = preflight(args)
+    if problems:
+        print('PUSH REFUSED — the routine is not finished:')
+        for p in problems:
+            print('  - ' + p)
+        print('Fix these (run the missing steps), then run push-local again.')
+        sys.exit(1)
     # 이 컴퓨터의 git 사용자로 커밋한다 — Claude 루틴 지침의 `git config user.*`가 실수로 실행돼
     # 저장소에 'Claude Daily Routine'이 남아 있으면 지운다
     if git('config', '--local', 'user.email').stdout.strip() == 'claude-routine@anthropic.com':
@@ -492,6 +541,8 @@ def cmd_push_local(_):
         print('No changes to commit.')
         return
     msg = 'Daily AI news feed: ' + datetime.now(KST).strftime('%Y.%m.%d')
+    if '--few-ok' in args and args.index('--few-ok') + 1 < len(args):
+        msg += '\n\nFew articles today: ' + args[args.index('--few-ok') + 1]
     r = git('commit', '-m', msg)
     if r.returncode:
         sys.exit('Commit failed:\n' + r.stdout + r.stderr)
