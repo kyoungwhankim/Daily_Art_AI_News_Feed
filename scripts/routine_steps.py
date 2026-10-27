@@ -103,6 +103,22 @@ def placeholder(v):
     return not v or (isinstance(v, str) and v.strip().startswith('['))
 
 
+def broken_text(a, korean_keys):
+    """인코딩이 깨진 글자, 또는 한국어여야 할 필드에 한글이 하나도 없는 경우를 찾는다."""
+    out = []
+    flat = json.dumps(a, ensure_ascii=False)
+    if '\ufffd' in flat:
+        out.append('text contains broken characters (U+FFFD) — the input was not UTF-8; write it with '
+                   'your file tool (UTF-8) and pass --file, never pipe text into python')
+    for k in korean_keys:
+        v = a.get(k)
+        v = ' '.join(v) if isinstance(v, list) else (v or '')
+        if v and not re.search('[가-힣]', v):
+            out.append(f'{k} has no Korean letters — if you wrote Korean, it was broken on the way '
+                       '(use --file with a UTF-8 file)')
+    return out
+
+
 def reject(problems):
     if problems:
         print('REJECTED:', '; '.join(problems))
@@ -177,6 +193,7 @@ def cmd_digest_add(args):
             problems.append(f'{k} is empty or still a placeholder')
     if not isinstance(a.get('extra_links', []), list):
         problems.append('extra_links must be a list')
+    problems += broken_text(a, ('title_ko', 'summary_ko'))
     reject(problems)
     a.setdefault('image_url', '')
     a.setdefault('extra_links', [])
@@ -262,6 +279,7 @@ def cmd_article_add(args):
         problems.append('body is missing the final 원문 attribution paragraph')
     if '\n' in body:
         problems.append('body contains \\n line breaks')
+    problems += broken_text(a, ('headline', 'summary', 'body'))
     kws = a.get('keywords', [])
     if not isinstance(kws, list):
         problems.append('keywords must be a list (use [] when none fits)')
@@ -339,7 +357,7 @@ def cmd_today(_):
 
 
 def cmd_paths(_):
-    for n, p in [('feed', FEED)] + list(WORK.items()):
+    for n, p in [('feed', FEED)] + list(WORK.items()) + [('log', '/tmp/routine_log')]:
         print(f'{n:8s}: {os.path.abspath(p)}')
 
 

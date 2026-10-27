@@ -11,6 +11,7 @@ validate_data.py — data/ 디렉터리가 사이트가 읽을 수 있는 상태
     - id가 전체에서 중복되지 않는지
     - keywords가 문자열 배열이고 그 탭의 목록(data/keywords.json)에 있는 값인지
     - data/updates/ (서비스 업데이트) — scripts/service_updates.py validate와 같은 검사
+    - data/ 아래 어떤 JSON에도 깨진 글자(U+FFFD '�')가 없는지 — 인코딩이 틀린 채 저장된 한글을 막는다
 
 통과하면 "✅ data/ is valid ..."를 출력하고 0으로, 실패하면 문제를 출력하고 1로 끝난다.
 """
@@ -85,6 +86,16 @@ def main():
             total += 1
 
     problems += service_updates.validate()
+
+    # 인코딩이 틀린 채 저장된 글자 (Windows 터미널을 거치며 '?�'로 바뀐 한글 등)
+    for root, _, files in os.walk(feed_data.DATA_DIR):
+        for fn in files:
+            if fn.endswith('.json'):
+                path = os.path.join(root, fn)
+                with open(path, encoding='utf-8', errors='replace') as f:
+                    if '\ufffd' in f.read():
+                        problems.append(f'{os.path.relpath(path, feed_data.REPO)}: contains broken characters (U+FFFD) '
+                                        '— text was saved with the wrong encoding')
 
     if problems:
         print('❌ data/ validation failed:')

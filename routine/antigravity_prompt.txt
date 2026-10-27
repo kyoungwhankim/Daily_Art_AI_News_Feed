@@ -20,9 +20,9 @@ git clean -fdq data
 Then check the environment and get today's date:
 
 Get-Location
-Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py env-check
-Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py today
-Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py paths
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py env-check
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py today
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py paths
 
 - `Get-Location` prints REPO_DIR (the repository folder). Write it literally in place of
   <REPO_DIR>.
@@ -51,9 +51,15 @@ WINDOWS RULES (W) — how to run the commands written in the routine files
 The routine files were written for a Linux bash shell. Your terminal is Windows PowerShell.
 Translate every command like this — and change nothing else:
 
-W1. `python3 ...` → `<PREFIX> python ...` where <PREFIX> is the SETUP prefix
+W1. `python3 scripts/X.py ARGS` → `<PREFIX> python scripts/run.py scripts/X.py ARGS` where <PREFIX>
+    is the SETUP prefix
     `Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1";`
-    — always with that prefix. Arguments
+    — always with that prefix and through scripts/run.py. run.py runs the script and also appends
+    its output, correctly encoded, to the day's log file /tmp/routine_log/YYYY-MM-DD.txt (see
+    `paths`), so the site owner can read what happened even when the terminal shows "?�".
+    Never pipe Korean (or any non-ASCII) text into python (`... | python ...` turns it into "?" in
+    PowerShell) — write it to a file with your file tool (UTF-8) and use --file. The save scripts
+    reject text with broken characters or Korean fields without any Korean letters. Arguments
     stay the same, including paths like /tmp/feed/digest.json (Python on this computer maps
     them to the work folders `paths` printed).
 
@@ -142,7 +148,7 @@ T2. Context. There is no PreCompact hook here; still run `routine_steps.py publi
 T3. COMMIT AND PUSH: do NOT run scripts/push_to_main.py (it needs a token from the Claude
     environment). Run instead:
 
-    <PREFIX> python scripts/routine_steps.py push-local
+    <PREFIX> python scripts/run.py scripts/routine_steps.py push-local
 
     It first checks that the routine really ran: digest.json from PHASE 1, every article saved
     with `article-add` (a hand-written articles.json is refused), the UPDATES WORK finished
@@ -174,6 +180,7 @@ T4. Never stop early to ask anything. When a step fails, do what the routine say
 FINISH
 =====================================================================
 
+The day's command log is /tmp/routine_log/YYYY-MM-DD.txt (C:\tmp\routine_log on this computer).
 Give the final report daily_feed_prompt.txt asks for (articles per tab, the updates /
 free-tools / weekly report summaries, the push result). Add one line naming any step where a
 W / A / T rule did not work as written, so the instructions can be fixed.
