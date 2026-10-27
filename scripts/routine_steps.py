@@ -327,6 +327,7 @@ def cmd_env_check(_):
         path = shutil.which(tool)
         print(f'{tool:9s}:', path or 'NOT FOUND')
         ok &= bool(path)
+    print('Text check: 한국어 · 日本語 · 中文 · Größe')
     print('repo     :', REPO)
     print('work dir :', os.path.abspath(FEED))
     print('Environment OK.' if ok else 'Environment check FAILED — fix the lines above before running the routine.')
@@ -450,8 +451,13 @@ def cmd_save_source_state(_):
         print('Service updates were REJECTED — source state not saved (checked again tomorrow).')
         return
     if os.path.exists(os.path.join(WORK['updates'], 'DONE')):
-        sys.exit(py('detect_source_changes.py', 'commit', '--failed',
-                    os.path.join(WORK['updates'], 'failed_sources.txt')))
+        rc = py('detect_source_changes.py', 'commit', '--failed', os.path.join(WORK['updates'], 'failed_sources.txt'))
+        if rc == 0:
+            open(os.path.join(WORK['updates'], 'STATE_SAVED'), 'w').close()
+        else:
+            print('Source state NOT saved. If it says source_state.next.json was not found, the updates work '
+                  'folder was cleared after `detect_source_changes.py check` — run that check again, then this.')
+        sys.exit(rc)
     print('Updates work did not finish — source state not saved (checked again tomorrow).')
 
 
@@ -508,6 +514,11 @@ def preflight(args):
     if not os.path.exists(os.path.join(WORK['updates'], 'DONE')):
         problems.append('updates work not finished (no /tmp/updates/DONE) — do the UPDATES WORK '
                         '(routine/updates_agent_prompt.txt) up to agent-finish')
+    upd = WORK['updates']
+    if os.path.exists(os.path.join(upd, 'DONE')) and not os.path.exists(os.path.join(upd, 'MERGE_REJECTED')) \
+            and not os.path.exists(os.path.join(upd, 'STATE_SAVED')):
+        problems.append('source state not saved — run `routine_steps.py apply-updates` then `save-source-state` '
+                        '(if it says source_state.next.json was not found, run detect_source_changes.py check again first)')
     cands = load(os.path.join(FEED, 'candidates.json'), [])
     if digest is not None and len(cands) >= 60 and len(digest) < 4 and '--few-ok' not in args:
         problems.append(f'only {len(digest)} articles from {len(cands)} feed-scan candidates — check every '
