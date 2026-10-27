@@ -99,7 +99,7 @@ def _fingerprint(url: str) -> dict:
     head = body.lstrip()[:400].lower()
     if head.startswith('<?xml') or '<rss' in head or '<feed' in head:
         try:
-            root = ET.fromstring(body.lstrip().encode('utf-8'))
+            root = read_source.parse_xml(body)
         except ET.ParseError:
             return {'kind': 'failed', 'status': 'parse-error'}
         items = []

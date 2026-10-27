@@ -41,6 +41,11 @@ Claude 루틴과 같은 구조입니다. Automation에는 짧은 실행 프롬�
 6. **자동 승인** — 아무도 보지 않는 실행이라, 터미널 명령·파일 쓰기·웹 접근을 매번 승인하라고 하면 거기서 멈춥니다. Automation을 만들 때 Review permissions 화면과 Antigravity 설정의 실행 정책을 자동 진행으로 맞춰 주세요. 이 루틴은 저장소 폴더와 작업 파일 폴더 `C:\tmp`(feed·updates·free·report — 매일 비우고 새로 쓰는 임시 파일) 아래만 씁니다.
 7. **수동 시험은 같은 폴더에서** — Automation 전에 일반 대화로 시험할 때도 Prompt의 경로(scratch 폴더)를 그대로 씁니다. 다른 폴더에서 시험하면 시험 결과가 그 폴더에 남아, Automation과 다른 상태가 됩니다.
 8. **매일 오전 9시에 컴퓨터가 켜져 있고 Antigravity가 실행 중**이어야 합니다 (절전 모드 해제).
+9. **실행 로그** — 루틴은 모든 스크립트 출력을 `C:\tmp\routine_log\YYYY-MM-DD.txt`에 UTF-8로 남깁니다 (`scripts/run.py`).
+   Antigravity 화면의 터미널 출력은 Windows 코드 페이지 때문에 한글이 `?�`로 깨질 수 있지만, 이 파일은 깨지지 않습니다.
+   문제가 생기면 이 파일을 보내 주세요. 터미널 화면까지 UTF-8로 보고 싶으면 Windows 설정 → 시간 및 언어 → 언어 및 지역 →
+   관리 언어 설정 → 시스템 로캘 변경 → "Beta: 세계 언어 지원을 위해 Unicode UTF-8 사용"을 켜고 재부팅합니다
+   (아주 오래된 한국어 프로그램 일부는 글자가 깨질 수 있습니다).
 
 ## 2. New Automation 입력값
 

@@ -26,6 +26,32 @@ import xml.etree.ElementTree as ET
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36'
 
 
+
+def parse_xml(body: str):
+    """피드·사이트맵 XML을 읽는다. 끝 태그 뒤에 스크립트가 붙었거나 뿌리 요소가 여럿인 파일도 받아 준다."""
+    raw = body.lstrip()
+    try:
+        return ET.fromstring(raw.encode('utf-8'))
+    except ET.ParseError:
+        pass
+    raw = re.sub(r'^<\?xml[^>]*\?>', '', raw).strip()
+    m = re.match(r'<(rss|feed|rdf:RDF|urlset|sitemapindex)\b', raw)
+    if m:
+        # 끝 태그 뒤의 스크립트를 떼고, 중간에 잘못 들어간 끝 태그(</urlset> 뒤에 <url>이 더 있는 사이트맵)를 지운다
+        name = m.group(1)
+        ends = [raw.rfind(t) + len(t) for t in ('</item>', '</entry>', '</url>', '</sitemap>', f'</{name}>')
+                if raw.rfind(t) >= 0]
+        body = raw[:max(ends)] if ends else raw
+        body = body.replace(f'</{name}>', '')
+        if name == 'rss':
+            body = body.replace('</channel>', '') + '</channel>'
+        try:
+            return ET.fromstring((body + f'</{name}>').encode('utf-8'))
+        except ET.ParseError:
+            pass
+    return ET.fromstring(('<root>' + raw + '</root>').encode('utf-8'))   # 뿌리가 여럿이면 하나로 묶는다
+
+
 def fetch(url: str):
     r = subprocess.run(['curl', '-sS', '-L', '--max-time', '25', '-A', UA, '-H', 'Accept: */*',
                         '-w', '\n__STATUS__%{http_code} %{content_type}', url],
@@ -68,9 +94,19 @@ def feed_items(root):
     items = []
     for el in root.iter():
         t = local(el.tag)
-        if t not in ('item', 'entry'):
+        if t not in ('item', 'entry', 'url'):
             continue
         rec = {'title': '', 'link': '', 'date': None, 'text': ''}
+        if t == 'url':      # 사이트맵: <loc> 주소와 <lastmod> 날짜만 있다 — 주소 끝부분을 제목으로
+            for c in el:
+                if local(c.tag) == 'loc':
+                    rec['link'] = (c.text or '').strip()
+                    rec['title'] = rec['link'].rstrip('/').rsplit('/', 1)[-1].replace('-', ' ')
+                elif local(c.tag) == 'lastmod':
+                    rec['date'] = parse_date(c.text)
+            if rec['link']:
+                items.append(rec)
+            continue
         for c in el:
             ct = local(c.tag)
             if ct == 'title':
@@ -105,9 +141,10 @@ def main():
         kind = 'text'
     print(f'SOURCE: {args.url}  STATUS: {status}  TYPE: {kind}')
 
+
     if kind in ('rss', 'atom'):
         try:
-            root = ET.fromstring(body.lstrip().encode('utf-8'))
+            root = parse_xml(body)
         except ET.ParseError as e:
             print(f'PARSE_ERROR: {e} — read it as HTML/WebFetch instead')
             return

@@ -19,12 +19,21 @@ git clean -fdq data
 
 Then check the environment and get today's date:
 
-$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py env-check
-$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py today
-$env:PYTHONUTF8 = "1"; python scripts/routine_steps.py paths
+Get-Location
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py env-check
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py today
+Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1"; python scripts/run.py scripts/routine_steps.py paths
 
-- Each terminal call may start a fresh PowerShell session, so EVERY python command in this
-  routine starts with `$env:PYTHONUTF8 = "1"; ` (rule W1). Without it Korean text breaks.
+- `Get-Location` prints REPO_DIR (the repository folder). Write it literally in place of
+  <REPO_DIR>.
+- Each terminal call may start a fresh PowerShell session in another folder and with the
+  console's old code page. So EVERY python command in this routine starts with the prefix
+      Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1";
+  (rule W1). Without it Korean / Japanese / Chinese text in the output turns into "?�" and the
+  work files may land on another drive.
+- env-check prints a line "Text check: 한국어 · 日本語 · 中文 · Größe". If you do not see those
+  exact characters, the prefix is missing — fix it before going on. You must be able to read
+  Korean, Japanese, Chinese and German source text correctly.
 - env-check must end with "Environment OK.". If it still fails (python, git, curl or node
   missing), stop and report the failing line.
 - `today` prints TODAY (KST, YYYY-MM-DD). Use it wherever the files say {{date}}.
@@ -42,7 +51,15 @@ WINDOWS RULES (W) — how to run the commands written in the routine files
 The routine files were written for a Linux bash shell. Your terminal is Windows PowerShell.
 Translate every command like this — and change nothing else:
 
-W1. `python3 ...` → `$env:PYTHONUTF8 = "1"; python ...` — always with that prefix. Arguments
+W1. `python3 scripts/X.py ARGS` → `<PREFIX> python scripts/run.py scripts/X.py ARGS` where <PREFIX>
+    is the SETUP prefix
+    `Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $env:PYTHONUTF8 = "1";`
+    — always with that prefix and through scripts/run.py. run.py runs the script and also appends
+    its output, correctly encoded, to the day's log file /tmp/routine_log/YYYY-MM-DD.txt (see
+    `paths`), so the site owner can read what happened even when the terminal shows "?�".
+    Never pipe Korean (or any non-ASCII) text into python (`... | python ...` turns it into "?" in
+    PowerShell) — write it to a file with your file tool (UTF-8) and use --file. The save scripts
+    reject text with broken characters or Korean fields without any Korean letters. Arguments
     stay the same, including paths like /tmp/feed/digest.json (Python on this computer maps
     them to the work folders `paths` printed).
 
@@ -69,7 +86,8 @@ W4. Single-quoted JSON arguments (free_tools.py add ... '{...}', weekly_report.p
 
 W5. Other shell tools:
     - `curl ...` → `curl.exe ...` with the same options (plain `curl` is a different command
-      in PowerShell).
+      in PowerShell). To read a web page use `python scripts/read_source.py "URL" --chars 6000`
+      (with the prefix) — never print a page's raw HTML.
     - `grep PATTERN` on a command's output → `| Select-String PATTERN`.
     - `cat FILE` → read the file with your file-reading tool (use the real path from `paths`).
     - Multi-line commands joined with `\` at line ends do not exist in the current files; if
@@ -130,7 +148,7 @@ T2. Context. There is no PreCompact hook here; still run `routine_steps.py publi
 T3. COMMIT AND PUSH: do NOT run scripts/push_to_main.py (it needs a token from the Claude
     environment). Run instead:
 
-    $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py push-local
+    <PREFIX> python scripts/run.py scripts/routine_steps.py push-local
 
     It first checks that the routine really ran: digest.json from PHASE 1, every article saved
     with `article-add` (a hand-written articles.json is refused), the UPDATES WORK finished
@@ -162,6 +180,7 @@ T4. Never stop early to ask anything. When a step fails, do what the routine say
 FINISH
 =====================================================================
 
+The day's command log is /tmp/routine_log/YYYY-MM-DD.txt (C:\tmp\routine_log on this computer).
 Give the final report daily_feed_prompt.txt asks for (articles per tab, the updates /
 free-tools / weekly report summaries, the push result). Add one line naming any step where a
 W / A / T rule did not work as written, so the instructions can be fixed.
