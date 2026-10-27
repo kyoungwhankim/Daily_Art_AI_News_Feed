@@ -164,7 +164,9 @@ T3b. Sources. The FEED SCAN covers about 57 feeds in English, Korean, Japanese, 
     German (The Verge, TechCrunch, GamesIndustry.biz, Kotaku, Cartoon Brew, 4Gamer, 36Kr,
     heise ...). R2 means reading EVERY line of that output for all three sections — not only
     the Korean outlets — plus the NO FEED sources by hand. Write articles in Korean whatever
-    the source language.
+    the source language. Every ★ line must end as digest-add or `routine_steps.py skip` with a
+    reason; push-local refuses while any ★ item is open. "No news today" can only be concluded from
+    the FEED SCAN, never from the service-update list of detect_source_changes.py.
 
 T3c. Writing. Follow STEP 4 exactly: id like `ideogram-vector-1027`, body in the polite
     conversational tone of existing entries (~해요, ~이에요 — not ~했습니다), final paragraph

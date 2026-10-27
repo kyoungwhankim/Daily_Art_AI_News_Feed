@@ -30,6 +30,7 @@ from fetch_article import BROWSER_UA                        # noqa: E402
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEEDS = os.path.join(REPO, 'routine', 'feeds.txt')
 OUT = '/tmp/feed/candidates.json'
+SHORTLIST = '/tmp/feed/shortlist.json'   # ★ 표시 — 루틴이 하나씩 digest-add 또는 skip으로 판단해야 하는 글
 KST = timezone(timedelta(hours=9))
 PER_SOURCE = 12          # 한 출처에서 보여 줄 최대 글 수
 DESC_LEN = 60            # 요약 앞부분 글자 수
@@ -40,6 +41,22 @@ AI_LONG = re.compile(
     r'\bGPT|OpenAI|Anthropic|\bClaude\b|Gemini|Copilot|Midjourney|Stable Diffusion|Stability|\bVeo\b|'
     r'Runway|ElevenLabs|artificial intelligence|machine.learning|deep learning|neural|generative|diffusion model|'
     r'chatbot|agentic|künstliche Intelligenz|인공지능|생성형|人工知能|機械学習|生成系|人工智能|大模型|生成式|智能体', re.I)
+
+
+# 게임·아트·창작 쪽 단어 — AI 글 가운데 이 사이트 주제일 가능성이 큰 글에 ★를 붙인다
+CREATIVE = re.compile(
+    r'\bgames?\b|gaming|game dev|studio|steam\b|xbox|playstation|nintendo|unity|unreal|epic games|'
+    r'roblox|blender|animat|anime|\bfilm|movie|cinema|hollywood|box office|vfx|\b3d\b|\bart\b|artist|illustrat|'
+    r'music|song|singer|voice act|dubbing|image gen|video gen|text-to-(image|video)|sora|\bveo\b|runway|'
+    r'midjourney|kling|firefly|photoshop|creative|creator|character|npc|copyright|'
+    r'게임|애니|영화|영상|음악|가수|성우|아티스트|일러스트|디자인|캐릭터|웹툰|만화|창작|저작권|'
+    r'ゲーム|アニメ|映画|映像|イラスト|音楽|声優|クリエイター|画像生成|動画|著作権|'
+    r'游戏|动画|电影|影视|视频生成|图像|音乐|漫画|版权|AIGC|'
+    r'\bSpiel|\bFilm|Musik|Kunst|Grafik|Urheberrecht', re.I)
+
+
+def is_creative(item):
+    return bool(CREATIVE.search(item['title'] + ' ' + item['desc'][:200]))
 
 
 def is_ai(item):
@@ -192,7 +209,11 @@ def main():
 
     out, problems, quiet, total = [], [], [], 0
     print(f'Feed scan: {len(feeds)} feeds, items dated {since:%Y-%m-%d} ~ {now:%Y-%m-%d} (KST)')
-    print('Format: date | title | url | first words of the summary. Already-published URLs are removed.\n')
+    print('NEWS ARTICLE CANDIDATES for PHASE 1 (press articles and blog posts). This is NOT the service-update')
+    print('list of detect_source_changes.py — judge news articles only from this list.')
+    print('Format: date | title | url | first words of the summary. Already-published URLs are removed.')
+    print('★ = AI + game / art / creative words: MUST be judged one by one (digest-add, or routine_steps.py skip).\n')
+    shortlist = []
     for feed, items, err in results:
         if err:
             problems.append(f"{feed['source']}: {err}")
@@ -215,8 +236,12 @@ def main():
         keep = [i for i in recent if normalize_url(i['url']) not in seen and (feed['ai'] or no_filter or is_ai(i))]
         keep.sort(key=lambda i: i['date'], reverse=True)
         for i in keep:             # 파일에는 잘리지 않은 전체 목록을 남긴다
-            out.append({'source': feed['source'], 'date': i['date'].isoformat(), 'title': i['title'],
-                        'url': i['url'], 'desc': i['desc'][:400]})
+            i['star'] = is_creative(i)
+            rec = {'source': feed['source'], 'date': i['date'].isoformat(), 'title': i['title'],
+                   'url': i['url'], 'desc': i['desc'][:400], 'star': i['star']}
+            out.append(rec)
+            if i['star']:
+                shortlist.append(rec)
         if not keep:
             quiet.append(feed['source'])
             continue
@@ -226,7 +251,7 @@ def main():
         print(f"## {feed['source']} — {len(shown)}{' of ' + str(len(keep)) if len(keep) > len(shown) else ''}{label}")
         for i in shown:
             desc = i['desc'][:DESC_LEN] + ('…' if len(i['desc']) > DESC_LEN else '')
-            print(f"- {i['date']:%m-%d} | {i['title']} | {i['url']}" + (f' | {desc}' if desc else ''))
+            print(f"{'★' if i['star'] else '-'} {i['date']:%m-%d} | {i['title']} | {i['url']}" + (f' | {desc}' if desc else ''))
         if len(keep) > len(shown):
             print(f"  (more: python3 scripts/scan_feeds.py --source {feed['source']})")
         print()
@@ -238,8 +263,12 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
+    with open(SHORTLIST, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(shortlist, f, ensure_ascii=False, indent=1)
     print(f'Feed scan done: {total} candidates shown from {len(feeds) - len(problems)} readable feeds '
           f'({len(out)} in {OUT}).')
+    print(f'MUST REVIEW: {len(shortlist)} ★ items (also those cut by "more:" lines). Each needs digest-add or '
+          '`routine_steps.py skip "<url>" "<reason>"`; `routine_steps.py review` lists the ones still open.')
     if quiet:
         print('Checked, nothing new (no new item, or none about AI): ' + ', '.join(quiet))
     if problems:
