@@ -168,6 +168,19 @@ T3b. Sources. The FEED SCAN covers about 57 feeds in English, Korean, Japanese, 
     reason; push-local refuses while any ★ item is open. "No news today" can only be concluded from
     the FEED SCAN, never from the service-update list of detect_source_changes.py.
 
+T3d. Two lists, two jobs — never mix them:
+      FEED SCAN (scan_feeds.py, "NEWS ARTICLE CANDIDATES")   → PHASE 1 news articles, RECENCY
+                                                               RULE = today or yesterday (KST)
+      detect_source_changes.py check ("SERVICE UPDATE        → UPDATES WORK only ('업데이트' page),
+        CANDIDATES") + service_updates.py state                its own date rule: every official
+                                                               update dated on or after the date
+                                                               `state` prints ("collect entries
+                                                               dated ... or later") — NOT today/
+                                                               yesterday
+    Do not save the update list under a name like "scan_results". In the updates work, read every
+    source `check` printed and save each real product update (new model, feature, integration,
+    pricing, API change) of that service; a changelog entry is not "too minor" for that page.
+
 T3c. Writing. Follow STEP 4 exactly: id like `ideogram-vector-1027`, body in the polite
     conversational tone of existing entries (~해요, ~이에요 — not ~했습니다), final paragraph
     exactly `<p>원문: <a href="URL">SOURCE NAME</a></p>`, image by the four-step rule.
