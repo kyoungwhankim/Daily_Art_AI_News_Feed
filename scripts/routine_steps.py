@@ -243,8 +243,8 @@ def cmd_review(_):
     for x in rest:
         print(f"  {x['date'][5:10]} | {x['source']} | {x['title']} | {x['url']}")
     if rest:
-        print('Judge each one: STEP A (peek_article.py) then digest-add, or '
-              '`routine_steps.py skip "<url>" "<reason>"`.')
+        print('Judge each one from its line: clearly off-topic / too old / already on the site → '
+              '`routine_steps.py skip "<url>" "<reason>"`; otherwise STEP A (peek_article.py) then digest-add.')
 
 
 def cmd_digest_verify(_):

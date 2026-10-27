@@ -172,14 +172,17 @@ URLs already published on the site are removed. Feeds of non-AI outlets marked
 at most 12 items; "12 of 45" plus a "(more: ...)" line means run that command to see the
 rest. Use this output for all three sections — do NOT curl those feeds again.
 Lines marked ★ are AI items with game / art / creative words — the most likely articles for
-this site. EVERY ★ item must be judged: run STEP A on it and either save it with digest-add or
-record why not with
+this site. EVERY ★ item must be judged. Decide from its line first: if the title and summary
+already show it is off-topic, older than yesterday or a story the site has, skip it right away
+(no need to open it); otherwise open it with STEP A and save it with digest-add. Record every
+skip with
   python3 scripts/routine_steps.py skip "<url>" "<reason>"
 (reasons: off-topic, older than yesterday, same story as <article>, paywall, unreadable ...).
 `python3 scripts/routine_steps.py review` lists the ★ items still open.
-Judge candidates by reading them yourself. NEVER write your own script or keyword filter to
-narrow down the feed scan / candidates.json — such filters silently drop good articles (an
-item without the word "AI" in the title, a Japanese title, a voice or film story ...). Lines without ★ still
+Read the feed scan lines yourself (one line per item — cheap). NEVER write your own script or
+keyword filter to narrow them down further — such filters silently drop good articles (an item
+without the word "AI" in the title, a Japanese title, a voice or film story ...). Open a page
+(STEP A) only for items that may become an article. Lines without ★ still
 count as candidates — ★ only marks the ones you may not leave unjudged.
 This feed scan is the NEWS list. The list printed by detect_source_changes.py in the updates
 work is a different thing (official release notes for the '업데이트' page) — never pick news
