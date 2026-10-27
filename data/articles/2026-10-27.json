@@ -1,5 +1,26 @@
 [
   {
+    "id": "games-d3445edc-2026-10",
+    "tab": "games",
+    "headline": "사진 한 장을 3D 장면으로, 오브젝트 생성과 배치를 나눠 품질 높인 'Easy-3Dfy'",
+    "summary": "이미지 한 장으로 3D 장면을 조립하는 새 방식 'Easy-3Dfy'가 공개됐어요.",
+    "body": "<p>이미지 한 장만 보고 그 안의 물체들과 배치까지 3D 장면으로 만들어 내는 연구 'Easy-3Dfy'가 허깅페이스 데일리 페이퍼에 올라왔어요. 지금까지는 SAM-3Dfy처럼 오브젝트와 장면 레이아웃을 한 모델이 처음부터 끝까지 만들어 내는 방식이 많았는데, 세밀한 장면 형태나 개별 에셋 품질에서는 아쉬운 점이 있었어요. 연구팀은 이 문제를 풀려고 일을 둘로 나눴어요. 물체 하나하나의 모양은 디테일이 좋은 전문 3D 오브젝트 생성 모델에 맡기고, 물체가 어디에 어떻게 놓여 있는지는 공간 이해가 강한 3D 파운데이션 모델로 따로 추정하는 거예요.</p><p>두 결과를 이어 붙이는 건 RPF 기반 정렬 모듈이에요. 오브젝트별로 만든 메시와 장면에서 부분적으로 얻은 포인트맵 사이의 기하학적 대응을 찾아서, 각 물체가 장면 안에서 차지해야 할 위치와 방향을 되살려 주는 방식이에요. 장면 전체를 학습시키는 정답 데이터 없이도 Scene-Maker와 3D-FUTURE200 평가에서 여러 기하 지표 모두 SAM-3Dfy보다 좋은 결과를 냈다고 해요.</p><p>이 구조의 장점은 오브젝트 생성 모델과 파운데이션 모델이 각각 좋아질 때마다 전체 결과도 따로 손대지 않고 함께 좋아진다는 점이에요. 컨셉 아트나 레퍼런스 사진 한 장으로 배경을 빠르게 블록아웃하거나 소품 배치를 잡아 보는 게임 아트 작업에 응용할 여지가 커 보여요. 프로젝트 페이지에서 결과물을 직접 확인할 수 있어요.</p><p>원문: <a href=\"https://huggingface.co/papers/2610.32250\">Hugging Face Papers</a></p>",
+    "source": "Hugging Face Papers",
+    "publishedAt": "2026.10.27",
+    "hue": 200,
+    "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32250/gradient.png",
+    "keywords": [
+      "3D"
+    ],
+    "url": "https://huggingface.co/papers/2610.32250",
+    "urls": [
+      {
+        "label": "프로젝트 페이지",
+        "href": "https://easy3dfy.github.io/"
+      }
+    ]
+  },
+  {
     "id": "games-12b19813-2026-10",
     "tab": "games",
     "headline": "컴투스플랫폼, 챗GPT용 게임 백엔드 '하이브 액실 플러그인' 공개",
@@ -11,6 +32,203 @@
     "image": "https://cdn.gamemeca.com/gmdata/0001/782/378/gm848791_thumb____GPT.webp",
     "keywords": [],
     "url": "https://www.gamemeca.com/view.php?gid=1782378"
+  },
+  {
+    "id": "industry-6ec95559-2026-10",
+    "tab": "industry",
+    "headline": "파판·크로노 트리거 베테랑들 \"AI 시대에도 0을 1로 만드는 건 사람의 몫\"",
+    "summary": "스퀘어 에닉스 베테랑들이 AI는 효율 도구일 뿐 시작은 사람이 해야 한다고 말했어요.",
+    "body": "<p>마나 시리즈 35주년을 맞아 패미통이 진행한 인터뷰에서 스퀘어 에닉스 베테랑 다나카 히로미치, 이시이 고이치, 기타세 요시노리가 슈퍼패미컴 시절 개발 이야기와 함께 AI 시대의 게임 개발에 대한 생각을 밝혔어요. 이들은 예전에는 팀이 작고 개발 기간도 짧아서 방향을 자주 바꿀 수 있었다며, AI가 소규모 팀이 원래 감당하기 힘든 규모의 게임을 만들도록 도와줄 수 있다고 봤어요. 기타세는 유니티나 언리얼처럼 AI도 개발을 받쳐 주는 도구가 될 수 있지만, 무언가를 0에서 1로 만드는 일에는 반드시 사람이 필요하고 그건 앞으로도 바뀌지 않을 거라고 강조했어요.</p><p>이시이는 AI로 프로토타입을 빨리 만들면 그만큼 테스트하고 다듬을 시간이 늘어난다며 솔직히 기대된다고 했어요. 다만 작업의 시작과 끝은 사람이 정해야 하고, AI에만 의존하면 겉보기엔 매끈해도 차갑고 사람의 손맛이 없는 결과가 나올 수 있다고 덧붙였어요. 기타세는 2년 전 큰아들 결혼식 축사를 AI로 써 볼까 하다가 아니라고 느껴 직접 썼다는 일화도 전했어요. 코타쿠는 일본 개발 현장의 논의가 쓸지 말지보다 어떻게 책임 있게 쓸지로 옮겨 가고 있고, 일본 개발자의 85% 이상이 AI를 쓰거나 검토 중이라는 조사도 있다고 짚었어요.</p><p>원문: <a href=\"https://kotaku.com/final-fantasy-and-chrono-trigger-veterans-believe-modern-developers-must-possess-skill-to-take-an-idea-from-0-to-1-in-the-age-of-ai-2000749690\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.10.27",
+    "hue": 30,
+    "image": "https://kotaku.com/app/uploads/2026/10/Secret-of-Mana-Tree.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://kotaku.com/final-fantasy-and-chrono-trigger-veterans-believe-modern-developers-must-possess-skill-to-take-an-idea-from-0-to-1-in-the-age-of-ai-2000749690",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.gamesradar.com/games/final-fantasy/on-ai-in-game-dev-final-fantasy-and-mana-veterans-say-humans-will-always-need-to-turn-zero-into-one-but-robots-can-improve-efficiency/"
+      }
+    ]
+  },
+  {
+    "id": "industry-b868e537-2026-10",
+    "tab": "industry",
+    "headline": "Unity CLI 명령 98%는 AI 에이전트가 실행, 사람이 직접 친 건 0.2%뿐",
+    "summary": "Unity CLI 명령의 98%를 AI 에이전트와 자동화가 실행한 것으로 나타났어요.",
+    "body": "<p>유니티가 10월 22일 공식 블로그에서 커맨드라인 도구 'Unity CLI'의 사용 데이터 2억 건 이상을 분석한 결과를 공개했어요. 실행된 명령의 약 98%가 AI 코딩 에이전트와 각종 자동화에서 나왔고, 사람이 직접 입력한 건 0.2%, CI를 거친 건 0.3%에 그쳤어요. 집계 기간은 7월 20일부터 10월 13일까지로, 로그인 사용자 22만 6천 명 이상의 데이터를 모았어요. Unity CLI는 터미널에서 유니티를 설치·관리하고 실행 중인 에디터를 조작할 수 있는 도구라서, 에이전트도 이걸 통해 에디터 안에서 여러 작업을 해요.</p><p>가장 많이 쓰인 명령은 연결된 에디터에서 명령을 실행하는 'unity command'로 약 1억 2,400만 번이었어요. 유니티는 사람이 패키지 설치나 프로젝트 실행, 로그인 같은 초기 설정만 하고 그다음 작업은 에이전트에게 맡기는 역할 분담이 뚜렷해졌다고 분석했어요. 사용량은 Claude Code, Codex, Grok용 공식 플러그인이 나온 뒤 크게 늘었고, 에이전트별로는 Claude Code가 가장 많았으며 Codex, Cursor, Grok이 뒤를 이었어요. 지역별로는 미국, 일본, 한국 순이었어요. 게임 개발 현장에서 에이전트에게 작업을 맡기는 흐름이 실제 숫자로 확인된 셈이에요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/26/28449.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.27",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/201143.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "설문·통계",
+      "코딩"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/26/28449.html"
+  },
+  {
+    "id": "industry-3c0576bc-2026-10",
+    "tab": "industry",
+    "headline": "스팀 넥스트 페스트 인기 데모 50개 중 AI 사용 고지는 단 4개",
+    "summary": "넥스트 페스트 인기 데모 50개 중 AI 사용을 밝힌 게임은 4개뿐이었어요.",
+    "body": "<p>데모 8천 개가 넘게 몰렸던 지난주 스팀 넥스트 페스트에서 가장 많이 플레이된 50개 목록을 밸브가 공개했어요. PC게이머가 이 목록을 살펴보니, 개발에 AI를 썼다고 고지한 게임은 50개 중 4개뿐이었어요. 행사 기간 내내 생성형 AI로 만든 저품질 게임이 넘쳐난다는 비판이 나왔지만, 정작 플레이어들은 AI를 드러내 놓고 쓴 게임을 대부분 고르지 않았다는 분석이에요. AI 고지 게임 중 하나인 'Teach My Little Sister How To Drive'는 LLM으로 움직이는 NPC를 핵심으로 내세웠는데, 개발자가 하루에 1천 달러 넘는 비용을 쓴 것으로 알려졌어요.</p><p>나머지 순위는 지금의 유행을 그대로 보여 줘요. 방치형 게임이 7개, 가볍고 웃긴 협동 게임이 15개, 서바이벌 3개, 스스로 코지 게임이라 부르는 작품이 3개였고, 1위는 1~6인 비대칭 파티 게임 'Worst Class Ever'였어요. 대형 퍼블리셔 작품은 유비소프트의 '트로피코 7' 하나뿐이었어요. PC게이머는 5년 전 넥스트 페스트를 이끌던 작품들과 비교하면 로블록스와 UGC의 영향이 크게 느껴진다고 짚었어요. AI를 쓰는 개발사라면 AI 고지가 실제 플레이 선택에 어떤 영향을 주는지 참고할 만한 데이터예요.</p><p>원문: <a href=\"https://www.pcgamer.com/software/platforms/the-50-most-played-steam-next-fest-demos-include-7-incremental-games-4-ai-disclosures-and-only-one-instance-of-haystack-slop/\">PC Gamer</a></p>",
+    "source": "PC Gamer",
+    "publishedAt": "2026.10.27",
+    "hue": 30,
+    "image": "https://cdn.mos.cms.futurecdn.net/go39hWDEGCotfQFaMgkWDo-1200-80.png",
+    "keywords": [
+      "행사·컨퍼런스",
+      "설문·통계"
+    ],
+    "url": "https://www.pcgamer.com/software/platforms/the-50-most-played-steam-next-fest-demos-include-7-incremental-games-4-ai-disclosures-and-only-one-instance-of-haystack-slop/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.gamesradar.com/games/valve-veteran-says-steam-is-overwhelmed-with-slop-and-ai-crap-in-next-fest-event-fears-pc-becoming-more-like-mobile-this-is-the-thing-that-im-worried-about-more-than-anything/"
+      }
+    ]
+  },
+  {
+    "id": "industry-413356fb-2026-10",
+    "tab": "industry",
+    "headline": "'극한탈출' 우치코시 코타로 \"생성형 AI에 긍정적, 쓰냐 안 쓰냐 이분법은 너무 극단적\"",
+    "summary": "우치코시 코타로가 생성형 AI에 긍정적이라며 업계에 더 많은 논의를 제안했어요.",
+    "body": "<p>'극한탈출'과 'AI: 솜니움 파일' 시리즈로 유명한 우치코시 코타로가 Game*Spark 인터뷰에서 새 회사 'CRASH KEYS'를 세운 배경과 생성형 AI에 대한 생각을 밝혔어요. 회사는 2025년 3월에 이미 세웠고 원래 2027년 신작과 함께 공개할 계획이었지만, 진행하던 프로젝트가 갑자기 중단되면서 일감과 투자를 구하려고 발표를 앞당겼다고 해요. 그는 중단 소식에 사흘 밤낮을 앓아누웠다고 털어놨어요.</p><p>AI에 대해서는 업계에선 폭탄 발언일 수 있지만 자신은 생성형 AI에 긍정적인 입장이라고 분명히 했어요. X 글 때문에 AI 반대파로 오해받았지만, 오히려 AI를 쓸 수 있었다면 상황이 달라졌을지 모른다는 뜻이었다는 거예요. 지금 업계에는 AI를 절대 쓰면 안 되는 듯한 분위기가 있지만 실제로 써도 되는 장면이 있고 활용하는 사람도 많다며, 쓰냐 안 쓰냐의 이분법은 너무 극단적이라고 했어요. 처음 디자인과 이야기 구상은 사람이 하고 이를 실제 형태로 만드는 공정 일부에 AI를 쓰는 건 나쁘지 않고, 제작 기간이 절반으로 줄면 팬들도 반길 거라고 봤어요. 다만 크리에이터가 그린 세계를 제대로 구현한다는 전제가 있어야 한다며, 반사적으로 거부하기보다 함께 더 논의하자고 제안했어요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/27/28458.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.27",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/201189.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/27/28458.html"
+  },
+  {
+    "id": "art-9d337e17-2026-10",
+    "tab": "art",
+    "headline": "런웨이, 말로 설명하면 맞춤 생성 AI 앱을 만들어 주는 'App Studio' 출시",
+    "summary": "런웨이가 코딩 없이 나만의 생성 AI 앱을 만드는 'App Studio'를 내놨어요.",
+    "body": "<p>런웨이가 필요한 도구를 말로 설명하면 이미지·영상·오디오를 생성하는 전용 앱을 코딩 없이 만들어 주는 'App Studio'를 출시했어요. 만들어진 앱은 자체 화면을 갖추고 팀의 브랜드 키트와 워크플로를 그대로 쓰며, 혼자 쓰거나 팀과 공유하거나 런웨이 계정이 있는 누구나 쓰도록 링크로 공개할 수 있어요. 런웨이는 지금까지 좋은 결과를 내는 모델·레퍼런스·프롬프트 조합이 한 사람의 노하우로만 남아 있었는데, 이걸 팀 전체가 쓰는 도구로 바꾸는 게 목표라고 설명했어요.</p><p>기본 앱으로는 영상 속 인물을 바꾸는 Character Swap, 기존 영상에 제품을 정확하게 합성하는 AutoComp, 3D 공간에서 카메라 위치와 움직임을 정하는 3D Camera Control, 원하는 부분만 고치는 Precise Edit 등이 들어 있어요. 얼리 액세스 기간에는 건축 회사 KPF가 렌더링 이미지에 움직임과 카메라 경로를 그려 영상으로 만드는 앱을 만들었고, 한 게임 스튜디오는 레퍼런스 몇 장으로 캐릭터별 샷을 일관되게 뽑고 디자인이 바뀌면 한 번에 다시 생성하는 앱을 만들었다고 해요. 3D 애니매틱에 텍스처와 조명을 입히는 프리비즈 앱도 예시로 소개돼서, 반복 에셋이 많은 아트 팀이 눈여겨볼 만해요.</p><p>원문: <a href=\"https://runwayml.com/news/company-news/introducing-runway-app-studio\">Runway</a></p>",
+    "source": "Runway",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/10/hero-1600-900-social-og-2x-355537f0-b954-4a87-8955-47c89bc15d4b.png",
+    "keywords": [
+      "영상",
+      "2D·이미지",
+      "Runway"
+    ],
+    "url": "https://runwayml.com/news/company-news/introducing-runway-app-studio",
+    "urls": [
+      {
+        "label": "공식 사이트",
+        "href": "https://app.runwayml.com/app-studio"
+      }
+    ]
+  },
+  {
+    "id": "art-772e67ed-2026-10",
+    "tab": "art",
+    "headline": "중국 첫 '전편 AI 제작' 극장 영화 '싼싱두이', 개봉 첫 주 흥행 참패",
+    "summary": "중국 첫 전편 AI 제작 영화 '싼싱두이'가 개봉 첫 주 흥행에 실패했어요.",
+    "body": "<p>보나 필름 그룹이 중국 최초의 전편 AI 제작 극장 장편이라고 내세운 SF 영화 '싼싱두이: 미래과거'가 흥행에 크게 실패했어요. 10월 23일 개봉한 이 영화는 월요일까지 121만 위안, 약 18만 1천 달러를 버는 데 그쳤어요. 보나 측은 제작비가 1천만 위안 이상 들었고 100명 가까운 인원이 2년 넘게 작업했다고 밝혔어요. 개봉 첫날에만 1만 회가 넘는 상영이 잡혀 관객을 만날 기회는 충분했는데도 결과가 저조했다는 점에서, AI 기술에 대한 투자자의 열기가 관객 수요로 바로 이어지지는 않는다는 걸 보여 줬어요.</p><p>카툰브루는 두 달 전 화제가 된 저예산 애니메이션 '뉴라이'와 비교했어요. 신위멍 감독과 시나리오를 쓴 그의 어머니 쑨리팡이 만든 이 작품은 8월 5일 개봉 후 열흘간 7,700위안밖에 못 벌었지만, 조악한 모델링과 어색한 애니메이션 클립이 온라인에서 퍼지며 오히려 매력이 됐고 지금까지 약 6,429만 위안, 거의 1천만 달러를 벌었어요. 카툰브루는 두 영화 결과로 AI에 대한 관객 태도를 일반화할 수는 없다고 하면서도, 뉴라이의 엉뚱한 인간미는 관객이 함께 즐길 거리를 줬지만 싼싱두이의 '제작 혁신'이라는 내세움은 관객에게 그만큼 매력적이지 않았다고 평가했어요.</p><p>원문: <a href=\"https://www.cartoonbrew.com/box-office-report/chinese-ai-film-sanxingdui-future-past-box-office-flop-268426.html\">Cartoon Brew</a></p>",
+    "source": "Cartoon Brew",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://www.cartoonbrew.com/wp-content/uploads/2026/10/Sanxingdui-Niu-Lai.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.cartoonbrew.com/box-office-report/chinese-ai-film-sanxingdui-future-past-box-office-flop-268426.html",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://pandaily.com/sanxingdui-future-past-first-licensed-all-ai-workflow-feature-film-bona-cloud-studio"
+      }
+    ]
+  },
+  {
+    "id": "art-4e9b2ad9-2026-10",
+    "tab": "art",
+    "headline": "엘비스 프레슬리 음원 권리사, 노래 274곡 무단 학습했다며 앤트로픽에 4,110만 달러 소송",
+    "summary": "엘비스 음원 권리사가 노래 무단 학습을 이유로 앤트로픽을 고소했어요.",
+    "body": "<p>엘비스 프레슬리의 음악과 초상권을 가진 오센틱 브랜즈 그룹이 롤리 뮤직 퍼블리싱, 여러 신탁과 함께 10월 23일 캘리포니아 연방법원에 앤트로픽을 상대로 저작권 침해 소송을 냈어요. 클로드 모델이 엘비스 노래 274곡을 허락 없이 학습했다는 주장이에요. 원고 측은 곡당 법정 최고액인 15만 달러씩 총 4,110만 달러를 청구했고, 다른 청구까지 합치면 4,860만 달러에 달해요. 소장에는 'Can't Help Falling in Love', 'A Little Less Conversation', 'Don't Be Cruel' 같은 히트곡이 이름을 올렸어요. 앤트로픽은 주장에 동의하지 않으며 끝까지 다투겠다고 밝혔어요.</p><p>눈에 띄는 건 안전장치에 대한 주장이에요. 원고 측은 앤트로픽이 앞선 소송 이후 가드레일을 넣었다고 했지만, 최근 버전의 클로드도 '요즘 관객용으로' 다시 만들어 달라는 요청에 원곡의 구조와 훅을 그대로 쓰고 표현만 살짝 바꾼 가사를 절·후렴·브리지까지 통째로 써 줬다고 주장해요. 대형 음악 출판사가 아니라 한 아티스트의 카탈로그 소유자가 낸 첫 고액 AI 저작권 소송 중 하나라는 점도 주목받아요. 합법적으로 산 책으로 학습한 건 공정 이용이라던 앞선 판결이 음악에도 적용될지는 아직 열린 문제예요.</p><p>원문: <a href=\"https://musictech.com/news/industry/elvis-presley-catalogue-owners-sue-anthropic-for-41-million-over-alleged-ai-training/\">MusicTech</a></p>",
+    "source": "MusicTech",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://musictech.com/wp-content/uploads/2026/10/Elvis-Presley-hero@2000x1500-1068x801.jpg",
+    "keywords": [
+      "음악·사운드",
+      "Anthropic",
+      "Claude"
+    ],
+    "url": "https://musictech.com/news/industry/elvis-presley-catalogue-owners-sue-anthropic-for-41-million-over-alleged-ai-training/",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://www.aitimes.com/news/articleView.html?idxno=216650"
+      }
+    ]
+  },
+  {
+    "id": "art-3e83f00e-2026-10",
+    "tab": "art",
+    "headline": "RTX 30 그래픽카드 AI 연산 제한 푸는 오픈소스 'GPU Unlock', 이미지 생성 최대 60% 빨라져",
+    "summary": "RTX 30 그래픽카드의 AI 연산 제한을 푸는 오픈소스 도구가 나왔어요.",
+    "body": "<p>깃허브 개발자 자기타가 엔비디아 RTX 30 시리즈의 텐서 코어에 걸린 일부 연산 제한을 풀어 주는 오픈소스 도구 'GPU Unlock'을 공개했어요. FP16·BF16으로 계산하고 결과를 FP32로 누적하는 연산의 처리율을 전문가용 제품 수준으로 두 배 높이는 방식이에요. 리눅스 커널 모듈로 작동해서 드라이버가 GPU를 초기화하기 전에 하드웨어 설정만 바꾸기 때문에, 드라이버나 펌웨어를 고칠 필요가 없고 드라이버를 업데이트해도 다시 패치하지 않아도 돼요. 개발자 테스트에서 RTX 3090 Ti의 BF16 성능은 87.5에서 157.4TFLOPS로 약 80% 올랐어요.</p><p>실제 생성 작업에서도 효과가 확인됐어요. ComfyUI에서 'MOSS-이미지 SFT'를 BF16으로 돌리자 이미지 한 장 생성 시간이 약 72초에서 45초로 줄어 처리량이 약 59% 늘었고, 큐원-이미지 2.1 터보와 Z-이미지 터보도 56~57% 빨라졌어요. 영상 모델 미니맥스 H3는 한 편 생성 시간이 253초에서 158초로 줄었어요. 다만 INT8 방식에서는 효과가 거의 없었고, 메모리 속도가 좌우하는 LLM 토큰 생성 단계도 변화가 없었어요. 모든 카드에서 같은 결과가 보장되지는 않지만, 구형 장비로 로컬 이미지·영상 생성을 하는 아티스트에겐 반가운 소식이에요.</p><p>원문: <a href=\"https://www.aitimes.com/news/articleView.html?idxno=216672\">AI타임스</a></p>",
+    "source": "AI타임스",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://cdn.aitimes.com/news/photo/202610/216672_220821_4043.png",
+    "keywords": [
+      "2D·이미지",
+      "NVIDIA"
+    ],
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=216672",
+    "urls": [
+      {
+        "label": "깃허브",
+        "href": "https://github.com/Zagitta/gpu-unlock"
+      }
+    ]
+  },
+  {
+    "id": "art-43c61196-2026-10",
+    "tab": "art",
+    "headline": "'AI 일본 국제영화제 2026' 연사 33명 확정, 필 티펫·전 MAPPA 이사 등이 AI 영상 논의",
+    "summary": "AI 일본 국제영화제 2026이 필 티펫 등 연사 33명을 확정했어요.",
+    "body": "<p>10월 31일부터 11월 2일까지 도쿄 마루노우치의 Tokyo Innovation Base에서 열리는 제2회 AI 일본 국제영화제(AIFJ 2026)가 국내외 2차 연사 24명을 발표해 출연자가 모두 33명이 됐어요. 가장 눈에 띄는 건 스타워즈·쥬라기 공원·로보캅 시각효과로 아카데미상을 두 번 받은 필 티펫이에요. 그는 11월 2일 특별 세션에서 AI 네이티브 제작 환경 'LOFTai'를 만드는 LOFTAPPS 창업자들과 함께 자신의 영상 표현과 AI 제작 기술을 결합한 'Mad Goddess' 프로젝트를 소개해요. 손으로 특수효과를 만들던 쪽이 AI 제작 환경 개발에 직접 참여한다는 점에서 관심을 모아요.</p><p>애니 IP 세션에는 MAPPA 이사로 체인소 맨·주술회전 등의 라이츠 사업을 맡았던 기무라 마코토가 나서고, AI로 애니메이션 'Buddy Dog'를 만드는 티모 라무, 대만 AI 영상 플랫폼 'Core Studio'를 이끄는 찰스 리도 참여해요. TBS, 니혼TV 악스온, TV아사히, 사이버에이전트 등 방송·광고 현장의 AI 제작 조직 담당자도 연단에 올라요. 작품 공모에는 60개국 이상에서 730편 넘게 들어왔고, 11월 1일 시상식에서 그랑프리 등 각 상을 발표해요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/27/28459.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/201176.jpg",
+    "keywords": [
+      "영상",
+      "애니메이션",
+      "VFX"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/27/28459.html"
+  },
+  {
+    "id": "art-9a666fb9-2026-10",
+    "tab": "art",
+    "headline": "LA 스페인어 라디오의 AI 진행자 '코요텍', 이민자 편에 서며 청취자 마음 얻어",
+    "summary": "LA 스페인어 라디오의 AI 진행자 '코요텍'이 청취자를 늘리고 있어요.",
+    "body": "<p>라틴계 대상 방송사 엔트라비전이 LA의 José 97.5 FM에 세운 AI 아바타 진행자 '코요텍'이 이민자를 지지하는 목소리로 인기를 얻고 있어요. 이민 단속이 이어지던 시기에 사람 진행자는 위험 부담 때문에 말하기 어려웠지만, AI 캐릭터는 그런 걱정 없이 이민자들에게 위로의 메시지를 전할 수 있었다는 거예요. 2025년 9월 주말 단독 쇼로 시작한 코요텍은 지금 사람 진행자 지지지 구스만과 함께 'Al Aire y Sin Permiso'를 공동 진행해요. 프로그램은 평일 아침 8~10시 황금 시간대로 옮겼고, 캘리포니아·네바다·텍사스의 5개 시장에 새로 배급됐어요.</p><p>성과도 숫자로 나왔어요. LA에서 8월부터 9월 사이 히스패닉 누적 청취자가 21.6%, 18~34세 청취자가 84.9% 늘었어요. 코요텍은 실시간 대화에 Claude Haiku, 목소리에 ElevenLabs, 초기 대본에 ChatGPT, 이미지 스토리보드에 미드저니를 조합해 만들었고, 구스만은 자기 부모님을 대화 상대로 붙여 스페인어 발음을 다듬었다고 해요. 아직 청취자 전화에 답하진 못하지만, 여러 생성 AI를 엮어 하나의 방송 캐릭터를 만든 사례라서 AI 음성 캐릭터 제작에 참고할 만해요.</p><p>원문: <a href=\"https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/\">WIRED</a></p>",
+    "source": "WIRED",
+    "publishedAt": "2026.10.27",
+    "hue": 290,
+    "image": "https://media.wired.com/photos/6adbe71b429a21d2813df7cd/191:100/w_1280,c_limit/GGC%20-%205-watermarked.jpg",
+    "keywords": [
+      "음성",
+      "ElevenLabs"
+    ],
+    "url": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/"
   },
   {
     "id": "art-ae2ad489-2026-10",

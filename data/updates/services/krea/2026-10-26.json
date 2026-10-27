@@ -1,0 +1,18 @@
+[
+  {
+    "id": "krea-2026-10-26-1",
+    "service": "krea",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Krea에 Kling 4.0 영상과 TouchDesigner 연동 추가",
+    "summary": "Krea에서 Kling 4.0으로 텍스트, 이미지, 레퍼런스 기반 영상을 만들 수 있게 됐어요. 모든 플랜에 Krea 3 이미지 9장이 무료로 제공돼요.",
+    "details": [
+      "Kling 4.0 영상 생성: 텍스트, 이미지, 레퍼런스 영상 지원",
+      "TouchDesigner용 Krea 패널, Agent 도구, Realtime 지원",
+      "Claude, Cursor 등 Agent 플러그인 설치 링크 추가",
+      "API 웹훅을 Ed25519 서명으로 검증할 수 있게 됨"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-26-2026",
+    "source": "dev"
+  }
+]

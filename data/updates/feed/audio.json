@@ -10,6 +10,16 @@
     "source": "notice"
   },
   {
+    "id": "mureka-2026-10-23-1",
+    "service": "mureka",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Mureka 가사 영상 템플릿과 MIDI AI 가수 기능 추가",
+    "summary": "가사 영상용 템플릿과 자막 효과가 늘었고, Studio에서 MIDI 멜로디와 가사를 AI 가수가 부르게 할 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
     "id": "elevenlabs-2026-10-19-1",
     "service": "elevenlabs",
     "date": "2026.10.19",

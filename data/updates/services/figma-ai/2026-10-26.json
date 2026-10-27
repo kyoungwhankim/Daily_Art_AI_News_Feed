@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-10-26-1",
+    "service": "figma-ai",
+    "date": "2026.10.26",
+    "kind": "연동",
+    "title": "Figma MCP에서 Weave의 영상·이미지 모델 사용",
+    "summary": "Figma Weave에서 쓸 수 있는 영상과 이미지 모델을 이제 Figma MCP를 통해 AI 에이전트에서 바로 사용할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=access-video-and-image-models-from-figma-weave-via-the-figma-mcp",
+    "source": "notice"
+  }
+]

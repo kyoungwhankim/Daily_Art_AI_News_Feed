@@ -98,6 +98,17 @@
     "source": "dev"
   },
   {
+    "id": "rodin-2026-10-01-1",
+    "service": "rodin",
+    "date": "2026.10.01",
+    "kind": "API",
+    "title": "Rodin Rigging API 문서 공개",
+    "summary": "Hyper3D Rodin에 Rigging API 문서가 새로 올라왔어요. 3D 모델에 뼈대를 넣는 작업을 API로 자동화할 수 있어요. 원문에 정확한 날짜가 없어 10월 항목으로 표시해요.",
+    "url": "https://docs.hyper3d.ai/en/get-started/changelog#october-2026",
+    "source": "dev",
+    "dateMonthOnly": true
+  },
+  {
     "id": "meshy-2026-09-29-1",
     "service": "meshy",
     "date": "2026.09.29",

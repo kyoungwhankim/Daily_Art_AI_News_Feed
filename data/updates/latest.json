@@ -1,5 +1,57 @@
 [
   {
+    "id": "layer-2026-10-26-1",
+    "service": "layer",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Layer 패럴랙스 레이어와 AI 제어 기능 공개",
+    "summary": "배경을 스크롤되는 깊이 레이어로 나누고, 워크스페이스 관리자가 AI 생성 범위와 콘텐츠 정책을 정할 수 있게 됐어요.",
+    "details": [
+      "배경을 2~6개 깊이 레이어로 분할해 레이어드 PSD로 저장",
+      "AI Controls: 생성 모델, 에이전트, 입력 가드레일, 결과 점수 설정",
+      "Linear, Jira 커넥터와 원격 MCP 서버 연결",
+      "타일 분할·스티치 노드와 플러그인, CLI 기기 로그인 추가"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-26-1",
+    "service": "krea",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Krea에 Kling 4.0 영상과 TouchDesigner 연동 추가",
+    "summary": "Krea에서 Kling 4.0으로 텍스트, 이미지, 레퍼런스 기반 영상을 만들 수 있게 됐어요. 모든 플랜에 Krea 3 이미지 9장이 무료로 제공돼요.",
+    "details": [
+      "Kling 4.0 영상 생성: 텍스트, 이미지, 레퍼런스 영상 지원",
+      "TouchDesigner용 Krea 패널, Agent 도구, Realtime 지원",
+      "Claude, Cursor 등 Agent 플러그인 설치 링크 추가",
+      "API 웹훅을 Ed25519 서명으로 검증할 수 있게 됨"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-26-2026",
+    "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-10-26-1",
+    "service": "figma-ai",
+    "date": "2026.10.26",
+    "kind": "연동",
+    "title": "Figma MCP에서 Weave의 영상·이미지 모델 사용",
+    "summary": "Figma Weave에서 쓸 수 있는 영상과 이미지 모델을 이제 Figma MCP를 통해 AI 에이전트에서 바로 사용할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=access-video-and-image-models-from-figma-weave-via-the-figma-mcp",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-10-25-1",
+    "service": "higgsfield",
+    "date": "2026.10.25",
+    "kind": "기능",
+    "title": "Higgsfield 플레이어블 광고와 게임 제작 기능 공개",
+    "summary": "인터랙티브 광고를 만드는 Playable Ads(Enterprise 전용)와 모든 플랜에서 쓰는 모바일 게임 제작 도구 Playable Games가 나왔어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-playable-ads-and-games",
+    "source": "notice"
+  },
+  {
     "id": "krea-2026-10-24-1",
     "service": "krea",
     "date": "2026.10.24",
@@ -41,6 +93,41 @@
     "title": "Kling V4 모델 추가 (영상 생성·영상 편집)",
     "summary": "Scenario에 Kling V4 모델이 추가됐어요. 텍스트에서 영상 만들기, 이미지에서 영상 만들기, 영상 편집을 Scenario에서 바로 쓸 수 있어요.",
     "url": "https://www.scenario.com/changelog/models-83c59df5ef2ee6e2915eaa5db6ce9de2c138fa6030d084a8cb6c34b7f7e23109",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-23-2",
+    "service": "runway",
+    "date": "2026.10.23",
+    "kind": "연동",
+    "title": "Runway Dev에 Kling 4.0 추가",
+    "summary": "Runway Dev API에서 Kling 4.0으로 텍스트, 이미지, 영상 기반 영상 생성과 영상 편집을 할 수 있어요. 오디오도 함께 생성돼요.",
+    "details": [
+      "3~30초 길이, 720p와 1080p 지원",
+      "레퍼런스 영상 최대 5개로 스타일과 카메라 움직임 지정",
+      "11월 30일까지 20% 할인 적용"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-23-1",
+    "service": "runway",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Runway App Studio 공개: 설명만으로 크리에이티브 앱 만들기",
+    "summary": "자연어로 원하는 앱을 설명하면 Runway 모델과 브랜드 자산을 활용해 앱을 만들고 호스팅까지 해 주는 App Studio가 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-10-23-1",
+    "service": "mureka",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Mureka 가사 영상 템플릿과 MIDI AI 가수 기능 추가",
+    "summary": "가사 영상용 템플릿과 자막 효과가 늘었고, Studio에서 MIDI 멜로디와 가사를 AI 가수가 부르게 할 수 있어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
     "source": "notice"
   },
   {
@@ -94,6 +181,16 @@
     "summary": "Luma 플랫폼에서 Kling 4.0 모델을 바로 사용할 수 있게 되었어요. 빠른 동작과 역동적인 카메라 움직임이 필요한 샷을 Luma 보드에서 바로 다듬을 수 있어요.",
     "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
     "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-23-1",
+    "service": "claude",
+    "date": "2026.10.23",
+    "kind": "API",
+    "title": "Claude Tag API 베타 공개(Enterprise)",
+    "summary": "Claude Enterprise 조직은 베타 헤더로 Claude Tag API를 쓸 수 있어요. Slack 채널과 워크스페이스의 Claude Tag 설정을 읽고 바꿀 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-23-2026",
+    "source": "dev"
   },
   {
     "id": "scenario-2026-10-22-4",
@@ -401,111 +498,5 @@
     "summary": "FLUX.3 Max로 텍스트, 단일 이미지, 최대 10개 키프레임에서 최대 20초 720p 또는 1080p 영상을 만들 수 있어요. 네이티브 오디오도 포함돼요.",
     "url": "https://www.scenario.com/changelog/models-12db7727a427d49e4a4191d0fd176e61cf526ba69e82b4209f943f086df0aa50",
     "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-20-1",
-    "service": "scenario",
-    "date": "2026.10.20",
-    "kind": "기능",
-    "title": "Scenario 스킬 v0.59.0: Blender 내보내기와 영상 색보정",
-    "summary": "Scenario 스킬 v0.59.0이 나왔어요. Blender 내보내기, 영상 색보정, 3D 업그레이드가 포함돼요.",
-    "url": "https://www.scenario.com/changelog/skills-v0-59-0",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-20-1",
-    "service": "krea",
-    "date": "2026.10.20",
-    "kind": "기능",
-    "title": "Krea Agent API와 FLUX 3 Max 영상 생성 추가",
-    "summary": "Krea Agent를 HTTP로 실행하는 Agent API와 FLUX 3 Max 영상 생성이 추가됐어요. Krea 3가 베타를 벗어나 정식 모델이 됐어요.",
-    "details": [
-      "FLUX 3 Max로 5~20초 오디오 포함 영상을 720p·1080p로 생성",
-      "Agent API로 세션 시작, 결과 대기, 후속 요청 전송",
-      "Agent가 Blender 등 연결된 데스크톱 앱을 조작",
-      "Krea 3 Ultra thinking mode를 API에 추가(Max 이상 플랜, 생성당 $0.20)",
-      "Krea CLI 브라우저 로그인 지원",
-      "Krea 3 베타 종료"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-20-2026",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-10-20-2",
-    "service": "hugging-face",
-    "date": "2026.10.20",
-    "kind": "기능",
-    "title": "AnyLanguageModel 1.0 정식 출시",
-    "summary": "Apple 플랫폼 앱에서 로컬 모델과 호스팅 모델을 같은 API로 바꿔 쓸 수 있는 AnyLanguageModel 1.0이 나왔어요. swift-huggingface 1.0과 swift-xet 1.0도 함께 나왔어요.",
-    "details": [
-      "Foundation Models API와 호환되는 API 유지",
-      "swift-huggingface 1.0, swift-xet 1.0 동시 공개"
-    ],
-    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-10-20-1",
-    "service": "hugging-face",
-    "date": "2026.10.20",
-    "kind": "기능",
-    "title": "TorchTPU로 Transformers·Diffusers를 TPU에서 실행",
-    "summary": "PyTorch 네이티브 백엔드인 TorchTPU가 들어와 Transformers, Diffusers, Kernels를 TPU에서 바로 실행할 수 있어요. Hub에서 모델을 고른 뒤 tpu 장치로 보내면 돼요.",
-    "url": "https://huggingface.co/blog/hf-torchtpu",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-10-20-1",
-    "service": "higgsfield",
-    "date": "2026.10.20",
-    "kind": "연동",
-    "title": "Higgsfield에서 Kling 4.0 사용 가능",
-    "summary": "Higgsfield에서 Kling 4.0을 쓸 수 있게 됐어요. Kling 3.0보다 생성 길이가 두 배로 늘었고 키프레임과 다양한 참조 입력을 지원해요.",
-    "details": [
-      "생성 최대 길이 두 배 확대",
-      "전체 영상에 키프레임 추가 지원",
-      "Creative Recreation과 기존 영상 편집 옵션 추가"
-    ],
-    "url": "https://higgsfield.ai/blog/kling-4-0-on-higgsfield",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-20-1",
-    "service": "heygen",
-    "date": "2026.10.20",
-    "kind": "API",
-    "title": "HeyGen Speech to Speech API 추가",
-    "summary": "녹음을 워크스페이스의 인스턴트 음성으로 다시 말하게 하는 Speech to Speech API가 추가됐어요. 단어와 타이밍은 그대로 유지돼요.",
-    "details": [
-      "POST /v3/models/audio/sts로 최대 300초 녹음 처리",
-      "결과는 WAV 한 개로 반환"
-    ],
-    "url": "https://docs.heygen.com/changelog#speech-to-speech",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-20-1",
-    "service": "claude",
-    "date": "2026.10.20",
-    "kind": "기능",
-    "title": "Claude 추론 훅 Enterprise 정식 공개",
-    "summary": "추론 훅(inference hooks)이 Claude Enterprise 조직에서 베타를 벗어나 정식으로 쓸 수 있게 됐어요.",
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026",
-    "source": "dev"
-  },
-  {
-    "id": "unity-ai-2026-10-19-1",
-    "service": "unity-ai",
-    "date": "2026.10.19",
-    "kind": "기능",
-    "title": "Unity AI Assistant 2.21.0-pre.1 프리뷰 공개",
-    "summary": "Unity 에디터의 AI Assistant에 에이전트가 위험한 명령을 승인 창 없이 실행하도록 하는 설정이 생겼어요. 대화 기록을 요약할 때는 Compacting 진행 표시가 보여요.",
-    "details": [
-      "자동 승인 설정: 위험한 작업을 명령마다 승인 창을 띄우지 않고 실행",
-      "대화 맥락을 정리하는 동안 Compacting 진행 표시 추가",
-      "프로젝트 스킬(SKILL.md)의 description 파싱 오류 수정"
-    ],
-    "url": "https://packages.unity.com/com.unity.ai.assistant",
-    "source": "dev"
   }
 ]

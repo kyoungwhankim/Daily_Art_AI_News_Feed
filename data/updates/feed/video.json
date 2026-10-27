@@ -1,5 +1,40 @@
 [
   {
+    "id": "higgsfield-2026-10-25-1",
+    "service": "higgsfield",
+    "date": "2026.10.25",
+    "kind": "기능",
+    "title": "Higgsfield 플레이어블 광고와 게임 제작 기능 공개",
+    "summary": "인터랙티브 광고를 만드는 Playable Ads(Enterprise 전용)와 모든 플랜에서 쓰는 모바일 게임 제작 도구 Playable Games가 나왔어요.",
+    "url": "https://higgsfield.ai/blog/higgsfield-playable-ads-and-games",
+    "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-23-2",
+    "service": "runway",
+    "date": "2026.10.23",
+    "kind": "연동",
+    "title": "Runway Dev에 Kling 4.0 추가",
+    "summary": "Runway Dev API에서 Kling 4.0으로 텍스트, 이미지, 영상 기반 영상 생성과 영상 편집을 할 수 있어요. 오디오도 함께 생성돼요.",
+    "details": [
+      "3~30초 길이, 720p와 1080p 지원",
+      "레퍼런스 영상 최대 5개로 스타일과 카메라 움직임 지정",
+      "11월 30일까지 20% 할인 적용"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-23-1",
+    "service": "runway",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "Runway App Studio 공개: 설명만으로 크리에이티브 앱 만들기",
+    "summary": "자연어로 원하는 앱을 설명하면 Runway 모델과 브랜드 자산을 활용해 앱을 만들고 호스팅까지 해 주는 App Studio가 나왔어요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-10-23-1",
     "service": "heygen",
     "date": "2026.10.23",

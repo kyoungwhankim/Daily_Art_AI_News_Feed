@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-10-23-1",
+    "service": "claude",
+    "date": "2026.10.23",
+    "kind": "API",
+    "title": "Claude Tag API 베타 공개(Enterprise)",
+    "summary": "Claude Enterprise 조직은 베타 헤더로 Claude Tag API를 쓸 수 있어요. Slack 채널과 워크스페이스의 Claude Tag 설정을 읽고 바꿀 수 있어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-23-2026",
+    "source": "dev"
+  }
+]
