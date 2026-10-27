@@ -130,11 +130,29 @@ T2. Context. There is no PreCompact hook here; still run `routine_steps.py publi
 T3. COMMIT AND PUSH: do NOT run scripts/push_to_main.py (it needs a token from the Claude
     environment). Run instead:
 
-    python scripts/routine_steps.py push-local
+    $env:PYTHONUTF8 = "1"; python scripts/routine_steps.py push-local
 
-    It commits data/ to main with this computer's GitHub login, pulls with rebase and pushes
-    (it retries once and never force-pushes). The HARD RULE still applies: main only, no new
-    branch, no pull request. If it fails, put its error in the final report.
+    It first checks that the routine really ran: digest.json from PHASE 1, every article saved
+    with `article-add` (a hand-written articles.json is refused), the UPDATES WORK finished
+    (/tmp/updates/DONE), and not suspiciously few articles for the size of the FEED SCAN.
+    If it prints "PUSH REFUSED", do the missing steps it names, then run it again. Use
+    `push-local --few-ok '<reason>'` only when you really checked every source and the day has
+    few qualifying articles; the reason goes into the commit message.
+    Then it commits data/ to main with this computer's GitHub login, pulls with rebase and
+    pushes (it retries once and never force-pushes). The HARD RULE still applies: main only,
+    no new branch, no pull request. If it fails, put its error in the final report.
+
+T3b. Sources. The FEED SCAN covers about 57 feeds in English, Korean, Japanese, Chinese and
+    German (The Verge, TechCrunch, GamesIndustry.biz, Kotaku, Cartoon Brew, 4Gamer, 36Kr,
+    heise ...). R2 means reading EVERY line of that output for all three sections — not only
+    the Korean outlets — plus the NO FEED sources by hand. Write articles in Korean whatever
+    the source language.
+
+T3c. Writing. Follow STEP 4 exactly: id like `ideogram-vector-1027`, body in the polite
+    conversational tone of existing entries (~해요, ~이에요 — not ~했습니다), final paragraph
+    exactly `<p>원문: <a href="URL">SOURCE NAME</a></p>`, image by the four-step rule.
+    Files for --file: write them with your file tool or `[IO.File]::WriteAllText(path, text)`
+    (UTF-8); the scripts accept a BOM.
 
 T4. Never stop early to ask anything. When a step fails, do what the routine says for that
     failure (skip the article, mark the source unreachable, restore and continue, ...).
