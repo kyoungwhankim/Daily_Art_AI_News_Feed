@@ -10,6 +10,8 @@
   python3 scripts/routine_steps.py sources games     한 섹션의 출처 목록 다시 보기 (games|industry|art)
   python3 scripts/routine_steps.py digest-add <<'PYEOF' ... PYEOF     기사 하나를 digest에 저장 (검사 포함)
   python3 scripts/routine_steps.py digest-verify     VERIFY DIGEST
+  python3 scripts/routine_steps.py review            피드 스캔 ★ 글 중 아직 판단하지 않은 것
+  python3 scripts/routine_steps.py skip "<url>" "<이유>"   ★ 글을 싣지 않기로 한 기록
   python3 scripts/routine_steps.py publish-init      PHASE 2 시작: 게시 모드 + articles.json 비우기
   python3 scripts/routine_steps.py digest-list       PHASE 2 STEP 1: digest 목록 (섹션 → 탭)
   python3 scripts/routine_steps.py keywords          PHASE 2 SETUP: 탭별 키워드 목록 → /tmp/feed/keywords.json
@@ -56,7 +58,9 @@ FEED = '/tmp/feed'
 DIGEST = os.path.join(FEED, 'digest.json')
 ARTICLES = os.path.join(FEED, 'articles.json')
 KEYWORDS = os.path.join(FEED, 'keywords.json')
-ARTICLES_SIG = os.path.join(FEED, 'articles.sig')     # article-add만 쓴다 — push-local이 손으로 고친 파일을 가려낸다
+ARTICLES_SIG = os.path.join(FEED, 'articles.sig')
+SHORTLIST = os.path.join(FEED, 'shortlist.json')      # scan_feeds.py가 ★로 표시한 글 — 하나씩 판단해야 한다
+DECISIONS = os.path.join(FEED, 'decisions.json')      # {정규화한 URL: 'saved' | 'skip: 이유'}     # article-add만 쓴다 — push-local이 손으로 고친 파일을 가려낸다
 SOURCES = os.path.join(REPO, 'routine', 'sources.txt')
 WORK = {'updates': '/tmp/updates', 'free': '/tmp/free', 'report': '/tmp/report'}
 NOTE_FILE = {'updates': 'failed_sources.txt', 'free': 'candidates.txt'}
@@ -97,6 +101,23 @@ def read_literal(args=()):
         print('REJECTED: input must be one dict')
         sys.exit(1)
     return obj
+
+
+def norm_url(u):
+    u = (u or '').strip().split('#', 1)[0]
+    u = re.sub(r'^https?://(www\.)?', '', u, flags=re.I)
+    return u.rstrip('/').lower()
+
+
+def decide(url, what):
+    d = load(DECISIONS, {})
+    d[norm_url(url)] = what
+    save(DECISIONS, d)
+
+
+def open_shortlist():
+    d = load(DECISIONS, {})
+    return [x for x in load(SHORTLIST, []) if norm_url(x['url']) not in d]
 
 
 def placeholder(v):
@@ -202,10 +223,35 @@ def cmd_digest_add(args):
     digest = load(DIGEST, [])
     digest.append(a)
     save(DIGEST, digest)
+    decide(a['source_url'], 'saved')
+    for link in a.get('extra_links', []):       # 같은 소식의 다른 매체 기사도 판단한 것으로 친다
+        if isinstance(link, dict) and link.get('url'):
+            decide(link['url'], 'saved (extra link)')
     print(f"Saved article {len(digest)} (up to 60): {a['title_ko'][:40]}...")
 
 
+def cmd_skip(args):
+    if len(args) != 2 or not args[0].startswith('http') or len(args[1].strip()) < 4:
+        sys.exit('usage: routine_steps.py skip "<url>" "<reason: off-topic / older than yesterday / same story as ... / paywall ...>"')
+    decide(args[0], 'skip: ' + args[1].strip())
+    print(f'Skipped ({args[1].strip()}). Open ★ items left: {len(open_shortlist())}')
+
+
+def cmd_review(_):
+    rest = open_shortlist()
+    print(f'Open ★ items: {len(rest)} of {len(load(SHORTLIST, []))}')
+    for x in rest:
+        print(f"  {x['date'][5:10]} | {x['source']} | {x['title']} | {x['url']}")
+    if rest:
+        print('Judge each one from its line: clearly off-topic / too old / already on the site → '
+              '`routine_steps.py skip "<url>" "<reason>"`; otherwise STEP A (peek_article.py) then digest-add.')
+
+
 def cmd_digest_verify(_):
+    rest = open_shortlist()
+    if rest:
+        print(f'⚠️  {len(rest)} ★ feed-scan items are not judged yet — run `routine_steps.py review` '
+              'and judge them before PHASE 2.')
     arts = load(DIGEST, [])
     for sec in (1, 2, 3):
         titles = [a['title_ko'] for a in arts if a['section'] == sec]
@@ -537,6 +583,10 @@ def preflight(args):
             and not os.path.exists(os.path.join(upd, 'STATE_SAVED')):
         problems.append('source state not saved — run `routine_steps.py apply-updates` then `save-source-state` '
                         '(if it says source_state.next.json was not found, run detect_source_changes.py check again first)')
+    rest = open_shortlist()
+    if rest:
+        problems.append(f'{len(rest)} ★ feed-scan items were never judged (digest-add or skip) — '
+                        'run `routine_steps.py review`')
     cands = load(os.path.join(FEED, 'candidates.json'), [])
     if digest is not None and len(cands) >= 60 and len(digest) < 4 and '--few-ok' not in args:
         problems.append(f'only {len(digest)} articles from {len(cands)} feed-scan candidates — check every '
@@ -598,7 +648,8 @@ if __name__ == '__main__':
             'agent-finish': cmd_agent_finish, 'agent-status': cmd_agent_status,
             'apply-updates': cmd_apply_updates, 'save-source-state': cmd_save_source_state,
             'apply-free': cmd_apply_free, 'apply-report': cmd_apply_report, 'undo-data': cmd_undo_data,
-            'publish-end': cmd_publish_end, 'push-local': cmd_push_local}
+            'publish-end': cmd_publish_end, 'push-local': cmd_push_local,
+            'skip': cmd_skip, 'review': cmd_review}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit('usage: routine_steps.py ' + '|'.join(cmds))
     cmds[sys.argv[1]](sys.argv[2:])

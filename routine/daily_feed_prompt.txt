@@ -171,6 +171,22 @@ URLs already published on the site are removed. Feeds of non-AI outlets marked
 "(AI-related only)" show only items whose title or summary mentions AI. Each source shows
 at most 12 items; "12 of 45" plus a "(more: ...)" line means run that command to see the
 rest. Use this output for all three sections — do NOT curl those feeds again.
+Lines marked ★ are AI items with game / art / creative words — the most likely articles for
+this site. EVERY ★ item must be judged. Decide from its line first: if the title and summary
+already show it is off-topic, older than yesterday or a story the site has, skip it right away
+(no need to open it); otherwise open it with STEP A and save it with digest-add. Record every
+skip with
+  python3 scripts/routine_steps.py skip "<url>" "<reason>"
+(reasons: off-topic, older than yesterday, same story as <article>, paywall, unreadable ...).
+`python3 scripts/routine_steps.py review` lists the ★ items still open.
+Read the feed scan lines yourself (one line per item — cheap). NEVER write your own script or
+keyword filter to narrow them down further — such filters silently drop good articles (an item
+without the word "AI" in the title, a Japanese title, a voice or film story ...). Open a page
+(STEP A) only for items that may become an article. Lines without ★ still
+count as candidates — ★ only marks the ones you may not leave unjudged.
+This feed scan is the NEWS list. The list printed by detect_source_changes.py in the updates
+work is a different thing (official release notes for the '업데이트' page) — never pick news
+articles from it, and never conclude "no news today" from it.
 Its last lines:
   "Checked, nothing new"   — feed sources read with nothing for today. They count as
                              checked; list them so in the R2 checked-sources line.
@@ -394,9 +410,13 @@ For each article found, repeat STEP A, STEP A2 and STEP B above, but set "sectio
 
 VERIFY DIGEST
 
-Once all articles are saved, verify the count.
+Once all articles are saved, check that every ★ feed-scan item was judged, then verify the count.
 
+cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/routine_steps.py review
 cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/routine_steps.py digest-verify
+
+`review` must print "Open ★ items: 0". If not, judge the open ones (STEP A, then digest-add or
+skip) before PHASE 2.
 
 /tmp/feed/digest.json is the hand-off to PHASE 2.
 

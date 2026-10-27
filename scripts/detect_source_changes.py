@@ -211,6 +211,8 @@ def cmd_check(args):
             json.dump(report, f, ensure_ascii=False, indent=1)
 
     n_src = sum(len(r['sources']) for r in report)
+    print('SERVICE UPDATE CANDIDATES — for the updates work (official release notes / changelogs). '
+          'These are NOT news articles for PHASE 1.')
     print(f'Checked {len(urls)} sources of {len(services)} services: '
           f'{n_src} source(s) of {len(report)} service(s) need reading today.')
     for r in report:
