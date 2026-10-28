@@ -34,6 +34,10 @@ Set-Location '<REPO_DIR>'; [Console]::OutputEncoding = [Text.Encoding]::UTF8; $e
 - env-check prints a line "Text check: 한국어 · 日本語 · 中文 · Größe". If you do not see those
   exact characters, the prefix is missing — fix it before going on. You must be able to read
   Korean, Japanese, Chinese and German source text correctly.
+- env-check also checks that the repository is exactly origin/main ("git : up to date"). If it
+  says NOT up to date, run (one per line) `git rebase --abort`, `git checkout -f main`,
+  `git reset --hard origin/main`, then re-read this file from the top — an old checkout means old
+  instructions and old scripts.
 - env-check must end with "Environment OK.". If it still fails (python, git, curl or node
   missing), stop and report the failing line.
 - `today` prints TODAY (KST, YYYY-MM-DD). Use it wherever the files say {{date}}.
