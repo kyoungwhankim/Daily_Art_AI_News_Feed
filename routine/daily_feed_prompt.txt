@@ -884,6 +884,10 @@ The push script handles three infrastructure quirks of the routine environment:
 cd /home/user/Daily_Art_AI_News_Feed
 python3 scripts/push_to_main.py
 
+(Without GITHUB_TOKEN — a local run on someone's computer — push_to_main.py hands over to
+`routine_steps.py push-local` by itself, which checks the routine's steps and then pushes with that
+computer's GitHub login.)
+
 ---
 
 FINISH

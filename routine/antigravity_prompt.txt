@@ -134,7 +134,10 @@ A4. WEEKLY REPORT (when `weekly_report.py due` prints DUE): after the
 A5. While doing an agent's work, that agent's own rules apply too (e.g. "do not edit files
     inside REPO, never run git" — its scripts write only to the work folders).
 A6. PHASE 2's "Do NOT spawn sub-agents" stays true: process every article yourself, one at a
-    time (R4).
+    time (R4). Do NOT write a batch/wrapper script (e.g. C:\tmp\do_phase2.py) that loops over the
+    digest and calls article-add — run STEP 3 and the article-add command yourself for each
+    article. When article-add prints REJECTED, rewrite THAT article (shorten the body, add the
+    원문 line, remove \n ...) and run it again before moving on. Never write articles.json by hand.
 
 =====================================================================
 OTHER RULES
