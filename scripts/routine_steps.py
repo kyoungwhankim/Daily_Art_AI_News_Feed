@@ -233,6 +233,9 @@ def cmd_digest_add(args):
 def cmd_skip(args):
     if len(args) != 2 or not args[0].startswith('http') or len(args[1].strip()) < 4:
         sys.exit('usage: routine_steps.py skip "<url>" "<reason: off-topic / older than yesterday / same story as ... / paywall ...>"')
+    if re.search(r'\b(time|later|quota|budget|tired|too many)\b|시간', args[1], re.I):
+        sys.exit('REJECTED: saving time is not a reason to skip a ★ item — judge it on its content '
+                 '(off-topic / older than yesterday / same story as ... / paywall / unreadable)')
     decide(args[0], 'skip: ' + args[1].strip())
     print(f'Skipped ({args[1].strip()}). Open ★ items left: {len(open_shortlist())}')
 
