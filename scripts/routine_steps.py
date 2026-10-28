@@ -393,6 +393,16 @@ def cmd_env_check(_):
         ok &= bool(path)
     print('Text check: 한국어 · 日本語 · 中文 · Größe')
     print('repo     :', REPO)
+    head = git('rev-parse', 'HEAD').stdout.strip()
+    git('fetch', '-q', 'origin', 'main')
+    upstream = git('rev-parse', 'origin/main').stdout.strip()
+    in_rebase = os.path.isdir(os.path.join(REPO, '.git', 'rebase-merge')) or \
+        os.path.isdir(os.path.join(REPO, '.git', 'rebase-apply'))
+    fresh = head == upstream and not in_rebase
+    print('git      :', 'up to date with origin/main' if fresh else
+          f'NOT up to date (HEAD {head[:7]}, origin/main {upstream[:7]}{", rebase in progress" if in_rebase else ""}) '
+          '— run: git rebase --abort; git checkout -f main; git reset --hard origin/main')
+    ok &= fresh
     print('work dir :', os.path.abspath(FEED))
     print('Environment OK.' if ok else 'Environment check FAILED — fix the lines above before running the routine.')
     sys.exit(0 if ok else 1)
@@ -595,6 +605,36 @@ def preflight(args):
     return problems
 
 
+# 다른 파일에서 다시 만들어지는 파일 — 충돌하면 위쪽(main) 것을 받고 스크립트로 다시 만든다
+GENERATED = ('data/index.json', 'data/updates/index.json', 'data/updates/latest.json')
+
+
+def resolve_generated_conflicts():
+    """rebase 충돌이 생성 파일에서만 났으면 다시 만들어 이어 간다. 해결하면 True."""
+    for _ in range(10):
+        if not os.path.isdir(os.path.join(REPO, '.git', 'rebase-merge')) and \
+                not os.path.isdir(os.path.join(REPO, '.git', 'rebase-apply')):
+            return True
+        conflicted = [f for f in git('diff', '--name-only', '--diff-filter=U').stdout.split() if f]
+        other = [f for f in conflicted if f not in GENERATED and not f.startswith('data/updates/feed/')]
+        if other:
+            print('Conflict in files that cannot be regenerated:', ', '.join(other))
+            return False
+        if conflicted:
+            git('checkout', '--ours', '--', *conflicted)       # rebase 중 'ours' = 이미 main에 있는 쪽
+            py('service_updates.py', 'rebuild')
+            subprocess.run([PY, '-c', 'import sys; sys.path.insert(0, "scripts"); import feed_data; '
+                            'feed_data.write_index()'], cwd=REPO)
+            git('add', 'data')
+            print('Regenerated after a rebase conflict:', ', '.join(conflicted))
+        r = subprocess.run(['git', '-c', 'core.editor=true', 'rebase', '--continue'], cwd=REPO,
+                           capture_output=True, text=True)
+        if r.returncode and 'nothing to commit' not in (r.stdout + r.stderr):
+            if not git('diff', '--name-only', '--diff-filter=U').stdout.strip():
+                return False
+    return False
+
+
 def cmd_push_local(args):
     """토큰 없이 이 컴퓨터의 git 로그인으로 main에 올린다 (Antigravity 등 로컬 실행용)."""
     branch = git('rev-parse', '--abbrev-ref', 'HEAD').stdout.strip()
@@ -627,9 +667,10 @@ def cmd_push_local(args):
         sys.exit('Commit failed:\n' + r.stdout + r.stderr)
     for attempt in (1, 2):
         r = git('pull', '--rebase', 'origin', 'main')
-        if r.returncode:
+        if r.returncode and not resolve_generated_conflicts():
             git('rebase', '--abort')
-            sys.exit('Pull failed:\n' + r.stdout + r.stderr)
+            sys.exit('Pull failed (rebase aborted, nothing pushed — the commit is still on local main):\n'
+                     + r.stdout + r.stderr)
         r = git('push', 'origin', 'main')
         if not r.returncode:
             print('✅ Pushed to main:', git('log', '--oneline', '-1').stdout.strip())

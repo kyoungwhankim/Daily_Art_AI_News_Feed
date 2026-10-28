@@ -65,9 +65,14 @@ You run the AI Art Daily daily routine (Korean AI news digest, GitHub repository
 Step 1 — In the PowerShell terminal, go to the repository and reset it to the latest main (one command per line):
 
 Set-Location $HOME\.gemini\antigravity\scratch\Daily_Art_AI_News_Feed
+git rebase --abort
 git fetch origin main
-git checkout main
+git checkout -f main
 git reset --hard origin/main
+git log --oneline -1
+git log --oneline -1 origin/main
+
+The two log lines must show the same commit. "git rebase --abort" may print an error when no rebase is in progress — that is fine. If the two lines differ, stop and report.
 
 If the folder does not exist, stop and report that the repository is missing.
 
