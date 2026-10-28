@@ -1,5 +1,42 @@
 [
   {
+    "id": "mai-image-2026-10-27-1",
+    "service": "mai-image",
+    "date": "2026.10.27",
+    "kind": "모델",
+    "title": "MAI-Image-2.6 과 2.6-Flash 정식 출시 (Microsoft Foundry)",
+    "summary": "MAI-Image-2.6과 MAI-Image-2.6-Flash가 Microsoft Foundry에서 정식 출시(GA)됐어요. 이미지 아이디어를 다듬고 여러 대상에 맞게 변형하는 작업을 빠르게 할 수 있어요.",
+    "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally/ba-p/4566327",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-27-1",
+    "service": "krea",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Krea 3 API 4K 출력과 Agent 노드 제작 기능 추가",
+    "summary": "Krea 3 이미지를 API에서 4K 해상도로 생성할 수 있게 됐어요. Agent가 Nodes에서 커스텀 노드를 직접 만들고, 개인·서비스 API 토큰도 생겼어요.",
+    "details": [
+      "Krea 3 API: 4K 출력 설정 추가 (ultra·Zero Data Retention에서는 불가, 2K 대비 2배 업스케일 비용)",
+      "Agent가 Nodes에서 커스텀 워크플로 노드를 제작",
+      "GPT-6.1 Terra를 Krea Agent에서 사용 가능",
+      "Nodes 프로젝트를 조직 단위로 공유",
+      "개인 및 서비스 API 토큰 생성 기능"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-27-2026",
+    "source": "dev"
+  },
+  {
+    "id": "nano-banana-2026-10-26-1",
+    "service": "nano-banana",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Nano Banana 2.1 이미지를 Cloud Storage로 바로 저장",
+    "summary": "Vertex AI에서 Nano Banana 2.1 등 Gemini 이미지 모델이 생성한 이미지를 Cloud Storage 버킷에 바로 저장할 수 있게 됐어요. 응답에는 이미지 바이트 대신 객체 URI가 담겨요.",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_26_2026",
+    "source": "dev"
+  },
+  {
     "id": "krea-2026-10-26-1",
     "service": "krea",
     "date": "2026.10.26",
@@ -56,6 +93,22 @@
       "하위 그룹은 상위 그룹의 group_id를 가져요"
     ],
     "url": "https://docs.magnific.com/changelog#october-22-2026",
+    "source": "dev"
+  },
+  {
+    "id": "flux-2026-10-22-1",
+    "service": "flux",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "FLUX 3 Image 커스텀 크기와 편집 정확도 개선",
+    "summary": "FLUX 3 Image API에서 width·height로 원하는 크기를 지정할 수 있고, 입력 이미지와 같은 크기로 편집할 수 있게 됐어요. 한 장의 참조 이미지로 한 편집도 더 정확해졌어요.",
+    "details": [
+      "width·height로 256px부터 약 16.8MP(4K)까지 지정, 종횡비 최대 8:1",
+      "resolution: match_input으로 첫 참조 이미지와 같은 크기 출력 (최대 4MP)",
+      "날씨·조명·색보정 등 전체 이미지 편집 품질 향상",
+      "가격은 동일하고 기존 요청도 그대로 작동"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#october-22-2026",
     "source": "dev"
   },
   {

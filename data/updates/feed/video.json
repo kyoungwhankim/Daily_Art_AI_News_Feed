@@ -1,5 +1,44 @@
 [
   {
+    "id": "runway-2026-10-27-2",
+    "service": "runway",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "Seedance 2.0 시리즈에 비트레이트 설정 추가",
+    "summary": "Runway Dev의 Seedance 2.0, 2.0 Fast, 2.0 Mini가 text·image·video-to-video에서 bitrate 옵션을 받게 됐어요. high로 두면 압축 노이즈가 줄고 파일은 커져요.",
+    "details": [
+      "bitrate 기본값 standard는 기존 출력과 같음",
+      "high 설정은 더 많은 디테일과 적은 압축 아티팩트 제공",
+      "두 설정 모두 같은 단가로 과금"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-27-1",
+    "service": "runway",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Runway Ads 공개: 승인한 광고 변형을 자동 게재",
+    "summary": "Runway Ads가 Meta·Google·TikTok 실적 광고를 읽고 플랫폼별 맞춤 변형을 만들어 줘요. 승인한 것만 게재되며 모든 유료 플랜에 포함돼요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-10-27-1",
+    "service": "heygen",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "reference_to_video 참고 영상 총 15초 예산 공유",
+    "summary": "reference_to_video 요청에서 참고 영상 최대 3개가 총 15초의 입력 예산을 나눠 쓰게 됐어요. 한 영상이 15초 전체를 쓸 수도 있어요.",
+    "details": [
+      "참고 영상 3개가 15초 예산 공유, 초과 시 각 영상의 앞 5초를 우선 사용",
+      "POST /v3/models/videos의 reference_to_video에 적용"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-10-25-1",
     "service": "higgsfield",
     "date": "2026.10.25",

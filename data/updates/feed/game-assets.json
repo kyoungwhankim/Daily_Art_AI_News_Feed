@@ -1,5 +1,21 @@
 [
   {
+    "id": "ludo.ai-2026-10-27-1",
+    "service": "ludo.ai",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Ludo CLI 무료 툴박스 32종 공개, 코딩 에이전트에서 사용",
+    "summary": "Ludo CLI에 무료 툴박스가 추가됐어요. 32가지 도구로 스프라이트 피벗, 콜라이더, 스프라이트시트 분할·정렬·루프 점수 등을 코딩 에이전트가 직접 실행해요.",
+    "details": [
+      "Claude Code·Codex·Cursor 등에서 스킬로 설치 가능 (ludo skill install)",
+      "Unity·Godot·Phaser·Box2D용 스프라이트 수치 계산",
+      "스프라이트시트 slice·pack·loop·gif 등 도구",
+      "이미지 리컬러, 타일 세트 작성, 오디오·3D 모델 점검"
+    ],
+    "url": "https://ludo.ai/whats-new#free-toolbox-give-your-coding-agent-superpowers-for-your-game-assets",
+    "source": "notice"
+  },
+  {
     "id": "layer-2026-10-26-1",
     "service": "layer",
     "date": "2026.10.26",

@@ -1,5 +1,97 @@
 [
   {
+    "id": "runway-2026-10-27-2",
+    "service": "runway",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "Seedance 2.0 시리즈에 비트레이트 설정 추가",
+    "summary": "Runway Dev의 Seedance 2.0, 2.0 Fast, 2.0 Mini가 text·image·video-to-video에서 bitrate 옵션을 받게 됐어요. high로 두면 압축 노이즈가 줄고 파일은 커져요.",
+    "details": [
+      "bitrate 기본값 standard는 기존 출력과 같음",
+      "high 설정은 더 많은 디테일과 적은 압축 아티팩트 제공",
+      "두 설정 모두 같은 단가로 과금"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-10-27-1",
+    "service": "runway",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Runway Ads 공개: 승인한 광고 변형을 자동 게재",
+    "summary": "Runway Ads가 Meta·Google·TikTok 실적 광고를 읽고 플랫폼별 맞춤 변형을 만들어 줘요. 승인한 것만 게재되며 모든 유료 플랜에 포함돼요.",
+    "url": "https://runwayml.com/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "mai-image-2026-10-27-1",
+    "service": "mai-image",
+    "date": "2026.10.27",
+    "kind": "모델",
+    "title": "MAI-Image-2.6 과 2.6-Flash 정식 출시 (Microsoft Foundry)",
+    "summary": "MAI-Image-2.6과 MAI-Image-2.6-Flash가 Microsoft Foundry에서 정식 출시(GA)됐어요. 이미지 아이디어를 다듬고 여러 대상에 맞게 변형하는 작업을 빠르게 할 수 있어요.",
+    "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally/ba-p/4566327",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-10-27-1",
+    "service": "ludo.ai",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Ludo CLI 무료 툴박스 32종 공개, 코딩 에이전트에서 사용",
+    "summary": "Ludo CLI에 무료 툴박스가 추가됐어요. 32가지 도구로 스프라이트 피벗, 콜라이더, 스프라이트시트 분할·정렬·루프 점수 등을 코딩 에이전트가 직접 실행해요.",
+    "details": [
+      "Claude Code·Codex·Cursor 등에서 스킬로 설치 가능 (ludo skill install)",
+      "Unity·Godot·Phaser·Box2D용 스프라이트 수치 계산",
+      "스프라이트시트 slice·pack·loop·gif 등 도구",
+      "이미지 리컬러, 타일 세트 작성, 오디오·3D 모델 점검"
+    ],
+    "url": "https://ludo.ai/whats-new#free-toolbox-give-your-coding-agent-superpowers-for-your-game-assets",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-27-1",
+    "service": "krea",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Krea 3 API 4K 출력과 Agent 노드 제작 기능 추가",
+    "summary": "Krea 3 이미지를 API에서 4K 해상도로 생성할 수 있게 됐어요. Agent가 Nodes에서 커스텀 노드를 직접 만들고, 개인·서비스 API 토큰도 생겼어요.",
+    "details": [
+      "Krea 3 API: 4K 출력 설정 추가 (ultra·Zero Data Retention에서는 불가, 2K 대비 2배 업스케일 비용)",
+      "Agent가 Nodes에서 커스텀 워크플로 노드를 제작",
+      "GPT-6.1 Terra를 Krea Agent에서 사용 가능",
+      "Nodes 프로젝트를 조직 단위로 공유",
+      "개인 및 서비스 API 토큰 생성 기능"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-27-2026",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-27-1",
+    "service": "heygen",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "reference_to_video 참고 영상 총 15초 예산 공유",
+    "summary": "reference_to_video 요청에서 참고 영상 최대 3개가 총 15초의 입력 예산을 나눠 쓰게 됐어요. 한 영상이 15초 전체를 쓸 수도 있어요.",
+    "details": [
+      "참고 영상 3개가 15초 예산 공유, 초과 시 각 영상의 앞 5초를 우선 사용",
+      "POST /v3/models/videos의 reference_to_video에 적용"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  },
+  {
+    "id": "nano-banana-2026-10-26-1",
+    "service": "nano-banana",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Nano Banana 2.1 이미지를 Cloud Storage로 바로 저장",
+    "summary": "Vertex AI에서 Nano Banana 2.1 등 Gemini 이미지 모델이 생성한 이미지를 Cloud Storage 버킷에 바로 저장할 수 있게 됐어요. 응답에는 이미지 바이트 대신 객체 URI가 담겨요.",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_26_2026",
+    "source": "dev"
+  },
+  {
     "id": "layer-2026-10-26-1",
     "service": "layer",
     "date": "2026.10.26",
@@ -309,6 +401,22 @@
     "source": "dev"
   },
   {
+    "id": "flux-2026-10-22-1",
+    "service": "flux",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "FLUX 3 Image 커스텀 크기와 편집 정확도 개선",
+    "summary": "FLUX 3 Image API에서 width·height로 원하는 크기를 지정할 수 있고, 입력 이미지와 같은 크기로 편집할 수 있게 됐어요. 한 장의 참조 이미지로 한 편집도 더 정확해졌어요.",
+    "details": [
+      "width·height로 256px부터 약 16.8MP(4K)까지 지정, 종횡비 최대 8:1",
+      "resolution: match_input으로 첫 참조 이미지와 같은 크기 출력 (최대 4MP)",
+      "날씨·조명·색보정 등 전체 이미지 편집 품질 향상",
+      "가격은 동일하고 기존 요청도 그대로 작동"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#october-22-2026",
+    "source": "dev"
+  },
+  {
     "id": "figma-ai-2026-10-22-1",
     "service": "figma-ai",
     "date": "2026.10.22",
@@ -402,101 +510,6 @@
       "Seedance 2.0 Mini, Seedance 2.0, Seedance 2.5로 옮기는 것을 권장"
     ],
     "url": "https://www.scenario.com/changelog/seedance-1-models-retirement",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-10-21-1",
-    "service": "runway",
-    "date": "2026.10.21",
-    "kind": "연동",
-    "title": "Runway Dev에 Nano Banana 2 Lite 추가",
-    "summary": "Runway Dev에서 Nano Banana 2 Lite를 이미지 생성과 편집에 바로 쓸 수 있게 됐어요. 프롬프트는 최대 5,500자, 참조 이미지는 최대 14장까지 넣을 수 있어요.",
-    "details": [
-      "모델 ID: gemini_image3.1_flash_lite",
-      "텍스트 프롬프트 생성과 참조 이미지 기반 편집 지원"
-    ],
-    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
-    "source": "dev"
-  },
-  {
-    "id": "meshy-2026-10-21-1",
-    "service": "meshy",
-    "date": "2026.10.21",
-    "kind": "기능",
-    "title": "API 작업에 X-Meshy-Metadata 헤더 추가",
-    "summary": "Studio와 Enterprise 팀은 작업을 만들 때 X-Meshy-Metadata 헤더로 직접 정한 키와 값을 붙일 수 있어요. 나중에 Usage 기록의 metadata 필드에서 다시 확인할 수 있어요.",
-    "url": "https://docs.meshy.ai/en/api/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-10-21-1",
-    "service": "hugging-face",
-    "date": "2026.10.21",
-    "kind": "기능",
-    "title": "Hugging Face 로그인에 패스키 지원 추가",
-    "summary": "지문, 얼굴 인식, 화면 잠금이나 보안 키로 로그인할 수 있어요. 패스키는 인증 앱과 함께 두 번째 인증 수단으로도 쓸 수 있어요.",
-    "url": "https://huggingface.co/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-21-1",
-    "service": "heygen",
-    "date": "2026.10.21",
-    "kind": "기능",
-    "title": "HeyGen Video 길이 자동 설정 추가",
-    "summary": "API에서 duration을 auto로 지정하면 HeyGen이 프롬프트에 맞춰 5~15초 사이의 길이를 골라줘요. 대사가 자연스러운 속도에 맞춰지고, 과금은 결정된 길이 기준이에요.",
-    "url": "https://docs.heygen.com/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "comfyui-2026-10-21-1",
-    "service": "comfyui",
-    "date": "2026.10.21",
-    "kind": "앱",
-    "title": "ComfyUI v0.42.0~v0.42.3 릴리스, MOSS-Image 지원",
-    "summary": "ComfyUI 0.42 시리즈가 나왔어요. 새 오픈소스 모델 MOSS-Image를 텍스트 이미지 생성과 레이아웃 기반 생성에 쓸 수 있고, 파트너 노드도 여럿 추가됐어요.",
-    "details": [
-      "v0.42.0: MOSS-Image 텍스트 이미지 생성과 레이아웃 기반 생성, 다국어 텍스트 렌더링",
-      "v0.42.2: MOSS-Image 색상·깊이 맵 제어, FLUX 3 Max와 FLUX 3 Video 2K·4K 해상도, Clarity AI Crystal 비디오 업스케일러 노드",
-      "v0.42.3: Bria FIBO 2.0 노드, HeyGen Voice 1.0 노드, MiniMax-H3 PDD 헤드 LoRA 개선",
-      "v0.42.1: 모델 프리패치 그래프 정리의 메모리 해제 버그 수정"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-42-0",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-21-2",
-    "service": "claude",
-    "date": "2026.10.21",
-    "kind": "API",
-    "title": "API 버전 2026-10-21 출시, SDK 라이선스 변경",
-    "summary": "API 버전 2026-10-21이 나왔고, 새 SDK와 CLI는 기본으로 이 버전을 보내요. 사용자 프로필에서 기업 고객별 제한 상태를 확인할 수 있는 필드도 추가됐어요.",
-    "details": [
-      "SDK 메이저 버전 업데이트 (Python 2.0.0, TypeScript 1.0.0 등)에 일부 호환성 깨짐 포함",
-      "SDK와 CLI 라이선스가 MIT에서 Apache 2.0으로 변경",
-      "사용자 프로필에 enforcement_status, enforcement_actions 필드 추가"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-21-1",
-    "service": "claude",
-    "date": "2026.10.21",
-    "kind": "앱",
-    "title": "Claude Duet 리서치 프리뷰 공개",
-    "summary": "Pro와 Max 플랜 사용자를 대상으로 Claude Duet 리서치 프리뷰가 열렸어요. Claude가 먼저 제안하고 움직이는 능동형 에이전트 앱이에요.",
-    "url": "https://support.claude.com/en/articles/12138966-release-notes",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-20-2",
-    "service": "scenario",
-    "date": "2026.10.20",
-    "kind": "모델",
-    "title": "FLUX.3 Max 영상 모델에 이미지·키프레임 입력 추가",
-    "summary": "FLUX.3 Max로 텍스트, 단일 이미지, 최대 10개 키프레임에서 최대 20초 720p 또는 1080p 영상을 만들 수 있어요. 네이티브 오디오도 포함돼요.",
-    "url": "https://www.scenario.com/changelog/models-12db7727a427d49e4a4191d0fd176e61cf526ba69e82b4209f943f086df0aa50",
     "source": "notice"
   }
 ]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "heygen-2026-10-27-1",
+    "service": "heygen",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "reference_to_video 참고 영상 총 15초 예산 공유",
+    "summary": "reference_to_video 요청에서 참고 영상 최대 3개가 총 15초의 입력 예산을 나눠 쓰게 됐어요. 한 영상이 15초 전체를 쓸 수도 있어요.",
+    "details": [
+      "참고 영상 3개가 15초 예산 공유, 초과 시 각 영상의 앞 5초를 우선 사용",
+      "POST /v3/models/videos의 reference_to_video에 적용"
+    ],
+    "url": "https://docs.heygen.com/changelog",
+    "source": "dev"
+  }
+]

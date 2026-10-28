@@ -1,0 +1,19 @@
+[
+  {
+    "id": "krea-2026-10-27-1",
+    "service": "krea",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "Krea 3 API 4K 출력과 Agent 노드 제작 기능 추가",
+    "summary": "Krea 3 이미지를 API에서 4K 해상도로 생성할 수 있게 됐어요. Agent가 Nodes에서 커스텀 노드를 직접 만들고, 개인·서비스 API 토큰도 생겼어요.",
+    "details": [
+      "Krea 3 API: 4K 출력 설정 추가 (ultra·Zero Data Retention에서는 불가, 2K 대비 2배 업스케일 비용)",
+      "Agent가 Nodes에서 커스텀 워크플로 노드를 제작",
+      "GPT-6.1 Terra를 Krea Agent에서 사용 가능",
+      "Nodes 프로젝트를 조직 단위로 공유",
+      "개인 및 서비스 API 토큰 생성 기능"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-27-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nano-banana-2026-10-26-1",
+    "service": "nano-banana",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Nano Banana 2.1 이미지를 Cloud Storage로 바로 저장",
+    "summary": "Vertex AI에서 Nano Banana 2.1 등 Gemini 이미지 모델이 생성한 이미지를 Cloud Storage 버킷에 바로 저장할 수 있게 됐어요. 응답에는 이미지 바이트 대신 객체 URI가 담겨요.",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_26_2026",
+    "source": "dev"
+  }
+]

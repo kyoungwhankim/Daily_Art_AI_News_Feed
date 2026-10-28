@@ -1,0 +1,18 @@
+[
+  {
+    "id": "flux-2026-10-22-1",
+    "service": "flux",
+    "date": "2026.10.22",
+    "kind": "API",
+    "title": "FLUX 3 Image 커스텀 크기와 편집 정확도 개선",
+    "summary": "FLUX 3 Image API에서 width·height로 원하는 크기를 지정할 수 있고, 입력 이미지와 같은 크기로 편집할 수 있게 됐어요. 한 장의 참조 이미지로 한 편집도 더 정확해졌어요.",
+    "details": [
+      "width·height로 256px부터 약 16.8MP(4K)까지 지정, 종횡비 최대 8:1",
+      "resolution: match_input으로 첫 참조 이미지와 같은 크기 출력 (최대 4MP)",
+      "날씨·조명·색보정 등 전체 이미지 편집 품질 향상",
+      "가격은 동일하고 기존 요청도 그대로 작동"
+    ],
+    "url": "https://docs.bfl.ai/release-notes#october-22-2026",
+    "source": "dev"
+  }
+]

@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 477,
-      "latest": "2026.10.26",
+      "count": 481,
+      "latest": "2026.10.27",
       "file": "updates/feed/image.json",
-      "rev": "1a0ca7da41"
+      "rev": "63374c3edf"
     },
     "video": {
-      "count": 968,
-      "latest": "2026.10.25",
+      "count": 971,
+      "latest": "2026.10.27",
       "file": "updates/feed/video.json",
-      "rev": "073ed9f733"
+      "rev": "8a8f149a02"
     },
     "3d": {
       "count": 186,
@@ -19,10 +19,10 @@
       "rev": "350e29862a"
     },
     "game-assets": {
-      "count": 573,
-      "latest": "2026.10.26",
+      "count": 574,
+      "latest": "2026.10.27",
       "file": "updates/feed/game-assets.json",
-      "rev": "52ac2ba963"
+      "rev": "2884dec005"
     },
     "motion": {
       "count": 165,
@@ -55,9 +55,9 @@
       "latest": "2026.09.08"
     },
     "nano-banana": {
-      "count": 21,
+      "count": 22,
       "first": "2025.08.26",
-      "latest": "2026.10.14"
+      "latest": "2026.10.26"
     },
     "seedream": {
       "count": 11,
@@ -70,9 +70,9 @@
       "latest": "2026.10.09"
     },
     "flux": {
-      "count": 43,
+      "count": 44,
       "first": "2024.08.01",
-      "latest": "2026.10.15"
+      "latest": "2026.10.22"
     },
     "stable-diffusion": {
       "count": 54,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 55,
+      "count": 56,
       "first": "2025.03.26",
-      "latest": "2026.10.26"
+      "latest": "2026.10.27"
     },
     "recraft": {
       "count": 41,
@@ -100,9 +100,9 @@
       "latest": "2026.10.12"
     },
     "mai-image": {
-      "count": 9,
+      "count": 10,
       "first": "2025.10.13",
-      "latest": "2026.09.04"
+      "latest": "2026.10.27"
     },
     "veo": {
       "count": 25,
@@ -130,9 +130,9 @@
       "latest": "2026.09.02"
     },
     "runway": {
-      "count": 192,
+      "count": 194,
       "first": "2023.02.01",
-      "latest": "2026.10.23"
+      "latest": "2026.10.27"
     },
     "dream-machine": {
       "count": 30,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 79,
+      "count": 80,
       "first": "2025.11.29",
-      "latest": "2026.10.23"
+      "latest": "2026.10.27"
     },
     "synthesia": {
       "count": 190,
@@ -215,9 +215,9 @@
       "latest": "2026.10.26"
     },
     "ludo.ai": {
-      "count": 49,
+      "count": 50,
       "first": "2021.06.22",
-      "latest": "2026.10.15"
+      "latest": "2026.10.27"
     },
     "roblox-cube": {
       "count": 41,
