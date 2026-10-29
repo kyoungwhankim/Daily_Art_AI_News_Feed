@@ -1,5 +1,38 @@
 [
   {
+    "id": "suno-2026-10-28-1",
+    "service": "suno",
+    "date": "2026.10.28",
+    "kind": "연동",
+    "title": "Suno, Claude 및 ChatGPT 연동 가능한 Suno MCP 베타 출시",
+    "summary": "Suno를 Claude, ChatGPT, Claude Code 등 MCP 클라이언트에 직접 연동해 대화형 프롬프트로 음악을 생성할 수 있는 Suno MCP 베타를 공개했어요.",
+    "details": [
+      "Claude, ChatGPT 등 MCP 클라이언트 내에서 탭 전환 없이 자연어로 음악 생성 가능",
+      "음성 메모나 오디오 루프를 업로드해 즉시 완곡 제작 지원",
+      "기존 라이브러리 곡을 기반으로 커버, 연장, 매시업 등 리믹스 지원",
+      "생성된 곡은 Suno 라이브러리에 자동 저장되며 플레이리스트 추가 지원",
+      "모든 Suno 플랜에서 계정 크레딧을 사용해 얼리 액세스 신청 후 이용 가능"
+    ],
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-10-26-1",
+    "service": "elevenlabs",
+    "date": "2026.10.26",
+    "kind": "API",
+    "title": "ElevenLabs, v4 음성용 복제 강도 조절 옵션 및 고속 에이전트 티어 도입",
+    "summary": "ElevenLabs가 v4 모델 대상 보이스 복제 강도(clone_strength) 설정 파라미터와 ElevenAgents 전용 고속 LLM 서비스 티어를 새롭게 지원해요.",
+    "details": [
+      "TTS 및 대화 생성 요청 시 v4 모델의 학습 샘플 반영도를 0~1 사이로 조절하는 clone_strength 파라미터 추가",
+      "ElevenAgents에서 지연 시간을 낮추고 처리량을 높인 고속(fast) LLM 서비스 티어 도입",
+      "에이전트 지식 베이스 웹 크롤링 시 제외 패턴(최대 50개) 필터링 지원",
+      "워크스페이스 서비스 계정 API 키 만료 기한(15분~90일) 설정 지원"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/26",
+    "source": "dev"
+  },
+  {
     "id": "suno-2026-10-23-1",
     "service": "suno",
     "date": "2026.10.23",

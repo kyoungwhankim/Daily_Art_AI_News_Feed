@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2026-10-26-1",
+    "service": "elevenlabs",
+    "date": "2026.10.26",
+    "kind": "API",
+    "title": "ElevenLabs, v4 음성용 복제 강도 조절 옵션 및 고속 에이전트 티어 도입",
+    "summary": "ElevenLabs가 v4 모델 대상 보이스 복제 강도(clone_strength) 설정 파라미터와 ElevenAgents 전용 고속 LLM 서비스 티어를 새롭게 지원해요.",
+    "details": [
+      "TTS 및 대화 생성 요청 시 v4 모델의 학습 샘플 반영도를 0~1 사이로 조절하는 clone_strength 파라미터 추가",
+      "ElevenAgents에서 지연 시간을 낮추고 처리량을 높인 고속(fast) LLM 서비스 티어 도입",
+      "에이전트 지식 베이스 웹 크롤링 시 제외 패턴(최대 50개) 필터링 지원",
+      "워크스페이스 서비스 계정 API 키 만료 기한(15분~90일) 설정 지원"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/26",
+    "source": "dev"
+  }
+]

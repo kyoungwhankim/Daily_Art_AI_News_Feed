@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 481,
-      "latest": "2026.10.27",
+      "count": 482,
+      "latest": "2026.10.28",
       "file": "updates/feed/image.json",
-      "rev": "63374c3edf"
+      "rev": "a711692886"
     },
     "video": {
-      "count": 971,
-      "latest": "2026.10.27",
+      "count": 975,
+      "latest": "2026.10.28",
       "file": "updates/feed/video.json",
-      "rev": "8a8f149a02"
+      "rev": "bac40e25a6"
     },
     "3d": {
       "count": 186,
@@ -25,22 +25,22 @@
       "rev": "2884dec005"
     },
     "motion": {
-      "count": 165,
-      "latest": "2026.10.19",
+      "count": 166,
+      "latest": "2026.10.28",
       "file": "updates/feed/motion.json",
-      "rev": "427c00968f"
+      "rev": "f8bac4298e"
     },
     "audio": {
-      "count": 358,
-      "latest": "2026.10.23",
+      "count": 360,
+      "latest": "2026.10.28",
       "file": "updates/feed/audio.json",
-      "rev": "17fd344927"
+      "rev": "85f6a51b62"
     },
     "tools": {
-      "count": 1028,
-      "latest": "2026.10.26",
+      "count": 1029,
+      "latest": "2026.10.28",
       "file": "updates/feed/tools.json",
-      "rev": "bc5af5400c"
+      "rev": "5f18320484"
     }
   },
   "services": {
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 56,
+      "count": 57,
       "first": "2025.03.26",
-      "latest": "2026.10.27"
+      "latest": "2026.10.28"
     },
     "recraft": {
       "count": 41,
@@ -170,14 +170,14 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 80,
+      "count": 81,
       "first": "2025.11.29",
-      "latest": "2026.10.27"
+      "latest": "2026.10.28"
     },
     "synthesia": {
-      "count": 190,
+      "count": 193,
       "first": "2020.10.13",
-      "latest": "2026.10.21"
+      "latest": "2026.10.27"
     },
     "topaz-video": {
       "count": 118,
@@ -235,19 +235,19 @@
       "latest": "2026.10.08"
     },
     "flow-studio": {
-      "count": 36,
+      "count": 37,
       "first": "2023.09.14",
-      "latest": "2026.10.19"
+      "latest": "2026.10.28"
     },
     "elevenlabs": {
-      "count": 207,
+      "count": 208,
       "first": "2022.11.24",
-      "latest": "2026.10.19"
+      "latest": "2026.10.26"
     },
     "suno": {
-      "count": 72,
+      "count": 73,
       "first": "2023.12.22",
-      "latest": "2026.10.23"
+      "latest": "2026.10.28"
     },
     "mureka": {
       "count": 57,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 215,
+      "count": 216,
       "first": "2024.08.06",
-      "latest": "2026.10.22"
+      "latest": "2026.10.28"
     },
     "invokeai": {
       "count": 73,

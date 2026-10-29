@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comfyui-2026-10-28-1",
+    "service": "comfyui",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "ComfyUI v0.43.1 업데이트 (Patina 텍스처 노드 및 VEED Dubbing 지원)",
+    "summary": "ComfyUI v0.43.1 릴리즈를 통해 심리스 PBR 머티리얼을 생성하는 Patina 노드와 음성 복제 및 립싱크를 지원하는 VEED Dubbing 노드가 추가되었어요.",
+    "details": [
+      "Patina 텍스처 노드: 사진이나 텍스트 프롬프트로부터 베이스컬러, 노멀, 러프니스, 메탈니스, 하이트 맵을 단일 잠재 공간에서 타일링 가능한 PBR 맵으로 생성",
+      "VEED Dubbing 노드: 화자의 음성을 복제하고 번역본에 맞춰 입모양을 재동기화하는 다국어 영상 더빙 노드 지원",
+      "템플릿 시스템 v0.11.98 업데이트 포함"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-43-1",
+    "source": "notice"
+  }
+]

@@ -1,5 +1,97 @@
 [
   {
+    "id": "suno-2026-10-28-1",
+    "service": "suno",
+    "date": "2026.10.28",
+    "kind": "연동",
+    "title": "Suno, Claude 및 ChatGPT 연동 가능한 Suno MCP 베타 출시",
+    "summary": "Suno를 Claude, ChatGPT, Claude Code 등 MCP 클라이언트에 직접 연동해 대화형 프롬프트로 음악을 생성할 수 있는 Suno MCP 베타를 공개했어요.",
+    "details": [
+      "Claude, ChatGPT 등 MCP 클라이언트 내에서 탭 전환 없이 자연어로 음악 생성 가능",
+      "음성 메모나 오디오 루프를 업로드해 즉시 완곡 제작 지원",
+      "기존 라이브러리 곡을 기반으로 커버, 연장, 매시업 등 리믹스 지원",
+      "생성된 곡은 Suno 라이브러리에 자동 저장되며 플레이리스트 추가 지원",
+      "모든 Suno 플랜에서 계정 크레딧을 사용해 얼리 액세스 신청 후 이용 가능"
+    ],
+    "url": "https://suno.com/release-notes",
+    "source": "notice"
+  },
+  {
+    "id": "krea-2026-10-28-1",
+    "service": "krea",
+    "date": "2026.10.28",
+    "kind": "API",
+    "title": "Krea API에 ByteDance Seedance 영상 모델 도입",
+    "summary": "Krea API에서 별도 바이트댄스 키 없이 크레딧 잔액으로 Seedance 2.5 및 2.0 영상 생성 모델들을 직접 호출할 수 있게 되었어요.",
+    "details": [
+      "Seedance 2.5, 2.0, 2.0 Fast, 2.0 Mini 모델 지원",
+      "텍스트 기반 영상 생성, start_image 기반 이미지 애니메이션, 레퍼런스 가이드 지원",
+      "별도 ByteDance 키 없이 Krea 워크스페이스 API 크레딧으로 과금"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-28-2026",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-10-28-1",
+    "service": "heygen",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "HeyGen Voice 음성 변환(Speech-to-Speech) 정식 도입",
+    "summary": "휴대폰이나 노트북으로 녹음한 음성의 감정과 호흡, 억양을 그대로 유지하면서 사용자의 HeyGen 음성 클론으로 바꿔주는 Speech-to-Speech 기능이 출시되었어요.",
+    "details": [
+      "녹음된 음성의 속삭임, 웃음, 악센트 등 감정과 뉘앙스를 클론 음성에 그대로 보존",
+      "반복적인 TTS 프롬프트 조정 없이 원하는 톤과 타이밍을 직접 음성으로 연출",
+      "HeyGen 웹 플랫폼 및 API에서 정식 제공"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice-speech-to-speech",
+    "source": "notice"
+  },
+  {
+    "id": "flow-studio-2026-10-28-1",
+    "service": "flow-studio",
+    "date": "2026.10.28",
+    "kind": "모델",
+    "title": "오토데스크 Flow Studio, Kling 4 비디오 생성 모델 공식 도입",
+    "summary": "오토데스크 Flow Studio가 텍스트 및 이미지 기반 비디오 생성을 지원하는 Kling 4 및 Kling 4 Reference 모델을 공식 지원해요.",
+    "details": [
+      "텍스트나 이미지를 입력해 시작 및 종료 프레임을 지정하는 영상 생성 지원",
+      "이미지, 비디오, 캐릭터, 오브젝트 레퍼런스를 참조하는 Kling 4 Reference 지원",
+      "720p 또는 1080p 해상도로 최대 30초 길이의 영상 생성 지원"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-10-28-1",
+    "service": "comfyui",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "ComfyUI v0.43.1 업데이트 (Patina 텍스처 노드 및 VEED Dubbing 지원)",
+    "summary": "ComfyUI v0.43.1 릴리즈를 통해 심리스 PBR 머티리얼을 생성하는 Patina 노드와 음성 복제 및 립싱크를 지원하는 VEED Dubbing 노드가 추가되었어요.",
+    "details": [
+      "Patina 텍스처 노드: 사진이나 텍스트 프롬프트로부터 베이스컬러, 노멀, 러프니스, 메탈니스, 하이트 맵을 단일 잠재 공간에서 타일링 가능한 PBR 맵으로 생성",
+      "VEED Dubbing 노드: 화자의 음성을 복제하고 번역본에 맞춰 입모양을 재동기화하는 다국어 영상 더빙 노드 지원",
+      "템플릿 시스템 v0.11.98 업데이트 포함"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-43-1",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-10-27-1",
+    "service": "synthesia",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "대규모 영상 더빙용 Localization API 및 Syren 브랜드 키트 연동",
+    "summary": "최대 20개 언어로 영상을 한 번에 자동 더빙할 수 있는 Localization API가 출시되고, Syren 비디오에 브랜드 키트를 적용할 수 있게 되었어요.",
+    "details": [
+      "영상 URL로부터 최대 20개 언어 동시 더빙 요청 가능한 Localization API 출시",
+      "언어별 더빙 진행 상태 추적 및 추가 언어 확장 지원",
+      "Syren 비디오 생성 시 워크스페이스의 로고, 폰트, 색상, 아바타를 포함한 브랜드 키트 자동 적용"
+    ],
+    "url": "https://www.synthesia.io/updates/dub-videos-at-scale-with-the-localization-api",
+    "source": "notice"
+  },
+  {
     "id": "runway-2026-10-27-2",
     "service": "runway",
     "date": "2026.10.27",
@@ -134,6 +226,22 @@
     "source": "notice"
   },
   {
+    "id": "elevenlabs-2026-10-26-1",
+    "service": "elevenlabs",
+    "date": "2026.10.26",
+    "kind": "API",
+    "title": "ElevenLabs, v4 음성용 복제 강도 조절 옵션 및 고속 에이전트 티어 도입",
+    "summary": "ElevenLabs가 v4 모델 대상 보이스 복제 강도(clone_strength) 설정 파라미터와 ElevenAgents 전용 고속 LLM 서비스 티어를 새롭게 지원해요.",
+    "details": [
+      "TTS 및 대화 생성 요청 시 v4 모델의 학습 샘플 반영도를 0~1 사이로 조절하는 clone_strength 파라미터 추가",
+      "ElevenAgents에서 지연 시간을 낮추고 처리량을 높인 고속(fast) LLM 서비스 티어 도입",
+      "에이전트 지식 베이스 웹 크롤링 시 제외 패턴(최대 50개) 필터링 지원",
+      "워크스페이스 서비스 계정 API 키 만료 기한(15분~90일) 설정 지원"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/10/26",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-10-25-1",
     "service": "higgsfield",
     "date": "2026.10.25",
@@ -156,6 +264,21 @@
     ],
     "url": "https://www.krea.ai/docs/changelog#october-24-2026",
     "source": "dev"
+  },
+  {
+    "id": "synthesia-2026-10-23-1",
+    "service": "synthesia",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "파워포인트 슬라이드를 Syren 비디오로 자동 재디자인 변환 지원",
+    "summary": "파워포인트(PPT) 파일을 가져와 슬라이드를 정적인 장면 대신 모션과 비주얼이 가미된 동적 Syren 비디오로 바로 재디자인할 수 있게 되었어요.",
+    "details": [
+      "PPT 가져오기 시 Syren을 통한 역동적 비디오 재디자인 옵션 제공",
+      "기존 슬라이드 레이아웃 유지 또는 새로운 비주얼 요소와 요약 버전 제작 선택 가능",
+      "스톡 보이스의 숫자, 날짜, 기호, 약어 발음 정확도 개선"
+    ],
+    "url": "https://www.synthesia.io/updates/turn-powerpoint-decks-into-syren-videos",
+    "source": "notice"
   },
   {
     "id": "suno-2026-10-23-1",
@@ -285,6 +408,21 @@
     "source": "dev"
   },
   {
+    "id": "synthesia-2026-10-22-1",
+    "service": "synthesia",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "외부 번역 관리 시스템(TMS) 연동을 위한 XLIFF 더빙 지원",
+    "summary": "가져온 영상의 스크립트를 XLIFF 파일로 내보내 기업 검증 번역을 적용한 뒤 다시 더빙에 활용할 수 있게 되었어요.",
+    "details": [
+      "영상 자막 스크립트를 XLIFF 포맷으로 추출해 번역팀 또는 번역 툴과 협업 가능",
+      "번역된 파일을 더빙 창에 드롭 시 언어 자동 감지 및 기계 번역 언어와 혼합 지원",
+      "기존 더빙 결과물에 XLIFF 기반 번역 업데이트 기능 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/bring-your-own-translation-with-xliff",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-10-22-4",
     "service": "scenario",
     "date": "2026.10.22",
@@ -382,134 +520,6 @@
     "title": "Higgsfield Content Factory 출시",
     "summary": "'만약에…' 질문 하나로 장면별 대본, 등장인물, 음성, 편집까지 만드는 짧은 영상 도구예요. 15초에서 5분 사이 길이를 1~4편까지 한 번에 만들 수 있어요.",
     "url": "https://higgsfield.ai/blog/higgsfield-introduces-content-factory",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-10-22-1",
-    "service": "heygen",
-    "date": "2026.10.22",
-    "kind": "기능",
-    "title": "HeyGen Video 최대 30초 영상 생성 지원",
-    "summary": "text-to-video와 image-to-video에서 5초부터 30초까지 길이를 고를 수 있게 됐어요. 모델 ID와 엔드포인트는 그대로예요.",
-    "details": [
-      "turbo 또는 quality 보정에서 5~30초 설정 가능",
-      "해상도 480p, 768p, 1080p, 2K 지원",
-      "duration을 auto로 두면 8~30초 중에서 선택",
-      "Reference-to-video와 MCP 요청은 여전히 15초까지"
-    ],
-    "url": "https://docs.heygen.com/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "flux-2026-10-22-1",
-    "service": "flux",
-    "date": "2026.10.22",
-    "kind": "API",
-    "title": "FLUX 3 Image 커스텀 크기와 편집 정확도 개선",
-    "summary": "FLUX 3 Image API에서 width·height로 원하는 크기를 지정할 수 있고, 입력 이미지와 같은 크기로 편집할 수 있게 됐어요. 한 장의 참조 이미지로 한 편집도 더 정확해졌어요.",
-    "details": [
-      "width·height로 256px부터 약 16.8MP(4K)까지 지정, 종횡비 최대 8:1",
-      "resolution: match_input으로 첫 참조 이미지와 같은 크기 출력 (최대 4MP)",
-      "날씨·조명·색보정 등 전체 이미지 편집 품질 향상",
-      "가격은 동일하고 기존 요청도 그대로 작동"
-    ],
-    "url": "https://docs.bfl.ai/release-notes#october-22-2026",
-    "source": "dev"
-  },
-  {
-    "id": "figma-ai-2026-10-22-1",
-    "service": "figma-ai",
-    "date": "2026.10.22",
-    "kind": "요금",
-    "title": "Enterprise 관리자용 AI 크레딧 관리 기능 추가",
-    "summary": "Enterprise 플랜 관리자가 유료 AI 크레딧의 사용자별 기본 권한을 정하고 SCIM으로 한도를 관리할 수 있게 됐어요. 곧 Enterprise 플랜에 순차 적용될 예정이에요.",
-    "details": [
-      "조직·결제 그룹 단위로 유료 AI 크레딧 기본 권한 설정",
-      "SCIM으로 AI 크레딧 접근과 한도 관리",
-      "Starter·Professional 플랜 외부 생성 제어",
-      "팀·폴더·파일 관리용 관리자 REST API 제공"
-    ],
-    "url": "https://www.figma.com/release-notes/?title=new-controls-enterprise-admins",
-    "source": "notice"
-  },
-  {
-    "id": "comfyui-2026-10-22-1",
-    "service": "comfyui",
-    "date": "2026.10.22",
-    "kind": "연동",
-    "title": "ComfyUI v0.42.4 릴리스, 파트너 노드 업데이트",
-    "summary": "VEED 영상 노드와 Mirelo SFX 2.0 노드가 추가되고 Krea 3 이미지 노드에 생각 모드가 생겼어요. 음성 시 입 모양 맞춤과 배경 제거도 워크플로에서 바로 쓸 수 있어요.",
-    "details": [
-      "VEED Fabric 1.0: 사진과 음성으로 립싱크 영상 생성",
-      "VEED Lipsync 2.0: 촬영한 영상의 입 모양을 새 음성에 맞춰 재싱크",
-      "VEED Remove Video Background와 Clean Audio 노드",
-      "Mirelo SFX 2.0: 텍스트나 영상 동작에 맞춘 효과음 생성",
-      "Krea 3 Image 울트라 생각 모드 추가",
-      "HeyGen Voice 노드에 현재 가격 표시"
-    ],
-    "url": "https://docs.comfy.org/changelog#v0-42-4",
-    "source": "dev"
-  },
-  {
-    "id": "claude-2026-10-22-1",
-    "service": "claude",
-    "date": "2026.10.22",
-    "kind": "연동",
-    "title": "Claude 모델을 Google Cloud에서 바로 사용",
-    "summary": "Google Cloud 프로젝트를 통해 Anthropic이 운영하는 Claude API를 쓸 수 있게 됐어요. 접근은 Google Cloud IAM으로 관리하고 결제는 Google Cloud Marketplace에서 처리해요.",
-    "details": [
-      "Claude Models on Google Cloud (Anthropic managed) 출시",
-      "Claude Opus 5.5 패스트 모드를 이 경로에서도 사용할 수 있어요"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
-    "source": "dev"
-  },
-  {
-    "id": "synthesia-2026-10-21-1",
-    "service": "synthesia",
-    "date": "2026.10.21",
-    "kind": "API",
-    "title": "Interactive Avatar용 LiveKit 플러그인 공개",
-    "summary": "Node.js에서 LiveKit 에이전트에 Synthesia Interactive Avatar를 몇 줄의 코드로 붙일 수 있는 공식 플러그인이 나왔어요.",
-    "url": "https://docs.synthesia.io/changelog/interactive-avatars-livekit-plugin-for-nodejs",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-21-3",
-    "service": "scenario",
-    "date": "2026.10.21",
-    "kind": "API",
-    "title": "API v2.140.0: 텍스트-투-3D와 에셋 복구 기능",
-    "summary": "API에서 텍스트로 3D를 만들 수 있게 됐고, 삭제한 에셋을 복구할 수 있어요. BYOK 자격 증명 제어와 작업 상태 추적도 강화됐어요.",
-    "details": [
-      "영상 모델 확대",
-      "삭제된 에셋 복구",
-      "BYOK 자격 증명 세부 제어"
-    ],
-    "url": "https://www.scenario.com/changelog/api-v2-140-0",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-21-2",
-    "service": "scenario",
-    "date": "2026.10.21",
-    "kind": "기능",
-    "title": "MiniMax H3 Max 리프레임으로 새 화면비 영상 생성",
-    "summary": "기존 영상을 새 화면비로 바꾸면서 빈 영역은 AI가 채워 줘요. 480p부터 1080p까지 출력할 수 있어요.",
-    "url": "https://www.scenario.com/changelog/models-6c735a53dfe41d4d07d3862224426a30ddb7e58bd75127c0782b9991da1919bb",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-21-1",
-    "service": "scenario",
-    "date": "2026.10.21",
-    "kind": "종료",
-    "title": "Seedance 1 모델 2026년 11월 11일 종료",
-    "summary": "Seedance 1.5 Pro, Seedance 1 Pro, Seedance 1 Pro Fast가 11월 11일부터 동작을 멈춰요. 그 전까지는 계속 쓸 수 있어요.",
-    "details": [
-      "Seedance 2.0 Mini, Seedance 2.0, Seedance 2.5로 옮기는 것을 권장"
-    ],
-    "url": "https://www.scenario.com/changelog/seedance-1-models-retirement",
     "source": "notice"
   }
 ]

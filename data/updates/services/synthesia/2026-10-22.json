@@ -1,0 +1,17 @@
+[
+  {
+    "id": "synthesia-2026-10-22-1",
+    "service": "synthesia",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "외부 번역 관리 시스템(TMS) 연동을 위한 XLIFF 더빙 지원",
+    "summary": "가져온 영상의 스크립트를 XLIFF 파일로 내보내 기업 검증 번역을 적용한 뒤 다시 더빙에 활용할 수 있게 되었어요.",
+    "details": [
+      "영상 자막 스크립트를 XLIFF 포맷으로 추출해 번역팀 또는 번역 툴과 협업 가능",
+      "번역된 파일을 더빙 창에 드롭 시 언어 자동 감지 및 기계 번역 언어와 혼합 지원",
+      "기존 더빙 결과물에 XLIFF 기반 번역 업데이트 기능 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/bring-your-own-translation-with-xliff",
+    "source": "notice"
+  }
+]

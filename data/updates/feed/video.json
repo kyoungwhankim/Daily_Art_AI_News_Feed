@@ -1,5 +1,35 @@
 [
   {
+    "id": "heygen-2026-10-28-1",
+    "service": "heygen",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "HeyGen Voice 음성 변환(Speech-to-Speech) 정식 도입",
+    "summary": "휴대폰이나 노트북으로 녹음한 음성의 감정과 호흡, 억양을 그대로 유지하면서 사용자의 HeyGen 음성 클론으로 바꿔주는 Speech-to-Speech 기능이 출시되었어요.",
+    "details": [
+      "녹음된 음성의 속삭임, 웃음, 악센트 등 감정과 뉘앙스를 클론 음성에 그대로 보존",
+      "반복적인 TTS 프롬프트 조정 없이 원하는 톤과 타이밍을 직접 음성으로 연출",
+      "HeyGen 웹 플랫폼 및 API에서 정식 제공"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice-speech-to-speech",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-10-27-1",
+    "service": "synthesia",
+    "date": "2026.10.27",
+    "kind": "API",
+    "title": "대규모 영상 더빙용 Localization API 및 Syren 브랜드 키트 연동",
+    "summary": "최대 20개 언어로 영상을 한 번에 자동 더빙할 수 있는 Localization API가 출시되고, Syren 비디오에 브랜드 키트를 적용할 수 있게 되었어요.",
+    "details": [
+      "영상 URL로부터 최대 20개 언어 동시 더빙 요청 가능한 Localization API 출시",
+      "언어별 더빙 진행 상태 추적 및 추가 언어 확장 지원",
+      "Syren 비디오 생성 시 워크스페이스의 로고, 폰트, 색상, 아바타를 포함한 브랜드 키트 자동 적용"
+    ],
+    "url": "https://www.synthesia.io/updates/dub-videos-at-scale-with-the-localization-api",
+    "source": "notice"
+  },
+  {
     "id": "runway-2026-10-27-2",
     "service": "runway",
     "date": "2026.10.27",
@@ -49,6 +79,21 @@
     "source": "notice"
   },
   {
+    "id": "synthesia-2026-10-23-1",
+    "service": "synthesia",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "파워포인트 슬라이드를 Syren 비디오로 자동 재디자인 변환 지원",
+    "summary": "파워포인트(PPT) 파일을 가져와 슬라이드를 정적인 장면 대신 모션과 비주얼이 가미된 동적 Syren 비디오로 바로 재디자인할 수 있게 되었어요.",
+    "details": [
+      "PPT 가져오기 시 Syren을 통한 역동적 비디오 재디자인 옵션 제공",
+      "기존 슬라이드 레이아웃 유지 또는 새로운 비주얼 요소와 요약 버전 제작 선택 가능",
+      "스톡 보이스의 숫자, 날짜, 기호, 약어 발음 정확도 개선"
+    ],
+    "url": "https://www.synthesia.io/updates/turn-powerpoint-decks-into-syren-videos",
+    "source": "notice"
+  },
+  {
     "id": "runway-2026-10-23-2",
     "service": "runway",
     "date": "2026.10.23",
@@ -94,6 +139,21 @@
     "title": "Luma에 Kling 4.0 탑재",
     "summary": "Luma 플랫폼에서 Kling 4.0 모델을 바로 사용할 수 있게 되었어요. 빠른 동작과 역동적인 카메라 움직임이 필요한 샷을 Luma 보드에서 바로 다듬을 수 있어요.",
     "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-10-22-1",
+    "service": "synthesia",
+    "date": "2026.10.22",
+    "kind": "기능",
+    "title": "외부 번역 관리 시스템(TMS) 연동을 위한 XLIFF 더빙 지원",
+    "summary": "가져온 영상의 스크립트를 XLIFF 파일로 내보내 기업 검증 번역을 적용한 뒤 다시 더빙에 활용할 수 있게 되었어요.",
+    "details": [
+      "영상 자막 스크립트를 XLIFF 포맷으로 추출해 번역팀 또는 번역 툴과 협업 가능",
+      "번역된 파일을 더빙 창에 드롭 시 언어 자동 감지 및 기계 번역 언어와 혼합 지원",
+      "기존 더빙 결과물에 XLIFF 기반 번역 업데이트 기능 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/bring-your-own-translation-with-xliff",
     "source": "notice"
   },
   {

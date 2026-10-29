@@ -1,5 +1,20 @@
 [
   {
+    "id": "flow-studio-2026-10-28-1",
+    "service": "flow-studio",
+    "date": "2026.10.28",
+    "kind": "모델",
+    "title": "오토데스크 Flow Studio, Kling 4 비디오 생성 모델 공식 도입",
+    "summary": "오토데스크 Flow Studio가 텍스트 및 이미지 기반 비디오 생성을 지원하는 Kling 4 및 Kling 4 Reference 모델을 공식 지원해요.",
+    "details": [
+      "텍스트나 이미지를 입력해 시작 및 종료 프레임을 지정하는 영상 생성 지원",
+      "이미지, 비디오, 캐릭터, 오브젝트 레퍼런스를 참조하는 Kling 4 Reference 지원",
+      "720p 또는 1080p 해상도로 최대 30초 길이의 영상 생성 지원"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/",
+    "source": "notice"
+  },
+  {
     "id": "flow-studio-2026-10-19-1",
     "service": "flow-studio",
     "date": "2026.10.19",

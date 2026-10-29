@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-10-28-1",
+    "service": "krea",
+    "date": "2026.10.28",
+    "kind": "API",
+    "title": "Krea API에 ByteDance Seedance 영상 모델 도입",
+    "summary": "Krea API에서 별도 바이트댄스 키 없이 크레딧 잔액으로 Seedance 2.5 및 2.0 영상 생성 모델들을 직접 호출할 수 있게 되었어요.",
+    "details": [
+      "Seedance 2.5, 2.0, 2.0 Fast, 2.0 Mini 모델 지원",
+      "텍스트 기반 영상 생성, start_image 기반 이미지 애니메이션, 레퍼런스 가이드 지원",
+      "별도 ByteDance 키 없이 Krea 워크스페이스 API 크레딧으로 과금"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-28-2026",
+    "source": "dev"
+  }
+]

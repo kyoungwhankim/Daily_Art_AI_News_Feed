@@ -1,0 +1,17 @@
+[
+  {
+    "id": "heygen-2026-10-28-1",
+    "service": "heygen",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "HeyGen Voice 음성 변환(Speech-to-Speech) 정식 도입",
+    "summary": "휴대폰이나 노트북으로 녹음한 음성의 감정과 호흡, 억양을 그대로 유지하면서 사용자의 HeyGen 음성 클론으로 바꿔주는 Speech-to-Speech 기능이 출시되었어요.",
+    "details": [
+      "녹음된 음성의 속삭임, 웃음, 악센트 등 감정과 뉘앙스를 클론 음성에 그대로 보존",
+      "반복적인 TTS 프롬프트 조정 없이 원하는 톤과 타이밍을 직접 음성으로 연출",
+      "HeyGen 웹 플랫폼 및 API에서 정식 제공"
+    ],
+    "url": "https://heygen.noticeable.news/publications/introducing-heygen-voice-speech-to-speech",
+    "source": "notice"
+  }
+]
