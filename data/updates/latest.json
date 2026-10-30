@@ -32,6 +32,16 @@
     "source": "notice"
   },
   {
+    "id": "mureka-2026-10-29-1",
+    "service": "mureka",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Mureka MP4 오디오 지원 추가",
+    "summary": "MP4 영상 파일을 업로드해 그 안의 오디오를 Remix나 Audio Reference에 바로 사용할 수 있게 됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
     "id": "magnific-2026-10-29-1",
     "service": "magnific",
     "date": "2026.10.29",
@@ -45,6 +55,16 @@
     ],
     "url": "https://docs.magnific.com/changelog#october-29-2026",
     "source": "dev"
+  },
+  {
+    "id": "iclone-2026-10-29-2",
+    "service": "iclone",
+    "date": "2026.10.29",
+    "kind": "앱",
+    "title": "iClone 8.76 업데이트 공개",
+    "summary": "iClone 8.76 버전이 2026.10.29에 공개됐어요. 공식 릴리스 노트에는 아직 새 기능 설명이 없고 버전과 파일 크기(1.04GB) 정보만 적혀 있어요.",
+    "url": "https://www.reallusion.com/iclone/update.html",
+    "source": "notice"
   },
   {
     "id": "iclone-2026-10-29-1",
@@ -509,25 +529,5 @@
     ],
     "url": "https://www.synthesia.io/updates/bring-your-own-translation-with-xliff",
     "source": "notice"
-  },
-  {
-    "id": "scenario-2026-10-22-4",
-    "service": "scenario",
-    "date": "2026.10.22",
-    "kind": "기능",
-    "title": "Compute v1.14.0: Viggle 영상과 텍스트→3D 생성 추가",
-    "summary": "Scenario Compute v1.14.0이 나왔어요. Viggle 영상 생성, 텍스트에서 3D 생성, Ideogram 벡터 기능이 추가됐어요.",
-    "url": "https://www.scenario.com/changelog/compute-v1-14-0",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-10-22-3",
-    "service": "scenario",
-    "date": "2026.10.22",
-    "kind": "API",
-    "title": "API v2.141.0: 어시스턴트 모델 확대와 3D 에셋 개선",
-    "summary": "Claude 5.5와 GPT-5.6 Terra 같은 AI 어시스턴트 모델을 API에서 쓸 수 있게 됐어요. 단계별 요금이 적용되고 3D 에셋 내보내기도 더 안정적이에요.",
-    "url": "https://www.scenario.com/changelog/api-v2-141-0",
-    "source": "dev"
   }
 ]

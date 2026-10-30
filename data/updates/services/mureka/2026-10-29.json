@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mureka-2026-10-29-1",
+    "service": "mureka",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Mureka MP4 오디오 지원 추가",
+    "summary": "MP4 영상 파일을 업로드해 그 안의 오디오를 Remix나 Audio Reference에 바로 사용할 수 있게 됐어요.",
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  }
+]

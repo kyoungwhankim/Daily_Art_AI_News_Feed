@@ -25,16 +25,16 @@
       "rev": "1f06307909"
     },
     "motion": {
-      "count": 167,
+      "count": 168,
       "latest": "2026.10.29",
       "file": "updates/feed/motion.json",
-      "rev": "f4167f82bd"
+      "rev": "619ebb2555"
     },
     "audio": {
-      "count": 360,
-      "latest": "2026.10.28",
+      "count": 361,
+      "latest": "2026.10.29",
       "file": "updates/feed/audio.json",
-      "rev": "85f6a51b62"
+      "rev": "9a84e32a75"
     },
     "tools": {
       "count": 1031,
@@ -230,7 +230,7 @@
       "latest": "2026.10.15"
     },
     "iclone": {
-      "count": 91,
+      "count": 92,
       "first": "2005.12.08",
       "latest": "2026.10.29"
     },
@@ -250,9 +250,9 @@
       "latest": "2026.10.28"
     },
     "mureka": {
-      "count": 57,
+      "count": 58,
       "first": "2024.10.30",
-      "latest": "2026.10.23"
+      "latest": "2026.10.29"
     },
     "stable-audio": {
       "count": 8,
