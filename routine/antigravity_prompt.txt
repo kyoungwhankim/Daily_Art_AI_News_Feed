@@ -200,11 +200,26 @@ T4. Never stop early to ask anything. When a step fails, do what the routine say
     failure (skip the article, mark the source unreachable, restore and continue, ...).
     Terminate early only where the routine says to terminate.
 
+T5. Run only commands that the routine files write out. Never guess a subcommand or an option
+    a script "probably has" (e.g. `service_updates.py entries kling` does not exist). If you
+    need something the files do not cover:
+      - check what a script really accepts first with `--help` (safe — it only prints the
+        usage and runs nothing), or read the script with your file tool;
+      - to see what is already stored for a service, use the commands the updates prompt
+        gives: `service_updates.py state` (latest entries of every service; add
+        `--recent 15` for more) — or read data/updates/services/<slug>/ with your file tool.
+    A command that fails because YOU called it wrongly is your mistake, not a script problem.
+
 =====================================================================
 FINISH
 =====================================================================
 
 The day's command log is /tmp/routine_log/YYYY-MM-DD.txt (C:\tmp\routine_log on this computer).
 Give the final report daily_feed_prompt.txt asks for (articles per tab, the updates /
-free-tools / weekly report summaries, the push result). Add one line naming any step where a
-W / A / T rule did not work as written, so the instructions can be fixed.
+free-tools / weekly report summaries, the push result). Then two separate lists:
+  - "Instruction or script problems": a step where a W / A / T rule or a repository script did
+    not work as written even though you ran it exactly as written (quote the command and its
+    error), so the instructions can be fixed.
+  - "My own mistakes": commands you ran wrongly or made up, steps you skipped or redid, files
+    you wrote by hand. Never report your own mistake as a script problem.
+  Write "none" for an empty list.
