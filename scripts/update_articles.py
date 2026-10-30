@@ -82,6 +82,8 @@ def build_entry(art: dict, idx: int, slug_suffix: str, upload_date: str,
 
 
 def main():
+    if len(sys.argv) > 1:      # 인자를 받지 않는다 — --help·오타·엉뚱한 변수로 실행돼 데이터가 바뀌지 않게
+        sys.exit(f'usage: python3 scripts/{os.path.basename(__file__)}   (no arguments; nothing was run)')
     today = date.today()
     upload_date = today.strftime('%Y.%m.%d')
     slug_suffix = today.strftime('%Y-%m')

@@ -682,6 +682,51 @@ def cmd_push_local(args):
     sys.exit('Push failed twice — not forcing. Report this.')
 
 
+# 명령마다 받는 인자 — (위치 인자 최소, 최대, 값을 받는 옵션, 값 없는 옵션)
+# 여기 없는 옵션·남는 인자(--help, 오타, 엉뚱한 변수)는 아무것도 하지 않고 거부한다.
+# 예전에는 모르는 인자를 무시하고 그대로 실행해, `push-local --help`가 실제로 푸시됐다.
+ARGSPEC = {
+    'sources': (0, 1, (), ()), 'digest-add': (0, 0, ('--file',), ()), 'article-add': (0, 0, ('--file',), ()),
+    'workdir': (1, 1, (), ('--remove',)), 'agent-init': (1, 1, (), ()), 'agent-note': (2, 2, (), ()),
+    'agent-count': (0, 1, (), ()), 'agent-finish': (1, 1, ('--file',), ()), 'agent-status': (1, 1, (), ()),
+    'undo-data': (1, 1, (), ()), 'push-local': (0, 0, ('--few-ok',), ()), 'skip': (2, 2, (), ()),
+}
+USAGE = {
+    'sources': '[games|industry|art]', 'digest-add': '[--file PATH]  (or the dict on stdin)',
+    'article-add': '[--file PATH]  (or the dict on stdin)', 'workdir': 'updates|free|report [--remove]',
+    'agent-init': 'updates|free|report', 'agent-note': 'updates|free "<one line>"',
+    'agent-count': '[updates|free|report]', 'agent-finish': 'updates|free|report [--file PATH]',
+    'agent-status': 'updates|free|report', 'undo-data': 'updates|free|reports',
+    'push-local': '[--few-ok "<reason>"]', 'skip': '"<url>" "<reason>"',
+}
+
+
+def check_args(cmd, args):
+    lo, hi, valued, flags = ARGSPEC.get(cmd, (0, 0, (), ()))
+    usage = f"usage: routine_steps.py {cmd} {USAGE.get(cmd, '')}".rstrip()
+    if '-h' in args or '--help' in args:
+        print(usage + '\n(--help only prints this; nothing was run)')
+        sys.exit(0)
+    pos, i = [], 0
+    while i < len(args):
+        a = args[i]
+        if a in valued:
+            if i + 1 >= len(args):
+                sys.exit(f'REFUSED: {a} needs a value — nothing was run.\n{usage}')
+            i += 2
+            continue
+        if a in flags:
+            i += 1
+            continue
+        if a.startswith('-') and len(a) > 1:
+            sys.exit(f'REFUSED: unknown option {a!r} — nothing was run.\n{usage}')
+        pos.append(a)
+        i += 1
+    if not lo <= len(pos) <= hi:
+        sys.exit(f'REFUSED: {cmd} takes {lo}' + (f'–{hi}' if hi != lo else '') +
+                 f' argument(s), got {len(pos)} {pos} — nothing was run.\n{usage}')
+
+
 if __name__ == '__main__':
     cmds = {'init': cmd_init, 'sources': cmd_sources, 'digest-add': cmd_digest_add,
             'digest-verify': cmd_digest_verify, 'publish-init': cmd_publish_init,
@@ -696,4 +741,5 @@ if __name__ == '__main__':
             'skip': cmd_skip, 'review': cmd_review}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit('usage: routine_steps.py ' + '|'.join(cmds))
+    check_args(sys.argv[1], sys.argv[2:])
     cmds[sys.argv[1]](sys.argv[2:])
