@@ -291,4 +291,7 @@ if __name__ == '__main__':
     cmds = {'due': cmd_due, 'context': cmd_context, 'add': cmd_add, 'merge': cmd_merge, 'validate': cmd_validate}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit('usage: weekly_report.py due|context|add|merge|validate ...')
+    extra = [a for a in sys.argv[2:] if a.startswith('-') and a != '--file']
+    if extra:      # --help·오타 옵션은 거부 — 엉뚱한 값으로 merge·add가 돌지 않게
+        sys.exit(f'usage: weekly_report.py {sys.argv[1]} ... (unknown option {extra[0]}; nothing was run)')
     cmds[sys.argv[1]](sys.argv[2:])

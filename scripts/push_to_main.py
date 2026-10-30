@@ -133,13 +133,15 @@ def sync_tracking_ref() -> None:
 
 
 def main():
+    if len(sys.argv) > 1:      # 인자를 받지 않는다 — --help·오타·엉뚱한 변수로 실행돼 데이터가 바뀌지 않게
+        sys.exit(f'usage: python3 scripts/{os.path.basename(__file__)}   (no arguments; nothing was run)')
     if not os.environ.get('GITHUB_TOKEN'):
         # 토큰이 없는 곳(내 컴퓨터의 Antigravity 등) — 이 컴퓨터의 git 로그인으로 올리는 push-local로 넘긴다.
         # push-local은 푸시 전 검사(기사 저장·업데이트 작업 확인)도 한다.
         print('GITHUB_TOKEN is not set — this is a local run. Handing over to `routine_steps.py push-local`.',
               flush=True)
-        sys.exit(subprocess.run([sys.executable, os.path.join(REPO, 'scripts', 'routine_steps.py'), 'push-local']
-                                + sys.argv[1:], cwd=REPO).returncode)
+        sys.exit(subprocess.run([sys.executable, os.path.join(REPO, 'scripts', 'routine_steps.py'), 'push-local'],
+                                cwd=REPO).returncode)
     upload_date = date.today().strftime('%Y.%m.%d')
 
     verify_on_main()
