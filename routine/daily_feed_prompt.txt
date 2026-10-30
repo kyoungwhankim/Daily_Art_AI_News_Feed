@@ -89,6 +89,10 @@ mandatory exactly as written. They do not change any condition of the steps.
   R5. Run VERIFY DIGEST at the end of PHASE 1 and VERIFY ARTICLES before
       updating the feed data. Never skip them.
 
+  R7. Run only the commands this prompt (and the agent prompts) write out. Never guess a
+      subcommand or option a script might have; if you need something not covered, check the
+      script's real usage with `--help` (it only prints usage) or read the script first.
+
   R6. The save scripts check the length and format rules. If a save script
       prints REJECTED, rewrite that article's text and run the save script
       again. Do not edit or remove the checks.
