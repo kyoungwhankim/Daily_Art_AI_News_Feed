@@ -640,6 +640,11 @@ def resolve_generated_conflicts():
 
 def cmd_push_local(args):
     """토큰 없이 이 컴퓨터의 git 로그인으로 main에 올린다 (Antigravity 등 로컬 실행용)."""
+    if '-h' in args or '--help' in args:     # 도움말만 보려다 푸시되지 않게
+        print('usage: routine_steps.py push-local [--few-ok "<reason>"]\n'
+              'Checks the routine (digest, article-add, updates work, ★ review), commits data/ to main and '
+              'pushes with this computer\'s git login. Nothing is pushed by --help.')
+        return
     branch = git('rev-parse', '--abbrev-ref', 'HEAD').stdout.strip()
     if branch != 'main':
         sys.exit(f'Not on main (on "{branch}") — refusing to push.')
