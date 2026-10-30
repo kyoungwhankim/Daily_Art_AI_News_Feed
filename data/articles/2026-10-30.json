@@ -1,0 +1,82 @@
+[
+  {
+    "id": "games-2b05803a-2026-10",
+    "tab": "games",
+    "headline": "스튜디오 아텔리코, 게임 개발자 위한 온디바이스 AI 엔진 얼리 액세스 출시",
+    "summary": "게임 스타트업 스튜디오 아텔리코가 클라우드 없이 로컬 기기에서 AI 기반 게임플레이를 구동하는 온디바이스 AI 엔진의 얼리 액세스를 출시했어요.",
+    "body": "<p>게임 개발 스타트업 스튜디오 아텔리코(Studio Atelico)가 클라우드 서버에 의존하지 않고 플레이어의 로컬 기기에서 직접 생성형 AI 기능을 구동할 수 있는 '아텔리코 AI 엔진'의 얼리 액세스를 개시했습니다. 이 엔진은 언어 모델, 이미지 생성, 음성 시스템, 시맨틱 검색, 그리고 복합적인 NPC 행동 시스템을 플레이어 기기 내에서 처리하도록 설계되었어요. 윈도우, 맥OS, iOS, 리눅스 환경을 두루 지원하며, 유니티(Unity), 언리얼 엔진(Unreal Engine), 고도(Godot) 등 주요 게임 엔진 플러그인과 결합해 GPU 또는 CPU에서 연산을 유연하게 분산 실행할 수 있습니다.</p><p>스튜디오 아텔리코는 독자 개발한 그래픽 스케줄러(Compute Graphics Scheduler)를 통해 기존 게임 렌더링 파이프라인과 충돌하거나 프레임 드롭을 일으키지 않고 AI 연산을 병렬 처리한다고 설명했습니다. 개발자들은 고유한 성격과 기억, 관계성, 동기를 지닌 NPC를 제작할 수 있어 고정된 스크립트 대신 환경에 반응해 변화하는 게임플레이를 구현할 수 있어요. 클라우드 API 호출 비용 부담을 없애고 사용자 데이터 프라이버시를 온전히 보호할 수 있다는 점에서도 중소형 개발사와 인디 스튜디오의 높은 관심을 끌고 있습니다.</p><p>원문: <a href=\"https://www.pocketgamer.biz/studio-atelico-launches-on-device-ai-engine-for-game-developers/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.30",
+    "hue": 200,
+    "image": "https://media.pocketgamer.biz/images/141924/90130/studio-atelico_l1200.jpg",
+    "keywords": [
+      "Unreal Engine",
+      "Unity"
+    ],
+    "url": "https://www.pocketgamer.biz/studio-atelico-launches-on-device-ai-engine-for-game-developers/"
+  },
+  {
+    "id": "industry-edd6ad14-2026-10",
+    "tab": "industry",
+    "headline": "밸브, 생성형 AI 기반 클론 게임 문제에 답변… 커뮤니티와 지속적 개선이 최선의 방어책",
+    "summary": "밸브가 최근 대두된 생성형 AI 기반 클론 게임 논란에 대해, 플랫폼의 사전 규제보다는 커뮤니티 신뢰 구축과 지속적인 게임 품질 개선이 근본적인 대응책이라는 입장을 밝혔어요.",
+    "body": "<p>스팀(Steam) 운영사 밸브(Valve)가 생성형 AI를 악용한 복제 게임(클론 게임) 범람과 개발자 협박 논란에 대해 공식적인 견해를 밝혔습니다. 지난 10월 27일 부산인디커넥트페스티벌(BIC)과 공동 개최한 '스팀 인디 커넥트' 질의응답 현장에서 밸브 스팀 비즈니스 팀의 톰 지아르디노(Tom Giardino)는 개발자가 게임 제작에 어떤 도구를 쓸지 플랫폼이 일일이 규제하는 문지기(게이트키퍼) 역할을 맡지 않겠다고 선을 그었어요. 그는 콘셉트 모방이나 유행 편승은 AI 등장 전부터 존재하던 고질적 문제이며, AI 기술은 모방 속도를 더욱 빠르게 만든 것에 불과하다고 진단했습니다.</p><p>지아르디노는 복제 게임 위협에 맞서는 현실적인 방안으로 탄탄한 커뮤니티 형성과 꾸준한 게임 개선을 제시했습니다. 플레이어와 긴밀히 소통하며 신뢰를 쌓는 것이 1차 방어선이 되며, DRM 복제 방지 기술보다 '정품을 세상에서 가장 매력적인 버전으로 완성하는 데' 주력해 온 밸브의 운영 철학처럼 개발자 역시 고유한 개성과 창의적 기능을 지속해서 업데이트해야 한다고 설명했어요. 단순한 단일 메커니즘 복제는 쉬울지라도 창작자의 시선이 담긴 완성도 높은 콘텐츠는 쉽게 따라 할 수 없다는 취지입니다. 한편 갈취나 공갈 등 범죄 행위는 사법 기관의 수사가 필요한 영역인 만큼, 피해 사례가 발생하면 플랫폼 차원에서도 적극 조사와 협조를 아끼지 않겠다고 덧붙였습니다.</p><p>원문: <a href=\"https://automaton-media.com/articles/newsjp/20261029-476334/\">AUTOMATON</a></p>",
+    "source": "AUTOMATON",
+    "publishedAt": "2026.10.30",
+    "hue": 30,
+    "image": "https://automaton-media.com/wp-content/uploads/2026/10/20261029-476334-header.jpg",
+    "keywords": [
+      "AI 사용 논란",
+      "행사·컨퍼런스"
+    ],
+    "url": "https://automaton-media.com/articles/newsjp/20261029-476334/"
+  },
+  {
+    "id": "art-00928d87-2026-10",
+    "tab": "art",
+    "headline": "일레븐랩스, 복합 음향 효과 생성 모델 'SFX v3' 공개… 단일 프롬프트 다중 사운드 지원",
+    "summary": "일레븐랩스가 단일 프롬프트에서 복합적인 사운드 트랙을 정교하게 생성하는 신규 음향 모델 'SFX v3'를 정식 출시했어요.",
+    "body": "<p>음성 및 오디오 인공지능 전문 기업 일레븐랩스(ElevenLabs)가 복합적인 음향 효과 생성에 특화된 차세대 AI 모델 'SFX v3'를 공식 출시했습니다. 기존 SFX v2 모델 대비 다중 명령 처리 능력이 대폭 향상되어, 단 하나의 프롬프트 안에서도 군중의 환호성, 공이 바닥에 튕기는 소리, 곧이어 이어지는 야유처럼 시간 순서나 공간감이 다른 여러 소리를 누락 없이 일관되게 생성할 수 있어요. 또한 징(gong)이나 풍경 종소리, 호루라기처럼 고주파나 잔향이 풍부한 소리에서 흔히 발생하던 음향 아티팩트와 찢어지는 왜곡 현상을 크게 줄여 한층 자연스러운 음질을 구현했습니다.</p><p>이번 모델은 단순 환경 효과음뿐만 아니라 간단한 보컬 프레이즈나 배경 음악 멜로디가 결합한 복합 오디오 생성 성능도 함께 개선되어, 영상 제작자와 게임 개발자가 전체 장면의 오디오 분위기를 직관적으로 스케치하기에 유리해졌습니다. SFX v3는 일레븐랩스의 웹 창작 플랫폼인 일레븐크리에이티브(ElevenCreative)의 사운드 이펙트 탭, 플로우(Flows), 스튜디오, 뮤직 에디터 및 모바일 앱에 즉시 적용되었으며, 개발자들을 위한 일레븐API(ElevenAPI)를 통해서도 상용 서비스와 게임 엔진 파이프라인 연동을 전면 지원합니다.</p><p>원문: <a href=\"https://elevenlabs.io/blog/sound-effects-v3\">ElevenLabs Blog</a></p>",
+    "source": "ElevenLabs Blog",
+    "publishedAt": "2026.10.30",
+    "hue": 290,
+    "image": "https://eleven-public-cdn.elevenlabs.io/payloadcms/4i9xsghce45-SFX-v3_-Thumbnail--1-.webp",
+    "keywords": [
+      "음악·사운드",
+      "ElevenLabs"
+    ],
+    "url": "https://elevenlabs.io/blog/sound-effects-v3"
+  },
+  {
+    "id": "art-1d6ed6bf-2026-10",
+    "tab": "art",
+    "headline": "맥슨, 시네마 4D 신규 AI 기능 티저 공개… 3D 아티스트 커뮤니티 반발과 기대 교차",
+    "summary": "맥슨이 시네마 4D용 신규 AI 기능 티저를 공개하자 창작의 본질 훼손을 우려하는 3D 아티스트들의 거센 반발과 지루한 작업 자동화에 대한 기대가 엇갈리고 있어요.",
+    "body": "<p>3D 모션 그래픽 및 시각 효과 소프트웨어 선도 기업 맥슨(Maxon)이 공식 X(구 트위터) 계정을 통해 시네마 4D(Cinema 4D)에 도입될 새로운 인공지능 기능 티저 영상을 공개했습니다. 구체적인 세부 사양이나 명칭은 베일에 싸여 있지만, 창작 소프트웨어에 또다시 생성형 AI가 침투한다는 소식이 전해지자 3D 아티스트 커뮤니티에서는 즉각적인 피로감과 반발이 터져 나왔어요. 많은 전문 창작자는 오랜 기간 비용을 지불해 온 기존 고객들의 목소리를 외면한 채, 검증되지 않은 AI 기술 유행에만 매몰되어 작업 생태계를 해치고 있다는 날 선 비판을 쏟아냈습니다.</p><p>맥슨은 앞서 지난 3월 텐센트 클라우드와 파트너십을 맺고 텍스트 및 이미지 프롬프트로 기본 3D 메시와 UV를 생성하는 'HY 3D' 엔진 통합 계획을 발표한 바 있어, 이번 티저 역시 3D 모델 자동 생성 도구의 등장을 암시한다는 해석이 유력합니다. 일각에서는 복잡하고 손이 많이 가는 UV 언래핑(UV Unwrapping)이나 씬 최적화, 머티리얼 배리에이션 설정 등 지루한 반복 작업을 덜어주는 보조 도구라면 유용할 것이라는 기대도 내놓았어요. 그러나 아티스트의 작업 통제권을 존중하는 스마트 어시스턴트와 손쉬운 자동 생성 도구 사이의 경계를 두고 시각 예술계의 논쟁은 갈수록 격화되고 있습니다.</p><p>원문: <a href=\"https://www.creativebloq.com/news/maxon-teases-another-ai-tool-and-artists-arent-happy-despite-not-knowing-what-it-does-yet\">Creative Bloq</a></p>",
+    "source": "Creative Bloq",
+    "publishedAt": "2026.10.30",
+    "hue": 290,
+    "image": "https://cdn.mos.cms.futurecdn.net/tHY72zoz94SoDPkP2RXqcK-1600-80.jpg",
+    "keywords": [
+      "3D"
+    ],
+    "url": "https://www.creativebloq.com/news/maxon-teases-another-ai-tool-and-artists-arent-happy-despite-not-knowing-what-it-does-yet"
+  },
+  {
+    "id": "art-42ea37ac-2026-10",
+    "tab": "art",
+    "headline": "뷰 콘퍼런스 현장의 괴리… 테크 기업의 AI 세일즈와 애니메이션 감독들의 명확한 선긋기",
+    "summary": "이탈리아 뷰 콘퍼런스에서 테크 기업들의 일방적인 생성형 AI 판촉 공세와 주요 애니메이션 감독들의 명확한 미사용 선언이 극명한 대조를 이뤘어요.",
+    "body": "<p>이탈리아 토리노에서 개최된 세계적인 애니메이션 및 VFX 시각효과 축제 '뷰 콘퍼런스(View Conference)' 현장에서 테크 기업들의 과도한 생성형 AI 판촉 공세와 일선 현장 창작자들 사이의 깊은 괴리가 드러났습니다. 엔비디아(NVIDIA)와 런웨이(Runway) 등 인공지능 기술 기업 대표진은 '모든 픽셀이 생성될 것'이라는 대담을 최고 화제로 내세우며, 공식적으로 인정하지 않을 뿐 업계의 거의 모든 제작자가 이미 생성형 AI를 은밀히 사용 중이라는 주장을 거듭 펼쳤어요. 특히 엔비디아 관계자는 법무팀 규제로 말을 아낄 뿐 AI를 쓰지 않는 사람을 본 적이 없다고 단언했습니다.</p><p>그러나 바로 전날 열린 주요 감독 패널의 증언은 기술 기업들의 주장과 정면으로 배치되었습니다. 픽사의 신작 '토이 스토리 5'를 연출하는 매케나 해리스 공동 감독과 '포가튼 아일랜드'의 자뉴엘 메르카도 감독은 작품 제작에 생성형 AI를 전혀 사용하지 않았다고 단호하게 선을 그었어요. 사진기가 발명된 후에도 회화가 독자적인 예술로 남았듯 창작자에게는 도구를 선택하거나 거부할 권리가 있음에도 불구하고, 마치 모든 창작자가 AI를 필수적으로 도입해야만 하는 것처럼 기정사실로 몰아가는 세일즈 방식은 현업 아티스트들에게 심각한 피로감과 반감을 사고 있습니다.</p><p>원문: <a href=\"https://www.cartoonbrew.com/events/view-conference-ai-sales-pitches-268698.html\">Cartoon Brew</a></p>",
+    "source": "Cartoon Brew",
+    "publishedAt": "2026.10.30",
+    "hue": 290,
+    "image": "https://www.cartoonbrew.com/wp-content/uploads/2026/10/View-Conference.jpg",
+    "keywords": [
+      "애니메이션",
+      "NVIDIA",
+      "Runway"
+    ],
+    "url": "https://www.cartoonbrew.com/events/view-conference-ai-sales-pitches-268698.html"
+  }
+]

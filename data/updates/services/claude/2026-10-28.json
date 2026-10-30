@@ -1,0 +1,12 @@
+[
+  {
+    "id": "claude-2026-10-28-1",
+    "service": "claude",
+    "date": "2026.10.28",
+    "kind": "API",
+    "title": "Messages 및 Token Counting API 최대 요청 크기 128MB로 상향",
+    "summary": "클로드 퍼스트파티 API에서 Messages API와 Token Counting API의 단일 요청 최대 크기가 기존 32MB에서 128MB로 4배 확대되었어요.",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2026",
+    "source": "dev"
+  }
+]

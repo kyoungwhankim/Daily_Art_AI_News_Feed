@@ -1,16 +1,16 @@
 {
   "categories": {
     "image": {
-      "count": 482,
-      "latest": "2026.10.28",
+      "count": 483,
+      "latest": "2026.10.29",
       "file": "updates/feed/image.json",
-      "rev": "a711692886"
+      "rev": "f67bde7972"
     },
     "video": {
-      "count": 975,
-      "latest": "2026.10.28",
+      "count": 976,
+      "latest": "2026.10.29",
       "file": "updates/feed/video.json",
-      "rev": "bac40e25a6"
+      "rev": "d919dad31a"
     },
     "3d": {
       "count": 186,
@@ -19,16 +19,16 @@
       "rev": "350e29862a"
     },
     "game-assets": {
-      "count": 574,
-      "latest": "2026.10.27",
+      "count": 575,
+      "latest": "2026.10.29",
       "file": "updates/feed/game-assets.json",
-      "rev": "2884dec005"
+      "rev": "1f06307909"
     },
     "motion": {
-      "count": 166,
-      "latest": "2026.10.28",
+      "count": 167,
+      "latest": "2026.10.29",
       "file": "updates/feed/motion.json",
-      "rev": "f8bac4298e"
+      "rev": "f4167f82bd"
     },
     "audio": {
       "count": 360,
@@ -37,10 +37,10 @@
       "rev": "85f6a51b62"
     },
     "tools": {
-      "count": 1029,
-      "latest": "2026.10.28",
+      "count": 1031,
+      "latest": "2026.10.29",
       "file": "updates/feed/tools.json",
-      "rev": "5f18320484"
+      "rev": "cd3bc36d8d"
     }
   },
   "services": {
@@ -90,9 +90,9 @@
       "latest": "2026.10.08"
     },
     "magnific": {
-      "count": 67,
+      "count": 68,
       "first": "2024.09.16",
-      "latest": "2026.10.22"
+      "latest": "2026.10.29"
     },
     "gigapixel": {
       "count": 80,
@@ -150,9 +150,9 @@
       "latest": "2026.10.13"
     },
     "pika": {
-      "count": 12,
+      "count": 13,
       "first": "2026.04.02",
-      "latest": "2026.10.16"
+      "latest": "2026.10.29"
     },
     "hailuo": {
       "count": 18,
@@ -220,9 +220,9 @@
       "latest": "2026.10.27"
     },
     "roblox-cube": {
-      "count": 41,
+      "count": 42,
       "first": "2023.03.20",
-      "latest": "2026.10.22"
+      "latest": "2026.10.29"
     },
     "rokoko": {
       "count": 39,
@@ -230,9 +230,9 @@
       "latest": "2026.10.15"
     },
     "iclone": {
-      "count": 90,
+      "count": 91,
       "first": "2005.12.08",
-      "latest": "2026.10.08"
+      "latest": "2026.10.29"
     },
     "flow-studio": {
       "count": 37,
@@ -310,9 +310,9 @@
       "latest": "2026.07.30"
     },
     "claude": {
-      "count": 235,
+      "count": 237,
       "first": "2023.03.14",
-      "latest": "2026.10.23"
+      "latest": "2026.10.29"
     }
   }
 }

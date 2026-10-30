@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-10-29-1",
+    "service": "claude",
+    "date": "2026.10.29",
+    "kind": "API",
+    "title": "사용량 및 비용 분석 API(Usage and Cost Analytics API) 베타 출시",
+    "summary": "클로드 콘솔 및 엔터프라이즈 조직의 토큰 사용량과 비용을 모델, 워크스페이스, API 키, 사용자별로 상세 조회할 수 있는 전용 분석 API가 베타 공개되었어요.",
+    "details": [
+      "/v1/organizations/analytics/usage 및 cost 엔드포인트 제공",
+      "모델, 워크스페이스, API 키, 서비스 계정 단위 필터링 및 그룹화 지원",
+      "기존 Usage and Cost API 및 레거시 엔터프라이즈 리포트 엔드포인트 대체"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-29-2026",
+    "source": "dev"
+  }
+]

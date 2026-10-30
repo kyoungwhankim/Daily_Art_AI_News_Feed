@@ -1,5 +1,20 @@
 [
   {
+    "id": "magnific-2026-10-29-1",
+    "service": "magnific",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Seedream 5.0 Pro에 thinking_level 파라미터 추가",
+    "summary": "매그니픽 API의 이미지 생성 모델 Seedream 5.0 Pro에 프롬프트 정제 수준을 고속(fast)과 정밀(high) 중에서 선택할 수 있는 thinking_level 옵션이 도입되었어요.",
+    "details": [
+      "high는 프롬프트를 사전에 정제하여 복잡한 구도를 더 정밀하게 구현(기본값)",
+      "fast는 정제 단계를 건너뛰고 이미지를 훨씬 빠르게 생성",
+      "구형 Seedance Pro 1.0(480p·720p·1080p) 영상 생성 엔드포인트 지원 종료"
+    ],
+    "url": "https://docs.magnific.com/changelog#october-29-2026",
+    "source": "dev"
+  },
+  {
     "id": "krea-2026-10-28-1",
     "service": "krea",
     "date": "2026.10.28",

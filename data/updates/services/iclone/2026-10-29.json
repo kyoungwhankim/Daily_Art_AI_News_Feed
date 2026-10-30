@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iclone-2026-10-29-1",
+    "service": "iclone",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Character Creator 5.2 대규모 업데이트… AI 기반 3D 생성 및 래핑 지원",
+    "summary": "Character Creator 5.2 업데이트를 통해 Tripo 및 Hunyuan 기반 AI 3D 모델 생성, 모든 휴머노이드를 CC 토폴로지로 변환하는 CC 캐릭터 랩(Wrap), 그리고 AI 생성 에셋을 리깅 및 레이어링된 의상으로 변환하는 웨어러블 의상 디자인 시스템을 지원해요.",
+    "details": [
+      "Tripo 및 Hunyuan AI 모델 기반 3D 캐릭터·의상·헤어스타일·소품 생성",
+      "휴머노이드 모델을 네이티브 CC 토폴로지로 변환하는 CC Character Wrap",
+      "AI 에셋을 리깅 및 레이어링된 의상으로 변환하는 웨어러블 의상 디자인 시스템",
+      "의상 리깅을 위한 자동 스킨 웨이트 전송(Auto Skin Weight Transfer) 지원"
+    ],
+    "url": "https://magazine.reallusion.com/2026/10/29/character-creator-5-2-grand-update-from-ai-generated-meshes-to-living-3d-characters/",
+    "source": "notice"
+  }
+]

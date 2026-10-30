@@ -1,5 +1,21 @@
 [
   {
+    "id": "roblox-cube-2026-10-29-1",
+    "service": "roblox-cube",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Studio 베타: 텍스트 프롬프트 기반 3D 아바타 생성(Prompt-to-Avatar) 출시",
+    "summary": "텍스트 프롬프트를 입력해 게임에 즉시 사용할 수 있는 로블록스 3D 아바타를 생성하는 Prompt-to-Avatar 기능을 Studio 베타로 출시했어요. Studio의 Avatar Setup, Assistant, Studio MCP에서 지원돼요.",
+    "details": [
+      "텍스트 프롬프트 입력 및 2D 콘셉트 정제 후 3D 아바타 모델 생성",
+      "자체 의상 포함 아바타 또는 기본 레이어 착용 아바타 생성 선택 지원",
+      "정적 헤드(Static Head) 및 표정 표현이 가능한 다이내믹 헤드(Dynamic Head) 선택 지원",
+      "File > Beta Features에서 활성화 후 Avatar Setup의 Build Avatar에서 이용 가능"
+    ],
+    "url": "https://devforum.roblox.com/t/generate-game-characters-with-prompt-to-avatar/4964945",
+    "source": "notice"
+  },
+  {
     "id": "ludo.ai-2026-10-27-1",
     "service": "ludo.ai",
     "date": "2026.10.27",
