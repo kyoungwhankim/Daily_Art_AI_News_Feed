@@ -59,27 +59,13 @@ Claude 루틴과 같은 구조입니다. Automation에는 짧은 실행 프롬�
 
 ## 3. Prompt
 
+> ⚠️ **반드시 줄바꿈 없는 한 줄로 붙여 넣으세요.** Windows의 Antigravity Automation은 Prompt를 에이전트에 넘길 때 첫 줄바꿈 이후를 잘라 버립니다. 여러 줄로 쓰면 첫 문장만 전달되어 Step 1(저장소 이동·최신화)이 빠지고, 에이전트가 엉뚱한 폴더나 옛 상태의 저장소로 실행됩니다 (10-28, 10-30에 실제로 발생). 메모장에 먼저 붙여서 한 줄인지 확인한 뒤 옮기면 안전합니다. 명령은 `|`나 `;`로 잇지 않고 (1)~(7) 번호로 나눴습니다 — PowerShell에서 `|`는 파이프로 오해될 수 있습니다.
+
 ```text
-You run the AI Art Daily daily routine (Korean AI news digest, GitHub repository kyoungwhankim/Daily_Art_AI_News_Feed). The full instructions live in the repository. This run is unattended: never stop to ask anything.
-
-Step 1 — In the PowerShell terminal, go to the repository and reset it to the latest main (one command per line):
-
-Set-Location $HOME\.gemini\antigravity\scratch\Daily_Art_AI_News_Feed
-git rebase --abort
-git fetch origin main
-git checkout -f main
-git reset --hard origin/main
-git log --oneline -1
-git log --oneline -1 origin/main
-
-The two log lines must show the same commit. "git rebase --abort" may print an error when no rebase is in progress — that is fine. If the two lines differ, stop and report.
-
-If the folder does not exist, stop and report that the repository is missing.
-
-Step 2 — Read routine/antigravity_prompt.txt in full and follow it exactly, from SETUP to FINISH. It tells you how to run the main instructions (routine/daily_feed_prompt.txt) on this Windows computer.
-
-Step 3 — If your context is ever summarized, re-read routine/antigravity_prompt.txt and continue from the step you were on (the work files show your progress). Never start over.
+You run the AI Art Daily daily routine (Korean AI news digest, GitHub repository kyoungwhankim/Daily_Art_AI_News_Feed); this run is unattended, so never stop to ask anything. STEP 1: in PowerShell run these commands one at a time: (1) Set-Location C:\Users\<사용자>\.gemini\antigravity\scratch\Daily_Art_AI_News_Feed (2) git rebase --abort (an error here is fine) (3) git fetch origin main (4) git checkout -f main (5) git reset --hard origin/main (6) git log --oneline -1 (7) git log --oneline -1 origin/main. Lines (6) and (7) must show the same commit, otherwise stop and report. Use ONLY this folder: never search for or use another copy of the repository on this computer. STEP 2: read routine/antigravity_prompt.txt in that folder in full and follow it exactly from SETUP to FINISH. STEP 3: if your context is ever summarized, re-read routine/antigravity_prompt.txt and continue from the step you were on; never start over.
 ```
+
+`<사용자>`는 Windows 사용자 폴더 이름으로 바꿉니다 (PowerShell에서 `$HOME`이 가리키는 폴더). 바꾼 뒤 Run Now로 돌려, 맨 처음 실행되는 명령이 이 `Set-Location`이고 환경 점검의 `repo :` 줄이 scratch 경로인지 확인하세요.
 
 ## 4. 처음 돌릴 때
 
