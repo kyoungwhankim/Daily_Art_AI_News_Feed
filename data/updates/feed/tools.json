@@ -1,5 +1,94 @@
 [
   {
+    "id": "unity-ai-2026-10-30-1",
+    "service": "unity-ai",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Industry AI Workflows 실험 버전 공개: 3D 파이프라인 에이전트 연동",
+    "summary": "Unity Industry에서 AI 코딩 에이전트를 Asset Manager 및 Pipeline Automation에 연결해 CAD/3D 데이터 최적화 파이프라인을 자동 구축하는 AI 워크플로를 공개했어요.",
+    "details": [
+      "Claude Code, Cursor, GitHub Copilot 등 기존 AI 에이전트와 연동 지원",
+      "프롬프트 설명만으로 STEP 파일 가져오기, 최적화, QA 렌더링, 버전 관리 파이프라인 자동화",
+      "별도 추가 비용 없이 기존 Asset Manager 및 Pipeline Automation 라이선스로 사용 가능"
+    ],
+    "url": "https://unity.com/blog/unity-industry-product-releases-2026",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-10-30-2",
+    "service": "figma-ai",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Figma Weave 맞춤 도구의 조직 내 내부 배포 지원",
+    "summary": "Organization 및 Enterprise 플랜에서 조직 전용으로 제작한 Weave AI 도구를 팀 내부 도구 탭에 비공개 배포할 수 있게 되었어요.",
+    "details": [
+      "조직 내 자체 제작 Weave 도구를 사내 사용자에게 안전하게 배포",
+      "배포된 도구는 피그마 기본 및 커뮤니티 도구와 함께 Tools 탭에 표시",
+      "Organization 및 Enterprise 요금제 대상 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=internal-publishing-weave-tools",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-10-30-1",
+    "service": "figma-ai",
+    "date": "2026.10.30",
+    "kind": "연동",
+    "title": "Figma 에이전트에 Google Drive 커넥터 연동 지원",
+    "summary": "모든 플랜에서 Figma 에이전트 및 Make에 Google Drive를 연결해 문서 요약, 실데이터 참조, 에셋 가져오기를 바로 활용할 수 있어요.",
+    "details": [
+      "무료 Starter를 포함한 모든 플랜에서 Google Drive 커넥터 사용 가능",
+      "프롬프트 입력창의 플러스 메뉴에서 커넥터를 추가해 에이전트와 협업",
+      "Figma 캔버스 내에서 기존 드라이브 파일 컨텍스트 참조 및 신규 파일 생성 지원"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-10-30-1",
+    "service": "claude",
+    "date": "2026.10.30",
+    "kind": "종료",
+    "title": "Claude Opus 4.8 패스트 모드 지원 중단 예고",
+    "summary": "Claude Opus 4.8 모델의 고속 생성(fast mode) 지원이 중단될 예정(2026년 11월 30일 종료)이며, 최신 Claude Opus 5.5로의 전환이 권장돼요.",
+    "details": [
+      "2026년 11월 30일 이후 claude-opus-4-8 모델에 speed: 'fast' 요청 시 오류 반환 예정",
+      "패스트 모드를 계속 이용하려면 Claude Opus 5.5 모델로 마이그레이션 필요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-30-2026",
+    "source": "dev"
+  },
+  {
+    "id": "blender-2026-10-30-1",
+    "service": "blender",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Blender 5.3에 3D 가우시안 스플래팅(3DGS) 네이티브 지원 도입",
+    "summary": "Blender 5.3에서 3D 가우시안 스플랫을 네이티브로 가져오고, 지오메트리 노드로 편집하며 렌더링할 수 있는 초기 지원이 추가되었어요.",
+    "details": [
+      ".PLY, .SPZ 형식 및 OpenUSD를 통한 3DGS 씬 임포트 지원",
+      "포인트 클라우드 기반 'Pointcloud Type' 지오메트리 노드로 위치, 크기, 회전, 광도 제어",
+      "방향 의존적 조명(구면 조화 함수) 및 투명도, 세부 디테일을 포함한 씬 렌더링 지원"
+    ],
+    "url": "https://code.blender.org/2026/10/splatting-the-gaussians-into-blender/",
+    "source": "dev"
+  },
+  {
+    "id": "fal.ai-2026-10-29-1",
+    "service": "fal.ai",
+    "date": "2026.10.29",
+    "kind": "API",
+    "title": "모델 대체 실행 체인(Fallback Chains) API 지원",
+    "summary": "단일 API 요청에 기본 모델과 최대 2개의 대체(폴백) 모델을 지정해, 기본 모델 실패 시 다음 모델이 자동 실행되도록 지원해요.",
+    "details": [
+      "POST https://fal.run/execute 엔드포인트에 1차 모델 및 최대 2개 폴백 모델 연계 구성 가능",
+      "모델별 독립적인 입력값, 시작 타임아웃, 전환 에러 조건 설정 지원",
+      "첫 번째 성공 결과와 각 시도 기록을 응답으로 반환"
+    ],
+    "url": "https://fal.ai/docs/changelog#october-29-2026",
+    "source": "dev"
+  },
+  {
     "id": "claude-2026-10-29-1",
     "service": "claude",
     "date": "2026.10.29",
@@ -38,6 +127,20 @@
     "summary": "클로드 퍼스트파티 API에서 Messages API와 Token Counting API의 단일 요청 최대 크기가 기존 32MB에서 128MB로 4배 확대되었어요.",
     "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2026",
     "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-10-27-1",
+    "service": "figma-ai",
+    "date": "2026.10.27",
+    "kind": "기능",
+    "title": "생성형 플러그인 및 셰이더 버전 기록 및 복원 지원",
+    "summary": "생성형 플러그인과 셰이더를 편집할 때 자동으로 새 버전이 생성되어 이전 버전을 탐색하고 손쉽게 복원할 수 있게 되었어요.",
+    "details": [
+      "도구 편집 시마다 에이전트가 자동 변경 로그 설명을 작성해 버전 기록 보존",
+      "현재 게시된 버전 확인 및 이전 시점 상태로 안전하게 복원 지원"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=view-and-restore-previous-versions-of-your-generative-plugins-and-shaders",
+    "source": "notice"
   },
   {
     "id": "figma-ai-2026-10-26-1",

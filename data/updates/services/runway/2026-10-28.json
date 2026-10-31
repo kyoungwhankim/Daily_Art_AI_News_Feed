@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-10-28-1",
+    "service": "runway",
+    "date": "2026.10.28",
+    "kind": "API",
+    "title": "Runway Dev에 Ideogram Vector 모델 및 SVG 변환 API 도입",
+    "summary": "Runway Dev API에 Ideogram Vector 모델이 추가되어 텍스트 프롬프트 기반 확장 가능한 SVG 생성 및 이미지의 벡터 변환을 지원해요.",
+    "details": [
+      "최대 9,500자 프롬프트 및 5개 참조 이미지를 지원하는 ideogram_vector 엔드포인트 제공",
+      "low, medium, high 화질 옵션 지원 (SVG당 14/17/22 크레딧)",
+      "POST /v1/image_to_vector 엔드포인트로 일반 이미지를 벡터 SVG로 변환 지원 (11 크레딧)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  }
+]

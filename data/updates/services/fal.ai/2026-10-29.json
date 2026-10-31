@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fal.ai-2026-10-29-1",
+    "service": "fal.ai",
+    "date": "2026.10.29",
+    "kind": "API",
+    "title": "모델 대체 실행 체인(Fallback Chains) API 지원",
+    "summary": "단일 API 요청에 기본 모델과 최대 2개의 대체(폴백) 모델을 지정해, 기본 모델 실패 시 다음 모델이 자동 실행되도록 지원해요.",
+    "details": [
+      "POST https://fal.run/execute 엔드포인트에 1차 모델 및 최대 2개 폴백 모델 연계 구성 가능",
+      "모델별 독립적인 입력값, 시작 타임아웃, 전환 에러 조건 설정 지원",
+      "첫 번째 성공 결과와 각 시도 기록을 응답으로 반환"
+    ],
+    "url": "https://fal.ai/docs/changelog#october-29-2026",
+    "source": "dev"
+  }
+]

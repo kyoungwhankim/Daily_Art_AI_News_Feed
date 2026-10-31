@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-10-30-1",
+    "service": "claude",
+    "date": "2026.10.30",
+    "kind": "종료",
+    "title": "Claude Opus 4.8 패스트 모드 지원 중단 예고",
+    "summary": "Claude Opus 4.8 모델의 고속 생성(fast mode) 지원이 중단될 예정(2026년 11월 30일 종료)이며, 최신 Claude Opus 5.5로의 전환이 권장돼요.",
+    "details": [
+      "2026년 11월 30일 이후 claude-opus-4-8 모델에 speed: 'fast' 요청 시 오류 반환 예정",
+      "패스트 모드를 계속 이용하려면 Claude Opus 5.5 모델로 마이그레이션 필요"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#october-30-2026",
+    "source": "dev"
+  }
+]

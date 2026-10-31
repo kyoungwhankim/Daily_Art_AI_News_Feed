@@ -1,5 +1,20 @@
 [
   {
+    "id": "higgsfield-2026-10-30-1",
+    "service": "higgsfield",
+    "date": "2026.10.30",
+    "kind": "요금",
+    "title": "주요 이미지·영상 모델 7일 무제한 생성 프로모션 도입",
+    "summary": "Pro, Plus, Max, Ultra 구독자를 대상으로 Seedream 5.0 Pro, GPT Image 2.5, Seedance 2.5 등의 7일 무제한 생성 보너스를 제공해요.",
+    "details": [
+      "월간 및 연간 플랜 구독자에게 주요 모델 7일 무제한 생성 토글 지원",
+      "Seedream 5.0 Pro 및 GPT Image 2.5 최대 2K 해상도 무제한 생성",
+      "Max·Ultra 및 연간 구독 시 Nano Banana Pro 및 Seedance 2.5 영상 무제한 생성 포함"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-7-day-unlimited-bonus",
+    "source": "notice"
+  },
+  {
     "id": "pika-2026-10-29-1",
     "service": "pika",
     "date": "2026.10.29",
@@ -14,6 +29,21 @@
     ],
     "url": "https://pika.art/blog/pika-h3-flex",
     "source": "notice"
+  },
+  {
+    "id": "runway-2026-10-28-1",
+    "service": "runway",
+    "date": "2026.10.28",
+    "kind": "API",
+    "title": "Runway Dev에 Ideogram Vector 모델 및 SVG 변환 API 도입",
+    "summary": "Runway Dev API에 Ideogram Vector 모델이 추가되어 텍스트 프롬프트 기반 확장 가능한 SVG 생성 및 이미지의 벡터 변환을 지원해요.",
+    "details": [
+      "최대 9,500자 프롬프트 및 5개 참조 이미지를 지원하는 ideogram_vector 엔드포인트 제공",
+      "low, medium, high 화질 옵션 지원 (SVG당 14/17/22 크레딧)",
+      "POST /v1/image_to_vector 엔드포인트로 일반 이미지를 벡터 SVG로 변환 지원 (11 크레딧)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
   },
   {
     "id": "heygen-2026-10-28-1",

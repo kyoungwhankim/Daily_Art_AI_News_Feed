@@ -1,0 +1,17 @@
+[
+  {
+    "id": "roblox-cube-2026-10-30-1",
+    "service": "roblox-cube",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Studio 베타: 텍스트·이미지 기반 3D 씬 생성(Scene Generation) 출시",
+    "summary": "Roblox Studio에 텍스트 프롬프트나 이미지로부터 편집 가능한 3D 모델, 텍스처, 지형을 한 번에 생성하는 '씬 생성' 베타 도구가 출시되었어요.",
+    "details": [
+      "Roblox Assistant의 /generate_scene 명령어 또는 뷰포트 우클릭(Generate > Scene)으로 실행",
+      "소스 이미지 및 텍스트 프롬프트로부터 개별 편집 가능한 모델·텍스처·지형 자동 구성",
+      "생성 크기, 위치 및 절차적 모델/메시 사용 여부 세부 지정 가능 (생성 소요 2~3분)"
+    ],
+    "url": "https://devforum.roblox.com/t/introducing-scene-generation-prototype-scenes-faster/4966611",
+    "source": "notice"
+  }
+]

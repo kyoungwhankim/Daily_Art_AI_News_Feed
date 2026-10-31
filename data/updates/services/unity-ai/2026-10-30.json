@@ -1,0 +1,17 @@
+[
+  {
+    "id": "unity-ai-2026-10-30-1",
+    "service": "unity-ai",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Industry AI Workflows 실험 버전 공개: 3D 파이프라인 에이전트 연동",
+    "summary": "Unity Industry에서 AI 코딩 에이전트를 Asset Manager 및 Pipeline Automation에 연결해 CAD/3D 데이터 최적화 파이프라인을 자동 구축하는 AI 워크플로를 공개했어요.",
+    "details": [
+      "Claude Code, Cursor, GitHub Copilot 등 기존 AI 에이전트와 연동 지원",
+      "프롬프트 설명만으로 STEP 파일 가져오기, 최적화, QA 렌더링, 버전 관리 파이프라인 자동화",
+      "별도 추가 비용 없이 기존 Asset Manager 및 Pipeline Automation 라이선스로 사용 가능"
+    ],
+    "url": "https://unity.com/blog/unity-industry-product-releases-2026",
+    "source": "notice"
+  }
+]

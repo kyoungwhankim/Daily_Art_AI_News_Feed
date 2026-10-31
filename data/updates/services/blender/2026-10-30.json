@@ -1,0 +1,17 @@
+[
+  {
+    "id": "blender-2026-10-30-1",
+    "service": "blender",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "Blender 5.3에 3D 가우시안 스플래팅(3DGS) 네이티브 지원 도입",
+    "summary": "Blender 5.3에서 3D 가우시안 스플랫을 네이티브로 가져오고, 지오메트리 노드로 편집하며 렌더링할 수 있는 초기 지원이 추가되었어요.",
+    "details": [
+      ".PLY, .SPZ 형식 및 OpenUSD를 통한 3DGS 씬 임포트 지원",
+      "포인트 클라우드 기반 'Pointcloud Type' 지오메트리 노드로 위치, 크기, 회전, 광도 제어",
+      "방향 의존적 조명(구면 조화 함수) 및 투명도, 세부 디테일을 포함한 씬 렌더링 지원"
+    ],
+    "url": "https://code.blender.org/2026/10/splatting-the-gaussians-into-blender/",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "higgsfield-2026-10-30-1",
+    "service": "higgsfield",
+    "date": "2026.10.30",
+    "kind": "요금",
+    "title": "주요 이미지·영상 모델 7일 무제한 생성 프로모션 도입",
+    "summary": "Pro, Plus, Max, Ultra 구독자를 대상으로 Seedream 5.0 Pro, GPT Image 2.5, Seedance 2.5 등의 7일 무제한 생성 보너스를 제공해요.",
+    "details": [
+      "월간 및 연간 플랜 구독자에게 주요 모델 7일 무제한 생성 토글 지원",
+      "Seedream 5.0 Pro 및 GPT Image 2.5 최대 2K 해상도 무제한 생성",
+      "Max·Ultra 및 연간 구독 시 Nano Banana Pro 및 Seedance 2.5 영상 무제한 생성 포함"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-7-day-unlimited-bonus",
+    "source": "notice"
+  }
+]

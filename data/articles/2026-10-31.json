@@ -1,0 +1,153 @@
+[
+  {
+    "id": "games-4699f8a9-2026-10",
+    "tab": "games",
+    "headline": "앤트로픽, 클로드 코드에 기존 비디오 게임 복제 방지 지침 적용",
+    "summary": "앤트로픽이 클로드 코드에 타사의 기존 비디오 게임을 복제하지 못하도록 제한하는 시스템 프롬프트 지침을 추가했어요.",
+    "body": "<p>앤트로픽이 AI 코딩 도구 '클로드 코드(Claude Code)'의 시스템 프롬프트에 기존 비디오 게임을 복제하는 개발 작업을 제한하는 내부 지침을 새로 추가했어요. 사용자 커뮤니티에서 발견된 해당 규칙은 '독창적인 게임이나 특정 장르의 게임, 사용자의 자체 기획 및 에셋을 활용한 게임은 개발하되, 이름만 바꾸거나 오리지널이라고 주장하더라도 기존에 존재하는 특정 게임을 그대로 복제해 구현하지 말라'는 내용을 담고 있어요. 앤트로픽의 기술진도 오퍼스 5.5 모델 기반 클로드 코드에 지적재산권(IP) 침해를 막기 위한 유도 프롬프트 두 문장을 추가했다고 공식 확인했어요.</p><p>최근 인디 게임 개발 생태계에서는 생성형 AI 코딩을 활용해 스팀 넥스트 페스트 등의 공개 데모나 기존 히트작을 며칠 만에 베껴 먼저 시장에 내놓는 '패스트 팔로우' 복제물이 쏟아지며 위기감이 급격히 커진 상황이에요. 실제로 일부 개발사는 AI를 통한 코드 및 시스템 무단 탈취를 우려해 예정되었던 공개 테스트를 전격 취소하기도 했어요. 앤트로픽의 이번 대응은 AI 개발 도구가 타인의 창작물을 무단 복제하는 데 악용되는 현상을 적극적으로 방지하겠다는 취지예요. 다만 프롬프트 우회 기법이 여전히 존재하고 규제가 없는 오픈소스 모델로 복제 시도가 옮겨갈 수 있어 근본적인 해결책이 될지 주목받고 있어요.</p><p>원문: <a href=\"https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games\">Game Developer</a></p>",
+    "source": "Game Developer",
+    "publishedAt": "2026.10.31",
+    "hue": 200,
+    "image": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta970312a7256ca55/6ae4e702d996de0029eee354/claudeiconfeatured.jpg?disable=upscale&width=1200&height=630&fit=crop",
+    "keywords": [
+      "Claude"
+    ],
+    "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+    "urls": [
+      {
+        "label": "관련 보도",
+        "href": "https://aftermath.site/steam-next-fest-demos-ai-vibecoded-clones-theft/"
+      }
+    ]
+  },
+  {
+    "id": "games-8f680f5b-2026-10",
+    "tab": "games",
+    "headline": "Edge0, 23개 언어 제로샷 음성 복제 지원하는 경량 모델 'Audio8-TTS-Realistic' 공개",
+    "summary": "Edge0가 6억 개 파라미터 크기로 23개 언어 음성 복제를 지원하는 오픈소스 TTS 모델을 출시했어요.",
+    "body": "<p>AI 음성 기술 스타트업 Edge0가 단 하나의 참조 음성 클립과 텍스트만으로 고품질 음성을 복제하는 경량 텍스트 음성 변환(TTS) 모델 'Audio8-TTS-Realistic'을 오픈소스로 공개했어요. 6억 100만(0.6B) 파라미터 크기로 제작된 이번 모델은 아파치 2.0 라이선스로 배포되어 상업적 활용과 미세조정이 자유로워요. 이전 버전에 비해 12개 언어가 늘어나 한국어, 영어, 일본어, 중국어, 아랍어, 포르투갈어 등 총 23개 언어의 제로샷 음성 복제를 공식 지원해요.</p><p>Audio8-TTS-Realistic은 Qwen2.5 0.5B 기반의 느린 신경망 브랜치와 병렬 오디오 코드북 예측을 수행하는 빠른 브랜치를 결합한 이중 자기회귀(DualAR) 구조를 채택했어요. 개발진은 단순한 단어 오류율(WER) 개선에 그치지 않고 인간 음성의 자연스러운 호흡과 리듬, 쉼표 타이밍을 모사하기 위해 인간 녹음 데이터와 비교하는 리얼리즘 판별자 기반 강화학습(GRPO)을 적용했다고 밝혔어요. 다국어 벤치마크 평가에서 1.7B 크기의 Qwen3-TTS보다 낮은 오류율을 기록했으며, 애플 M2 CPU에서도 1.2GB 메모리로 구동 가능해 인디 게임 개발자나 실시간 대화형 NPC 구현 환경에서 효율적인 오디오 솔루션으로 주목받고 있어요.</p><p>원문: <a href=\"https://www.marktechpost.com/2026/10/29/edge0-audio8-tts-realistic-0-6b-voice-cloning/\">MarkTechPost</a></p>",
+    "source": "MarkTechPost",
+    "publishedAt": "2026.10.31",
+    "hue": 200,
+    "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-1209-4-scaled.png",
+    "keywords": [],
+    "url": "https://www.marktechpost.com/2026/10/29/edge0-audio8-tts-realistic-0-6b-voice-cloning/",
+    "urls": [
+      {
+        "label": "허깅페이스",
+        "href": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b"
+      },
+      {
+        "label": "깃허브",
+        "href": "https://github.com/Edge0-AI/Audio8_TTS"
+      }
+    ]
+  },
+  {
+    "id": "industry-fb9294e1-2026-10",
+    "tab": "industry",
+    "headline": "로블록스 상위 100대 게임 80% 이상 개발에 AI 활용… 개발자 선호 도구 1위는 '클로드 오퍼스'",
+    "summary": "로블록스 상위 100대 게임 80% 이상이 AI를 활용했으며 웹게임 인덱스에서 개발자 선호 모델 1위는 클로드 오퍼스로 나타났어요.",
+    "body": "<p>로블록스(Roblox)의 최신 실적 발표에 따르면, 2026년 10월 플레이 시간 기준 상위 100대 게임 중 80% 이상이 개발 속도를 높이기 위해 제작 파이프라인에 AI 도구를 도입한 것으로 집계되었어요. 상위 크리에이터들의 사내 AI 도구 체류 시간은 지난 2분기 대비 3배로 증가했으며, 자체 모델 컨텍스트 프로토콜(MCP) 서버의 일일 호출량은 약 5배 급증했어요. 또한 자연어 기반 게임 제작 도구인 '빌드(Build)'를 활용한 사용자가 50만 명을 돌파하고 이를 통해 7만 개 이상의 게임이 배포되는 등 대형 플랫폼 내 AI 도입이 급속도로 가속화되고 있어요.</p><p>한편 웹게임 유통 플랫폼 플레이가마(Playgama)가 4,200개 이상의 AI 제작 게임을 분석해 발표한 'AI 게임 인덱스'에서는 개발자 선호도와 실제 플레이어 만족도 간의 흥미로운 격차가 확인되었어요. 신규 AI 제작 게임 중 54%가 앤트로픽의 '클로드 오퍼스(Claude Opus)'를 채택해 개발자 선호도 1위를 기록한 반면, 실제 유저 1인당 평균 플레이 시간은 오픈AI의 아스트라(Astra)로 제작된 게임이 4분 58초로 가장 길었어요. 아스트라 기반 게임은 1,000회 플레이당 좋아요 지표에서도 클로드 오퍼스 대비 약 67% 높은 선호도를 보여 개발 도구의 선택이 이용자 반응에 직접적인 영향을 미치고 있음을 시사해요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/more-than-80-of-robloxs-top-games-now-use-ai-while-playgama-tracks-the-tools-developers-prefer/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.10.31",
+    "hue": 30,
+    "image": "https://media.pocketgamer.biz/images/141936/90140/more-than-80-of-robloxs-top-100-games-by-hours-played-used-ai-to-speed-up-development-in-october-2026-as-more-creators-turned-to-ai-tools-to-build-and-publish-games_l1200.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "설문·통계",
+      "Claude"
+    ],
+    "url": "https://www.pocketgamer.biz/more-than-80-of-robloxs-top-games-now-use-ai-while-playgama-tracks-the-tools-developers-prefer/"
+  },
+  {
+    "id": "industry-6a1b7874-2026-10",
+    "tab": "industry",
+    "headline": "생성형 AI 배제한 인디 게임 쇼케이스 'Games Without AI' 출범… 11월 25일 글로벌 공개",
+    "summary": "생성형 AI를 쓰지 않고 인간의 손으로 제작된 인디 게임을 조명하는 'Games Without AI' 쇼케이스가 11월 25일 열려요.",
+    "body": "<p>생성형 AI를 전혀 사용하지 않고 온전히 사람의 손으로 제작된 인디 게임만을 모아 소개하는 글로벌 온라인 쇼케이스 '게임즈 위드아웃 AI(Games Without AI)'가 출범해 오는 11월 25일 공식 방송을 진행해요. 데브 랜드 마케팅이 주도하는 이번 기획은 '인간이 창작한 게임을 기념한다'는 철학 아래 기획되었으며, PC 및 콘솔 플랫폼을 겨냥한 전 세계 인디 개발사들의 작품을 대상으로 참가 신청을 받고 있어요. 참가 자격은 아트, 배경 음악, 효과음, 캐릭터 보이스 등 제작 전 과정에서 생성형 AI를 일절 배제해야 하며, 미공개 프로토타입부터 얼리 액세스 및 정식 출시작까지 모두 출품할 수 있어요.</p><p>이번 프로젝트의 심사는 자동화 시스템 대신 커뮤니티가 직접 참여하는 공개 검증 방식으로 이루어져요. 개발자가 제출한 제작 공정과 AI 미사용 선언서를 바탕으로 디스코드 등에서 상호 교차 검증을 거치며, 사후에 AI 사용 사실이 적발될 경우 즉시 쇼케이스에서 퇴출되고 향후 참여가 영구 금지돼요. 주최 측은 AI를 활용하는 다른 개발 방식을 폄하하려는 것이 아니라, 인간 고유의 미술과 음악, 연기, 게임 디자인으로 빚어낸 순수 창작물을 찾는 이용자들에게 신뢰할 수 있는 소통의 장을 마련하는 것이 목표라고 강조했어요. 11월 25일부터는 스팀 공식 이벤트 및 후속 프로모션도 순차적으로 이어질 예정이에요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/10/31/28519.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.10.31",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/201916.png",
+    "keywords": [
+      "행사·컨퍼런스",
+      "AI 미사용 선언"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/10/31/28519.html"
+  },
+  {
+    "id": "industry-bc0d3b42-2026-10",
+    "tab": "industry",
+    "headline": "골렘 조사, 스팀 신작 게임 2,803개 중 41.67%가 생성형 AI 활용 공개",
+    "summary": "독일 IT 매체 골렘의 전수 조사 결과 최근 스팀 신작의 41.67%가 생성형 AI를 사용했다고 공시한 것으로 나타났어요.",
+    "body": "<p>독일의 주요 IT 매체 골렘(Golem.de)이 2026년 7월 말부터 8월 말까지 한 달간 스팀에 등록된 신작 게임 2,803개를 전수 조사한 결과, 전체의 41.67%에 달하는 1,168개 작품이 밸브의 '생성형 AI 공개 정책'에 따라 AI 사용 사실을 공식 고지한 것으로 확인되었어요. 단순 마케팅용 배너에만 AI를 사용했다고 밝힌 17건을 제외하더라도, 실제 인게임 콘텐츠나 개발 파이프라인에 AI를 적용한 게임의 비율은 41.06%에 달해 스팀에 출시되는 신작 둘 중 하나꼴로 생성형 AI가 광범위하게 쓰이고 있는 현실이 수치로 입증되었어요.</p><p>AI 활용 분야 중에서는 2D 그래픽과 일러스트 등 시각 콘텐츠가 압도적인 비중을 차지했어요. AI 사용을 고지한 게임의 71.23%(832개)가 캐릭터 초상화, 배경 아트, 아이콘 등의 시각 에셋 제작에 AI를 활용했다고 밝혔으며, 마케팅 자료(23.72%), 배경음악(18.15%), 대사 및 텍스트(17.89%), 프로그래밍(17.64%), 다국어 번역(16.01%)이 뒤를 이었어요. 골렘 측은 밸브의 고지 의무가 최종 빌드에 포함된 생성 에셋 위주로 적용되기 때문에 실제 코딩 보조 도구 사용률은 집계치보다 훨씬 높을 것이라 분석하며, 무분별한 저품질 양산작과 정당한 생산성 도구 활용을 구별해 평가할 필요가 있다고 짚었어요.</p><p>원문: <a href=\"https://www.golem.de/news/ki-spiele-auf-steam-wie-viel-ai-slop-steckt-in-2-803-neuerscheinungen-2610-214633.html\">Golem.de</a></p>",
+    "source": "Golem.de",
+    "publishedAt": "2026.10.31",
+    "hue": 30,
+    "image": "https://www.golem.de/2610/214633-605823-605820.jpg",
+    "keywords": [
+      "설문·통계",
+      "2D·이미지"
+    ],
+    "url": "https://www.golem.de/news/ki-spiele-auf-steam-wie-viel-ai-slop-steckt-in-2-803-neuerscheinungen-2610-214633.html"
+  },
+  {
+    "id": "art-1f4de7f9-2026-10",
+    "tab": "art",
+    "headline": "원더쉐어, AI 영상 소재 분석·편집 기능 대폭 강화한 '필모라 16' 출시",
+    "summary": "원더쉐어가 AI 기반 소재 분석, 카메라 트래킹, 컬러 마스크 등을 도입한 동영상 편집 소프트웨어 '필모라 16'을 출시했어요.",
+    "body": "<p>소프트웨어 개발사 원더쉐어(Wondershare)가 대규모 기능 개편을 거친 동영상 편집 프로그램 '필모라 16(Filmora 16)'을 정식 출시했어요. 이번 버전의 핵심은 AI 기반 비디오 소재 분석 엔진의 탑재로, 영상과 이미지 데이터를 스스로 판독해 등장인물, 촬영 장소, 특정 동작, 씬 전환 등을 자동으로 인식하고 분류해 줘요. 덕분에 수많은 미디어 클립을 일일이 열어 확인하거나 파일명을 일일이 수정하지 않고도 자연어와 내용 검색을 통해 필요한 장면을 즉시 찾아 타임라인에 배치할 수 있게 되었어요.</p><p>전문적인 연출을 보조하는 작업 도구도 대폭 강화되었어요. 피사체의 움직임을 정밀하게 따라가며 구도를 유지해 주는 AI 카메라 트래킹과, 화면 전체의 톤을 해치지 않고 원하는 특정 객체나 영역만 정교하게 색을 보정하는 스마트 컬러 마스크 기능이 탑재되었어요. 여기에 모니터 화면, 웹캠, 마이크 및 시스템 사운드를 동시에 담아내는 멀티소스 녹화, 타임라인 구조를 다른 편집 툴과 연계할 수 있는 XML 임포트·익스포트 지원, 여러 출력 작업을 한 번에 처리하는 일괄 내보내기 기능까지 갖추어 1인 크리에이터부터 영상 프로덕션까지 작업 생산성을 크게 높여줄 것으로 기대돼요.</p><p>원문: <a href=\"https://cgworld.jp/flashnews/01-202610-filmora16.html\">CGWORLD.jp</a></p>",
+    "source": "CGWORLD.jp",
+    "publishedAt": "2026.10.31",
+    "hue": 290,
+    "image": "https://cgworld.jp/flashnews/assets_c/2026/10/Key%20Visiontops-thumb-800x450-90455.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://cgworld.jp/flashnews/01-202610-filmora16.html",
+    "urls": [
+      {
+        "label": "릴리스 노트",
+        "href": "https://filmora.wondershare.jp/guide/release-notes.html"
+      }
+    ]
+  },
+  {
+    "id": "art-ac8dd47a-2026-10",
+    "tab": "art",
+    "headline": "글로벌 AI 숏드라마 플랫폼 쇼비, AI 영상 창작자 공모전 'SHOWVY NEXT' 개최",
+    "summary": "글로벌 AI 숏드라마 플랫폼 쇼비가 모든 참가작의 플랫폼 유료 연재 및 수익화를 보장하는 영상 공모전을 열어요.",
+    "body": "<p>글로벌 AI 숏드라마 플랫폼 쇼비(SHOWVY)가 전 세계 AI 영상 창작자들을 대상으로 한 신규 숏폼 영상 공모전 '쇼비 넥스트(SHOWVY NEXT)'를 개최해요. 이번 행사는 생성형 AI를 활용해 제작한 숏폼 드라마를 대상으로 하며, 특정 제작 도구나 장르의 제한 없이 누구나 무료로 참가할 수 있어요. 기존 심사위원 중심의 평가 대신 실제 시청자들의 투표를 통해 최종 수상작이 결정되는 것이 특징이에요. 언어 제한 또한 없어 자유로운 다국어 보이스를 활용할 수 있으며, 글로벌 유저를 위한 자동 영어 자막도 플랫폼에서 지원해요.</p><p>특히 이번 공모전은 수상 여부와 상관없이 모든 출품작에 대해 행사 종료 후 쇼비 플랫폼 내 공식 유료 연재 전환과 수익 배분을 보장해 눈길을 끌고 있어요. 창작자는 유료 결제가 시작되는 회차를 자유롭게 설정할 수 있으며, 일반 참가자 전원에게 6개월간 기본 수익 배분율에 5%포인트 추가 혜택이 주어져요. 상위 3개 우수작에는 비디오 생성 플랫폼 힉스필드(Higgsfield)의 1년 무료 구독권(1위 울트라, 2위 플러스, 3위 스타터)과 함께 최대 100%의 파격적인 수익 정산율이 제공되어, AI 영상 창작자들의 실질적인 상업화와 지속 가능한 활동을 돕는 발판이 될 것으로 보여요.</p><p>원문: <a href=\"https://zdnet.co.kr/view/?no=20261031072415\">ZDNet Korea</a></p>",
+    "source": "ZDNet Korea",
+    "publishedAt": "2026.10.31",
+    "hue": 290,
+    "image": "https://image.zdnet.co.kr/2026/10/31/f68dc94486680667e3e16a643898bac3.png",
+    "keywords": [
+      "영상",
+      "Higgsfield"
+    ],
+    "url": "https://zdnet.co.kr/view/?no=20261031072415"
+  },
+  {
+    "id": "art-0b6b14f5-2026-10",
+    "tab": "art",
+    "headline": "TBC, 생체 신경망 원리 적용해 속도 5배 높인 비디오 생성 모델 '미스치프 1' 출시",
+    "summary": "생체 컴퓨팅 스타트업 TBC가 뇌 신경세포 신호 체계를 모사해 생성 속도를 5배 높인 AI 영상 모델 '미스치프 1'을 출시했어요.",
+    "body": "<p>샌프란시스코 기반 바이오 AI 스타트업 TBC(The Biological Computing Co.)가 살아있는 뇌 신경세포(뉴런)의 신호 전달 구조에서 얻은 통찰을 적용해 생성 속도를 비약적으로 향상시킨 이미지 투 비디오(Image-to-Video) 모델 'TBC 미스치프 1(Mischief 1)'을 공식 출시했어요. 알리바바의 오픈소스 영상 모델 'Wan 2.2' 아키텍처를 기반으로 구축된 이번 모델은 개발자 플랫폼 fal.ai 및 오픈라우터(OpenRouter)를 통해 API 형태로 제공돼요. TBC는 동일한 시각적 품질을 유지하면서도 기존 Wan 2.2 대비 약 5배 빠른 추론 속도를 달성했다고 발표했어요.</p><p>이번 모델 개발을 위해 TBC 연구진은 실험실에서 배양된 신경세포 네트워크가 자극 신호에 반응하는 최적화 패턴을 분석하고, 이를 일반 상용 AI 가속기 칩에서 구동 가능한 소프트웨어 최적화 애드온 형태로 전환해 적용했어요. 실제 생체 뉴런을 직접 하드웨어 연산에 투입하는 방식이 아니라 신경 세포망의 효율적인 정보 처리 알고리즘을 모사한 구조예요. 이용 요금은 영상 1초당 0.005달러(약 7원)로 5초 분량의 영상 클립을 단 2.5센트에 제작할 수 있어, 거대 AI 영상 모델의 높은 연산 비용 장벽을 획기적으로 낮춰줄 것으로 주목받고 있어요.</p><p>원문: <a href=\"https://thenextweb.com/news/tbc-mischief-neuron-derived-ai-video-model\">TNW</a></p>",
+    "source": "TNW",
+    "publishedAt": "2026.10.31",
+    "hue": 290,
+    "image": "https://media.thenextweb.com/2026/10/ai-orange-neon-sign-dark-circuit-wall.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://thenextweb.com/news/tbc-mischief-neuron-derived-ai-video-model",
+    "urls": [
+      {
+        "label": "보도자료",
+        "href": "https://www.prnewswire.com/news-releases/the-biological-computing-co-launches-worlds-first-publicly-available-neuron-derived-ai-video-model-302924399.html"
+      }
+    ]
+  }
+]

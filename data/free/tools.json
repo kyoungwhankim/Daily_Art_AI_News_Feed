@@ -1,5 +1,5 @@
 {
- "updated": "2026.10.25",
+ "updated": "2026.10.31",
  "tools": {
   "midjourney": {
    "status": "ok",
@@ -12,8 +12,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "gpt-image": {
    "status": "ok",
@@ -25,8 +24,7 @@
    "source_url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "nano-banana": {
    "status": "ok",
@@ -38,7 +36,7 @@
    "source_url": "https://support.google.com/gemini/answer/16275805",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "seedream": {
    "status": "ok",
@@ -51,7 +49,7 @@
    "note": "지난주 확인한 매일 120 크레딧은 이번에 재확인하지 못했어요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "krea": {
    "status": "ok",
@@ -64,7 +62,7 @@
    "note": "무료 카드에 상업 라이선스 표기가 있으나 FAQ와 불일치해요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "recraft": {
    "status": "ok",
@@ -77,7 +75,7 @@
    "source_url": "https://www.recraft.ai/pricing",
    "note": "크레딧 수치는 페이지에 명시되지 않았어요",
    "watermark": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "magnific": {
    "status": "unverified",
@@ -109,8 +107,7 @@
    "source_url": "https://intercom.help/leonardo-ai/en/articles/9044700-tokens-frequently-asked-questions",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "ideogram": {
    "status": "ok",
@@ -123,8 +120,7 @@
    "note": "이메일·비밀번호 가입 계정은 무료 크레딧 없음",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "playground": {
    "status": "ok",
@@ -136,7 +132,7 @@
    "try_url": "https://playground.com/",
    "source_url": "https://playgroundai.com/pricing",
    "watermark": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "veo": {
    "status": "ended",
@@ -148,7 +144,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "kling": {
    "status": "unverified",
@@ -166,7 +162,7 @@
    "note": "지난주 확인한 매일 120 크레딧은 이번에 재확인하지 못했어요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "grok-imagine": {
    "status": "unverified",
@@ -188,8 +184,7 @@
    "source_url": "https://higgsfield.ai/creator-hub/help-center/plans/how-do-higgsfield-plans-work",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "ltx-studio": {
    "status": "ok",
@@ -201,8 +196,7 @@
    "commercial": false,
    "try_url": "https://ltx.studio/",
    "source_url": "https://ltx.io/studio/pricing",
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "pika": {
    "status": "ended",
@@ -214,7 +208,7 @@
    "try_url": "https://pika.art/",
    "source_url": "https://pika.art/pricing",
    "card": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "hailuo": {
    "status": "ok",
@@ -227,8 +221,7 @@
    "source_url": "https://hailuoai.video/doc/payment-policy.html",
    "note": "신모델 출시 때 기간 한정 무료 크레딧 이벤트가 자주 있어요",
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "runway": {
    "status": "ok",
@@ -240,7 +233,7 @@
    "source_url": "https://runway.com/pricing",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "pixverse": {
    "status": "unverified",
@@ -262,7 +255,7 @@
    "try_url": "https://www.heygen.com/",
    "source_url": "https://www.heygen.com/pricing",
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "synthesia": {
    "status": "ok",
@@ -274,7 +267,7 @@
    "try_url": "https://www.synthesia.io/",
    "source_url": "https://www.synthesia.io/pricing",
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "topaz-video": {
    "status": "ok",
@@ -287,8 +280,7 @@
    "note": "유료 플랜은 월 $25(연간)부터",
    "card": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "vidu": {
    "status": "unverified",
@@ -305,7 +297,7 @@
    "try_url": "https://viggle.ai/",
    "source_url": "https://viggle.ai/pricing",
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "kaiber": {
    "status": "ended",
@@ -317,8 +309,7 @@
    "source_url": "https://helpcenter.kaiber.ai/articles/6291249-kaiber-plans-what-you-need-to-know",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "meshy": {
    "status": "ok",
@@ -331,7 +322,7 @@
    "source_url": "https://www.meshy.ai/pricing",
    "note": "무료 플랜은 CC BY 4.0 (상업 이용 시 출처 표기)",
    "watermark": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "tripo": {
    "status": "unverified",
@@ -349,7 +340,7 @@
    "note": "크레딧은 개당 $1.5 구매 방식이에요",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "marble": {
    "status": "ok",
@@ -362,8 +353,7 @@
    "note": "상업적 이용 권한은 Pro 플랜부터",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "csm": {
    "status": "unverified",
@@ -380,8 +370,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "spline": {
    "status": "ok",
@@ -393,7 +382,7 @@
    "try_url": "https://spline.design/",
    "source_url": "https://spline.design/pricing",
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "hunyuan3d": {
    "status": "ok",
@@ -405,8 +394,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "scenario": {
    "status": "ok",
@@ -419,8 +407,7 @@
    "source_url": "https://help.scenario.com/en/articles/pricing-plans/",
    "note": "CU는 매일 00:00 UTC에 초기화, 이월 안 됨",
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "layer": {
    "status": "unverified",
@@ -442,7 +429,7 @@
    "source_url": "https://www.rokoko.com/products/vision",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "iclone": {
    "status": "ok",
@@ -454,7 +441,7 @@
    "source_url": "https://www.reallusion.com/iclone/default.html",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "flow-studio": {
    "status": "ok",
@@ -466,8 +453,7 @@
    "source_url": "https://blogs.autodesk.com/media-and-entertainment/2026/09/28/autodesk-flow-studio-pricing-and-subscription-guide/",
    "card": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "cascadeur": {
    "status": "ok",
@@ -480,8 +466,7 @@
    "note": "무료 버전의 상업 이용 조건이 페이지 내 표기가 엇갈려요",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.19",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "deepmotion": {
    "status": "ok",
@@ -494,8 +479,7 @@
    "source_url": "https://www.deepmotion.com/pricing-animate3d",
    "note": "Animate 3D Freemium · 계정 만료 없음",
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "plask": {
    "status": "ok",
@@ -507,7 +491,7 @@
    "source_url": "https://plask.ai/pricing",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "move.ai": {
    "status": "unverified",
@@ -524,7 +508,7 @@
    "source_url": "https://www.krikey.ai/pricing",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "elevenlabs": {
    "status": "ok",
@@ -536,7 +520,7 @@
    "commercial": false,
    "try_url": "https://elevenlabs.io/",
    "source_url": "https://www.elevenlabs.io/pricing",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "stable-audio": {
    "status": "unverified",
@@ -554,8 +538,7 @@
    "note": "약 33곡 생성 분량 · 무료 기간에 만든 노래도 상업적 이용 가능",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "beatoven": {
    "status": "unverified",
@@ -572,7 +555,7 @@
    "try_url": "https://suno.com/",
    "source_url": "https://suno.com/pricing",
    "watermark": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "mureka": {
    "status": "ok",
@@ -584,8 +567,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "udio": {
    "status": "ok",
@@ -598,8 +580,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "aiva": {
    "status": "ok",
@@ -611,7 +592,7 @@
    "commercial": false,
    "try_url": "https://www.aiva.ai/",
    "source_url": "https://www.aiva.ai/pricing",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "soundraw": {
    "status": "ok",
@@ -623,8 +604,7 @@
    "source_url": "https://docs.channel.io/soundraw-faq/en/articles/Can-I-preview-music-before-subscribing-70d683d6",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "firefly": {
    "status": "ok",
@@ -636,7 +616,7 @@
    "source_url": "https://www.adobe.com/products/firefly/plans.html",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "figma-ai": {
    "status": "ok",
@@ -648,7 +628,7 @@
    "source_url": "https://www.figma.com/pricing/",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "canva-ai": {
    "status": "unverified",
@@ -665,7 +645,7 @@
    "source_url": "https://clipdrop.co/pricing",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "photoroom": {
    "status": "ok",
@@ -678,8 +658,7 @@
    "note": "연간 Pro·Max 플랜은 7일 무료 체험 (1회)",
    "card": null,
    "watermark": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "civitai": {
    "status": "ok",
@@ -692,8 +671,7 @@
    "card": null,
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.13",
-   "status_note": "unverified"
+   "checked": "2026.10.31"
   },
   "comfyui": {
    "status": "ok",
@@ -705,7 +683,7 @@
    "try_url": "https://www.comfy.org/download",
    "source_url": "https://github.com/comfyanonymous/ComfyUI",
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "stable-diffusion": {
    "status": "ok",
@@ -717,7 +695,7 @@
    "commercial": true,
    "try_url": "https://stability.ai/stable-image",
    "source_url": "https://stability.ai/license",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "invokeai": {
    "status": "ok",
@@ -728,7 +706,7 @@
    "commercial": true,
    "try_url": "https://invoke.ai/",
    "source_url": "https://github.com/invoke-ai/InvokeAI",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "blender": {
    "status": "ok",
@@ -740,7 +718,7 @@
    "commercial": true,
    "try_url": "https://www.blender.org/download/",
    "source_url": "https://www.blender.org/about/license/",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "qwen-image": {
    "status": "ok",
@@ -751,7 +729,7 @@
    "commercial": true,
    "try_url": "https://github.com/QwenLM/Qwen-Image",
    "source_url": "https://github.com/QwenLM/Qwen-Image",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "roblox-cube": {
    "status": "ok",
@@ -763,7 +741,7 @@
    "source_url": "https://github.com/Roblox/cube",
    "watermark": null,
    "commercial": null,
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   },
   "wan": {
    "status": "ok",
@@ -774,7 +752,7 @@
    "commercial": true,
    "try_url": "https://wan.video/",
    "source_url": "https://github.com/Wan-Video/Wan2.2",
-   "checked": "2026.10.25"
+   "checked": "2026.10.31"
   }
  },
  "changes": [

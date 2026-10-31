@@ -1,28 +1,28 @@
 {
   "categories": {
     "image": {
-      "count": 483,
-      "latest": "2026.10.29",
+      "count": 484,
+      "latest": "2026.10.30",
       "file": "updates/feed/image.json",
-      "rev": "f67bde7972"
+      "rev": "52007de482"
     },
     "video": {
-      "count": 976,
-      "latest": "2026.10.29",
+      "count": 978,
+      "latest": "2026.10.30",
       "file": "updates/feed/video.json",
-      "rev": "d919dad31a"
+      "rev": "b292fbb9b4"
     },
     "3d": {
-      "count": 186,
-      "latest": "2026.10.23",
+      "count": 187,
+      "latest": "2026.10.30",
       "file": "updates/feed/3d.json",
-      "rev": "350e29862a"
+      "rev": "11e54a2448"
     },
     "game-assets": {
-      "count": 575,
-      "latest": "2026.10.29",
+      "count": 576,
+      "latest": "2026.10.30",
       "file": "updates/feed/game-assets.json",
-      "rev": "1f06307909"
+      "rev": "a8f2491319"
     },
     "motion": {
       "count": 168,
@@ -37,10 +37,10 @@
       "rev": "9a84e32a75"
     },
     "tools": {
-      "count": 1031,
-      "latest": "2026.10.29",
+      "count": 1038,
+      "latest": "2026.10.30",
       "file": "updates/feed/tools.json",
-      "rev": "cd3bc36d8d"
+      "rev": "3ed9dcec38"
     }
   },
   "services": {
@@ -90,9 +90,9 @@
       "latest": "2026.10.08"
     },
     "magnific": {
-      "count": 68,
+      "count": 69,
       "first": "2024.09.16",
-      "latest": "2026.10.29"
+      "latest": "2026.10.30"
     },
     "gigapixel": {
       "count": 80,
@@ -130,9 +130,9 @@
       "latest": "2026.09.02"
     },
     "runway": {
-      "count": 194,
+      "count": 195,
       "first": "2023.02.01",
-      "latest": "2026.10.27"
+      "latest": "2026.10.28"
     },
     "dream-machine": {
       "count": 30,
@@ -140,9 +140,9 @@
       "latest": "2026.10.23"
     },
     "higgsfield": {
-      "count": 61,
+      "count": 62,
       "first": "2025.04.24",
-      "latest": "2026.10.25"
+      "latest": "2026.10.30"
     },
     "ltx-studio": {
       "count": 65,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 123,
+      "count": 124,
       "first": "2023.10.19",
-      "latest": "2026.10.23"
+      "latest": "2026.10.30"
     },
     "tripo": {
       "count": 29,
@@ -220,9 +220,9 @@
       "latest": "2026.10.27"
     },
     "roblox-cube": {
-      "count": 42,
+      "count": 43,
       "first": "2023.03.20",
-      "latest": "2026.10.29"
+      "latest": "2026.10.30"
     },
     "rokoko": {
       "count": 39,
@@ -280,9 +280,9 @@
       "latest": "2026.09.27"
     },
     "unity-ai": {
-      "count": 39,
+      "count": 40,
       "first": "2023.11.16",
-      "latest": "2026.10.19"
+      "latest": "2026.10.30"
     },
     "nvidia-studio": {
       "count": 47,
@@ -295,24 +295,24 @@
       "latest": "2026.10.22"
     },
     "fal.ai": {
-      "count": 169,
+      "count": 170,
       "first": "2023.03.30",
-      "latest": "2026.10.13"
+      "latest": "2026.10.29"
     },
     "figma-ai": {
-      "count": 83,
+      "count": 86,
       "first": "2024.03.28",
-      "latest": "2026.10.26"
+      "latest": "2026.10.30"
     },
     "blender": {
-      "count": 31,
+      "count": 32,
       "first": "2019.07.30",
-      "latest": "2026.07.30"
+      "latest": "2026.10.30"
     },
     "claude": {
-      "count": 237,
+      "count": 238,
       "first": "2023.03.14",
-      "latest": "2026.10.29"
+      "latest": "2026.10.30"
     }
   }
 }
