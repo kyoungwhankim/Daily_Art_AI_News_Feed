@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-10-31-1",
+    "service": "krea",
+    "date": "2026.10.31",
+    "kind": "종료",
+    "title": "Flux Realtime 모델 지원 종료",
+    "summary": "Krea에서 Flux Realtime 모델 지원이 공식 종료되었어요. 실시간 생성 목록과 스타일에서 제외되며, 향후 스타일 학습은 Flux Dev 등 다른 지원 모델을 사용해야 해요.",
+    "details": [
+      "Realtime 생성 모델 목록에서 Flux Realtime Quality 제거",
+      "Flux 사전 탑재 스타일 목록에서 제거",
+      "앱 및 API(flux_schnell)의 Flux Realtime 기반 스타일 학습 지원 중단"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-31-2026",
+    "source": "dev"
+  }
+]

@@ -1,5 +1,20 @@
 [
   {
+    "id": "krea-2026-10-31-1",
+    "service": "krea",
+    "date": "2026.10.31",
+    "kind": "종료",
+    "title": "Flux Realtime 모델 지원 종료",
+    "summary": "Krea에서 Flux Realtime 모델 지원이 공식 종료되었어요. 실시간 생성 목록과 스타일에서 제외되며, 향후 스타일 학습은 Flux Dev 등 다른 지원 모델을 사용해야 해요.",
+    "details": [
+      "Realtime 생성 모델 목록에서 Flux Realtime Quality 제거",
+      "Flux 사전 탑재 스타일 목록에서 제거",
+      "앱 및 API(flux_schnell)의 Flux Realtime 기반 스타일 학습 지원 중단"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#october-31-2026",
+    "source": "dev"
+  },
+  {
     "id": "unity-ai-2026-10-30-1",
     "service": "unity-ai",
     "date": "2026.10.30",
@@ -550,20 +565,5 @@
     ],
     "url": "https://www.krea.ai/docs/changelog#october-24-2026",
     "source": "dev"
-  },
-  {
-    "id": "synthesia-2026-10-23-1",
-    "service": "synthesia",
-    "date": "2026.10.23",
-    "kind": "기능",
-    "title": "파워포인트 슬라이드를 Syren 비디오로 자동 재디자인 변환 지원",
-    "summary": "파워포인트(PPT) 파일을 가져와 슬라이드를 정적인 장면 대신 모션과 비주얼이 가미된 동적 Syren 비디오로 바로 재디자인할 수 있게 되었어요.",
-    "details": [
-      "PPT 가져오기 시 Syren을 통한 역동적 비디오 재디자인 옵션 제공",
-      "기존 슬라이드 레이아웃 유지 또는 새로운 비주얼 요소와 요약 버전 제작 선택 가능",
-      "스톡 보이스의 숫자, 날짜, 기호, 약어 발음 정확도 개선"
-    ],
-    "url": "https://www.synthesia.io/updates/turn-powerpoint-decks-into-syren-videos",
-    "source": "notice"
   }
 ]
