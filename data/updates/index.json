@@ -31,10 +31,10 @@
       "rev": "619ebb2555"
     },
     "audio": {
-      "count": 361,
+      "count": 362,
       "latest": "2026.10.29",
       "file": "updates/feed/audio.json",
-      "rev": "9a84e32a75"
+      "rev": "fd8613c994"
     },
     "tools": {
       "count": 1038,
@@ -245,9 +245,9 @@
       "latest": "2026.10.26"
     },
     "suno": {
-      "count": 73,
+      "count": 74,
       "first": "2023.12.22",
-      "latest": "2026.10.28"
+      "latest": "2026.10.29"
     },
     "mureka": {
       "count": 58,
