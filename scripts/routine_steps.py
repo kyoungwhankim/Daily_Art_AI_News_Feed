@@ -12,6 +12,7 @@
   python3 scripts/routine_steps.py digest-verify     VERIFY DIGEST
   python3 scripts/routine_steps.py review            피드 스캔 ★ 글 중 아직 판단하지 않은 것
   python3 scripts/routine_steps.py skip "<url>" "<이유>"   ★ 글을 싣지 않기로 한 기록
+  python3 scripts/routine_steps.py checked "<출처>" "<결과>"  피드 없는 출처를 직접 확인한 기록
   python3 scripts/routine_steps.py publish-init      PHASE 2 시작: 게시 모드 + articles.json 비우기
   python3 scripts/routine_steps.py digest-list       PHASE 2 STEP 1: digest 목록 (섹션 → 탭)
   python3 scripts/routine_steps.py keywords          PHASE 2 SETUP: 탭별 키워드 목록 → /tmp/feed/keywords.json
@@ -60,7 +61,9 @@ ARTICLES = os.path.join(FEED, 'articles.json')
 KEYWORDS = os.path.join(FEED, 'keywords.json')
 ARTICLES_SIG = os.path.join(FEED, 'articles.sig')
 SHORTLIST = os.path.join(FEED, 'shortlist.json')      # scan_feeds.py가 ★로 표시한 글 — 하나씩 판단해야 한다
-DECISIONS = os.path.join(FEED, 'decisions.json')      # {정규화한 URL: 'saved' | 'skip: 이유'}     # article-add만 쓴다 — push-local이 손으로 고친 파일을 가려낸다
+DECISIONS = os.path.join(FEED, 'decisions.json')
+HANDCHECK = os.path.join(FEED, 'handcheck.json')      # 피드가 없거나 피드를 못 읽은 출처 (scan_feeds.py가 만든다)
+CHECKED = os.path.join(FEED, 'checked.json')          # {출처: '결과'} — checked 명령과 digest-add가 기록      # {정규화한 URL: 'saved' | 'skip: 이유'}     # article-add만 쓴다 — push-local이 손으로 고친 파일을 가려낸다
 SOURCES = os.path.join(REPO, 'routine', 'sources.txt')
 WORK = {'updates': '/tmp/updates', 'free': '/tmp/free', 'report': '/tmp/report'}
 NOTE_FILE = {'updates': 'failed_sources.txt', 'free': 'candidates.txt'}
@@ -113,6 +116,21 @@ def decide(url, what):
     d = load(DECISIONS, {})
     d[norm_url(url)] = what
     save(DECISIONS, d)
+
+
+def open_handcheck():
+    done = load(CHECKED, {})
+    return [h for h in load(HANDCHECK, []) if h['source'] not in done]
+
+
+def mark_source_checked(url, what):
+    """digest-add한 기사의 주소가 직접 확인 출처(예: huggingface.co/papers)에 속하면 확인한 것으로 기록."""
+    u = norm_url(url)
+    done = load(CHECKED, {})
+    for h in load(HANDCHECK, []):
+        if u.startswith(h['source'].lower().rstrip('/')) and h['source'] not in done:
+            done[h['source']] = what
+    save(CHECKED, done)
 
 
 def open_shortlist():
@@ -224,6 +242,7 @@ def cmd_digest_add(args):
     digest.append(a)
     save(DIGEST, digest)
     decide(a['source_url'], 'saved')
+    mark_source_checked(a['source_url'], 'saved an article')
     for link in a.get('extra_links', []):       # 같은 소식의 다른 매체 기사도 판단한 것으로 친다
         if isinstance(link, dict) and link.get('url'):
             decide(link['url'], 'saved (extra link)')
@@ -240,7 +259,24 @@ def cmd_skip(args):
     print(f'Skipped ({args[1].strip()}). Open ★ items left: {len(open_shortlist())}')
 
 
+def cmd_checked(args):
+    names = [h['source'] for h in load(HANDCHECK, [])]
+    if args[0] not in names:
+        sys.exit(f'REFUSED: {args[0]!r} is not on today\'s hand-check list — names: ' + ', '.join(names))
+    if len(args[1].strip()) < 4 or re.search(r'\b(time|later|quota|budget|skip(ped)?)\b|시간', args[1], re.I):
+        sys.exit('REFUSED: give the result of actually checking it — e.g. "nothing new since 10-28", '
+                 '"unreachable: 403 and site: search empty", "saved 1 article"')
+    done = load(CHECKED, {})
+    done[args[0]] = args[1].strip()
+    save(CHECKED, done)
+    print(f'Checked {args[0]}: {args[1].strip()}. Sources left to check by hand: {len(open_handcheck())}')
+
+
 def cmd_review(_):
+    left = open_handcheck()
+    print(f'Sources left to check by hand: {len(left)} of {len(load(HANDCHECK, []))}')
+    for h in left:
+        print(f"  {h['source']}  ({h['why']})")
     rest = open_shortlist()
     print(f'Open ★ items: {len(rest)} of {len(load(SHORTLIST, []))}')
     for x in rest:
@@ -251,6 +287,8 @@ def cmd_review(_):
 
 
 def cmd_digest_verify(_):
+    if open_handcheck():
+        print(f'⚠️  {len(open_handcheck())} sources are not checked by hand yet — run `routine_steps.py review`.')
     rest = open_shortlist()
     if rest:
         print(f'⚠️  {len(rest)} ★ feed-scan items are not judged yet — run `routine_steps.py review` '
@@ -596,6 +634,10 @@ def preflight(args):
             and not os.path.exists(os.path.join(upd, 'STATE_SAVED')):
         problems.append('source state not saved — run `routine_steps.py apply-updates` then `save-source-state` '
                         '(if it says source_state.next.json was not found, run detect_source_changes.py check again first)')
+    left = open_handcheck()
+    if left:
+        problems.append(f'{len(left)} sources were never checked by hand (' + ', '.join(h['source'] for h in left[:6])
+                        + ('…' if len(left) > 6 else '') + ') — check each, then `routine_steps.py checked`')
     rest = open_shortlist()
     if rest:
         problems.append(f'{len(rest)} ★ feed-scan items were never judged (digest-add or skip) — '
@@ -690,6 +732,7 @@ ARGSPEC = {
     'workdir': (1, 1, (), ('--remove',)), 'agent-init': (1, 1, (), ()), 'agent-note': (2, 2, (), ()),
     'agent-count': (0, 1, (), ()), 'agent-finish': (1, 1, ('--file',), ()), 'agent-status': (1, 1, (), ()),
     'undo-data': (1, 1, (), ()), 'push-local': (0, 0, ('--few-ok',), ()), 'skip': (2, 2, (), ()),
+    'checked': (2, 2, (), ()),
 }
 USAGE = {
     'sources': '[games|industry|art]', 'digest-add': '[--file PATH]  (or the dict on stdin)',
@@ -698,6 +741,7 @@ USAGE = {
     'agent-count': '[updates|free|report]', 'agent-finish': 'updates|free|report [--file PATH]',
     'agent-status': 'updates|free|report', 'undo-data': 'updates|free|reports',
     'push-local': '[--few-ok "<reason>"]', 'skip': '"<url>" "<reason>"',
+    'checked': '"<source>" "<result of checking it>"',
 }
 
 
@@ -738,7 +782,7 @@ if __name__ == '__main__':
             'apply-updates': cmd_apply_updates, 'save-source-state': cmd_save_source_state,
             'apply-free': cmd_apply_free, 'apply-report': cmd_apply_report, 'undo-data': cmd_undo_data,
             'publish-end': cmd_publish_end, 'push-local': cmd_push_local,
-            'skip': cmd_skip, 'review': cmd_review}
+            'skip': cmd_skip, 'review': cmd_review, 'checked': cmd_checked}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit('usage: routine_steps.py ' + '|'.join(cmds))
     check_args(sys.argv[1], sys.argv[2:])

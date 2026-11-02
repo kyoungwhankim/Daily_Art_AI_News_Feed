@@ -273,6 +273,15 @@ BLOCKED for scripts — use `site:` search only:
   venturebeat.com (429 rate limit; wait once and retry, then `site:venturebeat.com`)
   · apnews.com (403, and WebSearch may refuse it — then mark it unreachable) · autodesk.com/blogs (403) · openai.com pages (403 — the news feed works)
 
+The FEED SCAN ends with a "CHECK BY HAND" list: every source without a feed plus every feed that
+failed or is stale today. Check EACH one as described above and record the result with
+
+  python3 scripts/routine_steps.py checked "<source>" "<result>"
+
+e.g. "nothing new since 10-30", "unreachable: 403 and site: search empty". Saving an article from
+that source with digest-add records it automatically. push-local refuses while any is unrecorded;
+`routine_steps.py review` lists the ones left.
+
 A source that cannot be read at all today counts as checked: list it as "unreachable" in the
 checked-sources line instead of skipping silently. A source with no item from today / yesterday
 is "checked, nothing new" — not unreachable.
@@ -419,8 +428,9 @@ Once all articles are saved, check that every ★ feed-scan item was judged, the
 cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/routine_steps.py review
 cd /home/user/Daily_Art_AI_News_Feed && python3 scripts/routine_steps.py digest-verify
 
-`review` must print "Open ★ items: 0". If not, judge the open ones (STEP A, then digest-add or
-skip) before PHASE 2.
+`review` must print "Sources left to check by hand: 0" and "Open ★ items: 0". If not, check the
+listed sources (then `checked`) and judge the open ★ items (STEP A, then digest-add or skip)
+before PHASE 2.
 
 /tmp/feed/digest.json is the hand-off to PHASE 2.
 

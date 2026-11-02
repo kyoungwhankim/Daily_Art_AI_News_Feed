@@ -174,6 +174,9 @@ T3b. Sources. The FEED SCAN covers about 57 feeds in English, Korean, Japanese, 
     the source language. Every ★ line must end as digest-add or `routine_steps.py skip` with a
     reason; push-local refuses while any ★ item is open. "No news today" can only be concluded from
     the FEED SCAN, never from the service-update list of detect_source_changes.py.
+    The FEED SCAN's "CHECK BY HAND" sources (Hugging Face papers, CG Channel, famitsu, runway …)
+    are often where the best articles are: open each with read_source.py / WebFetch and record it
+    with `routine_steps.py checked "<source>" "<result>"`; push-local refuses until all are done.
     Never write your own script or keyword filter (e.g. a check_*.py) to narrow the candidates —
     read the FEED SCAN lines yourself. Only the repository's scripts may be run.
 

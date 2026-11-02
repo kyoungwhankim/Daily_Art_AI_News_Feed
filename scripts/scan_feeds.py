@@ -30,6 +30,7 @@ from fetch_article import BROWSER_UA                        # noqa: E402
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEEDS = os.path.join(REPO, 'routine', 'feeds.txt')
 OUT = '/tmp/feed/candidates.json'
+HANDCHECK = '/tmp/feed/handcheck.json'   # 피드가 없거나 피드를 못 읽은 출처 — 루틴이 하나씩 직접 확인해야 한다
 SHORTLIST = '/tmp/feed/shortlist.json'   # ★ 표시 — 루틴이 하나씩 digest-add 또는 skip으로 판단해야 하는 글
 KST = timezone(timedelta(hours=9))
 PER_SOURCE = 12          # 한 출처에서 보여 줄 최대 글 수
@@ -265,16 +266,27 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=1)
     with open(SHORTLIST, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(shortlist, f, ensure_ascii=False, indent=1)
+    # 직접 확인할 출처: 출처 목록(sources.txt)에 있지만 피드가 없는 곳 + 오늘 피드를 못 읽은 곳
+    from routine_steps import parse_sources
+    wl = parse_sources()
+    names = set(wl['common']) | {n for k in ('games', 'industry', 'art') for t in ('primary', 'broadened')
+                                 for n in wl[k][t]}
+    with_feed = {f['source'] for f in load_feeds()}
+    handcheck = [{'source': n, 'why': 'no feed'} for n in sorted(names - with_feed) if not n.startswith('any ')]
+    handcheck += [{'source': p.split(':', 1)[0], 'why': p.split(':', 1)[1].strip()} for p in problems]
+    with open(HANDCHECK, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(handcheck, f, ensure_ascii=False, indent=1)
     print(f'Feed scan done: {total} candidates shown from {len(feeds) - len(problems)} readable feeds '
           f'({len(out)} in {OUT}).')
     print(f'MUST REVIEW: {len(shortlist)} ★ items (also those cut by "more:" lines). Each needs digest-add or '
           '`routine_steps.py skip "<url>" "<reason>"`; `routine_steps.py review` lists the ones still open.')
     if quiet:
         print('Checked, nothing new (no new item, or none about AI): ' + ', '.join(quiet))
-    if problems:
-        print('Feeds to check by hand (open the site the way SOURCE ACCESS NOTES says):')
-        for p in problems:
-            print('  - ' + p)
+    print(f'CHECK BY HAND: {len(handcheck)} sources (no feed, or the feed failed today) — open each the way '
+          'SOURCE ACCESS NOTES says, then record it with `routine_steps.py checked "<source>" "<result>"` '
+          '(a digest-add from that source records it too):')
+    for h in handcheck:
+        print(f"  - {h['source']}  ({h['why']})")
 
 
 if __name__ == '__main__':
