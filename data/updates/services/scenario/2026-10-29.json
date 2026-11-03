@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario-2026-10-29-1",
+    "service": "scenario",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Skills v0.60.1: 스킬 설치 및 에이전트 설정 안정화",
+    "summary": "Scenario Skills v0.60.1이 출시되어 버전 고정 설정으로 설치 안정성을 높이고 에이전트 설정 가이드라인이 개선되었어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-60-1",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-29-2",
+    "service": "scenario",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "MCP Server v0.37.3: 도구 주석 및 라우팅 개선",
+    "summary": "AI 에이전트가 도구 설명을 더 정확히 이해할 수 있도록 도구 주석을 개선하고 생성 및 분석 라우팅 안정성을 높였어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-3",
+    "source": "dev"
+  }
+]

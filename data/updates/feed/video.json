@@ -1,5 +1,20 @@
 [
   {
+    "id": "heygen-2026-11-02-1",
+    "service": "heygen",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "HeyGen Video 기반 Cinematic Avatar 렌더링 지원",
+    "summary": "HeyGen 비디오 API에 시네마틱 아바타 기능이 추가되어, 사용자의 아바타 외형과 음성을 heygen_video_1 모델 기반 영상 장면의 등장인물로 직접 합성할 수 있게 되었어요.",
+    "details": [
+      "POST /v3/videos 엔드포인트에서 type: cinematic_avatar 및 model: heygen_video_1 지원",
+      "16:9 또는 9:16 종횡비, 720p 해상도, 5~15초 길이 지원",
+      "이미지 및 영상과 함께 최대 3개 오디오 레퍼런스 결합 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#cinematic-avatar-on-hey-gen-video",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-10-30-1",
     "service": "higgsfield",
     "date": "2026.10.30",

@@ -1,5 +1,21 @@
 [
   {
+    "id": "claude-2026-11-02-1",
+    "service": "claude",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Messages API에 메시지 스레드(Message Threads) 베타 도입",
+    "summary": "Claude Messages API에 서버 측에서 대화를 유지해 요청 크기와 첫 토큰 생성 시간(TTFT)을 줄여주는 메시지 스레드 기능이 베타로 추가되었어요.",
+    "details": [
+      "message-threads-2026-08-12 베타 헤더를 통해 긴 대화 및 에이전트 루프에서 신규 메시지만 전송 가능",
+      "대화 기록을 서버 측에 유지하여 첫 토큰 생성 시간(TTFT) 단축 및 페이로드 축소",
+      "마지막 요청 후 5분 경과 시 만료되며 최대 1시간 후 삭제",
+      "Claude API, AWS Claude Platform, Google Cloud(Anthropic 관리), MS Foundry에서 사용 가능"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-2-2026",
+    "source": "dev"
+  },
+  {
     "id": "unity-ai-2026-10-30-1",
     "service": "unity-ai",
     "date": "2026.10.30",

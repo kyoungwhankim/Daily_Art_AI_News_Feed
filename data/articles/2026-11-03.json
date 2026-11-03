@@ -1,0 +1,158 @@
+[
+  {
+    "id": "games-34952032-2026-11",
+    "tab": "games",
+    "headline": "아크 레이더스 개발진, AI 음성 비판 수용해 실제 성우 재녹음 진행",
+    "summary": "엠바크 스튜디오가 신작 '아크 레이더스'의 AI 음성 비판을 수용해 실제 성우 녹음을 대폭 늘렸어요.",
+    "body": "<p>엠바크 스튜디오가 익스트랙션 슈터 신작 '아크 레이더스'의 개발 과정에서 제기된 생성형 AI 음성 사용 논란에 대해 이용자들의 정당한 비판을 겸허히 수용하고 실제 성우 연기 녹음 비중을 크게 확대했다고 공식 개발 영상을 통해 밝혔어요. 제작진은 전작 '더 파이널스'에 이어 이번 신작에서도 개발 효율화를 위해 AI 기반 음성 합성 기술을 시험 적용했으나, 인게임 대사가 어색하고 생명력이 없다는 이용자들의 거센 지적을 받았어요. 총괄 크리에이티브 디렉터 알렉산더 그뢴달은 비판을 방어하기보다 게임에 가장 좋은 결정을 내리는 것이 옳았다고 털어놓았어요.</p><p>오디오 디렉터 벤체 파요르는 게임 내 핑 시스템과 수많은 신규 아이템 상호작용으로 인해 개발 도중 대사 대본이 수시로 바뀌는 상황에서 매번 성우를 스튜디오로 불러 모든 경우의 수를 녹음하기는 현실적으로 불가능해 프로토타입 용도로 AI 보이스를 활용했던 것이라고 해명했어요. 하지만 논란 이후 계약된 성우들과 다시 협력해 캐릭터들의 고유한 개성과 감정선, 인간적인 동기를 섬세하게 살리는 실제 연기 작업을 대폭 보강했다고 설명했어요. 이번 결정은 게임 개발 현장에서 효율성을 좇아 무리하게 AI를 밀어붙이기보다, 창작자와 이용자의 감성적 만족을 충족하는 조화로운 협업 모델의 중요성을 일깨워줘요.</p><p>원문: <a href=\"https://www.pcgamer.com/games/third-person-shooter/there-was-some-really-fair-criticism-arc-raiders-devs-understand-why-players-were-so-upset-about-its-ai-use-but-admit-that-it-was-too-impractical-to-record-every-voice-line/\">PC Gamer</a></p>",
+    "source": "PC Gamer",
+    "publishedAt": "2026.11.03",
+    "hue": 200,
+    "image": "https://cdn.mos.cms.futurecdn.net/hj4zzWidd8vK2PRNUgdWGK-1920-80.jpg",
+    "keywords": [],
+    "url": "https://www.pcgamer.com/games/third-person-shooter/there-was-some-really-fair-criticism-arc-raiders-devs-understand-why-players-were-so-upset-about-its-ai-use-but-admit-that-it-was-too-impractical-to-record-every-voice-line/",
+    "urls": [
+      {
+        "label": "개발 영상",
+        "href": "https://www.youtube.com/watch?v=_xwbP8KV530"
+      }
+    ]
+  },
+  {
+    "id": "games-afb1e336-2026-11",
+    "tab": "games",
+    "headline": "구글, '제미나이 4 카본' 개선판 테스트 포착... 3D 모델링 및 애니메이션 성능 호평",
+    "summary": "구글의 제미나이 4 카본 개선 빌드가 3D 모델링과 애니메이션 생성에서 높은 평가를 받았어요.",
+    "body": "<p>구글이 최근 공개한 '제미나이 4 카본'의 신규 개선 체크포인트인 '카본-H(아르곤 4)'가 AI 모델 성능 평가 플랫폼 아레나(Arena)에서 포착되었어요. 공개 사흘 만에 등장한 이번 빌드는 초기 버전에 비해 응답 속도가 눈에 띄게 개선되었을 뿐만 아니라, 특히 3D 모델링과 Three.js 기반 그래픽 에셋 구현 및 애니메이션 생성 작업에서 두드러진 성능 향상을 보였다는 테스터들의 평가가 잇따르고 있어요. 기존 모델이 단순한 큐브 형태로 구현하던 3D 형상을 곡면과 다이아몬드형 모듈을 결합해 한층 정밀하고 미려하게 조형해내는 수준에 도달했어요.</p><p>테스터들의 분석에 따르면 새 모델은 복잡한 작업 시 최대 8~10분에 이르는 깊은 추론 과정을 거쳐 정교한 결과물을 도출하며, 픽셀 스타일의 티라노사우루스 애니메이션 구현 대결 등에서도 경쟁 모델들을 앞서는 자연스럽고 역동적인 움직임을 선보였어요. 비록 웹 UI 코딩 분야에서는 추가적인 개선이 필요하다는 지적이 일부 남아 있지만, 3D 그래픽 파이프라인과 게임 에셋 제작 분야에서 제미나이의 실무 활용 가치가 크게 강화되고 있음을 잘 보여줘요. 구글은 향후 성능 조율을 거쳐 일반 개발자와 창작자를 대상으로 정식 배포를 이어갈 계획이에요.</p><p>원문: <a href=\"https://www.aitimes.com/news/articleView.html?idxno=216888\">AI타임스</a></p>",
+    "source": "AI타임스",
+    "publishedAt": "2026.11.03",
+    "hue": 200,
+    "image": "https://cdn.aitimes.com/news/photo/202611/216888_221043_820.png",
+    "keywords": [
+      "3D",
+      "애니메이션",
+      "Google"
+    ],
+    "url": "https://www.aitimes.com/news/articleView.html?idxno=216888"
+  },
+  {
+    "id": "games-41f1ce9d-2026-11",
+    "tab": "games",
+    "headline": "리얼루전, '캐릭터 크리에이터 5.2' 출시... 생성형 AI 3D 모델 제작 도구 탑재",
+    "summary": "리얼루전이 캐릭터 크리에이터 5.2를 출시하고 생성형 AI 3D 메시 생성과 랩핑 도구를 도입했어요.",
+    "body": "<p>리얼루전(Reallusion)이 게임, 애니메이션, 시각효과(VFX)를 위한 3D 캐릭터 제작 소프트웨어 '캐릭터 크리에이터 5.2(Character Creator 5.2)'를 공식 출시하며 생성형 AI 기반 3D 모델 생성 도구 모음과 'CC Wrap' 기능을 새롭게 선보였어요. 이번 업데이트를 통해 이용자는 1~4장의 2D 참조 이미지만으로 3D 캐릭터 본체와 의상, 헤어스타일, 액세서리를 손쉽게 생성할 수 있게 되었어요. 특히 외부 전문 AI 모델인 트리포(Tripo P2.0, H3.1)와 텐센트 훈위안(Hunyuan V3.1)을 연동하여 로우폴리 토폴로지부터 고해상도 하이폴리 디테일까지 목적에 맞게 선택하여 생성할 수 있어요.</p><p>함께 추가된 'CC Wrap' 도구는 외부 DCC 툴에서 조각했거나 AI로 제작한 커스텀 휴머노이드 캐릭터를 리얼루전 고유의 CC3+ 및 CC5 HD 액터 포맷으로 변환해 주며, 래핑 완료 후 자동으로 스켈레톤 리깅까지 연계해 주는 것이 큰 특징이에요. 또한 트리포 AI 엔진을 활용해 균일한 쿼드 메시로 자동 리메싱하는 AI 폴리곤 리덕션 기능과 향상된 스킨 웨이트 제어, 의상 피팅 옵션이 함께 지원돼요. 이 도구 모음은 자매 애니메이션 소프트웨어인 iClone 8.76에도 함께 적용되어 3D 게임 에셋 제작 파이프라인의 작업 속도를 비약적으로 단축해 줘요.</p><p>원문: <a href=\"https://www.cgchannel.com/2026/11/new-cg-software-you-may-have-missed-2-november-2026/\">CG Channel</a></p>",
+    "source": "CG Channel",
+    "publishedAt": "2026.11.03",
+    "hue": 200,
+    "image": "https://www.cgchannel.com/wp-content/uploads/2026/11/261102_NewCGSoftwareYouMayHaveMissed1November2026_CharacterCreator52_f-960x480.jpg",
+    "keywords": [
+      "3D",
+      "Tripo",
+      "Reallusion"
+    ],
+    "url": "https://www.cgchannel.com/2026/11/new-cg-software-you-may-have-missed-2-november-2026/"
+  },
+  {
+    "id": "industry-c3d3c76e-2026-11",
+    "tab": "industry",
+    "headline": "스팀 10월 신작 절반이 생성형 AI 활용... 아트 분야 활용률 63%로 최고",
+    "summary": "10월 스팀 신작의 49.9%가 AI 활용을 공시했으며, 아트 제작이 63%로 가장 높았어요.",
+    "body": "<p>밸브(Valve)가 운영하는 PC 게임 플랫폼 스팀(Steam)에서 지난 10월 한 달 동안 출시된 신작 게임 중 거의 절반에 달하는 49.9%가 생성형 AI 기술을 활용했다고 공시한 것으로 나타났어요. 스팀 비공식 데이터베이스 PCGame.com 운영자 ploz가 2024년 1월 AI 공시 정책 도입 이후 출시된 게임 약 6만 3,600건을 분석한 결과에 따르면, 공시 초기 1.7%에 불과했던 AI 사용 비율은 2024년 전체 13.2%, 2025년 24.0%를 거쳐 올해 10월 기준 49.9%까지 가파르게 상승했어요. 특히 올해 10개 이상의 다작을 선보인 개발자의 경우 공시 비율이 68%에 달해 개발 속도 단축 도구로서 AI가 적극 쓰이고 있음을 보여줘요.</p><p>AI를 활용했다고 밝힌 게임들의 세부 용도를 살펴보면 2D 및 3D '아트' 제작이 63%로 압도적인 1위를 기록했어요. 그 뒤를 이어 텍스트 및 번역이 30%, 스토어 페이지 및 마케팅 이미지가 26%, 음악이 21%, 코딩 보조가 16% 순으로 집계되었어요. 다만 50개 이상의 평가가 등록된 게임을 비교했을 때 AI 사용을 밝힌 작품의 평균 긍정 평가율은 77%로, 미사용 게임(83%)보다 다소 낮게 나타났어요. AI로 제작된 저품질 게임(AI 슬롭) 범람이나 표절 논란 등 이용자들의 우려가 상존하는 가운데, 게임 아트 및 비주얼 제작 분야에서 생성형 AI가 핵심 파이프라인으로 확고히 자리 잡았음을 방증해요.</p><p>원문: <a href=\"https://automaton-media.com/articles/newsjp/20261102-477078/\">AUTOMATON</a></p>",
+    "source": "AUTOMATON",
+    "publishedAt": "2026.11.03",
+    "hue": 30,
+    "image": "https://automaton-media.com/wp-content/uploads/2026/11/20261102-477078-header.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "설문·통계",
+      "2D·이미지"
+    ],
+    "url": "https://automaton-media.com/articles/newsjp/20261102-477078/",
+    "urls": [
+      {
+        "label": "원문 분석 커뮤니티",
+        "href": "https://www.reddit.com/r/Steam/comments/1xlexwi/almost_half_of_the_games_released_on_steam_in/"
+      }
+    ]
+  },
+  {
+    "id": "industry-2332f34e-2026-11",
+    "tab": "industry",
+    "headline": "코지마 히데오 감독, 코지마 프로덕션 10주년 인터뷰서 'AI 시대의 창작과 게임 제작' 견해 밝혀",
+    "summary": "코지마 히데오 감독이 10주년 인터뷰에서 생성형 AI와 창작 과정의 본질에 대한 생각을 밝혔어요.",
+    "body": "<p>코지마 프로덕션 설립 10주년을 맞은 코지마 히데오 감독이 기념 전시회 미디어 인터뷰를 통해 최근 게임 개발 현장에서 주목받는 생성형 AI 기술과 창작의 본질에 대한 깊이 있는 통찰을 공유했어요. 코지마 감독은 과거 포토샵이나 디지털 워드프로세서가 처음 등장했을 때처럼, AI 역시 작업 공정을 효율화하고 개발 일정을 단축하는 데 매우 유용한 디지털 도구라고 평가했어요. 기술이 발전하면서 과거에는 불가능했던 표현의 선택지가 계속해서 넓어지고 있지만, 선택지의 증가가 곧 모든 것을 가능하게 만드는 것은 아니라고 짚었어요.</p><p>특히 코지마 감독은 그림을 그리는 행위나 레고·프라모델을 조립하는 즐거움처럼, 물건을 만드는 진정한 묘미는 최종 완성본이 아니라 도중에 겪는 수많은 시행착오와 과정 자체에 있다고 강조했어요. 컴퓨터에 프롬프트로 지시해 곧바로 결과물을 얻는 방식은 시장에 내놓을 '상품'을 대량 생산하는 데는 적합할지 몰라도, 크리에이터가 아드레날린을 느끼며 몰입하는 '진정한 창작'과는 구별되어야 한다고 역설했어요. 그러면서 AI 기술을 어떻게 다루고 통제할지는 결국 차세대 젊은 창작자들의 몫이라며, 제작 과정에서 얻는 인간적인 기쁨을 잃지 않도록 지혜롭게 기술을 활용해 좋은 미래를 열어가길 바란다고 당부했어요.</p><p>원문: <a href=\"https://www.gamebusiness.jp/article/2026/11/02/28528.html\">GameBusiness.jp</a></p>",
+    "source": "GameBusiness.jp",
+    "publishedAt": "2026.11.03",
+    "hue": 30,
+    "image": "https://www.gamebusiness.jp/imgs/ogp_f/202008.png",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.gamebusiness.jp/article/2026/11/02/28528.html",
+    "urls": [
+      {
+        "label": "10주년 전시회",
+        "href": "https://beyondthestrand.kojimaproductions.jp/ja/"
+      }
+    ]
+  },
+  {
+    "id": "industry-56211619-2026-11",
+    "tab": "industry",
+    "headline": "크래프톤, 게임 AI 상호작용 노하우 담은 K팝 AI 캐릭터 챗 '키프' 출시",
+    "summary": "크래프톤이 게임 AI 연구 노하우를 바탕으로 K팝 AI 캐릭터 챗 '키프'를 정식 출시했어요.",
+    "body": "<p>크래프톤이 게임 속 캐릭터 AI 상호작용 연구 경험과 노하우를 접목한 K팝 인터랙티브 AI 캐릭터 챗 서비스인 '키프(Kiff)'를 11월 2일 정식 출시했어요. '키프'는 글로벌 K팝 팬들이 아티스트가 직접 구상하고 참여한 가상 캐릭터와 자유롭게 대화를 나누며 다채로운 팬 활동을 즐길 수 있도록 돕는 모바일 서비스예요. 캐릭터는 이용자와의 이전 대화 내역과 취향을 세심하게 기억해 다음 대화에 자연스럽게 반영하며, 아티스트의 최신 근황을 먼저 전해 주거나 하루 동안 나눈 대화를 아기자기한 그림일기 형태로 제작해 주는 기능도 함께 제공해요.</p><p>첫 참여 아티스트로는 어트랙트 소속 걸그룹 피프티피프티가 나섰으며, 멤버들이 캐릭터 페르소나 기획부터 외형 디자인 개발까지 전 과정에 주도적으로 참여해 공식 캐릭터 '웨니'를 완성했어요. 이용자는 텍스트 기반 채팅 외에도 화면 속 3D 캐릭터와 실시간으로 반응을 주고받는 캐릭터 모드를 선택할 수 있으며, 매일 제공되는 무료 대화와 함께 무제한 구독 플랜도 마련되었어요. 크래프톤은 게임 속 논플레이어 캐릭터(NPC)가 플레이어와 자연스럽게 소통하도록 만드는 인게임 AI 기술을 엔터테인먼트 및 팬덤 영역으로 확장해 향후 다양한 글로벌 아티스트 라인업으로 서비스를 넓혀갈 방침이에요.</p><p>원문: <a href=\"https://game.donga.com/124924/\">게임동아</a></p>",
+    "source": "게임동아",
+    "publishedAt": "2026.11.03",
+    "hue": 30,
+    "image": "https://game.donga.com/media/__sized__/images/2026/11/2/1cd65190889443fc-thumbnail-960x540-70.jpg",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://game.donga.com/124924/",
+    "urls": [
+      {
+        "label": "키프 공식 유튜브",
+        "href": "https://www.youtube.com/channel/UCfHBpJQCU28OsLUash02B1Q"
+      }
+    ]
+  },
+  {
+    "id": "art-b7ac0f75-2026-11",
+    "tab": "art",
+    "headline": "스포티파이, 'AI 음원 리믹스' 기능 도입 아티스트 반발로 2027년 연기",
+    "summary": "스포티파이가 아티스트들의 반발로 생성형 AI 기반 음원 리믹스 기능 도입을 2027년으로 연기했어요.",
+    "body": "<p>글로벌 최대 음원 스트리밍 플랫폼 스포티파이(Spotify)가 야심 차게 준비하던 생성형 AI 기반 음원 리믹스 및 커버 버전 생성 기능의 정식 도입 시점을 2027년 초로 연기했어요. 파이낸셜 타임스(FT) 등 외신 보도에 따르면 스포티파이는 당초 유니버설 뮤직 그룹(UMG) 등 주요 대형 음반사와 손잡고 이용자가 원곡을 댄스 버전으로 재해석하거나 보컬 스타일을 변형할 수 있는 부가 구독 서비스를 기획했으나, 현역 주류 아티스트들의 거센 반대에 부딪혀 협상에 난항을 겪고 있어요.</p><p>대형 음반사와의 포괄적 라이선스 계약과 별개로 개별 아티스트에게 AI 도구 참여에 대한 거부권이 보장되어 있는데, 올리비아 로드리고 등 젊은 팝스타들이 자신의 음악에 AI 기술을 일절 허용하지 않겠다는 강경한 입장을 고수하고 있는 것이 출시 지연의 결정적인 원인으로 꼽혀요. 스포티파이는 AI 리믹스로 발생하는 추가 수익의 일부를 원작자에게 분배하는 월 4~5달러 수준의 부가 서비스를 구상 중이며, 소니 뮤직 및 워너 뮤직과도 라이선스 조율을 이어가고 있어요. 시장 분석가들은 아티스트의 권리와 저작인격권을 존중하는 합의점을 도출하는 것이 AI 음악 생태계 안착의 핵심 열쇠가 될 것으로 내다보고 있어요.</p><p>원문: <a href=\"https://www.heise.de/news/KI-generierte-Remixe-Spotify-Plaene-verzoegern-sich-wohl-wegen-der-Kuenstler-11507459.html\">heise online</a></p>",
+    "source": "heise online",
+    "publishedAt": "2026.11.03",
+    "hue": 290,
+    "image": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/9/2/6/2/8/shutterstock_1771451024-c184e9daa80698cd.jpg?func=bound&height=1200&org_if_sml=1&q=85&width=1200",
+    "keywords": [
+      "음악·사운드",
+      "Spotify"
+    ],
+    "url": "https://www.heise.de/news/KI-generierte-Remixe-Spotify-Plaene-verzoegern-sich-wohl-wegen-der-Kuenstler-11507459.html"
+  },
+  {
+    "id": "art-fe4f731f-2026-11",
+    "tab": "art",
+    "headline": "AI 컴패니언·UGC 플랫폼 '디어비' 정식 출시... 캐릭터 기반 피규어·OST 창작 지원",
+    "summary": "AI 컴패니언 및 UGC 플랫폼 '디어비'가 출시되어 캐릭터 기반 피규어와 OST 등 창작 기능을 지원해요.",
+    "body": "<p>스타트업 디어비(Dearbe)가 AI 캐릭터와의 깊이 있는 교감 및 사용자 생성 콘텐츠(UGC) 생태계를 결합한 멀티 플랫폼 서비스 '디어비'를 구글 플레이와 공식 웹페이지를 통해 정식 출시했어요. '디어비'는 이용자가 생성형 AI를 활용해 로맨스, 무협, 아포칼립스 등 35개 이상의 폭넓은 장르 속에서 개성 있는 가상 캐릭터와 세계관을 손쉽게 창작하고 대화할 수 있는 인터랙티브 플랫폼이에요. 단순한 텍스트 챗봇을 넘어 대화 내용을 삽화가 포함된 소설로 자동 엮어주는 기능과 실시간 음성 통화 기능 등을 갖추어 높은 몰입감을 선사해요.</p><p>특히 이번 플랫폼은 대화형 상호작용에 그치지 않고, 이용자가 구상한 캐릭터를 바탕으로 3D 형태의 가상 피규어를 제작하거나 옷 입히기, 캐릭터 전용 오리지널 사운드트랙(OST) 음원 생성 등 다양한 파생 예술 콘텐츠를 직접 만들어 수집할 수 있도록 지원하는 것이 가장 큰 특징이에요. 한 줄 컨셉 입력만으로 캐릭터의 성격과 배경 설정을 도출할 수 있으며, 정식 크리에이터로 등록하면 작품 활동에 따른 리워드 정산 혜택도 받을 수 있어요. 디어비는 한국을 비롯해 미국, 일본 등 5개 지역을 대상으로 글로벌 런칭 공모전을 시작했으며 iOS 버전도 순차 출시할 예정이에요.</p><p>원문: <a href=\"https://www.inven.co.kr/webzine/news/?news=322897\">웹진 인벤</a></p>",
+    "source": "웹진 인벤",
+    "publishedAt": "2026.11.03",
+    "hue": 290,
+    "image": "https://static.inven.co.kr/column/2026/11/02/news/i1731517427.jpg",
+    "keywords": [
+      "음악·사운드",
+      "3D"
+    ],
+    "url": "https://www.inven.co.kr/webzine/news/?news=322897",
+    "urls": [
+      {
+        "label": "게임메카 기사",
+        "href": "https://www.gamemeca.com/view.php?gid=1782810"
+      }
+    ]
+  }
+]

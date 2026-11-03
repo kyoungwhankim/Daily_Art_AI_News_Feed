@@ -1,0 +1,16 @@
+[
+  {
+    "id": "krea-2026-11-02-1",
+    "service": "krea",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "Flux.1 Krea 모델 지원 종료",
+    "summary": "Krea에서 Flux.1 Krea 모델 지원이 공식 종료되었어요. 이미지 생성 및 노드 도구 목록에서 제외되며 향후 Krea 1 또는 Flux 모델을 대신 사용해야 해요.",
+    "details": [
+      "Krea Image 및 Nodes 모델 선택 목록에서 Flux.1 Krea 제거",
+      "대체 모델로 Krea 1 또는 Flux 선택 권장"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#november-2-2026",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "meshy-2026-11-02-1",
+    "service": "meshy",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Retexture API에 Meshy N1 모델 추가",
+    "summary": "Meshy의 재텍스처링(Retexture) API에 1~4장의 참조 이미지로부터 2K 베이스 컬러 텍스처를 제작하는 meshy-n1 모델이 추가되었어요.",
+    "details": [
+      "Retexture API의 ai_model 파라미터에 meshy-n1 옵션 추가",
+      "1~4장의 참조 이미지를 바탕으로 2K 베이스 컬러 텍스처 맵 생성 지원"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2",
+    "source": "dev"
+  }
+]

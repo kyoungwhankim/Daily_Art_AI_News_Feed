@@ -1,0 +1,31 @@
+[
+  {
+    "id": "scenario-2026-10-26-1",
+    "service": "scenario",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "Skills v0.60.0: 비디오 모션 캡처 및 프롬프트 기반 3D 생성 지원",
+    "summary": "Scenario Skills v0.60.0이 출시되어 비디오 입력에서 모션 캡처 데이터를 추출하고 크로마키 및 프롬프트 기반 3D 생성을 지원해요.",
+    "details": [
+      "scenario-video-to-motion 스킬로 비디오 입력에서 모션 캡처 데이터 추출",
+      "크로마키(Chroma Key) 및 프롬프트-투-3D 생성 스킬 추가"
+    ],
+    "url": "https://www.scenario.com/changelog/skills-v0-60-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-26-2",
+    "service": "scenario",
+    "date": "2026.10.26",
+    "kind": "기능",
+    "title": "MCP Server v0.35.0: 워크플로 선택 및 사용량 추적 추가",
+    "summary": "Scenario MCP Server v0.35.0이 출시되어 워크플로 선택 단계 처리와 API 사용량 한도 추적, 추천 엔진 속도 개선이 이루어졌어요.",
+    "details": [
+      "AI 에이전트의 워크플로 선택 단계 처리 지원",
+      "API 소비 한도 직접 추적 기능 추가",
+      "추천 엔진 처리 속도 향상"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-35-0",
+    "source": "dev"
+  }
+]

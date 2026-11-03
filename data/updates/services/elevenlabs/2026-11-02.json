@@ -1,0 +1,17 @@
+[
+  {
+    "id": "elevenlabs-2026-11-02-1",
+    "service": "elevenlabs",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "music_v1 및 eleven_text_to_sound_v2 모델 지원 종료 예고",
+    "summary": "ElevenLabs의 구형 음악 생성 모델 music_v1과 음향 효과 모델 eleven_text_to_sound_v2의 지원 종료 및 제거 일정이 공지되었어요.",
+    "details": [
+      "music_v1 모델 2027년 1월 31일부로 지원 종료 및 제거 예정",
+      "eleven_text_to_sound_v2 모델 2027년 3월 1일부로 지원 종료 및 제거 예정",
+      "서비스 중단 방지를 위해 최신 음악 및 음향 모델(Sound Effects v3 등)로의 전환 권장"
+    ],
+    "url": "https://elevenlabs.io/docs/overview/models#deprecated-models",
+    "source": "dev"
+  }
+]

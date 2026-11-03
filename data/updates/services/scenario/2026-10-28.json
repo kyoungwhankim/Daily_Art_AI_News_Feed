@@ -1,0 +1,26 @@
+[
+  {
+    "id": "scenario-2026-10-28-1",
+    "service": "scenario",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "MCP Server v0.37.0: OpenAI Custom GPTs 연동 지원",
+    "summary": "Scenario MCP Server v0.37.0이 출시되어 자동 도메인 검증과 함께 OpenAI Custom GPTs와의 연동을 지원해요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-28-2",
+    "service": "scenario",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "MCP Server v0.37.2: 원격 스킬 카탈로그 및 도구 탐색 개선",
+    "summary": "MCP를 통해 Scenario의 원격 스킬 카탈로그를 직접 탐색하고 최신 OpenAI 표준에 맞춘 메타데이터로 에이전트 도구 탐색이 개선되었어요.",
+    "details": [
+      "MCP를 통한 Scenario 원격 스킬 카탈로그 탐색 지원",
+      "최신 OpenAI 표준 메타데이터 업데이트로 도구 탐색 호환성 향상"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-2",
+    "source": "dev"
+  }
+]

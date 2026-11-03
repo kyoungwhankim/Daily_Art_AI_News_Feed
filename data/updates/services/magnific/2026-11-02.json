@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-11-02-1",
+    "service": "magnific",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Wan 3.0 및 Qwen Image 3.0 제품군 API 지원 추가",
+    "summary": "Magnific API에 알리바바의 Wan 3.0 영상 생성 모델(Prime 포함)과 Qwen Image 3.0(Pro 포함) 이미지 생성·편집 모델 엔드포인트가 공식 추가되었어요.",
+    "details": [
+      "POST /v1/ai/video/wan-3-0 및 wan-3-0-prime: 텍스트·프레임·참조 기반 네이티브 오디오 영상 생성(최대 30초, 1080p)",
+      "POST /v1/ai/text-to-image/qwen-image-3: 최대 3개 참조 이미지 기반 생성 및 편집 지원",
+      "POST /v1/ai/text-to-image/qwen-image-3-pro: 1K 및 2K 고해상도 생성·편집 엔드포인트 제공"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-2-2026",
+    "source": "dev"
+  }
+]

@@ -1,5 +1,110 @@
 [
   {
+    "id": "meshy-2026-11-02-1",
+    "service": "meshy",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Retexture API에 Meshy N1 모델 추가",
+    "summary": "Meshy의 재텍스처링(Retexture) API에 1~4장의 참조 이미지로부터 2K 베이스 컬러 텍스처를 제작하는 meshy-n1 모델이 추가되었어요.",
+    "details": [
+      "Retexture API의 ai_model 파라미터에 meshy-n1 옵션 추가",
+      "1~4장의 참조 이미지를 바탕으로 2K 베이스 컬러 텍스처 맵 생성 지원"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-2",
+    "source": "dev"
+  },
+  {
+    "id": "magnific-2026-11-02-1",
+    "service": "magnific",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Wan 3.0 및 Qwen Image 3.0 제품군 API 지원 추가",
+    "summary": "Magnific API에 알리바바의 Wan 3.0 영상 생성 모델(Prime 포함)과 Qwen Image 3.0(Pro 포함) 이미지 생성·편집 모델 엔드포인트가 공식 추가되었어요.",
+    "details": [
+      "POST /v1/ai/video/wan-3-0 및 wan-3-0-prime: 텍스트·프레임·참조 기반 네이티브 오디오 영상 생성(최대 30초, 1080p)",
+      "POST /v1/ai/text-to-image/qwen-image-3: 최대 3개 참조 이미지 기반 생성 및 편집 지원",
+      "POST /v1/ai/text-to-image/qwen-image-3-pro: 1K 및 2K 고해상도 생성·편집 엔드포인트 제공"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-2-2026",
+    "source": "dev"
+  },
+  {
+    "id": "krea-2026-11-02-1",
+    "service": "krea",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "Flux.1 Krea 모델 지원 종료",
+    "summary": "Krea에서 Flux.1 Krea 모델 지원이 공식 종료되었어요. 이미지 생성 및 노드 도구 목록에서 제외되며 향후 Krea 1 또는 Flux 모델을 대신 사용해야 해요.",
+    "details": [
+      "Krea Image 및 Nodes 모델 선택 목록에서 Flux.1 Krea 제거",
+      "대체 모델로 Krea 1 또는 Flux 선택 권장"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#november-2-2026",
+    "source": "dev"
+  },
+  {
+    "id": "iclone-2026-11-02-1",
+    "service": "iclone",
+    "date": "2026.11.02",
+    "kind": "앱",
+    "title": "AccuFACE 2 독립 실행형 앱 출시 (AI 기반 페이셜 캡처)",
+    "summary": "iClone용 페이셜 트래킹 도구인 AccuFACE 2가 독립 실행형 앱으로 출시되었어요. CC5 HD 캐릭터에 최적화된 새 AI 모델과 비디오 클립 트래킹을 지원해요.",
+    "details": [
+      "CC5 HD 캐릭터에 최적화된 신규 AI 페이셜 트래킹 모델 탑재",
+      "별도 캘리브레이션 없이 웹캠 실시간 캡처 및 비디오 클립 기반 페이셜 트래킹 지원",
+      "GPU 가속 실시간 풀프레임 캡처 및 입술 움직임(립 트래킹) 정밀도 개선",
+      "표정 스무딩을 위한 익스프레션 커브(Expression Curves) 도입"
+    ],
+    "url": "https://magazine.reallusion.com/2026/11/02/accuface-2-professional-facial-capture-for-beginners/",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-11-02-1",
+    "service": "heygen",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "HeyGen Video 기반 Cinematic Avatar 렌더링 지원",
+    "summary": "HeyGen 비디오 API에 시네마틱 아바타 기능이 추가되어, 사용자의 아바타 외형과 음성을 heygen_video_1 모델 기반 영상 장면의 등장인물로 직접 합성할 수 있게 되었어요.",
+    "details": [
+      "POST /v3/videos 엔드포인트에서 type: cinematic_avatar 및 model: heygen_video_1 지원",
+      "16:9 또는 9:16 종횡비, 720p 해상도, 5~15초 길이 지원",
+      "이미지 및 영상과 함께 최대 3개 오디오 레퍼런스 결합 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#cinematic-avatar-on-hey-gen-video",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-11-02-1",
+    "service": "elevenlabs",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "music_v1 및 eleven_text_to_sound_v2 모델 지원 종료 예고",
+    "summary": "ElevenLabs의 구형 음악 생성 모델 music_v1과 음향 효과 모델 eleven_text_to_sound_v2의 지원 종료 및 제거 일정이 공지되었어요.",
+    "details": [
+      "music_v1 모델 2027년 1월 31일부로 지원 종료 및 제거 예정",
+      "eleven_text_to_sound_v2 모델 2027년 3월 1일부로 지원 종료 및 제거 예정",
+      "서비스 중단 방지를 위해 최신 음악 및 음향 모델(Sound Effects v3 등)로의 전환 권장"
+    ],
+    "url": "https://elevenlabs.io/docs/overview/models#deprecated-models",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-11-02-1",
+    "service": "claude",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "Messages API에 메시지 스레드(Message Threads) 베타 도입",
+    "summary": "Claude Messages API에 서버 측에서 대화를 유지해 요청 크기와 첫 토큰 생성 시간(TTFT)을 줄여주는 메시지 스레드 기능이 베타로 추가되었어요.",
+    "details": [
+      "message-threads-2026-08-12 베타 헤더를 통해 긴 대화 및 에이전트 루프에서 신규 메시지만 전송 가능",
+      "대화 기록을 서버 측에 유지하여 첫 토큰 생성 시간(TTFT) 단축 및 페이로드 축소",
+      "마지막 요청 후 5분 경과 시 만료되며 최대 1시간 후 삭제",
+      "Claude API, AWS Claude Platform, Google Cloud(Anthropic 관리), MS Foundry에서 사용 가능"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-2-2026",
+    "source": "dev"
+  },
+  {
     "id": "krea-2026-10-31-1",
     "service": "krea",
     "date": "2026.10.31",
@@ -28,6 +133,20 @@
     ],
     "url": "https://unity.com/blog/unity-industry-product-releases-2026",
     "source": "notice"
+  },
+  {
+    "id": "scenario-2026-10-30-1",
+    "service": "scenario",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "MCP Server v0.37.5: 도구 주석 및 OAuth 검색 도구 업데이트",
+    "summary": "도구별 실행 레인 분리로 병렬 처리 안정성을 높이고, 검색 도구의 OAuth 연결에 프로젝트 및 팀 식별자 필수화가 적용되었어요.",
+    "details": [
+      "도구별 독립 실행 레인으로 원활한 병렬 처리 지원",
+      "OAuth 연결 시 검색 도구에 프로젝트 및 팀 식별자 요구 및 쓰기 작업 분류"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-5",
+    "source": "dev"
   },
   {
     "id": "roblox-cube-2026-10-30-1",
@@ -166,6 +285,26 @@
     "source": "notice"
   },
   {
+    "id": "scenario-2026-10-29-2",
+    "service": "scenario",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "MCP Server v0.37.3: 도구 주석 및 라우팅 개선",
+    "summary": "AI 에이전트가 도구 설명을 더 정확히 이해할 수 있도록 도구 주석을 개선하고 생성 및 분석 라우팅 안정성을 높였어요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-3",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-29-1",
+    "service": "scenario",
+    "date": "2026.10.29",
+    "kind": "기능",
+    "title": "Skills v0.60.1: 스킬 설치 및 에이전트 설정 안정화",
+    "summary": "Scenario Skills v0.60.1이 출시되어 버전 고정 설정으로 설치 안정성을 높이고 에이전트 설정 가이드라인이 개선되었어요.",
+    "url": "https://www.scenario.com/changelog/skills-v0-60-1",
+    "source": "dev"
+  },
+  {
     "id": "roblox-cube-2026-10-29-1",
     "service": "roblox-cube",
     "date": "2026.10.29",
@@ -296,6 +435,30 @@
     "source": "notice"
   },
   {
+    "id": "scenario-2026-10-28-2",
+    "service": "scenario",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "MCP Server v0.37.2: 원격 스킬 카탈로그 및 도구 탐색 개선",
+    "summary": "MCP를 통해 Scenario의 원격 스킬 카탈로그를 직접 탐색하고 최신 OpenAI 표준에 맞춘 메타데이터로 에이전트 도구 탐색이 개선되었어요.",
+    "details": [
+      "MCP를 통한 Scenario 원격 스킬 카탈로그 탐색 지원",
+      "최신 OpenAI 표준 메타데이터 업데이트로 도구 탐색 호환성 향상"
+    ],
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-2",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-10-28-1",
+    "service": "scenario",
+    "date": "2026.10.28",
+    "kind": "기능",
+    "title": "MCP Server v0.37.0: OpenAI Custom GPTs 연동 지원",
+    "summary": "Scenario MCP Server v0.37.0이 출시되어 자동 도메인 검증과 함께 OpenAI Custom GPTs와의 연동을 지원해요.",
+    "url": "https://www.scenario.com/changelog/mcp-server-v0-37-0",
+    "source": "dev"
+  },
+  {
     "id": "runway-2026-10-28-1",
     "service": "runway",
     "date": "2026.10.28",
@@ -409,164 +572,5 @@
     ],
     "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
     "source": "dev"
-  },
-  {
-    "id": "runway-2026-10-27-1",
-    "service": "runway",
-    "date": "2026.10.27",
-    "kind": "기능",
-    "title": "Runway Ads 공개: 승인한 광고 변형을 자동 게재",
-    "summary": "Runway Ads가 Meta·Google·TikTok 실적 광고를 읽고 플랫폼별 맞춤 변형을 만들어 줘요. 승인한 것만 게재되며 모든 유료 플랜에 포함돼요.",
-    "url": "https://runwayml.com/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "mai-image-2026-10-27-1",
-    "service": "mai-image",
-    "date": "2026.10.27",
-    "kind": "모델",
-    "title": "MAI-Image-2.6 과 2.6-Flash 정식 출시 (Microsoft Foundry)",
-    "summary": "MAI-Image-2.6과 MAI-Image-2.6-Flash가 Microsoft Foundry에서 정식 출시(GA)됐어요. 이미지 아이디어를 다듬고 여러 대상에 맞게 변형하는 작업을 빠르게 할 수 있어요.",
-    "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally/ba-p/4566327",
-    "source": "notice"
-  },
-  {
-    "id": "ludo.ai-2026-10-27-1",
-    "service": "ludo.ai",
-    "date": "2026.10.27",
-    "kind": "기능",
-    "title": "Ludo CLI 무료 툴박스 32종 공개, 코딩 에이전트에서 사용",
-    "summary": "Ludo CLI에 무료 툴박스가 추가됐어요. 32가지 도구로 스프라이트 피벗, 콜라이더, 스프라이트시트 분할·정렬·루프 점수 등을 코딩 에이전트가 직접 실행해요.",
-    "details": [
-      "Claude Code·Codex·Cursor 등에서 스킬로 설치 가능 (ludo skill install)",
-      "Unity·Godot·Phaser·Box2D용 스프라이트 수치 계산",
-      "스프라이트시트 slice·pack·loop·gif 등 도구",
-      "이미지 리컬러, 타일 세트 작성, 오디오·3D 모델 점검"
-    ],
-    "url": "https://ludo.ai/whats-new#free-toolbox-give-your-coding-agent-superpowers-for-your-game-assets",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-27-1",
-    "service": "krea",
-    "date": "2026.10.27",
-    "kind": "기능",
-    "title": "Krea 3 API 4K 출력과 Agent 노드 제작 기능 추가",
-    "summary": "Krea 3 이미지를 API에서 4K 해상도로 생성할 수 있게 됐어요. Agent가 Nodes에서 커스텀 노드를 직접 만들고, 개인·서비스 API 토큰도 생겼어요.",
-    "details": [
-      "Krea 3 API: 4K 출력 설정 추가 (ultra·Zero Data Retention에서는 불가, 2K 대비 2배 업스케일 비용)",
-      "Agent가 Nodes에서 커스텀 워크플로 노드를 제작",
-      "GPT-6.1 Terra를 Krea Agent에서 사용 가능",
-      "Nodes 프로젝트를 조직 단위로 공유",
-      "개인 및 서비스 API 토큰 생성 기능"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-27-2026",
-    "source": "dev"
-  },
-  {
-    "id": "heygen-2026-10-27-1",
-    "service": "heygen",
-    "date": "2026.10.27",
-    "kind": "API",
-    "title": "reference_to_video 참고 영상 총 15초 예산 공유",
-    "summary": "reference_to_video 요청에서 참고 영상 최대 3개가 총 15초의 입력 예산을 나눠 쓰게 됐어요. 한 영상이 15초 전체를 쓸 수도 있어요.",
-    "details": [
-      "참고 영상 3개가 15초 예산 공유, 초과 시 각 영상의 앞 5초를 우선 사용",
-      "POST /v3/models/videos의 reference_to_video에 적용"
-    ],
-    "url": "https://docs.heygen.com/changelog",
-    "source": "dev"
-  },
-  {
-    "id": "figma-ai-2026-10-27-1",
-    "service": "figma-ai",
-    "date": "2026.10.27",
-    "kind": "기능",
-    "title": "생성형 플러그인 및 셰이더 버전 기록 및 복원 지원",
-    "summary": "생성형 플러그인과 셰이더를 편집할 때 자동으로 새 버전이 생성되어 이전 버전을 탐색하고 손쉽게 복원할 수 있게 되었어요.",
-    "details": [
-      "도구 편집 시마다 에이전트가 자동 변경 로그 설명을 작성해 버전 기록 보존",
-      "현재 게시된 버전 확인 및 이전 시점 상태로 안전하게 복원 지원"
-    ],
-    "url": "https://www.figma.com/release-notes/?title=view-and-restore-previous-versions-of-your-generative-plugins-and-shaders",
-    "source": "notice"
-  },
-  {
-    "id": "nano-banana-2026-10-26-1",
-    "service": "nano-banana",
-    "date": "2026.10.26",
-    "kind": "기능",
-    "title": "Nano Banana 2.1 이미지를 Cloud Storage로 바로 저장",
-    "summary": "Vertex AI에서 Nano Banana 2.1 등 Gemini 이미지 모델이 생성한 이미지를 Cloud Storage 버킷에 바로 저장할 수 있게 됐어요. 응답에는 이미지 바이트 대신 객체 URI가 담겨요.",
-    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_26_2026",
-    "source": "dev"
-  },
-  {
-    "id": "layer-2026-10-26-1",
-    "service": "layer",
-    "date": "2026.10.26",
-    "kind": "기능",
-    "title": "Layer 패럴랙스 레이어와 AI 제어 기능 공개",
-    "summary": "배경을 스크롤되는 깊이 레이어로 나누고, 워크스페이스 관리자가 AI 생성 범위와 콘텐츠 정책을 정할 수 있게 됐어요.",
-    "details": [
-      "배경을 2~6개 깊이 레이어로 분할해 레이어드 PSD로 저장",
-      "AI Controls: 생성 모델, 에이전트, 입력 가드레일, 결과 점수 설정",
-      "Linear, Jira 커넥터와 원격 MCP 서버 연결",
-      "타일 분할·스티치 노드와 플러그인, CLI 기기 로그인 추가"
-    ],
-    "url": "https://www.layer.ai/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "krea-2026-10-26-1",
-    "service": "krea",
-    "date": "2026.10.26",
-    "kind": "기능",
-    "title": "Krea에 Kling 4.0 영상과 TouchDesigner 연동 추가",
-    "summary": "Krea에서 Kling 4.0으로 텍스트, 이미지, 레퍼런스 기반 영상을 만들 수 있게 됐어요. 모든 플랜에 Krea 3 이미지 9장이 무료로 제공돼요.",
-    "details": [
-      "Kling 4.0 영상 생성: 텍스트, 이미지, 레퍼런스 영상 지원",
-      "TouchDesigner용 Krea 패널, Agent 도구, Realtime 지원",
-      "Claude, Cursor 등 Agent 플러그인 설치 링크 추가",
-      "API 웹훅을 Ed25519 서명으로 검증할 수 있게 됨"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#october-26-2026",
-    "source": "dev"
-  },
-  {
-    "id": "figma-ai-2026-10-26-1",
-    "service": "figma-ai",
-    "date": "2026.10.26",
-    "kind": "연동",
-    "title": "Figma MCP에서 Weave의 영상·이미지 모델 사용",
-    "summary": "Figma Weave에서 쓸 수 있는 영상과 이미지 모델을 이제 Figma MCP를 통해 AI 에이전트에서 바로 사용할 수 있어요.",
-    "url": "https://www.figma.com/release-notes/?title=access-video-and-image-models-from-figma-weave-via-the-figma-mcp",
-    "source": "notice"
-  },
-  {
-    "id": "elevenlabs-2026-10-26-1",
-    "service": "elevenlabs",
-    "date": "2026.10.26",
-    "kind": "API",
-    "title": "ElevenLabs, v4 음성용 복제 강도 조절 옵션 및 고속 에이전트 티어 도입",
-    "summary": "ElevenLabs가 v4 모델 대상 보이스 복제 강도(clone_strength) 설정 파라미터와 ElevenAgents 전용 고속 LLM 서비스 티어를 새롭게 지원해요.",
-    "details": [
-      "TTS 및 대화 생성 요청 시 v4 모델의 학습 샘플 반영도를 0~1 사이로 조절하는 clone_strength 파라미터 추가",
-      "ElevenAgents에서 지연 시간을 낮추고 처리량을 높인 고속(fast) LLM 서비스 티어 도입",
-      "에이전트 지식 베이스 웹 크롤링 시 제외 패턴(최대 50개) 필터링 지원",
-      "워크스페이스 서비스 계정 API 키 만료 기한(15분~90일) 설정 지원"
-    ],
-    "url": "https://elevenlabs.io/docs/changelog/2026/10/26",
-    "source": "dev"
-  },
-  {
-    "id": "higgsfield-2026-10-25-1",
-    "service": "higgsfield",
-    "date": "2026.10.25",
-    "kind": "기능",
-    "title": "Higgsfield 플레이어블 광고와 게임 제작 기능 공개",
-    "summary": "인터랙티브 광고를 만드는 Playable Ads(Enterprise 전용)와 모든 플랜에서 쓰는 모바일 게임 제작 도구 Playable Games가 나왔어요.",
-    "url": "https://higgsfield.ai/blog/higgsfield-playable-ads-and-games",
-    "source": "notice"
   }
 ]
