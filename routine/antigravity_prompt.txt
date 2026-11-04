@@ -129,10 +129,17 @@ A3. Order of work:
     with the W rules.
     WAIT FOR THE UPDATES AGENT: run its `agent-status` commands; they print "finished".
 A4. WEEKLY REPORT (when `weekly_report.py due` prints DUE): after the
-    `weekly_report.py context` step, read routine/report_agent_prompt.txt and follow it from
-    STEP 1 to FINISH yourself, then continue with `apply-report` in daily_feed_prompt.txt.
+    `weekly_report.py context` step, run:
+        <PREFIX> python scripts/run.py scripts/run_report_agent.py
+    which launches a dedicated **Gemini 4 Argon (High)** (`MODEL_PLACEHOLDER_M417`) agent session
+    to execute `routine/report_agent_prompt.txt` (writing 5-minute veteran analyst commentary essays
+    and updating `routine/role_knowledge/*.md`) and waits until `/tmp/report/DONE` is created.
+    (Only if `run_report_agent.py` cannot connect to the Language Server, read
+    `routine/report_agent_prompt.txt` and follow it from STEP 1 to FINISH yourself.)
+    Then continue with `apply-report` in daily_feed_prompt.txt.
 A5. While doing an agent's work, that agent's own rules apply too (e.g. "do not edit files
-    inside REPO, never run git" — its scripts write only to the work folders).
+    inside REPO except routine/role_knowledge/<role>.md, never run git" — its scripts write only
+    to the work folders).
 A6. PHASE 2's "Do NOT spawn sub-agents" stays true: process every article yourself, one at a
     time (R4). Do NOT write a batch/wrapper script (e.g. C:\tmp\do_phase2.py) that loops over the
     digest and calls article-add — run STEP 3 and the article-add command yourself for each

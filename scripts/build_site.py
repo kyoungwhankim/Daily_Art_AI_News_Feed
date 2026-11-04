@@ -693,10 +693,10 @@ def build_about() -> str:
     </div>"""
     report_mock = """<div class="lp-mock lp-report" aria-hidden="true">
       <div class="lp-kick"><span>WEEKLY REPORT</span><span class="lp-latest">LATEST</span><span>3D 아티스트</span></div>
-      <div class="lp-rtitle">이번 주 3D 툴에 들어온 생성형 AI 기능을 정리했습니다</div>
-      <div class="lp-rsec"><span>01</span><b>꼭 알아야 할 것</b></div><p></p><p class="s"></p>
-      <div class="lp-rsec"><span>02</span><b>시사점</b></div><p></p><p class="s"></p>
-      <div class="lp-rref">근거 기사 3건</div>
+      <div class="lp-rtitle">오픈 3D 생성 모델의 격돌, 실무 파이프라인의 진짜 병목은 어디에 있는가</div>
+      <p></p><p></p><p class="s"></p>
+      <div class="lp-rsec"><span>##</span><b>생성 속도가 아니라 토폴로지 통제권이 승부처다</b></div><p></p><p></p><p class="s"></p>
+      <div class="lp-rref">근거 기사 2건 · 5분 칼럼</div>
     </div>"""
     purpose_vis = """<blockquote class="lp-quote">넘쳐나는 정보를 쫓는 대신,<br><strong>꼭 알아야 할 소식만</strong> 짧게 확인하고<br>다시 작업에 집중하세요.</blockquote>"""
     source_vis = """<div class="lp-mock lp-sources" aria-hidden="true">
@@ -732,12 +732,12 @@ def build_about() -> str:
         </ol>
         <p class="lp-note">로그인하지 않아도 <a href="{root}for/">아티스트 브리핑</a>에서 직군별 소식을 바로 볼 수 있어요.
         관심사와 저장 정보를 다루는 방식은 <a href="{root}privacy/">개인정보처리방침</a>에 적어 두었어요.</p>""", feed_mock),
-        ('금주 리포트', f"""<p>매주 금요일, 그 주(토요일~금요일)에 올라온 기사를 바탕으로 직군별 리포트를 발행합니다.
-        바쁜 주에도 몇 분이면 내 직군에 필요한 소식과 그 의미를 따라갈 수 있도록 정리해요.</p>
+        ('금주 리포트', f"""<p>매주 금요일, 그 주(토요일~금요일)에 올라온 기사 가운데 가장 중요한 한두 가지 핵심 이슈를 골라 직군별 5분 칼럼으로 발행합니다.
+        단순 요약을 넘어 수십년차 직무 분석가의 시각으로 기술의 이면과 실무 인사이트를 깊이 있게 짚어 드려요.</p>
         <ul class="lp-bullets">
-          <li><b>직군별로 따로</b> 3D부터 UI·UX 디자이너까지 9개 직군마다 한 편씩 씁니다.</li>
-          <li><b>꼭 알아야 할 것</b> 놓치면 안 되는 소식을 도구 이름과 숫자까지 구체적으로 적어요.</li>
-          <li><b>시사점</b> 작업 단계, 비용과 일정, 품질 검수, 라이선스, 팀과 역량 관점에서 그 소식이 실제 작업에 주는 영향을 분석해요.</li>
+          <li><b>직군별 전문 칼럼</b> 3D부터 UI·UX 디자이너까지 9개 직군마다 독립된 시각으로 한 편씩 씁니다.</li>
+          <li><b>핵심 이슈 집중 해부</b> 여러 소식을 나열하는 대신 가장 통찰력 있는 1~2개 주제를 골라 5분 분량의 줄글로 깊게 파고듭니다.</li>
+          <li><b>비판적 실무 시각</b> 홍보성 수치를 걷어내고 실제 프로덕션 파이프라인의 병목, 검수 비용, 툴체인 호환성, 아티스트의 경쟁력 관점에서 비평합니다.</li>
           <li><b>근거 기사</b> 모든 사실은 그 주에 실린 기사에서 가져오고, 바탕이 된 기사를 함께 밝힙니다.</li>
         </ul>
         <p class="lp-note"><a href="{root}reports/">금주 리포트 보기 →</a></p>""", report_mock),
@@ -947,7 +947,8 @@ def main():
     bundle = not args.no_bundle
     react_tags, app_v = '', ''
     if bundle:
-        subprocess.run(['npx', '--yes', ESBUILD, os.path.join(repo, 'app.jsx'),
+        npx_bin = shutil.which('npx') or 'npx'
+        subprocess.run([npx_bin, '--yes', ESBUILD, os.path.join(repo, 'app.jsx'),
                         '--loader:.jsx=jsx', '--jsx-factory=React.createElement',
                         '--jsx-fragment=React.Fragment', '--target=es2019', '--minify',
                         f'--outfile={os.path.join(out, "app.js")}'], check=True)
@@ -1118,7 +1119,7 @@ def main():
     rep_index = load_json_safe(os.path.join(repo, 'data', 'reports', 'index.json')).get('reports', [])
     role_label = {r['id']: r['label'] for r in roles}
     by_id = {a['id']: a for a in articles}
-    rep_desc = '그 주에 올라온 AI 소식을 직군별로 분석합니다. 내 직군이 꼭 알아야 할 것과 작업에 주는 시사점을 정리했습니다.'
+    rep_desc = '그 주에 올라온 AI 소식 가운데 가장 중요한 한두 가지 이슈를 골라, 수십년차 직무 분석가의 시각으로 깊이 있게 비평하고 실무 인사이트를 전하는 5분 칼럼입니다.'
 
     def rep_list(items):
         return '<ul class="static-list">' + ''.join(
@@ -1149,8 +1150,14 @@ def main():
     for date, week in rep_weeks.items():
         for e in week.get('reports', []):
             p = f'reports/{e["role"]}/{date}/'
-            secs = ''.join(f'<h2>{label}</h2><ul>' + ''.join(f'<li>{esc(t)}</li>' for t in e.get(k, [])) + '</ul>'
-                           for k, label in (('must_know', '꼭 알아야 할 것'), ('implications', '시사점')))
+            if e.get('body'):
+                secs = ''.join(
+                    f'<h2>{esc(t[3:].strip())}</h2>' if isinstance(t, str) and t.startswith('## ') else f'<p>{esc(t)}</p>'
+                    for t in e.get('body', [])
+                )
+            else:
+                secs = ''.join(f'<h2>{label}</h2><ul>' + ''.join(f'<li>{esc(t)}</li>' for t in e.get(k, [])) + '</ul>'
+                               for k, label in (('must_know', '꼭 알아야 할 것'), ('implications', '시사점')))
             refs = ''.join(f'<li><a href="{href("/", article_path(by_id[i]))}">{esc(by_id[i]["headline"])}</a>'
                            f'<span class="static-item-meta">{esc(by_id[i]["source"])} · {esc(by_id[i]["publishedAt"])}</span></li>'
                            for i in e.get('refs', []) if i in by_id)

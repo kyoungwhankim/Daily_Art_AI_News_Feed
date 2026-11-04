@@ -61,7 +61,7 @@ def commit_changes(upload_date: str) -> bool:
         True: 새 commit이 생성됨
         False: 변경사항이 없어서 commit 생략됨
     """
-    run(['git', 'add', 'data', 'scripts/keyword_rules.json'])
+    run(['git', 'add', 'data', 'scripts/keyword_rules.json', 'routine/role_knowledge'])
     status = run(['git', 'diff', '--cached', '--stat'])
     print('Staged changes:', flush=True)
     print(status.stdout or '(none)', flush=True)

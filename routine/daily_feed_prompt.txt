@@ -840,7 +840,7 @@ file and continue (the page keeps last week's data; it is checked again tomorrow
 
 ---
 
-WEEKLY REPORT (Fridays only — '금주 리포트', one short report per role)
+WEEKLY REPORT (Fridays only — '금주 리포트', 5-minute veteran analyst commentary per role)
 
 Runs after today's articles are merged, so the report covers the whole week
 (Saturday–Friday) including today.
@@ -853,13 +853,12 @@ If it prints "NOT DUE", skip this section. If it prints "DUE":
 python3 scripts/routine_steps.py workdir report
 python3 scripts/weekly_report.py context
 
-Then start ONE agent with the Agent (Task) tool in the FOREGROUND (wait for it),
-on the Sonnet model (model: "sonnet" — the add script checks length, tone,
-banned phrases and article ids of every report), with exactly this
-prompt (fill in the date):
+Then launch the dedicated **Gemini 4 Argon (High)** weekly report agent session and wait for it to finish:
 
-  Today is {{date}}. Read /home/user/Daily_Art_AI_News_Feed/routine/report_agent_prompt.txt
-  and follow it exactly, from STEP 1 to FINISH.
+python3 scripts/run_report_agent.py
+
+(In an environment without the Antigravity Language Server, start ONE foreground agent on your
+highest-reasoning model with `routine/report_agent_prompt.txt` from STEP 1 to FINISH.)
 
 When it returns, merge and check:
 

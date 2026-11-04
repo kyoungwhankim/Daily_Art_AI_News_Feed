@@ -556,9 +556,10 @@ def cmd_undo_data(args):
     if not args or args[0] not in ('updates', 'free', 'reports'):
         sys.exit('usage: undo-data updates|free|reports')
     path = 'data/' + args[0]
-    subprocess.run(['git', 'checkout', '--', path], cwd=REPO, capture_output=True)
-    subprocess.run(['git', 'clean', '-fdq', path], cwd=REPO)
-    print(f'Restored {path}.')
+    paths = [path, 'routine/role_knowledge'] if args[0] == 'reports' else [path]
+    subprocess.run(['git', 'checkout', '--'] + paths, cwd=REPO, capture_output=True)
+    subprocess.run(['git', 'clean', '-fdq'] + paths, cwd=REPO)
+    print(f'Restored {", ".join(paths)}.')
     py('validate_data.py')
 
 
@@ -656,7 +657,7 @@ def cmd_push_local(args):
         git('config', '--local', '--unset', 'user.email')
         git('config', '--local', '--unset', 'user.name')
         print('Removed the Claude routine git identity from this repository (using your own).')
-    git('add', 'data', 'scripts/keyword_rules.json')
+    git('add', 'data', 'scripts/keyword_rules.json', 'routine/role_knowledge')
     stat = git('diff', '--cached', '--stat').stdout
     print('Staged changes:\n' + (stat or '(none)'))
     if not stat.strip():

@@ -2857,7 +2857,12 @@ function loadReportWeek(date) {
 const repDate = d => d.replace(/-/g, '.');
 const repRange = (a, b) => `${repDate(a)} – ${b.slice(5).replace('-', '.')}`;
 // 읽는 시간: 한국어 1분에 500자 안팎으로 잡는다
-const readMin = (r) => Math.max(1, Math.round(([r.lede, ...(r.must_know || []), ...(r.implications || [])].join('').length) / 500));
+const readMin = (r) => Math.max(1, Math.round(([
+  r.lede,
+  ...(r.body || []).map(s => s.startsWith('## ') ? s.slice(3) : s),
+  ...(r.must_know || []),
+  ...(r.implications || []),
+].join('').length) / 500));
 const REPORT_SECTIONS = [
   ['must_know', '꼭 알아야 할 것'],
   ['implications', '시사점'],
@@ -2902,7 +2907,15 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
               <p className="rp-lede">{rep.lede}</p>
               <div className="rp-byline">AI Art Daily 편집 · {repDate(week.date)} 발행 · 이번 주 기사 {week.articles}건 분석</div>
             </header>
-            {REPORT_SECTIONS.map(([k, label], i) => (
+            {rep.body && rep.body.length > 0 ? (
+              <div className="rp-prose">
+                {rep.body.map((t, i) => t.startsWith('## ') ? (
+                  <h2 key={i} className="rp-subhead">{t.slice(3).trim()}</h2>
+                ) : (
+                  <p key={i} className="rp-p">{t}</p>
+                ))}
+              </div>
+            ) : REPORT_SECTIONS.map(([k, label], i) => (
               <section key={k} className="rp-sec">
                 <h2><span className="rp-sec-no">{String(i + 1).padStart(2, '0')}</span>{label}</h2>
                 <ul>{(rep[k] || []).map((t, j) => <li key={j}>{t}</li>)}</ul>
@@ -2943,7 +2956,7 @@ function ReportsView({ role, date, onOpen, articles, onOpenArticle }) {
       <header className="rp-head">
         <div className="rp-kicker"><span>WEEKLY REPORT</span><span>매주 금요일 발행</span></div>
         <h1>{roleObj ? `${roleObj.label} 리포트` : '금주 리포트'}</h1>
-        <p>그 주에 올라온 AI 소식을 직군별로 분석합니다. 내 직군이 꼭 알아야 할 것과 작업에 주는 시사점을 정리했습니다.</p>
+        <p>그 주에 올라온 AI 소식 가운데 가장 중요한 한두 가지 이슈를 골라, 수십년차 직무 분석가의 시각으로 깊이 있게 비평하고 실무 인사이트를 전하는 5분 칼럼입니다.</p>
       </header>
       <div className="rp-filter" role="tablist">
         <button type="button" className={!role ? 'on' : ''} onClick={() => onOpen(null, null)}>전체</button>
