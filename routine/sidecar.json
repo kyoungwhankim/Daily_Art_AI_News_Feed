@@ -1,0 +1,13 @@
+{
+  "builtin": "schedule",
+  "restart_policy": "always",
+  "args": [
+    "CRON_TZ=Asia/Seoul 0 9 * * *",
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\kkkh0315\\.gemini\\config\\sidecars\\aidailynews\\start_conversation.py",
+    "--model=MODEL_PLACEHOLDER_M318",
+    "--",
+    "You run the AI Art Daily daily routine (Korean AI news digest, GitHub repository kyoungwhankim/Daily_Art_AI_News_Feed); this run is unattended, so never stop to ask anything. STEP 1: in PowerShell run these commands one at a time: (1) Set-Location C:\\Users\\kkkh0315\\.gemini\\antigravity\\scratch\\Daily_Art_AI_News_Feed (2) git rebase --abort (an error here is fine) (3) git fetch origin main (4) git checkout -f main (5) git reset --hard origin/main (6) git log --oneline -1 (7) git log --oneline -1 origin/main. Lines (6) and (7) must show the same commit, otherwise stop and report. Use ONLY this folder: never search for or use another copy of the repository on this computer. STEP 2: read routine/antigravity_prompt.txt in that folder in full and follow it exactly from SETUP to FINISH. STEP 3: if your context is ever summarized, re-read routine/antigravity_prompt.txt and continue from the step you were on; never start over."
+  ],
+  "display_name": "aidailynews"
+}
