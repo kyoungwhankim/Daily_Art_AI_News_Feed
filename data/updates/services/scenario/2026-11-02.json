@@ -1,0 +1,18 @@
+[
+  {
+    "id": "scenario-2026-11-02-1",
+    "service": "scenario",
+    "date": "2026.11.02",
+    "kind": "API",
+    "title": "API v2.143.0 출시 및 3DGS·더빙·업스케일 신규 모델 추가",
+    "summary": "3D 생성 품질 개선 및 과금 추적을 강화한 API v2.143.0을 배포하고, 단일 이미지 3DGS 생성 모델 Idol과 4K 비디오 업스케일 모델을 도입했어요.",
+    "details": [
+      "API v2.143.0: 3D 생성 세부 개선, 세분화된 CU 사용량 추적 및 Ideogram 모델 요금 개편",
+      "Sperid Labs Idol: 단일 이미지로부터 최대 100만 가우시안 3DGS 생성 지원",
+      "P-Video Upscale: 최대 4K 해상도 및 60fps 프레임 보간 업스케일 지원",
+      "VEED Dubbing: 음성 복제 및 립싱크를 통한 다국어 영상 더빙 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-143-0",
+    "source": "dev"
+  }
+]

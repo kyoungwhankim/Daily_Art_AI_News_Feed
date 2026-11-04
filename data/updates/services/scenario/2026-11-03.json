@@ -1,0 +1,17 @@
+[
+  {
+    "id": "scenario-2026-11-03-1",
+    "service": "scenario",
+    "date": "2026.11.03",
+    "kind": "모델",
+    "title": "Meshy N1 3D 리텍스처 및 ElevenLabs SFX v3 모델 추가",
+    "summary": "3D 모델 2K 텍스처 생성 모델 Meshy N1과 향상된 효과음 생성 모델 ElevenLabs SFX v3을 도입하고 일부 레거시 모델 종료 일정을 안내했어요.",
+    "details": [
+      "Meshy N1 Retexture: 1~4장 참조 이미지로 로우폴리 3D 모델에 2K 베이스 컬러 텍스처 입히기",
+      "ElevenLabs Sound Effects v3: 0.1~30초 길이의 텍스트 기반 고품질 효과음 생성 지원",
+      "Gemini Omni Flash 1.0(11월 6일) 및 Tripo 2.5(12월 1일) 단계적 서비스 종료 예정"
+    ],
+    "url": "https://www.scenario.com/changelog/models-45c4b84e4acf3d7bfcf28402dd7ebe1fe73562f6bf32624de49c606e8530c55e",
+    "source": "dev"
+  }
+]

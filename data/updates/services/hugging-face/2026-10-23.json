@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hugging-face-2026-10-23-1",
+    "service": "hugging-face",
+    "date": "2026.10.23",
+    "kind": "기능",
+    "title": "비공개 저장소 설정에서 외부 공동 작업자 직접 초대 지원",
+    "summary": "조직 관리자가 비공개 저장소 설정 화면에서 특정 리소스 그룹에 한해 외부 협업자를 직접 초대할 수 있는 권한 관리 기능을 도입했어요.",
+    "details": [
+      "Team 및 Enterprise 플랜에서 리포지토리 단위 외부 공동 작업자 초대 지원",
+      "지정된 리포지토리의 리소스 그룹에만 읽기 또는 쓰기 접근 권한 부여"
+    ],
+    "url": "https://huggingface.co/changelog/external-collaborators-from-repo-settings",
+    "source": "notice"
+  }
+]

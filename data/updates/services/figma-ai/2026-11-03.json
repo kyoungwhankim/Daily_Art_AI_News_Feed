@@ -1,0 +1,16 @@
+[
+  {
+    "id": "figma-ai-2026-11-03-1",
+    "service": "figma-ai",
+    "date": "2026.11.03",
+    "kind": "기능",
+    "title": "코드 레이어에서 프로토타입 연결 상태를 AI 문맥으로 인식",
+    "summary": "디자인 프레임에서 코드 레이어를 생성할 때 AI 에이전트가 프레임 간의 프로토타입 인터랙션 연결 정보를 직접 참조하도록 개선했어요.",
+    "details": [
+      "복잡한 플로우 프롬프트 작성 시간 단축 및 엣지 케이스 탐색 지원",
+      "Figma Design 오픈 베타 코드 레이어 기능에 적용"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=your-prototype-connections-now-context-for-code-layers",
+    "source": "notice"
+  }
+]

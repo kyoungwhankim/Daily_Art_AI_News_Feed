@@ -1,0 +1,16 @@
+[
+  {
+    "id": "invokeai-2026-11-01-1",
+    "service": "invokeai",
+    "date": "2026.11.01",
+    "kind": "기능",
+    "title": "InvokeAI 6.14.3 출시: 캔버스 편집 가능한 벡터 레이어 지원",
+    "summary": "캔버스에서 도형과 스플라인을 직접 편집할 수 있는 벡터 레이어 기능이 추가되었으며, 중단된 모델 다운로드 이어받기 안정성을 개선했어요.",
+    "details": [
+      "Canvas: 도형과 스플라인 편집이 가능한 벡터 그래픽 레이어 도입 및 img2img 래스터화 지원",
+      "Model Manager: 서버 충돌 또는 비정상 종료 후에도 모델 다운로드 이어받기 지원"
+    ],
+    "url": "https://invoke.ai/releases/#invokeai-6-14-3",
+    "source": "notice"
+  }
+]

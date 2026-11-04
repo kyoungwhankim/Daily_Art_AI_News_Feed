@@ -7,10 +7,10 @@
       "rev": "79db2c07d6"
     },
     "video": {
-      "count": 979,
-      "latest": "2026.11.02",
+      "count": 981,
+      "latest": "2026.11.03",
       "file": "updates/feed/video.json",
-      "rev": "c70737b53f"
+      "rev": "a54afaf743"
     },
     "3d": {
       "count": 188,
@@ -19,10 +19,10 @@
       "rev": "d1305b94a1"
     },
     "game-assets": {
-      "count": 583,
-      "latest": "2026.10.30",
+      "count": 586,
+      "latest": "2026.11.03",
       "file": "updates/feed/game-assets.json",
-      "rev": "ddca64ca83"
+      "rev": "07d0791393"
     },
     "motion": {
       "count": 169,
@@ -37,10 +37,10 @@
       "rev": "b4f6da197c"
     },
     "tools": {
-      "count": 1039,
-      "latest": "2026.11.02",
+      "count": 1043,
+      "latest": "2026.11.03",
       "file": "updates/feed/tools.json",
-      "rev": "34de1169d9"
+      "rev": "11bcde76bd"
     }
   },
   "services": {
@@ -140,9 +140,9 @@
       "latest": "2026.10.23"
     },
     "higgsfield": {
-      "count": 62,
+      "count": 63,
       "first": "2025.04.24",
-      "latest": "2026.10.30"
+      "latest": "2026.11.03"
     },
     "ltx-studio": {
       "count": 65,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 82,
+      "count": 83,
       "first": "2025.11.29",
-      "latest": "2026.11.02"
+      "latest": "2026.11.03"
     },
     "synthesia": {
       "count": 193,
@@ -205,14 +205,14 @@
       "latest": "2026.04.02"
     },
     "scenario": {
-      "count": 385,
+      "count": 387,
       "first": "2022.12.23",
-      "latest": "2026.10.30"
+      "latest": "2026.11.03"
     },
     "layer": {
-      "count": 105,
+      "count": 106,
       "first": "2023.01.20",
-      "latest": "2026.10.26"
+      "latest": "2026.11.02"
     },
     "ludo.ai": {
       "count": 50,
@@ -275,9 +275,9 @@
       "latest": "2026.10.28"
     },
     "invokeai": {
-      "count": 73,
+      "count": 74,
       "first": "2022.10.10",
-      "latest": "2026.09.27"
+      "latest": "2026.11.01"
     },
     "unity-ai": {
       "count": 40,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 69,
+      "count": 70,
       "first": "2025.05.21",
-      "latest": "2026.10.22"
+      "latest": "2026.10.23"
     },
     "fal.ai": {
       "count": 170,
@@ -300,9 +300,9 @@
       "latest": "2026.10.29"
     },
     "figma-ai": {
-      "count": 86,
+      "count": 87,
       "first": "2024.03.28",
-      "latest": "2026.10.30"
+      "latest": "2026.11.03"
     },
     "blender": {
       "count": 32,
@@ -310,9 +310,9 @@
       "latest": "2026.10.30"
     },
     "claude": {
-      "count": 239,
+      "count": 240,
       "first": "2023.03.14",
-      "latest": "2026.11.02"
+      "latest": "2026.11.03"
     }
   }
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-11-03-1",
+    "service": "claude",
+    "date": "2026.11.03",
+    "kind": "기능",
+    "title": "생성 텍스트에 앤트로픽 텍스트 워터마크 기본 적용",
+    "summary": "Claude Mythos 5, Opus 4.7, Sonnet 4.6 모델이 생성한 텍스트에 앤트로픽의 공식 텍스트 워터마크가 기본 적용되도록 시스템을 개선했어요.",
+    "details": [
+      "지원 플랫폼에서 Mythos 5, Opus 4.7, Sonnet 4.6 모델 생성물에 텍스트 워터마크 삽입",
+      "Sonnet 4.6의 경우 temperature, top_p, top_k 비기본값 설정 시 워터마크가 제외될 수 있음"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-3-2026",
+    "source": "dev"
+  }
+]

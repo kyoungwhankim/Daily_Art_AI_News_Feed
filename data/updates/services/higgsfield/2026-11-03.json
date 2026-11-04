@@ -1,0 +1,18 @@
+[
+  {
+    "id": "higgsfield-2026-11-03-1",
+    "service": "higgsfield",
+    "date": "2026.11.03",
+    "kind": "기능",
+    "title": "만화·웹툰 제작 특화 에이전트 툴 '망가카' 출시",
+    "summary": "아이디어나 대본을 바탕으로 스토리 구성, 캐릭터 설정, 컷 분할 및 일러스트레이션까지 전자동 또는 단계별로 제작할 수 있는 '망가카(Mangaka)'를 공개했어요.",
+    "details": [
+      "흑백 만화, 컬러 만화, 코믹스, 웹툰(9:16) 등 4가지 스타일 지원",
+      "대본(PDF·DOCX) 업로드 및 사진 기반 캐릭터 생성 지원",
+      "한국어를 포함한 14개 언어 자동 번역 및 말풍선 배치",
+      "PDF, CBZ, 개별 PNG 형식 내보내기 지원"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-introduces-mangaka",
+    "source": "notice"
+  }
+]
