@@ -1,0 +1,18 @@
+[
+  {
+    "id": "heygen-2026-11-04-1",
+    "service": "heygen",
+    "date": "2026.11.04",
+    "kind": "API",
+    "title": "음성 합성 API에 출력 오디오 포맷 및 샘플 레이트 선택 옵션 추가",
+    "summary": "HeyGen이 TTS 및 음성 생성 API에서 PCM, MP3, μ-law, A-law 등 다양한 오디오 출력 포맷과 8kHz~48kHz 샘플 레이트 지정을 지원하도록 업데이트했어요.",
+    "details": [
+      "POST /v3/models/audio/tts 및 스트리밍 엔드포인트에 output_format 파라미터 추가",
+      "PCM, MP3, ulaw, alaw 포맷 지원 및 8kHz~48kHz 샘플 레이트 설정 지원",
+      "스트리밍 호출 시 SSE 대신 원시 오디오 바이트 직접 반환 옵션 제공",
+      "POST /v3/voices/speech 엔드포인트에서 MP3 및 WAV 출력 선택 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#speech-output-formats",
+    "source": "dev"
+  }
+]

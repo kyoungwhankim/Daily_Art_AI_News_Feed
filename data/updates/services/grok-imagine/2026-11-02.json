@@ -1,0 +1,17 @@
+[
+  {
+    "id": "grok-imagine-2026-11-02-1",
+    "service": "grok-imagine",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "grok-imagine-image-quality 및 pro 모델 지원 공식 종료",
+    "summary": "xAI가 grok-imagine-image-quality 및 grok-imagine-image-pro 모델 지원을 공식 종료했어요. 기존 요청은 별도 코드 수정 없이 더 저렴한 가격의 grok-imagine-image-2.0-low로 자동 전환돼요.",
+    "details": [
+      "grok-imagine-image-quality 및 grok-imagine-image-pro 모델 공식 지원 중단",
+      "해당 모델 요청은 grok-imagine-image-2.0-low로 자동 라우팅되어 인하된 가격 적용",
+      "기존 클라이언트 요청 형식 그대로 호환 유지"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes",
+    "source": "dev"
+  }
+]

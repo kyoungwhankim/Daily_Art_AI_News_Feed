@@ -1,0 +1,17 @@
+[
+  {
+    "id": "krea-2026-11-04-1",
+    "service": "krea",
+    "date": "2026.11.04",
+    "kind": "기능",
+    "title": "비즈니스·엔터프라이즈 플랜에 에이전트 접근 제어 기능 도입",
+    "summary": "Krea가 비즈니스 및 엔터프라이즈 요금제 관리자를 위해 Krea Agent 사용 권한을 조직, 워크스페이스, 멤버 단위로 세밀하게 통제할 수 있는 접근 제어 규칙을 추가했어요.",
+    "details": [
+      "조직 전체 또는 워크스페이스 단위로 에이전트 사용 허용/차단 설정 지원",
+      "웹, iOS, 슬랙, API, MCP 전반에 차단 규칙 일괄 적용 (차단 시 API 403 반환)",
+      "기존 Model Access를 Access Controls로 개편하여 모델 및 기능별 권한 통합 관리"
+    ],
+    "url": "https://www.krea.ai/docs/changelog#november-4-2026",
+    "source": "dev"
+  }
+]

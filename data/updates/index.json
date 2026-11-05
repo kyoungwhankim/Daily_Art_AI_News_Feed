@@ -1,46 +1,46 @@
 {
   "categories": {
     "image": {
-      "count": 487,
-      "latest": "2026.11.02",
+      "count": 489,
+      "latest": "2026.11.04",
       "file": "updates/feed/image.json",
-      "rev": "79db2c07d6"
+      "rev": "086a87a642"
     },
     "video": {
-      "count": 981,
-      "latest": "2026.11.03",
+      "count": 985,
+      "latest": "2026.11.04",
       "file": "updates/feed/video.json",
-      "rev": "a54afaf743"
+      "rev": "dae8254d13"
     },
     "3d": {
-      "count": 188,
-      "latest": "2026.11.02",
+      "count": 189,
+      "latest": "2026.11.03",
       "file": "updates/feed/3d.json",
-      "rev": "d1305b94a1"
+      "rev": "3b8208d6b9"
     },
     "game-assets": {
-      "count": 586,
-      "latest": "2026.11.03",
+      "count": 587,
+      "latest": "2026.11.04",
       "file": "updates/feed/game-assets.json",
-      "rev": "07d0791393"
+      "rev": "2bade007f5"
     },
     "motion": {
-      "count": 169,
-      "latest": "2026.11.02",
+      "count": 170,
+      "latest": "2026.11.04",
       "file": "updates/feed/motion.json",
-      "rev": "dc29b41936"
+      "rev": "1237453b37"
     },
     "audio": {
-      "count": 363,
-      "latest": "2026.11.02",
+      "count": 364,
+      "latest": "2026.11.04",
       "file": "updates/feed/audio.json",
-      "rev": "b4f6da197c"
+      "rev": "49ab4547e6"
     },
     "tools": {
-      "count": 1043,
-      "latest": "2026.11.03",
+      "count": 1044,
+      "latest": "2026.11.04",
       "file": "updates/feed/tools.json",
-      "rev": "11bcde76bd"
+      "rev": "dfb81f6bba"
     }
   },
   "services": {
@@ -50,9 +50,9 @@
       "latest": "2026.10.08"
     },
     "gpt-image": {
-      "count": 12,
+      "count": 13,
       "first": "2025.03.25",
-      "latest": "2026.09.08"
+      "latest": "2026.11.04"
     },
     "nano-banana": {
       "count": 22,
@@ -80,9 +80,9 @@
       "latest": "2025.09.18"
     },
     "krea": {
-      "count": 59,
+      "count": 60,
       "first": "2025.03.26",
-      "latest": "2026.11.02"
+      "latest": "2026.11.04"
     },
     "recraft": {
       "count": 41,
@@ -125,9 +125,9 @@
       "latest": "2026.08.20"
     },
     "grok-imagine": {
-      "count": 7,
+      "count": 8,
       "first": "2025.03.19",
-      "latest": "2026.09.02"
+      "latest": "2026.11.02"
     },
     "runway": {
       "count": 195,
@@ -135,14 +135,14 @@
       "latest": "2026.10.28"
     },
     "dream-machine": {
-      "count": 30,
+      "count": 31,
       "first": "2024.09.16",
-      "latest": "2026.10.23"
+      "latest": "2026.11.03"
     },
     "higgsfield": {
-      "count": 63,
+      "count": 64,
       "first": "2025.04.24",
-      "latest": "2026.11.03"
+      "latest": "2026.11.04"
     },
     "ltx-studio": {
       "count": 65,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 83,
+      "count": 84,
       "first": "2025.11.29",
-      "latest": "2026.11.03"
+      "latest": "2026.11.04"
     },
     "synthesia": {
       "count": 193,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 125,
+      "count": 126,
       "first": "2023.10.19",
-      "latest": "2026.11.02"
+      "latest": "2026.11.03"
     },
     "tripo": {
       "count": 29,
@@ -220,9 +220,9 @@
       "latest": "2026.10.27"
     },
     "roblox-cube": {
-      "count": 43,
+      "count": 44,
       "first": "2023.03.20",
-      "latest": "2026.10.30"
+      "latest": "2026.11.04"
     },
     "rokoko": {
       "count": 39,
@@ -235,9 +235,9 @@
       "latest": "2026.11.02"
     },
     "flow-studio": {
-      "count": 37,
+      "count": 38,
       "first": "2023.09.14",
-      "latest": "2026.10.28"
+      "latest": "2026.11.04"
     },
     "elevenlabs": {
       "count": 209,
@@ -245,9 +245,9 @@
       "latest": "2026.11.02"
     },
     "suno": {
-      "count": 74,
+      "count": 75,
       "first": "2023.12.22",
-      "latest": "2026.10.29"
+      "latest": "2026.11.04"
     },
     "mureka": {
       "count": 58,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 216,
+      "count": 217,
       "first": "2024.08.06",
-      "latest": "2026.10.28"
+      "latest": "2026.11.04"
     },
     "invokeai": {
       "count": 74,

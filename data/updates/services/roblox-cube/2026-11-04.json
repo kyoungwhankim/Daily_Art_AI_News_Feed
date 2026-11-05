@@ -1,0 +1,17 @@
+[
+  {
+    "id": "roblox-cube-2026-11-04-1",
+    "service": "roblox-cube",
+    "date": "2026.11.04",
+    "kind": "연동",
+    "title": "Studio MCP 서버에 Open Cloud API 연동 및 에셋 임포트 워크플로 추가",
+    "summary": "로블록스가 Studio MCP 서버에 Open Cloud 연동을 지원해 외부 에이전트가 게임 설정, 개발자 상품, 분석 데이터 및 블렌더 3D 에셋 임포트를 직접 제어할 수 있도록 했어요.",
+    "details": [
+      "open_cloud_invoke 도구를 통해 MCP 클라이언트에서 Open Cloud API 호출 지원",
+      "게임별 세부 권한 제어 시스템을 도입하여 에이전트 접근 범위 설정 가능",
+      "Open Cloud 활용, 권한 관리, 블렌더 등 3D 툴 에셋 임포트를 돕는 3가지 신규 스킬 제공"
+    ],
+    "url": "https://devforum.roblox.com/t/studio-mcp-server-updates-open-cloud-access-in-your-mcp-client-and-asset-import-workflows/4975849",
+    "source": "notice"
+  }
+]

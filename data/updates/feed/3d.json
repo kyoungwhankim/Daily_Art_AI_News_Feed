@@ -1,5 +1,20 @@
 [
   {
+    "id": "meshy-2026-11-03-1",
+    "service": "meshy",
+    "date": "2026.11.03",
+    "kind": "API",
+    "title": "Image to 3D에 텍스처 모델 선택 파라미터 및 Text to 3D에 Meshy N1 추가",
+    "summary": "Meshy가 Image to 3D 및 Multi-Image to 3D API 작업 시 메시와 텍스처 모델을 동시에 지정할 수 있는 texture_model 파라미터를 추가하고, Text to 3D 세부화에 Meshy N1을 지원해요.",
+    "details": [
+      "Image to 3D 작업 시 Meshy 7, Meshy N1, Meshy 6 Lite 텍스처 모델 선택 지원",
+      "Multi-Image to 3D 작업 시 멀티뷰 텍스처 모델 Meshy 7 및 Meshy N1 지정 가능",
+      "Text to 3D 세부화(refine) 단계에 ai_model: meshy-n1 옵션 추가"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-3",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-11-02-1",
     "service": "meshy",
     "date": "2026.11.02",

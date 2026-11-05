@@ -1,5 +1,37 @@
 [
   {
+    "id": "higgsfield-2026-11-04-1",
+    "service": "higgsfield",
+    "date": "2026.11.04",
+    "kind": "기능",
+    "title": "AI 진행자 기반 세로형 영상 제작 도구 'Higgsfield Shorts' 출시",
+    "summary": "Higgsfield가 AI 가상 진행자가 등장하는 9:16 세로형 숏폼 영상을 제작할 수 있는 'Higgsfield Shorts'를 출시했어요. 최대 38개의 캐릭터·제품 이미지와 대본, 모션 레퍼런스를 결합해 15초~2분 길이의 영상을 생성해요.",
+    "details": [
+      "동일한 AI 진행자 얼굴과 음성을 시리즈 영상 전반에 일관되게 유지 가능",
+      "캐릭터·제품·의상 등 최대 38개 이미지 및 비디오 에셋 참조 지원",
+      "10초~120초 레퍼런스 비디오 기반 모션 전이(Motion Transfer) 옵션 제공",
+      "15초부터 최대 2분 길이까지 세로형 고화질 영상 생성 지원"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-introduces-shorts-studio",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-11-04-1",
+    "service": "heygen",
+    "date": "2026.11.04",
+    "kind": "API",
+    "title": "음성 합성 API에 출력 오디오 포맷 및 샘플 레이트 선택 옵션 추가",
+    "summary": "HeyGen이 TTS 및 음성 생성 API에서 PCM, MP3, μ-law, A-law 등 다양한 오디오 출력 포맷과 8kHz~48kHz 샘플 레이트 지정을 지원하도록 업데이트했어요.",
+    "details": [
+      "POST /v3/models/audio/tts 및 스트리밍 엔드포인트에 output_format 파라미터 추가",
+      "PCM, MP3, ulaw, alaw 포맷 지원 및 8kHz~48kHz 샘플 레이트 설정 지원",
+      "스트리밍 호출 시 SSE 대신 원시 오디오 바이트 직접 반환 옵션 제공",
+      "POST /v3/voices/speech 엔드포인트에서 MP3 및 WAV 출력 선택 지원"
+    ],
+    "url": "https://docs.heygen.com/changelog#speech-output-formats",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-11-03-1",
     "service": "higgsfield",
     "date": "2026.11.03",
@@ -30,6 +62,21 @@
     "source": "dev"
   },
   {
+    "id": "dream-machine-2026-11-03-1",
+    "service": "dream-machine",
+    "date": "2026.11.03",
+    "kind": "연동",
+    "title": "Luma 공식 MCP 서버 출시: ChatGPT 및 Claude 연동 지원",
+    "summary": "Luma가 공식 모델 컨텍스트 프로토콜(MCP) 커넥터를 출시해 ChatGPT와 Claude 대화창에서 직접 Luma의 영상 및 이미지 생성 도구를 실행할 수 있도록 지원해요.",
+    "details": [
+      "별도 API 키 없이 일반 Luma 계정 로그인으로 간편 연결 지원",
+      "Claude 및 ChatGPT 대화창에서 자연어 명령으로 영상·이미지 생성 실행",
+      "사용자 계정의 팀 크레딧과 직접 연동되어 워크플로 처리"
+    ],
+    "url": "https://lumalabs.ai/news/new-luma-mcp",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-11-02-1",
     "service": "heygen",
     "date": "2026.11.02",
@@ -42,6 +89,21 @@
       "이미지 및 영상과 함께 최대 3개 오디오 레퍼런스 결합 지원"
     ],
     "url": "https://docs.heygen.com/changelog#cinematic-avatar-on-hey-gen-video",
+    "source": "dev"
+  },
+  {
+    "id": "grok-imagine-2026-11-02-1",
+    "service": "grok-imagine",
+    "date": "2026.11.02",
+    "kind": "종료",
+    "title": "grok-imagine-image-quality 및 pro 모델 지원 공식 종료",
+    "summary": "xAI가 grok-imagine-image-quality 및 grok-imagine-image-pro 모델 지원을 공식 종료했어요. 기존 요청은 별도 코드 수정 없이 더 저렴한 가격의 grok-imagine-image-2.0-low로 자동 전환돼요.",
+    "details": [
+      "grok-imagine-image-quality 및 grok-imagine-image-pro 모델 공식 지원 중단",
+      "해당 모델 요청은 grok-imagine-image-2.0-low로 자동 라우팅되어 인하된 가격 적용",
+      "기존 클라이언트 요청 형식 그대로 호환 유지"
+    ],
+    "url": "https://docs.x.ai/developers/release-notes",
     "source": "dev"
   },
   {

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dream-machine-2026-11-03-1",
+    "service": "dream-machine",
+    "date": "2026.11.03",
+    "kind": "연동",
+    "title": "Luma 공식 MCP 서버 출시: ChatGPT 및 Claude 연동 지원",
+    "summary": "Luma가 공식 모델 컨텍스트 프로토콜(MCP) 커넥터를 출시해 ChatGPT와 Claude 대화창에서 직접 Luma의 영상 및 이미지 생성 도구를 실행할 수 있도록 지원해요.",
+    "details": [
+      "별도 API 키 없이 일반 Luma 계정 로그인으로 간편 연결 지원",
+      "Claude 및 ChatGPT 대화창에서 자연어 명령으로 영상·이미지 생성 실행",
+      "사용자 계정의 팀 크레딧과 직접 연동되어 워크플로 처리"
+    ],
+    "url": "https://lumalabs.ai/news/new-luma-mcp",
+    "source": "notice"
+  }
+]

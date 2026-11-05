@@ -1,5 +1,20 @@
 [
   {
+    "id": "suno-2026-11-04-1",
+    "service": "suno",
+    "date": "2026.11.04",
+    "kind": "기능",
+    "title": "Create 페이지에서 MIDI 파일 기반 음악 생성 지원",
+    "summary": "Suno가 Create 페이지에서 MIDI 파일 업로드를 지원해 사용자가 작성한 정확한 음표와 리듬 데이터를 시작점으로 곡을 생성하거나 모티프를 발전시킬 수 있도록 했어요.",
+    "details": [
+      "Create 페이지에 MIDI 파일을 드래그 앤 드롭하거나 '+' 메뉴에서 선택해 작곡 시작 가능",
+      "입력된 MIDI 음표를 그대로 연주하도록 지정하거나 모티프를 차용해 새롭게 확장하는 제어 지원",
+      "오디오 사운드 없이 음표, 타이밍, 리듬 등 순수 악보 데이터 기반으로 정밀한 음악 생성 구현"
+    ],
+    "url": "https://suno.com/blog/MIDI-in-create",
+    "source": "notice"
+  },
+  {
     "id": "elevenlabs-2026-11-02-1",
     "service": "elevenlabs",
     "date": "2026.11.02",

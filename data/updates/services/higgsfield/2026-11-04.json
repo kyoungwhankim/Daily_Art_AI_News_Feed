@@ -1,0 +1,18 @@
+[
+  {
+    "id": "higgsfield-2026-11-04-1",
+    "service": "higgsfield",
+    "date": "2026.11.04",
+    "kind": "기능",
+    "title": "AI 진행자 기반 세로형 영상 제작 도구 'Higgsfield Shorts' 출시",
+    "summary": "Higgsfield가 AI 가상 진행자가 등장하는 9:16 세로형 숏폼 영상을 제작할 수 있는 'Higgsfield Shorts'를 출시했어요. 최대 38개의 캐릭터·제품 이미지와 대본, 모션 레퍼런스를 결합해 15초~2분 길이의 영상을 생성해요.",
+    "details": [
+      "동일한 AI 진행자 얼굴과 음성을 시리즈 영상 전반에 일관되게 유지 가능",
+      "캐릭터·제품·의상 등 최대 38개 이미지 및 비디오 에셋 참조 지원",
+      "10초~120초 레퍼런스 비디오 기반 모션 전이(Motion Transfer) 옵션 제공",
+      "15초부터 최대 2분 길이까지 세로형 고화질 영상 생성 지원"
+    ],
+    "url": "https://higgsfield.ai/blog/higgsfield-introduces-shorts-studio",
+    "source": "notice"
+  }
+]

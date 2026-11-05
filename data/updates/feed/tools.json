@@ -1,5 +1,21 @@
 [
   {
+    "id": "comfyui-2026-11-04-1",
+    "service": "comfyui",
+    "date": "2026.11.04",
+    "kind": "앱",
+    "title": "ComfyUI v0.44.0 출시: MiniMax H3 Max 영상 편집 노드 및 ProRes 저장 지원",
+    "summary": "ComfyUI v0.44.0이 출시되어 MiniMax H3 Max 영상 편집 노드군과 Pruna P-Video, Topaz Wonder 4 노드가 추가되고 ProRes 영상 포맷 저장을 공식 지원해요.",
+    "details": [
+      "MiniMax H3 Max 영상 편집 노드(Recast, Extend, Reframe, Insert, Lip Sync, 카메라 제어) 지원",
+      "Pruna P-Video Upscale, Topaz Wonder 4, Sonilo Music 1.5, OpenAI GPT-6.1 파트너 노드 추가",
+      "오픈소스 P-H3-Image 및 MiniMax H3 잠재 업스케일러(Latent Upscaler) 모델 지원",
+      "생성된 비디오를 ProRes 포맷으로 직접 저장할 수 있는 옵션 및 Text Generate V2 노드 도입"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-44-0",
+    "source": "notice"
+  },
+  {
     "id": "figma-ai-2026-11-03-1",
     "service": "figma-ai",
     "date": "2026.11.03",
