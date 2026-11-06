@@ -1,0 +1,18 @@
+[
+  {
+    "id": "roblox-cube-2026-11-05-1",
+    "service": "roblox-cube",
+    "date": "2026.11.05",
+    "kind": "기능",
+    "title": "Roblox Studio, 프롬프트 기반 R15 캐릭터 애니메이션 생성 베타 출시",
+    "summary": "로블록스 스튜디오 어시스턴트에 텍스트 프롬프트로 R15 캐릭터 애니메이션을 자동 생성하는 베타 기능이 추가되었어요. 기존 R6 클립을 R15 동작으로 변환하는 모션 리빌더도 함께 지원해요.",
+    "details": [
+      "Studio Assistant 및 Studio MCP를 통해 텍스트 프롬프트로 R15 애니메이션 클립 생성",
+      "다친 전사의 걸음걸이 등 감정과 상태가 담긴 휴머노이드 동작 묘사 지원",
+      "R6 애니메이션을 R15으로 업그레이드 변환하는 Motion Rebuilder 도구 제공",
+      "스튜디오 File > Beta Features에서 Animation Generation 활성화 후 사용 가능"
+    ],
+    "url": "https://devforum.roblox.com/t/studio-beta-generate-r15-animations-from-a-prompt-plus-optional-r6-motion-rebuilder/4977709",
+    "source": "notice"
+  }
+]

@@ -14,5 +14,22 @@
     ],
     "url": "https://higgsfield.ai/blog/higgsfield-introduces-shorts-studio",
     "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-11-04-2",
+    "service": "higgsfield",
+    "date": "2026.11.04",
+    "kind": "연동",
+    "title": "힉스필드에 GPT Image 2.6(Flare·Sunburst) 모델 연동 도입",
+    "summary": "힉스필드 이미지 도구에 OpenAI의 GPT Image 2.6 Flare와 Sunburst 모델이 탑재되었어요. 스틸 PNG뿐 아니라 움직이는 GIF 및 벡터 SVG 생성을 지원하고 투명 배경 제어가 가능해요.",
+    "details": [
+      "GPT Image 2.6 Flare 및 Sunburst 모델 탑재",
+      "애니메이션 GIF 및 벡터 SVG(프리뷰) 출력 지원",
+      "투명 배경(Transparent) 및 불투명 배경 선택 기능",
+      "마크업 기반 영역 지정 부분 편집 지원",
+      "최대 16장 참조 이미지 활용 가능"
+    ],
+    "url": "https://higgsfield.ai/blog/gpt-image-2-6-higgsfield",
+    "source": "notice"
   }
 ]

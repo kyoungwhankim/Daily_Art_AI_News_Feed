@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-11-05-1",
+    "service": "figma-ai",
+    "date": "2026.11.05",
+    "kind": "기능",
+    "title": "Figma Agent, 벡터 일러스트 및 아이콘 생성 품질 개선",
+    "summary": "Figma Agent가 편집과 스타일에 최적화된 고품질 벡터 일러스트레이션과 아이콘을 생성할 수 있도록 개선되었어요. 직관적인 레이어 그룹화, 스타일 참조 이미지 반영, 획(Stroke) 중심 생성 및 Figma Motion 연동을 지원해요.",
+    "details": [
+      "직관적으로 그룹화된 독립 레이어 구조로 벡터 생성 결과물 사후 편집 용이",
+      "기존 일러스트를 스타일 참조 이미지로 전달해 브랜드 일관성 있는 아이콘 세트 대량 제작",
+      "선 작업에 면(Fill) 대신 획(Stroke) 방식을 적용해 굵기와 끝단 형태 손쉬운 수정 지원",
+      "깔끔한 레이어 구조로 Figma Motion을 통한 애니메이션 연동 최적화"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=improvements-agent-generated-vector",
+    "source": "notice"
+  }
+]

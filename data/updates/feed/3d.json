@@ -1,5 +1,38 @@
 [
   {
+    "id": "meshy-2026-11-05-1",
+    "service": "meshy",
+    "date": "2026.11.05",
+    "kind": "API",
+    "title": "Meshy, 사진 기반 3D 부조 모델 생성 Relief API 출시",
+    "summary": "Meshy가 단일 사진에서 3D 프린팅과 CNC 각인용 부조(bas-relief) 3D 모델과 16비트 깊이 맵을 생성하는 Relief API를 출시했어요. 조각 깊이와 해상도, 곡면 곡률을 맞춤 설정할 수 있어요.",
+    "details": [
+      "사진 1장에서 부조 3D 모델(GLB·STL) 및 16비트 그레이스케일 깊이 맵 생성",
+      "3D 프린팅, 레이저 각인, CNC 가공 최적화 포맷 지원",
+      "조각 모드, 깊이, 베이스 두께, 곡면 벤딩, 메시 해상도 조절 옵션 제공",
+      "should_generate_model: false 설정으로 깊이 맵만 단독 추출 지원",
+      "작업당 20 크레딧 차감"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-5",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-11-05-1",
+    "service": "marble",
+    "date": "2026.11.05",
+    "kind": "모델",
+    "title": "월드랩스, 실시간 3D 월드 탐색 프리뷰 'Frameboy' 및 최적화 Atlas 공개",
+    "summary": "월드랩스가 브라우저에서 최대 15fps로 3D 공간을 실시간 탐색할 수 있는 연구 프리뷰 데모 'Frameboy'를 공개했어요. 초고속 저지연 추론에 최적화된 공간 지능 모델 Atlas가 적용되었으며 Viewfinder에 통합되었어요.",
+    "details": [
+      "최대 15fps 실시간 스트리밍 3D 탐색 데모 'Frameboy' 연구 프리뷰 공개",
+      "카메라 실시간 조작에 즉각 반응하는 초저지연 최적화 Atlas 모델 적용",
+      "장면 제작 도구 Viewfinder 웹 앱에 실시간 Frameboy 오버레이 연동",
+      "단일 이미지 기반 가상 3D 공간 및 실제 환경 뷰포인트 실시간 내비게이션"
+    ],
+    "url": "https://www.worldlabs.ai/blog/atlas-realtime",
+    "source": "notice"
+  },
+  {
     "id": "meshy-2026-11-03-1",
     "service": "meshy",
     "date": "2026.11.03",

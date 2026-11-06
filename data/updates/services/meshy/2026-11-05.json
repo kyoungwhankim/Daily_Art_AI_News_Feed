@@ -1,0 +1,19 @@
+[
+  {
+    "id": "meshy-2026-11-05-1",
+    "service": "meshy",
+    "date": "2026.11.05",
+    "kind": "API",
+    "title": "Meshy, 사진 기반 3D 부조 모델 생성 Relief API 출시",
+    "summary": "Meshy가 단일 사진에서 3D 프린팅과 CNC 각인용 부조(bas-relief) 3D 모델과 16비트 깊이 맵을 생성하는 Relief API를 출시했어요. 조각 깊이와 해상도, 곡면 곡률을 맞춤 설정할 수 있어요.",
+    "details": [
+      "사진 1장에서 부조 3D 모델(GLB·STL) 및 16비트 그레이스케일 깊이 맵 생성",
+      "3D 프린팅, 레이저 각인, CNC 가공 최적화 포맷 지원",
+      "조각 모드, 깊이, 베이스 두께, 곡면 벤딩, 메시 해상도 조절 옵션 제공",
+      "should_generate_model: false 설정으로 깊이 맵만 단독 추출 지원",
+      "작업당 20 크레딧 차감"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-5",
+    "source": "dev"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-11-05-1",
+    "service": "ludo.ai",
+    "date": "2026.11.05",
+    "kind": "기능",
+    "title": "Ludo.ai, 방향별 스프라이트에 무기·방어구 장착 '액세서리' 기능 추가",
+    "summary": "Ludo.ai 방향별 스프라이트 도구에 캐릭터와 분리된 3D 무기 및 방어구를 장착하는 '액세서리' 단계가 추가되었어요. 아이템이 리깅 본에 고정되어 모든 방향과 애니메이션에서 형태 왜곡 없이 렌더링돼요.",
+    "details": [
+      "검, 총, 활, 방패, 투구 등을 독립 3D 에셋으로 캐릭터에 장착하는 Accessories 단계 도입",
+      "자체 GLB 파일 업로드(최대 30MB) 또는 Text to 3D 생성 에셋 지원",
+      "아이템 명칭 및 신체 부위를 인식해 손잡이·머리·등 위치 자동 정렬",
+      "모든 회전 방향과 동작 애니메이션에서 무기 형태가 왜곡되지 않고 강체 유지"
+    ],
+    "url": "https://ludo.ai/whats-new#accessories-give-your-directional-sprites-a-sword-a-gun-a-shield-or-a-helmet",
+    "source": "notice"
+  }
+]

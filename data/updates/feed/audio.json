@@ -15,6 +15,22 @@
     "source": "notice"
   },
   {
+    "id": "mureka-2026-11-04-1",
+    "service": "mureka",
+    "date": "2026.11.04",
+    "kind": "기능",
+    "title": "Mureka, 커스텀 인터페이스 개편 및 전용 리믹스 탭 추가",
+    "summary": "Mureka 웹 버전의 커스텀 생성 화면이 개편되고 전용 리믹스 탭이 신설되었어요. 고급 옵션에서 재생 시간과 생성 자유도(Wildness)를 조절해 음악을 정밀하게 제어할 수 있어요.",
+    "details": [
+      "웹 버전 Custom 생성 인터페이스 전면 개편",
+      "독립된 전용 Remix 탭 추가",
+      "고급 옵션에서 음악 길이(duration) 및 변형 자유도(Wildness) 조절 지원",
+      "모바일 앱에도 순차 적용 예정"
+    ],
+    "url": "https://www.mureka.ai/whats-new_en.html",
+    "source": "notice"
+  },
+  {
     "id": "elevenlabs-2026-11-02-1",
     "service": "elevenlabs",
     "date": "2026.11.02",

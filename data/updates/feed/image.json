@@ -1,5 +1,21 @@
 [
   {
+    "id": "recraft-2026-11-05-1",
+    "service": "recraft",
+    "date": "2026.11.05",
+    "kind": "연동",
+    "title": "Recraft Studio에 GPT Image 2.6(Sunburst·Flare) 모델 연동",
+    "summary": "Recraft Studio에 OpenAI의 최신 이미지 모델 GPT Image 2.6 Sunburst와 Flare가 추가되었어요. 무료 플랜에서도 Sunburst 모델을 이용할 수 있으며 1K·2K 해상도 편집을 지원해요.",
+    "details": [
+      "GPT Image 2.6 Sunburst 및 Flare 모델 Recraft Studio 도입",
+      "무료 플랜 사용자에게도 Sunburst 모델 기본 제공",
+      "프롬프트 기반 이미지 생성 및 편집 워크플로 지원",
+      "1K 및 2K 해상도 지원"
+    ],
+    "url": "https://www.recraft.ai/blog/gpt-image-2-6",
+    "source": "notice"
+  },
+  {
     "id": "krea-2026-11-04-1",
     "service": "krea",
     "date": "2026.11.04",
