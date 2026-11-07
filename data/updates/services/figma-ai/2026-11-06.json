@@ -1,0 +1,17 @@
+[
+  {
+    "id": "figma-ai-2026-11-06-1",
+    "service": "figma-ai",
+    "date": "2026.11.06",
+    "kind": "기능",
+    "title": "AI 이미지 편집 도구에 원클릭 오브젝트 자동 선택 기능 추가",
+    "summary": "Figma의 AI 이미지 편집 '영역 선택(Select area)' 도구에 이미지 내 피사체를 한 번의 클릭으로 자동 인식해 선택하는 기능이 도입되었어요.",
+    "details": [
+      "마우스로 직접 테두리를 그릴 필요 없이 이미지 속 물체를 클릭하면 AI가 형태를 정밀하게 자동 선택",
+      "선택된 특정 개체만 즉시 배경에서 분리하거나 깔끔하게 지우기(Erase) 지원",
+      "macOS 데스크톱 애플리케이션 버전에 우선 적용"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=select-objects-even-faster-with-figmas-ai-image-editing-tools",
+    "source": "notice"
+  }
+]

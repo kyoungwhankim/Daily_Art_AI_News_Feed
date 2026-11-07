@@ -1,0 +1,17 @@
+[
+  {
+    "id": "suno-2026-11-06-1",
+    "service": "suno",
+    "date": "2026.11.06",
+    "kind": "기능",
+    "title": "모바일 앱에 일일 창작 프롬프트 제공하는 '데일리 송 챌린지' 추가",
+    "summary": "Suno 모바일(iOS 및 Android) 앱에 매일 새로운 작곡 주제와 프롬프트를 제시하는 '데일리 송 챌린지' 기능이 도입되었어요.",
+    "details": [
+      "홈 화면 'Make a song every day' 영역에서 매일 새로운 음악 아이디어 및 프롬프트 추천",
+      "사진 업로드나 텍스트를 조합해 즉석에서 맞춤형 곡을 제작할 수 있도록 지원",
+      "챌린지로 완성한 곡은 라이브러리 내 캘린더(Calendar) 뷰에 일자별로 자동 저장 및 탐색 가능"
+    ],
+    "url": "https://suno.com/release-notes#daily-song-challenge",
+    "source": "notice"
+  }
+]

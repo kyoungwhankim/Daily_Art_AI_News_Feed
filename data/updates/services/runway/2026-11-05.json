@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-11-05-1",
+    "service": "runway",
+    "date": "2026.11.05",
+    "kind": "API",
+    "title": "Runway Dev에 Kling 4.0 Flash·GPT Image 2.6·Gemini Omni 1.2 Flash 도입",
+    "summary": "Runway Dev API에 Kling 4.0 Flash 영상 모델, GPT Image 2.6 Flare 및 Sunburst 이미지 모델, Gemini Omni 1.2 Flash 모델이 새롭게 추가되었어요.",
+    "details": [
+      "Kling 4.0 Flash(kling_4_flash): 텍스트·시작 프레임·비디오 레퍼런스 기반 720p 3~20초 영상 및 오디오 생성 지원",
+      "GPT Image 2.6(Sunburst·Flare): 최대 16장 레퍼런스 이미지, 4K 해상도, 투명 배경 및 추론 강도 조절 지원",
+      "Gemini Omni 1.2 Flash(gemini_omni_flash_1.2): 360p부터 4K까지 최대 15초 영상 생성 및 비디오 편집 모드 지원"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+    "source": "dev"
+  }
+]

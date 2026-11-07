@@ -1,0 +1,17 @@
+[
+  {
+    "id": "scenario-2026-11-06-1",
+    "service": "scenario",
+    "date": "2026.11.06",
+    "kind": "기능",
+    "title": "MiniMax H3 비디오 LoRA 학습 지원 및 신규 3D 모션 모델 도입",
+    "summary": "Scenario 웹 앱 v2.32 및 API v2.144 업데이트를 통해 MiniMax H3 비디오 LoRA 학습이 도입되고, NVIDIA Kimodo 3D 모션 생성 등 신규 모델이 추가되었어요.",
+    "details": [
+      "MiniMax H3 비디오 LoRA 학습 지원: 웹 앱과 API에서 커스텀 비디오 모델 직접 훈련 가능",
+      "NVIDIA Kimodo Text to Motion 도입: 텍스트 프롬프트로 77개 조인트 SOMA 스켈레톤 기반 30fps 3D 모션 생성",
+      "LTX-2.5 SDR to HDR 모델 추가 및 3D 에셋 뷰어 모드·태스크별 컴퓨팅 비용 추적 기능 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/web-app-v2-32-0",
+    "source": "notice"
+  }
+]

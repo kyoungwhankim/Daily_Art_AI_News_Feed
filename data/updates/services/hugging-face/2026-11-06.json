@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hugging-face-2026-11-06-1",
+    "service": "hugging-face",
+    "date": "2026.11.06",
+    "kind": "기능",
+    "title": "커맨드 팔레트 기반의 신규 메인 검색 인터페이스 도입",
+    "summary": "허깅페이스(Hugging Face) 허브의 기본 검색 기능이 단축키(⌘K 또는 Ctrl+K)로 동작하는 커맨드 팔레트 형태의 UI로 개편되었어요.",
+    "details": [
+      "키보드 단축키(⌘K / Ctrl+K)를 통해 검색창을 열고 방향키로 모델, 데이터셋, Space로 신속하게 이동 가능",
+      "새로운 모델 및 Space 생성을 지원하는 빠른 실행 액션(Quick Actions) 통합",
+      "접근성과 사용성을 대폭 개선하였으며 향후 검색 결과 매칭 기능 고도화 예정"
+    ],
+    "url": "https://huggingface.co/changelog",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-11-06-1",
+    "service": "claude",
+    "date": "2026.11.06",
+    "kind": "기능",
+    "title": "엔터프라이즈 프로젝트에 비용 코드 태그 기반 지출 추적 베타 도입",
+    "summary": "Claude Enterprise 조직에서 프로젝트에 비용 청구 코드(Cost Code) 태그를 부여하여 프로젝트별 AI 모델 지출 및 사용량을 세부 추적할 수 있는 베타 기능이 추가되었어요.",
+    "details": [
+      "프로젝트마다 내부 정산용 청구 코드 또는 고객사 번호(Client-matter number) 태그 지정 지원",
+      "태그별 프로젝트 지출 통계를 확인하여 팀별·프로젝트별 예산 관리 및 비용 정산 편의성 향상",
+      "적격 엔터프라이즈 요금제 조직을 대상으로 베타 서비스 제공"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes#h_november-6-2026",
+    "source": "notice"
+  }
+]

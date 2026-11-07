@@ -1,5 +1,20 @@
 [
   {
+    "id": "magnific-2026-11-06-1",
+    "service": "magnific",
+    "date": "2026.11.06",
+    "kind": "API",
+    "title": "리소스 API에 템플릿 및 목업 필터 검색 추가",
+    "summary": "GET /v1/resources 엔드포인트에 템플릿과 목업 필터 옵션이 추가되어 맞춤형 디자인 템플릿과 목업 리소스를 손쉽게 검색할 수 있게 되었어요.",
+    "details": [
+      "filters[content_type][template]=1로 PSD 및 벡터 템플릿 필터링 지원",
+      "filters[content_type][mockup]=1로 제품 목업 리소스 검색 지원",
+      "photo, psd, vector 등 여러 콘텐츠 유형 동시 필터링 지원"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-6-2026",
+    "source": "dev"
+  },
+  {
     "id": "recraft-2026-11-05-1",
     "service": "recraft",
     "date": "2026.11.05",
