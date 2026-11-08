@@ -1,5 +1,21 @@
 [
   {
+    "id": "heygen-2026-11-07-1",
+    "service": "heygen",
+    "date": "2026.11.07",
+    "kind": "API",
+    "title": "WebSocket 기반 실시간 텍스트-음성(TTS) 입력 스트리밍 지원",
+    "summary": "LLM 토큰 등 텍스트를 조각 단위로 전송하고 단일 연결로 오디오를 스트리밍 수신하는 WebSocket 입력 API를 지원해요.",
+    "details": [
+      "/v3/models/audio/tts/stream-input 엔드포인트로 단일 음성 합성 스트리밍 지원",
+      "/v3/models/audio/tts/multi-stream-input 엔드포인트로 최대 5개 컨텍스트 동시 처리",
+      "Turbo Free를 포함한 3종의 HeyGen Voice 모델 전반에서 공개 및 인스턴트 보이스 지원",
+      "브라우저 연결을 위한 일회용 토큰 발급(POST stream-input/tokens) 제공"
+    ],
+    "url": "https://docs.heygen.com/changelog#web-socket-input-streaming",
+    "source": "dev"
+  },
+  {
     "id": "suno-2026-11-06-1",
     "service": "suno",
     "date": "2026.11.06",
@@ -597,21 +613,5 @@
     ],
     "url": "https://www.krea.ai/docs/changelog#november-2-2026",
     "source": "dev"
-  },
-  {
-    "id": "iclone-2026-11-02-1",
-    "service": "iclone",
-    "date": "2026.11.02",
-    "kind": "앱",
-    "title": "AccuFACE 2 독립 실행형 앱 출시 (AI 기반 페이셜 캡처)",
-    "summary": "iClone용 페이셜 트래킹 도구인 AccuFACE 2가 독립 실행형 앱으로 출시되었어요. CC5 HD 캐릭터에 최적화된 새 AI 모델과 비디오 클립 트래킹을 지원해요.",
-    "details": [
-      "CC5 HD 캐릭터에 최적화된 신규 AI 페이셜 트래킹 모델 탑재",
-      "별도 캘리브레이션 없이 웹캠 실시간 캡처 및 비디오 클립 기반 페이셜 트래킹 지원",
-      "GPU 가속 실시간 풀프레임 캡처 및 입술 움직임(립 트래킹) 정밀도 개선",
-      "표정 스무딩을 위한 익스프레션 커브(Expression Curves) 도입"
-    ],
-    "url": "https://magazine.reallusion.com/2026/11/02/accuface-2-professional-facial-capture-for-beginners/",
-    "source": "notice"
   }
 ]

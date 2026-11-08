@@ -7,10 +7,10 @@
       "rev": "31292f2bf5"
     },
     "video": {
-      "count": 989,
-      "latest": "2026.11.06",
+      "count": 990,
+      "latest": "2026.11.07",
       "file": "updates/feed/video.json",
-      "rev": "9437f06a81"
+      "rev": "232c8d672e"
     },
     "3d": {
       "count": 191,
@@ -170,9 +170,9 @@
       "latest": "2026.08.31"
     },
     "heygen": {
-      "count": 85,
+      "count": 86,
       "first": "2025.11.29",
-      "latest": "2026.11.05"
+      "latest": "2026.11.07"
     },
     "synthesia": {
       "count": 193,

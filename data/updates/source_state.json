@@ -709,8 +709,8 @@
  },
  "https://community.adobe.com/announcements-402": {
   "kind": "page",
-  "hash": "f0bc61bf4c0d2d00",
-  "chars": 29061,
+  "hash": "92374d7535dba94c",
+  "chars": 29064,
   "links": [
    "003b997d65",
    "00b70bb2f6",
@@ -1819,6 +1819,7 @@
    "d135b9d500",
    "d14276d3ea",
    "d16eaa251e",
+   "d1951bb4d5",
    "d1c133ec50",
    "d1c8b35255",
    "d1fab0b589",
@@ -3049,8 +3050,8 @@
  },
  "https://developers.openai.com/api/docs/changelog": {
   "kind": "page",
-  "hash": "ae088bb420f032fb",
-  "chars": 64822,
+  "hash": "8986e1670032f45c",
+  "chars": 64842,
   "links": [
    "0018788938",
    "00699c0470",
@@ -3149,6 +3150,7 @@
    "1f08a7d792",
    "1f2b7b81ea",
    "1f476eda20",
+   "20a0d2db3f",
    "20e21bfdd9",
    "21cf284074",
    "220de2ff7a",
@@ -3899,8 +3901,8 @@
  },
  "https://docs.bfl.ai/release-notes": {
   "kind": "page",
-  "hash": "ed0b5daad73de879",
-  "chars": 98776,
+  "hash": "3b2817f2683963c1",
+  "chars": 104461,
   "links": [
    "00a157f3b4",
    "01344053c7",
@@ -4175,6 +4177,21 @@
   "kind": "feed",
   "items": [
    "6d0856328136",
+   "7d927d3cfb63",
+   "a15a9107c397",
+   "5b3989481a1e",
+   "1aa923f6053e",
+   "214aa15499f6",
+   "ac9d69dd07dc",
+   "39e13fab229e",
+   "861804944c6a",
+   "8f41e7c3dbee",
+   "a2ed1bdeb346",
+   "13a1a07e42b4",
+   "de3cb5b1c5a4",
+   "6f8ac8d1b5e4",
+   "02e5271cf5d5",
+   "1a44f68fdab0",
    "56d8e35ab1b6",
    "c859cfc45286",
    "8652706926b0",
@@ -4203,22 +4220,7 @@
    "537b4a7dbd76",
    "74cc5b60e771",
    "815152a373cb",
-   "7d2ae03a05d0",
-   "7d927d3cfb63",
-   "a15a9107c397",
-   "5b3989481a1e",
-   "1aa923f6053e",
-   "214aa15499f6",
-   "ac9d69dd07dc",
-   "39e13fab229e",
-   "861804944c6a",
-   "8f41e7c3dbee",
-   "a2ed1bdeb346",
-   "13a1a07e42b4",
-   "de3cb5b1c5a4",
-   "6f8ac8d1b5e4",
-   "02e5271cf5d5",
-   "1a44f68fdab0"
+   "7d2ae03a05d0"
   ]
  },
  "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes": {
@@ -4526,6 +4528,7 @@
    "22cbd16592",
    "23268333c6",
    "233a370598",
+   "23647d00fd",
    "2375bf14b3",
    "2375f4f3bd",
    "2399da9362",
@@ -4642,6 +4645,7 @@
    "2ef7ae164a",
    "2efcc16c3d",
    "2f0053f91c",
+   "2f07dcefce",
    "2f0b31d021",
    "2f0d976992",
    "2f2b1b29e1",
@@ -6786,8 +6790,8 @@
  },
  "https://docs.fal.ai/changelog": {
   "kind": "page",
-  "hash": "c9baa2a43fafae44",
-  "chars": 294996,
+  "hash": "2dde80c3a6a6cfcb",
+  "chars": 294931,
   "links": [
    "00c7793823",
    "02b0550c18",
@@ -7060,8 +7064,8 @@
  },
  "https://docs.heygen.com/changelog": {
   "kind": "page",
-  "hash": "40eaafaea63ceb37",
-  "chars": 253487,
+  "hash": "a6840fed4bc19092",
+  "chars": 260806,
   "links": [
    "03f9fb6388",
    "04e9181897",
@@ -7085,6 +7089,7 @@
    "19ee2aae43",
    "1a715faaf0",
    "1e59c58ddd",
+   "1ed691e6c7",
    "1eecd5c92c",
    "220de2ff7a",
    "2285aec99a",
@@ -7099,6 +7104,7 @@
    "3358aeddff",
    "343b12bd50",
    "3802103e0e",
+   "3bcaf61aee",
    "3ebf0b1e65",
    "3fe437940e",
    "41fb25c793",
@@ -7187,6 +7193,7 @@
    "d05a361871",
    "d2ef6f06a9",
    "d365cf4379",
+   "d6dd35791e",
    "d7830b2d67",
    "d7f209e214",
    "dcb731b94b",
@@ -7199,6 +7206,7 @@
    "f1ad4ae6f7",
    "f3da1ec317",
    "f4a20747de",
+   "f4e99003f8",
    "f5a195f4c9",
    "f5bfe66342",
    "f7a4acc300",
@@ -7225,6 +7233,7 @@
  "https://docs.heygen.com/changelog/rss.xml": {
   "kind": "feed",
   "items": [
+   "4c5d292e9863",
    "91e30d30f853",
    "438c8e862efa",
    "751aad484181",
@@ -7361,6 +7370,7 @@
    "ca08575c2b",
    "cae66cce7e",
    "cb5166ada1",
+   "cb68b68fd2",
    "d4e306ec22",
    "d9883418ba",
    "dedeadfeb4",
@@ -8128,8 +8138,8 @@
  },
  "https://docs.worldlabs.ai/marble/release-notes": {
   "kind": "page",
-  "hash": "eb2ccf5bb167b980",
-  "chars": 35800,
+  "hash": "f7af6b1e6d634e6e",
+  "chars": 35735,
   "links": [
    "0774c24f0f",
    "0939d3358b",
@@ -10858,6 +10868,9 @@
  "https://higgsfield.ai/blog/rss.xml": {
   "kind": "feed",
   "items": [
+   "dc269e726053",
+   "28c4dd100d2d",
+   "4cb068a03e08",
    "72afb5802d60",
    "917fd5059264",
    "4632d11ebc68",
@@ -10985,7 +10998,6 @@
    "59669d0b4be6",
    "41dce2f31eab",
    "c6b7ed629299",
-   "dc269e726053",
    "34e0d04a8949",
    "d91e27bae224",
    "a68014fde11c",
@@ -11069,7 +11081,6 @@
    "ab818ade1fb1",
    "fe8949273834",
    "1fba45acdc3e",
-   "0e0f4fe0490e",
    "5198401d31bc",
    "2ad163b5c1de",
    "fac778bd5cd2",
@@ -11156,6 +11167,7 @@
    "f1e1333034ee",
    "496f548fc814",
    "c9c227a5e157",
+   "0e0f4fe0490e",
    "02a7b993d751",
    "3ca1abacefc5",
    "c83a04d3ff3f",
@@ -11190,8 +11202,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "ddac824ebaf1cd07",
-  "chars": 4033,
+  "hash": "512b0377b1f89f74",
+  "chars": 4030,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -12245,8 +12257,8 @@
  },
  "https://huggingface.co/changelog": {
   "kind": "page",
-  "hash": "42f5e44998db4013",
-  "chars": 2492,
+  "hash": "4ab8dec969a53bcd",
+  "chars": 2502,
   "links": [
    "12a3bf27bd",
    "16a4e81941",
@@ -15855,8 +15867,8 @@
  },
  "https://pika.art/blog": {
   "kind": "page",
-  "hash": "792443b837438231",
-  "chars": 4345,
+  "hash": "66b0cc9c87143821",
+  "chars": 4353,
   "links": [
    "14e09b32c4",
    "17e025f6fb",
@@ -17081,8 +17093,8 @@
  },
  "https://platform.minimax.io/docs/release-notes/apis": {
   "kind": "page",
-  "hash": "6afba37ced10917b",
-  "chars": 44567,
+  "hash": "cdf67eac201ac127",
+  "chars": 44502,
   "links": [
    "04fe5dd600",
    "0b004b1173",
@@ -18018,8 +18030,8 @@
  },
  "https://support.claude.com/en/articles/12138966-release-notes": {
   "kind": "page",
-  "hash": "20c4e9c38baad5d5",
-  "chars": 31961,
+  "hash": "528197b7774e78d4",
+  "chars": 31970,
   "links": [
    "0005785582",
    "00505295b3",
@@ -18824,6 +18836,10 @@
  "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Azure-AI-Foundry-Blog": {
   "kind": "feed",
   "items": [
+   "1453c7e5b91b",
+   "5defcf4baaa7",
+   "17fb5cd76c2d",
+   "97ea2dc959b4",
    "b1328b08228f",
    "9a557bb0fc75",
    "673aab1df591",
@@ -19270,6 +19286,7 @@
    "March 26, 2025",
    "March 3, 2026",
    "Nov 06, 2026",
+   "Nov 07, 2026",
    "November 20, 2025",
    "November 7, 2025",
    "Oct 06, 2026",
@@ -19568,6 +19585,7 @@
    "2026-10-27",
    "2026-10-28",
    "2026-11-04",
+   "2026-11-06",
    "Apr 21, 2026",
    "Aug 14, 2026",
    "Aug 25, 2026",
@@ -19585,6 +19603,7 @@
    "November 5, 2026",
    "November 6, 2026",
    "November 7, 2026",
+   "November 8, 2026",
    "Oct 1, 2026",
    "Oct 12, 2026",
    "Oct 14, 2026",
@@ -20177,8 +20196,8 @@
  },
  "https://www.krea.ai/docs/changelog": {
   "kind": "page",
-  "hash": "810cbe6334ef2ac0",
-  "chars": 212582,
+  "hash": "3af0407b017d02dc",
+  "chars": 212383,
   "links": [
    "003a234805",
    "0230bdf988",
@@ -21508,8 +21527,8 @@
  },
  "https://www.recraft.ai/blog": {
   "kind": "page",
-  "hash": "b519b2693ecf98b0",
-  "chars": 58966,
+  "hash": "fb0dc25d25e72108",
+  "chars": 59250,
   "links": [
    "001382c17a",
    "00f165e14c",
@@ -21886,6 +21905,7 @@
    "November 4, 2026",
    "November 5, 2026",
    "November 7, 2024",
+   "November 7, 2026",
    "November 8, 2024",
    "Oct 05 2026",
    "Oct 07 2026",
@@ -21938,8 +21958,8 @@
  },
  "https://www.recraft.ai/news": {
   "kind": "page",
-  "hash": "0cb9e01a103258bc",
-  "chars": 4599,
+  "hash": "1ce3d6038bb5c411",
+  "chars": 4601,
   "links": [
    "001382c17a",
    "00f165e14c",
