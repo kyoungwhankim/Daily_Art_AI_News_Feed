@@ -62,6 +62,21 @@
     "source": "dev"
   },
   {
+    "id": "kling-2026-11-04-1",
+    "service": "kling",
+    "date": "2026.11.04",
+    "kind": "API",
+    "title": "Kling 4.0 Flash 영상 생성 API 출시",
+    "summary": "Kling 4.0 Flash의 텍스트·이미지·옴니 레퍼런스 비디오 생성 API가 공식 출시되었어요. 최대 20초 길이의 720P 네이티브 영상을 지원해요.",
+    "details": [
+      "텍스트-비디오, 이미지-비디오, 옴니 레퍼런스 비디오 엔드포인트 제공",
+      "최대 20초 길이 720P 해상도 및 21:9 등 가변 화면비 지원",
+      "이미지·영상 등 최대 15개 요소를 조합하는 옴니 레퍼런스 기능 지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#11%2F04%2F2026",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-11-04-2",
     "service": "higgsfield",
     "date": "2026.11.04",
@@ -372,6 +387,20 @@
     "summary": "Luma 플랫폼에서 Kling 4.0 모델을 바로 사용할 수 있게 되었어요. 빠른 동작과 역동적인 카메라 움직임이 필요한 샷을 Luma 보드에서 바로 다듬을 수 있어요.",
     "url": "https://lumalabs.ai/news/kling-4-in-luma-ai-video",
     "source": "notice"
+  },
+  {
+    "id": "veo-2026-10-22-1",
+    "service": "veo",
+    "date": "2026.10.22",
+    "kind": "종료",
+    "title": "Veo 3.1 프리뷰 모델 지원 종료",
+    "summary": "Gemini API에서 제공되던 Veo 3.1 프리뷰 모델 3종의 엔드포인트 지원이 공식 종료되었어요. 프로덕션 환경에서는 엔터프라이즈 GA 모델로의 전환이 권장돼요.",
+    "details": [
+      "veo-3.1-generate-preview, fast, lite 프리뷰 엔드포인트 지원 중단",
+      "Gemini Enterprise Agent Platform 및 Vertex AI의 GA 모델로 전환 안내"
+    ],
+    "url": "https://ai.google.dev/gemini-api/docs/changelog#10-22-2026",
+    "source": "dev"
   },
   {
     "id": "synthesia-2026-10-22-1",

@@ -341,6 +341,21 @@
     "source": "dev"
   },
   {
+    "id": "kling-2026-11-04-1",
+    "service": "kling",
+    "date": "2026.11.04",
+    "kind": "API",
+    "title": "Kling 4.0 Flash 영상 생성 API 출시",
+    "summary": "Kling 4.0 Flash의 텍스트·이미지·옴니 레퍼런스 비디오 생성 API가 공식 출시되었어요. 최대 20초 길이의 720P 네이티브 영상을 지원해요.",
+    "details": [
+      "텍스트-비디오, 이미지-비디오, 옴니 레퍼런스 비디오 엔드포인트 제공",
+      "최대 20초 길이 720P 해상도 및 21:9 등 가변 화면비 지원",
+      "이미지·영상 등 최대 15개 요소를 조합하는 옴니 레퍼런스 기능 지원"
+    ],
+    "url": "https://kling.ai/document-api/updates/api#11%2F04%2F2026",
+    "source": "dev"
+  },
+  {
     "id": "higgsfield-2026-11-04-2",
     "service": "higgsfield",
     "date": "2026.11.04",
@@ -599,19 +614,5 @@
     ],
     "url": "https://www.layer.ai/changelog",
     "source": "notice"
-  },
-  {
-    "id": "krea-2026-11-02-1",
-    "service": "krea",
-    "date": "2026.11.02",
-    "kind": "종료",
-    "title": "Flux.1 Krea 모델 지원 종료",
-    "summary": "Krea에서 Flux.1 Krea 모델 지원이 공식 종료되었어요. 이미지 생성 및 노드 도구 목록에서 제외되며 향후 Krea 1 또는 Flux 모델을 대신 사용해야 해요.",
-    "details": [
-      "Krea Image 및 Nodes 모델 선택 목록에서 Flux.1 Krea 제거",
-      "대체 모델로 Krea 1 또는 Flux 선택 권장"
-    ],
-    "url": "https://www.krea.ai/docs/changelog#november-2-2026",
-    "source": "dev"
   }
 ]

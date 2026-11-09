@@ -3901,7 +3901,7 @@
  },
  "https://docs.bfl.ai/release-notes": {
   "kind": "page",
-  "hash": "3b2817f2683963c1",
+  "hash": "81c4cf62ad88ed29",
   "chars": 104461,
   "links": [
    "00a157f3b4",
@@ -4225,8 +4225,8 @@
  },
  "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes": {
   "kind": "page",
-  "hash": "010124e97dfe2446",
-  "chars": 88204,
+  "hash": "3867aef809e99313",
+  "chars": 88520,
   "links": [
    "000ccc61aa",
    "000f0509c1",
@@ -6790,7 +6790,7 @@
  },
  "https://docs.fal.ai/changelog": {
   "kind": "page",
-  "hash": "2dde80c3a6a6cfcb",
+  "hash": "bf786ad7fa0b9054",
   "chars": 294931,
   "links": [
    "00c7793823",
@@ -7064,7 +7064,7 @@
  },
  "https://docs.heygen.com/changelog": {
   "kind": "page",
-  "hash": "a6840fed4bc19092",
+  "hash": "49fe513bdca30e4b",
   "chars": 260806,
   "links": [
    "03f9fb6388",
@@ -11202,8 +11202,8 @@
  },
  "https://huggingface.co/Lightricks": {
   "kind": "page",
-  "hash": "512b0377b1f89f74",
-  "chars": 4030,
+  "hash": "041f7f782fe9346e",
+  "chars": 4039,
   "links": [
    "010bc9aefd",
    "018d4e84f1",
@@ -14010,8 +14010,8 @@
  },
  "https://lumalabs.ai/news": {
   "kind": "page",
-  "hash": "ae72d411fbb9151c",
-  "chars": 21761,
+  "hash": "9dc3118a2aa39d46",
+  "chars": 22336,
   "links": [
    "00ce8f8d8c",
    "01022775f1",
@@ -14052,7 +14052,9 @@
    "1ccfac14f1",
    "1cf14207fb",
    "1d5b9a8160",
+   "1df4207c61",
    "1e6b9f9832",
+   "1f0a15efdd",
    "1fb777b094",
    "20ee79feef",
    "21c0e50c5d",
@@ -14065,11 +14067,13 @@
    "23ca02b91f",
    "246ba5404a",
    "249e1a7f48",
+   "2690d9162d",
    "26b42d9059",
    "273751c237",
    "281a5f815e",
    "2833b4c331",
    "28a492347d",
+   "28e3b8a332",
    "2935a17498",
    "29f37baf65",
    "2a4da174f1",
@@ -14111,6 +14115,7 @@
    "4d233b322c",
    "4d413c4d1a",
    "4d67b8261d",
+   "4d7ec5ebdc",
    "4f5e48bfbb",
    "50b1716090",
    "512a0c8819",
@@ -14158,6 +14163,7 @@
    "72e1a75567",
    "73907440e0",
    "740d81010a",
+   "7481be985b",
    "74f3833561",
    "759f8f2753",
    "77730cf1ce",
@@ -14268,6 +14274,7 @@
    "ccac18ff87",
    "cd11cdc7cd",
    "ce354456a7",
+   "ce6a000c48",
    "d0738905d9",
    "d075f92c27",
    "d07ebb2418",
@@ -14285,6 +14292,7 @@
    "d88eaa0836",
    "db248a2959",
    "db763f0790",
+   "dbebf2007f",
    "dd7fb49ea2",
    "dd944442f7",
    "de39a8594b",
@@ -14300,6 +14308,7 @@
    "e19b9b7d65",
    "e2a3d83ffa",
    "e2eef32d53",
+   "e50cb38e75",
    "e9405dc9bd",
    "eaab78ec77",
    "eb06ebb30d",
@@ -14379,6 +14388,7 @@
    "Nov 3, 2026",
    "Nov 5, 2026",
    "Nov 6, 2026",
+   "Nov 8, 2026",
    "Oct 1, 2026",
    "Oct 14, 2025",
    "Oct 14, 2026",
@@ -17093,7 +17103,7 @@
  },
  "https://platform.minimax.io/docs/release-notes/apis": {
   "kind": "page",
-  "hash": "cdf67eac201ac127",
+  "hash": "950b46d29503185a",
   "chars": 44502,
   "links": [
    "04fe5dd600",
@@ -18030,8 +18040,8 @@
  },
  "https://support.claude.com/en/articles/12138966-release-notes": {
   "kind": "page",
-  "hash": "528197b7774e78d4",
-  "chars": 31970,
+  "hash": "1ca90b8b7aa1e9b2",
+  "chars": 31977,
   "links": [
    "0005785582",
    "00505295b3",
@@ -19604,6 +19614,7 @@
    "November 6, 2026",
    "November 7, 2026",
    "November 8, 2026",
+   "November 9, 2026",
    "Oct 1, 2026",
    "Oct 12, 2026",
    "Oct 14, 2026",
@@ -20196,7 +20207,7 @@
  },
  "https://www.krea.ai/docs/changelog": {
   "kind": "page",
-  "hash": "3af0407b017d02dc",
+  "hash": "f917386895e6f4f8",
   "chars": 212383,
   "links": [
    "003a234805",
@@ -21222,8 +21233,8 @@
  },
  "https://www.meshy.ai/blog": {
   "kind": "page",
-  "hash": "17096f5f0cad0e7e",
-  "chars": 1227,
+  "hash": "8a6cb213900be06c",
+  "chars": 1211,
   "links": [
    "021abfd0e6",
    "0394c078cd",
@@ -21307,6 +21318,7 @@
    "7e3e15a98f",
    "7e43ca2ff2",
    "7e536fa5e1",
+   "7f459b6da8",
    "870772ffbb",
    "8713beec36",
    "8ca961caad",
@@ -21527,8 +21539,8 @@
  },
  "https://www.recraft.ai/blog": {
   "kind": "page",
-  "hash": "fb0dc25d25e72108",
-  "chars": 59250,
+  "hash": "01499a3931fa41cc",
+  "chars": 59222,
   "links": [
    "001382c17a",
    "00f165e14c",
@@ -21958,8 +21970,8 @@
  },
  "https://www.recraft.ai/news": {
   "kind": "page",
-  "hash": "1ce3d6038bb5c411",
-  "chars": 4601,
+  "hash": "73e673036dbec3e4",
+  "chars": 4603,
   "links": [
    "001382c17a",
    "00f165e14c",
@@ -22468,8 +22480,8 @@
  },
  "https://www.scenario.com/changelog": {
   "kind": "page",
-  "hash": "b59245cabb245f05",
-  "chars": 56248,
+  "hash": "85293a452e12df14",
+  "chars": 56406,
   "links": [
    "0033af77b7",
    "016ef85946",
@@ -23085,6 +23097,7 @@
    "ec1c236b94",
    "ecfbf09f41",
    "ed363329a6",
+   "ed96856952",
    "ee50cb9fed",
    "ee6043f38f",
    "ee703c45a8",
