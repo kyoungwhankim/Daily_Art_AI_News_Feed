@@ -1,5 +1,20 @@
 [
   {
+    "id": "layer-2026-11-09-1",
+    "service": "layer",
+    "date": "2026.11.09",
+    "kind": "기능",
+    "title": "3D 프리비즈 씬 에디터 도입 및 GPT Image 2.6 기반 GIF·SVG 생성 지원",
+    "summary": "Layer가 보드 내 3D 씬 에디터를 추가해 카메라 워킹을 사전에 연출하고 3D-to-비디오로 바로 렌더링할 수 있게 되었어요. 또한 GPT Image 2.6 모델을 기반으로 2~16프레임 루프 GIF 및 SVG 벡터 생성 기능도 지원해요.",
+    "details": [
+      "월드 빌더와 연동되는 3D 씬 에디터 및 크레딧 소모 없는 카메라 프리비즈 레코딩",
+      "프리비즈 클립의 구도와 타이밍을 유지하며 완성형 영상으로 변환하는 3D to Video",
+      "GPT Image 2.6 기반의 2~16프레임 루프 GIF 및 SVG 벡터 이미지 생성 지원"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-11-06-1",
     "service": "scenario",
     "date": "2026.11.06",

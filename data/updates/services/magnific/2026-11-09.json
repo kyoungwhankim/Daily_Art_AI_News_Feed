@@ -1,0 +1,17 @@
+[
+  {
+    "id": "magnific-2026-11-09-1",
+    "service": "magnific",
+    "date": "2026.11.09",
+    "kind": "API",
+    "title": "ElevenLabs Voiceover v3 및 v4 음성 합성 API 도입",
+    "summary": "Magnific API에 ElevenLabs Voiceover v3 및 v4 모델 엔드포인트가 추가되었어요. 대괄호 오디오 태그를 사용해 감정 표현, 속삭임, 웃음소리, 일시 정지 등을 세밀하게 연출할 수 있어요.",
+    "details": [
+      "ElevenLabs v3(최대 5,000자) 및 고표현력 v4(최대 10,000자) 엔드포인트 지원",
+      "[excited], [whispers], [laughs] 등 오디오 연출 태그 지원",
+      "44.1kHz, 128kbps 단일 MP3 파일 출력 및 10자 단위 과금"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-9-2026",
+    "source": "dev"
+  }
+]

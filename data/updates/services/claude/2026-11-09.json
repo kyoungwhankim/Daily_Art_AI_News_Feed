@@ -1,0 +1,17 @@
+[
+  {
+    "id": "claude-2026-11-09-1",
+    "service": "claude",
+    "date": "2026.11.09",
+    "kind": "모델",
+    "title": "Claude Fable 5.2 및 Claude Mythos 5.2 모델 출시",
+    "summary": "앤트로픽이 복잡한 추론과 장기 에이전트 작업을 위한 Claude Fable 5.2와 Mythos 5.2를 출시했어요. 100만 토큰 컨텍스트와 128k 출력 토큰, 상시 적응형 사고를 지원하며 이전 세대 대비 가격이 약 20% 인하되었어요.",
+    "details": [
+      "1M 토큰 컨텍스트 창 및 최대 128k 출력 토큰, 상시 가동되는 적응형 사고 지원",
+      "입력 100만 토큰당 $8, 출력 $40로 Fable 5.1 대비 약 20% 가격 인하",
+      "Claude API, AWS Bedrock, Google Cloud, Microsoft Foundry에서 즉시 사용 가능"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-9-2026",
+    "source": "dev"
+  }
+]

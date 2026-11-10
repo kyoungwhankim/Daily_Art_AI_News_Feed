@@ -1,10 +1,10 @@
 {
   "categories": {
     "image": {
-      "count": 491,
-      "latest": "2026.11.06",
+      "count": 493,
+      "latest": "2026.11.09",
       "file": "updates/feed/image.json",
-      "rev": "31292f2bf5"
+      "rev": "64f53857c6"
     },
     "video": {
       "count": 992,
@@ -19,10 +19,10 @@
       "rev": "2051f52fb6"
     },
     "game-assets": {
-      "count": 591,
-      "latest": "2026.11.06",
+      "count": 592,
+      "latest": "2026.11.09",
       "file": "updates/feed/game-assets.json",
-      "rev": "63be78135d"
+      "rev": "5161dc57bd"
     },
     "motion": {
       "count": 170,
@@ -37,10 +37,10 @@
       "rev": "b101142fa0"
     },
     "tools": {
-      "count": 1049,
-      "latest": "2026.11.06",
+      "count": 1050,
+      "latest": "2026.11.09",
       "file": "updates/feed/tools.json",
-      "rev": "5a71422e17"
+      "rev": "632b778a24"
     }
   },
   "services": {
@@ -60,9 +60,9 @@
       "latest": "2026.10.26"
     },
     "seedream": {
-      "count": 11,
+      "count": 12,
       "first": "2025.04.16",
-      "latest": "2026.09.01"
+      "latest": "2026.11.09"
     },
     "qwen-image": {
       "count": 16,
@@ -90,9 +90,9 @@
       "latest": "2026.11.05"
     },
     "magnific": {
-      "count": 71,
+      "count": 72,
       "first": "2024.09.16",
-      "latest": "2026.11.06"
+      "latest": "2026.11.09"
     },
     "gigapixel": {
       "count": 80,
@@ -210,9 +210,9 @@
       "latest": "2026.11.06"
     },
     "layer": {
-      "count": 106,
+      "count": 107,
       "first": "2023.01.20",
-      "latest": "2026.11.02"
+      "latest": "2026.11.09"
     },
     "ludo.ai": {
       "count": 52,
@@ -310,9 +310,9 @@
       "latest": "2026.10.30"
     },
     "claude": {
-      "count": 242,
+      "count": 243,
       "first": "2023.03.14",
-      "latest": "2026.11.06"
+      "latest": "2026.11.09"
     }
   }
 }
