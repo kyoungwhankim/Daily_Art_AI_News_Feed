@@ -1,0 +1,18 @@
+[
+  {
+    "id": "magnific-2026-11-10-1",
+    "service": "magnific",
+    "date": "2026.11.10",
+    "kind": "종료",
+    "title": "Magnific API에서 구형 Kling 1.6·2.0·2.1 엔드포인트 지원 종료",
+    "summary": "Magnific API에서 구형 Kling 1.6, 2.0, 2.1 모델 엔드포인트가 공식 제거되어 신형 Kling 3 및 2.6 사용이 권장돼요.",
+    "details": [
+      "Kling 1.6(kling-pro, kling-std) 엔드포인트 지원 종료",
+      "Kling 2.0(kling-v2) 엔드포인트 지원 종료",
+      "Kling 2.1(kling-v2-1-pro, kling-v2-1-std, kling-v2-1-master) 엔드포인트 지원 종료",
+      "이미지-비디오 생성 작업에는 Kling 3, Kling 2.6, Kling 2.5 Turbo Pro 사용 지원"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-10-2026",
+    "source": "dev"
+  }
+]

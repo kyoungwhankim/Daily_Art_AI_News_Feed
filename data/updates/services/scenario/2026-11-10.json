@@ -1,0 +1,58 @@
+[
+  {
+    "id": "scenario-2026-11-10-1",
+    "service": "scenario",
+    "date": "2026.11.10",
+    "kind": "모델",
+    "title": "비디오를 3D 캐릭터 애니메이션으로 변환하는 Uthana Video to Motion 3.0 도입",
+    "summary": "레퍼런스 영상 속 동작을 최대 60초 길이의 3D 캐릭터 애니메이션으로 변환하는 Uthana Video to Motion 3.0 모델이 추가되었어요.",
+    "details": [
+      "손가락 디테일 표현 개선 및 발 미끄러짐 현상 대폭 완화",
+      "최대 60초 길이의 실제 촬영 영상에서 정밀한 3D 스켈레톤 모션 추출"
+    ],
+    "url": "https://www.scenario.com/changelog/models-15f02d626cb8ed97bb58b2b2dc299a3b47a578f2ecf469820af1b8b9bc7846bc",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-10-2",
+    "service": "scenario",
+    "date": "2026.11.10",
+    "kind": "모델",
+    "title": "상업용 이미지 생성 및 구조적 편집 모델 Bria FIBO 2.0 지원",
+    "summary": "구조화된 프롬프트로 재현성을 높이고 최대 4개의 레퍼런스를 편집할 수 있는 Bria FIBO 2.0 모델이 도입되었어요.",
+    "details": [
+      "100만 화소(1MP) 및 400만 화소(4MP) 고해상도 이미지 생성 지원",
+      "텍스트 지시어로 최대 4개의 참조 이미지를 조합하고 정밀 편집하는 멀티 레퍼런스 편집 기능 제공"
+    ],
+    "url": "https://www.scenario.com/changelog/models-65e406130ebae45805bd75c0a66712c3d1d0c65f15f3c039f0fec2f58f7315a5",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-10-3",
+    "service": "scenario",
+    "date": "2026.11.10",
+    "kind": "모델",
+    "title": "최대 16장 레퍼런스 및 4K 지원 MiniMax H3 Image 모델 도입",
+    "summary": "최대 16장의 참조 이미지를 기반으로 1K부터 4K 해상도까지 이미지를 생성하고 편집하는 MiniMax H3 Image 및 고속 모델이 추가되었어요.",
+    "details": [
+      "최대 16장의 레퍼런스 이미지를 프롬프트 가이드로 활용하여 일관된 스타일 및 캐릭터 유지",
+      "표준 모델 및 빠른 생성을 지원하는 MiniMax H3 Image Highspeed 모델 동시 제공"
+    ],
+    "url": "https://www.scenario.com/changelog/models-5a97d4f48d4b15877d7d2b03ac4cd09b17cf262999f2c31490e3069d7b0f019e",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-10-4",
+    "service": "scenario",
+    "date": "2026.11.10",
+    "kind": "연동",
+    "title": "Scenario Photoshop 플러그인 v0.8.0 출시: 브라우저 로그인 지원",
+    "summary": "포토샵 플러그인이 v0.8.0으로 업데이트되어 브라우저 기반 간편 로그인과 팀 프로젝트 패널 직접 선택을 지원해요.",
+    "details": [
+      "브라우저 로그인 연동으로 계정 인증 절차 간소화",
+      "포토샵 패널 내부에서 팀 프로젝트를 즉시 탐색하고 선택 가능"
+    ],
+    "url": "https://www.scenario.com/changelog/plugins-photoshop-v0-8-0",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "blender-2026-11-10-1",
+    "service": "blender",
+    "date": "2026.11.10",
+    "kind": "앱",
+    "title": "Blender 5.3 정식 출시: 네이티브 3DGS 지원 및 NVIDIA DLSS 뷰포트 디노이저 탑재",
+    "summary": "블렌더 5.3이 정식 출시되어 3D 가우시안 스플랫 네이티브 편집/렌더링, NVIDIA DLSS 뷰포트 디노이저, Vulkan 기본 백엔드 전환 등을 지원해요.",
+    "details": [
+      "PLY 및 SPZ 포맷의 3D 가우시안 스플랫을 포인트 클라우드로 불러와 지오메트리 노드로 편집하고 Workbench, EEVEE, Cycles에서 직접 렌더링",
+      "NVIDIA GPU 대상 DLSS 뷰포트 디노이저를 탑재하여 이전 프레임 샘플 재사용으로 뷰포트 렌더링 속도 향상",
+      "Windows 및 Linux의 기본 그래픽 백엔드를 Vulkan으로 전환, Metal 및 Vulkan 하드웨어 레이트레이싱 그림자 지원",
+      "Extensions 플랫폼을 통한 CC0 라이선스 에셋 라이브러리 공유 및 원클릭 설치 지원",
+      "Cycles 유리 분산(dispersion) 효과 지원 및 EEVEE 머티리얼 라이팅 노드 추가"
+    ],
+    "url": "https://www.blender.org/press/blender-5-3-release/",
+    "source": "notice"
+  }
+]

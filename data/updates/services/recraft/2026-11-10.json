@@ -1,0 +1,18 @@
+[
+  {
+    "id": "recraft-2026-11-10-1",
+    "service": "recraft",
+    "date": "2026.11.10",
+    "kind": "연동",
+    "title": "Recraft Studio에 구글 Gemini Omni Flash 1.2 영상 모델 연동",
+    "summary": "Recraft Studio에 구글의 최신 영상 모델 Gemini Omni Flash 1.2가 추가되어 음성이 포함된 최대 10초 길이의 영상을 생성할 수 있게 되었어요.",
+    "details": [
+      "인물·사물의 프레임 간 일관성 유지 및 카메라 워크 제어력 대폭 향상",
+      "다중 화자 대화 장면의 립싱크 정확도 개선 및 기본 네이티브 오디오 생성 지원",
+      "캐릭터 및 제품 레퍼런스 이미지 반영도 개선",
+      "Recraft V4.1 및 기존 영상 모델과 동일한 작업 공간에서 즉시 사용 가능"
+    ],
+    "url": "https://www.recraft.ai/blog/gemini-omni-flash-1-2-in-recraft-studio",
+    "source": "notice"
+  }
+]

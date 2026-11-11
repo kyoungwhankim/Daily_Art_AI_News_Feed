@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-11-10-1",
+    "service": "figma-ai",
+    "date": "2026.11.10",
+    "kind": "기능",
+    "title": "Figma Motion 업데이트: 물리 기반 스프링·스타일 및 Lottie 미리보기 도입",
+    "summary": "피그마 모션에 물리 기반 스프링(질량·강성·감쇠) 제어 기능과 애니메이션 스타일 실시간 미리보기, Lottie 내보내기 전 검토 기능이 추가되었어요.",
+    "details": [
+      "iOS 및 Android용 질량(mass), 강성(stiffness), 감쇠(damping) 파라미터를 조절하여 사실적인 스프링 애니메이션 구현",
+      "디자인 시스템에 스프링 값을 저장하여 팀 단위로 대규모 재사용 지원",
+      "캔버스 적용 전 애니메이션 프리셋 스타일의 실시간 재생 미리보기 지원",
+      "Lottie 파일로 내보내기 전 애니메이션 동작을 즉시 검토할 수 있는 미리보기 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews",
+    "source": "notice"
+  }
+]

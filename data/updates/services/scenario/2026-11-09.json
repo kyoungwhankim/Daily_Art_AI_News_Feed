@@ -1,0 +1,16 @@
+[
+  {
+    "id": "scenario-2026-11-09-1",
+    "service": "scenario",
+    "date": "2026.11.09",
+    "kind": "모델",
+    "title": "비디오 속 인물 교체 모델 'P-Video 2 Pro Replace' 출시",
+    "summary": "원본 비디오의 모션, 배경, 오디오를 그대로 유지하면서 최대 2명의 등장인물을 자연스럽게 교체하는 모델이 도입되었어요.",
+    "details": [
+      "1초부터 최대 120초 길이의 비디오에서 인물 교체 작업 지원",
+      "원본 비디오의 카메라 움직임, 배경 환경, 배경 오디오 보존"
+    ],
+    "url": "https://www.scenario.com/changelog/models-3b9eeadfbf5289aeb0939f1100f8b09e865b2b8ffe8ef3290b9a44cdc1758450",
+    "source": "notice"
+  }
+]

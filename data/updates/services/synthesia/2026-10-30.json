@@ -1,0 +1,16 @@
+[
+  {
+    "id": "synthesia-2026-10-30-1",
+    "service": "synthesia",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "프레임 드로잉 수정 지시 마크업 및 영상 리믹스 기능 추가",
+    "summary": "비디오 프레임에 직접 펜으로 표시해 수정을 지시하는 마크업 기능과 기존 영상을 새 포맷으로 재가공하는 리믹스 기능이 추가되었어요.",
+    "details": [
+      "비디오 프레임 위에 직접 그리고 설명을 추가해 한 번에 정확한 수정 요청 전달",
+      "완성된 비디오를 재구성하거나 요약본, 세로형 숏폼으로 변환하는 리믹스(Remix it) 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/mark-up-frames-to-show-syren-what-to-change",
+    "source": "notice"
+  }
+]

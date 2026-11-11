@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comfyui-2026-11-10-1",
+    "service": "comfyui",
+    "date": "2026.11.10",
+    "kind": "모델",
+    "title": "오픈 웨이트 이미지 생성·편집 모델 'MiniMax H3 Image' 정식 지원",
+    "summary": "ComfyUI에 미니맥스의 오픈 웨이트 모델 MiniMax H3 Image가 로컬 네이티브 노드 및 파트너 노드로 공식 추가되었어요.",
+    "details": [
+      "단일 체크포인트로 텍스트 투 이미지 생성과 멀티 레퍼런스 이미지 편집 동시 지원",
+      "CFG 증류를 통해 가이던스 1에서 6단계(6-steps) 샘플링으로 빠른 생성 구현",
+      "최대 4096×4096(1:1), 5472×3072(16:9), 6272×2688(21:9)의 고해상도 네이티브 출력 지원",
+      "로컬 GPU 직접 구동 및 클라우드 Partner Nodes를 통한 API 호출 지원"
+    ],
+    "url": "https://blog.comfy.org/p/minimax-h3-image-is-now-available",
+    "source": "notice"
+  }
+]

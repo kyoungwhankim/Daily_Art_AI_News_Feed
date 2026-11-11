@@ -1,5 +1,54 @@
 [
   {
+    "id": "figma-ai-2026-11-10-1",
+    "service": "figma-ai",
+    "date": "2026.11.10",
+    "kind": "기능",
+    "title": "Figma Motion 업데이트: 물리 기반 스프링·스타일 및 Lottie 미리보기 도입",
+    "summary": "피그마 모션에 물리 기반 스프링(질량·강성·감쇠) 제어 기능과 애니메이션 스타일 실시간 미리보기, Lottie 내보내기 전 검토 기능이 추가되었어요.",
+    "details": [
+      "iOS 및 Android용 질량(mass), 강성(stiffness), 감쇠(damping) 파라미터를 조절하여 사실적인 스프링 애니메이션 구현",
+      "디자인 시스템에 스프링 값을 저장하여 팀 단위로 대규모 재사용 지원",
+      "캔버스 적용 전 애니메이션 프리셋 스타일의 실시간 재생 미리보기 지원",
+      "Lottie 파일로 내보내기 전 애니메이션 동작을 즉시 검토할 수 있는 미리보기 제공"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-11-10-1",
+    "service": "comfyui",
+    "date": "2026.11.10",
+    "kind": "모델",
+    "title": "오픈 웨이트 이미지 생성·편집 모델 'MiniMax H3 Image' 정식 지원",
+    "summary": "ComfyUI에 미니맥스의 오픈 웨이트 모델 MiniMax H3 Image가 로컬 네이티브 노드 및 파트너 노드로 공식 추가되었어요.",
+    "details": [
+      "단일 체크포인트로 텍스트 투 이미지 생성과 멀티 레퍼런스 이미지 편집 동시 지원",
+      "CFG 증류를 통해 가이던스 1에서 6단계(6-steps) 샘플링으로 빠른 생성 구현",
+      "최대 4096×4096(1:1), 5472×3072(16:9), 6272×2688(21:9)의 고해상도 네이티브 출력 지원",
+      "로컬 GPU 직접 구동 및 클라우드 Partner Nodes를 통한 API 호출 지원"
+    ],
+    "url": "https://blog.comfy.org/p/minimax-h3-image-is-now-available",
+    "source": "notice"
+  },
+  {
+    "id": "blender-2026-11-10-1",
+    "service": "blender",
+    "date": "2026.11.10",
+    "kind": "앱",
+    "title": "Blender 5.3 정식 출시: 네이티브 3DGS 지원 및 NVIDIA DLSS 뷰포트 디노이저 탑재",
+    "summary": "블렌더 5.3이 정식 출시되어 3D 가우시안 스플랫 네이티브 편집/렌더링, NVIDIA DLSS 뷰포트 디노이저, Vulkan 기본 백엔드 전환 등을 지원해요.",
+    "details": [
+      "PLY 및 SPZ 포맷의 3D 가우시안 스플랫을 포인트 클라우드로 불러와 지오메트리 노드로 편집하고 Workbench, EEVEE, Cycles에서 직접 렌더링",
+      "NVIDIA GPU 대상 DLSS 뷰포트 디노이저를 탑재하여 이전 프레임 샘플 재사용으로 뷰포트 렌더링 속도 향상",
+      "Windows 및 Linux의 기본 그래픽 백엔드를 Vulkan으로 전환, Metal 및 Vulkan 하드웨어 레이트레이싱 그림자 지원",
+      "Extensions 플랫폼을 통한 CC0 라이선스 에셋 라이브러리 공유 및 원클릭 설치 지원",
+      "Cycles 유리 분산(dispersion) 효과 지원 및 EEVEE 머티리얼 라이팅 노드 추가"
+    ],
+    "url": "https://www.blender.org/press/blender-5-3-release/",
+    "source": "notice"
+  },
+  {
     "id": "claude-2026-11-09-1",
     "service": "claude",
     "date": "2026.11.09",

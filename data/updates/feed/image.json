@@ -1,5 +1,52 @@
 [
   {
+    "id": "recraft-2026-11-10-1",
+    "service": "recraft",
+    "date": "2026.11.10",
+    "kind": "연동",
+    "title": "Recraft Studio에 구글 Gemini Omni Flash 1.2 영상 모델 연동",
+    "summary": "Recraft Studio에 구글의 최신 영상 모델 Gemini Omni Flash 1.2가 추가되어 음성이 포함된 최대 10초 길이의 영상을 생성할 수 있게 되었어요.",
+    "details": [
+      "인물·사물의 프레임 간 일관성 유지 및 카메라 워크 제어력 대폭 향상",
+      "다중 화자 대화 장면의 립싱크 정확도 개선 및 기본 네이티브 오디오 생성 지원",
+      "캐릭터 및 제품 레퍼런스 이미지 반영도 개선",
+      "Recraft V4.1 및 기존 영상 모델과 동일한 작업 공간에서 즉시 사용 가능"
+    ],
+    "url": "https://www.recraft.ai/blog/gemini-omni-flash-1-2-in-recraft-studio",
+    "source": "notice"
+  },
+  {
+    "id": "magnific-2026-11-10-1",
+    "service": "magnific",
+    "date": "2026.11.10",
+    "kind": "종료",
+    "title": "Magnific API에서 구형 Kling 1.6·2.0·2.1 엔드포인트 지원 종료",
+    "summary": "Magnific API에서 구형 Kling 1.6, 2.0, 2.1 모델 엔드포인트가 공식 제거되어 신형 Kling 3 및 2.6 사용이 권장돼요.",
+    "details": [
+      "Kling 1.6(kling-pro, kling-std) 엔드포인트 지원 종료",
+      "Kling 2.0(kling-v2) 엔드포인트 지원 종료",
+      "Kling 2.1(kling-v2-1-pro, kling-v2-1-std, kling-v2-1-master) 엔드포인트 지원 종료",
+      "이미지-비디오 생성 작업에는 Kling 3, Kling 2.6, Kling 2.5 Turbo Pro 사용 지원"
+    ],
+    "url": "https://docs.magnific.com/changelog#november-10-2026",
+    "source": "dev"
+  },
+  {
+    "id": "gigapixel-2026-11-10-1",
+    "service": "gigapixel",
+    "date": "2026.11.10",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.5.0 출시: Wonder 4 클라우드 모델 탑재",
+    "summary": "Topaz Gigapixel v1.5.0이 출시되어 차세대 화질 개선 및 업스케일링 모델 Wonder 4를 클라우드에서 사용할 수 있게 되었어요.",
+    "details": [
+      "노이즈·블러·압축 아티팩트 제거 및 얼굴 디테일 복원을 단일 패스로 처리하는 Wonder 4 클라우드 지원",
+      "이미지 각 영역을 개별 분석해 최적의 보정을 적용하여 자연스러운 질감 유지",
+      "Windows, Apple Silicon, Intel Mac 및 Snapdragon(ARM64) 인스톨러 배포"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-5-0/105732",
+    "source": "notice"
+  },
+  {
     "id": "seedream-2026-11-09-1",
     "service": "seedream",
     "date": "2026.11.09",

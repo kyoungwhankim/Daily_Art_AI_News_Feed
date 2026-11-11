@@ -1,5 +1,33 @@
 [
   {
+    "id": "meshy-2026-11-10-1",
+    "service": "meshy",
+    "date": "2026.11.10",
+    "kind": "API",
+    "title": "Rigging API에 스켈레톤 템플릿 지정 및 손가락 뼈대 추가 옵션 도입",
+    "summary": "리깅 API에 타깃 엔진용 골격 구조(Mixamo, UE5 Mannequin)를 지정하는 템플릿과 손가락 본을 생성하는 옵션이 추가되었어요.",
+    "details": [
+      "skeleton_template 파라미터로 Mixamo 또는 UE5 Mannequin 등 타깃 엔진에 맞춘 바이패드 골격 리깅 지원",
+      "include_fingers 옵션을 통해 바이패드 캐릭터의 양손 손가락 뼈대 자동 생성 지원"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-10",
+    "source": "dev"
+  },
+  {
+    "id": "meshy-2026-11-06-1",
+    "service": "meshy",
+    "date": "2026.11.06",
+    "kind": "API",
+    "title": "3D 텍스처 및 이미지 생성에 GPT Image 2.6 Flare·Sunburst 모델 추가",
+    "summary": "Text to Image 및 Image to Image API에서 OpenAI의 GPT Image 2.6 Flare와 Sunburst 모델을 선택해 사용할 수 있게 되었어요.",
+    "details": [
+      "빠른 반복 작업을 위한 Flare 티어 및 디테일한 고품질 편집을 위한 Sunburst 티어 지원",
+      "기존 GPT Image 모델과 동일한 화면비 지원 및 동일한 크레딧(Text to Image 9크레딧, Image to Image 12크레딧) 적용"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-6",
+    "source": "dev"
+  },
+  {
     "id": "meshy-2026-11-05-1",
     "service": "meshy",
     "date": "2026.11.05",

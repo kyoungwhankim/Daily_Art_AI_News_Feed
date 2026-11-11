@@ -1,34 +1,34 @@
 {
   "categories": {
     "image": {
-      "count": 493,
-      "latest": "2026.11.09",
+      "count": 496,
+      "latest": "2026.11.10",
       "file": "updates/feed/image.json",
-      "rev": "64f53857c6"
+      "rev": "afb2c62254"
     },
     "video": {
-      "count": 992,
-      "latest": "2026.11.07",
+      "count": 998,
+      "latest": "2026.11.10",
       "file": "updates/feed/video.json",
-      "rev": "a45eb93d88"
+      "rev": "3a8378b237"
     },
     "3d": {
-      "count": 191,
-      "latest": "2026.11.05",
+      "count": 193,
+      "latest": "2026.11.10",
       "file": "updates/feed/3d.json",
-      "rev": "2051f52fb6"
+      "rev": "2d481088c8"
     },
     "game-assets": {
-      "count": 592,
-      "latest": "2026.11.09",
+      "count": 599,
+      "latest": "2026.11.10",
       "file": "updates/feed/game-assets.json",
-      "rev": "5161dc57bd"
+      "rev": "09755bf1c5"
     },
     "motion": {
-      "count": 170,
-      "latest": "2026.11.04",
+      "count": 171,
+      "latest": "2026.11.09",
       "file": "updates/feed/motion.json",
-      "rev": "1237453b37"
+      "rev": "0bcf848398"
     },
     "audio": {
       "count": 366,
@@ -37,10 +37,10 @@
       "rev": "b101142fa0"
     },
     "tools": {
-      "count": 1050,
-      "latest": "2026.11.09",
+      "count": 1053,
+      "latest": "2026.11.10",
       "file": "updates/feed/tools.json",
-      "rev": "632b778a24"
+      "rev": "e661f10ecd"
     }
   },
   "services": {
@@ -85,19 +85,19 @@
       "latest": "2026.11.04"
     },
     "recraft": {
-      "count": 42,
+      "count": 43,
       "first": "2024.03.13",
-      "latest": "2026.11.05"
+      "latest": "2026.11.10"
     },
     "magnific": {
-      "count": 72,
+      "count": 73,
       "first": "2024.09.16",
-      "latest": "2026.11.09"
+      "latest": "2026.11.10"
     },
     "gigapixel": {
-      "count": 80,
+      "count": 81,
       "first": "2020.04.09",
-      "latest": "2026.10.12"
+      "latest": "2026.11.10"
     },
     "mai-image": {
       "count": 10,
@@ -140,9 +140,9 @@
       "latest": "2026.11.03"
     },
     "higgsfield": {
-      "count": 66,
+      "count": 67,
       "first": "2025.04.24",
-      "latest": "2026.11.06"
+      "latest": "2026.11.09"
     },
     "ltx-studio": {
       "count": 65,
@@ -175,9 +175,9 @@
       "latest": "2026.11.07"
     },
     "synthesia": {
-      "count": 193,
+      "count": 198,
       "first": "2020.10.13",
-      "latest": "2026.10.27"
+      "latest": "2026.11.10"
     },
     "topaz-video": {
       "count": 118,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 127,
+      "count": 129,
       "first": "2023.10.19",
-      "latest": "2026.11.05"
+      "latest": "2026.11.10"
     },
     "tripo": {
       "count": 29,
@@ -205,9 +205,9 @@
       "latest": "2026.11.05"
     },
     "scenario": {
-      "count": 388,
+      "count": 394,
       "first": "2022.12.23",
-      "latest": "2026.11.06"
+      "latest": "2026.11.10"
     },
     "layer": {
       "count": 107,
@@ -220,9 +220,9 @@
       "latest": "2026.11.06"
     },
     "roblox-cube": {
-      "count": 45,
+      "count": 46,
       "first": "2023.03.20",
-      "latest": "2026.11.05"
+      "latest": "2026.11.09"
     },
     "rokoko": {
       "count": 39,
@@ -235,9 +235,9 @@
       "latest": "2026.11.02"
     },
     "flow-studio": {
-      "count": 38,
+      "count": 39,
       "first": "2023.09.14",
-      "latest": "2026.11.04"
+      "latest": "2026.11.09"
     },
     "elevenlabs": {
       "count": 209,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 217,
+      "count": 218,
       "first": "2024.08.06",
-      "latest": "2026.11.04"
+      "latest": "2026.11.10"
     },
     "invokeai": {
       "count": 74,
@@ -300,14 +300,14 @@
       "latest": "2026.10.29"
     },
     "figma-ai": {
-      "count": 89,
+      "count": 90,
       "first": "2024.03.28",
-      "latest": "2026.11.06"
+      "latest": "2026.11.10"
     },
     "blender": {
-      "count": 32,
+      "count": 33,
       "first": "2019.07.30",
-      "latest": "2026.10.30"
+      "latest": "2026.11.10"
     },
     "claude": {
       "count": 243,

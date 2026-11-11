@@ -1,5 +1,35 @@
 [
   {
+    "id": "synthesia-2026-11-10-1",
+    "service": "synthesia",
+    "date": "2026.11.10",
+    "kind": "연동",
+    "title": "Synthesia Syren에 바이트댄스 Seedance 시네마틱 모드 연동",
+    "summary": "Synthesia의 영상 생성 엔진 Syren에 바이트댄스 Seedance 모델이 도입되어 한층 더 사실적이고 영화 같은 고화질 장면을 제작할 수 있게 되었어요.",
+    "details": [
+      "Syren 추천 시 시네마틱 모드 선택 가능",
+      "실제 영화 프로덕션 수준의 자연스러운 라이프라이크 영상 렌더링 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/make-cinematic-syren-videos-with-seedance",
+    "source": "notice"
+  },
+  {
+    "id": "higgsfield-2026-11-09-1",
+    "service": "higgsfield",
+    "date": "2026.11.09",
+    "kind": "연동",
+    "title": "Higgsfield에 바이트댄스 Seedream 5.5 모델 연동 출시",
+    "summary": "Higgsfield 플랫폼에 바이트댄스의 최신 이미지 모델 Seedream 5.5가 추가되어 100회 연속 편집 및 투명 배경 생성 기능을 제공해요.",
+    "details": [
+      "알파 채널(RGBA) 네이티브 지원으로 별도 배경 분리 없이 투명 배경 이미지 생성",
+      "비수정 영역을 픽셀 단위로 보존하는 100회 연속 편집 지원",
+      "한 번에 1~4장의 1K·1.5K·2K 해상도 이미지 생성 지원",
+      "이미지당 2.5~3.5 크레딧 적용"
+    ],
+    "url": "https://higgsfield.ai/blog/seedream-5-5-higgsfield",
+    "source": "notice"
+  },
+  {
     "id": "heygen-2026-11-07-1",
     "service": "heygen",
     "date": "2026.11.07",
@@ -16,6 +46,20 @@
     "source": "dev"
   },
   {
+    "id": "synthesia-2026-11-06-1",
+    "service": "synthesia",
+    "date": "2026.11.06",
+    "kind": "연동",
+    "title": "Claude 및 ChatGPT에서 Syren 비디오 제작 시 파일 직접 첨부 지원",
+    "summary": "클로드와 챗GPT 내 Synthesia 연동에서 프레젠테이션, 문서, 이미지, 영상을 직접 첨부해 비디오를 생성할 수 있게 되었어요.",
+    "details": [
+      "슬라이드 덱, PDF 문서, 이미지, 영상 파일을 대화창에 첨부하여 비디오 초안 구성",
+      "별도 업로드 과정 없이 사용자의 원본 자료를 바탕으로 맞춤형 비디오 제작"
+    ],
+    "url": "https://www.synthesia.io/updates/upload-files-to-syren-from-claude-and-chatgpt",
+    "source": "notice"
+  },
+  {
     "id": "higgsfield-2026-11-06-1",
     "service": "higgsfield",
     "date": "2026.11.06",
@@ -28,6 +72,22 @@
       "웹 대시보드뿐만 아니라 Claude 및 ChatGPT Higgsfield MCP 커넥터(/microdrama-ads)에서도 사용 지원"
     ],
     "url": "https://higgsfield.ai/blog/micro-drama-ads-higgsfield-ads-studio",
+    "source": "notice"
+  },
+  {
+    "id": "synthesia-2026-11-05-1",
+    "service": "synthesia",
+    "date": "2026.11.05",
+    "kind": "기능",
+    "title": "대화형 아바타 클론 생성 및 웹사이트 임베드 기능 출시",
+    "summary": "가상 인터뷰를 통해 사용자의 외모와 목소리를 닮은 실시간 대화형 클론을 만들고, 코딩 없이 웹사이트에 임베드할 수 있는 기능이 출시되었어요.",
+    "details": [
+      "가상 인터뷰어와 대화하며 실시간 인터랙티브 아바타 클론 생성",
+      "고유 링크를 통한 인터랙티브 클론 공유 지원",
+      "자체 보유 콘텐츠를 학습시켜 답변하는 인터랙티브 아바타 제작",
+      "웹사이트 직접 임베드 또는 링크 공유로 개발자 도움 없이 배포"
+    ],
+    "url": "https://www.synthesia.io/updates/create-an-interactive-clone-of-yourself",
     "source": "notice"
   },
   {
@@ -126,6 +186,20 @@
     "source": "dev"
   },
   {
+    "id": "synthesia-2026-11-03-1",
+    "service": "synthesia",
+    "date": "2026.11.03",
+    "kind": "기능",
+    "title": "Syren 아바타 공간 상호작용 및 2인 대화 씬 지원",
+    "summary": "Syren 비디오 아바타가 주변 환경과 상호작용하며 발화하고, 한 샷 안에서 두 아바타가 자연스럽게 대화를 나누는 기능이 도입되었어요.",
+    "details": [
+      "아바타가 말하면서 주변 사물이나 배경 공간과 능동적으로 인터랙션 수행",
+      "단일 샷 내에서 2명의 진행자가 서로 대화를 주고받는 대화형 장면 연출"
+    ],
+    "url": "https://www.synthesia.io/updates/make-your-syren-avatars-move-and-hold-conversations",
+    "source": "notice"
+  },
+  {
     "id": "higgsfield-2026-11-03-1",
     "service": "higgsfield",
     "date": "2026.11.03",
@@ -199,6 +273,20 @@
     ],
     "url": "https://docs.x.ai/developers/release-notes",
     "source": "dev"
+  },
+  {
+    "id": "synthesia-2026-10-30-1",
+    "service": "synthesia",
+    "date": "2026.10.30",
+    "kind": "기능",
+    "title": "프레임 드로잉 수정 지시 마크업 및 영상 리믹스 기능 추가",
+    "summary": "비디오 프레임에 직접 펜으로 표시해 수정을 지시하는 마크업 기능과 기존 영상을 새 포맷으로 재가공하는 리믹스 기능이 추가되었어요.",
+    "details": [
+      "비디오 프레임 위에 직접 그리고 설명을 추가해 한 번에 정확한 수정 요청 전달",
+      "완성된 비디오를 재구성하거나 요약본, 세로형 숏폼으로 변환하는 리믹스(Remix it) 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/mark-up-frames-to-show-syren-what-to-change",
+    "source": "notice"
   },
   {
     "id": "higgsfield-2026-10-30-1",

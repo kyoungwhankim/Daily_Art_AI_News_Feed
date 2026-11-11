@@ -1,0 +1,16 @@
+[
+  {
+    "id": "synthesia-2026-11-10-1",
+    "service": "synthesia",
+    "date": "2026.11.10",
+    "kind": "연동",
+    "title": "Synthesia Syren에 바이트댄스 Seedance 시네마틱 모드 연동",
+    "summary": "Synthesia의 영상 생성 엔진 Syren에 바이트댄스 Seedance 모델이 도입되어 한층 더 사실적이고 영화 같은 고화질 장면을 제작할 수 있게 되었어요.",
+    "details": [
+      "Syren 추천 시 시네마틱 모드 선택 가능",
+      "실제 영화 프로덕션 수준의 자연스러운 라이프라이크 영상 렌더링 지원"
+    ],
+    "url": "https://www.synthesia.io/updates/make-cinematic-syren-videos-with-seedance",
+    "source": "notice"
+  }
+]

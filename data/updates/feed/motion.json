@@ -1,5 +1,21 @@
 [
   {
+    "id": "flow-studio-2026-11-09-1",
+    "service": "flow-studio",
+    "date": "2026.11.09",
+    "kind": "연동",
+    "title": "Autodesk Flow Studio, AI 어시스턴트 연동용 MCP 서버 출시",
+    "summary": "Flow Studio용 모델 컨텍스트 프로토콜(MCP) 서버가 출시되어 AI 대화창에서 텍스트 프롬프트로 직접 3D 모델과 이미지를 생성하고 편집할 수 있게 되었어요.",
+    "details": [
+      "자연어 프롬프트와 레퍼런스 이미지를 통해 3D 모델 및 이미지 생성 지원",
+      "대화형 지시어로 3D 메시 리메싱, 리텍스처링 및 이미지 편집 반복 수행",
+      "Flow Studio 프로젝트 라이브러리 연동 및 GLB, OBJ, STL, 3MF 포맷 에셋 다운로드 지원",
+      "Autodesk 계정 로그인 및 보유 Flow Studio 플랜 크레딧 사용"
+    ],
+    "url": "https://help.wonderdynamics.com/release-notes/#november-09-2026",
+    "source": "notice"
+  },
+  {
     "id": "flow-studio-2026-11-04-1",
     "service": "flow-studio",
     "date": "2026.11.04",

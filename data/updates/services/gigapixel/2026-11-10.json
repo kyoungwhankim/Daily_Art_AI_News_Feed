@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gigapixel-2026-11-10-1",
+    "service": "gigapixel",
+    "date": "2026.11.10",
+    "kind": "앱",
+    "title": "Topaz Gigapixel v1.5.0 출시: Wonder 4 클라우드 모델 탑재",
+    "summary": "Topaz Gigapixel v1.5.0이 출시되어 차세대 화질 개선 및 업스케일링 모델 Wonder 4를 클라우드에서 사용할 수 있게 되었어요.",
+    "details": [
+      "노이즈·블러·압축 아티팩트 제거 및 얼굴 디테일 복원을 단일 패스로 처리하는 Wonder 4 클라우드 지원",
+      "이미지 각 영역을 개별 분석해 최적의 보정을 적용하여 자연스러운 질감 유지",
+      "Windows, Apple Silicon, Intel Mac 및 Snapdragon(ARM64) 인스톨러 배포"
+    ],
+    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-5-0/105732",
+    "source": "notice"
+  }
+]

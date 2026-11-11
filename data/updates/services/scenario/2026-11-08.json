@@ -1,0 +1,16 @@
+[
+  {
+    "id": "scenario-2026-11-08-1",
+    "service": "scenario",
+    "date": "2026.11.08",
+    "kind": "기능",
+    "title": "Scenario Skills v0.61.0 출시: 플레이어블 광고·만화 제작 스킬 추가",
+    "summary": "에이전트에게 광고 제작과 비주얼 내러티브 생성을 지원하는 신규 스킬과 키네틱 뮤직비디오용 4K 렌더링 기능이 추가되었어요.",
+    "details": [
+      "플레이어블 광고 제작, 만화(Comic) 컷 구성, 키네틱 필름 제작을 위한 전용 스킬 제공",
+      "음악 기반 키네틱 비디오 생성을 위한 4K 해상도 렌더링 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/skills-v0-61-0",
+    "source": "notice"
+  }
+]
