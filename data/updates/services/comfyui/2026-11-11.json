@@ -1,0 +1,34 @@
+[
+  {
+    "id": "comfyui-2026-11-11-1",
+    "service": "comfyui",
+    "date": "2026.11.11",
+    "kind": "연동",
+    "title": "Seedream 5.5 모델 파트너 노드 공식 추가",
+    "summary": "ComfyUI 파트너 노드를 통해 바이트댄스 Seedream 5.5 멀티모달 이미지 생성 및 다회차 정밀 편집 모델이 공식 지원돼요.",
+    "details": [
+      "단일 파트너 노드로 Seedream 5.5 이미지 생성 및 편집 기능 제공",
+      "배경 왜곡 없이 타겟 영역만 연속 수정하는 멀티턴(Multi-turn) 로컬 편집 지원",
+      "투명 및 반투명 배경을 네이티브로 생성하는 1단계 RGBA 출력 지원",
+      "Comfy Cloud 및 로컬 ComfyUI 워크플로우에 직접 연결 가능"
+    ],
+    "url": "https://blog.comfy.org/p/seedream-55-is-now-available-via",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-11-11-2",
+    "service": "comfyui",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "ComfyUI v0.45.0: 로컬 LLM 토큰 생성 속도 최대 2배 향상",
+    "summary": "ComfyUI v0.45.0에서 텍스트 생성 핫패스가 재작성되어 Qwen3.x 계열 로컬 LLM의 프롬프트 확장 및 이미지 캡셔닝 속도가 최대 2배 빨라졌어요.",
+    "details": [
+      "RTX 및 AMD GPU 환경에서 Qwen3.x 로컬 LLM 추론 속도 최대 2배 가속",
+      "Text Generate 노드의 mtp 옵션 자동(auto) 설정으로 최적 성능 발휘",
+      "최신 이미지 생성 모델에 포함된 프롬프트 향상 노드의 전반적인 파이프라인 가속",
+      "모델 가중치 읽기 병목을 줄여 단일 배치 시퀀스 생성 효율 극대화"
+    ],
+    "url": "https://blog.comfy.org/p/doubling-llm-token-rates-in-comfyui",
+    "source": "notice"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "marble-2026-11-12-1",
+    "service": "marble",
+    "date": "2026.11.12",
+    "kind": "모델",
+    "title": "차세대 공간 지능 월드 모델 Atlas 공개",
+    "summary": "월드랩스가 이미지 기반 3D 월드 생성·재구성 및 스플랫-메시 변환을 지원하는 차세대 공간 지능 월드 모델 Atlas를 정식 공개했어요.",
+    "details": [
+      "단일/다중 사진 또는 생성 이미지를 탐색 가능한 3D 월드로 재구성(Viewfinder)",
+      "Chisel 도구를 통한 직관적인 씬 빌딩 및 그레이박싱(Grayboxing) 구조 제어",
+      "스플랫(Splats) 데이터를 게임 및 인터랙티브 환경용 다각형 메시(Mesh)로 변환",
+      "스플랫 조명 재구성(Relight) 및 블렌더 연동을 포함한 개발자 API 지원"
+    ],
+    "url": "https://worldlabs.ai/atlas",
+    "source": "notice"
+  }
+]

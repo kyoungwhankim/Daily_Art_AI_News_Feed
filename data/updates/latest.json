@@ -1,5 +1,318 @@
 [
   {
+    "id": "veo-2026-11-12-1",
+    "service": "veo",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Google Flow, 비주얼 스토리텔링 도구 5종 공개",
+    "summary": "AI 크리에이티브 스튜디오 Google Flow에 캐릭터 일관성 유지, 연령별 외형 추적, 레트로 디지털 스타일 등을 지원하는 신규 창작 도구 5종이 추가되었어요.",
+    "details": [
+      "Character Poster: 스토리 콘셉트를 일관된 고품질 비주얼 포스터로 제작",
+      "Character Arc: 한 인물의 생애 주기 및 연령대별 외형 일관성을 유지하며 시각화",
+      "Pixel Machine: 비트맵, ASCII, CRT, 글리치 등 레트로 디지털 스타일 연출",
+      "Lucid Glass: 프리즘·헤일로·광학 굴절 등 특수 렌즈 조명 효과 구현",
+      "Pocket Studio: 단일 모바일 촬영 영상으로부터 다양한 시네마틱 카메라 앵글 생성"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-12-3",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "컴퓨트 v1.16.0: Seedream 5.5 및 Rodin 리깅 모델 추가",
+    "summary": "Scenario Compute v1.16.0에 바이트댄스 Seedream 5.5, Gemini 1.2 Flash 및 Deemos Rodin 3D 캐릭터 리깅 모델이 탑재되었어요.",
+    "details": [
+      "고해상도 이미지 생성 및 연속 편집을 위한 Seedream 5.5 지원",
+      "영상 편집 및 비전 처리를 위한 Gemini 1.2 Flash 연동",
+      "3D 캐릭터 모델 자동 뼈대 생성 및 스키닝을 위한 Rodin Rigging 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/compute-v1-16-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-12-2",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "API v2.145.0: Bria FIBO 2.0 및 자동 모더레이션 규칙 도입",
+    "summary": "Scenario API v2.145.0이 배포되어 Bria FIBO 2.0과 Florence-2 모델 엔드포인트가 추가되고 자동 검열 규칙이 도입되었어요.",
+    "details": [
+      "Bria FIBO 2.0 및 Florence-2 Grounding 신규 모델 엔드포인트 지원",
+      "팀 워크스페이스별 자동 콘텐츠 모더레이션 규칙 설정 기능 추가",
+      "비디오 LoRA 학습 워크플로우 안정성 및 성능 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-145-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-11-12-1",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Seedance 2.5 비디오 4K 해상도 생성 지원",
+    "summary": "Seedance 2.5 영상 모델에서 네이티브 4K 해상도 생성을 지원하며, 480p 초안 영상을 재수행 없이 바로 4K로 업스케일 완성할 수 있어요.",
+    "details": [
+      "텍스트/이미지 기반 영상 생성 시 네이티브 4K 옵션 제공",
+      "480p로 생성한 드래프트 영상을 다시 처음부터 생성할 필요 없이 직접 4K로 파이널라이즈",
+      "고화질 렌더링에 필요한 추가 크레딧 효율 최적화"
+    ],
+    "url": "https://www.scenario.com/changelog/models-4379e69d00dc76bea28bfe05dfc7727c9bf2e0ec2bcc3503f6dc52c446315c99",
+    "source": "notice"
+  },
+  {
+    "id": "recraft-2026-11-12-1",
+    "service": "recraft",
+    "date": "2026.11.12",
+    "kind": "연동",
+    "title": "MiniMax H3 이미지 및 영상 모델 4종 탑재",
+    "summary": "Recraft Studio에 MiniMax H3 기반 이미지 및 영상 생성 모델 4종이 새롭게 추가되어 2K·4K 스틸과 최대 15초 영상 제작이 가능해졌어요.",
+    "details": [
+      "H3 Image 및 H3 Image Highspeed로 2K/4K 이미지 생성 및 편집 지원",
+      "H3 Highspeed 및 H3 Lite로 4~15초 길이의 사운드 포함 영상 클립 생성",
+      "스틸 이미지 생성 후 영상 모델로 바로 모션을 부여하는 워크플로우 지원"
+    ],
+    "url": "https://www.recraft.ai/blog/minimax-h3-image-highspeed-lite-in-recraft-studio",
+    "source": "notice"
+  },
+  {
+    "id": "mureka-2026-11-12-1",
+    "service": "mureka",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "Remix API에 mureka-9.5 모델 정식 적용 및 기본 모델 전환",
+    "summary": "Mureka Remix API에 최대 8분 음원과 보컬 성별 제어를 지원하는 mureka-9.5 모델이 정식 배포되고 기본 모델로 설정되었어요.",
+    "details": [
+      "모든 사용자에게 곡당 0.5달러로 mureka-9.5 모델 제공",
+      "최대 8분 길이의 오디오, 보컬 전용/반주 전용/악기 트랙 입력 지원",
+      "프롬프트를 통한 보컬 성별 제어 및 가사 선택 옵션 제공",
+      "2026년 11월 12일부터 모델 파라미터 미지정 시 mureka-9.5가 기본 적용"
+    ],
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "marble-2026-11-12-1",
+    "service": "marble",
+    "date": "2026.11.12",
+    "kind": "모델",
+    "title": "차세대 공간 지능 월드 모델 Atlas 공개",
+    "summary": "월드랩스가 이미지 기반 3D 월드 생성·재구성 및 스플랫-메시 변환을 지원하는 차세대 공간 지능 월드 모델 Atlas를 정식 공개했어요.",
+    "details": [
+      "단일/다중 사진 또는 생성 이미지를 탐색 가능한 3D 월드로 재구성(Viewfinder)",
+      "Chisel 도구를 통한 직관적인 씬 빌딩 및 그레이박싱(Grayboxing) 구조 제어",
+      "스플랫(Splats) 데이터를 게임 및 인터랙티브 환경용 다각형 메시(Mesh)로 변환",
+      "스플랫 조명 재구성(Relight) 및 블렌더 연동을 포함한 개발자 API 지원"
+    ],
+    "url": "https://worldlabs.ai/atlas",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-11-12-1",
+    "service": "ludo.ai",
+    "date": "2026.11.12",
+    "kind": "모델",
+    "title": "스프라이트 고화질 애니메이션 모델 Griffin 출시",
+    "summary": "Ludo.ai 스프라이트 생성기에 갑옷 각인·머리카락 등 미세 디테일을 끝까지 유지하는 신규 고화질 애니메이션 모델 Griffin이 추가되었어요.",
+    "details": [
+      "스프라이트의 미세한 문양, 땋은 머리, 얇은 선화 디테일을 동작 전반에서 선명하게 유지",
+      "애니메이션 동작당 균일 10크레딧 과금 및 최대 5초 길이 지원",
+      "스프라이트 시트 편집(Edit Spritesheet) 및 키프레임 애니메이션에서 선택 가능",
+      "API, MCP 서버, CLI에서 griffin-hd 모델 식별자로 지원"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-griffin-sprite-animation-at-its-highest-detail",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-11-12-1",
+    "service": "heygen",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "비디오 레퍼런스 기반 영상 생성 시간 최대 30초로 확대",
+    "summary": "HeyGen Video API 및 MCP에서 레퍼런스 비디오 기반 영상 생성(reference_to_video) 길이가 기존 최대 15초에서 최대 30초로 확장되었어요.",
+    "details": [
+      "POST /v3/models/videos에서 480p, 768p, 1080p, 2K 해상도로 5~30초 길이 설정 지원",
+      "turbo 및 quality 화질 향상(prompt_enhancement) 옵션과 함께 사용 가능",
+      "입력 레퍼런스 영상 예산(최대 15초)은 유지되며 출력 영상 길이만 확장",
+      "MCP text_to_video, image_to_video 및 reference_to_video 도구에서도 최대 30초 지원"
+    ],
+    "url": "https://developers.heygen.com/changelog#hey-gen-video-reference-to-video-up-to-30-seconds",
+    "source": "dev"
+  },
+  {
+    "id": "figma-ai-2026-11-12-1",
+    "service": "figma-ai",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Figma 네이티브 3D 트랜스폼 및 에이전트 3D 씬 구성 지원",
+    "summary": "피그마에 캔버스 상에서 X·Y·Z축 회전과 원근감을 직접 조작하는 3D 트랜스폼 효과가 추가되고 피그마 에이전트 구성이 지원돼요.",
+    "details": [
+      "온캔버스 핸들을 통해 오브젝트를 X·Y·Z축으로 회전하고 원근감과 깊이감을 실시간 조정",
+      "피그마 에이전트(Figma Agent)를 활용한 3D 디자인 씬 자동 구성 지원",
+      "Figma Motion과 결합하여 회전, 반전, 원근 이동 애니메이션 제작",
+      "Dev Mode에서 CSS를 추출하거나 Figma MCP를 통해 코딩 에이전트로 3D 디자인 직접 전달"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=design-in-3d-natively-in-figma-and-ship-directly-to-code",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-11-12-2",
+    "service": "claude",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "자체 호스팅 인프라용 Claude Managed Agents 출시",
+    "summary": "클로드 매니지드 에이전트 서비스를 온프레미스 자체 인프라에 직접 구축하여 에이전트 세션과 기록을 사내에 보관할 수 있는 자체 호스팅 옵션이 출시되었어요.",
+    "details": [
+      "자체 호스팅 샌드박스뿐 아니라 전체 Managed Agents 서비스를 자체 인프라에서 구동 가능",
+      "에이전트 정의, 세션 데이터 및 실행 이력을 자체 서버에 안전하게 격리 보관",
+      "모델 요청은 앤트로픽을 포함한 선택 공급자로 라우팅",
+      "엔터프라이즈 계정 담당자를 통해 접근 권한 신청 지원"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-12-2026",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-11-12-1",
+    "service": "claude",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "구글 미트 실시간 회의 참여 도구 Claude Meetings 베타 출시",
+    "summary": "팀 및 엔터프라이즈 요금제 사용자를 대상으로 구글 미트 화상 회의에 직접 참여해 실시간 회의록을 작성하고 아티팩트를 제작하는 Claude Meetings 베타가 출시되었어요.",
+    "details": [
+      "Google Meet 통화에 가시적 참여자로 입장하여 실시간 회의 내용 기록 및 질의응답 지원",
+      "통화 도중 회의 맥락을 반영한 문서, 화이트보드, 슬라이드 등 실시간 아티팩트 자동 제작",
+      "Claude 웹 및 Claude Desktop 환경의 Team 및 Enterprise 요금제 대상 롤아웃"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes#h_2d03630102",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-11-2",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "에이전트 스킬 v0.62.0: MiniMax H3 비디오 LoRA 학습 지원",
+    "summary": "에이전트 스킬이 v0.62.0으로 업데이트되어 MiniMax H3 기반 비디오 LoRA 학습과 플레이어블 광고 생성을 지원해요.",
+    "details": [
+      "MiniMax H3 비디오 모델을 위한 커스텀 LoRA 학습 스킬 추가",
+      "간단한 장르 프롬프트로부터 인터랙티브 플레이어블 광고 자동 제작",
+      "에이전트 태스크별 세부 과금 추적 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/skills-v0-62-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-11-1",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "모델",
+    "title": "객체 바운딩 박스를 검출하는 Florence-2 Grounding 모델 도입",
+    "summary": "캡션 문구 또는 특정 객체의 위치를 감지하여 픽셀 단위 레이블 바운딩 박스를 JSON으로 반환하는 Microsoft Florence-2 Grounding 모델이 추가되었어요.",
+    "details": [
+      "프롬프트 문구 및 오브젝트 인스턴스의 픽셀 좌표 바운딩 박스 검출",
+      "검출된 영역을 기반으로 마스크 생성 및 타겟 인페인팅 워크플로우에 연계 가능"
+    ],
+    "url": "https://www.scenario.com/changelog/models-ddbba2ad8bcb485b1bd16515deb74719898581d9e0408c37adae768593cbb8fc",
+    "source": "notice"
+  },
+  {
+    "id": "recraft-2026-11-11-1",
+    "service": "recraft",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "정밀 벡터 변환 도구 Vectorizer Pro 출시",
+    "summary": "래스터 이미지를 왜곡 없이 깔끔한 SVG 벡터로 변환해 주는 Vectorizer Pro가 Recraft Studio의 모든 요금제에 공식 제공돼요.",
+    "details": [
+      "직선 해칭 및 평행선 패스를 흔들림 없이 균일하게 유지",
+      "아이콘 모서리와 끝부분 등 날카로운 디테일의 뭉개짐 방지",
+      "평면 일러스트, 아이콘, 로고 등 변환 시 외부 툴 후작업 최소화",
+      "무료 및 유료 모든 플랜 사용자에게 기본 제공"
+    ],
+    "url": "https://www.recraft.ai/blog/vectorizer-pro",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-11-11-1",
+    "service": "ludo.ai",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "My Animations: 모션 영구 저장 및 캐릭터 간 재사용 지원",
+    "summary": "텍스트로 생성한 스프라이트 모션을 계정에 영구 저장하여 모든 인간형 캐릭터와 8개 방향에 동일하게 재사용할 수 있는 기능이 도입되었어요.",
+    "details": [
+      "생성된 애니메이션을 일회성이 아닌 재사용 가능한 클립으로 'My Animations'에 저장",
+      "동일한 공격·이동 모션을 여러 캐릭터에 적용하여 캐스트 전반의 동작 일관성 유지",
+      "5개 카메라 앵글 및 8개 이동 방향 전반에 일괄 적용 가능",
+      "모션 좌우 반전(Mirrored Animations) 지원으로 방향별 에셋 제작 속도 향상"
+    ],
+    "url": "https://ludo.ai/whats-new#my-animations-and-mirrored-animations-describe-a-move-reuse-it-on-any-humanoid",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-11-11-1",
+    "service": "heygen",
+    "date": "2026.11.11",
+    "kind": "API",
+    "title": "IPA 발음 기호 지원 및 10,000자 텍스트 입력 확장",
+    "summary": "HeyGen Voice API에 IPA 발음 기호 표기법이 도입되어 고유명사의 발음을 정밀 지정할 수 있고 텍스트 입력 한도가 10,000자로 늘어났어요.",
+    "details": [
+      "heygen-voice-1 및 heygen-voice-1-turbo 모델의 공개·인스턴트 보이스에 IPA 지원",
+      "pronunciation_dictionary로 최대 100개 단어 발음 사전을 지정하거나 태그로 개별 지정",
+      "TTS 및 스트리밍 TTS 엔드포인트의 입력 텍스트 한도를 10,000자로 확장",
+      "WebSocket 컨텍스트당 최대 10,000자 전송 지원"
+    ],
+    "url": "https://developers.heygen.com/changelog#hey-gen-voice-pronunciation",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-11-11-1",
+    "service": "elevenlabs",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "ElevenLabs Summit NYC: 대화 오케스트레이션 엔진 및 에이전트 메모리 공개",
+    "summary": "일레븐랩스가 뉴욕 서밋을 통해 음성 턴테이킹 및 LLM 라우팅을 조율하는 Interaction Engine과 장기 기억(Memory)·루틴 자동화 기능을 공개했어요.",
+    "details": [
+      "자연스러운 대화 전환과 끼어들기를 처리하고 적합한 모델을 동적 호출하는 Interaction Engine 공개",
+      "인증된 고객의 이전 대화 맥락과 선호도를 기억하고 반영하는 ElevenAgents Memory 도입",
+      "대화 전후 후속 업무 및 CRM 연동을 자동화하는 워크플로우 계층 Routines 발표",
+      "도메인 특화 전사 모델 및 오픈소스·음성 모델 커스텀 파인튜닝 지원 계획 발표"
+    ],
+    "url": "https://elevenlabs.io/blog/nyc-summit",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-11-11-2",
+    "service": "comfyui",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "ComfyUI v0.45.0: 로컬 LLM 토큰 생성 속도 최대 2배 향상",
+    "summary": "ComfyUI v0.45.0에서 텍스트 생성 핫패스가 재작성되어 Qwen3.x 계열 로컬 LLM의 프롬프트 확장 및 이미지 캡셔닝 속도가 최대 2배 빨라졌어요.",
+    "details": [
+      "RTX 및 AMD GPU 환경에서 Qwen3.x 로컬 LLM 추론 속도 최대 2배 가속",
+      "Text Generate 노드의 mtp 옵션 자동(auto) 설정으로 최적 성능 발휘",
+      "최신 이미지 생성 모델에 포함된 프롬프트 향상 노드의 전반적인 파이프라인 가속",
+      "모델 가중치 읽기 병목을 줄여 단일 배치 시퀀스 생성 효율 극대화"
+    ],
+    "url": "https://blog.comfy.org/p/doubling-llm-token-rates-in-comfyui",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-11-11-1",
+    "service": "comfyui",
+    "date": "2026.11.11",
+    "kind": "연동",
+    "title": "Seedream 5.5 모델 파트너 노드 공식 추가",
+    "summary": "ComfyUI 파트너 노드를 통해 바이트댄스 Seedream 5.5 멀티모달 이미지 생성 및 다회차 정밀 편집 모델이 공식 지원돼요.",
+    "details": [
+      "단일 파트너 노드로 Seedream 5.5 이미지 생성 및 편집 기능 제공",
+      "배경 왜곡 없이 타겟 영역만 연속 수정하는 멀티턴(Multi-turn) 로컬 편집 지원",
+      "투명 및 반투명 배경을 네이티브로 생성하는 1단계 RGBA 출력 지원",
+      "Comfy Cloud 및 로컬 ComfyUI 워크플로우에 직접 연결 가능"
+    ],
+    "url": "https://blog.comfy.org/p/seedream-55-is-now-available-via",
+    "source": "notice"
+  },
+  {
     "id": "synthesia-2026-11-10-1",
     "service": "synthesia",
     "date": "2026.11.10",
@@ -68,6 +381,21 @@
     ],
     "url": "https://www.scenario.com/changelog/models-15f02d626cb8ed97bb58b2b2dc299a3b47a578f2ecf469820af1b8b9bc7846bc",
     "source": "notice"
+  },
+  {
+    "id": "runway-2026-11-10-1",
+    "service": "runway",
+    "date": "2026.11.10",
+    "kind": "API",
+    "title": "Runway Dev에 Seedream 5 Pro Layers 모델 추가",
+    "summary": "Runway Dev API에 단일 이미지를 분할하여 편집 가능한 투명 PNG 레이어로 분해하는 Seedream 5 Pro Layers 모델이 도입되었어요.",
+    "details": [
+      "단일 PNG/JPEG 이미지를 기반 이미지 및 투명 배경의 개별 레이어로 분해",
+      "auto, 1K, 1.5K, 2K 해상도 지원 및 레이어 이름·순서·경계 정보 반환",
+      "생성된 분해 레이어당 과금 체계 적용(1K/1.5K 3크레딧, 2K 5크레딧)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-pro-layers-on-runway-dev",
+    "source": "dev"
   },
   {
     "id": "recraft-2026-11-10-1",
@@ -284,326 +612,5 @@
     ],
     "url": "https://help.wonderdynamics.com/release-notes/#november-09-2026",
     "source": "notice"
-  },
-  {
-    "id": "claude-2026-11-09-1",
-    "service": "claude",
-    "date": "2026.11.09",
-    "kind": "모델",
-    "title": "Claude Fable 5.2 및 Claude Mythos 5.2 모델 출시",
-    "summary": "앤트로픽이 복잡한 추론과 장기 에이전트 작업을 위한 Claude Fable 5.2와 Mythos 5.2를 출시했어요. 100만 토큰 컨텍스트와 128k 출력 토큰, 상시 적응형 사고를 지원하며 이전 세대 대비 가격이 약 20% 인하되었어요.",
-    "details": [
-      "1M 토큰 컨텍스트 창 및 최대 128k 출력 토큰, 상시 가동되는 적응형 사고 지원",
-      "입력 100만 토큰당 $8, 출력 $40로 Fable 5.1 대비 약 20% 가격 인하",
-      "Claude API, AWS Bedrock, Google Cloud, Microsoft Foundry에서 즉시 사용 가능"
-    ],
-    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-9-2026",
-    "source": "dev"
-  },
-  {
-    "id": "scenario-2026-11-08-1",
-    "service": "scenario",
-    "date": "2026.11.08",
-    "kind": "기능",
-    "title": "Scenario Skills v0.61.0 출시: 플레이어블 광고·만화 제작 스킬 추가",
-    "summary": "에이전트에게 광고 제작과 비주얼 내러티브 생성을 지원하는 신규 스킬과 키네틱 뮤직비디오용 4K 렌더링 기능이 추가되었어요.",
-    "details": [
-      "플레이어블 광고 제작, 만화(Comic) 컷 구성, 키네틱 필름 제작을 위한 전용 스킬 제공",
-      "음악 기반 키네틱 비디오 생성을 위한 4K 해상도 렌더링 지원"
-    ],
-    "url": "https://www.scenario.com/changelog/skills-v0-61-0",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-11-07-1",
-    "service": "heygen",
-    "date": "2026.11.07",
-    "kind": "API",
-    "title": "WebSocket 기반 실시간 텍스트-음성(TTS) 입력 스트리밍 지원",
-    "summary": "LLM 토큰 등 텍스트를 조각 단위로 전송하고 단일 연결로 오디오를 스트리밍 수신하는 WebSocket 입력 API를 지원해요.",
-    "details": [
-      "/v3/models/audio/tts/stream-input 엔드포인트로 단일 음성 합성 스트리밍 지원",
-      "/v3/models/audio/tts/multi-stream-input 엔드포인트로 최대 5개 컨텍스트 동시 처리",
-      "Turbo Free를 포함한 3종의 HeyGen Voice 모델 전반에서 공개 및 인스턴트 보이스 지원",
-      "브라우저 연결을 위한 일회용 토큰 발급(POST stream-input/tokens) 제공"
-    ],
-    "url": "https://docs.heygen.com/changelog#web-socket-input-streaming",
-    "source": "dev"
-  },
-  {
-    "id": "synthesia-2026-11-06-1",
-    "service": "synthesia",
-    "date": "2026.11.06",
-    "kind": "연동",
-    "title": "Claude 및 ChatGPT에서 Syren 비디오 제작 시 파일 직접 첨부 지원",
-    "summary": "클로드와 챗GPT 내 Synthesia 연동에서 프레젠테이션, 문서, 이미지, 영상을 직접 첨부해 비디오를 생성할 수 있게 되었어요.",
-    "details": [
-      "슬라이드 덱, PDF 문서, 이미지, 영상 파일을 대화창에 첨부하여 비디오 초안 구성",
-      "별도 업로드 과정 없이 사용자의 원본 자료를 바탕으로 맞춤형 비디오 제작"
-    ],
-    "url": "https://www.synthesia.io/updates/upload-files-to-syren-from-claude-and-chatgpt",
-    "source": "notice"
-  },
-  {
-    "id": "suno-2026-11-06-1",
-    "service": "suno",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "모바일 앱에 일일 창작 프롬프트 제공하는 '데일리 송 챌린지' 추가",
-    "summary": "Suno 모바일(iOS 및 Android) 앱에 매일 새로운 작곡 주제와 프롬프트를 제시하는 '데일리 송 챌린지' 기능이 도입되었어요.",
-    "details": [
-      "홈 화면 'Make a song every day' 영역에서 매일 새로운 음악 아이디어 및 프롬프트 추천",
-      "사진 업로드나 텍스트를 조합해 즉석에서 맞춤형 곡을 제작할 수 있도록 지원",
-      "챌린지로 완성한 곡은 라이브러리 내 캘린더(Calendar) 뷰에 일자별로 자동 저장 및 탐색 가능"
-    ],
-    "url": "https://suno.com/release-notes#daily-song-challenge",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-06-1",
-    "service": "scenario",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "MiniMax H3 비디오 LoRA 학습 지원 및 신규 3D 모션 모델 도입",
-    "summary": "Scenario 웹 앱 v2.32 및 API v2.144 업데이트를 통해 MiniMax H3 비디오 LoRA 학습이 도입되고, NVIDIA Kimodo 3D 모션 생성 등 신규 모델이 추가되었어요.",
-    "details": [
-      "MiniMax H3 비디오 LoRA 학습 지원: 웹 앱과 API에서 커스텀 비디오 모델 직접 훈련 가능",
-      "NVIDIA Kimodo Text to Motion 도입: 텍스트 프롬프트로 77개 조인트 SOMA 스켈레톤 기반 30fps 3D 모션 생성",
-      "LTX-2.5 SDR to HDR 모델 추가 및 3D 에셋 뷰어 모드·태스크별 컴퓨팅 비용 추적 기능 지원"
-    ],
-    "url": "https://www.scenario.com/changelog/web-app-v2-32-0",
-    "source": "notice"
-  },
-  {
-    "id": "meshy-2026-11-06-1",
-    "service": "meshy",
-    "date": "2026.11.06",
-    "kind": "API",
-    "title": "3D 텍스처 및 이미지 생성에 GPT Image 2.6 Flare·Sunburst 모델 추가",
-    "summary": "Text to Image 및 Image to Image API에서 OpenAI의 GPT Image 2.6 Flare와 Sunburst 모델을 선택해 사용할 수 있게 되었어요.",
-    "details": [
-      "빠른 반복 작업을 위한 Flare 티어 및 디테일한 고품질 편집을 위한 Sunburst 티어 지원",
-      "기존 GPT Image 모델과 동일한 화면비 지원 및 동일한 크레딧(Text to Image 9크레딧, Image to Image 12크레딧) 적용"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog#nov-6",
-    "source": "dev"
-  },
-  {
-    "id": "magnific-2026-11-06-1",
-    "service": "magnific",
-    "date": "2026.11.06",
-    "kind": "API",
-    "title": "리소스 API에 템플릿 및 목업 필터 검색 추가",
-    "summary": "GET /v1/resources 엔드포인트에 템플릿과 목업 필터 옵션이 추가되어 맞춤형 디자인 템플릿과 목업 리소스를 손쉽게 검색할 수 있게 되었어요.",
-    "details": [
-      "filters[content_type][template]=1로 PSD 및 벡터 템플릿 필터링 지원",
-      "filters[content_type][mockup]=1로 제품 목업 리소스 검색 지원",
-      "photo, psd, vector 등 여러 콘텐츠 유형 동시 필터링 지원"
-    ],
-    "url": "https://docs.magnific.com/changelog#november-6-2026",
-    "source": "dev"
-  },
-  {
-    "id": "ludo.ai-2026-11-06-1",
-    "service": "ludo.ai",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "2D 스프라이트 및 이미지 실시간 조명용 노멀 맵 생성 기능 추가",
-    "summary": "Ludo.ai에서 생성하는 스프라이트와 이미지에 노멀 맵(Normal Map)을 함께 생성할 수 있어, 2D 에셋도 3D처럼 게임 내 광원 효과를 동적으로 받을 수 있게 되었어요.",
-    "details": [
-      "스프라이트 시트 및 방향별 스프라이트 생성 시 Normal Map 옵션 제공 (시트당 0.5 크레딧 추가, 단일 이미지는 무료)",
-      "웹 에디터에서 마우스 커서 움직임에 따라 실시간으로 빛 방향이 반응하는 동적 라이팅 프리뷰 지원",
-      "OpenGL 표준 규격 노멀 맵을 출력하여 Unity, Godot, Unreal 엔진과 호환되며 API, MCP, CLI에서도 동일하게 지원"
-    ],
-    "url": "https://ludo.ai/whats-new#normal-maps-light-your-sprites-from-any-side",
-    "source": "notice"
-  },
-  {
-    "id": "hugging-face-2026-11-06-1",
-    "service": "hugging-face",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "커맨드 팔레트 기반의 신규 메인 검색 인터페이스 도입",
-    "summary": "허깅페이스(Hugging Face) 허브의 기본 검색 기능이 단축키(⌘K 또는 Ctrl+K)로 동작하는 커맨드 팔레트 형태의 UI로 개편되었어요.",
-    "details": [
-      "키보드 단축키(⌘K / Ctrl+K)를 통해 검색창을 열고 방향키로 모델, 데이터셋, Space로 신속하게 이동 가능",
-      "새로운 모델 및 Space 생성을 지원하는 빠른 실행 액션(Quick Actions) 통합",
-      "접근성과 사용성을 대폭 개선하였으며 향후 검색 결과 매칭 기능 고도화 예정"
-    ],
-    "url": "https://huggingface.co/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-11-06-1",
-    "service": "higgsfield",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "Higgsfield Ads Studio, 스토리 기반 영상 광고 제작 '마이크로 드라마 광고' 출시",
-    "summary": "Higgsfield Ads Studio에 캐릭터 서사와 제품을 결합한 짧은 드라마 형태의 영상 광고를 제작할 수 있는 '마이크로 드라마 광고' 기능이 도입되었어요.",
-    "details": [
-      "실사 미니 드라마, 점토 애니메이션, 크로셰 등 8가지 영상 스타일과 44개 템플릿 제공",
-      "브랜드 키트 제품 및 고정 아바타를 활용해 일관된 등장인물로 연속 광고 제작 가능",
-      "웹 대시보드뿐만 아니라 Claude 및 ChatGPT Higgsfield MCP 커넥터(/microdrama-ads)에서도 사용 지원"
-    ],
-    "url": "https://higgsfield.ai/blog/micro-drama-ads-higgsfield-ads-studio",
-    "source": "notice"
-  },
-  {
-    "id": "figma-ai-2026-11-06-1",
-    "service": "figma-ai",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "AI 이미지 편집 도구에 원클릭 오브젝트 자동 선택 기능 추가",
-    "summary": "Figma의 AI 이미지 편집 '영역 선택(Select area)' 도구에 이미지 내 피사체를 한 번의 클릭으로 자동 인식해 선택하는 기능이 도입되었어요.",
-    "details": [
-      "마우스로 직접 테두리를 그릴 필요 없이 이미지 속 물체를 클릭하면 AI가 형태를 정밀하게 자동 선택",
-      "선택된 특정 개체만 즉시 배경에서 분리하거나 깔끔하게 지우기(Erase) 지원",
-      "macOS 데스크톱 애플리케이션 버전에 우선 적용"
-    ],
-    "url": "https://www.figma.com/release-notes/?title=select-objects-even-faster-with-figmas-ai-image-editing-tools",
-    "source": "notice"
-  },
-  {
-    "id": "claude-2026-11-06-1",
-    "service": "claude",
-    "date": "2026.11.06",
-    "kind": "기능",
-    "title": "엔터프라이즈 프로젝트에 비용 코드 태그 기반 지출 추적 베타 도입",
-    "summary": "Claude Enterprise 조직에서 프로젝트에 비용 청구 코드(Cost Code) 태그를 부여하여 프로젝트별 AI 모델 지출 및 사용량을 세부 추적할 수 있는 베타 기능이 추가되었어요.",
-    "details": [
-      "프로젝트마다 내부 정산용 청구 코드 또는 고객사 번호(Client-matter number) 태그 지정 지원",
-      "태그별 프로젝트 지출 통계를 확인하여 팀별·프로젝트별 예산 관리 및 비용 정산 편의성 향상",
-      "적격 엔터프라이즈 요금제 조직을 대상으로 베타 서비스 제공"
-    ],
-    "url": "https://support.claude.com/en/articles/12138966-release-notes#h_november-6-2026",
-    "source": "notice"
-  },
-  {
-    "id": "synthesia-2026-11-05-1",
-    "service": "synthesia",
-    "date": "2026.11.05",
-    "kind": "기능",
-    "title": "대화형 아바타 클론 생성 및 웹사이트 임베드 기능 출시",
-    "summary": "가상 인터뷰를 통해 사용자의 외모와 목소리를 닮은 실시간 대화형 클론을 만들고, 코딩 없이 웹사이트에 임베드할 수 있는 기능이 출시되었어요.",
-    "details": [
-      "가상 인터뷰어와 대화하며 실시간 인터랙티브 아바타 클론 생성",
-      "고유 링크를 통한 인터랙티브 클론 공유 지원",
-      "자체 보유 콘텐츠를 학습시켜 답변하는 인터랙티브 아바타 제작",
-      "웹사이트 직접 임베드 또는 링크 공유로 개발자 도움 없이 배포"
-    ],
-    "url": "https://www.synthesia.io/updates/create-an-interactive-clone-of-yourself",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-11-05-1",
-    "service": "runway",
-    "date": "2026.11.05",
-    "kind": "API",
-    "title": "Runway Dev에 Kling 4.0 Flash·GPT Image 2.6·Gemini Omni 1.2 Flash 도입",
-    "summary": "Runway Dev API에 Kling 4.0 Flash 영상 모델, GPT Image 2.6 Flare 및 Sunburst 이미지 모델, Gemini Omni 1.2 Flash 모델이 새롭게 추가되었어요.",
-    "details": [
-      "Kling 4.0 Flash(kling_4_flash): 텍스트·시작 프레임·비디오 레퍼런스 기반 720p 3~20초 영상 및 오디오 생성 지원",
-      "GPT Image 2.6(Sunburst·Flare): 최대 16장 레퍼런스 이미지, 4K 해상도, 투명 배경 및 추론 강도 조절 지원",
-      "Gemini Omni 1.2 Flash(gemini_omni_flash_1.2): 360p부터 4K까지 최대 15초 영상 생성 및 비디오 편집 모드 지원"
-    ],
-    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
-    "source": "dev"
-  },
-  {
-    "id": "roblox-cube-2026-11-05-1",
-    "service": "roblox-cube",
-    "date": "2026.11.05",
-    "kind": "기능",
-    "title": "Roblox Studio, 프롬프트 기반 R15 캐릭터 애니메이션 생성 베타 출시",
-    "summary": "로블록스 스튜디오 어시스턴트에 텍스트 프롬프트로 R15 캐릭터 애니메이션을 자동 생성하는 베타 기능이 추가되었어요. 기존 R6 클립을 R15 동작으로 변환하는 모션 리빌더도 함께 지원해요.",
-    "details": [
-      "Studio Assistant 및 Studio MCP를 통해 텍스트 프롬프트로 R15 애니메이션 클립 생성",
-      "다친 전사의 걸음걸이 등 감정과 상태가 담긴 휴머노이드 동작 묘사 지원",
-      "R6 애니메이션을 R15으로 업그레이드 변환하는 Motion Rebuilder 도구 제공",
-      "스튜디오 File > Beta Features에서 Animation Generation 활성화 후 사용 가능"
-    ],
-    "url": "https://devforum.roblox.com/t/studio-beta-generate-r15-animations-from-a-prompt-plus-optional-r6-motion-rebuilder/4977709",
-    "source": "notice"
-  },
-  {
-    "id": "recraft-2026-11-05-1",
-    "service": "recraft",
-    "date": "2026.11.05",
-    "kind": "연동",
-    "title": "Recraft Studio에 GPT Image 2.6(Sunburst·Flare) 모델 연동",
-    "summary": "Recraft Studio에 OpenAI의 최신 이미지 모델 GPT Image 2.6 Sunburst와 Flare가 추가되었어요. 무료 플랜에서도 Sunburst 모델을 이용할 수 있으며 1K·2K 해상도 편집을 지원해요.",
-    "details": [
-      "GPT Image 2.6 Sunburst 및 Flare 모델 Recraft Studio 도입",
-      "무료 플랜 사용자에게도 Sunburst 모델 기본 제공",
-      "프롬프트 기반 이미지 생성 및 편집 워크플로 지원",
-      "1K 및 2K 해상도 지원"
-    ],
-    "url": "https://www.recraft.ai/blog/gpt-image-2-6",
-    "source": "notice"
-  },
-  {
-    "id": "meshy-2026-11-05-1",
-    "service": "meshy",
-    "date": "2026.11.05",
-    "kind": "API",
-    "title": "Meshy, 사진 기반 3D 부조 모델 생성 Relief API 출시",
-    "summary": "Meshy가 단일 사진에서 3D 프린팅과 CNC 각인용 부조(bas-relief) 3D 모델과 16비트 깊이 맵을 생성하는 Relief API를 출시했어요. 조각 깊이와 해상도, 곡면 곡률을 맞춤 설정할 수 있어요.",
-    "details": [
-      "사진 1장에서 부조 3D 모델(GLB·STL) 및 16비트 그레이스케일 깊이 맵 생성",
-      "3D 프린팅, 레이저 각인, CNC 가공 최적화 포맷 지원",
-      "조각 모드, 깊이, 베이스 두께, 곡면 벤딩, 메시 해상도 조절 옵션 제공",
-      "should_generate_model: false 설정으로 깊이 맵만 단독 추출 지원",
-      "작업당 20 크레딧 차감"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog#nov-5",
-    "source": "dev"
-  },
-  {
-    "id": "marble-2026-11-05-1",
-    "service": "marble",
-    "date": "2026.11.05",
-    "kind": "모델",
-    "title": "월드랩스, 실시간 3D 월드 탐색 프리뷰 'Frameboy' 및 최적화 Atlas 공개",
-    "summary": "월드랩스가 브라우저에서 최대 15fps로 3D 공간을 실시간 탐색할 수 있는 연구 프리뷰 데모 'Frameboy'를 공개했어요. 초고속 저지연 추론에 최적화된 공간 지능 모델 Atlas가 적용되었으며 Viewfinder에 통합되었어요.",
-    "details": [
-      "최대 15fps 실시간 스트리밍 3D 탐색 데모 'Frameboy' 연구 프리뷰 공개",
-      "카메라 실시간 조작에 즉각 반응하는 초저지연 최적화 Atlas 모델 적용",
-      "장면 제작 도구 Viewfinder 웹 앱에 실시간 Frameboy 오버레이 연동",
-      "단일 이미지 기반 가상 3D 공간 및 실제 환경 뷰포인트 실시간 내비게이션"
-    ],
-    "url": "https://www.worldlabs.ai/blog/atlas-realtime",
-    "source": "notice"
-  },
-  {
-    "id": "ludo.ai-2026-11-05-1",
-    "service": "ludo.ai",
-    "date": "2026.11.05",
-    "kind": "기능",
-    "title": "Ludo.ai, 방향별 스프라이트에 무기·방어구 장착 '액세서리' 기능 추가",
-    "summary": "Ludo.ai 방향별 스프라이트 도구에 캐릭터와 분리된 3D 무기 및 방어구를 장착하는 '액세서리' 단계가 추가되었어요. 아이템이 리깅 본에 고정되어 모든 방향과 애니메이션에서 형태 왜곡 없이 렌더링돼요.",
-    "details": [
-      "검, 총, 활, 방패, 투구 등을 독립 3D 에셋으로 캐릭터에 장착하는 Accessories 단계 도입",
-      "자체 GLB 파일 업로드(최대 30MB) 또는 Text to 3D 생성 에셋 지원",
-      "아이템 명칭 및 신체 부위를 인식해 손잡이·머리·등 위치 자동 정렬",
-      "모든 회전 방향과 동작 애니메이션에서 무기 형태가 왜곡되지 않고 강체 유지"
-    ],
-    "url": "https://ludo.ai/whats-new#accessories-give-your-directional-sprites-a-sword-a-gun-a-shield-or-a-helmet",
-    "source": "notice"
-  },
-  {
-    "id": "heygen-2026-11-05-1",
-    "service": "heygen",
-    "date": "2026.11.05",
-    "kind": "API",
-    "title": "헤이젠 API, 대용량 파일 S3 직접 업로드 엔드포인트 지원",
-    "summary": "헤이젠 API에 대용량 파일을 S3로 직접 업로드할 수 있는 전용 엔드포인트가 추가되었어요. 최대 1.5GB 오디오와 200MB 영상·이미지 파일 업로드 및 SHA-256 무결성 검증을 지원해요.",
-    "details": [
-      "POST /v3/assets/direct-uploads 엔드포인트 추가",
-      "최대 1.5GB 오디오, 200MB 영상·이미지·PDF 파일 업로드 지원",
-      "MOV, WebP, HEIC, WebM 등 다양한 포맷 지원",
-      "checksum_sha256 파라미터로 바이트 무결성 검증 지원"
-    ],
-    "url": "https://docs.heygen.com/changelog#direct-upload-to-s3",
-    "source": "dev"
   }
 ]

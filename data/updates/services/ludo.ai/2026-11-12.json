@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-11-12-1",
+    "service": "ludo.ai",
+    "date": "2026.11.12",
+    "kind": "모델",
+    "title": "스프라이트 고화질 애니메이션 모델 Griffin 출시",
+    "summary": "Ludo.ai 스프라이트 생성기에 갑옷 각인·머리카락 등 미세 디테일을 끝까지 유지하는 신규 고화질 애니메이션 모델 Griffin이 추가되었어요.",
+    "details": [
+      "스프라이트의 미세한 문양, 땋은 머리, 얇은 선화 디테일을 동작 전반에서 선명하게 유지",
+      "애니메이션 동작당 균일 10크레딧 과금 및 최대 5초 길이 지원",
+      "스프라이트 시트 편집(Edit Spritesheet) 및 키프레임 애니메이션에서 선택 가능",
+      "API, MCP 서버, CLI에서 griffin-hd 모델 식별자로 지원"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-griffin-sprite-animation-at-its-highest-detail",
+    "source": "notice"
+  }
+]

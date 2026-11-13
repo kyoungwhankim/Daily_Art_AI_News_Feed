@@ -1,5 +1,111 @@
 [
   {
+    "id": "scenario-2026-11-12-3",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "컴퓨트 v1.16.0: Seedream 5.5 및 Rodin 리깅 모델 추가",
+    "summary": "Scenario Compute v1.16.0에 바이트댄스 Seedream 5.5, Gemini 1.2 Flash 및 Deemos Rodin 3D 캐릭터 리깅 모델이 탑재되었어요.",
+    "details": [
+      "고해상도 이미지 생성 및 연속 편집을 위한 Seedream 5.5 지원",
+      "영상 편집 및 비전 처리를 위한 Gemini 1.2 Flash 연동",
+      "3D 캐릭터 모델 자동 뼈대 생성 및 스키닝을 위한 Rodin Rigging 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/compute-v1-16-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-12-2",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "API v2.145.0: Bria FIBO 2.0 및 자동 모더레이션 규칙 도입",
+    "summary": "Scenario API v2.145.0이 배포되어 Bria FIBO 2.0과 Florence-2 모델 엔드포인트가 추가되고 자동 검열 규칙이 도입되었어요.",
+    "details": [
+      "Bria FIBO 2.0 및 Florence-2 Grounding 신규 모델 엔드포인트 지원",
+      "팀 워크스페이스별 자동 콘텐츠 모더레이션 규칙 설정 기능 추가",
+      "비디오 LoRA 학습 워크플로우 안정성 및 성능 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-145-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-11-12-1",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Seedance 2.5 비디오 4K 해상도 생성 지원",
+    "summary": "Seedance 2.5 영상 모델에서 네이티브 4K 해상도 생성을 지원하며, 480p 초안 영상을 재수행 없이 바로 4K로 업스케일 완성할 수 있어요.",
+    "details": [
+      "텍스트/이미지 기반 영상 생성 시 네이티브 4K 옵션 제공",
+      "480p로 생성한 드래프트 영상을 다시 처음부터 생성할 필요 없이 직접 4K로 파이널라이즈",
+      "고화질 렌더링에 필요한 추가 크레딧 효율 최적화"
+    ],
+    "url": "https://www.scenario.com/changelog/models-4379e69d00dc76bea28bfe05dfc7727c9bf2e0ec2bcc3503f6dc52c446315c99",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-11-12-1",
+    "service": "ludo.ai",
+    "date": "2026.11.12",
+    "kind": "모델",
+    "title": "스프라이트 고화질 애니메이션 모델 Griffin 출시",
+    "summary": "Ludo.ai 스프라이트 생성기에 갑옷 각인·머리카락 등 미세 디테일을 끝까지 유지하는 신규 고화질 애니메이션 모델 Griffin이 추가되었어요.",
+    "details": [
+      "스프라이트의 미세한 문양, 땋은 머리, 얇은 선화 디테일을 동작 전반에서 선명하게 유지",
+      "애니메이션 동작당 균일 10크레딧 과금 및 최대 5초 길이 지원",
+      "스프라이트 시트 편집(Edit Spritesheet) 및 키프레임 애니메이션에서 선택 가능",
+      "API, MCP 서버, CLI에서 griffin-hd 모델 식별자로 지원"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-griffin-sprite-animation-at-its-highest-detail",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-11-2",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "에이전트 스킬 v0.62.0: MiniMax H3 비디오 LoRA 학습 지원",
+    "summary": "에이전트 스킬이 v0.62.0으로 업데이트되어 MiniMax H3 기반 비디오 LoRA 학습과 플레이어블 광고 생성을 지원해요.",
+    "details": [
+      "MiniMax H3 비디오 모델을 위한 커스텀 LoRA 학습 스킬 추가",
+      "간단한 장르 프롬프트로부터 인터랙티브 플레이어블 광고 자동 제작",
+      "에이전트 태스크별 세부 과금 추적 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/skills-v0-62-0",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-11-1",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "모델",
+    "title": "객체 바운딩 박스를 검출하는 Florence-2 Grounding 모델 도입",
+    "summary": "캡션 문구 또는 특정 객체의 위치를 감지하여 픽셀 단위 레이블 바운딩 박스를 JSON으로 반환하는 Microsoft Florence-2 Grounding 모델이 추가되었어요.",
+    "details": [
+      "프롬프트 문구 및 오브젝트 인스턴스의 픽셀 좌표 바운딩 박스 검출",
+      "검출된 영역을 기반으로 마스크 생성 및 타겟 인페인팅 워크플로우에 연계 가능"
+    ],
+    "url": "https://www.scenario.com/changelog/models-ddbba2ad8bcb485b1bd16515deb74719898581d9e0408c37adae768593cbb8fc",
+    "source": "notice"
+  },
+  {
+    "id": "ludo.ai-2026-11-11-1",
+    "service": "ludo.ai",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "My Animations: 모션 영구 저장 및 캐릭터 간 재사용 지원",
+    "summary": "텍스트로 생성한 스프라이트 모션을 계정에 영구 저장하여 모든 인간형 캐릭터와 8개 방향에 동일하게 재사용할 수 있는 기능이 도입되었어요.",
+    "details": [
+      "생성된 애니메이션을 일회성이 아닌 재사용 가능한 클립으로 'My Animations'에 저장",
+      "동일한 공격·이동 모션을 여러 캐릭터에 적용하여 캐스트 전반의 동작 일관성 유지",
+      "5개 카메라 앵글 및 8개 이동 방향 전반에 일괄 적용 가능",
+      "모션 좌우 반전(Mirrored Animations) 지원으로 방향별 에셋 제작 속도 향상"
+    ],
+    "url": "https://ludo.ai/whats-new#my-animations-and-mirrored-animations-describe-a-move-reuse-it-on-any-humanoid",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-11-10-4",
     "service": "scenario",
     "date": "2026.11.10",

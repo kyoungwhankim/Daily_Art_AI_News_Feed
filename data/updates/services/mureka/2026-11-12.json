@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mureka-2026-11-12-1",
+    "service": "mureka",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "Remix API에 mureka-9.5 모델 정식 적용 및 기본 모델 전환",
+    "summary": "Mureka Remix API에 최대 8분 음원과 보컬 성별 제어를 지원하는 mureka-9.5 모델이 정식 배포되고 기본 모델로 설정되었어요.",
+    "details": [
+      "모든 사용자에게 곡당 0.5달러로 mureka-9.5 모델 제공",
+      "최대 8분 길이의 오디오, 보컬 전용/반주 전용/악기 트랙 입력 지원",
+      "프롬프트를 통한 보컬 성별 제어 및 가사 선택 옵션 제공",
+      "2026년 11월 12일부터 모델 파라미터 미지정 시 mureka-9.5가 기본 적용"
+    ],
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  }
+]

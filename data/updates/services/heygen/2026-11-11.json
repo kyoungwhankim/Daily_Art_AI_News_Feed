@@ -1,0 +1,18 @@
+[
+  {
+    "id": "heygen-2026-11-11-1",
+    "service": "heygen",
+    "date": "2026.11.11",
+    "kind": "API",
+    "title": "IPA 발음 기호 지원 및 10,000자 텍스트 입력 확장",
+    "summary": "HeyGen Voice API에 IPA 발음 기호 표기법이 도입되어 고유명사의 발음을 정밀 지정할 수 있고 텍스트 입력 한도가 10,000자로 늘어났어요.",
+    "details": [
+      "heygen-voice-1 및 heygen-voice-1-turbo 모델의 공개·인스턴트 보이스에 IPA 지원",
+      "pronunciation_dictionary로 최대 100개 단어 발음 사전을 지정하거나 태그로 개별 지정",
+      "TTS 및 스트리밍 TTS 엔드포인트의 입력 텍스트 한도를 10,000자로 확장",
+      "WebSocket 컨텍스트당 최대 10,000자 전송 지원"
+    ],
+    "url": "https://developers.heygen.com/changelog#hey-gen-voice-pronunciation",
+    "source": "dev"
+  }
+]

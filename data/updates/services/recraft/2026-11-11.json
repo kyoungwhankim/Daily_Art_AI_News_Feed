@@ -1,0 +1,18 @@
+[
+  {
+    "id": "recraft-2026-11-11-1",
+    "service": "recraft",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "정밀 벡터 변환 도구 Vectorizer Pro 출시",
+    "summary": "래스터 이미지를 왜곡 없이 깔끔한 SVG 벡터로 변환해 주는 Vectorizer Pro가 Recraft Studio의 모든 요금제에 공식 제공돼요.",
+    "details": [
+      "직선 해칭 및 평행선 패스를 흔들림 없이 균일하게 유지",
+      "아이콘 모서리와 끝부분 등 날카로운 디테일의 뭉개짐 방지",
+      "평면 일러스트, 아이콘, 로고 등 변환 시 외부 툴 후작업 최소화",
+      "무료 및 유료 모든 플랜 사용자에게 기본 제공"
+    ],
+    "url": "https://www.recraft.ai/blog/vectorizer-pro",
+    "source": "notice"
+  }
+]

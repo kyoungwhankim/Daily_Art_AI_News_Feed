@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-11-10-1",
+    "service": "runway",
+    "date": "2026.11.10",
+    "kind": "API",
+    "title": "Runway Dev에 Seedream 5 Pro Layers 모델 추가",
+    "summary": "Runway Dev API에 단일 이미지를 분할하여 편집 가능한 투명 PNG 레이어로 분해하는 Seedream 5 Pro Layers 모델이 도입되었어요.",
+    "details": [
+      "단일 PNG/JPEG 이미지를 기반 이미지 및 투명 배경의 개별 레이어로 분해",
+      "auto, 1K, 1.5K, 2K 해상도 지원 및 레이어 이름·순서·경계 정보 반환",
+      "생성된 분해 레이어당 과금 체계 적용(1K/1.5K 3크레딧, 2K 5크레딧)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-pro-layers-on-runway-dev",
+    "source": "dev"
+  }
+]

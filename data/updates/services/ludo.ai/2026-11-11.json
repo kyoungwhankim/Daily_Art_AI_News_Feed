@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-11-11-1",
+    "service": "ludo.ai",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "My Animations: 모션 영구 저장 및 캐릭터 간 재사용 지원",
+    "summary": "텍스트로 생성한 스프라이트 모션을 계정에 영구 저장하여 모든 인간형 캐릭터와 8개 방향에 동일하게 재사용할 수 있는 기능이 도입되었어요.",
+    "details": [
+      "생성된 애니메이션을 일회성이 아닌 재사용 가능한 클립으로 'My Animations'에 저장",
+      "동일한 공격·이동 모션을 여러 캐릭터에 적용하여 캐스트 전반의 동작 일관성 유지",
+      "5개 카메라 앵글 및 8개 이동 방향 전반에 일괄 적용 가능",
+      "모션 좌우 반전(Mirrored Animations) 지원으로 방향별 에셋 제작 속도 향상"
+    ],
+    "url": "https://ludo.ai/whats-new#my-animations-and-mirrored-animations-describe-a-move-reuse-it-on-any-humanoid",
+    "source": "notice"
+  }
+]

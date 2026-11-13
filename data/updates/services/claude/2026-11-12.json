@@ -1,0 +1,33 @@
+[
+  {
+    "id": "claude-2026-11-12-1",
+    "service": "claude",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "구글 미트 실시간 회의 참여 도구 Claude Meetings 베타 출시",
+    "summary": "팀 및 엔터프라이즈 요금제 사용자를 대상으로 구글 미트 화상 회의에 직접 참여해 실시간 회의록을 작성하고 아티팩트를 제작하는 Claude Meetings 베타가 출시되었어요.",
+    "details": [
+      "Google Meet 통화에 가시적 참여자로 입장하여 실시간 회의 내용 기록 및 질의응답 지원",
+      "통화 도중 회의 맥락을 반영한 문서, 화이트보드, 슬라이드 등 실시간 아티팩트 자동 제작",
+      "Claude 웹 및 Claude Desktop 환경의 Team 및 Enterprise 요금제 대상 롤아웃"
+    ],
+    "url": "https://support.claude.com/en/articles/12138966-release-notes#h_2d03630102",
+    "source": "notice"
+  },
+  {
+    "id": "claude-2026-11-12-2",
+    "service": "claude",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "자체 호스팅 인프라용 Claude Managed Agents 출시",
+    "summary": "클로드 매니지드 에이전트 서비스를 온프레미스 자체 인프라에 직접 구축하여 에이전트 세션과 기록을 사내에 보관할 수 있는 자체 호스팅 옵션이 출시되었어요.",
+    "details": [
+      "자체 호스팅 샌드박스뿐 아니라 전체 Managed Agents 서비스를 자체 인프라에서 구동 가능",
+      "에이전트 정의, 세션 데이터 및 실행 이력을 자체 서버에 안전하게 격리 보관",
+      "모델 요청은 앤트로픽을 포함한 선택 공급자로 라우팅",
+      "엔터프라이즈 계정 담당자를 통해 접근 권한 신청 지원"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-12-2026",
+    "source": "dev"
+  }
+]

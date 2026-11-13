@@ -1,5 +1,37 @@
 [
   {
+    "id": "mureka-2026-11-12-1",
+    "service": "mureka",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "Remix API에 mureka-9.5 모델 정식 적용 및 기본 모델 전환",
+    "summary": "Mureka Remix API에 최대 8분 음원과 보컬 성별 제어를 지원하는 mureka-9.5 모델이 정식 배포되고 기본 모델로 설정되었어요.",
+    "details": [
+      "모든 사용자에게 곡당 0.5달러로 mureka-9.5 모델 제공",
+      "최대 8분 길이의 오디오, 보컬 전용/반주 전용/악기 트랙 입력 지원",
+      "프롬프트를 통한 보컬 성별 제어 및 가사 선택 옵션 제공",
+      "2026년 11월 12일부터 모델 파라미터 미지정 시 mureka-9.5가 기본 적용"
+    ],
+    "url": "https://platform.mureka.ai/docs/en/changelog.html",
+    "source": "dev"
+  },
+  {
+    "id": "elevenlabs-2026-11-11-1",
+    "service": "elevenlabs",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "ElevenLabs Summit NYC: 대화 오케스트레이션 엔진 및 에이전트 메모리 공개",
+    "summary": "일레븐랩스가 뉴욕 서밋을 통해 음성 턴테이킹 및 LLM 라우팅을 조율하는 Interaction Engine과 장기 기억(Memory)·루틴 자동화 기능을 공개했어요.",
+    "details": [
+      "자연스러운 대화 전환과 끼어들기를 처리하고 적합한 모델을 동적 호출하는 Interaction Engine 공개",
+      "인증된 고객의 이전 대화 맥락과 선호도를 기억하고 반영하는 ElevenAgents Memory 도입",
+      "대화 전후 후속 업무 및 CRM 연동을 자동화하는 워크플로우 계층 Routines 발표",
+      "도메인 특화 전사 모델 및 오픈소스·음성 모델 커스텀 파인튜닝 지원 계획 발표"
+    ],
+    "url": "https://elevenlabs.io/blog/nyc-summit",
+    "source": "notice"
+  },
+  {
     "id": "suno-2026-11-06-1",
     "service": "suno",
     "date": "2026.11.06",

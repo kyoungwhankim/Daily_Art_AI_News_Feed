@@ -1,0 +1,47 @@
+[
+  {
+    "id": "scenario-2026-11-12-1",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Seedance 2.5 비디오 4K 해상도 생성 지원",
+    "summary": "Seedance 2.5 영상 모델에서 네이티브 4K 해상도 생성을 지원하며, 480p 초안 영상을 재수행 없이 바로 4K로 업스케일 완성할 수 있어요.",
+    "details": [
+      "텍스트/이미지 기반 영상 생성 시 네이티브 4K 옵션 제공",
+      "480p로 생성한 드래프트 영상을 다시 처음부터 생성할 필요 없이 직접 4K로 파이널라이즈",
+      "고화질 렌더링에 필요한 추가 크레딧 효율 최적화"
+    ],
+    "url": "https://www.scenario.com/changelog/models-4379e69d00dc76bea28bfe05dfc7727c9bf2e0ec2bcc3503f6dc52c446315c99",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-12-2",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "API v2.145.0: Bria FIBO 2.0 및 자동 모더레이션 규칙 도입",
+    "summary": "Scenario API v2.145.0이 배포되어 Bria FIBO 2.0과 Florence-2 모델 엔드포인트가 추가되고 자동 검열 규칙이 도입되었어요.",
+    "details": [
+      "Bria FIBO 2.0 및 Florence-2 Grounding 신규 모델 엔드포인트 지원",
+      "팀 워크스페이스별 자동 콘텐츠 모더레이션 규칙 설정 기능 추가",
+      "비디오 LoRA 학습 워크플로우 안정성 및 성능 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/api-v2-145-0",
+    "source": "dev"
+  },
+  {
+    "id": "scenario-2026-11-12-3",
+    "service": "scenario",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "컴퓨트 v1.16.0: Seedream 5.5 및 Rodin 리깅 모델 추가",
+    "summary": "Scenario Compute v1.16.0에 바이트댄스 Seedream 5.5, Gemini 1.2 Flash 및 Deemos Rodin 3D 캐릭터 리깅 모델이 탑재되었어요.",
+    "details": [
+      "고해상도 이미지 생성 및 연속 편집을 위한 Seedream 5.5 지원",
+      "영상 편집 및 비전 처리를 위한 Gemini 1.2 Flash 연동",
+      "3D 캐릭터 모델 자동 뼈대 생성 및 스키닝을 위한 Rodin Rigging 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/compute-v1-16-0",
+    "source": "notice"
+  }
+]

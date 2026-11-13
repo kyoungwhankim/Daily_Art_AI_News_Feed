@@ -1,0 +1,31 @@
+[
+  {
+    "id": "scenario-2026-11-11-1",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "모델",
+    "title": "객체 바운딩 박스를 검출하는 Florence-2 Grounding 모델 도입",
+    "summary": "캡션 문구 또는 특정 객체의 위치를 감지하여 픽셀 단위 레이블 바운딩 박스를 JSON으로 반환하는 Microsoft Florence-2 Grounding 모델이 추가되었어요.",
+    "details": [
+      "프롬프트 문구 및 오브젝트 인스턴스의 픽셀 좌표 바운딩 박스 검출",
+      "검출된 영역을 기반으로 마스크 생성 및 타겟 인페인팅 워크플로우에 연계 가능"
+    ],
+    "url": "https://www.scenario.com/changelog/models-ddbba2ad8bcb485b1bd16515deb74719898581d9e0408c37adae768593cbb8fc",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-11-2",
+    "service": "scenario",
+    "date": "2026.11.11",
+    "kind": "기능",
+    "title": "에이전트 스킬 v0.62.0: MiniMax H3 비디오 LoRA 학습 지원",
+    "summary": "에이전트 스킬이 v0.62.0으로 업데이트되어 MiniMax H3 기반 비디오 LoRA 학습과 플레이어블 광고 생성을 지원해요.",
+    "details": [
+      "MiniMax H3 비디오 모델을 위한 커스텀 LoRA 학습 스킬 추가",
+      "간단한 장르 프롬프트로부터 인터랙티브 플레이어블 광고 자동 제작",
+      "에이전트 태스크별 세부 과금 추적 개선"
+    ],
+    "url": "https://www.scenario.com/changelog/skills-v0-62-0",
+    "source": "notice"
+  }
+]

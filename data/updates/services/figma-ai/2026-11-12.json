@@ -1,0 +1,18 @@
+[
+  {
+    "id": "figma-ai-2026-11-12-1",
+    "service": "figma-ai",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Figma 네이티브 3D 트랜스폼 및 에이전트 3D 씬 구성 지원",
+    "summary": "피그마에 캔버스 상에서 X·Y·Z축 회전과 원근감을 직접 조작하는 3D 트랜스폼 효과가 추가되고 피그마 에이전트 구성이 지원돼요.",
+    "details": [
+      "온캔버스 핸들을 통해 오브젝트를 X·Y·Z축으로 회전하고 원근감과 깊이감을 실시간 조정",
+      "피그마 에이전트(Figma Agent)를 활용한 3D 디자인 씬 자동 구성 지원",
+      "Figma Motion과 결합하여 회전, 반전, 원근 이동 애니메이션 제작",
+      "Dev Mode에서 CSS를 추출하거나 Figma MCP를 통해 코딩 에이전트로 3D 디자인 직접 전달"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=design-in-3d-natively-in-figma-and-ship-directly-to-code",
+    "source": "notice"
+  }
+]

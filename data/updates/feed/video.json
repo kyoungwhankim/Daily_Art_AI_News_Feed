@@ -1,5 +1,54 @@
 [
   {
+    "id": "veo-2026-11-12-1",
+    "service": "veo",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Google Flow, 비주얼 스토리텔링 도구 5종 공개",
+    "summary": "AI 크리에이티브 스튜디오 Google Flow에 캐릭터 일관성 유지, 연령별 외형 추적, 레트로 디지털 스타일 등을 지원하는 신규 창작 도구 5종이 추가되었어요.",
+    "details": [
+      "Character Poster: 스토리 콘셉트를 일관된 고품질 비주얼 포스터로 제작",
+      "Character Arc: 한 인물의 생애 주기 및 연령대별 외형 일관성을 유지하며 시각화",
+      "Pixel Machine: 비트맵, ASCII, CRT, 글리치 등 레트로 디지털 스타일 연출",
+      "Lucid Glass: 프리즘·헤일로·광학 굴절 등 특수 렌즈 조명 효과 구현",
+      "Pocket Studio: 단일 모바일 촬영 영상으로부터 다양한 시네마틱 카메라 앵글 생성"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+    "source": "notice"
+  },
+  {
+    "id": "heygen-2026-11-12-1",
+    "service": "heygen",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "비디오 레퍼런스 기반 영상 생성 시간 최대 30초로 확대",
+    "summary": "HeyGen Video API 및 MCP에서 레퍼런스 비디오 기반 영상 생성(reference_to_video) 길이가 기존 최대 15초에서 최대 30초로 확장되었어요.",
+    "details": [
+      "POST /v3/models/videos에서 480p, 768p, 1080p, 2K 해상도로 5~30초 길이 설정 지원",
+      "turbo 및 quality 화질 향상(prompt_enhancement) 옵션과 함께 사용 가능",
+      "입력 레퍼런스 영상 예산(최대 15초)은 유지되며 출력 영상 길이만 확장",
+      "MCP text_to_video, image_to_video 및 reference_to_video 도구에서도 최대 30초 지원"
+    ],
+    "url": "https://developers.heygen.com/changelog#hey-gen-video-reference-to-video-up-to-30-seconds",
+    "source": "dev"
+  },
+  {
+    "id": "heygen-2026-11-11-1",
+    "service": "heygen",
+    "date": "2026.11.11",
+    "kind": "API",
+    "title": "IPA 발음 기호 지원 및 10,000자 텍스트 입력 확장",
+    "summary": "HeyGen Voice API에 IPA 발음 기호 표기법이 도입되어 고유명사의 발음을 정밀 지정할 수 있고 텍스트 입력 한도가 10,000자로 늘어났어요.",
+    "details": [
+      "heygen-voice-1 및 heygen-voice-1-turbo 모델의 공개·인스턴트 보이스에 IPA 지원",
+      "pronunciation_dictionary로 최대 100개 단어 발음 사전을 지정하거나 태그로 개별 지정",
+      "TTS 및 스트리밍 TTS 엔드포인트의 입력 텍스트 한도를 10,000자로 확장",
+      "WebSocket 컨텍스트당 최대 10,000자 전송 지원"
+    ],
+    "url": "https://developers.heygen.com/changelog#hey-gen-voice-pronunciation",
+    "source": "dev"
+  },
+  {
     "id": "synthesia-2026-11-10-1",
     "service": "synthesia",
     "date": "2026.11.10",
@@ -12,6 +61,21 @@
     ],
     "url": "https://www.synthesia.io/updates/make-cinematic-syren-videos-with-seedance",
     "source": "notice"
+  },
+  {
+    "id": "runway-2026-11-10-1",
+    "service": "runway",
+    "date": "2026.11.10",
+    "kind": "API",
+    "title": "Runway Dev에 Seedream 5 Pro Layers 모델 추가",
+    "summary": "Runway Dev API에 단일 이미지를 분할하여 편집 가능한 투명 PNG 레이어로 분해하는 Seedream 5 Pro Layers 모델이 도입되었어요.",
+    "details": [
+      "단일 PNG/JPEG 이미지를 기반 이미지 및 투명 배경의 개별 레이어로 분해",
+      "auto, 1K, 1.5K, 2K 해상도 지원 및 레이어 이름·순서·경계 정보 반환",
+      "생성된 분해 레이어당 과금 체계 적용(1K/1.5K 3크레딧, 2K 5크레딧)"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-pro-layers-on-runway-dev",
+    "source": "dev"
   },
   {
     "id": "higgsfield-2026-11-09-1",

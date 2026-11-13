@@ -1,0 +1,19 @@
+[
+  {
+    "id": "veo-2026-11-12-1",
+    "service": "veo",
+    "date": "2026.11.12",
+    "kind": "기능",
+    "title": "Google Flow, 비주얼 스토리텔링 도구 5종 공개",
+    "summary": "AI 크리에이티브 스튜디오 Google Flow에 캐릭터 일관성 유지, 연령별 외형 추적, 레트로 디지털 스타일 등을 지원하는 신규 창작 도구 5종이 추가되었어요.",
+    "details": [
+      "Character Poster: 스토리 콘셉트를 일관된 고품질 비주얼 포스터로 제작",
+      "Character Arc: 한 인물의 생애 주기 및 연령대별 외형 일관성을 유지하며 시각화",
+      "Pixel Machine: 비트맵, ASCII, CRT, 글리치 등 레트로 디지털 스타일 연출",
+      "Lucid Glass: 프리즘·헤일로·광학 굴절 등 특수 렌즈 조명 효과 구현",
+      "Pocket Studio: 단일 모바일 촬영 영상으로부터 다양한 시네마틱 카메라 앵글 생성"
+    ],
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+    "source": "notice"
+  }
+]
