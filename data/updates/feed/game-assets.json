@@ -1,5 +1,35 @@
 [
   {
+    "id": "scenario-2026-11-13-2",
+    "service": "scenario",
+    "date": "2026.11.13",
+    "kind": "모델",
+    "title": "바이트댄스 Seedream 5.5 및 레이어 분리 모델 탑재",
+    "summary": "Scenario에 바이트댄스의 Seedream 5.5 및 Seedream 5.5 Layerize 모델이 탑재되어 선명한 인이미지 텍스트, 네이티브 투명 PNG 생성 및 최대 99개 레이어 분리를 지원해요.",
+    "details": [
+      "Seedream 5.5: 최대 10장의 참조 이미지 지원 및 최대 약 4.2MP(2048x2048, 2560x1440 등) 맞춤 해상도로 정밀한 텍스트 렌더링 및 투명 PNG 에셋 생성",
+      "Seedream 5.5 Layerize: 단일 이미지를 배경 베이스와 최대 99개의 투명 PNG 레이어로 자동 분할",
+      "분리할 객체를 직접 지정하거나 전체를 분리할 수 있으며, 분리된 요소 뒷배경은 깨끗하게 인페인팅 복원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-fa0b7852dde600703be18f48351899006d9628bd985aabbe2d37cc1045f7a4a3",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-13-1",
+    "service": "scenario",
+    "date": "2026.11.13",
+    "kind": "기능",
+    "title": "Scenario Audio Studio 음악 작곡 및 음원 스템 분리 기능 출시",
+    "summary": "Scenario에 Claude Opus 5.5 기반으로 음악과 음향 효과를 Strudel 코드로 작곡하는 Audio Studio와 보컬·드럼·베이스 등을 분리하는 스템 분리 도구가 추가되었어요.",
+    "details": [
+      "Claude Opus 5.5를 활용해 프롬프트, 이미지, 참조 오디오, 비디오 또는 자체 샘플로부터 음악과 사운드를 Strudel 코드로 작곡",
+      "완성된 오디오 파일과 함께 직접 편집 가능한 프로그램 코드를 동시에 반환",
+      "Audio Stem Separation 기능을 통해 완성된 곡에서 보컬, 드럼, 베이스 및 기타 악기를 개별 오디오 파일로 분리 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-3ecfb7242ed5955f48205cb4f61b0e2de56ed439205263a7541ccc6ed5accd4a",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-11-12-3",
     "service": "scenario",
     "date": "2026.11.12",

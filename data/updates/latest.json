@@ -1,5 +1,95 @@
 [
   {
+    "id": "dream-machine-2026-11-14-1",
+    "service": "dream-machine",
+    "date": "2026.11.14",
+    "kind": "기능",
+    "title": "루마 캔버스 에셋 정리 도구 '스마트 오거나이저' 출시",
+    "summary": "루마 AI 캔버스에 최대 1만 개의 에셋을 제품, 콘셉트, 캠페인 등 작업 맥락에 맞춰 자동으로 분류하고 라벨링해주는 스마트 오거나이저 기능이 추가되었어요.",
+    "details": [
+      "캔버스 전체, 개별 프레임 또는 선택 영역을 지정하여 최대 1만 개 에셋 자동 정리 지원",
+      "에셋 간 파생 관계 및 프롬프트 맥락을 분석해 제품·콘셉트·제작 단계별로 그룹화 및 라벨링",
+      "사용자가 변경 사항을 확인하고 승인하기 전까지는 배치가 임의로 변경되지 않는 안전성 제공"
+    ],
+    "url": "https://lumalabs.ai/news/ai-board-manager",
+    "source": "notice"
+  },
+  {
+    "id": "suno-2026-11-13-1",
+    "service": "suno",
+    "date": "2026.11.13",
+    "kind": "앱",
+    "title": "DAW 연동 독립형 데스크톱 앱 'Suno Bridge' 베타 출시",
+    "summary": "작업 중인 DAW 세션과 실시간 동기화되어 프로젝트의 템포·키·코드 진행에 맞춘 악기 및 보컬 트랙을 타임라인에 즉시 생성해주는 독립형 앱 'Suno Bridge' 베타가 출시되었어요.",
+    "details": [
+      "macOS 환경의 Ableton Live 12와 직접 연동되는 독립형 데스크톱 애플리케이션으로 베타 제공",
+      "세션 파일을 분석해 트랙의 템포, 키, 하모닉 코드 진행 및 그루브에 맞춤화된 오디오 파트 자동 생성",
+      "Arrangement View 루프 마커 구간을 프롬프트 영역으로 지정해 타임라인에 수동 정렬 없이 생성 클립 즉시 배치",
+      "Suno Premier 요금제 구독자에게 제공되며, 향후 타 운영체제(Windows) 및 추가 DAW 플랫폼으로 확장 예정"
+    ],
+    "url": "https://suno.com/blog/introducing-bridge",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-13-2",
+    "service": "scenario",
+    "date": "2026.11.13",
+    "kind": "모델",
+    "title": "바이트댄스 Seedream 5.5 및 레이어 분리 모델 탑재",
+    "summary": "Scenario에 바이트댄스의 Seedream 5.5 및 Seedream 5.5 Layerize 모델이 탑재되어 선명한 인이미지 텍스트, 네이티브 투명 PNG 생성 및 최대 99개 레이어 분리를 지원해요.",
+    "details": [
+      "Seedream 5.5: 최대 10장의 참조 이미지 지원 및 최대 약 4.2MP(2048x2048, 2560x1440 등) 맞춤 해상도로 정밀한 텍스트 렌더링 및 투명 PNG 에셋 생성",
+      "Seedream 5.5 Layerize: 단일 이미지를 배경 베이스와 최대 99개의 투명 PNG 레이어로 자동 분할",
+      "분리할 객체를 직접 지정하거나 전체를 분리할 수 있으며, 분리된 요소 뒷배경은 깨끗하게 인페인팅 복원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-fa0b7852dde600703be18f48351899006d9628bd985aabbe2d37cc1045f7a4a3",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-13-1",
+    "service": "scenario",
+    "date": "2026.11.13",
+    "kind": "기능",
+    "title": "Scenario Audio Studio 음악 작곡 및 음원 스템 분리 기능 출시",
+    "summary": "Scenario에 Claude Opus 5.5 기반으로 음악과 음향 효과를 Strudel 코드로 작곡하는 Audio Studio와 보컬·드럼·베이스 등을 분리하는 스템 분리 도구가 추가되었어요.",
+    "details": [
+      "Claude Opus 5.5를 활용해 프롬프트, 이미지, 참조 오디오, 비디오 또는 자체 샘플로부터 음악과 사운드를 Strudel 코드로 작곡",
+      "완성된 오디오 파일과 함께 직접 편집 가능한 프로그램 코드를 동시에 반환",
+      "Audio Stem Separation 기능을 통해 완성된 곡에서 보컬, 드럼, 베이스 및 기타 악기를 개별 오디오 파일로 분리 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-3ecfb7242ed5955f48205cb4f61b0e2de56ed439205263a7541ccc6ed5accd4a",
+    "source": "notice"
+  },
+  {
+    "id": "meshy-2026-11-13-1",
+    "service": "meshy",
+    "date": "2026.11.13",
+    "kind": "API",
+    "title": "터미널 전용 3D 모델 생성 도구 'Meshy CLI' 출시",
+    "summary": "터미널 환경에서 프롬프트나 이미지로 3D 모델을 직접 생성하고 관리할 수 있는 공식 오픈소스 도구 Meshy CLI가 출시되었어요.",
+    "details": [
+      "npm(meshy-cli 또는 @meshy-ai/cli)을 통해 설치 가능하며 Node.js 22.12 이상 및 macOS, Linux, Windows 지원",
+      "브라우저 또는 원격 장치용 디바이스 코드를 통한 간편 로그인 지원으로 개별 API 키 발급 없이 사용 가능",
+      "스크립트 및 CI/CD 파이프라인 연동을 위한 JSON 출력 및 종료 코드(exit code) 지원"
+    ],
+    "url": "https://docs.meshy.ai/en/api/changelog#nov-13",
+    "source": "dev"
+  },
+  {
+    "id": "comfyui-2026-11-13-1",
+    "service": "comfyui",
+    "date": "2026.11.13",
+    "kind": "연동",
+    "title": "ComfyUI v0.45.1: MiniMax H3 이미지 및 LTX VFX 노드 추가",
+    "summary": "ComfyUI v0.45.1에 미니맥스의 MiniMax H3 Image 모델 파트너 노드와 LTX VFX(AlphaGen, SDR to HDR, Reframe, Upscale) 노드가 공식 추가되었어요.",
+    "details": [
+      "MiniMax H3 Image: 텍스트 투 이미지 및 이미지 편집 기능을 제공하는 MiniMax 공식 이미지 생성 파트너 노드 지원",
+      "LTX VFX: 알파 채널 출력을 지원하는 AlphaGen, SDR 영상의 HDR 변환, Reframe 및 업스케일(Upscale) 파트너 노드 탑재"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-45-1",
+    "source": "notice"
+  },
+  {
     "id": "veo-2026-11-12-1",
     "service": "veo",
     "date": "2026.11.12",
@@ -215,6 +305,21 @@
     ],
     "url": "https://www.scenario.com/changelog/models-ddbba2ad8bcb485b1bd16515deb74719898581d9e0408c37adae768593cbb8fc",
     "source": "notice"
+  },
+  {
+    "id": "runway-2026-11-11-1",
+    "service": "runway",
+    "date": "2026.11.11",
+    "kind": "API",
+    "title": "Runway Dev, Seedance 2.5 4K 출력 지원 및 Seedream 레이어 과금 세분화",
+    "summary": "Runway Dev API의 Seedance 2.5 모델에 4K 해상도 비디오 출력이 추가되었으며, Seedream 5 Pro Layers의 과금 체계가 반환된 레이어 이미지당 과금으로 개편되었어요.",
+    "details": [
+      "Seedance 2.5 텍스트·이미지·비디오 투 비디오에서 3840:2160(16:9), 2160:3840(9:16) 등 4K 해상도 출력 지원",
+      "4K 출력 시 초당 110크레딧(입력 및 참조 비디오 초당 57크레딧) 과금 적용",
+      "Seedream 5 Pro Layers 과금 방식을 1회당 18크레딧 고정에서 반환된 레이어 이미지당 과금(1K/1.5K 3크레딧, 2K 5크레딧)으로 변경"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedance-2-5-4k",
+    "source": "dev"
   },
   {
     "id": "recraft-2026-11-11-1",
@@ -444,6 +549,21 @@
     "source": "dev"
   },
   {
+    "id": "hugging-face-2026-11-10-1",
+    "service": "hugging-face",
+    "date": "2026.11.10",
+    "kind": "요금",
+    "title": "Google Cloud 계정을 통한 Hugging Face Hub 통합 결제 지원",
+    "summary": "Hugging Face 조직을 Google Cloud 계정과 연동하여 Team/Enterprise 구독 및 컴퓨팅 리소스 사용료를 단일 Google Cloud 청구서로 통합 결제할 수 있게 되었어요.",
+    "details": [
+      "Google Cloud Marketplace에서 Hugging Face를 구독하고 관리자 조직을 연결해 설정 지원",
+      "Team 및 Enterprise 구독, Jobs, Inference Endpoints, Spaces GPU 연산 비용을 Google Cloud 인보이스에 통합",
+      "신규 벤더 등록이나 별도 법인 카드 결제 없이 기존 Google Cloud 결제 계정으로 일원화된 조달 프로세스 제공"
+    ],
+    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+    "source": "notice"
+  },
+  {
     "id": "gigapixel-2026-11-10-1",
     "service": "gigapixel",
     "date": "2026.11.10",
@@ -488,129 +608,6 @@
       "로컬 GPU 직접 구동 및 클라우드 Partner Nodes를 통한 API 호출 지원"
     ],
     "url": "https://blog.comfy.org/p/minimax-h3-image-is-now-available",
-    "source": "notice"
-  },
-  {
-    "id": "blender-2026-11-10-1",
-    "service": "blender",
-    "date": "2026.11.10",
-    "kind": "앱",
-    "title": "Blender 5.3 정식 출시: 네이티브 3DGS 지원 및 NVIDIA DLSS 뷰포트 디노이저 탑재",
-    "summary": "블렌더 5.3이 정식 출시되어 3D 가우시안 스플랫 네이티브 편집/렌더링, NVIDIA DLSS 뷰포트 디노이저, Vulkan 기본 백엔드 전환 등을 지원해요.",
-    "details": [
-      "PLY 및 SPZ 포맷의 3D 가우시안 스플랫을 포인트 클라우드로 불러와 지오메트리 노드로 편집하고 Workbench, EEVEE, Cycles에서 직접 렌더링",
-      "NVIDIA GPU 대상 DLSS 뷰포트 디노이저를 탑재하여 이전 프레임 샘플 재사용으로 뷰포트 렌더링 속도 향상",
-      "Windows 및 Linux의 기본 그래픽 백엔드를 Vulkan으로 전환, Metal 및 Vulkan 하드웨어 레이트레이싱 그림자 지원",
-      "Extensions 플랫폼을 통한 CC0 라이선스 에셋 라이브러리 공유 및 원클릭 설치 지원",
-      "Cycles 유리 분산(dispersion) 효과 지원 및 EEVEE 머티리얼 라이팅 노드 추가"
-    ],
-    "url": "https://www.blender.org/press/blender-5-3-release/",
-    "source": "notice"
-  },
-  {
-    "id": "seedream-2026-11-09-1",
-    "service": "seedream",
-    "date": "2026.11.09",
-    "kind": "모델",
-    "title": "Seedream 5.5 공개: 100회 연속 편집 및 네이티브 투명 배경 지원",
-    "summary": "바이트댄스가 차세대 이미지 생성 모델 Seedream 5.5를 공개했어요. 미편집 영역을 픽셀 단위로 보존해 최대 100회까지 품질 저하 없이 연속 편집할 수 있고, 알파 채널이 포함된 투명 배경 에셋을 직접 생성할 수 있어요.",
-    "details": [
-      "최대 100회 연속 편집 시에도 미편집 영역 픽셀 보존 및 색감 왜곡 방지",
-      "별도 누끼 작업 없는 네이티브 RGBA 투명 배경 에셋 생성",
-      "조명·질감·피부 표현 등 실사 품질 및 복잡한 텍스트 렌더링 성능 대폭 개선"
-    ],
-    "url": "https://seed.bytedance.com/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-09-1",
-    "service": "scenario",
-    "date": "2026.11.09",
-    "kind": "모델",
-    "title": "비디오 속 인물 교체 모델 'P-Video 2 Pro Replace' 출시",
-    "summary": "원본 비디오의 모션, 배경, 오디오를 그대로 유지하면서 최대 2명의 등장인물을 자연스럽게 교체하는 모델이 도입되었어요.",
-    "details": [
-      "1초부터 최대 120초 길이의 비디오에서 인물 교체 작업 지원",
-      "원본 비디오의 카메라 움직임, 배경 환경, 배경 오디오 보존"
-    ],
-    "url": "https://www.scenario.com/changelog/models-3b9eeadfbf5289aeb0939f1100f8b09e865b2b8ffe8ef3290b9a44cdc1758450",
-    "source": "notice"
-  },
-  {
-    "id": "roblox-cube-2026-11-09-1",
-    "service": "roblox-cube",
-    "date": "2026.11.09",
-    "kind": "기능",
-    "title": "Roblox Studio, 게임 내 이미지 텍스트 자동 번역 베타 출시",
-    "summary": "게임 내 이미지에 포함된 텍스트를 원본 폰트와 스타일을 유지한 채 한국어 등 7개 언어로 실시간 자동 번역하는 기능이 베타로 출시되었어요.",
-    "details": [
-      "한국어, 프랑스어, 독일어, 인도네시아어, 이탈리아어, 포르투갈어, 스페인어 등 7개 언어 지원",
-      "원본 이미지의 시각 스타일을 그대로 보존하면서 텍스트 영역만 플레이어의 언어로 로컬라이징",
-      "Creator Hub의 현지화(Localization) 관리 페이지에서 언어별 활성화 옵션 제공"
-    ],
-    "url": "https://devforum.roblox.com/t/beta-translate-text-in-your-in-game-images-automatically/4984692",
-    "source": "notice"
-  },
-  {
-    "id": "magnific-2026-11-09-1",
-    "service": "magnific",
-    "date": "2026.11.09",
-    "kind": "API",
-    "title": "ElevenLabs Voiceover v3 및 v4 음성 합성 API 도입",
-    "summary": "Magnific API에 ElevenLabs Voiceover v3 및 v4 모델 엔드포인트가 추가되었어요. 대괄호 오디오 태그를 사용해 감정 표현, 속삭임, 웃음소리, 일시 정지 등을 세밀하게 연출할 수 있어요.",
-    "details": [
-      "ElevenLabs v3(최대 5,000자) 및 고표현력 v4(최대 10,000자) 엔드포인트 지원",
-      "[excited], [whispers], [laughs] 등 오디오 연출 태그 지원",
-      "44.1kHz, 128kbps 단일 MP3 파일 출력 및 10자 단위 과금"
-    ],
-    "url": "https://docs.magnific.com/changelog#november-9-2026",
-    "source": "dev"
-  },
-  {
-    "id": "layer-2026-11-09-1",
-    "service": "layer",
-    "date": "2026.11.09",
-    "kind": "기능",
-    "title": "3D 프리비즈 씬 에디터 도입 및 GPT Image 2.6 기반 GIF·SVG 생성 지원",
-    "summary": "Layer가 보드 내 3D 씬 에디터를 추가해 카메라 워킹을 사전에 연출하고 3D-to-비디오로 바로 렌더링할 수 있게 되었어요. 또한 GPT Image 2.6 모델을 기반으로 2~16프레임 루프 GIF 및 SVG 벡터 생성 기능도 지원해요.",
-    "details": [
-      "월드 빌더와 연동되는 3D 씬 에디터 및 크레딧 소모 없는 카메라 프리비즈 레코딩",
-      "프리비즈 클립의 구도와 타이밍을 유지하며 완성형 영상으로 변환하는 3D to Video",
-      "GPT Image 2.6 기반의 2~16프레임 루프 GIF 및 SVG 벡터 이미지 생성 지원"
-    ],
-    "url": "https://www.layer.ai/changelog",
-    "source": "notice"
-  },
-  {
-    "id": "higgsfield-2026-11-09-1",
-    "service": "higgsfield",
-    "date": "2026.11.09",
-    "kind": "연동",
-    "title": "Higgsfield에 바이트댄스 Seedream 5.5 모델 연동 출시",
-    "summary": "Higgsfield 플랫폼에 바이트댄스의 최신 이미지 모델 Seedream 5.5가 추가되어 100회 연속 편집 및 투명 배경 생성 기능을 제공해요.",
-    "details": [
-      "알파 채널(RGBA) 네이티브 지원으로 별도 배경 분리 없이 투명 배경 이미지 생성",
-      "비수정 영역을 픽셀 단위로 보존하는 100회 연속 편집 지원",
-      "한 번에 1~4장의 1K·1.5K·2K 해상도 이미지 생성 지원",
-      "이미지당 2.5~3.5 크레딧 적용"
-    ],
-    "url": "https://higgsfield.ai/blog/seedream-5-5-higgsfield",
-    "source": "notice"
-  },
-  {
-    "id": "flow-studio-2026-11-09-1",
-    "service": "flow-studio",
-    "date": "2026.11.09",
-    "kind": "연동",
-    "title": "Autodesk Flow Studio, AI 어시스턴트 연동용 MCP 서버 출시",
-    "summary": "Flow Studio용 모델 컨텍스트 프로토콜(MCP) 서버가 출시되어 AI 대화창에서 텍스트 프롬프트로 직접 3D 모델과 이미지를 생성하고 편집할 수 있게 되었어요.",
-    "details": [
-      "자연어 프롬프트와 레퍼런스 이미지를 통해 3D 모델 및 이미지 생성 지원",
-      "대화형 지시어로 3D 메시 리메싱, 리텍스처링 및 이미지 편집 반복 수행",
-      "Flow Studio 프로젝트 라이브러리 연동 및 GLB, OBJ, STL, 3MF 포맷 에셋 다운로드 지원",
-      "Autodesk 계정 로그인 및 보유 Flow Studio 플랜 크레딧 사용"
-    ],
-    "url": "https://help.wonderdynamics.com/release-notes/#november-09-2026",
     "source": "notice"
   }
 ]

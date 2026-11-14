@@ -1,5 +1,20 @@
 [
   {
+    "id": "dream-machine-2026-11-14-1",
+    "service": "dream-machine",
+    "date": "2026.11.14",
+    "kind": "기능",
+    "title": "루마 캔버스 에셋 정리 도구 '스마트 오거나이저' 출시",
+    "summary": "루마 AI 캔버스에 최대 1만 개의 에셋을 제품, 콘셉트, 캠페인 등 작업 맥락에 맞춰 자동으로 분류하고 라벨링해주는 스마트 오거나이저 기능이 추가되었어요.",
+    "details": [
+      "캔버스 전체, 개별 프레임 또는 선택 영역을 지정하여 최대 1만 개 에셋 자동 정리 지원",
+      "에셋 간 파생 관계 및 프롬프트 맥락을 분석해 제품·콘셉트·제작 단계별로 그룹화 및 라벨링",
+      "사용자가 변경 사항을 확인하고 승인하기 전까지는 배치가 임의로 변경되지 않는 안전성 제공"
+    ],
+    "url": "https://lumalabs.ai/news/ai-board-manager",
+    "source": "notice"
+  },
+  {
     "id": "veo-2026-11-12-1",
     "service": "veo",
     "date": "2026.11.12",
@@ -30,6 +45,21 @@
       "MCP text_to_video, image_to_video 및 reference_to_video 도구에서도 최대 30초 지원"
     ],
     "url": "https://developers.heygen.com/changelog#hey-gen-video-reference-to-video-up-to-30-seconds",
+    "source": "dev"
+  },
+  {
+    "id": "runway-2026-11-11-1",
+    "service": "runway",
+    "date": "2026.11.11",
+    "kind": "API",
+    "title": "Runway Dev, Seedance 2.5 4K 출력 지원 및 Seedream 레이어 과금 세분화",
+    "summary": "Runway Dev API의 Seedance 2.5 모델에 4K 해상도 비디오 출력이 추가되었으며, Seedream 5 Pro Layers의 과금 체계가 반환된 레이어 이미지당 과금으로 개편되었어요.",
+    "details": [
+      "Seedance 2.5 텍스트·이미지·비디오 투 비디오에서 3840:2160(16:9), 2160:3840(9:16) 등 4K 해상도 출력 지원",
+      "4K 출력 시 초당 110크레딧(입력 및 참조 비디오 초당 57크레딧) 과금 적용",
+      "Seedream 5 Pro Layers 과금 방식을 1회당 18크레딧 고정에서 반환된 레이어 이미지당 과금(1K/1.5K 3크레딧, 2K 5크레딧)으로 변경"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedance-2-5-4k",
     "source": "dev"
   },
   {

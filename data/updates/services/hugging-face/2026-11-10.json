@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hugging-face-2026-11-10-1",
+    "service": "hugging-face",
+    "date": "2026.11.10",
+    "kind": "요금",
+    "title": "Google Cloud 계정을 통한 Hugging Face Hub 통합 결제 지원",
+    "summary": "Hugging Face 조직을 Google Cloud 계정과 연동하여 Team/Enterprise 구독 및 컴퓨팅 리소스 사용료를 단일 Google Cloud 청구서로 통합 결제할 수 있게 되었어요.",
+    "details": [
+      "Google Cloud Marketplace에서 Hugging Face를 구독하고 관리자 조직을 연결해 설정 지원",
+      "Team 및 Enterprise 구독, Jobs, Inference Endpoints, Spaces GPU 연산 비용을 Google Cloud 인보이스에 통합",
+      "신규 벤더 등록이나 별도 법인 카드 결제 없이 기존 Google Cloud 결제 계정으로 일원화된 조달 프로세스 제공"
+    ],
+    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+    "source": "notice"
+  }
+]

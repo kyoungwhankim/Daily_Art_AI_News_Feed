@@ -1,5 +1,19 @@
 [
   {
+    "id": "comfyui-2026-11-13-1",
+    "service": "comfyui",
+    "date": "2026.11.13",
+    "kind": "연동",
+    "title": "ComfyUI v0.45.1: MiniMax H3 이미지 및 LTX VFX 노드 추가",
+    "summary": "ComfyUI v0.45.1에 미니맥스의 MiniMax H3 Image 모델 파트너 노드와 LTX VFX(AlphaGen, SDR to HDR, Reframe, Upscale) 노드가 공식 추가되었어요.",
+    "details": [
+      "MiniMax H3 Image: 텍스트 투 이미지 및 이미지 편집 기능을 제공하는 MiniMax 공식 이미지 생성 파트너 노드 지원",
+      "LTX VFX: 알파 채널 출력을 지원하는 AlphaGen, SDR 영상의 HDR 변환, Reframe 및 업스케일(Upscale) 파트너 노드 탑재"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-45-1",
+    "source": "notice"
+  },
+  {
     "id": "figma-ai-2026-11-12-1",
     "service": "figma-ai",
     "date": "2026.11.12",
@@ -76,6 +90,21 @@
       "Comfy Cloud 및 로컬 ComfyUI 워크플로우에 직접 연결 가능"
     ],
     "url": "https://blog.comfy.org/p/seedream-55-is-now-available-via",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-11-10-1",
+    "service": "hugging-face",
+    "date": "2026.11.10",
+    "kind": "요금",
+    "title": "Google Cloud 계정을 통한 Hugging Face Hub 통합 결제 지원",
+    "summary": "Hugging Face 조직을 Google Cloud 계정과 연동하여 Team/Enterprise 구독 및 컴퓨팅 리소스 사용료를 단일 Google Cloud 청구서로 통합 결제할 수 있게 되었어요.",
+    "details": [
+      "Google Cloud Marketplace에서 Hugging Face를 구독하고 관리자 조직을 연결해 설정 지원",
+      "Team 및 Enterprise 구독, Jobs, Inference Endpoints, Spaces GPU 연산 비용을 Google Cloud 인보이스에 통합",
+      "신규 벤더 등록이나 별도 법인 카드 결제 없이 기존 Google Cloud 결제 계정으로 일원화된 조달 프로세스 제공"
+    ],
+    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
     "source": "notice"
   },
   {

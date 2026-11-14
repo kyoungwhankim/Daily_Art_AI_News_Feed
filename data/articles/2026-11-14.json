@@ -1,0 +1,140 @@
+[
+  {
+    "id": "games-ed96af30-2026-11",
+    "tab": "games",
+    "headline": "소니, 기본 PS5용 AI 업스케일링 기술 'QSSR' 지원 확대... 스파이더맨 2 등에 적용",
+    "summary": "소니가 기본 PS5 기기에서 그래픽 품질을 개선하는 AI 업스케일 기술 QSSR의 신규 지원 타이틀을 발표했어요.",
+    "body": "<p>소니가 기본 플레이스테이션 5 기기에서 그래픽 품질과 프레임 안정성을 높여주는 새로운 AI 기반 업스케일링 기술 'QSSR(Quick Spectral Super Resolution)'의 신규 지원 타이틀 라인업을 공개했어요. QSSR은 PS5 프로 전용인 PSSR(PlayStation Spectral Super Resolution)의 기본형 모델로, 고해상도 디스플레이 환경에서 프레임 저하 없이 선명하고 안정적인 화면을 구현하도록 돕는 기술이에요. 지난 10월 고스트 오브 요테이와 마블 울버린에 처음 적용된 데 이어, 이번 발표를 통해 마블 스파이더맨 2, 컨트롤 레조넌트, 더 파이널스, 아크 레이더스, 노 맨즈 스카이, 헬 렛 루즈: 베트남 등 다수의 대작 게임이 연내 순차적으로 QSSR 지원을 추가하기로 확정되었어요.</p><p>게임 개발사들은 QSSR 도입을 통해 물리적인 하드웨어 성능의 한계를 넘어 시각적 몰입감을 크게 끌어올릴 수 있게 되었다며 긍정적인 반응을 보이고 있어요. 레메디 엔터테인먼트의 그래픽 프로그래머 에릭 얀손은 화면의 떨림을 줄이고 미세한 디테일을 훨씬 안정적으로 표현할 수 있게 되었다고 설명했으며, 엠바크 스튜디오 역시 주변 환경의 명확성과 전반적인 시각적 완성도를 모든 플레이어에게 전달할 수 있게 되었다고 밝혔어요. 이번 기술은 소니와 AMD가 진행한 공동 프로젝트 아메지스트에서 출발한 성과로, 6년 차에 접어든 기본 콘솔 기기에서도 개발사가 큰 부담 없이 후처리 비주얼을 업그레이드할 수 있는 실질적인 대안으로 주목받고 있어요.</p><p>원문: <a href=\"https://kotaku.com/spider-man-2-and-a-bunch-of-other-great-games-are-about-to-look-even-better-on-base-ps5-2000756594\">Kotaku</a></p>",
+    "source": "Kotaku",
+    "publishedAt": "2026.11.14",
+    "hue": 200,
+    "image": "https://kotaku.com/app/uploads/2026/11/spider-man-2-1200x675.jpg",
+    "keywords": [],
+    "url": "https://kotaku.com/spider-man-2-and-a-bunch-of-other-great-games-are-about-to-look-even-better-on-base-ps5-2000756594"
+  },
+  {
+    "id": "industry-ad2ddac7-2026-11",
+    "tab": "industry",
+    "headline": "펄어비스, 게임 개발 파이프라인 전반에 생성형 AI 도입 확대 발표",
+    "summary": "펄어비스가 개발 생산성과 품질 향상을 위해 전체 제작 파이프라인에 생성형 AI 도입을 확대한다고 밝혔어요.",
+    "body": "<p>'붉은사막'과 차기작 '도깨비'의 개발사 펄어비스가 최근 주주들에게 공개한 분기 실적 서한을 통해 전체 게임 개발 파이프라인에 걸쳐 생성형 AI 기술의 도입을 전면 확대하고 있다고 밝혔어요. 펄어비스는 과거에는 게임 시스템을 개발진이 수작업으로 직접 구현한 뒤에야 작동 여부를 검증할 수 있었지만, 이제는 본격적인 빌드 작업에 앞서 다양한 기획 아이디어와 시각 디자인 콘셉트를 AI를 활용해 신속하게 사전 검증하는 방식으로 제작 체계를 전환했다고 설명했어요. 이러한 공정 혁신 덕분에 한정된 개발 자원을 전략적으로 배분하고 전체적인 게임 제작 일정을 한층 단축할 수 있게 되었다고 덧붙였어요.</p><p>펄어비스는 단순 반복 작업의 자동화와 리소스 제작 보조, 테스트 최적화 등 다양한 제작 공정 전반에 AI를 적용하고 있어요. 과거 붉은사막 출시 초기에 임시 2D 소품 이미지를 AI로 제작했다가 수작업 에셋으로 교체했던 경험을 거치며 기술 활용 기준도 한층 정교해졌어요. 회사 측은 AI가 인간 개발자를 대체하는 것이 아니라 제작 효율성과 그래픽 완성도를 끌어올리기 위한 강력한 지원 도구라고 선을 그었어요. 핵심 게임플레이의 재미와 독창적인 콘텐츠 창작은 여전히 인간 개발자가 전적으로 주도하며, 완성도 높은 게임을 유저들에게 더 빠르게 전달하겠다고 강조했어요.</p><p>원문: <a href=\"https://www.eurogamer.net/crimson-desert-ai-pipeline-dokev-2028\">Eurogamer</a></p>",
+    "source": "Eurogamer",
+    "publishedAt": "2026.11.14",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/crimson-deser-kliff.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "AI 도입 전략"
+    ],
+    "url": "https://www.eurogamer.net/crimson-desert-ai-pipeline-dokev-2028"
+  },
+  {
+    "id": "industry-558f9f15-2026-11",
+    "tab": "industry",
+    "headline": "디즈니, 생성형 AI 본격 수용... AI 애니메이션 '오지 폭스' 방영 및 자체 IP 모델 구축",
+    "summary": "디즈니가 AI 제작 애니메이션을 디즈니+에 편성하고 자체 캐릭터 기반 맞춤형 AI 모델 구축에 나섰어요.",
+    "body": "<p>캐릭터 저작권 침해 문제로 AI 기업들과 각을 세워왔던 월트 디즈니가 신임 최고경영자(CEO) 조시 다마로 체제 아래에서 전사적인 생성형 AI 도입에 속도를 내고 있어요. 블룸버그 통신에 따르면 디즈니는 프랑스 스타트업 애니마쥬(Animaj)의 AI 제작 도구를 활용해 제작된 어린이용 애니메이션 시리즈 '오지 폭스(Ozzy Fox)'를 오는 12월 OTT 플랫폼 디즈니+를 통해 정식 방영할 예정이에요. 이 작품은 아티스트의 2D 스케치와 텍스트 명령어를 바탕으로 3D 애니메이션을 자동 변환 및 생성하는 기술을 사용했으며, 지난 7월 유튜브에 선공개되었을 당시에도 제작 방식과 완성도를 둘러싸고 큰 화제를 모았어요.</p><p>디즈니는 애니메이션 제작뿐만 아니라 예산 보고서 자동화, 디즈니+ 맞춤형 시청 추천 알고리즘, 테마파크 놀이기구 고장 감지 마이크와 대화형 AI 캐릭터 특허 출원 등 사업 전반에 걸쳐 신기술을 공격적으로 실험하고 있어요. 특히 지난 9월에는 캐릭터닷에이아이(Character.AI) 출신 카란딥 아난드를 초대 최고기술책임자(CTO)로 영입하고 관련 자산 인수에 2천만 달러를 베팅하기도 했어요. 다만 핵심 자산인 독점 캐릭터 보호에는 여전히 철저한 기준을 유지하고 있으며, 외부 AI 기업에 무단 라이선스를 주는 대신 어도비와 손잡고 디즈니의 직접적인 통제 아래 자체 IP 기반 AI 모델을 학습·구축하는 전략을 취하고 있어요.</p><p>원문: <a href=\"https://thenextweb.com/news/disney-embraces-ai-ozzy-fox-damaro\">The Next Web</a></p>",
+    "source": "The Next Web",
+    "publishedAt": "2026.11.14",
+    "hue": 30,
+    "image": "https://media.thenextweb.com/2026/11/walt-disney-studios-burbank-entrance-arch.jpg",
+    "keywords": [
+      "AI 도입 전략",
+      "영상"
+    ],
+    "url": "https://thenextweb.com/news/disney-embraces-ai-ozzy-fox-damaro"
+  },
+  {
+    "id": "industry-5cfe4a73-2026-11",
+    "tab": "industry",
+    "headline": "생성형 AI 복제 게임 급증에 인디 개발사 출시 전략 변화... 사전 공개 대신 '기습 발표' 선회",
+    "summary": "런던 AI 게임 컨퍼런스에서 전문가들이 AI 복제작 범람과 스팀의 노출도 위기를 경고하며 새로운 마케팅 전략을 제시했어요.",
+    "body": "<p>런던에서 열린 'AI 앤 게임스 컨퍼런스(AI and Games Conference)'에서 퍼블리셔와 투자사 전문가들이 생성형 AI 발전으로 인한 인디 게임 업계의 복제 게임 범람과 스팀(Steam) 노출도 위기에 대해 집중 진단했어요. 로 퓨리(Raw Fury), 스파이더링 스튜디오(Spiderling Studios), 트랜센드 펀드(Transcend Fund) 관계자들은 최신 AI 도구를 악용해 미출시 게임의 컨셉 영상만 보고도 며칠 만에 유사 게임을 복제해 출시하는 사례가 급증하고 있다고 경고했어요. 과거에는 개발 초기부터 게임을 공개하고 위시리스트를 장기간 쌓는 것이 정석이었지만, 이제는 복제작이 원작보다 먼저 시장을 선점하는 사태를 막기 위해 출시 직전까지 정보를 숨기다 기습 공개하는 방식으로 전략이 바뀌고 있어요.</p><p>패널들은 AI 제작 도구의 대중화로 스팀 출시작 수가 전년 대비 두 배 가까이 폭증하면서 유저들의 주목을 받기 위한 경쟁이 극도로 치열해졌다고 지적했어요. 공급은 기하급수적으로 늘었지만 이용자의 총 체류 시간과 관심은 한정되어 있어, 리뷰 500개 이상을 달성하는 성공작의 파이는 여전히 정체된 상태예요. 전문가들은 단순한 기능적 마케팅보다는 대체 불가능한 고유 팬덤과 커뮤니티를 구축하고 게임 미디어 및 크리에이터와의 신뢰 관계를 다지는 것이 복제작에 대항할 수 있는 가장 확실한 무기라고 강조했어요. 아울러 외부 대규모 언어모델(LLM)에 의존하는 게임들의 API 비용 부담을 경고하며 진정한 AI 네이티브 경험의 필요성을 제안했어요.</p><p>원문: <a href=\"https://www.gamesindustry.biz/its-a-wild-situation-an-investor-and-publisher-perspective-on-the-rise-of-ai-copycats-the-discoverability-crisis-and-more\">GamesIndustry.biz</a></p>",
+    "source": "GamesIndustry.biz",
+    "publishedAt": "2026.11.14",
+    "hue": 30,
+    "image": "https://assetsio.gnwcdn.com/IMG_8131-(1).jpeg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+    "keywords": [
+      "행사·컨퍼런스"
+    ],
+    "url": "https://www.gamesindustry.biz/its-a-wild-situation-an-investor-and-publisher-perspective-on-the-rise-of-ai-copycats-the-discoverability-crisis-and-more"
+  },
+  {
+    "id": "industry-2970936a-2026-11",
+    "tab": "industry",
+    "headline": "몬트리올 게임 서밋 전문가들, \"스튜디오 AI 도입 시 주니어 육성과 저작권 기록 유지 필수\"",
+    "summary": "몬트리올에서 열린 게임 서밋에서 전문가들이 AI 도입에 따른 주니어 육성 단절 위험과 인간 창작 증빙 기록의 중요성을 강조했어요.",
+    "body": "<p>캐나다 몬트리올에서 열린 'MIGS 2026'과 'PGC 서밋'에서 주요 게임 스튜디오와 투자 자문사 전문가들이 모여 생성형 AI 실무 도입의 명암과 올바른 대응 전략을 심도 있게 논의했어요. M&A 자문사 스트래티직 얼터너티브스의 리스 데클 대표는 순수 AI 생성물은 저작권 보호를 받을 수 없기 때문에 향후 스튜디오 매각이나 투자 유치 시 인간 창작자의 개입을 증명할 수 있는 제작 기록 보관이 필수적이라고 조언했어요. 복제 불가능한 고유 IP나 커뮤니티 같은 독자적인 해자가 없는 상태에서 AI를 도입하는 것은 스튜디오의 몰락을 가속할 뿐이라는 뼈아픈 분석도 덧붙였어요.</p><p>버투스(Virtuos), 비헤이비어 인터랙티브, 윙킹 스튜디오, 키워즈 스튜디오가 참여한 AI 패널에서는 단기적인 제작 속도 향상이 장기적인 비용 절감으로 이어지지 않는다는 점을 짚었어요. 사내 테스트 결과 숙련된 시니어 아티스트가 적은 프롬프트로 고품질 에셋을 빠르게 완성한 반면, 비용 절감을 이유로 주니어 채용을 줄이면 미래의 시니어가 사라지는 인력 공백 사태가 벌어질 수 있다고 경고했어요. 또한 스팀 출시작 분석 결과 AI 사용을 공개한 게임의 리뷰 점유율이 13%에 불과하다는 데이터를 공유하며, AI에 사고를 전적으로 위임해서는 이용자의 선택을 받을 수 없다고 입을 모았어요.</p><p>원문: <a href=\"https://www.pocketgamer.biz/key-takeaways-from-migs-and-pgc-montreal/\">PocketGamer.biz</a></p>",
+    "source": "PocketGamer.biz",
+    "publishedAt": "2026.11.14",
+    "hue": 30,
+    "image": "https://media.pocketgamer.biz/images/142187/90241/mainpickeytakeaways_l1200.jpg",
+    "keywords": [
+      "고용·노조",
+      "행사·컨퍼런스"
+    ],
+    "url": "https://www.pocketgamer.biz/key-takeaways-from-migs-and-pgc-montreal/"
+  },
+  {
+    "id": "art-bb453633-2026-11",
+    "tab": "art",
+    "headline": "루마 AI, 캔버스 에셋 자동 분류·정리하는 '스마트 오거나이저' 기능 출시",
+    "summary": "루마 AI가 대형 캔버스 내 최대 1만 개의 에셋을 맥락에 따라 자동으로 그룹화하고 라벨링하는 스마트 정리 기능을 공개했어요.",
+    "body": "<p>루마 AI(Luma AI)가 드림 머신 캔버스 작업 공간에서 수많은 생성 에셋을 지능적으로 분류하고 정리해 주는 '스마트 오거나이저(Smart Organizer)' 기능을 새롭게 출시했어요. 브랜드 캠페인이나 장기 프로젝트를 진행하다 보면 보드 위에 수천 개의 이미지와 영상 결과물이 뒤섞여 원하는 에셋을 찾기가 제작보다 더 오래 걸리는 문제가 발생하곤 해요. 이번에 도입된 루마 에이전트는 파일명이나 생성 날짜 같은 단순한 메타데이터에 의존하지 않고, 에셋의 시각적 내용과 파생 관계, 주변 컨텍스트를 스스로 이해해 관련된 작업물끼리 묶고 라벨을 달아줘요.</p><p>스마트 오거나이저는 참조용 원본 사진과 AI로 생성된 베리에이션을 구분할 뿐만 아니라, 특정 이미지가 어떤 프롬프트와 계보에서 파생되었는지 추적해 제품별, 컨셉별, 캠페인 채널별로 자동 구조화해요. 보드 전체는 물론 선택한 프레임이나 일부 에셋만 지정해 정리할 수 있으며, 최대 1만 개의 대규모 에셋이 배치된 복잡한 캔버스도 구역별로 매끄럽게 정리해 줘요. 특히 에이전트가 임의로 캔버스를 바꾸지 않고 정리 제안을 먼저 보여준 뒤 사용자가 승인해야 배치가 적용되며, 정리 이후 작업한 편집 내역을 유지한 채 이전 상태로 되돌리는 기능도 완벽히 지원해요.</p><p>원문: <a href=\"https://lumalabs.ai/news/ai-board-manager\">Luma AI</a></p>",
+    "source": "Luma AI",
+    "publishedAt": "2026.11.14",
+    "hue": 290,
+    "image": "https://static.cdn-luma.com/files/sanity/80e8495c-1963-42bb-a5b2-a540f9baea19.jpg",
+    "keywords": [
+      "영상",
+      "2D·이미지"
+    ],
+    "url": "https://lumalabs.ai/news/ai-board-manager"
+  },
+  {
+    "id": "art-ef65f5da-2026-11",
+    "tab": "art",
+    "headline": "어도비 프리미어 2026, 타임라인에서 영상과 사운드 직접 생성하는 '생성 미디어 툴' 탑재",
+    "summary": "어도비가 프리미어 2026 업데이트를 통해 타임라인에서 파이어플라이 및 서드파티 AI 모델로 비디오와 사운드를 직접 생성하는 신기능을 선보였어요.",
+    "body": "<p>어도비가 프리미어 프로(Premiere Pro) 2026 최신 버전 업데이트를 통해 편집 타임라인에서 외부 웹사이트를 거치지 않고 영상과 오디오를 직접 생성할 수 있는 '생성 미디어 툴(Generative Media Tool)'을 전격 도입했어요. 이전 버전에서는 기존 클립의 앞뒤 길이를 자연스럽게 늘려주는 '생성 확장' 기능만 지원되어 새로운 컷을 만들려면 웹 브라우저에서 파이어플라이(Firefly)를 실행해 다운로드한 후 가져와야 하는 번거로움이 있었어요. 이번 업데이트로 비디오 및 오디오 트랙의 빈 공간을 드래그해 길이를 지정하고 프롬프트를 입력하면 타임라인 위에 즉시 렌더링된 클립이 생성돼요.</p><p>이 기능은 어도비 자체 파이어플라이 비디오 모델뿐만 아니라 구글 딥마인드의 베오(Veo) 3.1 패스트, 루마 레이(Ray) 등 다양한 파트너 AI 모델을 타임라인 안에서 직접 선택할 수 있어요. 특히 베오 3.1 모델을 활용하면 영상 생성과 동시에 어울리는 배경 사운드트랙까지 한 번에 합성할 수 있으며, 4초에서 최대 10초 길이의 1080p 고해상도 클립을 생성할 수 있어요. 또한 시작과 끝 프레임 지정 기능, 최대 3장의 참조 이미지 삽입, 시드(Seed) 번호 고정 옵션을 제공해 씬 전체의 시각적 일관성을 유지하기 수월해졌고, 생성된 모든 미디어는 크리에이티브 클라우드에 자동 동기화되어 재사용할 수 있어요.</p><p>원문: <a href=\"https://cgworld.jp/regular/202611-tipsnote.html\">CGWorld JP</a></p>",
+    "source": "CGWorld JP",
+    "publishedAt": "2026.11.14",
+    "hue": 290,
+    "image": "https://cgworld.jp/regular/assets_c/2026/11/Tipsnote-photo-2026205-thumb-800x445-90691.png",
+    "keywords": [
+      "영상",
+      "Adobe",
+      "Premiere"
+    ],
+    "url": "https://cgworld.jp/regular/202611-tipsnote.html"
+  },
+  {
+    "id": "art-8903269f-2026-11",
+    "tab": "art",
+    "headline": "2026년 AI 비디오 생성 모델 벤치마크 공개... Elo 순위와 초당 비용 분석",
+    "summary": "아티피셜 애널리시스 블라인드 평가를 바탕으로 2026년 주요 비디오 생성 AI 모델들의 Elo 점수, 초당 API 단가, 오픈 가중치 현황이 공개되었어요.",
+    "body": "<p>인공지능 벤치마크 플랫폼 아티피셜 애널리시스(Artificial Analysis)의 블라인드 인간 선호도 평가를 바탕으로 2026년 11월 기준 주요 비디오 생성 AI 모델들의 종합 랭킹과 초당 API 비용 분석이 공개되었어요. 1년 전과 비교해 현재 비디오 생성 시장은 자체 오디오 합성 탑재와 15초 이상의 긴 클립 생성이 기본 사양으로 자리 잡았으며, 오픈 가중치 모델들이 폐쇄형 독점 모델들과 대등하게 최상위권을 다투는 양상으로 재편되었어요. 기준 앵커로 설정된 콰이쇼우(Kuaishou)의 클링 3.0(1000점)을 상회하는 플래그십 모델들이 대거 등장하며 기술 격차가 빠르게 좁혀지고 있어요.</p><p>텍스트 투 비디오 부문에서는 알리바바의 완(Wan) 3.0이 1,175점으로 1위를 차지했으며, 문서나 슬라이드를 입력받아 영상을 구성하는 차별화된 성능을 보였으나 가중치는 비공개 상태예요. 미니맥스(MiniMax) H3는 1,161점(3위)을 기록하며 오픈 가중치 진영의 핵심 기반 모델로 부상했고, 초당 0.08달러의 저렴한 API 단가로 피카(Pika)와 헤이젠(HeyGen) 등 다양한 파생 모델을 탄생시켰어요. 반면 이미지 투 비디오 영역에서는 바이트댄스의 시드댄스 2.5가 1,161점으로 최고점을 기록했으나 초당 0.569달러로 가장 높은 가격대를 형성해, 창작자들은 품질과 파이프라인 운영 비용 사이의 균형을 고려해야 해요.</p><p>원문: <a href=\"https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/\">MarkTechPost</a></p>",
+    "source": "MarkTechPost",
+    "publishedAt": "2026.11.14",
+    "hue": 290,
+    "image": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-4-scaled.png",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/"
+  },
+  {
+    "id": "art-0d929847-2026-11",
+    "tab": "art",
+    "headline": "할리우드 스타트업, 100% 생성형 AI 숏폼 드라마 제작... 다양성 확장과 일자리 논쟁",
+    "summary": "미디어 스타트업 만사가 100% 생성형 AI로 제작한 30부작 숏폼 드라마를 공개하며 할리우드 내 다양성 확장과 인간 일자리 침해 논란이 동시에 일고 있어요.",
+    "body": "<p>할리우드 배우 네이트 파커와 데이비드 오예로워가 공동 설립한 미디어 스타트업 만사(Mansa)가 100% 생성형 AI로 제작한 30부작 숏폼 모바일 드라마 '데이 레프트 어스 투 다이(They Left Us to Die)'를 공개하면서 엔터테인먼트 업계에 뜨거운 찬반 논쟁이 촉발되었어요. 좀비 바이러스가 퍼진 로스앤젤레스 남부를 배경으로 흑인 간호사의 사투를 다룬 이 작품은 트레일러 공개 직후 큰 기대를 모았으나, 실제 인간 배우나 촬영 인력을 전혀 쓰지 않은 완전 자동화 제작 방식이 알려지면서 유색인종 예술인 육성을 표방하던 설립 취지와 어긋난다는 동료 배우들의 거센 반발을 샀어요.</p><p>제작사 측은 대형 스튜디오의 합병과 투자 위축으로 흑인 중심 서사의 전통적 실사 영상 제작이 극도로 어려워진 현실을 지적하며, 적은 비용으로 AI 숏폼 드라마를 먼저 선보여 대중의 수요와 흥행성을 검증하는 '개념 증명(PoC)' 전략이라고 해명했어요. 숏폼 드라마 시장이 2027년까지 140억 달러 규모로 급성장할 것으로 전망되는 가운데, 틱톡 등에 익숙한 Z세대를 겨냥한 버티컬 콘텐츠 실험은 유효하지만 인간의 일자리를 기술로 대체한다는 현장의 박탈감을 어떻게 극복할 것인가가 문화 콘텐츠 산업의 시급한 과제로 떠올랐어요.</p><p>원문: <a href=\"https://www.wired.com/story/black-roles-are-disappearing-in-hollywood-this-startup-is-using-ai-microdramas-to-fight-back/\">WIRED</a></p>",
+    "source": "WIRED",
+    "publishedAt": "2026.11.14",
+    "hue": 290,
+    "image": "https://media.wired.com/photos/6af65ba58bac4203b57b5ba0/191:100/w_1280,c_limit/Startup-Betting-on-AI-Microdramas-Culture.jpg",
+    "keywords": [
+      "영상"
+    ],
+    "url": "https://www.wired.com/story/black-roles-are-disappearing-in-hollywood-this-startup-is-using-ai-microdramas-to-fight-back/"
+  }
+]

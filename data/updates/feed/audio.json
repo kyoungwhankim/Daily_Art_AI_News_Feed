@@ -1,5 +1,21 @@
 [
   {
+    "id": "suno-2026-11-13-1",
+    "service": "suno",
+    "date": "2026.11.13",
+    "kind": "앱",
+    "title": "DAW 연동 독립형 데스크톱 앱 'Suno Bridge' 베타 출시",
+    "summary": "작업 중인 DAW 세션과 실시간 동기화되어 프로젝트의 템포·키·코드 진행에 맞춘 악기 및 보컬 트랙을 타임라인에 즉시 생성해주는 독립형 앱 'Suno Bridge' 베타가 출시되었어요.",
+    "details": [
+      "macOS 환경의 Ableton Live 12와 직접 연동되는 독립형 데스크톱 애플리케이션으로 베타 제공",
+      "세션 파일을 분석해 트랙의 템포, 키, 하모닉 코드 진행 및 그루브에 맞춤화된 오디오 파트 자동 생성",
+      "Arrangement View 루프 마커 구간을 프롬프트 영역으로 지정해 타임라인에 수동 정렬 없이 생성 클립 즉시 배치",
+      "Suno Premier 요금제 구독자에게 제공되며, 향후 타 운영체제(Windows) 및 추가 DAW 플랫폼으로 확장 예정"
+    ],
+    "url": "https://suno.com/blog/introducing-bridge",
+    "source": "notice"
+  },
+  {
     "id": "mureka-2026-11-12-1",
     "service": "mureka",
     "date": "2026.11.12",

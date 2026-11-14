@@ -7,22 +7,22 @@
       "rev": "39796d1e68"
     },
     "video": {
-      "count": 1002,
-      "latest": "2026.11.12",
+      "count": 1004,
+      "latest": "2026.11.14",
       "file": "updates/feed/video.json",
-      "rev": "e0d6fa5224"
+      "rev": "49bf17683d"
     },
     "3d": {
-      "count": 194,
-      "latest": "2026.11.12",
+      "count": 195,
+      "latest": "2026.11.13",
       "file": "updates/feed/3d.json",
-      "rev": "1138644a2d"
+      "rev": "d131c82819"
     },
     "game-assets": {
-      "count": 606,
-      "latest": "2026.11.12",
+      "count": 608,
+      "latest": "2026.11.13",
       "file": "updates/feed/game-assets.json",
-      "rev": "cd86e787fa"
+      "rev": "1fb1ca6da4"
     },
     "motion": {
       "count": 171,
@@ -31,16 +31,16 @@
       "rev": "0bcf848398"
     },
     "audio": {
-      "count": 368,
-      "latest": "2026.11.12",
+      "count": 369,
+      "latest": "2026.11.13",
       "file": "updates/feed/audio.json",
-      "rev": "dd25165987"
+      "rev": "99469f08a2"
     },
     "tools": {
-      "count": 1058,
-      "latest": "2026.11.12",
+      "count": 1060,
+      "latest": "2026.11.13",
       "file": "updates/feed/tools.json",
-      "rev": "05b1e99aa5"
+      "rev": "8ac4861221"
     }
   },
   "services": {
@@ -130,14 +130,14 @@
       "latest": "2026.11.02"
     },
     "runway": {
-      "count": 197,
+      "count": 198,
       "first": "2023.02.01",
-      "latest": "2026.11.10"
+      "latest": "2026.11.11"
     },
     "dream-machine": {
-      "count": 31,
+      "count": 32,
       "first": "2024.09.16",
-      "latest": "2026.11.03"
+      "latest": "2026.11.14"
     },
     "higgsfield": {
       "count": 67,
@@ -185,9 +185,9 @@
       "latest": "2026.09.18"
     },
     "meshy": {
-      "count": 129,
+      "count": 130,
       "first": "2023.10.19",
-      "latest": "2026.11.10"
+      "latest": "2026.11.13"
     },
     "tripo": {
       "count": 29,
@@ -205,9 +205,9 @@
       "latest": "2026.11.12"
     },
     "scenario": {
-      "count": 399,
+      "count": 401,
       "first": "2022.12.23",
-      "latest": "2026.11.12"
+      "latest": "2026.11.13"
     },
     "layer": {
       "count": 107,
@@ -245,9 +245,9 @@
       "latest": "2026.11.11"
     },
     "suno": {
-      "count": 76,
+      "count": 77,
       "first": "2023.12.22",
-      "latest": "2026.11.06"
+      "latest": "2026.11.13"
     },
     "mureka": {
       "count": 60,
@@ -270,9 +270,9 @@
       "latest": "2026.09.18"
     },
     "comfyui": {
-      "count": 220,
+      "count": 221,
       "first": "2024.08.06",
-      "latest": "2026.11.11"
+      "latest": "2026.11.13"
     },
     "invokeai": {
       "count": 74,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 71,
+      "count": 72,
       "first": "2025.05.21",
-      "latest": "2026.11.06"
+      "latest": "2026.11.10"
     },
     "fal.ai": {
       "count": 170,
