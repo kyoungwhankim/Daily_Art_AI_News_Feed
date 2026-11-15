@@ -1,0 +1,18 @@
+[
+  {
+    "id": "elevenlabs-2026-11-09-1",
+    "service": "elevenlabs",
+    "date": "2026.11.09",
+    "kind": "모델",
+    "title": "Scribe v3 음성 인식 모델 및 Unity SDK 출시",
+    "summary": "음성 인식 정확도를 대폭 높인 Scribe v3 및 실시간 Scribe v3 Live 모델이 출시되었으며, Unity 게임 엔진에서 대화형 에이전트를 구현할 수 있는 Unity SDK가 공개되었어요.",
+    "details": [
+      "Scribe v3 및 Scribe v3 Live 음성 인식 모델 출시 (FLEURS 기준 오류율 최대 44% 개선)",
+      "언어 혼합 인식 및 실시간 발화 종료 예측(Turn prediction) 지원",
+      "게임 내 공간 음향과 상호작용을 지원하는 ElevenAgents Unity SDK (v0.1.0) 공개",
+      "Python·JS SDK에서 코드로 에이전트 워크플로우를 제어하는 Workflows as code 도입"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog#november-9-2026",
+    "source": "dev"
+  }
+]
