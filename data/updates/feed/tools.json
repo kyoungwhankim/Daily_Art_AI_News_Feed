@@ -108,6 +108,37 @@
     "source": "notice"
   },
   {
+    "id": "firefly-2026-11-10-2",
+    "service": "firefly",
+    "date": "2026.11.10",
+    "kind": "기능",
+    "title": "Adobe MAX 2026 신기능 공개: Relight·피부 보정·텍스트 편집 등",
+    "summary": "Adobe MAX 2026에서 발표된 Firefly 신기능으로 이미지 조명을 재설정하는 Relight와 얼굴 잡티를 지우는 피부 보정, 폰트를 유지하며 글자를 고치는 텍스트 편집이 도입되었어요.",
+    "details": [
+      "최대 3개의 광원을 배치해 조명 방향과 세기를 조절하는 Relight 기능",
+      "얼굴 점, 흉터, 여드름 등 잡티를 자연스럽게 지우는 피부 보정(Skin Cleanup)",
+      "기존 구성을 해치지 않고 폰트와 스타일을 맞춰 글자만 수정하는 텍스트 편집",
+      "원클릭으로 복잡한 편집을 처리하는 퀵 액션(Quick Actions) 탑재"
+    ],
+    "url": "https://community.adobe.com/announcements-402/new-in-firefly-from-adobe-max-2026-relight-skin-cleanup-edit-text-more-1653138",
+    "source": "notice"
+  },
+  {
+    "id": "firefly-2026-11-10-1",
+    "service": "firefly",
+    "date": "2026.11.10",
+    "kind": "기능",
+    "title": "Firefly, 숏폼 영상 편집 및 조립을 위한 베타 워크스페이스 출시",
+    "summary": "Firefly에 생성하거나 불러온 영상 클립을 복잡한 레이어 없이 단일 트랙에서 손쉽게 편집하고 조합할 수 있는 '숏 비디오 조립' 베타 워크스페이스가 추가되었어요.",
+    "details": [
+      "단일 트랙 환경에서 영상 클립 다듬기, 분할 및 순서 재배열",
+      "프롬프트나 참조 이미지를 활용한 클립 재생성 및 테이크 비교",
+      "개별 클립 볼륨 조절 및 화면 비율 변경, 타임라인 연동 지원"
+    ],
+    "url": "https://community.adobe.com/announcements-402/firefly-assemble-a-short-video-from-your-clips-beta-workspace-1653121",
+    "source": "notice"
+  },
+  {
     "id": "figma-ai-2026-11-10-1",
     "service": "figma-ai",
     "date": "2026.11.10",

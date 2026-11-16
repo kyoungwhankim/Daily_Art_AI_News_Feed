@@ -1,0 +1,17 @@
+[
+  {
+    "id": "scenario-2026-11-15-1",
+    "service": "scenario",
+    "date": "2026.11.15",
+    "kind": "모델",
+    "title": "Scenario, 고속 영상 모델 'Seedance 2.5 Flash' 탑재",
+    "summary": "시나리오(Scenario)에 기존 대비 2배 빠른 생성 속도와 비용 절감으로 720p 해상도 4~30초 영상을 생성할 수 있는 바이트댄스 'Seedance 2.5 Flash' 모델이 추가되었어요.",
+    "details": [
+      "720p 해상도로 4초에서 최대 30초 길이의 영상 생성 지원",
+      "기존 모델 대비 2배 빠른 생성 속도와 저렴한 비용 제공",
+      "텍스트-투-비디오, 영상 편집 및 길이 확장 기능 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-7cd1c1aabee921e1ec19428a4e01d5296228d4cf5f680103d0aaf71e57aa3f06",
+    "source": "notice"
+  }
+]

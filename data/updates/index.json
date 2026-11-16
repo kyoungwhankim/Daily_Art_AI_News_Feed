@@ -19,10 +19,10 @@
       "rev": "d131c82819"
     },
     "game-assets": {
-      "count": 608,
-      "latest": "2026.11.13",
+      "count": 610,
+      "latest": "2026.11.15",
       "file": "updates/feed/game-assets.json",
-      "rev": "1fb1ca6da4"
+      "rev": "bcbfc96c8e"
     },
     "motion": {
       "count": 171,
@@ -37,10 +37,10 @@
       "rev": "94decc2973"
     },
     "tools": {
-      "count": 1060,
+      "count": 1062,
       "latest": "2026.11.13",
       "file": "updates/feed/tools.json",
-      "rev": "8ac4861221"
+      "rev": "b4e185acfc"
     }
   },
   "services": {
@@ -205,9 +205,9 @@
       "latest": "2026.11.12"
     },
     "scenario": {
-      "count": 401,
+      "count": 403,
       "first": "2022.12.23",
-      "latest": "2026.11.13"
+      "latest": "2026.11.15"
     },
     "layer": {
       "count": 107,
@@ -265,9 +265,9 @@
       "latest": "2026.08.13"
     },
     "firefly": {
-      "count": 67,
+      "count": 69,
       "first": "2023.03.21",
-      "latest": "2026.09.18"
+      "latest": "2026.11.10"
     },
     "comfyui": {
       "count": 221,

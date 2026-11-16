@@ -1,5 +1,35 @@
 [
   {
+    "id": "scenario-2026-11-15-1",
+    "service": "scenario",
+    "date": "2026.11.15",
+    "kind": "모델",
+    "title": "Scenario, 고속 영상 모델 'Seedance 2.5 Flash' 탑재",
+    "summary": "시나리오(Scenario)에 기존 대비 2배 빠른 생성 속도와 비용 절감으로 720p 해상도 4~30초 영상을 생성할 수 있는 바이트댄스 'Seedance 2.5 Flash' 모델이 추가되었어요.",
+    "details": [
+      "720p 해상도로 4초에서 최대 30초 길이의 영상 생성 지원",
+      "기존 모델 대비 2배 빠른 생성 속도와 저렴한 비용 제공",
+      "텍스트-투-비디오, 영상 편집 및 길이 확장 기능 지원"
+    ],
+    "url": "https://www.scenario.com/changelog/models-7cd1c1aabee921e1ec19428a4e01d5296228d4cf5f680103d0aaf71e57aa3f06",
+    "source": "notice"
+  },
+  {
+    "id": "scenario-2026-11-13-3",
+    "service": "scenario",
+    "date": "2026.11.13",
+    "kind": "모델",
+    "title": "Scenario, 오디오 동시 생성 지원 영상 모델 'Kling V4 Flash' 탑재",
+    "summary": "시나리오(Scenario)에 텍스트, 이미지 및 비디오에서 720p 해상도로 3~20초 분량의 영상과 사운드를 동시에 빠르게 생성하는 'Kling V4 Flash' 모델이 추가되었어요.",
+    "details": [
+      "720p 해상도로 3초에서 20초 길이의 영상 및 네이티브 오디오 동시 생성 지원",
+      "텍스트, 이미지, 비디오 입력을 모두 지원하여 빠른 스토리보드 제작 가능",
+      "저렴하고 빠른 생성 속도로 프로토타이핑 워크플로 최적화"
+    ],
+    "url": "https://www.scenario.com/changelog/models-671e8a1bbcc2a0f30e71ffbb4f50040d02e8facc39295cb37825137431c56739",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-11-13-2",
     "service": "scenario",
     "date": "2026.11.13",
