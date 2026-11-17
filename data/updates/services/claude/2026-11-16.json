@@ -1,0 +1,16 @@
+[
+  {
+    "id": "claude-2026-11-16-1",
+    "service": "claude",
+    "date": "2026.11.16",
+    "kind": "정책",
+    "title": "Claude 주요 모델 생성 텍스트에 워터마크 기술 기본 적용",
+    "summary": "앤트로픽이 Claude Opus 4.6, Sonnet 4.5 등 주요 모델이 생성한 텍스트에 AI 식별을 위한 자체 텍스트 워터마크를 기본 탑재했어요.",
+    "details": [
+      "Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5 생성 텍스트에 앤트로픽 텍스트 워터마크 적용",
+      "기본 샘플링 값(temperature, top_p, top_k 기본값) 요청에 대해 지원 플랫폼 전반에서 동작"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-16-2026",
+    "source": "dev"
+  }
+]

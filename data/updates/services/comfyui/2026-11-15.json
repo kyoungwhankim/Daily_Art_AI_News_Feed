@@ -1,0 +1,19 @@
+[
+  {
+    "id": "comfyui-2026-11-15-1",
+    "service": "comfyui",
+    "date": "2026.11.15",
+    "kind": "연동",
+    "title": "ComfyUI v0.45.4: Seedance 2.5 Flash 및 Claude Fable 5.2 노드 추가",
+    "summary": "ComfyUI v0.45.4 업데이트를 통해 Seedance 2.5 Flash 영상 생성 모델과 Claude Fable 5.2, HeyGen Video 1.0 등 신규 파트너 노드가 추가되었어요.",
+    "details": [
+      "Seedance 2.5 Flash: 480p 및 720p 해상도를 지원하는 신규 Seedance 2.5 영상 생성 노드 탑재",
+      "Claude Fable 5.2: Anthropic Claude 공식 노드에 최신 추론 모델 지원 추가",
+      "HeyGen Video 1.0: 1080p 해상도 출력, 30초 클립 및 자동 재생 시간 설정 지원",
+      "OpenRouter LLM 노드에 Meta Muse Wonder, Spark 1.3, Ember 모델 추가",
+      "Krea 및 Wan 노드의 Comfy Router 백엔드 이관 및 구형 노드 정리"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-45-4",
+    "source": "notice"
+  }
+]

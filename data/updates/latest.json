@@ -1,5 +1,81 @@
 [
   {
+    "id": "ludo.ai-2026-11-16-1",
+    "service": "ludo.ai",
+    "date": "2026.11.16",
+    "kind": "모델",
+    "title": "스프라이트 애니메이션 신규 모델 Ignis 및 Ignis Pixel 출시",
+    "summary": "루도 AI가 기존 Forge 모델을 대체하는 보급형 스프라이트 애니메이션 모델 Ignis와 Ignis Pixel을 출시하고 사운드 효과 및 24fps 생성을 지원해요.",
+    "details": [
+      "스프라이트 생성기(Sprite Generator)에 Ignis 및 픽셀아트 전용 Ignis Pixel 모델 탑재",
+      "초당 24fps 생성 지원(기존 16fps 대비 향상) 및 동작에 맞춘 효과음(SFX) 자동 생성",
+      "초당 1.5 크레딧의 합리적인 요금 체계(1~5초 길이 생성 지원)",
+      "기존 Forge 및 Forge Pixel 모델 지원 중단(30일간 레거시 모델로 이용 가능)"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-ignis-our-most-affordable-animation-model-now-smoother-and-with-sound",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-11-16-1",
+    "service": "layer",
+    "date": "2026.11.16",
+    "kind": "기능",
+    "title": "플레이어블 프로토타입 생성 및 Seedream 5.5 레이어 분리 지원",
+    "summary": "Layer가 아이디어를 검증할 수 있는 게임 프로토타입 생성 기능과 Seedream 5.5 기반 투명 배경·레이어 분리 편집 기능을 추가했어요.",
+    "details": [
+      "Playables 에이전트를 통해 퍼즐, 레이싱 등 게임 아이디어 테스트용 소형 플레이어블 프로토타입 자동 생성",
+      "Seedream 5.5 탑재: 투명 배경 지원 및 이미지를 최대 99개 레이어로 자동 분해(Layerize)",
+      "Blender 연동 에이전트: GLB, FBX 및 편집 가능한 블렌더 파일 포맷으로 하드서페이스 3D 프랍 제작 지원",
+      "MCP 지원 및 Godot 엔진 전용 도크 마스크 편집 기능 추가"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  },
+  {
+    "id": "hugging-face-2026-11-16-1",
+    "service": "hugging-face",
+    "date": "2026.11.16",
+    "kind": "연동",
+    "title": "Hugging Face, OpenRouter와 연동해 오픈 가중치 모델 추론 통합 제공",
+    "summary": "허깅페이스가 오픈라우터와 협력하여 허깅페이스 Hub의 오픈소스 모델들을 단일 API와 토큰으로 최적 공급자에 자동 라우팅해 실행할 수 있게 했어요.",
+    "details": [
+      "허깅페이스 추론 공급자(Inference Providers) 시스템을 오픈라우터 라우팅 엔진으로 전격 전환",
+      "속도, 가격, 안정성을 실시간 측정하여 80개 이상의 호스팅 공급자 중 최적 경로로 자동 전달",
+      "OpenAI 채팅 및 Anthropic 메시지 API 호환 지원으로 기존 개발 도구와 원활한 연동"
+    ],
+    "url": "https://huggingface.co/blog/openrouter",
+    "source": "notice"
+  },
+  {
+    "id": "elevenlabs-2026-11-16-1",
+    "service": "elevenlabs",
+    "date": "2026.11.16",
+    "kind": "종료",
+    "title": "music_v1 및 eleven_text_to_sound_v2 모델 지원 종료 일정 안내",
+    "summary": "일레븐랩스가 구형 음악 생성 모델 music_v1과 효과음 생성 모델 text_to_sound_v2의 지원 종료 일정을 발표하고 최신 모델로의 전환을 권장했어요.",
+    "details": [
+      "music_v1 모델은 2027년 1월 31일부로 지원 중단 및 서비스에서 제거 예정",
+      "eleven_text_to_sound_v2 모델은 2027년 3월 1일부로 지원 중단 및 서비스에서 제거 예정",
+      "ElevenAgents API(/v1/convai)에 2026년 11월 26일부터 서버 측 타임아웃(HTTP 504) 정책 적용 예정"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/11/16",
+    "source": "dev"
+  },
+  {
+    "id": "claude-2026-11-16-1",
+    "service": "claude",
+    "date": "2026.11.16",
+    "kind": "정책",
+    "title": "Claude 주요 모델 생성 텍스트에 워터마크 기술 기본 적용",
+    "summary": "앤트로픽이 Claude Opus 4.6, Sonnet 4.5 등 주요 모델이 생성한 텍스트에 AI 식별을 위한 자체 텍스트 워터마크를 기본 탑재했어요.",
+    "details": [
+      "Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5 생성 텍스트에 앤트로픽 텍스트 워터마크 적용",
+      "기본 샘플링 값(temperature, top_p, top_k 기본값) 요청에 대해 지원 플랫폼 전반에서 동작"
+    ],
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#november-16-2026",
+    "source": "dev"
+  },
+  {
     "id": "scenario-2026-11-15-1",
     "service": "scenario",
     "date": "2026.11.15",
@@ -12,6 +88,23 @@
       "텍스트-투-비디오, 영상 편집 및 길이 확장 기능 지원"
     ],
     "url": "https://www.scenario.com/changelog/models-7cd1c1aabee921e1ec19428a4e01d5296228d4cf5f680103d0aaf71e57aa3f06",
+    "source": "notice"
+  },
+  {
+    "id": "comfyui-2026-11-15-1",
+    "service": "comfyui",
+    "date": "2026.11.15",
+    "kind": "연동",
+    "title": "ComfyUI v0.45.4: Seedance 2.5 Flash 및 Claude Fable 5.2 노드 추가",
+    "summary": "ComfyUI v0.45.4 업데이트를 통해 Seedance 2.5 Flash 영상 생성 모델과 Claude Fable 5.2, HeyGen Video 1.0 등 신규 파트너 노드가 추가되었어요.",
+    "details": [
+      "Seedance 2.5 Flash: 480p 및 720p 해상도를 지원하는 신규 Seedance 2.5 영상 생성 노드 탑재",
+      "Claude Fable 5.2: Anthropic Claude 공식 노드에 최신 추론 모델 지원 추가",
+      "HeyGen Video 1.0: 1080p 해상도 출력, 30초 클립 및 자동 재생 시간 설정 지원",
+      "OpenRouter LLM 노드에 Meta Muse Wonder, Spark 1.3, Ember 모델 추가",
+      "Krea 및 Wan 노드의 Comfy Router 백엔드 이관 및 구형 노드 정리"
+    ],
+    "url": "https://docs.comfy.org/changelog#v0-45-4",
     "source": "notice"
   },
   {
@@ -180,6 +273,21 @@
     ],
     "url": "https://www.scenario.com/changelog/models-4379e69d00dc76bea28bfe05dfc7727c9bf2e0ec2bcc3503f6dc52c446315c99",
     "source": "notice"
+  },
+  {
+    "id": "runway-2026-11-12-1",
+    "service": "runway",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "Runway Dev, Seedream 5.5 및 레이어 분리 모델 API 지원",
+    "summary": "Runway Dev 텍스트 투 이미지 엔드포인트에 최신 Seedream 5.5 모델과 투명 PNG 레이어 분리를 지원하는 Seedream 5.5 Layers가 추가되었어요.",
+    "details": [
+      "Seedream 5.5: 최대 4,000자 프롬프트, 최대 10개 참조 이미지, 1K~2K 해상도 및 투명 배경(PNG) 출력 지원",
+      "Seedream 5.5 Layers: 단일 PNG/JPEG 이미지를 기본 이미지와 최대 100개의 투명 PNG 레이어로 자동 분해",
+      "1K/1.5K 이미지당 2크레딧, 2K 이미지당 4크레딧(참조 이미지당 0.8크레딧 추가) 과금 체계 적용"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-5-and-seedream-5-5-layers-on-runway-dev",
+    "source": "dev"
   },
   {
     "id": "recraft-2026-11-12-1",
@@ -501,111 +609,6 @@
       "텍스트 지시어로 최대 4개의 참조 이미지를 조합하고 정밀 편집하는 멀티 레퍼런스 편집 기능 제공"
     ],
     "url": "https://www.scenario.com/changelog/models-65e406130ebae45805bd75c0a66712c3d1d0c65f15f3c039f0fec2f58f7315a5",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-10-1",
-    "service": "scenario",
-    "date": "2026.11.10",
-    "kind": "모델",
-    "title": "비디오를 3D 캐릭터 애니메이션으로 변환하는 Uthana Video to Motion 3.0 도입",
-    "summary": "레퍼런스 영상 속 동작을 최대 60초 길이의 3D 캐릭터 애니메이션으로 변환하는 Uthana Video to Motion 3.0 모델이 추가되었어요.",
-    "details": [
-      "손가락 디테일 표현 개선 및 발 미끄러짐 현상 대폭 완화",
-      "최대 60초 길이의 실제 촬영 영상에서 정밀한 3D 스켈레톤 모션 추출"
-    ],
-    "url": "https://www.scenario.com/changelog/models-15f02d626cb8ed97bb58b2b2dc299a3b47a578f2ecf469820af1b8b9bc7846bc",
-    "source": "notice"
-  },
-  {
-    "id": "runway-2026-11-10-1",
-    "service": "runway",
-    "date": "2026.11.10",
-    "kind": "API",
-    "title": "Runway Dev에 Seedream 5 Pro Layers 모델 추가",
-    "summary": "Runway Dev API에 단일 이미지를 분할하여 편집 가능한 투명 PNG 레이어로 분해하는 Seedream 5 Pro Layers 모델이 도입되었어요.",
-    "details": [
-      "단일 PNG/JPEG 이미지를 기반 이미지 및 투명 배경의 개별 레이어로 분해",
-      "auto, 1K, 1.5K, 2K 해상도 지원 및 레이어 이름·순서·경계 정보 반환",
-      "생성된 분해 레이어당 과금 체계 적용(1K/1.5K 3크레딧, 2K 5크레딧)"
-    ],
-    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-pro-layers-on-runway-dev",
-    "source": "dev"
-  },
-  {
-    "id": "recraft-2026-11-10-1",
-    "service": "recraft",
-    "date": "2026.11.10",
-    "kind": "연동",
-    "title": "Recraft Studio에 구글 Gemini Omni Flash 1.2 영상 모델 연동",
-    "summary": "Recraft Studio에 구글의 최신 영상 모델 Gemini Omni Flash 1.2가 추가되어 음성이 포함된 최대 10초 길이의 영상을 생성할 수 있게 되었어요.",
-    "details": [
-      "인물·사물의 프레임 간 일관성 유지 및 카메라 워크 제어력 대폭 향상",
-      "다중 화자 대화 장면의 립싱크 정확도 개선 및 기본 네이티브 오디오 생성 지원",
-      "캐릭터 및 제품 레퍼런스 이미지 반영도 개선",
-      "Recraft V4.1 및 기존 영상 모델과 동일한 작업 공간에서 즉시 사용 가능"
-    ],
-    "url": "https://www.recraft.ai/blog/gemini-omni-flash-1-2-in-recraft-studio",
-    "source": "notice"
-  },
-  {
-    "id": "meshy-2026-11-10-1",
-    "service": "meshy",
-    "date": "2026.11.10",
-    "kind": "API",
-    "title": "Rigging API에 스켈레톤 템플릿 지정 및 손가락 뼈대 추가 옵션 도입",
-    "summary": "리깅 API에 타깃 엔진용 골격 구조(Mixamo, UE5 Mannequin)를 지정하는 템플릿과 손가락 본을 생성하는 옵션이 추가되었어요.",
-    "details": [
-      "skeleton_template 파라미터로 Mixamo 또는 UE5 Mannequin 등 타깃 엔진에 맞춘 바이패드 골격 리깅 지원",
-      "include_fingers 옵션을 통해 바이패드 캐릭터의 양손 손가락 뼈대 자동 생성 지원"
-    ],
-    "url": "https://docs.meshy.ai/en/api/changelog#nov-10",
-    "source": "dev"
-  },
-  {
-    "id": "magnific-2026-11-10-1",
-    "service": "magnific",
-    "date": "2026.11.10",
-    "kind": "종료",
-    "title": "Magnific API에서 구형 Kling 1.6·2.0·2.1 엔드포인트 지원 종료",
-    "summary": "Magnific API에서 구형 Kling 1.6, 2.0, 2.1 모델 엔드포인트가 공식 제거되어 신형 Kling 3 및 2.6 사용이 권장돼요.",
-    "details": [
-      "Kling 1.6(kling-pro, kling-std) 엔드포인트 지원 종료",
-      "Kling 2.0(kling-v2) 엔드포인트 지원 종료",
-      "Kling 2.1(kling-v2-1-pro, kling-v2-1-std, kling-v2-1-master) 엔드포인트 지원 종료",
-      "이미지-비디오 생성 작업에는 Kling 3, Kling 2.6, Kling 2.5 Turbo Pro 사용 지원"
-    ],
-    "url": "https://docs.magnific.com/changelog#november-10-2026",
-    "source": "dev"
-  },
-  {
-    "id": "hugging-face-2026-11-10-1",
-    "service": "hugging-face",
-    "date": "2026.11.10",
-    "kind": "요금",
-    "title": "Google Cloud 계정을 통한 Hugging Face Hub 통합 결제 지원",
-    "summary": "Hugging Face 조직을 Google Cloud 계정과 연동하여 Team/Enterprise 구독 및 컴퓨팅 리소스 사용료를 단일 Google Cloud 청구서로 통합 결제할 수 있게 되었어요.",
-    "details": [
-      "Google Cloud Marketplace에서 Hugging Face를 구독하고 관리자 조직을 연결해 설정 지원",
-      "Team 및 Enterprise 구독, Jobs, Inference Endpoints, Spaces GPU 연산 비용을 Google Cloud 인보이스에 통합",
-      "신규 벤더 등록이나 별도 법인 카드 결제 없이 기존 Google Cloud 결제 계정으로 일원화된 조달 프로세스 제공"
-    ],
-    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
-    "source": "notice"
-  },
-  {
-    "id": "gigapixel-2026-11-10-1",
-    "service": "gigapixel",
-    "date": "2026.11.10",
-    "kind": "앱",
-    "title": "Topaz Gigapixel v1.5.0 출시: Wonder 4 클라우드 모델 탑재",
-    "summary": "Topaz Gigapixel v1.5.0이 출시되어 차세대 화질 개선 및 업스케일링 모델 Wonder 4를 클라우드에서 사용할 수 있게 되었어요.",
-    "details": [
-      "노이즈·블러·압축 아티팩트 제거 및 얼굴 디테일 복원을 단일 패스로 처리하는 Wonder 4 클라우드 지원",
-      "이미지 각 영역을 개별 분석해 최적의 보정을 적용하여 자연스러운 질감 유지",
-      "Windows, Apple Silicon, Intel Mac 및 Snapdragon(ARM64) 인스톨러 배포"
-    ],
-    "url": "https://community.topazlabs.com/t/topaz-gigapixel-v1-5-0/105732",
     "source": "notice"
   }
 ]

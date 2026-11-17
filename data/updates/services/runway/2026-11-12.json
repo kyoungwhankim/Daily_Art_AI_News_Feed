@@ -1,0 +1,17 @@
+[
+  {
+    "id": "runway-2026-11-12-1",
+    "service": "runway",
+    "date": "2026.11.12",
+    "kind": "API",
+    "title": "Runway Dev, Seedream 5.5 및 레이어 분리 모델 API 지원",
+    "summary": "Runway Dev 텍스트 투 이미지 엔드포인트에 최신 Seedream 5.5 모델과 투명 PNG 레이어 분리를 지원하는 Seedream 5.5 Layers가 추가되었어요.",
+    "details": [
+      "Seedream 5.5: 최대 4,000자 프롬프트, 최대 10개 참조 이미지, 1K~2K 해상도 및 투명 배경(PNG) 출력 지원",
+      "Seedream 5.5 Layers: 단일 PNG/JPEG 이미지를 기본 이미지와 최대 100개의 투명 PNG 레이어로 자동 분해",
+      "1K/1.5K 이미지당 2크레딧, 2K 이미지당 4크레딧(참조 이미지당 0.8크레딧 추가) 과금 체계 적용"
+    ],
+    "url": "https://docs.dev.runwayml.com/api-details/api_changelog/#seedream-5-5-and-seedream-5-5-layers-on-runway-dev",
+    "source": "dev"
+  }
+]

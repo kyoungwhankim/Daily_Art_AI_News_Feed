@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hugging-face-2026-11-16-1",
+    "service": "hugging-face",
+    "date": "2026.11.16",
+    "kind": "연동",
+    "title": "Hugging Face, OpenRouter와 연동해 오픈 가중치 모델 추론 통합 제공",
+    "summary": "허깅페이스가 오픈라우터와 협력하여 허깅페이스 Hub의 오픈소스 모델들을 단일 API와 토큰으로 최적 공급자에 자동 라우팅해 실행할 수 있게 했어요.",
+    "details": [
+      "허깅페이스 추론 공급자(Inference Providers) 시스템을 오픈라우터 라우팅 엔진으로 전격 전환",
+      "속도, 가격, 안정성을 실시간 측정하여 80개 이상의 호스팅 공급자 중 최적 경로로 자동 전달",
+      "OpenAI 채팅 및 Anthropic 메시지 API 호환 지원으로 기존 개발 도구와 원활한 연동"
+    ],
+    "url": "https://huggingface.co/blog/openrouter",
+    "source": "notice"
+  }
+]

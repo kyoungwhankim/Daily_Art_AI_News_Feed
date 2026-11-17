@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ludo.ai-2026-11-16-1",
+    "service": "ludo.ai",
+    "date": "2026.11.16",
+    "kind": "모델",
+    "title": "스프라이트 애니메이션 신규 모델 Ignis 및 Ignis Pixel 출시",
+    "summary": "루도 AI가 기존 Forge 모델을 대체하는 보급형 스프라이트 애니메이션 모델 Ignis와 Ignis Pixel을 출시하고 사운드 효과 및 24fps 생성을 지원해요.",
+    "details": [
+      "스프라이트 생성기(Sprite Generator)에 Ignis 및 픽셀아트 전용 Ignis Pixel 모델 탑재",
+      "초당 24fps 생성 지원(기존 16fps 대비 향상) 및 동작에 맞춘 효과음(SFX) 자동 생성",
+      "초당 1.5 크레딧의 합리적인 요금 체계(1~5초 길이 생성 지원)",
+      "기존 Forge 및 Forge Pixel 모델 지원 중단(30일간 레거시 모델로 이용 가능)"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-ignis-our-most-affordable-animation-model-now-smoother-and-with-sound",
+    "source": "notice"
+  }
+]

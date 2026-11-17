@@ -1,0 +1,18 @@
+[
+  {
+    "id": "layer-2026-11-16-1",
+    "service": "layer",
+    "date": "2026.11.16",
+    "kind": "기능",
+    "title": "플레이어블 프로토타입 생성 및 Seedream 5.5 레이어 분리 지원",
+    "summary": "Layer가 아이디어를 검증할 수 있는 게임 프로토타입 생성 기능과 Seedream 5.5 기반 투명 배경·레이어 분리 편집 기능을 추가했어요.",
+    "details": [
+      "Playables 에이전트를 통해 퍼즐, 레이싱 등 게임 아이디어 테스트용 소형 플레이어블 프로토타입 자동 생성",
+      "Seedream 5.5 탑재: 투명 배경 지원 및 이미지를 최대 99개 레이어로 자동 분해(Layerize)",
+      "Blender 연동 에이전트: GLB, FBX 및 편집 가능한 블렌더 파일 포맷으로 하드서페이스 3D 프랍 제작 지원",
+      "MCP 지원 및 Godot 엔진 전용 도크 마스크 편집 기능 추가"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  }
+]

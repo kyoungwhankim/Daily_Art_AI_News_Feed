@@ -1,5 +1,37 @@
 [
   {
+    "id": "ludo.ai-2026-11-16-1",
+    "service": "ludo.ai",
+    "date": "2026.11.16",
+    "kind": "모델",
+    "title": "스프라이트 애니메이션 신규 모델 Ignis 및 Ignis Pixel 출시",
+    "summary": "루도 AI가 기존 Forge 모델을 대체하는 보급형 스프라이트 애니메이션 모델 Ignis와 Ignis Pixel을 출시하고 사운드 효과 및 24fps 생성을 지원해요.",
+    "details": [
+      "스프라이트 생성기(Sprite Generator)에 Ignis 및 픽셀아트 전용 Ignis Pixel 모델 탑재",
+      "초당 24fps 생성 지원(기존 16fps 대비 향상) 및 동작에 맞춘 효과음(SFX) 자동 생성",
+      "초당 1.5 크레딧의 합리적인 요금 체계(1~5초 길이 생성 지원)",
+      "기존 Forge 및 Forge Pixel 모델 지원 중단(30일간 레거시 모델로 이용 가능)"
+    ],
+    "url": "https://ludo.ai/whats-new#meet-ignis-our-most-affordable-animation-model-now-smoother-and-with-sound",
+    "source": "notice"
+  },
+  {
+    "id": "layer-2026-11-16-1",
+    "service": "layer",
+    "date": "2026.11.16",
+    "kind": "기능",
+    "title": "플레이어블 프로토타입 생성 및 Seedream 5.5 레이어 분리 지원",
+    "summary": "Layer가 아이디어를 검증할 수 있는 게임 프로토타입 생성 기능과 Seedream 5.5 기반 투명 배경·레이어 분리 편집 기능을 추가했어요.",
+    "details": [
+      "Playables 에이전트를 통해 퍼즐, 레이싱 등 게임 아이디어 테스트용 소형 플레이어블 프로토타입 자동 생성",
+      "Seedream 5.5 탑재: 투명 배경 지원 및 이미지를 최대 99개 레이어로 자동 분해(Layerize)",
+      "Blender 연동 에이전트: GLB, FBX 및 편집 가능한 블렌더 파일 포맷으로 하드서페이스 3D 프랍 제작 지원",
+      "MCP 지원 및 Godot 엔진 전용 도크 마스크 편집 기능 추가"
+    ],
+    "url": "https://www.layer.ai/changelog",
+    "source": "notice"
+  },
+  {
     "id": "scenario-2026-11-15-1",
     "service": "scenario",
     "date": "2026.11.15",

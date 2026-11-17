@@ -7,10 +7,10 @@
       "rev": "39796d1e68"
     },
     "video": {
-      "count": 1004,
+      "count": 1005,
       "latest": "2026.11.14",
       "file": "updates/feed/video.json",
-      "rev": "49bf17683d"
+      "rev": "9bd0c768e0"
     },
     "3d": {
       "count": 195,
@@ -19,10 +19,10 @@
       "rev": "d131c82819"
     },
     "game-assets": {
-      "count": 610,
-      "latest": "2026.11.15",
+      "count": 612,
+      "latest": "2026.11.16",
       "file": "updates/feed/game-assets.json",
-      "rev": "bcbfc96c8e"
+      "rev": "266a5a36c9"
     },
     "motion": {
       "count": 171,
@@ -31,16 +31,16 @@
       "rev": "0bcf848398"
     },
     "audio": {
-      "count": 370,
-      "latest": "2026.11.13",
+      "count": 371,
+      "latest": "2026.11.16",
       "file": "updates/feed/audio.json",
-      "rev": "94decc2973"
+      "rev": "6dd3ef3695"
     },
     "tools": {
-      "count": 1062,
-      "latest": "2026.11.13",
+      "count": 1065,
+      "latest": "2026.11.16",
       "file": "updates/feed/tools.json",
-      "rev": "b4e185acfc"
+      "rev": "846ef3c785"
     }
   },
   "services": {
@@ -130,9 +130,9 @@
       "latest": "2026.11.02"
     },
     "runway": {
-      "count": 198,
+      "count": 199,
       "first": "2023.02.01",
-      "latest": "2026.11.11"
+      "latest": "2026.11.12"
     },
     "dream-machine": {
       "count": 32,
@@ -210,14 +210,14 @@
       "latest": "2026.11.15"
     },
     "layer": {
-      "count": 107,
+      "count": 108,
       "first": "2023.01.20",
-      "latest": "2026.11.09"
+      "latest": "2026.11.16"
     },
     "ludo.ai": {
-      "count": 54,
+      "count": 55,
       "first": "2021.06.22",
-      "latest": "2026.11.12"
+      "latest": "2026.11.16"
     },
     "roblox-cube": {
       "count": 46,
@@ -240,9 +240,9 @@
       "latest": "2026.11.09"
     },
     "elevenlabs": {
-      "count": 211,
+      "count": 212,
       "first": "2022.11.24",
-      "latest": "2026.11.11"
+      "latest": "2026.11.16"
     },
     "suno": {
       "count": 77,
@@ -270,9 +270,9 @@
       "latest": "2026.11.10"
     },
     "comfyui": {
-      "count": 221,
+      "count": 222,
       "first": "2024.08.06",
-      "latest": "2026.11.13"
+      "latest": "2026.11.15"
     },
     "invokeai": {
       "count": 74,
@@ -290,9 +290,9 @@
       "latest": "2026.04.15"
     },
     "hugging-face": {
-      "count": 72,
+      "count": 73,
       "first": "2025.05.21",
-      "latest": "2026.11.10"
+      "latest": "2026.11.16"
     },
     "fal.ai": {
       "count": 170,
@@ -310,9 +310,9 @@
       "latest": "2026.11.10"
     },
     "claude": {
-      "count": 245,
+      "count": 246,
       "first": "2023.03.14",
-      "latest": "2026.11.12"
+      "latest": "2026.11.16"
     }
   }
 }

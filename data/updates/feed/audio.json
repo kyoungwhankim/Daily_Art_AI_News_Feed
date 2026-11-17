@@ -1,5 +1,20 @@
 [
   {
+    "id": "elevenlabs-2026-11-16-1",
+    "service": "elevenlabs",
+    "date": "2026.11.16",
+    "kind": "종료",
+    "title": "music_v1 및 eleven_text_to_sound_v2 모델 지원 종료 일정 안내",
+    "summary": "일레븐랩스가 구형 음악 생성 모델 music_v1과 효과음 생성 모델 text_to_sound_v2의 지원 종료 일정을 발표하고 최신 모델로의 전환을 권장했어요.",
+    "details": [
+      "music_v1 모델은 2027년 1월 31일부로 지원 중단 및 서비스에서 제거 예정",
+      "eleven_text_to_sound_v2 모델은 2027년 3월 1일부로 지원 중단 및 서비스에서 제거 예정",
+      "ElevenAgents API(/v1/convai)에 2026년 11월 26일부터 서버 측 타임아웃(HTTP 504) 정책 적용 예정"
+    ],
+    "url": "https://elevenlabs.io/docs/changelog/2026/11/16",
+    "source": "dev"
+  },
+  {
     "id": "suno-2026-11-13-1",
     "service": "suno",
     "date": "2026.11.13",
