@@ -1,0 +1,16 @@
+[
+  {
+    "id": "figma-ai-2026-11-23-1",
+    "service": "figma-ai",
+    "date": "2026.11.23",
+    "kind": "기능",
+    "title": "피그마 에이전트, FigJam 및 Figma Slides 정식 출시",
+    "summary": "피그마의 AI 에이전트가 FigJam과 Figma Slides에 일반 공개되어, 복잡한 아이디어 보드를 구조화된 기획서로 변환하고 프레젠테이션 구성을 자동화해요.",
+    "details": [
+      "FigJam 보드를 요약해 실행 가능한 명세서(Spec)로 자동 정리",
+      "브랜드 템플릿과 개요를 바탕으로 슬라이드 디자인 및 발표자 노트 초안 생성"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=figmas-agent-is-now-in-figjam-and-slides",
+    "source": "notice"
+  }
+]

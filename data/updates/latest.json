@@ -1,5 +1,43 @@
 [
   {
+    "id": "figma-ai-2026-11-23-1",
+    "service": "figma-ai",
+    "date": "2026.11.23",
+    "kind": "기능",
+    "title": "피그마 에이전트, FigJam 및 Figma Slides 정식 출시",
+    "summary": "피그마의 AI 에이전트가 FigJam과 Figma Slides에 일반 공개되어, 복잡한 아이디어 보드를 구조화된 기획서로 변환하고 프레젠테이션 구성을 자동화해요.",
+    "details": [
+      "FigJam 보드를 요약해 실행 가능한 명세서(Spec)로 자동 정리",
+      "브랜드 템플릿과 개요를 바탕으로 슬라이드 디자인 및 발표자 노트 초안 생성"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=figmas-agent-is-now-in-figjam-and-slides",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-11-19-1",
+    "service": "figma-ai",
+    "date": "2026.11.19",
+    "kind": "기능",
+    "title": "개발자 모드(Dev Mode)에서 피그마 에이전트 연동 지원",
+    "summary": "개발자 모드에서 피그마 에이전트에게 디자인 구조 분석, 버전 간 차이 비교, 코드 스니펫 생성 및 에셋 일괄 다운로드를 프롬프트로 지시할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=work-with-the-figma-agent-in-dev-mode",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-11-18-1",
+    "service": "figma-ai",
+    "date": "2026.11.18",
+    "kind": "기능",
+    "title": "단일 프롬프트로 다중 이미지 동시 생성 및 모델 비교 지원",
+    "summary": "피그마 이미지 생성 및 편집 도구에서 단일 프롬프트로 최대 6장의 이미지를 동시 생성하거나 최대 3개 모델의 결과물을 나란히 비교할 수 있게 되었어요.",
+    "details": [
+      "단일 모델에서 2·4·6장 이미지를 한 번에 생성해 재입력 시간 절약",
+      "최대 3개 이미지 모델을 동시 호출해 모델별 해석 비교 지원"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=generate-multiple-images-from-a-single-prompt",
+    "source": "notice"
+  },
+  {
     "id": "ludo.ai-2026-11-16-1",
     "service": "ludo.ai",
     "date": "2026.11.16",
@@ -567,48 +605,6 @@
       "실제 영화 프로덕션 수준의 자연스러운 라이프라이크 영상 렌더링 지원"
     ],
     "url": "https://www.synthesia.io/updates/make-cinematic-syren-videos-with-seedance",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-10-4",
-    "service": "scenario",
-    "date": "2026.11.10",
-    "kind": "연동",
-    "title": "Scenario Photoshop 플러그인 v0.8.0 출시: 브라우저 로그인 지원",
-    "summary": "포토샵 플러그인이 v0.8.0으로 업데이트되어 브라우저 기반 간편 로그인과 팀 프로젝트 패널 직접 선택을 지원해요.",
-    "details": [
-      "브라우저 로그인 연동으로 계정 인증 절차 간소화",
-      "포토샵 패널 내부에서 팀 프로젝트를 즉시 탐색하고 선택 가능"
-    ],
-    "url": "https://www.scenario.com/changelog/plugins-photoshop-v0-8-0",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-10-3",
-    "service": "scenario",
-    "date": "2026.11.10",
-    "kind": "모델",
-    "title": "최대 16장 레퍼런스 및 4K 지원 MiniMax H3 Image 모델 도입",
-    "summary": "최대 16장의 참조 이미지를 기반으로 1K부터 4K 해상도까지 이미지를 생성하고 편집하는 MiniMax H3 Image 및 고속 모델이 추가되었어요.",
-    "details": [
-      "최대 16장의 레퍼런스 이미지를 프롬프트 가이드로 활용하여 일관된 스타일 및 캐릭터 유지",
-      "표준 모델 및 빠른 생성을 지원하는 MiniMax H3 Image Highspeed 모델 동시 제공"
-    ],
-    "url": "https://www.scenario.com/changelog/models-5a97d4f48d4b15877d7d2b03ac4cd09b17cf262999f2c31490e3069d7b0f019e",
-    "source": "notice"
-  },
-  {
-    "id": "scenario-2026-11-10-2",
-    "service": "scenario",
-    "date": "2026.11.10",
-    "kind": "모델",
-    "title": "상업용 이미지 생성 및 구조적 편집 모델 Bria FIBO 2.0 지원",
-    "summary": "구조화된 프롬프트로 재현성을 높이고 최대 4개의 레퍼런스를 편집할 수 있는 Bria FIBO 2.0 모델이 도입되었어요.",
-    "details": [
-      "100만 화소(1MP) 및 400만 화소(4MP) 고해상도 이미지 생성 지원",
-      "텍스트 지시어로 최대 4개의 참조 이미지를 조합하고 정밀 편집하는 멀티 레퍼런스 편집 기능 제공"
-    ],
-    "url": "https://www.scenario.com/changelog/models-65e406130ebae45805bd75c0a66712c3d1d0c65f15f3c039f0fec2f58f7315a5",
     "source": "notice"
   }
 ]

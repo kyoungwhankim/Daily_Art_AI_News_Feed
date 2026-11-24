@@ -1,5 +1,43 @@
 [
   {
+    "id": "figma-ai-2026-11-23-1",
+    "service": "figma-ai",
+    "date": "2026.11.23",
+    "kind": "기능",
+    "title": "피그마 에이전트, FigJam 및 Figma Slides 정식 출시",
+    "summary": "피그마의 AI 에이전트가 FigJam과 Figma Slides에 일반 공개되어, 복잡한 아이디어 보드를 구조화된 기획서로 변환하고 프레젠테이션 구성을 자동화해요.",
+    "details": [
+      "FigJam 보드를 요약해 실행 가능한 명세서(Spec)로 자동 정리",
+      "브랜드 템플릿과 개요를 바탕으로 슬라이드 디자인 및 발표자 노트 초안 생성"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=figmas-agent-is-now-in-figjam-and-slides",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-11-19-1",
+    "service": "figma-ai",
+    "date": "2026.11.19",
+    "kind": "기능",
+    "title": "개발자 모드(Dev Mode)에서 피그마 에이전트 연동 지원",
+    "summary": "개발자 모드에서 피그마 에이전트에게 디자인 구조 분석, 버전 간 차이 비교, 코드 스니펫 생성 및 에셋 일괄 다운로드를 프롬프트로 지시할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=work-with-the-figma-agent-in-dev-mode",
+    "source": "notice"
+  },
+  {
+    "id": "figma-ai-2026-11-18-1",
+    "service": "figma-ai",
+    "date": "2026.11.18",
+    "kind": "기능",
+    "title": "단일 프롬프트로 다중 이미지 동시 생성 및 모델 비교 지원",
+    "summary": "피그마 이미지 생성 및 편집 도구에서 단일 프롬프트로 최대 6장의 이미지를 동시 생성하거나 최대 3개 모델의 결과물을 나란히 비교할 수 있게 되었어요.",
+    "details": [
+      "단일 모델에서 2·4·6장 이미지를 한 번에 생성해 재입력 시간 절약",
+      "최대 3개 이미지 모델을 동시 호출해 모델별 해석 비교 지원"
+    ],
+    "url": "https://www.figma.com/release-notes/?title=generate-multiple-images-from-a-single-prompt",
+    "source": "notice"
+  },
+  {
     "id": "hugging-face-2026-11-16-1",
     "service": "hugging-face",
     "date": "2026.11.16",

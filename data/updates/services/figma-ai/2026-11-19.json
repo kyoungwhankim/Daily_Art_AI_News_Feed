@@ -1,0 +1,12 @@
+[
+  {
+    "id": "figma-ai-2026-11-19-1",
+    "service": "figma-ai",
+    "date": "2026.11.19",
+    "kind": "기능",
+    "title": "개발자 모드(Dev Mode)에서 피그마 에이전트 연동 지원",
+    "summary": "개발자 모드에서 피그마 에이전트에게 디자인 구조 분석, 버전 간 차이 비교, 코드 스니펫 생성 및 에셋 일괄 다운로드를 프롬프트로 지시할 수 있어요.",
+    "url": "https://www.figma.com/release-notes/?title=work-with-the-figma-agent-in-dev-mode",
+    "source": "notice"
+  }
+]

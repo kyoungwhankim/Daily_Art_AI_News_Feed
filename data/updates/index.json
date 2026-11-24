@@ -37,10 +37,10 @@
       "rev": "6dd3ef3695"
     },
     "tools": {
-      "count": 1065,
-      "latest": "2026.11.16",
+      "count": 1068,
+      "latest": "2026.11.23",
       "file": "updates/feed/tools.json",
-      "rev": "846ef3c785"
+      "rev": "ede9e56fc6"
     }
   },
   "services": {
@@ -300,9 +300,9 @@
       "latest": "2026.10.29"
     },
     "figma-ai": {
-      "count": 91,
+      "count": 94,
       "first": "2024.03.28",
-      "latest": "2026.11.12"
+      "latest": "2026.11.23"
     },
     "blender": {
       "count": 33,
